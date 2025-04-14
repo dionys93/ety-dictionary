@@ -30,12 +30,24 @@ const languageMap = {
 };
 
 /**
+ * Replaces all instances of the special character ꬻ with "ng"
+ * @param {string} text - The text to process
+ * @returns {string} - Text with replacements made
+ */
+function replaceSpecialCharacter(text) {
+  return text.replace(/ꬻ/g, "ng");
+}
+
+/**
  * Parses text content into JSON format according to the specified structure
  * @param {string} textContent - The content of the text file
  * @param {string} fileName - The name of the file (used for word identification)
  * @returns {Array} - Array of parsed word objects
  */
 function parseTextToJson(textContent, fileName) {
+  // Replace special character ꬻ with "ng" throughout
+  textContent = replaceSpecialCharacter(textContent);
+  
   // Strip file extension to get the base name - this will be the fallback name
   const fallbackName = fileName.replace('.txt', '');
   
