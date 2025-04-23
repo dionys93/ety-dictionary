@@ -19,8 +19,11 @@
         "origin": "Modern English"
       },
       {
-        "name": "ta aide -s -d -ing (v)",
-        "origin": "Inglish"
+        "name": "ta aide -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ]
       }
     ],
     "sources": [
@@ -65,8 +68,11 @@
         "origin": "Modern English"
       },
       {
-        "name": "aid -s (n)",
-        "origin": "Inglish"
+        "name": "aid -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "n"
+        ]
       }
     ],
     "sources": [

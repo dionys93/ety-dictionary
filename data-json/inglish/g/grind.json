@@ -15,8 +15,11 @@
         "origin": "Modern English"
       },
       {
-        "name": "ta grînd -s gràund -ing (v)",
-        "origin": "Inglish"
+        "name": "ta grînd -s gràund -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ]
       }
     ],
     "sources": [
@@ -34,8 +37,11 @@
         "origin": "Old English"
       },
       {
-        "name": "grînd -s (n)",
-        "origin": "Inglish"
+        "name": "grînd -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "n"
+        ]
       }
     ],
     "sources": [

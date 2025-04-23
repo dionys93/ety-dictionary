@@ -15,8 +15,11 @@
         "origin": "Modern English"
       },
       {
-        "name": "ta biete -s biet bieten -ing (v)",
-        "origin": "Inglish"
+        "name": "ta biete -s biet bieten -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ]
       }
     ],
     "sources": [
@@ -34,8 +37,12 @@
         "origin": "Modern English"
       },
       {
-        "name": "biet -s (adj, n)",
-        "origin": "Inglish"
+        "name": "biet -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "n"
+        ]
       }
     ],
     "sources": [

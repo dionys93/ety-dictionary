@@ -38,8 +38,11 @@
         "origin": "Modern English"
       },
       {
-        "name": "ɯair -s (n)",
-        "origin": "Inglish"
+        "name": "ɯair -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "n"
+        ]
       }
     ],
     "sources": [
@@ -57,8 +60,12 @@
         "origin": "Modern English"
       },
       {
-        "name": "ɯaîable -s (adj, n)",
-        "origin": "Inglish"
+        "name": "ɯaîable -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "n"
+        ]
       }
     ],
     "sources": [
