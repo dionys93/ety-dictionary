@@ -25,6 +25,7 @@
     "sources": [
       "https://www.etymonline.com/word/know#etymonline_v_1920",
       "https://www.merriam-webster.com/dictionary/know#dictionary-entry-1",
+      "https://www.oed.com/dictionary/know_v?tab=factsheet#40024604",
       "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24477",
       "https://bosworthtoller.com/6422"
     ]
@@ -47,7 +48,8 @@
     "sources": [
       "https://www.etymonline.com/word/know#etymonline_v_42994",
       "https://www.etymonline.com/word/know#etymonline_v_1920",
-      "https://www.merriam-webster.com/dictionary/know#dictionary-entry-2"
+      "https://www.merriam-webster.com/dictionary/know#dictionary-entry-2",
+      "https://www.oed.com/dictionary/know_n?tab=factsheet#40024532"
     ]
   },
   {
@@ -77,6 +79,7 @@
       "https://www.etymonline.com/word/knowledge#etymonline_v_1921",
       "https://www.merriam-webster.com/dictionary/knowledge",
       "https://www.merriam-webster.com/dictionary/knowledge#word-history",
+      "https://www.oed.com/dictionary/knowledge_n?tab=factsheet#40031198",
       "https://bosworthtoller.com/61796"
     ]
   },
@@ -88,7 +91,7 @@
         "origin": "Modern English"
       },
       {
-        "name": "nólegeble",
+        "name": "nólegiable",
         "origin": "Inglish",
         "part-of-speech": [
           "adjective"
@@ -97,7 +100,56 @@
     ],
     "sources": [
       "https://www.etymonline.com/word/knowledgeable#etymonline_v_30144",
-      "https://www.merriam-webster.com/dictionary/knowledgeable"
+      "https://www.merriam-webster.com/dictionary/knowledgeable",
+      "https://www.oed.com/dictionary/knowledgeable_adj2?tab=factsheet#40033916"
+    ]
+  },
+  {
+    "name": "to acknowledge",
+    "etymology": [
+      {
+        "name": "oncnawan",
+        "origin": "Old English"
+      },
+      {
+        "name": "aknow + knowlechen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to acknowledge",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to aknólege -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/acknowledge",
+      "https://www.oed.com/dictionary/acknowledge_v?tab=pronunciation#26463607",
+      "https://bosworthtoller.com/24487"
+    ]
+  },
+  {
+    "name": "acknowledgement",
+    "etymology": [
+      {
+        "name": "acknowledgement",
+        "origin": "Modern English"
+      },
+      {
+        "name": "aknólegement -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.oed.com/dictionary/acknowledgement_n?tab=factsheet#26226244"
     ]
   }
 ]
