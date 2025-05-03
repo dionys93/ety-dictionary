@@ -13,6 +13,10 @@ const TARGET_DIR = langDir ? path.join(TARGET_BASE, langDir) : TARGET_BASE;
 
 // Language map for translating language codes to full names
 const languageMap: Record<string, { name: string }> = {
+  'AB': { name: 'Aborigine' },
+  'AG': { name: 'Ancient Greek' },
+  'AR': { name: 'Arabic' },
+  'JP': { name: 'Japanese' },
   'OE': { name: 'Old English' },
   'ME': { name: 'Modern English' },
   'MI': { name: 'Middle English' },
@@ -20,7 +24,6 @@ const languageMap: Record<string, { name: string }> = {
   'OF': { name: 'Old French' },
   'FR': { name: 'French' },
   'SK': { name: 'Sanskrit' },
-  'AR': { name: 'Arabic' },
   'ML': { name: 'Medieval Latin' },
   'IT': { name: 'Italian' },
   'ON': { name: 'Old Norse' },
