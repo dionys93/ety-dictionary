@@ -15,6 +15,7 @@ const TARGET_DIR = langDir ? path.join(TARGET_BASE, langDir) : TARGET_BASE;
 const languageMap: Record<string, { name: string }> = {
   'AB': { name: 'Aborigine' },
   'AG': { name: 'Ancient Greek' },
+  'EG': { name: 'Ecclesiastical Greek' },
   'AR': { name: 'Arabic' },
   'JP': { name: 'Japanese' },
   'OE': { name: 'Old English' },
