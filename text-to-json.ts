@@ -16,6 +16,8 @@ const languageMap: Record<string, { name: string }> = {
   'AB': { name: 'Aborigine' },
   'AG': { name: 'Ancient Greek' },
   'EG': { name: 'Ecclesiastical Greek' },
+  'EGY' : { name: 'Egyptian' },
+  'PS' : { name: 'Persian' },
   'AR': { name: 'Arabic' },
   'JP': { name: 'Japanese' },
   'OE': { name: 'Old English' },
