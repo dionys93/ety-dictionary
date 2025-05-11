@@ -35,7 +35,7 @@ function main(): void {
   // Validate source directory exists
   if (!fs.existsSync(sourceDir)) {
     console.error(`Error: Source directory '${sourceDir}' does not exist.`);
-    console.log(`Usage: node main.js [language-directory] [pipeline-type]`);
+    console.log(`Usage: tsx main.ts [language-directory] [pipeline-type]`);
     console.log(`Available pipeline types: ${Object.keys(pipelines).join(', ')}`);
     process.exit(1);
   }
