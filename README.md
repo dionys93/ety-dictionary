@@ -2,4 +2,4 @@
 
 Provides both text and json data types
 
-tsx text-to-json.ts [language]
+tsx main.ts [language]
