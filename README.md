@@ -2,4 +2,4 @@
 
 Provides both text and json data types
 
-tsx main.ts [language]
+tsx main.ts [language] [pipeline-type]
