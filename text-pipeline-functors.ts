@@ -1,17 +1,62 @@
-// text-to-json-functional.ts
+/**
+ * Extracts word name from the last language-tagged line or fallback
+ */
+export const extractFromLastLanguageTag = (group: EntryGroup, fallbackName: string): string => {
+  // Find all lines with language tags in order
+  const languageLines = group.etymologyLines.filter(line => line.language);
+  
+  // If we have any language-tagged lines, use the last one
+  if (languageLines.length > 0) {
+    return languageLines[languageLines.length - 1].text;
+  }
+  
+  // Fallback to first line or provided fallback
+  if (group.etymologyLines.length > 0) {
+    const firstLine = group.etymologyLines[0];
+    const wordMatch = firstLine.text.match(/^([a-zA-Z]+)/);
+    return wordMatch ? wordMatch[1] : fallbackName;
+  }
+  
+  return fallbackName;
+};/**
+ * Groups lines by double newline
+ */
+export const groupByDoubleNewline = (lineParser: (line: RawLine) => ParsedLine) => 
+  (lines: RawLine[]): EntryGroup[] => {
+    const groups: EntryGroup[] = [];
+    let currentGroup: RawLine[] = [];
+    
+    for (const line of lines) {
+      if (line.content.trim() === '') {
+        if (currentGroup.length > 0) {
+          groups.push(processGroup(lineParser)(currentGroup));
+          currentGroup = [];
+        }
+      } else {
+        currentGroup.push(line);
+      }
+    }
+    
+    // Don't forget the last group
+    if (currentGroup.length > 0) {
+      groups.push(processGroup(lineParser)(currentGroup));
+    }
+    
+    return groups;
+  };// text-pipeline-functors.ts
 import * as fs from 'fs';
 import * as path from 'path';
 
 // ===== CORE TYPES =====
 
 /** Raw line in the source text */
-interface RawLine {
+export interface RawLine {
   content: string;
   lineNumber: number;
 }
 
 /** Parsed line with extracted metadata */
-interface ParsedLine {
+export interface ParsedLine {
   text: string;
   origin?: string;
   language?: string;
@@ -20,27 +65,27 @@ interface ParsedLine {
 }
 
 /** Grouped entry from text */
-interface EntryGroup {
+export interface EntryGroup {
   etymologyLines: ParsedLine[];
   sourceLines: ParsedLine[];
   wordName?: string;
 }
 
 /** Final JSON output structure */
-interface EtymologyEntry {
+export interface EtymologyEntry {
   name: string;
   origin: string;
   "part-of-speech"?: string[];
 }
 
-interface WordEntry {
+export interface WordEntry {
   name: string;
   etymology: EtymologyEntry[];
   sources: string[];
 }
 
 /** Pipeline configuration type */
-interface TextProcessingPipeline {
+export interface TextProcessingPipeline {
   textTransform: (text: string) => string;
   lineParser: (line: RawLine) => ParsedLine;
   entryGrouper: (lines: RawLine[]) => EntryGroup[];
@@ -51,7 +96,7 @@ interface TextProcessingPipeline {
 
 // ===== CONFIGURATION =====
 
-const languageMap: Record<string, { name: string }> = {
+export const languageMap: Record<string, { name: string }> = {
   'AB': { name: 'Aborigine' },
   'AG': { name: 'Ancient Greek' },
   'EG': { name: 'Ecclesiastical Greek' },
@@ -79,7 +124,7 @@ const languageMap: Record<string, { name: string }> = {
 /**
  * Character replacement transformer
  */
-const replaceSpecialCharacters = (text: string): string => {
+export const replaceSpecialCharacters = (text: string): string => {
   return text.replace(/ꬻ/g, "ng");
 };
 
@@ -88,7 +133,7 @@ const replaceSpecialCharacters = (text: string): string => {
 /**
  * Parses language and origin from a line
  */
-const parseLanguageOrigin = (line: RawLine): ParsedLine => {
+export const parseLanguageOrigin = (line: RawLine): ParsedLine => {
   const brackets = line.content.match(/\[(.*?)\]/);
   const language = brackets?.[1];
   const origin = (language && languageMap[language])
@@ -108,7 +153,7 @@ const parseLanguageOrigin = (line: RawLine): ParsedLine => {
 /**
  * Parses part of speech from a line
  */
-const parsePartOfSpeech = (line: RawLine): ParsedLine => {
+export const parsePartOfSpeech = (line: RawLine): ParsedLine => {
   const baseResult = parseLanguageOrigin(line);
   
   // Only parse part of speech for Inglish lines
@@ -144,7 +189,7 @@ const parsePartOfSpeech = (line: RawLine): ParsedLine => {
 /**
  * Helper to process a group of lines
  */
-const processGroup = (lineParser: (line: RawLine) => ParsedLine) => 
+export const processGroup = (lineParser: (line: RawLine) => ParsedLine) => 
   (lines: RawLine[]): EntryGroup => {
     const etymologyLines: ParsedLine[] = [];
     const sourceLines: ParsedLine[] = [];
@@ -163,27 +208,36 @@ const processGroup = (lineParser: (line: RawLine) => ParsedLine) =>
   };
 
 /**
- * Groups lines by double newline
+ * Groups entries by analyzing complete entry patterns rather than just double newlines
  */
-const groupByDoubleNewline = (lineParser: (line: RawLine) => ParsedLine) => 
+export const groupByEntryPatterns = (lineParser: (line: RawLine) => ParsedLine) => 
   (lines: RawLine[]): EntryGroup[] => {
     const groups: EntryGroup[] = [];
-    let currentGroup: RawLine[] = [];
+    const allParsedLines = lines.map(line => lineParser(line));
     
-    for (const line of lines) {
-      if (line.content.trim() === '') {
-        if (currentGroup.length > 0) {
-          groups.push(processGroup(lineParser)(currentGroup));
-          currentGroup = [];
-        }
-      } else {
-        currentGroup.push(line);
+    // Find indices where ME (Modern English) tags appear
+    // These typically indicate the start of a new word/concept
+    const meIndices = allParsedLines
+      .map((line, index) => line.language === 'ME' ? index : -1)
+      .filter(index => index !== -1);
+    
+    // If we have ME markers, use them to split the entries
+    if (meIndices.length > 0) {
+      // Create ranges from ME indices (start index to next ME index - 1)
+      for (let i = 0; i < meIndices.length; i++) {
+        const startIdx = meIndices[i];
+        const endIdx = (i < meIndices.length - 1) ? meIndices[i + 1] - 1 : lines.length - 1;
+        
+        // Get the range of lines for this entry
+        const entryLines = lines.slice(startIdx - 2 >= 0 ? startIdx - 2 : 0, endIdx + 1);
+        
+        // Process group
+        const group = processGroup(lineParser)(entryLines);
+        groups.push(group);
       }
-    }
-    
-    // Don't forget the last group
-    if (currentGroup.length > 0) {
-      groups.push(processGroup(lineParser)(currentGroup));
+    } else {
+      // Fall back to using double newlines if no ME markers found
+      return groupByDoubleNewline(lineParser)(lines);
     }
     
     return groups;
@@ -194,7 +248,7 @@ const groupByDoubleNewline = (lineParser: (line: RawLine) => ParsedLine) =>
 /**
  * Extracts word name from Modern English line or fallback
  */
-const extractFromModernEnglish = (group: EntryGroup, fallbackName: string): string => {
+export const extractFromModernEnglish = (group: EntryGroup, fallbackName: string): string => {
   const meLine = group.etymologyLines.find(line => line.language === 'ME');
   
   if (meLine) {
@@ -216,7 +270,7 @@ const extractFromModernEnglish = (group: EntryGroup, fallbackName: string): stri
 /**
  * Transforms an entry group into the final JSON structure
  */
-const transformToWordEntry = (group: EntryGroup, wordName: string): WordEntry => {
+export const transformToWordEntry = (group: EntryGroup, wordName: string): WordEntry => {
   const etymology: EtymologyEntry[] = group.etymologyLines.map(line => {
     const entry: EtymologyEntry = {
       name: line.text,
@@ -230,7 +284,7 @@ const transformToWordEntry = (group: EntryGroup, wordName: string): WordEntry =>
     return entry;
   });
   
-  const sources = group.sourceLines.map(line => line.content);
+  const sources = group.sourceLines.map(line => line.text);
   
   return {
     name: wordName,
@@ -244,7 +298,7 @@ const transformToWordEntry = (group: EntryGroup, wordName: string): WordEntry =>
 /**
  * Stanza transformer - extracts modern and ing forms
  */
-const stanzaTransformer = (group: EntryGroup) => {
+export const stanzaTransformer = (group: EntryGroup) => {
   const modernLine = group.etymologyLines.find(line => line.language === 'ME');
   const modernIndex = group.etymologyLines.findIndex(line => line.language === 'ME');
   
@@ -262,7 +316,7 @@ const stanzaTransformer = (group: EntryGroup) => {
 /**
  * Compact transformer - minimal output format
  */
-const compactTransformer = (group: EntryGroup) => ({
+export const compactTransformer = (group: EntryGroup) => ({
   word: group.etymologyLines[0]?.text,
   languages: group.etymologyLines.map(l => l.origin),
   sources: group.sourceLines.length
@@ -273,11 +327,11 @@ const compactTransformer = (group: EntryGroup) => ({
 /**
  * Creates a default pipeline configuration
  */
-const createDefaultPipeline = (): TextProcessingPipeline => ({
+export const createDefaultPipeline = (): TextProcessingPipeline => ({
   textTransform: replaceSpecialCharacters,
   lineParser: parsePartOfSpeech,
-  entryGrouper: groupByDoubleNewline(parsePartOfSpeech),
-  wordNameExtractor: extractFromModernEnglish,
+  entryGrouper: groupByEntryPatterns(parsePartOfSpeech),
+  wordNameExtractor: extractFromLastLanguageTag,
   entryTransformer: transformToWordEntry,
   customTransformers: {}
 });
@@ -285,7 +339,7 @@ const createDefaultPipeline = (): TextProcessingPipeline => ({
 /**
  * Applies partial pipeline overrides to the default pipeline
  */
-const createPipeline = (overrides: Partial<TextProcessingPipeline>): TextProcessingPipeline => {
+export const createPipeline = (overrides: Partial<TextProcessingPipeline>): TextProcessingPipeline => {
   const defaultPipeline = createDefaultPipeline();
   
   // If lineParser is overridden, we need to update entryGrouper with the new parser
@@ -302,38 +356,87 @@ const createPipeline = (overrides: Partial<TextProcessingPipeline>): TextProcess
 /**
  * Converts text content through the pipeline
  */
-const convertText = (pipeline: TextProcessingPipeline) => 
+export const convertText = (pipeline: TextProcessingPipeline) => 
   (textContent: string, fileName: string): WordEntry[] | any[] => {
     // Step 1: Apply character transformations
     const transformedText = pipeline.textTransform(textContent);
     
-    // Step 2: Split into lines
-    const rawLines: RawLine[] = transformedText
-      .split('\n')
-      .map((content, index) => ({ content, lineNumber: index + 1 }))
-      .filter(line => line.content.trim() !== '');
+    // Step 2: Find potential entry boundaries
+    // We'll use a regex to find sections that represent full entries
+    const entries: string[] = [];
+    const sections = transformedText.split(/\n\s*\n/);
     
-    // Step 3: Group lines
-    const entryGroups = pipeline.entryGrouper(rawLines);
+    let currentEntry = '';
+    let lastSectionHadLanguageTag = false;
     
-    // Step 4: Convert each group
-    const fallbackName = fileName.replace('.txt', '');
-    
-    return entryGroups.map((group, index) => {
-      const wordName = pipeline.wordNameExtractor(group, fallbackName);
+    for (const section of sections) {
+      if (!section.trim()) continue;
       
-      // If there are custom transformers, apply them
+      // Check if this section has any language tag [XX]
+      const hasLanguageTag = /\[([A-Z]+)\]/.test(section);
+      
+      // If the previous section had a language tag and this one does too,
+      // it likely indicates a new entry
+      if (hasLanguageTag && lastSectionHadLanguageTag && currentEntry) {
+        entries.push(currentEntry.trim());
+        currentEntry = section;
+      } else {
+        // Otherwise add to the current entry
+        if (currentEntry) {
+          currentEntry += '\n\n' + section;
+        } else {
+          currentEntry = section;
+        }
+      }
+      
+      lastSectionHadLanguageTag = hasLanguageTag;
+    }
+    
+    // Add the last entry if we have one
+    if (currentEntry) {
+      entries.push(currentEntry.trim());
+    }
+    
+    // Step 3: Process each entry independently
+    return entries.map((entryContent) => {
+      // Convert entry text to raw lines
+      const rawLines: RawLine[] = entryContent
+        .split('\n')
+        .map((content, index) => ({ content, lineNumber: index + 1 }))
+        .filter(line => line.content.trim() !== '');
+      
+      // Find the last language tag in this entry
+      const lastLanguageTag = rawLines
+        .map(line => {
+          const match = line.content.match(/\[([A-Z]+)\]/);
+          return match ? { line, tag: match[1] } : null;
+        })
+        .filter(result => result !== null)
+        .pop();
+      
+      // Process according to pipeline
+      const group = processGroup(pipeline.lineParser)(rawLines);
+      const fallbackName = fileName.replace('.txt', '');
+      
+      // Use last language tag line as the name, or fallback
+      let wordName = fallbackName;
+      if (lastLanguageTag) {
+        const parsedLine = pipeline.lineParser(lastLanguageTag.line);
+        wordName = parsedLine.text;
+      } else {
+        wordName = pipeline.wordNameExtractor(group, fallbackName);
+      }
+      
+      // Apply transformers
       if (Object.keys(pipeline.customTransformers).length > 0) {
         const result: any = {};
-        
         for (const [key, transformer] of Object.entries(pipeline.customTransformers)) {
           result[key] = transformer(group);
         }
-        
         return result;
       }
       
-      // Otherwise, use the standard transformer
+      // Use standard transformer
       return pipeline.entryTransformer(group, wordName);
     });
   };
@@ -343,7 +446,7 @@ const convertText = (pipeline: TextProcessingPipeline) =>
 /**
  * Ensures directory exists (creates if necessary)
  */
-const ensureDirExists = (dirPath: string): void => {
+export const ensureDirExists = (dirPath: string): void => {
   if (!fs.existsSync(dirPath)) {
     fs.mkdirSync(dirPath, { recursive: true });
   }
@@ -352,7 +455,7 @@ const ensureDirExists = (dirPath: string): void => {
 /**
  * Process a single file
  */
-const processFile = 
+export const processFile = 
   (targetBase: string, converter: (textContent: string, fileName: string) => any[]) => 
   (filePath: string, relPath: string): void => {
     const fileName = path.basename(filePath);
@@ -394,7 +497,7 @@ const processFile =
 /**
  * Process a directory recursively
  */
-const processDirectory = 
+export const processDirectory = 
   (targetBase: string, converter: (textContent: string, fileName: string) => any[]) => 
   (dirPath: string, relPath: string = ''): void => {
     const entries = fs.readdirSync(dirPath, { withFileTypes: true });
@@ -417,7 +520,7 @@ const processDirectory =
 /**
  * Create different pipeline configurations for different use cases
  */
-const pipelines = {
+export const pipelines = {
   standard: createPipeline({}),
   
   stanza: createPipeline({
@@ -448,68 +551,3 @@ const pipelines = {
       extractFromModernEnglish(group, fallback).toLowerCase()
   })
 };
-
-// ===== MAIN FUNCTION =====
-
-function main(): void {
-  const langDir = process.argv[2];
-  const pipelineName = process.argv[3] || 'standard';
-  const sourceBase = 'data-text';
-  const targetBase = 'data-json';
-  
-  const sourceDir = langDir ? path.join(sourceBase, langDir) : sourceBase;
-  const targetDir = langDir ? path.join(targetBase, langDir) : targetBase;
-  
-  if (!fs.existsSync(sourceDir)) {
-    console.error(`Error: Source directory '${sourceDir}' does not exist.`);
-    console.log(`Usage: node script.js [language-directory] [pipeline-name]`);
-    console.log(`Available pipelines: ${Object.keys(pipelines).join(', ')}`);
-    process.exit(1);
-  }
-  
-  // Get the specified pipeline
-  const pipeline = pipelines[pipelineName as keyof typeof pipelines] || pipelines.standard;
-  
-  console.log(`Starting conversion from ${sourceDir} to ${targetDir}...`);
-  console.log(`Using pipeline: ${pipelineName}`);
-  
-  // Create the converter function
-  const converter = convertText(pipeline);
-  
-  // Process files
-  processDirectory(targetBase, converter)(sourceDir);
-  
-  console.log('Conversion completed!');
-}
-
-// Execute main function
-main();
-
-// ===== USAGE EXAMPLES =====
-
-/*
-// Example 1: Use a predefined pipeline
-const standardConverter = convertText(pipelines.standard);
-const result1 = standardConverter(textContent, fileName);
-
-// Example 2: Create a custom pipeline
-const customPipeline = createPipeline({
-  textTransform: (text) => text.replace(/old/g, 'new'),
-  customTransformers: {
-    myFormat: (group) => ({
-      // Your custom format
-    })
-  }
-});
-
-const customConverter = convertText(customPipeline);
-const result2 = customConverter(textContent, fileName);
-
-// Example 3: Compose functions for specific use case
-const processStanzaFormat = pipe(
-  replaceSpecialCharacters,
-  (text) => text.split('\n').map((content, i) => ({ content, lineNumber: i + 1 })),
-  groupByDoubleNewline(parsePartOfSpeech),
-  (groups) => groups.map(stanzaTransformer)
-);
-*/

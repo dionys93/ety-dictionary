@@ -4,6 +4,7 @@ import * as path from 'path';
 import {
   // Core pipeline components
   createPipeline,
+  createDefaultPipeline,
   convertText,
   processDirectory,
   ensureDirExists,
@@ -35,7 +36,7 @@ function main(): void {
   // Validate source directory exists
   if (!fs.existsSync(sourceDir)) {
     console.error(`Error: Source directory '${sourceDir}' does not exist.`);
-    console.log(`Usage: tsx main.ts [language-directory] [pipeline-type]`);
+    console.log(`Usage: node main.js [language-directory] [pipeline-type]`);
     console.log(`Available pipeline types: ${Object.keys(pipelines).join(', ')}`);
     process.exit(1);
   }
@@ -93,14 +94,3 @@ function createCustomPipeline() {
     }
   });
 }
-
-// Example usage of the custom pipeline
-/*
-function processVerbConjugations() {
-  const verbPipeline = createCustomPipeline();
-  const converter = convertText(verbPipeline);
-  
-  // Process only the verbs directory
-  processDirectory('data-json/verbs', converter)('data-text/verbs');
-}
-*/
