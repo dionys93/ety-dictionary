@@ -102,6 +102,7 @@ export const languageMap: Record<string, { name: string }> = {
   'EG': { name: 'Ecclesiastical Greek' },
   'EGY': { name: 'Egyptian' },
   'PS': { name: 'Persian' },
+  'PR' : { name: 'Portuguese' },
   'AR': { name: 'Arabic' },
   'JP': { name: 'Japanese' },
   'OE': { name: 'Old English' },
