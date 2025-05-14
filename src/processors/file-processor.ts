@@ -4,6 +4,7 @@ import * as path from 'path';
 import { RawLine, TextProcessingPipeline } from '../types/pipeline-types';
 import { processGroup } from '../transformers/entry-groupers';
 import { ensureDirExists } from '../utils/file-utils';
+import { log, logError, logConversion, logDebug } from '../utils/console-utils';
 
 export const convertText = (pipeline: TextProcessingPipeline) => 
   (textContent: string, fileName: string): any[] => {
@@ -46,12 +47,14 @@ export const convertText = (pipeline: TextProcessingPipeline) =>
       entries.push(currentEntry.trim());
     }
     
+    logDebug(`Detected ${entries.length} entries in ${fileName}`);
+    
     // Step 3: Process each entry independently
-    return entries.map((entryContent) => {
+    return entries.map((entryContent, index) => {
       // Convert entry text to raw lines
       const rawLines: RawLine[] = entryContent
         .split('\n')
-        .map((content, index) => ({ content, lineNumber: index + 1 }))
+        .map((content, lineIndex) => ({ content, lineNumber: lineIndex + 1 }))
         .filter(line => line.content.trim() !== '');
       
       // Find the last language tag in this entry
@@ -75,6 +78,8 @@ export const convertText = (pipeline: TextProcessingPipeline) =>
       } else {
         wordName = pipeline.wordNameExtractor(group, fallbackName);
       }
+      
+      logDebug(`Entry ${index + 1}: Word name = "${wordName}"`);
       
       // Apply transformers
       if (Object.keys(pipeline.customTransformers).length > 0) {
@@ -123,8 +128,8 @@ export const processFile =
         'utf8'
       );
       
-      console.log(`Converted: ${filePath} -> ${targetFilePath}`);
+      logConversion(filePath, targetFilePath);
     } catch (error) {
-      console.error(`Error processing file ${filePath}:`, error);
+      logError(`Error processing file ${filePath}:`, error);
     }
   };

@@ -1,5 +1,6 @@
 // src/custom/custom-transformers.ts
 import { EntryGroup } from '../types/pipeline-types';
+import { extractFromLastLanguageTag } from '../transformers/name-extractors';
 
 export const stanzaTransformer = (group: EntryGroup) => {
   const modernLine = group.etymologyLines.find(line => line.language === 'ME');
@@ -16,8 +17,13 @@ export const stanzaTransformer = (group: EntryGroup) => {
   };
 };
 
-export const compactTransformer = (group: EntryGroup) => ({
-  word: group.etymologyLines[0]?.text,
-  languages: group.etymologyLines.map(l => l.origin),
-  sources: group.sourceLines.length
-});
+export const compactTransformer = (group: EntryGroup) => {
+  // Use the existing word name extractor for consistency
+  const wordName = extractFromLastLanguageTag(group, group.etymologyLines[0]?.text || '');
+    
+  return {
+    word: wordName,
+    languages: group.etymologyLines.map(l => l.origin),
+    sources: group.sourceLines.length
+  };
+};

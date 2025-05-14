@@ -8,6 +8,7 @@ export { posMap } from './config/pos-map';
 
 // Utils
 export { ensureDirExists } from './utils/file-utils';
+export * from './utils/console-utils';
 
 // Transformers
 export { replaceSpecialCharacters } from './transformers/text-transformers';
