@@ -15,7 +15,7 @@ import {
   // Custom transformers if needed
   stanzaTransformer,
   compactTransformer
-} from './text-pipeline-functors';
+} from './src/index';
 
 /**
  * Main function to start the text-to-JSON processing
