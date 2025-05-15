@@ -11,6 +11,7 @@ export const languageMap: Record<string, { name: string }> = {
     'OE': { name: 'Old English' },
     'ME': { name: 'Modern English' },
     'MI': { name: 'Middle English' },
+    'MS': { name: 'Modern Slang' },
     'L': { name: 'Latin' },
     'OF': { name: 'Old French' },
     'FR': { name: 'French' },
