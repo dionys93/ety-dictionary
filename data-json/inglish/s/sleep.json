@@ -45,7 +45,7 @@
         "name": "sliep",
         "origin": "Inglish",
         "part-of-speech": [
-          "n"
+          "noun"
         ]
       }
     ],
@@ -91,7 +91,7 @@
         "origin": "Modern English"
       },
       {
-        "name": "sliepovre -s",
+        "name": "sliepovre -ers",
         "origin": "Inglish",
         "part-of-speech": [
           "masculine noun"
@@ -149,7 +149,7 @@
         "origin": "Modern English"
       },
       {
-        "name": "sliepleʃ -sly",
+        "name": "sliepless -ly",
         "origin": "Inglish",
         "part-of-speech": [
           "adjective"
@@ -161,6 +161,38 @@
       "https://www.merriam-webster.com/dictionary/sleepless",
       "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40839",
       "https://bosworthtoller.com/27937"
+    ]
+  },
+  {
+    "name": "asleep",
+    "etymology": [
+      {
+        "name": "on slæpe",
+        "origin": "Old English"
+      },
+      {
+        "name": "aslepe, o slæpe",
+        "origin": "Middle English"
+      },
+      {
+        "name": "asleep",
+        "origin": "Modern English"
+      },
+      {
+        "name": "asliep",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "adverb"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/asleep#etymonline_v_17938",
+      "https://www.merriam-webster.com/dictionary/asleep#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/asleep#dictionary-entry-2",
+      "https://www.oed.com/dictionary/asleep_adv?tab=factsheet#37925421",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED2490"
     ]
   }
 ]
