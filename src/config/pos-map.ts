@@ -2,6 +2,7 @@
 export const posMap: Record<string, string> = {
     "m n": "masculine noun",
     "f n": "feminine noun",
+    "n": "noun",
     "v": "verb",
     "intr v": "intransitive verb",
     "tr v": "transitive verb",
