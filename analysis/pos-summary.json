@@ -1,0 +1,149 @@
+{
+  "totalFiles": 761,
+  "totalEntriesWithPos": 761,
+  "entriesWithMultiplePos": 114,
+  "uniquePartsOfSpeech": [
+    "v",
+    "f n",
+    "adj",
+    "n",
+    "m n",
+    "conj",
+    "adv",
+    "pron",
+    "prep",
+    "intr v",
+    "tr v",
+    "tr",
+    "suff"
+  ],
+  "posCounts": {
+    "v": 603,
+    "f n": 190,
+    "adj": 330,
+    "n": 241,
+    "m n": 623,
+    "conj": 8,
+    "adv": 60,
+    "pron": 6,
+    "prep": 5,
+    "intr v": 6,
+    "tr v": 4,
+    "tr": 1,
+    "suff": 1
+  },
+  "posDistribution": {
+    "v": 79.2,
+    "f n": 25,
+    "adj": 43.4,
+    "n": 31.7,
+    "m n": 81.9,
+    "conj": 1.1,
+    "adv": 7.9,
+    "pron": 0.8,
+    "prep": 0.7,
+    "intr v": 0.8,
+    "tr v": 0.5,
+    "tr": 0.1,
+    "suff": 0.1
+  },
+  "posFullNames": {
+    "m n": "masculine noun",
+    "f n": "feminine noun",
+    "n": "noun",
+    "v": "verb",
+    "intr v": "intransitive verb",
+    "tr v": "transitive verb",
+    "conj": "conjunction",
+    "adj": "adjective",
+    "prep": "preposition",
+    "pron": "pronoun",
+    "adv": "adverb",
+    "suff": "suffix"
+  },
+  "examples": {
+    "v": [
+      "abandon",
+      "abase",
+      "abhore",
+      "abolish",
+      "abrade"
+    ],
+    "f n": [
+      "abandon",
+      "abase",
+      "aberrant",
+      "abhore",
+      "abolish"
+    ],
+    "adj": [
+      "aberrant",
+      "abhore",
+      "abolish",
+      "abrade",
+      "absurd"
+    ],
+    "n": [
+      "aberrant",
+      "ability",
+      "abolish",
+      "abrade",
+      "ache"
+    ],
+    "m n": [
+      "accede",
+      "adamant",
+      "adjective",
+      "admiral",
+      "admit"
+    ],
+    "conj": [
+      "albeit",
+      "although",
+      "because",
+      "either",
+      "like"
+    ],
+    "adv": [
+      "all",
+      "analyze",
+      "annual",
+      "aught",
+      "back"
+    ],
+    "pron": [
+      "all",
+      "aught",
+      "either",
+      "none",
+      "which"
+    ],
+    "prep": [
+      "below",
+      "like",
+      "long",
+      "pair",
+      "save"
+    ],
+    "intr v": [
+      "burn",
+      "creep",
+      "hang",
+      "smell",
+      "spill"
+    ],
+    "tr v": [
+      "burn",
+      "hang",
+      "smell",
+      "spill"
+    ],
+    "tr": [
+      "creep"
+    ],
+    "suff": [
+      "hood"
+    ]
+  },
+  "filesWithoutPos": []
+}
