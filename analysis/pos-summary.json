@@ -1,7 +1,7 @@
 {
-  "totalFiles": 761,
-  "totalEntriesWithPos": 761,
-  "entriesWithMultiplePos": 114,
+  "totalFiles": 779,
+  "totalEntriesWithPos": 779,
+  "entriesWithMultiplePos": 120,
   "uniquePartsOfSpeech": [
     "v",
     "f n",
@@ -14,37 +14,37 @@
     "prep",
     "intr v",
     "tr v",
-    "tr",
+    "obs",
     "suff"
   ],
   "posCounts": {
-    "v": 603,
-    "f n": 190,
-    "adj": 330,
-    "n": 241,
-    "m n": 623,
+    "v": 622,
+    "f n": 203,
+    "adj": 344,
+    "n": 242,
+    "m n": 641,
     "conj": 8,
-    "adv": 60,
+    "adv": 63,
     "pron": 6,
     "prep": 5,
     "intr v": 6,
-    "tr v": 4,
-    "tr": 1,
+    "tr v": 5,
+    "obs": 1,
     "suff": 1
   },
   "posDistribution": {
-    "v": 79.2,
-    "f n": 25,
-    "adj": 43.4,
-    "n": 31.7,
-    "m n": 81.9,
-    "conj": 1.1,
-    "adv": 7.9,
+    "v": 79.8,
+    "f n": 26.1,
+    "adj": 44.2,
+    "n": 31.1,
+    "m n": 82.3,
+    "conj": 1,
+    "adv": 8.1,
     "pron": 0.8,
-    "prep": 0.7,
+    "prep": 0.6,
     "intr v": 0.8,
-    "tr v": 0.5,
-    "tr": 0.1,
+    "tr v": 0.6,
+    "obs": 0.1,
     "suff": 0.1
   },
   "posFullNames": {
@@ -134,12 +134,13 @@
     ],
     "tr v": [
       "burn",
+      "creep",
       "hang",
       "smell",
       "spill"
     ],
-    "tr": [
-      "creep"
+    "obs": [
+      "defer"
     ],
     "suff": [
       "hood"
