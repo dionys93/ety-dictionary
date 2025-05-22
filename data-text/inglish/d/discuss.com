@@ -1,0 +1,15 @@
+discutere, discussus [L] 
+discussen [MI]
+to discuss [ME]
+ta discusse -s -d -iꬻ (v)
+https://www.etymonline.com/word/discuss#etymonline_v_29683
+https://www.merriam-webster.com/dictionary/discuss
+https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED11885
+https://latin-dictionary.net/definition/18066/discutio-discutere-discussi-discussus
+
+discussio [L]
+discussion [OF] -s (f n)
+https://www.etymonline.com/word/discussion#etymonline_v_11414
+https://www.merriam-webster.com/dictionary/discussion
+https://anglo-norman.net/entry/discussion
+https://latin-dictionary.net/definition/18066/discutio-discutere-discussi-discussus
