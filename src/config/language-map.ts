@@ -20,7 +20,8 @@ export const languageMap: Record<string, { name: string }> = {
     'ML': { name: 'Medieval Latin' },
     'IT': { name: 'Italian' },
     'ON': { name: 'Old Norse' },
-    'PG': { name: 'Proto-Germanic' },
+    'PRG': { name: 'Proto-Germanic' },
     'PIE': { name: 'Proto-Indo-European' },
-    'VL': { name: 'Vulgar Latin' }
+    'VL': { name: 'Vulgar Latin' },
+    'GR': { name: 'German' },
 };
