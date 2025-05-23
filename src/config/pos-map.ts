@@ -11,5 +11,6 @@ export const posMap: Record<string, string> = {
     "prep": "preposition",
     "pron": "pronoun",
     "adv": "adverb",
-    "suff": "suffix"
+    "suff": "suffix",
+    "interj": "interjection"
 };
