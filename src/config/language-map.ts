@@ -4,6 +4,7 @@ export const languageMap: Record<string, { name: string }> = {
     'AG': { name: 'Ancient Greek' },
     'EG': { name: 'Ecclesiastical Greek' },
     'EGY': { name: 'Egyptian' },
+    'HE': { name: 'Hebrew' },
     'PS': { name: 'Persian' },
     'PR': { name: 'Portuguese' },
     'AR': { name: 'Arabic' },
