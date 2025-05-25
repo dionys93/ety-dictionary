@@ -27,4 +27,5 @@ export const languageMap: Record<string, { name: string }> = {
     'PIE': { name: 'Proto-Indo-European' },
     'VL': { name: 'Vulgar Latin' },
     'GR': { name: 'German' },
+    'TA': { name: 'Tamil' },
 };
