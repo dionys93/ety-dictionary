@@ -1,5 +1,6 @@
 // src/config/language-map.ts
 export const languageMap: Record<string, { name: string }> = {
+    'AZ': { name: 'Aztec' },
     'AB': { name: 'Aborigine' },
     'AG': { name: 'Ancient Greek' },
     'EG': { name: 'Ecclesiastical Greek' },
