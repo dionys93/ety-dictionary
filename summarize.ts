@@ -1,7 +1,7 @@
 // summarize.ts
 import * as fs from 'fs';
 import * as path from 'path';
-import { posMap } from './src/config/pos-map'; // Import posMap for consistency
+import { posMap, ok, err, map, flatMap, fold, safe, Result, filterSuccesses } from './src';
 
 /**
  * Configuration options for the summary
@@ -26,23 +26,63 @@ const config = {
   logVerbose: false,
   
   // Analysis mode (pos, roots, both)
-  mode: 'both',
+  mode: 'both' as 'pos' | 'roots' | 'both',
+};
+
+/**
+ * Safe file operations using Result monad
+ */
+const safeReadFile = (filePath: string): Result<string> => {
+  try {
+    const content = fs.readFileSync(filePath, 'utf-8');
+    return ok(content);
+  } catch (error) {
+    return err(new Error(`Failed to read ${filePath}: ${error}`));
+  }
+};
+
+const safeWriteFile = (filePath: string, content: string): Result<string> => {
+  try {
+    fs.writeFileSync(filePath, content, 'utf-8');
+    return ok(`Successfully wrote ${filePath}`);
+  } catch (error) {
+    return err(new Error(`Failed to write ${filePath}: ${error}`));
+  }
+};
+
+const safeReadDir = (dirPath: string): Result<fs.Dirent[]> => {
+  try {
+    const entries = fs.readdirSync(dirPath, { withFileTypes: true });
+    return ok(entries);
+  } catch (error) {
+    return err(new Error(`Failed to read directory ${dirPath}: ${error}`));
+  }
+};
+
+const safeEnsureDir = (dirPath: string): Result<string> => {
+  try {
+    if (!fs.existsSync(dirPath)) {
+      fs.mkdirSync(dirPath, { recursive: true });
+    }
+    return ok(`Directory ${dirPath} ready`);
+  } catch (error) {
+    return err(new Error(`Failed to create directory ${dirPath}: ${error}`));
+  }
 };
 
 /**
  * Process command line arguments
  */
-function processArguments() {
+function processArguments(): void {
   const args = process.argv.slice(2);
-  for (let i = 0; i < args.length; i++) {
+  for (const i of Array(args.length).keys()) {
     const arg = args[i];
     
     if (arg === '--mode' || arg === '-m') {
       if (i + 1 < args.length) {
         const mode = args[i + 1];
         if (['pos', 'roots', 'both'].includes(mode)) {
-          config.mode = mode;
-          i++; // Skip the next argument
+          config.mode = mode as 'pos' | 'roots' | 'both';
         } else {
           console.error(`Invalid mode: ${mode}. Using default: ${config.mode}`);
         }
@@ -59,7 +99,7 @@ function processArguments() {
 /**
  * Print help information
  */
-function printHelp() {
+function printHelp(): void {
   console.log(`
 Usage: tsx summarize.ts [options]
 
@@ -76,44 +116,48 @@ Examples:
 }
 
 /**
- * Reads all text files in a directory and its subdirectories
+ * Safely find all text files in a directory recursively
  */
-function findTextFiles(dir: string): string[] {
+function findTextFiles(dir: string): Result<string[]> {
   const results: string[] = [];
   
-  const entries = fs.readdirSync(dir, { withFileTypes: true });
+  const searchRecursive = (currentDir: string): Result<void> => {
+    return flatMap((entries: fs.Dirent[]) => {
+      for (const entry of entries) {
+        const fullPath = path.join(currentDir, entry.name);
+        
+        if (entry.isDirectory()) {
+          const subResult = searchRecursive(fullPath);
+          if (!subResult.isSuccess) {
+            return err(subResult.error!);
+          }
+        } else if (entry.isFile() && entry.name.endsWith('.txt')) {
+          results.push(fullPath);
+        }
+      }
+      return ok(undefined);
+    })(safeReadDir(currentDir));
+  };
   
-  for (const entry of entries) {
-    const fullPath = path.join(dir, entry.name);
-    
-    if (entry.isDirectory()) {
-      results.push(...findTextFiles(fullPath));
-    } else if (entry.isFile() && entry.name.endsWith('.txt')) {
-      results.push(fullPath);
-    }
-  }
-  
-  return results;
+  return map(() => results)(searchRecursive(dir));
 }
 
 /**
- * Simple function to extract part of speech tags from text
+ * Safe text extraction functions using Result monad
  */
-function extractPosFromText(text: string): string[] {
+const safeExtractPosFromText = safe((text: string): string[] => {
+  // Trim whitespace to handle trailing spaces
+  const trimmedText = text.trim();
   const posRegex = /\(([\w\s,]+)\)$/;
-  const match = text.match(posRegex);
+  const match = trimmedText.match(posRegex);
   
   if (!match) return [];
   
   // Split by comma for multiple parts of speech
   return match[1].split(',').map(p => p.trim());
-}
+});
 
-/**
- * Extract the root word from a file
- * The root word is the first line of the file
- */
-function extractRootWord(content: string): string | null {
+const safeExtractRootWord = safe((content: string): string | null => {
   const lines = content.split('\n');
   
   // Find the first non-empty line
@@ -130,13 +174,9 @@ function extractRootWord(content: string): string | null {
   }
   
   return null;
-}
+});
 
-/**
- * Extract the root language from a file
- * Looks for the first language tag in square brackets
- */
-function extractRootLanguage(content: string): string | null {
+const safeExtractRootLanguage = safe((content: string): string | null => {
   const lines = content.split('\n');
   
   // Find the first line with a language tag
@@ -148,12 +188,9 @@ function extractRootLanguage(content: string): string | null {
   }
   
   return null;
-}
+});
 
-/**
- * Find all modern English words in a file
- */
-function extractModernEnglishWords(content: string): string[] {
+const safeExtractModernEnglishWords = safe((content: string): string[] => {
   const lines = content.split('\n');
   const meWords: string[] = [];
   
@@ -169,100 +206,147 @@ function extractModernEnglishWords(content: string): string[] {
   }
   
   return meWords;
+});
+
+/**
+ * Process a single file for POS analysis
+ */
+function processFileForPos(filePath: string): Result<{
+  fileName: string;
+  hasPosTag: boolean;
+  posTagsInFile: Set<string>;
+  entriesWithMultiplePos: number;
+}> {
+  return flatMap((content: string) => {
+    const lines = content.split('\n');
+    const fileName = path.basename(filePath);
+    
+    const posTagsInFile = new Set<string>();
+    let hasPosTag = false;
+    let entriesWithMultiplePos = 0;
+    
+    // Process each line safely
+    for (const line of lines) {
+      if (line.includes('(') && line.includes(')')) {
+        const posResult = safeExtractPosFromText(line);
+        
+        fold(
+          (error: Error) => {
+            if (config.logVerbose) {
+              console.error(`Error extracting POS from line in ${fileName}: ${error.message}`);
+            }
+          },
+          (posTagsInLine: string[]) => {
+            if (posTagsInLine.length > 0) {
+              hasPosTag = true;
+              
+              for (const posTag of posTagsInLine) {
+                posTagsInFile.add(posTag);
+                
+                if (config.logVerbose) {
+                  console.log(`Found part of speech in ${fileName}: ${posTag} (${posMap[posTag] || posTag})`);
+                }
+              }
+              
+              if (posTagsInLine.length > 1) {
+                entriesWithMultiplePos++;
+              }
+            }
+          }
+        )(posResult);
+      }
+    }
+    
+    return ok({
+      fileName,
+      hasPosTag,
+      posTagsInFile,
+      entriesWithMultiplePos
+    });
+  })(safeReadFile(filePath));
 }
 
 /**
- * Analyze part of speech data
+ * Process a single file for root word analysis
  */
-async function analyzePosData(filePaths: string[]) {
+function processFileForRoots(filePath: string): Result<{
+  fileName: string;
+  rootWord: string | null;
+  rootLang: string | null;
+  meWords: string[];
+}> {
+  return flatMap((content: string) => {
+    const fileName = path.basename(filePath);
+    
+    // Extract data safely using composed operations
+    const rootWordResult = safeExtractRootWord(content);
+    const rootLangResult = safeExtractRootLanguage(content);
+    const meWordsResult = safeExtractModernEnglishWords(content);
+    
+    // Combine results - if any fail, we still want partial data
+    const rootWord = fold(() => null, (word: string | null) => word)(rootWordResult);
+    const rootLang = fold(() => null, (lang: string | null) => lang)(rootLangResult);
+    const meWords = fold(() => [] as string[], (words: string[]) => words)(meWordsResult);
+    
+    return ok({
+      fileName,
+      rootWord,
+      rootLang,
+      meWords
+    });
+  })(safeReadFile(filePath));
+}
+
+/**
+ * Analyze part of speech data using Result monad
+ */
+async function analyzePosData(filePaths: string[]): Promise<Result<string>> {
   console.log("Analyzing part of speech data...");
+  
+  // Process all files and collect results
+  const fileResults = filePaths.map(processFileForPos);
+  const { successes, errors } = filterSuccesses(fileResults);
+  
+  // Log errors if any
+  if (errors.length > 0) {
+    console.error(`Failed to process ${errors.length} files:`);
+    errors.forEach(error => console.error(`- ${error.message}`));
+  }
   
   // Initialize counters
   const posCounts: Record<string, number> = {};
-  const totalFiles = filePaths.length;
   const filesByPos: Record<string, string[]> = {};
+  const filesWithoutPos: string[] = [];
   let totalPosEntries = 0;
-  let entriesWithMultiplePos = 0;
+  let totalEntriesWithMultiplePos = 0;
   
-  // Process each file
-  for (const filePath of filePaths) {
-    try {
-      const content = fs.readFileSync(filePath, 'utf-8');
-      const lines = content.split('\n');
-      const fileName = path.basename(filePath);
+  // Aggregate results
+  for (const result of successes) {
+    if (result.hasPosTag) {
+      totalPosEntries++;
+      totalEntriesWithMultiplePos += result.entriesWithMultiplePos;
       
-      // Look for POS tags in any line
-      let hasPosTag = false;
-      const posTagsInFile = new Set<string>();
-      
-      // For each file, check all lines for part of speech tags
-      for (const line of lines) {
-        if (line.includes('(') && line.includes(')')) {
-          const posTagsInLine = extractPosFromText(line);
-          
-          if (posTagsInLine.length > 0) {
-            hasPosTag = true;
-            
-            // Add all POS tags found in this line
-            for (const posTag of posTagsInLine) {
-              posTagsInFile.add(posTag);
-              
-              // Initialize if this is a new POS tag
-              if (!posCounts[posTag]) {
-                posCounts[posTag] = 0;
-                filesByPos[posTag] = [];
-              }
-              
-              // Increment count and add file to the list
-              posCounts[posTag]++;
-              
-              if (!filesByPos[posTag].includes(fileName)) {
-                filesByPos[posTag].push(fileName);
-              }
-              
-              // Log detailed POS info if verbose mode is enabled
-              if (config.logVerbose) {
-                console.log(`Found part of speech in ${fileName}: ${posTag} (${posMap[posTag] || posTag})`);
-              }
-            }
-            
-            // Check for multiple POS tags
-            if (posTagsInLine.length > 1) {
-              entriesWithMultiplePos++;
-            }
-          }
+      for (const posTag of result.posTagsInFile) {
+        if (!posCounts[posTag]) {
+          posCounts[posTag] = 0;
+          filesByPos[posTag] = [];
+        }
+        
+        posCounts[posTag]++;
+        
+        if (!filesByPos[posTag].includes(result.fileName)) {
+          filesByPos[posTag].push(result.fileName);
         }
       }
-      
-      // If this file had POS tags, increment the counter
-      if (hasPosTag) {
-        totalPosEntries++;
-      }
-      
-    } catch (error) {
-      console.error(`Error processing file ${filePath}:`, error);
-    }
-  }
-  
-  // Track files with no POS tags
-  const filesWithoutPos: string[] = [];
-  
-  for (const filePath of filePaths) {
-    const fileName = path.basename(filePath);
-    // Check if this file is in any POS category
-    const hasPos = Object.values(filesByPos).some(files => 
-      files.includes(fileName)
-    );
-    
-    if (!hasPos) {
-      filesWithoutPos.push(fileName);
+    } else {
+      filesWithoutPos.push(result.fileName);
     }
   }
   
   // Calculate percentages
   const posDistribution: Record<string, number> = {};
   for (const [pos, count] of Object.entries(posCounts)) {
-    posDistribution[pos] = parseFloat(((count / totalPosEntries) * 100).toFixed(1));
+    posDistribution[pos] = parseFloat(((count / Math.max(totalPosEntries, 1)) * 100).toFixed(1));
   }
   
   // Add mappings from posMap
@@ -273,183 +357,212 @@ async function analyzePosData(filePaths: string[]) {
   
   // Prepare the summary
   const summary = {
-    totalFiles,
+    totalFiles: filePaths.length,
+    processedFiles: successes.length,
+    failedFiles: errors.length,
     totalEntriesWithPos: totalPosEntries,
-    entriesWithMultiplePos,
+    entriesWithMultiplePos: totalEntriesWithMultiplePos,
     uniquePartsOfSpeech: Object.keys(posCounts),
     posCounts,
     posDistribution,
     posFullNames,
-    // Include up to 5 example files for each POS
     examples: Object.fromEntries(
       Object.entries(filesByPos).map(([pos, files]) => [
         pos, 
         files.slice(0, 5).map(f => f.replace('.txt', ''))
       ])
     ),
-    // Files without any POS tags
     filesWithoutPos
   };
   
-  // Save to file
+  // Save to file safely
   const outputPath = path.join(config.outputDir, config.outputFile);
-  fs.writeFileSync(outputPath, JSON.stringify(summary, null, 2));
-  console.log(`Part of speech summary saved to ${outputPath}`);
+  const saveResult = safeWriteFile(outputPath, JSON.stringify(summary, null, 2));
   
-  // Log to console if requested
-  if (config.logToConsole) {
-    console.log("\n=== Parts of Speech Summary ===");
-    console.log(`Total files analyzed: ${totalFiles}`);
-    console.log(`Files with part of speech tags: ${totalPosEntries}`);
-    console.log(`Files without part of speech tags: ${filesWithoutPos.length}`);
-    console.log(`Entries with multiple parts of speech: ${entriesWithMultiplePos}`);
-    
-    console.log("\nDistribution:");
-    // Sort by frequency
-    const sortedPos = Object.keys(posCounts).sort((a, b) => posCounts[b] - posCounts[a]);
-    for (const pos of sortedPos) {
-      const count = posCounts[pos];
-      const percentage = posDistribution[pos];
-      const fullName = posMap[pos] || pos; // Use posMap for full name
-      console.log(`- ${pos}: ${count} entries (${percentage}%) - ${fullName}`);
-    }
-    
-    // Show detailed information if in verbose mode
-    if (config.logVerbose) {
-      console.log("\nFiles without POS tags:");
-      // Print all files without POS tags
-      filesWithoutPos.forEach(file => {
-        console.log(`- ${file}`);
-      });
-    } else {
-      // Just show a sample in regular mode
-      console.log(`\nFiles without POS tags: ${filesWithoutPos.length}`);
-      // Print up to 10 examples of files without POS tags
-      if (filesWithoutPos.length > 0) {
-        console.log("Examples:");
-        filesWithoutPos.slice(0, 10).forEach(file => {
-          console.log(`- ${file}`);
-        });
-        
-        if (filesWithoutPos.length > 10) {
-          console.log(`...and ${filesWithoutPos.length - 10} more`);
-        }
+  return fold(
+    (error: Error) => err(error),
+    () => {
+      console.log(`Part of speech summary saved to ${outputPath}`);
+      
+      // Log to console if requested
+      if (config.logToConsole) {
+        logPosResults(summary);
       }
+      
+      return ok(`POS analysis completed successfully`);
     }
-  }
+  )(saveResult);
 }
 
 /**
- * Analyze root words
+ * Analyze root words using Result monad
  */
-async function analyzeRootWords(filePaths: string[]) {
+async function analyzeRootWords(filePaths: string[]): Promise<Result<string>> {
   console.log("Analyzing root words...");
+  
+  // Process all files and collect results
+  const fileResults = filePaths.map(processFileForRoots);
+  const { successes, errors } = filterSuccesses(fileResults);
+  
+  // Log errors if any
+  if (errors.length > 0) {
+    console.error(`Failed to process ${errors.length} files:`);
+    errors.forEach(error => console.error(`- ${error.message}`));
+  }
   
   // Initialize data structures
   const rootWords: Record<string, any> = {};
   const rootLangCount: Record<string, number> = {};
   const missingRoots: string[] = [];
   
-  // Process each file
-  for (const filePath of filePaths) {
-    try {
-      const content = fs.readFileSync(filePath, 'utf-8');
-      const fileName = path.basename(filePath);
-      
-      // Extract root word and language
-      const rootWord = extractRootWord(content);
-      const rootLang = extractRootLanguage(content);
-      const meWords = extractModernEnglishWords(content);
-      
-      if (rootWord && rootLang) {
-        // Initialize language counter if needed
-        if (!rootLangCount[rootLang]) {
-          rootLangCount[rootLang] = 0;
-        }
-        rootLangCount[rootLang]++;
-        
-        // Store root word information
-        if (!rootWords[rootWord]) {
-          rootWords[rootWord] = {
-            root: rootWord,
-            language: rootLang,
-            files: [],
-            modernWords: []
-          };
-        }
-        
-        // Add file and ME words
-        rootWords[rootWord].files.push(fileName);
-        for (const meWord of meWords) {
-          if (!rootWords[rootWord].modernWords.includes(meWord)) {
-            rootWords[rootWord].modernWords.push(meWord);
-          }
-        }
-      } else {
-        missingRoots.push(fileName);
+  // Process results
+  for (const result of successes) {
+    if (result.rootWord && result.rootLang) {
+      // Initialize language counter if needed
+      if (!rootLangCount[result.rootLang]) {
+        rootLangCount[result.rootLang] = 0;
       }
-    } catch (error) {
-      console.error(`Error processing file ${filePath}:`, error);
+      rootLangCount[result.rootLang]++;
+      
+      // Store root word information
+      if (!rootWords[result.rootWord]) {
+        rootWords[result.rootWord] = {
+          root: result.rootWord,
+          language: result.rootLang,
+          files: [],
+          modernWords: []
+        };
+      }
+      
+      // Add file and ME words
+      rootWords[result.rootWord].files.push(result.fileName);
+      for (const meWord of result.meWords) {
+        if (!rootWords[result.rootWord].modernWords.includes(meWord)) {
+          rootWords[result.rootWord].modernWords.push(meWord);
+        }
+      }
+    } else {
+      missingRoots.push(result.fileName);
     }
   }
   
   // Prepare the summary
   const summary = {
     totalFiles: filePaths.length,
+    processedFiles: successes.length,
+    failedFiles: errors.length,
     uniqueRoots: Object.keys(rootWords).length,
     rootsByLanguage: rootLangCount,
     missingRoots: missingRoots.length,
-    // Convert to array for easier sorting/filtering
     roots: Object.values(rootWords)
   };
   
-  // Save to file
+  // Save to file safely
   const outputPath = path.join(config.outputDir, config.rootsFile);
-  fs.writeFileSync(outputPath, JSON.stringify(summary, null, 2));
-  console.log(`Root words summary saved to ${outputPath}`);
+  const saveResult = safeWriteFile(outputPath, JSON.stringify(summary, null, 2));
   
-  // Log to console if requested
-  if (config.logToConsole) {
-    console.log("\n=== Root Words Summary ===");
-    console.log(`Total files analyzed: ${filePaths.length}`);
-    console.log(`Unique root words: ${Object.keys(rootWords).length}`);
-    console.log(`Files missing root words: ${missingRoots.length}`);
-    
-    console.log("\nDistribution by language:");
-    // Sort by frequency
-    const sortedLangs = Object.keys(rootLangCount).sort(
-      (a, b) => rootLangCount[b] - rootLangCount[a]
-    );
-    for (const lang of sortedLangs) {
-      const count = rootLangCount[lang];
-      const percentage = ((count / filePaths.length) * 100).toFixed(1);
-      console.log(`- ${lang}: ${count} roots (${percentage}%)`);
+  return fold(
+    (error: Error) => err(error),
+    () => {
+      console.log(`Root words summary saved to ${outputPath}`);
+      
+      // Log to console if requested
+      if (config.logToConsole) {
+        logRootResults(summary, rootWords, rootLangCount);
+      }
+      
+      return ok(`Root analysis completed successfully`);
     }
-    
-    // Show more examples in verbose mode
-    if (config.logVerbose) {
-      console.log("\nAll root words by language:");
-      for (const lang of sortedLangs) {
-        console.log(`\n[${lang}]:`);
-        // Get all roots for this language and sort alphabetically
-        const langRoots = Object.values(rootWords)
-          .filter((root: any) => root.language === lang)
-          .map((root: any) => root.root)
-          .sort();
-        
-        // Print in a nice format with 5 roots per line
-        for (let i = 0; i < langRoots.length; i += 5) {
-          const chunk = langRoots.slice(i, i + 5);
-          console.log(`  ${chunk.join(', ')}`);
-        }
+  )(saveResult);
+}
+
+/**
+ * Log POS analysis results to console
+ */
+function logPosResults(summary: any): void {
+  console.log("\n=== Parts of Speech Summary ===");
+  console.log(`Total files analyzed: ${summary.totalFiles}`);
+  console.log(`Successfully processed: ${summary.processedFiles}`);
+  if (summary.failedFiles > 0) {
+    console.log(`Failed to process: ${summary.failedFiles}`);
+  }
+  console.log(`Files with part of speech tags: ${summary.totalEntriesWithPos}`);
+  console.log(`Files without part of speech tags: ${summary.filesWithoutPos.length}`);
+  console.log(`Entries with multiple parts of speech: ${summary.entriesWithMultiplePos}`);
+  
+  console.log("\nDistribution:");
+  // Sort by frequency
+  const sortedPos = Object.keys(summary.posCounts).sort((a, b) => summary.posCounts[b] - summary.posCounts[a]);
+  for (const pos of sortedPos) {
+    const count = summary.posCounts[pos];
+    const percentage = summary.posDistribution[pos];
+    const fullName = posMap[pos] || pos;
+    console.log(`- ${pos}: ${count} entries (${percentage}%) - ${fullName}`);
+  }
+  
+  // Show files without POS tags
+  if (config.logVerbose) {
+    console.log("\nFiles without POS tags:");
+    summary.filesWithoutPos.forEach((file: string) => {
+      console.log(`- ${file}`);
+    });
+  } else {
+    console.log(`\nFiles without POS tags: ${summary.filesWithoutPos.length}`);
+    if (summary.filesWithoutPos.length > 0) {
+      console.log("Examples:");
+      summary.filesWithoutPos.slice(0, 10).forEach((file: string) => {
+        console.log(`- ${file}`);
+      });
+      
+      if (summary.filesWithoutPos.length > 10) {
+        console.log(`...and ${summary.filesWithoutPos.length - 10} more`);
       }
-    } else {
-      // Show some example roots with their modern words
-      console.log("\nSample root words:");
-      const sampleRoots = Object.values(rootWords).slice(0, 5);
-      for (const root of sampleRoots) {
-        console.log(`- ${root.root} [${root.language}] → ${root.modernWords.join(', ')}`);
+    }
+  }
+}
+
+/**
+ * Log root analysis results to console
+ */
+function logRootResults(summary: any, rootWords: Record<string, any>, rootLangCount: Record<string, number>): void {
+  console.log("\n=== Root Words Summary ===");
+  console.log(`Total files analyzed: ${summary.totalFiles}`);
+  console.log(`Successfully processed: ${summary.processedFiles}`);
+  if (summary.failedFiles > 0) {
+    console.log(`Failed to process: ${summary.failedFiles}`);
+  }
+  console.log(`Unique root words: ${Object.keys(rootWords).length}`);
+  console.log(`Files missing root words: ${summary.missingRoots}`);
+  
+  console.log("\nDistribution by language:");
+  const sortedLangs = Object.keys(rootLangCount).sort(
+    (a, b) => rootLangCount[b] - rootLangCount[a]
+  );
+  for (const lang of sortedLangs) {
+    const count = rootLangCount[lang];
+    const percentage = ((count / summary.totalFiles) * 100).toFixed(1);
+    console.log(`- ${lang}: ${count} roots (${percentage}%)`);
+  }
+  
+  if (config.logVerbose) {
+    console.log("\nAll root words by language:");
+    for (const lang of sortedLangs) {
+      console.log(`\n[${lang}]:`);
+      const langRoots = Object.values(rootWords)
+        .filter((root: any) => root.language === lang)
+        .map((root: any) => root.root)
+        .sort();
+      
+      for (const i of Array(Math.ceil(langRoots.length / 5)).keys()) {
+        const chunk = langRoots.slice(i * 5, (i + 1) * 5);
+        console.log(`  ${chunk.join(', ')}`);
       }
+    }
+  } else {
+    console.log("\nSample root words:");
+    const sampleRoots = Object.values(rootWords).slice(0, 5);
+    for (const root of sampleRoots) {
+      console.log(`- ${root.root} [${root.language}] → ${root.modernWords.join(', ')}`);
     }
   }
 }
@@ -457,35 +570,65 @@ async function analyzeRootWords(filePaths: string[]) {
 /**
  * Main function to run the analysis
  */
-async function main() {
-  try {
-    // Process command line arguments
-    processArguments();
-    
-    console.log(`Starting analysis for ${config.sourceDir} in ${config.mode} mode...`);
-    
-    // Create output directory if it doesn't exist
-    if (!fs.existsSync(config.outputDir)) {
-      fs.mkdirSync(config.outputDir, { recursive: true });
+async function main(): Promise<void> {
+  // Process command line arguments
+  processArguments();
+  
+  console.log(`Starting analysis for ${config.sourceDir} in ${config.mode} mode...`);
+  
+  // Create output directory safely
+  const dirResult = safeEnsureDir(config.outputDir);
+  fold(
+    (error: Error) => {
+      console.error(`Failed to create output directory: ${error.message}`);
+      process.exit(1);
+    },
+    (message: string) => console.log(message)
+  )(dirResult);
+  
+  // Find all text files safely
+  const filesResult = findTextFiles(config.sourceDir);
+  const filePaths = fold(
+    (error: Error) => {
+      console.error(`Failed to find text files: ${error.message}`);
+      process.exit(1);
+    },
+    (files: string[]) => {
+      console.log(`Found ${files.length} text files to analyze.`);
+      return files;
     }
-    
-    // Find all text files
-    const filePaths = findTextFiles(config.sourceDir);
-    console.log(`Found ${filePaths.length} text files to analyze.`);
-    
-    // Run the appropriate analysis based on mode
-    if (config.mode === 'pos' || config.mode === 'both') {
-      await analyzePosData(filePaths);
-    }
-    
-    if (config.mode === 'roots' || config.mode === 'both') {
-      await analyzeRootWords(filePaths);
-    }
-    
-  } catch (error) {
-    console.error("An error occurred during analysis:", error);
+  )(filesResult);
+  
+  // Run analysis based on mode
+  const results: Result<string>[] = [];
+  
+  if (config.mode === 'pos' || config.mode === 'both') {
+    const posResult = await analyzePosData(filePaths);
+    results.push(posResult);
+  }
+  
+  if (config.mode === 'roots' || config.mode === 'both') {
+    const rootsResult = await analyzeRootWords(filePaths);
+    results.push(rootsResult);
+  }
+  
+  // Report final results
+  const successful = results.filter(r => r.isSuccess).length;
+  const failed = results.filter(r => !r.isSuccess).length;
+  
+  if (failed > 0) {
+    console.error(`\nAnalysis completed with ${failed} failures:`);
+    results.filter(r => !r.isSuccess).forEach(r => 
+      console.error(`- ${r.error!.message}`)
+    );
+    process.exit(1);
+  } else {
+    console.log(`\nAnalysis completed successfully! (${successful} operations)`);
   }
 }
 
-// Run the main function
-main().catch(console.error);
+// Run the main function with safe error handling
+main().catch(error => {
+  console.error("Unexpected error during analysis:", error);
+  process.exit(1);
+});
