@@ -1,7 +1,9 @@
 {
-  "totalFiles": 779,
-  "totalEntriesWithPos": 779,
-  "entriesWithMultiplePos": 120,
+  "totalFiles": 1210,
+  "processedFiles": 1210,
+  "failedFiles": 0,
+  "totalEntriesWithPos": 1210,
+  "entriesWithMultiplePos": 211,
   "uniquePartsOfSpeech": [
     "v",
     "f n",
@@ -15,37 +17,43 @@
     "intr v",
     "tr v",
     "obs",
-    "suff"
+    "interj",
+    "suff",
+    "adj m n"
   ],
   "posCounts": {
-    "v": 622,
-    "f n": 203,
-    "adj": 344,
-    "n": 242,
-    "m n": 641,
+    "v": 813,
+    "f n": 303,
+    "adj": 444,
+    "n": 188,
+    "m n": 764,
     "conj": 8,
-    "adv": 63,
+    "adv": 73,
     "pron": 6,
-    "prep": 5,
-    "intr v": 6,
+    "prep": 6,
+    "intr v": 5,
     "tr v": 5,
     "obs": 1,
-    "suff": 1
+    "interj": 3,
+    "suff": 1,
+    "adj m n": 1
   },
   "posDistribution": {
-    "v": 79.8,
-    "f n": 26.1,
-    "adj": 44.2,
-    "n": 31.1,
-    "m n": 82.3,
-    "conj": 1,
-    "adv": 8.1,
-    "pron": 0.8,
-    "prep": 0.6,
-    "intr v": 0.8,
-    "tr v": 0.6,
+    "v": 67.2,
+    "f n": 25,
+    "adj": 36.7,
+    "n": 15.5,
+    "m n": 63.1,
+    "conj": 0.7,
+    "adv": 6,
+    "pron": 0.5,
+    "prep": 0.5,
+    "intr v": 0.4,
+    "tr v": 0.4,
     "obs": 0.1,
-    "suff": 0.1
+    "interj": 0.2,
+    "suff": 0.1,
+    "adj m n": 0.1
   },
   "posFullNames": {
     "m n": "masculine noun",
@@ -59,7 +67,8 @@
     "prep": "preposition",
     "pron": "pronoun",
     "adv": "adverb",
-    "suff": "suffix"
+    "suff": "suffix",
+    "interj": "interjection"
   },
   "examples": {
     "v": [
@@ -106,17 +115,17 @@
     ],
     "adv": [
       "all",
+      "alone",
       "analyze",
       "annual",
-      "aught",
-      "back"
+      "any"
     ],
     "pron": [
       "all",
+      "any",
       "aught",
       "either",
-      "none",
-      "which"
+      "none"
     ],
     "prep": [
       "below",
@@ -142,8 +151,16 @@
     "obs": [
       "defer"
     ],
+    "interj": [
+      "fire",
+      "hail",
+      "meow"
+    ],
     "suff": [
       "hood"
+    ],
+    "adj m n": [
+      "mania"
     ]
   },
   "filesWithoutPos": []
