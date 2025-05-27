@@ -38,8 +38,8 @@ export const err = <E>(error: E): Result<never, E> => ({
  * @param fn - Function to apply to the successful value
  * @returns Function that takes a Result and returns a new Result
  */
-export const map = <T, U, E>(fn: (value: T) => U) => 
-  (result: Result<T, E>): Result<U, E> => 
+export const map = <T, U>(fn: (value: T) => U) => 
+  <E = Error>(result: Result<T, E>): Result<U, E> => 
     result.isSuccess 
       ? { isSuccess: true, value: fn(result.value!), error: undefined } as Result<U, E>
       : { isSuccess: false, value: undefined, error: result.error! } as Result<U, E>;
@@ -50,7 +50,7 @@ export const map = <T, U, E>(fn: (value: T) => U) =>
  * @param fn - Function that takes a value and returns a Result
  * @returns Function that takes a Result and returns a flattened Result
  */
-export const flatMap = <T, U, E>(fn: (value: T) => Result<U, E>) => 
+export const flatMap = <T, U, E = Error>(fn: (value: T) => Result<U, E>) => 
   (result: Result<T, E>): Result<U, E> => 
     result.isSuccess 
       ? fn(result.value!)
@@ -131,3 +131,18 @@ export const filterSuccesses = <T, E>(results: Result<T, E>[]): { successes: T[]
   
   return { successes, errors };
 };
+
+/**
+ * Creates a safe version of a function that might throw
+ * Wraps the function to return a Result instead of throwing
+ * @param fn - Function that might throw an error
+ * @returns Function that returns Result instead of throwing
+ */
+export const safe = <T, U>(fn: (arg: T) => U) => 
+  (arg: T): Result<U, Error> => {
+    try {
+      return ok(fn(arg));
+    } catch (error) {
+      return err(error instanceof Error ? error : new Error(String(error)));
+    }
+  };

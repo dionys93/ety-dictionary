@@ -1,6 +1,10 @@
 // src/index.ts
+
 // Types
 export * from './types/pipeline-types';
+
+// Monads
+export * from './monads';
 
 // Config
 export { languageMap } from './config/language-map';

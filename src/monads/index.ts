@@ -27,9 +27,6 @@ export {
 // Export Maybe's getOrElse with a different name to avoid conflict
 export { getOrElse as maybeGetOrElse } from './maybe';
 
-// Composition utilities
-export * from './compose';
-
 // Re-export types for convenience
 export type { Result } from './result';
 export type { Maybe } from './maybe';
