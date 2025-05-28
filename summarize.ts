@@ -1,4 +1,15 @@
-// summarize.ts
+// summarize.ts - Etymology Analysis Tool with Centralized Path Configuration
+//
+// This tool analyzes etymology text files to extract statistics about:
+// - Part-of-speech distributions and patterns
+// - Root word origins and language distributions
+// - File coverage and processing success rates
+//
+// Key features:
+// - Uses centralized path configuration for consistency with main.ts
+// - Safe error handling with Result monads for robust file processing
+// - Configurable analysis modes (pos, roots, or both)
+// - Detailed console output with optional verbose logging
 
 import * as fs from 'fs'
 import * as path from 'path'

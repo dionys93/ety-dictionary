@@ -186,21 +186,32 @@ https://www.etymonline.com/word/early
 ## Project Structure
 
 ```
-├── main.ts              # Main processing script
-├── summarize.ts          # Analysis script
+├── main.ts              # Main processing script (uses centralized paths)
+├── summarize.ts          # Analysis script (uses centralized paths)
 ├── src/
-│   ├── monads/          # Functional programming utilities
-│   ├── config/          # Language and POS mappings
-│   ├── pipeline/        # Pipeline composition
+│   ├── monads/          # Functional programming utilities (Result, Maybe)
+│   ├── config/          # Configuration modules
+│   │   ├── paths.ts     # ⭐ Centralized path configuration
+│   │   ├── language-map.ts # Language code mappings
+│   │   └── pos-map.ts   # Part-of-speech mappings
+│   ├── pipeline/        # Pipeline composition and builders
 │   ├── processors/      # I/O and file processing
 │   ├── transformers/    # Core transformation functions
 │   ├── custom/          # Custom transformers
 │   ├── types/           # TypeScript definitions
 │   └── utils/           # Helper utilities
-├── data-text/           # Input text files
-├── data-json/           # Output JSON files
-└── analysis/            # Analysis results
+├── data-text/           # Input text files (configurable)
+├── data-json/           # Output JSON files (configurable)
+└── analysis/            # Analysis results (configurable)
 ```
+
+## Architecture Features
+
+- **Centralized Path Management**: All file paths configured in `src/config/paths.ts`
+- **Functional Programming**: Uses Result monads for safe error handling
+- **Function Declarations**: All code uses hoisted function declarations (no arrow functions)
+- **Modular Design**: Each module has a single, well-defined responsibility
+- **Type Safety**: Full TypeScript support with branded types available
 
 ## Error Handling
 

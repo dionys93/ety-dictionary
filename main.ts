@@ -1,4 +1,12 @@
-// main.ts 
+// main.ts - Text Processing Pipeline with Centralized Path Configuration
+//
+// This is the main entry point for processing etymology text files into structured JSON.
+// 
+// Key architectural decisions:
+// - Uses centralized path configuration from src/config/paths.ts
+// - Safe error handling with Result monads throughout
+// - Supports dry-run mode for testing without file creation
+// - Modular design with single-responsibility functions 
 
 import * as fs from 'fs'
 import * as path from 'path'
