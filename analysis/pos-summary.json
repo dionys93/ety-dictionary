@@ -1,8 +1,8 @@
 {
-  "totalFiles": 1210,
-  "processedFiles": 1210,
+  "totalFiles": 1218,
+  "processedFiles": 1218,
   "failedFiles": 0,
-  "totalEntriesWithPos": 1210,
+  "totalEntriesWithPos": 1218,
   "entriesWithMultiplePos": 211,
   "uniquePartsOfSpeech": [
     "v",
@@ -22,11 +22,11 @@
     "adj m n"
   ],
   "posCounts": {
-    "v": 813,
-    "f n": 303,
-    "adj": 444,
+    "v": 818,
+    "f n": 306,
+    "adj": 446,
     "n": 188,
-    "m n": 764,
+    "m n": 770,
     "conj": 8,
     "adv": 73,
     "pron": 6,
@@ -40,10 +40,10 @@
   },
   "posDistribution": {
     "v": 67.2,
-    "f n": 25,
-    "adj": 36.7,
-    "n": 15.5,
-    "m n": 63.1,
+    "f n": 25.1,
+    "adj": 36.6,
+    "n": 15.4,
+    "m n": 63.2,
     "conj": 0.7,
     "adv": 6,
     "pron": 0.5,
@@ -68,7 +68,9 @@
     "pron": "pronoun",
     "adv": "adverb",
     "suff": "suffix",
-    "interj": "interjection"
+    "pref": "prefix",
+    "interj": "interjection",
+    "obs": "obsolete"
   },
   "examples": {
     "v": [
