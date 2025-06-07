@@ -42,6 +42,8 @@ import {
   filterSuccesses
 } from './src'
 
+import { processWithFunctionalPipeline } from './src/pipeline/functional-pipeline'
+
 // Import centralized path configuration
 import {
   DEFAULT_PATHS,
@@ -368,6 +370,43 @@ function validatePipeline(pipelineName: string): boolean {
 /**
  * Main function to start the text-to-JSON processing
  */
+// function main(): void {
+//   // Parse command line arguments
+//   const args = parseCommandLineArgs()
+  
+//   // Use centralized path configuration instead of hardcoded paths
+//   const languagePathsResult = mapLanguageToPath(args.dir || 'inglish')
+  
+//   fold(
+//     (error: Error) => {
+//       logError(`Path configuration error: ${error.message}`)
+//       printUsage()
+//       process.exit(1)
+//     },
+//     (paths: { source: string, target: string }) => {
+//       const { source: sourceDir, target: targetDir } = paths
+      
+//       // Validate pipeline selection
+//       if (!validatePipeline(args.pipeline)) {
+//         process.exit(1)
+//       }
+
+//       const selectedPipeline = pipelines[args.pipeline as keyof typeof pipelines]
+      
+//       if (args.dryRun) {
+//         // Handle dry run mode with safe operations
+//         handleDryRun(args, sourceDir, selectedPipeline)
+//       } else {
+//         // Handle normal processing mode
+//         processNormalMode(sourceDir, targetDir, selectedPipeline, args.pipeline)
+//       }
+//     }
+//   )(languagePathsResult)
+// }
+
+/**
+ * Main function to start the text-to-JSON processing
+ */
 function main(): void {
   // Parse command line arguments
   const args = parseCommandLineArgs()
@@ -384,23 +423,36 @@ function main(): void {
     (paths: { source: string, target: string }) => {
       const { source: sourceDir, target: targetDir } = paths
       
-      // Validate pipeline selection
-      if (!validatePipeline(args.pipeline)) {
-        process.exit(1)
-      }
-
-      const selectedPipeline = pipelines[args.pipeline as keyof typeof pipelines]
-      
+      // Now we have access to sourceDir and targetDir
       if (args.dryRun) {
-        // Handle dry run mode with safe operations
+        // Handle dry run mode with safe operations - use old approach for now
+        if (!validatePipeline(args.pipeline)) {
+          process.exit(1)
+        }
+        const selectedPipeline = pipelines[args.pipeline as keyof typeof pipelines]
         handleDryRun(args, sourceDir, selectedPipeline)
       } else {
-        // Handle normal processing mode
-        processNormalMode(sourceDir, targetDir, selectedPipeline, args.pipeline)
+        // Use the new functional pipeline for normal processing
+        const result = processWithFunctionalPipeline(
+          sourceDir, 
+          targetDir, 
+          args.pipeline as 'standard' | 'pos' | 'compact'
+        )
+        
+        fold(
+          (error: Error) => {
+            logError(`Processing failed: ${error.message}`)
+            process.exit(1)
+          },
+          (message: string) => {
+            log(message)
+          }
+        )(result)
       }
     }
   )(languagePathsResult)
 }
+
 
 /**
  * Setup application and run main function
