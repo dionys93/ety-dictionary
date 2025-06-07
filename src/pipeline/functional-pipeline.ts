@@ -1,7 +1,16 @@
 // src/pipeline/functional-pipeline.ts
 
-import { Result, ok, err, map, flatMap } from '../monads'
-import { RawLine, ParsedLine } from '../types/pipeline-types'
+import { 
+  Result, 
+  ok, 
+  err, 
+  map, 
+  flatMap,
+  RawLine, 
+  ParsedLine,
+  parsePartOfSpeech,
+  replaceSpecialCharacters
+} from '../'
 
 /**
  * Core types for the new architecture
@@ -24,8 +33,6 @@ interface ProcessedEntry {
 /**
  * Pure functions for file structure recognition
  */
-
-// Detect entry boundaries based on your actual data structure
 function detectEntryBoundaries(lines: readonly RawLine[]): Result<readonly RawLine[][]> {
   try {
     const entries: RawLine[][] = []
@@ -57,16 +64,11 @@ function detectEntryBoundaries(lines: readonly RawLine[]): Result<readonly RawLi
   }
 }
 
-// Parse a single etymology entry
+// Parse a single etymology entry using existing line parser
 function parseEtymologyEntry(lines: readonly RawLine[]): Result<EtymologyEntry> {
   try {
-    const parsed = lines.map(line => ({
-      text: line.content.replace(/\[.*?\]/, '').trim(),
-      origin: extractLanguage(line.content),
-      language: extractLanguageCode(line.content),
-      isUrl: line.content.startsWith('http'),
-      partOfSpeech: extractPOS(line.content)
-    }))
+    // Reuse existing parsePartOfSpeech function for consistency
+    const parsed = lines.map(line => parsePartOfSpeech(line))
     
     const rootForms = parsed.filter(p => !p.isUrl && p.language !== 'ME' && p.origin !== 'Inglish')
     const modernForm = parsed.find(p => p.language === 'ME')
@@ -87,48 +89,6 @@ function parseEtymologyEntry(lines: readonly RawLine[]): Result<EtymologyEntry> 
     return err(new Error(`Failed to parse etymology entry: ${error}`))
   }
 }
-
-// Extract language from [XX] tags
-function extractLanguage(content: string): string {
-  const match = content.match(/\[([A-Z]+)\]/)
-  if (!match) return 'Unknown'
-  
-  const languageMap: Record<string, string> = {
-    'L': 'Latin',
-    'OF': 'Old French', 
-    'ME': 'Modern English',
-    'OE': 'Old English',
-    'FR': 'French',
-    'MI': 'Middle English',
-    'AF': 'Anglo-French',
-    'VL': 'Vulgar Latin',
-    'ML': 'Medieval Latin',
-    'AG': 'Ancient Greek',
-    'GR': 'German',
-    'IT': 'Italian',
-    'ON': 'Old Norse',
-    'AR': 'Arabic',
-    'JP': 'Japanese'
-  }
-  
-  return languageMap[match[1]] || match[1]
-}
-
-function extractLanguageCode(content: string): string | undefined {
-  const match = content.match(/\[([A-Z]+)\]/)
-  return match?.[1]
-}
-
-function extractPOS(content: string): string[] {
-  const match = content.match(/\((.*?)\)$/)
-  if (!match) return []
-  
-  return match[1].split(',').map(p => p.trim())
-}
-
-/**
- * Monadic composition functions
- */
 
 // Transform etymology entry to processed entry
 function transformEntry(entry: EtymologyEntry): Result<ProcessedEntry> {
@@ -155,59 +115,68 @@ function transformEntry(entry: EtymologyEntry): Result<ProcessedEntry> {
   }
 }
 
-// Process a single file through the pipeline
+// Process a single file through the pipeline - reusing existing text transformer
 function processFileContent(content: string): Result<readonly ProcessedEntry[]> {
+  // Apply existing text transformations for consistency
+  const transformedContent = replaceSpecialCharacters(content)
+  
   // Split into lines
-  const lines: RawLine[] = content
+  const lines: RawLine[] = transformedContent
     .split('\n')
     .map((content, lineNumber) => ({ content: content.trim(), lineNumber: lineNumber + 1 }))
     .filter(line => line.content.length > 0)
   
   // Use monadic composition
   return flatMap((entryGroups: readonly RawLine[][]) => {
-    // Process each entry group
+    // Process each entry group using functional composition
     const entryResults = entryGroups.map(group => 
       flatMap(transformEntry)(parseEtymologyEntry(group))
     )
     
-    // Collect successes and failures
-    const successes: ProcessedEntry[] = []
-    const failures: Error[] = []
+    // Collect successes (partial success pattern)
+    const successes = entryResults
+      .filter(result => result.isSuccess)
+      .map(result => result.value!)
     
-    for (const result of entryResults) {
-      if (result.isSuccess) {
-        successes.push(result.value!)
-      } else {
-        failures.push(result.error!)
-      }
-    }
-    
-    // Return successes even if some failed (partial success)
     return ok(successes)
     
   })(detectEntryBoundaries(lines))
 }
 
 /**
- * Output formatters - pure functions
+ * Output formatters - pure functions with shared patterns
  */
+type OutputFormatter<T> = (entries: readonly ProcessedEntry[]) => T
 
-// Standard format
-function formatStandard(entries: readonly ProcessedEntry[]): any[] {
-  return entries.map(entry => ({
-    name: entry.word,
-    etymology: entry.etymology.map(e => ({
-      name: e.text,
-      origin: e.origin,
-      ...(e.partOfSpeech && e.partOfSpeech.length > 0 ? { 'part-of-speech': e.partOfSpeech } : {})
-    })),
-    sources: entry.sources
-  }))
+// Helper for creating etymology objects consistently
+function createEtymologyObject(e: ParsedLine) {
+  return {
+    name: e.text,
+    origin: e.origin,
+    ...(e.partOfSpeech && e.partOfSpeech.length > 0 ? { 'part-of-speech': e.partOfSpeech } : {})
+  }
 }
 
-// POS-aware format
-function formatPOSAware(entries: readonly ProcessedEntry[]): any[] {
-  return entries.map(entry => ({
+// Helper for POS distribution calculation (reusable across formatters)
+function calculatePOSDistribution(entries: readonly ProcessedEntry[]): Record<string, number> {
+  return entries.reduce((acc, entry) => {
+    for (const pos of entry.pos) {
+      acc[pos] = (acc[pos] || 0) + 1
+    }
+    return acc
+  }, {} as Record<string, number>)
+}
+
+// Output formatters using shared helpers
+const formatStandard: OutputFormatter<any[]> = (entries) =>
+  entries.map(entry => ({
+    name: entry.word,
+    etymology: entry.etymology.map(createEtymologyObject),
+    sources: entry.sources
+  }))
+
+const formatPOSAware: OutputFormatter<any[]> = (entries) =>
+  entries.map(entry => ({
     word: entry.word,
     pos: entry.pos,
     morphology: entry.morphology,
@@ -217,78 +186,30 @@ function formatPOSAware(entries: readonly ProcessedEntry[]): any[] {
     })),
     sources: entry.sources
   }))
-}
 
-// Compact format
-function formatCompact(entries: readonly ProcessedEntry[]): any {
-  return {
-    total_entries: entries.length,
-    languages: [...new Set(entries.flatMap(e => e.etymology.map(et => et.origin)))],
-    pos_distribution: entries.reduce((acc, entry) => {
-      for (const pos of entry.pos) {
-        acc[pos] = (acc[pos] || 0) + 1
-      }
-      return acc
-    }, {} as Record<string, number>),
-    entries: entries.map(e => ({
-      word: e.word,
-      pos: e.pos,
-      source_count: e.sources.length
-    }))
-  }
-}
+const formatCompact: OutputFormatter<any> = (entries) => ({
+  total_entries: entries.length,
+  languages: [...new Set(entries.flatMap(e => e.etymology.map(et => et.origin)))],
+  pos_distribution: calculatePOSDistribution(entries),
+  entries: entries.map(e => ({
+    word: e.word,
+    pos: e.pos,
+    source_count: e.sources.length
+  }))
+})
+
+// Formatter registry for DRY output format selection
+const OUTPUT_FORMATTERS = {
+  standard: formatStandard,
+  pos: formatPOSAware, 
+  compact: formatCompact
+} as const
+
+type OutputFormat = keyof typeof OUTPUT_FORMATTERS
 
 /**
- * Safe file processor that creates individual JSON files
+ * Safe file operations using functional composition
  */
-function createSafeFileProcessor(
-  outputFormat: 'standard' | 'pos' | 'compact' = 'standard'
-): (filePath: string, targetDir: string) => Result<string> {
-  
-  return function safeProcessFile(filePath: string, targetDir: string): Result<string> {
-    const fs = require('fs')
-    const path = require('path')
-    
-    // Safe file reading
-    const readResult = safeReadFile(filePath)
-    
-    return flatMap((content: string) => {
-      // Process content
-      return flatMap((entries: readonly ProcessedEntry[]) => {
-        try {
-          // Choose formatter based on output format
-          const formatter = {
-            standard: formatStandard,
-            pos: formatPOSAware, 
-            compact: formatCompact
-          }[outputFormat]
-          
-          const data = formatter(entries)
-          
-          // Create output file path
-          const fileName = path.basename(filePath, '.txt')
-          const outputPath = path.join(targetDir, `${fileName}.json`)
-          
-          // Ensure target directory exists
-          const targetDirPath = path.dirname(outputPath)
-          if (!fs.existsSync(targetDirPath)) {
-            fs.mkdirSync(targetDirPath, { recursive: true })
-          }
-          
-          // Write JSON file
-          fs.writeFileSync(outputPath, JSON.stringify(data, null, 2))
-          
-          return ok(`Processed: ${filePath} -> ${outputPath}`)
-          
-        } catch (error) {
-          return err(new Error(`Failed to write output for ${filePath}: ${error}`))
-        }
-      })(processFileContent(content))
-      
-    })(readResult)
-  }
-}
-
 function safeReadFile(filePath: string): Result<string> {
   try {
     const fs = require('fs')
@@ -299,12 +220,52 @@ function safeReadFile(filePath: string): Result<string> {
   }
 }
 
+function safeWriteFile(filePath: string, data: any): Result<string> {
+  try {
+    const fs = require('fs')
+    const path = require('path')
+    
+    // Ensure target directory exists
+    const targetDir = path.dirname(filePath)
+    if (!fs.existsSync(targetDir)) {
+      fs.mkdirSync(targetDir, { recursive: true })
+    }
+    
+    fs.writeFileSync(filePath, JSON.stringify(data, null, 2))
+    return ok(filePath)
+  } catch (error) {
+    return err(new Error(`Failed to write ${filePath}: ${error}`))
+  }
+}
+
 /**
- * Safe directory processor that maintains file structure
+ * Functional file processor factory - creates processors for different output formats
  */
-function createSafeDirectoryProcessor(
-  processor: (filePath: string, targetDir: string) => Result<string>
-) {
+function createFileProcessor(outputFormat: OutputFormat = 'standard') {
+  const formatter = OUTPUT_FORMATTERS[outputFormat]
+  
+  return function processFile(filePath: string, targetDir: string): Result<string> {
+    const path = require('path')
+    
+    return flatMap((content: string) =>
+      flatMap((entries: readonly ProcessedEntry[]) => {
+        const data = formatter(entries)
+        const fileName = path.basename(filePath, '.txt')
+        const outputPath = path.join(targetDir, `${fileName}.json`)
+        
+        return map((writtenPath: string) =>
+          `Processed: ${filePath} -> ${writtenPath}`
+        )(safeWriteFile(outputPath, data))
+        
+      })(processFileContent(content))
+    )(safeReadFile(filePath))
+  }
+}
+
+/**
+ * Functional directory processor using composition
+ */
+function createDirectoryProcessor(fileProcessor: (filePath: string, targetDir: string) => Result<string>) {
   return function processDirectory(
     sourceDir: string, 
     targetDir: string
@@ -314,35 +275,34 @@ function createSafeDirectoryProcessor(
       const path = require('path')
       
       const entries = fs.readdirSync(sourceDir, { withFileTypes: true })
-      const successes: string[] = []
-      const failures: Error[] = []
+      const results = { successes: [] as string[], failures: [] as Error[] }
       
       for (const entry of entries) {
         const sourcePath = path.join(sourceDir, entry.name)
         
         if (entry.isFile() && entry.name.endsWith('.txt')) {
-          const result = processor(sourcePath, targetDir)
+          const result = fileProcessor(sourcePath, targetDir)
           
           if (result.isSuccess) {
-            successes.push(result.value!)
+            results.successes.push(result.value!)
           } else {
-            failures.push(result.error!)
+            results.failures.push(result.error!)
           }
         } else if (entry.isDirectory()) {
-          // Recursive processing - maintain directory structure
+          // Recursive processing with maintained directory structure
           const subTargetDir = path.join(targetDir, entry.name)
           const subResult = processDirectory(sourcePath, subTargetDir)
           
           if (subResult.isSuccess) {
-            successes.push(...subResult.value!.successes)
-            failures.push(...subResult.value!.failures)
+            results.successes.push(...subResult.value!.successes)
+            results.failures.push(...subResult.value!.failures)
           } else {
-            failures.push(subResult.error!)
+            results.failures.push(subResult.error!)
           }
         }
       }
       
-      return ok({ successes, failures })
+      return ok(results)
       
     } catch (error) {
       return err(new Error(`Failed to process directory ${sourceDir}: ${error}`))
@@ -351,40 +311,37 @@ function createSafeDirectoryProcessor(
 }
 
 /**
- * Main pipeline function that creates individual JSON files
+ * Main pipeline function - composes all the functional pieces
  */
 export function processWithFunctionalPipeline(
   sourceDir: string,
   targetDir: string,
-  outputFormat: 'standard' | 'pos' | 'compact' = 'standard'
+  outputFormat: OutputFormat = 'standard'
 ): Result<string> {
   
-  const fileProcessor = createSafeFileProcessor(outputFormat)
-  const directoryProcessor = createSafeDirectoryProcessor(fileProcessor)
+  const fileProcessor = createFileProcessor(outputFormat)
+  const directoryProcessor = createDirectoryProcessor(fileProcessor)
   
   return map((result: { successes: string[], failures: Error[] }) => {
-    const stats = {
-      successes: result.successes.length,
-      failures: result.failures.length
-    }
+    const { successes, failures } = result
     
     // Log failures for debugging
-    if (result.failures.length > 0) {
-      console.warn(`\nProcessing completed with ${result.failures.length} failures:`)
-      result.failures.forEach(error => console.warn(`- ${error.message}`))
+    if (failures.length > 0) {
+      console.warn(`\nProcessing completed with ${failures.length} failures:`)
+      failures.forEach(error => console.warn(`- ${error.message}`))
     }
     
     // Log successes if verbose
-    if (result.successes.length > 0) {
-      console.log(`\nSuccessfully processed ${result.successes.length} files:`)
-      result.successes.slice(0, 5).forEach(msg => console.log(`- ${msg}`))
-      if (result.successes.length > 5) {
-        console.log(`... and ${result.successes.length - 5} more`)
+    if (successes.length > 0) {
+      console.log(`\nSuccessfully processed ${successes.length} files:`)
+      successes.slice(0, 5).forEach(msg => console.log(`- ${msg}`))
+      if (successes.length > 5) {
+        console.log(`... and ${successes.length - 5} more`)
       }
     }
     
-    return `Successfully processed ${stats.successes} files to ${targetDir}${
-      stats.failures > 0 ? ` (${stats.failures} failures - see above)` : ''
+    return `Successfully processed ${successes.length} files to ${targetDir}${
+      failures.length > 0 ? ` (${failures.length} failures - see above)` : ''
     }`
     
   })(directoryProcessor(sourceDir, targetDir))
