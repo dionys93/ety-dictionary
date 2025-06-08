@@ -1,17 +1,21 @@
 // src/transformers/safe-transformers.ts
-import { Result, ok, err, map, flatMap } from '../monads'
 import { 
+  Result, 
+  ok, 
+  err, 
+  map, 
+  flatMap,
   TextTransformer, 
   LineParser, 
   EntryGrouper, 
   WordNameExtractor, 
   EntryTransformer,
   CustomTransformer,
-  RawLine, 
+  TextLine, 
   ParsedLine, 
   EntryGroup,
   WordEntry 
-} from '../types/pipeline-types'
+} from '../'
 
 /**
  * Safe wrapper for text transformers that handles exceptions
@@ -33,7 +37,7 @@ export const safeTextTransform = (transformer: TextTransformer) =>
  * Safe wrapper for line parsers that handles parsing errors
  */
 export const safeLineParser = (parser: LineParser) => 
-  (line: RawLine): Result<ParsedLine> => {
+  (line: TextLine): Result<ParsedLine> => {
     try {
       const result = parser(line)
       return ok(result)
@@ -46,7 +50,7 @@ export const safeLineParser = (parser: LineParser) =>
  * Safe wrapper for entry groupers that handles grouping errors
  */
 export const safeEntryGrouper = (grouper: EntryGrouper) => 
-  (lines: RawLine[]): Result<EntryGroup[]> => {
+  (lines: TextLine[]): Result<EntryGroup[]> => {
     try {
       const result = grouper(lines)
       return ok(result)
@@ -99,7 +103,7 @@ export const safeCustomTransformer = (transformer: CustomTransformer) =>
  */
 export const safeProcessLines = (
   parser: LineParser
-) => (lines: RawLine[]): { successes: ParsedLine[], errors: Error[] } => {
+) => (lines: TextLine[]): { successes: ParsedLine[], errors: Error[] } => {
   const safeParser = safeLineParser(parser)
   const results = lines.map(line => ({ line, result: safeParser(line) }))
   
@@ -201,16 +205,20 @@ export const createSafeTextProcessor = (
       return err(new Error(`Text transformation returned ${typeof transformedText}, expected string`))
     }
     
-    // Step 2: Convert to raw lines
-    const rawLines: RawLine[] = transformedText
+    // Step 2: Convert to TextLine[] with isEmpty property
+    const textLines: TextLine[] = transformedText
       .split('\n')
-      .map((content, index) => ({ content, lineNumber: index + 1 }))
-      .filter(line => line.content.trim() !== '')
+      .map((content, index) => ({ 
+        content, 
+        lineNumber: index + 1,
+        isEmpty: content.trim().length === 0
+      }))
+      .filter(line => !line.isEmpty)  // Filter out empty lines
     
-    console.log(`Debug: Created ${rawLines.length} raw lines`)
+    console.log(`Debug: Created ${textLines.length} non-empty lines`)
     
     // Step 3: Safe entry grouping
-    return safeEntryGrouper(entryGrouper)(rawLines)
+    return safeEntryGrouper(entryGrouper)(textLines)
   })(transformedTextResult)
 }
 

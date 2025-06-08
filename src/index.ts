@@ -2,6 +2,7 @@
 
 // Types
 export * from './types/pipeline-types';
+export * from './types/text';
 
 // Monads
 export * from './monads';
@@ -31,3 +32,5 @@ export { createDefaultPipeline, createPipeline, pipelines } from './pipeline/pip
 export { convertText, processFile } from './processors/file-processor';
 export { processDirectory } from './processors/directory-processor';
 
+// Transformations
+export * from './transformations/text-to-lines';

@@ -1,9 +1,7 @@
 // src/transformers/line-parsers.ts
-import { ParsedLine, RawLine } from '../types/pipeline-types';
-import { languageMap } from '../config/language-map';
-import { posMap } from '../config/pos-map';
+import { ParsedLine, TextLine, languageMap, posMap } from '../'
 
-export const parseLanguageOrigin = (line: RawLine): ParsedLine => {
+export const parseLanguageOrigin = (line: TextLine): ParsedLine => {
   const brackets = line.content.match(/\[(.*?)\]/);
   const language = brackets?.[1];
   const origin = (language && languageMap[language])
@@ -20,7 +18,7 @@ export const parseLanguageOrigin = (line: RawLine): ParsedLine => {
   };
 };
 
-export const parsePartOfSpeech = (line: RawLine): ParsedLine => {
+export const parsePartOfSpeech = (line: TextLine): ParsedLine => {
   const baseResult = parseLanguageOrigin(line);
   
   // Only parse part of speech for Inglish lines

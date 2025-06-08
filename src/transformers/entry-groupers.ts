@@ -1,8 +1,8 @@
 // src/transformers/entry-groupers.ts
-import { EntryGroup, LineParser, ParsedLine, RawLine } from '../types/pipeline-types';
+import { EntryGroup, LineParser, ParsedLine, TextLine } from '../'
 
 export const processGroup = (lineParser: LineParser) => 
-  (lines: RawLine[]): EntryGroup => {
+  (lines: TextLine[]): EntryGroup => {
     const etymologyLines: ParsedLine[] = [];
     const sourceLines: ParsedLine[] = [];
     
@@ -20,12 +20,12 @@ export const processGroup = (lineParser: LineParser) =>
 };
 
 export const groupByDoubleNewline = (lineParser: LineParser) => 
-  (lines: RawLine[]): EntryGroup[] => {
+  (lines: TextLine[]): EntryGroup[] => {
     const groups: EntryGroup[] = [];
-    let currentGroup: RawLine[] = [];
+    let currentGroup: TextLine[] = [];
     
     for (const line of lines) {
-      if (line.content.trim() === '') {
+      if (line.isEmpty) {
         if (currentGroup.length > 0) {
           groups.push(processGroup(lineParser)(currentGroup));
           currentGroup = [];
@@ -44,7 +44,7 @@ export const groupByDoubleNewline = (lineParser: LineParser) =>
 };
 
 export const groupByEntryPatterns = (lineParser: LineParser) => 
-  (lines: RawLine[]): EntryGroup[] => {
+  (lines: TextLine[]): EntryGroup[] => {
     const groups: EntryGroup[] = [];
     const allParsedLines = lines.map(line => lineParser(line));
     
