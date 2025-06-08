@@ -1,15 +1,15 @@
 // src/transformations/text-to-lines.ts
-// Pure transformation functions
+// Pure transformation functions for generic text processing
 
 import { Result, ok, err } from '../monads'
-import { RawText, TextLine, TextBlock } from '../types/text'
+import { TextLine, TextBlock } from '../types/text'
 
-export const textToLines = (text: RawText): Result<readonly TextLine[]> => {
+export const textToLines = (text: string): Result<readonly TextLine[]> => {
   try {
-    const lines = text.content
+    const lines = text
       .split('\n')
       .map((content, index) => ({
-        content: content.trim(),
+        content,
         lineNumber: index + 1,
         isEmpty: content.trim().length === 0
       }))
@@ -55,3 +55,9 @@ export const groupIntoBlocks = (lines: readonly TextLine[]): Result<readonly Tex
     return err(new Error(`Failed to group lines into blocks: ${error}`))
   }
 }
+
+// Helper to convert TextLine to the format expected by existing parsers
+export const toRawLine = (line: TextLine) => ({
+  content: line.content,
+  lineNumber: line.lineNumber
+})
