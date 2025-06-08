@@ -1,4 +1,4 @@
-// src/core/types/text.ts
+// src/types/text.ts
 // Pure data types for text processing - no logic, just types
 
 export interface RawText {
