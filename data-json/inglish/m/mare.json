@@ -1,76 +1,100 @@
 [
   {
-    "name": "mare, nightmare",
-    "etymology": [
-      {
-        "name": "mære, mera, mare",
-        "origin": "Old English"
-      },
-      {
-        "name": "mare, nightmare",
-        "origin": "Modern English"
-      },
-      {
-        "name": "náitmair -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/nightmare#etymonline_v_6944",
-      "https://www.etymonline.com/word/mare#etymonline_v_43707",
-      "https://www.oed.com/dictionary/nightmare_n?tab=factsheet#34866518",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26897",
-      "https://bosworthtoller.com/22173"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "mare, nightmare",
+      "etymology": [
+        {
+          "name": "mære, mera, mare",
+          "origin": "Old English"
+        },
+        {
+          "name": "mare, nightmare",
+          "origin": "Modern English"
+        },
+        {
+          "name": "náitmair -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/nightmare#etymonline_v_6944",
+        "https://www.etymonline.com/word/mare#etymonline_v_43707",
+        "https://www.oed.com/dictionary/nightmare_n?tab=factsheet#34866518",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26897",
+        "https://bosworthtoller.com/22173"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "mare",
-    "etymology": [
-      {
-        "name": "mearh, meare, mere",
-        "origin": "Old English"
-      },
-      {
-        "name": "mare",
-        "origin": "Modern English"
-      },
-      {
-        "name": "mear -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/mare#etymonline_v_9602",
-      "https://www.oed.com/dictionary/mare_n1?tab=factsheet#38052410",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED27420",
-      "https://bosworthtoller.com/22651"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "mare",
+      "etymology": [
+        {
+          "name": "mearh, meare, mere",
+          "origin": "Old English"
+        },
+        {
+          "name": "mare",
+          "origin": "Modern English"
+        },
+        {
+          "name": "mear -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/mare#etymonline_v_9602",
+        "https://www.oed.com/dictionary/mare_n1?tab=factsheet#38052410",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED27420",
+        "https://bosworthtoller.com/22651"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "mare",
-    "etymology": [
-      {
-        "name": "mare",
-        "origin": "Latin"
-      },
-      {
-        "name": "marei -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/mare#etymonline_v_9603",
-      "https://www.oed.com/dictionary/mare_n4?tab=factsheet#38055124",
-      "https://latin-dictionary.net/definition/26443/mare-maris"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "mare",
+      "etymology": [
+        {
+          "name": "mare",
+          "origin": "Latin"
+        },
+        {
+          "name": "marei -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/mare#etymonline_v_9603",
+        "https://www.oed.com/dictionary/mare_n4?tab=factsheet#38055124",
+        "https://latin-dictionary.net/definition/26443/mare-maris"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

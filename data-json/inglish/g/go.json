@@ -1,36 +1,53 @@
 [
   {
-    "name": "to go",
-    "etymology": [
-      {
-        "name": "gan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to go",
+      "conjugations": {
+        "thirdPerson": "s"
       },
-      {
-        "name": "gon",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to go",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta goɯe -s ɯent gòn -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "gan",
+        "gon",
+        "to go",
+        "ta goɯe -s ɯent gòn -ing"
+      ]
+    },
+    "standard": {
+      "name": "to go",
+      "etymology": [
+        {
+          "name": "gan",
+          "origin": "Old English"
+        },
+        {
+          "name": "gon",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to go",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta goɯe -s ɯent gòn -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/go#etymonline_v_9002",
+        "https://www.etymonline.com/word/go#etymonline_v_41098",
+        "https://www.etymonline.com/word/go#etymonline_v_50877",
+        "https://www.collinsdictionary.com/us/dictionary/english/go",
+        "https://www.merriam-webster.com/dictionary/go",
+        "https://www.oed.com/dictionary/go_v?tab=pronunciation#2765122",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED19078",
+        "https://bosworthtoller.com/13263"
+      ],
+      "conjugations": {
+        "thirdPerson": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/go#etymonline_v_9002",
-      "https://www.etymonline.com/word/go#etymonline_v_41098",
-      "https://www.etymonline.com/word/go#etymonline_v_50877",
-      "https://www.collinsdictionary.com/us/dictionary/english/go",
-      "https://www.merriam-webster.com/dictionary/go",
-      "https://www.oed.com/dictionary/go_v?tab=pronunciation#2765122",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED19078",
-      "https://bosworthtoller.com/13263"
-    ]
+    }
   }
 ]

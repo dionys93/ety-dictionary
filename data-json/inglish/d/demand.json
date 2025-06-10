@@ -1,68 +1,98 @@
 [
   {
-    "name": "to demand",
-    "etymology": [
-      {
-        "name": "de + mandare, demandare",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to demand",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "demander",
-        "origin": "Old French"
-      },
-      {
-        "name": "demaunden",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to demand",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta demande -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "de + mandare, demandare",
+        "demander",
+        "demaunden",
+        "to demand",
+        "ta demande -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to demand",
+      "etymology": [
+        {
+          "name": "de + mandare, demandare",
+          "origin": "Latin"
+        },
+        {
+          "name": "demander",
+          "origin": "Old French"
+        },
+        {
+          "name": "demaunden",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to demand",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta demande -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/demand#etymonline_v_5554",
+        "https://www.merriam-webster.com/dictionary/demand#dictionary-entry-2",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED11012",
+        "https://www.anglo-norman.net/entry/demander",
+        "https://latin-dictionary.net/definition/16473/demando-demandare-demandavi-demandatus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/demand#etymonline_v_5554",
-      "https://www.merriam-webster.com/dictionary/demand#dictionary-entry-2",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED11012",
-      "https://www.anglo-norman.net/entry/demander",
-      "https://latin-dictionary.net/definition/16473/demando-demandare-demandavi-demandatus"
-    ]
+    }
   },
   {
-    "name": "demand",
-    "etymology": [
-      {
-        "name": "demander, demande",
-        "origin": "Old French"
-      },
-      {
-        "name": "demaunde",
-        "origin": "Middle English"
-      },
-      {
-        "name": "demand",
-        "origin": "Modern English"
-      },
-      {
-        "name": "demande, demànds",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/demand#etymonline_v_42097",
-      "https://www.etymonline.com/word/demand#etymonline_v_5554",
-      "https://www.merriam-webster.com/dictionary/demand#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED11011",
-      "https://www.anglo-norman.net/entry/demande"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "demand",
+      "etymology": [
+        {
+          "name": "demander, demande",
+          "origin": "Old French"
+        },
+        {
+          "name": "demaunde",
+          "origin": "Middle English"
+        },
+        {
+          "name": "demand",
+          "origin": "Modern English"
+        },
+        {
+          "name": "demande, demànds",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/demand#etymonline_v_42097",
+        "https://www.etymonline.com/word/demand#etymonline_v_5554",
+        "https://www.merriam-webster.com/dictionary/demand#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED11011",
+        "https://www.anglo-norman.net/entry/demande"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

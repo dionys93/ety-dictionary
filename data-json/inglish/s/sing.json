@@ -1,57 +1,71 @@
 [
   {
-    "name": "to sing",
-    "etymology": [
-      {
-        "name": "singan",
-        "origin": "Old English"
-      },
-      {
-        "name": "singen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to sing",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta singue -s sâng song singuing",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/sing#etymonline_v_23556",
-      "https://www.merriam-webster.com/dictionary/sing#dictionary-entry-1",
-      "https://www.oed.com/dictionary/sing_v1?tab=factsheet#22564270",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40448",
-      "https://bosworthtoller.com/27810"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "to sing",
+      "etymology": [
+        {
+          "name": "singan",
+          "origin": "Old English"
+        },
+        {
+          "name": "singen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to sing",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta singue -s sâng song singuing",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/sing#etymonline_v_23556",
+        "https://www.merriam-webster.com/dictionary/sing#dictionary-entry-1",
+        "https://www.oed.com/dictionary/sing_v1?tab=factsheet#22564270",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40448",
+        "https://bosworthtoller.com/27810"
+      ]
+    }
   },
   {
-    "name": "song",
-    "etymology": [
-      {
-        "name": "sang",
-        "origin": "Old English"
-      },
-      {
-        "name": "song",
-        "origin": "Middle English"
-      },
-      {
-        "name": "songue, sòngs",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/song#etymonline_v_23882",
-      "https://www.merriam-webster.com/dictionary/song",
-      "https://www.oed.com/dictionary/song_n1?tab=factsheet#21722390",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED41569",
-      "https://bosworthtoller.com/26404"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "song",
+      "etymology": [
+        {
+          "name": "sang",
+          "origin": "Old English"
+        },
+        {
+          "name": "song",
+          "origin": "Middle English"
+        },
+        {
+          "name": "songue, sòngs",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/song#etymonline_v_23882",
+        "https://www.merriam-webster.com/dictionary/song",
+        "https://www.oed.com/dictionary/song_n1?tab=factsheet#21722390",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED41569",
+        "https://bosworthtoller.com/26404"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

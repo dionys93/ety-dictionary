@@ -1,80 +1,117 @@
 [
   {
-    "name": "to abandon",
-    "etymology": [
-      {
-        "name": "ad + bannum",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to abandon",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "à bandon, abandoner",
-        "origin": "Old French"
-      },
-      {
-        "name": "to abandon",
-        "origin": "Modern English"
-      },
-      {
-        "name": "to abàndone -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "ad + bannum",
+        "à bandon, abandoner",
+        "to abandon",
+        "to abàndone -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to abandon",
+      "etymology": [
+        {
+          "name": "ad + bannum",
+          "origin": "Latin"
+        },
+        {
+          "name": "à bandon, abandoner",
+          "origin": "Old French"
+        },
+        {
+          "name": "to abandon",
+          "origin": "Modern English"
+        },
+        {
+          "name": "to abàndone -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/abandon#etymonline_v_14",
+        "https://www.oed.com/dictionary/abandon_v?tab=factsheet#4432701",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/abandonner/25",
+        "https://www.anglo-norman.net/entry/abanduner",
+        "https://latin-dictionary.net/definition/6091/bannum-banni",
+        "https://latin-dictionary.net/definition/702/ad"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/abandon#etymonline_v_14",
-      "https://www.oed.com/dictionary/abandon_v?tab=factsheet#4432701",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/abandonner/25",
-      "https://www.anglo-norman.net/entry/abanduner",
-      "https://latin-dictionary.net/definition/6091/bannum-banni",
-      "https://latin-dictionary.net/definition/702/ad"
-    ]
+    }
   },
   {
-    "name": "abandon",
-    "etymology": [
-      {
-        "name": "abandon",
-        "origin": "French"
-      },
-      {
-        "name": "abàndon",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/abandon#etymonline_v_42898",
-      "https://www.oed.com/dictionary/abandon_n2?tab=pronunciation#4733983",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/abandon/21"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "abandon",
+      "etymology": [
+        {
+          "name": "abandon",
+          "origin": "French"
+        },
+        {
+          "name": "abàndon",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/abandon#etymonline_v_42898",
+        "https://www.oed.com/dictionary/abandon_n2?tab=pronunciation#4733983",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/abandon/21"
+      ],
+      "gender": "feminine",
+      "number": "singular"
+    }
   },
   {
-    "name": "abandonment",
-    "etymology": [
-      {
-        "name": "abandonement",
-        "origin": "Old French"
-      },
-      {
-        "name": "abandonment",
-        "origin": "Modern English"
-      },
-      {
-        "name": "abàndonment",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/abandonment#etymonline_v_39071",
-      "https://www.oed.com/dictionary/abandonment_n?tab=factsheet#2876033",
-      "https://www.anglo-norman.net/entry/abandunement"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "abandonment",
+      "etymology": [
+        {
+          "name": "abandonement",
+          "origin": "Old French"
+        },
+        {
+          "name": "abandonment",
+          "origin": "Modern English"
+        },
+        {
+          "name": "abàndonment",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/abandonment#etymonline_v_39071",
+        "https://www.oed.com/dictionary/abandonment_n?tab=factsheet#2876033",
+        "https://www.anglo-norman.net/entry/abandunement"
+      ],
+      "gender": "feminine",
+      "number": "singular"
+    }
   }
 ]

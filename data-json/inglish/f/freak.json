@@ -1,54 +1,81 @@
 [
   {
-    "name": "freak",
-    "etymology": [
-      {
-        "name": "frician",
-        "origin": "Old English"
-      },
-      {
-        "name": "friken, frek",
-        "origin": "Middle English"
-      },
-      {
-        "name": "freak",
-        "origin": "Modern English"
-      },
-      {
-        "name": "friek -x",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/freak#etymonline_v_14148",
-      "https://www.oed.com/dictionary/freak_n1?tab=factsheet#3659294",
-      "https://www.merriam-webster.com/dictionary/freak#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17624",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17755",
-      "https://bosworthtoller.com/12383"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "freak",
+      "etymology": [
+        {
+          "name": "frician",
+          "origin": "Old English"
+        },
+        {
+          "name": "friken, frek",
+          "origin": "Middle English"
+        },
+        {
+          "name": "freak",
+          "origin": "Modern English"
+        },
+        {
+          "name": "friek -x",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/freak#etymonline_v_14148",
+        "https://www.oed.com/dictionary/freak_n1?tab=factsheet#3659294",
+        "https://www.merriam-webster.com/dictionary/freak#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17624",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17755",
+        "https://bosworthtoller.com/12383"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   },
   {
-    "name": "to freak",
-    "etymology": [
-      {
-        "name": "to freak",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to freak",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta frieke -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to freak",
+        "ta frieke -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to freak",
+      "etymology": [
+        {
+          "name": "to freak",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta frieke -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/freak",
+        "https://www.oed.com/dictionary/freak_v1?tab=factsheet#3660106"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/freak",
-      "https://www.oed.com/dictionary/freak_v1?tab=factsheet#3660106"
-    ]
+    }
   }
 ]

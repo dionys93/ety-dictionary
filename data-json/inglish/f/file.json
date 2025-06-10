@@ -1,115 +1,170 @@
 [
   {
-    "name": "to file",
-    "etymology": [
-      {
-        "name": "filum",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to file",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d"
       },
-      {
-        "name": "filer",
-        "origin": "Old French"
-      },
-      {
-        "name": "filen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to file",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta fîle -s -d fîeling",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "filum",
+        "filer",
+        "filen",
+        "to file",
+        "ta fîle -s -d fîeling"
+      ]
+    },
+    "standard": {
+      "name": "to file",
+      "etymology": [
+        {
+          "name": "filum",
+          "origin": "Latin"
+        },
+        {
+          "name": "filer",
+          "origin": "Old French"
+        },
+        {
+          "name": "filen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to file",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta fîle -s -d fîeling",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/file#etymonline_v_5932",
+        "https://www.oed.com/dictionary/file_v3?tab=factsheet#4462090",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15956",
+        "https://anglo-norman.net/entry/filer_1",
+        "https://latin-dictionary.net/definition/20633/filum-fili"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/file#etymonline_v_5932",
-      "https://www.oed.com/dictionary/file_v3?tab=factsheet#4462090",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15956",
-      "https://anglo-norman.net/entry/filer_1",
-      "https://latin-dictionary.net/definition/20633/filum-fili"
-    ]
+    }
   },
   {
-    "name": "filer, file",
-    "etymology": [
-      {
-        "name": "filer, file",
-        "origin": "French"
-      },
-      {
-        "name": "fîle, fîels",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/file#etymonline_v_39806",
-      "https://www.etymonline.com/word/file#etymonline_v_5932",
-      "https://www.oed.com/dictionary/file_n2?tab=factsheet#4459037",
-      "https://www.littre.org/definition/file"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "filer, file",
+      "etymology": [
+        {
+          "name": "filer, file",
+          "origin": "French"
+        },
+        {
+          "name": "fîle, fîels",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/file#etymonline_v_39806",
+        "https://www.etymonline.com/word/file#etymonline_v_5932",
+        "https://www.oed.com/dictionary/file_n2?tab=factsheet#4459037",
+        "https://www.littre.org/definition/file"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "file",
-    "etymology": [
-      {
-        "name": "feol",
-        "origin": "Old English"
-      },
-      {
-        "name": "file",
-        "origin": "Middle English"
-      },
-      {
-        "name": "fîle, fîals",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/file#etymonline_v_5933",
-      "https://www.oed.com/dictionary/file_n1?tab=factsheet#4458361",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15950",
-      "https://bosworthtoller.com/10352"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "file",
+      "etymology": [
+        {
+          "name": "feol",
+          "origin": "Old English"
+        },
+        {
+          "name": "file",
+          "origin": "Middle English"
+        },
+        {
+          "name": "fîle, fîals",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/file#etymonline_v_5933",
+        "https://www.oed.com/dictionary/file_n1?tab=factsheet#4458361",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15950",
+        "https://bosworthtoller.com/10352"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to file",
-    "etymology": [
-      {
-        "name": "filian",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to file",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d"
       },
-      {
-        "name": "filen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to file",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta fîle -s -d fîaling",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "filian",
+        "filen",
+        "to file",
+        "ta fîle -s -d fîaling"
+      ]
+    },
+    "standard": {
+      "name": "to file",
+      "etymology": [
+        {
+          "name": "filian",
+          "origin": "Old English"
+        },
+        {
+          "name": "filen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to file",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta fîle -s -d fîaling",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/file#etymonline_v_50554",
+        "https://www.oed.com/dictionary/file_v1?tab=factsheet#4461096",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15954",
+        "https://bosworthtoller.com/44965"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/file#etymonline_v_50554",
-      "https://www.oed.com/dictionary/file_v1?tab=factsheet#4461096",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15954",
-      "https://bosworthtoller.com/44965"
-    ]
+    }
   }
 ]

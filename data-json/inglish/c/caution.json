@@ -1,93 +1,132 @@
 [
   {
-    "name": "caution",
-    "etymology": [
-      {
-        "name": "cavere, cautio",
-        "origin": "Latin"
-      },
-      {
-        "name": "caution",
-        "origin": "Old French"
-      },
-      {
-        "name": "caucion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/caution#etymonline_v_5513",
-      "https://www.merriam-webster.com/dictionary/caution#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6972",
-      "https://www.anglo-norman.net/entry/caution",
-      "https://latin-dictionary.net/definition/8715/cautio-cautionis",
-      "https://latin-dictionary.net/definition/8740/caveo-cavere-cavi-cautus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "caution",
+      "etymology": [
+        {
+          "name": "cavere, cautio",
+          "origin": "Latin"
+        },
+        {
+          "name": "caution",
+          "origin": "Old French"
+        },
+        {
+          "name": "caucion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/caution#etymonline_v_5513",
+        "https://www.merriam-webster.com/dictionary/caution#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6972",
+        "https://www.anglo-norman.net/entry/caution",
+        "https://latin-dictionary.net/definition/8715/cautio-cautionis",
+        "https://latin-dictionary.net/definition/8740/caveo-cavere-cavi-cautus"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "caution",
-    "etymology": [
-      {
-        "name": "caution",
-        "origin": "Old French"
+    "verbDetails": {
+      "infinitive": "caution",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta caucione -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "caution",
+        "ta caucione -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "caution",
+      "etymology": [
+        {
+          "name": "caution",
+          "origin": "Old French"
+        },
+        {
+          "name": "ta caucione -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/caution#etymonline_v_46636",
+        "https://www.etymonline.com/word/caution#etymonline_v_5513",
+        "https://www.merriam-webster.com/dictionary/caution#dictionary-entry-2"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/caution#etymonline_v_46636",
-      "https://www.etymonline.com/word/caution#etymonline_v_5513",
-      "https://www.merriam-webster.com/dictionary/caution#dictionary-entry-2"
-    ]
+    }
   },
   {
-    "name": "cautious",
-    "etymology": [
-      {
-        "name": "cautious",
-        "origin": "Modern English"
-      },
-      {
-        "name": "caucioʃ -sly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cautious#etymonline_v_27814",
-      "https://www.etymonline.com/word/caution#etymonline_v_5513",
-      "https://www.etymonline.com/word/-ous#etymonline_v_32820",
-      "https://www.merriam-webster.com/dictionary/cautious"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "cautious",
+      "etymology": [
+        {
+          "name": "cautious",
+          "origin": "Modern English"
+        },
+        {
+          "name": "caucioʃ -sly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cautious#etymonline_v_27814",
+        "https://www.etymonline.com/word/caution#etymonline_v_5513",
+        "https://www.etymonline.com/word/-ous#etymonline_v_32820",
+        "https://www.merriam-webster.com/dictionary/cautious"
+      ]
+    }
   },
   {
-    "name": "cautionary",
-    "etymology": [
-      {
-        "name": "cautionary",
-        "origin": "Modern English"
-      },
-      {
-        "name": "caucionairy",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cautionary#etymonline_v_27815",
-      "https://www.merriam-webster.com/dictionary/cautionary"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "cautionary",
+      "etymology": [
+        {
+          "name": "cautionary",
+          "origin": "Modern English"
+        },
+        {
+          "name": "caucionairy",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cautionary#etymonline_v_27815",
+        "https://www.merriam-webster.com/dictionary/cautionary"
+      ]
+    }
   }
 ]

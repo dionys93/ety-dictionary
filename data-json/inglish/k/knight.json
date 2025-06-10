@@ -1,125 +1,168 @@
 [
   {
-    "name": "knight",
-    "etymology": [
-      {
-        "name": "cniht",
-        "origin": "Old English"
-      },
-      {
-        "name": "knight",
-        "origin": "Middle English"
-      },
-      {
-        "name": "nîht -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/knight#etymonline_v_1914",
-      "https://www.merriam-webster.com/dictionary/knight#dictionary-entry-1",
-      "https://www.oed.com/dictionary/knight_n?tab=factsheet#39995346",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24418",
-      "https://bosworthtoller.com/6460"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "knight",
+      "etymology": [
+        {
+          "name": "cniht",
+          "origin": "Old English"
+        },
+        {
+          "name": "knight",
+          "origin": "Middle English"
+        },
+        {
+          "name": "nîht -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/knight#etymonline_v_1914",
+        "https://www.merriam-webster.com/dictionary/knight#dictionary-entry-1",
+        "https://www.oed.com/dictionary/knight_n?tab=factsheet#39995346",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24418",
+        "https://bosworthtoller.com/6460"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to knight",
-    "etymology": [
-      {
-        "name": "cniht",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to knight",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "knighten",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to knight",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta nîhte -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "cniht",
+        "knighten",
+        "to knight",
+        "ta nîhte -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to knight",
+      "etymology": [
+        {
+          "name": "cniht",
+          "origin": "Old English"
+        },
+        {
+          "name": "knighten",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to knight",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta nîhte -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/knight#etymonline_v_42978",
+        "https://www.merriam-webster.com/dictionary/knight#dictionary-entry-2",
+        "https://www.oed.com/dictionary/knight_v?tab=factsheet#39997831",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24419",
+        "https://bosworthtoller.com/6460"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/knight#etymonline_v_42978",
-      "https://www.merriam-webster.com/dictionary/knight#dictionary-entry-2",
-      "https://www.oed.com/dictionary/knight_v?tab=factsheet#39997831",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24419",
-      "https://bosworthtoller.com/6460"
-    ]
+    }
   },
   {
-    "name": "knighthood",
-    "etymology": [
-      {
-        "name": "cnihthad",
-        "origin": "Old English"
-      },
-      {
-        "name": "knighthod",
-        "origin": "Middle English"
-      },
-      {
-        "name": "knighthood",
-        "origin": "Modern English"
-      },
-      {
-        "name": "nîhthud -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/knighthood#etymonline_v_35319",
-      "https://www.merriam-webster.com/dictionary/knighthood#dictionary-entry-1",
-      "https://www.oed.com/dictionary/knighthood_n?tab=factsheet#39998812",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24421",
-      "https://bosworthtoller.com/41958"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "knighthood",
+      "etymology": [
+        {
+          "name": "cnihthad",
+          "origin": "Old English"
+        },
+        {
+          "name": "knighthod",
+          "origin": "Middle English"
+        },
+        {
+          "name": "knighthood",
+          "origin": "Modern English"
+        },
+        {
+          "name": "nîhthud -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/knighthood#etymonline_v_35319",
+        "https://www.merriam-webster.com/dictionary/knighthood#dictionary-entry-1",
+        "https://www.oed.com/dictionary/knighthood_n?tab=factsheet#39998812",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24421",
+        "https://bosworthtoller.com/41958"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "knightly",
-    "etymology": [
-      {
-        "name": "cnihtlic",
-        "origin": "Old English"
-      },
-      {
-        "name": "knightli",
-        "origin": "Middle English"
-      },
-      {
-        "name": "knightly",
-        "origin": "Modern English"
-      },
-      {
-        "name": "nîhtly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "adverb"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/knightly#etymonline_v_43023",
-      "https://www.merriam-webster.com/dictionary/knightly",
-      "https://www.oed.com/dictionary/knightly_adj?tab=factsheet#39999625",
-      "https://www.oed.com/dictionary/knightly_adv?tab=factsheet#39999845",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24423",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24424",
-      "https://bosworthtoller.com/6467"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "knightly",
+      "etymology": [
+        {
+          "name": "cnihtlic",
+          "origin": "Old English"
+        },
+        {
+          "name": "knightli",
+          "origin": "Middle English"
+        },
+        {
+          "name": "knightly",
+          "origin": "Modern English"
+        },
+        {
+          "name": "nîhtly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "adverb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/knightly#etymonline_v_43023",
+        "https://www.merriam-webster.com/dictionary/knightly",
+        "https://www.oed.com/dictionary/knightly_adj?tab=factsheet#39999625",
+        "https://www.oed.com/dictionary/knightly_adv?tab=factsheet#39999845",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24423",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24424",
+        "https://bosworthtoller.com/6467"
+      ]
+    }
   }
 ]

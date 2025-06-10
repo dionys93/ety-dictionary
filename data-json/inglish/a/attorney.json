@@ -1,87 +1,125 @@
 [
   {
-    "name": "attorney",
-    "etymology": [
-      {
-        "name": "atorner, atorné",
-        "origin": "Old French"
-      },
-      {
-        "name": "attorney",
-        "origin": "Modern English"
-      },
-      {
-        "name": "atoûnie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/attorney#etymonline_v_18916",
-      "https://www.etymonline.com/word/attorn#etymonline_v_26705",
-      "https://www.merriam-webster.com/dictionary/attorney",
-      "https://www.oed.com/dictionary/attorney_n?tab=factsheet#34370218",
-      "https://anglo-norman.net/entry/attorn%C3%A9"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "attorney",
+      "etymology": [
+        {
+          "name": "atorner, atorné",
+          "origin": "Old French"
+        },
+        {
+          "name": "attorney",
+          "origin": "Modern English"
+        },
+        {
+          "name": "atoûnie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/attorney#etymonline_v_18916",
+        "https://www.etymonline.com/word/attorn#etymonline_v_26705",
+        "https://www.merriam-webster.com/dictionary/attorney",
+        "https://www.oed.com/dictionary/attorney_n?tab=factsheet#34370218",
+        "https://anglo-norman.net/entry/attorn%C3%A9"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to attorn",
-    "etymology": [
-      {
-        "name": "τόρνος",
-        "origin": "Ancient Greek"
+    "verbDetails": {
+      "infinitive": "to attorn",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "tornus, tornare",
-        "origin": "Latin"
-      },
-      {
-        "name": "a + tourner, attorner",
-        "origin": "Old French"
-      },
-      {
-        "name": "to attorn",
-        "origin": "Modern English"
-      },
-      {
-        "name": "to atoûne -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "τόρνος",
+        "tornus, tornare",
+        "a + tourner, attorner",
+        "to attorn",
+        "to atoûne -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to attorn",
+      "etymology": [
+        {
+          "name": "τόρνος",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "tornus, tornare",
+          "origin": "Latin"
+        },
+        {
+          "name": "a + tourner, attorner",
+          "origin": "Old French"
+        },
+        {
+          "name": "to attorn",
+          "origin": "Modern English"
+        },
+        {
+          "name": "to atoûne -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/attorn#etymonline_v_26705",
+        "https://www.merriam-webster.com/dictionary/attorn",
+        "https://www.oed.com/dictionary/attorn_v?tab=factsheet#34367331",
+        "https://anglo-norman.net/entry/aturner",
+        "https://anglo-norman.net/entry/turner_2",
+        "https://latin-dictionary.net/definition/37343/torno-tornare-tornavi-tornatus",
+        "https://latin-dictionary.net/definition/37344/tornus-torni",
+        "https://lsj.gr/wiki/%CF%84%CF%8C%CF%81%CE%BD%CE%BF%CF%82"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/attorn#etymonline_v_26705",
-      "https://www.merriam-webster.com/dictionary/attorn",
-      "https://www.oed.com/dictionary/attorn_v?tab=factsheet#34367331",
-      "https://anglo-norman.net/entry/aturner",
-      "https://anglo-norman.net/entry/turner_2",
-      "https://latin-dictionary.net/definition/37343/torno-tornare-tornavi-tornatus",
-      "https://latin-dictionary.net/definition/37344/tornus-torni",
-      "https://lsj.gr/wiki/%CF%84%CF%8C%CF%81%CE%BD%CE%BF%CF%82"
-    ]
+    }
   },
   {
-    "name": "attornment",
-    "etymology": [
-      {
-        "name": "attornment",
-        "origin": "Modern English"
-      },
-      {
-        "name": "atoûnment -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/attornment",
-      "https://www.oed.com/dictionary/attornment_n?tab=factsheet#34384458"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "attornment",
+      "etymology": [
+        {
+          "name": "attornment",
+          "origin": "Modern English"
+        },
+        {
+          "name": "atoûnment -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/attornment",
+        "https://www.oed.com/dictionary/attornment_n?tab=factsheet#34384458"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

@@ -1,164 +1,237 @@
 [
   {
-    "name": "to dry",
-    "etymology": [
-      {
-        "name": "drygan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to dry",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d"
       },
-      {
-        "name": "drien",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to dry",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta drîe -s -d dryhing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "drygan",
+        "drien",
+        "to dry",
+        "ta drîe -s -d dryhing"
+      ]
+    },
+    "standard": {
+      "name": "to dry",
+      "etymology": [
+        {
+          "name": "drygan",
+          "origin": "Old English"
+        },
+        {
+          "name": "drien",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to dry",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta drîe -s -d dryhing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/dry#etymonline_v_37788",
+        "https://www.merriam-webster.com/dictionary/dry#dictionary-entry-2",
+        "https://www.oed.com/dictionary/dry_v?tab=factsheet#6063499",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12624",
+        "https://bosworthtoller.com/8036"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/dry#etymonline_v_37788",
-      "https://www.merriam-webster.com/dictionary/dry#dictionary-entry-2",
-      "https://www.oed.com/dictionary/dry_v?tab=factsheet#6063499",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12624",
-      "https://bosworthtoller.com/8036"
-    ]
+    }
   },
   {
-    "name": "dry",
-    "etymology": [
-      {
-        "name": "dryge",
-        "origin": "Old English"
-      },
-      {
-        "name": "drie",
-        "origin": "Middle English"
-      },
-      {
-        "name": "dry",
-        "origin": "Modern English"
-      },
-      {
-        "name": "drîe -r -st",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "adverb",
-          "noun"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "dry",
+      "etymology": [
+        {
+          "name": "dryge",
+          "origin": "Old English"
+        },
+        {
+          "name": "drie",
+          "origin": "Middle English"
+        },
+        {
+          "name": "dry",
+          "origin": "Modern English"
+        },
+        {
+          "name": "drîe -r -st",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "adverb",
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/dry#etymonline_v_15941",
+        "https://www.merriam-webster.com/dictionary/dry#dictionary-entry-3",
+        "https://www.merriam-webster.com/dictionary/dry#dictionary-entry-1",
+        "https://www.oed.com/dictionary/dry_adj?tab=factsheet#6058862",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12617",
+        "https://bosworthtoller.com/8037"
+      ],
+      "degrees": {
+        "positive": "e",
+        "comparative": "r",
+        "superlative": "st"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/dry#etymonline_v_15941",
-      "https://www.merriam-webster.com/dictionary/dry#dictionary-entry-3",
-      "https://www.merriam-webster.com/dictionary/dry#dictionary-entry-1",
-      "https://www.oed.com/dictionary/dry_adj?tab=factsheet#6058862",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12617",
-      "https://bosworthtoller.com/8037"
-    ]
+    }
   },
   {
-    "name": "dryness",
-    "etymology": [
-      {
-        "name": "dryness",
-        "origin": "Modern English"
-      },
-      {
-        "name": "drîness",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.oed.com/dictionary/dryness_n?tab=factsheet#6066951"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "dryness",
+      "etymology": [
+        {
+          "name": "dryness",
+          "origin": "Modern English"
+        },
+        {
+          "name": "drîness",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.oed.com/dictionary/dryness_n?tab=factsheet#6066951"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   },
   {
-    "name": "drought",
-    "etymology": [
-      {
-        "name": "drugaþ, drugoþ",
-        "origin": "Old English"
-      },
-      {
-        "name": "drought",
-        "origin": "Middle English"
-      },
-      {
-        "name": "draot -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/drought#etymonline_v_15925",
-      "https://www.merriam-webster.com/dictionary/drought",
-      "https://www.merriam-webster.com/dictionary/drought#word-history",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12715",
-      "https://bosworthtoller.com/8007"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "drought",
+      "etymology": [
+        {
+          "name": "drugaþ, drugoþ",
+          "origin": "Old English"
+        },
+        {
+          "name": "drought",
+          "origin": "Middle English"
+        },
+        {
+          "name": "draot -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/drought#etymonline_v_15925",
+        "https://www.merriam-webster.com/dictionary/drought",
+        "https://www.merriam-webster.com/dictionary/drought#word-history",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12715",
+        "https://bosworthtoller.com/8007"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to drain",
-    "etymology": [
-      {
-        "name": "dreahnian",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to drain",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "dreinen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to drain",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta draine -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "dreahnian",
+        "dreinen",
+        "to drain",
+        "ta draine -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to drain",
+      "etymology": [
+        {
+          "name": "dreahnian",
+          "origin": "Old English"
+        },
+        {
+          "name": "dreinen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to drain",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta draine -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/drain#etymonline_v_15876",
+        "https://www.merriam-webster.com/dictionary/drain#dictionary-entry-1",
+        "https://www.oed.com/dictionary/drain_v?tab=factsheet#6235908",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12570",
+        "https://bosworthtoller.com/7864"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/drain#etymonline_v_15876",
-      "https://www.merriam-webster.com/dictionary/drain#dictionary-entry-1",
-      "https://www.oed.com/dictionary/drain_v?tab=factsheet#6235908",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12570",
-      "https://bosworthtoller.com/7864"
-    ]
+    }
   },
   {
-    "name": "drain  -s (m n)",
-    "etymology": [
-      {
-        "name": "dreine",
-        "origin": "Middle English"
-      },
-      {
-        "name": "drain  -s (m n)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/drain#etymonline_v_45943",
-      "https://www.etymonline.com/word/drain#etymonline_v_15876",
-      "https://www.merriam-webster.com/dictionary/drain#dictionary-entry-2",
-      "https://www.oed.com/dictionary/drain_n?tab=factsheet#6235149",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12569"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "drain  -s (m n)",
+      "etymology": [
+        {
+          "name": "dreine",
+          "origin": "Middle English"
+        },
+        {
+          "name": "drain  -s (m n)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/drain#etymonline_v_45943",
+        "https://www.etymonline.com/word/drain#etymonline_v_15876",
+        "https://www.merriam-webster.com/dictionary/drain#dictionary-entry-2",
+        "https://www.oed.com/dictionary/drain_n?tab=factsheet#6235149",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12569"
+      ]
+    }
   }
 ]

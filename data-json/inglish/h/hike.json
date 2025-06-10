@@ -1,45 +1,72 @@
 [
   {
-    "name": "hyke, to hike",
-    "etymology": [
-      {
-        "name": "hyke, to hike",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "hyke, to hike",
+      "conjugations": {
+        "thirdPerson": "cs",
+        "pastTense": "ed",
+        "progressive": "ing"
       },
-      {
-        "name": "ta hîq -cs -ed -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "hyke, to hike",
+        "ta hîq -cs -ed -ing"
+      ]
+    },
+    "standard": {
+      "name": "hyke, to hike",
+      "etymology": [
+        {
+          "name": "hyke, to hike",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta hîq -cs -ed -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/hike#etymonline_v_12005",
+        "https://www.merriam-webster.com/dictionary/hike#dictionary-entry-1",
+        "https://www.oed.com/dictionary/hike_v?tab=factsheet#1618721"
+      ],
+      "conjugations": {
+        "thirdPerson": "cs",
+        "pastTense": "ed",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/hike#etymonline_v_12005",
-      "https://www.merriam-webster.com/dictionary/hike#dictionary-entry-1",
-      "https://www.oed.com/dictionary/hike_v?tab=factsheet#1618721"
-    ]
+    }
   },
   {
-    "name": "hike",
-    "etymology": [
-      {
-        "name": "hike",
-        "origin": "Modern English"
-      },
-      {
-        "name": "hîc -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/hike#etymonline_v_51093",
-      "https://www.etymonline.com/word/hike#etymonline_v_12005",
-      "https://www.merriam-webster.com/dictionary/hike#dictionary-entry-2",
-      "https://www.oed.com/dictionary/hike_n?tab=factsheet#1618551"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "hike",
+      "etymology": [
+        {
+          "name": "hike",
+          "origin": "Modern English"
+        },
+        {
+          "name": "hîc -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/hike#etymonline_v_51093",
+        "https://www.etymonline.com/word/hike#etymonline_v_12005",
+        "https://www.merriam-webster.com/dictionary/hike#dictionary-entry-2",
+        "https://www.oed.com/dictionary/hike_n?tab=factsheet#1618551"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

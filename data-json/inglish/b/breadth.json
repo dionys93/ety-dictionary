@@ -1,34 +1,42 @@
 [
   {
-    "name": "breadth",
-    "etymology": [
-      {
-        "name": "brædu",
-        "origin": "Old English"
-      },
-      {
-        "name": "brede, bredth",
-        "origin": "Middle English"
-      },
-      {
-        "name": "breadth",
-        "origin": "Modern English"
-      },
-      {
-        "name": "bredþ -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/breadth#etymonline_v_17078",
-      "https://www.merriam-webster.com/dictionary/breadth",
-      "https://www.oed.com/dictionary/breadth_n?tab=factsheet#14497077",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5889",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5877",
-      "https://bosworthtoller.com/4943"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "breadth",
+      "etymology": [
+        {
+          "name": "brædu",
+          "origin": "Old English"
+        },
+        {
+          "name": "brede, bredth",
+          "origin": "Middle English"
+        },
+        {
+          "name": "breadth",
+          "origin": "Modern English"
+        },
+        {
+          "name": "bredþ -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/breadth#etymonline_v_17078",
+        "https://www.merriam-webster.com/dictionary/breadth",
+        "https://www.oed.com/dictionary/breadth_n?tab=factsheet#14497077",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5889",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5877",
+        "https://bosworthtoller.com/4943"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

@@ -1,66 +1,93 @@
 [
   {
-    "name": "cocoon",
-    "etymology": [
-      {
-        "name": "κόκκος",
-        "origin": "Ancient Greek"
-      },
-      {
-        "name": "coccum",
-        "origin": "Latin"
-      },
-      {
-        "name": "coque",
-        "origin": "Old French"
-      },
-      {
-        "name": "coucon",
-        "origin": "French"
-      },
-      {
-        "name": "cocoon",
-        "origin": "Modern English"
-      },
-      {
-        "name": "cocune, cocúns",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cocoon#etymonline_v_15766",
-      "https://www.merriam-webster.com/dictionary/cocoon#dictionary-entry-1",
-      "https://www.oed.com/dictionary/cocoon_n?tab=factsheet#9044274",
-      "https://www.littre.org/definition/cocon",
-      "https://www.larousse.fr/dictionnaires/francais/cocon/16860",
-      "https://www.anglo-norman.net/entry/coque",
-      "https://latin-dictionary.net/definition/10620/coccum-cocci",
-      "https://lsj.gr/wiki/%CE%BA%CF%8C%CE%BA%CE%BA%CE%BF%CF%82"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "cocoon",
+      "etymology": [
+        {
+          "name": "κόκκος",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "coccum",
+          "origin": "Latin"
+        },
+        {
+          "name": "coque",
+          "origin": "Old French"
+        },
+        {
+          "name": "coucon",
+          "origin": "French"
+        },
+        {
+          "name": "cocoon",
+          "origin": "Modern English"
+        },
+        {
+          "name": "cocune, cocúns",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cocoon#etymonline_v_15766",
+        "https://www.merriam-webster.com/dictionary/cocoon#dictionary-entry-1",
+        "https://www.oed.com/dictionary/cocoon_n?tab=factsheet#9044274",
+        "https://www.littre.org/definition/cocon",
+        "https://www.larousse.fr/dictionnaires/francais/cocon/16860",
+        "https://www.anglo-norman.net/entry/coque",
+        "https://latin-dictionary.net/definition/10620/coccum-cocci",
+        "https://lsj.gr/wiki/%CE%BA%CF%8C%CE%BA%CE%BA%CE%BF%CF%82"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to cocoon",
-    "etymology": [
-      {
-        "name": "to cocoon",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to cocoon",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta cocune -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to cocoon",
+        "ta cocune -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to cocoon",
+      "etymology": [
+        {
+          "name": "to cocoon",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta cocune -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cocoon#etymonline_v_46251",
+        "https://www.etymonline.com/word/cocoon#etymonline_v_15766",
+        "https://www.merriam-webster.com/dictionary/cocoon#dictionary-entry-2",
+        "https://www.oed.com/dictionary/cocoon_v?tab=factsheet#9044521"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cocoon#etymonline_v_46251",
-      "https://www.etymonline.com/word/cocoon#etymonline_v_15766",
-      "https://www.merriam-webster.com/dictionary/cocoon#dictionary-entry-2",
-      "https://www.oed.com/dictionary/cocoon_v?tab=factsheet#9044521"
-    ]
+    }
   }
 ]

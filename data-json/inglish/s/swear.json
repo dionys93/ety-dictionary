@@ -1,53 +1,66 @@
 [
   {
-    "name": "to swear",
-    "etymology": [
-      {
-        "name": "swerian",
-        "origin": "Old English"
-      },
-      {
-        "name": "sweren",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to swear",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta suaire -s suore suône -ing",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/swear#etymonline_v_22477",
-      "https://www.merriam-webster.com/dictionary/swear#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44145",
-      "https://bosworthtoller.com/58859"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "to swear",
+      "etymology": [
+        {
+          "name": "swerian",
+          "origin": "Old English"
+        },
+        {
+          "name": "sweren",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to swear",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta suaire -s suore suône -ing",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/swear#etymonline_v_22477",
+        "https://www.merriam-webster.com/dictionary/swear#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44145",
+        "https://bosworthtoller.com/58859"
+      ]
+    }
   },
   {
-    "name": "swear",
-    "etymology": [
-      {
-        "name": "swar",
-        "origin": "Middle English"
-      },
-      {
-        "name": "swear",
-        "origin": "Modern English"
-      },
-      {
-        "name": "suair -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/swear#dictionary-entry-2",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44068"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "swear",
+      "etymology": [
+        {
+          "name": "swar",
+          "origin": "Middle English"
+        },
+        {
+          "name": "swear",
+          "origin": "Modern English"
+        },
+        {
+          "name": "suair -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/swear#dictionary-entry-2",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44068"
+      ],
+      "number": "plural"
+    }
   }
 ]

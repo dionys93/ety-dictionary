@@ -1,186 +1,257 @@
 [
   {
-    "name": "to bury",
-    "etymology": [
-      {
-        "name": "byrgan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to bury",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ying"
       },
-      {
-        "name": "birien, burien, berien",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to bury",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta bèrie -s -d -ying",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "byrgan",
+        "birien, burien, berien",
+        "to bury",
+        "ta bèrie -s -d -ying"
+      ]
+    },
+    "standard": {
+      "name": "to bury",
+      "etymology": [
+        {
+          "name": "byrgan",
+          "origin": "Old English"
+        },
+        {
+          "name": "birien, burien, berien",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to bury",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta bèrie -s -d -ying",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bury#etymonline_v_18125",
+        "https://www.merriam-webster.com/dictionary/bury#word-history",
+        "https://www.oed.com/dictionary/bury_v?tab=factsheet#11613902",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4736",
+        "https://bosworthtoller.com/41223"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ying"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bury#etymonline_v_18125",
-      "https://www.merriam-webster.com/dictionary/bury#word-history",
-      "https://www.oed.com/dictionary/bury_v?tab=factsheet#11613902",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4736",
-      "https://bosworthtoller.com/41223"
-    ]
+    }
   },
   {
-    "name": "burial",
-    "etymology": [
-      {
-        "name": "byrgels",
-        "origin": "Old English"
-      },
-      {
-        "name": "biriel",
-        "origin": "Middle English"
-      },
-      {
-        "name": "burial",
-        "origin": "Modern English"
-      },
-      {
-        "name": "bèrial -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/burial#etymonline_v_18107",
-      "https://www.oed.com/dictionary/burial_n?tab=factsheet#11806040",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4735",
-      "https://bosworthtoller.com/5605"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "burial",
+      "etymology": [
+        {
+          "name": "byrgels",
+          "origin": "Old English"
+        },
+        {
+          "name": "biriel",
+          "origin": "Middle English"
+        },
+        {
+          "name": "burial",
+          "origin": "Modern English"
+        },
+        {
+          "name": "bèrial -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/burial#etymonline_v_18107",
+        "https://www.oed.com/dictionary/burial_n?tab=factsheet#11806040",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4735",
+        "https://bosworthtoller.com/5605"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "barrow",
-    "etymology": [
-      {
-        "name": "beorg",
-        "origin": "Old English"
-      },
-      {
-        "name": "bergh",
-        "origin": "Middle English"
-      },
-      {
-        "name": "barrow",
-        "origin": "Modern English"
-      },
-      {
-        "name": "bèro -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/barrow#etymonline_v_5270",
-      "https://www.merriam-webster.com/dictionary/barrow#dictionary-entry-1",
-      "https://www.oed.com/dictionary/barrow_n1?tab=factsheet#27026988",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary?utf8=%E2%9C%93&search_field=etyma&q=beorg",
-      "https://bosworthtoller.com/3728"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "barrow",
+      "etymology": [
+        {
+          "name": "beorg",
+          "origin": "Old English"
+        },
+        {
+          "name": "bergh",
+          "origin": "Middle English"
+        },
+        {
+          "name": "barrow",
+          "origin": "Modern English"
+        },
+        {
+          "name": "bèro -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/barrow#etymonline_v_5270",
+        "https://www.merriam-webster.com/dictionary/barrow#dictionary-entry-1",
+        "https://www.oed.com/dictionary/barrow_n1?tab=factsheet#27026988",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary?utf8=%E2%9C%93&search_field=etyma&q=beorg",
+        "https://bosworthtoller.com/3728"
+      ],
+      "number": "plural"
+    }
   },
   {
-    "name": "burrow",
-    "etymology": [
-      {
-        "name": "burg, burh, burgh",
-        "origin": "Old English"
-      },
-      {
-        "name": "bergh, berwen, borewe",
-        "origin": "Middle English"
-      },
-      {
-        "name": "burrow",
-        "origin": "Modern English"
-      },
-      {
-        "name": "boûo -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/burrow#etymonline_v_18120",
-      "https://www.etymonline.com/word/borough#etymonline_v_15634",
-      "https://www.oed.com/dictionary/burrow_n1?tab=factsheet#11754783",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4212",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6328",
-      "https://bosworthtoller.com/5434",
-      "https://bosworthtoller.com/41108"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "burrow",
+      "etymology": [
+        {
+          "name": "burg, burh, burgh",
+          "origin": "Old English"
+        },
+        {
+          "name": "bergh, berwen, borewe",
+          "origin": "Middle English"
+        },
+        {
+          "name": "burrow",
+          "origin": "Modern English"
+        },
+        {
+          "name": "boûo -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/burrow#etymonline_v_18120",
+        "https://www.etymonline.com/word/borough#etymonline_v_15634",
+        "https://www.oed.com/dictionary/burrow_n1?tab=factsheet#11754783",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4212",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6328",
+        "https://bosworthtoller.com/5434",
+        "https://bosworthtoller.com/41108"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to burrow",
-    "etymology": [
-      {
-        "name": "burg, burh, burgh",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to burrow",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d"
       },
-      {
-        "name": "borewe",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to burrow",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta boûoe -s -d -ɯing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "burg, burh, burgh",
+        "borewe",
+        "to burrow",
+        "ta boûoe -s -d -ɯing"
+      ]
+    },
+    "standard": {
+      "name": "to burrow",
+      "etymology": [
+        {
+          "name": "burg, burh, burgh",
+          "origin": "Old English"
+        },
+        {
+          "name": "borewe",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to burrow",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta boûoe -s -d -ɯing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/burrow#etymonline_v_46090",
+        "https://www.etymonline.com/word/burrow#etymonline_v_18120",
+        "https://www.merriam-webster.com/dictionary/burrow",
+        "https://www.oed.com/dictionary/burrow_v1?tab=factsheet#11759835",
+        "https://bosworthtoller.com/5434",
+        "https://bosworthtoller.com/41108"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/burrow#etymonline_v_46090",
-      "https://www.etymonline.com/word/burrow#etymonline_v_18120",
-      "https://www.merriam-webster.com/dictionary/burrow",
-      "https://www.oed.com/dictionary/burrow_v1?tab=factsheet#11759835",
-      "https://bosworthtoller.com/5434",
-      "https://bosworthtoller.com/41108"
-    ]
+    }
   },
   {
-    "name": "borough",
-    "etymology": [
-      {
-        "name": "burg, burh",
-        "origin": "Old English"
-      },
-      {
-        "name": "borough",
-        "origin": "Modern English"
-      },
-      {
-        "name": "boûoh -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/borough",
-      "https://www.etymonline.com/word/borough#etymonline_v_15634",
-      "https://www.oed.com/dictionary/borough_n?tab=factsheet#16417939",
-      "https://bosworthtoller.com/5434",
-      "https://bosworthtoller.com/41108"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "borough",
+      "etymology": [
+        {
+          "name": "burg, burh",
+          "origin": "Old English"
+        },
+        {
+          "name": "borough",
+          "origin": "Modern English"
+        },
+        {
+          "name": "boûoh -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/borough",
+        "https://www.etymonline.com/word/borough#etymonline_v_15634",
+        "https://www.oed.com/dictionary/borough_n?tab=factsheet#16417939",
+        "https://bosworthtoller.com/5434",
+        "https://bosworthtoller.com/41108"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

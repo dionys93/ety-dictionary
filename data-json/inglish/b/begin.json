@@ -1,33 +1,50 @@
 [
   {
-    "name": "to begin",
-    "etymology": [
-      {
-        "name": "beginnan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to begin",
+      "conjugations": {
+        "thirdPerson": "s"
       },
-      {
-        "name": "biginnen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to begin",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta biguin -s begane begùn -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "beginnan",
+        "biginnen",
+        "to begin",
+        "ta biguin -s begane begon -ing"
+      ]
+    },
+    "standard": {
+      "name": "to begin",
+      "etymology": [
+        {
+          "name": "beginnan",
+          "origin": "Old English"
+        },
+        {
+          "name": "biginnen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to begin",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta biguin -s begane begon -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/begin#etymonline_v_8247",
+        "https://www.merriam-webster.com/dictionary/begin#dictionary-entry-1",
+        "https://www.oed.com/dictionary/begin_v1?tab=factsheet#24288867",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4470",
+        "https://bosworthtoller.com/3441"
+      ],
+      "conjugations": {
+        "thirdPerson": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/begin#etymonline_v_8247",
-      "https://www.merriam-webster.com/dictionary/begin#dictionary-entry-1",
-      "https://www.oed.com/dictionary/begin_v1?tab=factsheet#24288867",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4470",
-      "https://bosworthtoller.com/3441"
-    ]
+    }
   }
 ]

@@ -1,49 +1,63 @@
 [
   {
-    "name": "heat",
-    "etymology": [
-      {
-        "name": "hætu, hæto",
-        "origin": "Old English"
-      },
-      {
-        "name": "heat",
-        "origin": "Modern English"
-      },
-      {
-        "name": "hite",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/heat",
-      "https://www.oed.com/dictionary/heat_n?tab=factsheet#1905153",
-      "https://bosworthtoller.com/17994"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "heat",
+      "etymology": [
+        {
+          "name": "hætu, hæto",
+          "origin": "Old English"
+        },
+        {
+          "name": "heat",
+          "origin": "Modern English"
+        },
+        {
+          "name": "hite",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/heat",
+        "https://www.oed.com/dictionary/heat_n?tab=factsheet#1905153",
+        "https://bosworthtoller.com/17994"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   },
   {
-    "name": "to heat",
-    "etymology": [
-      {
-        "name": "hætan",
-        "origin": "Old English"
-      },
-      {
-        "name": "to heat",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta hite -s -d -ing",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/heat",
-      "https://www.oed.com/dictionary/heat_v?tab=factsheet#1909231",
-      "https://bosworthtoller.com/17965"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "to heat",
+      "etymology": [
+        {
+          "name": "hætan",
+          "origin": "Old English"
+        },
+        {
+          "name": "to heat",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta hite -s -d -ing",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/heat",
+        "https://www.oed.com/dictionary/heat_v?tab=factsheet#1909231",
+        "https://bosworthtoller.com/17965"
+      ]
+    }
   }
 ]

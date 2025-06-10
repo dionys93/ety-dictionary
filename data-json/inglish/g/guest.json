@@ -1,60 +1,88 @@
 [
   {
-    "name": "guest",
-    "etymology": [
-      {
-        "name": "gæst, giest, gest",
-        "origin": "Old English"
-      },
-      {
-        "name": "gest",
-        "origin": "Middle English"
-      },
-      {
-        "name": "guest",
-        "origin": "Modern English"
-      },
-      {
-        "name": "gaist -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/guest#etymonline_v_14348",
-      "https://www.oed.com/dictionary/guest_n?tab=factsheet#2299152",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED18468",
-      "https://bosworthtoller.com/16126",
-      "https://bosworthtoller.com/17009",
-      "https://bosworthtoller.com/13138"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "guest",
+      "etymology": [
+        {
+          "name": "gæst, giest, gest",
+          "origin": "Old English"
+        },
+        {
+          "name": "gest",
+          "origin": "Middle English"
+        },
+        {
+          "name": "guest",
+          "origin": "Modern English"
+        },
+        {
+          "name": "gaist -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/guest#etymonline_v_14348",
+        "https://www.oed.com/dictionary/guest_n?tab=factsheet#2299152",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED18468",
+        "https://bosworthtoller.com/16126",
+        "https://bosworthtoller.com/17009",
+        "https://bosworthtoller.com/13138"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to guest",
-    "etymology": [
-      {
-        "name": "gesten",
-        "origin": "Middle English"
+    "verbDetails": {
+      "infinitive": "to guest",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to guest",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta gaiste -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "gesten",
+        "to guest",
+        "ta gaiste -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to guest",
+      "etymology": [
+        {
+          "name": "gesten",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to guest",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta gaiste -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/guest#etymonline_v_50947",
+        "https://www.etymonline.com/word/guest#etymonline_v_14348",
+        "https://www.oed.com/dictionary/guest_v?tab=factsheet#2300770",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED18472"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/guest#etymonline_v_50947",
-      "https://www.etymonline.com/word/guest#etymonline_v_14348",
-      "https://www.oed.com/dictionary/guest_v?tab=factsheet#2300770",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED18472"
-    ]
+    }
   }
 ]

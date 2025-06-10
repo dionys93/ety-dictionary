@@ -1,32 +1,40 @@
 [
   {
-    "name": "sheep",
-    "etymology": [
-      {
-        "name": "sceap, scep",
-        "origin": "Old English"
-      },
-      {
-        "name": "shep",
-        "origin": "Middle English"
-      },
-      {
-        "name": "sheep",
-        "origin": "Modern English"
-      },
-      {
-        "name": "siep",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/sheep#etymonline_v_23368",
-      "https://www.merriam-webster.com/dictionary/sheep#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39880",
-      "https://bosworthtoller.com/26580"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "sheep",
+      "etymology": [
+        {
+          "name": "sceap, scep",
+          "origin": "Old English"
+        },
+        {
+          "name": "shep",
+          "origin": "Middle English"
+        },
+        {
+          "name": "sheep",
+          "origin": "Modern English"
+        },
+        {
+          "name": "siep",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/sheep#etymonline_v_23368",
+        "https://www.merriam-webster.com/dictionary/sheep#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39880",
+        "https://bosworthtoller.com/26580"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   }
 ]

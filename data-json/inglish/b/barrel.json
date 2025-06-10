@@ -1,105 +1,157 @@
 [
   {
-    "name": "barrel",
-    "etymology": [
-      {
-        "name": "baril",
-        "origin": "Old French"
-      },
-      {
-        "name": "barel",
-        "origin": "Middle English"
-      },
-      {
-        "name": "barrel",
-        "origin": "Modern English"
-      },
-      {
-        "name": "bâril -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/barrel#etymonline_v_5262",
-      "https://www.merriam-webster.com/dictionary/barrel#dictionary-entry-1",
-      "https://www.oed.com/dictionary/barrel_n?tab=factsheet#26898936",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3653",
-      "https://www.anglo-norman.net/entry/baril"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "barrel",
+      "etymology": [
+        {
+          "name": "baril",
+          "origin": "Old French"
+        },
+        {
+          "name": "barel",
+          "origin": "Middle English"
+        },
+        {
+          "name": "barrel",
+          "origin": "Modern English"
+        },
+        {
+          "name": "bâril -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/barrel#etymonline_v_5262",
+        "https://www.merriam-webster.com/dictionary/barrel#dictionary-entry-1",
+        "https://www.oed.com/dictionary/barrel_n?tab=factsheet#26898936",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3653",
+        "https://www.anglo-norman.net/entry/baril"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to barrel",
-    "etymology": [
-      {
-        "name": "to barrel",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to barrel",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta bârille -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to barrel",
+        "ta bârille -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to barrel",
+      "etymology": [
+        {
+          "name": "to barrel",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta bârille -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/barrel#etymonline_v_46351",
+        "https://www.etymonline.com/word/barrel#etymonline_v_5262",
+        "https://www.merriam-webster.com/dictionary/barrel#dictionary-entry-2",
+        "https://www.oed.com/dictionary/barrel_v?tab=factsheet#26901947"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/barrel#etymonline_v_46351",
-      "https://www.etymonline.com/word/barrel#etymonline_v_5262",
-      "https://www.merriam-webster.com/dictionary/barrel#dictionary-entry-2",
-      "https://www.oed.com/dictionary/barrel_v?tab=factsheet#26901947"
-    ]
+    }
   },
   {
-    "name": "barricade",
-    "etymology": [
-      {
-        "name": "barrica, barricada",
-        "origin": "Inglish"
-      },
-      {
-        "name": "barricade",
-        "origin": "French"
-      },
-      {
-        "name": "bâricaid -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/barricade#etymonline_v_46584",
-      "https://www.merriam-webster.com/dictionary/barricade#dictionary-entry-2",
-      "https://www.collinsdictionary.com/us/dictionary/french-english/barricade",
-      "https://www.littre.org/definition/barricade",
-      "https://www.collinsdictionary.com/us/dictionary/spanish-english/barricada",
-      "https://dle.rae.es/barricada?m=form",
-      "https://dle.rae.es/barrica?m=form"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "barricade",
+      "etymology": [
+        {
+          "name": "barrica, barricada",
+          "origin": "Inglish"
+        },
+        {
+          "name": "barricade",
+          "origin": "French"
+        },
+        {
+          "name": "bâricaid -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/barricade#etymonline_v_46584",
+        "https://www.merriam-webster.com/dictionary/barricade#dictionary-entry-2",
+        "https://www.collinsdictionary.com/us/dictionary/french-english/barricade",
+        "https://www.littre.org/definition/barricade",
+        "https://www.collinsdictionary.com/us/dictionary/spanish-english/barricada",
+        "https://dle.rae.es/barricada?m=form",
+        "https://dle.rae.es/barrica?m=form"
+      ]
+    }
   },
   {
-    "name": "to barricade",
-    "etymology": [
-      {
-        "name": "to barricade",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to barricade",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta bâricaide -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to barricade",
+        "ta bâricaide -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to barricade",
+      "etymology": [
+        {
+          "name": "to barricade",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta bâricaide -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/barricade#etymonline_v_5265",
+        "https://www.etymonline.com/word/barricade#etymonline_v_46584",
+        "https://www.merriam-webster.com/dictionary/barricade#dictionary-entry-1"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/barricade#etymonline_v_5265",
-      "https://www.etymonline.com/word/barricade#etymonline_v_46584",
-      "https://www.merriam-webster.com/dictionary/barricade#dictionary-entry-1"
-    ]
+    }
   }
 ]

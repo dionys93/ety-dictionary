@@ -1,82 +1,119 @@
 [
   {
-    "name": "hate",
-    "etymology": [
-      {
-        "name": "hete",
-        "origin": "Old English"
-      },
-      {
-        "name": "hate",
-        "origin": "Middle English"
-      },
-      {
-        "name": "hâte",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/hate#etymonline_v_41674",
-      "https://www.etymonline.com/word/hateful#etymonline_v_34057",
-      "https://www.merriam-webster.com/dictionary/hate#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/hate#word-history",
-      "https://bosworthtoller.com/18957"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "hate",
+      "etymology": [
+        {
+          "name": "hete",
+          "origin": "Old English"
+        },
+        {
+          "name": "hate",
+          "origin": "Middle English"
+        },
+        {
+          "name": "hâte",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/hate#etymonline_v_41674",
+        "https://www.etymonline.com/word/hateful#etymonline_v_34057",
+        "https://www.merriam-webster.com/dictionary/hate#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/hate#word-history",
+        "https://bosworthtoller.com/18957"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   },
   {
-    "name": "to hate",
-    "etymology": [
-      {
-        "name": "hatian",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to hate",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "haten",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to hate",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta hâte -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "hatian",
+        "haten",
+        "to hate",
+        "ta hâte -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to hate",
+      "etymology": [
+        {
+          "name": "hatian",
+          "origin": "Old English"
+        },
+        {
+          "name": "haten",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to hate",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta hâte -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/hate#etymonline_v_6206",
+        "https://www.merriam-webster.com/dictionary/hate#dictionary-entry-2",
+        "https://www.merriam-webster.com/dictionary/hate#word-history",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20095",
+        "https://bosworthtoller.com/18225"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/hate#etymonline_v_6206",
-      "https://www.merriam-webster.com/dictionary/hate#dictionary-entry-2",
-      "https://www.merriam-webster.com/dictionary/hate#word-history",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20095",
-      "https://bosworthtoller.com/18225"
-    ]
+    }
   },
   {
-    "name": "hatred",
-    "etymology": [
-      {
-        "name": "hatred",
-        "origin": "Middle English"
-      },
-      {
-        "name": "hâtrad",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/hatred#etymonline_v_6208",
-      "https://www.merriam-webster.com/dictionary/hatred",
-      "https://www.merriam-webster.com/dictionary/hatred#word-history",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20114"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "hatred",
+      "etymology": [
+        {
+          "name": "hatred",
+          "origin": "Middle English"
+        },
+        {
+          "name": "hâtrad",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/hatred#etymonline_v_6208",
+        "https://www.merriam-webster.com/dictionary/hatred",
+        "https://www.merriam-webster.com/dictionary/hatred#word-history",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20114"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   }
 ]

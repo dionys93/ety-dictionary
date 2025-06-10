@@ -1,73 +1,104 @@
 [
   {
-    "name": "to abuse",
-    "etymology": [
-      {
-        "name": "ab + uti, abuti, abusus",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to abuse",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "abusare",
-        "origin": "Vulgar Latin"
-      },
-      {
-        "name": "abuser",
-        "origin": "Old French"
-      },
-      {
-        "name": "abusen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to abuse",
-        "origin": "Modern English"
-      },
-      {
-        "name": "to abeuse -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "ab + uti, abuti, abusus",
+        "abusare",
+        "abuser",
+        "abusen",
+        "to abuse",
+        "to abeuse -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to abuse",
+      "etymology": [
+        {
+          "name": "ab + uti, abuti, abusus",
+          "origin": "Latin"
+        },
+        {
+          "name": "abusare",
+          "origin": "Vulgar Latin"
+        },
+        {
+          "name": "abuser",
+          "origin": "Old French"
+        },
+        {
+          "name": "abusen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to abuse",
+          "origin": "Modern English"
+        },
+        {
+          "name": "to abeuse -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/abuse#etymonline_v_94",
+        "https://www.oed.com/dictionary/abuse_v?tab=factsheet#2289449",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED240",
+        "https://www.anglo-norman.net/entry/abuser",
+        "https://latin-dictionary.net/definition/309/abutor-abuti-abusus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/abuse#etymonline_v_94",
-      "https://www.oed.com/dictionary/abuse_v?tab=factsheet#2289449",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED240",
-      "https://www.anglo-norman.net/entry/abuser",
-      "https://latin-dictionary.net/definition/309/abutor-abuti-abusus"
-    ]
+    }
   },
   {
-    "name": "abuse",
-    "etymology": [
-      {
-        "name": "abusus",
-        "origin": "Latin"
-      },
-      {
-        "name": "abus",
-        "origin": "Old French"
-      },
-      {
-        "name": "abuse",
-        "origin": "Modern English"
-      },
-      {
-        "name": "abeuss, abeuses",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/abuse#etymonline_v_40039",
-      "https://www.etymonline.com/word/abuse#etymonline_v_94",
-      "https://www.oed.com/dictionary/abuse_n?tab=factsheet#2273779",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED239",
-      "https://www.anglo-norman.net/entry/abuse",
-      "https://latin-dictionary.net/definition/309/abutor-abuti-abusus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "abuse",
+      "etymology": [
+        {
+          "name": "abusus",
+          "origin": "Latin"
+        },
+        {
+          "name": "abus",
+          "origin": "Old French"
+        },
+        {
+          "name": "abuse",
+          "origin": "Modern English"
+        },
+        {
+          "name": "abeuss, abeuses",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/abuse#etymonline_v_40039",
+        "https://www.etymonline.com/word/abuse#etymonline_v_94",
+        "https://www.oed.com/dictionary/abuse_n?tab=factsheet#2273779",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED239",
+        "https://www.anglo-norman.net/entry/abuse",
+        "https://latin-dictionary.net/definition/309/abutor-abuti-abusus"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

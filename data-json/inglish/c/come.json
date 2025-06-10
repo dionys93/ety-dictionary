@@ -1,32 +1,49 @@
 [
   {
-    "name": "to come",
-    "etymology": [
-      {
-        "name": "cuman",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to come",
+      "conjugations": {
+        "thirdPerson": "s"
       },
-      {
-        "name": "comen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to come",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta come -s câme com -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "cuman",
+        "comen",
+        "to come",
+        "ta come -s câme com -ing"
+      ]
+    },
+    "standard": {
+      "name": "to come",
+      "etymology": [
+        {
+          "name": "cuman",
+          "origin": "Old English"
+        },
+        {
+          "name": "comen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to come",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta come -s câme com -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/come#etymonline_v_15860",
+        "https://www.oed.com/dictionary/come_v?tab=factsheet#8961768",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8522",
+        "https://bosworthtoller.com/6806"
+      ],
+      "conjugations": {
+        "thirdPerson": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/come#etymonline_v_15860",
-      "https://www.oed.com/dictionary/come_v?tab=factsheet#8961768",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8522",
-      "https://bosworthtoller.com/6806"
-    ]
+    }
   }
 ]

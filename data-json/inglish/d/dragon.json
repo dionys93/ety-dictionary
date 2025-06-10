@@ -1,33 +1,41 @@
 [
   {
-    "name": "dragon",
-    "etymology": [
-      {
-        "name": "δράκων",
-        "origin": "Ancient Greek"
-      },
-      {
-        "name": "draco, draconem",
-        "origin": "Latin"
-      },
-      {
-        "name": "dragon",
-        "origin": "Old French"
-      },
-      {
-        "name": "dràgon -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/dragon#etymonline_v_15874",
-      "https://www.oed.com/dictionary/dragon_n1?tab=meaning_and_use#6230553",
-      "https://anglo-norman.net/entry/dragon",
-      "https://latin-dictionary.net/definition/18453/draco-draconis",
-      "https://lsj.gr/wiki/%CE%B4%CF%81%CE%AC%CE%BA%CF%89%CE%BD"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "dragon",
+      "etymology": [
+        {
+          "name": "δράκων",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "draco, draconem",
+          "origin": "Latin"
+        },
+        {
+          "name": "dragon",
+          "origin": "Old French"
+        },
+        {
+          "name": "dràgon -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/dragon#etymonline_v_15874",
+        "https://www.oed.com/dictionary/dragon_n1?tab=meaning_and_use#6230553",
+        "https://anglo-norman.net/entry/dragon",
+        "https://latin-dictionary.net/definition/18453/draco-draconis",
+        "https://lsj.gr/wiki/%CE%B4%CF%81%CE%AC%CE%BA%CF%89%CE%BD"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

@@ -1,36 +1,44 @@
 [
   {
-    "name": "disparity",
-    "etymology": [
-      {
-        "name": "par, dis + paritas",
-        "origin": "Latin"
-      },
-      {
-        "name": "disparitas, disparitatem",
-        "origin": "Medieval Latin"
-      },
-      {
-        "name": "disparité",
-        "origin": "French"
-      },
-      {
-        "name": "disparity",
-        "origin": "Modern English"
-      },
-      {
-        "name": "despaîetie, despaîetis",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/disparity#etymonline_v_11468",
-      "https://www.oed.com/dictionary/disparity_n?tab=factsheet#6609238",
-      "https://www.littre.org/definition/disparit%C3%A9",
-      "https://latin-dictionary.net/definition/18098/disparitas-disparitatis"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "disparity",
+      "etymology": [
+        {
+          "name": "par, dis + paritas",
+          "origin": "Latin"
+        },
+        {
+          "name": "disparitas, disparitatem",
+          "origin": "Medieval Latin"
+        },
+        {
+          "name": "disparité",
+          "origin": "French"
+        },
+        {
+          "name": "disparity",
+          "origin": "Modern English"
+        },
+        {
+          "name": "despaîetie, despaîetis",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/disparity#etymonline_v_11468",
+        "https://www.oed.com/dictionary/disparity_n?tab=factsheet#6609238",
+        "https://www.littre.org/definition/disparit%C3%A9",
+        "https://latin-dictionary.net/definition/18098/disparitas-disparitatis"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

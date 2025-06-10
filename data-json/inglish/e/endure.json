@@ -1,101 +1,129 @@
 [
   {
-    "name": "to endure  -s -d -ing",
-    "etymology": [
-      {
-        "name": "durus, in + durare, indurare",
-        "origin": "Latin"
-      },
-      {
-        "name": "endurer",
-        "origin": "Old French"
-      },
-      {
-        "name": "to endure  -s -d -ing",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/endure#etymonline_v_8662",
-      "https://www.oed.com/dictionary/endure_v?tab=factsheet#5616597",
-      "https://anglo-norman.net/entry/endurer_1",
-      "https://latin-dictionary.net/definition/23498/induro-indurare-induravi-induratus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "to endure  -s -d -ing",
+      "etymology": [
+        {
+          "name": "durus, in + durare, indurare",
+          "origin": "Latin"
+        },
+        {
+          "name": "endurer",
+          "origin": "Old French"
+        },
+        {
+          "name": "to endure  -s -d -ing",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/endure#etymonline_v_8662",
+        "https://www.oed.com/dictionary/endure_v?tab=factsheet#5616597",
+        "https://anglo-norman.net/entry/endurer_1",
+        "https://latin-dictionary.net/definition/23498/induro-indurare-induravi-induratus"
+      ]
+    }
   },
   {
-    "name": "endurance",
-    "etymology": [
-      {
-        "name": "endurance",
-        "origin": "Modern English"
-      },
-      {
-        "name": "endûrance -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/endurance#etymonline_v_29738",
-      "https://www.oed.com/dictionary/endurance_n?tab=factsheet#5616179",
-      "https://www.etymonline.com/word/endure#etymonline_v_8662",
-      "https://www.etymonline.com/word/-ance#etymonline_v_26260"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "endurance",
+      "etymology": [
+        {
+          "name": "endurance",
+          "origin": "Modern English"
+        },
+        {
+          "name": "endûrance -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/endurance#etymonline_v_29738",
+        "https://www.oed.com/dictionary/endurance_n?tab=factsheet#5616179",
+        "https://www.etymonline.com/word/endure#etymonline_v_8662",
+        "https://www.etymonline.com/word/-ance#etymonline_v_26260"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "endurable",
-    "etymology": [
-      {
-        "name": "endurable",
-        "origin": "French"
-      },
-      {
-        "name": "endûrable",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/endurable#etymonline_v_32541",
-      "https://www.etymonline.com/word/endure#etymonline_v_8662",
-      "https://www.etymonline.com/word/-able#etymonline_v_49",
-      "https://www.oed.com/dictionary/endurable_adj?tab=factsheet#5616041",
-      "https://www.larousse.fr/dictionnaires/francais/endurable/29401"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "endurable",
+      "etymology": [
+        {
+          "name": "endurable",
+          "origin": "French"
+        },
+        {
+          "name": "endûrable",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/endurable#etymonline_v_32541",
+        "https://www.etymonline.com/word/endure#etymonline_v_8662",
+        "https://www.etymonline.com/word/-able#etymonline_v_49",
+        "https://www.oed.com/dictionary/endurable_adj?tab=factsheet#5616041",
+        "https://www.larousse.fr/dictionnaires/francais/endurable/29401"
+      ]
+    }
   },
   {
-    "name": "induration",
-    "etymology": [
-      {
-        "name": "indurare, induratio, indurationem",
-        "origin": "Latin"
-      },
-      {
-        "name": "induracion",
-        "origin": "Old French"
-      },
-      {
-        "name": "induration",
-        "origin": "Modern English"
-      },
-      {
-        "name": "indurâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/induration#etymonline_v_34865",
-      "https://www.oed.com/dictionary/induration_n?tab=factsheet#537225",
-      "https://www.merriam-webster.com/dictionary/induration",
-      "https://www.larousse.fr/dictionnaires/francais/induration/42730",
-      "https://latin-dictionary.net/definition/23498/induro-indurare-induravi-induratus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "induration",
+      "etymology": [
+        {
+          "name": "indurare, induratio, indurationem",
+          "origin": "Latin"
+        },
+        {
+          "name": "induracion",
+          "origin": "Old French"
+        },
+        {
+          "name": "induration",
+          "origin": "Modern English"
+        },
+        {
+          "name": "indurâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/induration#etymonline_v_34865",
+        "https://www.oed.com/dictionary/induration_n?tab=factsheet#537225",
+        "https://www.merriam-webster.com/dictionary/induration",
+        "https://www.larousse.fr/dictionnaires/francais/induration/42730",
+        "https://latin-dictionary.net/definition/23498/induro-indurare-induravi-induratus"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

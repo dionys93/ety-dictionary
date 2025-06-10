@@ -1,67 +1,94 @@
 [
   {
-    "name": "moot",
-    "etymology": [
-      {
-        "name": "gemot",
-        "origin": "Old English"
-      },
-      {
-        "name": "mot",
-        "origin": "Middle English"
-      },
-      {
-        "name": "moot",
-        "origin": "Modern English"
-      },
-      {
-        "name": "mout",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/moot#etymonline_v_45009",
-      "https://www.etymonline.com/word/moot#etymonline_v_18342",
-      "https://www.merriam-webster.com/dictionary/moot#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/moot#dictionary-entry-3",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED28746",
-      "https://bosworthtoller.com/15291"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "moot",
+      "etymology": [
+        {
+          "name": "gemot",
+          "origin": "Old English"
+        },
+        {
+          "name": "mot",
+          "origin": "Middle English"
+        },
+        {
+          "name": "moot",
+          "origin": "Modern English"
+        },
+        {
+          "name": "mout",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/moot#etymonline_v_45009",
+        "https://www.etymonline.com/word/moot#etymonline_v_18342",
+        "https://www.merriam-webster.com/dictionary/moot#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/moot#dictionary-entry-3",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED28746",
+        "https://bosworthtoller.com/15291"
+      ]
+    }
   },
   {
-    "name": "to moot",
-    "etymology": [
-      {
-        "name": "motian",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to moot",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "moten",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to moot",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta moute -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "motian",
+        "moten",
+        "to moot",
+        "ta moute -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to moot",
+      "etymology": [
+        {
+          "name": "motian",
+          "origin": "Old English"
+        },
+        {
+          "name": "moten",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to moot",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta moute -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/moot#etymonline_v_45010",
+        "https://www.etymonline.com/word/moot#etymonline_v_18342",
+        "https://www.merriam-webster.com/dictionary/moot#dictionary-entry-2",
+        "https://www.oed.com/dictionary/moot_v1?tab=factsheet#36018595",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED28753",
+        "https://bosworthtoller.com/23200"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/moot#etymonline_v_45010",
-      "https://www.etymonline.com/word/moot#etymonline_v_18342",
-      "https://www.merriam-webster.com/dictionary/moot#dictionary-entry-2",
-      "https://www.oed.com/dictionary/moot_v1?tab=factsheet#36018595",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED28753",
-      "https://bosworthtoller.com/23200"
-    ]
+    }
   }
 ]

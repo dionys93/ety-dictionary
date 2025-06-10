@@ -1,140 +1,195 @@
 [
   {
-    "name": "fine",
-    "etymology": [
-      {
-        "name": "finis",
-        "origin": "Latin"
-      },
-      {
-        "name": "fin",
-        "origin": "Old French"
-      },
-      {
-        "name": "fine",
-        "origin": "Modern English"
-      },
-      {
-        "name": "fîne, fîns",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/fine#etymonline_v_5955",
-      "https://www.merriam-webster.com/dictionary/fine#dictionary-entry-3",
-      "https://www.merriam-webster.com/dictionary/fine#word-history",
-      "https://www.anglo-norman.net/entry/fin_1",
-      "https://latin-dictionary.net/definition/20653/finis-finis"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "fine",
+      "etymology": [
+        {
+          "name": "finis",
+          "origin": "Latin"
+        },
+        {
+          "name": "fin",
+          "origin": "Old French"
+        },
+        {
+          "name": "fine",
+          "origin": "Modern English"
+        },
+        {
+          "name": "fîne, fîns",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/fine#etymonline_v_5955",
+        "https://www.merriam-webster.com/dictionary/fine#dictionary-entry-3",
+        "https://www.merriam-webster.com/dictionary/fine#word-history",
+        "https://www.anglo-norman.net/entry/fin_1",
+        "https://latin-dictionary.net/definition/20653/finis-finis"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to fine",
-    "etymology": [
-      {
-        "name": "finer",
-        "origin": "Old French"
+    "verbDetails": {
+      "infinitive": "to fine",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "finen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to fine",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta fîne -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "finer",
+        "finen",
+        "to fine",
+        "ta fîne -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to fine",
+      "etymology": [
+        {
+          "name": "finer",
+          "origin": "Old French"
+        },
+        {
+          "name": "finen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to fine",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta fîne -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/fine#etymonline_v_39958",
+        "https://www.etymonline.com/word/fine#etymonline_v_5955",
+        "https://www.merriam-webster.com/dictionary/fine#dictionary-entry-4",
+        "https://www.merriam-webster.com/dictionary/fine#word-history",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16014",
+        "https://www.anglo-norman.net/entry/finer_1"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/fine#etymonline_v_39958",
-      "https://www.etymonline.com/word/fine#etymonline_v_5955",
-      "https://www.merriam-webster.com/dictionary/fine#dictionary-entry-4",
-      "https://www.merriam-webster.com/dictionary/fine#word-history",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16014",
-      "https://www.anglo-norman.net/entry/finer_1"
-    ]
+    }
   },
   {
-    "name": "fine",
-    "etymology": [
-      {
-        "name": "finis boni",
-        "origin": "Latin"
-      },
-      {
-        "name": "fin",
-        "origin": "Old French"
-      },
-      {
-        "name": "fine",
-        "origin": "Modern English"
-      },
-      {
-        "name": "fîne -r -st",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "fine",
+      "etymology": [
+        {
+          "name": "finis boni",
+          "origin": "Latin"
+        },
+        {
+          "name": "fin",
+          "origin": "Old French"
+        },
+        {
+          "name": "fine",
+          "origin": "Modern English"
+        },
+        {
+          "name": "fîne -r -st",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/fine#etymonline_v_5954",
+        "https://www.merriam-webster.com/dictionary/fine#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/fine#dictionary-entry-2",
+        "https://www.merriam-webster.com/dictionary/fine#word-history",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15996",
+        "https://www.anglo-norman.net/entry/fin_2",
+        "https://latin-dictionary.net/definition/20653/finis-finis",
+        "https://latin-dictionary.net/definition/6795/bonum-boni"
+      ],
+      "degrees": {
+        "positive": "ne",
+        "comparative": "r",
+        "superlative": "st"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/fine#etymonline_v_5954",
-      "https://www.merriam-webster.com/dictionary/fine#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/fine#dictionary-entry-2",
-      "https://www.merriam-webster.com/dictionary/fine#word-history",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15996",
-      "https://www.anglo-norman.net/entry/fin_2",
-      "https://latin-dictionary.net/definition/20653/finis-finis",
-      "https://latin-dictionary.net/definition/6795/bonum-boni"
-    ]
+    }
   },
   {
-    "name": "finely",
-    "etymology": [
-      {
-        "name": "finely",
-        "origin": "Modern English"
-      },
-      {
-        "name": "fînly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adverb"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/finely#etymonline_v_39956",
-      "https://www.etymonline.com/word/fine#etymonline_v_5954",
-      "https://www.etymonline.com/word/-ly#etymonline_v_31075"
-    ]
+    "verbDetails": {
+      "infinitive": "to finely",
+      "etymology": [
+        "finely",
+        "fînly"
+      ]
+    },
+    "standard": {
+      "name": "to finely",
+      "etymology": [
+        {
+          "name": "finely",
+          "origin": "Modern English"
+        },
+        {
+          "name": "fînly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adverb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/finely#etymonline_v_39956",
+        "https://www.etymonline.com/word/fine#etymonline_v_5954",
+        "https://www.etymonline.com/word/-ly#etymonline_v_31075"
+      ]
+    }
   },
   {
-    "name": "fine  -s (m n)",
-    "etymology": [
-      {
-        "name": "finis",
-        "origin": "Latin"
-      },
-      {
-        "name": "fine  -s (m n)",
-        "origin": "Italian"
-      }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/fine#dictionary-entry-6",
-      "https://www.merriam-webster.com/dictionary/fine#word-history",
-      "https://www.merriam-webster.com/dictionary/al%20fine",
-      "https://www.collinsdictionary.com/us/dictionary/italian-english/fine",
-      "https://latin-dictionary.net/definition/20653/finis-finis"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "fine  -s (m n)",
+      "etymology": [
+        {
+          "name": "finis",
+          "origin": "Latin"
+        },
+        {
+          "name": "fine  -s (m n)",
+          "origin": "Italian"
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/fine#dictionary-entry-6",
+        "https://www.merriam-webster.com/dictionary/fine#word-history",
+        "https://www.merriam-webster.com/dictionary/al%20fine",
+        "https://www.collinsdictionary.com/us/dictionary/italian-english/fine",
+        "https://latin-dictionary.net/definition/20653/finis-finis"
+      ]
+    }
   }
 ]

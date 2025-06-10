@@ -1,44 +1,52 @@
 [
   {
-    "name": "choir",
-    "etymology": [
-      {
-        "name": "χορός",
-        "origin": "Ancient Greek"
-      },
-      {
-        "name": "chorus",
-        "origin": "Latin"
-      },
-      {
-        "name": "cuer, quer",
-        "origin": "Old French"
-      },
-      {
-        "name": "queor, quyre",
-        "origin": "Middle English"
-      },
-      {
-        "name": "choir",
-        "origin": "Modern English"
-      },
-      {
-        "name": "cuîor -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/choir#etymonline_v_11304",
-      "https://www.etymonline.com/word/quire#etymonline_v_3218",
-      "https://www.etymonline.com/word/chorus#etymonline_v_11327",
-      "https://www.merriam-webster.com/dictionary/choir",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35549",
-      "https://anglo-norman.net/entry/coer_2",
-      "https://latin-dictionary.net/definition/9522/chorus-chori",
-      "https://lsj.gr/wiki/%CF%87%CE%BF%CF%81%CF%8C%CF%82"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "choir",
+      "etymology": [
+        {
+          "name": "χορός",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "chorus",
+          "origin": "Latin"
+        },
+        {
+          "name": "cuer, quer",
+          "origin": "Old French"
+        },
+        {
+          "name": "queor, quyre",
+          "origin": "Middle English"
+        },
+        {
+          "name": "choir",
+          "origin": "Modern English"
+        },
+        {
+          "name": "cuîor -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/choir#etymonline_v_11304",
+        "https://www.etymonline.com/word/quire#etymonline_v_3218",
+        "https://www.etymonline.com/word/chorus#etymonline_v_11327",
+        "https://www.merriam-webster.com/dictionary/choir",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35549",
+        "https://anglo-norman.net/entry/coer_2",
+        "https://latin-dictionary.net/definition/9522/chorus-chori",
+        "https://lsj.gr/wiki/%CF%87%CE%BF%CF%81%CF%8C%CF%82"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

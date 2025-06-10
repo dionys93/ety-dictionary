@@ -1,64 +1,92 @@
 [
   {
-    "name": "cache",
-    "etymology": [
-      {
-        "name": "coactare",
-        "origin": "Latin"
-      },
-      {
-        "name": "cachier",
-        "origin": "Old French"
-      },
-      {
-        "name": "cache",
-        "origin": "Modern English"
-      },
-      {
-        "name": "caçe -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cache",
-      "https://www.merriam-webster.com/dictionary/cache",
-      "https://www.oed.com/dictionary/cache_n2?tab=factsheet#10921719",
-      "https://latin-dictionary.net/definition/10535/coacto-coactare-coactavi-coactatus",
-      "https://latin-dictionary.net/definition/10831/cogo-cogere-coegi-coactus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "cache",
+      "etymology": [
+        {
+          "name": "coactare",
+          "origin": "Latin"
+        },
+        {
+          "name": "cachier",
+          "origin": "Old French"
+        },
+        {
+          "name": "cache",
+          "origin": "Modern English"
+        },
+        {
+          "name": "caçe -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cache",
+        "https://www.merriam-webster.com/dictionary/cache",
+        "https://www.oed.com/dictionary/cache_n2?tab=factsheet#10921719",
+        "https://latin-dictionary.net/definition/10535/coacto-coactare-coactavi-coactatus",
+        "https://latin-dictionary.net/definition/10831/cogo-cogere-coegi-coactus"
+      ],
+      "number": "plural"
+    }
   },
   {
-    "name": "to cache",
-    "etymology": [
-      {
-        "name": "coactare",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to cache",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "cachier",
-        "origin": "Old French"
-      },
-      {
-        "name": "to cache",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta caçe -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "coactare",
+        "cachier",
+        "to cache",
+        "ta caçe -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to cache",
+      "etymology": [
+        {
+          "name": "coactare",
+          "origin": "Latin"
+        },
+        {
+          "name": "cachier",
+          "origin": "Old French"
+        },
+        {
+          "name": "to cache",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta caçe -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cache#etymonline_v_551",
+        "https://www.merriam-webster.com/dictionary/cache",
+        "https://www.oed.com/dictionary/cache_v?tab=factsheet#10922866",
+        "https://latin-dictionary.net/definition/10535/coacto-coactare-coactavi-coactatus",
+        "https://latin-dictionary.net/definition/10831/cogo-cogere-coegi-coactus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cache#etymonline_v_551",
-      "https://www.merriam-webster.com/dictionary/cache",
-      "https://www.oed.com/dictionary/cache_v?tab=factsheet#10922866",
-      "https://latin-dictionary.net/definition/10535/coacto-coactare-coactavi-coactatus",
-      "https://latin-dictionary.net/definition/10831/cogo-cogere-coegi-coactus"
-    ]
+    }
   }
 ]

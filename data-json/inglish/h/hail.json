@@ -1,110 +1,163 @@
 [
   {
-    "name": "hail  (m n)",
-    "etymology": [
-      {
-        "name": "hægl, hagol",
-        "origin": "Old English"
-      },
-      {
-        "name": "hail  (m n)",
-        "origin": "Middle English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/hail#etymonline_v_1376",
-      "https://www.merriam-webster.com/dictionary/hail#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED19785",
-      "https://bosworthtoller.com/51617",
-      "https://bosworthtoller.com/17868"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "hail  (m n)",
+      "etymology": [
+        {
+          "name": "hægl, hagol",
+          "origin": "Old English"
+        },
+        {
+          "name": "hail  (m n)",
+          "origin": "Middle English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/hail#etymonline_v_1376",
+        "https://www.merriam-webster.com/dictionary/hail#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED19785",
+        "https://bosworthtoller.com/51617",
+        "https://bosworthtoller.com/17868"
+      ]
+    }
   },
   {
-    "name": "to hail",
-    "etymology": [
-      {
-        "name": "hagalian",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to hail",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "hailen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to hail",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta haile -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "hagalian",
+        "hailen",
+        "to hail",
+        "ta haile -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to hail",
+      "etymology": [
+        {
+          "name": "hagalian",
+          "origin": "Old English"
+        },
+        {
+          "name": "hailen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to hail",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta haile -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/hail#etymonline_v_45192",
+        "https://www.merriam-webster.com/dictionary/hail#dictionary-entry-2",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED19786",
+        "https://bosworthtoller.com/18016"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/hail#etymonline_v_45192",
-      "https://www.merriam-webster.com/dictionary/hail#dictionary-entry-2",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED19786",
-      "https://bosworthtoller.com/18016"
-    ]
+    }
   },
   {
-    "name": "hail",
-    "etymology": [
-      {
-        "name": "heill",
-        "origin": "Old Norse"
-      },
-      {
-        "name": "heil",
-        "origin": "Middle English"
-      },
-      {
-        "name": "hail",
-        "origin": "Modern English"
-      },
-      {
-        "name": "héle, héls",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "interjection",
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/hail#etymonline_v_1375",
-      "https://www.merriam-webster.com/dictionary/hail#dictionary-entry-4",
-      "https://www.merriam-webster.com/dictionary/hail#dictionary-entry-5",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20263",
-      "https://old-norse.net/html/h.php#heill"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "interjection"
+    },
+    "standard": {
+      "name": "hail",
+      "etymology": [
+        {
+          "name": "heill",
+          "origin": "Old Norse"
+        },
+        {
+          "name": "heil",
+          "origin": "Middle English"
+        },
+        {
+          "name": "hail",
+          "origin": "Modern English"
+        },
+        {
+          "name": "héle, héls",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "interjection",
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/hail#etymonline_v_1375",
+        "https://www.merriam-webster.com/dictionary/hail#dictionary-entry-4",
+        "https://www.merriam-webster.com/dictionary/hail#dictionary-entry-5",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20263",
+        "https://old-norse.net/html/h.php#heill"
+      ]
+    }
   },
   {
-    "name": "to hail",
-    "etymology": [
-      {
-        "name": "heilen",
-        "origin": "Middle English"
+    "verbDetails": {
+      "infinitive": "to hail",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to hail",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta héle -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "heilen",
+        "to hail",
+        "ta héle -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to hail",
+      "etymology": [
+        {
+          "name": "heilen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to hail",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta héle -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/hail#etymonline_v_41523",
+        "https://www.etymonline.com/word/hail#etymonline_v_1375",
+        "https://www.merriam-webster.com/dictionary/hail#dictionary-entry-3",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20264"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/hail#etymonline_v_41523",
-      "https://www.etymonline.com/word/hail#etymonline_v_1375",
-      "https://www.merriam-webster.com/dictionary/hail#dictionary-entry-3",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20264"
-    ]
+    }
   }
 ]

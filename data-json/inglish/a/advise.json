@@ -1,84 +1,115 @@
 [
   {
-    "name": "advice",
-    "etymology": [
-      {
-        "name": "videre, visum",
-        "origin": "Latin"
-      },
-      {
-        "name": "mi est visum",
-        "origin": "Vulgar Latin"
-      },
-      {
-        "name": "ço m'est à vis, avis",
-        "origin": "Old French"
-      },
-      {
-        "name": "auys",
-        "origin": "Middle English"
-      },
-      {
-        "name": "advice",
-        "origin": "Modern English"
-      },
-      {
-        "name": "advîss",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/advice#etymonline_v_5165",
-      "https://www.merriam-webster.com/dictionary/advice",
-      "https://www.oed.com/dictionary/advice_n?tab=factsheet#9724371",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3180",
-      "https://anglo-norman.net/entry/avis",
-      "https://latin-dictionary.net/definition/38964/visum-visi",
-      "https://latin-dictionary.net/definition/38775/video-videre-vidi-visus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "advice",
+      "etymology": [
+        {
+          "name": "videre, visum",
+          "origin": "Latin"
+        },
+        {
+          "name": "mi est visum",
+          "origin": "Vulgar Latin"
+        },
+        {
+          "name": "ço m'est à vis, avis",
+          "origin": "Old French"
+        },
+        {
+          "name": "auys",
+          "origin": "Middle English"
+        },
+        {
+          "name": "advice",
+          "origin": "Modern English"
+        },
+        {
+          "name": "advîss",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/advice#etymonline_v_5165",
+        "https://www.merriam-webster.com/dictionary/advice",
+        "https://www.oed.com/dictionary/advice_n?tab=factsheet#9724371",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3180",
+        "https://anglo-norman.net/entry/avis",
+        "https://latin-dictionary.net/definition/38964/visum-visi",
+        "https://latin-dictionary.net/definition/38775/video-videre-vidi-visus"
+      ],
+      "gender": "feminine",
+      "number": "singular"
+    }
   },
   {
-    "name": "to advise",
-    "etymology": [
-      {
-        "name": "videre, visum",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to advise",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "mi est visum",
-        "origin": "Vulgar Latin"
-      },
-      {
-        "name": "ço m'est à vis, aviser",
-        "origin": "Old French"
-      },
-      {
-        "name": "avisen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to advise",
-        "origin": "Modern English"
-      },
-      {
-        "name": "to advîse -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "videre, visum",
+        "mi est visum",
+        "ço m'est à vis, aviser",
+        "avisen",
+        "to advise",
+        "to advîse -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to advise",
+      "etymology": [
+        {
+          "name": "videre, visum",
+          "origin": "Latin"
+        },
+        {
+          "name": "mi est visum",
+          "origin": "Vulgar Latin"
+        },
+        {
+          "name": "ço m'est à vis, aviser",
+          "origin": "Old French"
+        },
+        {
+          "name": "avisen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to advise",
+          "origin": "Modern English"
+        },
+        {
+          "name": "to advîse -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/advise#etymonline_v_5166",
+        "https://www.merriam-webster.com/dictionary/advise",
+        "https://www.oed.com/dictionary/advise_v?tab=factsheet#9739511",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3188",
+        "https://anglo-norman.net/entry/aviser_1",
+        "https://latin-dictionary.net/definition/38964/visum-visi",
+        "https://latin-dictionary.net/definition/38775/video-videre-vidi-visus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/advise#etymonline_v_5166",
-      "https://www.merriam-webster.com/dictionary/advise",
-      "https://www.oed.com/dictionary/advise_v?tab=factsheet#9739511",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3188",
-      "https://anglo-norman.net/entry/aviser_1",
-      "https://latin-dictionary.net/definition/38964/visum-visi",
-      "https://latin-dictionary.net/definition/38775/video-videre-vidi-visus"
-    ]
+    }
   }
 ]

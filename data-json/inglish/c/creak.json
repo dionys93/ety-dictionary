@@ -1,74 +1,113 @@
 [
   {
-    "name": "to creak",
-    "etymology": [
-      {
-        "name": "cræccettan, cracettan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to creak",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "creken",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to creak",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta crieke -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "cræccettan, cracettan",
+        "creken",
+        "to creak",
+        "ta crieke -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to creak",
+      "etymology": [
+        {
+          "name": "cræccettan, cracettan",
+          "origin": "Old English"
+        },
+        {
+          "name": "creken",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to creak",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta crieke -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/creak#etymonline_v_317",
+        "https://www.merriam-webster.com/dictionary/creak#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10255",
+        "https://bosworthtoller.com/6634",
+        "https://bosworthtoller.com/42092"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/creak#etymonline_v_317",
-      "https://www.merriam-webster.com/dictionary/creak#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10255",
-      "https://bosworthtoller.com/6634",
-      "https://bosworthtoller.com/42092"
-    ]
+    }
   },
   {
-    "name": "creak",
-    "etymology": [
-      {
-        "name": "creak",
-        "origin": "Modern English"
-      },
-      {
-        "name": "criek, criex",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/creak#dictionary-entry-2",
-      "https://www.etymonline.com/word/creak#etymonline_v_317"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "creak",
+      "etymology": [
+        {
+          "name": "creak",
+          "origin": "Modern English"
+        },
+        {
+          "name": "criek, criex",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/creak#dictionary-entry-2",
+        "https://www.etymonline.com/word/creak#etymonline_v_317"
+      ],
+      "number": "singular"
+    }
   },
   {
-    "name": "creaky",
-    "etymology": [
-      {
-        "name": "creaky",
-        "origin": "Modern English"
-      },
-      {
-        "name": "crieky -ier -iest",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "creaky",
+      "etymology": [
+        {
+          "name": "creaky",
+          "origin": "Modern English"
+        },
+        {
+          "name": "crieky -ier -iest",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/creaky#etymonline_v_36398",
+        "https://www.etymonline.com/word/creak#etymonline_v_317",
+        "https://www.etymonline.com/word/-y#etymonline_v_25631"
+      ],
+      "degrees": {
+        "positive": "crieky",
+        "comparative": "ier",
+        "superlative": "iest"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/creaky#etymonline_v_36398",
-      "https://www.etymonline.com/word/creak#etymonline_v_317",
-      "https://www.etymonline.com/word/-y#etymonline_v_25631"
-    ]
+    }
   }
 ]

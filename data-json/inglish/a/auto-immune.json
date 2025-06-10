@@ -1,22 +1,28 @@
 [
   {
-    "name": "autoimmune",
-    "etymology": [
-      {
-        "name": "autoimmune",
-        "origin": "Modern English"
-      },
-      {
-        "name": "autoim̃une",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/autoimmune#etymonline_v_40380",
-      "https://www.oed.com/dictionary/autoimmune_adj?tab=factsheet#32733962"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "autoimmune",
+      "etymology": [
+        {
+          "name": "autoimmune",
+          "origin": "Modern English"
+        },
+        {
+          "name": "autoim̃une",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/autoimmune#etymonline_v_40380",
+        "https://www.oed.com/dictionary/autoimmune_adj?tab=factsheet#32733962"
+      ]
+    }
   }
 ]

@@ -1,49 +1,76 @@
 [
   {
-    "name": "blade",
-    "etymology": [
-      {
-        "name": "blæd",
-        "origin": "Old English"
-      },
-      {
-        "name": "blade",
-        "origin": "Middle English"
-      },
-      {
-        "name": "blâde, blâds",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/blade#etymonline_v_13564",
-      "https://www.merriam-webster.com/dictionary/blade#dictionary-entry-1",
-      "https://www.oed.com/dictionary/blade_n?tab=factsheet#18998508",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5060",
-      "https://bosworthtoller.com/4581"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "blade",
+      "etymology": [
+        {
+          "name": "blæd",
+          "origin": "Old English"
+        },
+        {
+          "name": "blade",
+          "origin": "Middle English"
+        },
+        {
+          "name": "blâde, blâds",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/blade#etymonline_v_13564",
+        "https://www.merriam-webster.com/dictionary/blade#dictionary-entry-1",
+        "https://www.oed.com/dictionary/blade_n?tab=factsheet#18998508",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5060",
+        "https://bosworthtoller.com/4581"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to blade",
-    "etymology": [
-      {
-        "name": "to blade",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to blade",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta blâde -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to blade",
+        "ta blâde -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to blade",
+      "etymology": [
+        {
+          "name": "to blade",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta blâde -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/blade#dictionary-entry-2",
+        "https://www.oed.com/dictionary/blade_v?tab=factsheet#19002507"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/blade#dictionary-entry-2",
-      "https://www.oed.com/dictionary/blade_v?tab=factsheet#19002507"
-    ]
+    }
   }
 ]

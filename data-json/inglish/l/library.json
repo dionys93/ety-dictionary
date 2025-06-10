@@ -1,62 +1,78 @@
 [
   {
-    "name": "library",
-    "etymology": [
-      {
-        "name": "liber, librarium, libraria",
-        "origin": "Latin"
-      },
-      {
-        "name": "librairie, librarie",
-        "origin": "Old French"
-      },
-      {
-        "name": "librari",
-        "origin": "Middle English"
-      },
-      {
-        "name": "library",
-        "origin": "Modern English"
-      },
-      {
-        "name": "lîbrairie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/library#etymonline_v_9474",
-      "https://www.oed.com/dictionary/library_n1?tab=factsheet#39411124",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25399",
-      "https://www.anglo-norman.net/entry/libraire",
-      "https://latin-dictionary.net/definition/25624/librarius-libraria-librarium",
-      "https://latin-dictionary.net/definition/25619/libraria-librariae",
-      "https://latin-dictionary.net/definition/25621/librarium-librari-i",
-      "https://latin-dictionary.net/definition/25592/liber-libri"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "library",
+      "etymology": [
+        {
+          "name": "liber, librarium, libraria",
+          "origin": "Latin"
+        },
+        {
+          "name": "librairie, librarie",
+          "origin": "Old French"
+        },
+        {
+          "name": "librari",
+          "origin": "Middle English"
+        },
+        {
+          "name": "library",
+          "origin": "Modern English"
+        },
+        {
+          "name": "lîbrairie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/library#etymonline_v_9474",
+        "https://www.oed.com/dictionary/library_n1?tab=factsheet#39411124",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25399",
+        "https://www.anglo-norman.net/entry/libraire",
+        "https://latin-dictionary.net/definition/25624/librarius-libraria-librarium",
+        "https://latin-dictionary.net/definition/25619/libraria-librariae",
+        "https://latin-dictionary.net/definition/25621/librarium-librari-i",
+        "https://latin-dictionary.net/definition/25592/liber-libri"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "librarian",
-    "etymology": [
-      {
-        "name": "librarian",
-        "origin": "Modern English"
-      },
-      {
-        "name": "lîbrârian -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/librarian#etymonline_v_30777",
-      "https://www.etymonline.com/word/library#etymonline_v_9474",
-      "https://www.etymonline.com/word/-an#etymonline_v_38825",
-      "https://www.oed.com/dictionary/librarian_n?tab=factsheet#39410897"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "librarian",
+      "etymology": [
+        {
+          "name": "librarian",
+          "origin": "Modern English"
+        },
+        {
+          "name": "lîbrârian -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/librarian#etymonline_v_30777",
+        "https://www.etymonline.com/word/library#etymonline_v_9474",
+        "https://www.etymonline.com/word/-an#etymonline_v_38825",
+        "https://www.oed.com/dictionary/librarian_n?tab=factsheet#39410897"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

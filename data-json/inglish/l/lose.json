@@ -1,102 +1,140 @@
 [
   {
-    "name": "to lose",
-    "etymology": [
-      {
-        "name": "los, losian",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to lose",
+      "conjugations": {
+        "thirdPerson": "s"
       },
-      {
-        "name": "losen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to lose",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta louse -s lòst -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "los, losian",
+        "losen",
+        "to lose",
+        "ta louse -s lòst -ing"
+      ]
+    },
+    "standard": {
+      "name": "to lose",
+      "etymology": [
+        {
+          "name": "los, losian",
+          "origin": "Old English"
+        },
+        {
+          "name": "losen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to lose",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta louse -s lòst -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/lose#etymonline_v_12441",
+        "https://www.merriam-webster.com/dictionary/lose",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26122",
+        "https://bosworthtoller.com/21850",
+        "https://bosworthtoller.com/21847"
+      ],
+      "conjugations": {
+        "thirdPerson": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/lose#etymonline_v_12441",
-      "https://www.merriam-webster.com/dictionary/lose",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26122",
-      "https://bosworthtoller.com/21850",
-      "https://bosworthtoller.com/21847"
-    ]
+    }
   },
   {
-    "name": "loser",
-    "etymology": [
-      {
-        "name": "loser",
-        "origin": "Modern English"
-      },
-      {
-        "name": "louseur -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/loser#etymonline_v_12442",
-      "https://www.etymonline.com/word/lose#etymonline_v_12441",
-      "https://www.oed.com/dictionary/loser_n?tab=factsheet#38875801"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "loser",
+      "etymology": [
+        {
+          "name": "loser",
+          "origin": "Modern English"
+        },
+        {
+          "name": "louseur -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/loser#etymonline_v_12442",
+        "https://www.etymonline.com/word/lose#etymonline_v_12441",
+        "https://www.oed.com/dictionary/loser_n?tab=factsheet#38875801"
+      ],
+      "number": "plural"
+    }
   },
   {
-    "name": "loss",
-    "etymology": [
-      {
-        "name": "los",
-        "origin": "Old English"
-      },
-      {
-        "name": "loss",
-        "origin": "Modern English"
-      },
-      {
-        "name": "lòss -es",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/loss#etymonline_v_12443",
-      "https://www.merriam-webster.com/dictionary/loss",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26112",
-      "https://bosworthtoller.com/21847"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "loss",
+      "etymology": [
+        {
+          "name": "los",
+          "origin": "Old English"
+        },
+        {
+          "name": "loss",
+          "origin": "Modern English"
+        },
+        {
+          "name": "lòss -es",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/loss#etymonline_v_12443",
+        "https://www.merriam-webster.com/dictionary/loss",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26112",
+        "https://bosworthtoller.com/21847"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "lost",
-    "etymology": [
-      {
-        "name": "lost",
-        "origin": "Modern English"
-      },
-      {
-        "name": "lòst",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/lost#etymonline_v_12444",
-      "https://www.etymonline.com/word/lose#etymonline_v_12441",
-      "https://www.merriam-webster.com/dictionary/lost#dictionary-entry-2",
-      "https://www.oed.com/dictionary/lost_adj?tab=pronunciation#38879258"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "lost",
+      "etymology": [
+        {
+          "name": "lost",
+          "origin": "Modern English"
+        },
+        {
+          "name": "lòst",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/lost#etymonline_v_12444",
+        "https://www.etymonline.com/word/lose#etymonline_v_12441",
+        "https://www.merriam-webster.com/dictionary/lost#dictionary-entry-2",
+        "https://www.oed.com/dictionary/lost_adj?tab=pronunciation#38879258"
+      ]
+    }
   }
 ]

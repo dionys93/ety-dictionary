@@ -1,231 +1,330 @@
 [
   {
-    "name": "clean",
-    "etymology": [
-      {
-        "name": "clæne",
-        "origin": "Old English"
-      },
-      {
-        "name": "clene",
-        "origin": "Middle English"
-      },
-      {
-        "name": "clean",
-        "origin": "Modern English"
-      },
-      {
-        "name": "cline -r -st",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "adverb",
-          "masculine noun"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "clean",
+      "etymology": [
+        {
+          "name": "clæne",
+          "origin": "Old English"
+        },
+        {
+          "name": "clene",
+          "origin": "Middle English"
+        },
+        {
+          "name": "clean",
+          "origin": "Modern English"
+        },
+        {
+          "name": "cline -r -st",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "adverb",
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/clean#etymonline_v_13790",
+        "https://www.etymonline.com/word/clean#etymonline_v_47710",
+        "https://www.merriam-webster.com/dictionary/clean#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/clean#dictionary-entry-2",
+        "https://www.merriam-webster.com/dictionary/clean#dictionary-entry-4",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7951",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7950",
+        "https://bosworthtoller.com/6270",
+        "https://bosworthtoller.com/6269"
+      ],
+      "degrees": {
+        "positive": "cline",
+        "comparative": "r",
+        "superlative": "st"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/clean#etymonline_v_13790",
-      "https://www.etymonline.com/word/clean#etymonline_v_47710",
-      "https://www.merriam-webster.com/dictionary/clean#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/clean#dictionary-entry-2",
-      "https://www.merriam-webster.com/dictionary/clean#dictionary-entry-4",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7951",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7950",
-      "https://bosworthtoller.com/6270",
-      "https://bosworthtoller.com/6269"
-    ]
+    }
   },
   {
-    "name": "to clean",
-    "etymology": [
-      {
-        "name": "clæne",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to clean",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "clene",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to clean",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta cline -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "clæne",
+        "clene",
+        "to clean",
+        "ta cline -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to clean",
+      "etymology": [
+        {
+          "name": "clæne",
+          "origin": "Old English"
+        },
+        {
+          "name": "clene",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to clean",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta cline -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/clean#etymonline_v_46649",
+        "https://www.etymonline.com/word/clean#etymonline_v_13790",
+        "https://www.merriam-webster.com/dictionary/clean#dictionary-entry-3",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7951",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7950",
+        "https://bosworthtoller.com/6270",
+        "https://bosworthtoller.com/6269"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/clean#etymonline_v_46649",
-      "https://www.etymonline.com/word/clean#etymonline_v_13790",
-      "https://www.merriam-webster.com/dictionary/clean#dictionary-entry-3",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7951",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7950",
-      "https://bosworthtoller.com/6270",
-      "https://bosworthtoller.com/6269"
-    ]
+    }
   },
   {
-    "name": "cleanly",
-    "etymology": [
-      {
-        "name": "clænlice",
-        "origin": "Old English"
-      },
-      {
-        "name": "cleanly",
-        "origin": "Modern English"
-      },
-      {
-        "name": "clinely",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adverb"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cleanly",
-      "https://www.oed.com/dictionary/cleanly_adv?tab=factsheet#9330266",
-      "https://bosworthtoller.com/41800"
-    ]
+    "verbDetails": {
+      "infinitive": "to cleanly",
+      "etymology": [
+        "clænlice",
+        "cleanly",
+        "clinely"
+      ]
+    },
+    "standard": {
+      "name": "to cleanly",
+      "etymology": [
+        {
+          "name": "clænlice",
+          "origin": "Old English"
+        },
+        {
+          "name": "cleanly",
+          "origin": "Modern English"
+        },
+        {
+          "name": "clinely",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adverb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cleanly",
+        "https://www.oed.com/dictionary/cleanly_adv?tab=factsheet#9330266",
+        "https://bosworthtoller.com/41800"
+      ]
+    }
   },
   {
-    "name": "cleanly",
-    "etymology": [
-      {
-        "name": "clænlic",
-        "origin": "Old English"
-      },
-      {
-        "name": "cleanly",
-        "origin": "Modern English"
-      },
-      {
-        "name": "clenly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cleanly",
-      "https://www.oed.com/dictionary/cleanly_adj?tab=factsheet#9329819",
-      "https://bosworthtoller.com/41799"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "cleanly",
+      "etymology": [
+        {
+          "name": "clænlic",
+          "origin": "Old English"
+        },
+        {
+          "name": "cleanly",
+          "origin": "Modern English"
+        },
+        {
+          "name": "clenly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cleanly",
+        "https://www.oed.com/dictionary/cleanly_adj?tab=factsheet#9329819",
+        "https://bosworthtoller.com/41799"
+      ]
+    }
   },
   {
-    "name": "cleaner",
-    "etymology": [
-      {
-        "name": "cleaner",
-        "origin": "Modern English"
-      },
-      {
-        "name": "clineur, clínor -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.oed.com/dictionary/cleaner_n?tab=factsheet#9328991"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "cleaner",
+      "etymology": [
+        {
+          "name": "cleaner",
+          "origin": "Modern English"
+        },
+        {
+          "name": "clineur, clínor -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.oed.com/dictionary/cleaner_n?tab=factsheet#9328991"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "clean-shaven",
-    "etymology": [
-      {
-        "name": "clean-shaven",
-        "origin": "Modern English"
-      },
-      {
-        "name": "cline-shâven",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/clean-shaven"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "clean-shaven",
+      "etymology": [
+        {
+          "name": "clean-shaven",
+          "origin": "Modern English"
+        },
+        {
+          "name": "cline-shâven",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/clean-shaven"
+      ]
+    }
   },
   {
-    "name": "cleanliness",
-    "etymology": [
-      {
-        "name": "cleanliness",
-        "origin": "Modern English"
-      },
-      {
-        "name": "clenliness",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cleanliness",
-      "https://www.etymonline.com/word/cleanly",
-      "https://www.etymonline.com/word/-ness",
-      "https://www.oed.com/dictionary/cleanliness_n?tab=factsheet#9329717"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "cleanliness",
+      "etymology": [
+        {
+          "name": "cleanliness",
+          "origin": "Modern English"
+        },
+        {
+          "name": "clenliness",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cleanliness",
+        "https://www.etymonline.com/word/cleanly",
+        "https://www.etymonline.com/word/-ness",
+        "https://www.oed.com/dictionary/cleanliness_n?tab=factsheet#9329717"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   },
   {
-    "name": "to cleanse",
-    "etymology": [
-      {
-        "name": "clænsian",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to cleanse",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "clensen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to cleanse",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta clense -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "clænsian",
+        "clensen",
+        "to cleanse",
+        "ta clense -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to cleanse",
+      "etymology": [
+        {
+          "name": "clænsian",
+          "origin": "Old English"
+        },
+        {
+          "name": "clensen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to cleanse",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta clense -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cleanse#etymonline_v_28199",
+        "https://www.oed.com/dictionary/cleanse_v?tab=factsheet#9330876",
+        "https://bosworthtoller.com/6278"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cleanse#etymonline_v_28199",
-      "https://www.oed.com/dictionary/cleanse_v?tab=factsheet#9330876",
-      "https://bosworthtoller.com/6278"
-    ]
+    }
   },
   {
-    "name": "cleanse",
-    "etymology": [
-      {
-        "name": "cleanse",
-        "origin": "Modern English"
-      },
-      {
-        "name": "clense -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/cleanse#dictionary-entry-2",
-      "https://www.oed.com/dictionary/cleanse_n?tab=factsheet#9330825"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "cleanse",
+      "etymology": [
+        {
+          "name": "cleanse",
+          "origin": "Modern English"
+        },
+        {
+          "name": "clense -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/cleanse#dictionary-entry-2",
+        "https://www.oed.com/dictionary/cleanse_n?tab=factsheet#9330825"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

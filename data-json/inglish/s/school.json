@@ -1,125 +1,178 @@
 [
   {
-    "name": "school",
-    "etymology": [
-      {
-        "name": "σχεῖν, σχολή",
-        "origin": "German"
-      },
-      {
-        "name": "schola",
-        "origin": "Latin"
-      },
-      {
-        "name": "scol",
-        "origin": "Old English"
-      },
-      {
-        "name": "scole",
-        "origin": "Middle English"
-      },
-      {
-        "name": "school",
-        "origin": "Modern English"
-      },
-      {
-        "name": "scoule, scouls",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/school#etymonline_v_22907",
-      "https://www.merriam-webster.com/dictionary/school#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/school#word-history",
-      "https://www.oed.com/dictionary/school_n1?tab=factsheet#24218186",
-      "https://bosworthtoller.com/26959",
-      "https://latin-dictionary.net/definition/34257/schola-scholae",
-      "https://lsj.gr/wiki/%CF%83%CF%87%CE%BF%CE%BB%CE%AE",
-      "https://lsj.gr/wiki/%E1%BC%94%CF%87%CF%89"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "school",
+      "etymology": [
+        {
+          "name": "σχεῖν, σχολή",
+          "origin": "German"
+        },
+        {
+          "name": "schola",
+          "origin": "Latin"
+        },
+        {
+          "name": "scol",
+          "origin": "Old English"
+        },
+        {
+          "name": "scole",
+          "origin": "Middle English"
+        },
+        {
+          "name": "school",
+          "origin": "Modern English"
+        },
+        {
+          "name": "scoule, scouls",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/school#etymonline_v_22907",
+        "https://www.merriam-webster.com/dictionary/school#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/school#word-history",
+        "https://www.oed.com/dictionary/school_n1?tab=factsheet#24218186",
+        "https://bosworthtoller.com/26959",
+        "https://latin-dictionary.net/definition/34257/schola-scholae",
+        "https://lsj.gr/wiki/%CF%83%CF%87%CE%BF%CE%BB%CE%AE",
+        "https://lsj.gr/wiki/%E1%BC%94%CF%87%CF%89"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to school",
-    "etymology": [
-      {
-        "name": "scolen",
-        "origin": "Middle English"
+    "verbDetails": {
+      "infinitive": "to school",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to school",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta scoule -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "scolen",
+        "to school",
+        "ta scoule -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to school",
+      "etymology": [
+        {
+          "name": "scolen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to school",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta scoule -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/school#etymonline_v_45580",
+        "https://www.etymonline.com/word/school#etymonline_v_22907",
+        "https://www.merriam-webster.com/dictionary/school#dictionary-entry-2",
+        "https://www.merriam-webster.com/dictionary/school#word-history",
+        "https://www.oed.com/dictionary/school_v1?tab=factsheet#24225578"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/school#etymonline_v_45580",
-      "https://www.etymonline.com/word/school#etymonline_v_22907",
-      "https://www.merriam-webster.com/dictionary/school#dictionary-entry-2",
-      "https://www.merriam-webster.com/dictionary/school#word-history",
-      "https://www.oed.com/dictionary/school_v1?tab=factsheet#24225578"
-    ]
+    }
   },
   {
-    "name": "school",
-    "etymology": [
-      {
-        "name": "schole",
-        "origin": "Inglish"
-      },
-      {
-        "name": "scole",
-        "origin": "Middle English"
-      },
-      {
-        "name": "school",
-        "origin": "Modern English"
-      },
-      {
-        "name": "skoule, skouls",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/school#etymonline_v_22908",
-      "https://www.merriam-webster.com/dictionary/school#dictionary-entry-3",
-      "https://www.merriam-webster.com/dictionary/school#word-history",
-      "https://www.oed.com/dictionary/school_n2?tab=factsheet#24225036",
-      "https://dictionary.cambridge.org/dictionary/dutch-english/school"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "school",
+      "etymology": [
+        {
+          "name": "schole",
+          "origin": "Inglish"
+        },
+        {
+          "name": "scole",
+          "origin": "Middle English"
+        },
+        {
+          "name": "school",
+          "origin": "Modern English"
+        },
+        {
+          "name": "skoule, skouls",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/school#etymonline_v_22908",
+        "https://www.merriam-webster.com/dictionary/school#dictionary-entry-3",
+        "https://www.merriam-webster.com/dictionary/school#word-history",
+        "https://www.oed.com/dictionary/school_n2?tab=factsheet#24225036",
+        "https://dictionary.cambridge.org/dictionary/dutch-english/school"
+      ]
+    }
   },
   {
-    "name": "to school",
-    "etymology": [
-      {
-        "name": "to school",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to school",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta skoule -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to school",
+        "ta skoule -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to school",
+      "etymology": [
+        {
+          "name": "to school",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta skoule -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/school#etymonline_v_48362",
+        "https://www.etymonline.com/word/school#etymonline_v_22908",
+        "https://www.merriam-webster.com/dictionary/school#dictionary-entry-4",
+        "https://www.merriam-webster.com/dictionary/school#word-history",
+        "https://www.oed.com/dictionary/school_v2?tab=factsheet#24226276"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/school#etymonline_v_48362",
-      "https://www.etymonline.com/word/school#etymonline_v_22908",
-      "https://www.merriam-webster.com/dictionary/school#dictionary-entry-4",
-      "https://www.merriam-webster.com/dictionary/school#word-history",
-      "https://www.oed.com/dictionary/school_v2?tab=factsheet#24226276"
-    ]
+    }
   }
 ]

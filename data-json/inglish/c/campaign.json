@@ -1,76 +1,109 @@
 [
   {
-    "name": "campaign  -s (f n)",
-    "etymology": [
-      {
-        "name": "campus, campania",
-        "origin": "Latin"
-      },
-      {
-        "name": "champagne",
-        "origin": "Old French"
-      },
-      {
-        "name": "campagne",
-        "origin": "French"
-      },
-      {
-        "name": "campaign  -s (f n)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/campaign#etymonline_v_641",
-      "https://www.merriam-webster.com/dictionary/campaign#dictionary-entry-1",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/campagne/12389",
-      "https://anglo-norman.net/entry/champaigne",
-      "https://latin-dictionary.net/definition/7723/campanius-campania-campanium",
-      "https://latin-dictionary.net/definition/7720/Campania-Campaniae",
-      "https://latin-dictionary.net/definition/7748/campus-campi"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "campaign  -s (f n)",
+      "etymology": [
+        {
+          "name": "campus, campania",
+          "origin": "Latin"
+        },
+        {
+          "name": "champagne",
+          "origin": "Old French"
+        },
+        {
+          "name": "campagne",
+          "origin": "French"
+        },
+        {
+          "name": "campaign  -s (f n)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/campaign#etymonline_v_641",
+        "https://www.merriam-webster.com/dictionary/campaign#dictionary-entry-1",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/campagne/12389",
+        "https://anglo-norman.net/entry/champaigne",
+        "https://latin-dictionary.net/definition/7723/campanius-campania-campanium",
+        "https://latin-dictionary.net/definition/7720/Campania-Campaniae",
+        "https://latin-dictionary.net/definition/7748/campus-campi"
+      ]
+    }
   },
   {
-    "name": "to campaign",
-    "etymology": [
-      {
-        "name": "to campaign",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to campaign",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta campaigne -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to campaign",
+        "ta campaigne -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to campaign",
+      "etymology": [
+        {
+          "name": "to campaign",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta campaigne -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/campaign#etymonline_v_45475",
+        "https://www.etymonline.com/word/campaign#etymonline_v_641",
+        "https://www.merriam-webster.com/dictionary/campaign#dictionary-entry-2"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/campaign#etymonline_v_45475",
-      "https://www.etymonline.com/word/campaign#etymonline_v_641",
-      "https://www.merriam-webster.com/dictionary/campaign#dictionary-entry-2"
-    ]
+    }
   },
   {
-    "name": "champagne, champaign",
-    "etymology": [
-      {
-        "name": "champagne, champaign",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ciampaign -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/champaign#etymonline_v_27921",
-      "https://www.etymonline.com/word/champagne#etymonline_v_8406",
-      "https://www.etymonline.com/word/campaign#etymonline_v_641",
-      "https://www.merriam-webster.com/dictionary/champaign",
-      "https://www.merriam-webster.com/dictionary/champagne"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "champagne, champaign",
+      "etymology": [
+        {
+          "name": "champagne, champaign",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ciampaign -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/champaign#etymonline_v_27921",
+        "https://www.etymonline.com/word/champagne#etymonline_v_8406",
+        "https://www.etymonline.com/word/campaign#etymonline_v_641",
+        "https://www.merriam-webster.com/dictionary/champaign",
+        "https://www.merriam-webster.com/dictionary/champagne"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

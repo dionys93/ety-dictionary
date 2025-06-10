@@ -1,78 +1,112 @@
 [
   {
-    "name": "fray  -s (m n)",
-    "etymology": [
-      {
-        "name": "exfridare",
-        "origin": "Vulgar Latin"
-      },
-      {
-        "name": "esfreer, affrai, effrai, esfrei",
-        "origin": "Old French"
-      },
-      {
-        "name": "afrey",
-        "origin": "Middle English"
-      },
-      {
-        "name": "fray  -s (m n)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/fray#etymonline_v_11886",
-      "https://www.etymonline.com/word/affray#etymonline_v_5204",
-      "https://www.merriam-webster.com/dictionary/fray#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/fray#word-history",
-      "https://www.oed.com/dictionary/fray_n1?tab=factsheet#3656480",
-      "https://www.anglo-norman.net/entry/affrai"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "fray  -s (m n)",
+      "etymology": [
+        {
+          "name": "exfridare",
+          "origin": "Vulgar Latin"
+        },
+        {
+          "name": "esfreer, affrai, effrai, esfrei",
+          "origin": "Old French"
+        },
+        {
+          "name": "afrey",
+          "origin": "Middle English"
+        },
+        {
+          "name": "fray  -s (m n)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/fray#etymonline_v_11886",
+        "https://www.etymonline.com/word/affray#etymonline_v_5204",
+        "https://www.merriam-webster.com/dictionary/fray#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/fray#word-history",
+        "https://www.oed.com/dictionary/fray_n1?tab=factsheet#3656480",
+        "https://www.anglo-norman.net/entry/affrai"
+      ]
+    }
   },
   {
-    "name": "to fray",
-    "etymology": [
-      {
-        "name": "fricare",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to fray",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ying"
       },
-      {
-        "name": "fraiier, froiier",
-        "origin": "Old French"
-      },
-      {
-        "name": "fraien",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to fray",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta fraie -s -d -ying",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "fricare",
+        "fraiier, froiier",
+        "fraien",
+        "to fray",
+        "ta fraie -s -d -ying"
+      ]
+    },
+    "standard": {
+      "name": "to fray",
+      "etymology": [
+        {
+          "name": "fricare",
+          "origin": "Latin"
+        },
+        {
+          "name": "fraiier, froiier",
+          "origin": "Old French"
+        },
+        {
+          "name": "fraien",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to fray",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta fraie -s -d -ying",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/fray#etymonline_v_11887",
+        "https://www.merriam-webster.com/dictionary/fray#dictionary-entry-2",
+        "https://www.oed.com/dictionary/fray_v2?tab=factsheet#3657403",
+        "https://latin-dictionary.net/definition/21017/frico-fricare-fricui-frictus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ying"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/fray#etymonline_v_11887",
-      "https://www.merriam-webster.com/dictionary/fray#dictionary-entry-2",
-      "https://www.oed.com/dictionary/fray_v2?tab=factsheet#3657403",
-      "https://latin-dictionary.net/definition/21017/frico-fricare-fricui-frictus"
-    ]
+    }
   },
   {
-    "name": "fray  -s (m n)",
-    "etymology": [
-      {
-        "name": "fray  -s (m n)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/fray#dictionary-entry-3",
-      "https://www.oed.com/dictionary/fray_n2?tab=factsheet#3656947"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "fray  -s (m n)",
+      "etymology": [
+        {
+          "name": "fray  -s (m n)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/fray#dictionary-entry-3",
+        "https://www.oed.com/dictionary/fray_n2?tab=factsheet#3656947"
+      ]
+    }
   }
 ]

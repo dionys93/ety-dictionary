@@ -1,64 +1,93 @@
 [
   {
-    "name": "to evaluate",
-    "etymology": [
-      {
-        "name": "valere",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to evaluate",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "évaluation, évaluer",
-        "origin": "French"
-      },
-      {
-        "name": "to evaluate",
-        "origin": "Modern English"
-      },
-      {
-        "name": "to evalluete -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "valere",
+        "évaluation, évaluer",
+        "to evaluate",
+        "to evalluete -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to evaluate",
+      "etymology": [
+        {
+          "name": "valere",
+          "origin": "Latin"
+        },
+        {
+          "name": "évaluation, évaluer",
+          "origin": "French"
+        },
+        {
+          "name": "to evaluate",
+          "origin": "Modern English"
+        },
+        {
+          "name": "to evalluete -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/evaluate#etymonline_v_29760",
+        "https://www.etymonline.com/word/evaluation#etymonline_v_11697",
+        "https://www.merriam-webster.com/dictionary/evaluate",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/%C3%A9valuer/31720",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/%C3%A9valuation/31719",
+        "https://latin-dictionary.net/definition/38320/valeo-valere-valui-valitus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/evaluate#etymonline_v_29760",
-      "https://www.etymonline.com/word/evaluation#etymonline_v_11697",
-      "https://www.merriam-webster.com/dictionary/evaluate",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/%C3%A9valuer/31720",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/%C3%A9valuation/31719",
-      "https://latin-dictionary.net/definition/38320/valeo-valere-valui-valitus"
-    ]
+    }
   },
   {
-    "name": "evaluation",
-    "etymology": [
-      {
-        "name": "valere",
-        "origin": "Latin"
-      },
-      {
-        "name": "évaluation",
-        "origin": "French"
-      },
-      {
-        "name": "evaluation",
-        "origin": "Modern English"
-      },
-      {
-        "name": "evalluâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/evaluation#etymonline_v_11697",
-      "https://www.merriam-webster.com/dictionary/evaluation",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/%C3%A9valuation/31719",
-      "https://latin-dictionary.net/definition/38320/valeo-valere-valui-valitus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "evaluation",
+      "etymology": [
+        {
+          "name": "valere",
+          "origin": "Latin"
+        },
+        {
+          "name": "évaluation",
+          "origin": "French"
+        },
+        {
+          "name": "evaluation",
+          "origin": "Modern English"
+        },
+        {
+          "name": "evalluâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/evaluation#etymonline_v_11697",
+        "https://www.merriam-webster.com/dictionary/evaluation",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/%C3%A9valuation/31719",
+        "https://latin-dictionary.net/definition/38320/valeo-valere-valui-valitus"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

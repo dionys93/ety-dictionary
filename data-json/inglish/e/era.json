@@ -1,28 +1,36 @@
 [
   {
-    "name": "era",
-    "etymology": [
-      {
-        "name": "aera",
-        "origin": "Latin"
-      },
-      {
-        "name": "era",
-        "origin": "Modern English"
-      },
-      {
-        "name": "èra -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/era",
-      "https://www.oed.com/dictionary/era_n?tab=factsheet#5387655",
-      "https://latin-dictionary.net/definition/2003/aera-aerae",
-      "https://latin-dictionary.net/definition/2055/aes-aeris"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "era",
+      "etymology": [
+        {
+          "name": "aera",
+          "origin": "Latin"
+        },
+        {
+          "name": "era",
+          "origin": "Modern English"
+        },
+        {
+          "name": "èra -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/era",
+        "https://www.oed.com/dictionary/era_n?tab=factsheet#5387655",
+        "https://latin-dictionary.net/definition/2003/aera-aerae",
+        "https://latin-dictionary.net/definition/2055/aes-aeris"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

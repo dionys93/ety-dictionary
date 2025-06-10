@@ -1,37 +1,45 @@
 [
   {
-    "name": "capuchin, capuche",
-    "etymology": [
-      {
-        "name": "cappa",
-        "origin": "Latin"
-      },
-      {
-        "name": "capuccio, capuccino",
-        "origin": "Italian"
-      },
-      {
-        "name": "capuchin, capuche",
-        "origin": "French"
-      },
-      {
-        "name": "capuçe -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/Capuchin#etymonline_v_27694",
-      "https://www.merriam-webster.com/dictionary/capuche",
-      "https://www.oed.com/dictionary/capuche_n?tab=factsheet#10160320",
-      "https://www.etymonline.com/word/cap#etymonline_v_694",
-      "https://www.collinsdictionary.com/us/dictionary/french-english/capucin",
-      "https://www.collinsdictionary.com/us/dictionary/french-english/capuche",
-      "https://www.collinsdictionary.com/us/dictionary/italian-english/cappuccio",
-      "https://latin-dictionary.net/definition/8037/cappa-cappae",
-      "https://www.etymonline.com/word/cap#etymonline_v_694"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "capuchin, capuche",
+      "etymology": [
+        {
+          "name": "cappa",
+          "origin": "Latin"
+        },
+        {
+          "name": "capuccio, capuccino",
+          "origin": "Italian"
+        },
+        {
+          "name": "capuchin, capuche",
+          "origin": "French"
+        },
+        {
+          "name": "capuçe -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/Capuchin#etymonline_v_27694",
+        "https://www.merriam-webster.com/dictionary/capuche",
+        "https://www.oed.com/dictionary/capuche_n?tab=factsheet#10160320",
+        "https://www.etymonline.com/word/cap#etymonline_v_694",
+        "https://www.collinsdictionary.com/us/dictionary/french-english/capucin",
+        "https://www.collinsdictionary.com/us/dictionary/french-english/capuche",
+        "https://www.collinsdictionary.com/us/dictionary/italian-english/cappuccio",
+        "https://latin-dictionary.net/definition/8037/cappa-cappae",
+        "https://www.etymonline.com/word/cap#etymonline_v_694"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

@@ -1,67 +1,86 @@
 [
   {
-    "name": "rein",
-    "etymology": [
-      {
-        "name": "retinere",
-        "origin": "Latin"
-      },
-      {
-        "name": "retina",
-        "origin": "Vulgar Latin"
-      },
-      {
-        "name": "rene, resne",
-        "origin": "Old French"
-      },
-      {
-        "name": "reine",
-        "origin": "Middle English"
-      },
-      {
-        "name": "rein",
-        "origin": "Modern English"
-      },
-      {
-        "name": "réne, réns",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/rein#etymonline_v_10350",
-      "https://www.larousse.fr/dictionnaires/francais/r%C3%AAne/68152",
-      "https://www.merriam-webster.com/dictionary/rein",
-      "https://www.oed.com/dictionary/rein_n1?tab=factsheet#26255713",
-      "https://anglo-norman.net/entry/resne_2",
-      "https://latin-dictionary.net/definition/33519/retineo-retinere-retinui-retentus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "rein  -s (m n)",
+      "etymology": [
+        {
+          "name": "retinere",
+          "origin": "Latin"
+        },
+        {
+          "name": "retina",
+          "origin": "Vulgar Latin"
+        },
+        {
+          "name": "rene, resne",
+          "origin": "Old French"
+        },
+        {
+          "name": "reine",
+          "origin": "Middle English"
+        },
+        {
+          "name": "rein  -s (m n)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/rein#etymonline_v_10350",
+        "https://www.larousse.fr/dictionnaires/francais/r%C3%AAne/68152",
+        "https://www.merriam-webster.com/dictionary/rein",
+        "https://www.oed.com/dictionary/rein_n1?tab=factsheet#26255713",
+        "https://anglo-norman.net/entry/resne_2",
+        "https://latin-dictionary.net/definition/33519/retineo-retinere-retinui-retentus"
+      ]
+    }
   },
   {
-    "name": "to rein",
-    "etymology": [
-      {
-        "name": "reinen",
-        "origin": "Middle English"
+    "verbDetails": {
+      "infinitive": "to rein",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to rein",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta réne -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "reinen",
+        "to rein",
+        "ta reine -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to rein",
+      "etymology": [
+        {
+          "name": "reinen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to rein",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta reine -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/rein#etymonline_v_47933",
+        "https://www.merriam-webster.com/dictionary/rein",
+        "https://www.oed.com/dictionary/rein_v?tab=factsheet#26256677"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/rein#etymonline_v_47933",
-      "https://www.merriam-webster.com/dictionary/rein",
-      "https://www.oed.com/dictionary/rein_v?tab=factsheet#26256677"
-    ]
+    }
   }
 ]

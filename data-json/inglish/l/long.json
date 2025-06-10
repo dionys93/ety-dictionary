@@ -1,187 +1,282 @@
 [
   {
-    "name": "long",
-    "etymology": [
-      {
-        "name": "lang",
-        "origin": "Old English"
-      },
-      {
-        "name": "long",
-        "origin": "Middle English"
-      },
-      {
-        "name": "longue -r -st",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "adverb"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "long",
+      "etymology": [
+        {
+          "name": "lang",
+          "origin": "Old English"
+        },
+        {
+          "name": "long",
+          "origin": "Middle English"
+        },
+        {
+          "name": "longue -r -st",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "adverb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/long#etymonline_v_12412",
+        "https://www.merriam-webster.com/dictionary/long#dictionary-entry-1",
+        "https://www.oed.com/dictionary/long_adj1?tab=pronunciation#38783409",
+        "https://www.oed.com/dictionary/long_adv1?tab=factsheet#38795883",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/long/47659",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26018",
+        "https://bosworthtoller.com/21145"
+      ],
+      "degrees": {
+        "positive": "longue",
+        "comparative": "r",
+        "superlative": "st"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/long#etymonline_v_12412",
-      "https://www.merriam-webster.com/dictionary/long#dictionary-entry-1",
-      "https://www.oed.com/dictionary/long_adj1?tab=pronunciation#38783409",
-      "https://www.oed.com/dictionary/long_adv1?tab=factsheet#38795883",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/long/47659",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26018",
-      "https://bosworthtoller.com/21145"
-    ]
+    }
   },
   {
-    "name": "to long",
-    "etymology": [
-      {
-        "name": "langian",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to long",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "longen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to long",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta longue -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "langian",
+        "longen",
+        "to long",
+        "ta longue -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to long",
+      "etymology": [
+        {
+          "name": "langian",
+          "origin": "Old English"
+        },
+        {
+          "name": "longen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to long",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta longue -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/long#etymonline_v_12413",
+        "https://www.etymonline.com/word/long#etymonline_v_12412",
+        "https://www.oed.com/dictionary/long_v1?tab=factsheet#38795029",
+        "https://www.oed.com/dictionary/long_v3?tab=factsheet#38795535",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/long/47659",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26030",
+        "https://bosworthtoller.com/21154"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/long#etymonline_v_12413",
-      "https://www.etymonline.com/word/long#etymonline_v_12412",
-      "https://www.oed.com/dictionary/long_v1?tab=factsheet#38795029",
-      "https://www.oed.com/dictionary/long_v3?tab=factsheet#38795535",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/long/47659",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26030",
-      "https://bosworthtoller.com/21154"
-    ]
+    }
   },
   {
-    "name": "along",
-    "etymology": [
-      {
-        "name": "endlang",
-        "origin": "Old Norse"
-      },
-      {
-        "name": "andlang",
-        "origin": "Old English"
-      },
-      {
-        "name": "along",
-        "origin": "Middle English"
-      },
-      {
-        "name": "alòng",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "preposition",
-          "adverb"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/along#etymonline_v_10911",
-      "https://www.etymonline.com/word/long#etymonline_v_12412",
-      "https://www.oed.com/dictionary/along_adj2?tab=factsheet#6379000",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED1244",
-      "https://bosworthtoller.com/1718"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "preposition"
+    },
+    "standard": {
+      "name": "along",
+      "etymology": [
+        {
+          "name": "endlang",
+          "origin": "Old Norse"
+        },
+        {
+          "name": "andlang",
+          "origin": "Old English"
+        },
+        {
+          "name": "along",
+          "origin": "Middle English"
+        },
+        {
+          "name": "alòng",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "preposition",
+            "adverb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/along#etymonline_v_10911",
+        "https://www.etymonline.com/word/long#etymonline_v_12412",
+        "https://www.oed.com/dictionary/along_adj2?tab=factsheet#6379000",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED1244",
+        "https://bosworthtoller.com/1718"
+      ]
+    }
   },
   {
-    "name": "to belong",
-    "etymology": [
-      {
-        "name": "to belong",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to belong",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta belongue -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to belong",
+        "ta belongue -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to belong",
+      "etymology": [
+        {
+          "name": "to belong",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta belongue -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/belong",
+        "https://www.oed.com/dictionary/belong_v?tab=factsheet#23769338"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/belong",
-      "https://www.oed.com/dictionary/belong_v?tab=factsheet#23769338"
-    ]
+    }
   },
   {
-    "name": "length",
-    "etymology": [
-      {
-        "name": "lengþ",
-        "origin": "Old English"
-      },
-      {
-        "name": "length",
-        "origin": "Middle English"
-      },
-      {
-        "name": "léngþ -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/length#etymonline_v_6682",
-      "https://www.merriam-webster.com/dictionary/length#dictionary-entry-1",
-      "https://www.oed.com/dictionary/length_n?tab=factsheet#39302793",
-      "https://bosworthtoller.com/21389"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "length",
+      "etymology": [
+        {
+          "name": "lengþ",
+          "origin": "Old English"
+        },
+        {
+          "name": "length",
+          "origin": "Middle English"
+        },
+        {
+          "name": "léngþ -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/length#etymonline_v_6682",
+        "https://www.merriam-webster.com/dictionary/length#dictionary-entry-1",
+        "https://www.oed.com/dictionary/length_n?tab=factsheet#39302793",
+        "https://bosworthtoller.com/21389"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "lengthy",
-    "etymology": [
-      {
-        "name": "lengthy",
-        "origin": "Modern English"
-      },
-      {
-        "name": "léngþy -ier -iest",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "lengthy",
+      "etymology": [
+        {
+          "name": "lengthy",
+          "origin": "Modern English"
+        },
+        {
+          "name": "léngþy -ier -iest",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/lengthy#etymonline_v_30719",
+        "https://www.etymonline.com/word/length#etymonline_v_6682",
+        "https://www.etymonline.com/word/-y#etymonline_v_25631",
+        "https://www.merriam-webster.com/dictionary/lengthy",
+        "https://www.oed.com/dictionary/lengthy_adj?tab=factsheet#39306886"
+      ],
+      "degrees": {
+        "positive": "y",
+        "comparative": "ier",
+        "superlative": "iest"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/lengthy#etymonline_v_30719",
-      "https://www.etymonline.com/word/length#etymonline_v_6682",
-      "https://www.etymonline.com/word/-y#etymonline_v_25631",
-      "https://www.merriam-webster.com/dictionary/lengthy",
-      "https://www.oed.com/dictionary/lengthy_adj?tab=factsheet#39306886"
-    ]
+    }
   },
   {
-    "name": "lengthen",
-    "etymology": [
-      {
-        "name": "lengthen",
-        "origin": "Middle English"
+    "verbDetails": {
+      "infinitive": "lengthen",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta léngþen -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "lengthen",
+        "ta léngþen -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "lengthen",
+      "etymology": [
+        {
+          "name": "lengthen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "ta léngþen -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/lengthen#etymonline_v_30748",
+        "https://www.merriam-webster.com/dictionary/lengthen",
+        "https://www.oed.com/dictionary/lengthen_v?tab=factsheet#39305635"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/lengthen#etymonline_v_30748",
-      "https://www.merriam-webster.com/dictionary/lengthen",
-      "https://www.oed.com/dictionary/lengthen_v?tab=factsheet#39305635"
-    ]
+    }
   }
 ]

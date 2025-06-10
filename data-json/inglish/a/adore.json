@@ -1,86 +1,125 @@
 [
   {
-    "name": "to adore",
-    "etymology": [
-      {
-        "name": "adorare",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to adore",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "aorer, aurer",
-        "origin": "Old French"
-      },
-      {
-        "name": "to adore",
-        "origin": "Modern English"
-      },
-      {
-        "name": "to adôre -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "adorare",
+        "aorer, aurer",
+        "to adore",
+        "to adôre -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to adore",
+      "etymology": [
+        {
+          "name": "adorare",
+          "origin": "Latin"
+        },
+        {
+          "name": "aorer, aurer",
+          "origin": "Old French"
+        },
+        {
+          "name": "to adore",
+          "origin": "Modern English"
+        },
+        {
+          "name": "to adôre -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/adore#etymonline_v_5142",
+        "https://www.merriam-webster.com/dictionary/adore",
+        "https://anglo-norman.net/entry/aurer",
+        "https://latin-dictionary.net/definition/1302/adoro-adorare-adoravi-adoratus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/adore#etymonline_v_5142",
-      "https://www.merriam-webster.com/dictionary/adore",
-      "https://anglo-norman.net/entry/aurer",
-      "https://latin-dictionary.net/definition/1302/adoro-adorare-adoravi-adoratus"
-    ]
+    }
   },
   {
-    "name": "adoration",
-    "etymology": [
-      {
-        "name": "adoratio",
-        "origin": "Latin"
-      },
-      {
-        "name": "adoration",
-        "origin": "French"
-      },
-      {
-        "name": "adorâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/adoration#etymonline_v_26512",
-      "https://www.merriam-webster.com/dictionary/adoration",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/adoration/1168",
-      "https://latin-dictionary.net/definition/1287/adoratio-adorationis"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "adoration",
+      "etymology": [
+        {
+          "name": "adoratio",
+          "origin": "Latin"
+        },
+        {
+          "name": "adoration",
+          "origin": "French"
+        },
+        {
+          "name": "adorâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/adoration#etymonline_v_26512",
+        "https://www.merriam-webster.com/dictionary/adoration",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/adoration/1168",
+        "https://latin-dictionary.net/definition/1287/adoratio-adorationis"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "adorable",
-    "etymology": [
-      {
-        "name": "adorare, adorabilis",
-        "origin": "Latin"
-      },
-      {
-        "name": "adorable",
-        "origin": "French"
-      },
-      {
-        "name": "adôrable -y",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "adorable",
+      "etymology": [
+        {
+          "name": "adorare, adorabilis",
+          "origin": "Latin"
+        },
+        {
+          "name": "adorable",
+          "origin": "French"
+        },
+        {
+          "name": "adôrable -y",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/adorable#etymonline_v_26034",
+        "https://www.merriam-webster.com/dictionary/adorable",
+        "https://www.merriam-webster.com/dictionary/adorbs",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/adorable/1163",
+        "https://latin-dictionary.net/definition/1285/adorabilis-adorabilis-adorabile",
+        "https://latin-dictionary.net/definition/1302/adoro-adorare-adoravi-adoratus"
+      ],
+      "degrees": {
+        "positive": "rable",
+        "comparative": "y"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/adorable#etymonline_v_26034",
-      "https://www.merriam-webster.com/dictionary/adorable",
-      "https://www.merriam-webster.com/dictionary/adorbs",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/adorable/1163",
-      "https://latin-dictionary.net/definition/1285/adorabilis-adorabilis-adorabile",
-      "https://latin-dictionary.net/definition/1302/adoro-adorare-adoravi-adoratus"
-    ]
+    }
   }
 ]

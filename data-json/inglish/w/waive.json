@@ -1,55 +1,83 @@
 [
   {
-    "name": "to waive",
-    "etymology": [
-      {
-        "name": "gaiver, waiver, weiver",
-        "origin": "Old French"
+    "verbDetails": {
+      "infinitive": "to waive",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "weiven",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to waive",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta ɯaive -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "gaiver, waiver, weiver",
+        "weiven",
+        "to waive",
+        "ta ɯaive -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to waive",
+      "etymology": [
+        {
+          "name": "gaiver, waiver, weiver",
+          "origin": "Old French"
+        },
+        {
+          "name": "weiven",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to waive",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta ɯaive -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/waive#etymonline_v_4795",
+        "https://www.merriam-webster.com/dictionary/waive",
+        "https://www.merriam-webster.com/dictionary/waive#word-history",
+        "https://www.oed.com/dictionary/waive_v1?tab=factsheet#15228024",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52061",
+        "https://anglo-norman.net/entry/gaiver"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/waive#etymonline_v_4795",
-      "https://www.merriam-webster.com/dictionary/waive",
-      "https://www.merriam-webster.com/dictionary/waive#word-history",
-      "https://www.oed.com/dictionary/waive_v1?tab=factsheet#15228024",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52061",
-      "https://anglo-norman.net/entry/gaiver"
-    ]
+    }
   },
   {
-    "name": "waiver",
-    "etymology": [
-      {
-        "name": "waiver",
-        "origin": "Old French"
-      },
-      {
-        "name": "ɯaivor -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/waiver#etymonline_v_37362",
-      "https://www.oed.com/dictionary/waiver_n?tab=factsheet#15230581",
-      "https://anglo-norman.net/entry/gaiver"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "waiver",
+      "etymology": [
+        {
+          "name": "waiver",
+          "origin": "Old French"
+        },
+        {
+          "name": "ɯaivor -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/waiver#etymonline_v_37362",
+        "https://www.oed.com/dictionary/waiver_n?tab=factsheet#15230581",
+        "https://anglo-norman.net/entry/gaiver"
+      ],
+      "number": "plural"
+    }
   }
 ]

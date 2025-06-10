@@ -1,42 +1,50 @@
 [
   {
-    "name": "pier",
-    "etymology": [
-      {
-        "name": "petra",
-        "origin": "Latin"
-      },
-      {
-        "name": "petricus",
-        "origin": "Vulgar Latin"
-      },
-      {
-        "name": "pera",
-        "origin": "Medieval Latin"
-      },
-      {
-        "name": "pire, pier",
-        "origin": "Old French"
-      },
-      {
-        "name": "pier",
-        "origin": "Middle English"
-      },
-      {
-        "name": "pire, pírs",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/pier#etymonline_v_14961",
-      "https://www.merriam-webster.com/dictionary/pier#dictionary-entry-1",
-      "https://www.oed.com/dictionary/pier_n1?tab=factsheet#30618396",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED33303",
-      "https://www.anglo-norman.net/entry/pere_2",
-      "https://latin-dictionary.net/definition/30329/petra-petrae"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "pier",
+      "etymology": [
+        {
+          "name": "petra",
+          "origin": "Latin"
+        },
+        {
+          "name": "petricus",
+          "origin": "Vulgar Latin"
+        },
+        {
+          "name": "pera",
+          "origin": "Medieval Latin"
+        },
+        {
+          "name": "pire, pier",
+          "origin": "Old French"
+        },
+        {
+          "name": "pier",
+          "origin": "Middle English"
+        },
+        {
+          "name": "pire, pírs",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/pier#etymonline_v_14961",
+        "https://www.merriam-webster.com/dictionary/pier#dictionary-entry-1",
+        "https://www.oed.com/dictionary/pier_n1?tab=factsheet#30618396",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED33303",
+        "https://www.anglo-norman.net/entry/pere_2",
+        "https://latin-dictionary.net/definition/30329/petra-petrae"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

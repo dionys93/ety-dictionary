@@ -1,55 +1,82 @@
 [
   {
-    "name": "party",
-    "etymology": [
-      {
-        "name": "pars, partire/partiri",
-        "origin": "Latin"
-      },
-      {
-        "name": "partir, partie",
-        "origin": "Old French"
-      },
-      {
-        "name": "party",
-        "origin": "Modern English"
-      },
-      {
-        "name": "partie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/party#etymonline_v_7268",
-      "https://www.oed.com/dictionary/party_n?tab=pronunciation#31607635",
-      "https://anglo-norman.net/entry/partie",
-      "https://anglo-norman.net/entry/partir",
-      "https://latin-dictionary.net/definition/29396/partio-partire-partivi-partitus",
-      "https://latin-dictionary.net/definition/29373/pars-partis"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "party",
+      "etymology": [
+        {
+          "name": "pars, partire/partiri",
+          "origin": "Latin"
+        },
+        {
+          "name": "partir, partie",
+          "origin": "Old French"
+        },
+        {
+          "name": "party",
+          "origin": "Modern English"
+        },
+        {
+          "name": "partie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/party#etymonline_v_7268",
+        "https://www.oed.com/dictionary/party_n?tab=pronunciation#31607635",
+        "https://anglo-norman.net/entry/partie",
+        "https://anglo-norman.net/entry/partir",
+        "https://latin-dictionary.net/definition/29396/partio-partire-partivi-partitus",
+        "https://latin-dictionary.net/definition/29373/pars-partis"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to party",
-    "etymology": [
-      {
-        "name": "to party",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to party",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ying"
       },
-      {
-        "name": "ta partie -s -d -ying",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to party",
+        "ta partie -s -d -ying"
+      ]
+    },
+    "standard": {
+      "name": "to party",
+      "etymology": [
+        {
+          "name": "to party",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta partie -s -d -ying",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/party#etymonline_v_44958",
+        "https://www.etymonline.com/word/party#etymonline_v_7268",
+        "https://www.oed.com/dictionary/party_v?tab=pronunciation#31617129"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ying"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/party#etymonline_v_44958",
-      "https://www.etymonline.com/word/party#etymonline_v_7268",
-      "https://www.oed.com/dictionary/party_v?tab=pronunciation#31617129"
-    ]
+    }
   }
 ]

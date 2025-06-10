@@ -1,59 +1,86 @@
 [
   {
-    "name": "matter",
-    "etymology": [
-      {
-        "name": "mater, materia",
-        "origin": "Latin"
-      },
-      {
-        "name": "matere",
-        "origin": "Old French"
-      },
-      {
-        "name": "materie",
-        "origin": "Middle English"
-      },
-      {
-        "name": "matter",
-        "origin": "Modern English"
-      },
-      {
-        "name": "matre -ers",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/matter#etymonline_v_9723",
-      "https://www.merriam-webster.com/dictionary/matter#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED27049",
-      "https://www.anglo-norman.net/entry/matere",
-      "https://latin-dictionary.net/definition/26519/materia-materiae",
-      "https://latin-dictionary.net/definition/26516/mater-matris"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "matter",
+      "etymology": [
+        {
+          "name": "mater, materia",
+          "origin": "Latin"
+        },
+        {
+          "name": "matere",
+          "origin": "Old French"
+        },
+        {
+          "name": "materie",
+          "origin": "Middle English"
+        },
+        {
+          "name": "matter",
+          "origin": "Modern English"
+        },
+        {
+          "name": "matre -ers",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/matter#etymonline_v_9723",
+        "https://www.merriam-webster.com/dictionary/matter#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED27049",
+        "https://www.anglo-norman.net/entry/matere",
+        "https://latin-dictionary.net/definition/26519/materia-materiae",
+        "https://latin-dictionary.net/definition/26516/mater-matris"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to matter",
-    "etymology": [
-      {
-        "name": "to matter",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to matter",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ering"
       },
-      {
-        "name": "ta matre -s -d -ering",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to matter",
+        "ta matre -s -d -ering"
+      ]
+    },
+    "standard": {
+      "name": "to matter",
+      "etymology": [
+        {
+          "name": "to matter",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta matre -s -d -ering",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/matter#etymonline_v_43759",
+        "https://www.etymonline.com/word/matter#etymonline_v_9723",
+        "https://www.merriam-webster.com/dictionary/matter#dictionary-entry-2"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ering"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/matter#etymonline_v_43759",
-      "https://www.etymonline.com/word/matter#etymonline_v_9723",
-      "https://www.merriam-webster.com/dictionary/matter#dictionary-entry-2"
-    ]
+    }
   }
 ]

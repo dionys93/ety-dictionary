@@ -1,91 +1,125 @@
 [
   {
-    "name": "ware",
-    "etymology": [
-      {
-        "name": "waru",
-        "origin": "Old English"
-      },
-      {
-        "name": "ware",
-        "origin": "Middle English"
-      },
-      {
-        "name": "ɯâre, ɯârs",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/ware#etymonline_v_4833",
-      "https://www.oed.com/dictionary/ware_n3?tab=factsheet#15356963",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51749",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51748",
-      "https://bosworthtoller.com/34710",
-      "https://bosworthtoller.com/34709",
-      "https://bosworthtoller.com/60246"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "ware",
+      "etymology": [
+        {
+          "name": "waru",
+          "origin": "Old English"
+        },
+        {
+          "name": "ware",
+          "origin": "Middle English"
+        },
+        {
+          "name": "ɯâre, ɯârs",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/ware#etymonline_v_4833",
+        "https://www.oed.com/dictionary/ware_n3?tab=factsheet#15356963",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51749",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51748",
+        "https://bosworthtoller.com/34710",
+        "https://bosworthtoller.com/34709",
+        "https://bosworthtoller.com/60246"
+      ],
+      "number": "plural"
+    }
   },
   {
-    "name": "wary",
-    "etymology": [
-      {
-        "name": "wær",
-        "origin": "Old English"
-      },
-      {
-        "name": "ware",
-        "origin": "Middle English"
-      },
-      {
-        "name": "wary",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ɯâry",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/wary#etymonline_v_4847",
-      "https://www.oed.com/dictionary/wary_adj?tab=factsheet#14969417",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51755",
-      "https://bosworthtoller.com/34410"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "wary",
+      "etymology": [
+        {
+          "name": "wær",
+          "origin": "Old English"
+        },
+        {
+          "name": "ware",
+          "origin": "Middle English"
+        },
+        {
+          "name": "wary",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ɯâry",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/wary#etymonline_v_4847",
+        "https://www.oed.com/dictionary/wary_adj?tab=factsheet#14969417",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51755",
+        "https://bosworthtoller.com/34410"
+      ]
+    }
   },
   {
-    "name": "to beware",
-    "etymology": [
-      {
-        "name": "warian",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to beware",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "waren, be ware",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to beware",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta biɯâre -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "warian",
+        "waren, be ware",
+        "to beware",
+        "ta biɯâre -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to beware",
+      "etymology": [
+        {
+          "name": "warian",
+          "origin": "Old English"
+        },
+        {
+          "name": "waren, be ware",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to beware",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta biɯâre -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/ware#etymonline_v_4834",
+        "https://www.etymonline.com/word/beware#etymonline_v_11099",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51761",
+        "https://bosworthtoller.com/34699"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/ware#etymonline_v_4834",
-      "https://www.etymonline.com/word/beware#etymonline_v_11099",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51761",
-      "https://bosworthtoller.com/34699"
-    ]
+    }
   }
 ]

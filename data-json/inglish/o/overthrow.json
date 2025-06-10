@@ -1,52 +1,76 @@
 [
   {
-    "name": "to overthrow",
-    "etymology": [
-      {
-        "name": "overthrouen",
-        "origin": "Middle English"
+    "verbDetails": {
+      "infinitive": "to overthrow",
+      "conjugations": {
+        "thirdPerson": "s"
       },
-      {
-        "name": "to overthrow",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta ovreþroɯe -s ovreþrou ovreþroɯn -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "overthrouen",
+        "to overthrow",
+        "ta ovreþroɯe -s ovreþrou ovreþroɯn -ing"
+      ]
+    },
+    "standard": {
+      "name": "to overthrow",
+      "etymology": [
+        {
+          "name": "overthrouen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to overthrow",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta ovreþroɯe -s ovreþrou ovreþroɯn -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/overthrow#etymonline_v_10099",
+        "https://www.merriam-webster.com/dictionary/overthrow",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32021"
+      ],
+      "conjugations": {
+        "thirdPerson": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/overthrow#etymonline_v_10099",
-      "https://www.merriam-webster.com/dictionary/overthrow",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32021"
-    ]
+    }
   },
   {
-    "name": "overthrow",
-    "etymology": [
-      {
-        "name": "overthrou",
-        "origin": "Middle English"
-      },
-      {
-        "name": "overthrow",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ovreþroɯ",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/overthrow#etymonline_v_45886",
-      "https://www.merriam-webster.com/dictionary/overthrow",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32020"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "overthrow",
+      "etymology": [
+        {
+          "name": "overthrou",
+          "origin": "Middle English"
+        },
+        {
+          "name": "overthrow",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ovreþroɯ",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/overthrow#etymonline_v_45886",
+        "https://www.merriam-webster.com/dictionary/overthrow",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32020"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   }
 ]

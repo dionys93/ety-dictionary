@@ -1,117 +1,162 @@
 [
   {
-    "name": "to conspire",
-    "etymology": [
-      {
-        "name": "com + spirare, conspirare",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to conspire",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d"
       },
-      {
-        "name": "conspirer",
-        "origin": "Old French"
-      },
-      {
-        "name": "conspiren",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to conspire",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta conspîre -s -d conspîaring",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "com + spirare, conspirare",
+        "conspirer",
+        "conspiren",
+        "to conspire",
+        "ta conspîre -s -d conspîaring"
+      ]
+    },
+    "standard": {
+      "name": "to conspire",
+      "etymology": [
+        {
+          "name": "com + spirare, conspirare",
+          "origin": "Latin"
+        },
+        {
+          "name": "conspirer",
+          "origin": "Old French"
+        },
+        {
+          "name": "conspiren",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to conspire",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta conspîre -s -d conspîaring",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/conspire#etymonline_v_18248",
+        "https://www.merriam-webster.com/dictionary/conspire",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9414",
+        "https://anglo-norman.net/entry/conspirer",
+        "https://latin-dictionary.net/definition/13479/conspiro-conspirare-conspiravi-conspiratus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/conspire#etymonline_v_18248",
-      "https://www.merriam-webster.com/dictionary/conspire",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9414",
-      "https://anglo-norman.net/entry/conspirer",
-      "https://latin-dictionary.net/definition/13479/conspiro-conspirare-conspiravi-conspiratus"
-    ]
+    }
   },
   {
-    "name": "conspiracy",
-    "etymology": [
-      {
-        "name": "conspirare, conspiratio",
-        "origin": "Latin"
-      },
-      {
-        "name": "conspiracie",
-        "origin": "Old French"
-      },
-      {
-        "name": "conspiracy",
-        "origin": "Modern English"
-      },
-      {
-        "name": "conspíracie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/conspiracy#etymonline_v_28701",
-      "https://www.merriam-webster.com/dictionary/conspiracy",
-      "https://anglo-norman.net/entry/conspiracie",
-      "https://latin-dictionary.net/definition/13475/conspiratio-conspirationis",
-      "https://latin-dictionary.net/definition/13479/conspiro-conspirare-conspiravi-conspiratus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "conspiracy",
+      "etymology": [
+        {
+          "name": "conspirare, conspiratio",
+          "origin": "Latin"
+        },
+        {
+          "name": "conspiracie",
+          "origin": "Old French"
+        },
+        {
+          "name": "conspiracy",
+          "origin": "Modern English"
+        },
+        {
+          "name": "conspíracie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/conspiracy#etymonline_v_28701",
+        "https://www.merriam-webster.com/dictionary/conspiracy",
+        "https://anglo-norman.net/entry/conspiracie",
+        "https://latin-dictionary.net/definition/13475/conspiratio-conspirationis",
+        "https://latin-dictionary.net/definition/13479/conspiro-conspirare-conspiravi-conspiratus"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "conspirator",
-    "etymology": [
-      {
-        "name": "conspiratorem",
-        "origin": "Latin"
-      },
-      {
-        "name": "conspirateur",
-        "origin": "Old French"
-      },
-      {
-        "name": "conspirator",
-        "origin": "Modern English"
-      },
-      {
-        "name": "conspírator -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/conspirator#etymonline_v_28702",
-      "https://www.merriam-webster.com/dictionary/conspirator#dictionary-entry-1",
-      "https://anglo-norman.net/entry/conspiratour"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "conspirator",
+      "etymology": [
+        {
+          "name": "conspiratorem",
+          "origin": "Latin"
+        },
+        {
+          "name": "conspirateur",
+          "origin": "Old French"
+        },
+        {
+          "name": "conspirator",
+          "origin": "Modern English"
+        },
+        {
+          "name": "conspírator -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/conspirator#etymonline_v_28702",
+        "https://www.merriam-webster.com/dictionary/conspirator#dictionary-entry-1",
+        "https://anglo-norman.net/entry/conspiratour"
+      ],
+      "number": "plural"
+    }
   },
   {
-    "name": "conspiratorial",
-    "etymology": [
-      {
-        "name": "conspiratorial",
-        "origin": "Modern English"
-      },
-      {
-        "name": "conspíratôrial -ly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "conspiratorial",
+      "etymology": [
+        {
+          "name": "conspiratorial",
+          "origin": "Modern English"
+        },
+        {
+          "name": "conspíratôrial -ly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/conspiratorial#etymonline_v_53523",
+        "https://www.merriam-webster.com/dictionary/conspiratorial"
+      ],
+      "degrees": {
+        "positive": "rial",
+        "comparative": "ly"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/conspiratorial#etymonline_v_53523",
-      "https://www.merriam-webster.com/dictionary/conspiratorial"
-    ]
+    }
   }
 ]

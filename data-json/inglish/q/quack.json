@@ -1,46 +1,73 @@
 [
   {
-    "name": "to quack",
-    "etymology": [
-      {
-        "name": "to quack",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to quack",
+      "conjugations": {
+        "thirdPerson": "cs",
+        "pastTense": "ed",
+        "progressive": "ing"
       },
-      {
-        "name": "ta quaq -cs -ed -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to quack",
+        "ta quaq -cs -ed -ing"
+      ]
+    },
+    "standard": {
+      "name": "to quack",
+      "etymology": [
+        {
+          "name": "to quack",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta quaq -cs -ed -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/quack",
+        "https://www.larousse.fr/dictionnaires/francais/coin-coin/17049",
+        "https://latin-dictionary.net/definition/10603/coaxo-coaxare-coaxavi-coaxatus",
+        "https://www.oed.com/dictionary/quack_v1?tab=factsheet#27309145"
+      ],
+      "conjugations": {
+        "thirdPerson": "cs",
+        "pastTense": "ed",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/quack",
-      "https://www.larousse.fr/dictionnaires/francais/coin-coin/17049",
-      "https://latin-dictionary.net/definition/10603/coaxo-coaxare-coaxavi-coaxatus",
-      "https://www.oed.com/dictionary/quack_v1?tab=factsheet#27309145"
-    ]
+    }
   },
   {
-    "name": "quack",
-    "etymology": [
-      {
-        "name": "quack",
-        "origin": "Modern English"
-      },
-      {
-        "name": "quac -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/quack",
-      "https://www.larousse.fr/dictionnaires/francais/coin-coin/17049",
-      "https://latin-dictionary.net/definition/10603/coaxo-coaxare-coaxavi-coaxatus",
-      "https://www.oed.com/dictionary/quack_int?tab=factsheet#27308565"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "quack",
+      "etymology": [
+        {
+          "name": "quack",
+          "origin": "Modern English"
+        },
+        {
+          "name": "quac -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/quack",
+        "https://www.larousse.fr/dictionnaires/francais/coin-coin/17049",
+        "https://latin-dictionary.net/definition/10603/coaxo-coaxare-coaxavi-coaxatus",
+        "https://www.oed.com/dictionary/quack_int?tab=factsheet#27308565"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

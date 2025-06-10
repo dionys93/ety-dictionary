@@ -1,61 +1,90 @@
 [
   {
-    "name": "to scream",
-    "etymology": [
-      {
-        "name": "skræma",
-        "origin": "Old Norse"
+    "verbDetails": {
+      "infinitive": "to scream",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "scremen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to scream",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta scrime -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "skræma",
+        "scremen",
+        "to scream",
+        "ta scrime -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to scream",
+      "etymology": [
+        {
+          "name": "skræma",
+          "origin": "Old Norse"
+        },
+        {
+          "name": "scremen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to scream",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta scrime -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/scream#etymonline_v_22979",
+        "https://www.merriam-webster.com/dictionary/scream#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/scream#word-history",
+        "https://www.oed.com/dictionary/scream_v?tab=factsheet#24071870",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39030",
+        "https://old-norse.net/html/s.php#skr%C3%A6ma"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/scream#etymonline_v_22979",
-      "https://www.merriam-webster.com/dictionary/scream#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/scream#word-history",
-      "https://www.oed.com/dictionary/scream_v?tab=factsheet#24071870",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39030",
-      "https://old-norse.net/html/s.php#skr%C3%A6ma"
-    ]
+    }
   },
   {
-    "name": "scream",
-    "etymology": [
-      {
-        "name": "screme",
-        "origin": "Middle English"
-      },
-      {
-        "name": "scream",
-        "origin": "Modern English"
-      },
-      {
-        "name": "scrime, scríms",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/scream#etymonline_v_47473",
-      "https://www.etymonline.com/word/scream#etymonline_v_22979",
-      "https://www.merriam-webster.com/dictionary/scream#dictionary-entry-2",
-      "https://www.oed.com/dictionary/scream_n?tab=pronunciation#24071589",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39029"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "scream",
+      "etymology": [
+        {
+          "name": "screme",
+          "origin": "Middle English"
+        },
+        {
+          "name": "scream",
+          "origin": "Modern English"
+        },
+        {
+          "name": "scrime, scríms",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/scream#etymonline_v_47473",
+        "https://www.etymonline.com/word/scream#etymonline_v_22979",
+        "https://www.merriam-webster.com/dictionary/scream#dictionary-entry-2",
+        "https://www.oed.com/dictionary/scream_n?tab=pronunciation#24071589",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39029"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

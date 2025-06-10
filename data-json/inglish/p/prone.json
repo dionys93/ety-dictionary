@@ -1,20 +1,26 @@
 [
   {
-    "name": "prone  (adj)",
-    "etymology": [
-      {
-        "name": "pronus",
-        "origin": "Latin"
-      },
-      {
-        "name": "prone  (adj)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/prone",
-      "https://www.oed.com/dictionary/prone_adj?tab=factsheet#28197525",
-      "https://latin-dictionary.net/definition/31918/pronus-prona-pronum"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "prone  (adj)",
+      "etymology": [
+        {
+          "name": "pronus",
+          "origin": "Latin"
+        },
+        {
+          "name": "prone  (adj)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/prone",
+        "https://www.oed.com/dictionary/prone_adj?tab=factsheet#28197525",
+        "https://latin-dictionary.net/definition/31918/pronus-prona-pronum"
+      ]
+    }
   }
 ]

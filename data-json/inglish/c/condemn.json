@@ -1,90 +1,126 @@
 [
   {
-    "name": "to condemn",
-    "etymology": [
-      {
-        "name": "com + damnare, condemnare, condempnare",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to condemn",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "condamner, condemner",
-        "origin": "Old French"
-      },
-      {
-        "name": "condempnen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to condemn",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta condème -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "com + damnare, condemnare, condempnare",
+        "condamner, condemner",
+        "condempnen",
+        "to condemn",
+        "ta condème -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to condemn",
+      "etymology": [
+        {
+          "name": "com + damnare, condemnare, condempnare",
+          "origin": "Latin"
+        },
+        {
+          "name": "condamner, condemner",
+          "origin": "Old French"
+        },
+        {
+          "name": "condempnen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to condemn",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta condème -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/condemn",
+        "https://www.oed.com/dictionary/condemn_v?tab=factsheet#8678672",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8857",
+        "https://anglo-norman.net/entry/condempner",
+        "https://latin-dictionary.net/definition/12208/condemno-condemnare-condemnavi-condemnatus",
+        "https://latin-dictionary.net/definition/15599/damno-damnare-damnavi-damnatus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/condemn",
-      "https://www.oed.com/dictionary/condemn_v?tab=factsheet#8678672",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8857",
-      "https://anglo-norman.net/entry/condempner",
-      "https://latin-dictionary.net/definition/12208/condemno-condemnare-condemnavi-condemnatus",
-      "https://latin-dictionary.net/definition/15599/damno-damnare-damnavi-damnatus"
-    ]
+    }
   },
   {
-    "name": "condemnation",
-    "etymology": [
-      {
-        "name": "condemnare, condempnare; condemnatio, condemnationem",
-        "origin": "Latin"
-      },
-      {
-        "name": "condempnacioun",
-        "origin": "Middle English"
-      },
-      {
-        "name": "condemnation",
-        "origin": "Modern English"
-      },
-      {
-        "name": "condemnâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/condemnation",
-      "https://www.oed.com/dictionary/condemnation_n?tab=factsheet#8679530",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8856/track?counter=1&search_id=1091469",
-      "https://latin-dictionary.net/definition/12205/condemnatio-condemnationis",
-      "https://latin-dictionary.net/definition/12208/condemno-condemnare-condemnavi-condemnatus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "condemnation",
+      "etymology": [
+        {
+          "name": "condemnare, condempnare; condemnatio, condemnationem",
+          "origin": "Latin"
+        },
+        {
+          "name": "condempnacioun",
+          "origin": "Middle English"
+        },
+        {
+          "name": "condemnation",
+          "origin": "Modern English"
+        },
+        {
+          "name": "condemnâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/condemnation",
+        "https://www.oed.com/dictionary/condemnation_n?tab=factsheet#8679530",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8856/track?counter=1&search_id=1091469",
+        "https://latin-dictionary.net/definition/12205/condemnatio-condemnationis",
+        "https://latin-dictionary.net/definition/12208/condemno-condemnare-condemnavi-condemnatus"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "condemnatory",
-    "etymology": [
-      {
-        "name": "condemnatory",
-        "origin": "Modern English"
-      },
-      {
-        "name": "condèmnatory",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/condemnatory",
-      "https://www.oed.com/dictionary/condemnatory_adj?tab=factsheet#8679863",
-      "https://latin-dictionary.net/definition/12208/condemno-condemnare-condemnavi-condemnatus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "condemnatory",
+      "etymology": [
+        {
+          "name": "condemnatory",
+          "origin": "Modern English"
+        },
+        {
+          "name": "condèmnatory",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/condemnatory",
+        "https://www.oed.com/dictionary/condemnatory_adj?tab=factsheet#8679863",
+        "https://latin-dictionary.net/definition/12208/condemno-condemnare-condemnavi-condemnatus"
+      ]
+    }
   }
 ]

@@ -1,198 +1,251 @@
 [
   {
-    "name": "to sleep",
-    "etymology": [
-      {
-        "name": "slæpan",
-        "origin": "Old English"
-      },
-      {
-        "name": "slepen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to sleep",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta sliepe -s slept -ing",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/sleep#etymonline_v_23661",
-      "https://www.merriam-webster.com/dictionary/sleep#dictionary-entry-2",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40832",
-      "https://bosworthtoller.com/27933"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "to sleep",
+      "etymology": [
+        {
+          "name": "slæpan",
+          "origin": "Old English"
+        },
+        {
+          "name": "slepen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to sleep",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta sliepe -s slept -ing",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/sleep#etymonline_v_23661",
+        "https://www.merriam-webster.com/dictionary/sleep#dictionary-entry-2",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40832",
+        "https://bosworthtoller.com/27933"
+      ]
+    }
   },
   {
-    "name": "sleep",
-    "etymology": [
-      {
-        "name": "slæp",
-        "origin": "Old English"
-      },
-      {
-        "name": "slep",
-        "origin": "Middle English"
-      },
-      {
-        "name": "sleep",
-        "origin": "Modern English"
-      },
-      {
-        "name": "sliep",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/sleep#etymonline_v_24149",
-      "https://www.merriam-webster.com/dictionary/sleep#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40830",
-      "https://bosworthtoller.com/27930"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "sleep",
+      "etymology": [
+        {
+          "name": "slæp",
+          "origin": "Old English"
+        },
+        {
+          "name": "slep",
+          "origin": "Middle English"
+        },
+        {
+          "name": "sleep",
+          "origin": "Modern English"
+        },
+        {
+          "name": "sliep",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/sleep#etymonline_v_24149",
+        "https://www.merriam-webster.com/dictionary/sleep#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40830",
+        "https://bosworthtoller.com/27930"
+      ],
+      "number": "singular"
+    }
   },
   {
-    "name": "sleeper",
-    "etymology": [
-      {
-        "name": "slæpere",
-        "origin": "Old English"
-      },
-      {
-        "name": "slepere",
-        "origin": "Middle English"
-      },
-      {
-        "name": "sleeper",
-        "origin": "Modern English"
-      },
-      {
-        "name": "sliepeur, sliepor -s",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/sleeper#etymonline_v_24150",
-      "https://www.merriam-webster.com/dictionary/sleeper",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40833",
-      "https://bosworthtoller.com/27935"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "sleeper",
+      "etymology": [
+        {
+          "name": "slæpere",
+          "origin": "Old English"
+        },
+        {
+          "name": "slepere",
+          "origin": "Middle English"
+        },
+        {
+          "name": "sleeper",
+          "origin": "Modern English"
+        },
+        {
+          "name": "sliepeur, sliepor -s",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/sleeper#etymonline_v_24150",
+        "https://www.merriam-webster.com/dictionary/sleeper",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40833",
+        "https://bosworthtoller.com/27935"
+      ]
+    }
   },
   {
-    "name": "sleepover",
-    "etymology": [
-      {
-        "name": "sleepover",
-        "origin": "Modern English"
-      },
-      {
-        "name": "sliepovre -ers",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/sleep-over#etymonline_v_48754",
-      "https://www.merriam-webster.com/dictionary/sleepover"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "sleepover",
+      "etymology": [
+        {
+          "name": "sleepover",
+          "origin": "Modern English"
+        },
+        {
+          "name": "sliepovre -ers",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/sleep-over#etymonline_v_48754",
+        "https://www.merriam-webster.com/dictionary/sleepover"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "sleepy",
-    "etymology": [
-      {
-        "name": "slæpig",
-        "origin": "Old English"
-      },
-      {
-        "name": "slepi",
-        "origin": "Middle English"
-      },
-      {
-        "name": "sleepy",
-        "origin": "Modern English"
-      },
-      {
-        "name": "sliepy -ily",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "sleepy",
+      "etymology": [
+        {
+          "name": "slæpig",
+          "origin": "Old English"
+        },
+        {
+          "name": "slepi",
+          "origin": "Middle English"
+        },
+        {
+          "name": "sleepy",
+          "origin": "Modern English"
+        },
+        {
+          "name": "sliepy -ily",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/sleepy#etymonline_v_37991",
+        "https://www.merriam-webster.com/dictionary/sleepy",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40835",
+        "https://bosworthtoller.com/27936"
+      ],
+      "degrees": {
+        "positive": "sliepy",
+        "comparative": "ily"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/sleepy#etymonline_v_37991",
-      "https://www.merriam-webster.com/dictionary/sleepy",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40835",
-      "https://bosworthtoller.com/27936"
-    ]
+    }
   },
   {
-    "name": "sleepless",
-    "etymology": [
-      {
-        "name": "slæpleas",
-        "origin": "Old English"
-      },
-      {
-        "name": "sleples",
-        "origin": "Middle English"
-      },
-      {
-        "name": "sleepless",
-        "origin": "Modern English"
-      },
-      {
-        "name": "sliepless -ly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "sleepless",
+      "etymology": [
+        {
+          "name": "slæpleas",
+          "origin": "Old English"
+        },
+        {
+          "name": "sleples",
+          "origin": "Middle English"
+        },
+        {
+          "name": "sleepless",
+          "origin": "Modern English"
+        },
+        {
+          "name": "sliepless -ly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/sleepless#etymonline_v_37990",
+        "https://www.merriam-webster.com/dictionary/sleepless",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40839",
+        "https://bosworthtoller.com/27937"
+      ],
+      "degrees": {
+        "positive": "sliepless",
+        "comparative": "ly"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/sleepless#etymonline_v_37990",
-      "https://www.merriam-webster.com/dictionary/sleepless",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40839",
-      "https://bosworthtoller.com/27937"
-    ]
+    }
   },
   {
-    "name": "asleep",
-    "etymology": [
-      {
-        "name": "on slæpe",
-        "origin": "Old English"
-      },
-      {
-        "name": "aslepe, o slæpe",
-        "origin": "Middle English"
-      },
-      {
-        "name": "asleep",
-        "origin": "Modern English"
-      },
-      {
-        "name": "asliep",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "adverb"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/asleep#etymonline_v_17938",
-      "https://www.merriam-webster.com/dictionary/asleep#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/asleep#dictionary-entry-2",
-      "https://www.oed.com/dictionary/asleep_adv?tab=factsheet#37925421",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED2490"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "asleep",
+      "etymology": [
+        {
+          "name": "on slæpe",
+          "origin": "Old English"
+        },
+        {
+          "name": "aslepe, o slæpe",
+          "origin": "Middle English"
+        },
+        {
+          "name": "asleep",
+          "origin": "Modern English"
+        },
+        {
+          "name": "asliep",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "adverb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/asleep#etymonline_v_17938",
+        "https://www.merriam-webster.com/dictionary/asleep#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/asleep#dictionary-entry-2",
+        "https://www.oed.com/dictionary/asleep_adv?tab=factsheet#37925421",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED2490"
+      ]
+    }
   }
 ]

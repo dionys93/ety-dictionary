@@ -1,56 +1,85 @@
 [
   {
-    "name": "to amaze",
-    "etymology": [
-      {
-        "name": "amasian, amasod",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to amaze",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "amased",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to amaze",
-        "origin": "Modern English"
-      },
-      {
-        "name": "to amâse -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "amasian, amasod",
+        "amased",
+        "to amaze",
+        "to amâse -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to amaze",
+      "etymology": [
+        {
+          "name": "amasian, amasod",
+          "origin": "Old English"
+        },
+        {
+          "name": "amased",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to amaze",
+          "origin": "Modern English"
+        },
+        {
+          "name": "to amâse -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/amaze#etymonline_v_10950",
+        "https://www.etymonline.com/word/maze#etymonline_v_12472",
+        "https://www.merriam-webster.com/dictionary/amaze#dictionary-entry-1",
+        "https://www.oed.com/dictionary/amaze_v?tab=factsheet#5664562",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED1349",
+        "https://bosworthtoller.com/38512"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/amaze#etymonline_v_10950",
-      "https://www.etymonline.com/word/maze#etymonline_v_12472",
-      "https://www.merriam-webster.com/dictionary/amaze#dictionary-entry-1",
-      "https://www.oed.com/dictionary/amaze_v?tab=factsheet#5664562",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED1349",
-      "https://bosworthtoller.com/38512"
-    ]
+    }
   },
   {
-    "name": "amazement",
-    "etymology": [
-      {
-        "name": "amazement",
-        "origin": "Modern English"
-      },
-      {
-        "name": "amâsement -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/amazement#etymonline_v_26160",
-      "https://www.etymonline.com/word/amaze#etymonline_v_10950",
-      "https://www.etymonline.com/word/-ment#etymonline_v_32036",
-      "https://www.oed.com/dictionary/amazement_n?tab=factsheet#5670168"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "amazement",
+      "etymology": [
+        {
+          "name": "amazement",
+          "origin": "Modern English"
+        },
+        {
+          "name": "amâsement -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/amazement#etymonline_v_26160",
+        "https://www.etymonline.com/word/amaze#etymonline_v_10950",
+        "https://www.etymonline.com/word/-ment#etymonline_v_32036",
+        "https://www.oed.com/dictionary/amazement_n?tab=factsheet#5670168"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

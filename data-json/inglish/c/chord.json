@@ -1,63 +1,92 @@
 [
   {
-    "name": "chord",
-    "etymology": [
-      {
-        "name": "χορδή",
-        "origin": "Ancient Greek"
-      },
-      {
-        "name": "chorda",
-        "origin": "Latin"
-      },
-      {
-        "name": "chord",
-        "origin": "Modern English"
-      },
-      {
-        "name": "kord -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/chord#etymonline_v_11320",
-      "https://www.etymonline.com/word/chord#etymonline_v_11319",
-      "https://www.merriam-webster.com/dictionary/chord#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/chord#dictionary-entry-3",
-      "https://latin-dictionary.net/definition/9492/chorda-chordae",
-      "https://lsj.gr/wiki/χορδή"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "chord",
+      "etymology": [
+        {
+          "name": "χορδή",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "chorda",
+          "origin": "Latin"
+        },
+        {
+          "name": "chord",
+          "origin": "Modern English"
+        },
+        {
+          "name": "kord -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/chord#etymonline_v_11320",
+        "https://www.etymonline.com/word/chord#etymonline_v_11319",
+        "https://www.merriam-webster.com/dictionary/chord#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/chord#dictionary-entry-3",
+        "https://latin-dictionary.net/definition/9492/chorda-chordae",
+        "https://lsj.gr/wiki/χορδή"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to chord",
-    "etymology": [
-      {
-        "name": "χορδή",
-        "origin": "Ancient Greek"
+    "verbDetails": {
+      "infinitive": "to chord",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "chorda",
-        "origin": "Latin"
-      },
-      {
-        "name": "to chord",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta korde -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "χορδή",
+        "chorda",
+        "to chord",
+        "ta korde -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to chord",
+      "etymology": [
+        {
+          "name": "χορδή",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "chorda",
+          "origin": "Latin"
+        },
+        {
+          "name": "to chord",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta korde -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/chord#dictionary-entry-2",
+        "https://latin-dictionary.net/definition/9492/chorda-chordae",
+        "https://lsj.gr/wiki/χορδή"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/chord#dictionary-entry-2",
-      "https://latin-dictionary.net/definition/9492/chorda-chordae",
-      "https://lsj.gr/wiki/χορδή"
-    ]
+    }
   }
 ]

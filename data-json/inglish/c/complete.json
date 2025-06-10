@@ -1,108 +1,152 @@
 [
   {
-    "name": "complete",
-    "etymology": [
-      {
-        "name": "complere, completus",
-        "origin": "Latin"
-      },
-      {
-        "name": "complet",
-        "origin": "Old French"
-      },
-      {
-        "name": "complete",
-        "origin": "Modern English"
-      },
-      {
-        "name": "complite -ly -ness",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "complete",
+      "etymology": [
+        {
+          "name": "complere, completus",
+          "origin": "Latin"
+        },
+        {
+          "name": "complet",
+          "origin": "Old French"
+        },
+        {
+          "name": "complete",
+          "origin": "Modern English"
+        },
+        {
+          "name": "complite -ly -ness",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/complete#etymonline_v_17270",
+        "https://www.merriam-webster.com/dictionary/complete#dictionary-entry-1",
+        "https://www.oed.com/dictionary/complete_adj?tab=factsheet#8830965",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/complet/17546",
+        "https://latin-dictionary.net/definition/11729/compleo-complere-complevi-completus"
+      ],
+      "degrees": {
+        "positive": "complite",
+        "comparative": "ly",
+        "superlative": "ness"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/complete#etymonline_v_17270",
-      "https://www.merriam-webster.com/dictionary/complete#dictionary-entry-1",
-      "https://www.oed.com/dictionary/complete_adj?tab=factsheet#8830965",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/complet/17546",
-      "https://latin-dictionary.net/definition/11729/compleo-complere-complevi-completus"
-    ]
+    }
   },
   {
-    "name": "to complete",
-    "etymology": [
-      {
-        "name": "to complete",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to complete",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta complite -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to complete",
+        "ta complite -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to complete",
+      "etymology": [
+        {
+          "name": "to complete",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta complite -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/complete#etymonline_v_46680",
+        "https://www.etymonline.com/word/complete#etymonline_v_17270",
+        "https://www.merriam-webster.com/dictionary/complete#dictionary-entry-2",
+        "https://www.oed.com/dictionary/complete_v?tab=factsheet#8831839"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/complete#etymonline_v_46680",
-      "https://www.etymonline.com/word/complete#etymonline_v_17270",
-      "https://www.merriam-webster.com/dictionary/complete#dictionary-entry-2",
-      "https://www.oed.com/dictionary/complete_v?tab=factsheet#8831839"
-    ]
+    }
   },
   {
-    "name": "completion",
-    "etymology": [
-      {
-        "name": "complere, completio",
-        "origin": "Latin"
-      },
-      {
-        "name": "complecioun",
-        "origin": "Middle English"
-      },
-      {
-        "name": "completion",
-        "origin": "Modern English"
-      },
-      {
-        "name": "complícion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/completion#etymonline_v_28479",
-      "https://www.collinsdictionary.com/us/dictionary/english/completion",
-      "https://www.merriam-webster.com/dictionary/completion",
-      "https://www.oed.com/dictionary/completion_n?tab=factsheet#8832641",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8722",
-      "https://latin-dictionary.net/definition/11730/completio-completionis",
-      "https://latin-dictionary.net/definition/11729/compleo-complere-complevi-completus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "completion",
+      "etymology": [
+        {
+          "name": "complere, completio",
+          "origin": "Latin"
+        },
+        {
+          "name": "complecioun",
+          "origin": "Middle English"
+        },
+        {
+          "name": "completion",
+          "origin": "Modern English"
+        },
+        {
+          "name": "complícion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/completion#etymonline_v_28479",
+        "https://www.collinsdictionary.com/us/dictionary/english/completion",
+        "https://www.merriam-webster.com/dictionary/completion",
+        "https://www.oed.com/dictionary/completion_n?tab=factsheet#8832641",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8722",
+        "https://latin-dictionary.net/definition/11730/completio-completionis",
+        "https://latin-dictionary.net/definition/11729/compleo-complere-complevi-completus"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "completive",
-    "etymology": [
-      {
-        "name": "completive",
-        "origin": "Modern English"
-      },
-      {
-        "name": "complítif -vly",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/completive#etymonline_v_53485",
-      "https://www.merriam-webster.com/dictionary/completive",
-      "https://www.oed.com/dictionary/completive_adj?tab=factsheet#8832853",
-      "https://latin-dictionary.net/definition/11731/completivus-completiva-completivum",
-      "https://latin-dictionary.net/definition/11728/compleo-complere-complevi-completus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "completive",
+      "etymology": [
+        {
+          "name": "completive",
+          "origin": "Modern English"
+        },
+        {
+          "name": "complítif -vly",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/completive#etymonline_v_53485",
+        "https://www.merriam-webster.com/dictionary/completive",
+        "https://www.oed.com/dictionary/completive_adj?tab=factsheet#8832853",
+        "https://latin-dictionary.net/definition/11731/completivus-completiva-completivum",
+        "https://latin-dictionary.net/definition/11728/compleo-complere-complevi-completus"
+      ]
+    }
   }
 ]

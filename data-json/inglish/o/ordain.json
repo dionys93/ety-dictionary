@@ -1,58 +1,88 @@
 [
   {
-    "name": "to ordain",
-    "etymology": [
-      {
-        "name": "ordo, ordinare",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to ordain",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ordener",
-        "origin": "Old French"
-      },
-      {
-        "name": "ordeinen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to ordain",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta ordeine -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "ordo, ordinare",
+        "ordener",
+        "ordeinen",
+        "to ordain",
+        "ta ordeine -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to ordain",
+      "etymology": [
+        {
+          "name": "ordo, ordinare",
+          "origin": "Latin"
+        },
+        {
+          "name": "ordener",
+          "origin": "Old French"
+        },
+        {
+          "name": "ordeinen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to ordain",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta ordeine -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/ordain#etymonline_v_7122",
+        "https://www.merriam-webster.com/dictionary/ordain",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED30818",
+        "https://www.anglo-norman.net/entry/ordener_1",
+        "https://latin-dictionary.net/definition/28886/ordino-ordinare-ordinavi-ordinatus",
+        "https://latin-dictionary.net/definition/28889/ordo-ordinis"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/ordain#etymonline_v_7122",
-      "https://www.merriam-webster.com/dictionary/ordain",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED30818",
-      "https://www.anglo-norman.net/entry/ordener_1",
-      "https://latin-dictionary.net/definition/28886/ordino-ordinare-ordinavi-ordinatus",
-      "https://latin-dictionary.net/definition/28889/ordo-ordinis"
-    ]
+    }
   },
   {
-    "name": "ordainment",
-    "etymology": [
-      {
-        "name": "ordainment",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ordéinment -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/ordainment",
-      "https://www.oed.com/dictionary/ordainment_n?tab=factsheet#33281858"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "ordainment",
+      "etymology": [
+        {
+          "name": "ordainment",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ordéinment -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/ordainment",
+        "https://www.oed.com/dictionary/ordainment_n?tab=factsheet#33281858"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

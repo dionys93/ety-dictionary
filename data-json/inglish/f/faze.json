@@ -1,32 +1,53 @@
 [
   {
-    "name": "to faze",
-    "etymology": [
-      {
-        "name": "fesian, fysian",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to faze",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "feeze",
-        "origin": "Kentish"
-      },
-      {
-        "name": "to faze",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta fese -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "fesian, fysian",
+        "feeze",
+        "to faze",
+        "ta fese -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to faze",
+      "etymology": [
+        {
+          "name": "fesian, fysian",
+          "origin": "Old English"
+        },
+        {
+          "name": "feeze",
+          "origin": "Kentish"
+        },
+        {
+          "name": "to faze",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta fese -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/faze#etymonline_v_1176",
+        "https://www.oed.com/dictionary/faze_v?tab=factsheet#4527084",
+        "https://bosworthtoller.com/13048",
+        "https://bosworthtoller.com/10573"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/faze#etymonline_v_1176",
-      "https://www.oed.com/dictionary/faze_v?tab=factsheet#4527084",
-      "https://bosworthtoller.com/13048",
-      "https://bosworthtoller.com/10573"
-    ]
+    }
   }
 ]

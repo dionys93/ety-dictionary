@@ -1,30 +1,38 @@
 [
   {
-    "name": "turquoise",
-    "etymology": [
-      {
-        "name": "pierre turqueise, turqueise",
-        "origin": "Old French"
-      },
-      {
-        "name": "turquoise",
-        "origin": "French"
-      },
-      {
-        "name": "turcoiz",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun",
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/turquoise#etymonline_v_18840",
-      "https://www.merriam-webster.com/dictionary/turquoise",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/turquoise/79333",
-      "https://anglo-norman.net/entry/turkoise",
-      "https://anglo-norman.net/entry/turkeis"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "turquoise",
+      "etymology": [
+        {
+          "name": "pierre turqueise, turqueise",
+          "origin": "Old French"
+        },
+        {
+          "name": "turquoise",
+          "origin": "French"
+        },
+        {
+          "name": "turcoiz",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun",
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/turquoise#etymonline_v_18840",
+        "https://www.merriam-webster.com/dictionary/turquoise",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/turquoise/79333",
+        "https://anglo-norman.net/entry/turkoise",
+        "https://anglo-norman.net/entry/turkeis"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   }
 ]

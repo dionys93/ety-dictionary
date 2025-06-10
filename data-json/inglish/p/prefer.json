@@ -1,142 +1,192 @@
 [
   {
-    "name": "to prefer",
-    "etymology": [
-      {
-        "name": "prae + ferre, praeferre",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to prefer",
+      "conjugations": {
+        "thirdPerson": "d"
       },
-      {
-        "name": "preferer",
-        "origin": "Old French"
-      },
-      {
-        "name": "preferren",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to prefer",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta prefê -s -d prefêring",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "prae + ferre, praeferre",
+        "preferer",
+        "preferren",
+        "to prefer",
+        "ta prefê -s -d prefêring"
+      ]
+    },
+    "standard": {
+      "name": "to prefer",
+      "etymology": [
+        {
+          "name": "prae + ferre, praeferre",
+          "origin": "Latin"
+        },
+        {
+          "name": "preferer",
+          "origin": "Old French"
+        },
+        {
+          "name": "preferren",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to prefer",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta prefê -s -d prefêring",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/prefer#etymonline_v_19403",
+        "https://www.merriam-webster.com/dictionary/prefer",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED34386",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/pr%C3%A9f%C3%A9rer/62756",
+        "https://www.anglo-norman.net/entry/preferrer",
+        "https://latin-dictionary.net/definition/31218/praefero-praeferre-praetuli-praelatus"
+      ],
+      "conjugations": {
+        "thirdPerson": "d"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/prefer#etymonline_v_19403",
-      "https://www.merriam-webster.com/dictionary/prefer",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED34386",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/pr%C3%A9f%C3%A9rer/62756",
-      "https://www.anglo-norman.net/entry/preferrer",
-      "https://latin-dictionary.net/definition/31218/praefero-praeferre-praetuli-praelatus"
-    ]
+    }
   },
   {
-    "name": "preferable",
-    "etymology": [
-      {
-        "name": "préférable",
-        "origin": "French"
-      },
-      {
-        "name": "preferable",
-        "origin": "Modern English"
-      },
-      {
-        "name": "prefêrable -y",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "preferable",
+      "etymology": [
+        {
+          "name": "préférable",
+          "origin": "French"
+        },
+        {
+          "name": "preferable",
+          "origin": "Modern English"
+        },
+        {
+          "name": "prefêrable -y",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/preferable#etymonline_v_36448",
+        "https://www.merriam-webster.com/dictionary/preferable",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/pr%C3%A9f%C3%A9rable/62748"
+      ],
+      "degrees": {
+        "positive": "rable",
+        "comparative": "y"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/preferable#etymonline_v_36448",
-      "https://www.merriam-webster.com/dictionary/preferable",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/pr%C3%A9f%C3%A9rable/62748"
-    ]
+    }
   },
   {
-    "name": "preference",
-    "etymology": [
-      {
-        "name": "praeferre",
-        "origin": "Latin"
-      },
-      {
-        "name": "preferentia",
-        "origin": "Medieval Latin"
-      },
-      {
-        "name": "preference",
-        "origin": "Old French"
-      },
-      {
-        "name": "prefrence -s",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/preference#etymonline_v_33506",
-      "https://www.merriam-webster.com/dictionary/preference",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED34384",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/pr%C3%A9f%C3%A9rence/62751",
-      "https://latin-dictionary.net/definition/31218/praefero-praeferre-praetuli-praelatus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "preference",
+      "etymology": [
+        {
+          "name": "praeferre",
+          "origin": "Latin"
+        },
+        {
+          "name": "preferentia",
+          "origin": "Medieval Latin"
+        },
+        {
+          "name": "preference",
+          "origin": "Old French"
+        },
+        {
+          "name": "prefrence -s",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/preference#etymonline_v_33506",
+        "https://www.merriam-webster.com/dictionary/preference",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED34384",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/pr%C3%A9f%C3%A9rence/62751",
+        "https://latin-dictionary.net/definition/31218/praefero-praeferre-praetuli-praelatus"
+      ]
+    }
   },
   {
-    "name": "preferment",
-    "etymology": [
-      {
-        "name": "preferrement",
-        "origin": "Middle English"
-      },
-      {
-        "name": "preferment",
-        "origin": "Modern English"
-      },
-      {
-        "name": "prefêment -s",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/preferment#etymonline_v_33505",
-      "https://www.merriam-webster.com/dictionary/preferment",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED34385"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "preferment",
+      "etymology": [
+        {
+          "name": "preferrement",
+          "origin": "Middle English"
+        },
+        {
+          "name": "preferment",
+          "origin": "Modern English"
+        },
+        {
+          "name": "prefêment -s",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/preferment#etymonline_v_33505",
+        "https://www.merriam-webster.com/dictionary/preferment",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED34385"
+      ]
+    }
   },
   {
-    "name": "preferential",
-    "etymology": [
-      {
-        "name": "praeferre",
-        "origin": "Latin"
-      },
-      {
-        "name": "preferentia",
-        "origin": "Medieval Latin"
-      },
-      {
-        "name": "preferential",
-        "origin": "Modern English"
-      },
-      {
-        "name": "preferèncial -ly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "preferential",
+      "etymology": [
+        {
+          "name": "praeferre",
+          "origin": "Latin"
+        },
+        {
+          "name": "preferentia",
+          "origin": "Medieval Latin"
+        },
+        {
+          "name": "preferential",
+          "origin": "Modern English"
+        },
+        {
+          "name": "preferèncial -ly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/preferential#etymonline_v_33507",
+        "https://www.merriam-webster.com/dictionary/preferential",
+        "https://latin-dictionary.net/definition/31218/praefero-praeferre-praetuli-praelatus"
+      ],
+      "degrees": {
+        "positive": "ncial",
+        "comparative": "ly"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/preferential#etymonline_v_33507",
-      "https://www.merriam-webster.com/dictionary/preferential",
-      "https://latin-dictionary.net/definition/31218/praefero-praeferre-praetuli-praelatus"
-    ]
+    }
   }
 ]

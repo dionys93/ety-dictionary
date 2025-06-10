@@ -1,37 +1,45 @@
 [
   {
-    "name": "eunuch",
-    "etymology": [
-      {
-        "name": "εὐνοῦχος",
-        "origin": "Ancient Greek"
-      },
-      {
-        "name": "eunuchus",
-        "origin": "Latin"
-      },
-      {
-        "name": "eunuk",
-        "origin": "Middle English"
-      },
-      {
-        "name": "eunuch",
-        "origin": "Modern English"
-      },
-      {
-        "name": "eunok, eunox",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/eunuch#etymonline_v_11681",
-      "https://www.merriam-webster.com/dictionary/eunuch",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED14655",
-      "https://latin-dictionary.net/definition/19457/eunuchus-eunuchi",
-      "https://lsj.gr/wiki/%CE%B5%E1%BD%90%CE%BD%CE%BF%E1%BF%A6%CF%87%CE%BF%CF%82"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "eunuch",
+      "etymology": [
+        {
+          "name": "εὐνοῦχος",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "eunuchus",
+          "origin": "Latin"
+        },
+        {
+          "name": "eunuk",
+          "origin": "Middle English"
+        },
+        {
+          "name": "eunuch",
+          "origin": "Modern English"
+        },
+        {
+          "name": "eunok, eunox",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/eunuch#etymonline_v_11681",
+        "https://www.merriam-webster.com/dictionary/eunuch",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED14655",
+        "https://latin-dictionary.net/definition/19457/eunuchus-eunuchi",
+        "https://lsj.gr/wiki/%CE%B5%E1%BD%90%CE%BD%CE%BF%E1%BF%A6%CF%87%CE%BF%CF%82"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   }
 ]

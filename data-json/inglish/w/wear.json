@@ -1,96 +1,127 @@
 [
   {
-    "name": "to wear",
-    "etymology": [
-      {
-        "name": "werian",
-        "origin": "Old English"
-      },
-      {
-        "name": "weren",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to wear",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta ɯaire -s ɯore ɯône -ing",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/wear#etymonline_v_4874",
-      "https://www.merriam-webster.com/dictionary/wear#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52256",
-      "https://bosworthtoller.com/35380"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "to wear",
+      "etymology": [
+        {
+          "name": "werian",
+          "origin": "Old English"
+        },
+        {
+          "name": "weren",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to wear",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta ɯaire -s ɯore ɯône -ing",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/wear#etymonline_v_4874",
+        "https://www.merriam-webster.com/dictionary/wear#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52256",
+        "https://bosworthtoller.com/35380"
+      ]
+    }
   },
   {
-    "name": "wear",
-    "etymology": [
-      {
-        "name": "were",
-        "origin": "Middle English"
-      },
-      {
-        "name": "wear",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ɯair -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/wear#etymonline_v_44891",
-      "https://www.etymonline.com/word/wear#etymonline_v_4874",
-      "https://www.merriam-webster.com/dictionary/wear#dictionary-entry-2",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52249"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "wear",
+      "etymology": [
+        {
+          "name": "were",
+          "origin": "Middle English"
+        },
+        {
+          "name": "wear",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ɯair -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/wear#etymonline_v_44891",
+        "https://www.etymonline.com/word/wear#etymonline_v_4874",
+        "https://www.merriam-webster.com/dictionary/wear#dictionary-entry-2",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52249"
+      ],
+      "number": "plural"
+    }
   },
   {
-    "name": "wearable",
-    "etymology": [
-      {
-        "name": "wearable",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ɯaîable -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "noun"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "wearable",
+      "etymology": [
+        {
+          "name": "wearable",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ɯaîable -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/wearable#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/wearable#dictionary-entry-2"
+      ],
+      "degrees": {
+        "positive": "able",
+        "comparative": "s"
       }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/wearable#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/wearable#dictionary-entry-2"
-    ]
+    }
   },
   {
-    "name": "underwear",
-    "etymology": [
-      {
-        "name": "underwear",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ondreɯair",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/underwear#etymonline_v_24972",
-      "https://www.merriam-webster.com/dictionary/underwear"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "underwear",
+      "etymology": [
+        {
+          "name": "underwear",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ondreɯair",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/underwear#etymonline_v_24972",
+        "https://www.merriam-webster.com/dictionary/underwear"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   }
 ]

@@ -1,99 +1,137 @@
 [
   {
-    "name": "master",
-    "etymology": [
-      {
-        "name": "magister",
-        "origin": "Latin"
-      },
-      {
-        "name": "mægester",
-        "origin": "Old English"
-      },
-      {
-        "name": "maister",
-        "origin": "Middle English"
-      },
-      {
-        "name": "master",
-        "origin": "Modern English"
-      },
-      {
-        "name": "mastre -ers",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/master#etymonline_v_9692",
-      "https://www.merriam-webster.com/dictionary/master#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/master#dictionary-entry-2",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26558",
-      "https://bosworthtoller.com/022279",
-      "https://latin-dictionary.net/definition/26165/magister-magistri"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "master",
+      "etymology": [
+        {
+          "name": "magister",
+          "origin": "Latin"
+        },
+        {
+          "name": "mægester",
+          "origin": "Old English"
+        },
+        {
+          "name": "maister",
+          "origin": "Middle English"
+        },
+        {
+          "name": "master",
+          "origin": "Modern English"
+        },
+        {
+          "name": "mastre -ers",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/master#etymonline_v_9692",
+        "https://www.merriam-webster.com/dictionary/master#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/master#dictionary-entry-2",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26558",
+        "https://bosworthtoller.com/022279",
+        "https://latin-dictionary.net/definition/26165/magister-magistri"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to master",
-    "etymology": [
-      {
-        "name": "magistrare",
-        "origin": "Medieval Latin"
+    "verbDetails": {
+      "infinitive": "to master",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ering"
       },
-      {
-        "name": "maistriier",
-        "origin": "Old French"
-      },
-      {
-        "name": "maistren",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to master",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta mastre -s -d -ering",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "magistrare",
+        "maistriier",
+        "maistren",
+        "to master",
+        "ta mastre -s -d -ering"
+      ]
+    },
+    "standard": {
+      "name": "to master",
+      "etymology": [
+        {
+          "name": "magistrare",
+          "origin": "Medieval Latin"
+        },
+        {
+          "name": "maistriier",
+          "origin": "Old French"
+        },
+        {
+          "name": "maistren",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to master",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta mastre -s -d -ering",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/master#etymonline_v_43736",
+        "https://www.etymonline.com/word/master#etymonline_v_9692",
+        "https://www.merriam-webster.com/dictionary/master#dictionary-entry-3",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26568",
+        "https://anglo-norman.net/entry/maistroier"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ering"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/master#etymonline_v_43736",
-      "https://www.etymonline.com/word/master#etymonline_v_9692",
-      "https://www.merriam-webster.com/dictionary/master#dictionary-entry-3",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26568",
-      "https://anglo-norman.net/entry/maistroier"
-    ]
+    }
   },
   {
-    "name": "mastery",
-    "etymology": [
-      {
-        "name": "maistrie",
-        "origin": "Old French"
-      },
-      {
-        "name": "mastery",
-        "origin": "Modern English"
-      },
-      {
-        "name": "mastrie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/mastery#etymonline_v_31723",
-      "https://www.merriam-webster.com/dictionary/mastery",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26571",
-      "https://anglo-norman.net/entry/maistrie"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "mastery",
+      "etymology": [
+        {
+          "name": "maistrie",
+          "origin": "Old French"
+        },
+        {
+          "name": "mastery",
+          "origin": "Modern English"
+        },
+        {
+          "name": "mastrie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/mastery#etymonline_v_31723",
+        "https://www.merriam-webster.com/dictionary/mastery",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26571",
+        "https://anglo-norman.net/entry/maistrie"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

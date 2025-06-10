@@ -1,76 +1,90 @@
 [
   {
-    "name": "fairy",
-    "etymology": [
-      {
-        "name": "fatum, fata",
-        "origin": "Latin"
-      },
-      {
-        "name": "fae, faerie",
-        "origin": "Old French"
-      },
-      {
-        "name": "fairie",
-        "origin": "Middle English"
-      },
-      {
-        "name": "fairy",
-        "origin": "Modern English"
-      },
-      {
-        "name": "fairie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/fairy#etymonline_v_1086",
-      "https://www.merriam-webster.com/dictionary/fairy",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15163",
-      "https://www.anglo-norman.net/entry/faerie",
-      "https://latin-dictionary.net/definition/20366/fatum-fati"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "fairy",
+      "etymology": [
+        {
+          "name": "fatum, fata",
+          "origin": "Latin"
+        },
+        {
+          "name": "fae, faerie",
+          "origin": "Old French"
+        },
+        {
+          "name": "fairie",
+          "origin": "Middle English"
+        },
+        {
+          "name": "fairy",
+          "origin": "Modern English"
+        },
+        {
+          "name": "fairie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/fairy#etymonline_v_1086",
+        "https://www.merriam-webster.com/dictionary/fairy",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15163",
+        "https://www.anglo-norman.net/entry/faerie",
+        "https://latin-dictionary.net/definition/20366/fatum-fati"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "fay",
-    "etymology": [
-      {
-        "name": "fatum, fata",
-        "origin": "Latin"
-      },
-      {
-        "name": "fae",
-        "origin": "Old French"
-      },
-      {
-        "name": "faie",
-        "origin": "Middle English"
-      },
-      {
-        "name": "fay",
-        "origin": "Modern English"
-      },
-      {
-        "name": "fée, fés",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/fay#etymonline_v_1175",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/f%C3%A9e/33080",
-      "https://www.merriam-webster.com/dictionary/fay#dictionary-entry-4",
-      "https://www.merriam-webster.com/dictionary/fay#dictionary-entry-2",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15140",
-      "https://www.anglo-norman.net/entry/fa%C3%A9_1",
-      "https://www.anglo-norman.net/entry/fee_1",
-      "https://latin-dictionary.net/definition/20366/fatum-fati"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "fay",
+      "etymology": [
+        {
+          "name": "fatum, fata",
+          "origin": "Latin"
+        },
+        {
+          "name": "fae",
+          "origin": "Old French"
+        },
+        {
+          "name": "faie",
+          "origin": "Middle English"
+        },
+        {
+          "name": "fay",
+          "origin": "Modern English"
+        },
+        {
+          "name": "fée, fés",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/fay#etymonline_v_1175",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/f%C3%A9e/33080",
+        "https://www.merriam-webster.com/dictionary/fay#dictionary-entry-4",
+        "https://www.merriam-webster.com/dictionary/fay#dictionary-entry-2",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15140",
+        "https://www.anglo-norman.net/entry/fa%C3%A9_1",
+        "https://www.anglo-norman.net/entry/fee_1",
+        "https://latin-dictionary.net/definition/20366/fatum-fati"
+      ]
+    }
   }
 ]

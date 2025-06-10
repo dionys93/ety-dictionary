@@ -1,47 +1,74 @@
 [
   {
-    "name": "wire",
-    "etymology": [
-      {
-        "name": "wir",
-        "origin": "Old English"
-      },
-      {
-        "name": "wire",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ɯîar -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/wire",
-      "https://www.oed.com/dictionary/wire_n1?tab=factsheet#14105598",
-      "https://bosworthtoller.com/35983"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "wire",
+      "etymology": [
+        {
+          "name": "wir",
+          "origin": "Old English"
+        },
+        {
+          "name": "wire",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ɯîar -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/wire",
+        "https://www.oed.com/dictionary/wire_n1?tab=factsheet#14105598",
+        "https://bosworthtoller.com/35983"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to wire",
-    "etymology": [
-      {
-        "name": "to wire",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to wire",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta ɯîare -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to wire",
+        "ta ɯîare -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to wire",
+      "etymology": [
+        {
+          "name": "to wire",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta ɯîare -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/wire",
+        "https://www.oed.com/dictionary/wire_v?tab=factsheet#14110080"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/wire",
-      "https://www.oed.com/dictionary/wire_v?tab=factsheet#14110080"
-    ]
+    }
   }
 ]

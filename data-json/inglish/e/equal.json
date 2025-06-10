@@ -1,124 +1,185 @@
 [
   {
-    "name": "equal",
-    "etymology": [
-      {
-        "name": "aequus, aequalis",
-        "origin": "Latin"
-      },
-      {
-        "name": "equal",
-        "origin": "Modern English"
-      },
-      {
-        "name": "iqual -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun",
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/equal#etymonline_v_8806",
-      "https://www.etymonline.com/word/equal#etymonline_v_50354",
-      "https://www.merriam-webster.com/dictionary/equal#dictionary-entry-2",
-      "https://www.merriam-webster.com/dictionary/equal#dictionary-entry-1",
-      "https://latin-dictionary.net/definition/1934/aequalis-aequale-aequalior",
-      "https://latin-dictionary.net/definition/2000/aequus-aequa"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "equal",
+      "etymology": [
+        {
+          "name": "aequus, aequalis",
+          "origin": "Latin"
+        },
+        {
+          "name": "equal",
+          "origin": "Modern English"
+        },
+        {
+          "name": "iqual -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun",
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/equal#etymonline_v_8806",
+        "https://www.etymonline.com/word/equal#etymonline_v_50354",
+        "https://www.merriam-webster.com/dictionary/equal#dictionary-entry-2",
+        "https://www.merriam-webster.com/dictionary/equal#dictionary-entry-1",
+        "https://latin-dictionary.net/definition/1934/aequalis-aequale-aequalior",
+        "https://latin-dictionary.net/definition/2000/aequus-aequa"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to equal",
-    "etymology": [
-      {
-        "name": "to equal",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to equal",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta iquale -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to equal",
+        "ta iquale -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to equal",
+      "etymology": [
+        {
+          "name": "to equal",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta iquale -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/equal#etymonline_v_46804",
+        "https://www.etymonline.com/word/equal#etymonline_v_8806",
+        "https://www.merriam-webster.com/dictionary/equal#dictionary-entry-3"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/equal#etymonline_v_46804",
-      "https://www.etymonline.com/word/equal#etymonline_v_8806",
-      "https://www.merriam-webster.com/dictionary/equal#dictionary-entry-3"
-    ]
+    }
   },
   {
-    "name": "to equalize",
-    "etymology": [
-      {
-        "name": "to equalize",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to equalize",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta iqualyse -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to equalize",
+        "ta iqualyse -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to equalize",
+      "etymology": [
+        {
+          "name": "to equalize",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta iqualyse -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/equalize#etymonline_v_32661",
+        "https://www.merriam-webster.com/dictionary/equalize"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/equalize#etymonline_v_32661",
-      "https://www.merriam-webster.com/dictionary/equalize"
-    ]
+    }
   },
   {
-    "name": "equalization",
-    "etymology": [
-      {
-        "name": "equalization",
-        "origin": "Modern English"
-      },
-      {
-        "name": "iqualisâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/equalization#etymonline_v_38249",
-      "https://www.merriam-webster.com/dictionary/equalization"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "equalization",
+      "etymology": [
+        {
+          "name": "equalization",
+          "origin": "Modern English"
+        },
+        {
+          "name": "iqualisâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/equalization#etymonline_v_38249",
+        "https://www.merriam-webster.com/dictionary/equalization"
+      ],
+      "number": "plural"
+    }
   },
   {
-    "name": "equality",
-    "etymology": [
-      {
-        "name": "aequalis, aequalitas",
-        "origin": "Latin"
-      },
-      {
-        "name": "equalité",
-        "origin": "Old French"
-      },
-      {
-        "name": "equality",
-        "origin": "Modern English"
-      },
-      {
-        "name": "iquáletie, iquáletis",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/equality#etymonline_v_29746",
-      "https://www.merriam-webster.com/dictionary/equality",
-      "https://anglo-norman.net/entry/equalit%C3%A9",
-      "https://latin-dictionary.net/definition/1937/aequalitas-aequalitatis",
-      "https://latin-dictionary.net/definition/1935/aequalis-aequalis",
-      "https://latin-dictionary.net/definition/1934/aequalis-aequale-aequalior"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "equality",
+      "etymology": [
+        {
+          "name": "aequalis, aequalitas",
+          "origin": "Latin"
+        },
+        {
+          "name": "equalité",
+          "origin": "Old French"
+        },
+        {
+          "name": "equality",
+          "origin": "Modern English"
+        },
+        {
+          "name": "iquáletie, iquáletis",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/equality#etymonline_v_29746",
+        "https://www.merriam-webster.com/dictionary/equality",
+        "https://anglo-norman.net/entry/equalit%C3%A9",
+        "https://latin-dictionary.net/definition/1937/aequalitas-aequalitatis",
+        "https://latin-dictionary.net/definition/1935/aequalis-aequalis",
+        "https://latin-dictionary.net/definition/1934/aequalis-aequale-aequalior"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

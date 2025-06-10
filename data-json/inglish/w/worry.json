@@ -1,73 +1,111 @@
 [
   {
-    "name": "to worry",
-    "etymology": [
-      {
-        "name": "wyrgan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to worry",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ying"
       },
-      {
-        "name": "wirien",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to worry",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta ɯorrie -s -d -ying",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "wyrgan",
+        "wirien",
+        "to worry",
+        "ta ɯorrie -s -d -ying"
+      ]
+    },
+    "standard": {
+      "name": "to worry",
+      "etymology": [
+        {
+          "name": "wyrgan",
+          "origin": "Old English"
+        },
+        {
+          "name": "wirien",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to worry",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta ɯorrie -s -d -ying",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/worry#etymonline_v_10851",
+        "https://www.oed.com/dictionary/worry_v?tab=factsheet#13874333",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52939",
+        "https://bosworthtoller.com/36964"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ying"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/worry#etymonline_v_10851",
-      "https://www.oed.com/dictionary/worry_v?tab=factsheet#13874333",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52939",
-      "https://bosworthtoller.com/36964"
-    ]
+    }
   },
   {
-    "name": "worry",
-    "etymology": [
-      {
-        "name": "worry",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ɯorrie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/worry#etymonline_v_25634",
-      "https://www.oed.com/dictionary/worry_n?tab=factsheet#13874062"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "worry",
+      "etymology": [
+        {
+          "name": "worry",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ɯorrie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/worry#etymonline_v_25634",
+        "https://www.oed.com/dictionary/worry_n?tab=factsheet#13874062"
+      ],
+      "number": "plural"
+    }
   },
   {
-    "name": "worrisome",
-    "etymology": [
-      {
-        "name": "worrisome",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ɯorrissom -ly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "worrisome",
+      "etymology": [
+        {
+          "name": "worrisome",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ɯorrissom -ly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/worrisome#etymonline_v_40079",
+        "https://www.merriam-webster.com/dictionary/worrisome",
+        "https://www.oed.com/dictionary/worrisome_adj?tab=factsheet#13873708"
+      ],
+      "degrees": {
+        "positive": "orrissom",
+        "comparative": "ly"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/worrisome#etymonline_v_40079",
-      "https://www.merriam-webster.com/dictionary/worrisome",
-      "https://www.oed.com/dictionary/worrisome_adj?tab=factsheet#13873708"
-    ]
+    }
   }
 ]

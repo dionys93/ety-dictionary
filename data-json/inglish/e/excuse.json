@@ -1,55 +1,84 @@
 [
   {
-    "name": "to excuse",
-    "etymology": [
-      {
-        "name": "ex + cause,  excusare",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to excuse",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "excuser",
-        "origin": "Old French"
-      },
-      {
-        "name": "to excuse",
-        "origin": "Modern English"
-      },
-      {
-        "name": "to exc̃use -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "ex + cause,  excusare",
+        "excuser",
+        "to excuse",
+        "to exc̃use -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to excuse",
+      "etymology": [
+        {
+          "name": "ex + cause,  excusare",
+          "origin": "Latin"
+        },
+        {
+          "name": "excuser",
+          "origin": "Old French"
+        },
+        {
+          "name": "to excuse",
+          "origin": "Modern English"
+        },
+        {
+          "name": "to exc̃use -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/excuse#etymonline_v_14042",
+        "https://www.merriam-webster.com/dictionary/excuse#dictionary-entry-1",
+        "https://www.anglo-norman.net/entry/excuser",
+        "https://latin-dictionary.net/definition/19686/excuso-excusare-excusavi-excusatus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/excuse#etymonline_v_14042",
-      "https://www.merriam-webster.com/dictionary/excuse#dictionary-entry-1",
-      "https://www.anglo-norman.net/entry/excuser",
-      "https://latin-dictionary.net/definition/19686/excuso-excusare-excusavi-excusatus"
-    ]
+    }
   },
   {
-    "name": "excuser, excuse",
-    "etymology": [
-      {
-        "name": "excuser, excuse",
-        "origin": "Old French"
-      },
-      {
-        "name": "exc̃usse -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/excuse#etymonline_v_38331",
-      "https://www.etymonline.com/word/excuse#etymonline_v_14042",
-      "https://www.merriam-webster.com/dictionary/excuse#dictionary-entry-2",
-      "https://www.anglo-norman.net/entry/excuse",
-      "https://www.anglo-norman.net/entry/excuser"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "excuser, excuse",
+      "etymology": [
+        {
+          "name": "excuser, excuse",
+          "origin": "Old French"
+        },
+        {
+          "name": "exc̃usse -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/excuse#etymonline_v_38331",
+        "https://www.etymonline.com/word/excuse#etymonline_v_14042",
+        "https://www.merriam-webster.com/dictionary/excuse#dictionary-entry-2",
+        "https://www.anglo-norman.net/entry/excuse",
+        "https://www.anglo-norman.net/entry/excuser"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

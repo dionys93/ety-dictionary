@@ -1,54 +1,81 @@
 [
   {
-    "name": "dial",
-    "etymology": [
-      {
-        "name": "dies, rota dialis",
-        "origin": "Latin"
-      },
-      {
-        "name": "dyal",
-        "origin": "Old French"
-      },
-      {
-        "name": "dial",
-        "origin": "Modern English"
-      },
-      {
-        "name": "dîale, dîals",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/dial#etymonline_v_8513",
-      "https://www.merriam-webster.com/dictionary/dial#dictionary-entry-1",
-      "https://www.oed.com/dictionary/dial_n1?tab=meaning_and_use#6918694",
-      "https://latin-dictionary.net/definition/17599/dies-diei"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "dial",
+      "etymology": [
+        {
+          "name": "dies, rota dialis",
+          "origin": "Latin"
+        },
+        {
+          "name": "dyal",
+          "origin": "Old French"
+        },
+        {
+          "name": "dial",
+          "origin": "Modern English"
+        },
+        {
+          "name": "dîale, dîals",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/dial#etymonline_v_8513",
+        "https://www.merriam-webster.com/dictionary/dial#dictionary-entry-1",
+        "https://www.oed.com/dictionary/dial_n1?tab=meaning_and_use#6918694",
+        "https://latin-dictionary.net/definition/17599/dies-diei"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to dial",
-    "etymology": [
-      {
-        "name": "to dial",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to dial",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta dîale -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to dial",
+        "ta dîale -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to dial",
+      "etymology": [
+        {
+          "name": "to dial",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta dîale -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/dial#etymonline_v_46288",
+        "https://www.etymonline.com/word/dial#etymonline_v_8513",
+        "https://www.merriam-webster.com/dictionary/dial#dictionary-entry-2",
+        "https://www.oed.com/dictionary/dial_v?tab=factsheet#6919798"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/dial#etymonline_v_46288",
-      "https://www.etymonline.com/word/dial#etymonline_v_8513",
-      "https://www.merriam-webster.com/dictionary/dial#dictionary-entry-2",
-      "https://www.oed.com/dictionary/dial_v?tab=factsheet#6919798"
-    ]
+    }
   }
 ]

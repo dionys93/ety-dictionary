@@ -1,51 +1,76 @@
 [
   {
-    "name": "echo",
-    "etymology": [
-      {
-        "name": "ἠχή, ἠχώ",
-        "origin": "Ancient Greek"
-      },
-      {
-        "name": "echo",
-        "origin": "Latin"
-      },
-      {
-        "name": "eko -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/echo#etymonline_v_973",
-      "https://www.merriam-webster.com/dictionary/echo#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/echo#dictionary-entry-3",
-      "https://latin-dictionary.net/definition/18673/echoos-echi",
-      "https://lsj.gr/wiki/%E1%BC%A0%CF%87%CF%8E",
-      "https://lsj.gr/wiki/%E1%BC%A0%CF%87%CE%AE"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "echo",
+      "etymology": [
+        {
+          "name": "ἠχή, ἠχώ",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "echo",
+          "origin": "Latin"
+        },
+        {
+          "name": "eko -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/echo#etymonline_v_973",
+        "https://www.merriam-webster.com/dictionary/echo#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/echo#dictionary-entry-3",
+        "https://latin-dictionary.net/definition/18673/echoos-echi",
+        "https://lsj.gr/wiki/%E1%BC%A0%CF%87%CF%8E",
+        "https://lsj.gr/wiki/%E1%BC%A0%CF%87%CE%AE"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to echo",
-    "etymology": [
-      {
-        "name": "to echo",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to echo",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d"
       },
-      {
-        "name": "ta ekoe -s -d -ɯing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to echo",
+        "ta ekoe -s -d -ɯing"
+      ]
+    },
+    "standard": {
+      "name": "to echo",
+      "etymology": [
+        {
+          "name": "to echo",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta ekoe -s -d -ɯing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/echo#etymonline_v_45724",
+        "https://www.etymonline.com/word/echo#etymonline_v_973",
+        "https://www.merriam-webster.com/dictionary/echo#dictionary-entry-2"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/echo#etymonline_v_45724",
-      "https://www.etymonline.com/word/echo#etymonline_v_973",
-      "https://www.merriam-webster.com/dictionary/echo#dictionary-entry-2"
-    ]
+    }
   }
 ]

@@ -1,114 +1,172 @@
 [
   {
-    "name": "range",
-    "etymology": [
-      {
-        "name": "renge",
-        "origin": "Old French"
-      },
-      {
-        "name": "range",
-        "origin": "Modern English"
-      },
-      {
-        "name": "rânge -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun",
-          "adverb"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/range#etymonline_v_3345",
-      "https://www.oed.com/dictionary/range_n1?tab=meaning_and_use#27057495",
-      "https://www.oed.com/dictionary/range_n1?tab=pronunciation#27057495",
-      "https://anglo-norman.net/entry/renge_1"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "range",
+      "etymology": [
+        {
+          "name": "renge",
+          "origin": "Old French"
+        },
+        {
+          "name": "range",
+          "origin": "Modern English"
+        },
+        {
+          "name": "rânge -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun",
+            "adverb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/range#etymonline_v_3345",
+        "https://www.oed.com/dictionary/range_n1?tab=meaning_and_use#27057495",
+        "https://www.oed.com/dictionary/range_n1?tab=pronunciation#27057495",
+        "https://anglo-norman.net/entry/renge_1"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to range",
-    "etymology": [
-      {
-        "name": "ranger, rangier, rengier",
-        "origin": "Old French"
+    "verbDetails": {
+      "infinitive": "to range",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "rengen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to range",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta rânge -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "ranger, rangier, rengier",
+        "rengen",
+        "to range",
+        "ta rânge -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to range",
+      "etymology": [
+        {
+          "name": "ranger, rangier, rengier",
+          "origin": "Old French"
+        },
+        {
+          "name": "rengen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to range",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta rânge -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/range#etymonline_v_43865",
+        "https://www.etymonline.com/word/arrange#etymonline_v_17021",
+        "https://www.oed.com/dictionary/range_v1?tab=meaning_and_use#27061797",
+        "https://www.oed.com/dictionary/range_v1?tab=pronunciation#27061797",
+        "https://anglo-norman.net/entry/ranger"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/range#etymonline_v_43865",
-      "https://www.etymonline.com/word/arrange#etymonline_v_17021",
-      "https://www.oed.com/dictionary/range_v1?tab=meaning_and_use#27061797",
-      "https://www.oed.com/dictionary/range_v1?tab=pronunciation#27061797",
-      "https://anglo-norman.net/entry/ranger"
-    ]
+    }
   },
   {
-    "name": "to arrange",
-    "etymology": [
-      {
-        "name": "arengier",
-        "origin": "Old French"
+    "verbDetails": {
+      "infinitive": "to arrange",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "arengen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to arrange",
-        "origin": "Modern English"
-      },
-      {
-        "name": "to arânge -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "arengier",
+        "arengen",
+        "to arrange",
+        "to arânge -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to arrange",
+      "etymology": [
+        {
+          "name": "arengier",
+          "origin": "Old French"
+        },
+        {
+          "name": "arengen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to arrange",
+          "origin": "Modern English"
+        },
+        {
+          "name": "to arânge -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/arrange#etymonline_v_17021",
+        "https://www.oed.com/dictionary/arrange_v?tab=factsheet#39069249",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED2168",
+        "https://anglo-norman.net/entry/arenger"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/arrange#etymonline_v_17021",
-      "https://www.oed.com/dictionary/arrange_v?tab=factsheet#39069249",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED2168",
-      "https://anglo-norman.net/entry/arenger"
-    ]
+    }
   },
   {
-    "name": "arrangement",
-    "etymology": [
-      {
-        "name": "arengement",
-        "origin": "Old French"
-      },
-      {
-        "name": "arrangement",
-        "origin": "Modern English"
-      },
-      {
-        "name": "arângement -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/arrangement#etymonline_v_26538",
-      "https://www.oed.com/dictionary/arrangement_n?tab=factsheet#39073355"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "arrangement",
+      "etymology": [
+        {
+          "name": "arengement",
+          "origin": "Old French"
+        },
+        {
+          "name": "arrangement",
+          "origin": "Modern English"
+        },
+        {
+          "name": "arângement -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/arrangement#etymonline_v_26538",
+        "https://www.oed.com/dictionary/arrangement_n?tab=factsheet#39073355"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

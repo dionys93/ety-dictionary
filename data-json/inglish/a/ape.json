@@ -1,46 +1,71 @@
 [
   {
-    "name": "apa, ape",
-    "etymology": [
-      {
-        "name": "apa, ape",
-        "origin": "Old English"
-      },
-      {
-        "name": "âpe, âps",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/ape#etymonline_v_15453",
-      "https://www.merriam-webster.com/dictionary/ape#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/ape#dictionary-entry-3",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED1808",
-      "https://bosworthtoller.com/2008"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "apa, ape",
+      "etymology": [
+        {
+          "name": "apa, ape",
+          "origin": "Old English"
+        },
+        {
+          "name": "âpe, âps",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/ape#etymonline_v_15453",
+        "https://www.merriam-webster.com/dictionary/ape#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/ape#dictionary-entry-3",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED1808",
+        "https://bosworthtoller.com/2008"
+      ]
+    }
   },
   {
-    "name": "to ape",
-    "etymology": [
-      {
-        "name": "to ape",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to ape",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta âpe -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to ape",
+        "ta âpe -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to ape",
+      "etymology": [
+        {
+          "name": "to ape",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta âpe -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/ape#etymonline_v_41341",
+        "https://www.merriam-webster.com/dictionary/ape#dictionary-entry-2"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/ape#etymonline_v_41341",
-      "https://www.merriam-webster.com/dictionary/ape#dictionary-entry-2"
-    ]
+    }
   }
 ]

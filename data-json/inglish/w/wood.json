@@ -1,75 +1,110 @@
 [
   {
-    "name": "wood",
-    "etymology": [
-      {
-        "name": "widu, wudu",
-        "origin": "Old English"
-      },
-      {
-        "name": "wode",
-        "origin": "Middle English"
-      },
-      {
-        "name": "wood",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ɯeud -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "noun"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "wood",
+      "etymology": [
+        {
+          "name": "widu, wudu",
+          "origin": "Old English"
+        },
+        {
+          "name": "wode",
+          "origin": "Middle English"
+        },
+        {
+          "name": "wood",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ɯeud -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/wood#etymonline_v_10834",
+        "https://www.merriam-webster.com/dictionary/wood#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/wood#dictionary-entry-2",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED53253",
+        "https://bosworthtoller.com/36709"
+      ],
+      "degrees": {
+        "positive": "eud",
+        "comparative": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/wood#etymonline_v_10834",
-      "https://www.merriam-webster.com/dictionary/wood#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/wood#dictionary-entry-2",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED53253",
-      "https://bosworthtoller.com/36709"
-    ]
+    }
   },
   {
-    "name": "to wood",
-    "etymology": [
-      {
-        "name": "to wood",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to wood",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta ɯeude -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to wood",
+        "ta ɯeude -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to wood",
+      "etymology": [
+        {
+          "name": "to wood",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta ɯeude -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/wood#dictionary-entry-3"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/wood#dictionary-entry-3"
-    ]
+    }
   },
   {
-    "name": "wooden",
-    "etymology": [
-      {
-        "name": "wooden",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ɯeuden",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/wooden#etymonline_v_40216",
-      "https://www.etymonline.com/word/wood#etymonline_v_10834",
-      "https://www.etymonline.com/word/-en#etymonline_v_32446",
-      "https://www.merriam-webster.com/dictionary/wooden"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "wooden",
+      "etymology": [
+        {
+          "name": "wooden",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ɯeuden",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/wooden#etymonline_v_40216",
+        "https://www.etymonline.com/word/wood#etymonline_v_10834",
+        "https://www.etymonline.com/word/-en#etymonline_v_32446",
+        "https://www.merriam-webster.com/dictionary/wooden"
+      ]
+    }
   }
 ]

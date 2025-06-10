@@ -1,196 +1,273 @@
 [
   {
-    "name": "honor",
-    "etymology": [
-      {
-        "name": "honos, honorem",
-        "origin": "Latin"
-      },
-      {
-        "name": "honor",
-        "origin": "Old French"
-      },
-      {
-        "name": "ónor -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/honor#etymonline_v_12148",
-      "https://www.merriam-webster.com/dictionary/honor#dictionary-entry-1",
-      "https://anglo-norman.net/entry/honur",
-      "https://latin-dictionary.net/definition/22284/honos-honoris"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "honor",
+      "etymology": [
+        {
+          "name": "honos, honorem",
+          "origin": "Latin"
+        },
+        {
+          "name": "honor",
+          "origin": "Old French"
+        },
+        {
+          "name": "ónor -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/honor#etymonline_v_12148",
+        "https://www.merriam-webster.com/dictionary/honor#dictionary-entry-1",
+        "https://anglo-norman.net/entry/honur",
+        "https://latin-dictionary.net/definition/22284/honos-honoris"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to honor",
-    "etymology": [
-      {
-        "name": "honor, honorare",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to honor",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "honorer",
-        "origin": "Old French"
-      },
-      {
-        "name": "honouren",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to honor",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta ónore -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "honor, honorare",
+        "honorer",
+        "honouren",
+        "to honor",
+        "ta ónore -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to honor",
+      "etymology": [
+        {
+          "name": "honor, honorare",
+          "origin": "Latin"
+        },
+        {
+          "name": "honorer",
+          "origin": "Old French"
+        },
+        {
+          "name": "honouren",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to honor",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta ónore -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/honor#etymonline_v_41064",
+        "https://www.merriam-webster.com/dictionary/honor#dictionary-entry-2",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED21153",
+        "https://anglo-norman.net/entry/honurer",
+        "https://latin-dictionary.net/definition/22282/honoro-honorare-honoravi-honoratus",
+        "https://latin-dictionary.net/definition/22269/honor-honoris"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/honor#etymonline_v_41064",
-      "https://www.merriam-webster.com/dictionary/honor#dictionary-entry-2",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED21153",
-      "https://anglo-norman.net/entry/honurer",
-      "https://latin-dictionary.net/definition/22282/honoro-honorare-honoravi-honoratus",
-      "https://latin-dictionary.net/definition/22269/honor-honoris"
-    ]
+    }
   },
   {
-    "name": "honorable",
-    "etymology": [
-      {
-        "name": "honor, honorare, honorabilis",
-        "origin": "Latin"
-      },
-      {
-        "name": "honorable",
-        "origin": "Old French"
-      },
-      {
-        "name": "ónorable -y",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "honorable",
+      "etymology": [
+        {
+          "name": "honor, honorare, honorabilis",
+          "origin": "Latin"
+        },
+        {
+          "name": "honorable",
+          "origin": "Old French"
+        },
+        {
+          "name": "ónorable -y",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/honorable#etymonline_v_34192",
+        "https://www.merriam-webster.com/dictionary/honorable",
+        "https://anglo-norman.net/entry/honurable",
+        "https://latin-dictionary.net/definition/22270/honorabilis-honorabilis-honorabile",
+        "https://latin-dictionary.net/definition/22282/honoro-honorare-honoravi-honoratus",
+        "https://latin-dictionary.net/definition/22269/honor-honoris"
+      ],
+      "degrees": {
+        "positive": "norable",
+        "comparative": "y"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/honorable#etymonline_v_34192",
-      "https://www.merriam-webster.com/dictionary/honorable",
-      "https://anglo-norman.net/entry/honurable",
-      "https://latin-dictionary.net/definition/22270/honorabilis-honorabilis-honorabile",
-      "https://latin-dictionary.net/definition/22282/honoro-honorare-honoravi-honoratus",
-      "https://latin-dictionary.net/definition/22269/honor-honoris"
-    ]
+    }
   },
   {
-    "name": "honorific",
-    "etymology": [
-      {
-        "name": "honorem + facere, honorificus",
-        "origin": "Latin"
-      },
-      {
-        "name": "honorifique",
-        "origin": "French"
-      },
-      {
-        "name": "honorific",
-        "origin": "Modern English"
-      },
-      {
-        "name": "onorific -s -ly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "feminine noun"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "honorific",
+      "etymology": [
+        {
+          "name": "honorem + facere, honorificus",
+          "origin": "Latin"
+        },
+        {
+          "name": "honorifique",
+          "origin": "French"
+        },
+        {
+          "name": "honorific",
+          "origin": "Modern English"
+        },
+        {
+          "name": "onorific -s -ly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/honorific#etymonline_v_34393",
+        "https://www.merriam-webster.com/dictionary/honorific",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/honorifique/40268",
+        "https://latin-dictionary.net/search/latin/honorificus"
+      ],
+      "degrees": {
+        "positive": "onorific",
+        "comparative": "s",
+        "superlative": "ly"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/honorific#etymonline_v_34393",
-      "https://www.merriam-webster.com/dictionary/honorific",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/honorifique/40268",
-      "https://latin-dictionary.net/search/latin/honorificus"
-    ]
+    }
   },
   {
-    "name": "honorary",
-    "etymology": [
-      {
-        "name": "honorarius",
-        "origin": "Latin"
-      },
-      {
-        "name": "honoraire",
-        "origin": "French"
-      },
-      {
-        "name": "honorary",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ónorairy, ónorairie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "masculine noun"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "honorary",
+      "etymology": [
+        {
+          "name": "honorarius",
+          "origin": "Latin"
+        },
+        {
+          "name": "honoraire",
+          "origin": "French"
+        },
+        {
+          "name": "honorary",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ónorairy, ónorairie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/honorary#etymonline_v_34193",
+        "https://www.oed.com/dictionary/honorary_adj?tab=factsheet#1532525",
+        "https://www.merriam-webster.com/dictionary/honorary",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/honoraire/40259",
+        "https://latin-dictionary.net/definition/22273/honorarius-honoraria-honorarium"
+      ],
+      "degrees": {
+        "positive": "norairie",
+        "comparative": "is"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/honorary#etymonline_v_34193",
-      "https://www.oed.com/dictionary/honorary_adj?tab=factsheet#1532525",
-      "https://www.merriam-webster.com/dictionary/honorary",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/honoraire/40259",
-      "https://latin-dictionary.net/definition/22273/honorarius-honoraria-honorarium"
-    ]
+    }
   },
   {
-    "name": "honoree",
-    "etymology": [
-      {
-        "name": "honoree",
-        "origin": "Modern English"
-      },
-      {
-        "name": "onoríe -ís",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/honoree#etymonline_v_34394",
-      "https://www.oed.com/dictionary/honouree_n?tab=factsheet#312834484"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "honoree",
+      "etymology": [
+        {
+          "name": "honoree",
+          "origin": "Modern English"
+        },
+        {
+          "name": "onoríe -ís",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/honoree#etymonline_v_34394",
+        "https://www.oed.com/dictionary/honouree_n?tab=factsheet#312834484"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "honorarium, honoraria",
-    "etymology": [
-      {
-        "name": "honorarium, honoraria",
-        "origin": "Latin"
-      },
-      {
-        "name": "onorâriom, onorâria",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/honorarium#etymonline_v_34195",
-      "https://www.etymonline.com/word/honoraria#etymonline_v_34194",
-      "https://www.merriam-webster.com/dictionary/honorarium"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "honorarium, honoraria",
+      "etymology": [
+        {
+          "name": "honorarium, honoraria",
+          "origin": "Latin"
+        },
+        {
+          "name": "onorâriom, onorâria",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/honorarium#etymonline_v_34195",
+        "https://www.etymonline.com/word/honoraria#etymonline_v_34194",
+        "https://www.merriam-webster.com/dictionary/honorarium"
+      ],
+      "gender": "feminine",
+      "number": "singular"
+    }
   }
 ]

@@ -1,109 +1,152 @@
 [
   {
-    "name": "to gravitate",
-    "etymology": [
-      {
-        "name": "gravis, gravitas",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to gravitate",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "gravitare",
-        "origin": "Medieval Latin"
-      },
-      {
-        "name": "to gravitate",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta gravitete -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "gravis, gravitas",
+        "gravitare",
+        "to gravitate",
+        "ta gravitete -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to gravitate",
+      "etymology": [
+        {
+          "name": "gravis, gravitas",
+          "origin": "Latin"
+        },
+        {
+          "name": "gravitare",
+          "origin": "Medieval Latin"
+        },
+        {
+          "name": "to gravitate",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta gravitete -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/gravitate#etymonline_v_33788",
+        "https://www.oed.com/dictionary/gravitate_v?tab=factsheet#2388972",
+        "https://latin-dictionary.net/definition/21708/gravito-gravitare-gravitavi-gravitatus",
+        "https://latin-dictionary.net/definition/21706/gravitas-gravitatis",
+        "https://latin-dictionary.net/definition/21705/gravis-grave-gravior"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/gravitate#etymonline_v_33788",
-      "https://www.oed.com/dictionary/gravitate_v?tab=factsheet#2388972",
-      "https://latin-dictionary.net/definition/21708/gravito-gravitare-gravitavi-gravitatus",
-      "https://latin-dictionary.net/definition/21706/gravitas-gravitatis",
-      "https://latin-dictionary.net/definition/21705/gravis-grave-gravior"
-    ]
+    }
   },
   {
-    "name": "gravitation",
-    "etymology": [
-      {
-        "name": "gravitare",
-        "origin": "Medieval Latin"
-      },
-      {
-        "name": "gravitation",
-        "origin": "Modern English"
-      },
-      {
-        "name": "gravitâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/gravitation#etymonline_v_33789",
-      "https://www.oed.com/dictionary/gravitation_n?tab=factsheet#2389523",
-      "https://latin-dictionary.net/definition/21708/gravito-gravitare-gravitavi-gravitatus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "gravitation",
+      "etymology": [
+        {
+          "name": "gravitare",
+          "origin": "Medieval Latin"
+        },
+        {
+          "name": "gravitation",
+          "origin": "Modern English"
+        },
+        {
+          "name": "gravitâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/gravitation#etymonline_v_33789",
+        "https://www.oed.com/dictionary/gravitation_n?tab=factsheet#2389523",
+        "https://latin-dictionary.net/definition/21708/gravito-gravitare-gravitavi-gravitatus"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "gravitational",
-    "etymology": [
-      {
-        "name": "gravitational",
-        "origin": "Modern English"
-      },
-      {
-        "name": "gravitâcional -ly",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/gravitational#etymonline_v_50928",
-      "https://www.oed.com/dictionary/gravitational_adj?tab=factsheet#2389963"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "gravitational",
+      "etymology": [
+        {
+          "name": "gravitational",
+          "origin": "Modern English"
+        },
+        {
+          "name": "gravitâcional -ly",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/gravitational#etymonline_v_50928",
+        "https://www.oed.com/dictionary/gravitational_adj?tab=factsheet#2389963"
+      ]
+    }
   },
   {
-    "name": "gravity",
-    "etymology": [
-      {
-        "name": "gravitatem",
-        "origin": "Latin"
-      },
-      {
-        "name": "gravité",
-        "origin": "Old French"
-      },
-      {
-        "name": "gravity",
-        "origin": "Modern English"
-      },
-      {
-        "name": "gravetie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/gravity#etymonline_v_11939",
-      "https://www.merriam-webster.com/dictionary/gravity",
-      "https://www.oed.com/dictionary/gravity_n?tab=pronunciation#2390557",
-      "https://www.collinsdictionary.com/us/dictionary/english/gravity",
-      "https://dictionary.cambridge.org/us/dictionary/english/gravity",
-      "https://www.collinsdictionary.com/dictionary/english-french/gravity",
-      "https://latin-dictionary.net/definition/21706/gravitas-gravitatis",
-      "https://latin-dictionary.net/definition/21705/gravis-grave-gravior"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "gravity",
+      "etymology": [
+        {
+          "name": "gravitatem",
+          "origin": "Latin"
+        },
+        {
+          "name": "gravité",
+          "origin": "Old French"
+        },
+        {
+          "name": "gravity",
+          "origin": "Modern English"
+        },
+        {
+          "name": "gravetie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/gravity#etymonline_v_11939",
+        "https://www.merriam-webster.com/dictionary/gravity",
+        "https://www.oed.com/dictionary/gravity_n?tab=pronunciation#2390557",
+        "https://www.collinsdictionary.com/us/dictionary/english/gravity",
+        "https://dictionary.cambridge.org/us/dictionary/english/gravity",
+        "https://www.collinsdictionary.com/dictionary/english-french/gravity",
+        "https://latin-dictionary.net/definition/21706/gravitas-gravitatis",
+        "https://latin-dictionary.net/definition/21705/gravis-grave-gravior"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

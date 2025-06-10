@@ -1,47 +1,72 @@
 [
   {
-    "name": "trak, track",
-    "etymology": [
-      {
-        "name": "trac",
-        "origin": "Old French"
-      },
-      {
-        "name": "trak, track",
-        "origin": "Modern English"
-      },
-      {
-        "name": "trac -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/track",
-      "https://www.oed.com/dictionary/track_n?tab=factsheet#17850180",
-      "https://anglo-norman.net/entry/trace_1"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "trak, track",
+      "etymology": [
+        {
+          "name": "trac",
+          "origin": "Old French"
+        },
+        {
+          "name": "trak, track",
+          "origin": "Modern English"
+        },
+        {
+          "name": "trac -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/track",
+        "https://www.oed.com/dictionary/track_n?tab=factsheet#17850180",
+        "https://anglo-norman.net/entry/trace_1"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to track",
-    "etymology": [
-      {
-        "name": "to track",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to track",
+      "conjugations": {
+        "thirdPerson": "ed",
+        "pastTense": "ing"
       },
-      {
-        "name": "ta tracq tracs -ed -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to track",
+        "ta tracq tracs -ed -ing"
+      ]
+    },
+    "standard": {
+      "name": "to track",
+      "etymology": [
+        {
+          "name": "to track",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta tracq tracs -ed -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/track",
+        "https://www.oed.com/dictionary/track_v1?tab=factsheet#17853186"
+      ],
+      "conjugations": {
+        "thirdPerson": "ed",
+        "pastTense": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/track",
-      "https://www.oed.com/dictionary/track_v1?tab=factsheet#17853186"
-    ]
+    }
   }
 ]

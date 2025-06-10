@@ -1,46 +1,69 @@
 [
   {
-    "name": "to sink",
-    "etymology": [
-      {
-        "name": "sincan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to sink",
+      "conjugations": {
+        "thirdPerson": "s"
       },
-      {
-        "name": "sinken",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to sink",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta sinke -s sânk sonk -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "sincan",
+        "sinken",
+        "to sink",
+        "ta sinke -s sânk sonk -ing"
+      ]
+    },
+    "standard": {
+      "name": "to sink",
+      "etymology": [
+        {
+          "name": "sincan",
+          "origin": "Old English"
+        },
+        {
+          "name": "sinken",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to sink",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta sinke -s sânk sonk -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/sink#etymonline_v_23562",
+        "https://www.merriam-webster.com/dictionary/sink#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40475",
+        "https://bosworthtoller.com/27774"
+      ],
+      "conjugations": {
+        "thirdPerson": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/sink#etymonline_v_23562",
-      "https://www.merriam-webster.com/dictionary/sink#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40475",
-      "https://bosworthtoller.com/27774"
-    ]
+    }
   },
   {
-    "name": "sink  -x (n)",
-    "etymology": [
-      {
-        "name": "sink  -x (n)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/sink#etymonline_v_24128",
-      "https://www.etymonline.com/word/sink#etymonline_v_23562",
-      "https://www.merriam-webster.com/dictionary/sink#dictionary-entry-2"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "sink  -x (n)",
+      "etymology": [
+        {
+          "name": "sink  -x (n)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/sink#etymonline_v_24128",
+        "https://www.etymonline.com/word/sink#etymonline_v_23562",
+        "https://www.merriam-webster.com/dictionary/sink#dictionary-entry-2"
+      ]
+    }
   }
 ]

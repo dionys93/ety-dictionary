@@ -1,114 +1,174 @@
 [
   {
-    "name": "to found",
-    "etymology": [
-      {
-        "name": "fundus, fundare",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to found",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "fonder",
-        "origin": "Old French"
-      },
-      {
-        "name": "to found",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta faonde -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "fundus, fundare",
+        "fonder",
+        "to found",
+        "ta faonde -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to found",
+      "etymology": [
+        {
+          "name": "fundus, fundare",
+          "origin": "Latin"
+        },
+        {
+          "name": "fonder",
+          "origin": "Old French"
+        },
+        {
+          "name": "to found",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta faonde -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/found",
+        "https://www.oed.com/dictionary/found_v2?tab=factsheet#3595846",
+        "https://www.oed.com/dictionary/found_v3?tab=factsheet#3596638",
+        "https://anglo-norman.net/entry/funder_1",
+        "https://latin-dictionary.net/definition/21176/fundo-fundare-fundavi-fundatus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/found",
-      "https://www.oed.com/dictionary/found_v2?tab=factsheet#3595846",
-      "https://www.oed.com/dictionary/found_v3?tab=factsheet#3596638",
-      "https://anglo-norman.net/entry/funder_1",
-      "https://latin-dictionary.net/definition/21176/fundo-fundare-fundavi-fundatus"
-    ]
+    }
   },
   {
-    "name": "to found",
-    "etymology": [
-      {
-        "name": "fundere",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to found",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "fondre",
-        "origin": "Old French"
-      },
-      {
-        "name": "to found",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta faonde -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "fundere",
+        "fondre",
+        "to found",
+        "ta faonde -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to found",
+      "etymology": [
+        {
+          "name": "fundere",
+          "origin": "Latin"
+        },
+        {
+          "name": "fondre",
+          "origin": "Old French"
+        },
+        {
+          "name": "to found",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta faonde -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/found",
+        "https://www.oed.com/dictionary/found_v3?tab=factsheet#3596638",
+        "https://www.littre.org/definition/fondre",
+        "https://latin-dictionary.net/definition/21177/fundo-fundere-fudi-fusus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/found",
-      "https://www.oed.com/dictionary/found_v3?tab=factsheet#3596638",
-      "https://www.littre.org/definition/fondre",
-      "https://latin-dictionary.net/definition/21177/fundo-fundere-fudi-fusus"
-    ]
+    }
   },
   {
-    "name": "foundation",
-    "etymology": [
-      {
-        "name": "fundare, fundatio, fundationem",
-        "origin": "Latin"
-      },
-      {
-        "name": "foundacion",
-        "origin": "Old French"
-      },
-      {
-        "name": "foundation",
-        "origin": "Modern English"
-      },
-      {
-        "name": "faondâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/foundation",
-      "https://www.oed.com/dictionary/foundation_n?tab=factsheet#3597023",
-      "https://anglo-norman.net/entry/foundacion",
-      "https://latin-dictionary.net/definition/21166/fundatio-fundationis",
-      "https://latin-dictionary.net/definition/21176/fundo-fundare-fundavi-fundatus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "foundation",
+      "etymology": [
+        {
+          "name": "fundare, fundatio, fundationem",
+          "origin": "Latin"
+        },
+        {
+          "name": "foundacion",
+          "origin": "Old French"
+        },
+        {
+          "name": "foundation",
+          "origin": "Modern English"
+        },
+        {
+          "name": "faondâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/foundation",
+        "https://www.oed.com/dictionary/foundation_n?tab=factsheet#3597023",
+        "https://anglo-norman.net/entry/foundacion",
+        "https://latin-dictionary.net/definition/21166/fundatio-fundationis",
+        "https://latin-dictionary.net/definition/21176/fundo-fundare-fundavi-fundatus"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "foundational",
-    "etymology": [
-      {
-        "name": "foundational",
-        "origin": "Modern English"
-      },
-      {
-        "name": "faondâcional -ly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "foundational",
+      "etymology": [
+        {
+          "name": "foundational",
+          "origin": "Modern English"
+        },
+        {
+          "name": "faondâcional -ly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/foundational",
+        "https://www.oed.com/dictionary/foundational_adj?tab=factsheet#3598421"
+      ],
+      "degrees": {
+        "positive": "cional",
+        "comparative": "ly"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/foundational",
-      "https://www.oed.com/dictionary/foundational_adj?tab=factsheet#3598421"
-    ]
+    }
   }
 ]

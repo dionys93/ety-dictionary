@@ -1,132 +1,183 @@
 [
   {
-    "name": "progress",
-    "etymology": [
-      {
-        "name": "gradus, pro + gradi, progredi, progressus",
-        "origin": "Latin"
-      },
-      {
-        "name": "progres",
-        "origin": "Old French"
-      },
-      {
-        "name": "progresse",
-        "origin": "Middle English"
-      },
-      {
-        "name": "progress",
-        "origin": "Modern English"
-      },
-      {
-        "name": "prógress -es",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/progress#etymonline_v_2641",
-      "https://www.merriam-webster.com/dictionary/progress#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED34841",
-      "https://www.anglo-norman.net/entry/progr%C3%A9s",
-      "https://latin-dictionary.net/definition/31821/progredior-progredi-progressus",
-      "https://latin-dictionary.net/definition/21606/gradior-gradi-gressus",
-      "https://latin-dictionary.net/definition/21611/gradus-gradus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "progress",
+      "etymology": [
+        {
+          "name": "gradus, pro + gradi, progredi, progressus",
+          "origin": "Latin"
+        },
+        {
+          "name": "progres",
+          "origin": "Old French"
+        },
+        {
+          "name": "progresse",
+          "origin": "Middle English"
+        },
+        {
+          "name": "progress",
+          "origin": "Modern English"
+        },
+        {
+          "name": "prógress -es",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/progress#etymonline_v_2641",
+        "https://www.merriam-webster.com/dictionary/progress#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED34841",
+        "https://www.anglo-norman.net/entry/progr%C3%A9s",
+        "https://latin-dictionary.net/definition/31821/progredior-progredi-progressus",
+        "https://latin-dictionary.net/definition/21606/gradior-gradi-gressus",
+        "https://latin-dictionary.net/definition/21611/gradus-gradus"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to progress",
-    "etymology": [
-      {
-        "name": "to progress",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to progress",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta progresse -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to progress",
+        "ta progresse -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to progress",
+      "etymology": [
+        {
+          "name": "to progress",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta progresse -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/progress#etymonline_v_46457",
+        "https://www.etymonline.com/word/progress#etymonline_v_2641",
+        "https://www.merriam-webster.com/dictionary/progress#dictionary-entry-2"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/progress#etymonline_v_46457",
-      "https://www.etymonline.com/word/progress#etymonline_v_2641",
-      "https://www.merriam-webster.com/dictionary/progress#dictionary-entry-2"
-    ]
+    }
   },
   {
-    "name": "progression  -s (f n)",
-    "etymology": [
-      {
-        "name": "gradus, pro + gradi, progredi, progressio, progressionem",
-        "origin": "Latin"
-      },
-      {
-        "name": "progression  -s (f n)",
-        "origin": "Old French"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/progression#etymonline_v_2642",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED34842/track?counter=1&search_id=40329610",
-      "https://latin-dictionary.net/definition/31822/progressio-progressionis",
-      "https://latin-dictionary.net/definition/31821/progredior-progredi-progressus",
-      "https://latin-dictionary.net/definition/21606/gradior-gradi-gressus",
-      "https://latin-dictionary.net/definition/21611/gradus-gradus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "progression  -s (f n)",
+      "etymology": [
+        {
+          "name": "gradus, pro + gradi, progredi, progressio, progressionem",
+          "origin": "Latin"
+        },
+        {
+          "name": "progression  -s (f n)",
+          "origin": "Old French"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/progression#etymonline_v_2642",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED34842/track?counter=1&search_id=40329610",
+        "https://latin-dictionary.net/definition/31822/progressio-progressionis",
+        "https://latin-dictionary.net/definition/31821/progredior-progredi-progressus",
+        "https://latin-dictionary.net/definition/21606/gradior-gradi-gressus",
+        "https://latin-dictionary.net/definition/21611/gradus-gradus"
+      ]
+    }
   },
   {
-    "name": "progressive",
-    "etymology": [
-      {
-        "name": "progredi",
-        "origin": "Latin"
-      },
-      {
-        "name": "progressif",
-        "origin": "French"
-      },
-      {
-        "name": "progressive",
-        "origin": "Modern English"
-      },
-      {
-        "name": "progrèssif -vly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "progressive",
+      "etymology": [
+        {
+          "name": "progredi",
+          "origin": "Latin"
+        },
+        {
+          "name": "progressif",
+          "origin": "French"
+        },
+        {
+          "name": "progressive",
+          "origin": "Modern English"
+        },
+        {
+          "name": "progrèssif -vly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/progressive#etymonline_v_2643",
+        "https://www.etymonline.com/word/progress#etymonline_v_2641",
+        "https://www.collinsdictionary.com/us/dictionary/french-english/progressif",
+        "https://latin-dictionary.net/definition/31821/progredior-progredi-progressus"
+      ],
+      "degrees": {
+        "positive": "ssif",
+        "comparative": "vly"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/progressive#etymonline_v_2643",
-      "https://www.etymonline.com/word/progress#etymonline_v_2641",
-      "https://www.collinsdictionary.com/us/dictionary/french-english/progressif",
-      "https://latin-dictionary.net/definition/31821/progredior-progredi-progressus"
-    ]
+    }
   },
   {
-    "name": "progressivism",
-    "etymology": [
-      {
-        "name": "progressivism",
-        "origin": "Modern English"
-      },
-      {
-        "name": "progrèssivism",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/progressivism#etymonline_v_36555",
-      "https://www.etymonline.com/word/progressive#etymonline_v_2643",
-      "https://www.etymonline.com/word/-ism#etymonline_v_12269"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "progressivism",
+      "etymology": [
+        {
+          "name": "progressivism",
+          "origin": "Modern English"
+        },
+        {
+          "name": "progrèssivism",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/progressivism#etymonline_v_36555",
+        "https://www.etymonline.com/word/progressive#etymonline_v_2643",
+        "https://www.etymonline.com/word/-ism#etymonline_v_12269"
+      ],
+      "gender": "feminine",
+      "number": "singular"
+    }
   }
 ]

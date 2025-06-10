@@ -1,39 +1,53 @@
 [
   {
-    "name": "to encapsulate",
-    "etymology": [
-      {
-        "name": "to encapsulate",
-        "origin": "Modern English"
-      },
-      {
-        "name": "to encàpsulete -s -d -ing",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/encapsulate#etymonline_v_8627",
-      "https://www.oed.com/dictionary/encapsulate_v?tab=factsheet#5564242"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "to encapsulate",
+      "etymology": [
+        {
+          "name": "to encapsulate",
+          "origin": "Modern English"
+        },
+        {
+          "name": "to encàpsulete -s -d -ing",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/encapsulate#etymonline_v_8627",
+        "https://www.oed.com/dictionary/encapsulate_v?tab=factsheet#5564242"
+      ]
+    }
   },
   {
-    "name": "encapsulation",
-    "etymology": [
-      {
-        "name": "encapsulation",
-        "origin": "Modern English"
-      },
-      {
-        "name": "encapsulâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/encapsulation",
-      "https://www.etymonline.com/word/encapsulate#etymonline_v_8627"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "encapsulation",
+      "etymology": [
+        {
+          "name": "encapsulation",
+          "origin": "Modern English"
+        },
+        {
+          "name": "encapsulâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/encapsulation",
+        "https://www.etymonline.com/word/encapsulate#etymonline_v_8627"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

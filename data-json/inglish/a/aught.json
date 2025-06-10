@@ -1,35 +1,42 @@
 [
   {
-    "name": "aught",
-    "etymology": [
-      {
-        "name": "awiht",
-        "origin": "Old English"
-      },
-      {
-        "name": "ought",
-        "origin": "Middle English"
-      },
-      {
-        "name": "aught",
-        "origin": "Modern English"
-      },
-      {
-        "name": "auht",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "pronoun",
-          "adjective",
-          "adverb"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/aught#etymonline_v_18938",
-      "https://www.merriam-webster.com/dictionary/aught#dictionary-entry-1",
-      "https://www.oed.com/dictionary/aught_pron?tab=meaning_and_use#33870382",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED31057",
-      "https://bosworthtoller.com/2708"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "aught",
+      "etymology": [
+        {
+          "name": "awiht",
+          "origin": "Old English"
+        },
+        {
+          "name": "ought",
+          "origin": "Middle English"
+        },
+        {
+          "name": "aught",
+          "origin": "Modern English"
+        },
+        {
+          "name": "auht",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "pronoun",
+            "adjective",
+            "adverb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/aught#etymonline_v_18938",
+        "https://www.merriam-webster.com/dictionary/aught#dictionary-entry-1",
+        "https://www.oed.com/dictionary/aught_pron?tab=meaning_and_use#33870382",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED31057",
+        "https://bosworthtoller.com/2708"
+      ],
+      "number": "singular"
+    }
   }
 ]

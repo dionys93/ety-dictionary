@@ -1,60 +1,91 @@
 [
   {
-    "name": "lite",
-    "etymology": [
-      {
-        "name": "leoht, leht",
-        "origin": "Old English"
-      },
-      {
-        "name": "light",
-        "origin": "Middle English"
-      },
-      {
-        "name": "lite",
-        "origin": "Modern Slang"
-      },
-      {
-        "name": "lîte -r -st",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "lite",
+      "etymology": [
+        {
+          "name": "leoht, leht",
+          "origin": "Old English"
+        },
+        {
+          "name": "light",
+          "origin": "Middle English"
+        },
+        {
+          "name": "lite",
+          "origin": "Modern Slang"
+        },
+        {
+          "name": "lîte -r -st",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/lite#etymonline_v_43503",
+        "https://www.etymonline.com/word/light#etymonline_v_9503",
+        "https://www.merriam-webster.com/dictionary/lite#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/light#dictionary-entry-4",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25499",
+        "https://bosworthtoller.com/21444"
+      ],
+      "degrees": {
+        "positive": "te",
+        "comparative": "r",
+        "superlative": "st"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/lite#etymonline_v_43503",
-      "https://www.etymonline.com/word/light#etymonline_v_9503",
-      "https://www.merriam-webster.com/dictionary/lite#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/light#dictionary-entry-4",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25499",
-      "https://bosworthtoller.com/21444"
-    ]
+    }
   },
   {
-    "name": "to lighten",
-    "etymology": [
-      {
-        "name": "lighten, lightnen",
-        "origin": "Middle English"
+    "verbDetails": {
+      "infinitive": "to lighten",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to lighten",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta lîten -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "lighten, lightnen",
+        "to lighten",
+        "ta lîten -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to lighten",
+      "etymology": [
+        {
+          "name": "lighten, lightnen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to lighten",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta lîten -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/lighten#etymonline_v_30827",
+        "https://www.etymonline.com/word/light#etymonline_v_9503",
+        "https://www.merriam-webster.com/dictionary/lighten#dictionary-entry-2",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25521"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/lighten#etymonline_v_30827",
-      "https://www.etymonline.com/word/light#etymonline_v_9503",
-      "https://www.merriam-webster.com/dictionary/lighten#dictionary-entry-2",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25521"
-    ]
+    }
   }
 ]

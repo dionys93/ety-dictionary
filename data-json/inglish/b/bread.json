@@ -1,39 +1,64 @@
 [
   {
-    "name": "bread  -s (m n)",
-    "etymology": [
-      {
-        "name": "bread  -s (m n)",
-        "origin": "Old English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bread#etymonline_v_17077",
-      "https://www.merriam-webster.com/dictionary/bread#dictionary-entry-1",
-      "https://www.oed.com/dictionary/bread_n?tab=pronunciation#14443140",
-      "https://bosworthtoller.com/4983"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "bread  -s (m n)",
+      "etymology": [
+        {
+          "name": "bread  -s (m n)",
+          "origin": "Old English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bread#etymonline_v_17077",
+        "https://www.merriam-webster.com/dictionary/bread#dictionary-entry-1",
+        "https://www.oed.com/dictionary/bread_n?tab=pronunciation#14443140",
+        "https://bosworthtoller.com/4983"
+      ]
+    }
   },
   {
-    "name": "to bread",
-    "etymology": [
-      {
-        "name": "to bread",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to bread",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta breade -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to bread",
+        "ta breade -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to bread",
+      "etymology": [
+        {
+          "name": "to bread",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta breade -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bread#etymonline_v_32627",
+        "https://www.etymonline.com/word/bread#etymonline_v_17077",
+        "https://www.merriam-webster.com/dictionary/bread#dictionary-entry-2",
+        "https://www.oed.com/dictionary/bread_v?tab=factsheet#14446742"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bread#etymonline_v_32627",
-      "https://www.etymonline.com/word/bread#etymonline_v_17077",
-      "https://www.merriam-webster.com/dictionary/bread#dictionary-entry-2",
-      "https://www.oed.com/dictionary/bread_v?tab=factsheet#14446742"
-    ]
+    }
   }
 ]

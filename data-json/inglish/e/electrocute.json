@@ -1,96 +1,133 @@
 [
   {
-    "name": "electricity",
-    "etymology": [
-      {
-        "name": "ἤλεκτρον",
-        "origin": "Ancient Greek"
-      },
-      {
-        "name": "electrum",
-        "origin": "Latin"
-      },
-      {
-        "name": "electric -ly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "feminine noun"
-        ]
-      },
-      {
-        "name": "electrical",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      },
-      {
-        "name": "electricity",
-        "origin": "Modern English"
-      },
-      {
-        "name": "electriçatie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "electricity",
+      "etymology": [
+        {
+          "name": "ἤλεκτρον",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "electrum",
+          "origin": "Latin"
+        },
+        {
+          "name": "electric -ly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "feminine noun"
+          ]
+        },
+        {
+          "name": "electrical",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        },
+        {
+          "name": "electricity",
+          "origin": "Modern English"
+        },
+        {
+          "name": "electriçatie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/electric",
+        "https://www.oed.com/dictionary/electric_adj?tab=pronunciation#5821098",
+        "https://www.oed.com/dictionary/electric_adj?tab=meaning_and_use#5821098",
+        "https://latin-dictionary.net/definition/18899/electrum-electri",
+        "https://lsj.gr/wiki/%E1%BC%A4%CE%BB%CE%B5%CE%BA%CF%84%CF%81%CE%BF%CE%BD",
+        "https://www.etymonline.com/word/electrical",
+        "https://www.oed.com/dictionary/electrical_adj?tab=factsheet#5823688",
+        "https://www.etymonline.com/word/electricity",
+        "https://www.etymonline.com/word/electric",
+        "https://www.etymonline.com/word/-ity",
+        "https://www.oed.com/dictionary/electricity_n?tab=factsheet#5824376"
+      ],
+      "degrees": {
+        "positive": "electric",
+        "comparative": "ly"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/electric",
-      "https://www.oed.com/dictionary/electric_adj?tab=pronunciation#5821098",
-      "https://www.oed.com/dictionary/electric_adj?tab=meaning_and_use#5821098",
-      "https://latin-dictionary.net/definition/18899/electrum-electri",
-      "https://lsj.gr/wiki/%E1%BC%A4%CE%BB%CE%B5%CE%BA%CF%84%CF%81%CE%BF%CE%BD",
-      "https://www.etymonline.com/word/electrical",
-      "https://www.oed.com/dictionary/electrical_adj?tab=factsheet#5823688",
-      "https://www.etymonline.com/word/electricity",
-      "https://www.etymonline.com/word/electric",
-      "https://www.etymonline.com/word/-ity",
-      "https://www.oed.com/dictionary/electricity_n?tab=factsheet#5824376"
-    ]
+    }
   },
   {
-    "name": "to electrocute",
-    "etymology": [
-      {
-        "name": "to electrocute",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to electrocute",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to elèctroqute -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to electrocute",
+        "to elèctroqute -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to electrocute",
+      "etymology": [
+        {
+          "name": "to electrocute",
+          "origin": "Modern English"
+        },
+        {
+          "name": "to elèctroqute -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/electrocute",
+        "https://www.oed.com/dictionary/electrocute_v?tab=factsheet#5830224",
+        "https://www.etymonline.com/word/electro-",
+        "https://www.etymonline.com/word/execute"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/electrocute",
-      "https://www.oed.com/dictionary/electrocute_v?tab=factsheet#5830224",
-      "https://www.etymonline.com/word/electro-",
-      "https://www.etymonline.com/word/execute"
-    ]
+    }
   },
   {
-    "name": "electrocution",
-    "etymology": [
-      {
-        "name": "electrocution",
-        "origin": "Modern English"
-      },
-      {
-        "name": "electroqúcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/electrocution",
-      "https://www.oed.com/dictionary/electrocution_n?tab=factsheet#5830317"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "electrocution",
+      "etymology": [
+        {
+          "name": "electrocution",
+          "origin": "Modern English"
+        },
+        {
+          "name": "electroqúcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/electrocution",
+        "https://www.oed.com/dictionary/electrocution_n?tab=factsheet#5830317"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

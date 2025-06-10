@@ -1,32 +1,40 @@
 [
   {
-    "name": "steak",
-    "etymology": [
-      {
-        "name": "steik",
-        "origin": "Old Norse"
-      },
-      {
-        "name": "steke",
-        "origin": "Middle English"
-      },
-      {
-        "name": "steak",
-        "origin": "Modern English"
-      },
-      {
-        "name": "steke, steix",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/steak#etymonline_v_22032",
-      "https://www.merriam-webster.com/dictionary/steak",
-      "https://www.oed.com/dictionary/steak_n?tab=factsheet#20954631",
-      "https://old-norse.net/html/s.php#steik"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "steak",
+      "etymology": [
+        {
+          "name": "steik",
+          "origin": "Old Norse"
+        },
+        {
+          "name": "steke",
+          "origin": "Middle English"
+        },
+        {
+          "name": "steak",
+          "origin": "Modern English"
+        },
+        {
+          "name": "steke, steix",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/steak#etymonline_v_22032",
+        "https://www.merriam-webster.com/dictionary/steak",
+        "https://www.oed.com/dictionary/steak_n?tab=factsheet#20954631",
+        "https://old-norse.net/html/s.php#steik"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   }
 ]

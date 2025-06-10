@@ -1,49 +1,76 @@
 [
   {
-    "name": "cage",
-    "etymology": [
-      {
-        "name": "cavea",
-        "origin": "Latin"
-      },
-      {
-        "name": "cage",
-        "origin": "Old French"
-      },
-      {
-        "name": "câge -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cage#etymonline_v_575",
-      "https://www.merriam-webster.com/dictionary/cage#dictionary-entry-1",
-      "https://anglo-norman.net/entry/cage",
-      "https://latin-dictionary.net/definition/8735/cavea-caveae"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "cage",
+      "etymology": [
+        {
+          "name": "cavea",
+          "origin": "Latin"
+        },
+        {
+          "name": "cage",
+          "origin": "Old French"
+        },
+        {
+          "name": "câge -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cage#etymonline_v_575",
+        "https://www.merriam-webster.com/dictionary/cage#dictionary-entry-1",
+        "https://anglo-norman.net/entry/cage",
+        "https://latin-dictionary.net/definition/8735/cavea-caveae"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to cage",
-    "etymology": [
-      {
-        "name": "to cage",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to cage",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta câge -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to cage",
+        "ta câge -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to cage",
+      "etymology": [
+        {
+          "name": "to cage",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta câge -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cage#etymonline_v_43835",
+        "https://www.etymonline.com/word/cage#etymonline_v_575",
+        "https://www.merriam-webster.com/dictionary/cage#dictionary-entry-2"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cage#etymonline_v_43835",
-      "https://www.etymonline.com/word/cage#etymonline_v_575",
-      "https://www.merriam-webster.com/dictionary/cage#dictionary-entry-2"
-    ]
+    }
   }
 ]

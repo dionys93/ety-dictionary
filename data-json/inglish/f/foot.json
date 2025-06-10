@@ -1,51 +1,78 @@
 [
   {
-    "name": "foot, feet",
-    "etymology": [
-      {
-        "name": "fot, fet",
-        "origin": "Old English"
-      },
-      {
-        "name": "foot, feet",
-        "origin": "Modern English"
-      },
-      {
-        "name": "fûte, fýt",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/foot#etymonline_v_11759",
-      "https://www.etymonline.com/word/feet#etymonline_v_25921",
-      "https://www.merriam-webster.com/dictionary/foot#word-history",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17401",
-      "https://bosworthtoller.com/10588",
-      "https://bosworthtoller.com/12072"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "foot, feet",
+      "etymology": [
+        {
+          "name": "fot, fet",
+          "origin": "Old English"
+        },
+        {
+          "name": "foot, feet",
+          "origin": "Modern English"
+        },
+        {
+          "name": "fûte, fýt",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/foot#etymonline_v_11759",
+        "https://www.etymonline.com/word/feet#etymonline_v_25921",
+        "https://www.merriam-webster.com/dictionary/foot#word-history",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17401",
+        "https://bosworthtoller.com/10588",
+        "https://bosworthtoller.com/12072"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   },
   {
-    "name": "to foot",
-    "etymology": [
-      {
-        "name": "to foot",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to foot",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta fûte -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to foot",
+        "ta fûte -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to foot",
+      "etymology": [
+        {
+          "name": "to foot",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta fûte -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/foot#etymonline_v_40731",
+        "https://www.etymonline.com/word/foot#etymonline_v_11759",
+        "https://www.merriam-webster.com/dictionary/foot#word-history"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/foot#etymonline_v_40731",
-      "https://www.etymonline.com/word/foot#etymonline_v_11759",
-      "https://www.merriam-webster.com/dictionary/foot#word-history"
-    ]
+    }
   }
 ]

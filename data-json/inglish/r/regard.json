@@ -1,60 +1,89 @@
 [
   {
-    "name": "to regard",
-    "etymology": [
-      {
-        "name": "regarder",
-        "origin": "Old French"
+    "verbDetails": {
+      "infinitive": "to regard",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "regarden",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to regard",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta regarde -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "regarder",
+        "regarden",
+        "to regard",
+        "ta regarde -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to regard",
+      "etymology": [
+        {
+          "name": "regarder",
+          "origin": "Old French"
+        },
+        {
+          "name": "regarden",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to regard",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta regarde -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/regard#etymonline_v_43930",
+        "https://www.etymonline.com/word/guard#etymonline_v_14338v",
+        "https://www.merriam-webster.com/dictionary/regard#dictionary-entry-2",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36474",
+        "https://anglo-norman.net/entry/regarder"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/regard#etymonline_v_43930",
-      "https://www.etymonline.com/word/guard#etymonline_v_14338v",
-      "https://www.merriam-webster.com/dictionary/regard#dictionary-entry-2",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36474",
-      "https://anglo-norman.net/entry/regarder"
-    ]
+    }
   },
   {
-    "name": "regard",
-    "etymology": [
-      {
-        "name": "regarder, regard, regart",
-        "origin": "Old French"
-      },
-      {
-        "name": "regard",
-        "origin": "Middle English"
-      },
-      {
-        "name": "regarde, regárds",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/regard#etymonline_v_10319",
-      "https://www.etymonline.com/word/guard#etymonline_v_14338",
-      "https://www.merriam-webster.com/dictionary/regard#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36473",
-      "https://anglo-norman.net/entry/regard_1"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "regard",
+      "etymology": [
+        {
+          "name": "regarder, regard, regart",
+          "origin": "Old French"
+        },
+        {
+          "name": "regard",
+          "origin": "Middle English"
+        },
+        {
+          "name": "regarde, regárds",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/regard#etymonline_v_10319",
+        "https://www.etymonline.com/word/guard#etymonline_v_14338",
+        "https://www.merriam-webster.com/dictionary/regard#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36473",
+        "https://anglo-norman.net/entry/regard_1"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

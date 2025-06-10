@@ -1,76 +1,108 @@
 [
   {
-    "name": "to spring",
-    "etymology": [
-      {
-        "name": "springan, sprengan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to spring",
+      "conjugations": {
+        "thirdPerson": "s"
       },
-      {
-        "name": "springen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to spring",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta springue -s sprâng sprong springuing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "springan, sprengan",
+        "springen",
+        "to spring",
+        "ta springue -s sprâng sprong springuing"
+      ]
+    },
+    "standard": {
+      "name": "to spring",
+      "etymology": [
+        {
+          "name": "springan, sprengan",
+          "origin": "Old English"
+        },
+        {
+          "name": "springen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to spring",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta springue -s sprâng sprong springuing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/spring#etymonline_v_21895",
+        "https://www.merriam-webster.com/dictionary/spring#dictionary-entry-1",
+        "https://www.oed.com/dictionary/spring_v1?tab=factsheet#21303952",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42428",
+        "https://bosworthtoller.com/28574",
+        "https://bosworthtoller.com/28585"
+      ],
+      "conjugations": {
+        "thirdPerson": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/spring#etymonline_v_21895",
-      "https://www.merriam-webster.com/dictionary/spring#dictionary-entry-1",
-      "https://www.oed.com/dictionary/spring_v1?tab=factsheet#21303952",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42428",
-      "https://bosworthtoller.com/28574",
-      "https://bosworthtoller.com/28585"
-    ]
+    }
   },
   {
-    "name": "spring",
-    "etymology": [
-      {
-        "name": "spring",
-        "origin": "Old English"
-      },
-      {
-        "name": "springue, springs",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/spring#etymonline_v_24408",
-      "https://www.etymonline.com/word/spring#etymonline_v_43663",
-      "https://www.etymonline.com/word/spring#etymonline_v_21895",
-      "https://bosworthtoller.com/28584"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "spring",
+      "etymology": [
+        {
+          "name": "spring",
+          "origin": "Old English"
+        },
+        {
+          "name": "springue, springs",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/spring#etymonline_v_24408",
+        "https://www.etymonline.com/word/spring#etymonline_v_43663",
+        "https://www.etymonline.com/word/spring#etymonline_v_21895",
+        "https://bosworthtoller.com/28584"
+      ],
+      "number": "plural"
+    }
   },
   {
-    "name": "Spring",
-    "etymology": [
-      {
-        "name": "Spring",
-        "origin": "Modern English"
-      },
-      {
-        "name": "Springue",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/spring#etymonline_v_24372",
-      "https://www.etymonline.com/word/spring#etymonline_v_21895"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "Spring",
+      "etymology": [
+        {
+          "name": "Spring",
+          "origin": "Modern English"
+        },
+        {
+          "name": "Springue",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/spring#etymonline_v_24372",
+        "https://www.etymonline.com/word/spring#etymonline_v_21895"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   }
 ]

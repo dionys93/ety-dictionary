@@ -1,54 +1,82 @@
 [
   {
-    "name": "warrant",
-    "etymology": [
-      {
-        "name": "garant",
-        "origin": "Old French"
-      },
-      {
-        "name": "warrant",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ɯaûant - s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/warrant#etymonline_v_4840",
-      "https://www.merriam-webster.com/dictionary/warrant#dictionary-entry-1",
-      "https://www.oed.com/dictionary/warrant_n1?tab=factsheet#14953371",
-      "https://anglo-norman.net/entry/garant_1"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "warrant",
+      "etymology": [
+        {
+          "name": "garant",
+          "origin": "Old French"
+        },
+        {
+          "name": "warrant",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ɯaûant - s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/warrant#etymonline_v_4840",
+        "https://www.merriam-webster.com/dictionary/warrant#dictionary-entry-1",
+        "https://www.oed.com/dictionary/warrant_n1?tab=factsheet#14953371",
+        "https://anglo-norman.net/entry/garant_1"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to warrant",
-    "etymology": [
-      {
-        "name": "garantir",
-        "origin": "Old French"
+    "verbDetails": {
+      "infinitive": "to warrant",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to warrant",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta ɯaûante -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "garantir",
+        "to warrant",
+        "ta ɯaûante -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to warrant",
+      "etymology": [
+        {
+          "name": "garantir",
+          "origin": "Old French"
+        },
+        {
+          "name": "to warrant",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta ɯaûante -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/warrant#etymonline_v_25444",
+        "https://www.oed.com/dictionary/warrant_v?tab=factsheet#14955748",
+        "https://www.merriam-webster.com/dictionary/warrant#dictionary-entry-2",
+        "https://anglo-norman.net/entry/garantir"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/warrant#etymonline_v_25444",
-      "https://www.oed.com/dictionary/warrant_v?tab=factsheet#14955748",
-      "https://www.merriam-webster.com/dictionary/warrant#dictionary-entry-2",
-      "https://anglo-norman.net/entry/garantir"
-    ]
+    }
   }
 ]

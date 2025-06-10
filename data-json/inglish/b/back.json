@@ -1,92 +1,123 @@
 [
   {
-    "name": "back",
-    "etymology": [
-      {
-        "name": "bæc",
-        "origin": "Old English"
-      },
-      {
-        "name": "bak",
-        "origin": "Middle English"
-      },
-      {
-        "name": "back",
-        "origin": "Modern English"
-      },
-      {
-        "name": "bac -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/back#etymonline_v_175",
-      "https://www.merriam-webster.com/dictionary/back#dictionary-entry-1",
-      "https://www.oed.com/dictionary/back_n1?tab=factsheet#30497213",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3476",
-      "https://bosworthtoller.com/2834"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "back",
+      "etymology": [
+        {
+          "name": "bæc",
+          "origin": "Old English"
+        },
+        {
+          "name": "bak",
+          "origin": "Middle English"
+        },
+        {
+          "name": "back",
+          "origin": "Modern English"
+        },
+        {
+          "name": "bac -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/back#etymonline_v_175",
+        "https://www.merriam-webster.com/dictionary/back#dictionary-entry-1",
+        "https://www.oed.com/dictionary/back_n1?tab=factsheet#30497213",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3476",
+        "https://bosworthtoller.com/2834"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to back",
-    "etymology": [
-      {
-        "name": "to back",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to back",
+      "conjugations": {
+        "thirdPerson": "ed",
+        "pastTense": "ing"
       },
-      {
-        "name": "ta bacq bacs -ed -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to back",
+        "ta bacq bacs -ed -ing"
+      ]
+    },
+    "standard": {
+      "name": "to back",
+      "etymology": [
+        {
+          "name": "to back",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta bacq bacs -ed -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/back#etymonline_v_28953",
+        "https://www.merriam-webster.com/dictionary/back#dictionary-entry-4",
+        "https://www.oed.com/dictionary/back_v?tab=factsheet#30508913",
+        "https://www.etymonline.com/word/back#etymonline_v_42320",
+        "https://www.etymonline.com/word/back#etymonline_v_175"
+      ],
+      "conjugations": {
+        "thirdPerson": "ed",
+        "pastTense": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/back#etymonline_v_28953",
-      "https://www.merriam-webster.com/dictionary/back#dictionary-entry-4",
-      "https://www.oed.com/dictionary/back_v?tab=factsheet#30508913",
-      "https://www.etymonline.com/word/back#etymonline_v_42320",
-      "https://www.etymonline.com/word/back#etymonline_v_175"
-    ]
+    }
   },
   {
-    "name": "aback, back",
-    "etymology": [
-      {
-        "name": "on bæc",
-        "origin": "Old English"
-      },
-      {
-        "name": "abak",
-        "origin": "Middle English"
-      },
-      {
-        "name": "aback, back",
-        "origin": "Modern English"
-      },
-      {
-        "name": "abacq, bacq",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "adverb"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/back#etymonline_v_42320",
-      "https://www.merriam-webster.com/dictionary/back#dictionary-entry-2",
-      "https://www.merriam-webster.com/dictionary/back#dictionary-entry-3",
-      "https://www.etymonline.com/word/back#etymonline_v_28954",
-      "https://www.etymonline.com/word/back#etymonline_v_175",
-      "https://www.oed.com/dictionary/back_adv?tab=factsheet#30512240",
-      "https://www.oed.com/dictionary/back_adj?tab=factsheet#30504890",
-      "https://www.oed.com/dictionary/aback_adv?tab=factsheet#8098346",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "aback, back",
+      "etymology": [
+        {
+          "name": "on bæc",
+          "origin": "Old English"
+        },
+        {
+          "name": "abak",
+          "origin": "Middle English"
+        },
+        {
+          "name": "aback, back",
+          "origin": "Modern English"
+        },
+        {
+          "name": "abacq, bacq",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "adverb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/back#etymonline_v_42320",
+        "https://www.merriam-webster.com/dictionary/back#dictionary-entry-2",
+        "https://www.merriam-webster.com/dictionary/back#dictionary-entry-3",
+        "https://www.etymonline.com/word/back#etymonline_v_28954",
+        "https://www.etymonline.com/word/back#etymonline_v_175",
+        "https://www.oed.com/dictionary/back_adv?tab=factsheet#30512240",
+        "https://www.oed.com/dictionary/back_adj?tab=factsheet#30504890",
+        "https://www.oed.com/dictionary/aback_adv?tab=factsheet#8098346",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26"
+      ]
+    }
   }
 ]

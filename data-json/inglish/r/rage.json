@@ -1,63 +1,92 @@
 [
   {
-    "name": "raige, rage",
-    "etymology": [
-      {
-        "name": "rabies",
-        "origin": "Latin"
-      },
-      {
-        "name": "rabia",
-        "origin": "Medieval Latin"
-      },
-      {
-        "name": "raige, rage",
-        "origin": "Old French"
-      },
-      {
-        "name": "raige -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/rage#etymonline_v_3294",
-      "https://www.merriam-webster.com/dictionary/rage#dictionary-entry-1",
-      "https://www.anglo-norman.net/entry/rage_1",
-      "https://latin-dictionary.net/definition/32811/rabies-rabiei"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "raige, rage",
+      "etymology": [
+        {
+          "name": "rabies",
+          "origin": "Latin"
+        },
+        {
+          "name": "rabia",
+          "origin": "Medieval Latin"
+        },
+        {
+          "name": "raige, rage",
+          "origin": "Old French"
+        },
+        {
+          "name": "raige -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/rage#etymonline_v_3294",
+        "https://www.merriam-webster.com/dictionary/rage#dictionary-entry-1",
+        "https://www.anglo-norman.net/entry/rage_1",
+        "https://latin-dictionary.net/definition/32811/rabies-rabiei"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to rage",
-    "etymology": [
-      {
-        "name": "rager",
-        "origin": "Old French"
+    "verbDetails": {
+      "infinitive": "to rage",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ragen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to rage",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta raige -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "rager",
+        "ragen",
+        "to rage",
+        "ta raige -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to rage",
+      "etymology": [
+        {
+          "name": "rager",
+          "origin": "Old French"
+        },
+        {
+          "name": "ragen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to rage",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta raige -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/rage#etymonline_v_43876",
+        "https://www.etymonline.com/word/rage#etymonline_v_3294",
+        "https://www.merriam-webster.com/dictionary/rage#dictionary-entry-2",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35768",
+        "https://www.anglo-norman.net/entry/rager"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/rage#etymonline_v_43876",
-      "https://www.etymonline.com/word/rage#etymonline_v_3294",
-      "https://www.merriam-webster.com/dictionary/rage#dictionary-entry-2",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35768",
-      "https://www.anglo-norman.net/entry/rager"
-    ]
+    }
   }
 ]

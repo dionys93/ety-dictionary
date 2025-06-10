@@ -1,87 +1,121 @@
 [
   {
-    "name": "plow",
-    "etymology": [
-      {
-        "name": "ploʒ, ploh",
-        "origin": "Old English"
-      },
-      {
-        "name": "plough",
-        "origin": "Middle English"
-      },
-      {
-        "name": "plow",
-        "origin": "Modern English"
-      },
-      {
-        "name": "plaoɯ -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/plow#etymonline_v_16512",
-      "https://www.etymonline.com/word/plough#etymonline_v_16510",
-      "https://www.merriam-webster.com/dictionary/plow#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED33760",
-      "https://bosworthtoller.com/25289"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "plow",
+      "etymology": [
+        {
+          "name": "ploʒ, ploh",
+          "origin": "Old English"
+        },
+        {
+          "name": "plough",
+          "origin": "Middle English"
+        },
+        {
+          "name": "plow",
+          "origin": "Modern English"
+        },
+        {
+          "name": "plaoɯ -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/plow#etymonline_v_16512",
+        "https://www.etymonline.com/word/plough#etymonline_v_16510",
+        "https://www.merriam-webster.com/dictionary/plow#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED33760",
+        "https://bosworthtoller.com/25289"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to plough, to plow",
-    "etymology": [
-      {
-        "name": "plouen",
-        "origin": "Middle English"
+    "verbDetails": {
+      "infinitive": "to plough, to plow",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d"
       },
-      {
-        "name": "to plough, to plow",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta plaoe -s -d -ɯing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "plouen",
+        "to plough, to plow",
+        "ta plaoe -s -d -ɯing"
+      ]
+    },
+    "standard": {
+      "name": "to plough, to plow",
+      "etymology": [
+        {
+          "name": "plouen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to plough, to plow",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta plaoe -s -d -ɯing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/plow#etymonline_v_42953",
+        "https://www.etymonline.com/word/plow#etymonline_v_16512",
+        "https://www.etymonline.com/word/plough#etymonline_v_16510",
+        "https://www.merriam-webster.com/dictionary/plow#dictionary-entry-2",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED33759",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED33760"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/plow#etymonline_v_42953",
-      "https://www.etymonline.com/word/plow#etymonline_v_16512",
-      "https://www.etymonline.com/word/plough#etymonline_v_16510",
-      "https://www.merriam-webster.com/dictionary/plow#dictionary-entry-2",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED33759",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED33760"
-    ]
+    }
   },
   {
-    "name": "plowshare",
-    "etymology": [
-      {
-        "name": "ploughshare",
-        "origin": "Middle English"
-      },
-      {
-        "name": "plowshare",
-        "origin": "Modern English"
-      },
-      {
-        "name": "plaoshair -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/plowshare#etymonline_v_35309",
-      "https://www.etymonline.com/word/share#etymonline_v_23350",
-      "https://www.merriam-webster.com/dictionary/share#dictionary-entry-3",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED33760"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "plowshare",
+      "etymology": [
+        {
+          "name": "ploughshare",
+          "origin": "Middle English"
+        },
+        {
+          "name": "plowshare",
+          "origin": "Modern English"
+        },
+        {
+          "name": "plaoshair -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/plowshare#etymonline_v_35309",
+        "https://www.etymonline.com/word/share#etymonline_v_23350",
+        "https://www.merriam-webster.com/dictionary/share#dictionary-entry-3",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED33760"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

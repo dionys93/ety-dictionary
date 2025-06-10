@@ -1,96 +1,120 @@
 [
   {
-    "name": "to defy",
-    "etymology": [
-      {
-        "name": "disfidare",
-        "origin": "Vulgar Latin"
-      },
-      {
-        "name": "defier, desfier",
-        "origin": "Old French"
-      },
-      {
-        "name": "defien",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to defy",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta defîe -s -d defyhing",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/defy#etymonline_v_925",
-      "https://www.oed.com/dictionary/defy_v1?tab=factsheet#7217215",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10836",
-      "https://www.anglo-norman.net/entry/defier_1",
-      "https://latin-dictionary.net/definition/17632/diffido-diffidere-diffisus",
-      "https://latin-dictionary.net/definition/20612/fidus-fida-fidum"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "to defy",
+      "etymology": [
+        {
+          "name": "disfidare",
+          "origin": "Vulgar Latin"
+        },
+        {
+          "name": "defier, desfier",
+          "origin": "Old French"
+        },
+        {
+          "name": "defien",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to defy",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta defîe -s -d defyhing",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/defy#etymonline_v_925",
+        "https://www.oed.com/dictionary/defy_v1?tab=factsheet#7217215",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10836",
+        "https://www.anglo-norman.net/entry/defier_1",
+        "https://latin-dictionary.net/definition/17632/diffido-diffidere-diffisus",
+        "https://latin-dictionary.net/definition/20612/fidus-fida-fidum"
+      ]
+    }
   },
   {
-    "name": "defiant",
-    "etymology": [
-      {
-        "name": "défier, défiant",
-        "origin": "French"
-      },
-      {
-        "name": "defiant",
-        "origin": "Modern English"
-      },
-      {
-        "name": "defîant -ly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "defiant",
+      "etymology": [
+        {
+          "name": "défier, défiant",
+          "origin": "French"
+        },
+        {
+          "name": "defiant",
+          "origin": "Modern English"
+        },
+        {
+          "name": "defîant -ly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/defiant#etymonline_v_29388",
+        "https://www.oed.com/dictionary/defiant_adj?tab=factsheet#7196817",
+        "https://www.larousse.fr/dictionnaires/francais/d%C3%A9fiant/22659",
+        "https://www.anglo-norman.net/entry/defier_1"
+      ],
+      "degrees": {
+        "positive": "ant",
+        "comparative": "ly"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/defiant#etymonline_v_29388",
-      "https://www.oed.com/dictionary/defiant_adj?tab=factsheet#7196817",
-      "https://www.larousse.fr/dictionnaires/francais/d%C3%A9fiant/22659",
-      "https://www.anglo-norman.net/entry/defier_1"
-    ]
+    }
   },
   {
-    "name": "defiance",
-    "etymology": [
-      {
-        "name": "disfidare",
-        "origin": "Vulgar Latin"
-      },
-      {
-        "name": "desfier, desfiant, defiance",
-        "origin": "Old French"
-      },
-      {
-        "name": "defiaunce",
-        "origin": "Middle English"
-      },
-      {
-        "name": "defiance",
-        "origin": "Modern English"
-      },
-      {
-        "name": "defîance -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/defiance#etymonline_v_908",
-      "https://www.oed.com/dictionary/defiance_n?tab=factsheet#7196291",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10834",
-      "https://anglo-norman.net/entry/defiance",
-      "https://latin-dictionary.net/definition/17632/diffido-diffidere-diffisus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "defiance",
+      "etymology": [
+        {
+          "name": "disfidare",
+          "origin": "Vulgar Latin"
+        },
+        {
+          "name": "desfier, desfiant, defiance",
+          "origin": "Old French"
+        },
+        {
+          "name": "defiaunce",
+          "origin": "Middle English"
+        },
+        {
+          "name": "defiance",
+          "origin": "Modern English"
+        },
+        {
+          "name": "defîance -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/defiance#etymonline_v_908",
+        "https://www.oed.com/dictionary/defiance_n?tab=factsheet#7196291",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10834",
+        "https://anglo-norman.net/entry/defiance",
+        "https://latin-dictionary.net/definition/17632/diffido-diffidere-diffisus"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

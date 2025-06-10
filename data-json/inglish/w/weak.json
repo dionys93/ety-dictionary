@@ -1,107 +1,156 @@
 [
   {
-    "name": "weak",
-    "etymology": [
-      {
-        "name": "veikr",
-        "origin": "Old Norse"
-      },
-      {
-        "name": "weike",
-        "origin": "Middle English"
-      },
-      {
-        "name": "weak",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ɯike -r -st",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "weak",
+      "etymology": [
+        {
+          "name": "veikr",
+          "origin": "Old Norse"
+        },
+        {
+          "name": "weike",
+          "origin": "Middle English"
+        },
+        {
+          "name": "weak",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ɯike -r -st",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/weak#etymonline_v_4867",
+        "https://www.oed.com/dictionary/weak_adj?tab=pronunciation#15134588",
+        "https://www.merriam-webster.com/dictionary/weak#word-history",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52037",
+        "https://bosworthtoller.com/34181",
+        "https://bosworthtoller.com/34180",
+        "https://bosworthtoller.com/35495",
+        "https://old-norse.net/html/v.php#veikr"
+      ],
+      "degrees": {
+        "positive": "ike",
+        "comparative": "r",
+        "superlative": "st"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/weak#etymonline_v_4867",
-      "https://www.oed.com/dictionary/weak_adj?tab=pronunciation#15134588",
-      "https://www.merriam-webster.com/dictionary/weak#word-history",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52037",
-      "https://bosworthtoller.com/34181",
-      "https://bosworthtoller.com/34180",
-      "https://bosworthtoller.com/35495",
-      "https://old-norse.net/html/v.php#veikr"
-    ]
+    }
   },
   {
-    "name": "to weaken",
-    "etymology": [
-      {
-        "name": "weiken",
-        "origin": "Middle English"
+    "verbDetails": {
+      "infinitive": "to weaken",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to weaken",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta ɯikane -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "weiken",
+        "to weaken",
+        "ta ɯikane -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to weaken",
+      "etymology": [
+        {
+          "name": "weiken",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to weaken",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta ɯikane -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/weaken#etymonline_v_39487",
+        "https://www.oed.com/dictionary/weaken_v?tab=factsheet#15139478",
+        "https://www.etymonline.com/word/weak#etymonline_v_4867",
+        "https://www.etymonline.com/word/-en#etymonline_v_32445",
+        "https://www.merriam-webster.com/dictionary/weaken",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52038"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/weaken#etymonline_v_39487",
-      "https://www.oed.com/dictionary/weaken_v?tab=factsheet#15139478",
-      "https://www.etymonline.com/word/weak#etymonline_v_4867",
-      "https://www.etymonline.com/word/-en#etymonline_v_32445",
-      "https://www.merriam-webster.com/dictionary/weaken",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52038"
-    ]
+    }
   },
   {
-    "name": "weakish",
-    "etymology": [
-      {
-        "name": "weakish",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ɯikish -ly -ness",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "weakish",
+      "etymology": [
+        {
+          "name": "weakish",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ɯikish -ly -ness",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.oed.com/dictionary/weakish_adj?tab=factsheet#15141180",
+        "https://www.collinsdictionary.com/us/dictionary/english/weakish"
+      ],
+      "degrees": {
+        "positive": "ikish",
+        "comparative": "ly",
+        "superlative": "ness"
       }
-    ],
-    "sources": [
-      "https://www.oed.com/dictionary/weakish_adj?tab=factsheet#15141180",
-      "https://www.collinsdictionary.com/us/dictionary/english/weakish"
-    ]
+    }
   },
   {
-    "name": "weakling",
-    "etymology": [
-      {
-        "name": "weakling",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ɯikling -ngs",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/weakling#etymonline_v_25461",
-      "https://www.oed.com/dictionary/weakling_n?tab=factsheet#15141363",
-      "https://www.etymonline.com/word/weak#etymonline_v_4867",
-      "https://www.etymonline.com/word/-ling#etymonline_v_25722",
-      "https://www.merriam-webster.com/dictionary/weakling#dictionary-entry-1"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "weakling",
+      "etymology": [
+        {
+          "name": "weakling",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ɯikling -ngs",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/weakling#etymonline_v_25461",
+        "https://www.oed.com/dictionary/weakling_n?tab=factsheet#15141363",
+        "https://www.etymonline.com/word/weak#etymonline_v_4867",
+        "https://www.etymonline.com/word/-ling#etymonline_v_25722",
+        "https://www.merriam-webster.com/dictionary/weakling#dictionary-entry-1"
+      ],
+      "number": "plural"
+    }
   }
 ]

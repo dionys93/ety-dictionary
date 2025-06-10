@@ -1,64 +1,93 @@
 [
   {
-    "name": "head",
-    "etymology": [
-      {
-        "name": "heafod",
-        "origin": "Old English"
-      },
-      {
-        "name": "hed",
-        "origin": "Middle English"
-      },
-      {
-        "name": "head",
-        "origin": "Modern English"
-      },
-      {
-        "name": "hed -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/head#etymonline_v_6239",
-      "https://www.merriam-webster.com/dictionary/head#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20201",
-      "https://bosworthtoller.com/51823"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "head",
+      "etymology": [
+        {
+          "name": "heafod",
+          "origin": "Old English"
+        },
+        {
+          "name": "hed",
+          "origin": "Middle English"
+        },
+        {
+          "name": "head",
+          "origin": "Modern English"
+        },
+        {
+          "name": "hed -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/head#etymonline_v_6239",
+        "https://www.merriam-webster.com/dictionary/head#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20201",
+        "https://bosworthtoller.com/51823"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to head",
-    "etymology": [
-      {
-        "name": "heafdian",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to head",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "heden",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to head",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta hède -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "heafdian",
+        "heden",
+        "to head",
+        "ta hède -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to head",
+      "etymology": [
+        {
+          "name": "heafdian",
+          "origin": "Old English"
+        },
+        {
+          "name": "heden",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to head",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta hède -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/head#etymonline_v_41545",
+        "https://www.etymonline.com/word/head#etymonline_v_6239",
+        "https://www.merriam-webster.com/dictionary/head#dictionary-entry-3",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20206",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED46193",
+        "https://bosworthtoller.com/51822"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/head#etymonline_v_41545",
-      "https://www.etymonline.com/word/head#etymonline_v_6239",
-      "https://www.merriam-webster.com/dictionary/head#dictionary-entry-3",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20206",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED46193",
-      "https://bosworthtoller.com/51822"
-    ]
+    }
   }
 ]

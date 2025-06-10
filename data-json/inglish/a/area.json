@@ -1,23 +1,31 @@
 [
   {
-    "name": "area",
-    "etymology": [
-      {
-        "name": "area",
-        "origin": "Latin"
-      },
-      {
-        "name": "âria -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/area#etymonline_v_16973",
-      "https://www.oed.com/dictionary/area_n?tab=factsheet#39887783",
-      "https://latin-dictionary.net/definition/4608/area-areae"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "area",
+      "etymology": [
+        {
+          "name": "area",
+          "origin": "Latin"
+        },
+        {
+          "name": "âria -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/area#etymonline_v_16973",
+        "https://www.oed.com/dictionary/area_n?tab=factsheet#39887783",
+        "https://latin-dictionary.net/definition/4608/area-areae"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

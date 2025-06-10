@@ -1,205 +1,279 @@
 [
   {
-    "name": "to tear",
-    "etymology": [
-      {
-        "name": "teran",
-        "origin": "Old English"
-      },
-      {
-        "name": "teren",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to tear",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta taire -s tore tône -ing",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/tear#etymonline_v_7656",
-      "https://www.merriam-webster.com/dictionary/tear#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44887",
-      "https://bosworthtoller.com/30389"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "to tear",
+      "etymology": [
+        {
+          "name": "teran",
+          "origin": "Old English"
+        },
+        {
+          "name": "teren",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to tear",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta taire -s tore tône -ing",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/tear#etymonline_v_7656",
+        "https://www.merriam-webster.com/dictionary/tear#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44887",
+        "https://bosworthtoller.com/30389"
+      ]
+    }
   },
   {
-    "name": "tear",
-    "etymology": [
-      {
-        "name": "ter",
-        "origin": "Old English"
-      },
-      {
-        "name": "tear",
-        "origin": "Modern English"
-      },
-      {
-        "name": "tair -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/tear#etymonline_v_44558",
-      "https://www.etymonline.com/word/tear#etymonline_v_7656",
-      "https://www.merriam-webster.com/dictionary/tear#dictionary-entry-2",
-      "https://bosworthtoller.com/16405"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "tear",
+      "etymology": [
+        {
+          "name": "ter",
+          "origin": "Old English"
+        },
+        {
+          "name": "tear",
+          "origin": "Modern English"
+        },
+        {
+          "name": "tair -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/tear#etymonline_v_44558",
+        "https://www.etymonline.com/word/tear#etymonline_v_7656",
+        "https://www.merriam-webster.com/dictionary/tear#dictionary-entry-2",
+        "https://bosworthtoller.com/16405"
+      ],
+      "number": "plural"
+    }
   },
   {
-    "name": "to tear",
-    "etymology": [
-      {
-        "name": "tearian",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to tear",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "teren",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to tear",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta tiare -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "tearian",
+        "teren",
+        "to tear",
+        "ta tiare -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to tear",
+      "etymology": [
+        {
+          "name": "tearian",
+          "origin": "Old English"
+        },
+        {
+          "name": "teren",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to tear",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta tiare -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/tear#etymonline_v_44556",
+        "https://www.merriam-webster.com/dictionary/tear#dictionary-entry-4",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44888",
+        "https://bosworthtoller.com/30251"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/tear#etymonline_v_44556",
-      "https://www.merriam-webster.com/dictionary/tear#dictionary-entry-4",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44888",
-      "https://bosworthtoller.com/30251"
-    ]
+    }
   },
   {
-    "name": "tear",
-    "etymology": [
-      {
-        "name": "tear",
-        "origin": "Old English"
-      },
-      {
-        "name": "tiar -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/tear#etymonline_v_7655",
-      "https://www.merriam-webster.com/dictionary/tear#dictionary-entry-3",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44879",
-      "https://bosworthtoller.com/30247"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "tear",
+      "etymology": [
+        {
+          "name": "tear",
+          "origin": "Old English"
+        },
+        {
+          "name": "tiar -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/tear#etymonline_v_7655",
+        "https://www.merriam-webster.com/dictionary/tear#dictionary-entry-3",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44879",
+        "https://bosworthtoller.com/30247"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "teary",
-    "etymology": [
-      {
-        "name": "tearig",
-        "origin": "Old English"
-      },
-      {
-        "name": "teri",
-        "origin": "Middle English"
-      },
-      {
-        "name": "teary",
-        "origin": "Modern English"
-      },
-      {
-        "name": "tiary",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/teary#etymonline_v_39005",
-      "https://www.etymonline.com/word/tear#etymonline_v_7655",
-      "https://www.etymonline.com/word/-y#etymonline_v_25631",
-      "https://www.merriam-webster.com/dictionary/teary",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED23566.5",
-      "https://bosworthtoller.com/30252"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "teary",
+      "etymology": [
+        {
+          "name": "tearig",
+          "origin": "Old English"
+        },
+        {
+          "name": "teri",
+          "origin": "Middle English"
+        },
+        {
+          "name": "teary",
+          "origin": "Modern English"
+        },
+        {
+          "name": "tiary",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/teary#etymonline_v_39005",
+        "https://www.etymonline.com/word/tear#etymonline_v_7655",
+        "https://www.etymonline.com/word/-y#etymonline_v_25631",
+        "https://www.merriam-webster.com/dictionary/teary",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED23566.5",
+        "https://bosworthtoller.com/30252"
+      ]
+    }
   },
   {
-    "name": "tearful",
-    "etymology": [
-      {
-        "name": "tearful",
-        "origin": "Modern English"
-      },
-      {
-        "name": "tiarful -ly -ness",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "tearful",
+      "etymology": [
+        {
+          "name": "tearful",
+          "origin": "Modern English"
+        },
+        {
+          "name": "tiarful -ly -ness",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/tearful#etymonline_v_49458",
+        "https://www.etymonline.com/word/tear#etymonline_v_7655",
+        "https://www.etymonline.com/word/-ful#etymonline_v_32015",
+        "https://www.merriam-webster.com/dictionary/tearful"
+      ],
+      "degrees": {
+        "positive": "tiarful",
+        "comparative": "ly",
+        "superlative": "ness"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/tearful#etymonline_v_49458",
-      "https://www.etymonline.com/word/tear#etymonline_v_7655",
-      "https://www.etymonline.com/word/-ful#etymonline_v_32015",
-      "https://www.merriam-webster.com/dictionary/tearful"
-    ]
+    }
   },
   {
-    "name": "teardrop",
-    "etymology": [
-      {
-        "name": "teardrop",
-        "origin": "Modern English"
-      },
-      {
-        "name": "tiardrop -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/tear-drop#etymonline_v_49456",
-      "https://www.etymonline.com/word/tear#etymonline_v_7655",
-      "https://www.etymonline.com/word/drop#etymonline_v_15922",
-      "https://www.merriam-webster.com/dictionary/teardrop"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "teardrop",
+      "etymology": [
+        {
+          "name": "teardrop",
+          "origin": "Modern English"
+        },
+        {
+          "name": "tiardrop -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/tear-drop#etymonline_v_49456",
+        "https://www.etymonline.com/word/tear#etymonline_v_7655",
+        "https://www.etymonline.com/word/drop#etymonline_v_15922",
+        "https://www.merriam-webster.com/dictionary/teardrop"
+      ],
+      "number": "plural"
+    }
   },
   {
-    "name": "tearjerker",
-    "etymology": [
-      {
-        "name": "tearjerker",
-        "origin": "Modern English"
-      },
-      {
-        "name": "tiarjercor -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/tear-jerker#etymonline_v_44557",
-      "https://www.merriam-webster.com/dictionary/tearjerker",
-      "https://www.etymonline.com/word/jerk#etymonline_v_1708",
-      "https://www.etymonline.com/word/tear#etymonline_v_7655"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "tearjerker",
+      "etymology": [
+        {
+          "name": "tearjerker",
+          "origin": "Modern English"
+        },
+        {
+          "name": "tiarjercor -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/tear-jerker#etymonline_v_44557",
+        "https://www.merriam-webster.com/dictionary/tearjerker",
+        "https://www.etymonline.com/word/jerk#etymonline_v_1708",
+        "https://www.etymonline.com/word/tear#etymonline_v_7655"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

@@ -1,271 +1,374 @@
 [
   {
-    "name": "just  -ly -ness (adj, adv)",
-    "etymology": [
-      {
-        "name": "ius, iustus",
-        "origin": "Latin"
-      },
-      {
-        "name": "juste",
-        "origin": "Old French"
-      },
-      {
-        "name": "just  -ly -ness (adj, adv)",
-        "origin": "Modern English"
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "just",
+      "etymology": [
+        {
+          "name": "ius, iustus",
+          "origin": "Latin"
+        },
+        {
+          "name": "juste",
+          "origin": "Old French"
+        },
+        {
+          "name": "just",
+          "origin": "Modern English"
+        },
+        {
+          "name": "jost -ly -ness",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "adverb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/just#etymonline_v_6575",
+        "https://www.etymonline.com/word/just#etymonline_v_24306",
+        "https://www.etymonline.com/word/justness#etymonline_v_42766",
+        "https://www.oed.com/dictionary/just_adj?tab=factsheet#40265980",
+        "https://www.oed.com/dictionary/just_adv?tab=pronunciation#40267326",
+        "https://www.oed.com/dictionary/just_adv?tab=meaning_and_use#40267326",
+        "https://anglo-norman.net/entry/juste_3",
+        "https://latin-dictionary.net/definition/25029/justus-justa",
+        "https://latin-dictionary.net/definition/25013/jus-juris"
+      ],
+      "degrees": {
+        "positive": "jost",
+        "comparative": "ly",
+        "superlative": "ness"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/just#etymonline_v_6575",
-      "https://www.etymonline.com/word/just#etymonline_v_24306",
-      "https://www.etymonline.com/word/justness#etymonline_v_42766",
-      "https://www.oed.com/dictionary/just_adj?tab=factsheet#40265980",
-      "https://www.oed.com/dictionary/just_adv?tab=pronunciation#40267326",
-      "https://www.oed.com/dictionary/just_adv?tab=meaning_and_use#40267326",
-      "https://anglo-norman.net/entry/juste_3",
-      "https://latin-dictionary.net/definition/25029/justus-justa",
-      "https://latin-dictionary.net/definition/25013/jus-juris"
-    ]
+    }
   },
   {
-    "name": "justice",
-    "etymology": [
-      {
-        "name": "iustitia",
-        "origin": "Latin"
-      },
-      {
-        "name": "justice",
-        "origin": "Old French"
-      },
-      {
-        "name": "jùstice -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/justice#etymonline_v_6576",
-      "https://www.collinsdictionary.com/us/dictionary/english/justice",
-      "https://www.oed.com/dictionary/justice_n?tab=pronunciation#40269279",
-      "https://www.oed.com/dictionary/justice_n?tab=meaning_and_use#40269279",
-      "https://latin-dictionary.net/definition/25026/justitia-justitiae"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "justice",
+      "etymology": [
+        {
+          "name": "iustitia",
+          "origin": "Latin"
+        },
+        {
+          "name": "justice",
+          "origin": "Old French"
+        },
+        {
+          "name": "jostice -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/justice#etymonline_v_6576",
+        "https://www.collinsdictionary.com/us/dictionary/english/justice",
+        "https://www.oed.com/dictionary/justice_n?tab=pronunciation#40269279",
+        "https://www.oed.com/dictionary/justice_n?tab=meaning_and_use#40269279",
+        "https://latin-dictionary.net/definition/25026/justitia-justitiae"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "justiciary",
-    "etymology": [
-      {
-        "name": "iustitia",
-        "origin": "Latin"
-      },
-      {
-        "name": "justiciarius",
-        "origin": "Medieval Latin"
-      },
-      {
-        "name": "justiciary",
-        "origin": "Modern English"
-      },
-      {
-        "name": "justiçiairy, justiçiairie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "feminine noun"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "justiciary",
+      "etymology": [
+        {
+          "name": "iustitia",
+          "origin": "Latin"
+        },
+        {
+          "name": "justiciarius",
+          "origin": "Medieval Latin"
+        },
+        {
+          "name": "justiciary",
+          "origin": "Modern English"
+        },
+        {
+          "name": "jostiçiairy, jostiçiairie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/justiciary#etymonline_v_51649",
+        "https://www.merriam-webster.com/dictionary/justiciary",
+        "https://www.oed.com/dictionary/justiciary_n2?tab=factsheet#40272552",
+        "https://www.oed.com/dictionary/justiciary_adj1?tab=factsheet#40273029",
+        "https://latin-dictionary.net/definition/25026/justitia-justitiae"
+      ],
+      "degrees": {
+        "positive": "iairie",
+        "comparative": "is"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/justiciary#etymonline_v_51649",
-      "https://www.merriam-webster.com/dictionary/justiciary",
-      "https://www.oed.com/dictionary/justiciary_n2?tab=factsheet#40272552",
-      "https://www.oed.com/dictionary/justiciary_adj1?tab=factsheet#40273029",
-      "https://latin-dictionary.net/definition/25026/justitia-justitiae"
-    ]
+    }
   },
   {
-    "name": "justicier,  justiciable",
-    "etymology": [
-      {
-        "name": "iustitia",
-        "origin": "Latin"
-      },
-      {
-        "name": "justicier,  justiciable",
-        "origin": "Old French"
-      },
-      {
-        "name": "justiciable -y",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "justicier,  justiciable",
+      "etymology": [
+        {
+          "name": "iustitia",
+          "origin": "Latin"
+        },
+        {
+          "name": "justicier,  justiciable",
+          "origin": "Old French"
+        },
+        {
+          "name": "josticiable -y",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/justiciable#etymonline_v_40097",
+        "https://www.merriam-webster.com/dictionary/justiciable"
+      ],
+      "degrees": {
+        "positive": "josticiable",
+        "comparative": "y"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/justiciable#etymonline_v_40097",
-      "https://www.merriam-webster.com/dictionary/justiciable"
-    ]
+    }
   },
   {
-    "name": "justiciability",
-    "etymology": [
-      {
-        "name": "justiciability",
-        "origin": "Modern English"
-      },
-      {
-        "name": "justiciabilatie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/justiciability"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "justiciability",
+      "etymology": [
+        {
+          "name": "justiciability",
+          "origin": "Modern English"
+        },
+        {
+          "name": "josticiabilatie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/justiciability"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to justify",
-    "etymology": [
-      {
-        "name": "iustus + facere, iustificus, iustificare",
-        "origin": "Latin"
-      },
-      {
-        "name": "justifiier",
-        "origin": "Old French"
-      },
-      {
-        "name": "to justify",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta justifae -s -d -ïng",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/justify#etymonline_v_6577",
-      "https://www.merriam-webster.com/dictionary/justify",
-      "https://latin-dictionary.net/definition/25024/justifico-justificare-justificavi-justificatus",
-      "https://latin-dictionary.net/definition/20189/facio-facere-feci-factus",
-      "https://latin-dictionary.net/definition/25029/justus-justa"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "to justify",
+      "etymology": [
+        {
+          "name": "iustus + facere, iustificus, iustificare",
+          "origin": "Latin"
+        },
+        {
+          "name": "justifiier",
+          "origin": "Old French"
+        },
+        {
+          "name": "to justify",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta jostifae -s -d -ïng",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/justify#etymonline_v_6577",
+        "https://www.merriam-webster.com/dictionary/justify",
+        "https://latin-dictionary.net/definition/25024/justifico-justificare-justificavi-justificatus",
+        "https://latin-dictionary.net/definition/20189/facio-facere-feci-factus",
+        "https://latin-dictionary.net/definition/25029/justus-justa"
+      ]
+    }
   },
   {
-    "name": "justifiier, justifiable",
-    "etymology": [
-      {
-        "name": "justifiier, justifiable",
-        "origin": "Old French"
-      },
-      {
-        "name": "justifîable -y",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "justifiier, justifiable",
+      "etymology": [
+        {
+          "name": "justifiier, justifiable",
+          "origin": "Old French"
+        },
+        {
+          "name": "jostifîable -y",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/justifiable#etymonline_v_42768",
+        "https://www.oed.com/dictionary/justifiable_adj?tab=factsheet#40273309",
+        "https://www.collinsdictionary.com/us/dictionary/english/justifiable",
+        "https://anglo-norman.net/entry/justifiable",
+        "https://anglo-norman.net/entry/justifier"
+      ],
+      "degrees": {
+        "positive": "able",
+        "comparative": "y"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/justifiable#etymonline_v_42768",
-      "https://www.oed.com/dictionary/justifiable_adj?tab=factsheet#40273309",
-      "https://www.collinsdictionary.com/us/dictionary/english/justifiable",
-      "https://anglo-norman.net/entry/justifiable",
-      "https://anglo-norman.net/entry/justifier"
-    ]
+    }
   },
   {
-    "name": "justifiability",
-    "etymology": [
-      {
-        "name": "justifiability",
-        "origin": "Modern English"
-      },
-      {
-        "name": "justifîabilatie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/justifiability#etymonline_v_42769",
-      "https://www.merriam-webster.com/dictionary/justifiability"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "justifiability",
+      "etymology": [
+        {
+          "name": "justifiability",
+          "origin": "Modern English"
+        },
+        {
+          "name": "jostifîabilatie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/justifiability#etymonline_v_42769",
+        "https://www.merriam-webster.com/dictionary/justifiability"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "justification",
-    "etymology": [
-      {
-        "name": "iustificare, iustificationem",
-        "origin": "Latin"
-      },
-      {
-        "name": "justification",
-        "origin": "Modern English"
-      },
-      {
-        "name": "justificâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/justification#etymonline_v_35263",
-      "https://www.oed.com/dictionary/justification_n?tab=factsheet#40273689",
-      "https://latin-dictionary.net/definition/25022/justificatio-justificationis",
-      "https://latin-dictionary.net/definition/25024/justifico-justificare-justificavi-justificatus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "justification",
+      "etymology": [
+        {
+          "name": "iustificare, iustificationem",
+          "origin": "Latin"
+        },
+        {
+          "name": "justification",
+          "origin": "Modern English"
+        },
+        {
+          "name": "jostificâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/justification#etymonline_v_35263",
+        "https://www.oed.com/dictionary/justification_n?tab=factsheet#40273689",
+        "https://latin-dictionary.net/definition/25022/justificatio-justificationis",
+        "https://latin-dictionary.net/definition/25024/justifico-justificare-justificavi-justificatus"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "justificative",
-    "etymology": [
-      {
-        "name": "justificative",
-        "origin": "Modern English"
-      },
-      {
-        "name": "justificaitif -vly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "justificative",
+      "etymology": [
+        {
+          "name": "justificative",
+          "origin": "Modern English"
+        },
+        {
+          "name": "jostificaitif -vly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/justificative#etymonline_v_51650",
+        "https://www.merriam-webster.com/dictionary/justificative",
+        "https://www.oed.com/dictionary/justificative_adj?tab=factsheet#40274066"
+      ],
+      "degrees": {
+        "positive": "jostificaitif",
+        "comparative": "vly"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/justificative#etymonline_v_51650",
-      "https://www.merriam-webster.com/dictionary/justificative",
-      "https://www.oed.com/dictionary/justificative_adj?tab=factsheet#40274066"
-    ]
+    }
   },
   {
-    "name": "justificatory",
-    "etymology": [
-      {
-        "name": "justificatory",
-        "origin": "Modern English"
-      },
-      {
-        "name": "justìficatory",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.collinsdictionary.com/us/dictionary/english/justificatory",
-      "https://www.merriam-webster.com/dictionary/justificatory",
-      "https://www.oed.com/dictionary/justificatory_adj?tab=factsheet#40274199"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "justificatory",
+      "etymology": [
+        {
+          "name": "justificatory",
+          "origin": "Modern English"
+        },
+        {
+          "name": "jostificatory",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.collinsdictionary.com/us/dictionary/english/justificatory",
+        "https://www.merriam-webster.com/dictionary/justificatory",
+        "https://www.oed.com/dictionary/justificatory_adj?tab=factsheet#40274199"
+      ]
+    }
   }
 ]

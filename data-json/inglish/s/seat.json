@@ -1,59 +1,85 @@
 [
   {
-    "name": "seat",
-    "etymology": [
-      {
-        "name": "sæti",
-        "origin": "Old Norse"
-      },
-      {
-        "name": "saet",
-        "origin": "Old English"
-      },
-      {
-        "name": "sete",
-        "origin": "Middle English"
-      },
-      {
-        "name": "seat",
-        "origin": "Modern English"
-      },
-      {
-        "name": "site, síts",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/seat#etymonline_v_23064",
-      "https://www.merriam-webster.com/dictionary/seat#dictionary-entry-1",
-      "https://www.oed.com/dictionary/seat_n?tab=pronunciation#23944574",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39622",
-      "https://bosworthtoller.com/26265",
-      "https://old-norse.net/html/s.php#sæti"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "seat",
+      "etymology": [
+        {
+          "name": "sæti",
+          "origin": "Old Norse"
+        },
+        {
+          "name": "saet",
+          "origin": "Old English"
+        },
+        {
+          "name": "sete",
+          "origin": "Middle English"
+        },
+        {
+          "name": "seat",
+          "origin": "Modern English"
+        },
+        {
+          "name": "site, síts",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/seat#etymonline_v_23064",
+        "https://www.merriam-webster.com/dictionary/seat#dictionary-entry-1",
+        "https://www.oed.com/dictionary/seat_n?tab=pronunciation#23944574",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39622",
+        "https://bosworthtoller.com/26265",
+        "https://old-norse.net/html/s.php#sæti"
+      ],
+      "number": "plural"
+    }
   },
   {
-    "name": "to seat",
-    "etymology": [
-      {
-        "name": "to seat",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to seat",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta site -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to seat",
+        "ta site -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to seat",
+      "etymology": [
+        {
+          "name": "to seat",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta site -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/seat#etymonline_v_45034",
+        "https://www.merriam-webster.com/dictionary/seat#dictionary-entry-2",
+        "https://www.oed.com/dictionary/seat_v?tab=factsheet#23948307"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/seat#etymonline_v_45034",
-      "https://www.merriam-webster.com/dictionary/seat#dictionary-entry-2",
-      "https://www.oed.com/dictionary/seat_v?tab=factsheet#23948307"
-    ]
+    }
   }
 ]

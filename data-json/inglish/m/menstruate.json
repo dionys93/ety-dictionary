@@ -1,120 +1,164 @@
 [
   {
-    "name": "to menstruate",
-    "etymology": [
-      {
-        "name": "mensis, menstruus, menstruare, menstruatus",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to menstruate",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to menstruate",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta menstrete -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "mensis, menstruus, menstruare, menstruatus",
+        "to menstruate",
+        "ta menstrete -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to menstruate",
+      "etymology": [
+        {
+          "name": "mensis, menstruus, menstruare, menstruatus",
+          "origin": "Latin"
+        },
+        {
+          "name": "to menstruate",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta menstrete -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/menstruate#etymonline_v_31174",
+        "https://www.oed.com/dictionary/menstruate_v?tab=factsheet#37267176",
+        "https://latin-dictionary.net/definition/26742/menstruo-menstruare-menstruavi-menstruatus",
+        "https://latin-dictionary.net/definition/26745/menstruus-menstrua-menstruum",
+        "https://latin-dictionary.net/definition/26738/mensis-mensis"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/menstruate#etymonline_v_31174",
-      "https://www.oed.com/dictionary/menstruate_v?tab=factsheet#37267176",
-      "https://latin-dictionary.net/definition/26742/menstruo-menstruare-menstruavi-menstruatus",
-      "https://latin-dictionary.net/definition/26745/menstruus-menstrua-menstruum",
-      "https://latin-dictionary.net/definition/26738/mensis-mensis"
-    ]
+    }
   },
   {
-    "name": "menstruation",
-    "etymology": [
-      {
-        "name": "menstruatio, menstruationem",
-        "origin": "Latin"
-      },
-      {
-        "name": "menstruation",
-        "origin": "Modern English"
-      },
-      {
-        "name": "menstrâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/menstruation#etymonline_v_31986",
-      "https://www.oed.com/dictionary/menstruation_n?tab=factsheet#37267382",
-      "https://latin-dictionary.net/definition/26741/menstruatio-menstruationis",
-      "https://latin-dictionary.net/definition/26742/menstruo-menstruare-menstruavi-menstruatus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "menstruation",
+      "etymology": [
+        {
+          "name": "menstruatio, menstruationem",
+          "origin": "Latin"
+        },
+        {
+          "name": "menstruation",
+          "origin": "Modern English"
+        },
+        {
+          "name": "menstrâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/menstruation#etymonline_v_31986",
+        "https://www.oed.com/dictionary/menstruation_n?tab=factsheet#37267382",
+        "https://latin-dictionary.net/definition/26741/menstruatio-menstruationis",
+        "https://latin-dictionary.net/definition/26742/menstruo-menstruare-menstruavi-menstruatus"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "menstrual",
-    "etymology": [
-      {
-        "name": "mensis, menstruus, menstrualis",
-        "origin": "Latin"
-      },
-      {
-        "name": "menstruel",
-        "origin": "Old French"
-      },
-      {
-        "name": "menstrual",
-        "origin": "Modern English"
-      },
-      {
-        "name": "menstral -ly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "menstrual",
+      "etymology": [
+        {
+          "name": "mensis, menstruus, menstrualis",
+          "origin": "Latin"
+        },
+        {
+          "name": "menstruel",
+          "origin": "Old French"
+        },
+        {
+          "name": "menstrual",
+          "origin": "Modern English"
+        },
+        {
+          "name": "menstral -ly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/menstrual#etymonline_v_12592",
+        "https://www.oed.com/dictionary/menstrual_adj?tab=factsheet#37266422",
+        "https://anglo-norman.net/entry/menstruel",
+        "https://latin-dictionary.net/definition/26740/menstrualis-menstrualis-menstruale",
+        "https://latin-dictionary.net/definition/26745/menstruus-menstrua-menstruum",
+        "https://latin-dictionary.net/definition/26738/mensis-mensis"
+      ],
+      "degrees": {
+        "positive": "menstral",
+        "comparative": "ly"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/menstrual#etymonline_v_12592",
-      "https://www.oed.com/dictionary/menstrual_adj?tab=factsheet#37266422",
-      "https://anglo-norman.net/entry/menstruel",
-      "https://latin-dictionary.net/definition/26740/menstrualis-menstrualis-menstruale",
-      "https://latin-dictionary.net/definition/26745/menstruus-menstrua-menstruum",
-      "https://latin-dictionary.net/definition/26738/mensis-mensis"
-    ]
+    }
   },
   {
-    "name": "menstruous",
-    "etymology": [
-      {
-        "name": "mensis, menstruus",
-        "origin": "Latin"
-      },
-      {
-        "name": "menstrueus",
-        "origin": "Old French"
-      },
-      {
-        "name": "menstruous",
-        "origin": "Modern English"
-      },
-      {
-        "name": "menstroʃ -sly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/menstruous#etymonline_v_44513",
-      "https://www.merriam-webster.com/medical/menstruous",
-      "https://www.oed.com/dictionary/menstruous_adj?tab=factsheet#37267911",
-      "https://anglo-norman.net/entry/menstruus",
-      "https://latin-dictionary.net/definition/26745/menstruus-menstrua-menstruum",
-      "https://latin-dictionary.net/definition/26750/mensuum",
-      "https://latin-dictionary.net/definition/26738/mensis-mensis"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "menstruous",
+      "etymology": [
+        {
+          "name": "mensis, menstruus",
+          "origin": "Latin"
+        },
+        {
+          "name": "menstrueus",
+          "origin": "Old French"
+        },
+        {
+          "name": "menstruous",
+          "origin": "Modern English"
+        },
+        {
+          "name": "menstroʃ -sly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/menstruous#etymonline_v_44513",
+        "https://www.merriam-webster.com/medical/menstruous",
+        "https://www.oed.com/dictionary/menstruous_adj?tab=factsheet#37267911",
+        "https://anglo-norman.net/entry/menstruus",
+        "https://latin-dictionary.net/definition/26745/menstruus-menstrua-menstruum",
+        "https://latin-dictionary.net/definition/26750/mensuum",
+        "https://latin-dictionary.net/definition/26738/mensis-mensis"
+      ]
+    }
   }
 ]

@@ -1,57 +1,87 @@
 [
   {
-    "name": "to remember",
-    "etymology": [
-      {
-        "name": "memor, re + memorari, rememorari",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to remember",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ering"
       },
-      {
-        "name": "remembrer",
-        "origin": "Old French"
-      },
-      {
-        "name": "remembren",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to remember",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta remembre -s -d -ering",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "memor, re + memorari, rememorari",
+        "remembrer",
+        "remembren",
+        "to remember",
+        "ta remembre -s -d -ering"
+      ]
+    },
+    "standard": {
+      "name": "to remember",
+      "etymology": [
+        {
+          "name": "memor, re + memorari, rememorari",
+          "origin": "Latin"
+        },
+        {
+          "name": "remembrer",
+          "origin": "Old French"
+        },
+        {
+          "name": "remembren",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to remember",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta remembre -s -d -ering",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/remember#etymonline_v_10402",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36694",
+        "https://www.anglo-norman.net/entry/remembrer",
+        "https://latin-dictionary.net/definition/26719/memoro-memorare-memoravi-memoratus",
+        "https://latin-dictionary.net/definition/26709/memor-gen-memoris"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ering"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/remember#etymonline_v_10402",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36694",
-      "https://www.anglo-norman.net/entry/remembrer",
-      "https://latin-dictionary.net/definition/26719/memoro-memorare-memoravi-memoratus",
-      "https://latin-dictionary.net/definition/26709/memor-gen-memoris"
-    ]
+    }
   },
   {
-    "name": "remembrance",
-    "etymology": [
-      {
-        "name": "remembrance",
-        "origin": "Old French"
-      },
-      {
-        "name": "remèmbrance -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/remembrance#etymonline_v_37059",
-      "https://www.anglo-norman.net/entry/remembrance"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "remembrance",
+      "etymology": [
+        {
+          "name": "remembrance",
+          "origin": "Old French"
+        },
+        {
+          "name": "remèmbrance -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/remembrance#etymonline_v_37059",
+        "https://www.anglo-norman.net/entry/remembrance"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

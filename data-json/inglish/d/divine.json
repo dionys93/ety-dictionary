@@ -1,160 +1,213 @@
 [
   {
-    "name": "divine",
-    "etymology": [
-      {
-        "name": "deus, divus, divinus",
-        "origin": "Latin"
-      },
-      {
-        "name": "divin, devin",
-        "origin": "Old French"
-      },
-      {
-        "name": "divine",
-        "origin": "Modern English"
-      },
-      {
-        "name": "divîne, divînly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "adverb"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/divine#etymonline_v_11548",
-      "https://www.merriam-webster.com/dictionary/divine#dictionary-entry-1",
-      "https://www.oed.com/dictionary/divine_adj?tab=pronunciation#6313858",
-      "https://www.oed.com/dictionary/divine_adj?tab=meaning_and_use#6313858",
-      "https://anglo-norman.net/entry/divin",
-      "https://latin-dictionary.net/definition/18315/divinus-divina",
-      "https://latin-dictionary.net/definition/18332/divus-divi",
-      "https://latin-dictionary.net/definition/17231/Deus-Dei"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "divine",
+      "etymology": [
+        {
+          "name": "deus, divus, divinus",
+          "origin": "Latin"
+        },
+        {
+          "name": "divin, devin",
+          "origin": "Old French"
+        },
+        {
+          "name": "divine",
+          "origin": "Modern English"
+        },
+        {
+          "name": "divîne, divînly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "adverb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/divine#etymonline_v_11548",
+        "https://www.merriam-webster.com/dictionary/divine#dictionary-entry-1",
+        "https://www.oed.com/dictionary/divine_adj?tab=pronunciation#6313858",
+        "https://www.oed.com/dictionary/divine_adj?tab=meaning_and_use#6313858",
+        "https://anglo-norman.net/entry/divin",
+        "https://latin-dictionary.net/definition/18315/divinus-divina",
+        "https://latin-dictionary.net/definition/18332/divus-divi",
+        "https://latin-dictionary.net/definition/17231/Deus-Dei"
+      ]
+    }
   },
   {
-    "name": "to divine",
-    "etymology": [
-      {
-        "name": "deus, divus, divinus, divinare",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to divine",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "devinare",
-        "origin": "Vulgar Latin"
-      },
-      {
-        "name": "deviner",
-        "origin": "Old French"
-      },
-      {
-        "name": "divinen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to divine",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta divîne -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "deus, divus, divinus, divinare",
+        "devinare",
+        "deviner",
+        "divinen",
+        "to divine",
+        "ta divîne -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to divine",
+      "etymology": [
+        {
+          "name": "deus, divus, divinus, divinare",
+          "origin": "Latin"
+        },
+        {
+          "name": "devinare",
+          "origin": "Vulgar Latin"
+        },
+        {
+          "name": "deviner",
+          "origin": "Old French"
+        },
+        {
+          "name": "divinen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to divine",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta divîne -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/divine#etymonline_v_11549",
+        "https://www.merriam-webster.com/dictionary/divine#dictionary-entry-3",
+        "https://www.oed.com/dictionary/divine_v",
+        "https://anglo-norman.net/entry/divinner",
+        "https://latin-dictionary.net/definition/18314/divino-divinare-divinavi-divinatus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/divine#etymonline_v_11549",
-      "https://www.merriam-webster.com/dictionary/divine#dictionary-entry-3",
-      "https://www.oed.com/dictionary/divine_v",
-      "https://anglo-norman.net/entry/divinner",
-      "https://latin-dictionary.net/definition/18314/divino-divinare-divinavi-divinatus"
-    ]
+    }
   },
   {
-    "name": "divine",
-    "etymology": [
-      {
-        "name": "deus, divus, divinus",
-        "origin": "Latin"
-      },
-      {
-        "name": "devin",
-        "origin": "Old French"
-      },
-      {
-        "name": "divine",
-        "origin": "Modern English"
-      },
-      {
-        "name": "divîne, divîns",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/divine#etymonline_v_37512",
-      "https://www.merriam-webster.com/dictionary/divine#dictionary-entry-2"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "divine",
+      "etymology": [
+        {
+          "name": "deus, divus, divinus",
+          "origin": "Latin"
+        },
+        {
+          "name": "devin",
+          "origin": "Old French"
+        },
+        {
+          "name": "divine",
+          "origin": "Modern English"
+        },
+        {
+          "name": "divîne, divîns",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/divine#etymonline_v_37512",
+        "https://www.merriam-webster.com/dictionary/divine#dictionary-entry-2"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "divinity",
-    "etymology": [
-      {
-        "name": "deus, divus, divinus, divinitatem",
-        "origin": "Latin"
-      },
-      {
-        "name": "devinité",
-        "origin": "Old French"
-      },
-      {
-        "name": "divinity",
-        "origin": "Modern English"
-      },
-      {
-        "name": "divinatie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/divinity#etymonline_v_31734",
-      "https://www.oed.com/dictionary/divinity_n?tab=factsheet#6317275",
-      "https://anglo-norman.net/entry/devinit%C3%A9",
-      "https://latin-dictionary.net/definition/18312/divinitas-divinitatis"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "divinity",
+      "etymology": [
+        {
+          "name": "deus, divus, divinus, divinitatem",
+          "origin": "Latin"
+        },
+        {
+          "name": "devinité",
+          "origin": "Old French"
+        },
+        {
+          "name": "divinity",
+          "origin": "Modern English"
+        },
+        {
+          "name": "divinatie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/divinity#etymonline_v_31734",
+        "https://www.oed.com/dictionary/divinity_n?tab=factsheet#6317275",
+        "https://anglo-norman.net/entry/devinit%C3%A9",
+        "https://latin-dictionary.net/definition/18312/divinitas-divinitatis"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "divination",
-    "etymology": [
-      {
-        "name": "deus, divus, divinus, divinare, divinatio",
-        "origin": "Latin"
-      },
-      {
-        "name": "divination",
-        "origin": "Old French"
-      },
-      {
-        "name": "divinâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/divination#etymonline_v_31733",
-      "https://www.merriam-webster.com/dictionary/divination",
-      "https://www.oed.com/dictionary/divination_n?tab=factsheet#6313229",
-      "https://latin-dictionary.net/definition/18311/divinatio-divinationis"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "divination",
+      "etymology": [
+        {
+          "name": "deus, divus, divinus, divinare, divinatio",
+          "origin": "Latin"
+        },
+        {
+          "name": "divination",
+          "origin": "Old French"
+        },
+        {
+          "name": "divinâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/divination#etymonline_v_31733",
+        "https://www.merriam-webster.com/dictionary/divination",
+        "https://www.oed.com/dictionary/divination_n?tab=factsheet#6313229",
+        "https://latin-dictionary.net/definition/18311/divinatio-divinationis"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

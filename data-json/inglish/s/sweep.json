@@ -1,132 +1,184 @@
 [
   {
-    "name": "to sweep",
-    "etymology": [
-      {
-        "name": "swapan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to sweep",
+      "conjugations": {
+        "thirdPerson": "s"
       },
-      {
-        "name": "swopen, swepen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to sweep",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta suipe -s sɯept -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "swapan",
+        "swopen, swepen",
+        "to sweep",
+        "ta suipe -s sɯept -ing"
+      ]
+    },
+    "standard": {
+      "name": "to sweep",
+      "etymology": [
+        {
+          "name": "swapan",
+          "origin": "Old English"
+        },
+        {
+          "name": "swopen, swepen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to sweep",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta suipe -s sɯept -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/sweep#etymonline_v_22481",
+        "https://www.merriam-webster.com/dictionary/sweep#dictionary-entry-1",
+        "https://www.oed.com/dictionary/sweep_v?tab=factsheet#19561329",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44307",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44139",
+        "https://bosworthtoller.com/29548"
+      ],
+      "conjugations": {
+        "thirdPerson": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/sweep#etymonline_v_22481",
-      "https://www.merriam-webster.com/dictionary/sweep#dictionary-entry-1",
-      "https://www.oed.com/dictionary/sweep_v?tab=factsheet#19561329",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44307",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44139",
-      "https://bosworthtoller.com/29548"
-    ]
+    }
   },
   {
-    "name": "sweep",
-    "etymology": [
-      {
-        "name": "sweopu",
-        "origin": "Old English"
-      },
-      {
-        "name": "swope",
-        "origin": "Middle English"
-      },
-      {
-        "name": "sweep",
-        "origin": "Modern English"
-      },
-      {
-        "name": "suipe, suíps",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/sweep#etymonline_v_46405",
-      "https://www.merriam-webster.com/dictionary/sweep#dictionary-entry-2",
-      "https://www.oed.com/dictionary/sweep_n?tab=pronunciation#19558700",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44306"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "sweep",
+      "etymology": [
+        {
+          "name": "sweopu",
+          "origin": "Old English"
+        },
+        {
+          "name": "swope",
+          "origin": "Middle English"
+        },
+        {
+          "name": "sweep",
+          "origin": "Modern English"
+        },
+        {
+          "name": "suipe, suíps",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/sweep#etymonline_v_46405",
+        "https://www.merriam-webster.com/dictionary/sweep#dictionary-entry-2",
+        "https://www.oed.com/dictionary/sweep_n?tab=pronunciation#19558700",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44306"
+      ],
+      "number": "plural"
+    }
   },
   {
-    "name": "to swipe",
-    "etymology": [
-      {
-        "name": "swapan, swipu",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to swipe",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "swepen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to swipe",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta suîpe -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "swapan, swipu",
+        "swepen",
+        "to swipe",
+        "ta suîpe -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to swipe",
+      "etymology": [
+        {
+          "name": "swapan, swipu",
+          "origin": "Old English"
+        },
+        {
+          "name": "swepen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to swipe",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta suîpe -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/swipe#etymonline_v_46412",
+        "https://www.etymonline.com/word/swipe#etymonline_v_22494",
+        "https://www.merriam-webster.com/dictionary/swipe#dictionary-entry-2",
+        "https://www.oed.com/dictionary/swipe_v?tab=factsheet#19637282",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44139",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44307",
+        "https://bosworthtoller.com/29548",
+        "https://bosworthtoller.com/29845"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/swipe#etymonline_v_46412",
-      "https://www.etymonline.com/word/swipe#etymonline_v_22494",
-      "https://www.merriam-webster.com/dictionary/swipe#dictionary-entry-2",
-      "https://www.oed.com/dictionary/swipe_v?tab=factsheet#19637282",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44139",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44307",
-      "https://bosworthtoller.com/29548",
-      "https://bosworthtoller.com/29845"
-    ]
+    }
   },
   {
-    "name": "swipe",
-    "etymology": [
-      {
-        "name": "swapan, swipu",
-        "origin": "Old English"
-      },
-      {
-        "name": "swepen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "swipe",
-        "origin": "Modern English"
-      },
-      {
-        "name": "suîpe, suîps",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/swipe#etymonline_v_22494",
-      "https://www.etymonline.com/word/sweep#etymonline_v_46405",
-      "https://www.etymonline.com/word/sweep#etymonline_v_22481",
-      "https://www.merriam-webster.com/dictionary/swipe#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44139",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44307",
-      "https://bosworthtoller.com/29548",
-      "https://bosworthtoller.com/29845"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "swipe",
+      "etymology": [
+        {
+          "name": "swapan, swipu",
+          "origin": "Old English"
+        },
+        {
+          "name": "swepen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "swipe",
+          "origin": "Modern English"
+        },
+        {
+          "name": "suîpe, suîps",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/swipe#etymonline_v_22494",
+        "https://www.etymonline.com/word/sweep#etymonline_v_46405",
+        "https://www.etymonline.com/word/sweep#etymonline_v_22481",
+        "https://www.merriam-webster.com/dictionary/swipe#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44139",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44307",
+        "https://bosworthtoller.com/29548",
+        "https://bosworthtoller.com/29845"
+      ],
+      "number": "plural"
+    }
   }
 ]

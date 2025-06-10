@@ -1,90 +1,135 @@
 [
   {
-    "name": "to regret",
-    "etymology": [
-      {
-        "name": "regreter",
-        "origin": "Old French"
+    "verbDetails": {
+      "infinitive": "to regret",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "regreten",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to regret",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta regrète -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "regreter",
+        "regreten",
+        "to regret",
+        "ta regrète -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to regret",
+      "etymology": [
+        {
+          "name": "regreter",
+          "origin": "Old French"
+        },
+        {
+          "name": "regreten",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to regret",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta regrète -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/regret",
+        "https://www.oed.com/dictionary/regret_v?tab=factsheet#26225229",
+        "https://anglo-norman.net/entry/regreter"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/regret",
-      "https://www.oed.com/dictionary/regret_v?tab=factsheet#26225229",
-      "https://anglo-norman.net/entry/regreter"
-    ]
+    }
   },
   {
-    "name": "regret",
-    "etymology": [
-      {
-        "name": "regret",
-        "origin": "Modern English"
-      },
-      {
-        "name": "regrèt -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/regret",
-      "https://www.oed.com/dictionary/regret_n?tab=factsheet#26224777",
-      "https://anglo-norman.net/entry/regret"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "regret",
+      "etymology": [
+        {
+          "name": "regret",
+          "origin": "Modern English"
+        },
+        {
+          "name": "regrèt -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/regret",
+        "https://www.oed.com/dictionary/regret_n?tab=factsheet#26224777",
+        "https://anglo-norman.net/entry/regret"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "regretable",
-    "etymology": [
-      {
-        "name": "regretable",
-        "origin": "Modern English"
-      },
-      {
-        "name": "regrètable -y",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "regretable",
+      "etymology": [
+        {
+          "name": "regretable",
+          "origin": "Modern English"
+        },
+        {
+          "name": "regrètable -y",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.oed.com/dictionary/regrettable_adj?tab=factsheet#26225896"
+      ],
+      "degrees": {
+        "positive": "table",
+        "comparative": "y"
       }
-    ],
-    "sources": [
-      "https://www.oed.com/dictionary/regrettable_adj?tab=factsheet#26225896"
-    ]
+    }
   },
   {
-    "name": "regretful",
-    "etymology": [
-      {
-        "name": "regretful",
-        "origin": "Modern English"
-      },
-      {
-        "name": "regrètful",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.oed.com/search/dictionary/?scope=Entries&q=regretful"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "regretful",
+      "etymology": [
+        {
+          "name": "regretful",
+          "origin": "Modern English"
+        },
+        {
+          "name": "regrètful",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.oed.com/search/dictionary/?scope=Entries&q=regretful"
+      ]
+    }
   }
 ]

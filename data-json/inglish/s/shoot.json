@@ -1,80 +1,111 @@
 [
   {
-    "name": "to shoot",
-    "etymology": [
-      {
-        "name": "sceotan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to shoot",
+      "conjugations": {
+        "thirdPerson": "s"
       },
-      {
-        "name": "sheten",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to shoot",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta seute -s shót -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "sceotan",
+        "sheten",
+        "to shoot",
+        "ta seute -s shót -ing"
+      ]
+    },
+    "standard": {
+      "name": "to shoot",
+      "etymology": [
+        {
+          "name": "sceotan",
+          "origin": "Old English"
+        },
+        {
+          "name": "sheten",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to shoot",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta seute -s shót -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/shoot#etymonline_v_23430",
+        "https://www.merriam-webster.com/dictionary/shoot#dictionary-entry-1",
+        "https://www.oed.com/dictionary/shoot_v?tab=factsheet#22973991",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39905",
+        "https://bosworthtoller.com/26720"
+      ],
+      "conjugations": {
+        "thirdPerson": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/shoot#etymonline_v_23430",
-      "https://www.merriam-webster.com/dictionary/shoot#dictionary-entry-1",
-      "https://www.oed.com/dictionary/shoot_v?tab=factsheet#22973991",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39905",
-      "https://bosworthtoller.com/26720"
-    ]
+    }
   },
   {
-    "name": "shoot",
-    "etymology": [
-      {
-        "name": "shot",
-        "origin": "Middle English"
-      },
-      {
-        "name": "shoot",
-        "origin": "Modern English"
-      },
-      {
-        "name": "seut -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/shoot#etymonline_v_24202",
-      "https://www.etymonline.com/word/shoot#etymonline_v_48611",
-      "https://www.etymonline.com/word/shoot#etymonline_v_23430",
-      "https://www.merriam-webster.com/dictionary/shoot#dictionary-entry-2",
-      "https://www.oed.com/dictionary/shoot_n1?tab=factsheet#22972026",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40064"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "shoot",
+      "etymology": [
+        {
+          "name": "shot",
+          "origin": "Middle English"
+        },
+        {
+          "name": "shoot",
+          "origin": "Modern English"
+        },
+        {
+          "name": "seut -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/shoot#etymonline_v_24202",
+        "https://www.etymonline.com/word/shoot#etymonline_v_48611",
+        "https://www.etymonline.com/word/shoot#etymonline_v_23430",
+        "https://www.merriam-webster.com/dictionary/shoot#dictionary-entry-2",
+        "https://www.oed.com/dictionary/shoot_n1?tab=factsheet#22972026",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40064"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "shot  -s (m n)",
-    "etymology": [
-      {
-        "name": "scot, sceot",
-        "origin": "Old English"
-      },
-      {
-        "name": "shot  -s (m n)",
-        "origin": "Middle English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/shot#etymonline_v_23435",
-      "https://www.merriam-webster.com/dictionary/shot#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40064",
-      "https://bosworthtoller.com/26986"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "shot  -s (m n)",
+      "etymology": [
+        {
+          "name": "scot, sceot",
+          "origin": "Old English"
+        },
+        {
+          "name": "shot  -s (m n)",
+          "origin": "Middle English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/shot#etymonline_v_23435",
+        "https://www.merriam-webster.com/dictionary/shot#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40064",
+        "https://bosworthtoller.com/26986"
+      ]
+    }
   }
 ]

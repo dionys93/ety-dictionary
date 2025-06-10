@@ -1,22 +1,30 @@
 [
   {
-    "name": "foreword",
-    "etymology": [
-      {
-        "name": "foreword",
-        "origin": "Modern English"
-      },
-      {
-        "name": "fôɯord -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/foreword",
-      "https://www.oed.com/dictionary/foreword_n?tab=factsheet#3777377"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "foreword",
+      "etymology": [
+        {
+          "name": "foreword",
+          "origin": "Modern English"
+        },
+        {
+          "name": "fôɯord -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/foreword",
+        "https://www.oed.com/dictionary/foreword_n?tab=factsheet#3777377"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

@@ -1,53 +1,81 @@
 [
   {
-    "name": "to frustrate",
-    "etymology": [
-      {
-        "name": "fraus, frustra, frustrari, frustratus",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to frustrate",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to frustrate",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta frustrete -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "fraus, frustra, frustrari, frustratus",
+        "to frustrate",
+        "ta frustrete -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to frustrate",
+      "etymology": [
+        {
+          "name": "fraus, frustra, frustrari, frustratus",
+          "origin": "Latin"
+        },
+        {
+          "name": "to frustrate",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta frustrete -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/frustrate#etymonline_v_14224",
+        "https://www.merriam-webster.com/dictionary/frustrate#dictionary-entry-1",
+        "https://latin-dictionary.net/definition/21085/frustror-frustrari-frustratus",
+        "https://latin-dictionary.net/definition/21080/frustra",
+        "https://latin-dictionary.net/definition/20994/fraus-fraudis"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/frustrate#etymonline_v_14224",
-      "https://www.merriam-webster.com/dictionary/frustrate#dictionary-entry-1",
-      "https://latin-dictionary.net/definition/21085/frustror-frustrari-frustratus",
-      "https://latin-dictionary.net/definition/21080/frustra",
-      "https://latin-dictionary.net/definition/20994/fraus-fraudis"
-    ]
+    }
   },
   {
-    "name": "frustration",
-    "etymology": [
-      {
-        "name": "frustratio, frustrationem",
-        "origin": "Latin"
-      },
-      {
-        "name": "frustration",
-        "origin": "Modern English"
-      },
-      {
-        "name": "frustrâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/frustration#etymonline_v_33394",
-      "https://latin-dictionary.net/definition/21082/frustratio-frustrationis"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "frustration",
+      "etymology": [
+        {
+          "name": "frustratio, frustrationem",
+          "origin": "Latin"
+        },
+        {
+          "name": "frustration",
+          "origin": "Modern English"
+        },
+        {
+          "name": "frustrâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/frustration#etymonline_v_33394",
+        "https://latin-dictionary.net/definition/21082/frustratio-frustrationis"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

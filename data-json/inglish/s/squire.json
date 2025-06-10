@@ -1,49 +1,63 @@
 [
   {
-    "name": "squire",
-    "etymology": [
-      {
-        "name": "scutarius",
-        "origin": "Latin"
-      },
-      {
-        "name": "esquier",
-        "origin": "Old French"
-      },
-      {
-        "name": "squire",
-        "origin": "Modern English"
-      },
-      {
-        "name": "squîre, squîars",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/squire",
-      "https://www.oed.com/dictionary/squire_n?tab=factsheet#21095331",
-      "https://anglo-norman.net/entry/esquier_1",
-      "https://latin-dictionary.net/definition/34401/scutarius-scutaria-scutarium"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "squire",
+      "etymology": [
+        {
+          "name": "scutarius",
+          "origin": "Latin"
+        },
+        {
+          "name": "esquier",
+          "origin": "Old French"
+        },
+        {
+          "name": "squire",
+          "origin": "Modern English"
+        },
+        {
+          "name": "squîre, squîars",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/squire",
+        "https://www.oed.com/dictionary/squire_n?tab=factsheet#21095331",
+        "https://anglo-norman.net/entry/esquier_1",
+        "https://latin-dictionary.net/definition/34401/scutarius-scutaria-scutarium"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to squire",
-    "etymology": [
-      {
-        "name": "to squire",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta squîre -s -d squîaring",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/squire",
-      "https://www.oed.com/dictionary/squire_v?tab=factsheet#21096922"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "to squire",
+      "etymology": [
+        {
+          "name": "to squire",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta squîre -s -d squîaring",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/squire",
+        "https://www.oed.com/dictionary/squire_v?tab=factsheet#21096922"
+      ]
+    }
   }
 ]

@@ -1,29 +1,36 @@
 [
   {
-    "name": "tale",
-    "etymology": [
-      {
-        "name": "talu",
-        "origin": "Old English"
-      },
-      {
-        "name": "tale",
-        "origin": "Middle English"
-      },
-      {
-        "name": "tâle, tâls",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/tale#etymonline_v_4334",
-      "https://www.merriam-webster.com/dictionary/tale",
-      "https://www.oed.com/dictionary/tale_n?tab=factsheet#19205554",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44431",
-      "https://bosworthtoller.com/30197"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "tale",
+      "etymology": [
+        {
+          "name": "talu",
+          "origin": "Old English"
+        },
+        {
+          "name": "tale",
+          "origin": "Middle English"
+        },
+        {
+          "name": "tâle, tâls",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/tale#etymonline_v_4334",
+        "https://www.merriam-webster.com/dictionary/tale",
+        "https://www.oed.com/dictionary/tale_n?tab=factsheet#19205554",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44431",
+        "https://bosworthtoller.com/30197"
+      ],
+      "number": "plural"
+    }
   }
 ]

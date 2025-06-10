@@ -1,26 +1,34 @@
 [
   {
-    "name": "kangaroo",
-    "etymology": [
-      {
-        "name": "gaNurru",
-        "origin": "Aborigine"
-      },
-      {
-        "name": "kangaroo",
-        "origin": "Modern English"
-      },
-      {
-        "name": "kângarue, kângarús",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/kangaroo#etymonline_v_1774",
-      "https://www.merriam-webster.com/dictionary/kangaroo"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "kangaroo",
+      "etymology": [
+        {
+          "name": "gaNurru",
+          "origin": "Aborigine"
+        },
+        {
+          "name": "kangaroo",
+          "origin": "Modern English"
+        },
+        {
+          "name": "kângarue, kângarús",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/kangaroo#etymonline_v_1774",
+        "https://www.merriam-webster.com/dictionary/kangaroo"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

@@ -1,38 +1,46 @@
 [
   {
-    "name": "theater",
-    "etymology": [
-      {
-        "name": "θεᾶσθαι, θέατρον",
-        "origin": "Ancient Greek"
-      },
-      {
-        "name": "theatrum",
-        "origin": "Latin"
-      },
-      {
-        "name": "theatre",
-        "origin": "Old French"
-      },
-      {
-        "name": "theater",
-        "origin": "Modern English"
-      },
-      {
-        "name": "þiatre,  þiaters",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/theater",
-      "https://www.oed.com/dictionary/theatre_n?tab=factsheet#18786848",
-      "https://anglo-norman.net/entry/theatre",
-      "https://latin-dictionary.net/definition/37117/theatrum-theatri",
-      "https://lsj.gr/wiki/%CE%B8%CE%AD%CE%B1%CF%84%CF%81%CE%BF%CE%BD",
-      "https://lsj.gr/wiki/%CE%B8%CE%B5%E1%BE%B6%CF%83%CE%B8%CE%B1%CE%B9"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "theater",
+      "etymology": [
+        {
+          "name": "θεᾶσθαι, θέατρον",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "theatrum",
+          "origin": "Latin"
+        },
+        {
+          "name": "theatre",
+          "origin": "Old French"
+        },
+        {
+          "name": "theater",
+          "origin": "Modern English"
+        },
+        {
+          "name": "þiatre,  þiaters",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/theater",
+        "https://www.oed.com/dictionary/theatre_n?tab=factsheet#18786848",
+        "https://anglo-norman.net/entry/theatre",
+        "https://latin-dictionary.net/definition/37117/theatrum-theatri",
+        "https://lsj.gr/wiki/%CE%B8%CE%AD%CE%B1%CF%84%CF%81%CE%BF%CE%BD",
+        "https://lsj.gr/wiki/%CE%B8%CE%B5%E1%BE%B6%CF%83%CE%B8%CE%B1%CE%B9"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

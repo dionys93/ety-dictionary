@@ -1,54 +1,82 @@
 [
   {
-    "name": "rate",
-    "etymology": [
-      {
-        "name": "rata",
-        "origin": "Latin"
-      },
-      {
-        "name": "rate",
-        "origin": "Old French"
-      },
-      {
-        "name": "râte, râts",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/rate#etymonline_v_3392",
-      "https://www.merriam-webster.com/dictionary/rate#dictionary-entry-1",
-      "https://www.anglo-norman.net/entry/rate_2",
-      "https://latin-dictionary.net/definition/32929/ratus-rata-ratum"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "rate",
+      "etymology": [
+        {
+          "name": "rata",
+          "origin": "Latin"
+        },
+        {
+          "name": "rate",
+          "origin": "Old French"
+        },
+        {
+          "name": "râte, râts",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/rate#etymonline_v_3392",
+        "https://www.merriam-webster.com/dictionary/rate#dictionary-entry-1",
+        "https://www.anglo-norman.net/entry/rate_2",
+        "https://latin-dictionary.net/definition/32929/ratus-rata-ratum"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to rate",
-    "etymology": [
-      {
-        "name": "raten",
-        "origin": "Middle English"
+    "verbDetails": {
+      "infinitive": "to rate",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to rate",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta râte -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "raten",
+        "to rate",
+        "ta râte -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to rate",
+      "etymology": [
+        {
+          "name": "raten",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to rate",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta râte -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/rate#etymonline_v_45459",
+        "https://www.etymonline.com/word/rate#etymonline_v_3392",
+        "https://www.merriam-webster.com/dictionary/rate#dictionary-entry-2",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35980/track?counter=1&search_id=34579922"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/rate#etymonline_v_45459",
-      "https://www.etymonline.com/word/rate#etymonline_v_3392",
-      "https://www.merriam-webster.com/dictionary/rate#dictionary-entry-2",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35980/track?counter=1&search_id=34579922"
-    ]
+    }
   }
 ]

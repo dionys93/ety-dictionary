@@ -1,53 +1,71 @@
 [
   {
-    "name": "invisible",
-    "etymology": [
-      {
-        "name": "invisibilis",
-        "origin": "Latin"
-      },
-      {
-        "name": "invisible",
-        "origin": "Old French"
-      },
-      {
-        "name": "invisable -y",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "invisible",
+      "etymology": [
+        {
+          "name": "invisibilis",
+          "origin": "Latin"
+        },
+        {
+          "name": "invisible",
+          "origin": "Old French"
+        },
+        {
+          "name": "invisable -y",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/invisible#etymonline_v_12197",
+        "https://www.oed.com/dictionary/invisible_adj?tab=factsheet#9207",
+        "https://anglo-norman.net/entry/invisible",
+        "https://latin-dictionary.net/definition/24661/invisibil-gen-invisibilis"
+      ],
+      "degrees": {
+        "positive": "invisable",
+        "comparative": "y"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/invisible#etymonline_v_12197",
-      "https://www.oed.com/dictionary/invisible_adj?tab=factsheet#9207",
-      "https://anglo-norman.net/entry/invisible",
-      "https://latin-dictionary.net/definition/24661/invisibil-gen-invisibilis"
-    ]
+    }
   },
   {
-    "name": "invisibility",
-    "etymology": [
-      {
-        "name": "invisibilis, invisibilitas",
-        "origin": "Latin"
-      },
-      {
-        "name": "invisibility",
-        "origin": "Modern English"
-      },
-      {
-        "name": "invisabilatie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/invisibility#etymonline_v_42586",
-      "https://www.oed.com/dictionary/invisibility_n?tab=factsheet#9117",
-      "https://latin-dictionary.net/definition/24661/invisibil-gen-invisibilis"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "invisibility",
+      "etymology": [
+        {
+          "name": "invisibilis, invisibilitas",
+          "origin": "Latin"
+        },
+        {
+          "name": "invisibility",
+          "origin": "Modern English"
+        },
+        {
+          "name": "invisabilatie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/invisibility#etymonline_v_42586",
+        "https://www.oed.com/dictionary/invisibility_n?tab=factsheet#9117",
+        "https://latin-dictionary.net/definition/24661/invisibil-gen-invisibilis"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

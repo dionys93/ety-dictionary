@@ -1,90 +1,126 @@
 [
   {
-    "name": "machination",
-    "etymology": [
-      {
-        "name": "μαχανάν, μαχανά",
-        "origin": "Ancient Greek"
-      },
-      {
-        "name": "machina, machinari, machinatio",
-        "origin": "Latin"
-      },
-      {
-        "name": "machinacion",
-        "origin": "Old French"
-      },
-      {
-        "name": "machination",
-        "origin": "Modern English"
-      },
-      {
-        "name": "macanâcion, macianâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/machination#etymonline_v_2134",
-      "https://www.merriam-webster.com/dictionary/machination",
-      "https://www.anglo-norman.net/entry/machination",
-      "https://latin-dictionary.net/definition/26109/machinatio-machinationis",
-      "https://latin-dictionary.net/definition/26111/machinor-machinari-machinatus",
-      "https://latin-dictionary.net/definition/26105/machina-machinae",
-      "https://lsj.gr/wiki/%CE%BC%CE%B1%CF%87%CE%B1%CE%BD%CE%AC"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "machination",
+      "etymology": [
+        {
+          "name": "μαχανάν, μαχανά",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "machina, machinari, machinatio",
+          "origin": "Latin"
+        },
+        {
+          "name": "machinacion",
+          "origin": "Old French"
+        },
+        {
+          "name": "machination",
+          "origin": "Modern English"
+        },
+        {
+          "name": "macanâcion, macianâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/machination#etymonline_v_2134",
+        "https://www.merriam-webster.com/dictionary/machination",
+        "https://www.anglo-norman.net/entry/machination",
+        "https://latin-dictionary.net/definition/26109/machinatio-machinationis",
+        "https://latin-dictionary.net/definition/26111/machinor-machinari-machinatus",
+        "https://latin-dictionary.net/definition/26105/machina-machinae",
+        "https://lsj.gr/wiki/%CE%BC%CE%B1%CF%87%CE%B1%CE%BD%CE%AC"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to machinate",
-    "etymology": [
-      {
-        "name": "machinari, machinatus",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to machinate",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to machinate",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta macanete, ta macianete -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "machinari, machinatus",
+        "to machinate",
+        "ta macanete, ta macianete -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to machinate",
+      "etymology": [
+        {
+          "name": "machinari, machinatus",
+          "origin": "Latin"
+        },
+        {
+          "name": "to machinate",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta macanete, ta macianete -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/machinate#etymonline_v_31582",
+        "https://www.merriam-webster.com/dictionary/machinate",
+        "https://latin-dictionary.net/definition/26111/machinor-machinari-machinatus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/machinate#etymonline_v_31582",
-      "https://www.merriam-webster.com/dictionary/machinate",
-      "https://latin-dictionary.net/definition/26111/machinor-machinari-machinatus"
-    ]
+    }
   },
   {
-    "name": "machinator",
-    "etymology": [
-      {
-        "name": "machinari, machinatus, machinator",
-        "origin": "Latin"
-      },
-      {
-        "name": "machinator",
-        "origin": "Modern English"
-      },
-      {
-        "name": "macanaitor, macianaitor -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/machinator#etymonline_v_43828",
-      "https://www.merriam-webster.com/dictionary/machinator",
-      "https://latin-dictionary.net/definition/26110/machinator-machinatoris",
-      "https://latin-dictionary.net/definition/26111/machinor-machinari-machinatus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "machinator",
+      "etymology": [
+        {
+          "name": "machinari, machinatus, machinator",
+          "origin": "Latin"
+        },
+        {
+          "name": "machinator",
+          "origin": "Modern English"
+        },
+        {
+          "name": "macanaitor, macianaitor -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/machinator#etymonline_v_43828",
+        "https://www.merriam-webster.com/dictionary/machinator",
+        "https://latin-dictionary.net/definition/26110/machinator-machinatoris",
+        "https://latin-dictionary.net/definition/26111/machinor-machinari-machinatus"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

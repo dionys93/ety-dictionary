@@ -1,66 +1,80 @@
 [
   {
-    "name": "hour",
-    "etymology": [
-      {
-        "name": "ὥρα",
-        "origin": "Ancient Greek"
-      },
-      {
-        "name": "hora",
-        "origin": "Latin"
-      },
-      {
-        "name": "ore, hore",
-        "origin": "Old French"
-      },
-      {
-        "name": "houre",
-        "origin": "Middle English"
-      },
-      {
-        "name": "hour",
-        "origin": "Modern English"
-      },
-      {
-        "name": "aour -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/hour#etymonline_v_14502",
-      "https://www.oed.com/dictionary/hour_n?tab=factsheet#1343486",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED21356",
-      "https://anglo-norman.net/entry/ore_2",
-      "https://latin-dictionary.net/definition/22286/hora-horae",
-      "https://lsj.gr/wiki/%E1%BD%A5%CF%81%CE%B1"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "hour",
+      "etymology": [
+        {
+          "name": "ὥρα",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "hora",
+          "origin": "Latin"
+        },
+        {
+          "name": "ore, hore",
+          "origin": "Old French"
+        },
+        {
+          "name": "houre",
+          "origin": "Middle English"
+        },
+        {
+          "name": "hour",
+          "origin": "Modern English"
+        },
+        {
+          "name": "aour -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/hour#etymonline_v_14502",
+        "https://www.oed.com/dictionary/hour_n?tab=factsheet#1343486",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED21356",
+        "https://anglo-norman.net/entry/ore_2",
+        "https://latin-dictionary.net/definition/22286/hora-horae",
+        "https://lsj.gr/wiki/%E1%BD%A5%CF%81%CE%B1"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "hourly",
-    "etymology": [
-      {
-        "name": "hourly",
-        "origin": "Modern English"
-      },
-      {
-        "name": "aourly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "adverb"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/hourly",
-      "https://www.etymonline.com/word/hour",
-      "https://www.etymonline.com/word/-ly",
-      "https://www.oed.com/dictionary/hourly_adj?tab=factsheet#1345652",
-      "https://www.oed.com/dictionary/hourly_adv?tab=factsheet#1345777"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "hourly",
+      "etymology": [
+        {
+          "name": "hourly",
+          "origin": "Modern English"
+        },
+        {
+          "name": "aourly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "adverb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/hourly",
+        "https://www.etymonline.com/word/hour",
+        "https://www.etymonline.com/word/-ly",
+        "https://www.oed.com/dictionary/hourly_adj?tab=factsheet#1345652",
+        "https://www.oed.com/dictionary/hourly_adv?tab=factsheet#1345777"
+      ]
+    }
   }
 ]

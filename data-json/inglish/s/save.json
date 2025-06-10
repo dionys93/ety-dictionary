@@ -1,338 +1,467 @@
 [
   {
-    "name": "to save",
-    "etymology": [
-      {
-        "name": "salvus, salvare",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to save",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "sauver",
-        "origin": "Old French"
-      },
-      {
-        "name": "saven",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to save",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta sâve -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "salvus, salvare",
+        "sauver",
+        "saven",
+        "to save",
+        "ta sâve -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to save",
+      "etymology": [
+        {
+          "name": "salvus, salvare",
+          "origin": "Latin"
+        },
+        {
+          "name": "sauver",
+          "origin": "Old French"
+        },
+        {
+          "name": "saven",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to save",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta sâve -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/save#etymonline_v_22794",
+        "https://www.merriam-webster.com/dictionary/save#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED38642",
+        "https://www.collinsdictionary.com/us/dictionary/french-english/sauver",
+        "https://www.cnrtl.fr/definition/sauver",
+        "https://www.anglo-norman.net/entry/salver_1",
+        "https://latin-dictionary.net/definition/34000/salvo-salvare-salvavi-salvatus",
+        "https://latin-dictionary.net/definition/34001/salvus-salva-salvum"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/save#etymonline_v_22794",
-      "https://www.merriam-webster.com/dictionary/save#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED38642",
-      "https://www.collinsdictionary.com/us/dictionary/french-english/sauver",
-      "https://www.cnrtl.fr/definition/sauver",
-      "https://www.anglo-norman.net/entry/salver_1",
-      "https://latin-dictionary.net/definition/34000/salvo-salvare-salvavi-salvatus",
-      "https://latin-dictionary.net/definition/34001/salvus-salva-salvum"
-    ]
+    }
   },
   {
-    "name": "saveable, savable",
-    "etymology": [
-      {
-        "name": "saveable, savable",
-        "origin": "Modern English"
-      },
-      {
-        "name": "sâvable -y -ness",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "saveable, savable",
+      "etymology": [
+        {
+          "name": "saveable, savable",
+          "origin": "Modern English"
+        },
+        {
+          "name": "sâvable -y -ness",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/saveable"
+      ],
+      "degrees": {
+        "positive": "vable",
+        "comparative": "y",
+        "superlative": "ness"
       }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/saveable"
-    ]
+    }
   },
   {
-    "name": "saver",
-    "etymology": [
-      {
-        "name": "saver",
-        "origin": "Modern English"
-      },
-      {
-        "name": "sâveur -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/saver#etymonline_v_37663",
-      "https://dictionary.cambridge.org/dictionary/english/saver"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "saver",
+      "etymology": [
+        {
+          "name": "saver",
+          "origin": "Modern English"
+        },
+        {
+          "name": "sâveur -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/saver#etymonline_v_37663",
+        "https://dictionary.cambridge.org/dictionary/english/saver"
+      ],
+      "number": "plural"
+    }
   },
   {
-    "name": "save",
-    "etymology": [
-      {
-        "name": "save",
-        "origin": "Modern English"
-      },
-      {
-        "name": "sâve -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/save#etymonline_v_22795",
-      "https://www.etymonline.com/word/save#etymonline_v_22794",
-      "https://www.merriam-webster.com/dictionary/save#dictionary-entry-2"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "save",
+      "etymology": [
+        {
+          "name": "save",
+          "origin": "Modern English"
+        },
+        {
+          "name": "sâve -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/save#etymonline_v_22795",
+        "https://www.etymonline.com/word/save#etymonline_v_22794",
+        "https://www.merriam-webster.com/dictionary/save#dictionary-entry-2"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "save",
-    "etymology": [
-      {
-        "name": "sauf",
-        "origin": "Old French"
-      },
-      {
-        "name": "save",
-        "origin": "Modern English"
-      },
-      {
-        "name": "sâve",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "preposition",
-          "conjunction"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/save#etymonline_v_22796",
-      "https://www.etymonline.com/word/safe#etymonline_v_22593",
-      "https://www.merriam-webster.com/dictionary/save#dictionary-entry-3",
-      "https://www.merriam-webster.com/dictionary/save#dictionary-entry-4",
-      "https://www.anglo-norman.net/entry/salf"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "preposition"
+    },
+    "standard": {
+      "name": "save",
+      "etymology": [
+        {
+          "name": "sauf",
+          "origin": "Old French"
+        },
+        {
+          "name": "save",
+          "origin": "Modern English"
+        },
+        {
+          "name": "sâve",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "preposition",
+            "conjunction"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/save#etymonline_v_22796",
+        "https://www.etymonline.com/word/safe#etymonline_v_22593",
+        "https://www.merriam-webster.com/dictionary/save#dictionary-entry-3",
+        "https://www.merriam-webster.com/dictionary/save#dictionary-entry-4",
+        "https://www.anglo-norman.net/entry/salf"
+      ]
+    }
   },
   {
-    "name": "savior",
-    "etymology": [
-      {
-        "name": "salvare, salvatus, salvator, salvatorem",
-        "origin": "Latin"
-      },
-      {
-        "name": "sauveour",
-        "origin": "Old French"
-      },
-      {
-        "name": "saveour",
-        "origin": "Middle English"
-      },
-      {
-        "name": "savior",
-        "origin": "Modern English"
-      },
-      {
-        "name": "sâvior -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/savior#etymonline_v_22797",
-      "https://www.merriam-webster.com/dictionary/savior",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED38644",
-      "https://www.anglo-norman.net/entry/sauveor",
-      "https://latin-dictionary.net/definition/33994/salvator-salvatoris",
-      "https://latin-dictionary.net/definition/34000/salvo-salvare-salvavi-salvatus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "savior",
+      "etymology": [
+        {
+          "name": "salvare, salvatus, salvator, salvatorem",
+          "origin": "Latin"
+        },
+        {
+          "name": "sauveour",
+          "origin": "Old French"
+        },
+        {
+          "name": "saveour",
+          "origin": "Middle English"
+        },
+        {
+          "name": "savior",
+          "origin": "Modern English"
+        },
+        {
+          "name": "sâvior -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/savior#etymonline_v_22797",
+        "https://www.merriam-webster.com/dictionary/savior",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED38644",
+        "https://www.anglo-norman.net/entry/sauveor",
+        "https://latin-dictionary.net/definition/33994/salvator-salvatoris",
+        "https://latin-dictionary.net/definition/34000/salvo-salvare-salvavi-salvatus"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "safe",
-    "etymology": [
-      {
-        "name": "saluber, salus, salvus",
-        "origin": "Latin"
-      },
-      {
-        "name": "sauf",
-        "origin": "Old French"
-      },
-      {
-        "name": "safe",
-        "origin": "Modern English"
-      },
-      {
-        "name": "sâfe -r -st",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "safe",
+      "etymology": [
+        {
+          "name": "saluber, salus, salvus",
+          "origin": "Latin"
+        },
+        {
+          "name": "sauf",
+          "origin": "Old French"
+        },
+        {
+          "name": "safe",
+          "origin": "Modern English"
+        },
+        {
+          "name": "sâfe -r -st",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/safe#etymonline_v_22593",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED38578",
+        "https://www.anglo-norman.net/entry/salf",
+        "https://latin-dictionary.net/search/latin/salvus",
+        "https://latin-dictionary.net/definition/33982/salus-salutis",
+        "https://latin-dictionary.net/definition/33978/saluber-salubris"
+      ],
+      "degrees": {
+        "positive": "fe",
+        "comparative": "r",
+        "superlative": "st"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/safe#etymonline_v_22593",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED38578",
-      "https://www.anglo-norman.net/entry/salf",
-      "https://latin-dictionary.net/search/latin/salvus",
-      "https://latin-dictionary.net/definition/33982/salus-salutis",
-      "https://latin-dictionary.net/definition/33978/saluber-salubris"
-    ]
+    }
   },
   {
-    "name": "safely",
-    "etymology": [
-      {
-        "name": "safely",
-        "origin": "Modern English"
-      },
-      {
-        "name": "sâfly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adverb"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/safely#etymonline_v_37566",
-      "https://www.etymonline.com/word/safe#etymonline_v_22593",
-      "https://www.etymonline.com/word/-ly#etymonline_v_32027"
-    ]
+    "verbDetails": {
+      "infinitive": "to safely",
+      "etymology": [
+        "safely",
+        "sâfly"
+      ]
+    },
+    "standard": {
+      "name": "to safely",
+      "etymology": [
+        {
+          "name": "safely",
+          "origin": "Modern English"
+        },
+        {
+          "name": "sâfly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adverb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/safely#etymonline_v_37566",
+        "https://www.etymonline.com/word/safe#etymonline_v_22593",
+        "https://www.etymonline.com/word/-ly#etymonline_v_32027"
+      ]
+    }
   },
   {
-    "name": "safe",
-    "etymology": [
-      {
-        "name": "en sauf",
-        "origin": "French"
-      },
-      {
-        "name": "safe",
-        "origin": "Modern English"
-      },
-      {
-        "name": "saif -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/safe#etymonline_v_22594",
-      "https://www.etymonline.com/word/safe#etymonline_v_22593"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "safe",
+      "etymology": [
+        {
+          "name": "en sauf",
+          "origin": "French"
+        },
+        {
+          "name": "safe",
+          "origin": "Modern English"
+        },
+        {
+          "name": "saif -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/safe#etymonline_v_22594",
+        "https://www.etymonline.com/word/safe#etymonline_v_22593"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "safety",
-    "etymology": [
-      {
-        "name": "salvus",
-        "origin": "Latin"
-      },
-      {
-        "name": "salvitas, salvitatem",
-        "origin": "Medieval Latin"
-      },
-      {
-        "name": "sauvete, salvete",
-        "origin": "Old French"
-      },
-      {
-        "name": "savete",
-        "origin": "Middle English"
-      },
-      {
-        "name": "safety",
-        "origin": "Modern English"
-      },
-      {
-        "name": "sâftie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/safety#etymonline_v_22596",
-      "https://www.merriam-webster.com/dictionary/safety#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED38649",
-      "https://www.anglo-norman.net/entry/sauvet%C3%A9",
-      "https://www.anglo-norman.net/entry/salvet%C3%A9",
-      "https://latin-dictionary.net/search/latin/salvus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "safety",
+      "etymology": [
+        {
+          "name": "salvus",
+          "origin": "Latin"
+        },
+        {
+          "name": "salvitas, salvitatem",
+          "origin": "Medieval Latin"
+        },
+        {
+          "name": "sauvete, salvete",
+          "origin": "Old French"
+        },
+        {
+          "name": "savete",
+          "origin": "Middle English"
+        },
+        {
+          "name": "safety",
+          "origin": "Modern English"
+        },
+        {
+          "name": "sâftie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/safety#etymonline_v_22596",
+        "https://www.merriam-webster.com/dictionary/safety#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED38649",
+        "https://www.anglo-norman.net/entry/sauvet%C3%A9",
+        "https://www.anglo-norman.net/entry/salvet%C3%A9",
+        "https://latin-dictionary.net/search/latin/salvus"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to safety",
-    "etymology": [
-      {
-        "name": "to safety",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to safety",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ying"
       },
-      {
-        "name": "ta sâftie -s -d -ying",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to safety",
+        "ta sâftie -s -d -ying"
+      ]
+    },
+    "standard": {
+      "name": "to safety",
+      "etymology": [
+        {
+          "name": "to safety",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta sâftie -s -d -ying",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/safety#dictionary-entry-2",
+        "https://www.merriam-webster.com/dictionary/safety#word-history"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ying"
       }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/safety#dictionary-entry-2",
-      "https://www.merriam-webster.com/dictionary/safety#word-history"
-    ]
+    }
   },
   {
-    "name": "salvage",
-    "etymology": [
-      {
-        "name": "salvare",
-        "origin": "Latin"
-      },
-      {
-        "name": "salver",
-        "origin": "Old French"
-      },
-      {
-        "name": "salvage",
-        "origin": "French"
-      },
-      {
-        "name": "to salvage",
-        "origin": "Inglish"
-      },
-      {
-        "name": "ta salvage -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/salvage",
-      "https://www.oed.com/dictionary/salvage_n?tab=factsheet#24435360",
-      "https://www.littre.org/definition/salvage",
-      "https://anglo-norman.net/entry/salver_1",
-      "https://latin-dictionary.net/definition/34000/salvo-salvare-salvavi-salvatus",
-      "https://www.etymonline.com/word/salvage",
-      "https://www.oed.com/dictionary/salvage_v?tab=pronunciation#24435993"
-    ]
+    "verbDetails": {
+      "infinitive": "salvage",
+      "etymology": [
+        "salvare",
+        "salver",
+        "salvage",
+        "to salvage",
+        "ta salvage -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "salvage",
+      "etymology": [
+        {
+          "name": "salvare",
+          "origin": "Latin"
+        },
+        {
+          "name": "salver",
+          "origin": "Old French"
+        },
+        {
+          "name": "salvage",
+          "origin": "French"
+        },
+        {
+          "name": "to salvage",
+          "origin": "Inglish"
+        },
+        {
+          "name": "ta salvage -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/salvage",
+        "https://www.oed.com/dictionary/salvage_n?tab=factsheet#24435360",
+        "https://www.littre.org/definition/salvage",
+        "https://anglo-norman.net/entry/salver_1",
+        "https://latin-dictionary.net/definition/34000/salvo-salvare-salvavi-salvatus",
+        "https://www.etymonline.com/word/salvage",
+        "https://www.oed.com/dictionary/salvage_v?tab=pronunciation#24435993"
+      ]
+    }
   }
 ]

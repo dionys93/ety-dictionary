@@ -1,33 +1,50 @@
 [
   {
-    "name": "to forget",
-    "etymology": [
-      {
-        "name": "forgietan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to forget",
+      "conjugations": {
+        "thirdPerson": "s"
       },
-      {
-        "name": "foryeten",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to forget",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta forguet -s forgót forgotten forguetting",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "forgietan",
+        "foryeten",
+        "to forget",
+        "ta forguet -s forgót forgotten forguetting"
+      ]
+    },
+    "standard": {
+      "name": "to forget",
+      "etymology": [
+        {
+          "name": "forgietan",
+          "origin": "Old English"
+        },
+        {
+          "name": "foryeten",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to forget",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta forguet -s forgót forgotten forguetting",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/forget#etymonline_v_11803",
+        "https://www.merriam-webster.com/dictionary/forget",
+        "https://www.oed.com/dictionary/forget_v?tab=factsheet#3785166",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17373",
+        "https://bosworthtoller.com/11480"
+      ],
+      "conjugations": {
+        "thirdPerson": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/forget#etymonline_v_11803",
-      "https://www.merriam-webster.com/dictionary/forget",
-      "https://www.oed.com/dictionary/forget_v?tab=factsheet#3785166",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17373",
-      "https://bosworthtoller.com/11480"
-    ]
+    }
   }
 ]

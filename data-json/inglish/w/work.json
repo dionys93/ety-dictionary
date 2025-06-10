@@ -1,119 +1,173 @@
 [
   {
-    "name": "werk, work",
-    "etymology": [
-      {
-        "name": "weorc, worc",
-        "origin": "Old English"
-      },
-      {
-        "name": "werk, work",
-        "origin": "Middle English"
-      },
-      {
-        "name": "ɯork, ɯorx",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/work#etymonline_v_10846",
-      "https://www.oed.com/dictionary/work_n?tab=factsheet#13817090",
-      "https://www.merriam-webster.com/dictionary/work#dictionary-entry-2",
-      "https://www.merriam-webster.com/dictionary/work#dictionary-entry-3",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52278",
-      "https://bosworthtoller.com/35136"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "werk, work",
+      "etymology": [
+        {
+          "name": "weorc, worc",
+          "origin": "Old English"
+        },
+        {
+          "name": "werk, work",
+          "origin": "Middle English"
+        },
+        {
+          "name": "ɯork, ɯorx",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/work#etymonline_v_10846",
+        "https://www.oed.com/dictionary/work_n?tab=factsheet#13817090",
+        "https://www.merriam-webster.com/dictionary/work#dictionary-entry-2",
+        "https://www.merriam-webster.com/dictionary/work#dictionary-entry-3",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52278",
+        "https://bosworthtoller.com/35136"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   },
   {
-    "name": "to work",
-    "etymology": [
-      {
-        "name": "wyrcan, wircan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to work",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "werken, worken",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to work",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta ɯorke -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "wyrcan, wircan",
+        "werken, worken",
+        "to work",
+        "ta ɯorke -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to work",
+      "etymology": [
+        {
+          "name": "wyrcan, wircan",
+          "origin": "Old English"
+        },
+        {
+          "name": "werken, worken",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to work",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta ɯorke -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/work#etymonline_v_25525",
+        "https://www.oed.com/dictionary/work_v?tab=pronunciation#13825289",
+        "https://www.merriam-webster.com/dictionary/work#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52280",
+        "https://bosworthtoller.com/35985",
+        "https://bosworthtoller.com/36947"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/work#etymonline_v_25525",
-      "https://www.oed.com/dictionary/work_v?tab=pronunciation#13825289",
-      "https://www.merriam-webster.com/dictionary/work#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52280",
-      "https://bosworthtoller.com/35985",
-      "https://bosworthtoller.com/36947"
-    ]
+    }
   },
   {
-    "name": "bulwark",
-    "etymology": [
-      {
-        "name": "bolwerc",
-        "origin": "Inglish"
-      },
-      {
-        "name": "bulwerke",
-        "origin": "Inglish"
-      },
-      {
-        "name": "bulwerk",
-        "origin": "Middle English"
-      },
-      {
-        "name": "bulwark",
-        "origin": "Modern English"
-      },
-      {
-        "name": "bolɯork -x",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bulwark#etymonline_v_18063",
-      "https://www.merriam-webster.com/dictionary/bulwark#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/bulwark#word-history",
-      "https://www.oed.com/dictionary/bulwark_n?tab=factsheet#12215587",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6298"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "bulwark",
+      "etymology": [
+        {
+          "name": "bolwerc",
+          "origin": "Inglish"
+        },
+        {
+          "name": "bulwerke",
+          "origin": "Inglish"
+        },
+        {
+          "name": "bulwerk",
+          "origin": "Middle English"
+        },
+        {
+          "name": "bulwark",
+          "origin": "Modern English"
+        },
+        {
+          "name": "bolɯork -x",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bulwark#etymonline_v_18063",
+        "https://www.merriam-webster.com/dictionary/bulwark#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/bulwark#word-history",
+        "https://www.oed.com/dictionary/bulwark_n?tab=factsheet#12215587",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6298"
+      ]
+    }
   },
   {
-    "name": "to bulwark",
-    "etymology": [
-      {
-        "name": "to bulwark",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to bulwark",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta bolɯorke -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to bulwark",
+        "ta bolɯorke -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to bulwark",
+      "etymology": [
+        {
+          "name": "to bulwark",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta bolɯorke -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/bulwark#dictionary-entry-2",
+        "https://www.merriam-webster.com/dictionary/bulwark#word-history",
+        "https://www.oed.com/dictionary/bulwark_v?tab=factsheet#12217127",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6298"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/bulwark#dictionary-entry-2",
-      "https://www.merriam-webster.com/dictionary/bulwark#word-history",
-      "https://www.oed.com/dictionary/bulwark_v?tab=factsheet#12217127",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6298"
-    ]
+    }
   }
 ]

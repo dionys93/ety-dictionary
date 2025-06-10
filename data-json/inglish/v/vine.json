@@ -1,90 +1,127 @@
 [
   {
-    "name": "vine",
-    "etymology": [
-      {
-        "name": "vinum, vinea",
-        "origin": "Latin"
-      },
-      {
-        "name": "vigne",
-        "origin": "Old French"
-      },
-      {
-        "name": "vine",
-        "origin": "Modern English"
-      },
-      {
-        "name": "vign -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/vine#etymonline_v_7800",
-      "https://www.merriam-webster.com/dictionary/vine#dictionary-entry-1",
-      "https://www.anglo-norman.net/entry/vigne",
-      "https://latin-dictionary.net/definition/38855/vineus-vinea-vineum",
-      "https://latin-dictionary.net/definition/38862/vinum-vini"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "vine",
+      "etymology": [
+        {
+          "name": "vinum, vinea",
+          "origin": "Latin"
+        },
+        {
+          "name": "vigne",
+          "origin": "Old French"
+        },
+        {
+          "name": "vine",
+          "origin": "Modern English"
+        },
+        {
+          "name": "vign -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/vine#etymonline_v_7800",
+        "https://www.merriam-webster.com/dictionary/vine#dictionary-entry-1",
+        "https://www.anglo-norman.net/entry/vigne",
+        "https://latin-dictionary.net/definition/38855/vineus-vinea-vineum",
+        "https://latin-dictionary.net/definition/38862/vinum-vini"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to vine",
-    "etymology": [
-      {
-        "name": "vinum, vinea",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to vine",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "vigne",
-        "origin": "Old French"
-      },
-      {
-        "name": "to vine",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta vigne -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "vinum, vinea",
+        "vigne",
+        "to vine",
+        "ta vigne -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to vine",
+      "etymology": [
+        {
+          "name": "vinum, vinea",
+          "origin": "Latin"
+        },
+        {
+          "name": "vigne",
+          "origin": "Old French"
+        },
+        {
+          "name": "to vine",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta vigne -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/vine#dictionary-entry-2",
+        "https://www.anglo-norman.net/entry/vigne",
+        "https://latin-dictionary.net/definition/38855/vineus-vinea-vineum",
+        "https://latin-dictionary.net/definition/38862/vinum-vini"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/vine#dictionary-entry-2",
-      "https://www.anglo-norman.net/entry/vigne",
-      "https://latin-dictionary.net/definition/38855/vineus-vinea-vineum",
-      "https://latin-dictionary.net/definition/38862/vinum-vini"
-    ]
+    }
   },
   {
-    "name": "vineyard",
-    "etymology": [
-      {
-        "name": "wingeard",
-        "origin": "Old English"
-      },
-      {
-        "name": "vineyard",
-        "origin": "Middle English"
-      },
-      {
-        "name": "viñard -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/vineyard#etymonline_v_25389",
-      "https://www.merriam-webster.com/dictionary/vineyard#dictionary-entry-1",
-      "https://bosworthtoller.com/35901",
-      "https://bosworthtoller.com/13479",
-      "https://bosworthtoller.com/35832"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "vineyard",
+      "etymology": [
+        {
+          "name": "wingeard",
+          "origin": "Old English"
+        },
+        {
+          "name": "vineyard",
+          "origin": "Middle English"
+        },
+        {
+          "name": "viñard -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/vineyard#etymonline_v_25389",
+        "https://www.merriam-webster.com/dictionary/vineyard#dictionary-entry-1",
+        "https://bosworthtoller.com/35901",
+        "https://bosworthtoller.com/13479",
+        "https://bosworthtoller.com/35832"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

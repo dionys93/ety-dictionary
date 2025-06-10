@@ -1,47 +1,74 @@
 [
   {
-    "name": "cake",
-    "etymology": [
-      {
-        "name": "kaka",
-        "origin": "Old Norse"
-      },
-      {
-        "name": "cake",
-        "origin": "Middle English"
-      },
-      {
-        "name": "câke, caix",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cake#etymonline_v_585",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6489",
-      "https://old-norse.net/html/k.php#kaka"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "cake",
+      "etymology": [
+        {
+          "name": "kaka",
+          "origin": "Old Norse"
+        },
+        {
+          "name": "cake",
+          "origin": "Middle English"
+        },
+        {
+          "name": "câke, caix",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cake#etymonline_v_585",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6489",
+        "https://old-norse.net/html/k.php#kaka"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   },
   {
-    "name": "to cake",
-    "etymology": [
-      {
-        "name": "to cake",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to cake",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta câke -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to cake",
+        "ta câke -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to cake",
+      "etymology": [
+        {
+          "name": "to cake",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta câke -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cake#etymonline_v_33093",
+        "https://www.etymonline.com/word/cake#etymonline_v_585"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cake#etymonline_v_33093",
-      "https://www.etymonline.com/word/cake#etymonline_v_585"
-    ]
+    }
   }
 ]

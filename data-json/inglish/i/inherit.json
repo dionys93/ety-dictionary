@@ -1,277 +1,367 @@
 [
   {
-    "name": "hereditary",
-    "etymology": [
-      {
-        "name": "heres, hereditare, inhereditare",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to inherit",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "enheriter",
-        "origin": "Old French"
-      },
-      {
-        "name": "to inherit",
-        "origin": "Modern English"
-      },
-      {
-        "name": "to inhèrite -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
-      },
-      {
-        "name": "inheritance",
-        "origin": "Inglish"
-      },
-      {
-        "name": "inhèritance -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      },
-      {
-        "name": "hereditas, hereditarius",
-        "origin": "Latin"
-      },
-      {
-        "name": "hereditarie",
-        "origin": "Old French"
-      },
-      {
-        "name": "hereditary",
-        "origin": "Modern English"
-      },
-      {
-        "name": "herèditairy",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+      "etymology": [
+        "heres, hereditare, inhereditare",
+        "enheriter",
+        "to inherit",
+        "to inhèrite -s -d -ing",
+        "inheritance",
+        "inhèritance -s",
+        "hereditas, hereditarius",
+        "hereditarie",
+        "hereditary",
+        "herèditairy"
+      ]
+    },
+    "standard": {
+      "name": "to inherit",
+      "etymology": [
+        {
+          "name": "heres, hereditare, inhereditare",
+          "origin": "Latin"
+        },
+        {
+          "name": "enheriter",
+          "origin": "Old French"
+        },
+        {
+          "name": "to inherit",
+          "origin": "Modern English"
+        },
+        {
+          "name": "to inhèrite -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        },
+        {
+          "name": "inheritance",
+          "origin": "Inglish"
+        },
+        {
+          "name": "inhèritance -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        },
+        {
+          "name": "hereditas, hereditarius",
+          "origin": "Latin"
+        },
+        {
+          "name": "hereditarie",
+          "origin": "Old French"
+        },
+        {
+          "name": "hereditary",
+          "origin": "Modern English"
+        },
+        {
+          "name": "herèditairy",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/inherit#etymonline_v_9264",
+        "https://www.oed.com/dictionary/inherit_v?tab=factsheet#454829",
+        "https://anglo-norman.net/entry/enheriter_1",
+        "https://latin-dictionary.net/definition/23765/inheredito-inhereditare-inhereditavi-inhereditatus",
+        "https://latin-dictionary.net/definition/22058/heredito-hereditare-hereditavi-hereditatus",
+        "https://latin-dictionary.net/definition/22064/heres-heredis",
+        "https://www.etymonline.com/word/inheritance#etymonline_v_30040",
+        "https://www.oed.com/dictionary/inheritance_n?tab=factsheet#455990",
+        "https://www.etymonline.com/word/hereditary#etymonline_v_34077",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20499",
+        "https://www.anglo-norman.net/entry/hereditarie",
+        "https://latin-dictionary.net/definition/22056/hereditarius-hereditaria-hereditarium",
+        "https://latin-dictionary.net/definition/22057/hereditas-hereditatis"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/inherit#etymonline_v_9264",
-      "https://www.oed.com/dictionary/inherit_v?tab=factsheet#454829",
-      "https://anglo-norman.net/entry/enheriter_1",
-      "https://latin-dictionary.net/definition/23765/inheredito-inhereditare-inhereditavi-inhereditatus",
-      "https://latin-dictionary.net/definition/22058/heredito-hereditare-hereditavi-hereditatus",
-      "https://latin-dictionary.net/definition/22064/heres-heredis",
-      "https://www.etymonline.com/word/inheritance#etymonline_v_30040",
-      "https://www.oed.com/dictionary/inheritance_n?tab=factsheet#455990",
-      "https://www.etymonline.com/word/hereditary#etymonline_v_34077",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20499",
-      "https://www.anglo-norman.net/entry/hereditarie",
-      "https://latin-dictionary.net/definition/22056/hereditarius-hereditaria-hereditarium",
-      "https://latin-dictionary.net/definition/22057/hereditas-hereditatis"
-    ]
+    }
   },
   {
-    "name": "hereditarily",
-    "etymology": [
-      {
-        "name": "hereditarily",
-        "origin": "Modern English"
-      },
-      {
-        "name": "hereditaîaly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adverb"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/hereditarily",
-      "https://www.oed.com/dictionary/hereditarily_adv?tab=factsheet#1756749"
-    ]
+    "verbDetails": {
+      "infinitive": "to hereditarily",
+      "etymology": [
+        "hereditarily",
+        "hereditaîaly"
+      ]
+    },
+    "standard": {
+      "name": "to hereditarily",
+      "etymology": [
+        {
+          "name": "hereditarily",
+          "origin": "Modern English"
+        },
+        {
+          "name": "hereditaîaly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adverb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/hereditarily",
+        "https://www.oed.com/dictionary/hereditarily_adv?tab=factsheet#1756749"
+      ]
+    }
   },
   {
-    "name": "heredity",
-    "etymology": [
-      {
-        "name": "heres, hereditas",
-        "origin": "Latin"
-      },
-      {
-        "name": "heredité",
-        "origin": "Old French"
-      },
-      {
-        "name": "hérédité",
-        "origin": "French"
-      },
-      {
-        "name": "heredity",
-        "origin": "Modern English"
-      },
-      {
-        "name": "heredetie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/heredity#etymonline_v_9182",
-      "https://www.merriam-webster.com/dictionary/heredity",
-      "https://www.cnrtl.fr/definition/h%C3%A9r%C3%A9dit%C3%A9",
-      "https://www.anglo-norman.net/entry/heredit%C3%A9",
-      "https://latin-dictionary.net/definition/22057/hereditas-hereditatis",
-      "https://latin-dictionary.net/definition/22064/heres-heredis"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "heredity",
+      "etymology": [
+        {
+          "name": "heres, hereditas",
+          "origin": "Latin"
+        },
+        {
+          "name": "heredité",
+          "origin": "Old French"
+        },
+        {
+          "name": "hérédité",
+          "origin": "French"
+        },
+        {
+          "name": "heredity",
+          "origin": "Modern English"
+        },
+        {
+          "name": "heredetie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/heredity#etymonline_v_9182",
+        "https://www.merriam-webster.com/dictionary/heredity",
+        "https://www.cnrtl.fr/definition/h%C3%A9r%C3%A9dit%C3%A9",
+        "https://www.anglo-norman.net/entry/heredit%C3%A9",
+        "https://latin-dictionary.net/definition/22057/hereditas-hereditatis",
+        "https://latin-dictionary.net/definition/22064/heres-heredis"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "heritage  -s (m n)",
-    "etymology": [
-      {
-        "name": "heres, hereditare",
-        "origin": "Latin"
-      },
-      {
-        "name": "heriter, iritage, eritage, heritage",
-        "origin": "Old French"
-      },
-      {
-        "name": "heritage  -s (m n)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/heritage#etymonline_v_9186",
-      "https://www.oed.com/dictionary/heritage_n?tab=factsheet#1764513",
-      "https://anglo-norman.net/entry/heritage",
-      "https://latin-dictionary.net/definition/22058/heredito-hereditare-hereditavi-hereditatus",
-      "https://latin-dictionary.net/definition/22064/heres-heredis"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "heritage  -s (m n)",
+      "etymology": [
+        {
+          "name": "heres, hereditare",
+          "origin": "Latin"
+        },
+        {
+          "name": "heriter, iritage, eritage, heritage",
+          "origin": "Old French"
+        },
+        {
+          "name": "heritage  -s (m n)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/heritage#etymonline_v_9186",
+        "https://www.oed.com/dictionary/heritage_n?tab=factsheet#1764513",
+        "https://anglo-norman.net/entry/heritage",
+        "https://latin-dictionary.net/definition/22058/heredito-hereditare-hereditavi-hereditatus",
+        "https://latin-dictionary.net/definition/22064/heres-heredis"
+      ]
+    }
   },
   {
-    "name": "heriter, heritable",
-    "etymology": [
-      {
-        "name": "hereditabilis",
-        "origin": "Medieval Latin"
-      },
-      {
-        "name": "heriter, heritable",
-        "origin": "Old French"
-      },
-      {
-        "name": "hèritable -abils",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "masculine noun"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "heriter, heritable",
+      "etymology": [
+        {
+          "name": "hereditabilis",
+          "origin": "Medieval Latin"
+        },
+        {
+          "name": "heriter, heritable",
+          "origin": "Old French"
+        },
+        {
+          "name": "hèritable -abils",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/heritable#etymonline_v_34283",
+        "https://www.oed.com/dictionary/heritable_adj?tab=factsheet#1764140",
+        "https://anglo-norman.net/entry/heritable",
+        "https://anglo-norman.net/entry/heriter_2"
+      ],
+      "degrees": {
+        "positive": "ritable",
+        "comparative": "abils"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/heritable#etymonline_v_34283",
-      "https://www.oed.com/dictionary/heritable_adj?tab=factsheet#1764140",
-      "https://anglo-norman.net/entry/heritable",
-      "https://anglo-norman.net/entry/heriter_2"
-    ]
+    }
   },
   {
-    "name": "hereditism",
-    "etymology": [
-      {
-        "name": "hereditism",
-        "origin": "Modern English"
-      },
-      {
-        "name": "herèditism",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/hereditism#etymonline_v_41812",
-      "https://www.etymonline.com/word/heredity",
-      "https://www.etymonline.com/word/-ism",
-      "https://www.oed.com/dictionary/hereditism_n?tab=factsheet#1757549"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "hereditism",
+      "etymology": [
+        {
+          "name": "hereditism",
+          "origin": "Modern English"
+        },
+        {
+          "name": "herèditism",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/hereditism#etymonline_v_41812",
+        "https://www.etymonline.com/word/heredity",
+        "https://www.etymonline.com/word/-ism",
+        "https://www.oed.com/dictionary/hereditism_n?tab=factsheet#1757549"
+      ],
+      "gender": "feminine",
+      "number": "singular"
+    }
   },
   {
-    "name": "heir",
-    "etymology": [
-      {
-        "name": "heres, heredem",
-        "origin": "Latin"
-      },
-      {
-        "name": "heir",
-        "origin": "Inglish"
-      },
-      {
-        "name": "eir -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/heir#etymonline_v_9114",
-      "https://www.anglo-norman.net/entry/heir_1",
-      "https://latin-dictionary.net/definition/22064/heres-heredis"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "heir",
+      "etymology": [
+        {
+          "name": "heres, heredem",
+          "origin": "Latin"
+        },
+        {
+          "name": "heir",
+          "origin": "Inglish"
+        },
+        {
+          "name": "eir -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/heir#etymonline_v_9114",
+        "https://www.anglo-norman.net/entry/heir_1",
+        "https://latin-dictionary.net/definition/22064/heres-heredis"
+      ]
+    }
   },
   {
-    "name": "heiress",
-    "etymology": [
-      {
-        "name": "heiress",
-        "origin": "Old French"
-      },
-      {
-        "name": "eiress -es",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/heiress#etymonline_v_34059",
-      "https://www.etymonline.com/word/heir",
-      "https://www.etymonline.com/word/-ess",
-      "https://www.oed.com/dictionary/heiress_n?tab=factsheet#1970853"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "heiress",
+      "etymology": [
+        {
+          "name": "heiress",
+          "origin": "Old French"
+        },
+        {
+          "name": "eiress -es",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/heiress#etymonline_v_34059",
+        "https://www.etymonline.com/word/heir",
+        "https://www.etymonline.com/word/-ess",
+        "https://www.oed.com/dictionary/heiress_n?tab=factsheet#1970853"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "hereditament",
-    "etymology": [
-      {
-        "name": "hereditatem",
-        "origin": "Latin"
-      },
-      {
-        "name": "hereditamentum",
-        "origin": "Medieval Latin"
-      },
-      {
-        "name": "hereditament",
-        "origin": "Old French"
-      },
-      {
-        "name": "heredìtament -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/hereditament#etymonline_v_41755",
-      "https://www.oed.com/dictionary/hereditament_n?tab=factsheet#1756517",
-      "https://anglo-norman.net/entry/hereditament",
-      "https://latin-dictionary.net/definition/22057/hereditas-hereditatis"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "hereditament",
+      "etymology": [
+        {
+          "name": "hereditatem",
+          "origin": "Latin"
+        },
+        {
+          "name": "hereditamentum",
+          "origin": "Medieval Latin"
+        },
+        {
+          "name": "hereditament",
+          "origin": "Old French"
+        },
+        {
+          "name": "heredìtament -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/hereditament#etymonline_v_41755",
+        "https://www.oed.com/dictionary/hereditament_n?tab=factsheet#1756517",
+        "https://anglo-norman.net/entry/hereditament",
+        "https://latin-dictionary.net/definition/22057/hereditas-hereditatis"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

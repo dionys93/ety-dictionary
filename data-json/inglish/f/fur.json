@@ -1,74 +1,105 @@
 [
   {
-    "name": "fur  -s (m n)",
-    "etymology": [
-      {
-        "name": "fuerre, forrer, fourrer",
-        "origin": "Old French"
-      },
-      {
-        "name": "furre, furrure",
-        "origin": "Middle English"
-      },
-      {
-        "name": "fur  -s (m n)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/fur#etymonline_v_14261",
-      "https://www.merriam-webster.com/dictionary/fur#dictionary-entry-2",
-      "https://www.merriam-webster.com/dictionary/fur#word-history",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17991",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17995",
-      "https://www.anglo-norman.net/entry/fourreure",
-      "https://www.anglo-norman.net/entry/fourrer",
-      "https://www.anglo-norman.net/entry/fuerre_2"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "fur  -s (m n)",
+      "etymology": [
+        {
+          "name": "fuerre, forrer, fourrer",
+          "origin": "Old French"
+        },
+        {
+          "name": "furre, furrure",
+          "origin": "Middle English"
+        },
+        {
+          "name": "fur  -s (m n)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/fur#etymonline_v_14261",
+        "https://www.merriam-webster.com/dictionary/fur#dictionary-entry-2",
+        "https://www.merriam-webster.com/dictionary/fur#word-history",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17991",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17995",
+        "https://www.anglo-norman.net/entry/fourreure",
+        "https://www.anglo-norman.net/entry/fourrer",
+        "https://www.anglo-norman.net/entry/fuerre_2"
+      ]
+    }
   },
   {
-    "name": "to fur",
-    "etymology": [
-      {
-        "name": "fourrer",
-        "origin": "Old French"
+    "verbDetails": {
+      "infinitive": "to fur",
+      "conjugations": {
+        "thirdPerson": "d",
+        "pastTense": "ing"
       },
-      {
-        "name": "furren",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to fur",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta furre furs -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "fourrer",
+        "furren",
+        "to fur",
+        "ta furre furs -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to fur",
+      "etymology": [
+        {
+          "name": "fourrer",
+          "origin": "Old French"
+        },
+        {
+          "name": "furren",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to fur",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta furre furs -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/fur#etymonline_v_50778",
+        "https://www.etymonline.com/word/fur#etymonline_v_14261",
+        "https://www.merriam-webster.com/dictionary/fur#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17992",
+        "https://www.anglo-norman.net/entry/fourrer"
+      ],
+      "conjugations": {
+        "thirdPerson": "d",
+        "pastTense": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/fur#etymonline_v_50778",
-      "https://www.etymonline.com/word/fur#etymonline_v_14261",
-      "https://www.merriam-webster.com/dictionary/fur#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17992",
-      "https://www.anglo-norman.net/entry/fourrer"
-    ]
+    }
   },
   {
-    "name": "furry  -ier -iest -iness (adj)",
-    "etymology": [
-      {
-        "name": "furry  -ier -iest -iness (adj)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/furry#etymonline_v_33493",
-      "https://www.merriam-webster.com/dictionary/furry#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/furry#dictionary-entry-2"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "furry  -ier -iest -iness (adj)",
+      "etymology": [
+        {
+          "name": "furry  -ier -iest -iness (adj)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/furry#etymonline_v_33493",
+        "https://www.merriam-webster.com/dictionary/furry#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/furry#dictionary-entry-2"
+      ]
+    }
   }
 ]

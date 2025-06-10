@@ -1,179 +1,243 @@
 [
   {
-    "name": "to elect",
-    "etymology": [
-      {
-        "name": "ex + legere, eligere, electus",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to elect",
+      "conjugations": {
+        "thirdPerson": "d",
+        "pastTense": "ing"
       },
-      {
-        "name": "to elect",
-        "origin": "Modern English"
-      },
-      {
-        "name": "to electe elecs -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "ex + legere, eligere, electus",
+        "to elect",
+        "to electe elecs -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to elect",
+      "etymology": [
+        {
+          "name": "ex + legere, eligere, electus",
+          "origin": "Latin"
+        },
+        {
+          "name": "to elect",
+          "origin": "Modern English"
+        },
+        {
+          "name": "to electe elecs -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/elect",
+        "https://www.oed.com/dictionary/elect_v?tab=factsheet#5816690",
+        "https://latin-dictionary.net/definition/18930/eligo-eligere-elegi-electus",
+        "https://latin-dictionary.net/definition/25465/lego-legere-legi-lectus"
+      ],
+      "conjugations": {
+        "thirdPerson": "d",
+        "pastTense": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/elect",
-      "https://www.oed.com/dictionary/elect_v?tab=factsheet#5816690",
-      "https://latin-dictionary.net/definition/18930/eligo-eligere-elegi-electus",
-      "https://latin-dictionary.net/definition/25465/lego-legere-legi-lectus"
-    ]
+    }
   },
   {
-    "name": "to elect",
-    "etymology": [
-      {
-        "name": "ex + legere, eligere, electus",
-        "origin": "Latin"
-      },
-      {
-        "name": "to elect",
-        "origin": "Modern English"
-      },
-      {
-        "name": "electe",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/elect",
-      "https://www.oed.com/dictionary/elect_adj?tab=factsheet#5816227",
-      "https://latin-dictionary.net/definition/18930/eligo-eligere-elegi-electus",
-      "https://latin-dictionary.net/definition/25465/lego-legere-legi-lectus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "to",
+      "etymology": [
+        {
+          "name": "ex + legere, eligere, electus",
+          "origin": "Latin"
+        },
+        {
+          "name": "to elect",
+          "origin": "Modern English"
+        },
+        {
+          "name": "electe",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/elect",
+        "https://www.oed.com/dictionary/elect_adj?tab=factsheet#5816227",
+        "https://latin-dictionary.net/definition/18930/eligo-eligere-elegi-electus",
+        "https://latin-dictionary.net/definition/25465/lego-legere-legi-lectus"
+      ]
+    }
   },
   {
-    "name": "elective",
-    "etymology": [
-      {
-        "name": "eligere, electivus",
-        "origin": "Latin"
-      },
-      {
-        "name": "elective",
-        "origin": "Modern English"
-      },
-      {
-        "name": "elèctif -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "feminine noun"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "elective",
+      "etymology": [
+        {
+          "name": "eligere, electivus",
+          "origin": "Latin"
+        },
+        {
+          "name": "elective",
+          "origin": "Modern English"
+        },
+        {
+          "name": "elèctif -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/elective",
+        "https://www.oed.com/dictionary/elective_adj?tab=factsheet#5819043",
+        "https://latin-dictionary.net/definition/18871/electivus-electiva-electivum",
+        "https://latin-dictionary.net/definition/18930/eligo-eligere-elegi-electus"
+      ],
+      "degrees": {
+        "positive": "ctif",
+        "comparative": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/elective",
-      "https://www.oed.com/dictionary/elective_adj?tab=factsheet#5819043",
-      "https://latin-dictionary.net/definition/18871/electivus-electiva-electivum",
-      "https://latin-dictionary.net/definition/18930/eligo-eligere-elegi-electus"
-    ]
+    }
   },
   {
-    "name": "election",
-    "etymology": [
-      {
-        "name": "eligere, electio, electionem",
-        "origin": "Latin"
-      },
-      {
-        "name": "elecion",
-        "origin": "Old French"
-      },
-      {
-        "name": "eleccioun",
-        "origin": "Middle English"
-      },
-      {
-        "name": "election",
-        "origin": "Modern English"
-      },
-      {
-        "name": "eleccion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/election",
-      "https://www.oed.com/dictionary/election_n?tab=factsheet#5817534",
-      "https://anglo-norman.net/entry/election",
-      "https://latin-dictionary.net/definition/18869/electio-electionis",
-      "https://latin-dictionary.net/definition/18930/eligo-eligere-elegi-electus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "election",
+      "etymology": [
+        {
+          "name": "eligere, electio, electionem",
+          "origin": "Latin"
+        },
+        {
+          "name": "elecion",
+          "origin": "Old French"
+        },
+        {
+          "name": "eleccioun",
+          "origin": "Middle English"
+        },
+        {
+          "name": "election",
+          "origin": "Modern English"
+        },
+        {
+          "name": "eleccion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/election",
+        "https://www.oed.com/dictionary/election_n?tab=factsheet#5817534",
+        "https://anglo-norman.net/entry/election",
+        "https://latin-dictionary.net/definition/18869/electio-electionis",
+        "https://latin-dictionary.net/definition/18930/eligo-eligere-elegi-electus"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "elector",
-    "etymology": [
-      {
-        "name": "elector",
-        "origin": "Latin"
-      },
-      {
-        "name": "electeur, electeor -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/elector",
-      "https://www.oed.com/dictionary/elector_n?tab=factsheet#5819895"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "elector",
+      "etymology": [
+        {
+          "name": "elector",
+          "origin": "Latin"
+        },
+        {
+          "name": "electeur, electeor -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/elector",
+        "https://www.oed.com/dictionary/elector_n?tab=factsheet#5819895"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "electoral",
-    "etymology": [
-      {
-        "name": "electoral",
-        "origin": "Modern English"
-      },
-      {
-        "name": "electôral",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/electoral",
-      "https://www.etymonline.com/word/elector",
-      "https://www.etymonline.com/word/-al#etymonline_v_32845",
-      "https://www.oed.com/dictionary/electoral_adj?tab=factsheet#5820084"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "electoral",
+      "etymology": [
+        {
+          "name": "electoral",
+          "origin": "Modern English"
+        },
+        {
+          "name": "electôral",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/electoral",
+        "https://www.etymonline.com/word/elector",
+        "https://www.etymonline.com/word/-al#etymonline_v_32845",
+        "https://www.oed.com/dictionary/electoral_adj?tab=factsheet#5820084"
+      ]
+    }
   },
   {
-    "name": "electorate",
-    "etymology": [
-      {
-        "name": "electorate",
-        "origin": "Modern English"
-      },
-      {
-        "name": "elèctorat -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/electorate",
-      "https://www.oed.com/dictionary/electorate_n?tab=factsheet#5820409"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "electorate",
+      "etymology": [
+        {
+          "name": "electorate",
+          "origin": "Modern English"
+        },
+        {
+          "name": "elèctorat -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/electorate",
+        "https://www.oed.com/dictionary/electorate_n?tab=factsheet#5820409"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

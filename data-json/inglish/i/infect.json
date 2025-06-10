@@ -1,101 +1,143 @@
 [
   {
-    "name": "to infect",
-    "etymology": [
-      {
-        "name": "infectus",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to infect",
+      "conjugations": {
+        "thirdPerson": "d",
+        "pastTense": "ing"
       },
-      {
-        "name": "to infect",
-        "origin": "Modern English"
-      },
-      {
-        "name": "to infecte  infecs -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "infectus",
+        "to infect",
+        "to infecte  infecs -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to infect",
+      "etymology": [
+        {
+          "name": "infectus",
+          "origin": "Latin"
+        },
+        {
+          "name": "to infect",
+          "origin": "Modern English"
+        },
+        {
+          "name": "to infecte  infecs -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/infect#etymonline_v_6433",
+        "https://www.oed.com/dictionary/infect_v?tab=factsheet#577196",
+        "https://latin-dictionary.net/definition/23634/inficio-inficere-infeci-infectus"
+      ],
+      "conjugations": {
+        "thirdPerson": "d",
+        "pastTense": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/infect#etymonline_v_6433",
-      "https://www.oed.com/dictionary/infect_v?tab=factsheet#577196",
-      "https://latin-dictionary.net/definition/23634/inficio-inficere-infeci-infectus"
-    ]
+    }
   },
   {
-    "name": "infection",
-    "etymology": [
-      {
-        "name": "infectio, infectionem",
-        "origin": "Latin"
-      },
-      {
-        "name": "infeccion",
-        "origin": "Old French"
-      },
-      {
-        "name": "infection",
-        "origin": "Modern English"
-      },
-      {
-        "name": "infeccion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/infection#etymonline_v_34711",
-      "https://www.oed.com/dictionary/infection_n?tab=pronunciation#579173",
-      "https://www.oed.com/dictionary/infection_n?tab=meaning_and_use#579173",
-      "https://anglo-norman.net/entry/infection"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "infection",
+      "etymology": [
+        {
+          "name": "infectio, infectionem",
+          "origin": "Latin"
+        },
+        {
+          "name": "infeccion",
+          "origin": "Old French"
+        },
+        {
+          "name": "infection",
+          "origin": "Modern English"
+        },
+        {
+          "name": "infeccion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/infection#etymonline_v_34711",
+        "https://www.oed.com/dictionary/infection_n?tab=pronunciation#579173",
+        "https://www.oed.com/dictionary/infection_n?tab=meaning_and_use#579173",
+        "https://anglo-norman.net/entry/infection"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "infective",
-    "etymology": [
-      {
-        "name": "infectivus",
-        "origin": "Latin"
-      },
-      {
-        "name": "infective",
-        "origin": "Modern English"
-      },
-      {
-        "name": "infèctif -vly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "infective",
+      "etymology": [
+        {
+          "name": "infectivus",
+          "origin": "Latin"
+        },
+        {
+          "name": "infective",
+          "origin": "Modern English"
+        },
+        {
+          "name": "infèctif -vly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/infective",
+        "https://www.oed.com/dictionary/infective_adj?tab=factsheet#580401"
+      ],
+      "degrees": {
+        "positive": "ctif",
+        "comparative": "vly"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/infective",
-      "https://www.oed.com/dictionary/infective_adj?tab=factsheet#580401"
-    ]
+    }
   },
   {
-    "name": "infectious",
-    "etymology": [
-      {
-        "name": "infectious",
-        "origin": "Modern English"
-      },
-      {
-        "name": "infeccioʃ -sly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/infectious#etymonline_v_34712",
-      "https://www.oed.com/dictionary/infectious_adj?tab=factsheet#579917"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "infectious",
+      "etymology": [
+        {
+          "name": "infectious",
+          "origin": "Modern English"
+        },
+        {
+          "name": "infeccioʃ -sly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/infectious#etymonline_v_34712",
+        "https://www.oed.com/dictionary/infectious_adj?tab=factsheet#579917"
+      ]
+    }
   }
 ]

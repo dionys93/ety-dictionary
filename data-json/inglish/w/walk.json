@@ -1,62 +1,90 @@
 [
   {
-    "name": "to walk",
-    "etymology": [
-      {
-        "name": "wealcan, wealcian",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to walk",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "walken",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to walk",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta ɯauke -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "wealcan, wealcian",
+        "walken",
+        "to walk",
+        "ta ɯauke -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to walk",
+      "etymology": [
+        {
+          "name": "wealcan, wealcian",
+          "origin": "Old English"
+        },
+        {
+          "name": "walken",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to walk",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta ɯauke -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/walk#etymonline_v_4803",
+        "https://www.oed.com/dictionary/walk_v?tab=factsheet#15249946",
+        "https://www.merriam-webster.com/dictionary/walk#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51581",
+        "https://bosworthtoller.com/34743",
+        "https://bosworthtoller.com/34740"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/walk#etymonline_v_4803",
-      "https://www.oed.com/dictionary/walk_v?tab=factsheet#15249946",
-      "https://www.merriam-webster.com/dictionary/walk#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51581",
-      "https://bosworthtoller.com/34743",
-      "https://bosworthtoller.com/34740"
-    ]
+    }
   },
   {
-    "name": "walk",
-    "etymology": [
-      {
-        "name": "walk, walke",
-        "origin": "Middle English"
-      },
-      {
-        "name": "walk",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ɯauk(e, ɯaux",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/walk#etymonline_v_25535",
-      "https://www.etymonline.com/word/walk#etymonline_v_4803",
-      "https://www.oed.com/dictionary/walk_n1?tab=factsheet#15247339",
-      "https://www.merriam-webster.com/dictionary/walk#dictionary-entry-2",
-      "https://www.merriam-webster.com/dictionary/walk#word-history",
-      "https://bosworthtoller.com/34739"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "walk",
+      "etymology": [
+        {
+          "name": "walk, walke",
+          "origin": "Middle English"
+        },
+        {
+          "name": "walk",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ɯauk(e, ɯaux",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/walk#etymonline_v_25535",
+        "https://www.etymonline.com/word/walk#etymonline_v_4803",
+        "https://www.oed.com/dictionary/walk_n1?tab=factsheet#15247339",
+        "https://www.merriam-webster.com/dictionary/walk#dictionary-entry-2",
+        "https://www.merriam-webster.com/dictionary/walk#word-history",
+        "https://bosworthtoller.com/34739"
+      ],
+      "number": "singular"
+    }
   }
 ]

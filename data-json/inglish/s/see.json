@@ -1,109 +1,162 @@
 [
   {
-    "name": "to see",
-    "etymology": [
-      {
-        "name": "seon, sean",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to see",
+      "conjugations": {
+        "thirdPerson": "s"
       },
-      {
-        "name": "sen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to see",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta sihe -s sohe sine -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "seon, sean",
+        "sen",
+        "to see",
+        "ta sihe -s sohe sine -ing"
+      ]
+    },
+    "standard": {
+      "name": "to see",
+      "etymology": [
+        {
+          "name": "seon, sean",
+          "origin": "Old English"
+        },
+        {
+          "name": "sen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to see",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta sihe -s sohe sine -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/see#etymonline_v_23104",
+        "https://www.merriam-webster.com/dictionary/see#dictionary-entry-1",
+        "https://www.oed.com/dictionary/see_v?tab=factsheet#23701603",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39393",
+        "https://bosworthtoller.com/27500",
+        "https://bosworthtoller.com/58013"
+      ],
+      "conjugations": {
+        "thirdPerson": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/see#etymonline_v_23104",
-      "https://www.merriam-webster.com/dictionary/see#dictionary-entry-1",
-      "https://www.oed.com/dictionary/see_v?tab=factsheet#23701603",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39393",
-      "https://bosworthtoller.com/27500",
-      "https://bosworthtoller.com/58013"
-    ]
+    }
   },
   {
-    "name": "seer",
-    "etymology": [
-      {
-        "name": "seer",
-        "origin": "Modern English"
-      },
-      {
-        "name": "siheur, sihor -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/seer#etymonline_v_23114",
-      "https://www.etymonline.com/word/see#etymonline_v_23104",
-      "https://www.merriam-webster.com/dictionary/seer",
-      "https://www.oed.com/dictionary/seer_n1?tab=factsheet#23738773"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "seer",
+      "etymology": [
+        {
+          "name": "seer",
+          "origin": "Modern English"
+        },
+        {
+          "name": "siheur, sihor -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/seer#etymonline_v_23114",
+        "https://www.etymonline.com/word/see#etymonline_v_23104",
+        "https://www.merriam-webster.com/dictionary/seer",
+        "https://www.oed.com/dictionary/seer_n1?tab=factsheet#23738773"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "sight",
-    "etymology": [
-      {
-        "name": "sihð, gesiht, gesihð",
-        "origin": "Old English"
-      },
-      {
-        "name": "sight",
-        "origin": "Middle English"
-      },
-      {
-        "name": "sîht -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/sight#etymonline_v_23499",
-      "https://www.merriam-webster.com/dictionary/sight#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/sight#dictionary-entry-3",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40242",
-      "https://bosworthtoller.com/16014"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "sight",
+      "etymology": [
+        {
+          "name": "sihð, gesiht, gesihð",
+          "origin": "Old English"
+        },
+        {
+          "name": "sight",
+          "origin": "Middle English"
+        },
+        {
+          "name": "sîht -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/sight#etymonline_v_23499",
+        "https://www.merriam-webster.com/dictionary/sight#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/sight#dictionary-entry-3",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40242",
+        "https://bosworthtoller.com/16014"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to sight",
-    "etymology": [
-      {
-        "name": "sighten",
-        "origin": "Middle English"
+    "verbDetails": {
+      "infinitive": "to sight",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to sight",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta sîhte -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "sighten",
+        "to sight",
+        "ta sîhte -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to sight",
+      "etymology": [
+        {
+          "name": "sighten",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to sight",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta sîhte -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/sight#etymonline_v_48659",
+        "https://www.etymonline.com/word/sight#etymonline_v_23499",
+        "https://www.merriam-webster.com/dictionary/sight#dictionary-entry-2",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40244"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/sight#etymonline_v_48659",
-      "https://www.etymonline.com/word/sight#etymonline_v_23499",
-      "https://www.merriam-webster.com/dictionary/sight#dictionary-entry-2",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40244"
-    ]
+    }
   }
 ]

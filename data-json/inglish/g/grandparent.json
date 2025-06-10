@@ -1,130 +1,189 @@
 [
   {
-    "name": "grandparent",
-    "etymology": [
-      {
-        "name": "grandparent",
-        "origin": "Modern English"
-      },
-      {
-        "name": "gran-pârent -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/grandparent#etymonline_v_33904",
-      "https://www.merriam-webster.com/dictionary/grandparent",
-      "https://www.oed.com/dictionary/grandparent_n?tab=factsheet#2675765",
-      "https://www.collinsdictionary.com/dictionary/english-french/grandparent"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "grandparent",
+      "etymology": [
+        {
+          "name": "grandparent",
+          "origin": "Modern English"
+        },
+        {
+          "name": "gran-pârent -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/grandparent#etymonline_v_33904",
+        "https://www.merriam-webster.com/dictionary/grandparent",
+        "https://www.oed.com/dictionary/grandparent_n?tab=factsheet#2675765",
+        "https://www.collinsdictionary.com/dictionary/english-french/grandparent"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "grandmother",
-    "etymology": [
-      {
-        "name": "grandmother",
-        "origin": "Modern English"
-      },
-      {
-        "name": "gran-maþor -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/grandmother#etymonline_v_33723",
-      "https://www.merriam-webster.com/dictionary/grandmother",
-      "https://www.oed.com/dictionary/grandmother_n?tab=factsheet#2674525",
-      "https://www.collinsdictionary.com/dictionary/english-french/grandparent"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "grandmother",
+      "etymology": [
+        {
+          "name": "grandmother",
+          "origin": "Modern English"
+        },
+        {
+          "name": "gran-maþor -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/grandmother#etymonline_v_33723",
+        "https://www.merriam-webster.com/dictionary/grandmother",
+        "https://www.oed.com/dictionary/grandmother_n?tab=factsheet#2674525",
+        "https://www.collinsdictionary.com/dictionary/english-french/grandparent"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "grandfather",
-    "etymology": [
-      {
-        "name": "grandfather",
-        "origin": "Modern English"
-      },
-      {
-        "name": "gran-faþor -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/grandfather#etymonline_v_11900",
-      "https://www.merriam-webster.com/dictionary/grandfather#dictionary-entry-1",
-      "https://www.oed.com/dictionary/grandfather_n?tab=factsheet#2670802",
-      "https://www.collinsdictionary.com/dictionary/english-french/grandparent"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "grandfather",
+      "etymology": [
+        {
+          "name": "grandfather",
+          "origin": "Modern English"
+        },
+        {
+          "name": "gran-faþor -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/grandfather#etymonline_v_11900",
+        "https://www.merriam-webster.com/dictionary/grandfather#dictionary-entry-1",
+        "https://www.oed.com/dictionary/grandfather_n?tab=factsheet#2670802",
+        "https://www.collinsdictionary.com/dictionary/english-french/grandparent"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to grandfather",
-    "etymology": [
-      {
-        "name": "to grandfather",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to grandfather",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta gran-faþore -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to grandfather",
+        "ta gran-faþore -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to grandfather",
+      "etymology": [
+        {
+          "name": "to grandfather",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta gran-faþore -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/grandfather#dictionary-entry-2",
+        "https://www.oed.com/dictionary/grandfather_v?tab=factsheet#2671515"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/grandfather#dictionary-entry-2",
-      "https://www.oed.com/dictionary/grandfather_v?tab=factsheet#2671515"
-    ]
+    }
   },
   {
-    "name": "grandma",
-    "etymology": [
-      {
-        "name": "grandma",
-        "origin": "Modern English"
-      },
-      {
-        "name": "gramma -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/grandma#etymonline_v_33888",
-      "https://www.merriam-webster.com/dictionary/grandma",
-      "https://www.oed.com/dictionary/grandma_n?tab=factsheet#326822823"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "grandma",
+      "etymology": [
+        {
+          "name": "grandma",
+          "origin": "Modern English"
+        },
+        {
+          "name": "gramma -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/grandma#etymonline_v_33888",
+        "https://www.merriam-webster.com/dictionary/grandma",
+        "https://www.oed.com/dictionary/grandma_n?tab=factsheet#326822823"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "grandpa",
-    "etymology": [
-      {
-        "name": "grandpa",
-        "origin": "Modern English"
-      },
-      {
-        "name": "grampa -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/grandpa#etymonline_v_33889",
-      "https://www.merriam-webster.com/dictionary/grandpa",
-      "https://www.oed.com/dictionary/grandpa_n?tab=factsheet#327587419"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "grandpa",
+      "etymology": [
+        {
+          "name": "grandpa",
+          "origin": "Modern English"
+        },
+        {
+          "name": "grampa -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/grandpa#etymonline_v_33889",
+        "https://www.merriam-webster.com/dictionary/grandpa",
+        "https://www.oed.com/dictionary/grandpa_n?tab=factsheet#327587419"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

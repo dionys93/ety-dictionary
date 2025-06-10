@@ -1,162 +1,203 @@
 [
   {
-    "name": "hero",
-    "etymology": [
-      {
-        "name": "ἥρως",
-        "origin": "Ancient Greek"
-      },
-      {
-        "name": "heros",
-        "origin": "Latin"
-      },
-      {
-        "name": "heroe",
-        "origin": "Old French"
-      },
-      {
-        "name": "hero",
-        "origin": "Modern English"
-      },
-      {
-        "name": "hiroɯ -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/hero#etymonline_v_9195",
-      "https://www.merriam-webster.com/dictionary/hero",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/h%C3%A9ros/39642",
-      "https://latin-dictionary.net/definition/22087/heros-herois",
-      "https://lsj.gr/wiki/%E1%BC%A5%CF%81%CF%89%CF%82"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "hero",
+      "etymology": [
+        {
+          "name": "ἥρως",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "heros",
+          "origin": "Latin"
+        },
+        {
+          "name": "heroe",
+          "origin": "Old French"
+        },
+        {
+          "name": "hero",
+          "origin": "Modern English"
+        },
+        {
+          "name": "hiroɯ -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/hero#etymonline_v_9195",
+        "https://www.merriam-webster.com/dictionary/hero",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/h%C3%A9ros/39642",
+        "https://latin-dictionary.net/definition/22087/heros-herois",
+        "https://lsj.gr/wiki/%E1%BC%A5%CF%81%CF%89%CF%82"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "heroic",
-    "etymology": [
-      {
-        "name": "ἡρωϊκός",
-        "origin": "Ancient Greek"
-      },
-      {
-        "name": "heroicus",
-        "origin": "Latin"
-      },
-      {
-        "name": "heroical",
-        "origin": "Middle English"
-      },
-      {
-        "name": "heroic",
-        "origin": "Modern English"
-      },
-      {
-        "name": "hiroɯic -ly -ness",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "feminine noun"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "heroic",
+      "etymology": [
+        {
+          "name": "ἡρωϊκός",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "heroicus",
+          "origin": "Latin"
+        },
+        {
+          "name": "heroical",
+          "origin": "Middle English"
+        },
+        {
+          "name": "heroic",
+          "origin": "Modern English"
+        },
+        {
+          "name": "hiroɯic -ly -ness",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/heroic#etymonline_v_34082",
+        "https://www.merriam-webster.com/dictionary/heroic#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/heroic#dictionary-entry-2",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20582",
+        "https://latin-dictionary.net/definition/22082/heroicus-heroica-heroicum",
+        "https://lsj.gr/wiki/%E1%BC%A1%CF%81%CF%89%CF%8A%CE%BA%CF%8C%CF%82"
+      ],
+      "degrees": {
+        "positive": "ic",
+        "comparative": "ly",
+        "superlative": "ness"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/heroic#etymonline_v_34082",
-      "https://www.merriam-webster.com/dictionary/heroic#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/heroic#dictionary-entry-2",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20582",
-      "https://latin-dictionary.net/definition/22082/heroicus-heroica-heroicum",
-      "https://lsj.gr/wiki/%E1%BC%A1%CF%81%CF%89%CF%8A%CE%BA%CF%8C%CF%82"
-    ]
+    }
   },
   {
-    "name": "heroin",
-    "etymology": [
-      {
-        "name": "ἥρως",
-        "origin": "Ancient Greek"
-      },
-      {
-        "name": "das Heroin",
-        "origin": "Inglish"
-      },
-      {
-        "name": "heroin",
-        "origin": "Modern English"
-      },
-      {
-        "name": "heroɯin",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/heroin#etymonline_v_9196",
-      "https://www.etymonline.com/word/hero#etymonline_v_9195",
-      "https://www.etymonline.com/word/-ine#etymonline_v_42197",
-      "https://www.collinsdictionary.com/us/dictionary/german-english/heroin",
-      "https://lsj.gr/wiki/%E1%BC%A5%CF%81%CF%89%CF%82"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "heroin",
+      "etymology": [
+        {
+          "name": "ἥρως",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "das Heroin",
+          "origin": "Inglish"
+        },
+        {
+          "name": "heroin",
+          "origin": "Modern English"
+        },
+        {
+          "name": "heroɯin",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/heroin#etymonline_v_9196",
+        "https://www.etymonline.com/word/hero#etymonline_v_9195",
+        "https://www.etymonline.com/word/-ine#etymonline_v_42197",
+        "https://www.collinsdictionary.com/us/dictionary/german-english/heroin",
+        "https://lsj.gr/wiki/%E1%BC%A5%CF%81%CF%89%CF%82"
+      ]
+    }
   },
   {
-    "name": "heroine",
-    "etymology": [
-      {
-        "name": "ἥρως, ἡρωΐνη",
-        "origin": "Ancient Greek"
-      },
-      {
-        "name": "heroine, heroina",
-        "origin": "Latin"
-      },
-      {
-        "name": "heroine",
-        "origin": "Modern English"
-      },
-      {
-        "name": "hiroɯin -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/heroine#etymonline_v_34034",
-      "https://www.merriam-webster.com/dictionary/heroine",
-      "https://latin-dictionary.net/definition/22084/heroina-heroinae",
-      "https://latin-dictionary.net/definition/22085/heroine-heroines",
-      "https://lsj.gr/wiki/%E1%BC%A1%CF%81%CF%89%CE%90%CE%BD%CE%B7",
-      "https://lsj.gr/wiki/%E1%BC%A5%CF%81%CF%89%CF%82"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "heroine",
+      "etymology": [
+        {
+          "name": "ἥρως, ἡρωΐνη",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "heroine, heroina",
+          "origin": "Latin"
+        },
+        {
+          "name": "heroine",
+          "origin": "Modern English"
+        },
+        {
+          "name": "hiroɯin -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/heroine#etymonline_v_34034",
+        "https://www.merriam-webster.com/dictionary/heroine",
+        "https://latin-dictionary.net/definition/22084/heroina-heroinae",
+        "https://latin-dictionary.net/definition/22085/heroine-heroines",
+        "https://lsj.gr/wiki/%E1%BC%A1%CF%81%CF%89%CE%90%CE%BD%CE%B7",
+        "https://lsj.gr/wiki/%E1%BC%A5%CF%81%CF%89%CF%82"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "heroism",
-    "etymology": [
-      {
-        "name": "héroïsme",
-        "origin": "French"
-      },
-      {
-        "name": "heroism",
-        "origin": "Modern English"
-      },
-      {
-        "name": "hiroɯism -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/heroism#etymonline_v_34083",
-      "https://www.merriam-webster.com/dictionary/heroism",
-      "https://www.collinsdictionary.com/us/dictionary/french-english/h%C3%A9ro%C3%AFsme"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "heroism",
+      "etymology": [
+        {
+          "name": "héroïsme",
+          "origin": "French"
+        },
+        {
+          "name": "heroism",
+          "origin": "Modern English"
+        },
+        {
+          "name": "hiroɯism -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/heroism#etymonline_v_34083",
+        "https://www.merriam-webster.com/dictionary/heroism",
+        "https://www.collinsdictionary.com/us/dictionary/french-english/h%C3%A9ro%C3%AFsme"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

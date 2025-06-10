@@ -1,32 +1,38 @@
 [
   {
-    "name": "pecan",
-    "etymology": [
-      {
-        "name": "paccan",
-        "origin": "Inglish"
-      },
-      {
-        "name": "pécan",
-        "origin": "French"
-      },
-      {
-        "name": "pecan",
-        "origin": "Modern English"
-      },
-      {
-        "name": "pecán -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/pecan#etymonline_v_10225",
-      "https://www.oed.com/dictionary/pecan_n?tab=factsheet#31400089",
-      "https://www.merriam-webster.com/dictionary/pecan",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/p%C3%A9can/873188"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "pecan",
+      "etymology": [
+        {
+          "name": "paccan",
+          "origin": "Inglish"
+        },
+        {
+          "name": "pécan",
+          "origin": "French"
+        },
+        {
+          "name": "pecan",
+          "origin": "Modern English"
+        },
+        {
+          "name": "pecán -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/pecan#etymonline_v_10225",
+        "https://www.oed.com/dictionary/pecan_n?tab=factsheet#31400089",
+        "https://www.merriam-webster.com/dictionary/pecan",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/p%C3%A9can/873188"
+      ]
+    }
   }
 ]

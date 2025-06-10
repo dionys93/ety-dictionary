@@ -1,163 +1,216 @@
 [
   {
-    "name": "hypnosis, hypnoses",
-    "etymology": [
-      {
-        "name": "ὕπνος",
-        "origin": "Ancient Greek"
-      },
-      {
-        "name": "hypnosis, hypnoses",
-        "origin": "Modern English"
-      },
-      {
-        "name": "hipnôsiʃ, hipnôsis",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/hypnosis#etymonline_v_16129",
-      "https://www.etymonline.com/word/hypno-#etymonline_v_42189",
-      "https://www.etymonline.com/word/-osis#etymonline_v_9927",
-      "https://www.merriam-webster.com/dictionary/hypnosis",
-      "https://lsj.gr/wiki/%E1%BD%95%CF%80%CE%BD%CE%BF%CF%82"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "hypnosis, hypnoses",
+      "etymology": [
+        {
+          "name": "ὕπνος",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "hypnosis, hypnoses",
+          "origin": "Modern English"
+        },
+        {
+          "name": "hipnôsiʃ, hipnôsis",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/hypnosis#etymonline_v_16129",
+        "https://www.etymonline.com/word/hypno-#etymonline_v_42189",
+        "https://www.etymonline.com/word/-osis#etymonline_v_9927",
+        "https://www.merriam-webster.com/dictionary/hypnosis",
+        "https://lsj.gr/wiki/%E1%BD%95%CF%80%CE%BD%CE%BF%CF%82"
+      ]
+    }
   },
   {
-    "name": "hypnotist",
-    "etymology": [
-      {
-        "name": "hypnotist",
-        "origin": "Modern English"
-      },
-      {
-        "name": "hipnotist -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/hypnotist#etymonline_v_34443",
-      "https://www.etymonline.com/word/-ist#etymonline_v_12278",
-      "https://www.etymonline.com/word/hypnotic#etymonline_v_16131",
-      "https://www.merriam-webster.com/dictionary/hypnotist"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "hypnotist",
+      "etymology": [
+        {
+          "name": "hypnotist",
+          "origin": "Modern English"
+        },
+        {
+          "name": "hipnotist -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/hypnotist#etymonline_v_34443",
+        "https://www.etymonline.com/word/-ist#etymonline_v_12278",
+        "https://www.etymonline.com/word/hypnotic#etymonline_v_16131",
+        "https://www.merriam-webster.com/dictionary/hypnotist"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to hypnotize",
-    "etymology": [
-      {
-        "name": "to hypnotize",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta hipnotyse -s -d -ing",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/hypnotize#etymonline_v_34442",
-      "https://www.etymonline.com/word/-ize#etymonline_v_25713",
-      "https://www.etymonline.com/word/hypnotic#etymonline_v_16131",
-      "https://www.merriam-webster.com/dictionary/hypnotize"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "to hypnotize",
+      "etymology": [
+        {
+          "name": "to hypnotize",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta hipnotyse -s -d -ing",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/hypnotize#etymonline_v_34442",
+        "https://www.etymonline.com/word/-ize#etymonline_v_25713",
+        "https://www.etymonline.com/word/hypnotic#etymonline_v_16131",
+        "https://www.merriam-webster.com/dictionary/hypnotize"
+      ]
+    }
   },
   {
-    "name": "hypnotizable",
-    "etymology": [
-      {
-        "name": "hypnotizable",
-        "origin": "Modern English"
-      },
-      {
-        "name": "hipnotîsable",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/hypnotizable"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "hypnotizable",
+      "etymology": [
+        {
+          "name": "hypnotizable",
+          "origin": "Modern English"
+        },
+        {
+          "name": "hipnotîsable",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/hypnotizable"
+      ]
+    }
   },
   {
-    "name": "hypnotization",
-    "etymology": [
-      {
-        "name": "hypnotization",
-        "origin": "Modern English"
-      },
-      {
-        "name": "hipnotisâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.oed.com/dictionary/hypnotization_n?tab=factsheet#1041823100"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "hypnotization",
+      "etymology": [
+        {
+          "name": "hypnotization",
+          "origin": "Modern English"
+        },
+        {
+          "name": "hipnotisâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.oed.com/dictionary/hypnotization_n?tab=factsheet#1041823100"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "hypnotism",
-    "etymology": [
-      {
-        "name": "hypnotism",
-        "origin": "Modern English"
-      },
-      {
-        "name": "hipnotism",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/hypnotism#etymonline_v_16130",
-      "https://www.merriam-webster.com/dictionary/hypnotism"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "hypnotism",
+      "etymology": [
+        {
+          "name": "hypnotism",
+          "origin": "Modern English"
+        },
+        {
+          "name": "hipnotism",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/hypnotism#etymonline_v_16130",
+        "https://www.merriam-webster.com/dictionary/hypnotism"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   },
   {
-    "name": "hypnotic",
-    "etymology": [
-      {
-        "name": "ὕπνος, ὑπνόω, υπνοτικός",
-        "origin": "Ancient Greek"
-      },
-      {
-        "name": "hypnoticus",
-        "origin": "Latin"
-      },
-      {
-        "name": "hypnotique",
-        "origin": "French"
-      },
-      {
-        "name": "hypnotic",
-        "origin": "Modern English"
-      },
-      {
-        "name": "hipnótic -s -ly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "feminine noun"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "hypnotic",
+      "etymology": [
+        {
+          "name": "ὕπνος, ὑπνόω, υπνοτικός",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "hypnoticus",
+          "origin": "Latin"
+        },
+        {
+          "name": "hypnotique",
+          "origin": "French"
+        },
+        {
+          "name": "hypnotic",
+          "origin": "Modern English"
+        },
+        {
+          "name": "hipnótic -s -ly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/hypnotic#etymonline_v_16131",
+        "https://www.merriam-webster.com/dictionary/hypnotic#dictionary-entry-2",
+        "https://www.merriam-webster.com/dictionary/hypnotic#dictionary-entry-1",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/hypnotique/550454",
+        "https://lsj.gr/wiki/%CF%85%CF%80%CE%BD%CE%BF%CF%84%CE%B9%CE%BA%CF%8C%CF%82",
+        "https://lsj.gr/wiki/%E1%BD%91%CF%80%CE%BD%CF%8C%CF%89",
+        "https://lsj.gr/wiki/%E1%BD%95%CF%80%CE%BD%CE%BF%CF%82"
+      ],
+      "degrees": {
+        "positive": "tic",
+        "comparative": "s",
+        "superlative": "ly"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/hypnotic#etymonline_v_16131",
-      "https://www.merriam-webster.com/dictionary/hypnotic#dictionary-entry-2",
-      "https://www.merriam-webster.com/dictionary/hypnotic#dictionary-entry-1",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/hypnotique/550454",
-      "https://lsj.gr/wiki/%CF%85%CF%80%CE%BD%CE%BF%CF%84%CE%B9%CE%BA%CF%8C%CF%82",
-      "https://lsj.gr/wiki/%E1%BD%91%CF%80%CE%BD%CF%8C%CF%89",
-      "https://lsj.gr/wiki/%E1%BD%95%CF%80%CE%BD%CE%BF%CF%82"
-    ]
+    }
   }
 ]

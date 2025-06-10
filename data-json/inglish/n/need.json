@@ -1,63 +1,92 @@
 [
   {
-    "name": "need",
-    "etymology": [
-      {
-        "name": "nied, ned, neod, nead",
-        "origin": "Old English"
-      },
-      {
-        "name": "nede",
-        "origin": "Middle English"
-      },
-      {
-        "name": "need",
-        "origin": "Modern English"
-      },
-      {
-        "name": "nide, níds",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/need#etymonline_v_2366",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29184",
-      "https://bosworthtoller.com/23555",
-      "https://bosworthtoller.com/23624"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "need",
+      "etymology": [
+        {
+          "name": "nied, ned, neod, nead",
+          "origin": "Old English"
+        },
+        {
+          "name": "nede",
+          "origin": "Middle English"
+        },
+        {
+          "name": "need",
+          "origin": "Modern English"
+        },
+        {
+          "name": "nide, níds",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/need#etymonline_v_2366",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29184",
+        "https://bosworthtoller.com/23555",
+        "https://bosworthtoller.com/23624"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to need",
-    "etymology": [
-      {
-        "name": "neodian",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to need",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "neden",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to need",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta nide -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "neodian",
+        "neden",
+        "to need",
+        "ta nide -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to need",
+      "etymology": [
+        {
+          "name": "neodian",
+          "origin": "Old English"
+        },
+        {
+          "name": "neden",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to need",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta nide -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/need#etymonline_v_43179",
+        "https://www.etymonline.com/word/need#etymonline_v_2366",
+        "https://etymologeek.com/eng/need/38052992",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29199",
+        "https://bosworthtoller.com/23559"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/need#etymonline_v_43179",
-      "https://www.etymonline.com/word/need#etymonline_v_2366",
-      "https://etymologeek.com/eng/need/38052992",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29199",
-      "https://bosworthtoller.com/23559"
-    ]
+    }
   }
 ]

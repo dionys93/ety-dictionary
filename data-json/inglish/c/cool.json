@@ -1,133 +1,192 @@
 [
   {
-    "name": "cool",
-    "etymology": [
-      {
-        "name": "col",
-        "origin": "Old English"
-      },
-      {
-        "name": "cool",
-        "origin": "Modern English"
-      },
-      {
-        "name": "coul -er -est",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "cool",
+      "etymology": [
+        {
+          "name": "col",
+          "origin": "Old English"
+        },
+        {
+          "name": "cool",
+          "origin": "Modern English"
+        },
+        {
+          "name": "coul -er -est",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cool#etymonline_v_19042",
+        "https://www.merriam-webster.com/dictionary/cool#word-history",
+        "https://www.merriam-webster.com/dictionary/cool#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8360",
+        "https://bosworthtoller.com/6513"
+      ],
+      "degrees": {
+        "positive": "coul",
+        "comparative": "er",
+        "superlative": "est"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cool#etymonline_v_19042",
-      "https://www.merriam-webster.com/dictionary/cool#word-history",
-      "https://www.merriam-webster.com/dictionary/cool#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8360",
-      "https://bosworthtoller.com/6513"
-    ]
+    }
   },
   {
-    "name": "cool",
-    "etymology": [
-      {
-        "name": "cool",
-        "origin": "Modern English"
-      },
-      {
-        "name": "coul",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cool#etymonline_v_46706",
-      "https://www.etymonline.com/word/cool#etymonline_v_19042",
-      "https://www.merriam-webster.com/dictionary/cool#dictionary-entry-3",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8360",
-      "https://bosworthtoller.com/6513"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "cool",
+      "etymology": [
+        {
+          "name": "cool",
+          "origin": "Modern English"
+        },
+        {
+          "name": "coul",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cool#etymonline_v_46706",
+        "https://www.etymonline.com/word/cool#etymonline_v_19042",
+        "https://www.merriam-webster.com/dictionary/cool#dictionary-entry-3",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8360",
+        "https://bosworthtoller.com/6513"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   },
   {
-    "name": "to cool",
-    "etymology": [
-      {
-        "name": "colian",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to cool",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "colen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to cool",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta coule -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "colian",
+        "colen",
+        "to cool",
+        "ta coule -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to cool",
+      "etymology": [
+        {
+          "name": "colian",
+          "origin": "Old English"
+        },
+        {
+          "name": "colen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to cool",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta coule -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cool#etymonline_v_46707",
+        "https://www.etymonline.com/word/cool#etymonline_v_19042",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8384",
+        "https://bosworthtoller.com/6515"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cool#etymonline_v_46707",
-      "https://www.etymonline.com/word/cool#etymonline_v_19042",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8384",
-      "https://bosworthtoller.com/6515"
-    ]
+    }
   },
   {
-    "name": "cold",
-    "etymology": [
-      {
-        "name": "cald",
-        "origin": "Old English"
-      },
-      {
-        "name": "cold",
-        "origin": "Middle English"
-      },
-      {
-        "name": "côld -er -est",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "cold",
+      "etymology": [
+        {
+          "name": "cald",
+          "origin": "Old English"
+        },
+        {
+          "name": "cold",
+          "origin": "Middle English"
+        },
+        {
+          "name": "côld -er -est",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cold#etymonline_v_15811",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8370",
+        "https://bosworthtoller.com/5768"
+      ],
+      "degrees": {
+        "positive": "ld",
+        "comparative": "er",
+        "superlative": "est"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cold#etymonline_v_15811",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8370",
-      "https://bosworthtoller.com/5768"
-    ]
+    }
   },
   {
-    "name": "cold",
-    "etymology": [
-      {
-        "name": "cald",
-        "origin": "Old English"
-      },
-      {
-        "name": "cold",
-        "origin": "Middle English"
-      },
-      {
-        "name": "côld -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cold#etymonline_v_36185",
-      "https://www.etymonline.com/word/cold#etymonline_v_15811",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8370",
-      "https://bosworthtoller.com/5769"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "cold",
+      "etymology": [
+        {
+          "name": "cald",
+          "origin": "Old English"
+        },
+        {
+          "name": "cold",
+          "origin": "Middle English"
+        },
+        {
+          "name": "côld -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cold#etymonline_v_36185",
+        "https://www.etymonline.com/word/cold#etymonline_v_15811",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8370",
+        "https://bosworthtoller.com/5769"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

@@ -1,69 +1,102 @@
 [
   {
-    "name": "forst, frost",
-    "etymology": [
-      {
-        "name": "forst, frost",
-        "origin": "Old English"
-      },
-      {
-        "name": "fròst -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/frost#etymonline_v_14209",
-      "https://bosworthtoller.com/12518",
-      "https://bosworthtoller.com/11742"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "forst, frost",
+      "etymology": [
+        {
+          "name": "forst, frost",
+          "origin": "Old English"
+        },
+        {
+          "name": "fròst -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/frost#etymonline_v_14209",
+        "https://bosworthtoller.com/12518",
+        "https://bosworthtoller.com/11742"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to frost",
-    "etymology": [
-      {
-        "name": "to frost",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to frost",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta fròste -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to frost",
+        "ta fròste -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to frost",
+      "etymology": [
+        {
+          "name": "to frost",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta fròste -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/frost#etymonline_v_46189",
+        "https://www.etymonline.com/word/frost#etymonline_v_14209"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/frost#etymonline_v_46189",
-      "https://www.etymonline.com/word/frost#etymonline_v_14209"
-    ]
+    }
   },
   {
-    "name": "frosty",
-    "etymology": [
-      {
-        "name": "forstig, fyrstig",
-        "origin": "Old English"
-      },
-      {
-        "name": "frosty",
-        "origin": "Modern English"
-      },
-      {
-        "name": "fròsty",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/frosty#etymonline_v_33438",
-      "https://www.etymonline.com/word/frost#etymonline_v_14209",
-      "https://www.etymonline.com/word/-y#etymonline_v_25631",
-      "https://bosworthtoller.com/12519"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "frosty",
+      "etymology": [
+        {
+          "name": "forstig, fyrstig",
+          "origin": "Old English"
+        },
+        {
+          "name": "frosty",
+          "origin": "Modern English"
+        },
+        {
+          "name": "fròsty",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/frosty#etymonline_v_33438",
+        "https://www.etymonline.com/word/frost#etymonline_v_14209",
+        "https://www.etymonline.com/word/-y#etymonline_v_25631",
+        "https://bosworthtoller.com/12519"
+      ]
+    }
   }
 ]

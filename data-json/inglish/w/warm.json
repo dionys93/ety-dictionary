@@ -1,82 +1,120 @@
 [
   {
-    "name": "warm",
-    "etymology": [
-      {
-        "name": "wearm",
-        "origin": "Old English"
-      },
-      {
-        "name": "warm",
-        "origin": "Middle English"
-      },
-      {
-        "name": "ɯaûm -er -est",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "warm",
+      "etymology": [
+        {
+          "name": "wearm",
+          "origin": "Old English"
+        },
+        {
+          "name": "warm",
+          "origin": "Middle English"
+        },
+        {
+          "name": "ɯaûm -er -est",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/warm#etymonline_v_4837",
+        "https://www.oed.com/dictionary/warm_adj?tab=factsheet#14931504",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51791",
+        "https://bosworthtoller.com/34861"
+      ],
+      "degrees": {
+        "positive": "m",
+        "comparative": "er",
+        "superlative": "est"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/warm#etymonline_v_4837",
-      "https://www.oed.com/dictionary/warm_adj?tab=factsheet#14931504",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51791",
-      "https://bosworthtoller.com/34861"
-    ]
+    }
   },
   {
-    "name": "to warm",
-    "etymology": [
-      {
-        "name": "wyrman",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to warm",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "iwarmen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to warm",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta ɯaûme -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "wyrman",
+        "iwarmen",
+        "to warm",
+        "ta ɯaûme -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to warm",
+      "etymology": [
+        {
+          "name": "wyrman",
+          "origin": "Old English"
+        },
+        {
+          "name": "iwarmen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to warm",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta ɯaûme -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/warm#etymonline_v_25549",
+        "https://www.etymonline.com/word/warm#etymonline_v_4837",
+        "https://www.oed.com/dictionary/warm_v?tab=factsheet#14934113",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED23656",
+        "https://bosworthtoller.com/16948"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/warm#etymonline_v_25549",
-      "https://www.etymonline.com/word/warm#etymonline_v_4837",
-      "https://www.oed.com/dictionary/warm_v?tab=factsheet#14934113",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED23656",
-      "https://bosworthtoller.com/16948"
-    ]
+    }
   },
   {
-    "name": "wearmth",
-    "etymology": [
-      {
-        "name": "wearmth",
-        "origin": "Old English"
-      },
-      {
-        "name": "warmth",
-        "origin": "Inglish"
-      },
-      {
-        "name": "ɯaûmþ",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/warmth#etymonline_v_25442",
-      "https://www.oed.com/dictionary/warmth_n?tab=factsheet#14937893",
-      "https://www.etymonline.com/word/warm#etymonline_v_4837",
-      "https://www.etymonline.com/word/-th#etymonline_v_24667"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "wearmth",
+      "etymology": [
+        {
+          "name": "wearmth",
+          "origin": "Old English"
+        },
+        {
+          "name": "warmth",
+          "origin": "Inglish"
+        },
+        {
+          "name": "ɯaûmþ",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/warmth#etymonline_v_25442",
+        "https://www.oed.com/dictionary/warmth_n?tab=factsheet#14937893",
+        "https://www.etymonline.com/word/warm#etymonline_v_4837",
+        "https://www.etymonline.com/word/-th#etymonline_v_24667"
+      ]
+    }
   }
 ]

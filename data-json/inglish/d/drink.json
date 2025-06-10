@@ -1,56 +1,70 @@
 [
   {
-    "name": "to drink",
-    "etymology": [
-      {
-        "name": "drincan",
-        "origin": "Old English"
-      },
-      {
-        "name": "drinken",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to drink",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta drinke -s drânk dronk -ing",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/drink#etymonline_v_15910",
-      "https://www.merriam-webster.com/dictionary/drink#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12654",
-      "https://bosworthtoller.com/7962"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "to drink",
+      "etymology": [
+        {
+          "name": "drincan",
+          "origin": "Old English"
+        },
+        {
+          "name": "drinken",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to drink",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta drinke -s drânk dronk -ing",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/drink#etymonline_v_15910",
+        "https://www.merriam-webster.com/dictionary/drink#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12654",
+        "https://bosworthtoller.com/7962"
+      ]
+    }
   },
   {
-    "name": "drink",
-    "etymology": [
-      {
-        "name": "drinc, drync",
-        "origin": "Old English"
-      },
-      {
-        "name": "drink",
-        "origin": "Middle English"
-      },
-      {
-        "name": "drink, drincs",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/drink#etymonline_v_54119",
-      "https://www.etymonline.com/word/drink#etymonline_v_15910",
-      "https://www.merriam-webster.com/dictionary/drink#dictionary-entry-2",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12651",
-      "https://bosworthtoller.com/7960"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "drink",
+      "etymology": [
+        {
+          "name": "drinc, drync",
+          "origin": "Old English"
+        },
+        {
+          "name": "drink",
+          "origin": "Middle English"
+        },
+        {
+          "name": "drink, drincs",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/drink#etymonline_v_54119",
+        "https://www.etymonline.com/word/drink#etymonline_v_15910",
+        "https://www.merriam-webster.com/dictionary/drink#dictionary-entry-2",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12651",
+        "https://bosworthtoller.com/7960"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

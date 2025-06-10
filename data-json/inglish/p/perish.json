@@ -1,63 +1,81 @@
 [
   {
-    "name": "to perish",
-    "etymology": [
-      {
-        "name": "perire",
-        "origin": "Latin"
-      },
-      {
-        "name": "perir",
-        "origin": "Old French"
-      },
-      {
-        "name": "perishen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to perish",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta pèriçe",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/perish#etymonline_v_12711",
-      "https://www.merriam-webster.com/dictionary/perish",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32991",
-      "https://anglo-norman.net/entry/perir",
-      "https://latin-dictionary.net/definition/29885/pereo-perire-perivi-ii-peritus"
-    ]
+    "verbDetails": {
+      "infinitive": "to perish",
+      "etymology": [
+        "perire",
+        "perir",
+        "perishen",
+        "to perish",
+        "ta pèriçe"
+      ]
+    },
+    "standard": {
+      "name": "to perish",
+      "etymology": [
+        {
+          "name": "perire",
+          "origin": "Latin"
+        },
+        {
+          "name": "perir",
+          "origin": "Old French"
+        },
+        {
+          "name": "perishen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to perish",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta pèriçe",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/perish#etymonline_v_12711",
+        "https://www.merriam-webster.com/dictionary/perish",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32991",
+        "https://anglo-norman.net/entry/perir",
+        "https://latin-dictionary.net/definition/29885/pereo-perire-perivi-ii-peritus"
+      ]
+    }
   },
   {
-    "name": "perishable",
-    "etymology": [
-      {
-        "name": "périssable",
-        "origin": "Old French"
-      },
-      {
-        "name": "perishable",
-        "origin": "Modern English"
-      },
-      {
-        "name": "pèriciable, pèriciabils",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/perishable#etymonline_v_35897",
-      "https://www.merriam-webster.com/dictionary/perishable",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/p%C3%A9rissable/59260"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "perishable",
+      "etymology": [
+        {
+          "name": "périssable",
+          "origin": "Old French"
+        },
+        {
+          "name": "perishable",
+          "origin": "Modern English"
+        },
+        {
+          "name": "pèriciable, pèriciabils",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/perishable#etymonline_v_35897",
+        "https://www.merriam-webster.com/dictionary/perishable",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/p%C3%A9rissable/59260"
+      ]
+    }
   }
 ]

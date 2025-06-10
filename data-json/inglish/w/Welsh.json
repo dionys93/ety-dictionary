@@ -1,53 +1,67 @@
 [
   {
-    "name": "Welsh",
-    "etymology": [
-      {
-        "name": "Wealh, Walh, Wielisc, Wylisc, Welisc, Wælisc",
-        "origin": "Old English"
-      },
-      {
-        "name": "Welsh",
-        "origin": "Middle English"
-      },
-      {
-        "name": "ɯelsh, Ɯelsh",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/Welsh",
-      "https://www.oed.com/dictionary/welsh_adj?tab=factsheet#14609756",
-      "https://bosworthtoller.com/35767",
-      "https://bosworthtoller.com/34770"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "Welsh",
+      "etymology": [
+        {
+          "name": "Wealh, Walh, Wielisc, Wylisc, Welisc, Wælisc",
+          "origin": "Old English"
+        },
+        {
+          "name": "Welsh",
+          "origin": "Middle English"
+        },
+        {
+          "name": "ɯelsh, Ɯelsh",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/Welsh",
+        "https://www.oed.com/dictionary/welsh_adj?tab=factsheet#14609756",
+        "https://bosworthtoller.com/35767",
+        "https://bosworthtoller.com/34770"
+      ]
+    }
   },
   {
-    "name": "Wales",
-    "etymology": [
-      {
-        "name": "Wealh, Walh",
-        "origin": "Old English"
-      },
-      {
-        "name": "Wales",
-        "origin": "Modern English"
-      },
-      {
-        "name": "Ɯehls",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/Wales",
-      "https://bosworthtoller.com/34770"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "Wales",
+      "etymology": [
+        {
+          "name": "Wealh, Walh",
+          "origin": "Old English"
+        },
+        {
+          "name": "Wales",
+          "origin": "Modern English"
+        },
+        {
+          "name": "Ɯehls",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/Wales",
+        "https://bosworthtoller.com/34770"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

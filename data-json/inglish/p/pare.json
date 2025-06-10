@@ -1,57 +1,87 @@
 [
   {
-    "name": "to pare",
-    "etymology": [
-      {
-        "name": "parare",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to pare",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "parer",
-        "origin": "Old French"
-      },
-      {
-        "name": "paren",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to pare",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta pâre -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "parare",
+        "parer",
+        "paren",
+        "to pare",
+        "ta pâre -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to pare",
+      "etymology": [
+        {
+          "name": "parare",
+          "origin": "Latin"
+        },
+        {
+          "name": "parer",
+          "origin": "Old French"
+        },
+        {
+          "name": "paren",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to pare",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta pâre -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/pare",
+        "https://www.oed.com/dictionary/pare_v1?tab=factsheet#31943019",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32424",
+        "https://www.anglo-norman.net/entry/parer_1",
+        "https://latin-dictionary.net/definition/29355/paro-parare-paravi-paratus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/pare",
-      "https://www.oed.com/dictionary/pare_v1?tab=factsheet#31943019",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32424",
-      "https://www.anglo-norman.net/entry/parer_1",
-      "https://latin-dictionary.net/definition/29355/paro-parare-paravi-paratus"
-    ]
+    }
   },
   {
-    "name": "pare",
-    "etymology": [
-      {
-        "name": "pare",
-        "origin": "Modern English"
-      },
-      {
-        "name": "pâre, pârs",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.oed.com/dictionary/pare_n1?tab=factsheet#31942767",
-      "https://www.oed.com/dictionary/pare_n2?tab=factsheet#31942900"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "pare",
+      "etymology": [
+        {
+          "name": "pare",
+          "origin": "Modern English"
+        },
+        {
+          "name": "pâre, pârs",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.oed.com/dictionary/pare_n1?tab=factsheet#31942767",
+        "https://www.oed.com/dictionary/pare_n2?tab=factsheet#31942900"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

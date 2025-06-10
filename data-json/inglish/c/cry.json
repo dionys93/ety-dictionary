@@ -1,62 +1,93 @@
 [
   {
-    "name": "to cry",
-    "etymology": [
-      {
-        "name": "quiritare",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to cry",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "hing"
       },
-      {
-        "name": "critare",
-        "origin": "Vulgar Latin"
-      },
-      {
-        "name": "crier",
-        "origin": "Old French"
-      },
-      {
-        "name": "crien",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to cry",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta crîe -s -d -hing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "quiritare",
+        "critare",
+        "crier",
+        "crien",
+        "to cry",
+        "ta crîe -s -d -hing"
+      ]
+    },
+    "standard": {
+      "name": "to cry",
+      "etymology": [
+        {
+          "name": "quiritare",
+          "origin": "Latin"
+        },
+        {
+          "name": "critare",
+          "origin": "Vulgar Latin"
+        },
+        {
+          "name": "crier",
+          "origin": "Old French"
+        },
+        {
+          "name": "crien",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to cry",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta crîe -s -d -hing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cry#etymonline_v_420",
+        "https://www.merriam-webster.com/dictionary/cry#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10316",
+        "https://anglo-norman.net/entry/crier_1",
+        "https://latin-dictionary.net/definition/32718/quiritor-quiritari"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "hing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cry#etymonline_v_420",
-      "https://www.merriam-webster.com/dictionary/cry#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10316",
-      "https://anglo-norman.net/entry/crier_1",
-      "https://latin-dictionary.net/definition/32718/quiritor-quiritari"
-    ]
+    }
   },
   {
-    "name": "cry",
-    "etymology": [
-      {
-        "name": "cry",
-        "origin": "Modern English"
-      },
-      {
-        "name": "crîe, crîs",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cry#etymonline_v_46728",
-      "https://www.etymonline.com/word/cry#etymonline_v_420",
-      "https://www.merriam-webster.com/dictionary/cry#dictionary-entry-2"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "cry",
+      "etymology": [
+        {
+          "name": "cry",
+          "origin": "Modern English"
+        },
+        {
+          "name": "crîe, crîs",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cry#etymonline_v_46728",
+        "https://www.etymonline.com/word/cry#etymonline_v_420",
+        "https://www.merriam-webster.com/dictionary/cry#dictionary-entry-2"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

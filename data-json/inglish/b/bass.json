@@ -1,97 +1,124 @@
 [
   {
-    "name": "bass  (m n)",
-    "etymology": [
-      {
-        "name": "bærs",
-        "origin": "Old English"
-      },
-      {
-        "name": "bas",
-        "origin": "Middle English"
-      },
-      {
-        "name": "bass  (m n)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bass#etymonline_v_5296",
-      "https://www.merriam-webster.com/dictionary/bass#dictionary-entry-1",
-      "https://www.oed.com/dictionary/bass_n1?tab=factsheet#26657206",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3719",
-      "https://bosworthtoller.com/2915"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "bass  (m n)",
+      "etymology": [
+        {
+          "name": "bærs",
+          "origin": "Old English"
+        },
+        {
+          "name": "bas",
+          "origin": "Middle English"
+        },
+        {
+          "name": "bass  (m n)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bass#etymonline_v_5296",
+        "https://www.merriam-webster.com/dictionary/bass#dictionary-entry-1",
+        "https://www.oed.com/dictionary/bass_n1?tab=factsheet#26657206",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3719",
+        "https://bosworthtoller.com/2915"
+      ]
+    }
   },
   {
-    "name": "base",
-    "etymology": [
-      {
-        "name": "bassus",
-        "origin": "Latin"
-      },
-      {
-        "name": "bas",
-        "origin": "Old French"
-      },
-      {
-        "name": "base",
-        "origin": "Modern English"
-      },
-      {
-        "name": "bâss -er -est",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "base",
+      "etymology": [
+        {
+          "name": "bassus",
+          "origin": "Latin"
+        },
+        {
+          "name": "bas",
+          "origin": "Old French"
+        },
+        {
+          "name": "base",
+          "origin": "Modern English"
+        },
+        {
+          "name": "bâss -er -est",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/base#etymonline_v_5276",
+        "https://www.merriam-webster.com/dictionary/base#dictionary-entry-3",
+        "https://www.merriam-webster.com/dictionary/base#dictionary-entry-4",
+        "https://www.oed.com/dictionary/bass_adj?tab=factsheet#26286615",
+        "https://www.anglo-norman.net/entry/bas_2",
+        "https://latin-dictionary.net/definition/6195/bassus-bassa-bassum"
+      ],
+      "degrees": {
+        "positive": "ss",
+        "comparative": "er",
+        "superlative": "est"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/base#etymonline_v_5276",
-      "https://www.merriam-webster.com/dictionary/base#dictionary-entry-3",
-      "https://www.merriam-webster.com/dictionary/base#dictionary-entry-4",
-      "https://www.oed.com/dictionary/bass_adj?tab=factsheet#26286615",
-      "https://www.anglo-norman.net/entry/bas_2",
-      "https://latin-dictionary.net/definition/6195/bassus-bassa-bassum"
-    ]
+    }
   },
   {
-    "name": "bass",
-    "etymology": [
-      {
-        "name": "bassus",
-        "origin": "Latin"
-      },
-      {
-        "name": "basso",
-        "origin": "Italian"
-      },
-      {
-        "name": "bas",
-        "origin": "Middle English"
-      },
-      {
-        "name": "bass",
-        "origin": "Modern English"
-      },
-      {
-        "name": "bâss -es",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "noun"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "bass",
+      "etymology": [
+        {
+          "name": "bassus",
+          "origin": "Latin"
+        },
+        {
+          "name": "basso",
+          "origin": "Italian"
+        },
+        {
+          "name": "bas",
+          "origin": "Middle English"
+        },
+        {
+          "name": "bass",
+          "origin": "Modern English"
+        },
+        {
+          "name": "bâss -es",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bass#etymonline_v_5295",
+        "https://www.etymonline.com/word/bass#etymonline_v_52545",
+        "https://www.merriam-webster.com/dictionary/bass#dictionary-entry-2",
+        "https://www.merriam-webster.com/dictionary/bass#dictionary-entry-3",
+        "https://www.oed.com/dictionary/bass_adj?tab=factsheet#26286615",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3722",
+        "https://www.collinsdictionary.com/us/dictionary/italian-english/basso",
+        "https://latin-dictionary.net/search/latin/bassus"
+      ],
+      "degrees": {
+        "positive": "ss",
+        "comparative": "es"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bass#etymonline_v_5295",
-      "https://www.etymonline.com/word/bass#etymonline_v_52545",
-      "https://www.merriam-webster.com/dictionary/bass#dictionary-entry-2",
-      "https://www.merriam-webster.com/dictionary/bass#dictionary-entry-3",
-      "https://www.oed.com/dictionary/bass_adj?tab=factsheet#26286615",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3722",
-      "https://www.collinsdictionary.com/us/dictionary/italian-english/basso",
-      "https://latin-dictionary.net/search/latin/bassus"
-    ]
+    }
   }
 ]

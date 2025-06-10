@@ -1,86 +1,126 @@
 [
   {
-    "name": "to regress",
-    "etymology": [
-      {
-        "name": "re + gradi, regredi, regressus",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to regress",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to regress",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta regresse -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "re + gradi, regredi, regressus",
+        "to regress",
+        "ta regresse -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to regress",
+      "etymology": [
+        {
+          "name": "re + gradi, regredi, regressus",
+          "origin": "Latin"
+        },
+        {
+          "name": "to regress",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta regresse -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/regress",
+        "https://www.oed.com/dictionary/regress_v?tab=factsheet#26222776",
+        "https://latin-dictionary.net/definition/33178/regressus-regressus",
+        "https://latin-dictionary.net/definition/33176/regredior-regredi-regressus",
+        "https://latin-dictionary.net/definition/21606/gradior-gradi-gressus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/regress",
-      "https://www.oed.com/dictionary/regress_v?tab=factsheet#26222776",
-      "https://latin-dictionary.net/definition/33178/regressus-regressus",
-      "https://latin-dictionary.net/definition/33176/regredior-regredi-regressus",
-      "https://latin-dictionary.net/definition/21606/gradior-gradi-gressus"
-    ]
+    }
   },
   {
-    "name": "regress",
-    "etymology": [
-      {
-        "name": "regress",
-        "origin": "Modern English"
-      },
-      {
-        "name": "regresse -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/regress",
-      "https://www.oed.com/dictionary/regress_n?tab=factsheet#26222117",
-      "https://latin-dictionary.net/definition/33178/regressus-regressus",
-      "https://latin-dictionary.net/definition/33176/regredior-regredi-regressus",
-      "https://latin-dictionary.net/definition/21606/gradior-gradi-gressus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "regress",
+      "etymology": [
+        {
+          "name": "regress",
+          "origin": "Modern English"
+        },
+        {
+          "name": "regresse -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/regress",
+        "https://www.oed.com/dictionary/regress_n?tab=factsheet#26222117",
+        "https://latin-dictionary.net/definition/33178/regressus-regressus",
+        "https://latin-dictionary.net/definition/33176/regredior-regredi-regressus",
+        "https://latin-dictionary.net/definition/21606/gradior-gradi-gressus"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "regression  -s (f n)",
-    "etymology": [
-      {
-        "name": "regressio, regressionem",
-        "origin": "Latin"
-      },
-      {
-        "name": "regression  -s (f n)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/regression",
-      "https://www.oed.com/dictionary/regression_n?tab=factsheet#26223146"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "regression  -s (f n)",
+      "etymology": [
+        {
+          "name": "regressio, regressionem",
+          "origin": "Latin"
+        },
+        {
+          "name": "regression  -s (f n)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/regression",
+        "https://www.oed.com/dictionary/regression_n?tab=factsheet#26223146"
+      ]
+    }
   },
   {
-    "name": "regressive",
-    "etymology": [
-      {
-        "name": "regressive",
-        "origin": "Modern English"
-      },
-      {
-        "name": "regrèssif -vly",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/regressive",
-      "https://www.oed.com/dictionary/regressive_adj?tab=factsheet#26224100"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "regressive",
+      "etymology": [
+        {
+          "name": "regressive",
+          "origin": "Modern English"
+        },
+        {
+          "name": "regrèssif -vly",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/regressive",
+        "https://www.oed.com/dictionary/regressive_adj?tab=factsheet#26224100"
+      ]
+    }
   }
 ]

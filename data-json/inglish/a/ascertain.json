@@ -1,77 +1,102 @@
 [
   {
-    "name": "to ascertain",
-    "etymology": [
-      {
-        "name": "a + certain, acertener",
-        "origin": "Old French"
-      },
-      {
-        "name": "acerteiner",
-        "origin": "Inglish"
-      },
-      {
-        "name": "acertainen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to ascertain",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta ascerteine -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/ascertain#etymonline_v_17914",
-      "https://www.merriam-webster.com/dictionary/ascertain",
-      "https://www.oed.com/dictionary/ascertain_v?tab=factsheet#37944195",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED330",
-      "https://www.anglo-norman.net/entry/acerteiner"
-    ]
+    "verbDetails": {
+      "infinitive": "to ascertain",
+      "etymology": [
+        "a + certain, acertener",
+        "acerteiner",
+        "acertainen",
+        "to ascertain",
+        "ta ascerteine -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to ascertain",
+      "etymology": [
+        {
+          "name": "a + certain, acertener",
+          "origin": "Old French"
+        },
+        {
+          "name": "acerteiner",
+          "origin": "Inglish"
+        },
+        {
+          "name": "acertainen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to ascertain",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta ascerteine -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/ascertain#etymonline_v_17914",
+        "https://www.merriam-webster.com/dictionary/ascertain",
+        "https://www.oed.com/dictionary/ascertain_v?tab=factsheet#37944195",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED330",
+        "https://www.anglo-norman.net/entry/acerteiner"
+      ]
+    }
   },
   {
-    "name": "ascertainable",
-    "etymology": [
-      {
-        "name": "ascertainable",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ascerténable",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.collinsdictionary.com/us/dictionary/english/ascertain",
-      "https://www.oed.com/dictionary/ascertainable_adj?tab=factsheet#37946557"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "ascertainable",
+      "etymology": [
+        {
+          "name": "ascertainable",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ascerténable",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.collinsdictionary.com/us/dictionary/english/ascertain",
+        "https://www.oed.com/dictionary/ascertainable_adj?tab=factsheet#37946557"
+      ]
+    }
   },
   {
-    "name": "ascertainment",
-    "etymology": [
-      {
-        "name": "ascertainment",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ascerténment",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.collinsdictionary.com/us/dictionary/english/ascertain",
-      "https://www.oed.com/dictionary/ascertainment_n?tab=factsheet#37961202"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "ascertainment",
+      "etymology": [
+        {
+          "name": "ascertainment",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ascerténment",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.collinsdictionary.com/us/dictionary/english/ascertain",
+        "https://www.oed.com/dictionary/ascertainment_n?tab=factsheet#37961202"
+      ],
+      "number": "singular"
+    }
   }
 ]

@@ -1,43 +1,68 @@
 [
   {
-    "name": "spoor",
-    "etymology": [
-      {
-        "name": "spoor",
-        "origin": "Inglish"
-      },
-      {
-        "name": "spuor -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/spoor#etymonline_v_21877",
-      "https://www.merriam-webster.com/dictionary/spoor#dictionary-entry-1",
-      "https://www.oed.com/dictionary/spoor_n1?tab=factsheet#21240115"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "spoor",
+      "etymology": [
+        {
+          "name": "spoor",
+          "origin": "Inglish"
+        },
+        {
+          "name": "spuor -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/spoor#etymonline_v_21877",
+        "https://www.merriam-webster.com/dictionary/spoor#dictionary-entry-1",
+        "https://www.oed.com/dictionary/spoor_n1?tab=factsheet#21240115"
+      ]
+    }
   },
   {
-    "name": "to spoor",
-    "etymology": [
-      {
-        "name": "to spoor",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to spoor",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta spuore -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to spoor",
+        "ta spuore -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to spoor",
+      "etymology": [
+        {
+          "name": "to spoor",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta spuore -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/spoor#dictionary-entry-2",
+        "https://www.oed.com/dictionary/spoor_v?tab=factsheet#21240349"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/spoor#dictionary-entry-2",
-      "https://www.oed.com/dictionary/spoor_v?tab=factsheet#21240349"
-    ]
+    }
   }
 ]

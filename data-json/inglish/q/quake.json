@@ -1,52 +1,81 @@
 [
   {
-    "name": "to quake",
-    "etymology": [
-      {
-        "name": "cweccan, cwacian",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to quake",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "quaken",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to quake",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta quâke -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "cweccan, cwacian",
+        "quaken",
+        "to quake",
+        "ta quâke -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to quake",
+      "etymology": [
+        {
+          "name": "cweccan, cwacian",
+          "origin": "Old English"
+        },
+        {
+          "name": "quaken",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to quake",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta quâke -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/quake",
+        "https://www.oed.com/dictionary/quake_v1?tab=factsheet#27347175",
+        "https://bosworthtoller.com/6882",
+        "https://bosworthtoller.com/6917"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/quake",
-      "https://www.oed.com/dictionary/quake_v1?tab=factsheet#27347175",
-      "https://bosworthtoller.com/6882",
-      "https://bosworthtoller.com/6917"
-    ]
+    }
   },
   {
-    "name": "quake",
-    "etymology": [
-      {
-        "name": "quake",
-        "origin": "Modern English"
-      },
-      {
-        "name": "quâke, quaix",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/quake",
-      "https://www.oed.com/dictionary/quake_n?tab=factsheet#27346954"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "quake",
+      "etymology": [
+        {
+          "name": "quake",
+          "origin": "Modern English"
+        },
+        {
+          "name": "quâke, quaix",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/quake",
+        "https://www.oed.com/dictionary/quake_n?tab=factsheet#27346954"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   }
 ]

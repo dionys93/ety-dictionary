@@ -1,55 +1,82 @@
 [
   {
-    "name": "shower",
-    "etymology": [
-      {
-        "name": "scur, scura",
-        "origin": "Old English"
-      },
-      {
-        "name": "shour",
-        "origin": "Middle English"
-      },
-      {
-        "name": "shower",
-        "origin": "Modern English"
-      },
-      {
-        "name": "shaor -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/shower#etymonline_v_23442",
-      "https://www.merriam-webster.com/dictionary/shower#dictionary-entry-1",
-      "https://www.oed.com/dictionary/shower_n1?tab=factsheet#23058314",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40075",
-      "https://bosworthtoller.com/27080"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "shower",
+      "etymology": [
+        {
+          "name": "scur, scura",
+          "origin": "Old English"
+        },
+        {
+          "name": "shour",
+          "origin": "Middle English"
+        },
+        {
+          "name": "shower",
+          "origin": "Modern English"
+        },
+        {
+          "name": "shaor -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/shower#etymonline_v_23442",
+        "https://www.merriam-webster.com/dictionary/shower#dictionary-entry-1",
+        "https://www.oed.com/dictionary/shower_n1?tab=factsheet#23058314",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40075",
+        "https://bosworthtoller.com/27080"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to shower",
-    "etymology": [
-      {
-        "name": "to shower",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to shower",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta shaore -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to shower",
+        "ta shaore -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to shower",
+      "etymology": [
+        {
+          "name": "to shower",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta shaore -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/shower#etymonline_v_43462",
+        "https://www.etymonline.com/word/shower#etymonline_v_23442",
+        "https://www.merriam-webster.com/dictionary/shower#dictionary-entry-2",
+        "https://www.oed.com/dictionary/shower_v?tab=factsheet#23060316"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/shower#etymonline_v_43462",
-      "https://www.etymonline.com/word/shower#etymonline_v_23442",
-      "https://www.merriam-webster.com/dictionary/shower#dictionary-entry-2",
-      "https://www.oed.com/dictionary/shower_v?tab=factsheet#23060316"
-    ]
+    }
   }
 ]

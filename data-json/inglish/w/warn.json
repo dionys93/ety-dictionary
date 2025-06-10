@@ -1,34 +1,55 @@
 [
   {
-    "name": "to warn",
-    "etymology": [
-      {
-        "name": "warnian",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to warn",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "warnen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to warn",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta ɯaûne -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "warnian",
+        "warnen",
+        "to warn",
+        "ta ɯaûne -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to warn",
+      "etymology": [
+        {
+          "name": "warnian",
+          "origin": "Old English"
+        },
+        {
+          "name": "warnen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to warn",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta ɯaûne -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/warn#etymonline_v_4838",
+        "https://www.oed.com/dictionary/warn_v1?tab=factsheet#14939173",
+        "https://www.merriam-webster.com/dictionary/warn",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51804",
+        "https://bosworthtoller.com/34703",
+        "https://bosworthtoller.com/034697"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/warn#etymonline_v_4838",
-      "https://www.oed.com/dictionary/warn_v1?tab=factsheet#14939173",
-      "https://www.merriam-webster.com/dictionary/warn",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51804",
-      "https://bosworthtoller.com/34703",
-      "https://bosworthtoller.com/034697"
-    ]
+    }
   }
 ]

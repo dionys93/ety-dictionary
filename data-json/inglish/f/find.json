@@ -1,55 +1,80 @@
 [
   {
-    "name": "to find",
-    "etymology": [
-      {
-        "name": "findan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to find",
+      "conjugations": {
+        "thirdPerson": "s"
       },
-      {
-        "name": "finden",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to find",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta fînd -s fáund -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "findan",
+        "finden",
+        "to find",
+        "ta fînd -s fáund -ing"
+      ]
+    },
+    "standard": {
+      "name": "to find",
+      "etymology": [
+        {
+          "name": "findan",
+          "origin": "Old English"
+        },
+        {
+          "name": "finden",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to find",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta fînd -s fáund -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/find#etymonline_v_5952",
+        "https://www.merriam-webster.com/dictionary/find#dictionary-entry-1",
+        "https://www.oed.com/dictionary/find_v?tab=factsheet#4184741",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16004",
+        "https://bosworthtoller.com/10717"
+      ],
+      "conjugations": {
+        "thirdPerson": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/find#etymonline_v_5952",
-      "https://www.merriam-webster.com/dictionary/find#dictionary-entry-1",
-      "https://www.oed.com/dictionary/find_v?tab=factsheet#4184741",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16004",
-      "https://bosworthtoller.com/10717"
-    ]
+    }
   },
   {
-    "name": "find",
-    "etymology": [
-      {
-        "name": "find",
-        "origin": "Modern English"
-      },
-      {
-        "name": "fînd -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/find#etymonline_v_46071",
-      "https://www.etymonline.com/word/find#etymonline_v_5952",
-      "https://www.merriam-webster.com/dictionary/find#dictionary-entry-2",
-      "https://www.oed.com/dictionary/find_n?tab=factsheet#4184506"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "find",
+      "etymology": [
+        {
+          "name": "find",
+          "origin": "Modern English"
+        },
+        {
+          "name": "fînd -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/find#etymonline_v_46071",
+        "https://www.etymonline.com/word/find#etymonline_v_5952",
+        "https://www.merriam-webster.com/dictionary/find#dictionary-entry-2",
+        "https://www.oed.com/dictionary/find_n?tab=factsheet#4184506"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

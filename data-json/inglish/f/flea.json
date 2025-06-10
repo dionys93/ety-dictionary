@@ -1,25 +1,33 @@
 [
   {
-    "name": "flea",
-    "etymology": [
-      {
-        "name": "flea",
-        "origin": "Old English"
-      },
-      {
-        "name": "flie, flís",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/flea#etymonline_v_8865",
-      "https://www.merriam-webster.com/dictionary/flea",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16215",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16328",
-      "https://bosworthtoller.com/10885"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "flea",
+      "etymology": [
+        {
+          "name": "flea",
+          "origin": "Old English"
+        },
+        {
+          "name": "flie, flís",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/flea#etymonline_v_8865",
+        "https://www.merriam-webster.com/dictionary/flea",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16215",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16328",
+        "https://bosworthtoller.com/10885"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

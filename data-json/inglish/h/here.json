@@ -1,27 +1,37 @@
 [
   {
-    "name": "here",
-    "etymology": [
-      {
-        "name": "her",
-        "origin": "Old English"
-      },
-      {
-        "name": "here",
-        "origin": "Modern English"
-      },
-      {
-        "name": "hiere",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adverb"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/here",
-      "https://www.oed.com/dictionary/here_adv?tab=factsheet#1752236",
-      "https://bosworthtoller.com/18849"
-    ]
+    "verbDetails": {
+      "infinitive": "to here",
+      "etymology": [
+        "her",
+        "here",
+        "hiere"
+      ]
+    },
+    "standard": {
+      "name": "to here",
+      "etymology": [
+        {
+          "name": "her",
+          "origin": "Old English"
+        },
+        {
+          "name": "here",
+          "origin": "Modern English"
+        },
+        {
+          "name": "hiere",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adverb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/here",
+        "https://www.oed.com/dictionary/here_adv?tab=factsheet#1752236",
+        "https://bosworthtoller.com/18849"
+      ]
+    }
   }
 ]

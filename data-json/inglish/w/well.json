@@ -1,107 +1,137 @@
 [
   {
-    "name": "well",
-    "etymology": [
-      {
-        "name": "wel",
-        "origin": "Old English"
-      },
-      {
-        "name": "well",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ɯel",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adverb",
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/well",
-      "https://www.oed.com/dictionary/well_adv?tab=factsheet#14879297",
-      "https://www.oed.com/dictionary/well_adj?tab=pronunciation#14875247"
-    ]
+    "verbDetails": {
+      "infinitive": "to well",
+      "etymology": [
+        "wel",
+        "well",
+        "ɯel"
+      ]
+    },
+    "standard": {
+      "name": "to well",
+      "etymology": [
+        {
+          "name": "wel",
+          "origin": "Old English"
+        },
+        {
+          "name": "well",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ɯel",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adverb",
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/well",
+        "https://www.oed.com/dictionary/well_adv?tab=factsheet#14879297",
+        "https://www.oed.com/dictionary/well_adj?tab=pronunciation#14875247"
+      ]
+    }
   },
   {
-    "name": "well-read",
-    "etymology": [
-      {
-        "name": "well-read",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ɯell-rèd",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/well-read#etymonline_v_25580",
-      "https://www.etymonline.com/word/read#etymonline_v_47861",
-      "https://www.merriam-webster.com/dictionary/read#dictionary-entry-2"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "well-read",
+      "etymology": [
+        {
+          "name": "well-read",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ɯell-rèd",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/well-read#etymonline_v_25580",
+        "https://www.etymonline.com/word/read#etymonline_v_47861",
+        "https://www.merriam-webster.com/dictionary/read#dictionary-entry-2"
+      ]
+    }
   },
   {
-    "name": "to well",
-    "etymology": [
-      {
-        "name": "wiellan, weallan",
-        "origin": "Old English"
-      },
-      {
-        "name": "wellen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to well",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta ɯelle -s -d -ing",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/well",
-      "https://www.oed.com/dictionary/well_v1?tab=factsheet#14877892",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52137/",
-      "https://bosworthtoller.com/2676",
-      "https://bosworthtoller.com/2771"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "to well",
+      "etymology": [
+        {
+          "name": "wiellan, weallan",
+          "origin": "Old English"
+        },
+        {
+          "name": "wellen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to well",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta ɯelle -s -d -ing",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/well",
+        "https://www.oed.com/dictionary/well_v1?tab=factsheet#14877892",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52137/",
+        "https://bosworthtoller.com/2676",
+        "https://bosworthtoller.com/2771"
+      ]
+    }
   },
   {
-    "name": "well",
-    "etymology": [
-      {
-        "name": "wille",
-        "origin": "Old English"
-      },
-      {
-        "name": "welle",
-        "origin": "Middle English"
-      },
-      {
-        "name": "well",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ɯell -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/well",
-      "https://www.oed.com/dictionary/well_n1?tab=factsheet#14871209",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52135/",
-      "https://bosworthtoller.com/35775"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "well",
+      "etymology": [
+        {
+          "name": "wille",
+          "origin": "Old English"
+        },
+        {
+          "name": "welle",
+          "origin": "Middle English"
+        },
+        {
+          "name": "well",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ɯell -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/well",
+        "https://www.oed.com/dictionary/well_n1?tab=factsheet#14871209",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52135/",
+        "https://bosworthtoller.com/35775"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

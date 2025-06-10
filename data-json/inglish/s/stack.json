@@ -1,58 +1,84 @@
 [
   {
-    "name": "stack",
-    "etymology": [
-      {
-        "name": "stakkr",
-        "origin": "Old Norse"
-      },
-      {
-        "name": "stak",
-        "origin": "Middle English"
-      },
-      {
-        "name": "stack",
-        "origin": "Modern English"
-      },
-      {
-        "name": "stac -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/stack#etymonline_v_21961",
-      "https://www.oed.com/dictionary/stack_n?tab=factsheet#21118830",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42569",
-      "https://old-norse.net/html/s.php#stakkr"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "stack",
+      "etymology": [
+        {
+          "name": "stakkr",
+          "origin": "Old Norse"
+        },
+        {
+          "name": "stak",
+          "origin": "Middle English"
+        },
+        {
+          "name": "stack",
+          "origin": "Modern English"
+        },
+        {
+          "name": "stac -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/stack#etymonline_v_21961",
+        "https://www.oed.com/dictionary/stack_n?tab=factsheet#21118830",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42569",
+        "https://old-norse.net/html/s.php#stakkr"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to stack",
-    "etymology": [
-      {
-        "name": "stakken",
-        "origin": "Middle English"
+    "verbDetails": {
+      "infinitive": "to stack",
+      "conjugations": {
+        "thirdPerson": "ed",
+        "pastTense": "ing"
       },
-      {
-        "name": "to stack",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta stacq stacs -ed -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "stakken",
+        "to stack",
+        "ta stacq stacs -ed -ing"
+      ]
+    },
+    "standard": {
+      "name": "to stack",
+      "etymology": [
+        {
+          "name": "stakken",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to stack",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta stacq stacs -ed -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/stack#etymonline_v_41953",
+        "https://www.etymonline.com/word/stack#etymonline_v_21961",
+        "https://www.oed.com/dictionary/stack_v1?tab=factsheet#21120340",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42575"
+      ],
+      "conjugations": {
+        "thirdPerson": "ed",
+        "pastTense": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/stack#etymonline_v_41953",
-      "https://www.etymonline.com/word/stack#etymonline_v_21961",
-      "https://www.oed.com/dictionary/stack_v1?tab=factsheet#21120340",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42575"
-    ]
+    }
   }
 ]

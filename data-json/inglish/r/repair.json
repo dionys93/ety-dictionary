@@ -1,220 +1,314 @@
 [
   {
-    "name": "to repair",
-    "etymology": [
-      {
-        "name": "re + parare, reparare",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to repair",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "reparer",
-        "origin": "Old French"
-      },
-      {
-        "name": "reparen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to repair",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta repâre -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "re + parare, reparare",
+        "reparer",
+        "reparen",
+        "to repair",
+        "ta repâre -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to repair",
+      "etymology": [
+        {
+          "name": "re + parare, reparare",
+          "origin": "Latin"
+        },
+        {
+          "name": "reparer",
+          "origin": "Old French"
+        },
+        {
+          "name": "reparen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to repair",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta repâre -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/repair#etymonline_v_12814",
+        "https://www.merriam-webster.com/dictionary/repair",
+        "https://www.collinsdictionary.com/us/dictionary/english/repair",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36858",
+        "https://www.anglo-norman.net/entry/reparer_1",
+        "https://latin-dictionary.net/definition/33316/reparo-reparare-reparavi-reparatus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/repair#etymonline_v_12814",
-      "https://www.merriam-webster.com/dictionary/repair",
-      "https://www.collinsdictionary.com/us/dictionary/english/repair",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36858",
-      "https://www.anglo-norman.net/entry/reparer_1",
-      "https://latin-dictionary.net/definition/33316/reparo-reparare-reparavi-reparatus"
-    ]
+    }
   },
   {
-    "name": "repair",
-    "etymology": [
-      {
-        "name": "repaire",
-        "origin": "Middle English"
-      },
-      {
-        "name": "repair",
-        "origin": "Modern English"
-      },
-      {
-        "name": "repâre, repârs",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/repair#etymonline_v_48036",
-      "https://www.etymonline.com/word/repair#etymonline_v_12814"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "repair",
+      "etymology": [
+        {
+          "name": "repaire",
+          "origin": "Middle English"
+        },
+        {
+          "name": "repair",
+          "origin": "Modern English"
+        },
+        {
+          "name": "repâre, repârs",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/repair#etymonline_v_48036",
+        "https://www.etymonline.com/word/repair#etymonline_v_12814"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "reparation",
-    "etymology": [
-      {
-        "name": "reparare, reparationem",
-        "origin": "Latin"
-      },
-      {
-        "name": "reparacion",
-        "origin": "Old French"
-      },
-      {
-        "name": "reparacioun",
-        "origin": "Middle English"
-      },
-      {
-        "name": "reparation",
-        "origin": "Modern English"
-      },
-      {
-        "name": "reparâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/reparation#etymonline_v_12817",
-      "https://latin-dictionary.net/definition/33314/reparatio-reparationis",
-      "https://latin-dictionary.net/definition/33316/reparo-reparare-reparavi-reparatus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "reparation",
+      "etymology": [
+        {
+          "name": "reparare, reparationem",
+          "origin": "Latin"
+        },
+        {
+          "name": "reparacion",
+          "origin": "Old French"
+        },
+        {
+          "name": "reparacioun",
+          "origin": "Middle English"
+        },
+        {
+          "name": "reparation",
+          "origin": "Modern English"
+        },
+        {
+          "name": "reparâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/reparation#etymonline_v_12817",
+        "https://latin-dictionary.net/definition/33314/reparatio-reparationis",
+        "https://latin-dictionary.net/definition/33316/reparo-reparare-reparavi-reparatus"
+      ],
+      "number": "plural"
+    }
   },
   {
-    "name": "repairable",
-    "etymology": [
-      {
-        "name": "repairable",
-        "origin": "Modern English"
-      },
-      {
-        "name": "repârable -y",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "repairable",
+      "etymology": [
+        {
+          "name": "repairable",
+          "origin": "Modern English"
+        },
+        {
+          "name": "repârable -y",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/repairable#etymonline_v_47951",
+        "https://www.etymonline.com/word/repair#etymonline_v_12814"
+      ],
+      "degrees": {
+        "positive": "rable",
+        "comparative": "y"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/repairable#etymonline_v_47951",
-      "https://www.etymonline.com/word/repair#etymonline_v_12814"
-    ]
+    }
   },
   {
-    "name": "reparable",
-    "etymology": [
-      {
-        "name": "reparare, reparabilis",
-        "origin": "Latin"
-      },
-      {
-        "name": "reparable",
-        "origin": "French"
-      },
-      {
-        "name": "reprable -y",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "reparable",
+      "etymology": [
+        {
+          "name": "reparare, reparabilis",
+          "origin": "Latin"
+        },
+        {
+          "name": "reparable",
+          "origin": "French"
+        },
+        {
+          "name": "reprable -y",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/reparable#etymonline_v_12816",
+        "https://www.etymonline.com/word/repair#etymonline_v_12814",
+        "https://www.merriam-webster.com/dictionary/reparable",
+        "https://latin-dictionary.net/definition/33313/reparabilis-reparabilis-reparabile",
+        "https://latin-dictionary.net/definition/33316/reparo-reparare-reparavi-reparatus"
+      ],
+      "degrees": {
+        "positive": "reprable",
+        "comparative": "y"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/reparable#etymonline_v_12816",
-      "https://www.etymonline.com/word/repair#etymonline_v_12814",
-      "https://www.merriam-webster.com/dictionary/reparable",
-      "https://latin-dictionary.net/definition/33313/reparabilis-reparabilis-reparabile",
-      "https://latin-dictionary.net/definition/33316/reparo-reparare-reparavi-reparatus"
-    ]
+    }
   },
   {
-    "name": "reparative",
-    "etymology": [
-      {
-        "name": "reparare, reparationem",
-        "origin": "Latin"
-      },
-      {
-        "name": "reparacion",
-        "origin": "Old French"
-      },
-      {
-        "name": "reparacioun",
-        "origin": "Middle English"
-      },
-      {
-        "name": "reparative",
-        "origin": "Modern English"
-      },
-      {
-        "name": "repâratif -vly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "reparative",
+      "etymology": [
+        {
+          "name": "reparare, reparationem",
+          "origin": "Latin"
+        },
+        {
+          "name": "reparacion",
+          "origin": "Old French"
+        },
+        {
+          "name": "reparacioun",
+          "origin": "Middle English"
+        },
+        {
+          "name": "reparative",
+          "origin": "Modern English"
+        },
+        {
+          "name": "repâratif -vly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/reparative#etymonline_v_55125",
+        "https://www.etymonline.com/word/repair#etymonline_v_12814",
+        "https://www.merriam-webster.com/dictionary/reparative",
+        "https://latin-dictionary.net/definition/33314/reparatio-reparationis",
+        "https://latin-dictionary.net/definition/33316/reparo-reparare-reparavi-reparatus"
+      ],
+      "degrees": {
+        "positive": "ratif",
+        "comparative": "vly"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/reparative#etymonline_v_55125",
-      "https://www.etymonline.com/word/repair#etymonline_v_12814",
-      "https://www.merriam-webster.com/dictionary/reparative",
-      "https://latin-dictionary.net/definition/33314/reparatio-reparationis",
-      "https://latin-dictionary.net/definition/33316/reparo-reparare-reparavi-reparatus"
-    ]
+    }
   },
   {
-    "name": "repairen",
-    "etymology": [
-      {
-        "name": "repatriare",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "repairen",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "repadrer, repairier, repairer",
-        "origin": "Old French"
-      },
-      {
-        "name": "repairen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "ta repaire -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "repatriare",
+        "repadrer, repairier, repairer",
+        "repairen",
+        "ta repaire -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "repairen",
+      "etymology": [
+        {
+          "name": "repatriare",
+          "origin": "Latin"
+        },
+        {
+          "name": "repadrer, repairier, repairer",
+          "origin": "Old French"
+        },
+        {
+          "name": "repairen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "ta repaire -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/repair#etymonline_v_12815",
+        "https://www.merriam-webster.com/dictionary/repair",
+        "https://www.collinsdictionary.com/us/dictionary/english/repair",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36845",
+        "https://www.anglo-norman.net/entry/repairer_1"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/repair#etymonline_v_12815",
-      "https://www.merriam-webster.com/dictionary/repair",
-      "https://www.collinsdictionary.com/us/dictionary/english/repair",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36845",
-      "https://www.anglo-norman.net/entry/repairer_1"
-    ]
+    }
   },
   {
-    "name": "repair  -s (f n)",
-    "etymology": [
-      {
-        "name": "repair  -s (f n)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/repair#etymonline_v_55126"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "repair  -s (f n)",
+      "etymology": [
+        {
+          "name": "repair  -s (f n)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/repair#etymonline_v_55126"
+      ]
+    }
   }
 ]

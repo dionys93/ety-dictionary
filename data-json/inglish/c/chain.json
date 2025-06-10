@@ -1,46 +1,71 @@
 [
   {
-    "name": "chain  -s (m n)",
-    "etymology": [
-      {
-        "name": "catena",
-        "origin": "Latin"
-      },
-      {
-        "name": "chaeine",
-        "origin": "Old French"
-      },
-      {
-        "name": "chain  -s (m n)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/chain",
-      "https://www.oed.com/dictionary/chain_n?tab=factsheet#9760431",
-      "https://www.littre.org/definition/cha%C3%AEne",
-      "https://anglo-norman.net/entry/chaeine",
-      "https://latin-dictionary.net/definition/8564/catena-catenae"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "chain  -s (m n)",
+      "etymology": [
+        {
+          "name": "catena",
+          "origin": "Latin"
+        },
+        {
+          "name": "chaeine",
+          "origin": "Old French"
+        },
+        {
+          "name": "chain  -s (m n)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/chain",
+        "https://www.oed.com/dictionary/chain_n?tab=factsheet#9760431",
+        "https://www.littre.org/definition/cha%C3%AEne",
+        "https://anglo-norman.net/entry/chaeine",
+        "https://latin-dictionary.net/definition/8564/catena-catenae"
+      ]
+    }
   },
   {
-    "name": "to chain",
-    "etymology": [
-      {
-        "name": "to chain",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to chain",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta chaine -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to chain",
+        "ta chaine -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to chain",
+      "etymology": [
+        {
+          "name": "to chain",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta chaine -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/chain",
+        "https://www.oed.com/dictionary/chain_v?tab=factsheet#9763933"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/chain",
-      "https://www.oed.com/dictionary/chain_v?tab=factsheet#9763933"
-    ]
+    }
   }
 ]

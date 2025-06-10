@@ -1,83 +1,118 @@
 [
   {
-    "name": "thunder",
-    "etymology": [
-      {
-        "name": "þunor",
-        "origin": "Old English"
-      },
-      {
-        "name": "thonder",
-        "origin": "Middle English"
-      },
-      {
-        "name": "thunder",
-        "origin": "Modern English"
-      },
-      {
-        "name": "þondre, þonders",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/thunder#etymonline_v_13285",
-      "https://www.oed.com/dictionary/thunder_n?tab=meaning_and_use#18337002",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45383",
-      "https://bosworthtoller.com/32236"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "thunder",
+      "etymology": [
+        {
+          "name": "þunor",
+          "origin": "Old English"
+        },
+        {
+          "name": "thonder",
+          "origin": "Middle English"
+        },
+        {
+          "name": "thunder",
+          "origin": "Modern English"
+        },
+        {
+          "name": "þondre, þonders",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/thunder#etymonline_v_13285",
+        "https://www.oed.com/dictionary/thunder_n?tab=meaning_and_use#18337002",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45383",
+        "https://bosworthtoller.com/32236"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to thunder",
-    "etymology": [
-      {
-        "name": "þunrian",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to thunder",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "thondren",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to thunder",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta þondre -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "þunrian",
+        "thondren",
+        "to thunder",
+        "ta þondre -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to thunder",
+      "etymology": [
+        {
+          "name": "þunrian",
+          "origin": "Old English"
+        },
+        {
+          "name": "thondren",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to thunder",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta þondre -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/thunder#etymonline_v_45615",
+        "https://www.etymonline.com/word/thunder#etymonline_v_13285",
+        "https://www.oed.com/dictionary/thunder_v?tab=factsheet#18340423",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45385",
+        "https://bosworthtoller.com/32245"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/thunder#etymonline_v_45615",
-      "https://www.etymonline.com/word/thunder#etymonline_v_13285",
-      "https://www.oed.com/dictionary/thunder_v?tab=factsheet#18340423",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45385",
-      "https://bosworthtoller.com/32245"
-    ]
+    }
   },
   {
-    "name": "thunderous",
-    "etymology": [
-      {
-        "name": "thunderous",
-        "origin": "Modern English"
-      },
-      {
-        "name": "þondroʃ -sly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/thunderous#etymonline_v_39181",
-      "https://www.oed.com/dictionary/thunderous_adj?tab=factsheet#18343595"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "thunderous",
+      "etymology": [
+        {
+          "name": "thunderous",
+          "origin": "Modern English"
+        },
+        {
+          "name": "þondroʃ -sly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/thunderous#etymonline_v_39181",
+        "https://www.oed.com/dictionary/thunderous_adj?tab=factsheet#18343595"
+      ]
+    }
   }
 ]

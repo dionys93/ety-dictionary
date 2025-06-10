@@ -1,49 +1,74 @@
 [
   {
-    "name": "plummet",
-    "etymology": [
-      {
-        "name": "plom, plomet",
-        "origin": "Old French"
-      },
-      {
-        "name": "plummet",
-        "origin": "Modern English"
-      },
-      {
-        "name": "plomet",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/plummet#etymonline_v_17493",
-      "https://www.merriam-webster.com/dictionary/plummet#dictionary-entry-2",
-      "https://anglo-norman.net/entry/plumet",
-      "https://anglo-norman.net/entry/plum_1"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "plummet",
+      "etymology": [
+        {
+          "name": "plom, plomet",
+          "origin": "Old French"
+        },
+        {
+          "name": "plummet",
+          "origin": "Modern English"
+        },
+        {
+          "name": "plomet",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/plummet#etymonline_v_17493",
+        "https://www.merriam-webster.com/dictionary/plummet#dictionary-entry-2",
+        "https://anglo-norman.net/entry/plumet",
+        "https://anglo-norman.net/entry/plum_1"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   },
   {
-    "name": "to plummet",
-    "etymology": [
-      {
-        "name": "to plummet",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to plummet",
+      "conjugations": {
+        "thirdPerson": "d",
+        "pastTense": "ing"
       },
-      {
-        "name": "ta plomette plomets -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to plummet",
+        "ta plomette plomets -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to plummet",
+      "etymology": [
+        {
+          "name": "to plummet",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta plomette plomets -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/plummet#etymonline_v_44391",
+        "https://www.etymonline.com/word/plummet#etymonline_v_17493",
+        "https://www.merriam-webster.com/dictionary/plummet#dictionary-entry-1"
+      ],
+      "conjugations": {
+        "thirdPerson": "d",
+        "pastTense": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/plummet#etymonline_v_44391",
-      "https://www.etymonline.com/word/plummet#etymonline_v_17493",
-      "https://www.merriam-webster.com/dictionary/plummet#dictionary-entry-1"
-    ]
+    }
   }
 ]

@@ -1,119 +1,166 @@
 [
   {
-    "name": "junk",
-    "etymology": [
-      {
-        "name": "junk",
-        "origin": "Modern English"
-      },
-      {
-        "name": "jonk",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/junk#etymonline_v_6560",
-      "https://www.merriam-webster.com/dictionary/junk#dictionary-entry-1",
-      "https://www.oed.com/dictionary/junk_n1?tab=factsheet#40253492"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "junk",
+      "etymology": [
+        {
+          "name": "junk",
+          "origin": "Modern English"
+        },
+        {
+          "name": "jonk",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/junk#etymonline_v_6560",
+        "https://www.merriam-webster.com/dictionary/junk#dictionary-entry-1",
+        "https://www.oed.com/dictionary/junk_n1?tab=factsheet#40253492"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   },
   {
-    "name": "to junk",
-    "etymology": [
-      {
-        "name": "to junk",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to junk",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta jonke -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to junk",
+        "ta jonke -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to junk",
+      "etymology": [
+        {
+          "name": "to junk",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta jonke -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/junk#etymonline_v_42733",
+        "https://www.etymonline.com/word/junk#etymonline_v_6560",
+        "https://www.merriam-webster.com/dictionary/junk#dictionary-entry-2"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/junk#etymonline_v_42733",
-      "https://www.etymonline.com/word/junk#etymonline_v_6560",
-      "https://www.merriam-webster.com/dictionary/junk#dictionary-entry-2"
-    ]
+    }
   },
   {
-    "name": "junky",
-    "etymology": [
-      {
-        "name": "junky",
-        "origin": "Modern English"
-      },
-      {
-        "name": "jonky",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/junky#etymonline_v_35261",
-      "https://www.etymonline.com/word/junk#etymonline_v_6560",
-      "https://www.etymonline.com/word/-y#etymonline_v_25631",
-      "https://www.merriam-webster.com/dictionary/junky#dictionary-entry-1"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "junky",
+      "etymology": [
+        {
+          "name": "junky",
+          "origin": "Modern English"
+        },
+        {
+          "name": "jonky",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/junky#etymonline_v_35261",
+        "https://www.etymonline.com/word/junk#etymonline_v_6560",
+        "https://www.etymonline.com/word/-y#etymonline_v_25631",
+        "https://www.merriam-webster.com/dictionary/junky#dictionary-entry-1"
+      ]
+    }
   },
   {
-    "name": "junkie",
-    "etymology": [
-      {
-        "name": "junkie",
-        "origin": "Modern English"
-      },
-      {
-        "name": "jonkie, jonkis",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/junkie#etymonline_v_35260",
-      "https://www.etymonline.com/word/junk#etymonline_v_6560",
-      "https://www.etymonline.com/word/-y#etymonline_v_25629",
-      "https://www.merriam-webster.com/dictionary/junkie"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "junkie",
+      "etymology": [
+        {
+          "name": "junkie",
+          "origin": "Modern English"
+        },
+        {
+          "name": "jonkie, jonkis",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/junkie#etymonline_v_35260",
+        "https://www.etymonline.com/word/junk#etymonline_v_6560",
+        "https://www.etymonline.com/word/-y#etymonline_v_25629",
+        "https://www.merriam-webster.com/dictionary/junkie"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "junk",
-    "etymology": [
-      {
-        "name": "jong",
-        "origin": "Inglish"
-      },
-      {
-        "name": "junco",
-        "origin": "Portuguese"
-      },
-      {
-        "name": "junk",
-        "origin": "Modern English"
-      },
-      {
-        "name": "junco -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/junk#etymonline_v_6561",
-      "https://www.oed.com/dictionary/junk_n3?tab=meaning_and_use#40254649",
-      "https://www.merriam-webster.com/dictionary/junk#dictionary-entry-3",
-      "https://www.collinsdictionary.com/dictionary/portuguese-english/junco",
-      "https://en.glosbe.com/ms/en/jong"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "junk",
+      "etymology": [
+        {
+          "name": "jong",
+          "origin": "Inglish"
+        },
+        {
+          "name": "junco",
+          "origin": "Portuguese"
+        },
+        {
+          "name": "junk",
+          "origin": "Modern English"
+        },
+        {
+          "name": "junco -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/junk#etymonline_v_6561",
+        "https://www.oed.com/dictionary/junk_n3?tab=meaning_and_use#40254649",
+        "https://www.merriam-webster.com/dictionary/junk#dictionary-entry-3",
+        "https://www.collinsdictionary.com/dictionary/portuguese-english/junco",
+        "https://en.glosbe.com/ms/en/jong"
+      ]
+    }
   }
 ]

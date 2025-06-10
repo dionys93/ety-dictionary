@@ -1,56 +1,84 @@
 [
   {
-    "name": "to discolor",
-    "etymology": [
-      {
-        "name": "descolorer",
-        "origin": "Old French"
+    "verbDetails": {
+      "infinitive": "to discolor",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to discolor",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta discolore -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "descolorer",
+        "to discolor",
+        "ta discolore -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to discolor",
+      "etymology": [
+        {
+          "name": "descolorer",
+          "origin": "Old French"
+        },
+        {
+          "name": "to discolor",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta discolore -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/discolor#etymonline_v_11389",
+        "https://www.oed.com/dictionary/discolour_v?tab=factsheet#6694189",
+        "https://anglo-norman.net/entry/descolorer"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/discolor#etymonline_v_11389",
-      "https://www.oed.com/dictionary/discolour_v?tab=factsheet#6694189",
-      "https://anglo-norman.net/entry/descolorer"
-    ]
+    }
   },
   {
-    "name": "discoloration",
-    "etymology": [
-      {
-        "name": "discolorare",
-        "origin": "Medieval Latin"
-      },
-      {
-        "name": "discolorate",
-        "origin": "Middle English"
-      },
-      {
-        "name": "discoloration",
-        "origin": "Modern English"
-      },
-      {
-        "name": "discolorâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/discoloration#etymonline_v_31494",
-      "https://www.merriam-webster.com/dictionary/discoloration",
-      "https://www.oed.com/dictionary/discoloration_n?tab=factsheet#6693951"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "discoloration",
+      "etymology": [
+        {
+          "name": "discolorare",
+          "origin": "Medieval Latin"
+        },
+        {
+          "name": "discolorate",
+          "origin": "Middle English"
+        },
+        {
+          "name": "discoloration",
+          "origin": "Modern English"
+        },
+        {
+          "name": "discolorâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/discoloration#etymonline_v_31494",
+        "https://www.merriam-webster.com/dictionary/discoloration",
+        "https://www.oed.com/dictionary/discoloration_n?tab=factsheet#6693951"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

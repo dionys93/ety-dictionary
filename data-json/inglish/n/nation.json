@@ -1,200 +1,283 @@
 [
   {
-    "name": "nation",
-    "etymology": [
-      {
-        "name": "nasci, natus, natio",
-        "origin": "Latin"
-      },
-      {
-        "name": "nacion",
-        "origin": "Old French"
-      },
-      {
-        "name": "nacioun",
-        "origin": "Middle English"
-      },
-      {
-        "name": "nation",
-        "origin": "Modern English"
-      },
-      {
-        "name": "nâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/nation#etymonline_v_2309",
-      "https://www.merriam-webster.com/dictionary/nation",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29003",
-      "https://www.anglo-norman.net/entry/nation",
-      "https://latin-dictionary.net/definition/27622/natio-nationis",
-      "https://latin-dictionary.net/definition/27639/natus-nata-natum",
-      "https://latin-dictionary.net/definition/27605/nascor-nasci-natus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "nation",
+      "etymology": [
+        {
+          "name": "nasci, natus, natio",
+          "origin": "Latin"
+        },
+        {
+          "name": "nacion",
+          "origin": "Old French"
+        },
+        {
+          "name": "nacioun",
+          "origin": "Middle English"
+        },
+        {
+          "name": "nation",
+          "origin": "Modern English"
+        },
+        {
+          "name": "nâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/nation#etymonline_v_2309",
+        "https://www.merriam-webster.com/dictionary/nation",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29003",
+        "https://www.anglo-norman.net/entry/nation",
+        "https://latin-dictionary.net/definition/27622/natio-nationis",
+        "https://latin-dictionary.net/definition/27639/natus-nata-natum",
+        "https://latin-dictionary.net/definition/27605/nascor-nasci-natus"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "national",
-    "etymology": [
-      {
-        "name": "national",
-        "origin": "French"
-      },
-      {
-        "name": "nacional -s -ly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "masculine noun",
-          "adverb"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "national",
+      "etymology": [
+        {
+          "name": "national",
+          "origin": "French"
+        },
+        {
+          "name": "nacional -s -ly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "masculine noun",
+            "adverb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/national#etymonline_v_30270",
+        "https://www.merriam-webster.com/dictionary/national#dictionary-entry-2",
+        "https://www.merriam-webster.com/dictionary/national#dictionary-entry-1",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/national/53505"
+      ],
+      "degrees": {
+        "positive": "nacional",
+        "comparative": "s",
+        "superlative": "ly"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/national#etymonline_v_30270",
-      "https://www.merriam-webster.com/dictionary/national#dictionary-entry-2",
-      "https://www.merriam-webster.com/dictionary/national#dictionary-entry-1",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/national/53505"
-    ]
+    }
   },
   {
-    "name": "nationality",
-    "etymology": [
-      {
-        "name": "nationalité",
-        "origin": "French"
-      },
-      {
-        "name": "nationality",
-        "origin": "Modern English"
-      },
-      {
-        "name": "nacionaletie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/nationality#etymonline_v_35420",
-      "https://www.merriam-webster.com/dictionary/nationality",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/nationalit%C3%A9/53513"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "nationality",
+      "etymology": [
+        {
+          "name": "nationalité",
+          "origin": "French"
+        },
+        {
+          "name": "nationality",
+          "origin": "Modern English"
+        },
+        {
+          "name": "nacionaletie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/nationality#etymonline_v_35420",
+        "https://www.merriam-webster.com/dictionary/nationality",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/nationalit%C3%A9/53513"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "nationalism",
-    "etymology": [
-      {
-        "name": "nationalisme",
-        "origin": "French"
-      },
-      {
-        "name": "nationalism",
-        "origin": "Modern English"
-      },
-      {
-        "name": "nacionalism -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/nationalism#etymonline_v_30269",
-      "https://www.merriam-webster.com/dictionary/nationalism",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/nationalisme/53511"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "nationalism",
+      "etymology": [
+        {
+          "name": "nationalisme",
+          "origin": "French"
+        },
+        {
+          "name": "nationalism",
+          "origin": "Modern English"
+        },
+        {
+          "name": "nacionalism -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/nationalism#etymonline_v_30269",
+        "https://www.merriam-webster.com/dictionary/nationalism",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/nationalisme/53511"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to nationalize",
-    "etymology": [
-      {
-        "name": "nationaliser",
-        "origin": "French"
+    "verbDetails": {
+      "infinitive": "to nationalize",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to nationalize",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta nacionalyse -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "nationaliser",
+        "to nationalize",
+        "ta nacionalyse -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to nationalize",
+      "etymology": [
+        {
+          "name": "nationaliser",
+          "origin": "French"
+        },
+        {
+          "name": "to nationalize",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta nacionalyse -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/nationalize#etymonline_v_30271",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/nationaliser/53510",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/nationaliser/53510"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/nationalize#etymonline_v_30271",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/nationaliser/53510",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/nationaliser/53510"
-    ]
+    }
   },
   {
-    "name": "nationalization",
-    "etymology": [
-      {
-        "name": "nationalization",
-        "origin": "Modern English"
-      },
-      {
-        "name": "nacionalisâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/nationalization#etymonline_v_45243",
-      "https://www.merriam-webster.com/dictionary/nationalization"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "nationalization",
+      "etymology": [
+        {
+          "name": "nationalization",
+          "origin": "Modern English"
+        },
+        {
+          "name": "nacionalisâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/nationalization#etymonline_v_45243",
+        "https://www.merriam-webster.com/dictionary/nationalization"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "nationalist",
-    "etymology": [
-      {
-        "name": "nationalist",
-        "origin": "Modern English"
-      },
-      {
-        "name": "nacionalist -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "masculine noun"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "nationalist",
+      "etymology": [
+        {
+          "name": "nationalist",
+          "origin": "Modern English"
+        },
+        {
+          "name": "nacionalist -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/nationalist#etymonline_v_2310",
+        "https://www.merriam-webster.com/dictionary/nationalist#dictionary-entry-2",
+        "https://www.merriam-webster.com/dictionary/nationalist#dictionary-entry-1"
+      ],
+      "degrees": {
+        "positive": "nacionalist",
+        "comparative": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/nationalist#etymonline_v_2310",
-      "https://www.merriam-webster.com/dictionary/nationalist#dictionary-entry-2",
-      "https://www.merriam-webster.com/dictionary/nationalist#dictionary-entry-1"
-    ]
+    }
   },
   {
-    "name": "nationalistic",
-    "etymology": [
-      {
-        "name": "nationalistic",
-        "origin": "Modern English"
-      },
-      {
-        "name": "nacionalistic -ly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "adverb"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "nationalistic",
+      "etymology": [
+        {
+          "name": "nationalistic",
+          "origin": "Modern English"
+        },
+        {
+          "name": "nacionalistic -ly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "adverb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/nationalistic"
+      ],
+      "degrees": {
+        "positive": "nacionalistic",
+        "comparative": "ly"
       }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/nationalistic"
-    ]
+    }
   }
 ]

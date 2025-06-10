@@ -1,276 +1,393 @@
 [
   {
-    "name": "to liberate",
-    "etymology": [
-      {
-        "name": "liber, liberare, liberatus",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to liberate",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to liberate",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta liberaite -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "liber, liberare, liberatus",
+        "to liberate",
+        "ta liberaite -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to liberate",
+      "etymology": [
+        {
+          "name": "liber, liberare, liberatus",
+          "origin": "Latin"
+        },
+        {
+          "name": "to liberate",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta liberaite -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/liberate#etymonline_v_9467",
+        "https://latin-dictionary.net/definition/25600/libero-liberare-liberavi-liberatus",
+        "https://latin-dictionary.net/definition/25589/liber-libera"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/liberate#etymonline_v_9467",
-      "https://latin-dictionary.net/definition/25600/libero-liberare-liberavi-liberatus",
-      "https://latin-dictionary.net/definition/25589/liber-libera"
-    ]
+    }
   },
   {
-    "name": "liberation",
-    "etymology": [
-      {
-        "name": "liber, liberare, liberatio",
-        "origin": "Latin"
-      },
-      {
-        "name": "libération",
-        "origin": "Old French"
-      },
-      {
-        "name": "liberacion",
-        "origin": "Middle English"
-      },
-      {
-        "name": "liberation",
-        "origin": "Modern English"
-      },
-      {
-        "name": "liberâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/liberation#etymonline_v_30776",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25382",
-      "https://www.anglo-norman.net/entry/liberacion",
-      "https://latin-dictionary.net/definition/25597/liberatio-liberationis",
-      "https://latin-dictionary.net/definition/25600/libero-liberare-liberavi-liberatus",
-      "https://latin-dictionary.net/definition/25589/liber-libera"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "liberation",
+      "etymology": [
+        {
+          "name": "liber, liberare, liberatio",
+          "origin": "Latin"
+        },
+        {
+          "name": "libération",
+          "origin": "Old French"
+        },
+        {
+          "name": "liberacion",
+          "origin": "Middle English"
+        },
+        {
+          "name": "liberation",
+          "origin": "Modern English"
+        },
+        {
+          "name": "liberâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/liberation#etymonline_v_30776",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25382",
+        "https://www.anglo-norman.net/entry/liberacion",
+        "https://latin-dictionary.net/definition/25597/liberatio-liberationis",
+        "https://latin-dictionary.net/definition/25600/libero-liberare-liberavi-liberatus",
+        "https://latin-dictionary.net/definition/25589/liber-libera"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "liberational",
-    "etymology": [
-      {
-        "name": "liberational",
-        "origin": "Modern English"
-      },
-      {
-        "name": "liberâcional -ly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "liberational",
+      "etymology": [
+        {
+          "name": "liberational",
+          "origin": "Modern English"
+        },
+        {
+          "name": "liberâcional -ly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.yourdictionary.com/liberational"
+      ],
+      "degrees": {
+        "positive": "cional",
+        "comparative": "ly"
       }
-    ],
-    "sources": [
-      "https://www.yourdictionary.com/liberational"
-    ]
+    }
   },
   {
-    "name": "liberator",
-    "etymology": [
-      {
-        "name": "liberator",
-        "origin": "Latin"
-      },
-      {
-        "name": "liberaitor -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/liberator#etymonline_v_43406",
-      "https://latin-dictionary.net/definition/25598/liberator-liberatoris"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "liberator",
+      "etymology": [
+        {
+          "name": "liberator",
+          "origin": "Latin"
+        },
+        {
+          "name": "liberaitor -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/liberator#etymonline_v_43406",
+        "https://latin-dictionary.net/definition/25598/liberator-liberatoris"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "liberty",
-    "etymology": [
-      {
-        "name": "liber, libertas",
-        "origin": "Latin"
-      },
-      {
-        "name": "liberte",
-        "origin": "Old French"
-      },
-      {
-        "name": "liberty",
-        "origin": "Modern English"
-      },
-      {
-        "name": "libertie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/liberty#etymonline_v_9470",
-      "https://www.anglo-norman.net/entry/libert%C3%A9",
-      "https://latin-dictionary.net/definition/25602/libertas-libertatis",
-      "https://latin-dictionary.net/definition/25589/liber-libera"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "liberty",
+      "etymology": [
+        {
+          "name": "liber, libertas",
+          "origin": "Latin"
+        },
+        {
+          "name": "liberte",
+          "origin": "Old French"
+        },
+        {
+          "name": "liberty",
+          "origin": "Modern English"
+        },
+        {
+          "name": "libertie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/liberty#etymonline_v_9470",
+        "https://www.anglo-norman.net/entry/libert%C3%A9",
+        "https://latin-dictionary.net/definition/25602/libertas-libertatis",
+        "https://latin-dictionary.net/definition/25589/liber-libera"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "liberatory",
-    "etymology": [
-      {
-        "name": "liberatory",
-        "origin": "Modern English"
-      },
-      {
-        "name": "libratory -ily",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "liberatory",
+      "etymology": [
+        {
+          "name": "liberatory",
+          "origin": "Modern English"
+        },
+        {
+          "name": "libratory -ily",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/liberatory",
+        "https://www.oed.com/dictionary/liberatory_adj?tab=factsheet#39404866",
+        "https://www.collinsdictionary.com/us/dictionary/english/liberatory",
+        "https://www.yourdictionary.com/liberatory"
+      ],
+      "degrees": {
+        "positive": "libratory",
+        "comparative": "ily"
       }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/liberatory",
-      "https://www.oed.com/dictionary/liberatory_adj?tab=factsheet#39404866",
-      "https://www.collinsdictionary.com/us/dictionary/english/liberatory",
-      "https://www.yourdictionary.com/liberatory"
-    ]
+    }
   },
   {
-    "name": "liberal",
-    "etymology": [
-      {
-        "name": "liber, liberalis",
-        "origin": "Latin"
-      },
-      {
-        "name": "liberal",
-        "origin": "Old French"
-      },
-      {
-        "name": "libral -ly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "masculine noun"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "liberal",
+      "etymology": [
+        {
+          "name": "liber, liberalis",
+          "origin": "Latin"
+        },
+        {
+          "name": "liberal",
+          "origin": "Old French"
+        },
+        {
+          "name": "libral -ly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/liberal#etymonline_v_43404",
+        "https://www.etymonline.com/word/liberal#etymonline_v_9466",
+        "https://www.etymonline.com/word/liberally#etymonline_v_42884",
+        "https://www.oed.com/dictionary/liberal_adj?tab=factsheet#39400674",
+        "https://www.merriam-webster.com/dictionary/liberal",
+        "https://latin-dictionary.net/definition/25593/liberalis-liberalis-liberale",
+        "https://latin-dictionary.net/definition/25589/liber-libera"
+      ],
+      "degrees": {
+        "positive": "libral",
+        "comparative": "ly"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/liberal#etymonline_v_43404",
-      "https://www.etymonline.com/word/liberal#etymonline_v_9466",
-      "https://www.etymonline.com/word/liberally#etymonline_v_42884",
-      "https://www.oed.com/dictionary/liberal_adj?tab=factsheet#39400674",
-      "https://www.merriam-webster.com/dictionary/liberal",
-      "https://latin-dictionary.net/definition/25593/liberalis-liberalis-liberale",
-      "https://latin-dictionary.net/definition/25589/liber-libera"
-    ]
+    }
   },
   {
-    "name": "to liberalize",
-    "etymology": [
-      {
-        "name": "to liberalize",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to liberalize",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta libralyse -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to liberalize",
+        "ta libralyse -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to liberalize",
+      "etymology": [
+        {
+          "name": "to liberalize",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta libralyse -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/liberalize#etymonline_v_43407",
+        "https://www.oed.com/dictionary/liberalize_v?tab=factsheet#39402973"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/liberalize#etymonline_v_43407",
-      "https://www.oed.com/dictionary/liberalize_v?tab=factsheet#39402973"
-    ]
+    }
   },
   {
-    "name": "liberalization",
-    "etymology": [
-      {
-        "name": "liberalization",
-        "origin": "Modern English"
-      },
-      {
-        "name": "libralisâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/liberalization#etymonline_v_30813",
-      "https://www.oed.com/dictionary/liberalization_n?tab=factsheet#39402901"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "liberalization",
+      "etymology": [
+        {
+          "name": "liberalization",
+          "origin": "Modern English"
+        },
+        {
+          "name": "libralisâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/liberalization#etymonline_v_30813",
+        "https://www.oed.com/dictionary/liberalization_n?tab=factsheet#39402901"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "liberalism",
-    "etymology": [
-      {
-        "name": "liberalism",
-        "origin": "Modern English"
-      },
-      {
-        "name": "libralism -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/liberalism#etymonline_v_30775"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "liberalism",
+      "etymology": [
+        {
+          "name": "liberalism",
+          "origin": "Modern English"
+        },
+        {
+          "name": "libralism -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/liberalism#etymonline_v_30775"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "liberality",
-    "etymology": [
-      {
-        "name": "liber, liberalis, liberalitas",
-        "origin": "Latin"
-      },
-      {
-        "name": "liberalité",
-        "origin": "Old French"
-      },
-      {
-        "name": "liberality",
-        "origin": "Modern English"
-      },
-      {
-        "name": "libraletie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/liberality#etymonline_v_30812",
-      "https://www.merriam-webster.com/dictionary/liberality",
-      "https://www.collinsdictionary.com/us/dictionary/english/liberality",
-      "https://www.anglo-norman.net/entry/liberalit%C3%A9",
-      "https://latin-dictionary.net/definition/25602/libertas-libertatis",
-      "https://latin-dictionary.net/definition/25593/liberalis-liberalis-liberale",
-      "https://latin-dictionary.net/definition/25589/liber-libera"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "liberality",
+      "etymology": [
+        {
+          "name": "liber, liberalis, liberalitas",
+          "origin": "Latin"
+        },
+        {
+          "name": "liberalité",
+          "origin": "Old French"
+        },
+        {
+          "name": "liberality",
+          "origin": "Modern English"
+        },
+        {
+          "name": "libraletie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/liberality#etymonline_v_30812",
+        "https://www.merriam-webster.com/dictionary/liberality",
+        "https://www.collinsdictionary.com/us/dictionary/english/liberality",
+        "https://www.anglo-norman.net/entry/liberalit%C3%A9",
+        "https://latin-dictionary.net/definition/25602/libertas-libertatis",
+        "https://latin-dictionary.net/definition/25593/liberalis-liberalis-liberale",
+        "https://latin-dictionary.net/definition/25589/liber-libera"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

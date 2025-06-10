@@ -1,88 +1,115 @@
 [
   {
-    "name": "queen",
-    "etymology": [
-      {
-        "name": "cwen",
-        "origin": "Old English"
-      },
-      {
-        "name": "quene",
-        "origin": "Middle English"
-      },
-      {
-        "name": "queen",
-        "origin": "Modern English"
-      },
-      {
-        "name": "quine, quíns",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/queen#etymonline_v_3172",
-      "https://www.oed.com/dictionary/queen_n?tab=pronunciation#27433540",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35546",
-      "https://bosworthtoller.com/6935"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "queen",
+      "etymology": [
+        {
+          "name": "cwen",
+          "origin": "Old English"
+        },
+        {
+          "name": "quene",
+          "origin": "Middle English"
+        },
+        {
+          "name": "queen",
+          "origin": "Modern English"
+        },
+        {
+          "name": "quine, quíns",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/queen#etymonline_v_3172",
+        "https://www.oed.com/dictionary/queen_n?tab=pronunciation#27433540",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35546",
+        "https://bosworthtoller.com/6935"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to queen",
-    "etymology": [
-      {
-        "name": "to queen",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta quine -s -d -ing",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.oed.com/dictionary/queen_v?tab=factsheet#27440418"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "to queen",
+      "etymology": [
+        {
+          "name": "to queen",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta quine -s -d -ing",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.oed.com/dictionary/queen_v?tab=factsheet#27440418"
+      ]
+    }
   },
   {
-    "name": "queenly",
-    "etymology": [
-      {
-        "name": "queenly",
-        "origin": "Modern English"
-      },
-      {
-        "name": "quínly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/queenly#etymonline_v_47656",
-      "https://www.oed.com/dictionary/queenly_adj?tab=factsheet#27442313"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "queenly",
+      "etymology": [
+        {
+          "name": "queenly",
+          "origin": "Modern English"
+        },
+        {
+          "name": "quínly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/queenly#etymonline_v_47656",
+        "https://www.oed.com/dictionary/queenly_adj?tab=factsheet#27442313"
+      ]
+    }
   },
   {
-    "name": "queenhood",
-    "etymology": [
-      {
-        "name": "queenhood",
-        "origin": "Modern English"
-      },
-      {
-        "name": "quínhud -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/queenhood#etymonline_v_54991",
-      "https://www.oed.com/dictionary/queenhood_n?tab=factsheet#27441398"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "queenhood",
+      "etymology": [
+        {
+          "name": "queenhood",
+          "origin": "Modern English"
+        },
+        {
+          "name": "quínhud -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/queenhood#etymonline_v_54991",
+        "https://www.oed.com/dictionary/queenhood_n?tab=factsheet#27441398"
+      ],
+      "number": "plural"
+    }
   }
 ]

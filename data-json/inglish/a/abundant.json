@@ -1,55 +1,73 @@
 [
   {
-    "name": "abundant",
-    "etymology": [
-      {
-        "name": "abundare, abundans, abundantem",
-        "origin": "Latin"
-      },
-      {
-        "name": "abundant",
-        "origin": "Old French"
-      },
-      {
-        "name": "abondant -ly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "abundant",
+      "etymology": [
+        {
+          "name": "abundare, abundans, abundantem",
+          "origin": "Latin"
+        },
+        {
+          "name": "abundant",
+          "origin": "Old French"
+        },
+        {
+          "name": "abondant -ly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/abundant",
+        "https://www.oed.com/dictionary/abundant_adj?tab=factsheet#2436367",
+        "https://anglo-norman.net/entry/abundantment",
+        "https://latin-dictionary.net/definition/295/abundans-abundantis",
+        "https://latin-dictionary.net/definition/300/abundo-abundare-abundavi-abundatus"
+      ],
+      "degrees": {
+        "positive": "abondant",
+        "comparative": "ly"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/abundant",
-      "https://www.oed.com/dictionary/abundant_adj?tab=factsheet#2436367",
-      "https://anglo-norman.net/entry/abundantment",
-      "https://latin-dictionary.net/definition/295/abundans-abundantis",
-      "https://latin-dictionary.net/definition/300/abundo-abundare-abundavi-abundatus"
-    ]
+    }
   },
   {
-    "name": "abundance",
-    "etymology": [
-      {
-        "name": "abundantia",
-        "origin": "Latin"
-      },
-      {
-        "name": "abundance",
-        "origin": "Old French"
-      },
-      {
-        "name": "abondance",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/abundance",
-      "https://www.oed.com/dictionary/abundance_n?tab=factsheet#2726063",
-      "https://anglo-norman.net/entry/abundance",
-      "https://latin-dictionary.net/definition/297/abundantia-abundantiae"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "abundance",
+      "etymology": [
+        {
+          "name": "abundantia",
+          "origin": "Latin"
+        },
+        {
+          "name": "abundance",
+          "origin": "Old French"
+        },
+        {
+          "name": "abondance",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/abundance",
+        "https://www.oed.com/dictionary/abundance_n?tab=factsheet#2726063",
+        "https://anglo-norman.net/entry/abundance",
+        "https://latin-dictionary.net/definition/297/abundantia-abundantiae"
+      ],
+      "gender": "feminine",
+      "number": "singular"
+    }
   }
 ]

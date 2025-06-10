@@ -1,63 +1,95 @@
 [
   {
-    "name": "bare",
-    "etymology": [
-      {
-        "name": "bær",
-        "origin": "Old English"
-      },
-      {
-        "name": "bar",
-        "origin": "Middle English"
-      },
-      {
-        "name": "bare",
-        "origin": "Modern English"
-      },
-      {
-        "name": "bâre -r -st",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "bare",
+      "etymology": [
+        {
+          "name": "bær",
+          "origin": "Old English"
+        },
+        {
+          "name": "bar",
+          "origin": "Middle English"
+        },
+        {
+          "name": "bare",
+          "origin": "Modern English"
+        },
+        {
+          "name": "bâre -r -st",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bare#etymonline_v_5241",
+        "https://www.etymonline.com/word/bear#etymonline_v_8203",
+        "https://www.merriam-webster.com/dictionary/bare",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3612",
+        "https://bosworthtoller.com/39429"
+      ],
+      "degrees": {
+        "positive": "re",
+        "comparative": "r",
+        "superlative": "st"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bare#etymonline_v_5241",
-      "https://www.etymonline.com/word/bear#etymonline_v_8203",
-      "https://www.merriam-webster.com/dictionary/bare",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3612",
-      "https://bosworthtoller.com/39429"
-    ]
+    }
   },
   {
-    "name": "to bare",
-    "etymology": [
-      {
-        "name": "barian",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to bare",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "baren",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to bare",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta bâre -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "barian",
+        "baren",
+        "to bare",
+        "ta bâre -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to bare",
+      "etymology": [
+        {
+          "name": "barian",
+          "origin": "Old English"
+        },
+        {
+          "name": "baren",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to bare",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta bâre -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bare#etymonline_v_42380",
+        "https://www.merriam-webster.com/dictionary/bare",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3657",
+        "https://bosworthtoller.com/39498"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bare#etymonline_v_42380",
-      "https://www.merriam-webster.com/dictionary/bare",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3657",
-      "https://bosworthtoller.com/39498"
-    ]
+    }
   }
 ]

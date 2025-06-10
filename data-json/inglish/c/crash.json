@@ -1,40 +1,66 @@
 [
   {
-    "name": "to crash",
-    "etymology": [
-      {
-        "name": "crasschen",
-        "origin": "Middle English"
+    "verbDetails": {
+      "infinitive": "to crash",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to crash",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta crashe -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "crasschen",
+        "to crash",
+        "ta crashe -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to crash",
+      "etymology": [
+        {
+          "name": "crasschen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to crash",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta crashe -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/crash",
+        "https://www.oed.com/dictionary/crash_v?tab=factsheet#7988587"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/crash",
-      "https://www.oed.com/dictionary/crash_v?tab=factsheet#7988587"
-    ]
+    }
   },
   {
-    "name": "crash  -es (m n)",
-    "etymology": [
-      {
-        "name": "crash  -es (m n)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/crash",
-      "https://www.oed.com/dictionary/crash_n1?tab=factsheet#7987542",
-      "https://www.oed.com/dictionary/crash_n2?tab=factsheet#7988505"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "crash  -es (m n)",
+      "etymology": [
+        {
+          "name": "crash  -es (m n)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/crash",
+        "https://www.oed.com/dictionary/crash_n1?tab=factsheet#7987542",
+        "https://www.oed.com/dictionary/crash_n2?tab=factsheet#7988505"
+      ]
+    }
   }
 ]

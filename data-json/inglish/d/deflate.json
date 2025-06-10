@@ -1,68 +1,102 @@
 [
   {
-    "name": "to deflate",
-    "etymology": [
-      {
-        "name": "deflare",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to deflate",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to deflate",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta deflâte -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "deflare",
+        "to deflate",
+        "ta deflâte -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to deflate",
+      "etymology": [
+        {
+          "name": "deflare",
+          "origin": "Latin"
+        },
+        {
+          "name": "to deflate",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta deflâte -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/deflate",
+        "https://www.oed.com/dictionary/deflate_v?tab=factsheet#7204453",
+        "https://latin-dictionary.net/definition/16139/deflo-deflare-deflavi-deflatus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/deflate",
-      "https://www.oed.com/dictionary/deflate_v?tab=factsheet#7204453",
-      "https://latin-dictionary.net/definition/16139/deflo-deflare-deflavi-deflatus"
-    ]
+    }
   },
   {
-    "name": "deflation",
-    "etymology": [
-      {
-        "name": "deflation",
-        "origin": "Modern English"
-      },
-      {
-        "name": "deflâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/deflation",
-      "https://www.etymonline.com/word/deflate",
-      "https://www.oed.com/dictionary/deflation_n?tab=factsheet#7204732"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "deflation",
+      "etymology": [
+        {
+          "name": "deflation",
+          "origin": "Modern English"
+        },
+        {
+          "name": "deflâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/deflation",
+        "https://www.etymonline.com/word/deflate",
+        "https://www.oed.com/dictionary/deflation_n?tab=factsheet#7204732"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "deflationary",
-    "etymology": [
-      {
-        "name": "deflationary",
-        "origin": "Modern English"
-      },
-      {
-        "name": "deflâcionairy",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/deflationary",
-      "https://www.oed.com/dictionary/deflationary_adj?tab=factsheet#7204910"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "deflationary",
+      "etymology": [
+        {
+          "name": "deflationary",
+          "origin": "Modern English"
+        },
+        {
+          "name": "deflâcionairy",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/deflationary",
+        "https://www.oed.com/dictionary/deflationary_adj?tab=factsheet#7204910"
+      ]
+    }
   }
 ]

@@ -1,131 +1,172 @@
 [
   {
-    "name": "bar",
-    "etymology": [
-      {
-        "name": "barra",
-        "origin": "Vulgar Latin"
-      },
-      {
-        "name": "barre",
-        "origin": "Old French"
-      },
-      {
-        "name": "bar",
-        "origin": "Modern English"
-      },
-      {
-        "name": "bar -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bar#etymonline_v_5227",
-      "https://www.etymonline.com/word/bar#etymonline_v_5228",
-      "https://www.etymonline.com/word/bar#etymonline_v_5229",
-      "https://www.merriam-webster.com/dictionary/bar#dictionary-entry-1",
-      "https://www.oed.com/dictionary/bar_n1?tab=factsheet#28009911",
-      "https://www.anglo-norman.net/entry/barre"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "bar",
+      "etymology": [
+        {
+          "name": "barra",
+          "origin": "Vulgar Latin"
+        },
+        {
+          "name": "barre",
+          "origin": "Old French"
+        },
+        {
+          "name": "bar",
+          "origin": "Modern English"
+        },
+        {
+          "name": "bar -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bar#etymonline_v_5227",
+        "https://www.etymonline.com/word/bar#etymonline_v_5228",
+        "https://www.etymonline.com/word/bar#etymonline_v_5229",
+        "https://www.merriam-webster.com/dictionary/bar#dictionary-entry-1",
+        "https://www.oed.com/dictionary/bar_n1?tab=factsheet#28009911",
+        "https://www.anglo-norman.net/entry/barre"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to bar",
-    "etymology": [
-      {
-        "name": "barrer",
-        "origin": "Old French"
+    "verbDetails": {
+      "infinitive": "to bar",
+      "conjugations": {
+        "thirdPerson": "d",
+        "pastTense": "ing"
       },
-      {
-        "name": "barren",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to bar",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta barre bars -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "barrer",
+        "barren",
+        "to bar",
+        "ta barre bars -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to bar",
+      "etymology": [
+        {
+          "name": "barrer",
+          "origin": "Old French"
+        },
+        {
+          "name": "barren",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to bar",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta barre bars -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bar#etymonline_v_29486",
+        "https://www.etymonline.com/word/bar#etymonline_v_5227",
+        "https://www.merriam-webster.com/dictionary/bar#dictionary-entry-2",
+        "https://www.oed.com/dictionary/bar_v?tab=factsheet#28026256",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3708",
+        "https://www.anglo-norman.net/entry/barrer_2",
+        "https://www.anglo-norman.net/entry/barre"
+      ],
+      "conjugations": {
+        "thirdPerson": "d",
+        "pastTense": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bar#etymonline_v_29486",
-      "https://www.etymonline.com/word/bar#etymonline_v_5227",
-      "https://www.merriam-webster.com/dictionary/bar#dictionary-entry-2",
-      "https://www.oed.com/dictionary/bar_v?tab=factsheet#28026256",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3708",
-      "https://www.anglo-norman.net/entry/barrer_2",
-      "https://www.anglo-norman.net/entry/barre"
-    ]
+    }
   },
   {
-    "name": "barrier",
-    "etymology": [
-      {
-        "name": "barre, barriere",
-        "origin": "Old French"
-      },
-      {
-        "name": "barrere",
-        "origin": "Inglish"
-      },
-      {
-        "name": "barere",
-        "origin": "Middle English"
-      },
-      {
-        "name": "barrier",
-        "origin": "Modern English"
-      },
-      {
-        "name": "bârrior -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/barrier#etymonline_v_5266",
-      "https://www.etymonline.com/word/bar#etymonline_v_5227",
-      "https://www.merriam-webster.com/dictionary/barrier",
-      "https://www.oed.com/dictionary/barrier_n?tab=factsheet#27003200",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3709",
-      "https://www.anglo-norman.net/entry/barrere",
-      "https://www.anglo-norman.net/entry/barrier",
-      "https://www.anglo-norman.net/entry/barre"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "barrier",
+      "etymology": [
+        {
+          "name": "barre, barriere",
+          "origin": "Old French"
+        },
+        {
+          "name": "barrere",
+          "origin": "Inglish"
+        },
+        {
+          "name": "barere",
+          "origin": "Middle English"
+        },
+        {
+          "name": "barrier",
+          "origin": "Modern English"
+        },
+        {
+          "name": "bârrior -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/barrier#etymonline_v_5266",
+        "https://www.etymonline.com/word/bar#etymonline_v_5227",
+        "https://www.merriam-webster.com/dictionary/barrier",
+        "https://www.oed.com/dictionary/barrier_n?tab=factsheet#27003200",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3709",
+        "https://www.anglo-norman.net/entry/barrere",
+        "https://www.anglo-norman.net/entry/barrier",
+        "https://www.anglo-norman.net/entry/barre"
+      ]
+    }
   },
   {
-    "name": "bar",
-    "etymology": [
-      {
-        "name": "βάρος",
-        "origin": "German"
-      },
-      {
-        "name": "bar",
-        "origin": "Modern English"
-      },
-      {
-        "name": "bár -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bar#etymonline_v_25838",
-      "https://www.merriam-webster.com/dictionary/bar#dictionary-entry-4",
-      "https://www.oed.com/dictionary/bar_n6?tab=factsheet#28023135",
-      "https://lsj.gr/wiki/%CE%B2%CE%AC%CF%81%CE%BF%CF%82"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "bar",
+      "etymology": [
+        {
+          "name": "βάρος",
+          "origin": "German"
+        },
+        {
+          "name": "bar",
+          "origin": "Modern English"
+        },
+        {
+          "name": "bár -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bar#etymonline_v_25838",
+        "https://www.merriam-webster.com/dictionary/bar#dictionary-entry-4",
+        "https://www.oed.com/dictionary/bar_n6?tab=factsheet#28023135",
+        "https://lsj.gr/wiki/%CE%B2%CE%AC%CF%81%CE%BF%CF%82"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

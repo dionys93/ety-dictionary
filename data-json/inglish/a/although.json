@@ -1,28 +1,34 @@
 [
   {
-    "name": "all though, although",
-    "etymology": [
-      {
-        "name": "þeah, þeh",
-        "origin": "Old English"
-      },
-      {
-        "name": "all though, although",
-        "origin": "Modern English"
-      },
-      {
-        "name": "alþô",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "conjunction"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/although",
-      "https://www.etymonline.com/word/though",
-      "https://www.oed.com/dictionary/although_conj?tab=factsheet#6082647",
-      "https://bosworthtoller.com/31551"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "conjunction"
+    },
+    "standard": {
+      "name": "all though, although",
+      "etymology": [
+        {
+          "name": "þeah, þeh",
+          "origin": "Old English"
+        },
+        {
+          "name": "all though, although",
+          "origin": "Modern English"
+        },
+        {
+          "name": "alþô",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "conjunction"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/although",
+        "https://www.etymonline.com/word/though",
+        "https://www.oed.com/dictionary/although_conj?tab=factsheet#6082647",
+        "https://bosworthtoller.com/31551"
+      ]
+    }
   }
 ]

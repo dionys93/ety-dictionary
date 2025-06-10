@@ -1,105 +1,150 @@
 [
   {
-    "name": "to take",
-    "etymology": [
-      {
-        "name": "taka",
-        "origin": "Old Norse"
+    "verbDetails": {
+      "infinitive": "to take",
+      "conjugations": {
+        "thirdPerson": "s"
       },
-      {
-        "name": "tacan",
-        "origin": "Old English"
-      },
-      {
-        "name": "taken",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to take",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta tâke -s tûk tâken -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "taka",
+        "tacan",
+        "taken",
+        "to take",
+        "ta tâke -s tûk tâken -ing"
+      ]
+    },
+    "standard": {
+      "name": "to take",
+      "etymology": [
+        {
+          "name": "taka",
+          "origin": "Old Norse"
+        },
+        {
+          "name": "tacan",
+          "origin": "Old English"
+        },
+        {
+          "name": "taken",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to take",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta tâke -s tûk tâken -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/take#etymonline_v_4331",
+        "https://www.merriam-webster.com/dictionary/take#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44420",
+        "https://bosworthtoller.com/30106",
+        "https://old-norse.net/html/t.php#taka-A"
+      ],
+      "conjugations": {
+        "thirdPerson": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/take#etymonline_v_4331",
-      "https://www.merriam-webster.com/dictionary/take#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44420",
-      "https://bosworthtoller.com/30106",
-      "https://old-norse.net/html/t.php#taka-A"
-    ]
+    }
   },
   {
-    "name": "take",
-    "etymology": [
-      {
-        "name": "take",
-        "origin": "Modern English"
-      },
-      {
-        "name": "tâke, taix",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/take#etymonline_v_24612",
-      "https://www.etymonline.com/word/take#etymonline_v_4331",
-      "https://www.merriam-webster.com/dictionary/take#dictionary-entry-2"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "take",
+      "etymology": [
+        {
+          "name": "take",
+          "origin": "Modern English"
+        },
+        {
+          "name": "tâke, taix",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/take#etymonline_v_24612",
+        "https://www.etymonline.com/word/take#etymonline_v_4331",
+        "https://www.merriam-webster.com/dictionary/take#dictionary-entry-2"
+      ],
+      "number": "singular"
+    }
   },
   {
-    "name": "takeaway",
-    "etymology": [
-      {
-        "name": "takeaway",
-        "origin": "Modern English"
-      },
-      {
-        "name": "tâkaɯay -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "masculine noun"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "takeaway",
+      "etymology": [
+        {
+          "name": "takeaway",
+          "origin": "Modern English"
+        },
+        {
+          "name": "tâkaɯay -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/takeaway#etymonline_v_36065",
+        "https://www.etymonline.com/word/take#etymonline_v_4331",
+        "https://www.etymonline.com/word/away#etymonline_v_19019",
+        "https://www.merriam-webster.com/dictionary/takeaway"
+      ],
+      "degrees": {
+        "positive": "ay",
+        "comparative": "is"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/takeaway#etymonline_v_36065",
-      "https://www.etymonline.com/word/take#etymonline_v_4331",
-      "https://www.etymonline.com/word/away#etymonline_v_19019",
-      "https://www.merriam-webster.com/dictionary/takeaway"
-    ]
+    }
   },
   {
-    "name": "takeout",
-    "etymology": [
-      {
-        "name": "takeout",
-        "origin": "Modern English"
-      },
-      {
-        "name": "tâkaot -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "masculine noun"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "takeout",
+      "etymology": [
+        {
+          "name": "takeout",
+          "origin": "Modern English"
+        },
+        {
+          "name": "tâkaot -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/takeout#etymonline_v_24594",
+        "https://www.etymonline.com/word/take#etymonline_v_4331",
+        "https://www.etymonline.com/word/out#etymonline_v_9965",
+        "https://www.merriam-webster.com/dictionary/takeout#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/takeout#dictionary-entry-2"
+      ],
+      "degrees": {
+        "positive": "kaot",
+        "comparative": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/takeout#etymonline_v_24594",
-      "https://www.etymonline.com/word/take#etymonline_v_4331",
-      "https://www.etymonline.com/word/out#etymonline_v_9965",
-      "https://www.merriam-webster.com/dictionary/takeout#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/takeout#dictionary-entry-2"
-    ]
+    }
   }
 ]

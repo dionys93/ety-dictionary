@@ -1,133 +1,179 @@
 [
   {
-    "name": "to consider",
-    "etymology": [
-      {
-        "name": "com + sidus, considerare",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to consider",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "considerer",
-        "origin": "Old French"
-      },
-      {
-        "name": "consideren",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to consider",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta considre -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "com + sidus, considerare",
+        "considerer",
+        "consideren",
+        "to consider",
+        "ta considre -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to consider",
+      "etymology": [
+        {
+          "name": "com + sidus, considerare",
+          "origin": "Latin"
+        },
+        {
+          "name": "considerer",
+          "origin": "Old French"
+        },
+        {
+          "name": "consideren",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to consider",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta considre -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/consider#etymonline_v_18238",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9387",
+        "https://www.anglo-norman.net/entry/considerer",
+        "https://latin-dictionary.net/definition/13358/considero-considerare-consideravi-consideratus",
+        "https://latin-dictionary.net/definition/35003/sidus-sideris",
+        "https://latin-dictionary.net/definition/11210/com"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/consider#etymonline_v_18238",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9387",
-      "https://www.anglo-norman.net/entry/considerer",
-      "https://latin-dictionary.net/definition/13358/considero-considerare-consideravi-consideratus",
-      "https://latin-dictionary.net/definition/35003/sidus-sideris",
-      "https://latin-dictionary.net/definition/11210/com"
-    ]
+    }
   },
   {
-    "name": "consideration",
-    "etymology": [
-      {
-        "name": "considerare, consideratio",
-        "origin": "Latin"
-      },
-      {
-        "name": "consideracion",
-        "origin": "Old French"
-      },
-      {
-        "name": "consideracioun",
-        "origin": "Middle English"
-      },
-      {
-        "name": "consideration",
-        "origin": "Modern English"
-      },
-      {
-        "name": "considerâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/consideration#etymonline_v_28680",
-      "https://www.merriam-webster.com/dictionary/consideration",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9383",
-      "https://www.anglo-norman.net/entry/consideracion",
-      "https://latin-dictionary.net/definition/13355/consideratio-considerationis",
-      "https://latin-dictionary.net/definition/13358/considero-considerare-consideravi-consideratus",
-      "https://latin-dictionary.net/definition/35003/sidus-sideris",
-      "https://latin-dictionary.net/definition/11210/com"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "consideration",
+      "etymology": [
+        {
+          "name": "considerare, consideratio",
+          "origin": "Latin"
+        },
+        {
+          "name": "consideracion",
+          "origin": "Old French"
+        },
+        {
+          "name": "consideracioun",
+          "origin": "Middle English"
+        },
+        {
+          "name": "consideration",
+          "origin": "Modern English"
+        },
+        {
+          "name": "considerâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/consideration#etymonline_v_28680",
+        "https://www.merriam-webster.com/dictionary/consideration",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9383",
+        "https://www.anglo-norman.net/entry/consideracion",
+        "https://latin-dictionary.net/definition/13355/consideratio-considerationis",
+        "https://latin-dictionary.net/definition/13358/considero-considerare-consideravi-consideratus",
+        "https://latin-dictionary.net/definition/35003/sidus-sideris",
+        "https://latin-dictionary.net/definition/11210/com"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "considerate",
-    "etymology": [
-      {
-        "name": "considerare, consideratus",
-        "origin": "Latin"
-      },
-      {
-        "name": "considerate",
-        "origin": "Modern English"
-      },
-      {
-        "name": "consìderat",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/considerate#etymonline_v_28679",
-      "https://www.merriam-webster.com/dictionary/considerate",
-      "https://latin-dictionary.net/definition/13358/considero-considerare-consideravi-consideratus",
-      "https://latin-dictionary.net/definition/35003/sidus-sideris",
-      "https://latin-dictionary.net/definition/11210/com"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "considerate",
+      "etymology": [
+        {
+          "name": "considerare, consideratus",
+          "origin": "Latin"
+        },
+        {
+          "name": "considerate",
+          "origin": "Modern English"
+        },
+        {
+          "name": "consìderat",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/considerate#etymonline_v_28679",
+        "https://www.merriam-webster.com/dictionary/considerate",
+        "https://latin-dictionary.net/definition/13358/considero-considerare-consideravi-consideratus",
+        "https://latin-dictionary.net/definition/35003/sidus-sideris",
+        "https://latin-dictionary.net/definition/11210/com"
+      ]
+    }
   },
   {
-    "name": "considerable",
-    "etymology": [
-      {
-        "name": "considerare",
-        "origin": "Latin"
-      },
-      {
-        "name": "considerabilis",
-        "origin": "Medieval Latin"
-      },
-      {
-        "name": "considerable",
-        "origin": "Modern English"
-      },
-      {
-        "name": "consìderable -y",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "considerable",
+      "etymology": [
+        {
+          "name": "considerare",
+          "origin": "Latin"
+        },
+        {
+          "name": "considerabilis",
+          "origin": "Medieval Latin"
+        },
+        {
+          "name": "considerable",
+          "origin": "Modern English"
+        },
+        {
+          "name": "consìderable -y",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/considerable#etymonline_v_28678",
+        "https://www.merriam-webster.com/dictionary/considerable#dictionary-entry-1",
+        "https://latin-dictionary.net/definition/35003/sidus-sideris",
+        "https://latin-dictionary.net/definition/11210/com"
+      ],
+      "degrees": {
+        "positive": "derable",
+        "comparative": "y"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/considerable#etymonline_v_28678",
-      "https://www.merriam-webster.com/dictionary/considerable#dictionary-entry-1",
-      "https://latin-dictionary.net/definition/35003/sidus-sideris",
-      "https://latin-dictionary.net/definition/11210/com"
-    ]
+    }
   }
 ]

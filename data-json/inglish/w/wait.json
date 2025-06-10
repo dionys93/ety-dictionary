@@ -1,82 +1,110 @@
 [
   {
-    "name": "to wait",
-    "etymology": [
-      {
-        "name": "gaitier",
-        "origin": "Old French"
-      },
-      {
-        "name": "waitier",
-        "origin": "Inglish"
-      },
-      {
-        "name": "geten, waiten",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to wait",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta ɯaite -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/wait#etymonline_v_4794",
-      "https://www.merriam-webster.com/dictionary/wait#dictionary-entry-1",
-      "https://www.oed.com/dictionary/wait_v1?tab=factsheet#15220619",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51534",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED18490",
-      "https://anglo-norman.net/entry/gaiter"
-    ]
+    "verbDetails": {
+      "infinitive": "to wait",
+      "etymology": [
+        "gaitier",
+        "waitier",
+        "geten, waiten",
+        "to wait",
+        "ta ɯaite -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to wait",
+      "etymology": [
+        {
+          "name": "gaitier",
+          "origin": "Old French"
+        },
+        {
+          "name": "waitier",
+          "origin": "Inglish"
+        },
+        {
+          "name": "geten, waiten",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to wait",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta ɯaite -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/wait#etymonline_v_4794",
+        "https://www.merriam-webster.com/dictionary/wait#dictionary-entry-1",
+        "https://www.oed.com/dictionary/wait_v1?tab=factsheet#15220619",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51534",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED18490",
+        "https://anglo-norman.net/entry/gaiter"
+      ]
+    }
   },
   {
-    "name": "gait, wait",
-    "etymology": [
-      {
-        "name": "gait, wait",
-        "origin": "Old French"
-      },
-      {
-        "name": "ɯait -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/wait#etymonline_v_44602",
-      "https://www.merriam-webster.com/dictionary/wait#dictionary-entry-2",
-      "https://www.oed.com/dictionary/wait_n?tab=factsheet#15218967",
-      "https://anglo-norman.net/entry/gaite"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "gait, wait",
+      "etymology": [
+        {
+          "name": "gait, wait",
+          "origin": "Old French"
+        },
+        {
+          "name": "ɯait -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/wait#etymonline_v_44602",
+        "https://www.merriam-webster.com/dictionary/wait#dictionary-entry-2",
+        "https://www.oed.com/dictionary/wait_n?tab=factsheet#15218967",
+        "https://anglo-norman.net/entry/gaite"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "waiter",
-    "etymology": [
-      {
-        "name": "waiter",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ɯaiteur -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/waiter#etymonline_v_24376",
-      "https://www.etymonline.com/word/wait#etymonline_v_4794",
-      "https://www.merriam-webster.com/dictionary/waiter",
-      "https://www.oed.com/dictionary/waiter_n?tab=factsheet#15224705"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "waiter",
+      "etymology": [
+        {
+          "name": "waiter",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ɯaiteur -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/waiter#etymonline_v_24376",
+        "https://www.etymonline.com/word/wait#etymonline_v_4794",
+        "https://www.merriam-webster.com/dictionary/waiter",
+        "https://www.oed.com/dictionary/waiter_n?tab=factsheet#15224705"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

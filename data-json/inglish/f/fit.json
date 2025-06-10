@@ -1,47 +1,69 @@
 [
   {
-    "name": "to fit",
-    "etymology": [
-      {
-        "name": "fitten",
-        "origin": "Middle English"
+    "verbDetails": {
+      "infinitive": "to fit",
+      "conjugations": {
+        "thirdPerson": "ing"
       },
-      {
-        "name": "to fit",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta fitte fits fit -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "fitten",
+        "to fit",
+        "ta fitte fits fit -ing"
+      ]
+    },
+    "standard": {
+      "name": "to fit",
+      "etymology": [
+        {
+          "name": "fitten",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to fit",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta fitte fits fit -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/fit#etymonline_v_40046",
+        "https://www.etymonline.com/word/fit#etymonline_v_5982",
+        "https://www.merriam-webster.com/dictionary/fit#dictionary-entry-2",
+        "https://www.merriam-webster.com/dictionary/fit#word-history",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16119"
+      ],
+      "conjugations": {
+        "thirdPerson": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/fit#etymonline_v_40046",
-      "https://www.etymonline.com/word/fit#etymonline_v_5982",
-      "https://www.merriam-webster.com/dictionary/fit#dictionary-entry-2",
-      "https://www.merriam-webster.com/dictionary/fit#word-history",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16119"
-    ]
+    }
   },
   {
-    "name": "fit  -s -ter -test (adj, m n)",
-    "etymology": [
-      {
-        "name": "fit  -s -ter -test (adj, m n)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/fit#etymonline_v_5982",
-      "https://www.etymonline.com/word/fit#etymonline_v_5980",
-      "https://www.etymonline.com/word/fit#etymonline_v_40046",
-      "https://www.merriam-webster.com/dictionary/fit#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/fit#dictionary-entry-3",
-      "https://www.merriam-webster.com/dictionary/fit#dictionary-entry-4",
-      "https://www.merriam-webster.com/dictionary/fit#dictionary-entry-5"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "fit  -s -ter -test (adj, m n)",
+      "etymology": [
+        {
+          "name": "fit  -s -ter -test (adj, m n)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/fit#etymonline_v_5982",
+        "https://www.etymonline.com/word/fit#etymonline_v_5980",
+        "https://www.etymonline.com/word/fit#etymonline_v_40046",
+        "https://www.merriam-webster.com/dictionary/fit#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/fit#dictionary-entry-3",
+        "https://www.merriam-webster.com/dictionary/fit#dictionary-entry-4",
+        "https://www.merriam-webster.com/dictionary/fit#dictionary-entry-5"
+      ]
+    }
   }
 ]

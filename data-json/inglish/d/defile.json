@@ -1,44 +1,67 @@
 [
   {
-    "name": "to defile",
-    "etymology": [
-      {
-        "name": "fullo",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to defile",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "defouler",
-        "origin": "Old French"
-      },
-      {
-        "name": "fylan, fulian",
-        "origin": "Old English"
-      },
-      {
-        "name": "defoulen, filen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to defile",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta defyle -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "fullo",
+        "defouler",
+        "fylan, fulian",
+        "defoulen, filen",
+        "to defile",
+        "ta defyle -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to defile",
+      "etymology": [
+        {
+          "name": "fullo",
+          "origin": "Latin"
+        },
+        {
+          "name": "defouler",
+          "origin": "Old French"
+        },
+        {
+          "name": "fylan, fulian",
+          "origin": "Old English"
+        },
+        {
+          "name": "defoulen, filen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to defile",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta defyle -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/defile",
+        "https://www.oed.com/dictionary/defile_v1?tab=factsheet#7198875",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17438",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15955",
+        "https://bosworthtoller.com/12688",
+        "https://bosworthtoller.com/12836",
+        "https://anglo-norman.net/entry/defoler",
+        "https://latin-dictionary.net/definition/21129/fullo-fullonis"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/defile",
-      "https://www.oed.com/dictionary/defile_v1?tab=factsheet#7198875",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17438",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15955",
-      "https://bosworthtoller.com/12688",
-      "https://bosworthtoller.com/12836",
-      "https://anglo-norman.net/entry/defoler",
-      "https://latin-dictionary.net/definition/21129/fullo-fullonis"
-    ]
+    }
   }
 ]

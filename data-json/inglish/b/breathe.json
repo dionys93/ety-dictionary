@@ -1,54 +1,82 @@
 [
   {
-    "name": "to breathe",
-    "etymology": [
-      {
-        "name": "brethen",
-        "origin": "Middle English"
+    "verbDetails": {
+      "infinitive": "to breathe",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to breathe",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta brieþe -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "brethen",
+        "to breathe",
+        "ta brieþe -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to breathe",
+      "etymology": [
+        {
+          "name": "brethen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to breathe",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta brieþe -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/breathe#etymonline_v_17084",
+        "https://www.etymonline.com/word/breath#etymonline_v_17083",
+        "https://www.merriam-webster.com/dictionary/breathe",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5965"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/breathe#etymonline_v_17084",
-      "https://www.etymonline.com/word/breath#etymonline_v_17083",
-      "https://www.merriam-webster.com/dictionary/breathe",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5965"
-    ]
+    }
   },
   {
-    "name": "breath",
-    "etymology": [
-      {
-        "name": "bræð",
-        "origin": "Old English"
-      },
-      {
-        "name": "breath",
-        "origin": "Modern English"
-      },
-      {
-        "name": "breþ -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/breath#etymonline_v_17083",
-      "https://www.merriam-webster.com/dictionary/breath",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5958",
-      "https://bosworthtoller.com/4963"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "breath",
+      "etymology": [
+        {
+          "name": "bræð",
+          "origin": "Old English"
+        },
+        {
+          "name": "breath",
+          "origin": "Modern English"
+        },
+        {
+          "name": "breþ -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/breath#etymonline_v_17083",
+        "https://www.merriam-webster.com/dictionary/breath",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5958",
+        "https://bosworthtoller.com/4963"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

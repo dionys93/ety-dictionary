@@ -1,99 +1,143 @@
 [
   {
-    "name": "to inflate",
-    "etymology": [
-      {
-        "name": "flare, inflare, inflatus",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to inflate",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to inflate",
-        "origin": "Modern English"
-      },
-      {
-        "name": "to inflâte -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "flare, inflare, inflatus",
+        "to inflate",
+        "to inflâte -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to inflate",
+      "etymology": [
+        {
+          "name": "flare, inflare, inflatus",
+          "origin": "Latin"
+        },
+        {
+          "name": "to inflate",
+          "origin": "Modern English"
+        },
+        {
+          "name": "to inflâte -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/inflate",
+        "https://www.oed.com/dictionary/inflate_v?tab=factsheet#402973",
+        "https://latin-dictionary.net/definition/23676/inflo-inflare-inflavi-inflatus",
+        "https://latin-dictionary.net/definition/20751/flo-flare-flavi-flatus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/inflate",
-      "https://www.oed.com/dictionary/inflate_v?tab=factsheet#402973",
-      "https://latin-dictionary.net/definition/23676/inflo-inflare-inflavi-inflatus",
-      "https://latin-dictionary.net/definition/20751/flo-flare-flavi-flatus"
-    ]
+    }
   },
   {
-    "name": "inflation",
-    "etymology": [
-      {
-        "name": "inflare, inflatio, inflationem",
-        "origin": "Latin"
-      },
-      {
-        "name": "inflation",
-        "origin": "Modern English"
-      },
-      {
-        "name": "inflâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/inflation",
-      "https://www.oed.com/dictionary/inflation_n?tab=factsheet#403682",
-      "https://latin-dictionary.net/definition/23668/inflatio-inflationis",
-      "https://latin-dictionary.net/definition/23676/inflo-inflare-inflavi-inflatus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "inflation",
+      "etymology": [
+        {
+          "name": "inflare, inflatio, inflationem",
+          "origin": "Latin"
+        },
+        {
+          "name": "inflation",
+          "origin": "Modern English"
+        },
+        {
+          "name": "inflâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/inflation",
+        "https://www.oed.com/dictionary/inflation_n?tab=factsheet#403682",
+        "https://latin-dictionary.net/definition/23668/inflatio-inflationis",
+        "https://latin-dictionary.net/definition/23676/inflo-inflare-inflavi-inflatus"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "inflationary",
-    "etymology": [
-      {
-        "name": "inflationary",
-        "origin": "Modern English"
-      },
-      {
-        "name": "inflâcionairy",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/inflationary",
-      "https://www.etymonline.com/word/inflation",
-      "https://www.etymonline.com/word/-ary",
-      "https://www.oed.com/dictionary/inflationary_adj?tab=factsheet#404149"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "inflationary",
+      "etymology": [
+        {
+          "name": "inflationary",
+          "origin": "Modern English"
+        },
+        {
+          "name": "inflâcionairy",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/inflationary",
+        "https://www.etymonline.com/word/inflation",
+        "https://www.etymonline.com/word/-ary",
+        "https://www.oed.com/dictionary/inflationary_adj?tab=factsheet#404149"
+      ]
+    }
   },
   {
-    "name": "inflatable",
-    "etymology": [
-      {
-        "name": "inflatable",
-        "origin": "Modern English"
-      },
-      {
-        "name": "inflâtable -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "feminine noun"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "inflatable",
+      "etymology": [
+        {
+          "name": "inflatable",
+          "origin": "Modern English"
+        },
+        {
+          "name": "inflâtable -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/inflatable",
+        "https://www.etymonline.com/word/inflate",
+        "https://www.etymonline.com/word/-able",
+        "https://www.oed.com/dictionary/inflatable_adj?tab=factsheet#402741"
+      ],
+      "degrees": {
+        "positive": "table",
+        "comparative": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/inflatable",
-      "https://www.etymonline.com/word/inflate",
-      "https://www.etymonline.com/word/-able",
-      "https://www.oed.com/dictionary/inflatable_adj?tab=factsheet#402741"
-    ]
+    }
   }
 ]

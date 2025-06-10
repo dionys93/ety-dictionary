@@ -1,53 +1,77 @@
 [
   {
-    "name": "to steal",
-    "etymology": [
-      {
-        "name": "stelan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to steal",
+      "conjugations": {
+        "thirdPerson": "s"
       },
-      {
-        "name": "stelen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to steal",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta stiale -s stole stolen -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "stelan",
+        "stelen",
+        "to steal",
+        "ta stiale -s stole stolen -ing"
+      ]
+    },
+    "standard": {
+      "name": "to steal",
+      "etymology": [
+        {
+          "name": "stelan",
+          "origin": "Old English"
+        },
+        {
+          "name": "stelen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to steal",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta stiale -s stole stolen -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/steal#etymonline_v_22033",
+        "https://www.merriam-webster.com/dictionary/steal#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42759",
+        "https://bosworthtoller.com/28857"
+      ],
+      "conjugations": {
+        "thirdPerson": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/steal#etymonline_v_22033",
-      "https://www.merriam-webster.com/dictionary/steal#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42759",
-      "https://bosworthtoller.com/28857"
-    ]
+    }
   },
   {
-    "name": "steal",
-    "etymology": [
-      {
-        "name": "steal",
-        "origin": "Modern English"
-      },
-      {
-        "name": "stial -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/steal#etymonline_v_46959",
-      "https://www.etymonline.com/word/steal#etymonline_v_22033",
-      "https://www.merriam-webster.com/dictionary/steal#dictionary-entry-2"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "steal",
+      "etymology": [
+        {
+          "name": "steal",
+          "origin": "Modern English"
+        },
+        {
+          "name": "stial -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/steal#etymonline_v_46959",
+        "https://www.etymonline.com/word/steal#etymonline_v_22033",
+        "https://www.merriam-webster.com/dictionary/steal#dictionary-entry-2"
+      ],
+      "number": "plural"
+    }
   }
 ]

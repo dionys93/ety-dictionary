@@ -1,27 +1,33 @@
 [
   {
-    "name": "jaguar",
-    "etymology": [
-      {
-        "name": "jaguara",
-        "origin": "Inglish"
-      },
-      {
-        "name": "jaguar",
-        "origin": "Portuguese"
-      },
-      {
-        "name": "jaguaer -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/jaguar#etymonline_v_1641",
-      "https://www.merriam-webster.com/dictionary/jaguar",
-      "https://www.collinsdictionary.com/us/dictionary/portuguese-english/jaguar"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "jaguar",
+      "etymology": [
+        {
+          "name": "jaguara",
+          "origin": "Inglish"
+        },
+        {
+          "name": "jaguar",
+          "origin": "Portuguese"
+        },
+        {
+          "name": "jaguaer -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/jaguar#etymonline_v_1641",
+        "https://www.merriam-webster.com/dictionary/jaguar",
+        "https://www.collinsdictionary.com/us/dictionary/portuguese-english/jaguar"
+      ]
+    }
   }
 ]

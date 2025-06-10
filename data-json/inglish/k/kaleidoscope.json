@@ -1,51 +1,69 @@
 [
   {
-    "name": "kaleidoscope",
-    "etymology": [
-      {
-        "name": "καλός + εἶδος + scope",
-        "origin": "Ancient Greek"
-      },
-      {
-        "name": "kaleidoscope",
-        "origin": "Modern English"
-      },
-      {
-        "name": "kalîdoscope -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/kaleidoscope#etymonline_v_1769",
-      "https://www.merriam-webster.com/dictionary/kaleidoscope",
-      "https://www.etymonline.com/word/-scope#etymonline_v_38337",
-      "https://lsj.gr/wiki/%CE%B5%E1%BC%B6%CE%B4%CE%BF%CF%82",
-      "https://lsj.gr/wiki/%CE%BA%CE%B1%CE%BB%CF%8C%CF%82"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "kaleidoscope",
+      "etymology": [
+        {
+          "name": "καλός + εἶδος + scope",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "kaleidoscope",
+          "origin": "Modern English"
+        },
+        {
+          "name": "kalîdoscope -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/kaleidoscope#etymonline_v_1769",
+        "https://www.merriam-webster.com/dictionary/kaleidoscope",
+        "https://www.etymonline.com/word/-scope#etymonline_v_38337",
+        "https://lsj.gr/wiki/%CE%B5%E1%BC%B6%CE%B4%CE%BF%CF%82",
+        "https://lsj.gr/wiki/%CE%BA%CE%B1%CE%BB%CF%8C%CF%82"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "kaleidoscopic",
-    "etymology": [
-      {
-        "name": "kaleidoscopic",
-        "origin": "Modern English"
-      },
-      {
-        "name": "kalîdoscópic -ly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "kaleidoscopic",
+      "etymology": [
+        {
+          "name": "kaleidoscopic",
+          "origin": "Modern English"
+        },
+        {
+          "name": "kalîdoscópic -ly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/kaleidoscopic#etymonline_v_35270",
+        "https://www.etymonline.com/word/kaleidoscope#etymonline_v_1769",
+        "https://www.etymonline.com/word/-ic#etymonline_v_32037",
+        "https://www.merriam-webster.com/dictionary/kaleidoscopic"
+      ],
+      "degrees": {
+        "positive": "pic",
+        "comparative": "ly"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/kaleidoscopic#etymonline_v_35270",
-      "https://www.etymonline.com/word/kaleidoscope#etymonline_v_1769",
-      "https://www.etymonline.com/word/-ic#etymonline_v_32037",
-      "https://www.merriam-webster.com/dictionary/kaleidoscopic"
-    ]
+    }
   }
 ]

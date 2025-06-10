@@ -1,46 +1,69 @@
 [
   {
-    "name": "to cut",
-    "etymology": [
-      {
-        "name": "?/cyttan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to cut",
+      "conjugations": {
+        "thirdPerson": "ing"
       },
-      {
-        "name": "cutten",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to cut",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta cutte cuts cut -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "?/cyttan",
+        "cutten",
+        "to cut",
+        "ta cutte cuts cut -ing"
+      ]
+    },
+    "standard": {
+      "name": "to cut",
+      "etymology": [
+        {
+          "name": "?/cyttan",
+          "origin": "Old English"
+        },
+        {
+          "name": "cutten",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to cut",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta cutte cuts cut -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cut#etymonline_v_509",
+        "https://www.merriam-webster.com/dictionary/cut#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9266"
+      ],
+      "conjugations": {
+        "thirdPerson": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cut#etymonline_v_509",
-      "https://www.merriam-webster.com/dictionary/cut#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9266"
-    ]
+    }
   },
   {
-    "name": "cut  -s (m n)",
-    "etymology": [
-      {
-        "name": "cut  -s (m n)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cut#etymonline_v_44394",
-      "https://www.etymonline.com/word/cut#etymonline_v_509",
-      "https://www.merriam-webster.com/dictionary/cut#dictionary-entry-2",
-      "https://www.merriam-webster.com/dictionary/cut#dictionary-entry-3"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "cut  -s (m n)",
+      "etymology": [
+        {
+          "name": "cut  -s (m n)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cut#etymonline_v_44394",
+        "https://www.etymonline.com/word/cut#etymonline_v_509",
+        "https://www.merriam-webster.com/dictionary/cut#dictionary-entry-2",
+        "https://www.merriam-webster.com/dictionary/cut#dictionary-entry-3"
+      ]
+    }
   }
 ]

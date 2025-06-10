@@ -1,32 +1,53 @@
 [
   {
-    "name": "to mow",
-    "etymology": [
-      {
-        "name": "mawan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to mow",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "mouen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to mow",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta moɯe -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "mawan",
+        "mouen",
+        "to mow",
+        "ta moɯe -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to mow",
+      "etymology": [
+        {
+          "name": "mawan",
+          "origin": "Old English"
+        },
+        {
+          "name": "mouen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to mow",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta moɯe -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/mow#etymonline_v_18442",
+        "https://www.oed.com/dictionary/mow_v1?tab=factsheet#35827969",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED28780/track?counter=3&search_id=33335248",
+        "https://bosworthtoller.com/22453"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/mow#etymonline_v_18442",
-      "https://www.oed.com/dictionary/mow_v1?tab=factsheet#35827969",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED28780/track?counter=3&search_id=33335248",
-      "https://bosworthtoller.com/22453"
-    ]
+    }
   }
 ]

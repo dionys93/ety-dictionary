@@ -1,274 +1,375 @@
 [
   {
-    "name": "to circle",
-    "etymology": [
-      {
-        "name": "cerclen",
-        "origin": "Middle English"
+    "verbDetails": {
+      "infinitive": "to circle",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to circle",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta circle -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "cerclen",
+        "to circle",
+        "ta circle -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to circle",
+      "etymology": [
+        {
+          "name": "cerclen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to circle",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta circle -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/circle#etymonline_v_45471",
+        "https://www.oed.com/dictionary/circle_v?tab=factsheet#9445822",
+        "https://www.merriam-webster.com/dictionary/circle#dictionary-entry-2",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7113"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/circle#etymonline_v_45471",
-      "https://www.oed.com/dictionary/circle_v?tab=factsheet#9445822",
-      "https://www.merriam-webster.com/dictionary/circle#dictionary-entry-2",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7113"
-    ]
+    }
   },
   {
-    "name": "circle",
-    "etymology": [
-      {
-        "name": "circus, circulus",
-        "origin": "Latin"
-      },
-      {
-        "name": "cercle",
-        "origin": "Old French"
-      },
-      {
-        "name": "circle",
-        "origin": "Modern English"
-      },
-      {
-        "name": "circle, circuls",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/circle#etymonline_v_13717",
-      "https://www.oed.com/dictionary/circle_n?tab=pronunciation#9443621",
-      "https://www.anglo-norman.net/entry/cercle",
-      "https://latin-dictionary.net/definition/9819/circulus-circuli",
-      "https://latin-dictionary.net/definition/10122/circus-circi"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "circle",
+      "etymology": [
+        {
+          "name": "circus, circulus",
+          "origin": "Latin"
+        },
+        {
+          "name": "cercle",
+          "origin": "Old French"
+        },
+        {
+          "name": "circle",
+          "origin": "Modern English"
+        },
+        {
+          "name": "circle, circuls",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/circle#etymonline_v_13717",
+        "https://www.oed.com/dictionary/circle_n?tab=pronunciation#9443621",
+        "https://www.anglo-norman.net/entry/cercle",
+        "https://latin-dictionary.net/definition/9819/circulus-circuli",
+        "https://latin-dictionary.net/definition/10122/circus-circi"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "circular",
-    "etymology": [
-      {
-        "name": "circulus, circularis",
-        "origin": "Latin"
-      },
-      {
-        "name": "circuler",
-        "origin": "Old French"
-      },
-      {
-        "name": "circular",
-        "origin": "Modern English"
-      },
-      {
-        "name": "circ̃ular -s  -ly -ness",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "masculine noun"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "circular",
+      "etymology": [
+        {
+          "name": "circulus, circularis",
+          "origin": "Latin"
+        },
+        {
+          "name": "circuler",
+          "origin": "Old French"
+        },
+        {
+          "name": "circular",
+          "origin": "Modern English"
+        },
+        {
+          "name": "circ̃ular -s  -ly -ness",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/circular#etymonline_v_13719",
+        "https://www.etymonline.com/word/circular#etymonline_v_45472",
+        "https://www.merriam-webster.com/dictionary/circular#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/circular#dictionary-entry-2",
+        "https://www.oed.com/dictionary/circular_adj?tab=pronunciation#9450310",
+        "https://latin-dictionary.net/definition/9811/circularis-circularis-circulare",
+        "https://latin-dictionary.net/definition/9819/circulus-circuli"
+      ],
+      "degrees": {
+        "positive": "ular",
+        "comparative": "s",
+        "superlative": "ly"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/circular#etymonline_v_13719",
-      "https://www.etymonline.com/word/circular#etymonline_v_45472",
-      "https://www.merriam-webster.com/dictionary/circular#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/circular#dictionary-entry-2",
-      "https://www.oed.com/dictionary/circular_adj?tab=pronunciation#9450310",
-      "https://latin-dictionary.net/definition/9811/circularis-circularis-circulare",
-      "https://latin-dictionary.net/definition/9819/circulus-circuli"
-    ]
+    }
   },
   {
-    "name": "circularity",
-    "etymology": [
-      {
-        "name": "circularity",
-        "origin": "Modern English"
-      },
-      {
-        "name": "circ̃ulâretie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/circularity#etymonline_v_35935",
-      "https://www.merriam-webster.com/dictionary/circularity",
-      "https://www.oed.com/dictionary/circularity_n?tab=factsheet#9451249"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "circularity",
+      "etymology": [
+        {
+          "name": "circularity",
+          "origin": "Modern English"
+        },
+        {
+          "name": "circ̃ulâretie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/circularity#etymonline_v_35935",
+        "https://www.merriam-webster.com/dictionary/circularity",
+        "https://www.oed.com/dictionary/circularity_n?tab=factsheet#9451249"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to circulate",
-    "etymology": [
-      {
-        "name": "circulus, circulare, circulatus",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to circulate",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to circulate",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta circ̃ulete -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "circulus, circulare, circulatus",
+        "to circulate",
+        "ta circ̃ulete -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to circulate",
+      "etymology": [
+        {
+          "name": "circulus, circulare, circulatus",
+          "origin": "Latin"
+        },
+        {
+          "name": "to circulate",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta circ̃ulete -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/circulate#etymonline_v_28123",
+        "https://www.merriam-webster.com/dictionary/circulate",
+        "https://www.oed.com/dictionary/circulate_v?tab=factsheet#9451796",
+        "https://latin-dictionary.net/definition/9817/circulo-circulare-circulavi-circulatus",
+        "https://latin-dictionary.net/definition/9817/circulo-circulare-circulavi-circulatus",
+        "https://latin-dictionary.net/definition/9819/circulus-circuli"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/circulate#etymonline_v_28123",
-      "https://www.merriam-webster.com/dictionary/circulate",
-      "https://www.oed.com/dictionary/circulate_v?tab=factsheet#9451796",
-      "https://latin-dictionary.net/definition/9817/circulo-circulare-circulavi-circulatus",
-      "https://latin-dictionary.net/definition/9817/circulo-circulare-circulavi-circulatus",
-      "https://latin-dictionary.net/definition/9819/circulus-circuli"
-    ]
+    }
   },
   {
-    "name": "circulation",
-    "etymology": [
-      {
-        "name": "circulus, circulare, circulatio",
-        "origin": "Latin"
-      },
-      {
-        "name": "circulacioun",
-        "origin": "Middle English"
-      },
-      {
-        "name": "circulation",
-        "origin": "Modern English"
-      },
-      {
-        "name": "circ̃ulâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/circulation#etymonline_v_13720",
-      "https://www.collinsdictionary.com/us/dictionary/english/circulation",
-      "https://www.oed.com/dictionary/circulation_n?tab=factsheet#9453499",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7756",
-      "https://latin-dictionary.net/definition/9813/circulatio-circulationis",
-      "https://latin-dictionary.net/definition/9817/circulo-circulare-circulavi-circulatus",
-      "https://latin-dictionary.net/definition/9819/circulus-circuli"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "circulation",
+      "etymology": [
+        {
+          "name": "circulus, circulare, circulatio",
+          "origin": "Latin"
+        },
+        {
+          "name": "circulacioun",
+          "origin": "Middle English"
+        },
+        {
+          "name": "circulation",
+          "origin": "Modern English"
+        },
+        {
+          "name": "circ̃ulâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/circulation#etymonline_v_13720",
+        "https://www.collinsdictionary.com/us/dictionary/english/circulation",
+        "https://www.oed.com/dictionary/circulation_n?tab=factsheet#9453499",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7756",
+        "https://latin-dictionary.net/definition/9813/circulatio-circulationis",
+        "https://latin-dictionary.net/definition/9817/circulo-circulare-circulavi-circulatus",
+        "https://latin-dictionary.net/definition/9819/circulus-circuli"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "circulator",
-    "etymology": [
-      {
-        "name": "circulator",
-        "origin": "Latin"
-      },
-      {
-        "name": "circ̃ulaitor -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/circulator#etymonline_v_47204",
-      "https://www.collinsdictionary.com/us/dictionary/english/circulator"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "circulator",
+      "etymology": [
+        {
+          "name": "circulator",
+          "origin": "Latin"
+        },
+        {
+          "name": "circ̃ulaitor -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/circulator#etymonline_v_47204",
+        "https://www.collinsdictionary.com/us/dictionary/english/circulator"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "circulatory",
-    "etymology": [
-      {
-        "name": "circulare, circulator, circulatorius",
-        "origin": "Latin"
-      },
-      {
-        "name": "circulatoire",
-        "origin": "French"
-      },
-      {
-        "name": "circulatory",
-        "origin": "Modern English"
-      },
-      {
-        "name": "circ̃ulatory",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/circulatory#etymonline_v_28125",
-      "https://www.merriam-webster.com/dictionary/circulatory",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/circulatoire/16020",
-      "https://latin-dictionary.net/definition/9814/circulator-circulatoris",
-      "https://latin-dictionary.net/definition/9817/circulo-circulare-circulavi-circulatus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "circulatory",
+      "etymology": [
+        {
+          "name": "circulare, circulator, circulatorius",
+          "origin": "Latin"
+        },
+        {
+          "name": "circulatoire",
+          "origin": "French"
+        },
+        {
+          "name": "circulatory",
+          "origin": "Modern English"
+        },
+        {
+          "name": "circ̃ulatory",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/circulatory#etymonline_v_28125",
+        "https://www.merriam-webster.com/dictionary/circulatory",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/circulatoire/16020",
+        "https://latin-dictionary.net/definition/9814/circulator-circulatoris",
+        "https://latin-dictionary.net/definition/9817/circulo-circulare-circulavi-circulatus"
+      ]
+    }
   },
   {
-    "name": "circus",
-    "etymology": [
-      {
-        "name": "κρίκος",
-        "origin": "Ancient Greek"
-      },
-      {
-        "name": "circus",
-        "origin": "Latin"
-      },
-      {
-        "name": "circoʃ -ses",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/circus#etymonline_v_13730",
-      "https://www.merriam-webster.com/dictionary/circus",
-      "https://www.oed.com/dictionary/circus_n?tab=pronunciation#9242545",
-      "https://latin-dictionary.net/definition/10122/circus-circi",
-      "https://lsj.gr/wiki/%CE%BA%CF%81%CE%AF%CE%BA%CE%BF%CF%82"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "circus",
+      "etymology": [
+        {
+          "name": "κρίκος",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "circus",
+          "origin": "Latin"
+        },
+        {
+          "name": "circoʃ -ses",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/circus#etymonline_v_13730",
+        "https://www.merriam-webster.com/dictionary/circus",
+        "https://www.oed.com/dictionary/circus_n?tab=pronunciation#9242545",
+        "https://latin-dictionary.net/definition/10122/circus-circi",
+        "https://lsj.gr/wiki/%CE%BA%CF%81%CE%AF%CE%BA%CE%BF%CF%82"
+      ]
+    }
   },
   {
-    "name": "circlet  -s (m n)",
-    "etymology": [
-      {
-        "name": "cercle, cerclet",
-        "origin": "French"
-      },
-      {
-        "name": "circlet  -s (m n)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/circlet#etymonline_v_28121",
-      "https://www.merriam-webster.com/dictionary/circlet",
-      "https://www.oed.com/dictionary/circlet_n?tab=factsheet#9446498",
-      "https://www.anglo-norman.net/entry/cerclet",
-      "https://www.anglo-norman.net/entry/cercle"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "circlet  -s (m n)",
+      "etymology": [
+        {
+          "name": "cercle, cerclet",
+          "origin": "French"
+        },
+        {
+          "name": "circlet  -s (m n)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/circlet#etymonline_v_28121",
+        "https://www.merriam-webster.com/dictionary/circlet",
+        "https://www.oed.com/dictionary/circlet_n?tab=factsheet#9446498",
+        "https://www.anglo-norman.net/entry/cerclet",
+        "https://www.anglo-norman.net/entry/cercle"
+      ]
+    }
   }
 ]

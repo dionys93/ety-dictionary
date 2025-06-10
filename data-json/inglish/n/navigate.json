@@ -1,211 +1,285 @@
 [
   {
-    "name": "navy",
-    "etymology": [
-      {
-        "name": "navis, navigium, navigia",
-        "origin": "Latin"
-      },
-      {
-        "name": "navie",
-        "origin": "Old French"
-      },
-      {
-        "name": "navy",
-        "origin": "Modern English"
-      },
-      {
-        "name": "nâvie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun",
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/navy#etymonline_v_2338",
-      "https://www.oed.com/dictionary/navy_n?tab=factsheet#34943619",
-      "https://anglo-norman.net/entry/navie",
-      "https://latin-dictionary.net/definition/27673/navigium-navigi-i",
-      "https://latin-dictionary.net/definition/27675/navis-navis"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "navy",
+      "etymology": [
+        {
+          "name": "navis, navigium, navigia",
+          "origin": "Latin"
+        },
+        {
+          "name": "navie",
+          "origin": "Old French"
+        },
+        {
+          "name": "navy",
+          "origin": "Modern English"
+        },
+        {
+          "name": "nâvie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun",
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/navy#etymonline_v_2338",
+        "https://www.oed.com/dictionary/navy_n?tab=factsheet#34943619",
+        "https://anglo-norman.net/entry/navie",
+        "https://latin-dictionary.net/definition/27673/navigium-navigi-i",
+        "https://latin-dictionary.net/definition/27675/navis-navis"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "naval",
-    "etymology": [
-      {
-        "name": "navis, navalis",
-        "origin": "Latin"
-      },
-      {
-        "name": "naval",
-        "origin": "Old French"
-      },
-      {
-        "name": "nâval",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/naval#etymonline_v_2331",
-      "https://www.etymonline.com/word/navigate#etymonline_v_31051",
-      "https://www.oed.com/dictionary/naval_adj?tab=factsheet#34930941",
-      "https://anglo-norman.net/entry/naval",
-      "https://latin-dictionary.net/definition/27664/navalis-navalis-navale",
-      "https://latin-dictionary.net/definition/27675/navis-navis"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "naval",
+      "etymology": [
+        {
+          "name": "navis, navalis",
+          "origin": "Latin"
+        },
+        {
+          "name": "naval",
+          "origin": "Old French"
+        },
+        {
+          "name": "nâval",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/naval#etymonline_v_2331",
+        "https://www.etymonline.com/word/navigate#etymonline_v_31051",
+        "https://www.oed.com/dictionary/naval_adj?tab=factsheet#34930941",
+        "https://anglo-norman.net/entry/naval",
+        "https://latin-dictionary.net/definition/27664/navalis-navalis-navale",
+        "https://latin-dictionary.net/definition/27675/navis-navis"
+      ]
+    }
   },
   {
-    "name": "to navigate",
-    "etymology": [
-      {
-        "name": "navis + agere, navigare, navigatus",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to navigate",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to navigate",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta navigaite -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "navis + agere, navigare, navigatus",
+        "to navigate",
+        "ta navigaite -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to navigate",
+      "etymology": [
+        {
+          "name": "navis + agere, navigare, navigatus",
+          "origin": "Latin"
+        },
+        {
+          "name": "to navigate",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta navigaite -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/navigate#etymonline_v_31051",
+        "https://www.etymonline.com/word/navigation#etymonline_v_2335",
+        "https://www.merriam-webster.com/dictionary/navigate",
+        "https://www.oed.com/dictionary/navigate_v?tab=factsheet#34939819",
+        "https://latin-dictionary.net/definition/27674/navigo-navigare-navigavi-navigatus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/navigate#etymonline_v_31051",
-      "https://www.etymonline.com/word/navigation#etymonline_v_2335",
-      "https://www.merriam-webster.com/dictionary/navigate",
-      "https://www.oed.com/dictionary/navigate_v?tab=factsheet#34939819",
-      "https://latin-dictionary.net/definition/27674/navigo-navigare-navigavi-navigatus"
-    ]
+    }
   },
   {
-    "name": "navigator",
-    "etymology": [
-      {
-        "name": "navigator",
-        "origin": "Latin"
-      },
-      {
-        "name": "navigaitor -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/navigator#etymonline_v_2336",
-      "https://www.oed.com/dictionary/navigator_n?tab=factsheet#34942419",
-      "https://latin-dictionary.net/definition/27674/navigo-navigare-navigavi-navigatus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "navigator",
+      "etymology": [
+        {
+          "name": "navigator",
+          "origin": "Latin"
+        },
+        {
+          "name": "navigaitor -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/navigator#etymonline_v_2336",
+        "https://www.oed.com/dictionary/navigator_n?tab=factsheet#34942419",
+        "https://latin-dictionary.net/definition/27674/navigo-navigare-navigavi-navigatus"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "navigation",
-    "etymology": [
-      {
-        "name": "navigatio",
-        "origin": "Latin"
-      },
-      {
-        "name": "navigation",
-        "origin": "French"
-      },
-      {
-        "name": "navigâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/navigation#etymonline_v_2335",
-      "https://www.merriam-webster.com/dictionary/navigation"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "navigation",
+      "etymology": [
+        {
+          "name": "navigatio",
+          "origin": "Latin"
+        },
+        {
+          "name": "navigation",
+          "origin": "French"
+        },
+        {
+          "name": "navigâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/navigation#etymonline_v_2335",
+        "https://www.merriam-webster.com/dictionary/navigation"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "navigational",
-    "etymology": [
-      {
-        "name": "navigational",
-        "origin": "Modern English"
-      },
-      {
-        "name": "navigâcional -ly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "navigational",
+      "etymology": [
+        {
+          "name": "navigational",
+          "origin": "Modern English"
+        },
+        {
+          "name": "navigâcional -ly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/navigational#etymonline_v_45364",
+        "https://www.etymonline.com/word/navigation#etymonline_v_2335",
+        "https://www.etymonline.com/word/-al#etymonline_v_32845",
+        "https://www.oed.com/dictionary/navigational_adj?tab=factsheet#11269566"
+      ],
+      "degrees": {
+        "positive": "cional",
+        "comparative": "ly"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/navigational#etymonline_v_45364",
-      "https://www.etymonline.com/word/navigation#etymonline_v_2335",
-      "https://www.etymonline.com/word/-al#etymonline_v_32845",
-      "https://www.oed.com/dictionary/navigational_adj?tab=factsheet#11269566"
-    ]
+    }
   },
   {
-    "name": "navicular",
-    "etymology": [
-      {
-        "name": "navis, navicula, navicularius",
-        "origin": "Latin"
-      },
-      {
-        "name": "navicular",
-        "origin": "Modern English"
-      },
-      {
-        "name": "navic̃ular",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/navicular#etymonline_v_35433",
-      "https://www.merriam-webster.com/dictionary/navicular",
-      "https://www.oed.com/dictionary/navicular_adj?tab=factsheet#34937925",
-      "https://latin-dictionary.net/definition/27668/navicularius-navicularia-navicularium",
-      "https://latin-dictionary.net/definition/27666/navicula-naviculae",
-      "https://latin-dictionary.net/definition/27675/navis-navis"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "navicular",
+      "etymology": [
+        {
+          "name": "navis, navicula, navicularius",
+          "origin": "Latin"
+        },
+        {
+          "name": "navicular",
+          "origin": "Modern English"
+        },
+        {
+          "name": "navic̃ular",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/navicular#etymonline_v_35433",
+        "https://www.merriam-webster.com/dictionary/navicular",
+        "https://www.oed.com/dictionary/navicular_adj?tab=factsheet#34937925",
+        "https://latin-dictionary.net/definition/27668/navicularius-navicularia-navicularium",
+        "https://latin-dictionary.net/definition/27666/navicula-naviculae",
+        "https://latin-dictionary.net/definition/27675/navis-navis"
+      ]
+    }
   },
   {
-    "name": "nave",
-    "etymology": [
-      {
-        "name": "navis, navem",
-        "origin": "Latin"
-      },
-      {
-        "name": "nave",
-        "origin": "Modern English"
-      },
-      {
-        "name": "néf -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/nave#etymonline_v_2332",
-      "https://www.oed.com/dictionary/nave_n2?tab=factsheet#34933556",
-      "https://www.collinsdictionary.com/us/dictionary/french-english/nef",
-      "https://www.merriam-webster.com/dictionary/nave"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "nave",
+      "etymology": [
+        {
+          "name": "navis, navem",
+          "origin": "Latin"
+        },
+        {
+          "name": "nave",
+          "origin": "Modern English"
+        },
+        {
+          "name": "néf -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/nave#etymonline_v_2332",
+        "https://www.oed.com/dictionary/nave_n2?tab=factsheet#34933556",
+        "https://www.collinsdictionary.com/us/dictionary/french-english/nef",
+        "https://www.merriam-webster.com/dictionary/nave"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

@@ -1,61 +1,90 @@
 [
   {
-    "name": "cause  -s (m n)",
-    "etymology": [
-      {
-        "name": "causa",
-        "origin": "Latin"
-      },
-      {
-        "name": "cause  -s (m n)",
-        "origin": "Old French"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cause#etymonline_v_5509",
-      "https://www.merriam-webster.com/dictionary/cause#dictionary-entry-1",
-      "https://www.anglo-norman.net/entry/cause",
-      "https://latin-dictionary.net/definition/8671/causa-causae"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "cause  -s (m n)",
+      "etymology": [
+        {
+          "name": "causa",
+          "origin": "Latin"
+        },
+        {
+          "name": "cause  -s (m n)",
+          "origin": "Old French"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cause#etymonline_v_5509",
+        "https://www.merriam-webster.com/dictionary/cause#dictionary-entry-1",
+        "https://www.anglo-norman.net/entry/cause",
+        "https://latin-dictionary.net/definition/8671/causa-causae"
+      ]
+    }
   },
   {
-    "name": "to cause",
-    "etymology": [
-      {
-        "name": "causa",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to cause",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "causare",
-        "origin": "Medieval Latin"
-      },
-      {
-        "name": "causer",
-        "origin": "Old French"
-      },
-      {
-        "name": "causen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to cause",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta cause -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "causa",
+        "causare",
+        "causer",
+        "causen",
+        "to cause",
+        "ta cause -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to cause",
+      "etymology": [
+        {
+          "name": "causa",
+          "origin": "Latin"
+        },
+        {
+          "name": "causare",
+          "origin": "Medieval Latin"
+        },
+        {
+          "name": "causer",
+          "origin": "Old French"
+        },
+        {
+          "name": "causen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to cause",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta cause -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cause#etymonline_v_45487",
+        "https://www.merriam-webster.com/dictionary/cause#dictionary-entry-2",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6992",
+        "https://www.anglo-norman.net/entry/causer",
+        "https://latin-dictionary.net/definition/8693/causo-causare-causavi-causatus",
+        "https://latin-dictionary.net/definition/8671/causa-causae"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cause#etymonline_v_45487",
-      "https://www.merriam-webster.com/dictionary/cause#dictionary-entry-2",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6992",
-      "https://www.anglo-norman.net/entry/causer",
-      "https://latin-dictionary.net/definition/8693/causo-causare-causavi-causatus",
-      "https://latin-dictionary.net/definition/8671/causa-causae"
-    ]
+    }
   }
 ]

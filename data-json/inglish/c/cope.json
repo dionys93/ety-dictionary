@@ -1,31 +1,52 @@
 [
   {
-    "name": "to cope",
-    "etymology": [
-      {
-        "name": "couper",
-        "origin": "Old French"
+    "verbDetails": {
+      "infinitive": "to cope",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "coupen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to cope",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta cope -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "couper",
+        "coupen",
+        "to cope",
+        "ta cope -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to cope",
+      "etymology": [
+        {
+          "name": "couper",
+          "origin": "Old French"
+        },
+        {
+          "name": "coupen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to cope",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta cope -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cope",
+        "https://www.oed.com/dictionary/cope_v2?tab=factsheet#8333414",
+        "https://anglo-norman.net/entry/couper_3"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cope",
-      "https://www.oed.com/dictionary/cope_v2?tab=factsheet#8333414",
-      "https://anglo-norman.net/entry/couper_3"
-    ]
+    }
   }
 ]

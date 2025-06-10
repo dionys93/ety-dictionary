@@ -1,51 +1,64 @@
 [
   {
-    "name": "to sit",
-    "etymology": [
-      {
-        "name": "sittan",
-        "origin": "Old English"
-      },
-      {
-        "name": "sitten",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to sit",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta sitte sits sate sitting",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/sit#etymonline_v_23580",
-      "https://www.merriam-webster.com/dictionary/sit#dictionary-entry-1",
-      "https://www.oed.com/dictionary/sit_v?tab=factsheet#22635901",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40572",
-      "https://bosworthtoller.com/27890"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "to sit",
+      "etymology": [
+        {
+          "name": "sittan",
+          "origin": "Old English"
+        },
+        {
+          "name": "sitten",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to sit",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta sitte sits sate sitting",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/sit#etymonline_v_23580",
+        "https://www.merriam-webster.com/dictionary/sit#dictionary-entry-1",
+        "https://www.oed.com/dictionary/sit_v?tab=factsheet#22635901",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40572",
+        "https://bosworthtoller.com/27890"
+      ]
+    }
   },
   {
-    "name": "sitter",
-    "etymology": [
-      {
-        "name": "sitter",
-        "origin": "Middle English"
-      },
-      {
-        "name": "sitteur, sittor -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/sitter#etymonline_v_48685",
-      "https://www.etymonline.com/word/sit#etymonline_v_23580",
-      "https://www.merriam-webster.com/dictionary/sitter"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "sitter",
+      "etymology": [
+        {
+          "name": "sitter",
+          "origin": "Middle English"
+        },
+        {
+          "name": "sitteur, sittor -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/sitter#etymonline_v_48685",
+        "https://www.etymonline.com/word/sit#etymonline_v_23580",
+        "https://www.merriam-webster.com/dictionary/sitter"
+      ],
+      "number": "plural"
+    }
   }
 ]

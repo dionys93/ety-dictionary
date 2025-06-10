@@ -1,75 +1,111 @@
 [
   {
-    "name": "to disrupt",
-    "etymology": [
-      {
-        "name": "disrumpere, disruptus",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to disrupt",
+      "conjugations": {
+        "thirdPerson": "d",
+        "pastTense": "ing"
       },
-      {
-        "name": "to disrupt",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta desropte desrops -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "disrumpere, disruptus",
+        "to disrupt",
+        "ta desropte desrops -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to disrupt",
+      "etymology": [
+        {
+          "name": "disrumpere, disruptus",
+          "origin": "Latin"
+        },
+        {
+          "name": "to disrupt",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta desropte desrops -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/disrupt#etymonline_v_31531",
+        "https://www.oed.com/dictionary/disrupt_v?tab=factsheet#6460910",
+        "https://latin-dictionary.net/definition/18147/disrumpo-disrumpere-disrupi-disruptus"
+      ],
+      "conjugations": {
+        "thirdPerson": "d",
+        "pastTense": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/disrupt#etymonline_v_31531",
-      "https://www.oed.com/dictionary/disrupt_v?tab=factsheet#6460910",
-      "https://latin-dictionary.net/definition/18147/disrumpo-disrumpere-disrupi-disruptus"
-    ]
+    }
   },
   {
-    "name": "disruption",
-    "etymology": [
-      {
-        "name": "dis + rumpere, disrumpere, disruptio",
-        "origin": "Latin"
-      },
-      {
-        "name": "disruption",
-        "origin": "Modern English"
-      },
-      {
-        "name": "desropȶon -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/disruption#etymonline_v_11491",
-      "https://www.oed.com/dictionary/disruption_n?tab=factsheet#6461202",
-      "https://latin-dictionary.net/definition/18147/disrumpo-disrumpere-disrupi-disruptus",
-      "https://latin-dictionary.net/definition/33782/rumpo-rumpere-rupi-ruptus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "disruption",
+      "etymology": [
+        {
+          "name": "dis + rumpere, disrumpere, disruptio",
+          "origin": "Latin"
+        },
+        {
+          "name": "disruption",
+          "origin": "Modern English"
+        },
+        {
+          "name": "desropȶon -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/disruption#etymonline_v_11491",
+        "https://www.oed.com/dictionary/disruption_n?tab=factsheet#6461202",
+        "https://latin-dictionary.net/definition/18147/disrumpo-disrumpere-disrupi-disruptus",
+        "https://latin-dictionary.net/definition/33782/rumpo-rumpere-rupi-ruptus"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "disruptive",
-    "etymology": [
-      {
-        "name": "disruptive",
-        "origin": "Modern English"
-      },
-      {
-        "name": "desroptif -vly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "disruptive",
+      "etymology": [
+        {
+          "name": "disruptive",
+          "origin": "Modern English"
+        },
+        {
+          "name": "desroptif -vly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/disruptive#etymonline_v_32000",
+        "https://www.oed.com/dictionary/disruptive_adj?tab=factsheet#6461406",
+        "https://www.etymonline.com/word/disrupt#etymonline_v_31531",
+        "https://www.etymonline.com/word/-ive#etymonline_v_32842"
+      ],
+      "degrees": {
+        "positive": "desroptif",
+        "comparative": "vly"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/disruptive#etymonline_v_32000",
-      "https://www.oed.com/dictionary/disruptive_adj?tab=factsheet#6461406",
-      "https://www.etymonline.com/word/disrupt#etymonline_v_31531",
-      "https://www.etymonline.com/word/-ive#etymonline_v_32842"
-    ]
+    }
   }
 ]

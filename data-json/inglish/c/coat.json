@@ -1,41 +1,66 @@
 [
   {
-    "name": "coat  -s (m n)",
-    "etymology": [
-      {
-        "name": "cote",
-        "origin": "Old French"
-      },
-      {
-        "name": "coat  -s (m n)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/coat#etymonline_v_15734",
-      "https://www.merriam-webster.com/dictionary/coat#dictionary-entry-1",
-      "https://anglo-norman.net/entry/cote_1"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "coat  -s (m n)",
+      "etymology": [
+        {
+          "name": "cote",
+          "origin": "Old French"
+        },
+        {
+          "name": "coat  -s (m n)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/coat#etymonline_v_15734",
+        "https://www.merriam-webster.com/dictionary/coat#dictionary-entry-1",
+        "https://anglo-norman.net/entry/cote_1"
+      ]
+    }
   },
   {
-    "name": "to coat",
-    "etymology": [
-      {
-        "name": "to coat",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to coat",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta coate -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to coat",
+        "ta coate -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to coat",
+      "etymology": [
+        {
+          "name": "to coat",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta coate -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/coat#etymonline_v_46084",
+        "https://www.etymonline.com/word/coat#etymonline_v_15734",
+        "https://www.merriam-webster.com/dictionary/coat#dictionary-entry-2"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/coat#etymonline_v_46084",
-      "https://www.etymonline.com/word/coat#etymonline_v_15734",
-      "https://www.merriam-webster.com/dictionary/coat#dictionary-entry-2"
-    ]
+    }
   }
 ]

@@ -1,71 +1,106 @@
 [
   {
-    "name": "to craze",
-    "etymology": [
-      {
-        "name": "crasir",
-        "origin": "Old French"
+    "verbDetails": {
+      "infinitive": "to craze",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "crasen, craisen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to craze",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta crâse -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "crasir",
+        "crasen, craisen",
+        "to craze",
+        "ta crâse -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to craze",
+      "etymology": [
+        {
+          "name": "crasir",
+          "origin": "Old French"
+        },
+        {
+          "name": "crasen, craisen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to craze",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta crâse -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/craze#etymonline_v_316",
+        "https://www.oed.com/dictionary/craze_v?tab=factsheet#8002592"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/craze#etymonline_v_316",
-      "https://www.oed.com/dictionary/craze_v?tab=factsheet#8002592"
-    ]
+    }
   },
   {
-    "name": "craze",
-    "etymology": [
-      {
-        "name": "craze",
-        "origin": "Modern English"
-      },
-      {
-        "name": "crâse -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/craze#etymonline_v_47479",
-      "https://www.oed.com/dictionary/craze_n1?tab=meaning_and_use#8002305",
-      "https://www.oed.com/dictionary/craze_n1?tab=pronunciation#8002305"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "craze",
+      "etymology": [
+        {
+          "name": "craze",
+          "origin": "Modern English"
+        },
+        {
+          "name": "crâse -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/craze#etymonline_v_47479",
+        "https://www.oed.com/dictionary/craze_n1?tab=meaning_and_use#8002305",
+        "https://www.oed.com/dictionary/craze_n1?tab=pronunciation#8002305"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "crazy",
-    "etymology": [
-      {
-        "name": "crazy",
-        "origin": "Modern English"
-      },
-      {
-        "name": "crâsy",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/crazy#etymonline_v_29028",
-      "https://www.oed.com/dictionary/crazy_adj?tab=factsheet#8004171"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "crazy",
+      "etymology": [
+        {
+          "name": "crazy",
+          "origin": "Modern English"
+        },
+        {
+          "name": "crâsy",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/crazy#etymonline_v_29028",
+        "https://www.oed.com/dictionary/crazy_adj?tab=factsheet#8004171"
+      ]
+    }
   }
 ]

@@ -1,86 +1,123 @@
 [
   {
-    "name": "cloth",
-    "etymology": [
-      {
-        "name": "clað",
-        "origin": "Old English"
-      },
-      {
-        "name": "cloth",
-        "origin": "Middle English"
-      },
-      {
-        "name": "clòþ -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cloth#etymonline_v_13842",
-      "https://www.merriam-webster.com/dictionary/cloth",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8138",
-      "https://bosworthtoller.com/6294"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "cloth",
+      "etymology": [
+        {
+          "name": "clað",
+          "origin": "Old English"
+        },
+        {
+          "name": "cloth",
+          "origin": "Middle English"
+        },
+        {
+          "name": "clòþ -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cloth#etymonline_v_13842",
+        "https://www.merriam-webster.com/dictionary/cloth",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8138",
+        "https://bosworthtoller.com/6294"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "clothes",
-    "etymology": [
-      {
-        "name": "claðas",
-        "origin": "Old English"
-      },
-      {
-        "name": "clothes",
-        "origin": "Middle English"
-      },
-      {
-        "name": "clôs",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/clothes#etymonline_v_13844",
-      "https://www.etymonline.com/word/cloth#etymonline_v_13842",
-      "https://www.merriam-webster.com/dictionary/clothes",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8138",
-      "https://bosworthtoller.com/6294"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "clothes",
+      "etymology": [
+        {
+          "name": "claðas",
+          "origin": "Old English"
+        },
+        {
+          "name": "clothes",
+          "origin": "Middle English"
+        },
+        {
+          "name": "clôs",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/clothes#etymonline_v_13844",
+        "https://www.etymonline.com/word/cloth#etymonline_v_13842",
+        "https://www.merriam-webster.com/dictionary/clothes",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8138",
+        "https://bosworthtoller.com/6294"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to clothe",
-    "etymology": [
-      {
-        "name": "claðian",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to clothe",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "clothen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to clothe",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta cloþe -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "claðian",
+        "clothen",
+        "to clothe",
+        "ta cloþe -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to clothe",
+      "etymology": [
+        {
+          "name": "claðian",
+          "origin": "Old English"
+        },
+        {
+          "name": "clothen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to clothe",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta cloþe -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/clothe#etymonline_v_13843",
+        "https://www.merriam-webster.com/dictionary/clothe",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8140",
+        "https://bosworthtoller.com/41810",
+        "https://bosworthtoller.com/41818"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/clothe#etymonline_v_13843",
-      "https://www.merriam-webster.com/dictionary/clothe",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8140",
-      "https://bosworthtoller.com/41810",
-      "https://bosworthtoller.com/41818"
-    ]
+    }
   }
 ]

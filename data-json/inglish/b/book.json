@@ -1,115 +1,160 @@
 [
   {
-    "name": "book",
-    "etymology": [
-      {
-        "name": "boc",
-        "origin": "Old English"
-      },
-      {
-        "name": "bok",
-        "origin": "Middle English"
-      },
-      {
-        "name": "book",
-        "origin": "Modern English"
-      },
-      {
-        "name": "buke, bûcs",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/book#etymonline_v_15603",
-      "https://www.oed.com/dictionary/book_n?tab=factsheet#16619117",
-      "https://bosworthtoller.com/40654",
-      "https://bosworthtoller.com/40653"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "book",
+      "etymology": [
+        {
+          "name": "boc",
+          "origin": "Old English"
+        },
+        {
+          "name": "bok",
+          "origin": "Middle English"
+        },
+        {
+          "name": "book",
+          "origin": "Modern English"
+        },
+        {
+          "name": "buke, bûcs",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/book#etymonline_v_15603",
+        "https://www.oed.com/dictionary/book_n?tab=factsheet#16619117",
+        "https://bosworthtoller.com/40654",
+        "https://bosworthtoller.com/40653"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to book",
-    "etymology": [
-      {
-        "name": "bocian",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to book",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "boken",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to book",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta buke -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "bocian",
+        "boken",
+        "to book",
+        "ta buke -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to book",
+      "etymology": [
+        {
+          "name": "bocian",
+          "origin": "Old English"
+        },
+        {
+          "name": "boken",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to book",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta buke -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/book#etymonline_v_43251",
+        "https://www.oed.com/dictionary/book_v?tab=pronunciation#16625107",
+        "https://bosworthtoller.com/4772"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/book#etymonline_v_43251",
-      "https://www.oed.com/dictionary/book_v?tab=pronunciation#16625107",
-      "https://bosworthtoller.com/4772"
-    ]
+    }
   },
   {
-    "name": "bookcase",
-    "etymology": [
-      {
-        "name": "bookcase",
-        "origin": "Modern English"
-      },
-      {
-        "name": "bûkcaiss -es",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bookcase#etymonline_v_27307",
-      "https://www.etymonline.com/word/book#etymonline_v_15603",
-      "https://www.etymonline.com/word/case#etymonline_v_5433",
-      "https://www.oed.com/dictionary/bookcase_n2?tab=factsheet#16627998"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "bookcase",
+      "etymology": [
+        {
+          "name": "bookcase",
+          "origin": "Modern English"
+        },
+        {
+          "name": "bûkcaiss -es",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bookcase#etymonline_v_27307",
+        "https://www.etymonline.com/word/book#etymonline_v_15603",
+        "https://www.etymonline.com/word/case#etymonline_v_5433",
+        "https://www.oed.com/dictionary/bookcase_n2?tab=factsheet#16627998"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "beech",
-    "etymology": [
-      {
-        "name": "boece, bece",
-        "origin": "Old English"
-      },
-      {
-        "name": "beche",
-        "origin": "Middle English"
-      },
-      {
-        "name": "beech",
-        "origin": "Modern English"
-      },
-      {
-        "name": "bích -es",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/beech#etymonline_v_8232",
-      "https://www.merriam-webster.com/dictionary/beech",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3853",
-      "https://bosworthtoller.com/3240",
-      "https://bosworthtoller.com/40653",
-      "https://bosworthtoller.com/4763"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "beech",
+      "etymology": [
+        {
+          "name": "boece, bece",
+          "origin": "Old English"
+        },
+        {
+          "name": "beche",
+          "origin": "Middle English"
+        },
+        {
+          "name": "beech",
+          "origin": "Modern English"
+        },
+        {
+          "name": "bích -es",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/beech#etymonline_v_8232",
+        "https://www.merriam-webster.com/dictionary/beech",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3853",
+        "https://bosworthtoller.com/3240",
+        "https://bosworthtoller.com/40653",
+        "https://bosworthtoller.com/4763"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

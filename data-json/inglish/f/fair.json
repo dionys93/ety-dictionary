@@ -1,96 +1,116 @@
 [
   {
-    "name": "fair  -er -est, -ly (adj, adv, m n)",
-    "etymology": [
-      {
-        "name": "fæger, fægere",
-        "origin": "Old English"
-      },
-      {
-        "name": "fair  -er -est, -ly (adj, adv, m n)",
-        "origin": "Middle English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/fair#etymonline_v_1083",
-      "https://www.etymonline.com/word/fair#etymonline_v_50466",
-      "https://www.merriam-webster.com/dictionary/fair#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/fair#dictionary-entry-3",
-      "https://www.merriam-webster.com/dictionary/fair#dictionary-entry-5",
-      "https://www.merriam-webster.com/dictionary/fairly",
-      "https://www.oed.com/dictionary/fair_adj?tab=pronunciation#4657049",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15157",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15158",
-      "https://bosworthtoller.com/9914",
-      "https://bosworthtoller.com/9912"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "fair  -er -est, -ly (adj, adv, m n)",
+      "etymology": [
+        {
+          "name": "fæger, fægere",
+          "origin": "Old English"
+        },
+        {
+          "name": "fair  -er -est, -ly (adj, adv, m n)",
+          "origin": "Middle English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/fair#etymonline_v_1083",
+        "https://www.etymonline.com/word/fair#etymonline_v_50466",
+        "https://www.merriam-webster.com/dictionary/fair#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/fair#dictionary-entry-3",
+        "https://www.merriam-webster.com/dictionary/fair#dictionary-entry-5",
+        "https://www.merriam-webster.com/dictionary/fairly",
+        "https://www.oed.com/dictionary/fair_adj?tab=pronunciation#4657049",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15157",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15158",
+        "https://bosworthtoller.com/9914",
+        "https://bosworthtoller.com/9912"
+      ]
+    }
   },
   {
-    "name": "fairness",
-    "etymology": [
-      {
-        "name": "fægernes",
-        "origin": "Old English"
-      },
-      {
-        "name": "fairness",
-        "origin": "Middle English"
-      },
-      {
-        "name": "faîness",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/fairness#etymonline_v_32948",
-      "https://www.merriam-webster.com/dictionary/fairness",
-      "https://www.oed.com/dictionary/fairness_n?tab=factsheet#4665524",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15167",
-      "https://bosworthtoller.com/9915"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "fairness",
+      "etymology": [
+        {
+          "name": "fægernes",
+          "origin": "Old English"
+        },
+        {
+          "name": "fairness",
+          "origin": "Middle English"
+        },
+        {
+          "name": "faîness",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/fairness#etymonline_v_32948",
+        "https://www.merriam-webster.com/dictionary/fairness",
+        "https://www.oed.com/dictionary/fairness_n?tab=factsheet#4665524",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15167",
+        "https://bosworthtoller.com/9915"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   },
   {
-    "name": "fair",
-    "etymology": [
-      {
-        "name": "festus, feriae",
-        "origin": "Latin"
-      },
-      {
-        "name": "feria",
-        "origin": "Vulgar Latin"
-      },
-      {
-        "name": "feire, faire",
-        "origin": "Old French"
-      },
-      {
-        "name": "feyre",
-        "origin": "Inglish"
-      },
-      {
-        "name": "fair",
-        "origin": "Modern English"
-      },
-      {
-        "name": "feir -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/fair#etymonline_v_1084",
-      "https://www.merriam-webster.com/dictionary/fair#dictionary-entry-2",
-      "https://www.oed.com/dictionary/fair_n2?tab=factsheet#4656434",
-      "https://www.anglo-norman.net/entry/feyre",
-      "https://www.anglo-norman.net/entry/faire_2",
-      "https://latin-dictionary.net/definition/20463/feria-feriae",
-      "https://latin-dictionary.net/definition/20540/festus-festa-festum"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "fair",
+      "etymology": [
+        {
+          "name": "festus, feriae",
+          "origin": "Latin"
+        },
+        {
+          "name": "feria",
+          "origin": "Vulgar Latin"
+        },
+        {
+          "name": "feire, faire",
+          "origin": "Old French"
+        },
+        {
+          "name": "feyre",
+          "origin": "Inglish"
+        },
+        {
+          "name": "fair",
+          "origin": "Modern English"
+        },
+        {
+          "name": "feir -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/fair#etymonline_v_1084",
+        "https://www.merriam-webster.com/dictionary/fair#dictionary-entry-2",
+        "https://www.oed.com/dictionary/fair_n2?tab=factsheet#4656434",
+        "https://www.anglo-norman.net/entry/feyre",
+        "https://www.anglo-norman.net/entry/faire_2",
+        "https://latin-dictionary.net/definition/20463/feria-feriae",
+        "https://latin-dictionary.net/definition/20540/festus-festa-festum"
+      ]
+    }
   }
 ]

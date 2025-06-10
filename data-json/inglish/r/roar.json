@@ -1,63 +1,92 @@
 [
   {
-    "name": "to roar",
-    "etymology": [
-      {
-        "name": "rarian",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to roar",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "roren",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to roar",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta raure -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "rarian",
+        "roren",
+        "to roar",
+        "ta raure -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to roar",
+      "etymology": [
+        {
+          "name": "rarian",
+          "origin": "Old English"
+        },
+        {
+          "name": "roren",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to roar",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta raure -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/roar#etymonline_v_15125",
+        "https://www.merriam-webster.com/dictionary/roar#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37852",
+        "https://bosworthtoller.com/25583"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/roar#etymonline_v_15125",
-      "https://www.merriam-webster.com/dictionary/roar#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37852",
-      "https://bosworthtoller.com/25583"
-    ]
+    }
   },
   {
-    "name": "roar",
-    "etymology": [
-      {
-        "name": "gerar",
-        "origin": "Old English"
-      },
-      {
-        "name": "rore",
-        "origin": "Middle English"
-      },
-      {
-        "name": "roar",
-        "origin": "Modern English"
-      },
-      {
-        "name": "raur -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/roar#etymonline_v_43943",
-      "https://www.etymonline.com/word/roar#etymonline_v_15125",
-      "https://www.merriam-webster.com/dictionary/roar#dictionary-entry-2",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37849",
-      "https://bosworthtoller.com/49308"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "roar",
+      "etymology": [
+        {
+          "name": "gerar",
+          "origin": "Old English"
+        },
+        {
+          "name": "rore",
+          "origin": "Middle English"
+        },
+        {
+          "name": "roar",
+          "origin": "Modern English"
+        },
+        {
+          "name": "raur -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/roar#etymonline_v_43943",
+        "https://www.etymonline.com/word/roar#etymonline_v_15125",
+        "https://www.merriam-webster.com/dictionary/roar#dictionary-entry-2",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37849",
+        "https://bosworthtoller.com/49308"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

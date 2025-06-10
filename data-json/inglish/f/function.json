@@ -1,104 +1,150 @@
 [
   {
-    "name": "function",
-    "etymology": [
-      {
-        "name": "functio",
-        "origin": "Latin"
-      },
-      {
-        "name": "fonction",
-        "origin": "French"
-      },
-      {
-        "name": "function",
-        "origin": "Modern English"
-      },
-      {
-        "name": "fonccion -s -less",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/function#etymonline_v_14250",
-      "https://www.etymonline.com/word/functionless#etymonline_v_50765",
-      "https://www.etymonline.com/word/-less#etymonline_v_6702",
-      "https://www.merriam-webster.com/dictionary/function#dictionary-entry-1",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/fonction/34399",
-      "https://latin-dictionary.net/definition/21158/functio-functionis"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "function",
+      "etymology": [
+        {
+          "name": "functio",
+          "origin": "Latin"
+        },
+        {
+          "name": "fonction",
+          "origin": "French"
+        },
+        {
+          "name": "function",
+          "origin": "Modern English"
+        },
+        {
+          "name": "fonccion -s -less",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/function#etymonline_v_14250",
+        "https://www.etymonline.com/word/functionless#etymonline_v_50765",
+        "https://www.etymonline.com/word/-less#etymonline_v_6702",
+        "https://www.merriam-webster.com/dictionary/function#dictionary-entry-1",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/fonction/34399",
+        "https://latin-dictionary.net/definition/21158/functio-functionis"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   },
   {
-    "name": "to function",
-    "etymology": [
-      {
-        "name": "to function",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to function",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta fonccione -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to function",
+        "ta fonccione -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to function",
+      "etymology": [
+        {
+          "name": "to function",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta fonccione -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/function#etymonline_v_46874",
+        "https://www.etymonline.com/word/function#etymonline_v_14250",
+        "https://www.merriam-webster.com/dictionary/function#dictionary-entry-2"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/function#etymonline_v_46874",
-      "https://www.etymonline.com/word/function#etymonline_v_14250",
-      "https://www.merriam-webster.com/dictionary/function#dictionary-entry-2"
-    ]
+    }
   },
   {
-    "name": "functional",
-    "etymology": [
-      {
-        "name": "functionalis",
-        "origin": "Medieval Latin"
-      },
-      {
-        "name": "functional",
-        "origin": "Modern English"
-      },
-      {
-        "name": "fonccional -ly -ety -ism -ist",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "functional",
+      "etymology": [
+        {
+          "name": "functionalis",
+          "origin": "Medieval Latin"
+        },
+        {
+          "name": "functional",
+          "origin": "Modern English"
+        },
+        {
+          "name": "fonccional -ly -ety -ism -ist",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/functional#etymonline_v_29851",
+        "https://www.etymonline.com/word/functionalism#etymonline_v_33463",
+        "https://www.etymonline.com/word/function#etymonline_v_14250",
+        "https://www.etymonline.com/word/-al#etymonline_v_32845",
+        "https://www.merriam-webster.com/dictionary/functional",
+        "https://www.merriam-webster.com/dictionary/functionality",
+        "https://latin-dictionary.net/definition/21160/functionalis-functionalis-functionale"
+      ],
+      "degrees": {
+        "positive": "fonccional",
+        "comparative": "ly",
+        "superlative": "ety"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/functional#etymonline_v_29851",
-      "https://www.etymonline.com/word/functionalism#etymonline_v_33463",
-      "https://www.etymonline.com/word/function#etymonline_v_14250",
-      "https://www.etymonline.com/word/-al#etymonline_v_32845",
-      "https://www.merriam-webster.com/dictionary/functional",
-      "https://www.merriam-webster.com/dictionary/functionality",
-      "https://latin-dictionary.net/definition/21160/functionalis-functionalis-functionale"
-    ]
+    }
   },
   {
-    "name": "functionary",
-    "etymology": [
-      {
-        "name": "functionary",
-        "origin": "Modern English"
-      },
-      {
-        "name": "fonccionairie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/functionary#etymonline_v_29852",
-      "https://www.merriam-webster.com/dictionary/functionary"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "functionary",
+      "etymology": [
+        {
+          "name": "functionary",
+          "origin": "Modern English"
+        },
+        {
+          "name": "fonccionairie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/functionary#etymonline_v_29852",
+        "https://www.merriam-webster.com/dictionary/functionary"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

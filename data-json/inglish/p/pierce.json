@@ -1,45 +1,59 @@
 [
   {
-    "name": "to pierce",
-    "etymology": [
-      {
-        "name": "per + tundere, pertundere, pertusus",
-        "origin": "Latin"
-      },
-      {
-        "name": "pertusiare",
-        "origin": "Vulgar Latin"
-      },
-      {
-        "name": "percier",
-        "origin": "Old French"
-      },
-      {
-        "name": "perser",
-        "origin": "Inglish"
-      },
-      {
-        "name": "percen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to pierce",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta pierce -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/pierce#etymonline_v_14962",
-      "https://www.merriam-webster.com/dictionary/pierce",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32913",
-      "https://www.anglo-norman.net/entry/percer",
-      "https://latin-dictionary.net/definition/30253/pertundo-pertundere-pertudi-pertusus"
-    ]
+    "verbDetails": {
+      "infinitive": "to pierce",
+      "etymology": [
+        "per + tundere, pertundere, pertusus",
+        "pertusiare",
+        "percier",
+        "perser",
+        "percen",
+        "to pierce",
+        "ta pierce -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to pierce",
+      "etymology": [
+        {
+          "name": "per + tundere, pertundere, pertusus",
+          "origin": "Latin"
+        },
+        {
+          "name": "pertusiare",
+          "origin": "Vulgar Latin"
+        },
+        {
+          "name": "percier",
+          "origin": "Old French"
+        },
+        {
+          "name": "perser",
+          "origin": "Inglish"
+        },
+        {
+          "name": "percen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to pierce",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta pierce -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/pierce#etymonline_v_14962",
+        "https://www.merriam-webster.com/dictionary/pierce",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32913",
+        "https://www.anglo-norman.net/entry/percer",
+        "https://latin-dictionary.net/definition/30253/pertundo-pertundere-pertudi-pertusus"
+      ]
+    }
   }
 ]

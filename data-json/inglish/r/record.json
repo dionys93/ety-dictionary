@@ -1,110 +1,152 @@
 [
   {
-    "name": "record  -s (m n)",
-    "etymology": [
-      {
-        "name": "recordum, recorda",
-        "origin": "Latin"
-      },
-      {
-        "name": "record  -s (m n)",
-        "origin": "Old French"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/record#etymonline_v_7413",
-      "https://www.merriam-webster.com/dictionary/record#dictionary-entry-2",
-      "https://www.anglo-norman.net/entry/record_1"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "record  -s (m n)",
+      "etymology": [
+        {
+          "name": "recordum, recorda",
+          "origin": "Latin"
+        },
+        {
+          "name": "record  -s (m n)",
+          "origin": "Old French"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/record#etymonline_v_7413",
+        "https://www.merriam-webster.com/dictionary/record#dictionary-entry-2",
+        "https://www.anglo-norman.net/entry/record_1"
+      ]
+    }
   },
   {
-    "name": "to record",
-    "etymology": [
-      {
-        "name": "recordari",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to record",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "recorder",
-        "origin": "Old French"
-      },
-      {
-        "name": "recorden",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to record",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta recorde -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "recordari",
+        "recorder",
+        "recorden",
+        "to record",
+        "ta recorde -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to record",
+      "etymology": [
+        {
+          "name": "recordari",
+          "origin": "Latin"
+        },
+        {
+          "name": "recorder",
+          "origin": "Old French"
+        },
+        {
+          "name": "recorden",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to record",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta recorde -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/record#etymonline_v_7412",
+        "https://www.merriam-webster.com/dictionary/record#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36224",
+        "https://www.anglo-norman.net/entry/recorder_1",
+        "https://latin-dictionary.net/definition/33024/recordor-recordari-recordatus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/record#etymonline_v_7412",
-      "https://www.merriam-webster.com/dictionary/record#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36224",
-      "https://www.anglo-norman.net/entry/recorder_1",
-      "https://latin-dictionary.net/definition/33024/recordor-recordari-recordatus"
-    ]
+    }
   },
   {
-    "name": "recordation",
-    "etymology": [
-      {
-        "name": "recordari, recordatio",
-        "origin": "Latin"
-      },
-      {
-        "name": "recordacion",
-        "origin": "Old French"
-      },
-      {
-        "name": "recordacioun",
-        "origin": "Middle English"
-      },
-      {
-        "name": "recordation",
-        "origin": "Modern English"
-      },
-      {
-        "name": "recordâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/recordation#etymonline_v_36953",
-      "https://www.collinsdictionary.com/us/dictionary/english/recordation",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36220",
-      "https://www.anglo-norman.net/entry/recordacion",
-      "https://latin-dictionary.net/definition/33023/recordatio-recordationis",
-      "https://latin-dictionary.net/definition/33024/recordor-recordari-recordatus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "recordation",
+      "etymology": [
+        {
+          "name": "recordari, recordatio",
+          "origin": "Latin"
+        },
+        {
+          "name": "recordacion",
+          "origin": "Old French"
+        },
+        {
+          "name": "recordacioun",
+          "origin": "Middle English"
+        },
+        {
+          "name": "recordation",
+          "origin": "Modern English"
+        },
+        {
+          "name": "recordâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/recordation#etymonline_v_36953",
+        "https://www.collinsdictionary.com/us/dictionary/english/recordation",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36220",
+        "https://www.anglo-norman.net/entry/recordacion",
+        "https://latin-dictionary.net/definition/33023/recordatio-recordationis",
+        "https://latin-dictionary.net/definition/33024/recordor-recordari-recordatus"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "recordable",
-    "etymology": [
-      {
-        "name": "recordable",
-        "origin": "Modern English"
-      },
-      {
-        "name": "recôrdable",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/recordable"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "recordable",
+      "etymology": [
+        {
+          "name": "recordable",
+          "origin": "Modern English"
+        },
+        {
+          "name": "recôrdable",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/recordable"
+      ]
+    }
   }
 ]

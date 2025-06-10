@@ -1,50 +1,79 @@
 [
   {
-    "name": "to wish",
-    "etymology": [
-      {
-        "name": "wyscan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to wish",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "wishen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to wish",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta ɯishe -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "wyscan",
+        "wishen",
+        "to wish",
+        "ta ɯishe -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to wish",
+      "etymology": [
+        {
+          "name": "wyscan",
+          "origin": "Old English"
+        },
+        {
+          "name": "wishen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to wish",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta ɯishe -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/wish",
+        "https://www.oed.com/dictionary/wish_v?tab=factsheet#14127672",
+        "https://bosworthtoller.com/37050"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/wish",
-      "https://www.oed.com/dictionary/wish_v?tab=factsheet#14127672",
-      "https://bosworthtoller.com/37050"
-    ]
+    }
   },
   {
-    "name": "wish",
-    "etymology": [
-      {
-        "name": "wish",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ɯish -es",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.oed.com/dictionary/wish_n1?tab=factsheet#14126701"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "wish",
+      "etymology": [
+        {
+          "name": "wish",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ɯish -es",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.oed.com/dictionary/wish_n1?tab=factsheet#14126701"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

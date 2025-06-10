@@ -1,55 +1,80 @@
 [
   {
-    "name": "to fling",
-    "etymology": [
-      {
-        "name": "flengja",
-        "origin": "Old Norse"
+    "verbDetails": {
+      "infinitive": "to fling",
+      "conjugations": {
+        "thirdPerson": "s"
       },
-      {
-        "name": "flingen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to fling",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta flingue -s flâng flong -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "flengja",
+        "flingen",
+        "to fling",
+        "ta flingue -s flâng flong -ing"
+      ]
+    },
+    "standard": {
+      "name": "to fling",
+      "etymology": [
+        {
+          "name": "flengja",
+          "origin": "Old Norse"
+        },
+        {
+          "name": "flingen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to fling",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta flingue -s flâng flong -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/fling#etymonline_v_8888",
+        "https://www.merriam-webster.com/dictionary/fling#dictionary-entry-1",
+        "https://www.oed.com/dictionary/fling_v?tab=factsheet#4103214",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16346",
+        "https://old-norse.net/html/f.php#flengja"
+      ],
+      "conjugations": {
+        "thirdPerson": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/fling#etymonline_v_8888",
-      "https://www.merriam-webster.com/dictionary/fling#dictionary-entry-1",
-      "https://www.oed.com/dictionary/fling_v?tab=factsheet#4103214",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16346",
-      "https://old-norse.net/html/f.php#flengja"
-    ]
+    }
   },
   {
-    "name": "fling",
-    "etymology": [
-      {
-        "name": "fling",
-        "origin": "Modern English"
-      },
-      {
-        "name": "flingue, flings",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/fling#etymonline_v_46531",
-      "https://www.etymonline.com/word/fling#etymonline_v_8888",
-      "https://www.merriam-webster.com/dictionary/fling#dictionary-entry-2",
-      "https://www.oed.com/dictionary/fling_n?tab=factsheet#4102785"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "fling",
+      "etymology": [
+        {
+          "name": "fling",
+          "origin": "Modern English"
+        },
+        {
+          "name": "flingue, flings",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/fling#etymonline_v_46531",
+        "https://www.etymonline.com/word/fling#etymonline_v_8888",
+        "https://www.merriam-webster.com/dictionary/fling#dictionary-entry-2",
+        "https://www.oed.com/dictionary/fling_n?tab=factsheet#4102785"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

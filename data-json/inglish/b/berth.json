@@ -1,24 +1,32 @@
 [
   {
-    "name": "berth",
-    "etymology": [
-      {
-        "name": "berth",
-        "origin": "Modern English"
-      },
-      {
-        "name": "berþ -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/berth#etymonline_v_11065",
-      "https://www.oed.com/dictionary/berth_n?tab=factsheet#22526290",
-      "https://www.merriam-webster.com/dictionary/berth#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/berth#word-history"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "berth",
+      "etymology": [
+        {
+          "name": "berth",
+          "origin": "Modern English"
+        },
+        {
+          "name": "berþ -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/berth#etymonline_v_11065",
+        "https://www.oed.com/dictionary/berth_n?tab=factsheet#22526290",
+        "https://www.merriam-webster.com/dictionary/berth#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/berth#word-history"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

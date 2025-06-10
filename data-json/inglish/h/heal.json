@@ -1,74 +1,108 @@
 [
   {
-    "name": "to heal",
-    "etymology": [
-      {
-        "name": "hælan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to heal",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to heal",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta hiale -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "hælan",
+        "to heal",
+        "ta hiale -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to heal",
+      "etymology": [
+        {
+          "name": "hælan",
+          "origin": "Old English"
+        },
+        {
+          "name": "to heal",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta hiale -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/heal",
+        "https://www.oed.com/dictionary/heal_v1?tab=factsheet#1861455",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20313/",
+        "https://bosworthtoller.com/51496"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/heal",
-      "https://www.oed.com/dictionary/heal_v1?tab=factsheet#1861455",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20313/",
-      "https://bosworthtoller.com/51496"
-    ]
+    }
   },
   {
-    "name": "health",
-    "etymology": [
-      {
-        "name": "hælþ",
-        "origin": "Old English"
-      },
-      {
-        "name": "health",
-        "origin": "Modern English"
-      },
-      {
-        "name": "helþ",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/health",
-      "https://www.oed.com/dictionary/health_n?tab=factsheet#1875671",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20346/",
-      "https://bosworthtoller.com/51516"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "health",
+      "etymology": [
+        {
+          "name": "hælþ",
+          "origin": "Old English"
+        },
+        {
+          "name": "health",
+          "origin": "Modern English"
+        },
+        {
+          "name": "helþ",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/health",
+        "https://www.oed.com/dictionary/health_n?tab=factsheet#1875671",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20346/",
+        "https://bosworthtoller.com/51516"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   },
   {
-    "name": "healthy",
-    "etymology": [
-      {
-        "name": "healthy",
-        "origin": "Modern English"
-      },
-      {
-        "name": "helþy",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/healthy",
-      "https://www.oed.com/dictionary/healthy_adj?tab=pronunciation#1878303"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "healthy",
+      "etymology": [
+        {
+          "name": "healthy",
+          "origin": "Modern English"
+        },
+        {
+          "name": "helþy",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/healthy",
+        "https://www.oed.com/dictionary/healthy_adj?tab=pronunciation#1878303"
+      ]
+    }
   }
 ]

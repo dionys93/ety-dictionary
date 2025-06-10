@@ -1,46 +1,69 @@
 [
   {
-    "name": "to shrink",
-    "etymology": [
-      {
-        "name": "scrincan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to shrink",
+      "conjugations": {
+        "thirdPerson": "s"
       },
-      {
-        "name": "shrinken",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to shrink",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta shrinke -s shrânk shronk -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "scrincan",
+        "shrinken",
+        "to shrink",
+        "ta shrinke -s shrânk shronk -ing"
+      ]
+    },
+    "standard": {
+      "name": "to shrink",
+      "etymology": [
+        {
+          "name": "scrincan",
+          "origin": "Old English"
+        },
+        {
+          "name": "shrinken",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to shrink",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta shrinke -s shrânk shronk -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/shrink#etymonline_v_23454",
+        "https://www.merriam-webster.com/dictionary/shrink#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40132",
+        "https://bosworthtoller.com/27038"
+      ],
+      "conjugations": {
+        "thirdPerson": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/shrink#etymonline_v_23454",
-      "https://www.merriam-webster.com/dictionary/shrink#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40132",
-      "https://bosworthtoller.com/27038"
-    ]
+    }
   },
   {
-    "name": "shrink  -x (m n)",
-    "etymology": [
-      {
-        "name": "shrink  -x (m n)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/shrink#etymonline_v_47143",
-      "https://www.etymonline.com/word/shrink#etymonline_v_23454",
-      "https://www.merriam-webster.com/dictionary/shrink#dictionary-entry-2"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "shrink  -x (m n)",
+      "etymology": [
+        {
+          "name": "shrink  -x (m n)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/shrink#etymonline_v_47143",
+        "https://www.etymonline.com/word/shrink#etymonline_v_23454",
+        "https://www.merriam-webster.com/dictionary/shrink#dictionary-entry-2"
+      ]
+    }
   }
 ]

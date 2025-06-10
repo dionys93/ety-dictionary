@@ -1,24 +1,32 @@
 [
   {
-    "name": "cupboard",
-    "etymology": [
-      {
-        "name": "cupboard",
-        "origin": "Modern English"
-      },
-      {
-        "name": "cubord -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cupboard#etymonline_v_29186",
-      "https://www.etymonline.com/word/cup#etymonline_v_467",
-      "https://www.etymonline.com/word/board#etymonline_v_13660",
-      "https://www.oed.com/dictionary/cupboard_n?tab=factsheet#7759564"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "cupboard",
+      "etymology": [
+        {
+          "name": "cupboard",
+          "origin": "Modern English"
+        },
+        {
+          "name": "cubord -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cupboard#etymonline_v_29186",
+        "https://www.etymonline.com/word/cup#etymonline_v_467",
+        "https://www.etymonline.com/word/board#etymonline_v_13660",
+        "https://www.oed.com/dictionary/cupboard_n?tab=factsheet#7759564"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

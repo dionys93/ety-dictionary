@@ -1,56 +1,70 @@
 [
   {
-    "name": "new",
-    "etymology": [
-      {
-        "name": "niwe, neowe, niowe",
-        "origin": "Old English"
-      },
-      {
-        "name": "neue",
-        "origin": "Middle English"
-      },
-      {
-        "name": "new",
-        "origin": "Modern English"
-      },
-      {
-        "name": "nú -ly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/new#etymonline_v_6899",
-      "https://www.oed.com/dictionary/new_adj?tab=pronunciation#34701338",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29404",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29403",
-      "https://bosworthtoller.com/23833",
-      "https://bosworthtoller.com/23832"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "new",
+      "etymology": [
+        {
+          "name": "niwe, neowe, niowe",
+          "origin": "Old English"
+        },
+        {
+          "name": "neue",
+          "origin": "Middle English"
+        },
+        {
+          "name": "new",
+          "origin": "Modern English"
+        },
+        {
+          "name": "nú -ly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/new#etymonline_v_6899",
+        "https://www.oed.com/dictionary/new_adj?tab=pronunciation#34701338",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29404",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29403",
+        "https://bosworthtoller.com/23833",
+        "https://bosworthtoller.com/23832"
+      ]
+    }
   },
   {
-    "name": "news",
-    "etymology": [
-      {
-        "name": "news",
-        "origin": "Modern English"
-      },
-      {
-        "name": "nús",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/news#etymonline_v_6906",
-      "https://www.merriam-webster.com/dictionary/news",
-      "https://www.oed.com/dictionary/news_n?tab=factsheet#34734181"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "news",
+      "etymology": [
+        {
+          "name": "news",
+          "origin": "Modern English"
+        },
+        {
+          "name": "nús",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/news#etymonline_v_6906",
+        "https://www.merriam-webster.com/dictionary/news",
+        "https://www.oed.com/dictionary/news_n?tab=factsheet#34734181"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

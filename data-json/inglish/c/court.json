@@ -1,54 +1,81 @@
 [
   {
-    "name": "court",
-    "etymology": [
-      {
-        "name": "cohors, cors, cortem",
-        "origin": "Latin"
-      },
-      {
-        "name": "cort",
-        "origin": "Old French"
-      },
-      {
-        "name": "court",
-        "origin": "Modern English"
-      },
-      {
-        "name": "cort -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/court#etymonline_v_19182",
-      "https://www.merriam-webster.com/dictionary/court#dictionary-entry-1",
-      "https://www.anglo-norman.net/entry/cort_1",
-      "https://latin-dictionary.net/definition/14458/cors-cortis",
-      "https://latin-dictionary.net/definition/10859/cohors-cohortis"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "court",
+      "etymology": [
+        {
+          "name": "cohors, cors, cortem",
+          "origin": "Latin"
+        },
+        {
+          "name": "cort",
+          "origin": "Old French"
+        },
+        {
+          "name": "court",
+          "origin": "Modern English"
+        },
+        {
+          "name": "cort -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/court#etymonline_v_19182",
+        "https://www.merriam-webster.com/dictionary/court#dictionary-entry-1",
+        "https://www.anglo-norman.net/entry/cort_1",
+        "https://latin-dictionary.net/definition/14458/cors-cortis",
+        "https://latin-dictionary.net/definition/10859/cohors-cohortis"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to court",
-    "etymology": [
-      {
-        "name": "to court",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to court",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta corte -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to court",
+        "ta corte -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to court",
+      "etymology": [
+        {
+          "name": "to court",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta corte -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/court#etymonline_v_36354",
+        "https://www.etymonline.com/word/court#etymonline_v_19182",
+        "https://www.merriam-webster.com/dictionary/court#dictionary-entry-2"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/court#etymonline_v_36354",
-      "https://www.etymonline.com/word/court#etymonline_v_19182",
-      "https://www.merriam-webster.com/dictionary/court#dictionary-entry-2"
-    ]
+    }
   }
 ]

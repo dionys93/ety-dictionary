@@ -1,75 +1,123 @@
 [
   {
-    "name": "to pose",
-    "etymology": [
-      {
-        "name": "pausare",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to pose",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "poser",
-        "origin": "Old French"
-      },
-      {
-        "name": "posen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to pose",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta pose -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "pausare",
+        "poser",
+        "posen",
+        "to pose",
+        "ta pose -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to pose",
+      "etymology": [
+        {
+          "name": "pausare",
+          "origin": "Latin"
+        },
+        {
+          "name": "poser",
+          "origin": "Old French"
+        },
+        {
+          "name": "posen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to pose",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta pose -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/pose#etymonline_v_18512",
+        "https://www.merriam-webster.com/dictionary/pose#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED34123",
+        "https://anglo-norman.net/entry/poser",
+        "https://latin-dictionary.net/definition/29543/pauso-pausare-pausavi-pausatus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/pose#etymonline_v_18512",
-      "https://www.merriam-webster.com/dictionary/pose#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED34123",
-      "https://anglo-norman.net/entry/poser",
-      "https://latin-dictionary.net/definition/29543/pauso-pausare-pausavi-pausatus"
-    ]
+    }
   },
   {
-    "name": "pose  -s",
-    "etymology": [
-      {
-        "name": "pose  -s",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/pose#etymonline_v_44515",
-      "https://www.etymonline.com/word/pose#etymonline_v_18512",
-      "https://www.merriam-webster.com/dictionary/pose#dictionary-entry-2"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "pose  -s",
+      "etymology": [
+        {
+          "name": "pose  -s",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/pose#etymonline_v_44515",
+        "https://www.etymonline.com/word/pose#etymonline_v_18512",
+        "https://www.merriam-webster.com/dictionary/pose#dictionary-entry-2"
+      ]
+    }
   },
   {
-    "name": "to appose, oppose",
-    "etymology": [
-      {
-        "name": "poser",
-        "origin": "Old French"
+    "verbDetails": {
+      "infinitive": "to appose, oppose",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to appose, oppose",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta pose -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "poser",
+        "to appose, oppose",
+        "ta pose -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to appose, oppose",
+      "etymology": [
+        {
+          "name": "poser",
+          "origin": "Old French"
+        },
+        {
+          "name": "to appose, oppose",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta pose -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/pose#etymonline_v_18513",
+        "https://www.merriam-webster.com/dictionary/pose#dictionary-entry-3"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/pose#etymonline_v_18513",
-      "https://www.merriam-webster.com/dictionary/pose#dictionary-entry-3"
-    ]
+    }
   }
 ]

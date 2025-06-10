@@ -1,96 +1,122 @@
 [
   {
-    "name": "parable",
-    "etymology": [
-      {
-        "name": "παραβολή",
-        "origin": "Ancient Greek"
-      },
-      {
-        "name": "parabola",
-        "origin": "Latin"
-      },
-      {
-        "name": "parable",
-        "origin": "Old French"
-      },
-      {
-        "name": "pârabol -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/parable#etymonline_v_7163",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32348",
-      "https://anglo-norman.net/entry/parable_1",
-      "https://latin-dictionary.net/definition/29269/parabola-parabolae",
-      "https://lsj.gr/wiki/%CF%80%CE%B1%CF%81%CE%B1%CE%B2%CE%BF%CE%BB%CE%AE"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "parable",
+      "etymology": [
+        {
+          "name": "παραβολή",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "parabola",
+          "origin": "Latin"
+        },
+        {
+          "name": "parable",
+          "origin": "Old French"
+        },
+        {
+          "name": "pârabol -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/parable#etymonline_v_7163",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32348",
+        "https://anglo-norman.net/entry/parable_1",
+        "https://latin-dictionary.net/definition/29269/parabola-parabolae",
+        "https://lsj.gr/wiki/%CF%80%CE%B1%CF%81%CE%B1%CE%B2%CE%BF%CE%BB%CE%AE"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "parabola",
-    "etymology": [
-      {
-        "name": "παραβολή",
-        "origin": "Ancient Greek"
-      },
-      {
-        "name": "parabola",
-        "origin": "Latin"
-      },
-      {
-        "name": "paràbola -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/parabola#etymonline_v_7164",
-      "https://www.merriam-webster.com/dictionary/parabola",
-      "https://latin-dictionary.net/definition/29269/parabola-parabolae",
-      "https://lsj.gr/wiki/%CF%80%CE%B1%CF%81%CE%B1%CE%B2%CE%BF%CE%BB%CE%AE"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "parabola",
+      "etymology": [
+        {
+          "name": "παραβολή",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "parabola",
+          "origin": "Latin"
+        },
+        {
+          "name": "paràbola -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/parabola#etymonline_v_7164",
+        "https://www.merriam-webster.com/dictionary/parabola",
+        "https://latin-dictionary.net/definition/29269/parabola-parabolae",
+        "https://lsj.gr/wiki/%CF%80%CE%B1%CF%81%CE%B1%CE%B2%CE%BF%CE%BB%CE%AE"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "parabolic",
-    "etymology": [
-      {
-        "name": "παραβολή, παραβολικός",
-        "origin": "Ancient Greek"
-      },
-      {
-        "name": "parabolicus",
-        "origin": "Latin"
-      },
-      {
-        "name": "parabolik",
-        "origin": "Middle English"
-      },
-      {
-        "name": "parabolic",
-        "origin": "Modern English"
-      },
-      {
-        "name": "pârabólic -ly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "parabolic",
+      "etymology": [
+        {
+          "name": "παραβολή, παραβολικός",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "parabolicus",
+          "origin": "Latin"
+        },
+        {
+          "name": "parabolik",
+          "origin": "Middle English"
+        },
+        {
+          "name": "parabolic",
+          "origin": "Modern English"
+        },
+        {
+          "name": "pârabólic -ly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/parabolic#etymonline_v_35715",
+        "https://www.merriam-webster.com/dictionary/parabolic",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32350",
+        "https://latin-dictionary.net/definition/29272/parabolicus-parabolica-parabolicum",
+        "https://latin-dictionary.net/definition/29269/parabola-parabolae",
+        "https://lsj.gr/wiki/%CF%80%CE%B1%CF%81%CE%B1%CE%B2%CE%BF%CE%BB%CE%B9%CE%BA%CF%8C%CF%82",
+        "https://lsj.gr/wiki/%CF%80%CE%B1%CF%81%CE%B1%CE%B2%CE%BF%CE%BB%CE%AE"
+      ],
+      "degrees": {
+        "positive": "lic",
+        "comparative": "ly"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/parabolic#etymonline_v_35715",
-      "https://www.merriam-webster.com/dictionary/parabolic",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32350",
-      "https://latin-dictionary.net/definition/29272/parabolicus-parabolica-parabolicum",
-      "https://latin-dictionary.net/definition/29269/parabola-parabolae",
-      "https://lsj.gr/wiki/%CF%80%CE%B1%CF%81%CE%B1%CE%B2%CE%BF%CE%BB%CE%B9%CE%BA%CF%8C%CF%82",
-      "https://lsj.gr/wiki/%CF%80%CE%B1%CF%81%CE%B1%CE%B2%CE%BF%CE%BB%CE%AE"
-    ]
+    }
   }
 ]

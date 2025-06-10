@@ -1,89 +1,119 @@
 [
   {
-    "name": "to perceive",
-    "etymology": [
-      {
-        "name": "per + capere, percipere",
-        "origin": "Latin"
-      },
-      {
-        "name": "perceivre",
-        "origin": "Inglish"
-      },
-      {
-        "name": "perceiven",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to perceive",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta percíve -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/perceive#etymonline_v_12665",
-      "https://www.merriam-webster.com/dictionary/perceive",
-      "https://www.anglo-norman.net/entry/perceivre",
-      "https://latin-dictionary.net/definition/29798/percipio-percipere-percepi-perceptus"
-    ]
+    "verbDetails": {
+      "infinitive": "to perceive",
+      "etymology": [
+        "per + capere, percipere",
+        "perceivre",
+        "perceiven",
+        "to perceive",
+        "ta percíve -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to perceive",
+      "etymology": [
+        {
+          "name": "per + capere, percipere",
+          "origin": "Latin"
+        },
+        {
+          "name": "perceivre",
+          "origin": "Inglish"
+        },
+        {
+          "name": "perceiven",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to perceive",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta percíve -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/perceive#etymonline_v_12665",
+        "https://www.merriam-webster.com/dictionary/perceive",
+        "https://www.anglo-norman.net/entry/perceivre",
+        "https://latin-dictionary.net/definition/29798/percipio-percipere-percepi-perceptus"
+      ]
+    }
   },
   {
-    "name": "perceivable",
-    "etymology": [
-      {
-        "name": "perçoivre, percevable",
-        "origin": "Old French"
-      },
-      {
-        "name": "perceivable",
-        "origin": "Modern English"
-      },
-      {
-        "name": "percívable -y",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "perceivable",
+      "etymology": [
+        {
+          "name": "perçoivre, percevable",
+          "origin": "Old French"
+        },
+        {
+          "name": "perceivable",
+          "origin": "Modern English"
+        },
+        {
+          "name": "percívable -y",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/perceivable#etymonline_v_46112",
+        "https://www.merriam-webster.com/dictionary/perceivable"
+      ],
+      "degrees": {
+        "positive": "vable",
+        "comparative": "y"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/perceivable#etymonline_v_46112",
-      "https://www.merriam-webster.com/dictionary/perceivable"
-    ]
+    }
   },
   {
-    "name": "perception",
-    "etymology": [
-      {
-        "name": "percipere, perceptio, perceptionem",
-        "origin": "Latin"
-      },
-      {
-        "name": "percepcioun",
-        "origin": "Middle English"
-      },
-      {
-        "name": "perception",
-        "origin": "Modern English"
-      },
-      {
-        "name": "percepcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/perception",
-      "https://www.oed.com/dictionary/perception_n?tab=factsheet#31181650",
-      "https://latin-dictionary.net/definition/29798/percipio-percipere-percepi-perceptus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "perception",
+      "etymology": [
+        {
+          "name": "percipere, perceptio, perceptionem",
+          "origin": "Latin"
+        },
+        {
+          "name": "percepcioun",
+          "origin": "Middle English"
+        },
+        {
+          "name": "perception",
+          "origin": "Modern English"
+        },
+        {
+          "name": "percepcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/perception",
+        "https://www.oed.com/dictionary/perception_n?tab=factsheet#31181650",
+        "https://latin-dictionary.net/definition/29798/percipio-percipere-percepi-perceptus"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

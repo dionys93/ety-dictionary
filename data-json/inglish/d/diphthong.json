@@ -1,39 +1,47 @@
 [
   {
-    "name": "diphthong",
-    "etymology": [
-      {
-        "name": "φθέγγεσθαι, δίφθογγος",
-        "origin": "German"
-      },
-      {
-        "name": "diphthongus",
-        "origin": "Latin"
-      },
-      {
-        "name": "diptonge",
-        "origin": "Middle English"
-      },
-      {
-        "name": "diphthong",
-        "origin": "Modern English"
-      },
-      {
-        "name": "difþongue, difþongs",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/diphthong#etymonline_v_8608",
-      "https://www.merriam-webster.com/dictionary/diphthong",
-      "https://www.oed.com/dictionary/diphthong_n?tab=factsheet#6616056",
-      "https://www.collinsdictionary.com/us/dictionary/english/diphthong",
-      "https://dictionary.cambridge.org/us/dictionary/english/diphthong",
-      "https://lsj.gr/wiki/%CE%B4%CE%AF%CF%86%CE%B8%CE%BF%CE%B3%CE%B3%CE%BF%CF%82",
-      "https://lsj.gr/wiki/%CF%86%CE%B8%CE%AD%CE%B3%CE%B3%CE%B5%CF%83%CE%B8%CE%B1%CE%B9"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "diphthong",
+      "etymology": [
+        {
+          "name": "φθέγγεσθαι, δίφθογγος",
+          "origin": "German"
+        },
+        {
+          "name": "diphthongus",
+          "origin": "Latin"
+        },
+        {
+          "name": "diptonge",
+          "origin": "Middle English"
+        },
+        {
+          "name": "diphthong",
+          "origin": "Modern English"
+        },
+        {
+          "name": "difþongue, difþongs",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/diphthong#etymonline_v_8608",
+        "https://www.merriam-webster.com/dictionary/diphthong",
+        "https://www.oed.com/dictionary/diphthong_n?tab=factsheet#6616056",
+        "https://www.collinsdictionary.com/us/dictionary/english/diphthong",
+        "https://dictionary.cambridge.org/us/dictionary/english/diphthong",
+        "https://lsj.gr/wiki/%CE%B4%CE%AF%CF%86%CE%B8%CE%BF%CE%B3%CE%B3%CE%BF%CF%82",
+        "https://lsj.gr/wiki/%CF%86%CE%B8%CE%AD%CE%B3%CE%B3%CE%B5%CF%83%CE%B8%CE%B1%CE%B9"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

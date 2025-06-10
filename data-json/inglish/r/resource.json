@@ -1,57 +1,84 @@
 [
   {
-    "name": "resource",
-    "etymology": [
-      {
-        "name": "resurgere",
-        "origin": "Latin"
-      },
-      {
-        "name": "resourdre, ressource",
-        "origin": "Old French"
-      },
-      {
-        "name": "resource",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ressôrce -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/resource#etymonline_v_12902",
-      "https://www.merriam-webster.com/dictionary/resource",
-      "https://www.collinsdictionary.com/us/dictionary/french-english/ressource",
-      "https://www.anglo-norman.net/entry/resourdre",
-      "https://latin-dictionary.net/definition/33495/resurgo-resurgere-resurrexi-resurrectus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "resource",
+      "etymology": [
+        {
+          "name": "resurgere",
+          "origin": "Latin"
+        },
+        {
+          "name": "resourdre, ressource",
+          "origin": "Old French"
+        },
+        {
+          "name": "resource",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ressôrce -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/resource#etymonline_v_12902",
+        "https://www.merriam-webster.com/dictionary/resource",
+        "https://www.collinsdictionary.com/us/dictionary/french-english/ressource",
+        "https://www.anglo-norman.net/entry/resourdre",
+        "https://latin-dictionary.net/definition/33495/resurgo-resurgere-resurrexi-resurrectus"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to resource",
-    "etymology": [
-      {
-        "name": "to resource",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to resource",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta ressôrce -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to resource",
+        "ta ressôrce -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to resource",
+      "etymology": [
+        {
+          "name": "to resource",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta ressôrce -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/resource#etymonline_v_48082",
+        "https://www.etymonline.com/word/resource#etymonline_v_12902",
+        "https://dictionary.cambridge.org/us/dictionary/english/resource",
+        "https://www.collinsdictionary.com/us/dictionary/french-english/ressource",
+        "https://www.anglo-norman.net/entry/resourdre",
+        "https://latin-dictionary.net/definition/33495/resurgo-resurgere-resurrexi-resurrectus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/resource#etymonline_v_48082",
-      "https://www.etymonline.com/word/resource#etymonline_v_12902",
-      "https://dictionary.cambridge.org/us/dictionary/english/resource",
-      "https://www.collinsdictionary.com/us/dictionary/french-english/ressource",
-      "https://www.anglo-norman.net/entry/resourdre",
-      "https://latin-dictionary.net/definition/33495/resurgo-resurgere-resurrexi-resurrectus"
-    ]
+    }
   }
 ]

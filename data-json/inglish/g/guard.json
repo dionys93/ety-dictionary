@@ -1,85 +1,121 @@
 [
   {
-    "name": "to guard",
-    "etymology": [
-      {
-        "name": "garder, guarder",
-        "origin": "Old French"
+    "verbDetails": {
+      "infinitive": "to guard",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to guard",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta garde -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "garder, guarder",
+        "to guard",
+        "ta garde -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to guard",
+      "etymology": [
+        {
+          "name": "garder, guarder",
+          "origin": "Old French"
+        },
+        {
+          "name": "to guard",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta garde -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/guard#etymonline_v_33833",
+        "https://www.etymonline.com/word/guard#etymonline_v_14338",
+        "https://www.merriam-webster.com/dictionary/guard#dictionary-entry-2",
+        "https://www.oed.com/dictionary/guard_v?tab=factsheet#2281952",
+        "https://anglo-norman.net/entry/guarder"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/guard#etymonline_v_33833",
-      "https://www.etymonline.com/word/guard#etymonline_v_14338",
-      "https://www.merriam-webster.com/dictionary/guard#dictionary-entry-2",
-      "https://www.oed.com/dictionary/guard_v?tab=factsheet#2281952",
-      "https://anglo-norman.net/entry/guarder"
-    ]
+    }
   },
   {
-    "name": "guard",
-    "etymology": [
-      {
-        "name": "garde",
-        "origin": "French"
-      },
-      {
-        "name": "guard",
-        "origin": "Modern English"
-      },
-      {
-        "name": "gard -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/guard#etymonline_v_14338",
-      "https://www.etymonline.com/word/guard#etymonline_v_33833",
-      "https://www.merriam-webster.com/dictionary/guard#dictionary-entry-1",
-      "https://www.oed.com/dictionary/guard_n?tab=factsheet#2278180",
-      "https://anglo-norman.net/entry/garde_1"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "guard",
+      "etymology": [
+        {
+          "name": "garde",
+          "origin": "French"
+        },
+        {
+          "name": "guard",
+          "origin": "Modern English"
+        },
+        {
+          "name": "gard -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/guard#etymonline_v_14338",
+        "https://www.etymonline.com/word/guard#etymonline_v_33833",
+        "https://www.merriam-webster.com/dictionary/guard#dictionary-entry-1",
+        "https://www.oed.com/dictionary/guard_n?tab=factsheet#2278180",
+        "https://anglo-norman.net/entry/garde_1"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "guardian",
-    "etymology": [
-      {
-        "name": "gardien",
-        "origin": "Old French"
-      },
-      {
-        "name": "garden",
-        "origin": "Middle English"
-      },
-      {
-        "name": "guardian",
-        "origin": "Modern English"
-      },
-      {
-        "name": "gardian -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/guardian#etymonline_v_33834",
-      "https://www.oed.com/dictionary/guardian_n?tab=factsheet#2284632",
-      "https://anglo-norman.net/entry/gardien"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "guardian",
+      "etymology": [
+        {
+          "name": "gardien",
+          "origin": "Old French"
+        },
+        {
+          "name": "garden",
+          "origin": "Middle English"
+        },
+        {
+          "name": "guardian",
+          "origin": "Modern English"
+        },
+        {
+          "name": "gardian -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/guardian#etymonline_v_33834",
+        "https://www.oed.com/dictionary/guardian_n?tab=factsheet#2284632",
+        "https://anglo-norman.net/entry/gardien"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

@@ -1,109 +1,157 @@
 [
   {
-    "name": "to search",
-    "etymology": [
-      {
-        "name": "circus, circare",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to search",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "cerchier, sercher",
-        "origin": "Old French"
-      },
-      {
-        "name": "serchen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to search",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta cerche -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "circus, circare",
+        "cerchier, sercher",
+        "serchen",
+        "to search",
+        "ta cerche -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to search",
+      "etymology": [
+        {
+          "name": "circus, circare",
+          "origin": "Latin"
+        },
+        {
+          "name": "cerchier, sercher",
+          "origin": "Old French"
+        },
+        {
+          "name": "serchen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to search",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta cerche -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/search#etymonline_v_23058",
+        "https://cooljugator.com/etymology/en/search",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39496",
+        "https://www.anglo-norman.net/entry/sercher_1",
+        "https://latin-dictionary.net/definition/9802/circo-circare-circavi-circatus",
+        "https://latin-dictionary.net/definition/10122/circus-circi"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/search#etymonline_v_23058",
-      "https://cooljugator.com/etymology/en/search",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39496",
-      "https://www.anglo-norman.net/entry/sercher_1",
-      "https://latin-dictionary.net/definition/9802/circo-circare-circavi-circatus",
-      "https://latin-dictionary.net/definition/10122/circus-circi"
-    ]
+    }
   },
   {
-    "name": "search",
-    "etymology": [
-      {
-        "name": "circus, circare",
-        "origin": "Latin"
-      },
-      {
-        "name": "cerchier, cerche, serche",
-        "origin": "Old French"
-      },
-      {
-        "name": "search",
-        "origin": "Modern English"
-      },
-      {
-        "name": "cerch -es",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/search#etymonline_v_45032",
-      "https://www.etymonline.com/word/search#etymonline_v_23058",
-      "https://cooljugator.com/etymology/en/search",
-      "https://www.anglo-norman.net/entry/sercher_1",
-      "https://latin-dictionary.net/definition/9802/circo-circare-circavi-circatus",
-      "https://latin-dictionary.net/definition/10122/circus-circi"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "search",
+      "etymology": [
+        {
+          "name": "circus, circare",
+          "origin": "Latin"
+        },
+        {
+          "name": "cerchier, cerche, serche",
+          "origin": "Old French"
+        },
+        {
+          "name": "search",
+          "origin": "Modern English"
+        },
+        {
+          "name": "cerch -es",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/search#etymonline_v_45032",
+        "https://www.etymonline.com/word/search#etymonline_v_23058",
+        "https://cooljugator.com/etymology/en/search",
+        "https://www.anglo-norman.net/entry/sercher_1",
+        "https://latin-dictionary.net/definition/9802/circo-circare-circavi-circatus",
+        "https://latin-dictionary.net/definition/10122/circus-circi"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "searchable",
-    "etymology": [
-      {
-        "name": "searchable",
-        "origin": "Modern English"
-      },
-      {
-        "name": "cerchable -y",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "searchable",
+      "etymology": [
+        {
+          "name": "searchable",
+          "origin": "Modern English"
+        },
+        {
+          "name": "cerchable -y",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/searchable#etymonline_v_48428"
+      ],
+      "degrees": {
+        "positive": "cerchable",
+        "comparative": "y"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/searchable#etymonline_v_48428"
-    ]
+    }
   },
   {
-    "name": "searchlight",
-    "etymology": [
-      {
-        "name": "searchlight",
-        "origin": "Modern English"
-      },
-      {
-        "name": "cerchlyht -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/searchlight#etymonline_v_37752",
-      "https://www.etymonline.com/word/light#etymonline_v_9502"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "searchlight",
+      "etymology": [
+        {
+          "name": "searchlight",
+          "origin": "Modern English"
+        },
+        {
+          "name": "cerchlyht -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/searchlight#etymonline_v_37752",
+        "https://www.etymonline.com/word/light#etymonline_v_9502"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

@@ -1,114 +1,160 @@
 [
   {
-    "name": "to acquire",
-    "etymology": [
-      {
-        "name": "ad + quaerere, acquirere",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to acquire",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d"
       },
-      {
-        "name": "aquerre",
-        "origin": "Old French"
-      },
-      {
-        "name": "to acquire",
-        "origin": "Modern English"
-      },
-      {
-        "name": "to acquîre -s -d acquîaring",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "ad + quaerere, acquirere",
+        "aquerre",
+        "to acquire",
+        "to acquîre -s -d acquîaring"
+      ]
+    },
+    "standard": {
+      "name": "to acquire",
+      "etymology": [
+        {
+          "name": "ad + quaerere, acquirere",
+          "origin": "Latin"
+        },
+        {
+          "name": "aquerre",
+          "origin": "Old French"
+        },
+        {
+          "name": "to acquire",
+          "origin": "Modern English"
+        },
+        {
+          "name": "to acquîre -s -d acquîaring",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/acquire#etymonline_v_5062",
+        "https://www.merriam-webster.com/dictionary/acquire",
+        "https://www.oed.com/dictionary/acquire_v?tab=factsheet#24016987",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED402",
+        "https://anglo-norman.net/entry/aquerre_1",
+        "https://latin-dictionary.net/definition/592/acquiro-acquirere-acquisivi-acquisitus",
+        "https://latin-dictionary.net/definition/32505/quaero-quaerere-quaesivi-quaesitus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/acquire#etymonline_v_5062",
-      "https://www.merriam-webster.com/dictionary/acquire",
-      "https://www.oed.com/dictionary/acquire_v?tab=factsheet#24016987",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED402",
-      "https://anglo-norman.net/entry/aquerre_1",
-      "https://latin-dictionary.net/definition/592/acquiro-acquirere-acquisivi-acquisitus",
-      "https://latin-dictionary.net/definition/32505/quaero-quaerere-quaesivi-quaesitus"
-    ]
+    }
   },
   {
-    "name": "acquirement",
-    "etymology": [
-      {
-        "name": "acquerement",
-        "origin": "French"
-      },
-      {
-        "name": "acquirement",
-        "origin": "Modern English"
-      },
-      {
-        "name": "acquîrement -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/acquirement#etymonline_v_52141",
-      "https://www.etymonline.com/word/acquire#etymonline_v_5062",
-      "https://www.etymonline.com/word/-ment#etymonline_v_32036",
-      "https://www.merriam-webster.com/dictionary/acquirement",
-      "https://www.cnrtl.fr/definition/dmf/ACQU%C3%88REMENT"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "acquirement",
+      "etymology": [
+        {
+          "name": "acquerement",
+          "origin": "French"
+        },
+        {
+          "name": "acquirement",
+          "origin": "Modern English"
+        },
+        {
+          "name": "acquîrement -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/acquirement#etymonline_v_52141",
+        "https://www.etymonline.com/word/acquire#etymonline_v_5062",
+        "https://www.etymonline.com/word/-ment#etymonline_v_32036",
+        "https://www.merriam-webster.com/dictionary/acquirement",
+        "https://www.cnrtl.fr/definition/dmf/ACQU%C3%88REMENT"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "acquisition",
-    "etymology": [
-      {
-        "name": "acquirere, acquisitio, acquisitionem",
-        "origin": "Latin"
-      },
-      {
-        "name": "acquisicion",
-        "origin": "Old French"
-      },
-      {
-        "name": "acquisition",
-        "origin": "Modern English"
-      },
-      {
-        "name": "acquisicion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/acquisition",
-      "https://www.oed.com/dictionary/acquisition_n?tab=factsheet#23858235",
-      "https://anglo-norman.net/entry/acquisition",
-      "https://latin-dictionary.net/definition/593/acquisitio-acquisitionis",
-      "https://latin-dictionary.net/definition/592/acquiro-acquirere-acquisivi-acquisitus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "acquisition",
+      "etymology": [
+        {
+          "name": "acquirere, acquisitio, acquisitionem",
+          "origin": "Latin"
+        },
+        {
+          "name": "acquisicion",
+          "origin": "Old French"
+        },
+        {
+          "name": "acquisition",
+          "origin": "Modern English"
+        },
+        {
+          "name": "acquisicion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/acquisition",
+        "https://www.oed.com/dictionary/acquisition_n?tab=factsheet#23858235",
+        "https://anglo-norman.net/entry/acquisition",
+        "https://latin-dictionary.net/definition/593/acquisitio-acquisitionis",
+        "https://latin-dictionary.net/definition/592/acquiro-acquirere-acquisivi-acquisitus"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "acquisitive",
-    "etymology": [
-      {
-        "name": "acquisitive",
-        "origin": "Modern English"
-      },
-      {
-        "name": "acquìsatif -vly -ness",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "acquisitive",
+      "etymology": [
+        {
+          "name": "acquisitive",
+          "origin": "Modern English"
+        },
+        {
+          "name": "acquìsatif -vly -ness",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/acquisitive#etymonline_v_25983",
+        "https://www.merriam-webster.com/dictionary/acquisitive",
+        "https://www.oed.com/dictionary/acquisitive_adj?tab=factsheet#23900962"
+      ],
+      "degrees": {
+        "positive": "satif",
+        "comparative": "vly",
+        "superlative": "ness"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/acquisitive#etymonline_v_25983",
-      "https://www.merriam-webster.com/dictionary/acquisitive",
-      "https://www.oed.com/dictionary/acquisitive_adj?tab=factsheet#23900962"
-    ]
+    }
   }
 ]

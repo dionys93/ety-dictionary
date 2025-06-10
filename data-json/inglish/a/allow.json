@@ -1,59 +1,73 @@
 [
   {
-    "name": "to allow",
-    "etymology": [
-      {
-        "name": "allocare",
-        "origin": "Latin"
-      },
-      {
-        "name": "aloer, alloiier, alouer",
-        "origin": "Old French"
-      },
-      {
-        "name": "allouen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to allow",
-        "origin": "Modern English"
-      },
-      {
-        "name": "to allaoe -s -d -ïŋ",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/allow#etymonline_v_8184",
-      "https://www.oed.com/dictionary/allow_v?tab=factsheet#6576454",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED1194",
-      "https://anglo-norman.net/entry/aluer_2",
-      "https://latin-dictionary.net/definition/2691/alloco-allocare-allocavi-allocatus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "to allow",
+      "etymology": [
+        {
+          "name": "allocare",
+          "origin": "Latin"
+        },
+        {
+          "name": "aloer, alloiier, alouer",
+          "origin": "Old French"
+        },
+        {
+          "name": "allouen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to allow",
+          "origin": "Modern English"
+        },
+        {
+          "name": "to allaoe -s -d -ïŋ",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/allow#etymonline_v_8184",
+        "https://www.oed.com/dictionary/allow_v?tab=factsheet#6576454",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED1194",
+        "https://anglo-norman.net/entry/aluer_2",
+        "https://latin-dictionary.net/definition/2691/alloco-allocare-allocavi-allocatus"
+      ]
+    }
   },
   {
-    "name": "allowance",
-    "etymology": [
-      {
-        "name": "aloer, aloance",
-        "origin": "Old French"
-      },
-      {
-        "name": "allowance",
-        "origin": "Modern English"
-      },
-      {
-        "name": "allaoance -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/allowance#etymonline_v_26133",
-      "https://www.oed.com/dictionary/allowance_n?tab=factsheet#6580980",
-      "https://anglo-norman.net/entry/aluer_2"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "allowance",
+      "etymology": [
+        {
+          "name": "aloer, aloance",
+          "origin": "Old French"
+        },
+        {
+          "name": "allowance",
+          "origin": "Modern English"
+        },
+        {
+          "name": "allaoance -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/allowance#etymonline_v_26133",
+        "https://www.oed.com/dictionary/allowance_n?tab=factsheet#6580980",
+        "https://anglo-norman.net/entry/aluer_2"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

@@ -1,190 +1,273 @@
 [
   {
-    "name": "vision",
-    "etymology": [
-      {
-        "name": "videre, visionem",
-        "origin": "Latin"
-      },
-      {
-        "name": "vision",
-        "origin": "Old French"
-      },
-      {
-        "name": "vis̃on -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/vision#etymonline_v_7835",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/vision/81231",
-      "https://latin-dictionary.net/definition/38950/visio-visionis",
-      "https://latin-dictionary.net/definition/38775/video-videre-vidi-visus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "vision",
+      "etymology": [
+        {
+          "name": "videre, visionem",
+          "origin": "Latin"
+        },
+        {
+          "name": "vision",
+          "origin": "Old French"
+        },
+        {
+          "name": "vis̃on -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/vision#etymonline_v_7835",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/vision/81231",
+        "https://latin-dictionary.net/definition/38950/visio-visionis",
+        "https://latin-dictionary.net/definition/38775/video-videre-vidi-visus"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "visionary",
-    "etymology": [
-      {
-        "name": "visionary",
-        "origin": "Modern English"
-      },
-      {
-        "name": "vis̃onairy, vis̃onairie  -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "masculine noun"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "visionary",
+      "etymology": [
+        {
+          "name": "visionary",
+          "origin": "Modern English"
+        },
+        {
+          "name": "vis̃onairy, vis̃onairie  -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/visionary#etymonline_v_24185",
+        "https://www.merriam-webster.com/dictionary/visionary",
+        "https://www.etymonline.com/word/-ary#etymonline_v_26569"
+      ],
+      "degrees": {
+        "positive": "onairie",
+        "comparative": "is"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/visionary#etymonline_v_24185",
-      "https://www.merriam-webster.com/dictionary/visionary",
-      "https://www.etymonline.com/word/-ary#etymonline_v_26569"
-    ]
+    }
   },
   {
-    "name": "visual",
-    "etymology": [
-      {
-        "name": "visus, visualis",
-        "origin": "Latin"
-      },
-      {
-        "name": "visual",
-        "origin": "Modern English"
-      },
-      {
-        "name": "vis̃ual -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "masculine noun"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "visual",
+      "etymology": [
+        {
+          "name": "visus, visualis",
+          "origin": "Latin"
+        },
+        {
+          "name": "visual",
+          "origin": "Modern English"
+        },
+        {
+          "name": "vis̃ual -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/visual#etymonline_v_7839",
+        "https://latin-dictionary.net/definition/38965/visus-visus",
+        "https://www.merriam-webster.com/dictionary/visual#dictionary-entry-2",
+        "https://www.merriam-webster.com/dictionary/visual#dictionary-entry-1"
+      ],
+      "degrees": {
+        "positive": "ual",
+        "comparative": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/visual#etymonline_v_7839",
-      "https://latin-dictionary.net/definition/38965/visus-visus",
-      "https://www.merriam-webster.com/dictionary/visual#dictionary-entry-2",
-      "https://www.merriam-webster.com/dictionary/visual#dictionary-entry-1"
-    ]
+    }
   },
   {
-    "name": "visually",
-    "etymology": [
-      {
-        "name": "visually",
-        "origin": "Modern English"
-      },
-      {
-        "name": "vis̃ally",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adverb"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/visually#etymonline_v_39992",
-      "https://www.merriam-webster.com/dictionary/visually"
-    ]
+    "verbDetails": {
+      "infinitive": "to visually",
+      "etymology": [
+        "visually",
+        "vis̃ally"
+      ]
+    },
+    "standard": {
+      "name": "to visually",
+      "etymology": [
+        {
+          "name": "visually",
+          "origin": "Modern English"
+        },
+        {
+          "name": "vis̃ally",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adverb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/visually#etymonline_v_39992",
+        "https://www.merriam-webster.com/dictionary/visually"
+      ]
+    }
   },
   {
-    "name": "to visualize",
-    "etymology": [
-      {
-        "name": "to visualize",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to visualize",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta vis̃ualyse -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to visualize",
+        "ta vis̃ualyse -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to visualize",
+      "etymology": [
+        {
+          "name": "to visualize",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta vis̃ualyse -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/visualize#etymonline_v_30876",
+        "https://www.merriam-webster.com/dictionary/visualize"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/visualize#etymonline_v_30876",
-      "https://www.merriam-webster.com/dictionary/visualize"
-    ]
+    }
   },
   {
-    "name": "visualization",
-    "etymology": [
-      {
-        "name": "visualization",
-        "origin": "Modern English"
-      },
-      {
-        "name": "vis̃ualisâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/visualization#etymonline_v_39991",
-      "https://www.merriam-webster.com/dictionary/visualization"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "visualization",
+      "etymology": [
+        {
+          "name": "visualization",
+          "origin": "Modern English"
+        },
+        {
+          "name": "vis̃ualisâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/visualization#etymonline_v_39991",
+        "https://www.merriam-webster.com/dictionary/visualization"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "visable, visible",
-    "etymology": [
-      {
-        "name": "visibilis",
-        "origin": "Latin"
-      },
-      {
-        "name": "visable, visible",
-        "origin": "Old French"
-      },
-      {
-        "name": "visable -y -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "masculine noun"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "visable, visible",
+      "etymology": [
+        {
+          "name": "visibilis",
+          "origin": "Latin"
+        },
+        {
+          "name": "visable, visible",
+          "origin": "Old French"
+        },
+        {
+          "name": "visable -y -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/visible#etymonline_v_7833",
+        "https://www.merriam-webster.com/dictionary/visible#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/visible#dictionary-entry-2",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/visible/81226",
+        "https://latin-dictionary.net/definition/38947/visibilis-visibilis-visibile"
+      ],
+      "degrees": {
+        "positive": "visable",
+        "comparative": "y",
+        "superlative": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/visible#etymonline_v_7833",
-      "https://www.merriam-webster.com/dictionary/visible#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/visible#dictionary-entry-2",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/visible/81226",
-      "https://latin-dictionary.net/definition/38947/visibilis-visibilis-visibile"
-    ]
+    }
   },
   {
-    "name": "visibility",
-    "etymology": [
-      {
-        "name": "visibilis, visibilitatem",
-        "origin": "Latin"
-      },
-      {
-        "name": "visibility",
-        "origin": "Modern English"
-      },
-      {
-        "name": "visabilatie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/visibility#etymonline_v_25416",
-      "https://www.merriam-webster.com/dictionary/visibility",
-      "https://latin-dictionary.net/definition/38947/visibilis-visibilis-visibile"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "visibility",
+      "etymology": [
+        {
+          "name": "visibilis, visibilitatem",
+          "origin": "Latin"
+        },
+        {
+          "name": "visibility",
+          "origin": "Modern English"
+        },
+        {
+          "name": "visabilatie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/visibility#etymonline_v_25416",
+        "https://www.merriam-webster.com/dictionary/visibility",
+        "https://latin-dictionary.net/definition/38947/visibilis-visibilis-visibile"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

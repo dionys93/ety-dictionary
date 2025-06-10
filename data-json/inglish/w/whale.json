@@ -1,47 +1,74 @@
 [
   {
-    "name": "whale",
-    "etymology": [
-      {
-        "name": "hwæl",
-        "origin": "Old English"
-      },
-      {
-        "name": "whale",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ɯhail -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/whale",
-      "https://www.oed.com/dictionary/whale_n?tab=factsheet#14667879",
-      "https://bosworthtoller.com/20037"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "whale",
+      "etymology": [
+        {
+          "name": "hwæl",
+          "origin": "Old English"
+        },
+        {
+          "name": "whale",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ɯhail -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/whale",
+        "https://www.oed.com/dictionary/whale_n?tab=factsheet#14667879",
+        "https://bosworthtoller.com/20037"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to whale",
-    "etymology": [
-      {
-        "name": "to whale",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to whale",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta ɯhaile -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to whale",
+        "ta ɯhaile -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to whale",
+      "etymology": [
+        {
+          "name": "to whale",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta ɯhaile -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/whale",
+        "https://www.oed.com/dictionary/whale_v1?tab=factsheet#14669681"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/whale",
-      "https://www.oed.com/dictionary/whale_v1?tab=factsheet#14669681"
-    ]
+    }
   }
 ]

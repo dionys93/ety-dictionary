@@ -1,42 +1,50 @@
 [
   {
-    "name": "pea",
-    "etymology": [
-      {
-        "name": "πίσος",
-        "origin": "Ancient Greek"
-      },
-      {
-        "name": "pisum, pisa",
-        "origin": "Latin"
-      },
-      {
-        "name": "piose, pise",
-        "origin": "Old English"
-      },
-      {
-        "name": "pease",
-        "origin": "Middle English"
-      },
-      {
-        "name": "pea",
-        "origin": "Modern English"
-      },
-      {
-        "name": "pí -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/pea#etymonline_v_10207",
-      "https://www.merriam-webster.com/dictionary/pea",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED33168",
-      "https://bosworthtoller.com/25242",
-      "https://latin-dictionary.net/definition/30602/pisum-pisi",
-      "https://lsj.gr/wiki/%CF%80%CE%AF%CF%83%CE%BF%CF%82"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "pea",
+      "etymology": [
+        {
+          "name": "πίσος",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "pisum, pisa",
+          "origin": "Latin"
+        },
+        {
+          "name": "piose, pise",
+          "origin": "Old English"
+        },
+        {
+          "name": "pease",
+          "origin": "Middle English"
+        },
+        {
+          "name": "pea",
+          "origin": "Modern English"
+        },
+        {
+          "name": "pí -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/pea#etymonline_v_10207",
+        "https://www.merriam-webster.com/dictionary/pea",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED33168",
+        "https://bosworthtoller.com/25242",
+        "https://latin-dictionary.net/definition/30602/pisum-pisi",
+        "https://lsj.gr/wiki/%CF%80%CE%AF%CF%83%CE%BF%CF%82"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

@@ -1,55 +1,84 @@
 [
   {
-    "name": "scare",
-    "etymology": [
-      {
-        "name": "skirra",
-        "origin": "Old Norse"
+    "verbDetails": {
+      "infinitive": "to scare",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "skerren",
-        "origin": "Middle English"
-      },
-      {
-        "name": "scare",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta scaire -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "skirra",
+        "skerren",
+        "scare",
+        "ta scaire -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to scare",
+      "etymology": [
+        {
+          "name": "skirra",
+          "origin": "Old Norse"
+        },
+        {
+          "name": "skerren",
+          "origin": "Middle English"
+        },
+        {
+          "name": "scare",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta scaire -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/scare#etymonline_v_22853",
+        "https://www.oed.com/dictionary/scare_v?tab=factsheet#24148698",
+        "https://old-norse.net/html/s.php#skirra"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/scare#etymonline_v_22853",
-      "https://www.oed.com/dictionary/scare_v?tab=factsheet#24148698",
-      "https://old-norse.net/html/s.php#skirra"
-    ]
+    }
   },
   {
-    "name": "scare",
-    "etymology": [
-      {
-        "name": "sker",
-        "origin": "Middle English"
-      },
-      {
-        "name": "scare",
-        "origin": "Modern English"
-      },
-      {
-        "name": "scair -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/scare#etymonline_v_48375",
-      "https://www.oed.com/dictionary/scare_n2?tab=factsheet#24148071"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "scare",
+      "etymology": [
+        {
+          "name": "sker",
+          "origin": "Middle English"
+        },
+        {
+          "name": "scare",
+          "origin": "Modern English"
+        },
+        {
+          "name": "scair -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/scare#etymonline_v_48375",
+        "https://www.oed.com/dictionary/scare_n2?tab=factsheet#24148071"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

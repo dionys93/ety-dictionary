@@ -1,58 +1,88 @@
 [
   {
-    "name": "to decrease",
-    "etymology": [
-      {
-        "name": "de + crescere, decrescere",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to decrease",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "descroistre, decreistre",
-        "origin": "Old French"
-      },
-      {
-        "name": "decresen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to decrease",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta dicrisce -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "de + crescere, decrescere",
+        "descroistre, decreistre",
+        "decresen",
+        "to decrease",
+        "ta dicrisce -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to decrease",
+      "etymology": [
+        {
+          "name": "de + crescere, decrescere",
+          "origin": "Latin"
+        },
+        {
+          "name": "descroistre, decreistre",
+          "origin": "Old French"
+        },
+        {
+          "name": "decresen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to decrease",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta dicrisce -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/decrease#etymonline_v_881",
+        "https://www.merriam-webster.com/dictionary/decrease#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10731",
+        "https://anglo-norman.net/entry/decreistre",
+        "https://latin-dictionary.net/definition/15914/decresco-decrescere-decrevi-decretus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/decrease#etymonline_v_881",
-      "https://www.merriam-webster.com/dictionary/decrease#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10731",
-      "https://anglo-norman.net/entry/decreistre",
-      "https://latin-dictionary.net/definition/15914/decresco-decrescere-decrevi-decretus"
-    ]
+    }
   },
   {
-    "name": "decrease",
-    "etymology": [
-      {
-        "name": "decrease",
-        "origin": "Modern English"
-      },
-      {
-        "name": "dicrisce -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/decrease#etymonline_v_42074",
-      "https://www.etymonline.com/word/decrease#etymonline_v_881",
-      "https://www.merriam-webster.com/dictionary/decrease#dictionary-entry-2"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "decrease",
+      "etymology": [
+        {
+          "name": "decrease",
+          "origin": "Modern English"
+        },
+        {
+          "name": "dicrisce -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/decrease#etymonline_v_42074",
+        "https://www.etymonline.com/word/decrease#etymonline_v_881",
+        "https://www.merriam-webster.com/dictionary/decrease#dictionary-entry-2"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

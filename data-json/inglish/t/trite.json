@@ -1,27 +1,33 @@
 [
   {
-    "name": "trite",
-    "etymology": [
-      {
-        "name": "terere, tritus",
-        "origin": "Latin"
-      },
-      {
-        "name": "trite",
-        "origin": "Modern English"
-      },
-      {
-        "name": "trîte",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/trite",
-      "https://www.oed.com/dictionary/trite_adj?tab=factsheet#17610229",
-      "https://latin-dictionary.net/definition/37004/tero-terere-trivi-tritus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "trite",
+      "etymology": [
+        {
+          "name": "terere, tritus",
+          "origin": "Latin"
+        },
+        {
+          "name": "trite",
+          "origin": "Modern English"
+        },
+        {
+          "name": "trîte",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/trite",
+        "https://www.oed.com/dictionary/trite_adj?tab=factsheet#17610229",
+        "https://latin-dictionary.net/definition/37004/tero-terere-trivi-tritus"
+      ]
+    }
   }
 ]

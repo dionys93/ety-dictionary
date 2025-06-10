@@ -1,51 +1,78 @@
 [
   {
-    "name": "fish  -es (m n)",
-    "etymology": [
-      {
-        "name": "fisc",
-        "origin": "Old English"
-      },
-      {
-        "name": "fish  -es (m n)",
-        "origin": "Middle English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/fish#etymonline_v_5975",
-      "https://www.merriam-webster.com/dictionary/fish#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16083",
-      "https://bosworthtoller.com/10804"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "fish  -es (m n)",
+      "etymology": [
+        {
+          "name": "fisc",
+          "origin": "Old English"
+        },
+        {
+          "name": "fish  -es (m n)",
+          "origin": "Middle English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/fish#etymonline_v_5975",
+        "https://www.merriam-webster.com/dictionary/fish#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16083",
+        "https://bosworthtoller.com/10804"
+      ]
+    }
   },
   {
-    "name": "to fish",
-    "etymology": [
-      {
-        "name": "fiscian",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to fish",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "fishen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to fish",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta fishe -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "fiscian",
+        "fishen",
+        "to fish",
+        "ta fishe -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to fish",
+      "etymology": [
+        {
+          "name": "fiscian",
+          "origin": "Old English"
+        },
+        {
+          "name": "fishen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to fish",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta fishe -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/fish#etymonline_v_46338",
+        "https://www.merriam-webster.com/dictionary/fish#dictionary-entry-2",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16085",
+        "https://bosworthtoller.com/10811"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/fish#etymonline_v_46338",
-      "https://www.merriam-webster.com/dictionary/fish#dictionary-entry-2",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16085",
-      "https://bosworthtoller.com/10811"
-    ]
+    }
   }
 ]

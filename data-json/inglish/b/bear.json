@@ -1,107 +1,137 @@
 [
   {
-    "name": "to bear",
-    "etymology": [
-      {
-        "name": "beran",
-        "origin": "Old English"
-      },
-      {
-        "name": "beren",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to bear",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta baire -s bore bône -ing",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bear#etymonline_v_8203",
-      "https://www.etymonline.com/word/*bher-#etymonline_v_52553",
-      "https://www.etymonline.com/word/bairn#etymonline_v_205",
-      "https://www.merriam-webster.com/dictionary/bear#dictionary-entry-2",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4156",
-      "https://bosworthtoller.com/3803"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "to bear",
+      "etymology": [
+        {
+          "name": "beran",
+          "origin": "Old English"
+        },
+        {
+          "name": "beren",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to bear",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta baire -s bore bône -ing",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bear#etymonline_v_8203",
+        "https://www.etymonline.com/word/*bher-#etymonline_v_52553",
+        "https://www.etymonline.com/word/bairn#etymonline_v_205",
+        "https://www.merriam-webster.com/dictionary/bear#dictionary-entry-2",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4156",
+        "https://bosworthtoller.com/3803"
+      ]
+    }
   },
   {
-    "name": "(wheel)barrow",
-    "etymology": [
-      {
-        "name": "beran, bearwe",
-        "origin": "Old English"
-      },
-      {
-        "name": "barewe",
-        "origin": "Middle English"
-      },
-      {
-        "name": "(wheel)barrow",
-        "origin": "Modern English"
-      },
-      {
-        "name": "bairo -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/barrow#etymonline_v_5269",
-      "https://www.merriam-webster.com/dictionary/barrow#dictionary-entry-3",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3717",
-      "https://bosworthtoller.com/39586",
-      "https://bosworthtoller.com/3803"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "(wheel)barrow",
+      "etymology": [
+        {
+          "name": "beran, bearwe",
+          "origin": "Old English"
+        },
+        {
+          "name": "barewe",
+          "origin": "Middle English"
+        },
+        {
+          "name": "(wheel)barrow",
+          "origin": "Modern English"
+        },
+        {
+          "name": "bairo -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/barrow#etymonline_v_5269",
+        "https://www.merriam-webster.com/dictionary/barrow#dictionary-entry-3",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3717",
+        "https://bosworthtoller.com/39586",
+        "https://bosworthtoller.com/3803"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "bearable",
-    "etymology": [
-      {
-        "name": "bearable",
-        "origin": "Modern English"
-      },
-      {
-        "name": "baîable -y",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "bearable",
+      "etymology": [
+        {
+          "name": "bearable",
+          "origin": "Modern English"
+        },
+        {
+          "name": "baîable -y",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bearable#etymonline_v_29878",
+        "https://www.etymonline.com/word/bear#etymonline_v_8203",
+        "https://www.etymonline.com/word/-able#etymonline_v_49"
+      ],
+      "degrees": {
+        "positive": "able",
+        "comparative": "y"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bearable#etymonline_v_29878",
-      "https://www.etymonline.com/word/bear#etymonline_v_8203",
-      "https://www.etymonline.com/word/-able#etymonline_v_49"
-    ]
+    }
   },
   {
-    "name": "bear  -s (m n)",
-    "etymology": [
-      {
-        "name": "bera",
-        "origin": "Old English"
-      },
-      {
-        "name": "bere",
-        "origin": "Middle English"
-      },
-      {
-        "name": "bear  -s (m n)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bear#etymonline_v_8204",
-      "https://www.etymonline.com/word/*bher-#etymonline_v_52884",
-      "https://www.merriam-webster.com/dictionary/bear",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4138",
-      "https://bosworthtoller.com/3798"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "bear  -s (m n)",
+      "etymology": [
+        {
+          "name": "bera",
+          "origin": "Old English"
+        },
+        {
+          "name": "bere",
+          "origin": "Middle English"
+        },
+        {
+          "name": "bear  -s (m n)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bear#etymonline_v_8204",
+        "https://www.etymonline.com/word/*bher-#etymonline_v_52884",
+        "https://www.merriam-webster.com/dictionary/bear",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4138",
+        "https://bosworthtoller.com/3798"
+      ]
+    }
   }
 ]

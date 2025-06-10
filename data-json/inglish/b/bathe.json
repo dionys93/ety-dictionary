@@ -1,60 +1,89 @@
 [
   {
-    "name": "to bathe",
-    "etymology": [
-      {
-        "name": "baþian, baðian",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to bathe",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "bathen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to bathe",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta bâþe -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "baþian, baðian",
+        "bathen",
+        "to bathe",
+        "ta bâþe -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to bathe",
+      "etymology": [
+        {
+          "name": "baþian, baðian",
+          "origin": "Old English"
+        },
+        {
+          "name": "bathen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to bathe",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta bâþe -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bathe#etymonline_v_5315",
+        "https://www.etymonline.com/word/bath#etymonline_v_5314",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3792",
+        "https://bosworthtoller.com/3021",
+        "https://bosworthtoller.com/39514"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bathe#etymonline_v_5315",
-      "https://www.etymonline.com/word/bath#etymonline_v_5314",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3792",
-      "https://bosworthtoller.com/3021",
-      "https://bosworthtoller.com/39514"
-    ]
+    }
   },
   {
-    "name": "bath",
-    "etymology": [
-      {
-        "name": "bæþ",
-        "origin": "Old English"
-      },
-      {
-        "name": "bath",
-        "origin": "Middle English"
-      },
-      {
-        "name": "baþ -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bath#etymonline_v_5314",
-      "https://www.merriam-webster.com/dictionary/bath#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3791",
-      "https://bosworthtoller.com/39461",
-      "https://bosworthtoller.com/2926"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "bath",
+      "etymology": [
+        {
+          "name": "bæþ",
+          "origin": "Old English"
+        },
+        {
+          "name": "bath",
+          "origin": "Middle English"
+        },
+        {
+          "name": "baþ -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bath#etymonline_v_5314",
+        "https://www.merriam-webster.com/dictionary/bath#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3791",
+        "https://bosworthtoller.com/39461",
+        "https://bosworthtoller.com/2926"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

@@ -1,141 +1,201 @@
 [
   {
-    "name": "brace",
-    "etymology": [
-      {
-        "name": "βραχίων",
-        "origin": "Ancient Greek"
-      },
-      {
-        "name": "bracchium, bracchia",
-        "origin": "Latin"
-      },
-      {
-        "name": "brace",
-        "origin": "Old French"
-      },
-      {
-        "name": "brâce -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/brace#etymonline_v_15700",
-      "https://www.merriam-webster.com/dictionary/brace#dictionary-entry-2",
-      "https://www.oed.com/dictionary/brace_n?tab=factsheet#15641912",
-      "https://anglo-norman.net/entry/brace_1",
-      "https://latin-dictionary.net/definition/6879/bracchium-bracchi-i",
-      "https://lsj.gr/wiki/%CE%B2%CF%81%CE%B1%CF%87%CE%AF%CF%89%CE%BD"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "brace",
+      "etymology": [
+        {
+          "name": "βραχίων",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "bracchium, bracchia",
+          "origin": "Latin"
+        },
+        {
+          "name": "brace",
+          "origin": "Old French"
+        },
+        {
+          "name": "brâce -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/brace#etymonline_v_15700",
+        "https://www.merriam-webster.com/dictionary/brace#dictionary-entry-2",
+        "https://www.oed.com/dictionary/brace_n?tab=factsheet#15641912",
+        "https://anglo-norman.net/entry/brace_1",
+        "https://latin-dictionary.net/definition/6879/bracchium-bracchi-i",
+        "https://lsj.gr/wiki/%CE%B2%CF%81%CE%B1%CF%87%CE%AF%CF%89%CE%BD"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to brace",
-    "etymology": [
-      {
-        "name": "βραχίων",
-        "origin": "Ancient Greek"
+    "verbDetails": {
+      "infinitive": "to brace",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "bracchium, bracchia",
-        "origin": "Latin"
-      },
-      {
-        "name": "bracier",
-        "origin": "Old French"
-      },
-      {
-        "name": "to brace",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta brâce -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "βραχίων",
+        "bracchium, bracchia",
+        "bracier",
+        "to brace",
+        "ta brâce -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to brace",
+      "etymology": [
+        {
+          "name": "βραχίων",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "bracchium, bracchia",
+          "origin": "Latin"
+        },
+        {
+          "name": "bracier",
+          "origin": "Old French"
+        },
+        {
+          "name": "to brace",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta brâce -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/brace#etymonline_v_43990",
+        "https://www.etymonline.com/word/brace#etymonline_v_15700",
+        "https://www.merriam-webster.com/dictionary/brace#dictionary-entry-1",
+        "https://www.oed.com/dictionary/brace_v?tab=factsheet#15648030",
+        "https://latin-dictionary.net/definition/6879/bracchium-bracchi-i",
+        "https://lsj.gr/wiki/%CE%B2%CF%81%CE%B1%CF%87%CE%AF%CF%89%CE%BD"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/brace#etymonline_v_43990",
-      "https://www.etymonline.com/word/brace#etymonline_v_15700",
-      "https://www.merriam-webster.com/dictionary/brace#dictionary-entry-1",
-      "https://www.oed.com/dictionary/brace_v?tab=factsheet#15648030",
-      "https://latin-dictionary.net/definition/6879/bracchium-bracchi-i",
-      "https://lsj.gr/wiki/%CE%B2%CF%81%CE%B1%CF%87%CE%AF%CF%89%CE%BD"
-    ]
+    }
   },
   {
-    "name": "to embrace",
-    "etymology": [
-      {
-        "name": "βραχίων",
-        "origin": "Ancient Greek"
+    "verbDetails": {
+      "infinitive": "to embrace",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "bracchium",
-        "origin": "Latin"
-      },
-      {
-        "name": "embracier",
-        "origin": "Old French"
-      },
-      {
-        "name": "to embrace",
-        "origin": "Modern English"
-      },
-      {
-        "name": "to embrâce -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "βραχίων",
+        "bracchium",
+        "embracier",
+        "to embrace",
+        "to embrâce -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to embrace",
+      "etymology": [
+        {
+          "name": "βραχίων",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "bracchium",
+          "origin": "Latin"
+        },
+        {
+          "name": "embracier",
+          "origin": "Old French"
+        },
+        {
+          "name": "to embrace",
+          "origin": "Modern English"
+        },
+        {
+          "name": "to embrâce -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/embrace#etymonline_v_5787",
+        "https://www.merriam-webster.com/dictionary/embrace#dictionary-entry-1",
+        "https://anglo-norman.net/entry/embracer_1",
+        "https://latin-dictionary.net/definition/6879/bracchium-bracchi-i",
+        "https://lsj.gr/wiki/%CE%B2%CF%81%CE%B1%CF%87%CE%AF%CF%89%CE%BD"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/embrace#etymonline_v_5787",
-      "https://www.merriam-webster.com/dictionary/embrace#dictionary-entry-1",
-      "https://anglo-norman.net/entry/embracer_1",
-      "https://latin-dictionary.net/definition/6879/bracchium-bracchi-i",
-      "https://lsj.gr/wiki/%CE%B2%CF%81%CE%B1%CF%87%CE%AF%CF%89%CE%BD"
-    ]
+    }
   },
   {
-    "name": "embrace",
-    "etymology": [
-      {
-        "name": "βραχίων",
-        "origin": "Ancient Greek"
-      },
-      {
-        "name": "bracchium",
-        "origin": "Latin"
-      },
-      {
-        "name": "embracier",
-        "origin": "Old French"
-      },
-      {
-        "name": "embrace",
-        "origin": "Modern English"
-      },
-      {
-        "name": "embrâce -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/embrace#etymonline_v_46797",
-      "https://www.etymonline.com/word/embrace#etymonline_v_5787",
-      "https://www.merriam-webster.com/dictionary/embrace#dictionary-entry-2",
-      "https://anglo-norman.net/entry/embrace",
-      "https://latin-dictionary.net/definition/6879/bracchium-bracchi-i",
-      "https://lsj.gr/wiki/%CE%B2%CF%81%CE%B1%CF%87%CE%AF%CF%89%CE%BD"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "embrace",
+      "etymology": [
+        {
+          "name": "βραχίων",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "bracchium",
+          "origin": "Latin"
+        },
+        {
+          "name": "embracier",
+          "origin": "Old French"
+        },
+        {
+          "name": "embrace",
+          "origin": "Modern English"
+        },
+        {
+          "name": "embrâce -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/embrace#etymonline_v_46797",
+        "https://www.etymonline.com/word/embrace#etymonline_v_5787",
+        "https://www.merriam-webster.com/dictionary/embrace#dictionary-entry-2",
+        "https://anglo-norman.net/entry/embrace",
+        "https://latin-dictionary.net/definition/6879/bracchium-bracchi-i",
+        "https://lsj.gr/wiki/%CE%B2%CF%81%CE%B1%CF%87%CE%AF%CF%89%CE%BD"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

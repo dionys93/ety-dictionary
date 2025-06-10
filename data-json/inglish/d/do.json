@@ -1,123 +1,174 @@
 [
   {
-    "name": "to do",
-    "etymology": [
-      {
-        "name": "don",
-        "origin": "Old English"
-      },
-      {
-        "name": "to do",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta dou",
-        "origin": "Inglish"
-      },
-      {
-        "name": "dou/dus - did - don - douing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
-      },
-      {
-        "name": "don't, dusn't, didn't",
-        "origin": "Inglish"
-      },
-      {
-        "name": "E.g. Do you dou it?",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/do#etymonline_v_13867",
-      "https://www.merriam-webster.com/dictionary/do#dictionary-entry-1",
-      "https://www.oed.com/dictionary/do_v?tab=pronunciation#6328646",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12367",
-      "https://bosworthtoller.com/42878",
-      "https://bosworthtoller.com/7821"
-    ]
+    "verbDetails": {
+      "infinitive": "to do",
+      "etymology": [
+        "don",
+        "to do",
+        "ta dou",
+        "dou/dus - did - don - douing",
+        "don't, dusn't, didn't",
+        "E.g. Do you dou it?"
+      ]
+    },
+    "standard": {
+      "name": "to do",
+      "etymology": [
+        {
+          "name": "don",
+          "origin": "Old English"
+        },
+        {
+          "name": "to do",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta dou",
+          "origin": "Inglish"
+        },
+        {
+          "name": "dou/dus - did - don - douing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        },
+        {
+          "name": "don't, dusn't, didn't",
+          "origin": "Inglish"
+        },
+        {
+          "name": "E.g. Do you dou it?",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/do#etymonline_v_13867",
+        "https://www.merriam-webster.com/dictionary/do#dictionary-entry-1",
+        "https://www.oed.com/dictionary/do_v?tab=pronunciation#6328646",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12367",
+        "https://bosworthtoller.com/42878",
+        "https://bosworthtoller.com/7821"
+      ]
+    }
   },
   {
-    "name": "deed",
-    "etymology": [
-      {
-        "name": "dæd",
-        "origin": "Old English"
-      },
-      {
-        "name": "dede",
-        "origin": "Middle English"
-      },
-      {
-        "name": "deed",
-        "origin": "Modern English"
-      },
-      {
-        "name": "dide, díds",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/deed#etymonline_v_889",
-      "https://www.merriam-webster.com/dictionary/deed#dictionary-entry-1",
-      "https://www.oed.com/dictionary/deed_n?tab=factsheet#7371135",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10751",
-      "https://bosworthtoller.com/7309"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "deed",
+      "etymology": [
+        {
+          "name": "dæd",
+          "origin": "Old English"
+        },
+        {
+          "name": "dede",
+          "origin": "Middle English"
+        },
+        {
+          "name": "deed",
+          "origin": "Modern English"
+        },
+        {
+          "name": "dide, díds",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/deed#etymonline_v_889",
+        "https://www.merriam-webster.com/dictionary/deed#dictionary-entry-1",
+        "https://www.oed.com/dictionary/deed_n?tab=factsheet#7371135",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10751",
+        "https://bosworthtoller.com/7309"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to deed",
-    "etymology": [
-      {
-        "name": "to deed",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to deed",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta dide -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to deed",
+        "ta dide -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to deed",
+      "etymology": [
+        {
+          "name": "to deed",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta dide -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/deed#dictionary-entry-2",
+        "https://www.etymonline.com/word/deed#etymonline_v_889",
+        "https://www.oed.com/dictionary/deed_v?tab=factsheet#7372118"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/deed#dictionary-entry-2",
-      "https://www.etymonline.com/word/deed#etymonline_v_889",
-      "https://www.oed.com/dictionary/deed_v?tab=factsheet#7372118"
-    ]
+    }
   },
   {
-    "name": "indeed",
-    "etymology": [
-      {
-        "name": "dæd",
-        "origin": "Old English"
-      },
-      {
-        "name": "in dede",
-        "origin": "Middle English"
-      },
-      {
-        "name": "indeed",
-        "origin": "Modern English"
-      },
-      {
-        "name": "indide",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adverb"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/indeed",
-      "https://www.oed.com/dictionary/indeed_adv?tab=factsheet#655861",
-      "https://bosworthtoller.com/7309"
-    ]
+    "verbDetails": {
+      "infinitive": "to indeed",
+      "etymology": [
+        "dæd",
+        "in dede",
+        "indeed",
+        "indide"
+      ]
+    },
+    "standard": {
+      "name": "to indeed",
+      "etymology": [
+        {
+          "name": "dæd",
+          "origin": "Old English"
+        },
+        {
+          "name": "in dede",
+          "origin": "Middle English"
+        },
+        {
+          "name": "indeed",
+          "origin": "Modern English"
+        },
+        {
+          "name": "indide",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adverb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/indeed",
+        "https://www.oed.com/dictionary/indeed_adv?tab=factsheet#655861",
+        "https://bosworthtoller.com/7309"
+      ]
+    }
   }
 ]

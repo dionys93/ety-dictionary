@@ -1,164 +1,235 @@
 [
   {
-    "name": "to create",
-    "etymology": [
-      {
-        "name": "crescere, creare, creatus",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to create",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to create",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta criâte -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "crescere, creare, creatus",
+        "to create",
+        "ta criâte -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to create",
+      "etymology": [
+        {
+          "name": "crescere, creare, creatus",
+          "origin": "Latin"
+        },
+        {
+          "name": "to create",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta criâte -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/create#etymonline_v_320",
+        "https://www.oed.com/dictionary/create_v?tab=factsheet#8012857",
+        "https://latin-dictionary.net/definition/14707/creo-creare-creavi-creatus",
+        "https://latin-dictionary.net/definition/14737/cresco-crescere-crevi-cretus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/create#etymonline_v_320",
-      "https://www.oed.com/dictionary/create_v?tab=factsheet#8012857",
-      "https://latin-dictionary.net/definition/14707/creo-creare-creavi-creatus",
-      "https://latin-dictionary.net/definition/14737/cresco-crescere-crevi-cretus"
-    ]
+    }
   },
   {
-    "name": "creation",
-    "etymology": [
-      {
-        "name": "creare, creationem",
-        "origin": "Latin"
-      },
-      {
-        "name": "creacion",
-        "origin": "Old French"
-      },
-      {
-        "name": "creacioun",
-        "origin": "Middle English"
-      },
-      {
-        "name": "creation",
-        "origin": "Modern English"
-      },
-      {
-        "name": "criâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/creation#etymonline_v_29036",
-      "https://www.oed.com/dictionary/creation_n?tab=factsheet#8013761",
-      "https://latin-dictionary.net/definition/14653/creatio-creationis",
-      "https://latin-dictionary.net/definition/14707/creo-creare-creavi-creatus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "creation",
+      "etymology": [
+        {
+          "name": "creare, creationem",
+          "origin": "Latin"
+        },
+        {
+          "name": "creacion",
+          "origin": "Old French"
+        },
+        {
+          "name": "creacioun",
+          "origin": "Middle English"
+        },
+        {
+          "name": "creation",
+          "origin": "Modern English"
+        },
+        {
+          "name": "criâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/creation#etymonline_v_29036",
+        "https://www.oed.com/dictionary/creation_n?tab=factsheet#8013761",
+        "https://latin-dictionary.net/definition/14653/creatio-creationis",
+        "https://latin-dictionary.net/definition/14707/creo-creare-creavi-creatus"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "creationism",
-    "etymology": [
-      {
-        "name": "creationism",
-        "origin": "Modern English"
-      },
-      {
-        "name": "criâcionism -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/creationism#etymonline_v_29033"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "creationism",
+      "etymology": [
+        {
+          "name": "creationism",
+          "origin": "Modern English"
+        },
+        {
+          "name": "criâcionism -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/creationism#etymonline_v_29033"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "creative",
-    "etymology": [
-      {
-        "name": "creative",
-        "origin": "Modern English"
-      },
-      {
-        "name": "criâtif -vly -ness",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "creative",
+      "etymology": [
+        {
+          "name": "creative",
+          "origin": "Modern English"
+        },
+        {
+          "name": "criâtif -vly -ness",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/creative#etymonline_v_29034",
+        "https://latin-dictionary.net/definition/14654/creativus-creativa-creativum"
+      ],
+      "degrees": {
+        "positive": "tif",
+        "comparative": "vly",
+        "superlative": "ness"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/creative#etymonline_v_29034",
-      "https://latin-dictionary.net/definition/14654/creativus-creativa-creativum"
-    ]
+    }
   },
   {
-    "name": "creativity",
-    "etymology": [
-      {
-        "name": "creativity",
-        "origin": "Modern English"
-      },
-      {
-        "name": "criâtivetie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/creativity#etymonline_v_36301"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "creativity",
+      "etymology": [
+        {
+          "name": "creativity",
+          "origin": "Modern English"
+        },
+        {
+          "name": "criâtivetie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/creativity#etymonline_v_36301"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "creature",
-    "etymology": [
-      {
-        "name": "creare, creatus, creatura",
-        "origin": "Latin"
-      },
-      {
-        "name": "creature",
-        "origin": "Old French"
-      },
-      {
-        "name": "crieȶor; crieȶure, crieȶurs",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/creature#etymonline_v_322",
-      "https://latin-dictionary.net/definition/14658/creatura-creaturae"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "creature",
+      "etymology": [
+        {
+          "name": "creare, creatus, creatura",
+          "origin": "Latin"
+        },
+        {
+          "name": "creature",
+          "origin": "Old French"
+        },
+        {
+          "name": "crietior -s ; crieţure, crieţurs",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/creature#etymonline_v_322",
+        "https://latin-dictionary.net/definition/14658/creatura-creaturae"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "creatus, creator",
-    "etymology": [
-      {
-        "name": "creatus, creator",
-        "origin": "Latin"
-      },
-      {
-        "name": "criâteur, criâtor -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/creator#etymonline_v_29035",
-      "https://latin-dictionary.net/definition/14655/creator-creatoris"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "creatus, creator",
+      "etymology": [
+        {
+          "name": "creatus, creator",
+          "origin": "Latin"
+        },
+        {
+          "name": "criâteur, criâtor -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/creator#etymonline_v_29035",
+        "https://latin-dictionary.net/definition/14655/creator-creatoris"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

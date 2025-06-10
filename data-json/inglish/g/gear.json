@@ -1,56 +1,83 @@
 [
   {
-    "name": "gear",
-    "etymology": [
-      {
-        "name": "gørvi",
-        "origin": "Old Norse"
-      },
-      {
-        "name": "gere",
-        "origin": "Middle English"
-      },
-      {
-        "name": "gear",
-        "origin": "Modern English"
-      },
-      {
-        "name": "guiar -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/gear#etymonline_v_1332",
-      "https://www.merriam-webster.com/dictionary/gear#dictionary-entry-1",
-      "https://www.oed.com/dictionary/gear_n?tab=factsheet#3295849",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED18426",
-      "https://old-norse.net/html/g.php#gervi",
-      "https://old-norse.net/html/g.php#g%C3%B6ra"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "gear",
+      "etymology": [
+        {
+          "name": "gørvi",
+          "origin": "Old Norse"
+        },
+        {
+          "name": "gere",
+          "origin": "Middle English"
+        },
+        {
+          "name": "gear",
+          "origin": "Modern English"
+        },
+        {
+          "name": "guiar -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/gear#etymonline_v_1332",
+        "https://www.merriam-webster.com/dictionary/gear#dictionary-entry-1",
+        "https://www.oed.com/dictionary/gear_n?tab=factsheet#3295849",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED18426",
+        "https://old-norse.net/html/g.php#gervi",
+        "https://old-norse.net/html/g.php#g%C3%B6ra"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to gear",
-    "etymology": [
-      {
-        "name": "to gear",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to gear",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta guiare -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to gear",
+        "ta guiare -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to gear",
+      "etymology": [
+        {
+          "name": "to gear",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta guiare -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/gear#etymonline_v_40980",
+        "https://www.etymonline.com/word/gear#etymonline_v_1332",
+        "https://www.merriam-webster.com/dictionary/gear#dictionary-entry-2",
+        "https://www.oed.com/dictionary/gear_v?tab=factsheet#3298544"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/gear#etymonline_v_40980",
-      "https://www.etymonline.com/word/gear#etymonline_v_1332",
-      "https://www.merriam-webster.com/dictionary/gear#dictionary-entry-2",
-      "https://www.oed.com/dictionary/gear_v?tab=factsheet#3298544"
-    ]
+    }
   }
 ]

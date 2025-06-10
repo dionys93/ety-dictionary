@@ -1,57 +1,87 @@
 [
   {
-    "name": "to interfere",
-    "etymology": [
-      {
-        "name": "entre + ferire",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to interfere",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "enterferer",
-        "origin": "Old French"
-      },
-      {
-        "name": "enterferen, enterfere",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to interfere",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta interfíre -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "entre + ferire",
+        "enterferer",
+        "enterferen, enterfere",
+        "to interfere",
+        "ta interfíre -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to interfere",
+      "etymology": [
+        {
+          "name": "entre + ferire",
+          "origin": "Latin"
+        },
+        {
+          "name": "enterferer",
+          "origin": "Old French"
+        },
+        {
+          "name": "enterferen, enterfere",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to interfere",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta interfíre -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/interfere#etymonline_v_9401",
+        "https://www.merriam-webster.com/dictionary/interfere",
+        "https://www.oed.com/dictionary/interfere_v?tab=factsheet#264029",
+        "https://anglo-norman.net/entry/entreferir",
+        "https://latin-dictionary.net/definition/20473/ferio-ferire"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/interfere#etymonline_v_9401",
-      "https://www.merriam-webster.com/dictionary/interfere",
-      "https://www.oed.com/dictionary/interfere_v?tab=factsheet#264029",
-      "https://anglo-norman.net/entry/entreferir",
-      "https://latin-dictionary.net/definition/20473/ferio-ferire"
-    ]
+    }
   },
   {
-    "name": "interference",
-    "etymology": [
-      {
-        "name": "interference",
-        "origin": "Modern English"
-      },
-      {
-        "name": "interfirence -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/interference#etymonline_v_35020",
-      "https://www.oed.com/dictionary/interference_n?tab=factsheet#264680"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "interference",
+      "etymology": [
+        {
+          "name": "interference",
+          "origin": "Modern English"
+        },
+        {
+          "name": "interfirence -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/interference#etymonline_v_35020",
+        "https://www.oed.com/dictionary/interference_n?tab=factsheet#264680"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

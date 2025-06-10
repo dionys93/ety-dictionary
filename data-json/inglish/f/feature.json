@@ -1,93 +1,124 @@
 [
   {
-    "name": "feat",
-    "etymology": [
-      {
-        "name": "facere, factum",
-        "origin": "Latin"
-      },
-      {
-        "name": "fait",
-        "origin": "Old French"
-      },
-      {
-        "name": "fet",
-        "origin": "Inglish"
-      },
-      {
-        "name": "feat",
-        "origin": "Modern English"
-      },
-      {
-        "name": "fiet -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/feat#etymonline_v_1181",
-      "https://www.merriam-webster.com/dictionary/feat#dictionary-entry-1",
-      "https://anglo-norman.net/entry/fait_1",
-      "https://latin-dictionary.net/definition/20199/factum-facti",
-      "https://latin-dictionary.net/definition/20187/facio-facere-feci-factus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "feat",
+      "etymology": [
+        {
+          "name": "facere, factum",
+          "origin": "Latin"
+        },
+        {
+          "name": "fait",
+          "origin": "Old French"
+        },
+        {
+          "name": "fet",
+          "origin": "Inglish"
+        },
+        {
+          "name": "feat",
+          "origin": "Modern English"
+        },
+        {
+          "name": "fiet -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/feat#etymonline_v_1181",
+        "https://www.merriam-webster.com/dictionary/feat#dictionary-entry-1",
+        "https://anglo-norman.net/entry/fait_1",
+        "https://latin-dictionary.net/definition/20199/factum-facti",
+        "https://latin-dictionary.net/definition/20187/facio-facere-feci-factus"
+      ]
+    }
   },
   {
-    "name": "feature",
-    "etymology": [
-      {
-        "name": "facere, factura",
-        "origin": "Latin"
-      },
-      {
-        "name": "faiture",
-        "origin": "Old French"
-      },
-      {
-        "name": "feture",
-        "origin": "Inglish"
-      },
-      {
-        "name": "feature",
-        "origin": "Modern English"
-      },
-      {
-        "name": "fieȶure -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/feature#etymonline_v_1183",
-      "https://www.merriam-webster.com/dictionary/feature#dictionary-entry-1",
-      "https://anglo-norman.net/entry/faiture",
-      "https://latin-dictionary.net/definition/20200/factura-facturae",
-      "https://latin-dictionary.net/definition/20187/facio-facere-feci-factus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "feature",
+      "etymology": [
+        {
+          "name": "facere, factura",
+          "origin": "Latin"
+        },
+        {
+          "name": "faiture",
+          "origin": "Old French"
+        },
+        {
+          "name": "feture",
+          "origin": "Inglish"
+        },
+        {
+          "name": "feature",
+          "origin": "Modern English"
+        },
+        {
+          "name": "fieţure, fieţurs",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/feature#etymonline_v_1183",
+        "https://www.merriam-webster.com/dictionary/feature#dictionary-entry-1",
+        "https://anglo-norman.net/entry/faiture",
+        "https://latin-dictionary.net/definition/20200/factura-facturae",
+        "https://latin-dictionary.net/definition/20187/facio-facere-feci-factus"
+      ]
+    }
   },
   {
-    "name": "to feature",
-    "etymology": [
-      {
-        "name": "to feature",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to feature",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta fieȶure -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to feature",
+        "ta fieţure -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to feature",
+      "etymology": [
+        {
+          "name": "to feature",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta fieţure -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/feature#etymonline_v_39313",
+        "https://www.etymonline.com/word/feature#etymonline_v_1183",
+        "https://www.merriam-webster.com/dictionary/feature#dictionary-entry-2"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/feature#etymonline_v_39313",
-      "https://www.etymonline.com/word/feature#etymonline_v_1183",
-      "https://www.merriam-webster.com/dictionary/feature#dictionary-entry-2"
-    ]
+    }
   }
 ]

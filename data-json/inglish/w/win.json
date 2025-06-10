@@ -1,80 +1,113 @@
 [
   {
-    "name": "to win",
-    "etymology": [
-      {
-        "name": "winnan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to win",
+      "conjugations": {
+        "thirdPerson": "ing"
       },
-      {
-        "name": "winnen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to win",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta ɯinne ɯins ɯon -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "winnan",
+        "winnen",
+        "to win",
+        "ta ɯinne ɯins ɯon -ing"
+      ]
+    },
+    "standard": {
+      "name": "to win",
+      "etymology": [
+        {
+          "name": "winnan",
+          "origin": "Old English"
+        },
+        {
+          "name": "winnen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to win",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta ɯinne ɯins ɯon -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/win#etymonline_v_10769",
+        "https://www.merriam-webster.com/dictionary/win#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52917",
+        "https://bosworthtoller.com/35918"
+      ],
+      "conjugations": {
+        "thirdPerson": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/win#etymonline_v_10769",
-      "https://www.merriam-webster.com/dictionary/win#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52917",
-      "https://bosworthtoller.com/35918"
-    ]
+    }
   },
   {
-    "name": "win",
-    "etymology": [
-      {
-        "name": "winn",
-        "origin": "Old English"
-      },
-      {
-        "name": "win",
-        "origin": "Middle English"
-      },
-      {
-        "name": "ɯin -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/win#etymonline_v_46427",
-      "https://www.etymonline.com/word/win#etymonline_v_10769",
-      "https://www.merriam-webster.com/dictionary/win#dictionary-entry-2",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52842",
-      "https://bosworthtoller.com/35916"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "win",
+      "etymology": [
+        {
+          "name": "winn",
+          "origin": "Old English"
+        },
+        {
+          "name": "win",
+          "origin": "Middle English"
+        },
+        {
+          "name": "ɯin -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/win#etymonline_v_46427",
+        "https://www.etymonline.com/word/win#etymonline_v_10769",
+        "https://www.merriam-webster.com/dictionary/win#dictionary-entry-2",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52842",
+        "https://bosworthtoller.com/35916"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "winner",
-    "etymology": [
-      {
-        "name": "winner",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ɯinneur -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/winner#etymonline_v_40188",
-      "https://www.etymonline.com/word/win#etymonline_v_10769",
-      "https://www.merriam-webster.com/dictionary/winner"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "winner",
+      "etymology": [
+        {
+          "name": "winner",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ɯinneur -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/winner#etymonline_v_40188",
+        "https://www.etymonline.com/word/win#etymonline_v_10769",
+        "https://www.merriam-webster.com/dictionary/winner"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

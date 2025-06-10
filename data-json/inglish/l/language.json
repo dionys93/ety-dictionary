@@ -1,37 +1,45 @@
 [
   {
-    "name": "language",
-    "etymology": [
-      {
-        "name": "lingua",
-        "origin": "Latin"
-      },
-      {
-        "name": "linguaticum",
-        "origin": "Vulgar Latin"
-      },
-      {
-        "name": "langage",
-        "origin": "Old French"
-      },
-      {
-        "name": "language",
-        "origin": "Modern English"
-      },
-      {
-        "name": "lânguage -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/language#etymonline_v_2044",
-      "https://www.collinsdictionary.com/us/dictionary/english-spanish/language",
-      "https://www.oed.com/dictionary/language_n",
-      "https://www.anglo-norman.net/entry/langage",
-      "https://latin-dictionary.net/definition/25721/lingua-linguae"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "language",
+      "etymology": [
+        {
+          "name": "lingua",
+          "origin": "Latin"
+        },
+        {
+          "name": "linguaticum",
+          "origin": "Vulgar Latin"
+        },
+        {
+          "name": "langage",
+          "origin": "Old French"
+        },
+        {
+          "name": "language",
+          "origin": "Modern English"
+        },
+        {
+          "name": "lânguage -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/language#etymonline_v_2044",
+        "https://www.collinsdictionary.com/us/dictionary/english-spanish/language",
+        "https://www.oed.com/dictionary/language_n",
+        "https://www.anglo-norman.net/entry/langage",
+        "https://latin-dictionary.net/definition/25721/lingua-linguae"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

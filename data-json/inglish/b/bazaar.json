@@ -1,32 +1,38 @@
 [
   {
-    "name": "bazaar",
-    "etymology": [
-      {
-        "name": "بازار",
-        "origin": "Inglish"
-      },
-      {
-        "name": "bazar",
-        "origin": "Italian"
-      },
-      {
-        "name": "bazaar",
-        "origin": "Modern English"
-      },
-      {
-        "name": "bazare, bazárs",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bazaar",
-      "https://www.oed.com/dictionary/bazaar_n?tab=factsheet#25760040",
-      "https://www.treccani.it/vocabolario/bazar/",
-      "https://dsal.uchicago.edu/cgi-bin/app/steingass_query.py?page=144"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "bazaar",
+      "etymology": [
+        {
+          "name": "بازار",
+          "origin": "Inglish"
+        },
+        {
+          "name": "bazar",
+          "origin": "Italian"
+        },
+        {
+          "name": "bazaar",
+          "origin": "Modern English"
+        },
+        {
+          "name": "bazare, bazárs",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bazaar",
+        "https://www.oed.com/dictionary/bazaar_n?tab=factsheet#25760040",
+        "https://www.treccani.it/vocabolario/bazar/",
+        "https://dsal.uchicago.edu/cgi-bin/app/steingass_query.py?page=144"
+      ]
+    }
   }
 ]

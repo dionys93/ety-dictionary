@@ -1,57 +1,88 @@
 [
   {
-    "name": "loose",
-    "etymology": [
-      {
-        "name": "lauss",
-        "origin": "Old Norse"
-      },
-      {
-        "name": "lous, loos, lowse",
-        "origin": "Middle English"
-      },
-      {
-        "name": "loose",
-        "origin": "Modern English"
-      },
-      {
-        "name": "louss -er -est",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "loose",
+      "etymology": [
+        {
+          "name": "lauss",
+          "origin": "Old Norse"
+        },
+        {
+          "name": "lous, loos, lowse",
+          "origin": "Middle English"
+        },
+        {
+          "name": "loose",
+          "origin": "Modern English"
+        },
+        {
+          "name": "louss -er -est",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/loose",
+        "https://www.oed.com/dictionary/loose_adj?tab=pronunciation#38839449",
+        "https://old-norse.net/html/l.php#lauss"
+      ],
+      "degrees": {
+        "positive": "louss",
+        "comparative": "er",
+        "superlative": "est"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/loose",
-      "https://www.oed.com/dictionary/loose_adj?tab=pronunciation#38839449",
-      "https://old-norse.net/html/l.php#lauss"
-    ]
+    }
   },
   {
-    "name": "to loosen",
-    "etymology": [
-      {
-        "name": "losnen",
-        "origin": "Middle English"
+    "verbDetails": {
+      "infinitive": "to loosen",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to loosen",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta loussen -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "losnen",
+        "to loosen",
+        "ta loussen -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to loosen",
+      "etymology": [
+        {
+          "name": "losnen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to loosen",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta loussen -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/loosen",
+        "https://www.etymonline.com/word/loose",
+        "https://www.etymonline.com/word/-en#etymonline_v_32445",
+        "https://www.oed.com/dictionary/loosen_v?tab=factsheet#38846649"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/loosen",
-      "https://www.etymonline.com/word/loose",
-      "https://www.etymonline.com/word/-en#etymonline_v_32445",
-      "https://www.oed.com/dictionary/loosen_v?tab=factsheet#38846649"
-    ]
+    }
   }
 ]

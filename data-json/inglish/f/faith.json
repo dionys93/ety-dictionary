@@ -1,80 +1,110 @@
 [
   {
-    "name": "faith",
-    "etymology": [
-      {
-        "name": "fidere, fides",
-        "origin": "Latin"
-      },
-      {
-        "name": "feid, foi",
-        "origin": "Old French"
-      },
-      {
-        "name": "faith, feith, fei, fai",
-        "origin": "Middle English"
-      },
-      {
-        "name": "faith",
-        "origin": "Modern English"
-      },
-      {
-        "name": "faiþ -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/faith#etymonline_v_1088",
-      "https://www.merriam-webster.com/dictionary/faith#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15481",
-      "https://www.anglo-norman.net/entry/fei_1",
-      "https://latin-dictionary.net/definition/20601/fides-fidei",
-      "https://latin-dictionary.net/definition/20608/fido-fidere-fisus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "faith",
+      "etymology": [
+        {
+          "name": "fidere, fides",
+          "origin": "Latin"
+        },
+        {
+          "name": "feid, foi",
+          "origin": "Old French"
+        },
+        {
+          "name": "faith, feith, fei, fai",
+          "origin": "Middle English"
+        },
+        {
+          "name": "faith",
+          "origin": "Modern English"
+        },
+        {
+          "name": "faiþ -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/faith#etymonline_v_1088",
+        "https://www.merriam-webster.com/dictionary/faith#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15481",
+        "https://www.anglo-norman.net/entry/fei_1",
+        "https://latin-dictionary.net/definition/20601/fides-fidei",
+        "https://latin-dictionary.net/definition/20608/fido-fidere-fisus"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "faithful",
-    "etymology": [
-      {
-        "name": "faithful",
-        "origin": "Modern English"
-      },
-      {
-        "name": "faiþful -ly -ness",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "noun"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "faithful",
+      "etymology": [
+        {
+          "name": "faithful",
+          "origin": "Modern English"
+        },
+        {
+          "name": "faiþful -ly -ness",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/faithful#etymonline_v_32950",
+        "https://www.merriam-webster.com/dictionary/faithful#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/faithful#dictionary-entry-2"
+      ],
+      "degrees": {
+        "positive": "ful",
+        "comparative": "ly",
+        "superlative": "ness"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/faithful#etymonline_v_32950",
-      "https://www.merriam-webster.com/dictionary/faithful#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/faithful#dictionary-entry-2"
-    ]
+    }
   },
   {
-    "name": "faithless",
-    "etymology": [
-      {
-        "name": "faithless",
-        "origin": "Modern English"
-      },
-      {
-        "name": "faiþless -ly -ness",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "faithless",
+      "etymology": [
+        {
+          "name": "faithless",
+          "origin": "Modern English"
+        },
+        {
+          "name": "faiþless -ly -ness",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/faithless#etymonline_v_32951",
+        "https://www.merriam-webster.com/dictionary/faithless"
+      ],
+      "degrees": {
+        "positive": "less",
+        "comparative": "ly",
+        "superlative": "ness"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/faithless#etymonline_v_32951",
-      "https://www.merriam-webster.com/dictionary/faithless"
-    ]
+    }
   }
 ]

@@ -1,30 +1,38 @@
 [
   {
-    "name": "crisis",
-    "etymology": [
-      {
-        "name": "κρίνειν, κρίσις",
-        "origin": "Ancient Greek"
-      },
-      {
-        "name": "crisis",
-        "origin": "Latin"
-      },
-      {
-        "name": "crîsiʃ, crîsis",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/crisis#etymonline_v_361",
-      "https://www.merriam-webster.com/dictionary/crisis",
-      "https://www.oed.com/dictionary/crisis_n?tab=factsheet#7813670",
-      "https://latin-dictionary.net/definition/14793/crisis-crisos-is",
-      "https://lsj.gr/wiki/%CE%BA%CF%81%CE%AF%CF%83%CE%B9%CF%82",
-      "https://lsj.gr/wiki/%CE%BA%CF%81%CE%AF%CE%BD%CE%B5%CE%B9%CE%BD"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "crisis",
+      "etymology": [
+        {
+          "name": "κρίνειν, κρίσις",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "crisis",
+          "origin": "Latin"
+        },
+        {
+          "name": "crîsiʃ, crîsis",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/crisis#etymonline_v_361",
+        "https://www.merriam-webster.com/dictionary/crisis",
+        "https://www.oed.com/dictionary/crisis_n?tab=factsheet#7813670",
+        "https://latin-dictionary.net/definition/14793/crisis-crisos-is",
+        "https://lsj.gr/wiki/%CE%BA%CF%81%CE%AF%CF%83%CE%B9%CF%82",
+        "https://lsj.gr/wiki/%CE%BA%CF%81%CE%AF%CE%BD%CE%B5%CE%B9%CE%BD"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

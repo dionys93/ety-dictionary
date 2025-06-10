@@ -1,63 +1,91 @@
 [
   {
-    "name": "to lift",
-    "etymology": [
-      {
-        "name": "lypta",
-        "origin": "Old Norse"
+    "verbDetails": {
+      "infinitive": "to lift",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "lyft",
-        "origin": "Old English"
-      },
-      {
-        "name": "liften",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to lift",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta lifte -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "lypta",
+        "lyft",
+        "liften",
+        "to lift",
+        "ta lifte -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to lift",
+      "etymology": [
+        {
+          "name": "lypta",
+          "origin": "Old Norse"
+        },
+        {
+          "name": "lyft",
+          "origin": "Old English"
+        },
+        {
+          "name": "liften",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to lift",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta lifte -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/lift#etymonline_v_9499",
+        "https://www.merriam-webster.com/dictionary/lift#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/lift#word-history",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25475",
+        "https://bosworthtoller.com/21643",
+        "https://bosworthtoller.com/54874",
+        "https://bosworthtoller.com/21932"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/lift#etymonline_v_9499",
-      "https://www.merriam-webster.com/dictionary/lift#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/lift#word-history",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25475",
-      "https://bosworthtoller.com/21643",
-      "https://bosworthtoller.com/54874",
-      "https://bosworthtoller.com/21932"
-    ]
+    }
   },
   {
-    "name": "lift  -s (m n)",
-    "etymology": [
-      {
-        "name": "lyft",
-        "origin": "Old English"
-      },
-      {
-        "name": "lift  -s (m n)",
-        "origin": "Middle English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/lift#etymonline_v_43424",
-      "https://www.etymonline.com/word/lift#etymonline_v_9499",
-      "https://www.merriam-webster.com/dictionary/lift#dictionary-entry-2",
-      "https://www.merriam-webster.com/dictionary/lift#word-history",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25473",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25472",
-      "https://bosworthtoller.com/21643",
-      "https://bosworthtoller.com/54874",
-      "https://bosworthtoller.com/21932"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "lift  -s (m n)",
+      "etymology": [
+        {
+          "name": "lyft",
+          "origin": "Old English"
+        },
+        {
+          "name": "lift  -s (m n)",
+          "origin": "Middle English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/lift#etymonline_v_43424",
+        "https://www.etymonline.com/word/lift#etymonline_v_9499",
+        "https://www.merriam-webster.com/dictionary/lift#dictionary-entry-2",
+        "https://www.merriam-webster.com/dictionary/lift#word-history",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25473",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25472",
+        "https://bosworthtoller.com/21643",
+        "https://bosworthtoller.com/54874",
+        "https://bosworthtoller.com/21932"
+      ]
+    }
   }
 ]

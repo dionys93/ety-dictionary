@@ -1,59 +1,84 @@
 [
   {
-    "name": "to write",
-    "etymology": [
-      {
-        "name": "writan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to write",
+      "conjugations": {
+        "thirdPerson": "s"
       },
-      {
-        "name": "writen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to write",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta ɯrîte -s ɯrote ɯritten -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "writan",
+        "writen",
+        "to write",
+        "ta ɯrîte -s ɯrote ɯritten -ing"
+      ]
+    },
+    "standard": {
+      "name": "to write",
+      "etymology": [
+        {
+          "name": "writan",
+          "origin": "Old English"
+        },
+        {
+          "name": "writen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to write",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta ɯrîte -s ɯrote ɯritten -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/write#etymonline_v_10885",
+        "https://www.merriam-webster.com/dictionary/write",
+        "https://www.oed.com/dictionary/write_v?tab=pronunciation#13994084",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED53686",
+        "https://bosworthtoller.com/36660"
+      ],
+      "conjugations": {
+        "thirdPerson": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/write#etymonline_v_10885",
-      "https://www.merriam-webster.com/dictionary/write",
-      "https://www.oed.com/dictionary/write_v?tab=pronunciation#13994084",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED53686",
-      "https://bosworthtoller.com/36660"
-    ]
+    }
   },
   {
-    "name": "writer",
-    "etymology": [
-      {
-        "name": "writere",
-        "origin": "Old English"
-      },
-      {
-        "name": "writer",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ɯrîteur, ɯrîtor -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/writer#etymonline_v_40240",
-      "https://www.etymonline.com/word/write#etymonline_v_10885",
-      "https://www.merriam-webster.com/dictionary/writer",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED53687"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "writer",
+      "etymology": [
+        {
+          "name": "writere",
+          "origin": "Old English"
+        },
+        {
+          "name": "writer",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ɯrîteur, ɯrîtor -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/writer#etymonline_v_40240",
+        "https://www.etymonline.com/word/write#etymonline_v_10885",
+        "https://www.merriam-webster.com/dictionary/writer",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED53687"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

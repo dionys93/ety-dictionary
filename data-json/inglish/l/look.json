@@ -1,77 +1,114 @@
 [
   {
-    "name": "to look",
-    "etymology": [
-      {
-        "name": "locian",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to look",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "loken",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to look",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta luke -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "locian",
+        "loken",
+        "to look",
+        "ta luke -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to look",
+      "etymology": [
+        {
+          "name": "locian",
+          "origin": "Old English"
+        },
+        {
+          "name": "loken",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to look",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta luke -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/look#etymonline_v_12420",
+        "https://www.merriam-webster.com/dictionary/look#dictionary-entry-1",
+        "https://www.oed.com/dictionary/look_v?tab=factsheet#38817259",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25944",
+        "https://bosworthtoller.com/21812"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/look#etymonline_v_12420",
-      "https://www.merriam-webster.com/dictionary/look#dictionary-entry-1",
-      "https://www.oed.com/dictionary/look_v?tab=factsheet#38817259",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25944",
-      "https://bosworthtoller.com/21812"
-    ]
+    }
   },
   {
-    "name": "look",
-    "etymology": [
-      {
-        "name": "locian",
-        "origin": "Old English"
-      },
-      {
-        "name": "look",
-        "origin": "Modern English"
-      },
-      {
-        "name": "luke, lûcs",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/look#etymonline_v_43516 https://www.etymonline.com/word/look#etymonline_v_12420",
-      "https://www.merriam-webster.com/dictionary/look#dictionary-entry-2",
-      "https://www.oed.com/dictionary/look_n?tab=factsheet#38816305"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "look",
+      "etymology": [
+        {
+          "name": "locian",
+          "origin": "Old English"
+        },
+        {
+          "name": "look",
+          "origin": "Modern English"
+        },
+        {
+          "name": "luke, lûcs",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/look#etymonline_v_43516 https://www.etymonline.com/word/look#etymonline_v_12420",
+        "https://www.merriam-webster.com/dictionary/look#dictionary-entry-2",
+        "https://www.oed.com/dictionary/look_n?tab=factsheet#38816305"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "lookout",
-    "etymology": [
-      {
-        "name": "lookout",
-        "origin": "Modern English"
-      },
-      {
-        "name": "lûkaot -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/lookout#etymonline_v_30929"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "lookout",
+      "etymology": [
+        {
+          "name": "lookout",
+          "origin": "Modern English"
+        },
+        {
+          "name": "lûkaot -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/lookout#etymonline_v_30929"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

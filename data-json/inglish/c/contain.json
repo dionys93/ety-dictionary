@@ -1,75 +1,111 @@
 [
   {
-    "name": "to contain",
-    "etymology": [
-      {
-        "name": "com + tenere, continere",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to contain",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "contenir, contein-",
-        "origin": "Old French"
-      },
-      {
-        "name": "conteynen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to contain",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta conteine -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "com + tenere, continere",
+        "contenir, contein-",
+        "conteynen",
+        "to contain",
+        "ta conteine -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to contain",
+      "etymology": [
+        {
+          "name": "com + tenere, continere",
+          "origin": "Latin"
+        },
+        {
+          "name": "contenir, contein-",
+          "origin": "Old French"
+        },
+        {
+          "name": "conteynen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to contain",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta conteine -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/contain#etymonline_v_18267",
+        "https://www.merriam-webster.com/dictionary/contain",
+        "https://latin-dictionary.net/search/latin/continere"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/contain#etymonline_v_18267",
-      "https://www.merriam-webster.com/dictionary/contain",
-      "https://latin-dictionary.net/search/latin/continere"
-    ]
+    }
   },
   {
-    "name": "containable",
-    "etymology": [
-      {
-        "name": "containable",
-        "origin": "Modern English"
-      },
-      {
-        "name": "contéinable",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/containable"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "containable",
+      "etymology": [
+        {
+          "name": "containable",
+          "origin": "Modern English"
+        },
+        {
+          "name": "contéinable",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/containable"
+      ]
+    }
   },
   {
-    "name": "containment",
-    "etymology": [
-      {
-        "name": "containment",
-        "origin": "Modern English"
-      },
-      {
-        "name": "contéinment -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/containment#etymonline_v_28741",
-      "https://www.merriam-webster.com/dictionary/containment",
-      "https://www.etymonline.com/word/-ment#etymonline_v_32036"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "containment",
+      "etymology": [
+        {
+          "name": "containment",
+          "origin": "Modern English"
+        },
+        {
+          "name": "contéinment -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/containment#etymonline_v_28741",
+        "https://www.merriam-webster.com/dictionary/containment",
+        "https://www.etymonline.com/word/-ment#etymonline_v_32036"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

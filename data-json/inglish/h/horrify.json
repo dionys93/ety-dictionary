@@ -1,133 +1,183 @@
 [
   {
-    "name": "to horrify",
-    "etymology": [
-      {
-        "name": "horrificare",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to horrify",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "i"
       },
-      {
-        "name": "to horrify",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta horrifae -s -d -ïng",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "horrificare",
+        "to horrify",
+        "ta horrifae -s -d -ïng"
+      ]
+    },
+    "standard": {
+      "name": "to horrify",
+      "etymology": [
+        {
+          "name": "horrificare",
+          "origin": "Latin"
+        },
+        {
+          "name": "to horrify",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta horrifae -s -d -ïng",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/horrify#etymonline_v_34399",
+        "https://www.etymonline.com/word/horror#etymonline_v_14464",
+        "https://www.etymonline.com/word/-fy#etymonline_v_38227"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "i"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/horrify#etymonline_v_34399",
-      "https://www.etymonline.com/word/horror#etymonline_v_14464",
-      "https://www.etymonline.com/word/-fy#etymonline_v_38227"
-    ]
+    }
   },
   {
-    "name": "horrendous",
-    "etymology": [
-      {
-        "name": "horrere, horrendus",
-        "origin": "Latin"
-      },
-      {
-        "name": "horrendous",
-        "origin": "Modern English"
-      },
-      {
-        "name": "horrèndoʃ -sly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/horrendous#etymonline_v_14460",
-      "https://www.merriam-webster.com/dictionary/horrendous",
-      "https://latin-dictionary.net/definition/22311/horrendus-horrenda-horrendum",
-      "https://latin-dictionary.net/definition/22312/horreo-horrere-horrui"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "horrendous",
+      "etymology": [
+        {
+          "name": "horrere, horrendus",
+          "origin": "Latin"
+        },
+        {
+          "name": "horrendous",
+          "origin": "Modern English"
+        },
+        {
+          "name": "horrèndoʃ -sly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/horrendous#etymonline_v_14460",
+        "https://www.merriam-webster.com/dictionary/horrendous",
+        "https://latin-dictionary.net/definition/22311/horrendus-horrenda-horrendum",
+        "https://latin-dictionary.net/definition/22312/horreo-horrere-horrui"
+      ]
+    }
   },
   {
-    "name": "horrible  -y -ness (adj)",
-    "etymology": [
-      {
-        "name": "horrere, horribilis",
-        "origin": "Latin"
-      },
-      {
-        "name": "orrible, horrible",
-        "origin": "Old French"
-      },
-      {
-        "name": "horrible  -y -ness (adj)",
-        "origin": "Middle English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/horrible#etymonline_v_14461",
-      "https://www.merriam-webster.com/dictionary/horrible",
-      "https://www.anglo-norman.net/entry/orrible",
-      "https://latin-dictionary.net/definition/22315/horribilis-horribile-horribilior",
-      "https://latin-dictionary.net/definition/22312/horreo-horrere-horrui"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "horrible  -y -ness (adj)",
+      "etymology": [
+        {
+          "name": "horrere, horribilis",
+          "origin": "Latin"
+        },
+        {
+          "name": "orrible, horrible",
+          "origin": "Old French"
+        },
+        {
+          "name": "horrible  -y -ness (adj)",
+          "origin": "Middle English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/horrible#etymonline_v_14461",
+        "https://www.merriam-webster.com/dictionary/horrible",
+        "https://www.anglo-norman.net/entry/orrible",
+        "https://latin-dictionary.net/definition/22315/horribilis-horribile-horribilior",
+        "https://latin-dictionary.net/definition/22312/horreo-horrere-horrui"
+      ]
+    }
   },
   {
-    "name": "horrid  -ly -ness (adj)",
-    "etymology": [
-      {
-        "name": "horrere, horridus",
-        "origin": "Latin"
-      },
-      {
-        "name": "horrid  -ly -ness (adj)",
-        "origin": "Middle English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/horrid#etymonline_v_14462",
-      "https://www.merriam-webster.com/dictionary/horrid",
-      "https://latin-dictionary.net/definition/22317/horridus-horrida-horridum",
-      "https://latin-dictionary.net/definition/22312/horreo-horrere-horrui"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "horrid  -ly -ness (adj)",
+      "etymology": [
+        {
+          "name": "horrere, horridus",
+          "origin": "Latin"
+        },
+        {
+          "name": "horrid  -ly -ness (adj)",
+          "origin": "Middle English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/horrid#etymonline_v_14462",
+        "https://www.merriam-webster.com/dictionary/horrid",
+        "https://latin-dictionary.net/definition/22317/horridus-horrida-horridum",
+        "https://latin-dictionary.net/definition/22312/horreo-horrere-horrui"
+      ]
+    }
   },
   {
-    "name": "horrific  -ly (adj)",
-    "etymology": [
-      {
-        "name": "horrere, horrificus",
-        "origin": "Latin"
-      },
-      {
-        "name": "horrifique",
-        "origin": "French"
-      },
-      {
-        "name": "horrific  -ly (adj)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/horrific#etymonline_v_14463",
-      "https://www.merriam-webster.com/dictionary/horrific",
-      "https://www.collinsdictionary.com/us/dictionary/french-english/horrifique",
-      "https://latin-dictionary.net/definition/22319/horrificus-horrifica-horrificum",
-      "https://latin-dictionary.net/definition/22312/horreo-horrere-horrui"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "horrific  -ly (adj)",
+      "etymology": [
+        {
+          "name": "horrere, horrificus",
+          "origin": "Latin"
+        },
+        {
+          "name": "horrifique",
+          "origin": "French"
+        },
+        {
+          "name": "horrific  -ly (adj)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/horrific#etymonline_v_14463",
+        "https://www.merriam-webster.com/dictionary/horrific",
+        "https://www.collinsdictionary.com/us/dictionary/french-english/horrifique",
+        "https://latin-dictionary.net/definition/22319/horrificus-horrifica-horrificum",
+        "https://latin-dictionary.net/definition/22312/horreo-horrere-horrui"
+      ]
+    }
   },
   {
-    "name": "horror  -s (m n)",
-    "etymology": [
-      {
-        "name": "horror  -s (m n)",
-        "origin": "Latin"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/horror#etymonline_v_14464",
-      "https://latin-dictionary.net/definition/22323/horror-horroris"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "horror  -s (m n)",
+      "etymology": [
+        {
+          "name": "horror  -s (m n)",
+          "origin": "Latin"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/horror#etymonline_v_14464",
+        "https://latin-dictionary.net/definition/22323/horror-horroris"
+      ]
+    }
   }
 ]

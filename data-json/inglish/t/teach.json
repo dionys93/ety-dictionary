@@ -1,99 +1,126 @@
 [
   {
-    "name": "to teach",
-    "etymology": [
-      {
-        "name": "tæcan",
-        "origin": "Old English"
-      },
-      {
-        "name": "techen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to teach",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta tieche -s toht -ing",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/teach#etymonline_v_7651",
-      "https://www.merriam-webster.com/dictionary/teach",
-      "https://www.oed.com/dictionary/teach_v?tab=factsheet#19063354",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44633",
-      "https://bosworthtoller.com/30117"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "to teach",
+      "etymology": [
+        {
+          "name": "tæcan",
+          "origin": "Old English"
+        },
+        {
+          "name": "techen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to teach",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta tieche -s toht -ing",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/teach#etymonline_v_7651",
+        "https://www.merriam-webster.com/dictionary/teach",
+        "https://www.oed.com/dictionary/teach_v?tab=factsheet#19063354",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44633",
+        "https://bosworthtoller.com/30117"
+      ]
+    }
   },
   {
-    "name": "teacher",
-    "etymology": [
-      {
-        "name": "techer",
-        "origin": "Middle English"
-      },
-      {
-        "name": "teacher",
-        "origin": "Modern English"
-      },
-      {
-        "name": "tiecheur -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/teacher#etymonline_v_29903",
-      "https://www.etymonline.com/word/teach#etymonline_v_7651",
-      "https://www.merriam-webster.com/dictionary/teacher",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44634"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "teacher",
+      "etymology": [
+        {
+          "name": "techer",
+          "origin": "Middle English"
+        },
+        {
+          "name": "teacher",
+          "origin": "Modern English"
+        },
+        {
+          "name": "tiecheur -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/teacher#etymonline_v_29903",
+        "https://www.etymonline.com/word/teach#etymonline_v_7651",
+        "https://www.merriam-webster.com/dictionary/teacher",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44634"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "teachable",
-    "etymology": [
-      {
-        "name": "teachable",
-        "origin": "Modern English"
-      },
-      {
-        "name": "tiechable",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/teachable#etymonline_v_39003",
-      "https://www.etymonline.com/word/teach#etymonline_v_7651",
-      "https://www.etymonline.com/word/-able#etymonline_v_49",
-      "https://www.merriam-webster.com/dictionary/teachable",
-      "https://www.oed.com/dictionary/teachable_adj?tab=factsheet#19065887"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "teachable",
+      "etymology": [
+        {
+          "name": "teachable",
+          "origin": "Modern English"
+        },
+        {
+          "name": "tiechable",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/teachable#etymonline_v_39003",
+        "https://www.etymonline.com/word/teach#etymonline_v_7651",
+        "https://www.etymonline.com/word/-able#etymonline_v_49",
+        "https://www.merriam-webster.com/dictionary/teachable",
+        "https://www.oed.com/dictionary/teachable_adj?tab=factsheet#19065887"
+      ]
+    }
   },
   {
-    "name": "teachability",
-    "etymology": [
-      {
-        "name": "teachability",
-        "origin": "Modern English"
-      },
-      {
-        "name": "tiechabilatie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/teachability",
-      "https://www.oed.com/dictionary/teachability_n?tab=factsheet#19066005100"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "teachability",
+      "etymology": [
+        {
+          "name": "teachability",
+          "origin": "Modern English"
+        },
+        {
+          "name": "tiechabilatie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/teachability",
+        "https://www.oed.com/dictionary/teachability_n?tab=factsheet#19066005100"
+      ],
+      "number": "plural"
+    }
   }
 ]

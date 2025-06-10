@@ -1,36 +1,57 @@
 [
   {
-    "name": "to poach",
-    "etymology": [
-      {
-        "name": "pochier",
-        "origin": "Old French"
+    "verbDetails": {
+      "infinitive": "to poach",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "pocher",
-        "origin": "French"
-      },
-      {
-        "name": "to poach",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta poche -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "pochier",
+        "pocher",
+        "to poach",
+        "ta poche -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to poach",
+      "etymology": [
+        {
+          "name": "pochier",
+          "origin": "Old French"
+        },
+        {
+          "name": "pocher",
+          "origin": "French"
+        },
+        {
+          "name": "to poach",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta poche -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/poach#etymonline_v_17515",
+        "https://www.etymonline.com/word/poach#etymonline_v_17516",
+        "https://www.oed.com/dictionary/poach_v2?tab=factsheet#29795697",
+        "https://www.oed.com/dictionary/poach_v1?tab=factsheet#29795396",
+        "https://www.merriam-webster.com/dictionary/poach#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/poach#dictionary-entry-2",
+        "https://www.merriam-webster.com/dictionary/poach#word-history",
+        "https://www.littre.org/definition/pocher"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/poach#etymonline_v_17515",
-      "https://www.etymonline.com/word/poach#etymonline_v_17516",
-      "https://www.oed.com/dictionary/poach_v2?tab=factsheet#29795697",
-      "https://www.oed.com/dictionary/poach_v1?tab=factsheet#29795396",
-      "https://www.merriam-webster.com/dictionary/poach#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/poach#dictionary-entry-2",
-      "https://www.merriam-webster.com/dictionary/poach#word-history",
-      "https://www.littre.org/definition/pocher"
-    ]
+    }
   }
 ]

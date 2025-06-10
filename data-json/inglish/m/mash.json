@@ -1,87 +1,122 @@
 [
   {
-    "name": "mash  -es (m n)",
-    "etymology": [
-      {
-        "name": "masc",
-        "origin": "Old English"
-      },
-      {
-        "name": "mash  -es (m n)",
-        "origin": "Middle English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/mash#etymonline_v_9671",
-      "https://www.merriam-webster.com/dictionary/mash#dictionary-entry-2",
-      "https://www.merriam-webster.com/dictionary/mash#dictionary-entry-3",
-      "https://www.merriam-webster.com/dictionary/mash#word-history",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED27002.5"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "mash  -es (m n)",
+      "etymology": [
+        {
+          "name": "masc",
+          "origin": "Old English"
+        },
+        {
+          "name": "mash  -es (m n)",
+          "origin": "Middle English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/mash#etymonline_v_9671",
+        "https://www.merriam-webster.com/dictionary/mash#dictionary-entry-2",
+        "https://www.merriam-webster.com/dictionary/mash#dictionary-entry-3",
+        "https://www.merriam-webster.com/dictionary/mash#word-history",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED27002.5"
+      ]
+    }
   },
   {
-    "name": "to mash",
-    "etymology": [
-      {
-        "name": "mæscan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to mash",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "mashen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to mash",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta mashe -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "mæscan",
+        "mashen",
+        "to mash",
+        "ta mashe -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to mash",
+      "etymology": [
+        {
+          "name": "mæscan",
+          "origin": "Old English"
+        },
+        {
+          "name": "mashen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to mash",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta mashe -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/mash#etymonline_v_43725",
+        "https://www.merriam-webster.com/dictionary/mash#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/mash#dictionary-entry-4",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED27004/"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/mash#etymonline_v_43725",
-      "https://www.merriam-webster.com/dictionary/mash#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/mash#dictionary-entry-4",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED27004/"
-    ]
+    }
   },
   {
-    "name": "mashie, mashy",
-    "etymology": [
-      {
-        "name": "mateola",
-        "origin": "Latin"
-      },
-      {
-        "name": "mattiuca",
-        "origin": "Vulgar Latin"
-      },
-      {
-        "name": "massue",
-        "origin": "French"
-      },
-      {
-        "name": "mashie, mashy",
-        "origin": "Modern English"
-      },
-      {
-        "name": "maçie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/mashie#etymonline_v_9674",
-      "https://www.oed.com/dictionary/mashie_n?tab=factsheet#37694180",
-      "https://www.collinsdictionary.com/us/dictionary/english/mashie",
-      "https://www.collinsdictionary.com/us/dictionary/english/mashy",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/massue/49660"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "mashie, mashy",
+      "etymology": [
+        {
+          "name": "mateola",
+          "origin": "Latin"
+        },
+        {
+          "name": "mattiuca",
+          "origin": "Vulgar Latin"
+        },
+        {
+          "name": "massue",
+          "origin": "French"
+        },
+        {
+          "name": "mashie, mashy",
+          "origin": "Modern English"
+        },
+        {
+          "name": "maçie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/mashie#etymonline_v_9674",
+        "https://www.oed.com/dictionary/mashie_n?tab=factsheet#37694180",
+        "https://www.collinsdictionary.com/us/dictionary/english/mashie",
+        "https://www.collinsdictionary.com/us/dictionary/english/mashy",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/massue/49660"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

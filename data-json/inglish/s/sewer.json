@@ -1,99 +1,140 @@
 [
   {
-    "name": "sewer",
-    "etymology": [
-      {
-        "name": "ex + aquaria",
-        "origin": "Latin"
-      },
-      {
-        "name": "sewere, sewiere",
-        "origin": "Inglish"
-      },
-      {
-        "name": "seuer",
-        "origin": "Middle English"
-      },
-      {
-        "name": "sewer",
-        "origin": "Modern English"
-      },
-      {
-        "name": "súar -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/sewer#etymonline_v_23307",
-      "https://www.merriam-webster.com/dictionary/sewer#dictionary-entry-3",
-      "https://www.oed.com/dictionary/sewer_n1?tab=factsheet#23482551",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39662",
-      "https://anglo-norman.net/entry/sewer_1",
-      "https://latin-dictionary.net/definition/4325/aquarius-aquaria-aquarium"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "sewer",
+      "etymology": [
+        {
+          "name": "ex + aquaria",
+          "origin": "Latin"
+        },
+        {
+          "name": "sewere, sewiere",
+          "origin": "Inglish"
+        },
+        {
+          "name": "seuer",
+          "origin": "Middle English"
+        },
+        {
+          "name": "sewer",
+          "origin": "Modern English"
+        },
+        {
+          "name": "súar -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/sewer#etymonline_v_23307",
+        "https://www.merriam-webster.com/dictionary/sewer#dictionary-entry-3",
+        "https://www.oed.com/dictionary/sewer_n1?tab=factsheet#23482551",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39662",
+        "https://anglo-norman.net/entry/sewer_1",
+        "https://latin-dictionary.net/definition/4325/aquarius-aquaria-aquarium"
+      ]
+    }
   },
   {
-    "name": "sewerage",
-    "etymology": [
-      {
-        "name": "sewerage",
-        "origin": "Modern English"
-      },
-      {
-        "name": "súarage -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/sewerage#etymonline_v_48520",
-      "https://www.merriam-webster.com/dictionary/sewerage",
-      "https://www.oed.com/dictionary/sewerage_n?tab=factsheet#23484022"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "sewerage",
+      "etymology": [
+        {
+          "name": "sewerage",
+          "origin": "Modern English"
+        },
+        {
+          "name": "súarage -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/sewerage#etymonline_v_48520",
+        "https://www.merriam-webster.com/dictionary/sewerage",
+        "https://www.oed.com/dictionary/sewerage_n?tab=factsheet#23484022"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "sewage",
-    "etymology": [
-      {
-        "name": "sewage",
-        "origin": "Modern English"
-      },
-      {
-        "name": "súage",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/sewage#etymonline_v_23306",
-      "https://www.merriam-webster.com/dictionary/sewage",
-      "https://www.oed.com/dictionary/sewage_n?tab=factsheet#23481847"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "sewage",
+      "etymology": [
+        {
+          "name": "sewage",
+          "origin": "Modern English"
+        },
+        {
+          "name": "súage",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/sewage#etymonline_v_23306",
+        "https://www.merriam-webster.com/dictionary/sewage",
+        "https://www.oed.com/dictionary/sewage_n?tab=factsheet#23481847"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   },
   {
-    "name": "to sewage",
-    "etymology": [
-      {
-        "name": "to sewage",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to sewage",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta súage -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to sewage",
+        "ta súage -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to sewage",
+      "etymology": [
+        {
+          "name": "to sewage",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta súage -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.oed.com/dictionary/sewage_v?tab=factsheet#23482135"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.oed.com/dictionary/sewage_v?tab=factsheet#23482135"
-    ]
+    }
   }
 ]

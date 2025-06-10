@@ -1,58 +1,88 @@
 [
   {
-    "name": "to increase",
-    "etymology": [
-      {
-        "name": "in + crescere, increscere",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to increase",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "encreistre",
-        "origin": "Old French"
-      },
-      {
-        "name": "acresen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to increase",
-        "origin": "Modern English"
-      },
-      {
-        "name": "to incrisce -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "in + crescere, increscere",
+        "encreistre",
+        "acresen",
+        "to increase",
+        "to incrisce -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to increase",
+      "etymology": [
+        {
+          "name": "in + crescere, increscere",
+          "origin": "Latin"
+        },
+        {
+          "name": "encreistre",
+          "origin": "Old French"
+        },
+        {
+          "name": "acresen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to increase",
+          "origin": "Modern English"
+        },
+        {
+          "name": "to incrisce -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/increase#etymonline_v_6346",
+        "https://www.merriam-webster.com/dictionary/increase#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED405",
+        "https://anglo-norman.net/entry/encreistre",
+        "https://latin-dictionary.net/definition/23304/incresco-increscere-increvi"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/increase#etymonline_v_6346",
-      "https://www.merriam-webster.com/dictionary/increase#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED405",
-      "https://anglo-norman.net/entry/encreistre",
-      "https://latin-dictionary.net/definition/23304/incresco-increscere-increvi"
-    ]
+    }
   },
   {
-    "name": "increase",
-    "etymology": [
-      {
-        "name": "increase",
-        "origin": "Modern English"
-      },
-      {
-        "name": "incrisce -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/increase#etymonline_v_42409",
-      "https://www.etymonline.com/word/increase#etymonline_v_6346",
-      "https://www.merriam-webster.com/dictionary/increase#dictionary-entry-2"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "increase",
+      "etymology": [
+        {
+          "name": "increase",
+          "origin": "Modern English"
+        },
+        {
+          "name": "incrisce -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/increase#etymonline_v_42409",
+        "https://www.etymonline.com/word/increase#etymonline_v_6346",
+        "https://www.merriam-webster.com/dictionary/increase#dictionary-entry-2"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

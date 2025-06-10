@@ -1,86 +1,128 @@
 [
   {
-    "name": "curse  -s (m n)",
-    "etymology": [
-      {
-        "name": "curs",
-        "origin": "Old English"
-      },
-      {
-        "name": "curse  -s (m n)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/curse#etymonline_v_492",
-      "https://www.merriam-webster.com/dictionary/curse#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9190",
-      "https://bosworthtoller.com/6851"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "curse  -s (m n)",
+      "etymology": [
+        {
+          "name": "curs",
+          "origin": "Old English"
+        },
+        {
+          "name": "curse  -s (m n)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/curse#etymonline_v_492",
+        "https://www.merriam-webster.com/dictionary/curse#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9190",
+        "https://bosworthtoller.com/6851"
+      ]
+    }
   },
   {
-    "name": "to curse",
-    "etymology": [
-      {
-        "name": "cursian",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to curse",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "cursen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to curse",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta curse -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "cursian",
+        "cursen",
+        "to curse",
+        "ta curse -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to curse",
+      "etymology": [
+        {
+          "name": "cursian",
+          "origin": "Old English"
+        },
+        {
+          "name": "cursen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to curse",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta curse -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/curse#etymonline_v_46729",
+        "https://www.merriam-webster.com/dictionary/curse#dictionary-entry-2",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9196",
+        "https://bosworthtoller.com/6852"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/curse#etymonline_v_46729",
-      "https://www.merriam-webster.com/dictionary/curse#dictionary-entry-2",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9196",
-      "https://bosworthtoller.com/6852"
-    ]
+    }
   },
   {
-    "name": "to curse, to cuss",
-    "etymology": [
-      {
-        "name": "to curse, to cuss",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta cusse",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cuss#etymonline_v_46400",
-      "https://www.etymonline.com/word/curse#etymonline_v_46729",
-      "https://www.merriam-webster.com/dictionary/cuss#dictionary-entry-2"
-    ]
+    "verbDetails": {
+      "infinitive": "to curse, to cuss",
+      "etymology": [
+        "to curse, to cuss",
+        "ta cusse"
+      ]
+    },
+    "standard": {
+      "name": "to curse, to cuss",
+      "etymology": [
+        {
+          "name": "to curse, to cuss",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta cusse",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cuss#etymonline_v_46400",
+        "https://www.etymonline.com/word/curse#etymonline_v_46729",
+        "https://www.merriam-webster.com/dictionary/cuss#dictionary-entry-2"
+      ]
+    }
   },
   {
-    "name": "cuss  -es (m n)",
-    "etymology": [
-      {
-        "name": "cuss  -es (m n)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cuss#etymonline_v_505",
-      "https://www.etymonline.com/word/curse#etymonline_v_492",
-      "https://www.merriam-webster.com/dictionary/cuss#dictionary-entry-1"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "cuss  -es (m n)",
+      "etymology": [
+        {
+          "name": "cuss  -es (m n)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cuss#etymonline_v_505",
+        "https://www.etymonline.com/word/curse#etymonline_v_492",
+        "https://www.merriam-webster.com/dictionary/cuss#dictionary-entry-1"
+      ]
+    }
   }
 ]

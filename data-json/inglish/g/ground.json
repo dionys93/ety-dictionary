@@ -1,49 +1,76 @@
 [
   {
-    "name": "ground",
-    "etymology": [
-      {
-        "name": "grund",
-        "origin": "Old English"
-      },
-      {
-        "name": "ground",
-        "origin": "Middle English"
-      },
-      {
-        "name": "graond -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/ground#etymonline_v_14308",
-      "https://www.merriam-webster.com/dictionary/ground#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED19601",
-      "https://bosworthtoller.com/17570"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "ground",
+      "etymology": [
+        {
+          "name": "grund",
+          "origin": "Old English"
+        },
+        {
+          "name": "ground",
+          "origin": "Middle English"
+        },
+        {
+          "name": "graond -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/ground#etymonline_v_14308",
+        "https://www.merriam-webster.com/dictionary/ground#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED19601",
+        "https://bosworthtoller.com/17570"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to ground",
-    "etymology": [
-      {
-        "name": "to ground",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to ground",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta graonde -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to ground",
+        "ta graonde -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to ground",
+      "etymology": [
+        {
+          "name": "to ground",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta graonde -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/ground#etymonline_v_33824",
+        "https://www.etymonline.com/word/ground#etymonline_v_14308",
+        "https://www.merriam-webster.com/dictionary/ground#dictionary-entry-2"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/ground#etymonline_v_33824",
-      "https://www.etymonline.com/word/ground#etymonline_v_14308",
-      "https://www.merriam-webster.com/dictionary/ground#dictionary-entry-2"
-    ]
+    }
   }
 ]

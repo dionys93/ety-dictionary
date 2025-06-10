@@ -1,53 +1,80 @@
 [
   {
-    "name": "to understand",
-    "etymology": [
-      {
-        "name": "understandan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to understand",
+      "conjugations": {
+        "thirdPerson": "s"
       },
-      {
-        "name": "understonden",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to understand",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta ondrestande -s ondrestûd -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "understandan",
+        "understonden",
+        "to understand",
+        "ta ondrestande -s ondrestûd -ing"
+      ]
+    },
+    "standard": {
+      "name": "to understand",
+      "etymology": [
+        {
+          "name": "understandan",
+          "origin": "Old English"
+        },
+        {
+          "name": "understonden",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to understand",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta ondrestande -s ondrestûd -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/understand#etymonline_v_4488",
+        "https://www.merriam-webster.com/dictionary/understand",
+        "https://www.oed.com/dictionary/understand_v?tab=factsheet#16918984",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED48362",
+        "https://bosworthtoller.com/32847"
+      ],
+      "conjugations": {
+        "thirdPerson": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/understand#etymonline_v_4488",
-      "https://www.merriam-webster.com/dictionary/understand",
-      "https://www.oed.com/dictionary/understand_v?tab=factsheet#16918984",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED48362",
-      "https://bosworthtoller.com/32847"
-    ]
+    }
   },
   {
-    "name": "understandable",
-    "etymology": [
-      {
-        "name": "understandable",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ondrestàndable -y",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "understandable",
+      "etymology": [
+        {
+          "name": "understandable",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ondrestàndable -y",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/understandable#etymonline_v_39584",
+        "https://www.merriam-webster.com/dictionary/understandable"
+      ],
+      "degrees": {
+        "positive": "ndable",
+        "comparative": "y"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/understandable#etymonline_v_39584",
-      "https://www.merriam-webster.com/dictionary/understandable"
-    ]
+    }
   }
 ]

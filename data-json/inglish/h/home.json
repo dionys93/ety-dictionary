@@ -1,46 +1,71 @@
 [
   {
-    "name": "hoam -ly  -s (f n, adj)",
-    "etymology": [
-      {
-        "name": "ham",
-        "origin": "Old English"
-      },
-      {
-        "name": "hom",
-        "origin": "Middle English"
-      },
-      {
-        "name": "hoam -ly  -s (f n, adj)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/home",
-      "https://www.etymonline.com/word/homely",
-      "https://www.oed.com/dictionary/home_n1?tab=factsheet#1481664",
-      "https://bosworthtoller.com/18075",
-      "https://bosworthtoller.com/18074"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "hoam -ly  -s (f n, adj)",
+      "etymology": [
+        {
+          "name": "ham",
+          "origin": "Old English"
+        },
+        {
+          "name": "hom",
+          "origin": "Middle English"
+        },
+        {
+          "name": "hoam -ly  -s (f n, adj)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/home",
+        "https://www.etymonline.com/word/homely",
+        "https://www.oed.com/dictionary/home_n1?tab=factsheet#1481664",
+        "https://bosworthtoller.com/18075",
+        "https://bosworthtoller.com/18074"
+      ]
+    }
   },
   {
-    "name": "to home",
-    "etymology": [
-      {
-        "name": "to home",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to home",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta hoame -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to home",
+        "ta hoame -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to home",
+      "etymology": [
+        {
+          "name": "to home",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta hoame -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/home",
+        "https://www.oed.com/dictionary/home_v?tab=factsheet#1486655"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/home",
-      "https://www.oed.com/dictionary/home_v?tab=factsheet#1486655"
-    ]
+    }
   }
 ]

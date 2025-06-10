@@ -1,61 +1,83 @@
 [
   {
-    "name": "to split",
-    "etymology": [
-      {
-        "name": "splijten",
-        "origin": "Inglish"
-      },
-      {
-        "name": "to split",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta splitte splits split -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/split#etymonline_v_24049",
-      "https://www.merriam-webster.com/dictionary/split#dictionary-entry-1",
-      "https://dictionary.cambridge.org/dictionary/dutch-english/splijten"
-    ]
+    "verbDetails": {
+      "infinitive": "to split",
+      "etymology": [
+        "splijten",
+        "to split",
+        "ta splitte splits split -ing"
+      ]
+    },
+    "standard": {
+      "name": "to split",
+      "etymology": [
+        {
+          "name": "splijten",
+          "origin": "Inglish"
+        },
+        {
+          "name": "to split",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta splitte splits split -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/split#etymonline_v_24049",
+        "https://www.merriam-webster.com/dictionary/split#dictionary-entry-1",
+        "https://dictionary.cambridge.org/dictionary/dutch-english/splijten"
+      ]
+    }
   },
   {
-    "name": "split  (adj)",
-    "etymology": [
-      {
-        "name": "split  (adj)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/split#etymonline_v_49021",
-      "https://www.etymonline.com/word/split#etymonline_v_24049",
-      "https://www.merriam-webster.com/dictionary/split#dictionary-entry-2",
-      "https://dictionary.cambridge.org/dictionary/dutch-english/splijten"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "split  (adj)",
+      "etymology": [
+        {
+          "name": "split  (adj)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/split#etymonline_v_49021",
+        "https://www.etymonline.com/word/split#etymonline_v_24049",
+        "https://www.merriam-webster.com/dictionary/split#dictionary-entry-2",
+        "https://dictionary.cambridge.org/dictionary/dutch-english/splijten"
+      ]
+    }
   },
   {
-    "name": "split  -s (n)",
-    "etymology": [
-      {
-        "name": "splijten",
-        "origin": "Inglish"
-      },
-      {
-        "name": "split  -s (n)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/split#etymonline_v_46962",
-      "https://www.etymonline.com/word/split#etymonline_v_24049",
-      "https://www.merriam-webster.com/dictionary/split#dictionary-entry-3",
-      "https://dictionary.cambridge.org/dictionary/dutch-english/splijten"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "split  -s (n)",
+      "etymology": [
+        {
+          "name": "splijten",
+          "origin": "Inglish"
+        },
+        {
+          "name": "split  -s (n)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/split#etymonline_v_46962",
+        "https://www.etymonline.com/word/split#etymonline_v_24049",
+        "https://www.merriam-webster.com/dictionary/split#dictionary-entry-3",
+        "https://dictionary.cambridge.org/dictionary/dutch-english/splijten"
+      ]
+    }
   }
 ]

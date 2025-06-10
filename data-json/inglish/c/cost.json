@@ -1,63 +1,90 @@
 [
   {
-    "name": "to cost",
-    "etymology": [
-      {
-        "name": "constare",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to cost",
+      "conjugations": {
+        "thirdPerson": "s"
       },
-      {
-        "name": "costare",
-        "origin": "Vulgar Latin"
-      },
-      {
-        "name": "coster",
-        "origin": "Old French"
-      },
-      {
-        "name": "costen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to cost",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta còste -s còst -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "constare",
+        "costare",
+        "coster",
+        "costen",
+        "to cost",
+        "ta còste -s còst -ing"
+      ]
+    },
+    "standard": {
+      "name": "to cost",
+      "etymology": [
+        {
+          "name": "constare",
+          "origin": "Latin"
+        },
+        {
+          "name": "costare",
+          "origin": "Vulgar Latin"
+        },
+        {
+          "name": "coster",
+          "origin": "Old French"
+        },
+        {
+          "name": "costen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to cost",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta còste -s còst -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cost#etymonline_v_43473",
+        "https://www.etymonline.com/word/cost#etymonline_v_19131",
+        "https://www.merriam-webster.com/dictionary/cost#dictionary-entry-2",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9897",
+        "https://anglo-norman.net/entry/coster_1",
+        "https://latin-dictionary.net/definition/13539/consto-constare-constiti-constatus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cost#etymonline_v_43473",
-      "https://www.etymonline.com/word/cost#etymonline_v_19131",
-      "https://www.merriam-webster.com/dictionary/cost#dictionary-entry-2",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9897",
-      "https://anglo-norman.net/entry/coster_1",
-      "https://latin-dictionary.net/definition/13539/consto-constare-constiti-constatus"
-    ]
+    }
   },
   {
-    "name": "cost",
-    "etymology": [
-      {
-        "name": "cost",
-        "origin": "Old French"
-      },
-      {
-        "name": "còst -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cost#etymonline_v_19131",
-      "https://www.merriam-webster.com/dictionary/cost#dictionary-entry-1",
-      "https://anglo-norman.net/entry/cost_2"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "cost",
+      "etymology": [
+        {
+          "name": "cost",
+          "origin": "Old French"
+        },
+        {
+          "name": "còst -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cost#etymonline_v_19131",
+        "https://www.merriam-webster.com/dictionary/cost#dictionary-entry-1",
+        "https://anglo-norman.net/entry/cost_2"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

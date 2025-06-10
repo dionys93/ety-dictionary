@@ -1,27 +1,33 @@
 [
   {
-    "name": "same",
-    "etymology": [
-      {
-        "name": "samr",
-        "origin": "Old Norse"
-      },
-      {
-        "name": "same",
-        "origin": "Modern English"
-      },
-      {
-        "name": "sâm",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/same#etymonline_v_22669",
-      "https://www.oed.com/dictionary/same_adj?tab=factsheet#24447591",
-      "https://old-norse.net/html/s.php#samr"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "same",
+      "etymology": [
+        {
+          "name": "samr",
+          "origin": "Old Norse"
+        },
+        {
+          "name": "same",
+          "origin": "Modern English"
+        },
+        {
+          "name": "sâm",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/same#etymonline_v_22669",
+        "https://www.oed.com/dictionary/same_adj?tab=factsheet#24447591",
+        "https://old-norse.net/html/s.php#samr"
+      ]
+    }
   }
 ]

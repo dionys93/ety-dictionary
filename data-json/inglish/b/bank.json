@@ -1,227 +1,337 @@
 [
   {
-    "name": "bank",
-    "etymology": [
-      {
-        "name": "bakki",
-        "origin": "Old Norse"
-      },
-      {
-        "name": "banc",
-        "origin": "Old English"
-      },
-      {
-        "name": "bank",
-        "origin": "Middle English"
-      },
-      {
-        "name": "benk, bencs",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bank#etymonline_v_269",
-      "https://www.merriam-webster.com/dictionary/bank#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/bank#dictionary-entry-5",
-      "https://www.merriam-webster.com/dictionary/bank#word-history",
-      "https://www.oed.com/dictionary/bank_n1?tab=factsheet#28159061",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3585",
-      "https://bosworthtoller.com/2962",
-      "https://old-norse.net/html/b.php#bakki"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "bank",
+      "etymology": [
+        {
+          "name": "bakki",
+          "origin": "Old Norse"
+        },
+        {
+          "name": "banc",
+          "origin": "Old English"
+        },
+        {
+          "name": "bank",
+          "origin": "Middle English"
+        },
+        {
+          "name": "benk, bencs",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bank#etymonline_v_269",
+        "https://www.merriam-webster.com/dictionary/bank#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/bank#dictionary-entry-5",
+        "https://www.merriam-webster.com/dictionary/bank#word-history",
+        "https://www.oed.com/dictionary/bank_n1?tab=factsheet#28159061",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3585",
+        "https://bosworthtoller.com/2962",
+        "https://old-norse.net/html/b.php#bakki"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to bank",
-    "etymology": [
-      {
-        "name": "to bank",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to bank",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta benke -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to bank",
+        "ta benke -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to bank",
+      "etymology": [
+        {
+          "name": "to bank",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta benke -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bank#etymonline_v_52523",
+        "https://www.etymonline.com/word/bank#etymonline_v_52524",
+        "https://www.etymonline.com/word/bank#etymonline_v_269",
+        "https://www.merriam-webster.com/dictionary/bank#dictionary-entry-2",
+        "https://www.merriam-webster.com/dictionary/bank#word-history",
+        "https://www.oed.com/dictionary/bank_v1?tab=factsheet#28166680"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bank#etymonline_v_52523",
-      "https://www.etymonline.com/word/bank#etymonline_v_52524",
-      "https://www.etymonline.com/word/bank#etymonline_v_269",
-      "https://www.merriam-webster.com/dictionary/bank#dictionary-entry-2",
-      "https://www.merriam-webster.com/dictionary/bank#word-history",
-      "https://www.oed.com/dictionary/bank_v1?tab=factsheet#28166680"
-    ]
+    }
   },
   {
-    "name": "to bank",
-    "etymology": [
-      {
-        "name": "to bank",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to bank",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta bânke -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to bank",
+        "ta bânke -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to bank",
+      "etymology": [
+        {
+          "name": "to bank",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta bânke -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bank#etymonline_v_42352",
+        "https://www.etymonline.com/word/bank#etymonline_v_268",
+        "https://www.merriam-webster.com/dictionary/bank#dictionary-entry-4",
+        "https://www.oed.com/dictionary/bank_v2?tab=factsheet#28169040"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bank#etymonline_v_42352",
-      "https://www.etymonline.com/word/bank#etymonline_v_268",
-      "https://www.merriam-webster.com/dictionary/bank#dictionary-entry-4",
-      "https://www.oed.com/dictionary/bank_v2?tab=factsheet#28169040"
-    ]
+    }
   },
   {
-    "name": "bank",
-    "etymology": [
-      {
-        "name": "banca",
-        "origin": "Italian"
-      },
-      {
-        "name": "banque",
-        "origin": "French"
-      },
-      {
-        "name": "bank",
-        "origin": "Modern English"
-      },
-      {
-        "name": "bânk, bâncs",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bank#etymonline_v_268",
-      "https://www.merriam-webster.com/dictionary/bank#dictionary-entry-3",
-      "https://www.oed.com/dictionary/bank_n2?tab=factsheet#28161574",
-      "https://www.oed.com/dictionary/bank_n3?tab=pronunciation#28163565",
-      "https://www.collinsdictionary.com/us/dictionary/french-english/banque",
-      "https://www.larousse.fr/dictionnaires/francais/banque/7863",
-      "https://www.collinsdictionary.com/us/dictionary/italian-english/banca",
-      "https://www.treccani.it/vocabolario/banca/"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "bank",
+      "etymology": [
+        {
+          "name": "banca",
+          "origin": "Italian"
+        },
+        {
+          "name": "banque",
+          "origin": "French"
+        },
+        {
+          "name": "bank",
+          "origin": "Modern English"
+        },
+        {
+          "name": "bânk, bâncs",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bank#etymonline_v_268",
+        "https://www.merriam-webster.com/dictionary/bank#dictionary-entry-3",
+        "https://www.oed.com/dictionary/bank_n2?tab=factsheet#28161574",
+        "https://www.oed.com/dictionary/bank_n3?tab=pronunciation#28163565",
+        "https://www.collinsdictionary.com/us/dictionary/french-english/banque",
+        "https://www.larousse.fr/dictionnaires/francais/banque/7863",
+        "https://www.collinsdictionary.com/us/dictionary/italian-english/banca",
+        "https://www.treccani.it/vocabolario/banca/"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "bankrupt",
-    "etymology": [
-      {
-        "name": "rumpere, rupta",
-        "origin": "Latin"
-      },
-      {
-        "name": "banca rotta",
-        "origin": "Italian"
-      },
-      {
-        "name": "bankrupt",
-        "origin": "Modern English"
-      },
-      {
-        "name": "bâncropt",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bankrupt",
-      "https://www.oed.com/dictionary/bankrupt_adj?tab=factsheet#28223468",
-      "https://www.treccani.it/vocabolario/rotta1_(Sinonimi-e-Contrari)/?search=rotta%C2%B9%2F",
-      "https://www.treccani.it/vocabolario/banca/",
-      "https://latin-dictionary.net/definition/33782/rumpo-rumpere-rupi-ruptus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "bankrupt",
+      "etymology": [
+        {
+          "name": "rumpere, rupta",
+          "origin": "Latin"
+        },
+        {
+          "name": "banca rotta",
+          "origin": "Italian"
+        },
+        {
+          "name": "bankrupt",
+          "origin": "Modern English"
+        },
+        {
+          "name": "bâncropt",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bankrupt",
+        "https://www.oed.com/dictionary/bankrupt_adj?tab=factsheet#28223468",
+        "https://www.treccani.it/vocabolario/rotta1_(Sinonimi-e-Contrari)/?search=rotta%C2%B9%2F",
+        "https://www.treccani.it/vocabolario/banca/",
+        "https://latin-dictionary.net/definition/33782/rumpo-rumpere-rupi-ruptus"
+      ]
+    }
   },
   {
-    "name": "to bankrupt",
-    "etymology": [
-      {
-        "name": "to bankrupt",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to bankrupt",
+      "conjugations": {
+        "thirdPerson": "d",
+        "pastTense": "ing"
       },
-      {
-        "name": "ta bâncropte bâncrops -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to bankrupt",
+        "ta bâncropte bâncrops -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to bankrupt",
+      "etymology": [
+        {
+          "name": "to bankrupt",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta bâncropte bâncrops -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.oed.com/dictionary/bankrupt_v?tab=factsheet#28225663"
+      ],
+      "conjugations": {
+        "thirdPerson": "d",
+        "pastTense": "ing"
       }
-    ],
-    "sources": [
-      "https://www.oed.com/dictionary/bankrupt_v?tab=factsheet#28225663"
-    ]
+    }
   },
   {
-    "name": "bankruptcy",
-    "etymology": [
-      {
-        "name": "bankruptcy",
-        "origin": "Modern English"
-      },
-      {
-        "name": "bâncropcie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bankruptcy",
-      "https://www.etymonline.com/word/bankrupt",
-      "https://www.oed.com/dictionary/bankruptcy_n?tab=factsheet#28227244"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "bankruptcy",
+      "etymology": [
+        {
+          "name": "bankruptcy",
+          "origin": "Modern English"
+        },
+        {
+          "name": "bâncropcie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bankruptcy",
+        "https://www.etymonline.com/word/bankrupt",
+        "https://www.oed.com/dictionary/bankruptcy_n?tab=factsheet#28227244"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "bench  -es (m n)",
-    "etymology": [
-      {
-        "name": "benc",
-        "origin": "Old English"
-      },
-      {
-        "name": "bench  -es (m n)",
-        "origin": "Middle English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bench#etymonline_v_11032",
-      "https://www.merriam-webster.com/dictionary/bench#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4051",
-      "https://bosworthtoller.com/3648"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "bench  -es (m n)",
+      "etymology": [
+        {
+          "name": "benc",
+          "origin": "Old English"
+        },
+        {
+          "name": "bench  -es (m n)",
+          "origin": "Middle English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bench#etymonline_v_11032",
+        "https://www.merriam-webster.com/dictionary/bench#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4051",
+        "https://bosworthtoller.com/3648"
+      ]
+    }
   },
   {
-    "name": "to bench",
-    "etymology": [
-      {
-        "name": "to bench",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to bench",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta benche -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to bench",
+        "ta benche -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to bench",
+      "etymology": [
+        {
+          "name": "to bench",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta benche -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bench#etymonline_v_46309",
+        "https://www.etymonline.com/word/bench#etymonline_v_11032",
+        "https://www.merriam-webster.com/dictionary/bench#dictionary-entry-2"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bench#etymonline_v_46309",
-      "https://www.etymonline.com/word/bench#etymonline_v_11032",
-      "https://www.merriam-webster.com/dictionary/bench#dictionary-entry-2"
-    ]
+    }
   }
 ]

@@ -1,28 +1,36 @@
 [
   {
-    "name": "baron",
-    "etymology": [
-      {
-        "name": "baro",
-        "origin": "Latin"
-      },
-      {
-        "name": "baron",
-        "origin": "Old French"
-      },
-      {
-        "name": "bâron -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/baron#etymonline_v_5257",
-      "https://www.merriam-webster.com/dictionary/baron#dictionary-entry-1",
-      "https://anglo-norman.net/entry/baron",
-      "https://latin-dictionary.net/definition/6147/baro-baronis"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "baron",
+      "etymology": [
+        {
+          "name": "baro",
+          "origin": "Latin"
+        },
+        {
+          "name": "baron",
+          "origin": "Old French"
+        },
+        {
+          "name": "bâron -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/baron#etymonline_v_5257",
+        "https://www.merriam-webster.com/dictionary/baron#dictionary-entry-1",
+        "https://anglo-norman.net/entry/baron",
+        "https://latin-dictionary.net/definition/6147/baro-baronis"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

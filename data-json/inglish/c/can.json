@@ -1,81 +1,119 @@
 [
   {
-    "name": "can, could, can't, couldn't",
-    "etymology": [
-      {
-        "name": "cunnan, cuðe",
-        "origin": "Old English"
-      },
-      {
-        "name": "connen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "can, could, can't, couldn't",
-        "origin": "Modern English"
-      },
-      {
-        "name": "can, coûd; can't, coûdn't",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/can#etymonline_v_645",
-      "https://www.etymonline.com/word/could#etymonline_v_19148",
-      "https://www.merriam-webster.com/dictionary/can#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/could",
-      "https://www.oed.com/dictionary/can_v1?tab=factsheet#10266561",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9326",
-      "https://bosworthtoller.com/6864",
-      "https://bosworthtoller.com/6839"
-    ]
+    "verbDetails": {
+      "infinitive": "can, could, can't, couldn't",
+      "etymology": [
+        "cunnan, cuðe",
+        "connen",
+        "can, could, can't, couldn't",
+        "can, coûd; can't, coûdn't"
+      ]
+    },
+    "standard": {
+      "name": "can, could, can't, couldn't",
+      "etymology": [
+        {
+          "name": "cunnan, cuðe",
+          "origin": "Old English"
+        },
+        {
+          "name": "connen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "can, could, can't, couldn't",
+          "origin": "Modern English"
+        },
+        {
+          "name": "can, coûd; can't, coûdn't",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/can#etymonline_v_645",
+        "https://www.etymonline.com/word/could#etymonline_v_19148",
+        "https://www.merriam-webster.com/dictionary/can#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/could",
+        "https://www.oed.com/dictionary/can_v1?tab=factsheet#10266561",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9326",
+        "https://bosworthtoller.com/6864",
+        "https://bosworthtoller.com/6839"
+      ]
+    }
   },
   {
-    "name": "can",
-    "etymology": [
-      {
-        "name": "canne",
-        "origin": "Old English"
-      },
-      {
-        "name": "can",
-        "origin": "Modern English"
-      },
-      {
-        "name": "cane, cans",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/can",
-      "https://www.oed.com/dictionary/can_n1?tab=pronunciation#10265789",
-      "https://bosworthtoller.com/5828"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "can",
+      "etymology": [
+        {
+          "name": "canne",
+          "origin": "Old English"
+        },
+        {
+          "name": "can",
+          "origin": "Modern English"
+        },
+        {
+          "name": "cane, cans",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/can",
+        "https://www.oed.com/dictionary/can_n1?tab=pronunciation#10265789",
+        "https://bosworthtoller.com/5828"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to can",
-    "etymology": [
-      {
-        "name": "to can",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to can",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta cane -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to can",
+        "ta cane -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to can",
+      "etymology": [
+        {
+          "name": "to can",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta cane -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/can",
+        "https://www.oed.com/dictionary/can_v3?tab=factsheet#10269989"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/can",
-      "https://www.oed.com/dictionary/can_v3?tab=factsheet#10269989"
-    ]
+    }
   }
 ]

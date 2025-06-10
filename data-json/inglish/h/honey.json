@@ -1,55 +1,82 @@
 [
   {
-    "name": "honey",
-    "etymology": [
-      {
-        "name": "hunig",
-        "origin": "Old English"
-      },
-      {
-        "name": "hony",
-        "origin": "Middle English"
-      },
-      {
-        "name": "honey",
-        "origin": "Modern English"
-      },
-      {
-        "name": "honie -is",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/honey#etymonline_v_12140",
-      "https://www.merriam-webster.com/dictionary/honey#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED21134",
-      "https://bosworthtoller.com/19965"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "honey",
+      "etymology": [
+        {
+          "name": "hunig",
+          "origin": "Old English"
+        },
+        {
+          "name": "hony",
+          "origin": "Middle English"
+        },
+        {
+          "name": "honey",
+          "origin": "Modern English"
+        },
+        {
+          "name": "honie -is",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/honey#etymonline_v_12140",
+        "https://www.merriam-webster.com/dictionary/honey#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED21134",
+        "https://bosworthtoller.com/19965"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to honey",
-    "etymology": [
-      {
-        "name": "to honey",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to honey",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ying"
       },
-      {
-        "name": "ta honie -s -d -ying",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to honey",
+        "ta honie -s -d -ying"
+      ]
+    },
+    "standard": {
+      "name": "to honey",
+      "etymology": [
+        {
+          "name": "to honey",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta honie -s -d -ying",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/honey#etymonline_v_42061",
+        "https://www.etymonline.com/word/honey#etymonline_v_12140",
+        "https://www.merriam-webster.com/dictionary/honey#dictionary-entry-2",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED21134",
+        "https://bosworthtoller.com/19965"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ying"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/honey#etymonline_v_42061",
-      "https://www.etymonline.com/word/honey#etymonline_v_12140",
-      "https://www.merriam-webster.com/dictionary/honey#dictionary-entry-2",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED21134",
-      "https://bosworthtoller.com/19965"
-    ]
+    }
   }
 ]

@@ -1,66 +1,84 @@
 [
   {
-    "name": "patient",
-    "etymology": [
-      {
-        "name": "patiens",
-        "origin": "Latin"
-      },
-      {
-        "name": "pacient",
-        "origin": "Old French"
-      },
-      {
-        "name": "patient",
-        "origin": "Modern English"
-      },
-      {
-        "name": "pâçent -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "masculine noun"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "patient",
+      "etymology": [
+        {
+          "name": "patiens",
+          "origin": "Latin"
+        },
+        {
+          "name": "pacient",
+          "origin": "Old French"
+        },
+        {
+          "name": "patient",
+          "origin": "Modern English"
+        },
+        {
+          "name": "pâçent -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/patient#etymonline_v_29969",
+        "https://www.etymonline.com/word/patient#etymonline_v_10153",
+        "https://www.oed.com/dictionary/patient_adj?tab=factsheet#31768443",
+        "https://anglo-norman.net/entry/paciente",
+        "https://anglo-norman.net/entry/pacient",
+        "https://latin-dictionary.net/definition/29463/patiens-patientis"
+      ],
+      "degrees": {
+        "positive": "ent",
+        "comparative": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/patient#etymonline_v_29969",
-      "https://www.etymonline.com/word/patient#etymonline_v_10153",
-      "https://www.oed.com/dictionary/patient_adj?tab=factsheet#31768443",
-      "https://anglo-norman.net/entry/paciente",
-      "https://anglo-norman.net/entry/pacient",
-      "https://latin-dictionary.net/definition/29463/patiens-patientis"
-    ]
+    }
   },
   {
-    "name": "patience",
-    "etymology": [
-      {
-        "name": "patiens, patientia",
-        "origin": "Latin"
-      },
-      {
-        "name": "pacience",
-        "origin": "Old French"
-      },
-      {
-        "name": "patience",
-        "origin": "Modern English"
-      },
-      {
-        "name": "pâçence",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/patience#etymonline_v_10152",
-      "https://anglo-norman.net/entry/pacience",
-      "https://www.oed.com/dictionary/patience_n1?tab=factsheet#31765879",
-      "https://latin-dictionary.net/definition/29466/patientia-patientiae",
-      "https://latin-dictionary.net/definition/29463/patiens-patientis"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "patience",
+      "etymology": [
+        {
+          "name": "patiens, patientia",
+          "origin": "Latin"
+        },
+        {
+          "name": "pacience",
+          "origin": "Old French"
+        },
+        {
+          "name": "patience",
+          "origin": "Modern English"
+        },
+        {
+          "name": "pâçence",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/patience#etymonline_v_10152",
+        "https://anglo-norman.net/entry/pacience",
+        "https://www.oed.com/dictionary/patience_n1?tab=factsheet#31765879",
+        "https://latin-dictionary.net/definition/29466/patientia-patientiae",
+        "https://latin-dictionary.net/definition/29463/patiens-patientis"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   }
 ]

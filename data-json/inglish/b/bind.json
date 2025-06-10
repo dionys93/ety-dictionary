@@ -1,65 +1,90 @@
 [
   {
-    "name": "to bind",
-    "etymology": [
-      {
-        "name": "bindan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to bind",
+      "conjugations": {
+        "thirdPerson": "s"
       },
-      {
-        "name": "binden",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to bind",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta bînd -s báund -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "bindan",
+        "binden",
+        "to bind",
+        "ta bînd -s báund -ing"
+      ]
+    },
+    "standard": {
+      "name": "to bind",
+      "etymology": [
+        {
+          "name": "bindan",
+          "origin": "Old English"
+        },
+        {
+          "name": "binden",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to bind",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta bînd -s báund -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bind#etymonline_v_11166",
+        "https://www.merriam-webster.com/dictionary/bind#dictionary-entry-1",
+        "https://www.oed.com/dictionary/bind_v?tab=pronunciation#20491705",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4667",
+        "https://bosworthtoller.com/40373"
+      ],
+      "conjugations": {
+        "thirdPerson": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bind#etymonline_v_11166",
-      "https://www.merriam-webster.com/dictionary/bind#dictionary-entry-1",
-      "https://www.oed.com/dictionary/bind_v?tab=pronunciation#20491705",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4667",
-      "https://bosworthtoller.com/40373"
-    ]
+    }
   },
   {
-    "name": "bind",
-    "etymology": [
-      {
-        "name": "binda",
-        "origin": "Old English"
-      },
-      {
-        "name": "binde",
-        "origin": "Middle English"
-      },
-      {
-        "name": "bind",
-        "origin": "Modern English"
-      },
-      {
-        "name": "bînd -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bind#etymonline_v_43064",
-      "https://www.etymonline.com/word/bind#etymonline_v_11166",
-      "https://www.merriam-webster.com/dictionary/bind#dictionary-entry-2",
-      "https://www.oed.com/dictionary/bind_n?tab=factsheet#20490263",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4665",
-      "https://bosworthtoller.com/4372"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "bind",
+      "etymology": [
+        {
+          "name": "binda",
+          "origin": "Old English"
+        },
+        {
+          "name": "binde",
+          "origin": "Middle English"
+        },
+        {
+          "name": "bind",
+          "origin": "Modern English"
+        },
+        {
+          "name": "bînd -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bind#etymonline_v_43064",
+        "https://www.etymonline.com/word/bind#etymonline_v_11166",
+        "https://www.merriam-webster.com/dictionary/bind#dictionary-entry-2",
+        "https://www.oed.com/dictionary/bind_n?tab=factsheet#20490263",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4665",
+        "https://bosworthtoller.com/4372"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

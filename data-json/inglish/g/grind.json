@@ -1,77 +1,108 @@
 [
   {
-    "name": "to grind",
-    "etymology": [
-      {
-        "name": "grindan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to grind",
+      "conjugations": {
+        "thirdPerson": "s"
       },
-      {
-        "name": "grinden",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to grind",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta grînd -s gráund -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "grindan",
+        "grinden",
+        "to grind",
+        "ta grînd -s gráund -ing"
+      ]
+    },
+    "standard": {
+      "name": "to grind",
+      "etymology": [
+        {
+          "name": "grindan",
+          "origin": "Old English"
+        },
+        {
+          "name": "grinden",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to grind",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta grînd -s gráund -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/grind#etymonline_v_11981",
+        "https://www.merriam-webster.com/dictionary/grind#dictionary-entry-1",
+        "https://www.oed.com/dictionary/grind_v1?tab=factsheet#2489935",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED19487",
+        "https://bosworthtoller.com/17522"
+      ],
+      "conjugations": {
+        "thirdPerson": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/grind#etymonline_v_11981",
-      "https://www.merriam-webster.com/dictionary/grind#dictionary-entry-1",
-      "https://www.oed.com/dictionary/grind_v1?tab=factsheet#2489935",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED19487",
-      "https://bosworthtoller.com/17522"
-    ]
+    }
   },
   {
-    "name": "grind",
-    "etymology": [
-      {
-        "name": "grind",
-        "origin": "Old English"
-      },
-      {
-        "name": "grînd -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/grind#etymonline_v_41242",
-      "https://www.etymonline.com/word/grind#etymonline_v_11981",
-      "https://www.merriam-webster.com/dictionary/grind#dictionary-entry-2",
-      "https://www.oed.com/dictionary/grind_n1?tab=factsheet#2489352",
-      "https://bosworthtoller.com/51224"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "grind",
+      "etymology": [
+        {
+          "name": "grind",
+          "origin": "Old English"
+        },
+        {
+          "name": "grînd -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/grind#etymonline_v_41242",
+        "https://www.etymonline.com/word/grind#etymonline_v_11981",
+        "https://www.merriam-webster.com/dictionary/grind#dictionary-entry-2",
+        "https://www.oed.com/dictionary/grind_n1?tab=factsheet#2489352",
+        "https://bosworthtoller.com/51224"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "ground",
-    "etymology": [
-      {
-        "name": "ground",
-        "origin": "Modern English"
-      },
-      {
-        "name": "gráund",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/ground#etymonline_v_41287",
-      "https://www.merriam-webster.com/dictionary/ground#dictionary-entry-3",
-      "https://www.oed.com/dictionary/ground_adj?tab=factsheet#2550896"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "ground",
+      "etymology": [
+        {
+          "name": "ground",
+          "origin": "Modern English"
+        },
+        {
+          "name": "gráund",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/ground#etymonline_v_41287",
+        "https://www.merriam-webster.com/dictionary/ground#dictionary-entry-3",
+        "https://www.oed.com/dictionary/ground_adj?tab=factsheet#2550896"
+      ]
+    }
   }
 ]

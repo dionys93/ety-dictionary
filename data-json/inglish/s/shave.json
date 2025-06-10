@@ -1,76 +1,113 @@
 [
   {
-    "name": "to shave",
-    "etymology": [
-      {
-        "name": "sceafan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to shave",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "shaven",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to shave",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta shâve -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "sceafan",
+        "shaven",
+        "to shave",
+        "ta shâve -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to shave",
+      "etymology": [
+        {
+          "name": "sceafan",
+          "origin": "Old English"
+        },
+        {
+          "name": "shaven",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to shave",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta shâve -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/shave#etymonline_v_23355",
+        "https://www.merriam-webster.com/dictionary/shave#dictionary-entry-1",
+        "https://www.oed.com/dictionary/shave_v?tab=factsheet#23209140",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39820",
+        "https://bosworthtoller.com/26521"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/shave#etymonline_v_23355",
-      "https://www.merriam-webster.com/dictionary/shave#dictionary-entry-1",
-      "https://www.oed.com/dictionary/shave_v?tab=factsheet#23209140",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39820",
-      "https://bosworthtoller.com/26521"
-    ]
+    }
   },
   {
-    "name": "shave",
-    "etymology": [
-      {
-        "name": "shave",
-        "origin": "Modern English"
-      },
-      {
-        "name": "shâve -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/shave#etymonline_v_24174",
-      "https://www.etymonline.com/word/shave#etymonline_v_23355",
-      "https://www.merriam-webster.com/dictionary/shave#dictionary-entry-2",
-      "https://www.oed.com/dictionary/shave_n2?tab=factsheet#23208868"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "shave",
+      "etymology": [
+        {
+          "name": "shave",
+          "origin": "Modern English"
+        },
+        {
+          "name": "shâve -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/shave#etymonline_v_24174",
+        "https://www.etymonline.com/word/shave#etymonline_v_23355",
+        "https://www.merriam-webster.com/dictionary/shave#dictionary-entry-2",
+        "https://www.oed.com/dictionary/shave_n2?tab=factsheet#23208868"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "shaver",
-    "etymology": [
-      {
-        "name": "shaver",
-        "origin": "Modern English"
-      },
-      {
-        "name": "shâvor, shâveur -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/shaver",
-      "https://www.etymonline.com/word/shave#etymonline_v_23355",
-      "https://www.oed.com/dictionary/shaver_n?tab=factsheet#23211888"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "shaver",
+      "etymology": [
+        {
+          "name": "shaver",
+          "origin": "Modern English"
+        },
+        {
+          "name": "shâvor, shâveur -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/shaver",
+        "https://www.etymonline.com/word/shave#etymonline_v_23355",
+        "https://www.oed.com/dictionary/shaver_n?tab=factsheet#23211888"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

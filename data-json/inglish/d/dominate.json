@@ -1,144 +1,194 @@
 [
   {
-    "name": "to dominate",
-    "etymology": [
-      {
-        "name": "domus, dominus, dominari, dominatus",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to dominate",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to dominate",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta dóminete -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "domus, dominus, dominari, dominatus",
+        "to dominate",
+        "ta dóminete -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to dominate",
+      "etymology": [
+        {
+          "name": "domus, dominus, dominari, dominatus",
+          "origin": "Latin"
+        },
+        {
+          "name": "to dominate",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta dóminete -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/dominate",
+        "https://www.oed.com/dictionary/dominate_v?tab=factsheet#6407648",
+        "https://latin-dictionary.net/definition/18401/dominor-dominari-dominatus",
+        "https://latin-dictionary.net/definition/18402/dominus-domini",
+        "https://latin-dictionary.net/definition/18414/domus-domi"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/dominate",
-      "https://www.oed.com/dictionary/dominate_v?tab=factsheet#6407648",
-      "https://latin-dictionary.net/definition/18401/dominor-dominari-dominatus",
-      "https://latin-dictionary.net/definition/18402/dominus-domini",
-      "https://latin-dictionary.net/definition/18414/domus-domi"
-    ]
+    }
   },
   {
-    "name": "domination",
-    "etymology": [
-      {
-        "name": "domus, dominus, dominari, dominatio",
-        "origin": "Latin"
-      },
-      {
-        "name": "dominacion",
-        "origin": "Old French"
-      },
-      {
-        "name": "domination",
-        "origin": "Modern English"
-      },
-      {
-        "name": "dominâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/domination",
-      "https://www.oed.com/dictionary/domination_n?tab=factsheet#6407874",
-      "https://anglo-norman.net/entry/dominacion",
-      "https://latin-dictionary.net/definition/18385/dominatio-dominationis",
-      "https://latin-dictionary.net/definition/18401/dominor-dominari-dominatus",
-      "https://latin-dictionary.net/definition/18402/dominus-domini",
-      "https://latin-dictionary.net/definition/18414/domus-domi"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "domination",
+      "etymology": [
+        {
+          "name": "domus, dominus, dominari, dominatio",
+          "origin": "Latin"
+        },
+        {
+          "name": "dominacion",
+          "origin": "Old French"
+        },
+        {
+          "name": "domination",
+          "origin": "Modern English"
+        },
+        {
+          "name": "dominâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/domination",
+        "https://www.oed.com/dictionary/domination_n?tab=factsheet#6407874",
+        "https://anglo-norman.net/entry/dominacion",
+        "https://latin-dictionary.net/definition/18385/dominatio-dominationis",
+        "https://latin-dictionary.net/definition/18401/dominor-dominari-dominatus",
+        "https://latin-dictionary.net/definition/18402/dominus-domini",
+        "https://latin-dictionary.net/definition/18414/domus-domi"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "dominant",
-    "etymology": [
-      {
-        "name": "domus, dominus, dominari, dominans, dominantem",
-        "origin": "Latin"
-      },
-      {
-        "name": "dominant",
-        "origin": "Old French"
-      },
-      {
-        "name": "dóminant",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/dominant",
-      "https://www.oed.com/dictionary/dominant_adj?tab=pronunciation#6407116",
-      "https://www.larousse.fr/dictionnaires/francais/dominant/26377",
-      "https://latin-dictionary.net/definition/18401/dominor-dominari-dominatus",
-      "https://latin-dictionary.net/definition/18402/dominus-domini"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "dominant",
+      "etymology": [
+        {
+          "name": "domus, dominus, dominari, dominans, dominantem",
+          "origin": "Latin"
+        },
+        {
+          "name": "dominant",
+          "origin": "Old French"
+        },
+        {
+          "name": "dóminant",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/dominant",
+        "https://www.oed.com/dictionary/dominant_adj?tab=pronunciation#6407116",
+        "https://www.larousse.fr/dictionnaires/francais/dominant/26377",
+        "https://latin-dictionary.net/definition/18401/dominor-dominari-dominatus",
+        "https://latin-dictionary.net/definition/18402/dominus-domini"
+      ]
+    }
   },
   {
-    "name": "domain",
-    "etymology": [
-      {
-        "name": "domus, dominus, dominium, domanium",
-        "origin": "Latin"
-      },
-      {
-        "name": "domaine",
-        "origin": "French"
-      },
-      {
-        "name": "domain",
-        "origin": "Modern English"
-      },
-      {
-        "name": "domâne, domâns",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/domain",
-      "https://www.oed.com/dictionary/domain_n?tab=factsheet#6400468",
-      "https://anglo-norman.net/entry/domain",
-      "https://latin-dictionary.net/definition/18399/dominium-dominii",
-      "https://latin-dictionary.net/definition/18402/dominus-domini",
-      "https://latin-dictionary.net/definition/18414/domus-domi",
-      "https://latin-dictionary.net/definition/18414/domus-domi"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "domain",
+      "etymology": [
+        {
+          "name": "domus, dominus, dominium, domanium",
+          "origin": "Latin"
+        },
+        {
+          "name": "domaine",
+          "origin": "French"
+        },
+        {
+          "name": "domain",
+          "origin": "Modern English"
+        },
+        {
+          "name": "domâne, domâns",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/domain",
+        "https://www.oed.com/dictionary/domain_n?tab=factsheet#6400468",
+        "https://anglo-norman.net/entry/domain",
+        "https://latin-dictionary.net/definition/18399/dominium-dominii",
+        "https://latin-dictionary.net/definition/18402/dominus-domini",
+        "https://latin-dictionary.net/definition/18414/domus-domi",
+        "https://latin-dictionary.net/definition/18414/domus-domi"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "dominance",
-    "etymology": [
-      {
-        "name": "dominance",
-        "origin": "French"
-      },
-      {
-        "name": "dóminance",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/dominance",
-      "https://www.oed.com/dictionary/dominance_n?tab=factsheet#6406762",
-      "https://www.larousse.fr/dictionnaires/francais/dominance/26376"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "dominance",
+      "etymology": [
+        {
+          "name": "dominance",
+          "origin": "French"
+        },
+        {
+          "name": "dóminance",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/dominance",
+        "https://www.oed.com/dictionary/dominance_n?tab=factsheet#6406762",
+        "https://www.larousse.fr/dictionnaires/francais/dominance/26376"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   }
 ]

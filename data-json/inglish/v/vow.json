@@ -1,62 +1,91 @@
 [
   {
-    "name": "vow",
-    "etymology": [
-      {
-        "name": "vovere, votus, votum",
-        "origin": "Latin"
-      },
-      {
-        "name": "voe",
-        "origin": "Old French"
-      },
-      {
-        "name": "vow",
-        "origin": "Modern English"
-      },
-      {
-        "name": "vao -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/vow",
-      "https://www.oed.com/dictionary/vow_n?tab=factsheet#15499658",
-      "https://anglo-norman.net/entry/vou_1",
-      "https://latin-dictionary.net/definition/39116/voveo-vovere-vovi-votus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "vow",
+      "etymology": [
+        {
+          "name": "vovere, votus, votum",
+          "origin": "Latin"
+        },
+        {
+          "name": "voe",
+          "origin": "Old French"
+        },
+        {
+          "name": "vow",
+          "origin": "Modern English"
+        },
+        {
+          "name": "vao -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/vow",
+        "https://www.oed.com/dictionary/vow_n?tab=factsheet#15499658",
+        "https://anglo-norman.net/entry/vou_1",
+        "https://latin-dictionary.net/definition/39116/voveo-vovere-vovi-votus"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to vow",
-    "etymology": [
-      {
-        "name": "voer, vouer",
-        "origin": "Old French"
+    "verbDetails": {
+      "infinitive": "to vow",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "i"
       },
-      {
-        "name": "vouen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to vow",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta vaoe -s -d -ïng",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "voer, vouer",
+        "vouen",
+        "to vow",
+        "ta vaoe -s -d -ïng"
+      ]
+    },
+    "standard": {
+      "name": "to vow",
+      "etymology": [
+        {
+          "name": "voer, vouer",
+          "origin": "Old French"
+        },
+        {
+          "name": "vouen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to vow",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta vaoe -s -d -ïng",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/vow",
+        "https://www.oed.com/dictionary/vow_v1?tab=factsheet#15500833",
+        "https://www.oed.com/dictionary/vow_v2?tab=factsheet#15501685",
+        "https://anglo-norman.net/entry/vouer_2"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "i"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/vow",
-      "https://www.oed.com/dictionary/vow_v1?tab=factsheet#15500833",
-      "https://www.oed.com/dictionary/vow_v2?tab=factsheet#15501685",
-      "https://anglo-norman.net/entry/vouer_2"
-    ]
+    }
   }
 ]

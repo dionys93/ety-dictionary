@@ -1,85 +1,118 @@
 [
   {
-    "name": "grease",
-    "etymology": [
-      {
-        "name": "crassus",
-        "origin": "Latin"
-      },
-      {
-        "name": "crassia",
-        "origin": "Vulgar Latin"
-      },
-      {
-        "name": "gresse, craisse, grece",
-        "origin": "Old French"
-      },
-      {
-        "name": "gres",
-        "origin": "Middle English"
-      },
-      {
-        "name": "grease",
-        "origin": "Modern English"
-      },
-      {
-        "name": "gríss -es",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/grease#etymonline_v_11944",
-      "https://www.merriam-webster.com/dictionary/grease#dictionary-entry-1",
-      "https://www.oed.com/dictionary/grease_n?tab=factsheet#2395778",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED19395",
-      "https://anglo-norman.net/entry/gresse",
-      "https://latin-dictionary.net/definition/14626/crassus-crassa"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "grease",
+      "etymology": [
+        {
+          "name": "crassus",
+          "origin": "Latin"
+        },
+        {
+          "name": "crassia",
+          "origin": "Vulgar Latin"
+        },
+        {
+          "name": "gresse, craisse, grece",
+          "origin": "Old French"
+        },
+        {
+          "name": "gres",
+          "origin": "Middle English"
+        },
+        {
+          "name": "grease",
+          "origin": "Modern English"
+        },
+        {
+          "name": "gríss -es",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/grease#etymonline_v_11944",
+        "https://www.merriam-webster.com/dictionary/grease#dictionary-entry-1",
+        "https://www.oed.com/dictionary/grease_n?tab=factsheet#2395778",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED19395",
+        "https://anglo-norman.net/entry/gresse",
+        "https://latin-dictionary.net/definition/14626/crassus-crassa"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to grease",
-    "etymology": [
-      {
-        "name": "to grease",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to grease",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta grísse -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to grease",
+        "ta grísse -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to grease",
+      "etymology": [
+        {
+          "name": "to grease",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta grísse -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/grease#etymonline_v_41201",
+        "https://www.etymonline.com/word/grease#etymonline_v_11944",
+        "https://www.merriam-webster.com/dictionary/grease#dictionary-entry-2",
+        "https://www.oed.com/dictionary/grease_v?tab=factsheet#2397408"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/grease#etymonline_v_41201",
-      "https://www.etymonline.com/word/grease#etymonline_v_11944",
-      "https://www.merriam-webster.com/dictionary/grease#dictionary-entry-2",
-      "https://www.oed.com/dictionary/grease_v?tab=factsheet#2397408"
-    ]
+    }
   },
   {
-    "name": "greasy",
-    "etymology": [
-      {
-        "name": "greasy",
-        "origin": "Modern English"
-      },
-      {
-        "name": "gríssy",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/greasy#etymonline_v_33790",
-      "https://www.merriam-webster.com/dictionary/greasy",
-      "https://www.oed.com/dictionary/greasy_adj?tab=factsheet#2398995"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "greasy",
+      "etymology": [
+        {
+          "name": "greasy",
+          "origin": "Modern English"
+        },
+        {
+          "name": "gríssy",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/greasy#etymonline_v_33790",
+        "https://www.merriam-webster.com/dictionary/greasy",
+        "https://www.oed.com/dictionary/greasy_adj?tab=factsheet#2398995"
+      ]
+    }
   }
 ]

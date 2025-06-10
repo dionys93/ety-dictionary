@@ -1,49 +1,77 @@
 [
   {
-    "name": "to gauge",
-    "etymology": [
-      {
-        "name": "gauge, gauger, jaugier",
-        "origin": "Old French"
+    "verbDetails": {
+      "infinitive": "to gauge",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to gauge",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta gaige -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "gauge, gauger, jaugier",
+        "to gauge",
+        "ta gaige -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to gauge",
+      "etymology": [
+        {
+          "name": "gauge, gauger, jaugier",
+          "origin": "Old French"
+        },
+        {
+          "name": "to gauge",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta gaige -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/gauge#etymonline_v_1316",
+        "https://www.oed.com/dictionary/gauge_v1?tab=factsheet#3276743",
+        "https://anglo-norman.net/entry/gauger",
+        "https://anglo-norman.net/entry/gauge_1"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/gauge#etymonline_v_1316",
-      "https://www.oed.com/dictionary/gauge_v1?tab=factsheet#3276743",
-      "https://anglo-norman.net/entry/gauger",
-      "https://anglo-norman.net/entry/gauge_1"
-    ]
+    }
   },
   {
-    "name": "gauge",
-    "etymology": [
-      {
-        "name": "gauge",
-        "origin": "Old French"
-      },
-      {
-        "name": "gaige -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/gauge#etymonline_v_46286",
-      "https://www.oed.com/dictionary/gauge_n?tab=factsheet#3275166",
-      "https://anglo-norman.net/entry/gauge_1"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "gauge",
+      "etymology": [
+        {
+          "name": "gauge",
+          "origin": "Old French"
+        },
+        {
+          "name": "gaige -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/gauge#etymonline_v_46286",
+        "https://www.oed.com/dictionary/gauge_n?tab=factsheet#3275166",
+        "https://anglo-norman.net/entry/gauge_1"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

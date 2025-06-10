@@ -1,33 +1,50 @@
 [
   {
-    "name": "to become",
-    "etymology": [
-      {
-        "name": "becuman",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to become",
+      "conjugations": {
+        "thirdPerson": "s"
       },
-      {
-        "name": "bicomen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to become",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta become -s becâme becom -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "becuman",
+        "bicomen",
+        "to become",
+        "ta become -s becâme becom -ing"
+      ]
+    },
+    "standard": {
+      "name": "to become",
+      "etymology": [
+        {
+          "name": "becuman",
+          "origin": "Old English"
+        },
+        {
+          "name": "bicomen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to become",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta become -s becâme becom -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/become#etymonline_v_8225",
+        "https://www.merriam-webster.com/dictionary/become",
+        "https://www.oed.com/dictionary/become_v?tab=factsheet#24994012",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4371",
+        "https://bosworthtoller.com/3274"
+      ],
+      "conjugations": {
+        "thirdPerson": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/become#etymonline_v_8225",
-      "https://www.merriam-webster.com/dictionary/become",
-      "https://www.oed.com/dictionary/become_v?tab=factsheet#24994012",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4371",
-      "https://bosworthtoller.com/3274"
-    ]
+    }
   }
 ]

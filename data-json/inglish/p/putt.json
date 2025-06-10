@@ -1,36 +1,59 @@
 [
   {
-    "name": "to putt",
-    "etymology": [
-      {
-        "name": "to putt",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to putt",
+      "conjugations": {
+        "thirdPerson": "d",
+        "pastTense": "ing"
       },
-      {
-        "name": "ta putte puts -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to putt",
+        "ta putte puts -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to putt",
+      "etymology": [
+        {
+          "name": "to putt",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta putte puts -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/putt#etymonline_v_2925",
+        "https://www.merriam-webster.com/dictionary/putt"
+      ],
+      "conjugations": {
+        "thirdPerson": "d",
+        "pastTense": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/putt#etymonline_v_2925",
-      "https://www.merriam-webster.com/dictionary/putt"
-    ]
+    }
   },
   {
-    "name": "putt  -s (m n)",
-    "etymology": [
-      {
-        "name": "putt  -s (m n)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/putt#etymonline_v_47619",
-      "https://www.etymonline.com/word/put#etymonline_v_47614",
-      "https://www.merriam-webster.com/dictionary/putt"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "putt  -s (m n)",
+      "etymology": [
+        {
+          "name": "putt  -s (m n)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/putt#etymonline_v_47619",
+        "https://www.etymonline.com/word/put#etymonline_v_47614",
+        "https://www.merriam-webster.com/dictionary/putt"
+      ]
+    }
   }
 ]

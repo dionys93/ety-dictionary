@@ -1,88 +1,127 @@
 [
   {
-    "name": "to pit",
-    "etymology": [
-      {
-        "name": "pytt",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to pit",
+      "conjugations": {
+        "thirdPerson": "ing"
       },
-      {
-        "name": "to pit",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta pitte pits pit -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "pytt",
+        "to pit",
+        "ta pitte pits pit -ing"
+      ]
+    },
+    "standard": {
+      "name": "to pit",
+      "etymology": [
+        {
+          "name": "pytt",
+          "origin": "Old English"
+        },
+        {
+          "name": "to pit",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta pitte pits pit -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/pit#etymonline_v_44636",
+        "https://www.etymonline.com/word/pit#etymonline_v_16391",
+        "https://www.merriam-webster.com/dictionary/pit#dictionary-entry-2",
+        "https://bosworthtoller.com/25422"
+      ],
+      "conjugations": {
+        "thirdPerson": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/pit#etymonline_v_44636",
-      "https://www.etymonline.com/word/pit#etymonline_v_16391",
-      "https://www.merriam-webster.com/dictionary/pit#dictionary-entry-2",
-      "https://bosworthtoller.com/25422"
-    ]
+    }
   },
   {
-    "name": "pit  -s (n)",
-    "etymology": [
-      {
-        "name": "pytt",
-        "origin": "Old English"
-      },
-      {
-        "name": "pit  -s (n)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/pit#etymonline_v_16391",
-      "https://www.merriam-webster.com/dictionary/pit#dictionary-entry-1",
-      "https://bosworthtoller.com/25422"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "pit  -s (n)",
+      "etymology": [
+        {
+          "name": "pytt",
+          "origin": "Old English"
+        },
+        {
+          "name": "pit  -s (n)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/pit#etymonline_v_16391",
+        "https://www.merriam-webster.com/dictionary/pit#dictionary-entry-1",
+        "https://bosworthtoller.com/25422"
+      ]
+    }
   },
   {
-    "name": "pit  -s",
-    "etymology": [
-      {
-        "name": "pit  -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/pit#etymonline_v_16392",
-      "https://www.merriam-webster.com/dictionary/pit#dictionary-entry-3",
-      "https://dictionary.cambridge.org/dictionary/dutch-english/pit"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "pit  -s",
+      "etymology": [
+        {
+          "name": "pit  -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/pit#etymonline_v_16392",
+        "https://www.merriam-webster.com/dictionary/pit#dictionary-entry-3",
+        "https://dictionary.cambridge.org/dictionary/dutch-english/pit"
+      ],
+      "number": "plural"
+    }
   },
   {
-    "name": "to pit",
-    "etymology": [
-      {
-        "name": "pitten",
-        "origin": "Inglish"
-      },
-      {
-        "name": "to pit",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta pìte -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/pit#dictionary-entry-4",
-      "https://www.etymonline.com/word/pit#etymonline_v_16392",
-      "https://dictionary.cambridge.org/dictionary/dutch-english/pitten"
-    ]
+    "verbDetails": {
+      "infinitive": "to pit",
+      "etymology": [
+        "pitten",
+        "to pit",
+        "ta pìte -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to pit",
+      "etymology": [
+        {
+          "name": "pitten",
+          "origin": "Inglish"
+        },
+        {
+          "name": "to pit",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta pìte -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/pit#dictionary-entry-4",
+        "https://www.etymonline.com/word/pit#etymonline_v_16392",
+        "https://dictionary.cambridge.org/dictionary/dutch-english/pitten"
+      ]
+    }
   }
 ]

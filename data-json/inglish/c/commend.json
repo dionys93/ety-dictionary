@@ -1,125 +1,171 @@
 [
   {
-    "name": "to commend",
-    "etymology": [
-      {
-        "name": "com + mandare, commendare",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to commend",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "comender",
-        "origin": "Old French"
-      },
-      {
-        "name": "comenden",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to commend",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta commende -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "com + mandare, commendare",
+        "comender",
+        "comenden",
+        "to commend",
+        "ta commende -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to commend",
+      "etymology": [
+        {
+          "name": "com + mandare, commendare",
+          "origin": "Latin"
+        },
+        {
+          "name": "comender",
+          "origin": "Old French"
+        },
+        {
+          "name": "comenden",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to commend",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta commende -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/commend#etymonline_v_17224",
+        "https://www.merriam-webster.com/dictionary/commend",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8575/",
+        "https://www.anglo-norman.net/entry/comender",
+        "https://latin-dictionary.net/definition/11373/commendo-commendare-commendavi-commendatus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/commend#etymonline_v_17224",
-      "https://www.merriam-webster.com/dictionary/commend",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8575/",
-      "https://www.anglo-norman.net/entry/comender",
-      "https://latin-dictionary.net/definition/11373/commendo-commendare-commendavi-commendatus"
-    ]
+    }
   },
   {
-    "name": "commendation",
-    "etymology": [
-      {
-        "name": "commendare, commendatio",
-        "origin": "Latin"
-      },
-      {
-        "name": "commendacion",
-        "origin": "Old French"
-      },
-      {
-        "name": "commendacioun",
-        "origin": "Middle English"
-      },
-      {
-        "name": "commendation",
-        "origin": "Modern English"
-      },
-      {
-        "name": "commendâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/commendation#etymonline_v_28403",
-      "https://www.merriam-webster.com/dictionary/commendation",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8572",
-      "https://www.anglo-norman.net/entry/commendacion",
-      "https://latin-dictionary.net/definition/11365/commendatio-commendationis",
-      "https://latin-dictionary.net/definition/11373/commendo-commendare-commendavi-commendatus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "commendation",
+      "etymology": [
+        {
+          "name": "commendare, commendatio",
+          "origin": "Latin"
+        },
+        {
+          "name": "commendacion",
+          "origin": "Old French"
+        },
+        {
+          "name": "commendacioun",
+          "origin": "Middle English"
+        },
+        {
+          "name": "commendation",
+          "origin": "Modern English"
+        },
+        {
+          "name": "commendâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/commendation#etymonline_v_28403",
+        "https://www.merriam-webster.com/dictionary/commendation",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8572",
+        "https://www.anglo-norman.net/entry/commendacion",
+        "https://latin-dictionary.net/definition/11365/commendatio-commendationis",
+        "https://latin-dictionary.net/definition/11373/commendo-commendare-commendavi-commendatus"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "commendable",
-    "etymology": [
-      {
-        "name": "commendare, commendabilis",
-        "origin": "Latin"
-      },
-      {
-        "name": "commendable",
-        "origin": "Old French"
-      },
-      {
-        "name": "commèndable -y",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "commendable",
+      "etymology": [
+        {
+          "name": "commendare, commendabilis",
+          "origin": "Latin"
+        },
+        {
+          "name": "commendable",
+          "origin": "Old French"
+        },
+        {
+          "name": "commèndable -y",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/commendable#etymonline_v_36195",
+        "https://www.anglo-norman.net/entry/commendable",
+        "https://latin-dictionary.net/definition/11361/commendabilis-commendabile-commendabilior",
+        "https://latin-dictionary.net/definition/11373/commendo-commendare-commendavi-commendatus"
+      ],
+      "degrees": {
+        "positive": "ndable",
+        "comparative": "y"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/commendable#etymonline_v_36195",
-      "https://www.anglo-norman.net/entry/commendable",
-      "https://latin-dictionary.net/definition/11361/commendabilis-commendabile-commendabilior",
-      "https://latin-dictionary.net/definition/11373/commendo-commendare-commendavi-commendatus"
-    ]
+    }
   },
   {
-    "name": "commendatory",
-    "etymology": [
-      {
-        "name": "commendare, commendator, commendatorius",
-        "origin": "Latin"
-      },
-      {
-        "name": "commendatory",
-        "origin": "Modern English"
-      },
-      {
-        "name": "commèndatory",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/commendatory#etymonline_v_53455",
-      "https://www.merriam-webster.com/dictionary/commendatory",
-      "https://latin-dictionary.net/definition/11369/commendator-commendatoris",
-      "https://latin-dictionary.net/definition/11373/commendo-commendare-commendavi-commendatus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "commendatory",
+      "etymology": [
+        {
+          "name": "commendare, commendator, commendatorius",
+          "origin": "Latin"
+        },
+        {
+          "name": "commendatory",
+          "origin": "Modern English"
+        },
+        {
+          "name": "commèndatory",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/commendatory#etymonline_v_53455",
+        "https://www.merriam-webster.com/dictionary/commendatory",
+        "https://latin-dictionary.net/definition/11369/commendator-commendatoris",
+        "https://latin-dictionary.net/definition/11373/commendo-commendare-commendavi-commendatus"
+      ]
+    }
   }
 ]

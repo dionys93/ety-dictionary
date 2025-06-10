@@ -1,69 +1,87 @@
 [
   {
-    "name": "vicar  -s (m n)",
-    "etymology": [
-      {
-        "name": "vicis, vicarius",
-        "origin": "Latin"
-      },
-      {
-        "name": "vicare, vicaire",
-        "origin": "Old French"
-      },
-      {
-        "name": "vicar  -s (m n)",
-        "origin": "Modern English"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/vicar#etymonline_v_7759",
-      "https://www.merriam-webster.com/dictionary/vicar",
-      "https://www.oed.com/dictionary/vicar_n?tab=factsheet#15519126",
-      "https://anglo-norman.net/entry/vicaire",
-      "https://latin-dictionary.net/definition/38729/vicarius-vicari-i",
-      "https://latin-dictionary.net/definition/38752/vicis-vicis"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "vicar  -s (m n)",
+      "etymology": [
+        {
+          "name": "vicis, vicarius",
+          "origin": "Latin"
+        },
+        {
+          "name": "vicare, vicaire",
+          "origin": "Old French"
+        },
+        {
+          "name": "vicar  -s (m n)",
+          "origin": "Modern English"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/vicar#etymonline_v_7759",
+        "https://www.merriam-webster.com/dictionary/vicar",
+        "https://www.oed.com/dictionary/vicar_n?tab=factsheet#15519126",
+        "https://anglo-norman.net/entry/vicaire",
+        "https://latin-dictionary.net/definition/38729/vicarius-vicari-i",
+        "https://latin-dictionary.net/definition/38752/vicis-vicis"
+      ]
+    }
   },
   {
-    "name": "vicarage  -s (m n)",
-    "etymology": [
-      {
-        "name": "vicarage  -s (m n)",
-        "origin": "Old French"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/vicarage#etymonline_v_39911",
-      "https://www.merriam-webster.com/dictionary/vicarage",
-      "https://anglo-norman.net/entry/vicarage",
-      "https://www.etymonline.com/word/-age#etymonline_v_8027",
-      "https://www.etymonline.com/word/vicar#etymonline_v_7759"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "vicarage  -s (m n)",
+      "etymology": [
+        {
+          "name": "vicarage  -s (m n)",
+          "origin": "Old French"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/vicarage#etymonline_v_39911",
+        "https://www.merriam-webster.com/dictionary/vicarage",
+        "https://anglo-norman.net/entry/vicarage",
+        "https://www.etymonline.com/word/-age#etymonline_v_8027",
+        "https://www.etymonline.com/word/vicar#etymonline_v_7759"
+      ]
+    }
   },
   {
-    "name": "vicarious",
-    "etymology": [
-      {
-        "name": "vicarius",
-        "origin": "Latin"
-      },
-      {
-        "name": "vicarious",
-        "origin": "Modern English"
-      },
-      {
-        "name": "vîcârioʃ -sly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/vicarious#etymonline_v_7760",
-      "https://www.merriam-webster.com/dictionary/vicarious",
-      "https://latin-dictionary.net/definition/38730/vicarius-vicaria-vicarium",
-      "https://latin-dictionary.net/definition/38729/vicarius-vicari-i"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "vicarious",
+      "etymology": [
+        {
+          "name": "vicarius",
+          "origin": "Latin"
+        },
+        {
+          "name": "vicarious",
+          "origin": "Modern English"
+        },
+        {
+          "name": "vîcârioʃ -sly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/vicarious#etymonline_v_7760",
+        "https://www.merriam-webster.com/dictionary/vicarious",
+        "https://latin-dictionary.net/definition/38730/vicarius-vicaria-vicarium",
+        "https://latin-dictionary.net/definition/38729/vicarius-vicari-i"
+      ]
+    }
   }
 ]

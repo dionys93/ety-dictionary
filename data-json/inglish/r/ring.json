@@ -1,110 +1,153 @@
 [
   {
-    "name": "to ring",
-    "etymology": [
-      {
-        "name": "hringan",
-        "origin": "Old English"
-      },
-      {
-        "name": "ringen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to ring",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta ringue -s râng rong ringuing",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/ring#etymonline_v_15082",
-      "https://www.merriam-webster.com/dictionary/ring#dictionary-entry-3",
-      "https://www.oed.com/dictionary/ring_v1?tab=factsheet#25418448",
-      "https://www.oed.com/dictionary/ring_v2?tab=factsheet#25417412",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37595",
-      "https://bosworthtoller.com/19782"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "to ring",
+      "etymology": [
+        {
+          "name": "hringan",
+          "origin": "Old English"
+        },
+        {
+          "name": "ringen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to ring",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta ringue -s râng rong ringuing",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/ring#etymonline_v_15082",
+        "https://www.merriam-webster.com/dictionary/ring#dictionary-entry-3",
+        "https://www.oed.com/dictionary/ring_v1?tab=factsheet#25418448",
+        "https://www.oed.com/dictionary/ring_v2?tab=factsheet#25417412",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37595",
+        "https://bosworthtoller.com/19782"
+      ]
+    }
   },
   {
-    "name": "ring",
-    "etymology": [
-      {
-        "name": "ring",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ringue, rings",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/ring#etymonline_v_48179",
-      "https://www.etymonline.com/word/ring#etymonline_v_15082",
-      "https://www.oed.com/dictionary/ring_n2?tab=factsheet#25416790",
-      "https://www.merriam-webster.com/dictionary/ring#dictionary-entry-4"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "ring",
+      "etymology": [
+        {
+          "name": "ring",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ringue, rings",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/ring#etymonline_v_48179",
+        "https://www.etymonline.com/word/ring#etymonline_v_15082",
+        "https://www.oed.com/dictionary/ring_n2?tab=factsheet#25416790",
+        "https://www.merriam-webster.com/dictionary/ring#dictionary-entry-4"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "ring",
-    "etymology": [
-      {
-        "name": "hring",
-        "origin": "Old English"
-      },
-      {
-        "name": "ring",
-        "origin": "Middle English"
-      },
-      {
-        "name": "ringue, rings",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/ring#etymonline_v_15081",
-      "https://www.merriam-webster.com/dictionary/ring#dictionary-entry-1",
-      "https://www.oed.com/dictionary/ring_n1?tab=factsheet#25408140",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37591",
-      "https://bosworthtoller.com/19780"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "ring",
+      "etymology": [
+        {
+          "name": "hring",
+          "origin": "Old English"
+        },
+        {
+          "name": "ring",
+          "origin": "Middle English"
+        },
+        {
+          "name": "ringue, rings",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/ring#etymonline_v_15081",
+        "https://www.merriam-webster.com/dictionary/ring#dictionary-entry-1",
+        "https://www.oed.com/dictionary/ring_n1?tab=factsheet#25408140",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37591",
+        "https://bosworthtoller.com/19780"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to ring",
-    "etymology": [
-      {
-        "name": "ymbhringan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to ring",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ringen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to ring",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta ringue -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "ymbhringan",
+        "ringen",
+        "to ring",
+        "ta ringue -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to ring",
+      "etymology": [
+        {
+          "name": "ymbhringan",
+          "origin": "Old English"
+        },
+        {
+          "name": "ringen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to ring",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta ringue -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/ring#etymonline_v_43917",
+        "https://www.etymonline.com/word/ring#etymonline_v_15081",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37594",
+        "https://bosworthtoller.com/37154"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/ring#etymonline_v_43917",
-      "https://www.etymonline.com/word/ring#etymonline_v_15081",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37594",
-      "https://bosworthtoller.com/37154"
-    ]
+    }
   }
 ]

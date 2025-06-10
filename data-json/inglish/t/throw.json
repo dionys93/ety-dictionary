@@ -1,121 +1,178 @@
 [
   {
-    "name": "to throw",
-    "etymology": [
-      {
-        "name": "þrawan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to throw",
+      "conjugations": {
+        "thirdPerson": "s"
       },
-      {
-        "name": "thrawen, throwen, thouen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to throw",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta þroɯe -s þrou þroɯn -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "þrawan",
+        "thrawen, throwen, thouen",
+        "to throw",
+        "ta þroɯe -s þrou þroɯn -ing"
+      ]
+    },
+    "standard": {
+      "name": "to throw",
+      "etymology": [
+        {
+          "name": "þrawan",
+          "origin": "Old English"
+        },
+        {
+          "name": "thrawen, throwen, thouen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to throw",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta þroɯe -s þrou þroɯn -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/throw#etymonline_v_13276",
+        "https://www.merriam-webster.com/dictionary/throw#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45567",
+        "https://bosworthtoller.com/31998"
+      ],
+      "conjugations": {
+        "thirdPerson": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/throw#etymonline_v_13276",
-      "https://www.merriam-webster.com/dictionary/throw#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45567",
-      "https://bosworthtoller.com/31998"
-    ]
+    }
   },
   {
-    "name": "throw",
-    "etymology": [
-      {
-        "name": "throw",
-        "origin": "Modern English"
-      },
-      {
-        "name": "þroɯ -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/throw#etymonline_v_24730",
-      "https://www.etymonline.com/word/throw#etymonline_v_13276",
-      "https://www.merriam-webster.com/dictionary/throw#dictionary-entry-2"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "throw",
+      "etymology": [
+        {
+          "name": "throw",
+          "origin": "Modern English"
+        },
+        {
+          "name": "þroɯ -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/throw#etymonline_v_24730",
+        "https://www.etymonline.com/word/throw#etymonline_v_13276",
+        "https://www.merriam-webster.com/dictionary/throw#dictionary-entry-2"
+      ],
+      "number": "plural"
+    }
   },
   {
-    "name": "throwaway",
-    "etymology": [
-      {
-        "name": "throwaway",
-        "origin": "Modern English"
-      },
-      {
-        "name": "þroɯaɯay -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "noun"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "throwaway",
+      "etymology": [
+        {
+          "name": "throwaway",
+          "origin": "Modern English"
+        },
+        {
+          "name": "þroɯaɯay -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/throwaway#etymonline_v_24731",
+        "https://www.merriam-webster.com/dictionary/throwaway#dictionary-entry-1",
+        "https://www.merriam-webster.com/dictionary/throwaway#dictionary-entry-2"
+      ],
+      "degrees": {
+        "positive": "ay",
+        "comparative": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/throwaway#etymonline_v_24731",
-      "https://www.merriam-webster.com/dictionary/throwaway#dictionary-entry-1",
-      "https://www.merriam-webster.com/dictionary/throwaway#dictionary-entry-2"
-    ]
+    }
   },
   {
-    "name": "throwback",
-    "etymology": [
-      {
-        "name": "throwback",
-        "origin": "Modern English"
-      },
-      {
-        "name": "þroɯbac -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/throwback#etymonline_v_24732",
-      "https://www.merriam-webster.com/dictionary/throwback#dictionary-entry-1"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "throwback",
+      "etymology": [
+        {
+          "name": "throwback",
+          "origin": "Modern English"
+        },
+        {
+          "name": "þroɯbac -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/throwback#etymonline_v_24732",
+        "https://www.merriam-webster.com/dictionary/throwback#dictionary-entry-1"
+      ],
+      "number": "plural"
+    }
   },
   {
-    "name": "to overthrow",
-    "etymology": [
-      {
-        "name": "overthrouen",
-        "origin": "Middle English"
+    "verbDetails": {
+      "infinitive": "to overthrow",
+      "conjugations": {
+        "thirdPerson": "s"
       },
-      {
-        "name": "to overthrow",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta ovreþroɯe -s ovreþrou ovreþroɯn -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "overthrouen",
+        "to overthrow",
+        "ta ovreþroɯe -s ovreþrou ovreþroɯn -ing"
+      ]
+    },
+    "standard": {
+      "name": "to overthrow",
+      "etymology": [
+        {
+          "name": "overthrouen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to overthrow",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta ovreþroɯe -s ovreþrou ovreþroɯn -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/overthrow#etymonline_v_10099",
+        "https://www.merriam-webster.com/dictionary/overthrow",
+        "https://www.oed.com/dictionary/overthrow_v?tab=factsheet#32684360",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32021"
+      ],
+      "conjugations": {
+        "thirdPerson": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/overthrow#etymonline_v_10099",
-      "https://www.merriam-webster.com/dictionary/overthrow",
-      "https://www.oed.com/dictionary/overthrow_v?tab=factsheet#32684360",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32021"
-    ]
+    }
   }
 ]

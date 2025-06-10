@@ -1,96 +1,131 @@
 [
   {
-    "name": "thirst",
-    "etymology": [
-      {
-        "name": "þurst",
-        "origin": "Old English"
-      },
-      {
-        "name": "þurst, þrust, þirst, þrist",
-        "origin": "Middle English"
-      },
-      {
-        "name": "thirst",
-        "origin": "Modern English"
-      },
-      {
-        "name": "þurst -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/thirst#etymonline_v_10761",
-      "https://www.merriam-webster.com/dictionary/thirst#word-history",
-      "https://www.oed.com/dictionary/thirst_n?tab=factsheet#18568677",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45336",
-      "https://bosworthtoller.com/32333"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "thirst",
+      "etymology": [
+        {
+          "name": "þurst",
+          "origin": "Old English"
+        },
+        {
+          "name": "þurst, þrust, þirst, þrist",
+          "origin": "Middle English"
+        },
+        {
+          "name": "thirst",
+          "origin": "Modern English"
+        },
+        {
+          "name": "þurst -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/thirst#etymonline_v_10761",
+        "https://www.merriam-webster.com/dictionary/thirst#word-history",
+        "https://www.oed.com/dictionary/thirst_n?tab=factsheet#18568677",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45336",
+        "https://bosworthtoller.com/32333"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to thirst",
-    "etymology": [
-      {
-        "name": "þyrstan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to thirst",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "þirsten, þristen, thrusten",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to thirst",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta þurste -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "þyrstan",
+        "þirsten, þristen, thrusten",
+        "to thirst",
+        "ta þurste -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to thirst",
+      "etymology": [
+        {
+          "name": "þyrstan",
+          "origin": "Old English"
+        },
+        {
+          "name": "þirsten, þristen, thrusten",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to thirst",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta þurste -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/thirst#etymonline_v_38833",
+        "https://www.etymonline.com/word/thirst#etymonline_v_10761",
+        "https://www.merriam-webster.com/dictionary/thirst#word-history",
+        "https://www.oed.com/dictionary/thirst_v?tab=factsheet#18569503",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45337",
+        "https://bosworthtoller.com/32446"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/thirst#etymonline_v_38833",
-      "https://www.etymonline.com/word/thirst#etymonline_v_10761",
-      "https://www.merriam-webster.com/dictionary/thirst#word-history",
-      "https://www.oed.com/dictionary/thirst_v?tab=factsheet#18569503",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45337",
-      "https://bosworthtoller.com/32446"
-    ]
+    }
   },
   {
-    "name": "thirsty",
-    "etymology": [
-      {
-        "name": "þurstig",
-        "origin": "Old English"
-      },
-      {
-        "name": "thirsti",
-        "origin": "Middle English"
-      },
-      {
-        "name": "thirsty",
-        "origin": "Modern English"
-      },
-      {
-        "name": "þursty",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/thirsty#etymonline_v_38832",
-      "https://www.etymonline.com/word/thirst#etymonline_v_10761",
-      "https://www.oed.com/dictionary/thirsty_adj?tab=factsheet#18570587",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45340",
-      "https://bosworthtoller.com/32334"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "thirsty",
+      "etymology": [
+        {
+          "name": "þurstig",
+          "origin": "Old English"
+        },
+        {
+          "name": "thirsti",
+          "origin": "Middle English"
+        },
+        {
+          "name": "thirsty",
+          "origin": "Modern English"
+        },
+        {
+          "name": "þursty",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/thirsty#etymonline_v_38832",
+        "https://www.etymonline.com/word/thirst#etymonline_v_10761",
+        "https://www.oed.com/dictionary/thirsty_adj?tab=factsheet#18570587",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45340",
+        "https://bosworthtoller.com/32334"
+      ]
+    }
   }
 ]

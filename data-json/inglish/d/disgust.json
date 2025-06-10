@@ -1,62 +1,91 @@
 [
   {
-    "name": "disgust",
-    "etymology": [
-      {
-        "name": "gustare",
-        "origin": "Latin"
-      },
-      {
-        "name": "desgouster, desgoust",
-        "origin": "Old French"
-      },
-      {
-        "name": "disgust",
-        "origin": "Modern English"
-      },
-      {
-        "name": "desguste",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/disgust#etymonline_v_11429",
-      "https://www.merriam-webster.com/dictionary/disgust#dictionary-entry-1",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/d%C3%A9go%C3%BBt/22763",
-      "https://latin-dictionary.net/definition/21774/gusto-gustare-gustavi-gustatus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "disgust",
+      "etymology": [
+        {
+          "name": "gustare",
+          "origin": "Latin"
+        },
+        {
+          "name": "desgouster, desgoust",
+          "origin": "Old French"
+        },
+        {
+          "name": "disgust",
+          "origin": "Modern English"
+        },
+        {
+          "name": "desguste",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/disgust#etymonline_v_11429",
+        "https://www.merriam-webster.com/dictionary/disgust#dictionary-entry-1",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/d%C3%A9go%C3%BBt/22763",
+        "https://latin-dictionary.net/definition/21774/gusto-gustare-gustavi-gustatus"
+      ],
+      "gender": "feminine",
+      "number": "singular"
+    }
   },
   {
-    "name": "to disgust",
-    "etymology": [
-      {
-        "name": "gustare",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to disgust",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "desgouster",
-        "origin": "Old French"
-      },
-      {
-        "name": "to disgust",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta desguste -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "gustare",
+        "desgouster",
+        "to disgust",
+        "ta desguste -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to disgust",
+      "etymology": [
+        {
+          "name": "gustare",
+          "origin": "Latin"
+        },
+        {
+          "name": "desgouster",
+          "origin": "Old French"
+        },
+        {
+          "name": "to disgust",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta desguste -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/disgust#etymonline_v_46778",
+        "https://www.merriam-webster.com/dictionary/disgust#dictionary-entry-2",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/d%C3%A9go%C3%BBter/22769",
+        "https://latin-dictionary.net/definition/21774/gusto-gustare-gustavi-gustatus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/disgust#etymonline_v_46778",
-      "https://www.merriam-webster.com/dictionary/disgust#dictionary-entry-2",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/d%C3%A9go%C3%BBter/22769",
-      "https://latin-dictionary.net/definition/21774/gusto-gustare-gustavi-gustatus"
-    ]
+    }
   }
 ]

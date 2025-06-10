@@ -1,75 +1,113 @@
 [
   {
-    "name": "enervation",
-    "etymology": [
-      {
-        "name": "ex + nervus, enervare, enervationem",
-        "origin": "Latin"
-      },
-      {
-        "name": "enervacion",
-        "origin": "Middle English"
-      },
-      {
-        "name": "enervation",
-        "origin": "Modern English"
-      },
-      {
-        "name": "enirvâcion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/enervation#etymonline_v_8667",
-      "https://latin-dictionary.net/definition/27817/nervus-nervi",
-      "https://latin-dictionary.net/definition/19109/enervo-enervare-enervavi-enervatus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "enervation",
+      "etymology": [
+        {
+          "name": "ex + nervus, enervare, enervationem",
+          "origin": "Latin"
+        },
+        {
+          "name": "enervacion",
+          "origin": "Middle English"
+        },
+        {
+          "name": "enervation",
+          "origin": "Modern English"
+        },
+        {
+          "name": "enirvâcion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/enervation#etymonline_v_8667",
+        "https://latin-dictionary.net/definition/27817/nervus-nervi",
+        "https://latin-dictionary.net/definition/19109/enervo-enervare-enervavi-enervatus"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to enervate",
-    "etymology": [
-      {
-        "name": "enervare, enervatus",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to enervate",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to enervate",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta enirvete -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "enervare, enervatus",
+        "to enervate",
+        "ta enirvete -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to enervate",
+      "etymology": [
+        {
+          "name": "enervare, enervatus",
+          "origin": "Latin"
+        },
+        {
+          "name": "to enervate",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta enirvete -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/enervate#etymonline_v_32560",
+        "https://www.merriam-webster.com/dictionary/enervation#dictionary-entry-2",
+        "https://latin-dictionary.net/definition/19109/enervo-enervare-enervavi-enervatus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/enervate#etymonline_v_32560",
-      "https://www.merriam-webster.com/dictionary/enervation#dictionary-entry-2",
-      "https://latin-dictionary.net/definition/19109/enervo-enervare-enervavi-enervatus"
-    ]
+    }
   },
   {
-    "name": "enervate",
-    "etymology": [
-      {
-        "name": "enervate",
-        "origin": "Modern English"
-      },
-      {
-        "name": "enêvat -ly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "enervate",
+      "etymology": [
+        {
+          "name": "enervate",
+          "origin": "Modern English"
+        },
+        {
+          "name": "enêvat -ly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/enervate#dictionary-entry-1"
+      ],
+      "degrees": {
+        "positive": "vat",
+        "comparative": "ly"
       }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/enervate#dictionary-entry-1"
-    ]
+    }
   }
 ]

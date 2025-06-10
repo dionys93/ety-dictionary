@@ -1,47 +1,59 @@
 [
   {
-    "name": "odor  -s -less -ed (m n)",
-    "etymology": [
-      {
-        "name": "odor  -s -less -ed (m n)",
-        "origin": "Latin"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/odor#etymonline_v_2502",
-      "https://www.oed.com/dictionary/odour_n?tab=factsheet#33787840",
-      "https://www.merriam-webster.com/dictionary/odor",
-      "https://latin-dictionary.net/definition/28543/odor-odoris"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "odor  -s -less -ed (m n)",
+      "etymology": [
+        {
+          "name": "odor  -s -less -ed (m n)",
+          "origin": "Latin"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/odor#etymonline_v_2502",
+        "https://www.oed.com/dictionary/odour_n?tab=factsheet#33787840",
+        "https://www.merriam-webster.com/dictionary/odor",
+        "https://latin-dictionary.net/definition/28543/odor-odoris"
+      ]
+    }
   },
   {
-    "name": "odorous",
-    "etymology": [
-      {
-        "name": "odor, odorus",
-        "origin": "Latin"
-      },
-      {
-        "name": "odorosus",
-        "origin": "Medieval Latin"
-      },
-      {
-        "name": "odorous",
-        "origin": "Modern English"
-      },
-      {
-        "name": "odoroʃ",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/odorous#etymonline_v_31179",
-      "https://www.oed.com/dictionary/odorous_adj?tab=factsheet#33787425",
-      "https://www.merriam-webster.com/dictionary/odorous",
-      "https://latin-dictionary.net/definition/28552/odorus-odora-odorum"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "odorous",
+      "etymology": [
+        {
+          "name": "odor, odorus",
+          "origin": "Latin"
+        },
+        {
+          "name": "odorosus",
+          "origin": "Medieval Latin"
+        },
+        {
+          "name": "odorous",
+          "origin": "Modern English"
+        },
+        {
+          "name": "odoroʃ",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/odorous#etymonline_v_31179",
+        "https://www.oed.com/dictionary/odorous_adj?tab=factsheet#33787425",
+        "https://www.merriam-webster.com/dictionary/odorous",
+        "https://latin-dictionary.net/definition/28552/odorus-odora-odorum"
+      ]
+    }
   }
 ]

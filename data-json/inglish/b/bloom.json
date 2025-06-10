@@ -1,77 +1,112 @@
 [
   {
-    "name": "bloom",
-    "etymology": [
-      {
-        "name": "blómi",
-        "origin": "Old Norse"
-      },
-      {
-        "name": "bloom",
-        "origin": "Modern English"
-      },
-      {
-        "name": "blume, blúms",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bloom#etymonline_v_13622",
-      "https://www.merriam-webster.com/dictionary/bloom#dictionary-entry-2",
-      "https://www.oed.com/dictionary/bloom_n1?tab=factsheet#17916433",
-      "https://old-norse.net/html/b.php#bl%C3%B3mi-1"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "bloom",
+      "etymology": [
+        {
+          "name": "blómi",
+          "origin": "Old Norse"
+        },
+        {
+          "name": "bloom",
+          "origin": "Modern English"
+        },
+        {
+          "name": "blume, blúms",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bloom#etymonline_v_13622",
+        "https://www.merriam-webster.com/dictionary/bloom#dictionary-entry-2",
+        "https://www.oed.com/dictionary/bloom_n1?tab=factsheet#17916433",
+        "https://old-norse.net/html/b.php#bl%C3%B3mi-1"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to bloom",
-    "etymology": [
-      {
-        "name": "to bloom",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to bloom",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta blume -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to bloom",
+        "ta blume -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to bloom",
+      "etymology": [
+        {
+          "name": "to bloom",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta blume -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bloom#etymonline_v_43347",
+        "https://www.etymonline.com/word/bloom#etymonline_v_13622",
+        "https://www.merriam-webster.com/dictionary/bloom#dictionary-entry-3",
+        "https://www.oed.com/dictionary/bloom_v1?tab=factsheet#17919962",
+        "https://old-norse.net/html/b.php#bl%C3%B3mi-1"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bloom#etymonline_v_43347",
-      "https://www.etymonline.com/word/bloom#etymonline_v_13622",
-      "https://www.merriam-webster.com/dictionary/bloom#dictionary-entry-3",
-      "https://www.oed.com/dictionary/bloom_v1?tab=factsheet#17919962",
-      "https://old-norse.net/html/b.php#bl%C3%B3mi-1"
-    ]
+    }
   },
   {
-    "name": "bloom",
-    "etymology": [
-      {
-        "name": "bloma",
-        "origin": "Old English"
-      },
-      {
-        "name": "bloom",
-        "origin": "Modern English"
-      },
-      {
-        "name": "bloum -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/bloom#etymonline_v_31783",
-      "https://www.merriam-webster.com/dictionary/bloom#dictionary-entry-1",
-      "https://www.oed.com/dictionary/bloom_n2?tab=factsheet#17918132",
-      "https://bosworthtoller.com/4735"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "bloom",
+      "etymology": [
+        {
+          "name": "bloma",
+          "origin": "Old English"
+        },
+        {
+          "name": "bloom",
+          "origin": "Modern English"
+        },
+        {
+          "name": "bloum -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/bloom#etymonline_v_31783",
+        "https://www.merriam-webster.com/dictionary/bloom#dictionary-entry-1",
+        "https://www.oed.com/dictionary/bloom_n2?tab=factsheet#17918132",
+        "https://bosworthtoller.com/4735"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

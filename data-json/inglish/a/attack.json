@@ -1,55 +1,84 @@
 [
   {
-    "name": "to attack",
-    "etymology": [
-      {
-        "name": "attaccare",
-        "origin": "Italian"
+    "verbDetails": {
+      "infinitive": "to attack",
+      "conjugations": {
+        "thirdPerson": "cs",
+        "pastTense": "ed",
+        "progressive": "ing"
       },
-      {
-        "name": "attaquer",
-        "origin": "French"
-      },
-      {
-        "name": "to attack",
-        "origin": "Modern English"
-      },
-      {
-        "name": "to attaq -cs -ed -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "attaccare",
+        "attaquer",
+        "to attack",
+        "to attaq -cs -ed -ing"
+      ]
+    },
+    "standard": {
+      "name": "to attack",
+      "etymology": [
+        {
+          "name": "attaccare",
+          "origin": "Italian"
+        },
+        {
+          "name": "attaquer",
+          "origin": "French"
+        },
+        {
+          "name": "to attack",
+          "origin": "Modern English"
+        },
+        {
+          "name": "to attaq -cs -ed -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/attack#etymonline_v_18903",
+        "https://www.merriam-webster.com/dictionary/attack#dictionary-entry-1",
+        "https://www.oed.com/dictionary/attack_v?tab=factsheet#34888224",
+        "https://www.collinsdictionary.com/us/dictionary/french-english/attaquer",
+        "https://www.collinsdictionary.com/us/dictionary/italian-english/attaccare"
+      ],
+      "conjugations": {
+        "thirdPerson": "cs",
+        "pastTense": "ed",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/attack#etymonline_v_18903",
-      "https://www.merriam-webster.com/dictionary/attack#dictionary-entry-1",
-      "https://www.oed.com/dictionary/attack_v?tab=factsheet#34888224",
-      "https://www.collinsdictionary.com/us/dictionary/french-english/attaquer",
-      "https://www.collinsdictionary.com/us/dictionary/italian-english/attaccare"
-    ]
+    }
   },
   {
-    "name": "attack",
-    "etymology": [
-      {
-        "name": "attack",
-        "origin": "Modern English"
-      },
-      {
-        "name": "attac -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/attack#etymonline_v_46567",
-      "https://www.etymonline.com/word/attack#etymonline_v_18903",
-      "https://www.merriam-webster.com/dictionary/attack#dictionary-entry-2",
-      "https://www.oed.com/dictionary/attack_n?tab=pronunciation#34884365"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "attack",
+      "etymology": [
+        {
+          "name": "attack",
+          "origin": "Modern English"
+        },
+        {
+          "name": "attac -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/attack#etymonline_v_46567",
+        "https://www.etymonline.com/word/attack#etymonline_v_18903",
+        "https://www.merriam-webster.com/dictionary/attack#dictionary-entry-2",
+        "https://www.oed.com/dictionary/attack_n?tab=pronunciation#34884365"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

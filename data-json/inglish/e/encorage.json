@@ -1,54 +1,83 @@
 [
   {
-    "name": "to encourage",
-    "etymology": [
-      {
-        "name": "en + corage, encoragier",
-        "origin": "Old French"
+    "verbDetails": {
+      "infinitive": "to encourage",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "encouragen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to encourage",
-        "origin": "Modern English"
-      },
-      {
-        "name": "to encûrage -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "en + corage, encoragier",
+        "encouragen",
+        "to encourage",
+        "to encûrage -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to encourage",
+      "etymology": [
+        {
+          "name": "en + corage, encoragier",
+          "origin": "Old French"
+        },
+        {
+          "name": "encouragen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to encourage",
+          "origin": "Modern English"
+        },
+        {
+          "name": "to encûrage -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/encourage#etymonline_v_8644",
+        "https://www.merriam-webster.com/dictionary/encourage",
+        "https://www.merriam-webster.com/dictionary/encourage#word-history",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13623",
+        "https://www.anglo-norman.net/entry/encorager"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/encourage#etymonline_v_8644",
-      "https://www.merriam-webster.com/dictionary/encourage",
-      "https://www.merriam-webster.com/dictionary/encourage#word-history",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13623",
-      "https://www.anglo-norman.net/entry/encorager"
-    ]
+    }
   },
   {
-    "name": "encouragement",
-    "etymology": [
-      {
-        "name": "encouragement",
-        "origin": "Modern English"
-      },
-      {
-        "name": "encoûragement -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/encouragement#etymonline_v_32456",
-      "https://www.etymonline.com/word/encourage#etymonline_v_8644",
-      "https://www.etymonline.com/word/-ment#etymonline_v_32036"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "encouragement",
+      "etymology": [
+        {
+          "name": "encouragement",
+          "origin": "Modern English"
+        },
+        {
+          "name": "encoûragement -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/encouragement#etymonline_v_32456",
+        "https://www.etymonline.com/word/encourage#etymonline_v_8644",
+        "https://www.etymonline.com/word/-ment#etymonline_v_32036"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

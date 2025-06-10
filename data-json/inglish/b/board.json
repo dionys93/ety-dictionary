@@ -1,52 +1,79 @@
 [
   {
-    "name": "board",
-    "etymology": [
-      {
-        "name": "bord",
-        "origin": "Old English"
-      },
-      {
-        "name": "board",
-        "origin": "Modern English"
-      },
-      {
-        "name": "bord -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/board#etymonline_v_13661",
-      "https://www.etymonline.com/word/board#etymonline_v_13660",
-      "https://www.merriam-webster.com/dictionary/board#dictionary-entry-1",
-      "https://www.oed.com/dictionary/board_n?tab=factsheet#17444587",
-      "https://bosworthtoller.com/4849"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "board",
+      "etymology": [
+        {
+          "name": "bord",
+          "origin": "Old English"
+        },
+        {
+          "name": "board",
+          "origin": "Modern English"
+        },
+        {
+          "name": "bord -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/board#etymonline_v_13661",
+        "https://www.etymonline.com/word/board#etymonline_v_13660",
+        "https://www.merriam-webster.com/dictionary/board#dictionary-entry-1",
+        "https://www.oed.com/dictionary/board_n?tab=factsheet#17444587",
+        "https://bosworthtoller.com/4849"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to board",
-    "etymology": [
-      {
-        "name": "to board",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to board",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta borde -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to board",
+        "ta borde -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to board",
+      "etymology": [
+        {
+          "name": "to board",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta borde -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/board#etymonline_v_46761",
+        "https://www.etymonline.com/word/board#etymonline_v_13661",
+        "https://www.etymonline.com/word/board#etymonline_v_13660",
+        "https://www.merriam-webster.com/dictionary/board#dictionary-entry-2",
+        "https://www.oed.com/dictionary/board_v?tab=factsheet#17449310"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/board#etymonline_v_46761",
-      "https://www.etymonline.com/word/board#etymonline_v_13661",
-      "https://www.etymonline.com/word/board#etymonline_v_13660",
-      "https://www.merriam-webster.com/dictionary/board#dictionary-entry-2",
-      "https://www.oed.com/dictionary/board_v?tab=factsheet#17449310"
-    ]
+    }
   }
 ]

@@ -1,60 +1,79 @@
 [
   {
-    "name": "rite",
-    "etymology": [
-      {
-        "name": "ritus",
-        "origin": "Latin"
-      },
-      {
-        "name": "rite",
-        "origin": "French"
-      },
-      {
-        "name": "rîte, rîts",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/rite#etymonline_v_15110",
-      "https://www.merriam-webster.com/dictionary/rite",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/rite/68824",
-      "https://latin-dictionary.net/definition/33649/ritus-ritus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "rite",
+      "etymology": [
+        {
+          "name": "ritus",
+          "origin": "Latin"
+        },
+        {
+          "name": "rite",
+          "origin": "French"
+        },
+        {
+          "name": "rîte, rîts",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/rite#etymonline_v_15110",
+        "https://www.merriam-webster.com/dictionary/rite",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/rite/68824",
+        "https://latin-dictionary.net/definition/33649/ritus-ritus"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "ritual",
-    "etymology": [
-      {
-        "name": "ritualis",
-        "origin": "Latin"
-      },
-      {
-        "name": "rituel",
-        "origin": "French"
-      },
-      {
-        "name": "ritual",
-        "origin": "Modern English"
-      },
-      {
-        "name": "riȶual -ly -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "masculine noun"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "ritual",
+      "etymology": [
+        {
+          "name": "ritualis",
+          "origin": "Latin"
+        },
+        {
+          "name": "rituel",
+          "origin": "French"
+        },
+        {
+          "name": "ritual",
+          "origin": "Modern English"
+        },
+        {
+          "name": "riȶual -ly -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/ritual#etymonline_v_15111",
+        "https://www.merriam-webster.com/dictionary/ritual#dictionary-entry-2",
+        "https://www.merriam-webster.com/dictionary/ritual#dictionary-entry-1",
+        "https://www.larousse.fr/dictionnaires/francais-anglais/rituel/68832",
+        "https://latin-dictionary.net/definition/33646/ritual-ritualis"
+      ],
+      "degrees": {
+        "positive": "ual",
+        "comparative": "ly",
+        "superlative": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/ritual#etymonline_v_15111",
-      "https://www.merriam-webster.com/dictionary/ritual#dictionary-entry-2",
-      "https://www.merriam-webster.com/dictionary/ritual#dictionary-entry-1",
-      "https://www.larousse.fr/dictionnaires/francais-anglais/rituel/68832",
-      "https://latin-dictionary.net/definition/33646/ritual-ritualis"
-    ]
+    }
   }
 ]

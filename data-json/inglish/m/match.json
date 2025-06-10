@@ -1,102 +1,138 @@
 [
   {
-    "name": "match",
-    "etymology": [
-      {
-        "name": "μύξα",
-        "origin": "Ancient Greek"
-      },
-      {
-        "name": "myxa",
-        "origin": "Latin"
-      },
-      {
-        "name": "micca, miccia",
-        "origin": "Vulgar Latin"
-      },
-      {
-        "name": "meche",
-        "origin": "Old French"
-      },
-      {
-        "name": "macche",
-        "origin": "Middle English"
-      },
-      {
-        "name": "match",
-        "origin": "Modern English"
-      },
-      {
-        "name": "màch -es",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/match#etymonline_v_9704",
-      "https://www.merriam-webster.com/dictionary/match#dictionary-entry-3",
-      "https://www.anglo-norman.net/entry/meche_1",
-      "https://latin-dictionary.net/definition/27562/myxa-myxae",
-      "https://lsj.gr/wiki/%CE%BC%CF%8D%CE%BE%CE%B1"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "match",
+      "etymology": [
+        {
+          "name": "μύξα",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "myxa",
+          "origin": "Latin"
+        },
+        {
+          "name": "micca, miccia",
+          "origin": "Vulgar Latin"
+        },
+        {
+          "name": "meche",
+          "origin": "Old French"
+        },
+        {
+          "name": "macche",
+          "origin": "Middle English"
+        },
+        {
+          "name": "match",
+          "origin": "Modern English"
+        },
+        {
+          "name": "màch -es",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/match#etymonline_v_9704",
+        "https://www.merriam-webster.com/dictionary/match#dictionary-entry-3",
+        "https://www.anglo-norman.net/entry/meche_1",
+        "https://latin-dictionary.net/definition/27562/myxa-myxae",
+        "https://lsj.gr/wiki/%CE%BC%CF%8D%CE%BE%CE%B1"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "match",
-    "etymology": [
-      {
-        "name": "gemæcca, mæcca",
-        "origin": "Old English"
-      },
-      {
-        "name": "macche",
-        "origin": "Middle English"
-      },
-      {
-        "name": "match",
-        "origin": "Modern English"
-      },
-      {
-        "name": "mach -es",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/match#etymonline_v_9705",
-      "https://www.merriam-webster.com/dictionary/match#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26412",
-      "https://bosworthtoller.com/54907",
-      "https://bosworthtoller.com/15094"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "match",
+      "etymology": [
+        {
+          "name": "gemæcca, mæcca",
+          "origin": "Old English"
+        },
+        {
+          "name": "macche",
+          "origin": "Middle English"
+        },
+        {
+          "name": "match",
+          "origin": "Modern English"
+        },
+        {
+          "name": "mach -es",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/match#etymonline_v_9705",
+        "https://www.merriam-webster.com/dictionary/match#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26412",
+        "https://bosworthtoller.com/54907",
+        "https://bosworthtoller.com/15094"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to match",
-    "etymology": [
-      {
-        "name": "macchen",
-        "origin": "Middle English"
+    "verbDetails": {
+      "infinitive": "to match",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to match",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta mache -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "macchen",
+        "to match",
+        "ta mache -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to match",
+      "etymology": [
+        {
+          "name": "macchen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to match",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta mache -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/match#etymonline_v_43746",
+        "https://www.etymonline.com/word/match#etymonline_v_9705",
+        "https://www.merriam-webster.com/dictionary/match#dictionary-entry-2",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26413"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/match#etymonline_v_43746",
-      "https://www.etymonline.com/word/match#etymonline_v_9705",
-      "https://www.merriam-webster.com/dictionary/match#dictionary-entry-2",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26413"
-    ]
+    }
   }
 ]

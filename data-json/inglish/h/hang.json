@@ -1,68 +1,96 @@
 [
   {
-    "name": "to hang",
-    "etymology": [
-      {
-        "name": "hon + hangian",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to hang",
+      "conjugations": {
+        "thirdPerson": "s"
       },
-      {
-        "name": "to hang",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta hângue -s hong -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "intransitive verb"
-        ]
-      },
-      {
-        "name": "E.g. Ћe picçure hong on þe ɯall.",
-        "origin": "Inglish"
-      },
-      {
-        "name": "I hong þe picçure on þe ɯall.",
-        "origin": "Inglish"
-      },
-      {
-        "name": "ta hângue -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "transitive verb"
-        ]
-      },
-      {
-        "name": "E.g. Ћey hângued þe man.",
-        "origin": "Inglish"
+      "etymology": [
+        "hon + hangian",
+        "to hang",
+        "ta hângue -s hong -ing",
+        "E.g. Ћe picçure hong on þe ɯall.",
+        "I hong þe picçure on þe ɯall.",
+        "ta hângue -s -d -ing",
+        "E.g. Ћey hângued þe man."
+      ]
+    },
+    "standard": {
+      "name": "to hang",
+      "etymology": [
+        {
+          "name": "hon + hangian",
+          "origin": "Old English"
+        },
+        {
+          "name": "to hang",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta hângue -s hong -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "intransitive verb"
+          ]
+        },
+        {
+          "name": "E.g. Ћe picçure hong on þe ɯall.",
+          "origin": "Inglish"
+        },
+        {
+          "name": "I hong þe picçure on þe ɯall.",
+          "origin": "Inglish"
+        },
+        {
+          "name": "ta hângue -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "transitive verb"
+          ]
+        },
+        {
+          "name": "E.g. Ћey hângued þe man.",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/hang#etymonline_v_1438",
+        "https://www.merriam-webster.com/dictionary/hang#dictionary-entry-1",
+        "https://www.oed.com/dictionary/hang_v?tab=pronunciation#2014922",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED21130",
+        "https://bosworthtoller.com/51771",
+        "https://bosworthtoller.com/19481"
+      ],
+      "conjugations": {
+        "thirdPerson": "s"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/hang#etymonline_v_1438",
-      "https://www.merriam-webster.com/dictionary/hang#dictionary-entry-1",
-      "https://www.oed.com/dictionary/hang_v?tab=pronunciation#2014922",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED21130",
-      "https://bosworthtoller.com/51771",
-      "https://bosworthtoller.com/19481"
-    ]
+    }
   },
   {
-    "name": "hang",
-    "etymology": [
-      {
-        "name": "hang",
-        "origin": "Modern English"
-      },
-      {
-        "name": "hângue, hângs",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.oed.com/dictionary/hang_n?tab=factsheet#2014534"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "hang",
+      "etymology": [
+        {
+          "name": "hang",
+          "origin": "Modern English"
+        },
+        {
+          "name": "hângue, hângs",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.oed.com/dictionary/hang_n?tab=factsheet#2014534"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

@@ -1,96 +1,139 @@
 [
   {
-    "name": "fever",
-    "etymology": [
-      {
-        "name": "fovere, febris",
-        "origin": "Latin"
-      },
-      {
-        "name": "fefor, fefer",
-        "origin": "Old English"
-      },
-      {
-        "name": "fever",
-        "origin": "Middle English"
-      },
-      {
-        "name": "fívor -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/fever#etymonline_v_5893",
-      "https://www.merriam-webster.com/dictionary/fever#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15857",
-      "https://bosworthtoller.com/10222",
-      "https://bosworthtoller.com/10226",
-      "https://latin-dictionary.net/definition/20392/febris-febris",
-      "https://latin-dictionary.net/definition/20963/foveo-fovere-fovi-fotus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "fever",
+      "etymology": [
+        {
+          "name": "fovere, febris",
+          "origin": "Latin"
+        },
+        {
+          "name": "fefor, fefer",
+          "origin": "Old English"
+        },
+        {
+          "name": "fever",
+          "origin": "Middle English"
+        },
+        {
+          "name": "fívor -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/fever#etymonline_v_5893",
+        "https://www.merriam-webster.com/dictionary/fever#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15857",
+        "https://bosworthtoller.com/10222",
+        "https://bosworthtoller.com/10226",
+        "https://latin-dictionary.net/definition/20392/febris-febris",
+        "https://latin-dictionary.net/definition/20963/foveo-fovere-fovi-fotus"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to fever",
-    "etymology": [
-      {
-        "name": "to fever",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to fever",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta fívore -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to fever",
+        "ta fívore -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to fever",
+      "etymology": [
+        {
+          "name": "to fever",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta fívore -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/fever#dictionary-entry-2",
+        "https://www.oed.com/dictionary/fever_v?tab=factsheet#4387821"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/fever#dictionary-entry-2",
-      "https://www.oed.com/dictionary/fever_v?tab=factsheet#4387821"
-    ]
+    }
   },
   {
-    "name": "feverish",
-    "etymology": [
-      {
-        "name": "feverish",
-        "origin": "Middle English"
-      },
-      {
-        "name": "fívrish -ly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "feverish",
+      "etymology": [
+        {
+          "name": "feverish",
+          "origin": "Middle English"
+        },
+        {
+          "name": "fívrish -ly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/feverish#etymonline_v_33090",
+        "https://www.merriam-webster.com/dictionary/feverish",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15861"
+      ],
+      "degrees": {
+        "positive": "vrish",
+        "comparative": "ly"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/feverish#etymonline_v_33090",
-      "https://www.merriam-webster.com/dictionary/feverish",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15861"
-    ]
+    }
   },
   {
-    "name": "feverous",
-    "etymology": [
-      {
-        "name": "feverous",
-        "origin": "Modern English"
-      },
-      {
-        "name": "fívroʃ -sly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/feverous#etymonline_v_33091",
-      "https://www.merriam-webster.com/dictionary/feverous#dictionary-entry-1"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "feverous",
+      "etymology": [
+        {
+          "name": "feverous",
+          "origin": "Modern English"
+        },
+        {
+          "name": "fívroʃ -sly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/feverous#etymonline_v_33091",
+        "https://www.merriam-webster.com/dictionary/feverous#dictionary-entry-1"
+      ]
+    }
   }
 ]

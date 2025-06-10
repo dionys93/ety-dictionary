@@ -1,58 +1,83 @@
 [
   {
-    "name": "to mourn",
-    "etymology": [
-      {
-        "name": "murnan",
-        "origin": "Old English"
+    "verbDetails": {
+      "infinitive": "to mourn",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "mornen",
-        "origin": "Middle English"
-      },
-      {
-        "name": "to mourn",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta maûne -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
-      },
-      {
-        "name": "mourner",
-        "origin": "Inglish"
-      },
-      {
-        "name": "maûneur -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      },
-      {
-        "name": "mournful",
-        "origin": "Inglish"
-      },
-      {
-        "name": "maûnful",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+      "etymology": [
+        "murnan",
+        "mornen",
+        "to mourn",
+        "ta maûne -s -d -ing",
+        "mourner",
+        "maûneur -s",
+        "mournful",
+        "maûnful"
+      ]
+    },
+    "standard": {
+      "name": "to mourn",
+      "etymology": [
+        {
+          "name": "murnan",
+          "origin": "Old English"
+        },
+        {
+          "name": "mornen",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to mourn",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta maûne -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        },
+        {
+          "name": "mourner",
+          "origin": "Inglish"
+        },
+        {
+          "name": "maûneur -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        },
+        {
+          "name": "mournful",
+          "origin": "Inglish"
+        },
+        {
+          "name": "maûnful",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/mourn#etymonline_v_18433",
+        "https://www.merriam-webster.com/dictionary/mourn#dictionary-entry-1",
+        "https://www.oed.com/dictionary/mourn_v1?tab=factsheet#35768001",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED28664",
+        "https://bosworthtoller.com/23251",
+        "https://www.oed.com/dictionary/mourner_n1?tab=factsheet#35770166",
+        "https://www.oed.com/dictionary/mournful_adj?tab=meaning_and_use#35770754",
+        "https://www.oed.com/dictionary/mournful_adj?tab=pronunciation#35770754"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/mourn#etymonline_v_18433",
-      "https://www.merriam-webster.com/dictionary/mourn#dictionary-entry-1",
-      "https://www.oed.com/dictionary/mourn_v1?tab=factsheet#35768001",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED28664",
-      "https://bosworthtoller.com/23251",
-      "https://www.oed.com/dictionary/mourner_n1?tab=factsheet#35770166",
-      "https://www.oed.com/dictionary/mournful_adj?tab=meaning_and_use#35770754",
-      "https://www.oed.com/dictionary/mournful_adj?tab=pronunciation#35770754"
-    ]
+    }
   }
 ]

@@ -1,46 +1,73 @@
 [
   {
-    "name": "park",
-    "etymology": [
-      {
-        "name": "park",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to park",
+      "conjugations": {
+        "thirdPerson": "cs",
+        "pastTense": "ed",
+        "progressive": "ing"
       },
-      {
-        "name": "parq -cs -ed -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "park",
+        "parq -cs -ed -ing"
+      ]
+    },
+    "standard": {
+      "name": "to park",
+      "etymology": [
+        {
+          "name": "park",
+          "origin": "Modern English"
+        },
+        {
+          "name": "parq -cs -ed -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/park#etymonline_v_7220",
+        "https://www.etymonline.com/word/park#etymonline_v_7219"
+      ],
+      "conjugations": {
+        "thirdPerson": "cs",
+        "pastTense": "ed",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/park#etymonline_v_7220",
-      "https://www.etymonline.com/word/park#etymonline_v_7219"
-    ]
+    }
   },
   {
-    "name": "park",
-    "etymology": [
-      {
-        "name": "parc",
-        "origin": "Old French"
-      },
-      {
-        "name": "park",
-        "origin": "Modern English"
-      },
-      {
-        "name": "parc -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/park#etymonline_v_7219",
-      "https://anglo-norman.net/entry/parc"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "park",
+      "etymology": [
+        {
+          "name": "parc",
+          "origin": "Old French"
+        },
+        {
+          "name": "park",
+          "origin": "Modern English"
+        },
+        {
+          "name": "parc -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/park#etymonline_v_7219",
+        "https://anglo-norman.net/entry/parc"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   }
 ]

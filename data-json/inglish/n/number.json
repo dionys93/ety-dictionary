@@ -1,60 +1,86 @@
 [
   {
-    "name": "number",
-    "etymology": [
-      {
-        "name": "numerus",
-        "origin": "Latin"
-      },
-      {
-        "name": "nombre",
-        "origin": "Old French"
-      },
-      {
-        "name": "number",
-        "origin": "Modern English"
-      },
-      {
-        "name": "nombre, nombers",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/number#etymonline_v_9871",
-      "https://www.oed.com/dictionary/number_n?tab=pronunciation",
-      "https://www.merriam-webster.com/dictionary/number#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29697",
-      "https://anglo-norman.net/entry/nombre",
-      "https://latin-dictionary.net/definition/28100/numerus-numeri"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "number",
+      "etymology": [
+        {
+          "name": "numerus",
+          "origin": "Latin"
+        },
+        {
+          "name": "nombre",
+          "origin": "Old French"
+        },
+        {
+          "name": "number",
+          "origin": "Modern English"
+        },
+        {
+          "name": "nombre, nombers",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/number#etymonline_v_9871",
+        "https://www.oed.com/dictionary/number_n?tab=pronunciation",
+        "https://www.merriam-webster.com/dictionary/number#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29697",
+        "https://anglo-norman.net/entry/nombre",
+        "https://latin-dictionary.net/definition/28100/numerus-numeri"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to number",
-    "etymology": [
-      {
-        "name": "nombre, nombrer",
-        "origin": "Old French"
+    "verbDetails": {
+      "infinitive": "to number",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d"
       },
-      {
-        "name": "to number",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta nombre -s -d nombering",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "nombre, nombrer",
+        "to number",
+        "ta nombre -s -d nombering"
+      ]
+    },
+    "standard": {
+      "name": "to number",
+      "etymology": [
+        {
+          "name": "nombre, nombrer",
+          "origin": "Old French"
+        },
+        {
+          "name": "to number",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta nombre -s -d nombering",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/number#etymonline_v_42502",
+        "https://www.oed.com/dictionary/number_v?tab=factsheet#33924653",
+        "https://www.merriam-webster.com/dictionary/number#dictionary-entry-2",
+        "https://anglo-norman.net/entry/nombrer"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/number#etymonline_v_42502",
-      "https://www.oed.com/dictionary/number_v?tab=factsheet#33924653",
-      "https://www.merriam-webster.com/dictionary/number#dictionary-entry-2",
-      "https://anglo-norman.net/entry/nombrer"
-    ]
+    }
   }
 ]

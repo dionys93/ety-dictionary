@@ -1,53 +1,67 @@
 [
   {
-    "name": "litter",
-    "etymology": [
-      {
-        "name": "lectus",
-        "origin": "Latin"
-      },
-      {
-        "name": "lectaria",
-        "origin": "Medieval Latin"
-      },
-      {
-        "name": "litiere, litere",
-        "origin": "Old French"
-      },
-      {
-        "name": "litter",
-        "origin": "Modern English"
-      },
-      {
-        "name": "litar -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/litter",
-      "https://www.oed.com/dictionary/litter_n?tab=factsheet#38980499",
-      "https://anglo-norman.net/entry/litere",
-      "https://latin-dictionary.net/definition/25436/lectus-lecti"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "litter",
+      "etymology": [
+        {
+          "name": "lectus",
+          "origin": "Latin"
+        },
+        {
+          "name": "lectaria",
+          "origin": "Medieval Latin"
+        },
+        {
+          "name": "litiere, litere",
+          "origin": "Old French"
+        },
+        {
+          "name": "litter",
+          "origin": "Modern English"
+        },
+        {
+          "name": "litar -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/litter",
+        "https://www.oed.com/dictionary/litter_n?tab=factsheet#38980499",
+        "https://anglo-norman.net/entry/litere",
+        "https://latin-dictionary.net/definition/25436/lectus-lecti"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to litter",
-    "etymology": [
-      {
-        "name": "to litter",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta litare -s -d -ing",
-        "origin": "Inglish"
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/litter",
-      "https://www.oed.com/dictionary/litter_v?tab=factsheet#38981875"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "unknown"
+    },
+    "standard": {
+      "name": "to litter",
+      "etymology": [
+        {
+          "name": "to litter",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta litare -s -d -ing",
+          "origin": "Inglish"
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/litter",
+        "https://www.oed.com/dictionary/litter_v?tab=factsheet#38981875"
+      ]
+    }
   }
 ]

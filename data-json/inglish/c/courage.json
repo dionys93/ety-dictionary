@@ -1,66 +1,79 @@
 [
   {
-    "name": "courage",
-    "etymology": [
-      {
-        "name": "cor",
-        "origin": "Latin"
-      },
-      {
-        "name": "coraticum",
-        "origin": "Vulgar Latin"
-      },
-      {
-        "name": "corage",
-        "origin": "Old French"
-      },
-      {
-        "name": "courage",
-        "origin": "Middle English"
-      },
-      {
-        "name": "cûrage",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/courage#etymonline_v_19178",
-      "https://www.anglo-norman.net/entry/corage",
-      "https://latin-dictionary.net/definition/14215/cor-cordis",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9682"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "courage",
+      "etymology": [
+        {
+          "name": "cor",
+          "origin": "Latin"
+        },
+        {
+          "name": "coraticum",
+          "origin": "Vulgar Latin"
+        },
+        {
+          "name": "corage",
+          "origin": "Old French"
+        },
+        {
+          "name": "courage",
+          "origin": "Middle English"
+        },
+        {
+          "name": "cûrage",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/courage#etymonline_v_19178",
+        "https://www.anglo-norman.net/entry/corage",
+        "https://latin-dictionary.net/definition/14215/cor-cordis",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9682"
+      ],
+      "number": "singular"
+    }
   },
   {
-    "name": "courageous",
-    "etymology": [
-      {
-        "name": "corage, corageus, corajos",
-        "origin": "Old French"
-      },
-      {
-        "name": "corageous",
-        "origin": "Inglish"
-      },
-      {
-        "name": "courageous",
-        "origin": "Modern English"
-      },
-      {
-        "name": "curâgioʃ -sly -sness",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/courageous#etymonline_v_28988",
-      "https://www.merriam-webster.com/dictionary/courageous#word-history",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9686",
-      "https://www.anglo-norman.net/entry/corajus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "courageous",
+      "etymology": [
+        {
+          "name": "corage, corageus, corajos",
+          "origin": "Old French"
+        },
+        {
+          "name": "corageous",
+          "origin": "Inglish"
+        },
+        {
+          "name": "courageous",
+          "origin": "Modern English"
+        },
+        {
+          "name": "curâgioʃ -sly -sness",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/courageous#etymonline_v_28988",
+        "https://www.merriam-webster.com/dictionary/courageous#word-history",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9686",
+        "https://www.anglo-norman.net/entry/corajus"
+      ]
+    }
   }
 ]

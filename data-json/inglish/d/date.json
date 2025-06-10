@@ -1,118 +1,160 @@
 [
   {
-    "name": "date",
-    "etymology": [
-      {
-        "name": "δάκτυλος",
-        "origin": "Ancient Greek"
-      },
-      {
-        "name": "dactylus",
-        "origin": "Latin"
-      },
-      {
-        "name": "datil",
-        "origin": "Inglish"
-      },
-      {
-        "name": "date",
-        "origin": "Old French"
-      },
-      {
-        "name": "daite, daits",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/date#etymonline_v_784",
-      "https://www.merriam-webster.com/dictionary/date#dictionary-entry-1",
-      "https://www.oed.com/dictionary/date_n1?tab=factsheet#7467562",
-      "https://www.anglo-norman.net/entry/date_2",
-      "https://latin-dictionary.net/definition/15556/dactylus-dactyli",
-      "https://lsj.gr/wiki/%CE%B4%CE%AC%CE%BA%CF%84%CF%85%CE%BB%CE%BF%CF%82"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "date",
+      "etymology": [
+        {
+          "name": "δάκτυλος",
+          "origin": "Ancient Greek"
+        },
+        {
+          "name": "dactylus",
+          "origin": "Latin"
+        },
+        {
+          "name": "datil",
+          "origin": "Inglish"
+        },
+        {
+          "name": "date",
+          "origin": "Old French"
+        },
+        {
+          "name": "daite, daits",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/date#etymonline_v_784",
+        "https://www.merriam-webster.com/dictionary/date#dictionary-entry-1",
+        "https://www.oed.com/dictionary/date_n1?tab=factsheet#7467562",
+        "https://www.anglo-norman.net/entry/date_2",
+        "https://latin-dictionary.net/definition/15556/dactylus-dactyli",
+        "https://lsj.gr/wiki/%CE%B4%CE%AC%CE%BA%CF%84%CF%85%CE%BB%CE%BF%CF%82"
+      ]
+    }
   },
   {
-    "name": "date",
-    "etymology": [
-      {
-        "name": "dare, datus",
-        "origin": "Latin"
-      },
-      {
-        "name": "date",
-        "origin": "Old French"
-      },
-      {
-        "name": "dâte, dâts",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/date#etymonline_v_783",
-      "https://www.etymonline.com/word/date#etymonline_v_29261",
-      "https://www.merriam-webster.com/dictionary/date#dictionary-entry-2",
-      "https://www.anglo-norman.net/entry/date_1",
-      "https://latin-dictionary.net/definition/18334/do-dare-dedi-datus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "date",
+      "etymology": [
+        {
+          "name": "dare, datus",
+          "origin": "Latin"
+        },
+        {
+          "name": "date",
+          "origin": "Old French"
+        },
+        {
+          "name": "dâte, dâts",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/date#etymonline_v_783",
+        "https://www.etymonline.com/word/date#etymonline_v_29261",
+        "https://www.merriam-webster.com/dictionary/date#dictionary-entry-2",
+        "https://www.anglo-norman.net/entry/date_1",
+        "https://latin-dictionary.net/definition/18334/do-dare-dedi-datus"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to date",
-    "etymology": [
-      {
-        "name": "daten",
-        "origin": "Middle English"
+    "verbDetails": {
+      "infinitive": "to date",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to date",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta dâte -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "daten",
+        "to date",
+        "ta dâte -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to date",
+      "etymology": [
+        {
+          "name": "daten",
+          "origin": "Middle English"
+        },
+        {
+          "name": "to date",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta dâte -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/date#etymonline_v_44371",
+        "https://www.etymonline.com/word/date#etymonline_v_783",
+        "https://www.etymonline.com/word/date#etymonline_v_29261",
+        "https://www.etymonline.com/word/date#etymonline_v_44370",
+        "https://www.merriam-webster.com/dictionary/date#dictionary-entry-3",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10573"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/date#etymonline_v_44371",
-      "https://www.etymonline.com/word/date#etymonline_v_783",
-      "https://www.etymonline.com/word/date#etymonline_v_29261",
-      "https://www.etymonline.com/word/date#etymonline_v_44370",
-      "https://www.merriam-webster.com/dictionary/date#dictionary-entry-3",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10573"
-    ]
+    }
   },
   {
-    "name": "dare, datum, data",
-    "etymology": [
-      {
-        "name": "dare, datum, data",
-        "origin": "Latin"
-      },
-      {
-        "name": "dâtom, dâta",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/data#etymonline_v_782",
-      "https://www.etymonline.com/word/datum#etymonline_v_29276",
-      "https://www.oed.com/dictionary/datum_n?tab=factsheet#7471515",
-      "https://www.oed.com/dictionary/data_n?tab=factsheet#219838686",
-      "https://www.merriam-webster.com/dictionary/data",
-      "https://latin-dictionary.net/definition/18334/do-dare-dedi-datus",
-      "https://latin-dictionary.net/definition/15652/datum-dati"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "dare, datum, data",
+      "etymology": [
+        {
+          "name": "dare, datum, data",
+          "origin": "Latin"
+        },
+        {
+          "name": "dâtom, dâta",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/data#etymonline_v_782",
+        "https://www.etymonline.com/word/datum#etymonline_v_29276",
+        "https://www.oed.com/dictionary/datum_n?tab=factsheet#7471515",
+        "https://www.oed.com/dictionary/data_n?tab=factsheet#219838686",
+        "https://www.merriam-webster.com/dictionary/data",
+        "https://latin-dictionary.net/definition/18334/do-dare-dedi-datus",
+        "https://latin-dictionary.net/definition/15652/datum-dati"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   }
 ]

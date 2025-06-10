@@ -1,100 +1,143 @@
 [
   {
-    "name": "corn",
-    "etymology": [
-      {
-        "name": "cornu",
-        "origin": "Latin"
-      },
-      {
-        "name": "corne",
-        "origin": "Old French"
-      },
-      {
-        "name": "corn",
-        "origin": "Modern English"
-      },
-      {
-        "name": "cône, côns",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/corn#etymonline_v_19082",
-      "https://www.merriam-webster.com/dictionary/corn#dictionary-entry-3",
-      "https://www.anglo-norman.net/entry/corn_1",
-      "https://latin-dictionary.net/definition/14325/cornu-cornus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "corn",
+      "etymology": [
+        {
+          "name": "cornu",
+          "origin": "Latin"
+        },
+        {
+          "name": "corne",
+          "origin": "Old French"
+        },
+        {
+          "name": "corn",
+          "origin": "Modern English"
+        },
+        {
+          "name": "cône, côns",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/corn#etymonline_v_19082",
+        "https://www.merriam-webster.com/dictionary/corn#dictionary-entry-3",
+        "https://www.anglo-norman.net/entry/corn_1",
+        "https://latin-dictionary.net/definition/14325/cornu-cornus"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "kernel",
-    "etymology": [
-      {
-        "name": "cyrnel",
-        "origin": "Old English"
-      },
-      {
-        "name": "kernel",
-        "origin": "Middle English"
-      },
-      {
-        "name": "kênle, kênels",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/kernel#etymonline_v_1821",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24349",
-      "https://bosworthtoller.com/7252"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "kernel",
+      "etymology": [
+        {
+          "name": "cyrnel",
+          "origin": "Old English"
+        },
+        {
+          "name": "kernel",
+          "origin": "Middle English"
+        },
+        {
+          "name": "kênle, kênels",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/kernel#etymonline_v_1821",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24349",
+        "https://bosworthtoller.com/7252"
+      ],
+      "gender": "masculine",
+      "number": "plural"
+    }
   },
   {
-    "name": "corn",
-    "etymology": [
-      {
-        "name": "corn",
-        "origin": "Old English"
-      },
-      {
-        "name": "cône",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/corn#etymonline_v_19081",
-      "https://www.merriam-webster.com/dictionary/corn#dictionary-entry-1",
-      "https://bosworthtoller.com/6581"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "corn",
+      "etymology": [
+        {
+          "name": "corn",
+          "origin": "Old English"
+        },
+        {
+          "name": "cône",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/corn#etymonline_v_19081",
+        "https://www.merriam-webster.com/dictionary/corn#dictionary-entry-1",
+        "https://bosworthtoller.com/6581"
+      ],
+      "gender": "masculine",
+      "number": "singular"
+    }
   },
   {
-    "name": "to corn",
-    "etymology": [
-      {
-        "name": "to corn",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to corn",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta cône -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to corn",
+        "ta cône -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to corn",
+      "etymology": [
+        {
+          "name": "to corn",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta cône -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/corn#etymonline_v_53575",
+        "https://www.etymonline.com/word/corn#etymonline_v_19081",
+        "https://www.merriam-webster.com/dictionary/corn#dictionary-entry-2",
+        "https://bosworthtoller.com/6581"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/corn#etymonline_v_53575",
-      "https://www.etymonline.com/word/corn#etymonline_v_19081",
-      "https://www.merriam-webster.com/dictionary/corn#dictionary-entry-2",
-      "https://bosworthtoller.com/6581"
-    ]
+    }
   }
 ]

@@ -1,105 +1,162 @@
 [
   {
-    "name": "to posit",
-    "etymology": [
-      {
-        "name": "ponere, positus",
-        "origin": "Latin"
+    "verbDetails": {
+      "infinitive": "to posit",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "to posit",
-        "origin": "Modern English"
-      },
-      {
-        "name": "ta pósite -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "ponere, positus",
+        "to posit",
+        "ta pósite -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to posit",
+      "etymology": [
+        {
+          "name": "ponere, positus",
+          "origin": "Latin"
+        },
+        {
+          "name": "to posit",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta pósite -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/posit#etymonline_v_18516",
+        "https://www.merriam-webster.com/dictionary/posit",
+        "https://latin-dictionary.net/definition/30897/pono-ponere-posui-positus"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/posit#etymonline_v_18516",
-      "https://www.merriam-webster.com/dictionary/posit",
-      "https://latin-dictionary.net/definition/30897/pono-ponere-posui-positus"
-    ]
+    }
   },
   {
-    "name": "position",
-    "etymology": [
-      {
-        "name": "ponere, positio",
-        "origin": "Latin"
-      },
-      {
-        "name": "posicion",
-        "origin": "Old French"
-      },
-      {
-        "name": "posicioun",
-        "origin": "Middle English"
-      },
-      {
-        "name": "position",
-        "origin": "Modern English"
-      },
-      {
-        "name": "posicion -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/position#etymonline_v_18517",
-      "https://www.merriam-webster.com/dictionary/position#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED34124",
-      "https://anglo-norman.net/entry/posicion",
-      "https://latin-dictionary.net/definition/30897/pono-ponere-posui-positus"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "position",
+      "etymology": [
+        {
+          "name": "ponere, positio",
+          "origin": "Latin"
+        },
+        {
+          "name": "posicion",
+          "origin": "Old French"
+        },
+        {
+          "name": "posicioun",
+          "origin": "Middle English"
+        },
+        {
+          "name": "position",
+          "origin": "Modern English"
+        },
+        {
+          "name": "posicion -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/position#etymonline_v_18517",
+        "https://www.merriam-webster.com/dictionary/position#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED34124",
+        "https://anglo-norman.net/entry/posicion",
+        "https://latin-dictionary.net/definition/30897/pono-ponere-posui-positus"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   },
   {
-    "name": "to position",
-    "etymology": [
-      {
-        "name": "to position",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to position",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta posicione -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to position",
+        "ta posicione -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to position",
+      "etymology": [
+        {
+          "name": "to position",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta posicione -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/position#etymonline_v_47283",
+        "https://www.etymonline.com/word/position#etymonline_v_18517",
+        "https://www.merriam-webster.com/dictionary/position#dictionary-entry-2"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/position#etymonline_v_47283",
-      "https://www.etymonline.com/word/position#etymonline_v_18517",
-      "https://www.merriam-webster.com/dictionary/position#dictionary-entry-2"
-    ]
+    }
   },
   {
-    "name": "positional",
-    "etymology": [
-      {
-        "name": "positional",
-        "origin": "Modern English"
-      },
-      {
-        "name": "posicional -ly",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "positional",
+      "etymology": [
+        {
+          "name": "positional",
+          "origin": "Modern English"
+        },
+        {
+          "name": "posicional -ly",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/positional#etymonline_v_47285",
+        "https://www.etymonline.com/word/position#etymonline_v_18517",
+        "https://www.etymonline.com/word/-al#etymonline_v_32845",
+        "https://www.merriam-webster.com/dictionary/positional"
+      ],
+      "degrees": {
+        "positive": "posicional",
+        "comparative": "ly"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/positional#etymonline_v_47285",
-      "https://www.etymonline.com/word/position#etymonline_v_18517",
-      "https://www.etymonline.com/word/-al#etymonline_v_32845",
-      "https://www.merriam-webster.com/dictionary/positional"
-    ]
+    }
   }
 ]

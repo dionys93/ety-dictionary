@@ -1,82 +1,115 @@
 [
   {
-    "name": "cape",
-    "etymology": [
-      {
-        "name": "cappa",
-        "origin": "Latin"
-      },
-      {
-        "name": "capa",
-        "origin": "Inglish"
-      },
-      {
-        "name": "cape",
-        "origin": "French"
-      },
-      {
-        "name": "câpe, câps",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cape#etymonline_v_698",
-      "https://www.merriam-webster.com/dictionary/cape#dictionary-entry-2",
-      "https://bosworthtoller.com/5751",
-      "https://www.collinsdictionary.com/us/dictionary/french-english/cape",
-      "https://www.collinsdictionary.com/us/dictionary/spanish-english/capa",
-      "https://latin-dictionary.net/definition/8037/cappa-cappae"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "cape",
+      "etymology": [
+        {
+          "name": "cappa",
+          "origin": "Latin"
+        },
+        {
+          "name": "capa",
+          "origin": "Inglish"
+        },
+        {
+          "name": "cape",
+          "origin": "French"
+        },
+        {
+          "name": "câpe, câps",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "masculine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cape#etymonline_v_698",
+        "https://www.merriam-webster.com/dictionary/cape#dictionary-entry-2",
+        "https://bosworthtoller.com/5751",
+        "https://www.collinsdictionary.com/us/dictionary/french-english/cape",
+        "https://www.collinsdictionary.com/us/dictionary/spanish-english/capa",
+        "https://latin-dictionary.net/definition/8037/cappa-cappae"
+      ]
+    }
   },
   {
-    "name": "to cape",
-    "etymology": [
-      {
-        "name": "to cape",
-        "origin": "Modern English"
+    "verbDetails": {
+      "infinitive": "to cape",
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       },
-      {
-        "name": "ta câpe -s -d -ing",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "verb"
-        ]
+      "etymology": [
+        "to cape",
+        "ta câpe -s -d -ing"
+      ]
+    },
+    "standard": {
+      "name": "to cape",
+      "etymology": [
+        {
+          "name": "to cape",
+          "origin": "Modern English"
+        },
+        {
+          "name": "ta câpe -s -d -ing",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "verb"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.merriam-webster.com/dictionary/cape#dictionary-entry-3"
+      ],
+      "conjugations": {
+        "thirdPerson": "s",
+        "pastTense": "d",
+        "progressive": "ing"
       }
-    ],
-    "sources": [
-      "https://www.merriam-webster.com/dictionary/cape#dictionary-entry-3"
-    ]
+    }
   },
   {
-    "name": "cape",
-    "etymology": [
-      {
-        "name": "caput",
-        "origin": "Latin"
-      },
-      {
-        "name": "cap",
-        "origin": "Old French"
-      },
-      {
-        "name": "cape",
-        "origin": "Modern English"
-      },
-      {
-        "name": "câpe -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "feminine noun"
-        ]
-      }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/cape#etymonline_v_699",
-      "https://www.merriam-webster.com/dictionary/cape#dictionary-entry-1",
-      "https://latin-dictionary.net/definition/8130/caput-capitis"
-    ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "noun"
+    },
+    "standard": {
+      "name": "cape",
+      "etymology": [
+        {
+          "name": "caput",
+          "origin": "Latin"
+        },
+        {
+          "name": "cap",
+          "origin": "Old French"
+        },
+        {
+          "name": "cape",
+          "origin": "Modern English"
+        },
+        {
+          "name": "câpe -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "feminine noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/cape#etymonline_v_699",
+        "https://www.merriam-webster.com/dictionary/cape#dictionary-entry-1",
+        "https://latin-dictionary.net/definition/8130/caput-capitis"
+      ],
+      "gender": "feminine",
+      "number": "plural"
+    }
   }
 ]

@@ -1,34 +1,45 @@
 [
   {
-    "name": "dear",
-    "etymology": [
-      {
-        "name": "deore, diore, dyre",
-        "origin": "Old English"
-      },
-      {
-        "name": "dere",
-        "origin": "Middle English"
-      },
-      {
-        "name": "dear",
-        "origin": "Modern English"
-      },
-      {
-        "name": "diar -er -est -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "adjective",
-          "noun"
-        ]
+    "verbDetails": {
+      "notAVerb": true,
+      "detectedAs": "adjective"
+    },
+    "standard": {
+      "name": "dear",
+      "etymology": [
+        {
+          "name": "deore, diore, dyre",
+          "origin": "Old English"
+        },
+        {
+          "name": "dere",
+          "origin": "Middle English"
+        },
+        {
+          "name": "dear",
+          "origin": "Modern English"
+        },
+        {
+          "name": "diar -er -est -s",
+          "origin": "Inglish",
+          "part-of-speech": [
+            "adjective",
+            "noun"
+          ]
+        }
+      ],
+      "sources": [
+        "https://www.etymonline.com/word/dear#etymonline_v_816",
+        "https://www.oed.com/dictionary/dear_adj1?tab=factsheet#7272175",
+        "https://www.merriam-webster.com/dictionary/dear#dictionary-entry-1",
+        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED11195",
+        "https://bosworthtoller.com/7621"
+      ],
+      "degrees": {
+        "positive": "diar",
+        "comparative": "er",
+        "superlative": "est"
       }
-    ],
-    "sources": [
-      "https://www.etymonline.com/word/dear#etymonline_v_816",
-      "https://www.oed.com/dictionary/dear_adj1?tab=factsheet#7272175",
-      "https://www.merriam-webster.com/dictionary/dear#dictionary-entry-1",
-      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED11195",
-      "https://bosworthtoller.com/7621"
-    ]
+    }
   }
 ]
