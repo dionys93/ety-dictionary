@@ -1,10 +1,10 @@
-# Etymology of Inglish and Other Alternative Orthographies
+# Etymology Text Processing Pipeline
 
-A modular, functional text processing pipeline for transforming etymology data from text to structured JSON, with comprehensive analysis tools.
+A modular, functional text processing pipeline for transforming etymology data from text to structured JSON, built with TypeScript and functional programming principles.
 
 ## Overview
 
-This project provides both text and JSON data types for etymology processing, built using functional programming principles with monadic error handling for robust file operations.
+This project provides a highly composable set of functions for processing etymology text files using a functional programming approach with monadic error handling. Each component is a focused function that can be combined with others to create various text processing pipelines.
 
 ## Prerequisites
 
@@ -12,112 +12,123 @@ This project provides both text and JSON data types for etymology processing, bu
 npm i -g tsx
 ```
 
-## Core Features
+## Core Architecture
 
+### Functional Programming Principles
+- **Pure Functions**: All transformers are pure functions with no side effects
+- **Monadic Error Handling**: Result and Maybe monads for safe operations
+- **Immutable Data**: All data structures are readonly and immutable
+
+### Key Features
 - **Modular Pipeline Architecture**: Composable functions for text processing
 - **Multiple Output Formats**: Standard, stanza, compact, and multi-format pipelines
-- **Safe Error Handling**: Result monads for robust file operations
-- **Analysis Tools**: Part-of-speech and root word analysis capabilities
+- **Safe Error Handling**: Result monads prevent crashes from file I/O errors
+- **Centralized Path Configuration**: All file paths managed in `src/config/paths.ts`
 - **Dry Run Mode**: Preview processing without creating files
+- **Type Safety**: Comprehensive TypeScript with branded types available
+
+## Directory Structure
+
+```
+src/
+├── config/                    # Configuration modules
+│   ├── language-map.ts        # Language code to name mappings
+│   ├── pos-map.ts            # Part-of-speech abbreviation mappings
+│   └── paths.ts              # ⭐ Centralized path configuration
+├── custom/                    # Custom transformation functions
+│   └── custom-transformers.ts
+├── monads/                    # Functional programming utilities
+│   ├── maybe.ts              # Maybe monad for nullable values
+│   ├── result.ts             # Result monad for error handling
+│   └── index.ts              # Consolidated exports
+├── pipeline/                  # Pipeline composition and builders
+│   ├── pipeline-factory.ts   # Pipeline creation and configuration
+│   └── pipeline-visualizer.ts # Debug visualization tools
+├── processors/                # I/O and file processing
+│   ├── directory-processor.ts # Recursive directory processing
+│   └── file-processor.ts     # Individual file processing
+├── transformations/           # Generic text processing utilities
+│   └── text-to-lines.ts      # Text parsing and line grouping
+├── transformers/              # Core transformation functions
+│   ├── entry-groupers.ts     # Group lines into logical entries
+│   ├── entry-transformers.ts # Convert entries to final output
+│   ├── line-parsers.ts       # Parse individual lines
+│   ├── name-extractors.ts    # Extract word names from entries
+│   ├── safe-transformers.ts  # Error-safe wrapper functions
+│   └── text-transformers.ts  # Character-level transformations
+├── types/                     # TypeScript definitions
+│   ├── branded-types.ts      # Type-safe branded strings
+│   ├── pipeline-types.ts     # Core pipeline type definitions
+│   └── text.ts              # Pure text data types
+├── utils/                     # Helper utilities
+│   ├── console-utils.ts      # Logging and debug functions
+│   └── file-utils.ts         # File system utilities
+└── index.ts                  # Main exports
+```
 
 ## Usage
 
-### Main Text Processing
+### Basic Text Processing
 
 Process etymology text files and convert them to structured JSON:
 
 ```bash
-# Basic usage - process all files in a language directory
+# Process all files in a language directory with standard pipeline
 tsx main.ts [language]
 
-# Use specific pipeline
+# Use specific pipeline type
 tsx main.ts [language] [pipeline-type]
 
 # Available pipeline types: standard, stanza, compact, multi, lowercase
-tsx main.ts inglish compact
 ```
 
-#### Pipeline Options
+### Pipeline Options
 
-- **standard**: Full etymology with sources and part-of-speech
-- **stanza**: Simple modern/inglish word pairs
-- **compact**: Condensed format with language counts
-- **multi**: Combines multiple formats in one output
+- **standard**: Full etymology with sources and part-of-speech data
+- **stanza**: Simple modern/inglish word pairs for poetry applications  
+- **compact**: Condensed format with language counts and statistics
+- **multi**: Combines multiple formats in one output file
 - **lowercase**: Standard format with lowercase transformations
 
-#### Advanced Options
+### Advanced Options
 
 ```bash
-# Dry run - see what would be processed without creating files
-tsx main.ts [language] --dry-run
-tsx main.ts [language] -d
+# Dry run - preview what would be processed without creating files
+tsx main.ts inglish --dry-run
+tsx main.ts inglish -d
 
-# Dry run with preview of output
-tsx main.ts [language] --dry-run --preview
-tsx main.ts [language] -d -p
+# Dry run with output preview
+tsx main.ts inglish --dry-run --preview  
+tsx main.ts inglish -d -p
 
 # Process specific number of sample files
-tsx main.ts [language] --dry-run --sample 3
-tsx main.ts [language] -d -s 3
+tsx main.ts inglish --dry-run --sample 3
+tsx main.ts inglish -d -s 3
 
-# Process a specific file
-tsx main.ts [language] --dry-run --file path/to/file.txt
-tsx main.ts [language] -d -f path/to/file.txt
+# Process a specific file only
+tsx main.ts inglish --file path/to/file.txt
+tsx main.ts inglish -f path/to/file.txt
 
-# Combine options
+# Combine options for targeted testing
 tsx main.ts inglish compact --dry-run --preview
-tsx main.ts inglish -d -p -s 5
+tsx main.ts inglish -d -p -f early.txt
 ```
 
-#### Examples
+### Practical Examples
 
 ```bash
 # Process all Inglish files with standard pipeline
 tsx main.ts inglish
 
-# Process with compact format
-tsx main.ts inglish compact
+# Test compact format on 5 sample files
+tsx main.ts inglish compact -d -s 5
 
-# Preview what would be processed
-tsx main.ts inglish compact --dry-run
-
-# Test specific file with preview
+# Preview specific file transformation
 tsx main.ts inglish --dry-run --preview --file early.txt
 
-# Process 3 sample files in dry run mode
-tsx main.ts inglish compact -d -s 3
+# Quick test of multi-format pipeline
+tsx main.ts inglish multi -d -p
 ```
-
-### Text Analysis
-
-Analyze your text files for part-of-speech patterns and root word distributions:
-
-```bash
-# Analyze both POS and root words (default)
-tsx summarize.ts
-
-# Analyze only part-of-speech data
-tsx summarize.ts --mode pos
-tsx summarize.ts -m pos
-
-# Analyze only root words
-tsx summarize.ts --mode roots
-tsx summarize.ts -m roots
-
-# Verbose output with detailed information
-tsx summarize.ts --verbose
-tsx summarize.ts -v
-
-# Combine options
-tsx summarize.ts -m pos -v
-```
-
-#### Analysis Output
-
-The analysis generates:
-- **pos-summary.json**: Part-of-speech statistics and distributions
-- **root-words.json**: Root word analysis by language
-- Console output with summaries and examples
 
 ## Input File Format
 
@@ -133,10 +144,10 @@ https://source-url-1
 https://source-url-2
 ```
 
-Example:
+**Example:**
 ```
 ærlice [OE]
-erli [MI]
+erli [MI]  
 early [ME]
 êly -ier -iest (adj, adv)
 https://www.etymonline.com/word/early
@@ -172,7 +183,7 @@ https://www.etymonline.com/word/early
 }
 ```
 
-### Compact Format
+### Compact Format  
 ```json
 {
   "compact": {
@@ -183,61 +194,105 @@ https://www.etymonline.com/word/early
 }
 ```
 
-## Project Structure
+## Data Flow
+
+The functional pipeline processes data through these stages:
 
 ```
-├── main.ts              # Main processing script (uses centralized paths)
-├── summarize.ts          # Analysis script (uses centralized paths)
-├── src/
-│   ├── monads/          # Functional programming utilities (Result, Maybe)
-│   ├── config/          # Configuration modules
-│   │   ├── paths.ts     # ⭐ Centralized path configuration
-│   │   ├── language-map.ts # Language code mappings
-│   │   └── pos-map.ts   # Part-of-speech mappings
-│   ├── pipeline/        # Pipeline composition and builders
-│   ├── processors/      # I/O and file processing
-│   ├── transformers/    # Core transformation functions
-│   ├── custom/          # Custom transformers
-│   ├── types/           # TypeScript definitions
-│   └── utils/           # Helper utilities
-├── data-text/           # Input text files (configurable)
-├── data-json/           # Output JSON files (configurable)
-└── analysis/            # Analysis results (configurable)
+Raw Text → Text Transform → Line Parser → Entry Grouper → Name Extractor → Entry Transformer → JSON Output
+                                                                        ↘ Custom Transformers ↗
 ```
 
-## Architecture Features
+Each stage is a pure function that can be composed with others or replaced independently.
 
-- **Centralized Path Management**: All file paths configured in `src/config/paths.ts`
-- **Functional Programming**: Uses Result monads for safe error handling
-- **Function Declarations**: All code uses hoisted function declarations (no arrow functions)
-- **Modular Design**: Each module has a single, well-defined responsibility
-- **Type Safety**: Full TypeScript support with branded types available
+## Custom Pipeline Creation
+
+Create specialized pipelines for your use cases:
+
+```typescript
+import { createPipeline, EntryGroup } from './src'
+
+// Custom transformer for verb conjugation patterns
+function verbConjugationTransformer(group: EntryGroup) {
+  const modernLine = group.etymologyLines.find(line => line.language === 'ME')
+  const ingLine = group.etymologyLines.find(line => 
+    line.text && line.text.includes('-ing'))
+  
+  return {
+    verb: modernLine?.text || null,
+    hasConjugation: !!ingLine
+  }
+}
+
+// Create pipeline with custom transformer
+const verbPipeline = createPipeline({
+  customTransformers: {
+    verbConjugation: verbConjugationTransformer
+  }
+})
+```
 
 ## Error Handling
 
-The project uses Result monads for safe error handling:
+The project uses Result monads for comprehensive error handling:
 
-- **Graceful Failures**: Individual file errors don't stop processing
-- **Detailed Error Messages**: Clear indication of what went wrong
-- **Partial Success Reporting**: Shows both successful and failed operations
+- **Graceful Degradation**: Individual file errors don't stop batch processing
+- **Detailed Error Messages**: Clear indication of what went wrong and where
+- **Partial Success Reporting**: Shows both successful and failed operations  
 - **Safe File Operations**: No crashes from permission or I/O errors
+- **Functional Error Propagation**: Errors flow through the pipeline safely
 
 ## Language Support
 
 Currently configured for:
-- Old English (OE)
-- Middle English (MI) 
-- Modern English (ME)
-- Latin (L)
-- Old French (OF)
+- Old English (OE), Middle English (MI), Modern English (ME)
+- Latin (L), Old French (OF), French (FR)
+- German (GR), Italian (IT), Portuguese (PR)
+- Greek variants (AG, EG), Hebrew (HE), Arabic (AR)
 - And many more (see `src/config/language-map.ts`)
+
+## Path Configuration
+
+All file paths are centrally managed in `src/config/paths.ts`:
+
+```typescript
+// Default configuration
+const DEFAULT_PATHS = {
+  base: {
+    dataText: 'data-text',      // Input files
+    dataJson: 'data-json',      // Output files  
+    analysis: 'analysis'        // Analysis results
+  },
+  languages: {
+    inglish: 'data-text/inglish'
+  }
+}
+```
+
+This enables:
+- Environment-specific configurations (dev/test/prod)
+- Easy path modifications without code changes
+- Consistent path handling across all modules
 
 ## Contributing
 
-The modular architecture makes it easy to:
-- Add new pipeline types
-- Create custom transformers
-- Extend language support
-- Add new analysis modes
+The functional architecture makes it easy to:
+- **Add New Pipelines**: Create new combinations of existing transformers
+- **Create Custom Transformers**: Write focused functions for specific output formats
+- **Extend Language Support**: Add mappings in `src/config/language-map.ts`
+- **Add New Analysis**: Build on the Result monad foundation
 
-See the example `createCustomPipeline()` function in `main.ts` for guidance on extending functionality.
+### Development Guidelines
+- Use function declarations, not arrow functions
+- No semicolons after function definitions  
+- Comment all non-trivial functionality
+- Return Result types for operations that can fail
+- Keep functions pure and focused on single responsibilities
+
+## Architecture Benefits
+
+- **Composability**: Mix and match transformers to create new pipelines
+- **Testability**: Pure functions are easy to unit test
+- **Reliability**: Monadic error handling prevents runtime crashes
+- **Maintainability**: Single-responsibility modules with clear interfaces
+- **Extensibility**: Add new features without modifying existing code
