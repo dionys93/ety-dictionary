@@ -42,3 +42,25 @@ export interface TextProcessingPipeline {
   entryTransformer: EntryTransformer;
   customTransformers: Record<string, CustomTransformer>;
 }
+
+// Add these to your existing pipeline-types.ts if needed
+export interface VerbEntry extends WordEntry {
+  conjugations?: {
+    thirdPerson?: string
+    pastTense?: string 
+    progressive?: string
+  }
+}
+
+export interface NounEntry extends WordEntry {
+  gender?: 'masculine' | 'feminine' | 'neuter'
+  number?: 'singular' | 'plural'
+}
+
+export interface AdjectiveEntry extends WordEntry {
+  degrees?: {
+    positive?: string
+    comparative?: string  
+    superlative?: string
+  }
+}
