@@ -1,31 +1,25 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "pussy",
-      "etymology": [
-        {
-          "name": "pussy",
-          "origin": "Modern English"
-        },
-        {
-          "name": "pûssie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/pussy#etymonline_v_2916",
-        "https://www.etymonline.com/word/pussy#etymonline_v_2917",
-        "https://www.etymonline.com/word/puss#etymonline_v_2914"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "pussy",
+    "etymology": [
+      {
+        "name": "pussy",
+        "origin": "Modern English"
+      },
+      {
+        "name": "pûssie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/pussy#etymonline_v_2916",
+      "https://www.etymonline.com/word/pussy#etymonline_v_2917",
+      "https://www.etymonline.com/word/puss#etymonline_v_2914"
+    ]
   }
 ]

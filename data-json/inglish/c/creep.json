@@ -1,134 +1,98 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to creep",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to creep",
+    "etymology": [
+      {
+        "name": "creopan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "creopan",
-        "crepen",
-        "to creep",
-        "ta criepe -s crept -ing"
-      ]
-    },
-    "standard": {
-      "name": "to creep",
-      "etymology": [
-        {
-          "name": "creopan",
-          "origin": "Old English"
-        },
-        {
-          "name": "crepen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to creep",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta criepe -s crept -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "intransitive verb"
-          ]
+      {
+        "name": "crepen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to creep",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta criepe -s crept -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "intransitive verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta criepes"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/creep#etymonline_v_331",
-        "https://www.merriam-webster.com/dictionary/creep#dictionary-entry-1",
-        "https://www.oed.com/dictionary/creep_v?tab=factsheet#7770215",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10271",
-        "https://bosworthtoller.com/6700"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/creep#etymonline_v_331",
+      "https://www.merriam-webster.com/dictionary/creep#dictionary-entry-1",
+      "https://www.oed.com/dictionary/creep_v?tab=factsheet#7770215",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10271",
+      "https://bosworthtoller.com/6700"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to creep",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to creep",
+    "etymology": [
+      {
+        "name": "creopan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "creopan",
-        "crepen",
-        "to creep",
-        "ta criepe -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to creep",
-      "etymology": [
-        {
-          "name": "creopan",
-          "origin": "Old English"
-        },
-        {
-          "name": "crepen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to creep",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta criepe -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "transitive verb",
-            "intransitive verb"
-          ]
+      {
+        "name": "crepen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to creep",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta criepe -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "transitive verb",
+          "intransitive verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta criepes",
+          "pastTense": "ta crieped",
+          "progressive": "ta crieping"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/creep#etymonline_v_331",
-        "https://www.merriam-webster.com/dictionary/creep#dictionary-entry-1",
-        "https://www.oed.com/dictionary/creep_v?tab=factsheet#7770215",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10271",
-        "https://bosworthtoller.com/6700"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/creep#etymonline_v_331",
+      "https://www.merriam-webster.com/dictionary/creep#dictionary-entry-1",
+      "https://www.oed.com/dictionary/creep_v?tab=factsheet#7770215",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10271",
+      "https://bosworthtoller.com/6700"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "creep",
-      "etymology": [
-        {
-          "name": "creep",
-          "origin": "Modern English"
-        },
-        {
-          "name": "criep -s -y",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/creep#etymonline_v_46134",
-        "https://www.etymonline.com/word/creep#etymonline_v_331",
-        "https://www.etymonline.com/word/creepy#etymonline_v_29045",
-        "https://www.oed.com/dictionary/creep_n?tab=factsheet#7769360",
-        "https://www.merriam-webster.com/dictionary/creep#dictionary-entry-2"
-      ],
-      "gender": "masculine",
-      "number": "singular"
-    }
+    "name": "creep",
+    "etymology": [
+      {
+        "name": "creep",
+        "origin": "Modern English"
+      },
+      {
+        "name": "criep -s -y",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/creep#etymonline_v_46134",
+      "https://www.etymonline.com/word/creep#etymonline_v_331",
+      "https://www.etymonline.com/word/creepy#etymonline_v_29045",
+      "https://www.oed.com/dictionary/creep_n?tab=factsheet#7769360",
+      "https://www.merriam-webster.com/dictionary/creep#dictionary-entry-2"
+    ]
   }
 ]

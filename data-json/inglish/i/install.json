@@ -1,119 +1,90 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to install",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to install",
+    "etymology": [
+      {
+        "name": "installare",
+        "origin": "Medieval Latin"
       },
-      "etymology": [
-        "installare",
-        "installer",
-        "installen",
-        "to install",
-        "to installe -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to install",
-      "etymology": [
-        {
-          "name": "installare",
-          "origin": "Medieval Latin"
-        },
-        {
-          "name": "installer",
-          "origin": "Old French"
-        },
-        {
-          "name": "installen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to install",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to installe -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "installer",
+        "origin": "Old French"
+      },
+      {
+        "name": "installen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to install",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to installe -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to installes",
+          "pastTense": "to installed",
+          "progressive": "to installing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/install#etymonline_v_9345",
-        "https://www.merriam-webster.com/dictionary/install",
-        "https://www.oed.com/dictionary/install_v1?tab=factsheet#369554",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED23001",
-        "https://anglo-norman.net/entry/installer"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/install#etymonline_v_9345",
+      "https://www.merriam-webster.com/dictionary/install",
+      "https://www.oed.com/dictionary/install_v1?tab=factsheet#369554",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED23001",
+      "https://anglo-norman.net/entry/installer"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "installation",
-      "etymology": [
-        {
-          "name": "installare, installatio",
-          "origin": "Latin"
-        },
-        {
-          "name": "installation",
-          "origin": "Modern English"
-        },
-        {
-          "name": "installâcion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/installation#etymonline_v_34961",
-        "https://www.merriam-webster.com/dictionary/installation",
-        "https://www.oed.com/dictionary/installation_n?tab=factsheet#370026"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "installation",
+    "etymology": [
+      {
+        "name": "installare, installatio",
+        "origin": "Latin"
+      },
+      {
+        "name": "installation",
+        "origin": "Modern English"
+      },
+      {
+        "name": "installâcion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/installation#etymonline_v_34961",
+      "https://www.merriam-webster.com/dictionary/installation",
+      "https://www.oed.com/dictionary/installation_n?tab=factsheet#370026"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "installment  -s (f n)",
-      "etymology": [
-        {
-          "name": "estal, estaler",
-          "origin": "Old French"
-        },
-        {
-          "name": "installment  -s (f n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/installment",
-        "https://www.oed.com/dictionary/instalment_n2?tab=factsheet#370445",
-        "https://www.oed.com/dictionary/instalment_n1?tab=factsheet#370276",
-        "https://www.littre.org/definition/%C3%A9tal",
-        "https://anglo-norman.net/entry/estaler_1",
-        "https://anglo-norman.net/entry/estal_1"
-      ]
-    }
+    "name": "installment  -s (f n)",
+    "etymology": [
+      {
+        "name": "estal, estaler",
+        "origin": "Old French"
+      },
+      {
+        "name": "installment  -s (f n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/installment",
+      "https://www.oed.com/dictionary/instalment_n2?tab=factsheet#370445",
+      "https://www.oed.com/dictionary/instalment_n1?tab=factsheet#370276",
+      "https://www.littre.org/definition/%C3%A9tal",
+      "https://anglo-norman.net/entry/estaler_1",
+      "https://anglo-norman.net/entry/estal_1"
+    ]
   }
 ]

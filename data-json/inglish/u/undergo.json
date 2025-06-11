@@ -1,52 +1,38 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to undergo",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to undergo",
+    "etymology": [
+      {
+        "name": "undergan, undergangan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "undergan, undergangan",
-        "undergon, undergangen",
-        "to undergo",
-        "ta ondregoɯe -s ondreɯent ondregòn -ing"
-      ]
-    },
-    "standard": {
-      "name": "to undergo",
-      "etymology": [
-        {
-          "name": "undergan, undergangan",
-          "origin": "Old English"
-        },
-        {
-          "name": "undergon, undergangen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to undergo",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta ondregoɯe -s ondreɯent ondregòn -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "undergon, undergangen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to undergo",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta ondregoɯe -s ondreɯent ondregòn -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta ondregoɯes"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/undergo#etymonline_v_4483",
-        "https://www.merriam-webster.com/dictionary/undergo#dictionary-entry-1",
-        "https://www.oed.com/dictionary/undergo_v?tab=factsheet#16883732",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED48246",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED48255",
-        "https://bosworthtoller.com/32799",
-        "https://bosworthtoller.com/32798"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/undergo#etymonline_v_4483",
+      "https://www.merriam-webster.com/dictionary/undergo#dictionary-entry-1",
+      "https://www.oed.com/dictionary/undergo_v?tab=factsheet#16883732",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED48246",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED48255",
+      "https://bosworthtoller.com/32799",
+      "https://bosworthtoller.com/32798"
+    ]
   }
 ]

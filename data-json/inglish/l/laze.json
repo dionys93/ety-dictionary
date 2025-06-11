@@ -1,73 +1,48 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "lazy",
-      "etymology": [
-        {
-          "name": "lazy",
-          "origin": "Modern English"
-        },
-        {
-          "name": "lâsy -ier -iest -ily -iness",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/lazy#etymonline_v_6611",
-        "https://www.merriam-webster.com/dictionary/lazy#dictionary-entry-1"
-      ],
-      "degrees": {
-        "positive": "sy",
-        "comparative": "ier",
-        "superlative": "iest"
+    "name": "lazy",
+    "etymology": [
+      {
+        "name": "lazy",
+        "origin": "Modern English"
+      },
+      {
+        "name": "lâsy -ier -iest -ily -iness",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/lazy#etymonline_v_6611",
+      "https://www.merriam-webster.com/dictionary/lazy#dictionary-entry-1"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to laze",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to laze",
+    "etymology": [
+      {
+        "name": "to laze",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to laze",
-        "ta lâse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to laze",
-      "etymology": [
-        {
-          "name": "to laze",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta lâse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta lâse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta lâses",
+          "pastTense": "ta lâsed",
+          "progressive": "ta lâsing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/laze#etymonline_v_30694",
-        "https://www.etymonline.com/word/lazy#etymonline_v_6611",
-        "https://www.merriam-webster.com/dictionary/laze"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/laze#etymonline_v_30694",
+      "https://www.etymonline.com/word/lazy#etymonline_v_6611",
+      "https://www.merriam-webster.com/dictionary/laze"
+    ]
   }
 ]

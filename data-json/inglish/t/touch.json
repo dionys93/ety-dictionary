@@ -1,86 +1,64 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to touch",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to touch",
+    "etymology": [
+      {
+        "name": "tochier",
+        "origin": "Old French"
       },
-      "etymology": [
-        "tochier",
-        "touchen",
-        "to touch",
-        "ta toche -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to touch",
-      "etymology": [
-        {
-          "name": "tochier",
-          "origin": "Old French"
-        },
-        {
-          "name": "touchen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to touch",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta toche -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "touchen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to touch",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta toche -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta toches",
+          "pastTense": "ta toched",
+          "progressive": "ta toching"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/touch#etymonline_v_15414",
-        "https://www.oed.com/dictionary/touch_v?tab=factsheet#18086877",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED46559",
-        "https://anglo-norman.net/entry/toucher"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/touch#etymonline_v_15414",
+      "https://www.oed.com/dictionary/touch_v?tab=factsheet#18086877",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED46559",
+      "https://anglo-norman.net/entry/toucher"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "touch",
-      "etymology": [
-        {
-          "name": "toucher, touche",
-          "origin": "Old French"
-        },
-        {
-          "name": "touch",
-          "origin": "Modern English"
-        },
-        {
-          "name": "toch -es",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/touch#etymonline_v_24771",
-        "https://www.oed.com/dictionary/touch_n?tab=meaning_and_use#18083798",
-        "https://anglo-norman.net/entry/tuche_1"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "touch",
+    "etymology": [
+      {
+        "name": "toucher, touche",
+        "origin": "Old French"
+      },
+      {
+        "name": "touch",
+        "origin": "Modern English"
+      },
+      {
+        "name": "toch -es",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/touch#etymonline_v_24771",
+      "https://www.oed.com/dictionary/touch_n?tab=meaning_and_use#18083798",
+      "https://anglo-norman.net/entry/tuche_1"
+    ]
   }
 ]

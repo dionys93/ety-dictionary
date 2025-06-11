@@ -1,41 +1,35 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "deer",
-      "etymology": [
-        {
-          "name": "deor",
-          "origin": "Old English"
-        },
-        {
-          "name": "der",
-          "origin": "Middle English"
-        },
-        {
-          "name": "deer",
-          "origin": "Modern English"
-        },
-        {
-          "name": "dior",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/deer#etymonline_v_894",
-        "https://www.merriam-webster.com/dictionary/deer",
-        "https://www.oed.com/dictionary/deer_n?tab=pronunciation#7171103",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED11188",
-        "https://bosworthtoller.com/7606"
-      ],
-      "gender": "masculine",
-      "number": "singular"
-    }
+    "name": "deer",
+    "etymology": [
+      {
+        "name": "deor",
+        "origin": "Old English"
+      },
+      {
+        "name": "der",
+        "origin": "Middle English"
+      },
+      {
+        "name": "deer",
+        "origin": "Modern English"
+      },
+      {
+        "name": "dior",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/deer#etymonline_v_894",
+      "https://www.merriam-webster.com/dictionary/deer",
+      "https://www.oed.com/dictionary/deer_n?tab=pronunciation#7171103",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED11188",
+      "https://bosworthtoller.com/7606"
+    ]
   }
 ]

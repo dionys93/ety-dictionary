@@ -1,80 +1,58 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to glaze",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to glaze",
+    "etymology": [
+      {
+        "name": "glæs",
+        "origin": "Old English"
       },
-      "etymology": [
-        "glæs",
-        "glas, glasen",
-        "to glaze",
-        "ta glâse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to glaze",
-      "etymology": [
-        {
-          "name": "glæs",
-          "origin": "Old English"
-        },
-        {
-          "name": "glas, glasen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to glaze",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta glâse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "glas, glasen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to glaze",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta glâse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta glâses",
+          "pastTense": "ta glâsed",
+          "progressive": "ta glâsing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/glaze#etymonline_v_6136",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED18709",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED18707",
-        "https://bosworthtoller.com/17180"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/glaze#etymonline_v_6136",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED18709",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED18707",
+      "https://bosworthtoller.com/17180"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "glaze",
-      "etymology": [
-        {
-          "name": "glaze",
-          "origin": "Modern English"
-        },
-        {
-          "name": "glâse -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/glaze#etymonline_v_50856",
-        "https://www.etymonline.com/word/glaze#etymonline_v_6136"
-      ],
-      "number": "plural"
-    }
+    "name": "glaze",
+    "etymology": [
+      {
+        "name": "glaze",
+        "origin": "Modern English"
+      },
+      {
+        "name": "glâse -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/glaze#etymonline_v_50856",
+      "https://www.etymonline.com/word/glaze#etymonline_v_6136"
+    ]
   }
 ]

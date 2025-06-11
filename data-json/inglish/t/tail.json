@@ -1,54 +1,42 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "tail  -s (m n)",
-      "etymology": [
-        {
-          "name": "tægl, tægel",
-          "origin": "Old English"
-        },
-        {
-          "name": "tail  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/tail",
-        "https://www.oed.com/dictionary/tail_n1?tab=factsheet#19150801",
-        "https://www.oed.com/dictionary/tail_n2?tab=factsheet#19156502",
-        "https://bosworthtoller.com/30133"
-      ]
-    }
+    "name": "tail  -s (m n)",
+    "etymology": [
+      {
+        "name": "tægl, tægel",
+        "origin": "Old English"
+      },
+      {
+        "name": "tail  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/tail",
+      "https://www.oed.com/dictionary/tail_n1?tab=factsheet#19150801",
+      "https://www.oed.com/dictionary/tail_n2?tab=factsheet#19156502",
+      "https://bosworthtoller.com/30133"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "to tail",
-      "etymology": [
-        {
-          "name": "tailen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to tail",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta taile -s -d -ing",
-          "origin": "Inglish"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/tail#etymonline_v_4327",
-        "https://www.oed.com/dictionary/tail_v1?tab=factsheet#19157422"
-      ]
-    }
+    "name": "to tail",
+    "etymology": [
+      {
+        "name": "tailen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to tail",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta taile -s -d -ing",
+        "origin": "Inglish"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/tail#etymonline_v_4327",
+      "https://www.oed.com/dictionary/tail_v1?tab=factsheet#19157422"
+    ]
   }
 ]

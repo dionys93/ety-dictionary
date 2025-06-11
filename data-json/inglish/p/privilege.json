@@ -1,95 +1,72 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "privilege",
-      "etymology": [
-        {
-          "name": "privus, privilegium",
-          "origin": "Latin"
-        },
-        {
-          "name": "privilege",
-          "origin": "Old French"
-        },
-        {
-          "name": "privlege -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/privilege#etymonline_v_19544",
-        "https://www.merriam-webster.com/dictionary/privilege#dictionary-entry-1",
-        "https://anglo-norman.net/entry/privilege",
-        "https://latin-dictionary.net/definition/31660/privilegium-privilegi-i",
-        "https://latin-dictionary.net/definition/31662/privus-priva-privum"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "privilege",
+    "etymology": [
+      {
+        "name": "privus, privilegium",
+        "origin": "Latin"
+      },
+      {
+        "name": "privilege",
+        "origin": "Old French"
+      },
+      {
+        "name": "privlege -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/privilege#etymonline_v_19544",
+      "https://www.merriam-webster.com/dictionary/privilege#dictionary-entry-1",
+      "https://anglo-norman.net/entry/privilege",
+      "https://latin-dictionary.net/definition/31660/privilegium-privilegi-i",
+      "https://latin-dictionary.net/definition/31662/privus-priva-privum"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to privilege",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to privilege",
+    "etymology": [
+      {
+        "name": "privilegium, privilegare",
+        "origin": "Latin"
       },
-      "etymology": [
-        "privilegium, privilegare",
-        "privilegier",
-        "privilegen",
-        "to privilege",
-        "ta privlege -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to privilege",
-      "etymology": [
-        {
-          "name": "privilegium, privilegare",
-          "origin": "Latin"
-        },
-        {
-          "name": "privilegier",
-          "origin": "Old French"
-        },
-        {
-          "name": "privilegen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to privilege",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta privlege -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "privilegier",
+        "origin": "Old French"
+      },
+      {
+        "name": "privilegen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to privilege",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta privlege -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta privleges",
+          "pastTense": "ta privleged",
+          "progressive": "ta privleging"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/privilege#etymonline_v_47416",
-        "https://www.etymonline.com/word/privilege#etymonline_v_19544",
-        "https://www.merriam-webster.com/dictionary/privilege#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED34730",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/privil%C3%A9gier/63304",
-        "https://latin-dictionary.net/definition/31660/privilegium-privilegi-i"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/privilege#etymonline_v_47416",
+      "https://www.etymonline.com/word/privilege#etymonline_v_19544",
+      "https://www.merriam-webster.com/dictionary/privilege#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED34730",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/privil%C3%A9gier/63304",
+      "https://latin-dictionary.net/definition/31660/privilegium-privilegi-i"
+    ]
   }
 ]

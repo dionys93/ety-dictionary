@@ -1,208 +1,164 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "nerve",
-      "etymology": [
-        {
-          "name": "nervus",
-          "origin": "Latin"
-        },
-        {
-          "name": "nerf",
-          "origin": "Old French"
-        },
-        {
-          "name": "nerve",
-          "origin": "Middle English"
-        },
-        {
-          "name": "nêve -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/nerve#etymonline_v_6868",
-        "https://latin-dictionary.net/definition/27817/nervus-nervi"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to nerve",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "nerve",
+    "etymology": [
+      {
+        "name": "nervus",
+        "origin": "Latin"
       },
-      "etymology": [
-        "to nerve",
-        "ta nêve -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to nerve",
-      "etymology": [
-        {
-          "name": "to nerve",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta nêve -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/nerve#etymonline_v_45414",
-        "https://www.etymonline.com/word/nerve#etymonline_v_6868",
-        "https://latin-dictionary.net/definition/27817/nervus-nervi"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "nerf",
+        "origin": "Old French"
+      },
+      {
+        "name": "nerve",
+        "origin": "Middle English"
+      },
+      {
+        "name": "nêve -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/nerve#etymonline_v_6868",
+      "https://latin-dictionary.net/definition/27817/nervus-nervi"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "nervous",
-      "etymology": [
-        {
-          "name": "nervus, nervosus",
-          "origin": "Latin"
-        },
-        {
-          "name": "nervous",
-          "origin": "Modern English"
-        },
-        {
-          "name": "nêvoʃ -sly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
+    "infinitive": "to nerve",
+    "etymology": [
+      {
+        "name": "to nerve",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta nêve -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta nêves",
+          "pastTense": "ta nêved",
+          "progressive": "ta nêving"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/nervous#etymonline_v_6869",
-        "https://www.merriam-webster.com/dictionary/nervous#word-history",
-        "https://latin-dictionary.net/definition/27817/nervus-nervi"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/nerve#etymonline_v_45414",
+      "https://www.etymonline.com/word/nerve#etymonline_v_6868",
+      "https://latin-dictionary.net/definition/27817/nervus-nervi"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "nervosity",
-      "etymology": [
-        {
-          "name": "nervus",
-          "origin": "Latin"
-        },
-        {
-          "name": "nervositas",
-          "origin": "Medieval Latin"
-        },
-        {
-          "name": "nervosite",
-          "origin": "Middle English"
-        },
-        {
-          "name": "nervosity",
-          "origin": "Modern English"
-        },
-        {
-          "name": "nêvossetie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/nervosity#etymonline_v_54416",
-        "https://www.merriam-webster.com/dictionary/nervosity",
-        "https://latin-dictionary.net/definition/27817/nervus-nervi"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "nervous",
+    "etymology": [
+      {
+        "name": "nervus, nervosus",
+        "origin": "Latin"
+      },
+      {
+        "name": "nervous",
+        "origin": "Modern English"
+      },
+      {
+        "name": "nêvoʃ -sly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/nervous#etymonline_v_6869",
+      "https://www.merriam-webster.com/dictionary/nervous#word-history",
+      "https://latin-dictionary.net/definition/27817/nervus-nervi"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "nerval",
-      "etymology": [
-        {
-          "name": "nervus, nervalis",
-          "origin": "Latin"
-        },
-        {
-          "name": "nerval",
-          "origin": "Modern English"
-        },
-        {
-          "name": "nêval",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/nerval#etymonline_v_54412",
-        "https://latin-dictionary.net/definition/27817/nervus-nervi"
-      ]
-    }
+    "name": "nervosity",
+    "etymology": [
+      {
+        "name": "nervus",
+        "origin": "Latin"
+      },
+      {
+        "name": "nervositas",
+        "origin": "Medieval Latin"
+      },
+      {
+        "name": "nervosite",
+        "origin": "Middle English"
+      },
+      {
+        "name": "nervosity",
+        "origin": "Modern English"
+      },
+      {
+        "name": "nêvossetie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/nervosity#etymonline_v_54416",
+      "https://www.merriam-webster.com/dictionary/nervosity",
+      "https://latin-dictionary.net/definition/27817/nervus-nervi"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "nervation",
-      "etymology": [
-        {
-          "name": "nervation",
-          "origin": "Modern English"
-        },
-        {
-          "name": "nêvâcion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/nervation#etymonline_v_54413",
-        "https://www.etymonline.com/word/-ation#etymonline_v_26731"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "nerval",
+    "etymology": [
+      {
+        "name": "nervus, nervalis",
+        "origin": "Latin"
+      },
+      {
+        "name": "nerval",
+        "origin": "Modern English"
+      },
+      {
+        "name": "nêval",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/nerval#etymonline_v_54412",
+      "https://latin-dictionary.net/definition/27817/nervus-nervi"
+    ]
+  },
+  {
+    "name": "nervation",
+    "etymology": [
+      {
+        "name": "nervation",
+        "origin": "Modern English"
+      },
+      {
+        "name": "nêvâcion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/nervation#etymonline_v_54413",
+      "https://www.etymonline.com/word/-ation#etymonline_v_26731"
+    ]
   }
 ]

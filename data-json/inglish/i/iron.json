@@ -1,94 +1,69 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "iron",
-      "etymology": [
-        {
-          "name": "isen, iren",
-          "origin": "Old English"
-        },
-        {
-          "name": "iron, iren, yron",
-          "origin": "Middle English"
-        },
-        {
-          "name": "iron",
-          "origin": "Modern English"
-        },
-        {
-          "name": "aên -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/iron#etymonline_v_12229",
-        "https://www.merriam-webster.com/dictionary/iron#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/iron#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED23335",
-        "https://bosworthtoller.com/20749",
-        "https://bosworthtoller.com/20750",
-        "https://bosworthtoller.com/20806",
-        "https://bosworthtoller.com/20805",
-        "https://bosworthtoller.com/20818"
-      ],
-      "degrees": {
-        "positive": "n",
-        "comparative": "s"
+    "name": "iron",
+    "etymology": [
+      {
+        "name": "isen, iren",
+        "origin": "Old English"
+      },
+      {
+        "name": "iron, iren, yron",
+        "origin": "Middle English"
+      },
+      {
+        "name": "iron",
+        "origin": "Modern English"
+      },
+      {
+        "name": "aên -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "masculine noun"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/iron#etymonline_v_12229",
+      "https://www.merriam-webster.com/dictionary/iron#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/iron#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED23335",
+      "https://bosworthtoller.com/20749",
+      "https://bosworthtoller.com/20750",
+      "https://bosworthtoller.com/20806",
+      "https://bosworthtoller.com/20805",
+      "https://bosworthtoller.com/20818"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to iron",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to iron",
+    "etymology": [
+      {
+        "name": "irenen",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "irenen",
-        "to iron",
-        "ta aêne -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to iron",
-      "etymology": [
-        {
-          "name": "irenen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to iron",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta aêne -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to iron",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta aêne -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta aênes",
+          "pastTense": "ta aêned",
+          "progressive": "ta aêning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/iron#etymonline_v_42614",
-        "https://www.etymonline.com/word/iron#etymonline_v_12229",
-        "https://www.merriam-webster.com/dictionary/iron#dictionary-entry-3",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED23378"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/iron#etymonline_v_42614",
+      "https://www.etymonline.com/word/iron#etymonline_v_12229",
+      "https://www.merriam-webster.com/dictionary/iron#dictionary-entry-3",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED23378"
+    ]
   }
 ]

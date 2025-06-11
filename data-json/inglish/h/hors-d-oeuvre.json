@@ -1,31 +1,25 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "hors d'oeuvre",
-      "etymology": [
-        {
-          "name": "hors d'oeuvre",
-          "origin": "French"
-        },
-        {
-          "name": "ordôve -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/hors%20d%27oeuvre#etymonline_v_14466",
-        "https://www.oed.com/dictionary/hors-doeuvre_adv?tab=factsheet#1286320",
-        "https://www.merriam-webster.com/dictionary/hors%20d'oeuvre"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "hors d'oeuvre",
+    "etymology": [
+      {
+        "name": "hors d'oeuvre",
+        "origin": "French"
+      },
+      {
+        "name": "ordôve -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/hors%20d%27oeuvre#etymonline_v_14466",
+      "https://www.oed.com/dictionary/hors-doeuvre_adv?tab=factsheet#1286320",
+      "https://www.merriam-webster.com/dictionary/hors%20d'oeuvre"
+    ]
   }
 ]

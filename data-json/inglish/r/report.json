@@ -1,92 +1,70 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to report",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to report",
+    "etymology": [
+      {
+        "name": "reportare",
+        "origin": "Latin"
       },
-      "etymology": [
-        "reportare",
-        "reporter, report",
-        "to report",
-        "ta reporte -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to report",
-      "etymology": [
-        {
-          "name": "reportare",
-          "origin": "Latin"
-        },
-        {
-          "name": "reporter, report",
-          "origin": "Old French"
-        },
-        {
-          "name": "to report",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta reporte -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "reporter, report",
+        "origin": "Old French"
+      },
+      {
+        "name": "to report",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta reporte -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta reportes",
+          "pastTense": "ta reported",
+          "progressive": "ta reporting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/report",
-        "https://www.oed.com/dictionary/report_v?tab=factsheet#25844826",
-        "https://anglo-norman.net/entry/reporter",
-        "https://latin-dictionary.net/definition/33349/reporto-reportare-reportavi-reportatus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/report",
+      "https://www.oed.com/dictionary/report_v?tab=factsheet#25844826",
+      "https://anglo-norman.net/entry/reporter",
+      "https://latin-dictionary.net/definition/33349/reporto-reportare-reportavi-reportatus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "to report",
-      "etymology": [
-        {
-          "name": "reportare",
-          "origin": "Latin"
-        },
-        {
-          "name": "reporter, report",
-          "origin": "Old French"
-        },
-        {
-          "name": "to report",
-          "origin": "Modern English"
-        },
-        {
-          "name": "reporte, repôrts",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/report",
-        "https://www.oed.com/dictionary/report_n?tab=meaning_and_use#25843505",
-        "https://www.oed.com/dictionary/report_n?tab=pronunciation#25843505",
-        "https://anglo-norman.net/entry/report",
-        "https://latin-dictionary.net/definition/33349/reporto-reportare-reportavi-reportatus"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "to report",
+    "etymology": [
+      {
+        "name": "reportare",
+        "origin": "Latin"
+      },
+      {
+        "name": "reporter, report",
+        "origin": "Old French"
+      },
+      {
+        "name": "to report",
+        "origin": "Modern English"
+      },
+      {
+        "name": "reporte, repôrts",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/report",
+      "https://www.oed.com/dictionary/report_n?tab=meaning_and_use#25843505",
+      "https://www.oed.com/dictionary/report_n?tab=pronunciation#25843505",
+      "https://anglo-norman.net/entry/report",
+      "https://latin-dictionary.net/definition/33349/reporto-reportare-reportavi-reportatus"
+    ]
   }
 ]

@@ -1,50 +1,44 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "camel",
-      "etymology": [
-        {
-          "name": "גמל",
-          "origin": "Hebrew"
-        },
-        {
-          "name": "κάμηλος",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "camelus",
-          "origin": "Latin"
-        },
-        {
-          "name": "chamel",
-          "origin": "Old French"
-        },
-        {
-          "name": "camel",
-          "origin": "Modern English"
-        },
-        {
-          "name": "camle, camels",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/camel#etymonline_v_630",
-        "https://www.oed.com/dictionary/camel_n?tab=factsheet#10245229",
-        "https://anglo-norman.net/entry/chamel_1",
-        "https://latin-dictionary.net/definition/7695/camelus-cameli",
-        "https://lsj.gr/wiki/%CE%BA%CE%AC%CE%BC%CE%B7%CE%BB%CE%BF%CF%82",
-        "https://www.morfix.co.il/%D7%92%D7%9E%D7%9C"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "camel",
+    "etymology": [
+      {
+        "name": "גמל",
+        "origin": "Hebrew"
+      },
+      {
+        "name": "κάμηλος",
+        "origin": "Ancient Greek"
+      },
+      {
+        "name": "camelus",
+        "origin": "Latin"
+      },
+      {
+        "name": "chamel",
+        "origin": "Old French"
+      },
+      {
+        "name": "camel",
+        "origin": "Modern English"
+      },
+      {
+        "name": "camle, camels",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/camel#etymonline_v_630",
+      "https://www.oed.com/dictionary/camel_n?tab=factsheet#10245229",
+      "https://anglo-norman.net/entry/chamel_1",
+      "https://latin-dictionary.net/definition/7695/camelus-cameli",
+      "https://lsj.gr/wiki/%CE%BA%CE%AC%CE%BC%CE%B7%CE%BB%CE%BF%CF%82",
+      "https://www.morfix.co.il/%D7%92%D7%9E%D7%9C"
+    ]
   }
 ]

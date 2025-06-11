@@ -1,99 +1,71 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "salt  -s (m n)",
-      "etymology": [
-        {
-          "name": "sealt",
-          "origin": "Old English"
-        },
-        {
-          "name": "salt  -s (m n)",
-          "origin": "Middle English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/salt#etymonline_v_22641",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED38336",
-        "https://bosworthtoller.com/27227"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to salt",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "salt  -s (m n)",
+    "etymology": [
+      {
+        "name": "sealt",
+        "origin": "Old English"
       },
-      "etymology": [
-        "sealtan",
-        "salten",
-        "to salt",
-        "ta salte -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to salt",
-      "etymology": [
-        {
-          "name": "sealtan",
-          "origin": "Old English"
-        },
-        {
-          "name": "salten",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to salt",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta salte -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/salt#etymonline_v_42897",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED38340",
-        "https://bosworthtoller.com/57909"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "salt  -s (m n)",
+        "origin": "Middle English"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/salt#etymonline_v_22641",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED38336",
+      "https://bosworthtoller.com/27227"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "salty  -ier -iest (adj)",
-      "etymology": [
-        {
-          "name": "salti",
-          "origin": "Middle English"
-        },
-        {
-          "name": "salty  -ier -iest (adj)",
-          "origin": "Modern English"
+    "infinitive": "to salt",
+    "etymology": [
+      {
+        "name": "sealtan",
+        "origin": "Old English"
+      },
+      {
+        "name": "salten",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to salt",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta salte -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta saltes",
+          "pastTense": "ta salted",
+          "progressive": "ta salting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/salty#etymonline_v_22648",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED38345"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/salt#etymonline_v_42897",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED38340",
+      "https://bosworthtoller.com/57909"
+    ]
+  },
+  {
+    "name": "salty  -ier -iest (adj)",
+    "etymology": [
+      {
+        "name": "salti",
+        "origin": "Middle English"
+      },
+      {
+        "name": "salty  -ier -iest (adj)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/salty#etymonline_v_22648",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED38345"
+    ]
   }
 ]

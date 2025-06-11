@@ -1,72 +1,60 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "privity",
-      "etymology": [
-        {
-          "name": "privus",
-          "origin": "Latin"
-        },
-        {
-          "name": "privité, priveté",
-          "origin": "Old French"
-        },
-        {
-          "name": "privity",
-          "origin": "Modern English"
-        },
-        {
-          "name": "privetie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/privity#etymonline_v_36520",
-        "https://www.merriam-webster.com/dictionary/privity",
-        "https://www.anglo-norman.net/entry/privet%C3%A9",
-        "https://latin-dictionary.net/definition/31662/privus-priva-privum"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "privity",
+    "etymology": [
+      {
+        "name": "privus",
+        "origin": "Latin"
+      },
+      {
+        "name": "privité, priveté",
+        "origin": "Old French"
+      },
+      {
+        "name": "privity",
+        "origin": "Modern English"
+      },
+      {
+        "name": "privetie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/privity#etymonline_v_36520",
+      "https://www.merriam-webster.com/dictionary/privity",
+      "https://www.anglo-norman.net/entry/privet%C3%A9",
+      "https://latin-dictionary.net/definition/31662/privus-priva-privum"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "privy  -ies (adj, m n)",
-      "etymology": [
-        {
-          "name": "privatus",
-          "origin": "Latin"
-        },
-        {
-          "name": "privé",
-          "origin": "Old French"
-        },
-        {
-          "name": "privy  -ies (adj, m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/privy#etymonline_v_44531",
-        "https://www.etymonline.com/word/privy#etymonline_v_19545",
-        "https://www.merriam-webster.com/dictionary/privy#dictionary-entry-2",
-        "https://www.merriam-webster.com/dictionary/privy#dictionary-entry-1",
-        "https://www.anglo-norman.net/entry/priv%C3%A9_1",
-        "https://www.anglo-norman.net/entry/priv%C3%A9_2",
-        "https://latin-dictionary.net/definition/31655/privatus-privata-privatum"
-      ]
-    }
+    "name": "privy  -ies (adj, m n)",
+    "etymology": [
+      {
+        "name": "privatus",
+        "origin": "Latin"
+      },
+      {
+        "name": "privé",
+        "origin": "Old French"
+      },
+      {
+        "name": "privy  -ies (adj, m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/privy#etymonline_v_44531",
+      "https://www.etymonline.com/word/privy#etymonline_v_19545",
+      "https://www.merriam-webster.com/dictionary/privy#dictionary-entry-2",
+      "https://www.merriam-webster.com/dictionary/privy#dictionary-entry-1",
+      "https://www.anglo-norman.net/entry/priv%C3%A9_1",
+      "https://www.anglo-norman.net/entry/priv%C3%A9_2",
+      "https://latin-dictionary.net/definition/31655/privatus-privata-privatum"
+    ]
   }
 ]

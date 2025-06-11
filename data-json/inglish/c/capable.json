@@ -1,105 +1,87 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "capable",
-      "etymology": [
-        {
-          "name": "capere, capax, capabilis",
-          "origin": "Latin"
-        },
-        {
-          "name": "capable",
-          "origin": "French"
-        },
-        {
-          "name": "câpable",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/capable#etymonline_v_695",
-        "https://www.oed.com/dictionary/capable_adj?tab=factsheet#10125176",
-        "https://www.littre.org/definition/capable",
-        "https://latin-dictionary.net/definition/7948/capabilis-capabilis-capabile",
-        "https://latin-dictionary.net/definition/7951/capax-capacis",
-        "https://latin-dictionary.net/definition/7986/capio-capere-additional-forms"
-      ]
-    }
+    "name": "capable",
+    "etymology": [
+      {
+        "name": "capere, capax, capabilis",
+        "origin": "Latin"
+      },
+      {
+        "name": "capable",
+        "origin": "French"
+      },
+      {
+        "name": "câpable",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "masculine noun"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/capable#etymonline_v_695",
+      "https://www.oed.com/dictionary/capable_adj?tab=factsheet#10125176",
+      "https://www.littre.org/definition/capable",
+      "https://latin-dictionary.net/definition/7948/capabilis-capabilis-capabile",
+      "https://latin-dictionary.net/definition/7951/capax-capacis",
+      "https://latin-dictionary.net/definition/7986/capio-capere-additional-forms"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "capability",
-      "etymology": [
-        {
-          "name": "capability",
-          "origin": "Modern English"
-        },
-        {
-          "name": "câpabilatie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/capability",
-        "https://www.oed.com/dictionary/capability_n?tab=factsheet#10124876"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "capability",
+    "etymology": [
+      {
+        "name": "capability",
+        "origin": "Modern English"
+      },
+      {
+        "name": "câpabilatie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/capability",
+      "https://www.oed.com/dictionary/capability_n?tab=factsheet#10124876"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "capacity",
-      "etymology": [
-        {
-          "name": "capere, capax, capacitas, capacitatem",
-          "origin": "Latin"
-        },
-        {
-          "name": "capacité",
-          "origin": "Old French"
-        },
-        {
-          "name": "capacity",
-          "origin": "Modern English"
-        },
-        {
-          "name": "capacetie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/capacity",
-        "https://www.oed.com/dictionary/capacity_n?tab=factsheet#10127136",
-        "https://anglo-norman.net/entry/capacit%C3%A9",
-        "https://latin-dictionary.net/definition/7949/capacitas-capacitatis",
-        "https://latin-dictionary.net/definition/7951/capax-capacis",
-        "https://latin-dictionary.net/definition/7987/capio-capere-cepi-captus"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "capacity",
+    "etymology": [
+      {
+        "name": "capere, capax, capacitas, capacitatem",
+        "origin": "Latin"
+      },
+      {
+        "name": "capacité",
+        "origin": "Old French"
+      },
+      {
+        "name": "capacity",
+        "origin": "Modern English"
+      },
+      {
+        "name": "capacetie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/capacity",
+      "https://www.oed.com/dictionary/capacity_n?tab=factsheet#10127136",
+      "https://anglo-norman.net/entry/capacit%C3%A9",
+      "https://latin-dictionary.net/definition/7949/capacitas-capacitatis",
+      "https://latin-dictionary.net/definition/7951/capax-capacis",
+      "https://latin-dictionary.net/definition/7987/capio-capere-cepi-captus"
+    ]
   }
 ]

@@ -1,174 +1,138 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "mace",
-      "etymology": [
-        {
-          "name": "mateola, matteola",
-          "origin": "Latin"
-        },
-        {
-          "name": "mattea",
-          "origin": "Vulgar Latin"
-        },
-        {
-          "name": "mace",
-          "origin": "Old French"
-        },
-        {
-          "name": "mâce -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/mace#etymonline_v_2126",
-        "https://www.merriam-webster.com/dictionary/mace#dictionary-entry-2",
-        "https://www.anglo-norman.net/entry/mace_1"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "Mace",
-      "etymology": [
-        {
-          "name": "Mace",
-          "origin": "Modern English"
-        },
-        {
-          "name": "mâce",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/mace#etymonline_v_2128",
-        "https://www.merriam-webster.com/dictionary/mace#dictionary-entry-4"
-      ],
-      "gender": "feminine",
-      "number": "singular"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to mace",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "mace",
+    "etymology": [
+      {
+        "name": "mateola, matteola",
+        "origin": "Latin"
       },
-      "etymology": [
-        "to mace",
-        "ta mâce -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to mace",
-      "etymology": [
-        {
-          "name": "to mace",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta mâce -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/mace#dictionary-entry-3",
-        "https://www.etymonline.com/word/mace#etymonline_v_2128",
-        "https://www.merriam-webster.com/dictionary/mace#dictionary-entry-4"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "mattea",
+        "origin": "Vulgar Latin"
+      },
+      {
+        "name": "mace",
+        "origin": "Old French"
+      },
+      {
+        "name": "mâce -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/mace#etymonline_v_2126",
+      "https://www.merriam-webster.com/dictionary/mace#dictionary-entry-2",
+      "https://www.anglo-norman.net/entry/mace_1"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "mace",
-      "etymology": [
-        {
-          "name": "macis",
-          "origin": "Old French"
-        },
-        {
-          "name": "mace",
-          "origin": "Modern English"
-        },
-        {
-          "name": "maice",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/mace#etymonline_v_2127",
-        "https://www.merriam-webster.com/dictionary/mace#dictionary-entry-1",
-        "https://www.anglo-norman.net/entry/mace_2"
-      ],
-      "gender": "feminine",
-      "number": "singular"
-    }
+    "name": "Mace",
+    "etymology": [
+      {
+        "name": "Mace",
+        "origin": "Modern English"
+      },
+      {
+        "name": "mâce",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/mace#etymonline_v_2128",
+      "https://www.merriam-webster.com/dictionary/mace#dictionary-entry-4"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "mazo, macho, machete",
-      "etymology": [
-        {
-          "name": "mattea",
-          "origin": "Vulgar Latin"
-        },
-        {
-          "name": "mazo, macho, machete",
-          "origin": "Inglish"
-        },
-        {
-          "name": "maçèti, machèti -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
+    "infinitive": "to mace",
+    "etymology": [
+      {
+        "name": "to mace",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta mâce -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta mâces",
+          "pastTense": "ta mâced",
+          "progressive": "ta mâcing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/machete#etymonline_v_2132",
-        "https://www.merriam-webster.com/dictionary/machete#dictionary-entry-1",
-        "https://www.collinsdictionary.com/us/dictionary/spanish-english/machete",
-        "https://www.collinsdictionary.com/us/dictionary/spanish-english/macho",
-        "https://www.collinsdictionary.com/us/dictionary/spanish-english/mazo",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/machette/48236"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/mace#dictionary-entry-3",
+      "https://www.etymonline.com/word/mace#etymonline_v_2128",
+      "https://www.merriam-webster.com/dictionary/mace#dictionary-entry-4"
+    ]
+  },
+  {
+    "name": "mace",
+    "etymology": [
+      {
+        "name": "macis",
+        "origin": "Old French"
+      },
+      {
+        "name": "mace",
+        "origin": "Modern English"
+      },
+      {
+        "name": "maice",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/mace#etymonline_v_2127",
+      "https://www.merriam-webster.com/dictionary/mace#dictionary-entry-1",
+      "https://www.anglo-norman.net/entry/mace_2"
+    ]
+  },
+  {
+    "name": "mazo, macho, machete",
+    "etymology": [
+      {
+        "name": "mattea",
+        "origin": "Vulgar Latin"
+      },
+      {
+        "name": "mazo, macho, machete",
+        "origin": "Inglish"
+      },
+      {
+        "name": "maçèti, machèti -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/machete#etymonline_v_2132",
+      "https://www.merriam-webster.com/dictionary/machete#dictionary-entry-1",
+      "https://www.collinsdictionary.com/us/dictionary/spanish-english/machete",
+      "https://www.collinsdictionary.com/us/dictionary/spanish-english/macho",
+      "https://www.collinsdictionary.com/us/dictionary/spanish-english/mazo",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/machette/48236"
+    ]
   }
 ]

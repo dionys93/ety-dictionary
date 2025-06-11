@@ -1,66 +1,46 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "horse  -s (m n)",
-      "etymology": [
-        {
-          "name": "hors",
-          "origin": "Old English"
-        },
-        {
-          "name": "horse  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/horse#etymonline_v_14467",
-        "https://www.oed.com/dictionary/horse_n?tab=pronunciation#1286410",
-        "https://bosworthtoller.com/19547"
-      ]
-    }
+    "name": "horse  -s (m n)",
+    "etymology": [
+      {
+        "name": "hors",
+        "origin": "Old English"
+      },
+      {
+        "name": "horse  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/horse#etymonline_v_14467",
+      "https://www.oed.com/dictionary/horse_n?tab=pronunciation#1286410",
+      "https://bosworthtoller.com/19547"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "horsian",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "horsian",
+    "etymology": [
+      {
+        "name": "horsian",
+        "origin": "Old English"
       },
-      "etymology": [
-        "horsian",
-        "ta horse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "horsian",
-      "etymology": [
-        {
-          "name": "horsian",
-          "origin": "Old English"
-        },
-        {
-          "name": "ta horse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta horse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta horses",
+          "pastTense": "ta horsed",
+          "progressive": "ta horsing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/horse#etymonline_v_42085",
-        "https://www.oed.com/dictionary/horse_v?tab=factsheet#1295658",
-        "https://bosworthtoller.com/19560"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/horse#etymonline_v_42085",
+      "https://www.oed.com/dictionary/horse_v?tab=factsheet#1295658",
+      "https://bosworthtoller.com/19560"
+    ]
   }
 ]

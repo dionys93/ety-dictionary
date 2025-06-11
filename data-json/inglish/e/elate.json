@@ -1,86 +1,65 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to elate",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to elate",
+    "etymology": [
+      {
+        "name": "efferre, elatus",
+        "origin": "Latin"
       },
-      "etymology": [
-        "efferre, elatus",
-        "to elate",
-        "to elâte -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to elate",
-      "etymology": [
-        {
-          "name": "efferre, elatus",
-          "origin": "Latin"
-        },
-        {
-          "name": "to elate",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to elâte -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to elate",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to elâte -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to elâtes",
+          "pastTense": "to elâted",
+          "progressive": "to elâting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/elate#etymonline_v_29716",
-        "https://www.merriam-webster.com/dictionary/elate",
-        "https://latin-dictionary.net/definition/18753/effero-efferre-extuli-elatus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/elate#etymonline_v_29716",
+      "https://www.merriam-webster.com/dictionary/elate",
+      "https://latin-dictionary.net/definition/18753/effero-efferre-extuli-elatus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "elation",
-      "etymology": [
-        {
-          "name": "ex + ferre, efferre, elatus, elatio",
-          "origin": "Latin"
-        },
-        {
-          "name": "elacion",
-          "origin": "Old French"
-        },
-        {
-          "name": "elation",
-          "origin": "Modern English"
-        },
-        {
-          "name": "elâcion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/elation#etymonline_v_5706",
-        "https://www.merriam-webster.com/dictionary/elation",
-        "https://www.anglo-norman.net/entry/elaciun",
-        "https://latin-dictionary.net/definition/18865/elatio-elationis",
-        "https://latin-dictionary.net/definition/18753/effero-efferre-extuli-elatus"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "elation",
+    "etymology": [
+      {
+        "name": "ex + ferre, efferre, elatus, elatio",
+        "origin": "Latin"
+      },
+      {
+        "name": "elacion",
+        "origin": "Old French"
+      },
+      {
+        "name": "elation",
+        "origin": "Modern English"
+      },
+      {
+        "name": "elâcion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/elation#etymonline_v_5706",
+      "https://www.merriam-webster.com/dictionary/elation",
+      "https://www.anglo-norman.net/entry/elaciun",
+      "https://latin-dictionary.net/definition/18865/elatio-elationis",
+      "https://latin-dictionary.net/definition/18753/effero-efferre-extuli-elatus"
+    ]
   }
 ]

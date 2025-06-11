@@ -1,41 +1,35 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "lion",
-      "etymology": [
-        {
-          "name": "λέων",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "leo",
-          "origin": "Latin"
-        },
-        {
-          "name": "lion",
-          "origin": "Old French"
-        },
-        {
-          "name": "lîon -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/lion#etymonline_v_9573",
-        "https://www.merriam-webster.com/dictionary/lion",
-        "https://anglo-norman.net/entry/lion",
-        "https://latin-dictionary.net/definition/25508/leo-leonis",
-        "https://lsj.gr/wiki/%CE%BB%CE%AD%CF%89%CE%BD"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "lion",
+    "etymology": [
+      {
+        "name": "λέων",
+        "origin": "Ancient Greek"
+      },
+      {
+        "name": "leo",
+        "origin": "Latin"
+      },
+      {
+        "name": "lion",
+        "origin": "Old French"
+      },
+      {
+        "name": "lîon -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/lion#etymonline_v_9573",
+      "https://www.merriam-webster.com/dictionary/lion",
+      "https://anglo-norman.net/entry/lion",
+      "https://latin-dictionary.net/definition/25508/leo-leonis",
+      "https://lsj.gr/wiki/%CE%BB%CE%AD%CF%89%CE%BD"
+    ]
   }
 ]

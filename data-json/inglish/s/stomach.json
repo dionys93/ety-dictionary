@@ -1,91 +1,71 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "stomach",
-      "etymology": [
-        {
-          "name": "στόμα, στόμαχος",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "stomachus",
-          "origin": "Latin"
-        },
-        {
-          "name": "stomaque, estomac",
-          "origin": "Old French"
-        },
-        {
-          "name": "stomack, stomac, stommak, stomoke",
-          "origin": "Middle English"
-        },
-        {
-          "name": "stomach",
-          "origin": "Modern English"
-        },
-        {
-          "name": "stomac -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/stomach#etymonline_v_22116",
-        "https://www.merriam-webster.com/dictionary/stomach#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED43053",
-        "https://www.anglo-norman.net/entry/estomac",
-        "https://latin-dictionary.net/definition/35763/stomachus-stomachi",
-        "https://lsj.gr/wiki/%CF%83%CF%84%CF%8C%CE%BC%CE%B1%CF%87%CE%BF%CF%82",
-        "https://lsj.gr/wiki/%CF%83%CF%84%CF%8C%CE%BC%CE%B1"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "stomach",
+    "etymology": [
+      {
+        "name": "στόμα, στόμαχος",
+        "origin": "Ancient Greek"
+      },
+      {
+        "name": "stomachus",
+        "origin": "Latin"
+      },
+      {
+        "name": "stomaque, estomac",
+        "origin": "Old French"
+      },
+      {
+        "name": "stomack, stomac, stommak, stomoke",
+        "origin": "Middle English"
+      },
+      {
+        "name": "stomach",
+        "origin": "Modern English"
+      },
+      {
+        "name": "stomac -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/stomach#etymonline_v_22116",
+      "https://www.merriam-webster.com/dictionary/stomach#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED43053",
+      "https://www.anglo-norman.net/entry/estomac",
+      "https://latin-dictionary.net/definition/35763/stomachus-stomachi",
+      "https://lsj.gr/wiki/%CF%83%CF%84%CF%8C%CE%BC%CE%B1%CF%87%CE%BF%CF%82",
+      "https://lsj.gr/wiki/%CF%83%CF%84%CF%8C%CE%BC%CE%B1"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to stomach",
-      "conjugations": {
-        "thirdPerson": "cs",
-        "pastTense": "ed",
-        "progressive": "ing"
+    "infinitive": "to stomach",
+    "etymology": [
+      {
+        "name": "to stomach",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to stomach",
-        "ta stomaq -cs -ed -ing"
-      ]
-    },
-    "standard": {
-      "name": "to stomach",
-      "etymology": [
-        {
-          "name": "to stomach",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta stomaq -cs -ed -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta stomaq -cs -ed -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta stomaqcs",
+          "pastTense": "ta stomaqed",
+          "progressive": "ta stomaqing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/stomach#etymonline_v_45868",
-        "https://www.etymonline.com/word/stomach#etymonline_v_22116",
-        "https://www.merriam-webster.com/dictionary/stomach#dictionary-entry-2"
-      ],
-      "conjugations": {
-        "thirdPerson": "cs",
-        "pastTense": "ed",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/stomach#etymonline_v_45868",
+      "https://www.etymonline.com/word/stomach#etymonline_v_22116",
+      "https://www.merriam-webster.com/dictionary/stomach#dictionary-entry-2"
+    ]
   }
 ]

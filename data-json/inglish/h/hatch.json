@@ -1,66 +1,53 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to hatch",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to hatch",
+    "etymology": [
+      {
+        "name": "to hatch",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to hatch",
-        "ta hache -s -d -ing",
-        "hatch",
-        "hach -es"
-      ]
-    },
-    "standard": {
-      "name": "to hatch",
-      "etymology": [
-        {
-          "name": "to hatch",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta hache -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        },
-        {
-          "name": "hatch",
-          "origin": "Inglish"
-        },
-        {
-          "name": "hach -es",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
+      {
+        "name": "ta hache -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta haches",
+          "pastTense": "ta hached",
+          "progressive": "ta haching"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/hatch#etymonline_v_6202",
-        "https://www.etymonline.com/word/hatch#etymonline_v_6204",
-        "https://www.merriam-webster.com/dictionary/hatch#dictionary-entry-2",
-        "https://www.merriam-webster.com/dictionary/hatch#dictionary-entry-4",
-        "https://www.oed.com/dictionary/hatch_v1?tab=factsheet#2116655",
-        "https://www.oed.com/dictionary/hatch_v2?tab=factsheet#2117170",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED19751",
-        "https://anglo-norman.net/entry/hacher",
-        "https://www.etymonline.com/word/hatch#etymonline_v_6203",
-        "https://www.etymonline.com/word/hatch#etymonline_v_51019",
-        "https://www.etymonline.com/word/hatch#etymonline_v_51020",
-        "https://www.merriam-webster.com/dictionary/hatch#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/hatch#dictionary-entry-3",
-        "https://www.merriam-webster.com/dictionary/hatch#dictionary-entry-5"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      },
+      {
+        "name": "hatch",
+        "origin": "Inglish"
+      },
+      {
+        "name": "hach -es",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "conjugations": {
+          "thirdPerson": "haches"
+        }
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/hatch#etymonline_v_6202",
+      "https://www.etymonline.com/word/hatch#etymonline_v_6204",
+      "https://www.merriam-webster.com/dictionary/hatch#dictionary-entry-2",
+      "https://www.merriam-webster.com/dictionary/hatch#dictionary-entry-4",
+      "https://www.oed.com/dictionary/hatch_v1?tab=factsheet#2116655",
+      "https://www.oed.com/dictionary/hatch_v2?tab=factsheet#2117170",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED19751",
+      "https://anglo-norman.net/entry/hacher",
+      "https://www.etymonline.com/word/hatch#etymonline_v_6203",
+      "https://www.etymonline.com/word/hatch#etymonline_v_51019",
+      "https://www.etymonline.com/word/hatch#etymonline_v_51020",
+      "https://www.merriam-webster.com/dictionary/hatch#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/hatch#dictionary-entry-3",
+      "https://www.merriam-webster.com/dictionary/hatch#dictionary-entry-5"
+    ]
   }
 ]

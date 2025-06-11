@@ -1,49 +1,35 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to wed",
-      "conjugations": {
-        "thirdPerson": "ing"
+    "infinitive": "to wed",
+    "etymology": [
+      {
+        "name": "weddian",
+        "origin": "Old English"
       },
-      "etymology": [
-        "weddian",
-        "wedden",
-        "to wed",
-        "ta ɯedde ɯeds ɯèd -ing"
-      ]
-    },
-    "standard": {
-      "name": "to wed",
-      "etymology": [
-        {
-          "name": "weddian",
-          "origin": "Old English"
-        },
-        {
-          "name": "wedden",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to wed",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta ɯedde ɯeds ɯèd -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "wedden",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to wed",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta ɯedde ɯeds ɯèd -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta ɯedde ɯeds ɯèding"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/wed#etymonline_v_4880",
-        "https://www.merriam-webster.com/dictionary/wed",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51968",
-        "https://bosworthtoller.com/34931"
-      ],
-      "conjugations": {
-        "thirdPerson": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/wed#etymonline_v_4880",
+      "https://www.merriam-webster.com/dictionary/wed",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51968",
+      "https://bosworthtoller.com/34931"
+    ]
   }
 ]

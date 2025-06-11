@@ -1,77 +1,67 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "comrade",
-      "etymology": [
-        {
-          "name": "camera",
-          "origin": "Latin"
-        },
-        {
-          "name": "camarada",
-          "origin": "Inglish"
-        },
-        {
-          "name": "camarade",
-          "origin": "French"
-        },
-        {
-          "name": "comrade",
-          "origin": "Modern English"
-        },
-        {
-          "name": "cámerad -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/comrade#etymonline_v_17292",
-        "https://www.oed.com/dictionary/comrade_n?tab=factsheet#8619766",
-        "https://www.larousse.fr/dictionnaires/francais/camarade/12459",
-        "https://www.spanishdict.com/translate/camarada",
-        "https://latin-dictionary.net/definition/7698/camera-camerae"
-      ]
-    }
+    "name": "comrade",
+    "etymology": [
+      {
+        "name": "camera",
+        "origin": "Latin"
+      },
+      {
+        "name": "camarada",
+        "origin": "Inglish"
+      },
+      {
+        "name": "camarade",
+        "origin": "French"
+      },
+      {
+        "name": "comrade",
+        "origin": "Modern English"
+      },
+      {
+        "name": "cámerad -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/comrade#etymonline_v_17292",
+      "https://www.oed.com/dictionary/comrade_n?tab=factsheet#8619766",
+      "https://www.larousse.fr/dictionnaires/francais/camarade/12459",
+      "https://www.spanishdict.com/translate/camarada",
+      "https://latin-dictionary.net/definition/7698/camera-camerae"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "comradery",
-      "etymology": [
-        {
-          "name": "camaraderie",
-          "origin": "French"
-        },
-        {
-          "name": "comradery",
-          "origin": "Modern English"
-        },
-        {
-          "name": "cameráderie, cameráderis",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/comradery#etymonline_v_28504",
-        "https://www.etymonline.com/word/camaraderie#etymonline_v_624",
-        "https://www.merriam-webster.com/dictionary/comradery",
-        "https://www.larousse.fr/dictionnaires/francais/camaraderie/12460"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "comradery",
+    "etymology": [
+      {
+        "name": "camaraderie",
+        "origin": "French"
+      },
+      {
+        "name": "comradery",
+        "origin": "Modern English"
+      },
+      {
+        "name": "cameráderie, cameráderis",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/comradery#etymonline_v_28504",
+      "https://www.etymonline.com/word/camaraderie#etymonline_v_624",
+      "https://www.merriam-webster.com/dictionary/comradery",
+      "https://www.larousse.fr/dictionnaires/francais/camaraderie/12460"
+    ]
   }
 ]

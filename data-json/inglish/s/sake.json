@@ -1,110 +1,85 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "sake",
-      "etymology": [
-        {
-          "name": "酒",
-          "origin": "Japanese"
-        },
-        {
-          "name": "sake",
-          "origin": "Modern English"
-        },
-        {
-          "name": "sáki -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/sake#etymonline_v_22612",
-        "https://www.etymonline.com/word/saki#etymonline_v_37557",
-        "https://www.oed.com/dictionary/sake_n2?tab=factsheet#24682437",
-        "https://jisho.org/search/%E9%85%92%20%23kanji"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "sake",
-      "etymology": [
-        {
-          "name": "sacu",
-          "origin": "Old English"
-        },
-        {
-          "name": "sake",
-          "origin": "Middle English"
-        },
-        {
-          "name": "sâke, saix",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/sake#etymonline_v_22611",
-        "https://www.oed.com/dictionary/sake_n1?tab=factsheet#24681132",
-        "https://bosworthtoller.com/26129"
-      ],
-      "gender": "masculine",
-      "number": "singular"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to forsake",
-      "conjugations": {
-        "thirdPerson": "s"
+    "name": "sake",
+    "etymology": [
+      {
+        "name": "酒",
+        "origin": "Japanese"
       },
-      "etymology": [
-        "forsacan",
-        "to forsake",
-        "ta forsâke -s forsuke forsâken -ing"
-      ]
-    },
-    "standard": {
-      "name": "to forsake",
-      "etymology": [
-        {
-          "name": "forsacan",
-          "origin": "Old English"
-        },
-        {
-          "name": "to forsake",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta forsâke -s forsuke forsâken -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/forsake#etymonline_v_11818",
-        "https://www.oed.com/dictionary/forsake_v?tab=pronunciation#3822775",
-        "https://bosworthtoller.com/45890"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
+      {
+        "name": "sake",
+        "origin": "Modern English"
+      },
+      {
+        "name": "sáki -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/sake#etymonline_v_22612",
+      "https://www.etymonline.com/word/saki#etymonline_v_37557",
+      "https://www.oed.com/dictionary/sake_n2?tab=factsheet#24682437",
+      "https://jisho.org/search/%E9%85%92%20%23kanji"
+    ]
+  },
+  {
+    "name": "sake",
+    "etymology": [
+      {
+        "name": "sacu",
+        "origin": "Old English"
+      },
+      {
+        "name": "sake",
+        "origin": "Middle English"
+      },
+      {
+        "name": "sâke, saix",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/sake#etymonline_v_22611",
+      "https://www.oed.com/dictionary/sake_n1?tab=factsheet#24681132",
+      "https://bosworthtoller.com/26129"
+    ]
+  },
+  {
+    "infinitive": "to forsake",
+    "etymology": [
+      {
+        "name": "forsacan",
+        "origin": "Old English"
+      },
+      {
+        "name": "to forsake",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta forsâke -s forsuke forsâken -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta forsâkes"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/forsake#etymonline_v_11818",
+      "https://www.oed.com/dictionary/forsake_v?tab=pronunciation#3822775",
+      "https://bosworthtoller.com/45890"
+    ]
   }
 ]

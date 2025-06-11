@@ -1,92 +1,69 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to deprive",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to deprive",
+    "etymology": [
+      {
+        "name": "de + privare, deprivare",
+        "origin": "Medieval Latin"
       },
-      "etymology": [
-        "de + privare, deprivare",
-        "depriver",
-        "depriven",
-        "to deprive",
-        "ta deprîve -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to deprive",
-      "etymology": [
-        {
-          "name": "de + privare, deprivare",
-          "origin": "Medieval Latin"
-        },
-        {
-          "name": "depriver",
-          "origin": "Old French"
-        },
-        {
-          "name": "depriven",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to deprive",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta deprîve -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "depriver",
+        "origin": "Old French"
+      },
+      {
+        "name": "depriven",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to deprive",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta deprîve -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta deprîves",
+          "pastTense": "ta deprîved",
+          "progressive": "ta deprîving"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/deprive#etymonline_v_5623",
-        "https://www.merriam-webster.com/dictionary/deprive",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED11173",
-        "https://www.anglo-norman.net/entry/depriver",
-        "https://latin-dictionary.net/definition/31661/privo-privare-privavi-privatus",
-        "https://latin-dictionary.net/definition/15660/de"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/deprive#etymonline_v_5623",
+      "https://www.merriam-webster.com/dictionary/deprive",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED11173",
+      "https://www.anglo-norman.net/entry/depriver",
+      "https://latin-dictionary.net/definition/31661/privo-privare-privavi-privatus",
+      "https://latin-dictionary.net/definition/15660/de"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "deprivation",
-      "etymology": [
-        {
-          "name": "deprivare, deprivatio",
-          "origin": "Medieval Latin"
-        },
-        {
-          "name": "deprivation",
-          "origin": "Modern English"
-        },
-        {
-          "name": "deprivâcion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/deprivation#etymonline_v_29610",
-        "https://www.merriam-webster.com/dictionary/deprivation"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "deprivation",
+    "etymology": [
+      {
+        "name": "deprivare, deprivatio",
+        "origin": "Medieval Latin"
+      },
+      {
+        "name": "deprivation",
+        "origin": "Modern English"
+      },
+      {
+        "name": "deprivâcion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/deprivation#etymonline_v_29610",
+      "https://www.merriam-webster.com/dictionary/deprivation"
+    ]
   }
 ]

@@ -1,155 +1,121 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "nude",
-      "etymology": [
-        {
-          "name": "nudus",
-          "origin": "Latin"
-        },
-        {
-          "name": "nud",
-          "origin": "French"
-        },
-        {
-          "name": "nude",
-          "origin": "Modern English"
-        },
-        {
-          "name": "nude, núds -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/nude#etymonline_v_45339",
-        "https://www.etymonline.com/word/nude#etymonline_v_9860",
-        "https://www.oed.com/dictionary/nude_adj?tab=factsheet#34388151",
-        "https://www.larousse.fr/dictionnaires/francais/nu/55164",
-        "https://anglo-norman.net/entry/nu_2",
-        "https://latin-dictionary.net/definition/28072/nudus-nuda-nudum"
-      ],
-      "degrees": {
-        "positive": "ds",
-        "comparative": "s"
+    "name": "nude",
+    "etymology": [
+      {
+        "name": "nudus",
+        "origin": "Latin"
+      },
+      {
+        "name": "nud",
+        "origin": "French"
+      },
+      {
+        "name": "nude",
+        "origin": "Modern English"
+      },
+      {
+        "name": "nude, núds -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "masculine noun"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/nude#etymonline_v_45339",
+      "https://www.etymonline.com/word/nude#etymonline_v_9860",
+      "https://www.oed.com/dictionary/nude_adj?tab=factsheet#34388151",
+      "https://www.larousse.fr/dictionnaires/francais/nu/55164",
+      "https://anglo-norman.net/entry/nu_2",
+      "https://latin-dictionary.net/definition/28072/nudus-nuda-nudum"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "nudity",
-      "etymology": [
-        {
-          "name": "nudus, nuditatem",
-          "origin": "Latin"
-        },
-        {
-          "name": "nudité",
-          "origin": "French"
-        },
-        {
-          "name": "nudity",
-          "origin": "Modern English"
-        },
-        {
-          "name": "nudetie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/nudity#etymonline_v_35334",
-        "https://www.oed.com/dictionary/nudity_n?tab=factsheet#34392447",
-        "https://www.larousse.fr/dictionnaires/francais/nudit%C3%A9/55217",
-        "https://latin-dictionary.net/definition/28068/nuditas-nuditatis",
-        "https://latin-dictionary.net/definition/28072/nudus-nuda-nudum"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "nudity",
+    "etymology": [
+      {
+        "name": "nudus, nuditatem",
+        "origin": "Latin"
+      },
+      {
+        "name": "nudité",
+        "origin": "French"
+      },
+      {
+        "name": "nudity",
+        "origin": "Modern English"
+      },
+      {
+        "name": "nudetie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/nudity#etymonline_v_35334",
+      "https://www.oed.com/dictionary/nudity_n?tab=factsheet#34392447",
+      "https://www.larousse.fr/dictionnaires/francais/nudit%C3%A9/55217",
+      "https://latin-dictionary.net/definition/28068/nuditas-nuditatis",
+      "https://latin-dictionary.net/definition/28072/nudus-nuda-nudum"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "nudism  (m n)",
-      "etymology": [
-        {
-          "name": "nudisme",
-          "origin": "French"
-        },
-        {
-          "name": "nudism  (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/nudism#etymonline_v_35336"
-      ]
-    }
+    "name": "nudism  (m n)",
+    "etymology": [
+      {
+        "name": "nudisme",
+        "origin": "French"
+      },
+      {
+        "name": "nudism  (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/nudism#etymonline_v_35336"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "nudist  -s (m n)",
-      "etymology": [
-        {
-          "name": "nudiste",
-          "origin": "French"
-        },
-        {
-          "name": "nudist  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/nudist#etymonline_v_35335"
-      ]
-    }
+    "name": "nudist  -s (m n)",
+    "etymology": [
+      {
+        "name": "nudiste",
+        "origin": "French"
+      },
+      {
+        "name": "nudist  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/nudist#etymonline_v_35335"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "nudification",
-      "etymology": [
-        {
-          "name": "nudification",
-          "origin": "French"
-        },
-        {
-          "name": "nudificâcion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/nudification#etymonline_v_54479",
-        "https://www.oed.com/dictionary/nudification_n?tab=factsheet#34391551"
-      ],
-      "number": "plural"
-    }
+    "name": "nudification",
+    "etymology": [
+      {
+        "name": "nudification",
+        "origin": "French"
+      },
+      {
+        "name": "nudificâcion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/nudification#etymonline_v_54479",
+      "https://www.oed.com/dictionary/nudification_n?tab=factsheet#34391551"
+    ]
   }
 ]

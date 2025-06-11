@@ -1,78 +1,57 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to peek",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to peek",
+    "etymology": [
+      {
+        "name": "piken",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "piken",
-        "to peek",
-        "ta pieke -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to peek",
-      "etymology": [
-        {
-          "name": "piken",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to peek",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta pieke -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to peek",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta pieke -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta piekes",
+          "pastTense": "ta pieked",
+          "progressive": "ta pieking"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/peek#etymonline_v_10254",
-        "https://www.merriam-webster.com/dictionary/peek#dictionary-entry-1",
-        "https://www.oed.com/dictionary/peek_v1?tab=factsheet#31459752",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED33335"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/peek#etymonline_v_10254",
+      "https://www.merriam-webster.com/dictionary/peek#dictionary-entry-1",
+      "https://www.oed.com/dictionary/peek_v1?tab=factsheet#31459752",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED33335"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "peek",
-      "etymology": [
-        {
-          "name": "peek",
-          "origin": "Modern English"
-        },
-        {
-          "name": "piek, piex",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/peek#etymonline_v_46109",
-        "https://www.etymonline.com/word/peek#etymonline_v_10254",
-        "https://www.merriam-webster.com/dictionary/peek#dictionary-entry-2",
-        "https://www.oed.com/dictionary/peek_n1?tab=factsheet#31459266"
-      ],
-      "gender": "masculine",
-      "number": "singular"
-    }
+    "name": "peek",
+    "etymology": [
+      {
+        "name": "peek",
+        "origin": "Modern English"
+      },
+      {
+        "name": "piek, piex",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/peek#etymonline_v_46109",
+      "https://www.etymonline.com/word/peek#etymonline_v_10254",
+      "https://www.merriam-webster.com/dictionary/peek#dictionary-entry-2",
+      "https://www.oed.com/dictionary/peek_n1?tab=factsheet#31459266"
+    ]
   }
 ]

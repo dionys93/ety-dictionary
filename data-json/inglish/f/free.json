@@ -1,118 +1,91 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "free",
-      "etymology": [
-        {
-          "name": "freo",
-          "origin": "Old English"
-        },
-        {
-          "name": "free",
-          "origin": "Middle English"
-        },
-        {
-          "name": "frihe -r -st -ly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/free",
-        "https://www.oed.com/dictionary/free_adj?tab=factsheet#3662750",
-        "https://bosworthtoller.com/12271"
-      ],
-      "degrees": {
-        "positive": "frihe",
-        "comparative": "r",
-        "superlative": "st"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to free",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "free",
+    "etymology": [
+      {
+        "name": "freo",
+        "origin": "Old English"
       },
-      "etymology": [
-        "freogan",
-        "to free",
-        "ta frihe -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to free",
-      "etymology": [
-        {
-          "name": "freogan",
-          "origin": "Old English"
-        },
-        {
-          "name": "to free",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta frihe -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "free",
+        "origin": "Middle English"
+      },
+      {
+        "name": "frihe -r -st -ly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ],
+        "degrees": {
+          "positive": "frihe",
+          "comparative": "r",
+          "superlative": "st"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/free",
-        "https://www.oed.com/dictionary/free_v?tab=factsheet#3670654",
-        "https://bosworthtoller.com/12286"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/free",
+      "https://www.oed.com/dictionary/free_adj?tab=factsheet#3662750",
+      "https://bosworthtoller.com/12271"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "freedom",
-      "etymology": [
-        {
-          "name": "freodom",
-          "origin": "Old English"
-        },
-        {
-          "name": "freedom",
-          "origin": "Middle English"
-        },
-        {
-          "name": "friedom -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
+    "infinitive": "to free",
+    "etymology": [
+      {
+        "name": "freogan",
+        "origin": "Old English"
+      },
+      {
+        "name": "to free",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta frihe -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta frihes",
+          "pastTense": "ta frihed",
+          "progressive": "ta frihing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/freedom",
-        "https://www.etymonline.com/word/-dom",
-        "https://www.etymonline.com/word/free",
-        "https://www.oed.com/dictionary/freedom_n?tab=pronunciation#3673716",
-        "https://bosworthtoller.com/12283"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/free",
+      "https://www.oed.com/dictionary/free_v?tab=factsheet#3670654",
+      "https://bosworthtoller.com/12286"
+    ]
+  },
+  {
+    "name": "freedom",
+    "etymology": [
+      {
+        "name": "freodom",
+        "origin": "Old English"
+      },
+      {
+        "name": "freedom",
+        "origin": "Middle English"
+      },
+      {
+        "name": "friedom -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/freedom",
+      "https://www.etymonline.com/word/-dom",
+      "https://www.etymonline.com/word/free",
+      "https://www.oed.com/dictionary/freedom_n?tab=pronunciation#3673716",
+      "https://bosworthtoller.com/12283"
+    ]
   }
 ]

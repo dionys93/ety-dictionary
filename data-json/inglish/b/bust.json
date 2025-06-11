@@ -1,47 +1,41 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "bust",
-      "etymology": [
-        {
-          "name": "ambi + urere, amburere, ambustus, ambustum, bustum",
-          "origin": "Latin"
-        },
-        {
-          "name": "busto",
-          "origin": "Italian"
-        },
-        {
-          "name": "buste",
-          "origin": "French"
-        },
-        {
-          "name": "bust",
-          "origin": "Modern English"
-        },
-        {
-          "name": "buste, busts",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bust#etymonline_v_18135",
-        "https://www.merriam-webster.com/dictionary/bust#dictionary-entry-1",
-        "https://www.oed.com/dictionary/bust_n2?tab=pronunciation#11532935",
-        "https://www.collinsdictionary.com/us/dictionary/french-english/buste",
-        "https://www.collinsdictionary.com/us/dictionary/italian-english/busto",
-        "https://latin-dictionary.net/definition/7156/bustum-busti",
-        "https://latin-dictionary.net/definition/2969/amburo-amburere-ambussi-ambustus"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "bust",
+    "etymology": [
+      {
+        "name": "ambi + urere, amburere, ambustus, ambustum, bustum",
+        "origin": "Latin"
+      },
+      {
+        "name": "busto",
+        "origin": "Italian"
+      },
+      {
+        "name": "buste",
+        "origin": "French"
+      },
+      {
+        "name": "bust",
+        "origin": "Modern English"
+      },
+      {
+        "name": "buste, busts",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bust#etymonline_v_18135",
+      "https://www.merriam-webster.com/dictionary/bust#dictionary-entry-1",
+      "https://www.oed.com/dictionary/bust_n2?tab=pronunciation#11532935",
+      "https://www.collinsdictionary.com/us/dictionary/french-english/buste",
+      "https://www.collinsdictionary.com/us/dictionary/italian-english/busto",
+      "https://latin-dictionary.net/definition/7156/bustum-busti",
+      "https://latin-dictionary.net/definition/2969/amburo-amburere-ambussi-ambustus"
+    ]
   }
 ]

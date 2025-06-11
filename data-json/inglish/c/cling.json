@@ -1,78 +1,58 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to cling",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to cling",
+    "etymology": [
+      {
+        "name": "clingan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "clingan",
-        "clingen",
-        "to cling",
-        "ta clingue -s clâng clong clinguing"
-      ]
-    },
-    "standard": {
-      "name": "to cling",
-      "etymology": [
-        {
-          "name": "clingan",
-          "origin": "Old English"
-        },
-        {
-          "name": "clingen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to cling",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta clingue -s clâng clong clinguing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "clingen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to cling",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta clingue -s clâng clong clinguing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta clingues"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/cling#etymonline_v_25686",
-        "https://www.merriam-webster.com/dictionary/cling#dictionary-entry-1",
-        "https://www.oed.com/dictionary/cling_v1?tab=factsheet#9119635",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8040",
-        "https://bosworthtoller.com/6347"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/cling#etymonline_v_25686",
+      "https://www.merriam-webster.com/dictionary/cling#dictionary-entry-1",
+      "https://www.oed.com/dictionary/cling_v1?tab=factsheet#9119635",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8040",
+      "https://bosworthtoller.com/6347"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "clingy",
-      "etymology": [
-        {
-          "name": "clingy",
-          "origin": "Modern English"
-        },
-        {
-          "name": "clinghy, clinguier, clinguiest",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/clingy#etymonline_v_28195",
-        "https://www.etymonline.com/word/cling#etymonline_v_25686",
-        "https://www.etymonline.com/word/-y#etymonline_v_25631",
-        "https://www.merriam-webster.com/dictionary/clingy"
-      ]
-    }
+    "name": "clingy",
+    "etymology": [
+      {
+        "name": "clingy",
+        "origin": "Modern English"
+      },
+      {
+        "name": "clinghy, clinguier, clinguiest",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/clingy#etymonline_v_28195",
+      "https://www.etymonline.com/word/cling#etymonline_v_25686",
+      "https://www.etymonline.com/word/-y#etymonline_v_25631",
+      "https://www.merriam-webster.com/dictionary/clingy"
+    ]
   }
 ]

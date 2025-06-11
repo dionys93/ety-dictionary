@@ -1,83 +1,64 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "pillow",
-      "etymology": [
-        {
-          "name": "pulvinus",
-          "origin": "Latin"
-        },
-        {
-          "name": "pyle",
-          "origin": "Old English"
-        },
-        {
-          "name": "pilwe",
-          "origin": "Middle English"
-        },
-        {
-          "name": "pillow",
-          "origin": "Modern English"
-        },
-        {
-          "name": "pillo -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/pillow#etymonline_v_14993",
-        "https://www.merriam-webster.com/dictionary/pillow#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED33391",
-        "https://bosworthtoller.com/25412",
-        "https://latin-dictionary.net/definition/32301/pulvinus-pulvini"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "pillow",
+    "etymology": [
+      {
+        "name": "pulvinus",
+        "origin": "Latin"
+      },
+      {
+        "name": "pyle",
+        "origin": "Old English"
+      },
+      {
+        "name": "pilwe",
+        "origin": "Middle English"
+      },
+      {
+        "name": "pillow",
+        "origin": "Modern English"
+      },
+      {
+        "name": "pillo -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/pillow#etymonline_v_14993",
+      "https://www.merriam-webster.com/dictionary/pillow#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED33391",
+      "https://bosworthtoller.com/25412",
+      "https://latin-dictionary.net/definition/32301/pulvinus-pulvini"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to pillow",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
+    "infinitive": "to pillow",
+    "etymology": [
+      {
+        "name": "to pillow",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to pillow",
-        "ta pilloe -s -d -ɯing"
-      ]
-    },
-    "standard": {
-      "name": "to pillow",
-      "etymology": [
-        {
-          "name": "to pillow",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta pilloe -s -d -ɯing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta pilloe -s -d -ɯing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta pilloes",
+          "pastTense": "ta pilloed"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/pillow#etymonline_v_45546",
-        "https://www.etymonline.com/word/pillow#etymonline_v_14993",
-        "https://www.merriam-webster.com/dictionary/pillow#dictionary-entry-2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/pillow#etymonline_v_45546",
+      "https://www.etymonline.com/word/pillow#etymonline_v_14993",
+      "https://www.merriam-webster.com/dictionary/pillow#dictionary-entry-2"
+    ]
   }
 ]

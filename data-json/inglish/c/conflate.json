@@ -1,108 +1,81 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to conflate",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to conflate",
+    "etymology": [
+      {
+        "name": "conflare, conflatus",
+        "origin": "Latin"
       },
-      "etymology": [
-        "conflare, conflatus",
-        "to conflate",
-        "ta conflâte -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to conflate",
-      "etymology": [
-        {
-          "name": "conflare, conflatus",
-          "origin": "Latin"
-        },
-        {
-          "name": "to conflate",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta conflâte -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to conflate",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta conflâte -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta conflâtes",
+          "pastTense": "ta conflâted",
+          "progressive": "ta conflâting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/conflate#etymonline_v_18190",
-        "https://www.oed.com/dictionary/conflate_v?tab=factsheet#8504565",
-        "https://latin-dictionary.net/definition/12477/conflo-conflare-conflavi-conflatus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/conflate#etymonline_v_18190",
+      "https://www.oed.com/dictionary/conflate_v?tab=factsheet#8504565",
+      "https://latin-dictionary.net/definition/12477/conflo-conflare-conflavi-conflatus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "conflate",
-      "etymology": [
-        {
-          "name": "conflate",
-          "origin": "Modern English"
-        },
-        {
-          "name": "conflât -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.oed.com/dictionary/conflate_adj?tab=factsheet#8504449"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "conflate",
+    "etymology": [
+      {
+        "name": "conflate",
+        "origin": "Modern English"
+      },
+      {
+        "name": "conflât -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.oed.com/dictionary/conflate_adj?tab=factsheet#8504449"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "conflation",
-      "etymology": [
-        {
-          "name": "conflare, conflatio, conflationem",
-          "origin": "Latin"
-        },
-        {
-          "name": "conflation",
-          "origin": "Modern English"
-        },
-        {
-          "name": "conflâcion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/conflation#etymonline_v_28605",
-        "https://www.oed.com/dictionary/conflation_n?tab=factsheet#8504744",
-        "https://latin-dictionary.net/definition/12459/conflatio-conflationis",
-        "https://latin-dictionary.net/definition/12477/conflo-conflare-conflavi-conflatus"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "conflation",
+    "etymology": [
+      {
+        "name": "conflare, conflatio, conflationem",
+        "origin": "Latin"
+      },
+      {
+        "name": "conflation",
+        "origin": "Modern English"
+      },
+      {
+        "name": "conflâcion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/conflation#etymonline_v_28605",
+      "https://www.oed.com/dictionary/conflation_n?tab=factsheet#8504744",
+      "https://latin-dictionary.net/definition/12459/conflatio-conflationis",
+      "https://latin-dictionary.net/definition/12477/conflo-conflare-conflavi-conflatus"
+    ]
   }
 ]

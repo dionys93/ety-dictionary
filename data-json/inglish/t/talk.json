@@ -1,123 +1,95 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to talk",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to talk",
+    "etymology": [
+      {
+        "name": "talu",
+        "origin": "Old English"
       },
-      "etymology": [
-        "talu",
-        "tale, talken",
-        "to talk",
-        "ta tauke -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to talk",
-      "etymology": [
-        {
-          "name": "talu",
-          "origin": "Old English"
-        },
-        {
-          "name": "tale, talken",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to talk",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta tauke -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "tale, talken",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to talk",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta tauke -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta taukes",
+          "pastTense": "ta tauked",
+          "progressive": "ta tauking"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/talk#etymonline_v_4338",
-        "https://www.etymonline.com/word/tale#etymonline_v_4334",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44431",
-        "https://bosworthtoller.com/30197"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/talk#etymonline_v_4338",
+      "https://www.etymonline.com/word/tale#etymonline_v_4334",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44431",
+      "https://bosworthtoller.com/30197"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "talk",
-      "etymology": [
-        {
-          "name": "talu",
-          "origin": "Old English"
-        },
-        {
-          "name": "tale, talken",
-          "origin": "Middle English"
-        },
-        {
-          "name": "talk",
-          "origin": "Modern English"
-        },
-        {
-          "name": "tauke, taux",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/talk#etymonline_v_24613",
-        "https://www.etymonline.com/word/talk#etymonline_v_4338",
-        "https://www.etymonline.com/word/tale#etymonline_v_4334",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44431",
-        "https://bosworthtoller.com/30197"
-      ],
-      "gender": "masculine",
-      "number": "singular"
-    }
+    "name": "talk",
+    "etymology": [
+      {
+        "name": "talu",
+        "origin": "Old English"
+      },
+      {
+        "name": "tale, talken",
+        "origin": "Middle English"
+      },
+      {
+        "name": "talk",
+        "origin": "Modern English"
+      },
+      {
+        "name": "tauke, taux",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/talk#etymonline_v_24613",
+      "https://www.etymonline.com/word/talk#etymonline_v_4338",
+      "https://www.etymonline.com/word/tale#etymonline_v_4334",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44431",
+      "https://bosworthtoller.com/30197"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "talkative",
-      "etymology": [
-        {
-          "name": "talkative",
-          "origin": "Modern English"
-        },
-        {
-          "name": "taukatif -vly -ness",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
+    "name": "talkative",
+    "etymology": [
+      {
+        "name": "talkative",
+        "origin": "Modern English"
+      },
+      {
+        "name": "taukatif -vly -ness",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ],
+        "degrees": {
+          "positive": "taukatif",
+          "comparative": "vly",
+          "superlative": "ness"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/talkative#etymonline_v_38973",
-        "https://www.merriam-webster.com/dictionary/talkative"
-      ],
-      "degrees": {
-        "positive": "taukatif",
-        "comparative": "vly",
-        "superlative": "ness"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/talkative#etymonline_v_38973",
+      "https://www.merriam-webster.com/dictionary/talkative"
+    ]
   }
 ]

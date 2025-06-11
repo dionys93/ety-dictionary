@@ -1,36 +1,30 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "ordeal",
-      "etymology": [
-        {
-          "name": "ordel, ordal",
-          "origin": "Old English"
-        },
-        {
-          "name": "ordeal",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ordiele, ordiels",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/ordeal#etymonline_v_7123",
-        "https://www.oed.com/dictionary/ordeal_n?tab=factsheet#33282289",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED30815",
-        "https://bosworthtoller.com/24900"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "ordeal",
+    "etymology": [
+      {
+        "name": "ordel, ordal",
+        "origin": "Old English"
+      },
+      {
+        "name": "ordeal",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ordiele, ordiels",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/ordeal#etymonline_v_7123",
+      "https://www.oed.com/dictionary/ordeal_n?tab=factsheet#33282289",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED30815",
+      "https://bosworthtoller.com/24900"
+    ]
   }
 ]

@@ -1,53 +1,37 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to learn",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to learn",
+    "etymology": [
+      {
+        "name": "leornian",
+        "origin": "Old English"
       },
-      "etymology": [
-        "leornian",
-        "lernen",
-        "to learn",
-        "ta lêne -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to learn",
-      "etymology": [
-        {
-          "name": "leornian",
-          "origin": "Old English"
-        },
-        {
-          "name": "lernen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to learn",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta lêne -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "lernen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to learn",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta lêne -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta lênes",
+          "pastTense": "ta lêned",
+          "progressive": "ta lêning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/learn#etymonline_v_6626",
-        "https://www.merriam-webster.com/dictionary/learn#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25191",
-        "https://bosworthtoller.com/21483"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/learn#etymonline_v_6626",
+      "https://www.merriam-webster.com/dictionary/learn#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25191",
+      "https://bosworthtoller.com/21483"
+    ]
   }
 ]

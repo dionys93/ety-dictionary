@@ -1,52 +1,36 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to thaw",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to thaw",
+    "etymology": [
+      {
+        "name": "þawian",
+        "origin": "Old English"
       },
-      "etymology": [
-        "þawian",
-        "thauen",
-        "to thaw",
-        "ta þauhe -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to thaw",
-      "etymology": [
-        {
-          "name": "þawian",
-          "origin": "Old English"
-        },
-        {
-          "name": "thauen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to thaw",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta þauhe -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "thauen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to thaw",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta þauhe -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta þauhes",
+          "pastTense": "ta þauhed",
+          "progressive": "ta þauhing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/thaw",
-        "https://www.oed.com/dictionary/thaw_v?tab=factsheet#18776937",
-        "https://bosworthtoller.com/31543"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/thaw",
+      "https://www.oed.com/dictionary/thaw_v?tab=factsheet#18776937",
+      "https://bosworthtoller.com/31543"
+    ]
   }
 ]

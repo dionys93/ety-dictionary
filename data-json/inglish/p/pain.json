@@ -1,113 +1,85 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "pain  -s (m n)",
-      "etymology": [
-        {
-          "name": "ποινή",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "poena",
-          "origin": "Latin"
-        },
-        {
-          "name": "peine",
-          "origin": "Old French"
-        },
-        {
-          "name": "pain  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/pain#etymonline_v_2992",
-        "https://www.merriam-webster.com/dictionary/pain#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32728",
-        "https://anglo-norman.net/entry/peine_1",
-        "https://latin-dictionary.net/definition/30791/poena-poenae",
-        "https://lsj.gr/wiki/%CF%80%CE%BF%CE%B9%CE%BD%CE%AE"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to pain",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "pain  -s (m n)",
+    "etymology": [
+      {
+        "name": "ποινή",
+        "origin": "Ancient Greek"
       },
-      "etymology": [
-        "pener",
-        "peinen",
-        "to pain",
-        "ta paine -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to pain",
-      "etymology": [
-        {
-          "name": "pener",
-          "origin": "Old French"
-        },
-        {
-          "name": "peinen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to pain",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta paine -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/pain#etymonline_v_44817",
-        "https://www.merriam-webster.com/dictionary/pain#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32734",
-        "https://anglo-norman.net/entry/peiner_1"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "poena",
+        "origin": "Latin"
+      },
+      {
+        "name": "peine",
+        "origin": "Old French"
+      },
+      {
+        "name": "pain  -s (m n)",
+        "origin": "Modern English"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/pain#etymonline_v_2992",
+      "https://www.merriam-webster.com/dictionary/pain#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32728",
+      "https://anglo-norman.net/entry/peine_1",
+      "https://latin-dictionary.net/definition/30791/poena-poenae",
+      "https://lsj.gr/wiki/%CF%80%CE%BF%CE%B9%CE%BD%CE%AE"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "painful  -ly (adj)",
-      "etymology": [
-        {
-          "name": "peineful",
-          "origin": "Middle English"
-        },
-        {
-          "name": "painful  -ly (adj)",
-          "origin": "Modern English"
+    "infinitive": "to pain",
+    "etymology": [
+      {
+        "name": "pener",
+        "origin": "Old French"
+      },
+      {
+        "name": "peinen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to pain",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta paine -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta paines",
+          "pastTense": "ta pained",
+          "progressive": "ta paining"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/painful#etymonline_v_35691",
-        "https://www.etymonline.com/word/pain#etymonline_v_2992",
-        "https://www.etymonline.com/word/-ful#etymonline_v_32015",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32729"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/pain#etymonline_v_44817",
+      "https://www.merriam-webster.com/dictionary/pain#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32734",
+      "https://anglo-norman.net/entry/peiner_1"
+    ]
+  },
+  {
+    "name": "painful  -ly (adj)",
+    "etymology": [
+      {
+        "name": "peineful",
+        "origin": "Middle English"
+      },
+      {
+        "name": "painful  -ly (adj)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/painful#etymonline_v_35691",
+      "https://www.etymonline.com/word/pain#etymonline_v_2992",
+      "https://www.etymonline.com/word/-ful#etymonline_v_32015",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32729"
+    ]
   }
 ]

@@ -1,108 +1,86 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "crescent  -s (adj, m n)",
-      "etymology": [
-        {
-          "name": "crescere, crescentum, luna crescens",
-          "origin": "Latin"
-        },
-        {
-          "name": "creissant, croisant",
-          "origin": "Old French"
-        },
-        {
-          "name": "cressaunt",
-          "origin": "Inglish"
-        },
-        {
-          "name": "crescent  -s (adj, m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/crescent#etymonline_v_338",
-        "https://www.merriam-webster.com/dictionary/crescent#dictionary-entry-2",
-        "https://www.merriam-webster.com/dictionary/crescent#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10285",
-        "https://www.anglo-norman.net/entry/cressant",
-        "https://latin-dictionary.net/definition/14737/cresco-crescere-crevi-cretus",
-        "https://latin-dictionary.net/definition/14738/cresco-crescere-crevi-cretus"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "croissant",
-      "etymology": [
-        {
-          "name": "croissant",
-          "origin": "French"
-        },
-        {
-          "name": "cressante, cressánts",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/croissant#etymonline_v_377",
-        "https://www.etymonline.com/word/crescent#etymonline_v_338",
-        "https://www.merriam-webster.com/dictionary/croissant",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/croissant/20518",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/croissant/20517"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "crescendo",
-      "etymology": [
-        {
-          "name": "crescere",
-          "origin": "Latin"
-        },
-        {
-          "name": "crescendo",
-          "origin": "Italian"
-        },
-        {
-          "name": "cresçendo -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/crescendo#etymonline_v_29065",
-        "https://www.merriam-webster.com/dictionary/crescendo#dictionary-entry-2",
-        "https://www.merriam-webster.com/dictionary/crescendo#dictionary-entry-1",
-        "https://www.collinsdictionary.com/us/dictionary/italian-english/crescendo",
-        "https://latin-dictionary.net/definition/14738/cresco-crescere-crevi-cretus",
-        "https://latin-dictionary.net/definition/14737/cresco-crescere-crevi-cretus"
-      ],
-      "degrees": {
-        "positive": "endo",
-        "comparative": "s"
+    "name": "crescent  -s (adj, m n)",
+    "etymology": [
+      {
+        "name": "crescere, crescentum, luna crescens",
+        "origin": "Latin"
+      },
+      {
+        "name": "creissant, croisant",
+        "origin": "Old French"
+      },
+      {
+        "name": "cressaunt",
+        "origin": "Inglish"
+      },
+      {
+        "name": "crescent  -s (adj, m n)",
+        "origin": "Modern English"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/crescent#etymonline_v_338",
+      "https://www.merriam-webster.com/dictionary/crescent#dictionary-entry-2",
+      "https://www.merriam-webster.com/dictionary/crescent#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10285",
+      "https://www.anglo-norman.net/entry/cressant",
+      "https://latin-dictionary.net/definition/14737/cresco-crescere-crevi-cretus",
+      "https://latin-dictionary.net/definition/14738/cresco-crescere-crevi-cretus"
+    ]
+  },
+  {
+    "name": "croissant",
+    "etymology": [
+      {
+        "name": "croissant",
+        "origin": "French"
+      },
+      {
+        "name": "cressante, cressánts",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/croissant#etymonline_v_377",
+      "https://www.etymonline.com/word/crescent#etymonline_v_338",
+      "https://www.merriam-webster.com/dictionary/croissant",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/croissant/20518",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/croissant/20517"
+    ]
+  },
+  {
+    "name": "crescendo",
+    "etymology": [
+      {
+        "name": "crescere",
+        "origin": "Latin"
+      },
+      {
+        "name": "crescendo",
+        "origin": "Italian"
+      },
+      {
+        "name": "cresçendo -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "feminine noun"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/crescendo#etymonline_v_29065",
+      "https://www.merriam-webster.com/dictionary/crescendo#dictionary-entry-2",
+      "https://www.merriam-webster.com/dictionary/crescendo#dictionary-entry-1",
+      "https://www.collinsdictionary.com/us/dictionary/italian-english/crescendo",
+      "https://latin-dictionary.net/definition/14738/cresco-crescere-crevi-cretus",
+      "https://latin-dictionary.net/definition/14737/cresco-crescere-crevi-cretus"
+    ]
   }
 ]

@@ -1,102 +1,79 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to rescue",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to rescue",
+    "etymology": [
+      {
+        "name": "quatere, ex + cutere, excutere",
+        "origin": "Latin"
       },
-      "etymology": [
-        "quatere, ex + cutere, excutere",
-        "rescorre, rescoure, rescure",
-        "rescouen",
-        "to rescue",
-        "ta resc̃ue -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to rescue",
-      "etymology": [
-        {
-          "name": "quatere, ex + cutere, excutere",
-          "origin": "Latin"
-        },
-        {
-          "name": "rescorre, rescoure, rescure",
-          "origin": "Old French"
-        },
-        {
-          "name": "rescouen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to rescue",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta resc̃ue -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "rescorre, rescoure, rescure",
+        "origin": "Old French"
+      },
+      {
+        "name": "rescouen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to rescue",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta resc̃ue -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta resc̃ues",
+          "pastTense": "ta resc̃ued",
+          "progressive": "ta resc̃uing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/rescue#etymonline_v_48064",
-        "https://www.merriam-webster.com/dictionary/rescue",
-        "https://www.oed.com/dictionary/rescue_v?tab=factsheet#25919961",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37035",
-        "https://anglo-norman.net/entry/rescure",
-        "https://latin-dictionary.net/definition/19690/excutio-excutere-excussi-excussus",
-        "https://latin-dictionary.net/definition/32597/quatio-quatere-quassus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/rescue#etymonline_v_48064",
+      "https://www.merriam-webster.com/dictionary/rescue",
+      "https://www.oed.com/dictionary/rescue_v?tab=factsheet#25919961",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37035",
+      "https://anglo-norman.net/entry/rescure",
+      "https://latin-dictionary.net/definition/19690/excutio-excutere-excussi-excussus",
+      "https://latin-dictionary.net/definition/32597/quatio-quatere-quassus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "rescue",
-      "etymology": [
-        {
-          "name": "rescous",
-          "origin": "Old French"
-        },
-        {
-          "name": "rescoue",
-          "origin": "Middle English"
-        },
-        {
-          "name": "rescue",
-          "origin": "Modern English"
-        },
-        {
-          "name": "resc̃ue -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/rescue#etymonline_v_12881",
-        "https://www.etymonline.com/word/rescue#etymonline_v_48064",
-        "https://www.merriam-webster.com/dictionary/rescue",
-        "https://www.oed.com/dictionary/rescue_n?tab=factsheet#25918572",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37034",
-        "https://anglo-norman.net/entry/rescus_1",
-        "https://anglo-norman.net/entry/rescure"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "rescue",
+    "etymology": [
+      {
+        "name": "rescous",
+        "origin": "Old French"
+      },
+      {
+        "name": "rescoue",
+        "origin": "Middle English"
+      },
+      {
+        "name": "rescue",
+        "origin": "Modern English"
+      },
+      {
+        "name": "resc̃ue -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/rescue#etymonline_v_12881",
+      "https://www.etymonline.com/word/rescue#etymonline_v_48064",
+      "https://www.merriam-webster.com/dictionary/rescue",
+      "https://www.oed.com/dictionary/rescue_n?tab=factsheet#25918572",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37034",
+      "https://anglo-norman.net/entry/rescus_1",
+      "https://anglo-norman.net/entry/rescure"
+    ]
   }
 ]

@@ -1,67 +1,51 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "cranium",
-      "etymology": [
-        {
-          "name": "κάρα, κρᾶνίον",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "cranium",
-          "origin": "Medieval Latin"
-        },
-        {
-          "name": "crâniom, crânia",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/cranium#etymonline_v_297",
-        "https://www.merriam-webster.com/dictionary/cranium#dictionary-entry-1",
-        "https://lsj.gr/wiki/%CE%BA%CF%81%E1%BE%B6%CE%BD%CE%AF%CE%BF%CE%BD",
-        "https://lsj.gr/wiki/%CE%BA%CE%AC%CF%81%CE%B1"
-      ],
-      "number": "singular"
-    }
+    "name": "cranium",
+    "etymology": [
+      {
+        "name": "κάρα, κρᾶνίον",
+        "origin": "Ancient Greek"
+      },
+      {
+        "name": "cranium",
+        "origin": "Medieval Latin"
+      },
+      {
+        "name": "crâniom, crânia",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/cranium#etymonline_v_297",
+      "https://www.merriam-webster.com/dictionary/cranium#dictionary-entry-1",
+      "https://lsj.gr/wiki/%CE%BA%CF%81%E1%BE%B6%CE%BD%CE%AF%CE%BF%CE%BD",
+      "https://lsj.gr/wiki/%CE%BA%CE%AC%CF%81%CE%B1"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "cranium",
-      "etymology": [
-        {
-          "name": "cranium + -al, cranial",
-          "origin": "Modern English"
-        },
-        {
-          "name": "crânial -ly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/cranial#etymonline_v_29023",
-        "https://www.etymonline.com/word/cranium#etymonline_v_297",
-        "https://www.etymonline.com/word/-al#etymonline_v_32845",
-        "https://www.merriam-webster.com/dictionary/cranial"
-      ],
-      "degrees": {
-        "positive": "nial",
-        "comparative": "ly"
+    "name": "cranium + -al, cranial",
+    "etymology": [
+      {
+        "name": "cranium + -al, cranial",
+        "origin": "Modern English"
+      },
+      {
+        "name": "crânial -ly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/cranial#etymonline_v_29023",
+      "https://www.etymonline.com/word/cranium#etymonline_v_297",
+      "https://www.etymonline.com/word/-al#etymonline_v_32845",
+      "https://www.merriam-webster.com/dictionary/cranial"
+    ]
   }
 ]

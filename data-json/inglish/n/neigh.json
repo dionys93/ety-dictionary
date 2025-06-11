@@ -1,82 +1,60 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to neigh",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to neigh",
+    "etymology": [
+      {
+        "name": "hnægan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "hnægan",
-        "neighen",
-        "to neigh",
-        "ta nehe -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to neigh",
-      "etymology": [
-        {
-          "name": "hnægan",
-          "origin": "Old English"
-        },
-        {
-          "name": "neighen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to neigh",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta nehe -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "neighen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to neigh",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta nehe -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta nehes",
+          "pastTense": "ta nehed",
+          "progressive": "ta nehing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/neigh#etymonline_v_2386",
-        "https://www.merriam-webster.com/dictionary/neigh",
-        "https://www.oed.com/dictionary/neigh_v?tab=factsheet#35092638",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29256",
-        "https://bosworthtoller.com/19345"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/neigh#etymonline_v_2386",
+      "https://www.merriam-webster.com/dictionary/neigh",
+      "https://www.oed.com/dictionary/neigh_v?tab=factsheet#35092638",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29256",
+      "https://bosworthtoller.com/19345"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "neigh",
-      "etymology": [
-        {
-          "name": "neigh",
-          "origin": "Modern English"
-        },
-        {
-          "name": "neh -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/neigh",
-        "https://www.oed.com/dictionary/neigh_n?tab=factsheet#35092461"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "neigh",
+    "etymology": [
+      {
+        "name": "neigh",
+        "origin": "Modern English"
+      },
+      {
+        "name": "neh -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/neigh",
+      "https://www.oed.com/dictionary/neigh_n?tab=factsheet#35092461"
+    ]
   }
 ]

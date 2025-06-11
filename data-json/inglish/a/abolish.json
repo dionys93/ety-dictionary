@@ -1,212 +1,165 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to abolish",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to abolish",
+    "etymology": [
+      {
+        "name": "abolere",
+        "origin": "Latin"
       },
-      "etymology": [
-        "abolere",
-        "aboliss, abolir",
-        "abolisshen",
-        "to abolish",
-        "to abóliçe -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to abolish",
-      "etymology": [
-        {
-          "name": "abolere",
-          "origin": "Latin"
-        },
-        {
-          "name": "aboliss, abolir",
-          "origin": "Old French"
-        },
-        {
-          "name": "abolisshen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to abolish",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to abóliçe -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "aboliss, abolir",
+        "origin": "Old French"
+      },
+      {
+        "name": "abolisshen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to abolish",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to abóliçe -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to abóliçes",
+          "pastTense": "to abóliçed",
+          "progressive": "to abóliçing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/abolish#etymonline_v_57",
-        "https://www.merriam-webster.com/dictionary/abolish",
-        "https://www.oed.com/dictionary/abolish_v?tab=factsheet#7662366",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED137",
-        "https://www.collinsdictionary.com/us/dictionary/french-english/abolir",
-        "https://latin-dictionary.net/definition/156/aboleo-abolere-abolevi-abolitus",
-        "https://www.collinsdictionary.com/us/dictionary/english-spanish/abolition"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/abolish#etymonline_v_57",
+      "https://www.merriam-webster.com/dictionary/abolish",
+      "https://www.oed.com/dictionary/abolish_v?tab=factsheet#7662366",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED137",
+      "https://www.collinsdictionary.com/us/dictionary/french-english/abolir",
+      "https://latin-dictionary.net/definition/156/aboleo-abolere-abolevi-abolitus",
+      "https://www.collinsdictionary.com/us/dictionary/english-spanish/abolition"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "abolishment",
-      "etymology": [
-        {
-          "name": "abolishment",
-          "origin": "Modern English"
-        },
-        {
-          "name": "abóliçement -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/abolishment",
-        "https://www.collinsdictionary.com/us/dictionary/english-spanish/abolition",
-        "https://www.oed.com/dictionary/abolishment_n?tab=factsheet#7725113"
-      ],
-      "number": "plural"
-    }
+    "name": "abolishment",
+    "etymology": [
+      {
+        "name": "abolishment",
+        "origin": "Modern English"
+      },
+      {
+        "name": "abóliçement -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/abolishment",
+      "https://www.collinsdictionary.com/us/dictionary/english-spanish/abolition",
+      "https://www.oed.com/dictionary/abolishment_n?tab=factsheet#7725113"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "abolishable",
-      "etymology": [
-        {
-          "name": "abolishable",
-          "origin": "Modern English"
-        },
-        {
-          "name": "abóliciable",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/abolishable",
-        "https://www.oed.com/dictionary/abolishable_adj?tab=factsheet#7673942",
-        "https://www.collinsdictionary.com/us/dictionary/english-spanish/abolition"
-      ]
-    }
+    "name": "abolishable",
+    "etymology": [
+      {
+        "name": "abolishable",
+        "origin": "Modern English"
+      },
+      {
+        "name": "abóliciable",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/abolishable",
+      "https://www.oed.com/dictionary/abolishable_adj?tab=factsheet#7673942",
+      "https://www.collinsdictionary.com/us/dictionary/english-spanish/abolition"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "abolition",
-      "etymology": [
-        {
-          "name": "abolere, abolitio",
-          "origin": "Latin"
-        },
-        {
-          "name": "abolition",
-          "origin": "French"
-        },
-        {
-          "name": "abolicion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/abolition#etymonline_v_58",
-        "https://www.oed.com/dictionary/abolition_n?tab=factsheet#7735592",
-        "https://www.collinsdictionary.com/us/dictionary/french-english/abolition",
-        "https://latin-dictionary.net/definition/158/abolitio-abolitionis",
-        "https://latin-dictionary.net/definition/156/aboleo-abolere-abolevi-abolitus",
-        "https://www.collinsdictionary.com/us/dictionary/english-spanish/abolition"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "abolition",
+    "etymology": [
+      {
+        "name": "abolere, abolitio",
+        "origin": "Latin"
+      },
+      {
+        "name": "abolition",
+        "origin": "French"
+      },
+      {
+        "name": "abolicion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/abolition#etymonline_v_58",
+      "https://www.oed.com/dictionary/abolition_n?tab=factsheet#7735592",
+      "https://www.collinsdictionary.com/us/dictionary/french-english/abolition",
+      "https://latin-dictionary.net/definition/158/abolitio-abolitionis",
+      "https://latin-dictionary.net/definition/156/aboleo-abolere-abolevi-abolitus",
+      "https://www.collinsdictionary.com/us/dictionary/english-spanish/abolition"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "abolitionism",
-      "etymology": [
-        {
-          "name": "abolitionism",
-          "origin": "Modern English"
-        },
-        {
-          "name": "abolicionism",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/abolitionism#etymonline_v_29794",
-        "https://www.oed.com/dictionary/abolitionism_n?tab=factsheet#7761615",
-        "https://www.collinsdictionary.com/us/dictionary/english-spanish/abolition"
-      ],
-      "gender": "feminine",
-      "number": "singular"
-    }
+    "name": "abolitionism",
+    "etymology": [
+      {
+        "name": "abolitionism",
+        "origin": "Modern English"
+      },
+      {
+        "name": "abolicionism",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/abolitionism#etymonline_v_29794",
+      "https://www.oed.com/dictionary/abolitionism_n?tab=factsheet#7761615",
+      "https://www.collinsdictionary.com/us/dictionary/english-spanish/abolition"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "abolitionist",
-      "etymology": [
-        {
-          "name": "abolitionist",
-          "origin": "Modern English"
-        },
-        {
-          "name": "abolicionist -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/abolitionist#etymonline_v_29795",
-        "https://www.etymonline.com/word/abolition#etymonline_v_58",
-        "https://www.etymonline.com/word/-ist#etymonline_v_12278",
-        "https://www.oed.com/dictionary/abolitionist_n?tab=factsheet#7537897",
-        "https://www.collinsdictionary.com/us/dictionary/english-spanish/abolition"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "abolitionist",
+    "etymology": [
+      {
+        "name": "abolitionist",
+        "origin": "Modern English"
+      },
+      {
+        "name": "abolicionist -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/abolitionist#etymonline_v_29795",
+      "https://www.etymonline.com/word/abolition#etymonline_v_58",
+      "https://www.etymonline.com/word/-ist#etymonline_v_12278",
+      "https://www.oed.com/dictionary/abolitionist_n?tab=factsheet#7537897",
+      "https://www.collinsdictionary.com/us/dictionary/english-spanish/abolition"
+    ]
   }
 ]

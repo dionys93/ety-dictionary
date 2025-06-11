@@ -1,33 +1,27 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "dire",
-      "etymology": [
-        {
-          "name": "dirus",
-          "origin": "Latin"
-        },
-        {
-          "name": "dire",
-          "origin": "Modern English"
-        },
-        {
-          "name": "dîre",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/dire#etymonline_v_8614",
-        "https://www.oed.com/dictionary/dire_adj?tab=factsheet#6627168",
-        "https://latin-dictionary.net/definition/17989/dirus-dira"
-      ]
-    }
+    "name": "dire",
+    "etymology": [
+      {
+        "name": "dirus",
+        "origin": "Latin"
+      },
+      {
+        "name": "dire",
+        "origin": "Modern English"
+      },
+      {
+        "name": "dîre",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/dire#etymonline_v_8614",
+      "https://www.oed.com/dictionary/dire_adj?tab=factsheet#6627168",
+      "https://latin-dictionary.net/definition/17989/dirus-dira"
+    ]
   }
 ]

@@ -1,108 +1,87 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "severe",
-      "etymology": [
-        {
-          "name": "severus",
-          "origin": "Latin"
-        },
-        {
-          "name": "severe",
-          "origin": "Old French"
-        },
-        {
-          "name": "sevire -ness",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "feminine noun"
-          ]
+    "name": "severe",
+    "etymology": [
+      {
+        "name": "severus",
+        "origin": "Latin"
+      },
+      {
+        "name": "severe",
+        "origin": "Old French"
+      },
+      {
+        "name": "sevire -ness",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "feminine noun"
+        ],
+        "degrees": {
+          "positive": "sevire",
+          "comparative": "ness"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/severe#etymonline_v_30541",
-        "https://www.merriam-webster.com/dictionary/severe",
-        "https://www.collinsdictionary.com/us/dictionary/english/severe",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/s%C3%A9v%C3%A8re/71630",
-        "https://latin-dictionary.net/definition/34922/severus-severa"
-      ],
-      "degrees": {
-        "positive": "sevire",
-        "comparative": "ness"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/severe#etymonline_v_30541",
+      "https://www.merriam-webster.com/dictionary/severe",
+      "https://www.collinsdictionary.com/us/dictionary/english/severe",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/s%C3%A9v%C3%A8re/71630",
+      "https://latin-dictionary.net/definition/34922/severus-severa"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to severely",
-      "etymology": [
-        "severely",
-        "sevirely"
-      ]
-    },
-    "standard": {
-      "name": "to severely",
-      "etymology": [
-        {
-          "name": "severely",
-          "origin": "Modern English"
-        },
-        {
-          "name": "sevirely",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adverb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.oed.com/dictionary/severely_adv?tab=factsheet#23475119"
-      ]
-    }
+    "infinitive": "severely",
+    "etymology": [
+      {
+        "name": "severely",
+        "origin": "Modern English"
+      },
+      {
+        "name": "sevirely",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adverb"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.oed.com/dictionary/severely_adv?tab=factsheet#23475119"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "severity",
-      "etymology": [
-        {
-          "name": "severus, severitas",
-          "origin": "Latin"
-        },
-        {
-          "name": "severité",
-          "origin": "French"
-        },
-        {
-          "name": "severity",
-          "origin": "Modern English"
-        },
-        {
-          "name": "seviretie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/severity#etymonline_v_23304",
-        "https://www.merriam-webster.com/dictionary/severity",
-        "https://www.collinsdictionary.com/us/dictionary/english/severity",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/s%C3%A9v%C3%A9rit%C3%A9/71633",
-        "https://latin-dictionary.net/definition/34920/severitas-severitatis",
-        "https://latin-dictionary.net/definition/34922/severus-severa"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "severity",
+    "etymology": [
+      {
+        "name": "severus, severitas",
+        "origin": "Latin"
+      },
+      {
+        "name": "severité",
+        "origin": "French"
+      },
+      {
+        "name": "severity",
+        "origin": "Modern English"
+      },
+      {
+        "name": "seviretie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/severity#etymonline_v_23304",
+      "https://www.merriam-webster.com/dictionary/severity",
+      "https://www.collinsdictionary.com/us/dictionary/english/severity",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/s%C3%A9v%C3%A9rit%C3%A9/71633",
+      "https://latin-dictionary.net/definition/34920/severitas-severitatis",
+      "https://latin-dictionary.net/definition/34922/severus-severa"
+    ]
   }
 ]

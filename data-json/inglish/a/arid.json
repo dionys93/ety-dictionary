@@ -1,40 +1,34 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "arid",
-      "etymology": [
-        {
-          "name": "arere, aridus",
-          "origin": "Latin"
-        },
-        {
-          "name": "aride",
-          "origin": "French"
-        },
-        {
-          "name": "arid",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ârid",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/arid#etymonline_v_16991",
-        "https://www.oed.com/dictionary/arid_adj?tab=factsheet#39629718",
-        "https://www.collinsdictionary.com/us/dictionary/english/arid",
-        "https://www.collinsdictionary.com/us/dictionary/french-english/aride",
-        "https://latin-dictionary.net/definition/4706/aridus-arida",
-        "https://latin-dictionary.net/definition/4628/areo-arere-arui"
-      ]
-    }
+    "name": "arid",
+    "etymology": [
+      {
+        "name": "arere, aridus",
+        "origin": "Latin"
+      },
+      {
+        "name": "aride",
+        "origin": "French"
+      },
+      {
+        "name": "arid",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ârid",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/arid#etymonline_v_16991",
+      "https://www.oed.com/dictionary/arid_adj?tab=factsheet#39629718",
+      "https://www.collinsdictionary.com/us/dictionary/english/arid",
+      "https://www.collinsdictionary.com/us/dictionary/french-english/aride",
+      "https://latin-dictionary.net/definition/4706/aridus-arida",
+      "https://latin-dictionary.net/definition/4628/areo-arere-arui"
+    ]
   }
 ]

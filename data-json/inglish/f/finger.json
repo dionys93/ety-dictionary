@@ -1,80 +1,59 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "finger",
-      "etymology": [
-        {
-          "name": "fingor, finger",
-          "origin": "Old English"
-        },
-        {
-          "name": "finger",
-          "origin": "Modern English"
-        },
-        {
-          "name": "fingor -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/finger#etymonline_v_5957",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16017",
-        "https://bosworthtoller.com/10721"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "finger",
+    "etymology": [
+      {
+        "name": "fingor, finger",
+        "origin": "Old English"
+      },
+      {
+        "name": "finger",
+        "origin": "Modern English"
+      },
+      {
+        "name": "fingor -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/finger#etymonline_v_5957",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16017",
+      "https://bosworthtoller.com/10721"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to finger",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to finger",
+    "etymology": [
+      {
+        "name": "fingeren",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "fingeren",
-        "to finger",
-        "ta fingore -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to finger",
-      "etymology": [
-        {
-          "name": "fingeren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to finger",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta fingore -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to finger",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta fingore -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta fingores",
+          "pastTense": "ta fingored",
+          "progressive": "ta fingoring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/finger#etymonline_v_33119",
-        "https://www.etymonline.com/word/finger#etymonline_v_5957",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16018"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/finger#etymonline_v_33119",
+      "https://www.etymonline.com/word/finger#etymonline_v_5957",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16018"
+    ]
   }
 ]

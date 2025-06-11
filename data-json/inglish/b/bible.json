@@ -1,61 +1,49 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "bible",
-      "etymology": [
-        {
-          "name": "βιβλίον, τὰ βιβλία τὰ ἅγια",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "biblia sacra",
-          "origin": "Latin"
-        },
-        {
-          "name": "bible",
-          "origin": "Old French"
-        },
-        {
-          "name": "bîble, bîbals",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/Bible",
-        "https://www.oed.com/dictionary/bible_n?tab=factsheet#21665915",
-        "https://anglo-norman.net/entry/bible",
-        "https://latin-dictionary.net/definition/6428/Biblia-Bibliae",
-        "https://lsj.gr/wiki/%CF%84%E1%BD%B0_%CE%B2%CE%B9%CE%B2%CE%BB%CE%AF%CE%B1_%CF%84%E1%BD%B0_%E1%BC%85%CE%B3%CE%B9%CE%B1",
-        "https://lsj.gr/wiki/%CE%B2%CE%B9%CE%B2%CE%BB%CE%AF%CE%BF%CE%BD"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "bible",
+    "etymology": [
+      {
+        "name": "βιβλίον, τὰ βιβλία τὰ ἅγια",
+        "origin": "Ancient Greek"
+      },
+      {
+        "name": "biblia sacra",
+        "origin": "Latin"
+      },
+      {
+        "name": "bible",
+        "origin": "Old French"
+      },
+      {
+        "name": "bîble, bîbals",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/Bible",
+      "https://www.oed.com/dictionary/bible_n?tab=factsheet#21665915",
+      "https://anglo-norman.net/entry/bible",
+      "https://latin-dictionary.net/definition/6428/Biblia-Bibliae",
+      "https://lsj.gr/wiki/%CF%84%E1%BD%B0_%CE%B2%CE%B9%CE%B2%CE%BB%CE%AF%CE%B1_%CF%84%E1%BD%B0_%E1%BC%85%CE%B3%CE%B9%CE%B1",
+      "https://lsj.gr/wiki/%CE%B2%CE%B9%CE%B2%CE%BB%CE%AF%CE%BF%CE%BD"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "biblical  (adj)",
-      "etymology": [
-        {
-          "name": "biblical  (adj)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/biblical",
-        "https://www.oed.com/dictionary/biblical_adj?tab=factsheet#21343358"
-      ]
-    }
+    "name": "biblical  (adj)",
+    "etymology": [
+      {
+        "name": "biblical  (adj)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/biblical",
+      "https://www.oed.com/dictionary/biblical_adj?tab=factsheet#21343358"
+    ]
   }
 ]

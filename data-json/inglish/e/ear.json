@@ -1,79 +1,67 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "ear",
-      "etymology": [
-        {
-          "name": "eare",
-          "origin": "Old English"
-        },
-        {
-          "name": "ere",
-          "origin": "Middle English"
-        },
-        {
-          "name": "ear",
-          "origin": "Modern English"
-        },
-        {
-          "name": "iar -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/ear#etymonline_v_933",
-        "https://www.merriam-webster.com/dictionary/ear#dictionary-entry-1",
-        "https://www.collinsdictionary.com/us/dictionary/english/ear",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED14292",
-        "https://bosworthtoller.com/8603"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "ear",
+    "etymology": [
+      {
+        "name": "eare",
+        "origin": "Old English"
+      },
+      {
+        "name": "ere",
+        "origin": "Middle English"
+      },
+      {
+        "name": "ear",
+        "origin": "Modern English"
+      },
+      {
+        "name": "iar -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/ear#etymonline_v_933",
+      "https://www.merriam-webster.com/dictionary/ear#dictionary-entry-1",
+      "https://www.collinsdictionary.com/us/dictionary/english/ear",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED14292",
+      "https://bosworthtoller.com/8603"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "ear",
-      "etymology": [
-        {
-          "name": "ear, æher",
-          "origin": "Old English"
-        },
-        {
-          "name": "ere",
-          "origin": "Middle English"
-        },
-        {
-          "name": "ear",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ihar -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/ear#etymonline_v_934",
-        "https://www.merriam-webster.com/dictionary/ear#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED14293",
-        "https://bosworthtoller.com/8571"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "ear",
+    "etymology": [
+      {
+        "name": "ear, æher",
+        "origin": "Old English"
+      },
+      {
+        "name": "ere",
+        "origin": "Middle English"
+      },
+      {
+        "name": "ear",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ihar -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/ear#etymonline_v_934",
+      "https://www.merriam-webster.com/dictionary/ear#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED14293",
+      "https://bosworthtoller.com/8571"
+    ]
   }
 ]

@@ -1,52 +1,37 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to sew",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
+    "infinitive": "to sew",
+    "etymology": [
+      {
+        "name": "siwian",
+        "origin": "Old English"
       },
-      "etymology": [
-        "siwian",
-        "seuen",
-        "to sew",
-        "ta soe -s -d sone -ɯing"
-      ]
-    },
-    "standard": {
-      "name": "to sew",
-      "etymology": [
-        {
-          "name": "siwian",
-          "origin": "Old English"
-        },
-        {
-          "name": "seuen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to sew",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta soe -s -d sone -ɯing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "seuen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to sew",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta soe -s -d sone -ɯing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta soes",
+          "pastTense": "ta soed"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/sew#etymonline_v_23305",
-        "https://www.merriam-webster.com/dictionary/sew",
-        "https://www.oed.com/dictionary/sew_v1?tab=factsheet#23479932",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39660",
-        "https://bosworthtoller.com/27894"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/sew#etymonline_v_23305",
+      "https://www.merriam-webster.com/dictionary/sew",
+      "https://www.oed.com/dictionary/sew_v1?tab=factsheet#23479932",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39660",
+      "https://bosworthtoller.com/27894"
+    ]
   }
 ]

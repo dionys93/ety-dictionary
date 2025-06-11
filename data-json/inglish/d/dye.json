@@ -1,95 +1,73 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "dye",
-      "etymology": [
-        {
-          "name": "deah, deag",
-          "origin": "Old English"
-        },
-        {
-          "name": "deie",
-          "origin": "Middle English"
-        },
-        {
-          "name": "dye",
-          "origin": "Modern English"
-        },
-        {
-          "name": "dyh -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/dye#etymonline_v_16024",
-        "https://www.merriam-webster.com/dictionary/dye#dictionary-entry-1",
-        "https://www.oed.com/dictionary/dye_n?tab=factsheet#5873131",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10885",
-        "https://bosworthtoller.com/7460",
-        "https://bosworthtoller.com/42613"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "dye",
+    "etymology": [
+      {
+        "name": "deah, deag",
+        "origin": "Old English"
+      },
+      {
+        "name": "deie",
+        "origin": "Middle English"
+      },
+      {
+        "name": "dye",
+        "origin": "Modern English"
+      },
+      {
+        "name": "dyh -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/dye#etymonline_v_16024",
+      "https://www.merriam-webster.com/dictionary/dye#dictionary-entry-1",
+      "https://www.oed.com/dictionary/dye_n?tab=factsheet#5873131",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10885",
+      "https://bosworthtoller.com/7460",
+      "https://bosworthtoller.com/42613"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to dye",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to dye",
+    "etymology": [
+      {
+        "name": "deagian",
+        "origin": "Old English"
       },
-      "etymology": [
-        "deagian",
-        "deien",
-        "to dye",
-        "ta dyhe -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to dye",
-      "etymology": [
-        {
-          "name": "deagian",
-          "origin": "Old English"
-        },
-        {
-          "name": "deien",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to dye",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta dyhe -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "deien",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to dye",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta dyhe -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta dyhes",
+          "pastTense": "ta dyhed",
+          "progressive": "ta dyhing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/dye#etymonline_v_45754",
-        "https://www.etymonline.com/word/dye#etymonline_v_16024",
-        "https://www.merriam-webster.com/dictionary/dye#dictionary-entry-2",
-        "https://www.oed.com/dictionary/dye_v?tab=factsheet#5873630",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10886",
-        "https://bosworthtoller.com/7452"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/dye#etymonline_v_45754",
+      "https://www.etymonline.com/word/dye#etymonline_v_16024",
+      "https://www.merriam-webster.com/dictionary/dye#dictionary-entry-2",
+      "https://www.oed.com/dictionary/dye_v?tab=factsheet#5873630",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10886",
+      "https://bosworthtoller.com/7452"
+    ]
   }
 ]

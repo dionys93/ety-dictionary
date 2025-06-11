@@ -1,51 +1,39 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "dirt  -s (m n)",
-      "etymology": [
-        {
-          "name": "drit",
-          "origin": "Old Norse"
-        },
-        {
-          "name": "drit, drytt",
-          "origin": "Middle English"
-        },
-        {
-          "name": "dirt  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/dirt#etymonline_v_8620",
-        "https://www.oed.com/dictionary/dirt_n?tab=factsheet#6643926",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12663",
-        "https://old-norse.net/html/d.php#drit"
-      ]
-    }
+    "name": "dirt  -s (m n)",
+    "etymology": [
+      {
+        "name": "drit",
+        "origin": "Old Norse"
+      },
+      {
+        "name": "drit, drytt",
+        "origin": "Middle English"
+      },
+      {
+        "name": "dirt  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/dirt#etymonline_v_8620",
+      "https://www.oed.com/dictionary/dirt_n?tab=factsheet#6643926",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12663",
+      "https://old-norse.net/html/d.php#drit"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "dirty  (adj)",
-      "etymology": [
-        {
-          "name": "dirty  (adj)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/dirty",
-        "https://www.etymonline.com/word/dirt#etymonline_v_8620",
-        "https://www.etymonline.com/word/-y#etymonline_v_25631"
-      ]
-    }
+    "name": "dirty  (adj)",
+    "etymology": [
+      {
+        "name": "dirty  (adj)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/dirty",
+      "https://www.etymonline.com/word/dirt#etymonline_v_8620",
+      "https://www.etymonline.com/word/-y#etymonline_v_25631"
+    ]
   }
 ]

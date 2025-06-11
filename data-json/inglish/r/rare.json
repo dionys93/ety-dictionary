@@ -1,224 +1,182 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "rare",
-      "etymology": [
-        {
-          "name": "rarus",
-          "origin": "Latin"
-        },
-        {
-          "name": "rele",
-          "origin": "Old French"
-        },
-        {
-          "name": "rare",
-          "origin": "Middle English"
-        },
-        {
-          "name": "râre, rârly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "adverb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/rare#etymonline_v_3371",
-        "https://www.etymonline.com/word/rarely#etymonline_v_36909",
-        "https://www.merriam-webster.com/dictionary/rare#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/rarely",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35926",
-        "https://anglo-norman.net/entry/rele_1",
-        "https://latin-dictionary.net/definition/32894/rarus-rara"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "rarity",
-      "etymology": [
-        {
-          "name": "rarus, raritas",
-          "origin": "Latin"
-        },
-        {
-          "name": "rareté",
-          "origin": "French"
-        },
-        {
-          "name": "rarity",
-          "origin": "Modern English"
-        },
-        {
-          "name": "râretie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/rarity#etymonline_v_36907",
-        "https://www.etymonline.com/word/rare#etymonline_v_3371",
-        "https://www.merriam-webster.com/dictionary/rarity",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/raret%C3%A9/65799",
-        "https://latin-dictionary.net/definition/32894/rarus-rara"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to rarefy",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "i"
+    "name": "rare",
+    "etymology": [
+      {
+        "name": "rarus",
+        "origin": "Latin"
       },
-      "etymology": [
-        "rarus + facere, rarefacere",
-        "rarificare",
-        "rarefier",
-        "rarefien",
-        "to rarefy",
-        "ta rârifae -s -d -ïng"
-      ]
-    },
-    "standard": {
-      "name": "to rarefy",
-      "etymology": [
-        {
-          "name": "rarus + facere, rarefacere",
-          "origin": "Latin"
-        },
-        {
-          "name": "rarificare",
-          "origin": "Medieval Latin"
-        },
-        {
-          "name": "rarefier",
-          "origin": "Old French"
-        },
-        {
-          "name": "rarefien",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to rarefy",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta rârifae -s -d -ïng",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/rarefy#etymonline_v_3376",
-        "https://www.etymonline.com/word/rarify#etymonline_v_47825",
-        "https://www.etymonline.com/word/rare#etymonline_v_3371",
-        "https://www.merriam-webster.com/dictionary/rarefy",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35930",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/rar%C3%A9fier/65794",
-        "https://latin-dictionary.net/definition/32889/rarefacio-rarefacere-rarefeci-rarefactus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "i"
+      {
+        "name": "rele",
+        "origin": "Old French"
+      },
+      {
+        "name": "rare",
+        "origin": "Middle English"
+      },
+      {
+        "name": "râre, rârly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "adverb"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/rare#etymonline_v_3371",
+      "https://www.etymonline.com/word/rarely#etymonline_v_36909",
+      "https://www.merriam-webster.com/dictionary/rare#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/rarely",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35926",
+      "https://anglo-norman.net/entry/rele_1",
+      "https://latin-dictionary.net/definition/32894/rarus-rara"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "rarefaction",
-      "etymology": [
-        {
-          "name": "rarefactio",
-          "origin": "Medieval Latin"
-        },
-        {
-          "name": "raréfaction",
-          "origin": "French"
-        },
-        {
-          "name": "rarefaction",
-          "origin": "Modern English"
-        },
-        {
-          "name": "rârifaccion -s -al",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/rarefaction#etymonline_v_36908",
-        "https://www.merriam-webster.com/dictionary/rarefaction",
-        "https://www.oed.com/dictionary/rarefaction_n?tab=factsheet#26679137",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/rar%C3%A9faction/65792",
-        "https://latin-dictionary.net/definition/32890/rarefactio-rarefactionis"
-      ],
-      "gender": "feminine",
-      "number": "singular"
-    }
+    "name": "rarity",
+    "etymology": [
+      {
+        "name": "rarus, raritas",
+        "origin": "Latin"
+      },
+      {
+        "name": "rareté",
+        "origin": "French"
+      },
+      {
+        "name": "rarity",
+        "origin": "Modern English"
+      },
+      {
+        "name": "râretie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/rarity#etymonline_v_36907",
+      "https://www.etymonline.com/word/rare#etymonline_v_3371",
+      "https://www.merriam-webster.com/dictionary/rarity",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/raret%C3%A9/65799",
+      "https://latin-dictionary.net/definition/32894/rarus-rara"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "rare",
-      "etymology": [
-        {
-          "name": "hrere",
-          "origin": "Old English"
-        },
-        {
-          "name": "rere",
-          "origin": "Middle English"
-        },
-        {
-          "name": "rare",
-          "origin": "Modern English"
-        },
-        {
-          "name": "rere -st",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
+    "infinitive": "to rarefy",
+    "etymology": [
+      {
+        "name": "rarus + facere, rarefacere",
+        "origin": "Latin"
+      },
+      {
+        "name": "rarificare",
+        "origin": "Medieval Latin"
+      },
+      {
+        "name": "rarefier",
+        "origin": "Old French"
+      },
+      {
+        "name": "rarefien",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to rarefy",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta rârifae -s -d -ïng",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta rârifaes",
+          "pastTense": "ta rârifaed",
+          "progressive": "ta rârifaei"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/rare#etymonline_v_3372",
-        "https://www.merriam-webster.com/dictionary/rare#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37015",
-        "https://bosworthtoller.com/53194"
-      ],
-      "degrees": {
-        "positive": "rere",
-        "comparative": "st"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/rarefy#etymonline_v_3376",
+      "https://www.etymonline.com/word/rarify#etymonline_v_47825",
+      "https://www.etymonline.com/word/rare#etymonline_v_3371",
+      "https://www.merriam-webster.com/dictionary/rarefy",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35930",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/rar%C3%A9fier/65794",
+      "https://latin-dictionary.net/definition/32889/rarefacio-rarefacere-rarefeci-rarefactus"
+    ]
+  },
+  {
+    "name": "rarefaction",
+    "etymology": [
+      {
+        "name": "rarefactio",
+        "origin": "Medieval Latin"
+      },
+      {
+        "name": "raréfaction",
+        "origin": "French"
+      },
+      {
+        "name": "rarefaction",
+        "origin": "Modern English"
+      },
+      {
+        "name": "rârifaccion -s -al",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/rarefaction#etymonline_v_36908",
+      "https://www.merriam-webster.com/dictionary/rarefaction",
+      "https://www.oed.com/dictionary/rarefaction_n?tab=factsheet#26679137",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/rar%C3%A9faction/65792",
+      "https://latin-dictionary.net/definition/32890/rarefactio-rarefactionis"
+    ]
+  },
+  {
+    "name": "rare",
+    "etymology": [
+      {
+        "name": "hrere",
+        "origin": "Old English"
+      },
+      {
+        "name": "rere",
+        "origin": "Middle English"
+      },
+      {
+        "name": "rare",
+        "origin": "Modern English"
+      },
+      {
+        "name": "rere -st",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ],
+        "degrees": {
+          "positive": "rere",
+          "comparative": "st"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/rare#etymonline_v_3372",
+      "https://www.merriam-webster.com/dictionary/rare#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37015",
+      "https://bosworthtoller.com/53194"
+    ]
   }
 ]

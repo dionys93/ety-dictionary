@@ -1,138 +1,101 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to weave",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to weave",
+    "etymology": [
+      {
+        "name": "wefan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "wefan",
-        "weven",
-        "to weave",
-        "ta ɯieve -s ɯove ɯoven -ing"
-      ]
-    },
-    "standard": {
-      "name": "to weave",
-      "etymology": [
-        {
-          "name": "wefan",
-          "origin": "Old English"
-        },
-        {
-          "name": "weven",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to weave",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta ɯieve -s ɯove ɯoven -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "weven",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to weave",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta ɯieve -s ɯove ɯoven -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta ɯieves"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/weave#etymonline_v_4878",
-        "https://www.merriam-webster.com/dictionary/weave#dictionary-entry-1",
-        "https://www.oed.com/dictionary/weave_v1?tab=forms#14794147",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52403",
-        "https://bosworthtoller.com/34960"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/weave#etymonline_v_4878",
+      "https://www.merriam-webster.com/dictionary/weave#dictionary-entry-1",
+      "https://www.oed.com/dictionary/weave_v1?tab=forms#14794147",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52403",
+      "https://bosworthtoller.com/34960"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "weave",
-      "etymology": [
-        {
-          "name": "weave",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ɯieve -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/weave#etymonline_v_46446",
-        "https://www.etymonline.com/word/weave#etymonline_v_4878",
-        "https://www.oed.com/dictionary/weave_n?tab=factsheet#14794037",
-        "https://www.merriam-webster.com/dictionary/weave#dictionary-entry-2"
-      ],
-      "number": "plural"
-    }
+    "name": "weave",
+    "etymology": [
+      {
+        "name": "weave",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ɯieve -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/weave#etymonline_v_46446",
+      "https://www.etymonline.com/word/weave#etymonline_v_4878",
+      "https://www.oed.com/dictionary/weave_n?tab=factsheet#14794037",
+      "https://www.merriam-webster.com/dictionary/weave#dictionary-entry-2"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to weave",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to weave",
+    "etymology": [
+      {
+        "name": "wefan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "wefan",
-        "weven",
-        "to weave",
-        "ta ɯieve -s -d -ing",
-        "to move from one place to another"
-      ]
-    },
-    "standard": {
-      "name": "to weave",
-      "etymology": [
-        {
-          "name": "wefan",
-          "origin": "Old English"
-        },
-        {
-          "name": "weven",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to weave",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta ɯieve -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        },
-        {
-          "name": "to move from one place to another",
-          "origin": "Inglish"
+      {
+        "name": "weven",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to weave",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta ɯieve -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta ɯieves",
+          "pastTense": "ta ɯieved",
+          "progressive": "ta ɯieving"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/weave#etymonline_v_50061",
-        "https://www.etymonline.com/word/weave#etymonline_v_4878",
-        "https://www.merriam-webster.com/dictionary/weave#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/weave#dictionary-entry-3",
-        "https://www.oed.com/dictionary/weave_v2?tab=factsheet#14795924",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52403",
-        "https://bosworthtoller.com/34960"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      },
+      {
+        "name": "to move from one place to another",
+        "origin": "Inglish"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/weave#etymonline_v_50061",
+      "https://www.etymonline.com/word/weave#etymonline_v_4878",
+      "https://www.merriam-webster.com/dictionary/weave#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/weave#dictionary-entry-3",
+      "https://www.oed.com/dictionary/weave_v2?tab=factsheet#14795924",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52403",
+      "https://bosworthtoller.com/34960"
+    ]
   }
 ]

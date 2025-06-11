@@ -3,6 +3,7 @@
 // Types
 export * from './types/pipeline-types';
 export * from './types/text';
+export * from './types/part-of-speech-types'
 
 // Monads
 export * from './monads';

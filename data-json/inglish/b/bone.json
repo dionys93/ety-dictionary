@@ -1,39 +1,33 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "bone",
-      "etymology": [
-        {
-          "name": "ban",
-          "origin": "Old English"
-        },
-        {
-          "name": "bon",
-          "origin": "Middle English"
-        },
-        {
-          "name": "bone",
-          "origin": "Modern English"
-        },
-        {
-          "name": "boan -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bone",
-        "https://www.oed.com/dictionary/bone_n1?tab=factsheet#16828688",
-        "https://bosworthtoller.com/2958"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "bone",
+    "etymology": [
+      {
+        "name": "ban",
+        "origin": "Old English"
+      },
+      {
+        "name": "bon",
+        "origin": "Middle English"
+      },
+      {
+        "name": "bone",
+        "origin": "Modern English"
+      },
+      {
+        "name": "boan -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bone",
+      "https://www.oed.com/dictionary/bone_n1?tab=factsheet#16828688",
+      "https://bosworthtoller.com/2958"
+    ]
   }
 ]

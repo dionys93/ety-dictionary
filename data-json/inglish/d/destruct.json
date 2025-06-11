@@ -1,148 +1,116 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to destruct",
-      "conjugations": {
-        "thirdPerson": "d",
-        "pastTense": "ing"
+    "infinitive": "to destruct",
+    "etymology": [
+      {
+        "name": "destruere, destructus",
+        "origin": "Latin"
       },
-      "etymology": [
-        "destruere, destructus",
-        "to destruct",
-        "ta destrocte destrocs -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to destruct",
-      "etymology": [
-        {
-          "name": "destruere, destructus",
-          "origin": "Latin"
-        },
-        {
-          "name": "to destruct",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta destrocte destrocs -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to destruct",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta destrocte destrocs -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta destrocte destrocsd",
+          "pastTense": "ta destrocte destrocsing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/destruct#etymonline_v_29648",
-        "https://www.oed.com/dictionary/destruct_v?tab=factsheet#7040338",
-        "https://latin-dictionary.net/definition/17109/destruo-destruere-destruxi-destructus"
-      ],
-      "conjugations": {
-        "thirdPerson": "d",
-        "pastTense": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/destruct#etymonline_v_29648",
+      "https://www.oed.com/dictionary/destruct_v?tab=factsheet#7040338",
+      "https://latin-dictionary.net/definition/17109/destruo-destruere-destruxi-destructus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "destructible",
-      "etymology": [
-        {
-          "name": "destruere, destructibilis",
-          "origin": "Latin"
-        },
-        {
-          "name": "destructible",
-          "origin": "Modern English"
-        },
-        {
-          "name": "destroctable",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/destructible#etymonline_v_37245",
-        "https://www.merriam-webster.com/dictionary/destructible",
-        "https://latin-dictionary.net/definition/17104/destructibilis-destructibilis-destructibile",
-        "https://latin-dictionary.net/definition/17109/destruo-destruere-destruxi-destructus"
-      ]
-    }
+    "name": "destructible",
+    "etymology": [
+      {
+        "name": "destruere, destructibilis",
+        "origin": "Latin"
+      },
+      {
+        "name": "destructible",
+        "origin": "Modern English"
+      },
+      {
+        "name": "destroctable",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/destructible#etymonline_v_37245",
+      "https://www.merriam-webster.com/dictionary/destructible",
+      "https://latin-dictionary.net/definition/17104/destructibilis-destructibilis-destructibile",
+      "https://latin-dictionary.net/definition/17109/destruo-destruere-destruxi-destructus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "destruction",
-      "etymology": [
-        {
-          "name": "destruere, destructio",
-          "origin": "Latin"
-        },
-        {
-          "name": "destruction",
-          "origin": "Old French"
-        },
-        {
-          "name": "destroccion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/destruction#etymonline_v_5676",
-        "https://www.merriam-webster.com/dictionary/destruction",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED11402",
-        "https://www.anglo-norman.net/entry/destruction",
-        "https://latin-dictionary.net/definition/17109/destruo-destruere-destruxi-destructus"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "destruction",
+    "etymology": [
+      {
+        "name": "destruere, destructio",
+        "origin": "Latin"
+      },
+      {
+        "name": "destruction",
+        "origin": "Old French"
+      },
+      {
+        "name": "destroccion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/destruction#etymonline_v_5676",
+      "https://www.merriam-webster.com/dictionary/destruction",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED11402",
+      "https://www.anglo-norman.net/entry/destruction",
+      "https://latin-dictionary.net/definition/17109/destruo-destruere-destruxi-destructus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "destructive",
-      "etymology": [
-        {
-          "name": "destruere, destructivus",
-          "origin": "Latin"
-        },
-        {
-          "name": "destructif",
-          "origin": "Old French"
-        },
-        {
-          "name": "destructive",
-          "origin": "Modern English"
-        },
-        {
-          "name": "destroctif",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/destructive#etymonline_v_29647",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/destructif/24592",
-        "https://latin-dictionary.net/definition/17107/destructivus-destructiva-destructivum",
-        "https://latin-dictionary.net/definition/17109/destruo-destruere-destruxi-destructus"
-      ]
-    }
+    "name": "destructive",
+    "etymology": [
+      {
+        "name": "destruere, destructivus",
+        "origin": "Latin"
+      },
+      {
+        "name": "destructif",
+        "origin": "Old French"
+      },
+      {
+        "name": "destructive",
+        "origin": "Modern English"
+      },
+      {
+        "name": "destroctif",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/destructive#etymonline_v_29647",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/destructif/24592",
+      "https://latin-dictionary.net/definition/17107/destructivus-destructiva-destructivum",
+      "https://latin-dictionary.net/definition/17109/destruo-destruere-destruxi-destructus"
+    ]
   }
 ]

@@ -1,122 +1,90 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "desire",
-      "etymology": [
-        {
-          "name": "desirer, desir",
-          "origin": "Old French"
-        },
-        {
-          "name": "desire",
-          "origin": "Middle English"
-        },
-        {
-          "name": "desîre, desîars",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/desire#etymonline_v_46305",
-        "https://www.etymonline.com/word/desire#etymonline_v_5657",
-        "https://www.merriam-webster.com/dictionary/desire#dictionary-entry-2",
-        "https://www.anglo-norman.net/entry/desir_1",
-        "https://www.anglo-norman.net/entry/desirer_2"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to desire",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
+    "name": "desire",
+    "etymology": [
+      {
+        "name": "desirer, desir",
+        "origin": "Old French"
       },
-      "etymology": [
-        "sidus, de sidere, desiderare",
-        "desirer",
-        "desiren",
-        "to desire",
-        "ta desîre -s -d desîaring"
-      ]
-    },
-    "standard": {
-      "name": "to desire",
-      "etymology": [
-        {
-          "name": "sidus, de sidere, desiderare",
-          "origin": "Latin"
-        },
-        {
-          "name": "desirer",
-          "origin": "Old French"
-        },
-        {
-          "name": "desiren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to desire",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta desîre -s -d desîaring",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/desire#etymonline_v_5657",
-        "https://www.merriam-webster.com/dictionary/desire#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED11318",
-        "https://www.anglo-norman.net/entry/desirer_2",
-        "https://latin-dictionary.net/definition/16979/desidero-desiderare-desideravi-desideratus",
-        "https://latin-dictionary.net/definition/35003/sidus-sideris"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
+      {
+        "name": "desire",
+        "origin": "Middle English"
+      },
+      {
+        "name": "desîre, desîars",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/desire#etymonline_v_46305",
+      "https://www.etymonline.com/word/desire#etymonline_v_5657",
+      "https://www.merriam-webster.com/dictionary/desire#dictionary-entry-2",
+      "https://www.anglo-norman.net/entry/desir_1",
+      "https://www.anglo-norman.net/entry/desirer_2"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "desirable",
-      "etymology": [
-        {
-          "name": "desirable",
-          "origin": "Modern English"
-        },
-        {
-          "name": "desîrable -y",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
+    "infinitive": "to desire",
+    "etymology": [
+      {
+        "name": "sidus, de sidere, desiderare",
+        "origin": "Latin"
+      },
+      {
+        "name": "desirer",
+        "origin": "Old French"
+      },
+      {
+        "name": "desiren",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to desire",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta desîre -s -d desîaring",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta desîres",
+          "pastTense": "ta desîred"
         }
-      ],
-      "sources": [
-        "https://www.oed.com/dictionary/desirable_adj?tab=factsheet#7009197"
-      ],
-      "degrees": {
-        "positive": "rable",
-        "comparative": "y"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/desire#etymonline_v_5657",
+      "https://www.merriam-webster.com/dictionary/desire#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED11318",
+      "https://www.anglo-norman.net/entry/desirer_2",
+      "https://latin-dictionary.net/definition/16979/desidero-desiderare-desideravi-desideratus",
+      "https://latin-dictionary.net/definition/35003/sidus-sideris"
+    ]
+  },
+  {
+    "name": "desirable",
+    "etymology": [
+      {
+        "name": "desirable",
+        "origin": "Modern English"
+      },
+      {
+        "name": "desîrable -y",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.oed.com/dictionary/desirable_adj?tab=factsheet#7009197"
+    ]
   }
 ]

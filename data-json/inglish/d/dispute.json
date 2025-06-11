@@ -1,90 +1,67 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to dispute",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to dispute",
+    "etymology": [
+      {
+        "name": "dis + putare, disputare",
+        "origin": "Latin"
       },
-      "etymology": [
-        "dis + putare, disputare",
-        "desputer",
-        "disputen",
-        "to dispute",
-        "ta desp̃ute -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to dispute",
-      "etymology": [
-        {
-          "name": "dis + putare, disputare",
-          "origin": "Latin"
-        },
-        {
-          "name": "desputer",
-          "origin": "Old French"
-        },
-        {
-          "name": "disputen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to dispute",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta desp̃ute -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "desputer",
+        "origin": "Old French"
+      },
+      {
+        "name": "disputen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to dispute",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta desp̃ute -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta desp̃utes",
+          "pastTense": "ta desp̃uted",
+          "progressive": "ta desp̃uting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/dispute#etymonline_v_11482",
-        "https://www.merriam-webster.com/dictionary/dispute#dictionary-entry-1",
-        "https://www.oed.com/dictionary/dispute_v?tab=factsheet#6450720",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12066",
-        "https://anglo-norman.net/entry/desputer",
-        "https://latin-dictionary.net/definition/18141/disputo-disputare-disputavi-disputatus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/dispute#etymonline_v_11482",
+      "https://www.merriam-webster.com/dictionary/dispute#dictionary-entry-1",
+      "https://www.oed.com/dictionary/dispute_v?tab=factsheet#6450720",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12066",
+      "https://anglo-norman.net/entry/desputer",
+      "https://latin-dictionary.net/definition/18141/disputo-disputare-disputavi-disputatus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "dispute",
-      "etymology": [
-        {
-          "name": "dispute",
-          "origin": "Modern English"
-        },
-        {
-          "name": "desp̃ute -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/dispute#etymonline_v_54017",
-        "https://www.etymonline.com/word/dispute#etymonline_v_11482",
-        "https://www.merriam-webster.com/dictionary/dispute#dictionary-entry-2",
-        "https://www.oed.com/dictionary/dispute_n?tab=factsheet#6450341"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "dispute",
+    "etymology": [
+      {
+        "name": "dispute",
+        "origin": "Modern English"
+      },
+      {
+        "name": "desp̃ute -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/dispute#etymonline_v_54017",
+      "https://www.etymonline.com/word/dispute#etymonline_v_11482",
+      "https://www.merriam-webster.com/dictionary/dispute#dictionary-entry-2",
+      "https://www.oed.com/dictionary/dispute_n?tab=factsheet#6450341"
+    ]
   }
 ]

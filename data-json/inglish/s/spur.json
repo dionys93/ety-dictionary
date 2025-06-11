@@ -1,86 +1,65 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "spur",
-      "etymology": [
-        {
-          "name": "spura, spora",
-          "origin": "Old English"
-        },
-        {
-          "name": "spore",
-          "origin": "Middle English"
-        },
-        {
-          "name": "spur",
-          "origin": "Modern English"
-        },
-        {
-          "name": "spure, spurs",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/spur#etymonline_v_21911",
-        "https://www.merriam-webster.com/dictionary/spur#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42333",
-        "https://bosworthtoller.com/28531"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "spur",
+    "etymology": [
+      {
+        "name": "spura, spora",
+        "origin": "Old English"
+      },
+      {
+        "name": "spore",
+        "origin": "Middle English"
+      },
+      {
+        "name": "spur",
+        "origin": "Modern English"
+      },
+      {
+        "name": "spure, spurs",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/spur#etymonline_v_21911",
+      "https://www.merriam-webster.com/dictionary/spur#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42333",
+      "https://bosworthtoller.com/28531"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to spur",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to spur",
+    "etymology": [
+      {
+        "name": "sporen",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "sporen",
-        "to spur",
-        "ta spure -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to spur",
-      "etymology": [
-        {
-          "name": "sporen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to spur",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta spure -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to spur",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta spure -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta spures",
+          "pastTense": "ta spured",
+          "progressive": "ta spuring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/spur#etymonline_v_46991",
-        "https://www.etymonline.com/word/spur#etymonline_v_21911",
-        "https://www.merriam-webster.com/dictionary/spur#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42335"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/spur#etymonline_v_46991",
+      "https://www.etymonline.com/word/spur#etymonline_v_21911",
+      "https://www.merriam-webster.com/dictionary/spur#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42335"
+    ]
   }
 ]

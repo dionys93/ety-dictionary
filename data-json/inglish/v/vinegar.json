@@ -1,67 +1,55 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "vinegar",
-      "etymology": [
-        {
-          "name": "vinum acetum",
-          "origin": "Latin"
-        },
-        {
-          "name": "vin + aigre, vinaigre",
-          "origin": "Old French"
-        },
-        {
-          "name": "vinegar",
-          "origin": "Modern English"
-        },
-        {
-          "name": "vinagre, vinagars",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/vinegar#etymonline_v_7801",
-        "https://www.merriam-webster.com/dictionary/vinegar",
-        "https://anglo-norman.net/entry/vinegre",
-        "https://latin-dictionary.net/definition/519/acetum-aceti",
-        "https://latin-dictionary.net/definition/38862/vinum-vini"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "vinegar",
+    "etymology": [
+      {
+        "name": "vinum acetum",
+        "origin": "Latin"
+      },
+      {
+        "name": "vin + aigre, vinaigre",
+        "origin": "Old French"
+      },
+      {
+        "name": "vinegar",
+        "origin": "Modern English"
+      },
+      {
+        "name": "vinagre, vinagars",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/vinegar#etymonline_v_7801",
+      "https://www.merriam-webster.com/dictionary/vinegar",
+      "https://anglo-norman.net/entry/vinegre",
+      "https://latin-dictionary.net/definition/519/acetum-aceti",
+      "https://latin-dictionary.net/definition/38862/vinum-vini"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "vinegary",
-      "etymology": [
-        {
-          "name": "vinegary",
-          "origin": "Modern English"
-        },
-        {
-          "name": "vinagry",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.oed.com/dictionary/vinegary_adj?tab=factsheet#15606180",
-        "https://www.merriam-webster.com/dictionary/vinegary"
-      ]
-    }
+    "name": "vinegary",
+    "etymology": [
+      {
+        "name": "vinegary",
+        "origin": "Modern English"
+      },
+      {
+        "name": "vinagry",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.oed.com/dictionary/vinegary_adj?tab=factsheet#15606180",
+      "https://www.merriam-webster.com/dictionary/vinegary"
+    ]
   }
 ]

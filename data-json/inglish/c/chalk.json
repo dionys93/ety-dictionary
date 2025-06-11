@@ -1,90 +1,69 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "chalk",
-      "etymology": [
-        {
-          "name": "χάλιξ",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "calx",
-          "origin": "Latin"
-        },
-        {
-          "name": "cealc",
-          "origin": "Old English"
-        },
-        {
-          "name": "chalk",
-          "origin": "Middle English"
-        },
-        {
-          "name": "chauk, chaux",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/chalk#etymonline_v_8397",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7200/track?counter=1&search_id=40283860",
-        "https://bosworthtoller.com/5908",
-        "https://latin-dictionary.net/definition/7659/calx-calcis",
-        "https://lsj.gr/wiki/%CF%87%CE%AC%CE%BB%CE%B9%CE%BE"
-      ],
-      "gender": "masculine",
-      "number": "singular"
-    }
+    "name": "chalk",
+    "etymology": [
+      {
+        "name": "χάλιξ",
+        "origin": "Ancient Greek"
+      },
+      {
+        "name": "calx",
+        "origin": "Latin"
+      },
+      {
+        "name": "cealc",
+        "origin": "Old English"
+      },
+      {
+        "name": "chalk",
+        "origin": "Middle English"
+      },
+      {
+        "name": "chauk, chaux",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/chalk#etymonline_v_8397",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7200/track?counter=1&search_id=40283860",
+      "https://bosworthtoller.com/5908",
+      "https://latin-dictionary.net/definition/7659/calx-calcis",
+      "https://lsj.gr/wiki/%CF%87%CE%AC%CE%BB%CE%B9%CE%BE"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to chalk",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to chalk",
+    "etymology": [
+      {
+        "name": "cealcian",
+        "origin": "Old English"
       },
-      "etymology": [
-        "cealcian",
-        "to chalk",
-        "ta chauke -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to chalk",
-      "etymology": [
-        {
-          "name": "cealcian",
-          "origin": "Old English"
-        },
-        {
-          "name": "to chalk",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta chauke -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to chalk",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta chauke -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta chaukes",
+          "pastTense": "ta chauked",
+          "progressive": "ta chauking"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/chalk#etymonline_v_44277",
-        "https://www.etymonline.com/word/chalk#etymonline_v_8397",
-        "https://bosworthtoller.com/13870"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/chalk#etymonline_v_44277",
+      "https://www.etymonline.com/word/chalk#etymonline_v_8397",
+      "https://bosworthtoller.com/13870"
+    ]
   }
 ]

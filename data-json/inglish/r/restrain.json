@@ -1,92 +1,69 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to restrain",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to restrain",
+    "etymology": [
+      {
+        "name": "restringere",
+        "origin": "Latin"
       },
-      "etymology": [
-        "restringere",
-        "restraindre, restreindre",
-        "restreinen",
-        "to restrain",
-        "ta restraigne -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to restrain",
-      "etymology": [
-        {
-          "name": "restringere",
-          "origin": "Latin"
-        },
-        {
-          "name": "restraindre, restreindre",
-          "origin": "Old French"
-        },
-        {
-          "name": "restreinen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to restrain",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta restraigne -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "restraindre, restreindre",
+        "origin": "Old French"
+      },
+      {
+        "name": "restreinen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to restrain",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta restraigne -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta restraignes",
+          "pastTense": "ta restraigned",
+          "progressive": "ta restraigning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/restrain#etymonline_v_12918",
-        "https://www.oed.com/dictionary/restrain_v1?tab=factsheet#25713964",
-        "https://anglo-norman.net/entry/restraindre",
-        "https://latin-dictionary.net/definition/33490/restringo-restringere-restrinxi-restrictus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/restrain#etymonline_v_12918",
+      "https://www.oed.com/dictionary/restrain_v1?tab=factsheet#25713964",
+      "https://anglo-norman.net/entry/restraindre",
+      "https://latin-dictionary.net/definition/33490/restringo-restringere-restrinxi-restrictus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "restraint",
-      "etymology": [
-        {
-          "name": "restraindre, restrainte",
-          "origin": "Old French"
-        },
-        {
-          "name": "restraint",
-          "origin": "Modern English"
-        },
-        {
-          "name": "restraignt -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/restraint#etymonline_v_30045",
-        "https://www.oed.com/dictionary/restraint_n?tab=factsheet#25716572",
-        "https://anglo-norman.net/entry/restrainte",
-        "https://anglo-norman.net/entry/restraindre"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "restraint",
+    "etymology": [
+      {
+        "name": "restraindre, restrainte",
+        "origin": "Old French"
+      },
+      {
+        "name": "restraint",
+        "origin": "Modern English"
+      },
+      {
+        "name": "restraignt -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/restraint#etymonline_v_30045",
+      "https://www.oed.com/dictionary/restraint_n?tab=factsheet#25716572",
+      "https://anglo-norman.net/entry/restrainte",
+      "https://anglo-norman.net/entry/restraindre"
+    ]
   }
 ]

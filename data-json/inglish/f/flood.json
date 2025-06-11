@@ -1,76 +1,56 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "flood",
-      "etymology": [
-        {
-          "name": "flod",
-          "origin": "Old English"
-        },
-        {
-          "name": "flood",
-          "origin": "Modern English"
-        },
-        {
-          "name": "flod -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/flood#etymonline_v_8904",
-        "https://www.merriam-webster.com/dictionary/flood#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16368",
-        "https://bosworthtoller.com/45262"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "flood",
+    "etymology": [
+      {
+        "name": "flod",
+        "origin": "Old English"
+      },
+      {
+        "name": "flood",
+        "origin": "Modern English"
+      },
+      {
+        "name": "flod -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/flood#etymonline_v_8904",
+      "https://www.merriam-webster.com/dictionary/flood#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16368",
+      "https://bosworthtoller.com/45262"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to flood",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to flood",
+    "etymology": [
+      {
+        "name": "to flood",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to flood",
-        "ta flode -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to flood",
-      "etymology": [
-        {
-          "name": "to flood",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta flode -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta flode -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta flodes",
+          "pastTense": "ta floded",
+          "progressive": "ta floding"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/flood#etymonline_v_46057",
-        "https://www.etymonline.com/word/flood#etymonline_v_8904",
-        "https://www.merriam-webster.com/dictionary/flood#dictionary-entry-2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/flood#etymonline_v_46057",
+      "https://www.etymonline.com/word/flood#etymonline_v_8904",
+      "https://www.merriam-webster.com/dictionary/flood#dictionary-entry-2"
+    ]
   }
 ]

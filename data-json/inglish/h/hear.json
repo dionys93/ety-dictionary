@@ -1,50 +1,36 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to hear",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to hear",
+    "etymology": [
+      {
+        "name": "hyran",
+        "origin": "Old English"
       },
-      "etymology": [
-        "hyran",
-        "heren",
-        "to hear",
-        "ta hýre -s hêd -ing"
-      ]
-    },
-    "standard": {
-      "name": "to hear",
-      "etymology": [
-        {
-          "name": "hyran",
-          "origin": "Old English"
-        },
-        {
-          "name": "heren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to hear",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta hýre -s hêd -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "heren",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to hear",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta hýre -s hêd -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta hýres"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/hear#etymonline_v_6248",
-        "https://www.merriam-webster.com/dictionary/hear",
-        "https://www.oed.com/dictionary/hear_v?tab=factsheet#1881335",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20505",
-        "https://bosworthtoller.com/20338"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/hear#etymonline_v_6248",
+      "https://www.merriam-webster.com/dictionary/hear",
+      "https://www.oed.com/dictionary/hear_v?tab=factsheet#1881335",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20505",
+      "https://bosworthtoller.com/20338"
+    ]
   }
 ]

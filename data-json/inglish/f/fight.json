@@ -1,82 +1,62 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to fight",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to fight",
+    "etymology": [
+      {
+        "name": "feohtan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "feohtan",
-        "fighten",
-        "to fight",
-        "ta fyhte -s foht -ing"
-      ]
-    },
-    "standard": {
-      "name": "to fight",
-      "etymology": [
-        {
-          "name": "feohtan",
-          "origin": "Old English"
-        },
-        {
-          "name": "fighten",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to fight",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta fyhte -s foht -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "fighten",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to fight",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta fyhte -s foht -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta fyhtes"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fight#etymonline_v_5926",
-        "https://www.merriam-webster.com/dictionary/fight#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15910",
-        "https://bosworthtoller.com/10346"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fight#etymonline_v_5926",
+      "https://www.merriam-webster.com/dictionary/fight#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15910",
+      "https://bosworthtoller.com/10346"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "fight",
-      "etymology": [
-        {
-          "name": "feohte, gefeoht",
-          "origin": "Old English"
-        },
-        {
-          "name": "fight",
-          "origin": "Middle English"
-        },
-        {
-          "name": "fyht -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fight#etymonline_v_39706",
-        "https://www.merriam-webster.com/dictionary/fight#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15909",
-        "https://bosworthtoller.com/10345"
-      ],
-      "number": "plural"
-    }
+    "name": "fight",
+    "etymology": [
+      {
+        "name": "feohte, gefeoht",
+        "origin": "Old English"
+      },
+      {
+        "name": "fight",
+        "origin": "Middle English"
+      },
+      {
+        "name": "fyht -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fight#etymonline_v_39706",
+      "https://www.merriam-webster.com/dictionary/fight#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15909",
+      "https://bosworthtoller.com/10345"
+    ]
   }
 ]

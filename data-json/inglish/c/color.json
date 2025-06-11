@@ -1,179 +1,132 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "color  -s (m n)",
-      "etymology": [
-        {
-          "name": "colos",
-          "origin": "Inglish"
-        },
-        {
-          "name": "color",
-          "origin": "Latin"
-        },
-        {
-          "name": "color  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/color#etymonline_v_15845",
-        "https://www.merriam-webster.com/dictionary/color#dictionary-entry-1",
-        "https://latin-dictionary.net/definition/11129/color-coloris",
-        "https://latin-dictionary.net/definition/11138/colos-coloris"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to color",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "color  -s (m n)",
+    "etymology": [
+      {
+        "name": "colos",
+        "origin": "Inglish"
       },
-      "etymology": [
-        "colorare",
-        "culurer, colorer",
-        "colouren",
-        "to color",
-        "ta colore -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to color",
-      "etymology": [
-        {
-          "name": "colorare",
-          "origin": "Latin"
-        },
-        {
-          "name": "culurer, colorer",
-          "origin": "Old French"
-        },
-        {
-          "name": "colouren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to color",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta colore -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/color#etymonline_v_46039",
-        "https://www.merriam-webster.com/dictionary/color#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8466",
-        "https://anglo-norman.net/entry/colorer",
-        "https://latin-dictionary.net/definition/11137/coloro-colorare-coloravi-coloratus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "color",
+        "origin": "Latin"
+      },
+      {
+        "name": "color  -s (m n)",
+        "origin": "Modern English"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/color#etymonline_v_15845",
+      "https://www.merriam-webster.com/dictionary/color#dictionary-entry-1",
+      "https://latin-dictionary.net/definition/11129/color-coloris",
+      "https://latin-dictionary.net/definition/11138/colos-coloris"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "colorful  (adj)",
-      "etymology": [
-        {
-          "name": "colorful  (adj)",
-          "origin": "Modern English"
+    "infinitive": "to color",
+    "etymology": [
+      {
+        "name": "colorare",
+        "origin": "Latin"
+      },
+      {
+        "name": "culurer, colorer",
+        "origin": "Old French"
+      },
+      {
+        "name": "colouren",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to color",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta colore -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta colores",
+          "pastTense": "ta colored",
+          "progressive": "ta coloring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/colorful#etymonline_v_28345",
-        "https://www.merriam-webster.com/dictionary/colorful"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/color#etymonline_v_46039",
+      "https://www.merriam-webster.com/dictionary/color#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8466",
+      "https://anglo-norman.net/entry/colorer",
+      "https://latin-dictionary.net/definition/11137/coloro-colorare-coloravi-coloratus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "colorless  -ly (adj)",
-      "etymology": [
-        {
-          "name": "colorless  -ly (adj)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/colorless#etymonline_v_28344",
-        "https://www.merriam-webster.com/dictionary/colorless"
-      ]
-    }
+    "name": "colorful  (adj)",
+    "etymology": [
+      {
+        "name": "colorful  (adj)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/colorful#etymonline_v_28345",
+      "https://www.merriam-webster.com/dictionary/colorful"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "colorific  (adj)",
-      "etymology": [
-        {
-          "name": "colorific  (adj)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/colorific#etymonline_v_53444",
-        "https://www.merriam-webster.com/dictionary/colorific"
-      ]
-    }
+    "name": "colorless  -ly (adj)",
+    "etymology": [
+      {
+        "name": "colorless  -ly (adj)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/colorless#etymonline_v_28344",
+      "https://www.merriam-webster.com/dictionary/colorless"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "coloration",
-      "etymology": [
-        {
-          "name": "colorare, coloratio",
-          "origin": "Latin"
-        },
-        {
-          "name": "coloration",
-          "origin": "French"
-        },
-        {
-          "name": "colorâcion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/coloration#etymonline_v_28356",
-        "https://www.merriam-webster.com/dictionary/coloration",
-        "https://www.larousse.fr/dictionnaires/francais/coloration/17309",
-        "https://latin-dictionary.net/definition/11137/coloro-colorare-coloravi-coloratus"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "colorific  (adj)",
+    "etymology": [
+      {
+        "name": "colorific  (adj)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/colorific#etymonline_v_53444",
+      "https://www.merriam-webster.com/dictionary/colorific"
+    ]
+  },
+  {
+    "name": "coloration",
+    "etymology": [
+      {
+        "name": "colorare, coloratio",
+        "origin": "Latin"
+      },
+      {
+        "name": "coloration",
+        "origin": "French"
+      },
+      {
+        "name": "colorâcion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/coloration#etymonline_v_28356",
+      "https://www.merriam-webster.com/dictionary/coloration",
+      "https://www.larousse.fr/dictionnaires/francais/coloration/17309",
+      "https://latin-dictionary.net/definition/11137/coloro-colorare-coloravi-coloratus"
+    ]
   }
 ]

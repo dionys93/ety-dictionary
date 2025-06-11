@@ -1,110 +1,81 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to pay",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ying"
+    "infinitive": "to pay",
+    "etymology": [
+      {
+        "name": "pacare",
+        "origin": "Latin"
       },
-      "etymology": [
-        "pacare",
-        "paier",
-        "paien",
-        "to pay",
-        "ta paie -s -d -ying"
-      ]
-    },
-    "standard": {
-      "name": "to pay",
-      "etymology": [
-        {
-          "name": "pacare",
-          "origin": "Latin"
-        },
-        {
-          "name": "paier",
-          "origin": "Old French"
-        },
-        {
-          "name": "paien",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to pay",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta paie -s -d -ying",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "paier",
+        "origin": "Old French"
+      },
+      {
+        "name": "paien",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to pay",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta paie -s -d -ying",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta paies",
+          "pastTense": "ta paied",
+          "progressive": "ta paieying"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/pay#etymonline_v_10195",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32178",
-        "https://www.anglo-norman.net/entry/paier",
-        "https://latin-dictionary.net/definition/29068/paco-pacare-pacavi-pacatus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ying"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/pay#etymonline_v_10195",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32178",
+      "https://www.anglo-norman.net/entry/paier",
+      "https://latin-dictionary.net/definition/29068/paco-pacare-pacavi-pacatus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "pay  -s (m n)",
-      "etymology": [
-        {
-          "name": "paie",
-          "origin": "Old French"
-        },
-        {
-          "name": "pay  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/pay#etymonline_v_10196",
-        "https://www.anglo-norman.net/entry/paie"
-      ]
-    }
+    "name": "pay  -s (m n)",
+    "etymology": [
+      {
+        "name": "paie",
+        "origin": "Old French"
+      },
+      {
+        "name": "pay  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/pay#etymonline_v_10196",
+      "https://www.anglo-norman.net/entry/paie"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "payout",
-      "etymology": [
-        {
-          "name": "payout",
-          "origin": "Modern English"
-        },
-        {
-          "name": "payaot -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/payout#etymonline_v_35799",
-        "https://www.etymonline.com/word/pay#etymonline_v_10195",
-        "https://www.etymonline.com/word/out#etymonline_v_9965"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "payout",
+    "etymology": [
+      {
+        "name": "payout",
+        "origin": "Modern English"
+      },
+      {
+        "name": "payaot -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/payout#etymonline_v_35799",
+      "https://www.etymonline.com/word/pay#etymonline_v_10195",
+      "https://www.etymonline.com/word/out#etymonline_v_9965"
+    ]
   }
 ]

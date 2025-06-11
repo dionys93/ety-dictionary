@@ -1,48 +1,42 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "quire",
-      "etymology": [
-        {
-          "name": "quater, quaterni",
-          "origin": "Latin"
-        },
-        {
-          "name": "quaier, quier, caier",
-          "origin": "Old French"
-        },
-        {
-          "name": "quaier",
-          "origin": "Middle English"
-        },
-        {
-          "name": "quire",
-          "origin": "Modern English"
-        },
-        {
-          "name": "quaê -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/quire#etymonline_v_3217",
-        "https://www.merriam-webster.com/dictionary/quire#dictionary-entry-1",
-        "https://www.dictionary.com/browse/quire",
-        "https://www.collinsdictionary.com/us/dictionary/english/quire",
-        "https://dictionary.cambridge.org/us/dictionary/english/quire",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35398",
-        "https://anglo-norman.net/entry/quaier",
-        "https://latin-dictionary.net/definition/32594/quaternarius-quaternaria-quaternarium"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "quire",
+    "etymology": [
+      {
+        "name": "quater, quaterni",
+        "origin": "Latin"
+      },
+      {
+        "name": "quaier, quier, caier",
+        "origin": "Old French"
+      },
+      {
+        "name": "quaier",
+        "origin": "Middle English"
+      },
+      {
+        "name": "quire",
+        "origin": "Modern English"
+      },
+      {
+        "name": "quaê -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/quire#etymonline_v_3217",
+      "https://www.merriam-webster.com/dictionary/quire#dictionary-entry-1",
+      "https://www.dictionary.com/browse/quire",
+      "https://www.collinsdictionary.com/us/dictionary/english/quire",
+      "https://dictionary.cambridge.org/us/dictionary/english/quire",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35398",
+      "https://anglo-norman.net/entry/quaier",
+      "https://latin-dictionary.net/definition/32594/quaternarius-quaternaria-quaternarium"
+    ]
   }
 ]

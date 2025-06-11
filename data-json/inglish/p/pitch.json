@@ -1,47 +1,32 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to pitch",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to pitch",
+    "etymology": [
+      {
+        "name": "piccean",
+        "origin": "Old English"
       },
-      "etymology": [
-        "piccean",
-        "to pitch",
-        "ta piche -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to pitch",
-      "etymology": [
-        {
-          "name": "piccean",
-          "origin": "Old English"
-        },
-        {
-          "name": "to pitch",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta piche -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to pitch",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta piche -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta piches",
+          "pastTense": "ta piched",
+          "progressive": "ta piching"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/pitch",
-        "https://www.oed.com/dictionary/pitch_v2?tab=meaning_and_use#29848014",
-        "https://www.oed.com/dictionary/pitch_v2?tab=pronunciation#29848014"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/pitch",
+      "https://www.oed.com/dictionary/pitch_v2?tab=meaning_and_use#29848014",
+      "https://www.oed.com/dictionary/pitch_v2?tab=pronunciation#29848014"
+    ]
   }
 ]

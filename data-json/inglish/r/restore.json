@@ -1,146 +1,112 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to restore",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to restore",
+    "etymology": [
+      {
+        "name": "re + staurare, restaurare",
+        "origin": "Latin"
       },
-      "etymology": [
-        "re + staurare, restaurare",
-        "restorer",
-        "restoren",
-        "to restore",
-        "ta restôre -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to restore",
-      "etymology": [
-        {
-          "name": "re + staurare, restaurare",
-          "origin": "Latin"
-        },
-        {
-          "name": "restorer",
-          "origin": "Old French"
-        },
-        {
-          "name": "restoren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to restore",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta restôre -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "restorer",
+        "origin": "Old French"
+      },
+      {
+        "name": "restoren",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to restore",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta restôre -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta restôres",
+          "pastTense": "ta restôred",
+          "progressive": "ta restôring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/restore#etymonline_v_12917",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37173",
-        "https://www.anglo-norman.net/entry/restorer",
-        "https://latin-dictionary.net/definition/33474/restauro-restaurare-restauravi-restauratus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/restore#etymonline_v_12917",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37173",
+      "https://www.anglo-norman.net/entry/restorer",
+      "https://latin-dictionary.net/definition/33474/restauro-restaurare-restauravi-restauratus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "restoration",
-      "etymology": [
-        {
-          "name": "restaurare, restoratio",
-          "origin": "Latin"
-        },
-        {
-          "name": "restoracion",
-          "origin": "Old French"
-        },
-        {
-          "name": "restoracioun",
-          "origin": "Middle English"
-        },
-        {
-          "name": "restoration",
-          "origin": "Modern English"
-        },
-        {
-          "name": "restorâcion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/restoration#etymonline_v_37179",
-        "https://www.merriam-webster.com/dictionary/restoration",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37167",
-        "https://www.anglo-norman.net/entry/restoracion",
-        "https://latin-dictionary.net/definition/33474/restauro-restaurare-restauravi-restauratus"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "restoration",
+    "etymology": [
+      {
+        "name": "restaurare, restoratio",
+        "origin": "Latin"
+      },
+      {
+        "name": "restoracion",
+        "origin": "Old French"
+      },
+      {
+        "name": "restoracioun",
+        "origin": "Middle English"
+      },
+      {
+        "name": "restoration",
+        "origin": "Modern English"
+      },
+      {
+        "name": "restorâcion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/restoration#etymonline_v_37179",
+      "https://www.merriam-webster.com/dictionary/restoration",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37167",
+      "https://www.anglo-norman.net/entry/restoracion",
+      "https://latin-dictionary.net/definition/33474/restauro-restaurare-restauravi-restauratus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "restorative",
-      "etymology": [
-        {
-          "name": "restaurativus",
-          "origin": "Medieval Latin"
-        },
-        {
-          "name": "restorer, restoratif, restauratif",
-          "origin": "Old French"
-        },
-        {
-          "name": "restorative",
-          "origin": "Modern English"
-        },
-        {
-          "name": "restôratif -s -vly -ness",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/restorative#etymonline_v_37180",
-        "https://www.etymonline.com/word/restorative#etymonline_v_48086",
-        "https://www.merriam-webster.com/dictionary/restorative#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/restorative#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37168",
-        "https://www.anglo-norman.net/entry/restoratif",
-        "https://www.anglo-norman.net/entry/restorer"
-      ],
-      "degrees": {
-        "positive": "ratif",
-        "comparative": "s",
-        "superlative": "vly"
+    "name": "restorative",
+    "etymology": [
+      {
+        "name": "restaurativus",
+        "origin": "Medieval Latin"
+      },
+      {
+        "name": "restorer, restoratif, restauratif",
+        "origin": "Old French"
+      },
+      {
+        "name": "restorative",
+        "origin": "Modern English"
+      },
+      {
+        "name": "restôratif -s -vly -ness",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "feminine noun"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/restorative#etymonline_v_37180",
+      "https://www.etymonline.com/word/restorative#etymonline_v_48086",
+      "https://www.merriam-webster.com/dictionary/restorative#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/restorative#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37168",
+      "https://www.anglo-norman.net/entry/restoratif",
+      "https://www.anglo-norman.net/entry/restorer"
+    ]
   }
 ]

@@ -1,98 +1,83 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to convey",
-      "etymology": [
-        "com + via",
-        "conviare",
-        "convoiier",
-        "conveier",
-        "conveien",
-        "to convey",
-        "ta conveie -s -d -eying"
-      ]
-    },
-    "standard": {
-      "name": "to convey",
-      "etymology": [
-        {
-          "name": "com + via",
-          "origin": "Latin"
-        },
-        {
-          "name": "conviare",
-          "origin": "Vulgar Latin"
-        },
-        {
-          "name": "convoiier",
-          "origin": "Old French"
-        },
-        {
-          "name": "conveier",
-          "origin": "Inglish"
-        },
-        {
-          "name": "conveien",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to convey",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta conveie -s -d -eying",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+    "infinitive": "to convey",
+    "etymology": [
+      {
+        "name": "com + via",
+        "origin": "Latin"
+      },
+      {
+        "name": "conviare",
+        "origin": "Vulgar Latin"
+      },
+      {
+        "name": "convoiier",
+        "origin": "Old French"
+      },
+      {
+        "name": "conveier",
+        "origin": "Inglish"
+      },
+      {
+        "name": "conveien",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to convey",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta conveie -s -d -eying",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta conveies",
+          "pastTense": "ta conveied",
+          "progressive": "ta conveieeying"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/convey#etymonline_v_18316",
-        "https://www.merriam-webster.com/dictionary/convey",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9612",
-        "https://www.anglo-norman.net/entry/conveer",
-        "https://latin-dictionary.net/definition/38716/via-viae",
-        "https://latin-dictionary.net/definition/11211/com"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/convey#etymonline_v_18316",
+      "https://www.merriam-webster.com/dictionary/convey",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9612",
+      "https://www.anglo-norman.net/entry/conveer",
+      "https://latin-dictionary.net/definition/38716/via-viae",
+      "https://latin-dictionary.net/definition/11211/com"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "conveyance",
-      "etymology": [
-        {
-          "name": "conveiance",
-          "origin": "Old French"
-        },
-        {
-          "name": "conveiaunce",
-          "origin": "Middle English"
-        },
-        {
-          "name": "conveyance",
-          "origin": "Modern English"
-        },
-        {
-          "name": "convéiance -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/conveyance#etymonline_v_28829",
-        "https://www.merriam-webster.com/dictionary/conveyance",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9610",
-        "https://www.anglo-norman.net/entry/conveiance"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "conveyance",
+    "etymology": [
+      {
+        "name": "conveiance",
+        "origin": "Old French"
+      },
+      {
+        "name": "conveiaunce",
+        "origin": "Middle English"
+      },
+      {
+        "name": "conveyance",
+        "origin": "Modern English"
+      },
+      {
+        "name": "convéiance -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/conveyance#etymonline_v_28829",
+      "https://www.merriam-webster.com/dictionary/conveyance",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9610",
+      "https://www.anglo-norman.net/entry/conveiance"
+    ]
   }
 ]

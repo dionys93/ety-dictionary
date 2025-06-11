@@ -1,34 +1,28 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "song",
-      "etymology": [
-        {
-          "name": "sang",
-          "origin": "Old English"
-        },
-        {
-          "name": "song",
-          "origin": "Middle English"
-        },
-        {
-          "name": "songue -ngs",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/song#etymonline_v_23882",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED41569",
-        "https://bosworthtoller.com/26404"
-      ],
-      "number": "plural"
-    }
+    "name": "song",
+    "etymology": [
+      {
+        "name": "sang",
+        "origin": "Old English"
+      },
+      {
+        "name": "song",
+        "origin": "Middle English"
+      },
+      {
+        "name": "songue -ngs",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/song#etymonline_v_23882",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED41569",
+      "https://bosworthtoller.com/26404"
+    ]
   }
 ]

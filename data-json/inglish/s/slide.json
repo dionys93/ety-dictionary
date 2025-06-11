@@ -1,78 +1,58 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to slide",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to slide",
+    "etymology": [
+      {
+        "name": "slidan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "slidan",
-        "sliden",
-        "to slide",
-        "to slîde -s slid -ing"
-      ]
-    },
-    "standard": {
-      "name": "to slide",
-      "etymology": [
-        {
-          "name": "slidan",
-          "origin": "Old English"
-        },
-        {
-          "name": "sliden",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to slide",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to slîde -s slid -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "sliden",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to slide",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to slîde -s slid -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to slîdes"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/slide#etymonline_v_23673",
-        "https://www.merriam-webster.com/dictionary/slide#dictionary-entry-1",
-        "https://www.oed.com/dictionary/slide_v?tab=factsheet#22220374",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40868",
-        "https://bosworthtoller.com/28001"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/slide#etymonline_v_23673",
+      "https://www.merriam-webster.com/dictionary/slide#dictionary-entry-1",
+      "https://www.oed.com/dictionary/slide_v?tab=factsheet#22220374",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40868",
+      "https://bosworthtoller.com/28001"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "slide",
-      "etymology": [
-        {
-          "name": "slide",
-          "origin": "Modern English"
-        },
-        {
-          "name": "slîde, slîds",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/slide",
-        "https://www.oed.com/dictionary/slide_n?tab=factsheet#22219091"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "slide",
+    "etymology": [
+      {
+        "name": "slide",
+        "origin": "Modern English"
+      },
+      {
+        "name": "slîde, slîds",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/slide",
+      "https://www.oed.com/dictionary/slide_n?tab=factsheet#22219091"
+    ]
   }
 ]

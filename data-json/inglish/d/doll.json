@@ -1,31 +1,25 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "Dorothy, doll",
-      "etymology": [
-        {
-          "name": "Dorothy, doll",
-          "origin": "Modern English"
-        },
-        {
-          "name": "dòle, dòls",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/doll#etymonline_v_13907",
-        "https://www.merriam-webster.com/dictionary/doll",
-        "https://www.oed.com/dictionary/doll_n1?tab=factsheet#6392626"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "Dorothy, doll",
+    "etymology": [
+      {
+        "name": "Dorothy, doll",
+        "origin": "Modern English"
+      },
+      {
+        "name": "dòle, dòls",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/doll#etymonline_v_13907",
+      "https://www.merriam-webster.com/dictionary/doll",
+      "https://www.oed.com/dictionary/doll_n1?tab=factsheet#6392626"
+    ]
   }
 ]

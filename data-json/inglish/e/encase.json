@@ -1,42 +1,28 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to encase",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to encase",
+    "etymology": [
+      {
+        "name": "to encase",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to encase",
-        "to encaisse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to encase",
-      "etymology": [
-        {
-          "name": "to encase",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to encaisse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to encaisse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to encaisses",
+          "pastTense": "to encaissed",
+          "progressive": "to encaissing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/encase#etymonline_v_8628",
-        "https://www.etymonline.com/word/case#etymonline_v_5433",
-        "https://www.etymonline.com/word/en-#etymonline_v_8621"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/encase#etymonline_v_8628",
+      "https://www.etymonline.com/word/case#etymonline_v_5433",
+      "https://www.etymonline.com/word/en-#etymonline_v_8621"
+    ]
   }
 ]

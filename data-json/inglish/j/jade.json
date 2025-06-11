@@ -1,116 +1,94 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "jade",
-      "etymology": [
-        {
-          "name": "ilia",
-          "origin": "Latin"
-        },
-        {
-          "name": "iliata",
-          "origin": "Vulgar Latin"
-        },
-        {
-          "name": "piedra de (la) ijada, yjada",
-          "origin": "Inglish"
-        },
-        {
-          "name": "l'ejade, le jade",
-          "origin": "French"
-        },
-        {
-          "name": "jade",
-          "origin": "Modern English"
-        },
-        {
-          "name": "jaid -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/jade#etymonline_v_1636",
-        "https://www.merriam-webster.com/dictionary/jade#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/jade#word-history",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/jade/44599",
-        "https://www.collinsdictionary.com/us/dictionary/spanish-english/ijada",
-        "https://latin-dictionary.net/definition/22622/iliacus-iliaci"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "jade",
-      "etymology": [
-        {
-          "name": "jade",
-          "origin": "Middle English"
-        },
-        {
-          "name": "jâde, jâds",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/jade#etymonline_v_1637",
-        "https://www.merriam-webster.com/dictionary/jade#dictionary-entry-3"
-      ],
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to jade",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "jade",
+    "etymology": [
+      {
+        "name": "ilia",
+        "origin": "Latin"
       },
-      "etymology": [
-        "to jade",
-        "ta jâde -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to jade",
-      "etymology": [
-        {
-          "name": "to jade",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta jâde -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "iliata",
+        "origin": "Vulgar Latin"
+      },
+      {
+        "name": "piedra de (la) ijada, yjada",
+        "origin": "Inglish"
+      },
+      {
+        "name": "l'ejade, le jade",
+        "origin": "French"
+      },
+      {
+        "name": "jade",
+        "origin": "Modern English"
+      },
+      {
+        "name": "jaid -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "noun"
+        ],
+        "degrees": {
+          "positive": "jaid",
+          "comparative": "s"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/jade#etymonline_v_42714",
-        "https://www.etymonline.com/word/jade#etymonline_v_1637",
-        "https://www.merriam-webster.com/dictionary/jade#dictionary-entry-2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/jade#etymonline_v_1636",
+      "https://www.merriam-webster.com/dictionary/jade#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/jade#word-history",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/jade/44599",
+      "https://www.collinsdictionary.com/us/dictionary/spanish-english/ijada",
+      "https://latin-dictionary.net/definition/22622/iliacus-iliaci"
+    ]
+  },
+  {
+    "name": "jade",
+    "etymology": [
+      {
+        "name": "jade",
+        "origin": "Middle English"
+      },
+      {
+        "name": "jâde, jâds",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/jade#etymonline_v_1637",
+      "https://www.merriam-webster.com/dictionary/jade#dictionary-entry-3"
+    ]
+  },
+  {
+    "infinitive": "to jade",
+    "etymology": [
+      {
+        "name": "to jade",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta jâde -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta jâdes",
+          "pastTense": "ta jâded",
+          "progressive": "ta jâding"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/jade#etymonline_v_42714",
+      "https://www.etymonline.com/word/jade#etymonline_v_1637",
+      "https://www.merriam-webster.com/dictionary/jade#dictionary-entry-2"
+    ]
   }
 ]

@@ -1,129 +1,93 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to lease",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to lease",
+    "etymology": [
+      {
+        "name": "laxus, laxare",
+        "origin": "Latin"
       },
-      "etymology": [
-        "laxus, laxare",
-        "lesser, laissier",
-        "to lease",
-        "ta lísse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to lease",
-      "etymology": [
-        {
-          "name": "laxus, laxare",
-          "origin": "Latin"
-        },
-        {
-          "name": "lesser, laissier",
-          "origin": "Old French"
-        },
-        {
-          "name": "to lease",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta lísse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "lesser, laissier",
+        "origin": "Old French"
+      },
+      {
+        "name": "to lease",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta lísse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta lísses",
+          "pastTense": "ta líssed",
+          "progressive": "ta líssing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/lease#etymonline_v_42950",
-        "https://www.merriam-webster.com/dictionary/lease#dictionary-entry-2",
-        "https://www.oed.com/dictionary/lease_v3?tab=factsheet#39577788",
-        "https://anglo-norman.net/entry/laisser",
-        "https://anglo-norman.net/entry/lesser",
-        "https://latin-dictionary.net/definition/25415/laxo-laxare-laxavi-laxatus",
-        "https://latin-dictionary.net/definition/25417/laxus-laxa"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/lease#etymonline_v_42950",
+      "https://www.merriam-webster.com/dictionary/lease#dictionary-entry-2",
+      "https://www.oed.com/dictionary/lease_v3?tab=factsheet#39577788",
+      "https://anglo-norman.net/entry/laisser",
+      "https://anglo-norman.net/entry/lesser",
+      "https://latin-dictionary.net/definition/25415/laxo-laxare-laxavi-laxatus",
+      "https://latin-dictionary.net/definition/25417/laxus-laxa"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "lease",
-      "etymology": [
-        {
-          "name": "laissier, lais, lez, les",
-          "origin": "Old French"
-        },
-        {
-          "name": "lease",
-          "origin": "Modern English"
-        },
-        {
-          "name": "líss  -es",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/lease#etymonline_v_6627",
-        "https://www.merriam-webster.com/dictionary/lease#dictionary-entry-1",
-        "https://www.oed.com/dictionary/lease_n3?tab=meaning_and_use#39576431",
-        "https://www.oed.com/dictionary/lease_n3?tab=pronunciation#39576431"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "lease",
+    "etymology": [
+      {
+        "name": "laissier, lais, lez, les",
+        "origin": "Old French"
+      },
+      {
+        "name": "lease",
+        "origin": "Modern English"
+      },
+      {
+        "name": "líss  -es",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/lease#etymonline_v_6627",
+      "https://www.merriam-webster.com/dictionary/lease#dictionary-entry-1",
+      "https://www.oed.com/dictionary/lease_n3?tab=meaning_and_use#39576431",
+      "https://www.oed.com/dictionary/lease_n3?tab=pronunciation#39576431"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to re-lease",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to re-lease",
+    "etymology": [
+      {
+        "name": "to re-lease",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to re-lease",
-        "ta rilísse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to re-lease",
-      "etymology": [
-        {
-          "name": "to re-lease",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta rilísse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta rilísse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta rilísses",
+          "pastTense": "ta rilíssed",
+          "progressive": "ta rilíssing"
         }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/release#dictionary-entry-3",
-        "https://www.oed.com/dictionary/re-lease_v2?tab=factsheet#149679023"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/release#dictionary-entry-3",
+      "https://www.oed.com/dictionary/re-lease_v2?tab=factsheet#149679023"
+    ]
   }
 ]

@@ -1,71 +1,59 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "genius",
-      "etymology": [
-        {
-          "name": "genius",
-          "origin": "Latin"
-        },
-        {
-          "name": "gínioʃ -ses",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/genius#etymonline_v_6003",
-        "https://www.merriam-webster.com/dictionary/genius#dictionary-entry-2",
-        "https://www.merriam-webster.com/dictionary/genius#dictionary-entry-1",
-        "https://www.oed.com/dictionary/genius_n?tab=pronunciation#3071474",
-        "https://latin-dictionary.net/definition/21408/genius-geni"
-      ]
-    }
+    "name": "genius",
+    "etymology": [
+      {
+        "name": "genius",
+        "origin": "Latin"
+      },
+      {
+        "name": "gínioʃ -ses",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "noun"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/genius#etymonline_v_6003",
+      "https://www.merriam-webster.com/dictionary/genius#dictionary-entry-2",
+      "https://www.merriam-webster.com/dictionary/genius#dictionary-entry-1",
+      "https://www.oed.com/dictionary/genius_n?tab=pronunciation#3071474",
+      "https://latin-dictionary.net/definition/21408/genius-geni"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "genie",
-      "etymology": [
-        {
-          "name": "genius",
-          "origin": "Latin"
-        },
-        {
-          "name": "génie",
-          "origin": "French"
-        },
-        {
-          "name": "genie",
-          "origin": "Modern English"
-        },
-        {
-          "name": "gínie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/genie#etymonline_v_6000",
-        "https://www.merriam-webster.com/dictionary/genie",
-        "https://www.oed.com/dictionary/genie_n?tab=pronunciation#3069031",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/g%C3%A9nie/36524",
-        "https://latin-dictionary.net/definition/21408/genius-geni"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "genie",
+    "etymology": [
+      {
+        "name": "genius",
+        "origin": "Latin"
+      },
+      {
+        "name": "génie",
+        "origin": "French"
+      },
+      {
+        "name": "genie",
+        "origin": "Modern English"
+      },
+      {
+        "name": "gínie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/genie#etymonline_v_6000",
+      "https://www.merriam-webster.com/dictionary/genie",
+      "https://www.oed.com/dictionary/genie_n?tab=pronunciation#3069031",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/g%C3%A9nie/36524",
+      "https://latin-dictionary.net/definition/21408/genius-geni"
+    ]
   }
 ]

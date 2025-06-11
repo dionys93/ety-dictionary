@@ -1,62 +1,45 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to plead",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to plead",
+    "etymology": [
+      {
+        "name": "placere, placitum, placitare",
+        "origin": "Latin"
       },
-      "etymology": [
-        "placere, placitum, placitare",
-        "plaidier, pleder",
-        "pleden",
-        "to plead",
-        "ta plide -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to plead",
-      "etymology": [
-        {
-          "name": "placere, placitum, placitare",
-          "origin": "Latin"
-        },
-        {
-          "name": "plaidier, pleder",
-          "origin": "Old French"
-        },
-        {
-          "name": "pleden",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to plead",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta plide -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "plaidier, pleder",
+        "origin": "Old French"
+      },
+      {
+        "name": "pleden",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to plead",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta plide -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta plides",
+          "pastTense": "ta plided",
+          "progressive": "ta pliding"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/plead#etymonline_v_16473",
-        "https://www.oed.com/dictionary/plead_v?tab=factsheet#29588578",
-        "https://www.merriam-webster.com/dictionary/plead",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED33720",
-        "https://anglo-norman.net/entry/plaider",
-        "https://latin-dictionary.net/definition/30629/placito-placitare-placitavi-placitatus",
-        "https://latin-dictionary.net/definition/30630/placitum-placiti",
-        "https://latin-dictionary.net/definition/30625/placeo-placere-placui-placitus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/plead#etymonline_v_16473",
+      "https://www.oed.com/dictionary/plead_v?tab=factsheet#29588578",
+      "https://www.merriam-webster.com/dictionary/plead",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED33720",
+      "https://anglo-norman.net/entry/plaider",
+      "https://latin-dictionary.net/definition/30629/placito-placitare-placitavi-placitatus",
+      "https://latin-dictionary.net/definition/30630/placitum-placiti",
+      "https://latin-dictionary.net/definition/30625/placeo-placere-placui-placitus"
+    ]
   }
 ]

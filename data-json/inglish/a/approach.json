@@ -1,117 +1,88 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to approach",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to approach",
+    "etymology": [
+      {
+        "name": "prope, ad + propiare, appropiare",
+        "origin": "Latin"
       },
-      "etymology": [
-        "prope, ad + propiare, appropiare",
-        "aprochier, approcher",
-        "approchen",
-        "to approach",
-        "to aproche -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to approach",
-      "etymology": [
-        {
-          "name": "prope, ad + propiare, appropiare",
-          "origin": "Latin"
-        },
-        {
-          "name": "aprochier, approcher",
-          "origin": "Old French"
-        },
-        {
-          "name": "approchen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to approach",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to aproche -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "aprochier, approcher",
+        "origin": "Old French"
+      },
+      {
+        "name": "approchen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to approach",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to aproche -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to aproches",
+          "pastTense": "to aproched",
+          "progressive": "to aproching"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/approach#etymonline_v_15518",
-        "https://www.merriam-webster.com/dictionary/approach#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED1992",
-        "https://anglo-norman.net/entry/aprocher",
-        "https://latin-dictionary.net/definition/4185/appropio-appropiare-appropiavi-appropiatus",
-        "https://latin-dictionary.net/definition/31931/prope"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/approach#etymonline_v_15518",
+      "https://www.merriam-webster.com/dictionary/approach#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED1992",
+      "https://anglo-norman.net/entry/aprocher",
+      "https://latin-dictionary.net/definition/4185/appropio-appropiare-appropiavi-appropiatus",
+      "https://latin-dictionary.net/definition/31931/prope"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "approach",
-      "etymology": [
-        {
-          "name": "approach",
-          "origin": "Modern English"
-        },
-        {
-          "name": "aprôch -es",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/approach#etymonline_v_41368",
-        "https://www.etymonline.com/word/approach#etymonline_v_15518",
-        "https://www.merriam-webster.com/dictionary/approach#dictionary-entry-2"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "approach",
+    "etymology": [
+      {
+        "name": "approach",
+        "origin": "Modern English"
+      },
+      {
+        "name": "aprôch -es",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/approach#etymonline_v_41368",
+      "https://www.etymonline.com/word/approach#etymonline_v_15518",
+      "https://www.merriam-webster.com/dictionary/approach#dictionary-entry-2"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "approachable",
-      "etymology": [
-        {
-          "name": "approachable",
-          "origin": "Modern English"
-        },
-        {
-          "name": "aprôchable",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/approachable#etymonline_v_26454",
-        "https://www.etymonline.com/word/approach#etymonline_v_15518",
-        "https://www.etymonline.com/word/-able#etymonline_v_49",
-        "https://www.merriam-webster.com/dictionary/approachable"
-      ]
-    }
+    "name": "approachable",
+    "etymology": [
+      {
+        "name": "approachable",
+        "origin": "Modern English"
+      },
+      {
+        "name": "aprôchable",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/approachable#etymonline_v_26454",
+      "https://www.etymonline.com/word/approach#etymonline_v_15518",
+      "https://www.etymonline.com/word/-able#etymonline_v_49",
+      "https://www.merriam-webster.com/dictionary/approachable"
+    ]
   }
 ]

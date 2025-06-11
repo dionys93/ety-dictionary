@@ -1,92 +1,70 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "father",
-      "etymology": [
-        {
-          "name": "fæder",
-          "origin": "Old English"
-        },
-        {
-          "name": "fader",
-          "origin": "Middle English"
-        },
-        {
-          "name": "father",
-          "origin": "Modern English"
-        },
-        {
-          "name": "fáþor -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/father#etymonline_v_1154",
-        "https://www.merriam-webster.com/dictionary/father#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15113",
-        "https://bosworthtoller.com/9879"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "father",
+    "etymology": [
+      {
+        "name": "fæder",
+        "origin": "Old English"
+      },
+      {
+        "name": "fader",
+        "origin": "Middle English"
+      },
+      {
+        "name": "father",
+        "origin": "Modern English"
+      },
+      {
+        "name": "fáþor -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/father#etymonline_v_1154",
+      "https://www.merriam-webster.com/dictionary/father#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15113",
+      "https://bosworthtoller.com/9879"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to father",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to father",
+    "etymology": [
+      {
+        "name": "fæder",
+        "origin": "Old English"
       },
-      "etymology": [
-        "fæder",
-        "fader",
-        "to father",
-        "ta fáþore -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to father",
-      "etymology": [
-        {
-          "name": "fæder",
-          "origin": "Old English"
-        },
-        {
-          "name": "fader",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to father",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta fáþore -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "fader",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to father",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta fáþore -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta fáþores",
+          "pastTense": "ta fáþored",
+          "progressive": "ta fáþoring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/father#etymonline_v_39234",
-        "https://www.etymonline.com/word/father#etymonline_v_1154",
-        "https://www.merriam-webster.com/dictionary/father#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15113",
-        "https://bosworthtoller.com/9879"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/father#etymonline_v_39234",
+      "https://www.etymonline.com/word/father#etymonline_v_1154",
+      "https://www.merriam-webster.com/dictionary/father#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15113",
+      "https://bosworthtoller.com/9879"
+    ]
   }
 ]

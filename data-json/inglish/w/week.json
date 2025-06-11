@@ -1,131 +1,104 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "week",
-      "etymology": [
-        {
-          "name": "wicu, wucu, wice",
-          "origin": "Old English"
-        },
-        {
-          "name": "weke",
-          "origin": "Middle English"
-        },
-        {
-          "name": "week",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ɯiek -x",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/week#etymonline_v_4888",
-        "https://www.oed.com/dictionary/week_n?tab=factsheet#14824926",
-        "https://www.merriam-webster.com/dictionary/week#word-history",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52070",
-        "https://bosworthtoller.com/35531"
-      ],
-      "number": "singular"
-    }
+    "name": "week",
+    "etymology": [
+      {
+        "name": "wicu, wucu, wice",
+        "origin": "Old English"
+      },
+      {
+        "name": "weke",
+        "origin": "Middle English"
+      },
+      {
+        "name": "week",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ɯiek -x",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/week#etymonline_v_4888",
+      "https://www.oed.com/dictionary/week_n?tab=factsheet#14824926",
+      "https://www.merriam-webster.com/dictionary/week#word-history",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52070",
+      "https://bosworthtoller.com/35531"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "weekday",
-      "etymology": [
-        {
-          "name": "wicudæge, wucudæge",
-          "origin": "Old English"
-        },
-        {
-          "name": "weekday",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ɯiekday -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/weekday#etymonline_v_25570",
-        "https://www.oed.com/dictionary/weekday_n?tab=factsheet#14827205",
-        "https://bosworthtoller.com/35505"
-      ],
-      "number": "plural"
-    }
+    "name": "weekday",
+    "etymology": [
+      {
+        "name": "wicudæge, wucudæge",
+        "origin": "Old English"
+      },
+      {
+        "name": "weekday",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ɯiekday -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/weekday#etymonline_v_25570",
+      "https://www.oed.com/dictionary/weekday_n?tab=factsheet#14827205",
+      "https://bosworthtoller.com/35505"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "weekend",
-      "etymology": [
-        {
-          "name": "weekend",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ɯiekend -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/weekend#etymonline_v_25571",
-        "https://www.oed.com/dictionary/weekend_n?tab=factsheet#14827470"
-      ],
-      "number": "plural"
-    }
+    "name": "weekend",
+    "etymology": [
+      {
+        "name": "weekend",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ɯiekend -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/weekend#etymonline_v_25571",
+      "https://www.oed.com/dictionary/weekend_n?tab=factsheet#14827470"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to weekly",
-      "etymology": [
-        "weekly",
-        "ɯiekly"
-      ]
-    },
-    "standard": {
-      "name": "to weekly",
-      "etymology": [
-        {
-          "name": "weekly",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ɯiekly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adverb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/weekly#etymonline_v_40142",
-        "https://www.etymonline.com/word/week#etymonline_v_4888",
-        "https://www.etymonline.com/word/-ly#etymonline_v_32027",
-        "https://www.oed.com/dictionary/weekly_adv?tab=factsheet#14828571",
-        "https://www.oed.com/dictionary/weekly_adj?tab=factsheet#14828235"
-      ]
-    }
+    "infinitive": "weekly",
+    "etymology": [
+      {
+        "name": "weekly",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ɯiekly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adverb"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/weekly#etymonline_v_40142",
+      "https://www.etymonline.com/word/week#etymonline_v_4888",
+      "https://www.etymonline.com/word/-ly#etymonline_v_32027",
+      "https://www.oed.com/dictionary/weekly_adv?tab=factsheet#14828571",
+      "https://www.oed.com/dictionary/weekly_adj?tab=factsheet#14828235"
+    ]
   }
 ]

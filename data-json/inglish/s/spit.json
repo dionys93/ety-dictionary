@@ -1,240 +1,189 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "to spit",
-      "etymology": [
-        {
-          "name": "spætan, spittan",
-          "origin": "Old English"
-        },
-        {
-          "name": "speten, spitten",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to spit",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta spitte spits spate spitting",
-          "origin": "Inglish"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/spit#etymonline_v_24033",
-        "https://www.merriam-webster.com/dictionary/spit#dictionary-entry-3",
-        "https://www.oed.com/dictionary/spit_v2?tab=factsheet#21488771",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42279",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42169",
-        "https://bosworthtoller.com/028617",
-        "https://bosworthtoller.com/28508",
-        "https://bosworthtoller.com/28390"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "spit  (n)",
-      "etymology": [
-        {
-          "name": "spitte",
-          "origin": "Middle English"
-        },
-        {
-          "name": "spit  (n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/spit#etymonline_v_45596",
-        "https://www.oed.com/dictionary/spit_n2?tab=factsheet#21487145",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42278"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "spitball  -s",
-      "etymology": [
-        {
-          "name": "spitball  -s (n)",
-          "origin": "Modern English"
-        },
-        {
-          "name": "spitbol -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/spitball#etymonline_v_40792"
-      ],
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "spitfire",
-      "etymology": [
-        {
-          "name": "spitfire",
-          "origin": "Modern English"
-        },
-        {
-          "name": "spitfyre",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/spitfire#etymonline_v_24396"
-      ],
-      "number": "singular"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "spittle",
-      "etymology": [
-        {
-          "name": "spætl, spatl",
-          "origin": "Old English"
-        },
-        {
-          "name": "spittle",
-          "origin": "Modern English"
-        },
-        {
-          "name": "spittle, spittels",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/spittle#etymonline_v_24036",
-        "https://www.merriam-webster.com/dictionary/spittle",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42168",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42349",
-        "https://bosworthtoller.com/28409",
-        "https://bosworthtoller.com/28391"
-      ],
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "spit",
-      "etymology": [
-        {
-          "name": "spitu",
-          "origin": "Old English"
-        },
-        {
-          "name": "spite",
-          "origin": "Middle English"
-        },
-        {
-          "name": "spit",
-          "origin": "Modern English"
-        },
-        {
-          "name": "spitt -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/spit#etymonline_v_24034",
-        "https://www.merriam-webster.com/dictionary/spit#dictionary-entry-1",
-        "https://www.oed.com/dictionary/spit_n1?tab=factsheet#21485899",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42263",
-        "https://bosworthtoller.com/28509"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to spit",
-      "conjugations": {
-        "thirdPerson": "d",
-        "pastTense": "ing"
+    "name": "to spit",
+    "etymology": [
+      {
+        "name": "spætan, spittan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "spitu",
-        "spiten",
-        "to spit",
-        "ta spitte spits -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to spit",
-      "etymology": [
-        {
-          "name": "spitu",
-          "origin": "Old English"
-        },
-        {
-          "name": "spiten",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to spit",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta spitte spits -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/spit#etymonline_v_49008",
-        "https://www.etymonline.com/word/spit#etymonline_v_24034",
-        "https://www.merriam-webster.com/dictionary/spit#dictionary-entry-2",
-        "https://www.oed.com/dictionary/spit_v1?tab=factsheet#21488347",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42268",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42263"
-      ],
-      "conjugations": {
-        "thirdPerson": "d",
-        "pastTense": "ing"
+      {
+        "name": "speten, spitten",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to spit",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta spitte spits spate spitting",
+        "origin": "Inglish"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/spit#etymonline_v_24033",
+      "https://www.merriam-webster.com/dictionary/spit#dictionary-entry-3",
+      "https://www.oed.com/dictionary/spit_v2?tab=factsheet#21488771",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42279",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42169",
+      "https://bosworthtoller.com/028617",
+      "https://bosworthtoller.com/28508",
+      "https://bosworthtoller.com/28390"
+    ]
+  },
+  {
+    "name": "spit  (n)",
+    "etymology": [
+      {
+        "name": "spitte",
+        "origin": "Middle English"
+      },
+      {
+        "name": "spit  (n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/spit#etymonline_v_45596",
+      "https://www.oed.com/dictionary/spit_n2?tab=factsheet#21487145",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42278"
+    ]
+  },
+  {
+    "name": "spitball  -s (n)",
+    "etymology": [
+      {
+        "name": "spitball  -s (n)",
+        "origin": "Modern English"
+      },
+      {
+        "name": "spitbol -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/spitball#etymonline_v_40792"
+    ]
+  },
+  {
+    "name": "spitfire",
+    "etymology": [
+      {
+        "name": "spitfire",
+        "origin": "Modern English"
+      },
+      {
+        "name": "spitfyre",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/spitfire#etymonline_v_24396"
+    ]
+  },
+  {
+    "name": "spittle",
+    "etymology": [
+      {
+        "name": "spætl, spatl",
+        "origin": "Old English"
+      },
+      {
+        "name": "spittle",
+        "origin": "Modern English"
+      },
+      {
+        "name": "spittle, spittels",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/spittle#etymonline_v_24036",
+      "https://www.merriam-webster.com/dictionary/spittle",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42168",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42349",
+      "https://bosworthtoller.com/28409",
+      "https://bosworthtoller.com/28391"
+    ]
+  },
+  {
+    "name": "spit",
+    "etymology": [
+      {
+        "name": "spitu",
+        "origin": "Old English"
+      },
+      {
+        "name": "spite",
+        "origin": "Middle English"
+      },
+      {
+        "name": "spit",
+        "origin": "Modern English"
+      },
+      {
+        "name": "spitt -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/spit#etymonline_v_24034",
+      "https://www.merriam-webster.com/dictionary/spit#dictionary-entry-1",
+      "https://www.oed.com/dictionary/spit_n1?tab=factsheet#21485899",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42263",
+      "https://bosworthtoller.com/28509"
+    ]
+  },
+  {
+    "infinitive": "to spit",
+    "etymology": [
+      {
+        "name": "spitu",
+        "origin": "Old English"
+      },
+      {
+        "name": "spiten",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to spit",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta spitte spits -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta spitte spitsd",
+          "pastTense": "ta spitte spitsing"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/spit#etymonline_v_49008",
+      "https://www.etymonline.com/word/spit#etymonline_v_24034",
+      "https://www.merriam-webster.com/dictionary/spit#dictionary-entry-2",
+      "https://www.oed.com/dictionary/spit_v1?tab=factsheet#21488347",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42268",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42263"
+    ]
   }
 ]

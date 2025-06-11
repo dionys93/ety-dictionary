@@ -1,140 +1,104 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to burn",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to burn",
+    "etymology": [
+      {
+        "name": "beornan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "beornan",
-        "brennen",
-        "to burn",
-        "ta boûne -s boûnt -ing"
-      ]
-    },
-    "standard": {
-      "name": "to burn",
-      "etymology": [
-        {
-          "name": "beornan",
-          "origin": "Old English"
-        },
-        {
-          "name": "brennen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to burn",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta boûne -s boûnt -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "intransitive verb"
-          ]
+      {
+        "name": "brennen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to burn",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta boûne -s boûnt -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "intransitive verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta boûnes"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/burn#etymonline_v_18113",
-        "https://www.merriam-webster.com/dictionary/burn#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5928",
-        "https://bosworthtoller.com/3758"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/burn#etymonline_v_18113",
+      "https://www.merriam-webster.com/dictionary/burn#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5928",
+      "https://bosworthtoller.com/3758"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "burn",
-      "etymology": [
-        {
-          "name": "bryne",
-          "origin": "Old English"
-        },
-        {
-          "name": "brenne",
-          "origin": "Middle English"
-        },
-        {
-          "name": "burn",
-          "origin": "Modern English"
-        },
-        {
-          "name": "boûn -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/burn#etymonline_v_43197",
-        "https://www.merriam-webster.com/dictionary/burn#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6054",
-        "https://bosworthtoller.com/5310"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "burn",
+    "etymology": [
+      {
+        "name": "bryne",
+        "origin": "Old English"
+      },
+      {
+        "name": "brenne",
+        "origin": "Middle English"
+      },
+      {
+        "name": "burn",
+        "origin": "Modern English"
+      },
+      {
+        "name": "boûn -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/burn#etymonline_v_43197",
+      "https://www.merriam-webster.com/dictionary/burn#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6054",
+      "https://bosworthtoller.com/5310"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to burn",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to burn",
+    "etymology": [
+      {
+        "name": "bærnan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "bærnan",
-        "brennen",
-        "to burn",
-        "ta bêne -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to burn",
-      "etymology": [
-        {
-          "name": "bærnan",
-          "origin": "Old English"
-        },
-        {
-          "name": "brennen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to burn",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta bêne -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "transitive verb"
-          ]
+      {
+        "name": "brennen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to burn",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta bêne -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "transitive verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta bênes",
+          "pastTense": "ta bêned",
+          "progressive": "ta bêning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/burn#etymonline_v_18113",
-        "https://www.merriam-webster.com/dictionary/burn#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5928",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED74",
-        "https://bosworthtoller.com/39447",
-        "https://bosworthtoller.com/2909"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/burn#etymonline_v_18113",
+      "https://www.merriam-webster.com/dictionary/burn#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5928",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED74",
+      "https://bosworthtoller.com/39447",
+      "https://bosworthtoller.com/2909"
+    ]
   }
 ]

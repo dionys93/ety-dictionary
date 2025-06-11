@@ -1,75 +1,55 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "hoof, hooves",
-      "etymology": [
-        {
-          "name": "hof",
-          "origin": "Old English"
-        },
-        {
-          "name": "hoof, hooves",
-          "origin": "Middle English"
-        },
-        {
-          "name": "hûfe, hûfs",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/hoof#etymonline_v_14427",
-        "https://www.merriam-webster.com/dictionary/hoof#dictionary-entry-1",
-        "https://bosworthtoller.com/19402"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "hoof, hooves",
+    "etymology": [
+      {
+        "name": "hof",
+        "origin": "Old English"
+      },
+      {
+        "name": "hoof, hooves",
+        "origin": "Middle English"
+      },
+      {
+        "name": "hûfe, hûfs",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/hoof#etymonline_v_14427",
+      "https://www.merriam-webster.com/dictionary/hoof#dictionary-entry-1",
+      "https://bosworthtoller.com/19402"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to hoof",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to hoof",
+    "etymology": [
+      {
+        "name": "to hoof",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "to hoof",
-        "ta hûfe -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to hoof",
-      "etymology": [
-        {
-          "name": "to hoof",
-          "origin": "Middle English"
-        },
-        {
-          "name": "ta hûfe -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta hûfe -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta hûfes",
+          "pastTense": "ta hûfed",
+          "progressive": "ta hûfing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/hoof#etymonline_v_42071",
-        "https://www.etymonline.com/word/hoof#etymonline_v_14427",
-        "https://www.merriam-webster.com/dictionary/hoof#dictionary-entry-2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/hoof#etymonline_v_42071",
+      "https://www.etymonline.com/word/hoof#etymonline_v_14427",
+      "https://www.merriam-webster.com/dictionary/hoof#dictionary-entry-2"
+    ]
   }
 ]

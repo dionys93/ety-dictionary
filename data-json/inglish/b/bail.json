@@ -1,131 +1,103 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "bail  -s (m n)",
-      "etymology": [
-        {
-          "name": "baiulus, baiulare",
-          "origin": "Latin"
-        },
-        {
-          "name": "baillier",
-          "origin": "Old French"
-        },
-        {
-          "name": "bail  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bail#etymonline_v_200",
-        "https://www.merriam-webster.com/dictionary/bail#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/bail#dictionary-entry-3",
-        "https://www.oed.com/dictionary/bail_n1?tab=factsheet#29446293",
-        "https://anglo-norman.net/entry/bailler",
-        "https://latin-dictionary.net/definition/5992/baijulo-baijulare",
-        "https://latin-dictionary.net/definition/5993/baijulus-baijuli"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to bail",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "bail  -s (m n)",
+    "etymology": [
+      {
+        "name": "baiulus, baiulare",
+        "origin": "Latin"
       },
-      "etymology": [
-        "baiulus, baiulare",
-        "baillier",
-        "to bail",
-        "ta baile -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to bail",
-      "etymology": [
-        {
-          "name": "baiulus, baiulare",
-          "origin": "Latin"
-        },
-        {
-          "name": "baillier",
-          "origin": "Old French"
-        },
-        {
-          "name": "to bail",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta baile -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bail#etymonline_v_46573",
-        "https://www.etymonline.com/word/bail#etymonline_v_201",
-        "https://www.merriam-webster.com/dictionary/bail#dictionary-entry-2",
-        "https://www.merriam-webster.com/dictionary/bail#dictionary-entry-4",
-        "https://www.merriam-webster.com/dictionary/bail#dictionary-entry-6",
-        "https://www.oed.com/dictionary/bail_v5?tab=pronunciation#29478939",
-        "https://www.oed.com/dictionary/bail_v1?tab=pronunciation#29464680",
-        "https://anglo-norman.net/entry/bailler",
-        "https://latin-dictionary.net/definition/5992/baijulo-baijulare",
-        "https://latin-dictionary.net/definition/5993/baijulus-baijuli"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "baillier",
+        "origin": "Old French"
+      },
+      {
+        "name": "bail  -s (m n)",
+        "origin": "Modern English"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bail#etymonline_v_200",
+      "https://www.merriam-webster.com/dictionary/bail#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/bail#dictionary-entry-3",
+      "https://www.oed.com/dictionary/bail_n1?tab=factsheet#29446293",
+      "https://anglo-norman.net/entry/bailler",
+      "https://latin-dictionary.net/definition/5992/baijulo-baijulare",
+      "https://latin-dictionary.net/definition/5993/baijulus-baijuli"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "bail",
-      "etymology": [
-        {
-          "name": "begel, bygel",
-          "origin": "Old English"
-        },
-        {
-          "name": "beil, baile",
-          "origin": "Middle English"
-        },
-        {
-          "name": "bail",
-          "origin": "Modern English"
-        },
-        {
-          "name": "béle, béls",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
+    "infinitive": "to bail",
+    "etymology": [
+      {
+        "name": "baiulus, baiulare",
+        "origin": "Latin"
+      },
+      {
+        "name": "baillier",
+        "origin": "Old French"
+      },
+      {
+        "name": "to bail",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta baile -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta bailes",
+          "pastTense": "ta bailed",
+          "progressive": "ta bailing"
         }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/bail#dictionary-entry-5",
-        "https://www.merriam-webster.com/dictionary/bail#word-history",
-        "https://www.oed.com/dictionary/bail_n2?tab=factsheet#29456044",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3948",
-        "https://bosworthtoller.com/41190",
-        "https://bosworthtoller.com/3415"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bail#etymonline_v_46573",
+      "https://www.etymonline.com/word/bail#etymonline_v_201",
+      "https://www.merriam-webster.com/dictionary/bail#dictionary-entry-2",
+      "https://www.merriam-webster.com/dictionary/bail#dictionary-entry-4",
+      "https://www.merriam-webster.com/dictionary/bail#dictionary-entry-6",
+      "https://www.oed.com/dictionary/bail_v5?tab=pronunciation#29478939",
+      "https://www.oed.com/dictionary/bail_v1?tab=pronunciation#29464680",
+      "https://anglo-norman.net/entry/bailler",
+      "https://latin-dictionary.net/definition/5992/baijulo-baijulare",
+      "https://latin-dictionary.net/definition/5993/baijulus-baijuli"
+    ]
+  },
+  {
+    "name": "bail",
+    "etymology": [
+      {
+        "name": "begel, bygel",
+        "origin": "Old English"
+      },
+      {
+        "name": "beil, baile",
+        "origin": "Middle English"
+      },
+      {
+        "name": "bail",
+        "origin": "Modern English"
+      },
+      {
+        "name": "béle, béls",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/bail#dictionary-entry-5",
+      "https://www.merriam-webster.com/dictionary/bail#word-history",
+      "https://www.oed.com/dictionary/bail_n2?tab=factsheet#29456044",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3948",
+      "https://bosworthtoller.com/41190",
+      "https://bosworthtoller.com/3415"
+    ]
   }
 ]

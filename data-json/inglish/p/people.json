@@ -1,92 +1,70 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "people",
-      "etymology": [
-        {
-          "name": "populus",
-          "origin": "Latin"
-        },
-        {
-          "name": "pople, peupel, peple, people",
-          "origin": "Old French"
-        },
-        {
-          "name": "people",
-          "origin": "Modern English"
-        },
-        {
-          "name": "píple, pípuls;  píp -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/people#etymonline_v_12654",
-        "https://www.oed.com/dictionary/people_n?tab=factsheet#31137290",
-        "https://dictionary.cambridge.org/us/dictionary/english/peeps",
-        "https://anglo-norman.net/entry/peuple",
-        "https://latin-dictionary.net/definition/30938/populus-populi"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "people",
+    "etymology": [
+      {
+        "name": "populus",
+        "origin": "Latin"
+      },
+      {
+        "name": "pople, peupel, peple, people",
+        "origin": "Old French"
+      },
+      {
+        "name": "people",
+        "origin": "Modern English"
+      },
+      {
+        "name": "píple, pípuls;  píp -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/people#etymonline_v_12654",
+      "https://www.oed.com/dictionary/people_n?tab=factsheet#31137290",
+      "https://dictionary.cambridge.org/us/dictionary/english/peeps",
+      "https://anglo-norman.net/entry/peuple",
+      "https://latin-dictionary.net/definition/30938/populus-populi"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to people",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to people",
+    "etymology": [
+      {
+        "name": "popler, peupler",
+        "origin": "Old French"
       },
-      "etymology": [
-        "popler, peupler",
-        "peplen",
-        "to people",
-        "ta píple -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to people",
-      "etymology": [
-        {
-          "name": "popler, peupler",
-          "origin": "Old French"
-        },
-        {
-          "name": "peplen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to people",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta píple -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "peplen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to people",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta píple -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta píples",
+          "pastTense": "ta pípled",
+          "progressive": "ta pípling"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/people#etymonline_v_46034",
-        "https://www.etymonline.com/word/people#etymonline_v_12654",
-        "https://www.oed.com/dictionary/people_v?tab=factsheet#31143158",
-        "https://anglo-norman.net/entry/popler_2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/people#etymonline_v_46034",
+      "https://www.etymonline.com/word/people#etymonline_v_12654",
+      "https://www.oed.com/dictionary/people_v?tab=factsheet#31143158",
+      "https://anglo-norman.net/entry/popler_2"
+    ]
   }
 ]

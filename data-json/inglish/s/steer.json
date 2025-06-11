@@ -1,87 +1,65 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "steer",
-      "etymology": [
-        {
-          "name": "steor",
-          "origin": "Old English"
-        },
-        {
-          "name": "steer",
-          "origin": "Middle English"
-        },
-        {
-          "name": "stior -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/steer#etymonline_v_22044",
-        "https://www.merriam-webster.com/dictionary/steer",
-        "https://www.oed.com/dictionary/steer_n1?tab=factsheet#20993122",
-        "https://bosworthtoller.com/28894"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "steer",
+    "etymology": [
+      {
+        "name": "steor",
+        "origin": "Old English"
+      },
+      {
+        "name": "steer",
+        "origin": "Middle English"
+      },
+      {
+        "name": "stior -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/steer#etymonline_v_22044",
+      "https://www.merriam-webster.com/dictionary/steer",
+      "https://www.oed.com/dictionary/steer_n1?tab=factsheet#20993122",
+      "https://bosworthtoller.com/28894"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to steer",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to steer",
+    "etymology": [
+      {
+        "name": "stieran, steran",
+        "origin": "Old English"
       },
-      "etymology": [
-        "stieran, steran",
-        "steren",
-        "to steer",
-        "ta stiere -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to steer",
-      "etymology": [
-        {
-          "name": "stieran, steran",
-          "origin": "Old English"
-        },
-        {
-          "name": "steren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to steer",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta stiere -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "steren",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to steer",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta stiere -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta stieres",
+          "pastTense": "ta stiered",
+          "progressive": "ta stiering"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/steer#etymonline_v_22043",
-        "https://www.merriam-webster.com/dictionary/steer",
-        "https://www.oed.com/dictionary/steer_v1?tab=factsheet#20994409",
-        "https://bosworthtoller.com/28898"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/steer#etymonline_v_22043",
+      "https://www.merriam-webster.com/dictionary/steer",
+      "https://www.oed.com/dictionary/steer_v1?tab=factsheet#20994409",
+      "https://bosworthtoller.com/28898"
+    ]
   }
 ]

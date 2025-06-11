@@ -1,92 +1,72 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to deal",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to deal",
+    "etymology": [
+      {
+        "name": "dælan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "dælan",
-        "delen",
-        "to deal",
-        "ta diele -s delt -ing"
-      ]
-    },
-    "standard": {
-      "name": "to deal",
-      "etymology": [
-        {
-          "name": "dælan",
-          "origin": "Old English"
-        },
-        {
-          "name": "delen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to deal",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta diele -s delt -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "delen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to deal",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta diele -s delt -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta dieles"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/deal#etymonline_v_46749",
-        "https://www.merriam-webster.com/dictionary/deal#dictionary-entry-1",
-        "https://www.oed.com/dictionary/deal_v?tab=factsheet#7523584",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10945",
-        "https://bosworthtoller.com/7371"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/deal#etymonline_v_46749",
+      "https://www.merriam-webster.com/dictionary/deal#dictionary-entry-1",
+      "https://www.oed.com/dictionary/deal_v?tab=factsheet#7523584",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10945",
+      "https://bosworthtoller.com/7371"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "deal",
-      "etymology": [
-        {
-          "name": "dæl",
-          "origin": "Old English"
-        },
-        {
-          "name": "del",
-          "origin": "Middle English"
-        },
-        {
-          "name": "deal",
-          "origin": "Modern English"
-        },
-        {
-          "name": "diele, diels",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/deal#etymonline_v_813",
-        "https://www.merriam-webster.com/dictionary/deal#dictionary-entry-2",
-        "https://www.merriam-webster.com/dictionary/deal#dictionary-entry-3",
-        "https://www.oed.com/dictionary/deal_n1?tab=factsheet#7521060",
-        "https://www.oed.com/dictionary/deal_n2?tab=factsheet#7522481",
-        "https://www.oed.com/dictionary/deal_n3?tab=factsheet#7522965",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10924",
-        "https://bosworthtoller.com/7370"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "deal",
+    "etymology": [
+      {
+        "name": "dæl",
+        "origin": "Old English"
+      },
+      {
+        "name": "del",
+        "origin": "Middle English"
+      },
+      {
+        "name": "deal",
+        "origin": "Modern English"
+      },
+      {
+        "name": "diele, diels",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/deal#etymonline_v_813",
+      "https://www.merriam-webster.com/dictionary/deal#dictionary-entry-2",
+      "https://www.merriam-webster.com/dictionary/deal#dictionary-entry-3",
+      "https://www.oed.com/dictionary/deal_n1?tab=factsheet#7521060",
+      "https://www.oed.com/dictionary/deal_n2?tab=factsheet#7522481",
+      "https://www.oed.com/dictionary/deal_n3?tab=factsheet#7522965",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10924",
+      "https://bosworthtoller.com/7370"
+    ]
   }
 ]

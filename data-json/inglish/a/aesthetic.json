@@ -1,204 +1,160 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "aesthetic",
-      "etymology": [
-        {
-          "name": "αἰσθάνεσθαι, αἰσθητικός",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "Ästhetisch",
-          "origin": "German"
-        },
-        {
-          "name": "aesthetic",
-          "origin": "Modern English"
-        },
-        {
-          "name": "aisþetic -s -ly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun",
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/aesthetic#etymonline_v_5184",
-        "https://www.etymonline.com/word/aesthetics#etymonline_v_29562",
-        "https://www.merriam-webster.com/dictionary/aesthetic#dictionary-entry-2",
-        "https://www.merriam-webster.com/dictionary/aesthetic#word-history",
-        "https://www.oed.com/dictionary/aesthetics_n?tab=factsheet#217980697",
-        "https://www.oed.com/dictionary/aesthetic_n?tab=factsheet#9579340",
-        "https://lsj.gr/wiki/%CE%B1%E1%BC%B0%CF%83%CE%B8%CE%AC%CE%BD%CE%B5%CF%83%CE%B8%CE%B1%CE%B9",
-        "https://lsj.gr/wiki/%CE%B1%E1%BC%B0%CF%83%CE%B8%CE%B7%CF%84%CE%B9%CE%BA%CF%8C%CF%82"
-      ],
-      "gender": "feminine",
-      "number": "singular"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "aesthete",
-      "etymology": [
-        {
-          "name": "αἰσθάνεσθαι, αἰσθητής",
-          "origin": "German"
-        },
-        {
-          "name": "aesthete",
-          "origin": "Modern English"
-        },
-        {
-          "name": "aisþiet -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/aesthete#etymonline_v_31665",
-        "https://www.merriam-webster.com/dictionary/aesthete",
-        "https://www.oed.com/dictionary/aesthete_n?tab=factsheet#9577845",
-        "https://lsj.gr/wiki/%CE%B1%E1%BC%B0%CF%83%CE%B8%CE%B7%CF%84%CE%AE%CF%82",
-        "https://lsj.gr/wiki/%CE%B1%E1%BC%B0%CF%83%CE%B8%CE%AC%CE%BD%CE%B5%CF%83%CE%B8%CE%B1%CE%B9"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "aestheticism",
-      "etymology": [
-        {
-          "name": "aestheticism",
-          "origin": "Modern English"
-        },
-        {
-          "name": "aisþeticism",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/aestheticism#etymonline_v_40824",
-        "https://www.merriam-webster.com/dictionary/aestheticism",
-        "https://www.oed.com/dictionary/aestheticism_n?tab=factsheet#9359805"
-      ],
-      "gender": "feminine",
-      "number": "singular"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "aesthetician",
-      "etymology": [
-        {
-          "name": "aesthetician",
-          "origin": "Modern English"
-        },
-        {
-          "name": "aisþetician -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/aesthetician",
-        "https://www.oed.com/dictionary/aesthetician_n?tab=factsheet#9583275"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "aestheticist",
-      "etymology": [
-        {
-          "name": "aestheticist",
-          "origin": "Modern English"
-        },
-        {
-          "name": "aisþeticist -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.collinsdictionary.com/us/dictionary/english/aestheticist",
-        "https://www.oed.com/dictionary/aestheticist_n?tab=factsheet#9360859"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to aestheticize",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "aesthetic",
+    "etymology": [
+      {
+        "name": "αἰσθάνεσθαι, αἰσθητικός",
+        "origin": "Ancient Greek"
       },
-      "etymology": [
-        "to aestheticize",
-        "to aisþeticyse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to aestheticize",
-      "etymology": [
-        {
-          "name": "to aestheticize",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to aisþeticyse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/aestheticize",
-        "https://www.oed.com/dictionary/aestheticize_v?tab=factsheet#9362885"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "Ästhetisch",
+        "origin": "German"
+      },
+      {
+        "name": "aesthetic",
+        "origin": "Modern English"
+      },
+      {
+        "name": "aisþetic -s -ly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun",
+          "adjective"
+        ],
+        "gender": "feminine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/aesthetic#etymonline_v_5184",
+      "https://www.etymonline.com/word/aesthetics#etymonline_v_29562",
+      "https://www.merriam-webster.com/dictionary/aesthetic#dictionary-entry-2",
+      "https://www.merriam-webster.com/dictionary/aesthetic#word-history",
+      "https://www.oed.com/dictionary/aesthetics_n?tab=factsheet#217980697",
+      "https://www.oed.com/dictionary/aesthetic_n?tab=factsheet#9579340",
+      "https://lsj.gr/wiki/%CE%B1%E1%BC%B0%CF%83%CE%B8%CE%AC%CE%BD%CE%B5%CF%83%CE%B8%CE%B1%CE%B9",
+      "https://lsj.gr/wiki/%CE%B1%E1%BC%B0%CF%83%CE%B8%CE%B7%CF%84%CE%B9%CE%BA%CF%8C%CF%82"
+    ]
+  },
+  {
+    "name": "aesthete",
+    "etymology": [
+      {
+        "name": "αἰσθάνεσθαι, αἰσθητής",
+        "origin": "German"
+      },
+      {
+        "name": "aesthete",
+        "origin": "Modern English"
+      },
+      {
+        "name": "aisþiet -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/aesthete#etymonline_v_31665",
+      "https://www.merriam-webster.com/dictionary/aesthete",
+      "https://www.oed.com/dictionary/aesthete_n?tab=factsheet#9577845",
+      "https://lsj.gr/wiki/%CE%B1%E1%BC%B0%CF%83%CE%B8%CE%B7%CF%84%CE%AE%CF%82",
+      "https://lsj.gr/wiki/%CE%B1%E1%BC%B0%CF%83%CE%B8%CE%AC%CE%BD%CE%B5%CF%83%CE%B8%CE%B1%CE%B9"
+    ]
+  },
+  {
+    "name": "aestheticism",
+    "etymology": [
+      {
+        "name": "aestheticism",
+        "origin": "Modern English"
+      },
+      {
+        "name": "aisþeticism",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/aestheticism#etymonline_v_40824",
+      "https://www.merriam-webster.com/dictionary/aestheticism",
+      "https://www.oed.com/dictionary/aestheticism_n?tab=factsheet#9359805"
+    ]
+  },
+  {
+    "name": "aesthetician",
+    "etymology": [
+      {
+        "name": "aesthetician",
+        "origin": "Modern English"
+      },
+      {
+        "name": "aisþetician -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/aesthetician",
+      "https://www.oed.com/dictionary/aesthetician_n?tab=factsheet#9583275"
+    ]
+  },
+  {
+    "name": "aestheticist",
+    "etymology": [
+      {
+        "name": "aestheticist",
+        "origin": "Modern English"
+      },
+      {
+        "name": "aisþeticist -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.collinsdictionary.com/us/dictionary/english/aestheticist",
+      "https://www.oed.com/dictionary/aestheticist_n?tab=factsheet#9360859"
+    ]
+  },
+  {
+    "infinitive": "to aestheticize",
+    "etymology": [
+      {
+        "name": "to aestheticize",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to aisþeticyse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to aisþeticyses",
+          "pastTense": "to aisþeticysed",
+          "progressive": "to aisþeticysing"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/aestheticize",
+      "https://www.oed.com/dictionary/aestheticize_v?tab=factsheet#9362885"
+    ]
   }
 ]

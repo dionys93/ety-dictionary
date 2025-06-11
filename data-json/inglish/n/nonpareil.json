@@ -1,29 +1,23 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "nonpareil",
-      "etymology": [
-        {
-          "name": "nonpareil",
-          "origin": "Old French"
-        },
-        {
-          "name": "nonparèl",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/nonpareil#etymonline_v_9773",
-        "https://www.merriam-webster.com/dictionary/nonpareil",
-        "https://www.collinsdictionary.com/us/dictionary/english/nonpareil"
-      ]
-    }
+    "name": "nonpareil",
+    "etymology": [
+      {
+        "name": "nonpareil",
+        "origin": "Old French"
+      },
+      {
+        "name": "nonparèl",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/nonpareil#etymonline_v_9773",
+      "https://www.merriam-webster.com/dictionary/nonpareil",
+      "https://www.collinsdictionary.com/us/dictionary/english/nonpareil"
+    ]
   }
 ]

@@ -1,38 +1,32 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "dove",
-      "etymology": [
-        {
-          "name": "dufe",
-          "origin": "Old English"
-        },
-        {
-          "name": "douve",
-          "origin": "Middle English"
-        },
-        {
-          "name": "dove",
-          "origin": "Modern English"
-        },
-        {
-          "name": "dof -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/dove",
-        "https://www.oed.com/dictionary/dove_n?tab=factsheet#6190525"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "dove",
+    "etymology": [
+      {
+        "name": "dufe",
+        "origin": "Old English"
+      },
+      {
+        "name": "douve",
+        "origin": "Middle English"
+      },
+      {
+        "name": "dove",
+        "origin": "Modern English"
+      },
+      {
+        "name": "dof -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/dove",
+      "https://www.oed.com/dictionary/dove_n?tab=factsheet#6190525"
+    ]
   }
 ]

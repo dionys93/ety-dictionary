@@ -1,79 +1,57 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to ail",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to ail",
+    "etymology": [
+      {
+        "name": "eglan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "eglan",
-        "eilen, ailen",
-        "to ail",
-        "ta eile -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to ail",
-      "etymology": [
-        {
-          "name": "eglan",
-          "origin": "Old English"
-        },
-        {
-          "name": "eilen, ailen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to ail",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta eile -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "eilen, ailen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to ail",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta eile -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta eiles",
+          "pastTense": "ta eiled",
+          "progressive": "ta eiling"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/ail#etymonline_v_8071",
-        "https://www.oed.com/dictionary/ail_v?tab=factsheet#7891922",
-        "https://bosworthtoller.com/9126"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/ail#etymonline_v_8071",
+      "https://www.oed.com/dictionary/ail_v?tab=factsheet#7891922",
+      "https://bosworthtoller.com/9126"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "ailment",
-      "etymology": [
-        {
-          "name": "ailment",
-          "origin": "Modern English"
-        },
-        {
-          "name": "eilment -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/ailment#etymonline_v_40891",
-        "https://www.oed.com/dictionary/ailment_n?tab=factsheet#7914490"
-      ],
-      "number": "plural"
-    }
+    "name": "ailment",
+    "etymology": [
+      {
+        "name": "ailment",
+        "origin": "Modern English"
+      },
+      {
+        "name": "eilment -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/ailment#etymonline_v_40891",
+      "https://www.oed.com/dictionary/ailment_n?tab=factsheet#7914490"
+    ]
   }
 ]

@@ -1,119 +1,89 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "ready",
-      "etymology": [
-        {
-          "name": "geræde, ræde",
-          "origin": "Old English"
-        },
-        {
-          "name": "redi",
-          "origin": "Middle English"
-        },
-        {
-          "name": "ready",
-          "origin": "Modern English"
-        },
-        {
-          "name": "rèdy",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/ready#etymonline_v_7323",
-        "https://www.merriam-webster.com/dictionary/ready#dictionary-entry-1",
-        "https://www.oed.com/dictionary/ready_adj?tab=factsheet#26835346",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36325",
-        "https://bosworthtoller.com/25469",
-        "https://bosworthtoller.com/15633"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to ready",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ying"
+    "name": "ready",
+    "etymology": [
+      {
+        "name": "geræde, ræde",
+        "origin": "Old English"
       },
-      "etymology": [
-        "redien",
-        "to ready",
-        "ta rèdie -s -d -ying"
-      ]
-    },
-    "standard": {
-      "name": "to ready",
-      "etymology": [
-        {
-          "name": "redien",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to ready",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta rèdie -s -d -ying",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/ready#etymonline_v_42558",
-        "https://www.etymonline.com/word/ready#etymonline_v_7323",
-        "https://www.merriam-webster.com/dictionary/ready#dictionary-entry-2",
-        "https://www.oed.com/dictionary/ready_v?tab=factsheet#26841073",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36328"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ying"
+      {
+        "name": "redi",
+        "origin": "Middle English"
+      },
+      {
+        "name": "ready",
+        "origin": "Modern English"
+      },
+      {
+        "name": "rèdy",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/ready#etymonline_v_7323",
+      "https://www.merriam-webster.com/dictionary/ready#dictionary-entry-1",
+      "https://www.oed.com/dictionary/ready_adj?tab=factsheet#26835346",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36325",
+      "https://bosworthtoller.com/25469",
+      "https://bosworthtoller.com/15633"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "all ready, already",
-      "etymology": [
-        "all ready, already",
-        "alrèdy"
-      ]
-    },
-    "standard": {
-      "name": "all ready, already",
-      "etymology": [
-        {
-          "name": "all ready, already",
-          "origin": "Modern English"
-        },
-        {
-          "name": "alrèdy",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adverb"
-          ]
+    "infinitive": "to ready",
+    "etymology": [
+      {
+        "name": "redien",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to ready",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta rèdie -s -d -ying",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta rèdies",
+          "pastTense": "ta rèdied",
+          "progressive": "ta rèdieying"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/already#etymonline_v_10918",
-        "https://www.etymonline.com/word/ready#etymonline_v_7323",
-        "https://www.etymonline.com/word/all#etymonline_v_8164",
-        "https://www.merriam-webster.com/dictionary/already",
-        "https://www.oed.com/dictionary/already_adj?tab=factsheet#6212081"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/ready#etymonline_v_42558",
+      "https://www.etymonline.com/word/ready#etymonline_v_7323",
+      "https://www.merriam-webster.com/dictionary/ready#dictionary-entry-2",
+      "https://www.oed.com/dictionary/ready_v?tab=factsheet#26841073",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36328"
+    ]
+  },
+  {
+    "infinitive": "all ready, already",
+    "etymology": [
+      {
+        "name": "all ready, already",
+        "origin": "Modern English"
+      },
+      {
+        "name": "alrèdy",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adverb"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/already#etymonline_v_10918",
+      "https://www.etymonline.com/word/ready#etymonline_v_7323",
+      "https://www.etymonline.com/word/all#etymonline_v_8164",
+      "https://www.merriam-webster.com/dictionary/already",
+      "https://www.oed.com/dictionary/already_adj?tab=factsheet#6212081"
+    ]
   }
 ]

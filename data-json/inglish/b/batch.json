@@ -1,80 +1,60 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "batch",
-      "etymology": [
-        {
-          "name": "bacan, gebæc",
-          "origin": "Old English"
-        },
-        {
-          "name": "bach",
-          "origin": "Middle English"
-        },
-        {
-          "name": "batch",
-          "origin": "Modern English"
-        },
-        {
-          "name": "bach -es",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/batch#etymonline_v_5311",
-        "https://www.merriam-webster.com/dictionary/batch#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3389",
-        "https://bosworthtoller.com/13561",
-        "https://bosworthtoller.com/2823"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "batch",
+    "etymology": [
+      {
+        "name": "bacan, gebæc",
+        "origin": "Old English"
+      },
+      {
+        "name": "bach",
+        "origin": "Middle English"
+      },
+      {
+        "name": "batch",
+        "origin": "Modern English"
+      },
+      {
+        "name": "bach -es",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/batch#etymonline_v_5311",
+      "https://www.merriam-webster.com/dictionary/batch#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3389",
+      "https://bosworthtoller.com/13561",
+      "https://bosworthtoller.com/2823"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to batch",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to batch",
+    "etymology": [
+      {
+        "name": "to batch",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to batch",
-        "ta bache -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to batch",
-      "etymology": [
-        {
-          "name": "to batch",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta bache -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta bache -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta baches",
+          "pastTense": "ta bached",
+          "progressive": "ta baching"
         }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/batch#dictionary-entry-2",
-        "https://www.oed.com/dictionary/batch_v?tab=factsheet#26188060"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/batch#dictionary-entry-2",
+      "https://www.oed.com/dictionary/batch_v?tab=factsheet#26188060"
+    ]
   }
 ]

@@ -1,72 +1,50 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to roam",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to roam",
+    "etymology": [
+      {
+        "name": "aræman, ramian",
+        "origin": "Old English"
       },
-      "etymology": [
-        "aræman, ramian",
-        "romen",
-        "to roam",
-        "ta roame -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to roam",
-      "etymology": [
-        {
-          "name": "aræman, ramian",
-          "origin": "Old English"
-        },
-        {
-          "name": "romen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to roam",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta roame -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "romen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to roam",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta roame -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta roames",
+          "pastTense": "ta roamed",
+          "progressive": "ta roaming"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/roam#etymonline_v_15123",
-        "https://www.oed.com/dictionary/roam_v?tab=factsheet#25111979",
-        "https://www.merriam-webster.com/dictionary/roam#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37822",
-        "https://bosworthtoller.com/2058"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/roam#etymonline_v_15123",
+      "https://www.oed.com/dictionary/roam_v?tab=factsheet#25111979",
+      "https://www.merriam-webster.com/dictionary/roam#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37822",
+      "https://bosworthtoller.com/2058"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "roam  -s (m n)",
-      "etymology": [
-        {
-          "name": "roam  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.oed.com/dictionary/roam_n?tab=factsheet#25111918"
-      ]
-    }
+    "name": "roam  -s (m n)",
+    "etymology": [
+      {
+        "name": "roam  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.oed.com/dictionary/roam_n?tab=factsheet#25111918"
+    ]
   }
 ]

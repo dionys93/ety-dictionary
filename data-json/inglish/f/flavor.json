@@ -1,89 +1,69 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "flavour",
-      "etymology": [
-        {
-          "name": "flare",
-          "origin": "Latin"
-        },
-        {
-          "name": "flator",
-          "origin": "Vulgar Latin"
-        },
-        {
-          "name": "flaor",
-          "origin": "Old French"
-        },
-        {
-          "name": "flavour",
-          "origin": "Middle English"
-        },
-        {
-          "name": "flâvor -s; flâvorful, flâvorless, flâvorsom",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun",
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/flavor#etymonline_v_8861",
-        "https://www.merriam-webster.com/dictionary/flavor#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/flavorful",
-        "https://www.merriam-webster.com/dictionary/flavorless",
-        "https://www.merriam-webster.com/dictionary/flavorsome",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16214",
-        "https://www.anglo-norman.net/entry/flaor",
-        "https://latin-dictionary.net/definition/20751/flo-flare-flavi-flatus"
-      ],
-      "gender": "masculine",
-      "number": "singular"
-    }
+    "name": "flavour",
+    "etymology": [
+      {
+        "name": "flare",
+        "origin": "Latin"
+      },
+      {
+        "name": "flator",
+        "origin": "Vulgar Latin"
+      },
+      {
+        "name": "flaor",
+        "origin": "Old French"
+      },
+      {
+        "name": "flavour",
+        "origin": "Middle English"
+      },
+      {
+        "name": "flâvor -s; flâvorful, flâvorless, flâvorsom",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun",
+          "adjective"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/flavor#etymonline_v_8861",
+      "https://www.merriam-webster.com/dictionary/flavor#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/flavorful",
+      "https://www.merriam-webster.com/dictionary/flavorless",
+      "https://www.merriam-webster.com/dictionary/flavorsome",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16214",
+      "https://www.anglo-norman.net/entry/flaor",
+      "https://latin-dictionary.net/definition/20751/flo-flare-flavi-flatus"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to flavor",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to flavor",
+    "etymology": [
+      {
+        "name": "to flavor",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to flavor",
-        "ta flâvore -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to flavor",
-      "etymology": [
-        {
-          "name": "to flavor",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta flâvore -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta flâvore -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta flâvores",
+          "pastTense": "ta flâvored",
+          "progressive": "ta flâvoring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/flavor#etymonline_v_46026",
-        "https://www.etymonline.com/word/flavor#etymonline_v_8861",
-        "https://www.merriam-webster.com/dictionary/flavorsome#dictionary-entry-2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/flavor#etymonline_v_46026",
+      "https://www.etymonline.com/word/flavor#etymonline_v_8861",
+      "https://www.merriam-webster.com/dictionary/flavorsome#dictionary-entry-2"
+    ]
   }
 ]

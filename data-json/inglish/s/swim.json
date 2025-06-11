@@ -1,110 +1,84 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to swim",
-      "conjugations": {
-        "thirdPerson": "ing"
+    "infinitive": "to swim",
+    "etymology": [
+      {
+        "name": "swimman",
+        "origin": "Old English"
       },
-      "etymology": [
-        "swimman",
-        "swimmen",
-        "to swim",
-        "ta sɯimme sɯims sɯame sɯom -ing"
-      ]
-    },
-    "standard": {
-      "name": "to swim",
-      "etymology": [
-        {
-          "name": "swimman",
-          "origin": "Old English"
-        },
-        {
-          "name": "swimmen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to swim",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta sɯimme sɯims sɯame sɯom -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "swimmen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to swim",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta sɯimme sɯims sɯame sɯom -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta sɯimme sɯims sɯame sɯoming"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/swim#etymonline_v_22490",
-        "https://www.merriam-webster.com/dictionary/swim#dictionary-entry-1",
-        "https://www.oed.com/dictionary/swim_v?tab=factsheet#19611865",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44240",
-        "https://bosworthtoller.com/29812"
-      ],
-      "conjugations": {
-        "thirdPerson": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/swim#etymonline_v_22490",
+      "https://www.merriam-webster.com/dictionary/swim#dictionary-entry-1",
+      "https://www.oed.com/dictionary/swim_v?tab=factsheet#19611865",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44240",
+      "https://bosworthtoller.com/29812"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "swim",
-      "etymology": [
-        {
-          "name": "swim",
-          "origin": "Modern English"
-        },
-        {
-          "name": "sɯim -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/swim#etymonline_v_24581",
-        "https://www.etymonline.com/word/swim#etymonline_v_22490",
-        "https://www.merriam-webster.com/dictionary/swim#dictionary-entry-2",
-        "https://www.merriam-webster.com/dictionary/swim#dictionary-entry-3"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "swim",
+    "etymology": [
+      {
+        "name": "swim",
+        "origin": "Modern English"
+      },
+      {
+        "name": "sɯim -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/swim#etymonline_v_24581",
+      "https://www.etymonline.com/word/swim#etymonline_v_22490",
+      "https://www.merriam-webster.com/dictionary/swim#dictionary-entry-2",
+      "https://www.merriam-webster.com/dictionary/swim#dictionary-entry-3"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "swimmer",
-      "etymology": [
-        {
-          "name": "swimmer",
-          "origin": "Modern English"
-        },
-        {
-          "name": "sɯimmeur, sɯimmor -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/swimmer#etymonline_v_49360",
-        "https://www.etymonline.com/word/swim#etymonline_v_22490",
-        "https://www.merriam-webster.com/dictionary/swimmer",
-        "https://www.oed.com/dictionary/swimmer_n?tab=factsheet#19615327"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "swimmer",
+    "etymology": [
+      {
+        "name": "swimmer",
+        "origin": "Modern English"
+      },
+      {
+        "name": "sɯimmeur, sɯimmor -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/swimmer#etymonline_v_49360",
+      "https://www.etymonline.com/word/swim#etymonline_v_22490",
+      "https://www.merriam-webster.com/dictionary/swimmer",
+      "https://www.oed.com/dictionary/swimmer_n?tab=factsheet#19615327"
+    ]
   }
 ]

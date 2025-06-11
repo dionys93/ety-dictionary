@@ -1,106 +1,79 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to concuss",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to concuss",
+    "etymology": [
+      {
+        "name": "concutere, concussus",
+        "origin": "Latin"
       },
-      "etymology": [
-        "concutere, concussus",
-        "to concuss",
-        "ta concusse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to concuss",
-      "etymology": [
-        {
-          "name": "concutere, concussus",
-          "origin": "Latin"
-        },
-        {
-          "name": "to concuss",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta concusse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to concuss",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta concusse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta concusses",
+          "pastTense": "ta concussed",
+          "progressive": "ta concussing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/concuss#etymonline_v_28549",
-        "https://www.merriam-webster.com/dictionary/concuss",
-        "https://latin-dictionary.net/definition/12190/concutio-concutere-concussi-concussus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/concuss#etymonline_v_28549",
+      "https://www.merriam-webster.com/dictionary/concuss",
+      "https://latin-dictionary.net/definition/12190/concutio-concutere-concussi-concussus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "concussion  -s (f n)",
-      "etymology": [
-        {
-          "name": "concutere, concussio",
-          "origin": "Latin"
-        },
-        {
-          "name": "concussioun",
-          "origin": "Middle English"
-        },
-        {
-          "name": "concussion  -s (f n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/concussion#etymonline_v_17327",
-        "https://www.merriam-webster.com/dictionary/concussion",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8851",
-        "https://latin-dictionary.net/definition/12184/concussio-concussionis",
-        "https://latin-dictionary.net/definition/12190/concutio-concutere-concussi-concussus"
-      ]
-    }
+    "name": "concussion  -s (f n)",
+    "etymology": [
+      {
+        "name": "concutere, concussio",
+        "origin": "Latin"
+      },
+      {
+        "name": "concussioun",
+        "origin": "Middle English"
+      },
+      {
+        "name": "concussion  -s (f n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/concussion#etymonline_v_17327",
+      "https://www.merriam-webster.com/dictionary/concussion",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8851",
+      "https://latin-dictionary.net/definition/12184/concussio-concussionis",
+      "https://latin-dictionary.net/definition/12190/concutio-concutere-concussi-concussus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "concussive",
-      "etymology": [
-        {
-          "name": "concussive",
-          "origin": "Modern English"
-        },
-        {
-          "name": "concussif -vly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun",
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/concussive#etymonline_v_53500",
-        "https://latin-dictionary.net/definition/12190/concutio-concutere-concussi-concussus"
-      ],
-      "gender": "feminine",
-      "number": "singular"
-    }
+    "name": "concussive",
+    "etymology": [
+      {
+        "name": "concussive",
+        "origin": "Modern English"
+      },
+      {
+        "name": "concussif -vly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun",
+          "adjective"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/concussive#etymonline_v_53500",
+      "https://latin-dictionary.net/definition/12190/concutio-concutere-concussi-concussus"
+    ]
   }
 ]

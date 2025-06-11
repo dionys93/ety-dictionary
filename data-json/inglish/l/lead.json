@@ -1,144 +1,106 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to lead",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to lead",
+    "etymology": [
+      {
+        "name": "lædan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "lædan",
-        "leden",
-        "to lead",
-        "ta lide -s lèd -ing"
-      ]
-    },
-    "standard": {
-      "name": "to lead",
-      "etymology": [
-        {
-          "name": "lædan",
-          "origin": "Old English"
-        },
-        {
-          "name": "leden",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to lead",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta lide -s lèd -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/lead#etymonline_v_6615",
-        "https://www.merriam-webster.com/dictionary/lead#dictionary-entry-1",
-        "https://www.oed.com/dictionary/lead_v1?tab=factsheet#39533372",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24960",
-        "https://bosworthtoller.com/20929"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "lead",
-      "etymology": [
-        {
-          "name": "led",
-          "origin": "Middle English"
-        },
-        {
-          "name": "lead",
-          "origin": "Modern English"
-        },
-        {
-          "name": "lide, líds",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/lead#etymonline_v_42946",
-        "https://www.etymonline.com/word/lead#etymonline_v_6615",
-        "https://www.oed.com/dictionary/lead_n2?tab=factsheet#39531536",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24955"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "lead  (adj, m n)",
-      "etymology": [
-        {
-          "name": "lead  (adj, m n)",
-          "origin": "Old English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/lead#etymonline_v_6616",
-        "https://www.etymonline.com/word/lead#etymonline_v_51846",
-        "https://www.merriam-webster.com/dictionary/lead#dictionary-entry-4",
-        "https://www.oed.com/dictionary/lead_n1?tab=factsheet#39528031",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24953",
-        "https://bosworthtoller.com/21242"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to lead",
-      "conjugations": {
-        "thirdPerson": "s"
+      {
+        "name": "leden",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "to lead",
-        "ta leade -s lead -ing"
-      ]
-    },
-    "standard": {
-      "name": "to lead",
-      "etymology": [
-        {
-          "name": "to lead",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta leade -s lead -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to lead",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta lide -s lèd -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta lides"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/lead#etymonline_v_43368",
-        "https://www.etymonline.com/word/lead#etymonline_v_6616",
-        "https://www.oed.com/dictionary/lead_v2?tab=factsheet#39537619",
-        "https://www.merriam-webster.com/dictionary/lead#dictionary-entry-5"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/lead#etymonline_v_6615",
+      "https://www.merriam-webster.com/dictionary/lead#dictionary-entry-1",
+      "https://www.oed.com/dictionary/lead_v1?tab=factsheet#39533372",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24960",
+      "https://bosworthtoller.com/20929"
+    ]
+  },
+  {
+    "name": "lead",
+    "etymology": [
+      {
+        "name": "led",
+        "origin": "Middle English"
+      },
+      {
+        "name": "lead",
+        "origin": "Modern English"
+      },
+      {
+        "name": "lide, líds",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/lead#etymonline_v_42946",
+      "https://www.etymonline.com/word/lead#etymonline_v_6615",
+      "https://www.oed.com/dictionary/lead_n2?tab=factsheet#39531536",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24955"
+    ]
+  },
+  {
+    "name": "lead  (adj, m n)",
+    "etymology": [
+      {
+        "name": "lead  (adj, m n)",
+        "origin": "Old English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/lead#etymonline_v_6616",
+      "https://www.etymonline.com/word/lead#etymonline_v_51846",
+      "https://www.merriam-webster.com/dictionary/lead#dictionary-entry-4",
+      "https://www.oed.com/dictionary/lead_n1?tab=factsheet#39528031",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24953",
+      "https://bosworthtoller.com/21242"
+    ]
+  },
+  {
+    "infinitive": "to lead",
+    "etymology": [
+      {
+        "name": "to lead",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta leade -s lead -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta leades"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/lead#etymonline_v_43368",
+      "https://www.etymonline.com/word/lead#etymonline_v_6616",
+      "https://www.oed.com/dictionary/lead_v2?tab=factsheet#39537619",
+      "https://www.merriam-webster.com/dictionary/lead#dictionary-entry-5"
+    ]
   }
 ]

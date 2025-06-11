@@ -1,201 +1,153 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "truth",
-      "etymology": [
-        {
-          "name": "treowþ, triewþ, trýwþ",
-          "origin": "Old English"
-        },
-        {
-          "name": "trewthe",
-          "origin": "Middle English"
-        },
-        {
-          "name": "truth",
-          "origin": "Modern English"
-        },
-        {
-          "name": "treuþ -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/truth#etymonline_v_17903",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED47016",
-        "https://bosworthtoller.com/31025"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "truthful",
-      "etymology": [
-        {
-          "name": "treuful",
-          "origin": "Middle English"
-        },
-        {
-          "name": "truthful",
-          "origin": "Modern English"
-        },
-        {
-          "name": "treuþful -ly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/truthful#etymonline_v_39450",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED47004",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED47003"
-      ],
-      "degrees": {
-        "positive": "ful",
-        "comparative": "ly"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "true",
-      "etymology": [
-        {
-          "name": "triewe",
-          "origin": "Old English"
-        },
-        {
-          "name": "treu",
-          "origin": "Middle English"
-        },
-        {
-          "name": "true",
-          "origin": "Modern English"
-        },
-        {
-          "name": "treue -r -st",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/true#etymonline_v_17889",
-        "https://www.merriam-webster.com/dictionary/true",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED47000",
-        "https://bosworthtoller.com/16628"
-      ],
-      "degrees": {
-        "positive": "treue",
-        "comparative": "r",
-        "superlative": "st"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to true",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "truth",
+    "etymology": [
+      {
+        "name": "treowþ, triewþ, trýwþ",
+        "origin": "Old English"
       },
-      "etymology": [
-        "triewe",
-        "treu",
-        "to true",
-        "ta treue -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to true",
-      "etymology": [
-        {
-          "name": "triewe",
-          "origin": "Old English"
-        },
-        {
-          "name": "treu",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to true",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta treue -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/true#etymonline_v_49643",
-        "https://www.merriam-webster.com/dictionary/true",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED47000",
-        "https://bosworthtoller.com/16628"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "trewthe",
+        "origin": "Middle English"
+      },
+      {
+        "name": "truth",
+        "origin": "Modern English"
+      },
+      {
+        "name": "treuþ -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/truth#etymonline_v_17903",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED47016",
+      "https://bosworthtoller.com/31025"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to truly",
-      "etymology": [
-        "treowlice",
-        "truly",
-        "treuly"
-      ]
-    },
-    "standard": {
-      "name": "to truly",
-      "etymology": [
-        {
-          "name": "treowlice",
-          "origin": "Old English"
-        },
-        {
-          "name": "truly",
-          "origin": "Modern English"
-        },
-        {
-          "name": "treuly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adverb"
-          ]
+    "name": "truthful",
+    "etymology": [
+      {
+        "name": "treuful",
+        "origin": "Middle English"
+      },
+      {
+        "name": "truthful",
+        "origin": "Modern English"
+      },
+      {
+        "name": "treuþful -ly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/truthful#etymonline_v_39450",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED47004",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED47003"
+    ]
+  },
+  {
+    "name": "true",
+    "etymology": [
+      {
+        "name": "triewe",
+        "origin": "Old English"
+      },
+      {
+        "name": "treu",
+        "origin": "Middle English"
+      },
+      {
+        "name": "true",
+        "origin": "Modern English"
+      },
+      {
+        "name": "treue -r -st",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ],
+        "degrees": {
+          "positive": "treue",
+          "comparative": "r",
+          "superlative": "st"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/truly#etymonline_v_30596",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED47008",
-        "https://bosworthtoller.com/31016"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/true#etymonline_v_17889",
+      "https://www.merriam-webster.com/dictionary/true",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED47000",
+      "https://bosworthtoller.com/16628"
+    ]
+  },
+  {
+    "infinitive": "to true",
+    "etymology": [
+      {
+        "name": "triewe",
+        "origin": "Old English"
+      },
+      {
+        "name": "treu",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to true",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta treue -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta treues",
+          "pastTense": "ta treued",
+          "progressive": "ta treuing"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/true#etymonline_v_49643",
+      "https://www.merriam-webster.com/dictionary/true",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED47000",
+      "https://bosworthtoller.com/16628"
+    ]
+  },
+  {
+    "infinitive": "truly",
+    "etymology": [
+      {
+        "name": "treowlice",
+        "origin": "Old English"
+      },
+      {
+        "name": "truly",
+        "origin": "Modern English"
+      },
+      {
+        "name": "treuly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adverb"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/truly#etymonline_v_30596",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED47008",
+      "https://bosworthtoller.com/31016"
+    ]
   }
 ]

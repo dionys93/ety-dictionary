@@ -1,69 +1,49 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "arc  -s (n)",
-      "etymology": [
-        {
-          "name": "arcus",
-          "origin": "Latin"
-        },
-        {
-          "name": "arc  -s (n)",
-          "origin": "Old French"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/arc#etymonline_v_15559",
-        "https://www.oed.com/dictionary/arc_n?tab=factsheet#40298719",
-        "https://www.anglo-norman.net/entry/arc_1",
-        "https://latin-dictionary.net/definition/4590/arcus-arcus"
-      ]
-    }
+    "name": "arc  -s (n)",
+    "etymology": [
+      {
+        "name": "arcus",
+        "origin": "Latin"
+      },
+      {
+        "name": "arc  -s (n)",
+        "origin": "Old French"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/arc#etymonline_v_15559",
+      "https://www.oed.com/dictionary/arc_n?tab=factsheet#40298719",
+      "https://www.anglo-norman.net/entry/arc_1",
+      "https://latin-dictionary.net/definition/4590/arcus-arcus"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to arc",
-      "conjugations": {
-        "thirdPerson": "cs",
-        "pastTense": "ed",
-        "progressive": "ing"
+    "infinitive": "to arc",
+    "etymology": [
+      {
+        "name": "to arc",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to arc",
-        "ta arq -cs -ed -ing"
-      ]
-    },
-    "standard": {
-      "name": "to arc",
-      "etymology": [
-        {
-          "name": "to arc",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta arq -cs -ed -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta arq -cs -ed -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta arqcs",
+          "pastTense": "ta arqed",
+          "progressive": "ta arqing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/arc#etymonline_v_41475",
-        "https://www.etymonline.com/word/arc#etymonline_v_15559",
-        "https://www.oed.com/dictionary/arc_v?tab=factsheet#40300306",
-        "https://www.anglo-norman.net/entry/arc_1",
-        "https://latin-dictionary.net/definition/4590/arcus-arcus"
-      ],
-      "conjugations": {
-        "thirdPerson": "cs",
-        "pastTense": "ed",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/arc#etymonline_v_41475",
+      "https://www.etymonline.com/word/arc#etymonline_v_15559",
+      "https://www.oed.com/dictionary/arc_v?tab=factsheet#40300306",
+      "https://www.anglo-norman.net/entry/arc_1",
+      "https://latin-dictionary.net/definition/4590/arcus-arcus"
+    ]
   }
 ]

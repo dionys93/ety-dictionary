@@ -1,130 +1,102 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "care",
-      "etymology": [
-        {
-          "name": "caru, cearu",
-          "origin": "Old English"
-        },
-        {
-          "name": "care",
-          "origin": "Middle English"
-        },
-        {
-          "name": "cair -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/care#etymonline_v_5376",
-        "https://www.merriam-webster.com/dictionary/care#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6789",
-        "https://bosworthtoller.com/5964",
-        "https://bosworthtoller.com/5872"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to care",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "care",
+    "etymology": [
+      {
+        "name": "caru, cearu",
+        "origin": "Old English"
       },
-      "etymology": [
-        "carian, cearian",
-        "caren",
-        "to care",
-        "ta caire -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to care",
-      "etymology": [
-        {
-          "name": "carian, cearian",
-          "origin": "Old English"
-        },
-        {
-          "name": "caren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to care",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta caire -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/care#etymonline_v_33875",
-        "https://www.etymonline.com/word/care#etymonline_v_5376",
-        "https://www.merriam-webster.com/dictionary/care#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6799",
-        "https://bosworthtoller.com/5955",
-        "https://bosworthtoller.com/5856"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "care",
+        "origin": "Middle English"
+      },
+      {
+        "name": "cair -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/care#etymonline_v_5376",
+      "https://www.merriam-webster.com/dictionary/care#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6789",
+      "https://bosworthtoller.com/5964",
+      "https://bosworthtoller.com/5872"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "careful",
-      "etymology": [
-        {
-          "name": "cearful",
-          "origin": "Old English"
-        },
-        {
-          "name": "careful",
-          "origin": "Middle English"
-        },
-        {
-          "name": "cairful -ly -ness",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
+    "infinitive": "to care",
+    "etymology": [
+      {
+        "name": "carian, cearian",
+        "origin": "Old English"
+      },
+      {
+        "name": "caren",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to care",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta caire -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta caires",
+          "pastTense": "ta caired",
+          "progressive": "ta cairing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/careful#etymonline_v_27722",
-        "https://www.etymonline.com/word/care#etymonline_v_5376",
-        "https://www.etymonline.com/word/-ful#etymonline_v_32015",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6794",
-        "https://bosworthtoller.com/5951",
-        "https://bosworthtoller.com/5950",
-        "https://bosworthtoller.com/5949"
-      ],
-      "degrees": {
-        "positive": "cairful",
-        "comparative": "ly",
-        "superlative": "ness"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/care#etymonline_v_33875",
+      "https://www.etymonline.com/word/care#etymonline_v_5376",
+      "https://www.merriam-webster.com/dictionary/care#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6799",
+      "https://bosworthtoller.com/5955",
+      "https://bosworthtoller.com/5856"
+    ]
+  },
+  {
+    "name": "careful",
+    "etymology": [
+      {
+        "name": "cearful",
+        "origin": "Old English"
+      },
+      {
+        "name": "careful",
+        "origin": "Middle English"
+      },
+      {
+        "name": "cairful -ly -ness",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ],
+        "degrees": {
+          "positive": "cairful",
+          "comparative": "ly",
+          "superlative": "ness"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/careful#etymonline_v_27722",
+      "https://www.etymonline.com/word/care#etymonline_v_5376",
+      "https://www.etymonline.com/word/-ful#etymonline_v_32015",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6794",
+      "https://bosworthtoller.com/5951",
+      "https://bosworthtoller.com/5950",
+      "https://bosworthtoller.com/5949"
+    ]
   }
 ]

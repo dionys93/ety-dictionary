@@ -1,90 +1,68 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to sear",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to sear",
+    "etymology": [
+      {
+        "name": "searian",
+        "origin": "Old English"
       },
-      "etymology": [
-        "searian",
-        "seren",
-        "to sear",
-        "ta siare -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to sear",
-      "etymology": [
-        {
-          "name": "searian",
-          "origin": "Old English"
-        },
-        {
-          "name": "seren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to sear",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta siare -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "seren",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to sear",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta siare -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta siares",
+          "pastTense": "ta siared",
+          "progressive": "ta siaring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/sear#etymonline_v_23057",
-        "https://www.merriam-webster.com/dictionary/sear",
-        "https://www.oed.com/dictionary/sear_v?tab=factsheet#23929180",
-        "https://bosworthtoller.com/27261"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/sear#etymonline_v_23057",
+      "https://www.merriam-webster.com/dictionary/sear",
+      "https://www.oed.com/dictionary/sear_v?tab=factsheet#23929180",
+      "https://bosworthtoller.com/27261"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "sear",
-      "etymology": [
-        {
-          "name": "searian",
-          "origin": "Old English"
-        },
-        {
-          "name": "seren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "sear",
-          "origin": "Modern English"
-        },
-        {
-          "name": "siar -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/sear#etymonline_v_23057",
-        "https://www.merriam-webster.com/dictionary/sear",
-        "https://www.oed.com/dictionary/sear_n2?tab=factsheet#23929136"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "sear",
+    "etymology": [
+      {
+        "name": "searian",
+        "origin": "Old English"
+      },
+      {
+        "name": "seren",
+        "origin": "Middle English"
+      },
+      {
+        "name": "sear",
+        "origin": "Modern English"
+      },
+      {
+        "name": "siar -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/sear#etymonline_v_23057",
+      "https://www.merriam-webster.com/dictionary/sear",
+      "https://www.oed.com/dictionary/sear_n2?tab=factsheet#23929136"
+    ]
   }
 ]

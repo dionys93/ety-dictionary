@@ -1,97 +1,79 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "positive",
-      "etymology": [
-        {
-          "name": "ponere, positus, positivus",
-          "origin": "Latin"
-        },
-        {
-          "name": "positif",
-          "origin": "Old French"
-        },
-        {
-          "name": "positive",
-          "origin": "Modern English"
-        },
-        {
-          "name": "positif -s -vly -ness",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "masculine noun"
-          ]
+    "name": "positive",
+    "etymology": [
+      {
+        "name": "ponere, positus, positivus",
+        "origin": "Latin"
+      },
+      {
+        "name": "positif",
+        "origin": "Old French"
+      },
+      {
+        "name": "positive",
+        "origin": "Modern English"
+      },
+      {
+        "name": "positif -s -vly -ness",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "masculine noun"
+        ],
+        "degrees": {
+          "positive": "positif",
+          "comparative": "s",
+          "superlative": "vly"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/positive#etymonline_v_47284",
-        "https://www.etymonline.com/word/positive#etymonline_v_18518",
-        "https://www.merriam-webster.com/dictionary/positive#dictionary-entry-2",
-        "https://www.merriam-webster.com/dictionary/positive#dictionary-entry-1",
-        "https://anglo-norman.net/entry/positive",
-        "https://latin-dictionary.net/definition/30996/positivus-positiva-positivum",
-        "https://latin-dictionary.net/definition/30897/pono-ponere-posui-positus"
-      ],
-      "degrees": {
-        "positive": "positif",
-        "comparative": "s",
-        "superlative": "vly"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/positive#etymonline_v_47284",
+      "https://www.etymonline.com/word/positive#etymonline_v_18518",
+      "https://www.merriam-webster.com/dictionary/positive#dictionary-entry-2",
+      "https://www.merriam-webster.com/dictionary/positive#dictionary-entry-1",
+      "https://anglo-norman.net/entry/positive",
+      "https://latin-dictionary.net/definition/30996/positivus-positiva-positivum",
+      "https://latin-dictionary.net/definition/30897/pono-ponere-posui-positus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "positivity",
-      "etymology": [
-        {
-          "name": "positivity",
-          "origin": "Modern English"
-        },
-        {
-          "name": "positivetie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/positivity#etymonline_v_36367",
-        "https://www.etymonline.com/word/positive#etymonline_v_18518",
-        "https://www.etymonline.com/word/-ity#etymonline_v_32843",
-        "https://www.merriam-webster.com/dictionary/positivity"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "positivity",
+    "etymology": [
+      {
+        "name": "positivity",
+        "origin": "Modern English"
+      },
+      {
+        "name": "positivetie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/positivity#etymonline_v_36367",
+      "https://www.etymonline.com/word/positive#etymonline_v_18518",
+      "https://www.etymonline.com/word/-ity#etymonline_v_32843",
+      "https://www.merriam-webster.com/dictionary/positivity"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "positivism  (m n)",
-      "etymology": [
-        {
-          "name": "positivism  (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/positivism#etymonline_v_36039",
-        "https://www.etymonline.com/word/positive#etymonline_v_18518",
-        "https://www.etymonline.com/word/-ism#etymonline_v_12269"
-      ]
-    }
+    "name": "positivism  (m n)",
+    "etymology": [
+      {
+        "name": "positivism  (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/positivism#etymonline_v_36039",
+      "https://www.etymonline.com/word/positive#etymonline_v_18518",
+      "https://www.etymonline.com/word/-ism#etymonline_v_12269"
+    ]
   }
 ]

@@ -1,35 +1,29 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "conjunction"
-    },
-    "standard": {
-      "name": "whether",
-      "etymology": [
-        {
-          "name": "hwæðer, hweðer",
-          "origin": "Old English"
-        },
-        {
-          "name": "whether",
-          "origin": "Middle English"
-        },
-        {
-          "name": "ɯheþre",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "conjunction"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/whether#etymonline_v_7947",
-        "https://www.merriam-webster.com/dictionary/whether#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/whether#word-history",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52514/track?counter=1&search_id=33542546",
-        "https://bosworthtoller.com/20066"
-      ]
-    }
+    "name": "whether",
+    "etymology": [
+      {
+        "name": "hwæðer, hweðer",
+        "origin": "Old English"
+      },
+      {
+        "name": "whether",
+        "origin": "Middle English"
+      },
+      {
+        "name": "ɯheþre",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "conjunction"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/whether#etymonline_v_7947",
+      "https://www.merriam-webster.com/dictionary/whether#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/whether#word-history",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52514/track?counter=1&search_id=33542546",
+      "https://bosworthtoller.com/20066"
+    ]
   }
 ]

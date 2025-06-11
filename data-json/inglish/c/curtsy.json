@@ -1,137 +1,105 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "courtesy",
-      "etymology": [
-        {
-          "name": "curteis,  curteisie, cortoisie",
-          "origin": "Old French"
-        },
-        {
-          "name": "courtesy",
-          "origin": "Modern English"
-        },
-        {
-          "name": "courtesie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/courtesy#etymonline_v_19185",
-        "https://www.merriam-webster.com/dictionary/courtesy#dictionary-entry-1",
-        "https://www.anglo-norman.net/entry/curtoisie",
-        "https://www.anglo-norman.net/entry/corteis"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "courteous",
-      "etymology": [
-        {
-          "name": "curt, curteis",
-          "origin": "Old French"
-        },
-        {
-          "name": "courteous",
-          "origin": "Modern English"
-        },
-        {
-          "name": "courtioʃ -sly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/courteous#etymonline_v_19183",
-        "https://www.merriam-webster.com/dictionary/courteous",
-        "https://www.anglo-norman.net/entry/corteis",
-        "https://www.anglo-norman.net/entry/cort_1"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "curtsy",
-      "etymology": [
-        {
-          "name": "curtsy",
-          "origin": "Modern English"
-        },
-        {
-          "name": "courtsie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/curtsy#etymonline_v_499",
-        "https://www.etymonline.com/word/courtesy#etymonline_v_19185",
-        "https://www.merriam-webster.com/dictionary/curtsy#dictionary-entry-1"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to curtsy",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ying"
+    "name": "courtesy",
+    "etymology": [
+      {
+        "name": "curteis,  curteisie, cortoisie",
+        "origin": "Old French"
       },
-      "etymology": [
-        "to curtsy",
-        "ta courtsie -s -d -ying"
-      ]
-    },
-    "standard": {
-      "name": "to curtsy",
-      "etymology": [
-        {
-          "name": "to curtsy",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta courtsie -s -d -ying",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/curtsy#etymonline_v_46730",
-        "https://www.etymonline.com/word/curtsy#etymonline_v_499",
-        "https://www.merriam-webster.com/dictionary/curtsy#dictionary-entry-2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ying"
+      {
+        "name": "courtesy",
+        "origin": "Modern English"
+      },
+      {
+        "name": "courtesie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/courtesy#etymonline_v_19185",
+      "https://www.merriam-webster.com/dictionary/courtesy#dictionary-entry-1",
+      "https://www.anglo-norman.net/entry/curtoisie",
+      "https://www.anglo-norman.net/entry/corteis"
+    ]
+  },
+  {
+    "name": "courteous",
+    "etymology": [
+      {
+        "name": "curt, curteis",
+        "origin": "Old French"
+      },
+      {
+        "name": "courteous",
+        "origin": "Modern English"
+      },
+      {
+        "name": "courtioʃ -sly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/courteous#etymonline_v_19183",
+      "https://www.merriam-webster.com/dictionary/courteous",
+      "https://www.anglo-norman.net/entry/corteis",
+      "https://www.anglo-norman.net/entry/cort_1"
+    ]
+  },
+  {
+    "name": "curtsy",
+    "etymology": [
+      {
+        "name": "curtsy",
+        "origin": "Modern English"
+      },
+      {
+        "name": "courtsie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/curtsy#etymonline_v_499",
+      "https://www.etymonline.com/word/courtesy#etymonline_v_19185",
+      "https://www.merriam-webster.com/dictionary/curtsy#dictionary-entry-1"
+    ]
+  },
+  {
+    "infinitive": "to curtsy",
+    "etymology": [
+      {
+        "name": "to curtsy",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta courtsie -s -d -ying",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta courtsies",
+          "pastTense": "ta courtsied",
+          "progressive": "ta courtsieying"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/curtsy#etymonline_v_46730",
+      "https://www.etymonline.com/word/curtsy#etymonline_v_499",
+      "https://www.merriam-webster.com/dictionary/curtsy#dictionary-entry-2"
+    ]
   }
 ]

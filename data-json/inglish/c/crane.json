@@ -1,76 +1,56 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "crane",
-      "etymology": [
-        {
-          "name": "cran",
-          "origin": "Old English"
-        },
-        {
-          "name": "crane",
-          "origin": "Middle English"
-        },
-        {
-          "name": "crâne, crâns",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/crane#etymonline_v_296",
-        "https://www.merriam-webster.com/dictionary/crane",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10199",
-        "https://bosworthtoller.com/6670"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "crane",
+    "etymology": [
+      {
+        "name": "cran",
+        "origin": "Old English"
+      },
+      {
+        "name": "crane",
+        "origin": "Middle English"
+      },
+      {
+        "name": "crâne, crâns",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/crane#etymonline_v_296",
+      "https://www.merriam-webster.com/dictionary/crane",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10199",
+      "https://bosworthtoller.com/6670"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to crane",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to crane",
+    "etymology": [
+      {
+        "name": "to crane",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to crane",
-        "ta crâne -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to crane",
-      "etymology": [
-        {
-          "name": "to crane",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta crâne -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta crâne -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta crânes",
+          "pastTense": "ta crâned",
+          "progressive": "ta crâning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/crane#etymonline_v_46132",
-        "https://www.etymonline.com/word/crane#etymonline_v_296",
-        "https://www.merriam-webster.com/dictionary/crane#dictionary-entry-2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/crane#etymonline_v_46132",
+      "https://www.etymonline.com/word/crane#etymonline_v_296",
+      "https://www.merriam-webster.com/dictionary/crane#dictionary-entry-2"
+    ]
   }
 ]

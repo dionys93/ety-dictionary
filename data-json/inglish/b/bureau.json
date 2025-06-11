@@ -1,281 +1,221 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "bureau",
-      "etymology": [
-        {
-          "name": "burra",
-          "origin": "Latin"
-        },
-        {
-          "name": "bure, burel",
-          "origin": "Old French"
-        },
-        {
-          "name": "bureau",
-          "origin": "French"
-        },
-        {
-          "name": "b̃uro -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bureau#etymonline_v_18098",
-        "https://www.merriam-webster.com/dictionary/bureau",
-        "https://www.oed.com/dictionary/bureau_n?tab=factsheet#11928427",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/bureau/11547",
-        "https://anglo-norman.net/entry/burel",
-        "https://anglo-norman.net/entry/bure_2",
-        "https://latin-dictionary.net/definition/7137/burra-burrae"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "bureaucracy",
-      "etymology": [
-        {
-          "name": "bureaucratie",
-          "origin": "French"
-        },
-        {
-          "name": "bureaucracy",
-          "origin": "Modern English"
-        },
-        {
-          "name": "b̃urócracie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bureaucracy#etymonline_v_18099",
-        "https://www.merriam-webster.com/dictionary/bureaucracy",
-        "https://www.oed.com/dictionary/bureaucracy_n?tab=factsheet#11929529",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/bureaucratie/11550"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "bureaucrat",
-      "etymology": [
-        {
-          "name": "bureaucrate",
-          "origin": "French"
-        },
-        {
-          "name": "bureaucrat",
-          "origin": "Modern English"
-        },
-        {
-          "name": "b̃urocrat -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bureaucrat#etymonline_v_27514",
-        "https://www.merriam-webster.com/dictionary/bureaucrat",
-        "https://www.oed.com/dictionary/bureaucrat_n?tab=factsheet#11930362",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/bureaucrate/11549"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "bureaucratic",
-      "etymology": [
-        {
-          "name": "bureaucratique",
-          "origin": "French"
-        },
-        {
-          "name": "bureaucratic",
-          "origin": "Modern English"
-        },
-        {
-          "name": "b̃urocratic -ly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bureaucratic#etymonline_v_27515",
-        "https://www.merriam-webster.com/dictionary/bureaucratic",
-        "https://www.oed.com/dictionary/bureaucratic_adj?tab=factsheet#11931614",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/bureaucratique/11551"
-      ],
-      "degrees": {
-        "positive": "urocratic",
-        "comparative": "ly"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to bureaucratize",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "bureau",
+    "etymology": [
+      {
+        "name": "burra",
+        "origin": "Latin"
       },
-      "etymology": [
-        "to bureaucratize",
-        "ta b̃urócratyse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to bureaucratize",
-      "etymology": [
-        {
-          "name": "to bureaucratize",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta b̃urócratyse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bureaucratize#etymonline_v_53113",
-        "https://www.merriam-webster.com/dictionary/bureaucratize",
-        "https://www.oed.com/dictionary/bureaucratize_v?tab=factsheet#11932448"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "bure, burel",
+        "origin": "Old French"
+      },
+      {
+        "name": "bureau",
+        "origin": "French"
+      },
+      {
+        "name": "b̃uro -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bureau#etymonline_v_18098",
+      "https://www.merriam-webster.com/dictionary/bureau",
+      "https://www.oed.com/dictionary/bureau_n?tab=factsheet#11928427",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/bureau/11547",
+      "https://anglo-norman.net/entry/burel",
+      "https://anglo-norman.net/entry/bure_2",
+      "https://latin-dictionary.net/definition/7137/burra-burrae"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "bureaucratization",
-      "etymology": [
-        {
-          "name": "bureaucratization",
-          "origin": "Modern English"
-        },
-        {
-          "name": "b̃urocratisâcion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bureaucratization#etymonline_v_53187",
-        "https://www.merriam-webster.com/dictionary/bureaucratization",
-        "https://www.oed.com/dictionary/bureaucratization_n?tab=factsheet#11932472"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "bureaucracy",
+    "etymology": [
+      {
+        "name": "bureaucratie",
+        "origin": "French"
+      },
+      {
+        "name": "bureaucracy",
+        "origin": "Modern English"
+      },
+      {
+        "name": "b̃urócracie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bureaucracy#etymonline_v_18099",
+      "https://www.merriam-webster.com/dictionary/bureaucracy",
+      "https://www.oed.com/dictionary/bureaucracy_n?tab=factsheet#11929529",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/bureaucratie/11550"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "bureaucratism",
-      "etymology": [
-        {
-          "name": "bureaucratism",
-          "origin": "Modern English"
-        },
-        {
-          "name": "b̃urócratism",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.oed.com/dictionary/bureaucratism_n?tl=true",
-        "https://www.oed.com/dictionary/bureaucratism_n?tab=factsheet#282764653"
-      ],
-      "gender": "feminine",
-      "number": "singular"
-    }
+    "name": "bureaucrat",
+    "etymology": [
+      {
+        "name": "bureaucrate",
+        "origin": "French"
+      },
+      {
+        "name": "bureaucrat",
+        "origin": "Modern English"
+      },
+      {
+        "name": "b̃urocrat -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bureaucrat#etymonline_v_27514",
+      "https://www.merriam-webster.com/dictionary/bureaucrat",
+      "https://www.oed.com/dictionary/bureaucrat_n?tab=factsheet#11930362",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/bureaucrate/11549"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "burro  -s (m n)",
-      "etymology": [
-        {
-          "name": "πῦρ, πυρρός",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "burrus, burricus",
-          "origin": "Latin"
-        },
-        {
-          "name": "borrico",
-          "origin": "Inglish"
-        },
-        {
-          "name": "burro  -s (m n)",
-          "origin": "Modern English"
+    "name": "bureaucratic",
+    "etymology": [
+      {
+        "name": "bureaucratique",
+        "origin": "French"
+      },
+      {
+        "name": "bureaucratic",
+        "origin": "Modern English"
+      },
+      {
+        "name": "b̃urocratic -ly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bureaucratic#etymonline_v_27515",
+      "https://www.merriam-webster.com/dictionary/bureaucratic",
+      "https://www.oed.com/dictionary/bureaucratic_adj?tab=factsheet#11931614",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/bureaucratique/11551"
+    ]
+  },
+  {
+    "infinitive": "to bureaucratize",
+    "etymology": [
+      {
+        "name": "to bureaucratize",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta b̃urócratyse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta b̃urócratyses",
+          "pastTense": "ta b̃urócratysed",
+          "progressive": "ta b̃urócratysing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/burro#etymonline_v_18119",
-        "https://www.merriam-webster.com/dictionary/burro",
-        "https://www.collinsdictionary.com/us/dictionary/spanish-english/burro",
-        "https://www.collinsdictionary.com/us/dictionary/spanish-english/borrico",
-        "https://latin-dictionary.net/definition/7144/burrus-burra-burrum",
-        "https://latin-dictionary.net/definition/7142/burricus-burrici",
-        "https://lsj.gr/wiki/%CF%80%CF%85%CF%81%CF%81%CF%8C%CF%82",
-        "https://lsj.gr/wiki/%CF%80%E1%BF%A6%CF%81"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bureaucratize#etymonline_v_53113",
+      "https://www.merriam-webster.com/dictionary/bureaucratize",
+      "https://www.oed.com/dictionary/bureaucratize_v?tab=factsheet#11932448"
+    ]
+  },
+  {
+    "name": "bureaucratization",
+    "etymology": [
+      {
+        "name": "bureaucratization",
+        "origin": "Modern English"
+      },
+      {
+        "name": "b̃urocratisâcion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bureaucratization#etymonline_v_53187",
+      "https://www.merriam-webster.com/dictionary/bureaucratization",
+      "https://www.oed.com/dictionary/bureaucratization_n?tab=factsheet#11932472"
+    ]
+  },
+  {
+    "name": "bureaucratism",
+    "etymology": [
+      {
+        "name": "bureaucratism",
+        "origin": "Modern English"
+      },
+      {
+        "name": "b̃urócratism",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.oed.com/dictionary/bureaucratism_n?tl=true",
+      "https://www.oed.com/dictionary/bureaucratism_n?tab=factsheet#282764653"
+    ]
+  },
+  {
+    "name": "burro  -s (m n)",
+    "etymology": [
+      {
+        "name": "πῦρ, πυρρός",
+        "origin": "Ancient Greek"
+      },
+      {
+        "name": "burrus, burricus",
+        "origin": "Latin"
+      },
+      {
+        "name": "borrico",
+        "origin": "Inglish"
+      },
+      {
+        "name": "burro  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/burro#etymonline_v_18119",
+      "https://www.merriam-webster.com/dictionary/burro",
+      "https://www.collinsdictionary.com/us/dictionary/spanish-english/burro",
+      "https://www.collinsdictionary.com/us/dictionary/spanish-english/borrico",
+      "https://latin-dictionary.net/definition/7144/burrus-burra-burrum",
+      "https://latin-dictionary.net/definition/7142/burricus-burrici",
+      "https://lsj.gr/wiki/%CF%80%CF%85%CF%81%CF%81%CF%8C%CF%82",
+      "https://lsj.gr/wiki/%CF%80%E1%BF%A6%CF%81"
+    ]
   }
 ]

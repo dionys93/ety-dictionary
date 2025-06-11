@@ -1,46 +1,40 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "glacière, glacier",
-      "etymology": [
-        {
-          "name": "glacies",
-          "origin": "Latin"
-        },
-        {
-          "name": "glacia",
-          "origin": "Vulgar Latin"
-        },
-        {
-          "name": "glace",
-          "origin": "Old French"
-        },
-        {
-          "name": "glacière, glacier",
-          "origin": "French"
-        },
-        {
-          "name": "glâciar -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/glacier#etymonline_v_6119",
-        "https://www.merriam-webster.com/dictionary/glacier",
-        "https://www.oed.com/dictionary/glacier_n?tab=pronunciation#2950197",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/glacier/36997",
-        "https://anglo-norman.net/entry/glace",
-        "https://latin-dictionary.net/definition/21507/glacies-glaciei"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "glacière, glacier",
+    "etymology": [
+      {
+        "name": "glacies",
+        "origin": "Latin"
+      },
+      {
+        "name": "glacia",
+        "origin": "Vulgar Latin"
+      },
+      {
+        "name": "glace",
+        "origin": "Old French"
+      },
+      {
+        "name": "glacière, glacier",
+        "origin": "French"
+      },
+      {
+        "name": "glâciar -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/glacier#etymonline_v_6119",
+      "https://www.merriam-webster.com/dictionary/glacier",
+      "https://www.oed.com/dictionary/glacier_n?tab=pronunciation#2950197",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/glacier/36997",
+      "https://anglo-norman.net/entry/glace",
+      "https://latin-dictionary.net/definition/21507/glacies-glaciei"
+    ]
   }
 ]

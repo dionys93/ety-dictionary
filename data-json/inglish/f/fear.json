@@ -1,264 +1,203 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "fear",
-      "etymology": [
-        {
-          "name": "fær",
-          "origin": "Old English"
-        },
-        {
-          "name": "fere",
-          "origin": "Middle English"
-        },
-        {
-          "name": "fear",
-          "origin": "Modern English"
-        },
-        {
-          "name": "fiar -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fear#etymonline_v_1178",
-        "https://www.oed.com/dictionary/fear_n?tab=factsheet#4529006",
-        "https://en.wiktionary.org/wiki/fere#Middle_English",
-        "https://bosworthtoller.com/9955"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to fear",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "fear",
+    "etymology": [
+      {
+        "name": "fær",
+        "origin": "Old English"
       },
-      "etymology": [
-        "færan",
-        "feren",
-        "to fear",
-        "ta fiare -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to fear",
-      "etymology": [
-        {
-          "name": "færan",
-          "origin": "Old English"
-        },
-        {
-          "name": "feren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to fear",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta fiare -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fear#etymonline_v_39305",
-        "https://www.oed.com/dictionary/fear_v?tab=factsheet#4530472",
-        "https://en.wiktionary.org/wiki/feren#Middle_English",
-        "https://bosworthtoller.com/9960"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "fearful",
-      "etymology": [
-        {
-          "name": "fearful",
-          "origin": "Modern English"
-        },
-        {
-          "name": "fiarful -ly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fearful#etymonline_v_33045",
-        "https://www.etymonline.com/word/fear#etymonline_v_1178",
-        "https://www.etymonline.com/word/-ful#etymonline_v_32015",
-        "https://www.oed.com/dictionary/fearful_adj?tab=factsheet#4532503"
-      ],
-      "degrees": {
-        "positive": "fiarful",
-        "comparative": "ly"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "fearsome",
-      "etymology": [
-        {
-          "name": "fearsome",
-          "origin": "Modern English"
-        },
-        {
-          "name": "fiarsom",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fearsome#etymonline_v_32934",
-        "https://www.etymonline.com/word/fear#etymonline_v_1178",
-        "https://www.etymonline.com/word/-some#etymonline_v_21684",
-        "https://www.oed.com/dictionary/fearsome_adj?tab=factsheet#4534508"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "fearless",
-      "etymology": [
-        {
-          "name": "fearless",
-          "origin": "Modern English"
-        },
-        {
-          "name": "fiarless -ly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fearless#etymonline_v_33046",
-        "https://www.etymonline.com/word/fear#etymonline_v_1178",
-        "https://www.etymonline.com/word/-less#etymonline_v_6702",
-        "https://www.oed.com/dictionary/fearless_adj?tab=factsheet#4533784"
-      ],
-      "degrees": {
-        "positive": "fiarless",
-        "comparative": "ly"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "freiht, fright",
-      "etymology": [
-        {
-          "name": "fyrhtu",
-          "origin": "Old English"
-        },
-        {
-          "name": "freiht, fright",
-          "origin": "Middle English"
-        },
-        {
-          "name": "fryht -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fright#etymonline_v_14184",
-        "https://www.merriam-webster.com/dictionary/fright#dictionary-entry-1",
-        "https://www.oed.com/dictionary/fright_n?tab=factsheet#3729653",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17743",
-        "https://bosworthtoller.com/12972"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "frighten",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "fere",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "fyrhtan",
-        "frighten",
-        "ta fryhten -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "frighten",
-      "etymology": [
-        {
-          "name": "fyrhtan",
-          "origin": "Old English"
-        },
-        {
-          "name": "frighten",
-          "origin": "Middle English"
-        },
-        {
-          "name": "ta fryhten -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/frighten#etymonline_v_33413",
-        "https://www.etymonline.com/word/fright#etymonline_v_50728",
-        "https://www.etymonline.com/word/fright#etymonline_v_14184",
-        "https://bosworthtoller.com/12964"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "fear",
+        "origin": "Modern English"
+      },
+      {
+        "name": "fiar -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fear#etymonline_v_1178",
+      "https://www.oed.com/dictionary/fear_n?tab=factsheet#4529006",
+      "https://en.wiktionary.org/wiki/fere#Middle_English",
+      "https://bosworthtoller.com/9955"
+    ]
+  },
+  {
+    "infinitive": "to fear",
+    "etymology": [
+      {
+        "name": "færan",
+        "origin": "Old English"
+      },
+      {
+        "name": "feren",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to fear",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta fiare -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta fiares",
+          "pastTense": "ta fiared",
+          "progressive": "ta fiaring"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fear#etymonline_v_39305",
+      "https://www.oed.com/dictionary/fear_v?tab=factsheet#4530472",
+      "https://en.wiktionary.org/wiki/feren#Middle_English",
+      "https://bosworthtoller.com/9960"
+    ]
+  },
+  {
+    "name": "fearful",
+    "etymology": [
+      {
+        "name": "fearful",
+        "origin": "Modern English"
+      },
+      {
+        "name": "fiarful -ly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ],
+        "degrees": {
+          "positive": "fiarful",
+          "comparative": "ly"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fearful#etymonline_v_33045",
+      "https://www.etymonline.com/word/fear#etymonline_v_1178",
+      "https://www.etymonline.com/word/-ful#etymonline_v_32015",
+      "https://www.oed.com/dictionary/fearful_adj?tab=factsheet#4532503"
+    ]
+  },
+  {
+    "name": "fearsome",
+    "etymology": [
+      {
+        "name": "fearsome",
+        "origin": "Modern English"
+      },
+      {
+        "name": "fiarsom",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fearsome#etymonline_v_32934",
+      "https://www.etymonline.com/word/fear#etymonline_v_1178",
+      "https://www.etymonline.com/word/-some#etymonline_v_21684",
+      "https://www.oed.com/dictionary/fearsome_adj?tab=factsheet#4534508"
+    ]
+  },
+  {
+    "name": "fearless",
+    "etymology": [
+      {
+        "name": "fearless",
+        "origin": "Modern English"
+      },
+      {
+        "name": "fiarless -ly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ],
+        "degrees": {
+          "positive": "fiarless",
+          "comparative": "ly"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fearless#etymonline_v_33046",
+      "https://www.etymonline.com/word/fear#etymonline_v_1178",
+      "https://www.etymonline.com/word/-less#etymonline_v_6702",
+      "https://www.oed.com/dictionary/fearless_adj?tab=factsheet#4533784"
+    ]
+  },
+  {
+    "name": "freiht, fright",
+    "etymology": [
+      {
+        "name": "fyrhtu",
+        "origin": "Old English"
+      },
+      {
+        "name": "freiht, fright",
+        "origin": "Middle English"
+      },
+      {
+        "name": "fryht -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fright#etymonline_v_14184",
+      "https://www.merriam-webster.com/dictionary/fright#dictionary-entry-1",
+      "https://www.oed.com/dictionary/fright_n?tab=factsheet#3729653",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17743",
+      "https://bosworthtoller.com/12972"
+    ]
+  },
+  {
+    "infinitive": "frighten",
+    "etymology": [
+      {
+        "name": "fyrhtan",
+        "origin": "Old English"
+      },
+      {
+        "name": "frighten",
+        "origin": "Middle English"
+      },
+      {
+        "name": "ta fryhten -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta fryhtens",
+          "pastTense": "ta fryhtend",
+          "progressive": "ta fryhtening"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/frighten#etymonline_v_33413",
+      "https://www.etymonline.com/word/fright#etymonline_v_50728",
+      "https://www.etymonline.com/word/fright#etymonline_v_14184",
+      "https://bosworthtoller.com/12964"
+    ]
   }
 ]

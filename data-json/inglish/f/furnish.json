@@ -1,90 +1,68 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "furniture",
-      "etymology": [
-        {
-          "name": "fornir, forneture",
-          "origin": "Old French"
-        },
-        {
-          "name": "fourniture",
-          "origin": "French"
-        },
-        {
-          "name": "furniture",
-          "origin": "Modern English"
-        },
-        {
-          "name": "fôniţure -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/furniture#etymonline_v_14269",
-        "https://www.etymonline.com/word/furnish#etymonline_v_14268",
-        "https://www.collinsdictionary.com/us/dictionary/french-english/fourniture",
-        "https://www.anglo-norman.net/entry/fornir"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "furniture",
+    "etymology": [
+      {
+        "name": "fornir, forneture",
+        "origin": "Old French"
+      },
+      {
+        "name": "fourniture",
+        "origin": "French"
+      },
+      {
+        "name": "furniture",
+        "origin": "Modern English"
+      },
+      {
+        "name": "fôniţure -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/furniture#etymonline_v_14269",
+      "https://www.etymonline.com/word/furnish#etymonline_v_14268",
+      "https://www.collinsdictionary.com/us/dictionary/french-english/fourniture",
+      "https://www.anglo-norman.net/entry/fornir"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to furnish",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to furnish",
+    "etymology": [
+      {
+        "name": "fromire, fornire",
+        "origin": "Vulgar Latin"
       },
-      "etymology": [
-        "fromire, fornire",
-        "furnir, fornir, furniss-, forniss-",
-        "to furnish",
-        "ta fôniçe -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to furnish",
-      "etymology": [
-        {
-          "name": "fromire, fornire",
-          "origin": "Vulgar Latin"
-        },
-        {
-          "name": "furnir, fornir, furniss-, forniss-",
-          "origin": "Old French"
-        },
-        {
-          "name": "to furnish",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta fôniçe -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "furnir, fornir, furniss-, forniss-",
+        "origin": "Old French"
+      },
+      {
+        "name": "to furnish",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta fôniçe -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta fôniçes",
+          "pastTense": "ta fôniçed",
+          "progressive": "ta fôniçing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/furnish#etymonline_v_14268",
-        "https://www.merriam-webster.com/dictionary/furnish",
-        "https://www.anglo-norman.net/entry/fornir"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/furnish#etymonline_v_14268",
+      "https://www.merriam-webster.com/dictionary/furnish",
+      "https://www.anglo-norman.net/entry/fornir"
+    ]
   }
 ]

@@ -1,69 +1,49 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "boat  -s (m n)",
-      "etymology": [
-        {
-          "name": "bat",
-          "origin": "Old English"
-        },
-        {
-          "name": "bot",
-          "origin": "Middle English"
-        },
-        {
-          "name": "boat  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/boat#etymonline_v_13663",
-        "https://www.merriam-webster.com/dictionary/boat#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5605",
-        "https://bosworthtoller.com/3016"
-      ]
-    }
+    "name": "boat  -s (m n)",
+    "etymology": [
+      {
+        "name": "bat",
+        "origin": "Old English"
+      },
+      {
+        "name": "bot",
+        "origin": "Middle English"
+      },
+      {
+        "name": "boat  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/boat#etymonline_v_13663",
+      "https://www.merriam-webster.com/dictionary/boat#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5605",
+      "https://bosworthtoller.com/3016"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to boat",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to boat",
+    "etymology": [
+      {
+        "name": "to boat",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to boat",
-        "ta boate -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to boat",
-      "etymology": [
-        {
-          "name": "to boat",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta boate -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta boate -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta boates",
+          "pastTense": "ta boated",
+          "progressive": "ta boating"
         }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/boat#dictionary-entry-2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/boat#dictionary-entry-2"
+    ]
   }
 ]

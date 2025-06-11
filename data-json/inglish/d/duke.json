@@ -1,40 +1,34 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "duke",
-      "etymology": [
-        {
-          "name": "dux, ducis",
-          "origin": "Latin"
-        },
-        {
-          "name": "duc",
-          "origin": "Old French"
-        },
-        {
-          "name": "duke",
-          "origin": "Modern English"
-        },
-        {
-          "name": "duc, dúcs",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/duke",
-        "https://www.oed.com/dictionary/duke_n?tab=factsheet#6093924",
-        "https://anglo-norman.net/entry/duc",
-        "https://latin-dictionary.net/definition/18579/dux-ducis"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "duke",
+    "etymology": [
+      {
+        "name": "dux, ducis",
+        "origin": "Latin"
+      },
+      {
+        "name": "duc",
+        "origin": "Old French"
+      },
+      {
+        "name": "duke",
+        "origin": "Modern English"
+      },
+      {
+        "name": "duc, dúcs",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/duke",
+      "https://www.oed.com/dictionary/duke_n?tab=factsheet#6093924",
+      "https://anglo-norman.net/entry/duc",
+      "https://latin-dictionary.net/definition/18579/dux-ducis"
+    ]
   }
 ]

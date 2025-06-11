@@ -1,179 +1,149 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "to oppose  -s -d -ing (v)",
-      "etymology": [
-        {
-          "name": "opponere",
-          "origin": "Latin"
-        },
-        {
-          "name": "ob  + poser [OF]",
-          "origin": "Latin"
-        },
-        {
-          "name": "oposer",
-          "origin": "Old French"
-        },
-        {
-          "name": "opposen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to oppose  -s -d -ing (v)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/oppose#etymonline_v_7084",
-        "https://www.merriam-webster.com/dictionary/oppose",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED30771",
-        "https://anglo-norman.net/entry/opposer",
-        "https://latin-dictionary.net/definition/28763/oppono-opponere-opposui-oppositus"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "opposable",
-      "etymology": [
-        {
-          "name": "opposable",
-          "origin": "Modern English"
-        },
-        {
-          "name": "oppôsable",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/opposable#etymonline_v_30960",
-        "https://www.merriam-webster.com/dictionary/opposable"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "opponent  -s (adj, f n)",
-      "etymology": [
-        {
-          "name": "ob + ponere, opponere, opponens",
-          "origin": "Latin"
-        },
-        {
-          "name": "opponent  -s (adj, f n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/opponent#etymonline_v_7081",
-        "https://www.merriam-webster.com/dictionary/opponent#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/opponent#dictionary-entry-2",
-        "https://latin-dictionary.net/definition/28763/oppono-opponere-opposui-oppositus"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "opposite",
-      "etymology": [
-        {
-          "name": "ob + ponere, opponere, oppositus",
-          "origin": "Latin"
-        },
-        {
-          "name": "opposite",
-          "origin": "Old French"
-        },
-        {
-          "name": "opposit -s -ness",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "noun",
-            "adverb",
-            "preposition"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/opposite#etymonline_v_7085",
-        "https://www.merriam-webster.com/dictionary/opposite#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/opposite#dictionary-entry-2",
-        "https://www.merriam-webster.com/dictionary/opposite#dictionary-entry-3",
-        "https://www.merriam-webster.com/dictionary/opposite#dictionary-entry-4",
-        "https://anglo-norman.net/entry/opposite",
-        "https://latin-dictionary.net/definition/28763/oppono-opponere-opposui-oppositus"
-      ],
-      "degrees": {
-        "positive": "opposit",
-        "comparative": "s",
-        "superlative": "ness"
+    "name": "to oppose  -s -d -ing (v)",
+    "etymology": [
+      {
+        "name": "opponere",
+        "origin": "Latin"
+      },
+      {
+        "name": "ob  + poser [OF]",
+        "origin": "Latin"
+      },
+      {
+        "name": "oposer",
+        "origin": "Old French"
+      },
+      {
+        "name": "opposen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to oppose  -s -d -ing (v)",
+        "origin": "Modern English"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/oppose#etymonline_v_7084",
+      "https://www.merriam-webster.com/dictionary/oppose",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED30771",
+      "https://anglo-norman.net/entry/opposer",
+      "https://latin-dictionary.net/definition/28763/oppono-opponere-opposui-oppositus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "opposition",
-      "etymology": [
-        {
-          "name": "ob + ponere, opponere, oppositio",
-          "origin": "Latin"
-        },
-        {
-          "name": "oposicion",
-          "origin": "Old French"
-        },
-        {
-          "name": "opposicioun",
-          "origin": "Middle English"
-        },
-        {
-          "name": "opposition",
-          "origin": "Modern English"
-        },
-        {
-          "name": "opposicion -s -al",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
+    "name": "opposable",
+    "etymology": [
+      {
+        "name": "opposable",
+        "origin": "Modern English"
+      },
+      {
+        "name": "oppôsable",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/opposable#etymonline_v_30960",
+      "https://www.merriam-webster.com/dictionary/opposable"
+    ]
+  },
+  {
+    "name": "opponent  -s (adj, f n)",
+    "etymology": [
+      {
+        "name": "ob + ponere, opponere, opponens",
+        "origin": "Latin"
+      },
+      {
+        "name": "opponent  -s (adj, f n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/opponent#etymonline_v_7081",
+      "https://www.merriam-webster.com/dictionary/opponent#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/opponent#dictionary-entry-2",
+      "https://latin-dictionary.net/definition/28763/oppono-opponere-opposui-oppositus"
+    ]
+  },
+  {
+    "name": "opposite",
+    "etymology": [
+      {
+        "name": "ob + ponere, opponere, oppositus",
+        "origin": "Latin"
+      },
+      {
+        "name": "opposite",
+        "origin": "Old French"
+      },
+      {
+        "name": "opposit -s -ness",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "noun",
+          "adverb",
+          "preposition"
+        ],
+        "degrees": {
+          "positive": "opposit",
+          "comparative": "s",
+          "superlative": "ness"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/opposition#etymonline_v_7086",
-        "https://www.etymonline.com/word/oppositional#etymonline_v_54535",
-        "https://www.merriam-webster.com/dictionary/opposition",
-        "https://www.merriam-webster.com/dictionary/oppositional",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED30772",
-        "https://anglo-norman.net/entry/opposicioun",
-        "https://latin-dictionary.net/definition/28763/oppono-opponere-opposui-oppositus"
-      ],
-      "gender": "feminine",
-      "number": "singular"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/opposite#etymonline_v_7085",
+      "https://www.merriam-webster.com/dictionary/opposite#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/opposite#dictionary-entry-2",
+      "https://www.merriam-webster.com/dictionary/opposite#dictionary-entry-3",
+      "https://www.merriam-webster.com/dictionary/opposite#dictionary-entry-4",
+      "https://anglo-norman.net/entry/opposite",
+      "https://latin-dictionary.net/definition/28763/oppono-opponere-opposui-oppositus"
+    ]
+  },
+  {
+    "name": "opposition",
+    "etymology": [
+      {
+        "name": "ob + ponere, opponere, oppositio",
+        "origin": "Latin"
+      },
+      {
+        "name": "oposicion",
+        "origin": "Old French"
+      },
+      {
+        "name": "opposicioun",
+        "origin": "Middle English"
+      },
+      {
+        "name": "opposition",
+        "origin": "Modern English"
+      },
+      {
+        "name": "opposicion -s -al",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/opposition#etymonline_v_7086",
+      "https://www.etymonline.com/word/oppositional#etymonline_v_54535",
+      "https://www.merriam-webster.com/dictionary/opposition",
+      "https://www.merriam-webster.com/dictionary/oppositional",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED30772",
+      "https://anglo-norman.net/entry/opposicioun",
+      "https://latin-dictionary.net/definition/28763/oppono-opponere-opposui-oppositus"
+    ]
   }
 ]

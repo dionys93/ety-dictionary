@@ -1,115 +1,78 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to piss",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to piss",
+    "etymology": [
+      {
+        "name": "pissiare",
+        "origin": "Vulgar Latin"
       },
-      "etymology": [
-        "pissiare",
-        "pissier",
-        "pissen",
-        "to piss",
-        "ta pisse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to piss",
-      "etymology": [
-        {
-          "name": "pissiare",
-          "origin": "Vulgar Latin"
-        },
-        {
-          "name": "pissier",
-          "origin": "Old French"
-        },
-        {
-          "name": "pissen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to piss",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta pisse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "pissier",
+        "origin": "Old French"
+      },
+      {
+        "name": "pissen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to piss",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta pisse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta pisses",
+          "pastTense": "ta pissed",
+          "progressive": "ta pissing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/piss#etymonline_v_16383",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED33513",
-        "https://www.anglo-norman.net/entry/pisser"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/piss#etymonline_v_16383",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED33513",
+      "https://www.anglo-norman.net/entry/pisser"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "piss  (m n)",
-      "etymology": [
-        {
-          "name": "piss  (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/piss#etymonline_v_46397",
-        "https://www.etymonline.com/word/piss#etymonline_v_16383"
-      ]
-    }
+    "name": "piss  (m n)",
+    "etymology": [
+      {
+        "name": "piss  (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/piss#etymonline_v_46397",
+      "https://www.etymonline.com/word/piss#etymonline_v_16383"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to pee",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to pee",
+    "etymology": [
+      {
+        "name": "to pee",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to pee",
-        "ta pihe -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to pee",
-      "etymology": [
-        {
-          "name": "to pee",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta pihe -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta pihe -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta pihes",
+          "pastTense": "ta pihed",
+          "progressive": "ta pihing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/pee#etymonline_v_10253",
-        "https://www.etymonline.com/word/piss#etymonline_v_16383"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/pee#etymonline_v_10253",
+      "https://www.etymonline.com/word/piss#etymonline_v_16383"
+    ]
   }
 ]

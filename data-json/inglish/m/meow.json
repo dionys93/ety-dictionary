@@ -1,71 +1,52 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "meow",
-      "etymology": [
-        {
-          "name": "meow",
-          "origin": "Modern English"
-        },
-        {
-          "name": "m̃ao -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun",
-            "interjection"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/meow#etymonline_v_12599",
-        "https://www.merriam-webster.com/dictionary/meow",
-        "https://www.oed.com/dictionary/meow_n?tab=factsheet#13477262",
-        "https://www.oed.com/dictionary/meow_int?tab=factsheet#37149812"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "meow",
+    "etymology": [
+      {
+        "name": "meow",
+        "origin": "Modern English"
+      },
+      {
+        "name": "m̃ao -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun",
+          "interjection"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/meow#etymonline_v_12599",
+      "https://www.merriam-webster.com/dictionary/meow",
+      "https://www.oed.com/dictionary/meow_n?tab=factsheet#13477262",
+      "https://www.oed.com/dictionary/meow_int?tab=factsheet#37149812"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to meow",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
+    "infinitive": "to meow",
+    "etymology": [
+      {
+        "name": "to meow",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to meow",
-        "ta m̃aoe -s -d -ɯing"
-      ]
-    },
-    "standard": {
-      "name": "to meow",
-      "etymology": [
-        {
-          "name": "to meow",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta m̃aoe -s -d -ɯing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta m̃aoe -s -d -ɯing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta m̃aoes",
+          "pastTense": "ta m̃aoed"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/meow#etymonline_v_12599",
-        "https://www.oed.com/dictionary/meow_v?tab=factsheet#13562129",
-        "https://www.merriam-webster.com/dictionary/meow"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/meow#etymonline_v_12599",
+      "https://www.oed.com/dictionary/meow_v?tab=factsheet#13562129",
+      "https://www.merriam-webster.com/dictionary/meow"
+    ]
   }
 ]

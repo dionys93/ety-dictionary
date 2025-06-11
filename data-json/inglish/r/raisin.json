@@ -1,40 +1,34 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "raycin, raisin",
-      "etymology": [
-        {
-          "name": "racemus",
-          "origin": "Latin"
-        },
-        {
-          "name": "racimus",
-          "origin": "Vulgar Latin"
-        },
-        {
-          "name": "raycin, raisin",
-          "origin": "Old French"
-        },
-        {
-          "name": "raisin -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/raisin#etymonline_v_3313",
-        "https://www.merriam-webster.com/dictionary/raisin",
-        "https://anglo-norman.net/entry/raisin",
-        "https://latin-dictionary.net/definition/32821/racemus-racemi"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "raycin, raisin",
+    "etymology": [
+      {
+        "name": "racemus",
+        "origin": "Latin"
+      },
+      {
+        "name": "racimus",
+        "origin": "Vulgar Latin"
+      },
+      {
+        "name": "raycin, raisin",
+        "origin": "Old French"
+      },
+      {
+        "name": "raisin -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/raisin#etymonline_v_3313",
+      "https://www.merriam-webster.com/dictionary/raisin",
+      "https://anglo-norman.net/entry/raisin",
+      "https://latin-dictionary.net/definition/32821/racemus-racemi"
+    ]
   }
 ]

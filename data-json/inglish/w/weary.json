@@ -1,114 +1,87 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to weary",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ying"
+    "infinitive": "to weary",
+    "etymology": [
+      {
+        "name": "wergian, gewergian",
+        "origin": "Old English"
       },
-      "etymology": [
-        "wergian, gewergian",
-        "to weary",
-        "ta ɯierie -s -d -ying"
-      ]
-    },
-    "standard": {
-      "name": "to weary",
-      "etymology": [
-        {
-          "name": "wergian, gewergian",
-          "origin": "Old English"
-        },
-        {
-          "name": "to weary",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta ɯierie -s -d -ying",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to weary",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta ɯierie -s -d -ying",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta ɯieries",
+          "pastTense": "ta ɯieried",
+          "progressive": "ta ɯierieying"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/weary#etymonline_v_46444",
-        "https://www.merriam-webster.com/dictionary/weary#dictionary-entry-2",
-        "https://bosworthtoller.com/16798",
-        "https://bosworthtoller.com/35367"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ying"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/weary#etymonline_v_46444",
+      "https://www.merriam-webster.com/dictionary/weary#dictionary-entry-2",
+      "https://bosworthtoller.com/16798",
+      "https://bosworthtoller.com/35367"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "weary",
-      "etymology": [
-        {
-          "name": "werig",
-          "origin": "Old English"
-        },
-        {
-          "name": "wery",
-          "origin": "Middle English"
-        },
-        {
-          "name": "weary",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ɯiery",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/weary#etymonline_v_4875",
-        "https://www.merriam-webster.com/dictionary/weary#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52263",
-        "https://bosworthtoller.com/35384"
-      ]
-    }
+    "name": "weary",
+    "etymology": [
+      {
+        "name": "werig",
+        "origin": "Old English"
+      },
+      {
+        "name": "wery",
+        "origin": "Middle English"
+      },
+      {
+        "name": "weary",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ɯiery",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/weary#etymonline_v_4875",
+      "https://www.merriam-webster.com/dictionary/weary#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52263",
+      "https://bosworthtoller.com/35384"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "wearisome",
-      "etymology": [
-        {
-          "name": "werisom",
-          "origin": "Middle English"
-        },
-        {
-          "name": "wearisome",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ɯierisom",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/wearisome#etymonline_v_40135",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52277"
-      ]
-    }
+    "name": "wearisome",
+    "etymology": [
+      {
+        "name": "werisom",
+        "origin": "Middle English"
+      },
+      {
+        "name": "wearisome",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ɯierisom",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/wearisome#etymonline_v_40135",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52277"
+    ]
   }
 ]

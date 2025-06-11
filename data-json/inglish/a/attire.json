@@ -1,81 +1,60 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to attire",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
+    "infinitive": "to attire",
+    "etymology": [
+      {
+        "name": "atirer, atirier",
+        "origin": "Old French"
       },
-      "etymology": [
-        "atirer, atirier",
-        "atiren",
-        "to attire",
-        "to attîre -s -d attîaring"
-      ]
-    },
-    "standard": {
-      "name": "to attire",
-      "etymology": [
-        {
-          "name": "atirer, atirier",
-          "origin": "Old French"
-        },
-        {
-          "name": "atiren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to attire",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to attîre -s -d attîaring",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "atiren",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to attire",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to attîre -s -d attîaring",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to attîres",
+          "pastTense": "to attîred"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/attire#etymonline_v_18914",
-        "https://www.oed.com/dictionary/attire_v1?tab=factsheet#34315399",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED2814",
-        "https://anglo-norman.net/entry/atirer",
-        "https://www.littre.org/definition/attirer"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/attire#etymonline_v_18914",
+      "https://www.oed.com/dictionary/attire_v1?tab=factsheet#34315399",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED2814",
+      "https://anglo-norman.net/entry/atirer",
+      "https://www.littre.org/definition/attirer"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "attire",
-      "etymology": [
-        {
-          "name": "attire",
-          "origin": "Modern English"
-        },
-        {
-          "name": "attîre, attîars",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/attire#etymonline_v_41828",
-        "https://www.etymonline.com/word/attire#etymonline_v_18914",
-        "https://www.oed.com/dictionary/attire_n?tab=factsheet#34312902"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "attire",
+    "etymology": [
+      {
+        "name": "attire",
+        "origin": "Modern English"
+      },
+      {
+        "name": "attîre, attîars",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/attire#etymonline_v_41828",
+      "https://www.etymonline.com/word/attire#etymonline_v_18914",
+      "https://www.oed.com/dictionary/attire_n?tab=factsheet#34312902"
+    ]
   }
 ]

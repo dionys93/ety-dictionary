@@ -1,41 +1,27 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to dawdle",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to dawdle",
+    "etymology": [
+      {
+        "name": "to dawdle",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to dawdle",
-        "ta daudle -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to dawdle",
-      "etymology": [
-        {
-          "name": "to dawdle",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta daudle -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta daudle -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta daudles",
+          "pastTense": "ta daudled",
+          "progressive": "ta daudling"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/dawdle#etymonline_v_794",
-        "https://www.merriam-webster.com/dictionary/dawdle"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/dawdle#etymonline_v_794",
+      "https://www.merriam-webster.com/dictionary/dawdle"
+    ]
   }
 ]

@@ -1,42 +1,36 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "beer",
-      "etymology": [
-        {
-          "name": "beor",
-          "origin": "Old English"
-        },
-        {
-          "name": "ber",
-          "origin": "Middle English"
-        },
-        {
-          "name": "beer",
-          "origin": "Modern English"
-        },
-        {
-          "name": "bior -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/beer#etymonline_v_8236",
-        "https://www.merriam-webster.com/dictionary/beer",
-        "https://www.oed.com/dictionary/beer_n1?tab=pronunciation#24677405",
-        "https://www.collinsdictionary.com/us/dictionary/french-english/bi%C3%A8re",
-        "https://www.collinsdictionary.com/us/dictionary/german-english/bier",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4125",
-        "https://bosworthtoller.com/3720"
-      ],
-      "number": "plural"
-    }
+    "name": "beer",
+    "etymology": [
+      {
+        "name": "beor",
+        "origin": "Old English"
+      },
+      {
+        "name": "ber",
+        "origin": "Middle English"
+      },
+      {
+        "name": "beer",
+        "origin": "Modern English"
+      },
+      {
+        "name": "bior -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/beer#etymonline_v_8236",
+      "https://www.merriam-webster.com/dictionary/beer",
+      "https://www.oed.com/dictionary/beer_n1?tab=pronunciation#24677405",
+      "https://www.collinsdictionary.com/us/dictionary/french-english/bi%C3%A8re",
+      "https://www.collinsdictionary.com/us/dictionary/german-english/bier",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4125",
+      "https://bosworthtoller.com/3720"
+    ]
   }
 ]

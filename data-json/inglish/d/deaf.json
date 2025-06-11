@@ -1,71 +1,51 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "deaf",
-      "etymology": [
-        {
-          "name": "deaf",
-          "origin": "Old English"
-        },
-        {
-          "name": "deff",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/deaf",
-        "https://www.oed.com/dictionary/deaf_adj?tab=pronunciation#7518709",
-        "https://www.oed.com/dictionary/deaf_adj?tab=meaning_and_use#7518709",
-        "https://bosworthtoller.com/7442"
-      ]
-    }
+    "name": "deaf",
+    "etymology": [
+      {
+        "name": "deaf",
+        "origin": "Old English"
+      },
+      {
+        "name": "deff",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/deaf",
+      "https://www.oed.com/dictionary/deaf_adj?tab=pronunciation#7518709",
+      "https://www.oed.com/dictionary/deaf_adj?tab=meaning_and_use#7518709",
+      "https://bosworthtoller.com/7442"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to deafen",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to deafen",
+    "etymology": [
+      {
+        "name": "to deafen",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to deafen",
-        "ta deffane -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to deafen",
-      "etymology": [
-        {
-          "name": "to deafen",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta deffane -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta deffane -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta deffanes",
+          "pastTense": "ta deffaned",
+          "progressive": "ta deffaning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/deafen",
-        "https://www.etymonline.com/word/deaf",
-        "https://www.etymonline.com/word/-en#etymonline_v_32445",
-        "https://www.oed.com/dictionary/deafen_v?tab=factsheet#7520144"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/deafen",
+      "https://www.etymonline.com/word/deaf",
+      "https://www.etymonline.com/word/-en#etymonline_v_32445",
+      "https://www.oed.com/dictionary/deafen_v?tab=factsheet#7520144"
+    ]
   }
 ]

@@ -1,80 +1,60 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to feed",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to feed",
+    "etymology": [
+      {
+        "name": "fedan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "fedan",
-        "feden",
-        "to feed",
-        "ta fiede -s fèd -ing"
-      ]
-    },
-    "standard": {
-      "name": "to feed",
-      "etymology": [
-        {
-          "name": "fedan",
-          "origin": "Old English"
-        },
-        {
-          "name": "feden",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to feed",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta fiede -s fèd -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "feden",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to feed",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta fiede -s fèd -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta fiedes"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/feed#etymonline_v_1195",
-        "https://www.merriam-webster.com/dictionary/feed#dictionary-entry-1",
-        "https://www.oed.com/dictionary/feed_v?tab=factsheet#4565746",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15435",
-        "https://bosworthtoller.com/10215"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/feed#etymonline_v_1195",
+      "https://www.merriam-webster.com/dictionary/feed#dictionary-entry-1",
+      "https://www.oed.com/dictionary/feed_v?tab=factsheet#4565746",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15435",
+      "https://bosworthtoller.com/10215"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "feed",
-      "etymology": [
-        {
-          "name": "feed",
-          "origin": "Modern English"
-        },
-        {
-          "name": "fied -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/feed#etymonline_v_39317",
-        "https://www.etymonline.com/word/feed#etymonline_v_1195",
-        "https://www.merriam-webster.com/dictionary/feed#dictionary-entry-2",
-        "https://www.oed.com/dictionary/feed_n?tab=factsheet#4563808"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "feed",
+    "etymology": [
+      {
+        "name": "feed",
+        "origin": "Modern English"
+      },
+      {
+        "name": "fied -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/feed#etymonline_v_39317",
+      "https://www.etymonline.com/word/feed#etymonline_v_1195",
+      "https://www.merriam-webster.com/dictionary/feed#dictionary-entry-2",
+      "https://www.oed.com/dictionary/feed_n?tab=factsheet#4563808"
+    ]
   }
 ]

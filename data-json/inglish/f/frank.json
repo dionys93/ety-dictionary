@@ -1,84 +1,60 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "frank",
-      "etymology": [
-        {
-          "name": "francus",
-          "origin": "Medieval Latin"
-        },
-        {
-          "name": "franc",
-          "origin": "Old French"
-        },
-        {
-          "name": "frank",
-          "origin": "Modern English"
-        },
-        {
-          "name": "frânk -ly, frânc -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/frank#etymonline_v_11874",
-        "https://www.etymonline.com/word/frank#etymonline_v_40802",
-        "https://www.etymonline.com/word/frank#etymonline_v_40801",
-        "https://www.merriam-webster.com/dictionary/frank#dictionary-entry-1",
-        "https://anglo-norman.net/entry/franc_1",
-        "https://www.oed.com/dictionary/frank_adj2?tab=pronunciation#3642742",
-        "https://www.oed.com/dictionary/frank_adj2?tab=meaning_and_use#3642742"
-      ],
-      "degrees": {
-        "positive": "nk",
-        "comparative": "ly"
+    "name": "frank",
+    "etymology": [
+      {
+        "name": "francus",
+        "origin": "Medieval Latin"
+      },
+      {
+        "name": "franc",
+        "origin": "Old French"
+      },
+      {
+        "name": "frank",
+        "origin": "Modern English"
+      },
+      {
+        "name": "frânk -ly, frânc -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "masculine noun"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/frank#etymonline_v_11874",
+      "https://www.etymonline.com/word/frank#etymonline_v_40802",
+      "https://www.etymonline.com/word/frank#etymonline_v_40801",
+      "https://www.merriam-webster.com/dictionary/frank#dictionary-entry-1",
+      "https://anglo-norman.net/entry/franc_1",
+      "https://www.oed.com/dictionary/frank_adj2?tab=pronunciation#3642742",
+      "https://www.oed.com/dictionary/frank_adj2?tab=meaning_and_use#3642742"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to frank",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to frank",
+    "etymology": [
+      {
+        "name": "to frank",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to frank",
-        "ta frânke -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to frank",
-      "etymology": [
-        {
-          "name": "to frank",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta frânke -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta frânke -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta frânkes",
+          "pastTense": "ta frânked",
+          "progressive": "ta frânking"
         }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/frank#dictionary-entry-2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/frank#dictionary-entry-2"
+    ]
   }
 ]

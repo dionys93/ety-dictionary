@@ -1,89 +1,68 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "witch",
-      "etymology": [
-        {
-          "name": "wicca, wicce",
-          "origin": "Old English"
-        },
-        {
-          "name": "wicche",
-          "origin": "Middle English"
-        },
-        {
-          "name": "witch",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ɯich -es",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/witch#etymonline_v_10798",
-        "https://www.merriam-webster.com/dictionary/witch",
-        "https://www.merriam-webster.com/dictionary/witch#dictionary-entry-1",
-        "https://www.oed.com/dictionary/witch_n?tab=pronunciation#14149229",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52660",
-        "https://bosworthtoller.com/35498",
-        "https://bosworthtoller.com/35497"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "witch",
+    "etymology": [
+      {
+        "name": "wicca, wicce",
+        "origin": "Old English"
+      },
+      {
+        "name": "wicche",
+        "origin": "Middle English"
+      },
+      {
+        "name": "witch",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ɯich -es",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/witch#etymonline_v_10798",
+      "https://www.merriam-webster.com/dictionary/witch",
+      "https://www.merriam-webster.com/dictionary/witch#dictionary-entry-1",
+      "https://www.oed.com/dictionary/witch_n?tab=pronunciation#14149229",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52660",
+      "https://bosworthtoller.com/35498",
+      "https://bosworthtoller.com/35497"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to witch",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to witch",
+    "etymology": [
+      {
+        "name": "wicchen",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "wicchen",
-        "to witch",
-        "ta ɯiche -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to witch",
-      "etymology": [
-        {
-          "name": "wicchen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to witch",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta ɯiche -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to witch",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta ɯiche -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta ɯiches",
+          "pastTense": "ta ɯiched",
+          "progressive": "ta ɯiching"
         }
-      ],
-      "sources": [
-        "https://www.oed.com/dictionary/witch_v1?tab=factsheet#14151878",
-        "https://www.merriam-webster.com/dictionary/witch#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52663",
-        "https://bosworthtoller.com/35501"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.oed.com/dictionary/witch_v1?tab=factsheet#14151878",
+      "https://www.merriam-webster.com/dictionary/witch#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52663",
+      "https://bosworthtoller.com/35501"
+    ]
   }
 ]

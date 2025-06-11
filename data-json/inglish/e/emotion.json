@@ -1,192 +1,144 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "emotion",
-      "etymology": [
-        {
-          "name": "ex + movere, emovere",
-          "origin": "Latin"
-        },
-        {
-          "name": "esmoveir, emouvoir",
-          "origin": "Old French"
-        },
-        {
-          "name": "émotion",
-          "origin": "French"
-        },
-        {
-          "name": "emotion",
-          "origin": "Modern English"
-        },
-        {
-          "name": "emôcion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/emotion#etymonline_v_5814",
-        "https://www.collinsdictionary.com/us/dictionary/french-english/%C3%A9motion",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED1424",
-        "https://www.anglo-norman.net/entry/esmoveir",
-        "https://latin-dictionary.net/definition/19044/emoveo-emovere-emovi-emotus"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "to emote  -s -d -ing (v)",
-      "etymology": [
-        {
-          "name": "to emote  -s -d -ing (v)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/emote#etymonline_v_32251",
-        "https://www.etymonline.com/word/emotion#etymonline_v_5814"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "emotive",
-      "etymology": [
-        {
-          "name": "emovere, emot-",
-          "origin": "Latin"
-        },
-        {
-          "name": "emotive",
-          "origin": "Modern English"
-        },
-        {
-          "name": "emôtif -vly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/emotive#etymonline_v_32350",
-        "https://www.etymonline.com/word/emotion#etymonline_v_5814",
-        "https://www.etymonline.com/word/-ive#etymonline_v_32842",
-        "https://latin-dictionary.net/definition/19044/emoveo-emovere-emovi-emotus"
-      ],
-      "degrees": {
-        "positive": "tif",
-        "comparative": "vly"
+    "name": "emotion",
+    "etymology": [
+      {
+        "name": "ex + movere, emovere",
+        "origin": "Latin"
+      },
+      {
+        "name": "esmoveir, emouvoir",
+        "origin": "Old French"
+      },
+      {
+        "name": "émotion",
+        "origin": "French"
+      },
+      {
+        "name": "emotion",
+        "origin": "Modern English"
+      },
+      {
+        "name": "emôcion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/emotion#etymonline_v_5814",
+      "https://www.collinsdictionary.com/us/dictionary/french-english/%C3%A9motion",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED1424",
+      "https://www.anglo-norman.net/entry/esmoveir",
+      "https://latin-dictionary.net/definition/19044/emoveo-emovere-emovi-emotus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "emotional",
-      "etymology": [
-        {
-          "name": "emotional",
-          "origin": "Modern English"
-        },
-        {
-          "name": "emôcional -ly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/emotional#etymonline_v_32252",
-        "https://www.etymonline.com/word/emotion#etymonline_v_5814",
-        "https://www.etymonline.com/word/-al#etymonline_v_32845"
-      ],
-      "degrees": {
-        "positive": "cional",
-        "comparative": "ly"
+    "name": "to emote  -s -d -ing (v)",
+    "etymology": [
+      {
+        "name": "to emote  -s -d -ing (v)",
+        "origin": "Modern English"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/emote#etymonline_v_32251",
+      "https://www.etymonline.com/word/emotion#etymonline_v_5814"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "emoticon",
-      "etymology": [
-        {
-          "name": "emoticon",
-          "origin": "Modern English"
-        },
-        {
-          "name": "emôtikon -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/emoticon#etymonline_v_32348",
-        "https://www.etymonline.com/word/emotion#etymonline_v_5814",
-        "https://www.etymonline.com/word/icon#etymonline_v_1477",
-        "https://www.merriam-webster.com/dictionary/emoticon"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "emotionless",
-      "etymology": [
-        {
-          "name": "emotionless",
-          "origin": "Modern English"
-        },
-        {
-          "name": "emôcionless -sly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/emotionless#etymonline_v_50308",
-        "https://www.etymonline.com/word/emotion#etymonline_v_5814",
-        "https://www.etymonline.com/word/-less#etymonline_v_6702"
-      ],
-      "degrees": {
-        "positive": "cionless",
-        "comparative": "sly"
+    "name": "emotive",
+    "etymology": [
+      {
+        "name": "emovere, emot-",
+        "origin": "Latin"
+      },
+      {
+        "name": "emotive",
+        "origin": "Modern English"
+      },
+      {
+        "name": "emôtif -vly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/emotive#etymonline_v_32350",
+      "https://www.etymonline.com/word/emotion#etymonline_v_5814",
+      "https://www.etymonline.com/word/-ive#etymonline_v_32842",
+      "https://latin-dictionary.net/definition/19044/emoveo-emovere-emovi-emotus"
+    ]
+  },
+  {
+    "name": "emotional",
+    "etymology": [
+      {
+        "name": "emotional",
+        "origin": "Modern English"
+      },
+      {
+        "name": "emôcional -ly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/emotional#etymonline_v_32252",
+      "https://www.etymonline.com/word/emotion#etymonline_v_5814",
+      "https://www.etymonline.com/word/-al#etymonline_v_32845"
+    ]
+  },
+  {
+    "name": "emoticon",
+    "etymology": [
+      {
+        "name": "emoticon",
+        "origin": "Modern English"
+      },
+      {
+        "name": "emôtikon -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/emoticon#etymonline_v_32348",
+      "https://www.etymonline.com/word/emotion#etymonline_v_5814",
+      "https://www.etymonline.com/word/icon#etymonline_v_1477",
+      "https://www.merriam-webster.com/dictionary/emoticon"
+    ]
+  },
+  {
+    "name": "emotionless",
+    "etymology": [
+      {
+        "name": "emotionless",
+        "origin": "Modern English"
+      },
+      {
+        "name": "emôcionless -sly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/emotionless#etymonline_v_50308",
+      "https://www.etymonline.com/word/emotion#etymonline_v_5814",
+      "https://www.etymonline.com/word/-less#etymonline_v_6702"
+    ]
   }
 ]

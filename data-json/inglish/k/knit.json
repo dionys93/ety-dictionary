@@ -1,104 +1,76 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to knit",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to knit",
+    "etymology": [
+      {
+        "name": "cnyttan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "cnyttan",
-        "knitten",
-        "to knit",
-        "ta nỳte -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to knit",
-      "etymology": [
-        {
-          "name": "cnyttan",
-          "origin": "Old English"
-        },
-        {
-          "name": "knitten",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to knit",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta nỳte -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "knitten",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to knit",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta nỳte -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta nỳtes",
+          "pastTense": "ta nỳted",
+          "progressive": "ta nỳting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/knit",
-        "https://www.oed.com/dictionary/knit_v?tab=factsheet#40001135",
-        "https://bosworthtoller.com/6489"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/knit",
+      "https://www.oed.com/dictionary/knit_v?tab=factsheet#40001135",
+      "https://bosworthtoller.com/6489"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "knit",
-      "etymology": [
-        {
-          "name": "knit",
-          "origin": "Modern English"
-        },
-        {
-          "name": "nỳte, nỳts",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.oed.com/dictionary/knit_n?tab=factsheet#40000734"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "knit",
+    "etymology": [
+      {
+        "name": "knit",
+        "origin": "Modern English"
+      },
+      {
+        "name": "nỳte, nỳts",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.oed.com/dictionary/knit_n?tab=factsheet#40000734"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "knit",
-      "etymology": [
-        {
-          "name": "knit",
-          "origin": "Modern English"
-        },
-        {
-          "name": "nỳt",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.oed.com/dictionary/knit_adj?tab=factsheet#40000912"
-      ]
-    }
+    "name": "knit",
+    "etymology": [
+      {
+        "name": "knit",
+        "origin": "Modern English"
+      },
+      {
+        "name": "nỳt",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.oed.com/dictionary/knit_adj?tab=factsheet#40000912"
+    ]
   }
 ]

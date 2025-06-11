@@ -1,84 +1,64 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "tune",
-      "etymology": [
-        {
-          "name": "τόνος",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "tonus",
-          "origin": "Latin"
-        },
-        {
-          "name": "ton",
-          "origin": "Old French"
-        },
-        {
-          "name": "tune",
-          "origin": "Modern English"
-        },
-        {
-          "name": "tune, túns",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/tune#etymonline_v_18814",
-        "https://www.etymonline.com/word/tone#etymonline_v_15358",
-        "https://www.anglo-norman.net/entry/tun_1",
-        "https://latin-dictionary.net/definition/37310/tonus-toni",
-        "https://lsj.gr/wiki/%CF%84%CF%8C%CE%BD%CE%BF%CF%82"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "tune",
+    "etymology": [
+      {
+        "name": "τόνος",
+        "origin": "Ancient Greek"
+      },
+      {
+        "name": "tonus",
+        "origin": "Latin"
+      },
+      {
+        "name": "ton",
+        "origin": "Old French"
+      },
+      {
+        "name": "tune",
+        "origin": "Modern English"
+      },
+      {
+        "name": "tune, túns",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/tune#etymonline_v_18814",
+      "https://www.etymonline.com/word/tone#etymonline_v_15358",
+      "https://www.anglo-norman.net/entry/tun_1",
+      "https://latin-dictionary.net/definition/37310/tonus-toni",
+      "https://lsj.gr/wiki/%CF%84%CF%8C%CE%BD%CE%BF%CF%82"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to tune",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to tune",
+    "etymology": [
+      {
+        "name": "to tune",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to tune",
-        "ta tune -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to tune",
-      "etymology": [
-        {
-          "name": "to tune",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta tune -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta tune -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta tunes",
+          "pastTense": "ta tuned",
+          "progressive": "ta tuning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/tune#etymonline_v_46213",
-        "https://www.etymonline.com/word/tune#etymonline_v_18814"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/tune#etymonline_v_46213",
+      "https://www.etymonline.com/word/tune#etymonline_v_18814"
+    ]
   }
 ]

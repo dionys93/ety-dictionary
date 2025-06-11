@@ -1,92 +1,70 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "house",
-      "etymology": [
-        {
-          "name": "hus",
-          "origin": "Old English"
-        },
-        {
-          "name": "hous",
-          "origin": "Middle English"
-        },
-        {
-          "name": "house",
-          "origin": "Modern English"
-        },
-        {
-          "name": "háuss, háuses",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/house#etymonline_v_14504",
-        "https://www.merriam-webster.com/dictionary/house#dictionary-entry-1",
-        "https://www.oed.com/dictionary/house_n1?tab=factsheet#1346031",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED21360/track?counter=1&search_id=33388226",
-        "https://bosworthtoller.com/19996"
-      ],
-      "number": "plural"
-    }
+    "name": "house",
+    "etymology": [
+      {
+        "name": "hus",
+        "origin": "Old English"
+      },
+      {
+        "name": "hous",
+        "origin": "Middle English"
+      },
+      {
+        "name": "house",
+        "origin": "Modern English"
+      },
+      {
+        "name": "háuss, háuses",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/house#etymonline_v_14504",
+      "https://www.merriam-webster.com/dictionary/house#dictionary-entry-1",
+      "https://www.oed.com/dictionary/house_n1?tab=factsheet#1346031",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED21360/track?counter=1&search_id=33388226",
+      "https://bosworthtoller.com/19996"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to house",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to house",
+    "etymology": [
+      {
+        "name": "husian",
+        "origin": "Old English"
       },
-      "etymology": [
-        "husian",
-        "housen",
-        "to house",
-        "ta háuse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to house",
-      "etymology": [
-        {
-          "name": "husian",
-          "origin": "Old English"
-        },
-        {
-          "name": "housen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to house",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta háuse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "housen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to house",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta háuse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta háuses",
+          "pastTense": "ta háused",
+          "progressive": "ta háusing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/house#etymonline_v_41607",
-        "https://www.merriam-webster.com/dictionary/house#dictionary-entry-2",
-        "https://www.oed.com/dictionary/house_v1?tab=factsheet#1354555",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED21370",
-        "https://bosworthtoller.com/20020"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/house#etymonline_v_41607",
+      "https://www.merriam-webster.com/dictionary/house#dictionary-entry-2",
+      "https://www.oed.com/dictionary/house_v1?tab=factsheet#1354555",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED21370",
+      "https://bosworthtoller.com/20020"
+    ]
   }
 ]

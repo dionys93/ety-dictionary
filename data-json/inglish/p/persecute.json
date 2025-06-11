@@ -1,155 +1,120 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to persecute",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to persecute",
+    "etymology": [
+      {
+        "name": "per + sequi, persequi, persecutus",
+        "origin": "Latin"
       },
-      "etymology": [
-        "per + sequi, persequi, persecutus",
-        "persécuter",
-        "persecuten",
-        "to persecute",
-        "ta persequte -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to persecute",
-      "etymology": [
-        {
-          "name": "per + sequi, persequi, persecutus",
-          "origin": "Latin"
-        },
-        {
-          "name": "persécuter",
-          "origin": "Old French"
-        },
-        {
-          "name": "persecuten",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to persecute",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta persequte -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "persécuter",
+        "origin": "Old French"
+      },
+      {
+        "name": "persecuten",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to persecute",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta persequte -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta persequtes",
+          "pastTense": "ta persequted",
+          "progressive": "ta persequting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/persecute#etymonline_v_34989",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED33075",
-        "https://www.anglo-norman.net/entry/persequer",
-        "https://latin-dictionary.net/definition/30170/persequor-persequi-persecutus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/persecute#etymonline_v_34989",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED33075",
+      "https://www.anglo-norman.net/entry/persequer",
+      "https://latin-dictionary.net/definition/30170/persequor-persequi-persecutus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "persecution",
-      "etymology": [
-        {
-          "name": "per + sequi, persequi, persecutio",
-          "origin": "Latin"
-        },
-        {
-          "name": "persecucion",
-          "origin": "Old French"
-        },
-        {
-          "name": "persecucioun",
-          "origin": "Middle English"
-        },
-        {
-          "name": "persecution",
-          "origin": "Modern English"
-        },
-        {
-          "name": "perseqúcion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/persecution#etymonline_v_12740",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED33074",
-        "https://www.anglo-norman.net/entry/persecucion",
-        "https://latin-dictionary.net/definition/30165/persecutio-persecutionis",
-        "https://latin-dictionary.net/definition/30170/persequor-persequi-persecutus"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "persecution",
+    "etymology": [
+      {
+        "name": "per + sequi, persequi, persecutio",
+        "origin": "Latin"
+      },
+      {
+        "name": "persecucion",
+        "origin": "Old French"
+      },
+      {
+        "name": "persecucioun",
+        "origin": "Middle English"
+      },
+      {
+        "name": "persecution",
+        "origin": "Modern English"
+      },
+      {
+        "name": "perseqúcion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/persecution#etymonline_v_12740",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED33074",
+      "https://www.anglo-norman.net/entry/persecucion",
+      "https://latin-dictionary.net/definition/30165/persecutio-persecutionis",
+      "https://latin-dictionary.net/definition/30170/persequor-persequi-persecutus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "persequi, persecutor",
-      "etymology": [
-        {
-          "name": "persequi, persecutor",
-          "origin": "Latin"
-        },
-        {
-          "name": "persequtor -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/persecutor#etymonline_v_35865",
-        "https://latin-dictionary.net/definition/30166/persecutor-persecutoris",
-        "https://latin-dictionary.net/definition/30170/persequor-persequi-persecutus"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "persequi, persecutor",
+    "etymology": [
+      {
+        "name": "persequi, persecutor",
+        "origin": "Latin"
+      },
+      {
+        "name": "persequtor -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/persecutor#etymonline_v_35865",
+      "https://latin-dictionary.net/definition/30166/persecutor-persecutoris",
+      "https://latin-dictionary.net/definition/30170/persequor-persequi-persecutus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "persecutory",
-      "etymology": [
-        {
-          "name": "persecutory",
-          "origin": "Modern English"
-        },
-        {
-          "name": "persequtory",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.oed.com/dictionary/persecutory_adj?tab=factsheet#30934642"
-      ]
-    }
+    "name": "persecutory",
+    "etymology": [
+      {
+        "name": "persecutory",
+        "origin": "Modern English"
+      },
+      {
+        "name": "persequtory",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.oed.com/dictionary/persecutory_adj?tab=factsheet#30934642"
+    ]
   }
 ]

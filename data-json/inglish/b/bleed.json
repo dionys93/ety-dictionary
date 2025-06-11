@@ -1,206 +1,152 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to bleed",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to bleed",
+    "etymology": [
+      {
+        "name": "bledan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "bledan",
-        "bleden",
-        "to bleed",
-        "ta bliede -s blèd -ing"
-      ]
-    },
-    "standard": {
-      "name": "to bleed",
-      "etymology": [
-        {
-          "name": "bledan",
-          "origin": "Old English"
-        },
-        {
-          "name": "bleden",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to bleed",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta bliede -s blèd -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bleed#etymonline_v_13593",
-        "https://www.merriam-webster.com/dictionary/bleed#dictionary-entry-1",
-        "https://www.oed.com/dictionary/bleed_v?tab=factsheet#18593893",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5144",
-        "https://bosworthtoller.com/4631"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "blood",
-      "etymology": [
-        {
-          "name": "blod",
-          "origin": "Old English"
-        },
-        {
-          "name": "blood",
-          "origin": "Modern English"
-        },
-        {
-          "name": "blod -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/blood#etymonline_v_13620",
-        "https://www.merriam-webster.com/dictionary/blood#dictionary-entry-1",
-        "https://www.oed.com/dictionary/blood_n?tab=factsheet#18099010",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5268",
-        "https://bosworthtoller.com/4701"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to blood",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "bleden",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "to blood",
-        "ta blode -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to blood",
-      "etymology": [
-        {
-          "name": "to blood",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta blode -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/blood#etymonline_v_43344",
-        "https://www.etymonline.com/word/blood#etymonline_v_13620",
-        "https://www.merriam-webster.com/dictionary/blood#dictionary-entry-2",
-        "https://www.oed.com/dictionary/blood_v?tab=factsheet#18105557"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "bloody",
-      "etymology": [
-        {
-          "name": "blodig",
-          "origin": "Old English"
-        },
-        {
-          "name": "blodi",
-          "origin": "Middle English"
-        },
-        {
-          "name": "bloody",
-          "origin": "Modern English"
-        },
-        {
-          "name": "blody",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "adverb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bloody#etymonline_v_13621",
-        "https://www.merriam-webster.com/dictionary/bloody#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/bloody#dictionary-entry-3",
-        "https://www.oed.com/dictionary/bloody_adj?tab=factsheet#17904694",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5276",
-        "https://bosworthtoller.com/4717"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to bloody",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ying"
+      {
+        "name": "to bleed",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to bloody",
-        "ta blodie -s -d -ying"
-      ]
-    },
-    "standard": {
-      "name": "to bloody",
-      "etymology": [
-        {
-          "name": "to bloody",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta blodie -s -d -ying",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta bliede -s blèd -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta bliedes"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bloody#etymonline_v_43350",
-        "https://www.etymonline.com/word/bloody#etymonline_v_13621",
-        "https://www.merriam-webster.com/dictionary/bloody#dictionary-entry-2",
-        "https://www.oed.com/dictionary/bloody_v?tab=factsheet#17906835"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ying"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bleed#etymonline_v_13593",
+      "https://www.merriam-webster.com/dictionary/bleed#dictionary-entry-1",
+      "https://www.oed.com/dictionary/bleed_v?tab=factsheet#18593893",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5144",
+      "https://bosworthtoller.com/4631"
+    ]
+  },
+  {
+    "name": "blood",
+    "etymology": [
+      {
+        "name": "blod",
+        "origin": "Old English"
+      },
+      {
+        "name": "blood",
+        "origin": "Modern English"
+      },
+      {
+        "name": "blod -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/blood#etymonline_v_13620",
+      "https://www.merriam-webster.com/dictionary/blood#dictionary-entry-1",
+      "https://www.oed.com/dictionary/blood_n?tab=factsheet#18099010",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5268",
+      "https://bosworthtoller.com/4701"
+    ]
+  },
+  {
+    "infinitive": "to blood",
+    "etymology": [
+      {
+        "name": "to blood",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta blode -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta blodes",
+          "pastTense": "ta bloded",
+          "progressive": "ta bloding"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/blood#etymonline_v_43344",
+      "https://www.etymonline.com/word/blood#etymonline_v_13620",
+      "https://www.merriam-webster.com/dictionary/blood#dictionary-entry-2",
+      "https://www.oed.com/dictionary/blood_v?tab=factsheet#18105557"
+    ]
+  },
+  {
+    "name": "bloody",
+    "etymology": [
+      {
+        "name": "blodig",
+        "origin": "Old English"
+      },
+      {
+        "name": "blodi",
+        "origin": "Middle English"
+      },
+      {
+        "name": "bloody",
+        "origin": "Modern English"
+      },
+      {
+        "name": "blody",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "adverb"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bloody#etymonline_v_13621",
+      "https://www.merriam-webster.com/dictionary/bloody#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/bloody#dictionary-entry-3",
+      "https://www.oed.com/dictionary/bloody_adj?tab=factsheet#17904694",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5276",
+      "https://bosworthtoller.com/4717"
+    ]
+  },
+  {
+    "infinitive": "to bloody",
+    "etymology": [
+      {
+        "name": "to bloody",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta blodie -s -d -ying",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta blodies",
+          "pastTense": "ta blodied",
+          "progressive": "ta blodieying"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bloody#etymonline_v_43350",
+      "https://www.etymonline.com/word/bloody#etymonline_v_13621",
+      "https://www.merriam-webster.com/dictionary/bloody#dictionary-entry-2",
+      "https://www.oed.com/dictionary/bloody_v?tab=factsheet#17906835"
+    ]
   }
 ]

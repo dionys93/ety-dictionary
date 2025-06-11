@@ -1,76 +1,55 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to gaze",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to gaze",
+    "etymology": [
+      {
+        "name": "gasen, gazen",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "gasen, gazen",
-        "to gaze",
-        "ta gâse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to gaze",
-      "etymology": [
-        {
-          "name": "gasen, gazen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to gaze",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta gâse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to gaze",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta gâse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta gâses",
+          "pastTense": "ta gâsed",
+          "progressive": "ta gâsing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/gaze#etymonline_v_1328",
-        "https://www.oed.com/dictionary/gaze_v?tab=factsheet#3291789",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED18259"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/gaze#etymonline_v_1328",
+      "https://www.oed.com/dictionary/gaze_v?tab=factsheet#3291789",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED18259"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "gaze",
-      "etymology": [
-        {
-          "name": "gaze",
-          "origin": "Modern English"
-        },
-        {
-          "name": "gâse -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/gaze#etymonline_v_46287",
-        "https://www.etymonline.com/word/gaze#etymonline_v_1328",
-        "https://www.oed.com/dictionary/gaze_n?tab=pronunciation#3291152"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "gaze",
+    "etymology": [
+      {
+        "name": "gaze",
+        "origin": "Modern English"
+      },
+      {
+        "name": "gâse -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/gaze#etymonline_v_46287",
+      "https://www.etymonline.com/word/gaze#etymonline_v_1328",
+      "https://www.oed.com/dictionary/gaze_n?tab=pronunciation#3291152"
+    ]
   }
 ]

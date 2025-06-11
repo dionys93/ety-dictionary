@@ -1,75 +1,55 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to dream",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
+    "infinitive": "to dream",
+    "etymology": [
+      {
+        "name": "dremen",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "dremen",
-        "to dream",
-        "ta drime -s -d/drempt -ing"
-      ]
-    },
-    "standard": {
-      "name": "to dream",
-      "etymology": [
-        {
-          "name": "dremen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to dream",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta drime -s -d/drempt -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to dream",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta drime -s -d/drempt -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta drimes",
+          "pastTense": "ta drimed"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/dream#etymonline_v_45944",
-        "https://www.etymonline.com/word/dream#etymonline_v_15895",
-        "https://www.merriam-webster.com/dictionary/dream#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12576"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/dream#etymonline_v_45944",
+      "https://www.etymonline.com/word/dream#etymonline_v_15895",
+      "https://www.merriam-webster.com/dictionary/dream#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12576"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "dream",
-      "etymology": [
-        {
-          "name": "dream",
-          "origin": "Old English"
-        },
-        {
-          "name": "drime, dríms",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/dream#etymonline_v_15895",
-        "https://www.merriam-webster.com/dictionary/dream#dictionary-entry-1",
-        "https://bosworthtoller.com/7866"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "dream",
+    "etymology": [
+      {
+        "name": "dream",
+        "origin": "Old English"
+      },
+      {
+        "name": "drime, dríms",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/dream#etymonline_v_15895",
+      "https://www.merriam-webster.com/dictionary/dream#dictionary-entry-1",
+      "https://bosworthtoller.com/7866"
+    ]
   }
 ]

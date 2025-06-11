@@ -1,82 +1,62 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "tree",
-      "etymology": [
-        {
-          "name": "tréow, tríow",
-          "origin": "Old English"
-        },
-        {
-          "name": "tréo",
-          "origin": "Middle English"
-        },
-        {
-          "name": "tree",
-          "origin": "Modern English"
-        },
-        {
-          "name": "trie, trís",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/tree#etymonline_v_16929",
-        "https://www.oed.com/dictionary/tree_n?tab=factsheet#17746197",
-        "https://www.oed.com/dictionary/tree_n?tab=etymology#17746197",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED46870",
-        "https://bosworthtoller.com/030998"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "tree",
+    "etymology": [
+      {
+        "name": "tréow, tríow",
+        "origin": "Old English"
+      },
+      {
+        "name": "tréo",
+        "origin": "Middle English"
+      },
+      {
+        "name": "tree",
+        "origin": "Modern English"
+      },
+      {
+        "name": "trie, trís",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/tree#etymonline_v_16929",
+      "https://www.oed.com/dictionary/tree_n?tab=factsheet#17746197",
+      "https://www.oed.com/dictionary/tree_n?tab=etymology#17746197",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED46870",
+      "https://bosworthtoller.com/030998"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to tree",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ying"
+    "infinitive": "to tree",
+    "etymology": [
+      {
+        "name": "to tree",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to tree",
-        "ta trie -s -d -ying"
-      ]
-    },
-    "standard": {
-      "name": "to tree",
-      "etymology": [
-        {
-          "name": "to tree",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta trie -s -d -ying",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta trie -s -d -ying",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta tries",
+          "pastTense": "ta tried",
+          "progressive": "ta trieying"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/tree#etymonline_v_49616",
-        "https://www.oed.com/dictionary/tree_v?tab=factsheet#17752720",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED46870",
-        "https://bosworthtoller.com/030998"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ying"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/tree#etymonline_v_49616",
+      "https://www.oed.com/dictionary/tree_v?tab=factsheet#17752720",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED46870",
+      "https://bosworthtoller.com/030998"
+    ]
   }
 ]

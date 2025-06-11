@@ -1,46 +1,40 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "furnace",
-      "etymology": [
-        {
-          "name": "formus, fornus, fornacum",
-          "origin": "Latin"
-        },
-        {
-          "name": "fornais",
-          "origin": "Old French"
-        },
-        {
-          "name": "furnais",
-          "origin": "Middle English"
-        },
-        {
-          "name": "furnace",
-          "origin": "Modern English"
-        },
-        {
-          "name": "fônace -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/furnace#etymonline_v_14267",
-        "https://www.merriam-webster.com/dictionary/furnace",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17986",
-        "https://www.anglo-norman.net/entry/fornax",
-        "https://latin-dictionary.net/definition/21207/furnus-furni",
-        "https://latin-dictionary.net/definition/20914/fornax-fornacis"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "furnace",
+    "etymology": [
+      {
+        "name": "formus, fornus, fornacum",
+        "origin": "Latin"
+      },
+      {
+        "name": "fornais",
+        "origin": "Old French"
+      },
+      {
+        "name": "furnais",
+        "origin": "Middle English"
+      },
+      {
+        "name": "furnace",
+        "origin": "Modern English"
+      },
+      {
+        "name": "fônace -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/furnace#etymonline_v_14267",
+      "https://www.merriam-webster.com/dictionary/furnace",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17986",
+      "https://www.anglo-norman.net/entry/fornax",
+      "https://latin-dictionary.net/definition/21207/furnus-furni",
+      "https://latin-dictionary.net/definition/20914/fornax-fornacis"
+    ]
   }
 ]

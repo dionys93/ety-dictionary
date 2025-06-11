@@ -1,72 +1,52 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "draft  -s (adj, m n)",
-      "etymology": [
-        {
-          "name": "dragan, dreaht, dræht",
-          "origin": "Old English"
-        },
-        {
-          "name": "draught",
-          "origin": "Middle English"
-        },
-        {
-          "name": "draft  -s (adj, m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/draft#etymonline_v_15870",
-        "https://www.etymonline.com/word/draught#etymonline_v_15887",
-        "https://www.merriam-webster.com/dictionary/draft#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/draft#dictionary-entry-2",
-        "https://www.merriam-webster.com/dictionary/draught",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12540",
-        "https://bosworthtoller.com/7859"
-      ]
-    }
+    "name": "draft  -s (adj, m n)",
+    "etymology": [
+      {
+        "name": "dragan, dreaht, dræht",
+        "origin": "Old English"
+      },
+      {
+        "name": "draught",
+        "origin": "Middle English"
+      },
+      {
+        "name": "draft  -s (adj, m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/draft#etymonline_v_15870",
+      "https://www.etymonline.com/word/draught#etymonline_v_15887",
+      "https://www.merriam-webster.com/dictionary/draft#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/draft#dictionary-entry-2",
+      "https://www.merriam-webster.com/dictionary/draught",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12540",
+      "https://bosworthtoller.com/7859"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to draft",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to draft",
+    "etymology": [
+      {
+        "name": "to draft",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to draft",
-        "ta drafte -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to draft",
-      "etymology": [
-        {
-          "name": "to draft",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta drafte -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta drafte -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta draftes",
+          "pastTense": "ta drafted",
+          "progressive": "ta drafting"
         }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/draft#dictionary-entry-3"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/draft#dictionary-entry-3"
+    ]
   }
 ]

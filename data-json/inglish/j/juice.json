@@ -1,142 +1,110 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "juice",
-      "etymology": [
-        {
-          "name": "ius",
-          "origin": "Latin"
-        },
-        {
-          "name": "jus",
-          "origin": "Old French"
-        },
-        {
-          "name": "juis, jouis",
-          "origin": "Middle English"
-        },
-        {
-          "name": "juice",
-          "origin": "Modern English"
-        },
-        {
-          "name": "juce -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/juice#etymonline_v_6537",
-        "https://www.oed.com/dictionary/juice_n?tab=factsheet#40232209",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24037",
-        "https://www.anglo-norman.net/entry/jus_1",
-        "https://latin-dictionary.net/definition/25012/jus-juris"
-      ],
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to juice",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "juice",
+    "etymology": [
+      {
+        "name": "ius",
+        "origin": "Latin"
       },
-      "etymology": [
-        "to juice",
-        "ta juce -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to juice",
-      "etymology": [
-        {
-          "name": "to juice",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta juce -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/juice#etymonline_v_42762",
-        "https://www.etymonline.com/word/juice#etymonline_v_6537",
-        "https://www.oed.com/dictionary/juice_v?tab=factsheet#40233516"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "jus",
+        "origin": "Old French"
+      },
+      {
+        "name": "juis, jouis",
+        "origin": "Middle English"
+      },
+      {
+        "name": "juice",
+        "origin": "Modern English"
+      },
+      {
+        "name": "juce -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/juice#etymonline_v_6537",
+      "https://www.oed.com/dictionary/juice_n?tab=factsheet#40232209",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24037",
+      "https://www.anglo-norman.net/entry/jus_1",
+      "https://latin-dictionary.net/definition/25012/jus-juris"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "juicer",
-      "etymology": [
-        {
-          "name": "juicer",
-          "origin": "Modern English"
-        },
-        {
-          "name": "juçor -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
+    "infinitive": "to juice",
+    "etymology": [
+      {
+        "name": "to juice",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta juce -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta juces",
+          "pastTense": "ta juced",
+          "progressive": "ta jucing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/juicer#etymonline_v_42763",
-        "https://www.oed.com/dictionary/juicer_n?tab=factsheet#40234047"
-      ],
-      "number": "plural"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/juice#etymonline_v_42762",
+      "https://www.etymonline.com/word/juice#etymonline_v_6537",
+      "https://www.oed.com/dictionary/juice_v?tab=factsheet#40233516"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "juicy",
-      "etymology": [
-        {
-          "name": "juicy",
-          "origin": "Modern English"
-        },
-        {
-          "name": "jucy -ier -iest",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/juicy#etymonline_v_35242",
-        "https://www.oed.com/dictionary/juicy_adj?tab=factsheet#40234283"
-      ],
-      "degrees": {
-        "positive": "jucy",
-        "comparative": "ier",
-        "superlative": "iest"
+    "name": "juicer",
+    "etymology": [
+      {
+        "name": "juicer",
+        "origin": "Modern English"
+      },
+      {
+        "name": "juçor -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/juicer#etymonline_v_42763",
+      "https://www.oed.com/dictionary/juicer_n?tab=factsheet#40234047"
+    ]
+  },
+  {
+    "name": "juicy",
+    "etymology": [
+      {
+        "name": "juicy",
+        "origin": "Modern English"
+      },
+      {
+        "name": "jucy -ier -iest",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ],
+        "degrees": {
+          "positive": "jucy",
+          "comparative": "ier",
+          "superlative": "iest"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/juicy#etymonline_v_35242",
+      "https://www.oed.com/dictionary/juicy_adj?tab=factsheet#40234283"
+    ]
   }
 ]

@@ -1,290 +1,227 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to raze",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to raze",
+    "etymology": [
+      {
+        "name": "radere",
+        "origin": "Latin"
       },
-      "etymology": [
-        "radere",
-        "rasare",
-        "raser",
-        "rasen",
-        "to raze",
-        "ta râse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to raze",
-      "etymology": [
-        {
-          "name": "radere",
-          "origin": "Latin"
-        },
-        {
-          "name": "rasare",
-          "origin": "Medieval Latin"
-        },
-        {
-          "name": "raser",
-          "origin": "Old French"
-        },
-        {
-          "name": "rasen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to raze",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta râse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/raze#etymonline_v_3422",
-        "https://www.merriam-webster.com/dictionary/raze",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35943",
-        "https://anglo-norman.net/entry/raser",
-        "https://latin-dictionary.net/definition/32851/rado-radere-rasi-rasus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "to rase",
-      "etymology": [
-        {
-          "name": "radere",
-          "origin": "Latin"
-        },
-        {
-          "name": "rasere",
-          "origin": "Medieval Latin"
-        },
-        {
-          "name": "raser",
-          "origin": "Old French"
-        },
-        {
-          "name": "rasen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to rase",
-          "origin": "Modern English"
-        },
-        {
-          "name": "arch",
-          "origin": "Inglish"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/rase#etymonline_v_47826",
-        "https://www.merriam-webster.com/dictionary/rase",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35943",
-        "https://anglo-norman.net/entry/raser",
-        "https://latin-dictionary.net/definition/32851/rado-radere-rasi-rasus"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "razor",
-      "etymology": [
-        {
-          "name": "radere, rasare, rasus",
-          "origin": "Latin"
-        },
-        {
-          "name": "raser, rasor, rasoer",
-          "origin": "Old French"
-        },
-        {
-          "name": "rasour",
-          "origin": "Middle English"
-        },
-        {
-          "name": "razor",
-          "origin": "Modern English"
-        },
-        {
-          "name": "râsor -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/razor#etymonline_v_3423",
-        "https://www.merriam-webster.com/dictionary/razor",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35956",
-        "https://anglo-norman.net/entry/rasoer",
-        "https://anglo-norman.net/entry/raser",
-        "https://latin-dictionary.net/definition/32851/rado-radere-rasi-rasus"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "rash",
-      "etymology": [
-        {
-          "name": "radere, rasitare, rasus",
-          "origin": "Latin"
-        },
-        {
-          "name": "rasche, rache",
-          "origin": "Old French"
-        },
-        {
-          "name": "rash",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ras̃ -es",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/rash#etymonline_v_3379",
-        "https://www.merriam-webster.com/dictionary/rash#dictionary-entry-1",
-        "https://www.oed.com/dictionary/rash_n4?tab=factsheet#26688868",
-        "https://latin-dictionary.net/definition/32896/rasito-rasitare-rasitavi-rasitatus",
-        "https://latin-dictionary.net/definition/32851/rado-radere-rasi-rasus"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to erase",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "rasare",
+        "origin": "Medieval Latin"
       },
-      "etymology": [
-        "eradere, erasus",
-        "to erase",
-        "to erâsse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to erase",
-      "etymology": [
-        {
-          "name": "eradere, erasus",
-          "origin": "Latin"
-        },
-        {
-          "name": "to erase",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to erâsse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "raser",
+        "origin": "Old French"
+      },
+      {
+        "name": "rasen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to raze",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta râse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta râses",
+          "pastTense": "ta râsed",
+          "progressive": "ta râsing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/erase#etymonline_v_11559",
-        "https://www.merriam-webster.com/dictionary/erase",
-        "https://www.oed.com/dictionary/erase_v?tab=factsheet#5389561",
-        "https://latin-dictionary.net/definition/19292/erado-eradere-erasi-erasus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/raze#etymonline_v_3422",
+      "https://www.merriam-webster.com/dictionary/raze",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35943",
+      "https://anglo-norman.net/entry/raser",
+      "https://latin-dictionary.net/definition/32851/rado-radere-rasi-rasus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "erasure",
-      "etymology": [
-        {
-          "name": "erasure",
-          "origin": "Modern English"
-        },
-        {
-          "name": "erâss̃ure -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/erasure#etymonline_v_32708",
-        "https://www.merriam-webster.com/dictionary/erasure",
-        "https://www.oed.com/dictionary/erasure_n?tab=factsheet#5390506"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "to rase",
+    "etymology": [
+      {
+        "name": "radere",
+        "origin": "Latin"
+      },
+      {
+        "name": "rasere",
+        "origin": "Medieval Latin"
+      },
+      {
+        "name": "raser",
+        "origin": "Old French"
+      },
+      {
+        "name": "rasen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to rase",
+        "origin": "Modern English"
+      },
+      {
+        "name": "arch",
+        "origin": "Inglish"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/rase#etymonline_v_47826",
+      "https://www.merriam-webster.com/dictionary/rase",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35943",
+      "https://anglo-norman.net/entry/raser",
+      "https://latin-dictionary.net/definition/32851/rado-radere-rasi-rasus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "erasable",
-      "etymology": [
-        {
-          "name": "erasable",
-          "origin": "Modern English"
-        },
-        {
-          "name": "erâssable",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
+    "name": "razor",
+    "etymology": [
+      {
+        "name": "radere, rasare, rasus",
+        "origin": "Latin"
+      },
+      {
+        "name": "raser, rasor, rasoer",
+        "origin": "Old French"
+      },
+      {
+        "name": "rasour",
+        "origin": "Middle English"
+      },
+      {
+        "name": "razor",
+        "origin": "Modern English"
+      },
+      {
+        "name": "râsor -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/razor#etymonline_v_3423",
+      "https://www.merriam-webster.com/dictionary/razor",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35956",
+      "https://anglo-norman.net/entry/rasoer",
+      "https://anglo-norman.net/entry/raser",
+      "https://latin-dictionary.net/definition/32851/rado-radere-rasi-rasus"
+    ]
+  },
+  {
+    "name": "rash",
+    "etymology": [
+      {
+        "name": "radere, rasitare, rasus",
+        "origin": "Latin"
+      },
+      {
+        "name": "rasche, rache",
+        "origin": "Old French"
+      },
+      {
+        "name": "rash",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ras̃ -es",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/rash#etymonline_v_3379",
+      "https://www.merriam-webster.com/dictionary/rash#dictionary-entry-1",
+      "https://www.oed.com/dictionary/rash_n4?tab=factsheet#26688868",
+      "https://latin-dictionary.net/definition/32896/rasito-rasitare-rasitavi-rasitatus",
+      "https://latin-dictionary.net/definition/32851/rado-radere-rasi-rasus"
+    ]
+  },
+  {
+    "infinitive": "to erase",
+    "etymology": [
+      {
+        "name": "eradere, erasus",
+        "origin": "Latin"
+      },
+      {
+        "name": "to erase",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to erâsse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to erâsses",
+          "pastTense": "to erâssed",
+          "progressive": "to erâssing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/erasable#etymonline_v_38252",
-        "https://www.merriam-webster.com/dictionary/erasable"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/erase#etymonline_v_11559",
+      "https://www.merriam-webster.com/dictionary/erase",
+      "https://www.oed.com/dictionary/erase_v?tab=factsheet#5389561",
+      "https://latin-dictionary.net/definition/19292/erado-eradere-erasi-erasus"
+    ]
+  },
+  {
+    "name": "erasure",
+    "etymology": [
+      {
+        "name": "erasure",
+        "origin": "Modern English"
+      },
+      {
+        "name": "erâss̃ure -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/erasure#etymonline_v_32708",
+      "https://www.merriam-webster.com/dictionary/erasure",
+      "https://www.oed.com/dictionary/erasure_n?tab=factsheet#5390506"
+    ]
+  },
+  {
+    "name": "erasable",
+    "etymology": [
+      {
+        "name": "erasable",
+        "origin": "Modern English"
+      },
+      {
+        "name": "erâssable",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/erasable#etymonline_v_38252",
+      "https://www.merriam-webster.com/dictionary/erasable"
+    ]
   }
 ]

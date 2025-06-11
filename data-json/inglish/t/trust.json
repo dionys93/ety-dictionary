@@ -1,69 +1,48 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "trust  -s (m n)",
-      "etymology": [
-        {
-          "name": "traust",
-          "origin": "Old Norse"
-        },
-        {
-          "name": "trust  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/trust#etymonline_v_17902",
-        "https://old-norse.net/html/t.php#traust"
-      ]
-    }
+    "name": "trust  -s (m n)",
+    "etymology": [
+      {
+        "name": "traust",
+        "origin": "Old Norse"
+      },
+      {
+        "name": "trust  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/trust#etymonline_v_17902",
+      "https://old-norse.net/html/t.php#traust"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to trust",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to trust",
+    "etymology": [
+      {
+        "name": "treysta",
+        "origin": "Old Norse"
       },
-      "etymology": [
-        "treysta",
-        "to trust",
-        "ta truste -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to trust",
-      "etymology": [
-        {
-          "name": "treysta",
-          "origin": "Old Norse"
-        },
-        {
-          "name": "to trust",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta truste -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to trust",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta truste -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta trustes",
+          "pastTense": "ta trusted",
+          "progressive": "ta trusting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/trust#etymonline_v_46472",
-        "https://old-norse.net/html/t.php#treysta"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/trust#etymonline_v_46472",
+      "https://old-norse.net/html/t.php#treysta"
+    ]
   }
 ]

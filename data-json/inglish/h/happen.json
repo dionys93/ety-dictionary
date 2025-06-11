@@ -1,60 +1,43 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to happen",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to happen",
+    "etymology": [
+      {
+        "name": "happ",
+        "origin": "Old Norse"
       },
-      "etymology": [
-        "happ",
-        "hæppan",
-        "hap, happenen",
-        "to happen",
-        "ta hapane -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to happen",
-      "etymology": [
-        {
-          "name": "happ",
-          "origin": "Old Norse"
-        },
-        {
-          "name": "hæppan",
-          "origin": "Old English"
-        },
-        {
-          "name": "hap, happenen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to happen",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta hapane -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "hæppan",
+        "origin": "Old English"
+      },
+      {
+        "name": "hap, happenen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to happen",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta hapane -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta hapanes",
+          "pastTense": "ta hapaned",
+          "progressive": "ta hapaning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/happen#etymonline_v_1456",
-        "https://www.etymonline.com/word/hap#etymonline_v_41580",
-        "https://www.etymonline.com/word/hap#etymonline_v_1453",
-        "https://www.etymonline.com/word/upheaval#etymonline_v_24885",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED19953",
-        "https://bosworthtoller.com/51542"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/happen#etymonline_v_1456",
+      "https://www.etymonline.com/word/hap#etymonline_v_41580",
+      "https://www.etymonline.com/word/hap#etymonline_v_1453",
+      "https://www.etymonline.com/word/upheaval#etymonline_v_24885",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED19953",
+      "https://bosworthtoller.com/51542"
+    ]
   }
 ]

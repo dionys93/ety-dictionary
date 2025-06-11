@@ -1,86 +1,64 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to bargain",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to bargain",
+    "etymology": [
+      {
+        "name": "bargaingnier",
+        "origin": "Old French"
       },
-      "etymology": [
-        "bargaingnier",
-        "bargainen",
-        "to bargain",
-        "ta bargane -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to bargain",
-      "etymology": [
-        {
-          "name": "bargaingnier",
-          "origin": "Old French"
-        },
-        {
-          "name": "bargainen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to bargain",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta bargane -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "bargainen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to bargain",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta bargane -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta barganes",
+          "pastTense": "ta barganed",
+          "progressive": "ta barganing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bargain#etymonline_v_5243",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3664",
-        "https://www.anglo-norman.net/entry/bargainer"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bargain#etymonline_v_5243",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3664",
+      "https://www.anglo-norman.net/entry/bargainer"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "bargain",
-      "etymology": [
-        {
-          "name": "bargaine",
-          "origin": "Old French"
-        },
-        {
-          "name": "bargain",
-          "origin": "Middle English"
-        },
-        {
-          "name": "bargan -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bargain#etymonline_v_42302",
-        "https://www.etymonline.com/word/bargain#etymonline_v_5243",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3663",
-        "https://www.anglo-norman.net/entry/bargain"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "bargain",
+    "etymology": [
+      {
+        "name": "bargaine",
+        "origin": "Old French"
+      },
+      {
+        "name": "bargain",
+        "origin": "Middle English"
+      },
+      {
+        "name": "bargan -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bargain#etymonline_v_42302",
+      "https://www.etymonline.com/word/bargain#etymonline_v_5243",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3663",
+      "https://www.anglo-norman.net/entry/bargain"
+    ]
   }
 ]

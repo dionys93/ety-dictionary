@@ -1,69 +1,61 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "cigar -s",
-      "etymology": [
-        {
-          "name": "sicar, s'ic",
-          "origin": "Inglish"
-        },
-        {
-          "name": "cigarro",
-          "origin": "Inglish"
-        },
-        {
-          "name": "cigar -s",
-          "origin": "Modern English"
-        },
-        {
-          "name": "cigare, cigárs",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/cigar#etymonline_v_13703",
-        "https://www.merriam-webster.com/dictionary/cigar#dictionary-entry-1",
-        "https://www.collinsdictionary.com/us/dictionary/spanish-english/cigarro"
-      ]
-    }
+    "name": "cigar -s",
+    "etymology": [
+      {
+        "name": "sicar, s'ic",
+        "origin": "Inglish"
+      },
+      {
+        "name": "cigarro",
+        "origin": "Inglish"
+      },
+      {
+        "name": "cigar -s",
+        "origin": "Modern English"
+      },
+      {
+        "name": "cigare, cigárs",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/cigar#etymonline_v_13703",
+      "https://www.merriam-webster.com/dictionary/cigar#dictionary-entry-1",
+      "https://www.collinsdictionary.com/us/dictionary/spanish-english/cigarro"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "cigare, cigarette",
-      "etymology": [
-        {
-          "name": "cigarro",
-          "origin": "Inglish"
-        },
-        {
-          "name": "cigare, cigarette",
-          "origin": "French"
-        },
-        {
-          "name": "cigarèt -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/cigarette#etymonline_v_13704",
-        "https://www.merriam-webster.com/dictionary/cigarette",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/cigarette/15861",
-        "https://www.collinsdictionary.com/us/dictionary/spanish-english/cigarro"
-      ]
-    }
+    "name": "cigare, cigarette",
+    "etymology": [
+      {
+        "name": "cigarro",
+        "origin": "Inglish"
+      },
+      {
+        "name": "cigare, cigarette",
+        "origin": "French"
+      },
+      {
+        "name": "cigarèt -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/cigarette#etymonline_v_13704",
+      "https://www.merriam-webster.com/dictionary/cigarette",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/cigarette/15861",
+      "https://www.collinsdictionary.com/us/dictionary/spanish-english/cigarro"
+    ]
   }
 ]

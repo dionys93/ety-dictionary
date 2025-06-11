@@ -1,51 +1,37 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to arise",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to arise",
+    "etymology": [
+      {
+        "name": "arisan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "arisan",
-        "arisen",
-        "to arise",
-        "to arîse -s arose arisan -ing"
-      ]
-    },
-    "standard": {
-      "name": "to arise",
-      "etymology": [
-        {
-          "name": "arisan",
-          "origin": "Old English"
-        },
-        {
-          "name": "arisen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to arise",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to arîse -s arose arisan -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "arisen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to arise",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to arîse -s arose arisan -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to arîses"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/arise#etymonline_v_16995",
-        "https://www.etymonline.com/word/rise#etymonline_v_15103",
-        "https://www.etymonline.com/word/a-#etymonline_v_3",
-        "https://www.oed.com/dictionary/arise_v?tab=factsheet#39323152",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED2240",
-        "https://bosworthtoller.com/2129"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/arise#etymonline_v_16995",
+      "https://www.etymonline.com/word/rise#etymonline_v_15103",
+      "https://www.etymonline.com/word/a-#etymonline_v_3",
+      "https://www.oed.com/dictionary/arise_v?tab=factsheet#39323152",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED2240",
+      "https://bosworthtoller.com/2129"
+    ]
   }
 ]

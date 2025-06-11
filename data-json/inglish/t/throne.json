@@ -1,104 +1,81 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "throne",
-      "etymology": [
-        {
-          "name": "θρόνος",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "thronus",
-          "origin": "Latin"
-        },
-        {
-          "name": "trone",
-          "origin": "Old French"
-        },
-        {
-          "name": "throne",
-          "origin": "Modern English"
-        },
-        {
-          "name": "þrone, þrôns",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/throne",
-        "https://www.oed.com/dictionary/throne_n?tab=factsheet#18673884",
-        "https://anglo-norman.net/entry/trone_1",
-        "https://latin-dictionary.net/definition/37172/thronus-throni",
-        "https://lsj.gr/wiki/%CE%B8%CF%81%CF%8C%CE%BD%CE%BF%CF%82"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "throne",
+    "etymology": [
+      {
+        "name": "θρόνος",
+        "origin": "Ancient Greek"
+      },
+      {
+        "name": "thronus",
+        "origin": "Latin"
+      },
+      {
+        "name": "trone",
+        "origin": "Old French"
+      },
+      {
+        "name": "throne",
+        "origin": "Modern English"
+      },
+      {
+        "name": "þrone, þrôns",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/throne",
+      "https://www.oed.com/dictionary/throne_n?tab=factsheet#18673884",
+      "https://anglo-norman.net/entry/trone_1",
+      "https://latin-dictionary.net/definition/37172/thronus-throni",
+      "https://lsj.gr/wiki/%CE%B8%CF%81%CF%8C%CE%BD%CE%BF%CF%82"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to enthrone",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to enthrone",
+    "etymology": [
+      {
+        "name": "ἐνθρονίζω",
+        "origin": "Ancient Greek"
       },
-      "etymology": [
-        "ἐνθρονίζω",
-        "inthronizare",
-        "entronizer",
-        "to enthrone",
-        "to enþrone, ta þrone -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to enthrone",
-      "etymology": [
-        {
-          "name": "ἐνθρονίζω",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "inthronizare",
-          "origin": "Latin"
-        },
-        {
-          "name": "entronizer",
-          "origin": "Old French"
-        },
-        {
-          "name": "to enthrone",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to enþrone, ta þrone -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "inthronizare",
+        "origin": "Latin"
+      },
+      {
+        "name": "entronizer",
+        "origin": "Old French"
+      },
+      {
+        "name": "to enthrone",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to enþrone, ta þrone -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to enþrone, ta þrones",
+          "pastTense": "to enþrone, ta þroned",
+          "progressive": "to enþrone, ta þroning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/enthrone",
-        "https://www.etymonline.com/word/throne#etymonline_v_13271",
-        "https://www.etymonline.com/word/en-#etymonline_v_8621",
-        "https://www.oed.com/dictionary/enthrone_v?tab=factsheet#5492333",
-        "https://anglo-norman.net/entry/entronizer",
-        "https://latin-dictionary.net/definition/24531/inthronizo-inthronizare-inthronizavi-inthronizatus",
-        "https://lsj.gr/wiki/%E1%BC%90%CE%BD%CE%B8%CF%81%CE%BF%CE%BD%CE%AF%CE%B6%CF%89"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/enthrone",
+      "https://www.etymonline.com/word/throne#etymonline_v_13271",
+      "https://www.etymonline.com/word/en-#etymonline_v_8621",
+      "https://www.oed.com/dictionary/enthrone_v?tab=factsheet#5492333",
+      "https://anglo-norman.net/entry/entronizer",
+      "https://latin-dictionary.net/definition/24531/inthronizo-inthronizare-inthronizavi-inthronizatus",
+      "https://lsj.gr/wiki/%E1%BC%90%CE%BD%CE%B8%CF%81%CE%BF%CE%BD%CE%AF%CE%B6%CF%89"
+    ]
   }
 ]

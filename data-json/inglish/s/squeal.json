@@ -1,82 +1,60 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to squeal",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to squeal",
+    "etymology": [
+      {
+        "name": "skvala",
+        "origin": "Old Norse"
       },
-      "etymology": [
-        "skvala",
-        "squelen",
-        "to squeal",
-        "ta squiele -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to squeal",
-      "etymology": [
-        {
-          "name": "skvala",
-          "origin": "Old Norse"
-        },
-        {
-          "name": "squelen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to squeal",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta squiele -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "squelen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to squeal",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta squiele -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta squieles",
+          "pastTense": "ta squieled",
+          "progressive": "ta squieling"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/squeal#etymonline_v_21938",
-        "https://www.merriam-webster.com/dictionary/squeal#dictionary-entry-1",
-        "https://www.oed.com/dictionary/squeal_v?tab=factsheet#21071409",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42496",
-        "https://old-norse.net/html/s.php#skvala"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/squeal#etymonline_v_21938",
+      "https://www.merriam-webster.com/dictionary/squeal#dictionary-entry-1",
+      "https://www.oed.com/dictionary/squeal_v?tab=factsheet#21071409",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42496",
+      "https://old-norse.net/html/s.php#skvala"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "squeal",
-      "etymology": [
-        {
-          "name": "squeal",
-          "origin": "Modern English"
-        },
-        {
-          "name": "squiele, squiels",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/squeal#dictionary-entry-2",
-        "https://www.oed.com/dictionary/squeal_n?tab=factsheet#21071157"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "squeal",
+    "etymology": [
+      {
+        "name": "squeal",
+        "origin": "Modern English"
+      },
+      {
+        "name": "squiele, squiels",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/squeal#dictionary-entry-2",
+      "https://www.oed.com/dictionary/squeal_n?tab=factsheet#21071157"
+    ]
   }
 ]

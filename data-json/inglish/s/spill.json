@@ -1,141 +1,99 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to spill",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to spill",
+    "etymology": [
+      {
+        "name": "spillan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "spillan",
-        "spillen",
-        "to spill",
-        "ta spille -s spilt -ing"
-      ]
-    },
-    "standard": {
-      "name": "to spill",
-      "etymology": [
-        {
-          "name": "spillan",
-          "origin": "Old English"
-        },
-        {
-          "name": "spillen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to spill",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta spille -s spilt -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "intransitive verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/spill#etymonline_v_24020",
-        "https://www.merriam-webster.com/dictionary/spill#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42211",
-        "https://bosworthtoller.com/28491"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to spill",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "spillen",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "spillan",
-        "spillen",
-        "to spill",
-        "ta spille -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to spill",
-      "etymology": [
-        {
-          "name": "spillan",
-          "origin": "Old English"
-        },
-        {
-          "name": "spillen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to spill",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta spille -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "transitive verb"
-          ]
+      {
+        "name": "to spill",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta spille -s spilt -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "intransitive verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta spilles"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/spill#etymonline_v_24020",
-        "https://www.merriam-webster.com/dictionary/spill#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42211",
-        "https://bosworthtoller.com/28491"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/spill#etymonline_v_24020",
+      "https://www.merriam-webster.com/dictionary/spill#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42211",
+      "https://bosworthtoller.com/28491"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "spill  -s (n)",
-      "etymology": [
-        {
-          "name": "spill  -s (n)",
-          "origin": "Modern English"
+    "infinitive": "to spill",
+    "etymology": [
+      {
+        "name": "spillan",
+        "origin": "Old English"
+      },
+      {
+        "name": "spillen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to spill",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta spille -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "transitive verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta spilles",
+          "pastTense": "ta spilled",
+          "progressive": "ta spilling"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/spill#etymonline_v_44331",
-        "https://www.etymonline.com/word/spill#etymonline_v_24020",
-        "https://www.merriam-webster.com/dictionary/spill#dictionary-entry-2"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/spill#etymonline_v_24020",
+      "https://www.merriam-webster.com/dictionary/spill#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42211",
+      "https://bosworthtoller.com/28491"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "spillage  -s (n)",
-      "etymology": [
-        {
-          "name": "spillage  -s (n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/spillage#etymonline_v_34987",
-        "https://www.etymonline.com/word/spill#etymonline_v_24020",
-        "https://www.etymonline.com/word/-age#etymonline_v_8027",
-        "https://www.merriam-webster.com/dictionary/spillage"
-      ]
-    }
+    "name": "spill  -s (n)",
+    "etymology": [
+      {
+        "name": "spill  -s (n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/spill#etymonline_v_44331",
+      "https://www.etymonline.com/word/spill#etymonline_v_24020",
+      "https://www.merriam-webster.com/dictionary/spill#dictionary-entry-2"
+    ]
+  },
+  {
+    "name": "spillage  -s (n)",
+    "etymology": [
+      {
+        "name": "spillage  -s (n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/spillage#etymonline_v_34987",
+      "https://www.etymonline.com/word/spill#etymonline_v_24020",
+      "https://www.etymonline.com/word/-age#etymonline_v_8027",
+      "https://www.merriam-webster.com/dictionary/spillage"
+    ]
   }
 ]

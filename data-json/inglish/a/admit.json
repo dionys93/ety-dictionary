@@ -1,168 +1,121 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "admit  -s (m n)",
-      "etymology": [
-        {
-          "name": "admit  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/admit#dictionary-entry-2",
-        "https://www.merriam-webster.com/dictionary/admit#word-history"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to admit",
-      "conjugations": {
-        "thirdPerson": "d",
-        "pastTense": "ing"
-      },
-      "etymology": [
-        "admittere",
-        "admitter, admetter, admettre",
-        "admitten",
-        "to admit",
-        "to admitte admits -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to admit",
-      "etymology": [
-        {
-          "name": "admittere",
-          "origin": "Latin"
-        },
-        {
-          "name": "admitter, admetter, admettre",
-          "origin": "Old French"
-        },
-        {
-          "name": "admitten",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to admit",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to admitte admits -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/admit#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/admit#word-history",
-        "https://www.etymonline.com/word/admit#etymonline_v_5131",
-        "https://www.etymonline.com/word/admitted#etymonline_v_38258",
-        "https://www.oed.com/dictionary/admit_v?tab=factsheet#11012433",
-        "https://anglo-norman.net/entry/admitter",
-        "https://latin-dictionary.net/definition/1178/admitto-admittere-admisi-admissus"
-      ],
-      "conjugations": {
-        "thirdPerson": "d",
-        "pastTense": "ing"
+    "name": "admit  -s (m n)",
+    "etymology": [
+      {
+        "name": "admit  -s (m n)",
+        "origin": "Modern English"
       }
-    }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/admit#dictionary-entry-2",
+      "https://www.merriam-webster.com/dictionary/admit#word-history"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "admittance",
-      "etymology": [
-        {
-          "name": "admittance",
-          "origin": "Modern English"
-        },
-        {
-          "name": "admittence -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/admittance#etymonline_v_26022",
-        "https://www.merriam-webster.com/dictionary/admittance",
-        "https://www.oed.com/dictionary/admittance_n?tab=factsheet#10842432"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "admission  -s (f n)",
-      "etymology": [
-        {
-          "name": "admittere, admissionem",
-          "origin": "Latin"
-        },
-        {
-          "name": "admission  -s (f n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/admission#etymonline_v_5130",
-        "https://www.oed.com/dictionary/admission_n?tab=factsheet#10958372",
-        "https://latin-dictionary.net/definition/1168/admissio-admissionis",
-        "https://latin-dictionary.net/definition/1178/admitto-admittere-admisi-admissus"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to re-admit",
-      "conjugations": {
-        "thirdPerson": "d",
-        "pastTense": "ing"
+    "infinitive": "to admit",
+    "etymology": [
+      {
+        "name": "admittere",
+        "origin": "Latin"
       },
-      "etymology": [
-        "to re-admit",
-        "ta riadmitte riadmits -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to re-admit",
-      "etymology": [
-        {
-          "name": "to re-admit",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta riadmitte riadmits -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "admitter, admetter, admettre",
+        "origin": "Old French"
+      },
+      {
+        "name": "admitten",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to admit",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to admitte admits -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to admitte admitsd",
+          "pastTense": "to admitte admitsing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/readmit#etymonline_v_7322"
-      ],
-      "conjugations": {
-        "thirdPerson": "d",
-        "pastTense": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/admit#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/admit#word-history",
+      "https://www.etymonline.com/word/admit#etymonline_v_5131",
+      "https://www.etymonline.com/word/admitted#etymonline_v_38258",
+      "https://www.oed.com/dictionary/admit_v?tab=factsheet#11012433",
+      "https://anglo-norman.net/entry/admitter",
+      "https://latin-dictionary.net/definition/1178/admitto-admittere-admisi-admissus"
+    ]
+  },
+  {
+    "name": "admittance",
+    "etymology": [
+      {
+        "name": "admittance",
+        "origin": "Modern English"
+      },
+      {
+        "name": "admittence -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/admittance#etymonline_v_26022",
+      "https://www.merriam-webster.com/dictionary/admittance",
+      "https://www.oed.com/dictionary/admittance_n?tab=factsheet#10842432"
+    ]
+  },
+  {
+    "name": "admission  -s (f n)",
+    "etymology": [
+      {
+        "name": "admittere, admissionem",
+        "origin": "Latin"
+      },
+      {
+        "name": "admission  -s (f n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/admission#etymonline_v_5130",
+      "https://www.oed.com/dictionary/admission_n?tab=factsheet#10958372",
+      "https://latin-dictionary.net/definition/1168/admissio-admissionis",
+      "https://latin-dictionary.net/definition/1178/admitto-admittere-admisi-admissus"
+    ]
+  },
+  {
+    "infinitive": "to re-admit",
+    "etymology": [
+      {
+        "name": "to re-admit",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta riadmitte riadmits -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta riadmitte riadmitsd",
+          "pastTense": "ta riadmitte riadmitsing"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/readmit#etymonline_v_7322"
+    ]
   }
 ]

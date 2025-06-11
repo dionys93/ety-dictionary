@@ -1,85 +1,65 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to swing",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to swing",
+    "etymology": [
+      {
+        "name": "swingan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "swingan",
-        "swingen",
-        "to swing",
-        "ta suingue -s suâng suong -ing"
-      ]
-    },
-    "standard": {
-      "name": "to swing",
-      "etymology": [
-        {
-          "name": "swingan",
-          "origin": "Old English"
-        },
-        {
-          "name": "swingen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to swing",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta suingue -s suâng suong -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "swingen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to swing",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta suingue -s suâng suong -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta suingues"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/swing#etymonline_v_22493",
-        "https://www.merriam-webster.com/dictionary/swing#dictionary-entry-1",
-        "https://www.oed.com/dictionary/swing_v1?tab=pronunciation#19624868",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44253",
-        "https://bosworthtoller.com/29827"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/swing#etymonline_v_22493",
+      "https://www.merriam-webster.com/dictionary/swing#dictionary-entry-1",
+      "https://www.oed.com/dictionary/swing_v1?tab=pronunciation#19624868",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44253",
+      "https://bosworthtoller.com/29827"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "swing",
-      "etymology": [
-        {
-          "name": "swinge",
-          "origin": "Old English"
-        },
-        {
-          "name": "swing",
-          "origin": "Modern English"
-        },
-        {
-          "name": "suingue, suings",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/swing#etymonline_v_46409",
-        "https://www.etymonline.com/word/swing#etymonline_v_22493",
-        "https://www.merriam-webster.com/dictionary/swing#dictionary-entry-2",
-        "https://www.oed.com/dictionary/swing_n2?tab=factsheet#19623046",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44248",
-        "https://bosworthtoller.com/29828"
-      ],
-      "number": "plural"
-    }
+    "name": "swing",
+    "etymology": [
+      {
+        "name": "swinge",
+        "origin": "Old English"
+      },
+      {
+        "name": "swing",
+        "origin": "Modern English"
+      },
+      {
+        "name": "suingue, suings",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/swing#etymonline_v_46409",
+      "https://www.etymonline.com/word/swing#etymonline_v_22493",
+      "https://www.merriam-webster.com/dictionary/swing#dictionary-entry-2",
+      "https://www.oed.com/dictionary/swing_n2?tab=factsheet#19623046",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44248",
+      "https://bosworthtoller.com/29828"
+    ]
   }
 ]

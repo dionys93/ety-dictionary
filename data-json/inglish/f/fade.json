@@ -1,88 +1,65 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to fade",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to fade",
+    "etymology": [
+      {
+        "name": "fatuus + vapidus",
+        "origin": "Latin"
       },
-      "etymology": [
-        "fatuus + vapidus",
-        "fatidus",
-        "fade, fader",
-        "to fade",
-        "ta fâde -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to fade",
-      "etymology": [
-        {
-          "name": "fatuus + vapidus",
-          "origin": "Latin"
-        },
-        {
-          "name": "fatidus",
-          "origin": "Vulgar Latin"
-        },
-        {
-          "name": "fade, fader",
-          "origin": "Old French"
-        },
-        {
-          "name": "to fade",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta fâde -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "fatidus",
+        "origin": "Vulgar Latin"
+      },
+      {
+        "name": "fade, fader",
+        "origin": "Old French"
+      },
+      {
+        "name": "to fade",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta fâde -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta fâdes",
+          "pastTense": "ta fâded",
+          "progressive": "ta fâding"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fade#etymonline_v_1073",
-        "https://www.merriam-webster.com/dictionary/fade#dictionary-entry-1",
-        "https://anglo-norman.net/entry/fade",
-        "https://latin-dictionary.net/definition/38357/vapidus-vapida-vapidum",
-        "https://latin-dictionary.net/definition/20367/fatuus-fatua-fatuum"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fade#etymonline_v_1073",
+      "https://www.merriam-webster.com/dictionary/fade#dictionary-entry-1",
+      "https://anglo-norman.net/entry/fade",
+      "https://latin-dictionary.net/definition/38357/vapidus-vapida-vapidum",
+      "https://latin-dictionary.net/definition/20367/fatuus-fatua-fatuum"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "fade",
-      "etymology": [
-        {
-          "name": "fade",
-          "origin": "Old French"
-        },
-        {
-          "name": "fâde, fâds",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fade#etymonline_v_50477",
-        "https://www.merriam-webster.com/dictionary/fade#dictionary-entry-2",
-        "https://www.merriam-webster.com/dictionary/fade#dictionary-entry-3",
-        "https://anglo-norman.net/entry/fade"
-      ]
-    }
+    "name": "fade",
+    "etymology": [
+      {
+        "name": "fade",
+        "origin": "Old French"
+      },
+      {
+        "name": "fâde, fâds",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "masculine noun"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fade#etymonline_v_50477",
+      "https://www.merriam-webster.com/dictionary/fade#dictionary-entry-2",
+      "https://www.merriam-webster.com/dictionary/fade#dictionary-entry-3",
+      "https://anglo-norman.net/entry/fade"
+    ]
   }
 ]

@@ -1,162 +1,121 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "mask",
-      "etymology": [
-        {
-          "name": "masca",
-          "origin": "Medieval Latin"
-        },
-        {
-          "name": "maschera",
-          "origin": "Italian"
-        },
-        {
-          "name": "masque",
-          "origin": "French"
-        },
-        {
-          "name": "mask",
-          "origin": "Modern English"
-        },
-        {
-          "name": "masc -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/mask#etymonline_v_9675",
-        "https://www.merriam-webster.com/dictionary/mask#dictionary-entry-1",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/masque/49611",
-        "https://www.collinsdictionary.com/us/dictionary/italian-english/maschera",
-        "https://www.treccani.it/vocabolario/maschera/?search=m%C3%A0schera%2F"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to mask",
-      "conjugations": {
-        "thirdPerson": "cs",
-        "pastTense": "ed",
-        "progressive": "ing"
+    "name": "mask",
+    "etymology": [
+      {
+        "name": "masca",
+        "origin": "Medieval Latin"
       },
-      "etymology": [
-        "masquer",
-        "to mask",
-        "ta masq -cs -ed -ing"
-      ]
-    },
-    "standard": {
-      "name": "to mask",
-      "etymology": [
-        {
-          "name": "masquer",
-          "origin": "French"
-        },
-        {
-          "name": "to mask",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta masq -cs -ed -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/mask#etymonline_v_43727",
-        "https://www.merriam-webster.com/dictionary/mask#dictionary-entry-2",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/masquer/49612"
-      ],
-      "conjugations": {
-        "thirdPerson": "cs",
-        "pastTense": "ed",
-        "progressive": "ing"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "masquerade",
-      "etymology": [
-        {
-          "name": "mascarade",
-          "origin": "French"
-        },
-        {
-          "name": "masquerade",
-          "origin": "Modern English"
-        },
-        {
-          "name": "mascarâde -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/masquerade#etymonline_v_9682",
-        "https://www.merriam-webster.com/dictionary/masquerade#dictionary-entry-1",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/mascarade/49590"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to masquerade",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "maschera",
+        "origin": "Italian"
       },
-      "etymology": [
-        "to masquerade",
-        "ta mascarâde -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to masquerade",
-      "etymology": [
-        {
-          "name": "to masquerade",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta mascarâde -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/masquerade#etymonline_v_43729",
-        "https://www.merriam-webster.com/dictionary/masquerade#dictionary-entry-2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "masque",
+        "origin": "French"
+      },
+      {
+        "name": "mask",
+        "origin": "Modern English"
+      },
+      {
+        "name": "masc -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/mask#etymonline_v_9675",
+      "https://www.merriam-webster.com/dictionary/mask#dictionary-entry-1",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/masque/49611",
+      "https://www.collinsdictionary.com/us/dictionary/italian-english/maschera",
+      "https://www.treccani.it/vocabolario/maschera/?search=m%C3%A0schera%2F"
+    ]
+  },
+  {
+    "infinitive": "to mask",
+    "etymology": [
+      {
+        "name": "masquer",
+        "origin": "French"
+      },
+      {
+        "name": "to mask",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta masq -cs -ed -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta masqcs",
+          "pastTense": "ta masqed",
+          "progressive": "ta masqing"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/mask#etymonline_v_43727",
+      "https://www.merriam-webster.com/dictionary/mask#dictionary-entry-2",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/masquer/49612"
+    ]
+  },
+  {
+    "name": "masquerade",
+    "etymology": [
+      {
+        "name": "mascarade",
+        "origin": "French"
+      },
+      {
+        "name": "masquerade",
+        "origin": "Modern English"
+      },
+      {
+        "name": "mascarâde -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/masquerade#etymonline_v_9682",
+      "https://www.merriam-webster.com/dictionary/masquerade#dictionary-entry-1",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/mascarade/49590"
+    ]
+  },
+  {
+    "infinitive": "to masquerade",
+    "etymology": [
+      {
+        "name": "to masquerade",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta mascarâde -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta mascarâdes",
+          "pastTense": "ta mascarâded",
+          "progressive": "ta mascarâding"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/masquerade#etymonline_v_43729",
+      "https://www.merriam-webster.com/dictionary/masquerade#dictionary-entry-2"
+    ]
   }
 ]

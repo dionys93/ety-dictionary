@@ -1,26 +1,20 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "hot  -ter -test (adj)",
-      "etymology": [
-        {
-          "name": "hat",
-          "origin": "Old English"
-        },
-        {
-          "name": "hot  -ter -test (adj)",
-          "origin": "Middle English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/hot#etymonline_v_14491",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED21303",
-        "https://bosworthtoller.com/18210"
-      ]
-    }
+    "name": "hot  -ter -test (adj)",
+    "etymology": [
+      {
+        "name": "hat",
+        "origin": "Old English"
+      },
+      {
+        "name": "hot  -ter -test (adj)",
+        "origin": "Middle English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/hot#etymonline_v_14491",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED21303",
+      "https://bosworthtoller.com/18210"
+    ]
   }
 ]

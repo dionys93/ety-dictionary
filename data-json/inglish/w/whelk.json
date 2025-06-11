@@ -1,35 +1,29 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "whelk",
-      "etymology": [
-        {
-          "name": "weoloc, wioloc",
-          "origin": "Old English"
-        },
-        {
-          "name": "whelk",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ɯelc -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/whelk",
-        "https://www.oed.com/dictionary/whelk_n1?tab=factsheet#14709642",
-        "https://bosworthtoller.com/35127"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "whelk",
+    "etymology": [
+      {
+        "name": "weoloc, wioloc",
+        "origin": "Old English"
+      },
+      {
+        "name": "whelk",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ɯelc -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/whelk",
+      "https://www.oed.com/dictionary/whelk_n1?tab=factsheet#14709642",
+      "https://bosworthtoller.com/35127"
+    ]
   }
 ]

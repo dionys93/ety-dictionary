@@ -1,85 +1,64 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to chew",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
+    "infinitive": "to chew",
+    "etymology": [
+      {
+        "name": "ceowan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "ceowan",
-        "cheuen",
-        "to chew",
-        "ta cheue -s -d cheɯing"
-      ]
-    },
-    "standard": {
-      "name": "to chew",
-      "etymology": [
-        {
-          "name": "ceowan",
-          "origin": "Old English"
-        },
-        {
-          "name": "cheuen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to chew",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta cheue -s -d cheɯing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "cheuen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to chew",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta cheue -s -d cheɯing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta cheues",
+          "pastTense": "ta cheued"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/chew#etymonline_v_11240",
-        "https://www.merriam-webster.com/dictionary/chew#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7513",
-        "https://bosworthtoller.com/6066"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/chew#etymonline_v_11240",
+      "https://www.merriam-webster.com/dictionary/chew#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7513",
+      "https://bosworthtoller.com/6066"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "chew",
-      "etymology": [
-        {
-          "name": "cheu",
-          "origin": "Middle English"
-        },
-        {
-          "name": "chew",
-          "origin": "Modern English"
-        },
-        {
-          "name": "cheɯ -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/chew#etymonline_v_47101",
-        "https://www.etymonline.com/word/chew#etymonline_v_11240",
-        "https://www.merriam-webster.com/dictionary/chew#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7511"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "chew",
+    "etymology": [
+      {
+        "name": "cheu",
+        "origin": "Middle English"
+      },
+      {
+        "name": "chew",
+        "origin": "Modern English"
+      },
+      {
+        "name": "cheɯ -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/chew#etymonline_v_47101",
+      "https://www.etymonline.com/word/chew#etymonline_v_11240",
+      "https://www.merriam-webster.com/dictionary/chew#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7511"
+    ]
   }
 ]

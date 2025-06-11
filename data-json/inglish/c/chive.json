@@ -1,37 +1,31 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "chive",
-      "etymology": [
-        {
-          "name": "cepa",
-          "origin": "Latin"
-        },
-        {
-          "name": "chive",
-          "origin": "Old French"
-        },
-        {
-          "name": "chîve -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/chive#etymonline_v_11293",
-        "https://www.merriam-webster.com/dictionary/chive",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7827",
-        "https://www.anglo-norman.net/entry/chive",
-        "https://latin-dictionary.net/definition/8996/cepa-cepae"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "chive",
+    "etymology": [
+      {
+        "name": "cepa",
+        "origin": "Latin"
+      },
+      {
+        "name": "chive",
+        "origin": "Old French"
+      },
+      {
+        "name": "chîve -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/chive#etymonline_v_11293",
+      "https://www.merriam-webster.com/dictionary/chive",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7827",
+      "https://www.anglo-norman.net/entry/chive",
+      "https://latin-dictionary.net/definition/8996/cepa-cepae"
+    ]
   }
 ]

@@ -1,80 +1,60 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "chamber",
-      "etymology": [
-        {
-          "name": "camera",
-          "origin": "Latin"
-        },
-        {
-          "name": "chambre",
-          "origin": "Old French"
-        },
-        {
-          "name": "chamber",
-          "origin": "Modern English"
-        },
-        {
-          "name": "châmbre, châmbers",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/chamber#etymonline_v_8399",
-        "https://www.etymonline.com/word/camera#etymonline_v_635",
-        "https://www.oed.com/dictionary/chamber_n?tab=pronunciation#9782532",
-        "https://anglo-norman.net/entry/chamber",
-        "https://latin-dictionary.net/definition/7698/camera-camerae"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "chamber",
+    "etymology": [
+      {
+        "name": "camera",
+        "origin": "Latin"
+      },
+      {
+        "name": "chambre",
+        "origin": "Old French"
+      },
+      {
+        "name": "chamber",
+        "origin": "Modern English"
+      },
+      {
+        "name": "châmbre, châmbers",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/chamber#etymonline_v_8399",
+      "https://www.etymonline.com/word/camera#etymonline_v_635",
+      "https://www.oed.com/dictionary/chamber_n?tab=pronunciation#9782532",
+      "https://anglo-norman.net/entry/chamber",
+      "https://latin-dictionary.net/definition/7698/camera-camerae"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to chamber",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ering"
+    "infinitive": "to chamber",
+    "etymology": [
+      {
+        "name": "to chamber",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to chamber",
-        "ta châmbre -s -d -ering"
-      ]
-    },
-    "standard": {
-      "name": "to chamber",
-      "etymology": [
-        {
-          "name": "to chamber",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta châmbre -s -d -ering",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta châmbre -s -d -ering",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta châmbres",
+          "pastTense": "ta châmbred",
+          "progressive": "ta châmbreering"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/chamber#etymonline_v_47070",
-        "https://www.oed.com/dictionary/chamber_v?tab=factsheet#9784790"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ering"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/chamber#etymonline_v_47070",
+      "https://www.oed.com/dictionary/chamber_v?tab=factsheet#9784790"
+    ]
   }
 ]

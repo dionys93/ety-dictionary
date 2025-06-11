@@ -1,308 +1,237 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to contract",
-      "conjugations": {
-        "thirdPerson": "d",
-        "pastTense": "ing"
+    "infinitive": "to contract",
+    "etymology": [
+      {
+        "name": "com + trahere, contrahere, contractus",
+        "origin": "Latin"
       },
-      "etymology": [
-        "com + trahere, contrahere, contractus",
-        "contracter",
-        "contracten",
-        "to contract",
-        "ta contracte contracs -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to contract",
-      "etymology": [
-        {
-          "name": "com + trahere, contrahere, contractus",
-          "origin": "Latin"
-        },
-        {
-          "name": "contracter",
-          "origin": "Old French"
-        },
-        {
-          "name": "contracten",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to contract",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta contracte contracs -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/contract#etymonline_v_18288",
-        "https://www.oed.com/dictionary/contract_v?tab=meaning_and_use#8462936",
-        "https://www.oed.com/dictionary/contract_v?tab=pronunciation#8462913",
-        "https://www.merriam-webster.com/dictionary/contract#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9552",
-        "https://www.larousse.fr/dictionnaires/francais/contracter/18645",
-        "https://latin-dictionary.net/definition/13876/contraho-contrahere-contraxi-contractus"
-      ],
-      "conjugations": {
-        "thirdPerson": "d",
-        "pastTense": "ing"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to contract",
-      "conjugations": {
-        "thirdPerson": "d",
-        "pastTense": "ing"
+      {
+        "name": "contracter",
+        "origin": "Old French"
       },
-      "etymology": [
-        "com + trahere, contrahere, contractus",
-        "contracter",
-        "contracten",
-        "to contract",
-        "ta cóntracte cóntracs -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to contract",
-      "etymology": [
-        {
-          "name": "com + trahere, contrahere, contractus",
-          "origin": "Latin"
-        },
-        {
-          "name": "contracter",
-          "origin": "Old French"
-        },
-        {
-          "name": "contracten",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to contract",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta cóntracte cóntracs -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "contracten",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to contract",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta contracte contracs -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta contracte contracsd",
+          "pastTense": "ta contracte contracsing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/contract#etymonline_v_18288",
-        "https://www.oed.com/dictionary/contract_v?tab=meaning_and_use#8463466",
-        "https://www.oed.com/dictionary/contract_v?tab=pronunciation#8462913",
-        "https://www.merriam-webster.com/dictionary/contract#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9552",
-        "https://www.larousse.fr/dictionnaires/francais/contracter/18645",
-        "https://latin-dictionary.net/definition/13876/contraho-contrahere-contraxi-contractus"
-      ],
-      "conjugations": {
-        "thirdPerson": "d",
-        "pastTense": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/contract#etymonline_v_18288",
+      "https://www.oed.com/dictionary/contract_v?tab=meaning_and_use#8462936",
+      "https://www.oed.com/dictionary/contract_v?tab=pronunciation#8462913",
+      "https://www.merriam-webster.com/dictionary/contract#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9552",
+      "https://www.larousse.fr/dictionnaires/francais/contracter/18645",
+      "https://latin-dictionary.net/definition/13876/contraho-contrahere-contraxi-contractus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "contract",
-      "etymology": [
-        {
-          "name": "com + trahere, contrahere, contractus",
-          "origin": "Latin"
-        },
-        {
-          "name": "contract",
-          "origin": "Old French"
-        },
-        {
-          "name": "cóntract, cóntracs",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "noun"
-          ]
+    "infinitive": "to contract",
+    "etymology": [
+      {
+        "name": "com + trahere, contrahere, contractus",
+        "origin": "Latin"
+      },
+      {
+        "name": "contracter",
+        "origin": "Old French"
+      },
+      {
+        "name": "contracten",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to contract",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta cóntracte cóntracs -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta cóntracte cóntracsd",
+          "pastTense": "ta cóntracte cóntracsing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/contract#etymonline_v_36303",
-        "https://www.merriam-webster.com/dictionary/contract#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/contract#dictionary-entry-3",
-        "https://www.oed.com/dictionary/contract_n1?tab=factsheet#8461687",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9550",
-        "https://latin-dictionary.net/definition/13876/contraho-contrahere-contraxi-contractus"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/contract#etymonline_v_18288",
+      "https://www.oed.com/dictionary/contract_v?tab=meaning_and_use#8463466",
+      "https://www.oed.com/dictionary/contract_v?tab=pronunciation#8462913",
+      "https://www.merriam-webster.com/dictionary/contract#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9552",
+      "https://www.larousse.fr/dictionnaires/francais/contracter/18645",
+      "https://latin-dictionary.net/definition/13876/contraho-contrahere-contraxi-contractus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "contrahere, contractus, contractor",
-      "etymology": [
-        {
-          "name": "contrahere, contractus, contractor",
-          "origin": "Latin"
-        },
-        {
-          "name": "cóntractor -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/contractor#etymonline_v_28781",
-        "https://www.merriam-webster.com/dictionary/contractor",
-        "https://www.oed.com/dictionary/contractor_n?tab=factsheet#8466376",
-        "https://latin-dictionary.net/definition/13858/contractor-contractoris"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "contract",
+    "etymology": [
+      {
+        "name": "com + trahere, contrahere, contractus",
+        "origin": "Latin"
+      },
+      {
+        "name": "contract",
+        "origin": "Old French"
+      },
+      {
+        "name": "cóntract, cóntracs",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "noun"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/contract#etymonline_v_36303",
+      "https://www.merriam-webster.com/dictionary/contract#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/contract#dictionary-entry-3",
+      "https://www.oed.com/dictionary/contract_n1?tab=factsheet#8461687",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9550",
+      "https://latin-dictionary.net/definition/13876/contraho-contrahere-contraxi-contractus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "contrahere, contractus, contractor",
-      "etymology": [
-        {
-          "name": "contrahere, contractus, contractor",
-          "origin": "Latin"
-        },
-        {
-          "name": "contracteur -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://latin-dictionary.net/definition/13858/contractor-contractoris"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "contrahere, contractus, contractor",
+    "etymology": [
+      {
+        "name": "contrahere, contractus, contractor",
+        "origin": "Latin"
+      },
+      {
+        "name": "cóntractor -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/contractor#etymonline_v_28781",
+      "https://www.merriam-webster.com/dictionary/contractor",
+      "https://www.oed.com/dictionary/contractor_n?tab=factsheet#8466376",
+      "https://latin-dictionary.net/definition/13858/contractor-contractoris"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "contraction",
-      "etymology": [
-        {
-          "name": "contrahere, contractus, contractio",
-          "origin": "Latin"
-        },
-        {
-          "name": "contraction",
-          "origin": "Old French"
-        },
-        {
-          "name": "contraccion -s -al -airy",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/contraction#etymonline_v_28782",
-        "https://www.merriam-webster.com/dictionary/contraction",
-        "https://www.merriam-webster.com/dictionary/contractional",
-        "https://www.merriam-webster.com/dictionary/contractionary",
-        "https://www.oed.com/dictionary/contraction_n?tab=factsheet#8465548",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9549",
-        "https://www.larousse.fr/dictionnaires/francais/contraction/18650",
-        "https://latin-dictionary.net/definition/13854/contractio-contractionis",
-        "https://latin-dictionary.net/definition/13876/contraho-contrahere-contraxi-contractus"
-      ],
-      "gender": "feminine",
-      "number": "singular"
-    }
+    "name": "contrahere, contractus, contractor",
+    "etymology": [
+      {
+        "name": "contrahere, contractus, contractor",
+        "origin": "Latin"
+      },
+      {
+        "name": "contracteur -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://latin-dictionary.net/definition/13858/contractor-contractoris"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "contractual",
-      "etymology": [
-        {
-          "name": "contractus",
-          "origin": "Latin"
-        },
-        {
-          "name": "contractual",
-          "origin": "Modern English"
-        },
-        {
-          "name": "contracçual",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/contractual#etymonline_v_28780",
-        "https://www.merriam-webster.com/dictionary/contractual",
-        "https://www.oed.com/dictionary/contractual_adj?tab=factsheet#8466569",
-        "https://latin-dictionary.net/definition/13876/contraho-contrahere-contraxi-contractus"
-      ]
-    }
+    "name": "contraction",
+    "etymology": [
+      {
+        "name": "contrahere, contractus, contractio",
+        "origin": "Latin"
+      },
+      {
+        "name": "contraction",
+        "origin": "Old French"
+      },
+      {
+        "name": "contraccion -s -al -airy",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/contraction#etymonline_v_28782",
+      "https://www.merriam-webster.com/dictionary/contraction",
+      "https://www.merriam-webster.com/dictionary/contractional",
+      "https://www.merriam-webster.com/dictionary/contractionary",
+      "https://www.oed.com/dictionary/contraction_n?tab=factsheet#8465548",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9549",
+      "https://www.larousse.fr/dictionnaires/francais/contraction/18650",
+      "https://latin-dictionary.net/definition/13854/contractio-contractionis",
+      "https://latin-dictionary.net/definition/13876/contraho-contrahere-contraxi-contractus"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to contractually",
-      "etymology": [
-        "contractually",
-        "contraccially"
-      ]
-    },
-    "standard": {
-      "name": "to contractually",
-      "etymology": [
-        {
-          "name": "contractually",
-          "origin": "Modern English"
-        },
-        {
-          "name": "contraccially",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adverb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/contractually",
-        "https://www.oed.com/dictionary/contractually_adv?tab=factsheet#8466643"
-      ]
-    }
+    "name": "contractual",
+    "etymology": [
+      {
+        "name": "contractus",
+        "origin": "Latin"
+      },
+      {
+        "name": "contractual",
+        "origin": "Modern English"
+      },
+      {
+        "name": "contracçual",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/contractual#etymonline_v_28780",
+      "https://www.merriam-webster.com/dictionary/contractual",
+      "https://www.oed.com/dictionary/contractual_adj?tab=factsheet#8466569",
+      "https://latin-dictionary.net/definition/13876/contraho-contrahere-contraxi-contractus"
+    ]
+  },
+  {
+    "infinitive": "contractually",
+    "etymology": [
+      {
+        "name": "contractually",
+        "origin": "Modern English"
+      },
+      {
+        "name": "contraccially",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adverb"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/contractually",
+      "https://www.oed.com/dictionary/contractually_adv?tab=factsheet#8466643"
+    ]
   }
 ]

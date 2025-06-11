@@ -1,81 +1,61 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to stick",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to stick",
+    "etymology": [
+      {
+        "name": "stician",
+        "origin": "Old English"
       },
-      "etymology": [
-        "stician",
-        "stiken",
-        "to stick",
-        "ta sticke -s stuck -ing"
-      ]
-    },
-    "standard": {
-      "name": "to stick",
-      "etymology": [
-        {
-          "name": "stician",
-          "origin": "Old English"
-        },
-        {
-          "name": "stiken",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to stick",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta sticke -s stuck -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "stiken",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to stick",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta sticke -s stuck -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta stickes"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/stick#etymonline_v_22077",
-        "https://www.merriam-webster.com/dictionary/stick#dictionary-entry-3",
-        "https://www.oed.com/dictionary/stick_v1?tab=pronunciation#20663296",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42939",
-        "https://bosworthtoller.com/28946"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/stick#etymonline_v_22077",
+      "https://www.merriam-webster.com/dictionary/stick#dictionary-entry-3",
+      "https://www.oed.com/dictionary/stick_v1?tab=pronunciation#20663296",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42939",
+      "https://bosworthtoller.com/28946"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "stick  -x (m n)",
-      "etymology": [
-        {
-          "name": "sticca",
-          "origin": "Old English"
-        },
-        {
-          "name": "stikke",
-          "origin": "Middle English"
-        },
-        {
-          "name": "stick  -x (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/stick#etymonline_v_22076",
-        "https://www.merriam-webster.com/dictionary/stick#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/stick#dictionary-entry-4",
-        "https://www.oed.com/dictionary/stick_n1?tab=factsheet#20657492",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42942",
-        "https://bosworthtoller.com/28938"
-      ]
-    }
+    "name": "stick  -x (m n)",
+    "etymology": [
+      {
+        "name": "sticca",
+        "origin": "Old English"
+      },
+      {
+        "name": "stikke",
+        "origin": "Middle English"
+      },
+      {
+        "name": "stick  -x (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/stick#etymonline_v_22076",
+      "https://www.merriam-webster.com/dictionary/stick#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/stick#dictionary-entry-4",
+      "https://www.oed.com/dictionary/stick_n1?tab=factsheet#20657492",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42942",
+      "https://bosworthtoller.com/28938"
+    ]
   }
 ]

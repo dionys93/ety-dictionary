@@ -1,88 +1,66 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to quit",
-      "conjugations": {
-        "thirdPerson": "ing"
+    "infinitive": "to quit",
+    "etymology": [
+      {
+        "name": "quietus",
+        "origin": "Latin"
       },
-      "etymology": [
-        "quietus",
-        "quitus, quittus",
-        "quiter",
-        "quiten",
-        "to quit",
-        "to quitte quits quit -ing"
-      ]
-    },
-    "standard": {
-      "name": "to quit",
-      "etymology": [
-        {
-          "name": "quietus",
-          "origin": "Latin"
-        },
-        {
-          "name": "quitus, quittus",
-          "origin": "Medieval Latin"
-        },
-        {
-          "name": "quiter",
-          "origin": "Old French"
-        },
-        {
-          "name": "quiten",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to quit",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to quitte quits quit -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "quitus, quittus",
+        "origin": "Medieval Latin"
+      },
+      {
+        "name": "quiter",
+        "origin": "Old French"
+      },
+      {
+        "name": "quiten",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to quit",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to quitte quits quit -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to quitte quits quiting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/quit#etymonline_v_44083",
-        "https://www.merriam-webster.com/dictionary/quit#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35686",
-        "https://anglo-norman.net/entry/quiter",
-        "https://latin-dictionary.net/definition/32647/quiesco-quiescere-quievi-quietus"
-      ],
-      "conjugations": {
-        "thirdPerson": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/quit#etymonline_v_44083",
+      "https://www.merriam-webster.com/dictionary/quit#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35686",
+      "https://anglo-norman.net/entry/quiter",
+      "https://latin-dictionary.net/definition/32647/quiesco-quiescere-quievi-quietus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "quitter",
-      "etymology": [
-        {
-          "name": "quitter",
-          "origin": "Modern English"
-        },
-        {
-          "name": "quitor -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/quitter#etymonline_v_44084",
-        "https://www.etymonline.com/word/quit#etymonline_v_44083"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "quitter",
+    "etymology": [
+      {
+        "name": "quitter",
+        "origin": "Modern English"
+      },
+      {
+        "name": "quitor -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/quitter#etymonline_v_44084",
+      "https://www.etymonline.com/word/quit#etymonline_v_44083"
+    ]
   }
 ]

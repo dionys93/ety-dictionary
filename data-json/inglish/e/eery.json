@@ -1,37 +1,31 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "eery, eerie",
-      "etymology": [
-        {
-          "name": "earg",
-          "origin": "Old English"
-        },
-        {
-          "name": "eery, eerie",
-          "origin": "Modern English"
-        },
-        {
-          "name": "íry, írily",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "adverb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/eerie",
-        "https://www.etymonline.com/word/eerily",
-        "https://www.oed.com/dictionary/eerie_adj?tab=factsheet#5749525",
-        "https://www.oed.com/dictionary/eerily_adv?tab=factsheet#5749740100",
-        "https://bosworthtoller.com/43420",
-        "https://bosworthtoller.com/8634"
-      ]
-    }
+    "name": "eery, eerie",
+    "etymology": [
+      {
+        "name": "earg",
+        "origin": "Old English"
+      },
+      {
+        "name": "eery, eerie",
+        "origin": "Modern English"
+      },
+      {
+        "name": "íry, írily",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "adverb"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/eerie",
+      "https://www.etymonline.com/word/eerily",
+      "https://www.oed.com/dictionary/eerie_adj?tab=factsheet#5749525",
+      "https://www.oed.com/dictionary/eerily_adv?tab=factsheet#5749740100",
+      "https://bosworthtoller.com/43420",
+      "https://bosworthtoller.com/8634"
+    ]
   }
 ]

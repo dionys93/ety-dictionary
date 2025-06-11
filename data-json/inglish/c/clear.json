@@ -1,153 +1,116 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "clear",
-      "etymology": [
-        {
-          "name": "clarus",
-          "origin": "Latin"
-        },
-        {
-          "name": "cler",
-          "origin": "Old French"
-        },
-        {
-          "name": "clear",
-          "origin": "Modern English"
-        },
-        {
-          "name": "cliar -er -est",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/clear#etymonline_v_13791",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7975",
-        "https://www.anglo-norman.net/entry/cler",
-        "https://latin-dictionary.net/definition/10281/clarus-clara"
-      ],
-      "degrees": {
-        "positive": "cliar",
-        "comparative": "er",
-        "superlative": "est"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to clearly",
-      "etymology": [
-        "clearly",
-        "cliarly"
-      ]
-    },
-    "standard": {
-      "name": "to clearly",
-      "etymology": [
-        {
-          "name": "clearly",
-          "origin": "Modern English"
-        },
-        {
-          "name": "cliarly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adverb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/clearly#etymonline_v_28205",
-        "https://www.etymonline.com/word/clear#etymonline_v_13791",
-        "https://www.etymonline.com/word/-ly#etymonline_v_32027"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to clear",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "clear",
+    "etymology": [
+      {
+        "name": "clarus",
+        "origin": "Latin"
       },
-      "etymology": [
-        "cler",
-        "cleren",
-        "to clear",
-        "ta cliare -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to clear",
-      "etymology": [
-        {
-          "name": "cler",
-          "origin": "Old French"
-        },
-        {
-          "name": "cleren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to clear",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta cliare -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "cler",
+        "origin": "Old French"
+      },
+      {
+        "name": "clear",
+        "origin": "Modern English"
+      },
+      {
+        "name": "cliar -er -est",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ],
+        "degrees": {
+          "positive": "cliar",
+          "comparative": "er",
+          "superlative": "est"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/clear#etymonline_v_42862",
-        "https://www.etymonline.com/word/clear#etymonline_v_13791",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7977",
-        "https://www.anglo-norman.net/entry/clercir"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/clear#etymonline_v_13791",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7975",
+      "https://www.anglo-norman.net/entry/cler",
+      "https://latin-dictionary.net/definition/10281/clarus-clara"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "clearance",
-      "etymology": [
-        {
-          "name": "clearance",
-          "origin": "Modern English"
-        },
-        {
-          "name": "cliarance -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
+    "infinitive": "clearly",
+    "etymology": [
+      {
+        "name": "clearly",
+        "origin": "Modern English"
+      },
+      {
+        "name": "cliarly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adverb"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/clearly#etymonline_v_28205",
+      "https://www.etymonline.com/word/clear#etymonline_v_13791",
+      "https://www.etymonline.com/word/-ly#etymonline_v_32027"
+    ]
+  },
+  {
+    "infinitive": "to clear",
+    "etymology": [
+      {
+        "name": "cler",
+        "origin": "Old French"
+      },
+      {
+        "name": "cleren",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to clear",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta cliare -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta cliares",
+          "pastTense": "ta cliared",
+          "progressive": "ta cliaring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/clearance#etymonline_v_28203",
-        "https://www.etymonline.com/word/clear#etymonline_v_42862",
-        "https://www.etymonline.com/word/-ence#etymonline_v_8629",
-        "https://www.etymonline.com/word/-ance#etymonline_v_26260"
-      ],
-      "number": "plural"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/clear#etymonline_v_42862",
+      "https://www.etymonline.com/word/clear#etymonline_v_13791",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7977",
+      "https://www.anglo-norman.net/entry/clercir"
+    ]
+  },
+  {
+    "name": "clearance",
+    "etymology": [
+      {
+        "name": "clearance",
+        "origin": "Modern English"
+      },
+      {
+        "name": "cliarance -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/clearance#etymonline_v_28203",
+      "https://www.etymonline.com/word/clear#etymonline_v_42862",
+      "https://www.etymonline.com/word/-ence#etymonline_v_8629",
+      "https://www.etymonline.com/word/-ance#etymonline_v_26260"
+    ]
   }
 ]

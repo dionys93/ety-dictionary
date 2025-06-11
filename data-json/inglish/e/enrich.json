@@ -1,82 +1,60 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to enrich",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to enrich",
+    "etymology": [
+      {
+        "name": "enrichir",
+        "origin": "Old French"
       },
-      "etymology": [
-        "enrichir",
-        "enrichen",
-        "to enrich",
-        "to enriche -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to enrich",
-      "etymology": [
-        {
-          "name": "enrichir",
-          "origin": "Old French"
-        },
-        {
-          "name": "enrichen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to enrich",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to enriche -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "enrichen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to enrich",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to enriche -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to enriches",
+          "pastTense": "to enriched",
+          "progressive": "to enriching"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/enrich#etymonline_v_8708",
-        "https://www.oed.com/dictionary/enrich_v?tab=factsheet#5456508",
-        "https://www.merriam-webster.com/dictionary/enrich",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13954",
-        "https://www.anglo-norman.net/entry/enrichir"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/enrich#etymonline_v_8708",
+      "https://www.oed.com/dictionary/enrich_v?tab=factsheet#5456508",
+      "https://www.merriam-webster.com/dictionary/enrich",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13954",
+      "https://www.anglo-norman.net/entry/enrichir"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "enrichment",
-      "etymology": [
-        {
-          "name": "enrichment",
-          "origin": "Modern English"
-        },
-        {
-          "name": "enrichement -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/enrichment",
-        "https://www.oed.com/dictionary/enrichment_n?tab=factsheet#5457960"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "enrichment",
+    "etymology": [
+      {
+        "name": "enrichment",
+        "origin": "Modern English"
+      },
+      {
+        "name": "enrichement -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/enrichment",
+      "https://www.oed.com/dictionary/enrichment_n?tab=factsheet#5457960"
+    ]
   }
 ]

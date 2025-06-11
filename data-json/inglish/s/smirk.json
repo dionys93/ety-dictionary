@@ -1,83 +1,61 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to smirk",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to smirk",
+    "etymology": [
+      {
+        "name": "smearcian",
+        "origin": "Old English"
       },
-      "etymology": [
-        "smearcian",
-        "smirken",
-        "to smirk",
-        "ta smêke -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to smirk",
-      "etymology": [
-        {
-          "name": "smearcian",
-          "origin": "Old English"
-        },
-        {
-          "name": "smirken",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to smirk",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta smêke -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "smirken",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to smirk",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta smêke -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta smêkes",
+          "pastTense": "ta smêked",
+          "progressive": "ta smêking"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/smirk#etymonline_v_23734",
-        "https://www.merriam-webster.com/dictionary/smirk#dictionary-entry-2",
-        "https://www.oed.com/dictionary/smirk_v?tab=factsheet#22058947",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED41098",
-        "https://bosworthtoller.com/28094"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/smirk#etymonline_v_23734",
+      "https://www.merriam-webster.com/dictionary/smirk#dictionary-entry-2",
+      "https://www.oed.com/dictionary/smirk_v?tab=factsheet#22058947",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED41098",
+      "https://bosworthtoller.com/28094"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "smirk",
-      "etymology": [
-        {
-          "name": "smirk",
-          "origin": "Modern English"
-        },
-        {
-          "name": "smêke, smêx",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/smirk#etymonline_v_48809",
-        "https://www.etymonline.com/word/smirk#etymonline_v_23734",
-        "https://www.merriam-webster.com/dictionary/smirk#dictionary-entry-1",
-        "https://www.oed.com/dictionary/smirk_n?tab=factsheet#22058647"
-      ],
-      "number": "singular"
-    }
+    "name": "smirk",
+    "etymology": [
+      {
+        "name": "smirk",
+        "origin": "Modern English"
+      },
+      {
+        "name": "smêke, smêx",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/smirk#etymonline_v_48809",
+      "https://www.etymonline.com/word/smirk#etymonline_v_23734",
+      "https://www.merriam-webster.com/dictionary/smirk#dictionary-entry-1",
+      "https://www.oed.com/dictionary/smirk_n?tab=factsheet#22058647"
+    ]
   }
 ]

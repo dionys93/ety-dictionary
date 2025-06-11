@@ -1,32 +1,26 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "taoiseach",
-      "etymology": [
-        {
-          "name": "taoiseach",
-          "origin": "Irish"
-        },
-        {
-          "name": "tíseac -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.oed.com/dictionary/taoiseach_n?tab=factsheet#19272394",
-        "https://www.merriam-webster.com/dictionary/taoiseach",
-        "https://www.collinsdictionary.com/us/dictionary/english/taoiseach",
-        "https://dictionary.cambridge.org/us/dictionary/english/taoiseach"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "taoiseach",
+    "etymology": [
+      {
+        "name": "taoiseach",
+        "origin": "Irish"
+      },
+      {
+        "name": "tíseac -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.oed.com/dictionary/taoiseach_n?tab=factsheet#19272394",
+      "https://www.merriam-webster.com/dictionary/taoiseach",
+      "https://www.collinsdictionary.com/us/dictionary/english/taoiseach",
+      "https://dictionary.cambridge.org/us/dictionary/english/taoiseach"
+    ]
   }
 ]

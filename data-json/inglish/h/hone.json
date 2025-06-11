@@ -1,53 +1,37 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to hone",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to hone",
+    "etymology": [
+      {
+        "name": "hænan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "hænan",
-        "henen",
-        "to hone",
-        "ta hoane -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to hone",
-      "etymology": [
-        {
-          "name": "hænan",
-          "origin": "Old English"
-        },
-        {
-          "name": "henen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to hone",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta hoane -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "henen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to hone",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta hoane -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta hoanes",
+          "pastTense": "ta hoaned",
+          "progressive": "ta hoaning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/hone",
-        "https://www.oed.com/dictionary/hone_v4?tab=factsheet#10467982",
-        "https://www.oed.com/dictionary/hone_v3?tab=factsheet#1519217",
-        "https://bosworthtoller.com/17920"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/hone",
+      "https://www.oed.com/dictionary/hone_v4?tab=factsheet#10467982",
+      "https://www.oed.com/dictionary/hone_v3?tab=factsheet#1519217",
+      "https://bosworthtoller.com/17920"
+    ]
   }
 ]

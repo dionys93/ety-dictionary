@@ -1,67 +1,56 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to shampoo",
-      "etymology": [
-        "चांपना , चाँपना , चांपो, चाँपो",
-        "to shampoo",
-        "ta shampue -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to shampoo",
-      "etymology": [
-        {
-          "name": "चांपना , चाँपना , चांपो, चाँपो",
-          "origin": "Inglish"
-        },
-        {
-          "name": "to shampoo",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta shampue -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+    "infinitive": "to shampoo",
+    "etymology": [
+      {
+        "name": "चांपना , चाँपना , चांपो, चाँपो",
+        "origin": "Inglish"
+      },
+      {
+        "name": "to shampoo",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta shampue -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta shampues",
+          "pastTense": "ta shampued",
+          "progressive": "ta shampuing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/shampoo#etymonline_v_23339",
-        "https://www.oed.com/dictionary/shampoo_v?tab=factsheet#23167220",
-        "https://en.wiktionary.org/wiki/shampoo"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/shampoo#etymonline_v_23339",
+      "https://www.oed.com/dictionary/shampoo_v?tab=factsheet#23167220",
+      "https://en.wiktionary.org/wiki/shampoo"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "shampoo",
-      "etymology": [
-        {
-          "name": "shampoo",
-          "origin": "Modern English"
-        },
-        {
-          "name": "shampue, shampús",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/shampoo#etymonline_v_48570",
-        "https://www.etymonline.com/word/shampoo#etymonline_v_23339",
-        "https://www.oed.com/dictionary/shampoo_n?tab=factsheet#23167091",
-        "https://en.wiktionary.org/wiki/shampoo"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "shampoo",
+    "etymology": [
+      {
+        "name": "shampoo",
+        "origin": "Modern English"
+      },
+      {
+        "name": "shampue, shampús",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/shampoo#etymonline_v_48570",
+      "https://www.etymonline.com/word/shampoo#etymonline_v_23339",
+      "https://www.oed.com/dictionary/shampoo_n?tab=factsheet#23167091",
+      "https://en.wiktionary.org/wiki/shampoo"
+    ]
   }
 ]

@@ -1,103 +1,77 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to pry",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "hing"
+    "infinitive": "to pry",
+    "etymology": [
+      {
+        "name": "to pry",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to pry",
-        "ta prîe -s -d -hing"
-      ]
-    },
-    "standard": {
-      "name": "to pry",
-      "etymology": [
-        {
-          "name": "to pry",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta prîe -s -d -hing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta prîe -s -d -hing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta prîes",
+          "pastTense": "ta prîed",
+          "progressive": "ta prîehing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/pry#etymonline_v_2776",
-        "https://www.etymonline.com/word/prize#etymonline_v_19548",
-        "https://www.merriam-webster.com/dictionary/pry#dictionary-entry-2",
-        "https://www.collinsdictionary.com/us/dictionary/english/prize#:~:text=If%20you%20prize%20something%20open,in%20AM%2C%20usually%20use%20pry",
-        "https://www.etymonline.com/word/pry#etymonline_v_2775",
-        "https://www.merriam-webster.com/dictionary/pry#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED34607",
-        "https://oldenglishwordhord.com/2021/12/29/be-priwan/",
-        "https://bosworthtoller.com/3796"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "hing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/pry#etymonline_v_2776",
+      "https://www.etymonline.com/word/prize#etymonline_v_19548",
+      "https://www.merriam-webster.com/dictionary/pry#dictionary-entry-2",
+      "https://www.collinsdictionary.com/us/dictionary/english/prize#:~:text=If%20you%20prize%20something%20open,in%20AM%2C%20usually%20use%20pry",
+      "https://www.etymonline.com/word/pry#etymonline_v_2775",
+      "https://www.merriam-webster.com/dictionary/pry#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED34607",
+      "https://oldenglishwordhord.com/2021/12/29/be-priwan/",
+      "https://bosworthtoller.com/3796"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "pry",
-      "etymology": [
-        {
-          "name": "pry",
-          "origin": "Modern English"
-        },
-        {
-          "name": "prîe, prîs",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/pry#dictionary-entry-3"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "pry",
+    "etymology": [
+      {
+        "name": "pry",
+        "origin": "Modern English"
+      },
+      {
+        "name": "prîe, prîs",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/pry#dictionary-entry-3"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "pryer, prier",
-      "etymology": [
-        {
-          "name": "pryer, prier",
-          "origin": "Modern English"
-        },
-        {
-          "name": "prîeur -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/prier",
-        "https://www.merriam-webster.com/dictionary/pryer"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "pryer, prier",
+    "etymology": [
+      {
+        "name": "pryer, prier",
+        "origin": "Modern English"
+      },
+      {
+        "name": "prîeur -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/prier",
+      "https://www.merriam-webster.com/dictionary/pryer"
+    ]
   }
 ]

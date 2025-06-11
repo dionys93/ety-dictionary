@@ -1,133 +1,92 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to smell",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to smell",
+    "etymology": [
+      {
+        "name": "smellen",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "smellen",
-        "to smell",
-        "ta smelle -s smelt -ing",
-        "E.g. It smelt odd. It smelt lîc a rose."
-      ]
-    },
-    "standard": {
-      "name": "to smell",
-      "etymology": [
-        {
-          "name": "smellen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to smell",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta smelle -s smelt -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "intransitive verb"
-          ]
-        },
-        {
-          "name": "E.g. It smelt odd. It smelt lîc a rose.",
-          "origin": "Inglish"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/smell#etymonline_v_23728",
-        "https://www.merriam-webster.com/dictionary/smell#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED41055"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to smell",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "to smell",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "smellen",
-        "to smell",
-        "ta smelle -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to smell",
-      "etymology": [
-        {
-          "name": "smellen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to smell",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta smelle -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "transitive verb"
-          ]
+      {
+        "name": "ta smelle -s smelt -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "intransitive verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta smelles"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/smell#etymonline_v_23728",
-        "https://www.merriam-webster.com/dictionary/smell#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED41055"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      },
+      {
+        "name": "E.g. It smelt odd. It smelt lîc a rose.",
+        "origin": "Inglish"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/smell#etymonline_v_23728",
+      "https://www.merriam-webster.com/dictionary/smell#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED41055"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "smell  -s (n)",
-      "etymology": [
-        {
-          "name": "smell  -s (n)",
-          "origin": "Modern English"
+    "infinitive": "to smell",
+    "etymology": [
+      {
+        "name": "smellen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to smell",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta smelle -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "transitive verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta smelles",
+          "pastTense": "ta smelled",
+          "progressive": "ta smelling"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/smell#etymonline_v_45988",
-        "https://www.merriam-webster.com/dictionary/smell#dictionary-entry-2"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/smell#etymonline_v_23728",
+      "https://www.merriam-webster.com/dictionary/smell#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED41055"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "smelly  (adj)",
-      "etymology": [
-        {
-          "name": "smelly  (adj)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/smelly#etymonline_v_38125",
-        "https://www.etymonline.com/word/smell#etymonline_v_45988",
-        "https://www.etymonline.com/word/-y#etymonline_v_25631",
-        "https://www.merriam-webster.com/dictionary/smelly"
-      ]
-    }
+    "name": "smell  -s (n)",
+    "etymology": [
+      {
+        "name": "smell  -s (n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/smell#etymonline_v_45988",
+      "https://www.merriam-webster.com/dictionary/smell#dictionary-entry-2"
+    ]
+  },
+  {
+    "name": "smelly  (adj)",
+    "etymology": [
+      {
+        "name": "smelly  (adj)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/smelly#etymonline_v_38125",
+      "https://www.etymonline.com/word/smell#etymonline_v_45988",
+      "https://www.etymonline.com/word/-y#etymonline_v_25631",
+      "https://www.merriam-webster.com/dictionary/smelly"
+    ]
   }
 ]

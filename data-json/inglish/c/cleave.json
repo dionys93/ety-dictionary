@@ -1,128 +1,92 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to cleave",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to cleave",
+    "etymology": [
+      {
+        "name": "cleofan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "cleofan",
-        "cleven",
-        "to cleave",
-        "ta clívfe -s cleft -ing"
-      ]
-    },
-    "standard": {
-      "name": "to cleave",
-      "etymology": [
-        {
-          "name": "cleofan",
-          "origin": "Old English"
-        },
-        {
-          "name": "cleven",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to cleave",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta clívfe -s cleft -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "cleven",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to cleave",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta clívfe -s cleft -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta clívfes"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/cleave#etymonline_v_13793",
-        "https://www.merriam-webster.com/dictionary/cleave#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8013",
-        "https://bosworthtoller.com/6315"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/cleave#etymonline_v_13793",
+      "https://www.merriam-webster.com/dictionary/cleave#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8013",
+      "https://bosworthtoller.com/6315"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "cleaver",
-      "etymology": [
-        {
-          "name": "cleaver",
-          "origin": "Modern English"
-        },
-        {
-          "name": "clívfeur,  clívfor -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/cleaver#etymonline_v_28207",
-        "https://www.etymonline.com/word/cleave#etymonline_v_13793"
-      ],
-      "number": "plural"
-    }
+    "name": "cleaver",
+    "etymology": [
+      {
+        "name": "cleaver",
+        "origin": "Modern English"
+      },
+      {
+        "name": "clívfeur,  clívfor -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/cleaver#etymonline_v_28207",
+      "https://www.etymonline.com/word/cleave#etymonline_v_13793"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to cleave",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to cleave",
+    "etymology": [
+      {
+        "name": "clifian, cleofian",
+        "origin": "Old English"
       },
-      "etymology": [
-        "clifian, cleofian",
-        "cleven, clevien, cliven",
-        "to cleave",
-        "ta clíve -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to cleave",
-      "etymology": [
-        {
-          "name": "clifian, cleofian",
-          "origin": "Old English"
-        },
-        {
-          "name": "cleven, clevien, cliven",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to cleave",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta clíve -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "cleven, clevien, cliven",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to cleave",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta clíve -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta clíves",
+          "pastTense": "ta clíved",
+          "progressive": "ta clíving"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/cleave#etymonline_v_13794",
-        "https://www.merriam-webster.com/dictionary/cleave#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8012",
-        "https://bosworthtoller.com/6317",
-        "https://bosworthtoller.com/6337"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/cleave#etymonline_v_13794",
+      "https://www.merriam-webster.com/dictionary/cleave#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8012",
+      "https://bosworthtoller.com/6317",
+      "https://bosworthtoller.com/6337"
+    ]
   }
 ]

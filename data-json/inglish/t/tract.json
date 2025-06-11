@@ -1,67 +1,55 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "tract",
-      "etymology": [
-        {
-          "name": "trahere, tractus",
-          "origin": "Latin"
-        },
-        {
-          "name": "tract",
-          "origin": "Modern English"
-        },
-        {
-          "name": "tract, tracs",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/tract",
-        "https://www.oed.com/dictionary/tract_n3?tab=factsheet#17856447"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "tract",
+    "etymology": [
+      {
+        "name": "trahere, tractus",
+        "origin": "Latin"
+      },
+      {
+        "name": "tract",
+        "origin": "Modern English"
+      },
+      {
+        "name": "tract, tracs",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/tract",
+      "https://www.oed.com/dictionary/tract_n3?tab=factsheet#17856447"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "tract",
-      "etymology": [
-        {
-          "name": "tractare, tractatus",
-          "origin": "Latin"
-        },
-        {
-          "name": "tract",
-          "origin": "Modern English"
-        },
-        {
-          "name": "tràct, tràcs",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/tract",
-        "https://www.oed.com/dictionary/tract_n1?tab=factsheet#17855844",
-        "https://latin-dictionary.net/definition/37405/tracto-tractare-tractavi-tractatus"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "tract",
+    "etymology": [
+      {
+        "name": "tractare, tractatus",
+        "origin": "Latin"
+      },
+      {
+        "name": "tract",
+        "origin": "Modern English"
+      },
+      {
+        "name": "tràct, tràcs",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/tract",
+      "https://www.oed.com/dictionary/tract_n1?tab=factsheet#17855844",
+      "https://latin-dictionary.net/definition/37405/tracto-tractare-tractavi-tractatus"
+    ]
   }
 ]

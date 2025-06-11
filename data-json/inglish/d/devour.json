@@ -1,59 +1,43 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to devour",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
+    "infinitive": "to devour",
+    "etymology": [
+      {
+        "name": "de + vorare, devorare",
+        "origin": "Latin"
       },
-      "etymology": [
-        "de + vorare, devorare",
-        "devorer",
-        "devouren",
-        "to devour",
-        "ta devaore -s -d devaoering"
-      ]
-    },
-    "standard": {
-      "name": "to devour",
-      "etymology": [
-        {
-          "name": "de + vorare, devorare",
-          "origin": "Latin"
-        },
-        {
-          "name": "devorer",
-          "origin": "Old French"
-        },
-        {
-          "name": "devouren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to devour",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta devaore -s -d devaoering",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "devorer",
+        "origin": "Old French"
+      },
+      {
+        "name": "devouren",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to devour",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta devaore -s -d devaoering",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta devaores",
+          "pastTense": "ta devaored"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/devour#etymonline_v_8493",
-        "https://www.merriam-webster.com/dictionary/devour",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED11492",
-        "https://www.anglo-norman.net/entry/devorer",
-        "https://latin-dictionary.net/definition/17304/devoro-devorare-devoravi-devoratus",
-        "https://latin-dictionary.net/definition/39103/voro-vorare-voravi-voratus",
-        "https://latin-dictionary.net/definition/15660/de"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/devour#etymonline_v_8493",
+      "https://www.merriam-webster.com/dictionary/devour",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED11492",
+      "https://www.anglo-norman.net/entry/devorer",
+      "https://latin-dictionary.net/definition/17304/devoro-devorare-devoravi-devoratus",
+      "https://latin-dictionary.net/definition/39103/voro-vorare-voravi-voratus",
+      "https://latin-dictionary.net/definition/15660/de"
+    ]
   }
 ]

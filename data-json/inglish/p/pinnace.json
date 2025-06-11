@@ -1,31 +1,25 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "pinnace  -s (m n)",
-      "etymology": [
-        {
-          "name": "pinus",
-          "origin": "Latin"
-        },
-        {
-          "name": "pinace",
-          "origin": "French"
-        },
-        {
-          "name": "pinnace  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/pinnace#etymonline_v_36121",
-        "https://www.merriam-webster.com/dictionary/pinnace",
-        "https://www.merriam-webster.com/dictionary/pinnace#word-history",
-        "https://latin-dictionary.net/definition/30551/pinus-pini"
-      ]
-    }
+    "name": "pinnace  -s (m n)",
+    "etymology": [
+      {
+        "name": "pinus",
+        "origin": "Latin"
+      },
+      {
+        "name": "pinace",
+        "origin": "French"
+      },
+      {
+        "name": "pinnace  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/pinnace#etymonline_v_36121",
+      "https://www.merriam-webster.com/dictionary/pinnace",
+      "https://www.merriam-webster.com/dictionary/pinnace#word-history",
+      "https://latin-dictionary.net/definition/30551/pinus-pini"
+    ]
   }
 ]

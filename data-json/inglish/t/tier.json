@@ -1,74 +1,54 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "tier",
-      "etymology": [
-        {
-          "name": "tirer, tire",
-          "origin": "Old French"
-        },
-        {
-          "name": "tier",
-          "origin": "Modern English"
-        },
-        {
-          "name": "tire, tírs",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/tier#etymonline_v_13315",
-        "https://www.oed.com/dictionary/tier_n1?tab=factsheet#18400813",
-        "https://anglo-norman.net/entry/tire_1",
-        "https://anglo-norman.net/entry/tirer"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "tier",
+    "etymology": [
+      {
+        "name": "tirer, tire",
+        "origin": "Old French"
+      },
+      {
+        "name": "tier",
+        "origin": "Modern English"
+      },
+      {
+        "name": "tire, tírs",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/tier#etymonline_v_13315",
+      "https://www.oed.com/dictionary/tier_n1?tab=factsheet#18400813",
+      "https://anglo-norman.net/entry/tire_1",
+      "https://anglo-norman.net/entry/tirer"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to tier",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to tier",
+    "etymology": [
+      {
+        "name": "to tier",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to tier",
-        "ta tire -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to tier",
-      "etymology": [
-        {
-          "name": "to tier",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta tire -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta tire -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta tires",
+          "pastTense": "ta tired",
+          "progressive": "ta tiring"
         }
-      ],
-      "sources": [
-        "https://www.oed.com/dictionary/tier_v?tab=factsheet#18401655"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.oed.com/dictionary/tier_v?tab=factsheet#18401655"
+    ]
   }
 ]

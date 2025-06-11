@@ -1,149 +1,113 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to evacuate",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to evacuate",
+    "etymology": [
+      {
+        "name": "ex + vacuus, evacuatus",
+        "origin": "Latin"
       },
-      "etymology": [
-        "ex + vacuus, evacuatus",
-        "to evacuate",
-        "to evac̃uete -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to evacuate",
-      "etymology": [
-        {
-          "name": "ex + vacuus, evacuatus",
-          "origin": "Latin"
-        },
-        {
-          "name": "to evacuate",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to evac̃uete -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to evacuate",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to evac̃uete -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to evac̃uetes",
+          "pastTense": "to evac̃ueted",
+          "progressive": "to evac̃ueting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/evacuate#etymonline_v_11695",
-        "https://www.merriam-webster.com/dictionary/evacuate",
-        "https://latin-dictionary.net/definition/19480/evacuo-evacuare-evacuavi-evacuatus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/evacuate#etymonline_v_11695",
+      "https://www.merriam-webster.com/dictionary/evacuate",
+      "https://latin-dictionary.net/definition/19480/evacuo-evacuare-evacuavi-evacuatus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "evacuative",
-      "etymology": [
-        {
-          "name": "evacuative",
-          "origin": "Modern English"
-        },
-        {
-          "name": "evac̃uatif -vly -ness",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/evacuative"
-      ],
-      "degrees": {
-        "positive": "uatif",
-        "comparative": "vly",
-        "superlative": "ness"
+    "name": "evacuative",
+    "etymology": [
+      {
+        "name": "evacuative",
+        "origin": "Modern English"
+      },
+      {
+        "name": "evac̃uatif -vly -ness",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/evacuative"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "evacuation",
-      "etymology": [
-        {
-          "name": "evacuatio",
-          "origin": "Latin"
-        },
-        {
-          "name": "évacuation",
-          "origin": "Old French"
-        },
-        {
-          "name": "evacuation",
-          "origin": "Modern English"
-        },
-        {
-          "name": "evac̃uâcion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/evacuation#etymonline_v_32760",
-        "https://www.merriam-webster.com/dictionary/evacuation",
-        "https://www.anglo-norman.net/entry/evacuacion",
-        "https://latin-dictionary.net/definition/19480/evacuo-evacuare-evacuavi-evacuatus"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "evacuation",
+    "etymology": [
+      {
+        "name": "evacuatio",
+        "origin": "Latin"
+      },
+      {
+        "name": "évacuation",
+        "origin": "Old French"
+      },
+      {
+        "name": "evacuation",
+        "origin": "Modern English"
+      },
+      {
+        "name": "evac̃uâcion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/evacuation#etymonline_v_32760",
+      "https://www.merriam-webster.com/dictionary/evacuation",
+      "https://www.anglo-norman.net/entry/evacuacion",
+      "https://latin-dictionary.net/definition/19480/evacuo-evacuare-evacuavi-evacuatus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "evacuee",
-      "etymology": [
-        {
-          "name": "evacuare",
-          "origin": "Latin"
-        },
-        {
-          "name": "évacuer, évacué",
-          "origin": "Inglish"
-        },
-        {
-          "name": "evacuee",
-          "origin": "Modern English"
-        },
-        {
-          "name": "evac̃uí -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/evacuee#etymonline_v_32759",
-        "https://www.merriam-webster.com/dictionary/evacuee"
-      ]
-    }
+    "name": "evacuee",
+    "etymology": [
+      {
+        "name": "evacuare",
+        "origin": "Latin"
+      },
+      {
+        "name": "évacuer, évacué",
+        "origin": "Inglish"
+      },
+      {
+        "name": "evacuee",
+        "origin": "Modern English"
+      },
+      {
+        "name": "evac̃uí -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/evacuee#etymonline_v_32759",
+      "https://www.merriam-webster.com/dictionary/evacuee"
+    ]
   }
 ]

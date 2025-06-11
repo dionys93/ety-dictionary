@@ -1,94 +1,67 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to lean",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to lean",
+    "etymology": [
+      {
+        "name": "hlinian",
+        "origin": "Old English"
       },
-      "etymology": [
-        "hlinian",
-        "lenen",
-        "to lean",
-        "ta líne -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to lean",
-      "etymology": [
-        {
-          "name": "hlinian",
-          "origin": "Old English"
-        },
-        {
-          "name": "lenen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to lean",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta líne -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "lenen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to lean",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta líne -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta línes",
+          "pastTense": "ta líned",
+          "progressive": "ta líning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/lean#etymonline_v_6622",
-        "https://www.oed.com/dictionary/lean_v1?tab=factsheet#39563516",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25106",
-        "https://bosworthtoller.com/52747"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/lean#etymonline_v_6622",
+      "https://www.oed.com/dictionary/lean_v1?tab=factsheet#39563516",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25106",
+      "https://bosworthtoller.com/52747"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "lean",
-      "etymology": [
-        {
-          "name": "hlæne",
-          "origin": "Old English"
-        },
-        {
-          "name": "lene",
-          "origin": "Middle English"
-        },
-        {
-          "name": "lean",
-          "origin": "Modern English"
-        },
-        {
-          "name": "lín -er -est",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/lean#etymonline_v_6623",
-        "https://www.oed.com/dictionary/lean_adj?tab=factsheet#39562025",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25104",
-        "https://bosworthtoller.com/19163"
-      ],
-      "degrees": {
-        "positive": "n",
-        "comparative": "er",
-        "superlative": "est"
+    "name": "lean",
+    "etymology": [
+      {
+        "name": "hlæne",
+        "origin": "Old English"
+      },
+      {
+        "name": "lene",
+        "origin": "Middle English"
+      },
+      {
+        "name": "lean",
+        "origin": "Modern English"
+      },
+      {
+        "name": "lín -er -est",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/lean#etymonline_v_6623",
+      "https://www.oed.com/dictionary/lean_adj?tab=factsheet#39562025",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25104",
+      "https://bosworthtoller.com/19163"
+    ]
   }
 ]

@@ -1,72 +1,54 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "sleigh",
-      "etymology": [
-        {
-          "name": "slede, slee",
-          "origin": "Inglish"
-        },
-        {
-          "name": "sleigh",
-          "origin": "Modern English"
-        },
-        {
-          "name": "slehe, slehs",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/sleigh#etymonline_v_23664",
-        "https://www.merriam-webster.com/dictionary/sleigh#dictionary-entry-1",
-        "https://dictionary.cambridge.org/dictionary/dutch-english/slee",
-        "https://dictionary.cambridge.org/dictionary/dutch-english/slede"
-      ]
-    }
+    "name": "sleigh",
+    "etymology": [
+      {
+        "name": "slede, slee",
+        "origin": "Inglish"
+      },
+      {
+        "name": "sleigh",
+        "origin": "Modern English"
+      },
+      {
+        "name": "slehe, slehs",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/sleigh#etymonline_v_23664",
+      "https://www.merriam-webster.com/dictionary/sleigh#dictionary-entry-1",
+      "https://dictionary.cambridge.org/dictionary/dutch-english/slee",
+      "https://dictionary.cambridge.org/dictionary/dutch-english/slede"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to sleigh",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to sleigh",
+    "etymology": [
+      {
+        "name": "to sleigh",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to sleigh",
-        "ta slehe -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to sleigh",
-      "etymology": [
-        {
-          "name": "to sleigh",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta slehe -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta slehe -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta slehes",
+          "pastTense": "ta slehed",
+          "progressive": "ta slehing"
         }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/sleigh#dictionary-entry-2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/sleigh#dictionary-entry-2"
+    ]
   }
 ]

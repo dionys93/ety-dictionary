@@ -1,79 +1,59 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "knife",
-      "etymology": [
-        {
-          "name": "knifr",
-          "origin": "Old Norse"
-        },
-        {
-          "name": "cnif",
-          "origin": "Old English"
-        },
-        {
-          "name": "knife",
-          "origin": "Modern English"
-        },
-        {
-          "name": "nîfe, nîfs",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/knife#etymonline_v_1913",
-        "https://www.oed.com/dictionary/knife_n?tab=factsheet#39992203",
-        "https://bosworthtoller.com/6459",
-        "https://old-norse.net/html/k.php#kn%C3%ADfr"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "knife",
+    "etymology": [
+      {
+        "name": "knifr",
+        "origin": "Old Norse"
+      },
+      {
+        "name": "cnif",
+        "origin": "Old English"
+      },
+      {
+        "name": "knife",
+        "origin": "Modern English"
+      },
+      {
+        "name": "nîfe, nîfs",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/knife#etymonline_v_1913",
+      "https://www.oed.com/dictionary/knife_n?tab=factsheet#39992203",
+      "https://bosworthtoller.com/6459",
+      "https://old-norse.net/html/k.php#kn%C3%ADfr"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to knife",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "knife",
+    "etymology": [
+      {
+        "name": "knife",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "knife",
-        "nîfe -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to knife",
-      "etymology": [
-        {
-          "name": "knife",
-          "origin": "Modern English"
-        },
-        {
-          "name": "nîfe -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "nîfe -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "nîfes",
+          "pastTense": "nîfed",
+          "progressive": "nîfing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/knife#etymonline_v_42977",
-        "https://www.oed.com/dictionary/knife_v?tab=factsheet#39994064"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/knife#etymonline_v_42977",
+      "https://www.oed.com/dictionary/knife_v?tab=factsheet#39994064"
+    ]
   }
 ]

@@ -1,36 +1,30 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "amulet",
-      "etymology": [
-        {
-          "name": "amuletum",
-          "origin": "Latin"
-        },
-        {
-          "name": "amulet",
-          "origin": "Modern English"
-        },
-        {
-          "name": "am̃ulet -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/amulet#etymonline_v_11026",
-        "https://www.oed.com/dictionary/amulet_n?tab=factsheet#4676482",
-        "https://www.merriam-webster.com/dictionary/amulet#word-history",
-        "https://latin-dictionary.net/definition/3230/amuletum-amuleti"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "amulet",
+    "etymology": [
+      {
+        "name": "amuletum",
+        "origin": "Latin"
+      },
+      {
+        "name": "amulet",
+        "origin": "Modern English"
+      },
+      {
+        "name": "am̃ulet -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/amulet#etymonline_v_11026",
+      "https://www.oed.com/dictionary/amulet_n?tab=factsheet#4676482",
+      "https://www.merriam-webster.com/dictionary/amulet#word-history",
+      "https://latin-dictionary.net/definition/3230/amuletum-amuleti"
+    ]
   }
 ]

@@ -1,39 +1,33 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "feather",
-      "etymology": [
-        {
-          "name": "feðer",
-          "origin": "Old English"
-        },
-        {
-          "name": "fether",
-          "origin": "Middle English"
-        },
-        {
-          "name": "feather",
-          "origin": "Modern English"
-        },
-        {
-          "name": "feþre, feþers",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/feather",
-        "https://www.oed.com/dictionary/feather_n?tab=factsheet#4539109",
-        "https://bosworthtoller.com/44897"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "feather",
+    "etymology": [
+      {
+        "name": "feðer",
+        "origin": "Old English"
+      },
+      {
+        "name": "fether",
+        "origin": "Middle English"
+      },
+      {
+        "name": "feather",
+        "origin": "Modern English"
+      },
+      {
+        "name": "feþre, feþers",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/feather",
+      "https://www.oed.com/dictionary/feather_n?tab=factsheet#4539109",
+      "https://bosworthtoller.com/44897"
+    ]
   }
 ]

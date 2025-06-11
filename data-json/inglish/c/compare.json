@@ -1,178 +1,136 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to compare",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to compare",
+    "etymology": [
+      {
+        "name": "com + par, comparare",
+        "origin": "Latin"
       },
-      "etymology": [
-        "com + par, comparare",
-        "comparer",
-        "to compare",
-        "ta compaire -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to compare",
-      "etymology": [
-        {
-          "name": "com + par, comparare",
-          "origin": "Latin"
-        },
-        {
-          "name": "comparer",
-          "origin": "Old French"
-        },
-        {
-          "name": "to compare",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta compaire -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "comparer",
+        "origin": "Old French"
+      },
+      {
+        "name": "to compare",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta compaire -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta compaires",
+          "pastTense": "ta compaired",
+          "progressive": "ta compairing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/compare#etymonline_v_28450",
-        "https://www.etymonline.com/word/par#etymonline_v_7161",
-        "https://www.oed.com/dictionary/compare_v1?tab=factsheet#8798097",
-        "https://www.anglo-norman.net/entry/comparer_1",
-        "https://latin-dictionary.net/definition/11613/comparo-comparare-comparavi-comparatus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/compare#etymonline_v_28450",
+      "https://www.etymonline.com/word/par#etymonline_v_7161",
+      "https://www.oed.com/dictionary/compare_v1?tab=factsheet#8798097",
+      "https://www.anglo-norman.net/entry/comparer_1",
+      "https://latin-dictionary.net/definition/11613/comparo-comparare-comparavi-comparatus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "comparable",
-      "etymology": [
-        {
-          "name": "comparare, comparabilis",
-          "origin": "Latin"
-        },
-        {
-          "name": "comparable",
-          "origin": "Old French"
-        },
-        {
-          "name": "compaîable -y",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/comparable#etymonline_v_28449",
-        "https://www.etymonline.com/word/par#etymonline_v_7161",
-        "https://www.merriam-webster.com/dictionary/comparable",
-        "https://www.oed.com/dictionary/comparable_adj?tab=factsheet#8796237",
-        "https://www.anglo-norman.net/entry/comparable",
-        "https://latin-dictionary.net/definition/11598/comparabilis-comparabilis-comparabile",
-        "https://latin-dictionary.net/definition/11613/comparo-comparare-comparavi-comparatus"
-      ],
-      "degrees": {
-        "positive": "able",
-        "comparative": "y"
+    "name": "comparable",
+    "etymology": [
+      {
+        "name": "comparare, comparabilis",
+        "origin": "Latin"
+      },
+      {
+        "name": "comparable",
+        "origin": "Old French"
+      },
+      {
+        "name": "compaîable -y",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/comparable#etymonline_v_28449",
+      "https://www.etymonline.com/word/par#etymonline_v_7161",
+      "https://www.merriam-webster.com/dictionary/comparable",
+      "https://www.oed.com/dictionary/comparable_adj?tab=factsheet#8796237",
+      "https://www.anglo-norman.net/entry/comparable",
+      "https://latin-dictionary.net/definition/11598/comparabilis-comparabilis-comparabile",
+      "https://latin-dictionary.net/definition/11613/comparo-comparare-comparavi-comparatus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "comparison",
-      "etymology": [
-        {
-          "name": "comparare, comparationem",
-          "origin": "Latin"
-        },
-        {
-          "name": "comparaison",
-          "origin": "Old French"
-        },
-        {
-          "name": "comparison",
-          "origin": "Modern English"
-        },
-        {
-          "name": "compaîasson -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/comparison#etymonline_v_17255",
-        "https://www.merriam-webster.com/dictionary/comparison",
-        "https://www.etymonline.com/word/par#etymonline_v_7161",
-        "https://www.collinsdictionary.com/us/dictionary/english/comparison",
-        "https://dictionary.cambridge.org/us/dictionary/english/comparison",
-        "https://www.oed.com/dictionary/comparison_n?tab=factsheet#8798877",
-        "https://www.anglo-norman.net/entry/comparison",
-        "https://latin-dictionary.net/definition/11601/comparatio-comparationis",
-        "https://latin-dictionary.net/definition/11613/comparo-comparare-comparavi-comparatus"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "comparison",
+    "etymology": [
+      {
+        "name": "comparare, comparationem",
+        "origin": "Latin"
+      },
+      {
+        "name": "comparaison",
+        "origin": "Old French"
+      },
+      {
+        "name": "comparison",
+        "origin": "Modern English"
+      },
+      {
+        "name": "compaîasson -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/comparison#etymonline_v_17255",
+      "https://www.merriam-webster.com/dictionary/comparison",
+      "https://www.etymonline.com/word/par#etymonline_v_7161",
+      "https://www.collinsdictionary.com/us/dictionary/english/comparison",
+      "https://dictionary.cambridge.org/us/dictionary/english/comparison",
+      "https://www.oed.com/dictionary/comparison_n?tab=factsheet#8798877",
+      "https://www.anglo-norman.net/entry/comparison",
+      "https://latin-dictionary.net/definition/11601/comparatio-comparationis",
+      "https://latin-dictionary.net/definition/11613/comparo-comparare-comparavi-comparatus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "comparative",
-      "etymology": [
-        {
-          "name": "comparare, comparativus",
-          "origin": "Latin"
-        },
-        {
-          "name": "comparatif",
-          "origin": "Old French"
-        },
-        {
-          "name": "comparative",
-          "origin": "Modern English"
-        },
-        {
-          "name": "compaîatif -vly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/comparative",
-        "https://www.etymonline.com/word/comparative#etymonline_v_28456",
-        "https://www.etymonline.com/word/par#etymonline_v_7161",
-        "https://www.anglo-norman.net/entry/comparatif",
-        "https://latin-dictionary.net/definition/11604/comparativus-comparativa-comparativum",
-        "https://latin-dictionary.net/definition/11613/comparo-comparare-comparavi-comparatus"
-      ],
-      "degrees": {
-        "positive": "atif",
-        "comparative": "vly"
+    "name": "comparative",
+    "etymology": [
+      {
+        "name": "comparare, comparativus",
+        "origin": "Latin"
+      },
+      {
+        "name": "comparatif",
+        "origin": "Old French"
+      },
+      {
+        "name": "comparative",
+        "origin": "Modern English"
+      },
+      {
+        "name": "compaîatif -vly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/comparative",
+      "https://www.etymonline.com/word/comparative#etymonline_v_28456",
+      "https://www.etymonline.com/word/par#etymonline_v_7161",
+      "https://www.anglo-norman.net/entry/comparatif",
+      "https://latin-dictionary.net/definition/11604/comparativus-comparativa-comparativum",
+      "https://latin-dictionary.net/definition/11613/comparo-comparare-comparavi-comparatus"
+    ]
   }
 ]

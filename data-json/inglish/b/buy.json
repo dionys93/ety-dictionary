@@ -1,77 +1,57 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to buy",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to buy",
+    "etymology": [
+      {
+        "name": "bycgan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "bycgan",
-        "bien",
-        "to buy",
-        "ta byhe -s boht -ing"
-      ]
-    },
-    "standard": {
-      "name": "to buy",
-      "etymology": [
-        {
-          "name": "bycgan",
-          "origin": "Old English"
-        },
-        {
-          "name": "bien",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to buy",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta byhe -s boht -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "bien",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to buy",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta byhe -s boht -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta byhes"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/buy#etymonline_v_18159",
-        "https://www.merriam-webster.com/dictionary/buy#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4411",
-        "https://bosworthtoller.com/5526"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/buy#etymonline_v_18159",
+      "https://www.merriam-webster.com/dictionary/buy#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4411",
+      "https://bosworthtoller.com/5526"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "buy",
-      "etymology": [
-        {
-          "name": "buy",
-          "origin": "Modern English"
-        },
-        {
-          "name": "byh -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/buy#etymonline_v_46615",
-        "https://www.etymonline.com/word/buy#etymonline_v_18159",
-        "https://www.merriam-webster.com/dictionary/buy#dictionary-entry-2"
-      ],
-      "number": "plural"
-    }
+    "name": "buy",
+    "etymology": [
+      {
+        "name": "buy",
+        "origin": "Modern English"
+      },
+      {
+        "name": "byh -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/buy#etymonline_v_46615",
+      "https://www.etymonline.com/word/buy#etymonline_v_18159",
+      "https://www.merriam-webster.com/dictionary/buy#dictionary-entry-2"
+    ]
   }
 ]

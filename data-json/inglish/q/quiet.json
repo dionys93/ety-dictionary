@@ -1,118 +1,91 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "quiet",
-      "etymology": [
-        {
-          "name": "quies, quietus",
-          "origin": "Latin"
-        },
-        {
-          "name": "quiet",
-          "origin": "Old French"
-        },
-        {
-          "name": "quîat, quîately",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "adverb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/quiet#etymonline_v_44842",
-        "https://www.merriam-webster.com/dictionary/quietly",
-        "https://www.merriam-webster.com/dictionary/quiet#dictionary-entry-2",
-        "https://www.merriam-webster.com/dictionary/quiet#dictionary-entry-3",
-        "https://anglo-norman.net/entry/quiet_1",
-        "https://latin-dictionary.net/definition/32649/quietus-quieta",
-        "https://latin-dictionary.net/definition/32646/quies-quietis"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "quiete",
-      "etymology": [
-        {
-          "name": "quies, quietus",
-          "origin": "Latin"
-        },
-        {
-          "name": "quiete",
-          "origin": "Old French"
-        },
-        {
-          "name": "quîat",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/quiet#etymonline_v_3199",
-        "https://www.merriam-webster.com/dictionary/quiet#dictionary-entry-1",
-        "https://anglo-norman.net/entry/quiete_1",
-        "https://latin-dictionary.net/definition/32649/quietus-quieta",
-        "https://latin-dictionary.net/definition/32646/quies-quietis"
-      ],
-      "number": "singular"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to quiet",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "quiet",
+    "etymology": [
+      {
+        "name": "quies, quietus",
+        "origin": "Latin"
       },
-      "etymology": [
-        "quietare",
-        "to quiet",
-        "ta quîate -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to quiet",
-      "etymology": [
-        {
-          "name": "quietare",
-          "origin": "Latin"
-        },
-        {
-          "name": "to quiet",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta quîate -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/quiet#etymonline_v_44843",
-        "https://www.etymonline.com/word/quiet#etymonline_v_44842",
-        "https://www.merriam-webster.com/dictionary/quiet#dictionary-entry-4",
-        "https://dictionary.cambridge.org/us/dictionary/italian-english/quietare"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "quiet",
+        "origin": "Old French"
+      },
+      {
+        "name": "quîat, quîately",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "adverb"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/quiet#etymonline_v_44842",
+      "https://www.merriam-webster.com/dictionary/quietly",
+      "https://www.merriam-webster.com/dictionary/quiet#dictionary-entry-2",
+      "https://www.merriam-webster.com/dictionary/quiet#dictionary-entry-3",
+      "https://anglo-norman.net/entry/quiet_1",
+      "https://latin-dictionary.net/definition/32649/quietus-quieta",
+      "https://latin-dictionary.net/definition/32646/quies-quietis"
+    ]
+  },
+  {
+    "name": "quiete",
+    "etymology": [
+      {
+        "name": "quies, quietus",
+        "origin": "Latin"
+      },
+      {
+        "name": "quiete",
+        "origin": "Old French"
+      },
+      {
+        "name": "quîat",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/quiet#etymonline_v_3199",
+      "https://www.merriam-webster.com/dictionary/quiet#dictionary-entry-1",
+      "https://anglo-norman.net/entry/quiete_1",
+      "https://latin-dictionary.net/definition/32649/quietus-quieta",
+      "https://latin-dictionary.net/definition/32646/quies-quietis"
+    ]
+  },
+  {
+    "infinitive": "to quiet",
+    "etymology": [
+      {
+        "name": "quietare",
+        "origin": "Latin"
+      },
+      {
+        "name": "to quiet",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta quîate -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta quîates",
+          "pastTense": "ta quîated",
+          "progressive": "ta quîating"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/quiet#etymonline_v_44843",
+      "https://www.etymonline.com/word/quiet#etymonline_v_44842",
+      "https://www.merriam-webster.com/dictionary/quiet#dictionary-entry-4",
+      "https://dictionary.cambridge.org/us/dictionary/italian-english/quietare"
+    ]
   }
 ]

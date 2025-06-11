@@ -1,92 +1,70 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "sail",
-      "etymology": [
-        {
-          "name": "segl",
-          "origin": "Old English"
-        },
-        {
-          "name": "seile",
-          "origin": "Middle English"
-        },
-        {
-          "name": "sail",
-          "origin": "Modern English"
-        },
-        {
-          "name": "séle, séls",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/sail#etymonline_v_22608",
-        "https://www.oed.com/dictionary/sail_n1?tab=factsheet#24662295",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39218",
-        "https://bosworthtoller.com/27337"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "sail",
+    "etymology": [
+      {
+        "name": "segl",
+        "origin": "Old English"
+      },
+      {
+        "name": "seile",
+        "origin": "Middle English"
+      },
+      {
+        "name": "sail",
+        "origin": "Modern English"
+      },
+      {
+        "name": "séle, séls",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/sail#etymonline_v_22608",
+      "https://www.oed.com/dictionary/sail_n1?tab=factsheet#24662295",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39218",
+      "https://bosworthtoller.com/27337"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to sail",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to sail",
+    "etymology": [
+      {
+        "name": "seglan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "seglan",
-        "seilen",
-        "to sail",
-        "ta séle -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to sail",
-      "etymology": [
-        {
-          "name": "seglan",
-          "origin": "Old English"
-        },
-        {
-          "name": "seilen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to sail",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta séle -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "seilen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to sail",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta séle -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta séles",
+          "pastTense": "ta séled",
+          "progressive": "ta séling"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/sail#etymonline_v_42896",
-        "https://www.etymonline.com/word/sail#etymonline_v_22608",
-        "https://www.oed.com/dictionary/sail_v1?tab=pronunciation#24665276",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39220",
-        "https://bosworthtoller.com/27338"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/sail#etymonline_v_42896",
+      "https://www.etymonline.com/word/sail#etymonline_v_22608",
+      "https://www.oed.com/dictionary/sail_v1?tab=pronunciation#24665276",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39220",
+      "https://bosworthtoller.com/27338"
+    ]
   }
 ]

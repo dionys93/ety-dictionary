@@ -1,90 +1,68 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to braid",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to braid",
+    "etymology": [
+      {
+        "name": "bregdan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "bregdan",
-        "breyden",
-        "to braid",
-        "ta braide -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to braid",
-      "etymology": [
-        {
-          "name": "bregdan",
-          "origin": "Old English"
-        },
-        {
-          "name": "breyden",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to braid",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta braide -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "breyden",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to braid",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta braide -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta braides",
+          "pastTense": "ta braided",
+          "progressive": "ta braiding"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/braid#etymonline_v_15713",
-        "https://www.merriam-webster.com/dictionary/braid#dictionary-entry-1",
-        "https://www.oed.com/dictionary/braid_v1?tab=factsheet#15241625",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5900",
-        "https://bosworthtoller.com/5022"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/braid#etymonline_v_15713",
+      "https://www.merriam-webster.com/dictionary/braid#dictionary-entry-1",
+      "https://www.oed.com/dictionary/braid_v1?tab=factsheet#15241625",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5900",
+      "https://bosworthtoller.com/5022"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "braid  -s (m n)",
-      "etymology": [
-        {
-          "name": "bragð",
-          "origin": "Old Norse"
-        },
-        {
-          "name": "gebregd, gebrægd",
-          "origin": "Old English"
-        },
-        {
-          "name": "breid",
-          "origin": "Middle English"
-        },
-        {
-          "name": "braid  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/braid#etymonline_v_43993",
-        "https://www.merriam-webster.com/dictionary/braid#dictionary-entry-2",
-        "https://www.oed.com/dictionary/braid_n?tab=factsheet#15237270",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5898",
-        "https://bosworthtoller.com/13750",
-        "https://bosworthtoller.com/13760",
-        "https://old-norse.net/html/b.php#brag%C3%B0-I"
-      ]
-    }
+    "name": "braid  -s (m n)",
+    "etymology": [
+      {
+        "name": "bragð",
+        "origin": "Old Norse"
+      },
+      {
+        "name": "gebregd, gebrægd",
+        "origin": "Old English"
+      },
+      {
+        "name": "breid",
+        "origin": "Middle English"
+      },
+      {
+        "name": "braid  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/braid#etymonline_v_43993",
+      "https://www.merriam-webster.com/dictionary/braid#dictionary-entry-2",
+      "https://www.oed.com/dictionary/braid_n?tab=factsheet#15237270",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5898",
+      "https://bosworthtoller.com/13750",
+      "https://bosworthtoller.com/13760",
+      "https://old-norse.net/html/b.php#brag%C3%B0-I"
+    ]
   }
 ]

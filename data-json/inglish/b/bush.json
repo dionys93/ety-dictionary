@@ -1,77 +1,57 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "bush",
-      "etymology": [
-        {
-          "name": "busc",
-          "origin": "Old English"
-        },
-        {
-          "name": "bush",
-          "origin": "Middle English"
-        },
-        {
-          "name": "bus̃e -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bush#etymonline_v_18128",
-        "https://www.merriam-webster.com/dictionary/bush#dictionary-entry-1",
-        "https://www.oed.com/dictionary/bush_n1?tab=pronunciation#11633162",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6377"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "bush",
+    "etymology": [
+      {
+        "name": "busc",
+        "origin": "Old English"
+      },
+      {
+        "name": "bush",
+        "origin": "Middle English"
+      },
+      {
+        "name": "bus̃e -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bush#etymonline_v_18128",
+      "https://www.merriam-webster.com/dictionary/bush#dictionary-entry-1",
+      "https://www.oed.com/dictionary/bush_n1?tab=pronunciation#11633162",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6377"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to bush",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to bush",
+    "etymology": [
+      {
+        "name": "to bush",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to bush",
-        "ta bus̃e -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to bush",
-      "etymology": [
-        {
-          "name": "to bush",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta bus̃e -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta bus̃e -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta bus̃es",
+          "pastTense": "ta bus̃ed",
+          "progressive": "ta bus̃ing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bush#etymonline_v_53120",
-        "https://www.etymonline.com/word/bush#etymonline_v_18128",
-        "https://www.merriam-webster.com/dictionary/bush#dictionary-entry-2",
-        "https://www.oed.com/dictionary/bush_v1?tab=factsheet#11638623"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bush#etymonline_v_53120",
+      "https://www.etymonline.com/word/bush#etymonline_v_18128",
+      "https://www.merriam-webster.com/dictionary/bush#dictionary-entry-2",
+      "https://www.oed.com/dictionary/bush_v1?tab=factsheet#11638623"
+    ]
   }
 ]

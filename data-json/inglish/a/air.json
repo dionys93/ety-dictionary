@@ -1,178 +1,140 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "air",
-      "etymology": [
-        {
-          "name": "αέρας",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "aer",
-          "origin": "Latin"
-        },
-        {
-          "name": "air",
-          "origin": "Old French"
-        },
-        {
-          "name": "air -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/air#etymonline_v_8078",
-        "https://www.anglo-norman.net/entry/air_1",
-        "https://latin-dictionary.net/definition/2001/aer-aeris",
-        "https://lsj.gr/wiki/%CE%B1%CE%AD%CF%81%CE%B1%CF%82",
-        "https://www.etymonline.com/word/air#etymonline_v_8079",
-        "https://www.etymonline.com/word/air#etymonline_v_8080",
-        "https://www.anglo-norman.net/entry/aire_2"
-      ],
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to air",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "air",
+    "etymology": [
+      {
+        "name": "αέρας",
+        "origin": "Ancient Greek"
       },
-      "etymology": [
-        "to air",
-        "ta aire -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to air",
-      "etymology": [
-        {
-          "name": "to air",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta aire -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/air#etymonline_v_40894"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "aer",
+        "origin": "Latin"
+      },
+      {
+        "name": "air",
+        "origin": "Old French"
+      },
+      {
+        "name": "air -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/air#etymonline_v_8078",
+      "https://www.anglo-norman.net/entry/air_1",
+      "https://latin-dictionary.net/definition/2001/aer-aeris",
+      "https://lsj.gr/wiki/%CE%B1%CE%AD%CF%81%CE%B1%CF%82",
+      "https://www.etymonline.com/word/air#etymonline_v_8079",
+      "https://www.etymonline.com/word/air#etymonline_v_8080",
+      "https://www.anglo-norman.net/entry/aire_2"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "aerial",
-      "etymology": [
-        {
-          "name": "ἀέριος",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "aerius",
-          "origin": "Latin"
-        },
-        {
-          "name": "aerial",
-          "origin": "Modern English"
-        },
-        {
-          "name": "airial",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
+    "infinitive": "to air",
+    "etymology": [
+      {
+        "name": "to air",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta aire -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta aires",
+          "pastTense": "ta aired",
+          "progressive": "ta airing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/aerial#etymonline_v_5175",
-        "https://latin-dictionary.net/definition/2025/aerius-aeria-aerium",
-        "https://lsj.gr/wiki/%E1%BC%80%CE%AD%CF%81%CE%B9%CE%BF%CF%82"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/air#etymonline_v_40894"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "aerobatics",
-      "etymology": [
-        {
-          "name": "aerobatics",
-          "origin": "Modern English"
-        },
-        {
-          "name": "airobàtics",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/aerobatics#etymonline_v_40817",
-        "https://www.merriam-webster.com/dictionary/aerobatics"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "aerial",
+    "etymology": [
+      {
+        "name": "ἀέριος",
+        "origin": "Ancient Greek"
+      },
+      {
+        "name": "aerius",
+        "origin": "Latin"
+      },
+      {
+        "name": "aerial",
+        "origin": "Modern English"
+      },
+      {
+        "name": "airial",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/aerial#etymonline_v_5175",
+      "https://latin-dictionary.net/definition/2025/aerius-aeria-aerium",
+      "https://lsj.gr/wiki/%E1%BC%80%CE%AD%CF%81%CE%B9%CE%BF%CF%82"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "aeroplane, airplane",
-      "etymology": [
-        {
-          "name": "aéroplane",
-          "origin": "French"
-        },
-        {
-          "name": "aeroplane, airplane",
-          "origin": "Modern English"
-        },
-        {
-          "name": "airplân -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/airplane#etymonline_v_8083",
-        "https://www.etymonline.com/word/aeroplane#etymonline_v_5179",
-        "https://www.etymonline.com/word/air#etymonline_v_8078",
-        "https://www.etymonline.com/word/plane#etymonline_v_16433",
-        "https://www.etymonline.com/word/plane#etymonline_v_16434"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "aerobatics",
+    "etymology": [
+      {
+        "name": "aerobatics",
+        "origin": "Modern English"
+      },
+      {
+        "name": "airobàtics",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/aerobatics#etymonline_v_40817",
+      "https://www.merriam-webster.com/dictionary/aerobatics"
+    ]
+  },
+  {
+    "name": "aeroplane, airplane",
+    "etymology": [
+      {
+        "name": "aéroplane",
+        "origin": "French"
+      },
+      {
+        "name": "aeroplane, airplane",
+        "origin": "Modern English"
+      },
+      {
+        "name": "airplân -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/airplane#etymonline_v_8083",
+      "https://www.etymonline.com/word/aeroplane#etymonline_v_5179",
+      "https://www.etymonline.com/word/air#etymonline_v_8078",
+      "https://www.etymonline.com/word/plane#etymonline_v_16433",
+      "https://www.etymonline.com/word/plane#etymonline_v_16434"
+    ]
   }
 ]

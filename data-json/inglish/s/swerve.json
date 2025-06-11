@@ -1,82 +1,60 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to swerve",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to swerve",
+    "etymology": [
+      {
+        "name": "sweorfan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "sweorfan",
-        "swerven",
-        "to swerve",
-        "ta suêve -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to swerve",
-      "etymology": [
-        {
-          "name": "sweorfan",
-          "origin": "Old English"
-        },
-        {
-          "name": "swerven",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to swerve",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta suêve -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "swerven",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to swerve",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta suêve -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta suêves",
+          "pastTense": "ta suêved",
+          "progressive": "ta suêving"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/swerve#etymonline_v_22486",
-        "https://www.merriam-webster.com/dictionary/swerve",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44151",
-        "https://bosworthtoller.com/29713"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/swerve#etymonline_v_22486",
+      "https://www.merriam-webster.com/dictionary/swerve",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44151",
+      "https://bosworthtoller.com/29713"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "swerve",
-      "etymology": [
-        {
-          "name": "swerve",
-          "origin": "Modern English"
-        },
-        {
-          "name": "suêve -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/swerve#etymonline_v_45197",
-        "https://www.etymonline.com/word/swerve#etymonline_v_22486",
-        "https://www.merriam-webster.com/dictionary/swerve"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "swerve",
+    "etymology": [
+      {
+        "name": "swerve",
+        "origin": "Modern English"
+      },
+      {
+        "name": "suêve -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/swerve#etymonline_v_45197",
+      "https://www.etymonline.com/word/swerve#etymonline_v_22486",
+      "https://www.merriam-webster.com/dictionary/swerve"
+    ]
   }
 ]

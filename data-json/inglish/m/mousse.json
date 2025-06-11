@@ -1,67 +1,47 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "mousse  -s (f n)",
-      "etymology": [
-        {
-          "name": "mulsum",
-          "origin": "Latin"
-        },
-        {
-          "name": "mousse  -s (f n)",
-          "origin": "French"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/mousse#etymonline_v_18435",
-        "https://www.oed.com/dictionary/mousse_n?tab=factsheet#35789199",
-        "https://www.merriam-webster.com/dictionary/mousse#dictionary-entry-1",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/mousse/52833",
-        "https://latin-dictionary.net/definition/27354/mulsum-mulsi"
-      ]
-    }
+    "name": "mousse  -s (f n)",
+    "etymology": [
+      {
+        "name": "mulsum",
+        "origin": "Latin"
+      },
+      {
+        "name": "mousse  -s (f n)",
+        "origin": "French"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/mousse#etymonline_v_18435",
+      "https://www.oed.com/dictionary/mousse_n?tab=factsheet#35789199",
+      "https://www.merriam-webster.com/dictionary/mousse#dictionary-entry-1",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/mousse/52833",
+      "https://latin-dictionary.net/definition/27354/mulsum-mulsi"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to mousse",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to mousse",
+    "etymology": [
+      {
+        "name": "to mousse",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to mousse",
-        "ta mousse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to mousse",
-      "etymology": [
-        {
-          "name": "to mousse",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta mousse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta mousse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta mousses",
+          "pastTense": "ta moussed",
+          "progressive": "ta moussing"
         }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/mousse#dictionary-entry-2",
-        "https://www.oed.com/dictionary/mousse_v?tab=factsheet#35789609"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/mousse#dictionary-entry-2",
+      "https://www.oed.com/dictionary/mousse_v?tab=factsheet#35789609"
+    ]
   }
 ]

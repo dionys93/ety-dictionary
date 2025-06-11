@@ -1,228 +1,173 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "pair  -s (m n)",
-      "etymology": [
-        {
-          "name": "par",
-          "origin": "Latin"
-        },
-        {
-          "name": "paria",
-          "origin": "Medieval Latin"
-        },
-        {
-          "name": "paire",
-          "origin": "Old French"
-        },
-        {
-          "name": "pair  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/pair#etymonline_v_2994",
-        "https://www.oed.com/dictionary/pair_n1?tab=factsheet#32478029",
-        "https://www.oed.com/dictionary/pair_n3?tab=factsheet#12941958",
-        "https://anglo-norman.net/entry/paire_1",
-        "https://latin-dictionary.net/definition/29263/par-paris"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to pair",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "pair  -s (m n)",
+    "etymology": [
+      {
+        "name": "par",
+        "origin": "Latin"
       },
-      "etymology": [
-        "par",
-        "paria",
-        "paire",
-        "to pair",
-        "ta paire -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to pair",
-      "etymology": [
-        {
-          "name": "par",
-          "origin": "Latin"
-        },
-        {
-          "name": "paria",
-          "origin": "Medieval Latin"
-        },
-        {
-          "name": "paire",
-          "origin": "Old French"
-        },
-        {
-          "name": "to pair",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta paire -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/pair#etymonline_v_42662",
-        "https://www.oed.com/dictionary/pair_v2?tab=factsheet#32482807",
-        "https://anglo-norman.net/entry/paire_1",
-        "https://latin-dictionary.net/definition/29263/par-paris"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "par",
-      "etymology": [
-        {
-          "name": "par",
-          "origin": "Latin"
-        },
-        {
-          "name": "pare, pars",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/par#etymonline_v_7161",
-        "https://www.oed.com/dictionary/par_n1?tab=factsheet#32252962",
-        "https://latin-dictionary.net/definition/29263/par-paris"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "par",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "paria",
+        "origin": "Medieval Latin"
       },
-      "etymology": [
-        "par",
-        "ta pare -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "par",
-      "etymology": [
-        {
-          "name": "par",
-          "origin": "Latin"
-        },
-        {
-          "name": "ta pare -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/par",
-        "https://www.oed.com/dictionary/par_v2?tab=factsheet#32254537"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "paire",
+        "origin": "Old French"
+      },
+      {
+        "name": "pair  -s (m n)",
+        "origin": "Modern English"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/pair#etymonline_v_2994",
+      "https://www.oed.com/dictionary/pair_n1?tab=factsheet#32478029",
+      "https://www.oed.com/dictionary/pair_n3?tab=factsheet#12941958",
+      "https://anglo-norman.net/entry/paire_1",
+      "https://latin-dictionary.net/definition/29263/par-paris"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "per  (prep)",
-      "etymology": [
-        {
-          "name": "per",
-          "origin": "Latin"
-        },
-        {
-          "name": "par, per",
-          "origin": "Old French"
-        },
-        {
-          "name": "per  (prep)",
-          "origin": "Modern English"
+    "infinitive": "to pair",
+    "etymology": [
+      {
+        "name": "par",
+        "origin": "Latin"
+      },
+      {
+        "name": "paria",
+        "origin": "Medieval Latin"
+      },
+      {
+        "name": "paire",
+        "origin": "Old French"
+      },
+      {
+        "name": "to pair",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta paire -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta paires",
+          "pastTense": "ta paired",
+          "progressive": "ta pairing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/par#etymonline_v_46183",
-        "https://www.oed.com/dictionary/per_prep?tab=factsheet#13140252",
-        "https://anglo-norman.net/entry/par_1",
-        "https://latin-dictionary.net/definition/29744/per"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/pair#etymonline_v_42662",
+      "https://www.oed.com/dictionary/pair_v2?tab=factsheet#32482807",
+      "https://anglo-norman.net/entry/paire_1",
+      "https://latin-dictionary.net/definition/29263/par-paris"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "parity",
-      "etymology": [
-        {
-          "name": "par, paritas",
-          "origin": "Latin"
-        },
-        {
-          "name": "parité",
-          "origin": "French"
-        },
-        {
-          "name": "parity",
-          "origin": "Modern English"
-        },
-        {
-          "name": "pairetie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
+    "name": "par",
+    "etymology": [
+      {
+        "name": "par",
+        "origin": "Latin"
+      },
+      {
+        "name": "pare, pars",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/par#etymonline_v_7161",
+      "https://www.oed.com/dictionary/par_n1?tab=factsheet#32252962",
+      "https://latin-dictionary.net/definition/29263/par-paris"
+    ]
+  },
+  {
+    "infinitive": "par",
+    "etymology": [
+      {
+        "name": "par",
+        "origin": "Latin"
+      },
+      {
+        "name": "ta pare -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta pares",
+          "pastTense": "ta pared",
+          "progressive": "ta paring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/parity#etymonline_v_7218",
-        "https://www.oed.com/dictionary/parity_n1?tab=factsheet#31979983",
-        "https://www.littre.org/definition/parit%C3%A9",
-        "https://latin-dictionary.net/definition/29345/paritas-paritatis",
-        "https://latin-dictionary.net/definition/29263/par-paris"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/par",
+      "https://www.oed.com/dictionary/par_v2?tab=factsheet#32254537"
+    ]
+  },
+  {
+    "name": "per  (prep)",
+    "etymology": [
+      {
+        "name": "per",
+        "origin": "Latin"
+      },
+      {
+        "name": "par, per",
+        "origin": "Old French"
+      },
+      {
+        "name": "per  (prep)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/par#etymonline_v_46183",
+      "https://www.oed.com/dictionary/per_prep?tab=factsheet#13140252",
+      "https://anglo-norman.net/entry/par_1",
+      "https://latin-dictionary.net/definition/29744/per"
+    ]
+  },
+  {
+    "name": "parity",
+    "etymology": [
+      {
+        "name": "par, paritas",
+        "origin": "Latin"
+      },
+      {
+        "name": "parité",
+        "origin": "French"
+      },
+      {
+        "name": "parity",
+        "origin": "Modern English"
+      },
+      {
+        "name": "pairetie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/parity#etymonline_v_7218",
+      "https://www.oed.com/dictionary/parity_n1?tab=factsheet#31979983",
+      "https://www.littre.org/definition/parit%C3%A9",
+      "https://latin-dictionary.net/definition/29345/paritas-paritatis",
+      "https://latin-dictionary.net/definition/29263/par-paris"
+    ]
   }
 ]

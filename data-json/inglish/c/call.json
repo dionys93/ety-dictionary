@@ -1,77 +1,55 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to call",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to call",
+    "etymology": [
+      {
+        "name": "kalla",
+        "origin": "Old Norse"
       },
-      "etymology": [
-        "kalla",
-        "callen",
-        "to call",
-        "ta calle -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to call",
-      "etymology": [
-        {
-          "name": "kalla",
-          "origin": "Old Norse"
-        },
-        {
-          "name": "callen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to call",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta calle -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "callen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to call",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta calle -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta calles",
+          "pastTense": "ta called",
+          "progressive": "ta calling"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/call#etymonline_v_604",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6554",
-        "https://bosworthtoller.com/5920",
-        "https://old-norse.net/html/k.php#kalla"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/call#etymonline_v_604",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6554",
+      "https://bosworthtoller.com/5920",
+      "https://old-norse.net/html/k.php#kalla"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "call  -s (m n)",
-      "etymology": [
-        {
-          "name": "cal",
-          "origin": "Middle English"
-        },
-        {
-          "name": "call  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/call#etymonline_v_44448",
-        "https://www.etymonline.com/word/call#etymonline_v_604",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6495"
-      ]
-    }
+    "name": "call  -s (m n)",
+    "etymology": [
+      {
+        "name": "cal",
+        "origin": "Middle English"
+      },
+      {
+        "name": "call  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/call#etymonline_v_44448",
+      "https://www.etymonline.com/word/call#etymonline_v_604",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6495"
+    ]
   }
 ]

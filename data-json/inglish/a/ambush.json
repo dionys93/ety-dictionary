@@ -1,92 +1,70 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to ambush",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to ambush",
+    "etymology": [
+      {
+        "name": "embuschier",
+        "origin": "Old French"
       },
-      "etymology": [
-        "embuschier",
-        "embushen, enbushen, inbuchen",
-        "to ambush",
-        "ta ambuçe -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to ambush",
-      "etymology": [
-        {
-          "name": "embuschier",
-          "origin": "Old French"
-        },
-        {
-          "name": "embushen, enbushen, inbuchen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to ambush",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta ambuçe -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "embushen, enbushen, inbuchen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to ambush",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta ambuçe -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta ambuçes",
+          "pastTense": "ta ambuçed",
+          "progressive": "ta ambuçing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/ambush#etymonline_v_10967",
-        "https://www.merriam-webster.com/dictionary/ambush#dictionary-entry-1",
-        "https://www.oed.com/dictionary/ambush_v?tab=factsheet#5457279",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/emb%C3%BBche/28572",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13401",
-        "https://www.anglo-norman.net/entry/embuscher"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/ambush#etymonline_v_10967",
+      "https://www.merriam-webster.com/dictionary/ambush#dictionary-entry-1",
+      "https://www.oed.com/dictionary/ambush_v?tab=factsheet#5457279",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/emb%C3%BBche/28572",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13401",
+      "https://www.anglo-norman.net/entry/embuscher"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "ambush",
-      "etymology": [
-        {
-          "name": "embuschier, embushe",
-          "origin": "Old French"
-        },
-        {
-          "name": "ambush",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ambuçe -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/ambush#etymonline_v_41140",
-        "https://www.merriam-webster.com/dictionary/ambush#dictionary-entry-2",
-        "https://www.oed.com/dictionary/ambush_n?tab=factsheet#5455675",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13400",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/emb%C3%BBche/28572",
-        "https://www.anglo-norman.net/entry/embuschement",
-        "https://www.anglo-norman.net/entry/embuscher"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "ambush",
+    "etymology": [
+      {
+        "name": "embuschier, embushe",
+        "origin": "Old French"
+      },
+      {
+        "name": "ambush",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ambuçe -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/ambush#etymonline_v_41140",
+      "https://www.merriam-webster.com/dictionary/ambush#dictionary-entry-2",
+      "https://www.oed.com/dictionary/ambush_n?tab=factsheet#5455675",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13400",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/emb%C3%BBche/28572",
+      "https://www.anglo-norman.net/entry/embuschement",
+      "https://www.anglo-norman.net/entry/embuscher"
+    ]
   }
 ]

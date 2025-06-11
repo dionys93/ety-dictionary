@@ -1,74 +1,55 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "tunnel",
-      "etymology": [
-        {
-          "name": "tonne, tonel",
-          "origin": "Old French"
-        },
-        {
-          "name": "tunnel",
-          "origin": "Modern English"
-        },
-        {
-          "name": "tonle, tonels",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/tunnel#etymonline_v_18817",
-        "https://www.oed.com/dictionary/tunnel_n?tab=factsheet#17477654",
-        "https://anglo-norman.net/entry/tonel",
-        "https://anglo-norman.net/entry/tone"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "tunnel",
+    "etymology": [
+      {
+        "name": "tonne, tonel",
+        "origin": "Old French"
+      },
+      {
+        "name": "tunnel",
+        "origin": "Modern English"
+      },
+      {
+        "name": "tonle, tonels",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/tunnel#etymonline_v_18817",
+      "https://www.oed.com/dictionary/tunnel_n?tab=factsheet#17477654",
+      "https://anglo-norman.net/entry/tonel",
+      "https://anglo-norman.net/entry/tone"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to tunnel",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
+    "infinitive": "to tunnel",
+    "etymology": [
+      {
+        "name": "to tunnel",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to tunnel",
-        "ta tonle -s -d toneling"
-      ]
-    },
-    "standard": {
-      "name": "to tunnel",
-      "etymology": [
-        {
-          "name": "to tunnel",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta tonle -s -d toneling",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta tonle -s -d toneling",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta tonles",
+          "pastTense": "ta tonled"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/tunnel#etymonline_v_45027",
-        "https://www.oed.com/dictionary/tunnel_v?tab=factsheet#17479169",
-        "https://www.etymonline.com/word/tunnel#etymonline_v_18817"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/tunnel#etymonline_v_45027",
+      "https://www.oed.com/dictionary/tunnel_v?tab=factsheet#17479169",
+      "https://www.etymonline.com/word/tunnel#etymonline_v_18817"
+    ]
   }
 ]

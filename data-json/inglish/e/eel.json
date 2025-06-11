@@ -1,78 +1,58 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "eel",
-      "etymology": [
-        {
-          "name": "æl",
-          "origin": "Old English"
-        },
-        {
-          "name": "ele",
-          "origin": "Middle English"
-        },
-        {
-          "name": "eel",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ýle, ýls",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/eel#etymonline_v_1011",
-        "https://www.merriam-webster.com/dictionary/eel#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13224",
-        "https://bosworthtoller.com/570"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "eel",
+    "etymology": [
+      {
+        "name": "æl",
+        "origin": "Old English"
+      },
+      {
+        "name": "ele",
+        "origin": "Middle English"
+      },
+      {
+        "name": "eel",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ýle, ýls",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/eel#etymonline_v_1011",
+      "https://www.merriam-webster.com/dictionary/eel#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13224",
+      "https://bosworthtoller.com/570"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to eel",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to eel",
+    "etymology": [
+      {
+        "name": "to eel",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to eel",
-        "ta ýle -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to eel",
-      "etymology": [
-        {
-          "name": "to eel",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta ýle -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta ýle -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta ýles",
+          "pastTense": "ta ýled",
+          "progressive": "ta ýling"
         }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/eel#dictionary-entry-2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/eel#dictionary-entry-2"
+    ]
   }
 ]

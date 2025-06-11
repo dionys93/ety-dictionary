@@ -1,152 +1,119 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to admire",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
+    "infinitive": "to admire",
+    "etymology": [
+      {
+        "name": "mirus, ad + mirari, admirari",
+        "origin": "Latin"
       },
-      "etymology": [
-        "mirus, ad + mirari, admirari",
-        "admirer",
-        "to admire",
-        "to admîre -s -d admîaring"
-      ]
-    },
-    "standard": {
-      "name": "to admire",
-      "etymology": [
-        {
-          "name": "mirus, ad + mirari, admirari",
-          "origin": "Latin"
-        },
-        {
-          "name": "admirer",
-          "origin": "Old French"
-        },
-        {
-          "name": "to admire",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to admîre -s -d admîaring",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "admirer",
+        "origin": "Old French"
+      },
+      {
+        "name": "to admire",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to admîre -s -d admîaring",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to admîres",
+          "pastTense": "to admîred"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/admire#etymonline_v_26020",
-        "https://www.oed.com/dictionary/admire_v?tab=factsheet#11019477",
-        "https://www.anglo-norman.net/entry/admirer",
-        "https://latin-dictionary.net/definition/1163/admiror-admirari-admiratus",
-        "https://latin-dictionary.net/definition/27011/mirus-mira-mirum"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/admire#etymonline_v_26020",
+      "https://www.oed.com/dictionary/admire_v?tab=factsheet#11019477",
+      "https://www.anglo-norman.net/entry/admirer",
+      "https://latin-dictionary.net/definition/1163/admiror-admirari-admiratus",
+      "https://latin-dictionary.net/definition/27011/mirus-mira-mirum"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "admirer",
-      "etymology": [
-        {
-          "name": "admirer",
-          "origin": "Modern English"
-        },
-        {
-          "name": "admîreur -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/admirer#etymonline_v_44116",
-        "https://www.oed.com/dictionary/admirer_n?tab=factsheet#11049162",
-        "https://www.collinsdictionary.com/us/dictionary/english/admirer"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "admirer",
+    "etymology": [
+      {
+        "name": "admirer",
+        "origin": "Modern English"
+      },
+      {
+        "name": "admîreur -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/admirer#etymonline_v_44116",
+      "https://www.oed.com/dictionary/admirer_n?tab=factsheet#11049162",
+      "https://www.collinsdictionary.com/us/dictionary/english/admirer"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "admiration",
-      "etymology": [
-        {
-          "name": "mirus, ad + mirari, admirari, admiratio",
-          "origin": "Latin"
-        },
-        {
-          "name": "admiration",
-          "origin": "Old French"
-        },
-        {
-          "name": "admirâcion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/admiration#etymonline_v_5129",
-        "https://www.oed.com/dictionary/admiration_n?tab=factsheet#11158476",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/admiration/1128",
-        "https://latin-dictionary.net/definition/1161/admiratio-admirationis",
-        "https://latin-dictionary.net/definition/1163/admiror-admirari-admiratus",
-        "https://latin-dictionary.net/definition/27011/mirus-mira-mirum"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "admiration",
+    "etymology": [
+      {
+        "name": "mirus, ad + mirari, admirari, admiratio",
+        "origin": "Latin"
+      },
+      {
+        "name": "admiration",
+        "origin": "Old French"
+      },
+      {
+        "name": "admirâcion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/admiration#etymonline_v_5129",
+      "https://www.oed.com/dictionary/admiration_n?tab=factsheet#11158476",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/admiration/1128",
+      "https://latin-dictionary.net/definition/1161/admiratio-admirationis",
+      "https://latin-dictionary.net/definition/1163/admiror-admirari-admiratus",
+      "https://latin-dictionary.net/definition/27011/mirus-mira-mirum"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "admirable",
-      "etymology": [
-        {
-          "name": "admirari, admirabilis",
-          "origin": "Latin"
-        },
-        {
-          "name": "admirable",
-          "origin": "Old French"
-        },
-        {
-          "name": "admîrable",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/admirable#etymonline_v_26019",
-        "https://www.oed.com/dictionary/admirable_adj?tab=factsheet#11253778",
-        "https://www.merriam-webster.com/dictionary/admirable",
-        "https://www.collinsdictionary.com/us/dictionary/english/admirable",
-        "https://www.anglo-norman.net/entry/admirable",
-        "https://latin-dictionary.net/definition/1154/admirabilis-admirabilis-admirabile",
-        "https://latin-dictionary.net/definition/1163/admiror-admirari-admiratus"
-      ]
-    }
+    "name": "admirable",
+    "etymology": [
+      {
+        "name": "admirari, admirabilis",
+        "origin": "Latin"
+      },
+      {
+        "name": "admirable",
+        "origin": "Old French"
+      },
+      {
+        "name": "admîrable",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/admirable#etymonline_v_26019",
+      "https://www.oed.com/dictionary/admirable_adj?tab=factsheet#11253778",
+      "https://www.merriam-webster.com/dictionary/admirable",
+      "https://www.collinsdictionary.com/us/dictionary/english/admirable",
+      "https://www.anglo-norman.net/entry/admirable",
+      "https://latin-dictionary.net/definition/1154/admirabilis-admirabilis-admirabile",
+      "https://latin-dictionary.net/definition/1163/admiror-admirari-admiratus"
+    ]
   }
 ]

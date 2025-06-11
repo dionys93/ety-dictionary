@@ -1,87 +1,65 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "name",
-      "etymology": [
-        {
-          "name": "nama, noma",
-          "origin": "Old English"
-        },
-        {
-          "name": "name",
-          "origin": "Middle English"
-        },
-        {
-          "name": "nâme, nâms",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/name#etymonline_v_2264",
-        "https://www.merriam-webster.com/dictionary/name#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29051",
-        "https://bosworthtoller.com/23424"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "name",
+    "etymology": [
+      {
+        "name": "nama, noma",
+        "origin": "Old English"
+      },
+      {
+        "name": "name",
+        "origin": "Middle English"
+      },
+      {
+        "name": "nâme, nâms",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/name#etymonline_v_2264",
+      "https://www.merriam-webster.com/dictionary/name#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29051",
+      "https://bosworthtoller.com/23424"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to name",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to name",
+    "etymology": [
+      {
+        "name": "namian",
+        "origin": "Old English"
       },
-      "etymology": [
-        "namian",
-        "namen",
-        "to name",
-        "ta nâme -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to name",
-      "etymology": [
-        {
-          "name": "namian",
-          "origin": "Old English"
-        },
-        {
-          "name": "namen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to name",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta nâme -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "namen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to name",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta nâme -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta nâmes",
+          "pastTense": "ta nâmed",
+          "progressive": "ta nâming"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/name#etymonline_v_44529",
-        "https://www.merriam-webster.com/dictionary/name#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29059",
-        "https://bosworthtoller.com/23429"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/name#etymonline_v_44529",
+      "https://www.merriam-webster.com/dictionary/name#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29059",
+      "https://bosworthtoller.com/23429"
+    ]
   }
 ]

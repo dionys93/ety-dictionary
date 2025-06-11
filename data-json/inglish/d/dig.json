@@ -1,52 +1,40 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "to dig",
-      "etymology": [
-        {
-          "name": "diggen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to dig",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta dighe -s dug dighing",
-          "origin": "Inglish"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/dig#etymonline_v_8562",
-        "https://www.merriam-webster.com/dictionary/dig#dictionary-entry-1",
-        "https://www.oed.com/dictionary/dig_v?tab=factsheet#6762126",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED11609"
-      ]
-    }
+    "name": "to dig",
+    "etymology": [
+      {
+        "name": "diggen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to dig",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta dighe -s dug dighing",
+        "origin": "Inglish"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/dig#etymonline_v_8562",
+      "https://www.merriam-webster.com/dictionary/dig#dictionary-entry-1",
+      "https://www.oed.com/dictionary/dig_v?tab=factsheet#6762126",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED11609"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "dig  -s (n)",
-      "etymology": [
-        {
-          "name": "dig  -s (n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/dig#etymonline_v_46243",
-        "https://www.etymonline.com/word/dig#etymonline_v_8562",
-        "https://www.merriam-webster.com/dictionary/dig#dictionary-entry-2",
-        "https://www.oed.com/dictionary/dig_n1?tab=factsheet#6761680"
-      ]
-    }
+    "name": "dig  -s (n)",
+    "etymology": [
+      {
+        "name": "dig  -s (n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/dig#etymonline_v_46243",
+      "https://www.etymonline.com/word/dig#etymonline_v_8562",
+      "https://www.merriam-webster.com/dictionary/dig#dictionary-entry-2",
+      "https://www.oed.com/dictionary/dig_n1?tab=factsheet#6761680"
+    ]
   }
 ]

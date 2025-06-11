@@ -1,182 +1,127 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "wise",
-      "etymology": [
-        {
-          "name": "wis",
-          "origin": "Old English"
-        },
-        {
-          "name": "wise",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ɯîse -r -st",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/wise#etymonline_v_10789",
-        "https://www.merriam-webster.com/dictionary/wise#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/wise#word-history",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52952",
-        "https://bosworthtoller.com/36032"
-      ],
-      "degrees": {
-        "positive": "se",
-        "comparative": "r",
-        "superlative": "st"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "-wise",
-      "etymology": [
-        "-wise",
-        "ɯîs"
-      ]
-    },
-    "standard": {
-      "name": "-wise",
-      "etymology": [
-        {
-          "name": "-wise",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ɯîs",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adverb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/wise#etymonline_v_10790",
-        "https://www.merriam-webster.com/dictionary/wise#dictionary-entry-5",
-        "https://www.merriam-webster.com/dictionary/wise#word-history",
-        "https://bosworthtoller.com/36042"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to wise",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "wise",
+    "etymology": [
+      {
+        "name": "wis",
+        "origin": "Old English"
       },
-      "etymology": [
-        "wisian, wisean",
-        "wise",
-        "ta ɯîse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to wise",
-      "etymology": [
-        {
-          "name": "wisian, wisean",
-          "origin": "Old English"
-        },
-        {
-          "name": "wise",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta ɯîse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/wise#etymonline_v_50160",
-        "https://www.merriam-webster.com/dictionary/wise#dictionary-entry-4",
-        "https://www.merriam-webster.com/dictionary/wise#word-history",
-        "https://bosworthtoller.com/36051",
-        "https://bosworthtoller.com/36091"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "wisian, wisean",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "wise",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "wisian, wisean",
-        "ta ɯîsen -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "wisian, wisean",
-      "etymology": [
-        {
-          "name": "wisian, wisean",
-          "origin": "Old English"
-        },
-        {
-          "name": "ta ɯîsen -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://en.wiktionary.org/wiki/wisen#:~:text=(intransitive)%20To%20become%20wise%20or,To%20make%20wise%20or%20wiser.",
-        "https://www.merriam-webster.com/dictionary/wise#word-history",
-        "https://bosworthtoller.com/36051",
-        "https://bosworthtoller.com/36091"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "ɯîse -r -st",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/wise#etymonline_v_10789",
+      "https://www.merriam-webster.com/dictionary/wise#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/wise#word-history",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52952",
+      "https://bosworthtoller.com/36032"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "wisdom",
-      "etymology": [
-        {
-          "name": "wisdom",
-          "origin": "Old English"
-        },
-        {
-          "name": "ɯisdom -s",
-          "origin": "Inglish"
+    "infinitive": "-wise",
+    "etymology": [
+      {
+        "name": "-wise",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ɯîs",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adverb"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/wise#etymonline_v_10790",
+      "https://www.merriam-webster.com/dictionary/wise#dictionary-entry-5",
+      "https://www.merriam-webster.com/dictionary/wise#word-history",
+      "https://bosworthtoller.com/36042"
+    ]
+  },
+  {
+    "infinitive": "wise",
+    "etymology": [
+      {
+        "name": "wisian, wisean",
+        "origin": "Old English"
+      },
+      {
+        "name": "wise",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta ɯîse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta ɯîses",
+          "pastTense": "ta ɯîsed",
+          "progressive": "ta ɯîsing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/wisdom#etymonline_v_10788",
-        "https://bosworthtoller.com/36041"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/wise#etymonline_v_50160",
+      "https://www.merriam-webster.com/dictionary/wise#dictionary-entry-4",
+      "https://www.merriam-webster.com/dictionary/wise#word-history",
+      "https://bosworthtoller.com/36051",
+      "https://bosworthtoller.com/36091"
+    ]
+  },
+  {
+    "infinitive": "wisian, wisean",
+    "etymology": [
+      {
+        "name": "wisian, wisean",
+        "origin": "Old English"
+      },
+      {
+        "name": "ta ɯîsen -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta ɯîsens",
+          "pastTense": "ta ɯîsend",
+          "progressive": "ta ɯîsening"
+        }
+      }
+    ],
+    "sources": [
+      "https://en.wiktionary.org/wiki/wisen#:~:text=(intransitive)%20To%20become%20wise%20or,To%20make%20wise%20or%20wiser.",
+      "https://www.merriam-webster.com/dictionary/wise#word-history",
+      "https://bosworthtoller.com/36051",
+      "https://bosworthtoller.com/36091"
+    ]
+  },
+  {
+    "name": "wisdom",
+    "etymology": [
+      {
+        "name": "wisdom",
+        "origin": "Old English"
+      },
+      {
+        "name": "ɯisdom -s",
+        "origin": "Inglish"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/wisdom#etymonline_v_10788",
+      "https://bosworthtoller.com/36041"
+    ]
   }
 ]

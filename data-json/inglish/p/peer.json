@@ -1,137 +1,110 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "peer",
-      "etymology": [
-        {
-          "name": "par",
-          "origin": "Latin"
-        },
-        {
-          "name": "per",
-          "origin": "Old French"
-        },
-        {
-          "name": "peir",
-          "origin": "Inglish"
-        },
-        {
-          "name": "peer",
-          "origin": "Modern English"
-        },
-        {
-          "name": "piar -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/peer#etymonline_v_10261",
-        "https://www.merriam-webster.com/dictionary/peer#dictionary-entry-1",
-        "https://www.oed.com/dictionary/peer_n?tab=factsheet#31476281",
-        "https://www.anglo-norman.net/entry/peir",
-        "https://www.anglo-norman.net/entry/per_1",
-        "https://latin-dictionary.net/definition/29263/par-paris"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "compeer",
-      "etymology": [
-        {
-          "name": "compere",
-          "origin": "Old French"
-        },
-        {
-          "name": "compeer",
-          "origin": "Modern English"
-        },
-        {
-          "name": "compíar -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/compeer#etymonline_v_28457",
-        "https://trends.google.com/trends/explore?date=all&q=compeer&hl=en",
-        "https://www.oed.com/dictionary/compeer_n?tab=pronunciation#8809567",
-        "https://anglo-norman.net/entry/comper_1"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to peer",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "peer",
+    "etymology": [
+      {
+        "name": "par",
+        "origin": "Latin"
       },
-      "etymology": [
-        "ad + parere, apparere",
-        "aparoir, aperer",
-        "aperen, peren, piren",
-        "to peer",
-        "ta piore -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to peer",
-      "etymology": [
-        {
-          "name": "ad + parere, apparere",
-          "origin": "Latin"
-        },
-        {
-          "name": "aparoir, aperer",
-          "origin": "Old French"
-        },
-        {
-          "name": "aperen, peren, piren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to peer",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta piore -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/peer#etymonline_v_10262",
-        "https://www.etymonline.com/word/appear#etymonline_v_15496",
-        "https://www.merriam-webster.com/dictionary/peer#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32953",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED1919",
-        "https://www.anglo-norman.net/entry/aparoir",
-        "https://latin-dictionary.net/definition/4085/appareo-apparere-apparui-apparitus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "per",
+        "origin": "Old French"
+      },
+      {
+        "name": "peir",
+        "origin": "Inglish"
+      },
+      {
+        "name": "peer",
+        "origin": "Modern English"
+      },
+      {
+        "name": "piar -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/peer#etymonline_v_10261",
+      "https://www.merriam-webster.com/dictionary/peer#dictionary-entry-1",
+      "https://www.oed.com/dictionary/peer_n?tab=factsheet#31476281",
+      "https://www.anglo-norman.net/entry/peir",
+      "https://www.anglo-norman.net/entry/per_1",
+      "https://latin-dictionary.net/definition/29263/par-paris"
+    ]
+  },
+  {
+    "name": "compeer",
+    "etymology": [
+      {
+        "name": "compere",
+        "origin": "Old French"
+      },
+      {
+        "name": "compeer",
+        "origin": "Modern English"
+      },
+      {
+        "name": "compíar -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/compeer#etymonline_v_28457",
+      "https://trends.google.com/trends/explore?date=all&q=compeer&hl=en",
+      "https://www.oed.com/dictionary/compeer_n?tab=pronunciation#8809567",
+      "https://anglo-norman.net/entry/comper_1"
+    ]
+  },
+  {
+    "infinitive": "to peer",
+    "etymology": [
+      {
+        "name": "ad + parere, apparere",
+        "origin": "Latin"
+      },
+      {
+        "name": "aparoir, aperer",
+        "origin": "Old French"
+      },
+      {
+        "name": "aperen, peren, piren",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to peer",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta piore -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta piores",
+          "pastTense": "ta piored",
+          "progressive": "ta pioring"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/peer#etymonline_v_10262",
+      "https://www.etymonline.com/word/appear#etymonline_v_15496",
+      "https://www.merriam-webster.com/dictionary/peer#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32953",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED1919",
+      "https://www.anglo-norman.net/entry/aparoir",
+      "https://latin-dictionary.net/definition/4085/appareo-apparere-apparui-apparitus"
+    ]
   }
 ]

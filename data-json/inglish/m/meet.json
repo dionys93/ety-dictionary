@@ -1,78 +1,58 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to meet",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to meet",
+    "etymology": [
+      {
+        "name": "metan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "metan",
-        "meten",
-        "to meet",
-        "ta miete -s mèt -ing"
-      ]
-    },
-    "standard": {
-      "name": "to meet",
-      "etymology": [
-        {
-          "name": "metan",
-          "origin": "Old English"
-        },
-        {
-          "name": "meten",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to meet",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta miete -s mèt -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "meten",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to meet",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta miete -s mèt -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta mietes"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/meet#etymonline_v_12530",
-        "https://www.merriam-webster.com/dictionary/meet#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED27563",
-        "https://bosworthtoller.com/22709"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/meet#etymonline_v_12530",
+      "https://www.merriam-webster.com/dictionary/meet#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED27563",
+      "https://bosworthtoller.com/22709"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "meet",
-      "etymology": [
-        {
-          "name": "meet",
-          "origin": "Modern English"
-        },
-        {
-          "name": "miet -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/meet#etymonline_v_44475",
-        "https://www.etymonline.com/word/meet#etymonline_v_12530",
-        "https://www.merriam-webster.com/dictionary/meet#dictionary-entry-2"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "meet",
+    "etymology": [
+      {
+        "name": "meet",
+        "origin": "Modern English"
+      },
+      {
+        "name": "miet -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/meet#etymonline_v_44475",
+      "https://www.etymonline.com/word/meet#etymonline_v_12530",
+      "https://www.merriam-webster.com/dictionary/meet#dictionary-entry-2"
+    ]
   }
 ]

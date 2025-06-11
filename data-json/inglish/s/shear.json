@@ -1,92 +1,70 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to shear",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
+    "infinitive": "to shear",
+    "etymology": [
+      {
+        "name": "sker",
+        "origin": "Proto-Germanic"
       },
-      "etymology": [
-        "sker",
-        "sceran, scieran",
-        "sheren",
-        "to shear",
-        "ta shiare -s -d shône -ing"
-      ]
-    },
-    "standard": {
-      "name": "to shear",
-      "etymology": [
-        {
-          "name": "sker",
-          "origin": "Proto-Germanic"
-        },
-        {
-          "name": "sceran, scieran",
-          "origin": "Old English"
-        },
-        {
-          "name": "sheren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to shear",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta shiare -s -d shône -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "sceran, scieran",
+        "origin": "Old English"
+      },
+      {
+        "name": "sheren",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to shear",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta shiare -s -d shône -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta shiares",
+          "pastTense": "ta shiared"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/shear#etymonline_v_23361",
-        "https://www.merriam-webster.com/dictionary/shear#dictionary-entry-1",
-        "https://www.collinsdictionary.com/us/dictionary/english/shear",
-        "https://dictionary.cambridge.org/dictionary/dutch-english/scheren",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39893",
-        "https://bosworthtoller.com/26901",
-        "https://bosworthtoller.com/26734"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/shear#etymonline_v_23361",
+      "https://www.merriam-webster.com/dictionary/shear#dictionary-entry-1",
+      "https://www.collinsdictionary.com/us/dictionary/english/shear",
+      "https://dictionary.cambridge.org/dictionary/dutch-english/scheren",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39893",
+      "https://bosworthtoller.com/26901",
+      "https://bosworthtoller.com/26734"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "shear",
-      "etymology": [
-        {
-          "name": "sker",
-          "origin": "Proto-Germanic"
-        },
-        {
-          "name": "shear",
-          "origin": "Modern English"
-        },
-        {
-          "name": "shiar -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/shear#etymonline_v_48579",
-        "https://www.merriam-webster.com/dictionary/shear#dictionary-entry-2",
-        "https://www.collinsdictionary.com/us/dictionary/english/shear"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "shear",
+    "etymology": [
+      {
+        "name": "sker",
+        "origin": "Proto-Germanic"
+      },
+      {
+        "name": "shear",
+        "origin": "Modern English"
+      },
+      {
+        "name": "shiar -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/shear#etymonline_v_48579",
+      "https://www.merriam-webster.com/dictionary/shear#dictionary-entry-2",
+      "https://www.collinsdictionary.com/us/dictionary/english/shear"
+    ]
   }
 ]

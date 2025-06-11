@@ -1,32 +1,26 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "zebra",
-      "etymology": [
-        {
-          "name": "zebra",
-          "origin": "Italian"
-        },
-        {
-          "name": "zíbra -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/zebra#etymonline_v_5003",
-        "https://www.merriam-webster.com/dictionary/zebra",
-        "https://www.collinsdictionary.com/us/dictionary/italian-english/zebra",
-        "https://www.treccani.it/vocabolario/zebra/"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "zebra",
+    "etymology": [
+      {
+        "name": "zebra",
+        "origin": "Italian"
+      },
+      {
+        "name": "zíbra -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/zebra#etymonline_v_5003",
+      "https://www.merriam-webster.com/dictionary/zebra",
+      "https://www.collinsdictionary.com/us/dictionary/italian-english/zebra",
+      "https://www.treccani.it/vocabolario/zebra/"
+    ]
   }
 ]

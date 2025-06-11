@@ -1,116 +1,90 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "partner",
-      "etymology": [
-        {
-          "name": "partitio",
-          "origin": "Latin"
-        },
-        {
-          "name": "parçon, parçonier",
-          "origin": "Old French"
-        },
-        {
-          "name": "partiner",
-          "origin": "Middle English"
-        },
-        {
-          "name": "partner",
-          "origin": "Modern English"
-        },
-        {
-          "name": "partnar -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/partner#etymonline_v_7264",
-        "https://www.merriam-webster.com/dictionary/partner#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32502",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32391",
-        "https://www.anglo-norman.net/entry/parcener_1",
-        "https://www.anglo-norman.net/entry/par%C3%A7on",
-        "https://latin-dictionary.net/definition/29400/partitio-partitionis"
-      ],
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to partner",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "partner",
+    "etymology": [
+      {
+        "name": "partitio",
+        "origin": "Latin"
       },
-      "etymology": [
-        "to partner",
-        "ta partnare -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to partner",
-      "etymology": [
-        {
-          "name": "to partner",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta partnare -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/partner#etymonline_v_46033",
-        "https://www.etymonline.com/word/partner#etymonline_v_7264",
-        "https://www.merriam-webster.com/dictionary/partner#dictionary-entry-2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "parçon, parçonier",
+        "origin": "Old French"
+      },
+      {
+        "name": "partiner",
+        "origin": "Middle English"
+      },
+      {
+        "name": "partner",
+        "origin": "Modern English"
+      },
+      {
+        "name": "partnar -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/partner#etymonline_v_7264",
+      "https://www.merriam-webster.com/dictionary/partner#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32502",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32391",
+      "https://www.anglo-norman.net/entry/parcener_1",
+      "https://www.anglo-norman.net/entry/par%C3%A7on",
+      "https://latin-dictionary.net/definition/29400/partitio-partitionis"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "partnership",
-      "etymology": [
-        {
-          "name": "partnership",
-          "origin": "Modern English"
-        },
-        {
-          "name": "partnarship -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
+    "infinitive": "to partner",
+    "etymology": [
+      {
+        "name": "to partner",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta partnare -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta partnares",
+          "pastTense": "ta partnared",
+          "progressive": "ta partnaring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/partnership#etymonline_v_35757",
-        "https://www.etymonline.com/word/partner#etymonline_v_7264",
-        "https://www.etymonline.com/word/-ship#etymonline_v_21219",
-        "https://www.merriam-webster.com/dictionary/partnership"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/partner#etymonline_v_46033",
+      "https://www.etymonline.com/word/partner#etymonline_v_7264",
+      "https://www.merriam-webster.com/dictionary/partner#dictionary-entry-2"
+    ]
+  },
+  {
+    "name": "partnership",
+    "etymology": [
+      {
+        "name": "partnership",
+        "origin": "Modern English"
+      },
+      {
+        "name": "partnarship -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/partnership#etymonline_v_35757",
+      "https://www.etymonline.com/word/partner#etymonline_v_7264",
+      "https://www.etymonline.com/word/-ship#etymonline_v_21219",
+      "https://www.merriam-webster.com/dictionary/partnership"
+    ]
   }
 ]

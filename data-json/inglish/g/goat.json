@@ -1,31 +1,25 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "goat  -s (m n)",
-      "etymology": [
-        {
-          "name": "gat",
-          "origin": "Old English"
-        },
-        {
-          "name": "got",
-          "origin": "Middle English"
-        },
-        {
-          "name": "goat  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/goat#etymonline_v_9005",
-        "https://www.merriam-webster.com/dictionary/goat#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED19128",
-        "https://bosworthtoller.com/13342"
-      ]
-    }
+    "name": "goat  -s (m n)",
+    "etymology": [
+      {
+        "name": "gat",
+        "origin": "Old English"
+      },
+      {
+        "name": "got",
+        "origin": "Middle English"
+      },
+      {
+        "name": "goat  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/goat#etymonline_v_9005",
+      "https://www.merriam-webster.com/dictionary/goat#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED19128",
+      "https://bosworthtoller.com/13342"
+    ]
   }
 ]

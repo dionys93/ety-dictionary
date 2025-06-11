@@ -1,104 +1,80 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to impair",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to impair",
+    "etymology": [
+      {
+        "name": "peior, peiorare",
+        "origin": "Latin"
       },
-      "etymology": [
-        "peior, peiorare",
-        "impeiorare",
-        "empeirier",
-        "ampayre, apeyre, empeiren",
-        "to impair",
-        "to empeire -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to impair",
-      "etymology": [
-        {
-          "name": "peior, peiorare",
-          "origin": "Latin"
-        },
-        {
-          "name": "impeiorare",
-          "origin": "Vulgar Latin"
-        },
-        {
-          "name": "empeirier",
-          "origin": "Old French"
-        },
-        {
-          "name": "ampayre, apeyre, empeiren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to impair",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to empeire -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "impeiorare",
+        "origin": "Vulgar Latin"
+      },
+      {
+        "name": "empeirier",
+        "origin": "Old French"
+      },
+      {
+        "name": "ampayre, apeyre, empeiren",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to impair",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to empeire -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to empeires",
+          "pastTense": "to empeired",
+          "progressive": "to empeiring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/impair#etymonline_v_1546",
-        "https://www.merriam-webster.com/dictionary/impair",
-        "https://www.collinsdictionary.com/us/dictionary/english/impair",
-        "https://www.oed.com/dictionary/impair_v?tab=factsheet#824069",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13447",
-        "https://www.anglo-norman.net/entry/empeirer",
-        "https://latin-dictionary.net/definition/29641/peioro-peiorare-peioravi-peioratus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/impair#etymonline_v_1546",
+      "https://www.merriam-webster.com/dictionary/impair",
+      "https://www.collinsdictionary.com/us/dictionary/english/impair",
+      "https://www.oed.com/dictionary/impair_v?tab=factsheet#824069",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13447",
+      "https://www.anglo-norman.net/entry/empeirer",
+      "https://latin-dictionary.net/definition/29641/peioro-peiorare-peioravi-peioratus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "impairment",
-      "etymology": [
-        {
-          "name": "empeirement",
-          "origin": "Old French"
-        },
-        {
-          "name": "emparement",
-          "origin": "Middle English"
-        },
-        {
-          "name": "impairment",
-          "origin": "Modern English"
-        },
-        {
-          "name": "empeîment -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/impairment#etymonline_v_42235",
-        "https://www.oed.com/dictionary/impairment_n?tab=factsheet#825017",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13446",
-        "https://www.anglo-norman.net/entry/empeirement"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "impairment",
+    "etymology": [
+      {
+        "name": "empeirement",
+        "origin": "Old French"
+      },
+      {
+        "name": "emparement",
+        "origin": "Middle English"
+      },
+      {
+        "name": "impairment",
+        "origin": "Modern English"
+      },
+      {
+        "name": "empeîment -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/impairment#etymonline_v_42235",
+      "https://www.oed.com/dictionary/impairment_n?tab=factsheet#825017",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13446",
+      "https://www.anglo-norman.net/entry/empeirement"
+    ]
   }
 ]

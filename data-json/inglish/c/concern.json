@@ -1,95 +1,72 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to concern",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to concern",
+    "etymology": [
+      {
+        "name": "com + cernere, concernere",
+        "origin": "Latin"
       },
-      "etymology": [
-        "com + cernere, concernere",
-        "concerner",
-        "concernen",
-        "to concern",
-        "ta concêne -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to concern",
-      "etymology": [
-        {
-          "name": "com + cernere, concernere",
-          "origin": "Latin"
-        },
-        {
-          "name": "concerner",
-          "origin": "Old French"
-        },
-        {
-          "name": "concernen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to concern",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta concêne -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "concerner",
+        "origin": "Old French"
+      },
+      {
+        "name": "concernen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to concern",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta concêne -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta concênes",
+          "pastTense": "ta concêned",
+          "progressive": "ta concêning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/concern#etymonline_v_17308",
-        "https://www.merriam-webster.com/dictionary/concern#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8812",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/concerner/17764",
-        "https://latin-dictionary.net/definition/11946/concerno-concernere-concrevi-concretus",
-        "https://latin-dictionary.net/definition/9115/cerno-cernere-crevi-cretus",
-        "https://latin-dictionary.net/definition/11210/com"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/concern#etymonline_v_17308",
+      "https://www.merriam-webster.com/dictionary/concern#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8812",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/concerner/17764",
+      "https://latin-dictionary.net/definition/11946/concerno-concernere-concrevi-concretus",
+      "https://latin-dictionary.net/definition/9115/cerno-cernere-crevi-cretus",
+      "https://latin-dictionary.net/definition/11210/com"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "concern",
-      "etymology": [
-        {
-          "name": "concern",
-          "origin": "Middle English"
-        },
-        {
-          "name": "concêne, concêns",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/concern#etymonline_v_46683",
-        "https://www.etymonline.com/word/concern#etymonline_v_17308",
-        "https://www.merriam-webster.com/dictionary/concern#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8812",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/concerner/17764",
-        "https://latin-dictionary.net/definition/11946/concerno-concernere-concrevi-concretus",
-        "https://latin-dictionary.net/definition/9115/cerno-cernere-crevi-cretus",
-        "https://latin-dictionary.net/definition/11210/com"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "concern",
+    "etymology": [
+      {
+        "name": "concern",
+        "origin": "Middle English"
+      },
+      {
+        "name": "concêne, concêns",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/concern#etymonline_v_46683",
+      "https://www.etymonline.com/word/concern#etymonline_v_17308",
+      "https://www.merriam-webster.com/dictionary/concern#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED8812",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/concerner/17764",
+      "https://latin-dictionary.net/definition/11946/concerno-concernere-concrevi-concretus",
+      "https://latin-dictionary.net/definition/9115/cerno-cernere-crevi-cretus",
+      "https://latin-dictionary.net/definition/11210/com"
+    ]
   }
 ]

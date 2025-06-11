@@ -1,89 +1,66 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to temper",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to temper",
+    "etymology": [
+      {
+        "name": "temperare",
+        "origin": "Latin"
       },
-      "etymology": [
-        "temperare",
-        "temprian",
-        "temperen",
-        "to temper",
-        "ta tempre -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to temper",
-      "etymology": [
-        {
-          "name": "temperare",
-          "origin": "Latin"
-        },
-        {
-          "name": "temprian",
-          "origin": "Old English"
-        },
-        {
-          "name": "temperen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to temper",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta tempre -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "temprian",
+        "origin": "Old English"
+      },
+      {
+        "name": "temperen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to temper",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta tempre -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta tempres",
+          "pastTense": "ta tempred",
+          "progressive": "ta tempring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/temper#etymonline_v_7705",
-        "https://www.merriam-webster.com/dictionary/temper#dictionary-entry-2",
-        "https://www.oed.com/dictionary/temper_v?tab=factsheet#18866132",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44748",
-        "https://bosworthtoller.com/30322",
-        "https://latin-dictionary.net/definition/36896/tempero-temperare-temperavi-temperatus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/temper#etymonline_v_7705",
+      "https://www.merriam-webster.com/dictionary/temper#dictionary-entry-2",
+      "https://www.oed.com/dictionary/temper_v?tab=factsheet#18866132",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44748",
+      "https://bosworthtoller.com/30322",
+      "https://latin-dictionary.net/definition/36896/tempero-temperare-temperavi-temperatus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "temper",
-      "etymology": [
-        {
-          "name": "temper",
-          "origin": "Modern English"
-        },
-        {
-          "name": "tempre, tempers",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/temper#etymonline_v_24655",
-        "https://www.etymonline.com/word/temper#etymonline_v_7705",
-        "https://www.oed.com/dictionary/temper_n?tab=factsheet#18864791"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "temper",
+    "etymology": [
+      {
+        "name": "temper",
+        "origin": "Modern English"
+      },
+      {
+        "name": "tempre, tempers",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/temper#etymonline_v_24655",
+      "https://www.etymonline.com/word/temper#etymonline_v_7705",
+      "https://www.oed.com/dictionary/temper_n?tab=factsheet#18864791"
+    ]
   }
 ]

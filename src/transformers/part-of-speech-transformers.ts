@@ -5,8 +5,12 @@ import {
   WordEntry, 
   EtymologyEntry,
   EntryTransformer,
-  WordNameExtractor 
-} from '../types/pipeline-types'
+  WordNameExtractor,
+  VerbConjugations,
+  AdjectiveDegrees,
+  NounGenderInfo,
+  EnhancedEtymologyEntry
+} from '../'
 
 /**
  * Part of speech types for detection and processing
@@ -53,7 +57,7 @@ function detectPrimaryPartOfSpeech(group: EntryGroup): PartOfSpeechType {
  * Extract base form and conjugation patterns from Inglish verb line
  * Example: "ta abàndone -s -d -ing" -> { base: "abàndone", suffixes: ["-s", "-d", "-ing"] }
  */
-function extractVerbConjugations(text: string) {
+function extractVerbConjugations(text: string): { base: string, conjugations: VerbConjugations } {
   // Pattern: "base -suffix1 -suffix2 -suffix3"
   const match = text.match(/^(.+?)\s+(-\w+)(?:\s+(-\w+))?(?:\s+(-\w+))?/)
   
@@ -80,9 +84,14 @@ function extractVerbConjugations(text: string) {
   }
   
   if (suffixes[2]) {
-    // Progressive: base + ing
+    // Progressive: base + ing (drop 'e' if base ends in 'e' and suffix is 'ing')
     const suffix = suffixes[2].replace('-', '')
-    conjugations.progressive = base + suffix
+    if (suffix === 'ing' && base.endsWith('e')) {
+      // Drop the 'e' before adding 'ing'
+      conjugations.progressive = base.slice(0, -1) + suffix
+    } else {
+      conjugations.progressive = base + suffix
+    }
   }
   
   return { base, conjugations }
@@ -91,7 +100,7 @@ function extractVerbConjugations(text: string) {
 /**
  * Extract gender and number information from noun POS
  */
-function extractNounInfo(partOfSpeech: string[]) {
+function extractNounInfo(partOfSpeech: string[]): NounGenderInfo {
   const posString = partOfSpeech.join(' ').toLowerCase()
   
   let gender: 'masculine' | 'feminine' | 'neuter' | undefined = undefined
@@ -111,7 +120,7 @@ function extractNounInfo(partOfSpeech: string[]) {
  * Extract adjective degree patterns from Inglish line
  * Example: "quick -er -est" -> { positive: "quick", comparative: "er", superlative: "est" }
  */
-function extractAdjectiveDegrees(text: string) {
+function extractAdjectiveDegrees(text: string): { base: string, degrees: AdjectiveDegrees } {
   const match = text.match(/^(\w+)\s+(-\w+)(?:\s+(-\w+))?/)
   
   if (!match) {

@@ -1,85 +1,65 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "cotton",
-      "etymology": [
-        {
-          "name": "qutn, قطن",
-          "origin": "Arabic"
-        },
-        {
-          "name": "cotone",
-          "origin": "Italian"
-        },
-        {
-          "name": "coton",
-          "origin": "Old French"
-        },
-        {
-          "name": "cotton",
-          "origin": "Modern English"
-        },
-        {
-          "name": "cóton",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/cotton#etymonline_v_19142",
-        "https://www.merriam-webster.com/dictionary/cotton#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/cotton#word-history",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/coton/19523",
-        "https://www.collinsdictionary.com/dictionary/italian-english/cotone",
-        "https://www.arabicstudentsdictionary.com/word?word_id=9638e34d-a48e-4f49-bf8d-cf75963eea46&root_id=62099462-c413-4d27-bdfa-4d027911aaa4&action=wordLink"
-      ]
-    }
+    "name": "cotton",
+    "etymology": [
+      {
+        "name": "qutn, قطن",
+        "origin": "Arabic"
+      },
+      {
+        "name": "cotone",
+        "origin": "Italian"
+      },
+      {
+        "name": "coton",
+        "origin": "Old French"
+      },
+      {
+        "name": "cotton",
+        "origin": "Modern English"
+      },
+      {
+        "name": "cóton",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "masculine noun"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/cotton#etymonline_v_19142",
+      "https://www.merriam-webster.com/dictionary/cotton#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/cotton#word-history",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/coton/19523",
+      "https://www.collinsdictionary.com/dictionary/italian-english/cotone",
+      "https://www.arabicstudentsdictionary.com/word?word_id=9638e34d-a48e-4f49-bf8d-cf75963eea46&root_id=62099462-c413-4d27-bdfa-4d027911aaa4&action=wordLink"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to cotton",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to cotton",
+    "etymology": [
+      {
+        "name": "to cotton",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to cotton",
-        "ta cótone -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to cotton",
-      "etymology": [
-        {
-          "name": "to cotton",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta cótone -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta cótone -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta cótones",
+          "pastTense": "ta cótoned",
+          "progressive": "ta cótoning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/cotton#etymonline_v_19143",
-        "https://www.etymonline.com/word/cotton#etymonline_v_19142",
-        "https://www.merriam-webster.com/dictionary/cotton#dictionary-entry-2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/cotton#etymonline_v_19143",
+      "https://www.etymonline.com/word/cotton#etymonline_v_19142",
+      "https://www.merriam-webster.com/dictionary/cotton#dictionary-entry-2"
+    ]
   }
 ]

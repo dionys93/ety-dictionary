@@ -1,84 +1,63 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "drone",
-      "etymology": [
-        {
-          "name": "dran, dræn",
-          "origin": "Old English"
-        },
-        {
-          "name": "drane, drone",
-          "origin": "Middle English"
-        },
-        {
-          "name": "drone",
-          "origin": "Modern English"
-        },
-        {
-          "name": "droan -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/drone",
-        "https://www.oed.com/dictionary/drone_n1?tab=factsheet#6019040",
-        "https://bosworthtoller.com/7853",
-        "https://bosworthtoller.com/7860"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "drone",
+    "etymology": [
+      {
+        "name": "dran, dræn",
+        "origin": "Old English"
+      },
+      {
+        "name": "drane, drone",
+        "origin": "Middle English"
+      },
+      {
+        "name": "drone",
+        "origin": "Modern English"
+      },
+      {
+        "name": "droan -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/drone",
+      "https://www.oed.com/dictionary/drone_n1?tab=factsheet#6019040",
+      "https://bosworthtoller.com/7853",
+      "https://bosworthtoller.com/7860"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to drone",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to drone",
+    "etymology": [
+      {
+        "name": "drounen",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "drounen",
-        "to drone",
-        "ta droane -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to drone",
-      "etymology": [
-        {
-          "name": "drounen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to drone",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta droane -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to drone",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta droane -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta droanes",
+          "pastTense": "ta droaned",
+          "progressive": "ta droaning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/drone",
-        "https://www.oed.com/dictionary/drone_v1?tab=factsheet#6020096"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/drone",
+      "https://www.oed.com/dictionary/drone_v1?tab=factsheet#6020096"
+    ]
   }
 ]

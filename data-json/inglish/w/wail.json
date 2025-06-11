@@ -1,80 +1,58 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to wail",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to wail",
+    "etymology": [
+      {
+        "name": "væ, væla",
+        "origin": "Old Norse"
       },
-      "etymology": [
-        "væ, væla",
-        "weilen",
-        "to wail",
-        "ta ɯaile -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to wail",
-      "etymology": [
-        {
-          "name": "væ, væla",
-          "origin": "Old Norse"
-        },
-        {
-          "name": "weilen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to wail",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta ɯaile -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "weilen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to wail",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta ɯaile -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta ɯailes",
+          "pastTense": "ta ɯailed",
+          "progressive": "ta ɯailing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/wail",
-        "https://www.oed.com/dictionary/wail_v?tab=factsheet#15209857",
-        "https://old-norse.net/html/v.php#v%C3%A6la2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/wail",
+      "https://www.oed.com/dictionary/wail_v?tab=factsheet#15209857",
+      "https://old-norse.net/html/v.php#v%C3%A6la2"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "wail",
-      "etymology": [
-        {
-          "name": "wail",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ɯaile, ɯails",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/wail",
-        "https://www.oed.com/dictionary/wail_n?tab=factsheet#15209485"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "wail",
+    "etymology": [
+      {
+        "name": "wail",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ɯaile, ɯails",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/wail",
+      "https://www.oed.com/dictionary/wail_n?tab=factsheet#15209485"
+    ]
   }
 ]

@@ -1,92 +1,70 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "hook",
-      "etymology": [
-        {
-          "name": "hoc",
-          "origin": "Old English"
-        },
-        {
-          "name": "hok",
-          "origin": "Middle English"
-        },
-        {
-          "name": "hook",
-          "origin": "Modern English"
-        },
-        {
-          "name": "huke, hûcs",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/hook#etymonline_v_14428",
-        "https://www.merriam-webster.com/dictionary/hook#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20967",
-        "https://bosworthtoller.com/19390"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "hook",
+    "etymology": [
+      {
+        "name": "hoc",
+        "origin": "Old English"
+      },
+      {
+        "name": "hok",
+        "origin": "Middle English"
+      },
+      {
+        "name": "hook",
+        "origin": "Modern English"
+      },
+      {
+        "name": "huke, hûcs",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/hook#etymonline_v_14428",
+      "https://www.merriam-webster.com/dictionary/hook#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20967",
+      "https://bosworthtoller.com/19390"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to hook",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to hook",
+    "etymology": [
+      {
+        "name": "hoced",
+        "origin": "Old English"
       },
-      "etymology": [
-        "hoced",
-        "hoken",
-        "to hook",
-        "ta huke -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to hook",
-      "etymology": [
-        {
-          "name": "hoced",
-          "origin": "Old English"
-        },
-        {
-          "name": "hoken",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to hook",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta huke -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "hoken",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to hook",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta huke -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta hukes",
+          "pastTense": "ta huked",
+          "progressive": "ta huking"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/hook#etymonline_v_41591",
-        "https://www.etymonline.com/word/hook#etymonline_v_14428",
-        "https://www.merriam-webster.com/dictionary/hook#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20972",
-        "https://bosworthtoller.com/19391"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/hook#etymonline_v_41591",
+      "https://www.etymonline.com/word/hook#etymonline_v_14428",
+      "https://www.merriam-webster.com/dictionary/hook#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20972",
+      "https://bosworthtoller.com/19391"
+    ]
   }
 ]

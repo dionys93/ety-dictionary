@@ -1,27 +1,21 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "camera  -s (m n)",
-      "etymology": [
-        {
-          "name": "καμάρα",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "camera  -s (m n)",
-          "origin": "Latin"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/camera#etymonline_v_635",
-        "https://www.oed.com/dictionary/camera_n?tab=pronunciation#10248344",
-        "https://latin-dictionary.net/definition/7698/camera-camerae",
-        "https://lsj.gr/wiki/%CE%BA%CE%B1%CE%BC%CE%AC%CF%81%CE%B1"
-      ]
-    }
+    "name": "camera  -s (m n)",
+    "etymology": [
+      {
+        "name": "καμάρα",
+        "origin": "Ancient Greek"
+      },
+      {
+        "name": "camera  -s (m n)",
+        "origin": "Latin"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/camera#etymonline_v_635",
+      "https://www.oed.com/dictionary/camera_n?tab=pronunciation#10248344",
+      "https://latin-dictionary.net/definition/7698/camera-camerae",
+      "https://lsj.gr/wiki/%CE%BA%CE%B1%CE%BC%CE%AC%CF%81%CE%B1"
+    ]
   }
 ]

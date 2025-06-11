@@ -1,107 +1,81 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "beef",
-      "etymology": [
-        {
-          "name": "bos, bovis, bovem",
-          "origin": "Latin"
-        },
-        {
-          "name": "buef",
-          "origin": "Old French"
-        },
-        {
-          "name": "beef",
-          "origin": "Modern English"
-        },
-        {
-          "name": "bief",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/beef",
-        "https://www.oed.com/dictionary/beef_n1?tab=meaning_and_use#24607537",
-        "https://www.oed.com/dictionary/beef_n1?tab=pronunciation#24607537",
-        "https://anglo-norman.net/entry/boef",
-        "https://latin-dictionary.net/definition/6814/bos-bovis"
-      ],
-      "gender": "masculine",
-      "number": "singular"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to beef",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "beef",
+    "etymology": [
+      {
+        "name": "bos, bovis, bovem",
+        "origin": "Latin"
       },
-      "etymology": [
-        "to beef",
-        "ta biefe -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to beef",
-      "etymology": [
-        {
-          "name": "to beef",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta biefe -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/beef",
-        "https://www.oed.com/dictionary/beef_v?tab=meaning_and_use#24609806",
-        "https://www.oed.com/dictionary/beef_v?tab=pronunciation#24609806"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "buef",
+        "origin": "Old French"
+      },
+      {
+        "name": "beef",
+        "origin": "Modern English"
+      },
+      {
+        "name": "bief",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/beef",
+      "https://www.oed.com/dictionary/beef_n1?tab=meaning_and_use#24607537",
+      "https://www.oed.com/dictionary/beef_n1?tab=pronunciation#24607537",
+      "https://anglo-norman.net/entry/boef",
+      "https://latin-dictionary.net/definition/6814/bos-bovis"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "beefy",
-      "etymology": [
-        {
-          "name": "beefy",
-          "origin": "Modern English"
-        },
-        {
-          "name": "biefy",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
+    "infinitive": "to beef",
+    "etymology": [
+      {
+        "name": "to beef",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta biefe -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta biefes",
+          "pastTense": "ta biefed",
+          "progressive": "ta biefing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/beefy",
-        "https://www.oed.com/dictionary/beefy_adj?tab=factsheet#24632293"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/beef",
+      "https://www.oed.com/dictionary/beef_v?tab=meaning_and_use#24609806",
+      "https://www.oed.com/dictionary/beef_v?tab=pronunciation#24609806"
+    ]
+  },
+  {
+    "name": "beefy",
+    "etymology": [
+      {
+        "name": "beefy",
+        "origin": "Modern English"
+      },
+      {
+        "name": "biefy",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/beefy",
+      "https://www.oed.com/dictionary/beefy_adj?tab=factsheet#24632293"
+    ]
   }
 ]

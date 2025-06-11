@@ -1,80 +1,60 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "zone",
-      "etymology": [
-        {
-          "name": "ζώννυμι, ζώνη",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "zona",
-          "origin": "Latin"
-        },
-        {
-          "name": "zone",
-          "origin": "Modern English"
-        },
-        {
-          "name": "zone, zôns",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/zone",
-        "https://www.oed.com/dictionary/zone_n?tab=pronunciation#13494869",
-        "https://latin-dictionary.net/definition/39214/zona-zonae",
-        "https://lsj.gr/wiki/%CE%B6%CF%8E%CE%BD%CE%B7",
-        "https://lsj.gr/wiki/%CE%B6%CF%8E%CE%BD%CE%BD%CF%85%CE%BC%CE%B9"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "zone",
+    "etymology": [
+      {
+        "name": "ζώννυμι, ζώνη",
+        "origin": "Ancient Greek"
+      },
+      {
+        "name": "zona",
+        "origin": "Latin"
+      },
+      {
+        "name": "zone",
+        "origin": "Modern English"
+      },
+      {
+        "name": "zone, zôns",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/zone",
+      "https://www.oed.com/dictionary/zone_n?tab=pronunciation#13494869",
+      "https://latin-dictionary.net/definition/39214/zona-zonae",
+      "https://lsj.gr/wiki/%CE%B6%CF%8E%CE%BD%CE%B7",
+      "https://lsj.gr/wiki/%CE%B6%CF%8E%CE%BD%CE%BD%CF%85%CE%BC%CE%B9"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to zone",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to zone",
+    "etymology": [
+      {
+        "name": "to zone",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to zone",
-        "ta zone -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to zone",
-      "etymology": [
-        {
-          "name": "to zone",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta zone -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta zone -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta zones",
+          "pastTense": "ta zoned",
+          "progressive": "ta zoning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/zone",
-        "https://www.oed.com/dictionary/zone_v?tab=pronunciation#13496567"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/zone",
+      "https://www.oed.com/dictionary/zone_v?tab=pronunciation#13496567"
+    ]
   }
 ]

@@ -1,39 +1,28 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "loud",
-      "etymology": [
-        {
-          "name": "hlud",
-          "origin": "Old English"
-        },
-        {
-          "name": "loud",
-          "origin": "Middle English"
-        },
-        {
-          "name": "láud -ly -er -est",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/loud#etymonline_v_14548",
-        "https://www.oed.com/dictionary/loud_adj?tab=factsheet#38888554",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26177",
-        "https://bosworthtoller.com/52795"
-      ],
-      "degrees": {
-        "positive": "ud",
-        "comparative": "ly",
-        "superlative": "er"
+    "name": "loud",
+    "etymology": [
+      {
+        "name": "hlud",
+        "origin": "Old English"
+      },
+      {
+        "name": "loud",
+        "origin": "Middle English"
+      },
+      {
+        "name": "láud -ly -er -est",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/loud#etymonline_v_14548",
+      "https://www.oed.com/dictionary/loud_adj?tab=factsheet#38888554",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26177",
+      "https://bosworthtoller.com/52795"
+    ]
   }
 ]

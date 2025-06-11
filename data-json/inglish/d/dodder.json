@@ -1,49 +1,34 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to dodder",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ering"
+    "infinitive": "to dodder",
+    "etymology": [
+      {
+        "name": "daderen",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "daderen",
-        "to dodder",
-        "ta doddre -s -d -ering"
-      ]
-    },
-    "standard": {
-      "name": "to dodder",
-      "etymology": [
-        {
-          "name": "daderen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to dodder",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta doddre -s -d -ering",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to dodder",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta doddre -s -d -ering",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta doddres",
+          "pastTense": "ta doddred",
+          "progressive": "ta doddreering"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/dodder#etymonline_v_13884",
-        "https://www.merriam-webster.com/dictionary/dodder#dictionary-entry-2",
-        "https://www.merriam-webster.com/dictionary/dodder#word-history",
-        "https://www.oed.com/dictionary/dodder_v?tab=factsheet#6355619",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10461"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ering"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/dodder#etymonline_v_13884",
+      "https://www.merriam-webster.com/dictionary/dodder#dictionary-entry-2",
+      "https://www.merriam-webster.com/dictionary/dodder#word-history",
+      "https://www.oed.com/dictionary/dodder_v?tab=factsheet#6355619",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10461"
+    ]
   }
 ]

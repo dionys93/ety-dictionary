@@ -1,91 +1,68 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to abase",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to abase",
+    "etymology": [
+      {
+        "name": "ad + bassus",
+        "origin": "Latin"
       },
-      "etymology": [
-        "ad + bassus",
-        "ad bassiare",
-        "abaissier",
-        "to abase",
-        "to abâsse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to abase",
-      "etymology": [
-        {
-          "name": "ad + bassus",
-          "origin": "Latin"
-        },
-        {
-          "name": "ad bassiare",
-          "origin": "Vulgar Latin"
-        },
-        {
-          "name": "abaissier",
-          "origin": "Old French"
-        },
-        {
-          "name": "to abase",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to abâsse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ad bassiare",
+        "origin": "Vulgar Latin"
+      },
+      {
+        "name": "abaissier",
+        "origin": "Old French"
+      },
+      {
+        "name": "to abase",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to abâsse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to abâsses",
+          "pastTense": "to abâssed",
+          "progressive": "to abâssing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/abase#etymonline_v_15",
-        "https://www.etymonline.com/word/base#etymonline_v_5276",
-        "https://www.etymonline.com/word/ad-#etymonline_v_5086",
-        "https://www.merriam-webster.com/dictionary/abase",
-        "https://www.oed.com/dictionary/abase_v?tab=factsheet#632988",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/abaisser/16",
-        "https://latin-dictionary.net/definition/6195/bassus-bassa-bassum",
-        "https://latin-dictionary.net/definition/702/ad"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/abase#etymonline_v_15",
+      "https://www.etymonline.com/word/base#etymonline_v_5276",
+      "https://www.etymonline.com/word/ad-#etymonline_v_5086",
+      "https://www.merriam-webster.com/dictionary/abase",
+      "https://www.oed.com/dictionary/abase_v?tab=factsheet#632988",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/abaisser/16",
+      "https://latin-dictionary.net/definition/6195/bassus-bassa-bassum",
+      "https://latin-dictionary.net/definition/702/ad"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "abasement",
-      "etymology": [
-        {
-          "name": "abasement",
-          "origin": "Modern English"
-        },
-        {
-          "name": "abâssement -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/abasement#etymonline_v_29792",
-        "https://www.merriam-webster.com/dictionary/abasement",
-        "https://www.oed.com/dictionary/abasement_n?tab=factsheet#288622"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "abasement",
+    "etymology": [
+      {
+        "name": "abasement",
+        "origin": "Modern English"
+      },
+      {
+        "name": "abâssement -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/abasement#etymonline_v_29792",
+      "https://www.merriam-webster.com/dictionary/abasement",
+      "https://www.oed.com/dictionary/abasement_n?tab=factsheet#288622"
+    ]
   }
 ]

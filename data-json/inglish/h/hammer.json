@@ -1,86 +1,65 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "hammer",
-      "etymology": [
-        {
-          "name": "hamor",
-          "origin": "Old English"
-        },
-        {
-          "name": "hamer",
-          "origin": "Middle English"
-        },
-        {
-          "name": "hammer",
-          "origin": "Modern English"
-        },
-        {
-          "name": "hamor -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/hammer#etymonline_v_1415",
-        "https://www.merriam-webster.com/dictionary/hammer#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED19901",
-        "https://bosworthtoller.com/18085"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "hammer",
+    "etymology": [
+      {
+        "name": "hamor",
+        "origin": "Old English"
+      },
+      {
+        "name": "hamer",
+        "origin": "Middle English"
+      },
+      {
+        "name": "hammer",
+        "origin": "Modern English"
+      },
+      {
+        "name": "hamor -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/hammer#etymonline_v_1415",
+      "https://www.merriam-webster.com/dictionary/hammer#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED19901",
+      "https://bosworthtoller.com/18085"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to hammer",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to hammer",
+    "etymology": [
+      {
+        "name": "hameren",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "hameren",
-        "to hammer",
-        "ta hamore -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to hammer",
-      "etymology": [
-        {
-          "name": "hameren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to hammer",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta hamore -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to hammer",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta hamore -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta hamores",
+          "pastTense": "ta hamored",
+          "progressive": "ta hamoring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/hammer#etymonline_v_41570",
-        "https://www.etymonline.com/word/hammer#etymonline_v_1415",
-        "https://www.merriam-webster.com/dictionary/hammer#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED19903"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/hammer#etymonline_v_41570",
+      "https://www.etymonline.com/word/hammer#etymonline_v_1415",
+      "https://www.merriam-webster.com/dictionary/hammer#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED19903"
+    ]
   }
 ]

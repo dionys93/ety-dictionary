@@ -1,102 +1,84 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "door",
-      "etymology": [
-        {
-          "name": "dor, duru",
-          "origin": "Old English"
-        },
-        {
-          "name": "dore",
-          "origin": "Middle English"
-        },
-        {
-          "name": "door",
-          "origin": "Modern English"
-        },
-        {
-          "name": "dore, dors",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/door#etymonline_v_13944",
-        "https://www.oed.com/dictionary/door_n?tab=factsheet#6135435",
-        "https://www.merriam-webster.com/dictionary/door#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12396",
-        "https://bosworthtoller.com/8133",
-        "https://bosworthtoller.com/7830"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "door",
+    "etymology": [
+      {
+        "name": "dor, duru",
+        "origin": "Old English"
+      },
+      {
+        "name": "dore",
+        "origin": "Middle English"
+      },
+      {
+        "name": "door",
+        "origin": "Modern English"
+      },
+      {
+        "name": "dore, dors",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/door#etymonline_v_13944",
+      "https://www.oed.com/dictionary/door_n?tab=factsheet#6135435",
+      "https://www.merriam-webster.com/dictionary/door#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12396",
+      "https://bosworthtoller.com/8133",
+      "https://bosworthtoller.com/7830"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "doorway",
-      "etymology": [
-        {
-          "name": "doorway",
-          "origin": "Modern English"
-        },
-        {
-          "name": "doreɯay -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/doorway#etymonline_v_31794",
-        "https://www.etymonline.com/word/door#etymonline_v_13944",
-        "https://www.etymonline.com/word/way#etymonline_v_4864",
-        "https://www.merriam-webster.com/dictionary/doorway"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "doorway",
+    "etymology": [
+      {
+        "name": "doorway",
+        "origin": "Modern English"
+      },
+      {
+        "name": "doreɯay -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/doorway#etymonline_v_31794",
+      "https://www.etymonline.com/word/door#etymonline_v_13944",
+      "https://www.etymonline.com/word/way#etymonline_v_4864",
+      "https://www.merriam-webster.com/dictionary/doorway"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "doorknob",
-      "etymology": [
-        {
-          "name": "doorknob",
-          "origin": "Modern English"
-        },
-        {
-          "name": "dorenob -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/door-knob#etymonline_v_31792",
-        "https://www.etymonline.com/word/door#etymonline_v_13944",
-        "https://www.etymonline.com/word/knob#etymonline_v_1916",
-        "https://www.merriam-webster.com/dictionary/doorknob"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "doorknob",
+    "etymology": [
+      {
+        "name": "doorknob",
+        "origin": "Modern English"
+      },
+      {
+        "name": "dorenob -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/door-knob#etymonline_v_31792",
+      "https://www.etymonline.com/word/door#etymonline_v_13944",
+      "https://www.etymonline.com/word/knob#etymonline_v_1916",
+      "https://www.merriam-webster.com/dictionary/doorknob"
+    ]
   }
 ]

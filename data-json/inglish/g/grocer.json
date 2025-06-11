@@ -1,76 +1,64 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "grocer",
-      "etymology": [
-        {
-          "name": "grossus, grossarius",
-          "origin": "Latin"
-        },
-        {
-          "name": "grossier, grosser",
-          "origin": "Old French"
-        },
-        {
-          "name": "grocer",
-          "origin": "Modern English"
-        },
-        {
-          "name": "groçeur -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/grocer#etymonline_v_14293",
-        "https://www.merriam-webster.com/dictionary/grocer",
-        "https://anglo-norman.net/entry/grosser_2",
-        "https://latin-dictionary.net/definition/21732/grossus-grossa"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "grocer",
+    "etymology": [
+      {
+        "name": "grossus, grossarius",
+        "origin": "Latin"
+      },
+      {
+        "name": "grossier, grosser",
+        "origin": "Old French"
+      },
+      {
+        "name": "grocer",
+        "origin": "Modern English"
+      },
+      {
+        "name": "groçeur -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/grocer#etymonline_v_14293",
+      "https://www.merriam-webster.com/dictionary/grocer",
+      "https://anglo-norman.net/entry/grosser_2",
+      "https://latin-dictionary.net/definition/21732/grossus-grossa"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "grocery",
-      "etymology": [
-        {
-          "name": "grossier, grosserie",
-          "origin": "Old French"
-        },
-        {
-          "name": "grocery",
-          "origin": "Modern English"
-        },
-        {
-          "name": "groçery, groçeris",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/grocery#etymonline_v_33817",
-        "https://www.etymonline.com/word/groceries#etymonline_v_33816",
-        "https://www.merriam-webster.com/dictionary/grocery",
-        "https://www.oed.com/dictionary/grocery_n?tab=factsheet#2519608",
-        "https://anglo-norman.net/entry/groserie",
-        "https://anglo-norman.net/entry/grosser_2",
-        "https://anglo-norman.net/entry/grossere"
-      ]
-    }
+    "name": "grocery",
+    "etymology": [
+      {
+        "name": "grossier, grosserie",
+        "origin": "Old French"
+      },
+      {
+        "name": "grocery",
+        "origin": "Modern English"
+      },
+      {
+        "name": "groçery, groçeris",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "masculine noun"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/grocery#etymonline_v_33817",
+      "https://www.etymonline.com/word/groceries#etymonline_v_33816",
+      "https://www.merriam-webster.com/dictionary/grocery",
+      "https://www.oed.com/dictionary/grocery_n?tab=factsheet#2519608",
+      "https://anglo-norman.net/entry/groserie",
+      "https://anglo-norman.net/entry/grosser_2",
+      "https://anglo-norman.net/entry/grossere"
+    ]
   }
 ]

@@ -1,126 +1,98 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "worse",
-      "etymology": [
-        {
-          "name": "wiersa, wyrsa",
-          "origin": "Old English"
-        },
-        {
-          "name": "wers",
-          "origin": "Middle English"
-        },
-        {
-          "name": "worse",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ɯorʃ",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/worse#etymonline_v_10852",
-        "https://www.oed.com/dictionary/worse_adj?tab=factsheet#13877142",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52326",
-        "https://bosworthtoller.com/36024"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "worst",
-      "etymology": [
-        {
-          "name": "wyrresta",
-          "origin": "Old English"
-        },
-        {
-          "name": "werst",
-          "origin": "Middle English"
-        },
-        {
-          "name": "worst",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ɯorst",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/worst#etymonline_v_10854",
-        "https://www.oed.com/dictionary/worst_adj?tab=factsheet#13890157",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52332",
-        "https://bosworthtoller.com/37011",
-        "https://bosworthtoller.com/036024"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to worsen",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "worse",
+    "etymology": [
+      {
+        "name": "wiersa, wyrsa",
+        "origin": "Old English"
       },
-      "etymology": [
-        "a-wersian",
-        "wersnen",
-        "to worsen",
-        "ta ɯorsane -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to worsen",
-      "etymology": [
-        {
-          "name": "a-wersian",
-          "origin": "Old English"
-        },
-        {
-          "name": "wersnen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to worsen",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta ɯorsane -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/worsen#etymonline_v_25636",
-        "https://www.oed.com/dictionary/worsen_v?tab=factsheet#13882221",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52329",
-        "https://bosworthtoller.com/2699"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "wers",
+        "origin": "Middle English"
+      },
+      {
+        "name": "worse",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ɯorʃ",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/worse#etymonline_v_10852",
+      "https://www.oed.com/dictionary/worse_adj?tab=factsheet#13877142",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52326",
+      "https://bosworthtoller.com/36024"
+    ]
+  },
+  {
+    "name": "worst",
+    "etymology": [
+      {
+        "name": "wyrresta",
+        "origin": "Old English"
+      },
+      {
+        "name": "werst",
+        "origin": "Middle English"
+      },
+      {
+        "name": "worst",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ɯorst",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/worst#etymonline_v_10854",
+      "https://www.oed.com/dictionary/worst_adj?tab=factsheet#13890157",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52332",
+      "https://bosworthtoller.com/37011",
+      "https://bosworthtoller.com/036024"
+    ]
+  },
+  {
+    "infinitive": "to worsen",
+    "etymology": [
+      {
+        "name": "a-wersian",
+        "origin": "Old English"
+      },
+      {
+        "name": "wersnen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to worsen",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta ɯorsane -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta ɯorsanes",
+          "pastTense": "ta ɯorsaned",
+          "progressive": "ta ɯorsaning"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/worsen#etymonline_v_25636",
+      "https://www.oed.com/dictionary/worsen_v?tab=factsheet#13882221",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52329",
+      "https://bosworthtoller.com/2699"
+    ]
   }
 ]

@@ -1,81 +1,61 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "lotion",
-      "etymology": [
-        {
-          "name": "lavare, lautus, lavatus, lotus, lotio, lotionem",
-          "origin": "Latin"
-        },
-        {
-          "name": "loscion",
-          "origin": "Middle English"
-        },
-        {
-          "name": "lotion",
-          "origin": "Modern English"
-        },
-        {
-          "name": "locion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/lotion#etymonline_v_14544",
-        "https://www.merriam-webster.com/dictionary/lotion",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25880/track?counter=1&search_id=40250988",
-        "https://latin-dictionary.net/definition/25903/lotium-loti-i",
-        "https://latin-dictionary.net/definition/25408/lavo-lavare-lavi-lavatus",
-        "https://latin-dictionary.net/definition/25409/lavo-lavare-lavi-lotus"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "lotion",
+    "etymology": [
+      {
+        "name": "lavare, lautus, lavatus, lotus, lotio, lotionem",
+        "origin": "Latin"
+      },
+      {
+        "name": "loscion",
+        "origin": "Middle English"
+      },
+      {
+        "name": "lotion",
+        "origin": "Modern English"
+      },
+      {
+        "name": "locion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/lotion#etymonline_v_14544",
+      "https://www.merriam-webster.com/dictionary/lotion",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25880/track?counter=1&search_id=40250988",
+      "https://latin-dictionary.net/definition/25903/lotium-loti-i",
+      "https://latin-dictionary.net/definition/25408/lavo-lavare-lavi-lavatus",
+      "https://latin-dictionary.net/definition/25409/lavo-lavare-lavi-lotus"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to lotion",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to lotion",
+    "etymology": [
+      {
+        "name": "to lotion",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to lotion",
-        "ta locione -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to lotion",
-      "etymology": [
-        {
-          "name": "to lotion",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta locione -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta locione -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta lociones",
+          "pastTense": "ta locioned",
+          "progressive": "ta locioning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/lotion#etymonline_v_14544",
-        "https://www.merriam-webster.com/dictionary/lotion"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/lotion#etymonline_v_14544",
+      "https://www.merriam-webster.com/dictionary/lotion"
+    ]
   }
 ]

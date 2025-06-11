@@ -1,41 +1,35 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "city",
-      "etymology": [
-        {
-          "name": "civis, civitas",
-          "origin": "Latin"
-        },
-        {
-          "name": "cite",
-          "origin": "Old French"
-        },
-        {
-          "name": "city",
-          "origin": "Modern English"
-        },
-        {
-          "name": "citie, citis",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/city#etymonline_v_13742",
-        "https://www.oed.com/dictionary/city_n?tab=factsheet#9258513",
-        "https://anglo-norman.net/entry/cit%C3%A9",
-        "https://latin-dictionary.net/definition/10222/civitas-civitatis",
-        "https://latin-dictionary.net/definition/10221/civis-civis"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "city",
+    "etymology": [
+      {
+        "name": "civis, civitas",
+        "origin": "Latin"
+      },
+      {
+        "name": "cite",
+        "origin": "Old French"
+      },
+      {
+        "name": "city",
+        "origin": "Modern English"
+      },
+      {
+        "name": "citie, citis",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/city#etymonline_v_13742",
+      "https://www.oed.com/dictionary/city_n?tab=factsheet#9258513",
+      "https://anglo-norman.net/entry/cit%C3%A9",
+      "https://latin-dictionary.net/definition/10222/civitas-civitatis",
+      "https://latin-dictionary.net/definition/10221/civis-civis"
+    ]
   }
 ]

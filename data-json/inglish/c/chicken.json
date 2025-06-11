@@ -1,69 +1,49 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "chican  -s (m n)",
-      "etymology": [
-        {
-          "name": "cicen",
-          "origin": "Old English"
-        },
-        {
-          "name": "chiken",
-          "origin": "Middle English"
-        },
-        {
-          "name": "chican  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/chicken#etymonline_v_11251",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7551",
-        "https://bosworthtoller.com/6114"
-      ]
-    }
+    "name": "chican  -s (m n)",
+    "etymology": [
+      {
+        "name": "cicen",
+        "origin": "Old English"
+      },
+      {
+        "name": "chiken",
+        "origin": "Middle English"
+      },
+      {
+        "name": "chican  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/chicken#etymonline_v_11251",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7551",
+      "https://bosworthtoller.com/6114"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to chicken out",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to chicken out",
+    "etymology": [
+      {
+        "name": "to chicken out",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to chicken out",
-        "ta chicane aot -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to chicken out",
-      "etymology": [
-        {
-          "name": "to chicken out",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta chicane aot -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta chicane aot -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta chicane aots",
+          "pastTense": "ta chicane aotd",
+          "progressive": "ta chicane aoting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/chicken#etymonline_v_47088",
-        "https://www.etymonline.com/word/chicken#etymonline_v_11251"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/chicken#etymonline_v_47088",
+      "https://www.etymonline.com/word/chicken#etymonline_v_11251"
+    ]
   }
 ]

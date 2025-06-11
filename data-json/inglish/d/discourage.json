@@ -1,84 +1,62 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to discourage",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to discourage",
+    "etymology": [
+      {
+        "name": "descoragier",
+        "origin": "Old French"
       },
-      "etymology": [
-        "descoragier",
-        "discoragen",
-        "to discourage",
-        "ta descûrage -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to discourage",
-      "etymology": [
-        {
-          "name": "descoragier",
-          "origin": "Old French"
-        },
-        {
-          "name": "discoragen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to discourage",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta descûrage -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "discoragen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to discourage",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta descûrage -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta descûrages",
+          "pastTense": "ta descûraged",
+          "progressive": "ta descûraging"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/discourage#etymonline_v_11402",
-        "https://www.merriam-webster.com/dictionary/discourage#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/discourage#word-history",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED11851",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/d%C3%A9courager/22294",
-        "https://www.collinsdictionary.com/us/dictionary/french-english/d%C3%A9courager"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/discourage#etymonline_v_11402",
+      "https://www.merriam-webster.com/dictionary/discourage#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/discourage#word-history",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED11851",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/d%C3%A9courager/22294",
+      "https://www.collinsdictionary.com/us/dictionary/french-english/d%C3%A9courager"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "discouragement",
-      "etymology": [
-        {
-          "name": "discouragement",
-          "origin": "Modern English"
-        },
-        {
-          "name": "descûragement -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/discouragement#etymonline_v_53990",
-        "https://www.etymonline.com/word/discourage#etymonline_v_11402",
-        "https://www.etymonline.com/word/-ment#etymonline_v_32036"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "discouragement",
+    "etymology": [
+      {
+        "name": "discouragement",
+        "origin": "Modern English"
+      },
+      {
+        "name": "descûragement -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/discouragement#etymonline_v_53990",
+      "https://www.etymonline.com/word/discourage#etymonline_v_11402",
+      "https://www.etymonline.com/word/-ment#etymonline_v_32036"
+    ]
   }
 ]

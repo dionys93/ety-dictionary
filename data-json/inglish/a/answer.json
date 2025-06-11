@@ -1,147 +1,113 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to answer",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to answer",
+    "etymology": [
+      {
+        "name": "answarian, andswarian",
+        "origin": "Old English"
       },
-      "etymology": [
-        "answarian, andswarian",
-        "answeren",
-        "to answer",
-        "ta ansare -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to answer",
-      "etymology": [
-        {
-          "name": "answarian, andswarian",
-          "origin": "Old English"
-        },
-        {
-          "name": "answeren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to answer",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta ansare -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "answeren",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to answer",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta ansare -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta ansares",
+          "pastTense": "ta ansared",
+          "progressive": "ta ansaring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/answer#etymonline_v_41433",
-        "https://www.etymonline.com/word/swear#etymonline_v_22477",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED46052",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44070",
-        "https://bosworthtoller.com/001741",
-        "https://bosworthtoller.com/1952"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/answer#etymonline_v_41433",
+      "https://www.etymonline.com/word/swear#etymonline_v_22477",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED46052",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44070",
+      "https://bosworthtoller.com/001741",
+      "https://bosworthtoller.com/1952"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "answer",
-      "etymology": [
-        {
-          "name": "andswaru",
-          "origin": "Old English"
-        },
-        {
-          "name": "answere",
-          "origin": "Middle English"
-        },
-        {
-          "name": "answer",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ansar -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/answer#etymonline_v_13498",
-        "https://www.etymonline.com/word/swear#etymonline_v_22477",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED1737",
-        "https://bosworthtoller.com/1742"
-      ],
-      "number": "plural"
-    }
+    "name": "answer",
+    "etymology": [
+      {
+        "name": "andswaru",
+        "origin": "Old English"
+      },
+      {
+        "name": "answere",
+        "origin": "Middle English"
+      },
+      {
+        "name": "answer",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ansar -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/answer#etymonline_v_13498",
+      "https://www.etymonline.com/word/swear#etymonline_v_22477",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED1737",
+      "https://bosworthtoller.com/1742"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "answerable",
-      "etymology": [
-        {
-          "name": "answerable",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ansarable",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/answerable#etymonline_v_41125",
-        "https://www.etymonline.com/word/answer#etymonline_v_41433",
-        "https://www.etymonline.com/word/-able#etymonline_v_49"
-      ]
-    }
+    "name": "answerable",
+    "etymology": [
+      {
+        "name": "answerable",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ansarable",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/answerable#etymonline_v_41125",
+      "https://www.etymonline.com/word/answer#etymonline_v_41433",
+      "https://www.etymonline.com/word/-able#etymonline_v_49"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "answerless",
-      "etymology": [
-        {
-          "name": "answerless",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ansarleʃ",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/answerless#etymonline_v_52332",
-        "https://www.etymonline.com/word/answer#etymonline_v_13498",
-        "https://www.etymonline.com/word/-less#etymonline_v_6702",
-        "https://www.etymonline.com/word/answerless#etymonline_v_52332"
-      ]
-    }
+    "name": "answerless",
+    "etymology": [
+      {
+        "name": "answerless",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ansarleʃ",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/answerless#etymonline_v_52332",
+      "https://www.etymonline.com/word/answer#etymonline_v_13498",
+      "https://www.etymonline.com/word/-less#etymonline_v_6702",
+      "https://www.etymonline.com/word/answerless#etymonline_v_52332"
+    ]
   }
 ]

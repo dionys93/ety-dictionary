@@ -1,101 +1,78 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "retreat",
-      "etymology": [
-        {
-          "name": "re+ trahere, retrahere, retrere",
-          "origin": "Latin"
-        },
-        {
-          "name": "retret, retrait",
-          "origin": "Old French"
-        },
-        {
-          "name": "retrete",
-          "origin": "Middle English"
-        },
-        {
-          "name": "retreat",
-          "origin": "Modern English"
-        },
-        {
-          "name": "retrite, retríts",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/retreat#etymonline_v_12952",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37251",
-        "https://www.anglo-norman.net/entry/retret",
-        "https://latin-dictionary.net/definition/33526/retraho-retrahere-retraxi-retractus"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "retreat",
+    "etymology": [
+      {
+        "name": "re+ trahere, retrahere, retrere",
+        "origin": "Latin"
+      },
+      {
+        "name": "retret, retrait",
+        "origin": "Old French"
+      },
+      {
+        "name": "retrete",
+        "origin": "Middle English"
+      },
+      {
+        "name": "retreat",
+        "origin": "Modern English"
+      },
+      {
+        "name": "retrite, retríts",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/retreat#etymonline_v_12952",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37251",
+      "https://www.anglo-norman.net/entry/retret",
+      "https://latin-dictionary.net/definition/33526/retraho-retrahere-retraxi-retractus"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to retreat",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to retreat",
+    "etymology": [
+      {
+        "name": "re + trahere, retrahere, retrere",
+        "origin": "Latin"
       },
-      "etymology": [
-        "re + trahere, retrahere, retrere",
-        "retreter, retraiter",
-        "retreten",
-        "to retreat",
-        "ta retrite -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to retreat",
-      "etymology": [
-        {
-          "name": "re + trahere, retrahere, retrere",
-          "origin": "Latin"
-        },
-        {
-          "name": "retreter, retraiter",
-          "origin": "Old French"
-        },
-        {
-          "name": "retreten",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to retreat",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta retrite -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "retreter, retraiter",
+        "origin": "Old French"
+      },
+      {
+        "name": "retreten",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to retreat",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta retrite -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta retrites",
+          "pastTense": "ta retrited",
+          "progressive": "ta retriting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/retreat#etymonline_v_46974",
-        "https://www.etymonline.com/word/retreat#etymonline_v_12952",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37252",
-        "https://www.anglo-norman.net/entry/retreter",
-        "https://latin-dictionary.net/definition/33526/retraho-retrahere-retraxi-retractus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/retreat#etymonline_v_46974",
+      "https://www.etymonline.com/word/retreat#etymonline_v_12952",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37252",
+      "https://www.anglo-norman.net/entry/retreter",
+      "https://latin-dictionary.net/definition/33526/retraho-retrahere-retraxi-retractus"
+    ]
   }
 ]

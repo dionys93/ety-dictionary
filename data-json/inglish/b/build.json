@@ -1,97 +1,79 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "to build",
-      "etymology": [
-        {
-          "name": "byldan",
-          "origin": "Old English"
-        },
-        {
-          "name": "bilden",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to build",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta bilde -s bilt -ing",
-          "origin": "Inglish"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/build#etymonline_v_18047",
-        "https://www.merriam-webster.com/dictionary/build#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4579",
-        "https://www.oed.com/dictionary/build_v?tab=pronunciation#12571265",
-        "https://bosworthtoller.com/41197",
-        "https://bosworthtoller.com/4826"
-      ]
-    }
+    "name": "to build",
+    "etymology": [
+      {
+        "name": "byldan",
+        "origin": "Old English"
+      },
+      {
+        "name": "bilden",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to build",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta bilde -s bilt -ing",
+        "origin": "Inglish"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/build#etymonline_v_18047",
+      "https://www.merriam-webster.com/dictionary/build#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4579",
+      "https://www.oed.com/dictionary/build_v?tab=pronunciation#12571265",
+      "https://bosworthtoller.com/41197",
+      "https://bosworthtoller.com/4826"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "build",
-      "etymology": [
-        {
-          "name": "build",
-          "origin": "Modern English"
-        },
-        {
-          "name": "bild -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/build#etymonline_v_46605",
-        "https://www.etymonline.com/word/build#etymonline_v_18047",
-        "https://www.merriam-webster.com/dictionary/build#dictionary-entry-2",
-        "https://www.oed.com/dictionary/build_n?tab=factsheet#12570513"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "build",
+    "etymology": [
+      {
+        "name": "build",
+        "origin": "Modern English"
+      },
+      {
+        "name": "bild -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/build#etymonline_v_46605",
+      "https://www.etymonline.com/word/build#etymonline_v_18047",
+      "https://www.merriam-webster.com/dictionary/build#dictionary-entry-2",
+      "https://www.oed.com/dictionary/build_n?tab=factsheet#12570513"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "building",
-      "etymology": [
-        {
-          "name": "building",
-          "origin": "Modern English"
-        },
-        {
-          "name": "bilding -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/building#etymonline_v_32853",
-        "https://www.etymonline.com/word/build#etymonline_v_18047",
-        "https://www.merriam-webster.com/dictionary/building",
-        "https://www.oed.com/dictionary/building_n?tab=factsheet#12397234"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "building",
+    "etymology": [
+      {
+        "name": "building",
+        "origin": "Modern English"
+      },
+      {
+        "name": "bilding -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/building#etymonline_v_32853",
+      "https://www.etymonline.com/word/build#etymonline_v_18047",
+      "https://www.merriam-webster.com/dictionary/building",
+      "https://www.oed.com/dictionary/building_n?tab=factsheet#12397234"
+    ]
   }
 ]

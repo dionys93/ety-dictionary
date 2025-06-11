@@ -1,218 +1,174 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "to break",
-      "etymology": [
-        {
-          "name": "brecan",
-          "origin": "Old English"
-        },
-        {
-          "name": "breken",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to break",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta bréke -s broke broken -ing",
-          "origin": "Inglish"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/break#etymonline_v_17079",
-        "https://www.merriam-webster.com/dictionary/break#dictionary-entry-1",
-        "https://www.oed.com/dictionary/break_v?tab=factsheet#14528502",
-        "https://www.verbix.com/webverbix/go.php?D1=23&T1=brecan",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5908",
-        "https://bosworthtoller.com/40838"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "break",
-      "etymology": [
-        {
-          "name": "brec",
-          "origin": "Old English"
-        },
-        {
-          "name": "brech",
-          "origin": "Middle English"
-        },
-        {
-          "name": "break",
-          "origin": "Modern English"
-        },
-        {
-          "name": "bréke, bréx",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/break#etymonline_v_32628",
-        "https://www.etymonline.com/word/break#etymonline_v_17079",
-        "https://www.oed.com/dictionary/break_n?tab=meaning_and_use#14524620",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5869",
-        "https://bosworthtoller.com/4994"
-      ],
-      "gender": "masculine",
-      "number": "singular"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "breakfast",
-      "etymology": [
-        {
-          "name": "breke-faste",
-          "origin": "Middle English"
-        },
-        {
-          "name": "breakfast",
-          "origin": "Modern English"
-        },
-        {
-          "name": "brekfast -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/breakfast#etymonline_v_17080",
-        "https://www.etymonline.com/word/break#etymonline_v_17079",
-        "https://www.etymonline.com/word/fast#etymonline_v_46545",
-        "https://www.oed.com/dictionary/breakfast_n?tab=factsheet#14584115",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5906"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "broke  (adj)",
-      "etymology": [
-        {
-          "name": "broc",
-          "origin": "Old English"
-        },
-        {
-          "name": "broke  (adj)",
-          "origin": "Middle English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/broke#etymonline_v_17149",
-        "https://www.merriam-webster.com/dictionary/broke#dictionary-entry-2",
-        "https://bosworthtoller.com/40949"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "breach",
-      "etymology": [
-        {
-          "name": "bryce",
-          "origin": "Old English"
-        },
-        {
-          "name": "briche, breche",
-          "origin": "Middle English"
-        },
-        {
-          "name": "breach",
-          "origin": "Modern English"
-        },
-        {
-          "name": "brích -es",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/breach#etymonline_v_17076",
-        "https://www.merriam-webster.com/dictionary/breach#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/breach#word-history",
-        "https://www.oed.com/dictionary/breach_n?tab=factsheet#14424952",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6002",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5869",
-        "https://bosworthtoller.com/5261"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to breach",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "to break",
+    "etymology": [
+      {
+        "name": "brecan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "to breach",
-        "ta bríche -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to breach",
-      "etymology": [
-        {
-          "name": "to breach",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta bríche -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/breach#etymonline_v_44000",
-        "https://www.etymonline.com/word/breach#etymonline_v_17076",
-        "https://www.merriam-webster.com/dictionary/breach#dictionary-entry-2",
-        "https://www.merriam-webster.com/dictionary/breach#word-history",
-        "https://www.oed.com/dictionary/breach_v?tab=factsheet#14427606"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "breken",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to break",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta bréke -s broke broken -ing",
+        "origin": "Inglish"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/break#etymonline_v_17079",
+      "https://www.merriam-webster.com/dictionary/break#dictionary-entry-1",
+      "https://www.oed.com/dictionary/break_v?tab=factsheet#14528502",
+      "https://www.verbix.com/webverbix/go.php?D1=23&T1=brecan",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5908",
+      "https://bosworthtoller.com/40838"
+    ]
+  },
+  {
+    "name": "break",
+    "etymology": [
+      {
+        "name": "brec",
+        "origin": "Old English"
+      },
+      {
+        "name": "brech",
+        "origin": "Middle English"
+      },
+      {
+        "name": "break",
+        "origin": "Modern English"
+      },
+      {
+        "name": "bréke, bréx",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/break#etymonline_v_32628",
+      "https://www.etymonline.com/word/break#etymonline_v_17079",
+      "https://www.oed.com/dictionary/break_n?tab=meaning_and_use#14524620",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5869",
+      "https://bosworthtoller.com/4994"
+    ]
+  },
+  {
+    "name": "breakfast",
+    "etymology": [
+      {
+        "name": "breke-faste",
+        "origin": "Middle English"
+      },
+      {
+        "name": "breakfast",
+        "origin": "Modern English"
+      },
+      {
+        "name": "brekfast -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/breakfast#etymonline_v_17080",
+      "https://www.etymonline.com/word/break#etymonline_v_17079",
+      "https://www.etymonline.com/word/fast#etymonline_v_46545",
+      "https://www.oed.com/dictionary/breakfast_n?tab=factsheet#14584115",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5906"
+    ]
+  },
+  {
+    "name": "broke  (adj)",
+    "etymology": [
+      {
+        "name": "broc",
+        "origin": "Old English"
+      },
+      {
+        "name": "broke  (adj)",
+        "origin": "Middle English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/broke#etymonline_v_17149",
+      "https://www.merriam-webster.com/dictionary/broke#dictionary-entry-2",
+      "https://bosworthtoller.com/40949"
+    ]
+  },
+  {
+    "name": "breach",
+    "etymology": [
+      {
+        "name": "bryce",
+        "origin": "Old English"
+      },
+      {
+        "name": "briche, breche",
+        "origin": "Middle English"
+      },
+      {
+        "name": "breach",
+        "origin": "Modern English"
+      },
+      {
+        "name": "brích -es",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/breach#etymonline_v_17076",
+      "https://www.merriam-webster.com/dictionary/breach#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/breach#word-history",
+      "https://www.oed.com/dictionary/breach_n?tab=factsheet#14424952",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6002",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5869",
+      "https://bosworthtoller.com/5261"
+    ]
+  },
+  {
+    "infinitive": "to breach",
+    "etymology": [
+      {
+        "name": "to breach",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta bríche -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta bríches",
+          "pastTense": "ta bríched",
+          "progressive": "ta bríching"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/breach#etymonline_v_44000",
+      "https://www.etymonline.com/word/breach#etymonline_v_17076",
+      "https://www.merriam-webster.com/dictionary/breach#dictionary-entry-2",
+      "https://www.merriam-webster.com/dictionary/breach#word-history",
+      "https://www.oed.com/dictionary/breach_v?tab=factsheet#14427606"
+    ]
   }
 ]

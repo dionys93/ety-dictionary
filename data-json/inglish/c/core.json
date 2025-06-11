@@ -1,80 +1,60 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "core",
-      "etymology": [
-        {
-          "name": "cor",
-          "origin": "Latin"
-        },
-        {
-          "name": "coeur",
-          "origin": "Old French"
-        },
-        {
-          "name": "core",
-          "origin": "Modern English"
-        },
-        {
-          "name": "core, cors",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/core#etymonline_v_19074",
-        "https://www.merriam-webster.com/dictionary/core#dictionary-entry-1",
-        "https://anglo-norman.net/entry/coeur",
-        "https://latin-dictionary.net/definition/14215/cor-cordis"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "core",
+    "etymology": [
+      {
+        "name": "cor",
+        "origin": "Latin"
+      },
+      {
+        "name": "coeur",
+        "origin": "Old French"
+      },
+      {
+        "name": "core",
+        "origin": "Modern English"
+      },
+      {
+        "name": "core, cors",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/core#etymonline_v_19074",
+      "https://www.merriam-webster.com/dictionary/core#dictionary-entry-1",
+      "https://anglo-norman.net/entry/coeur",
+      "https://latin-dictionary.net/definition/14215/cor-cordis"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to core",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to core",
+    "etymology": [
+      {
+        "name": "to core",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to core",
-        "ta core -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to core",
-      "etymology": [
-        {
-          "name": "to core",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta core -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta core -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta cores",
+          "pastTense": "ta cored",
+          "progressive": "ta coring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/core#etymonline_v_46712",
-        "https://www.etymonline.com/word/core#etymonline_v_19074",
-        "https://www.merriam-webster.com/dictionary/core#dictionary-entry-2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/core#etymonline_v_46712",
+      "https://www.etymonline.com/word/core#etymonline_v_19074",
+      "https://www.merriam-webster.com/dictionary/core#dictionary-entry-2"
+    ]
   }
 ]

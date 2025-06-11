@@ -1,72 +1,60 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "to catch",
-      "etymology": [
-        {
-          "name": "capere, captare",
-          "origin": "Latin"
-        },
-        {
-          "name": "captiare",
-          "origin": "Vulgar Latin"
-        },
-        {
-          "name": "cachier",
-          "origin": "Inglish"
-        },
-        {
-          "name": "to catch",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta cache -s coht -ing",
-          "origin": "Inglish"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/catch#etymonline_v_5481",
-        "https://www.merriam-webster.com/dictionary/catch#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/catch#word-history",
-        "https://www.oed.com/dictionary/catch_v?tab=pronunciation#9828371",
-        "https://anglo-norman.net/entry/cacher",
-        "https://anglo-norman.net/entry/cachier",
-        "https://latin-dictionary.net/definition/8108/capto-captare-captavi-captatus",
-        "https://latin-dictionary.net/definition/7987/capio-capere-cepi-captus"
-      ]
-    }
+    "name": "to catch",
+    "etymology": [
+      {
+        "name": "capere, captare",
+        "origin": "Latin"
+      },
+      {
+        "name": "captiare",
+        "origin": "Vulgar Latin"
+      },
+      {
+        "name": "cachier",
+        "origin": "Inglish"
+      },
+      {
+        "name": "to catch",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta cache -s coht -ing",
+        "origin": "Inglish"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/catch#etymonline_v_5481",
+      "https://www.merriam-webster.com/dictionary/catch#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/catch#word-history",
+      "https://www.oed.com/dictionary/catch_v?tab=pronunciation#9828371",
+      "https://anglo-norman.net/entry/cacher",
+      "https://anglo-norman.net/entry/cachier",
+      "https://latin-dictionary.net/definition/8108/capto-captare-captavi-captatus",
+      "https://latin-dictionary.net/definition/7987/capio-capere-cepi-captus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "catch",
-      "etymology": [
-        {
-          "name": "catch",
-          "origin": "Modern English"
-        },
-        {
-          "name": "cach -es",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/catch#etymonline_v_44880",
-        "https://www.etymonline.com/word/catch#etymonline_v_5481",
-        "https://www.oed.com/dictionary/catch_n2?tab=pronunciation#9827060",
-        "https://www.merriam-webster.com/dictionary/catch#dictionary-entry-2"
-      ],
-      "number": "plural"
-    }
+    "name": "catch",
+    "etymology": [
+      {
+        "name": "catch",
+        "origin": "Modern English"
+      },
+      {
+        "name": "cach -es",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/catch#etymonline_v_44880",
+      "https://www.etymonline.com/word/catch#etymonline_v_5481",
+      "https://www.oed.com/dictionary/catch_n2?tab=pronunciation#9827060",
+      "https://www.merriam-webster.com/dictionary/catch#dictionary-entry-2"
+    ]
   }
 ]

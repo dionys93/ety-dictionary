@@ -1,36 +1,30 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "sale",
-      "etymology": [
-        {
-          "name": "sala",
-          "origin": "Old English"
-        },
-        {
-          "name": "sale",
-          "origin": "Middle English"
-        },
-        {
-          "name": "sâle, sâls",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/sale#etymonline_v_22620",
-        "https://www.merriam-webster.com/dictionary/sale",
-        "https://www.oed.com/dictionary/sale_n2?tab=factsheet#24383209",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED38307",
-        "https://bosworthtoller.com/26310"
-      ],
-      "number": "plural"
-    }
+    "name": "sale",
+    "etymology": [
+      {
+        "name": "sala",
+        "origin": "Old English"
+      },
+      {
+        "name": "sale",
+        "origin": "Middle English"
+      },
+      {
+        "name": "sâle, sâls",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/sale#etymonline_v_22620",
+      "https://www.merriam-webster.com/dictionary/sale",
+      "https://www.oed.com/dictionary/sale_n2?tab=factsheet#24383209",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED38307",
+      "https://bosworthtoller.com/26310"
+    ]
   }
 ]

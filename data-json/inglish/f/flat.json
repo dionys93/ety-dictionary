@@ -1,77 +1,57 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "flatr",
-      "etymology": [
-        {
-          "name": "flatr",
-          "origin": "Old Norse"
-        },
-        {
-          "name": "flat -ter -test -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "adverb",
-            "masculine noun"
-          ]
+    "name": "flatr",
+    "etymology": [
+      {
+        "name": "flatr",
+        "origin": "Old Norse"
+      },
+      {
+        "name": "flat -ter -test -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "adverb",
+          "masculine noun"
+        ],
+        "degrees": {
+          "positive": "flat",
+          "comparative": "ter",
+          "superlative": "test"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/flat",
-        "https://www.oed.com/dictionary/flat_adj?tab=factsheet#4030045",
-        "https://old-norse.net/html/f.php#flatr"
-      ],
-      "degrees": {
-        "positive": "flat",
-        "comparative": "ter",
-        "superlative": "test"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/flat",
+      "https://www.oed.com/dictionary/flat_adj?tab=factsheet#4030045",
+      "https://old-norse.net/html/f.php#flatr"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "ta flatten",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "ta flatten",
+    "etymology": [
+      {
+        "name": "ta flatten",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "ta flatten",
-        "ta flatane -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "ta flatten",
-      "etymology": [
-        {
-          "name": "ta flatten",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta flatane -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta flatane -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta flatanes",
+          "pastTense": "ta flataned",
+          "progressive": "ta flataning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/flatten",
-        "https://www.etymonline.com/word/flat#etymonline_v_8854",
-        "https://www.etymonline.com/word/-en#etymonline_v_32445",
-        "https://www.oed.com/dictionary/flatten_v?tab=factsheet#4042301"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/flatten",
+      "https://www.etymonline.com/word/flat#etymonline_v_8854",
+      "https://www.etymonline.com/word/-en#etymonline_v_32445",
+      "https://www.oed.com/dictionary/flatten_v?tab=factsheet#4042301"
+    ]
   }
 ]

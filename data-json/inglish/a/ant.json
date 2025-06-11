@@ -1,41 +1,35 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "ant",
-      "etymology": [
-        {
-          "name": "æmette",
-          "origin": "Old English"
-        },
-        {
-          "name": "ampte",
-          "origin": "Middle English"
-        },
-        {
-          "name": "ant",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ànt -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/ant#etymonline_v_13499",
-        "https://www.merriam-webster.com/dictionary/ant#dictionary-entry-1",
-        "https://www.oed.com/dictionary/ant_n1?tab=factsheet#2503463",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED1496",
-        "https://bosworthtoller.com/659"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "ant",
+    "etymology": [
+      {
+        "name": "æmette",
+        "origin": "Old English"
+      },
+      {
+        "name": "ampte",
+        "origin": "Middle English"
+      },
+      {
+        "name": "ant",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ànt -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/ant#etymonline_v_13499",
+      "https://www.merriam-webster.com/dictionary/ant#dictionary-entry-1",
+      "https://www.oed.com/dictionary/ant_n1?tab=factsheet#2503463",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED1496",
+      "https://bosworthtoller.com/659"
+    ]
   }
 ]

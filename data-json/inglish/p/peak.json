@@ -1,73 +1,53 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "peak",
-      "etymology": [
-        {
-          "name": "peak",
-          "origin": "Modern English"
-        },
-        {
-          "name": "pike, píx",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/peak#etymonline_v_10214",
-        "https://www.etymonline.com/word/pike#etymonline_v_14974",
-        "https://www.merriam-webster.com/dictionary/peak#dictionary-entry-1",
-        "https://www.oed.com/dictionary/peak_n2?tab=factsheet#31348645"
-      ],
-      "gender": "masculine",
-      "number": "singular"
-    }
+    "name": "peak",
+    "etymology": [
+      {
+        "name": "peak",
+        "origin": "Modern English"
+      },
+      {
+        "name": "pike, píx",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/peak#etymonline_v_10214",
+      "https://www.etymonline.com/word/pike#etymonline_v_14974",
+      "https://www.merriam-webster.com/dictionary/peak#dictionary-entry-1",
+      "https://www.oed.com/dictionary/peak_n2?tab=factsheet#31348645"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to peak",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to peak",
+    "etymology": [
+      {
+        "name": "to peak",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to peak",
-        "ta pike -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to peak",
-      "etymology": [
-        {
-          "name": "to peak",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta pike -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta pike -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta pikes",
+          "pastTense": "ta piked",
+          "progressive": "ta piking"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/peak#etymonline_v_45730",
-        "https://www.etymonline.com/word/peak#etymonline_v_10214",
-        "https://www.merriam-webster.com/dictionary/peak#dictionary-entry-2",
-        "https://www.oed.com/dictionary/peak_v2?tab=factsheet#31352276"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/peak#etymonline_v_45730",
+      "https://www.etymonline.com/word/peak#etymonline_v_10214",
+      "https://www.merriam-webster.com/dictionary/peak#dictionary-entry-2",
+      "https://www.oed.com/dictionary/peak_v2?tab=factsheet#31352276"
+    ]
   }
 ]

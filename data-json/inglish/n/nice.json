@@ -1,113 +1,86 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "nice",
-      "etymology": [
-        {
-          "name": "nescius",
-          "origin": "Latin"
-        },
-        {
-          "name": "nice",
-          "origin": "Old French"
-        },
-        {
-          "name": "nîce -r -st",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "adverb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/nice#etymonline_v_6918",
-        "https://www.merriam-webster.com/dictionary/nice#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/nice#dictionary-entry-2",
-        "https://www.oed.com/dictionary/nice_adj?tab=pronunciation#34772835",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/na%C3%AFf/53357",
-        "https://www.anglo-norman.net/entry/nice_1",
-        "https://latin-dictionary.net/definition/27821/nescius-nescia-nescium"
-      ],
-      "degrees": {
-        "positive": "ce",
-        "comparative": "r",
-        "superlative": "st"
+    "name": "nice",
+    "etymology": [
+      {
+        "name": "nescius",
+        "origin": "Latin"
+      },
+      {
+        "name": "nice",
+        "origin": "Old French"
+      },
+      {
+        "name": "nîce -r -st",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "adverb"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/nice#etymonline_v_6918",
+      "https://www.merriam-webster.com/dictionary/nice#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/nice#dictionary-entry-2",
+      "https://www.oed.com/dictionary/nice_adj?tab=pronunciation#34772835",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/na%C3%AFf/53357",
+      "https://www.anglo-norman.net/entry/nice_1",
+      "https://latin-dictionary.net/definition/27821/nescius-nescia-nescium"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to nicely",
-      "etymology": [
-        "niceli",
-        "nicely",
-        "nîcely"
-      ]
-    },
-    "standard": {
-      "name": "to nicely",
-      "etymology": [
-        {
-          "name": "niceli",
-          "origin": "Middle English"
-        },
-        {
-          "name": "nicely",
-          "origin": "Modern English"
-        },
-        {
-          "name": "nîcely",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adverb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/nicely#etymonline_v_45501",
-        "https://www.oed.com/dictionary/nicely_adv?tab=factsheet#34778082",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29476",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/na%C3%AFf/53357",
-        "https://www.anglo-norman.net/entry/nice_1"
-      ]
-    }
+    "infinitive": "nicely",
+    "etymology": [
+      {
+        "name": "niceli",
+        "origin": "Middle English"
+      },
+      {
+        "name": "nicely",
+        "origin": "Modern English"
+      },
+      {
+        "name": "nîcely",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adverb"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/nicely#etymonline_v_45501",
+      "https://www.oed.com/dictionary/nicely_adv?tab=factsheet#34778082",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29476",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/na%C3%AFf/53357",
+      "https://www.anglo-norman.net/entry/nice_1"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "nicety",
-      "etymology": [
-        {
-          "name": "niceté",
-          "origin": "Old French"
-        },
-        {
-          "name": "nicety",
-          "origin": "Modern English"
-        },
-        {
-          "name": "nîcetie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/nicety",
-        "https://www.oed.com/dictionary/nicety_n?tab=factsheet#34780878",
-        "https://anglo-norman.net/entry/nicet%C3%A9"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "nicety",
+    "etymology": [
+      {
+        "name": "niceté",
+        "origin": "Old French"
+      },
+      {
+        "name": "nicety",
+        "origin": "Modern English"
+      },
+      {
+        "name": "nîcetie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/nicety",
+      "https://www.oed.com/dictionary/nicety_n?tab=factsheet#34780878",
+      "https://anglo-norman.net/entry/nicet%C3%A9"
+    ]
   }
 ]

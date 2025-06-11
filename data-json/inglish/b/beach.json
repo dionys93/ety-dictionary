@@ -1,80 +1,60 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "beach",
-      "etymology": [
-        {
-          "name": "bæc, bece",
-          "origin": "Old English"
-        },
-        {
-          "name": "beach",
-          "origin": "Modern English"
-        },
-        {
-          "name": "biech -es",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/beach#etymonline_v_8194",
-        "https://www.merriam-webster.com/dictionary/beach#dictionary-entry-1",
-        "https://www.oed.com/dictionary/beach_n?tab=factsheet#25799592",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3388",
-        "https://bosworthtoller.com/39627",
-        "https://bosworthtoller.com/61342",
-        "https://etymologeek.com/eng/beach/19870637"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "beach",
+    "etymology": [
+      {
+        "name": "bæc, bece",
+        "origin": "Old English"
+      },
+      {
+        "name": "beach",
+        "origin": "Modern English"
+      },
+      {
+        "name": "biech -es",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/beach#etymonline_v_8194",
+      "https://www.merriam-webster.com/dictionary/beach#dictionary-entry-1",
+      "https://www.oed.com/dictionary/beach_n?tab=factsheet#25799592",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3388",
+      "https://bosworthtoller.com/39627",
+      "https://bosworthtoller.com/61342",
+      "https://etymologeek.com/eng/beach/19870637"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to beach",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to beach",
+    "etymology": [
+      {
+        "name": "to beach",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to beach",
-        "ta bieche -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to beach",
-      "etymology": [
-        {
-          "name": "to beach",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta bieche -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta bieche -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta bieches",
+          "pastTense": "ta bieched",
+          "progressive": "ta bieching"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/beach#etymonline_v_42745",
-        "https://www.etymonline.com/word/beach#etymonline_v_8194",
-        "https://www.oed.com/dictionary/beach_v1?tab=factsheet#25801816",
-        "https://www.merriam-webster.com/dictionary/beach#dictionary-entry-2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/beach#etymonline_v_42745",
+      "https://www.etymonline.com/word/beach#etymonline_v_8194",
+      "https://www.oed.com/dictionary/beach_v1?tab=factsheet#25801816",
+      "https://www.merriam-webster.com/dictionary/beach#dictionary-entry-2"
+    ]
   }
 ]

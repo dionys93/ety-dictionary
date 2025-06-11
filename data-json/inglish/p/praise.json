@@ -1,80 +1,57 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to praise",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to praise",
+    "etymology": [
+      {
+        "name": "pretium, pretiare, preciare",
+        "origin": "Latin"
       },
-      "etymology": [
-        "pretium, pretiare, preciare",
-        "preisier, prisier",
-        "preisen",
-        "to praise",
-        "ta praise -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to praise",
-      "etymology": [
-        {
-          "name": "pretium, pretiare, preciare",
-          "origin": "Latin"
-        },
-        {
-          "name": "preisier, prisier",
-          "origin": "Old French"
-        },
-        {
-          "name": "preisen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to praise",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta praise -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "preisier, prisier",
+        "origin": "Old French"
+      },
+      {
+        "name": "preisen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to praise",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta praise -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta praises",
+          "pastTense": "ta praised",
+          "progressive": "ta praising"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/praise#etymonline_v_18606",
-        "https://www.merriam-webster.com/dictionary/praise#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED34413",
-        "https://www.anglo-norman.net/entry/preiser_1",
-        "https://latin-dictionary.net/definition/31549/precium-preci-i",
-        "https://latin-dictionary.net/definition/31590/pretium-preti-i"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/praise#etymonline_v_18606",
+      "https://www.merriam-webster.com/dictionary/praise#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED34413",
+      "https://www.anglo-norman.net/entry/preiser_1",
+      "https://latin-dictionary.net/definition/31549/precium-preci-i",
+      "https://latin-dictionary.net/definition/31590/pretium-preti-i"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "praise  -s (f n)",
-      "etymology": [
-        {
-          "name": "praise  -s (f n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/praise#etymonline_v_45460",
-        "https://www.etymonline.com/word/praise#etymonline_v_18606",
-        "https://www.merriam-webster.com/dictionary/praise#dictionary-entry-2"
-      ]
-    }
+    "name": "praise  -s (f n)",
+    "etymology": [
+      {
+        "name": "praise  -s (f n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/praise#etymonline_v_45460",
+      "https://www.etymonline.com/word/praise#etymonline_v_18606",
+      "https://www.merriam-webster.com/dictionary/praise#dictionary-entry-2"
+    ]
   }
 ]

@@ -1,100 +1,77 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to disturb",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to disturb",
+    "etymology": [
+      {
+        "name": "disturbare",
+        "origin": "Latin"
       },
-      "etymology": [
-        "disturbare",
-        "destorber",
-        "distourben",
-        "to disturb",
-        "ta desturbe -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to disturb",
-      "etymology": [
-        {
-          "name": "disturbare",
-          "origin": "Latin"
-        },
-        {
-          "name": "destorber",
-          "origin": "Old French"
-        },
-        {
-          "name": "distourben",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to disturb",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta desturbe -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "destorber",
+        "origin": "Old French"
+      },
+      {
+        "name": "distourben",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to disturb",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta desturbe -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta desturbes",
+          "pastTense": "ta desturbed",
+          "progressive": "ta desturbing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/disturb#etymonline_v_11525",
-        "https://www.oed.com/dictionary/disturb_v?tab=factsheet#6522128",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12152",
-        "https://anglo-norman.net/entry/desturber_1",
-        "https://latin-dictionary.net/definition/18243/disturbo-disturbare-disturbavi-disturbatus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/disturb#etymonline_v_11525",
+      "https://www.oed.com/dictionary/disturb_v?tab=factsheet#6522128",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12152",
+      "https://anglo-norman.net/entry/desturber_1",
+      "https://latin-dictionary.net/definition/18243/disturbo-disturbare-disturbavi-disturbatus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "disturbance",
-      "etymology": [
-        {
-          "name": "turba, dis + turbare, disturbare",
-          "origin": "Latin"
-        },
-        {
-          "name": "destourber, destorbance",
-          "origin": "Old French"
-        },
-        {
-          "name": "disturbance",
-          "origin": "Modern English"
-        },
-        {
-          "name": "destûrbance -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/disturbance#etymonline_v_31730",
-        "https://www.oed.com/dictionary/disturbance_n?tab=factsheet#6522701",
-        "https://anglo-norman.net/entry/desturbance",
-        "https://anglo-norman.net/entry/desturber_1",
-        "https://latin-dictionary.net/definition/18243/disturbo-disturbare-disturbavi-disturbatus",
-        "https://latin-dictionary.net/definition/37883/turbo-turbare-turbavi-turbatus",
-        "https://latin-dictionary.net/definition/37871/turba-turbae"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "disturbance",
+    "etymology": [
+      {
+        "name": "turba, dis + turbare, disturbare",
+        "origin": "Latin"
+      },
+      {
+        "name": "destourber, destorbance",
+        "origin": "Old French"
+      },
+      {
+        "name": "disturbance",
+        "origin": "Modern English"
+      },
+      {
+        "name": "destûrbance -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/disturbance#etymonline_v_31730",
+      "https://www.oed.com/dictionary/disturbance_n?tab=factsheet#6522701",
+      "https://anglo-norman.net/entry/desturbance",
+      "https://anglo-norman.net/entry/desturber_1",
+      "https://latin-dictionary.net/definition/18243/disturbo-disturbare-disturbavi-disturbatus",
+      "https://latin-dictionary.net/definition/37883/turbo-turbare-turbavi-turbatus",
+      "https://latin-dictionary.net/definition/37871/turba-turbae"
+    ]
   }
 ]

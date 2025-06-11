@@ -1,107 +1,81 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "burden",
-      "etymology": [
-        {
-          "name": "byrðen",
-          "origin": "Old English"
-        },
-        {
-          "name": "burden",
-          "origin": "Modern English"
-        },
-        {
-          "name": "burdan -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/burden",
-        "https://www.oed.com/dictionary/burden_n?tab=factsheet#11909136",
-        "https://bosworthtoller.com/5662"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to burden",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "burden",
+    "etymology": [
+      {
+        "name": "byrðen",
+        "origin": "Old English"
       },
-      "etymology": [
-        "to burden",
-        "ta burdane -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to burden",
-      "etymology": [
-        {
-          "name": "to burden",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta burdane -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.oed.com/dictionary/burden_v?tab=factsheet#11911237"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "burden",
+        "origin": "Modern English"
+      },
+      {
+        "name": "burdan -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/burden",
+      "https://www.oed.com/dictionary/burden_n?tab=factsheet#11909136",
+      "https://bosworthtoller.com/5662"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "burden",
-      "etymology": [
-        {
-          "name": "bordon",
-          "origin": "Old French"
-        },
-        {
-          "name": "burden",
-          "origin": "Modern English"
-        },
-        {
-          "name": "bourdon -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
+    "infinitive": "to burden",
+    "etymology": [
+      {
+        "name": "to burden",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta burdane -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta burdanes",
+          "pastTense": "ta burdaned",
+          "progressive": "ta burdaning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/burden",
-        "https://www.larousse.fr/dictionnaires/francais/bourdon/10624",
-        "https://www.merriam-webster.com/dictionary/burden#dictionary-entry-3",
-        "https://anglo-norman.net/entry/bordun"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.oed.com/dictionary/burden_v?tab=factsheet#11911237"
+    ]
+  },
+  {
+    "name": "burden",
+    "etymology": [
+      {
+        "name": "bordon",
+        "origin": "Old French"
+      },
+      {
+        "name": "burden",
+        "origin": "Modern English"
+      },
+      {
+        "name": "bourdon -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/burden",
+      "https://www.larousse.fr/dictionnaires/francais/bourdon/10624",
+      "https://www.merriam-webster.com/dictionary/burden#dictionary-entry-3",
+      "https://anglo-norman.net/entry/bordun"
+    ]
   }
 ]

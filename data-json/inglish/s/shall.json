@@ -1,44 +1,33 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "shall, should",
-      "etymology": [
-        "sculan, sceal, sceolde",
-        "shulen",
-        "shall, should",
-        "shal, seûd, shan't, seûdn't"
-      ]
-    },
-    "standard": {
-      "name": "shall, should",
-      "etymology": [
-        {
-          "name": "sculan, sceal, sceolde",
-          "origin": "Old English"
-        },
-        {
-          "name": "shulen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "shall, should",
-          "origin": "Modern English"
-        },
-        {
-          "name": "shal, seûd, shan't, seûdn't",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/should#etymonline_v_23436",
-        "https://www.merriam-webster.com/dictionary/should",
-        "https://www.oed.com/dictionary/shall_v?tab=factsheet#23140174",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40162",
-        "https://bosworthtoller.com/027073"
-      ]
-    }
+    "infinitive": "shall, should",
+    "etymology": [
+      {
+        "name": "sculan, sceal, sceolde",
+        "origin": "Old English"
+      },
+      {
+        "name": "shulen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "shall, should",
+        "origin": "Modern English"
+      },
+      {
+        "name": "shal, seûd, shan't, seûdn't",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/should#etymonline_v_23436",
+      "https://www.merriam-webster.com/dictionary/should",
+      "https://www.oed.com/dictionary/shall_v?tab=factsheet#23140174",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40162",
+      "https://bosworthtoller.com/027073"
+    ]
   }
 ]

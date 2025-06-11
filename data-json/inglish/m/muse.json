@@ -1,394 +1,313 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "muse",
-      "etymology": [
-        {
-          "name": "Μούσα, Μούσες",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "Musa",
-          "origin": "Latin"
-        },
-        {
-          "name": "Muse",
-          "origin": "Old French"
-        },
-        {
-          "name": "muse",
-          "origin": "Modern English"
-        },
-        {
-          "name": "m̃use -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/Muse#etymonline_v_19293",
-        "https://www.merriam-webster.com/dictionary/muse#dictionary-entry-3",
-        "https://www.merriam-webster.com/dictionary/muse#dictionary-entry-2",
-        "https://latin-dictionary.net/definition/27464/musa-musae",
-        "https://lsj.gr/wiki/%CE%9C%CE%BF%E1%BF%A6%CF%83%CE%B1"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to muse",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "muse",
+    "etymology": [
+      {
+        "name": "Μούσα, Μούσες",
+        "origin": "Ancient Greek"
       },
-      "etymology": [
-        "muser",
-        "musen",
-        "to muse",
-        "ta m̃use -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to muse",
-      "etymology": [
-        {
-          "name": "muser",
-          "origin": "Old French"
-        },
-        {
-          "name": "musen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to muse",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta m̃use -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/muse#etymonline_v_19292",
-        "https://www.merriam-webster.com/dictionary/muse#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED28957",
-        "https://www.anglo-norman.net/entry/muser_1"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "Musa",
+        "origin": "Latin"
+      },
+      {
+        "name": "Muse",
+        "origin": "Old French"
+      },
+      {
+        "name": "muse",
+        "origin": "Modern English"
+      },
+      {
+        "name": "m̃use -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/Muse#etymonline_v_19293",
+      "https://www.merriam-webster.com/dictionary/muse#dictionary-entry-3",
+      "https://www.merriam-webster.com/dictionary/muse#dictionary-entry-2",
+      "https://latin-dictionary.net/definition/27464/musa-musae",
+      "https://lsj.gr/wiki/%CE%9C%CE%BF%E1%BF%A6%CF%83%CE%B1"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "museum",
-      "etymology": [
-        {
-          "name": "μουσεῖον",
-          "origin": "German"
-        },
-        {
-          "name": "musaeum",
-          "origin": "Latin"
-        },
-        {
-          "name": "museum",
-          "origin": "Modern English"
-        },
-        {
-          "name": "m̃usíom -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
+    "infinitive": "to muse",
+    "etymology": [
+      {
+        "name": "muser",
+        "origin": "Old French"
+      },
+      {
+        "name": "musen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to muse",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta m̃use -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta m̃uses",
+          "pastTense": "ta m̃used",
+          "progressive": "ta m̃using"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/museum#etymonline_v_19294",
-        "https://www.merriam-webster.com/dictionary/museum",
-        "https://latin-dictionary.net/definition/27465/musaeus-musaea-musaeum",
-        "https://lsj.gr/wiki/%CE%9C%CE%BF%CF%85%CF%83%CE%B5%E1%BF%96%CE%BF%CE%BD"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "music",
-      "etymology": [
-        {
-          "name": "μουσική τέχνη",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "musica",
-          "origin": "Latin"
-        },
-        {
-          "name": "musique",
-          "origin": "Old French"
-        },
-        {
-          "name": "musike",
-          "origin": "Middle English"
-        },
-        {
-          "name": "music",
-          "origin": "Modern English"
-        },
-        {
-          "name": "m̃usic",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/music#etymonline_v_19298",
-        "https://www.merriam-webster.com/dictionary/music",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED28966",
-        "https://www.cnrtl.fr/definition/musique",
-        "https://www.anglo-norman.net/entry/musike",
-        "https://latin-dictionary.net/definition/27479/musicus-musica-musicum",
-        "https://latin-dictionary.net/definition/27477/musica-musicae",
-        "https://lsj.gr/wiki/%CE%BC%CE%BF%CF%85%CF%83%CE%B9%CE%BA%CE%AE"
-      ],
-      "number": "singular"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "musical",
-      "etymology": [
-        {
-          "name": "musica, musicalis",
-          "origin": "Latin"
-        },
-        {
-          "name": "musical",
-          "origin": "Modern English"
-        },
-        {
-          "name": "m̃usical -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/musical#etymonline_v_44855",
-        "https://www.etymonline.com/word/musical#etymonline_v_32492",
-        "https://www.merriam-webster.com/dictionary/musical#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/musical#dictionary-entry-2",
-        "https://latin-dictionary.net/definition/27479/musicus-musica-musicum"
-      ],
-      "degrees": {
-        "positive": "usical",
-        "comparative": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/muse#etymonline_v_19292",
+      "https://www.merriam-webster.com/dictionary/muse#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED28957",
+      "https://www.anglo-norman.net/entry/muser_1"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to musically",
-      "etymology": [
-        "musically",
-        "m̃usicly"
-      ]
-    },
-    "standard": {
-      "name": "to musically",
-      "etymology": [
-        {
-          "name": "musically",
-          "origin": "Modern English"
-        },
-        {
-          "name": "m̃usicly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adverb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/musically"
-      ]
-    }
+    "name": "museum",
+    "etymology": [
+      {
+        "name": "μουσεῖον",
+        "origin": "German"
+      },
+      {
+        "name": "musaeum",
+        "origin": "Latin"
+      },
+      {
+        "name": "museum",
+        "origin": "Modern English"
+      },
+      {
+        "name": "m̃usíom -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/museum#etymonline_v_19294",
+      "https://www.merriam-webster.com/dictionary/museum",
+      "https://latin-dictionary.net/definition/27465/musaeus-musaea-musaeum",
+      "https://lsj.gr/wiki/%CE%9C%CE%BF%CF%85%CF%83%CE%B5%E1%BF%96%CE%BF%CE%BD"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "musicale",
-      "etymology": [
-        {
-          "name": "soirée musicale",
-          "origin": "Inglish"
-        },
-        {
-          "name": "musicale",
-          "origin": "Modern English"
-        },
-        {
-          "name": "m̃usicale, m̃usicàls",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/musicale#etymonline_v_19299",
-        "https://www.merriam-webster.com/dictionary/musicale",
-        "https://www.merriam-webster.com/dictionary/musicale#word-history",
-        "https://www.collinsdictionary.com/us/dictionary/french-english/soir%C3%A9e",
-        "https://www.collinsdictionary.com/us/dictionary/french-english/musical"
-      ]
-    }
+    "name": "music",
+    "etymology": [
+      {
+        "name": "μουσική τέχνη",
+        "origin": "Ancient Greek"
+      },
+      {
+        "name": "musica",
+        "origin": "Latin"
+      },
+      {
+        "name": "musique",
+        "origin": "Old French"
+      },
+      {
+        "name": "musike",
+        "origin": "Middle English"
+      },
+      {
+        "name": "music",
+        "origin": "Modern English"
+      },
+      {
+        "name": "m̃usic",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/music#etymonline_v_19298",
+      "https://www.merriam-webster.com/dictionary/music",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED28966",
+      "https://www.cnrtl.fr/definition/musique",
+      "https://www.anglo-norman.net/entry/musike",
+      "https://latin-dictionary.net/definition/27479/musicus-musica-musicum",
+      "https://latin-dictionary.net/definition/27477/musica-musicae",
+      "https://lsj.gr/wiki/%CE%BC%CE%BF%CF%85%CF%83%CE%B9%CE%BA%CE%AE"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "musician",
-      "etymology": [
-        {
-          "name": "musicien",
-          "origin": "French"
-        },
-        {
-          "name": "musician",
-          "origin": "Modern English"
-        },
-        {
-          "name": "m̃usician -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/musician#etymonline_v_19300",
-        "https://www.merriam-webster.com/dictionary/musician",
-        "https://www.collinsdictionary.com/us/dictionary/french-english/musicien"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "musical",
+    "etymology": [
+      {
+        "name": "musica, musicalis",
+        "origin": "Latin"
+      },
+      {
+        "name": "musical",
+        "origin": "Modern English"
+      },
+      {
+        "name": "m̃usical -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "masculine noun"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/musical#etymonline_v_44855",
+      "https://www.etymonline.com/word/musical#etymonline_v_32492",
+      "https://www.merriam-webster.com/dictionary/musical#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/musical#dictionary-entry-2",
+      "https://latin-dictionary.net/definition/27479/musicus-musica-musicum"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "musicality",
-      "etymology": [
-        {
-          "name": "musicality",
-          "origin": "Modern English"
-        },
-        {
-          "name": "m̃usicaletie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/musicality",
-        "https://www.merriam-webster.com/dictionary/musicality"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "infinitive": "musically",
+    "etymology": [
+      {
+        "name": "musically",
+        "origin": "Modern English"
+      },
+      {
+        "name": "m̃usicly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adverb"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/musically"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "to bemuse",
-      "etymology": [
-        {
-          "name": "to bemuse",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta bem̃use -s -d -ing",
-          "origin": "Inglish"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bemuse#etymonline_v_8300",
-        "https://www.merriam-webster.com/dictionary/bemuse"
-      ]
-    }
+    "name": "musicale",
+    "etymology": [
+      {
+        "name": "soirée musicale",
+        "origin": "Inglish"
+      },
+      {
+        "name": "musicale",
+        "origin": "Modern English"
+      },
+      {
+        "name": "m̃usicale, m̃usicàls",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/musicale#etymonline_v_19299",
+      "https://www.merriam-webster.com/dictionary/musicale",
+      "https://www.merriam-webster.com/dictionary/musicale#word-history",
+      "https://www.collinsdictionary.com/us/dictionary/french-english/soir%C3%A9e",
+      "https://www.collinsdictionary.com/us/dictionary/french-english/musical"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "bemusement",
-      "etymology": [
-        {
-          "name": "bemusement",
-          "origin": "Modern English"
-        },
-        {
-          "name": "bem̃usement -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bemusement#etymonline_v_30168",
-        "https://www.merriam-webster.com/dictionary/bemusement"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "musician",
+    "etymology": [
+      {
+        "name": "musicien",
+        "origin": "French"
+      },
+      {
+        "name": "musician",
+        "origin": "Modern English"
+      },
+      {
+        "name": "m̃usician -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/musician#etymonline_v_19300",
+      "https://www.merriam-webster.com/dictionary/musician",
+      "https://www.collinsdictionary.com/us/dictionary/french-english/musicien"
+    ]
+  },
+  {
+    "name": "musicality",
+    "etymology": [
+      {
+        "name": "musicality",
+        "origin": "Modern English"
+      },
+      {
+        "name": "m̃usicaletie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/musicality",
+      "https://www.merriam-webster.com/dictionary/musicality"
+    ]
+  },
+  {
+    "name": "to bemuse",
+    "etymology": [
+      {
+        "name": "to bemuse",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta bem̃use -s -d -ing",
+        "origin": "Inglish"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bemuse#etymonline_v_8300",
+      "https://www.merriam-webster.com/dictionary/bemuse"
+    ]
+  },
+  {
+    "name": "bemusement",
+    "etymology": [
+      {
+        "name": "bemusement",
+        "origin": "Modern English"
+      },
+      {
+        "name": "bem̃usement -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bemusement#etymonline_v_30168",
+      "https://www.merriam-webster.com/dictionary/bemusement"
+    ]
   }
 ]

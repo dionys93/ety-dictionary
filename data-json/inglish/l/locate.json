@@ -1,289 +1,218 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "local  -s -ly (adj, m n)",
-      "etymology": [
-        {
-          "name": "locus, localis",
-          "origin": "Latin"
-        },
-        {
-          "name": "local  -s -ly (adj, m n)",
-          "origin": "Old French"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/local#etymonline_v_42923",
-        "https://www.etymonline.com/word/local#etymonline_v_12364",
-        "https://www.merriam-webster.com/dictionary/local#dictionary-entry-2",
-        "https://www.merriam-webster.com/dictionary/local#dictionary-entry-1",
-        "https://anglo-norman.net/entry/local",
-        "https://latin-dictionary.net/definition/25818/localis-localis-locale",
-        "https://latin-dictionary.net/definition/25839/locus-loci"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "locality",
-      "etymology": [
-        {
-          "name": "locus, localis, localitas",
-          "origin": "Latin"
-        },
-        {
-          "name": "localité",
-          "origin": "French"
-        },
-        {
-          "name": "locality",
-          "origin": "Modern English"
-        },
-        {
-          "name": "localetie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/locality#etymonline_v_12366",
-        "https://www.merriam-webster.com/dictionary/locality",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/localit%C3%A9/47519",
-        "https://latin-dictionary.net/definition/25818/localis-localis-locale",
-        "https://latin-dictionary.net/definition/25839/locus-loci"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to locate",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "local  -s -ly (adj, m n)",
+    "etymology": [
+      {
+        "name": "locus, localis",
+        "origin": "Latin"
       },
-      "etymology": [
-        "locus, locare, locatus",
-        "to locate",
-        "ta locaite -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to locate",
-      "etymology": [
-        {
-          "name": "locus, locare, locatus",
-          "origin": "Latin"
-        },
-        {
-          "name": "to locate",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta locaite -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/locate#etymonline_v_12367",
-        "https://www.merriam-webster.com/dictionary/locate",
-        "https://latin-dictionary.net/definition/25827/loco-locare-locavi-locatus",
-        "https://latin-dictionary.net/definition/25839/locus-loci"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "local  -s -ly (adj, m n)",
+        "origin": "Old French"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/local#etymonline_v_42923",
+      "https://www.etymonline.com/word/local#etymonline_v_12364",
+      "https://www.merriam-webster.com/dictionary/local#dictionary-entry-2",
+      "https://www.merriam-webster.com/dictionary/local#dictionary-entry-1",
+      "https://anglo-norman.net/entry/local",
+      "https://latin-dictionary.net/definition/25818/localis-localis-locale",
+      "https://latin-dictionary.net/definition/25839/locus-loci"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "locus, locare, locator",
-      "etymology": [
-        {
-          "name": "locus, locare, locator",
-          "origin": "Latin"
-        },
-        {
-          "name": "locaitor -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/locator#etymonline_v_30975",
-        "https://www.merriam-webster.com/dictionary/locator",
-        "https://latin-dictionary.net/definition/25822/locator-locatoris",
-        "https://latin-dictionary.net/definition/25827/loco-locare-locavi-locatus",
-        "https://latin-dictionary.net/definition/25839/locus-loci"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "location",
-      "etymology": [
-        {
-          "name": "locus, locare, locatio",
-          "origin": "Latin"
-        },
-        {
-          "name": "location",
-          "origin": "Modern English"
-        },
-        {
-          "name": "locâcion -s -al",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/location#etymonline_v_30916",
-        "https://www.etymonline.com/word/locational#etymonline_v_52039",
-        "https://www.merriam-webster.com/dictionary/location",
-        "https://www.merriam-webster.com/dictionary/locational",
-        "https://latin-dictionary.net/definition/25821/locatio-locationis",
-        "https://latin-dictionary.net/definition/25827/loco-locare-locavi-locatus",
-        "https://latin-dictionary.net/definition/25839/locus-loci"
-      ],
-      "gender": "feminine",
-      "number": "singular"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to localize",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "locality",
+    "etymology": [
+      {
+        "name": "locus, localis, localitas",
+        "origin": "Latin"
       },
-      "etymology": [
-        "to localize",
-        "ta localyse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to localize",
-      "etymology": [
-        {
-          "name": "to localize",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta localyse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/localize#etymonline_v_30974",
-        "https://www.etymonline.com/word/-ize#etymonline_v_25713",
-        "https://www.etymonline.com/word/local#etymonline_v_12364",
-        "https://www.merriam-webster.com/dictionary/localize"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "localité",
+        "origin": "French"
+      },
+      {
+        "name": "locality",
+        "origin": "Modern English"
+      },
+      {
+        "name": "localetie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/locality#etymonline_v_12366",
+      "https://www.merriam-webster.com/dictionary/locality",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/localit%C3%A9/47519",
+      "https://latin-dictionary.net/definition/25818/localis-localis-locale",
+      "https://latin-dictionary.net/definition/25839/locus-loci"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "localization",
-      "etymology": [
-        {
-          "name": "localization",
-          "origin": "Modern English"
-        },
-        {
-          "name": "localisâcion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
+    "infinitive": "to locate",
+    "etymology": [
+      {
+        "name": "locus, locare, locatus",
+        "origin": "Latin"
+      },
+      {
+        "name": "to locate",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta locaite -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta locaites",
+          "pastTense": "ta locaited",
+          "progressive": "ta locaiting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/localization#etymonline_v_43536",
-        "https://www.etymonline.com/word/localize#etymonline_v_30974",
-        "https://www.merriam-webster.com/dictionary/localization"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/locate#etymonline_v_12367",
+      "https://www.merriam-webster.com/dictionary/locate",
+      "https://latin-dictionary.net/definition/25827/loco-locare-locavi-locatus",
+      "https://latin-dictionary.net/definition/25839/locus-loci"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "localist  -s (m n)",
-      "etymology": [
-        {
-          "name": "localist  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/localist#etymonline_v_43544"
-      ]
-    }
+    "name": "locus, locare, locator",
+    "etymology": [
+      {
+        "name": "locus, locare, locator",
+        "origin": "Latin"
+      },
+      {
+        "name": "locaitor -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/locator#etymonline_v_30975",
+      "https://www.merriam-webster.com/dictionary/locator",
+      "https://latin-dictionary.net/definition/25822/locator-locatoris",
+      "https://latin-dictionary.net/definition/25827/loco-locare-locavi-locatus",
+      "https://latin-dictionary.net/definition/25839/locus-loci"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "localism  (m n)",
-      "etymology": [
-        {
-          "name": "localism  (m n)",
-          "origin": "Modern English"
+    "name": "location",
+    "etymology": [
+      {
+        "name": "locus, locare, locatio",
+        "origin": "Latin"
+      },
+      {
+        "name": "location",
+        "origin": "Modern English"
+      },
+      {
+        "name": "locâcion -s -al",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/location#etymonline_v_30916",
+      "https://www.etymonline.com/word/locational#etymonline_v_52039",
+      "https://www.merriam-webster.com/dictionary/location",
+      "https://www.merriam-webster.com/dictionary/locational",
+      "https://latin-dictionary.net/definition/25821/locatio-locationis",
+      "https://latin-dictionary.net/definition/25827/loco-locare-locavi-locatus",
+      "https://latin-dictionary.net/definition/25839/locus-loci"
+    ]
+  },
+  {
+    "infinitive": "to localize",
+    "etymology": [
+      {
+        "name": "to localize",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta localyse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta localyses",
+          "pastTense": "ta localysed",
+          "progressive": "ta localysing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/localism#etymonline_v_43543"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/localize#etymonline_v_30974",
+      "https://www.etymonline.com/word/-ize#etymonline_v_25713",
+      "https://www.etymonline.com/word/local#etymonline_v_12364",
+      "https://www.merriam-webster.com/dictionary/localize"
+    ]
+  },
+  {
+    "name": "localization",
+    "etymology": [
+      {
+        "name": "localization",
+        "origin": "Modern English"
+      },
+      {
+        "name": "localisâcion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/localization#etymonline_v_43536",
+      "https://www.etymonline.com/word/localize#etymonline_v_30974",
+      "https://www.merriam-webster.com/dictionary/localization"
+    ]
+  },
+  {
+    "name": "localist  -s (m n)",
+    "etymology": [
+      {
+        "name": "localist  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/localist#etymonline_v_43544"
+    ]
+  },
+  {
+    "name": "localism  (m n)",
+    "etymology": [
+      {
+        "name": "localism  (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/localism#etymonline_v_43543"
+    ]
   }
 ]

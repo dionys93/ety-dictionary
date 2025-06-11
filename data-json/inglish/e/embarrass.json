@@ -1,85 +1,63 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to embarrass",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to embarrass",
+    "etymology": [
+      {
+        "name": "imbarrare, imbarrazzo",
+        "origin": "Italian"
       },
-      "etymology": [
-        "imbarrare, imbarrazzo",
-        "embarrasser",
-        "to embarrass",
-        "to embârasse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to embarrass",
-      "etymology": [
-        {
-          "name": "imbarrare, imbarrazzo",
-          "origin": "Italian"
-        },
-        {
-          "name": "embarrasser",
-          "origin": "French"
-        },
-        {
-          "name": "to embarrass",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to embârasse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "embarrasser",
+        "origin": "French"
+      },
+      {
+        "name": "to embarrass",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to embârasse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to embârasses",
+          "pastTense": "to embârassed",
+          "progressive": "to embârassing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/embarrass#etymonline_v_5772",
-        "https://www.collinsdictionary.com/us/dictionary/french-english/embarrasser",
-        "https://www.collinsdictionary.com/us/dictionary/italian-english/imbarazzo",
-        "https://www.collinsdictionary.com/us/dictionary/italian-english/imbarazzare"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/embarrass#etymonline_v_5772",
+      "https://www.collinsdictionary.com/us/dictionary/french-english/embarrasser",
+      "https://www.collinsdictionary.com/us/dictionary/italian-english/imbarazzo",
+      "https://www.collinsdictionary.com/us/dictionary/italian-english/imbarazzare"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "embarrassment",
-      "etymology": [
-        {
-          "name": "embarrasser, embarrassement",
-          "origin": "French"
-        },
-        {
-          "name": "embarrassment",
-          "origin": "Modern English"
-        },
-        {
-          "name": "embârassement -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/embarrassment#etymonline_v_32335",
-        "https://www.collinsdictionary.com/us/dictionary/french-english/embarrasser"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "embarrassment",
+    "etymology": [
+      {
+        "name": "embarrasser, embarrassement",
+        "origin": "French"
+      },
+      {
+        "name": "embarrassment",
+        "origin": "Modern English"
+      },
+      {
+        "name": "embârassement -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/embarrassment#etymonline_v_32335",
+      "https://www.collinsdictionary.com/us/dictionary/french-english/embarrasser"
+    ]
   }
 ]

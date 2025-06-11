@@ -1,158 +1,125 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to conquer",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ering"
+    "infinitive": "to conquer",
+    "etymology": [
+      {
+        "name": "com + quaerere, conquirere",
+        "origin": "Latin"
       },
-      "etymology": [
-        "com + quaerere, conquirere",
-        "conquerre",
-        "conqueren",
-        "to conquer",
-        "ta conqre -s -d -ering"
-      ]
-    },
-    "standard": {
-      "name": "to conquer",
-      "etymology": [
-        {
-          "name": "com + quaerere, conquirere",
-          "origin": "Latin"
-        },
-        {
-          "name": "conquerre",
-          "origin": "Old French"
-        },
-        {
-          "name": "conqueren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to conquer",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta conqre -s -d -ering",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "conquerre",
+        "origin": "Old French"
+      },
+      {
+        "name": "conqueren",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to conquer",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta conqre -s -d -ering",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta conqres",
+          "pastTense": "ta conqred",
+          "progressive": "ta conqreering"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/conquer#etymonline_v_18225",
-        "https://www.merriam-webster.com/dictionary/conquer",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9340",
-        "https://anglo-norman.net/entry/conquere",
-        "https://latin-dictionary.net/definition/13142/conquiro-conquirere-conquisivi-conquisitus",
-        "https://latin-dictionary.net/definition/32505/quaero-quaerere-quaesivi-quaesitus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ering"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/conquer#etymonline_v_18225",
+      "https://www.merriam-webster.com/dictionary/conquer",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9340",
+      "https://anglo-norman.net/entry/conquere",
+      "https://latin-dictionary.net/definition/13142/conquiro-conquirere-conquisivi-conquisitus",
+      "https://latin-dictionary.net/definition/32505/quaero-quaerere-quaesivi-quaesitus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "conqueror",
-      "etymology": [
-        {
-          "name": "com + quaerere, conquirere",
-          "origin": "Latin"
-        },
-        {
-          "name": "conquerre, conquereor, conquerour",
-          "origin": "Old French"
-        },
-        {
-          "name": "conqueror",
-          "origin": "Modern English"
-        },
-        {
-          "name": "conqeror -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/conqueror#etymonline_v_28658",
-        "https://www.merriam-webster.com/dictionary/conqueror",
-        "https://anglo-norman.net/entry/conquerur",
-        "https://anglo-norman.net/entry/conquere",
-        "https://latin-dictionary.net/definition/13142/conquiro-conquirere-conquisivi-conquisitus",
-        "https://latin-dictionary.net/definition/32505/quaero-quaerere-quaesivi-quaesitus"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "conqueror",
+    "etymology": [
+      {
+        "name": "com + quaerere, conquirere",
+        "origin": "Latin"
+      },
+      {
+        "name": "conquerre, conquereor, conquerour",
+        "origin": "Old French"
+      },
+      {
+        "name": "conqueror",
+        "origin": "Modern English"
+      },
+      {
+        "name": "conqeror -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/conqueror#etymonline_v_28658",
+      "https://www.merriam-webster.com/dictionary/conqueror",
+      "https://anglo-norman.net/entry/conquerur",
+      "https://anglo-norman.net/entry/conquere",
+      "https://latin-dictionary.net/definition/13142/conquiro-conquirere-conquisivi-conquisitus",
+      "https://latin-dictionary.net/definition/32505/quaero-quaerere-quaesivi-quaesitus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "conquest  -s (m n)",
-      "etymology": [
-        {
-          "name": "conquistus, conquista",
-          "origin": "Medieval Latin"
-        },
-        {
-          "name": "conquest  -s (m n)",
-          "origin": "Old French"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/conquest#etymonline_v_28656",
-        "https://www.merriam-webster.com/dictionary/conquest",
-        "https://anglo-norman.net/entry/conquest",
-        "https://latin-dictionary.net/definition/13142/conquiro-conquirere-conquisivi-conquisitus"
-      ]
-    }
+    "name": "conquest  -s (m n)",
+    "etymology": [
+      {
+        "name": "conquistus, conquista",
+        "origin": "Medieval Latin"
+      },
+      {
+        "name": "conquest  -s (m n)",
+        "origin": "Old French"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/conquest#etymonline_v_28656",
+      "https://www.merriam-webster.com/dictionary/conquest",
+      "https://anglo-norman.net/entry/conquest",
+      "https://latin-dictionary.net/definition/13142/conquiro-conquirere-conquisivi-conquisitus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "conquistar, conquistador",
-      "etymology": [
-        {
-          "name": "conquirere, conquistus",
-          "origin": "Latin"
-        },
-        {
-          "name": "conquistar, conquistador",
-          "origin": "Inglish"
-        },
-        {
-          "name": "conqístador -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/conquistador#etymonline_v_28655",
-        "https://www.merriam-webster.com/dictionary/conquistador",
-        "https://www.collinsdictionary.com/us/dictionary/spanish-english/conquistador",
-        "https://www.collinsdictionary.com/us/dictionary/spanish-english/conquistar",
-        "https://latin-dictionary.net/definition/13142/conquiro-conquirere-conquisivi-conquisitus"
-      ]
-    }
+    "name": "conquistar, conquistador",
+    "etymology": [
+      {
+        "name": "conquirere, conquistus",
+        "origin": "Latin"
+      },
+      {
+        "name": "conquistar, conquistador",
+        "origin": "Inglish"
+      },
+      {
+        "name": "conqístador -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/conquistador#etymonline_v_28655",
+      "https://www.merriam-webster.com/dictionary/conquistador",
+      "https://www.collinsdictionary.com/us/dictionary/spanish-english/conquistador",
+      "https://www.collinsdictionary.com/us/dictionary/spanish-english/conquistar",
+      "https://latin-dictionary.net/definition/13142/conquiro-conquirere-conquisivi-conquisitus"
+    ]
   }
 ]

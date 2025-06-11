@@ -1,141 +1,109 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "fashion",
-      "etymology": [
-        {
-          "name": "factio",
-          "origin": "Latin"
-        },
-        {
-          "name": "façon, fachon, fazon",
-          "origin": "Old French"
-        },
-        {
-          "name": "fasoun, faschyoun, facune, faction",
-          "origin": "Middle English"
-        },
-        {
-          "name": "fashion",
-          "origin": "Modern English"
-        },
-        {
-          "name": "facion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fashion#etymonline_v_1145",
-        "https://www.oed.com/dictionary/fashion_n?tab=pronunciation#4793522",
-        "https://anglo-norman.net/entry/fachon",
-        "https://latin-dictionary.net/definition/20192/factio-factionis"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to fashion",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "fashion",
+    "etymology": [
+      {
+        "name": "factio",
+        "origin": "Latin"
       },
-      "etymology": [
-        "to fashion",
-        "ta facione -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to fashion",
-      "etymology": [
-        {
-          "name": "to fashion",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta facione -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fashion#etymonline_v_39158",
-        "https://www.oed.com/dictionary/fashion_v?tab=factsheet#4796041"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "façon, fachon, fazon",
+        "origin": "Old French"
+      },
+      {
+        "name": "fasoun, faschyoun, facune, faction",
+        "origin": "Middle English"
+      },
+      {
+        "name": "fashion",
+        "origin": "Modern English"
+      },
+      {
+        "name": "facion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fashion#etymonline_v_1145",
+      "https://www.oed.com/dictionary/fashion_n?tab=pronunciation#4793522",
+      "https://anglo-norman.net/entry/fachon",
+      "https://latin-dictionary.net/definition/20192/factio-factionis"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "fashionable",
-      "etymology": [
-        {
-          "name": "fashionable",
-          "origin": "Modern English"
-        },
-        {
-          "name": "facionable -ly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
+    "infinitive": "to fashion",
+    "etymology": [
+      {
+        "name": "to fashion",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta facione -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta faciones",
+          "pastTense": "ta facioned",
+          "progressive": "ta facioning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fashionable#etymonline_v_33031",
-        "https://www.oed.com/dictionary/fashionable_adj?tab=pronunciation#4796760"
-      ],
-      "degrees": {
-        "positive": "facionable",
-        "comparative": "ly"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fashion#etymonline_v_39158",
+      "https://www.oed.com/dictionary/fashion_v?tab=factsheet#4796041"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "fashionista",
-      "etymology": [
-        {
-          "name": "fashionista",
-          "origin": "Modern English"
-        },
-        {
-          "name": "facionísta -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
+    "name": "fashionable",
+    "etymology": [
+      {
+        "name": "fashionable",
+        "origin": "Modern English"
+      },
+      {
+        "name": "facionable -ly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ],
+        "degrees": {
+          "positive": "facionable",
+          "comparative": "ly"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fashionista",
-        "https://www.merriam-webster.com/dictionary/fashionista",
-        "https://www.oed.com/dictionary/fashionista_n?tab=factsheet#11939823"
-      ],
-      "number": "plural"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fashionable#etymonline_v_33031",
+      "https://www.oed.com/dictionary/fashionable_adj?tab=pronunciation#4796760"
+    ]
+  },
+  {
+    "name": "fashionista",
+    "etymology": [
+      {
+        "name": "fashionista",
+        "origin": "Modern English"
+      },
+      {
+        "name": "facionísta -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fashionista",
+      "https://www.merriam-webster.com/dictionary/fashionista",
+      "https://www.oed.com/dictionary/fashionista_n?tab=factsheet#11939823"
+    ]
   }
 ]

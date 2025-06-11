@@ -1,32 +1,26 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "fossil  -s (m n)",
-      "etymology": [
-        {
-          "name": "fodere, fossus, fossilis",
-          "origin": "Latin"
-        },
-        {
-          "name": "fossile",
-          "origin": "French"
-        },
-        {
-          "name": "fossil  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fossil#etymonline_v_11836",
-        "https://www.oed.com/dictionary/fossil_n?tab=pronunciation#3857818",
-        "https://www.larousse.fr/dictionnaires/francais/fossile/34717",
-        "https://latin-dictionary.net/definition/20958/fossile-fossilis",
-        "https://latin-dictionary.net/definition/20802/fodio-fodere-fodi-fossus"
-      ]
-    }
+    "name": "fossil  -s (m n)",
+    "etymology": [
+      {
+        "name": "fodere, fossus, fossilis",
+        "origin": "Latin"
+      },
+      {
+        "name": "fossile",
+        "origin": "French"
+      },
+      {
+        "name": "fossil  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fossil#etymonline_v_11836",
+      "https://www.oed.com/dictionary/fossil_n?tab=pronunciation#3857818",
+      "https://www.larousse.fr/dictionnaires/francais/fossile/34717",
+      "https://latin-dictionary.net/definition/20958/fossile-fossilis",
+      "https://latin-dictionary.net/definition/20802/fodio-fodere-fodi-fossus"
+    ]
   }
 ]

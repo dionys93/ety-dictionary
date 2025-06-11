@@ -1,37 +1,25 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to withhold",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to withhold",
+    "etymology": [
+      {
+        "name": "to withhold",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to withhold",
-        "ta ɯiþholde -s ɯiþheld -ing"
-      ]
-    },
-    "standard": {
-      "name": "to withhold",
-      "etymology": [
-        {
-          "name": "to withhold",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta ɯiþholde -s ɯiþheld -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta ɯiþholde -s ɯiþheld -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta ɯiþholdes"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/withhold#etymonline_v_10806",
-        "https://www.merriam-webster.com/dictionary/withhold"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/withhold#etymonline_v_10806",
+      "https://www.merriam-webster.com/dictionary/withhold"
+    ]
   }
 ]

@@ -1,103 +1,83 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "scourge",
-      "etymology": [
-        {
-          "name": "ex + corrigia",
-          "origin": "Latin"
-        },
-        {
-          "name": "excorrigiare",
-          "origin": "Vulgar Latin"
-        },
-        {
-          "name": "escorgier, eschurge, scurge",
-          "origin": "Old French"
-        },
-        {
-          "name": "escorge, scorge",
-          "origin": "Inglish"
-        },
-        {
-          "name": "scourge",
-          "origin": "Middle English"
-        },
-        {
-          "name": "scoûge -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/scourge#etymonline_v_22959",
-        "https://www.merriam-webster.com/dictionary/scourge#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/scourge#word-history",
-        "https://www.anglo-norman.net/entry/escorge_1",
-        "https://www.anglo-norman.net/entry/escorger_1",
-        "https://latin-dictionary.net/definition/14412/corrigia-corrigiae",
-        "https://latin-dictionary.net/definition/19546/ex",
-        "https://latin-dictionary.net/definition/14413/corrigo-corrigere-correxi-correctus"
-      ]
-    }
+    "name": "scourge",
+    "etymology": [
+      {
+        "name": "ex + corrigia",
+        "origin": "Latin"
+      },
+      {
+        "name": "excorrigiare",
+        "origin": "Vulgar Latin"
+      },
+      {
+        "name": "escorgier, eschurge, scurge",
+        "origin": "Old French"
+      },
+      {
+        "name": "escorge, scorge",
+        "origin": "Inglish"
+      },
+      {
+        "name": "scourge",
+        "origin": "Middle English"
+      },
+      {
+        "name": "scoûge -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/scourge#etymonline_v_22959",
+      "https://www.merriam-webster.com/dictionary/scourge#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/scourge#word-history",
+      "https://www.anglo-norman.net/entry/escorge_1",
+      "https://www.anglo-norman.net/entry/escorger_1",
+      "https://latin-dictionary.net/definition/14412/corrigia-corrigiae",
+      "https://latin-dictionary.net/definition/19546/ex",
+      "https://latin-dictionary.net/definition/14413/corrigo-corrigere-correxi-correctus"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to scourge",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to scourge",
+    "etymology": [
+      {
+        "name": "escorger",
+        "origin": "Old French"
       },
-      "etymology": [
-        "escorger",
-        "scourgen",
-        "to scourge",
-        "ta scoûge -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to scourge",
-      "etymology": [
-        {
-          "name": "escorger",
-          "origin": "Old French"
-        },
-        {
-          "name": "scourgen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to scourge",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta scoûge -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "scourgen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to scourge",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta scoûge -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta scoûges",
+          "pastTense": "ta scoûged",
+          "progressive": "ta scoûging"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/scourge#etymonline_v_46496",
-        "https://www.etymonline.com/word/scourge#etymonline_v_22959",
-        "https://www.merriam-webster.com/dictionary/scourge#dictionary-entry-2",
-        "https://www.merriam-webster.com/dictionary/scourge#word-history",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39003",
-        "https://www.anglo-norman.net/entry/escorger_1"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/scourge#etymonline_v_46496",
+      "https://www.etymonline.com/word/scourge#etymonline_v_22959",
+      "https://www.merriam-webster.com/dictionary/scourge#dictionary-entry-2",
+      "https://www.merriam-webster.com/dictionary/scourge#word-history",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39003",
+      "https://www.anglo-norman.net/entry/escorger_1"
+    ]
   }
 ]

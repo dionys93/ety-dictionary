@@ -1,95 +1,72 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to refrain",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to refrain",
+    "etymology": [
+      {
+        "name": "frenum, re + frenare, refrenare",
+        "origin": "Latin"
       },
-      "etymology": [
-        "frenum, re + frenare, refrenare",
-        "refraigner, refrener, refreiner",
-        "refreinen",
-        "to refrain",
-        "ta refréne -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to refrain",
-      "etymology": [
-        {
-          "name": "frenum, re + frenare, refrenare",
-          "origin": "Latin"
-        },
-        {
-          "name": "refraigner, refrener, refreiner",
-          "origin": "Old French"
-        },
-        {
-          "name": "refreinen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to refrain",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta refréne -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "refraigner, refrener, refreiner",
+        "origin": "Old French"
+      },
+      {
+        "name": "refreinen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to refrain",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta refréne -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta refrénes",
+          "pastTense": "ta refréned",
+          "progressive": "ta refréning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/refrain",
-        "https://www.oed.com/dictionary/refrain_v?tab=factsheet#26155162",
-        "https://anglo-norman.net/entry/refrener",
-        "https://latin-dictionary.net/definition/33143/refreno-refrenare-refrenavi-refrenatus",
-        "https://latin-dictionary.net/definition/21006/frenum-freni"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/refrain",
+      "https://www.oed.com/dictionary/refrain_v?tab=factsheet#26155162",
+      "https://anglo-norman.net/entry/refrener",
+      "https://latin-dictionary.net/definition/33143/refreno-refrenare-refrenavi-refrenatus",
+      "https://latin-dictionary.net/definition/21006/frenum-freni"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "refraindre, refrait, refrain",
-      "etymology": [
-        {
-          "name": "frangere, refringere",
-          "origin": "Latin"
-        },
-        {
-          "name": "refraindre, refrait, refrain",
-          "origin": "Old French"
-        },
-        {
-          "name": "refraign -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/refrain#etymonline_v_10301",
-        "https://www.oed.com/dictionary/refrain_n1?tab=pronunciation#26154928",
-        "https://deaf.hadw-bw.de/lemme/refraindre#refrait",
-        "https://anglo-norman.net/entry/refreit_1",
-        "https://latin-dictionary.net/definition/33149/refringo-refringere-refregi-refractus",
-        "https://latin-dictionary.net/definition/20982/frango-frangere-fregi-fractus"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "refraindre, refrait, refrain",
+    "etymology": [
+      {
+        "name": "frangere, refringere",
+        "origin": "Latin"
+      },
+      {
+        "name": "refraindre, refrait, refrain",
+        "origin": "Old French"
+      },
+      {
+        "name": "refraign -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/refrain#etymonline_v_10301",
+      "https://www.oed.com/dictionary/refrain_n1?tab=pronunciation#26154928",
+      "https://deaf.hadw-bw.de/lemme/refraindre#refrait",
+      "https://anglo-norman.net/entry/refreit_1",
+      "https://latin-dictionary.net/definition/33149/refringo-refringere-refregi-refractus",
+      "https://latin-dictionary.net/definition/20982/frango-frangere-fregi-fractus"
+    ]
   }
 ]

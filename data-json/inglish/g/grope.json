@@ -1,47 +1,32 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to grope",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to grope",
+    "etymology": [
+      {
+        "name": "grapian",
+        "origin": "Old English"
       },
-      "etymology": [
-        "grapian",
-        "to grope",
-        "ta grope -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to grope",
-      "etymology": [
-        {
-          "name": "grapian",
-          "origin": "Old English"
-        },
-        {
-          "name": "to grope",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta grope -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to grope",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta grope -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta gropes",
+          "pastTense": "ta groped",
+          "progressive": "ta groping"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/grope",
-        "https://www.oed.com/dictionary/grope_v?tab=factsheet#2530209",
-        "https://bosworthtoller.com/17468"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/grope",
+      "https://www.oed.com/dictionary/grope_v?tab=factsheet#2530209",
+      "https://bosworthtoller.com/17468"
+    ]
   }
 ]

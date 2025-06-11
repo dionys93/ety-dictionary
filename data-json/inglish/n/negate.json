@@ -1,161 +1,128 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to negate",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to negate",
+    "etymology": [
+      {
+        "name": "negare, negatus",
+        "origin": "Latin"
       },
-      "etymology": [
-        "negare, negatus",
-        "to negate",
-        "ta negâte -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to negate",
-      "etymology": [
-        {
-          "name": "negare, negatus",
-          "origin": "Latin"
-        },
-        {
-          "name": "to negate",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta negâte -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to negate",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta negâte -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta negâtes",
+          "pastTense": "ta negâted",
+          "progressive": "ta negâting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/negate#etymonline_v_30275",
-        "https://www.oed.com/dictionary/negate_v?tab=factsheet#35063795",
-        "https://latin-dictionary.net/definition/27766/nego-negare-negavi-negatus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/negate#etymonline_v_30275",
+      "https://www.oed.com/dictionary/negate_v?tab=factsheet#35063795",
+      "https://latin-dictionary.net/definition/27766/nego-negare-negavi-negatus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "negation",
-      "etymology": [
-        {
-          "name": "negation",
-          "origin": "Latin"
-        },
-        {
-          "name": "negacion",
-          "origin": "Old French"
-        },
-        {
-          "name": "negacioun",
-          "origin": "Middle English"
-        },
-        {
-          "name": "negation",
-          "origin": "Modern English"
-        },
-        {
-          "name": "negâcion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/negation#etymonline_v_2372",
-        "https://www.oed.com/dictionary/negation_n?tab=factsheet#35064061",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29226",
-        "https://www.anglo-norman.net/entry/negatiun",
-        "https://latin-dictionary.net/definition/27749/negatio-negationis"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "negative",
-      "etymology": [
-        {
-          "name": "negare, negativus",
-          "origin": "Latin"
-        },
-        {
-          "name": "negatif",
-          "origin": "Old French"
-        },
-        {
-          "name": "negative",
-          "origin": "Modern English"
-        },
-        {
-          "name": "negatif -s -vly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/negative#etymonline_v_45394",
-        "https://www.etymonline.com/word/negative#etymonline_v_2373",
-        "https://www.oed.com/dictionary/negative_adj?tab=pronunciation#35066495",
-        "https://www.anglo-norman.net/entry/negatif",
-        "https://latin-dictionary.net/definition/27766/nego-negare-negavi-negatus"
-      ],
-      "degrees": {
-        "positive": "negatif",
-        "comparative": "s",
-        "superlative": "vly"
+    "name": "negation",
+    "etymology": [
+      {
+        "name": "negation",
+        "origin": "Latin"
+      },
+      {
+        "name": "negacion",
+        "origin": "Old French"
+      },
+      {
+        "name": "negacioun",
+        "origin": "Middle English"
+      },
+      {
+        "name": "negation",
+        "origin": "Modern English"
+      },
+      {
+        "name": "negâcion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/negation#etymonline_v_2372",
+      "https://www.oed.com/dictionary/negation_n?tab=factsheet#35064061",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29226",
+      "https://www.anglo-norman.net/entry/negatiun",
+      "https://latin-dictionary.net/definition/27749/negatio-negationis"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "negativity",
-      "etymology": [
-        {
-          "name": "negativity",
-          "origin": "Modern English"
-        },
-        {
-          "name": "negativetie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
+    "name": "negative",
+    "etymology": [
+      {
+        "name": "negare, negativus",
+        "origin": "Latin"
+      },
+      {
+        "name": "negatif",
+        "origin": "Old French"
+      },
+      {
+        "name": "negative",
+        "origin": "Modern English"
+      },
+      {
+        "name": "negatif -s -vly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "masculine noun"
+        ],
+        "degrees": {
+          "positive": "negatif",
+          "comparative": "s",
+          "superlative": "vly"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/negativity#etymonline_v_45275",
-        "https://www.oed.com/dictionary/negativity_n?tab=factsheet#35072537"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/negative#etymonline_v_45394",
+      "https://www.etymonline.com/word/negative#etymonline_v_2373",
+      "https://www.oed.com/dictionary/negative_adj?tab=pronunciation#35066495",
+      "https://www.anglo-norman.net/entry/negatif",
+      "https://latin-dictionary.net/definition/27766/nego-negare-negavi-negatus"
+    ]
+  },
+  {
+    "name": "negativity",
+    "etymology": [
+      {
+        "name": "negativity",
+        "origin": "Modern English"
+      },
+      {
+        "name": "negativetie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/negativity#etymonline_v_45275",
+      "https://www.oed.com/dictionary/negativity_n?tab=factsheet#35072537"
+    ]
   }
 ]

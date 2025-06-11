@@ -1,121 +1,93 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to stretch",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to stretch",
+    "etymology": [
+      {
+        "name": "streccan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "streccan",
-        "strecchen",
-        "to stretch",
-        "ta streche -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to stretch",
-      "etymology": [
-        {
-          "name": "streccan",
-          "origin": "Old English"
-        },
-        {
-          "name": "strecchen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to stretch",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta streche -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "strecchen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to stretch",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta streche -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta streches",
+          "pastTense": "ta streched",
+          "progressive": "ta streching"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/stretch#etymonline_v_22170",
-        "https://www.merriam-webster.com/dictionary/stretch#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/stretch#word-history",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED43228",
-        "https://bosworthtoller.com/29137"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/stretch#etymonline_v_22170",
+      "https://www.merriam-webster.com/dictionary/stretch#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/stretch#word-history",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED43228",
+      "https://bosworthtoller.com/29137"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "stretch",
-      "etymology": [
-        {
-          "name": "streccan",
-          "origin": "Old English"
-        },
-        {
-          "name": "strecchen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "stretch",
-          "origin": "Modern English"
-        },
-        {
-          "name": "strech -es",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/stretch#etymonline_v_24518",
-        "https://www.etymonline.com/word/stretch#etymonline_v_22170",
-        "https://www.merriam-webster.com/dictionary/stretch#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED43228",
-        "https://bosworthtoller.com/29137"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "stretch",
+    "etymology": [
+      {
+        "name": "streccan",
+        "origin": "Old English"
+      },
+      {
+        "name": "strecchen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "stretch",
+        "origin": "Modern English"
+      },
+      {
+        "name": "strech -es",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/stretch#etymonline_v_24518",
+      "https://www.etymonline.com/word/stretch#etymonline_v_22170",
+      "https://www.merriam-webster.com/dictionary/stretch#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED43228",
+      "https://bosworthtoller.com/29137"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "stretcher",
-      "etymology": [
-        {
-          "name": "stretcher",
-          "origin": "Modern English"
-        },
-        {
-          "name": "strechor, strecheur -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/stretcher",
-        "https://www.etymonline.com/word/stretch#etymonline_v_22170"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "stretcher",
+    "etymology": [
+      {
+        "name": "stretcher",
+        "origin": "Modern English"
+      },
+      {
+        "name": "strechor, strecheur -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/stretcher",
+      "https://www.etymonline.com/word/stretch#etymonline_v_22170"
+    ]
   }
 ]

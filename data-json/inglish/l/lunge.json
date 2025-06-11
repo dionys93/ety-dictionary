@@ -1,94 +1,72 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "lunge",
-      "etymology": [
-        {
-          "name": "longus",
-          "origin": "Latin"
-        },
-        {
-          "name": "allonger, allonge",
-          "origin": "French"
-        },
-        {
-          "name": "lunge",
-          "origin": "Modern English"
-        },
-        {
-          "name": "longe -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/lunge",
-        "https://www.oed.com/dictionary/lunge_n1?tab=factsheet#38713493",
-        "https://www.oed.com/dictionary/lunge_n2?tab=factsheet#38713641",
-        "https://www.littre.org/definition/allonger",
-        "https://anglo-norman.net/entry/alonger",
-        "https://latin-dictionary.net/definition/25883/longus-longa"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "lunge",
+    "etymology": [
+      {
+        "name": "longus",
+        "origin": "Latin"
+      },
+      {
+        "name": "allonger, allonge",
+        "origin": "French"
+      },
+      {
+        "name": "lunge",
+        "origin": "Modern English"
+      },
+      {
+        "name": "longe -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/lunge",
+      "https://www.oed.com/dictionary/lunge_n1?tab=factsheet#38713493",
+      "https://www.oed.com/dictionary/lunge_n2?tab=factsheet#38713641",
+      "https://www.littre.org/definition/allonger",
+      "https://anglo-norman.net/entry/alonger",
+      "https://latin-dictionary.net/definition/25883/longus-longa"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to lunge",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to lunge",
+    "etymology": [
+      {
+        "name": "longus",
+        "origin": "Latin"
       },
-      "etymology": [
-        "longus",
-        "allonger, allonge",
-        "to lunge",
-        "ta longe -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to lunge",
-      "etymology": [
-        {
-          "name": "longus",
-          "origin": "Latin"
-        },
-        {
-          "name": "allonger, allonge",
-          "origin": "French"
-        },
-        {
-          "name": "to lunge",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta longe -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "allonger, allonge",
+        "origin": "French"
+      },
+      {
+        "name": "to lunge",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta longe -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta longes",
+          "pastTense": "ta longed",
+          "progressive": "ta longing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/lunge",
-        "https://www.oed.com/dictionary/lunge_v1?tab=factsheet#38714008",
-        "https://www.littre.org/definition/allonger",
-        "https://anglo-norman.net/entry/alonger",
-        "https://latin-dictionary.net/definition/25883/longus-longa"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/lunge",
+      "https://www.oed.com/dictionary/lunge_v1?tab=factsheet#38714008",
+      "https://www.littre.org/definition/allonger",
+      "https://anglo-norman.net/entry/alonger",
+      "https://latin-dictionary.net/definition/25883/longus-longa"
+    ]
   }
 ]

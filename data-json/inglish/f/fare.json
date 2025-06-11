@@ -1,92 +1,70 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "fare",
-      "etymology": [
-        {
-          "name": "faer, faru",
-          "origin": "Old English"
-        },
-        {
-          "name": "fare",
-          "origin": "Middle English"
-        },
-        {
-          "name": "fâre, fârs",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fare#etymonline_v_1127",
-        "https://www.etymonline.com/word/fare#etymonline_v_1128",
-        "https://www.merriam-webster.com/dictionary/fare#dictionary-entry-2",
-        "https://www.oed.com/dictionary/fare_n1?tab=factsheet#4767123",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15280",
-        "https://bosworthtoller.com/44544",
-        "https://bosworthtoller.com/10130",
-        "https://bosworthtoller.com/9954"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "fare",
+    "etymology": [
+      {
+        "name": "faer, faru",
+        "origin": "Old English"
+      },
+      {
+        "name": "fare",
+        "origin": "Middle English"
+      },
+      {
+        "name": "fâre, fârs",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fare#etymonline_v_1127",
+      "https://www.etymonline.com/word/fare#etymonline_v_1128",
+      "https://www.merriam-webster.com/dictionary/fare#dictionary-entry-2",
+      "https://www.oed.com/dictionary/fare_n1?tab=factsheet#4767123",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15280",
+      "https://bosworthtoller.com/44544",
+      "https://bosworthtoller.com/10130",
+      "https://bosworthtoller.com/9954"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to fare",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to fare",
+    "etymology": [
+      {
+        "name": "faran",
+        "origin": "Old English"
       },
-      "etymology": [
-        "faran",
-        "faren",
-        "to fare",
-        "ta fâre -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to fare",
-      "etymology": [
-        {
-          "name": "faran",
-          "origin": "Old English"
-        },
-        {
-          "name": "faren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to fare",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta fâre -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "faren",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to fare",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta fâre -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta fâres",
+          "pastTense": "ta fâred",
+          "progressive": "ta fâring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fare#etymonline_v_1128",
-        "https://www.merriam-webster.com/dictionary/fare#dictionary-entry-1",
-        "https://www.oed.com/dictionary/fare_v1?tab=factsheet#4768490",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15284",
-        "https://bosworthtoller.com/10118"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fare#etymonline_v_1128",
+      "https://www.merriam-webster.com/dictionary/fare#dictionary-entry-1",
+      "https://www.oed.com/dictionary/fare_v1?tab=factsheet#4768490",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15284",
+      "https://bosworthtoller.com/10118"
+    ]
   }
 ]

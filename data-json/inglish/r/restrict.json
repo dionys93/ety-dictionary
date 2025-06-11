@@ -1,120 +1,94 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to restrict",
-      "conjugations": {
-        "thirdPerson": "d",
-        "pastTense": "ing"
+    "infinitive": "to restrict",
+    "etymology": [
+      {
+        "name": "restringere, restrictus",
+        "origin": "Latin"
       },
-      "etymology": [
-        "restringere, restrictus",
-        "to restrict",
-        "ta restricte restrics -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to restrict",
-      "etymology": [
-        {
-          "name": "restringere, restrictus",
-          "origin": "Latin"
-        },
-        {
-          "name": "to restrict",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta restricte restrics -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to restrict",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta restricte restrics -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta restricte restricsd",
+          "pastTense": "ta restricte restricsing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/restrict#etymonline_v_37175",
-        "https://www.oed.com/dictionary/restrict_v?tab=factsheet#25717972",
-        "https://latin-dictionary.net/definition/33490/restringo-restringere-restrinxi-restrictus"
-      ],
-      "conjugations": {
-        "thirdPerson": "d",
-        "pastTense": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/restrict#etymonline_v_37175",
+      "https://www.oed.com/dictionary/restrict_v?tab=factsheet#25717972",
+      "https://latin-dictionary.net/definition/33490/restringo-restringere-restrinxi-restrictus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "restrictive",
-      "etymology": [
-        {
-          "name": "restringere, restrictivus",
-          "origin": "Latin"
-        },
-        {
-          "name": "restrictif",
-          "origin": "Old French"
-        },
-        {
-          "name": "restrictive",
-          "origin": "Modern English"
-        },
-        {
-          "name": "restrictif -vly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
+    "name": "restrictive",
+    "etymology": [
+      {
+        "name": "restringere, restrictivus",
+        "origin": "Latin"
+      },
+      {
+        "name": "restrictif",
+        "origin": "Old French"
+      },
+      {
+        "name": "restrictive",
+        "origin": "Modern English"
+      },
+      {
+        "name": "restrictif -vly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ],
+        "degrees": {
+          "positive": "restrictif",
+          "comparative": "vly"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/restrictive#etymonline_v_37174",
-        "https://www.oed.com/dictionary/restrictive_adj?tab=factsheet#25719723",
-        "https://www.larousse.fr/dictionnaires/francais/restrictif/68776",
-        "https://latin-dictionary.net/definition/33488/restrictivus-restrictiva-restrictivum",
-        "https://latin-dictionary.net/definition/33490/restringo-restringere-restrinxi-restrictus"
-      ],
-      "degrees": {
-        "positive": "restrictif",
-        "comparative": "vly"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/restrictive#etymonline_v_37174",
+      "https://www.oed.com/dictionary/restrictive_adj?tab=factsheet#25719723",
+      "https://www.larousse.fr/dictionnaires/francais/restrictif/68776",
+      "https://latin-dictionary.net/definition/33488/restrictivus-restrictiva-restrictivum",
+      "https://latin-dictionary.net/definition/33490/restringo-restringere-restrinxi-restrictus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "restriction",
-      "etymology": [
-        {
-          "name": "restringere, restrictio",
-          "origin": "Latin"
-        },
-        {
-          "name": "restriction",
-          "origin": "Old French"
-        },
-        {
-          "name": "restriccion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/restriction#etymonline_v_12919",
-        "https://www.oed.com/dictionary/restriction_n?tab=factsheet#25718816",
-        "https://anglo-norman.net/entry/restriction",
-        "https://latin-dictionary.net/definition/33490/restringo-restringere-restrinxi-restrictus"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "restriction",
+    "etymology": [
+      {
+        "name": "restringere, restrictio",
+        "origin": "Latin"
+      },
+      {
+        "name": "restriction",
+        "origin": "Old French"
+      },
+      {
+        "name": "restriccion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/restriction#etymonline_v_12919",
+      "https://www.oed.com/dictionary/restriction_n?tab=factsheet#25718816",
+      "https://anglo-norman.net/entry/restriction",
+      "https://latin-dictionary.net/definition/33490/restringo-restringere-restrinxi-restrictus"
+    ]
   }
 ]

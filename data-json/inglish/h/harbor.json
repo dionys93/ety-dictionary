@@ -1,82 +1,60 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "harbor  -s (m n)",
-      "etymology": [
-        {
-          "name": "here-beorg",
-          "origin": "Old English"
-        },
-        {
-          "name": "herberwe",
-          "origin": "Middle English"
-        },
-        {
-          "name": "harbor  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/harbor#etymonline_v_6155",
-        "https://www.merriam-webster.com/dictionary/harbor#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20464",
-        "https://bosworthtoller.com/52385"
-      ]
-    }
+    "name": "harbor  -s (m n)",
+    "etymology": [
+      {
+        "name": "here-beorg",
+        "origin": "Old English"
+      },
+      {
+        "name": "herberwe",
+        "origin": "Middle English"
+      },
+      {
+        "name": "harbor  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/harbor#etymonline_v_6155",
+      "https://www.merriam-webster.com/dictionary/harbor#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20464",
+      "https://bosworthtoller.com/52385"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to harbor",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to harbor",
+    "etymology": [
+      {
+        "name": "herebeorgian",
+        "origin": "Old English"
       },
-      "etymology": [
-        "herebeorgian",
-        "herberwen",
-        "to harbor",
-        "ta harbore -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to harbor",
-      "etymology": [
-        {
-          "name": "herebeorgian",
-          "origin": "Old English"
-        },
-        {
-          "name": "herberwen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to harbor",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta harbore -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "herberwen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to harbor",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta harbore -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta harbores",
+          "pastTense": "ta harbored",
+          "progressive": "ta harboring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/harbor#etymonline_v_34126",
-        "https://www.merriam-webster.com/dictionary/harbor#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20466",
-        "https://bosworthtoller.com/52386"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/harbor#etymonline_v_34126",
+      "https://www.merriam-webster.com/dictionary/harbor#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20466",
+      "https://bosworthtoller.com/52386"
+    ]
   }
 ]

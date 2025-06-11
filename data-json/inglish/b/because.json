@@ -1,36 +1,30 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "conjunction"
-    },
-    "standard": {
-      "name": "because",
-      "etymology": [
-        {
-          "name": "bi cause",
-          "origin": "Middle English"
-        },
-        {
-          "name": "because",
-          "origin": "Modern English"
-        },
-        {
-          "name": "becase",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "conjunction",
-            "adverb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/because#etymonline_v_8222",
-        "https://www.oed.com/dictionary/because_adv?tab=pronunciation#24926018",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4351",
-        "https://www.merriam-webster.com/dictionary/because#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/because#dictionary-entry-2"
-      ]
-    }
+    "name": "because",
+    "etymology": [
+      {
+        "name": "bi cause",
+        "origin": "Middle English"
+      },
+      {
+        "name": "because",
+        "origin": "Modern English"
+      },
+      {
+        "name": "becase",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "conjunction",
+          "adverb"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/because#etymonline_v_8222",
+      "https://www.oed.com/dictionary/because_adv?tab=pronunciation#24926018",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4351",
+      "https://www.merriam-webster.com/dictionary/because#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/because#dictionary-entry-2"
+    ]
   }
 ]

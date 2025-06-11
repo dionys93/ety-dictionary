@@ -1,77 +1,57 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "kite",
-      "etymology": [
-        {
-          "name": "cyta",
-          "origin": "Old English"
-        },
-        {
-          "name": "kite",
-          "origin": "Middle English"
-        },
-        {
-          "name": "kyte, kyts",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/kite#etymonline_v_1885",
-        "https://www.merriam-webster.com/dictionary/kite#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/kite#word-history",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24360",
-        "https://bosworthtoller.com/7287"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "kite",
+    "etymology": [
+      {
+        "name": "cyta",
+        "origin": "Old English"
+      },
+      {
+        "name": "kite",
+        "origin": "Middle English"
+      },
+      {
+        "name": "kyte, kyts",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/kite#etymonline_v_1885",
+      "https://www.merriam-webster.com/dictionary/kite#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/kite#word-history",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24360",
+      "https://bosworthtoller.com/7287"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to kite",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to kite",
+    "etymology": [
+      {
+        "name": "to kite",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to kite",
-        "ta kyte -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to kite",
-      "etymology": [
-        {
-          "name": "to kite",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta kyte -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta kyte -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta kytes",
+          "pastTense": "ta kyted",
+          "progressive": "ta kyting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/kite#etymonline_v_42642",
-        "https://www.etymonline.com/word/kite#etymonline_v_1885",
-        "https://www.merriam-webster.com/dictionary/kite#dictionary-entry-2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/kite#etymonline_v_42642",
+      "https://www.etymonline.com/word/kite#etymonline_v_1885",
+      "https://www.merriam-webster.com/dictionary/kite#dictionary-entry-2"
+    ]
   }
 ]

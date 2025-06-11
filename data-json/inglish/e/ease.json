@@ -1,160 +1,123 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "ease",
-      "etymology": [
-        {
-          "name": "adiacere, adiacens",
-          "origin": "Latin"
-        },
-        {
-          "name": "aise",
-          "origin": "Old French"
-        },
-        {
-          "name": "ease",
-          "origin": "Modern English"
-        },
-        {
-          "name": "íse -ful",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/ease#etymonline_v_946",
-        "https://www.etymonline.com/word/easeful#etymonline_v_50271",
-        "https://www.merriam-webster.com/dictionary/ease#dictionary-entry-1",
-        "https://anglo-norman.net/entry/aise",
-        "https://latin-dictionary.net/definition/1046/adjacens-adjacentis",
-        "https://latin-dictionary.net/definition/1047/adjaceo-adjacere-adjacui-adjacitus"
-      ],
-      "number": "singular"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to ease",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "ease",
+    "etymology": [
+      {
+        "name": "adiacere, adiacens",
+        "origin": "Latin"
       },
-      "etymology": [
-        "aise, aiser",
-        "to ease",
-        "ta íse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to ease",
-      "etymology": [
-        {
-          "name": "aise, aiser",
-          "origin": "Old French"
-        },
-        {
-          "name": "to ease",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta íse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/ease#etymonline_v_37931",
-        "https://www.etymonline.com/word/ease#etymonline_v_946",
-        "https://www.merriam-webster.com/dictionary/ease#dictionary-entry-2",
-        "https://anglo-norman.net/entry/aisir",
-        "https://anglo-norman.net/entry/aise"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "aise",
+        "origin": "Old French"
+      },
+      {
+        "name": "ease",
+        "origin": "Modern English"
+      },
+      {
+        "name": "íse -ful",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/ease#etymonline_v_946",
+      "https://www.etymonline.com/word/easeful#etymonline_v_50271",
+      "https://www.merriam-webster.com/dictionary/ease#dictionary-entry-1",
+      "https://anglo-norman.net/entry/aise",
+      "https://latin-dictionary.net/definition/1046/adjacens-adjacentis",
+      "https://latin-dictionary.net/definition/1047/adjaceo-adjacere-adjacui-adjacitus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "easement",
-      "etymology": [
-        {
-          "name": "aise, aiser, aisement",
-          "origin": "Old French"
-        },
-        {
-          "name": "easement",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ísment -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
+    "infinitive": "to ease",
+    "etymology": [
+      {
+        "name": "aise, aiser",
+        "origin": "Old French"
+      },
+      {
+        "name": "to ease",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta íse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta íses",
+          "pastTense": "ta ísed",
+          "progressive": "ta ísing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/easement#etymonline_v_948",
-        "https://www.merriam-webster.com/dictionary/easement",
-        "https://anglo-norman.net/entry/aisement",
-        "https://anglo-norman.net/entry/aisir",
-        "https://anglo-norman.net/entry/aise"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/ease#etymonline_v_37931",
+      "https://www.etymonline.com/word/ease#etymonline_v_946",
+      "https://www.merriam-webster.com/dictionary/ease#dictionary-entry-2",
+      "https://anglo-norman.net/entry/aisir",
+      "https://anglo-norman.net/entry/aise"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "easy",
-      "etymology": [
-        {
-          "name": "aiser, aisie",
-          "origin": "Old French"
-        },
-        {
-          "name": "easy",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ísy -ily",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "adverb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/easy#etymonline_v_952",
-        "https://www.merriam-webster.com/dictionary/easy#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/easy#dictionary-entry-2",
-        "https://anglo-norman.net/entry/aisir"
-      ],
-      "degrees": {
-        "positive": "sy",
-        "comparative": "ily"
+    "name": "easement",
+    "etymology": [
+      {
+        "name": "aise, aiser, aisement",
+        "origin": "Old French"
+      },
+      {
+        "name": "easement",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ísment -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/easement#etymonline_v_948",
+      "https://www.merriam-webster.com/dictionary/easement",
+      "https://anglo-norman.net/entry/aisement",
+      "https://anglo-norman.net/entry/aisir",
+      "https://anglo-norman.net/entry/aise"
+    ]
+  },
+  {
+    "name": "easy",
+    "etymology": [
+      {
+        "name": "aiser, aisie",
+        "origin": "Old French"
+      },
+      {
+        "name": "easy",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ísy -ily",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "adverb"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/easy#etymonline_v_952",
+      "https://www.merriam-webster.com/dictionary/easy#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/easy#dictionary-entry-2",
+      "https://anglo-norman.net/entry/aisir"
+    ]
   }
 ]

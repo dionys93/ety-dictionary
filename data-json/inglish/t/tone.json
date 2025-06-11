@@ -1,85 +1,65 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "tone",
-      "etymology": [
-        {
-          "name": "τείνειν, τόνος",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "tonus",
-          "origin": "Latin"
-        },
-        {
-          "name": "ton",
-          "origin": "Old French"
-        },
-        {
-          "name": "tone",
-          "origin": "Modern English"
-        },
-        {
-          "name": "tone, tôns",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/tone",
-        "https://www.oed.com/dictionary/tone_n?tab=factsheet#18289963",
-        "https://anglo-norman.net/entry/tun_1",
-        "https://latin-dictionary.net/definition/37309/tonus-toni",
-        "https://lsj.gr/wiki/%CF%84%CF%8C%CE%BD%CE%BF%CF%82",
-        "https://lsj.gr/wiki/%CF%84%CE%B5%CE%AF%CE%BD%CE%B5%CE%B9%CE%BD"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "tone",
+    "etymology": [
+      {
+        "name": "τείνειν, τόνος",
+        "origin": "Ancient Greek"
+      },
+      {
+        "name": "tonus",
+        "origin": "Latin"
+      },
+      {
+        "name": "ton",
+        "origin": "Old French"
+      },
+      {
+        "name": "tone",
+        "origin": "Modern English"
+      },
+      {
+        "name": "tone, tôns",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/tone",
+      "https://www.oed.com/dictionary/tone_n?tab=factsheet#18289963",
+      "https://anglo-norman.net/entry/tun_1",
+      "https://latin-dictionary.net/definition/37309/tonus-toni",
+      "https://lsj.gr/wiki/%CF%84%CF%8C%CE%BD%CE%BF%CF%82",
+      "https://lsj.gr/wiki/%CF%84%CE%B5%CE%AF%CE%BD%CE%B5%CE%B9%CE%BD"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to tone",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to tone",
+    "etymology": [
+      {
+        "name": "to tone",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to tone",
-        "ta tone -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to tone",
-      "etymology": [
-        {
-          "name": "to tone",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta tone -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta tone -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta tones",
+          "pastTense": "ta toned",
+          "progressive": "ta toning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/tone",
-        "https://www.oed.com/dictionary/tone_v?tab=factsheet#18292929"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/tone",
+      "https://www.oed.com/dictionary/tone_v?tab=factsheet#18292929"
+    ]
   }
 ]

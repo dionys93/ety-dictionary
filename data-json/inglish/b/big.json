@@ -1,33 +1,27 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "big",
-      "etymology": [
-        {
-          "name": "big",
-          "origin": "Old English"
-        },
-        {
-          "name": "big -her -hest",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
+    "name": "big",
+    "etymology": [
+      {
+        "name": "big",
+        "origin": "Old English"
+      },
+      {
+        "name": "big -her -hest",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ],
+        "degrees": {
+          "positive": "big",
+          "comparative": "her",
+          "superlative": "hest"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/big#etymonline_v_11135",
-        "https://www.oed.com/dictionary/big_adj?tab=pronunciation#21078994"
-      ],
-      "degrees": {
-        "positive": "big",
-        "comparative": "her",
-        "superlative": "hest"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/big#etymonline_v_11135",
+      "https://www.oed.com/dictionary/big_adj?tab=pronunciation#21078994"
+    ]
   }
 ]

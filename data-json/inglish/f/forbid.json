@@ -1,50 +1,36 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to forbid",
-      "conjugations": {
-        "thirdPerson": "ing"
+    "infinitive": "to forbid",
+    "etymology": [
+      {
+        "name": "forbeodan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "forbeodan",
-        "forbeden",
-        "to forbid",
-        "ta forbidde forbids forbâde forbidden -ing"
-      ]
-    },
-    "standard": {
-      "name": "to forbid",
-      "etymology": [
-        {
-          "name": "forbeodan",
-          "origin": "Old English"
-        },
-        {
-          "name": "forbeden",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to forbid",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta forbidde forbids forbâde forbidden -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "forbeden",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to forbid",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta forbidde forbids forbâde forbidden -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta forbidde forbids forbâde forbiddening"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/forbid#etymonline_v_11776",
-        "https://www.merriam-webster.com/dictionary/forbid#dictionary-entry-1",
-        "https://www.oed.com/dictionary/forbid_v?tab=factsheet#3998850",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16659",
-        "https://bosworthtoller.com/11198"
-      ],
-      "conjugations": {
-        "thirdPerson": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/forbid#etymonline_v_11776",
+      "https://www.merriam-webster.com/dictionary/forbid#dictionary-entry-1",
+      "https://www.oed.com/dictionary/forbid_v?tab=factsheet#3998850",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16659",
+      "https://bosworthtoller.com/11198"
+    ]
   }
 ]

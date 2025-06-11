@@ -1,102 +1,76 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "cartoon",
-      "etymology": [
-        {
-          "name": "cartone",
-          "origin": "Italian"
-        },
-        {
-          "name": "cartoon",
-          "origin": "Modern English"
-        },
-        {
-          "name": "cartoune, cartouns",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/cartoon#etymonline_v_5424",
-        "https://www.etymonline.com/word/toon#etymonline_v_24766",
-        "https://www.merriam-webster.com/dictionary/cartoon#word-history",
-        "https://www.collinsdictionary.com/us/dictionary/italian-english/cartone"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to cartoon",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "cartoon",
+    "etymology": [
+      {
+        "name": "cartone",
+        "origin": "Italian"
       },
-      "etymology": [
-        "to cartoon",
-        "ta cartoune -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to cartoon",
-      "etymology": [
-        {
-          "name": "to cartoon",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta cartoune -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/cartoon#etymonline_v_46633",
-        "https://www.etymonline.com/word/cartoon#etymonline_v_5424"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "cartoon",
+        "origin": "Modern English"
+      },
+      {
+        "name": "cartoune, cartouns",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/cartoon#etymonline_v_5424",
+      "https://www.etymonline.com/word/toon#etymonline_v_24766",
+      "https://www.merriam-webster.com/dictionary/cartoon#word-history",
+      "https://www.collinsdictionary.com/us/dictionary/italian-english/cartone"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "cartoonist",
-      "etymology": [
-        {
-          "name": "cartoonist",
-          "origin": "Modern English"
-        },
-        {
-          "name": "cartounist -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
+    "infinitive": "to cartoon",
+    "etymology": [
+      {
+        "name": "to cartoon",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta cartoune -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta cartounes",
+          "pastTense": "ta cartouned",
+          "progressive": "ta cartouning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/cartoonist#etymonline_v_34054"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/cartoon#etymonline_v_46633",
+      "https://www.etymonline.com/word/cartoon#etymonline_v_5424"
+    ]
+  },
+  {
+    "name": "cartoonist",
+    "etymology": [
+      {
+        "name": "cartoonist",
+        "origin": "Modern English"
+      },
+      {
+        "name": "cartounist -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/cartoonist#etymonline_v_34054"
+    ]
   }
 ]

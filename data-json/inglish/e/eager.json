@@ -1,47 +1,36 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "eager",
-      "etymology": [
-        {
-          "name": "acer",
-          "origin": "Latin"
-        },
-        {
-          "name": "acrus",
-          "origin": "Vulgar Latin"
-        },
-        {
-          "name": "egre, aigre",
-          "origin": "Old French"
-        },
-        {
-          "name": "eager",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ígre -ly -ness",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/eager#etymonline_v_930",
-        "https://www.merriam-webster.com/dictionary/eager",
-        "https://anglo-norman.net/entry/egre",
-        "https://latin-dictionary.net/definition/489/acer-acris"
-      ],
-      "degrees": {
-        "positive": "gre",
-        "comparative": "ly",
-        "superlative": "ness"
+    "name": "eager",
+    "etymology": [
+      {
+        "name": "acer",
+        "origin": "Latin"
+      },
+      {
+        "name": "acrus",
+        "origin": "Vulgar Latin"
+      },
+      {
+        "name": "egre, aigre",
+        "origin": "Old French"
+      },
+      {
+        "name": "eager",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ígre -ly -ness",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/eager#etymonline_v_930",
+      "https://www.merriam-webster.com/dictionary/eager",
+      "https://anglo-norman.net/entry/egre",
+      "https://latin-dictionary.net/definition/489/acer-acris"
+    ]
   }
 ]

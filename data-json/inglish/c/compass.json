@@ -1,126 +1,91 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "compass  -es (m n)",
-      "etymology": [
-        {
-          "name": "com + passus",
-          "origin": "Latin"
-        },
-        {
-          "name": "compassare",
-          "origin": "Vulgar Latin"
-        },
-        {
-          "name": "compasser, compas",
-          "origin": "Old French"
-        },
-        {
-          "name": "compass  -es (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/compass#etymonline_v_17257",
-        "https://www.merriam-webster.com/dictionary/compass#dictionary-entry-2",
-        "https://www.anglo-norman.net/entry/compas",
-        "https://www.anglo-norman.net/entry/compasser_1",
-        "https://www.anglo-norman.net/entry/compasser_2",
-        "https://latin-dictionary.net/definition/29431/passus-passus",
-        "https://latin-dictionary.net/definition/11210/com"
-      ]
-    }
+    "name": "compass  -es (m n)",
+    "etymology": [
+      {
+        "name": "com + passus",
+        "origin": "Latin"
+      },
+      {
+        "name": "compassare",
+        "origin": "Vulgar Latin"
+      },
+      {
+        "name": "compasser, compas",
+        "origin": "Old French"
+      },
+      {
+        "name": "compass  -es (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/compass#etymonline_v_17257",
+      "https://www.merriam-webster.com/dictionary/compass#dictionary-entry-2",
+      "https://www.anglo-norman.net/entry/compas",
+      "https://www.anglo-norman.net/entry/compasser_1",
+      "https://www.anglo-norman.net/entry/compasser_2",
+      "https://latin-dictionary.net/definition/29431/passus-passus",
+      "https://latin-dictionary.net/definition/11210/com"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "compasser",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "compasser",
+    "etymology": [
+      {
+        "name": "compassare",
+        "origin": "Vulgar Latin"
       },
-      "etymology": [
-        "compassare",
-        "compasser",
-        "ta compasse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "compasser",
-      "etymology": [
-        {
-          "name": "compassare",
-          "origin": "Vulgar Latin"
-        },
-        {
-          "name": "compasser",
-          "origin": "Old French"
-        },
-        {
-          "name": "ta compasse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "compasser",
+        "origin": "Old French"
+      },
+      {
+        "name": "ta compasse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta compasses",
+          "pastTense": "ta compassed",
+          "progressive": "ta compassing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/compass#etymonline_v_45691",
-        "https://www.merriam-webster.com/dictionary/compass#dictionary-entry-1",
-        "https://www.anglo-norman.net/entry/compasser_1",
-        "https://www.anglo-norman.net/entry/compasser_2",
-        "https://latin-dictionary.net/definition/29431/passus-passus",
-        "https://latin-dictionary.net/definition/11210/com"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/compass#etymonline_v_45691",
+      "https://www.merriam-webster.com/dictionary/compass#dictionary-entry-1",
+      "https://www.anglo-norman.net/entry/compasser_1",
+      "https://www.anglo-norman.net/entry/compasser_2",
+      "https://latin-dictionary.net/definition/29431/passus-passus",
+      "https://latin-dictionary.net/definition/11210/com"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to encompass",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to encompass",
+    "etymology": [
+      {
+        "name": "to encompass",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to encompass",
-        "to encompasse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to encompass",
-      "etymology": [
-        {
-          "name": "to encompass",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to encompasse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to encompasse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to encompasses",
+          "pastTense": "to encompassed",
+          "progressive": "to encompassing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/encompass#etymonline_v_8641",
-        "https://www.etymonline.com/word/compass#etymonline_v_17257",
-        "https://www.etymonline.com/word/en-#etymonline_v_8621"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/encompass#etymonline_v_8641",
+      "https://www.etymonline.com/word/compass#etymonline_v_17257",
+      "https://www.etymonline.com/word/en-#etymonline_v_8621"
+    ]
   }
 ]

@@ -1,39 +1,33 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "ugly",
-      "etymology": [
-        {
-          "name": "uggr, uggligr",
-          "origin": "Old Norse"
-        },
-        {
-          "name": "ugly",
-          "origin": "Modern English"
-        },
-        {
-          "name": "uggly -ier -iest",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
+    "name": "ugly",
+    "etymology": [
+      {
+        "name": "uggr, uggligr",
+        "origin": "Old Norse"
+      },
+      {
+        "name": "ugly",
+        "origin": "Modern English"
+      },
+      {
+        "name": "uggly -ier -iest",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ],
+        "degrees": {
+          "positive": "uggly",
+          "comparative": "ier",
+          "superlative": "iest"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/ugly",
-        "https://www.oed.com/dictionary/ugly_adj?tab=factsheet#17342455",
-        "https://old-norse.net/html/u.php#uggligr",
-        "https://old-norse.net/html/u.php#uggr"
-      ],
-      "degrees": {
-        "positive": "uggly",
-        "comparative": "ier",
-        "superlative": "iest"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/ugly",
+      "https://www.oed.com/dictionary/ugly_adj?tab=factsheet#17342455",
+      "https://old-norse.net/html/u.php#uggligr",
+      "https://old-norse.net/html/u.php#uggr"
+    ]
   }
 ]

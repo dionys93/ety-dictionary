@@ -1,49 +1,35 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to withstand",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to withstand",
+    "etymology": [
+      {
+        "name": "wiþstandan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "wiþstandan",
-        "withstonden",
-        "to withstand",
-        "ta ɯiþstande -s ɯiþstûd -ing"
-      ]
-    },
-    "standard": {
-      "name": "to withstand",
-      "etymology": [
-        {
-          "name": "wiþstandan",
-          "origin": "Old English"
-        },
-        {
-          "name": "withstonden",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to withstand",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta ɯiþstande -s ɯiþstûd -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "withstonden",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to withstand",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta ɯiþstande -s ɯiþstûd -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta ɯiþstandes"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/withstand#etymonline_v_10807",
-        "https://www.merriam-webster.com/dictionary/withstand",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED53147",
-        "https://bosworthtoller.com/36272"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/withstand#etymonline_v_10807",
+      "https://www.merriam-webster.com/dictionary/withstand",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED53147",
+      "https://bosworthtoller.com/36272"
+    ]
   }
 ]

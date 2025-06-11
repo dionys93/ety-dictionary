@@ -1,93 +1,70 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to rape",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to rape",
+    "etymology": [
+      {
+        "name": "rapere",
+        "origin": "Latin"
       },
-      "etymology": [
-        "rapere",
-        "raper, rapir",
-        "rapen",
-        "to rape",
-        "ta râpe -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to rape",
-      "etymology": [
-        {
-          "name": "rapere",
-          "origin": "Latin"
-        },
-        {
-          "name": "raper, rapir",
-          "origin": "Old French"
-        },
-        {
-          "name": "rapen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to rape",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta râpe -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "raper, rapir",
+        "origin": "Old French"
+      },
+      {
+        "name": "rapen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to rape",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta râpe -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta râpes",
+          "pastTense": "ta râped",
+          "progressive": "ta râping"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/rape#etymonline_v_3356",
-        "https://www.merriam-webster.com/dictionary/rape#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35908",
-        "https://anglo-norman.net/entry/raper",
-        "https://latin-dictionary.net/definition/32880/rapio-rapere-rapui-raptus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/rape#etymonline_v_3356",
+      "https://www.merriam-webster.com/dictionary/rape#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35908",
+      "https://anglo-norman.net/entry/raper",
+      "https://latin-dictionary.net/definition/32880/rapio-rapere-rapui-raptus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "rap, rape",
-      "etymology": [
-        {
-          "name": "rapere",
-          "origin": "Latin"
-        },
-        {
-          "name": "rap, rape",
-          "origin": "Old French"
-        },
-        {
-          "name": "râpe, râps",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/rape#etymonline_v_43868",
-        "https://www.merriam-webster.com/dictionary/rape#dictionary-entry-1",
-        "https://anglo-norman.net/entry/rap_1",
-        "https://latin-dictionary.net/definition/32880/rapio-rapere-rapui-raptus"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "rap, rape",
+    "etymology": [
+      {
+        "name": "rapere",
+        "origin": "Latin"
+      },
+      {
+        "name": "rap, rape",
+        "origin": "Old French"
+      },
+      {
+        "name": "râpe, râps",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/rape#etymonline_v_43868",
+      "https://www.merriam-webster.com/dictionary/rape#dictionary-entry-1",
+      "https://anglo-norman.net/entry/rap_1",
+      "https://latin-dictionary.net/definition/32880/rapio-rapere-rapui-raptus"
+    ]
   }
 ]

@@ -1,85 +1,63 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to crush",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to crush",
+    "etymology": [
+      {
+        "name": "croissir, cruissir",
+        "origin": "Old French"
       },
-      "etymology": [
-        "croissir, cruissir",
-        "crushen",
-        "to crush",
-        "ta croshe -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to crush",
-      "etymology": [
-        {
-          "name": "croissir, cruissir",
-          "origin": "Old French"
-        },
-        {
-          "name": "crushen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to crush",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta croshe -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "crushen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to crush",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta croshe -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta croshes",
+          "pastTense": "ta croshed",
+          "progressive": "ta croshing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/crush#etymonline_v_416",
-        "https://www.merriam-webster.com/dictionary/crush#dictionary-entry-1",
-        "https://www.oed.com/dictionary/crush_v?tab=factsheet#7682710",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9074",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/%C3%A9craser/27568",
-        "https://www.anglo-norman.net/entry/croissir_1"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/crush#etymonline_v_416",
+      "https://www.merriam-webster.com/dictionary/crush#dictionary-entry-1",
+      "https://www.oed.com/dictionary/crush_v?tab=factsheet#7682710",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED9074",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/%C3%A9craser/27568",
+      "https://www.anglo-norman.net/entry/croissir_1"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "crush",
-      "etymology": [
-        {
-          "name": "crush",
-          "origin": "Modern English"
-        },
-        {
-          "name": "crosh -es",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/crush#etymonline_v_46142",
-        "https://www.etymonline.com/word/crush#etymonline_v_416",
-        "https://www.merriam-webster.com/dictionary/crush#dictionary-entry-2",
-        "https://www.oed.com/dictionary/crush_n?tab=factsheet#7681762"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "crush",
+    "etymology": [
+      {
+        "name": "crush",
+        "origin": "Modern English"
+      },
+      {
+        "name": "crosh -es",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/crush#etymonline_v_46142",
+      "https://www.etymonline.com/word/crush#etymonline_v_416",
+      "https://www.merriam-webster.com/dictionary/crush#dictionary-entry-2",
+      "https://www.oed.com/dictionary/crush_n?tab=factsheet#7681762"
+    ]
   }
 ]

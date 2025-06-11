@@ -1,42 +1,36 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "disciple",
-      "etymology": [
-        {
-          "name": "discipulus",
-          "origin": "Latin"
-        },
-        {
-          "name": "discipul",
-          "origin": "Old English"
-        },
-        {
-          "name": "disciple",
-          "origin": "Modern English"
-        },
-        {
-          "name": "decîple, decîpuls",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/disciple#etymonline_v_11384",
-        "https://www.oed.com/dictionary/disciple_n?tab=factsheet#6684814",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED11805",
-        "https://bosworthtoller.com/7735",
-        "https://anglo-norman.net/entry/deciple",
-        "https://latin-dictionary.net/definition/18019/discipulus-discipuli"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "disciple",
+    "etymology": [
+      {
+        "name": "discipulus",
+        "origin": "Latin"
+      },
+      {
+        "name": "discipul",
+        "origin": "Old English"
+      },
+      {
+        "name": "disciple",
+        "origin": "Modern English"
+      },
+      {
+        "name": "decîple, decîpuls",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/disciple#etymonline_v_11384",
+      "https://www.oed.com/dictionary/disciple_n?tab=factsheet#6684814",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED11805",
+      "https://bosworthtoller.com/7735",
+      "https://anglo-norman.net/entry/deciple",
+      "https://latin-dictionary.net/definition/18019/discipulus-discipuli"
+    ]
   }
 ]

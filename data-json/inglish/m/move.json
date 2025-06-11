@@ -1,150 +1,124 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to move",
-      "etymology": [
-        "movere",
-        "movoir",
-        "mover",
-        "meven",
-        "to move",
-        "ta mouve -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to move",
-      "etymology": [
-        {
-          "name": "movere",
-          "origin": "Latin"
-        },
-        {
-          "name": "movoir",
-          "origin": "Old French"
-        },
-        {
-          "name": "mover",
-          "origin": "Inglish"
-        },
-        {
-          "name": "meven",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to move",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta mouve -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+    "infinitive": "to move",
+    "etymology": [
+      {
+        "name": "movere",
+        "origin": "Latin"
+      },
+      {
+        "name": "movoir",
+        "origin": "Old French"
+      },
+      {
+        "name": "mover",
+        "origin": "Inglish"
+      },
+      {
+        "name": "meven",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to move",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta mouve -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta mouves",
+          "pastTense": "ta mouved",
+          "progressive": "ta mouving"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/move#etymonline_v_18440",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED27630",
-        "https://www.anglo-norman.net/entry/mover",
-        "https://latin-dictionary.net/definition/27312/moveo-movere-movi-motus"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/move#etymonline_v_18440",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED27630",
+      "https://www.anglo-norman.net/entry/mover",
+      "https://latin-dictionary.net/definition/27312/moveo-movere-movi-motus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "move",
-      "etymology": [
-        {
-          "name": "move",
-          "origin": "Modern English"
-        },
-        {
-          "name": "mouve -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/move#etymonline_v_45094",
-        "https://www.etymonline.com/word/move#etymonline_v_18440",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED27630",
-        "https://www.anglo-norman.net/entry/mover"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "move",
+    "etymology": [
+      {
+        "name": "move",
+        "origin": "Modern English"
+      },
+      {
+        "name": "mouve -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/move#etymonline_v_45094",
+      "https://www.etymonline.com/word/move#etymonline_v_18440",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED27630",
+      "https://www.anglo-norman.net/entry/mover"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "moving picture, movie",
-      "etymology": [
-        {
-          "name": "moving picture, movie",
-          "origin": "Modern English"
-        },
-        {
-          "name": "mouvi -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/movie#etymonline_v_18441"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "moving picture, movie",
+    "etymology": [
+      {
+        "name": "moving picture, movie",
+        "origin": "Modern English"
+      },
+      {
+        "name": "mouvi -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/movie#etymonline_v_18441"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "movement",
-      "etymology": [
-        {
-          "name": "movere, movimentum",
-          "origin": "Latin"
-        },
-        {
-          "name": "movement",
-          "origin": "Old French"
-        },
-        {
-          "name": "mevement",
-          "origin": "Middle English"
-        },
-        {
-          "name": "movement",
-          "origin": "Modern English"
-        },
-        {
-          "name": "mouvement -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/movement#etymonline_v_24381",
-        "https://latin-dictionary.net/definition/27312/moveo-movere-movi-motus"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "movement",
+    "etymology": [
+      {
+        "name": "movere, movimentum",
+        "origin": "Latin"
+      },
+      {
+        "name": "movement",
+        "origin": "Old French"
+      },
+      {
+        "name": "mevement",
+        "origin": "Middle English"
+      },
+      {
+        "name": "movement",
+        "origin": "Modern English"
+      },
+      {
+        "name": "mouvement -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/movement#etymonline_v_24381",
+      "https://latin-dictionary.net/definition/27312/moveo-movere-movi-motus"
+    ]
   }
 ]

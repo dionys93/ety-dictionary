@@ -1,84 +1,63 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "stone",
-      "etymology": [
-        {
-          "name": "stǽnen, stan",
-          "origin": "Old English"
-        },
-        {
-          "name": "stone",
-          "origin": "Modern English"
-        },
-        {
-          "name": "stoan -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "masculine noun"
-          ]
+    "name": "stone",
+    "etymology": [
+      {
+        "name": "stǽnen, stan",
+        "origin": "Old English"
+      },
+      {
+        "name": "stone",
+        "origin": "Modern English"
+      },
+      {
+        "name": "stoan -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "masculine noun"
+        ],
+        "degrees": {
+          "positive": "stoan",
+          "comparative": "s"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/stone",
-        "https://www.oed.com/dictionary/stone_n?tab=factsheet#20385679",
-        "https://bosworthtoller.com/28714",
-        "https://bosworthtoller.com/28656"
-      ],
-      "degrees": {
-        "positive": "stoan",
-        "comparative": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/stone",
+      "https://www.oed.com/dictionary/stone_n?tab=factsheet#20385679",
+      "https://bosworthtoller.com/28714",
+      "https://bosworthtoller.com/28656"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to stone",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to stone",
+    "etymology": [
+      {
+        "name": "stǽnan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "stǽnan",
-        "to stone",
-        "ta stoane -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to stone",
-      "etymology": [
-        {
-          "name": "stǽnan",
-          "origin": "Old English"
-        },
-        {
-          "name": "to stone",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta stoane -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to stone",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta stoane -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta stoanes",
+          "pastTense": "ta stoaned",
+          "progressive": "ta stoaning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/stone",
-        "https://www.oed.com/dictionary/stone_v?tab=factsheet#20395058",
-        "https://bosworthtoller.com/28655"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/stone",
+      "https://www.oed.com/dictionary/stone_v?tab=factsheet#20395058",
+      "https://bosworthtoller.com/28655"
+    ]
   }
 ]

@@ -1,34 +1,30 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "coyote",
-      "etymology": [
-        {
-          "name": "coyotl",
-          "origin": "Aztec"
-        },
-        {
-          "name": "coyote",
-          "origin": "Inglish"
-        },
-        {
-          "name": "kyôti -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/coyote#etymonline_v_19208",
-        "https://www.merriam-webster.com/dictionary/coyote",
-        "https://www.oed.com/dictionary/coyote_n?tab=pronunciation#7928945",
-        "https://www.oed.com/dictionary/coyote_n?tab=meaning_and_use#7928945"
-      ]
-    }
+    "name": "coyote",
+    "etymology": [
+      {
+        "name": "coyotl",
+        "origin": "Aztec"
+      },
+      {
+        "name": "coyote",
+        "origin": "Inglish"
+      },
+      {
+        "name": "kyôti -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/coyote#etymonline_v_19208",
+      "https://www.merriam-webster.com/dictionary/coyote",
+      "https://www.oed.com/dictionary/coyote_n?tab=pronunciation#7928945",
+      "https://www.oed.com/dictionary/coyote_n?tab=meaning_and_use#7928945"
+    ]
   }
 ]

@@ -1,84 +1,64 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to beat",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to beat",
+    "etymology": [
+      {
+        "name": "beatan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "beatan",
-        "beten",
-        "to beat",
-        "ta biete -s biet bieten -ing"
-      ]
-    },
-    "standard": {
-      "name": "to beat",
-      "etymology": [
-        {
-          "name": "beatan",
-          "origin": "Old English"
-        },
-        {
-          "name": "beten",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to beat",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta biete -s biet bieten -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "beten",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to beat",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta biete -s biet bieten -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta bietes"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/beat#etymonline_v_8209",
-        "https://www.merriam-webster.com/dictionary/beat#dictionary-entry-1",
-        "https://www.oed.com/dictionary/beat_v1?tab=factsheet#25425939",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4268",
-        "https://bosworthtoller.com/3192"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/beat#etymonline_v_8209",
+      "https://www.merriam-webster.com/dictionary/beat#dictionary-entry-1",
+      "https://www.oed.com/dictionary/beat_v1?tab=factsheet#25425939",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4268",
+      "https://bosworthtoller.com/3192"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "beat",
-      "etymology": [
-        {
-          "name": "beat",
-          "origin": "Modern English"
-        },
-        {
-          "name": "biet -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "masculine noun"
-          ]
+    "name": "beat",
+    "etymology": [
+      {
+        "name": "beat",
+        "origin": "Modern English"
+      },
+      {
+        "name": "biet -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "masculine noun"
+        ],
+        "degrees": {
+          "positive": "biet",
+          "comparative": "s"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/beat#etymonline_v_41774",
-        "https://www.etymonline.com/word/beat#etymonline_v_8209",
-        "https://www.merriam-webster.com/dictionary/beat#dictionary-entry-2",
-        "https://www.etymonline.com/word/beat#etymonline_v_42750",
-        "https://www.merriam-webster.com/dictionary/beat#dictionary-entry-3"
-      ],
-      "degrees": {
-        "positive": "biet",
-        "comparative": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/beat#etymonline_v_41774",
+      "https://www.etymonline.com/word/beat#etymonline_v_8209",
+      "https://www.merriam-webster.com/dictionary/beat#dictionary-entry-2",
+      "https://www.etymonline.com/word/beat#etymonline_v_42750",
+      "https://www.merriam-webster.com/dictionary/beat#dictionary-entry-3"
+    ]
   }
 ]

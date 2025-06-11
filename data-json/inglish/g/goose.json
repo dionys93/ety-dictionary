@@ -1,110 +1,84 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "goose, geese",
-      "etymology": [
-        {
-          "name": "gos",
-          "origin": "Old English"
-        },
-        {
-          "name": "goose, geese",
-          "origin": "Modern English"
-        },
-        {
-          "name": "gouss, guíss",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/goose#etymonline_v_9053",
-        "https://www.etymonline.com/word/geese#etymonline_v_33622",
-        "https://www.merriam-webster.com/dictionary/goose#dictionary-entry-1",
-        "https://www.oed.com/dictionary/goose_n?tab=pronunciation#2879697",
-        "https://bosworthtoller.com/17407"
-      ],
-      "number": "singular"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to goose",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "goose, geese",
+    "etymology": [
+      {
+        "name": "gos",
+        "origin": "Old English"
       },
-      "etymology": [
-        "to goose",
-        "ta gousse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to goose",
-      "etymology": [
-        {
-          "name": "to goose",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta gousse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/goose#etymonline_v_45983",
-        "https://www.etymonline.com/word/goose#etymonline_v_9053",
-        "https://www.merriam-webster.com/dictionary/goose#dictionary-entry-2",
-        "https://www.oed.com/dictionary/goose_v?tab=factsheet#2882928"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "goose, geese",
+        "origin": "Modern English"
+      },
+      {
+        "name": "gouss, guíss",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/goose#etymonline_v_9053",
+      "https://www.etymonline.com/word/geese#etymonline_v_33622",
+      "https://www.merriam-webster.com/dictionary/goose#dictionary-entry-1",
+      "https://www.oed.com/dictionary/goose_n?tab=pronunciation#2879697",
+      "https://bosworthtoller.com/17407"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "gosling",
-      "etymology": [
-        {
-          "name": "gos, gæslingr",
-          "origin": "Old Norse"
-        },
-        {
-          "name": "gosling",
-          "origin": "Middle English"
-        },
-        {
-          "name": "gósling -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
+    "infinitive": "to goose",
+    "etymology": [
+      {
+        "name": "to goose",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta gousse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta gousses",
+          "pastTense": "ta goussed",
+          "progressive": "ta goussing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/gosling#etymonline_v_9071",
-        "https://www.merriam-webster.com/dictionary/gosling#word-history",
-        "https://www.oed.com/dictionary/gosling_n?tab=factsheet#2584213",
-        "https://old-norse.net/html/g.php#g%C3%A6slingr"
-      ],
-      "number": "plural"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/goose#etymonline_v_45983",
+      "https://www.etymonline.com/word/goose#etymonline_v_9053",
+      "https://www.merriam-webster.com/dictionary/goose#dictionary-entry-2",
+      "https://www.oed.com/dictionary/goose_v?tab=factsheet#2882928"
+    ]
+  },
+  {
+    "name": "gosling",
+    "etymology": [
+      {
+        "name": "gos, gæslingr",
+        "origin": "Old Norse"
+      },
+      {
+        "name": "gosling",
+        "origin": "Middle English"
+      },
+      {
+        "name": "gósling -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/gosling#etymonline_v_9071",
+      "https://www.merriam-webster.com/dictionary/gosling#word-history",
+      "https://www.oed.com/dictionary/gosling_n?tab=factsheet#2584213",
+      "https://old-norse.net/html/g.php#g%C3%A6slingr"
+    ]
   }
 ]

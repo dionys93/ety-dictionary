@@ -1,37 +1,31 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "basket",
-      "etymology": [
-        {
-          "name": "bascat",
-          "origin": "Old French"
-        },
-        {
-          "name": "basket",
-          "origin": "Modern English"
-        },
-        {
-          "name": "bascat -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/basket#etymonline_v_5291",
-        "https://www.oed.com/dictionary/basket_n?tab=factsheet#26608558",
-        "https://anglo-norman.net/entry/baschet",
-        "https://latin-dictionary.net/definition/20328/fascis-fascis",
-        "https://latin-dictionary.net/definition/6168/bascauda-bascaudae"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "basket",
+    "etymology": [
+      {
+        "name": "bascat",
+        "origin": "Old French"
+      },
+      {
+        "name": "basket",
+        "origin": "Modern English"
+      },
+      {
+        "name": "bascat -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/basket#etymonline_v_5291",
+      "https://www.oed.com/dictionary/basket_n?tab=factsheet#26608558",
+      "https://anglo-norman.net/entry/baschet",
+      "https://latin-dictionary.net/definition/20328/fascis-fascis",
+      "https://latin-dictionary.net/definition/6168/bascauda-bascaudae"
+    ]
   }
 ]

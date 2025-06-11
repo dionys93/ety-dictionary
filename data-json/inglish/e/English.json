@@ -1,71 +1,59 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "English",
-      "etymology": [
-        {
-          "name": "Engle, Englisc",
-          "origin": "Old English"
-        },
-        {
-          "name": "English",
-          "origin": "Middle English"
-        },
-        {
-          "name": "Inglish",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/English#etymonline_v_8678",
-        "https://www.oed.com/dictionary/english_adj?tab=pronunciation#5415179",
-        "https://www.oed.com/dictionary/english_adj?tab=meaning_and_use#5415179",
-        "https://bosworthtoller.com/44080",
-        "https://bosworthtoller.com/9430"
-      ],
-      "gender": "masculine",
-      "number": "singular"
-    }
+    "name": "English",
+    "etymology": [
+      {
+        "name": "Engle, Englisc",
+        "origin": "Old English"
+      },
+      {
+        "name": "English",
+        "origin": "Middle English"
+      },
+      {
+        "name": "Inglish",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/English#etymonline_v_8678",
+      "https://www.oed.com/dictionary/english_adj?tab=pronunciation#5415179",
+      "https://www.oed.com/dictionary/english_adj?tab=meaning_and_use#5415179",
+      "https://bosworthtoller.com/44080",
+      "https://bosworthtoller.com/9430"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "English",
-      "etymology": [
-        {
-          "name": "Engle, Englisc",
-          "origin": "Old English"
-        },
-        {
-          "name": "English",
-          "origin": "Middle English"
-        },
-        {
-          "name": "inglish",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/English#etymonline_v_50335",
-        "https://www.etymonline.com/word/English#etymonline_v_8678",
-        "https://www.oed.com/dictionary/english_adj?tab=pronunciation#5415179",
-        "https://www.oed.com/dictionary/english_adj?tab=meaning_and_use#5415179",
-        "https://bosworthtoller.com/9433",
-        "https://bosworthtoller.com/9430"
-      ]
-    }
+    "name": "English",
+    "etymology": [
+      {
+        "name": "Engle, Englisc",
+        "origin": "Old English"
+      },
+      {
+        "name": "English",
+        "origin": "Middle English"
+      },
+      {
+        "name": "inglish",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/English#etymonline_v_50335",
+      "https://www.etymonline.com/word/English#etymonline_v_8678",
+      "https://www.oed.com/dictionary/english_adj?tab=pronunciation#5415179",
+      "https://www.oed.com/dictionary/english_adj?tab=meaning_and_use#5415179",
+      "https://bosworthtoller.com/9433",
+      "https://bosworthtoller.com/9430"
+    ]
   }
 ]

@@ -1,69 +1,49 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to devalue",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to devalue",
+    "etymology": [
+      {
+        "name": "to devalue",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to devalue",
-        "ta devallue -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to devalue",
-      "etymology": [
-        {
-          "name": "to devalue",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta devallue -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta devallue -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta devallues",
+          "pastTense": "ta devallued",
+          "progressive": "ta devalluing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/devalue#etymonline_v_30218",
-        "https://www.merriam-webster.com/dictionary/devalue"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/devalue#etymonline_v_30218",
+      "https://www.merriam-webster.com/dictionary/devalue"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "devaluation",
-      "etymology": [
-        {
-          "name": "devaluation",
-          "origin": "Modern English"
-        },
-        {
-          "name": "devalluâcion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/devaluation#etymonline_v_8479",
-        "https://www.merriam-webster.com/dictionary/devaluation"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "devaluation",
+    "etymology": [
+      {
+        "name": "devaluation",
+        "origin": "Modern English"
+      },
+      {
+        "name": "devalluâcion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/devaluation#etymonline_v_8479",
+      "https://www.merriam-webster.com/dictionary/devaluation"
+    ]
   }
 ]

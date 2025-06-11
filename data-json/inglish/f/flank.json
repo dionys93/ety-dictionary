@@ -1,76 +1,56 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to flank",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to flank",
+    "etymology": [
+      {
+        "name": "to flank",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to flank",
-        "ta flânke -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to flank",
-      "etymology": [
-        {
-          "name": "to flank",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta flânke -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta flânke -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta flânkes",
+          "pastTense": "ta flânked",
+          "progressive": "ta flânking"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/flank#etymonline_v_50602",
-        "https://www.etymonline.com/word/flank#etymonline_v_8846",
-        "https://www.merriam-webster.com/dictionary/flank#dictionary-entry-2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/flank#etymonline_v_50602",
+      "https://www.etymonline.com/word/flank#etymonline_v_8846",
+      "https://www.merriam-webster.com/dictionary/flank#dictionary-entry-2"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "flank",
-      "etymology": [
-        {
-          "name": "flanc",
-          "origin": "Old French"
-        },
-        {
-          "name": "flank",
-          "origin": "Middle English"
-        },
-        {
-          "name": "flânk -cs",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/flank#etymonline_v_8846",
-        "https://www.merriam-webster.com/dictionary/flank#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16165",
-        "https://anglo-norman.net/entry/flanc"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "flank",
+    "etymology": [
+      {
+        "name": "flanc",
+        "origin": "Old French"
+      },
+      {
+        "name": "flank",
+        "origin": "Middle English"
+      },
+      {
+        "name": "flânk -cs",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/flank#etymonline_v_8846",
+      "https://www.merriam-webster.com/dictionary/flank#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16165",
+      "https://anglo-norman.net/entry/flanc"
+    ]
   }
 ]

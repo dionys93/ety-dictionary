@@ -1,66 +1,45 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to groan",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to groan",
+    "etymology": [
+      {
+        "name": "granian",
+        "origin": "Old English"
       },
-      "etymology": [
-        "granian",
-        "to groan",
-        "ta groane -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to groan",
-      "etymology": [
-        {
-          "name": "granian",
-          "origin": "Old English"
-        },
-        {
-          "name": "to groan",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta groane -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to groan",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta groane -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta groanes",
+          "pastTense": "ta groaned",
+          "progressive": "ta groaning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/groan",
-        "https://www.oed.com/dictionary/groan_v?tab=factsheet#2516339",
-        "https://bosworthtoller.com/17462"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/groan",
+      "https://www.oed.com/dictionary/groan_v?tab=factsheet#2516339",
+      "https://bosworthtoller.com/17462"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "groan  -s (m n)",
-      "etymology": [
-        {
-          "name": "groan  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/groan",
-        "https://www.oed.com/dictionary/groan_n?tab=factsheet#2516082"
-      ]
-    }
+    "name": "groan  -s (m n)",
+    "etymology": [
+      {
+        "name": "groan  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/groan",
+      "https://www.oed.com/dictionary/groan_n?tab=factsheet#2516082"
+    ]
   }
 ]

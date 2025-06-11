@@ -1,26 +1,20 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "sharp  -er -est (adj)",
-      "etymology": [
-        {
-          "name": "scearp",
-          "origin": "Old English"
-        },
-        {
-          "name": "sharp  -er -est (adj)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/sharp",
-        "https://www.oed.com/dictionary/sharp_adj?tab=factsheet#23193210",
-        "https://bosworthtoller.com/26607"
-      ]
-    }
+    "name": "sharp  -er -est (adj)",
+    "etymology": [
+      {
+        "name": "scearp",
+        "origin": "Old English"
+      },
+      {
+        "name": "sharp  -er -est (adj)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/sharp",
+      "https://www.oed.com/dictionary/sharp_adj?tab=factsheet#23193210",
+      "https://bosworthtoller.com/26607"
+    ]
   }
 ]

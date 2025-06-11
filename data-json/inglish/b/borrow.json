@@ -1,51 +1,36 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to borrow",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
+    "infinitive": "to borrow",
+    "etymology": [
+      {
+        "name": "borgian",
+        "origin": "Old English"
       },
-      "etymology": [
-        "borgian",
-        "borwen",
-        "to borrow",
-        "ta bòroe -s -d -ɯing"
-      ]
-    },
-    "standard": {
-      "name": "to borrow",
-      "etymology": [
-        {
-          "name": "borgian",
-          "origin": "Old English"
-        },
-        {
-          "name": "borwen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to borrow",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta bòroe -s -d -ɯing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "borwen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to borrow",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta bòroe -s -d -ɯing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta bòroes",
+          "pastTense": "ta bòroed"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/borrow#etymonline_v_15635",
-        "https://www.merriam-webster.com/dictionary/borrow",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5578",
-        "https://bosworthtoller.com/40743"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/borrow#etymonline_v_15635",
+      "https://www.merriam-webster.com/dictionary/borrow",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5578",
+      "https://bosworthtoller.com/40743"
+    ]
   }
 ]

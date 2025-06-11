@@ -1,263 +1,202 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "face",
-      "etymology": [
-        {
-          "name": "facere, facies",
-          "origin": "Latin"
-        },
-        {
-          "name": "facia",
-          "origin": "Vulgar Latin"
-        },
-        {
-          "name": "face",
-          "origin": "Old French"
-        },
-        {
-          "name": "fâce -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/face#etymonline_v_1056",
-        "https://www.anglo-norman.net/entry/face",
-        "https://latin-dictionary.net/definition/20174/facies-faciei",
-        "https://latin-dictionary.net/definition/20189/facio-facere-feci-factus"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "faceless",
-      "etymology": [
-        {
-          "name": "faceless",
-          "origin": "Modern English"
-        },
-        {
-          "name": "fâceless",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/faceless#etymonline_v_39082"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to face",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "face",
+    "etymology": [
+      {
+        "name": "facere, facies",
+        "origin": "Latin"
       },
-      "etymology": [
-        "face",
-        "ta fâce -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to face",
-      "etymology": [
-        {
-          "name": "face",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta fâce -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/face#etymonline_v_39080",
-        "https://www.etymonline.com/word/face#etymonline_v_1056"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "facia",
+        "origin": "Vulgar Latin"
+      },
+      {
+        "name": "face",
+        "origin": "Old French"
+      },
+      {
+        "name": "fâce -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/face#etymonline_v_1056",
+      "https://www.anglo-norman.net/entry/face",
+      "https://latin-dictionary.net/definition/20174/facies-faciei",
+      "https://latin-dictionary.net/definition/20189/facio-facere-feci-factus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "facial",
-      "etymology": [
-        {
-          "name": "facies",
-          "origin": "Latin"
-        },
-        {
-          "name": "facialis",
-          "origin": "Medieval Latin"
-        },
-        {
-          "name": "facial",
-          "origin": "French"
-        },
-        {
-          "name": "fâcial -s -ly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/facial#etymonline_v_32956",
-        "https://www.collinsdictionary.com/us/dictionary/french-english/facial",
-        "https://latin-dictionary.net/definition/20174/facies-faciei",
-        "https://www.merriam-webster.com/dictionary/facial#dictionary-entry-2",
-        "https://www.collinsdictionary.com/us/dictionary/french-english/facial",
-        "https://latin-dictionary.net/definition/20174/facies-faciei"
-      ],
-      "degrees": {
-        "positive": "cial",
-        "comparative": "s",
-        "superlative": "ly"
+    "name": "faceless",
+    "etymology": [
+      {
+        "name": "faceless",
+        "origin": "Modern English"
+      },
+      {
+        "name": "fâceless",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/faceless#etymonline_v_39082"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "facelift",
-      "etymology": [
-        {
-          "name": "facelift",
-          "origin": "Modern English"
-        },
-        {
-          "name": "fâcelift -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
+    "infinitive": "face",
+    "etymology": [
+      {
+        "name": "face",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta fâce -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta fâces",
+          "pastTense": "ta fâced",
+          "progressive": "ta fâcing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/face-lift#etymonline_v_32925"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/face#etymonline_v_39080",
+      "https://www.etymonline.com/word/face#etymonline_v_1056"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "faceoff",
-      "etymology": [
-        {
-          "name": "faceoff",
-          "origin": "Modern English"
-        },
-        {
-          "name": "fâce-off -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/face-off#etymonline_v_50452"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "facial",
+    "etymology": [
+      {
+        "name": "facies",
+        "origin": "Latin"
+      },
+      {
+        "name": "facialis",
+        "origin": "Medieval Latin"
+      },
+      {
+        "name": "facial",
+        "origin": "French"
+      },
+      {
+        "name": "fâcial -s -ly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "masculine noun"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/facial#etymonline_v_32956",
+      "https://www.collinsdictionary.com/us/dictionary/french-english/facial",
+      "https://latin-dictionary.net/definition/20174/facies-faciei",
+      "https://www.merriam-webster.com/dictionary/facial#dictionary-entry-2",
+      "https://www.collinsdictionary.com/us/dictionary/french-english/facial",
+      "https://latin-dictionary.net/definition/20174/facies-faciei"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "facet  -s (m n)",
-      "etymology": [
-        {
-          "name": "facette",
-          "origin": "French"
-        },
-        {
-          "name": "facet  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/facet#etymonline_v_1057",
-        "https://www.collinsdictionary.com/us/dictionary/french-english/facette"
-      ]
-    }
+    "name": "facelift",
+    "etymology": [
+      {
+        "name": "facelift",
+        "origin": "Modern English"
+      },
+      {
+        "name": "fâcelift -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/face-lift#etymonline_v_32925"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "façade",
-      "etymology": [
-        {
-          "name": "facia",
-          "origin": "Vulgar Latin"
-        },
-        {
-          "name": "faccia, facciata",
-          "origin": "Italian"
-        },
-        {
-          "name": "façade",
-          "origin": "French"
-        },
-        {
-          "name": "façade, façáds",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/facade#etymonline_v_1055",
-        "https://www.collinsdictionary.com/us/dictionary/french-english/fa%C3%A7ade",
-        "https://www.collinsdictionary.com/us/dictionary/italian-english/facciata",
-        "https://www.collinsdictionary.com/us/dictionary/italian-english/faccia"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "faceoff",
+    "etymology": [
+      {
+        "name": "faceoff",
+        "origin": "Modern English"
+      },
+      {
+        "name": "fâce-off -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/face-off#etymonline_v_50452"
+    ]
+  },
+  {
+    "name": "facet  -s (m n)",
+    "etymology": [
+      {
+        "name": "facette",
+        "origin": "French"
+      },
+      {
+        "name": "facet  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/facet#etymonline_v_1057",
+      "https://www.collinsdictionary.com/us/dictionary/french-english/facette"
+    ]
+  },
+  {
+    "name": "façade",
+    "etymology": [
+      {
+        "name": "facia",
+        "origin": "Vulgar Latin"
+      },
+      {
+        "name": "faccia, facciata",
+        "origin": "Italian"
+      },
+      {
+        "name": "façade",
+        "origin": "French"
+      },
+      {
+        "name": "façade, façáds",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/facade#etymonline_v_1055",
+      "https://www.collinsdictionary.com/us/dictionary/french-english/fa%C3%A7ade",
+      "https://www.collinsdictionary.com/us/dictionary/italian-english/facciata",
+      "https://www.collinsdictionary.com/us/dictionary/italian-english/faccia"
+    ]
   }
 ]

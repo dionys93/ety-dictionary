@@ -1,80 +1,60 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to feel",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to feel",
+    "etymology": [
+      {
+        "name": "felan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "felan",
-        "felen",
-        "to feel",
-        "ta fiele -s felt -ing"
-      ]
-    },
-    "standard": {
-      "name": "to feel",
-      "etymology": [
-        {
-          "name": "felan",
-          "origin": "Old English"
-        },
-        {
-          "name": "felen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to feel",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta fiele -s felt -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "felen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to feel",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta fiele -s felt -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta fieles"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/feel#etymonline_v_1196",
-        "https://www.merriam-webster.com/dictionary/feel#dictionary-entry-1",
-        "https://www.oed.com/dictionary/feel_v?tab=pronunciation#4572147",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15520",
-        "https://bosworthtoller.com/10247"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/feel#etymonline_v_1196",
+      "https://www.merriam-webster.com/dictionary/feel#dictionary-entry-1",
+      "https://www.oed.com/dictionary/feel_v?tab=pronunciation#4572147",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15520",
+      "https://bosworthtoller.com/10247"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "feel",
-      "etymology": [
-        {
-          "name": "feel",
-          "origin": "Modern English"
-        },
-        {
-          "name": "fiel -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/feel#etymonline_v_39318",
-        "https://www.etymonline.com/word/feel#etymonline_v_1196",
-        "https://www.merriam-webster.com/dictionary/feel#dictionary-entry-2",
-        "https://www.oed.com/dictionary/feel_n?tab=factsheet#4571631"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "feel",
+    "etymology": [
+      {
+        "name": "feel",
+        "origin": "Modern English"
+      },
+      {
+        "name": "fiel -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/feel#etymonline_v_39318",
+      "https://www.etymonline.com/word/feel#etymonline_v_1196",
+      "https://www.merriam-webster.com/dictionary/feel#dictionary-entry-2",
+      "https://www.oed.com/dictionary/feel_n?tab=factsheet#4571631"
+    ]
   }
 ]

@@ -1,71 +1,51 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "raid  -s (m n)",
-      "etymology": [
-        {
-          "name": "rad",
-          "origin": "Old English"
-        },
-        {
-          "name": "rade",
-          "origin": "Middle English"
-        },
-        {
-          "name": "raid  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/raid#etymonline_v_3303",
-        "https://www.merriam-webster.com/dictionary/raid#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37730",
-        "https://bosworthtoller.com/25443"
-      ]
-    }
+    "name": "raid  -s (m n)",
+    "etymology": [
+      {
+        "name": "rad",
+        "origin": "Old English"
+      },
+      {
+        "name": "rade",
+        "origin": "Middle English"
+      },
+      {
+        "name": "raid  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/raid#etymonline_v_3303",
+      "https://www.merriam-webster.com/dictionary/raid#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37730",
+      "https://bosworthtoller.com/25443"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to raid",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to raid",
+    "etymology": [
+      {
+        "name": "to raid",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to raid",
-        "ta raide -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to raid",
-      "etymology": [
-        {
-          "name": "to raid",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta raide -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta raide -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta raides",
+          "pastTense": "ta raided",
+          "progressive": "ta raiding"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/raid#etymonline_v_43877",
-        "https://www.etymonline.com/word/raid#etymonline_v_3303",
-        "https://www.merriam-webster.com/dictionary/raid#dictionary-entry-2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/raid#etymonline_v_43877",
+      "https://www.etymonline.com/word/raid#etymonline_v_3303",
+      "https://www.merriam-webster.com/dictionary/raid#dictionary-entry-2"
+    ]
   }
 ]

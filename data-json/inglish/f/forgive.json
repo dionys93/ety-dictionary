@@ -1,49 +1,35 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to forgive",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to forgive",
+    "etymology": [
+      {
+        "name": "forgiefan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "forgiefan",
-        "foryeven",
-        "to forgive",
-        "ta forguive -s forgâve forguiven -ing"
-      ]
-    },
-    "standard": {
-      "name": "to forgive",
-      "etymology": [
-        {
-          "name": "forgiefan",
-          "origin": "Old English"
-        },
-        {
-          "name": "foryeven",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to forgive",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta forguive -s forgâve forguiven -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "foryeven",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to forgive",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta forguive -s forgâve forguiven -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta forguives"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/forgive#etymonline_v_11804",
-        "https://www.oed.com/dictionary/forgive_v?tab=factsheet#3788258",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17381",
-        "https://bosworthtoller.com/11469"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/forgive#etymonline_v_11804",
+      "https://www.oed.com/dictionary/forgive_v?tab=factsheet#3788258",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17381",
+      "https://bosworthtoller.com/11469"
+    ]
   }
 ]

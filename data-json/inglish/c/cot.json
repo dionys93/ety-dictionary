@@ -1,85 +1,69 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "cot  -s (m n)",
-      "etymology": [
-        {
-          "name": "cot  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/cot#etymonline_v_36350",
-        "https://www.etymonline.com/word/cottage#etymonline_v_19140",
-        "https://www.merriam-webster.com/dictionary/cot#dictionary-entry-1",
-        "https://anglo-norman.net/entry/cotage_1",
-        "https://bosworthtoller.com/6620"
-      ]
-    }
+    "name": "cot  -s (m n)",
+    "etymology": [
+      {
+        "name": "cot  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/cot#etymonline_v_36350",
+      "https://www.etymonline.com/word/cottage#etymonline_v_19140",
+      "https://www.merriam-webster.com/dictionary/cot#dictionary-entry-1",
+      "https://anglo-norman.net/entry/cotage_1",
+      "https://bosworthtoller.com/6620"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "cottage  -s (m n)",
-      "etymology": [
-        {
-          "name": "cotage",
-          "origin": "Old French"
-        },
-        {
-          "name": "cottage  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/cottage#etymonline_v_19140",
-        "https://www.merriam-webster.com/dictionary/cottage",
-        "https://anglo-norman.net/entry/cotage_1",
-        "https://bosworthtoller.com/6620"
-      ]
-    }
+    "name": "cottage  -s (m n)",
+    "etymology": [
+      {
+        "name": "cotage",
+        "origin": "Old French"
+      },
+      {
+        "name": "cottage  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/cottage#etymonline_v_19140",
+      "https://www.merriam-webster.com/dictionary/cottage",
+      "https://anglo-norman.net/entry/cotage_1",
+      "https://bosworthtoller.com/6620"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "cot",
-      "etymology": [
-        {
-          "name": "खट्वा, khatva",
-          "origin": "Sanskrit"
-        },
-        {
-          "name": "खाट, khat",
-          "origin": "Inglish"
-        },
-        {
-          "name": "cot",
-          "origin": "Modern English"
-        },
-        {
-          "name": "caht -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/cot#etymonline_v_19136",
-        "https://www.merriam-webster.com/dictionary/cot#dictionary-entry-2",
-        "https://www.shabdkosh.com/dictionary/hindi-english/%E0%A4%96%E0%A4%BE%E0%A4%9F/%E0%A4%96%E0%A4%BE%E0%A4%9F-meaning-in-english",
-        "https://www.learnsanskrit.cc/translate?search=khatva&dir=au"
-      ]
-    }
+    "name": "cot",
+    "etymology": [
+      {
+        "name": "खट्वा, khatva",
+        "origin": "Sanskrit"
+      },
+      {
+        "name": "खाट, khat",
+        "origin": "Inglish"
+      },
+      {
+        "name": "cot",
+        "origin": "Modern English"
+      },
+      {
+        "name": "caht -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/cot#etymonline_v_19136",
+      "https://www.merriam-webster.com/dictionary/cot#dictionary-entry-2",
+      "https://www.shabdkosh.com/dictionary/hindi-english/%E0%A4%96%E0%A4%BE%E0%A4%9F/%E0%A4%96%E0%A4%BE%E0%A4%9F-meaning-in-english",
+      "https://www.learnsanskrit.cc/translate?search=khatva&dir=au"
+    ]
   }
 ]

@@ -1,79 +1,59 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "tank",
-      "etymology": [
-        {
-          "name": "estancar, tanque",
-          "origin": "Portuguese"
-        },
-        {
-          "name": "tank",
-          "origin": "Modern English"
-        },
-        {
-          "name": "tânc -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/tank#etymonline_v_4369",
-        "https://www.etymonline.com/word/tank#etymonline_v_55913",
-        "https://www.merriam-webster.com/dictionary/tank#dictionary-entry-1",
-        "https://www.oed.com/dictionary/tank_n1?tab=pronunciation#19258864",
-        "https://www.collinsdictionary.com/us/dictionary/portuguese-english/tanque",
-        "https://www.collinsdictionary.com/us/dictionary/portuguese-english/estancar"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "tank",
+    "etymology": [
+      {
+        "name": "estancar, tanque",
+        "origin": "Portuguese"
+      },
+      {
+        "name": "tank",
+        "origin": "Modern English"
+      },
+      {
+        "name": "tânc -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/tank#etymonline_v_4369",
+      "https://www.etymonline.com/word/tank#etymonline_v_55913",
+      "https://www.merriam-webster.com/dictionary/tank#dictionary-entry-1",
+      "https://www.oed.com/dictionary/tank_n1?tab=pronunciation#19258864",
+      "https://www.collinsdictionary.com/us/dictionary/portuguese-english/tanque",
+      "https://www.collinsdictionary.com/us/dictionary/portuguese-english/estancar"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to tank",
-      "conjugations": {
-        "thirdPerson": "cs",
-        "pastTense": "ed",
-        "progressive": "ing"
+    "infinitive": "to tank",
+    "etymology": [
+      {
+        "name": "to tank",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to tank",
-        "ta tânq -cs -ed -ing"
-      ]
-    },
-    "standard": {
-      "name": "to tank",
-      "etymology": [
-        {
-          "name": "to tank",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta tânq -cs -ed -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta tânq -cs -ed -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta tânqcs",
+          "pastTense": "ta tânqed",
+          "progressive": "ta tânqing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/tank#etymonline_v_24632",
-        "https://www.etymonline.com/word/tank#etymonline_v_4369",
-        "https://www.merriam-webster.com/dictionary/tank#dictionary-entry-2",
-        "https://www.oed.com/dictionary/tank_v2?tab=factsheet#19260944"
-      ],
-      "conjugations": {
-        "thirdPerson": "cs",
-        "pastTense": "ed",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/tank#etymonline_v_24632",
+      "https://www.etymonline.com/word/tank#etymonline_v_4369",
+      "https://www.merriam-webster.com/dictionary/tank#dictionary-entry-2",
+      "https://www.oed.com/dictionary/tank_v2?tab=factsheet#19260944"
+    ]
   }
 ]

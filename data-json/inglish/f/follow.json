@@ -1,119 +1,92 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to follow",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
+    "infinitive": "to follow",
+    "etymology": [
+      {
+        "name": "folgian, fylgian, fylgan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "folgian, fylgian, fylgan",
-        "folwen",
-        "to follow",
-        "ta fóloe -s -d -ɯing"
-      ]
-    },
-    "standard": {
-      "name": "to follow",
-      "etymology": [
-        {
-          "name": "folgian, fylgian, fylgan",
-          "origin": "Old English"
-        },
-        {
-          "name": "folwen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to follow",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta fóloe -s -d -ɯing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "folwen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to follow",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta fóloe -s -d -ɯing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta fóloes",
+          "pastTense": "ta fóloed"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/follow#etymonline_v_11743",
-        "https://www.merriam-webster.com/dictionary/follow#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16601",
-        "https://bosworthtoller.com/14460",
-        "https://bosworthtoller.com/12841",
-        "https://bosworthtoller.com/11152",
-        "https://bosworthtoller.com/45373"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/follow#etymonline_v_11743",
+      "https://www.merriam-webster.com/dictionary/follow#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16601",
+      "https://bosworthtoller.com/14460",
+      "https://bosworthtoller.com/12841",
+      "https://bosworthtoller.com/11152",
+      "https://bosworthtoller.com/45373"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "follow",
-      "etymology": [
-        {
-          "name": "follow",
-          "origin": "Modern English"
-        },
-        {
-          "name": "fólo -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/follow#dictionary-entry-2"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "follow",
+    "etymology": [
+      {
+        "name": "follow",
+        "origin": "Modern English"
+      },
+      {
+        "name": "fólo -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/follow#dictionary-entry-2"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "follower",
-      "etymology": [
-        {
-          "name": "folgere",
-          "origin": "Old English"
-        },
-        {
-          "name": "folwer",
-          "origin": "Middle English"
-        },
-        {
-          "name": "follower",
-          "origin": "Modern English"
-        },
-        {
-          "name": "fóloɯor -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/follower#etymonline_v_33333",
-        "https://www.merriam-webster.com/dictionary/follower",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16602/",
-        "https://bosworthtoller.com/11151"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "follower",
+    "etymology": [
+      {
+        "name": "folgere",
+        "origin": "Old English"
+      },
+      {
+        "name": "folwer",
+        "origin": "Middle English"
+      },
+      {
+        "name": "follower",
+        "origin": "Modern English"
+      },
+      {
+        "name": "fóloɯor -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/follower#etymonline_v_33333",
+      "https://www.merriam-webster.com/dictionary/follower",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16602/",
+      "https://bosworthtoller.com/11151"
+    ]
   }
 ]

@@ -1,116 +1,88 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "laugh",
-      "etymology": [
-        {
-          "name": "laugh",
-          "origin": "Modern English"
-        },
-        {
-          "name": "laff -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/laugh#etymonline_v_43149",
-        "https://www.etymonline.com/word/laugh#etymonline_v_6585",
-        "https://www.merriam-webster.com/dictionary/laugh#dictionary-entry-2"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to laugh",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "laugh",
+    "etymology": [
+      {
+        "name": "laugh",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "hlæhhan, hlehhan, hlihhan",
-        "laughen",
-        "to laugh",
-        "ta lafe -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to laugh",
-      "etymology": [
-        {
-          "name": "hlæhhan, hlehhan, hlihhan",
-          "origin": "Old English"
-        },
-        {
-          "name": "laughen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to laugh",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta lafe -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/laugh#etymonline_v_6585",
-        "https://www.merriam-webster.com/dictionary/laugh#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24826",
-        "https://bosworthtoller.com/19210"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "laff -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/laugh#etymonline_v_43149",
+      "https://www.etymonline.com/word/laugh#etymonline_v_6585",
+      "https://www.merriam-webster.com/dictionary/laugh#dictionary-entry-2"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "laughter",
-      "etymology": [
-        {
-          "name": "hleahtor",
-          "origin": "Old English"
-        },
-        {
-          "name": "laughter",
-          "origin": "Middle English"
-        },
-        {
-          "name": "laftor",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
+    "infinitive": "to laugh",
+    "etymology": [
+      {
+        "name": "hlæhhan, hlehhan, hlihhan",
+        "origin": "Old English"
+      },
+      {
+        "name": "laughen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to laugh",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta lafe -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta lafes",
+          "pastTense": "ta lafed",
+          "progressive": "ta lafing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/laughter#etymonline_v_30151",
-        "https://www.merriam-webster.com/dictionary/laughter",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24830",
-        "https://bosworthtoller.com/52679"
-      ],
-      "gender": "masculine",
-      "number": "singular"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/laugh#etymonline_v_6585",
+      "https://www.merriam-webster.com/dictionary/laugh#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24826",
+      "https://bosworthtoller.com/19210"
+    ]
+  },
+  {
+    "name": "laughter",
+    "etymology": [
+      {
+        "name": "hleahtor",
+        "origin": "Old English"
+      },
+      {
+        "name": "laughter",
+        "origin": "Middle English"
+      },
+      {
+        "name": "laftor",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/laughter#etymonline_v_30151",
+      "https://www.merriam-webster.com/dictionary/laughter",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24830",
+      "https://bosworthtoller.com/52679"
+    ]
   }
 ]

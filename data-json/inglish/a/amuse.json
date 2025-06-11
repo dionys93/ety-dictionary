@@ -1,104 +1,77 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to amuse",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to amuse",
+    "etymology": [
+      {
+        "name": "amuser",
+        "origin": "Old French"
       },
-      "etymology": [
-        "amuser",
-        "to amuse",
-        "to am̃use -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to amuse",
-      "etymology": [
-        {
-          "name": "amuser",
-          "origin": "Old French"
-        },
-        {
-          "name": "to amuse",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to am̃use -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to amuse",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to am̃use -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to am̃uses",
+          "pastTense": "to am̃used",
+          "progressive": "to am̃using"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/amuse#etymonline_v_11027",
-        "https://www.merriam-webster.com/dictionary/amuse",
-        "https://www.oed.com/dictionary/amuse_v?tab=factsheet#4700112",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/amuser/3135"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/amuse#etymonline_v_11027",
+      "https://www.merriam-webster.com/dictionary/amuse",
+      "https://www.oed.com/dictionary/amuse_v?tab=factsheet#4700112",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/amuser/3135"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "amusable",
-      "etymology": [
-        {
-          "name": "amusable",
-          "origin": "French"
-        },
-        {
-          "name": "am̃usable",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/amusable#etymonline_v_52307",
-        "https://www.oed.com/dictionary/amusable_adj?tab=factsheet#4697302"
-      ]
-    }
+    "name": "amusable",
+    "etymology": [
+      {
+        "name": "amusable",
+        "origin": "French"
+      },
+      {
+        "name": "am̃usable",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/amusable#etymonline_v_52307",
+      "https://www.oed.com/dictionary/amusable_adj?tab=factsheet#4697302"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "amusement",
-      "etymology": [
-        {
-          "name": "amusement",
-          "origin": "French"
-        },
-        {
-          "name": "am̃usement -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/amusement#etymonline_v_26219",
-        "https://www.merriam-webster.com/dictionary/amusement",
-        "https://www.oed.com/dictionary/amusement_n?tab=factsheet#4715354",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/amusement/3134"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "amusement",
+    "etymology": [
+      {
+        "name": "amusement",
+        "origin": "French"
+      },
+      {
+        "name": "am̃usement -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/amusement#etymonline_v_26219",
+      "https://www.merriam-webster.com/dictionary/amusement",
+      "https://www.oed.com/dictionary/amusement_n?tab=factsheet#4715354",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/amusement/3134"
+    ]
   }
 ]

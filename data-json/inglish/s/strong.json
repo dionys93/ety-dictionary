@@ -1,111 +1,89 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "strong",
-      "etymology": [
-        {
-          "name": "strang",
-          "origin": "Old English"
-        },
-        {
-          "name": "strong",
-          "origin": "Middle English"
-        },
-        {
-          "name": "strongue -r -st",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
+    "name": "strong",
+    "etymology": [
+      {
+        "name": "strang",
+        "origin": "Old English"
+      },
+      {
+        "name": "strong",
+        "origin": "Middle English"
+      },
+      {
+        "name": "strongue -r -st",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ],
+        "degrees": {
+          "positive": "strongue",
+          "comparative": "r",
+          "superlative": "st"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/strong#etymonline_v_22194",
-        "https://www.merriam-webster.com/dictionary/strong#dictionary-entry-1",
-        "https://www.oed.com/dictionary/strong_adj?tab=factsheet#20247598",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED43300"
-      ],
-      "degrees": {
-        "positive": "strongue",
-        "comparative": "r",
-        "superlative": "st"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/strong#etymonline_v_22194",
+      "https://www.merriam-webster.com/dictionary/strong#dictionary-entry-1",
+      "https://www.oed.com/dictionary/strong_adj?tab=factsheet#20247598",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED43300"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "strong",
-      "etymology": [
-        "strange",
-        "strong",
-        "strongue"
-      ]
-    },
-    "standard": {
-      "name": "strong",
-      "etymology": [
-        {
-          "name": "strange",
-          "origin": "Old English"
-        },
-        {
-          "name": "strong",
-          "origin": "Middle English"
-        },
-        {
-          "name": "strongue",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adverb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/strong#etymonline_v_24527",
-        "https://www.etymonline.com/word/strong#etymonline_v_22194",
-        "https://www.merriam-webster.com/dictionary/strong#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED43384",
-        "https://bosworthtoller.com/29107"
-      ]
-    }
+    "infinitive": "strong",
+    "etymology": [
+      {
+        "name": "strange",
+        "origin": "Old English"
+      },
+      {
+        "name": "strong",
+        "origin": "Middle English"
+      },
+      {
+        "name": "strongue",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adverb"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/strong#etymonline_v_24527",
+      "https://www.etymonline.com/word/strong#etymonline_v_22194",
+      "https://www.merriam-webster.com/dictionary/strong#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED43384",
+      "https://bosworthtoller.com/29107"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "strongly",
-      "etymology": [
-        {
-          "name": "stranglice",
-          "origin": "Old English"
-        },
-        {
-          "name": "strongli",
-          "origin": "Middle English"
-        },
-        {
-          "name": "strongly",
-          "origin": "Modern English"
-        },
-        {
-          "name": "stròngly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/strongly#etymonline_v_49201",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED43393",
-        "https://bosworthtoller.com/29112"
-      ]
-    }
+    "name": "strongly",
+    "etymology": [
+      {
+        "name": "stranglice",
+        "origin": "Old English"
+      },
+      {
+        "name": "strongli",
+        "origin": "Middle English"
+      },
+      {
+        "name": "strongly",
+        "origin": "Modern English"
+      },
+      {
+        "name": "stròngly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/strongly#etymonline_v_49201",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED43393",
+      "https://bosworthtoller.com/29112"
+    ]
   }
 ]

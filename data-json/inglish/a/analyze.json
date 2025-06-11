@@ -1,210 +1,167 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "analysis",
-      "etymology": [
-        {
-          "name": "ἀναλύειν, ἀνάλυσις",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "analysis",
-          "origin": "Latin"
-        },
-        {
-          "name": "anàlysiʃ, anàlysis",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/analysis#etymonline_v_13394",
-        "https://www.merriam-webster.com/dictionary/analysis",
-        "https://www.oed.com/dictionary/analysis_n?tab=factsheet#4213776",
-        "https://latin-dictionary.net/definition/3299/analysis-analysis",
-        "https://lsj.gr/wiki/%E1%BC%80%CE%BD%CE%AC%CE%BB%CF%85%CF%83%CE%B9%CF%82",
-        "https://lsj.gr/wiki/%E1%BC%80%CE%BD%CE%B1%CE%BB%CF%8D%CF%89"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "to analyze",
-      "etymology": [
-        {
-          "name": "analyse, analyser",
-          "origin": "French"
-        },
-        {
-          "name": "to analyze",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta analyse -s -d -ing",
-          "origin": "Inglish"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/analyze#etymonline_v_26245",
-        "https://www.merriam-webster.com/dictionary/analyze",
-        "https://www.oed.com/dictionary/analyse_v?tab=factsheet#4206983",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/analyser/3234",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/analyse/3232"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "analyst  -s (m n)",
-      "etymology": [
-        {
-          "name": "analysis",
-          "origin": "Latin"
-        },
-        {
-          "name": "analyse, analyser, analyste",
-          "origin": "French"
-        },
-        {
-          "name": "analyst  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/analyst#etymonline_v_26242",
-        "https://www.oed.com/dictionary/analyst_n?tab=factsheet#4215488",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/analyste/3237",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/analyser/3234",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/analyse/3232",
-        "https://latin-dictionary.net/definition/3299/analysis-analysis"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "analytical",
-      "etymology": [
-        {
-          "name": "ἀναλύειν, ἀνάλυτος, ἀναλυτικός",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "analyticus",
-          "origin": "Medieval Latin"
-        },
-        {
-          "name": "analytical",
-          "origin": "Modern English"
-        },
-        {
-          "name": "analỳtical",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/analytical#etymonline_v_26244",
-        "https://www.merriam-webster.com/dictionary/analytical",
-        "https://www.oed.com/dictionary/analytical_adj?tab=factsheet#4218161",
-        "https://lsj.gr/wiki/%E1%BC%80%CE%BD%CE%B1%CE%BB%CF%85%CF%84%CE%B9%CE%BA%CF%8C%CF%82",
-        "https://lsj.gr/wiki/%E1%BC%80%CE%BD%CE%AC%CE%BB%CF%85%CF%84%CE%BF%CF%82",
-        "https://lsj.gr/wiki/%E1%BC%80%CE%BD%CE%B1%CE%BB%CF%8D%CF%89"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "analytic",
-      "etymology": [
-        {
-          "name": "ἀναλύειν, ἀνάλυτος, ἀναλυτικός",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "analyticus, analytica",
-          "origin": "Medieval Latin"
-        },
-        {
-          "name": "analytic",
-          "origin": "Modern English"
-        },
-        {
-          "name": "analỳtic -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/analytic#etymonline_v_26243",
-        "https://www.etymonline.com/word/analytics#etymonline_v_44313",
-        "https://www.merriam-webster.com/dictionary/analytic",
-        "https://www.oed.com/dictionary/analytic_n?tab=factsheet#4216613",
-        "https://lsj.gr/wiki/%E1%BC%80%CE%BD%CE%B1%CE%BB%CF%85%CF%84%CE%B9%CE%BA%CF%8C%CF%82",
-        "https://lsj.gr/wiki/%E1%BC%80%CE%BD%CE%AC%CE%BB%CF%85%CF%84%CE%BF%CF%82",
-        "https://lsj.gr/wiki/%E1%BC%80%CE%BD%CE%B1%CE%BB%CF%8D%CF%89"
-      ],
-      "degrees": {
-        "positive": "tic",
-        "comparative": "s"
+    "name": "analysis",
+    "etymology": [
+      {
+        "name": "ἀναλύειν, ἀνάλυσις",
+        "origin": "Ancient Greek"
+      },
+      {
+        "name": "analysis",
+        "origin": "Latin"
+      },
+      {
+        "name": "anàlysiʃ, anàlysis",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/analysis#etymonline_v_13394",
+      "https://www.merriam-webster.com/dictionary/analysis",
+      "https://www.oed.com/dictionary/analysis_n?tab=factsheet#4213776",
+      "https://latin-dictionary.net/definition/3299/analysis-analysis",
+      "https://lsj.gr/wiki/%E1%BC%80%CE%BD%CE%AC%CE%BB%CF%85%CF%83%CE%B9%CF%82",
+      "https://lsj.gr/wiki/%E1%BC%80%CE%BD%CE%B1%CE%BB%CF%8D%CF%89"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to analytically",
-      "etymology": [
-        "analytically",
-        "analỳticly"
-      ]
-    },
-    "standard": {
-      "name": "to analytically",
-      "etymology": [
-        {
-          "name": "analytically",
-          "origin": "Modern English"
-        },
-        {
-          "name": "analỳticly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adverb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/analytically",
-        "https://www.oed.com/dictionary/analytically_adv?tab=factsheet#4219329"
-      ]
-    }
+    "name": "to analyze",
+    "etymology": [
+      {
+        "name": "analyse, analyser",
+        "origin": "French"
+      },
+      {
+        "name": "to analyze",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta analyse -s -d -ing",
+        "origin": "Inglish"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/analyze#etymonline_v_26245",
+      "https://www.merriam-webster.com/dictionary/analyze",
+      "https://www.oed.com/dictionary/analyse_v?tab=factsheet#4206983",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/analyser/3234",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/analyse/3232"
+    ]
+  },
+  {
+    "name": "analyst  -s (m n)",
+    "etymology": [
+      {
+        "name": "analysis",
+        "origin": "Latin"
+      },
+      {
+        "name": "analyse, analyser, analyste",
+        "origin": "French"
+      },
+      {
+        "name": "analyst  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/analyst#etymonline_v_26242",
+      "https://www.oed.com/dictionary/analyst_n?tab=factsheet#4215488",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/analyste/3237",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/analyser/3234",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/analyse/3232",
+      "https://latin-dictionary.net/definition/3299/analysis-analysis"
+    ]
+  },
+  {
+    "name": "analytical",
+    "etymology": [
+      {
+        "name": "ἀναλύειν, ἀνάλυτος, ἀναλυτικός",
+        "origin": "Ancient Greek"
+      },
+      {
+        "name": "analyticus",
+        "origin": "Medieval Latin"
+      },
+      {
+        "name": "analytical",
+        "origin": "Modern English"
+      },
+      {
+        "name": "analỳtical",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/analytical#etymonline_v_26244",
+      "https://www.merriam-webster.com/dictionary/analytical",
+      "https://www.oed.com/dictionary/analytical_adj?tab=factsheet#4218161",
+      "https://lsj.gr/wiki/%E1%BC%80%CE%BD%CE%B1%CE%BB%CF%85%CF%84%CE%B9%CE%BA%CF%8C%CF%82",
+      "https://lsj.gr/wiki/%E1%BC%80%CE%BD%CE%AC%CE%BB%CF%85%CF%84%CE%BF%CF%82",
+      "https://lsj.gr/wiki/%E1%BC%80%CE%BD%CE%B1%CE%BB%CF%8D%CF%89"
+    ]
+  },
+  {
+    "name": "analytic",
+    "etymology": [
+      {
+        "name": "ἀναλύειν, ἀνάλυτος, ἀναλυτικός",
+        "origin": "Ancient Greek"
+      },
+      {
+        "name": "analyticus, analytica",
+        "origin": "Medieval Latin"
+      },
+      {
+        "name": "analytic",
+        "origin": "Modern English"
+      },
+      {
+        "name": "analỳtic -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "feminine noun"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/analytic#etymonline_v_26243",
+      "https://www.etymonline.com/word/analytics#etymonline_v_44313",
+      "https://www.merriam-webster.com/dictionary/analytic",
+      "https://www.oed.com/dictionary/analytic_n?tab=factsheet#4216613",
+      "https://lsj.gr/wiki/%E1%BC%80%CE%BD%CE%B1%CE%BB%CF%85%CF%84%CE%B9%CE%BA%CF%8C%CF%82",
+      "https://lsj.gr/wiki/%E1%BC%80%CE%BD%CE%AC%CE%BB%CF%85%CF%84%CE%BF%CF%82",
+      "https://lsj.gr/wiki/%E1%BC%80%CE%BD%CE%B1%CE%BB%CF%8D%CF%89"
+    ]
+  },
+  {
+    "infinitive": "analytically",
+    "etymology": [
+      {
+        "name": "analytically",
+        "origin": "Modern English"
+      },
+      {
+        "name": "analỳticly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adverb"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/analytically",
+      "https://www.oed.com/dictionary/analytically_adv?tab=factsheet#4219329"
+    ]
   }
 ]

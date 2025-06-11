@@ -1,41 +1,35 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "crayfish, crawfish",
-      "etymology": [
-        {
-          "name": "crevice, escrevice",
-          "origin": "Old French"
-        },
-        {
-          "name": "crevis",
-          "origin": "Middle English"
-        },
-        {
-          "name": "crayfish, crawfish",
-          "origin": "Modern English"
-        },
-        {
-          "name": "créfish, craufish -es",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/crayfish#etymonline_v_314",
-        "https://www.etymonline.com/word/crawfish#etymonline_v_312",
-        "https://www.merriam-webster.com/dictionary/crayfish",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10308",
-        "https://www.anglo-norman.net/entry/escreveice"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "crayfish, crawfish",
+    "etymology": [
+      {
+        "name": "crevice, escrevice",
+        "origin": "Old French"
+      },
+      {
+        "name": "crevis",
+        "origin": "Middle English"
+      },
+      {
+        "name": "crayfish, crawfish",
+        "origin": "Modern English"
+      },
+      {
+        "name": "créfish, craufish -es",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/crayfish#etymonline_v_314",
+      "https://www.etymonline.com/word/crawfish#etymonline_v_312",
+      "https://www.merriam-webster.com/dictionary/crayfish",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10308",
+      "https://www.anglo-norman.net/entry/escreveice"
+    ]
   }
 ]

@@ -1,114 +1,87 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to bellow",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
+    "infinitive": "to bellow",
+    "etymology": [
+      {
+        "name": "bylgan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "bylgan",
-        "belwen",
-        "to bellow",
-        "ta bèloe -s -d -ɯing"
-      ]
-    },
-    "standard": {
-      "name": "to bellow",
-      "etymology": [
-        {
-          "name": "bylgan",
-          "origin": "Old English"
-        },
-        {
-          "name": "belwen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to bellow",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta bèloe -s -d -ɯing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "belwen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to bellow",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta bèloe -s -d -ɯing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta bèloes",
+          "pastTense": "ta bèloed"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bellow#etymonline_v_8287",
-        "https://www.merriam-webster.com/dictionary/bellow#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/bellow#word-history",
-        "https://www.oed.com/dictionary/bellow_v?tab=factsheet#23690092",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4022",
-        "https://bosworthtoller.com/41198",
-        "https://bosworthtoller.com/5560"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bellow#etymonline_v_8287",
+      "https://www.merriam-webster.com/dictionary/bellow#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/bellow#word-history",
+      "https://www.oed.com/dictionary/bellow_v?tab=factsheet#23690092",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4022",
+      "https://bosworthtoller.com/41198",
+      "https://bosworthtoller.com/5560"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "bellow",
-      "etymology": [
-        {
-          "name": "bellow",
-          "origin": "Modern English"
-        },
-        {
-          "name": "bèlo -s",
-          "origin": "Inglish"
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/bellow#dictionary-entry-1",
-        "https://www.oed.com/dictionary/bellow_n?tab=factsheet#23689042"
-      ]
-    }
+    "name": "bellow",
+    "etymology": [
+      {
+        "name": "bellow",
+        "origin": "Modern English"
+      },
+      {
+        "name": "bèlo -s",
+        "origin": "Inglish"
+      }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/bellow#dictionary-entry-1",
+      "https://www.oed.com/dictionary/bellow_n?tab=factsheet#23689042"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "bellows",
-      "etymology": [
-        {
-          "name": "belg",
-          "origin": "Old English"
-        },
-        {
-          "name": "belu, belwes",
-          "origin": "Middle English"
-        },
-        {
-          "name": "bellows",
-          "origin": "Modern English"
-        },
-        {
-          "name": "belos",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bellows",
-        "https://www.oed.com/dictionary/bellows_n?tab=factsheet#23698075",
-        "https://bosworthtoller.com/39887"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "bellows",
+    "etymology": [
+      {
+        "name": "belg",
+        "origin": "Old English"
+      },
+      {
+        "name": "belu, belwes",
+        "origin": "Middle English"
+      },
+      {
+        "name": "bellows",
+        "origin": "Modern English"
+      },
+      {
+        "name": "belos",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bellows",
+      "https://www.oed.com/dictionary/bellows_n?tab=factsheet#23698075",
+      "https://bosworthtoller.com/39887"
+    ]
   }
 ]

@@ -1,181 +1,142 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to animate",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to animate",
+    "etymology": [
+      {
+        "name": "anima, animare, animatus",
+        "origin": "Latin"
       },
-      "etymology": [
-        "anima, animare, animatus",
-        "to animate",
-        "ta animete -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to animate",
-      "etymology": [
-        {
-          "name": "anima, animare, animatus",
-          "origin": "Latin"
-        },
-        {
-          "name": "to animate",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta animete -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to animate",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta animete -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta animetes",
+          "pastTense": "ta animeted",
+          "progressive": "ta animeting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/animate#etymonline_v_13455",
-        "https://www.merriam-webster.com/dictionary/animate#dictionary-entry-2",
-        "https://www.oed.com/dictionary/animate_v?tab=factsheet#3098896",
-        "https://latin-dictionary.net/definition/3518/animo-animare-animavi-animatus",
-        "https://latin-dictionary.net/definition/3497/anima-animae"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/animate#etymonline_v_13455",
+      "https://www.merriam-webster.com/dictionary/animate#dictionary-entry-2",
+      "https://www.oed.com/dictionary/animate_v?tab=factsheet#3098896",
+      "https://latin-dictionary.net/definition/3518/animo-animare-animavi-animatus",
+      "https://latin-dictionary.net/definition/3497/anima-animae"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "animate",
-      "etymology": [
-        {
-          "name": "anima, animare, animatus",
-          "origin": "Latin"
-        },
-        {
-          "name": "animat",
-          "origin": "Middle English"
-        },
-        {
-          "name": "animate",
-          "origin": "Modern English"
-        },
-        {
-          "name": "animat -ly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
+    "name": "animate",
+    "etymology": [
+      {
+        "name": "anima, animare, animatus",
+        "origin": "Latin"
+      },
+      {
+        "name": "animat",
+        "origin": "Middle English"
+      },
+      {
+        "name": "animate",
+        "origin": "Modern English"
+      },
+      {
+        "name": "animat -ly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ],
+        "degrees": {
+          "positive": "animat",
+          "comparative": "ly"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/animate#etymonline_v_41426",
-        "https://www.merriam-webster.com/dictionary/animate#dictionary-entry-1",
-        "https://www.oed.com/dictionary/animate_adj?tab=factsheet#3097989",
-        "https://latin-dictionary.net/definition/3518/animo-animare-animavi-animatus",
-        "https://latin-dictionary.net/definition/3497/anima-animae"
-      ],
-      "degrees": {
-        "positive": "animat",
-        "comparative": "ly"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/animate#etymonline_v_41426",
+      "https://www.merriam-webster.com/dictionary/animate#dictionary-entry-1",
+      "https://www.oed.com/dictionary/animate_adj?tab=factsheet#3097989",
+      "https://latin-dictionary.net/definition/3518/animo-animare-animavi-animatus",
+      "https://latin-dictionary.net/definition/3497/anima-animae"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "animare, animator",
-      "etymology": [
-        {
-          "name": "animare, animator",
-          "origin": "Latin"
-        },
-        {
-          "name": "animaitor -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/animator#etymonline_v_26295",
-        "https://www.etymonline.com/word/animate#etymonline_v_13455",
-        "https://www.oed.com/dictionary/animator_n?tab=factsheet#3114351",
-        "https://latin-dictionary.net/definition/3518/animo-animare-animavi-animatus"
-      ],
-      "number": "plural"
-    }
+    "name": "animare, animator",
+    "etymology": [
+      {
+        "name": "animare, animator",
+        "origin": "Latin"
+      },
+      {
+        "name": "animaitor -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/animator#etymonline_v_26295",
+      "https://www.etymonline.com/word/animate#etymonline_v_13455",
+      "https://www.oed.com/dictionary/animator_n?tab=factsheet#3114351",
+      "https://latin-dictionary.net/definition/3518/animo-animare-animavi-animatus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "animation",
-      "etymology": [
-        {
-          "name": "anima, animare, animationem",
-          "origin": "Latin"
-        },
-        {
-          "name": "animation",
-          "origin": "Modern English"
-        },
-        {
-          "name": "animâcion -s",
-          "origin": "Inglish"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/animation#etymonline_v_26294",
-        "https://www.oed.com/dictionary/animation_n?tab=factsheet#3107555",
-        "https://latin-dictionary.net/definition/3512/animatio-animationis",
-        "https://latin-dictionary.net/definition/3518/animo-animare-animavi-animatus",
-        "https://latin-dictionary.net/definition/3497/anima-animae"
-      ]
-    }
+    "name": "animation",
+    "etymology": [
+      {
+        "name": "anima, animare, animationem",
+        "origin": "Latin"
+      },
+      {
+        "name": "animation",
+        "origin": "Modern English"
+      },
+      {
+        "name": "animâcion -s",
+        "origin": "Inglish"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/animation#etymonline_v_26294",
+      "https://www.oed.com/dictionary/animation_n?tab=factsheet#3107555",
+      "https://latin-dictionary.net/definition/3512/animatio-animationis",
+      "https://latin-dictionary.net/definition/3518/animo-animare-animavi-animatus",
+      "https://latin-dictionary.net/definition/3497/anima-animae"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "anime",
-      "etymology": [
-        {
-          "name": "アニメ",
-          "origin": "Japanese"
-        },
-        {
-          "name": "anime",
-          "origin": "Modern English"
-        },
-        {
-          "name": "animey -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/anime#etymonline_v_13456",
-        "https://www.oed.com/dictionary/anime_n3?tab=factsheet#11896615",
-        "https://jisho.org/word/%E3%82%A2%E3%83%8B%E3%83%A1"
-      ],
-      "number": "plural"
-    }
+    "name": "anime",
+    "etymology": [
+      {
+        "name": "アニメ",
+        "origin": "Japanese"
+      },
+      {
+        "name": "anime",
+        "origin": "Modern English"
+      },
+      {
+        "name": "animey -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/anime#etymonline_v_13456",
+      "https://www.oed.com/dictionary/anime_n3?tab=factsheet#11896615",
+      "https://jisho.org/word/%E3%82%A2%E3%83%8B%E3%83%A1"
+    ]
   }
 ]

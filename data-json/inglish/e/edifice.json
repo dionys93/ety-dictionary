@@ -1,125 +1,97 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "edifice",
-      "etymology": [
-        {
-          "name": "aedes, aedis + facere, aedificare, aedificium",
-          "origin": "Latin"
-        },
-        {
-          "name": "edifice",
-          "origin": "Old French"
-        },
-        {
-          "name": "èdifice -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/edifice#etymonline_v_999",
-        "https://www.anglo-norman.net/entry/edifice",
-        "https://latin-dictionary.net/definition/1838/aedificium-aedifici-i",
-        "https://latin-dictionary.net/definition/1839/aedifico-aedificare-aedificavi-aedificatus",
-        "https://latin-dictionary.net/definition/1824/aedes-aedis"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to edify",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "i"
+    "name": "edifice",
+    "etymology": [
+      {
+        "name": "aedes, aedis + facere, aedificare, aedificium",
+        "origin": "Latin"
       },
-      "etymology": [
-        "aedificare",
-        "edefiier",
-        "to edify",
-        "ta edifae -s -d -ïng"
-      ]
-    },
-    "standard": {
-      "name": "to edify",
-      "etymology": [
-        {
-          "name": "aedificare",
-          "origin": "Latin"
-        },
-        {
-          "name": "edefiier",
-          "origin": "Old French"
-        },
-        {
-          "name": "to edify",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta edifae -s -d -ïng",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/edify#etymonline_v_1000",
-        "https://www.merriam-webster.com/dictionary/edify",
-        "https://www.anglo-norman.net/entry/edifier",
-        "https://latin-dictionary.net/definition/1839/aedifico-aedificare-aedificavi-aedificatus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "i"
+      {
+        "name": "edifice",
+        "origin": "Old French"
+      },
+      {
+        "name": "èdifice -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/edifice#etymonline_v_999",
+      "https://www.anglo-norman.net/entry/edifice",
+      "https://latin-dictionary.net/definition/1838/aedificium-aedifici-i",
+      "https://latin-dictionary.net/definition/1839/aedifico-aedificare-aedificavi-aedificatus",
+      "https://latin-dictionary.net/definition/1824/aedes-aedis"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "edification",
-      "etymology": [
-        {
-          "name": "aedificationem",
-          "origin": "Latin"
-        },
-        {
-          "name": "edificacion",
-          "origin": "Old French"
-        },
-        {
-          "name": "edification",
-          "origin": "Modern English"
-        },
-        {
-          "name": "edificâcion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
+    "infinitive": "to edify",
+    "etymology": [
+      {
+        "name": "aedificare",
+        "origin": "Latin"
+      },
+      {
+        "name": "edefiier",
+        "origin": "Old French"
+      },
+      {
+        "name": "to edify",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta edifae -s -d -ïng",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta edifaes",
+          "pastTense": "ta edifaed",
+          "progressive": "ta edifaei"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/edification#etymonline_v_29709",
-        "https://www.anglo-norman.net/entry/edification",
-        "https://latin-dictionary.net/definition/1829/aedificatio-aedificationis"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/edify#etymonline_v_1000",
+      "https://www.merriam-webster.com/dictionary/edify",
+      "https://www.anglo-norman.net/entry/edifier",
+      "https://latin-dictionary.net/definition/1839/aedifico-aedificare-aedificavi-aedificatus"
+    ]
+  },
+  {
+    "name": "edification",
+    "etymology": [
+      {
+        "name": "aedificationem",
+        "origin": "Latin"
+      },
+      {
+        "name": "edificacion",
+        "origin": "Old French"
+      },
+      {
+        "name": "edification",
+        "origin": "Modern English"
+      },
+      {
+        "name": "edificâcion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/edification#etymonline_v_29709",
+      "https://www.anglo-norman.net/entry/edification",
+      "https://latin-dictionary.net/definition/1829/aedificatio-aedificationis"
+    ]
   }
 ]

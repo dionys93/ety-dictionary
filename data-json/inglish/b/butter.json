@@ -1,96 +1,75 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "butter",
-      "etymology": [
-        {
-          "name": "βοῦς, τυρός, βούτυρον",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "butyron",
-          "origin": "Latin"
-        },
-        {
-          "name": "butere",
-          "origin": "Old English"
-        },
-        {
-          "name": "butter",
-          "origin": "Modern English"
-        },
-        {
-          "name": "buttre, butters",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/butter#etymonline_v_18151",
-        "https://www.merriam-webster.com/dictionary/butter#dictionary-entry-1",
-        "https://www.oed.com/dictionary/butter_n1?tab=meaning_and_use#11467625",
-        "https://www.oed.com/dictionary/butter_n1?tab=pronunciation#11467625",
-        "https://bosworthtoller.com/5508",
-        "https://latin-dictionary.net/definition/7167/butyron-butyri",
-        "https://lsj.gr/wiki/%CE%B2%CE%BF%CF%8D%CF%84%CF%85%CF%81%CE%BF%CE%BD",
-        "https://lsj.gr/wiki/%CF%84%CF%85%CF%81%CF%8C%CF%82",
-        "https://lsj.gr/wiki/%CE%B2%CE%BF%E1%BF%A6%CF%82"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "butter",
+    "etymology": [
+      {
+        "name": "βοῦς, τυρός, βούτυρον",
+        "origin": "Ancient Greek"
+      },
+      {
+        "name": "butyron",
+        "origin": "Latin"
+      },
+      {
+        "name": "butere",
+        "origin": "Old English"
+      },
+      {
+        "name": "butter",
+        "origin": "Modern English"
+      },
+      {
+        "name": "buttre, butters",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/butter#etymonline_v_18151",
+      "https://www.merriam-webster.com/dictionary/butter#dictionary-entry-1",
+      "https://www.oed.com/dictionary/butter_n1?tab=meaning_and_use#11467625",
+      "https://www.oed.com/dictionary/butter_n1?tab=pronunciation#11467625",
+      "https://bosworthtoller.com/5508",
+      "https://latin-dictionary.net/definition/7167/butyron-butyri",
+      "https://lsj.gr/wiki/%CE%B2%CE%BF%CF%8D%CF%84%CF%85%CF%81%CE%BF%CE%BD",
+      "https://lsj.gr/wiki/%CF%84%CF%85%CF%81%CF%8C%CF%82",
+      "https://lsj.gr/wiki/%CE%B2%CE%BF%E1%BF%A6%CF%82"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to butter",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ering"
+    "infinitive": "to butter",
+    "etymology": [
+      {
+        "name": "buterian",
+        "origin": "Old English"
       },
-      "etymology": [
-        "buterian",
-        "to butter",
-        "ta buttre -s -d -ering"
-      ]
-    },
-    "standard": {
-      "name": "to butter",
-      "etymology": [
-        {
-          "name": "buterian",
-          "origin": "Old English"
-        },
-        {
-          "name": "to butter",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta buttre -s -d -ering",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to butter",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta buttre -s -d -ering",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta buttres",
+          "pastTense": "ta buttred",
+          "progressive": "ta buttreering"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/butter#etymonline_v_46044",
-        "https://www.merriam-webster.com/dictionary/butter#dictionary-entry-2",
-        "https://www.oed.com/dictionary/butter_v?tab=factsheet#11474626",
-        "https://bosworthtoller.com/047376",
-        "https://bosworthtoller.com/41163"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ering"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/butter#etymonline_v_46044",
+      "https://www.merriam-webster.com/dictionary/butter#dictionary-entry-2",
+      "https://www.oed.com/dictionary/butter_v?tab=factsheet#11474626",
+      "https://bosworthtoller.com/047376",
+      "https://bosworthtoller.com/41163"
+    ]
   }
 ]

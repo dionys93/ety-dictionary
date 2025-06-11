@@ -1,75 +1,55 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "ladle",
-      "etymology": [
-        {
-          "name": "hladan, hlædel",
-          "origin": "Old English"
-        },
-        {
-          "name": "ladle",
-          "origin": "Modern English"
-        },
-        {
-          "name": "lâdle, lâduls",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/ladle",
-        "https://www.oed.com/dictionary/ladle_n?tab=factsheet#39877822",
-        "https://bosworthtoller.com/52637",
-        "https://bosworthtoller.com/52634"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "ladle",
+    "etymology": [
+      {
+        "name": "hladan, hlædel",
+        "origin": "Old English"
+      },
+      {
+        "name": "ladle",
+        "origin": "Modern English"
+      },
+      {
+        "name": "lâdle, lâduls",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/ladle",
+      "https://www.oed.com/dictionary/ladle_n?tab=factsheet#39877822",
+      "https://bosworthtoller.com/52637",
+      "https://bosworthtoller.com/52634"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to ladle",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to ladle",
+    "etymology": [
+      {
+        "name": "to ladle",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to ladle",
-        "ta lâdle -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to ladle",
-      "etymology": [
-        {
-          "name": "to ladle",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta lâdle -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta lâdle -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta lâdles",
+          "pastTense": "ta lâdled",
+          "progressive": "ta lâdling"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/ladle",
-        "https://www.oed.com/dictionary/ladle_v?tab=factsheet#39878430"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/ladle",
+      "https://www.oed.com/dictionary/ladle_v?tab=factsheet#39878430"
+    ]
   }
 ]

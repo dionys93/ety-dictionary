@@ -1,123 +1,94 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to equip",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to equip",
+    "etymology": [
+      {
+        "name": "skipa",
+        "origin": "Old Norse"
       },
-      "etymology": [
-        "skipa",
-        "esquiper",
-        "équiper",
-        "to equip",
-        "to equìpe -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to equip",
-      "etymology": [
-        {
-          "name": "skipa",
-          "origin": "Old Norse"
-        },
-        {
-          "name": "esquiper",
-          "origin": "Old French"
-        },
-        {
-          "name": "équiper",
-          "origin": "French"
-        },
-        {
-          "name": "to equip",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to equìpe -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "esquiper",
+        "origin": "Old French"
+      },
+      {
+        "name": "équiper",
+        "origin": "French"
+      },
+      {
+        "name": "to equip",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to equìpe -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to equìpes",
+          "pastTense": "to equìped",
+          "progressive": "to equìping"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/equip",
-        "https://www.oed.com/dictionary/equip_v?tab=factsheet#5375653",
-        "https://www.littre.org/definition/%C3%A9quiper",
-        "https://old-norse.net/html/s.php#skipa"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/equip",
+      "https://www.oed.com/dictionary/equip_v?tab=factsheet#5375653",
+      "https://www.littre.org/definition/%C3%A9quiper",
+      "https://old-norse.net/html/s.php#skipa"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "equipment",
-      "etymology": [
-        {
-          "name": "equipment",
-          "origin": "Modern English"
-        },
-        {
-          "name": "equìpment -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/equipment",
-        "https://www.oed.com/dictionary/equipment_n?tab=factsheet#5378431"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "equipment",
+    "etymology": [
+      {
+        "name": "equipment",
+        "origin": "Modern English"
+      },
+      {
+        "name": "equìpment -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/equipment",
+      "https://www.oed.com/dictionary/equipment_n?tab=factsheet#5378431"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "equiparation",
-      "etymology": [
-        {
-          "name": "aequus, aequipar, aequiparare, aequiparationem",
-          "origin": "Latin"
-        },
-        {
-          "name": "equiparation",
-          "origin": "Modern English"
-        },
-        {
-          "name": "equiparâcion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/equiparation#etymonline_v_47007",
-        "https://www.etymonline.com/word/equal#etymonline_v_8806",
-        "https://www.etymonline.com/word/par#etymonline_v_7161",
-        "https://www.oed.com/dictionary/equiparation_n?tab=factsheet#5377820",
-        "https://www.collinsdictionary.com/us/dictionary/english/equiparation",
-        "https://www.collinsdictionary.com/us/dictionary/english/equiparate",
-        "https://trends.google.com/trends/explore?date=all&q=equiparation&hl=en"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "equiparation",
+    "etymology": [
+      {
+        "name": "aequus, aequipar, aequiparare, aequiparationem",
+        "origin": "Latin"
+      },
+      {
+        "name": "equiparation",
+        "origin": "Modern English"
+      },
+      {
+        "name": "equiparâcion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/equiparation#etymonline_v_47007",
+      "https://www.etymonline.com/word/equal#etymonline_v_8806",
+      "https://www.etymonline.com/word/par#etymonline_v_7161",
+      "https://www.oed.com/dictionary/equiparation_n?tab=factsheet#5377820",
+      "https://www.collinsdictionary.com/us/dictionary/english/equiparation",
+      "https://www.collinsdictionary.com/us/dictionary/english/equiparate",
+      "https://trends.google.com/trends/explore?date=all&q=equiparation&hl=en"
+    ]
   }
 ]

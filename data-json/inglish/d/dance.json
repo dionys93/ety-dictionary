@@ -1,76 +1,54 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to dance",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to dance",
+    "etymology": [
+      {
+        "name": "dancier",
+        "origin": "Old French"
       },
-      "etymology": [
-        "dancier",
-        "dauncen",
-        "to dance",
-        "ta dance -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to dance",
-      "etymology": [
-        {
-          "name": "dancier",
-          "origin": "Old French"
-        },
-        {
-          "name": "dauncen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to dance",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta dance -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "dauncen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to dance",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta dance -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta dances",
+          "pastTense": "ta danced",
+          "progressive": "ta dancing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/dance#etymonline_v_756",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10587",
-        "https://www.anglo-norman.net/entry/dancer_2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/dance#etymonline_v_756",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10587",
+      "https://www.anglo-norman.net/entry/dancer_2"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "dance  -s (m n)",
-      "etymology": [
-        {
-          "name": "dance, daunce",
-          "origin": "Middle English"
-        },
-        {
-          "name": "dance  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/dance#etymonline_v_45282",
-        "https://www.etymonline.com/word/dance#etymonline_v_756",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10586/track?counter=1&search_id=27739698"
-      ]
-    }
+    "name": "dance  -s (m n)",
+    "etymology": [
+      {
+        "name": "dance, daunce",
+        "origin": "Middle English"
+      },
+      {
+        "name": "dance  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/dance#etymonline_v_45282",
+      "https://www.etymonline.com/word/dance#etymonline_v_756",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10586/track?counter=1&search_id=27739698"
+    ]
   }
 ]

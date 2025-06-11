@@ -1,75 +1,63 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "manner",
-      "etymology": [
-        {
-          "name": "manus, manuarius",
-          "origin": "Latin"
-        },
-        {
-          "name": "manaria",
-          "origin": "Vulgar Latin"
-        },
-        {
-          "name": "maniere, manere",
-          "origin": "Old French"
-        },
-        {
-          "name": "manner",
-          "origin": "Modern English"
-        },
-        {
-          "name": "manar -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/manner#etymonline_v_6814",
-        "https://www.etymonline.com/word/manners#etymonline_v_31689",
-        "https://www.oed.com/dictionary/manner_n?tab=factsheet#37939372",
-        "https://www.merriam-webster.com/dictionary/manner",
-        "https://anglo-norman.net/entry/maneire",
-        "https://latin-dictionary.net/definition/26419/manus-manus"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "manner",
+    "etymology": [
+      {
+        "name": "manus, manuarius",
+        "origin": "Latin"
+      },
+      {
+        "name": "manaria",
+        "origin": "Vulgar Latin"
+      },
+      {
+        "name": "maniere, manere",
+        "origin": "Old French"
+      },
+      {
+        "name": "manner",
+        "origin": "Modern English"
+      },
+      {
+        "name": "manar -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/manner#etymonline_v_6814",
+      "https://www.etymonline.com/word/manners#etymonline_v_31689",
+      "https://www.oed.com/dictionary/manner_n?tab=factsheet#37939372",
+      "https://www.merriam-webster.com/dictionary/manner",
+      "https://anglo-norman.net/entry/maneire",
+      "https://latin-dictionary.net/definition/26419/manus-manus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "mannerism",
-      "etymology": [
-        {
-          "name": "mannerism",
-          "origin": "Modern English"
-        },
-        {
-          "name": "manarism -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/mannerism",
-        "https://www.etymonline.com/word/manner#etymonline_v_6814",
-        "https://www.oed.com/dictionary/mannerism_n?tab=factsheet#37945600"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "mannerism",
+    "etymology": [
+      {
+        "name": "mannerism",
+        "origin": "Modern English"
+      },
+      {
+        "name": "manarism -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/mannerism",
+      "https://www.etymonline.com/word/manner#etymonline_v_6814",
+      "https://www.oed.com/dictionary/mannerism_n?tab=factsheet#37945600"
+    ]
   }
 ]

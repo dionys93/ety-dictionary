@@ -1,77 +1,57 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "cable",
-      "etymology": [
-        {
-          "name": "capere, capulum",
-          "origin": "Latin"
-        },
-        {
-          "name": "cable",
-          "origin": "Old French"
-        },
-        {
-          "name": "câble, câbuls",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/cable#etymonline_v_547",
-        "https://www.merriam-webster.com/dictionary/cable#dictionary-entry-1",
-        "https://anglo-norman.net/entry/cable",
-        "https://latin-dictionary.net/definition/8126/capulum-capuli",
-        "https://latin-dictionary.net/definition/7987/capio-capere-cepi-captus"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "cable",
+    "etymology": [
+      {
+        "name": "capere, capulum",
+        "origin": "Latin"
+      },
+      {
+        "name": "cable",
+        "origin": "Old French"
+      },
+      {
+        "name": "câble, câbuls",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/cable#etymonline_v_547",
+      "https://www.merriam-webster.com/dictionary/cable#dictionary-entry-1",
+      "https://anglo-norman.net/entry/cable",
+      "https://latin-dictionary.net/definition/8126/capulum-capuli",
+      "https://latin-dictionary.net/definition/7987/capio-capere-cepi-captus"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to cable",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to cable",
+    "etymology": [
+      {
+        "name": "to cable",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to cable",
-        "ta câble -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to cable",
-      "etymology": [
-        {
-          "name": "to cable",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta câble -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta câble -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta câbles",
+          "pastTense": "ta câbled",
+          "progressive": "ta câbling"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/cable#etymonline_v_43259",
-        "https://www.etymonline.com/word/cable#etymonline_v_547",
-        "https://www.merriam-webster.com/dictionary/cable#dictionary-entry-2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/cable#etymonline_v_43259",
+      "https://www.etymonline.com/word/cable#etymonline_v_547",
+      "https://www.merriam-webster.com/dictionary/cable#dictionary-entry-2"
+    ]
   }
 ]

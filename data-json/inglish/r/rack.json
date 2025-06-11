@@ -1,75 +1,55 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to rack",
-      "conjugations": {
-        "thirdPerson": "ed",
-        "pastTense": "ing"
+    "infinitive": "to rack",
+    "etymology": [
+      {
+        "name": "rakken",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "rakken",
-        "to rack",
-        "ta racq racs -ed -ing"
-      ]
-    },
-    "standard": {
-      "name": "to rack",
-      "etymology": [
-        {
-          "name": "rakken",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to rack",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta racq racs -ed -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to rack",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta racq racs -ed -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta racq racsed",
+          "pastTense": "ta racq racsing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/rack",
-        "https://www.oed.com/dictionary/rack_v4?tab=factsheet#27248856",
-        "https://www.oed.com/dictionary/rack_v1?tab=factsheet#27249439",
-        "https://www.oed.com/dictionary/rack_v2?tab=factsheet#27251278"
-      ],
-      "conjugations": {
-        "thirdPerson": "ed",
-        "pastTense": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/rack",
+      "https://www.oed.com/dictionary/rack_v4?tab=factsheet#27248856",
+      "https://www.oed.com/dictionary/rack_v1?tab=factsheet#27249439",
+      "https://www.oed.com/dictionary/rack_v2?tab=factsheet#27251278"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "rack",
-      "etymology": [
-        {
-          "name": "rack",
-          "origin": "Modern English"
-        },
-        {
-          "name": "rac -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/rack",
-        "https://www.oed.com/dictionary/rack_n4?tab=meaning_and_use#27244319",
-        "https://www.oed.com/dictionary/rack_n3?tab=factsheet#27247038"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "rack",
+    "etymology": [
+      {
+        "name": "rack",
+        "origin": "Modern English"
+      },
+      {
+        "name": "rac -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/rack",
+      "https://www.oed.com/dictionary/rack_n4?tab=meaning_and_use#27244319",
+      "https://www.oed.com/dictionary/rack_n3?tab=factsheet#27247038"
+    ]
   }
 ]

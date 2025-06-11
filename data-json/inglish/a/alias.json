@@ -1,33 +1,27 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "alias, alius",
-      "etymology": [
-        {
-          "name": "alias, alius",
-          "origin": "Latin"
-        },
-        {
-          "name": "âliaʃ, âliasis",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/alias#etymonline_v_44183",
-        "https://www.etymonline.com/word/alias#etymonline_v_8147",
-        "https://www.oed.com/dictionary/alias_n?tab=factsheet#7092562",
-        "https://latin-dictionary.net/definition/2543/alias",
-        "https://latin-dictionary.net/definition/2633/alius-alia-aliud"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "alias, alius",
+    "etymology": [
+      {
+        "name": "alias, alius",
+        "origin": "Latin"
+      },
+      {
+        "name": "âliaʃ, âliasis",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/alias#etymonline_v_44183",
+      "https://www.etymonline.com/word/alias#etymonline_v_8147",
+      "https://www.oed.com/dictionary/alias_n?tab=factsheet#7092562",
+      "https://latin-dictionary.net/definition/2543/alias",
+      "https://latin-dictionary.net/definition/2633/alius-alia-aliud"
+    ]
   }
 ]

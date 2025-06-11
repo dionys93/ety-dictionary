@@ -1,153 +1,113 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "phone",
-      "etymology": [
-        {
-          "name": "φωνή",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "téléphone",
-          "origin": "French"
-        },
-        {
-          "name": "phone",
-          "origin": "Modern English"
-        },
-        {
-          "name": "fone, fôns",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/phone",
-        "https://www.etymonline.com/word/telephone#etymonline_v_7695",
-        "https://www.oed.com/dictionary/phone_n2?tab=factsheet#30808903",
-        "https://www.oed.com/dictionary/phone_n1?tab=factsheet#30808642",
-        "https://www.larousse.fr/dictionnaires/francais/t%C3%A9l%C3%A9phone/77116",
-        "https://lsj.gr/wiki/%CF%86%CF%89%CE%BD%CE%AE"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to phone",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "phone",
+    "etymology": [
+      {
+        "name": "φωνή",
+        "origin": "Ancient Greek"
       },
-      "etymology": [
-        "to phone",
-        "ta fone -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to phone",
-      "etymology": [
-        {
-          "name": "to phone",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta fone -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/phone",
-        "https://www.oed.com/dictionary/phone_v?tab=factsheet#30810472"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "telephone",
-      "etymology": [
-        {
-          "name": "téléphone",
-          "origin": "French"
-        },
-        {
-          "name": "telephone",
-          "origin": "Modern English"
-        },
-        {
-          "name": "tèlefone, tèlefones",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/telephone",
-        "https://www.oed.com/dictionary/telephone_n?tab=factsheet#18838608",
-        "https://www.larousse.fr/dictionnaires/francais/t%C3%A9l%C3%A9phone/77116"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to telephone",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "téléphone",
+        "origin": "French"
       },
-      "etymology": [
-        "to telephone",
-        "ta tèlefone -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to telephone",
-      "etymology": [
-        {
-          "name": "to telephone",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta tèlefone -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/telephone",
-        "https://www.oed.com/dictionary/telephone_v?tab=factsheet#18839693"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "phone",
+        "origin": "Modern English"
+      },
+      {
+        "name": "fone, fôns",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/phone",
+      "https://www.etymonline.com/word/telephone#etymonline_v_7695",
+      "https://www.oed.com/dictionary/phone_n2?tab=factsheet#30808903",
+      "https://www.oed.com/dictionary/phone_n1?tab=factsheet#30808642",
+      "https://www.larousse.fr/dictionnaires/francais/t%C3%A9l%C3%A9phone/77116",
+      "https://lsj.gr/wiki/%CF%86%CF%89%CE%BD%CE%AE"
+    ]
+  },
+  {
+    "infinitive": "to phone",
+    "etymology": [
+      {
+        "name": "to phone",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta fone -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta fones",
+          "pastTense": "ta foned",
+          "progressive": "ta foning"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/phone",
+      "https://www.oed.com/dictionary/phone_v?tab=factsheet#30810472"
+    ]
+  },
+  {
+    "name": "telephone",
+    "etymology": [
+      {
+        "name": "téléphone",
+        "origin": "French"
+      },
+      {
+        "name": "telephone",
+        "origin": "Modern English"
+      },
+      {
+        "name": "tèlefone, tèlefones",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/telephone",
+      "https://www.oed.com/dictionary/telephone_n?tab=factsheet#18838608",
+      "https://www.larousse.fr/dictionnaires/francais/t%C3%A9l%C3%A9phone/77116"
+    ]
+  },
+  {
+    "infinitive": "to telephone",
+    "etymology": [
+      {
+        "name": "to telephone",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta tèlefone -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta tèlefones",
+          "pastTense": "ta tèlefoned",
+          "progressive": "ta tèlefoning"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/telephone",
+      "https://www.oed.com/dictionary/telephone_v?tab=factsheet#18839693"
+    ]
   }
 ]

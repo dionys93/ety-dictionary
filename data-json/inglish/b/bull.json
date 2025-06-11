@@ -1,155 +1,123 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "bull",
-      "etymology": [
-        {
-          "name": "boli",
-          "origin": "Old Norse"
-        },
-        {
-          "name": "bole",
-          "origin": "Middle English"
-        },
-        {
-          "name": "bull",
-          "origin": "Modern English"
-        },
-        {
-          "name": "bûle, bûls",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bull#etymonline_v_18053",
-        "https://www.etymonline.com/word/bull#etymonline_v_46839",
-        "https://www.merriam-webster.com/dictionary/bull#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5437",
-        "https://old-norse.net/html/b.php#boli"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to bull",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "bull",
+    "etymology": [
+      {
+        "name": "boli",
+        "origin": "Old Norse"
       },
-      "etymology": [
-        "to bull",
-        "ta bûle -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to bull",
-      "etymology": [
-        {
-          "name": "to bull",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta bûle -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bull#etymonline_v_46834",
-        "https://www.etymonline.com/word/bull#etymonline_v_18053",
-        "https://www.etymonline.com/word/bull#etymonline_v_46839",
-        "https://www.merriam-webster.com/dictionary/bull#dictionary-entry-3",
-        "https://www.merriam-webster.com/dictionary/bull#dictionary-entry-5",
-        "https://www.merriam-webster.com/dictionary/bull#dictionary-entry-6"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "bole",
+        "origin": "Middle English"
+      },
+      {
+        "name": "bull",
+        "origin": "Modern English"
+      },
+      {
+        "name": "bûle, bûls",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bull#etymonline_v_18053",
+      "https://www.etymonline.com/word/bull#etymonline_v_46839",
+      "https://www.merriam-webster.com/dictionary/bull#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5437",
+      "https://old-norse.net/html/b.php#boli"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "bull",
-      "etymology": [
-        {
-          "name": "bulla",
-          "origin": "Latin"
-        },
-        {
-          "name": "bull",
-          "origin": "Modern English"
-        },
-        {
-          "name": "bûll -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
+    "infinitive": "to bull",
+    "etymology": [
+      {
+        "name": "to bull",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta bûle -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta bûles",
+          "pastTense": "ta bûled",
+          "progressive": "ta bûling"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bull#etymonline_v_18054",
-        "https://www.merriam-webster.com/dictionary/bull#dictionary-entry-4",
-        "https://latin-dictionary.net/definition/7092/bulla-bullae"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bull#etymonline_v_46834",
+      "https://www.etymonline.com/word/bull#etymonline_v_18053",
+      "https://www.etymonline.com/word/bull#etymonline_v_46839",
+      "https://www.merriam-webster.com/dictionary/bull#dictionary-entry-3",
+      "https://www.merriam-webster.com/dictionary/bull#dictionary-entry-5",
+      "https://www.merriam-webster.com/dictionary/bull#dictionary-entry-6"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "bullet",
-      "etymology": [
-        {
-          "name": "bulla",
-          "origin": "Latin"
-        },
-        {
-          "name": "boule, boulette",
-          "origin": "French"
-        },
-        {
-          "name": "bullet",
-          "origin": "Modern English"
-        },
-        {
-          "name": "bûllet -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bullet#etymonline_v_18056",
-        "https://www.merriam-webster.com/dictionary/bullet",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/boulette/10412",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/boule/10401",
-        "https://latin-dictionary.net/definition/7092/bulla-bullae"
-      ],
-      "number": "plural"
-    }
+    "name": "bull",
+    "etymology": [
+      {
+        "name": "bulla",
+        "origin": "Latin"
+      },
+      {
+        "name": "bull",
+        "origin": "Modern English"
+      },
+      {
+        "name": "bûll -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bull#etymonline_v_18054",
+      "https://www.merriam-webster.com/dictionary/bull#dictionary-entry-4",
+      "https://latin-dictionary.net/definition/7092/bulla-bullae"
+    ]
+  },
+  {
+    "name": "bullet",
+    "etymology": [
+      {
+        "name": "bulla",
+        "origin": "Latin"
+      },
+      {
+        "name": "boule, boulette",
+        "origin": "French"
+      },
+      {
+        "name": "bullet",
+        "origin": "Modern English"
+      },
+      {
+        "name": "bûllet -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bullet#etymonline_v_18056",
+      "https://www.merriam-webster.com/dictionary/bullet",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/boulette/10412",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/boule/10401",
+      "https://latin-dictionary.net/definition/7092/bulla-bullae"
+    ]
   }
 ]

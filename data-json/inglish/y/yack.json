@@ -1,41 +1,27 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "yackety-yacking, to yack",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "yackety-yacking, to yack",
+    "etymology": [
+      {
+        "name": "yackety-yacking, to yack",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "yackety-yacking, to yack",
-        "ta yake -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "yackety-yacking, to yack",
-      "etymology": [
-        {
-          "name": "yackety-yacking, to yack",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta yake -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta yake -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta yakes",
+          "pastTense": "ta yaked",
+          "progressive": "ta yaking"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/yack",
-        "https://www.oed.com/dictionary/yack_v?tab=factsheet#14068327"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/yack",
+      "https://www.oed.com/dictionary/yack_v?tab=factsheet#14068327"
+    ]
   }
 ]

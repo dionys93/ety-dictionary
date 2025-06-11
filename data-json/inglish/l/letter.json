@@ -1,81 +1,61 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "letter",
-      "etymology": [
-        {
-          "name": "littera",
-          "origin": "Latin"
-        },
-        {
-          "name": "letre",
-          "origin": "Old French"
-        },
-        {
-          "name": "letter",
-          "origin": "Modern English"
-        },
-        {
-          "name": "letar -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/letter#etymonline_v_6712",
-        "https://dle.rae.es/letra?m=form",
-        "https://www.merriam-webster.com/dictionary/letter#dictionary-entry-1",
-        "https://www.oed.com/dictionary/letter_n1?tab=factsheet#39353900",
-        "https://www.anglo-norman.net/entry/lettre",
-        "https://latin-dictionary.net/definition/25782/littera-litterae"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "letter",
+    "etymology": [
+      {
+        "name": "littera",
+        "origin": "Latin"
+      },
+      {
+        "name": "letre",
+        "origin": "Old French"
+      },
+      {
+        "name": "letter",
+        "origin": "Modern English"
+      },
+      {
+        "name": "letar -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/letter#etymonline_v_6712",
+      "https://dle.rae.es/letra?m=form",
+      "https://www.merriam-webster.com/dictionary/letter#dictionary-entry-1",
+      "https://www.oed.com/dictionary/letter_n1?tab=factsheet#39353900",
+      "https://www.anglo-norman.net/entry/lettre",
+      "https://latin-dictionary.net/definition/25782/littera-litterae"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to letter",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to letter",
+    "etymology": [
+      {
+        "name": "to letter",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to letter",
-        "ta letare -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to letter",
-      "etymology": [
-        {
-          "name": "to letter",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta letare -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta letare -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta letares",
+          "pastTense": "ta letared",
+          "progressive": "ta letaring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/letter",
-        "https://www.oed.com/dictionary/letter_v?tab=factsheet#39357533"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/letter",
+      "https://www.oed.com/dictionary/letter_v?tab=factsheet#39357533"
+    ]
   }
 ]

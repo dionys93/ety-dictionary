@@ -1,180 +1,140 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "verse  -s (f n)",
-      "etymology": [
-        {
-          "name": "versus",
-          "origin": "Latin"
-        },
-        {
-          "name": "vers",
-          "origin": "Inglish"
-        },
-        {
-          "name": "verse  -s (f n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/verse#etymonline_v_4738",
-        "https://www.merriam-webster.com/dictionary/verse#dictionary-entry-1",
-        "https://anglo-norman.net/entry/vers_1",
-        "https://latin-dictionary.net/definition/38627/versus-versus"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "versus  (prep)",
-      "etymology": [
-        {
-          "name": "vertere, versus",
-          "origin": "Latin"
-        },
-        {
-          "name": "versus  (prep)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/versus#etymonline_v_4744",
-        "https://latin-dictionary.net/definition/38626/versus",
-        "https://latin-dictionary.net/definition/38638/verto-vertere-verti-versus"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "version",
-      "etymology": [
-        {
-          "name": "vertere, versio",
-          "origin": "Latin"
-        },
-        {
-          "name": "version",
-          "origin": "French"
-        },
-        {
-          "name": "vêsion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/version#etymonline_v_4741",
-        "https://www.merriam-webster.com/dictionary/version",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/version/80691",
-        "https://latin-dictionary.net/definition/38619/versio-versionis",
-        "https://latin-dictionary.net/definition/38638/verto-vertere-verti-versus"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "versional",
-      "etymology": [
-        {
-          "name": "versional",
-          "origin": "Modern English"
-        },
-        {
-          "name": "vêsional -ly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/versional"
-      ],
-      "degrees": {
-        "positive": "sional",
-        "comparative": "ly"
+    "name": "verse  -s (f n)",
+    "etymology": [
+      {
+        "name": "versus",
+        "origin": "Latin"
+      },
+      {
+        "name": "vers",
+        "origin": "Inglish"
+      },
+      {
+        "name": "verse  -s (f n)",
+        "origin": "Modern English"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/verse#etymonline_v_4738",
+      "https://www.merriam-webster.com/dictionary/verse#dictionary-entry-1",
+      "https://anglo-norman.net/entry/vers_1",
+      "https://latin-dictionary.net/definition/38627/versus-versus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "versatile",
-      "etymology": [
-        {
-          "name": "vertere, versare, versatilis",
-          "origin": "Latin"
-        },
-        {
-          "name": "versatile",
-          "origin": "Modern English"
-        },
-        {
-          "name": "versatil",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/versatile#etymonline_v_4737",
-        "https://www.merriam-webster.com/dictionary/versatile",
-        "https://latin-dictionary.net/definition/38611/versatilis-versatilis-versatile",
-        "https://latin-dictionary.net/definition/38621/verso-versare-versavi-versatus",
-        "https://latin-dictionary.net/definition/38638/verto-vertere-verti-versus"
-      ]
-    }
+    "name": "versus  (prep)",
+    "etymology": [
+      {
+        "name": "vertere, versus",
+        "origin": "Latin"
+      },
+      {
+        "name": "versus  (prep)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/versus#etymonline_v_4744",
+      "https://latin-dictionary.net/definition/38626/versus",
+      "https://latin-dictionary.net/definition/38638/verto-vertere-verti-versus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "versatility",
-      "etymology": [
-        {
-          "name": "versatility",
-          "origin": "Modern English"
-        },
-        {
-          "name": "versatilatie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/versatility#etymonline_v_49982",
-        "https://www.merriam-webster.com/dictionary/versatility"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "version",
+    "etymology": [
+      {
+        "name": "vertere, versio",
+        "origin": "Latin"
+      },
+      {
+        "name": "version",
+        "origin": "French"
+      },
+      {
+        "name": "vêsion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/version#etymonline_v_4741",
+      "https://www.merriam-webster.com/dictionary/version",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/version/80691",
+      "https://latin-dictionary.net/definition/38619/versio-versionis",
+      "https://latin-dictionary.net/definition/38638/verto-vertere-verti-versus"
+    ]
+  },
+  {
+    "name": "versional",
+    "etymology": [
+      {
+        "name": "versional",
+        "origin": "Modern English"
+      },
+      {
+        "name": "vêsional -ly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/versional"
+    ]
+  },
+  {
+    "name": "versatile",
+    "etymology": [
+      {
+        "name": "vertere, versare, versatilis",
+        "origin": "Latin"
+      },
+      {
+        "name": "versatile",
+        "origin": "Modern English"
+      },
+      {
+        "name": "versatil",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/versatile#etymonline_v_4737",
+      "https://www.merriam-webster.com/dictionary/versatile",
+      "https://latin-dictionary.net/definition/38611/versatilis-versatilis-versatile",
+      "https://latin-dictionary.net/definition/38621/verso-versare-versavi-versatus",
+      "https://latin-dictionary.net/definition/38638/verto-vertere-verti-versus"
+    ]
+  },
+  {
+    "name": "versatility",
+    "etymology": [
+      {
+        "name": "versatility",
+        "origin": "Modern English"
+      },
+      {
+        "name": "versatilatie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/versatility#etymonline_v_49982",
+      "https://www.merriam-webster.com/dictionary/versatility"
+    ]
   }
 ]

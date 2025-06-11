@@ -1,98 +1,74 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to recommend",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to recommend",
+    "etymology": [
+      {
+        "name": "re + commendare",
+        "origin": "Latin"
       },
-      "etymology": [
-        "re + commendare",
-        "recommendare",
-        "recommender",
-        "recommenden",
-        "to recommend",
-        "ta recomende -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to recommend",
-      "etymology": [
-        {
-          "name": "re + commendare",
-          "origin": "Latin"
-        },
-        {
-          "name": "recommendare",
-          "origin": "Medieval Latin"
-        },
-        {
-          "name": "recommender",
-          "origin": "Old French"
-        },
-        {
-          "name": "recommenden",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to recommend",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta recomende -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "recommendare",
+        "origin": "Medieval Latin"
+      },
+      {
+        "name": "recommender",
+        "origin": "Old French"
+      },
+      {
+        "name": "recommenden",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to recommend",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta recomende -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta recomendes",
+          "pastTense": "ta recomended",
+          "progressive": "ta recomending"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/recommend#etymonline_v_7401",
-        "https://www.merriam-webster.com/dictionary/recommend",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36202",
-        "https://www.anglo-norman.net/entry/recommender",
-        "https://latin-dictionary.net/definition/11373/commendo-commendare-commendavi-commendatus",
-        "https://www.etymonline.com/word/re-#etymonline_v_7313"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/recommend#etymonline_v_7401",
+      "https://www.merriam-webster.com/dictionary/recommend",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36202",
+      "https://www.anglo-norman.net/entry/recommender",
+      "https://latin-dictionary.net/definition/11373/commendo-commendare-commendavi-commendatus",
+      "https://www.etymonline.com/word/re-#etymonline_v_7313"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "recommendation",
-      "etymology": [
-        {
-          "name": "recommendare, recommendatio",
-          "origin": "Medieval Latin"
-        },
-        {
-          "name": "recommendation",
-          "origin": "Old French"
-        },
-        {
-          "name": "recomendâcion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/recommendation#etymonline_v_30451",
-        "https://www.merriam-webster.com/dictionary/recommendation",
-        "https://www.anglo-norman.net/entry/recommendacion"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "recommendation",
+    "etymology": [
+      {
+        "name": "recommendare, recommendatio",
+        "origin": "Medieval Latin"
+      },
+      {
+        "name": "recommendation",
+        "origin": "Old French"
+      },
+      {
+        "name": "recomendâcion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/recommendation#etymonline_v_30451",
+      "https://www.merriam-webster.com/dictionary/recommendation",
+      "https://www.anglo-norman.net/entry/recommendacion"
+    ]
   }
 ]

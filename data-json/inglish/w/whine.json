@@ -1,91 +1,69 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to whine",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "whine",
+    "etymology": [
+      {
+        "name": "hwinsian, hwinan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "hwinsian, hwinan",
-        "whinen",
-        "whine",
-        "ɯhîne -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to whine",
-      "etymology": [
-        {
-          "name": "hwinsian, hwinan",
-          "origin": "Old English"
-        },
-        {
-          "name": "whinen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "whine",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ɯhîne -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "whinen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "whine",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ɯhîne -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ɯhînes",
+          "pastTense": "ɯhîned",
+          "progressive": "ɯhîning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/whine#etymonline_v_7957",
-        "https://www.merriam-webster.com/dictionary/whine#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52572/track?counter=1&search_id=27141054",
-        "https://bosworthtoller.com/20167"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/whine#etymonline_v_7957",
+      "https://www.merriam-webster.com/dictionary/whine#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52572/track?counter=1&search_id=27141054",
+      "https://bosworthtoller.com/20167"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "whine",
-      "etymology": [
-        {
-          "name": "hwinsian, hwinan",
-          "origin": "Old English"
-        },
-        {
-          "name": "whinen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "whine",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ɯhîne, ɯhîns",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/whine#etymonline_v_45932",
-        "https://www.etymonline.com/word/whine#etymonline_v_7957",
-        "https://www.merriam-webster.com/dictionary/whine#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52572/track?counter=1&search_id=27141054",
-        "https://bosworthtoller.com/20167"
-      ],
-      "number": "plural"
-    }
+    "name": "whine",
+    "etymology": [
+      {
+        "name": "hwinsian, hwinan",
+        "origin": "Old English"
+      },
+      {
+        "name": "whinen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "whine",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ɯhîne, ɯhîns",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/whine#etymonline_v_45932",
+      "https://www.etymonline.com/word/whine#etymonline_v_7957",
+      "https://www.merriam-webster.com/dictionary/whine#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52572/track?counter=1&search_id=27141054",
+      "https://bosworthtoller.com/20167"
+    ]
   }
 ]

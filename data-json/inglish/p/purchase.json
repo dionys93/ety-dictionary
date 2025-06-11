@@ -1,131 +1,103 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to purchase",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to purchase",
+    "etymology": [
+      {
+        "name": "pur + chacier, purchaser, porchacier",
+        "origin": "Old French"
       },
-      "etymology": [
-        "pur + chacier, purchaser, porchacier",
-        "purchasen",
-        "to purchase",
-        "ta purchace -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to purchase",
-      "etymology": [
-        {
-          "name": "pur + chacier, purchaser, porchacier",
-          "origin": "Old French"
-        },
-        {
-          "name": "purchasen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to purchase",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta purchace -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "purchasen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to purchase",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta purchace -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta purchaces",
+          "pastTense": "ta purchaced",
+          "progressive": "ta purchacing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/purchase#etymonline_v_2886",
-        "https://www.merriam-webster.com/dictionary/purchase#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35231",
-        "https://anglo-norman.net/entry/purchacer_1"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/purchase#etymonline_v_2886",
+      "https://www.merriam-webster.com/dictionary/purchase#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35231",
+      "https://anglo-norman.net/entry/purchacer_1"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "purchase",
-      "etymology": [
-        {
-          "name": "pur + chacier, purchaser, porchacier, purchace, porchaz",
-          "origin": "Old French"
-        },
-        {
-          "name": "purchas",
-          "origin": "Middle English"
-        },
-        {
-          "name": "purchase",
-          "origin": "Modern English"
-        },
-        {
-          "name": "purchace -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/purchase#etymonline_v_46433",
-        "https://www.merriam-webster.com/dictionary/purchase#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35230",
-        "https://anglo-norman.net/entry/purchace",
-        "https://anglo-norman.net/entry/purchacer_1"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "purchase",
+    "etymology": [
+      {
+        "name": "pur + chacier, purchaser, porchacier, purchace, porchaz",
+        "origin": "Old French"
+      },
+      {
+        "name": "purchas",
+        "origin": "Middle English"
+      },
+      {
+        "name": "purchase",
+        "origin": "Modern English"
+      },
+      {
+        "name": "purchace -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/purchase#etymonline_v_46433",
+      "https://www.merriam-webster.com/dictionary/purchase#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35230",
+      "https://anglo-norman.net/entry/purchace",
+      "https://anglo-norman.net/entry/purchacer_1"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "purchaser",
-      "etymology": [
-        {
-          "name": "porchacier, porchaceor",
-          "origin": "Old French"
-        },
-        {
-          "name": "purchasour",
-          "origin": "Middle English"
-        },
-        {
-          "name": "purchaser",
-          "origin": "Middle English"
-        },
-        {
-          "name": "purchaçor -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/purchaser#etymonline_v_47598",
-        "https://www.etymonline.com/word/purchase#etymonline_v_2886",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35233",
-        "https://anglo-norman.net/entry/purchacer_2",
-        "https://anglo-norman.net/entry/purchacer_1"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "purchaser",
+    "etymology": [
+      {
+        "name": "porchacier, porchaceor",
+        "origin": "Old French"
+      },
+      {
+        "name": "purchasour",
+        "origin": "Middle English"
+      },
+      {
+        "name": "purchaser",
+        "origin": "Middle English"
+      },
+      {
+        "name": "purchaçor -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/purchaser#etymonline_v_47598",
+      "https://www.etymonline.com/word/purchase#etymonline_v_2886",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35233",
+      "https://anglo-norman.net/entry/purchacer_2",
+      "https://anglo-norman.net/entry/purchacer_1"
+    ]
   }
 ]

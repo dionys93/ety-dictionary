@@ -1,233 +1,179 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "valoir, value",
-      "etymology": [
-        {
-          "name": "valere",
-          "origin": "Latin"
-        },
-        {
-          "name": "valoir, value",
-          "origin": "Old French"
-        },
-        {
-          "name": "vallue -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/value#etymonline_v_4620",
-        "https://www.merriam-webster.com/dictionary/value#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/value#dictionary-entry-3",
-        "https://www.merriam-webster.com/dictionary/value#word-history",
-        "https://www.anglo-norman.net/entry/value",
-        "https://www.anglo-norman.net/entry/valuer_2",
-        "https://www.anglo-norman.net/entry/valer_2",
-        "https://latin-dictionary.net/definition/38320/valeo-valere-valui-valitus"
-      ],
-      "degrees": {
-        "positive": "vallue",
-        "comparative": "s"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to value",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "valoir, value",
+    "etymology": [
+      {
+        "name": "valere",
+        "origin": "Latin"
       },
-      "etymology": [
-        "to value",
-        "ta vallue -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to value",
-      "etymology": [
-        {
-          "name": "to value",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta vallue -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/value#etymonline_v_42356",
-        "https://www.etymonline.com/word/value#etymonline_v_4620",
-        "https://www.merriam-webster.com/dictionary/value#dictionary-entry-2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "valueless",
-      "etymology": [
-        {
-          "name": "valueless",
-          "origin": "Modern English"
-        },
-        {
-          "name": "vallueless -ssly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/valueless#etymonline_v_49941"
-      ],
-      "degrees": {
-        "positive": "vallueless",
-        "comparative": "ssly"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "valuable",
-      "etymology": [
-        {
-          "name": "valuable",
-          "origin": "Modern English"
-        },
-        {
-          "name": "valluable -abils",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/valuable#etymonline_v_30574",
-        "https://www.etymonline.com/word/valuables#etymonline_v_30573",
-        "https://www.etymonline.com/word/value#etymonline_v_4620",
-        "https://www.etymonline.com/word/-able#etymonline_v_49"
-      ],
-      "degrees": {
-        "positive": "valluable",
-        "comparative": "abils"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to valuate",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "valoir, value",
+        "origin": "Old French"
       },
-      "etymology": [
-        "valer, valoir",
-        "valuer, valuation",
-        "to valuate",
-        "ta valluete -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to valuate",
-      "etymology": [
-        {
-          "name": "valer, valoir",
-          "origin": "Old French"
-        },
-        {
-          "name": "valuer, valuation",
-          "origin": "French"
-        },
-        {
-          "name": "to valuate",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta valluete -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "vallue -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "masculine noun"
+        ],
+        "degrees": {
+          "positive": "vallue",
+          "comparative": "s"
         }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/valuate",
-        "https://www.merriam-webster.com/dictionary/valuation",
-        "https://www.etymonline.com/word/valuation#etymonline_v_39817",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/%C3%A9valuation/31719",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/%C3%A9valuer/31720",
-        "https://www.anglo-norman.net/entry/valuer_2",
-        "https://www.anglo-norman.net/entry/valer_2",
-        "https://latin-dictionary.net/definition/38320/valeo-valere-valui-valitus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/value#etymonline_v_4620",
+      "https://www.merriam-webster.com/dictionary/value#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/value#dictionary-entry-3",
+      "https://www.merriam-webster.com/dictionary/value#word-history",
+      "https://www.anglo-norman.net/entry/value",
+      "https://www.anglo-norman.net/entry/valuer_2",
+      "https://www.anglo-norman.net/entry/valer_2",
+      "https://latin-dictionary.net/definition/38320/valeo-valere-valui-valitus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "valuation",
-      "etymology": [
-        {
-          "name": "valuation",
-          "origin": "French"
-        },
-        {
-          "name": "valluâcion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
+    "infinitive": "to value",
+    "etymology": [
+      {
+        "name": "to value",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta vallue -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta vallues",
+          "pastTense": "ta vallued",
+          "progressive": "ta valluing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/valuation#etymonline_v_39817",
-        "https://www.merriam-webster.com/dictionary/valuation",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/%C3%A9valuation/31719",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/%C3%A9valuer/31720",
-        "https://www.anglo-norman.net/entry/valuer_2",
-        "https://www.anglo-norman.net/entry/valer_2",
-        "https://latin-dictionary.net/definition/38320/valeo-valere-valui-valitus"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/value#etymonline_v_42356",
+      "https://www.etymonline.com/word/value#etymonline_v_4620",
+      "https://www.merriam-webster.com/dictionary/value#dictionary-entry-2"
+    ]
+  },
+  {
+    "name": "valueless",
+    "etymology": [
+      {
+        "name": "valueless",
+        "origin": "Modern English"
+      },
+      {
+        "name": "vallueless -ssly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ],
+        "degrees": {
+          "positive": "vallueless",
+          "comparative": "ssly"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/valueless#etymonline_v_49941"
+    ]
+  },
+  {
+    "name": "valuable",
+    "etymology": [
+      {
+        "name": "valuable",
+        "origin": "Modern English"
+      },
+      {
+        "name": "valluable -abils",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "masculine noun"
+        ],
+        "degrees": {
+          "positive": "valluable",
+          "comparative": "abils"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/valuable#etymonline_v_30574",
+      "https://www.etymonline.com/word/valuables#etymonline_v_30573",
+      "https://www.etymonline.com/word/value#etymonline_v_4620",
+      "https://www.etymonline.com/word/-able#etymonline_v_49"
+    ]
+  },
+  {
+    "infinitive": "to valuate",
+    "etymology": [
+      {
+        "name": "valer, valoir",
+        "origin": "Old French"
+      },
+      {
+        "name": "valuer, valuation",
+        "origin": "French"
+      },
+      {
+        "name": "to valuate",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta valluete -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta valluetes",
+          "pastTense": "ta vallueted",
+          "progressive": "ta vallueting"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/valuate",
+      "https://www.merriam-webster.com/dictionary/valuation",
+      "https://www.etymonline.com/word/valuation#etymonline_v_39817",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/%C3%A9valuation/31719",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/%C3%A9valuer/31720",
+      "https://www.anglo-norman.net/entry/valuer_2",
+      "https://www.anglo-norman.net/entry/valer_2",
+      "https://latin-dictionary.net/definition/38320/valeo-valere-valui-valitus"
+    ]
+  },
+  {
+    "name": "valuation",
+    "etymology": [
+      {
+        "name": "valuation",
+        "origin": "French"
+      },
+      {
+        "name": "valluâcion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/valuation#etymonline_v_39817",
+      "https://www.merriam-webster.com/dictionary/valuation",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/%C3%A9valuation/31719",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/%C3%A9valuer/31720",
+      "https://www.anglo-norman.net/entry/valuer_2",
+      "https://www.anglo-norman.net/entry/valer_2",
+      "https://latin-dictionary.net/definition/38320/valeo-valere-valui-valitus"
+    ]
   }
 ]

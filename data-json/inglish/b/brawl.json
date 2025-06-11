@@ -1,83 +1,62 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to brawl",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to brawl",
+    "etymology": [
+      {
+        "name": "braulen",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "braulen",
-        "to brawl",
-        "ta bralle -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to brawl",
-      "etymology": [
-        {
-          "name": "braulen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to brawl",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta bralle -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to brawl",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta bralle -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta bralles",
+          "pastTense": "ta bralled",
+          "progressive": "ta bralling"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/brawl#etymonline_v_17068",
-        "https://www.merriam-webster.com/dictionary/brawl#dictionary-entry-1",
-        "https://www.oed.com/dictionary/brawl_v1?tab=factsheet#14710645",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5850"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/brawl#etymonline_v_17068",
+      "https://www.merriam-webster.com/dictionary/brawl#dictionary-entry-1",
+      "https://www.oed.com/dictionary/brawl_v1?tab=factsheet#14710645",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5850"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "brawl",
-      "etymology": [
-        {
-          "name": "braul",
-          "origin": "Middle English"
-        },
-        {
-          "name": "brawl",
-          "origin": "Modern English"
-        },
-        {
-          "name": "brall -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/brawl#etymonline_v_45491",
-        "https://www.etymonline.com/word/brawl#etymonline_v_17068",
-        "https://www.merriam-webster.com/dictionary/brawl#dictionary-entry-2",
-        "https://www.oed.com/dictionary/brawl_n1?tab=factsheet#14695813",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5849"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "brawl",
+    "etymology": [
+      {
+        "name": "braul",
+        "origin": "Middle English"
+      },
+      {
+        "name": "brawl",
+        "origin": "Modern English"
+      },
+      {
+        "name": "brall -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/brawl#etymonline_v_45491",
+      "https://www.etymonline.com/word/brawl#etymonline_v_17068",
+      "https://www.merriam-webster.com/dictionary/brawl#dictionary-entry-2",
+      "https://www.oed.com/dictionary/brawl_n1?tab=factsheet#14695813",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5849"
+    ]
   }
 ]

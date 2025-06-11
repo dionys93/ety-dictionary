@@ -1,83 +1,63 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to keep",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to keep",
+    "etymology": [
+      {
+        "name": "cepan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "cepan",
-        "kepen",
-        "to keep",
-        "ta kiepe -s kept -ing"
-      ]
-    },
-    "standard": {
-      "name": "to keep",
-      "etymology": [
-        {
-          "name": "cepan",
-          "origin": "Old English"
-        },
-        {
-          "name": "kepen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to keep",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta kiepe -s kept -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "kepen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to keep",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta kiepe -s kept -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta kiepes"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/keep#etymonline_v_1798",
-        "https://www.merriam-webster.com/dictionary/keep#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24173",
-        "https://bosworthtoller.com/6071"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/keep#etymonline_v_1798",
+      "https://www.merriam-webster.com/dictionary/keep#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24173",
+      "https://bosworthtoller.com/6071"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "keep",
-      "etymology": [
-        {
-          "name": "kep",
-          "origin": "Middle English"
-        },
-        {
-          "name": "keep",
-          "origin": "Modern English"
-        },
-        {
-          "name": "kiep -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/keep#etymonline_v_42941",
-        "https://www.etymonline.com/word/keep#etymonline_v_1798",
-        "https://www.merriam-webster.com/dictionary/keep#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24171"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "keep",
+    "etymology": [
+      {
+        "name": "kep",
+        "origin": "Middle English"
+      },
+      {
+        "name": "keep",
+        "origin": "Modern English"
+      },
+      {
+        "name": "kiep -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/keep#etymonline_v_42941",
+      "https://www.etymonline.com/word/keep#etymonline_v_1798",
+      "https://www.merriam-webster.com/dictionary/keep#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED24171"
+    ]
   }
 ]

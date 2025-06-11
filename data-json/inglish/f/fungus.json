@@ -1,66 +1,54 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "fungus",
-      "etymology": [
-        {
-          "name": "σπόγγος",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "fungus",
-          "origin": "Latin"
-        },
-        {
-          "name": "fongus -es",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "masculine noun"
-          ]
+    "name": "fungus",
+    "etymology": [
+      {
+        "name": "σπόγγος",
+        "origin": "Ancient Greek"
+      },
+      {
+        "name": "fungus",
+        "origin": "Latin"
+      },
+      {
+        "name": "fongus -es",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "masculine noun"
+        ],
+        "degrees": {
+          "positive": "fongus",
+          "comparative": "es"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fungus#etymonline_v_14256",
-        "https://www.etymonline.com/word/fungous#etymonline_v_40859",
-        "https://www.merriam-webster.com/dictionary/fungus",
-        "https://latin-dictionary.net/definition/21188/fungus-fungi",
-        "https://lsj.gr/wiki/%CF%83%CF%80%CF%8C%CE%B3%CE%B3%CE%BF%CF%82"
-      ],
-      "degrees": {
-        "positive": "fongus",
-        "comparative": "es"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fungus#etymonline_v_14256",
+      "https://www.etymonline.com/word/fungous#etymonline_v_40859",
+      "https://www.merriam-webster.com/dictionary/fungus",
+      "https://latin-dictionary.net/definition/21188/fungus-fungi",
+      "https://lsj.gr/wiki/%CF%83%CF%80%CF%8C%CE%B3%CE%B3%CE%BF%CF%82"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "fungal",
-      "etymology": [
-        {
-          "name": "fungal",
-          "origin": "Modern English"
-        },
-        {
-          "name": "fongal",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fungal#etymonline_v_33469",
-        "https://www.merriam-webster.com/dictionary/fungal"
-      ]
-    }
+    "name": "fungal",
+    "etymology": [
+      {
+        "name": "fungal",
+        "origin": "Modern English"
+      },
+      {
+        "name": "fongal",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fungal#etymonline_v_33469",
+      "https://www.merriam-webster.com/dictionary/fungal"
+    ]
   }
 ]

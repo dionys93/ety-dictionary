@@ -1,85 +1,64 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to blazon",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to blazon",
+    "etymology": [
+      {
+        "name": "blasonner",
+        "origin": "French"
       },
-      "etymology": [
-        "blasonner",
-        "to blazon",
-        "ta blâsone -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to blazon",
-      "etymology": [
-        {
-          "name": "blasonner",
-          "origin": "French"
-        },
-        {
-          "name": "to blazon",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta blâsone -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to blazon",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta blâsone -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta blâsones",
+          "pastTense": "ta blâsoned",
+          "progressive": "ta blâsoning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/blazon#etymonline_v_43236",
-        "https://www.etymonline.com/word/blazon#etymonline_v_13588",
-        "https://www.oed.com/dictionary/blazon_v?tab=factsheet#18792137",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/blasonner/1004609"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/blazon#etymonline_v_43236",
+      "https://www.etymonline.com/word/blazon#etymonline_v_13588",
+      "https://www.oed.com/dictionary/blazon_v?tab=factsheet#18792137",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/blasonner/1004609"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "blazon",
-      "etymology": [
-        {
-          "name": "blason",
-          "origin": "Old French"
-        },
-        {
-          "name": "blasoun",
-          "origin": "Middle English"
-        },
-        {
-          "name": "blazon",
-          "origin": "Modern English"
-        },
-        {
-          "name": "blâson -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/blazon#etymonline_v_13588",
-        "https://www.oed.com/dictionary/blazon_n?tab=pronunciation#18790503",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5112",
-        "https://www.anglo-norman.net/entry/blason"
-      ],
-      "number": "plural"
-    }
+    "name": "blazon",
+    "etymology": [
+      {
+        "name": "blason",
+        "origin": "Old French"
+      },
+      {
+        "name": "blasoun",
+        "origin": "Middle English"
+      },
+      {
+        "name": "blazon",
+        "origin": "Modern English"
+      },
+      {
+        "name": "blâson -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/blazon#etymonline_v_13588",
+      "https://www.oed.com/dictionary/blazon_n?tab=pronunciation#18790503",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5112",
+      "https://www.anglo-norman.net/entry/blason"
+    ]
   }
 ]

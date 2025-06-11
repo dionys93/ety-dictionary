@@ -1,37 +1,31 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "fable",
-      "etymology": [
-        {
-          "name": "fabula",
-          "origin": "Latin"
-        },
-        {
-          "name": "fable",
-          "origin": "Old French"
-        },
-        {
-          "name": "fâble, fâbuls",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fable#etymonline_v_1052",
-        "https://www.merriam-webster.com/dictionary/fable#dictionary-entry-1",
-        "https://www.oed.com/dictionary/fable_n?tab=factsheet#4915186",
-        "https://anglo-norman.net/entry/fable_1",
-        "https://latin-dictionary.net/definition/20162/fabula-fabulae"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "fable",
+    "etymology": [
+      {
+        "name": "fabula",
+        "origin": "Latin"
+      },
+      {
+        "name": "fable",
+        "origin": "Old French"
+      },
+      {
+        "name": "fâble, fâbuls",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fable#etymonline_v_1052",
+      "https://www.merriam-webster.com/dictionary/fable#dictionary-entry-1",
+      "https://www.oed.com/dictionary/fable_n?tab=factsheet#4915186",
+      "https://anglo-norman.net/entry/fable_1",
+      "https://latin-dictionary.net/definition/20162/fabula-fabulae"
+    ]
   }
 ]

@@ -1,181 +1,146 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to reserve",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to reserve",
+    "etymology": [
+      {
+        "name": "re + servare, reservare",
+        "origin": "Latin"
       },
-      "etymology": [
-        "re + servare, reservare",
-        "reserver",
-        "reserven",
-        "to reserve",
-        "ta resêve -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to reserve",
-      "etymology": [
-        {
-          "name": "re + servare, reservare",
-          "origin": "Latin"
-        },
-        {
-          "name": "reserver",
-          "origin": "Old French"
-        },
-        {
-          "name": "reserven",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to reserve",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta resêve -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "reserver",
+        "origin": "Old French"
+      },
+      {
+        "name": "reserven",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to reserve",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta resêve -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta resêves",
+          "pastTense": "ta resêved",
+          "progressive": "ta resêving"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/reserve#etymonline_v_12886",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37058",
-        "https://www.anglo-norman.net/entry/reserver_1",
-        "https://latin-dictionary.net/definition/33422/reservo-reservare-reservavi-reservatus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/reserve#etymonline_v_12886",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37058",
+      "https://www.anglo-norman.net/entry/reserver_1",
+      "https://latin-dictionary.net/definition/33422/reservo-reservare-reservavi-reservatus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "reserve",
-      "etymology": [
-        {
-          "name": "reservare",
-          "origin": "Latin"
-        },
-        {
-          "name": "reserver",
-          "origin": "Old French"
-        },
-        {
-          "name": "réserve",
-          "origin": "French"
-        },
-        {
-          "name": "reserve",
-          "origin": "Modern English"
-        },
-        {
-          "name": "resêve -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/reserve#etymonline_v_47174",
-        "https://www.etymonline.com/word/reserve#etymonline_v_12886",
-        "https://www.collinsdictionary.com/us/dictionary/french-english/r%C3%A9serve",
-        "https://www.anglo-norman.net/entry/reserver_1",
-        "https://latin-dictionary.net/definition/33422/reservo-reservare-reservavi-reservatus"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "reserve",
+    "etymology": [
+      {
+        "name": "reservare",
+        "origin": "Latin"
+      },
+      {
+        "name": "reserver",
+        "origin": "Old French"
+      },
+      {
+        "name": "réserve",
+        "origin": "French"
+      },
+      {
+        "name": "reserve",
+        "origin": "Modern English"
+      },
+      {
+        "name": "resêve -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/reserve#etymonline_v_47174",
+      "https://www.etymonline.com/word/reserve#etymonline_v_12886",
+      "https://www.collinsdictionary.com/us/dictionary/french-english/r%C3%A9serve",
+      "https://www.anglo-norman.net/entry/reserver_1",
+      "https://latin-dictionary.net/definition/33422/reservo-reservare-reservavi-reservatus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "reservation",
-      "etymology": [
-        {
-          "name": "reservatio",
-          "origin": "Latin"
-        },
-        {
-          "name": "reservacion",
-          "origin": "Old French"
-        },
-        {
-          "name": "reservation",
-          "origin": "Modern English"
-        },
-        {
-          "name": "resirvâcion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/reservation#etymonline_v_12885",
-        "https://www.anglo-norman.net/entry/reservacion",
-        "https://latin-dictionary.net/definition/33422/reservo-reservare-reservavi-reservatus"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "reservation",
+    "etymology": [
+      {
+        "name": "reservatio",
+        "origin": "Latin"
+      },
+      {
+        "name": "reservacion",
+        "origin": "Old French"
+      },
+      {
+        "name": "reservation",
+        "origin": "Modern English"
+      },
+      {
+        "name": "resirvâcion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/reservation#etymonline_v_12885",
+      "https://www.anglo-norman.net/entry/reservacion",
+      "https://latin-dictionary.net/definition/33422/reservo-reservare-reservavi-reservatus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "reservoir",
-      "etymology": [
-        {
-          "name": "reservare",
-          "origin": "Latin"
-        },
-        {
-          "name": "reserver",
-          "origin": "Old French"
-        },
-        {
-          "name": "réservoir",
-          "origin": "French"
-        },
-        {
-          "name": "reservoir",
-          "origin": "Modern English"
-        },
-        {
-          "name": "resevoîr -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/reservoir#etymonline_v_12887",
-        "https://www.merriam-webster.com/dictionary/reservoir",
-        "https://www.collinsdictionary.com/us/dictionary/french-english/r%C3%A9servoir",
-        "https://www.anglo-norman.net/entry/reserver_1",
-        "https://latin-dictionary.net/definition/33422/reservo-reservare-reservavi-reservatus"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "reservoir",
+    "etymology": [
+      {
+        "name": "reservare",
+        "origin": "Latin"
+      },
+      {
+        "name": "reserver",
+        "origin": "Old French"
+      },
+      {
+        "name": "réservoir",
+        "origin": "French"
+      },
+      {
+        "name": "reservoir",
+        "origin": "Modern English"
+      },
+      {
+        "name": "resevoîr -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/reservoir#etymonline_v_12887",
+      "https://www.merriam-webster.com/dictionary/reservoir",
+      "https://www.collinsdictionary.com/us/dictionary/french-english/r%C3%A9servoir",
+      "https://www.anglo-norman.net/entry/reserver_1",
+      "https://latin-dictionary.net/definition/33422/reservo-reservare-reservavi-reservatus"
+    ]
   }
 ]

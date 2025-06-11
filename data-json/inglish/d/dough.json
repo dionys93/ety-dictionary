@@ -1,99 +1,81 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "dough",
-      "etymology": [
-        {
-          "name": "dag",
-          "origin": "Old English"
-        },
-        {
-          "name": "dogh",
-          "origin": "Middle English"
-        },
-        {
-          "name": "dough",
-          "origin": "Modern English"
-        },
-        {
-          "name": "dôh -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/dough#etymonline_v_13976",
-        "https://www.merriam-webster.com/dictionary/dough",
-        "https://www.oed.com/dictionary/dough_n?tab=factsheet#6184749",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12452",
-        "https://bosworthtoller.com/7411",
-        "https://bosworthtoller.com/42585"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "dough",
+    "etymology": [
+      {
+        "name": "dag",
+        "origin": "Old English"
+      },
+      {
+        "name": "dogh",
+        "origin": "Middle English"
+      },
+      {
+        "name": "dough",
+        "origin": "Modern English"
+      },
+      {
+        "name": "dôh -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/dough#etymonline_v_13976",
+      "https://www.merriam-webster.com/dictionary/dough",
+      "https://www.oed.com/dictionary/dough_n?tab=factsheet#6184749",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12452",
+      "https://bosworthtoller.com/7411",
+      "https://bosworthtoller.com/42585"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "doughy",
-      "etymology": [
-        {
-          "name": "doughy",
-          "origin": "Modern English"
-        },
-        {
-          "name": "dôhy",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/doughy",
-        "https://www.etymonline.com/word/-y#etymonline_v_25631",
-        "https://www.oed.com/dictionary/doughy_adj?tab=factsheet#6187387"
-      ]
-    }
+    "name": "doughy",
+    "etymology": [
+      {
+        "name": "doughy",
+        "origin": "Modern English"
+      },
+      {
+        "name": "dôhy",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/doughy",
+      "https://www.etymonline.com/word/-y#etymonline_v_25631",
+      "https://www.oed.com/dictionary/doughy_adj?tab=factsheet#6187387"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "doughnut, donut",
-      "etymology": [
-        {
-          "name": "doughnut, donut",
-          "origin": "Modern English"
-        },
-        {
-          "name": "dônut -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/doughnut",
-        "https://www.etymonline.com/word/dough",
-        "https://www.etymonline.com/word/nut#etymonline_v_9888",
-        "https://www.oed.com/dictionary/doughnut_n?tab=factsheet#6186275"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "doughnut, donut",
+    "etymology": [
+      {
+        "name": "doughnut, donut",
+        "origin": "Modern English"
+      },
+      {
+        "name": "dônut -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/doughnut",
+      "https://www.etymonline.com/word/dough",
+      "https://www.etymonline.com/word/nut#etymonline_v_9888",
+      "https://www.oed.com/dictionary/doughnut_n?tab=factsheet#6186275"
+    ]
   }
 ]

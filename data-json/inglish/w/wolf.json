@@ -1,77 +1,57 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "wolf, wolves",
-      "etymology": [
-        {
-          "name": "wulf",
-          "origin": "Old English"
-        },
-        {
-          "name": "wolf, wolves",
-          "origin": "Middle English"
-        },
-        {
-          "name": "ɯôlf -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/wolf#etymonline_v_10822",
-        "https://www.merriam-webster.com/dictionary/wolf#dictionary-entry-1",
-        "https://www.oed.com/dictionary/wolf_n?tab=factsheet#14226779",
-        "https://bosworthtoller.com/36812"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "wolf, wolves",
+    "etymology": [
+      {
+        "name": "wulf",
+        "origin": "Old English"
+      },
+      {
+        "name": "wolf, wolves",
+        "origin": "Middle English"
+      },
+      {
+        "name": "ɯôlf -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/wolf#etymonline_v_10822",
+      "https://www.merriam-webster.com/dictionary/wolf#dictionary-entry-1",
+      "https://www.oed.com/dictionary/wolf_n?tab=factsheet#14226779",
+      "https://bosworthtoller.com/36812"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to wolf",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "wolf",
+    "etymology": [
+      {
+        "name": "wolf",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "wolf",
-        "ɯôlfe -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to wolf",
-      "etymology": [
-        {
-          "name": "wolf",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ɯôlfe -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ɯôlfe -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ɯôlfes",
+          "pastTense": "ɯôlfed",
+          "progressive": "ɯôlfing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/wolf#etymonline_v_46094",
-        "https://www.etymonline.com/word/wolf#etymonline_v_10822",
-        "https://www.merriam-webster.com/dictionary/wolf#dictionary-entry-2",
-        "https://www.oed.com/dictionary/wolf_v?tab=factsheet#14230818"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/wolf#etymonline_v_46094",
+      "https://www.etymonline.com/word/wolf#etymonline_v_10822",
+      "https://www.merriam-webster.com/dictionary/wolf#dictionary-entry-2",
+      "https://www.oed.com/dictionary/wolf_v?tab=factsheet#14230818"
+    ]
   }
 ]

@@ -1,70 +1,50 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "loan  -s (m n)",
-      "etymology": [
-        {
-          "name": "lán",
-          "origin": "Old Norse"
-        },
-        {
-          "name": "lone",
-          "origin": "Middle English"
-        },
-        {
-          "name": "loan  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/loan#etymonline_v_12355",
-        "https://www.merriam-webster.com/dictionary/loan#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/loan#word-history",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26014",
-        "https://old-norse.net/html/l.php#l%C3%A1n"
-      ]
-    }
+    "name": "loan  -s (m n)",
+    "etymology": [
+      {
+        "name": "lán",
+        "origin": "Old Norse"
+      },
+      {
+        "name": "lone",
+        "origin": "Middle English"
+      },
+      {
+        "name": "loan  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/loan#etymonline_v_12355",
+      "https://www.merriam-webster.com/dictionary/loan#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/loan#word-history",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26014",
+      "https://old-norse.net/html/l.php#l%C3%A1n"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to loan",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to loan",
+    "etymology": [
+      {
+        "name": "to loan",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to loan",
-        "ta loane -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to loan",
-      "etymology": [
-        {
-          "name": "to loan",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta loane -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta loane -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta loanes",
+          "pastTense": "ta loaned",
+          "progressive": "ta loaning"
         }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/loan#dictionary-entry-2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/loan#dictionary-entry-2"
+    ]
   }
 ]

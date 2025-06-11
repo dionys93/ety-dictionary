@@ -1,39 +1,29 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "heinous",
-      "etymology": [
-        {
-          "name": "hair, haine, hainos",
-          "origin": "Old French"
-        },
-        {
-          "name": "heinous",
-          "origin": "Modern English"
-        },
-        {
-          "name": "hénoʃ -sly -sness",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/heinous#etymonline_v_9113",
-        "https://www.merriam-webster.com/dictionary/heinous",
-        "https://www.anglo-norman.net/entry/hainous",
-        "https://www.anglo-norman.net/entry/haine",
-        "https://www.anglo-norman.net/entry/hair_1"
-      ],
-      "degrees": {
-        "positive": "sly",
-        "comparative": "sness"
+    "name": "heinous",
+    "etymology": [
+      {
+        "name": "hair, haine, hainos",
+        "origin": "Old French"
+      },
+      {
+        "name": "heinous",
+        "origin": "Modern English"
+      },
+      {
+        "name": "hénoʃ -sly -sness",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/heinous#etymonline_v_9113",
+      "https://www.merriam-webster.com/dictionary/heinous",
+      "https://www.anglo-norman.net/entry/hainous",
+      "https://www.anglo-norman.net/entry/haine",
+      "https://www.anglo-norman.net/entry/hair_1"
+    ]
   }
 ]

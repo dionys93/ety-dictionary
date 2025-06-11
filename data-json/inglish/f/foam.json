@@ -1,99 +1,72 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "foam  -s (m n)",
-      "etymology": [
-        {
-          "name": "fam",
-          "origin": "Old English"
-        },
-        {
-          "name": "fom, fome",
-          "origin": "Middle English"
-        },
-        {
-          "name": "foam  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/foam",
-        "https://www.oed.com/dictionary/foam_n?tab=pronunciation#3908253",
-        "https://bosworthtoller.com/10094"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to foam",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "foam  -s (m n)",
+    "etymology": [
+      {
+        "name": "fam",
+        "origin": "Old English"
       },
-      "etymology": [
-        "famgian",
-        "to foam",
-        "ta foame -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to foam",
-      "etymology": [
-        {
-          "name": "famgian",
-          "origin": "Old English"
-        },
-        {
-          "name": "to foam",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta foame -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/foam",
-        "https://www.oed.com/dictionary/foam_v?tab=factsheet#3909503",
-        "https://bosworthtoller.com/10096"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "fom, fome",
+        "origin": "Middle English"
+      },
+      {
+        "name": "foam  -s (m n)",
+        "origin": "Modern English"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/foam",
+      "https://www.oed.com/dictionary/foam_n?tab=pronunciation#3908253",
+      "https://bosworthtoller.com/10094"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "foamy  (adj)",
-      "etymology": [
-        {
-          "name": "faemig",
-          "origin": "Old English"
-        },
-        {
-          "name": "foamy  (adj)",
-          "origin": "Modern English"
+    "infinitive": "to foam",
+    "etymology": [
+      {
+        "name": "famgian",
+        "origin": "Old English"
+      },
+      {
+        "name": "to foam",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta foame -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta foames",
+          "pastTense": "ta foamed",
+          "progressive": "ta foaming"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/foamy",
-        "https://www.oed.com/dictionary/foamy_adj?tab=factsheet#3910348",
-        "https://bosworthtoller.com/9943"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/foam",
+      "https://www.oed.com/dictionary/foam_v?tab=factsheet#3909503",
+      "https://bosworthtoller.com/10096"
+    ]
+  },
+  {
+    "name": "foamy  (adj)",
+    "etymology": [
+      {
+        "name": "faemig",
+        "origin": "Old English"
+      },
+      {
+        "name": "foamy  (adj)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/foamy",
+      "https://www.oed.com/dictionary/foamy_adj?tab=factsheet#3910348",
+      "https://bosworthtoller.com/9943"
+    ]
   }
 ]

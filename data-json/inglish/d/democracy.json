@@ -1,178 +1,139 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "democracy",
-      "etymology": [
-        {
-          "name": "δῆμος + κράτος, δημοκρατία",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "democratia",
-          "origin": "Medieval Latin"
-        },
-        {
-          "name": "démocratie",
-          "origin": "French"
-        },
-        {
-          "name": "democracy",
-          "origin": "Modern English"
-        },
-        {
-          "name": "demócracie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/democracy#etymonline_v_5572",
-        "https://www.merriam-webster.com/dictionary/democracy",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/d%C3%A9mocratie/23313",
-        "https://latin-dictionary.net/definition/16529/democratia-democratiae",
-        "https://lsj.gr/wiki/%CE%B4%CE%B7%CE%BC%CE%BF%CE%BA%CF%81%CE%B1%CF%84%CE%AF%CE%B1",
-        "https://lsj.gr/wiki/%CE%B4%E1%BF%86%CE%BC%CE%BF%CF%82",
-        "https://lsj.gr/wiki/%CE%BA%CF%81%CE%AC%CF%84%CE%BF%CF%82"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "democrat  -s (m n)",
-      "etymology": [
-        {
-          "name": "démocrate",
-          "origin": "French"
-        },
-        {
-          "name": "democrat  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/democrat#etymonline_v_29479",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/d%C3%A9mocrate/23311"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "democratic  -ly (adj)",
-      "etymology": [
-        {
-          "name": "δημοκρατία, δημοκρατικός",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "democraticus",
-          "origin": "Medieval Latin"
-        },
-        {
-          "name": "démocratique",
-          "origin": "French"
-        },
-        {
-          "name": "democratic  -ly (adj)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/democratic#etymonline_v_29476",
-        "https://www.merriam-webster.com/dictionary/democratic",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/d%C3%A9mocratique/23314",
-        "https://latin-dictionary.net/definition/16530/democraticus-democratica-democraticum",
-        "https://lsj.gr/wiki/%CE%B4%CE%B7%CE%BC%CE%BF%CE%BA%CF%81%CE%B1%CF%84%CE%B9%CE%BA%CF%8C%CF%82",
-        "https://lsj.gr/wiki/%CE%B4%CE%B7%CE%BC%CE%BF%CE%BA%CF%81%CE%B1%CF%84%CE%AF%CE%B1"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to democratize",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "democracy",
+    "etymology": [
+      {
+        "name": "δῆμος + κράτος, δημοκρατία",
+        "origin": "Ancient Greek"
       },
-      "etymology": [
-        "démocratiser",
-        "to democratize",
-        "ta demócratyse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to democratize",
-      "etymology": [
-        {
-          "name": "démocratiser",
-          "origin": "French"
-        },
-        {
-          "name": "to democratize",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta demócratyse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/democratize#etymonline_v_29478",
-        "https://www.merriam-webster.com/dictionary/democratize",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/d%C3%A9mocratiser/23317"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "democratia",
+        "origin": "Medieval Latin"
+      },
+      {
+        "name": "démocratie",
+        "origin": "French"
+      },
+      {
+        "name": "democracy",
+        "origin": "Modern English"
+      },
+      {
+        "name": "demócracie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/democracy#etymonline_v_5572",
+      "https://www.merriam-webster.com/dictionary/democracy",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/d%C3%A9mocratie/23313",
+      "https://latin-dictionary.net/definition/16529/democratia-democratiae",
+      "https://lsj.gr/wiki/%CE%B4%CE%B7%CE%BC%CE%BF%CE%BA%CF%81%CE%B1%CF%84%CE%AF%CE%B1",
+      "https://lsj.gr/wiki/%CE%B4%E1%BF%86%CE%BC%CE%BF%CF%82",
+      "https://lsj.gr/wiki/%CE%BA%CF%81%CE%AC%CF%84%CE%BF%CF%82"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "democratization",
-      "etymology": [
-        {
-          "name": "democratization",
-          "origin": "Modern English"
-        },
-        {
-          "name": "democratisâcion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
+    "name": "democrat  -s (m n)",
+    "etymology": [
+      {
+        "name": "démocrate",
+        "origin": "French"
+      },
+      {
+        "name": "democrat  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/democrat#etymonline_v_29479",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/d%C3%A9mocrate/23311"
+    ]
+  },
+  {
+    "name": "democratic  -ly (adj)",
+    "etymology": [
+      {
+        "name": "δημοκρατία, δημοκρατικός",
+        "origin": "Ancient Greek"
+      },
+      {
+        "name": "democraticus",
+        "origin": "Medieval Latin"
+      },
+      {
+        "name": "démocratique",
+        "origin": "French"
+      },
+      {
+        "name": "democratic  -ly (adj)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/democratic#etymonline_v_29476",
+      "https://www.merriam-webster.com/dictionary/democratic",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/d%C3%A9mocratique/23314",
+      "https://latin-dictionary.net/definition/16530/democraticus-democratica-democraticum",
+      "https://lsj.gr/wiki/%CE%B4%CE%B7%CE%BC%CE%BF%CE%BA%CF%81%CE%B1%CF%84%CE%B9%CE%BA%CF%8C%CF%82",
+      "https://lsj.gr/wiki/%CE%B4%CE%B7%CE%BC%CE%BF%CE%BA%CF%81%CE%B1%CF%84%CE%AF%CE%B1"
+    ]
+  },
+  {
+    "infinitive": "to democratize",
+    "etymology": [
+      {
+        "name": "démocratiser",
+        "origin": "French"
+      },
+      {
+        "name": "to democratize",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta demócratyse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta demócratyses",
+          "pastTense": "ta demócratysed",
+          "progressive": "ta demócratysing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/democratization#etymonline_v_37204",
-        "https://www.merriam-webster.com/dictionary/democratization"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/democratize#etymonline_v_29478",
+      "https://www.merriam-webster.com/dictionary/democratize",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/d%C3%A9mocratiser/23317"
+    ]
+  },
+  {
+    "name": "democratization",
+    "etymology": [
+      {
+        "name": "democratization",
+        "origin": "Modern English"
+      },
+      {
+        "name": "democratisâcion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/democratization#etymonline_v_37204",
+      "https://www.merriam-webster.com/dictionary/democratization"
+    ]
   }
 ]

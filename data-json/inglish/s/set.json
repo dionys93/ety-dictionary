@@ -1,122 +1,96 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to set",
-      "conjugations": {
-        "thirdPerson": "ing"
+    "infinitive": "to set",
+    "etymology": [
+      {
+        "name": "settan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "settan",
-        "setten",
-        "to set",
-        "ta sette sets sèt -ing"
-      ]
-    },
-    "standard": {
-      "name": "to set",
-      "etymology": [
-        {
-          "name": "settan",
-          "origin": "Old English"
-        },
-        {
-          "name": "setten",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to set",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta sette sets sèt -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "setten",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to set",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta sette sets sèt -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta sette sets sèting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/set#etymonline_v_23291",
-        "https://www.merriam-webster.com/dictionary/set#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39654",
-        "https://bosworthtoller.com/27563"
-      ],
-      "conjugations": {
-        "thirdPerson": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/set#etymonline_v_23291",
+      "https://www.merriam-webster.com/dictionary/set#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39654",
+      "https://bosworthtoller.com/27563"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "set",
-      "etymology": [
-        {
-          "name": "settan, sett",
-          "origin": "Old English"
-        },
-        {
-          "name": "set",
-          "origin": "Modern English"
-        },
-        {
-          "name": "sèt",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/set#etymonline_v_23292",
-        "https://www.etymonline.com/word/set#etymonline_v_23291",
-        "https://www.merriam-webster.com/dictionary/set#dictionary-entry-3",
-        "https://www.oed.com/dictionary/set_adj1?tab=meaning_and_use#23400646",
-        "https://bosworthtoller.com/37138",
-        "https://bosworthtoller.com/27563"
-      ]
-    }
+    "name": "set",
+    "etymology": [
+      {
+        "name": "settan, sett",
+        "origin": "Old English"
+      },
+      {
+        "name": "set",
+        "origin": "Modern English"
+      },
+      {
+        "name": "sèt",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/set#etymonline_v_23292",
+      "https://www.etymonline.com/word/set#etymonline_v_23291",
+      "https://www.merriam-webster.com/dictionary/set#dictionary-entry-3",
+      "https://www.oed.com/dictionary/set_adj1?tab=meaning_and_use#23400646",
+      "https://bosworthtoller.com/37138",
+      "https://bosworthtoller.com/27563"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "settan, set",
-      "etymology": [
-        {
-          "name": "secta",
-          "origin": "Latin"
-        },
-        {
-          "name": "settan, set",
-          "origin": "Old English"
-        },
-        {
-          "name": "set -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/set#etymonline_v_23293",
-        "https://www.etymonline.com/word/set#etymonline_v_48544",
-        "https://www.etymonline.com/word/set#etymonline_v_23291",
-        "https://www.merriam-webster.com/dictionary/set#dictionary-entry-2",
-        "https://www.oed.com/dictionary/set_n2?tab=factsheet#23398351",
-        "https://www.oed.com/dictionary/set_n1?tab=factsheet#23395320",
-        "https://latin-dictionary.net/definition/34445/sector-sectari-sectatus",
-        "https://bosworthtoller.com/27538",
-        "https://bosworthtoller.com/27563"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "settan, set",
+    "etymology": [
+      {
+        "name": "secta",
+        "origin": "Latin"
+      },
+      {
+        "name": "settan, set",
+        "origin": "Old English"
+      },
+      {
+        "name": "set -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/set#etymonline_v_23293",
+      "https://www.etymonline.com/word/set#etymonline_v_48544",
+      "https://www.etymonline.com/word/set#etymonline_v_23291",
+      "https://www.merriam-webster.com/dictionary/set#dictionary-entry-2",
+      "https://www.oed.com/dictionary/set_n2?tab=factsheet#23398351",
+      "https://www.oed.com/dictionary/set_n1?tab=factsheet#23395320",
+      "https://latin-dictionary.net/definition/34445/sector-sectari-sectatus",
+      "https://bosworthtoller.com/27538",
+      "https://bosworthtoller.com/27563"
+    ]
   }
 ]

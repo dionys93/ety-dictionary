@@ -1,106 +1,82 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to cast",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to cast",
+    "etymology": [
+      {
+        "name": "kasta",
+        "origin": "Old Norse"
       },
-      "etymology": [
-        "kasta",
-        "casten",
-        "to cast",
-        "ta caste -s cast -ing"
-      ]
-    },
-    "standard": {
-      "name": "to cast",
-      "etymology": [
-        {
-          "name": "kasta",
-          "origin": "Old Norse"
-        },
-        {
-          "name": "casten",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to cast",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta caste -s cast -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "casten",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to cast",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta caste -s cast -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta castes"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/cast#etymonline_v_5451",
-        "https://www.merriam-webster.com/dictionary/cast#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6914",
-        "https://old-norse.net/html/k.php#kasta"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/cast#etymonline_v_5451",
+      "https://www.merriam-webster.com/dictionary/cast#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6914",
+      "https://old-norse.net/html/k.php#kasta"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "cast  -s (m n)",
-      "etymology": [
-        {
-          "name": "cast  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/cast#etymonline_v_46988",
-        "https://www.etymonline.com/word/cast#etymonline_v_5451",
-        "https://www.merriam-webster.com/dictionary/cast#dictionary-entry-2"
-      ]
-    }
+    "name": "cast  -s (m n)",
+    "etymology": [
+      {
+        "name": "cast  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/cast#etymonline_v_46988",
+      "https://www.etymonline.com/word/cast#etymonline_v_5451",
+      "https://www.merriam-webster.com/dictionary/cast#dictionary-entry-2"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "caste",
-      "etymology": [
-        {
-          "name": "carere, castus",
-          "origin": "Latin"
-        },
-        {
-          "name": "casta",
-          "origin": "Inglish"
-        },
-        {
-          "name": "caste",
-          "origin": "Modern English"
-        },
-        {
-          "name": "càst -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/caste#etymonline_v_5453",
-        "https://www.merriam-webster.com/dictionary/caste",
-        "https://www.collinsdictionary.com/us/dictionary/portuguese-english/casta",
-        "https://latin-dictionary.net/definition/8453/castus-casta",
-        "https://latin-dictionary.net/definition/8213/careo-carere-carui-caritus"
-      ]
-    }
+    "name": "caste",
+    "etymology": [
+      {
+        "name": "carere, castus",
+        "origin": "Latin"
+      },
+      {
+        "name": "casta",
+        "origin": "Inglish"
+      },
+      {
+        "name": "caste",
+        "origin": "Modern English"
+      },
+      {
+        "name": "càst -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/caste#etymonline_v_5453",
+      "https://www.merriam-webster.com/dictionary/caste",
+      "https://www.collinsdictionary.com/us/dictionary/portuguese-english/casta",
+      "https://latin-dictionary.net/definition/8453/castus-casta",
+      "https://latin-dictionary.net/definition/8213/careo-carere-carui-caritus"
+    ]
   }
 ]

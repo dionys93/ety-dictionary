@@ -1,75 +1,55 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to crease",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to crease",
+    "etymology": [
+      {
+        "name": "to crease",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to crease",
-        "ta crísse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to crease",
-      "etymology": [
-        {
-          "name": "to crease",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta crísse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta crísse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta crísses",
+          "pastTense": "ta críssed",
+          "progressive": "ta críssing"
         }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/crease#dictionary-entry-2",
-        "https://www.oed.com/dictionary/crease_v2?tab=factsheet#8011708"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/crease#dictionary-entry-2",
+      "https://www.oed.com/dictionary/crease_v2?tab=factsheet#8011708"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "crease",
-      "etymology": [
-        {
-          "name": "creaste, crest",
-          "origin": "Middle English"
-        },
-        {
-          "name": "crease",
-          "origin": "Modern English"
-        },
-        {
-          "name": "críss -es",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/crease#etymonline_v_319",
-        "https://www.merriam-webster.com/dictionary/crease#dictionary-entry-1",
-        "https://www.oed.com/dictionary/crease_n2?tab=factsheet#8011219",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10292"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "crease",
+    "etymology": [
+      {
+        "name": "creaste, crest",
+        "origin": "Middle English"
+      },
+      {
+        "name": "crease",
+        "origin": "Modern English"
+      },
+      {
+        "name": "críss -es",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/crease#etymonline_v_319",
+      "https://www.merriam-webster.com/dictionary/crease#dictionary-entry-1",
+      "https://www.oed.com/dictionary/crease_n2?tab=factsheet#8011219",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10292"
+    ]
   }
 ]

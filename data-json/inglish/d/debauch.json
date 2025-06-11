@@ -1,104 +1,76 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to debauch",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to debauch",
+    "etymology": [
+      {
+        "name": "desbaucher",
+        "origin": "Old French"
       },
-      "etymology": [
-        "desbaucher",
-        "débaucher",
-        "to debauch",
-        "ta debauche -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to debauch",
-      "etymology": [
-        {
-          "name": "desbaucher",
-          "origin": "Old French"
-        },
-        {
-          "name": "débaucher",
-          "origin": "French"
-        },
-        {
-          "name": "to debauch",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta debauche -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "débaucher",
+        "origin": "French"
+      },
+      {
+        "name": "to debauch",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta debauche -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta debauches",
+          "pastTense": "ta debauched",
+          "progressive": "ta debauching"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/debauch#etymonline_v_823",
-        "https://www.merriam-webster.com/dictionary/debauch#dictionary-entry-1",
-        "https://www.oed.com/dictionary/debauch_v?tab=factsheet#7290742",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/d%C3%A9baucher/21659",
-        "https://www.anglo-norman.net/entry/desbauker"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/debauch#etymonline_v_823",
+      "https://www.merriam-webster.com/dictionary/debauch#dictionary-entry-1",
+      "https://www.oed.com/dictionary/debauch_v?tab=factsheet#7290742",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/d%C3%A9baucher/21659",
+      "https://www.anglo-norman.net/entry/desbauker"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "debauch  -es (f n)",
-      "etymology": [
-        {
-          "name": "debauch  -es (f n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/debauch#dictionary-entry-2",
-        "https://www.oed.com/dictionary/debauch_n?tab=factsheet#7290482"
-      ]
-    }
+    "name": "debauch  -es (f n)",
+    "etymology": [
+      {
+        "name": "debauch  -es (f n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/debauch#dictionary-entry-2",
+      "https://www.oed.com/dictionary/debauch_n?tab=factsheet#7290482"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "debauchery",
-      "etymology": [
-        {
-          "name": "debauchery",
-          "origin": "Modern English"
-        },
-        {
-          "name": "debaucherie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/debauchery#etymonline_v_29296",
-        "https://www.etymonline.com/word/debauch#etymonline_v_823",
-        "https://www.etymonline.com/word/-ery#etymonline_v_32818",
-        "https://www.merriam-webster.com/dictionary/debauchery",
-        "https://www.oed.com/dictionary/debauchery_n?tab=factsheet#7291900"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "debauchery",
+    "etymology": [
+      {
+        "name": "debauchery",
+        "origin": "Modern English"
+      },
+      {
+        "name": "debaucherie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/debauchery#etymonline_v_29296",
+      "https://www.etymonline.com/word/debauch#etymonline_v_823",
+      "https://www.etymonline.com/word/-ery#etymonline_v_32818",
+      "https://www.merriam-webster.com/dictionary/debauchery",
+      "https://www.oed.com/dictionary/debauchery_n?tab=factsheet#7291900"
+    ]
   }
 ]

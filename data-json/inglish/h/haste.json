@@ -1,153 +1,108 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "haste",
-      "etymology": [
-        {
-          "name": "haste",
-          "origin": "Old French"
-        },
-        {
-          "name": "hâst",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/haste#etymonline_v_6199",
-        "https://www.merriam-webster.com/dictionary/haste#dictionary-entry-1",
-        "https://anglo-norman.net/entry/haste_1"
-      ],
-      "gender": "masculine",
-      "number": "singular"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to haste",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "haste",
+    "etymology": [
+      {
+        "name": "haste",
+        "origin": "Old French"
       },
-      "etymology": [
-        "haster",
-        "to haste",
-        "ta hâste -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to haste",
-      "etymology": [
-        {
-          "name": "haster",
-          "origin": "Old French"
-        },
-        {
-          "name": "to haste",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta hâste -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/haste#etymonline_v_41670",
-        "https://www.merriam-webster.com/dictionary/haste#dictionary-entry-2",
-        "https://anglo-norman.net/entry/haster"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "hâst",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/haste#etymonline_v_6199",
+      "https://www.merriam-webster.com/dictionary/haste#dictionary-entry-1",
+      "https://anglo-norman.net/entry/haste_1"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "hasty",
-      "etymology": [
-        {
-          "name": "hastif",
-          "origin": "Old French"
-        },
-        {
-          "name": "hasty",
-          "origin": "Modern English"
-        },
-        {
-          "name": "hâsty -ily",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/hasty#etymonline_v_29944",
-        "https://www.etymonline.com/word/haste#etymonline_v_6199",
-        "https://www.etymonline.com/word/-y#etymonline_v_25631",
-        "https://anglo-norman.net/entry/hastif"
-      ],
-      "degrees": {
-        "positive": "sty",
-        "comparative": "ily"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to hasten",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to haste",
+    "etymology": [
+      {
+        "name": "haster",
+        "origin": "Old French"
       },
-      "etymology": [
-        "to hasten",
-        "ta hâssane -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to hasten",
-      "etymology": [
-        {
-          "name": "to hasten",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta hâssane -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to haste",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta hâste -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta hâstes",
+          "pastTense": "ta hâsted",
+          "progressive": "ta hâsting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/hasten#etymonline_v_34003",
-        "https://www.etymonline.com/word/haste#etymonline_v_41670",
-        "https://www.etymonline.com/word/-en#etymonline_v_32445",
-        "https://www.merriam-webster.com/dictionary/hasten"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/haste#etymonline_v_41670",
+      "https://www.merriam-webster.com/dictionary/haste#dictionary-entry-2",
+      "https://anglo-norman.net/entry/haster"
+    ]
+  },
+  {
+    "name": "hasty",
+    "etymology": [
+      {
+        "name": "hastif",
+        "origin": "Old French"
+      },
+      {
+        "name": "hasty",
+        "origin": "Modern English"
+      },
+      {
+        "name": "hâsty -ily",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/hasty#etymonline_v_29944",
+      "https://www.etymonline.com/word/haste#etymonline_v_6199",
+      "https://www.etymonline.com/word/-y#etymonline_v_25631",
+      "https://anglo-norman.net/entry/hastif"
+    ]
+  },
+  {
+    "infinitive": "to hasten",
+    "etymology": [
+      {
+        "name": "to hasten",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta hâssane -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta hâssanes",
+          "pastTense": "ta hâssaned",
+          "progressive": "ta hâssaning"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/hasten#etymonline_v_34003",
+      "https://www.etymonline.com/word/haste#etymonline_v_41670",
+      "https://www.etymonline.com/word/-en#etymonline_v_32445",
+      "https://www.merriam-webster.com/dictionary/hasten"
+    ]
   }
 ]

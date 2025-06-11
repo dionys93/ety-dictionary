@@ -1,54 +1,38 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to flatter",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ering"
+    "infinitive": "to flatter",
+    "etymology": [
+      {
+        "name": "flater",
+        "origin": "Old French"
       },
-      "etymology": [
-        "flater",
-        "flateren, flaterien",
-        "to flatter",
-        "ta flatre -s -d -ering"
-      ]
-    },
-    "standard": {
-      "name": "to flatter",
-      "etymology": [
-        {
-          "name": "flater",
-          "origin": "Old French"
-        },
-        {
-          "name": "flateren, flaterien",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to flatter",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta flatre -s -d -ering",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "flateren, flaterien",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to flatter",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta flatre -s -d -ering",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta flatres",
+          "pastTense": "ta flatred",
+          "progressive": "ta flatreering"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/flatter#etymonline_v_8856",
-        "https://www.merriam-webster.com/dictionary/flatter#dictionary-entry-1",
-        "https://www.oed.com/dictionary/flatter_v1?tab=factsheet#4043610",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16183",
-        "https://anglo-norman.net/entry/flater_3"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ering"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/flatter#etymonline_v_8856",
+      "https://www.merriam-webster.com/dictionary/flatter#dictionary-entry-1",
+      "https://www.oed.com/dictionary/flatter_v1?tab=factsheet#4043610",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16183",
+      "https://anglo-norman.net/entry/flater_3"
+    ]
   }
 ]

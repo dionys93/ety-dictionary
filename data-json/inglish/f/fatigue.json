@@ -1,89 +1,67 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "fatiguer, fatigue",
-      "etymology": [
-        {
-          "name": "fatigare",
-          "origin": "Latin"
-        },
-        {
-          "name": "fatiguer, fatigue",
-          "origin": "French"
-        },
-        {
-          "name": "fatigue, fatígs",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fatigue#etymonline_v_1156",
-        "https://www.oed.com/dictionary/fatigue_n?tab=factsheet#4498909",
-        "https://www.littre.org/definition/fatigue",
-        "https://www.littre.org/definition/fatiguer",
-        "https://latin-dictionary.net/definition/20359/fatigo-fatigare-fatigavi-fatigatus"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "fatiguer, fatigue",
+    "etymology": [
+      {
+        "name": "fatigare",
+        "origin": "Latin"
+      },
+      {
+        "name": "fatiguer, fatigue",
+        "origin": "French"
+      },
+      {
+        "name": "fatigue, fatígs",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fatigue#etymonline_v_1156",
+      "https://www.oed.com/dictionary/fatigue_n?tab=factsheet#4498909",
+      "https://www.littre.org/definition/fatigue",
+      "https://www.littre.org/definition/fatiguer",
+      "https://latin-dictionary.net/definition/20359/fatigo-fatigare-fatigavi-fatigatus"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to fatigue",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to fatigue",
+    "etymology": [
+      {
+        "name": "fatigare",
+        "origin": "Latin"
       },
-      "etymology": [
-        "fatigare",
-        "fatiguer",
-        "to fatigue",
-        "ta fatigue -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to fatigue",
-      "etymology": [
-        {
-          "name": "fatigare",
-          "origin": "Latin"
-        },
-        {
-          "name": "fatiguer",
-          "origin": "French"
-        },
-        {
-          "name": "to fatigue",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta fatigue -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "fatiguer",
+        "origin": "French"
+      },
+      {
+        "name": "to fatigue",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta fatigue -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta fatigues",
+          "pastTense": "ta fatigued",
+          "progressive": "ta fatiguing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fatigue#etymonline_v_39236",
-        "https://www.etymonline.com/word/fatigue#etymonline_v_1156",
-        "https://www.oed.com/dictionary/fatigue_v?tab=factsheet#4499770",
-        "https://www.littre.org/definition/fatiguer",
-        "https://latin-dictionary.net/definition/20359/fatigo-fatigare-fatigavi-fatigatus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fatigue#etymonline_v_39236",
+      "https://www.etymonline.com/word/fatigue#etymonline_v_1156",
+      "https://www.oed.com/dictionary/fatigue_v?tab=factsheet#4499770",
+      "https://www.littre.org/definition/fatiguer",
+      "https://latin-dictionary.net/definition/20359/fatigo-fatigare-fatigavi-fatigatus"
+    ]
   }
 ]

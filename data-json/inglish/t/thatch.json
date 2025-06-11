@@ -1,92 +1,70 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "thatch",
-      "etymology": [
-        {
-          "name": "þæc",
-          "origin": "Old English"
-        },
-        {
-          "name": "thache",
-          "origin": "Middle English"
-        },
-        {
-          "name": "thatch",
-          "origin": "Modern English"
-        },
-        {
-          "name": "þach -es",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/thatch#etymonline_v_46422",
-        "https://www.oed.com/dictionary/thatch_n?tab=factsheet#18773521",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45011/",
-        "https://bosworthtoller.com/31443"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "thatch",
+    "etymology": [
+      {
+        "name": "þæc",
+        "origin": "Old English"
+      },
+      {
+        "name": "thache",
+        "origin": "Middle English"
+      },
+      {
+        "name": "thatch",
+        "origin": "Modern English"
+      },
+      {
+        "name": "þach -es",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/thatch#etymonline_v_46422",
+      "https://www.oed.com/dictionary/thatch_n?tab=factsheet#18773521",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45011/",
+      "https://bosworthtoller.com/31443"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to thatch",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "i"
+    "infinitive": "to thatch",
+    "etymology": [
+      {
+        "name": "þeccan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "þeccan",
-        "thacchen, thecchen",
-        "to thatch",
-        "ta þache -s -d -iŋ"
-      ]
-    },
-    "standard": {
-      "name": "to thatch",
-      "etymology": [
-        {
-          "name": "þeccan",
-          "origin": "Old English"
-        },
-        {
-          "name": "thacchen, thecchen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to thatch",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta þache -s -d -iŋ",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "thacchen, thecchen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to thatch",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta þache -s -d -iŋ",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta þaches",
+          "pastTense": "ta þached",
+          "progressive": "ta þachei"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/thatch#etymonline_v_10713",
-        "https://www.etymonline.com/word/thatch#etymonline_v_46422",
-        "https://www.oed.com/dictionary/thatch_v?tab=factsheet#18774211",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45008",
-        "https://bosworthtoller.com/31600"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "i"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/thatch#etymonline_v_10713",
+      "https://www.etymonline.com/word/thatch#etymonline_v_46422",
+      "https://www.oed.com/dictionary/thatch_v?tab=factsheet#18774211",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45008",
+      "https://bosworthtoller.com/31600"
+    ]
   }
 ]

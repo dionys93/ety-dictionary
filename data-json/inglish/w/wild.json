@@ -1,72 +1,56 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "wild",
-      "etymology": [
-        {
-          "name": "wilde",
-          "origin": "Old English"
-        },
-        {
-          "name": "wild",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ɯîld -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/wild",
-        "https://www.oed.com/dictionary/wild_adj?tab=factsheet#14475599",
-        "https://bosworthtoller.com/35733"
-      ],
-      "degrees": {
-        "positive": "ld",
-        "comparative": "s"
+    "name": "wild",
+    "etymology": [
+      {
+        "name": "wilde",
+        "origin": "Old English"
+      },
+      {
+        "name": "wild",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ɯîld -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "masculine noun"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/wild",
+      "https://www.oed.com/dictionary/wild_adj?tab=factsheet#14475599",
+      "https://bosworthtoller.com/35733"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "wilderness",
-      "etymology": [
-        {
-          "name": "wild-deor, wildior, wild-deoren, wildern",
-          "origin": "Old English"
-        },
-        {
-          "name": "wilderness",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ɯildreness",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/wilderness",
-        "https://www.oed.com/dictionary/wilderness_n?tab=factsheet#14484055",
-        "https://bosworthtoller.com/35730",
-        "https://bosworthtoller.com/35729"
-      ],
-      "gender": "masculine",
-      "number": "singular"
-    }
+    "name": "wilderness",
+    "etymology": [
+      {
+        "name": "wild-deor, wildior, wild-deoren, wildern",
+        "origin": "Old English"
+      },
+      {
+        "name": "wilderness",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ɯildreness",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/wilderness",
+      "https://www.oed.com/dictionary/wilderness_n?tab=factsheet#14484055",
+      "https://bosworthtoller.com/35730",
+      "https://bosworthtoller.com/35729"
+    ]
   }
 ]

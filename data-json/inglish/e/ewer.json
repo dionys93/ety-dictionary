@@ -1,46 +1,40 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "ewer",
-      "etymology": [
-        {
-          "name": "aquarius",
-          "origin": "Latin"
-        },
-        {
-          "name": "aiguiere, eviere",
-          "origin": "Old French"
-        },
-        {
-          "name": "euer",
-          "origin": "Middle English"
-        },
-        {
-          "name": "ewer",
-          "origin": "Modern English"
-        },
-        {
-          "name": "euar -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/ewer#etymonline_v_14006",
-        "https://www.merriam-webster.com/dictionary/ewer",
-        "https://www.oed.com/dictionary/ewer_n2?tab=factsheet#5164650",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED14643",
-        "https://anglo-norman.net/entry/evier",
-        "https://latin-dictionary.net/definition/4325/aquarius-aquaria-aquarium"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "ewer",
+    "etymology": [
+      {
+        "name": "aquarius",
+        "origin": "Latin"
+      },
+      {
+        "name": "aiguiere, eviere",
+        "origin": "Old French"
+      },
+      {
+        "name": "euer",
+        "origin": "Middle English"
+      },
+      {
+        "name": "ewer",
+        "origin": "Modern English"
+      },
+      {
+        "name": "euar -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/ewer#etymonline_v_14006",
+      "https://www.merriam-webster.com/dictionary/ewer",
+      "https://www.oed.com/dictionary/ewer_n2?tab=factsheet#5164650",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED14643",
+      "https://anglo-norman.net/entry/evier",
+      "https://latin-dictionary.net/definition/4325/aquarius-aquaria-aquarium"
+    ]
   }
 ]

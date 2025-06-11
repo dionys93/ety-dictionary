@@ -1,113 +1,84 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to display",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ying"
+    "infinitive": "to display",
+    "etymology": [
+      {
+        "name": "dis + plicare, displicare",
+        "origin": "Latin"
       },
-      "etymology": [
-        "dis + plicare, displicare",
-        "deploiir",
-        "displaien",
-        "to display",
-        "ta desplaie -s -d -ying"
-      ]
-    },
-    "standard": {
-      "name": "to display",
-      "etymology": [
-        {
-          "name": "dis + plicare, displicare",
-          "origin": "Latin"
-        },
-        {
-          "name": "deploiir",
-          "origin": "Old French"
-        },
-        {
-          "name": "displaien",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to display",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta desplaie -s -d -ying",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "deploiir",
+        "origin": "Old French"
+      },
+      {
+        "name": "displaien",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to display",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta desplaie -s -d -ying",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta desplaies",
+          "pastTense": "ta desplaied",
+          "progressive": "ta desplaieying"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/display#etymonline_v_11475",
-        "https://www.merriam-webster.com/dictionary/display#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12029",
-        "https://www.anglo-norman.net/entry/desplaier",
-        "https://latin-dictionary.net/definition/30724/plico-plicare-plicui-plicitus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ying"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/display#etymonline_v_11475",
+      "https://www.merriam-webster.com/dictionary/display#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED12029",
+      "https://www.anglo-norman.net/entry/desplaier",
+      "https://latin-dictionary.net/definition/30724/plico-plicare-plicui-plicitus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "display",
-      "etymology": [
-        {
-          "name": "display",
-          "origin": "Modern English"
-        },
-        {
-          "name": "desplay -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/display#etymonline_v_46780",
-        "https://www.etymonline.com/word/display#etymonline_v_11475",
-        "https://www.merriam-webster.com/dictionary/display#dictionary-entry-2"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "display",
+    "etymology": [
+      {
+        "name": "display",
+        "origin": "Modern English"
+      },
+      {
+        "name": "desplay -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/display#etymonline_v_46780",
+      "https://www.etymonline.com/word/display#etymonline_v_11475",
+      "https://www.merriam-webster.com/dictionary/display#dictionary-entry-2"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "displayable",
-      "etymology": [
-        {
-          "name": "displayable",
-          "origin": "Modern English"
-        },
-        {
-          "name": "desplayable",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.oed.com/dictionary/displayable_adj?tab=factsheet#6431450"
-      ]
-    }
+    "name": "displayable",
+    "etymology": [
+      {
+        "name": "displayable",
+        "origin": "Modern English"
+      },
+      {
+        "name": "desplayable",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.oed.com/dictionary/displayable_adj?tab=factsheet#6431450"
+    ]
   }
 ]

@@ -1,128 +1,96 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "pore",
-      "etymology": [
-        {
-          "name": "πόρος",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "porus",
-          "origin": "Latin"
-        },
-        {
-          "name": "pore",
-          "origin": "Old French"
-        },
-        {
-          "name": "pore, pors",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/pore#etymonline_v_18477",
-        "https://www.merriam-webster.com/dictionary/pore#dictionary-entry-2",
-        "https://www.merriam-webster.com/dictionary/pore#word-history",
-        "https://www.anglo-norman.net/entry/pore_1",
-        "https://lsj.gr/wiki/%CF%80%CF%8C%CF%81%CE%BF%CF%82"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "porous",
-      "etymology": [
-        {
-          "name": "poros",
-          "origin": "Old French"
-        },
-        {
-          "name": "porous",
-          "origin": "Modern English"
-        },
-        {
-          "name": "poroʃ -sly -sness",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/porous#etymonline_v_18482",
-        "https://www.merriam-webster.com/dictionary/porous"
-      ],
-      "degrees": {
-        "positive": "sly",
-        "comparative": "sness"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to pore",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "pore",
+    "etymology": [
+      {
+        "name": "πόρος",
+        "origin": "Ancient Greek"
       },
-      "etymology": [
-        "spor, spyrian",
-        "pouren",
-        "to pore",
-        "ta pôre -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to pore",
-      "etymology": [
-        {
-          "name": "spor, spyrian",
-          "origin": "Old English"
-        },
-        {
-          "name": "pouren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to pore",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta pôre -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/pore#etymonline_v_18476",
-        "https://www.merriam-webster.com/dictionary/pore#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/pore#word-history",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED34249",
-        "https://bosworthtoller.com/28609",
-        "https://bosworthtoller.com/28530"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "porus",
+        "origin": "Latin"
+      },
+      {
+        "name": "pore",
+        "origin": "Old French"
+      },
+      {
+        "name": "pore, pors",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/pore#etymonline_v_18477",
+      "https://www.merriam-webster.com/dictionary/pore#dictionary-entry-2",
+      "https://www.merriam-webster.com/dictionary/pore#word-history",
+      "https://www.anglo-norman.net/entry/pore_1",
+      "https://lsj.gr/wiki/%CF%80%CF%8C%CF%81%CE%BF%CF%82"
+    ]
+  },
+  {
+    "name": "porous",
+    "etymology": [
+      {
+        "name": "poros",
+        "origin": "Old French"
+      },
+      {
+        "name": "porous",
+        "origin": "Modern English"
+      },
+      {
+        "name": "poroʃ -sly -sness",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/porous#etymonline_v_18482",
+      "https://www.merriam-webster.com/dictionary/porous"
+    ]
+  },
+  {
+    "infinitive": "to pore",
+    "etymology": [
+      {
+        "name": "spor, spyrian",
+        "origin": "Old English"
+      },
+      {
+        "name": "pouren",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to pore",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta pôre -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta pôres",
+          "pastTense": "ta pôred",
+          "progressive": "ta pôring"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/pore#etymonline_v_18476",
+      "https://www.merriam-webster.com/dictionary/pore#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/pore#word-history",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED34249",
+      "https://bosworthtoller.com/28609",
+      "https://bosworthtoller.com/28530"
+    ]
   }
 ]

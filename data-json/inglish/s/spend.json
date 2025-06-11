@@ -1,81 +1,59 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to spend",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to spend",
+    "etymology": [
+      {
+        "name": "dispendere, expendere",
+        "origin": "Latin"
       },
-      "etymology": [
-        "dispendere, expendere",
-        "spendere",
-        "forspendan",
-        "spenden",
-        "to spend",
-        "ta spende -s spent -ing"
-      ]
-    },
-    "standard": {
-      "name": "to spend",
-      "etymology": [
-        {
-          "name": "dispendere, expendere",
-          "origin": "Latin"
-        },
-        {
-          "name": "spendere",
-          "origin": "Medieval Latin"
-        },
-        {
-          "name": "forspendan",
-          "origin": "Old English"
-        },
-        {
-          "name": "spenden",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to spend",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta spende -s spent -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "spendere",
+        "origin": "Medieval Latin"
+      },
+      {
+        "name": "forspendan",
+        "origin": "Old English"
+      },
+      {
+        "name": "spenden",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to spend",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta spende -s spent -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta spendes"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/spend#etymonline_v_24001",
-        "https://www.merriam-webster.com/dictionary/spend",
-        "https://www.oed.com/dictionary/spend_v1?tab=pronunciation#21369142",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42116",
-        "https://bosworthtoller.com/28454",
-        "https://bosworthtoller.com/11727",
-        "https://latin-dictionary.net/definition/18108/dispendo-dispendere-dispensus",
-        "https://latin-dictionary.net/definition/19859/expendo-expendere-expendi-expensus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/spend#etymonline_v_24001",
+      "https://www.merriam-webster.com/dictionary/spend",
+      "https://www.oed.com/dictionary/spend_v1?tab=pronunciation#21369142",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42116",
+      "https://bosworthtoller.com/28454",
+      "https://bosworthtoller.com/11727",
+      "https://latin-dictionary.net/definition/18108/dispendo-dispendere-dispensus",
+      "https://latin-dictionary.net/definition/19859/expendo-expendere-expendi-expensus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "spend  -s (m n)",
-      "etymology": [
-        {
-          "name": "spend  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.oed.com/dictionary/spend_n1?tab=factsheet#21368957"
-      ]
-    }
+    "name": "spend  -s (m n)",
+    "etymology": [
+      {
+        "name": "spend  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.oed.com/dictionary/spend_n1?tab=factsheet#21368957"
+    ]
   }
 ]

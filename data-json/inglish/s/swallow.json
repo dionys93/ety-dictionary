@@ -1,91 +1,70 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to swallow",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
+    "infinitive": "to swallow",
+    "etymology": [
+      {
+        "name": "swelgan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "swelgan",
-        "swolwen",
-        "to swallow",
-        "ta suóloe -s -d -ɯing"
-      ]
-    },
-    "standard": {
-      "name": "to swallow",
-      "etymology": [
-        {
-          "name": "swelgan",
-          "origin": "Old English"
-        },
-        {
-          "name": "swolwen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to swallow",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta suóloe -s -d -ɯing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "swolwen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to swallow",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta suóloe -s -d -ɯing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta suóloes",
+          "pastTense": "ta suóloed"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/swallow#etymonline_v_22456",
-        "https://www.merriam-webster.com/dictionary/swallow#dictionary-entry-1",
-        "https://www.oed.com/dictionary/swallow_v?tab=factsheet#19503085",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44301",
-        "https://bosworthtoller.com/29645"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/swallow#etymonline_v_22456",
+      "https://www.merriam-webster.com/dictionary/swallow#dictionary-entry-1",
+      "https://www.oed.com/dictionary/swallow_v?tab=factsheet#19503085",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44301",
+      "https://bosworthtoller.com/29645"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "swallow",
-      "etymology": [
-        {
-          "name": "swealwe",
-          "origin": "Old English"
-        },
-        {
-          "name": "swalwe",
-          "origin": "Middle English"
-        },
-        {
-          "name": "swallow",
-          "origin": "Modern English"
-        },
-        {
-          "name": "suálo",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/swallow#etymonline_v_22457",
-        "https://www.merriam-webster.com/dictionary/swallow#dictionary-entry-3",
-        "https://www.oed.com/dictionary/swallow_n1?tab=factsheet#19500471",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44059",
-        "https://bosworthtoller.com/29578"
-      ],
-      "gender": "masculine",
-      "number": "singular"
-    }
+    "name": "swallow",
+    "etymology": [
+      {
+        "name": "swealwe",
+        "origin": "Old English"
+      },
+      {
+        "name": "swalwe",
+        "origin": "Middle English"
+      },
+      {
+        "name": "swallow",
+        "origin": "Modern English"
+      },
+      {
+        "name": "suálo",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/swallow#etymonline_v_22457",
+      "https://www.merriam-webster.com/dictionary/swallow#dictionary-entry-3",
+      "https://www.oed.com/dictionary/swallow_n1?tab=factsheet#19500471",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44059",
+      "https://bosworthtoller.com/29578"
+    ]
   }
 ]

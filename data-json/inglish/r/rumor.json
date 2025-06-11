@@ -1,79 +1,59 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "rumor",
-      "etymology": [
-        {
-          "name": "ravus, rumor",
-          "origin": "Latin"
-        },
-        {
-          "name": "rumor",
-          "origin": "Old French"
-        },
-        {
-          "name": "rúmor -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/rumor#etymonline_v_16635",
-        "https://www.merriam-webster.com/dictionary/rumor#dictionary-entry-1",
-        "https://www.oed.com/dictionary/rumour_n",
-        "https://www.anglo-norman.net/entry/rumour",
-        "https://latin-dictionary.net/definition/33780/rumor-rumoris",
-        "https://latin-dictionary.net/definition/32937/ravus-rava-ravum"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "rumor",
+    "etymology": [
+      {
+        "name": "ravus, rumor",
+        "origin": "Latin"
+      },
+      {
+        "name": "rumor",
+        "origin": "Old French"
+      },
+      {
+        "name": "rúmor -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/rumor#etymonline_v_16635",
+      "https://www.merriam-webster.com/dictionary/rumor#dictionary-entry-1",
+      "https://www.oed.com/dictionary/rumour_n",
+      "https://www.anglo-norman.net/entry/rumour",
+      "https://latin-dictionary.net/definition/33780/rumor-rumoris",
+      "https://latin-dictionary.net/definition/32937/ravus-rava-ravum"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to rumor",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to rumor",
+    "etymology": [
+      {
+        "name": "to rumor",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to rumor",
-        "ta rúmore -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to rumor",
-      "etymology": [
-        {
-          "name": "to rumor",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta rúmore -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta rúmore -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta rúmores",
+          "pastTense": "ta rúmored",
+          "progressive": "ta rúmoring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/rumor#etymonline_v_43902",
-        "https://www.etymonline.com/word/rumor#etymonline_v_16635",
-        "https://www.merriam-webster.com/dictionary/rumor#dictionary-entry-2",
-        "https://www.oed.com/dictionary/rumour_v"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/rumor#etymonline_v_43902",
+      "https://www.etymonline.com/word/rumor#etymonline_v_16635",
+      "https://www.merriam-webster.com/dictionary/rumor#dictionary-entry-2",
+      "https://www.oed.com/dictionary/rumour_v"
+    ]
   }
 ]

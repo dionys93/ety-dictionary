@@ -1,91 +1,69 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "lounge",
-      "etymology": [
-        {
-          "name": "longus",
-          "origin": "Latin"
-        },
-        {
-          "name": "s'allonger",
-          "origin": "French"
-        },
-        {
-          "name": "lounge",
-          "origin": "Modern English"
-        },
-        {
-          "name": "laonge -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/lounge",
-        "https://www.oed.com/dictionary/lounge_n?tab=factsheet#38894443",
-        "https://www.littre.org/definition/allonger",
-        "https://latin-dictionary.net/definition/25883/longus-longa"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "lounge",
+    "etymology": [
+      {
+        "name": "longus",
+        "origin": "Latin"
+      },
+      {
+        "name": "s'allonger",
+        "origin": "French"
+      },
+      {
+        "name": "lounge",
+        "origin": "Modern English"
+      },
+      {
+        "name": "laonge -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/lounge",
+      "https://www.oed.com/dictionary/lounge_n?tab=factsheet#38894443",
+      "https://www.littre.org/definition/allonger",
+      "https://latin-dictionary.net/definition/25883/longus-longa"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to lounge",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "lounge",
+    "etymology": [
+      {
+        "name": "longus",
+        "origin": "Latin"
       },
-      "etymology": [
-        "longus",
-        "s'allonger",
-        "lounge",
-        "ta laonge -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to lounge",
-      "etymology": [
-        {
-          "name": "longus",
-          "origin": "Latin"
-        },
-        {
-          "name": "s'allonger",
-          "origin": "French"
-        },
-        {
-          "name": "lounge",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta laonge -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "s'allonger",
+        "origin": "French"
+      },
+      {
+        "name": "lounge",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta laonge -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta laonges",
+          "pastTense": "ta laonged",
+          "progressive": "ta laonging"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/lounge",
-        "https://www.oed.com/dictionary/lounge_v?tab=factsheet#38895063",
-        "https://www.littre.org/definition/allonger",
-        "https://latin-dictionary.net/definition/25883/longus-longa"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/lounge",
+      "https://www.oed.com/dictionary/lounge_v?tab=factsheet#38895063",
+      "https://www.littre.org/definition/allonger",
+      "https://latin-dictionary.net/definition/25883/longus-longa"
+    ]
   }
 ]

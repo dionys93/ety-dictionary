@@ -1,69 +1,49 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to hit",
-      "conjugations": {
-        "thirdPerson": "ing"
+    "infinitive": "to hit",
+    "etymology": [
+      {
+        "name": "hyttan, hittan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "hyttan, hittan",
-        "hitten",
-        "to hit",
-        "ta hitte hits hit -ing"
-      ]
-    },
-    "standard": {
-      "name": "to hit",
-      "etymology": [
-        {
-          "name": "hyttan, hittan",
-          "origin": "Old English"
-        },
-        {
-          "name": "hitten",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to hit",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta hitte hits hit -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "hitten",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to hit",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta hitte hits hit -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta hitte hits hiting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/hit#etymonline_v_12042",
-        "https://www.merriam-webster.com/dictionary/hit#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED21857",
-        "https://bosworthtoller.com/19125"
-      ],
-      "conjugations": {
-        "thirdPerson": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/hit#etymonline_v_12042",
+      "https://www.merriam-webster.com/dictionary/hit#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED21857",
+      "https://bosworthtoller.com/19125"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "hit  -s (m n)",
-      "etymology": [
-        {
-          "name": "hit  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/hit#etymonline_v_40629",
-        "https://www.etymonline.com/word/hit#etymonline_v_12042",
-        "https://www.merriam-webster.com/dictionary/hit#dictionary-entry-2"
-      ]
-    }
+    "name": "hit  -s (m n)",
+    "etymology": [
+      {
+        "name": "hit  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/hit#etymonline_v_40629",
+      "https://www.etymonline.com/word/hit#etymonline_v_12042",
+      "https://www.merriam-webster.com/dictionary/hit#dictionary-entry-2"
+    ]
   }
 ]

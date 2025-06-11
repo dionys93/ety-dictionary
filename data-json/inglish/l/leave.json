@@ -1,90 +1,70 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to leave",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to leave",
+    "etymology": [
+      {
+        "name": "læfan, lifan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "læfan, lifan",
-        "leven",
-        "to leave",
-        "ta lívfe -s left -ing"
-      ]
-    },
-    "standard": {
-      "name": "to leave",
-      "etymology": [
-        {
-          "name": "læfan, lifan",
-          "origin": "Old English"
-        },
-        {
-          "name": "leven",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to leave",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta lívfe -s left -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "leven",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to leave",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta lívfe -s left -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta lívfes"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/leave#etymonline_v_6631",
-        "https://www.merriam-webster.com/dictionary/leave#dictionary-entry-1",
-        "https://www.oed.com/dictionary/leave_v1?tab=factsheet#39589553",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25339",
-        "https://bosworthtoller.com/20948",
-        "https://bosworthtoller.com/20949",
-        "https://bosworthtoller.com/021607"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/leave#etymonline_v_6631",
+      "https://www.merriam-webster.com/dictionary/leave#dictionary-entry-1",
+      "https://www.oed.com/dictionary/leave_v1?tab=factsheet#39589553",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25339",
+      "https://bosworthtoller.com/20948",
+      "https://bosworthtoller.com/20949",
+      "https://bosworthtoller.com/021607"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "leave",
-      "etymology": [
-        {
-          "name": "leafe",
-          "origin": "Old English"
-        },
-        {
-          "name": "leve",
-          "origin": "Middle English"
-        },
-        {
-          "name": "leave",
-          "origin": "Modern English"
-        },
-        {
-          "name": "lívf -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/leave#etymonline_v_6632",
-        "https://www.merriam-webster.com/dictionary/leave#dictionary-entry-2",
-        "https://www.oed.com/dictionary/leave_n1?tab=factsheet#39588136",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25327",
-        "https://bosworthtoller.com/21247"
-      ],
-      "number": "plural"
-    }
+    "name": "leave",
+    "etymology": [
+      {
+        "name": "leafe",
+        "origin": "Old English"
+      },
+      {
+        "name": "leve",
+        "origin": "Middle English"
+      },
+      {
+        "name": "leave",
+        "origin": "Modern English"
+      },
+      {
+        "name": "lívf -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/leave#etymonline_v_6632",
+      "https://www.merriam-webster.com/dictionary/leave#dictionary-entry-2",
+      "https://www.oed.com/dictionary/leave_n1?tab=factsheet#39588136",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25327",
+      "https://bosworthtoller.com/21247"
+    ]
   }
 ]

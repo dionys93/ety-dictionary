@@ -1,98 +1,70 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to attach",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to attach",
+    "etymology": [
+      {
+        "name": "estachier, atachier",
+        "origin": "Old French"
       },
-      "etymology": [
-        "estachier, atachier",
-        "attachen",
-        "to attach",
-        "to attache -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to attach",
-      "etymology": [
-        {
-          "name": "estachier, atachier",
-          "origin": "Old French"
-        },
-        {
-          "name": "attachen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to attach",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to attache -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "attachen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to attach",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to attache -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to attaches",
+          "pastTense": "to attached",
+          "progressive": "to attaching"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/attach#etymonline_v_18901",
-        "https://www.oed.com/dictionary/attach_v?tab=factsheet#34860100",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED2877",
-        "https://www.littre.org/definition/attacher",
-        "https://anglo-norman.net/entry/atacher"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/attach#etymonline_v_18901",
+      "https://www.oed.com/dictionary/attach_v?tab=factsheet#34860100",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED2877",
+      "https://www.littre.org/definition/attacher",
+      "https://anglo-norman.net/entry/atacher"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "attachment  -s (f n)",
-      "etymology": [
-        {
-          "name": "attacher, attachement",
-          "origin": "Old French"
-        },
-        {
-          "name": "attachment  -s (f n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/attachment",
-        "https://www.oed.com/dictionary/attachment_n?tab=factsheet#34881722",
-        "https://www.littre.org/definition/attachement",
-        "https://www.littre.org/definition/attacher"
-      ]
-    }
+    "name": "attachment  -s (f n)",
+    "etymology": [
+      {
+        "name": "attacher, attachement",
+        "origin": "Old French"
+      },
+      {
+        "name": "attachment  -s (f n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/attachment",
+      "https://www.oed.com/dictionary/attachment_n?tab=factsheet#34881722",
+      "https://www.littre.org/definition/attachement",
+      "https://www.littre.org/definition/attacher"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "attachable  (adj)",
-      "etymology": [
-        {
-          "name": "attachable  (adj)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/attachable",
-        "https://www.oed.com/dictionary/attachable_adj?tab=factsheet#34863867"
-      ]
-    }
+    "name": "attachable  (adj)",
+    "etymology": [
+      {
+        "name": "attachable  (adj)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/attachable",
+      "https://www.oed.com/dictionary/attachable_adj?tab=factsheet#34863867"
+    ]
   }
 ]

@@ -1,127 +1,95 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to stink",
-      "conjugations": {
-        "thirdPerson": "cs"
+    "infinitive": "to stink",
+    "etymology": [
+      {
+        "name": "stincan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "stincan",
-        "stinken",
-        "to stink",
-        "ta stinke -cs stânk stonk -ing"
-      ]
-    },
-    "standard": {
-      "name": "to stink",
-      "etymology": [
-        {
-          "name": "stincan",
-          "origin": "Old English"
-        },
-        {
-          "name": "stinken",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to stink",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta stinke -cs stânk stonk -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "stinken",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to stink",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta stinke -cs stânk stonk -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta stinkecs"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/stink#etymonline_v_22092",
-        "https://www.merriam-webster.com/dictionary/stink#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42975",
-        "https://bosworthtoller.com/29003"
-      ],
-      "conjugations": {
-        "thirdPerson": "cs"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/stink#etymonline_v_22092",
+      "https://www.merriam-webster.com/dictionary/stink#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42975",
+      "https://bosworthtoller.com/29003"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "stink",
-      "etymology": [
-        {
-          "name": "stenc",
-          "origin": "Old English"
-        },
-        {
-          "name": "stink",
-          "origin": "Middle English"
-        },
-        {
-          "name": "stink -x",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/stink#etymonline_v_45865",
-        "https://www.etymonline.com/word/stink#etymonline_v_22092",
-        "https://www.merriam-webster.com/dictionary/stink#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42974",
-        "https://bosworthtoller.com/28874"
-      ],
-      "number": "singular"
-    }
+    "name": "stink",
+    "etymology": [
+      {
+        "name": "stenc",
+        "origin": "Old English"
+      },
+      {
+        "name": "stink",
+        "origin": "Middle English"
+      },
+      {
+        "name": "stink -x",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/stink#etymonline_v_45865",
+      "https://www.etymonline.com/word/stink#etymonline_v_22092",
+      "https://www.merriam-webster.com/dictionary/stink#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED42974",
+      "https://bosworthtoller.com/28874"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "stinky  -ier -iest (adj)",
-      "etymology": [
-        {
-          "name": "stinky  -ier -iest (adj)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/stinky#etymonline_v_38596",
-        "https://www.etymonline.com/word/stink#etymonline_v_45865",
-        "https://www.etymonline.com/word/-y#etymonline_v_25631"
-      ]
-    }
+    "name": "stinky  -ier -iest (adj)",
+    "etymology": [
+      {
+        "name": "stinky  -ier -iest (adj)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/stinky#etymonline_v_38596",
+      "https://www.etymonline.com/word/stink#etymonline_v_45865",
+      "https://www.etymonline.com/word/-y#etymonline_v_25631"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "stench  -es (m n)",
-      "etymology": [
-        {
-          "name": "stenc, stync",
-          "origin": "Old English"
-        },
-        {
-          "name": "stench  -es (m n)",
-          "origin": "Middle English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/stench",
-        "https://www.oed.com/dictionary/stench_n?tab=factsheet#20594885",
-        "https://bosworthtoller.com/28874"
-      ]
-    }
+    "name": "stench  -es (m n)",
+    "etymology": [
+      {
+        "name": "stenc, stync",
+        "origin": "Old English"
+      },
+      {
+        "name": "stench  -es (m n)",
+        "origin": "Middle English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/stench",
+      "https://www.oed.com/dictionary/stench_n?tab=factsheet#20594885",
+      "https://bosworthtoller.com/28874"
+    ]
   }
 ]

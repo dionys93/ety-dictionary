@@ -1,40 +1,34 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "coffer",
-      "etymology": [
-        {
-          "name": "cophinus",
-          "origin": "Latin"
-        },
-        {
-          "name": "cofre",
-          "origin": "Old French"
-        },
-        {
-          "name": "coffer",
-          "origin": "Modern English"
-        },
-        {
-          "name": "coffre, coffers",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/coffer",
-        "https://www.oed.com/dictionary/coffer_n?tab=factsheet#9069016",
-        "https://www.littre.org/definition/coffre",
-        "https://latin-dictionary.net/definition/14156/cophinus-cophini"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "coffer",
+    "etymology": [
+      {
+        "name": "cophinus",
+        "origin": "Latin"
+      },
+      {
+        "name": "cofre",
+        "origin": "Old French"
+      },
+      {
+        "name": "coffer",
+        "origin": "Modern English"
+      },
+      {
+        "name": "coffre, coffers",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/coffer",
+      "https://www.oed.com/dictionary/coffer_n?tab=factsheet#9069016",
+      "https://www.littre.org/definition/coffre",
+      "https://latin-dictionary.net/definition/14156/cophinus-cophini"
+    ]
   }
 ]

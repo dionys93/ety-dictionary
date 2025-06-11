@@ -1,87 +1,65 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to bore",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to bore",
+    "etymology": [
+      {
+        "name": "borian",
+        "origin": "Old English"
       },
-      "etymology": [
-        "borian",
-        "boren",
-        "to bore",
-        "ta bore -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to bore",
-      "etymology": [
-        {
-          "name": "borian",
-          "origin": "Old English"
-        },
-        {
-          "name": "boren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to bore",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta bore -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "boren",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to bore",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta bore -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta bores",
+          "pastTense": "ta bored",
+          "progressive": "ta boring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bore#etymonline_v_15628",
-        "https://www.etymonline.com/word/bore#etymonline_v_52969",
-        "https://www.merriam-webster.com/dictionary/bore",
-        "https://bosworthtoller.com/4877"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bore#etymonline_v_15628",
+      "https://www.etymonline.com/word/bore#etymonline_v_52969",
+      "https://www.merriam-webster.com/dictionary/bore",
+      "https://bosworthtoller.com/4877"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "bore",
-      "etymology": [
-        {
-          "name": "bor",
-          "origin": "Old English"
-        },
-        {
-          "name": "bore",
-          "origin": "Middle English"
-        },
-        {
-          "name": "bore, bors",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bore#etymonline_v_52968",
-        "https://www.etymonline.com/word/bore#etymonline_v_43257",
-        "https://www.merriam-webster.com/dictionary/bore",
-        "https://bosworthtoller.com/4845"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "bore",
+    "etymology": [
+      {
+        "name": "bor",
+        "origin": "Old English"
+      },
+      {
+        "name": "bore",
+        "origin": "Middle English"
+      },
+      {
+        "name": "bore, bors",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bore#etymonline_v_52968",
+      "https://www.etymonline.com/word/bore#etymonline_v_43257",
+      "https://www.merriam-webster.com/dictionary/bore",
+      "https://bosworthtoller.com/4845"
+    ]
   }
 ]

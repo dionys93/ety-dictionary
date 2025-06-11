@@ -1,134 +1,100 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to refer",
-      "conjugations": {
-        "thirdPerson": "d"
+    "infinitive": "to refer",
+    "etymology": [
+      {
+        "name": "referre",
+        "origin": "Latin"
       },
-      "etymology": [
-        "referre",
-        "referir, referer, referrer",
-        "referren",
-        "to refer",
-        "ta refê -s -d refêring"
-      ]
-    },
-    "standard": {
-      "name": "to refer",
-      "etymology": [
-        {
-          "name": "referre",
-          "origin": "Latin"
-        },
-        {
-          "name": "referir, referer, referrer",
-          "origin": "Old French"
-        },
-        {
-          "name": "referren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to refer",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta refê -s -d refêring",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "referir, referer, referrer",
+        "origin": "Old French"
+      },
+      {
+        "name": "referren",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to refer",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta refê -s -d refêring",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta refês",
+          "pastTense": "ta refêd"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/refer#etymonline_v_10285",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36388",
-        "https://www.anglo-norman.net/entry/referrer_2",
-        "https://latin-dictionary.net/definition/33112/refero-referre-rettuli-relatus"
-      ],
-      "conjugations": {
-        "thirdPerson": "d"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/refer#etymonline_v_10285",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36388",
+      "https://www.anglo-norman.net/entry/referrer_2",
+      "https://latin-dictionary.net/definition/33112/refero-referre-rettuli-relatus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "reference",
-      "etymology": [
-        {
-          "name": "referre, referens, referentem",
-          "origin": "Latin"
-        },
-        {
-          "name": "referentia",
-          "origin": "Medieval Latin"
-        },
-        {
-          "name": "référence",
-          "origin": "French"
-        },
-        {
-          "name": "reference",
-          "origin": "Modern English"
-        },
-        {
-          "name": "refrence -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/reference#etymonline_v_10287",
-        "https://www.collinsdictionary.com/us/dictionary/french-english/r%C3%A9f%C3%A9rence",
-        "https://latin-dictionary.net/definition/33112/refero-referre-rettuli-relatus"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "reference",
+    "etymology": [
+      {
+        "name": "referre, referens, referentem",
+        "origin": "Latin"
+      },
+      {
+        "name": "referentia",
+        "origin": "Medieval Latin"
+      },
+      {
+        "name": "référence",
+        "origin": "French"
+      },
+      {
+        "name": "reference",
+        "origin": "Modern English"
+      },
+      {
+        "name": "refrence -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/reference#etymonline_v_10287",
+      "https://www.collinsdictionary.com/us/dictionary/french-english/r%C3%A9f%C3%A9rence",
+      "https://latin-dictionary.net/definition/33112/refero-referre-rettuli-relatus"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to reference",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "reference",
+    "etymology": [
+      {
+        "name": "reference",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "reference",
-        "ta refrence -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to reference",
-      "etymology": [
-        {
-          "name": "reference",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta refrence -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta refrence -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta refrences",
+          "pastTense": "ta refrenced",
+          "progressive": "ta refrencing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/reference#etymonline_v_43915",
-        "https://www.etymonline.com/word/reference#etymonline_v_10287"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/reference#etymonline_v_43915",
+      "https://www.etymonline.com/word/reference#etymonline_v_10287"
+    ]
   }
 ]

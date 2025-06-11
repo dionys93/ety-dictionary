@@ -1,39 +1,33 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "vein",
-      "etymology": [
-        {
-          "name": "vena",
-          "origin": "Latin"
-        },
-        {
-          "name": "veine",
-          "origin": "Old French"
-        },
-        {
-          "name": "vein",
-          "origin": "Middle English"
-        },
-        {
-          "name": "véne, véns",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/vein#etymonline_v_4681",
-        "https://www.anglo-norman.net/entry/veine_1",
-        "https://latin-dictionary.net/definition/38469/vena-venae"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "vein",
+    "etymology": [
+      {
+        "name": "vena",
+        "origin": "Latin"
+      },
+      {
+        "name": "veine",
+        "origin": "Old French"
+      },
+      {
+        "name": "vein",
+        "origin": "Middle English"
+      },
+      {
+        "name": "véne, véns",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/vein#etymonline_v_4681",
+      "https://www.anglo-norman.net/entry/veine_1",
+      "https://latin-dictionary.net/definition/38469/vena-venae"
+    ]
   }
 ]

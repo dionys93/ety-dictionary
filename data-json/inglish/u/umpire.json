@@ -1,83 +1,63 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "umpire",
-      "etymology": [
-        {
-          "name": "par",
-          "origin": "Latin"
-        },
-        {
-          "name": "non + per, nonper",
-          "origin": "Old French"
-        },
-        {
-          "name": "a noumpere, an oumpere, noumper",
-          "origin": "Middle English"
-        },
-        {
-          "name": "umpire",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ompîar -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/umpire#etymonline_v_4460",
-        "https://www.oed.com/dictionary/umpire_n?tab=factsheet#17117354",
-        "https://anglo-norman.net/entry/nonpier",
-        "https://latin-dictionary.net/definition/29263/par-paris"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "umpire",
+    "etymology": [
+      {
+        "name": "par",
+        "origin": "Latin"
+      },
+      {
+        "name": "non + per, nonper",
+        "origin": "Old French"
+      },
+      {
+        "name": "a noumpere, an oumpere, noumper",
+        "origin": "Middle English"
+      },
+      {
+        "name": "umpire",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ompîar -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/umpire#etymonline_v_4460",
+      "https://www.oed.com/dictionary/umpire_n?tab=factsheet#17117354",
+      "https://anglo-norman.net/entry/nonpier",
+      "https://latin-dictionary.net/definition/29263/par-paris"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to umpire",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "umpire",
+    "etymology": [
+      {
+        "name": "umpire",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "umpire",
-        "ta ompîare -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to umpire",
-      "etymology": [
-        {
-          "name": "umpire",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta ompîare -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta ompîare -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta ompîares",
+          "pastTense": "ta ompîared",
+          "progressive": "ta ompîaring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/umpire#etymonline_v_44434",
-        "https://www.oed.com/dictionary/umpire_v?tab=factsheet#17118002"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/umpire#etymonline_v_44434",
+      "https://www.oed.com/dictionary/umpire_v?tab=factsheet#17118002"
+    ]
   }
 ]

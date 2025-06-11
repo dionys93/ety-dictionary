@@ -1,82 +1,62 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "wheel",
-      "etymology": [
-        {
-          "name": "hweol, hweogol",
-          "origin": "Old English"
-        },
-        {
-          "name": "whele",
-          "origin": "Middle English"
-        },
-        {
-          "name": "wheel",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ɯíole, ɯíols",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/wheel#etymonline_v_7938",
-        "https://www.merriam-webster.com/dictionary/wheel#dictionary-entry-1",
-        "https://www.oed.com/dictionary/wheel_n?tab=factsheet#14697208",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52456",
-        "https://bosworthtoller.com/20120"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "wheel",
+    "etymology": [
+      {
+        "name": "hweol, hweogol",
+        "origin": "Old English"
+      },
+      {
+        "name": "whele",
+        "origin": "Middle English"
+      },
+      {
+        "name": "wheel",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ɯíole, ɯíols",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/wheel#etymonline_v_7938",
+      "https://www.merriam-webster.com/dictionary/wheel#dictionary-entry-1",
+      "https://www.oed.com/dictionary/wheel_n?tab=factsheet#14697208",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52456",
+      "https://bosworthtoller.com/20120"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to wheel",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to wheel",
+    "etymology": [
+      {
+        "name": "to wheel",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to wheel",
-        "ta ɯíole -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to wheel",
-      "etymology": [
-        {
-          "name": "to wheel",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta ɯíole -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta ɯíole -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta ɯíoles",
+          "pastTense": "ta ɯíoled",
+          "progressive": "ta ɯíoling"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/wheel#etymonline_v_44337",
-        "https://www.etymonline.com/word/wheel#etymonline_v_7938",
-        "https://www.merriam-webster.com/dictionary/wheel#dictionary-entry-2",
-        "https://www.oed.com/dictionary/wheel_v?tab=factsheet#14703039"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/wheel#etymonline_v_44337",
+      "https://www.etymonline.com/word/wheel#etymonline_v_7938",
+      "https://www.merriam-webster.com/dictionary/wheel#dictionary-entry-2",
+      "https://www.oed.com/dictionary/wheel_v?tab=factsheet#14703039"
+    ]
   }
 ]

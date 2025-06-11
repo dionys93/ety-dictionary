@@ -1,87 +1,67 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "monger",
-      "etymology": [
-        {
-          "name": "mangonium, mango",
-          "origin": "Latin"
-        },
-        {
-          "name": "mangian, mangere",
-          "origin": "Old English"
-        },
-        {
-          "name": "mongen, mongere",
-          "origin": "Middle English"
-        },
-        {
-          "name": "monger",
-          "origin": "Modern English"
-        },
-        {
-          "name": "mangor -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/monger#etymonline_v_17437",
-        "https://www.oed.com/dictionary/monger_v?tab=factsheet#36252254",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED28565",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED28563",
-        "https://bosworthtoller.com/22329",
-        "https://bosworthtoller.com/22331",
-        "https://latin-dictionary.net/definition/26343/mango-mangonis"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "monger",
+    "etymology": [
+      {
+        "name": "mangonium, mango",
+        "origin": "Latin"
+      },
+      {
+        "name": "mangian, mangere",
+        "origin": "Old English"
+      },
+      {
+        "name": "mongen, mongere",
+        "origin": "Middle English"
+      },
+      {
+        "name": "monger",
+        "origin": "Modern English"
+      },
+      {
+        "name": "mangor -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/monger#etymonline_v_17437",
+      "https://www.oed.com/dictionary/monger_v?tab=factsheet#36252254",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED28565",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED28563",
+      "https://bosworthtoller.com/22329",
+      "https://bosworthtoller.com/22331",
+      "https://latin-dictionary.net/definition/26343/mango-mangonis"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to monger",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to monger",
+    "etymology": [
+      {
+        "name": "to monger",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to monger",
-        "ta mangore -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to monger",
-      "etymology": [
-        {
-          "name": "to monger",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta mangore -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta mangore -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta mangores",
+          "pastTense": "ta mangored",
+          "progressive": "ta mangoring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/monger#etymonline_v_45015",
-        "https://www.etymonline.com/word/monger#etymonline_v_17437",
-        "https://www.oed.com/dictionary/monger_v?tab=factsheet#36252254"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/monger#etymonline_v_45015",
+      "https://www.etymonline.com/word/monger#etymonline_v_17437",
+      "https://www.oed.com/dictionary/monger_v?tab=factsheet#36252254"
+    ]
   }
 ]

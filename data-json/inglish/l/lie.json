@@ -1,206 +1,158 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to lie, to lay",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to lie, to lay",
+    "etymology": [
+      {
+        "name": "licgan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "licgan",
-        "lien",
-        "to lie, to lay",
-        "ta lîe -s lay lain lîhing"
-      ]
-    },
-    "standard": {
-      "name": "to lie, to lay",
-      "etymology": [
-        {
-          "name": "licgan",
-          "origin": "Old English"
-        },
-        {
-          "name": "lien",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to lie, to lay",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta lîe -s lay lain lîhing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/lie#etymonline_v_9488",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25443",
-        "https://bosworthtoller.com/54595",
-        "https://bosworthtoller.com/21566"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "lie",
-      "etymology": [
-        {
-          "name": "lie",
-          "origin": "Modern English"
-        },
-        {
-          "name": "lîe, lîs",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.oed.com/dictionary/lie_n2?tab=meaning_and_use#39431740",
-        "https://www.oed.com/dictionary/lie_n2?tab=pronunciation#39431740",
-        "https://www.merriam-webster.com/dictionary/lie#dictionary-entry-2"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to lie",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "lien",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "leogan",
-        "lien",
-        "to lie",
-        "ta lyhe -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to lie",
-      "etymology": [
-        {
-          "name": "leogan",
-          "origin": "Old English"
-        },
-        {
-          "name": "lien",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to lie",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta lyhe -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to lie, to lay",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta lîe -s lay lain lîhing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta lîes"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/lie#etymonline_v_9487",
-        "https://www.oed.com/dictionary/lie_v2?tab=factsheet#39440241",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25444",
-        "https://bosworthtoller.com/54512",
-        "https://bosworthtoller.com/21440"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/lie#etymonline_v_9488",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25443",
+      "https://bosworthtoller.com/54595",
+      "https://bosworthtoller.com/21566"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "lie",
-      "etymology": [
-        {
-          "name": "lyge, lige",
-          "origin": "Old English"
-        },
-        {
-          "name": "lie",
-          "origin": "Middle English"
-        },
-        {
-          "name": "lyh -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/lie#etymonline_v_9489",
-        "https://www.etymonline.com/word/lie#etymonline_v_9487",
-        "https://www.oed.com/dictionary/lie_n1?tab=factsheet#39430865",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25437",
-        "https://bosworthtoller.com/21658",
-        "https://bosworthtoller.com/21948"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "lie",
+    "etymology": [
+      {
+        "name": "lie",
+        "origin": "Modern English"
+      },
+      {
+        "name": "lîe, lîs",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.oed.com/dictionary/lie_n2?tab=meaning_and_use#39431740",
+      "https://www.oed.com/dictionary/lie_n2?tab=pronunciation#39431740",
+      "https://www.merriam-webster.com/dictionary/lie#dictionary-entry-2"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "liar",
-      "etymology": [
-        {
-          "name": "leogere",
-          "origin": "Old English"
-        },
-        {
-          "name": "liere",
-          "origin": "Middle English"
-        },
-        {
-          "name": "liar",
-          "origin": "Modern English"
-        },
-        {
-          "name": "lyheur -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
+    "infinitive": "to lie",
+    "etymology": [
+      {
+        "name": "leogan",
+        "origin": "Old English"
+      },
+      {
+        "name": "lien",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to lie",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta lyhe -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta lyhes",
+          "pastTense": "ta lyhed",
+          "progressive": "ta lyhing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/liar#etymonline_v_9462",
-        "https://www.etymonline.com/word/lie#etymonline_v_9487",
-        "https://www.merriam-webster.com/dictionary/liar",
-        "https://www.oed.com/dictionary/liar_n?tab=factsheet#39395730",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25447",
-        "https://bosworthtoller.com/21441"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/lie#etymonline_v_9487",
+      "https://www.oed.com/dictionary/lie_v2?tab=factsheet#39440241",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25444",
+      "https://bosworthtoller.com/54512",
+      "https://bosworthtoller.com/21440"
+    ]
+  },
+  {
+    "name": "lie",
+    "etymology": [
+      {
+        "name": "lyge, lige",
+        "origin": "Old English"
+      },
+      {
+        "name": "lie",
+        "origin": "Middle English"
+      },
+      {
+        "name": "lyh -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/lie#etymonline_v_9489",
+      "https://www.etymonline.com/word/lie#etymonline_v_9487",
+      "https://www.oed.com/dictionary/lie_n1?tab=factsheet#39430865",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25437",
+      "https://bosworthtoller.com/21658",
+      "https://bosworthtoller.com/21948"
+    ]
+  },
+  {
+    "name": "liar",
+    "etymology": [
+      {
+        "name": "leogere",
+        "origin": "Old English"
+      },
+      {
+        "name": "liere",
+        "origin": "Middle English"
+      },
+      {
+        "name": "liar",
+        "origin": "Modern English"
+      },
+      {
+        "name": "lyheur -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/liar#etymonline_v_9462",
+      "https://www.etymonline.com/word/lie#etymonline_v_9487",
+      "https://www.merriam-webster.com/dictionary/liar",
+      "https://www.oed.com/dictionary/liar_n?tab=factsheet#39395730",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25447",
+      "https://bosworthtoller.com/21441"
+    ]
   }
 ]

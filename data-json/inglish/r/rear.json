@@ -1,128 +1,92 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "rear",
-      "etymology": [
-        {
-          "name": "riere + garde, rieregarde, rerewarde",
-          "origin": "Old French"
-        },
-        {
-          "name": "rear",
-          "origin": "Modern English"
-        },
-        {
-          "name": "riar -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/rear#etymonline_v_7343",
-        "https://www.merriam-webster.com/dictionary/rear#dictionary-entry-2",
-        "https://www.merriam-webster.com/dictionary/rear#dictionary-entry-3",
-        "https://www.merriam-webster.com/dictionary/rear#dictionary-entry-4",
-        "https://anglo-norman.net/entry/rieregarde",
-        "https://anglo-norman.net/entry/reregarder"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "rear",
+    "etymology": [
+      {
+        "name": "riere + garde, rieregarde, rerewarde",
+        "origin": "Old French"
+      },
+      {
+        "name": "rear",
+        "origin": "Modern English"
+      },
+      {
+        "name": "riar -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/rear#etymonline_v_7343",
+      "https://www.merriam-webster.com/dictionary/rear#dictionary-entry-2",
+      "https://www.merriam-webster.com/dictionary/rear#dictionary-entry-3",
+      "https://www.merriam-webster.com/dictionary/rear#dictionary-entry-4",
+      "https://anglo-norman.net/entry/rieregarde",
+      "https://anglo-norman.net/entry/reregarder"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to rear",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to rear",
+    "etymology": [
+      {
+        "name": "to rear",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to rear",
-        "ta riare -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to rear",
-      "etymology": [
-        {
-          "name": "to rear",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta riare -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta riare -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta riares",
+          "pastTense": "ta riared",
+          "progressive": "ta riaring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/rear#etymonline_v_47877",
-        "https://www.etymonline.com/word/rear#etymonline_v_7343"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/rear#etymonline_v_47877",
+      "https://www.etymonline.com/word/rear#etymonline_v_7343"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to rear",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to rear",
+    "etymology": [
+      {
+        "name": "ræran",
+        "origin": "Old English"
       },
-      "etymology": [
-        "ræran",
-        "reren",
-        "to rear",
-        "ta riare -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to rear",
-      "etymology": [
-        {
-          "name": "ræran",
-          "origin": "Old English"
-        },
-        {
-          "name": "reren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to rear",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta riare -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "reren",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to rear",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta riare -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta riares",
+          "pastTense": "ta riared",
+          "progressive": "ta riaring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/rear#etymonline_v_7344",
-        "https://www.merriam-webster.com/dictionary/rear#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37022",
-        "https://bosworthtoller.com/25533"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/rear#etymonline_v_7344",
+      "https://www.merriam-webster.com/dictionary/rear#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED37022",
+      "https://bosworthtoller.com/25533"
+    ]
   }
 ]

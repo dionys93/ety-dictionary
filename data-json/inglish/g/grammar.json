@@ -1,157 +1,133 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "grammar",
-      "etymology": [
-        {
-          "name": "γράμμα, γραμματικός, γραμματική",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "grammatica",
-          "origin": "Latin"
-        },
-        {
-          "name": "gramaire",
-          "origin": "Old French"
-        },
-        {
-          "name": "grammar",
-          "origin": "Modern English"
-        },
-        {
-          "name": "gramar -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/grammar",
-        "https://www.oed.com/dictionary/grammar_n?tab=pronunciation#2658225",
-        "https://www.oed.com/dictionary/grammar_n?tab=meaning_and_use#2658225",
-        "https://anglo-norman.net/entry/gramaire",
-        "https://latin-dictionary.net/definition/21628/grammatica-grammaticae",
-        "https://lsj.gr/wiki/%CE%B3%CF%81%CE%B1%CE%BC%CE%BC%CE%B1%CF%84%CE%B9%CE%BA%CE%AE",
-        "https://lsj.gr/wiki/%CE%B3%CF%81%CE%B1%CE%BC%CE%BC%CE%B1%CF%84%CE%B9%CE%BA%CF%8C%CF%82",
-        "https://lsj.gr/wiki/%CE%B3%CF%81%CE%AC%CE%BC%CE%BC%CE%B1"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "grammar",
+    "etymology": [
+      {
+        "name": "γράμμα, γραμματικός, γραμματική",
+        "origin": "Ancient Greek"
+      },
+      {
+        "name": "grammatica",
+        "origin": "Latin"
+      },
+      {
+        "name": "gramaire",
+        "origin": "Old French"
+      },
+      {
+        "name": "grammar",
+        "origin": "Modern English"
+      },
+      {
+        "name": "gramar -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/grammar",
+      "https://www.oed.com/dictionary/grammar_n?tab=pronunciation#2658225",
+      "https://www.oed.com/dictionary/grammar_n?tab=meaning_and_use#2658225",
+      "https://anglo-norman.net/entry/gramaire",
+      "https://latin-dictionary.net/definition/21628/grammatica-grammaticae",
+      "https://lsj.gr/wiki/%CE%B3%CF%81%CE%B1%CE%BC%CE%BC%CE%B1%CF%84%CE%B9%CE%BA%CE%AE",
+      "https://lsj.gr/wiki/%CE%B3%CF%81%CE%B1%CE%BC%CE%BC%CE%B1%CF%84%CE%B9%CE%BA%CF%8C%CF%82",
+      "https://lsj.gr/wiki/%CE%B3%CF%81%CE%AC%CE%BC%CE%BC%CE%B1"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "grammatical",
-      "etymology": [
-        {
-          "name": "grammaticus, grammaticalis",
-          "origin": "Latin"
-        },
-        {
-          "name": "grammatical",
-          "origin": "Modern English"
-        },
-        {
-          "name": "gramatical",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/grammatical",
-        "https://www.oed.com/dictionary/grammatical_adj?tab=factsheet#2660340",
-        "https://latin-dictionary.net/definition/21632/grammaticus-grammatici"
-      ]
-    }
+    "name": "grammatical",
+    "etymology": [
+      {
+        "name": "grammaticus, grammaticalis",
+        "origin": "Latin"
+      },
+      {
+        "name": "grammatical",
+        "origin": "Modern English"
+      },
+      {
+        "name": "gramatical",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/grammatical",
+      "https://www.oed.com/dictionary/grammatical_adj?tab=factsheet#2660340",
+      "https://latin-dictionary.net/definition/21632/grammaticus-grammatici"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "grammarian",
-      "etymology": [
-        {
-          "name": "gramaire, gramairien",
-          "origin": "Old French"
-        },
-        {
-          "name": "grammarian",
-          "origin": "Modern English"
-        },
-        {
-          "name": "gramârian -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/grammarian",
-        "https://www.oed.com/dictionary/grammarian_n?tab=factsheet#2659491",
-        "https://anglo-norman.net/entry/gramarien",
-        "https://anglo-norman.net/entry/gramaire"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "grammarian",
+    "etymology": [
+      {
+        "name": "gramaire, gramairien",
+        "origin": "Old French"
+      },
+      {
+        "name": "grammarian",
+        "origin": "Modern English"
+      },
+      {
+        "name": "gramârian -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/grammarian",
+      "https://www.oed.com/dictionary/grammarian_n?tab=factsheet#2659491",
+      "https://anglo-norman.net/entry/gramarien",
+      "https://anglo-norman.net/entry/gramaire"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "gram",
-      "etymology": [
-        {
-          "name": "γράμμα",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "gramma",
-          "origin": "Latin"
-        },
-        {
-          "name": "gramme",
-          "origin": "French"
-        },
-        {
-          "name": "gram",
-          "origin": "Modern English"
-        },
-        {
-          "name": "grame, grams",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/gram",
-        "https://www.oed.com/dictionary/gram_n2?tab=factsheet#2654720",
-        "https://www.oed.com/dictionary/gram_n4?tab=factsheet#2655262",
-        "https://www.littre.org/definition/gramme",
-        "https://latin-dictionary.net/definition/21627/gramma-grammatis",
-        "https://lsj.gr/wiki/%CE%B3%CF%81%CE%AC%CE%BC%CE%BC%CE%B1"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "gram",
+    "etymology": [
+      {
+        "name": "γράμμα",
+        "origin": "Ancient Greek"
+      },
+      {
+        "name": "gramma",
+        "origin": "Latin"
+      },
+      {
+        "name": "gramme",
+        "origin": "French"
+      },
+      {
+        "name": "gram",
+        "origin": "Modern English"
+      },
+      {
+        "name": "grame, grams",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/gram",
+      "https://www.oed.com/dictionary/gram_n2?tab=factsheet#2654720",
+      "https://www.oed.com/dictionary/gram_n4?tab=factsheet#2655262",
+      "https://www.littre.org/definition/gramme",
+      "https://latin-dictionary.net/definition/21627/gramma-grammatis",
+      "https://lsj.gr/wiki/%CE%B3%CF%81%CE%AC%CE%BC%CE%BC%CE%B1"
+    ]
   }
 ]

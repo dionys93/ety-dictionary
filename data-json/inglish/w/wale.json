@@ -1,75 +1,55 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "wale",
-      "etymology": [
-        {
-          "name": "walu",
-          "origin": "Old English"
-        },
-        {
-          "name": "wale",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ɯâle, ɯâls",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/wale",
-        "https://www.oed.com/dictionary/wale_n1?tab=factsheet#15244254",
-        "https://bosworthtoller.com/34601",
-        "https://bosworthtoller.com/34602"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "wale",
+    "etymology": [
+      {
+        "name": "walu",
+        "origin": "Old English"
+      },
+      {
+        "name": "wale",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ɯâle, ɯâls",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/wale",
+      "https://www.oed.com/dictionary/wale_n1?tab=factsheet#15244254",
+      "https://bosworthtoller.com/34601",
+      "https://bosworthtoller.com/34602"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to whale, to wale",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to whale, to wale",
+    "etymology": [
+      {
+        "name": "to whale, to wale",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to whale, to wale",
-        "ta ɯâle -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to whale, to wale",
-      "etymology": [
-        {
-          "name": "to whale, to wale",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta ɯâle -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta ɯâle -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta ɯâles",
+          "pastTense": "ta ɯâled",
+          "progressive": "ta ɯâling"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/wale#etymonline_v_4801",
-        "https://www.oed.com/dictionary/whale_v2?tab=factsheet#14669722"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/wale#etymonline_v_4801",
+      "https://www.oed.com/dictionary/whale_v2?tab=factsheet#14669722"
+    ]
   }
 ]

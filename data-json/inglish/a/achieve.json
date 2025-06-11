@@ -1,129 +1,96 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to achieve  -s -d -ing (v)",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to achieve  -s -d -ing (v)",
+    "etymology": [
+      {
+        "name": "ad caput venire",
+        "origin": "Latin"
       },
-      "etymology": [
-        "ad caput venire",
-        "à chef venir, achever",
-        "acheven",
-        "to achieve  -s -d -ing (v)",
-        "to achíve -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to achieve  -s -d -ing (v)",
-      "etymology": [
-        {
-          "name": "ad caput venire",
-          "origin": "Latin"
-        },
-        {
-          "name": "à chef venir, achever",
-          "origin": "Old French"
-        },
-        {
-          "name": "acheven",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to achieve  -s -d -ing (v)",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to achíve -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "à chef venir, achever",
+        "origin": "Old French"
+      },
+      {
+        "name": "acheven",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to achieve  -s -d -ing (v)",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to achíve -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to achíves",
+          "pastTense": "to achíved",
+          "progressive": "to achíving"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/achieve#etymonline_v_149",
-        "https://www.merriam-webster.com/dictionary/achieve",
-        "https://www.oed.com/dictionary/achieve_v?tab=factsheet#29281646",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED357",
-        "https://www.anglo-norman.net/entry/achever",
-        "https://latin-dictionary.net/definition/38512/venio-venire-veni-ventus",
-        "https://latin-dictionary.net/definition/8130/caput-capitis",
-        "https://latin-dictionary.net/definition/702/ad"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/achieve#etymonline_v_149",
+      "https://www.merriam-webster.com/dictionary/achieve",
+      "https://www.oed.com/dictionary/achieve_v?tab=factsheet#29281646",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED357",
+      "https://www.anglo-norman.net/entry/achever",
+      "https://latin-dictionary.net/definition/38512/venio-venire-veni-ventus",
+      "https://latin-dictionary.net/definition/8130/caput-capitis",
+      "https://latin-dictionary.net/definition/702/ad"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "achievable",
-      "etymology": [
-        {
-          "name": "achievable  -y (adj)",
-          "origin": "Modern English"
-        },
-        {
-          "name": "achívable -y",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/achievable#etymonline_v_52136",
-        "https://www.etymonline.com/word/achieve#etymonline_v_149",
-        "https://www.etymonline.com/word/-able#etymonline_v_49",
-        "https://www.merriam-webster.com/dictionary/achievable",
-        "https://www.oed.com/dictionary/achievable_adj?tab=factsheet#29230755"
-      ],
-      "degrees": {
-        "positive": "vable",
-        "comparative": "y"
+    "name": "achievable  -y (adj)",
+    "etymology": [
+      {
+        "name": "achievable  -y (adj)",
+        "origin": "Modern English"
+      },
+      {
+        "name": "achívable -y",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/achievable#etymonline_v_52136",
+      "https://www.etymonline.com/word/achieve#etymonline_v_149",
+      "https://www.etymonline.com/word/-able#etymonline_v_49",
+      "https://www.merriam-webster.com/dictionary/achievable",
+      "https://www.oed.com/dictionary/achievable_adj?tab=factsheet#29230755"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "achievement",
-      "etymology": [
-        {
-          "name": "achever, achèvement",
-          "origin": "Old French"
-        },
-        {
-          "name": "achievement",
-          "origin": "Modern English"
-        },
-        {
-          "name": "achívement -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/achievement#etymonline_v_25973",
-        "https://www.oed.com/dictionary/achievement_n?tab=pronunciation#29329641",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/ach%C3%A8vement/687",
-        "https://www.anglo-norman.net/entry/achevement",
-        "https://www.anglo-norman.net/entry/achever"
-      ],
-      "number": "plural"
-    }
+    "name": "achievement",
+    "etymology": [
+      {
+        "name": "achever, achèvement",
+        "origin": "Old French"
+      },
+      {
+        "name": "achievement",
+        "origin": "Modern English"
+      },
+      {
+        "name": "achívement -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/achievement#etymonline_v_25973",
+      "https://www.oed.com/dictionary/achievement_n?tab=pronunciation#29329641",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/ach%C3%A8vement/687",
+      "https://www.anglo-norman.net/entry/achevement",
+      "https://www.anglo-norman.net/entry/achever"
+    ]
   }
 ]

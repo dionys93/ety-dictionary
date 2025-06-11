@@ -1,104 +1,77 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to listen",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to listen",
+    "etymology": [
+      {
+        "name": "hlystan, hlysnan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "hlystan, hlysnan",
-        "to listen",
-        "ta lissane -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to listen",
-      "etymology": [
-        {
-          "name": "hlystan, hlysnan",
-          "origin": "Old English"
-        },
-        {
-          "name": "to listen",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta lissane -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to listen",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta lissane -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta lissanes",
+          "pastTense": "ta lissaned",
+          "progressive": "ta lissaning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/listen",
-        "https://www.oed.com/dictionary/listen_v?tab=factsheet#38952180",
-        "https://bosworthtoller.com/52824",
-        "https://bosworthtoller.com/52822"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/listen",
+      "https://www.oed.com/dictionary/listen_v?tab=factsheet#38952180",
+      "https://bosworthtoller.com/52824",
+      "https://bosworthtoller.com/52822"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "listen",
-      "etymology": [
-        {
-          "name": "listen",
-          "origin": "Modern English"
-        },
-        {
-          "name": "lissan -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/listen",
-        "https://www.oed.com/dictionary/listen_n?tab=factsheet#38952000"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "listen",
+    "etymology": [
+      {
+        "name": "listen",
+        "origin": "Modern English"
+      },
+      {
+        "name": "lissan -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/listen",
+      "https://www.oed.com/dictionary/listen_n?tab=factsheet#38952000"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "listener",
-      "etymology": [
-        {
-          "name": "listener",
-          "origin": "Modern English"
-        },
-        {
-          "name": "lissneur, lissnor -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/listener",
-        "https://www.oed.com/dictionary/listener_n?tab=factsheet#38953349"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "listener",
+    "etymology": [
+      {
+        "name": "listener",
+        "origin": "Modern English"
+      },
+      {
+        "name": "lissneur, lissnor -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/listener",
+      "https://www.oed.com/dictionary/listener_n?tab=factsheet#38953349"
+    ]
   }
 ]

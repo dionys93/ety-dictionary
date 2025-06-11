@@ -1,36 +1,30 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "mollusk",
-      "etymology": [
-        {
-          "name": "mollusque",
-          "origin": "French"
-        },
-        {
-          "name": "mollusk",
-          "origin": "Modern English"
-        },
-        {
-          "name": "mollusc -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/mollusk#etymonline_v_17412",
-        "https://www.etymonline.com/word/mollusc#etymonline_v_32374",
-        "https://www.merriam-webster.com/dictionary/mollusk",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/mollusque/51991"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "mollusk",
+    "etymology": [
+      {
+        "name": "mollusque",
+        "origin": "French"
+      },
+      {
+        "name": "mollusk",
+        "origin": "Modern English"
+      },
+      {
+        "name": "mollusc -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/mollusk#etymonline_v_17412",
+      "https://www.etymonline.com/word/mollusc#etymonline_v_32374",
+      "https://www.merriam-webster.com/dictionary/mollusk",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/mollusque/51991"
+    ]
   }
 ]

@@ -1,99 +1,81 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "swirl",
-      "etymology": [
-        {
-          "name": "swirl",
-          "origin": "Modern English"
-        },
-        {
-          "name": "suerle, suerls",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/swirl#etymonline_v_22495",
-        "https://www.merriam-webster.com/dictionary/swirl#dictionary-entry-2"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "swirl",
+    "etymology": [
+      {
+        "name": "swirl",
+        "origin": "Modern English"
+      },
+      {
+        "name": "suerle, suerls",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/swirl#etymonline_v_22495",
+      "https://www.merriam-webster.com/dictionary/swirl#dictionary-entry-2"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to swirl",
-      "etymology": [
-        "zwirrelen",
-        "swirlen",
-        "to swirl",
-        "ta suerle -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to swirl",
-      "etymology": [
-        {
-          "name": "zwirrelen",
-          "origin": "Inglish"
-        },
-        {
-          "name": "swirlen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to swirl",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta suerle -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+    "infinitive": "to swirl",
+    "etymology": [
+      {
+        "name": "zwirrelen",
+        "origin": "Inglish"
+      },
+      {
+        "name": "swirlen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to swirl",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta suerle -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta suerles",
+          "pastTense": "ta suerled",
+          "progressive": "ta suerling"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/swirl#etymonline_v_46413",
-        "https://www.etymonline.com/word/swirl#etymonline_v_22495",
-        "https://www.merriam-webster.com/dictionary/swirl#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44274",
-        "https://www.deepl.com/translator?utm_source=lingueecom&utm_medium=linguee&utm_content=header_translator#nl/en/zwirrelen"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/swirl#etymonline_v_46413",
+      "https://www.etymonline.com/word/swirl#etymonline_v_22495",
+      "https://www.merriam-webster.com/dictionary/swirl#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44274",
+      "https://www.deepl.com/translator?utm_source=lingueecom&utm_medium=linguee&utm_content=header_translator#nl/en/zwirrelen"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "swirly",
-      "etymology": [
-        {
-          "name": "swirly",
-          "origin": "Modern English"
-        },
-        {
-          "name": "suerly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/swirly#etymonline_v_49365",
-        "https://www.etymonline.com/word/swirl#etymonline_v_22495",
-        "https://www.etymonline.com/word/-y#etymonline_v_25631"
-      ]
-    }
+    "name": "swirly",
+    "etymology": [
+      {
+        "name": "swirly",
+        "origin": "Modern English"
+      },
+      {
+        "name": "suerly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/swirly#etymonline_v_49365",
+      "https://www.etymonline.com/word/swirl#etymonline_v_22495",
+      "https://www.etymonline.com/word/-y#etymonline_v_25631"
+    ]
   }
 ]

@@ -1,110 +1,84 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to grow",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to grow",
+    "etymology": [
+      {
+        "name": "growan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "growan",
-        "grouen",
-        "to grow",
-        "ta groɯe -s grou groɯn -ing"
-      ]
-    },
-    "standard": {
-      "name": "to grow",
-      "etymology": [
-        {
-          "name": "growan",
-          "origin": "Old English"
-        },
-        {
-          "name": "grouen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to grow",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta groɯe -s grou groɯn -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "grouen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to grow",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta groɯe -s grou groɯn -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta groɯes"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/grow#etymonline_v_14316",
-        "https://www.merriam-webster.com/dictionary/grow",
-        "https://www.oed.com/dictionary/grow_v?tab=pronunciation#2568552",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED19597",
-        "https://bosworthtoller.com/17567"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/grow#etymonline_v_14316",
+      "https://www.merriam-webster.com/dictionary/grow",
+      "https://www.oed.com/dictionary/grow_v?tab=pronunciation#2568552",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED19597",
+      "https://bosworthtoller.com/17567"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "grower",
-      "etymology": [
-        {
-          "name": "grower",
-          "origin": "Modern English"
-        },
-        {
-          "name": "groɯeur, groɯor -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/grower#etymonline_v_41260",
-        "https://www.merriam-webster.com/dictionary/grower",
-        "https://www.oed.com/dictionary/grower_n?tab=factsheet#2572021"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "grower",
+    "etymology": [
+      {
+        "name": "grower",
+        "origin": "Modern English"
+      },
+      {
+        "name": "groɯeur, groɯor -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/grower#etymonline_v_41260",
+      "https://www.merriam-webster.com/dictionary/grower",
+      "https://www.oed.com/dictionary/grower_n?tab=factsheet#2572021"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "growth",
-      "etymology": [
-        {
-          "name": "growth",
-          "origin": "Modern English"
-        },
-        {
-          "name": "groɯþ -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/growth#etymonline_v_33827",
-        "https://www.etymonline.com/word/grow#etymonline_v_14316",
-        "https://www.etymonline.com/word/-th#etymonline_v_24667",
-        "https://www.merriam-webster.com/dictionary/growth",
-        "https://www.oed.com/dictionary/growth_n1?tab=factsheet#2574832"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "growth",
+    "etymology": [
+      {
+        "name": "growth",
+        "origin": "Modern English"
+      },
+      {
+        "name": "groɯþ -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/growth#etymonline_v_33827",
+      "https://www.etymonline.com/word/grow#etymonline_v_14316",
+      "https://www.etymonline.com/word/-th#etymonline_v_24667",
+      "https://www.merriam-webster.com/dictionary/growth",
+      "https://www.oed.com/dictionary/growth_n1?tab=factsheet#2574832"
+    ]
   }
 ]

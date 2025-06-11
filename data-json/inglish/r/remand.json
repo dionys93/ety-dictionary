@@ -1,81 +1,67 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to remand",
-      "etymology": [
-        "re + mandare, remandare",
-        "remander",
-        "remaunder",
-        "remaunden",
-        "to remand",
-        "ta remande -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to remand",
-      "etymology": [
-        {
-          "name": "re + mandare, remandare",
-          "origin": "Latin"
-        },
-        {
-          "name": "remander",
-          "origin": "Old French"
-        },
-        {
-          "name": "remaunder",
-          "origin": "Inglish"
-        },
-        {
-          "name": "remaunden",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to remand",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta remande -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+    "infinitive": "to remand",
+    "etymology": [
+      {
+        "name": "re + mandare, remandare",
+        "origin": "Latin"
+      },
+      {
+        "name": "remander",
+        "origin": "Old French"
+      },
+      {
+        "name": "remaunder",
+        "origin": "Inglish"
+      },
+      {
+        "name": "remaunden",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to remand",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta remande -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta remandes",
+          "pastTense": "ta remanded",
+          "progressive": "ta remanding"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/remand#etymonline_v_10396",
-        "https://www.merriam-webster.com/dictionary/remand#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36677",
-        "https://www.anglo-norman.net/entry/remander_1"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/remand#etymonline_v_10396",
+      "https://www.merriam-webster.com/dictionary/remand#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36677",
+      "https://www.anglo-norman.net/entry/remander_1"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "remand",
-      "etymology": [
-        {
-          "name": "remand",
-          "origin": "Modern English"
-        },
-        {
-          "name": "remande, remànds",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/remand#dictionary-entry-2",
-        "https://www.merriam-webster.com/dictionary/remand#word-history"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "remand",
+    "etymology": [
+      {
+        "name": "remand",
+        "origin": "Modern English"
+      },
+      {
+        "name": "remande, remànds",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/remand#dictionary-entry-2",
+      "https://www.merriam-webster.com/dictionary/remand#word-history"
+    ]
   }
 ]

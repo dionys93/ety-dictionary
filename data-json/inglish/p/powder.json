@@ -1,91 +1,69 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "powder",
-      "etymology": [
-        {
-          "name": "pulverem",
-          "origin": "Latin"
-        },
-        {
-          "name": "pouldre, poudre",
-          "origin": "Old French"
-        },
-        {
-          "name": "powder",
-          "origin": "Modern English"
-        },
-        {
-          "name": "paodre, paoders",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/powder#etymonline_v_18594",
-        "https://www.merriam-webster.com/dictionary/powder#dictionary-entry-2",
-        "https://anglo-norman.net/entry/poudre",
-        "https://latin-dictionary.net/definition/32302/pulvis-pulveris"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "powder",
+    "etymology": [
+      {
+        "name": "pulverem",
+        "origin": "Latin"
+      },
+      {
+        "name": "pouldre, poudre",
+        "origin": "Old French"
+      },
+      {
+        "name": "powder",
+        "origin": "Modern English"
+      },
+      {
+        "name": "paodre, paoders",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/powder#etymonline_v_18594",
+      "https://www.merriam-webster.com/dictionary/powder#dictionary-entry-2",
+      "https://anglo-norman.net/entry/poudre",
+      "https://latin-dictionary.net/definition/32302/pulvis-pulveris"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to powder",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ering"
+    "infinitive": "to powder",
+    "etymology": [
+      {
+        "name": "poudrer",
+        "origin": "Old French"
       },
-      "etymology": [
-        "poudrer",
-        "poudren",
-        "to powder",
-        "ta paodre -s -d -ering"
-      ]
-    },
-    "standard": {
-      "name": "to powder",
-      "etymology": [
-        {
-          "name": "poudrer",
-          "origin": "Old French"
-        },
-        {
-          "name": "poudren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to powder",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta paodre -s -d -ering",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "poudren",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to powder",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta paodre -s -d -ering",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta paodres",
+          "pastTense": "ta paodred",
+          "progressive": "ta paodreering"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/powder#etymonline_v_29899",
-        "https://www.merriam-webster.com/dictionary/powder#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED34206",
-        "https://anglo-norman.net/entry/poudrer"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ering"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/powder#etymonline_v_29899",
+      "https://www.merriam-webster.com/dictionary/powder#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED34206",
+      "https://anglo-norman.net/entry/poudrer"
+    ]
   }
 ]

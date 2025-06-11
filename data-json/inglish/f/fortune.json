@@ -1,108 +1,82 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "fortune",
-      "etymology": [
-        {
-          "name": "fors, fortis, fortuna",
-          "origin": "Latin"
-        },
-        {
-          "name": "fortune",
-          "origin": "Old French"
-        },
-        {
-          "name": "forȶon -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fortune#etymonline_v_11830",
-        "https://www.oed.com/dictionary/fortune_n?tab=factsheet#3844317",
-        "https://anglo-norman.net/entry/fortune",
-        "https://latin-dictionary.net/definition/20945/fortuna-fortunae",
-        "https://latin-dictionary.net/definition/20927/fors-fortis"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to fortune",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "fortune",
+    "etymology": [
+      {
+        "name": "fors, fortis, fortuna",
+        "origin": "Latin"
       },
-      "etymology": [
-        "to fortune",
-        "ta forȶone -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to fortune",
-      "etymology": [
-        {
-          "name": "to fortune",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta forȶone -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.oed.com/dictionary/fortune_v?tab=factsheet#3845701",
-        "https://www.etymonline.com/word/fortune#etymonline_v_11830"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "fortune",
+        "origin": "Old French"
+      },
+      {
+        "name": "forȶon -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fortune#etymonline_v_11830",
+      "https://www.oed.com/dictionary/fortune_n?tab=factsheet#3844317",
+      "https://anglo-norman.net/entry/fortune",
+      "https://latin-dictionary.net/definition/20945/fortuna-fortunae",
+      "https://latin-dictionary.net/definition/20927/fors-fortis"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "fortunate",
-      "etymology": [
-        {
-          "name": "fortuna, fortunare, fortunatus",
-          "origin": "Latin"
-        },
-        {
-          "name": "fortunate",
-          "origin": "Modern English"
-        },
-        {
-          "name": "forȶonat",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
+    "infinitive": "to fortune",
+    "etymology": [
+      {
+        "name": "to fortune",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta forȶone -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta forȶones",
+          "pastTense": "ta forȶoned",
+          "progressive": "ta forȶoning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fortunate",
-        "https://www.oed.com/dictionary/fortunate_adj?tab=factsheet#3843597",
-        "https://latin-dictionary.net/definition/20949/fortuno-fortunare-fortunavi-fortunatus",
-        "https://latin-dictionary.net/definition/20945/fortuna-fortunae"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.oed.com/dictionary/fortune_v?tab=factsheet#3845701",
+      "https://www.etymonline.com/word/fortune#etymonline_v_11830"
+    ]
+  },
+  {
+    "name": "fortunate",
+    "etymology": [
+      {
+        "name": "fortuna, fortunare, fortunatus",
+        "origin": "Latin"
+      },
+      {
+        "name": "fortunate",
+        "origin": "Modern English"
+      },
+      {
+        "name": "forȶonat",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fortunate",
+      "https://www.oed.com/dictionary/fortunate_adj?tab=factsheet#3843597",
+      "https://latin-dictionary.net/definition/20949/fortuno-fortunare-fortunavi-fortunatus",
+      "https://latin-dictionary.net/definition/20945/fortuna-fortunae"
+    ]
   }
 ]

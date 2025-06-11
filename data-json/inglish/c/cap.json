@@ -1,74 +1,54 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "cap",
-      "etymology": [
-        {
-          "name": "cæppe",
-          "origin": "Old English"
-        },
-        {
-          "name": "cap",
-          "origin": "Modern English"
-        },
-        {
-          "name": "cape, caps",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/cap",
-        "https://www.oed.com/dictionary/cap_n1?tab=factsheet#10120599",
-        "https://bosworthtoller.com/5751"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "cap",
+    "etymology": [
+      {
+        "name": "cæppe",
+        "origin": "Old English"
+      },
+      {
+        "name": "cap",
+        "origin": "Modern English"
+      },
+      {
+        "name": "cape, caps",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/cap",
+      "https://www.oed.com/dictionary/cap_n1?tab=factsheet#10120599",
+      "https://bosworthtoller.com/5751"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to cap",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to cap",
+    "etymology": [
+      {
+        "name": "to cap",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to cap",
-        "ta cape -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to cap",
-      "etymology": [
-        {
-          "name": "to cap",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta cape -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta cape -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta capes",
+          "pastTense": "ta caped",
+          "progressive": "ta caping"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/cap",
-        "https://www.oed.com/dictionary/cap_v1?tab=factsheet#10124056"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/cap",
+      "https://www.oed.com/dictionary/cap_v1?tab=factsheet#10124056"
+    ]
   }
 ]

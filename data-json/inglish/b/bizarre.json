@@ -1,65 +1,49 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "bizarre",
-      "etymology": [
-        {
-          "name": "bizza, bizarro",
-          "origin": "Italian"
-        },
-        {
-          "name": "bizarre",
-          "origin": "French"
-        },
-        {
-          "name": "bizár -ly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bizarre#etymonline_v_11205",
-        "https://www.oed.com/dictionary/bizarre_adj?tab=pronunciation#19368952",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/bizarre/9580",
-        "https://www.collinsdictionary.com/us/dictionary/italian-english/bizza"
-      ],
-      "degrees": {
-        "positive": "r",
-        "comparative": "ly"
+    "name": "bizarre",
+    "etymology": [
+      {
+        "name": "bizza, bizarro",
+        "origin": "Italian"
+      },
+      {
+        "name": "bizarre",
+        "origin": "French"
+      },
+      {
+        "name": "bizár -ly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bizarre#etymonline_v_11205",
+      "https://www.oed.com/dictionary/bizarre_adj?tab=pronunciation#19368952",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/bizarre/9580",
+      "https://www.collinsdictionary.com/us/dictionary/italian-english/bizza"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "bizarreness",
-      "etymology": [
-        {
-          "name": "bizarreness",
-          "origin": "Modern English"
-        },
-        {
-          "name": "bizáness",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.oed.com/dictionary/bizarreness_n?tab=factsheet#19370668100"
-      ],
-      "gender": "feminine",
-      "number": "singular"
-    }
+    "name": "bizarreness",
+    "etymology": [
+      {
+        "name": "bizarreness",
+        "origin": "Modern English"
+      },
+      {
+        "name": "bizáness",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.oed.com/dictionary/bizarreness_n?tab=factsheet#19370668100"
+    ]
   }
 ]

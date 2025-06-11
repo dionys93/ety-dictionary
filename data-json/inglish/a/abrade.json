@@ -1,127 +1,95 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "abrasion",
-      "etymology": [
-        {
-          "name": "abradere, abrasio",
-          "origin": "Latin"
-        },
-        {
-          "name": "abrasion",
-          "origin": "Modern English"
-        },
-        {
-          "name": "abrâsion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/abrasion#etymonline_v_68",
-        "https://www.merriam-webster.com/dictionary/abrasion",
-        "https://www.oed.com/dictionary/abrasion_n?tab=factsheet#6281881",
-        "https://latin-dictionary.net/definition/186/abrado-abradere-abrasi-abrasus",
-        "https://latin-dictionary.net/definition/32851/rado-radere-rasi-rasus",
-        "https://latin-dictionary.net/definition/6/ab"
-      ],
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "abrasive",
-      "etymology": [
-        {
-          "name": "ab + radere, abradere",
-          "origin": "Latin"
-        },
-        {
-          "name": "abrasive",
-          "origin": "Modern English"
-        },
-        {
-          "name": "abrâssif -vly -ness",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/abrasive#etymonline_v_44059",
-        "https://www.etymonline.com/word/abrasive#etymonline_v_25915",
-        "https://www.merriam-webster.com/dictionary/abrasive#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/abrasive#dictionary-entry-2",
-        "https://www.oed.com/dictionary/abrasive_adj?tab=factsheet#6294488",
-        "https://latin-dictionary.net/definition/186/abrado-abradere-abrasi-abrasus",
-        "https://latin-dictionary.net/definition/32851/rado-radere-rasi-rasus",
-        "https://latin-dictionary.net/definition/6/ab"
-      ],
-      "degrees": {
-        "positive": "ssif",
-        "comparative": "vly",
-        "superlative": "ness"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to abrade",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "abrasion",
+    "etymology": [
+      {
+        "name": "abradere, abrasio",
+        "origin": "Latin"
       },
-      "etymology": [
-        "ab + radere, abradere",
-        "to abrade",
-        "to abrâde -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to abrade",
-      "etymology": [
-        {
-          "name": "ab + radere, abradere",
-          "origin": "Latin"
-        },
-        {
-          "name": "to abrade",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to abrâde -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/abrade#etymonline_v_66",
-        "https://www.merriam-webster.com/dictionary/abrade",
-        "https://www.oed.com/dictionary/abrade_v?tab=factsheet#6547708",
-        "https://latin-dictionary.net/definition/186/abrado-abradere-abrasi-abrasus",
-        "https://latin-dictionary.net/definition/32851/rado-radere-rasi-rasus",
-        "https://latin-dictionary.net/definition/6/ab"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "abrasion",
+        "origin": "Modern English"
+      },
+      {
+        "name": "abrâsion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/abrasion#etymonline_v_68",
+      "https://www.merriam-webster.com/dictionary/abrasion",
+      "https://www.oed.com/dictionary/abrasion_n?tab=factsheet#6281881",
+      "https://latin-dictionary.net/definition/186/abrado-abradere-abrasi-abrasus",
+      "https://latin-dictionary.net/definition/32851/rado-radere-rasi-rasus",
+      "https://latin-dictionary.net/definition/6/ab"
+    ]
+  },
+  {
+    "name": "abrasive",
+    "etymology": [
+      {
+        "name": "ab + radere, abradere",
+        "origin": "Latin"
+      },
+      {
+        "name": "abrasive",
+        "origin": "Modern English"
+      },
+      {
+        "name": "abrâssif -vly -ness",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "noun"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/abrasive#etymonline_v_44059",
+      "https://www.etymonline.com/word/abrasive#etymonline_v_25915",
+      "https://www.merriam-webster.com/dictionary/abrasive#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/abrasive#dictionary-entry-2",
+      "https://www.oed.com/dictionary/abrasive_adj?tab=factsheet#6294488",
+      "https://latin-dictionary.net/definition/186/abrado-abradere-abrasi-abrasus",
+      "https://latin-dictionary.net/definition/32851/rado-radere-rasi-rasus",
+      "https://latin-dictionary.net/definition/6/ab"
+    ]
+  },
+  {
+    "infinitive": "to abrade",
+    "etymology": [
+      {
+        "name": "ab + radere, abradere",
+        "origin": "Latin"
+      },
+      {
+        "name": "to abrade",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to abrâde -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to abrâdes",
+          "pastTense": "to abrâded",
+          "progressive": "to abrâding"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/abrade#etymonline_v_66",
+      "https://www.merriam-webster.com/dictionary/abrade",
+      "https://www.oed.com/dictionary/abrade_v?tab=factsheet#6547708",
+      "https://latin-dictionary.net/definition/186/abrado-abradere-abrasi-abrasus",
+      "https://latin-dictionary.net/definition/32851/rado-radere-rasi-rasus",
+      "https://latin-dictionary.net/definition/6/ab"
+    ]
   }
 ]

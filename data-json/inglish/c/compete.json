@@ -1,282 +1,216 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to compete",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to compete",
+    "etymology": [
+      {
+        "name": "com + petere, competere",
+        "origin": "Latin"
       },
-      "etymology": [
-        "com + petere, competere",
-        "compéter",
-        "to compete",
-        "ta compite -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to compete",
-      "etymology": [
-        {
-          "name": "com + petere, competere",
-          "origin": "Latin"
-        },
-        {
-          "name": "compéter",
-          "origin": "Old French"
-        },
-        {
-          "name": "to compete",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta compite -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "compéter",
+        "origin": "Old French"
+      },
+      {
+        "name": "to compete",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta compite -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta compites",
+          "pastTense": "ta compited",
+          "progressive": "ta compiting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/compete#etymonline_v_17263",
-        "https://latin-dictionary.net/definition/11695/competo-competere-competivi-competitus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/compete#etymonline_v_17263",
+      "https://latin-dictionary.net/definition/11695/competo-competere-competivi-competitus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "competition",
-      "etymology": [
-        {
-          "name": "competere, competitio",
-          "origin": "Latin"
-        },
-        {
-          "name": "competition",
-          "origin": "Modern English"
-        },
-        {
-          "name": "competicion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/competition#etymonline_v_28465",
-        "https://latin-dictionary.net/definition/11690/competitio-competitionis"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "competitive",
-      "etymology": [
-        {
-          "name": "competere",
-          "origin": "Latin"
-        },
-        {
-          "name": "competitive",
-          "origin": "Modern English"
-        },
-        {
-          "name": "compètitif -vly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/competitive#etymonline_v_28466",
-        "https://www.etymonline.com/word/compete#etymonline_v_17263",
-        "https://www.etymonline.com/word/-ive#etymonline_v_32842",
-        "https://latin-dictionary.net/definition/11695/competo-competere-competivi-competitus"
-      ],
-      "degrees": {
-        "positive": "titif",
-        "comparative": "vly"
+    "name": "competition",
+    "etymology": [
+      {
+        "name": "competere, competitio",
+        "origin": "Latin"
+      },
+      {
+        "name": "competition",
+        "origin": "Modern English"
+      },
+      {
+        "name": "competicion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/competition#etymonline_v_28465",
+      "https://latin-dictionary.net/definition/11690/competitio-competitionis"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "competitor",
-      "etymology": [
-        {
-          "name": "competitor",
-          "origin": "Latin"
-        },
-        {
-          "name": "compètitor -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/competitor#etymonline_v_28467",
-        "https://www.oed.com/dictionary/competitor_n?tab=factsheet#8820883",
-        "https://latin-dictionary.net/definition/11692/competitor-competitoris"
-      ],
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "competitory",
-      "etymology": [
-        {
-          "name": "competitory",
-          "origin": "Modern English"
-        },
-        {
-          "name": "compètitory",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.collinsdictionary.com/us/dictionary/english/competitory",
-        "https://www.oed.com/dictionary/competitory_adj?tab=factsheet#8821174"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "competent",
-      "etymology": [
-        {
-          "name": "competere, competens",
-          "origin": "Latin"
-        },
-        {
-          "name": "competent",
-          "origin": "Old French"
-        },
-        {
-          "name": "cómpetent -ly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/competent#etymonline_v_17264",
-        "https://www.anglo-norman.net/entry/competent",
-        "https://latin-dictionary.net/definition/11686/competens-gen-competentis",
-        "https://latin-dictionary.net/definition/11695/competo-competere-competivi-competitus"
-      ],
-      "degrees": {
-        "positive": "mpetent",
-        "comparative": "ly"
+    "name": "competitive",
+    "etymology": [
+      {
+        "name": "competere",
+        "origin": "Latin"
+      },
+      {
+        "name": "competitive",
+        "origin": "Modern English"
+      },
+      {
+        "name": "compètitif -vly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/competitive#etymonline_v_28466",
+      "https://www.etymonline.com/word/compete#etymonline_v_17263",
+      "https://www.etymonline.com/word/-ive#etymonline_v_32842",
+      "https://latin-dictionary.net/definition/11695/competo-competere-competivi-competitus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "competence",
-      "etymology": [
-        {
-          "name": "competere, competens, competentia",
-          "origin": "Latin"
-        },
-        {
-          "name": "compétence",
-          "origin": "French"
-        },
-        {
-          "name": "competence",
-          "origin": "Modern English"
-        },
-        {
-          "name": "cómpetence -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/competence#etymonline_v_28463",
-        "https://www.collinsdictionary.com/us/dictionary/french-english/comp%C3%A9tence",
-        "https://latin-dictionary.net/definition/11688/competentia-competentiae",
-        "https://latin-dictionary.net/definition/11686/competens-gen-competentis",
-        "https://latin-dictionary.net/definition/11695/competo-competere-competivi-competitus"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "competitor",
+    "etymology": [
+      {
+        "name": "competitor",
+        "origin": "Latin"
+      },
+      {
+        "name": "compètitor -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/competitor#etymonline_v_28467",
+      "https://www.oed.com/dictionary/competitor_n?tab=factsheet#8820883",
+      "https://latin-dictionary.net/definition/11692/competitor-competitoris"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "competency",
-      "etymology": [
-        {
-          "name": "competere, competens, competentia",
-          "origin": "Latin"
-        },
-        {
-          "name": "competency",
-          "origin": "Modern English"
-        },
-        {
-          "name": "cómpetencie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/competency#etymonline_v_28464",
-        "https://latin-dictionary.net/definition/11688/competentia-competentiae",
-        "https://latin-dictionary.net/definition/11686/competens-gen-competentis",
-        "https://latin-dictionary.net/definition/11695/competo-competere-competivi-competitus"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "competitory",
+    "etymology": [
+      {
+        "name": "competitory",
+        "origin": "Modern English"
+      },
+      {
+        "name": "compètitory",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.collinsdictionary.com/us/dictionary/english/competitory",
+      "https://www.oed.com/dictionary/competitory_adj?tab=factsheet#8821174"
+    ]
+  },
+  {
+    "name": "competent",
+    "etymology": [
+      {
+        "name": "competere, competens",
+        "origin": "Latin"
+      },
+      {
+        "name": "competent",
+        "origin": "Old French"
+      },
+      {
+        "name": "cómpetent -ly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/competent#etymonline_v_17264",
+      "https://www.anglo-norman.net/entry/competent",
+      "https://latin-dictionary.net/definition/11686/competens-gen-competentis",
+      "https://latin-dictionary.net/definition/11695/competo-competere-competivi-competitus"
+    ]
+  },
+  {
+    "name": "competence",
+    "etymology": [
+      {
+        "name": "competere, competens, competentia",
+        "origin": "Latin"
+      },
+      {
+        "name": "compétence",
+        "origin": "French"
+      },
+      {
+        "name": "competence",
+        "origin": "Modern English"
+      },
+      {
+        "name": "cómpetence -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/competence#etymonline_v_28463",
+      "https://www.collinsdictionary.com/us/dictionary/french-english/comp%C3%A9tence",
+      "https://latin-dictionary.net/definition/11688/competentia-competentiae",
+      "https://latin-dictionary.net/definition/11686/competens-gen-competentis",
+      "https://latin-dictionary.net/definition/11695/competo-competere-competivi-competitus"
+    ]
+  },
+  {
+    "name": "competency",
+    "etymology": [
+      {
+        "name": "competere, competens, competentia",
+        "origin": "Latin"
+      },
+      {
+        "name": "competency",
+        "origin": "Modern English"
+      },
+      {
+        "name": "cómpetencie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/competency#etymonline_v_28464",
+      "https://latin-dictionary.net/definition/11688/competentia-competentiae",
+      "https://latin-dictionary.net/definition/11686/competens-gen-competentis",
+      "https://latin-dictionary.net/definition/11695/competo-competere-competivi-competitus"
+    ]
   }
 ]

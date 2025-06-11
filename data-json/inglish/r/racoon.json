@@ -1,32 +1,28 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "raccoon",
-      "etymology": [
-        {
-          "name": "arahkunem, arahkun, arocoun",
-          "origin": "Inglish"
-        },
-        {
-          "name": "raccoon",
-          "origin": "Modern English"
-        },
-        {
-          "name": "racune, racúns",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/raccoon",
-        "https://www.oed.com/dictionary/raccoon_n?tab=factsheet#27261342"
-      ]
-    }
+    "name": "raccoon",
+    "etymology": [
+      {
+        "name": "arahkunem, arahkun, arocoun",
+        "origin": "Inglish"
+      },
+      {
+        "name": "raccoon",
+        "origin": "Modern English"
+      },
+      {
+        "name": "racune, racúns",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/raccoon",
+      "https://www.oed.com/dictionary/raccoon_n?tab=factsheet#27261342"
+    ]
   }
 ]

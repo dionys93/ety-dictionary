@@ -1,94 +1,72 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "worship",
-      "etymology": [
-        {
-          "name": "weorð + scipe, worðscip, wurðscip, weorðscipe",
-          "origin": "Old English"
-        },
-        {
-          "name": "worshippe",
-          "origin": "Middle English"
-        },
-        {
-          "name": "worship",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ɯorçip",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/worship#etymonline_v_10853",
-        "https://www.merriam-webster.com/dictionary/worship#dictionary-entry-2",
-        "https://www.oed.com/dictionary/worship_n?tab=factsheet#13883729",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED53452",
-        "https://bosworthtoller.com/35322"
-      ],
-      "gender": "masculine",
-      "number": "singular"
-    }
+    "name": "worship",
+    "etymology": [
+      {
+        "name": "weorð + scipe, worðscip, wurðscip, weorðscipe",
+        "origin": "Old English"
+      },
+      {
+        "name": "worshippe",
+        "origin": "Middle English"
+      },
+      {
+        "name": "worship",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ɯorçip",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/worship#etymonline_v_10853",
+      "https://www.merriam-webster.com/dictionary/worship#dictionary-entry-2",
+      "https://www.oed.com/dictionary/worship_n?tab=factsheet#13883729",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED53452",
+      "https://bosworthtoller.com/35322"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to worship",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to worship",
+    "etymology": [
+      {
+        "name": "worðscip",
+        "origin": "Old English"
       },
-      "etymology": [
-        "worðscip",
-        "worshipen",
-        "to worship",
-        "ta ɯorçipe -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to worship",
-      "etymology": [
-        {
-          "name": "worðscip",
-          "origin": "Old English"
-        },
-        {
-          "name": "worshipen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to worship",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta ɯorçipe -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "worshipen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to worship",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta ɯorçipe -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta ɯorçipes",
+          "pastTense": "ta ɯorçiped",
+          "progressive": "ta ɯorçiping"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/worship#etymonline_v_46497",
-        "https://www.etymonline.com/word/worship#etymonline_v_10853",
-        "https://www.merriam-webster.com/dictionary/worship#dictionary-entry-1",
-        "https://www.oed.com/dictionary/worship_v?tab=factsheet#13886333",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED53453",
-        "https://bosworthtoller.com/35322"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/worship#etymonline_v_46497",
+      "https://www.etymonline.com/word/worship#etymonline_v_10853",
+      "https://www.merriam-webster.com/dictionary/worship#dictionary-entry-1",
+      "https://www.oed.com/dictionary/worship_v?tab=factsheet#13886333",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED53453",
+      "https://bosworthtoller.com/35322"
+    ]
   }
 ]

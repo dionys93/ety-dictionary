@@ -1,93 +1,71 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to flourish",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to flourish",
+    "etymology": [
+      {
+        "name": "flos, florere",
+        "origin": "Latin"
       },
-      "etymology": [
-        "flos, florere",
-        "florir, floriss",
-        "to flourish",
-        "ta flouriçe -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to flourish",
-      "etymology": [
-        {
-          "name": "flos, florere",
-          "origin": "Latin"
-        },
-        {
-          "name": "florir, floriss",
-          "origin": "Old French"
-        },
-        {
-          "name": "to flourish",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta flouriçe -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "florir, floriss",
+        "origin": "Old French"
+      },
+      {
+        "name": "to flourish",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta flouriçe -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta flouriçes",
+          "pastTense": "ta flouriçed",
+          "progressive": "ta flouriçing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/flourish",
-        "https://www.oed.com/dictionary/flourish_v?tab=factsheet#4153304",
-        "https://anglo-norman.net/entry/florir",
-        "https://latin-dictionary.net/definition/20757/floreo-florere-florui",
-        "https://latin-dictionary.net/definition/20763/flos-floris"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/flourish",
+      "https://www.oed.com/dictionary/flourish_v?tab=factsheet#4153304",
+      "https://anglo-norman.net/entry/florir",
+      "https://latin-dictionary.net/definition/20757/floreo-florere-florui",
+      "https://latin-dictionary.net/definition/20763/flos-floris"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "to flourish",
-      "etymology": [
-        {
-          "name": "flos, florere",
-          "origin": "Latin"
-        },
-        {
-          "name": "florir, floriss",
-          "origin": "Old French"
-        },
-        {
-          "name": "to flourish",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta flouriçe -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/flourish",
-        "https://www.oed.com/dictionary/flourish_n?tab=factsheet#4152593",
-        "https://anglo-norman.net/entry/florir",
-        "https://latin-dictionary.net/definition/20757/floreo-florere-florui",
-        "https://latin-dictionary.net/definition/20763/flos-floris"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "to flourish",
+    "etymology": [
+      {
+        "name": "flos, florere",
+        "origin": "Latin"
+      },
+      {
+        "name": "florir, floriss",
+        "origin": "Old French"
+      },
+      {
+        "name": "to flourish",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta flouriçe -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/flourish",
+      "https://www.oed.com/dictionary/flourish_n?tab=factsheet#4152593",
+      "https://anglo-norman.net/entry/florir",
+      "https://latin-dictionary.net/definition/20757/floreo-florere-florui",
+      "https://latin-dictionary.net/definition/20763/flos-floris"
+    ]
   }
 ]

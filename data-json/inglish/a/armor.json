@@ -1,128 +1,102 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "armor",
-      "etymology": [
-        {
-          "name": "arma, armatura",
-          "origin": "Latin"
-        },
-        {
-          "name": "armeure",
-          "origin": "Old French"
-        },
-        {
-          "name": "armor",
-          "origin": "Middle English"
-        },
-        {
-          "name": "ámar(e -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/armor#etymonline_v_17009",
-        "https://www.merriam-webster.com/dictionary/armor",
-        "https://www.oed.com/dictionary/armour_n?tab=factsheet#39260326",
-        "https://www.anglo-norman.net/entry/armure",
-        "https://latin-dictionary.net/definition/4748/armatura-armaturae",
-        "https://latin-dictionary.net/definition/4781/armo-armare-armavi-armatus"
-      ],
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to armor",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "armor",
+    "etymology": [
+      {
+        "name": "arma, armatura",
+        "origin": "Latin"
       },
-      "etymology": [
-        "to armor",
-        "ta ámare -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to armor",
-      "etymology": [
-        {
-          "name": "to armor",
-          "origin": "Middle English"
-        },
-        {
-          "name": "ta ámare -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/armor#etymonline_v_44635",
-        "https://www.etymonline.com/word/armor#etymonline_v_17009",
-        "https://www.merriam-webster.com/dictionary/armor",
-        "https://www.oed.com/dictionary/armour_v?tab=factsheet#39265205",
-        "https://latin-dictionary.net/definition/4781/armo-armare-armavi-armatus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "armeure",
+        "origin": "Old French"
+      },
+      {
+        "name": "armor",
+        "origin": "Middle English"
+      },
+      {
+        "name": "ámar(e -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/armor#etymonline_v_17009",
+      "https://www.merriam-webster.com/dictionary/armor",
+      "https://www.oed.com/dictionary/armour_n?tab=factsheet#39260326",
+      "https://www.anglo-norman.net/entry/armure",
+      "https://latin-dictionary.net/definition/4748/armatura-armaturae",
+      "https://latin-dictionary.net/definition/4781/armo-armare-armavi-armatus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "armory",
-      "etymology": [
-        {
-          "name": "arma",
-          "origin": "Latin"
-        },
-        {
-          "name": "armoier, armoierie",
-          "origin": "Old French"
-        },
-        {
-          "name": "armurie",
-          "origin": "Middle English"
-        },
-        {
-          "name": "armory",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ámarie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
+    "infinitive": "to armor",
+    "etymology": [
+      {
+        "name": "to armor",
+        "origin": "Middle English"
+      },
+      {
+        "name": "ta ámare -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta ámares",
+          "pastTense": "ta ámared",
+          "progressive": "ta ámaring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/armory#etymonline_v_17011",
-        "https://www.oed.com/dictionary/armoury_n?tab=factsheet#39273234",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED2289",
-        "https://www.anglo-norman.net/entry/armoierie",
-        "https://www.anglo-norman.net/entry/armurie",
-        "https://latin-dictionary.net/definition/4748/armatura-armaturae",
-        "https://latin-dictionary.net/definition/4781/armo-armare-armavi-armatus"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/armor#etymonline_v_44635",
+      "https://www.etymonline.com/word/armor#etymonline_v_17009",
+      "https://www.merriam-webster.com/dictionary/armor",
+      "https://www.oed.com/dictionary/armour_v?tab=factsheet#39265205",
+      "https://latin-dictionary.net/definition/4781/armo-armare-armavi-armatus"
+    ]
+  },
+  {
+    "name": "armory",
+    "etymology": [
+      {
+        "name": "arma",
+        "origin": "Latin"
+      },
+      {
+        "name": "armoier, armoierie",
+        "origin": "Old French"
+      },
+      {
+        "name": "armurie",
+        "origin": "Middle English"
+      },
+      {
+        "name": "armory",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ámarie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/armory#etymonline_v_17011",
+      "https://www.oed.com/dictionary/armoury_n?tab=factsheet#39273234",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED2289",
+      "https://www.anglo-norman.net/entry/armoierie",
+      "https://www.anglo-norman.net/entry/armurie",
+      "https://latin-dictionary.net/definition/4748/armatura-armaturae",
+      "https://latin-dictionary.net/definition/4781/armo-armare-armavi-armatus"
+    ]
   }
 ]

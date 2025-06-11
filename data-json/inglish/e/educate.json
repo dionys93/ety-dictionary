@@ -1,208 +1,162 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to educate",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to educate",
+    "etymology": [
+      {
+        "name": "ex + ducere, educere, educare, educatus",
+        "origin": "Latin"
       },
-      "etymology": [
-        "ex + ducere, educere, educare, educatus",
-        "educaten",
-        "to educate",
-        "ta eḑucaite -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to educate",
-      "etymology": [
-        {
-          "name": "ex + ducere, educere, educare, educatus",
-          "origin": "Latin"
-        },
-        {
-          "name": "educaten",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to educate",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta eḑucaite -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "educaten",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to educate",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta eḑucaite -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta eḑucaites",
+          "pastTense": "ta eḑucaited",
+          "progressive": "ta eḑucaiting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/educate#etymonline_v_1007",
-        "https://www.merriam-webster.com/dictionary/educate",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13002",
-        "https://latin-dictionary.net/definition/18728/educo-educare-educavi-educatus",
-        "https://latin-dictionary.net/definition/18729/educo-educere-eduxi-eductus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/educate#etymonline_v_1007",
+      "https://www.merriam-webster.com/dictionary/educate",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13002",
+      "https://latin-dictionary.net/definition/18728/educo-educare-educavi-educatus",
+      "https://latin-dictionary.net/definition/18729/educo-educere-eduxi-eductus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "education",
-      "etymology": [
-        {
-          "name": "educatio",
-          "origin": "Latin"
-        },
-        {
-          "name": "education",
-          "origin": "French"
-        },
-        {
-          "name": "eḑucâcion -s -al",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/education#etymonline_v_29710",
-        "https://www.merriam-webster.com/dictionary/education",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/%C3%A9ducation/27722",
-        "https://latin-dictionary.net/definition/18724/educatio-educationis"
-      ],
-      "gender": "feminine",
-      "number": "singular"
-    }
+    "name": "education",
+    "etymology": [
+      {
+        "name": "educatio",
+        "origin": "Latin"
+      },
+      {
+        "name": "education",
+        "origin": "French"
+      },
+      {
+        "name": "eḑucâcion -s -al",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/education#etymonline_v_29710",
+      "https://www.merriam-webster.com/dictionary/education",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/%C3%A9ducation/27722",
+      "https://latin-dictionary.net/definition/18724/educatio-educationis"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "educator",
-      "etymology": [
-        {
-          "name": "educator",
-          "origin": "Latin"
-        },
-        {
-          "name": "eḑucaitor -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/educator#etymonline_v_32145",
-        "https://latin-dictionary.net/definition/18726/educator-educatoris"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "educator",
+    "etymology": [
+      {
+        "name": "educator",
+        "origin": "Latin"
+      },
+      {
+        "name": "eḑucaitor -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/educator#etymonline_v_32145",
+      "https://latin-dictionary.net/definition/18726/educator-educatoris"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "educable",
-      "etymology": [
-        {
-          "name": "éducable",
-          "origin": "French"
-        },
-        {
-          "name": "educable",
-          "origin": "Modern English"
-        },
-        {
-          "name": "eḑucable",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/educable#etymonline_v_32142",
-        "https://www.merriam-webster.com/dictionary/educable",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/%C3%A9ducable/27718"
-      ]
-    }
+    "name": "educable",
+    "etymology": [
+      {
+        "name": "éducable",
+        "origin": "French"
+      },
+      {
+        "name": "educable",
+        "origin": "Modern English"
+      },
+      {
+        "name": "eḑucable",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/educable#etymonline_v_32142",
+      "https://www.merriam-webster.com/dictionary/educable",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/%C3%A9ducable/27718"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "educability",
-      "etymology": [
-        {
-          "name": "educability",
-          "origin": "Modern English"
-        },
-        {
-          "name": "eḑucabilatie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/educability#etymonline_v_50286",
-        "https://www.etymonline.com/word/educable#etymonline_v_32142",
-        "https://www.etymonline.com/word/-ity#etymonline_v_32843",
-        "https://www.merriam-webster.com/dictionary/educability"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "educability",
+    "etymology": [
+      {
+        "name": "educability",
+        "origin": "Modern English"
+      },
+      {
+        "name": "eḑucabilatie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/educability#etymonline_v_50286",
+      "https://www.etymonline.com/word/educable#etymonline_v_32142",
+      "https://www.etymonline.com/word/-ity#etymonline_v_32843",
+      "https://www.merriam-webster.com/dictionary/educability"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "educative",
-      "etymology": [
-        {
-          "name": "educare, educatus",
-          "origin": "Latin"
-        },
-        {
-          "name": "educative",
-          "origin": "Modern English"
-        },
-        {
-          "name": "eḑucaitif",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/educative#etymonline_v_32144",
-        "https://www.merriam-webster.com/dictionary/educative",
-        "https://latin-dictionary.net/definition/18728/educo-educare-educavi-educatus"
-      ]
-    }
+    "name": "educative",
+    "etymology": [
+      {
+        "name": "educare, educatus",
+        "origin": "Latin"
+      },
+      {
+        "name": "educative",
+        "origin": "Modern English"
+      },
+      {
+        "name": "eḑucaitif",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/educative#etymonline_v_32144",
+      "https://www.merriam-webster.com/dictionary/educative",
+      "https://latin-dictionary.net/definition/18728/educo-educare-educavi-educatus"
+    ]
   }
 ]

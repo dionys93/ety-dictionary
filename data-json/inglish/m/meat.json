@@ -1,50 +1,45 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "meat",
-      "etymology": [
-        {
-          "name": "mete",
-          "origin": "Old English"
-        },
-        {
-          "name": "meat",
-          "origin": "Modern English"
-        },
-        {
-          "name": "mite, míts",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        },
-        {
-          "name": "meaty",
-          "origin": "Modern English"
-        },
-        {
-          "name": "míty -ier -iest",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/meat#etymonline_v_12500",
-        "https://www.oed.com/dictionary/meat_n?tab=pronunciation#37488214",
-        "https://www.oed.com/dictionary/meat_n?tab=meaning_and_use#37488214",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED27542",
-        "https://bosworthtoller.com/22712",
-        "https://www.etymonline.com/word/meaty#etymonline_v_44400",
-        "https://www.oed.com/dictionary/meaty_adj?tab=factsheet#37497268"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "meaty",
+    "etymology": [
+      {
+        "name": "mete",
+        "origin": "Old English"
+      },
+      {
+        "name": "meat",
+        "origin": "Modern English"
+      },
+      {
+        "name": "mite, míts",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      },
+      {
+        "name": "meaty",
+        "origin": "Modern English"
+      },
+      {
+        "name": "míty -ier -iest",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/meat#etymonline_v_12500",
+      "https://www.oed.com/dictionary/meat_n?tab=pronunciation#37488214",
+      "https://www.oed.com/dictionary/meat_n?tab=meaning_and_use#37488214",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED27542",
+      "https://bosworthtoller.com/22712",
+      "https://www.etymonline.com/word/meaty#etymonline_v_44400",
+      "https://www.oed.com/dictionary/meaty_adj?tab=factsheet#37497268"
+    ]
   }
 ]

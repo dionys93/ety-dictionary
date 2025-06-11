@@ -1,75 +1,55 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to croak",
-      "conjugations": {
-        "thirdPerson": "ed",
-        "pastTense": "ing"
+    "infinitive": "to croak",
+    "etymology": [
+      {
+        "name": "crouken",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "crouken",
-        "to croak",
-        "ta croaq croacs -ed -ing"
-      ]
-    },
-    "standard": {
-      "name": "to croak",
-      "etymology": [
-        {
-          "name": "crouken",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to croak",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta croaq croacs -ed -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to croak",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta croaq croacs -ed -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta croaq croacsed",
+          "pastTense": "ta croaq croacsing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/croak",
-        "https://dle.rae.es/croar?m=form",
-        "https://www.littre.org/definition/croasser",
-        "https://latin-dictionary.net/definition/10603/coaxo-coaxare-coaxavi-coaxatus",
-        "https://www.oed.com/dictionary/croak_v?tab=factsheet#7822374"
-      ],
-      "conjugations": {
-        "thirdPerson": "ed",
-        "pastTense": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/croak",
+      "https://dle.rae.es/croar?m=form",
+      "https://www.littre.org/definition/croasser",
+      "https://latin-dictionary.net/definition/10603/coaxo-coaxare-coaxavi-coaxatus",
+      "https://www.oed.com/dictionary/croak_v?tab=factsheet#7822374"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "croak",
-      "etymology": [
-        {
-          "name": "croak",
-          "origin": "Modern English"
-        },
-        {
-          "name": "croac -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/croak",
-        "https://www.oed.com/dictionary/croak_n?tab=factsheet#7822263"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "croak",
+    "etymology": [
+      {
+        "name": "croak",
+        "origin": "Modern English"
+      },
+      {
+        "name": "croac -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/croak",
+      "https://www.oed.com/dictionary/croak_n?tab=factsheet#7822263"
+    ]
   }
 ]

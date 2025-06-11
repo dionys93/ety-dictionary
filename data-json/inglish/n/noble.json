@@ -1,78 +1,66 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "noble",
-      "etymology": [
-        {
-          "name": "gnoscere, nobilis",
-          "origin": "Latin"
-        },
-        {
-          "name": "noble",
-          "origin": "Old French"
-        },
-        {
-          "name": "nôble, nôbels",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/noble#etymonline_v_44271",
-        "https://www.etymonline.com/word/noble#etymonline_v_6984",
-        "https://www.merriam-webster.com/dictionary/noble",
-        "https://www.oed.com/dictionary/noble_adj?tab=factsheet#34475542",
-        "https://anglo-norman.net/entry/noble",
-        "https://latin-dictionary.net/definition/27919/nobilis-nobile-nobilior",
-        "https://latin-dictionary.net/definition/21580/gnosco-gnoscere-gnovi-gnotus"
-      ]
-    }
+    "name": "noble",
+    "etymology": [
+      {
+        "name": "gnoscere, nobilis",
+        "origin": "Latin"
+      },
+      {
+        "name": "noble",
+        "origin": "Old French"
+      },
+      {
+        "name": "nôble, nôbels",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "masculine noun"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/noble#etymonline_v_44271",
+      "https://www.etymonline.com/word/noble#etymonline_v_6984",
+      "https://www.merriam-webster.com/dictionary/noble",
+      "https://www.oed.com/dictionary/noble_adj?tab=factsheet#34475542",
+      "https://anglo-norman.net/entry/noble",
+      "https://latin-dictionary.net/definition/27919/nobilis-nobile-nobilior",
+      "https://latin-dictionary.net/definition/21580/gnosco-gnoscere-gnovi-gnotus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "nobility",
-      "etymology": [
-        {
-          "name": "nobilis, nobilitas",
-          "origin": "Latin"
-        },
-        {
-          "name": "nobilite",
-          "origin": "Old French"
-        },
-        {
-          "name": "nobility",
-          "origin": "Modern English"
-        },
-        {
-          "name": "nobilatie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/nobility#etymonline_v_6983",
-        "https://www.merriam-webster.com/dictionary/nobility",
-        "https://www.oed.com/dictionary/nobility_n?tab=factsheet#34474295",
-        "https://anglo-norman.net/entry/nobilit%C3%A9",
-        "https://latin-dictionary.net/definition/27921/nobilitas-nobilitatis",
-        "https://latin-dictionary.net/definition/27919/nobilis-nobile-nobilior"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "nobility",
+    "etymology": [
+      {
+        "name": "nobilis, nobilitas",
+        "origin": "Latin"
+      },
+      {
+        "name": "nobilite",
+        "origin": "Old French"
+      },
+      {
+        "name": "nobility",
+        "origin": "Modern English"
+      },
+      {
+        "name": "nobilatie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/nobility#etymonline_v_6983",
+      "https://www.merriam-webster.com/dictionary/nobility",
+      "https://www.oed.com/dictionary/nobility_n?tab=factsheet#34474295",
+      "https://anglo-norman.net/entry/nobilit%C3%A9",
+      "https://latin-dictionary.net/definition/27921/nobilitas-nobilitatis",
+      "https://latin-dictionary.net/definition/27919/nobilis-nobile-nobilior"
+    ]
   }
 ]

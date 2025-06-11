@@ -1,41 +1,35 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "waist",
-      "etymology": [
-        {
-          "name": "wæst",
-          "origin": "Old English"
-        },
-        {
-          "name": "wast",
-          "origin": "Middle English"
-        },
-        {
-          "name": "waist",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ɯaist -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/waist#etymonline_v_4793",
-        "https://www.oed.com/dictionary/waist_n?tab=factsheet#15216160",
-        "https://www.merriam-webster.com/dictionary/waist#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51854",
-        "https://bosworthtoller.com/34889"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "waist",
+    "etymology": [
+      {
+        "name": "wæst",
+        "origin": "Old English"
+      },
+      {
+        "name": "wast",
+        "origin": "Middle English"
+      },
+      {
+        "name": "waist",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ɯaist -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/waist#etymonline_v_4793",
+      "https://www.oed.com/dictionary/waist_n?tab=factsheet#15216160",
+      "https://www.merriam-webster.com/dictionary/waist#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51854",
+      "https://bosworthtoller.com/34889"
+    ]
   }
 ]

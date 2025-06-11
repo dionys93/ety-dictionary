@@ -1,112 +1,85 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to leer",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to leer",
+    "etymology": [
+      {
+        "name": "hleor",
+        "origin": "Old English"
       },
-      "etymology": [
-        "hleor",
-        "to leer",
-        "ta liore -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to leer",
-      "etymology": [
-        {
-          "name": "hleor",
-          "origin": "Old English"
-        },
-        {
-          "name": "to leer",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta liore -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to leer",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta liore -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta liores",
+          "pastTense": "ta liored",
+          "progressive": "ta lioring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/leer#etymonline_v_6649",
-        "https://www.oed.com/dictionary/leer_v?tab=factsheet#39620051",
-        "https://bosworthtoller.com/52705"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/leer#etymonline_v_6649",
+      "https://www.oed.com/dictionary/leer_v?tab=factsheet#39620051",
+      "https://bosworthtoller.com/52705"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "leer",
-      "etymology": [
-        {
-          "name": "hleor",
-          "origin": "Old English"
-        },
-        {
-          "name": "leer",
-          "origin": "Modern English"
-        },
-        {
-          "name": "lior -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/leer#etymonline_v_43245",
-        "https://www.etymonline.com/word/leer#etymonline_v_6649",
-        "https://www.oed.com/dictionary/leer_n2?tab=factsheet#39619176",
-        "https://bosworthtoller.com/52705"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "leer",
+    "etymology": [
+      {
+        "name": "hleor",
+        "origin": "Old English"
+      },
+      {
+        "name": "leer",
+        "origin": "Modern English"
+      },
+      {
+        "name": "lior -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/leer#etymonline_v_43245",
+      "https://www.etymonline.com/word/leer#etymonline_v_6649",
+      "https://www.oed.com/dictionary/leer_n2?tab=factsheet#39619176",
+      "https://bosworthtoller.com/52705"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "leery",
-      "etymology": [
-        {
-          "name": "leery",
-          "origin": "Modern English"
-        },
-        {
-          "name": "liory -ier -iest",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
+    "name": "leery",
+    "etymology": [
+      {
+        "name": "leery",
+        "origin": "Modern English"
+      },
+      {
+        "name": "liory -ier -iest",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ],
+        "degrees": {
+          "positive": "liory",
+          "comparative": "ier",
+          "superlative": "iest"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/leery#etymonline_v_6650",
-        "https://www.oed.com/dictionary/leery_adj2?tab=factsheet#39620773"
-      ],
-      "degrees": {
-        "positive": "liory",
-        "comparative": "ier",
-        "superlative": "iest"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/leery#etymonline_v_6650",
+      "https://www.oed.com/dictionary/leery_adj2?tab=factsheet#39620773"
+    ]
   }
 ]

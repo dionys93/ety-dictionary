@@ -1,80 +1,60 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to stride",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to stride",
+    "etymology": [
+      {
+        "name": "stridan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "stridan",
-        "striden",
-        "to stride",
-        "ta strîde -s strode stridden -ing"
-      ]
-    },
-    "standard": {
-      "name": "to stride",
-      "etymology": [
-        {
-          "name": "stridan",
-          "origin": "Old English"
-        },
-        {
-          "name": "striden",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to stride",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta strîde -s strode stridden -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "striden",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to stride",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta strîde -s strode stridden -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta strîdes"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/stride#etymonline_v_22176",
-        "https://www.merriam-webster.com/dictionary/stride#dictionary-entry-1",
-        "https://www.oed.com/dictionary/stride_v?tab=factsheet#20181714",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED43338",
-        "https://bosworthtoller.com/29179"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/stride#etymonline_v_22176",
+      "https://www.merriam-webster.com/dictionary/stride#dictionary-entry-1",
+      "https://www.oed.com/dictionary/stride_v?tab=factsheet#20181714",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED43338",
+      "https://bosworthtoller.com/29179"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "stride",
-      "etymology": [
-        {
-          "name": "stride",
-          "origin": "Old English"
-        },
-        {
-          "name": "strîde, strîds",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/stride#etymonline_v_45626",
-        "https://www.merriam-webster.com/dictionary/stride#dictionary-entry-2",
-        "https://www.oed.com/dictionary/stride_n?tab=factsheet#20180199",
-        "https://bosworthtoller.com/29180"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "stride",
+    "etymology": [
+      {
+        "name": "stride",
+        "origin": "Old English"
+      },
+      {
+        "name": "strîde, strîds",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/stride#etymonline_v_45626",
+      "https://www.merriam-webster.com/dictionary/stride#dictionary-entry-2",
+      "https://www.oed.com/dictionary/stride_n?tab=factsheet#20180199",
+      "https://bosworthtoller.com/29180"
+    ]
   }
 ]

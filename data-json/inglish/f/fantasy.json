@@ -1,258 +1,195 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "fantasy",
-      "etymology": [
-        {
-          "name": "φαντός, φαντάζομαι, φαντασία",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "phantasia",
-          "origin": "Latin"
-        },
-        {
-          "name": "fantaisie, phantasie",
-          "origin": "Old French"
-        },
-        {
-          "name": "fantasy",
-          "origin": "Modern English"
-        },
-        {
-          "name": "fantasy, fantasie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fantasy#etymonline_v_1122",
-        "https://www.merriam-webster.com/dictionary/fantasy#dictionary-entry-2",
-        "https://www.merriam-webster.com/dictionary/fantasy#dictionary-entry-1",
-        "https://www.anglo-norman.net/entry/fantasie",
-        "https://latin-dictionary.net/definition/30357/phantasia-phantasiae",
-        "https://lsj.gr/wiki/%CF%86%CE%B1%CE%BD%CF%84%CE%B1%CF%83%CE%AF%CE%B1",
-        "https://lsj.gr/wiki/%CF%86%CE%B1%CE%BD%CF%84%CE%AC%CE%B6%CE%BF%CE%BC%CE%B1%CE%B9",
-        "https://lsj.gr/wiki/%CF%86%CE%B1%CE%BD%CF%84%CF%8C%CF%82"
-      ],
-      "degrees": {
-        "positive": "fantasie",
-        "comparative": "is"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to fantasise, fantasize",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "fantasy",
+    "etymology": [
+      {
+        "name": "φαντός, φαντάζομαι, φαντασία",
+        "origin": "Ancient Greek"
       },
-      "etymology": [
-        "to fantasise, fantasize",
-        "ta fantasyse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to fantasise, fantasize",
-      "etymology": [
-        {
-          "name": "to fantasise, fantasize",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta fantasyse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fantasize#etymonline_v_32994",
-        "https://www.etymonline.com/word/fantasy#etymonline_v_1122",
-        "https://www.etymonline.com/word/-ize#etymonline_v_25713"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "fantasia",
-      "etymology": [
-        {
-          "name": "phantasia",
-          "origin": "Latin"
-        },
-        {
-          "name": "fantasia",
-          "origin": "Italian"
-        },
-        {
-          "name": "fantâsia -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fantasia#etymonline_v_1120",
-        "https://www.collinsdictionary.com/us/dictionary/italian-english/fantasia",
-        "https://latin-dictionary.net/definition/30357/phantasia-phantasiae"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "fancy  -ies -ier -iest (adj, m n)",
-      "etymology": [
-        {
-          "name": "fantsy",
-          "origin": "Middle English"
-        },
-        {
-          "name": "fancy  -ies -ier -iest (adj, m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fancy#etymonline_v_1114",
-        "https://www.etymonline.com/word/fantasy#etymonline_v_1122",
-        "https://www.merriam-webster.com/dictionary/fancy#dictionary-entry-3",
-        "https://www.merriam-webster.com/dictionary/fancy#dictionary-entry-2"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to fancy",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ying"
+      {
+        "name": "phantasia",
+        "origin": "Latin"
       },
-      "etymology": [
-        "fantasien",
-        "to fancy",
-        "ta fancie  -s -d -ying"
-      ]
-    },
-    "standard": {
-      "name": "to fancy",
-      "etymology": [
-        {
-          "name": "fantasien",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to fancy",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta fancie  -s -d -ying",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fancy#etymonline_v_46544",
-        "https://www.etymonline.com/word/fantasy#etymonline_v_1122",
-        "https://www.merriam-webster.com/dictionary/fancy#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15264"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ying"
+      {
+        "name": "fantaisie, phantasie",
+        "origin": "Old French"
+      },
+      {
+        "name": "fantasy",
+        "origin": "Modern English"
+      },
+      {
+        "name": "fantasy, fantasie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "masculine noun"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fantasy#etymonline_v_1122",
+      "https://www.merriam-webster.com/dictionary/fantasy#dictionary-entry-2",
+      "https://www.merriam-webster.com/dictionary/fantasy#dictionary-entry-1",
+      "https://www.anglo-norman.net/entry/fantasie",
+      "https://latin-dictionary.net/definition/30357/phantasia-phantasiae",
+      "https://lsj.gr/wiki/%CF%86%CE%B1%CE%BD%CF%84%CE%B1%CF%83%CE%AF%CE%B1",
+      "https://lsj.gr/wiki/%CF%86%CE%B1%CE%BD%CF%84%CE%AC%CE%B6%CE%BF%CE%BC%CE%B1%CE%B9",
+      "https://lsj.gr/wiki/%CF%86%CE%B1%CE%BD%CF%84%CF%8C%CF%82"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "fantastic  -ly -al (adj)",
-      "etymology": [
-        {
-          "name": "φαντάζω, φανταστικός",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "phantasticus",
-          "origin": "Latin"
-        },
-        {
-          "name": "fantastique",
-          "origin": "Old French"
-        },
-        {
-          "name": "fantastic  -ly -al (adj)",
-          "origin": "Modern English"
+    "infinitive": "to fantasise, fantasize",
+    "etymology": [
+      {
+        "name": "to fantasise, fantasize",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta fantasyse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta fantasyses",
+          "pastTense": "ta fantasysed",
+          "progressive": "ta fantasysing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fantastic#etymonline_v_1121",
-        "https://www.etymonline.com/word/fantastical#etymonline_v_32995",
-        "https://www.etymonline.com/word/phantasm#etymonline_v_14827",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/fantastique/32766",
-        "https://latin-dictionary.net/definition/30363/phantasticus-phantastica-phantasticum",
-        "https://lsj.gr/wiki/%CF%86%CE%B1%CE%BD%CF%84%CE%B1%CF%83%CF%84%CE%B9%CE%BA%CF%8C%CF%82",
-        "https://lsj.gr/wiki/%CF%86%CE%B1%CE%BD%CF%84%CE%AC%CE%B6%CF%89"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fantasize#etymonline_v_32994",
+      "https://www.etymonline.com/word/fantasy#etymonline_v_1122",
+      "https://www.etymonline.com/word/-ize#etymonline_v_25713"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "fantabulous",
-      "etymology": [
-        {
-          "name": "fantabulous",
-          "origin": "Modern English"
-        },
-        {
-          "name": "fantab̃uloʃ -sly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
+    "name": "fantasia",
+    "etymology": [
+      {
+        "name": "phantasia",
+        "origin": "Latin"
+      },
+      {
+        "name": "fantasia",
+        "origin": "Italian"
+      },
+      {
+        "name": "fantâsia -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fantasia#etymonline_v_1120",
+      "https://www.collinsdictionary.com/us/dictionary/italian-english/fantasia",
+      "https://latin-dictionary.net/definition/30357/phantasia-phantasiae"
+    ]
+  },
+  {
+    "name": "fancy  -ies -ier -iest (adj, m n)",
+    "etymology": [
+      {
+        "name": "fantsy",
+        "origin": "Middle English"
+      },
+      {
+        "name": "fancy  -ies -ier -iest (adj, m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fancy#etymonline_v_1114",
+      "https://www.etymonline.com/word/fantasy#etymonline_v_1122",
+      "https://www.merriam-webster.com/dictionary/fancy#dictionary-entry-3",
+      "https://www.merriam-webster.com/dictionary/fancy#dictionary-entry-2"
+    ]
+  },
+  {
+    "infinitive": "to fancy",
+    "etymology": [
+      {
+        "name": "fantasien",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to fancy",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta fancie  -s -d -ying",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta fancies",
+          "pastTense": "ta fancied",
+          "progressive": "ta fancieying"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fantabulous#etymonline_v_32999",
-        "https://www.etymonline.com/word/fantastic#etymonline_v_1121",
-        "https://www.etymonline.com/word/fabulous#etymonline_v_1054"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fancy#etymonline_v_46544",
+      "https://www.etymonline.com/word/fantasy#etymonline_v_1122",
+      "https://www.merriam-webster.com/dictionary/fancy#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15264"
+    ]
+  },
+  {
+    "name": "fantastic  -ly -al (adj)",
+    "etymology": [
+      {
+        "name": "φαντάζω, φανταστικός",
+        "origin": "Ancient Greek"
+      },
+      {
+        "name": "phantasticus",
+        "origin": "Latin"
+      },
+      {
+        "name": "fantastique",
+        "origin": "Old French"
+      },
+      {
+        "name": "fantastic  -ly -al (adj)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fantastic#etymonline_v_1121",
+      "https://www.etymonline.com/word/fantastical#etymonline_v_32995",
+      "https://www.etymonline.com/word/phantasm#etymonline_v_14827",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/fantastique/32766",
+      "https://latin-dictionary.net/definition/30363/phantasticus-phantastica-phantasticum",
+      "https://lsj.gr/wiki/%CF%86%CE%B1%CE%BD%CF%84%CE%B1%CF%83%CF%84%CE%B9%CE%BA%CF%8C%CF%82",
+      "https://lsj.gr/wiki/%CF%86%CE%B1%CE%BD%CF%84%CE%AC%CE%B6%CF%89"
+    ]
+  },
+  {
+    "name": "fantabulous",
+    "etymology": [
+      {
+        "name": "fantabulous",
+        "origin": "Modern English"
+      },
+      {
+        "name": "fantab̃uloʃ -sly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fantabulous#etymonline_v_32999",
+      "https://www.etymonline.com/word/fantastic#etymonline_v_1121",
+      "https://www.etymonline.com/word/fabulous#etymonline_v_1054"
+    ]
   }
 ]

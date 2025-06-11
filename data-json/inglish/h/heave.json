@@ -1,54 +1,38 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to heave",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to heave",
+    "etymology": [
+      {
+        "name": "hebban",
+        "origin": "Old English"
       },
-      "etymology": [
-        "hebban",
-        "heven",
-        "to heave",
-        "ta híve -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to heave",
-      "etymology": [
-        {
-          "name": "hebban",
-          "origin": "Old English"
-        },
-        {
-          "name": "heven",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to heave",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta híve -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "heven",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to heave",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta híve -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta híves",
+          "pastTense": "ta híved",
+          "progressive": "ta híving"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/heave#etymonline_v_6257",
-        "https://www.merriam-webster.com/dictionary/heave#dictionary-entry-1",
-        "https://www.oed.com/dictionary/heave_v?tab=factsheet#1918354",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20701",
-        "https://bosworthtoller.com/18570"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/heave#etymonline_v_6257",
+      "https://www.merriam-webster.com/dictionary/heave#dictionary-entry-1",
+      "https://www.oed.com/dictionary/heave_v?tab=factsheet#1918354",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED20701",
+      "https://bosworthtoller.com/18570"
+    ]
   }
 ]

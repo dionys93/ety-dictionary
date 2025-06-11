@@ -1,91 +1,70 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to sow",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
+    "infinitive": "to sow",
+    "etymology": [
+      {
+        "name": "sawan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "sawan",
-        "souen",
-        "to sow",
-        "ta soɯe -s -d soɯn -ing"
-      ]
-    },
-    "standard": {
-      "name": "to sow",
-      "etymology": [
-        {
-          "name": "sawan",
-          "origin": "Old English"
-        },
-        {
-          "name": "souen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to sow",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta soɯe -s -d soɯn -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "souen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to sow",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta soɯe -s -d soɯn -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta soɯes",
+          "pastTense": "ta soɯed"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/sow#etymonline_v_23936",
-        "https://www.merriam-webster.com/dictionary/sow#dictionary-entry-2",
-        "https://www.oed.com/dictionary/sow_v1?tab=pronunciation#21527442",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED41779",
-        "https://bosworthtoller.com/26456"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/sow#etymonline_v_23936",
+      "https://www.merriam-webster.com/dictionary/sow#dictionary-entry-2",
+      "https://www.oed.com/dictionary/sow_v1?tab=pronunciation#21527442",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED41779",
+      "https://bosworthtoller.com/26456"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "sow",
-      "etymology": [
-        {
-          "name": "sugu, su",
-          "origin": "Old English"
-        },
-        {
-          "name": "soue",
-          "origin": "Middle English"
-        },
-        {
-          "name": "sow",
-          "origin": "Modern English"
-        },
-        {
-          "name": "sao -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/sow#etymonline_v_23937",
-        "https://www.merriam-webster.com/dictionary/sow#dictionary-entry-1",
-        "https://www.oed.com/dictionary/sow_n1?tab=factsheet#21525360",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED41775",
-        "https://bosworthtoller.com/29295"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "sow",
+    "etymology": [
+      {
+        "name": "sugu, su",
+        "origin": "Old English"
+      },
+      {
+        "name": "soue",
+        "origin": "Middle English"
+      },
+      {
+        "name": "sow",
+        "origin": "Modern English"
+      },
+      {
+        "name": "sao -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/sow#etymonline_v_23937",
+      "https://www.merriam-webster.com/dictionary/sow#dictionary-entry-1",
+      "https://www.oed.com/dictionary/sow_n1?tab=factsheet#21525360",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED41775",
+      "https://bosworthtoller.com/29295"
+    ]
   }
 ]

@@ -1,35 +1,29 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "chocolate",
-      "etymology": [
-        {
-          "name": "chocola-tl",
-          "origin": "Aztec"
-        },
-        {
-          "name": "chocolate",
-          "origin": "Inglish"
-        },
-        {
-          "name": "chòclat -s -y",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/chocolate#etymonline_v_11301",
-        "https://www.etymonline.com/word/chocolatey#etymonline_v_47077",
-        "https://www.merriam-webster.com/dictionary/chocolate",
-        "https://www.collinsdictionary.com/us/dictionary/spanish-english/chocolate"
-      ]
-    }
+    "name": "chocolate",
+    "etymology": [
+      {
+        "name": "chocola-tl",
+        "origin": "Aztec"
+      },
+      {
+        "name": "chocolate",
+        "origin": "Inglish"
+      },
+      {
+        "name": "chòclat -s -y",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "masculine noun"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/chocolate#etymonline_v_11301",
+      "https://www.etymonline.com/word/chocolatey#etymonline_v_47077",
+      "https://www.merriam-webster.com/dictionary/chocolate",
+      "https://www.collinsdictionary.com/us/dictionary/spanish-english/chocolate"
+    ]
   }
 ]

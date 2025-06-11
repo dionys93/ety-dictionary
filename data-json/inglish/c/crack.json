@@ -1,87 +1,65 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to crack",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to crack",
+    "etymology": [
+      {
+        "name": "cracian",
+        "origin": "Old English"
       },
-      "etymology": [
-        "cracian",
-        "craken",
-        "to crack",
-        "ta cracke -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to crack",
-      "etymology": [
-        {
-          "name": "cracian",
-          "origin": "Old English"
-        },
-        {
-          "name": "craken",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to crack",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta cracke -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "craken",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to crack",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta cracke -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta crackes",
+          "pastTense": "ta cracked",
+          "progressive": "ta cracking"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/crack#etymonline_v_284",
-        "https://www.oed.com/dictionary/crack_v?tab=factsheet#7938896",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10174",
-        "https://bosworthtoller.com/6636"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/crack#etymonline_v_284",
+      "https://www.oed.com/dictionary/crack_v?tab=factsheet#7938896",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10174",
+      "https://bosworthtoller.com/6636"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "crack",
-      "etymology": [
-        {
-          "name": "crak",
-          "origin": "Middle English"
-        },
-        {
-          "name": "crack",
-          "origin": "Modern English"
-        },
-        {
-          "name": "crack, cracs",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/crack#etymonline_v_43863",
-        "https://www.etymonline.com/word/crack#etymonline_v_284",
-        "https://www.oed.com/dictionary/crack_n?tab=pronunciation#7937205",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10171"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "crack",
+    "etymology": [
+      {
+        "name": "crak",
+        "origin": "Middle English"
+      },
+      {
+        "name": "crack",
+        "origin": "Modern English"
+      },
+      {
+        "name": "crack, cracs",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/crack#etymonline_v_43863",
+      "https://www.etymonline.com/word/crack#etymonline_v_284",
+      "https://www.oed.com/dictionary/crack_n?tab=pronunciation#7937205",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10171"
+    ]
   }
 ]

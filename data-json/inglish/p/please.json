@@ -1,288 +1,223 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to please",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to please",
+    "etymology": [
+      {
+        "name": "placere",
+        "origin": "Latin"
       },
-      "etymology": [
-        "placere",
-        "plaisir",
-        "plesen",
-        "to please",
-        "ta plise -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to please",
-      "etymology": [
-        {
-          "name": "placere",
-          "origin": "Latin"
-        },
-        {
-          "name": "plaisir",
-          "origin": "Old French"
-        },
-        {
-          "name": "plesen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to please",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta plise -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/please#etymonline_v_16475",
-        "https://www.oed.com/dictionary/please_v?tab=factsheet#29597680",
-        "https://anglo-norman.net/entry/plaisir",
-        "https://latin-dictionary.net/definition/30625/placeo-placere-placui-placitus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "pleasure",
-      "etymology": [
-        {
-          "name": "placere",
-          "origin": "Latin"
-        },
-        {
-          "name": "plaisir, plesir",
-          "origin": "Old French"
-        },
-        {
-          "name": "plesire",
-          "origin": "Middle English"
-        },
-        {
-          "name": "pleasure",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ples̃ure, ples̃urs",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/pleasure#etymonline_v_16476",
-        "https://www.oed.com/dictionary/pleasure_n?tab=factsheet#29603678",
-        "https://anglo-norman.net/entry/plaisir",
-        "https://latin-dictionary.net/definition/30625/placeo-placere-placui-placitus"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to pleasure",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "plaisir",
+        "origin": "Old French"
       },
-      "etymology": [
-        "to pleasure",
-        "ta ples̃ure -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to pleasure",
-      "etymology": [
-        {
-          "name": "to pleasure",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta ples̃ure -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "plesen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to please",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta plise -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta plises",
+          "pastTense": "ta plised",
+          "progressive": "ta plising"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/pleasure#etymonline_v_41710",
-        "https://www.etymonline.com/word/pleasure#etymonline_v_16476",
-        "https://www.oed.com/dictionary/pleasure_v?tab=factsheet#29608811"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/please#etymonline_v_16475",
+      "https://www.oed.com/dictionary/please_v?tab=factsheet#29597680",
+      "https://anglo-norman.net/entry/plaisir",
+      "https://latin-dictionary.net/definition/30625/placeo-placere-placui-placitus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "pleasurable",
-      "etymology": [
-        {
-          "name": "pleasurable",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ples̃urable -y",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/pleasurable#etymonline_v_36217",
-        "https://www.etymonline.com/word/pleasure#etymonline_v_16476",
-        "https://www.oed.com/dictionary/pleasurable_adj?tab=factsheet#29603249"
-      ],
-      "degrees": {
-        "positive": "urable",
-        "comparative": "y"
+    "name": "pleasure",
+    "etymology": [
+      {
+        "name": "placere",
+        "origin": "Latin"
+      },
+      {
+        "name": "plaisir, plesir",
+        "origin": "Old French"
+      },
+      {
+        "name": "plesire",
+        "origin": "Middle English"
+      },
+      {
+        "name": "pleasure",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ples̃ure, ples̃urs",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/pleasure#etymonline_v_16476",
+      "https://www.oed.com/dictionary/pleasure_n?tab=factsheet#29603678",
+      "https://anglo-norman.net/entry/plaisir",
+      "https://latin-dictionary.net/definition/30625/placeo-placere-placui-placitus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "pleasant",
-      "etymology": [
-        {
-          "name": "placere",
-          "origin": "Latin"
-        },
-        {
-          "name": "plaisir, plaisant",
-          "origin": "Old French"
-        },
-        {
-          "name": "plesaunte",
-          "origin": "Middle English"
-        },
-        {
-          "name": "pleasant",
-          "origin": "Modern English"
-        },
-        {
-          "name": "plesant -ly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
+    "infinitive": "to pleasure",
+    "etymology": [
+      {
+        "name": "to pleasure",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta ples̃ure -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta ples̃ures",
+          "pastTense": "ta ples̃ured",
+          "progressive": "ta ples̃uring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/pleasant#etymonline_v_16474",
-        "https://www.oed.com/dictionary/pleasant_adj?tab=factsheet#29594974",
-        "https://www.larousse.fr/dictionnaires/francais/plaisant/61336",
-        "https://anglo-norman.net/entry/plaisir",
-        "https://latin-dictionary.net/definition/30625/placeo-placere-placui-placitus"
-      ],
-      "degrees": {
-        "positive": "plesant",
-        "comparative": "ly"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/pleasure#etymonline_v_41710",
+      "https://www.etymonline.com/word/pleasure#etymonline_v_16476",
+      "https://www.oed.com/dictionary/pleasure_v?tab=factsheet#29608811"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "pleasance",
-      "etymology": [
-        {
-          "name": "plaisant, plaisance",
-          "origin": "Old French"
-        },
-        {
-          "name": "plesaunce",
-          "origin": "Middle English"
-        },
-        {
-          "name": "pleasance",
-          "origin": "Modern English"
-        },
-        {
-          "name": "plesance -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/pleasance#etymonline_v_46519",
-        "https://www.larousse.fr/dictionnaires/francais/plaisant/61336",
-        "https://www.oed.com/dictionary/pleasance_n1?tab=factsheet#29593403",
-        "https://anglo-norman.net/entry/plaisance"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "pleasurable",
+    "etymology": [
+      {
+        "name": "pleasurable",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ples̃urable -y",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/pleasurable#etymonline_v_36217",
+      "https://www.etymonline.com/word/pleasure#etymonline_v_16476",
+      "https://www.oed.com/dictionary/pleasurable_adj?tab=factsheet#29603249"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "pleasantry",
-      "etymology": [
-        {
-          "name": "plaisant, plaisanterie",
-          "origin": "French"
-        },
-        {
-          "name": "pleasantry",
-          "origin": "Modern English"
-        },
-        {
-          "name": "plesantrie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
+    "name": "pleasant",
+    "etymology": [
+      {
+        "name": "placere",
+        "origin": "Latin"
+      },
+      {
+        "name": "plaisir, plaisant",
+        "origin": "Old French"
+      },
+      {
+        "name": "plesaunte",
+        "origin": "Middle English"
+      },
+      {
+        "name": "pleasant",
+        "origin": "Modern English"
+      },
+      {
+        "name": "plesant -ly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ],
+        "degrees": {
+          "positive": "plesant",
+          "comparative": "ly"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/pleasantry#etymonline_v_36021",
-        "https://www.oed.com/dictionary/pleasantry_n?tab=factsheet#29596975",
-        "https://www.larousse.fr/dictionnaires/francais/plaisanterie/61341",
-        "https://www.larousse.fr/dictionnaires/francais/plaisant/61336"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/pleasant#etymonline_v_16474",
+      "https://www.oed.com/dictionary/pleasant_adj?tab=factsheet#29594974",
+      "https://www.larousse.fr/dictionnaires/francais/plaisant/61336",
+      "https://anglo-norman.net/entry/plaisir",
+      "https://latin-dictionary.net/definition/30625/placeo-placere-placui-placitus"
+    ]
+  },
+  {
+    "name": "pleasance",
+    "etymology": [
+      {
+        "name": "plaisant, plaisance",
+        "origin": "Old French"
+      },
+      {
+        "name": "plesaunce",
+        "origin": "Middle English"
+      },
+      {
+        "name": "pleasance",
+        "origin": "Modern English"
+      },
+      {
+        "name": "plesance -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/pleasance#etymonline_v_46519",
+      "https://www.larousse.fr/dictionnaires/francais/plaisant/61336",
+      "https://www.oed.com/dictionary/pleasance_n1?tab=factsheet#29593403",
+      "https://anglo-norman.net/entry/plaisance"
+    ]
+  },
+  {
+    "name": "pleasantry",
+    "etymology": [
+      {
+        "name": "plaisant, plaisanterie",
+        "origin": "French"
+      },
+      {
+        "name": "pleasantry",
+        "origin": "Modern English"
+      },
+      {
+        "name": "plesantrie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/pleasantry#etymonline_v_36021",
+      "https://www.oed.com/dictionary/pleasantry_n?tab=factsheet#29596975",
+      "https://www.larousse.fr/dictionnaires/francais/plaisanterie/61341",
+      "https://www.larousse.fr/dictionnaires/francais/plaisant/61336"
+    ]
   }
 ]

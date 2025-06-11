@@ -1,79 +1,59 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to let",
-      "conjugations": {
-        "thirdPerson": "ing"
+    "infinitive": "to let",
+    "etymology": [
+      {
+        "name": "lætan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "lætan",
-        "leten",
-        "to let",
-        "ta lette lets lèt -ing"
-      ]
-    },
-    "standard": {
-      "name": "to let",
-      "etymology": [
-        {
-          "name": "lætan",
-          "origin": "Old English"
-        },
-        {
-          "name": "leten",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to let",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta lette lets lèt -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "leten",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to let",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta lette lets lèt -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta lette lets lèting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/let#etymonline_v_6705",
-        "https://www.merriam-webster.com/dictionary/let",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25257",
-        "https://bosworthtoller.com/21009"
-      ],
-      "conjugations": {
-        "thirdPerson": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/let#etymonline_v_6705",
+      "https://www.merriam-webster.com/dictionary/let",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25257",
+      "https://bosworthtoller.com/21009"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "letdown",
-      "etymology": [
-        {
-          "name": "letdown",
-          "origin": "Modern English"
-        },
-        {
-          "name": "letdaon -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/let-down#etymonline_v_30721",
-        "https://www.etymonline.com/word/down#etymonline_v_13990",
-        "https://www.etymonline.com/word/let#etymonline_v_6705",
-        "https://www.merriam-webster.com/dictionary/letdown"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "letdown",
+    "etymology": [
+      {
+        "name": "letdown",
+        "origin": "Modern English"
+      },
+      {
+        "name": "letdaon -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/let-down#etymonline_v_30721",
+      "https://www.etymonline.com/word/down#etymonline_v_13990",
+      "https://www.etymonline.com/word/let#etymonline_v_6705",
+      "https://www.merriam-webster.com/dictionary/letdown"
+    ]
   }
 ]

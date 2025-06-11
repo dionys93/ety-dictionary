@@ -1,100 +1,69 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to squirm",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to squirm",
+    "etymology": [
+      {
+        "name": "to squirm",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to squirm",
-        "ta squême -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to squirm",
-      "etymology": [
-        {
-          "name": "to squirm",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta squême -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta squême -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta squêmes",
+          "pastTense": "ta squêmed",
+          "progressive": "ta squêming"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/squirm#etymonline_v_21948",
-        "https://www.merriam-webster.com/dictionary/squirm",
-        "https://www.oed.com/dictionary/squirm_v?tab=factsheet#21099381"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/squirm#etymonline_v_21948",
+      "https://www.merriam-webster.com/dictionary/squirm",
+      "https://www.oed.com/dictionary/squirm_v?tab=factsheet#21099381"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "squirm",
-      "etymology": [
-        {
-          "name": "squirm",
-          "origin": "Modern English"
-        },
-        {
-          "name": "squême, squêms",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/squirm",
-        "https://www.oed.com/dictionary/squirm_n?tab=factsheet#21099315"
-      ],
-      "number": "plural"
-    }
+    "name": "squirm",
+    "etymology": [
+      {
+        "name": "squirm",
+        "origin": "Modern English"
+      },
+      {
+        "name": "squême, squêms",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/squirm",
+      "https://www.oed.com/dictionary/squirm_n?tab=factsheet#21099315"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "squirmy",
-      "etymology": [
-        {
-          "name": "squirmy",
-          "origin": "Modern English"
-        },
-        {
-          "name": "squêmy -ier -iest",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/squirmy",
-        "https://www.oed.com/dictionary/squirmy_adj?tab=factsheet#21099724"
-      ],
-      "degrees": {
-        "positive": "my",
-        "comparative": "ier",
-        "superlative": "iest"
+    "name": "squirmy",
+    "etymology": [
+      {
+        "name": "squirmy",
+        "origin": "Modern English"
+      },
+      {
+        "name": "squêmy -ier -iest",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/squirmy",
+      "https://www.oed.com/dictionary/squirmy_adj?tab=factsheet#21099724"
+    ]
   }
 ]

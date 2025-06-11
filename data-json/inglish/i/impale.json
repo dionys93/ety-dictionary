@@ -1,92 +1,69 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to impale",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to impale",
+    "etymology": [
+      {
+        "name": "palus",
+        "origin": "Latin"
       },
-      "etymology": [
-        "palus",
-        "impalare",
-        "empaler",
-        "to impale",
-        "to empâle -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to impale",
-      "etymology": [
-        {
-          "name": "palus",
-          "origin": "Latin"
-        },
-        {
-          "name": "impalare",
-          "origin": "Medieval Latin"
-        },
-        {
-          "name": "empaler",
-          "origin": "French"
-        },
-        {
-          "name": "to impale",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to empâle -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "impalare",
+        "origin": "Medieval Latin"
+      },
+      {
+        "name": "empaler",
+        "origin": "French"
+      },
+      {
+        "name": "to impale",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to empâle -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to empâles",
+          "pastTense": "to empâled",
+          "progressive": "to empâling"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/impale#etymonline_v_1548",
-        "https://www.etymonline.com/word/pale#etymonline_v_3009",
-        "https://www.merriam-webster.com/dictionary/impale",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/empaler/28735",
-        "https://latin-dictionary.net/definition/29181/palus-pali"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/impale#etymonline_v_1548",
+      "https://www.etymonline.com/word/pale#etymonline_v_3009",
+      "https://www.merriam-webster.com/dictionary/impale",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/empaler/28735",
+      "https://latin-dictionary.net/definition/29181/palus-pali"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "impalement",
-      "etymology": [
-        {
-          "name": "empalement",
-          "origin": "French"
-        },
-        {
-          "name": "impalement",
-          "origin": "Modern English"
-        },
-        {
-          "name": "empâlment -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/impalement#etymonline_v_42236",
-        "https://www.merriam-webster.com/dictionary/impalement",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/empalement/28734"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "impalement",
+    "etymology": [
+      {
+        "name": "empalement",
+        "origin": "French"
+      },
+      {
+        "name": "impalement",
+        "origin": "Modern English"
+      },
+      {
+        "name": "empâlment -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/impalement#etymonline_v_42236",
+      "https://www.merriam-webster.com/dictionary/impalement",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/empalement/28734"
+    ]
   }
 ]

@@ -1,63 +1,43 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to heft",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to heft",
+    "etymology": [
+      {
+        "name": "to heft",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to heft",
-        "ta hefte -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to heft",
-      "etymology": [
-        {
-          "name": "to heft",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta hefte -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta hefte -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta heftes",
+          "pastTense": "ta hefted",
+          "progressive": "ta hefting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/heft#etymonline_v_41539",
-        "https://www.etymonline.com/word/heft#etymonline_v_6279",
-        "https://www.etymonline.com/word/heave#etymonline_v_6257",
-        "https://www.oed.com/dictionary/heft_v1?tab=factsheet#1961806"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/heft#etymonline_v_41539",
+      "https://www.etymonline.com/word/heft#etymonline_v_6279",
+      "https://www.etymonline.com/word/heave#etymonline_v_6257",
+      "https://www.oed.com/dictionary/heft_v1?tab=factsheet#1961806"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "heft  -s (m n)",
-      "etymology": [
-        {
-          "name": "heft  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/heft#etymonline_v_6279",
-        "https://www.etymonline.com/word/heave#etymonline_v_6257",
-        "https://www.oed.com/dictionary/heft_n1?tab=factsheet#1961435"
-      ]
-    }
+    "name": "heft  -s (m n)",
+    "etymology": [
+      {
+        "name": "heft  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/heft#etymonline_v_6279",
+      "https://www.etymonline.com/word/heave#etymonline_v_6257",
+      "https://www.oed.com/dictionary/heft_n1?tab=factsheet#1961435"
+    ]
   }
 ]

@@ -1,93 +1,71 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "sigh",
-      "etymology": [
-        {
-          "name": "sice",
-          "origin": "Old English"
-        },
-        {
-          "name": "sighe",
-          "origin": "Middle English"
-        },
-        {
-          "name": "sigh",
-          "origin": "Modern English"
-        },
-        {
-          "name": "syh -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/sigh#etymonline_v_48658",
-        "https://www.etymonline.com/word/sigh#etymonline_v_23498",
-        "https://www.oed.com/dictionary/sigh_n?tab=factsheet#22799244",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40235",
-        "https://bosworthtoller.com/27602"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "sigh",
+    "etymology": [
+      {
+        "name": "sice",
+        "origin": "Old English"
+      },
+      {
+        "name": "sighe",
+        "origin": "Middle English"
+      },
+      {
+        "name": "sigh",
+        "origin": "Modern English"
+      },
+      {
+        "name": "syh -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/sigh#etymonline_v_48658",
+      "https://www.etymonline.com/word/sigh#etymonline_v_23498",
+      "https://www.oed.com/dictionary/sigh_n?tab=factsheet#22799244",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40235",
+      "https://bosworthtoller.com/27602"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to sigh",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to sigh",
+    "etymology": [
+      {
+        "name": "sican",
+        "origin": "Old English"
       },
-      "etymology": [
-        "sican",
-        "siken, sighen",
-        "to sigh",
-        "ta syhe -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to sigh",
-      "etymology": [
-        {
-          "name": "sican",
-          "origin": "Old English"
-        },
-        {
-          "name": "siken, sighen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to sigh",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta syhe -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "siken, sighen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to sigh",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta syhe -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta syhes",
+          "pastTense": "ta syhed",
+          "progressive": "ta syhing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/sigh#etymonline_v_23498",
-        "https://www.oed.com/dictionary/sigh_v?tab=pronunciation#22800125",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40236",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40296",
-        "https://bosworthtoller.com/27600"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/sigh#etymonline_v_23498",
+      "https://www.oed.com/dictionary/sigh_v?tab=pronunciation#22800125",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40236",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40296",
+      "https://bosworthtoller.com/27600"
+    ]
   }
 ]

@@ -1,106 +1,75 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "hazy",
-      "etymology": [
-        {
-          "name": "hasu, haswe",
-          "origin": "Old English"
-        },
-        {
-          "name": "hazy",
-          "origin": "Modern English"
-        },
-        {
-          "name": "hâsy -ier -iest -ily -iness",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/hazy#etymonline_v_6237",
-        "https://www.oed.com/dictionary/hazy_adj?tab=factsheet#1832267",
-        "https://bosworthtoller.com/18205"
-      ],
-      "degrees": {
-        "positive": "sy",
-        "comparative": "ier",
-        "superlative": "iest"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "haze",
-      "etymology": [
-        {
-          "name": "haze",
-          "origin": "Modern English"
-        },
-        {
-          "name": "hâse",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/haze#etymonline_v_37634",
-        "https://www.etymonline.com/word/hazy#etymonline_v_6237",
-        "https://www.oed.com/dictionary/haze_n?tab=factsheet#1829225"
-      ],
-      "gender": "feminine",
-      "number": "singular"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to haze",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "hazy",
+    "etymology": [
+      {
+        "name": "hasu, haswe",
+        "origin": "Old English"
       },
-      "etymology": [
-        "to haze",
-        "ta hâse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to haze",
-      "etymology": [
-        {
-          "name": "to haze",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta hâse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/haze#etymonline_v_6235",
-        "https://www.oed.com/dictionary/haze_v1?tab=factsheet#1829462"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "hazy",
+        "origin": "Modern English"
+      },
+      {
+        "name": "hâsy -ier -iest -ily -iness",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/hazy#etymonline_v_6237",
+      "https://www.oed.com/dictionary/hazy_adj?tab=factsheet#1832267",
+      "https://bosworthtoller.com/18205"
+    ]
+  },
+  {
+    "name": "haze",
+    "etymology": [
+      {
+        "name": "haze",
+        "origin": "Modern English"
+      },
+      {
+        "name": "hâse",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/haze#etymonline_v_37634",
+      "https://www.etymonline.com/word/hazy#etymonline_v_6237",
+      "https://www.oed.com/dictionary/haze_n?tab=factsheet#1829225"
+    ]
+  },
+  {
+    "infinitive": "to haze",
+    "etymology": [
+      {
+        "name": "to haze",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta hâse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta hâses",
+          "pastTense": "ta hâsed",
+          "progressive": "ta hâsing"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/haze#etymonline_v_6235",
+      "https://www.oed.com/dictionary/haze_v1?tab=factsheet#1829462"
+    ]
   }
 ]

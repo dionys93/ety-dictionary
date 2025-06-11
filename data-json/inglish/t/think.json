@@ -1,139 +1,107 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to think",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to think",
+    "etymology": [
+      {
+        "name": "þencan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "þencan",
-        "thinken",
-        "to think",
-        "ta þinke -s þoht -ing"
-      ]
-    },
-    "standard": {
-      "name": "to think",
-      "etymology": [
-        {
-          "name": "þencan",
-          "origin": "Old English"
-        },
-        {
-          "name": "thinken",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to think",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta þinke -s þoht -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "thinken",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to think",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta þinke -s þoht -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta þinkes"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/think#etymonline_v_10759",
-        "https://www.merriam-webster.com/dictionary/think#dictionary-entry-1",
-        "https://www.oed.com/dictionary/think_v2?tab=factsheet#18549255",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45310",
-        "https://bosworthtoller.com/31654"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/think#etymonline_v_10759",
+      "https://www.merriam-webster.com/dictionary/think#dictionary-entry-1",
+      "https://www.oed.com/dictionary/think_v2?tab=factsheet#18549255",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45310",
+      "https://bosworthtoller.com/31654"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "thought",
-      "etymology": [
-        {
-          "name": "þencan, þoht, geþoht",
-          "origin": "Old English"
-        },
-        {
-          "name": "thought",
-          "origin": "Middle English"
-        },
-        {
-          "name": "þoht -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/thought#etymonline_v_13253",
-        "https://www.merriam-webster.com/dictionary/thought",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45413",
-        "https://bosworthtoller.com/31918",
-        "https://bosworthtoller.com/31654"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "thought",
+    "etymology": [
+      {
+        "name": "þencan, þoht, geþoht",
+        "origin": "Old English"
+      },
+      {
+        "name": "thought",
+        "origin": "Middle English"
+      },
+      {
+        "name": "þoht -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/thought#etymonline_v_13253",
+      "https://www.merriam-webster.com/dictionary/thought",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45413",
+      "https://bosworthtoller.com/31918",
+      "https://bosworthtoller.com/31654"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "thinker",
-      "etymology": [
-        {
-          "name": "thinker",
-          "origin": "Modern English"
-        },
-        {
-          "name": "þinkeur -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/thinker#etymonline_v_49503",
-        "https://www.merriam-webster.com/dictionary/thinker"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "thinker",
+    "etymology": [
+      {
+        "name": "thinker",
+        "origin": "Modern English"
+      },
+      {
+        "name": "þinkeur -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/thinker#etymonline_v_49503",
+      "https://www.merriam-webster.com/dictionary/thinker"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "thinkable",
-      "etymology": [
-        {
-          "name": "thinkable",
-          "origin": "Modern English"
-        },
-        {
-          "name": "þinkable",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/thinkable#etymonline_v_49504",
-        "https://www.merriam-webster.com/dictionary/thinkable"
-      ]
-    }
+    "name": "thinkable",
+    "etymology": [
+      {
+        "name": "thinkable",
+        "origin": "Modern English"
+      },
+      {
+        "name": "þinkable",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/thinkable#etymonline_v_49504",
+      "https://www.merriam-webster.com/dictionary/thinkable"
+    ]
   }
 ]

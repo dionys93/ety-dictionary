@@ -1,174 +1,127 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "water",
-      "etymology": [
-        {
-          "name": "wæter",
-          "origin": "Old English"
-        },
-        {
-          "name": "water",
-          "origin": "Middle English"
-        },
-        {
-          "name": "ɯátre, ɯáters",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/water#etymonline_v_4854",
-        "https://www.oed.com/dictionary/water_n?tab=pronunciation#15025239",
-        "https://www.merriam-webster.com/dictionary/water#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51881",
-        "https://bosworthtoller.com/34482"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to water",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
+    "name": "water",
+    "etymology": [
+      {
+        "name": "wæter",
+        "origin": "Old English"
       },
-      "etymology": [
-        "wæterian",
-        "watren",
-        "to water",
-        "ta ɯátre -s -d ɯátering"
-      ]
-    },
-    "standard": {
-      "name": "to water",
-      "etymology": [
-        {
-          "name": "wæterian",
-          "origin": "Old English"
-        },
-        {
-          "name": "watren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to water",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta ɯátre -s -d ɯátering",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/water#etymonline_v_25556",
-        "https://www.oed.com/dictionary/water_v?tab=factsheet#15043796",
-        "https://www.merriam-webster.com/dictionary/water#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51922",
-        "https://bosworthtoller.com/34520"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "wet",
-      "etymology": [
-        {
-          "name": "wæt",
-          "origin": "Old English"
-        },
-        {
-          "name": "wet",
-          "origin": "Middle English"
-        },
-        {
-          "name": "ɯet -ter -test",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/wet#etymonline_v_7925",
-        "https://www.merriam-webster.com/dictionary/wet#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52386",
-        "https://bosworthtoller.com/34477"
-      ],
-      "degrees": {
-        "positive": "et",
-        "comparative": "ter",
-        "superlative": "test"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to wet",
-      "conjugations": {
-        "thirdPerson": "d",
-        "pastTense": "ing"
+      {
+        "name": "water",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "wætan",
-        "weten",
-        "to wet",
-        "ta ɯette ɯets -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to wet",
-      "etymology": [
-        {
-          "name": "wætan",
-          "origin": "Old English"
-        },
-        {
-          "name": "weten",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to wet",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta ɯette ɯets -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/wet#etymonline_v_42847",
-        "https://www.etymonline.com/word/wet#etymonline_v_7925",
-        "https://www.merriam-webster.com/dictionary/wet#dictionary-entry-3",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52388",
-        "https://bosworthtoller.com/34480"
-      ],
-      "conjugations": {
-        "thirdPerson": "d",
-        "pastTense": "ing"
+      {
+        "name": "ɯátre, ɯáters",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/water#etymonline_v_4854",
+      "https://www.oed.com/dictionary/water_n?tab=pronunciation#15025239",
+      "https://www.merriam-webster.com/dictionary/water#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51881",
+      "https://bosworthtoller.com/34482"
+    ]
+  },
+  {
+    "infinitive": "to water",
+    "etymology": [
+      {
+        "name": "wæterian",
+        "origin": "Old English"
+      },
+      {
+        "name": "watren",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to water",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta ɯátre -s -d ɯátering",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta ɯátres",
+          "pastTense": "ta ɯátred"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/water#etymonline_v_25556",
+      "https://www.oed.com/dictionary/water_v?tab=factsheet#15043796",
+      "https://www.merriam-webster.com/dictionary/water#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51922",
+      "https://bosworthtoller.com/34520"
+    ]
+  },
+  {
+    "name": "wet",
+    "etymology": [
+      {
+        "name": "wæt",
+        "origin": "Old English"
+      },
+      {
+        "name": "wet",
+        "origin": "Middle English"
+      },
+      {
+        "name": "ɯet -ter -test",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/wet#etymonline_v_7925",
+      "https://www.merriam-webster.com/dictionary/wet#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52386",
+      "https://bosworthtoller.com/34477"
+    ]
+  },
+  {
+    "infinitive": "to wet",
+    "etymology": [
+      {
+        "name": "wætan",
+        "origin": "Old English"
+      },
+      {
+        "name": "weten",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to wet",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta ɯette ɯets -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta ɯette ɯetsd",
+          "pastTense": "ta ɯette ɯetsing"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/wet#etymonline_v_42847",
+      "https://www.etymonline.com/word/wet#etymonline_v_7925",
+      "https://www.merriam-webster.com/dictionary/wet#dictionary-entry-3",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED52388",
+      "https://bosworthtoller.com/34480"
+    ]
   }
 ]

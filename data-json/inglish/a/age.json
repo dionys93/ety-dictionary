@@ -1,87 +1,66 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "age",
-      "etymology": [
-        {
-          "name": "aevum, aetas",
-          "origin": "Latin"
-        },
-        {
-          "name": "aage, eage",
-          "origin": "Old French"
-        },
-        {
-          "name": "age",
-          "origin": "Middle English"
-        },
-        {
-          "name": "âge -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/age#etymonline_v_8026",
-        "https://www.oed.com/dictionary/age_n?tab=factsheet#8658290",
-        "https://www.anglo-norman.net/entry/aage",
-        "https://latin-dictionary.net/definition/2095/aetas-aetatis",
-        "https://latin-dictionary.net/definition/2127/aevum-aevi"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "age",
+    "etymology": [
+      {
+        "name": "aevum, aetas",
+        "origin": "Latin"
+      },
+      {
+        "name": "aage, eage",
+        "origin": "Old French"
+      },
+      {
+        "name": "age",
+        "origin": "Middle English"
+      },
+      {
+        "name": "âge -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/age#etymonline_v_8026",
+      "https://www.oed.com/dictionary/age_n?tab=factsheet#8658290",
+      "https://www.anglo-norman.net/entry/aage",
+      "https://latin-dictionary.net/definition/2095/aetas-aetatis",
+      "https://latin-dictionary.net/definition/2127/aevum-aevi"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to age",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to age",
+    "etymology": [
+      {
+        "name": "agen",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "agen",
-        "to age",
-        "ta âge -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to age",
-      "etymology": [
-        {
-          "name": "agen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to age",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta âge -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to age",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta âge -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta âges",
+          "pastTense": "ta âged",
+          "progressive": "ta âging"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/age#etymonline_v_40876",
-        "https://www.etymonline.com/word/age#etymonline_v_8026",
-        "https://www.oed.com/dictionary/age_v?tab=factsheet#8662209",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED827"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/age#etymonline_v_40876",
+      "https://www.etymonline.com/word/age#etymonline_v_8026",
+      "https://www.oed.com/dictionary/age_v?tab=factsheet#8662209",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED827"
+    ]
   }
 ]

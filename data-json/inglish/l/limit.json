@@ -1,131 +1,104 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to limit",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to limit",
+    "etymology": [
+      {
+        "name": "limes, limitare",
+        "origin": "Latin"
       },
-      "etymology": [
-        "limes, limitare",
-        "limiter",
-        "limiten",
-        "to limit",
-        "ta limite -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to limit",
-      "etymology": [
-        {
-          "name": "limes, limitare",
-          "origin": "Latin"
-        },
-        {
-          "name": "limiter",
-          "origin": "Old French"
-        },
-        {
-          "name": "limiten",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to limit",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta limite -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "limiter",
+        "origin": "Old French"
+      },
+      {
+        "name": "limiten",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to limit",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta limite -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta limites",
+          "pastTense": "ta limited",
+          "progressive": "ta limiting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/limit#etymonline_v_42660",
-        "https://www.merriam-webster.com/dictionary/limit#dictionary-entry-2",
-        "https://www.oed.com/dictionary/limit_v?tab=factsheet#39197396",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25618",
-        "https://anglo-norman.net/entry/limiter",
-        "https://latin-dictionary.net/definition/25700/limito-limitare-limitavi-limitatus",
-        "https://latin-dictionary.net/definition/25695/limes-limitis"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/limit#etymonline_v_42660",
+      "https://www.merriam-webster.com/dictionary/limit#dictionary-entry-2",
+      "https://www.oed.com/dictionary/limit_v?tab=factsheet#39197396",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED25618",
+      "https://anglo-norman.net/entry/limiter",
+      "https://latin-dictionary.net/definition/25700/limito-limitare-limitavi-limitatus",
+      "https://latin-dictionary.net/definition/25695/limes-limitis"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "limit  -s (m n)",
-      "etymology": [
-        {
-          "name": "limus, limen, limes, limitem",
-          "origin": "Latin"
-        },
-        {
-          "name": "limite",
-          "origin": "Old French"
-        },
-        {
-          "name": "limit  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/limit#etymonline_v_9535",
-        "https://www.merriam-webster.com/dictionary/limit#dictionary-entry-1",
-        "https://www.oed.com/dictionary/limit_n?tab=factsheet#39196093",
-        "https://anglo-norman.net/entry/limite",
-        "https://latin-dictionary.net/definition/25695/limes-limitis",
-        "https://latin-dictionary.net/definition/25694/limen-liminis",
-        "https://latin-dictionary.net/definition/25709/limus-lima-limum"
-      ]
-    }
+    "name": "limit  -s (m n)",
+    "etymology": [
+      {
+        "name": "limus, limen, limes, limitem",
+        "origin": "Latin"
+      },
+      {
+        "name": "limite",
+        "origin": "Old French"
+      },
+      {
+        "name": "limit  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/limit#etymonline_v_9535",
+      "https://www.merriam-webster.com/dictionary/limit#dictionary-entry-1",
+      "https://www.oed.com/dictionary/limit_n?tab=factsheet#39196093",
+      "https://anglo-norman.net/entry/limite",
+      "https://latin-dictionary.net/definition/25695/limes-limitis",
+      "https://latin-dictionary.net/definition/25694/limen-liminis",
+      "https://latin-dictionary.net/definition/25709/limus-lima-limum"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "limitation",
-      "etymology": [
-        {
-          "name": "limes, limitare,limitatio, limitationem",
-          "origin": "Inglish"
-        },
-        {
-          "name": "limitacion",
-          "origin": "Old French"
-        },
-        {
-          "name": "limitation",
-          "origin": "Modern English"
-        },
-        {
-          "name": "limitâcion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/limitation",
-        "https://www.oed.com/dictionary/limitation_n?tab=factsheet#39198903",
-        "https://anglo-norman.net/entry/limitacion",
-        "https://latin-dictionary.net/definition/25699/limitatio-limitationis",
-        "https://latin-dictionary.net/definition/25700/limito-limitare-limitavi-limitatus",
-        "https://latin-dictionary.net/definition/25695/limes-limitis"
-      ]
-    }
+    "name": "limitation",
+    "etymology": [
+      {
+        "name": "limes, limitare,limitatio, limitationem",
+        "origin": "Inglish"
+      },
+      {
+        "name": "limitacion",
+        "origin": "Old French"
+      },
+      {
+        "name": "limitation",
+        "origin": "Modern English"
+      },
+      {
+        "name": "limitâcion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/limitation",
+      "https://www.oed.com/dictionary/limitation_n?tab=factsheet#39198903",
+      "https://anglo-norman.net/entry/limitacion",
+      "https://latin-dictionary.net/definition/25699/limitatio-limitationis",
+      "https://latin-dictionary.net/definition/25700/limito-limitare-limitavi-limitatus",
+      "https://latin-dictionary.net/definition/25695/limes-limitis"
+    ]
   }
 ]

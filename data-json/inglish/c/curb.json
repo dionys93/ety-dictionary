@@ -1,72 +1,52 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "curb  -s (m n)",
-      "etymology": [
-        {
-          "name": "curvare, curvus",
-          "origin": "Latin"
-        },
-        {
-          "name": "courbe",
-          "origin": "Old French"
-        },
-        {
-          "name": "curb  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/curb#etymonline_v_474",
-        "https://www.merriam-webster.com/dictionary/curb#dictionary-entry-1",
-        "https://anglo-norman.net/entry/courbe",
-        "https://latin-dictionary.net/definition/15350/curvus-curva-curvum",
-        "https://latin-dictionary.net/definition/15347/curvo-curvare-curvavi-curvatus"
-      ]
-    }
+    "name": "curb  -s (m n)",
+    "etymology": [
+      {
+        "name": "curvare, curvus",
+        "origin": "Latin"
+      },
+      {
+        "name": "courbe",
+        "origin": "Old French"
+      },
+      {
+        "name": "curb  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/curb#etymonline_v_474",
+      "https://www.merriam-webster.com/dictionary/curb#dictionary-entry-1",
+      "https://anglo-norman.net/entry/courbe",
+      "https://latin-dictionary.net/definition/15350/curvus-curva-curvum",
+      "https://latin-dictionary.net/definition/15347/curvo-curvare-curvavi-curvatus"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to curb",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to curb",
+    "etymology": [
+      {
+        "name": "to curb",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to curb",
-        "ta curbe -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to curb",
-      "etymology": [
-        {
-          "name": "to curb",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta curbe -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta curbe -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta curbes",
+          "pastTense": "ta curbed",
+          "progressive": "ta curbing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/curb#etymonline_v_43803",
-        "https://www.etymonline.com/word/curb#etymonline_v_474",
-        "https://www.merriam-webster.com/dictionary/curb#dictionary-entry-2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/curb#etymonline_v_43803",
+      "https://www.etymonline.com/word/curb#etymonline_v_474",
+      "https://www.merriam-webster.com/dictionary/curb#dictionary-entry-2"
+    ]
   }
 ]

@@ -1,229 +1,170 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to batter",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ering"
+    "infinitive": "to batter",
+    "etymology": [
+      {
+        "name": "battuere, batuere",
+        "origin": "Latin"
       },
-      "etymology": [
-        "battuere, batuere",
-        "batre",
-        "bateren",
-        "to batter",
-        "ta batre -s -d -ering"
-      ]
-    },
-    "standard": {
-      "name": "to batter",
-      "etymology": [
-        {
-          "name": "battuere, batuere",
-          "origin": "Latin"
-        },
-        {
-          "name": "batre",
-          "origin": "Old French"
-        },
-        {
-          "name": "bateren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to batter",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta batre -s -d -ering",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/batter#etymonline_v_5327",
-        "https://www.merriam-webster.com/dictionary/batter#dictionary-entry-1",
-        "https://www.oed.com/dictionary/batter_v1?tab=pronunciation#26071751",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3785",
-        "https://www.anglo-norman.net/entry/batre_1",
-        "https://latin-dictionary.net/definition/6229/batuo-batuere",
-        "https://latin-dictionary.net/definition/6227/battuo-battuere"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ering"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "batter",
-      "etymology": [
-        {
-          "name": "battuere",
-          "origin": "Latin"
-        },
-        {
-          "name": "batteure",
-          "origin": "Old French"
-        },
-        {
-          "name": "bature",
-          "origin": "Middle English"
-        },
-        {
-          "name": "batter",
-          "origin": "Modern English"
-        },
-        {
-          "name": "bature, baturs",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/batter#etymonline_v_5328",
-        "https://www.etymonline.com/word/batter#etymonline_v_5327",
-        "https://www.etymonline.com/word/-ure#etymonline_v_32819",
-        "https://www.merriam-webster.com/dictionary/batter#dictionary-entry-2",
-        "https://www.oed.com/dictionary/batter_n1?tab=factsheet#26063649",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3807",
-        "https://www.anglo-norman.net/entry/bateure",
-        "https://latin-dictionary.net/definition/6227/battuo-battuere"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to batter",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "batre",
+        "origin": "Old French"
       },
-      "etymology": [
-        "to batter",
-        "ta bature -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to batter",
-      "etymology": [
-        {
-          "name": "to batter",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta bature -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/batter#dictionary-entry-3",
-        "https://www.etymonline.com/word/-ure#etymonline_v_32819",
-        "https://www.oed.com/dictionary/batter_n1?tab=factsheet#26063649"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to bat",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "bateren",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "batuere, battere",
-        "batre",
-        "to bat",
-        "ta bate -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to bat",
-      "etymology": [
-        {
-          "name": "batuere, battere",
-          "origin": "Latin"
-        },
-        {
-          "name": "batre",
-          "origin": "Old French"
-        },
-        {
-          "name": "to bat",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta bate -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to batter",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta batre -s -d -ering",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta batres",
+          "pastTense": "ta batred",
+          "progressive": "ta batreering"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bat#etymonline_v_5309",
-        "https://www.etymonline.com/word/bate#etymonline_v_5313",
-        "https://www.merriam-webster.com/dictionary/bat#dictionary-entry-4",
-        "https://www.anglo-norman.net/entry/batre_1",
-        "https://latin-dictionary.net/definition/6223/batto-battere",
-        "https://latin-dictionary.net/definition/6229/batuo-batuere"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/batter#etymonline_v_5327",
+      "https://www.merriam-webster.com/dictionary/batter#dictionary-entry-1",
+      "https://www.oed.com/dictionary/batter_v1?tab=pronunciation#26071751",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3785",
+      "https://www.anglo-norman.net/entry/batre_1",
+      "https://latin-dictionary.net/definition/6229/batuo-batuere",
+      "https://latin-dictionary.net/definition/6227/battuo-battuere"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "batter",
-      "etymology": [
-        {
-          "name": "batter",
-          "origin": "Modern English"
-        },
-        {
-          "name": "bateur -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
+    "name": "batter",
+    "etymology": [
+      {
+        "name": "battuere",
+        "origin": "Latin"
+      },
+      {
+        "name": "batteure",
+        "origin": "Old French"
+      },
+      {
+        "name": "bature",
+        "origin": "Middle English"
+      },
+      {
+        "name": "batter",
+        "origin": "Modern English"
+      },
+      {
+        "name": "bature, baturs",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/batter#etymonline_v_5328",
+      "https://www.etymonline.com/word/batter#etymonline_v_5327",
+      "https://www.etymonline.com/word/-ure#etymonline_v_32819",
+      "https://www.merriam-webster.com/dictionary/batter#dictionary-entry-2",
+      "https://www.oed.com/dictionary/batter_n1?tab=factsheet#26063649",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3807",
+      "https://www.anglo-norman.net/entry/bateure",
+      "https://latin-dictionary.net/definition/6227/battuo-battuere"
+    ]
+  },
+  {
+    "infinitive": "to batter",
+    "etymology": [
+      {
+        "name": "to batter",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta bature -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta batures",
+          "pastTense": "ta batured",
+          "progressive": "ta baturing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/batter#etymonline_v_52564",
-        "https://www.etymonline.com/word/bat#etymonline_v_46352",
-        "https://www.merriam-webster.com/dictionary/batter#dictionary-entry-6"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/batter#dictionary-entry-3",
+      "https://www.etymonline.com/word/-ure#etymonline_v_32819",
+      "https://www.oed.com/dictionary/batter_n1?tab=factsheet#26063649"
+    ]
+  },
+  {
+    "infinitive": "to bat",
+    "etymology": [
+      {
+        "name": "batuere, battere",
+        "origin": "Latin"
+      },
+      {
+        "name": "batre",
+        "origin": "Old French"
+      },
+      {
+        "name": "to bat",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta bate -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta bates",
+          "pastTense": "ta bated",
+          "progressive": "ta bating"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bat#etymonline_v_5309",
+      "https://www.etymonline.com/word/bate#etymonline_v_5313",
+      "https://www.merriam-webster.com/dictionary/bat#dictionary-entry-4",
+      "https://www.anglo-norman.net/entry/batre_1",
+      "https://latin-dictionary.net/definition/6223/batto-battere",
+      "https://latin-dictionary.net/definition/6229/batuo-batuere"
+    ]
+  },
+  {
+    "name": "batter",
+    "etymology": [
+      {
+        "name": "batter",
+        "origin": "Modern English"
+      },
+      {
+        "name": "bateur -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/batter#etymonline_v_52564",
+      "https://www.etymonline.com/word/bat#etymonline_v_46352",
+      "https://www.merriam-webster.com/dictionary/batter#dictionary-entry-6"
+    ]
   }
 ]

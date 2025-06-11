@@ -1,170 +1,127 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "intense  (adj)",
-      "etymology": [
-        {
-          "name": "in + tendere, intendere, intensus",
-          "origin": "Latin"
-        },
-        {
-          "name": "intense  (adj)",
-          "origin": "Old French"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/intense#etymonline_v_9385",
-        "https://www.merriam-webster.com/dictionary/intense",
-        "https://anglo-norman.net/entry/intense",
-        "https://latin-dictionary.net/definition/24359/intendo-intendere-intendi-intentus"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "intensive",
-      "etymology": [
-        {
-          "name": "intendere, intensivus",
-          "origin": "Latin"
-        },
-        {
-          "name": "intensif",
-          "origin": "Old French"
-        },
-        {
-          "name": "intensive",
-          "origin": "Modern English"
-        },
-        {
-          "name": "intènsif -vly -ness",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/intensive#etymonline_v_34995",
-        "https://www.merriam-webster.com/dictionary/intensive#dictionary-entry-2",
-        "https://www.merriam-webster.com/dictionary/intensive#dictionary-entry-1",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/intensif/43501",
-        "https://latin-dictionary.net/definition/24362/intensivus-intensiva-intensivum",
-        "https://latin-dictionary.net/definition/24359/intendo-intendere-intendi-intentus"
-      ],
-      "degrees": {
-        "positive": "nsif",
-        "comparative": "vly",
-        "superlative": "ness"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "intensity",
-      "etymology": [
-        {
-          "name": "intensity",
-          "origin": "Modern English"
-        },
-        {
-          "name": "intensetie, intensetis",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/intensity#etymonline_v_34891",
-        "https://www.etymonline.com/word/intense#etymonline_v_9385",
-        "https://www.etymonline.com/word/-ity#etymonline_v_32843",
-        "https://www.merriam-webster.com/dictionary/intensity"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to intensify",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "i"
+    "name": "intense  (adj)",
+    "etymology": [
+      {
+        "name": "in + tendere, intendere, intensus",
+        "origin": "Latin"
       },
-      "etymology": [
-        "to intensify",
-        "to intensefae -s -d -ïng"
-      ]
-    },
-    "standard": {
-      "name": "to intensify",
-      "etymology": [
-        {
-          "name": "to intensify",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to intensefae -s -d -ïng",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/intensify#etymonline_v_34892",
-        "https://www.etymonline.com/word/intense#etymonline_v_9385",
-        "https://www.etymonline.com/word/-ify#etymonline_v_42244"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "i"
+      {
+        "name": "intense  (adj)",
+        "origin": "Old French"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/intense#etymonline_v_9385",
+      "https://www.merriam-webster.com/dictionary/intense",
+      "https://anglo-norman.net/entry/intense",
+      "https://latin-dictionary.net/definition/24359/intendo-intendere-intendi-intentus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "intensification",
-      "etymology": [
-        {
-          "name": "intensification",
-          "origin": "Modern English"
-        },
-        {
-          "name": "intenseficâcion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
+    "name": "intensive",
+    "etymology": [
+      {
+        "name": "intendere, intensivus",
+        "origin": "Latin"
+      },
+      {
+        "name": "intensif",
+        "origin": "Old French"
+      },
+      {
+        "name": "intensive",
+        "origin": "Modern English"
+      },
+      {
+        "name": "intènsif -vly -ness",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "noun"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/intensive#etymonline_v_34995",
+      "https://www.merriam-webster.com/dictionary/intensive#dictionary-entry-2",
+      "https://www.merriam-webster.com/dictionary/intensive#dictionary-entry-1",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/intensif/43501",
+      "https://latin-dictionary.net/definition/24362/intensivus-intensiva-intensivum",
+      "https://latin-dictionary.net/definition/24359/intendo-intendere-intendi-intentus"
+    ]
+  },
+  {
+    "name": "intensity",
+    "etymology": [
+      {
+        "name": "intensity",
+        "origin": "Modern English"
+      },
+      {
+        "name": "intensetie, intensetis",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/intensity#etymonline_v_34891",
+      "https://www.etymonline.com/word/intense#etymonline_v_9385",
+      "https://www.etymonline.com/word/-ity#etymonline_v_32843",
+      "https://www.merriam-webster.com/dictionary/intensity"
+    ]
+  },
+  {
+    "infinitive": "to intensify",
+    "etymology": [
+      {
+        "name": "to intensify",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to intensefae -s -d -ïng",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to intensefaes",
+          "pastTense": "to intensefaed",
+          "progressive": "to intensefaei"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/intensification#etymonline_v_34999",
-        "https://www.merriam-webster.com/dictionary/intensification",
-        "https://www.oed.com/dictionary/intensification_n?tab=factsheet#225469"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/intensify#etymonline_v_34892",
+      "https://www.etymonline.com/word/intense#etymonline_v_9385",
+      "https://www.etymonline.com/word/-ify#etymonline_v_42244"
+    ]
+  },
+  {
+    "name": "intensification",
+    "etymology": [
+      {
+        "name": "intensification",
+        "origin": "Modern English"
+      },
+      {
+        "name": "intenseficâcion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/intensification#etymonline_v_34999",
+      "https://www.merriam-webster.com/dictionary/intensification",
+      "https://www.oed.com/dictionary/intensification_n?tab=factsheet#225469"
+    ]
   }
 ]

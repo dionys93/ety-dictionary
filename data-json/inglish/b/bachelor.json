@@ -1,70 +1,50 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "bacheler, bachelor, bachelier",
-      "etymology": [
-        {
-          "name": "bacheler, bachelor, bachelier",
-          "origin": "Old French"
-        },
-        {
-          "name": "bachlor -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bachelor",
-        "https://www.oed.com/dictionary/bachelor_n?tab=factsheet#30461522",
-        "https://anglo-norman.net/entry/bacheler"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "bacheler, bachelor, bachelier",
+    "etymology": [
+      {
+        "name": "bacheler, bachelor, bachelier",
+        "origin": "Old French"
+      },
+      {
+        "name": "bachlor -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bachelor",
+      "https://www.oed.com/dictionary/bachelor_n?tab=factsheet#30461522",
+      "https://anglo-norman.net/entry/bacheler"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "bachelor, to bach",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "bachelor, to bach",
+    "etymology": [
+      {
+        "name": "bachelor, to bach",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "bachelor, to bach",
-        "ta bache -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "bachelor, to bach",
-      "etymology": [
-        {
-          "name": "bachelor, to bach",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta bache -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta bache -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta baches",
+          "pastTense": "ta bached",
+          "progressive": "ta baching"
         }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/batch#dictionary-entry-3",
-        "https://www.oed.com/dictionary/bach_v?tab=factsheet#30450963"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/batch#dictionary-entry-3",
+      "https://www.oed.com/dictionary/bach_v?tab=factsheet#30450963"
+    ]
   }
 ]

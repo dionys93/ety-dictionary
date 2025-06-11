@@ -1,72 +1,51 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "piece  -s (f n)",
-      "etymology": [
-        {
-          "name": "pettia",
-          "origin": "Vulgar Latin"
-        },
-        {
-          "name": "piece  -s (f n)",
-          "origin": "Old French"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/piece#etymonline_v_14956",
-        "https://www.etymonline.com/word/piece#etymonline_v_54735",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32690",
-        "https://www.anglo-norman.net/entry/piece"
-      ]
-    }
+    "name": "piece  -s (f n)",
+    "etymology": [
+      {
+        "name": "pettia",
+        "origin": "Vulgar Latin"
+      },
+      {
+        "name": "piece  -s (f n)",
+        "origin": "Old French"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/piece#etymonline_v_14956",
+      "https://www.etymonline.com/word/piece#etymonline_v_54735",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32690",
+      "https://www.anglo-norman.net/entry/piece"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to piece",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to piece",
+    "etymology": [
+      {
+        "name": "pecen",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "pecen",
-        "to piece",
-        "ta piece -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to piece",
-      "etymology": [
-        {
-          "name": "pecen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to piece",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta piece -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to piece",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta piece -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta pieces",
+          "pastTense": "ta pieced",
+          "progressive": "ta piecing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/piece#etymonline_v_44388",
-        "https://www.etymonline.com/word/piece#etymonline_v_14956",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32691/track?counter=1&search_id=34352090"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/piece#etymonline_v_44388",
+      "https://www.etymonline.com/word/piece#etymonline_v_14956",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED32691/track?counter=1&search_id=34352090"
+    ]
   }
 ]

@@ -1,58 +1,41 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to burgeon",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to burgeon",
+    "etymology": [
+      {
+        "name": "burra",
+        "origin": "Latin"
       },
-      "etymology": [
-        "burra",
-        "burrionem",
-        "borjorner",
-        "to burgeon",
-        "ta burgione -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to burgeon",
-      "etymology": [
-        {
-          "name": "burra",
-          "origin": "Latin"
-        },
-        {
-          "name": "burrionem",
-          "origin": "Vulgar Latin"
-        },
-        {
-          "name": "borjorner",
-          "origin": "Old French"
-        },
-        {
-          "name": "to burgeon",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta burgione -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "burrionem",
+        "origin": "Vulgar Latin"
+      },
+      {
+        "name": "borjorner",
+        "origin": "Old French"
+      },
+      {
+        "name": "to burgeon",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta burgione -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta burgiones",
+          "pastTense": "ta burgioned",
+          "progressive": "ta burgioning"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/burgeon#etymonline_v_18101",
-        "https://www.merriam-webster.com/dictionary/burgeon",
-        "https://www.anglo-norman.net/entry/borjoner",
-        "https://latin-dictionary.net/definition/7137/burra-burrae"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/burgeon#etymonline_v_18101",
+      "https://www.merriam-webster.com/dictionary/burgeon",
+      "https://www.anglo-norman.net/entry/borjoner",
+      "https://latin-dictionary.net/definition/7137/burra-burrae"
+    ]
   }
 ]

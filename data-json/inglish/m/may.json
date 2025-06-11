@@ -1,121 +1,94 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "may, might",
-      "etymology": [
-        "magan, mihte, meahte",
-        "mouen, might",
-        "may, might",
-        "maye, máit"
-      ]
-    },
-    "standard": {
-      "name": "may, might",
-      "etymology": [
-        {
-          "name": "magan, mihte, meahte",
-          "origin": "Old English"
-        },
-        {
-          "name": "mouen, might",
-          "origin": "Middle English"
-        },
-        {
-          "name": "may, might",
-          "origin": "Modern English"
-        },
-        {
-          "name": "maye, máit",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/might#etymonline_v_14812",
-        "https://www.etymonline.com/word/might#etymonline_v_14813",
-        "https://www.merriam-webster.com/dictionary/might#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/might#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED28782",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED27708",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED27709",
-        "https://bosworthtoller.com/22462",
-        "https://bosworthtoller.com/22461",
-        "https://bosworthtoller.com/22272"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "mæht, miht",
-      "etymology": [
-        {
-          "name": "mæht, miht",
-          "origin": "Old English"
-        },
-        {
-          "name": "mîht",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/might#etymonline_v_14813",
-        "https://www.oed.com/dictionary/might_n1?tab=pronunciation#36799346",
-        "https://www.oed.com/dictionary/might_n1?tab=meaning_and_use#36799346",
-        "https://bosworthtoller.com/22136"
-      ],
-      "gender": "masculine",
-      "number": "singular"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "mighty",
-      "etymology": [
-        {
-          "name": "mæhtig, mihtig",
-          "origin": "Old English"
-        },
-        {
-          "name": "mighti",
-          "origin": "Middle English"
-        },
-        {
-          "name": "mighty",
-          "origin": "Modern English"
-        },
-        {
-          "name": "mîhty -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/mighty#etymonline_v_31215",
-        "https://www.etymonline.com/word/might#etymonline_v_14813",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED27716",
-        "https://bosworthtoller.com/22465",
-        "https://bosworthtoller.com/622"
-      ],
-      "degrees": {
-        "positive": "hty",
-        "comparative": "is"
+    "infinitive": "may, might",
+    "etymology": [
+      {
+        "name": "magan, mihte, meahte",
+        "origin": "Old English"
+      },
+      {
+        "name": "mouen, might",
+        "origin": "Middle English"
+      },
+      {
+        "name": "may, might",
+        "origin": "Modern English"
+      },
+      {
+        "name": "maye, máit",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/might#etymonline_v_14812",
+      "https://www.etymonline.com/word/might#etymonline_v_14813",
+      "https://www.merriam-webster.com/dictionary/might#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/might#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED28782",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED27708",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED27709",
+      "https://bosworthtoller.com/22462",
+      "https://bosworthtoller.com/22461",
+      "https://bosworthtoller.com/22272"
+    ]
+  },
+  {
+    "name": "mæht, miht",
+    "etymology": [
+      {
+        "name": "mæht, miht",
+        "origin": "Old English"
+      },
+      {
+        "name": "mîht",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/might#etymonline_v_14813",
+      "https://www.oed.com/dictionary/might_n1?tab=pronunciation#36799346",
+      "https://www.oed.com/dictionary/might_n1?tab=meaning_and_use#36799346",
+      "https://bosworthtoller.com/22136"
+    ]
+  },
+  {
+    "name": "mighty",
+    "etymology": [
+      {
+        "name": "mæhtig, mihtig",
+        "origin": "Old English"
+      },
+      {
+        "name": "mighti",
+        "origin": "Middle English"
+      },
+      {
+        "name": "mighty",
+        "origin": "Modern English"
+      },
+      {
+        "name": "mîhty -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "masculine noun"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/mighty#etymonline_v_31215",
+      "https://www.etymonline.com/word/might#etymonline_v_14813",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED27716",
+      "https://bosworthtoller.com/22465",
+      "https://bosworthtoller.com/622"
+    ]
   }
 ]

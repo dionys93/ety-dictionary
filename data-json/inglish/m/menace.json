@@ -1,130 +1,101 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "menace",
-      "etymology": [
-        {
-          "name": "minaciæ",
-          "origin": "Latin"
-        },
-        {
-          "name": "minacia",
-          "origin": "Vulgar Latin"
-        },
-        {
-          "name": "menace",
-          "origin": "Old French"
-        },
-        {
-          "name": "mènace -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/menace#etymonline_v_12572",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/menace/50305",
-        "https://www.anglo-norman.net/entry/manace",
-        "https://www.anglo-norman.net/entry/manasce",
-        "https://latin-dictionary.net/definition/26939/minaciter-minacius-minacissime"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to menace",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "menace",
+    "etymology": [
+      {
+        "name": "minaciæ",
+        "origin": "Latin"
       },
-      "etymology": [
-        "minacia, minaciare",
-        "manasser, menacier",
-        "manacen",
-        "to menace",
-        "ta mènace -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to menace",
-      "etymology": [
-        {
-          "name": "minacia, minaciare",
-          "origin": "Vulgar Latin"
-        },
-        {
-          "name": "manasser, menacier",
-          "origin": "Old French"
-        },
-        {
-          "name": "manacen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to menace",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta mènace -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/menace#etymonline_v_44500",
-        "https://www.etymonline.com/word/menace#etymonline_v_12572",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/menacer/50306",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26714",
-        "https://www.anglo-norman.net/entry/manacer",
-        "https://www.anglo-norman.net/entry/manascer",
-        "https://latin-dictionary.net/definition/26939/minaciter-minacius-minacissime"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "minacia",
+        "origin": "Vulgar Latin"
+      },
+      {
+        "name": "menace",
+        "origin": "Old French"
+      },
+      {
+        "name": "mènace -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/menace#etymonline_v_12572",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/menace/50305",
+      "https://www.anglo-norman.net/entry/manace",
+      "https://www.anglo-norman.net/entry/manasce",
+      "https://latin-dictionary.net/definition/26939/minaciter-minacius-minacissime"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "minacious",
-      "etymology": [
-        {
-          "name": "minax",
-          "origin": "Latin"
-        },
-        {
-          "name": "minacious",
-          "origin": "Modern English"
-        },
-        {
-          "name": "menâcioʃ -sly",
-          "origin": "Inglish"
+    "infinitive": "to menace",
+    "etymology": [
+      {
+        "name": "minacia, minaciare",
+        "origin": "Vulgar Latin"
+      },
+      {
+        "name": "manasser, menacier",
+        "origin": "Old French"
+      },
+      {
+        "name": "manacen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to menace",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta mènace -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta mènaces",
+          "pastTense": "ta mènaced",
+          "progressive": "ta mènacing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/minacious#etymonline_v_44716",
-        "https://www.etymonline.com/word/menace#etymonline_v_12572",
-        "https://www.etymonline.com/word/-ous#etymonline_v_32820",
-        "https://www.merriam-webster.com/dictionary/minacious",
-        "https://latin-dictionary.net/definition/26942/minax-gen-minacis"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/menace#etymonline_v_44500",
+      "https://www.etymonline.com/word/menace#etymonline_v_12572",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/menacer/50306",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED26714",
+      "https://www.anglo-norman.net/entry/manacer",
+      "https://www.anglo-norman.net/entry/manascer",
+      "https://latin-dictionary.net/definition/26939/minaciter-minacius-minacissime"
+    ]
+  },
+  {
+    "name": "minacious",
+    "etymology": [
+      {
+        "name": "minax",
+        "origin": "Latin"
+      },
+      {
+        "name": "minacious",
+        "origin": "Modern English"
+      },
+      {
+        "name": "menâcioʃ -sly",
+        "origin": "Inglish"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/minacious#etymonline_v_44716",
+      "https://www.etymonline.com/word/menace#etymonline_v_12572",
+      "https://www.etymonline.com/word/-ous#etymonline_v_32820",
+      "https://www.merriam-webster.com/dictionary/minacious",
+      "https://latin-dictionary.net/definition/26942/minax-gen-minacis"
+    ]
   }
 ]

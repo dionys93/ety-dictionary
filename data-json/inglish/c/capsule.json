@@ -1,76 +1,56 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "capsule",
-      "etymology": [
-        {
-          "name": "capsa, capsula",
-          "origin": "Latin"
-        },
-        {
-          "name": "capsule",
-          "origin": "French"
-        },
-        {
-          "name": "capsle, capsuls",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/capsule#etymonline_v_717",
-        "https://www.oed.com/dictionary/capsule_n?tab=factsheet#10152754",
-        "https://www.larousse.fr/dictionnaires/francais/capsule/12997",
-        "https://latin-dictionary.net/definition/8084/capsula-capsulae",
-        "https://latin-dictionary.net/definition/8079/capsa-capsae"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "capsule",
+    "etymology": [
+      {
+        "name": "capsa, capsula",
+        "origin": "Latin"
+      },
+      {
+        "name": "capsule",
+        "origin": "French"
+      },
+      {
+        "name": "capsle, capsuls",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/capsule#etymonline_v_717",
+      "https://www.oed.com/dictionary/capsule_n?tab=factsheet#10152754",
+      "https://www.larousse.fr/dictionnaires/francais/capsule/12997",
+      "https://latin-dictionary.net/definition/8084/capsula-capsulae",
+      "https://latin-dictionary.net/definition/8079/capsa-capsae"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to capsulize",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to capsulize",
+    "etymology": [
+      {
+        "name": "to capsulize",
+        "origin": "Modern English"
       },
-      "etymology": [
-        "to capsulize",
-        "ta capsulyse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to capsulize",
-      "etymology": [
-        {
-          "name": "to capsulize",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta capsulyse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta capsulyse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta capsulyses",
+          "pastTense": "ta capsulysed",
+          "progressive": "ta capsulysing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/capsulize",
-        "https://www.oed.com/dictionary/capsulize_v?tab=factsheet#10153567"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/capsulize",
+      "https://www.oed.com/dictionary/capsulize_v?tab=factsheet#10153567"
+    ]
   }
 ]

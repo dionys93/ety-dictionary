@@ -1,129 +1,102 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "anchor",
-      "etymology": [
-        {
-          "name": "ἄγκυρα",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "ancora",
-          "origin": "Latin"
-        },
-        {
-          "name": "ancor",
-          "origin": "Old English"
-        },
-        {
-          "name": "anker",
-          "origin": "Middle English"
-        },
-        {
-          "name": "anchor",
-          "origin": "Modern English"
-        },
-        {
-          "name": "âncor -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/anchor#etymonline_v_13403",
-        "https://www.merriam-webster.com/dictionary/anchor#dictionary-entry-1",
-        "https://www.oed.com/dictionary/anchor_n1?tab=pronunciation#3872740",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED1674",
-        "https://www.anglo-norman.net/entry/ancre_1",
-        "https://bosworthtoller.com/1647",
-        "https://latin-dictionary.net/definition/3373/ancora-ancorae",
-        "https://lsj.gr/wiki/%E1%BC%84%CE%B3%CE%BA%CF%85%CF%81%CE%B1"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to anchor",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "anchor",
+    "etymology": [
+      {
+        "name": "ἄγκυρα",
+        "origin": "Ancient Greek"
       },
-      "etymology": [
-        "ankeren",
-        "to anchor",
-        "ta âncore -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to anchor",
-      "etymology": [
-        {
-          "name": "ankeren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to anchor",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta âncore -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/anchor#etymonline_v_41392",
-        "https://www.etymonline.com/word/anchor#etymonline_v_13403",
-        "https://www.merriam-webster.com/dictionary/anchor#dictionary-entry-2",
-        "https://www.oed.com/dictionary/anchor_v?tab=factsheet#3876085",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED1676",
-        "https://www.anglo-norman.net/entry/ancrer"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "ancora",
+        "origin": "Latin"
+      },
+      {
+        "name": "ancor",
+        "origin": "Old English"
+      },
+      {
+        "name": "anker",
+        "origin": "Middle English"
+      },
+      {
+        "name": "anchor",
+        "origin": "Modern English"
+      },
+      {
+        "name": "âncor -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/anchor#etymonline_v_13403",
+      "https://www.merriam-webster.com/dictionary/anchor#dictionary-entry-1",
+      "https://www.oed.com/dictionary/anchor_n1?tab=pronunciation#3872740",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED1674",
+      "https://www.anglo-norman.net/entry/ancre_1",
+      "https://bosworthtoller.com/1647",
+      "https://latin-dictionary.net/definition/3373/ancora-ancorae",
+      "https://lsj.gr/wiki/%E1%BC%84%CE%B3%CE%BA%CF%85%CF%81%CE%B1"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "anchorage",
-      "etymology": [
-        {
-          "name": "anchorage",
-          "origin": "Modern English"
-        },
-        {
-          "name": "âncrage -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
+    "infinitive": "to anchor",
+    "etymology": [
+      {
+        "name": "ankeren",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to anchor",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta âncore -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta âncores",
+          "pastTense": "ta âncored",
+          "progressive": "ta âncoring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/anchorage#etymonline_v_26263",
-        "https://www.etymonline.com/word/anchor#etymonline_v_41392",
-        "https://www.merriam-webster.com/dictionary/anchorage"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/anchor#etymonline_v_41392",
+      "https://www.etymonline.com/word/anchor#etymonline_v_13403",
+      "https://www.merriam-webster.com/dictionary/anchor#dictionary-entry-2",
+      "https://www.oed.com/dictionary/anchor_v?tab=factsheet#3876085",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED1676",
+      "https://www.anglo-norman.net/entry/ancrer"
+    ]
+  },
+  {
+    "name": "anchorage",
+    "etymology": [
+      {
+        "name": "anchorage",
+        "origin": "Modern English"
+      },
+      {
+        "name": "âncrage -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/anchorage#etymonline_v_26263",
+      "https://www.etymonline.com/word/anchor#etymonline_v_41392",
+      "https://www.merriam-webster.com/dictionary/anchorage"
+    ]
   }
 ]

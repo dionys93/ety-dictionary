@@ -1,250 +1,189 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to repeat",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to repeat",
+    "etymology": [
+      {
+        "name": "re + petere, repetere",
+        "origin": "Latin"
       },
-      "etymology": [
-        "re + petere, repetere",
-        "repeter",
-        "repeten",
-        "to repeat",
-        "ta repite -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to repeat",
-      "etymology": [
-        {
-          "name": "re + petere, repetere",
-          "origin": "Latin"
-        },
-        {
-          "name": "repeter",
-          "origin": "Old French"
-        },
-        {
-          "name": "repeten",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to repeat",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta repite -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "repeter",
+        "origin": "Old French"
+      },
+      {
+        "name": "repeten",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to repeat",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta repite -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta repites",
+          "pastTense": "ta repited",
+          "progressive": "ta repiting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/repeat#etymonline_v_12823",
-        "https://www.merriam-webster.com/dictionary/repeat#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36887",
-        "https://anglo-norman.net/entry/repeter",
-        "https://latin-dictionary.net/definition/33338/repeto-repetere-repetivi-repetitus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/repeat#etymonline_v_12823",
+      "https://www.merriam-webster.com/dictionary/repeat#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36887",
+      "https://anglo-norman.net/entry/repeter",
+      "https://latin-dictionary.net/definition/33338/repeto-repetere-repetivi-repetitus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "repeat",
-      "etymology": [
-        {
-          "name": "repete",
-          "origin": "Middle English"
-        },
-        {
-          "name": "repeat",
-          "origin": "Modern English"
-        },
-        {
-          "name": "repite, repíts",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/repeat#etymonline_v_46222",
-        "https://www.etymonline.com/word/repeat#etymonline_v_12823",
-        "https://www.merriam-webster.com/dictionary/repeat#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36886"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "repeat",
-      "etymology": [
-        {
-          "name": "repeat",
-          "origin": "Modern English"
-        },
-        {
-          "name": "repite",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/repeat#dictionary-entry-3"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "repeater",
-      "etymology": [
-        {
-          "name": "repeater",
-          "origin": "Modern English"
-        },
-        {
-          "name": "repiteur, repítor -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/repeater#etymonline_v_48039",
-        "https://www.etymonline.com/word/repeat#etymonline_v_12823"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "repetitive",
-      "etymology": [
-        {
-          "name": "repetere, repetit-",
-          "origin": "Latin"
-        },
-        {
-          "name": "repetitive",
-          "origin": "Modern English"
-        },
-        {
-          "name": "repètatif -vly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/repetitive#etymonline_v_37117",
-        "https://www.merriam-webster.com/dictionary/repetitive"
-      ],
-      "degrees": {
-        "positive": "tatif",
-        "comparative": "vly"
+    "name": "repeat",
+    "etymology": [
+      {
+        "name": "repete",
+        "origin": "Middle English"
+      },
+      {
+        "name": "repeat",
+        "origin": "Modern English"
+      },
+      {
+        "name": "repite, repíts",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/repeat#etymonline_v_46222",
+      "https://www.etymonline.com/word/repeat#etymonline_v_12823",
+      "https://www.merriam-webster.com/dictionary/repeat#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED36886"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "repetition",
-      "etymology": [
-        {
-          "name": "repetere, repetitio",
-          "origin": "Latin"
-        },
-        {
-          "name": "repetition",
-          "origin": "Old French"
-        },
-        {
-          "name": "repeticion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/repetition#etymonline_v_12829",
-        "https://www.merriam-webster.com/dictionary/repetition",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/r%C3%A9p%C3%A9tition/67638",
-        "https://latin-dictionary.net/definition/33335/repetitio-repetitionis",
-        "https://latin-dictionary.net/definition/33338/repeto-repetere-repetivi-repetitus"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "repetitious",
-      "etymology": [
-        {
-          "name": "repetere, repetit-",
-          "origin": "Latin"
-        },
-        {
-          "name": "repetitious",
-          "origin": "Modern English"
-        },
-        {
-          "name": "repeticioʃ -sly -sness",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/repetitious#etymonline_v_37118",
-        "https://www.merriam-webster.com/dictionary/repetitious",
-        "https://latin-dictionary.net/definition/33338/repeto-repetere-repetivi-repetitus"
-      ],
-      "degrees": {
-        "positive": "sly",
-        "comparative": "sness"
+    "name": "repeat",
+    "etymology": [
+      {
+        "name": "repeat",
+        "origin": "Modern English"
+      },
+      {
+        "name": "repite",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/repeat#dictionary-entry-3"
+    ]
+  },
+  {
+    "name": "repeater",
+    "etymology": [
+      {
+        "name": "repeater",
+        "origin": "Modern English"
+      },
+      {
+        "name": "repiteur, repítor -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/repeater#etymonline_v_48039",
+      "https://www.etymonline.com/word/repeat#etymonline_v_12823"
+    ]
+  },
+  {
+    "name": "repetitive",
+    "etymology": [
+      {
+        "name": "repetere, repetit-",
+        "origin": "Latin"
+      },
+      {
+        "name": "repetitive",
+        "origin": "Modern English"
+      },
+      {
+        "name": "repètatif -vly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/repetitive#etymonline_v_37117",
+      "https://www.merriam-webster.com/dictionary/repetitive"
+    ]
+  },
+  {
+    "name": "repetition",
+    "etymology": [
+      {
+        "name": "repetere, repetitio",
+        "origin": "Latin"
+      },
+      {
+        "name": "repetition",
+        "origin": "Old French"
+      },
+      {
+        "name": "repeticion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/repetition#etymonline_v_12829",
+      "https://www.merriam-webster.com/dictionary/repetition",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/r%C3%A9p%C3%A9tition/67638",
+      "https://latin-dictionary.net/definition/33335/repetitio-repetitionis",
+      "https://latin-dictionary.net/definition/33338/repeto-repetere-repetivi-repetitus"
+    ]
+  },
+  {
+    "name": "repetitious",
+    "etymology": [
+      {
+        "name": "repetere, repetit-",
+        "origin": "Latin"
+      },
+      {
+        "name": "repetitious",
+        "origin": "Modern English"
+      },
+      {
+        "name": "repeticioʃ -sly -sness",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/repetitious#etymonline_v_37118",
+      "https://www.merriam-webster.com/dictionary/repetitious",
+      "https://latin-dictionary.net/definition/33338/repeto-repetere-repetivi-repetitus"
+    ]
   }
 ]

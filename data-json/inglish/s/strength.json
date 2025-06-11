@@ -1,82 +1,62 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "strength",
-      "etymology": [
-        {
-          "name": "strengþu, strengð",
-          "origin": "Old English"
-        },
-        {
-          "name": "strengthe",
-          "origin": "Middle English"
-        },
-        {
-          "name": "strength",
-          "origin": "Modern English"
-        },
-        {
-          "name": "stréngþ -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/strength#etymonline_v_22163",
-        "https://www.etymonline.com/word/-th#etymonline_v_24667",
-        "https://www.merriam-webster.com/dictionary/strength",
-        "https://www.collinsdictionary.com/us/dictionary/english/strength",
-        "https://dictionary.cambridge.org/us/dictionary/english/strength",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED43284",
-        "https://bosworthtoller.com/58639",
-        "https://bosworthtoller.com/29157"
-      ],
-      "number": "plural"
-    }
+    "name": "strength",
+    "etymology": [
+      {
+        "name": "strengþu, strengð",
+        "origin": "Old English"
+      },
+      {
+        "name": "strengthe",
+        "origin": "Middle English"
+      },
+      {
+        "name": "strength",
+        "origin": "Modern English"
+      },
+      {
+        "name": "stréngþ -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/strength#etymonline_v_22163",
+      "https://www.etymonline.com/word/-th#etymonline_v_24667",
+      "https://www.merriam-webster.com/dictionary/strength",
+      "https://www.collinsdictionary.com/us/dictionary/english/strength",
+      "https://dictionary.cambridge.org/us/dictionary/english/strength",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED43284",
+      "https://bosworthtoller.com/58639",
+      "https://bosworthtoller.com/29157"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "strengthen",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "strengthen",
+    "etymology": [
+      {
+        "name": "strengthen",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "strengthen",
-        "ta stréngþen -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "strengthen",
-      "etymology": [
-        {
-          "name": "strengthen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "ta stréngþen -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "ta stréngþen -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta stréngþens",
+          "pastTense": "ta stréngþend",
+          "progressive": "ta stréngþening"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/strengthen#etymonline_v_38307",
-        "https://www.etymonline.com/word/strength#etymonline_v_22163"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/strengthen#etymonline_v_38307",
+      "https://www.etymonline.com/word/strength#etymonline_v_22163"
+    ]
   }
 ]

@@ -1,79 +1,59 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to put",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to put",
+    "etymology": [
+      {
+        "name": "*putian, putung",
+        "origin": "Old English"
       },
-      "etymology": [
-        "*putian, putung",
-        "putten",
-        "to put",
-        "ta pûte -s pût -ing"
-      ]
-    },
-    "standard": {
-      "name": "to put",
-      "etymology": [
-        {
-          "name": "*putian, putung",
-          "origin": "Old English"
-        },
-        {
-          "name": "putten",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to put",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta pûte -s pût -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "putten",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to put",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta pûte -s pût -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta pûtes"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/put#etymonline_v_2919",
-        "https://www.merriam-webster.com/dictionary/put#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35369",
-        "https://bosworthtoller.com/57018"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/put#etymonline_v_2919",
+      "https://www.merriam-webster.com/dictionary/put#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED35369",
+      "https://bosworthtoller.com/57018"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "put",
-      "etymology": [
-        {
-          "name": "put",
-          "origin": "Modern English"
-        },
-        {
-          "name": "pûte, pûts",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/put#etymonline_v_47614",
-        "https://www.etymonline.com/word/put#etymonline_v_2919",
-        "https://www.merriam-webster.com/dictionary/put#dictionary-entry-2",
-        "https://www.oed.com/dictionary/put_n1?tab=factsheet#27615657"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "put",
+    "etymology": [
+      {
+        "name": "put",
+        "origin": "Modern English"
+      },
+      {
+        "name": "pûte, pûts",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/put#etymonline_v_47614",
+      "https://www.etymonline.com/word/put#etymonline_v_2919",
+      "https://www.merriam-webster.com/dictionary/put#dictionary-entry-2",
+      "https://www.oed.com/dictionary/put_n1?tab=factsheet#27615657"
+    ]
   }
 ]

@@ -1,118 +1,90 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "rain  -s (m n)",
-      "etymology": [
-        {
-          "name": "regn",
-          "origin": "Old English"
-        },
-        {
-          "name": "rein",
-          "origin": "Middle English"
-        },
-        {
-          "name": "rain  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/rain#etymonline_v_3310",
-        "https://www.oed.com/dictionary/rain_n1?tab=meaning_and_use#26965021",
-        "https://bosworthtoller.com/25651"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to rain",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "rain  -s (m n)",
+    "etymology": [
+      {
+        "name": "regn",
+        "origin": "Old English"
       },
-      "etymology": [
-        "regnian",
-        "reinen",
-        "to rain",
-        "ta raine -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to rain",
-      "etymology": [
-        {
-          "name": "regnian",
-          "origin": "Old English"
-        },
-        {
-          "name": "reinen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to rain",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta raine -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/rain#etymonline_v_43879",
-        "https://www.oed.com/dictionary/rain_v?tab=factsheet#26971308",
-        "https://bosworthtoller.com/57168"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "rein",
+        "origin": "Middle English"
+      },
+      {
+        "name": "rain  -s (m n)",
+        "origin": "Modern English"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/rain#etymonline_v_3310",
+      "https://www.oed.com/dictionary/rain_n1?tab=meaning_and_use#26965021",
+      "https://bosworthtoller.com/25651"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "rainbow",
-      "etymology": [
-        {
-          "name": "renboga",
-          "origin": "Old English"
-        },
-        {
-          "name": "rein-bowe",
-          "origin": "Middle English"
-        },
-        {
-          "name": "rainbow",
-          "origin": "Modern English"
-        },
-        {
-          "name": "rainbo -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
+    "infinitive": "to rain",
+    "etymology": [
+      {
+        "name": "regnian",
+        "origin": "Old English"
+      },
+      {
+        "name": "reinen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to rain",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta raine -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta raines",
+          "pastTense": "ta rained",
+          "progressive": "ta raining"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/rainbow#etymonline_v_36804",
-        "https://www.oed.com/dictionary/rainbow_n?tab=factsheet#26974019",
-        "https://www.etymonline.com/word/rain#etymonline_v_3310",
-        "https://www.etymonline.com/word/bow#etymonline_v_15678",
-        "https://bosworthtoller.com/25654"
-      ],
-      "number": "plural"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/rain#etymonline_v_43879",
+      "https://www.oed.com/dictionary/rain_v?tab=factsheet#26971308",
+      "https://bosworthtoller.com/57168"
+    ]
+  },
+  {
+    "name": "rainbow",
+    "etymology": [
+      {
+        "name": "renboga",
+        "origin": "Old English"
+      },
+      {
+        "name": "rein-bowe",
+        "origin": "Middle English"
+      },
+      {
+        "name": "rainbow",
+        "origin": "Modern English"
+      },
+      {
+        "name": "rainbo -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/rainbow#etymonline_v_36804",
+      "https://www.oed.com/dictionary/rainbow_n?tab=factsheet#26974019",
+      "https://www.etymonline.com/word/rain#etymonline_v_3310",
+      "https://www.etymonline.com/word/bow#etymonline_v_15678",
+      "https://bosworthtoller.com/25654"
+    ]
   }
 ]

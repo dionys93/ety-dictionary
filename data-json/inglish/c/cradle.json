@@ -1,86 +1,65 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "cradle",
-      "etymology": [
-        {
-          "name": "cradol",
-          "origin": "Old English"
-        },
-        {
-          "name": "cradel",
-          "origin": "Middle English"
-        },
-        {
-          "name": "cradle",
-          "origin": "Modern English"
-        },
-        {
-          "name": "crâdle, crâduls",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/cradle#etymonline_v_289",
-        "https://www.merriam-webster.com/dictionary/cradle#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10146",
-        "https://bosworthtoller.com/6637"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "cradle",
+    "etymology": [
+      {
+        "name": "cradol",
+        "origin": "Old English"
+      },
+      {
+        "name": "cradel",
+        "origin": "Middle English"
+      },
+      {
+        "name": "cradle",
+        "origin": "Modern English"
+      },
+      {
+        "name": "crâdle, crâduls",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/cradle#etymonline_v_289",
+      "https://www.merriam-webster.com/dictionary/cradle#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10146",
+      "https://bosworthtoller.com/6637"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to cradle",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to cradle",
+    "etymology": [
+      {
+        "name": "credelen",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "credelen",
-        "to cradle",
-        "ta crâdle -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to cradle",
-      "etymology": [
-        {
-          "name": "credelen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to cradle",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta crâdle -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to cradle",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta crâdle -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta crâdles",
+          "pastTense": "ta crâdled",
+          "progressive": "ta crâdling"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/cradle#etymonline_v_43989",
-        "https://www.etymonline.com/word/cradle#etymonline_v_289",
-        "https://www.merriam-webster.com/dictionary/cradle#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10245"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/cradle#etymonline_v_43989",
+      "https://www.etymonline.com/word/cradle#etymonline_v_289",
+      "https://www.merriam-webster.com/dictionary/cradle#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED10245"
+    ]
   }
 ]

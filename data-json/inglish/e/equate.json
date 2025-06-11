@@ -1,203 +1,158 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to equate",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to equate",
+    "etymology": [
+      {
+        "name": "aequus, aequare, aequatus",
+        "origin": "Latin"
       },
-      "etymology": [
-        "aequus, aequare, aequatus",
-        "to equate",
-        "to equâte -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to equate",
-      "etymology": [
-        {
-          "name": "aequus, aequare, aequatus",
-          "origin": "Latin"
-        },
-        {
-          "name": "to equate",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to equâte -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to equate",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to equâte -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to equâtes",
+          "pastTense": "to equâted",
+          "progressive": "to equâting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/equate#etymonline_v_8808",
-        "https://www.merriam-webster.com/dictionary/equate",
-        "https://latin-dictionary.net/definition/1996/aequo-aequare-aequavi-aequatus",
-        "https://latin-dictionary.net/definition/2000/aequus-aequa"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/equate#etymonline_v_8808",
+      "https://www.merriam-webster.com/dictionary/equate",
+      "https://latin-dictionary.net/definition/1996/aequo-aequare-aequavi-aequatus",
+      "https://latin-dictionary.net/definition/2000/aequus-aequa"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "equation",
-      "etymology": [
-        {
-          "name": "aequare, aequatio",
-          "origin": "Latin"
-        },
-        {
-          "name": "équation",
-          "origin": "French"
-        },
-        {
-          "name": "equation",
-          "origin": "Modern English"
-        },
-        {
-          "name": "equâsion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/equation#etymonline_v_32658",
-        "https://www.merriam-webster.com/dictionary/equation",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/%C3%A9quation/30561",
-        "https://latin-dictionary.net/definition/1945/aequatio-aequationis",
-        "https://latin-dictionary.net/definition/1996/aequo-aequare-aequavi-aequatus"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "equation",
+    "etymology": [
+      {
+        "name": "aequare, aequatio",
+        "origin": "Latin"
+      },
+      {
+        "name": "équation",
+        "origin": "French"
+      },
+      {
+        "name": "equation",
+        "origin": "Modern English"
+      },
+      {
+        "name": "equâsion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/equation#etymonline_v_32658",
+      "https://www.merriam-webster.com/dictionary/equation",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/%C3%A9quation/30561",
+      "https://latin-dictionary.net/definition/1945/aequatio-aequationis",
+      "https://latin-dictionary.net/definition/1996/aequo-aequare-aequavi-aequatus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "equator",
-      "etymology": [
-        {
-          "name": "aequare",
-          "origin": "Latin"
-        },
-        {
-          "name": "aequator",
-          "origin": "Medieval Latin"
-        },
-        {
-          "name": "equator",
-          "origin": "Modern English"
-        },
-        {
-          "name": "equâtor -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/equator#etymonline_v_8809",
-        "https://www.merriam-webster.com/dictionary/equator",
-        "https://latin-dictionary.net/definition/1947/aequator-aequatoris",
-        "https://latin-dictionary.net/definition/1996/aequo-aequare-aequavi-aequatus"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "equator",
+    "etymology": [
+      {
+        "name": "aequare",
+        "origin": "Latin"
+      },
+      {
+        "name": "aequator",
+        "origin": "Medieval Latin"
+      },
+      {
+        "name": "equator",
+        "origin": "Modern English"
+      },
+      {
+        "name": "equâtor -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/equator#etymonline_v_8809",
+      "https://www.merriam-webster.com/dictionary/equator",
+      "https://latin-dictionary.net/definition/1947/aequator-aequatoris",
+      "https://latin-dictionary.net/definition/1996/aequo-aequare-aequavi-aequatus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "equatorial",
-      "etymology": [
-        {
-          "name": "equatorial",
-          "origin": "Modern English"
-        },
-        {
-          "name": "equatôrial",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/equatorial#etymonline_v_32657",
-        "https://www.merriam-webster.com/dictionary/equatorial",
-        "https://www.etymonline.com/word/equator#etymonline_v_8809",
-        "https://www.etymonline.com/word/-ial#etymonline_v_42200"
-      ]
-    }
+    "name": "equatorial",
+    "etymology": [
+      {
+        "name": "equatorial",
+        "origin": "Modern English"
+      },
+      {
+        "name": "equatôrial",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/equatorial#etymonline_v_32657",
+      "https://www.merriam-webster.com/dictionary/equatorial",
+      "https://www.etymonline.com/word/equator#etymonline_v_8809",
+      "https://www.etymonline.com/word/-ial#etymonline_v_42200"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "equable  -y -ness (adj)",
-      "etymology": [
-        {
-          "name": "aequare, aequabilis",
-          "origin": "Latin"
-        },
-        {
-          "name": "equable  -y -ness (adj)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/equable#etymonline_v_8805",
-        "https://www.merriam-webster.com/dictionary/equable",
-        "https://latin-dictionary.net/definition/1930/aequabilis-aequabile-aequabilior",
-        "https://latin-dictionary.net/definition/1996/aequo-aequare-aequavi-aequatus"
-      ]
-    }
+    "name": "equable  -y -ness (adj)",
+    "etymology": [
+      {
+        "name": "aequare, aequabilis",
+        "origin": "Latin"
+      },
+      {
+        "name": "equable  -y -ness (adj)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/equable#etymonline_v_8805",
+      "https://www.merriam-webster.com/dictionary/equable",
+      "https://latin-dictionary.net/definition/1930/aequabilis-aequabile-aequabilior",
+      "https://latin-dictionary.net/definition/1996/aequo-aequare-aequavi-aequatus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "equabilatie -is  (f n)",
-      "etymology": [
-        {
-          "name": "aequabilis, aequabilitas",
-          "origin": "Latin"
-        },
-        {
-          "name": "equabilatie -is  (f n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/equability#etymonline_v_38247",
-        "https://www.merriam-webster.com/dictionary/equability",
-        "https://latin-dictionary.net/definition/1931/aequabilitas-aequabilitatis",
-        "https://latin-dictionary.net/definition/1930/aequabilis-aequabile-aequabilior"
-      ]
-    }
+    "name": "equabilatie -is  (f n)",
+    "etymology": [
+      {
+        "name": "aequabilis, aequabilitas",
+        "origin": "Latin"
+      },
+      {
+        "name": "equabilatie -is  (f n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/equability#etymonline_v_38247",
+      "https://www.merriam-webster.com/dictionary/equability",
+      "https://latin-dictionary.net/definition/1931/aequabilitas-aequabilitatis",
+      "https://latin-dictionary.net/definition/1930/aequabilis-aequabile-aequabilior"
+    ]
   }
 ]

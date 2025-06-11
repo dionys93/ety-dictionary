@@ -1,129 +1,96 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to agree",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "y"
+    "infinitive": "to agree",
+    "etymology": [
+      {
+        "name": "gratus, gratum",
+        "origin": "Latin"
       },
-      "etymology": [
-        "gratus, gratum",
-        "a gré, agreer",
-        "to agree",
-        "to agríe -s -d -ýing"
-      ]
-    },
-    "standard": {
-      "name": "to agree",
-      "etymology": [
-        {
-          "name": "gratus, gratum",
-          "origin": "Latin"
-        },
-        {
-          "name": "a gré, agreer",
-          "origin": "Old French"
-        },
-        {
-          "name": "to agree",
-          "origin": "Modern English"
-        },
-        {
-          "name": "to agríe -s -d -ýing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "a gré, agreer",
+        "origin": "Old French"
+      },
+      {
+        "name": "to agree",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to agríe -s -d -ýing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "to agríes",
+          "pastTense": "to agríed",
+          "progressive": "to agríey"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/agree#etymonline_v_8053",
-        "https://www.oed.com/dictionary/agree_v?tab=factsheet#8142906",
-        "https://anglo-norman.net/entry/agreer_1",
-        "https://anglo-norman.net/entry/agree_1",
-        "https://latin-dictionary.net/definition/21690/gratus-grata"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "y"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/agree#etymonline_v_8053",
+      "https://www.oed.com/dictionary/agree_v?tab=factsheet#8142906",
+      "https://anglo-norman.net/entry/agreer_1",
+      "https://anglo-norman.net/entry/agree_1",
+      "https://latin-dictionary.net/definition/21690/gratus-grata"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "agreement",
-      "etymology": [
-        {
-          "name": "a gré, agreer, agrement, agreement",
-          "origin": "Old French"
-        },
-        {
-          "name": "agreement",
-          "origin": "Modern English"
-        },
-        {
-          "name": "agríment -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/agreement#etymonline_v_26077",
-        "https://www.etymonline.com/word/agreeance#etymonline_v_29565",
-        "https://www.oed.com/dictionary/agreement_n?tab=factsheet#8164045",
-        "https://www.dictionary.com/browse/agreeance",
-        "https://trends.google.com/trends/explore?date=all&geo=US&q=agreeance,agreement&hl=en",
-        "https://anglo-norman.net/entry/agreement",
-        "https://anglo-norman.net/entry/agreer_1",
-        "https://anglo-norman.net/entry/agree_1"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "agreement",
+    "etymology": [
+      {
+        "name": "a gré, agreer, agrement, agreement",
+        "origin": "Old French"
+      },
+      {
+        "name": "agreement",
+        "origin": "Modern English"
+      },
+      {
+        "name": "agríment -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/agreement#etymonline_v_26077",
+      "https://www.etymonline.com/word/agreeance#etymonline_v_29565",
+      "https://www.oed.com/dictionary/agreement_n?tab=factsheet#8164045",
+      "https://www.dictionary.com/browse/agreeance",
+      "https://trends.google.com/trends/explore?date=all&geo=US&q=agreeance,agreement&hl=en",
+      "https://anglo-norman.net/entry/agreement",
+      "https://anglo-norman.net/entry/agreer_1",
+      "https://anglo-norman.net/entry/agree_1"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "agreeable",
-      "etymology": [
-        {
-          "name": "agreer, agreable",
-          "origin": "Old French"
-        },
-        {
-          "name": "agreeable",
-          "origin": "Modern English"
-        },
-        {
-          "name": "agríable -y -ness",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/agreeable#etymonline_v_26076",
-        "https://www.oed.com/dictionary/agreeable_adj?tab=pronunciation#8147719",
-        "https://anglo-norman.net/entry/agreable",
-        "https://anglo-norman.net/entry/agreer_1"
-      ],
-      "degrees": {
-        "positive": "able",
-        "comparative": "y",
-        "superlative": "ness"
+    "name": "agreeable",
+    "etymology": [
+      {
+        "name": "agreer, agreable",
+        "origin": "Old French"
+      },
+      {
+        "name": "agreeable",
+        "origin": "Modern English"
+      },
+      {
+        "name": "agríable -y -ness",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/agreeable#etymonline_v_26076",
+      "https://www.oed.com/dictionary/agreeable_adj?tab=pronunciation#8147719",
+      "https://anglo-norman.net/entry/agreable",
+      "https://anglo-norman.net/entry/agreer_1"
+    ]
   }
 ]

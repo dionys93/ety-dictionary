@@ -1,86 +1,65 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to get",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to get",
+    "etymology": [
+      {
+        "name": "geta",
+        "origin": "Old Norse"
       },
-      "etymology": [
-        "geta",
-        "getan",
-        "geten",
-        "to get",
-        "ta guet -s gót gotten guetting"
-      ]
-    },
-    "standard": {
-      "name": "to get",
-      "etymology": [
-        {
-          "name": "geta",
-          "origin": "Old Norse"
-        },
-        {
-          "name": "getan",
-          "origin": "Old English"
-        },
-        {
-          "name": "geten",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to get",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta guet -s gót gotten guetting",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "getan",
+        "origin": "Old English"
+      },
+      {
+        "name": "geten",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to get",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta guet -s gót gotten guetting",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta guets"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/get#etymonline_v_6055",
-        "https://www.etymonline.com/word/get#etymonline_v_41050",
-        "https://www.collinsdictionary.com/us/dictionary/english/get",
-        "https://www.oed.com/dictionary/get_v?tab=factsheet#3125276",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED18489",
-        "https://bosworthtoller.com/16363",
-        "https://old-norse.net/html/g.php#geta"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/get#etymonline_v_6055",
+      "https://www.etymonline.com/word/get#etymonline_v_41050",
+      "https://www.collinsdictionary.com/us/dictionary/english/get",
+      "https://www.oed.com/dictionary/get_v?tab=factsheet#3125276",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED18489",
+      "https://bosworthtoller.com/16363",
+      "https://old-norse.net/html/g.php#geta"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "get",
-      "etymology": [
-        {
-          "name": "get",
-          "origin": "Modern English"
-        },
-        {
-          "name": "guet -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/get#dictionary-entry-2",
-        "https://www.oed.com/dictionary/get_n1?tab=factsheet#3124681",
-        "https://www.oed.com/dictionary/get_n3?tab=factsheet#3125224"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "get",
+    "etymology": [
+      {
+        "name": "get",
+        "origin": "Modern English"
+      },
+      {
+        "name": "guet -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/get#dictionary-entry-2",
+      "https://www.oed.com/dictionary/get_n1?tab=factsheet#3124681",
+      "https://www.oed.com/dictionary/get_n3?tab=factsheet#3125224"
+    ]
   }
 ]

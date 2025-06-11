@@ -1,301 +1,247 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "lake",
-      "etymology": [
-        {
-          "name": "lacus",
-          "origin": "Latin"
-        },
-        {
-          "name": "lack",
-          "origin": "Old French"
-        },
-        {
-          "name": "lake",
-          "origin": "Modern English"
-        },
-        {
-          "name": "lâc -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/lake#etymonline_v_2008",
-        "https://www.merriam-webster.com/dictionary/lake#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/lake#word-history",
-        "https://www.anglo-norman.net/entry/lac_1",
-        "https://latin-dictionary.net/definition/25157/lacus-lacus"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "lagoon",
-      "etymology": [
-        {
-          "name": "lacus, lacuna",
-          "origin": "Latin"
-        },
-        {
-          "name": "lagune",
-          "origin": "French"
-        },
-        {
-          "name": "lagoon",
-          "origin": "Modern English"
-        },
-        {
-          "name": "lagune, lagúns",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/lagoon#etymonline_v_2000",
-        "https://www.etymonline.com/word/lake#etymonline_v_2008",
-        "https://www.merriam-webster.com/dictionary/lagoon",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/lagune/45856",
-        "https://latin-dictionary.net/definition/25152/lacuna-lacunae",
-        "https://latin-dictionary.net/definition/25157/lacus-lacus"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "lacquer",
-      "etymology": [
-        {
-          "name": "लाक्षा",
-          "origin": "Sanskrit"
-        },
-        {
-          "name": "लाख",
-          "origin": "Inglish"
-        },
-        {
-          "name": "لاک, لک",
-          "origin": "Persian"
-        },
-        {
-          "name": "اللك",
-          "origin": "Arabic"
-        },
-        {
-          "name": "lacca, lacre",
-          "origin": "Inglish"
-        },
-        {
-          "name": "lacquer",
-          "origin": "Modern English"
-        },
-        {
-          "name": "laccar -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/lacquer#etymonline_v_1983",
-        "https://www.merriam-webster.com/dictionary/lacquer#dictionary-entry-1",
-        "https://www.collinsdictionary.com/dictionary/portuguese-english/lacre",
-        "https://en.wiktionary.org/wiki/%D9%84%D9%83",
-        "https://translate.google.com/?sl=auto&tl=en&text=%D8%A7%D9%84%D9%84%D9%83&op=translate",
-        "https://en.wiktionary.org/wiki/%D9%84%D8%A7%DA%A9#Persian",
-        "https://dsal.uchicago.edu/cgi-bin/app/steingass_query.py?qs=%D8%B1%D9%86%DA%AF%20%D9%84%DA%A9%D8%A7&searchhws=yes&matchtype=exact",
-        "https://dsal.uchicago.edu/cgi-bin/app/mcgregor_query.py?qs=%E0%A4%B2%E0%A4%BE%E0%A4%96&searchhws=yes&matchtype=exact",
-        "https://www.learnsanskrit.cc/translate?search=lakSa&dir=se",
-        "https://dsal.uchicago.edu/cgi-bin/app/macdonell_query.py?qs=%E0%A4%B2%E0%A4%BE%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%BE&searchhws=yes&matchtype=exact"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to lacquer",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "lake",
+    "etymology": [
+      {
+        "name": "lacus",
+        "origin": "Latin"
       },
-      "etymology": [
-        "to lacquer",
-        "ta laccare -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to lacquer",
-      "etymology": [
-        {
-          "name": "to lacquer",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta laccare -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/lacquer#etymonline_v_43174",
-        "https://www.etymonline.com/word/lacquer#etymonline_v_1983",
-        "https://www.merriam-webster.com/dictionary/lacquer#dictionary-entry-2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "lac",
-      "etymology": [
-        {
-          "name": "लाक्षा",
-          "origin": "Sanskrit"
-        },
-        {
-          "name": "लाख",
-          "origin": "Inglish"
-        },
-        {
-          "name": "لاک, لک",
-          "origin": "Persian"
-        },
-        {
-          "name": "اللك",
-          "origin": "Arabic"
-        },
-        {
-          "name": "lacca, lacre",
-          "origin": "Inglish"
-        },
-        {
-          "name": "lac",
-          "origin": "Modern English"
-        },
-        {
-          "name": "lacc -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/lac#etymonline_v_1975",
-        "https://www.merriam-webster.com/dictionary/lac#dictionary-entry-1",
-        "https://www.collinsdictionary.com/dictionary/portuguese-english/lacre",
-        "https://en.wiktionary.org/wiki/%D9%84%D9%83",
-        "https://translate.google.com/?sl=auto&tl=en&text=%D8%A7%D9%84%D9%84%D9%83&op=translate",
-        "https://en.wiktionary.org/wiki/%D9%84%D8%A7%DA%A9#Persian",
-        "https://dsal.uchicago.edu/cgi-bin/app/steingass_query.py?qs=%D8%B1%D9%86%DA%AF%20%D9%84%DA%A9%D8%A7&searchhws=yes&matchtype=exact",
-        "https://dsal.uchicago.edu/cgi-bin/app/mcgregor_query.py?qs=%E0%A4%B2%E0%A4%BE%E0%A4%96&searchhws=yes&matchtype=exact",
-        "https://www.learnsanskrit.cc/translate?search=lakSa&dir=se",
-        "https://dsal.uchicago.edu/cgi-bin/app/macdonell_query.py?qs=%E0%A4%B2%E0%A4%BE%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%BE&searchhws=yes&matchtype=exact"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "lake",
-      "etymology": [
-        {
-          "name": "laque",
-          "origin": "French"
-        },
-        {
-          "name": "lake",
-          "origin": "Modern English"
-        },
-        {
-          "name": "lâcc -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/lake#etymonline_v_2009",
-        "https://www.merriam-webster.com/dictionary/lake#dictionary-entry-2",
-        "https://www.merriam-webster.com/dictionary/lake#word-history"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to lake",
-      "conjugations": {
-        "thirdPerson": "cs",
-        "pastTense": "ed",
-        "progressive": "ing"
+      {
+        "name": "lack",
+        "origin": "Old French"
       },
-      "etymology": [
-        "to lake",
-        "ta lâcq -cs -ed -ing"
-      ]
-    },
-    "standard": {
-      "name": "to lake",
-      "etymology": [
-        {
-          "name": "to lake",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta lâcq -cs -ed -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/lake#dictionary-entry-3",
-        "https://www.merriam-webster.com/dictionary/lake#word-history"
-      ],
-      "conjugations": {
-        "thirdPerson": "cs",
-        "pastTense": "ed",
-        "progressive": "ing"
+      {
+        "name": "lake",
+        "origin": "Modern English"
+      },
+      {
+        "name": "lâc -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/lake#etymonline_v_2008",
+      "https://www.merriam-webster.com/dictionary/lake#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/lake#word-history",
+      "https://www.anglo-norman.net/entry/lac_1",
+      "https://latin-dictionary.net/definition/25157/lacus-lacus"
+    ]
+  },
+  {
+    "name": "lagoon",
+    "etymology": [
+      {
+        "name": "lacus, lacuna",
+        "origin": "Latin"
+      },
+      {
+        "name": "lagune",
+        "origin": "French"
+      },
+      {
+        "name": "lagoon",
+        "origin": "Modern English"
+      },
+      {
+        "name": "lagune, lagúns",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/lagoon#etymonline_v_2000",
+      "https://www.etymonline.com/word/lake#etymonline_v_2008",
+      "https://www.merriam-webster.com/dictionary/lagoon",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/lagune/45856",
+      "https://latin-dictionary.net/definition/25152/lacuna-lacunae",
+      "https://latin-dictionary.net/definition/25157/lacus-lacus"
+    ]
+  },
+  {
+    "name": "lacquer",
+    "etymology": [
+      {
+        "name": "लाक्षा",
+        "origin": "Sanskrit"
+      },
+      {
+        "name": "लाख",
+        "origin": "Inglish"
+      },
+      {
+        "name": "لاک, لک",
+        "origin": "Persian"
+      },
+      {
+        "name": "اللك",
+        "origin": "Arabic"
+      },
+      {
+        "name": "lacca, lacre",
+        "origin": "Inglish"
+      },
+      {
+        "name": "lacquer",
+        "origin": "Modern English"
+      },
+      {
+        "name": "laccar -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/lacquer#etymonline_v_1983",
+      "https://www.merriam-webster.com/dictionary/lacquer#dictionary-entry-1",
+      "https://www.collinsdictionary.com/dictionary/portuguese-english/lacre",
+      "https://en.wiktionary.org/wiki/%D9%84%D9%83",
+      "https://translate.google.com/?sl=auto&tl=en&text=%D8%A7%D9%84%D9%84%D9%83&op=translate",
+      "https://en.wiktionary.org/wiki/%D9%84%D8%A7%DA%A9#Persian",
+      "https://dsal.uchicago.edu/cgi-bin/app/steingass_query.py?qs=%D8%B1%D9%86%DA%AF%20%D9%84%DA%A9%D8%A7&searchhws=yes&matchtype=exact",
+      "https://dsal.uchicago.edu/cgi-bin/app/mcgregor_query.py?qs=%E0%A4%B2%E0%A4%BE%E0%A4%96&searchhws=yes&matchtype=exact",
+      "https://www.learnsanskrit.cc/translate?search=lakSa&dir=se",
+      "https://dsal.uchicago.edu/cgi-bin/app/macdonell_query.py?qs=%E0%A4%B2%E0%A4%BE%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%BE&searchhws=yes&matchtype=exact"
+    ]
+  },
+  {
+    "infinitive": "to lacquer",
+    "etymology": [
+      {
+        "name": "to lacquer",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta laccare -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta laccares",
+          "pastTense": "ta laccared",
+          "progressive": "ta laccaring"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/lacquer#etymonline_v_43174",
+      "https://www.etymonline.com/word/lacquer#etymonline_v_1983",
+      "https://www.merriam-webster.com/dictionary/lacquer#dictionary-entry-2"
+    ]
+  },
+  {
+    "name": "lac",
+    "etymology": [
+      {
+        "name": "लाक्षा",
+        "origin": "Sanskrit"
+      },
+      {
+        "name": "लाख",
+        "origin": "Inglish"
+      },
+      {
+        "name": "لاک, لک",
+        "origin": "Persian"
+      },
+      {
+        "name": "اللك",
+        "origin": "Arabic"
+      },
+      {
+        "name": "lacca, lacre",
+        "origin": "Inglish"
+      },
+      {
+        "name": "lac",
+        "origin": "Modern English"
+      },
+      {
+        "name": "lacc -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/lac#etymonline_v_1975",
+      "https://www.merriam-webster.com/dictionary/lac#dictionary-entry-1",
+      "https://www.collinsdictionary.com/dictionary/portuguese-english/lacre",
+      "https://en.wiktionary.org/wiki/%D9%84%D9%83",
+      "https://translate.google.com/?sl=auto&tl=en&text=%D8%A7%D9%84%D9%84%D9%83&op=translate",
+      "https://en.wiktionary.org/wiki/%D9%84%D8%A7%DA%A9#Persian",
+      "https://dsal.uchicago.edu/cgi-bin/app/steingass_query.py?qs=%D8%B1%D9%86%DA%AF%20%D9%84%DA%A9%D8%A7&searchhws=yes&matchtype=exact",
+      "https://dsal.uchicago.edu/cgi-bin/app/mcgregor_query.py?qs=%E0%A4%B2%E0%A4%BE%E0%A4%96&searchhws=yes&matchtype=exact",
+      "https://www.learnsanskrit.cc/translate?search=lakSa&dir=se",
+      "https://dsal.uchicago.edu/cgi-bin/app/macdonell_query.py?qs=%E0%A4%B2%E0%A4%BE%E0%A4%95%E0%A5%8D%E0%A4%B7%E0%A4%BE&searchhws=yes&matchtype=exact"
+    ]
+  },
+  {
+    "name": "lake",
+    "etymology": [
+      {
+        "name": "laque",
+        "origin": "French"
+      },
+      {
+        "name": "lake",
+        "origin": "Modern English"
+      },
+      {
+        "name": "lâcc -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/lake#etymonline_v_2009",
+      "https://www.merriam-webster.com/dictionary/lake#dictionary-entry-2",
+      "https://www.merriam-webster.com/dictionary/lake#word-history"
+    ]
+  },
+  {
+    "infinitive": "to lake",
+    "etymology": [
+      {
+        "name": "to lake",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta lâcq -cs -ed -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta lâcqcs",
+          "pastTense": "ta lâcqed",
+          "progressive": "ta lâcqing"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/lake#dictionary-entry-3",
+      "https://www.merriam-webster.com/dictionary/lake#word-history"
+    ]
   }
 ]

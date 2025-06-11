@@ -1,191 +1,145 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to fly",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to fly",
+    "etymology": [
+      {
+        "name": "fleogan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "fleogan",
-        "flien",
-        "to fly",
-        "ta flyhe -s flou flone -ing"
-      ]
-    },
-    "standard": {
-      "name": "to fly",
-      "etymology": [
-        {
-          "name": "fleogan",
-          "origin": "Old English"
-        },
-        {
-          "name": "flien",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to fly",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta flyhe -s flou flone -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fly#etymonline_v_8956",
-        "https://www.merriam-webster.com/dictionary/fly#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16330",
-        "https://bosworthtoller.com/10913"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "fly",
-      "etymology": [
-        {
-          "name": "fleoge",
-          "origin": "Old English"
-        },
-        {
-          "name": "flie",
-          "origin": "Middle English"
-        },
-        {
-          "name": "fly",
-          "origin": "Modern English"
-        },
-        {
-          "name": "flyh -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fly#etymonline_v_8955",
-        "https://www.etymonline.com/word/fly#etymonline_v_8956",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16328",
-        "https://bosworthtoller.com/10914"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "fly",
-      "etymology": [
-        {
-          "name": "fly",
-          "origin": "Modern Slang"
-        },
-        {
-          "name": "flyh -er -est",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/fly#dictionary-entry-5"
-      ],
-      "degrees": {
-        "positive": "flyh",
-        "comparative": "er",
-        "superlative": "est"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "flight",
-      "etymology": [
-        {
-          "name": "flyht",
-          "origin": "Old English"
-        },
-        {
-          "name": "flight",
-          "origin": "Middle English"
-        },
-        {
-          "name": "flyht -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/flight#etymonline_v_8882",
-        "https://www.merriam-webster.com/dictionary/flight#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/flight#dictionary-entry-3",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16335",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16334",
-        "https://bosworthtoller.com/11033"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to flight",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "flien",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "to flight",
-        "ta flyhte -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to flight",
-      "etymology": [
-        {
-          "name": "to flight",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta flyhte -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to fly",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta flyhe -s flou flone -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta flyhes"
         }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/flight#dictionary-entry-2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fly#etymonline_v_8956",
+      "https://www.merriam-webster.com/dictionary/fly#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16330",
+      "https://bosworthtoller.com/10913"
+    ]
+  },
+  {
+    "name": "fly",
+    "etymology": [
+      {
+        "name": "fleoge",
+        "origin": "Old English"
+      },
+      {
+        "name": "flie",
+        "origin": "Middle English"
+      },
+      {
+        "name": "fly",
+        "origin": "Modern English"
+      },
+      {
+        "name": "flyh -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fly#etymonline_v_8955",
+      "https://www.etymonline.com/word/fly#etymonline_v_8956",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16328",
+      "https://bosworthtoller.com/10914"
+    ]
+  },
+  {
+    "name": "fly",
+    "etymology": [
+      {
+        "name": "fly",
+        "origin": "Modern Slang"
+      },
+      {
+        "name": "flyh -er -est",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ],
+        "degrees": {
+          "positive": "flyh",
+          "comparative": "er",
+          "superlative": "est"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/fly#dictionary-entry-5"
+    ]
+  },
+  {
+    "name": "flight",
+    "etymology": [
+      {
+        "name": "flyht",
+        "origin": "Old English"
+      },
+      {
+        "name": "flight",
+        "origin": "Middle English"
+      },
+      {
+        "name": "flyht -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/flight#etymonline_v_8882",
+      "https://www.merriam-webster.com/dictionary/flight#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/flight#dictionary-entry-3",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16335",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16334",
+      "https://bosworthtoller.com/11033"
+    ]
+  },
+  {
+    "infinitive": "to flight",
+    "etymology": [
+      {
+        "name": "to flight",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta flyhte -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta flyhtes",
+          "pastTense": "ta flyhted",
+          "progressive": "ta flyhting"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/flight#dictionary-entry-2"
+    ]
   }
 ]

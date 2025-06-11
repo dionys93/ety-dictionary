@@ -1,35 +1,31 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "dollar",
-      "etymology": [
-        {
-          "name": "Joachimstaler, taler, daler",
-          "origin": "Inglish"
-        },
-        {
-          "name": "dollar",
-          "origin": "Modern English"
-        },
-        {
-          "name": "dálar -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/dollar#etymonline_v_13908",
-        "https://www.oed.com/dictionary/dollar_n?tab=factsheet#6393782",
-        "https://www.merriam-webster.com/dictionary/daler",
-        "https://dict.leo.org/german-english/Taler",
-        "https://en.wiktionary.org/wiki/Joachimsthaler#German"
-      ]
-    }
+    "name": "dollar",
+    "etymology": [
+      {
+        "name": "Joachimstaler, taler, daler",
+        "origin": "Inglish"
+      },
+      {
+        "name": "dollar",
+        "origin": "Modern English"
+      },
+      {
+        "name": "dálar -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/dollar#etymonline_v_13908",
+      "https://www.oed.com/dictionary/dollar_n?tab=factsheet#6393782",
+      "https://www.merriam-webster.com/dictionary/daler",
+      "https://dict.leo.org/german-english/Taler",
+      "https://en.wiktionary.org/wiki/Joachimsthaler#German"
+    ]
   }
 ]

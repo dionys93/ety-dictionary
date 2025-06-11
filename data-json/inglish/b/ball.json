@@ -1,283 +1,225 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "ball",
-      "etymology": [
-        {
-          "name": "böllr",
-          "origin": "Old Norse"
-        },
-        {
-          "name": "beal",
-          "origin": "Old English"
-        },
-        {
-          "name": "bal",
-          "origin": "Middle English"
-        },
-        {
-          "name": "ball",
-          "origin": "Modern English"
-        },
-        {
-          "name": "bòle, bòls",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/ball#etymonline_v_223",
-        "https://www.collinsdictionary.com/us/dictionary/spanish-english/f%C3%BAtbol",
-        "https://www.collinsdictionary.com/us/dictionary/spanish-english/bola",
-        "https://www.merriam-webster.com/dictionary/ball#dictionary-entry-1",
-        "https://www.oed.com/dictionary/ball_n1?tab=factsheet#29094254",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3504",
-        "https://bosworthtoller.com/3112",
-        "https://old-norse.net/html/b.php#b%C3%B6llr"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to ball",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "ball",
+    "etymology": [
+      {
+        "name": "böllr",
+        "origin": "Old Norse"
       },
-      "etymology": [
-        "to ball",
-        "ta bòle -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to ball",
-      "etymology": [
-        {
-          "name": "to ball",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta bòle -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/ball#etymonline_v_42346",
-        "https://www.merriam-webster.com/dictionary/ball#dictionary-entry-2",
-        "https://www.oed.com/dictionary/ball_v2?tab=factsheet#29105932"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "bowl",
-      "etymology": [
-        {
-          "name": "bolla",
-          "origin": "Old English"
-        },
-        {
-          "name": "bowl",
-          "origin": "Modern English"
-        },
-        {
-          "name": "bole, bôls",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bowl#etymonline_v_15685",
-        "https://www.etymonline.com/word/bowl#etymonline_v_52993",
-        "https://www.etymonline.com/word/boll",
-        "https://www.merriam-webster.com/dictionary/bowl#dictionary-entry-1",
-        "https://www.merriam-webster.com/dictionary/bowl#dictionary-entry-2",
-        "https://www.merriam-webster.com/dictionary/boll#dictionary-entry-1",
-        "https://www.oed.com/dictionary/bowl_n1?tab=factsheet#15740877",
-        "https://www.oed.com/dictionary/bowl_n2?tab=factsheet#15744701",
-        "https://bosworthtoller.com/4833",
-        "https://claude.ai/share/b04d0d73-ace8-47cf-a8aa-8ddf79c1ce30"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to bowl",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "beal",
+        "origin": "Old English"
       },
-      "etymology": [
-        "to bowl",
-        "ta bole -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to bowl",
-      "etymology": [
-        {
-          "name": "to bowl",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta bole -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bowl#etymonline_v_46773",
-        "https://www.merriam-webster.com/dictionary/bowl#dictionary-entry-3",
-        "https://www.oed.com/dictionary/bowl_v1?tab=factsheet#15746324"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "bal",
+        "origin": "Middle English"
+      },
+      {
+        "name": "ball",
+        "origin": "Modern English"
+      },
+      {
+        "name": "bòle, bòls",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/ball#etymonline_v_223",
+      "https://www.collinsdictionary.com/us/dictionary/spanish-english/f%C3%BAtbol",
+      "https://www.collinsdictionary.com/us/dictionary/spanish-english/bola",
+      "https://www.merriam-webster.com/dictionary/ball#dictionary-entry-1",
+      "https://www.oed.com/dictionary/ball_n1?tab=factsheet#29094254",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED3504",
+      "https://bosworthtoller.com/3112",
+      "https://old-norse.net/html/b.php#b%C3%B6llr"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "ball  -s (m n)",
-      "etymology": [
-        {
-          "name": "βαλλίζω",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "ballare",
-          "origin": "Latin"
-        },
-        {
-          "name": "baler",
-          "origin": "Old French"
-        },
-        {
-          "name": "ball  -s (m n)",
-          "origin": "Modern English"
+    "infinitive": "to ball",
+    "etymology": [
+      {
+        "name": "to ball",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta bòle -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta bòles",
+          "pastTense": "ta bòled",
+          "progressive": "ta bòling"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/ball#etymonline_v_224",
-        "https://www.merriam-webster.com/dictionary/ball#dictionary-entry-3",
-        "https://www.anglo-norman.net/entry/balee",
-        "https://www.anglo-norman.net/entry/baler_1",
-        "https://latin-dictionary.net/definition/6055/ballo-ballare-ballavi-ballatus",
-        "https://lsj.gr/wiki/%CE%B2%CE%B1%CE%BB%CE%BB%CE%AF%CE%B6%CF%89"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/ball#etymonline_v_42346",
+      "https://www.merriam-webster.com/dictionary/ball#dictionary-entry-2",
+      "https://www.oed.com/dictionary/ball_v2?tab=factsheet#29105932"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "ballo, ballerina",
-      "etymology": [
-        {
-          "name": "ballo, ballerina",
-          "origin": "Italian"
-        },
-        {
-          "name": "balarína -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/ballerina",
-        "https://dle.rae.es/bailar%C3%ADn?m=form",
-        "https://www.oed.com/dictionary/ballerina_n?tab=factsheet#28793104",
-        "https://www.treccani.it/vocabolario/ballerina/?search=ballerina%2F",
-        "https://www.treccani.it/vocabolario/ballo/?search=ballo%2F"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "bowl",
+    "etymology": [
+      {
+        "name": "bolla",
+        "origin": "Old English"
+      },
+      {
+        "name": "bowl",
+        "origin": "Modern English"
+      },
+      {
+        "name": "bole, bôls",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bowl#etymonline_v_15685",
+      "https://www.etymonline.com/word/bowl#etymonline_v_52993",
+      "https://www.etymonline.com/word/boll",
+      "https://www.merriam-webster.com/dictionary/bowl#dictionary-entry-1",
+      "https://www.merriam-webster.com/dictionary/bowl#dictionary-entry-2",
+      "https://www.merriam-webster.com/dictionary/boll#dictionary-entry-1",
+      "https://www.oed.com/dictionary/bowl_n1?tab=factsheet#15740877",
+      "https://www.oed.com/dictionary/bowl_n2?tab=factsheet#15744701",
+      "https://bosworthtoller.com/4833",
+      "https://claude.ai/share/b04d0d73-ace8-47cf-a8aa-8ddf79c1ce30"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "ballet",
-      "etymology": [
-        {
-          "name": "βαλλίζω",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "ballare",
-          "origin": "Latin"
-        },
-        {
-          "name": "ballo, balletto",
-          "origin": "Italian"
-        },
-        {
-          "name": "ballette",
-          "origin": "French"
-        },
-        {
-          "name": "ballet",
-          "origin": "Modern English"
-        },
-        {
-          "name": "balâ -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
+    "infinitive": "to bowl",
+    "etymology": [
+      {
+        "name": "to bowl",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta bole -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta boles",
+          "pastTense": "ta boled",
+          "progressive": "ta boling"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/ballet",
-        "https://www.oed.com/dictionary/ballet_n1?tab=factsheet#28794512",
-        "https://www.littre.org/definition/ballet",
-        "https://www.treccani.it/enciclopedia/balletto/?search=balletto%2F",
-        "https://www.treccani.it/vocabolario/ballo/?search=ballo%2F",
-        "https://latin-dictionary.net/definition/6055/ballo-ballare-ballavi-ballatus",
-        "https://lsj.gr/wiki/%CE%B2%CE%B1%CE%BB%CE%BB%CE%AF%CE%B6%CF%89"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bowl#etymonline_v_46773",
+      "https://www.merriam-webster.com/dictionary/bowl#dictionary-entry-3",
+      "https://www.oed.com/dictionary/bowl_v1?tab=factsheet#15746324"
+    ]
+  },
+  {
+    "name": "ball  -s (m n)",
+    "etymology": [
+      {
+        "name": "βαλλίζω",
+        "origin": "Ancient Greek"
+      },
+      {
+        "name": "ballare",
+        "origin": "Latin"
+      },
+      {
+        "name": "baler",
+        "origin": "Old French"
+      },
+      {
+        "name": "ball  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/ball#etymonline_v_224",
+      "https://www.merriam-webster.com/dictionary/ball#dictionary-entry-3",
+      "https://www.anglo-norman.net/entry/balee",
+      "https://www.anglo-norman.net/entry/baler_1",
+      "https://latin-dictionary.net/definition/6055/ballo-ballare-ballavi-ballatus",
+      "https://lsj.gr/wiki/%CE%B2%CE%B1%CE%BB%CE%BB%CE%AF%CE%B6%CF%89"
+    ]
+  },
+  {
+    "name": "ballo, ballerina",
+    "etymology": [
+      {
+        "name": "ballo, ballerina",
+        "origin": "Italian"
+      },
+      {
+        "name": "balarína -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/ballerina",
+      "https://dle.rae.es/bailar%C3%ADn?m=form",
+      "https://www.oed.com/dictionary/ballerina_n?tab=factsheet#28793104",
+      "https://www.treccani.it/vocabolario/ballerina/?search=ballerina%2F",
+      "https://www.treccani.it/vocabolario/ballo/?search=ballo%2F"
+    ]
+  },
+  {
+    "name": "ballet",
+    "etymology": [
+      {
+        "name": "βαλλίζω",
+        "origin": "Ancient Greek"
+      },
+      {
+        "name": "ballare",
+        "origin": "Latin"
+      },
+      {
+        "name": "ballo, balletto",
+        "origin": "Italian"
+      },
+      {
+        "name": "ballette",
+        "origin": "French"
+      },
+      {
+        "name": "ballet",
+        "origin": "Modern English"
+      },
+      {
+        "name": "balâ -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/ballet",
+      "https://www.oed.com/dictionary/ballet_n1?tab=factsheet#28794512",
+      "https://www.littre.org/definition/ballet",
+      "https://www.treccani.it/enciclopedia/balletto/?search=balletto%2F",
+      "https://www.treccani.it/vocabolario/ballo/?search=ballo%2F",
+      "https://latin-dictionary.net/definition/6055/ballo-ballare-ballavi-ballatus",
+      "https://lsj.gr/wiki/%CE%B2%CE%B1%CE%BB%CE%BB%CE%AF%CE%B6%CF%89"
+    ]
   }
 ]

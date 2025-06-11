@@ -1,127 +1,98 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to cease",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to cease",
+    "etymology": [
+      {
+        "name": "cessare",
+        "origin": "Latin"
       },
-      "etymology": [
-        "cessare",
-        "cesser",
-        "cesen",
-        "to cease",
-        "ta ciesse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to cease",
-      "etymology": [
-        {
-          "name": "cessare",
-          "origin": "Latin"
-        },
-        {
-          "name": "cesser",
-          "origin": "Old French"
-        },
-        {
-          "name": "cesen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to cease",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta ciesse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "cesser",
+        "origin": "Old French"
+      },
+      {
+        "name": "cesen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to cease",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta ciesse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta ciesses",
+          "pastTense": "ta ciessed",
+          "progressive": "ta ciessing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/cease#etymonline_v_8316",
-        "https://www.merriam-webster.com/dictionary/cease",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7155",
-        "https://www.anglo-norman.net/entry/cesser_1",
-        "https://latin-dictionary.net/definition/9197/cesso-cessare-cessavi-cessatus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/cease#etymonline_v_8316",
+      "https://www.merriam-webster.com/dictionary/cease",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7155",
+      "https://www.anglo-norman.net/entry/cesser_1",
+      "https://latin-dictionary.net/definition/9197/cesso-cessare-cessavi-cessatus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "cease",
-      "etymology": [
-        {
-          "name": "cesse",
-          "origin": "Old French"
-        },
-        {
-          "name": "cease",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ciess -es",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/cease#etymonline_v_47025",
-        "https://www.merriam-webster.com/dictionary/cease#dictionary-entry-2"
-      ],
-      "number": "plural"
-    }
+    "name": "cease",
+    "etymology": [
+      {
+        "name": "cesse",
+        "origin": "Old French"
+      },
+      {
+        "name": "cease",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ciess -es",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/cease#etymonline_v_47025",
+      "https://www.merriam-webster.com/dictionary/cease#dictionary-entry-2"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "cessation",
-      "etymology": [
-        {
-          "name": "cessationem",
-          "origin": "Latin"
-        },
-        {
-          "name": "cessacyoun",
-          "origin": "Middle English"
-        },
-        {
-          "name": "cessation",
-          "origin": "Modern English"
-        },
-        {
-          "name": "cessâcion -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/cessation#etymonline_v_8378",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7160",
-        "https://latin-dictionary.net/definition/9190/cessatio-cessationis"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "cessation",
+    "etymology": [
+      {
+        "name": "cessationem",
+        "origin": "Latin"
+      },
+      {
+        "name": "cessacyoun",
+        "origin": "Middle English"
+      },
+      {
+        "name": "cessation",
+        "origin": "Modern English"
+      },
+      {
+        "name": "cessâcion -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/cessation#etymonline_v_8378",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED7160",
+      "https://latin-dictionary.net/definition/9190/cessatio-cessationis"
+    ]
   }
 ]

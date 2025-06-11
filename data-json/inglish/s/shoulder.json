@@ -1,88 +1,67 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "shoulder",
-      "etymology": [
-        {
-          "name": "sculdor",
-          "origin": "Old English"
-        },
-        {
-          "name": "shulder",
-          "origin": "Middle English"
-        },
-        {
-          "name": "shoulder",
-          "origin": "Modern English"
-        },
-        {
-          "name": "shôldor -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/shoulder#etymonline_v_23437",
-        "https://www.merriam-webster.com/dictionary/shoulder#dictionary-entry-1",
-        "https://www.oed.com/dictionary/shoulder_n?tab=factsheet#23030151",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40157",
-        "https://bosworthtoller.com/27074"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "shoulder",
+    "etymology": [
+      {
+        "name": "sculdor",
+        "origin": "Old English"
+      },
+      {
+        "name": "shulder",
+        "origin": "Middle English"
+      },
+      {
+        "name": "shoulder",
+        "origin": "Modern English"
+      },
+      {
+        "name": "shôldor -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/shoulder#etymonline_v_23437",
+      "https://www.merriam-webster.com/dictionary/shoulder#dictionary-entry-1",
+      "https://www.oed.com/dictionary/shoulder_n?tab=factsheet#23030151",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40157",
+      "https://bosworthtoller.com/27074"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to shoulder",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to shoulder",
+    "etymology": [
+      {
+        "name": "shulderen",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "shulderen",
-        "to shoulder",
-        "ta shôldore -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to shoulder",
-      "etymology": [
-        {
-          "name": "shulderen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to shoulder",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta shôldore -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to shoulder",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta shôldore -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta shôldores",
+          "pastTense": "ta shôldored",
+          "progressive": "ta shôldoring"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/shoulder#etymonline_v_46075",
-        "https://www.etymonline.com/word/shoulder#etymonline_v_23437",
-        "https://www.merriam-webster.com/dictionary/shoulder#dictionary-entry-2",
-        "https://www.oed.com/dictionary/shoulder_v?tab=factsheet#23034047",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40160"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/shoulder#etymonline_v_46075",
+      "https://www.etymonline.com/word/shoulder#etymonline_v_23437",
+      "https://www.merriam-webster.com/dictionary/shoulder#dictionary-entry-2",
+      "https://www.oed.com/dictionary/shoulder_v?tab=factsheet#23034047",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40160"
+    ]
   }
 ]

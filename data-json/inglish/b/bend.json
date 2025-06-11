@@ -1,72 +1,52 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to bend",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to bend",
+    "etymology": [
+      {
+        "name": "bendan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "bendan",
-        "benden",
-        "to bend",
-        "ta bende -s bent -ing"
-      ]
-    },
-    "standard": {
-      "name": "to bend",
-      "etymology": [
-        {
-          "name": "bendan",
-          "origin": "Old English"
-        },
-        {
-          "name": "benden",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to bend",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta bende -s bent -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "benden",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to bend",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta bende -s bent -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta bendes"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bend#etymonline_v_11033",
-        "https://www.merriam-webster.com/dictionary/bend#dictionary-entry-1",
-        "https://www.oed.com/dictionary/bend_v?tab=factsheet#23633876",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4061",
-        "https://bosworthtoller.com/3653"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bend#etymonline_v_11033",
+      "https://www.merriam-webster.com/dictionary/bend#dictionary-entry-1",
+      "https://www.oed.com/dictionary/bend_v?tab=factsheet#23633876",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED4061",
+      "https://bosworthtoller.com/3653"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "bend  -s (m n)",
-      "etymology": [
-        {
-          "name": "bend  -s (m n)",
-          "origin": "Old English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bend#etymonline_v_42309",
-        "https://www.etymonline.com/word/bend#etymonline_v_11033",
-        "https://www.merriam-webster.com/dictionary/bend#dictionary-entry-2",
-        "https://www.oed.com/dictionary/bend_n4?tab=factsheet#23632465",
-        "https://bosworthtoller.com/3652"
-      ]
-    }
+    "name": "bend  -s (m n)",
+    "etymology": [
+      {
+        "name": "bend  -s (m n)",
+        "origin": "Old English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bend#etymonline_v_42309",
+      "https://www.etymonline.com/word/bend#etymonline_v_11033",
+      "https://www.merriam-webster.com/dictionary/bend#dictionary-entry-2",
+      "https://www.oed.com/dictionary/bend_n4?tab=factsheet#23632465",
+      "https://bosworthtoller.com/3652"
+    ]
   }
 ]

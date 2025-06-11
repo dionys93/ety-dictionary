@@ -1,136 +1,96 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to burst",
-      "conjugations": {
-        "thirdPerson": "s"
+    "infinitive": "to burst",
+    "etymology": [
+      {
+        "name": "berstan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "berstan",
-        "bresten",
-        "to burst",
-        "ta burste -s burst -ing"
-      ]
-    },
-    "standard": {
-      "name": "to burst",
-      "etymology": [
-        {
-          "name": "berstan",
-          "origin": "Old English"
-        },
-        {
-          "name": "bresten",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to burst",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta burste -s burst -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/burst#etymonline_v_18123",
-        "https://www.merriam-webster.com/dictionary/burst#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5948",
-        "https://bosworthtoller.com/3872"
-      ],
-      "conjugations": {
-        "thirdPerson": "s"
-      }
-    }
-  },
-  {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "burst  -s (m n)",
-      "etymology": [
-        {
-          "name": "berst",
-          "origin": "Middle English"
-        },
-        {
-          "name": "burst  -s (m n)",
-          "origin": "Modern English"
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/burst#etymonline_v_46902",
-        "https://www.etymonline.com/word/burst#etymonline_v_18123",
-        "https://www.merriam-webster.com/dictionary/burst#dictionary-entry-2",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5944"
-      ]
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to bust",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "bresten",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "to bust",
-        "ta buste -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to bust",
-      "etymology": [
-        {
-          "name": "to bust",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta buste -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to burst",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta burste -s burst -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta burstes"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bust#etymonline_v_46612",
-        "https://www.etymonline.com/word/burst#etymonline_v_18123",
-        "https://www.merriam-webster.com/dictionary/bust#dictionary-entry-2",
-        "https://www.oed.com/dictionary/bust_v2?tab=factsheet#11537254"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/burst#etymonline_v_18123",
+      "https://www.merriam-webster.com/dictionary/burst#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5948",
+      "https://bosworthtoller.com/3872"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "bust  -s (m n)",
-      "etymology": [
-        {
-          "name": "bust  -s (m n)",
-          "origin": "Modern English"
+    "name": "burst  -s (m n)",
+    "etymology": [
+      {
+        "name": "berst",
+        "origin": "Middle English"
+      },
+      {
+        "name": "burst  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/burst#etymonline_v_46902",
+      "https://www.etymonline.com/word/burst#etymonline_v_18123",
+      "https://www.merriam-webster.com/dictionary/burst#dictionary-entry-2",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED5944"
+    ]
+  },
+  {
+    "infinitive": "to bust",
+    "etymology": [
+      {
+        "name": "to bust",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta buste -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta bustes",
+          "pastTense": "ta busted",
+          "progressive": "ta busting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/bust#etymonline_v_18136",
-        "https://www.etymonline.com/word/burst#etymonline_v_46902",
-        "https://www.merriam-webster.com/dictionary/bust#dictionary-entry-3",
-        "https://www.oed.com/dictionary/bust_n3?tab=factsheet#11534619"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bust#etymonline_v_46612",
+      "https://www.etymonline.com/word/burst#etymonline_v_18123",
+      "https://www.merriam-webster.com/dictionary/bust#dictionary-entry-2",
+      "https://www.oed.com/dictionary/bust_v2?tab=factsheet#11537254"
+    ]
+  },
+  {
+    "name": "bust  -s (m n)",
+    "etymology": [
+      {
+        "name": "bust  -s (m n)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/bust#etymonline_v_18136",
+      "https://www.etymonline.com/word/burst#etymonline_v_46902",
+      "https://www.merriam-webster.com/dictionary/bust#dictionary-entry-3",
+      "https://www.oed.com/dictionary/bust_n3?tab=factsheet#11534619"
+    ]
   }
 ]

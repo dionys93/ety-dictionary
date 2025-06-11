@@ -1,35 +1,29 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "spake, spoke",
-      "etymology": [
-        {
-          "name": "spaca",
-          "origin": "Old English"
-        },
-        {
-          "name": "spake, spoke",
-          "origin": "Middle English"
-        },
-        {
-          "name": "spoak, spoax",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/spoke",
-        "https://www.oed.com/dictionary/spoke_n?tab=factsheet#21215434",
-        "https://bosworthtoller.com/28371"
-      ],
-      "gender": "masculine",
-      "number": "singular"
-    }
+    "name": "spake, spoke",
+    "etymology": [
+      {
+        "name": "spaca",
+        "origin": "Old English"
+      },
+      {
+        "name": "spake, spoke",
+        "origin": "Middle English"
+      },
+      {
+        "name": "spoak, spoax",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/spoke",
+      "https://www.oed.com/dictionary/spoke_n?tab=factsheet#21215434",
+      "https://bosworthtoller.com/28371"
+    ]
   }
 ]

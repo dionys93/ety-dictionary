@@ -1,83 +1,62 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "oar",
-      "etymology": [
-        {
-          "name": "ar",
-          "origin": "Old English"
-        },
-        {
-          "name": "or",
-          "origin": "Middle English"
-        },
-        {
-          "name": "oar",
-          "origin": "Modern English"
-        },
-        {
-          "name": "aur -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/oar#etymonline_v_2399",
-        "https://www.oed.com/dictionary/oar_n?tab=factsheet#13448104",
-        "https://bosworthtoller.com/2044"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "oar",
+    "etymology": [
+      {
+        "name": "ar",
+        "origin": "Old English"
+      },
+      {
+        "name": "or",
+        "origin": "Middle English"
+      },
+      {
+        "name": "oar",
+        "origin": "Modern English"
+      },
+      {
+        "name": "aur -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/oar#etymonline_v_2399",
+      "https://www.oed.com/dictionary/oar_n?tab=factsheet#13448104",
+      "https://bosworthtoller.com/2044"
+    ]
   },
   {
-    "verbDetails": {
-      "infinitive": "to oar",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to oar",
+    "etymology": [
+      {
+        "name": "oren",
+        "origin": "Middle English"
       },
-      "etymology": [
-        "oren",
-        "to oar",
-        "ta aure -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to oar",
-      "etymology": [
-        {
-          "name": "oren",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to oar",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta aure -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "to oar",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta aure -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta aures",
+          "pastTense": "ta aured",
+          "progressive": "ta auring"
         }
-      ],
-      "sources": [
-        "https://www.merriam-webster.com/dictionary/oar",
-        "https://www.oed.com/dictionary/oar_v?tab=factsheet#34033210"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.merriam-webster.com/dictionary/oar",
+      "https://www.oed.com/dictionary/oar_v?tab=factsheet#34033210"
+    ]
   }
 ]

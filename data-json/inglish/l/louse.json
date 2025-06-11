@@ -1,36 +1,30 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "louse, lice",
-      "etymology": [
-        {
-          "name": "lus",
-          "origin": "Old English"
-        },
-        {
-          "name": "louse, lice",
-          "origin": "Modern English"
-        },
-        {
-          "name": "láuss, lîce",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/louse#etymonline_v_14553",
-        "https://www.merriam-webster.com/dictionary/louse",
-        "https://www.oed.com/dictionary/louse_n?tab=factsheet#38898566",
-        "https://bosworthtoller.com/21895"
-      ],
-      "gender": "masculine",
-      "number": "singular"
-    }
+    "name": "louse, lice",
+    "etymology": [
+      {
+        "name": "lus",
+        "origin": "Old English"
+      },
+      {
+        "name": "louse, lice",
+        "origin": "Modern English"
+      },
+      {
+        "name": "láuss, lîce",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/louse#etymonline_v_14553",
+      "https://www.merriam-webster.com/dictionary/louse",
+      "https://www.oed.com/dictionary/louse_n?tab=factsheet#38898566",
+      "https://bosworthtoller.com/21895"
+    ]
   }
 ]

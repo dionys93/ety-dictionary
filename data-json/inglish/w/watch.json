@@ -1,88 +1,66 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "to watch",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "infinitive": "to watch",
+    "etymology": [
+      {
+        "name": "wæccan",
+        "origin": "Old English"
       },
-      "etymology": [
-        "wæccan",
-        "wacchen",
-        "to watch",
-        "ta ɯáche -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to watch",
-      "etymology": [
-        {
-          "name": "wæccan",
-          "origin": "Old English"
-        },
-        {
-          "name": "wacchen",
-          "origin": "Middle English"
-        },
-        {
-          "name": "to watch",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta ɯáche -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+      {
+        "name": "wacchen",
+        "origin": "Middle English"
+      },
+      {
+        "name": "to watch",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta ɯáche -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta ɯáches",
+          "pastTense": "ta ɯáched",
+          "progressive": "ta ɯáching"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/watch#etymonline_v_4853",
-        "https://www.merriam-webster.com/dictionary/watch#dictionary-entry-1",
-        "https://www.oed.com/dictionary/watch_v?tab=factsheet#15017304",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51466",
-        "https://bosworthtoller.com/34212"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/watch#etymonline_v_4853",
+      "https://www.merriam-webster.com/dictionary/watch#dictionary-entry-1",
+      "https://www.oed.com/dictionary/watch_v?tab=factsheet#15017304",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51466",
+      "https://bosworthtoller.com/34212"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "watch",
-      "etymology": [
-        {
-          "name": "wæcce",
-          "origin": "Old English"
-        },
-        {
-          "name": "watch",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ɯách -es",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/watch#etymonline_v_25448",
-        "https://www.merriam-webster.com/dictionary/watch#dictionary-entry-2",
-        "https://www.oed.com/dictionary/watch_n?tab=meaning_and_use#15012519",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51463",
-        "https://bosworthtoller.com/34213"
-      ],
-      "number": "plural"
-    }
+    "name": "watch",
+    "etymology": [
+      {
+        "name": "wæcce",
+        "origin": "Old English"
+      },
+      {
+        "name": "watch",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ɯách -es",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "noun"
+        ],
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/watch#etymonline_v_25448",
+      "https://www.merriam-webster.com/dictionary/watch#dictionary-entry-2",
+      "https://www.oed.com/dictionary/watch_n?tab=meaning_and_use#15012519",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED51463",
+      "https://bosworthtoller.com/34213"
+    ]
   }
 ]

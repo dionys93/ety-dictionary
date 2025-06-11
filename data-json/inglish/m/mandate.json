@@ -1,138 +1,106 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "mandate",
-      "etymology": [
-        {
-          "name": "manus + dare, mandare, mandatum",
-          "origin": "Latin"
-        },
-        {
-          "name": "mandat",
-          "origin": "French"
-        },
-        {
-          "name": "mandate",
-          "origin": "Modern English"
-        },
-        {
-          "name": "mandat -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/mandate#etymonline_v_6780",
-        "https://www.merriam-webster.com/dictionary/mandate#dictionary-entry-1",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/mandat/48966",
-        "https://latin-dictionary.net/definition/26326/mando-mandare-mandavi-mandatus",
-        "https://latin-dictionary.net/definition/18333/do-dare-dedi-datus",
-        "https://latin-dictionary.net/definition/26419/manus-manus"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "to mandate",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "mandate",
+    "etymology": [
+      {
+        "name": "manus + dare, mandare, mandatum",
+        "origin": "Latin"
       },
-      "etymology": [
-        "to mandate",
-        "ta mandete -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "to mandate",
-      "etymology": [
-        {
-          "name": "to mandate",
-          "origin": "Modern English"
-        },
-        {
-          "name": "ta mandete -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/mandate#etymonline_v_6781",
-        "https://www.etymonline.com/word/mandate#etymonline_v_6780",
-        "https://www.merriam-webster.com/dictionary/mandate#dictionary-entry-2"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "mandat",
+        "origin": "French"
+      },
+      {
+        "name": "mandate",
+        "origin": "Modern English"
+      },
+      {
+        "name": "mandat -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/mandate#etymonline_v_6780",
+      "https://www.merriam-webster.com/dictionary/mandate#dictionary-entry-1",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/mandat/48966",
+      "https://latin-dictionary.net/definition/26326/mando-mandare-mandavi-mandatus",
+      "https://latin-dictionary.net/definition/18333/do-dare-dedi-datus",
+      "https://latin-dictionary.net/definition/26419/manus-manus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "unknown"
-    },
-    "standard": {
-      "name": "mandatory  (adj)",
-      "etymology": [
-        {
-          "name": "mandare, mandatus, mandatorius",
-          "origin": "Latin"
-        },
-        {
-          "name": "mandatory  (adj)",
-          "origin": "Modern English"
+    "infinitive": "to mandate",
+    "etymology": [
+      {
+        "name": "to mandate",
+        "origin": "Modern English"
+      },
+      {
+        "name": "ta mandete -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta mandetes",
+          "pastTense": "ta mandeted",
+          "progressive": "ta mandeting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/mandatory#etymonline_v_30195",
-        "https://latin-dictionary.net/definition/26326/mando-mandare-mandavi-mandatus"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/mandate#etymonline_v_6781",
+      "https://www.etymonline.com/word/mandate#etymonline_v_6780",
+      "https://www.merriam-webster.com/dictionary/mandate#dictionary-entry-2"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "mandatary",
-      "etymology": [
-        {
-          "name": "mandare, mandatus, mandatarius",
-          "origin": "Latin"
-        },
-        {
-          "name": "mandatary",
-          "origin": "Modern English"
-        },
-        {
-          "name": "mandatairie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/mandatary#etymonline_v_44042",
-        "https://www.merriam-webster.com/dictionary/mandatary",
-        "https://latin-dictionary.net/definition/26326/mando-mandare-mandavi-mandatus"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
+    "name": "mandatory  (adj)",
+    "etymology": [
+      {
+        "name": "mandare, mandatus, mandatorius",
+        "origin": "Latin"
+      },
+      {
+        "name": "mandatory  (adj)",
+        "origin": "Modern English"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/mandatory#etymonline_v_30195",
+      "https://latin-dictionary.net/definition/26326/mando-mandare-mandavi-mandatus"
+    ]
+  },
+  {
+    "name": "mandatary",
+    "etymology": [
+      {
+        "name": "mandare, mandatus, mandatarius",
+        "origin": "Latin"
+      },
+      {
+        "name": "mandatary",
+        "origin": "Modern English"
+      },
+      {
+        "name": "mandatairie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/mandatary#etymonline_v_44042",
+      "https://www.merriam-webster.com/dictionary/mandatary",
+      "https://latin-dictionary.net/definition/26326/mando-mandare-mandavi-mandatus"
+    ]
   }
 ]

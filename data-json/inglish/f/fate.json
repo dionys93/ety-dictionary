@@ -1,187 +1,139 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "fate",
-      "etymology": [
-        {
-          "name": "fari, fatum, fata",
-          "origin": "Latin"
-        },
-        {
-          "name": "fate",
-          "origin": "Old French"
-        },
-        {
-          "name": "fâte, fâts",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "masculine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fate#etymonline_v_1153",
-        "https://www.merriam-webster.com/dictionary/fate#dictionary-entry-1",
-        "https://latin-dictionary.net/definition/20366/fatum-fati",
-        "https://latin-dictionary.net/definition/20861/for-fari-fatus"
-      ],
-      "gender": "masculine",
-      "number": "plural"
-    }
-  },
-  {
-    "verbDetails": {
-      "infinitive": "fate",
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+    "name": "fate",
+    "etymology": [
+      {
+        "name": "fari, fatum, fata",
+        "origin": "Latin"
       },
-      "etymology": [
-        "fari, fatum, fata",
-        "fate",
-        "ta fâte -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "fate",
-      "etymology": [
-        {
-          "name": "fari, fatum, fata",
-          "origin": "Latin"
-        },
-        {
-          "name": "fate",
-          "origin": "Old French"
-        },
-        {
-          "name": "ta fâte -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fate#etymonline_v_44321",
-        "https://www.etymonline.com/word/fate#etymonline_v_1153",
-        "https://www.merriam-webster.com/dictionary/fate#dictionary-entry-2",
-        "https://latin-dictionary.net/definition/20366/fatum-fati",
-        "https://latin-dictionary.net/definition/20861/for-fari-fatus"
-      ],
-      "conjugations": {
-        "thirdPerson": "s",
-        "pastTense": "d",
-        "progressive": "ing"
+      {
+        "name": "fate",
+        "origin": "Old French"
+      },
+      {
+        "name": "fâte, fâts",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "gender": "masculine",
+        "number": "singular"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fate#etymonline_v_1153",
+      "https://www.merriam-webster.com/dictionary/fate#dictionary-entry-1",
+      "https://latin-dictionary.net/definition/20366/fatum-fati",
+      "https://latin-dictionary.net/definition/20861/for-fari-fatus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "fateful",
-      "etymology": [
-        {
-          "name": "fateful",
-          "origin": "Modern English"
-        },
-        {
-          "name": "fâteful -ly -ness",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
+    "infinitive": "fate",
+    "etymology": [
+      {
+        "name": "fari, fatum, fata",
+        "origin": "Latin"
+      },
+      {
+        "name": "fate",
+        "origin": "Old French"
+      },
+      {
+        "name": "ta fâte -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta fâtes",
+          "pastTense": "ta fâted",
+          "progressive": "ta fâting"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fateful#etymonline_v_33011",
-        "https://www.merriam-webster.com/dictionary/fateful"
-      ],
-      "degrees": {
-        "positive": "teful",
-        "comparative": "ly",
-        "superlative": "ness"
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fate#etymonline_v_44321",
+      "https://www.etymonline.com/word/fate#etymonline_v_1153",
+      "https://www.merriam-webster.com/dictionary/fate#dictionary-entry-2",
+      "https://latin-dictionary.net/definition/20366/fatum-fati",
+      "https://latin-dictionary.net/definition/20861/for-fari-fatus"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "fatal",
-      "etymology": [
-        {
-          "name": "fatalis",
-          "origin": "Latin"
-        },
-        {
-          "name": "fatal",
-          "origin": "Old French"
-        },
-        {
-          "name": "fâtal -ly",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fatal#etymonline_v_1151",
-        "https://www.merriam-webster.com/dictionary/fatal",
-        "https://latin-dictionary.net/definition/20349/fatalis-fatalis-fatale"
-      ],
-      "degrees": {
-        "positive": "tal",
-        "comparative": "ly"
+    "name": "fateful",
+    "etymology": [
+      {
+        "name": "fateful",
+        "origin": "Modern English"
+      },
+      {
+        "name": "fâteful -ly -ness",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
       }
-    }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fateful#etymonline_v_33011",
+      "https://www.merriam-webster.com/dictionary/fateful"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "fatality",
-      "etymology": [
-        {
-          "name": "fatalis, fatalitas",
-          "origin": "Latin"
-        },
-        {
-          "name": "fatalité",
-          "origin": "French"
-        },
-        {
-          "name": "fatality",
-          "origin": "Modern English"
-        },
-        {
-          "name": "fâtaletie -is",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/fatality#etymonline_v_33013",
-        "https://www.merriam-webster.com/dictionary/fatality",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/fatalit%C3%A9/32888",
-        "https://latin-dictionary.net/definition/20349/fatalis-fatalis-fatale"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "fatal",
+    "etymology": [
+      {
+        "name": "fatalis",
+        "origin": "Latin"
+      },
+      {
+        "name": "fatal",
+        "origin": "Old French"
+      },
+      {
+        "name": "fâtal -ly",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fatal#etymonline_v_1151",
+      "https://www.merriam-webster.com/dictionary/fatal",
+      "https://latin-dictionary.net/definition/20349/fatalis-fatalis-fatale"
+    ]
+  },
+  {
+    "name": "fatality",
+    "etymology": [
+      {
+        "name": "fatalis, fatalitas",
+        "origin": "Latin"
+      },
+      {
+        "name": "fatalité",
+        "origin": "French"
+      },
+      {
+        "name": "fatality",
+        "origin": "Modern English"
+      },
+      {
+        "name": "fâtaletie -is",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/fatality#etymonline_v_33013",
+      "https://www.merriam-webster.com/dictionary/fatality",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/fatalit%C3%A9/32888",
+      "https://latin-dictionary.net/definition/20349/fatalis-fatalis-fatale"
+    ]
   }
 ]

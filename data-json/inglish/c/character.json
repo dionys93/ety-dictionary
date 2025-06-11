@@ -1,52 +1,46 @@
 [
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "adjective"
-    },
-    "standard": {
-      "name": "character",
-      "etymology": [
-        {
-          "name": "χάραξ, χαράσσειν, χαρακτήρ",
-          "origin": "Ancient Greek"
-        },
-        {
-          "name": "character",
-          "origin": "Latin"
-        },
-        {
-          "name": "caratere",
-          "origin": "Old French"
-        },
-        {
-          "name": "carecter",
-          "origin": "Middle English"
-        },
-        {
-          "name": "character",
-          "origin": "Modern English"
-        },
-        {
-          "name": "câractre (letres), câractor (person) -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "adjective",
-            "noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/character#etymonline_v_8434",
-        "https://www.merriam-webster.com/dictionary/character#dictionary-entry-2",
-        "https://www.merriam-webster.com/dictionary/character#dictionary-entry-1",
-        "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6793",
-        "https://www.larousse.fr/dictionnaires/francais-anglais/caract%C3%A8re/12898",
-        "https://latin-dictionary.net/definition/9316/character-characteris",
-        "https://lsj.gr/wiki/%CF%87%CE%B1%CF%81%CE%B1%CE%BA%CF%84%CE%AE%CF%81",
-        "https://lsj.gr/wiki/%CF%87%CE%B1%CF%81%CE%AC%CF%83%CF%83%CE%B5%CE%B9%CE%BD",
-        "https://lsj.gr/wiki/%CF%87%CE%AC%CF%81%CE%B1%CE%BE"
-      ]
-    }
+    "name": "character",
+    "etymology": [
+      {
+        "name": "χάραξ, χαράσσειν, χαρακτήρ",
+        "origin": "Ancient Greek"
+      },
+      {
+        "name": "character",
+        "origin": "Latin"
+      },
+      {
+        "name": "caratere",
+        "origin": "Old French"
+      },
+      {
+        "name": "carecter",
+        "origin": "Middle English"
+      },
+      {
+        "name": "character",
+        "origin": "Modern English"
+      },
+      {
+        "name": "câractre (letres), câractor (person) -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "adjective",
+          "noun"
+        ]
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/character#etymonline_v_8434",
+      "https://www.merriam-webster.com/dictionary/character#dictionary-entry-2",
+      "https://www.merriam-webster.com/dictionary/character#dictionary-entry-1",
+      "https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED6793",
+      "https://www.larousse.fr/dictionnaires/francais-anglais/caract%C3%A8re/12898",
+      "https://latin-dictionary.net/definition/9316/character-characteris",
+      "https://lsj.gr/wiki/%CF%87%CE%B1%CF%81%CE%B1%CE%BA%CF%84%CE%AE%CF%81",
+      "https://lsj.gr/wiki/%CF%87%CE%B1%CF%81%CE%AC%CF%83%CF%83%CE%B5%CE%B9%CE%BD",
+      "https://lsj.gr/wiki/%CF%87%CE%AC%CF%81%CE%B1%CE%BE"
+    ]
   }
 ]

@@ -1,70 +1,59 @@
 [
   {
-    "verbDetails": {
-      "infinitive": "surprise",
-      "etymology": [
-        "surprendre",
-        "surprise",
-        "ta soprîse -s -d -ing"
-      ]
-    },
-    "standard": {
-      "name": "surprise",
-      "etymology": [
-        {
-          "name": "surprendre",
-          "origin": "Old French"
-        },
-        {
-          "name": "surprise",
-          "origin": "Inglish"
-        },
-        {
-          "name": "ta soprîse -s -d -ing",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "verb"
-          ]
+    "infinitive": "surprise",
+    "etymology": [
+      {
+        "name": "surprendre",
+        "origin": "Old French"
+      },
+      {
+        "name": "surprise",
+        "origin": "Inglish"
+      },
+      {
+        "name": "ta soprîse -s -d -ing",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "thirdPerson": "ta soprîses",
+          "pastTense": "ta soprîsed",
+          "progressive": "ta soprîsing"
         }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/surprise#etymonline_v_45953",
-        "https://www.merriam-webster.com/dictionary/surprise",
-        "https://www.oed.com/dictionary/surprise_v?tab=factsheet#19790278",
-        "https://www.anglo-norman.net/entry/sorpris",
-        "https://www.anglo-norman.net/entry/sorprendre"
-      ]
-    }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/surprise#etymonline_v_45953",
+      "https://www.merriam-webster.com/dictionary/surprise",
+      "https://www.oed.com/dictionary/surprise_v?tab=factsheet#19790278",
+      "https://www.anglo-norman.net/entry/sorpris",
+      "https://www.anglo-norman.net/entry/sorprendre"
+    ]
   },
   {
-    "verbDetails": {
-      "notAVerb": true,
-      "detectedAs": "noun"
-    },
-    "standard": {
-      "name": "sorprendre, surprise",
-      "etymology": [
-        {
-          "name": "sorprendre, surprise",
-          "origin": "Old French"
-        },
-        {
-          "name": "soprîse -s",
-          "origin": "Inglish",
-          "part-of-speech": [
-            "feminine noun"
-          ]
-        }
-      ],
-      "sources": [
-        "https://www.etymonline.com/word/surprise#etymonline_v_22421",
-        "https://www.merriam-webster.com/dictionary/surprise",
-        "https://www.oed.com/dictionary/surprise_n?tab=factsheet#19789315",
-        "https://www.anglo-norman.net/entry/sorpris",
-        "https://www.anglo-norman.net/entry/sorprendre"
-      ],
-      "gender": "feminine",
-      "number": "plural"
-    }
+    "name": "sorprendre, surprise",
+    "etymology": [
+      {
+        "name": "sorprendre, surprise",
+        "origin": "Old French"
+      },
+      {
+        "name": "soprîse -s",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ],
+        "gender": "feminine",
+        "number": "singular"
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/surprise#etymonline_v_22421",
+      "https://www.merriam-webster.com/dictionary/surprise",
+      "https://www.oed.com/dictionary/surprise_n?tab=factsheet#19789315",
+      "https://www.anglo-norman.net/entry/sorpris",
+      "https://www.anglo-norman.net/entry/sorprendre"
+    ]
   }
 ]
