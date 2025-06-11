@@ -21,15 +21,13 @@ export { parseLanguageOrigin, parsePartOfSpeech } from './transformers/line-pars
 export { processGroup, groupByDoubleNewline, groupByEntryPatterns } from './transformers/entry-groupers';
 export { extractFromModernEnglish, extractFromLastLanguageTag } from './transformers/name-extractors';
 export { transformToWordEntry } from './transformers/entry-transformers';
-export * from './transformers/pos-specific-transformers';
+export * from './transformers/part-of-speech-transformers';
 
 // Custom transformers
 export { stanzaTransformer, compactTransformer } from './custom/custom-transformers';
 
-
 // Pipeline
-export { createDefaultPipeline, createPipeline, pipelines } from './pipeline/pipeline-factory';
-
+export { createDefaultPipeline, createPipeline, createPosAwarePipeline, pipelines } from './pipeline/pipeline-factory';
 
 // Processors
 export { convertText, processFile } from './processors/file-processor';
