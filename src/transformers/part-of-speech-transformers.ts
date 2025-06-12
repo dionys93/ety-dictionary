@@ -3,13 +3,14 @@ import {
   EntryGroup, 
   ParsedLine, 
   WordEntry, 
-  EtymologyEntry,
   EntryTransformer,
   WordNameExtractor,
   VerbConjugations,
   AdjectiveDegrees,
   NounGenderInfo,
-  EnhancedEtymologyEntry
+  EnhancedEtymologyEntry,
+  PosAwareWordEntry,
+  VerbEntry
 } from '../'
 
 /**
@@ -186,14 +187,13 @@ export function createPosNameExtractor(): WordNameExtractor {
  * POS-SPECIFIC ENTRY TRANSFORMERS
  * Creates the preferred output structure with embedded POS information
  */
-export function createPosEntryTransformer(): EntryTransformer {
-  return function posEntryTransformer(group: EntryGroup, wordName: string): any {
+export function createPosEntryTransformer(): EntryTransformer<VerbEntry | PosAwareWordEntry> {
+  return function posEntryTransformer(group: EntryGroup, wordName: string): VerbEntry | PosAwareWordEntry {
     const pos = detectPrimaryPartOfSpeech(group)
-    const inglishLine = group.etymologyLines.find(line => line.origin === 'Inglish')
     
     // Build etymology with enhanced Inglish line
-    const etymology: any[] = group.etymologyLines.map(line => {
-      const entry: any = {
+    const etymology: EnhancedEtymologyEntry[] = group.etymologyLines.map(line => {
+      const entry: EnhancedEtymologyEntry = {
         name: line.text,
         origin: line.origin || 'Inglish'
       }
@@ -203,25 +203,21 @@ export function createPosEntryTransformer(): EntryTransformer {
         entry["part-of-speech"] = line.partOfSpeech
         
         if (pos === 'verb') {
-          // Add conjugations to the Inglish etymology entry
           const { base, conjugations } = extractVerbConjugations(line.text)
           if (Object.keys(conjugations).length > 0) {
             entry.conjugations = conjugations
           }
         } else if (pos === 'noun') {
-          // Add gender and number to the Inglish etymology entry
           const { gender, number } = extractNounInfo(line.partOfSpeech)
           if (gender) entry.gender = gender
           if (number) entry.number = number
         } else if (pos === 'adjective') {
-          // Add degree information to the Inglish etymology entry
           const { base, degrees } = extractAdjectiveDegrees(line.text)
-          if (Object.keys(degrees).length > 1) { // More than just positive
+          if (Object.keys(degrees).length > 1) {
             entry.degrees = degrees
           }
         }
       } else if (line.partOfSpeech && line.partOfSpeech.length > 0) {
-        // Add part-of-speech to non-Inglish lines if present
         entry["part-of-speech"] = line.partOfSpeech
       }
       
@@ -230,19 +226,49 @@ export function createPosEntryTransformer(): EntryTransformer {
     
     const sources = group.sourceLines.map(line => line.text)
     
-    // Create the result with POS-specific top-level structure
+    // Return properly typed result
     if (pos === 'verb') {
       return {
         infinitive: wordName,
         etymology,
         sources
-      }
+      } as VerbEntry
     } else {
       return {
         name: wordName,
         etymology,
         sources
-      }
+      } as PosAwareWordEntry
+    }
+  }
+}
+
+/**
+ * Type-safe POS analysis result
+ */
+export interface PosAnalysisResult {
+  word: string
+  detectedPos: PartOfSpeechType
+  hasConjugations: boolean
+  hasGender: boolean
+  hasDegrees: boolean
+}
+
+/**
+ * Create a typed POS analysis transformer
+ */
+export function createPosAnalysisTransformer(): (group: EntryGroup) => PosAnalysisResult {
+  return function posAnalysisTransformer(group: EntryGroup): PosAnalysisResult {
+    const posType = getDetectedPartOfSpeech(group)
+    const nameExtractor = createPosNameExtractor()
+    const wordName = nameExtractor(group, 'unknown')
+    
+    return {
+      word: wordName,
+      detectedPos: posType,
+      hasConjugations: posType === 'verb',
+      hasGender: posType === 'noun',
+      hasDegrees: posType === 'adjective'
     }
   }
 }

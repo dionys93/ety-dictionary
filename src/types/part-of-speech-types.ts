@@ -1,3 +1,5 @@
+// /src/types/part-of-speech-types.ts
+
 export interface VerbConjugations {
   thirdPerson?: string
   pastTense?: string
