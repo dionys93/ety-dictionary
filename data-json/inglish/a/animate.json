@@ -1,6 +1,6 @@
 [
   {
-    "infinitive": "to animate",
+    "name": "to animate",
     "etymology": [
       {
         "name": "anima, animare, animatus",
@@ -11,16 +11,11 @@
         "origin": "Modern English"
       },
       {
-        "name": "ta animete -s -d -ing",
+        "name": "to animait -s -ed -ing",
         "origin": "Inglish",
         "part-of-speech": [
           "verb"
-        ],
-        "conjugations": {
-          "thirdPerson": "ta animetes",
-          "pastTense": "ta animeted",
-          "progressive": "ta animeting"
-        }
+        ]
       }
     ],
     "sources": [
@@ -51,11 +46,7 @@
         "origin": "Inglish",
         "part-of-speech": [
           "adjective"
-        ],
-        "degrees": {
-          "positive": "animat",
-          "comparative": "ly"
-        }
+        ]
       }
     ],
     "sources": [
@@ -77,9 +68,8 @@
         "name": "animaitor -s",
         "origin": "Inglish",
         "part-of-speech": [
-          "noun"
-        ],
-        "number": "singular"
+          "masculine noun"
+        ]
       }
     ],
     "sources": [
@@ -102,7 +92,10 @@
       },
       {
         "name": "animâcion -s",
-        "origin": "Inglish"
+        "origin": "Inglish",
+        "part-of-speech": [
+          "feminine noun"
+        ]
       }
     ],
     "sources": [
@@ -125,12 +118,11 @@
         "origin": "Modern English"
       },
       {
-        "name": "animey -s",
+        "name": "animei -s",
         "origin": "Inglish",
         "part-of-speech": [
-          "noun"
-        ],
-        "number": "singular"
+          "masculine noun"
+        ]
       }
     ],
     "sources": [

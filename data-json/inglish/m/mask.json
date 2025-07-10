@@ -1,6 +1,6 @@
 [
   {
-    "name": "mask",
+    "name": "mask  -s (m n)",
     "etymology": [
       {
         "name": "masca",
@@ -15,17 +15,8 @@
         "origin": "French"
       },
       {
-        "name": "mask",
+        "name": "mask  -s (m n)",
         "origin": "Modern English"
-      },
-      {
-        "name": "masc -s",
-        "origin": "Inglish",
-        "part-of-speech": [
-          "masculine noun"
-        ],
-        "gender": "masculine",
-        "number": "singular"
       }
     ],
     "sources": [
@@ -37,7 +28,7 @@
     ]
   },
   {
-    "infinitive": "to mask",
+    "name": "to mask",
     "etymology": [
       {
         "name": "masquer",
@@ -48,16 +39,11 @@
         "origin": "Modern English"
       },
       {
-        "name": "ta masq -cs -ed -ing",
+        "name": "ta maske -s -d -ing",
         "origin": "Inglish",
         "part-of-speech": [
           "verb"
-        ],
-        "conjugations": {
-          "thirdPerson": "ta masqcs",
-          "pastTense": "ta masqed",
-          "progressive": "ta masqing"
-        }
+        ]
       }
     ],
     "sources": [
@@ -82,9 +68,7 @@
         "origin": "Inglish",
         "part-of-speech": [
           "feminine noun"
-        ],
-        "gender": "feminine",
-        "number": "singular"
+        ]
       }
     ],
     "sources": [
@@ -94,7 +78,7 @@
     ]
   },
   {
-    "infinitive": "to masquerade",
+    "name": "to masquerade",
     "etymology": [
       {
         "name": "to masquerade",
@@ -105,12 +89,7 @@
         "origin": "Inglish",
         "part-of-speech": [
           "verb"
-        ],
-        "conjugations": {
-          "thirdPerson": "ta mascarâdes",
-          "pastTense": "ta mascarâded",
-          "progressive": "ta mascarâding"
-        }
+        ]
       }
     ],
     "sources": [

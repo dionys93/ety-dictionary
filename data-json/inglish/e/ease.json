@@ -15,12 +15,11 @@
         "origin": "Modern English"
       },
       {
-        "name": "íse -ful",
+        "name": "ise -ful",
         "origin": "Inglish",
         "part-of-speech": [
-          "noun"
-        ],
-        "number": "singular"
+          "feminine noun"
+        ]
       }
     ],
     "sources": [
@@ -33,7 +32,7 @@
     ]
   },
   {
-    "infinitive": "to ease",
+    "name": "to ease",
     "etymology": [
       {
         "name": "aise, aiser",
@@ -44,16 +43,11 @@
         "origin": "Modern English"
       },
       {
-        "name": "ta íse -s -d -ing",
+        "name": "ta ise -s -d -ing",
         "origin": "Inglish",
         "part-of-speech": [
           "verb"
-        ],
-        "conjugations": {
-          "thirdPerson": "ta íses",
-          "pastTense": "ta ísed",
-          "progressive": "ta ísing"
-        }
+        ]
       }
     ],
     "sources": [
@@ -76,13 +70,11 @@
         "origin": "Modern English"
       },
       {
-        "name": "ísment -s",
+        "name": "isement -s",
         "origin": "Inglish",
         "part-of-speech": [
           "masculine noun"
-        ],
-        "gender": "masculine",
-        "number": "singular"
+        ]
       }
     ],
     "sources": [

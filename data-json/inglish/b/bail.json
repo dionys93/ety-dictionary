@@ -1,6 +1,6 @@
 [
   {
-    "name": "bail  -s (m n)",
+    "name": "bail",
     "etymology": [
       {
         "name": "baiulus, baiulare",
@@ -11,8 +11,15 @@
         "origin": "Old French"
       },
       {
-        "name": "bail  -s (m n)",
+        "name": "bail",
         "origin": "Modern English"
+      },
+      {
+        "name": "baile, bails",
+        "origin": "Inglish",
+        "part-of-speech": [
+          "masculine noun"
+        ]
       }
     ],
     "sources": [
@@ -26,7 +33,7 @@
     ]
   },
   {
-    "infinitive": "to bail",
+    "name": "to bail",
     "etymology": [
       {
         "name": "baiulus, baiulare",
@@ -45,12 +52,7 @@
         "origin": "Inglish",
         "part-of-speech": [
           "verb"
-        ],
-        "conjugations": {
-          "thirdPerson": "ta bailes",
-          "pastTense": "ta bailed",
-          "progressive": "ta bailing"
-        }
+        ]
       }
     ],
     "sources": [
@@ -82,13 +84,11 @@
         "origin": "Modern English"
       },
       {
-        "name": "béle, béls",
+        "name": "beile, beils",
         "origin": "Inglish",
         "part-of-speech": [
           "masculine noun"
-        ],
-        "gender": "masculine",
-        "number": "singular"
+        ]
       }
     ],
     "sources": [

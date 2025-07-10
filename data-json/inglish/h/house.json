@@ -15,12 +15,11 @@
         "origin": "Modern English"
       },
       {
-        "name": "háuss, háuses",
+        "name": "háuse -s",
         "origin": "Inglish",
         "part-of-speech": [
-          "noun"
-        ],
-        "number": "singular"
+          "masculine noun"
+        ]
       }
     ],
     "sources": [
@@ -32,7 +31,7 @@
     ]
   },
   {
-    "infinitive": "to house",
+    "name": "to house",
     "etymology": [
       {
         "name": "husian",
@@ -51,12 +50,7 @@
         "origin": "Inglish",
         "part-of-speech": [
           "verb"
-        ],
-        "conjugations": {
-          "thirdPerson": "ta háuses",
-          "pastTense": "ta háused",
-          "progressive": "ta háusing"
-        }
+        ]
       }
     ],
     "sources": [

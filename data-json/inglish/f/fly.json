@@ -1,6 +1,6 @@
 [
   {
-    "infinitive": "to fly",
+    "name": "to fly",
     "etymology": [
       {
         "name": "fleogan",
@@ -19,10 +19,7 @@
         "origin": "Inglish",
         "part-of-speech": [
           "verb"
-        ],
-        "conjugations": {
-          "thirdPerson": "ta flyhes"
-        }
+        ]
       }
     ],
     "sources": [
@@ -52,9 +49,7 @@
         "origin": "Inglish",
         "part-of-speech": [
           "masculine noun"
-        ],
-        "gender": "masculine",
-        "number": "singular"
+        ]
       }
     ],
     "sources": [
@@ -76,12 +71,7 @@
         "origin": "Inglish",
         "part-of-speech": [
           "adjective"
-        ],
-        "degrees": {
-          "positive": "flyh",
-          "comparative": "er",
-          "superlative": "est"
-        }
+        ]
       }
     ],
     "sources": [
@@ -104,9 +94,7 @@
         "origin": "Inglish",
         "part-of-speech": [
           "masculine noun"
-        ],
-        "gender": "masculine",
-        "number": "singular"
+        ]
       }
     ],
     "sources": [
@@ -119,7 +107,7 @@
     ]
   },
   {
-    "infinitive": "to flight",
+    "name": "to flight",
     "etymology": [
       {
         "name": "to flight",
@@ -130,12 +118,7 @@
         "origin": "Inglish",
         "part-of-speech": [
           "verb"
-        ],
-        "conjugations": {
-          "thirdPerson": "ta flyhtes",
-          "pastTense": "ta flyhted",
-          "progressive": "ta flyhting"
-        }
+        ]
       }
     ],
     "sources": [

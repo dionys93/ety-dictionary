@@ -1,6 +1,6 @@
 [
   {
-    "infinitive": "to tell",
+    "name": "to tell",
     "etymology": [
       {
         "name": "tellan",
@@ -19,10 +19,7 @@
         "origin": "Inglish",
         "part-of-speech": [
           "verb"
-        ],
-        "conjugations": {
-          "thirdPerson": "ta telles"
-        }
+        ]
       }
     ],
     "sources": [
@@ -44,9 +41,8 @@
         "name": "telleur - s",
         "origin": "Inglish",
         "part-of-speech": [
-          "noun"
-        ],
-        "number": "singular"
+          "masculine noun"
+        ]
       }
     ],
     "sources": [
@@ -67,7 +63,7 @@
         "origin": "Inglish",
         "part-of-speech": [
           "adjective",
-          "noun"
+          "masculine noun"
         ]
       }
     ],

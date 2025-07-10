@@ -1,6 +1,6 @@
 [
   {
-    "infinitive": "can, could, can't, couldn't",
+    "name": "can, could, can't, couldn't",
     "etymology": [
       {
         "name": "cunnan, cuðe",
@@ -49,9 +49,7 @@
         "origin": "Inglish",
         "part-of-speech": [
           "masculine noun"
-        ],
-        "gender": "masculine",
-        "number": "singular"
+        ]
       }
     ],
     "sources": [
@@ -61,7 +59,7 @@
     ]
   },
   {
-    "infinitive": "to can",
+    "name": "to can",
     "etymology": [
       {
         "name": "to can",
@@ -72,12 +70,7 @@
         "origin": "Inglish",
         "part-of-speech": [
           "verb"
-        ],
-        "conjugations": {
-          "thirdPerson": "ta canes",
-          "pastTense": "ta caned",
-          "progressive": "ta caning"
-        }
+        ]
       }
     ],
     "sources": [
