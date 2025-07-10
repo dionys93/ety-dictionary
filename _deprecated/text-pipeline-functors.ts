@@ -126,7 +126,7 @@ export const languageMap: Record<string, { name: string }> = {
  * Character replacement transformer
  */
 export const replaceSpecialCharacters = (text: string): string => {
-  return text.replace(/ꬻ/g, "ng");
+  return text.replace(/ng/g, "ng");
 };
 
 // ===== LINE PARSERS =====

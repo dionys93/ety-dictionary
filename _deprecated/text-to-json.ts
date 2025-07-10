@@ -48,12 +48,12 @@ interface WordEntry {
 }
 
 /**
- * Replaces all instances of the special character ꬻ with "ng"
+ * Replaces all instances of the special character ng with "ng"
  * @param text - The text to process
  * @returns Text with replacements made
  */
 function replaceSpecialCharacter(text: string): string {
-  return text.replace(/ꬻ/g, "ng");
+  return text.replace(/ng/g, "ng");
 }
 
 /**
@@ -95,7 +95,7 @@ function extractPartOfSpeech(line: string): string[] | undefined {
  * @returns Array of parsed word objects
  */
 function parseTextToJson(textContent: string, fileName: string): WordEntry[] {
-  // Replace special character ꬻ with "ng" throughout
+  // Replace special character ng with "ng" throughout
   textContent = replaceSpecialCharacter(textContent);
 
   // Strip file extension to get the base name - this will be the fallback name
