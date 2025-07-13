@@ -3,23 +3,23 @@ General American IPA Phoneme Inventory for Inglisce
 VOWELS
 
 Monophthongs:
-/i/ i, ie, i-e, -y, ý 
-/ɪ/ i, ỳ
-/ɛ/ e, è
+/i/ i, ie, i-e, -y, ï
+/ɪ/ i, ig
+/ɛ/ e, è, ai
 /æ/ a, à
-/ɑ/ o, á, ó
-/ɔ/ au, oh, ò
-/ʊ/ eo, oû, eu
-/u/ ou, u-e, ú
+/ɑ/ o, ah
+/ɔ/ au, auh, oh
+/ʊ/ ô, û, eo, oû, eu
+/u/ ou, u-e
 /ʌ/ a, o, u
 /ə/ a, e, o, u
 
 Diphthongs:
-/eɪ/ â, ai, ay, ei, ey, éi, aig, eig, ehe
-/aɪ/ î, ái, yh, y-e,
+/eɪ/ â, ai, ay, ei, ey, éi, aig, eig, eihe
+/aɪ/ î, yh, y-e, aih
 /ɔɪ/ oi, oy
-/oʊ/ ô, oɯ, oa, oe
-/aʊ/ ao, áu
+/oʊ/ ô, oa, oe, eau, uau
+/aʊ/ ôu âu ao
 
 CONSONANTS
 
@@ -28,20 +28,20 @@ Stops:
 /b/ b
 /t/ t
 /d/ d
-/k/ c, k, q
+/k/ c, q
 /g/ g, gu, gh
 
 Flap:
 /ɾ/ t, d
 
 Fricatives:
-/f/ f, ff
+/f/ f, ph
 /v/ v
 /θ/ th
 /ð/ Ћþ
 /s/ s, c, ç
 /z/ s, z
-/ʃ/ sh, c, ç, s̃ 
+/ʃ/ se, si, c, ç, s̃ 
 /ʒ/ s, s̃
 /h/ h
 
@@ -60,24 +60,24 @@ Liquids:
 /r/ r, rh
 
 Glides:
-/w/ ɯ
-/j/ y, e
+/w/ o, u
+/j/ e
 
 With /j/ (palatal glide):
-/kj/ - c̃, q
-/fj/ - feu
-/vj/ - veu
-/hj/ - heu, h̃
+/kj/ - c̃, cue
+/fj/ - feu, fue
+/vj/ - veu, vue
+/hj/ - heu, hue
 /mj/ - meu, m̃
-/nj/ - ni, ñ
-/pj/ - peu, p̃
+/nj/ - gn
+/pj/ - p̃
 
 With /w/ (labio-velar glide):
-/tw/ - tu, 
-/dw/ - du
+/tw/ - tu, to
+/dw/ - du, do
 /kw/ - qu, cu, 
 /gw/ - gü
 /θw/ - thu
-/sw/ - su, sɯ
+/sw/ - su, so
 
 Total: 39 phonemes
