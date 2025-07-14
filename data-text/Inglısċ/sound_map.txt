@@ -3,7 +3,7 @@ General American IPA Phoneme Inventory for Inglisċ
 VOWELS
 
 Monophthongs:
-/i/ ıe, í, ý
+/i/ ıe, í, ý, u, uı
 /ɪ/ ı, y
 /ɛ/ eı
 /æ/ a, ea
@@ -16,9 +16,9 @@ Monophthongs:
 
 Diphthongs:
 /eɪ/ é, éı
-/aɪ/ ae, ahı
+/aɪ/ ae, ahı, aȝh
 /ɔɪ/ oi
-/oʊ/ óu, ów
+/oʊ/ óu, oa, ow
 /aʊ/ ôu, au, aw
 
 Rhotic vowels:
@@ -33,7 +33,7 @@ Vowel + /r/ sequences:
 
 Diphthong + /r/ sequences:
 /aɪɚ/ aer, ahyr
-/aʊɚ/ 
+/aʊɚ/ ouer, auyr, ôar
 /ɔɪɚ/ 
 
 CONSONANTS
@@ -43,8 +43,13 @@ Stops:
 /b/ b
 /t/ ƭ  
 /d/ d
-/k/ ch, c
+/k/ c
 /g/ ȝ 
+
+Aspirated Stops:
+/pʰ/ ph
+/tʰ/ ƭh
+/kʰ/ ch
 
 Flap:
 /ɾ/ tgr, dgr
@@ -75,24 +80,24 @@ Liquids:
 /r/ r, rh
 
 Glides:
-/w/ o, hu
+/w/ bh, ȝh, w
 /j/ ȝ, 
 
 With /j/ (palatal glide):
 /kj/ - 
-/gj/ - ȝh
-/fj/ - fh
-/vj/ - ḃh
-/hj/ - hh
-/mj/ - mh
-/nj/ - nh
-/pj/ - phi
-/lj/ - lh
+/gj/ - ȝh-
+/fj/ - fh-
+/vj/ - ḃh-
+/hj/ - hh-
+/mj/ - mh-
+/nj/ - nh-
+/pj/ - phi-
+/lj/ - lh-
 
 With /w/ (labio-velar glide):
 /tw/ - 
 /dw/ - 
-/kw/ -  
+/kw/ - cw
 /gw/ - 
 /θw/ - 
 /sw/ - 
