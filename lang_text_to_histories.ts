@@ -5,12 +5,13 @@
 // This ensures we only process word directories like /a/, /b/, /c/, etc.
 // and skip special directories like /grammar/, /pronouns/, etc.
 //
-// File naming: Uses the first word from the line containing [ME] or [MI] tag
+// File naming: Uses the first word from the line containing [ME] tag (priority) or [MI] tag (fallback)
 // 
 // Example transformations:
-// Stanza containing "king [ME]" or "king [MI]" with "(m n)" anywhere → /to_dir/k/king_n.txt
+// Stanza containing "king [ME]" with "(m n)" anywhere → /to_dir/k/king_n.txt
 // Stanza containing "to king [ME]" with "(v)" anywhere → /to_dir/k/king_v.txt (ignores "to")
 // Stanza containing "kingly [ME]" with "(adj)" anywhere → /to_dir/k/kingly_adj.txt
+// Stanza with only "kyng [MI]" (no [ME]) with "(n)" → /to_dir/k/kyng_n.txt (fallback to MI)
 // /inglisc/grammar/* → skipped (not a single-character directory)
 
 import * as fs from 'fs'
@@ -135,8 +136,11 @@ function extractWordFromTaggedLine(line: string): string | null {
   // Skip "to" at the beginning for infinitive verbs
   const lineWithoutTo = lineWithoutTag.replace(/^to\s+/i, '')
   
-  // Match the first word (letters, possibly with diacritics)
-  const match = lineWithoutTo.match(/^([a-zA-ZÀ-ÿāăąćĉċčďđēĕėęěĝğġģĥħĩīĭįıĵķĸĺļľŀłńņňŉŋōŏőœŕŗřśŝşšţťŧũūŭůűųŵŷźżžǎǐǒǔǖǘǚǜǟǡǣǧǩǫǭǯǵǹǻǽǿȁȃȅȇȉȋȍȏȑȓȕȗșțȟȧȩȫȭȯȱȳḃḋḟġḣṁṅṗṙṡṫẁẃẅẇẋẏẑ]+)/i)
+  // Match the first word
+  // \w matches letters, digits, underscore
+  // \u00C0-\u024F covers Latin Extended-A and Latin Extended-B
+  // \u1E00-\u1EFF covers Latin Extended Additional (includes ṫ, ṁ, etc.)
+  const match = lineWithoutTo.match(/^([\w\u00C0-\u024F\u1E00-\u1EFF]+)/i)
   
   return match ? match[1] : null
 }
@@ -163,12 +167,28 @@ function processStanza(lines: string[]): Stanza {
     return stanza
   }
   
-  // Look for a line with [ME] or [MI] tag to get the word
+  // Look for [ME] first (priority), then [MI] as fallback
+  let modernWord: string | null = null
+  
+  // First pass: look for [ME]
   for (const line of lines) {
-    const word = extractWordFromTaggedLine(line)
-    if (word) {
-      stanza.modernWord = word
-      break // Use the first [ME] or [MI] line found
+    if (line.includes('[ME]')) {
+      modernWord = extractWordFromTaggedLine(line)
+      if (modernWord) {
+        stanza.modernWord = modernWord
+        return stanza // Found [ME], no need to look further
+      }
+    }
+  }
+  
+  // Second pass: if no [ME] found, look for [MI]
+  for (const line of lines) {
+    if (line.includes('[MI]')) {
+      modernWord = extractWordFromTaggedLine(line)
+      if (modernWord) {
+        stanza.modernWord = modernWord
+        return stanza
+      }
     }
   }
   
