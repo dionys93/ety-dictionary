@@ -11,10 +11,13 @@ export * from './monads';
 // Config
 export { languageMap } from './config/language-map';
 export { posMap } from './config/pos-map';
+export * from './config/patterns';
+export * from './config/file-extensions';
 
 // Utils
 export { ensureDirExists } from './utils/file-utils';
 export * from './utils/console-utils';
+export * from './utils/text-utils';
 
 // Transformers
 export { replaceSpecialCharacters } from './transformers/text-transformers';
