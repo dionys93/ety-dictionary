@@ -1,5 +1,6 @@
 // src/types/pipeline-types.ts
 import { TextLine } from './text'
+import { EnhancedEtymologyEntry } from './part-of-speech-types'
 
 export interface ParsedLine {
   text: string;
@@ -27,7 +28,7 @@ export interface WordEntry {
   sources: string[];
 }
 
-// NEW: Generic type parameters for pipelines
+// Generic type parameters for pipelines
 export type TextTransformer = (text: string) => string;
 export type LineParser = (line: TextLine) => ParsedLine;
 export type EntryGrouper = (lines: TextLine[]) => EntryGroup[];
@@ -51,7 +52,7 @@ export interface TextProcessingPipeline<TEntry = WordEntry, TCustom = any> {
 export type BasicPipeline = TextProcessingPipeline<WordEntry, any>
 export type PosAwarePipeline = TextProcessingPipeline<PosAwareWordEntry | VerbEntry, any>
 
-// NEW: POS-aware entry types that part-of-speech-transformers actually returns
+// POS-aware entry types that part-of-speech-transformers actually returns
 export interface PosAwareWordEntry {
   name: string;
   etymology: EnhancedEtymologyEntry[];
@@ -62,21 +63,6 @@ export interface VerbEntry {
   infinitive: string;  // Note: different from WordEntry which has 'name'
   etymology: EnhancedEtymologyEntry[];
   sources: string[];
-}
-
-export interface EnhancedEtymologyEntry extends EtymologyEntry {
-  conjugations?: {
-    thirdPerson?: string;
-    pastTense?: string;
-    progressive?: string;
-  };
-  gender?: 'masculine' | 'feminine' | 'neuter';
-  number?: 'singular' | 'plural';
-  degrees?: {
-    positive?: string;
-    comparative?: string;
-    superlative?: string;
-  };
 }
 
 // Keep these for backward compatibility
