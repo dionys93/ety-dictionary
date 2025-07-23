@@ -37,6 +37,12 @@ const POS_ABBREVIATIONS: Record<string, string> = {
   "obs": "obs"       // obsolete
 }
 
+// Constants for repeated patterns
+const WORD_PATTERN = /^([\w\u00C0-\u024F\u1E00-\u1EFF]+)/i
+const LANGUAGE_TAG_PATTERN = /\[[A-Z]+\]/g
+const POS_PATTERN = /\(([^)]+)\)\s*$/
+const INFINITIVE_PATTERN = /^to\s+/i
+
 /**
  * Type for single-character directory names (alphabetical organization)
  */
@@ -56,9 +62,17 @@ function isAlphabeticalDir(dirName: string): dirName is AlphabeticalDir {
 interface Stanza {
   lines: string[]
   partOfSpeech?: string
-  modernWord?: string  // Word from [ME] or [MI] line
+  modernWord?: string | null  // Word from [ME] or [MI] line
   posLineIndex?: number  // Index of the line containing POS indicator
   hasInlinePOS?: boolean  // True if [ME]/[MI] and (pos) are on same line
+}
+
+/**
+ * Processing statistics for a file
+ */
+interface ProcessingStats {
+  extractedCount: number
+  skippedNoModern: number
 }
 
 /**
@@ -109,8 +123,7 @@ function splitIntoStanzas(text: string): string[][] {
  * Returns the POS abbreviation if found, null otherwise
  */
 function extractPartOfSpeech(line: string): string | null {
-  // Match content within parentheses at the end of the line
-  const match = line.match(/\(([^)]+)\)\s*$/)
+  const match = line.match(POS_PATTERN)
   
   if (match) {
     const pos = match[1].trim()
@@ -121,6 +134,25 @@ function extractPartOfSpeech(line: string): string | null {
   }
   
   return null
+}
+
+/**
+ * Clean a line by removing language tags and infinitive "to"
+ */
+function cleanLine(line: string): string {
+  return line
+    .replace(LANGUAGE_TAG_PATTERN, '')
+    .trim()
+    .replace(INFINITIVE_PATTERN, '')
+}
+
+/**
+ * Extract the first word from a cleaned line
+ */
+function extractFirstWord(line: string): string | null {
+  const cleanedLine = cleanLine(line)
+  const match = cleanedLine.match(WORD_PATTERN)
+  return match ? match[1] : null
 }
 
 /**
@@ -136,13 +168,10 @@ function extractWordFromTaggedLine(line: string): string | null {
   const lineWithoutTag = line.replace(/\[M[EI]\].*$/, '').trim()
   
   // Skip "to" at the beginning for infinitive verbs
-  const lineWithoutTo = lineWithoutTag.replace(/^to\s+/i, '')
+  const lineWithoutTo = lineWithoutTag.replace(INFINITIVE_PATTERN, '')
   
   // Match the first word
-  // \w matches letters, digits, underscore
-  // \u00C0-\u024F covers Latin Extended-A and Latin Extended-B
-  // \u1E00-\u1EFF covers Latin Extended Additional (includes ṫ, ṁ, etc.)
-  const match = lineWithoutTo.match(/^([\w\u00C0-\u024F\u1E00-\u1EFF]+)/i)
+  const match = lineWithoutTo.match(WORD_PATTERN)
   
   return match ? match[1] : null
 }
@@ -162,6 +191,35 @@ function removePOSFromLine(line: string): string {
   }
   
   return line
+}
+
+/**
+ * Try to find the modern word from various sources
+ */
+function findModernWord(stanza: Stanza, lines: string[]): string | null {
+  // Priority 1: [ME] tag
+  for (const line of lines) {
+    if (line.includes('[ME]')) {
+      const word = extractWordFromTaggedLine(line)
+      if (word) return word
+    }
+  }
+  
+  // Priority 2: [MI] tag
+  for (const line of lines) {
+    if (line.includes('[MI]')) {
+      const word = extractWordFromTaggedLine(line)
+      if (word) return word
+    }
+  }
+  
+  // Priority 3: Line before POS (fallback)
+  if (stanza.posLineIndex !== undefined && stanza.posLineIndex > 0) {
+    const lineBeforePOS = lines[stanza.posLineIndex - 1]
+    return extractFirstWord(lineBeforePOS)
+  }
+  
+  return null
 }
 
 /**
@@ -193,72 +251,81 @@ function processStanza(lines: string[]): Stanza {
   
   // Check if this line also has any language tag
   const posLine = lines[posLineIndex]
-  const hasLanguageTag = /\[[A-Z]+\]/.test(posLine)
+  const hasLanguageTag = LANGUAGE_TAG_PATTERN.test(posLine)
   
   if (hasLanguageTag) {
     stanza.hasInlinePOS = true
     // Extract word from this line (handles any language tag)
-    const lineWithoutTag = posLine.replace(/\[[A-Z]+\]/g, '').trim()
-    const lineWithoutTo = lineWithoutTag.replace(/^to\s+/i, '')
-    
-    // Extract the word before the POS pattern
-    const match = lineWithoutTo.match(/^([\w\u00C0-\u024F\u1E00-\u1EFF]+)/)
-    if (match) {
-      stanza.modernWord = match[1]
+    const word = extractFirstWord(posLine)
+    if (word) {
+      stanza.modernWord = word
       return stanza
     }
   }
   
-  // If POS line doesn't have [ME]/[MI], look for them separately
-  let modernWord: string | null = null
-  
-  // First pass: look for [ME]
-  for (const line of lines) {
-    if (line.includes('[ME]')) {
-      modernWord = extractWordFromTaggedLine(line)
-      if (modernWord) {
-        stanza.modernWord = modernWord
-        return stanza // Found [ME], no need to look further
-      }
-    }
-  }
-  
-  // Second pass: if no [ME] found, look for [MI]
-  for (const line of lines) {
-    if (line.includes('[MI]')) {
-      modernWord = extractWordFromTaggedLine(line)
-      if (modernWord) {
-        stanza.modernWord = modernWord
-        return stanza
-      }
-    }
-  }
-  
-  // Third pass: if no [ME] or [MI], use the word from the line before POS
-  if (!stanza.modernWord && posLineIndex > 0) {
-    const lineBeforePOS = lines[posLineIndex - 1]
-    
-    // Remove any language tags first
-    const lineWithoutTag = lineBeforePOS.replace(/\[[A-Z]+\]/g, '').trim()
-    
-    // Skip "to" at the beginning for infinitive verbs
-    const lineWithoutTo = lineWithoutTag.replace(/^to\s+/i, '')
-    
-    // Extract the first word from this line
-    const match = lineWithoutTo.match(/^([\w\u00C0-\u024F\u1E00-\u1EFF]+)/)
-    if (match) {
-      stanza.modernWord = match[1]
-      return stanza
-    }
-  }
+  // Look for word in priority order
+  stanza.modernWord = findModernWord(stanza, lines)
   
   return stanza
 }
 
 /**
+ * Generate output content for a stanza
+ */
+function generateOutputContent(stanza: Stanza): string {
+  let linesToWrite: string[]
+  
+  if (stanza.hasInlinePOS && stanza.posLineIndex !== undefined) {
+    // [ME]/[MI] and POS are on the same line
+    // Keep the line but remove the POS part
+    linesToWrite = stanza.lines.map((line, index) => {
+      if (index === stanza.posLineIndex) {
+        return removePOSFromLine(line)
+      }
+      return line
+    })
+  } else {
+    // [ME]/[MI] and POS are on different lines
+    // Remove the entire POS line
+    linesToWrite = stanza.posLineIndex !== undefined 
+      ? stanza.lines.filter((_, index) => index !== stanza.posLineIndex)
+      : stanza.lines
+  }
+  
+  return linesToWrite.join('\n')
+}
+
+/**
+ * Process a single stanza and write output if valid
+ */
+function processAndWriteStanza(
+  stanzaLines: string[], 
+  targetDir: string,
+  stats: ProcessingStats
+): void {
+  const stanza = processStanza(stanzaLines)
+  
+  if (stanza.partOfSpeech && stanza.modernWord) {
+    // Create filename: word_pos.txt
+    const posAbbrev = POS_ABBREVIATIONS[stanza.partOfSpeech] || stanza.partOfSpeech
+    const fileName = `${stanza.modernWord}_${posAbbrev}.txt`
+    const targetPath = path.join(targetDir, fileName)
+    
+    // Generate and write content
+    const content = generateOutputContent(stanza)
+    fs.writeFileSync(targetPath, content, 'utf8')
+    
+    stats.extractedCount++
+  } else if (stanza.partOfSpeech && !stanza.modernWord) {
+    // Has POS but no word found
+    stats.skippedNoModern++
+  }
+}
+
+/**
  * Process a single file and extract stanzas with POS indicators
  */
-function processFile(filePath: string, fromDir: string, toDir: string): Result<number> {
+function processFile(filePath: string, fromDir: string, toDir: string): Result<ProcessingStats> {
   try {
     // Read file content
     const content = fs.readFileSync(filePath, 'utf8')
@@ -275,55 +342,24 @@ function processFile(filePath: string, fromDir: string, toDir: string): Result<n
     const stanzas = splitIntoStanzas(content)
     
     // Process each stanza
-    let extractedCount = 0
-    let skippedNoModern = 0
+    const stats: ProcessingStats = {
+      extractedCount: 0,
+      skippedNoModern: 0
+    }
     
     for (const stanzaLines of stanzas) {
-      const stanza = processStanza(stanzaLines)
-      
-      if (stanza.partOfSpeech && stanza.modernWord) {
-        // Create filename: word_pos.txt
-        const posAbbrev = POS_ABBREVIATIONS[stanza.partOfSpeech] || stanza.partOfSpeech
-        const fileName = `${stanza.modernWord}_${posAbbrev}.txt`
-        const targetPath = path.join(targetDir, fileName)
-        
-        // Process lines for output
-        let linesToWrite: string[]
-        
-        if (stanza.hasInlinePOS && stanza.posLineIndex !== undefined) {
-          // [ME]/[MI] and POS are on the same line
-          // Keep the line but remove the POS part
-          linesToWrite = stanza.lines.map((line, index) => {
-            if (index === stanza.posLineIndex) {
-              return removePOSFromLine(line)
-            }
-            return line
-          })
-        } else {
-          // [ME]/[MI] and POS are on different lines
-          // Remove the entire POS line
-          linesToWrite = stanza.posLineIndex !== undefined 
-            ? stanza.lines.filter((_, index) => index !== stanza.posLineIndex)
-            : stanza.lines
-        }
-        
-        const stanzaContent = linesToWrite.join('\n')
-        
-        fs.writeFileSync(targetPath, stanzaContent, 'utf8')
-        
-        log(`Extracted: ${relativePath} → ${path.join(dirName, fileName)}`)
-        extractedCount++
-      } else if (stanza.partOfSpeech && !stanza.modernWord) {
-        // Has POS but no [ME] or [MI] line
-        skippedNoModern++
-      }
+      processAndWriteStanza(stanzaLines, targetDir, stats)
     }
     
-    if (skippedNoModern > 0) {
-      log(`  Note: Skipped ${skippedNoModern} stanza(s) with POS but no [ME] or [MI] line in ${relativePath}`)
+    // Log file-specific results
+    if (stats.extractedCount > 0) {
+      log(`Extracted: ${relativePath} → ${dirName}/ (${stats.extractedCount} files)`)
+    }
+    if (stats.skippedNoModern > 0) {
+      log(`  Note: Skipped ${stats.skippedNoModern} stanza(s) with POS but no word found in ${relativePath}`)
     }
     
-    return ok(extractedCount)
+    return ok(stats)
   } catch (error) {
     return err(new Error(`Failed to process ${filePath}: ${error}`))
   }
@@ -332,12 +368,15 @@ function processFile(filePath: string, fromDir: string, toDir: string): Result<n
 /**
  * Process a directory recursively
  */
-function processDirectory(fromDir: string, toDir: string, currentPath: string = ''): Result<number> {
+function processDirectory(fromDir: string, toDir: string, currentPath: string = ''): Result<ProcessingStats> {
   const fullPath = path.join(fromDir, currentPath)
   
   try {
     const entries = fs.readdirSync(fullPath, { withFileTypes: true })
-    let totalExtracted = 0
+    const totalStats: ProcessingStats = {
+      extractedCount: 0,
+      skippedNoModern: 0
+    }
     
     for (const entry of entries) {
       const entryPath = path.join(currentPath, entry.name)
@@ -356,7 +395,10 @@ function processDirectory(fromDir: string, toDir: string, currentPath: string = 
         const result = processDirectory(fromDir, toDir, entryPath)
         fold(
           (error: Error) => logError(error.message),
-          (count: number) => totalExtracted += count
+          (stats: ProcessingStats) => {
+            totalStats.extractedCount += stats.extractedCount
+            totalStats.skippedNoModern += stats.skippedNoModern
+          }
         )(result)
       } else if (entry.name.endsWith('.txt')) {
         // Process text files
@@ -365,12 +407,15 @@ function processDirectory(fromDir: string, toDir: string, currentPath: string = 
         
         fold(
           (error: Error) => logError(error.message),
-          (count: number) => totalExtracted += count
+          (stats: ProcessingStats) => {
+            totalStats.extractedCount += stats.extractedCount
+            totalStats.skippedNoModern += stats.skippedNoModern
+          }
         )(result)
       }
     }
     
-    return ok(totalExtracted)
+    return ok(totalStats)
   } catch (error) {
     return err(new Error(`Failed to process directory ${fullPath}: ${error}`))
   }
@@ -409,8 +454,11 @@ function main(): void {
           logError(`Processing failed: ${error.message}`)
           process.exit(1)
         },
-        (count: number) => {
-          log(`\nProcessing complete! Extracted ${count} stanzas with part-of-speech indicators.`)
+        (stats: ProcessingStats) => {
+          log(`\nProcessing complete! Extracted ${stats.extractedCount} stanzas with part-of-speech indicators.`)
+          if (stats.skippedNoModern > 0) {
+            log(`Note: Skipped ${stats.skippedNoModern} stanzas total that had POS but no extractable word.`)
+          }
         }
       )(result)
     }
