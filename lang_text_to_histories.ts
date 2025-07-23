@@ -16,9 +16,26 @@
 
 import * as fs from 'fs'
 import * as path from 'path'
-import { ensureDirExists, log, logError, Result, ok, err, fold } from './src'
+import { 
+  ensureDirExists, 
+  log, 
+  logError, 
+  Result, 
+  ok, 
+  err, 
+  fold,
+  parseLanguageOrigin,
+  PATTERNS,
+  stringToTextLine,
+  splitIntoStanzas,
+  cleanLine,
+  extractFirstWord,
+  removePOSFromLine,
+  hasLanguageTag,
+  hasMEorMITag
+} from './src'
 
-// Part of speech mapping from your pos-map.ts
+// Part of speech mapping - keeping this local since reverse mapping isn't worth it
 const POS_ABBREVIATIONS: Record<string, string> = {
   "m n": "n",        // masculine noun -> just use 'n' for noun
   "f n": "n",        // feminine noun -> just use 'n' for noun
@@ -36,12 +53,6 @@ const POS_ABBREVIATIONS: Record<string, string> = {
   "interj": "interj", // interjection
   "obs": "obs"       // obsolete
 }
-
-// Constants for repeated patterns
-const WORD_PATTERN = /^([\w\u00C0-\u024F\u1E00-\u1EFF]+)/i
-const LANGUAGE_TAG_PATTERN = /\[[A-Z]+\]/g
-const POS_PATTERN = /\(([^)]+)\)\s*$/
-const INFINITIVE_PATTERN = /^to\s+/i
 
 /**
  * Type for single-character directory names (alphabetical organization)
@@ -92,38 +103,11 @@ function parseArgs(): Result<{ fromDir: string; toDir: string }> {
 }
 
 /**
- * Split text into stanzas (groups separated by empty lines)
- */
-function splitIntoStanzas(text: string): string[][] {
-  const lines = text.split('\n')
-  const stanzas: string[][] = []
-  let currentStanza: string[] = []
-  
-  for (const line of lines) {
-    if (line.trim() === '') {
-      if (currentStanza.length > 0) {
-        stanzas.push(currentStanza)
-        currentStanza = []
-      }
-    } else {
-      currentStanza.push(line)
-    }
-  }
-  
-  // Don't forget the last stanza
-  if (currentStanza.length > 0) {
-    stanzas.push(currentStanza)
-  }
-  
-  return stanzas
-}
-
-/**
  * Extract part of speech from a line
  * Returns the POS abbreviation if found, null otherwise
  */
 function extractPartOfSpeech(line: string): string | null {
-  const match = line.match(POS_PATTERN)
+  const match = line.match(PATTERNS.POS)
   
   if (match) {
     const pos = match[1].trim()
@@ -137,60 +121,21 @@ function extractPartOfSpeech(line: string): string | null {
 }
 
 /**
- * Clean a line by removing language tags and infinitive "to"
- */
-function cleanLine(line: string): string {
-  return line
-    .replace(LANGUAGE_TAG_PATTERN, '')
-    .trim()
-    .replace(INFINITIVE_PATTERN, '')
-}
-
-/**
- * Extract the first word from a cleaned line
- */
-function extractFirstWord(line: string): string | null {
-  const cleanedLine = cleanLine(line)
-  const match = cleanedLine.match(WORD_PATTERN)
-  return match ? match[1] : null
-}
-
-/**
- * Extract the first word from a line with language tag
+ * Extract the first word from a line with language tag using existing parser
  */
 function extractWordFromTaggedLine(line: string): string | null {
-  // Check if line has [ME] or [MI] tag
-  if (!line.includes('[ME]') && !line.includes('[MI]')) {
-    return null
+  const textLine = stringToTextLine(line)
+  const parsed = parseLanguageOrigin(textLine)
+  
+  // Check if it's [ME] or [MI]
+  if (parsed.language === 'ME' || parsed.language === 'MI') {
+    // Skip "to" at the beginning for infinitive verbs
+    const text = parsed.text.replace(PATTERNS.INFINITIVE, '')
+    const match = text.match(PATTERNS.WORD)
+    return match ? match[1] : null
   }
   
-  // Remove the language tag and everything after it (including POS if present)
-  const lineWithoutTag = line.replace(/\[M[EI]\].*$/, '').trim()
-  
-  // Skip "to" at the beginning for infinitive verbs
-  const lineWithoutTo = lineWithoutTag.replace(INFINITIVE_PATTERN, '')
-  
-  // Match the first word
-  const match = lineWithoutTo.match(WORD_PATTERN)
-  
-  return match ? match[1] : null
-}
-
-/**
- * Remove POS indicator from a line while preserving [ME]/[MI] tag
- */
-function removePOSFromLine(line: string): string {
-  // Find the position of the POS indicator
-  const posMatch = line.match(/\s*\([^)]+\)\s*$/)
-  
-  if (posMatch) {
-    // Find where the POS starts
-    const posStartIndex = line.lastIndexOf(posMatch[0])
-    // Remove everything from the POS indicator onwards
-    return line.substring(0, posStartIndex).trimEnd()
-  }
-  
-  return line
+  return null
 }
 
 /**
@@ -199,7 +144,7 @@ function removePOSFromLine(line: string): string {
 function findModernWord(stanza: Stanza, lines: string[]): string | null {
   // Priority 1: [ME] tag
   for (const line of lines) {
-    if (line.includes('[ME]')) {
+    if (hasMEorMITag(line) && line.includes('[ME]')) {
       const word = extractWordFromTaggedLine(line)
       if (word) return word
     }
@@ -207,7 +152,7 @@ function findModernWord(stanza: Stanza, lines: string[]): string | null {
   
   // Priority 2: [MI] tag
   for (const line of lines) {
-    if (line.includes('[MI]')) {
+    if (hasMEorMITag(line) && line.includes('[MI]')) {
       const word = extractWordFromTaggedLine(line)
       if (word) return word
     }
@@ -251,9 +196,8 @@ function processStanza(lines: string[]): Stanza {
   
   // Check if this line also has any language tag
   const posLine = lines[posLineIndex]
-  const hasLanguageTag = LANGUAGE_TAG_PATTERN.test(posLine)
   
-  if (hasLanguageTag) {
+  if (hasLanguageTag(posLine)) {
     stanza.hasInlinePOS = true
     // Extract word from this line (handles any language tag)
     const word = extractFirstWord(posLine)
@@ -338,7 +282,7 @@ function processFile(filePath: string, fromDir: string, toDir: string): Result<P
     // Ensure target directory exists
     ensureDirExists(targetDir)
     
-    // Split into stanzas
+    // Split into stanzas using the shared utility
     const stanzas = splitIntoStanzas(content)
     
     // Process each stanza
