@@ -6,9 +6,12 @@
 // and skip special directories like /grammar/, /pronouns/, etc.
 //
 // File naming: Uses the first word from the line containing [ME] tag (priority) or [MI] tag (fallback)
+// The line containing the part-of-speech indicator (e.g., "byṫyr (m n)") is excluded from the output
 // 
 // Example transformations:
-// Stanza containing "king [ME]" with "(m n)" anywhere → /to_dir/k/king_n.txt
+// From /lang/b/butter.txt stanza with "butter [ME]" and "byṫyr (m n)":
+//   → /to_dir/b/butter_n.txt (without the "byṫyr (m n)" line)
+// 
 // Stanza containing "to king [ME]" with "(v)" anywhere → /to_dir/k/king_v.txt (ignores "to")
 // Stanza containing "kingly [ME]" with "(adj)" anywhere → /to_dir/k/kingly_adj.txt
 // Stanza with only "kyng [MI]" (no [ME]) with "(n)" → /to_dir/k/kyng_n.txt (fallback to MI)
@@ -57,6 +60,7 @@ interface Stanza {
   lines: string[]
   partOfSpeech?: string
   modernWord?: string  // Word from [ME] or [MI] line
+  posLineIndex?: number  // Index of the line containing POS indicator
 }
 
 /**
@@ -153,10 +157,12 @@ function processStanza(lines: string[]): Stanza {
   
   // First, find if there's a POS indicator in any line
   let posFound = false
-  for (const line of lines) {
-    const pos = extractPartOfSpeech(line)
+  let posLineIndex = -1
+  for (let i = 0; i < lines.length; i++) {
+    const pos = extractPartOfSpeech(lines[i])
     if (pos) {
       stanza.partOfSpeech = pos
+      posLineIndex = i
       posFound = true
       break
     }
@@ -166,6 +172,9 @@ function processStanza(lines: string[]): Stanza {
   if (!posFound) {
     return stanza
   }
+  
+  // Store the index of the POS line to exclude it later
+  stanza.posLineIndex = posLineIndex
   
   // Look for [ME] first (priority), then [MI] as fallback
   let modernWord: string | null = null
@@ -216,6 +225,7 @@ function processFile(filePath: string, fromDir: string, toDir: string): Result<n
     
     // Process each stanza
     let extractedCount = 0
+    let skippedNoModern = 0
     
     for (const stanzaLines of stanzas) {
       const stanza = processStanza(stanzaLines)
@@ -226,13 +236,25 @@ function processFile(filePath: string, fromDir: string, toDir: string): Result<n
         const fileName = `${stanza.modernWord}_${posAbbrev}.txt`
         const targetPath = path.join(targetDir, fileName)
         
-        // Write stanza to file
-        const stanzaContent = stanza.lines.join('\n')
+        // Filter out the POS line when writing
+        // Example: removes "byṫyr (m n)" from the output
+        const linesToWrite = stanza.posLineIndex !== undefined 
+          ? stanza.lines.filter((_, index) => index !== stanza.posLineIndex)
+          : stanza.lines
+        const stanzaContent = linesToWrite.join('\n')
+        
         fs.writeFileSync(targetPath, stanzaContent, 'utf8')
         
-        log(`Extracted: ${relativePath} -> ${path.join(dirName, fileName)}`)
+        log(`Extracted: ${relativePath} → ${path.join(dirName, fileName)}`)
         extractedCount++
+      } else if (stanza.partOfSpeech && !stanza.modernWord) {
+        // Has POS but no [ME] or [MI] line
+        skippedNoModern++
       }
+    }
+    
+    if (skippedNoModern > 0) {
+      log(`  Note: Skipped ${skippedNoModern} stanza(s) with POS but no [ME] or [MI] line in ${relativePath}`)
     }
     
     return ok(extractedCount)
