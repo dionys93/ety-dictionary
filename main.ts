@@ -16,19 +16,13 @@ import * as path from 'path'
 import { Result, ok, err, map, flatMap, fold } from './src/core'
 
 // Pipeline construction
-import { pipelines, convertText } from './src/pipeline'
+import { pipelines } from './src/pipeline'
 
-// I/O operations
-import { processDirectory } from './src/io'
+// I/O operations - convertText is here!
+import { convertText, processDirectory } from './src/io'
 
 // Utils
-import { 
-  log, 
-  logError, 
-  logStart, 
-  logCompletion,
-  ensureDirExists 
-} from './src/utils'
+import { log, logError, logStart, logCompletion, ensureDirExists } from './src/utils'
 
 // Configuration
 import {

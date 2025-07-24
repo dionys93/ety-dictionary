@@ -2,7 +2,7 @@
 import * as fs from 'fs';
 import * as path from 'path';
 import { processFile } from './file-processor';
-import { logDebug, logError } from '../utils/console-utils';
+import { logDebug, logError } from '../utils';
 
 export const processDirectory = 
   (targetBase: string, converter: (textContent: string, fileName: string) => any[]) => 

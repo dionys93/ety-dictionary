@@ -1,19 +1,31 @@
 // src/processors/file-processor.ts
 import * as fs from 'fs'
 import * as path from 'path'
+
+// Core types
 import { 
   TextLine, 
   TextProcessingPipeline,
-  processGroup,
-  ensureDirExists,
+  Result
+} from '../core'
+
+// Monads
+import { fold } from '../core'
+
+// Transformers
+import { processGroup } from '../transformers'
+
+// I/O operations
+import { textToLines } from '../transformations/text-to-lines'
+
+// Utils
+import { 
   log, 
   logError, 
   logConversion, 
   logDebug,
-  textToLines,
-  fold,
-  Result
-} from '../'
+  ensureDirExists
+} from '../utils'
 
 // export const convertText = (pipeline: TextProcessingPipeline) => 
 //   (textContent: string, fileName: string): any[] => {
