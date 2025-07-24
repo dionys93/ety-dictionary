@@ -1,4 +1,5 @@
 // main.ts - Text Processing Pipeline with Centralized Path Configuration
+// (Refactored with new module structure)
 //
 // This is the main entry point for processing etymology text files into structured JSON.
 // 
@@ -10,36 +11,32 @@
 
 import * as fs from 'fs'
 import * as path from 'path'
-import {
-  // Core pipeline components
-  createPipeline,
-  convertText,
-  processDirectory,
-  ensureDirExists,
-  pipelines,
-  
-  // Console utils
+
+// Core types and monads
+import { Result, ok, err, map, flatMap, fold } from './src/core'
+
+// Pipeline construction
+import { pipelines, convertText } from './src/pipeline'
+
+// I/O operations
+import { processDirectory } from './src/io'
+
+// Utils
+import { 
   log, 
   logError, 
   logStart, 
   logCompletion,
-  
-  // Monads for safe operations
-  ok,
-  err,
-  map,
-  flatMap,
-  fold,
-  Result,
-} from './src'
+  ensureDirExists 
+} from './src/utils'
 
-// Import centralized path configuration
+// Configuration
 import {
   DEFAULT_PATHS,
   mapLanguageToPath,
   pathExists,
   ensurePathStructure
-} from './src/config/paths'
+} from './src/config'
 
 /**
  * Safe file operations using Result monad
