@@ -1,73 +1,76 @@
-// main.ts - Text Processing Pipeline with Centralized Path Configuration
-// (Refactored with new module structure)
-//
-// This is the main entry point for processing etymology text files into structured JSON.
-// 
-// Key architectural decisions:
-// - Uses centralized path configuration from src/config/paths.ts
-// - Safe error handling with Result monads throughout
-// - Supports dry-run mode for testing without file creation
-// - Modular design with single-responsibility functions 
-
-import * as fs from 'fs'
+// main.ts - Refactored with Orchestrator Pattern
 import * as path from 'path'
 
 // Core types and monads
-import { Result, ok, err, map, flatMap, fold } from './src/core'
+import { Result, ok, err, fold } from './src/core'
 
 // Pipeline construction
 import { pipelines } from './src/pipeline'
 
-// I/O operations - convertText is here!
-import { convertText, processDirectory } from './src/io'
+// I/O operations
+import {
+  createFileReader,
+  createJsonWriter,
+  createDirectoryReader,
+  createDirectoryCreator,
+  createPathChecker,
+  findTextFiles
+} from './src/io/file-operations'
+
+// Orchestrators
+import {
+  createFileProcessor,
+  createDirectoryProcessor,
+  createStreamingFileProcessor,
+  createConditionalProcessor,
+  ProcessingSummary
+} from './src/orchestrators/file-processing'
 
 // Utils
-import { log, logError, logStart, logCompletion, ensureDirExists } from './src/utils'
+import { log, logError, logStart, logCompletion } from './src/utils'
 
 // Configuration
 import {
   DEFAULT_PATHS,
   mapLanguageToPath,
-  pathExists,
   ensurePathStructure
 } from './src/config'
 
 /**
- * Safe file operations using Result monad
+ * Command line arguments interface
  */
-function safeReadFile(filePath: string): Result<string> {
-  try {
-    const content = fs.readFileSync(filePath, 'utf8')
-    return ok(content)
-  } catch (error) {
-    return err(new Error(`Failed to read ${filePath}: ${error}`))
-  }
+interface CommandLineArgs {
+  dir: string
+  pipeline: string
+  dryRun: boolean
+  sample: number
+  file: string
+  preview: boolean
 }
 
-function safeFileExists(filePath: string): Result<boolean> {
-  return pathExists(filePath)
-}
-
-function safeReadDir(dirPath: string): Result<fs.Dirent[]> {
-  try {
-    const entries = fs.readdirSync(dirPath, { withFileTypes: true })
-    return ok(entries)
-  } catch (error) {
-    return err(new Error(`Failed to read directory ${dirPath}: ${error}`))
-  }
+/**
+ * Create I/O operation instances
+ * These are created once and reused throughout the application
+ */
+const io = {
+  reader: createFileReader(),
+  writer: createJsonWriter(),
+  dirReader: createDirectoryReader(),
+  dirCreator: createDirectoryCreator(),
+  pathChecker: createPathChecker()
 }
 
 /**
  * Parse command line arguments
  */
-function parseCommandLineArgs() {
-  const args = {
-    dir: '',              // Directory to process
-    pipeline: 'standard', // Pipeline to use
-    dryRun: false,       // Whether to run in dry run mode
-    sample: 0,           // Number of sample files to process in dry run mode
-    file: '',            // Specific file to process
-    preview: false       // Whether to show a preview of the output
+function parseCommandLineArgs(): CommandLineArgs {
+  const args: CommandLineArgs = {
+    dir: '',
+    pipeline: 'standard',
+    dryRun: false,
+    sample: 0,
+    file: '',
+    preview: false
   }
   
   const cmdArgs = [...process.argv.slice(2)]
@@ -153,72 +156,34 @@ function printUsage(): void {
 }
 
 /**
- * Find all text files in a directory
+ * Create a dry run processor that logs output instead of writing files
  */
-function safeFindAllTextFiles(dirPath: string): Result<string[]> {
-  const results: string[] = []
-  
-  function searchRecursive(currentDir: string): Result<void> {
-    return flatMap((entries: fs.Dirent[]) => {
-      for (const entry of entries) {
-        const fullPath = path.join(currentDir, entry.name)
-        
-        if (entry.isDirectory()) {
-          const subResult = searchRecursive(fullPath)
-          if (!subResult.isSuccess) {
-            return err(subResult.error!)
-          }
-        } else if (entry.name.endsWith('.txt')) {
-          results.push(fullPath)
-        }
-      }
+function createDryRunProcessor(pipeline: any) {
+  const processor = createStreamingFileProcessor(
+    io.reader,
+    pipeline,
+    // Dummy writer that logs instead of writing
+    (_path: string, content: string) => {
+      log(content)
       return ok(undefined)
-    })(safeReadDir(currentDir))
-  }
+    }
+  )
   
-  return map(() => results)(searchRecursive(dirPath))
+  return processor
 }
 
 /**
- * Process a file in dry run mode
+ * Handle dry run mode with the orchestrator pattern
  */
-function processFileForDryRun(filePath: string, pipeline: any): Result<any> {
-  return flatMap((content: string) => {
-    const fileName = path.basename(filePath)
-    const converter = convertText(pipeline)
-    const result = converter(content, fileName)
-    return ok(result)
-  })(safeReadFile(filePath))
-}
-
-/**
- * Handle dry run mode
- */
-function handleDryRun(args: any, sourceDir: string, selectedPipeline: any): void {
-  let filesToProcessResult: Result<string[]>
+function handleDryRun(args: CommandLineArgs, sourceDir: string, selectedPipeline: any): void {
+  const dryRunProcessor = createDryRunProcessor(selectedPipeline)
   
-  if (args.file) {
-    // Process specific file
-    const specificFilePath = path.isAbsolute(args.file) 
-      ? args.file 
-      : path.join(sourceDir, args.file)
-      
-    filesToProcessResult = flatMap((exists: boolean) => {
-      if (exists) {
-        return ok([specificFilePath])
-      } else {
-        return err(new Error(`File not found: ${specificFilePath}`))
-      }
-    })(safeFileExists(specificFilePath))
-  } else if (args.sample > 0) {
-    // Find sample files
-    filesToProcessResult = map((files: string[]) => files.slice(0, args.sample))(
-      safeFindAllTextFiles(sourceDir)
-    )
-  } else {
-    // Find all files
-    filesToProcessResult = safeFindAllTextFiles(sourceDir)
-  }
+  // Determine which files to process
+  const filesToProcessResult = args.file
+    ? handleSpecificFile(args.file, sourceDir)
+    : args.sample > 0
+    ? findSampleFiles(sourceDir, args.sample)
+    : findTextFiles(sourceDir)
   
   fold(
     (error: Error) => {
@@ -228,78 +193,136 @@ function handleDryRun(args: any, sourceDir: string, selectedPipeline: any): void
     (filesToProcess: string[]) => {
       if (filesToProcess.length === 0) {
         log(`No text files found in ${sourceDir}`)
-        process.exit(0)
-      }
-      
-      // Show what would be processed
-      if (!args.file && !args.sample && filesToProcess.length > 3) {
-        log(`DRY RUN: Would process ${filesToProcess.length} files from ${sourceDir}`)
-        log(`First 3 files:`)
-        filesToProcess.slice(0, 3).forEach(file => 
-          log(` - ${path.relative(sourceDir, file)}`)
-        )
-        
-        if (args.preview) {
-          const result = processFileForDryRun(filesToProcess[0], selectedPipeline)
-          fold(
-            (error: Error) => logError(`Preview failed: ${error.message}`),
-            (data: any) => {
-              log(`\nPreview of ${path.relative(sourceDir, filesToProcess[0])}:`)
-              log(JSON.stringify(data, null, 2))
-            }
-          )(result)
-        }
         return
       }
       
-      // Process files
-      log(`Processing ${filesToProcess.length} file(s) in dry run mode:`)
+      log(`DRY RUN: Processing ${filesToProcess.length} file(s)`)
       
-      const results = filesToProcess.map(file => ({
-        file,
-        result: processFileForDryRun(file, selectedPipeline)
-      }))
-      
-      // Show results
-      for (const { file, result } of results) {
-        log(`\nFile: ${path.relative(sourceDir, file)}`)
-        
-        fold(
-          (error: Error) => logError(`Error: ${error.message}`),
-          (data: any) => log(JSON.stringify(data, null, 2))
-        )(result)
+      if (args.preview || filesToProcess.length <= 3) {
+        // Process and show results
+        processFilesInDryRun(filesToProcess, sourceDir, dryRunProcessor)
+      } else {
+        // Just show what would be processed
+        log(`Would process:`)
+        filesToProcess.slice(0, 3).forEach(file => 
+          log(` - ${path.relative(sourceDir, file)}`)
+        )
+        log(`  ... and ${filesToProcess.length - 3} more files`)
       }
-      
-      // Summary
-      const successful = results.filter(r => r.result.isSuccess).length
-      const failed = results.filter(r => !r.result.isSuccess).length
-      
-      log(`\nDry run completed: ${successful} successful, ${failed} failed`)
     }
   )(filesToProcessResult)
 }
 
 /**
- * Process files in normal mode
+ * Process files in dry run mode and show results
+ */
+function processFilesInDryRun(
+  files: string[],
+  sourceDir: string,
+  processor: ReturnType<typeof createDryRunProcessor>
+): void {
+  const results: Array<{ file: string; success: boolean; error?: Error }> = []
+  
+  files.forEach((file, index) => {
+    log(`\nFile: ${path.relative(sourceDir, file)}`)
+    
+    // Process with custom entry handler for dry run
+    const processResult = processor(
+      file,
+      'dry-run-output.json',
+      (entry, entryIndex) => {
+        log(JSON.stringify(entry, null, 2))
+      }
+    )
+    
+    fold(
+      (error: Error) => {
+        logError(`Error: ${error.message}`)
+        results.push({ file, success: false, error })
+      },
+      () => {
+        results.push({ file, success: true })
+      }
+    )(processResult)
+  })
+  
+  // Summary
+  const successful = results.filter(r => r.success).length
+  const failed = results.filter(r => !r.success).length
+  log(`\nDry run completed: ${successful} successful, ${failed} failed`)
+}
+
+/**
+ * Handle specific file processing
+ */
+function handleSpecificFile(file: string, sourceDir: string): Result<string[]> {
+  const specificFilePath = path.isAbsolute(file) 
+    ? file 
+    : path.join(sourceDir, file)
+  
+  return fold(
+    () => err(new Error(`File not found: ${specificFilePath}`)),
+    (exists: boolean) => exists 
+      ? ok([specificFilePath])
+      : err(new Error(`File not found: ${specificFilePath}`))
+  )(io.pathChecker(specificFilePath))
+}
+
+/**
+ * Find sample files for dry run
+ */
+function findSampleFiles(sourceDir: string, sampleCount: number): Result<string[]> {
+  return fold(
+    (error: Error) => err(error),
+    (files: string[]) => ok(files.slice(0, sampleCount))
+  )(findTextFiles(sourceDir))
+}
+
+/**
+ * Process files in normal mode using the orchestrator
  */
 function processNormalMode(
-  sourceDir: string, 
-  targetDir: string, 
-  selectedPipeline: any, 
+  sourceDir: string,
+  targetDir: string,
+  selectedPipeline: any,
   pipelineName: string
 ): void {
   logStart(sourceDir, targetDir, pipelineName)
   
-  ensureDirExists(targetDir)
+  // Create the directory processor orchestrator
+  const processor = createDirectoryProcessor(
+    io.reader,
+    selectedPipeline,
+    io.writer,
+    io.dirReader,
+    io.dirCreator,
+    io.pathChecker
+  )
   
-  const converter = convertText(selectedPipeline)
-  processDirectory(targetDir, converter)(sourceDir)
+  // Process the directory
+  const result = processor(sourceDir, targetDir)
   
-  logCompletion()
+  fold(
+    (error: Error) => {
+      logError(`Processing failed: ${error.message}`)
+      process.exit(1)
+    },
+    (summary: ProcessingSummary) => {
+      logCompletion()
+      log(`Processed ${summary.successfulFiles}/${summary.totalFiles} files successfully`)
+      if (summary.failedFiles > 0) {
+        log(`Failed files:`)
+        summary.errors.forEach(({ file, error }) => 
+          log(`  - ${file}: ${error.message}`)
+        )
+      }
+      log(`Total processing time: ${summary.processingTime}ms`)
+    }
+  )(result)
 }
 
 /**
- * Main function
+ * Main function using the orchestrator pattern
  */
 function main(): void {
   const args = parseCommandLineArgs()
@@ -334,7 +357,7 @@ function main(): void {
 }
 
 /**
- * Setup and run
+ * Setup and run the application
  */
 function setupAndRun(): void {
   const setupResult = ensurePathStructure()
