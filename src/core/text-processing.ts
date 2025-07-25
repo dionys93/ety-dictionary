@@ -1,10 +1,8 @@
-// src/core/text-processing.ts - Pure business logic for text processing
-//
-// This module provides pure functional text processing capabilities that integrate
-// with the existing pipeline architecture. All functions return Result types for
-// safe error handling and maintain functional purity.
-
-//imports need fixed
+// // src/core/text-processing.ts - Pure business logic for text processing
+// //
+// // This module provides pure functional text processing capabilities that integrate
+// // with the existing pipeline architecture. All functions return Result types for
+// // safe error handling and maintain functional purity.
 
 import { 
   Result, 
@@ -21,7 +19,6 @@ import {
 } from '../monads'
 
 import {
-  TextLine,
   TextProcessingPipeline,
   EntryGroup,
   ParsedLine,
@@ -33,7 +30,11 @@ import {
 } from '../types/pipeline-types'
 
 import { 
-  TextBlock,
+  TextLine,
+  TextBlock
+} from '../types/text'
+
+import { 
   groupIntoBlocks,
   textToLines,
   toRawLine
