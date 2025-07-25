@@ -36,6 +36,8 @@ import {
   ensurePathStructure
 } from './src/config'
 
+import { createAlphabeticalDirectoryProcessor } from './src/orchestrators/file-processing'
+
 /**
  * Command line arguments interface
  */
@@ -279,7 +281,7 @@ function findSampleFiles(sourceDir: string, sampleCount: number): Result<string[
 }
 
 /**
- * Process files in normal mode using the orchestrator
+ * Process files in normal mode using the alphabetical orchestrator
  */
 function processNormalMode(
   sourceDir: string,
@@ -289,8 +291,9 @@ function processNormalMode(
 ): void {
   logStart(sourceDir, targetDir, pipelineName)
   
-  // Create the directory processor orchestrator
-  const processor = createDirectoryProcessor(
+  // Create the alphabetical directory processor orchestrator
+  // This ensures only single-character directories are processed at root level
+  const processor = createAlphabeticalDirectoryProcessor(
     io.reader,
     selectedPipeline,
     io.writer,
@@ -310,6 +313,7 @@ function processNormalMode(
     (summary: ProcessingSummary) => {
       logCompletion()
       log(`Processed ${summary.successfulFiles}/${summary.totalFiles} files successfully`)
+      log(`Note: Only single-character directories (a-z, A-Z) were processed`)
       if (summary.failedFiles > 0) {
         log(`Failed files:`)
         summary.errors.forEach(({ file, error }) => 

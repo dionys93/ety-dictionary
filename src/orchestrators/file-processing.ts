@@ -371,6 +371,101 @@ export function createValidatingProcessor<TEntry = any, TCustom = any>(
 }
 
 /**
+ * Create an alphabetical directory processor that only processes single-character directories
+ * at the root level, similar to lang_text_to_histories.ts
+ */
+export function createAlphabeticalDirectoryProcessor<TEntry = any, TCustom = any>(
+  reader: FileReader,
+  pipeline: TextProcessingPipeline<TEntry, TCustom>,
+  writer: JsonWriter,
+  dirReader: DirectoryReader,
+  dirCreator: DirectoryCreator,
+  pathChecker: PathChecker
+): DirectoryProcessor {
+  const fileProcessor = createFileProcessor(reader, pipeline, writer)
+  
+  // Type for single-character directory names
+  type AlphabeticalDir = string & { readonly __brand: 'AlphabeticalDir' }
+  
+  // Check if a directory name is valid single-character alphabetical
+  function isAlphabeticalDir(dirName: string): dirName is AlphabeticalDir {
+    return dirName.length === 1 && /^[a-zA-Z]$/.test(dirName)
+  }
+  
+  return function processDirectory(sourceDir: string, targetDir: string): Result<ProcessingSummary> {
+    const startTime = Date.now()
+    const summary: ProcessingSummary = {
+      totalFiles: 0,
+      successfulFiles: 0,
+      failedFiles: 0,
+      errors: [],
+      processingTime: 0
+    }
+    
+    // Ensure target directory exists
+    const createDirResult = dirCreator(targetDir)
+    if (!createDirResult.isSuccess) {
+      return err(createDirResult.error!)
+    }
+    
+    // Process directory recursively with alphabetical filtering
+    function processRecursive(
+      currentSourceDir: string, 
+      currentTargetDir: string,
+      depth: number = 0
+    ): Result<void> {
+      return flatMap((entries: fs.Dirent[]) => {
+        for (const entry of entries) {
+          const sourcePath = path.join(currentSourceDir, entry.name)
+          const targetPath = path.join(currentTargetDir, entry.name)
+          
+          if (entry.isDirectory()) {
+            // At root level (depth 0), only process single-character directories
+            if (depth === 0 && !isAlphabeticalDir(entry.name)) {
+              console.log(`Skipping non-alphabetical directory: ${entry.name}`)
+              continue
+            }
+            
+            // Recursively process subdirectories
+            const subDirResult = dirCreator(targetPath)
+            if (!subDirResult.isSuccess) {
+              return err(subDirResult.error!)
+            }
+            
+            const recursiveResult = processRecursive(sourcePath, targetPath, depth + 1)
+            if (!recursiveResult.isSuccess) {
+              return err(recursiveResult.error!)
+            }
+          } else if (entry.name.endsWith('.txt')) {
+            // Process text files
+            summary.totalFiles++
+            const jsonPath = targetPath.replace('.txt', '.json')
+            const fileResult = fileProcessor(sourcePath, jsonPath)
+            
+            if (fileResult.isSuccess) {
+              summary.successfulFiles++
+            } else {
+              summary.failedFiles++
+              summary.errors.push({
+                file: sourcePath,
+                error: fileResult.error!
+              })
+            }
+          }
+        }
+        
+        return ok(undefined)
+      })(dirReader(currentSourceDir))
+    }
+    
+    return map(() => {
+      summary.processingTime = Date.now() - startTime
+      return summary
+    })(processRecursive(sourceDir, targetDir, 0))
+  }
+}
+
+/**
  * Export commonly used orchestrator configurations
  */
 export { createFileProcessor as createSimpleOrchestrator }
