@@ -1,59 +1,173 @@
 {
-  "totalFiles": 1218,
-  "processedFiles": 1218,
+  "totalFiles": 1718,
+  "processedFiles": 1718,
   "failedFiles": 0,
-  "totalEntriesWithPos": 1218,
-  "entriesWithMultiplePos": 211,
+  "totalEntriesWithPos": 1601,
+  "entriesWithMultiplePos": 277,
   "uniquePartsOfSpeech": [
     "v",
     "f n",
     "adj",
     "n",
     "m n",
-    "conj",
     "adv",
+    "conj",
     "pron",
     "prep",
     "intr v",
     "tr v",
     "obs",
     "interj",
+    "intransitive",
+    "transitive",
+    "tr",
+    "laie is preferred for trans and intrans sense",
+    "No progressive form",
+    "to marry",
+    "to bury",
+    "to weary",
+    "to carry",
+    "to copy",
+    "to study",
+    "to hurry",
+    "to worry",
+    "marriage",
+    "burial",
+    "barrow",
+    "carrage",
+    "copy",
+    "copies",
+    "study",
+    "studies",
+    "hurry",
+    "to annoy",
+    "to employ",
+    "to enjoy",
+    "to convoy",
+    "to deploy",
+    "to destroy",
+    "to boil",
+    "to coil",
+    "to foil",
+    "to oil",
+    "to soil",
+    "to spoil",
+    "to toil",
     "suff",
-    "adj m n"
+    "adj m n",
+    "inclusive",
+    "caste",
+    "suffix"
   ],
   "posCounts": {
-    "v": 818,
-    "f n": 306,
-    "adj": 446,
-    "n": 188,
-    "m n": 770,
-    "conj": 8,
-    "adv": 73,
-    "pron": 6,
-    "prep": 6,
-    "intr v": 5,
-    "tr v": 5,
-    "obs": 1,
+    "v": 1059,
+    "f n": 424,
+    "adj": 567,
+    "n": 156,
+    "m n": 1023,
+    "adv": 91,
+    "conj": 9,
+    "pron": 7,
+    "prep": 8,
+    "intr v": 10,
+    "tr v": 6,
+    "obs": 3,
     "interj": 3,
+    "intransitive": 1,
+    "transitive": 1,
+    "tr": 1,
+    "laie is preferred for trans and intrans sense": 1,
+    "No progressive form": 1,
+    "to marry": 1,
+    "to bury": 1,
+    "to weary": 1,
+    "to carry": 1,
+    "to copy": 1,
+    "to study": 1,
+    "to hurry": 1,
+    "to worry": 1,
+    "marriage": 1,
+    "burial": 1,
+    "barrow": 1,
+    "carrage": 1,
+    "copy": 1,
+    "copies": 1,
+    "study": 1,
+    "studies": 1,
+    "hurry": 1,
+    "to annoy": 1,
+    "to employ": 1,
+    "to enjoy": 1,
+    "to convoy": 1,
+    "to deploy": 1,
+    "to destroy": 1,
+    "to boil": 1,
+    "to coil": 1,
+    "to foil": 1,
+    "to oil": 1,
+    "to soil": 1,
+    "to spoil": 1,
+    "to toil": 1,
     "suff": 1,
-    "adj m n": 1
+    "adj m n": 1,
+    "inclusive": 1,
+    "caste": 1,
+    "suffix": 2
   },
   "posDistribution": {
-    "v": 67.2,
-    "f n": 25.1,
-    "adj": 36.6,
-    "n": 15.4,
-    "m n": 63.2,
-    "conj": 0.7,
-    "adv": 6,
-    "pron": 0.5,
+    "v": 66.1,
+    "f n": 26.5,
+    "adj": 35.4,
+    "n": 9.7,
+    "m n": 63.9,
+    "adv": 5.7,
+    "conj": 0.6,
+    "pron": 0.4,
     "prep": 0.5,
-    "intr v": 0.4,
+    "intr v": 0.6,
     "tr v": 0.4,
-    "obs": 0.1,
+    "obs": 0.2,
     "interj": 0.2,
+    "intransitive": 0.1,
+    "transitive": 0.1,
+    "tr": 0.1,
+    "laie is preferred for trans and intrans sense": 0.1,
+    "No progressive form": 0.1,
+    "to marry": 0.1,
+    "to bury": 0.1,
+    "to weary": 0.1,
+    "to carry": 0.1,
+    "to copy": 0.1,
+    "to study": 0.1,
+    "to hurry": 0.1,
+    "to worry": 0.1,
+    "marriage": 0.1,
+    "burial": 0.1,
+    "barrow": 0.1,
+    "carrage": 0.1,
+    "copy": 0.1,
+    "copies": 0.1,
+    "study": 0.1,
+    "studies": 0.1,
+    "hurry": 0.1,
+    "to annoy": 0.1,
+    "to employ": 0.1,
+    "to enjoy": 0.1,
+    "to convoy": 0.1,
+    "to deploy": 0.1,
+    "to destroy": 0.1,
+    "to boil": 0.1,
+    "to coil": 0.1,
+    "to foil": 0.1,
+    "to oil": 0.1,
+    "to soil": 0.1,
+    "to spoil": 0.1,
+    "to toil": 0.1,
     "suff": 0.1,
-    "adj m n": 0.1
+    "adj m n": 0.1,
+    "inclusive": 0.1,
+    "caste": 0.1,
+    "suffix": 0.1
   },
   "posFullNames": {
     "m n": "masculine noun",
@@ -85,7 +199,7 @@
       "abase",
       "aberrant",
       "abhore",
-      "abolish"
+      "ability"
     ],
     "adj": [
       "aberrant",
@@ -96,17 +210,24 @@
     ],
     "n": [
       "aberrant",
-      "ability",
       "abolish",
       "abrade",
-      "ache"
+      "ache",
+      "aid"
     ],
     "m n": [
       "accede",
+      "act",
       "adamant",
       "adjective",
-      "admiral",
-      "admit"
+      "admiral"
+    ],
+    "adv": [
+      "act",
+      "all",
+      "alone",
+      "analyze",
+      "annual"
     ],
     "conj": [
       "albeit",
@@ -114,13 +235,6 @@
       "because",
       "either",
       "like"
-    ],
-    "adv": [
-      "all",
-      "alone",
-      "analyze",
-      "annual",
-      "any"
     ],
     "pron": [
       "all",
@@ -131,10 +245,10 @@
     ],
     "prep": [
       "below",
+      "down",
       "like",
       "long",
-      "pair",
-      "save"
+      "oppose"
     ],
     "intr v": [
       "burn",
@@ -151,19 +265,254 @@
       "spill"
     ],
     "obs": [
-      "defer"
+      "defer",
+      "redundant",
+      "vary"
     ],
     "interj": [
       "fire",
       "hail",
       "meow"
     ],
+    "intransitive": [
+      "rules"
+    ],
+    "transitive": [
+      "rules"
+    ],
+    "tr": [
+      "creep"
+    ],
+    "laie is preferred for trans and intrans sense": [
+      "lie"
+    ],
+    "No progressive form": [
+      "ending-in-aie-or-eie"
+    ],
+    "to marry": [
+      "ending-in-ie"
+    ],
+    "to bury": [
+      "ending-in-ie"
+    ],
+    "to weary": [
+      "ending-in-ie"
+    ],
+    "to carry": [
+      "ending-in-ie"
+    ],
+    "to copy": [
+      "ending-in-ie"
+    ],
+    "to study": [
+      "ending-in-ie"
+    ],
+    "to hurry": [
+      "ending-in-ie"
+    ],
+    "to worry": [
+      "ending-in-ie"
+    ],
+    "marriage": [
+      "ending-in-ie"
+    ],
+    "burial": [
+      "ending-in-ie"
+    ],
+    "barrow": [
+      "ending-in-ie"
+    ],
+    "carrage": [
+      "ending-in-ie"
+    ],
+    "copy": [
+      "ending-in-ie"
+    ],
+    "copies": [
+      "ending-in-ie"
+    ],
+    "study": [
+      "ending-in-ie"
+    ],
+    "studies": [
+      "ending-in-ie"
+    ],
+    "hurry": [
+      "ending-in-ie"
+    ],
+    "to annoy": [
+      "ending-in-oie"
+    ],
+    "to employ": [
+      "ending-in-oie"
+    ],
+    "to enjoy": [
+      "ending-in-oie"
+    ],
+    "to convoy": [
+      "ending-in-oie"
+    ],
+    "to deploy": [
+      "ending-in-oie"
+    ],
+    "to destroy": [
+      "ending-in-oie"
+    ],
+    "to boil": [
+      "ending-in-oile"
+    ],
+    "to coil": [
+      "ending-in-oile"
+    ],
+    "to foil": [
+      "ending-in-oile"
+    ],
+    "to oil": [
+      "ending-in-oile"
+    ],
+    "to soil": [
+      "ending-in-oile"
+    ],
+    "to spoil": [
+      "ending-in-oile"
+    ],
+    "to toil": [
+      "ending-in-oile"
+    ],
     "suff": [
       "hood"
     ],
     "adj m n": [
       "mania"
+    ],
+    "inclusive": [
+      "pronouns"
+    ],
+    "caste": [
+      "romani"
+    ],
+    "suffix": [
+      "shire",
+      "wise"
     ]
   },
-  "filesWithoutPos": []
+  "filesWithoutPos": [
+    "alphabet.txt",
+    "game.txt",
+    "rules.txt",
+    "bet.txt",
+    "bid.txt",
+    "cost.txt",
+    "hit.txt",
+    "hurt.txt",
+    "let.txt",
+    "put.txt",
+    "quit.txt",
+    "rid.txt",
+    "shed.txt",
+    "shut.txt",
+    "bend.txt",
+    "bind.txt",
+    "bleed.txt",
+    "breed.txt",
+    "bring.txt",
+    "build.txt",
+    "buy.txt",
+    "catch.txt",
+    "dig.txt",
+    "feel.txt",
+    "fight.txt",
+    "find.txt",
+    "flee.txt",
+    "grind.txt",
+    "hear.txt",
+    "hold.txt",
+    "keep.txt",
+    "lead.txt",
+    "leave.txt",
+    "lend.txt",
+    "lose.txt",
+    "make.txt",
+    "mean.txt",
+    "meet.txt",
+    "read.txt",
+    "seek.txt",
+    "sell.txt",
+    "send.txt",
+    "shit.txt",
+    "sit.txt",
+    "sleep.txt",
+    "spin.txt",
+    "spit.txt",
+    "stand.txt",
+    "teach.txt",
+    "tell.txt",
+    "think.txt",
+    "understand.txt",
+    "wind.txt",
+    "rules.txt",
+    "be.txt",
+    "bear.txt",
+    "become.txt",
+    "begin.txt",
+    "bite.txt",
+    "blow.txt",
+    "break.txt",
+    "choose.txt",
+    "cling.txt",
+    "come.txt",
+    "do.txt",
+    "draw.txt",
+    "drink.txt",
+    "drive.txt",
+    "eat.txt",
+    "fall.txt",
+    "fly.txt",
+    "forget.txt",
+    "forgive.txt",
+    "freeze.txt",
+    "get.txt",
+    "give.txt",
+    "go.txt",
+    "grow.txt",
+    "have.txt",
+    "hide.txt",
+    "know.txt",
+    "ride.txt",
+    "ring.txt",
+    "rise.txt",
+    "run.txt",
+    "say.txt",
+    "see.txt",
+    "shake.txt",
+    "show.txt",
+    "sing.txt",
+    "speak.txt",
+    "swear.txt",
+    "swim.txt",
+    "take.txt",
+    "tear.txt",
+    "throw.txt",
+    "wake.txt",
+    "wear.txt",
+    "will.txt",
+    "write.txt",
+    "overview.txt",
+    "be.txt",
+    "can.txt",
+    "have.txt",
+    "will.txt",
+    "derived-from-facere.txt",
+    "derived-from-mittere.txt",
+    "ending-in-cte-or-pte.txt",
+    "ending-in-eue.txt",
+    "ending-in-îe-or-yhe.txt",
+    "ending-in-le.txt",
+    "ending-in-ote.txt",
+    "ending-in-re.txt",
+    "ending-in-îre.txt",
+    "recommit.txt",
+    "seem.txt",
+    "sound_map.txt"
+  ]
 }
