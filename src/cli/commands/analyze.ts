@@ -2,7 +2,7 @@
 import * as path from 'path'
 import { Result, ok, err, fold } from '../../core'
 import { log, logError } from '../../utils'
-import { findTextFiles } from '../../io/file-operations'
+import { findTextFilesInAlphabeticalDirs } from '../../io/alpha-file-finder'
 import { DEFAULT_PATHS, mapLanguageToPath, posMap } from '../../config'
 import { Command, AnalyzeArgs } from '../types'
 import { io } from '../shared/io-instances'
@@ -404,21 +404,22 @@ export function createAnalyzeCommand(): Command {
           const { source: sourceDir } = paths
           
           log(`Starting analysis for ${sourceDir} in ${parsedArgs.mode} mode...`)
+          log(`Note: Only analyzing files in single-character directories (a-z, A-Z)`)
           
           // Ensure analysis directory exists
           io.dirCreator(DEFAULT_PATHS.base.analysis)
           
-          // Find all text files
-          const filesResult = findTextFiles(sourceDir)
+          // Find all text files in alphabetical directories only
+          const filesResult = findTextFilesInAlphabeticalDirs(sourceDir)
           
           return fold(
             (error: Error) => err(error),
             (filePaths: string[]) => {
               if (filePaths.length === 0) {
-                return err(new Error(`No text files found in ${sourceDir}`))
+                return err(new Error(`No text files found in alphabetical directories under ${sourceDir}`))
               }
               
-              log(`Found ${filePaths.length} text files to analyze.`)
+              log(`Found ${filePaths.length} text files in alphabetical directories to analyze.`)
               
               // Read all files
               const files: Array<{path: string, content: string}> = []
@@ -452,7 +453,9 @@ export function createAnalyzeCommand(): Command {
     printHelp() {
       log(`Usage: etymology analyze [language] [options]`)
       log(``)
-      log(`Analyze etymology files for statistics and patterns`)
+      log(`Analyze etymology files for statistics and patterns.`)
+      log(`Only analyzes files within single-character alphabetical directories`)
+      log(`(a-z, A-Z) at the root level.`)
       log(``)
       log(`Arguments:`)
       log(`  language    Language directory to analyze (default: inglish)`)
@@ -466,6 +469,9 @@ export function createAnalyzeCommand(): Command {
       log(`  etymology analyze --mode pos         Analyze parts of speech only`)
       log(`  etymology analyze --mode roots       Analyze root words only`)
       log(`  etymology analyze inglish -m both -v Verbose analysis of inglish`)
+      log(``)
+      log(`Note: Special directories like 'grammar', 'pronouns' etc. are automatically`)
+      log(`      skipped. Only /a/, /b/, /c/ ... /z/ directories are analyzed.`)
     }
   }
 }

@@ -1,9 +1,9 @@
 {
-  "totalFiles": 1718,
-  "processedFiles": 1718,
+  "totalFiles": 1891,
+  "processedFiles": 1891,
   "failedFiles": 0,
-  "totalEntriesWithPos": 1601,
-  "entriesWithMultiplePos": 277,
+  "totalEntriesWithPos": 1676,
+  "entriesWithMultiplePos": 296,
   "uniquePartsOfSpeech": [
     "v",
     "n",
@@ -14,6 +14,19 @@
     "prep",
     "obs",
     "interj",
+    "accent also",
+    "a person",
+    "professional role",
+    "a small restaurant",
+    "an audio device",
+    "a machine for typing",
+    "a walking device",
+    "computer function",
+    "paper product for parties",
+    "cleaning product",
+    "noun",
+    "verb",
+    "singular noun and verb form",
     "intransitive",
     "transitive",
     "tr",
@@ -51,12 +64,194 @@
     "to toil",
     "suff",
     "adj m n",
+    "clarifies stress placement",
+    "shows stress on short I",
+    "when Y has this sound",
+    "stress on first A",
+    "noun stress",
+    "in certain positions",
+    "usually stressed",
+    "depending on position",
+    "mouth more open",
+    "mouth more closed",
+    "always",
+    "and before I",
+    "E with silent U",
+    "before vowels",
+    "lengthens vowel",
+    "Before Vowels or After Consonants",
+    "Between Vowels",
+    "between vowels",
+    "Initial and Final",
+    "Medial",
+    "flap",
+    "Thorn",
+    "in function words",
+    "elsewhere",
+    "Voiced",
+    "Voiceless",
+    "H is an etymological remnant",
+    "specific words",
+    "very rare",
+    "Main Pattern",
+    "Traditional English Words",
+    "Very Rare",
+    "Latin",
+    "most verbs",
+    "fire only",
+    "from Old English",
+    "iron",
+    "quire",
+    "Standard Verb Pattern",
+    "to form into a spire",
+    "to make tired",
+    "to exhaust",
+    "from Old English fyr",
+    "fyres",
+    "fyred",
+    "fyering",
+    "Exceptional",
+    "inspiration",
+    "requirement",
+    "acquisition",
+    "exhaust",
+    "fyre",
+    "exhaust verb",
+    "unstressed",
+    "stressed",
+    "to establish",
+    "Marks stress and past participles",
+    "past of find",
+    "before GN",
+    "Stressed",
+    "Verbs",
+    "Consistent",
+    "nouns",
+    "stressed exceptions",
+    "when stress needs clarification",
+    "alternative",
+    "stressed contexts",
+    "verb infinitives",
+    "verbs",
+    "stressed verbs",
+    "after R",
+    "TR",
+    "After R",
+    "cute pattern",
+    "single vowel",
+    "irregular stress patterns",
+    "Stressed Single Vowel",
+    "Irregular Stress",
+    "irregular stress",
+    "see variable patterns",
+    "before two consonants",
+    "basic words",
+    "Stressed Greek Derivatives",
+    "some Latin",
+    "Stressed Basic Words",
+    "basic pattern",
+    "Basic Pattern",
+    "plural",
+    "past tenses",
+    "clarification",
+    "rare",
+    "Most Common",
+    "Irregular Past Tenses",
+    "Unstressed",
+    "at word endings",
+    "derived nouns",
+    "in specific contexts",
+    "Before Two Consonants",
+    "U cannot appear in these positions",
+    "Latin derivatives",
+    "Agent Nouns",
+    "Latin Agents",
+    "Animals",
+    "Family",
+    "Comparatives",
+    "Latin Derivatives",
+    "religious",
+    "Complex Pattern",
+    "most common",
+    "in borrowed words",
+    "from Latin rarus",
+    "ultimately from Latin festus",
+    "Marked Stress",
+    "Rare",
+    "from Old English hrere",
+    "before consonants",
+    "Single Vowel",
+    "Nouns",
+    "Nouns and Verbs",
+    "Stressed Verbs",
+    "Special Cases",
+    "liorier",
+    "lioriest",
+    "either",
+    "liory",
+    "liorer",
+    "liorest",
+    "modal verbs",
+    "Modal Verbs",
+    "book sound",
+    "say",
+    "pay",
+    "stay",
+    "play",
+    "always stressed",
+    "except in compounds",
+    "most common when stressed",
+    "when unstressed",
+    "after certain consonants",
+    "sh",
+    "when stressed",
+    "except before silent E",
+    "singular",
+    "various contexts",
+    "before H",
+    "unstressed before R",
+    "before R",
+    "before N",
+    "before two consonants or as only vowel",
+    "between consonants and vowels",
+    "after Q",
+    "adjectives and adverbs only",
+    "to tell a lie",
+    "TURNED W",
+    "THORN",
+    "voiceless",
+    "LONG S",
+    "special S usage",
+    "g dropped",
+    "g often preserved",
+    "g pronounced",
+    "region",
+    "wine",
+    "person",
+    "Encyclopedia",
+    "Anemia",
+    "Fetus",
+    "Edema",
+    "Estrogen",
+    "to name",
+    "names",
+    "named",
+    "naming",
+    "to pray",
+    "to prey",
+    "outlier",
+    "no progressive form",
+    "might",
+    "s",
+    "es",
+    "adjective",
+    "noun or verb",
     "inclusive",
     "caste",
     "suffix"
   ],
   "posCounts": {
-    "v": 1069,
+    "v": 1070,
     "n": 1396,
     "adj": 567,
     "adv": 91,
@@ -65,6 +260,19 @@
     "prep": 8,
     "obs": 3,
     "interj": 3,
+    "accent also": 1,
+    "a person": 1,
+    "professional role": 1,
+    "a small restaurant": 1,
+    "an audio device": 1,
+    "a machine for typing": 1,
+    "a walking device": 1,
+    "computer function": 1,
+    "paper product for parties": 1,
+    "cleaning product": 1,
+    "noun": 3,
+    "verb": 3,
+    "singular noun and verb form": 1,
     "intransitive": 1,
     "transitive": 1,
     "tr": 1,
@@ -102,20 +310,215 @@
     "to toil": 1,
     "suff": 1,
     "adj m n": 1,
+    "clarifies stress placement": 1,
+    "shows stress on short I": 1,
+    "when Y has this sound": 1,
+    "stress on first A": 1,
+    "noun stress": 1,
+    "in certain positions": 1,
+    "usually stressed": 2,
+    "depending on position": 1,
+    "mouth more open": 1,
+    "mouth more closed": 1,
+    "always": 3,
+    "and before I": 1,
+    "E with silent U": 1,
+    "before vowels": 2,
+    "lengthens vowel": 1,
+    "Before Vowels or After Consonants": 1,
+    "Between Vowels": 1,
+    "between vowels": 2,
+    "Initial and Final": 1,
+    "Medial": 1,
+    "flap": 1,
+    "Thorn": 1,
+    "in function words": 1,
+    "elsewhere": 1,
+    "Voiced": 1,
+    "Voiceless": 1,
+    "H is an etymological remnant": 1,
+    "specific words": 1,
+    "very rare": 3,
+    "Main Pattern": 1,
+    "Traditional English Words": 1,
+    "Very Rare": 1,
+    "Latin": 1,
+    "most verbs": 1,
+    "fire only": 1,
+    "from Old English": 1,
+    "iron": 1,
+    "quire": 1,
+    "Standard Verb Pattern": 1,
+    "to form into a spire": 1,
+    "to make tired": 1,
+    "to exhaust": 1,
+    "from Old English fyr": 1,
+    "fyres": 1,
+    "fyred": 1,
+    "fyering": 1,
+    "Exceptional": 4,
+    "inspiration": 1,
+    "requirement": 1,
+    "acquisition": 1,
+    "exhaust": 1,
+    "fyre": 1,
+    "exhaust verb": 1,
+    "unstressed": 2,
+    "stressed": 11,
+    "to establish": 1,
+    "Marks stress and past participles": 1,
+    "past of find": 1,
+    "before GN": 1,
+    "Stressed": 10,
+    "Verbs": 2,
+    "Consistent": 3,
+    "nouns": 2,
+    "stressed exceptions": 1,
+    "when stress needs clarification": 2,
+    "alternative": 1,
+    "stressed contexts": 2,
+    "verb infinitives": 1,
+    "verbs": 3,
+    "stressed verbs": 1,
+    "after R": 1,
+    "TR": 1,
+    "After R": 1,
+    "cute pattern": 1,
+    "single vowel": 1,
+    "irregular stress patterns": 1,
+    "Stressed Single Vowel": 1,
+    "Irregular Stress": 2,
+    "irregular stress": 1,
+    "see variable patterns": 1,
+    "before two consonants": 2,
+    "basic words": 1,
+    "Stressed Greek Derivatives": 1,
+    "some Latin": 1,
+    "Stressed Basic Words": 1,
+    "basic pattern": 1,
+    "Basic Pattern": 1,
+    "plural": 2,
+    "past tenses": 2,
+    "clarification": 1,
+    "rare": 3,
+    "Most Common": 2,
+    "Irregular Past Tenses": 1,
+    "Unstressed": 2,
+    "at word endings": 1,
+    "derived nouns": 1,
+    "in specific contexts": 2,
+    "Before Two Consonants": 2,
+    "U cannot appear in these positions": 2,
+    "Latin derivatives": 1,
+    "Agent Nouns": 1,
+    "Latin Agents": 1,
+    "Animals": 1,
+    "Family": 1,
+    "Comparatives": 1,
+    "Latin Derivatives": 1,
+    "religious": 1,
+    "Complex Pattern": 1,
+    "most common": 6,
+    "in borrowed words": 1,
+    "from Latin rarus": 1,
+    "ultimately from Latin festus": 1,
+    "Marked Stress": 1,
+    "Rare": 1,
+    "from Old English hrere": 1,
+    "before consonants": 1,
+    "Single Vowel": 1,
+    "Nouns": 1,
+    "Nouns and Verbs": 1,
+    "Stressed Verbs": 1,
+    "Special Cases": 1,
+    "liorier": 1,
+    "lioriest": 1,
+    "either": 1,
+    "liory": 1,
+    "liorer": 1,
+    "liorest": 1,
+    "modal verbs": 1,
+    "Modal Verbs": 1,
+    "book sound": 1,
+    "say": 1,
+    "pay": 1,
+    "stay": 1,
+    "play": 1,
+    "always stressed": 11,
+    "except in compounds": 1,
+    "most common when stressed": 1,
+    "when unstressed": 2,
+    "after certain consonants": 1,
+    "sh": 1,
+    "when stressed": 1,
+    "except before silent E": 1,
+    "singular": 1,
+    "various contexts": 1,
+    "before H": 1,
+    "unstressed before R": 1,
+    "before R": 1,
+    "before N": 1,
+    "before two consonants or as only vowel": 1,
+    "between consonants and vowels": 1,
+    "after Q": 1,
+    "adjectives and adverbs only": 1,
+    "to tell a lie": 1,
+    "TURNED W": 1,
+    "THORN": 1,
+    "voiceless": 1,
+    "LONG S": 1,
+    "special S usage": 1,
+    "g dropped": 1,
+    "g often preserved": 1,
+    "g pronounced": 1,
+    "region": 1,
+    "wine": 1,
+    "person": 1,
+    "Encyclopedia": 1,
+    "Anemia": 1,
+    "Fetus": 1,
+    "Edema": 1,
+    "Estrogen": 1,
+    "to name": 1,
+    "names": 1,
+    "named": 1,
+    "naming": 1,
+    "to pray": 1,
+    "to prey": 1,
+    "outlier": 1,
+    "no progressive form": 1,
+    "might": 1,
+    "s": 3,
+    "es": 1,
+    "adjective": 1,
+    "noun or verb": 1,
     "inclusive": 1,
     "caste": 1,
     "suffix": 2
   },
   "posDistribution": {
-    "v": 66.8,
-    "n": 87.2,
-    "adj": 35.4,
-    "adv": 5.7,
-    "conj": 0.6,
+    "v": 63.8,
+    "n": 83.3,
+    "adj": 33.8,
+    "adv": 5.4,
+    "conj": 0.5,
     "pron": 0.4,
     "prep": 0.5,
     "obs": 0.2,
     "interj": 0.2,
+    "accent also": 0.1,
+    "a person": 0.1,
+    "professional role": 0.1,
+    "a small restaurant": 0.1,
+    "an audio device": 0.1,
+    "a machine for typing": 0.1,
+    "a walking device": 0.1,
+    "computer function": 0.1,
+    "paper product for parties": 0.1,
+    "cleaning product": 0.1,
+    "noun": 0.2,
+    "verb": 0.2,
+    "singular noun and verb form": 0.1,
     "intransitive": 0.1,
     "transitive": 0.1,
     "tr": 0.1,
@@ -153,6 +556,188 @@
     "to toil": 0.1,
     "suff": 0.1,
     "adj m n": 0.1,
+    "clarifies stress placement": 0.1,
+    "shows stress on short I": 0.1,
+    "when Y has this sound": 0.1,
+    "stress on first A": 0.1,
+    "noun stress": 0.1,
+    "in certain positions": 0.1,
+    "usually stressed": 0.1,
+    "depending on position": 0.1,
+    "mouth more open": 0.1,
+    "mouth more closed": 0.1,
+    "always": 0.2,
+    "and before I": 0.1,
+    "E with silent U": 0.1,
+    "before vowels": 0.1,
+    "lengthens vowel": 0.1,
+    "Before Vowels or After Consonants": 0.1,
+    "Between Vowels": 0.1,
+    "between vowels": 0.1,
+    "Initial and Final": 0.1,
+    "Medial": 0.1,
+    "flap": 0.1,
+    "Thorn": 0.1,
+    "in function words": 0.1,
+    "elsewhere": 0.1,
+    "Voiced": 0.1,
+    "Voiceless": 0.1,
+    "H is an etymological remnant": 0.1,
+    "specific words": 0.1,
+    "very rare": 0.2,
+    "Main Pattern": 0.1,
+    "Traditional English Words": 0.1,
+    "Very Rare": 0.1,
+    "Latin": 0.1,
+    "most verbs": 0.1,
+    "fire only": 0.1,
+    "from Old English": 0.1,
+    "iron": 0.1,
+    "quire": 0.1,
+    "Standard Verb Pattern": 0.1,
+    "to form into a spire": 0.1,
+    "to make tired": 0.1,
+    "to exhaust": 0.1,
+    "from Old English fyr": 0.1,
+    "fyres": 0.1,
+    "fyred": 0.1,
+    "fyering": 0.1,
+    "Exceptional": 0.2,
+    "inspiration": 0.1,
+    "requirement": 0.1,
+    "acquisition": 0.1,
+    "exhaust": 0.1,
+    "fyre": 0.1,
+    "exhaust verb": 0.1,
+    "unstressed": 0.1,
+    "stressed": 0.7,
+    "to establish": 0.1,
+    "Marks stress and past participles": 0.1,
+    "past of find": 0.1,
+    "before GN": 0.1,
+    "Stressed": 0.6,
+    "Verbs": 0.1,
+    "Consistent": 0.2,
+    "nouns": 0.1,
+    "stressed exceptions": 0.1,
+    "when stress needs clarification": 0.1,
+    "alternative": 0.1,
+    "stressed contexts": 0.1,
+    "verb infinitives": 0.1,
+    "verbs": 0.2,
+    "stressed verbs": 0.1,
+    "after R": 0.1,
+    "TR": 0.1,
+    "After R": 0.1,
+    "cute pattern": 0.1,
+    "single vowel": 0.1,
+    "irregular stress patterns": 0.1,
+    "Stressed Single Vowel": 0.1,
+    "Irregular Stress": 0.1,
+    "irregular stress": 0.1,
+    "see variable patterns": 0.1,
+    "before two consonants": 0.1,
+    "basic words": 0.1,
+    "Stressed Greek Derivatives": 0.1,
+    "some Latin": 0.1,
+    "Stressed Basic Words": 0.1,
+    "basic pattern": 0.1,
+    "Basic Pattern": 0.1,
+    "plural": 0.1,
+    "past tenses": 0.1,
+    "clarification": 0.1,
+    "rare": 0.2,
+    "Most Common": 0.1,
+    "Irregular Past Tenses": 0.1,
+    "Unstressed": 0.1,
+    "at word endings": 0.1,
+    "derived nouns": 0.1,
+    "in specific contexts": 0.1,
+    "Before Two Consonants": 0.1,
+    "U cannot appear in these positions": 0.1,
+    "Latin derivatives": 0.1,
+    "Agent Nouns": 0.1,
+    "Latin Agents": 0.1,
+    "Animals": 0.1,
+    "Family": 0.1,
+    "Comparatives": 0.1,
+    "Latin Derivatives": 0.1,
+    "religious": 0.1,
+    "Complex Pattern": 0.1,
+    "most common": 0.4,
+    "in borrowed words": 0.1,
+    "from Latin rarus": 0.1,
+    "ultimately from Latin festus": 0.1,
+    "Marked Stress": 0.1,
+    "Rare": 0.1,
+    "from Old English hrere": 0.1,
+    "before consonants": 0.1,
+    "Single Vowel": 0.1,
+    "Nouns": 0.1,
+    "Nouns and Verbs": 0.1,
+    "Stressed Verbs": 0.1,
+    "Special Cases": 0.1,
+    "liorier": 0.1,
+    "lioriest": 0.1,
+    "either": 0.1,
+    "liory": 0.1,
+    "liorer": 0.1,
+    "liorest": 0.1,
+    "modal verbs": 0.1,
+    "Modal Verbs": 0.1,
+    "book sound": 0.1,
+    "say": 0.1,
+    "pay": 0.1,
+    "stay": 0.1,
+    "play": 0.1,
+    "always stressed": 0.7,
+    "except in compounds": 0.1,
+    "most common when stressed": 0.1,
+    "when unstressed": 0.1,
+    "after certain consonants": 0.1,
+    "sh": 0.1,
+    "when stressed": 0.1,
+    "except before silent E": 0.1,
+    "singular": 0.1,
+    "various contexts": 0.1,
+    "before H": 0.1,
+    "unstressed before R": 0.1,
+    "before R": 0.1,
+    "before N": 0.1,
+    "before two consonants or as only vowel": 0.1,
+    "between consonants and vowels": 0.1,
+    "after Q": 0.1,
+    "adjectives and adverbs only": 0.1,
+    "to tell a lie": 0.1,
+    "TURNED W": 0.1,
+    "THORN": 0.1,
+    "voiceless": 0.1,
+    "LONG S": 0.1,
+    "special S usage": 0.1,
+    "g dropped": 0.1,
+    "g often preserved": 0.1,
+    "g pronounced": 0.1,
+    "region": 0.1,
+    "wine": 0.1,
+    "person": 0.1,
+    "Encyclopedia": 0.1,
+    "Anemia": 0.1,
+    "Fetus": 0.1,
+    "Edema": 0.1,
+    "Estrogen": 0.1,
+    "to name": 0.1,
+    "names": 0.1,
+    "named": 0.1,
+    "naming": 0.1,
+    "to pray": 0.1,
+    "to prey": 0.1,
+    "outlier": 0.1,
+    "no progressive form": 0.1,
+    "might": 0.1,
+    "s": 0.2,
+    "es": 0.1,
+    "adjective": 0.1,
+    "noun or verb": 0.1,
     "inclusive": 0.1,
     "caste": 0.1,
     "suffix": 0.1
@@ -233,6 +818,49 @@
       "fire",
       "hail",
       "meow"
+    ],
+    "accent also": [
+      "adding-suffix-ment"
+    ],
+    "a person": [
+      "agent-nouns"
+    ],
+    "professional role": [
+      "agent-nouns"
+    ],
+    "a small restaurant": [
+      "agent-nouns"
+    ],
+    "an audio device": [
+      "agent-nouns"
+    ],
+    "a machine for typing": [
+      "agent-nouns"
+    ],
+    "a walking device": [
+      "agent-nouns"
+    ],
+    "computer function": [
+      "agent-nouns"
+    ],
+    "paper product for parties": [
+      "agent-nouns"
+    ],
+    "cleaning product": [
+      "agent-nouns"
+    ],
+    "noun": [
+      "silent-e",
+      "IPA-aɪɚ",
+      "AY"
+    ],
+    "verb": [
+      "silent-e",
+      "AY",
+      "verb-endings-re"
+    ],
+    "singular noun and verb form": [
+      "silent-e"
     ],
     "intransitive": [
       "rules"
@@ -345,6 +973,601 @@
     "adj m n": [
       "mania"
     ],
+    "clarifies stress placement": [
+      "diacritical-marks"
+    ],
+    "shows stress on short I": [
+      "diacritical-marks"
+    ],
+    "when Y has this sound": [
+      "diacritical-marks"
+    ],
+    "stress on first A": [
+      "diacritical-marks"
+    ],
+    "noun stress": [
+      "diacritical-marks"
+    ],
+    "in certain positions": [
+      "diacritical-marks"
+    ],
+    "usually stressed": [
+      "diacritical-marks",
+      "Î"
+    ],
+    "depending on position": [
+      "diacritical-marks"
+    ],
+    "mouth more open": [
+      "diacritical-marks"
+    ],
+    "mouth more closed": [
+      "diacritical-marks"
+    ],
+    "always": [
+      "Ch",
+      "J",
+      "Sh"
+    ],
+    "and before I": [
+      "G"
+    ],
+    "E with silent U": [
+      "G"
+    ],
+    "before vowels": [
+      "H",
+      "L"
+    ],
+    "lengthens vowel": [
+      "Q"
+    ],
+    "Before Vowels or After Consonants": [
+      "S̃"
+    ],
+    "Between Vowels": [
+      "S̃"
+    ],
+    "between vowels": [
+      "T",
+      "Ћ"
+    ],
+    "Initial and Final": [
+      "T"
+    ],
+    "Medial": [
+      "T"
+    ],
+    "flap": [
+      "T"
+    ],
+    "Thorn": [
+      "Ћ"
+    ],
+    "in function words": [
+      "Ћ"
+    ],
+    "elsewhere": [
+      "Ћ"
+    ],
+    "Voiced": [
+      "Ћ"
+    ],
+    "Voiceless": [
+      "Ћ"
+    ],
+    "H is an etymological remnant": [
+      "ɯ"
+    ],
+    "specific words": [
+      "IPA-aɪ"
+    ],
+    "very rare": [
+      "IPA-aɪ",
+      "IPA-ɛ",
+      "IPA-ʊ"
+    ],
+    "Main Pattern": [
+      "IPA-aɪ"
+    ],
+    "Traditional English Words": [
+      "IPA-aɪ"
+    ],
+    "Very Rare": [
+      "IPA-aɪ"
+    ],
+    "Latin": [
+      "IPA-aɪ"
+    ],
+    "most verbs": [
+      "IPA-aɪɚ"
+    ],
+    "fire only": [
+      "IPA-aɪɚ"
+    ],
+    "from Old English": [
+      "IPA-aɪɚ"
+    ],
+    "iron": [
+      "IPA-aɪɚ"
+    ],
+    "quire": [
+      "IPA-aɪɚ"
+    ],
+    "Standard Verb Pattern": [
+      "IPA-aɪɚ"
+    ],
+    "to form into a spire": [
+      "IPA-aɪɚ"
+    ],
+    "to make tired": [
+      "IPA-aɪɚ"
+    ],
+    "to exhaust": [
+      "IPA-aɪɚ"
+    ],
+    "from Old English fyr": [
+      "IPA-aɪɚ"
+    ],
+    "fyres": [
+      "IPA-aɪɚ"
+    ],
+    "fyred": [
+      "IPA-aɪɚ"
+    ],
+    "fyering": [
+      "IPA-aɪɚ"
+    ],
+    "Exceptional": [
+      "IPA-aɪɚ",
+      "IPA-ɛ",
+      "IPA-ʊ",
+      "EU"
+    ],
+    "inspiration": [
+      "IPA-aɪɚ"
+    ],
+    "requirement": [
+      "IPA-aɪɚ"
+    ],
+    "acquisition": [
+      "IPA-aɪɚ"
+    ],
+    "exhaust": [
+      "IPA-aɪɚ"
+    ],
+    "fyre": [
+      "IPA-aɪɚ"
+    ],
+    "exhaust verb": [
+      "IPA-aɪɚ"
+    ],
+    "unstressed": [
+      "IPA-aʊ",
+      "O"
+    ],
+    "stressed": [
+      "IPA-aʊ",
+      "IPA-eɪ",
+      "IPA-oʊ",
+      "IPA-u",
+      "IPA-æ"
+    ],
+    "to establish": [
+      "IPA-aʊ"
+    ],
+    "Marks stress and past participles": [
+      "IPA-aʊ"
+    ],
+    "past of find": [
+      "IPA-aʊ"
+    ],
+    "before GN": [
+      "IPA-eɪ"
+    ],
+    "Stressed": [
+      "IPA-eɪ",
+      "IPA-i",
+      "IPA-oʊ",
+      "IPA-u",
+      "IPA-ɑr"
+    ],
+    "Verbs": [
+      "IPA-eɪ",
+      "IPA-ɪɚ"
+    ],
+    "Consistent": [
+      "IPA-eɪ",
+      "IPA-i",
+      "IPA-u"
+    ],
+    "nouns": [
+      "IPA-eɪ",
+      "IPA-ɔ"
+    ],
+    "stressed exceptions": [
+      "IPA-eɪ"
+    ],
+    "when stress needs clarification": [
+      "IPA-i",
+      "IPA-ɛ"
+    ],
+    "alternative": [
+      "IPA-oʊ"
+    ],
+    "stressed contexts": [
+      "IPA-oʊ",
+      "IPA-ɪɚ"
+    ],
+    "verb infinitives": [
+      "IPA-oʊ"
+    ],
+    "verbs": [
+      "IPA-oʊ",
+      "IPA-ɛr",
+      "IPA-ɪɚ"
+    ],
+    "stressed verbs": [
+      "IPA-oʊ"
+    ],
+    "after R": [
+      "IPA-u"
+    ],
+    "TR": [
+      "IPA-u"
+    ],
+    "After R": [
+      "IPA-u"
+    ],
+    "cute pattern": [
+      "IPA-u"
+    ],
+    "single vowel": [
+      "IPA-æ"
+    ],
+    "irregular stress patterns": [
+      "IPA-æ"
+    ],
+    "Stressed Single Vowel": [
+      "IPA-æ"
+    ],
+    "Irregular Stress": [
+      "IPA-æ",
+      "IPA-ɪ"
+    ],
+    "irregular stress": [
+      "IPA-æ"
+    ],
+    "see variable patterns": [
+      "IPA-æ"
+    ],
+    "before two consonants": [
+      "IPA-ɑ",
+      "O"
+    ],
+    "basic words": [
+      "IPA-ɑ"
+    ],
+    "Stressed Greek Derivatives": [
+      "IPA-ɑ"
+    ],
+    "some Latin": [
+      "IPA-ɑ"
+    ],
+    "Stressed Basic Words": [
+      "IPA-ɑ"
+    ],
+    "basic pattern": [
+      "IPA-ɑr"
+    ],
+    "Basic Pattern": [
+      "IPA-ɑr"
+    ],
+    "plural": [
+      "IPA-ɑr",
+      "IE"
+    ],
+    "past tenses": [
+      "IPA-ɔ",
+      "O"
+    ],
+    "clarification": [
+      "IPA-ɔ"
+    ],
+    "rare": [
+      "IPA-ɔ",
+      "EU",
+      "circumflex"
+    ],
+    "Most Common": [
+      "IPA-ɔ",
+      "IPA-ɛ"
+    ],
+    "Irregular Past Tenses": [
+      "IPA-ɔ"
+    ],
+    "Unstressed": [
+      "IPA-ɔr",
+      "IPA-ə"
+    ],
+    "at word endings": [
+      "IPA-ɔɪ"
+    ],
+    "derived nouns": [
+      "IPA-ɔɪ"
+    ],
+    "in specific contexts": [
+      "IPA-ə",
+      "U"
+    ],
+    "Before Two Consonants": [
+      "IPA-ə",
+      "IPA-ɪ"
+    ],
+    "U cannot appear in these positions": [
+      "IPA-ə",
+      "O"
+    ],
+    "Latin derivatives": [
+      "IPA-ɚ"
+    ],
+    "Agent Nouns": [
+      "IPA-ɚ"
+    ],
+    "Latin Agents": [
+      "IPA-ɚ"
+    ],
+    "Animals": [
+      "IPA-ɚ"
+    ],
+    "Family": [
+      "IPA-ɚ"
+    ],
+    "Comparatives": [
+      "IPA-ɚ"
+    ],
+    "Latin Derivatives": [
+      "IPA-ɚ"
+    ],
+    "religious": [
+      "IPA-ɚ"
+    ],
+    "Complex Pattern": [
+      "IPA-ɚ"
+    ],
+    "most common": [
+      "IPA-ɛ",
+      "AI",
+      "AU",
+      "EI",
+      "EU"
+    ],
+    "in borrowed words": [
+      "IPA-ɛ"
+    ],
+    "from Latin rarus": [
+      "IPA-ɛr"
+    ],
+    "ultimately from Latin festus": [
+      "IPA-ɛr"
+    ],
+    "Marked Stress": [
+      "IPA-ɛr"
+    ],
+    "Rare": [
+      "IPA-ɛr"
+    ],
+    "from Old English hrere": [
+      "IPA-ɛr"
+    ],
+    "before consonants": [
+      "IPA-ɪ"
+    ],
+    "Single Vowel": [
+      "IPA-ɪ"
+    ],
+    "Nouns": [
+      "IPA-ɪɚ"
+    ],
+    "Nouns and Verbs": [
+      "IPA-ɪɚ"
+    ],
+    "Stressed Verbs": [
+      "IPA-ɪɚ"
+    ],
+    "Special Cases": [
+      "IPA-ɪɚ"
+    ],
+    "liorier": [
+      "IPA-ɪɚ"
+    ],
+    "lioriest": [
+      "IPA-ɪɚ"
+    ],
+    "either": [
+      "IPA-ɪɚ"
+    ],
+    "liory": [
+      "IPA-ɪɚ"
+    ],
+    "liorer": [
+      "IPA-ɪɚ"
+    ],
+    "liorest": [
+      "IPA-ɪɚ"
+    ],
+    "modal verbs": [
+      "IPA-ʊ"
+    ],
+    "Modal Verbs": [
+      "IPA-ʊ"
+    ],
+    "book sound": [
+      "IPA-ʊ"
+    ],
+    "say": [
+      "AI"
+    ],
+    "pay": [
+      "AI"
+    ],
+    "stay": [
+      "AI"
+    ],
+    "play": [
+      "AI"
+    ],
+    "always stressed": [
+      "À",
+      "ÁU",
+      "È",
+      "Ê",
+      "Í"
+    ],
+    "except in compounds": [
+      "Â"
+    ],
+    "most common when stressed": [
+      "E"
+    ],
+    "when unstressed": [
+      "E",
+      "I"
+    ],
+    "after certain consonants": [
+      "EU"
+    ],
+    "sh": [
+      "EU"
+    ],
+    "when stressed": [
+      "I"
+    ],
+    "except before silent E": [
+      "I"
+    ],
+    "singular": [
+      "IE"
+    ],
+    "various contexts": [
+      "O"
+    ],
+    "before H": [
+      "O"
+    ],
+    "unstressed before R": [
+      "O"
+    ],
+    "before R": [
+      "O"
+    ],
+    "before N": [
+      "OÛ"
+    ],
+    "before two consonants or as only vowel": [
+      "U"
+    ],
+    "between consonants and vowels": [
+      "U"
+    ],
+    "after Q": [
+      "UE"
+    ],
+    "adjectives and adverbs only": [
+      "Y"
+    ],
+    "to tell a lie": [
+      "Y"
+    ],
+    "TURNED W": [
+      "special-characters"
+    ],
+    "THORN": [
+      "special-characters"
+    ],
+    "voiceless": [
+      "special-characters"
+    ],
+    "LONG S": [
+      "special-characters"
+    ],
+    "special S usage": [
+      "special-characters"
+    ],
+    "g dropped": [
+      "g-and-gn"
+    ],
+    "g often preserved": [
+      "g-and-gn"
+    ],
+    "g pronounced": [
+      "g-and-gn"
+    ],
+    "region": [
+      "g-and-gn"
+    ],
+    "wine": [
+      "g-and-gn"
+    ],
+    "person": [
+      "greek-ch"
+    ],
+    "Encyclopedia": [
+      "latin-ae"
+    ],
+    "Anemia": [
+      "latin-ae"
+    ],
+    "Fetus": [
+      "latin-ae"
+    ],
+    "Edema": [
+      "latin-ae"
+    ],
+    "Estrogen": [
+      "latin-ae"
+    ],
+    "to name": [
+      "intro"
+    ],
+    "names": [
+      "intro"
+    ],
+    "named": [
+      "intro"
+    ],
+    "naming": [
+      "intro"
+    ],
+    "to pray": [
+      "verbs-ending-in-aie-and-eie"
+    ],
+    "to prey": [
+      "verbs-ending-in-aie-and-eie"
+    ],
+    "outlier": [
+      "verbs-ending-in-aie-and-eie"
+    ],
+    "no progressive form": [
+      "verbs-ending-in-aie-and-eie"
+    ],
+    "might": [
+      "verbs-ending-in-aie-and-eie"
+    ],
+    "s": [
+      "verbs-ending-in-cte",
+      "verbs-ending-in-gue-or-ghe",
+      "verbs-ending-in-q"
+    ],
+    "es": [
+      "verbs-ending-in-q"
+    ],
+    "adjective": [
+      "tildes"
+    ],
+    "noun or verb": [
+      "verb-endings-re"
+    ],
     "inclusive": [
       "pronouns"
     ],
@@ -359,6 +1582,11 @@
   "filesWithoutPos": [
     "alphabet.txt",
     "game.txt",
+    "ending-in-ke.txt",
+    "ending-in-le.txt",
+    "ending-in-nk-or-ck.txt",
+    "ending-in-ote.txt",
+    "ending-in-re.txt",
     "rules.txt",
     "bet.txt",
     "bid.txt",
@@ -471,6 +1699,99 @@
     "ending-in-ote.txt",
     "ending-in-re.txt",
     "ending-in-îre.txt",
+    "alphabet.txt",
+    "B.txt",
+    "B̃.txt",
+    "C.txt",
+    "C̃.txt",
+    "Ç.txt",
+    "D.txt",
+    "ḑ.txt",
+    "F.txt",
+    "G̃.txt",
+    "H̃.txt",
+    "K.txt",
+    "Lh.txt",
+    "M.txt",
+    "M̃.txt",
+    "N.txt",
+    "Ñ.txt",
+    "P.txt",
+    "P̃.txt",
+    "R.txt",
+    "Long-S.txt",
+    "S.txt",
+    "ţ.txt",
+    "V.txt",
+    "X.txt",
+    "X̃.txt",
+    "Z.txt",
+    "Z̃.txt",
+    "A.txt",
+    "AE.txt",
+    "AÊ.txt",
+    "AO.txt",
+    "Á.txt",
+    "ÁI.txt",
+    "EY.txt",
+    "OA.txt",
+    "OI.txt",
+    "OY.txt",
+    "OU.txt",
+    "UI.txt",
+    "UY.txt",
+    "A-series.txt",
+    "E-series.txt",
+    "I-series.txt",
+    "O-series.txt",
+    "R-vowels.txt",
+    "U-series.txt",
+    "Y-series.txt",
+    "index.txt",
+    "IPA-key.txt",
+    "comparison-with-english.txt",
+    "goals.txt",
+    "overview.txt",
+    "pronunciation-standard.txt",
+    "latin-atus.txt",
+    "english-ize.txt",
+    "english-ous.txt",
+    "english-silent-b.txt",
+    "english-ves.txt",
+    "greek-graphy.txt",
+    "greek-ology.txt",
+    "greek-ph.txt",
+    "greek-phobia.txt",
+    "greek-ps.txt",
+    "greek-th.txt",
+    "greek-x.txt",
+    "irregular-plurals.txt",
+    "latin-ion.txt",
+    "old-english-kn.txt",
+    "double-s-pairs.txt",
+    "intro.txt",
+    "no-change.txt",
+    "verbs-ending-in-ke.txt",
+    "verbs-ending-in-double-consonants.txt",
+    "verbs-ending-in-îe.txt",
+    "verbs-ending-in-îhe-and-yhe.txt",
+    "verbs-ending-in-le.txt",
+    "compound-words.txt",
+    "lation-ion.txt",
+    "acute.txt",
+    "ar-ending-for-nouns-and-adjectives.txt",
+    "assibilation.txt",
+    "capitalization.txt",
+    "cedilla.txt",
+    "er-ending-for-adjectives-and-conjunctions.txt",
+    "grave.txt",
+    "kw.txt",
+    "punctuation.txt",
+    "stress-patterns.txt",
+    "syllabification.txt",
+    "thorn.txt",
+    "vowels-before-v-thorn-x.txt",
+    "when-o-replaces-u.txt",
     "recommit.txt",
     "seem.txt",
     "sound_map.txt"

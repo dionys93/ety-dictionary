@@ -1,8 +1,8 @@
 {
-  "totalFiles": 1718,
-  "processedFiles": 1718,
+  "totalFiles": 1891,
+  "processedFiles": 1891,
   "failedFiles": 0,
-  "uniqueRoots": 1520,
+  "uniqueRoots": 1525,
   "rootsByLanguage": {
     "L": 578,
     "OE": 646,
@@ -37,6 +37,8 @@
     "PS": 1,
     "TA": 1,
     "Narragansett": 1,
+    "Latin": 4,
+    "Middle": 1,
     "Algonquian": 2,
     "EGY": 1,
     "GA": 1,
@@ -53,7 +55,7 @@
     "TIB": 1,
     "MS": 1
   },
-  "missingRoots": 23,
+  "missingRoots": 191,
   "roots": [
     {
       "root": "ad + bannum",
@@ -11705,6 +11707,46 @@
       "modernWords": [
         "otherwise"
       ]
+    },
+    {
+      "root": "IPA /ɛr/ — \"SQUARE\" VOWEL",
+      "language": "Latin",
+      "files": [
+        "IPA-ɛr.txt"
+      ],
+      "modernWords": []
+    },
+    {
+      "root": "IPA /ɪər/ — \"NEAR\" VOWEL",
+      "language": "Middle",
+      "files": [
+        "IPA-ɪɚ.txt"
+      ],
+      "modernWords": []
+    },
+    {
+      "root": "AE",
+      "language": "Latin",
+      "files": [
+        "AE.txt"
+      ],
+      "modernWords": []
+    },
+    {
+      "root": "EI/ÉI",
+      "language": "Latin",
+      "files": [
+        "EI.txt"
+      ],
+      "modernWords": []
+    },
+    {
+      "root": "The \"-ar\" Ending in Inglish",
+      "language": "Latin",
+      "files": [
+        "ar-ending-for-nouns-and-adjectives.txt"
+      ],
+      "modernWords": []
     },
     {
       "root": "pak, pake",

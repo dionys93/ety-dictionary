@@ -3,7 +3,10 @@ import * as path from 'path'
 import { Result, ok, err, fold } from '../../core'
 import { log, logError, logStart, logCompletion } from '../../utils'
 import { pipelines } from '../../pipeline'
-import { findTextFiles } from '../../io/file-operations'
+import { 
+  findTextFilesInAlphabeticalDirs, 
+  findSampleFilesInAlphabeticalDirs 
+} from '../../io/alpha-file-finder'
 import {
   createFileProcessor,
   createStreamingFileProcessor,
@@ -95,6 +98,7 @@ function createDryRunProcessor(pipeline: any) {
 
 /**
  * Handle processing a specific file
+ * Note: This will warn if the file is not in an alphabetical directory
  */
 function handleSpecificFile(file: string, sourceDir: string): Result<string[]> {
   const specificFilePath = path.isAbsolute(file) 
@@ -103,20 +107,23 @@ function handleSpecificFile(file: string, sourceDir: string): Result<string[]> {
   
   return fold(
     () => err(new Error(`File not found: ${specificFilePath}`)),
-    (exists: boolean) => exists 
-      ? ok([specificFilePath])
-      : err(new Error(`File not found: ${specificFilePath}`))
+    (exists: boolean) => {
+      if (!exists) {
+        return err(new Error(`File not found: ${specificFilePath}`))
+      }
+      
+      // Check if the file is within an alphabetical directory structure
+      const relativePath = path.relative(sourceDir, specificFilePath)
+      const firstDir = relativePath.split(path.sep)[0]
+      
+      // Warn if not in alphabetical directory but still process it (user explicitly requested this file)
+      if (firstDir && firstDir.length !== 1 || !/^[a-zA-Z]$/.test(firstDir)) {
+        log(`Warning: File is not in an alphabetical directory. Processing anyway since explicitly requested.`)
+      }
+      
+      return ok([specificFilePath])
+    }
   )(io.pathChecker(specificFilePath))
-}
-
-/**
- * Find sample files for dry run mode
- */
-function findSampleFiles(sourceDir: string, sampleCount: number): Result<string[]> {
-  return fold(
-    (error: Error) => err(error),
-    (files: string[]) => ok(files.slice(0, sampleCount))
-  )(findTextFiles(sourceDir))
 }
 
 /**
@@ -158,6 +165,7 @@ function processFilesInDryRun(
 
 /**
  * Handle dry run mode execution
+ * Now uses alphabetical directory filtering
  */
 function handleDryRun(args: ProcessArgs, sourceDir: string, selectedPipeline: any): void {
   const dryRunProcessor = createDryRunProcessor(selectedPipeline)
@@ -165,8 +173,8 @@ function handleDryRun(args: ProcessArgs, sourceDir: string, selectedPipeline: an
   const filesToProcessResult = args.file
     ? handleSpecificFile(args.file, sourceDir)
     : args.sample > 0
-    ? findSampleFiles(sourceDir, args.sample)
-    : findTextFiles(sourceDir)
+    ? findSampleFilesInAlphabeticalDirs(sourceDir, args.sample)
+    : findTextFilesInAlphabeticalDirs(sourceDir)
   
   fold(
     (error: Error) => {
@@ -174,11 +182,11 @@ function handleDryRun(args: ProcessArgs, sourceDir: string, selectedPipeline: an
     },
     (filesToProcess: string[]) => {
       if (filesToProcess.length === 0) {
-        log(`No text files found in ${sourceDir}`)
+        log(`No text files found in alphabetical directories under ${sourceDir}`)
         return
       }
       
-      log(`DRY RUN: Processing ${filesToProcess.length} file(s)`)
+      log(`DRY RUN: Processing ${filesToProcess.length} file(s) from alphabetical directories`)
       
       if (args.preview || filesToProcess.length <= 3) {
         processFilesInDryRun(filesToProcess, sourceDir, dryRunProcessor)
@@ -268,18 +276,28 @@ export function createProcessCommand(): Command {
     
     printHelp() {
       log(`Usage: etymology process <language> [pipeline] [options]`)
+      log(``)
+      log(`Convert etymology text files to JSON. Only processes files within`)
+      log(`single-character alphabetical directories (a-z, A-Z) at the root level.`)
+      log(``)
       log(`Options:`)
       log(`  --dry-run, -d                 Run without creating files`)
       log(`  --sample N, -s N              Process N sample files in dry run mode`)
       log(`  --file PATH, -f PATH          Process a specific file`)
       log(`  --preview, -p                 Show a preview of the output`)
+      log(``)
       log(`Examples:`)
       log(`  etymology process inglish                       Process all files with standard pipeline`)
       log(`  etymology process inglish compact               Process all files with compact pipeline`)
       log(`  etymology process inglish --dry-run --sample 3  Dry run with 3 sample files`)
-      log(`  etymology process inglish -d -p -f test.txt     Preview specific file`)
+      log(`  etymology process inglish -d -p -f a/test.txt   Preview specific file`)
+      log(``)
       log(`Available pipeline types: ${Object.keys(pipelines).join(', ')}`)
-      log(`\nConfigured paths:`)
+      log(``)
+      log(`Note: Special directories like 'grammar', 'pronouns' etc. are automatically`)
+      log(`      skipped. Only /a/, /b/, /c/ ... /z/ directories are processed.`)
+      log(``)
+      log(`Configured paths:`)
       log(`  Source base: ${DEFAULT_PATHS.base.dataText}`)
       log(`  Output base: ${DEFAULT_PATHS.base.dataJson}`)
     }

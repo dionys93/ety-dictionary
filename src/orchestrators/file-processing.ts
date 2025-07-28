@@ -5,6 +5,7 @@
 // where each orchestrator is built by composing smaller, focused functions.
 
 import * as path from 'path'
+import * as fs from 'fs'
 import { 
   Result, 
   ok, 
