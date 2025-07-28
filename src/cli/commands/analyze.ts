@@ -7,6 +7,25 @@ import { DEFAULT_PATHS, mapLanguageToPath, posMap } from '../../config'
 import { Command, AnalyzeArgs } from '../types'
 import { io } from '../shared/io-instances'
 
+// Part of speech normalization mapping - matches summarize.ts
+const POS_ABBREVIATIONS: Record<string, string> = {
+  "m n": "n",        // masculine noun -> just use 'n' for noun
+  "f n": "n",        // feminine noun -> just use 'n' for noun
+  "n": "n",          // noun
+  "v": "v",          // verb
+  "intr v": "v",     // intransitive verb -> just use 'v'
+  "tr v": "v",       // transitive verb -> just use 'v'
+  "conj": "conj",    // conjunction
+  "adj": "adj",      // adjective
+  "prep": "prep",    // preposition
+  "pron": "pron",    // pronoun
+  "adv": "adv",      // adverb
+  "suff": "suff",    // suffix
+  "pref": "pref",    // prefix
+  "interj": "interj", // interjection
+  "obs": "obs"       // obsolete
+}
+
 /**
  * Parse command line arguments for the analyze command
  */
@@ -42,7 +61,7 @@ function parseAnalyzeArgs(args: string[]): AnalyzeArgs {
   return parsed
 }
 
-// Analysis extraction functions
+// Analysis extraction functions with normalization
 const extractPartOfSpeech = (line: string): string[] => {
   try {
     const posRegex = /\(([\w\s,]+)\)$/
@@ -50,7 +69,12 @@ const extractPartOfSpeech = (line: string): string[] => {
     
     if (!match) return []
     
-    return match[1].split(',').map(p => p.trim())
+    // Split by comma and normalize using POS_ABBREVIATIONS
+    return match[1].split(',').map(p => {
+      const trimmed = p.trim()
+      // Check if it's a known part of speech and normalize it
+      return POS_ABBREVIATIONS[trimmed] || trimmed
+    })
   } catch {
     return []
   }
@@ -114,7 +138,7 @@ const extractModernEnglishWords = (content: string): string[] => {
   }
 }
 
-// Processing functions
+// Processing functions that match summarize.ts behavior
 function processFileForPos(content: string, fileName: string) {
   const lines = content.split('\n')
   const posTagsInFile = new Set<string>()
@@ -162,6 +186,7 @@ function processFileForRoots(content: string, fileName: string) {
 
 /**
  * Analyze part-of-speech data from files
+ * Matches the output format of summarize.ts
  */
 function analyzePosData(files: Array<{path: string, content: string}>, verbose: boolean) {
   log("Analyzing part of speech data...")
@@ -202,6 +227,7 @@ function analyzePosData(files: Array<{path: string, content: string}>, verbose: 
     posDistribution[pos] = parseFloat(((count / Math.max(totalPosEntries, 1)) * 100).toFixed(1))
   }
   
+  // Get full names from posMap
   const posFullNames: Record<string, string> = {}
   for (const [shortPos, fullName] of Object.entries(posMap)) {
     posFullNames[shortPos] = fullName
@@ -242,6 +268,7 @@ function analyzePosData(files: Array<{path: string, content: string}>, verbose: 
 
 /**
  * Analyze root words from files
+ * Matches the output format of summarize.ts
  */
 function analyzeRootWords(files: Array<{path: string, content: string}>, verbose: boolean) {
   log("Analyzing root words...")
@@ -316,6 +343,7 @@ function logPosResults(summary: any): void {
   for (const pos of sortedPos) {
     const count = summary.posCounts[pos]
     const percentage = summary.posDistribution[pos]
+    // For normalized POS, show the full name if available
     const fullName = posMap[pos] || pos
     log(`- ${pos}: ${count} entries (${percentage}%) - ${fullName}`)
   }

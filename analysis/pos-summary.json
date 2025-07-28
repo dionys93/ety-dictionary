@@ -6,16 +6,12 @@
   "entriesWithMultiplePos": 277,
   "uniquePartsOfSpeech": [
     "v",
-    "f n",
-    "adj",
     "n",
-    "m n",
+    "adj",
     "adv",
     "conj",
     "pron",
     "prep",
-    "intr v",
-    "tr v",
     "obs",
     "interj",
     "intransitive",
@@ -60,17 +56,13 @@
     "suffix"
   ],
   "posCounts": {
-    "v": 1059,
-    "f n": 424,
+    "v": 1069,
+    "n": 1396,
     "adj": 567,
-    "n": 156,
-    "m n": 1023,
     "adv": 91,
     "conj": 9,
     "pron": 7,
     "prep": 8,
-    "intr v": 10,
-    "tr v": 6,
     "obs": 3,
     "interj": 3,
     "intransitive": 1,
@@ -115,17 +107,13 @@
     "suffix": 2
   },
   "posDistribution": {
-    "v": 66.1,
-    "f n": 26.5,
+    "v": 66.8,
+    "n": 87.2,
     "adj": 35.4,
-    "n": 9.7,
-    "m n": 63.9,
     "adv": 5.7,
     "conj": 0.6,
     "pron": 0.4,
     "prep": 0.5,
-    "intr v": 0.6,
-    "tr v": 0.4,
     "obs": 0.2,
     "interj": 0.2,
     "intransitive": 0.1,
@@ -194,7 +182,7 @@
       "abolish",
       "abrade"
     ],
-    "f n": [
+    "n": [
       "abandon",
       "abase",
       "aberrant",
@@ -207,20 +195,6 @@
       "abolish",
       "abrade",
       "absurd"
-    ],
-    "n": [
-      "aberrant",
-      "abolish",
-      "abrade",
-      "ache",
-      "aid"
-    ],
-    "m n": [
-      "accede",
-      "act",
-      "adamant",
-      "adjective",
-      "admiral"
     ],
     "adv": [
       "act",
@@ -249,20 +223,6 @@
       "like",
       "long",
       "oppose"
-    ],
-    "intr v": [
-      "burn",
-      "creep",
-      "hang",
-      "smell",
-      "spill"
-    ],
-    "tr v": [
-      "burn",
-      "creep",
-      "hang",
-      "smell",
-      "spill"
     ],
     "obs": [
       "defer",
