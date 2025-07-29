@@ -145,23 +145,22 @@ etymology cross-reference inglish german --threshold 0.8
 ### Data Flow
 
 ```
-Raw Text Files
+data-text/
      ↓
-[Alphabetical Directory Filter]  ← Only /a/, /b/, ... /z/
+Language Directory
      ↓
-Text Transformer
+Directory Classifier
      ↓
-Line Parser
-     ↓
-Entry Grouper
-     ↓
-Name Extractor
-     ↓
-Entry Transformer
-     ↓
-Custom Transformers (optional)
-     ↓
-Structured JSON Output
+┌─────────────────────┬──────────────────┬─────────────────┐
+│   Alphabetical      │     Grammar      │   Orthography   │
+│   (/a/, /b/, ...)  │    (/grammar/)   │ (/orthography/) │
+└──────────┬──────────┴────────┬─────────┴────────┬────────┘
+           ↓                    ↓                   ↓
+    Etymology Pipeline    Grammar Pipeline   Orthography Pipeline
+           ↓                    ↓                   ↓
+      WordEntry[]         GrammarRule[]    OrthographyPattern[]
+           ↓                    ↓                   ↓
+                    Structured JSON Output
 ```
 
 ### Directory Structure
