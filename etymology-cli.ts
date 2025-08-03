@@ -5,11 +5,13 @@ import { ensurePathStructure } from './src/config'
 import { Command } from './src/cli/types'
 import { createProcessCommand } from './src/cli/commands/process'
 import { createAnalyzeCommand } from './src/cli/commands/analyze'
+import { createHistoriesCommand } from './src/cli/commands/create-histories'
 
 // Create command registry
 const commands: Record<string, Command> = {
   process: createProcessCommand(),
-  analyze: createAnalyzeCommand()
+  analyze: createAnalyzeCommand(),
+  'create-histories': createHistoriesCommand()
 }
 
 /**

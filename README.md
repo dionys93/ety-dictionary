@@ -37,6 +37,9 @@ etymology process inglish
 # Analyze language data
 etymology analyze inglish --mode both
 
+# Create history files from Inglish
+etymology create-histories
+
 # Get help
 etymology --help
 etymology <command> --help
@@ -73,16 +76,31 @@ etymology analyze inglish --mode pos
 etymology analyze inglish --mode roots
 ```
 
-### Planned Commands
-
-#### `extract-pos` - Extract POS-tagged stanzas
+#### `create-histories` - Extract Inglish POS-tagged stanzas
 ```bash
-# Extract stanzas with part-of-speech indicators
-etymology extract-pos inglish output-dir
+# Create history files from Inglish etymology data
+etymology create-histories
 
 # Only process specific directories
-etymology extract-pos inglish output-dir --dirs a,b,c
+etymology create-histories --dirs a,b,c
+
+# Dry run to preview what would be extracted
+etymology create-histories --dry-run --verbose
 ```
+
+**Fixed paths**:
+- Source: `data-text/inglish`
+- Output: `data-text/histories`
+
+**Output**: Creates files named `<word>_<pos>.txt` in the histories directory structure.
+For example:
+- `histories/a/abandon_v.txt` for the verb "abandon"
+- `histories/b/butter_n.txt` for the noun "butter"
+- `histories/q/quick_adj.txt` for the adjective "quick"
+
+The line containing the part-of-speech indicator is removed from the output. If `[ME]`/`[MI]` and `(pos)` are on the same line, only the `(pos)` part is removed.
+
+### Planned Commands
 
 #### `validate` - Data quality validation
 ```bash
@@ -337,14 +355,13 @@ npm run type-check
 
 # Test a specific command
 etymology process inglish --dry-run --sample 5
-```
 
 ## Roadmap
 
 - [x] Core pipeline architecture
 - [x] CLI framework
 - [x] Basic commands (process, analyze)
-- [ ] POS extraction command
+- [x] POS extraction command (create-histories)
 - [ ] Validation suite
 - [ ] Quick stats command
 - [ ] Format conversion

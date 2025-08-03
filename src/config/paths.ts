@@ -22,6 +22,7 @@ export interface PathConfig {
     readonly dataText: string
     readonly dataJson: string
     readonly analysis: string
+    readonly histories: string  // Fixed location for extract-pos output
   }
   readonly languages: {
     readonly inglish: string
@@ -45,7 +46,8 @@ export const DEFAULT_PATHS: PathConfig = {
   base: {
     dataText: 'data-text',
     dataJson: 'data-json', 
-    analysis: 'analysis'
+    analysis: 'analysis',
+    histories: 'data-text/histories'  // Fixed output location for POS extraction
   },
   languages: {
     inglish: 'data-text/inglish'
@@ -80,6 +82,9 @@ export const buildAnalysisPath = (filename: string): string =>
 // Build test output file path
 export const buildTestPath = (filename: string): string =>
   path.join(DEFAULT_PATHS.test.output, filename)
+
+// Get the fixed histories output path
+export const getHistoriesPath = (): string => DEFAULT_PATHS.base.histories
 
 /**
  * Safe path operations that return Result types for error handling
@@ -132,6 +137,15 @@ export const getTestPaths = () => ({
   output: DEFAULT_PATHS.test.output,
   sampleFiles: DEFAULT_PATHS.test.sampleFiles,
   buildTestFile: (filename: string) => buildTestPath(filename)
+})
+
+/**
+ * Get histories-related paths for POS extraction
+ */
+export const getHistoriesPaths = () => ({
+  directory: DEFAULT_PATHS.base.histories,
+  exists: () => pathExists(DEFAULT_PATHS.base.histories),
+  buildSubdir: (subdir: string) => path.join(DEFAULT_PATHS.base.histories, subdir)
 })
 
 /**
@@ -191,7 +205,8 @@ export const createPathConfigForEnvironment = (env: 'development' | 'test' | 'pr
           ...basePaths.base,
           dataText: 'test-data/text',
           dataJson: 'test-data/json',
-          analysis: 'test-data/analysis'
+          analysis: 'test-data/analysis',
+          histories: 'test-data/histories'
         }
       }
     case 'production':
@@ -201,6 +216,7 @@ export const createPathConfigForEnvironment = (env: 'development' | 'test' | 'pr
         base: {
           ...basePaths.base,
           analysis: 'dist/analysis'
+          // histories stays the same in production
         }
       }
     default:
@@ -226,7 +242,7 @@ export const ensurePathStructure = (): Result<string[]> => {
   const createdPaths: string[] = []
   
   try {
-    // Ensure base directories exist (data-text, data-json, analysis)
+    // Ensure base directories exist (data-text, data-json, analysis, histories)
     Object.values(DEFAULT_PATHS.base).forEach(dir => {
       ensureDirExists(dir)
       createdPaths.push(dir)
