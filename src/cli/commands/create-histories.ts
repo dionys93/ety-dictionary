@@ -5,7 +5,7 @@ import { Result, ok } from '../../core'
 import { log } from '../../utils'
 import { getHistoriesPaths, DEFAULT_PATHS } from '../../config'
 import { Command } from '../types'
-import { extractPosCore } from './extract-pos'
+import { extractPosCore } from '../../transformers/extract-pos'
 
 /**
  * Parse command line arguments for create-histories
