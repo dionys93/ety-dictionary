@@ -1,7 +1,7 @@
 // src/cli/commands/extract-pos.ts
 // Extract stanzas with part-of-speech indicators into separate files
 import * as path from 'path'
-import { Result, ok, err, fold } from '../../core'
+import { Result, ok, err, fold } from '../core'
 import { 
   log, 
   logError, 
@@ -13,14 +13,14 @@ import {
   removePOSFromLine,
   hasLanguageTag,
   hasMEorMITag
-} from '../../utils'
-import { PATTERNS } from '../../config'
-import { parseLanguageOrigin } from '../../transformers'
-import { mapLanguageToPath } from '../../config'
-import { Command } from '../types'
-import { io } from '../shared/io-instances'
-import { createSafeFileWriter } from '../../io/file-operations'
-import { findTextFilesInAlphabeticalDirs } from '../../io/alpha-file-finder'
+} from '../utils'
+import { PATTERNS } from '../config'
+import { parseLanguageOrigin } from '../transformers'
+import { mapLanguageToPath } from '../config'
+import { Command } from '../cli/types'
+import { io } from '../cli/shared/io-instances'
+import { createSafeFileWriter } from '../io/file-operations'
+import { findTextFilesInAlphabeticalDirs } from '../io/alpha-file-finder'
 
 // Part of speech mapping - keeping this local since reverse mapping isn't worth it
 const POS_ABBREVIATIONS: Record<string, string> = {
