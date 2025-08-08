@@ -1,7 +1,6 @@
 // etymology-cli.ts
 import { fold } from './src/core'
 import { log, logError } from './src/utils'
-import { ensurePathStructure } from './src/config'
 import { Command } from './src/cli/types'
 import { createProcessCommand } from './src/cli/commands/process'
 import { createAnalyzeCommand } from './src/cli/commands/analyze'
@@ -54,33 +53,18 @@ function main() {
     process.exit(0)
   }
   
-  // Setup directory structure first
-  const setupResult = ensurePathStructure()
+  // Execute command directly - no directory setup
+  const result = commands[command].execute(commandArgs)
   
   fold(
     (error: Error) => {
-      logError(`Failed to setup directory structure: ${error.message}`)
+      logError(`Command failed: ${error.message}`)
       process.exit(1)
     },
-    (createdPaths: string[]) => {
-      if (createdPaths.length > 0) {
-        log(`Ensured directory structure: ${createdPaths.join(', ')}`)
-      }
-      
-      // Execute command
-      const result = commands[command].execute(commandArgs)
-      
-      fold(
-        (error: Error) => {
-          logError(`Command failed: ${error.message}`)
-          process.exit(1)
-        },
-        () => {
-          process.exit(0)
-        }
-      )(result)
+    () => {
+      process.exit(0)
     }
-  )(setupResult)
+  )(result)
 }
 
 // Run if called directly
