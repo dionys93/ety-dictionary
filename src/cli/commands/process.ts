@@ -9,13 +9,13 @@ import {
 } from '../../io/alpha-file-finder'
 import {
   createFileProcessor,
-  createStreamingFileProcessor,
   createAlphabeticalDirectoryProcessor,
   ProcessingSummary
 } from '../../orchestrators/file-processing'
 import { DEFAULT_PATHS, mapLanguageToPath } from '../../config'
 import { Command, ProcessArgs } from '../types'
 import { io } from '../shared/io-instances'
+import { convertText } from '../../processors/file-processor'
 
 /**
  * Parse command line arguments for the process command
@@ -82,18 +82,30 @@ function parseProcessArgs(args: string[]): ProcessArgs {
 
 /**
  * Create a processor for dry run mode that outputs to console
+ * Uses the convertText function directly to ensure proper entry splitting
  */
 function createDryRunProcessor(pipeline: any) {
-  const processor = createStreamingFileProcessor(
-    io.reader,
-    pipeline,
-    (_path: string, content: string) => {
-      log(content)
-      return ok(undefined)
-    }
-  )
+  const converter = convertText(pipeline)
   
-  return processor
+  return function processDryRun(filePath: string): Result<void> {
+    const fileName = path.basename(filePath)
+    
+    // Read file
+    const readResult = io.reader(filePath)
+    
+    return fold(
+      (error: Error) => err(error),
+      (content: string) => {
+        // Convert using the same logic as normal mode
+        const jsonData = converter(content, fileName)
+        
+        // Output to console
+        log(JSON.stringify(jsonData, null, 2))
+        
+        return ok(undefined)
+      }
+    )(readResult)
+  }
 }
 
 /**
@@ -139,13 +151,7 @@ function processFilesInDryRun(
   files.forEach((file) => {
     log(`\nFile: ${path.relative(sourceDir, file)}`)
     
-    const processResult = processor(
-      file,
-      'dry-run-output.json',
-      (entry) => {
-        log(JSON.stringify(entry, null, 2))
-      }
-    )
+    const processResult = processor(file)
     
     fold(
       (error: Error) => {

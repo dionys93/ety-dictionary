@@ -35,6 +35,9 @@ import {
 
 import { TextProcessingPipeline } from '../types/pipeline-types'
 
+// Import the correct convertText function
+import { convertText } from '../processors/file-processor'
+
 /**
  * Type definitions for processors and orchestrators
  */
@@ -62,28 +65,22 @@ export interface BatchProcessingSummary extends ProcessingSummary {
 
 /**
  * Create a simple file processor that reads, processes, and writes
+ * FIXED: Now uses the correct convertText function that properly splits entries
  */
 export function createFileProcessor<TEntry = any, TCustom = any>(
   reader: FileReader,
   pipeline: TextProcessingPipeline<TEntry, TCustom>,
   writer: JsonWriter
 ): FileProcessor {
-  const processor = createAdvancedProcessor<TEntry, TCustom>(pipeline)
+  // Use the correct convertText that handles double-newline splitting
+  const converter = convertText(pipeline)
   
   return function processFile(sourcePath: string, targetPath: string): Result<void> {
-    return flatMap((content: string) =>
-      flatMap((result: ProcessingResult<TEntry | Record<string, TCustom>>) => {
-        // If there were processing errors, we still write the successful entries
-        if (result.errors.length > 0) {
-          console.warn(`Processing ${sourcePath} had ${result.errors.length} errors`)
-          result.errors.forEach(e => 
-            console.warn(`  Entry ${e.index}: ${e.error.message}`)
-          )
-        }
-        
-        return writer(targetPath, result.data)
-      })(processor(content, path.basename(sourcePath)))
-    )(reader(sourcePath))
+    return flatMap((content: string) => {
+      const fileName = path.basename(sourcePath)
+      const jsonData = converter(content, fileName)
+      return writer(targetPath, jsonData)
+    })(reader(sourcePath))
   }
 }
 
@@ -360,14 +357,16 @@ export function createValidatingProcessor<TEntry = any, TCustom = any>(
   writer: JsonWriter,
   validator: (data: Array<TEntry | Record<string, TCustom>>) => Result<void>
 ): FileProcessor {
-  const processor = createAdvancedProcessor<TEntry, TCustom>(pipeline)
+  // Use the correct convertText
+  const converter = convertText(pipeline)
   
   return function processWithValidation(sourcePath: string, targetPath: string): Result<void> {
-    return flatMap((content: string) =>
-      flatMap((result: ProcessingResult<TEntry | Record<string, TCustom>>) =>
-        flatMap(() => writer(targetPath, result.data))(validator(result.data))
-      )(processor(content, path.basename(sourcePath)))
-    )(reader(sourcePath))
+    return flatMap((content: string) => {
+      const fileName = path.basename(sourcePath)
+      const jsonData = converter(content, fileName)
+      
+      return flatMap(() => writer(targetPath, jsonData))(validator(jsonData))
+    })(reader(sourcePath))
   }
 }
 

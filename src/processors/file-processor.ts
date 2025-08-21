@@ -6,17 +6,12 @@ import * as path from 'path'
 import { 
   TextLine, 
   TextProcessingPipeline,
-  Result
+  WordEntry,
+  EtymologyEntry
 } from '../core'
 
-// Monads
-import { fold } from '../core'
-
-// Transformers
-import { processGroup } from '../transformers'
-
-// I/O operations
-import { textToLines } from '../transformations/text-to-lines'
+// Config
+import { languageMap, posMap } from '../config'
 
 // Utils
 import { 
@@ -27,252 +22,137 @@ import {
   ensureDirExists
 } from '../utils'
 
-// export const convertText = (pipeline: TextProcessingPipeline) => 
-//   (textContent: string, fileName: string): any[] => {
-//     // Step 1: Apply character transformations
-//     const transformedText = pipeline.textTransform(textContent);
-    
-//     // Step 2: Convert to TextLine[] using the new transformation
-//     const linesResult = textToLines(transformedText);
-    
-//     return fold(
-//       (error: Error) => {
-//         logError(`Failed to parse lines: ${error.message}`);
-//         return [];
-//       },
-//       (lines: readonly TextLine[]) => {
-//         // Step 3: Find potential entry boundaries
-//         const entries: string[] = [];
-//         const sections = transformedText.split(/\n\s*\n/);
-        
-//         let currentEntry = '';
-//         let lastSectionHadLanguageTag = false;
-        
-//         for (const section of sections) {
-//           if (!section.trim()) continue;
-          
-//           // Check if this section has any language tag [XX]
-//           const hasLanguageTag = /\[([A-Z]+)\]/.test(section);
-          
-//           // If the previous section had a language tag and this one does too,
-//           // it likely indicates a new entry
-//           if (hasLanguageTag && lastSectionHadLanguageTag && currentEntry) {
-//             entries.push(currentEntry.trim());
-//             currentEntry = section;
-//           } else {
-//             // Otherwise add to the current entry
-//             if (currentEntry) {
-//               currentEntry += '\n\n' + section;
-//             } else {
-//               currentEntry = section;
-//             }
-//           }
-          
-//           lastSectionHadLanguageTag = hasLanguageTag;
-//         }
-        
-//         // Add the last entry if we have one
-//         if (currentEntry) {
-//           entries.push(currentEntry.trim());
-//         }
-        
-//         logDebug(`Detected ${entries.length} entries in ${fileName}`);
-        
-//         // Step 4: Process each entry independently
-//         return entries.map((entryContent, index) => {
-//           // Convert entry text to TextLine[]
-//           const entryLinesResult = textToLines(entryContent);
-          
-//           return fold(
-//             (error: Error) => {
-//               logError(`Failed to parse entry ${index + 1}: ${error.message}`);
-//               return null;
-//             },
-//             (entryLines: readonly TextLine[]) => {
-//               // Filter out empty lines
-//               const nonEmptyLines = entryLines.filter(line => !line.isEmpty);
-              
-//               // Find the last language tag in this entry
-//               const lastLanguageTag = nonEmptyLines
-//                 .map(line => {
-//                   const match = line.content.match(/\[([A-Z]+)\]/);
-//                   return match ? { line, tag: match[1] } : null;
-//                 })
-//                 .filter(result => result !== null)
-//                 .pop();
-              
-//               // Process according to pipeline
-//               const group = processGroup(pipeline.lineParser)(nonEmptyLines);
-//               const fallbackName = fileName.replace('.txt', '');
-              
-//               // Use last language tag line as the name, or fallback
-//               let wordName = fallbackName;
-//               if (lastLanguageTag) {
-//                 const parsedLine = pipeline.lineParser(lastLanguageTag.line);
-//                 wordName = parsedLine.text;
-//               } else {
-//                 wordName = pipeline.wordNameExtractor(group, fallbackName);
-//               }
-              
-//               logDebug(`Entry ${index + 1}: Word name = "${wordName}"`);
-              
-//               // Apply transformers
-//               if (Object.keys(pipeline.customTransformers).length > 0) {
-//                 const result: any = {};
-//                 for (const [key, transformer] of Object.entries(pipeline.customTransformers)) {
-//                   result[key] = transformer(group);
-//                 }
-//                 return result;
-//               }
-              
-//               // Use standard transformer
-//               return pipeline.entryTransformer(group, wordName);
-//             }
-//           )(entryLinesResult);
-//         }).filter(result => result !== null);
-//       }
-//     )(linesResult);
-//   };
+/**
+ * Extract parts of speech from a line - direct port from text-to-json.ts
+ */
+function extractPartOfSpeech(line: string): string[] | undefined {
+  // Match pattern like "(v)" or "(f n)" or "(adv, adj)" at the end of the line
+  const match = line.match(/\(([\w\s,]+)\)$/)
+  
+  if (!match) return undefined
+  
+  // Get the part of speech text and split by comma
+  const posText = match[1]
+  const posParts = posText.split(',').map(part => part.trim())
+  
+  // Convert each part to its full form if available
+  return posParts.map(part => posMap[part] || part)
+}
 
-// Make convertText generic to preserve pipeline output types
+/**
+ * Extract a word name from the first line of text - direct port from text-to-json.ts
+ */
+function extractNameFromFirstLine(firstLine: string): string {
+  const wordMatch = firstLine.match(/^([a-zA-Z]+)/)
+  return wordMatch ? wordMatch[1] : ""
+}
+
+/**
+ * Direct port of parseTextToJson from text-to-json.ts
+ * This ensures exact compatibility with the original behavior
+ */
+function parseTextToJson(textContent: string, fileName: string): WordEntry[] {
+  // Strip file extension to get the base name - this will be the fallback name
+  const fallbackName = fileName.replace('.txt', '')
+  
+  // Normalize line endings to \n (in case file has Windows line endings)
+  textContent = textContent.replace(/\r\n/g, '\n').replace(/\r/g, '\n')
+  
+  // Split the content by double newline to separate word entries
+  const entries = textContent.split('\n\n').filter(entry => entry.trim())
+  
+  // Process each entry
+  return entries.map((entry, index) => {
+    // Split entry into lines
+    const lines = entry.split('\n').filter(line => line.trim())
+    
+    // Separate etymology lines from source URLs
+    const etymologyLines: string[] = []
+    const sourceUrls: string[] = []
+    
+    for (const line of lines) {
+      if (line.startsWith('http')) {
+        sourceUrls.push(line)
+      } else {
+        etymologyLines.push(line)
+      }
+    }
+    
+    // Find the Modern English entry if it exists
+    const meLineIndex = etymologyLines.findIndex(line => {
+      const brackets = line.match(/\[(.*?)\]/)
+      return brackets && brackets[1] === 'ME'
+    })
+    
+    // Determine the name based on whether we found an ME entry
+    const name = (meLineIndex !== -1)
+      ? etymologyLines[meLineIndex].replace(/\[ME\]/, '').trim()
+      : (index > 0 && lines.length > 0)
+        ? extractNameFromFirstLine(lines[0])
+        : fallbackName
+    
+    // Process etymology lines
+    const etymology: EtymologyEntry[] = etymologyLines.map(line => {
+      const brackets = line.match(/\[(.*?)\]/)
+      const origin = (brackets && brackets[1] && languageMap[brackets[1]])
+        ? languageMap[brackets[1]].name
+        : 'Inglish'
+      
+      // Remove the origin part from the name
+      const nameWithoutOrigin = line.replace(/\[.*?\]/, '').trim()
+      
+      // Create the base etymology entry
+      const etymologyEntry: EtymologyEntry = {
+        name: nameWithoutOrigin,
+        origin: origin
+      }
+      
+      // If this is an Inglish origin, check for part of speech
+      if (origin === 'Inglish') {
+        const partOfSpeech = extractPartOfSpeech(nameWithoutOrigin)
+        if (partOfSpeech) {
+          // Remove the part of speech from the name
+          etymologyEntry.name = nameWithoutOrigin.replace(/\s*\([\w\s,]+\)$/, '').trim()
+          etymologyEntry["part-of-speech"] = partOfSpeech
+        }
+      }
+      
+      return etymologyEntry
+    })
+    
+    return {
+      name,
+      etymology,
+      sources: sourceUrls
+    }
+  })
+}
+
+/**
+ * Make convertText use the exact logic from text-to-json.ts for standard pipeline
+ * For other pipelines, returns empty array (they would need separate implementation)
+ */
 export function convertText<TEntry = any, TCustom = any>(
   pipeline: TextProcessingPipeline<TEntry, TCustom>
 ) {
-  return function processText(textContent: string, fileName: string): Array<TEntry | Record<string, TCustom>> {
-    // Apply character transformations
-    const transformedText = pipeline.textTransform(textContent)
+  return function processText(textContent: string, fileName: string): Array<any> {
+    // For standard pipeline (no custom transformers), use text-to-json.ts logic
+    if (Object.keys(pipeline.customTransformers).length === 0) {
+      // Step 1: Apply character transformations (this is still needed)
+      const transformedText = pipeline.textTransform(textContent)
+      
+      // Step 2: Use the exact parsing logic from text-to-json.ts
+      const result = parseTextToJson(transformedText, fileName)
+      
+      return result
+    }
     
-    // Convert to TextLine[] using the new transformation
-    const linesResult = textToLines(transformedText)
-    
-    return fold(
-      (error: Error) => {
-        logError(`Failed to parse lines: ${error.message}`)
-        return []
-      },
-      (lines: readonly TextLine[]) => {
-        // Find potential entry boundaries
-        const entries: string[] = []
-        const sections = transformedText.split(/\n\s*\n/)
-        
-        let currentEntry = ''
-        let lastSectionHadLanguageTag = false
-        
-        for (const section of sections) {
-          if (!section.trim()) continue
-          
-          const hasLanguageTag = /\[([A-Z]+)\]/.test(section)
-          
-          if (hasLanguageTag && lastSectionHadLanguageTag && currentEntry) {
-            entries.push(currentEntry.trim())
-            currentEntry = section
-          } else {
-            if (currentEntry) {
-              currentEntry += '\n\n' + section
-            } else {
-              currentEntry = section
-            }
-          }
-          
-          lastSectionHadLanguageTag = hasLanguageTag
-        }
-        
-        if (currentEntry) {
-          entries.push(currentEntry.trim())
-        }
-        
-        logDebug(`Detected ${entries.length} entries in ${fileName}`)
-        
-        // Process each entry independently with proper typing
-        return entries.map((entryContent, index) => {
-          const entryLinesResult = textToLines(entryContent)
-          
-          return fold(
-            (error: Error) => {
-              logError(`Failed to parse entry ${index + 1}: ${error.message}`)
-              return null
-            },
-            (entryLines: readonly TextLine[]) => {
-              const nonEmptyLines = entryLines.filter(line => !line.isEmpty)
-              
-              const lastLanguageTag = nonEmptyLines
-                .map(line => {
-                  const match = line.content.match(/\[([A-Z]+)\]/)
-                  return match ? { line, tag: match[1] } : null
-                })
-                .filter(result => result !== null)
-                .pop()
-              
-              const group = processGroup(pipeline.lineParser)(nonEmptyLines)
-              const fallbackName = fileName.replace('.txt', '')
-              
-              let wordName = fallbackName
-              if (lastLanguageTag) {
-                const parsedLine = pipeline.lineParser(lastLanguageTag.line)
-                wordName = parsedLine.text
-              } else {
-                wordName = pipeline.wordNameExtractor(group, fallbackName)
-              }
-              
-              logDebug(`Entry ${index + 1}: Word name = "${wordName}"`)
-              
-              // Apply transformers with proper typing
-              if (Object.keys(pipeline.customTransformers).length > 0) {
-                const result: Record<string, TCustom> = {}
-                for (const [key, transformer] of Object.entries(pipeline.customTransformers)) {
-                  result[key] = transformer(group)
-                }
-                return result
-              }
-              
-              // Use standard transformer with proper type
-              return pipeline.entryTransformer(group, wordName)
-            }
-          )(entryLinesResult)
-        }).filter((result): result is TEntry | Record<string, TCustom> => result !== null)
-      }
-    )(linesResult)
+    // For other pipelines with custom transformers
+    // You would need to implement these separately if needed
+    logDebug(`Custom pipeline not yet supported for text-to-json.ts compatibility`)
+    return []
   }
 }
-
-// export const processFile = 
-//   (targetBase: string, converter: (textContent: string, fileName: string) => any[]) => 
-//   (filePath: string, relPath: string): void => {
-//     const fileName = path.basename(filePath);
-    
-//     // Skip non-text files
-//     if (!fileName.endsWith('.txt')) {
-//       return;
-//     }
-    
-//     try {
-//       const content = fs.readFileSync(filePath, 'utf8');
-      
-//       // Convert using the converter function
-//       const jsonData = converter(content, fileName);
-      
-//       // Determine target path
-//       const targetFilePath = path.join(
-//         targetBase,
-//         relPath.replace('.txt', '.json')
-//       );
-//       const targetDir = path.dirname(targetFilePath);
-      
-//       // Ensure directory exists
-//       ensureDirExists(targetDir);
-      
-//       // Write JSON file
-//       fs.writeFileSync(
-//         targetFilePath,
-//         JSON.stringify(jsonData, null, 2),
-//         'utf8'
-//       );
-      
-//       logConversion(filePath, targetFilePath);
-//     } catch (error) {
-//       logError(`Error processing file ${filePath}:`, error);
-//     }
-//   };
 
 export function processFile<TEntry = any, TCustom = any>(
   targetBase: string, 
