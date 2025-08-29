@@ -13,10 +13,10 @@ import {
   type ValidatedFile,
   type ValidatedDirectory,
   type DirectoryPath
-} from './newArch/filesystem-module'
+} from './newArch/filesystem-module' // no longer relevant 
 
 // Simple async pipeline for Result types - left to right execution
-function composeAsync<T>(...fns: Array<(arg: any) => Promise<Result<any, Error>>>): (value: T) => Promise<Result<any, Error>> {
+function pipeAsync<T>(...fns: Array<(arg: any) => Promise<Result<any, Error>>>): (value: T) => Promise<Result<any, Error>> {
   return async function(value: T) {
     const runPipeline = async (
       result: Result<any, Error>, 
@@ -37,7 +37,7 @@ function composeAsync<T>(...fns: Array<(arg: any) => Promise<Result<any, Error>>
 // ============================================
 
 // Read the data-text directory once
-const loadDataText = composeAsync<string>(
+const loadDataText = pipeAsync<string>(
   validateDataTextDirectory,
   readDataTextDirectory
 )
@@ -88,7 +88,7 @@ async function processSubdirectory(contents: DataContent[]): Promise<Result<Data
 // ============================================
 
 // Get all text files and their total size
-const analyzeTextFiles = composeAsync<DataContent[]>(
+const analyzeTextFiles = pipeAsync<DataContent[]>(
   async function(contents: DataContent[]): Promise<Result<{files: ValidatedFile[], totalSize: number}, Error>> {
     const files = filterFiles(contents)
     const textFiles = filterByExtension(files, '.txt')
