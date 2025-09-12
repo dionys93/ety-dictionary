@@ -17,34 +17,12 @@ async function runPipeline() {
   }
   
   const contents = result.value
-  console.log(`Loaded ${contents.length} items from data-text\n`)
   
   // Apply transformations to the loaded content
-  
-  const fileNamesResult = await getFileNames(contents)
-  if (isSuccess(fileNamesResult)) {
-    console.log('Files:', fileNamesResult.value)
-  }
   
   const subdirsResult = await getSubdirectoryNames(contents)
   if (isSuccess(subdirsResult)) {
     console.log('Subdirectories:', subdirsResult.value)
-  }
-  
-  const textAnalysis = await analyzeTextFiles(contents)
-  if (isSuccess(textAnalysis)) {
-    const { count, totalSize, averageSize } = textAnalysis.value
-    console.log(`\nText files: ${count} files`)
-    console.log(`Total size: ${(totalSize / 1024).toFixed(2)} KB`)
-    console.log(`Average size: ${(averageSize / 1024).toFixed(2)} KB`)
-  }
-  
-  const statsResult = await getFileStatsByExtension(contents)
-  if (isSuccess(statsResult)) {
-    console.log('\nFile statistics by extension:')
-    statsResult.value.forEach((stats, ext) => {
-      console.log(`  ${ext}: ${stats.count} files, ${(stats.totalSize / 1024).toFixed(2)} KB`)
-    })
   }
 }
 
