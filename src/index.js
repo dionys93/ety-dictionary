@@ -2,7 +2,7 @@ import { readFile, readdir, stat } from 'fs/promises'
 import { join } from 'path'
 
 const command = process.argv[2]
-const args = process.argv.slice(3)  // Get all remaining arguments
+const args = process.argv.slice(3)
 
 async function getConfig() {
   const content = await readFile('./config.json', 'utf-8')
@@ -46,13 +46,20 @@ async function parseStanzasAsLines(filepath) {
 const config = await getConfig()
 
 const commands = {
-  list: async (subdir) => {
-    const location = subdir 
-      ? join(config.location, subdir)
+  list: async (...pathParts) => {
+    const location = pathParts.length > 0
+      ? join(config.location, ...pathParts)
       : config.location
     
     const info = await getDirectoryInfo(location)
     return info.map(item => item.name)
+  },
+  
+  concat: async (dirPath, fileName) => {
+    const firstLetter = fileName[0].toLowerCase()
+    const filePath = join(config.location, dirPath, firstLetter, `${fileName}.txt`)
+    const stanzas = await parseStanzasAsLines(filePath)
+    return stanzas
   }
 }
 
