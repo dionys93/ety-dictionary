@@ -1,6 +1,9 @@
 import { readFile, readdir, stat } from 'fs/promises'
 import { join } from 'path'
 
+const command = process.argv[2]
+const args = process.argv.slice(3)  // Get all remaining arguments
+
 async function getConfig() {
   const content = await readFile('./config.json', 'utf-8')
   return JSON.parse(content)
@@ -29,12 +32,34 @@ async function getDirectoryInfo(location) {
   })
 }
 
-async function logDirectoryContents(directory) {
-  const contents = await getDirectoryInfo(directory)
-  console.log(contents.map(item => item.name))
+async function parseStanzasAsLines(filepath) {
+  const content = await readFile(filepath, 'utf-8')
+  
+  return content
+    .split(/\n\s*\n/)
+    .map(stanza => stanza.trim())
+    .filter(stanza => stanza.length > 0)
+    .map(stanza => stanza.split('\n'))
 }
 
 // Main execution
 const config = await getConfig()
-logDirectoryContents(config.location).catch(console.error)
-logDirectoryContents(`${config.location}/histories`).catch(console.error)
+
+const commands = {
+  list: async (subdir) => {
+    const location = subdir 
+      ? join(config.location, subdir)
+      : config.location
+    
+    const info = await getDirectoryInfo(location)
+    return info.map(item => item.name)
+  }
+}
+
+if (commands[command]) {
+  const result = await commands[command](...args)
+  console.log(result)
+} else {
+  console.log(`Unknown command: ${command}`)
+  console.log(`Available commands: ${Object.keys(commands).join(', ')}`)
+}
