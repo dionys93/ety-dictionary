@@ -1,0 +1,100 @@
+NOTATION CONVENTIONS FOR INGLISCE ORTHOGRAPHY DOCUMENTATION
+
+This file explains the notation system used throughout the orthography files.
+
+====================================
+
+TRANSFORMATION NOTATION
+
+The arrow (→) indicates spelling transformation from standard English to Inglisce where applicable.
+
+Format: [English spelling] → [Inglisce spelling]
+
+Examples:
+cat (no change)
+make → mâcue (spelling change)
+father → fáþor (multiple changes)
+
+====================================
+
+PRONUNCIATION NOTATION
+
+IPA (International Phonetic Alphabet) symbols appear between forward slashes.
+Example words appear in quotation marks after the IPA.
+
+Format: /IPA symbol/ "example word"
+
+Examples:
+/æ/ "cat" — the vowel sound in "cat"
+/ə/ "about" — the schwa sound in "about" 
+/aɪ/ "kite" — the diphthong in "kite"
+
+====================================
+
+STRESS NOTATION
+
+Stressed: The syllable that receives primary emphasis in pronunciation.
+Unstressed: Syllables with reduced emphasis, often changing vowel quality.
+
+Stress affects pronunciation:
+- Stressed A = /æ/ as in "cat"
+- Unstressed A = /ə/ as in "about"
+
+In IPA transcriptions, stress is marked with ˈ before the stressed syllable:
+/ˈænɪməl/ — stress on first syllable
+/əˈbaʊt/ — stress on second syllable
+
+====================================
+
+DOCUMENT STRUCTURE
+
+Each letter file follows this organization:
+
+1. HEADER: Letter name and overview
+2. PRONUNCIATION SUMMARY: Quick reference table
+3. MAIN RULES: Detailed contexts and patterns
+4. DIACRITICS: Special marked versions
+5. CROSS-REFERENCES: Links to related files
+
+Rule sections use these formats:
+
+Context-Based Headers:
+"Stressed A = /æ/"
+"A + Silent E = /eɪ/"
+"Word-Final I = /i/"
+
+Example Lists:
+- Single line for short words: cat, hat, mat, bat
+- Transformation pairs: father → fáþor
+- Grouped by pattern for clarity
+
+====================================
+
+CROSS-REFERENCE NOTATION
+
+References to other files help navigate related sounds and patterns.
+
+Formats used:
+- "See [filename]" — for primary references
+- "Related to [filename]" — for secondary connections  
+- "Compare with [filename]" — for contrasts
+
+File naming conventions:
+- Single letters: A.txt, E.txt
+- Digraphs: AI.txt, OU.txt
+- IPA sounds: IPA-æ.txt, IPA-ə.txt
+
+====================================
+
+PATTERN NOTATION
+
+Patterns describe letter contexts using:
+- Letter names: "A before two consonants"
+- + for sequences: "I + Silent E"
+- Positions: "Word-final", "Stressed position"
+- Word class: "in verbs", "Latin-derived nouns"
+
+Example pattern descriptions:
+"O + Two Consonants = /ɑ/"
+"Unstressed E + R = /ər/"
+"Word-Final Y in adjectives = /i/"
