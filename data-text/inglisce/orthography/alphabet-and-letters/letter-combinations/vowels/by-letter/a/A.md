@@ -1,137 +1,138 @@
+# The Letter A
+
 The letter A and its variants represent multiple vowel sounds in Inglisce.
 
 A uses the following diacritics: À, Á, Â
 
 Related digraphs: See AE, AI, AO, AU, AY files
 
-### PRONUNCIATION SUMMARY:
-A — /æ/ "cat" (stressed) — cat
-    /ə/ "about" (unstressed) — about → abaut
-À — /æ/ "cat" (irregular stress) — analysis → anàlysis
-Á — /ɑ/ "father" (stressed) — father → fáþor
-Â — /eɪ/ "make" (stressed) — make → mâcue
+## PRONUNCIATION SUMMARY
 
+- **A** — /æ/ "cat" (stressed) — cat  
+      — /ə/ "about" (unstressed) — about → abaut
+- **À** — /æ/ "cat" (irregular stress) — analysis → anàlysis
+- **Á** — /ɑ/ "father" (stressed) — father → fáþor
+- **Â** — /eɪ/ "make" (stressed) — make → mâcue
 
-Stressed A = /æ/
+## Base Letter A
+
+### Stressed A = /æ/
 When A is the only stressed vowel in a word, it is pronounced /æ/.
 
-Monosyllables:
-cat, hat, fat, sat, bat, mat
+**Monosyllables:**  
+cat, hat, fat, sat, bat, mat  
 rap, tap, map, gap, cap, lap
 
-Polysyllables (stressed position):
-animal /ˈænɪməl/, practical /ˈpræktɪkəl/
+**Polysyllables (stressed position):**  
+animal /ˈænɪməl/, practical /ˈpræktɪkəl/  
 admiral → amiral /ˈæmərəl/
 
-Unstressed A = /ə/ 
+### Unstressed A = /ə/
 In unstressed positions, A is pronounced /ə/.
 
-Examples:
-about → abaut /əˈbaʊt/
-what → uat /wət/
-mother → maþor /ˈməðər/
+**Examples:**  
+about → abaut /əˈbaʊt/  
+what → uat /wət/  
+mother → maþor /ˈməðər/  
 practical (second A: /ˈpræktɪkəl/)
 
-Variable Stress Patterns 
+### Variable Stress Patterns
 The same word root can have different pronunciations based on word class:
 
-Verb vs. Adjective:
-to animate → to animait /tə ˈænɪˌmeɪt/ (verb - stressed A)
+**Verb vs. Adjective:**  
+to animate → to animait /tə ˈænɪˌmeɪt/ (verb - stressed A)  
 animate → animat /ˈænɪmət/ (adjective - unstressed second A)
-Base vs. Derivative:
-practical /ˈpræktɪkəl/ (stressed A)
+
+**Base vs. Derivative:**  
+practical /ˈpræktɪkəl/ (stressed A)  
 practicality → practicaletie /ˌpræktɪˈkæləɾi/ (first A unstressed)
 
-CROSS-REFERENCES
+## Diacritics
 
-For /æ/ sound patterns, see IPA-æ.txt
-For /ə/ sound patterns, see IPA-ə.txt
-For digraphs beginning with A, see AI.txt, AU.txt, AY.txt, etc.
+### À — STRESSED /æ/ (IRREGULAR)
 
+**Pronunciation:** /æ/ — as in "cat" (always stressed)
 
-À — STRESSED /æ/ (IRREGULAR)
-
-Pronunciation: /æ/ — as in "cat" (always stressed)
-
-PURPOSE
+**PURPOSE**  
 Marks stressed /æ/ where stress placement is irregular or unexpected.
 
-analysis → anàlysis /əˈnælɪsəs/
-paralysis → paràlysis /pəˈrælɪsəs/
-combatant → combàtant /kəmˈbætnt/
+**EXAMPLES**  
+analysis → anàlysis /əˈnælɪsəs/  
+paralysis → paràlysis /pəˈrælɪsəs/  
+combatant → combàtant /kəmˈbætnt/  
 alfalfa → alfàlfa /ælˈfælfə/
 
-CROSS-REFERENCES
+### Á — STRESSED /ɑ/
 
-See IPA-æ.txt for all /æ/ patterns
-Compare with regular A for /æ/ in expected positions
+**Pronunciation:** /ɑ/ — as in "father" (always stressed)
 
+**PURPOSE**  
+Marks stressed /ɑ/ in basic vocabulary and certain plurals.
 
-Á — STRESSED /ɑ/
+**EXAMPLES**
 
-Pronunciation: /ɑ/ — as in "father" (always stressed)
-
-Basic vocabulary with stressed /ɑ/.
-
-father → fáþor /ˈfɑðər/
+**Basic vocabulary:**  
+father → fáþor /ˈfɑðər/  
 water → uátre /ˈwɑɾər/
 
-Used in plural declensions:
-alarm → alarme, alárms
+**Plural declensions:**  
+alarm → alarme, alárms  
 commissar → commissare, commissárs
 
-CROSS-REFERENCES
+### Â — /eɪ/
 
-See IPA-ɑ.txt for all /ɑ/ patterns
-See also Ó.txt (stressed /ɑ/ in Greek derivatives)
+**Pronunciation:** /eɪ/ — as in "make" (stressed, except in compounds)
 
-
-Â — /eɪ/
-
-Pronunciation: /eɪ/ — as in "make" (stressed, except in compounds)
-
-PURPOSE
+**PURPOSE**  
 Represents the /eɪ/ sound, typically from historical long A.
 
-EXAMPLES
+**EXAMPLES**
 
-Monosyllabic nouns:
-date → dâte, fate → fâte, gate → gâte, 
-hate → hâte, late → lât, mate → mâte, rate → râte
-state → stâte, lake → lâc, name → nâme, same → sâm, game → gâme
+**Monosyllabic nouns:**  
+date → dâte, fate → fâte, gate → gâte  
+hate → hâte, late → lât, mate → mâte  
+state → stâte, lake → lâc, name → nâme  
+same → sâm, game → gâme
 
-Monosyllabic verbs (C+U pattern):
-make → mâcue, take → tâcue, wake → uâcue
+**Monosyllabic verbs (C+U pattern):**  
+make → mâcue, take → tâcue, wake → uâcue  
 bake → bâcue, rake → râcue, sake → sâcue
 
-Verb Patterns (-ÂTE):
+**-ATE verbs (stressed):**  
 relate → relâte, create → criâte, negate → negâte
 
-Noun Patterns (-ÂCION):
-relation → relâcion, creation → criâcion
-negation → negâcion, translation → translâcion
+**-ATION nouns:**  
+relation → relâcion, creation → criâcion  
+negation → negâcion, translation → translâcion  
 operation → operâcion, celebration → celebrâcion
-animation → animâcion, demonstration → demonstrâcion
 
-Adjectives:
-creative → criâtif, native → nâtif
+**-ATIVE adjectives:**  
+creative → criâtif, native → nâtif  
 contagious → contâgeus
 
-Compound Nouns
-In compounds, Â may be unstressed.
-
-Examples:
+**Compound nouns:**  
 airplane → airplân (stress on "air", not "plân")
 
+## Cross-References
 
-CROSS-REFERENCES
+- For /æ/ sound patterns, see IPA-æ.txt
+- For /ə/ sound patterns, see IPA-ə.txt
+- For /eɪ/ sound patterns, see IPA-eɪ.txt
+- For digraphs beginning with A, see AI.txt, AU.txt, AY.txt
+- Related to AI.txt (verbs), AY.txt (nouns)
+- See also Ó.txt (stressed /ɑ/ in Greek derivatives)
 
-See IPA-eɪ.txt for all /eɪ/ patterns
-Related to AI.txt (verbs), AY.txt (nouns)
-See also EI.txt for /eɪ/ in different contexts
+## Teaching Notes
 
-TEACHING NOTES
+**Primary patterns:**
+- Stressed A = /æ/, unstressed A = /ə/
+- Silent E typically makes A → Â /eɪ/
 
-Stressed position usually determines pronunciation
-À, Á all indicate stress and different vowel qualities
-Most common pattern: stressed A = /æ/, unstressed A = /ə/
+**Key distinctions:**
+- Stress position determines base pronunciation
+- Three distinct diacritics for different vowel qualities
+
+**Diacritics summary:**
+- **À** = stressed /æ/ in irregular positions
+- **Á** = stressed /ɑ/ (father sound)  
+- **Â** = /eɪ/ from historical long A
