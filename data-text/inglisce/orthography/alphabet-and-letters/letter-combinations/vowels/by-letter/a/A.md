@@ -4,8 +4,8 @@ A uses the following diacritics: À, Á, Â
 
 Related digraphs: See AE, AI, AO, AU, AY files
 
-PRONUNCIATION SUMMARY:
-A — /æ/ "cat" (stressed) — cat; 
+### PRONUNCIATION SUMMARY:
+A — /æ/ "cat" (stressed) — cat
     /ə/ "about" (unstressed) — about → abaut
 À — /æ/ "cat" (irregular stress) — analysis → anàlysis
 Á — /ɑ/ "father" (stressed) — father → fáþor
