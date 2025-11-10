@@ -6,7 +6,7 @@ A uses the following diacritics: À, Á, Â
 
 Related digraphs: See AE, AI, AO, AU, AY files
 
-## PRONUNCIATION SUMMARY
+### PRONUNCIATION SUMMARY
 
 - **A** — /æ/ "cat" (stressed) — cat  
       — /ə/ "about" (unstressed) — about → abaut
@@ -14,9 +14,9 @@ Related digraphs: See AE, AI, AO, AU, AY files
 - **Á** — /ɑ/ "father" (stressed) — father → fáþor
 - **Â** — /eɪ/ "make" (stressed) — make → mâcue
 
-## Base Letter A
+### Base Letter A
 
-### Stressed A = /æ/
+#### Stressed A = /æ/
 When A is the only stressed vowel in a word, it is pronounced /æ/.
 
 **Monosyllables:**  
@@ -27,7 +27,7 @@ rap, tap, map, gap, cap, lap
 animal /ˈænɪməl/, practical /ˈpræktɪkəl/  
 admiral → amiral /ˈæmərəl/
 
-### Unstressed A = /ə/
+#### Unstressed A = /ə/
 In unstressed positions, A is pronounced /ə/.
 
 **Examples:**  
@@ -47,9 +47,9 @@ animate → animat /ˈænɪmət/ (adjective - unstressed second A)
 practical /ˈpræktɪkəl/ (stressed A)  
 practicality → practicaletie /ˌpræktɪˈkæləɾi/ (first A unstressed)
 
-## Diacritics
+### Diacritics
 
-### À — STRESSED /æ/ (IRREGULAR)
+#### À — STRESSED /æ/ (IRREGULAR)
 
 **Pronunciation:** /æ/ — as in "cat" (always stressed)
 
@@ -62,7 +62,7 @@ paralysis → paràlysis /pəˈrælɪsəs/
 combatant → combàtant /kəmˈbætnt/  
 alfalfa → alfàlfa /ælˈfælfə/
 
-### Á — STRESSED /ɑ/
+#### Á — STRESSED /ɑ/
 
 **Pronunciation:** /ɑ/ — as in "father" (always stressed)
 
@@ -79,7 +79,7 @@ water → uátre /ˈwɑɾər/
 alarm → alarme, alárms  
 commissar → commissare, commissárs
 
-### Â — /eɪ/
+#### Â — /eɪ/
 
 **Pronunciation:** /eɪ/ — as in "make" (stressed, except in compounds)
 
@@ -113,7 +113,7 @@ contagious → contâgeus
 **Compound nouns:**  
 airplane → airplân (stress on "air", not "plân")
 
-## Cross-References
+### Cross-References
 
 - For /æ/ sound patterns, see IPA-æ.txt
 - For /ə/ sound patterns, see IPA-ə.txt
@@ -122,7 +122,7 @@ airplane → airplân (stress on "air", not "plân")
 - Related to AI.txt (verbs), AY.txt (nouns)
 - See also Ó.txt (stressed /ɑ/ in Greek derivatives)
 
-## Teaching Notes
+### Teaching Notes
 
 **Primary patterns:**
 - Stressed A = /æ/, unstressed A = /ə/
