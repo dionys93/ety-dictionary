@@ -1,4 +1,4 @@
-# The Letter I
+# I
 
 The letter I and its variants represent multiple vowel sounds in Inglisce.
 
