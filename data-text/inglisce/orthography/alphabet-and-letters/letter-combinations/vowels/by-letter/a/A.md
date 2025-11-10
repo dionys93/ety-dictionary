@@ -1,4 +1,4 @@
-# The Letter A
+# A
 
 The letter A and its variants represent multiple vowel sounds in Inglisce.
 
