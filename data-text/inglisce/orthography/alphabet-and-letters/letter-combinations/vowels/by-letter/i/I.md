@@ -1,3 +1,4 @@
+```markdown
 # The Letter I
 
 The letter I and its variants represent multiple vowel sounds in Inglisce.
@@ -165,3 +166,4 @@ equipment → equïpment
 - **Í** = stressed /i/ where clarification needed
 - **Î** = /aɪ/ sound (including Latin plurals)
 - **Ï** = stressed /ɪ/ (rare, for clarity/separation)
+```
