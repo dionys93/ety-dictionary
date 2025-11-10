@@ -6,7 +6,7 @@ E uses the following diacritics: È, Ê
 
 Related digraphs: See EA, EI, EU, EY files
 
-## PRONUNCIATION SUMMARY
+### PRONUNCIATION SUMMARY
 
 - **E** — /ɛ/ "bed" (stressed) — bed → bede  
       — /ə/ "return" (unstressed) — return → retorne  
@@ -15,9 +15,9 @@ Related digraphs: See EA, EI, EU, EY files
 - **È** — /ɛ/ "bed" (irregular stress) — anemone → anèmonie
 - **Ê** — /ər/ "earn" (stressed) — earn → êne
 
-## Base Letter E
+### Base Letter E
 
-### Stressed E = /ɛ/
+#### Stressed E = /ɛ/
 E is pronounced /ɛ/ in four main contexts:
 
 **a) Before two consonants:**  
@@ -80,7 +80,7 @@ G needs U before silent E: vogue → vôgue, to log → to logue
 Silent E on stressed syllable: to combîne, to defîne  
 Silent E on unstressed syllable: to represente, to recorde
 
-### Unstressed E = /ə/
+#### Unstressed E = /ə/
 When not stressed, E is typically /ə/.
 
 **Prefix positions:**  
@@ -91,7 +91,7 @@ to defend → to defende, to descend → to descende
 different → diffrent, interest → intrest  
 desperation → desperâcion
 
-### Unstressed ER/RE = /ər/
+#### Unstressed ER/RE = /ər/
 When not stressed, ER is typically /ər/.
 
 **Examples:**  
@@ -99,9 +99,9 @@ to remember, I remember → I remembre
 member → membre, ember → embre  
 timber → timbre, number → nombre
 
-## Diacritics
+### Diacritics
 
-### È — STRESSED /ɛ/ (IRREGULAR)
+#### È — STRESSED /ɛ/ (IRREGULAR)
 
 **Pronunciation:** /ɛ/ — as in "bed" (always stressed)
 
@@ -123,7 +123,7 @@ elect → electe, elects → elècs
 **Latin-derived adjectives:**  
 perfectable → perfèctable /pərˈfɛktəbəl/
 
-### Ê — STRESSED /ər/
+#### Ê — STRESSED /ər/
 
 **Pronunciation:** /ər/ — as in "earn" (always stressed)
 
@@ -145,7 +145,7 @@ to submerge → to submêge
 to converge → to convêge  
 convergence → convêgence
 
-## Cross-References
+### Cross-References
 
 - For /ɛ/ sound patterns, see IPA-ɛ.txt
 - For /ə/ sound patterns, see IPA-ə.txt  
@@ -153,7 +153,7 @@ convergence → convêgence
 - For digraphs beginning with E, see EA.txt, EI.txt, EU.txt, EY.txt
 - Related R-colored vowels: AR (IPA-ɑr.txt), OR (IPA-ɔr.txt)
 
-## Teaching Notes
+### Teaching Notes
 
 **Primary patterns:**
 - Stressed E = /ɛ/, unstressed E = /ə/, final E = silent
