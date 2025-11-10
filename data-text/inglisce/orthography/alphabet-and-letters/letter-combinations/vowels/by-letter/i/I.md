@@ -6,7 +6,7 @@ I uses the following diacritics: Í, Î, Ï
 
 Related digraphs: See IE files
 
-## PRONUNCIATION SUMMARY
+### PRONUNCIATION SUMMARY
 
 - **I** — /ɪ/ "bit" (stressed) — bit  
       — /ə/ "individual" (unstressed) — individual → indiviḑual  
@@ -15,16 +15,16 @@ Related digraphs: See IE files
 - **Î** — /aɪ/ "find" (usually stressed) — find → fînd
 - **Ï** — /ɪ/ "bit" (irregular stress/separator) — to bid → to bïde
 
-## Base Letter I
+### Base Letter I
 
-### Single Vowel = /ɪ/
+#### Single Vowel = /ɪ/
 When I is the only vowel in a word, it's pronounced /ɪ/.
 
 **Monosyllables:**  
 bit, fit, hit, mit, pit, sit, zit  
 sick → sic, thick → þic, quick → cuic
 
-### I + Two Consonants = /ɪ/
+#### I + Two Consonants = /ɪ/
 I is always /ɪ/ when followed by two consonants.
 
 **Examples:**  
@@ -32,7 +32,7 @@ rich, ditch → dich
 to commit → to comitte, to convict → to convicte  
 permission, commission → comission, citizen → citasan
 
-### Stressed I in -ION Nouns = /ɪ/
+#### Stressed I in -ION Nouns = /ɪ/
 I is stressed /ɪ/ in nouns ending in -ION.
 
 **-ION nouns:**  
@@ -45,13 +45,13 @@ analysis → anàlysis (singular /sɪs/)
 analyses → anàlysies (plural /sis/)  
 hypnosis → hipnôsis, hipnôsies
 
-### Unstressed I = /ə/
+#### Unstressed I = /ə/
 When not stressed, I is pronounced /ə/.
 
 **Example:**  
 individual → indiviḑual /ˌɪndəˈvɪdʒ(ə)wəl/
 
-### I + Silent E = /i/
+#### I + Silent E = /i/
 When followed by silent E, I is pronounced /i/.
 
 **Nouns:**  
@@ -66,7 +66,7 @@ to complete → to complite, to conceive → to concive
 to deceive → to decive, to receive → to recive  
 to sieve → to sive
 
-### Word-Final I = /i/
+#### Word-Final I = /i/
 When I ends a word, it's pronounced /i/.
 
 **Examples:**  
@@ -75,9 +75,9 @@ anemone → anèmonie, anèmonis
 catastrophe → catàstrofie, catàstrofis  
 hyperbole → hypêrbolie, hypêrbolis
 
-## Diacritics
+### Diacritics
 
-### Í — STRESSED /i/
+#### Í — STRESSED /i/
 
 **Pronunciation:** /i/ — as in "machine" (always stressed)
 
@@ -95,7 +95,7 @@ immediate → immídiat
 media → mídia  
 idea → îdía (note: both Î and Í used)
 
-### Î — /aɪ/
+#### Î — /aɪ/
 
 **Pronunciation:** /aɪ/ — as in "find" (usually stressed)
 
@@ -122,7 +122,7 @@ octopus → octopî
 alomnus → alomnî  
 fongus → fongî
 
-### Ï — STRESSED /ɪ/ (SEPARATOR)
+#### Ï — STRESSED /ɪ/ (SEPARATOR)
 
 **Pronunciation:** /ɪ/ or /i/ before vowels
 
@@ -141,7 +141,7 @@ anonymity → anonïmatie (shows stressed /ɪ/)
 image → ïmage  
 equipment → equïpment
 
-## Cross-References
+### Cross-References
 
 - For /ɪ/ sound patterns, see IPA-ɪ.txt
 - For /i/ sound patterns, see IPA-i.txt
@@ -150,7 +150,7 @@ equipment → equïpment
 - For digraph IE, see IE.txt
 - Related to YH digraph (also /aɪ/)
 
-## Teaching Notes
+### Teaching Notes
 
 **Primary patterns:**
 - Stressed I = /ɪ/, unstressed I = /ə/
