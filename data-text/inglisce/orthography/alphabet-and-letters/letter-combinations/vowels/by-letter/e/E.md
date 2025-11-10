@@ -1,4 +1,4 @@
-# The Letter E
+# E
 
 The letter E and its variants represent multiple vowel sounds in Inglisce.
 
