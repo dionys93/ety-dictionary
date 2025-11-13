@@ -16,7 +16,7 @@ Related digraphs: See OA, OI, OU, OY files
       — /w/ "wet" — wet → ouet, white → oît
 - **Ò** — /ɔ/ "cost" (stressed) — cost → còste
 - **Ó** — /ɑ/ "father" (stressed) — phonology → fonólogie
-- **Ô** — /oʊ/ "old" (stressed); /aʊ/ (before N/U); /ʊ/ (before C/D) — old → ôld; sound → sônd; book → bôc
+- **Ô** — /oʊ/ "old" (stressed); /aʊ/ (before N, U, or E); /ʊ/ (before C/D) — old → ôld; sound → sônd; book → bôc
 
 ### Base Letter O
 
@@ -142,7 +142,8 @@ hold → hôld, mold → môld
 **Ô + N/U = /aʊ/:**  
 sound → sônd, around → arônd  
 ground → grônd  
-cow → côue, vow → vôue, sow → sôue
+cow → côe, vow → vôe, sow → sôe
+cows → côus, vows → vôus, sows → sôus
 
 **Ô + C/D = /ʊ/:**  
 book → bôc, cook → côc, look → lôc  
