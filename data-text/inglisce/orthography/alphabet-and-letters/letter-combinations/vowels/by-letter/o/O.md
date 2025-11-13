@@ -144,6 +144,7 @@ sound → sônd, around → arônd
 ground → grônd  
 cow → côe, vow → vôe, sow → sôe
 cows → côus, vows → vôus, sows → sôus
+now → nôe, how → hôe
 
 **Ô + C/D = /ʊ/:**  
 book → bôc, cook → côc, look → lôc  
