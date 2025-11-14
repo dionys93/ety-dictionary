@@ -42,7 +42,7 @@ conviction → conviccion, fiction → ficcion
 
 **Greek suffix -sis:**  
 analysis → anàlysis (singular /sɪs/)  
-analyses → anàlysies (plural /sis/)  
+analyses → anàlysies (plural /siz/)  
 hypnosis → hipnôsis, hipnôsies
 
 #### Unstressed I = /ə/
