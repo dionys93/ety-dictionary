@@ -9,9 +9,12 @@ Related variant: ÁI
 ### PRONUNCIATION SUMMARY
 
 - **AI** — /eɪ/ "say" — say → saie
-       — /ɛr/ "care" (before R) — care → caire  
-       — /ɛ/ "lettuce" (exceptions) — lettuce → laitace
-       — /aɪ/ "night" (before H) — night → naiht
+
+  — /ɛr/ "care" (before R) — care → caire  
+
+  — /ɛ/ "lettuce" (exceptions) — lettuce → laitace
+
+  — /aɪ/ "night" (before H) — night → naiht
 - **AÎ** — /ɛr/ "comparison" (shows stress) — comparison → compaîrasson
 - **ÁI** — /aɪ/ "fry" — fry → frae, frys → fráis
 
