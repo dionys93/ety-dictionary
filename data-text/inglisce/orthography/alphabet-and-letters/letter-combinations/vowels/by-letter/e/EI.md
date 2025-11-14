@@ -7,7 +7,8 @@ EI uses the following diacritic: ÉI
 ### PRONUNCIATION SUMMARY
 
 - **EI** — /eɪ/ "convey" (most common) — convey → conveie
-       — /ɛr/ "impair" (before R) — impair → empeire
+
+  — /ɛr/ "impair" (before R) — impair → empeire
 - **ÉI** — /eɪ/ "containment" (stressed) — containment → contéinment
 
 ### The Digraph EI
