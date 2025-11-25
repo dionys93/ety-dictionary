@@ -12,6 +12,16 @@ OI uses the following diacritic: OÎ
        — /aɪ/ "flight" (before H) — flight → floiht
 - **OÎ** — /waɪ/ "white" (stressed) — white → oît
 
+### The Digraph OI
+
+#### Basic OI = /ɔɪ/
+OI typically represents /ɔɪ/ in most contexts.
+
+**Examples:**  
+coin → coine, coins  
+spoil, spoils → spoile, spoiels
+choice, rejoice, voice
+
 #### Verbs with OI
 OI appears in verb forms ending in -OIE.
 
