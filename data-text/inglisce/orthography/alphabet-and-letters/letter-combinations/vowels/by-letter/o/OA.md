@@ -24,15 +24,6 @@ stone → stoan, stoans
 throne → þroan, þroans  
 zone → zoan, zoans
 
-**-OST words:**  
-boast → boaste, boasts  
-coast → coaste, coasts  
-ghost → goaste, goasts  
-host → hoaste, hoasts  
-post → poaste, poasts  
-roast → roaste, roasts  
-toast → toaste, toasts
-
 **Other nouns:**  
 bloat → blote, bloats  
 boat → bote, boats  
