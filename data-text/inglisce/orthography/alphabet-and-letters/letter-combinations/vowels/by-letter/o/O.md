@@ -138,6 +138,10 @@ hypnosis → hipnôsis
 bold → bôld, cold → côld, old → ôld  
 sold → sôld, gold → gôld  
 hold → hôld, mold → môld
+boast → bôste, coast → côste  
+ghost → gôste, host → hôste
+post → pôste, roast → rôste
+toast → tôste
 
 **Ô + N, Vowel = /aʊ/:**  
 sound → sônd, around → arônd  
