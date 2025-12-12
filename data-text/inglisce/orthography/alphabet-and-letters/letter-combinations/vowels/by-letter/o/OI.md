@@ -32,8 +32,8 @@ to destroy → to destroie
 to boil → to boile
 
 **Derived nouns:**  
-enjoyment → enjoiement  
-employment → emploiement
+enjoyment → enjoiment  
+employment → emploiment
 
 #### OI = /wɪ/ (Uncommon)
 In some words, OI represents /wɪ/.
@@ -60,7 +60,7 @@ Marks /waɪ/ sound in specific words.
 
 **EXAMPLES**  
 white → oît  
-employee → emploîe
+employee → emploîe (irregular)
 
 ### Cross-References
 
