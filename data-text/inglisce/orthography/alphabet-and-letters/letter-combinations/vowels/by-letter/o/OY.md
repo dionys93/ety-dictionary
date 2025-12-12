@@ -32,7 +32,7 @@ to enjoy → to enjoie, enjoying
 OY is the word-final version of the /ɔɪ/ sound, while OI appears in other positions. This parallels the AI/AY distinction for /eɪ/.
 
 **Pattern:**
-- Mid-word /ɔɪ/ → OI (coin, voice, enjoiement)
+- Mid-word /ɔɪ/ → OI (coin, voice, enjoiment)
 - Word-final /ɔɪ/ → OY (boys, enjoying)
 
 ### Cross-References
