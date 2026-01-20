@@ -5,6 +5,7 @@ In Inglisce, the acute accent is used on the following vowels: á, í, é, o�
 The acute accent not only suggests how the vowel is pronounced but also typically indicates the stressed syllable in the word.
 
 IPA Pronunciations of Accented Vowels:
+
     Áá: /ɑ/
     Íí: /i/
     Éé: /e/
