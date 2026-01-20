@@ -21,3 +21,6 @@ Examples of Words Transcribed from English to Inglisce:
     derailment → deréilment
     although → alþó
     below → beló
+    unusual → unúșual
+    unusable → unúsable
+    usage → úsage
