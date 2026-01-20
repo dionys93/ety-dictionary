@@ -1,26 +1,50 @@
-The Acute Accent in Inglisce
+## The Acute Accent in Inglisce
 
-In Inglisce, the acute accent is used on the following vowels: á, í, é, ó, ú.
+### Overview
 
-The acute accent not only suggests how the vowel is pronounced but also typically indicates the stressed syllable in the word.
+In Inglisce, the **acute accent** is used on the vowels **á, í, é, ó, ú**.
 
-IPA Pronunciations of Accented Vowels:
+The acute accent signals two things simultaneously:
 
-    Áá: /ɑ/
-    Íí: /i/
-    Éé: /e/
-    Óó: /oʊ/
-    Úú: /ju/ or /u/
+1. **Vowel quality** – it indicates a specific pronunciation for the vowel.  
+2. **Stress** – it marks the stressed syllable in a word when stress is not predictable by default rules.
 
-Examples of Words Transcribed from English to Inglisce:
+### IPA Pronunciations
 
-    father, fathers → fáþre, fáþors
-    machines → maçíns
-    queens → cuíns
-    containment → contéinment
-    derailment → deréilment
-    although → alþó
-    below → beló
-    unusual → unúșual
-    unusable → unúsable
-    usage → úsage
+| Vowel | IPA |
+|-------|-----|
+| á | /ɑ/ |
+| í | /i/ |
+| é | /e/ |
+| ó | /oʊ/ |
+| ú | /ju/ or /u/ |
+
+### Function and Distribution
+
+The acute accent is used primarily to:
+
+- Mark stress when it deviates from default stress assignment.  
+- Preserve vowel quality that would otherwise be reduced or altered in unstressed syllables.  
+
+Accented vowels occur wherever stress is non-predictable, especially in borrowed or morphologically complex words. The accent ensures that both **pronunciation** and **syllable prominence** are clear.
+
+### Orthographic Contrast
+
+The acute accent is not used to indicate vowel length or tone.  
+Unaccented vowels are assumed to follow default quality and stress rules.  
+In combination with other diacritics (such as the tilde), the acute accent only appears on the syllable where stress or quality must be explicitly signaled.
+
+### Examples
+
+| English | Inglisce |
+|---------|----------|
+| father, fathers | **fáþre**, **fáþors** |
+| machines | **maçíns** |
+| queens | **cuíns** |
+| containment | **contéinment** |
+| derailment | **deréilment** |
+| although | **alþó** |
+| below | **beló** |
+| unusual | **unúșual** |
+| unusable | **unúsable** |
+| usage | **úsage** |
