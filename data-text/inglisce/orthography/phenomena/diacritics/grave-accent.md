@@ -5,6 +5,9 @@
 In Inglisce, the **grave accent** is used on the vowels **à, è, ò**.  
 Like the acute accent, it signals both **vowel quality** and **stress**, but applies in different vowel contexts.
 
+**Rule:** Only one accent (acute, grave, or circumflex) appears per word, except when a **diaeresis** is also present.
+
+
 ---
 
 ### IPA Pronunciations
