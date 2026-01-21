@@ -5,9 +5,12 @@
 In Inglisce, the **circumflex accent** is used on the vowels **â, î, ê, ô, û**.
 
 Like the acute and grave accents, the circumflex participates in the stress system of Inglisce.  
-However, the circumflex differs in that it **primarily encodes vowel quality**, and only **secondarily encodes stress**.
+However, it differs in that it **primarily encodes vowel quality**, and only **secondarily encodes stress**.
 
-Whether a circumflex-marked vowel also indicates stress depends on the **grammatical gender and stress class of the word**. In some environments, the circumflex marks vowel quality alone; in others, it marks both vowel quality and stress.
+Whether a circumflex-marked vowel also indicates stress depends on the **grammatical gender of the word**:
+
+- In **masculine nouns and adjectives**, the circumflex marks **vowel quality only**.
+- In **feminine nouns and adjectives**, the circumflex marks **both vowel quality and stress**.
 
 **Rule:** Only one accent (acute, grave, or circumflex) appears per word, except when a **diaeresis** is also present.
 
@@ -25,7 +28,7 @@ The primary pronunciations of circumflex-marked vowels are as follows:
 | ô | /æʊ/ or /ʊ/ |
 | û | /ʊ/ |
 
-These values reflect historical vowel developments and are preserved orthographically even when stress behavior varies.
+These values reflect historical vowel developments preserved in the orthography, even when surface stress varies.
 
 ---
 
@@ -33,43 +36,55 @@ These values reflect historical vowel developments and are preserved orthographi
 
 The circumflex is used to:
 
-- Indicate **non-default vowel quality** arising from historical diphthongization or r-coloring.  
-- Preserve vowel distinctions that would otherwise collapse under default vowel reduction.  
-- Mark stress **only when required** by the word’s stress class or grammatical gender.
+- Indicate **non-default vowel quality** arising from diphthongization or r-coloring.  
+- Preserve vowel distinctions that would otherwise be lost to vowel reduction.  
+- Mark stress **only when required** by grammatical gender.
 
-Unlike the acute and grave accents, which reliably mark stress, the circumflex must be interpreted **in conjunction with morphological and grammatical information**.
+Unlike the acute and grave accents, which always mark stress, the circumflex must be interpreted **in conjunction with morphological information**.
 
 See [Stress](stress.md) for default stress rules and gender-based stress behavior.
 
 ---
 
+### r-Coloring and ê
+
+The vowel **ê** represents **/ər/** in general.
+
+When followed by **n** or **m**, the **r** is absorbed historically and orthographically:
+
+- **êr + {n, m} → ê**
+
+This reflects r-loss before nasals while preserving the vowel quality encoded by the circumflex.
+
+---
+
 ### Secondary and Contextual Pronunciations
 
-The vowels **î, ê, ô, û** may take **secondary pronunciations** in specific phonological environments, especially when adjacent to certain vowels or consonants.
+Certain circumflex vowels exhibit predictable secondary pronunciations in specific phonological environments.
 
 #### Contextual Values
 
-| Sequence | IPA | Notes |
-|--------|-----|-------|
+| Sequence | IPA | Environment |
+|--------|-----|-------------|
 | aî | /ɛ/ | Reduced diphthong |
 | ô | /æʊ/ | Before **-n** or vowels |
 | ô | /ʊ/ | Before **-c**, or after **h** or **u** |
-| oû | /wʊ/ | Word-initial or without preceding consonant |
-| oû | /ʊ/ | After consonants |
+| oû | /wʊ/ | Without a preceding consonant |
+| oû | /ʊ/ | After a consonant |
 | uô | /wʊ/ | Glide formation |
 | aû | /æʊ/ | Open diphthong |
 
-These alternations are predictable and do not require additional marking.
+These alternations are **fully predictable** and require no additional marking.
 
 ---
 
 ### Orthographic Contrast
 
 - The circumflex does **not** indicate vowel length or tone.  
-- It differs from the acute and grave accents in that stress marking is **context-dependent**, not automatic.  
-- Circumflex vowels may appear in unstressed syllables when vowel quality must be preserved.  
+- It differs from the acute and grave accents in that stress marking is **conditional**, not automatic.  
+- Circumflex vowels may appear in **unstressed syllables** when vowel quality must be preserved.
 - See [Acute Accent](acute-accent.md) and [Grave Accent](grave-accent.md) for stress-first diacritics.
-- See [Tildes](tilde.md) for consonantal diacritics that interact indirectly with stress.
+- See [Tildes](tilde.md) for consonantal diacritics that interact with stress indirectly.
 
 ---
 
@@ -88,6 +103,7 @@ These alternations are predictable and do not require additional marking.
 | comparable | **compaîrable** |
 | iron | **îarn** |
 | would, could, should | **oûd**, **coûd**, **seûd** |
-| to devour, to flower, to power | **to devôare**, **to flôuir**, **to pôuir** |
 | how | **hôe** |
-| cow, plow, vow | **côe**, **plow**, **vôe** |
+| cow, vow | **côe**, **vôe** |
+| to devour, to flower, to power | **to devôare**, **to flôuir**, **to pôuir** |
+
