@@ -2,8 +2,8 @@
 
 ### Overview
 
-Stress in Inglisce is **predictable by word class and morphology**.  
-It determines vowel pronunciation, guides accent usage, and, for nouns, signals gender.
+Stress in Inglisce is **largely predictable by word class and morphology**.  
+It determines vowel pronunciation, governs accent usage, and, for nouns, signals grammatical gender.
 
 ---
 
@@ -15,51 +15,58 @@ It determines vowel pronunciation, guides accent usage, and, for nouns, signals 
 | Adjectives | **first syllable** |
 | Verbs | **last syllable** or **penultimate syllable**, depending on suffix |
 
-**Note:** Default stress does **not** require an accent; non-default stress does.
+**Rule:** Default stress does **not** require an accent.  
+Accents appear only when stress must be **explicitly signaled**.
 
 ---
 
-### Gender and Stress
+### Gender and Stress (Nouns)
 
-For nouns:
+In Inglisce, stress assignment also encodes grammatical gender:
 
-- **First-syllable stress** → masculine  
-- **Other stress patterns** → feminine  
+- **First-syllable stress** → **masculine**
+- **Any other stress pattern** → **feminine**
 
-This provides a morpho-phonological cue to gender without altering the spelling.
+This allows gender to be inferred phonologically without additional marking or agreement morphology.
 
 ---
 
 ### Non-Default Stress
 
-Non-default stress occurs in:
+Non-default stress arises in the following contexts:
 
 - Borrowed words  
-- Morphologically complex forms  
-- Exceptions to standard stress patterns  
+- Morphologically complex formations  
+- Exceptions to regular stress patterns  
 
-It is marked with the **acute accent (´)** to preserve stress clarity.
+When stress cannot be inferred from default rules, it is marked with an accent.
 
-**Examples:**
+- **Acute accent (´)** is used when stress itself must be made explicit.
+- **Grave** and **circumflex** accents may also encode stress when required by vowel quality or gender.
+
+---
+
+### Examples
 
 | English | Inglisce | Notes |
 |---------|----------|-------|
-| father | fáþre | First-syllable stress; accent optional if predictable |
-| unusual | unúșual | Second-syllable stress; accent required |
-| containment | contéinment | Stress on penultimate syllable due to suffix |
+| father | **fáþre** | First-syllable stress; accent optional if fully predictable |
+| unusual | **unúșual** | Second-syllable stress; accent required |
+| containment | **contéinment** | Penultimate stress imposed by suffix |
 
 ---
 
 ### Interaction with Morphology
 
-- **Verbs:** Stress shifts depending on the suffix. Infinitive endings typically attract stress to the **last** or **penultimate** syllable.  
-- **Nouns/Adjectives:** Stress remains on the **first syllable** unless overridden by derivation, borrowing, or non-default patterns.  
+- **Verbs:** Stress is determined by verbal suffixes and typically falls on the **last** or **penultimate** syllable.
+- **Nouns and adjectives:** Stress defaults to the **first syllable** unless overridden by borrowing, derivation, or irregular formation.
 
-This system ensures the acute accent is used **only when stress is non-predictable**, keeping orthography simple and readable.
+This system ensures that stress marking is **economical**: accents are used only when necessary for clarity.
 
 ---
 
 ### References to Diacritics
 
-- See [Acute Accent](acute-accent.md) for rules on marking non-default stress.  
-- See [Tildes](tilde.md) for cases where stress interacts with **/mj/** and **/nj/** sequences.
+- See [Acute Accent](acute.md) for stress-first marking.  
+- See [Grave Accent](grave.md) and [Circumflex Accent](circumflex.md) for stress conditioned by vowel quality and gender.  
+- See [Tildes](tilde.md) for stress interactions with **/mj/** and **/nj/** sequences.
