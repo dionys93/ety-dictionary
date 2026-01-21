@@ -28,6 +28,7 @@ The diaeresis serves three closely related purposes:
 | ü | /w/ | Explicit glide |
 | ï | /ɪ/ | Stressed short vowel before consonants |
 | ï | /i/ | Vowel before another vowel |
+| ÿ | /ɪ/ | Stressed short vowel before consonants |
 | ÿ | /i/ | Stressed vowel derived from *ie + ing* |
 
 ---
