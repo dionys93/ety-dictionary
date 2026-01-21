@@ -1,4 +1,4 @@
-# Diacritics in Inglisce
+## Diacritics in Inglisce
 
 ### Overview
 
