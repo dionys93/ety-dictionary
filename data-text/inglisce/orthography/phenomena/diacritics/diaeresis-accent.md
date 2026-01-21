@@ -88,3 +88,4 @@ This makes stress explicit in derived forms where it would otherwise be unclear.
 | to nauseate | **to nausïait** |
 | to agree | **to agríe** |
 | agreeing | **agrÿing** |
+| analytical | **analÿtical** |
