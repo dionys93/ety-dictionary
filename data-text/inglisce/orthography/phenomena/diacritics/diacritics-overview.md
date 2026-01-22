@@ -125,7 +125,7 @@ Each diacritic occupies a distinct functional niche, preventing overlap and redu
 
 ### Cross-References
 
-* See [Stress](/phenomena/stress.md) for default stress rules
+* See [Stress](../stress.md) for default stress rules
 * See [Acute Accent](acute.md)
 * See [Grave Accent](grave.md)
 * See [Circumflex Accent](circumflex.md)
