@@ -7,7 +7,8 @@ In Inglisce, the **diaeresis** is used on the letters **ü, ï, ÿ**.
 Unlike the acute, grave, and circumflex accents, the diaeresis does **not primarily assign stress**.  
 Its function is to **disambiguate glide formation and vowel relationships** that would otherwise be misread under default orthographic rules.
 
-The diaeresis may co-occur with another accent in the same word.
+The diaeresis may co-occur with another accent in the same word. 
+The diaeresis never changes vowel quality by itself; it alters **interpretation**, not sound inventory.
 
 ---
 
