@@ -29,6 +29,8 @@ The grave accent is used to:
 
 It typically occurs in **borrowed words** or **morphologically complex words** where orthographic clarity is required.
 
+See [Acute Accent](acute.md) for stressed vowels with non-open quality.
+
 ---
 
 ### Examples
