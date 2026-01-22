@@ -17,14 +17,14 @@ Together, the diacritics form a system in which:
 
 ### Inventory of Diacritics
 
-| Diacritic                     | Primary Function           | Secondary Function         |
-| ----------------------------- | -------------------------- | -------------------------- |
-| Acute (´)                     | Stress marking             | Vowel quality              |
-| Grave (`)                     | Stress marking             | Vowel quality              |
-| Circumflex (ˆ)                | Vowel quality              | Conditional stress         |
-| Diaeresis (¨)                 | Glide and vowel separation | Stress clarification       |
-| Tilde (˜)                     | Consonantal structure      | Stress preservation        |
-| Cedilla / Comma below (¸ / ̦) | Consonant quality          | Morphological transparency |
+| Diacritic                     | Primary Function           | Secondary Function              |
+| ----------------------------- | -------------------------- | ------------------------------- |
+| Acute (´)                     | Stress marking             | Vowel quality                   |
+| Grave (`)                     | Stress marking             | Vowel quality                   |
+| Circumflex (ˆ)                | Vowel quality              | Conditional stress              |
+| Diaeresis (¨)                 | Glide and vowel separation | Prosodic disambiguation         |
+| Tilde (˜)                     | Consonantal structure      | Prosodic stability              |
+| Cedilla / Comma below (¸ / ̦) | Consonant quality          | Morphological transparency      |
 
 ---
 
@@ -48,6 +48,8 @@ The **circumflex** primarily marks **vowel quality** arising from historical dev
 * Masculine nouns/adjectives: circumflex marks quality only
 * Feminine nouns/adjectives: circumflex marks both quality and stress
 
+Unlike the acute and grave accents, the circumflex may appear in **unstressed syllables** when vowel quality must be preserved.
+
 ---
 
 ### Stress and Accent Economy
@@ -60,7 +62,7 @@ Stress in Inglisce is **predictable by word class and morphology**:
 As a result:
 
 * **Unaccented words** follow default stress
-* **Accented words** signal deviation from default stress or vowel quality
+* **Accented words** signal deviation from default stress **and/or** non-default vowel quality
 
 Only **one accent** (acute, grave, or circumflex) may appear per word, except when a **diaeresis** is also present.
 
@@ -70,7 +72,7 @@ Only **one accent** (acute, grave, or circumflex) may appear per word, except wh
 
 #### Tilde (˜)
 
-The tilde appears on **m̃** and **ñ**, representing the consonant clusters **/mj/** and **/nj/**.
+The tilde appears on **m̃** and **ñ**, representing the consonantal sequences **/mj/** and **/nj/** as single complex units
 
 Its function is to:
 
