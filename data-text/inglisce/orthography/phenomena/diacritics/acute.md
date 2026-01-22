@@ -31,12 +31,6 @@ The acute accent is used primarily to:
 
 Accented vowels occur wherever stress is non-predictable, especially in borrowed or morphologically complex words. The accent ensures that both **pronunciation** and **syllable prominence** are clear.
 
-### Orthographic Contrast
-
-The acute accent is not used to indicate vowel length or tone.  
-Unaccented vowels are assumed to follow default quality and stress rules.  
-In combination with other diacritics (such as the tilde), the acute accent only appears on the syllable where stress or quality must be explicitly signaled.
-
 ### Examples
 
 | English | Inglisce |
