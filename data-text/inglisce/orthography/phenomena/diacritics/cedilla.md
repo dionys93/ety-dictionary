@@ -132,10 +132,28 @@ The forms **d̦** and **ḑ** are orthographically equivalent and may be used in
 
 ---
 
+## x̦ — Soft X
+
+### Pronunciation and Environment
+
+| Environment | IPA |
+|------------|-----|
+| Always | /kʃ/ |
+
+### Examples
+
+**/kʃ/**
+| English | Inglisce |
+|------------|-----|
+| sexual | **sex̦ual** |
+
+
+---
+
 ### Orthographic Contrast
 
 - Cedillas are **not optional stylistic markers**; they encode phonological information.
-- Unmarked **c, d, s, t** retain their default values.
+- Unmarked **c, d, s, t, x** retain their default values.
 - Cedillas allow Inglisce to maintain Romance-style **derivational transparency** without sacrificing phonetic clarity. 
 
 See [Diacritics Overview](diacritics-overview.md) for a comparison with vowel and consonantal diacritics.
