@@ -171,7 +171,7 @@ The forms **d̦** and **ḑ** are orthographically equivalent and may be used in
 |------------|-----|
 | Between two vowels | /ʧ/ |
 | In **xț**, **nț + vowel** | /ʧ/ |
-| After **consonant + vowel** | /ʃ/ |
+| In **cț**, **pț + vowel** | /ʃ/ |
 
 ### Examples
 
