@@ -44,7 +44,7 @@ The circumflex is used to:
 
 Unlike the acute and grave accents, which always mark stress, the circumflex must be interpreted **in conjunction with morphological information**.
 
-See [Stress](stress.md) for default stress rules and gender-based stress behavior.
+See [Stress](../stress.md) for default stress rules and gender-based stress behavior.
 
 ---
 
