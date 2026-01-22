@@ -4,7 +4,7 @@
 
 In Inglisce, the **cedilla** (or **comma below**, where font support requires it) is used to represent specific consonant sounds consistently and transparently.
 
-Cedillas may appear only on the letters **c, d, s,** and **t**.
+Cedillas may appear only on the letters **c, d, s, t** and **x**.
 
 Their primary purpose is to preserve **etymological continuity** while clearly marking **predictable sound changes** that arise in English derivation.
 
@@ -55,21 +55,23 @@ They do **not** indicate stress, vowel quality, or syllable structure.
 
 ---
 
-## d̦ — Soft D
+## ḑ — Soft D
 
 ### Pronunciation
 
 | Letter | IPA |
 |------|-----|
-| d̦ | /ʤ/ |
+| ḑ | /ʤ/ |
 
 ### Examples
 
 | English | Inglisce |
 |------|-----|
-| educate, education | **ed̦ucait**, **ed̦ucâcion** |
+| educate, education | **eḑucait**, **eḑucâcion** |
 | graduate, graducation | **graḑuait**, **graḑuâcion** |
-| proceed, procedure | **procide**, **procíd̦ure** |
+| proceed, procedure | **procide**, **procíḑure** |
+
+The forms **d̦** and **ḑ** are orthographically equivalent and may be used interchangeably depending on font support.
 
 ---
 
