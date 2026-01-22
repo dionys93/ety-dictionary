@@ -9,6 +9,8 @@ The acute accent signals two things simultaneously:
 1. **Vowel quality** – it indicates a specific pronunciation for the vowel.  
 2. **Stress** – it marks the stressed syllable in a word when stress is not predictable by default rules.
 
+The acute accent never appears on syllables whose stress and vowel quality are fully predictable by default rules.
+
 **Rule:** Only one accent (acute, grave, or circumflex) appears per word, except when a **diaeresis** is also present.
 
 
