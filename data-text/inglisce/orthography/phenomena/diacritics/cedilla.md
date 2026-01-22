@@ -22,6 +22,69 @@ They do **not** indicate stress, vowel quality, or syllable structure.
 
 ---
 
+## Assibilation
+
+**Assibilation** is a regular phonological process in which non-sibilant consonants—most commonly **t** and **d**—shift to sibilant or affricate sounds when followed by a high front vowel, especially **/i/**.
+
+In Inglisce, assibilation occurs most visibly in **morphologically derived forms**, particularly those formed with the suffix **-ion**.
+
+This process is not sporadic or stylistic: it is **predictable, historically grounded, and systematic**, especially in vocabulary of Latin origin. As a result, Inglisce encodes assibilation **orthographically** rather than leaving it implicit.
+
+---
+
+### Assibilation in -ion Derivation
+
+When verbs ending in **-t** or **-d** combine with **-ion**, the consonant is brought into direct contact with a high front vowel. This environment reliably triggers assibilation.
+
+| Base Verb | Derived Noun | Resulting Sound |
+|----------|--------------|-----------------|
+| explode | explósion | /ʒ/ |
+| erode | erósion | /ʒ/ |
+| decîde | decision | /ʒ/ |
+| provîde | provision | /ʒ/ |
+| criâte | criâcion | /ʃ/ |
+| navigait | navigâcion | /ʃ/ |
+| graḑuait | graḑuâcion | /ʤ/ |
+
+In each case, the underlying consonant remains morphologically present, but its **surface realization changes** due to the phonological environment introduced by the suffix.
+
+---
+
+### Orthographic Encoding in Inglisce
+
+Rather than obscuring these relationships (as traditional English spelling often does), Inglisce preserves them by using **cedillas and related consonantal diacritics**:
+
+- **t → ț / ci**
+- **d → d̦ / si**
+- **c → ç**
+
+This allows derived forms such as **graḑuait → graḑuâcion** or **assoçiait → assoçiâcion** to remain visibly connected to their bases while clearly encoding the phonological shift.
+
+Assibilation therefore motivates the **existence and necessity** of consonantal diacritics in Inglisce: they preserve both **phonological accuracy** and **morphological transparency**.
+
+---
+
+### Additional Examples
+
+**/ʒ/ outcomes**
+- to corrode + ion → **corrósion**
+- to envâde + ion → **envâsion**
+- to persuâde + ion → **persuâsion**
+- to collîde + ion → **collision**
+- to divîde + ion → **division**
+
+**/ʃ/ outcomes**
+- to vâcait + ion → **vacâcion**
+- to assoçiait + ion → **assoçiâcion**
+- to apríçiait + ion → **apriçiâcion**
+- to iniçiait + ion → **iniçiâcion**
+- to negoçiait + ion → **negoçiâcion**
+- to diffrençiait + ion → **diffrençiâcion**
+- to repúdiait + ion → **repudiâcion**
+- to mitigait + ion → **mitigâcion**
+
+---
+
 ## ç — Soft C
 
 ### Pronunciation
