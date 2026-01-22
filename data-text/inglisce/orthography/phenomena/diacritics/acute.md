@@ -31,7 +31,7 @@ The acute accent is used primarily to:
 - Mark stress when it deviates from default stress assignment.  
 - Preserve vowel quality that would otherwise be reduced or altered in unstressed syllables.  
 
-Accented vowels occur wherever stress is non-predictable, especially in borrowed or morphologically complex words. The accent ensures that both **pronunciation** and **syllable prominence** are clear.
+Accented vowels occur wherever **stress or vowel quality** is non-predictable, especially in borrowed or morphologically complex words. The accent ensures that both **pronunciation** and **syllable prominence** are clear.
 
 ### Examples
 
