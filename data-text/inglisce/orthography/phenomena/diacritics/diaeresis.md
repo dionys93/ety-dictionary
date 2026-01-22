@@ -69,16 +69,6 @@ This makes stress explicit in derived forms where it would otherwise be unclear.
 
 ---
 
-### Orthographic Contrast
-
-- The diaeresis does **not** indicate vowel length or tone.
-- It does **not introduce stress on its own**, but may **mark a stressed vowel** when stress is already required by morphology.
-- Unlike other diacritics, the diaeresis may **co-occur with another accent** in the same word.
-- See [Acute Accent](acute-accent.md), [Grave Accent](grave-accent.md), and [Circumflex Accent](circumflex.md) for stress- and quality-marking diacritics.
-- See [Stress](stress.md) for default stress behavior.
-
----
-
 ### Examples
 
 | English | Inglisce |
