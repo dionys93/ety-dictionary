@@ -7,10 +7,12 @@ In Inglisce, the **circumflex accent** is used on the vowels **â, î, ê, o�
 Like the acute and grave accents, the circumflex participates in the stress system of Inglisce.  
 However, it differs in that it **primarily encodes vowel quality**, and only **secondarily encodes stress**.
 
-Whether a circumflex-marked vowel also indicates stress depends on the **grammatical gender of the word**:
+Whether a circumflex-marked vowel also indicates stress depends on the **grammatical gender of the noun**:
 
-- In **masculine nouns and adjectives**, the circumflex marks **vowel quality only**.
-- In **feminine nouns and adjectives**, the circumflex marks **both vowel quality and stress**.
+- In **masculine nouns**, the circumflex marks **vowel quality only**.
+- In **feminine nouns**, the circumflex marks **both vowel quality and stress**.
+
+Verbs are not gendered; circumflexes in verbs mark **vowel quality only**, unless stress is independently non-default.
 
 **Rule:** Only one accent (acute, grave, or circumflex) appears per word, except when a **diaeresis** is also present.
 
@@ -64,11 +66,13 @@ Certain circumflex vowels exhibit predictable secondary pronunciations in specif
 
 #### Contextual Values
 
+All contextual values below are **phonologically automatic** and do not require additional marking.
+
 | Sequence | IPA | Environment |
 |--------|-----|-------------|
 | aî | /ɛ/ | Reduced diphthong |
 | ô | /æʊ/ | Before **-n** or vowels |
-| ô | /ʊ/ | Before **-c**, or after **h** or **u** |
+| ô | /ʊ/ | Before **-c** or **d** |
 | oû | /wʊ/ | Without a preceding consonant |
 | oû | /ʊ/ | After a consonant |
 | uô | /wʊ/ | Glide formation |
