@@ -31,15 +31,6 @@ It typically occurs in **borrowed words** or **morphologically complex words** w
 
 ---
 
-### Orthographic Contrast
-
-- The grave accent is **not** used for vowel length or tone.  
-- Words with default stress and vowel quality remain unaccented.
-- See [Acute Accent](acute-accent.md) for rules on stress and vowel quality in other contexts.  
-- See [Tildes](tilde.md) for stress interactions with /mj/ and /nj/ sequences.
-
----
-
 ### Examples
 
 | English | Inglisce |
