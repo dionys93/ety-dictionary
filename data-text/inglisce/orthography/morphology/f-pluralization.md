@@ -1,4 +1,4 @@
-## Pluralization of ⟨-f(e)⟩ Nouns
+## Pluralization of ⟨-fe⟩ Nouns
 
 ### Overview
 
