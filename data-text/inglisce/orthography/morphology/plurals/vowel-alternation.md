@@ -1,0 +1,6 @@
+-ic → -ix
+-âc → -aix
+-eic → -eix
+-oac → -oax
+-oc → -ox
+-erc → -êx
