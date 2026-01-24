@@ -1,0 +1,4 @@
+-re → -ors
+-re → -ars
+-re → -irs
+-îre → -îars
