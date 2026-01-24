@@ -1,0 +1,3 @@
+-cle / gle → -culs / -guls
+-âble → -âbuls
+-able → -abils
