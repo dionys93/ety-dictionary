@@ -1,0 +1,13 @@
+-e → -s
+-ie → -is
+-ge → -ges
+-ch → -ches
+-ss → -sses
+-se → -ses
+-ce → -ces
+-șe → -șes
+-sce → -sces
+-îc → -îcs
+-ac → -acs
+-ec → -ecs
+-ve → -ves
