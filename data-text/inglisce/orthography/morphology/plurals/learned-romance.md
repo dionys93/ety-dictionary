@@ -1,13 +1,13 @@
 ## Plurals of Learned Romance Nouns in **-re**
 
-A small class of inherited and learned nouns ending in **-re** form their plurals by replacing **-re** with a vowel-bearing plural suffix.
-These plurals reflect **older stem vowels**, not Modern English spelling conventions.
+A small class of inherited and learned nouns ending in **-re** retain the final **-e** for **structural purposes**, e.g., to form contractions (*maþre + is = maþre's*).  
+Their plurals replace **-re** with a vowel-bearing suffix, reflecting **historical stem forms**.
 
 This pattern is **lexically restricted** and **non-productive**.
 
 ---
 
-### **-re → -ors**
+## **-re → -ors**
 
 | Singular | Plural    |
 | -------- | --------- |
@@ -17,11 +17,12 @@ This pattern is **lexically restricted** and **non-productive**.
 | broþre   | broþors   |
 | sistre   | sistors   |
 
-This group largely consists of **kinship terms**, continuing older stem vowels preserved in Romance morphology.
+This group largely consists of **kinship terms**.  
+Their plurals preserve **older stem vowels**: *ancestre* (Latin *ancestor*), *maþre* (Old English *modor*), *fáþre* (Old English *fador*), *sistre* (Old English *sistor*).
 
 ---
 
-### **-re → -ars**
+## **-re → -ars**
 
 | Singular | Plural  |
 | -------- | ------- |
@@ -29,11 +30,12 @@ This group largely consists of **kinship terms**, continuing older stem vowels p
 | rivre    | rivars  |
 | uátre   | uátars |
 
-These nouns reflect an **a-stem plural**, often corresponding to Latin *-ā-* or Romance open-vowel stems.
+This is the **default plural** for many -re nouns.  
+Historical influence is present: *rivre* comes from Latin *riparius*.
 
 ---
 
-### **-re → -irs** *(rare)*
+## **-re → -irs** *(rare)*
 
 | Singular | Plural   |
 | -------- | -------- |
@@ -42,11 +44,12 @@ These nouns reflect an **a-stem plural**, often corresponding to Latin *-ā-* or
 | covre    | covirs   |
 | martre   | martirs  |
 
-This plural is **limited and irregular**, occurring in a small number of lexical items and not extended analogically.
+This plural is **rare and irregular**, restricted to a few items.  
+It is influenced by French and other Romance sources: *pôure* (French *pouvoir*), *covre* (French *covrir*), *martre* (Romance *martyr*).
 
 ---
 
-### **-îre → -îars**
+## **-îre → -îars**
 
 | Singular | Plural   |
 | -------- | -------- |
@@ -54,12 +57,13 @@ This plural is **limited and irregular**, occurring in a small number of lexical
 | fuîre   | fuîars  |
 | hîre    | hîars   |
 
-Nouns in **-îre** form plurals with **-îars**, aligning with their Romance adjectival and nominal stem structure.
+Nouns in **-îre** form plurals with **-îars**, reflecting their **former stem patterns**:  
+*desîre* (Latin *desiderare*), *hîre* (Old English *hyrian*), *fuîre* (Old English *fyrian*).
 
 ---
 
-### Notes
+## Notes
 
-* These patterns are **historical and lexical**, not productive rules.
-* They are restricted to **learned or inherited Romance vocabulary**.
-
+* These patterns are **historical and lexical**, not productive rules.  
+* They are restricted to **learned or inherited Romance vocabulary**.  
+* Retention of **-re** is structural, supporting contractions and base integrity.
