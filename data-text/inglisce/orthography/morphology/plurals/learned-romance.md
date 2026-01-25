@@ -13,7 +13,7 @@ This pattern is **lexically restricted** and **non-productive**.
 | -------- | --------- |
 | ancestre | ancestors |
 | maþre    | maþors    |
-| faþre    | faþors    |
+| fáþre    | fáþors    |
 | broþre   | broþors   |
 | sistre   | sistors   |
 
