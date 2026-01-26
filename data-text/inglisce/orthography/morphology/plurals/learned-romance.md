@@ -41,6 +41,7 @@ Historical influence is present: *rivre* comes from Latin *riparius*.
 | -------- | -------- |
 | pôure   | pôuirs  |
 | flôure  | flôuirs |
+| tôure  | tôuirs |
 | covre    | covirs   |
 | martre   | martirs  |
 
