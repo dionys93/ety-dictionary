@@ -1,6 +1,160 @@
--ic → -ix
--âc → -aix
--eic → -eix
--oac → -oax
--oc → -ox
--erc → -êx
+## Vowel Alternation in Plural Formation
+
+### Overview
+
+A small number of Inglisce nouns form plurals with a **visible change to the stem vowel**.
+
+These alternations are **lexical, historical, and non-productive**.  
+They are preserved only where they are already established and contrastive.
+
+No general vowel-change rule is implied.
+
+---
+
+### Vowel Alternation with ⟨-x⟩ Plurals
+
+In several closed lexical sets, nouns ending in ⟨-c⟩ form plurals in ⟨-x⟩.
+In these cases, the plural also reflects a **graphic vowel alternation**.
+
+#### **-ic → -ix**
+
+| Singular | Plural |
+|--------|--------|
+| stic | stix |
+| lic | lix |
+| pic | pix |
+| uic | uix |
+
+---
+
+#### **-ique → -ícs**
+
+| Singular | Plural |
+|--------|--------|
+| pique | pícs |
+| lique | lícs |
+
+---
+
+#### **-uque → -ucs/-úcs**
+
+| Singular | Plural |
+|--------|--------|
+| duque | ducs |
+
+---
+
+#### **-iec → -iex**
+
+| Singular | Plural |
+|--------|--------|
+| biec | biex |
+| chiec | chiex |
+| liec | liex |
+| friec | friex
+
+---
+
+#### **-auc → -aux**
+
+| Singular | Plural |
+|--------|--------|
+| chauc | chaux |
+| stauc | staux |
+| tauc | taux |
+| ouac | ouax |
+
+---
+
+#### **-âc → -aix**
+
+| Singular | Plural |
+|--------|--------|
+| brâc | braix |
+| câc | caix |
+| râc | raix |
+| stâc | staix |
+| faic | faix |
+
+Some nouns do not alternate and retain regular ⟨-s⟩:
+
+| Singular | Plural |
+|--------|--------|
+| lâc | lâcs |
+
+---
+
+#### **-eic → -eix**
+
+| Singular | Plural |
+|--------|--------|
+| breic | breix |
+| steic | steix |
+
+---
+
+#### **-ôc → -eox**
+
+| Singular | Plural |
+|--------|--------|
+| bôc | beox |
+| côc | queox |
+| hôc | heox |
+| lôc | leox |
+
+---
+
+#### **-oac → -oax**
+
+| Singular | Plural |
+|--------|--------|
+| joac | joax |
+| poac | poax |
+
+---
+
+#### **-oc → -ox**
+
+| Singular | Plural |
+|--------|--------|
+| stoc | stox |
+| joc | jox |
+| coc | cox |
+
+---
+
+#### **-erc → -êx**
+
+| Singular | Plural |
+|--------|--------|
+| uerc | uêx |
+
+---
+
+### Lexical Vowel Alternation Without ⟨-s⟩
+
+A small number of high-frequency nouns preserve inherited plural forms with **internal vowel alternation** and non-⟨-s⟩ suffixes.
+
+These are lexical survivals and do not form a productive pattern.
+
+| Singular | Plural |
+|--------|--------|
+| man | men |
+| uôman | uimmen |
+| ox | oxen |
+| chîld | children |
+
+---
+
+### Scope and Limits
+
+- Vowel alternation is **not a general plural strategy**
+- It occurs only in **closed lexical sets**
+- No new forms are created by analogy
+- Predictable phonetic variation is not represented
+
+---
+
+### Orthographic Principle
+
+Inglisce preserves vowel alternation **only where it is lexically established** and already part of the plural form.
