@@ -27,23 +27,6 @@ In these cases, the plural also reflects a **graphic vowel alternation**.
 
 ---
 
-#### **-ique → -ícs**
-
-| Singular | Plural |
-|--------|--------|
-| pique | pícs |
-| lique | lícs |
-
----
-
-#### **-uque → -ucs/-úcs**
-
-| Singular | Plural |
-|--------|--------|
-| duque | ducs |
-
----
-
 #### **-iec → -iex**
 
 | Singular | Plural |
@@ -128,6 +111,23 @@ Some nouns do not alternate and retain regular ⟨-s⟩:
 | Singular | Plural |
 |--------|--------|
 | uerc | uêx |
+
+---
+
+#### **-ique → -ícs**
+
+| Singular | Plural |
+|--------|--------|
+| pique | pícs |
+| lique | lícs |
+
+---
+
+#### **-uque → -ucs/-úcs**
+
+| Singular | Plural |
+|--------|--------|
+| duque | ducs |
 
 ---
 
