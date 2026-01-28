@@ -27,6 +27,20 @@ In these cases, the plural also reflects a **graphic vowel alternation**.
 
 ---
 
+### Morphological Contrast
+
+Some surface-identical singular forms belong to **different morphological bases** and therefore pluralize differently.
+
+| Singular | Plural | Notes |
+|--------|--------|------|
+| pic | pix | lexical noun (“pick as in pickaxe”) |
+| pic(țure) | pics | truncated Inglisce base (*picțure*) |
+
+In these cases, vowel alternation applies only to the **monomorphemic lexical stem**.
+Derived or truncated forms pluralize regularly with ⟨-s⟩.
+
+---
+
 #### **-iec → -iex**
 
 | Singular | Plural |
