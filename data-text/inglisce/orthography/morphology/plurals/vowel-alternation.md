@@ -101,12 +101,15 @@ Some nouns do not alternate and retain regular ⟨-s⟩:
 
 ---
 
-#### **-oac → -oax**
+#### **-oque → -oax**
 
 | Singular | Plural |
 |--------|--------|
-| joac | joax |
-| poac | poax |
+| joque | joax |
+| cloque | cloax |
+| spoque | spoax |
+| stroque | stroax |
+| bloac | bloax |
 
 ---
 
