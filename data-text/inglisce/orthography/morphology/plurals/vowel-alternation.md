@@ -107,9 +107,10 @@ Some nouns do not alternate and retain regular ⟨-s⟩:
 |--------|--------|
 | joque | joax |
 | cloque | cloax |
-| spoque | spoax |
 | stroque | stroax |
 | bloac | bloax |
+| spoac | spoax |
+
 
 ---
 
@@ -118,7 +119,7 @@ Some nouns do not alternate and retain regular ⟨-s⟩:
 | Singular | Plural |
 |--------|--------|
 | stoc | stox |
-| joc | jox |
+| loc | lox |
 | coc | cox |
 
 ---
