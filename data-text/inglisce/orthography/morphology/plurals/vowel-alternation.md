@@ -73,11 +73,33 @@ Derived or truncated forms pluralize regularly with ⟨-s⟩.
 | stâc | staix |
 | faic | faix |
 
+
+TOO MUCH BELOW
+
+#### **-ac → -ax**
+
+| Singular | Plural |
+|--------|--------|
+| bac | bax |
+| hac | hax |
+| stac | stax |
+| rac | rax |
+
+
 Some nouns do not alternate and retain regular ⟨-s⟩:
 
 | Singular | Plural |
 |--------|--------|
 | lâc | lâcs |
+| sac | sacs |
+| tac | tacs |
+| pac | pacs |
+| fax | faxes |
+| sax | saxes |
+| tax | taxes |
+| uax | uaxes |
+
+TOO MUCH ^^^
 
 ---
 
