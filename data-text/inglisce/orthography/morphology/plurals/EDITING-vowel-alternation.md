@@ -21,6 +21,7 @@ In these cases, the plural also reflects a **graphic vowel alternation**.
 | Singular | Plural |
 |--------|--------|
 | stic | stix |
+| tric | trix |
 | lic | lix |
 | pic | pix |
 | uic | uix |
