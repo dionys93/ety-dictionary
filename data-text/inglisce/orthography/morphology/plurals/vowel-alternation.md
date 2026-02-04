@@ -149,6 +149,18 @@ Some nouns do not alternate and retain regular ⟨-s⟩:
 
 ---
 
+#### **-e(ucue → -e(ux**
+
+| Singular | Plural |
+|--------|--------|
+| buc | bux |
+| cleuc | cleux |
+| deuc | deux |
+| puc | pux |
+| seuc | seux |
+
+---
+
 ### Lexical Vowel Alternation Without ⟨-s⟩
 
 A small number of high-frequency nouns preserve inherited plural forms with **internal vowel alternation** and non-⟨-s⟩ suffixes.
