@@ -57,8 +57,8 @@ Verbal forms preserve final ⟨-e⟩ structurally, even where vowel quality is r
 
 | Modern English | Inglisce |
 |---------------|----------|
-| chunk | chonc(ue |
-| bunk | bonc(ue |
+| chunk | chonc |
+| bunk | bonc |
 | funk | fonc |
 | gunk | gonc |
 
