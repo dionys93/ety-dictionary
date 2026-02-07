@@ -1,4 +1,4 @@
-# O
+## O
 
 The letter O and its variants represent multiple vowel sounds in Inglisce.
 
@@ -27,8 +27,8 @@ When followed by two consonants, or is the only vowel, O is typically /ɑ/.
 not, bot, lot, knot → gnot
 
 **Verbs and nouns:**  
-to block → to blocque, block → bloc  
-to lock → to locque, lock → loc  
+to block → to bloche, block → bloc  
+to lock → to loche, lock → loc  
 concoction → concoccion  
 to concoct → to concocte
 
@@ -79,12 +79,12 @@ murmur → mormor /ˈmərˌmər/
 When unstressed and followed by R, O becomes /ər/.
 
 **Examples:**  
-turn → torne, return → retorne  
+
 administrator → administraitor /ədˈmɪnəˌstreɪɾər/  
-gopher → goafor /ˈɡoʊfər/  
+gopher → gófor /ˈɡoʊfər/  
 educator → eḑucaitor /ˈɛdʒəˌkeɪɾər/  
 hammer → hamor /ˈhæmər/  
-murmur → mormor, murder → mordre
+murmur → mormor, murder → mourdre
 
 #### O as /w/
 In specific borrowings and patterns.
@@ -107,41 +107,31 @@ Marks stressed /ɔ/ sound where needed for clarity.
 cost → còste, frost → fròste  
 cough → còffe, tomorrow → tomòro
 
-#### Ó — STRESSED /ɑ/
+#### Ó — STRESSED /oʊ/
 
-**Pronunciation:** /ɑ/ — as in "bot" (always stressed)
+**Pronunciation:** /oʊ/ — as in "note" (always stressed)
 
 **PURPOSE**  
-Marks stressed /ɑ/ in words where stress placement needs clarification.
+Marks stressed /oʊ/ in words where stress placement needs clarification.
 
 **EXAMPLES**
+hypnosis → hipnósis  
+bold → bóld, cold → cóld, old → óld  
+sold → sóld, gold → góld  
+hold → hóld, mold → móld
+boast → bóste, host → hóste
+post → póste, roast → róste
+toast → tóste
 
-**Greek-derived terms:**  
-anonymous → anónimus  
-phonology → fonólogie  
-phonological → fonológical
-
-**Latin terms:**  
-contract → cóntract
 
 #### Ô — MULTIPLE STRESSED SOUNDS
 
-**Pronunciation:** /oʊ/, /aʊ/, /ʊ/ (always stressed)
+**Pronunciation:** /aʊ/, /ʊ/ (always stressed)
 
 **PURPOSE**  
 Context-dependent stressed vowel: default /oʊ/, before N/U → /aʊ/, before C/D → /ʊ/
 
 **EXAMPLES**
-
-**Basic Ô = /oʊ/ (default):**  
-hypnosis → hipnôsis  
-bold → bôld, cold → côld, old → ôld  
-sold → sôld, gold → gôld  
-hold → hôld, mold → môld
-boast → bôste, coast → côste  
-ghost → gôste, host → hôste
-post → pôste, roast → rôste
-toast → tôste
 
 **Ô + N, Vowel = /aʊ/:**  
 sound → sônd, around → arônd  
@@ -149,7 +139,9 @@ ground → grônd
 cow → côe, vow → vôe
 cows → côus, vows → vôus
 now → nôe, how → hôe
-to devour → to devôare
+to devour → to devôer
+dower → dôare /ˈdaʊʷər/
+dowry → dôrie /ˈdaʊ.ri/
 
 **Ô + C/D = /ʊ/:**  
 book → bôc, cook → côc, look → lôc  
