@@ -6,23 +6,29 @@ The digraph OA represents a single vowel sound in Inglisce.
 
 - **OA** — /oʊ/ "boat" — boat → bote (singular), boats (plural)
 
+/aʊ/:
+
+devour → devoare /də.ˈvaʊʷər/
+dower → doare /ˈdaʊʷər/
+dowry → doarie /ˈdaʊ.ri/
+
 OA consistently represents /oʊ/ in all positions. Singular forms take a final -E, while plurals add -S directly to the OA stem.
 
 **Verbs and basic words:**  
-foam → foame, foams  
-groan → groane, groans  
-moan → moane, moans  
+foam → fome, foams  
+groan → grone, groans  
+moan → mone, moans  
 roan
 
 **Words replacing O + silent E:**  
-bone → boan, boans  
-clone → cloan, cloans  
-comb → coam, coams  
-drone → droan, droans  
-home → hoam, hoams  
-stone → stoan, stoans  
-throne → þroan, þroans  
-zone → zoan, zoans
+bone → bone, boans  
+clone → clone, cloans  
+comb → coame, coams  
+drone → drone, droans  
+home → home, hoams  
+stone → stone, stoans  
+throne → þrone, þroans  
+zone → zone, zoans
 
 **Other nouns:**  
 bloat → blote, bloats  
