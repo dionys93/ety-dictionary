@@ -15,8 +15,8 @@ Related digraphs: See OA, OI, OU, OY files
       — /ər/ "doctor" (unstressed before R) — doctor  
       — /w/ "wet" — wet → ouet, white → oît
 - **Ò** — /ɔ/ "cost" (stressed) — cost → còste
-- **Ó** — /ɑ/ "father" (stressed) — phonology → fonólogie
-- **Ô** — /oʊ/ "old" (stressed); /aʊ/ (before N, or a vowel); /ʊ/ (before C/D) — old → ôld; sound → sônd; book → bôc
+- **Ó** — /oʊ/ "old" (stressed) — old → óld
+- **Ô** — /aʊ/ (before N, or a vowel) — sound → sônd; /ʊ/ (before C/D) — book → bôc
 
 ### Base Letter O
 
@@ -31,6 +31,10 @@ to block → to bloche, block → bloc
 to lock → to loche, lock → loc  
 concoction → concoccion  
 to concoct → to concocte
+knowledge → gnollage
+to acknowledge → to acgnollage
+phonology → fonologie
+phonological → fonological
 
 #### O = /oʊ/
 
@@ -55,7 +59,7 @@ OH represents /ɔ/, typically in irregular past tenses.
 
 **Examples:**  
 bought → boht, fought → foht  
-sought → çoht, thought → þoht
+sought → soht, thought → þoht
 
 #### Unstressed O = /ə/
 When unstressed, O is often /ə/.
@@ -175,5 +179,5 @@ woman → uôman, wolf → uôlfe
 
 **Diacritics summary:**
 - **Ò** = stressed /ɔ/ sound
-- **Ó** = stressed /ɑ/ in Greek/Latin words
-- **Ô** = context-dependent (default /oʊ/, before N/U = /aʊ/, before C/D = /ʊ/)
+- **Ó** = stressed /oʊ/
+- **Ô** = context-dependent (before N/vowel = /aʊ/, before C/D = /ʊ/)
