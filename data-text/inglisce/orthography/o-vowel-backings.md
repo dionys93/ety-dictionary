@@ -96,6 +96,5 @@ In polysyllabic words, ⟨o⟩ commonly reflects unstressed vowel reduction rath
 ### Notes and Limitations
 
 - This replacement does not constitute a general ⟨u → o⟩ rule.
-- It does not apply to learned Romance vocabulary.
 - It is distinct from ⟨eu⟩, which marks reduced central vowels in closed Germanic roots under different constraints.
 - Forms are lexically restricted and should not be extended analogically.
