@@ -1,4 +1,4 @@
-# OA
+## OA
 
 The digraph OA represents a single vowel sound in Inglisce.
 
@@ -14,16 +14,16 @@ dowry → doarie /ˈdaʊ.ri/
 
 OA consistently represents /oʊ/ in all positions. Singular forms take a final -E, while plurals add -S directly to the OA stem.
 
-**Verbs and basic words:**  
-foam → fome, foams  
+**Verbs and basic words:** 
+comb → coame, coams
+foam → foame, foams  
 groan → grone, groans  
 moan → mone, moans  
 roan
 
 **Words replacing O + silent E:**  
 bone → bone, boans  
-clone → clone, cloans  
-comb → coame, coams  
+clone → clone, cloans    
 drone → drone, droans  
 home → home, hoams  
 stone → stone, stoans  
