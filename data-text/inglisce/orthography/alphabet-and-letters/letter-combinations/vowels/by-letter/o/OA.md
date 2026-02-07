@@ -104,4 +104,4 @@ In many cases, **OA replaces historical O + silent E** while preserving pronunci
 ## Cross-References
 
 - **IPA-oʊ.txt** — /oʊ/ sound patterns  
-- **O.txt** — O + silent E usage  
+- **O.txt** — O + silent E usage
