@@ -1,127 +1,172 @@
 # AI
 
-The digraph AI and its variant represent multiple vowel sounds in Inglisce.
+The digraph **AI** and its variants represent **multiple vowel values** in Inglisce, determined by **environment, stress, and morphology**.
 
-AI uses the following diacritic: AÎ
+**Diacritics used:** AÎ  
+**Related variant:** ÁI
 
-Related variant: ÁI
+---
 
-### PRONUNCIATION SUMMARY
+## Pronunciation Summary
 
-- **AI** — /eɪ/ "say" — say → saie
+### Base and Variant Values
 
-  — /ɛr/ "care" (before R) — care → caire  
+| Spelling | IPA | Environment | Example |
+|--------|-----|-------------|---------|
+| AI | /eɪ/ | Default, esp. verbs | say → **saie** |
+| AI | /ɛr/ | Before R | care → **caire** |
+| AI | /ɛ/ | Lexical exceptions | lettuce → **laitace** |
+| AI | /aɪ/ | Before H | night → **naiht** |
+| AÎ | /ɛr/ | Stressed before R | comparison → **compaîrasson** |
+| ÁI | /aɪ/ | Restricted lexical class | fry → **frae**, frys → **fráis** |
 
-  — /ɛ/ "lettuce" (exceptions) — lettuce → laitace
+---
 
-  — /aɪ/ "night" (before H) — night → naiht
-- **AÎ** — /ɛr/ "comparison" (shows stress) — comparison → compaîrasson
-- **ÁI** — /aɪ/ "fry" — fry → frae, frys → fráis
+## The Digraph AI
 
-### The Digraph AI
+### Default AI → /eɪ/
 
-#### Basic AI = /eɪ/
-AI typically represents /eɪ/ in verbs and derived forms.
+AI most commonly represents **/eɪ/**, especially in **verbs and derived forms**.
 
-**Examples:**  
-to say → to saie /tə seɪ/  
-to pay → to paie /tə peɪ/  
-to stay → to staie /tə steɪ/  
-to play → to plaie /tə pleɪ/  
-animator → animaitor /ˈænɪˌmeɪɾər/  
-demonstrator → demonstraitor /ˈdɛmənˌstreɪɾər/
+#### Core Verb Pattern
 
-*Note: The noun forms of these words use -AY instead (say, pay, stay, play)*
+| Modern English | Inglisce | IPA |
+|---------------|----------|-----|
+| to say | saie | /seɪ/ |
+| to pay | paie | /peɪ/ |
+| to stay | staie | /steɪ/ |
+| to play | plaie | /pleɪ/ |
 
-#### AI + GN = Stressed /eɪ/
-The stress is always on AI when followed by the letters GN.
+*Note: Noun forms of these words use **-AY** instead (see **AY.txt**).*
 
-**Examples:**  
-gain → gaigne  
-rain → raigne  
-stain → staigne  
-complaint → complaignt /kəmˈpleɪnt/  
-campaign → campaigne /kæmˈpeɪn/  
-champagne → ciampaigne /ʃæmˈpeɪn/
+---
 
-#### AI + R = /ɛr/
-When AI is followed by R, the combination is pronounced /ɛr/.
+#### Derived and Agentive Forms
 
-**Verb examples (unstressed):**  
-to care → to caire /tə kɛr/  
-to pair → to paire /tə pɛr/  
-to compare → to compaire /tə kəmˈpɛr/  
-stairs → stairs /stɛrz/
+| Modern English | Inglisce | IPA |
+|---------------|----------|-----|
+| animator | animaitor | /ˈænɪˌmeɪɾər/ |
+| demonstrator | demonstraitor | /ˈdɛmənˌstreɪɾər/ |
 
-#### AI + H = /aɪ/
-Before H, AI represents /aɪ/.
+---
 
-**Examples:**  
-night → naiht (from Old English næht)  
-might, mighty → maiht, maihty (from Old English mæht)  
-to die → to daihe
+### AI + GN → Stressed /eɪ/
 
-#### Exceptions: AI = /ɛ/
-AI represents /ɛ/ in a few words:
+When followed by **GN**, AI is **always stressed**.
 
-**Examples:**  
-lettuce → laitace  
-to catch → to caiche  
-dead → daid  
-stead → staid  
-breadth → braidþ
+| Modern English | Inglisce | IPA |
+|---------------|----------|-----|
+| gain | gaigne | |
+| rain | raigne | |
+| stain | staigne | |
+| complaint | complaignt | /kəmˈpleɪnt/ |
+| campaign | campaigne | /kæmˈpeɪn/ |
+| champagne | ciampaigne | /ʃæmˈpeɪn/ |
 
-### Diacritics
+---
 
-#### AÎ — STRESSED /ɛr/
+### AI + R → /ɛr/
 
-**Pronunciation:** /ɛr/ — as in "care" (always stressed)
+AI represents **/ɛr/** before R.
 
-**PURPOSE**  
-Marks stressed /ɛr/ before R in nouns and adjectives.
+#### Verb Forms (Typically Unstressed)
 
-**EXAMPLES**  
-comparison → compaîrasson /kəmˈpɛrəsən/  
-comparable → compaîrable /kəmˈpɛrəbəl/  
-comparative → compaîratif /kəmˈpɛrəɾɪv/
+| Modern English | Inglisce | IPA |
+|---------------|----------|-----|
+| to care | caire | /kɛr/ |
+| to pair | paire | /pɛr/ |
+| to compare | compaire | /kəmˈpɛr/ |
+| stairs | stairs | /stɛrz/ |
 
-### Related Variant
+---
 
-#### ÁI — /aɪ/
+### AI + H → /aɪ/
 
-**Pronunciation:** /aɪ/ — as in "fry"
+Before **H**, AI represents **/aɪ/**, primarily in Germanic-origin words.
 
-**PURPOSE**  
-Represents /aɪ/ in specific words (not a common pattern).
+| Modern English | Inglisce | Origin Note |
+|---------------|----------|-------------|
+| night | naihte | OE *næht* |
+| might | maihte | OE *mæht* |
+| mighty | maihty | OE *mæhtig* |
+| to die | daihe | |
 
-**EXAMPLES**  
-fry, frys → frae, fráis (a small fish)  
-tonight → tonáit  
-might → máit (verb)
-aisle, aisles → aiele, aiels
+---
 
-### Origin
+### Exceptions: AI → /ɛ/
 
-Typically found in words of French origin, but also appears in some Germanic words.
+A small, closed class where AI represents **/ɛ/**.
 
-### Cross-References
+| Modern English | Inglisce |
+|---------------|----------|
+| lettuce | laitace |
+| to catch | caic̃e |
+| dead | daid |
+| stead | staid |
+| breadth | braidþ |
+| depth | daipþ |
 
-- For /eɪ/ sound patterns, see IPA-eɪ.txt
-- For /ɛr/ sound patterns, see IPA-ɛr.txt  
-- For /ɛ/ sound patterns, see IPA-ɛ.txt
-- For /aɪ/ sound patterns, see IPA-aɪ.txt
-- Contrasts with AY.txt (nouns use AY)
-- Related to AE.txt (different distribution)
+---
 
-### Teaching Notes
+## Diacritics
 
-**Primary patterns:**
-- Default AI = /eɪ/, especially in verbs
-- AI + R = /ɛr/ (stressed version uses AÎ)
-- AI + GN always stressed on AI
-- AI + H = /aɪ/ (Germanic words)
+### AÎ — Stressed /ɛr/
 
-**Key distinctions:**
-- Verbs use AI for /eɪ/, nouns use AY
-- Stressed /ɛr/ uses diacritic (AÎ)
-- Small set of /ɛ/ exceptions to memorize
+Marks **stressed /ɛr/** before R in **nouns and adjectives**.
+
+| Modern English | Inglisce | IPA |
+|---------------|----------|-----|
+| comparison | compaîrasson | /kəmˈpɛrəsən/ |
+| comparable | compaîrable | /kəmˈpɛrəbəl/ |
+| comparative | compaîratif | /kəmˈpɛrəɾɪv/ |
+
+---
+
+## Related Variant
+
+### ÁI — /aɪ/
+
+A restricted spelling used for **lexical /aɪ/** where neither AI + H nor AE applies.
+
+| Modern English | Inglisce | Note |
+|---------------|----------|------|
+| fry, fries | frae, fráis | "young fish" |
+| chai, chais | c̃ae, c̃ais | |
+| eye, eyes | eaie, eais | |
+| tonight | tonáit | |
+| may, might | maie, máit | |
+| aisle, aisles | aiele, aiels | |
+
+---
+
+## Origin Notes
+
+AI appears most commonly in **French-derived vocabulary**, with secondary use in **Germanic forms** (especially AI + H).
+
+---
+
+## Cross-References
+
+- **IPA-eɪ.txt** — /eɪ/  
+- **IPA-ɛr.txt** — /ɛr/  
+- **IPA-ɛ.txt** — /ɛ/  
+- **IPA-aɪ.txt** — /aɪ/  
+- **AY.txt** — noun counterpart to AI verbs  
+- **AE.txt** — Latin *-ficare* /aɪ/
+
+---
+
+## Teaching Notes
+
+### Primary Patterns
+
+- Default **AI = /eɪ/** (especially verbs)
+- **AI + R = /ɛr/** (stressed form uses **AÎ**)
+- **AI + GN** always stresses AI
+- **AI + H = /aɪ/** (mostly Germanic)
+
+### Key Distinctions
+
+- Verbs use **AI**, nouns use **AY**
+- Stressed /ɛr/ requires **AÎ**
+- /ɛ/ values are **lexical exceptions**
