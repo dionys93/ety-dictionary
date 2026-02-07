@@ -1,51 +1,94 @@
 # AE
 
-The digraph AE represents a single vowel sound in Inglisce.
+The digraph **AE** represents a **single vowel value** in Inglisce.
 
-### PRONUNCIATION SUMMARY
+---
 
-- **AE** — /aɪ/ "amplify" — amplify → amplifae
+## Pronunciation Summary
 
-### The Digraph AE
+| Spelling | IPA | Example (Modern English) | Inglisce |
+|--------|-----|--------------------------|----------|
+| AE | /aɪ/ | amplify | amplifae |
 
-#### AE = /aɪ/
-AE represents /aɪ/ and appears primarily in verbs derived from Latin "-ficare" stems.
+---
 
-### Latin -FACERE Verbs
+## The Digraph AE
 
-AE is most commonly found in words derived from Latin verbs using "facere" (to make/do) as their stem. These correspond to Modern English "-fy" endings.
+### AE → /aɪ/
 
-**Examples:**  
-to justify → to justifae /tə ˈdʒəstɪˌfaɪ/  
-to amplify → to amplifae /tə ˈæmplɪˌfaɪ/  
-to clarify → to clârifae /tə ˈklærɪˌfaɪ/  
-to modify → to modifae /tə ˈmɑdɪˌfaɪ/  
-to simplify → to simplifae /tə ˈsɪmplɪˌfaɪ/  
-to verify → to verifae /tə ˈvɛrɪˌfaɪ/
+The digraph **AE** consistently represents **/aɪ/** and appears **primarily in verbs** derived from Latin *-facere* (“to make, do”).
 
-### Etymology
+---
 
-This pattern derives from the Latin verb ending "-ficare" which evolved through French "-fier" into English "-fy". Inglisce restores a more phonetic spelling with AE consistently representing the /aɪ/ sound.
+## Latin *-FACERE* Verbs
 
-**Latin Evolution Path:**  
-iustificare [Latin] → justifier [French] → justify [English] → justifae [Inglisce]  
-amplificare [Latin] → amplifier [French] → amplify [English] → amplifae [Inglisce]
+Words derived from Latin *facere* via French *-fier* and English *-fy* take **-fae** in Inglisce.
 
-### Cross-References
+### Core Pattern
 
-- For /aɪ/ sound patterns, see IPA-aɪ.txt
-- Related to Î (also /aɪ/) in I.txt
-- Related to YH digraph (also /aɪ/) in YH.txt
+| Modern English | Inglisce | IPA |
+|---------------|----------|-----|
+| to justify | to justifae | /tə ˈdʒəstɪˌfaɪ/ |
+| to amplify | to amplifae | /tə ˈæmplɪˌfaɪ/ |
+| to clarify | to clârifae | /tə ˈklærɪˌfaɪ/ |
+| to modify | to modifae | /tə ˈmɑdɪˌfaɪ/ |
+| to simplify | to simplifae | /tə ˈsɪmplɪˌfaɪ/ |
+| to verify | to verifae | /tə ˈvɛrɪˌfaɪ/ |
 
-### Teaching Notes
+---
 
-**Primary pattern:**
-- English "-fy" verbs → Inglisce "-fae"
-- Always pronounced /aɪ/
+## Etymology
 
-**Key distinction:**
-- AE is specifically for Latin-derived "-ficare" verbs
-- Creates consistent pattern for entire verb family
+The **-fae** ending reflects the historical development of Latin *-ficare* verbs while preserving modern pronunciation.
 
-**Memory aid:**
-If it ends in "-fy" in Modern English and comes from Latin "-ficare", it becomes "-fae" in Inglisce.
+### Latin Evolution Path
+
+| Stage | Form |
+|-----|------|
+| Latin | iustificare |
+| French | justifier |
+| Modern English | justify |
+| Inglisce | justifae |
+
+| Stage | Form |
+|-----|------|
+| Latin | amplificare |
+| French | amplifier |
+| Modern English | amplify |
+| Inglisce | amplifae |
+
+This restores a **transparent and predictable spelling** for /aɪ/ in this verb class.
+
+---
+
+## Morphological Notes
+
+- **AE** is **verb-restricted**
+- The pattern is **productive** for Latin-derived *-ficare* verbs
+- Nouns and adjectives derived from these verbs follow standard morphology rules
+
+---
+
+## Cross-References
+
+- **IPA-aɪ.txt** — /aɪ/  
+- **I.txt** — Î (also /aɪ/)  
+- **YH.txt** — YH digraph (/aɪ/)
+
+---
+
+## Teaching Notes
+
+### Primary Pattern
+
+- English **-fy** → Inglisce **-fae**
+- **AE is always /aɪ/**
+
+### Key Distinction
+
+- AE is restricted to **Latin-derived *-ficare* verbs**
+- Avoid using AE for native /aɪ/ words
+
+### Memory Aid
+
+> If it ends in **-fy** in Modern English *and* comes from Latin *-ficare*, it becomes **-fae** in Inglisce.
