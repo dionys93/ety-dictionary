@@ -76,7 +76,7 @@ Typically in **past tense verbs**.
 |---------------|----------|-----|
 | found | faund | /faʊnd/ |
 | wound (verb) | uaund | /waʊnd/ |
-| ground | graund | /ɡraʊnd/ |
+| ground (verb) | graund | /ɡraʊnd/ |
 
 ---
 
@@ -84,11 +84,11 @@ Typically in **past tense verbs**.
 
 ### AÛ — Stressed /aʊ/
 
-| Spelling | IPA | Example (Modern English) | Inglisce |
-|----------|-----|-------------------------|----------|
-| AÛ | /aʊ/ | loud | laûd |
-| AÛ | /aʊ/ | aloud | alaûd |
-| AÛ | /aʊ/ | sour | saûre |
+| Example (Modern English) | Inglisce |
+|-------------------------|----------|
+| loud | laûd |
+| aloud | alaûd |
+| sour | saûre |
 
 **Purpose:** Marks stressed /aʊ/ in general vocabulary.
 
