@@ -1,4 +1,4 @@
-## O
+# O
 
 The letter O and its variants represent multiple vowel sounds in Inglisce.
 
