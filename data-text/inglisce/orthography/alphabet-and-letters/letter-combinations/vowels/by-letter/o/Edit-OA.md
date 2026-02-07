@@ -5,14 +5,11 @@ The digraph OA represents a single vowel sound in Inglisce.
 ### PRONUNCIATION SUMMARY
 
 - **OA** — /oʊ/ "boat" — boat → bote (singular), boats (plural)
-
 /aʊ/:
+couch → coac̃e
+vouch → voac̃e
+pouch → poac̃e
 
-devour → devoare /də.ˈvaʊʷər/
-dower → doare /ˈdaʊʷər/
-dowry → doarie /ˈdaʊ.ri/
-
-OA consistently represents /oʊ/ in all positions. Singular forms take a final -E, while plurals add -S directly to the OA stem.
 
 **Verbs and basic words:** 
 comb → coame, coams
