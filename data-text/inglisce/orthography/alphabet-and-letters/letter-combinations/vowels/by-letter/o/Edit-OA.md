@@ -1,4 +1,4 @@
-## OA
+# OA
 
 The digraph OA represents a single vowel sound in Inglisce.
 
