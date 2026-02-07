@@ -1,95 +1,120 @@
 # AU
 
-The digraph AU and its variant represent multiple vowel sounds in Inglisce.
+The digraph **AU** and its variant **AÛ** represent **multiple vowel values** in Inglisce, depending on **environment, stress, and morphology**.
 
-AU uses the following diacritic: AÛ
+---
 
-### PRONUNCIATION SUMMARY
+## Pronunciation Summary
 
-- **AU** — /ɔ/ "auto" — autumn → automn  
-       — /ɔr/ "roar" (before R) — roar → raure  
-       — /aʊ/ "found" (before ND) — found → faund
-- **AÛ** — /aʊ/ "loud" (stressed) — loud → laûd
+| Spelling | IPA | Environment | Example (Modern English) | Inglisce |
+|----------|-----|-------------|--------------------------|----------|
+| AU | /ɔ/ | Default | autumn | automn |
+| AU | /ɔr/ | Before R | roar | raure |
+| AU | /aʊ/ | Before ND (past tense verbs) | found | faund |
+| AÛ | /aʊ/ | Stressed | loud | laûd |
 
-### The Digraph AU
+---
 
-#### Basic AU = /ɔ/
-In most contexts, AU is pronounced /ɔ/.
+## The Digraph AU
 
-**Examples:**  
-Australia → Austrâlha /ɔˈstreɪljə/  
-autumn → automn /ˈɔɾəm/  
-automatic /ˌɔɾəˈmæɾɪk/  
-coffee → caufie /ˈkɔfi/
+### AU → /ɔ/
 
-#### Verb/Noun Distinction
-Verbs use -AHE/-AUE while related noun plurals use -AUS.
+In most contexts, AU represents **/ɔ/**.
 
-**Examples:**  
-to saw → to sahe /tə sɔ/  
-the saw → þe sahe, saus /ðə sɔ/
+| Modern English | Inglisce | IPA |
+|---------------|----------|-----|
+| Australia | Austrâlia | /ɔˈstreɪljə/ |
+| autumn | automn | /ˈɔɾəm/ |
+| automatic | automatic | /ˌɔɾəˈmæɾɪk/ |
+| coffee | caufie | /ˈkɔfi/ |
 
-to draw → to drahe /tə drɔ/  
-the draw → þe drahe, draus /ðə drɔ/
+---
 
-to caw → to caue
+### Verb/Noun Distinction
 
-#### AU + R = /ɔr/
-When AU is followed by R, it's pronounced /ɔr/.
+Verbs often take **-AHE / -AUE**, while related **noun plurals** take **-AUS**.
 
-**Unstressed examples:**  
-roar → raure /rɔr/  
-boar → baure /bɔr/  
-oar → aure /ɔr/  
-drawer → draure
+| Function | Modern English | Inglisce | IPA |
+|----------|----------------|----------|-----|
+| Verb | to saw | to sahe | /sɔ/ |
+| Noun | the saw | þe sahe, saus | /sɔ/ |
+| Verb | to draw | to drahe | /drɔ/ |
+| Noun | the draw | þe drahe, draus | /drɔ/ |
+| Verb/Noun | caw | caue | /kɔ/ |
 
-**UA + R = /wɔr/ (flipped pattern):**  
-warden → uardan  
-to warn → to uarne  
-reward → reüard  
-award → aüard  
-warm → uarm  
-war → guare (irregular)  
-to quarrel → to quarele
+---
 
-#### AU + ND = /aʊ/
-Typically in past tense verb forms.
+### AU + R → /ɔr/
 
-**Examples:**  
-She found it → Sie faund it  
-He wound it up → Hie uaund it up  
-We ground the beans → Uie graund þe biens
+| Modern English | Inglisce | IPA | Notes |
+|---------------|----------|-----|-------|
+| roar | raure | /rɔr/ | Old English *rarian* |
+| soar | saure | /sɔr/ | Vulgar Latinate *exaurare* |
+| boar | baure | /bɔr/ | Old English *bar* |
+| oar | aure | /ɔr/ | Old English *ar* |
+| drawer | draure | /drɔr/ | Old English *dragan* |
 
-### Diacritics
+#### UA + R → /wɔr/ (“flipped pattern”)
 
-#### AÛ — STRESSED /aʊ/
+| Modern English | Inglisce | Notes |
+|---------------|----------|-------|
+| warden | uardan | |
+| to warn | to uarne | |
+| reward | reüard | |
+| award | aüard | |
+| warm | uarm | |
+| war | guare | irregular |
+| to quarrel | to quarele | |
 
-**Pronunciation:** /aʊ/ — as in "loud" (always stressed)
+---
 
-**PURPOSE**  
-Marks stressed /aʊ/ sound in general vocabulary.
+### AU + ND → /aʊ/
 
-**EXAMPLES**  
-loud → laûd /laʊd/  
-aloud → alaûd /əˈlaʊd/  
-sour → saûr
+Typically in **past tense verbs**.
 
-### Cross-References
+| Modern English | Inglisce | IPA |
+|---------------|----------|-----|
+| found | faund | /faʊnd/ |
+| wound (verb) | uaund | /waʊnd/ |
+| ground | graund | /ɡraʊnd/ |
 
-- For /ɔ/ sound patterns, see IPA-ɔ.txt
-- For /ɔr/ sound patterns, see IPA-ɔr.txt  
-- For /aʊ/ sound patterns, see IPA-aʊ.txt
-- Related to AO.txt (also /ɔ/)
-- See also Ô.txt (context-dependent, includes /aʊ/)
+---
 
-### Teaching Notes
+## Diacritics
 
-**Primary patterns:**
-- Default AU = /ɔ/ (most common)
-- AU + R = /ɔr/
-- AU + ND = /aʊ/ (past tense verbs)
-- Stressed /aʊ/ uses diacritic (AÛ)
+### AÛ — Stressed /aʊ/
 
-**Key distinctions:**
-- Verb/noun distinction in plural forms (-AUS for noun plurals)
-- UA + R creates /wɔr/ pattern (flipped from AU + R)
+| Spelling | IPA | Example (Modern English) | Inglisce |
+|----------|-----|-------------------------|----------|
+| AÛ | /aʊ/ | loud | laûd |
+| AÛ | /aʊ/ | aloud | alaûd |
+| AÛ | /aʊ/ | sour | saûre |
+
+**Purpose:** Marks stressed /aʊ/ in general vocabulary.
+
+---
+
+## Cross-References
+
+- **IPA-ɔ.txt** — /ɔ/  
+- **IPA-ɔr.txt** — /ɔr/  
+- **IPA-aʊ.txt** — /aʊ/  
+- **AO.txt** — also /ɔ/  
+- **Ô.txt** — context-dependent (includes /aʊ/)
+
+---
+
+## Teaching Notes
+
+### Primary Patterns
+
+- Default **AU = /ɔ/**  
+- **AU + R = /ɔr/**  
+- **AU + ND = /aʊ/** (past tense verbs)  
+- Stressed /aʊ/ → **AÛ**
+
+### Key Distinctions
+
+- Verb/noun distinction: plurals → **-AUS**  
+- UA + R creates **/wɔr/** flipped pattern  
+- AU is mostly predictable; diacritic only used for stressed /aʊ/
