@@ -1,38 +1,69 @@
 # AO
 
-The digraph AO represents a single vowel sound in Inglisce.
+The digraph **AO** represents a **single, stable vowel value** in Inglisce.
 
-### PRONUNCIATION SUMMARY
+---
 
-- **AO** — /ɔ/ "dawn" — dawn → daone
+## Pronunciation Summary
 
-### The Digraph AO
+| Spelling | IPA | Example (Modern English) | Inglisce |
+|--------|-----|--------------------------|----------|
+| AO | /ɔ/ | dawn | daone |
 
-#### AO = /ɔ/
-AO consistently represents /ɔ/ and appears in both verb and noun forms. Directly borrowed from French to represent this sound.
+---
 
-**Examples:**  
-dawn → daone /dɔn/  
-fawn → faone /fɔn/  
-lawn → laone /lɔn/  
-pawn → paone /pɔn/
+## The Digraph AO
 
-### Origin
+### AO → /ɔ/
 
-Directly borrowed from French to represent /ɔ/.
+The digraph **AO** consistently represents **/ɔ/** and appears in **both nouns and verbs**.  
+This spelling is **directly borrowed from French** to represent the open-mid back rounded vowel.
 
-### Cross-References
+---
 
-- For /ɔ/ sound patterns, see IPA-ɔ.txt
-- Related to Ò.txt (stressed /ɔ/)
-- See also OH in O.txt (also represents /ɔ/)
+### Core Examples
 
-### Teaching Notes
+| Modern English | Inglisce | IPA |
+|---------------|----------|-----|
+| dawn | daone | /dɔn/ |
+| fawn | faone | /fɔn/ |
+| lawn | laone | /lɔn/ |
+| pawn | paone | /pɔn/ |
 
-**Primary pattern:**
-- AO consistently represents /ɔ/
-- No variation based on context
+---
 
-**Key distinction:**
-- Fairly common digraph in Inglisce
-- Appears in both verb and noun forms
+## Morphological Notes
+
+- AO is **invariable**
+- No alternation based on stress or position
+- Functions identically in **noun and verb** forms
+
+---
+
+## Origin
+
+| Source | Note |
+|------|------|
+| French | AO adopted to represent /ɔ/ transparently |
+
+---
+
+## Cross-References
+
+- **IPA-ɔ.txt** — /ɔ/  
+- **Ò.txt** — stressed /ɔ/  
+- **O.txt** — **OH** digraph (/ɔ/)
+
+---
+
+## Teaching Notes
+
+### Primary Pattern
+
+- **AO always = /ɔ/**
+- No contextual variation
+
+### Key Distinction
+
+- AO is one of the **most stable vowel digraphs** in Inglisce
+- Use AO whenever /ɔ/ needs clear, unambiguous marking
