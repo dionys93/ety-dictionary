@@ -1,183 +1,283 @@
 # O
 
-The letter O and its variants represent multiple vowel sounds in Inglisce.
+The letter **O** and its diacritic variants represent **multiple vowel values** in Inglisce, determined by **stress, environment, and morphology**.
 
-O uses the following diacritics: Ò, Ó, Ô
+**Diacritics used:** Ò, Ó, Ô  
+**Related digraphs:** OA, OI, OU, OY
 
-Related digraphs: See OA, OI, OU, OY files
+---
 
-### PRONUNCIATION SUMMARY
+## Pronunciation Summary
 
-- **O** — /ɑ/ "lock" — lock → loc  
-      — /oʊ/ "home" — home  
-      — /ɔ/ "caught" (before H) — bought → boht  
-      — /ə/ "Monday" (unstressed) — Monday, seven → sevon  
-      — /ər/ "doctor" (unstressed before R) — doctor  
-      — /w/ "wet" — wet → ouet, white → oît
-- **Ò** — /ɔ/ "cost" (stressed) — cost → còste
-- **Ó** — /oʊ/ "old" (stressed) — old → óld
-- **Ô** — /aʊ/ (before N, or a vowel) — sound → sônd; /ʊ/ (before C/D) — book → bôc
+### Base Values of O
 
-### Base Letter O
+| Spelling | IPA | Environment / Description | Example |
+|--------|-----|---------------------------|---------|
+| O | /ɑ/ | Stressed, before two consonants or sole vowel | lock → **loc** |
+| O | /oʊ/ | Before single consonant + silent E | home |
+| O | /ɔ/ | Before **H** | bought → **boht** |
+| O | /ə/ | Unstressed | Monday, seven → **sevon** |
+| O | /ər/ | Unstressed + R | doctor |
+| O | /w/ | Special borrowings | wet → **ouet**, white → **oît** |
 
-#### O + Two Consonants = /ɑ/
-When followed by two consonants, or is the only vowel, O is typically /ɑ/.
+---
 
-**Monosyllables:**  
-not, bot, lot, knot → gnot
+### Diacritic Values
 
-**Verbs and nouns:**  
-to block → to bloche, block → bloc  
-to lock → to loche, lock → loc  
-concoction → concoccion  
-to concoct → to concocte
-knowledge → gnollage
-to acknowledge → to acgnollage
-phonology → fonologie
-phonological → fonological
+| Spelling | IPA | Stress | Description |
+|--------|-----|--------|-------------|
+| Ò | /ɔ/ | Always stressed | Marks stressed open O |
+| Ó | /oʊ/ | Always stressed | Marks stressed long O |
+| Ô | /aʊ/, /ʊ/ | Always stressed | Context-dependent |
 
-#### O = /oʊ/
+---
 
-**Before single consonant + silent E:**  
-cove, stove, lone, code  
-prone, zone, cone, phone → fone  
-throne → þrone, to explode, to corrode  
-to condone, to suppose → to sopose  
-to postpone → to poastpone, to oppose
+## Base Letter O
 
-**Word-final in multisyllables:**  
-tomorrow → tomòro, tarot → târo  
-sparrow → spâro, window → uindo  
-show → seoe, blow → bloe, flow → floe
+### O + Two Consonants → /ɑ/
 
-**Unstressed verb infinitives use -OE:**  
-to lasso → to lassoe, to follow → to folloe  
-Gerunds: lassouing, follouing
+When followed by **two consonants**, or when **O is the only vowel**, O is typically /ɑ/.
 
-#### O + H = /ɔ/
-OH represents /ɔ/, typically in irregular past tenses.
+#### Examples
 
-**Examples:**  
-bought → boht, fought → foht  
-sought → soht, thought → þoht
+| Type | Modern English | Inglisce |
+|----|----------------|----------|
+| Monosyllables | not, bot, lot | not, bot, lot |
+| Irregular | knot | **gnot** |
+| Verb | to block | **to bloche** |
+| Noun | block | **bloc** |
+| Verb | to lock | **to loche** |
+| Noun | lock | **loc** |
 
-#### Unstressed O = /ə/
-When unstressed, O is often /ə/.
+#### Extended Forms
 
-**Regular unstressed O:**  
-monotheism → monothýism /ˌmɑnəˈθiˌɪzəm/  
-museum → m̃usíom /mjuˈziəm/  
-stadium → stâdiom /ˈsteɪdiəm/  
-to come → to come, have come → have com  
-Monday /ˈmənˌdeɪ/
+| Modern English | Inglisce |
+|---------------|----------|
+| concoction | concoccion |
+| to concoct | concocte |
+| knowledge | gnollage |
+| to acknowledge | acgnollage |
+| phonology | fonologie |
+| phonological | fonological |
 
-**O replacing U after M, N, R:**  
-run → rone /rən/, done → don /dən/  
-come → com /kəm/, money → monie /ˈməni/  
-number → nombre /ˈnəmbər/  
-murmur → mormor /ˈmərˌmər/
+---
 
-*Note: After M, N, R, O often replaces forbidden U. See U.txt "Restriction: M/N/R Rule".*
+### O = /oʊ/
 
-#### Unstressed O + R = /ər/
-When unstressed and followed by R, O becomes /ər/.
+#### Before Single Consonant + Silent E
 
-**Examples:**  
+| Modern English | Inglisce |
+|---------------|----------|
+| cove | cove |
+| stove | stove |
+| lone | lone |
+| code | code |
+| phone | **fone** |
+| throne | **þrone** |
+| to explode | explode |
+| to corrode | corrode |
+| to condone | condone |
+| to suppose | **to sopose** |
+| to postpone | **to poastpone** |
+| to oppose | oppose |
 
-administrator → administraitor /ədˈmɪnəˌstreɪɾər/  
-gopher → gófor /ˈɡoʊfər/  
-educator → eḑucaitor /ˈɛdʒəˌkeɪɾər/  
-hammer → hamor /ˈhæmər/  
-murmur → mormor, murder → mourdre
+---
 
-#### O as /w/
-In specific borrowings and patterns.
+#### Word-Final in Multisyllables
 
-**Examples:**  
-choir → coîre  
-why → oîe, white → oît  
-wet → ouet, penguin → pengoin
+| Modern English | Inglisce |
+|---------------|----------|
+| tomorrow | tomòro |
+| tarot | târo |
+| sparrow | spâro |
+| window | uindo |
+| show | seoe |
+| blow | bloe |
+| flow | floe |
 
-### Diacritics
+---
 
-#### Ò — STRESSED /ɔ/
+#### Unstressed Verb Infinitives (-OE)
 
-**Pronunciation:** /ɔ/ — as in "cost" (always stressed)
+| Modern English | Inglisce |
+|---------------|----------|
+| to lasso | to lassoe |
+| to follow | to folloe |
 
-**PURPOSE**  
-Marks stressed /ɔ/ sound where needed for clarity.
+**Gerunds**
 
-**EXAMPLES**  
-cost → còste, frost → fròste  
-cough → còffe, tomorrow → tomòro
+| Inglisce Infinitive | Gerund |
+|-------------------|--------|
+| lassoe | lassouing |
+| folloe | follouing |
 
-#### Ó — STRESSED /oʊ/
+---
 
-**Pronunciation:** /oʊ/ — as in "note" (always stressed)
+### O + H → /ɔ/
 
-**PURPOSE**  
-Marks stressed /oʊ/ in words where stress placement needs clarification.
+The digraph **OH** represents /ɔ/, typically in **irregular past tenses**.
 
-**EXAMPLES**
-hypnosis → hipnósis  
-bold → bóld, cold → cóld, old → óld  
-sold → sóld, gold → góld  
-hold → hóld, mold → móld
-boast → bóste, host → hóste
-post → póste, roast → róste
-toast → tóste
+| Modern English | Inglisce |
+|---------------|----------|
+| bought | boht |
+| fought | foht |
+| sought | soht |
+| thought | þoht |
 
+---
 
-#### Ô — MULTIPLE STRESSED SOUNDS
+### Unstressed O → /ə/
 
-**Pronunciation:** /aʊ/, /ʊ/ (always stressed)
+When unstressed, O is often reduced to /ə/.
 
-**PURPOSE**  
-Context-dependent stressed vowel: default /oʊ/, before N/U → /aʊ/, before C/D → /ʊ/
+#### Regular Unstressed O
 
-**EXAMPLES**
+| Modern English | Inglisce | IPA |
+|---------------|----------|-----|
+| monotheism | monothýism | /ˌmɑnəˈθiˌɪzəm/ |
+| museum | m̃usíom | /mjuˈziəm/ |
+| stadium | stâdiom | /ˈsteɪdiəm/ |
+| to come | to come | /kəm/ |
+| have come | have com | /kəm/ |
+| Monday | Monday | /ˈmənˌdeɪ/ |
 
-**Ô + N, Vowel = /aʊ/:**  
-sound → sônd, around → arônd  
-ground → grônd  
-cow → côe, vow → vôe
-cows → côus, vows → vôus
-now → nôe, how → hôe
-to devour → to devôer
-dower → dôare /ˈdaʊʷər/
-dowry → dôrie /ˈdaʊ.ri/
+---
 
-**Ô + C/D = /ʊ/:**  
-book → bôc, cook → côc, look → lôc  
-hood → hôd, wood → uôd
+#### O Replacing U after M, N, R
 
-**Special case - After U, Ô replaces Û:**  
-woman → uôman, wolf → uôlfe  
-*Note: Û cannot appear after U, use Ô instead.*
+| Modern English | Inglisce | IPA |
+|---------------|----------|-----|
+| run | rone | /rən/ |
+| done | don | /dən/ |
+| come | com | /kəm/ |
+| money | monie | /ˈməni/ |
+| number | nombre | /ˈnəmbər/ |
+| murmur | mormor | /ˈmərˌmər/ |
 
-### Cross-References
+*Note: After M, N, R, O replaces forbidden U. See **U.txt — Restriction: M/N/R Rule**.*
 
-- For /ɑ/ sound patterns, see IPA-ɑ.txt
-- For /oʊ/ sound patterns, see IPA-oʊ.txt
-- For /ɔ/ sound patterns, see IPA-ɔ.txt
-- For /ə/ sound patterns, see IPA-ə.txt
-- For /ər/ sound patterns, see IPA-ɚ.txt
-- For digraphs beginning with O, see OA.txt, OI.txt, OU.txt, OY.txt
-- See also Á.txt (stressed /ɑ/ in basic words)
+---
 
-### Teaching Notes
+### Unstressed O + R → /ər/
 
-**Primary patterns:**
-- Stressed O before two consonants = /ɑ/
-- O + silent E usually = /oʊ/
-- Unstressed O typically = /ə/
+| Modern English | Inglisce | IPA |
+|---------------|----------|-----|
+| administrator | administraitor | /ədˈmɪnəˌstreɪɾər/ |
+| gopher | gófor | /ˈɡoʊfər/ |
+| educator | eḑucaitor | /ˈɛdʒəˌkeɪɾər/ |
+| hammer | hamor | /ˈhæmər/ |
+| murder | mourdre | /ˈmərdər/ |
 
-**Key distinctions:**
-- O is highly variable based on context
-- O replaces U after M, N, R
-- OH digraph = /ɔ/ in past tenses
+---
 
-**Diacritics summary:**
-- **Ò** = stressed /ɔ/ sound
-- **Ó** = stressed /oʊ/
-- **Ô** = context-dependent (before N/vowel = /aʊ/, before C/D = /ʊ/)
+### O as /w/
+
+In specific borrowings and fossilized patterns.
+
+| Modern English | Inglisce |
+|---------------|----------|
+| choir | coîre |
+| why | oîe |
+| white | oît |
+| wet | ouet |
+| penguin | pengoin |
+
+---
+
+## Diacritics
+
+### Ò — Stressed /ɔ/
+
+| Example | Inglisce |
+|-------|----------|
+| cost | còste |
+| frost | fròste |
+| cough | còffe |
+| tomorrow | tomòro |
+
+---
+
+### Ó — Stressed /oʊ/
+
+| Example | Inglisce |
+|-------|----------|
+| old | óld |
+| gold | góld |
+| cold | cóld |
+| hold | hóld |
+| boast | bóste |
+| roast | róste |
+| toast | tóste |
+| post | póste |
+
+---
+
+### Ô — Context-Dependent (Always Stressed)
+
+#### Ô + N or Vowel → /aʊ/
+
+| Modern English | Inglisce |
+|---------------|----------|
+| sound | sônd |
+| around | arônd |
+| ground | grônd |
+| cow | côe |
+| vow | vôe |
+| now | nôe |
+| how | hôe |
+| devour | devôer |
+| dowry | dôrie |
+
+---
+
+#### Ô + C/D → /ʊ/
+
+| Modern English | Inglisce |
+|---------------|----------|
+| book | bôc |
+| cook | côc |
+| look | lôc |
+| hood | hôd |
+| wood | uôd |
+
+**Special Case**
+
+| Rule | Example |
+|----|---------|
+| After U, Ô replaces Û | woman → uôman, wolf → uôlfe |
+
+---
+
+## Cross-References
+
+- **IPA-ɑ.txt** — /ɑ/  
+- **IPA-oʊ.txt** — /oʊ/  
+- **IPA-ɔ.txt** — /ɔ/  
+- **IPA-ə.txt** — /ə/  
+- **IPA-ɚ.txt** — /ər/  
+- **OA.txt, OI.txt, OU.txt, OY.txt** — O-based digraphs  
+- **Á.txt** — stressed /ɑ/
+
+---
+
+## Teaching Notes
+
+### Primary Patterns
+
+- Stressed **O + two consonants** → /ɑ/
+- **O + silent E** → /oʊ/
+- **Unstressed O** → /ə/
+
+### Key Distinctions
+
+- O is **highly context-sensitive**
+- O replaces U after **M, N, R**
+- **OH** marks /ɔ/ in past-tense forms
+
+### Diacritic Summary
+
+| Diacritic | Value |
+|----------|-------|
+| Ò | stressed /ɔ/ |
+| Ó | stressed /oʊ/ |
+| Ô | /aʊ/ before N/vowel; /ʊ/ before C/D |
