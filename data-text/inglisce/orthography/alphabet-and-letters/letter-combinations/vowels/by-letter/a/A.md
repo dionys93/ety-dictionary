@@ -1,138 +1,233 @@
 # A
 
-The letter A and its variants represent multiple vowel sounds in Inglisce.
+The letter **A** and its diacritic variants represent **multiple vowel values** in Inglisce, determined primarily by **stress and morphology**.
 
-A uses the following diacritics: À, Á, Â
+**Diacritics used:** À, Á, Â  
+**Related digraphs:** AE, AI, AO, AU, AY
 
-Related digraphs: See AE, AI, AO, AU, AY files
+---
 
-### PRONUNCIATION SUMMARY
+## Pronunciation Summary
 
-- **A** — /æ/ "cat" (stressed) — cat  
-      — /ə/ "about" (unstressed) — about → abaut
-- **À** — /æ/ "cat" (irregular stress) — analysis → anàlysis
-- **Á** — /ɑ/ "father" (stressed) — father → fáþor
-- **Â** — /eɪ/ "make" (stressed) — make → mâcue
+### Base Values of A
 
-### Base Letter A
+| Spelling | IPA | Stress | Description | Example |
+|--------|-----|--------|-------------|---------|
+| A | /æ/ | Stressed | Default short A | cat |
+| A | /ə/ | Unstressed | Reduced vowel | about → **abaut** |
 
-#### Stressed A = /æ/
-When A is the only stressed vowel in a word, it is pronounced /æ/.
+---
 
-**Monosyllables:**  
-cat, hat, fat, sat, bat, mat  
-rap, tap, map, gap, cap, lap
+### Diacritic Values
 
-**Polysyllables (stressed position):**  
-animal /ˈænɪməl/, practical /ˈpræktɪkəl/  
-admiral → amiral /ˈæmərəl/
+| Spelling | IPA | Stress | Description |
+|--------|-----|--------|-------------|
+| À | /æ/ | Always stressed | Irregular stressed short A |
+| Á | /ɑ/ | Always stressed | Open back A |
+| Â | /eɪ/ | Stressed | Long A |
 
-#### Unstressed A = /ə/
-In unstressed positions, A is pronounced /ə/.
+---
 
-**Examples:**  
-about → abaut /əˈbaʊt/  
-what → uat /wət/  
-mother → maþor /ˈməðər/  
-practical (second A: /ˈpræktɪkəl/)
+## Base Letter A
 
-### Variable Stress Patterns
-The same word root can have different pronunciations based on word class:
+### Stressed A → /æ/
 
-**Verb vs. Adjective:**  
-to animate → to animait /tə ˈænɪˌmeɪt/ (verb - stressed A)  
-animate → animat /ˈænɪmət/ (adjective - unstressed second A)
+When **A is stressed** and not otherwise marked, it is pronounced /æ/.
 
-**Base vs. Derivative:**  
-practical /ˈpræktɪkəl/ (stressed A)  
-practicality → practicaletie /ˌpræktɪˈkæləɾi/ (first A unstressed)
+#### Monosyllables
 
-### Diacritics
+| Examples |
+|---------|
+| cat, hat, fat, sat, bat, mat |
+| rap, tap, map, gap, cap, lap |
 
-#### À — STRESSED /æ/ (IRREGULAR)
+---
 
-**Pronunciation:** /æ/ — as in "cat" (always stressed)
+#### Polysyllables (Stressed Position)
 
-**PURPOSE**  
-Marks stressed /æ/ where stress placement is irregular or unexpected.
+| Modern English | Inglisce | IPA |
+|---------------|----------|-----|
+| animal | animal | /ˈænɪməl/ |
+| practical | practical | /ˈpræktɪkəl/ |
+| admiral | amiral | /ˈæmərəl/ |
 
-**EXAMPLES**  
-analysis → anàlysis /əˈnælɪsəs/  
-paralysis → paràlysis /pəˈrælɪsəs/  
-combatant → combàtant /kəmˈbætnt/  
-alfalfa → alfàlfa /ælˈfælfə/
+---
 
-#### Á — STRESSED /ɑ/
+### Unstressed A → /ə/
 
-**Pronunciation:** /ɑ/ — as in "father" (always stressed)
+In **unstressed syllables**, A reduces to /ə/.
 
-**PURPOSE**  
-Marks stressed /ɑ/ in basic vocabulary and certain plurals.
+| Modern English | Inglisce | IPA |
+|---------------|----------|-----|
+| about | abaut | /əˈbaʊt/ |
+| what | uate | /wət/ |
+| mother | maþre | /ˈməðər/ |
+| practical (2nd A) | practical | /ˈpræktɪkəl/ |
 
-**EXAMPLES**
+---
 
-**Basic vocabulary:**  
-father → fáþor /ˈfɑðər/  
-water → uátre /ˈwɑɾər/
+## Variable Stress Patterns
 
-**Plural declensions:**  
-alarm → alarme, alárms  
-commissar → commissare, commissárs
+Stress alternation may change vowel quality across related forms.
 
-#### Â — /eɪ/
+### Verb vs. Adjective
 
-**Pronunciation:** /eɪ/ — as in "make" (stressed, except in compounds)
+| Word | Inglisce | IPA |
+|----|----------|-----|
+| to animate (verb) | animait | /tə ˈænɪˌmeɪt/ |
+| animate (adj) | animat | /ˈænɪmət/ |
 
-**PURPOSE**  
-Represents the /eɪ/ sound, typically from historical long A.
+---
 
-**EXAMPLES**
+### Base vs. Derivative
 
-**Monosyllabic nouns:**  
-date → dâte, fate → fâte, gate → gâte  
-hate → hâte, late → lât, mate → mâte  
-state → stâte, lake → lâc, name → nâme  
-same → sâm, game → gâme
+| Form | Inglisce | IPA |
+|----|----------|-----|
+| practical | practical | /ˈpræktɪkəl/ |
+| practicality | practicaletie | /ˌpræktɪˈkæləɾi/ |
 
-**Monosyllabic verbs (C+U pattern):**  
-make → mâcue, take → tâcue, wake → uâcue  
-bake → bâcue, rake → râcue, sake → sâcue
+---
 
-**-ATE verbs (stressed):**  
-relate → relâte, create → criâte, negate → negâte
+## Diacritics
 
-**-ATION nouns:**  
-relation → relâcion, creation → criâcion  
-negation → negâcion, translation → translâcion  
-operation → operâcion, celebration → celebrâcion
+### À — Stressed /æ/ (Irregular)
 
-**-ATIVE adjectives:**  
-creative → criâtif, native → nâtif  
-contagious → contâgeus
+Marks **unexpected or non-default stress** on /æ/.
 
-**Compound nouns:**  
-airplane → airplân (stress on "air", not "plân")
+| Modern English | Inglisce | IPA |
+|---------------|----------|-----|
+| analysis | anàlysis | /əˈnælɪsəs/ |
+| paralysis | paràlysis | /pəˈrælɪsəs/ |
+| combatant | combàtant | /kəmˈbætnt/ |
+| alfalfa | alfàlfa | /ælˈfælfə/ |
 
-### Cross-References
+---
 
-- For /æ/ sound patterns, see IPA-æ.txt
-- For /ə/ sound patterns, see IPA-ə.txt
-- For /eɪ/ sound patterns, see IPA-eɪ.txt
-- For digraphs beginning with A, see AI.txt, AU.txt, AY.txt
-- Related to AI.txt (verbs), AY.txt (nouns)
-- See also Ó.txt (stressed /ɑ/ in Greek derivatives)
+### Á — Stressed /ɑ/
 
-### Teaching Notes
+Represents **open back A**, typically in basic vocabulary and some plurals.
 
-**Primary patterns:**
-- Stressed A = /æ/, unstressed A = /ə/
-- Silent E typically makes A → Â /eɪ/
+#### Basic Vocabulary
 
-**Key distinctions:**
-- Stress position determines base pronunciation
-- Three distinct diacritics for different vowel qualities
+| Modern English | Inglisce | IPA |
+|---------------|----------|-----|
+| father | fáþre | /ˈfɑðər/ |
+| water | uátre | /ˈwɑɾər/ |
 
-**Diacritics summary:**
-- **À** = stressed /æ/ in irregular positions
-- **Á** = stressed /ɑ/ (father sound)  
-- **Â** = /eɪ/ from historical long A
+---
+
+#### Plural Declensions
+
+| Singular | Inglisce (sg) | Inglisce (pl) |
+|--------|---------------|---------------|
+| alarm | alarme | alárms |
+| commissar | commissare | commissárs |
+
+---
+
+### Â — /eɪ/ (Long A)
+
+Represents historical long A, typically from **A + silent E**.
+
+#### Monosyllabic Nouns
+
+| Modern English | Inglisce |
+|---------------|----------|
+| date | dâte |
+| fate | fâte |
+| gate | gâte |
+| hate | hâte |
+| late | lât |
+| mate | mâte |
+| state | stâte |
+| lake | lâc |
+| name | nâme |
+| same | sâm |
+| game | gâme |
+
+---
+
+#### Monosyllabic Verbs (C + U Pattern)
+
+| Modern English | Inglisce |
+|---------------|----------|
+| make | mâche |
+| take | tâche |
+| wake | uâche |
+| bake | bâche |
+| rake | râche |
+| sake | sâche |
+
+---
+
+#### -ATE Verbs (Stressed)
+
+| Modern English | Inglisce |
+|---------------|----------|
+| relate | relâte |
+| create | criâte |
+| negate | negâte |
+
+---
+
+#### -ATION Nouns
+
+| Modern English | Inglisce |
+|---------------|----------|
+| relation | relâcion |
+| creation | criâcion |
+| negation | negâcion |
+| translation | translâcion |
+| operation | operâcion |
+| celebration | celebrâcion |
+
+---
+
+#### -ATIVE Adjectives
+
+| Modern English | Inglisce |
+|---------------|----------|
+| creative | criâtif |
+| native | nâtif |
+| contagious | contâgeus |
+
+---
+
+#### Compound Nouns
+
+| Modern English | Inglisce | Note |
+|---------------|----------|------|
+| airplane | airplân | Stress on *air* |
+
+---
+
+## Cross-References
+
+- **IPA-æ.txt** — /æ/  
+- **IPA-ə.txt** — /ə/  
+- **IPA-eɪ.txt** — /eɪ/  
+- **AI.txt, AU.txt, AY.txt** — A-based digraphs  
+- Related: **AI.txt** (verbs), **AY.txt** (nouns)
+
+---
+
+## Teaching Notes
+
+### Primary Patterns
+
+- **Stressed A** → /æ/
+- **Unstressed A** → /ə/
+- **Silent E** typically yields **Â /eɪ/**
+
+### Key Distinctions
+
+- Stress determines base pronunciation
+- Diacritics override default stress behavior
+
+### Diacritic Summary
+
+| Diacritic | Value |
+|----------|-------|
+| À | irregular stressed /æ/ |
+| Á | stressed /ɑ/ |
+| Â | /eɪ/ (long A) |
