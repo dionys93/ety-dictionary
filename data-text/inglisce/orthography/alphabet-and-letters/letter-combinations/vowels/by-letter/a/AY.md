@@ -1,48 +1,83 @@
 # AY
 
-The digraph AY represents a single vowel sound in Inglisce.
+The digraph **AY** represents a single vowel sound in Inglisce.
 
-### PRONUNCIATION SUMMARY
+---
 
-- **AY** — /eɪ/ "day" — days → days (plural)
+## Pronunciation Summary
 
-### The Digraph AY
+| Spelling | IPA | Example | Inglisce |
+|--------|-----|---------|----------|
+| AY | /eɪ/ | day | daie, days |
 
-#### Word-Final AY = /eɪ/
-AY typically appears at the end of adjectives, noun plurals, and in gerunds. It represents /eɪ/.
+---
 
-**Adjectives:**  
-gray
+## The Digraph AY
 
-**Noun plurals:**  
-bay, bays → baie, bays  
-day, days → daie, days  
-ray, rays → raie, rays  
-play, plays → plaie, plays  
-way, ways → uaie, uays
+### Word-Final AY → /eɪ/
 
-*Note: Singular nouns use -AIE, plurals use -AYS*
+AY appears **word-finally** in adjectives, noun plurals, and gerunds.  
+It always represents **/eɪ/**.
 
-**Gerunds:**  
-to pay → to paie, paying  
-to stay → to staie, staying  
-to pray → to praie, praying  
-to delay → to delaie, delaying
+---
 
-### Cross-References
+### Adjectives
 
-- For /eɪ/ sound patterns, see IPA-eɪ.txt
-- Related to AI.txt (verbs use AI, noun plurals use AY)
-- See also Â.txt (also represents /eɪ/)
+| Modern English | Inglisce | IPA |
+|---------------|----------|-----|
+| gray | gray | /ɡreɪ/ |
 
-### Teaching Notes
+---
 
-**Primary pattern:**
-- AY appears word-finally in plurals, adjectives, and gerunds
-- Always pronounced /eɪ/
+### Noun Forms
 
-**Key distinction:**
-- Verbs use AI (to paie)
-- Gerunds use AY (paying)
-- Singular nouns use AIE (baie)
-- Plural nouns use AYS (bays)
+**Singular nouns use -AIE; plural nouns use -AYS.**
+
+| Modern English | Singular (Inglisce) | Plural (Inglisce) |
+|---------------|--------------------|------------------|
+| bay, bays | baie | bays |
+| day, days | daie | days |
+| ray, rays | raie | rays |
+| play, plays | plaie | plays |
+| way, ways | uaie | uays |
+
+---
+
+### Gerunds
+
+Gerunds retain **AY** to mark /eɪ/.
+
+| Verb | Infinitive (Inglisce) | Gerund |
+|-----|-----------------------|--------|
+| to pay | to paie | paying |
+| to stay | to staie | staying |
+| to pray | to praie | praying |
+| to delay | to delaie | delaying |
+
+---
+
+## Cross-References
+
+- **IPA-eɪ.txt** — /eɪ/ sound patterns  
+- **AI.txt** — verbs use AI  
+- **Â.txt** — alternate /eɪ/ representation
+
+---
+
+## Teaching Notes
+
+### Primary Pattern
+
+- AY is **always word-final**
+- AY is **always pronounced /eɪ/**
+
+### Key Distinctions
+
+| Function | Spelling |
+|--------|----------|
+| Verb stem | AI (to paie) |
+| Gerund | AY (paying) |
+| Singular noun | AIE (baie) |
+| Plural noun | AYS (bays) |
+
+AY cleanly signals **non-verbal /eɪ/** morphology, keeping verbs, nouns, and derivations visually distinct.
