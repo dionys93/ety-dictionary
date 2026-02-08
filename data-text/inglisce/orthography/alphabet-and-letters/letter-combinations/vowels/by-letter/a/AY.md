@@ -25,7 +25,7 @@ It always represents **/eɪ/**.
 
 | Modern English | Inglisce | IPA |
 |---------------|----------|-----|
-| gray | gray | /ɡreɪ/ |
+| gray, grayer, grayest | gray, grayar, grayest | /ɡreɪ/ |
 
 ---
 
