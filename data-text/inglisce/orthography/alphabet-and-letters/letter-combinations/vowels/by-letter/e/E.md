@@ -1,170 +1,248 @@
 # E
 
-The letter E and its variants represent multiple vowel sounds in Inglisce.
+The letter **E** and its variants represent multiple vowel sounds in Inglisce.
 
-E uses the following diacritics: È, Ê
+E uses the following diacritics: **È, Ê**
 
-Related digraphs: See EA, EI, EU, EY files
+Related digraphs: **EA, EI, EU, EY**
 
-### PRONUNCIATION SUMMARY
+---
 
-- **E** — /ɛ/ "bed" (stressed) — bed → bede  
-      — /ə/ "return" (unstressed) — return → retorne  
-      — Silent (word-final) — mate → mâte
-- **ER/RE** — /ər/ "timber" (unstressed) — timber → timbre, to remember
-- **È** — /ɛ/ "bed" (irregular stress) — anemone → anèmonie
-- **Ê** — /ər/ "earn" (stressed) — earn → êne
+## Pronunciation Summary
 
-### Base Letter E
+| Spelling | IPA | Description | Example |
+|--------|-----|------------|---------|
+| E | /ɛ/ | stressed | bed → bede |
+| E | /ə/ | unstressed | return → retourne |
+| E | — | silent (word-final) | mate → mâte |
+| ER / RE | /ər/ | unstressed | timber → timbre |
+| È | /ɛ/ | stressed, irregular | anemone → anèmonie |
+| Ê | /ər/ | stressed | earn → êne |
 
-#### Stressed E = /ɛ/
-E is pronounced /ɛ/ in four main contexts:
+---
 
-**a) Before two consonants:**  
-nest → neste, west → oueste, test → teste  
-rest → reste, best, dress, press
+## Base Letter E
 
-**b) As the only vowel in a word:**  
-red, fed, bed → bede  
-shed → to scede, sled → to slede
+### Stressed E → /ɛ/
 
-**c) As the first stressed vowel:**  
-elephant → elefant, elevator → elevaitor  
-every → evry, element, elegant, empty
+E is pronounced /ɛ/ in the following contexts:
 
-**d) Words derived from -ecte verbs:**  
-to infect → to infecte, infective → infectif /ɪnˈfɛktɪf/  
-to defect → to defecte, defective → defectif /dɪˈfɛktɪf/  
-to select → to selecte, selective → selectif /sɪˈlɛktɪf/
+#### a) Before Two Consonants
 
-### Silent E
-E is silent at word endings and serves grammatical and phonetic functions.
+| Modern English | Inglisce |
+|---------------|----------|
+| nest | neste |
+| west | oueste |
+| test | teste |
+| rest | reste |
+| dress | dresse |
+| press | presse |
 
-#### GRAMMATICAL FUNCTIONS
+#### b) As the Only Vowel in a Word
 
-**1. Marks all verbs (required):**  
-to combine → to combîne  
-to complete → to complite  
-to compete → to compite  
-to delete → to delite  
-to represent → to represente (stress on second syllable)  
-to record → to recorde (stress on second syllable)
+| Modern English | Inglisce |
+|---------------|----------|
+| bed | bede |
+| shed | scede |
+| sled | slede |
 
-**2. Retained in monosyllabic nouns:**  
-time → tîme, game → gâme, state → stâte  
-phone → fone, bone, cone, home, stone
+#### c) First Stressed Vowel
 
-#### PRONUNCIATION EFFECTS ON PRECEDING VOWELS
+| Modern English | Inglisce |
+|---------------|----------|
+| elephant | elefant |
+| elevator | elevaitor |
+| every | evry |
+| element | |
+| elegant | |
+| empty | |
 
-**I + silent E → /i/:**  
-to compete → to compite /kəmˈpit/  
-to complete → to complite /kəmˈplit/  
-to delete → to delite /dəˈlit/
-to eat → to ite /it/, to seat → to site /sit/, to repeat → to repite /rəˈpit/
-elite /əˈlit/, machine → maçine /məˈʃin/
+#### d) From **-ecte** Verbs
 
-**O + single consonant + silent E → /oʊ/:**  
-home /hoʊm/, phone → fone /foʊn/  
-stone /stoʊn/, hope /hoʊp/
+| Verb | Derived Form |
+|-----|--------------|
+| to infecte | infectif |
+| to defecte | defectif |
+| to selecte | selectif |
 
- 
+---
 
+## Silent E
 
-#### SPECIAL PATTERNS
+Word-final **E** is silent and performs grammatical and phonetic functions.
 
-**Keeping consonants hard:**  
-C needs U before silent E: make → mâcue  
-G needs U before silent E: vogue → vôgue, to log → to logue
+---
 
-**Stress indicators in multisyllabic verbs:**  
-Silent E on stressed syllable: to combîne, to defîne  
-Silent E on unstressed syllable: to represente, to recorde
+### Grammatical Functions
 
-#### Unstressed E = /ə/
-When not stressed, E is typically /ə/.
+#### 1. Marks All Verbs (Mandatory)
 
-**Prefix positions:**  
-to repair → to repâre, to prepare → to prepâre  
-to defend → to defende, to descend → to descende
+| Modern English | Inglisce |
+|---------------|----------|
+| to combine | to combîne |
+| to complete | to complite |
+| to compete | to compite |
+| to delete | to delite |
+| to represent | to represente |
+| to record | to recorde |
 
-**Unstressed syllables:**  
-different → diffrent, interest → intrest  
-desperation → desperâcion
+#### 2. Retained in Monosyllabic Nouns
 
-#### Unstressed ER/RE = /ər/
-When not stressed, ER is typically /ər/.
+| Modern English | Inglisce |
+|---------------|----------|
+| time | tîme |
+| game | gâme |
+| state | stâte |
+| phone | fone |
+| home | |
+| stone | |
 
-**Examples:**  
-to remember, I remember → I remembre  
-member → membre, ember → embre  
-timber → timbre, number → nombre
+---
 
-### Diacritics
+### Pronunciation Effects of Silent E
 
-#### È — STRESSED /ɛ/ (IRREGULAR)
+#### I + Silent E → /i/
 
-**Pronunciation:** /ɛ/ — as in "bed" (always stressed)
+| Modern English | Inglisce | IPA |
+|---------------|----------|-----|
+| compete | compite | /kəmˈpit/ |
+| complete | complite | /kəmˈplit/ |
+| delete | delite | /dəˈlit/ |
+| eat | eite | /it/ |
+| repeat | repite | /rəˈpit/ |
+| machine | maçine | /məˈʃin/ |
 
-**PURPOSE**  
-Marks stressed /ɛ/ where stress placement needs clarification.
+#### O + Single Consonant + Silent E → /oʊ/
 
-**EXAMPLES**
+| Modern English | Inglisce |
+|---------------|----------|
+| home | home |
+| phone | fone |
+| stone | stone |
+| hope | hope |
 
-**Basic words:**  
-anemone → anèmonie /əˈnɛməni/  
-machete → mac̦ètie
+---
 
-**Plural forms of nouns:**  
-cigarette → cigarete, cigarettes → cigarèts /ˌsɪgəˈrɛt/s/  
-regret → regrete, regrets → regrèts /rɪˈgrɛt/s/  
-elect → electe, elects → elècs  
-(contrast with verb forms: to electe, elecs, elected, electing)
+### Special Patterns
 
-**Latin-derived adjectives:**  
-perfectable → perfèctable /pərˈfɛktəbəl/
+#### Keeping Consonants Hard
 
-#### Ê — STRESSED /ər/
+| Pattern | Example |
+|-------|---------|
+| C + HE | make → mâche |
+| G + UE | vogue → vógue |
+| Verb retention | log → logue |
 
-**Pronunciation:** /ər/ — as in "earn" (always stressed)
+#### Stress Indicators in Verbs
 
-**PURPOSE**  
-Marks stressed /ər/ (R-colored vowel) in words.
+| Pattern | Example |
+|-------|---------|
+| Silent E on stressed syllable | combîne, defîne |
+| Silent E on unstressed syllable | represente, recorde |
 
-**EXAMPLES**
+---
 
-to earn → to êne /ərn/  
-to yearn → to yêne /jərn/  
-to learn → to lêne /lərn/  
-to discern → to discêne /dɪˈsərn/  
-to concern → to concêne   
-the concern → þa concêne, concerns → concêns    
-to emerge → to emêge  
-emergency → emêgencie  
-emergent → emêgent  
-to submerge → to submêge  
-to converge → to convêge  
-convergence → convêgence
+## Unstressed E → /ə/
 
-### Cross-References
+### Prefix Positions
 
-- For /ɛ/ sound patterns, see IPA-ɛ.txt
-- For /ə/ sound patterns, see IPA-ə.txt  
-- For /ər/ sound patterns, see IPA-ɚ.txt
-- For digraphs beginning with E, see EA.txt, EI.txt, EU.txt, EY.txt
-- Related R-colored vowels: AR (IPA-ɑr.txt), OR (IPA-ɔr.txt)
+| Modern English | Inglisce |
+|---------------|----------|
+| repair | repâre |
+| prepare | prepâre |
+| defend | defende |
+| descend | descende |
 
-### Teaching Notes
+### Unstressed Syllables
 
-**Primary patterns:**
-- Stressed E = /ɛ/, unstressed E = /ə/, final E = silent
-- Silent E is mandatory for all verbs
-- ER/RE unstressed = /ər/
+| Modern English | Inglisce |
+|---------------|----------|
+| different | diffrent |
+| interest | intrest |
+| desperation | desperâcion |
 
-**Key distinctions:**
-- E is the most common vowel in Inglisce
-- Silent E serves both grammatical and phonetic functions
-- Silent E affects preceding vowel pronunciation systematically
+---
 
-**Diacritics summary:**
-- **È** = stressed /ɛ/ in irregular positions  
-- **Ê** = stressed /ər/ (R-colored vowel)
+## Unstressed ER / RE → /ər/
+
+| Modern English | Inglisce |
+|---------------|----------|
+| remember | to remember, remembre(s remembred |
+| member | þe membre |
+| ember | þi embre |
+| timber | þe timbre |
+| number | þe nombre |
+
+---
+
+## Diacritics
+
+### È — Stressed /ɛ/ (Irregular)
+
+| English | Inglisce |
+|--------|---------|
+| anemone | anèmonie |
+| machete | mac̦ètie |
+
+#### Plural Nouns
+
+| Singular | Plural |
+|--------|--------|
+| cigarete | cigarèts |
+| regrete | regrèts |
+| electe | elècs |
+
+*(Contrast with verb forms: to electe, elecs, elected)*
+
+---
+
+### Ê — Stressed /ər/
+
+| Modern English | Inglisce |
+|---------------|----------|
+| earn | êne |
+| yearn | yêne |
+| learn | lêne |
+| discern | discêne |
+| concern (verb) | concêne |
+| concern (noun) | concêne, concêns |
+| emerge | emêge |
+| emergency | emêgencie |
+| converge | convêge |
+| convergence | convêgence |
+
+---
+
+## Cross-References
+
+- **IPA-ɛ.txt** — /ɛ/  
+- **IPA-ə.txt** — /ə/  
+- **IPA-ɚ.txt** — /ər/  
+- **EA.txt, EI.txt, EU.txt, EY.txt**
+- Related R-colored vowels: **AR**, **OR**
+
+---
+
+## Teaching Notes
+
+### Primary Patterns
+
+| Context | Value |
+|------|-------|
+| Stressed E | /ɛ/ |
+| Unstressed E | /ə/ |
+| Final E | Silent |
+| Unstressed ER / RE | /ər/ |
+
+### Key Distinctions
+
+- E is the **most structurally important vowel** in Inglisce
+- Silent E is **mandatory for verbs**
+- Silent E controls **stress, vowel height, and morphology**
+
+### Diacritics Summary
+
+| Diacritic | Value | Purpose |
+|---------|-------|---------|
+| È | /ɛ/ | Irregular stress |
+| Ê | /ər/ | Stressed R-colored vowel |
