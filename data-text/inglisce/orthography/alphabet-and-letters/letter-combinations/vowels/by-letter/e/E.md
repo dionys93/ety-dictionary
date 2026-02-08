@@ -12,12 +12,12 @@ Related digraphs: **EA, EI, EU, EY**
 
 | Spelling | IPA | Description | Example |
 |--------|-----|------------|---------|
-| E | /ɛ/ | stressed | bed → bede |
-| E | /ə/ | unstressed | return → retourne |
-| E | — | silent (word-final) | mate → mâte |
-| ER / RE | /ər/ | unstressed | timber → timbre |
-| È | /ɛ/ | stressed, irregular | anemone → anèmonie |
-| Ê | /ər/ | stressed | earn → êne |
+| E | /ɛ/ | stressed | bed → b*e*de |
+| E | /ə/ | unstressed | return → r*e*tourne |
+| E | — | silent (word-final) | return → retourn*e* |
+| ER / RE | /ər/ | unstressed | timber → timb*re* |
+| È | /ɛ/ | stressed, irregular | anemone → an*è*monie |
+| Ê | /ər/ | stressed | earn → *ê*ne |
 
 ---
 
