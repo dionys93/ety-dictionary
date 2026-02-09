@@ -17,7 +17,7 @@
 
 Before **A, O, U**, the letter **C** is pronounced /k/.
 
-Before **Y**, **C** is pronounced /k* only when **CY** appears at the **beginning of a word**, usually in words of **Old English origin**.
+Before **Y**, **C** is pronounced /k/ **only when CY appears at the beginning of a word**, usually in words of **Old English origin**.
 
 | Modern English | Inglisce |
 |---------------|----------|
@@ -69,7 +69,7 @@ The sequence **CI** before **A or O** is pronounced /ʃ/.
 |-------|--------|
 | C before A, O, U | /k/ |
 | C before I, E | /s/ |
-| CI / CE before A, O, U | /ʃ/ |
+| CI before A, O | /ʃ/ |
 
 ---
 
@@ -142,18 +142,46 @@ The sequence **CI** before **A or O** is pronounced /ʃ/.
 
 ## Pronunciation Summary
 
-| Digraph | IPA | Notes |
-|--------|-----|-------|
-| CH | /k/ | always |
+| Spelling | IPA | Environment |
+|--------|-----|-------------|
+| CH | /k/ | before e and i |
+| CH + Î | /t͡ʃ/ | only in this environment |
 
 ---
 
-## Examples
+## Rules
+
+### 1. CH → /k/ (Default)
+
+The digraph **CH** is pronounced **/k/** in all environments **except** when immediately followed by **Î**.
 
 | Modern English | Inglisce |
 |---------------|----------|
-| orchestra | |
 | architect | |
+| orchestra | |
+| school | |
 | to make | to mâche |
 | to bake | to bâche |
-| to fake | to faiche |
+| to fake | to fâche |
+
+---
+
+### 2. CH + Î → /t͡ʃ/ (Marked Palatalization)
+
+When **CH** is followed by **Î**, the digraph is pronounced **/t͡ʃ/**.
+
+This is the **only** context in which **CH** takes this value.
+
+| Modern English | Inglisce |
+|---------------|----------|
+| chide | chîde |
+
+---
+
+## Teaching Notes (CH)
+
+| Pattern | Result |
+|-------|--------|
+| CH | /k/ |
+| CH + Î | /t͡ʃ/ |
+| Design principle | CH is conservative; Î licenses affrication |
