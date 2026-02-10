@@ -6,17 +6,33 @@ The digraph **EI** and its diacritic variant **ÉI** represent two vowel sounds 
 
 | Grapheme | IPA | Environment | Modern English | Inglisce |
 |--------|-----|-------------|----------------|----------|
-| EI | /eɪ/ | default (most contexts) | convey | conveie |
-| EI | /ɛr/ | before R | impair | empeire |
+| EI- | /i/ | word-initial | eagle | eigle |
+| -EI- | /eɪ/ | word-medial | convey | conveie |
+| EIR | /ɛr/ | before R | impair | empeire |
 | ÉI | /eɪ/ | stressed | containment | contéinment |
+
 
 ## The Digraph EI
 
-### EI = /eɪ/ (Default)
+### EI- = /i/ Word-Initial
 
-EI is pronounced /eɪ/ in most contexts and is especially common in verbs.
+EI is pronounced /i/ in word-initial position.
 
-#### Verb Examples
+#### Examples
+
+| Modern English | Inglisce |
+|----------------|----------|
+| eagle | eigle |
+| each | eic̃e |
+| to eat | to eite |
+| eel | eile |
+
+
+### -EI- = /eɪ/ Word-Medial
+
+EI is pronounced /eɪ/ in word-medial position.
+
+#### Examples
 
 | Modern English | Inglisce |
 |----------------|----------|
@@ -25,11 +41,7 @@ EI is pronounced /eɪ/ in most contexts and is especially common in verbs.
 | to prey | to preie |
 | to survey | to sorveie |
 | to purvey | to porveie |
-
-#### Other Examples
-
-| Modern English | Inglisce |
-|----------------|----------|
+| to sail | to seile |
 | weight | ueihte |
 | weigh | ueihe |
 | sleigh | sleihe |
@@ -49,7 +61,7 @@ When **EI** is followed by **R**, the pronunciation shifts to /ɛr/.
 
 **ÉI** marks a stressed /eɪ/, primarily in nouns derived from **-eine** verbs.
 
-#### From -eine Verbs
+#### Examples
 
 | Modern English | Inglisce |
 |----------------|----------|
@@ -68,7 +80,8 @@ When **EI** is followed by **R**, the pronunciation shifts to /ɛr/.
 
 | Category | Grapheme | IPA |
 |--------|----------|-----|
-| Verbs | EI | /eɪ/ |
+| Word-initial | EI | /i/ |
+| Word-medial | EI | /eɪ/ |
 | EI + R | EIR / EIRE | /ɛr/ |
 | Nouns from -eine verbs | ÉI | /eɪ/ (stressed) |
 
@@ -86,5 +99,5 @@ When **EI** is followed by **R**, the pronunciation shifts to /ɛr/.
 
 | Focus | Summary |
 |-----|---------|
-| Primary Patterns | EI = /eɪ/; EI + R = /ɛr/; ÉI marks stressed /eɪ/ |
+| Primary Patterns | EI- = /i/; -EI- = /eɪ/; EI + R = /ɛr/; ÉI marks stressed /eɪ/ |
 | Key Distinctions | Stress marking differentiates noun forms; R-conditioning overrides default EI |
