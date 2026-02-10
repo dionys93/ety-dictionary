@@ -1,53 +1,49 @@
 # EA
 
-The digraph EA represents two vowel sounds in Inglisce.
+The digraph **EA** represents two vowel sounds in Inglisce.
 
-### PRONUNCIATION SUMMARY
+## Pronunciation Summary
 
-**EA**
-- /eɪ/ "shake" — shake → seacue
-- /aɪ/ "eye" — eye → eaie
+| Digraph | IPA | Modern English | Inglisce |
+|--------|------|----------------|----------|
+| EA | /eɪ/ | shake | seache |
+| EA | /aɪ/ | eye | eaie |
 
-### The Digraph EA
+## The Digraph EA
 
-#### EA = /eɪ/
-EA represents /eɪ/ when replacing the A_E pattern from Modern English.
+### EA = /eɪ/
 
-**Examples:**  
-shake → seacue /ʃeɪk/  
-shame → seame /ʃeɪm/  
-shade → seade /ʃeɪd/  
-share → seare /ʃɛr/
+EA represents /eɪ/ when replacing the **A_E** pattern from Modern English.
 
-#### EA = /aɪ/
+| Modern English | Inglisce | IPA |
+|----------------|----------|-----|
+| shake | seache | /ʃeɪk/ |
+| shame | seame | /ʃeɪm/ |
+| shade | seade | /ʃeɪd/ |
+| share | seare | /ʃɛr/ |
+| ale | eale | /eɪl/ |
+
+### EA = /aɪ/
+
 EA represents /aɪ/ in specific vocabulary items.
 
-**Examples:**  
-eye → eaie /aɪ/ (singular)  
-eyes → eays /aɪz/ (plural)
+| Modern English | Inglisce | IPA |
+|----------------|----------|-----|
+| eye, eyes | eaie, eais | /aɪ/, /aɪz/ |
 
-### Rules
 
-1. **A_E Replacement Pattern**
-Words with A + consonant + silent E in Modern English use EA for the /eɪ/ sound.
+## Cross-References
 
-2. **Specific Vocabulary**
-The word "eye" and its derivatives use EA for /aɪ/.
+| Related File | Notes |
+|-------------|-------|
+| IPA-eɪ.md | /eɪ/ sound patterns |
+| IPA-aɪ.md | /aɪ/ sound patterns |
+| Â.md | Also represents /eɪ/ |
+| AI.md | Also represents /eɪ/ |
+| EI.md, EY.md | Contrasting E-initial digraphs |
 
-### Cross-References
+## Teaching Notes
 
-- For /eɪ/ sound patterns, see IPA-eɪ.txt
-- For /aɪ/ sound patterns, see IPA-aɪ.txt
-- Related to Â.txt (also represents /eɪ/)
-- Related to AI.txt (also represents /eɪ/)
-- Contrasts with EI.txt, EY.txt (different E-initial digraphs)
-
-### Teaching Notes
-
-**Primary patterns:**
-- EA replaces English A_E pattern for /eɪ/
-- Limited /aɪ/ usage in "eye" derivatives
-
-**Key distinctions:**
-- Default pronunciation is /eɪ/
-- The /aɪ/ pronunciation is vocabulary-specific
+| Category | Summary |
+|--------|---------|
+| Key Distinctions | Default pronunciation is /eɪ/; /aɪ/ is vocabulary-specific |
