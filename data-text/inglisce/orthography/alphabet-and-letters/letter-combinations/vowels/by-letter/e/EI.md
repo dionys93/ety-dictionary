@@ -22,10 +22,11 @@ EI is pronounced /i/ in word-initial position.
 
 | Modern English | Inglisce |
 |----------------|----------|
+| to eat | to eite |
 | eagle | eigle |
 | each | eic̃e |
-| to eat | to eite |
 | eel | eile |
+| ease | eise |
 
 
 ### -EI- = /eɪ/ Word-Medial
