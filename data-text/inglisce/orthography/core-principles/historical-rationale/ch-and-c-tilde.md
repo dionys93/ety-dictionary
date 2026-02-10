@@ -34,6 +34,16 @@ Old English employed *c* for both /k/ and a palatalized consonant. Before front 
 
 The grapheme **C̃** is therefore justified as a marked continuation of palatalized *c*, preserving the historical relationship between the affricate /t͡ʃ/ and its source consonant and restoring transparent one-to-one grapheme–phoneme correspondence.
 
+| Latin | Italian | French | Modern English | Inglisce |
+| --- | --- | --- | --- | --- |
+| **centum** <br> /ˈkɛn.tum/ | **c**ento <br> /ˈt͡ʃɛn.to/ | **c**ent <br> /sɑ̃/ | cent /sɛnt/           | **c**ente /sɛnt/ |
+| **civitas** <br> /ˈki.wi.tas/ | **c**ittà <br> /ˈt͡ʃit.ta/   | **c**ité <br> /si.te/ | city /ˈsɪti/ | **c**itie /ˈsɪti/ |
+| **cantare** <br> /kanˈta.re/  | **c**antare <br> /kanˈta.re/ | **ch**anter <br> /ʃɑ̃.te/  | to chante /t͡ʃænt/    | to c̃ante /t͡ʃænt/   |
+| **cicer** <br> /ˈki.kɛr/      | **c**eci <br> /ˈt͡ʃe.t͡ʃi/   | pois chiche <br> /pwa ʃiʃ/ | chickpea /ˈt͡ʃɪk.pi/ | c̃icpie /ˈt͡ʃɪk.pi/    |
+| **circa** <br> /ˈkir.ka/ | circa <br> /ˈt͡ʃir.ka/ | cher**ch**er <br> /ʃɛr.ʃe/ | to search /sərt͡ʃ/  | to cerc̃e /sərt͡ʃ/ |
+
+
+
 ### Summary
 
 Inglisce assigns graphemes based on historical and phonological evidence:
