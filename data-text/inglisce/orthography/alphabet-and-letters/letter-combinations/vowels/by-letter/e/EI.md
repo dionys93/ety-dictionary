@@ -7,7 +7,7 @@ The digraph **EI** and its diacritic variant **ÉI** represent two vowel sounds 
 | Grapheme | IPA | Environment | Modern English | Inglisce |
 |--------|-----|-------------|----------------|----------|
 | EI- | /i/ | word-initial | eagle | eigle |
-| -EI- | /eɪ/ | word-medial | convey | conveie |
+| -EI- | /eɪ/ | word-medial, word-final | sail, convey | seile, conveie |
 | EIR | /ɛr/ | before R | impair | empeire |
 | ÉI | /eɪ/ | stressed | containment | contéinment |
 
@@ -22,7 +22,7 @@ EI is pronounced /i/ in word-initial position.
 
 | Modern English | Inglisce |
 |----------------|----------|
-| to eat | to eite |
+| eat | eite |
 | eagle | eigle |
 | each | eic̃e |
 | eel | eile |
@@ -31,21 +31,22 @@ EI is pronounced /i/ in word-initial position.
 
 ### -EI- = /eɪ/ Word-Medial
 
-EI is pronounced /eɪ/ in word-medial position.
+EI is pronounced /eɪ/ in word-medial or word-final position.
 
 #### Examples
 
 | Modern English | Inglisce |
 |----------------|----------|
-| to convey | to conveie |
-| to obey | to obeie |
-| to prey | to preie |
-| to survey | to sorveie |
-| to purvey | to porveie |
-| to sail | to seile |
+| sail | seile |
 | weight | ueihte |
 | weigh | ueihe |
 | sleigh | sleihe |
+| convey | conveie |
+| obey | obeie |
+| prey | preie |
+| survey | sorveie |
+| purvey | porveie |
+
 
 ### EI + R = /ɛr/
 
@@ -53,7 +54,7 @@ When **EI** is followed by **R**, the pronunciation shifts to /ɛr/.
 
 | Modern English | Inglisce | Part of Speech |
 |----------------|----------|---------------|
-| to impair | to empeire | verb |
+| impair | empeire | verb |
 | impairment | empeirement | noun |
 
 ## Diacritics
@@ -66,14 +67,13 @@ When **EI** is followed by **R**, the pronunciation shifts to /ɛr/.
 
 | Modern English | Inglisce |
 |----------------|----------|
-| to contain | to conteine |
+| contain | conteine |
 | containment | contéinment |
-| to retain | to reteine | 
+| retain | reteine | 
 | retainment | retéinment |
-| to entertain | to entreteine | 
+| entertain | entreteine | 
 | entertainment | entretéinment |
-| to aim | to éime | 
-| aim, aims | éime, éims |
+| aim | éime | 
 | obeyance | obéiance |
 | conveyance | convéiance |
 
@@ -82,7 +82,7 @@ When **EI** is followed by **R**, the pronunciation shifts to /ɛr/.
 | Category | Grapheme | IPA |
 |--------|----------|-----|
 | Word-initial | EI | /i/ |
-| Word-medial | EI | /eɪ/ |
+| Word-medial or word-final | EI | /eɪ/ |
 | EI + R | EIR / EIRE | /ɛr/ |
 | Nouns from -eine verbs | ÉI | /eɪ/ (stressed) |
 
