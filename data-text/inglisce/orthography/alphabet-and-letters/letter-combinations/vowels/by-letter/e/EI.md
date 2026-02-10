@@ -1,93 +1,90 @@
 # EI
 
-The digraph EI and its variant represent two vowel sounds in Inglisce.
+The digraph **EI** and its diacritic variant **ÉI** represent two vowel sounds in Inglisce.
 
-EI uses the following diacritic: ÉI
+## Pronunciation Summary
 
-### PRONUNCIATION SUMMARY
+| Grapheme | IPA | Environment | Modern English | Inglisce |
+|--------|-----|-------------|----------------|----------|
+| EI | /eɪ/ | default (most contexts) | convey | conveie |
+| EI | /ɛr/ | before R | impair | empeire |
+| ÉI | /eɪ/ | stressed | containment | contéinment |
 
-- **EI** — /eɪ/ "convey" (most common) — convey → conveie
+## The Digraph EI
 
-  — /ɛr/ "impair" (before R) — impair → empeire
-- **ÉI** — /eɪ/ "containment" (stressed) — containment → contéinment
+### EI = /eɪ/ (Default)
 
-### The Digraph EI
+EI is pronounced /eɪ/ in most contexts and is especially common in verbs.
 
-#### Basic EI = /eɪ/
-In most contexts, EI is pronounced /eɪ/ and appears in verbs.
+#### Verb Examples
 
-**Verb examples:**  
-to convey → to conveie  
-to obey → to obeie  
-to prey → to preie  
-to survey → to sorveie  
-to purvey → to porveie
+| Modern English | Inglisce |
+|----------------|----------|
+| to convey | to conveie |
+| to obey | to obeie |
+| to prey | to preie |
+| to survey | to sorveie |
+| to purvey | to porveie |
 
-**Other examples:**  
-weight → ueihte  
-weigh → ueihe  
-sleigh → sleihe
+#### Other Examples
 
-#### EI + R = /ɛr/
-When EI is followed by R, it is pronounced /ɛr/.
+| Modern English | Inglisce |
+|----------------|----------|
+| weight | ueihte |
+| weigh | ueihe |
+| sleigh | sleihe |
 
-**Verb examples:**  
-to impair → to empeire
+### EI + R = /ɛr/
 
-**Noun examples:**  
-impairment → empeirement
+When **EI** is followed by **R**, the pronunciation shifts to /ɛr/.
 
-### Diacritics
+| Modern English | Inglisce | Part of Speech |
+|----------------|----------|---------------|
+| to impair | to empeire | verb |
+| impairment | empeirement | noun |
 
-#### ÉI — STRESSED /eɪ/
+## Diacritics
 
-**Pronunciation:** /eɪ/ — as in "containment" (always stressed)
+### ÉI = Stressed /eɪ/
 
-**PURPOSE**  
-Marks stressed /eɪ/ in nouns derived from -eine verbs.
+**ÉI** marks a stressed /eɪ/, primarily in nouns derived from **-eine** verbs.
 
-**EXAMPLES**
+#### From -eine Verbs
 
-**From -eine verbs:**  
-to contain → to conteine  
-containment → contéinment  
+| Modern English | Inglisce |
+|----------------|----------|
+| to contain | to conteine |
+| containment | contéinment |
+| to retain | to reteine | 
+| retainment | retéinment |
+| to entertain | to entreteine | 
+| entertainment | entretéinment |
+| to aim | to éime | 
+| aim, aims | éime, éims |
+| obeyance | obéiance |
+| conveyance | convéiance |
 
-to retain → to reteine  
-retainment → retéinment  
+## Pattern Summary
 
-to entertain → to entreteine  
-entertainment → entretéinment
+| Category | Grapheme | IPA |
+|--------|----------|-----|
+| Verbs | EI | /eɪ/ |
+| EI + R | EIR / EIRE | /ɛr/ |
+| Nouns from -eine verbs | ÉI | /eɪ/ (stressed) |
 
-**Other noun forms:**  
-obeyance → obéiance  
-conveyance → convéiance
+## Cross-References
 
-### Pattern Summary
+| File | Relation |
+|----|----------|
+| IPA-eɪ.md | /eɪ/ sound patterns |
+| IPA-ɛr.md | /ɛr/ sound patterns |
+| EA.md | also represents /eɪ/ |
+| EY.md | also represents /eɪ/ |
+| IE.md | contrasting vowel order |
 
-- **Verbs:** EI (unstressed /eɪ/) or EIRE (unstressed /ɛr/)
-- **Nouns from -eine verbs:** ÉI (stressed /eɪ/)
+## Teaching Notes
 
-### Etymology
-
-The -eire pattern derives from Latin through French:
-
-peior, peiorare [Latin] → impeiorare [Vulgar Latin] → empeirier [Old French] → empeiren [Middle English] → to impair [Modern English] → to empeire [Inglisce]
-
-### Cross-References
-
-- For /eɪ/ sound patterns, see IPA-eɪ.txt
-- For /ɛr/ sound patterns, see IPA-ɛr.txt
-- Related to EA.txt (also represents /eɪ/)
-- Related to EY.txt (also represents /eɪ/)
-- Contrasts with IE.txt (different vowel order)
-
-### Teaching Notes
-
-**Primary patterns:**
-- Basic EI = /eɪ/ in verbs
-- EI + R = /ɛr/
-- Stress marking: ÉI for stressed /eɪ/
-
-**Key distinctions:**
-- Verb-to-noun transformations often involve stress marking
-- The R following EI changes pronunciation to /ɛr/
+| Focus | Summary |
+|-----|---------|
+| Primary Patterns | EI = /eɪ/; EI + R = /ɛr/; ÉI marks stressed /eɪ/ |
+| Key Distinctions | Stress marking differentiates noun forms; R-conditioning overrides default EI |
