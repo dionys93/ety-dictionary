@@ -19,6 +19,8 @@ Related digraphs: **EA, EI, EU, EY**
 | È | /ɛ/ | stressed, irregular | anemone → an*è*monie |
 | Ê | /ər/ | stressed | earn → *ê*ne |
 
+* Represents no change in spelling between Modern (Websterian) English and Inglisce
+
 ---
 
 ## Base Letter E
@@ -53,9 +55,9 @@ E is pronounced /ɛ/ in the following contexts:
 | elephant | elefant |
 | elevator | elevaitor |
 | every | evry |
-| element | |
-| elegant | |
-| empty | |
+| element | * |
+| elegant | * |
+| empty | * |
 
 #### d) From **-ecte** Verbs
 
@@ -94,8 +96,8 @@ Word-final **E** is silent and performs grammatical and phonetic functions.
 | game | gâme |
 | state | stâte |
 | phone | fone |
-| home | |
-| stone | |
+| home | * |
+| stone | * |
 
 ---
 
@@ -108,18 +110,20 @@ Word-final **E** is silent and performs grammatical and phonetic functions.
 | compete | compite | /kəmˈpit/ |
 | complete | complite | /kəmˈplit/ |
 | delete | delite | /dəˈlit/ |
+| defeat | defite | /dəˈfit/ |
 | eat | eite | /it/ |
 | repeat | repite | /rəˈpit/ |
 | machine | maçine | /məˈʃin/ |
 
-#### O + Single Consonant + Silent E → /oʊ/
+#### O, OR + Single Consonant + Silent E → /oʊ/ or /ɔr/
 
-| Modern English | Inglisce |
-|---------------|----------|
-| home | home |
-| phone | fone |
-| stone | stone |
-| hope | hope |
+| Modern English | Inglisce | IPA |
+|---------------|----------|-----|
+| home, stone, hope, rope, vote | * | /hoʊm/, /stoʊn/, /hoʊp/, /roʊp/, /voʊt/ |
+| phone | fone | /foʊn/ |
+| to record | to recorde | /tə rə'kɔrd/ |
+| to export | to exporte | /tu əks'pɔrt/ |
+| to import | to importe | /tu ɪm'pɔrt/ |
 
 ---
 
@@ -146,32 +150,32 @@ Word-final **E** is silent and performs grammatical and phonetic functions.
 
 ### Prefix Positions
 
-| Modern English | Inglisce |
-|---------------|----------|
-| repair | repâre |
-| prepare | prepâre |
-| defend | defende |
-| descend | descende |
+| Modern English | Inglisce | IPA |
+|---------------|----------|-----|
+| repair | repâre | /rəˈpɛ(ə)r/ |
+| prepare | prepâre | /prəˈpɛ(ə)r/ |
+| defend | defende | /dəˈfɛnd/ |
+| descend | descende | /dəˈsɛnd/ |
 
 ### Unstressed Syllables
 
-| Modern English | Inglisce |
-|---------------|----------|
-| different | diffrent |
-| interest | intrest |
-| desperation | desperâcion |
+| Modern English | Inglisce | IPA |
+|---------------|----------|-----|
+| different | diffrent | /ˈdɪf.rənt/ |
+| interest | intrest | /ˈɪn.trəst/ |
+| desperation | desperâcion | /ˌdɛspəˈreɪʃən/ |
 
 ---
 
 ## Unstressed ER / RE → /ər/
 
-| Modern English | Inglisce |
-|---------------|----------|
-| remember | to remember, remembre(s remembred |
-| member | þe membre |
-| ember | þi embre |
-| timber | þe timbre |
-| number | þe nombre |
+| Modern English | Inglisce | IPA |
+|---------------|----------|-----|
+| remember | to remember, remembre(s remembred | /rə'mɛm.brər/ |
+| member | þe membre | /'mɛm.brər/ |
+| ember | þi embre | /'ɛm.brər/ |
+| timber | þe timbre | /'tɪm.bər/ |
+| number | þe nombre | /'nəm.bər/ |
 
 ---
 
