@@ -16,14 +16,15 @@ Modern German preserves this variability: ⟨ch⟩ represents a velar or post-ve
 
 ### Comparative Germanic Velar Consonants
 
-| Modern English | Inglisce         | Modern German |
-|----------------|-----------------|---------------|
-| to make        | to mâche       | machen        |
-| to bake        | to bâche       | backen        |
-| to break       | to breiche      | brechen       |
-| to cook        | to côche       | kochen        |
-| cake           | câc / to câche | Kuchen        |
-| to leak        | to lieche       | lecken        |
+| Modern English | Inglisce | Modern German | Modern Dutch | Icelandic | Swedish | Frisian |
+|----------------|----------|---------------|--------------|-----------|---------|---------|
+| to make | to mâche | machen | maken | - | - | meitsje(n |
+| to bake | to bâche | backen | bakken | baka | baka | bakke(n |
+| to break | to breiche | brechen | breken | brjóta | bryta | brekke(n |
+| to cook | to côche | kochen | koken | kokka | - | koke(n |
+| cake | câc / to câche | Kuchen | koeken | kaka | kaka | koeke |
+| to leak | to lieche | lecken | lekken | leka | läcka | lekke(n |
+| to lick | to liche | lecken | likken | sleikja | slicka | slikje(n |
 
 
 ### Palatalized *C* in Latin and English
