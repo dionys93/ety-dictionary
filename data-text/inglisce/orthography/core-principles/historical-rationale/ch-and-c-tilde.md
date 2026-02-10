@@ -1,44 +1,52 @@
 ## Rationale for the Use of **CH** and **C̃** in the Orthography
 
-Inglisce orthography distinguishes two graphemic representations for consonants that have followed different historical paths: **C̃**, representing the affricate /t͡ʃ/, and **CH**, representing the velar stop /k/. This distinction reflects the different historical origins of these forms and provides a consistent basis for their use in the system.
+Inglisce orthography distinguishes two graphemic representations for consonants with distinct historical trajectories: **C̃**, representing the affricate /t͡ʃ/, and **CH**, representing the velar stop /k/. This distinction reflects the separate origins of these forms and provides a principled basis for their use in the system.
 
-### Greek χ and the Origin of **CH**
+### Greek χ and the Latin Digraph **CH**
 
-In Classical Greek, the letter χ represented an aspirated velar stop, commonly reconstructed as an aspirated velar articulation. When Greek words were borrowed into Latin, Roman scribes introduced the digraph *ch* as a transliteration device specifically to represent χ. This digraph did not arise from internal Latin sound change and was never part of the native Latin consonant system.
+In Classical Greek, the letter χ represented an aspirated velar stop, commonly reconstructed as /kʰ/. When Greek words were borrowed into Latin, Roman scribes introduced the digraph *ch* as a transliteration of χ. This digraph was never part of native Latin phonology and did not arise through internal sound change.
 
-In Latin, *ch* was pronounced as /k/ (or /kʰ/ in careful speech) and remained restricted to learned, technical, and later ecclesiastical vocabulary. Its phonological value was thus conservative and etymologically anchored to a velar articulation rather than an affricate or palatal sound.
+In Latin, *ch* was pronounced /k/ (or /kʰ/ in careful speech) and remained restricted to learned, technical, and ecclesiastical vocabulary. Its phonological value was thus conservative and anchored to a velar articulation rather than to an affricate or palatal sound. As such, *ch* in Latin functioned as a marker of foreign or learned origin.
 
-This original function establishes *ch* as a marker of foreign or learned origin rather than as a reflex of native phonological processes.
+### Germanic Dorsal Consonants and the Use of **CH**
 
-### Historical Development of *C* in Latin
+The assignment of **CH** to /k/ in Inglisce is reinforced by Germanic developments. Across West and North Germanic languages, velar consonants derived from Proto-Germanic *k* and *kk* underwent variable phonological outcomes, including stops, fricatives, and geminate forms. Orthographically, these consonants were represented with ⟨k⟩, ⟨ck⟩, and ⟨ch⟩ in different contexts.
 
-Separately, the Latin letter *c* represented /k/ in all phonological environments in Classical Latin. During the transition to Vulgar Latin and the early Romance languages, *c* underwent palatalization before front vowels (/e, i/), producing affricate and fricative outcomes. In several Romance traditions, one common reflex of this process was /t͡ʃ/.
+Modern German preserves this variability: ⟨ch⟩ represents a velar or post-velar fricative in many environments, while closely related English words retain /k/. Inglisce adopts **CH** in Germanic-derived vocabulary as an intentional orthographic homage to this broader tradition. While pronounced /k/, **CH** signals a dorsal consonant and reflects the historical instability of velars in Germanic orthographies.
 
-This palatalization was a sound change affecting /k/ (written *c* in Latin). In several Romance languages, *ch* was later repurposed to represent the resulting affricate /t͡ʃ*, a spelling convention that postdates and does not motivate the phonological change itself.
+### Comparative Germanic Velar Consonants
 
-### Palatalized *C* in Old and Middle English
+| Modern English | Inglisce         | Modern German |
+|----------------|-----------------|---------------|
+| to make        | to mâche       | machen        |
+| to bake        | to bâche       | backen        |
+| to break       | to breiche      | brechen       |
+| to cook        | to côche       | kochen        |
+| cake           | câc / to câche | Kuchen        |
+| to leak        | to lieche       | lecken        |
 
-Old English inherited the Latin alphabet and employed *c* to represent both /k/ and a palatalized consonant. Before front vowels and /j/, *c* was regularly palatalized, yielding palatal realizations commonly reconstructed as [c] or affricate-like outcomes that later stabilized as /t͡ʃ/. This alternation was phonologically conditioned and mirrors, in structural terms, the palatalization of *c* in Romance, though the processes were independent.
 
-During the Middle English period, French scribal influence increasingly represented the palatalized outcome with the digraph *ch*, while native *c* lost its ability to transparently signal palatalization. By Early Modern English, /t͡ʃ/ had become a stable phoneme, but its spelling was distributed across multiple digraphs and trigraphs, obscuring its historical origin.
+### Palatalized *C* in Latin and English
 
-The grapheme **C̃** is therefore justified as a marked continuation of palatalized *c*, preserving the historical relationship between the affricate /t͡ʃ/ and its source consonant while restoring phonological transparency.
+Separately, the Latin letter *c* represented /k/ in all phonological environments. In Vulgar Latin and the early Romance languages, *c* underwent palatalization before front vowels (/e, i/), producing affricate or fricative outcomes, often /t͡ʃ/ in later Romance. In some Romance traditions, ⟨ch⟩ was repurposed to represent this affricate, but this orthographic reassignment postdates the phonological change.
 
-### Orthographic Assignment of **CH** as /k/
+Old English employed *c* for both /k/ and a palatalized consonant. Before front vowels and /j/, *c* was regularly palatalized, yielding [c] or affricate-like outcomes that later stabilized as /t͡ʃ/. French scribal influence in Middle English increasingly represented this palatalized outcome with *ch*, while native *c* lost transparency. By Early Modern English, /t͡ʃ/ had become stable, though spelled inconsistently.
 
-Against this historical background, Inglisce adopts a conservative reassignment of **CH**. Given its origin as a transliteration of Greek χ and its consistent velar realization in Latin, **CH** is assigned the value /k/ in Inglisce. This choice reflects its etymological function rather than its later conventional use in English spelling.
-
-This reassignment also aligns **CH** with conservative and learned strata of the lexicon, while reserving **C̃** for affricate outcomes that historically arose through palatalization of *c*.
-
-### Orthographic Design Principles
-
-The distinction between **C̃** (/t͡ʃ/) and **CH** (/k/) encodes genealogical origin rather than surface orthographic habit. This system:
-
-- Separates native palatalization from foreign transliteration  
-- Restores a one-to-one grapheme–phoneme mapping  
-- Preserves etymological visibility across lexical strata  
-- Avoids conflating historically unrelated consonantal developments  
+The grapheme **C̃** is therefore justified as a marked continuation of palatalized *c*, preserving the historical relationship between the affricate /t͡ʃ/ and its source consonant and restoring transparent one-to-one grapheme–phoneme correspondence.
 
 ### Summary
 
-**C̃** represents the palatalized reflexes of *c* attested in both Romance and English traditions, culminating in the affricate /t͡ʃ/. **CH**, by contrast, derives from the Latin transliteration of Greek χ and retains its conservative velar value. By respecting the independent histories of these graphemes, the orthography achieves historical rigor, internal consistency, and a transparent mapping between form and sound.
+Inglisce assigns graphemes based on historical and phonological evidence:
+
+- **CH** = /k/, reflecting both classical Greek/Latin transliteration (χ → ch) and dorsal consonant developments in Germanic vocabulary  
+- **C̃** = /t͡ʃ/, representing palatalized reflexes of Latin and English *c*  
+
+This system encodes genealogical origin rather than surface spelling conventions. It:
+
+- Separates native palatalization from foreign transliteration  
+- Restores transparent grapheme–phoneme mapping  
+- Preserves etymological visibility across lexical strata  
+- Avoids conflating historically unrelated consonantal developments  
+
+By integrating the classical, Germanic, and palatalization evidence into a single rationale, Inglisce achieves an orthography that is **historically rigorous, phonologically transparent, and internally consistent**, while providing a coherent one-to-one mapping between graphemes and sounds.
+
