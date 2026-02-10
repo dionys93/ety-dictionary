@@ -19,7 +19,7 @@ Related digraphs: **EA, EI, EU, EY**
 | È | /ɛ/ | stressed, irregular | anemone → an*è*monie |
 | Ê | /ər/ | stressed | earn → *ê*ne |
 
-* Represents no change in spelling between Modern (Websterian) English and Inglisce
+'*' Represents no change in spelling between Modern (Websterian) English and Inglisce
 
 ---
 
