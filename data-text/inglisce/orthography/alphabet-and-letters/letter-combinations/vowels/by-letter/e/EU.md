@@ -1,94 +1,101 @@
 # EU
 
-The digraph **EU** represents three vowel sounds in Inglisce, depending on phonological environment.
+The digraph **EU** represents the vowel /u/ and may trigger consonant palatalization depending on the preceding consonant.
+
+---
 
 ## Pronunciation Summary
 
-| Grapheme | IPA | Environment | Modern English | Inglisce |
-|--------|-----|-------------|----------------|----------|
-| EU | /ju/ | default | few | feue |
-| EU | /u/ | after R, TR | rule | reule |
-| EU | /ə/ | lexical (fixed set) | luck | hluc |
+| Environment | Output | Example | Inglisce |
+|------------|--------|----------|----------|
+| Word-initial EU- | /ju/ | eunuch | eunoc |
+| Palatalizing consonant + EU | /Cʲu/ | few | feue |
+| S + EU | /ʃu/ | shoe | seue |
+| Blocking consonant + EU | /Cu/ | rule | reule |
+| EU | /ə/ | lexical reduction | stuck | steuc |
 
-## The Digraph EU
+---
 
-### EU = /ju/ (Default)
+## 1. Palatalization Before EU
 
-In most contexts, **EU** is pronounced /ju/.
+The following consonants palatalize before **EU**:
+
+> { b, c, f, g, h, l, m, n, p, v }
+
+In this environment:
+
+C + EU → /Cʲu/
 
 | Modern English | Inglisce | IPA |
 |----------------|----------|-----|
-| few | feue | /fju/ |
-| view | veue | /vju/ |
-| eunuch | eunoc | /ˈjunək/ |
+| few | feue | /fʲu/ |
+| view | veue | /vʲu/ |
+| hue | heue | /hʲu/ |
 
 ---
 
-### EU = /u/ After Certain Consonants
+## 2. S + EU → /ʃu/
 
-After **R** and **TR**, **EU** represents /u/.
-
-| Environment | Modern English | Inglisce | IPA |
-|------------|----------------|----------|-----|
-| R + EU | rule | reule | /rul/ |
-| TR + EU | true | treu | /tru/ |
-| TR + EU | truth | treuþ | /truθ/ |
-
----
-
-### EU = /ə/ (Lexical Items)
-
-In a limited, fixed vocabulary set, **EU** represents /ə/.
-
-| Modern English | Inglisce | IPA |
-|----------------|----------|-----|
-| buck | buc | /bək/ |
-| duck | deuc | /dək/ |
-| luck | hluc | /lək/ |
-| trust | treuste | /trəst/ |
-
----
-
-## Special Patterns
-
-### S + EU = /ʃu/
-
-When **S** precedes **EU**, it palatalizes to /ʃ/.
+When **S** precedes EU, it shifts to /ʃ/.
 
 | Modern English | Inglisce | IPA |
 |----------------|----------|-----|
 | shoe | seue | /ʃu/ |
 
+This is a regular palatal shift specific to S.
+
+---
+
+## 3. Blocking Consonants (No Palatalization)
+
+The following consonants do not palatalize before EU:
+
+> { d, r, s, t, x }
+
+In this environment:
+
+C + EU → /Cu/
+
+| Modern English | Inglisce | IPA |
+|----------------|----------|-----|
+| rule | reule | /ru/ |
+| true | treue | /tru/ |
+| truth | treuþ | /truθ/ |
+
+---
+
+## 4. EU = /ə/ (Lexical Reduction)
+
+In a limited set of high-frequency words, EU represents /ə/.
+
+This reflects historical reduction rather than productive phonological conditioning.
+
+| Modern English | Inglisce | IPA |
+|----------------|----------|-----|
+| duck | deuc | /dək/ |
+| stuck | steuc | /stək/ |
+| struck | streuc | /strək/ |
+
+---
+
+## Phonological Principle
+
+EU represents /u/ and functions as a palatalization trigger.
+
+Consonants are divided into:
+
+- Palatalizing class  
+- Blocking class  
+- Special S-shift  
+
+The distribution is systematic and grapheme-driven.
+
 ---
 
 ## Pattern Summary
 
-| Pattern | Grapheme | IPA |
-|-------|----------|-----|
-| Default | EU | /ju/ |
-| After R, TR | EU | /u/ |
-| Lexical set | EU | /ə/ |
-| S + EU | SEU | /ʃu/ |
-
----
-
-## Cross-References
-
-| File | Relation |
-|----|----------|
-| IPA-ju.md | /ju/ sound patterns |
-| IPA-u.md | /u/ sound patterns |
-| IPA-ə.md | /ə/ sound patterns |
-| UE.md | reversed vowel order |
-| U.md | single vowel patterns |
-
----
-
-## Teaching Notes
-
-| Focus | Summary |
-|-----|---------|
-| Primary Pattern | Default EU = /ju/ |
-| Conditioning | R and TR block /j/ |
-| Exceptions | /ə/ occurs in fixed lexical items |
-| Palatalization | S + EU → /ʃu/ |
+| Class | Consonants | Output Before EU |
+|-------|------------|------------------|
+| Palatalizing | b c f g h l m n p v | /Cʲu/ |
+| Special | s | /ʃu/ |
+| Blocking | d r s t x | /Cu/ |
