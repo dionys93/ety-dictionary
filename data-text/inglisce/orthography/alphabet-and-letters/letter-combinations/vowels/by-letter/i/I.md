@@ -1,167 +1,225 @@
 # I
 
-The letter I and its variants represent multiple vowel sounds in Inglisce.
+The letter **I** and its variants represent multiple vowel sounds in Inglisce.
 
-I uses the following diacritics: Í, Î, Ï
+Diacritics: **Í, Î, Ï**  
+Related digraphs: See IE.md
 
-Related digraphs: See IE files
+---
 
-### PRONUNCIATION SUMMARY
+## Pronunciation Summary
 
-- **I** — /ɪ/ "bit" (stressed) — bit  
-      — /ə/ "individual" (unstressed) — individual → indiviḑual  
-      — /i/ "machine" (before silent E or word-final) — machine → maçine
-- **Í** — /i/ "media" (stressed) — media → mídia
-- **Î** — /aɪ/ "find" (usually stressed) — find → fînd
-- **Ï** — /ɪ/ "bit" (irregular stress/separator) — to bid → to bïde
+| Grapheme | IPA | Environment | Modern English | Inglisce |
+|-----------|------|-------------|----------------|-----------|
+| I | /ɪ/ | stressed (default) | bit | bit |
+| I | /ə/ | unstressed | individual | indiviḑual |
+| I | /i/ | before silent E | machine | maçine |
+| I | /i/ | word-final | recipe | recipie |
+| Í | /i/ | stressed | media | mídia |
+| Î | /aɪ/ | lexical | find | fînde |
+| Ï | /ɪ/ | separator / clarity | bid | bïde |
 
-### Base Letter I
+'*' No change between Modern (Websterian) English and Inglisce
 
-#### Single Vowel = /ɪ/
-When I is the only vowel in a word, it's pronounced /ɪ/.
+---
 
-**Monosyllables:**  
-bit, fit, hit, mit, pit, sit, zit  
-sick → sic, thick → þic, quick → cuic
+# Base Letter I
 
-#### I + Two Consonants = /ɪ/
-I is always /ɪ/ when followed by two consonants.
+## 1. I = /ɪ/ (Stressed Default)
 
-**Examples:**  
-rich, ditch → dich  
-to commit → to comitte, to convict → to convicte  
-permission, commission → comission, citizen → citasan
+### Monosyllables
 
-#### Stressed I in -ION Nouns = /ɪ/
-I is stressed /ɪ/ in nouns ending in -ION.
+| Modern English | Inglisce |
+|----------------|-----------|
+| bit | * |
+| fit | * |
+| sick | sic |
+| thick | þic |
+| quick | cuic |
 
-**-ION nouns:**  
-addiction → adiccion, addition → addicion  
-ambition → ambicion, condition → condicion  
-conviction → conviccion, fiction → ficcion
+---
 
-**Greek suffix -sis:**  
-analysis → anàlysis (singular /sɪs/)  
-analyses → anàlysies (plural /siz/)  
-hypnosis → hipnôsis, hipnôsies
+### I + Two Consonants
 
-#### Unstressed I = /ə/
-When not stressed, I is pronounced /ə/.
+I remains /ɪ/ when followed by two consonants.
 
-**Example:**  
-individual → indiviḑual /ˌɪndəˈvɪdʒ(ə)wəl/
+| Modern English | Inglisce |
+|----------------|-----------|
+| rich | ric̃e |
+| ditch | dic̃e |
+| commit | comitte |
+| convict | convicte |
+| permission | comission |
+| citizen | citasan |
 
-#### I + Silent E = /i/
-When followed by silent E, I is pronounced /i/.
+---
 
-**Nouns:**  
-elite, machine → maçine, meme → mime  
-conceit → concite, deceit → decite  
-receipt → recite, receipts → recípts
+### Stressed I in -ION Nouns
 
-**Verbs:**  
-to see → to sihe, to compete → to compite  
-to repeat → to repite, to defeat → to defite  
-to complete → to complite, to conceive → to concive  
-to deceive → to decive, to receive → to recive  
-to sieve → to sive
+| Modern English | Inglisce |
+|----------------|-----------|
+| addiction | adiccion |
+| ambition | ambicion |
+| conviction | conviccion |
+| fiction | ficcion |
 
-#### Word-Final I = /i/
-When I ends a word, it's pronounced /i/.
+---
 
-**Examples:**  
-recipe → recipie, recipis  
-anemone → anèmonie, anèmonis  
-catastrophe → catàstrofie, catàstrofis  
-hyperbole → hypêrbolie, hypêrbolis
+### Greek -sis
 
-### Diacritics
+| Form | Inglisce |
+|------|-----------|
+| analysis | anàlysis |
+| analyses | anàlysies |
+| hypnosis | hipnósis |
+| hypnoses | hipnósies |
 
-#### Í — STRESSED /i/
+---
 
-**Pronunciation:** /i/ — as in "machine" (always stressed)
+## 2. I = /ə/ (Unstressed)
 
-**PURPOSE**  
-Marks stressed /i/ in words where emphasis needs clarification.
+When unstressed, I reduces to /ə/.
 
-**EXAMPLES**
+| Modern English | Inglisce | IPA |
+|----------------|-----------|------|
+| individual | indiviḑual | /ˌɪndəˈvɪdʒ(ə)wəl/ |
 
-**-TION derivatives:**  
-completion → complícion  
-deletion → delícion
+---
 
-**Other patterns:**  
-immediate → immídiat  
-media → mídia  
-idea → îdía (note: both Î and Í used)
+## 3. I + Silent E = /i/
 
-#### Î — /aɪ/
+When followed by silent E, I represents /i/.
 
-**Pronunciation:** /aɪ/ — as in "find" (usually stressed)
+### Nouns
 
-**PURPOSE**  
-Represents /aɪ/ sound in various word positions.
+| Modern English | Inglisce |
+|----------------|-----------|
+| machine | maçine |
+| elite | * |
+| receipt, receipts | recite, recípts |
+| deceit | decite |
 
-**EXAMPLES**
+### Verbs
 
-**Verbs:**  
-to combine → to combîne  
-to contrive → to contrîve  
-to abide → to abîde  
-to find → to fînde  
-to grind → to grînde
+| Modern English | Inglisce |
+|----------------|-----------|
+| compete | compite |
+| repeat | repite |
+| receive | recive |
+| deceive | decive |
+| sieve | sive |
 
-**Nouns and adjectives:**  
-isle → île, îals  
-vile → vîle, violence → vîlence  
-idea → îdía, irony → îronie  
-divine → divîne
+---
 
-**Latin plurals (ending in -us):**  
-octopus → octopî  
-alomnus → alomnî  
-fongus → fongî
+## 4. Word-Final I = /i/
 
-#### Ï — STRESSED /ɪ/ (SEPARATOR)
+When I ends a word, it represents /i/.
 
-**Pronunciation:** /ɪ/ or /i/ before vowels
+| Modern English | Inglisce |
+|----------------|-----------|
+| recipes | recipis |
+| anemones | anèmonis |
+| catastrophes | catàstrofis |
+| hyperboles | hypêrbolis |
 
-**PURPOSE**  
-Separates vowels and specifies pronunciation in irregular verbs.  
-Shows stressed /ɪ/ where clarity is needed.
+---
 
-**EXAMPLES**
+# Diacritics
 
-**Irregular verbs:**  
-to bid → to bïde
+---
 
-**Pronunciation clarification:**  
-to nauseate → to nausïait (shows SI is /zi/ not /ʒ/)  
-anonymity → anonïmatie (shows stressed /ɪ/)  
-image → ïmage  
-equipment → equïpment
+## Í — Stressed /i/
 
-### Cross-References
+Marks stressed /i/ where clarification is needed.
 
-- For /ɪ/ sound patterns, see IPA-ɪ.txt
-- For /i/ sound patterns, see IPA-i.txt
-- For /ə/ sound patterns, see IPA-ə.txt
-- For /aɪ/ sound patterns, see IPA-aɪ.txt
-- For digraph IE, see IE.txt
-- Related to YH digraph (also /aɪ/)
+| Modern English | Inglisce |
+|----------------|-----------|
+| completion | complícion |
+| deletion | delícion |
+| media | mídia |
+| immediate | immídiat |
 
-### Teaching Notes
+---
 
-**Primary patterns:**
-- Stressed I = /ɪ/, unstressed I = /ə/
-- I + silent E or word-final I = /i/
-- Context determines pronunciation
+## Î — /aɪ/
 
-**Key distinctions:**
-- Three distinct sounds based on position and stress
-- Silent E consistently makes I → /i/
+Represents /aɪ/ in various positions.
 
-**Diacritics summary:**
-- **Í** = stressed /i/ where clarification needed
-- **Î** = /aɪ/ sound (including Latin plurals)
-- **Ï** = stressed /ɪ/ (rare, for clarity/separation)
+### Verbs
+
+| Modern English | Inglisce |
+|----------------|-----------|
+| combine | combîne |
+| contrive | contrîve |
+| abide | abîde |
+| find | fînde |
+| grind | grînde |
+
+### Nouns & Adjectives
+
+| Modern English | Inglisce |
+|----------------|-----------|
+| isle | île |
+| vile | vîel |
+| violence | vîlence |
+| divine | divîne |
+
+### Latin Plurals (-us → -î)
+
+| Singular | Plural |
+|-----------|--------|
+| octopus | octopî |
+| alumnus | alomnî |
+| fungus | fongî |
+
+---
+
+## Ï — Separator / Stressed /ɪ/
+
+Used for vowel separation or stress clarity.
+
+| Function | Example | Inglisce |
+|----------|----------|-----------|
+| Irregular verb | bid | bïde |
+| Pronunciation clarity | nauseate | nausïait |
+| Stress marking | anonymity | anonïmatie |
+| Vowel separation | image | ïmage |
+| Cluster clarity | equipment | equïpment |
+
+---
+
+# Pattern Summary
+
+| Environment | Output |
+|-------------|--------|
+| Stressed I | /ɪ/ |
+| Unstressed I | /ə/ |
+| I + silent E | /i/ |
+| Word-final I | /i/ |
+| Í | stressed /i/ |
+| Î | /aɪ/ |
+| Ï | stressed /ɪ/ or separator |
+
+---
+
+# Cross-References
+
+| File | Relation |
+|------|----------|
+| IPA-ɪ.md | /ɪ/ patterns |
+| IPA-i.md | /i/ patterns |
+| IPA-ə.md | /ə/ reduction |
+| IPA-aɪ.md | /aɪ/ patterns |
+| IE.md | related digraph |
+| YH.md | alternate /aɪ/ |
+
+---
+
+# Teaching Notes
+
+| Focus | Summary |
+|--------|----------|
+| Core Contrast | /ɪ/ vs /i/ vs /ə/ |
+| Silent E Rule | I + silent E → /i/ |
+| Reduction | Unstressed I → /ə/ |
+| Diacritics | Clarify stress and diphthong values |
