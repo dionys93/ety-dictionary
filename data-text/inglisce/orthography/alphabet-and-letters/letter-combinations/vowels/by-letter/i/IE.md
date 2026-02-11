@@ -1,61 +1,100 @@
 # IE
 
-The digraph IE represents one vowel sound in Inglisce.
+The digraph **IE** represents the vowel /i/ in Inglisce.
 
-### PRONUNCIATION SUMMARY
+IE has no pronunciation variation.
 
-- **IE** — /i/ "field" — field → fielde
+---
+
+## Pronunciation Summary
+
+| Grapheme | IPA | Position | Modern English | Inglisce |
+|----------|------|-----------|----------------|-----------|
+| IE | /i/ | word-medial | field | fielde |
+| IE | /i/ | verb-final | envy | envie |
+| IE | /i/ | noun-final | enemy | enemie |
+
+---
+
+# Distribution of IE
 
 IE consistently represents /i/ in all positions.
 
-### Verb Patterns
+---
 
-#### Verb Endings
-IE appears at the end of verbs, replacing Modern English -Y.
+## 1. Verb Patterns
 
-**Examples:**  
-to envy → to envie  
-to worry → to uêrie  
-to hurry → to hêrie  
-to marry → to mârie
+### A. Verb-Final -IE  
+IE replaces Modern English final **-Y** in verbs.
 
-#### Mid-Word Position
-IE appears in the middle of some verbs, typically replacing Modern English EE or EA.
+| Modern English | Inglisce | IPA |
+|----------------|-----------|------|
+| to envy | to envie | /ˈɛnvi/ |
+| to worry | to uêrie | /ˈwəri/ |
+| to hurry | to hêrie | /ˈhəri/ |
+| to marry | to mârie | /ˈmɛri/ |
 
-**Examples:**  
-to feel → to fiele  
-to deal → to diele  
-to kneel → to niele  
-to meet → to miete  
-field → fielde
+---
 
-### Noun Patterns
+### B. Mid-Word IE  
+IE replaces Modern English **EE** or **EA** in certain verbs.
 
-#### Singular Ending -IE
-Modern English nouns ending in -Y become -IE in Inglisce singular forms.
+| Modern English | Inglisce | IPA |
+|----------------|-----------|------|
+| to feel | to fiele | /fil/ |
+| to deal | to diele | /dil/ |
+| to kneel | to niele | /nil/ |
+| to meet | to miete | /mit/ |
+| field | fielde | /fild/ |
 
-**Pattern:** Modern English -Y → Inglisce -IE (singular) → -IS (plural)
+---
 
-**Examples:**  
-enemy → enemie, enemis  
-community → comunetie, comunetis 
-policy → pólicie, pólicis
+## 2. Noun Patterns
 
-### Cross-References
+### Singular -IE
 
-- For /i/ sound patterns, see IPA-i.txt
-- Related to I.txt (single vowel patterns)
-- Contrasts with EI.txt (reverse vowel order)
-- See also Y.txt for -Y endings in Modern English
+Modern English nouns ending in **-Y** become **-IE** in singular form.
 
-### Teaching Notes
+### Plural Formation
 
-**Primary patterns:**
-- IE always = /i/
-- No pronunciation variation
+Inglisce plural: **-IE → -IS**
 
-**Key distinctions:**
-- Common in verb forms (both endings and mid-word)
-- Replaces Modern English -Y in verb endings
-- Replaces Modern English EE/EA in mid-word positions
-- -IE nouns become -IS in plural
+| Modern English | Singular (Inglisce) | Plural (Inglisce) |
+|----------------|---------------------|-------------------|
+| enemy | enemie | enemis |
+| community | comunetie | comunetis |
+| policy | policie | policis |
+
+---
+
+## Pattern Summary
+
+| Environment | Grapheme | IPA | Function |
+|-------------|----------|------|----------|
+| Verb-final | -IE | /i/ | replaces ME -Y |
+| Word-medial | IE | /i/ | replaces ME EE/EA |
+| Noun singular | -IE | /i/ | replaces ME -Y |
+| Noun plural | -IS | /is/ | plural of -IE |
+
+---
+
+## Cross-References
+
+| File | Relation |
+|------|----------|
+| IPA-i.md | /i/ sound patterns |
+| I.md | single vowel patterns |
+| EI.md | reverse vowel order |
+| Y.md | Modern English -Y comparison |
+
+---
+
+## Teaching Notes
+
+| Focus | Summary |
+|--------|----------|
+| Core Rule | IE always represents /i/ |
+| Stability | No pronunciation variation |
+| Verb System | Replaces final -Y |
+| Noun System | -IE singular → -IS plural |
+| Mid-Word | Replaces E
