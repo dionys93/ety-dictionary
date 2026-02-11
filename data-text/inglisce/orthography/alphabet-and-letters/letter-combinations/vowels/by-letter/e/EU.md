@@ -45,6 +45,7 @@ In a limited, fixed vocabulary set, **EU** represents /ə/.
 | buck | buc | /bək/ |
 | duck | deuc | /dək/ |
 | luck | hluc | /lək/ |
+| trust | treuste | /trəst/ |
 
 ---
 
