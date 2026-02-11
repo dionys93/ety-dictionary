@@ -1,51 +1,86 @@
 # EY
 
-The digraph EY represents one vowel sound in Inglisce.
+The digraph **EY** represents the vowel /eɪ/ in Inglisce.
 
-### PRONUNCIATION SUMMARY
+---
 
-- **EY** — /eɪ/ "they" — they → þey
+## Pronunciation Summary
 
-### The Digraph EY
+| Grapheme | IPA | Environment | Modern English | Inglisce |
+|----------|-----|-------------|----------------|----------|
+| EY | /eɪ/ | lexical items | they | þey |
+| EY | /eɪ/ | gerunds from -EIE verbs | conveying | conveiyng |
 
-#### EY = /eɪ/
-EY consistently represents /eɪ/ and appears in basic vocabulary and gerund forms.
+---
 
-### Basic Vocabulary
+## The Digraph EY
 
-EY appears in a limited set of basic words.
+### EY = /eɪ/
 
-**Examples:**  
-they → þey /ðeɪ/  
-whey → ouey /weɪ/ (adjective)  
+EY consistently represents /eɪ/.  
+Its distribution is lexical and morphological rather than phonological.
 
-### Gerunds from -EIE Verbs
+---
 
-EY appears in gerund forms of verbs ending in -EIE.
+## 1. Basic Vocabulary
 
-**Pattern:** -EIE verb → -EYING gerund
+EY appears in a limited set of common words.
 
-**Examples:**  
-to convey → to conveie, conveying  
-to obey → to obeie, obeying  
-to prey → to preie, preying  
-to survey → to sorveie, sorveying  
-to purvey → to porveie, porveying  
-to sley → to sleie, sleying
+| Modern English | Inglisce | IPA | Notes |
+|----------------|----------|-----|------|
+| they | þey | /ðeɪ/ | pronoun |
+| whey | ouey | /weɪ/ | adjective |
 
-### Cross-References
+---
 
-- For /eɪ/ sound patterns, see IPA-eɪ.txt
-- Related to EI.txt (verbs use -EIE)
-- Related to EA.txt (also represents /eɪ/)
-- Contrasts with AY.txt (different distribution)
+## 2. Gerunds from -EIE Verbs
 
-### Teaching Notes
+When verbs end in **-EIE**, the gerund form replaces **-EIE** with **-EYING**.
 
-**Primary patterns:**
-- EY always = /eɪ/
-- Limited to basic vocabulary and gerunds
+### Pattern
 
-**Key distinctions:**
-- Gerunds: -EIE verbs become -EYING
-- No variation in pronunciation
+| Verb Form | Gerund Form |
+|-----------|------------|
+| -EIE | -EYING |
+
+### Examples
+
+| Infinitive (Inglisce) | Gerund | 
+|-----------------------|--------|
+| to conveie | conveying | 
+| to obeie | obeying | 
+| to preie | preying | 
+| to sorveie | sorveying | 
+| to porveie | porveying | 
+| to sleie | sleying |
+
+---
+
+## Pattern Summary
+
+| Category | Grapheme | IPA | Function |
+|----------|----------|-----|----------|
+| Lexical | EY | /eɪ/ | fixed vocabulary |
+| Morphological | -EYING | /eɪ/ | gerund formation |
+
+---
+
+## Cross-References
+
+| File | Relation |
+|------|----------|
+| IPA-eɪ.md | /eɪ/ sound patterns |
+| EI.md | verbs use -EIE in base form |
+| EA.md | alternate /eɪ/ spelling |
+| AY.md | contrasting /eɪ/ distribution |
+
+---
+
+## Teaching Notes
+
+| Focus | Summary |
+|-------|---------|
+| Core Rule | EY always represents /eɪ/ |
+| Distribution | Limited to core vocabulary and gerunds |
+| Morphology | -EIE verbs form gerunds in -EYING |
+| Variation | No pronunciation variation |
