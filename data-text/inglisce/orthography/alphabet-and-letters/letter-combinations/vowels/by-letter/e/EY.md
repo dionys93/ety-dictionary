@@ -9,7 +9,7 @@ The digraph **EY** represents the vowel /eɪ/ in Inglisce.
 | Grapheme | IPA | Environment | Modern English | Inglisce |
 |----------|-----|-------------|----------------|----------|
 | EY | /eɪ/ | lexical items | they | þey |
-| EY | /eɪ/ | gerunds from -EIE verbs | conveying | conveiyng |
+| EY | /eɪ/ | gerunds from -EIE verbs | conveying | conveying |
 
 ---
 
