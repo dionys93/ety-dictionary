@@ -1,63 +1,93 @@
 # EU
 
-The digraph EU represents three vowel sounds in Inglisce.
+The digraph **EU** represents three vowel sounds in Inglisce, depending on phonological environment.
 
-### PRONUNCIATION SUMMARY
+## Pronunciation Summary
 
-- **EU** — /ju/ "few" — few → feue
+| Grapheme | IPA | Environment | Modern English | Inglisce |
+|--------|-----|-------------|----------------|----------|
+| EU | /ju/ | default | few | feue |
+| EU | /u/ | after R, TR | rule | reule |
+| EU | /ə/ | lexical (fixed set) | luck | hluc |
 
-— /u/ "rule" — rule → reule  
+## The Digraph EU
 
-— /ə/ "luck" — luck → leuc
+### EU = /ju/ (Default)
 
-### The Digraph EU
+In most contexts, **EU** is pronounced /ju/.
 
-#### Basic EU = /ju/
-In most contexts, EU is pronounced /ju/.
+| Modern English | Inglisce | IPA |
+|----------------|----------|-----|
+| few | feue | /fju/ |
+| view | veue | /vju/ |
+| eunuch | eunoc | /ˈjunək/ |
 
-**Examples:**  
-few → feue /fju/  
-view → veue /vju/  
-eunuch → eunoc /ˈjunək/
+---
 
-#### EU = /u/ After Consonants
-After certain consonants (especially R and TR), EU represents /u/.
+### EU = /u/ After Certain Consonants
 
-**Examples:**  
-rule → reule /rul/  
-true → treu /tru/  
-truth → treuþ /truθ/
+After **R** and **TR**, **EU** represents /u/.
 
-#### EU = /ə/
-EU represents /ə/ in specific vocabulary items.
+| Environment | Modern English | Inglisce | IPA |
+|------------|----------------|----------|-----|
+| R + EU | rule | reule | /rul/ |
+| TR + EU | true | treu | /tru/ |
+| TR + EU | truth | treuþ | /truθ/ |
 
-**Examples:**   
-buck → beuc /bək/  
-duck → deuc /dək/  
-luck → leuc /lək/
+---
 
-### Special Patterns
+### EU = /ə/ (Lexical Items)
 
-#### S + EU = /ʃ/
-The letter S becomes /ʃ/ when followed by EU.
+In a limited, fixed vocabulary set, **EU** represents /ə/.
 
-**Example:**  
-shoe → seue /ʃu/
+| Modern English | Inglisce | IPA |
+|----------------|----------|-----|
+| buck | buc | /bək/ |
+| duck | deuc | /dək/ |
+| luck | hluc | /lək/ |
 
-### Cross-References
+---
 
-- For /ju/ sound patterns, see IPA-ju.txt
-- For /u/ sound patterns, see IPA-u.txt
-- For /ə/ sound patterns, see IPA-ə.txt
-- Related to UE.txt (different vowel order)
-- See also U.txt for single vowel patterns
+## Special Patterns
 
-### Teaching Notes
+### S + EU = /ʃu/
 
-**Primary patterns:**
-- Default EU = /ju/
-- After R and TR = /u/
+When **S** precedes **EU**, it palatalizes to /ʃ/.
 
-**Key distinctions:**
-- Context determines pronunciation
-- S + EU creates palatalization (/ʃ/)
+| Modern English | Inglisce | IPA |
+|----------------|----------|-----|
+| shoe | seue | /ʃu/ |
+
+---
+
+## Pattern Summary
+
+| Pattern | Grapheme | IPA |
+|-------|----------|-----|
+| Default | EU | /ju/ |
+| After R, TR | EU | /u/ |
+| Lexical set | EU | /ə/ |
+| S + EU | SEU | /ʃu/ |
+
+---
+
+## Cross-References
+
+| File | Relation |
+|----|----------|
+| IPA-ju.md | /ju/ sound patterns |
+| IPA-u.md | /u/ sound patterns |
+| IPA-ə.md | /ə/ sound patterns |
+| UE.md | reversed vowel order |
+| U.md | single vowel patterns |
+
+---
+
+## Teaching Notes
+
+| Focus | Summary |
+|-----|---------|
+| Primary Pattern | Default EU = /ju/ |
+| Conditioning | R and TR block /j/ |
+| Exceptions | /ə/ occurs in fixed lexical items |
+| Palatalization | S + EU → /ʃu/ |
