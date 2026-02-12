@@ -11,14 +11,17 @@ The letter **O** and its diacritic variants represent **multiple vowel values** 
 
 ### Base Values of O
 
-| Spelling | IPA | Environment / Description | Example |
+| Spelling | IPA | Environment | Example |
 |--------|-----|---------------------------|---------|
 | O | /ɑ/ | Stressed, before two consonants or sole vowel | lock → **loc** |
-| O | /oʊ/ | Before single consonant + silent E | home |
+| O-E, OE | /oʊ/ | Before single consonant + silent E | home |
 | O | /ɔ/ | Before **H** | bought → **boht** |
 | O | /ə/ | Unstressed | Monday, seven → **sevon** |
-| O | /ər/ | Unstressed + R | doctor |
+| OR | /ər/ | Word-final + R | doctor |
+| OR | /ɔr/ | Word-initial, single syllable | core, store |
 | O | /w/ | Special borrowings | wet → **ouet**, white → **oît** |
+
+'*' No change between Modern (Websterian) English and Inglisce.
 
 ---
 
@@ -42,7 +45,7 @@ When followed by **two consonants**, or when **O is the only vowel**, O is typic
 
 | Type | Modern English | Inglisce |
 |----|----------------|----------|
-| Monosyllables | not, bot, lot | not, bot, lot |
+| Monosyllables | not, bot, lot | * |
 | Irregular | knot | **gnot** |
 | Verb | to block | **to bloche** |
 | Noun | block | **bloc** |
@@ -68,18 +71,16 @@ When followed by **two consonants**, or when **O is the only vowel**, O is typic
 
 | Modern English | Inglisce |
 |---------------|----------|
-| cove | cove |
-| stove | stove |
-| lone | lone |
-| code | code |
+| lone | * |
+| code | * |
 | phone | **fone** |
 | throne | **þrone** |
-| to explode | explode |
-| to corrode | corrode |
-| to condone | condone |
+| to explode | * |
+| to corrode | * |
+| to condone | * |
 | to suppose | **to sopose** |
 | to postpone | **to poastpone** |
-| to oppose | oppose |
+| to oppose | * |
 
 ---
 
