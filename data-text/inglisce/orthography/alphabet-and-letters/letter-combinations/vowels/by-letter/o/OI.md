@@ -18,6 +18,7 @@ OI has one default pronunciation and several conditioned variants.
 | OÎ | /waɪ/ | stressed lexical | white | oît |
 
 '*' No change between Modern (Websterian) English and Inglisce
+
 ---
 
 # 1. Default Value: OI = /ɔɪ/
