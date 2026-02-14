@@ -33,8 +33,8 @@ Before single consonant + E, U is pronounced /u/.
 
 **Examples:**  
 crude → creude, rude → reude  
-tube → toube, to illude  
-illusion → illúsion
+tube → toube, to illude → to illoude  
+illusion → illousion
 
 **In specific contexts:**  
 blue, avenue, nuance  
@@ -53,11 +53,11 @@ U functions as /w/ in SU- and QU- patterns.
 **SU patterns:**  
 swerve → suêve, sweat → suète  
 suave → suáve, swarm → suarme  
-twerk → tuêcue
+twerk → tuêque
 
-**QU patterns:**  
-quake → cuâcue, to squeak → to squiecue  
-to squeal → to squiele, squirmy → squêmy  
+**CU/QU patterns:**  
+quake → cuâche, to squeak → to scuieche  
+to squeal → to scuiale, squirmy → scuêmy  
 squid → squïd
 
 #### Silent U
@@ -141,7 +141,7 @@ award → aüard, reward → reüard
 **Primary patterns:**
 - U before two consonants = /ə/
 - U + single consonant + E usually = /u/
-- U acts as /w/ in SU-, QU- patterns
+- U acts as /w/ in SU-, CU/QU- patterns
 - Silent U keeps G hard before soft vowels
 
 **Key restrictions:**
