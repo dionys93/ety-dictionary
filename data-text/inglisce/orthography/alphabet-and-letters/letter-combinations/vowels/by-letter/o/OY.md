@@ -1,54 +1,125 @@
 # OY
 
-The digraph OY represents a single vowel sound in Inglisce.
+The digraph **OY** represents a single vowel sound in Inglisce.
 
-### PRONUNCIATION SUMMARY
+OY is positionally restricted to word-final environments.
 
-- **OY** — /ɔɪ/ "boy" — boys (plural), enjoying (gerund)
+---
 
-### The Digraph OY
+## Pronunciation Summary
 
-#### Word-Final OY = /ɔɪ/
-OY appears at the end of adjectives, in plural nouns, and in gerunds. It consistently represents /ɔɪ/.
+| Grapheme | IPA | Position | Modern English | Inglisce |
+|-----------|------|-----------|----------------|-----------|
+| OY | /ɔɪ/ | word-final | boy | boie |
+| OY | /ɔɪ/ | plural ending | boys | * |
+| OY | /ɔɪ/ | gerund suffix | enjoying | * |
 
-**Adjectives:**  
-ahoy, àloy, coy, soy
+"*" No change between Modern (Websterian) English and Inglisce
 
-**Noun plurals:**  
-boy → boie, boys  
-decoy → dícoie, dícoys  
-joy → joie, joys  
-ploy → ploie, ploys  
-toy → toie, toys
+---
 
-*Note: Singular nouns use -OIE, plurals use -OYS*
+# 1. Core Rule: Word-Final OY = /ɔɪ/
 
-**Gerunds:**  
-to employ → to emploie, employing  
-to enjoy → to enjoie, enjoying
+OY appears only at the end of words and consistently represents /ɔɪ/.
 
-### Relationship to OI
+---
 
-OY is the word-final version of the /ɔɪ/ sound, while OI appears in other positions. This parallels the AI/AY distinction for /eɪ/.
+## A. Adjectives
 
-**Pattern:**
-- Mid-word /ɔɪ/ → OI (coin, voice, enjoiment)
-- Word-final /ɔɪ/ → OY (boys, enjoying)
+| Modern English | Inglisce |
+|----------------|-----------|
+| ahoy, coy, soy | * |
+| alloy | àloy |
 
-### Cross-References
+---
 
-- For /ɔɪ/ sound patterns, see IPA-ɔɪ.txt
-- Related to OI.txt (same sound, different position)
-- Parallels AI/AY distinction (see AI.txt, AY.txt)
+## B. Noun Pattern
 
-### Teaching Notes
+### Singular vs Plural
 
-**Primary pattern:**
-- OY = /ɔɪ/ at word endings only
-- Appears in adjectives, noun plurals, and gerunds
+Singular nouns use **-OIE**.  
+Plural nouns use **-OYS**.
 
-**Key distinctions:**
-- Same sound as OI but different position
-- Singular nouns use -OIE (joie)
-- Plural nouns use -OYS (joys)
-- Gerunds use -OYING (enjoying)
+### Pattern
+
+| Number | Ending |
+|--------|--------|
+| Singular | -OIE |
+| Plural | -OYS |
+
+### Examples
+
+| Modern English | Singular (Inglisce) | Plural (Inglisce) |
+|----------------|---------------------|-------------------|
+| boy | boie | boys |
+| decoy | dícoie | dícoys |
+| joy | joie | joys |
+| ploy | ploie | ploys |
+| toy | toie | toys |
+
+---
+
+## C. Gerunds
+
+Verbs ending in **-OIE** form gerunds in **-OYING**.
+
+### Pattern
+
+| Infinitive | Gerund |
+|------------|--------|
+| -OIE | -OYING |
+
+### Examples
+
+| Infinitive | Gerund |
+|------------|--------|
+| to emploie | employing |
+| to enjoie | enjoying |
+
+---
+
+# 2. Relationship to OI
+
+OY and OI represent the same sound but differ by position.
+
+| Position | Spelling | IPA | Example |
+|----------|----------|------|----------|
+| Word-medial | OI | /ɔɪ/ | coine |
+| Word-final | OY | /ɔɪ/ | boys |
+
+This parallels the AI / AY distribution for /eɪ/.
+
+---
+
+# System Summary
+
+| Function | Spelling | IPA |
+|----------|----------|------|
+| Medial /ɔɪ/ | OI | /ɔɪ/ |
+| Final /ɔɪ/ | OY | /ɔɪ/ |
+| Singular noun | -OIE | /ɔɪ/ |
+| Plural noun | -OYS | /ɔɪz/ |
+| Gerund | -OYING | /ɔɪɪŋ/ |
+
+---
+
+# Cross-References
+
+| File | Relation |
+|------|----------|
+| IPA-ɔɪ.md | /ɔɪ/ sound patterns |
+| OI.md | medial /ɔɪ/ |
+| AI.md | medial /eɪ/ |
+| AY.md | final /eɪ/ |
+
+---
+
+# Teaching Notes
+
+| Principle | Summary |
+|------------|----------|
+| Position Rule | OY appears only word-finally |
+| Sound Value | OY always = /ɔɪ/ |
+| Morphology | -OIE singular → -OYS plural |
+| Gerunds | -OIE verbs → -OYING |
+| Parallel | Mirrors OI/OY and AI/AY contrast |
