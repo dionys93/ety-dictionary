@@ -1,82 +1,155 @@
 # OI
 
-The digraph OI and its variant represent multiple vowel sounds in Inglisce.
+The digraph **OI** represents multiple vowel sounds in Inglisce.
 
-OI uses the following diacritic: OÎ
+Diacritic: **OÎ**
 
-### PRONUNCIATION SUMMARY
+OI has one default pronunciation and several conditioned variants.
 
-- **OI** — /ɔɪ/ "coin" — coin, voice  
-       — /wɪ/ "penguin" (uncommon) — penguin → pengoin  
-       — /waɪ/ "white" — white → oît  
-       — /aɪ/ "flight" (before H) — flight → floiht
-- **OÎ** — /waɪ/ "white" (stressed) — white → oît
+---
 
-### The Digraph OI
+## Pronunciation Summary
 
-#### Basic OI = /ɔɪ/
-OI typically represents /ɔɪ/ in most contexts.
+| Grapheme | IPA | Environment | Modern English | Inglisce |
+|-----------|------|-------------|----------------|-----------|
+| OI | /ɔɪ/ | default | coin | coine |
+| OI | /wɪ/ | limited lexical | penguin | pengoin |
+| OI + H | /aɪ/ | before H | flight | floiht |
+| OÎ | /waɪ/ | stressed lexical | white | oît |
 
-**Examples:**  
-coin → coine, coins  
-spoil, spoils → spoile, spoiels
-choice, rejoice, voice
+---
 
-#### Verbs with OI
-OI appears in verb forms ending in -OIE.
+# 1. Default Value: OI = /ɔɪ/
 
-**Examples:**  
-to enjoy → to enjoie  
-to employ → to emploie  
-to destroy → to destroie  
-to boil → to boile
+OI typically represents /ɔɪ/ in all unmarked environments.
 
-**Derived nouns:**  
-enjoyment → enjoiment  
-employment → emploiment
+## Basic Vocabulary
 
-#### OI = /wɪ/ (Uncommon)
-In some words, OI represents /wɪ/.
+| Modern English | Inglisce |
+|----------------|-----------|
+| coin, coins | coine, coins |
+| spoil, spoils  | spoile, spoiels |
+| choice | c̃oice |
+| voice, rejoice | * |
 
-**Examples:**  
-penguin → pengoin
+---
 
-#### OI + H = /aɪ/
-When OI is followed by H, it represents /aɪ/.
+# 2. Verb Pattern: -OIE
 
-**Examples:**  
-to fly, flight → to floihe, floiht  
-to fight → to foihte  
-high, height → hoih, hoiht
+OI appears in verbs ending in **-OIE**, replacing Modern English -OY.
 
-### Diacritics
+## Infinitive Pattern
 
-#### OÎ — /waɪ/
+| Modern English | Inglisce |
+|----------------|-----------|
+| to enjoy | to enjoie |
+| to employ | to emploie |
+| to destroy | to destroie |
+| to boil | to boile |
 
-**Pronunciation:** /waɪ/ — as in "white" (stressed)
+## Derived Nouns
 
-**PURPOSE**  
-Marks /waɪ/ sound in specific words.
+| Verb | Derived Noun |
+|------|-------------|
+| enjoie | enjoiment |
+| emploie | emploiment |
 
-**EXAMPLES**  
-white → oît  
-employee → emploîe (irregular)
+---
 
-### Cross-References
+# 3. OI = /wɪ/ (Limited Lexical Pattern)
 
-- For /ɔɪ/ sound patterns, see IPA-ɔɪ.txt
-- For /aɪ/ sound patterns, see IPA-aɪ.txt
-- Related to OY.txt (word-final /ɔɪ/)
-- See also O.txt (O as /w/)
+In rare words, OI represents /wɪ/.
 
-### Teaching Notes
+This pronunciation is lexical and not productive.
 
-**Primary patterns:**
-- Default OI = /ɔɪ/ (most common)
-- OI + H = /aɪ/ (flight, fight, high)
-- OÎ = /waɪ/ in specific words
+| Modern English | Inglisce | IPA |
+|----------------|-----------|------|
+| penguin | pengoin | /ˈpɛŋgwɪn/ |
+| anguish | ângoișe | /ˈeɪŋgwɪʃ/ |
+| vanquish | vaincoișe | /ˈveɪŋkwɪʃ/ |
 
-**Key distinctions:**
-- OI appears mid-word; OY appears word-finally
-- Verbs use -OIE infinitive ending
-- OI + H pattern for /aɪ/ in Germanic words
+---
+
+# 4. OI + H = /aɪ/
+
+When OI is followed by **H**, it represents /aɪ/.
+
+This pattern occurs primarily in Germanic-origin words.
+
+## Pattern
+
+| Sequence | IPA |
+|----------|------|
+| OIH | /aɪh/ |
+| OIHT | /aɪt/ |
+
+## Examples
+
+| Modern English | Inglisce |
+|----------------|-----------|
+| fly | floihe |
+| flight | floihte |
+| fight | foihte |
+| high | hoih |
+| height | hoihte |
+
+---
+
+# 5. Diacritic: OÎ = /waɪ/
+
+## Function
+
+OÎ marks stressed /waɪ/ in specific lexical items.
+
+It distinguishes this value from default /ɔɪ/ and from OI + H /aɪ/.
+
+## Examples
+
+| Modern English | Inglisce | IPA |
+|----------------|-----------|------|
+| white | oît | /waɪt/ |
+| employee (irregular) | emploîe | /əmˌplɔ(ɪ)ˈi/ |
+
+---
+
+# Distribution Summary
+
+| Environment | Grapheme | IPA |
+|-------------|----------|------|
+| Default | OI | /ɔɪ/ |
+| Before H | OI + H | /aɪ/ |
+| Stressed lexical | OÎ | /waɪ/ |
+| Rare lexical | OI | /wɪ/ |
+| Verb infinitive | -OIE | /ɔɪ/ |
+
+---
+
+# Contrast with OY
+
+| Position | Spelling | IPA |
+|----------|----------|------|
+| Word-final | OY | /ɔɪ/ |
+| Non-final | OI | /ɔɪ/ |
+
+---
+
+# Cross-References
+
+| File | Relation |
+|------|----------|
+| IPA-ɔɪ.md | /ɔɪ/ patterns |
+| IPA-aɪ.md | /aɪ/ patterns |
+| OY.md | word-final /ɔɪ/ |
+| O.md | O as /w/ |
+
+---
+
+# Teaching Notes
+
+| Principle | Summary |
+|------------|----------|
+| Default Rule | OI = /ɔɪ/ |
+| Conditioned Rule | OI + H = /aɪ/ |
+| Diacritic Rule | OÎ = stressed /waɪ/ |
+| Verb Pattern | -OIE infinitives |
+| Position Rule | OI medial, OY final |
