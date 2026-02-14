@@ -8,7 +8,7 @@ Related digraphs: See UA, UE, UI files
 
 ### PRONUNCIATION SUMMARY
 
-- **U** — /ə/ "luck" — luck → leuc
+- **U** — /ə/ "luck" — luck → hluc
            /u/ "food" — crude → creude  
            /ju/ "cute" — cute, mute, muse
            /w/ "quick" — quick → cuic, quake → cuâche
@@ -23,8 +23,8 @@ Related digraphs: See UA, UE, UI files
 When followed by two consonants, or is the only vowel, U is typically /ə/.
 
 **Examples:**  
-but, hut, luck → lucc  
-to pluck → plucue  
+but, hut, luck → hluc  
+to pluck → pluche  
 number → nombre /ˈnəmbər/  
 murmur → mormor /ˈmərˌmər/
 
