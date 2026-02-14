@@ -8,10 +8,10 @@ Related digraphs: See UA, UE, UI files
 
 ### PRONUNCIATION SUMMARY
 
-- **U** — /ə/ "luck" — luck → lucc
+- **U** — /ə/ "luck" — luck → leuc
            /u/ "food" — crude → creude  
            /ju/ "cute" — cute, mute, muse
-           /w/ "quick" — quick → cuic, quake → cuâcue
+           /w/ "quick" — quick → cuic, quake → cuâche
            silent — "give" → guive (keeps G hard)
 - **Ú** — /u/ or /ju/ (stressed) — confusion → confúsion, illusion → illúsion
 - **Û** — /ʊ/ "good" (stressed) — good → gûd
