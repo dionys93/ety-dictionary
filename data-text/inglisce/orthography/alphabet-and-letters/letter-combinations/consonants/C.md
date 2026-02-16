@@ -46,9 +46,9 @@ Before **I, E, Y**, the letter **C** is pronounced /s/.
 
 ---
 
-### 3. CI + A / O → /ʃ/
+### 3. CI + A / O; CE + U → /ʃ/
 
-The sequence **CI** before **A or O** is pronounced /ʃ/.
+The sequences **CI** before **A or O** and **CE** before **U** are pronounced /ʃ/.
 
 | Modern English | Inglisce |
 |---------------|----------|
@@ -70,6 +70,7 @@ The sequence **CI** before **A or O** is pronounced /ʃ/.
 | C before A, O, U | /k/ |
 | C before I, E | /s/ |
 | CI before A, O | /ʃ/ |
+| CE before U | /ʃ/ |
 
 ---
 
@@ -101,7 +102,7 @@ The sequence **CI** before **A or O** is pronounced /ʃ/.
 | Modern English | Inglisce |
 |---------------|----------|
 | to appreciate | to apríçiete |
-| appreciation | apríçiâcion |
+| appreciation | apriçiâcion |
 
 ---
 
