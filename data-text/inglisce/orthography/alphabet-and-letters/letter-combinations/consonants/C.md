@@ -160,7 +160,6 @@ The digraph **CH** is pronounced **/k/** in all environments **except** when imm
 |---------------|----------|
 | architect | |
 | orchestra | |
-| school | |
 | to make | to mâche |
 | to bake | to bâche |
 | to fake | to fâche |
