@@ -1,6 +1,28 @@
-## Rationale for the Use of **CH** and **C̃** in the Orthography
+## Rationale for the Use of **C̃** and **CH** in the Orthography
 
-Inglisce orthography distinguishes two graphemic representations for consonants with distinct historical trajectories: **C̃**, representing the affricate /t͡ʃ/, and **CH**, representing the velar stop /k/. This distinction reflects the separate origins of these forms and provides a principled basis for their use in the system.
+Inglisce orthography distinguishes between two different spellings that reflect separate historical developments.
+
+- **C̃** represents the affricate **/t͡ʃ/** (as in *church*).
+
+- **CH** represents the velar stop **/k/** (as in words of Greek origin).
+
+Although these spellings may look related, they do not represent the same sound and did not develop from the same source.
+
+### Palatalized *C* in Latin and English
+
+The Latin letter *c* represented /k/ in all phonological environments. In Vulgar Latin and the early Romance languages, *c* underwent palatalization before front vowels (/e, i/), yielding affricate or fricative reflexes — /t͡ʃ/ in Italian and Old French, later /ʃ/ (and in some positions /s/) in French. In several Romance traditions, ⟨ch⟩ was later adopted to represent the affricate, a spelling development that postdates the sound change.
+
+Old English employed *c* for both /k/ and a palatalized consonant. Before front vowels and /j/, *c* was regularly palatalized, yielding [c] and later affricate realizations that ultimately stabilized as /t͡ʃ/. French scribal influence in Middle English increasingly represented this palatalized outcome with *ch*, while native *c* lost transparency. By Early Modern English, /t͡ʃ/ had become stable, though spelled inconsistently.
+
+The grapheme C̃ is therefore justified as a marked continuation of palatalized c, preserving the historical relationship between /t͡ʃ/ and its source consonant while restoring transparent one-to-one grapheme–phoneme correspondence.
+
+| Latin | Italian | French | Modern English | Inglisce |
+| --- | --- | --- | --- | --- |
+| **centum** <br> /ˈkɛn.tum/ | **c**ento <br> /ˈt͡ʃɛn.to/ | **c**ent <br> /sɑ̃/ | cent /sɛnt/           | **c**ente /sɛnt/ |
+| **civitas** <br> /ˈki.wi.tas/ | **c**ittà <br> /t͡ʃit.'ta/   | **c**ité <br> /si.te/ | city /ˈsɪti/ | **c**itie /ˈsɪti/ |
+| **cantare** <br> /kanˈta.re/  | **c**antare <br> /kanˈta.re/ | **ch**anter <br> /ʃɑ̃.te/  | to chante /t͡ʃænt/    | to c̃ante /t͡ʃænt/   |
+| **cicer** <br> /ˈki.kɛr/      | **c**eci <br> /ˈt͡ʃe.t͡ʃi/   | pois chiche <br> /pwa ʃiʃ/ | chickpea /ˈt͡ʃɪk.pi/ | c̃icpie /ˈt͡ʃɪk.pi/    |
+| **circare** <br> /ˈkir.ka.re/ | cercare <br> /ˈt͡ʃir.kare/ | cher**ch**er <br> /ʃɛr.ʃe/ | to search /sərt͡ʃ/  | to cerc̃e /sərt͡ʃ/ |
 
 ### Greek χ and the Latin Digraph **CH**
 
@@ -25,24 +47,6 @@ Modern German preserves this variability: ⟨ch⟩ represents a velar or post-ve
 | cake | câc / to câche | Kuchen | koeken | kaka | kaka | koeke |
 | to leak | to lieche | lecken | lekken | leka | läcka | lekke(n |
 | to lick | to liche | lecken | likken | sleikja | slicka | slikje(n |
-
-
-### Palatalized *C* in Latin and English
-
-Separately, the Latin letter *c* represented /k/ in all phonological environments. In Vulgar Latin and the early Romance languages, *c* underwent palatalization before front vowels (/e, i/), producing affricate or fricative outcomes, often /t͡ʃ/ in later Romance. In some Romance traditions, ⟨ch⟩ was repurposed to represent this affricate, but this orthographic reassignment postdates the phonological change.
-
-Old English employed *c* for both /k/ and a palatalized consonant. Before front vowels and /j/, *c* was regularly palatalized, yielding [c] or affricate-like outcomes that later stabilized as /t͡ʃ/. French scribal influence in Middle English increasingly represented this palatalized outcome with *ch*, while native *c* lost transparency. By Early Modern English, /t͡ʃ/ had become stable, though spelled inconsistently.
-
-The grapheme **C̃** is therefore justified as a marked continuation of palatalized *c*, preserving the historical relationship between the affricate /t͡ʃ/ and its source consonant and restoring transparent one-to-one grapheme–phoneme correspondence.
-
-| Latin | Italian | French | Modern English | Inglisce |
-| --- | --- | --- | --- | --- |
-| **centum** <br> /ˈkɛn.tum/ | **c**ento <br> /ˈt͡ʃɛn.to/ | **c**ent <br> /sɑ̃/ | cent /sɛnt/           | **c**ente /sɛnt/ |
-| **civitas** <br> /ˈki.wi.tas/ | **c**ittà <br> /t͡ʃit.'ta/   | **c**ité <br> /si.te/ | city /ˈsɪti/ | **c**itie /ˈsɪti/ |
-| **cantare** <br> /kanˈta.re/  | **c**antare <br> /kanˈta.re/ | **ch**anter <br> /ʃɑ̃.te/  | to chante /t͡ʃænt/    | to c̃ante /t͡ʃænt/   |
-| **cicer** <br> /ˈki.kɛr/      | **c**eci <br> /ˈt͡ʃe.t͡ʃi/   | pois chiche <br> /pwa ʃiʃ/ | chickpea /ˈt͡ʃɪk.pi/ | c̃icpie /ˈt͡ʃɪk.pi/    |
-| **circare** <br> /ˈkir.ka.re/ | cercare <br> /ˈt͡ʃir.kare/ | cher**ch**er <br> /ʃɛr.ʃe/ | to search /sərt͡ʃ/  | to cerc̃e /sərt͡ʃ/ |
-
 
 
 ### Summary
