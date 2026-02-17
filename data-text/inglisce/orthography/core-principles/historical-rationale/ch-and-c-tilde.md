@@ -51,17 +51,12 @@ Modern German preserves this variability: ⟨ch⟩ represents a velar or post-ve
 
 ### Summary
 
-Inglisce assigns graphemes based on historical and phonological evidence:
+Inglisce assigns graphemes on historical and phonological grounds:
 
-- **CH** = /k/, reflecting both classical Greek/Latin transliteration (χ → ch) and dorsal consonant developments in Germanic vocabulary  
-- **C̃** = /t͡ʃ/, representing palatalized reflexes of Latin and English *c*  
+- **C̃** = /t͡ʃ/, representing the palatalized reflexes of Latin and Old English *c*
 
-This system encodes genealogical origin rather than surface spelling conventions. It:
+- **CH** = /k/, reflecting both classical Greek and Latin transliteration (χ → ch) and dorsal developments in Germanic vocabulary
 
-- Separates native palatalization from foreign transliteration  
-- Restores transparent grapheme–phoneme mapping  
-- Preserves etymological visibility across lexical strata  
-- Avoids conflating historically unrelated consonantal developments  
+This system follows historical origin rather than modern spelling habits. It separates native palatalization from foreign transliteration, restores a transparent grapheme–phoneme relationship, preserves etymological relationships across the lexicon, and avoids merging consonants that arose through different historical processes.
 
-By integrating the classical, Germanic, and palatalization evidence into a single rationale, Inglisce achieves an orthography that is **historically rigorous, phonologically transparent, and internally consistent**, while providing a coherent one-to-one mapping between graphemes and sounds.
-
+Taken together, these principles allow Inglisce to maintain a consistent one-to-one mapping between graphemes and sounds without obscuring the language’s layered history.
