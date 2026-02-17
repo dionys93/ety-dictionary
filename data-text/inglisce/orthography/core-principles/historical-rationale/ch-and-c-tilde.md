@@ -24,6 +24,14 @@ The grapheme C̃ is therefore justified as a marked continuation of palatalized 
 | **cicer** <br> /ˈki.kɛr/      | **c**eci <br> /ˈt͡ʃe.t͡ʃi/   | pois chiche <br> /pwa ʃiʃ/ | chickpea /ˈt͡ʃɪk.pi/ | c̃icpie /ˈt͡ʃɪk.pi/    |
 | **circare** <br> /ˈkir.ka.re/ | cercare <br> /ˈt͡ʃir.kare/ | cher**ch**er <br> /ʃɛr.ʃe/ | to search /sərt͡ʃ/  | to cerc̃e /sərt͡ʃ/ |
 
+| Old English | Modern English | Inglisce |
+| --- | --- | --- |
+| ceosan | choose | c̃ouse |
+| ceowan | chew | c̃eue |
+| cyse, cese | cheese | c̃iese |
+| circe | church | c̃urc̃e |
+| cicen | chicken | c̃ican |
+
 ### Greek χ and the Latin Digraph **CH**
 
 In Classical Greek, the letter χ represented an aspirated velar stop, commonly reconstructed as /kʰ/. When Greek words were borrowed into Latin, Roman scribes introduced the digraph *ch* as a transliteration of χ. This digraph was never part of native Latin phonology and did not arise through internal sound change.
