@@ -21,7 +21,7 @@ The grapheme C̃ is therefore justified as a marked continuation of palatalized 
 | **centum** <br> /ˈkɛn.tum/ | **c**ento <br> /ˈt͡ʃɛn.to/ | **c**ent <br> /sɑ̃/ | cent /sɛnt/           | **c**ente /sɛnt/ |
 | **civitas** <br> /ˈki.wi.tas/ | **c**ittà <br> /t͡ʃit.'ta/   | **c**ité <br> /si.te/ | city /ˈsɪti/ | **c**itie /ˈsɪti/ |
 | **cantare** <br> /kanˈta.re/  | **c**antare <br> /kanˈta.re/ | **ch**anter <br> /ʃɑ̃.te/  | to chante /t͡ʃænt/    | to c̃ante /t͡ʃænt/   |
-| **cicer** <br> /ˈki.kɛr/      | **c**eci <br> /ˈt͡ʃe.t͡ʃi/   | pois chiche <br> /pwa ʃiʃ/ | chickpea /ˈt͡ʃɪk.pi/ | c̃icpie /ˈt͡ʃɪk.pi/    |
+| **cicer** <br> /ˈki.kɛr/      | **c**eci <br> /ˈt͡ʃe.t͡ʃi/   | pois chiche <br> /pwa ʃiʃ/ | chickpea /ˈt͡ʃɪk.pi/ | c̃ichpie /ˈt͡ʃɪk.pi/    |
 | **circare** <br> /ˈkir.ka.re/ | cercare <br> /ˈt͡ʃir.kare/ | cher**ch**er <br> /ʃɛr.ʃe/ | to search /sərt͡ʃ/  | to cerc̃e /sərt͡ʃ/ |
 
 | Old English | Modern English | Inglisce |
