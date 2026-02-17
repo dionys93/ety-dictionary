@@ -13,7 +13,7 @@ Related digraphs: See UA, UE, UI files
            /ju/ "cute" — cute, mute, muse
            /w/ "quick" — quick → cuic, quake → cuâche
            silent — "give" → guive (keeps G hard)
-- **Ú** — /u/ or /ju/ (stressed) — confusion → confúsion, illusion → illúsion
+- **Ú** — /u/ or /ju/ (stressed) — confusion → confúsion
 - **Û** — /ʊ/ "good" (stressed) — good → gûd
 - **Ü** — /w/ "award" — award → aüard
 
