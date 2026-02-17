@@ -96,8 +96,7 @@ suit, suits → sute, súts
 
 **Derived forms:**  
 unusual → unúșual  
-confusion → confúsion  
-illusion → illúsion  
+confusion → confúsion    
 useable → úsable
 
 #### Û — STRESSED /ʊ/
