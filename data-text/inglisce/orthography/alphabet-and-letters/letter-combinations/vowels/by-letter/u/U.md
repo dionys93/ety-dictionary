@@ -13,7 +13,7 @@ U + consonant + silent E → /(j)u/
 
 The presence of /j/ (yod) depends on consonant class.
 
-There is no letter **W** in Inglisce. Glide /w/ is represented by U, O, OU, or Ü depending on environment.
+There is no letter **W** in Inglisce. Glide /w/ is represented by U, O, OU, or Ü depending on etymology and environment.
 
 **Diacritics used:** Ú, Û, Ü  
 **Related digraphs:** UE, UI  
