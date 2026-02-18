@@ -1,34 +1,71 @@
-UE
+# UE
 
-PRONUNCIATION
-The digraph UE represents three sounds:
-• /u/ — as in "blue" (word-final)
-• /uə/ — as in "influence" (in Latin/French derivatives)
-• /wə/ — as in "sequence" (after Q)
+The digraph **UE** represents three phonological values in Inglisce.
 
-RULES
+## Pronunciation Values
 
-1. Word-Final UE = /u/
-At the end of words, UE is pronounced /u/.
+| Environment | Value |
+|-------------|--------|
+| Word-final | /u/ |
+| Latin/French derivatives | /uə/ |
+| ÜE | /wə/ |
 
-Examples:
-    blue, clue, due, sue
-    hue → heue
+---
 
-2. Latin/French Derivatives = /uə/
-In words derived from Latin/French, UE represents /uə/.
+# I. Word-Final UE → /u/
 
-Examples:
-    affluent, affluence, influence
-    congruent, congruence, confluence
+At the end of a word, **UE** represents a long /u/ sound.
 
-3. Q + UE = /wə/
-After Q, UE is pronounced /wə/.
+| Modern English | Inglisce | IPA |
+|----------------|----------| --- |
+| blue, sue | * | /blu/, /su/ |
+| value | * | /ˈvælju/ |
 
-Examples:
-    sequent → siqüent
-    sequence → siqüence
-    consequent, conseqüence 
-    subsequent, subseqüence
-    eloquent, eloqüence 
+This is the stable long vowel realization.
+
+---
+
+# II. Latin/French Derivatives → /uə/
+
+In polysyllabic words of Latin or French origin,  
+**UE** represents the sequence **/uə/**.
+
+This typically occurs in:
+- -uent  
+- -uence  
+
+| Modern English | Inglisce |
+|----------------|----------|
+| congruent, congruence  | congrúent, congrúence |
+| confluent, confluence | conflúent, conflúence |
+| affluent, affluence | * |
+| influence | * |
+
+
+This reflects historical vowel retention in learned vocabulary.
+
+---
+
+# III. ÜE → /wə/
+
+ÜE represents **/wə/**.
+
+The glide is explicitly marked with **Ü** in Inglisce.
+
+| Modern English | Inglisce |
+|----------------|----------|
+| sequent, sequence | siqüent, siqüence |
+| consequent, consequence | conseqüent, conseqüence |
+| subsequent, subsequence | sobseqüent, sobseqüence |
+| eloquent, eloquence | eloqüent, eloqüence |
+
+---
+
+# IV. Structural Summary
+
+| Pattern | Value |
+|----------|--------|
+| UE (final) | /u/ |
+| UE (Latin/French medial) | /uə/ |
+| ÜE | /wə/ |
 
