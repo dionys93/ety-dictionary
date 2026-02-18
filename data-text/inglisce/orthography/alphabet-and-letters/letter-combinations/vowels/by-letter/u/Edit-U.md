@@ -44,7 +44,7 @@ Examples:
 | Modern English | Inglisce |
 |----------------|----------|
 | cute | * |
-| music | músic |
+| muse, music | muse, músic |
 | confuse, confusion | confuse, confúsion |
 
 These produce **/ju/** when long.
