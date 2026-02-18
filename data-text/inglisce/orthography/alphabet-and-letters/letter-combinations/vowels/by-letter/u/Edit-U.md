@@ -18,7 +18,7 @@ There is no letter **W** in Inglisce. U (and sometimes O) also represent the gli
 
 ### Open Syllable (no final consonant)
 
-**U = /u/**  
+**U-E = /u/**  
 (or **/ju/** depending on consonant class — see Yod Rule)
 
 Examples:
@@ -106,15 +106,6 @@ Examples:
 
 ---
 
-If the silent -e is removed, the U must be marked **Ú** to preserve /u/.
-
-Example:
-
-- rute (root)
-- rúts (roots)
-
----
-
 # III. Glide Representation (/w/)
 
 There is no letter **W** in Inglisce.
@@ -128,7 +119,6 @@ The glide /w/ is represented by **U** or **O**, depending on environment.
 U represents /w/ in certain consonant clusters:
 
 - CU
-- QU
 - SU
 
 Examples:
@@ -143,29 +133,6 @@ Here, U functions as the glide component of the cluster.
 
 ---
 
-## 2. O as Glide (Multisyllabic Words)
-
-In multisyllabic words, particularly after **G** (and sometimes C),  
-**O represents the /w/ glide**.
-
-Examples:
-
-| Modern English | Inglisce |
-|----------------|----------|
-| anguish | ângoișe |
-| vanquish | vaincoișe |
-
-Contrast:
-
-| Modern English | Inglisce |
-|----------------|----------|
-| coat | cote |
-| coats | coats |
-
-O stabilizes the glide visually in larger morphological structures.
-
----
-
 # IV. Silent U (Hard G Preservation)
 
 U is silent when preserving hard **G** before E, I, or Y.
@@ -174,7 +141,7 @@ U is silent when preserving hard **G** before E, I, or Y.
 |----------------|----------|
 | give | guive |
 | guide | guîde |
-| gift | guift |
+| gift | guifte |
 | geek | guiec |
 
 Here, U does not represent a vowel or glide.  
@@ -197,9 +164,7 @@ Examples:
 | nun | nonne | /nən/ |
 | number | nombre | /ˈnəmbər/ |
 | murmur | mormor | /ˈmərˌmər/ |
-| Monday | Monday | /ˈmənˌdeɪ/ |
-
-Monday follows the rule.
+| Monday | * | /ˈmənˌdeɪ/ |
 
 ---
 
@@ -227,9 +192,8 @@ Examples:
 |----------|--------|
 | U (open) | /u/ |
 | U (closed) | /ə/ |
-| Ú | /u/ (closed override) |
+| Ú | /u/ or /ju/ (closed override) |
 | Û | /ʊ/ |
 | U (clusters) | /w/ |
-| O (multisyllabic glide) | /w/ |
 | U (after G before E/I/Y) | silent |
 | Ü | /w/ |
