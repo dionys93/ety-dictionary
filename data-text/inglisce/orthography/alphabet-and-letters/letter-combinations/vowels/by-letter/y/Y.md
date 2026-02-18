@@ -9,7 +9,6 @@ Related digraphs: See YH file
 ### PRONUNCIATION SUMMARY
 
 - **Y** — /i/ "happy" — happy, pretty → pritty (word-final in adjectives/adverbs)
-- **Ỳ** — /ɪ/ "bit" (stressed) — to knit → to gnite
 - **Ý** — /i/ "see" (stressed) — agrýing
 - **Ŷ** — /aɪ/ "kite" — kite → cŷte
 - **YH** — /aɪ/ "sky" — sky → scyhe (digraph)
@@ -90,3 +89,4 @@ kite → cŷte, kind → cŷnd
 - **Ỳ** = stressed /ɪ/
 - **Ý** = stressed /i/
 - **Ŷ** = stressed /aɪ/
+
