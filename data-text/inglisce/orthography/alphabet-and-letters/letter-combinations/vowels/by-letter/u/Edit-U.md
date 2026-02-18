@@ -87,9 +87,9 @@ Examples:
 
 | Modern English | Inglisce |
 |----------------|----------|
-| cute | * |
+| cute, mute | * |
 | music | músic |
-| confuse | * |
+| confuse, confusion | confuse, confúsion |
 
 ---
 
