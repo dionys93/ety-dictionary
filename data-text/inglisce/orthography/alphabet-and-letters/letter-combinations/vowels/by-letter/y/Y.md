@@ -1,92 +1,106 @@
 # Y
 
-The letter Y and its variants represent multiple vowel sounds in Inglisce.
+The letter **Y** and its variants represent multiple vowel sounds in Inglisce.
 
-Y uses the following diacritics: Ỳ, Ý, Ŷ
+Diacritics used: **Ÿ**, **Ŷ**
 
-Related digraphs: See YH file
+---
 
-### PRONUNCIATION SUMMARY
+# I. Pronunciation Overview
 
-- **Y** — /i/ "happy" — happy, pretty → pritty (word-final in adjectives/adverbs)
-- **Ý** — /i/ "see" (stressed) — agrýing
-- **Ŷ** — /aɪ/ "kite" — kite → cŷte
-- **YH** — /aɪ/ "sky" — sky → scyhe (digraph)
+| Form | Value | Stress | Example |
+|------|--------|--------|----------|
+| Y | /i/ | Unstressed | happy |
+| Y | /ɪ/ | Unstressed | cyne |
+| Ÿ | /i/ | Stressed | agrÿing |
+| Ÿ | /ɪ/ | Stressed | analÿtical |
+| Ŷ | /aɪ/ | Stressed | cŷte |
+| YH | /aɪ/ | Stressed | byhe |
 
-### Base Letter Y
+---
 
-#### Word-Final Y = /i/
-In adjectives and adverbs, final Y is pronounced /i/.
+# II. Base Letter Y
 
-**Examples:**  
-happy, pretty → pritty  
-quickly → cuicly, slowly → sloely
+## 1. Word-Final Y → /i/
 
-#### Words of Old English Origin
-Y represents /i/ or /ɪ/ in words of Old English origin.
+In adjectives and adverbs, final **Y** is pronounced /i/.
 
-**Examples:**  
-king → cyngue /i/  
-kin → cyne /ɪ/  
-kid → cyd /ɪ/
+| Modern English | Inglisce |
+|----------------|----------|
+| happy | * |
+| pretty | pritty |
+| quickly | cuicly |
+| slowly | sloely |
 
-#### YH Digraph = /aɪ/
-The combination YH represents /aɪ/.
+---
 
-**Examples:**  
-to dye → to dyhe, sky → scyhe  
-to buy → to byhe, to tie → to tyhe  
-tight → tyht, to sigh → to syhe  
-rye → ryhe
+## 2. Old English Origin Words
 
-### Diacritics
+In words of Old English origin, **Y** represents /i/ or /ɪ/.
 
-#### Ỳ — STRESSED /ɪ/
+| Modern English | Inglisce | Value |
+|----------------|----------|--------|
+| king | cyngue | /i/ |
+| kin | cyne | /ɪ/ |
+| kid | cyde | /ɪ/ |
 
-**Pronunciation:** /ɪ/ — as in "bit" (always stressed)
+---
 
-**PURPOSE**  
-Marks stressed /ɪ/ in words where Y represents this sound.
+## 3. YH Digraph → /aɪ/
 
-**EXAMPLES**  
-analytical → analỳtical  
-to knit → ta nỳte
+The combination **YH** represents /aɪ/.
 
-#### Ý — STRESSED /i/
+| Modern English | Inglisce |
+|----------------|----------|
+| to dye | to dyhe |
+| to buy | to byhe |
+| to tie | to tyhe |
+| tight | tyht |
+| to sigh | to syhe |
+| rye | ryhe |
 
-**Pronunciation:** /i/ — as in "see" (always stressed)
+YH always represents /aɪ/.
 
-**PURPOSE**  
-Marks stressed /i/ in words where Y represents this sound.
+---
 
-**EXAMPLES**  
-agreeing → agrýing
+# III. Diacritic Forms
 
-#### Ŷ — /aɪ/
+## Ÿ — Stressed Front Vowel
 
-**Pronunciation:** /aɪ/ — as in "kite" (always stressed)
+| Form | Value | Purpose | Example |
+|------|--------|----------|----------|
+| Ÿ | /ɪ/ | Marks stressed /ɪ/ | analÿtical |
+| Ÿ | /i/ | Marks stressed /i/ | agrÿing |
 
-**PURPOSE**  
-Marks stressed /aɪ/ in words where Y represents this sound.
+Ÿ signals stress when Y carries the vowel nucleus.
 
-**EXAMPLES**  
-kite → cŷte, kind → cŷnd
+---
 
-### Cross-References
+## Ŷ — /aɪ/
 
-- For /i/ sound patterns, see IPA-i.txt
-- For /ɪ/ sound patterns, see IPA-ɪ.txt
-- For /aɪ/ sound patterns, see IPA-aɪ.txt
-- See also YH.txt for digraph details
+| Form | Value | Purpose | Example |
+|------|--------|----------|----------|
+| Ŷ | /aɪ/ | Marks stressed /aɪ/ | cŷte, cŷnd |
 
-### Teaching Notes
+Ŷ is used when /aɪ/ is written with single-letter Y (not YH).
 
-**Primary patterns:**
-- Final Y in adjectives/adverbs = /i/
-- YH digraph always = /aɪ/
+---
 
-**Diacritics summary:**
-- **Ỳ** = stressed /ɪ/
-- **Ý** = stressed /i/
-- **Ŷ** = stressed /aɪ/
+# IV. Structural Summary
 
+| Pattern | Value |
+|----------|--------|
+| Final Y (adj/adv) | /i/ |
+| Y (OE origin) | /i/ or /ɪ/ |
+| Ÿ | Stressed /i/ or /ɪ/ |
+| YH | /aɪ/ |
+| Ŷ | /aɪ/ (single-letter form) |
+
+---
+
+# Teaching Notes
+
+• Final Y in adjectives/adverbs = /i/  
+• YH always represents /aɪ/  
+• Ÿ marks stressed front vowels  
+• Ŷ marks stressed /aɪ/ when no H is present  
