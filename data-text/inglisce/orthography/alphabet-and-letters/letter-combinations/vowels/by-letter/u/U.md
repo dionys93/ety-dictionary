@@ -28,15 +28,16 @@ Long U (restored by Ú or silent -E) behaves differently depending on the preced
 
 ## Yod Class (Long U = /ju/)
 
-c, g, p, b, f, h, v, m, l, j  
+c, g, p, b, f, h, v, m, j, -lue  
 
 Examples:
 
 | Modern English | Inglisce |
 |----------------|----------|
-| cute | * |
+| cute, mute, value | * |
 | muse, music | muse, músic |
 | confuse, confusion | confuse, confúsion |
+| valuate, valuation | valuait, valuâcion |
 | evacuate, evacuation | evacuait, evacuâcion |
 
 These produce **/ju/** when long.
@@ -45,7 +46,7 @@ These produce **/ju/** when long.
 
 ## Non-Yod Class (Long U = /u/)
 
-t, d, s, n, z, r  
+t, d, s, n, z, r, -l(e)u- 
 
 Examples:
 
@@ -53,6 +54,7 @@ Examples:
 |----------------|----------|
 | rude, crude | * |
 | rule | reule |
+| clue | cleue |
 
 These produce plain **/u/** when long.
 
