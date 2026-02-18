@@ -1,121 +1,195 @@
 # U
 
-The letter **U** and its variants represent multiple vowel and consonant values in Inglisce.
+The letter **U** is fundamentally a vowel representing **/u/** in Inglisce.  
+Its value is conditioned by syllable structure, consonant class, and diacritics.
+
+There is no letter **W** in Inglisce. U (and sometimes O) also represent the glide **/w/** in specific environments.
 
 **Diacritics used:** Ú, Û, Ü  
-**Related digraphs:** UA, UE, UI
+**Related digraphs:** UE, UI
+
+'*' Represents no change in spelling between Modern (Websterian) English and Inglisce
 
 ---
 
-## Pronunciation Summary
+# I. Core Value Hierarchy
 
-| Spelling | IPA | Environment | Example |
-|----------|-----|-------------------------------|---------|
-| U | /ə/ | Before two consonants or sole vowel | luck → **hluc** |
-| U | /u/ | Before single consonant + silent E | crude → **creude** |
-| U | /ju/ | Various stressed positions | cute |
-| U | /w/ | In SU-, CU-, QU- clusters | quick → **cuic** |
-| U | silent | Keeps G and Q hard before I, E, Y | give → **guive**, leek → **lique** |
-| Ú | /u/, /ju/ | Always stressed | confusion → **confúsion** |
-| Û | /ʊ/ | Always stressed | good → **gûd** |
-| Ü | /w/ | Medial /w/ representation | award → **aüard** |
+## 1. Open vs Closed Syllables
 
----
+### Open Syllable (no final consonant)
 
-## Base Letter U
+**U = /u/**  
+(or **/ju/** depending on consonant class — see Yod Rule)
 
-### U = /ə/
-
-When followed by **two consonants**, or when U is the only vowel, it is typically /ə/.
-
-| Type | Modern English | Inglisce | IPA |
-|------|----------------|----------|-----|
-| Noun | luck | hluc | /lək/ |
-| Noun | buck | buc | /bək/ |
-| Verb | to pluck | pluche | /plək/ |
-
----
-
-### U = /u/
-
-Before **single consonant + silent E**, U is /u/.
+Examples:
 
 | Modern English | Inglisce |
 |----------------|----------|
-| crude | creude |
+| blue, value, mute, crude | * |
+
+---
+
+### Closed Syllable (consonant follows)
+
+**U = /ə/** (absolute default)
+
+| Modern English | Inglisce | IPA |
+|----------------|----------|-----|
+| luck | hluc | /lək/ |
+| buck | buc | /bək/ |
+| run | rone | /rən/ |
+
+This reduction is automatic unless overridden by diacritic.
+
+---
+
+## 2. Diacritic Overrides (Closed Syllables)
+
+In closed syllables:
+
+| Spelling | Value |
+|----------|--------|
+| U | /ə/ |
+| Ú | /u/ |
+| Û | /ʊ/ |
+
+Examples:
+
+| Modern English | Inglisce |
+|----------------|----------|
+| root, roots | rute, rúts |
+| fruit, fruits | frute, frúts |
+| good | gûd |
+| full | fûl |
+
+
+If no silent **-e** is present and the vowel must remain /u/, **Ú is required**.
+
+---
+
+# II. Long U with Silent -E
+
+Pattern: **U + consonant + E**
+
+This restores the long vowel.
+
+The actual value depends on the consonant preceding U.
+
+---
+
+## Yod Rule (Palatalization)
+
+### Has Yod → /ju/
+
+cu, gu, pu, bu, fu, hu, ju, veu, mu, -lue, țu, d̦u, șu, ñu  
+
+Examples:
+
+| Modern English | Inglisce |
+|----------------|----------|
+| cute | * |
+| music | músic |
+| confuse | * |
+
+---
+
+### No Yod → /u/
+
+tu, du, ru, nu, su, zu  
+
+Examples:
+
+| Modern English | Inglisce |
+|----------------|----------|
 | rude | reude |
-
-**Also in specific contexts:**
-
-| Examples |
-|----------|
-| blue |
-| avenue |
-| nuance |
-| congruence |
-| influence |
+| rule | reule |
 
 ---
 
-### U = /ju/
+If the silent -e is removed, the U must be marked **Ú** to preserve /u/.
 
-U represents /ju/ in various positions.
+Example:
 
-| Modern English | Inglisce |
-|----------------|----------|
-| cute | cute |
-| mute | mute |
-| muse | muse |
-| confuse | confuse |
-| unusual | unúșual |
+- rute (root)
+- rúts (roots)
 
 ---
 
-### U as /w/ in Consonant Clusters
+# III. Glide Representation (/w/)
 
-U functions as /w/ in SU- and CU/QU- patterns.
+There is no letter **W** in Inglisce.
 
-#### SU Patterns
+The glide /w/ is represented by **U** or **O**, depending on environment.
 
-| Modern English | Inglisce |
-|----------------|----------|
-| swerve | suêve |
-| sweat | suète |
-| suave | suáve |
-| swarm | suarme |
-| twerk | tuêque |
+---
 
-#### CU / QU Patterns
+## 1. U as Glide
+
+U represents /w/ in certain consonant clusters:
+
+- CU
+- QU
+- SU
+
+Examples:
 
 | Modern English | Inglisce |
 |----------------|----------|
 | quick | cuic |
 | quake | cuâche |
-| to squeak | to scuieche |
-| to squeal | to scuiale |
-| squirmy | scuêmy |
-| squid | squïd |
+| swerve | suêve |
+
+Here, U functions as the glide component of the cluster.
 
 ---
 
-### Silent U
+## 2. O as Glide (Multisyllabic Words)
 
-U is silent when preserving hard **G** before I, E, Y.
+In multisyllabic words, particularly after **G** (and sometimes C),  
+**O represents the /w/ glide**.
+
+Examples:
 
 | Modern English | Inglisce |
 |----------------|----------|
-| to give | to guive |
-| to guide | to guîde |
-| gift | guift |
-| geek | guiec |
-| guy | guy |
+| anguish | ângoișe |
+| vanquish | vaincoișe |
+
+Contrast:
+
+| Modern English | Inglisce |
+|----------------|----------|
+| coat | cote |
+| coats | coats |
+
+O stabilizes the glide visually in larger morphological structures.
 
 ---
 
-## Restriction: M / N / R Rule
+# IV. Silent U (Hard G Preservation)
 
-U cannot appear after **M, N, or R**.  
-O replaces U in these positions but retains the /ə/ pronunciation.
+U is silent when preserving hard **G** before E, I, or Y.
+
+| Modern English | Inglisce |
+|----------------|----------|
+| give | guive |
+| guide | guîde |
+| gift | guift |
+| geek | guiec |
+
+Here, U does not represent a vowel or glide.  
+It preserves the hard /g/ value.
+
+---
+
+# V. M / N / R Aesthetic Rule
+
+When U would represent **/ə/** after M, N, or R,  
+it is spelled **O** instead.
+
+This rule is orthographic and aesthetic.
+
+Examples:
 
 | Modern English | Inglisce | IPA |
 |----------------|----------|-----|
@@ -125,89 +199,37 @@ O replaces U in these positions but retains the /ə/ pronunciation.
 | murmur | mormor | /ˈmərˌmər/ |
 | Monday | Monday | /ˈmənˌdeɪ/ |
 
-This restriction is purely orthographic.
+Monday follows the rule.
 
 ---
 
-## Diacritics
+# VI. Ü — Explicit Glide Marker
 
-### Ú — Stressed /u/ or /ju/
+Ü represents medial **/w/** where a plain U could be misread as a vowel.
 
-Marks stressed /u/ or /ju/.
-
-| Modern English | Inglisce |
-|----------------|----------|
-| fruit | frute |
-| fruits | frúts |
-| root | rute |
-| roots | rúts |
-| suit | sute |
-| suits | súts |
-| unusual | unúșual |
-| confusion | confúsion |
-| useable | úsable |
-
----
-
-### Û — Stressed /ʊ/
-
-Marks stressed /ʊ/.
-
-| Modern English | Inglisce |
-|----------------|----------|
-| cushion | cûcion |
-| good | gûd |
-| to pull | to pûle |
-| full | fûl |
-| bullet | bûllet |
-| bull | bûle |
-
-**Special Rule**
-
-Û cannot appear after U. In such contexts, use Ô instead.
-
----
-
-### Ü — /w/ Sound
-
-Represents medial /w/ in specific contexts.
+Examples:
 
 | Modern English | Inglisce |
 |----------------|----------|
 | award | aüard |
 | reward | reüard |
 
----
+Ü prevents ambiguity between:
 
-## Cross-References
-
-- **IPA-ə.txt** — /ə/  
-- **IPA-u.txt** — /u/  
-- **IPA-ju.txt** — /ju/  
-- **IPA-w.txt** — /w/  
-- **IPA-ʊ.txt** — /ʊ/  
-- **Ô.txt** — Post-U contexts  
+- vowel + U + vowel
+- glide + vowel sequence
 
 ---
 
-## Teaching Notes
+# VII. Summary of Values
 
-### Primary Patterns
-
-- U + two consonants → /ə/  
-- U + single consonant + silent E → /u/  
-- U in SU-, CU-, QU- clusters → /w/  
-- Silent U preserves hard G  
-
-### Key Restrictions
-
-- U cannot follow M, N, or R (use O instead)  
-- Û cannot follow U (use Ô)
-
-### Diacritic Summary
-
-| Diacritic | Value |
-|-----------|-------|
-| Ú | stressed /u/ or /ju/ |
-| Û | stressed /ʊ/ |
-| Ü | /w/ (medial) |
+| Spelling | Value |
+|----------|--------|
+| U (open) | /u/ |
+| U (closed) | /ə/ |
+| Ú | /u/ (closed override) |
+| Û | /ʊ/ |
+| U (clusters) | /w/ |
+| O (multisyllabic glide) | /w/ |
+| U (after G before E/I/Y) | silent |
+| Ü | /w/ |
