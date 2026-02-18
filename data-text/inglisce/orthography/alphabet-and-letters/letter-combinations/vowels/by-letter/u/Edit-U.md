@@ -32,8 +32,8 @@ The pronunciation of long U (/(j)u/) depends on consonant class.
 | gu | gou |
 | pu | pou |
 | bu | bou |
-| fu | fou |
-| hu | hou |
+| fu, feu | fou |
+| hu, heu | hou |
 | veu | vou |
 | mu | mou |
 | -lue | lu-, lou-|
