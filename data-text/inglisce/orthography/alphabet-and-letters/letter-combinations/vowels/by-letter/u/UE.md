@@ -16,7 +16,8 @@ The digraph **UE** represents three phonological values in Inglisce.
 
 # I. Word-Final UE → /u/
 
-At the end of a word, **UE** represents a long /u/ sound.
+**UE** represents a long /u/ or /ju/ sound.
+See yod rules in **U.md** for details.
 
 | Modern English | Inglisce | IPA |
 |----------------|----------| --- |
