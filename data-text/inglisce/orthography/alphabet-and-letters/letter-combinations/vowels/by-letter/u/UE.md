@@ -10,6 +10,8 @@ The digraph **UE** represents three phonological values in Inglisce.
 | Latin/French derivatives | /uə/ |
 | ÜE | /wə/ |
 
+'*' Represents no spelling change from Modern (Websterian) English.
+
 ---
 
 # I. Word-Final UE → /u/
