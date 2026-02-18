@@ -113,7 +113,7 @@ Examples:
 | quake | cuâche |
 | swerve | suêve |
 | anguish | ângoișe |
-| vanquish | vaincoișe |
+| vanquish | vencoișe |
 | equip, equipment | equïpe, equïpment |
 | award | aüard |
 | reward | reüard |
