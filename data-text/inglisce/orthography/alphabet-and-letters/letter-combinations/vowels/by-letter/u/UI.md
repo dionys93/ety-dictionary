@@ -12,6 +12,8 @@ The digraph **UI** represents different sounds depending on stress and position.
 | UI | Unstressed | /wi/ or /wɪ/ |
 | GUI | — | Hard G + /i/ (U silent) |
 
+'*' Represents no spelling change from Modern (Websterian) English.
+
 ---
 
 # II. Stressed ÚI → /uɪ/
@@ -29,27 +31,24 @@ This spelling explicitly marks stress and prevents glide reduction.
 
 # III. Unstressed UI → /w/ + vowel
 
-When unstressed, **UI** represents a glide /w/ followed by /i/ or /ɪ/.
+When unstressed, **UI(E** represents a glide /w/ followed by /i/ or /ɪ/.
 
 | Modern English | Inglisce |
 |----------------|----------|
-| to sweep | to suipe |
-| to swing | to suingue |
-| twit | tuit |
-| to tweet | to tuite |
-| the tweet | þe tuite |
-| tweets | tuíts |
 | suite | * |
+| sweet | suiet |
+| to sweep, swept | to suiepe |
+| to swing | to suingue |
+| the tweet, tweets | þe tuite, tuíts |
+| Swedish | Suídish |
+| twit | tuit |
 | swift | suift |
 | swiss | suiss |
-| Swedish | Suídish |
+
 
 In this environment:
 U = glide /w/  
 I = vowel nucleus  
-
-Plural or inflected forms may require **Ú** to preserve stress:
-tuit → tuíts
 
 ---
 
