@@ -1,17 +1,19 @@
 # U
 
-The letter **U** is fundamentally a vowel representing **/u/** in Inglisce.
+The letter **U** is fundamentally a vowel in Inglisce.
 
-Its value follows four primary structural rules:
+Its value is determined by syllable structure and diacritic priority.
 
-U → /u/  
-U + consonant → /ə/  
+## Core Structural Rules
+
+U in open syllable → /u/  
+U + consonant (closed syllable) → /ə/  
 Ú + consonant(s) → /(j)u/  
-U + consonant + E → /(j)u/  
+U + consonant + silent E → /(j)u/  
 
-The presence of /j/ (yod) depends on the consonant preceding U.
+The presence of /j/ (yod) depends on consonant class.
 
-There is no letter **W** in Inglisce. U (and sometimes O) represent the glide /w/ in specific environments.
+There is no letter **W** in Inglisce. Glide /w/ is represented by U, O, or Ü depending on environment.
 
 **Diacritics used:** Ú, Û, Ü  
 **Related digraphs:** UE, UI  
@@ -22,22 +24,11 @@ There is no letter **W** in Inglisce. U (and sometimes O) represent the glide /w
 
 # I. Yod Classification
 
-The pronunciation of long U (/(j)u/) depends on consonant class.
+Long U (restored by Ú or silent -E) behaves differently depending on the preceding consonant.
 
-## Consonants That Trigger Yod (/ju/)
+## Yod Class (Long U = /ju/)
 
-| With Yod | Without Yod |
-| --- | --- |
-| cu | cou |
-| gu | gou |
-| pu | pou |
-| bu | bou |
-| fu, feu | fou |
-| hu, heu | hou |
-| veu | vou |
-| mu | mou |
-| -lue | lu-, lou-|
-| ju | Always palatalized |
+c, g, p, b, f, h, v, m, l, j  
 
 Examples:
 
@@ -46,27 +37,21 @@ Examples:
 | cute | * |
 | muse, music | muse, músic |
 | confuse, confusion | confuse, confúsion |
+| evacuate, evacuation | evacuait, evacuâcion |
 
 These produce **/ju/** when long.
 
 ---
 
-## Consonants Without Yod (/u/)
+## Non-Yod Class (Long U = /u/)
 
-| Without Yod | With Yod |
-| --- | --- |
-| tu | țu |
-| du | d̦u |
-| su | șu |
-| nu | ñu |
-| zu | șu |
-| ru, rou, reu | Always without yod |
+t, d, s, n, z, r  
 
 Examples:
 
 | Modern English | Inglisce |
 |----------------|----------|
-| rude | reude |
+| rude, crude | * |
 | rule | reule |
 
 These produce plain **/u/** when long.
@@ -77,7 +62,7 @@ These produce plain **/u/** when long.
 
 When U is followed by a consonant and not restored by silent -E:
 
-**U = /ə/** (absolute default)
+U = /ə/ (absolute default)
 
 | Modern English | Inglisce | IPA |
 |----------------|----------|-----|
@@ -112,18 +97,27 @@ If silent -e is absent and the vowel must remain /(j)u/, **Ú is required**.
 
 There is no letter **W** in Inglisce.
 
-## U as Glide
+Glide marking follows a structural hierarchy:
 
-U represents /w/ in certain consonant clusters:
+Ü → /w/ (explicit glide marker)  
+U → /w/ in fixed consonant clusters (CU, SU)  
+O → /w/ after G or C before another vowel  
 
-- CU
-- SU
+Examples:
 
 | Modern English | Inglisce |
 |----------------|----------|
+| cuisine | * |
 | quick | cuic |
+| queen | cuine |
 | quake | cuâche |
 | swerve | suêve |
+| anguish | ângoișe |
+| vanquish | vaincoișe |
+| equip, equipment | ecoïpe, ecoïpment |
+| award | aüard |
+| reward | reüard |
+
 
 ---
 
@@ -155,15 +149,14 @@ it is spelled **O** instead.
 
 ---
 
-# VII. Summary
+# VII. Rule Precedence (Priority Order)
 
-| Pattern | Value |
-|----------|--------|
-| U | /u/ |
-| U + C | /ə/ |
-| Ú + C | /(j)u/ |
-| U + C + E | /(j)u/ |
-| Û | /ʊ/ |
-| U (clusters) | /w/ |
-| U after G before E/I/Y | silent |
-| Ü | /w/ |
+When multiple conditions apply, the following hierarchy determines pronunciation:
+
+1. Û overrides all → /ʊ/  
+2. Ú overrides structure → /(j)u/  
+3. Silent -E restores long value  
+4. Closed syllable default → /ə/  
+5. Open syllable → /u/  
+6. Glide rules override to /w/ where applicable  
+
