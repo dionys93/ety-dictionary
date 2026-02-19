@@ -6,7 +6,7 @@ The digraph **AE** represents a **single vowel value** in Inglisce.
 
 ## Pronunciation Summary
 
-| Spelling | IPA | Example (Modern English) | Inglisce |
+| Spelling | IPA | Modern English | Inglisce |
 |--------|-----|--------------------------|----------|
 | AE | /aɪ/ | amplify | amplifae |
 
