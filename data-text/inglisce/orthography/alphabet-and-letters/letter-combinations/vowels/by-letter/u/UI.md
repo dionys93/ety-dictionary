@@ -59,10 +59,10 @@ The spelling **-UIS** occurs **only in plural forms**.
 
 It represents /juz/ and replaces Modern English -ues / -ews.
 
-| Modern English | Singular | Plural |
-|----------------|----------|--------|
-| value | value | valuis |
-| curfew | corfue | corfuis |
+| Modern English | Inglisce |
+|----------------|----------|
+| value, values | value, valuis |
+| curfew, curfews | corfue, corfuis |
 
 This spelling is **morphological**, not phonetic:
 There is no singular *-ui* form with this value.
