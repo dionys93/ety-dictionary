@@ -127,20 +127,14 @@ Marks **stressed /ɛr/** before R in **nouns and adjectives**.
 
 A restricted spelling used for **lexical /aɪ/** where neither AI + H nor AE applies.
 
-| Modern English | Inglisce | Note |
+| Modern English | Inglisce | Part of Speech |
 |---------------|----------|------|
-| fry, fries | frae, fráis | "young fish" |
-| chai, chais | c̃ae, c̃ais | |
-| eye, eyes | eaie, eais | |
-| tonight | tonáit | |
-| may, might | maie, máit | |
-| aisle, aisles | aiele, aiels | |
-
----
-
-## Origin Notes
-
-AI appears most commonly in **French-derived vocabulary**, with secondary use in **Germanic forms** (especially AI + H).
+| fry, fries | frae, fráis | Noun "young fish" |
+| chai, chais | c̃ae, c̃ais | Noun |
+| eye, eyes | eaie, eais | Noun |
+| aisle, aisles | aiele, aiels | Noun |
+| tonight | tonáit | Adverb |
+| may, might | maie, máit | Verb |
 
 ---
 
