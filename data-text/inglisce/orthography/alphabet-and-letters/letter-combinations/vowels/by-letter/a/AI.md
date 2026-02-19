@@ -23,7 +23,7 @@ The digraph **AI** and its variants represent **multiple vowel values** in Ingli
 
 ## The Digraph AI
 
-### Default AI → /eɪ/
+### AI-E → /eɪ/
 
 AI most commonly represents **/eɪ/**, especially in **verbs and derived forms**.
 
@@ -35,8 +35,6 @@ AI most commonly represents **/eɪ/**, especially in **verbs and derived forms**
 | to pay | paie | /peɪ/ |
 | to stay | staie | /steɪ/ |
 | to play | plaie | /pleɪ/ |
-
-*Note: Noun forms of these words use **-AY** instead (see **AY.txt**).*
 
 ---
 
