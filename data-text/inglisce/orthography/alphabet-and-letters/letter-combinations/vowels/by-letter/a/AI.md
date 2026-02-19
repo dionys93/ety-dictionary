@@ -12,10 +12,10 @@ The digraph **AI** and its variants represent **multiple vowel values** in Ingli
 
 | Spelling | IPA | Environment | Example |
 |--------|-----|-------------|---------|
-| AI | /eɪ/ | Default, esp. verbs | say → **saie** |
-| AI | /ɛr/ | Before R | care → **caire** |
+| AI-E | /eɪ/ | Default, esp. verbs | say → **saie** |
+| AI + R | /ɛr/ | Before R | care → **caire** |
 | AI | /ɛ/ | Lexical exceptions | lettuce → **laitace** |
-| AI | /aɪ/ | Before H | night → **naihte** |
+| AI + H | /aɪ/ | Before H | night → **naihte** |
 | AÎ | /ɛ/ | Stressed | comparison → **compaîrasson** |
 | ÁI | /aɪ/ | Common in plural formations | fry → **frae**, frys → **fráis** |
 
