@@ -16,7 +16,7 @@ The digraph **AI** and its variants represent **multiple vowel values** in Ingli
 | AI | /eɪ/ | Default, esp. verbs | say → **saie** |
 | AI | /ɛr/ | Before R | care → **caire** |
 | AI | /ɛ/ | Lexical exceptions | lettuce → **laitace** |
-| AI | /aɪ/ | Before H | night → **naiht** |
+| AI | /aɪ/ | Before H | night → **naihte** |
 | AÎ | /ɛr/ | Stressed before R | comparison → **compaîrasson** |
 | ÁI | /aɪ/ | Restricted lexical class | fry → **frae**, frys → **fráis** |
 
