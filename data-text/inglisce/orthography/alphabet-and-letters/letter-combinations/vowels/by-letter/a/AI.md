@@ -2,8 +2,7 @@
 
 The digraph **AI** and its variants represent **multiple vowel values** in Inglisce, determined by **environment, stress, and morphology**.
 
-**Diacritics used:** AÎ  
-**Related variant:** ÁI
+**Diacritics used:** AÎ, ÁI
 
 ---
 
@@ -17,8 +16,8 @@ The digraph **AI** and its variants represent **multiple vowel values** in Ingli
 | AI | /ɛr/ | Before R | care → **caire** |
 | AI | /ɛ/ | Lexical exceptions | lettuce → **laitace** |
 | AI | /aɪ/ | Before H | night → **naihte** |
-| AÎ | /ɛr/ | Stressed before R | comparison → **compaîrasson** |
-| ÁI | /aɪ/ | Restricted lexical class | fry → **frae**, frys → **fráis** |
+| AÎ | /ɛ/ | Stressed | comparison → **compaîrasson** |
+| ÁI | /aɪ/ | Common in plural formations | fry → **frae**, frys → **fráis** |
 
 ---
 
