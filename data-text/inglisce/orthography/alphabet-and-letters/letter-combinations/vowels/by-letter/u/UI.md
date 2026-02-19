@@ -10,6 +10,7 @@ The digraph **UI** represents different sounds depending on stress and position.
 |------|--------|--------|
 | ÚI | Stressed | /uɪ/ |
 | UI | Unstressed | /wi/ or /wɪ/ |
+| -UIS | Unstressed | /juz/ |
 | GUI | — | Hard G + /i/ (U silent) |
 
 '*' Represents no spelling change from Modern (Websterian) English.
