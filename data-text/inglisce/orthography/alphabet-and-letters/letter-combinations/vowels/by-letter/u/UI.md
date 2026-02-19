@@ -79,6 +79,7 @@ I = vowel nucleus
 |----------|--------|
 | ÚI (stressed) | /uɪ/ |
 | UI (unstressed) | /wi/, /wɪ/ |
+| -UIS | Unstressed | /juz/ |
 | GUI | hard G + /i/ |
 
 ---
