@@ -89,7 +89,7 @@ Before **H**, AI represents **/aɪ/**, primarily in Germanic-origin words.
 | night | naihte | OE *næht* |
 | might | maihte | OE *mæht* |
 | mighty | maihty | OE *mæhtig* |
-| to die | daihe | |
+| to die | daihe | Old Norse *deyja* |
 
 ---
 
