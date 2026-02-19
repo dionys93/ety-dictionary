@@ -4,7 +4,7 @@ The digraph **UI** represents different sounds depending on stress and position.
 
 ---
 
-# I. Pronunciation Overview
+## I. Pronunciation Overview
 
 | Form | Stress | Value |
 |------|--------|--------|
@@ -17,7 +17,7 @@ The digraph **UI** represents different sounds depending on stress and position.
 
 ---
 
-# II. Stressed ÚI → /uɪ/
+## II. Stressed ÚI → /uɪ/
 
 When stressed, UI is written **ÚI** and pronounced /uɪ/.
 
@@ -30,7 +30,7 @@ This spelling explicitly marks stress and prevents glide reduction.
 
 ---
 
-# III. Unstressed UI → /w/ + vowel
+## III. Unstressed UI → /w/ + vowel
 
 When unstressed, **UI(E** represents a glide /w/ followed by /i/ or /ɪ/.
 
@@ -53,7 +53,23 @@ I = vowel nucleus
 
 ---
 
-# IV. Silent U Function (Hard G Preservation)
+## IV. Plural -UIS → /juz/
+
+The spelling **-UIS** occurs **only in plural forms**.
+
+It represents /juz/ and replaces Modern English -ues / -ews.
+
+| Modern English | Singular | Plural |
+|----------------|----------|--------|
+| value | value | valuis |
+| curfew | corfue | corfuis |
+
+This spelling is **morphological**, not phonetic:
+There is no singular *-ui* form with this value.
+
+---
+
+## V. Silent U Function (Hard G Preservation)
 
 In some words, UI represents silent U + I.
 
@@ -73,7 +89,7 @@ I = vowel nucleus
 
 ---
 
-# V. Structural Summary
+## VI. Structural Summary
 
 | Pattern | Value |
 |----------|--------|
@@ -84,7 +100,7 @@ I = vowel nucleus
 
 ---
 
-# Teaching Notes
+## Teaching Notes
 
 • Stressed UI must be written **ÚI**  
 • Unstressed UI defaults to glide + vowel  
