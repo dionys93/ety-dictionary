@@ -63,6 +63,8 @@ It represents /juz/ and replaces Modern English -ues / -ews.
 |----------------|----------|
 | value, values | value, valuis |
 | curfew, curfews | corfue, corfuis |
+| view, views | vue, vuis |
+| hue, hues | hue, huis |
 
 This spelling is **morphological**, not phonetic:
 There is no singular *-ui* form with this value.
@@ -79,6 +81,7 @@ The U preserves hard G before E, I, or Y
 | Modern English | Inglisce |
 |----------------|----------|
 | to guide | to guîde |
+| to give | to guive |
 | guild | * |
 | guilty | * |
 
