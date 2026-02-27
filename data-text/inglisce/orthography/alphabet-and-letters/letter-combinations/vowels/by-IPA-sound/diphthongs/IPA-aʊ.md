@@ -101,10 +101,10 @@
 
 | Modern English | Inglisce |
 |----------------|----------|
-| bound | baund |
-| found | faund |
-| wound | oaund |
-| ground | graund |
+| to bind, bound | baund |
+| to find, found | faund |
+| to wind, wound | oaund |
+| to grind, ground | graund |
 
 ---
 
@@ -119,18 +119,3 @@
 | Before N cluster | ôn |
 | Open lexical set | aû |
 | Germanic strong past | aund |
-
----
-
-# Notes for Recording
-
-Suggested sound file order:
-
-1. Core ô (côe, sôe, vôe)
-2. Cluster forms (brôn, sônd)
-3. R-forms (tôure, ôare)
-4. aû lexical class
-5. Germanic strong past (baund, faund)
-6. Verbal paradigms (devôer, pôuder, seauer)
-
-Record singular → plural → full verb paradigm together.
