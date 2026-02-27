@@ -7,9 +7,6 @@ Audio equivalent: as in "boy", "coin", "choice"
 Frequency: Moderately common, limited distribution
 
 
-
-
-
 to enjoy → to enjoie enjoies enjoied enjoying
 to employ → to emploie emploies emploied employing
 to destroy → to destroie destroies destroied destroying
