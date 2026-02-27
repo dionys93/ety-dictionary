@@ -6,7 +6,7 @@
 |----------|--------|
 | IPA | /eɪ/ |
 | Description | Mid-front closing diphthong |
-| Example words (Modern English) | make, day, rain |
+| Example in Modern English | make, day, rain |
 | Frequency | Very common; appears in many word types and positions |
 
 ---
