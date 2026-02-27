@@ -136,7 +136,3 @@ Always pronounced /eɪ/.
 | Verb–noun alternation | AI (verbs) ↔ AY (nouns) |
 | Stress marking | EI (unstressed) ↔ ÉI (stressed) |
 | Latin verbs | -AIT (unstressed) ↔ Â (stressed exceptions) |
-
----
-
-## Teaching Notes
