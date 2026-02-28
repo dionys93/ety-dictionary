@@ -20,6 +20,8 @@
 | Word-final | -OE, -O |
 | Stress-marked | Ó |
 
+'*' Represents no change in spelling between Modern (Websterian) English and Inglisce
+
 ---
 
 ## Core Distribution Rules
