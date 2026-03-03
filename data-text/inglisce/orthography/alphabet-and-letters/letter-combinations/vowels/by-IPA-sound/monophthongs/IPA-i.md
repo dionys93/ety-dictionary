@@ -17,10 +17,10 @@
 |-----------|------------|
 | Primary | I-E |
 | Alternative | IE, EI- |
-| Diacritic | Ï + vowel, ÿ + vowel |
+| Diacritic | Ï + vowel, Ÿ + vowel |
 | Affricate cluster | -IEC̃E, -OIC̃E |
 | Stress-marked | Í |
-| Secondary | Y (word-final adjectives/adverbs only) |
+| Secondary | -Y (adjectives/adverbs only) |
 
 '*' Represents no change in spelling between Modern (Websterian) English and Inglisce
 
@@ -32,29 +32,21 @@
 
 The default spelling for /i/ in closed syllables and verb stems.
 
-#### Verbs
-
 | Modern | Inglisce |
 |--------|----------|
-| to see | to sihe |
-| to compete | to compite |
-| to repeat | to repite |
-| to defeat | to defite |
-| to complete | to complite |
-| to repeal | to repile |
-| to receive | to recive |
-| to conceive | to concive |
-| to deceive | to decive |
-
-#### Nouns and Other Words
-
-| Modern | Inglisce |
-|--------|----------|
-| complete | complite |
 | elite | * |
+| leek | lique |
 | machine | maçine |
 | sieve | sive |
-| leek | lique |
+| to compete | to compite |
+| to complete | to complite |
+| to conceive | to concive |
+| to deceive | to decive |
+| to defeat | to defite |
+| to receive | to recive |
+| to repeal | to repile |
+| to repeat | to repite |
+| to see | to sihe |
 
 ---
 
@@ -89,6 +81,7 @@ Used in word-final syllables and within stems where Modern English uses EE or EA
 | to meet | to miete |
 | to kneel | to niele |
 | to agree | to agrie |
+| sheep | siepe |
 
 #### Consonant Clusters (IE within stem)
 
