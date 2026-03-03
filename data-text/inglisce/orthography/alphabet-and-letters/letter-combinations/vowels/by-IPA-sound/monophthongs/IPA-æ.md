@@ -28,15 +28,22 @@
 
 The default spelling for /æ/ in stressed monosyllables and simple words.
 
-#### No Changes from Modern to Inglisce
-
-cat, hat, fat, sat, bat, mat, rap, tap, map, gap, cap, lap
-
-#### Words with Changes
-
 | Modern | Inglisce |
 |--------|----------|
 | admiral | amiral |
+| bat | bate |
+| cap | cape |
+| cat | cate |
+| clap | clappe |
+| fat | * |
+| gap | gappe |
+| hat | hate |
+| lap | lape |
+| map | mappe |
+| mat | mate |
+| rap | rappe |
+| sat | * |
+| tap | tappe |
 
 ---
 
