@@ -28,11 +28,13 @@
 
 | Modern | Inglisce |
 |--------|----------|
-| lock | loc |
-| dock | doc |
-| flock | floc |
-| stock | stoc |
-| knot | gnote |
+| lock, locks | loc, lox |
+| dock, docks | doc, dox |
+| flock, flocks | floc, flox |
+| stock, stocks | stoc, stox |
+| bot, bots | botte, bots |
+| dot, dots | dotte, dots |
+| knot, knots | gnote, gnots |
 | anonymous | anonimus |
 | concoction | concoccion |
 | to concoct | to concocte |
