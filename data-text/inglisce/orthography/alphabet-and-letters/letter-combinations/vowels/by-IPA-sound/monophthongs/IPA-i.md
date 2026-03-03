@@ -104,6 +104,7 @@ Used in word-final syllables and within stems where Modern English uses EE or EA
 
 | Modern | Inglisce |
 |--------|----------|
+| each | eic̃e |
 | eagle | eigle |
 | ease | eise |
 
@@ -138,7 +139,6 @@ Used for words ending in Modern English -EACH or -EECH.
 
 | Modern | Inglisce |
 |--------|----------|
-| each | eic̃e |
 | beach | biec̃e |
 | leach | liec̃e |
 | impeach | impiec̃e |
