@@ -87,8 +87,8 @@ Used in word-final syllables and within stems where Modern English uses EE or EA
 
 | Modern | Inglisce |
 |--------|----------|
-| field | * |
-| yield | * |
+| field | fielde |
+| yield | yielde |
 | shield | sield |
 
 ---
