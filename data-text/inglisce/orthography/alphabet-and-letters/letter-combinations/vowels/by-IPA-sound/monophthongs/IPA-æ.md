@@ -24,9 +24,7 @@
 
 ## Core Distribution Rules
 
-### 1. A = /æ/ (Stressed Single Vowel)
-
-The default spelling for /æ/ in stressed monosyllables and simple words.
+### 1. A = /æ/ 
 
 | Modern | Inglisce |
 |--------|----------|
