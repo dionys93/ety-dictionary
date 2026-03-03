@@ -34,6 +34,7 @@ The default spelling for /i/ in closed syllables and verb stems.
 
 | Modern | Inglisce |
 |--------|----------|
+| eel | iale |
 | elite | * |
 | leek | lique |
 | machine | maçine |
@@ -109,7 +110,6 @@ Diaeresis marks /i/ when it precedes another vowel within a syllable.
 
 | Modern | Inglisce |
 |--------|----------|
-| eel | iale |
 | seal | sïale |
 
 ---
@@ -151,26 +151,15 @@ Used for words ending in Modern English -EACH or -EECH.
 
 Acute accent marks stressed /i/ in derived and polysyllabic forms.
 
-#### Derived Forms (-TION, -MENT)
-
 | Modern | Inglisce |
 |--------|----------|
 | completion | complícion |
 | deletion | delícion |
 | agreement | agríment |
-
-#### Receipt / Conceit / Deceit Pattern
-
-| Modern | Inglisce |
-|--------|----------|
 | receipt, receipts | recite, recípts |
 | conceit, conceits | concite, concípts |
 | deceit, deceits | decite, decípts |
-
-#### Other Stressed Forms
-
-| Modern | Inglisce |
-|--------|----------|
+| seat, seats | site, síts |
 | immediate | immídiat |
 | media | mídia |
 | idea | îdía |
