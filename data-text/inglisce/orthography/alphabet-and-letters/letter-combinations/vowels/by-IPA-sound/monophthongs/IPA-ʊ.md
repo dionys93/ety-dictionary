@@ -44,6 +44,9 @@ Note: plurals of ÔC words follow an irregular -EOX pattern.
 | wood, woods | uôde, uôds |
 | woman, women | uôman, uimmen |
 | wolf, wolves | uôlfe, uôlfs |
+| wool | uôle |
+| soot | sôte |
+| foot, feet | fôte, fyt |
 
 ---
 
@@ -69,6 +72,7 @@ Used in shorter, high-frequency words and closed syllables not covered by Ô.
 | full | fûl |
 | cushion | cûcion |
 | to pull | to pûle |
+| to put | to pûte |
 
 ---
 
