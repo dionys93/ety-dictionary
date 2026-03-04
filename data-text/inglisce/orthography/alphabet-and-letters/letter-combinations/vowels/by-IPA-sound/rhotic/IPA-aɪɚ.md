@@ -19,7 +19,6 @@
 | Noun plural | -ÎARS |
 | Verb infinitive | -ÎER |
 | Progressive | -ÎARING |
-| Exception | OÎ (W-initial words) |
 
 '*' Represents no change in spelling between Modern (Websterian) English and Inglisce
 
