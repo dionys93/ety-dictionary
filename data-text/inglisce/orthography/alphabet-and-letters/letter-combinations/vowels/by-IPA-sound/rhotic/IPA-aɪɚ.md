@@ -40,7 +40,7 @@ The default spelling for /aɪər/ in nouns. Plurals follow the -ÎARS pattern.
 | quire, quires | quîre, quîars |
 | spire, spires | spîre, spîars |
 | tire, tires (wheel) | tîre, tîars |
-| wire, wires | oîre, oîars |
+| wire, wires | uîre, uîars |
 | iron, irons | îarn, îarns |
 
 ---
@@ -63,7 +63,7 @@ Verbs follow a consistent conjugation pattern. The infinitive uses -ÎER; the pr
 | to requîer | requîre(s | requîred | requîaring |
 | to retîer | retîre(s | retîred | retîaring |
 | to spîer | spîre(s | spîred | spîaring |
-| to oîer | oîre(s | oîred | oîaring |
+| to uîer | uîre(s | uîred | uîaring |
 | to tîore (to exhaust) | tîore(s | tîored | tîoring |
 
 ---
