@@ -4,7 +4,7 @@ SOUND OVERVIEW
 - IPA symbol: /ɑr/
 - Description: Low-back unrounded vowel + rhotacization
 - Audio equivalent: as in "start", "car", "barn"
-- Frequency: Common in Inglish, simple spelling system
+- Frequency: Common in Inglisce, simple spelling system
 
 SPELLING PATTERNS
 
@@ -36,18 +36,27 @@ Usage:
 
 Transformation Examples:
 - alarm → alarme, alárms
-- "to alarm" (verb) → "to alarme"
+- "to alarm" → "to alarme"
 - commissar → commissare (singular), commissárs (plural)
 
 COMPREHENSIVE EXAMPLES BY CATEGORY
 
 Basic AR Pattern
-- Simple monosyllables: car, far, bar, star, parc, hard, card, barn, farm, harm
-- Food terms: parmesian (< parmesan)
+car, cars -> carre, cars
+far
+bar, bars -> barre, bars 
+star, stars -> starre, stars 
+park, parks -> parc, parcs
+hard
+card, cards -> carde, cards
+barn, barns -> bargne, bargns
+farm -> farme, farms
+harm -> harme
+parmesian -> parmeșan
 
 Stressed ÁR Pattern
 - Stress disambiguation: alárms (noun), commissárs (plural)
-- Verb infinitives: to alarme (< to alarm)
+ to alarme
 
 CROSS-REFERENCES
 - Related sounds: 
@@ -63,10 +72,3 @@ Key Learning Points
 - Two spelling options: AR (unmarked) and ÁR (stress-marked)
 - Primary pattern: Most /ɑr/ words use simple AR spelling
 - Secondary pattern: ÁR is rare, used only when stress is unclear or for grammatical distinction
-
-Common Patterns to Remember
-1. Most English "ar" words remain AR in Inglish
-2. Stress marking (ÁR) primarily used for:
-   - Disambiguation (alárm vs alarm)
-   - Grammatical words (ár for "our")
-   - Some plural forms (commissárs)
