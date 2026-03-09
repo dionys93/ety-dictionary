@@ -15,8 +15,9 @@
 
 | Category | Spellings |
 |-----------|------------|
-| Agent nouns | -EUR, -EOR, -OR |
-| Nouns | -RE |
+| Agent nouns | -EUR, -EOR |
+| Any | -OUR, -OR |
+| Nouns | -RE, -ARS, -ORS, -IRS |
 | Stressed | Ê |
 | Comparatives | -AR, -IAR |
 | Latin derivatives | -IOR |
@@ -49,7 +50,19 @@ Used for agent nouns.
 
 ---
 
-### 2. -RE = /ɚ/
+### 2. -OUR, -OR-, -OR
+
+| Modern | Inglisce |
+|--------|----------|
+| curve, curvature | corve, corvaţure |
+| to murder | to mourder |
+| nurse, nursery | nourse, nourserie |
+| nurture | nourțure | 
+| hammer | hamor |
+
+---
+
+### 3. -RE = /ɚ/
 
 Used for nouns. Plurals follow an irregular -ORS, -ARS, or -IRS pattern.
 
@@ -67,10 +80,11 @@ Used for nouns. Plurals follow an irregular -ORS, -ARS, or -IRS pattern.
 | cover | covre, covirs |
 | zephyr | zefre, zefirs |
 | martyr | martre, martirs |
+| bird | birde, birds |
 
 ---
 
-### 3. Ê = /ɚ/ (Stressed)
+### 4. Ê = /ɚ/ (Stressed)
 
 Circumflex marks stressed /ɚ/ where the vowel is not predictable from spelling alone.
 
@@ -83,12 +97,10 @@ Circumflex marks stressed /ɚ/ where the vowel is not predictable from spelling 
 | emergency | emêgencie |
 | worm | uême |
 | hors d'oeuvres | ordêves |
-| curve | corve |
-| to murder | to mourder |
 
 ---
 
-### 4. -AR = /ɚ/ (Word-Final)
+### 5. -AR = /ɚ/ (Word-Final)
 
 | Modern | Inglisce |
 |--------|----------|
@@ -97,7 +109,7 @@ Circumflex marks stressed /ɚ/ where the vowel is not predictable from spelling 
 
 ---
 
-### 5. -AR / -IAR = /ɚ/ 
+### 6. -AR / -IAR = /ɚ/ 
 
 Used in comparative adjective forms.
 
@@ -112,7 +124,7 @@ Used in comparative adjective forms.
 
 ---
 
-### 6. -IOR = /ɚ/ (Latin Derivatives)
+### 7. -IOR = /ɚ/ (Latin Derivatives)
 
 Used in words derived from Latin agent noun endings.
 
@@ -124,7 +136,7 @@ Used in words derived from Latin agent noun endings.
 
 ---
 
-### 7. -URE = /ɚ/ (Latin -ura Derivatives)
+### 8. -URE = /ɚ/ (Latin -ura Derivatives)
 
 Used in words of Latin origin ending in -ura, often with consonant shifts.
 
