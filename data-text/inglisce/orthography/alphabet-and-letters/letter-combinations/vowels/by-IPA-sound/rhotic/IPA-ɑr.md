@@ -1,74 +1,68 @@
-IPA /ɑr/ — "START" VOWEL
+# IPA /ɑr/ — "START" VOWEL
 
-SOUND OVERVIEW
-- IPA symbol: /ɑr/
-- Description: Low-back unrounded vowel + rhotacization
-- Audio equivalent: as in "start", "car", "barn"
-- Frequency: Common in Inglisce, simple spelling system
+## Sound Overview
 
-SPELLING PATTERNS
+| Feature | Value |
+|----------|--------|
+| IPA | /ɑr/ |
+| Description | Low-back unrounded vowel + rhotacization |
+| Example in Modern English | start, car, barn |
+| Frequency | Common; simple two-pattern spelling system |
 
-Primary System
-- AR (basic pattern)
-- ÁR (stress-marked pattern)
+---
 
-DETAILED RULES
+## Spelling Patterns
 
-1. AR = /ɑr/ (Basic Pattern)
-The standard spelling for the /ɑr/ sound in most contexts.
+| Category | Spellings |
+|-----------|------------|
+| Primary | AR |
+| Stress-marked | ÁR |
 
-Usage:
-- Simple words: carre, far, barre, starre, parc, hard, card, bargne, farme, harme
-- Most common spelling for this sound
-- Used in both monosyllables and unstressed syllables
-- Longer words: parmesan → parmeșan
+'*' Represents no change in spelling between Modern (Websterian) English and Inglisce
 
-to starte
+---
 
-2. ÁR = /ɑr/ (Stressed)
-Used when stress marking is needed for clarity or disambiguation.
+## Core Distribution Rules
 
-Usage:
-- When stress marking needed for clarity
-- Less common, used for disambiguation
-- Specific words requiring stress clarification
-- Grammatical function: First-person plural possessive adjective: our → ár
+### 1. AR = /ɑr/ (Basic Pattern)
 
-Transformation Examples:
-- alarm → alarme, alárms
-- "to alarm" → "to alarme"
-- commissar → commissare (singular), commissárs (plural)
+The default spelling for /ɑr/ in monosyllables, unstressed syllables, and most common words.
 
-COMPREHENSIVE EXAMPLES BY CATEGORY
+| Modern | Inglisce |
+|--------|----------|
+| car, cars | carre, cars |
+| bar, bars | barre, bars |
+| star, stars | starre, stars |
+| park, parks | parc, parcs |
+| hard | * |
+| card, cards | carde, cards |
+| barn, barns | bargne, bargns |
+| farm, farms | farme, farms |
+| harm | harme |
+| far | * |
+| parmesan | parmeșan |
+| alarm | alarme |
+| commissar | commissare |
+| to alarm | to alarme |
 
-Basic AR Pattern
-car, cars -> carre, cars
-far
-bar, bars -> barre, bars 
-star, stars -> starre, stars 
-park, parks -> parc, parcs
-hard
-card, cards -> carde, cards
-barn, barns -> bargne, bargns
-farm -> farme, farms
-harm -> harme
-parmesian -> parmeșan
+---
 
-Stressed ÁR Pattern
-- Stress disambiguation: alárms (noun), commissárs (plural)
- to alarme
+### 2. ÁR = /ɑr/ (Stress-Marked)
 
-CROSS-REFERENCES
-- Related sounds: 
-  - /ɑ/ (see IPA-ɑ documentation)
-  - /ɔr/ (see IPA-ɔr documentation)
-- Stress marking system: AR (basic) vs ÁR (stressed)
-- Related documentation: A.txt, Á.txt
+Used when stress needs disambiguation, particularly in plurals where the stress isn't on the first syllable.
 
-TEACHING NOTES
+| Modern | Inglisce |
+|--------|----------|
+| alarms | alárms |
+| commissars | commissárs |
 
-Key Learning Points
-- Simplest R-colored vowel spelling system in Inglish
-- Two spelling options: AR (unmarked) and ÁR (stress-marked)
-- Primary pattern: Most /ɑr/ words use simple AR spelling
-- Secondary pattern: ÁR is rare, used only when stress is unclear or for grammatical distinction
+
+---
+
+## Cross-References
+
+| Topic | Relationship |
+|---------|--------------|
+| /ɑ/ | Compare /ɑr/ vs plain /ɑ/; rhotacization distinguishes the two; see IPA-/ɑ/ |
+| /ɔr/ | Compare AR = /ɑr/ vs OR = /ɔr/; see IPA-/ɔr/ |
+| Stress marking | ÁR stress in plurals; compare with other vowel files |
