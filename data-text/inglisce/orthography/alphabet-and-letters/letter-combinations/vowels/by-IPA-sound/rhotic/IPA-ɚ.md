@@ -17,7 +17,7 @@
 |-----------|------------|
 | Agent nouns | -EUR, -EOR |
 | Any | -OUR, -OR |
-| Nouns | -RE, -ARS, -ORS, -IRS |
+| Nouns | -RE, -ARS, -ORS, -IRS, -AR |
 | Stressed | Ê |
 | Comparatives | -AR, -IAR |
 | Latin derivatives | -IOR |
