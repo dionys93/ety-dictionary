@@ -17,6 +17,7 @@
 |-----------|------------|
 | Agent nouns | -EUR, -EOR |
 | Any | -OUR, -OR |
+| Verbs | -ER, -ORE, -ARE |
 | Nouns | -RE, -ARS, -ORS, -IRS, -AR |
 | Stressed | Ê |
 | Comparatives | -AR, -IAR |
@@ -75,6 +76,7 @@ Used for nouns. Plurals follow an irregular -ORS, -ARS, or -IRS pattern.
 | ancestor | ancestre, ancestors |
 | beaver | bívre, bívars |
 | gopher | gófre, gófars |
+| murder | mourdre, mourdars |
 | river | rivre, rivars |
 | matter | matre, matirs |
 | cover | covre, covirs |
