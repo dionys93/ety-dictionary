@@ -16,7 +16,7 @@
 | Category | Spellings |
 |-----------|------------|
 | Agent nouns | -EUR, -EOR |
-| Any | -OUR, -OR |
+| Any | -OUR, -OR-, -IR- |
 | Verbs | -ER, -ORE, -ARE |
 | Nouns | -RE, -ARS, -ORS, -IRS, -AR |
 | Stressed | Ê |
@@ -25,6 +25,8 @@
 | Latin -ura derivatives | -URE |
 
 '*' Represents no change in spelling between Modern (Websterian) English and Inglisce
+
+/ɚ/ has the widest range of spelling realizations of any vowel in Inglisce; distribution is largely determined by word class and etymology
 
 ---
 
@@ -39,11 +41,11 @@ Used for agent nouns.
 | teacher | tiec̃eur |
 | painter | painteur |
 | farmer | farmeur |
-| worker | uercor |
 | doctor | docteur |
 | actor | acteur |
 | professor | professeur |
 | director | directeur |
+| worker | uercor |
 | animator | animaitor |
 | demonstrator | demonstraitor |
 | administrator | administraitor |
