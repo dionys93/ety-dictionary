@@ -24,8 +24,6 @@
 | Latin derivatives | -IOR |
 | Latin -ura derivatives | -URE |
 
-'*' Represents no change in spelling between Modern (Websterian) English and Inglisce
-
 /ɚ/ has the widest range of spelling realizations of any vowel in Inglisce; distribution is largely determined by word class and etymology
 
 ---
