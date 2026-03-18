@@ -30,17 +30,19 @@ swap_ext() {
 # --- LOOKUP FUNCTIONS ---
 
 get_lang_name() {
-    grep "^$1	" "$CONFIG_DIR/languages.tsv" | cut -f2
+    # This searches for the code at the start of the line, 
+    # followed by any whitespace, then grabs everything after that whitespace.
+    grep -i "^$1[[:space:]]" "$CONFIG_DIR/languages.tsv" | sed "s/^$1[[:space:]]*//"
 }
 
 get_pos_full() {
-    grep "^$1	" "$CONFIG_DIR/pos.tsv" | cut -f2
+    grep -i "^$1[[:space:]]" "$CONFIG_DIR/pos.tsv" | sed "s/^$1[[:space:]]*//"
 }
 
 # --- INITIALIZATION ---
 # Ensures required directories exist
-setup_project() {
-    mkdir -p "$DICT_DIR"
-    mkdir -p "$ANALYSIS_DIR"
-    echo "Environment initialized at $PROJECT_ROOT"
-}
+# setup_project() {
+#     mkdir -p "$DICT_DIR"
+#     mkdir -p "$ANALYSIS_DIR"
+#     echo "Environment initialized at $PROJECT_ROOT"
+# }
