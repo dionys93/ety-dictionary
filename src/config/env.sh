@@ -36,7 +36,7 @@ get_lang_name() {
 }
 
 get_pos_full() {
-    grep -i "^$1[[:space:]]" "$CONFIG_DIR/pos.tsv" | sed "s/^$1[[:space:]]*//"
+    grep -i "^$1[[:space:]]" "$CONFIG_DIR/parts-of-speech.tsv" | sed "s/^$1[[:space:]]*//"
 }
 
 # --- INITIALIZATION ---
