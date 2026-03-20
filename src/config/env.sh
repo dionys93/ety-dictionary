@@ -36,13 +36,30 @@ get_lang_name() {
 }
 
 get_pos_full() {
-    grep -i "^$1[[:space:]]" "$CONFIG_DIR/parts-of-speech.tsv" | sed "s/^$1[[:space:]]*//"
-}
+    local INPUT=$1
+    # Strip parentheses and normalize: "(adj, m n)" -> "adj, m n"
+    local CLEAN_INPUT=$(echo "$INPUT" | tr -d '()')
+    
+    # Split by comma into an array
+    IFS=',' read -ra TAGS <<< "$CLEAN_INPUT"
+    
+    local RESULTS=()
+    for tag in "${TAGS[@]}"; do
+        # Trim whitespace (the 'xargs' trick)
+        local trimmed=$(echo "$tag" | xargs)
+        
+        # Search for the exact code at the start of the line in parts-of-speech.tsv
+        # We use [[:space:]] to ensure 'v' doesn't match 'verb' or 'adv'
+        local match=$(grep -i "^$trimmed[[:space:]]" "$CONFIG_DIR/parts-of-speech.tsv" | sed "s/^$trimmed[[:space:]]*//")
+        
+        if [ -n "$match" ]; then
+            RESULTS+=("$match")
+        else
+            # Fallback to the original tag if not found in TSV
+            RESULTS+=("$trimmed")
+        fi
+    done
 
-# --- INITIALIZATION ---
-# Ensures required directories exist
-# setup_project() {
-#     mkdir -p "$DICT_DIR"
-#     mkdir -p "$ANALYSIS_DIR"
-#     echo "Environment initialized at $PROJECT_ROOT"
-# }
+    # Join results with ", "
+    (IFS=", "; echo "${RESULTS[*]}")
+}
