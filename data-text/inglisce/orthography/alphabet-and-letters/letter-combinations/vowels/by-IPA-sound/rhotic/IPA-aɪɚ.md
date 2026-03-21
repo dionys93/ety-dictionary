@@ -18,7 +18,7 @@
 | Primary | Î (in ÎRE stems) |
 | Noun plural | -ÎARS |
 | Verb infinitive | -ÎER |
-| Progressive | -ÎARING |
+| Progressive | -ÎERING |
 
 '*' Represents no change in spelling between Modern (Websterian) English and Inglisce
 
@@ -50,19 +50,19 @@ Verbs follow a consistent conjugation pattern. The infinitive uses -ÎER; the pr
 
 | Infinitive | Present | Past | Progressive |
 |------------|---------|------|-------------|
-| to acquîer | acquîre(s | acquîred | acquîaring |
-| to admîer | admîre(s | admîred | admîaring |
-| to attîer | attîre(s | attîred | attîaring |
-| to desîer | desîre(s | desîred | desîaring |
-| to expîer | expîre(s | expîred | expîaring |
-| to fuîer | fuîre(s | fuîred | fuîaring |
-| to hîer | hîre(s | hîred | hîaring |
-| to inquîer | inquîre(s | inquîred | inquîaring |
-| to inspîer | inspîre(s | inspîred | inspîaring |
-| to requîer | requîre(s | requîred | requîaring |
-| to retîer | retîre(s | retîred | retîaring |
-| to spîer | spîre(s | spîred | spîaring |
-| to uîer | uîre(s | uîred | uîaring |
+| to acquîer | acquîre(s | acquîred | acquîering |
+| to admîer | admîre(s | admîred | admîering |
+| to attîer | attîre(s | attîred | attîering |
+| to desîer | desîre(s | desîred | desîering |
+| to expîer | expîre(s | expîred | expîering |
+| to fuîer | fuîre(s | fuîred | fuîering |
+| to hîer | hîre(s | hîred | hîering |
+| to inquîer | inquîre(s | inquîred | inquîering |
+| to inspîer | inspîre(s | inspîred | inspîering |
+| to requîer | requîre(s | requîred | requîering |
+| to retîer | retîre(s | retîred | retîering |
+| to spîer | spîre(s | spîred | spîering |
+| to uîer | uîre(s | uîred | uîering |
 | to tîore (to exhaust) | tîore(s | tîored | tîoring |
 
 ---
@@ -76,7 +76,7 @@ Verbs with /aɪər/ stems form derived nouns via Latin/French endings, often los
 | to admîer | admirâcion |
 | to inspîer | inspirâcion |
 | to expîer | expirâcion |
-| to acquîer | acquïsicion |
+| to acquîer | acqüisicion |
 | to requîer | requîrement |
 | to retîer | retîrement |
 
