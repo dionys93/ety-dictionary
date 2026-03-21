@@ -116,7 +116,7 @@ Examples:
 | swerve | suêve |
 | anguish | ângoișe |
 | vanquish | vencoișe |
-| equip, equipment | equïpe, equïpment |
+| equip, equipment | eqüipe, eqüipment |
 | award | aüard |
 | reward | reüard |
 | wet | ouet |
