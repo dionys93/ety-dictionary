@@ -3,24 +3,23 @@
 ## VOWELS
 
 ### Monophthongs & Diphthongs
-| Phoneme | Graphemes / Spelling Patterns |
-|:---|:---|
-| /i/ | i, ie, i-e, -y, í, ei- |
-| /ɪ/ | i, ig |
-| /ɛ/ | e, è, ai, ea |
-| /æ/ | a, à |
-| /ɑ/ | o, á |
-| /ɔ/ | o-ue, au, auh, oh, ò |
-| /ʊ/ | û, oû, u)ô |
-| /u/ | ou-e, u-e |
-| /ju/ | -u-e, ú-, -ú- |
-| /ʌ/ | a, o, u |
-| /ə/ | a, e, o, u |
-| /eɪ/ | â, ai-e, ay, ei, ei-e, ey, éi, aig, eig, eih-e, eî |
-| /aɪ/ | î, yh, oih, aih, eaie, oî, uî |
-| /ɔɪ/ | oie, oy |
-| /oʊ/ | ó, -oa, oe, -ou |
-| /aʊ/ | ôe, ôa, ôu, aû, ôn, -aund |
+| Phoneme | Initial | Medial | Final |
+|:---|:---|:---|:---|
+| **/i/** | í, ei- | i, ie, i-e | -y |
+| **/ɪ/** | i | ig | - |
+| **/ɛ/** | e | è, ai, ea | - |
+| **/æ/** | a, à | a, a-e, à | - |
+| **/ɑ/** | o | o, á | - |
+| **/ɔ/** | au, ò, | au, ah, oh, ò | ogue, ongue, ogs, aus, ahe |
+| **/ʊ/** | | û, oû, u)ô | |
+| **/u/** | | ou-e, u-e | |
+| **/ju/** | ú- | u-e ú | ue |
+| **/ə/** | a, e, o, u | | |
+| **/eɪ/** | éi, eî | â, ai-e, ei, ei-e, aig, eig, eih-e | ay, ey |
+| **/aɪ/** | î, aih | oih, eaie, oî, uî | yh |
+| **/ɔɪ/** | | oie | oy |
+| **/oʊ/** | ó | oe | -oa, -ou |
+| **/aʊ/** | | ôe, ôa, ôu, aû, ôn, -aund | |
 
 ### Rhotic & R-Colored Vowels
 | Phoneme | Graphemes / Spelling Patterns |
