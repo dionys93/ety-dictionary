@@ -6,7 +6,25 @@ export ETYM_LIB_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "$ETYM_LIB_DIR/config/env.sh"
 echo "etym-lib has been sourced"
 
-# --- 2. THE FUNCTIONS (Your Toolbelt) ---
+# --- 2 DEPENDENCY CHECK ---
+if ! command -v jq &> /dev/null; then
+    echo "⚠️  Dependency Missing: 'jq' is required for JSON export functions."
+    read -p "Would you like to install it now? (y/n) " -n 1 -r
+    echo
+    if [[ $REPLY =~ ^[Yy]$ ]]; then
+        if [[ "$OSTYPE" == "linux-gnu"* ]]; then
+            sudo apt update && sudo apt install -y jq
+        elif [[ "$OSTYPE" == "darwin"* ]]; then
+            brew install jq
+        else
+            echo "Unsupported OS. Please install 'jq' manually."
+        fi
+    else
+        echo "Proceeding without 'jq'. Some functions (etym-export) will be disabled."
+    fi
+fi
+
+# --- 3. THE FUNCTIONS (Your Toolbelt) ---
 
 etym-cat() {
     local WORD=$1
@@ -201,5 +219,82 @@ etym-chain() {
             printf " ↳ %-30s | %s\n" "$CLEAN_TEXT" "${LANG_FULL:-Unknown}"
         done
         echo "------------------------------------------------------------"
+    done
+}
+
+
+etym-export() {
+    local WORD=$1
+    local FIRST_LETTER=$(echo "${WORD:0:1}" | tr '[:upper:]' '[:lower:]')
+    local FILE_PATH="$DICT_DIR/$FIRST_LETTER/$WORD.txt"
+
+    if [ ! -f "$FILE_PATH" ]; then
+        FILE_PATH=$(grep -rlF "$WORD" "$DICT_DIR/$FIRST_LETTER/" | head -n 1)
+    fi
+
+    if [ -z "$FILE_PATH" ] || [ ! -f "$FILE_PATH" ]; then
+        # Return empty JSON on fail
+        echo "{}" 
+        return 1
+    fi
+
+    awk -v RS="" '{print $0 "\n@END@"}' "$FILE_PATH" | while read -r -d '@END@' STANZA; do
+        [[ -z "${STANZA//[[:space:]]/}" ]] && continue
+        mapfile -t LINES <<< "$STANZA"
+
+        # Validate Match
+        local IS_MATCH=0
+        for line in "${LINES[@]}"; do
+            if [[ "$line" == http* ]]; then break; fi
+            local CLEAN_LINE=$(echo "$line" | sed -E 's/^to //; s/\[[^]]+\]//g; s/\([^)]+\)//g; s/ -[a-z]+//g; s/,.*//g' | xargs)
+            if [[ "$CLEAN_LINE" == "$WORD" ]]; then IS_MATCH=1; break; fi
+        done
+
+        [[ $IS_MATCH -eq 0 ]] && continue
+
+        # Initialize JSON arrays
+        local ETYM_JSON="[]"
+        local SOURCES_JSON="[]"
+
+        # Process Stanza
+        for line in "${LINES[@]}"; do
+            if [[ "$line" == http* ]]; then
+                # Append to Sources Array
+                SOURCES_JSON=$(echo "$SOURCES_JSON" | jq --arg url "$line" '. + [$url]')
+            else
+                # Extract Metadata
+                local LANG_TAG=$(echo "$line" | grep -oP '\[\K[A-Z]+(?=\])')
+                local LANG_FULL=$(get_lang_name "$LANG_TAG")
+                local POS_TAG=$(echo "$line" | grep -oP '\(\K[^)]+(?=\))')
+                local POS_FULL=$(get_pos_full "$POS_TAG")
+                
+                # Clean text of tags
+                local CLEAN_TEXT=$(echo "$line" | sed -E 's/\[[^]]+\]//g; s/\([^)]+\)//g' | xargs)
+                
+                # Build Line Object
+                # If POS exists, split it by commas into a JSON array, otherwise omit it.
+                local LINE_OBJ=$(jq -n \
+                    --arg name "$CLEAN_TEXT" \
+                    --arg origin "${LANG_FULL:-Unknown}" \
+                    --arg pos "$POS_FULL" \
+                    '{
+                        name: $name, 
+                        origin: $origin
+                    } + if ($pos | length > 0) then {"part-of-speech": ($pos | split(", "))} else {} end')
+                    
+                ETYM_JSON=$(echo "$ETYM_JSON" | jq --argjson obj "$LINE_OBJ" '. + [$obj]')
+            fi
+        done
+
+        # Construct Final JSON object and pretty-print it
+        jq -n \
+            --arg name "$WORD" \
+            --argjson etymology "$ETYM_JSON" \
+            --argjson sources "$SOURCES_JSON" \
+            '{name: $name, etymology: $etymology, sources: $sources}'
+            
+        # Break after finding the first valid matching stanza 
+        # (Remove this break if a word has multiple distinct dictionary entries you want to export together)
+        break 
     done
 }
