@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# --- PATH CONFIGURATION ---
+# --- PATH CONFIGURATION env.sh---
 # Automatically detects the project root based on this file's location
 export CONFIG_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 export PROJECT_ROOT="$(cd "$CONFIG_DIR/../.." && pwd)"

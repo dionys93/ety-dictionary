@@ -1,9 +1,10 @@
 #!/bin/bash
 
-# --- 1. BOOTSTRAP CONFIG ---
+# --- 1. BOOTSTRAP CONFIG etym-lib.sh---
 # This ensures the library knows where the project is
 export ETYM_LIB_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "$ETYM_LIB_DIR/config/env.sh"
+echo "etym-lib has been sourced"
 
 # --- 2. THE FUNCTIONS (Your Toolbelt) ---
 
@@ -41,10 +42,18 @@ etym-find() {
 etym-info() {
     local WORD=$1
     local FIRST_LETTER=$(echo "${WORD:0:1}" | tr '[:upper:]' '[:lower:]')
+    
+    # 1. SMART FILE LOOKUP
+    # Check if word.txt exists; if not, check if it lives inside the first_letter directory
     local FILE_PATH="$DICT_DIR/$FIRST_LETTER/$WORD.txt"
-
+    
     if [ ! -f "$FILE_PATH" ]; then
-        echo "Error: Word '$WORD' not found."
+        # Fallback: Search all files in that letter's folder for the word
+        FILE_PATH=$(grep -rlF "$WORD" "$DICT_DIR/$FIRST_LETTER/" | head -n 1)
+    fi
+
+    if [ -z "$FILE_PATH" ] || [ ! -f "$FILE_PATH" ]; then
+        echo "Error: Word '$WORD' not found in /$FIRST_LETTER/."
         return 1
     fi
 
@@ -56,23 +65,37 @@ etym-info() {
     awk -v RS="" '{print $0 "\n@END@"}' "$FILE_PATH" | while read -r -d '@END@' STANZA; do
         [[ -z "${STANZA//[[:space:]]/}" ]] && continue
 
-        # 1. Locate the Reformed Line (the line before the first URL)
-        local REFORMED_LINE=$(echo "$STANZA" | grep -B 1 "http" | head -1)
-        
-        # 2. Locate the Reference Line (the line before the Reformed Line)
-        # We search the stanza for the line that appears just before the Reformed Line
-        local REF_LINE=$(echo "$STANZA" | grep -B 1 "$REFORMED_LINE" | head -1)
+        mapfile -t LINES <<< "$STANZA"
 
-        # 3. Clean the Reference Word (Strip 'to ' and [TAGS])
-        local CLEAN_REF=$(echo "$REF_LINE" | sed -E 's/^to //; s/\[[^]]+\]//g' | xargs)
+        # 2. Find the Reformed Line (line before first http)
+        local REFORMED_IDX=-1
+        for i in "${!LINES[@]}"; do
+            if [[ "${LINES[$i]}" == http* ]]; then
+                REFORMED_IDX=$((i - 1))
+                break
+            fi
+        done
+        [[ $REFORMED_IDX -lt 0 ]] && continue
+        local REFORMED_LINE="${LINES[$REFORMED_IDX]}"
 
-        # 4. STRICT FILTER: Does the reference match our search word?
-        if [[ "$CLEAN_REF" != "$WORD" ]]; then
+        # 3. Find the Reference Line (line before Reformed)
+        local REF_LINE=""
+        if [[ $REFORMED_IDX -gt 0 ]]; then
+            REF_LINE="${LINES[$((REFORMED_IDX - 1))]}"
+        fi
+
+        # 4. Clean both for matching
+        local CLEAN_REFORMED=$(echo "$REFORMED_LINE" | sed -E 's/^to //; s/\[[^]]+\]//g; s/\([^)]+\)//g; s/ -[a-z]+//g' | xargs)
+        local CLEAN_REF=$(echo "$REF_LINE" | sed -E 's/^to //; s/\[[^]]+\]//g; s/\([^)]+\)//g; s/ -[a-z]+//g' | xargs)
+
+        # 5. DUAL-CHECK FILTER
+        if [[ "$CLEAN_REF" != "$WORD" && "$CLEAN_REFORMED" != "$WORD" ]]; then
             continue
         fi
 
-        # 5. Extraction & Formatting
-        local INGLISCE=$(echo "$REFORMED_LINE" | sed -E 's/\([^)]+\)//g; s/ -[a-z].*$//g' | xargs)
+        # 6. Extraction for Display
+        # Added 's/^to //' here so the table looks uniform
+        local INGLISCE=$(echo "$REFORMED_LINE" | sed -E 's/^to //; s/\([^)]+\)//g; s/ -[a-z].*$//g; s/\[[^]]+\]//g' | xargs)
         local LANG_CODE=$(echo "$STANZA" | grep -oP "\[\K[A-Z]+(?=\])" | head -1)
         local POS_CODE=$(echo "$REFORMED_LINE" | grep -oP "\(\K[^)]+(?=\))" | tail -1)
         
@@ -83,11 +106,13 @@ etym-info() {
     done
 }
 
+
 etym-summarize() {
     local INPUT=$1
     local TARGET_DIR=""
+    local TOTAL_ENTRIES=0
 
-    # 1. Resolve Path (Handles 'a' or '/full/path')
+    # 1. Resolve Path
     if [ -z "$INPUT" ]; then
         TARGET_DIR="$DICT_DIR"
     elif [ -d "$DICT_DIR/$INPUT" ]; then
@@ -101,23 +126,28 @@ etym-summarize() {
         return 1
     fi
 
-    echo "Summarizing Parts of Speech in: $TARGET_DIR"
+    echo "Summarizing Entries in: $TARGET_DIR"
     echo "------------------------------------------"
 
     # 2. Extraction Pipeline
-    # Regex: Look for parentheses containing 1-5 lowercase chars/spaces
-    # This captures (v), (f n), (adj) but ignores (s altred...)
-    grep -rhPo "\(([a-z ]{1,5})\)" "$TARGET_DIR" | \
+    # NEW LOGIC: We do NOT split by commas here. 
+    # One (...) block = One entry count.
+    local STATS=$(grep -rhPo "\(([a-z ]{1,5}(, [a-z ]{1,5})*)\)" "$TARGET_DIR" | \
         tr -d '()' | \
-        awk -F',' '{for(i=1;i<=NF;i++) {gsub(/^[ \t]+|[ \t]+$/, "", $i); print $i}}' | \
-        sort | uniq -c | sort -rn | \
-        while read -r count tag; do
-            # 3. Lookup full name from your parts-of-speech.tsv
-            local full_name=$(grep -i "^$tag[[:space:]]" "$CONFIG_DIR/parts-of-speech.tsv" | sed "s/^$tag[[:space:]]*//" | xargs)
-            
-            # 4. Only display if it's a valid recognized tag
-            if [ -n "$full_name" ]; then
-                printf "%7s | %-25s (%s)\n" "$count" "$full_name" "$tag"
-            fi
-        done
+        sort | uniq -c | sort -rn)
+
+    # 3. Display and Calculate Total
+    while read -r count tag; do
+        # We still look up the full name, even for combined tags like "adj, m n"
+        local full_name=$(get_pos_full "$tag")
+        
+        printf "%7s | %-25s (%s)\n" "$count" "$full_name" "$tag"
+        
+        # Increment the total by the count of this specific tag group
+        TOTAL_ENTRIES=$((TOTAL_ENTRIES + count))
+    done <<< "$STATS"
+
+    # 4. Footer
+    echo "------------------------------------------"
+    printf "%7s | %-25s\n" "$TOTAL_ENTRIES" "TOTAL STANZAS"
 }
