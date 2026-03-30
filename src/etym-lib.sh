@@ -224,6 +224,7 @@ etym-chain() {
 
 
 etym-export() {
+    if ! command -v jq &> /dev/null; then echo "Error: 'jq' not installed."; return 1; fi
     local WORD=$1
     local FIRST_LETTER=$(echo "${WORD:0:1}" | tr '[:upper:]' '[:lower:]')
     local FILE_PATH="$DICT_DIR/$FIRST_LETTER/$WORD.txt"
