@@ -110,7 +110,7 @@ etym-info() {
 etym-summarize() {
     local INPUT=$1
     local TARGET_DIR=""
-    local TOTAL_ENTRIES=0
+    local TOTAL_STANZAS=0
 
     # 1. Resolve Path
     if [ -z "$INPUT" ]; then
@@ -126,28 +126,31 @@ etym-summarize() {
         return 1
     fi
 
-    echo "Summarizing Entries in: $TARGET_DIR"
+    echo "Summarizing Parts of Speech in: $TARGET_DIR"
     echo "------------------------------------------"
 
     # 2. Extraction Pipeline
-    # NEW LOGIC: We do NOT split by commas here. 
-    # One (...) block = One entry count.
+    # Step A: Find all (...) blocks
+    # Step B: Take only the FIRST tag if multiple exist (e.g., "adj, m n" -> "adj")
+    # Step C: Count frequencies
     local STATS=$(grep -rhPo "\(([a-z ]{1,5}(, [a-z ]{1,5})*)\)" "$TARGET_DIR" | \
         tr -d '()' | \
+        awk -F',' '{print $1}' | \
+        sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | \
         sort | uniq -c | sort -rn)
 
     # 3. Display and Calculate Total
     while read -r count tag; do
-        # We still look up the full name, even for combined tags like "adj, m n"
-        local full_name=$(get_pos_full "$tag")
+        # Lookup full name for the primary tag
+        local full_name=$(grep -i "^$tag[[:space:]]" "$CONFIG_DIR/parts-of-speech.tsv" | sed "s/^$tag[[:space:]]*//" | xargs)
         
-        printf "%7s | %-25s (%s)\n" "$count" "$full_name" "$tag"
-        
-        # Increment the total by the count of this specific tag group
-        TOTAL_ENTRIES=$((TOTAL_ENTRIES + count))
+        if [ -n "$full_name" ]; then
+            printf "%7s | %-25s (%s)\n" "$count" "$full_name" "$tag"
+            TOTAL_STANZAS=$((TOTAL_STANZAS + count))
+        fi
     done <<< "$STATS"
 
     # 4. Footer
     echo "------------------------------------------"
-    printf "%7s | %-25s\n" "$TOTAL_ENTRIES" "TOTAL STANZAS"
+    printf "%7s | %-25s\n" "$TOTAL_STANZAS" "TOTAL STANZAS"
 }

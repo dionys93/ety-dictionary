@@ -158,7 +158,7 @@ The library produces structured JSON. The format depends on the pipeline:
     { "name": "à bandon, abandoner", "origin": "Old French" },
     { "name": "to abandon", "origin": "Modern English" },
     { 
-      "name": "ta abàndone -s -d -ing", 
+      "name": "to abàndone -s -d -ing", 
       "origin": "Inglish",
       "part-of-speech": ["verb"]
     }
@@ -175,7 +175,7 @@ The library produces structured JSON. The format depends on the pipeline:
 {
   "stanza": {
     "modern": "to abandon",
-    "ing": "ta abàndone -s -d -ing"
+    "ing": "to abàndone -s -d -ing"
   }
 }
 ```
