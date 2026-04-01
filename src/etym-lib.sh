@@ -223,84 +223,6 @@ etym-chain() {
 }
 
 
-# etym-export() {
-#     if ! command -v jq &> /dev/null; then echo "Error: 'jq' not installed."; return 1; fi
-#     local WORD=$1
-#     local FIRST_LETTER=$(echo "${WORD:0:1}" | tr '[:upper:]' '[:lower:]')
-#     local FILE_PATH="$DICT_DIR/$FIRST_LETTER/$WORD.txt"
-
-#     if [ ! -f "$FILE_PATH" ]; then
-#         FILE_PATH=$(grep -rlF "$WORD" "$DICT_DIR/$FIRST_LETTER/" | head -n 1)
-#     fi
-
-#     if [ -z "$FILE_PATH" ] || [ ! -f "$FILE_PATH" ]; then
-#         # Return empty JSON on fail
-#         echo "{}" 
-#         return 1
-#     fi
-
-#     awk -v RS="" '{print $0 "\n@END@"}' "$FILE_PATH" | while read -r -d '@END@' STANZA; do
-#         [[ -z "${STANZA//[[:space:]]/}" ]] && continue
-#         mapfile -t LINES <<< "$STANZA"
-
-#         # Validate Match
-#         local IS_MATCH=0
-#         for line in "${LINES[@]}"; do
-#             if [[ "$line" == http* ]]; then break; fi
-#             local CLEAN_LINE=$(echo "$line" | sed -E 's/^to //; s/\[[^]]+\]//g; s/\([^)]+\)//g; s/ -[a-z]+//g; s/,.*//g' | xargs)
-#             if [[ "$CLEAN_LINE" == "$WORD" ]]; then IS_MATCH=1; break; fi
-#         done
-
-#         [[ $IS_MATCH -eq 0 ]] && continue
-
-#         # Initialize JSON arrays
-#         local ETYM_JSON="[]"
-#         local SOURCES_JSON="[]"
-
-#         # Process Stanza
-#         for line in "${LINES[@]}"; do
-#             if [[ "$line" == http* ]]; then
-#                 # Append to Sources Array
-#                 SOURCES_JSON=$(echo "$SOURCES_JSON" | jq --arg url "$line" '. + [$url]')
-#             else
-#                 # Extract Metadata
-#                 local LANG_TAG=$(echo "$line" | grep -oP '\[\K[A-Z]+(?=\])')
-#                 local LANG_FULL=$(get_lang_name "$LANG_TAG")
-#                 local POS_TAG=$(echo "$line" | grep -oP '\(\K[^)]+(?=\))')
-#                 local POS_FULL=$(get_pos_full "$POS_TAG")
-                
-#                 # Clean text of tags
-#                 local CLEAN_TEXT=$(echo "$line" | sed -E 's/\[[^]]+\]//g; s/\([^)]+\)//g' | xargs)
-                
-#                 # Build Line Object
-#                 # If POS exists, split it by commas into a JSON array, otherwise omit it.
-#                 local LINE_OBJ=$(jq -n \
-#                     --arg name "$CLEAN_TEXT" \
-#                     --arg origin "${LANG_FULL:-Unknown}" \
-#                     --arg pos "$POS_FULL" \
-#                     '{
-#                         name: $name, 
-#                         origin: $origin
-#                     } + if ($pos | length > 0) then {"part-of-speech": ($pos | split(", "))} else {} end')
-                    
-#                 ETYM_JSON=$(echo "$ETYM_JSON" | jq --argjson obj "$LINE_OBJ" '. + [$obj]')
-#             fi
-#         done
-
-#         # Construct Final JSON object and pretty-print it
-#         jq -n \
-#             --arg name "$WORD" \
-#             --argjson etymology "$ETYM_JSON" \
-#             --argjson sources "$SOURCES_JSON" \
-#             '{name: $name, etymology: $etymology, sources: $sources}'
-            
-#         # Break after finding the first valid matching stanza 
-#         # (Remove this break if a word has multiple distinct dictionary entries you want to export together)
-#         break 
-#     done
-# }
-
-
 etym-export() {
     if ! command -v jq &> /dev/null; then echo "Error: 'jq' not installed."; return 1; fi
 
@@ -308,7 +230,6 @@ etym-export() {
     local FIRST_LETTER=$(echo "${WORD:0:1}" | tr '[:upper:]' '[:lower:]')
     local FILE_PATH="$DICT_DIR/$FIRST_LETTER/$WORD.txt"
 
-    # Fallback to fuzzy search if file doesn't exist
     if [ ! -f "$FILE_PATH" ]; then
         FILE_PATH=$(grep -rlF "$WORD" "$DICT_DIR/$FIRST_LETTER/" | head -n 1)
     fi
@@ -318,25 +239,20 @@ etym-export() {
         return 1
     fi
 
-    # This variable will hold our final array of entries
     local FINAL_ARRAY_JSON="[]"
 
-    # Process stanzas
     while read -r -d '@END@' STANZA; do
         [[ -z "${STANZA//[[:space:]]/}" ]] && continue
         mapfile -t LINES <<< "$STANZA"
 
-        # Check if Word matches this specific stanza
         local IS_MATCH=0
         for line in "${LINES[@]}"; do
             if [[ "$line" == http* ]]; then break; fi
             local CLEAN_LINE=$(echo "$line" | sed -E 's/^to //; s/\[[^]]+\]//g; s/\([^)]+\)//g; s/ -[a-z]+//g; s/,.*//g' | xargs)
             if [[ "$CLEAN_LINE" == "$WORD" ]]; then IS_MATCH=1; break; fi
         done
-
         [[ $IS_MATCH -eq 0 ]] && continue
 
-        # Initialize parts of the individual entry
         local ETYM_JSON="[]"
         local SOURCES_JSON="[]"
 
@@ -346,32 +262,57 @@ etym-export() {
             else
                 local LANG_TAG=$(echo "$line" | grep -oP '\[\K[A-Z]+(?=\])')
                 local LANG_FULL=$(get_lang_name "$LANG_TAG")
-                local POS_TAG=$(echo "$line" | grep -oP '\(\K[^)]+(?=\))')
-                local POS_FULL=$(get_pos_full "$POS_TAG")
-                local CLEAN_TEXT=$(echo "$line" | sed -E 's/\[[^]]+\]//g; s/\([^)]+\)//g' | xargs)
+                local ORIGIN_NAME="${LANG_FULL:-$DICT_PROJECT_NAME}"
                 
+                # POS Extraction - only if tag exists
+                local POS_TAG=$(echo "$line" | grep -oP '\(\K[^)]+(?=\))')
+                local POS_FULL=""
+                [[ -n "$POS_TAG" ]] && POS_FULL=$(get_pos_full "$POS_TAG")
+                
+                local RAW_TEXT=$(echo "$line" | sed -E 's/\[[^]]+\]//g; s/\([^)]+\)//g' | xargs)
+                local DISPLAY_NAME=$(echo "$RAW_TEXT" | sed -E 's/ -[a-z-]+//g' | xargs)
+                
+                # --- VERB CONJUGATION LOGIC ---
+                local CONJ_OBJ="null"
+                if [[ "$POS_FULL" == *"verb"* && "$RAW_TEXT" =~ (-s)\ (-ed|-d)\ (-ing) ]]; then
+                    local S_SUFFIX=${BASH_REMATCH[1]#-}
+                    local D_SUFFIX=${BASH_REMATCH[2]#-}
+                    local ING_SUFFIX=${BASH_REMATCH[3]#-}
+                    local VERB_BASE=$(echo "$DISPLAY_NAME" | sed 's/^to //' | xargs)
+                    
+                    local ING_BASE="$VERB_BASE"
+                    [[ "$VERB_BASE" == *e ]] && ING_BASE="${VERB_BASE%e}"
+                    
+                    CONJ_OBJ=$(jq -n \
+                        --arg s "${VERB_BASE}${S_SUFFIX}" \
+                        --arg d "${VERB_BASE}${D_SUFFIX}" \
+                        --arg ing "${ING_BASE}${ING_SUFFIX}" \
+                        '{present_singular: $s, past: $d, present_participle: $ing}')
+                fi
+
+                # --- CONDITIONAL JSON CONSTRUCTION ---
                 local LINE_OBJ=$(jq -n \
-                    --arg name "$CLEAN_TEXT" \
-                    --arg origin "${LANG_FULL:-Unknown}" \
+                    --arg name "$DISPLAY_NAME" \
+                    --arg origin "$ORIGIN_NAME" \
                     --arg pos "$POS_FULL" \
-                    '{name: $name, origin: $origin} + if ($pos | length > 0) then {"part-of-speech": ($pos | split(", "))} else {} end')
+                    --argjson conj "$CONJ_OBJ" \
+                    '{name: $name, origin: $origin} 
+                     | if ($pos != "") then . + {"part-of-speech": ($pos | split(", "))} else . end
+                     | if ($conj != null) then . + {conjugations: $conj} else . end')
                     
                 ETYM_JSON=$(echo "$ETYM_JSON" | jq --argjson obj "$LINE_OBJ" '. + [$obj]')
             fi
         done
 
-        # Build this stanza's object
         local ENTRY_OBJ=$(jq -n \
             --arg name "$WORD" \
             --argjson etymology "$ETYM_JSON" \
             --argjson sources "$SOURCES_JSON" \
             '{name: $name, etymology: $etymology, sources: $sources}')
 
-        # Add this entry to the final array
         FINAL_ARRAY_JSON=$(echo "$FINAL_ARRAY_JSON" | jq --argjson obj "$ENTRY_OBJ" '. + [$obj]')
 
     done < <(awk -v RS="" '{print $0 "\n@END@"}' "$FILE_PATH")
 
-    # Output the final collection
     echo "$FINAL_ARRAY_JSON" | jq '.'
 }

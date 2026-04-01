@@ -9,6 +9,9 @@ export PROJECT_ROOT="$(cd "$CONFIG_DIR/../.." && pwd)"
 export DICT_DIR="$PROJECT_ROOT/data-text/inglisce/dictionary"
 export ANALYSIS_DIR="$PROJECT_ROOT/analysis"
 
+# Language identity for untagged/reformed entries
+export DICT_PROJECT_NAME="Inglisce"
+
 # --- REGEX PATTERNS ---
 export RE_WORD='^([\w\x80-\xff]+)'        # Matches letters and extended Latin
 export RE_LANG_TAG='\[[A-Z]+\]'           # Matches [OE], [ME], etc.
