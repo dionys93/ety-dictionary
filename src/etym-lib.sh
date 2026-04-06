@@ -223,8 +223,162 @@ etym-chain() {
 }
 
 
+# etym-export() {
+#     if ! command -v jq &> /dev/null; then echo "Error: 'jq' not installed."; return 1; fi
+
+#     # Helper function to dynamically build words from suffixes or pass full forms
+#     _resolve_form() {
+#         local form="$1" base="$2" ing_base="$3" is_ing="$4"
+#         if [[ "$form" == -* ]]; then
+#             if [[ "$is_ing" == "1" ]]; then
+#                 echo "${ing_base}${form#-}"
+#             else
+#                 echo "${base}${form#-}"
+#             fi
+#         else
+#             echo "$form" | tr -d '('
+#         fi
+#     }
+
+#     local WORD=$1
+#     local FIRST_LETTER=$(echo "${WORD:0:1}" | tr '[:upper:]' '[:lower:]')
+#     local FILE_PATH="$DICT_DIR/$FIRST_LETTER/$WORD.txt"
+
+#     if [ ! -f "$FILE_PATH" ]; then
+#         FILE_PATH=$(grep -rlF "$WORD" "$DICT_DIR/$FIRST_LETTER/" | head -n 1)
+#     fi
+
+#     if [ -z "$FILE_PATH" ] || [ ! -f "$FILE_PATH" ]; then echo "[]"; return 1; fi
+
+#     local FINAL_ARRAY_JSON="[]"
+
+#     while read -r -d '@END@' STANZA; do
+#         [[ -z "${STANZA//[[:space:]]/}" ]] && continue
+#         mapfile -t LINES <<< "$STANZA"
+
+#         local IS_MATCH=0
+#         for line in "${LINES[@]}"; do
+#             if [[ "$line" == http* ]]; then break; fi
+#             local TEMP_LINE=$(echo "$line" | sed -E 's/\[[^]]+\]//g; s/\([^()]*\)\s*$//g' | xargs)
+#             local CORE_WORD=""
+#             if [[ "$TEMP_LINE" == to\ * ]]; then
+#                 CORE_WORD=$(echo "$TEMP_LINE" | cut -d' ' -f2 | sed 's/,.*//')
+#             else
+#                 CORE_WORD=$(echo "$TEMP_LINE" | cut -d' ' -f1 | sed 's/,.*//')
+#             fi
+#             if [[ "$CORE_WORD" == "$WORD" ]]; then IS_MATCH=1; break; fi
+#         done
+#         [[ $IS_MATCH -eq 0 ]] && continue
+
+#         local ETYM_JSON="[]"
+#         local SOURCES_JSON="[]"
+
+#         for line in "${LINES[@]}"; do
+#             if [[ "$line" == http* ]]; then
+#                 SOURCES_JSON=$(echo "$SOURCES_JSON" | jq --arg url "$line" '. + [$url]')
+#             else
+#                 local LANG_TAG=$(echo "$line" | grep -oP '\[\K[^\]]+(?=\])')
+#                 local POS_TAG=$(echo "$line" | grep -oP '\(\K[^()]+(?=\)\s*$)')
+                
+#                 local LANG_FULL=$(get_lang_name "$LANG_TAG")
+#                 local ORIGIN_NAME="${LANG_FULL:-$DICT_PROJECT_NAME}"
+#                 local POS_FULL=""
+#                 [[ -n "$POS_TAG" ]] && POS_FULL=$(get_pos_full "$POS_TAG")
+
+#                 local CONTENT=$(echo "$line" | sed -E 's/\[[^]]+\]//g; s/\([^()]*\)\s*$//g' | xargs)
+
+#                 local DISPLAY_NAME=""
+#                 local METADATA=""
+#                 local CONJ_OBJ="null"
+#                 local DECL_OBJ="null"
+
+#                 if [[ -n "$POS_TAG" ]]; then
+#                     # Split Name and Metadata, stripping trailing commas from the Name
+#                     if [[ "$CONTENT" == to\ * ]]; then
+#                         DISPLAY_NAME=$(echo "$CONTENT" | cut -d' ' -f1,2 | tr -d ',')
+#                         METADATA=$(echo "$CONTENT" | cut -d' ' -f3-)
+#                     else
+#                         DISPLAY_NAME=$(echo "$CONTENT" | cut -d' ' -f1 | tr -d ',')
+#                         METADATA=$(echo "$CONTENT" | cut -d' ' -f2-)
+#                     fi
+
+#                     read -a PARTS <<< "$METADATA"
+
+#                     # --- VERB CONJUGATIONS ---
+#                     if [[ "$POS_FULL" == *"verb"* && ${#PARTS[@]} -ge 3 ]]; then
+#                         local BASE=$(echo "$DISPLAY_NAME" | sed 's/^to //' | xargs)
+#                         local ING_BASE="$BASE"; [[ "$BASE" == *e ]] && ING_BASE="${BASE%e}"
+                        
+#                         if [[ ${#PARTS[@]} -eq 3 ]]; then
+#                             local S_FORM=$(_resolve_form "${PARTS[0]}" "$BASE" "$ING_BASE" 0)
+#                             local D_FORM=$(_resolve_form "${PARTS[1]}" "$BASE" "$ING_BASE" 0)
+#                             local ING_FORM=$(_resolve_form "${PARTS[2]}" "$BASE" "$ING_BASE" 1)
+                            
+#                             CONJ_OBJ=$(jq -n --arg s "$S_FORM" --arg d "$D_FORM" --arg ing "$ING_FORM" \
+#                                 '{present_singular: $s, past: $d, present_participle: $ing}')
+#                         elif [[ ${#PARTS[@]} -ge 4 ]]; then
+#                             local S_FORM=$(_resolve_form "${PARTS[0]}" "$BASE" "$ING_BASE" 0)
+#                             local D_FORM=$(_resolve_form "${PARTS[1]}" "$BASE" "$ING_BASE" 0)
+#                             local PP_FORM=$(_resolve_form "${PARTS[2]}" "$BASE" "$ING_BASE" 0)
+#                             local ING_FORM=$(_resolve_form "${PARTS[3]}" "$BASE" "$ING_BASE" 1)
+                            
+#                             CONJ_OBJ=$(jq -n --arg s "$S_FORM" --arg d "$D_FORM" --arg pp "$PP_FORM" --arg ing "$ING_FORM" \
+#                                 '{present_singular: $s, past: $d, past_participle: $pp, present_participle: $ing}')
+#                         fi
+#                     fi
+
+#                     # --- NOUN DECLENSIONS (PLURALS) ---
+#                     if [[ "$POS_FULL" == *"noun"* && ${#PARTS[@]} -ge 1 ]]; then
+#                         local PLURAL_RAW=$(echo "${PARTS[0]}" | tr -d ',')
+#                         if [[ -n "$PLURAL_RAW" ]]; then
+#                             # Pass the raw plural through the form resolver
+#                             local PLURAL_FORM=$(_resolve_form "$PLURAL_RAW" "$DISPLAY_NAME" "$DISPLAY_NAME" 0)
+#                             DECL_OBJ=$(jq -n --arg p "$PLURAL_FORM" '{plural: $p}')
+#                         fi
+#                     fi
+#                 else
+#                     DISPLAY_NAME="$CONTENT"
+#                 fi
+
+#                 local LINE_OBJ=$(jq -n \
+#                     --arg name "$DISPLAY_NAME" \
+#                     --arg origin "$ORIGIN_NAME" \
+#                     --arg pos "$POS_FULL" \
+#                     --argjson conj "$CONJ_OBJ" \
+#                     --argjson decl "$DECL_OBJ" \
+#                     '{name: $name, origin: $origin} 
+#                      | if ($pos != "") then . + {"part-of-speech": ($pos | split(", "))} else . end
+#                      | if ($conj != null) then . + {conjugations: $conj} else . end
+#                      | if ($decl != null) then . + {declensions: $decl} else . end')
+                    
+#                 ETYM_JSON=$(echo "$ETYM_JSON" | jq --argjson obj "$LINE_OBJ" '. + [$obj]')
+#             fi
+#         done
+
+#         local ENTRY_OBJ=$(jq -n --arg name "$WORD" --argjson ety "$ETYM_JSON" --argjson src "$SOURCES_JSON" \
+#             '{name: $name, etymology: $ety, sources: $src}')
+#         FINAL_ARRAY_JSON=$(echo "$FINAL_ARRAY_JSON" | jq --argjson obj "$ENTRY_OBJ" '. + [$obj]')
+#     done < <(awk -v RS="" '{print $0 "\n@END@"}' "$FILE_PATH")
+
+#     echo "$FINAL_ARRAY_JSON" | jq '.'
+# }
+
 etym-export() {
     if ! command -v jq &> /dev/null; then echo "Error: 'jq' not installed."; return 1; fi
+
+    # Helper function to dynamically build words from suffixes or pass full forms
+    _resolve_form() {
+        local form="$1" base="$2" ing_base="$3" is_ing="$4"
+        if [[ "$form" == -* ]]; then
+            if [[ "$is_ing" == "1" ]]; then
+                echo "${ing_base}${form#-}"
+            else
+                echo "${base}${form#-}"
+            fi
+        else
+            echo "$form" | tr -d '('
+        fi
+    }
 
     local WORD=$1
     local FIRST_LETTER=$(echo "${WORD:0:1}" | tr '[:upper:]' '[:lower:]')
@@ -242,7 +396,6 @@ etym-export() {
         [[ -z "${STANZA//[[:space:]]/}" ]] && continue
         mapfile -t LINES <<< "$STANZA"
 
-        # Smarter IS_MATCH check with corrected regex
         local IS_MATCH=0
         for line in "${LINES[@]}"; do
             if [[ "$line" == http* ]]; then break; fi
@@ -264,7 +417,6 @@ etym-export() {
             if [[ "$line" == http* ]]; then
                 SOURCES_JSON=$(echo "$SOURCES_JSON" | jq --arg url "$line" '. + [$url]')
             else
-                # 1. Extract Tags (Strictly matching inner parentheses at the end of line)
                 local LANG_TAG=$(echo "$line" | grep -oP '\[\K[^\]]+(?=\])')
                 local POS_TAG=$(echo "$line" | grep -oP '\(\K[^()]+(?=\)\s*$)')
                 
@@ -273,38 +425,66 @@ etym-export() {
                 local POS_FULL=""
                 [[ -n "$POS_TAG" ]] && POS_FULL=$(get_pos_full "$POS_TAG")
 
-                # 2. Get Clean Content (Strictly removing inner parentheses at the end of line)
                 local CONTENT=$(echo "$line" | sed -E 's/\[[^]]+\]//g; s/\([^()]*\)\s*$//g' | xargs)
 
                 local DISPLAY_NAME=""
                 local METADATA=""
                 local CONJ_OBJ="null"
+                local DECL_OBJ="null"
 
                 if [[ -n "$POS_TAG" ]]; then
+                    # Split Name and Metadata, stripping trailing commas from the Name
                     if [[ "$CONTENT" == to\ * ]]; then
-                        DISPLAY_NAME=$(echo "$CONTENT" | cut -d' ' -f1,2)
+                        DISPLAY_NAME=$(echo "$CONTENT" | cut -d' ' -f1,2 | tr -d ',')
                         METADATA=$(echo "$CONTENT" | cut -d' ' -f3-)
                     else
-                        DISPLAY_NAME=$(echo "$CONTENT" | cut -d' ' -f1)
+                        DISPLAY_NAME=$(echo "$CONTENT" | cut -d' ' -f1 | tr -d ',')
                         METADATA=$(echo "$CONTENT" | cut -d' ' -f2-)
                     fi
 
-                    if [[ "$POS_FULL" == *"verb"* ]]; then
-                        read -a PARTS <<< "$METADATA"
+                    read -a PARTS <<< "$METADATA"
+
+                    # --- VERB CONJUGATIONS ---
+                    if [[ "$POS_FULL" == *"verb"* && ${#PARTS[@]} -ge 3 ]]; then
+                        local BASE=$(echo "$DISPLAY_NAME" | sed 's/^to //' | xargs)
+                        local ING_BASE="$BASE"; [[ "$BASE" == *e ]] && ING_BASE="${BASE%e}"
                         
-                        if [[ "${PARTS[0]}" == -* && ${#PARTS[@]} -ge 3 ]]; then
-                            local S_SUF=${PARTS[0]#-}
-                            local D_SUF=${PARTS[1]#-}
-                            local ING_SUF=${PARTS[2]#-}
-                            local BASE=$(echo "$DISPLAY_NAME" | sed 's/^to //' | xargs)
-                            local ING_BASE="$BASE"; [[ "$BASE" == *e ]] && ING_BASE="${BASE%e}"
-                            CONJ_OBJ=$(jq -n --arg s "${BASE}${S_SUF}" --arg d "${BASE}${D_SUF}" --arg ing "${ING_BASE}${ING_SUF}" \
+                        if [[ ${#PARTS[@]} -eq 3 ]]; then
+                            local S_FORM=$(_resolve_form "${PARTS[0]}" "$BASE" "$ING_BASE" 0)
+                            local D_FORM=$(_resolve_form "${PARTS[1]}" "$BASE" "$ING_BASE" 0)
+                            local ING_FORM=$(_resolve_form "${PARTS[2]}" "$BASE" "$ING_BASE" 1)
+                            
+                            CONJ_OBJ=$(jq -n --arg s "$S_FORM" --arg d "$D_FORM" --arg ing "$ING_FORM" \
                                 '{present_singular: $s, past: $d, present_participle: $ing}')
                         elif [[ ${#PARTS[@]} -ge 4 ]]; then
-                            # Fix the shorthand (spiec(s -> spiecs)
-                            local S_FORM=$(echo "${PARTS[0]}" | tr -d '(')
-                            CONJ_OBJ=$(jq -n --arg s "$S_FORM" --arg d "${PARTS[1]}" --arg pp "${PARTS[2]}" --arg ing "${PARTS[3]}" \
+                            local S_FORM=$(_resolve_form "${PARTS[0]}" "$BASE" "$ING_BASE" 0)
+                            local D_FORM=$(_resolve_form "${PARTS[1]}" "$BASE" "$ING_BASE" 0)
+                            local PP_FORM=$(_resolve_form "${PARTS[2]}" "$BASE" "$ING_BASE" 0)
+                            local ING_FORM=$(_resolve_form "${PARTS[3]}" "$BASE" "$ING_BASE" 1)
+                            
+                            CONJ_OBJ=$(jq -n --arg s "$S_FORM" --arg d "$D_FORM" --arg pp "$PP_FORM" --arg ing "$ING_FORM" \
                                 '{present_singular: $s, past: $d, past_participle: $pp, present_participle: $ing}')
+                        fi
+                    fi
+
+                    # --- NOUN DECLENSIONS (PLURALS) ---
+                    if [[ "$POS_FULL" == *"noun"* && ${#PARTS[@]} -ge 1 ]]; then
+                        local PLURAL_RAW=$(echo "${PARTS[0]}" | tr -d ',')
+                        if [[ -n "$PLURAL_RAW" ]]; then
+                            local PLURAL_BASE="$DISPLAY_NAME"
+                            
+                            # Smart-strip trailing vowels if suffix starts with a vowel
+                            if [[ "$PLURAL_RAW" == -* ]]; then
+                                local SUFFIX="${PLURAL_RAW#-}"
+                                if [[ "$DISPLAY_NAME" == *ie && "$SUFFIX" == i* ]]; then
+                                    PLURAL_BASE="${DISPLAY_NAME%ie}"
+                                elif [[ "$DISPLAY_NAME" == *e && "$SUFFIX" == [aeiou]* ]]; then
+                                    PLURAL_BASE="${DISPLAY_NAME%e}"
+                                fi
+                            fi
+                            
+                            local PLURAL_FORM=$(_resolve_form "$PLURAL_RAW" "$PLURAL_BASE" "$PLURAL_BASE" 0)
+                            DECL_OBJ=$(jq -n --arg p "$PLURAL_FORM" '{plural: $p}')
                         fi
                     fi
                 else
@@ -316,9 +496,11 @@ etym-export() {
                     --arg origin "$ORIGIN_NAME" \
                     --arg pos "$POS_FULL" \
                     --argjson conj "$CONJ_OBJ" \
+                    --argjson decl "$DECL_OBJ" \
                     '{name: $name, origin: $origin} 
                      | if ($pos != "") then . + {"part-of-speech": ($pos | split(", "))} else . end
-                     | if ($conj != null) then . + {conjugations: $conj} else . end')
+                     | if ($conj != null) then . + {conjugations: $conj} else . end
+                     | if ($decl != null) then . + {declensions: $decl} else . end')
                     
                 ETYM_JSON=$(echo "$ETYM_JSON" | jq --argjson obj "$LINE_OBJ" '. + [$obj]')
             fi
