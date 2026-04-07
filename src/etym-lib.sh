@@ -76,7 +76,7 @@ etym-info() {
     fi
 
     echo "--- Primary Definitions for: $WORD ---"
-    printf "%-20s | %-15s | %s\n" "INGLISCE" "POS" "ORIGIN"
+    printf "%-20s | %-15s | %s\n" "INGLISCE" "PART OF SPEECH" "ORIGIN"
     echo "------------------------------------------------------------"
 
     # Split by blank lines (stanzas)
