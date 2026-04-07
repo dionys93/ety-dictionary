@@ -291,6 +291,7 @@ etym-export() {
                 local METADATA=""
                 local CONJ_OBJ="null"
                 local DECL_OBJ="null"
+                local DERIV_OBJ="null"
 
                 if [[ -n "$POS_TAG" ]]; then
                     # Split Name and Metadata, stripping trailing commas from the Name
@@ -309,24 +310,45 @@ etym-export() {
                         local BASE=$(echo "$DISPLAY_NAME" | sed 's/^to //' | xargs)
                         local ING_BASE="$BASE"; [[ "$BASE" == *e ]] && ING_BASE="${BASE%e}"
                         
-                        if [[ ${#PARTS[@]} -eq 3 ]]; then
-                            local S_FORM=$(_resolve_form "${PARTS[0]}" "$BASE" "$ING_BASE" 0)
-                            local D_FORM=$(_resolve_form "${PARTS[1]}" "$BASE" "$ING_BASE" 0)
-                            local ING_FORM=$(_resolve_form "${PARTS[2]}" "$BASE" "$ING_BASE" 1)
-                            
-                            CONJ_OBJ=$(jq -n --arg s "$S_FORM" --arg d "$D_FORM" --arg ing "$ING_FORM" \
-                                '{present_singular: $s, past: $d, present_participle: $ing}')
-                        elif [[ ${#PARTS[@]} -ge 4 ]]; then
-                            local S_FORM=$(_resolve_form "${PARTS[0]}" "$BASE" "$ING_BASE" 0)
-                            local D_FORM=$(_resolve_form "${PARTS[1]}" "$BASE" "$ING_BASE" 0)
-                            local PP_FORM=$(_resolve_form "${PARTS[2]}" "$BASE" "$ING_BASE" 0)
-                            local ING_FORM=$(_resolve_form "${PARTS[3]}" "$BASE" "$ING_BASE" 1)
-                            
-                            CONJ_OBJ=$(jq -n --arg s "$S_FORM" --arg d "$D_FORM" --arg pp "$PP_FORM" --arg ing "$ING_FORM" \
-                                '{present_singular: $s, past: $d, past_participle: $pp, present_participle: $ing}')
+                        local CLEAN_PARTS=()
+                        
+                        # 1. Resolve Present Tense (Index 0)
+                        if [[ "${PARTS[0]}" == *'('* ]]; then
+                            # Safely extract using cut to avoid Bash globbing quirks
+                            local P1=$(echo "${PARTS[0]}" | cut -d'(' -f1)
+                            local P3_SUF=$(echo "${PARTS[0]}" | cut -d'(' -f2 | tr -d ')')
+                            CLEAN_PARTS+=("$P1" "${P1}${P3_SUF}")
+                        else
+                            # Standard -s suffix logic
+                            CLEAN_PARTS+=("$BASE")
+                            CLEAN_PARTS+=($(_resolve_form "${PARTS[0]}" "$BASE" "$ING_BASE" 0))
+                        fi
+
+                        # 2. Resolve Remaining Parts (Past, Participle, Gerund)
+                        for (( i=1; i<${#PARTS[@]}; i++ )); do
+                            local IS_GERUND=0
+                            # If it's the very last part of the metadata, treat as gerund (-ing)
+                            [[ $i -eq $((${#PARTS[@]} - 1)) ]] && IS_GERUND=1
+                            CLEAN_PARTS+=($(_resolve_form "${PARTS[$i]}" "$BASE" "$ING_BASE" "$IS_GERUND"))
+                        done
+
+                        # 3. Map CLEAN_PARTS to JSON based on count
+                        local P1="${CLEAN_PARTS[0]}"
+                        local P3="${CLEAN_PARTS[1]}"
+                        local DST="${CLEAN_PARTS[2]}"
+                        
+                        if [[ ${#CLEAN_PARTS[@]} -eq 5 ]]; then
+                            local PPT="${CLEAN_PARTS[3]}"
+                            local GER="${CLEAN_PARTS[4]}"
+                            CONJ_OBJ=$(jq -n --arg p1 "$P1" --arg p3 "$P3" --arg d "$DST" --arg pp "$PPT" --arg ing "$GER" \
+                                '{present_first_second_singular: $p1, present_third_singular: $p3, past: $d, past_participle: $pp, present_participle: $ing}')
+                        else
+                            local GER="${CLEAN_PARTS[3]}"
+                            CONJ_OBJ=$(jq -n --arg p1 "$P1" --arg p3 "$P3" --arg d "$DST" --arg ing "$GER" \
+                                '{present_first_second_singular: $p1, present_third_singular: $p3, past: $d, present_participle: $ing}')
                         fi
                     fi
-
+                    
                     # --- NOUN DECLENSIONS (PLURALS) ---
                     if [[ "$POS_FULL" == *"noun"* && ${#PARTS[@]} -ge 1 ]]; then
                         local PLURAL_RAW=$(echo "${PARTS[0]}" | tr -d ',')
@@ -347,6 +369,43 @@ etym-export() {
                             DECL_OBJ=$(jq -n --arg p "$PLURAL_FORM" '{plural: $p}')
                         fi
                     fi
+
+                    # --- ADJECTIVE DERIVATIONS ---
+                    if [[ "$POS_FULL" == *"adjective"* && ${#PARTS[@]} -ge 1 ]]; then
+                        local ADV_FORM=""
+                        local NOUN_FORM=""
+                        
+                        for part in "${PARTS[@]}"; do
+                            local RAW_SUF=$(echo "$part" | tr -d ',')
+                            [[ -z "$RAW_SUF" ]] && continue
+                            
+                            local ADJ_BASE="$DISPLAY_NAME"
+                            
+                            # Smart-strip for adjective to adverb (e.g. horrible + -y -> horribly)
+                            if [[ "$RAW_SUF" == -* ]]; then
+                                local SUFFIX="${RAW_SUF#-}"
+                                if [[ "$DISPLAY_NAME" == *le && "$SUFFIX" == "y" ]]; then
+                                    ADJ_BASE="${DISPLAY_NAME%e}"
+                                fi
+                            fi
+                            
+                            local DERIVED_FORM=$(_resolve_form "$RAW_SUF" "$ADJ_BASE" "$ADJ_BASE" 0)
+                            
+                            # Sort into adverb or noun based on the suffix
+                            if [[ "$RAW_SUF" == "-ly" || "$RAW_SUF" == "-y" || "$DERIVED_FORM" == *ly || "$DERIVED_FORM" == *y ]]; then
+                                ADV_FORM="$DERIVED_FORM"
+                            elif [[ "$RAW_SUF" == "-ness" || "$DERIVED_FORM" == *ness ]]; then
+                                NOUN_FORM="$DERIVED_FORM"
+                            fi
+                        done
+                        
+                        if [[ -n "$ADV_FORM" || -n "$NOUN_FORM" ]]; then
+                            DERIV_OBJ="{}"
+                            [[ -n "$ADV_FORM" ]] && DERIV_OBJ=$(echo "$DERIV_OBJ" | jq --arg a "$ADV_FORM" '. + {adverb: $a}')
+                            [[ -n "$NOUN_FORM" ]] && DERIV_OBJ=$(echo "$DERIV_OBJ" | jq --arg n "$NOUN_FORM" '. + {noun: $n}')
+                            [[ "$DERIV_OBJ" == "{}" ]] && DERIV_OBJ="null"
+                        fi
+                    fi
                 else
                     DISPLAY_NAME="$CONTENT"
                 fi
@@ -357,10 +416,12 @@ etym-export() {
                     --arg pos "$POS_FULL" \
                     --argjson conj "$CONJ_OBJ" \
                     --argjson decl "$DECL_OBJ" \
+                    --argjson deriv "$DERIV_OBJ" \
                     '{name: $name, origin: $origin} 
                      | if ($pos != "") then . + {"part-of-speech": ($pos | split(", "))} else . end
                      | if ($conj != null) then . + {conjugations: $conj} else . end
-                     | if ($decl != null) then . + {declensions: $decl} else . end')
+                     | if ($decl != null) then . + {declensions: $decl} else . end
+                     | if ($deriv != null) then . + {derivations: $deriv} else . end')
                     
                 ETYM_JSON=$(echo "$ETYM_JSON" | jq --argjson obj "$LINE_OBJ" '. + [$obj]')
             fi
