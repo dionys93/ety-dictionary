@@ -126,17 +126,32 @@ etym-info() {
 
 
 etym-summarize() {
-    local INPUT=$1
-    local TARGET_DIR=""
-    local TOTAL_STANZAS=0
+    local FORMAT="text"
+    local OUT_FILE=""
+    local TARGET_INPUT=""
 
-    # 1. Resolve Path
-    if [ -z "$INPUT" ]; then
+    # 1. Parse Arguments (--json, -o/--out)
+    while [[ "$#" -gt 0 ]]; do
+        case $1 in
+            --json) FORMAT="json"; shift ;;
+            -o|--out) OUT_FILE="$2"; shift 2 ;;
+            *) 
+                if [[ -z "$TARGET_INPUT" ]]; then
+                    TARGET_INPUT="$1"
+                fi
+                shift 
+                ;;
+        esac
+    done
+
+    # 2. Resolve Path
+    local TARGET_DIR=""
+    if [ -z "$TARGET_INPUT" ]; then
         TARGET_DIR="$DICT_DIR"
-    elif [ -d "$DICT_DIR/$INPUT" ]; then
-        TARGET_DIR="$DICT_DIR/$INPUT"
+    elif [ -d "$DICT_DIR/$TARGET_INPUT" ]; then
+        TARGET_DIR="$DICT_DIR/$TARGET_INPUT"
     else
-        TARGET_DIR="$INPUT"
+        TARGET_DIR="$TARGET_INPUT"
     fi
 
     if [ ! -d "$TARGET_DIR" ]; then
@@ -144,33 +159,88 @@ etym-summarize() {
         return 1
     fi
 
-    echo "Summarizing Parts of Speech in: $TARGET_DIR"
-    echo "------------------------------------------"
-
-    # 2. Extraction Pipeline
-    # Step A: Find all (...) blocks
-    # Step B: Take only the FIRST tag if multiple exist (e.g., "adj, m n" -> "adj")
-    # Step C: Count frequencies
-    local STATS=$(grep -rhPo "\(([a-z ]{1,5}(, [a-z ]{1,5})*)\)" "$TARGET_DIR" | \
+    # 3. Data Extraction Pipeline
+    local POS_STATS=$(grep -rhPo "\(([a-z ]{1,5}(, [a-z ]{1,5})*)\)" "$TARGET_DIR" | \
         tr -d '()' | \
         awk -F',' '{print $1}' | \
         sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | \
         sort | uniq -c | sort -rn)
 
-    # 3. Display and Calculate Total
-    while read -r count tag; do
-        # Lookup full name for the primary tag
-        local full_name=$(grep -i "^$tag[[:space:]]" "$CONFIG_DIR/parts-of-speech.tsv" | sed "s/^$tag[[:space:]]*//" | xargs)
-        
-        if [ -n "$full_name" ]; then
-            printf "%7s | %-25s (%s)\n" "$count" "$full_name" "$tag"
-            TOTAL_STANZAS=$((TOTAL_STANZAS + count))
-        fi
-    done <<< "$STATS"
+    local LANG_STATS=$(grep -rhPo "\[[A-Z]+\]" "$TARGET_DIR" | \
+        tr -d '[]' | \
+        sort | uniq -c | sort -rn)
 
-    # 4. Footer
-    echo "------------------------------------------"
-    printf "%7s | %-25s\n" "$TOTAL_STANZAS" "TOTAL STANZAS"
+    # 4. Format Output
+    local OUTPUT=""
+
+    if [[ "$FORMAT" == "json" ]]; then
+        local POS_JSON=$(echo "$POS_STATS" | while read -r count tag; do
+            [[ -z "$count" ]] && continue
+            local full_name=$(grep -i "^$tag[[:space:]]" "$CONFIG_DIR/parts-of-speech.tsv" 2>/dev/null | sed "s/^$tag[[:space:]]*//" | xargs)
+            printf '{"tag": "%s", "name": "%s", "count": %d}\n' "$tag" "${full_name:-Unknown}" "$count"
+        done | jq -s '.')
+
+        local LANG_JSON=$(echo "$LANG_STATS" | while read -r count tag; do
+            [[ -z "$count" ]] && continue
+            local full_name=$(get_lang_name "$tag")
+            printf '{"tag": "%s", "name": "%s", "count": %d}\n' "$tag" "${full_name:-Unknown}" "$count"
+        done | jq -s '.')
+
+        OUTPUT=$(jq -n \
+            --arg dir "$TARGET_DIR" \
+            --argjson pos "${POS_JSON:-[]}" \
+            --argjson lang "${LANG_JSON:-[]}" \
+            '{directory: $dir, parts_of_speech: $pos, languages: $lang}')
+    else
+        OUTPUT+="Summarizing Data in: $TARGET_DIR\n"
+        OUTPUT+="==========================================\n"
+        
+        # --- Print Parts of Speech ---
+        OUTPUT+="PARTS OF SPEECH\n"
+        OUTPUT+="------------------------------------------\n"
+        local TOTAL_POS=0
+        while read -r count tag; do
+            [[ -z "$count" ]] && continue
+            local full_name=$(grep -i "^$tag[[:space:]]" "$CONFIG_DIR/parts-of-speech.tsv" 2>/dev/null | sed "s/^$tag[[:space:]]*//" | xargs)
+            
+            # FIX: Format the string first, then manually append the newline literal
+            local line=$(printf "%7s | %-25s (%s)" "$count" "${full_name:-Unknown}" "$tag")
+            OUTPUT+="$line\n"
+            
+            TOTAL_POS=$((TOTAL_POS + count))
+        done <<< "$POS_STATS"
+        OUTPUT+="------------------------------------------\n"
+        
+        local footer_pos=$(printf "%7s | %-25s" "$TOTAL_POS" "TOTAL POS TAGS")
+        OUTPUT+="$footer_pos\n\n"
+
+        # --- Print Languages ---
+        OUTPUT+="LANGUAGE ORIGINS\n"
+        OUTPUT+="------------------------------------------\n"
+        local TOTAL_LANG=0
+        while read -r count tag; do
+            [[ -z "$count" ]] && continue
+            local full_name=$(get_lang_name "$tag")
+            
+            # FIX: Format the string first, then manually append the newline literal
+            local line=$(printf "%7s | %-25s [%s]" "$count" "${full_name:-Unknown}" "$tag")
+            OUTPUT+="$line\n"
+            
+            TOTAL_LANG=$((TOTAL_LANG + count))
+        done <<< "$LANG_STATS"
+        OUTPUT+="------------------------------------------\n"
+        
+        local footer_lang=$(printf "%7s | %-25s" "$TOTAL_LANG" "TOTAL LANG TAGS")
+        OUTPUT+="$footer_lang\n"
+    fi
+
+    # 5. Output Routing
+    if [[ -n "$OUT_FILE" ]]; then
+        echo -e "$OUTPUT" > "$OUT_FILE"
+        echo "✅ Summary successfully written to $OUT_FILE"
+    else
+        echo -e "$OUTPUT"
+    fi
 }
 
 
