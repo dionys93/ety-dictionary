@@ -512,3 +512,212 @@ etym-export() {
 
     echo "$FINAL_ARRAY_JSON" | jq '.'
 }
+
+
+etym-create-histories() {
+    local DRY_RUN=0
+    local VERBOSE=0
+    local DIRS=""
+    
+    # Assuming these match your environment variables
+    local SOURCE_DIR="$DICT_DIR"  
+    local OUTPUT_DIR="$HISTORIES_DIR"
+
+    # 1. Parse Arguments
+    while [[ "$#" -gt 0 ]]; do
+        case $1 in
+            -d|--dry-run) DRY_RUN=1; shift ;;
+            -v|--verbose) VERBOSE=1; shift ;;
+            --dirs) 
+                DIRS="$2"
+                shift 2
+                ;;
+            -h|--help)
+                echo "Usage: etym-create-histories [options]"
+                echo "Extract POS-tagged stanzas to create individual history files."
+                echo "Options:"
+                echo "  -d, --dry-run      Preview what would be extracted"
+                echo "  -v, --verbose      Show detailed processing information"
+                echo "  --dirs <a,b,c>     Only process specific directories"
+                return 0
+                ;;
+            *) 
+                echo "Unknown parameter passed: $1"
+                return 1
+                ;;
+        esac
+    done
+
+    # Convert comma-separated dirs into an array, or default to all a-z dirs
+    local TARGET_DIRS=()
+    if [[ -n "$DIRS" ]]; then
+        IFS=',' read -ra TARGET_DIRS <<< "$DIRS"
+    else
+        for d in "$SOURCE_DIR"/?/; do
+            [[ -d "$d" ]] && TARGET_DIRS+=("$(basename "$d")")
+        done
+    fi
+
+    echo "Creating histories from $SOURCE_DIR to $OUTPUT_DIR"
+    [[ $DRY_RUN -eq 1 ]] && echo "⚠️ DRY RUN MODE: No files will be written."
+
+    # Define the core text-processing engine
+    local AWK_SCRIPT='
+    BEGIN {
+        RS = "";       # Paragraph mode (stanzas separated by blank lines)
+        FS = "\n";     # Field separator is a newline
+        
+        # POS mapping dictionary
+        pos_map["(m n)"]="n"; pos_map["(f n)"]="n"; pos_map["(n)"]="n";
+        pos_map["(v)"]="v"; pos_map["(intr v)"]="v"; pos_map["(tr v)"]="v";
+        pos_map["(conj)"]="conj"; pos_map["(adj)"]="adj"; pos_map["(prep)"]="prep";
+        pos_map["(pron)"]="pron"; pos_map["(adv)"]="adv"; pos_map["(suff)"]="suff";
+        pos_map["(pref)"]="pref"; pos_map["(interj)"]="interj"; pos_map["(obs)"]="obs";
+    }
+
+    # Helper function to extract modern word based on your TS logic
+    function extract_word(line,    stripped, words) {
+        stripped = line
+        gsub(/\[[A-Z]+\]/, "", stripped)       # Remove tags like [ME], [MI]
+        gsub(/^[ \t]+|[ \t]+$/, "", stripped)  # Trim whitespace
+        sub(/^[tT][oO][ \t]+/, "", stripped)   # Strip "to " for infinitives
+        split(stripped, words, "[ \t]+")       # Take first word
+        return words[1]
+    }
+
+    # Process each stanza
+    {
+        pos_tag = ""; pos_val = ""; pos_line_idx = 0; 
+        inline_pos = 0; modern_word = "";
+        
+        # Step 1: Find POS indicator
+        for(i=1; i<=NF; i++) {
+            for (tag in pos_map) {
+                if (index($i, tag) > 0) {
+                    pos_tag = tag;
+                    pos_val = pos_map[tag];
+                    pos_line_idx = i;
+                    break;
+                }
+            }
+            if (pos_tag != "") break;
+        }
+        
+        # Skip if no POS found
+        if (pos_tag == "") next; 
+
+        # Step 2: Find Modern Word (Priority matching)
+        
+        # Priority 0: Inline POS (e.g. word [ME] (v) ...)
+        if (match($pos_line_idx, /\[[A-Z]+\]/)) {
+            inline_pos = 1;
+            modern_word = extract_word($pos_line_idx);
+        }
+        
+        # Priority 1: [ME]
+        if (modern_word == "") {
+            for(i=1; i<=NF; i++) {
+                if (index($i, "[ME]") > 0) { modern_word = extract_word($i); break; }
+            }
+        }
+        
+        # Priority 2: [MI]
+        if (modern_word == "") {
+            for(i=1; i<=NF; i++) {
+                if (index($i, "[MI]") > 0) { modern_word = extract_word($i); break; }
+            }
+        }
+        
+        # Priority 3: Fallback to line before POS
+        if (modern_word == "" && pos_line_idx > 1) {
+            modern_word = extract_word($(pos_line_idx - 1));
+        }
+
+        # Handle tracking output to Bash
+        if (modern_word == "") {
+            print "SKIP" > "/dev/stderr"
+            next;
+        }
+
+        # Step 3: Write Output
+        out_file = target_dir "/" modern_word "_" pos_val ".txt"
+        print "EXTRACT|" out_file > "/dev/stderr"
+        
+        if (dry_run == 0) {
+            for (i=1; i<=NF; i++) {
+                if (i == pos_line_idx) {
+                    if (inline_pos) {
+                        # Remove POS tag but keep the line
+                        cleaned = $i;
+                        sub(pos_tag, "", cleaned);
+                        # Clean up double spaces left behind
+                        gsub(/[ \t]+/, " ", cleaned);
+                        print cleaned > out_file;
+                    }
+                    # If not inline, we skip printing this line entirely
+                } else {
+                    print $i > out_file;
+                }
+            }
+            # Crucial: Close file to prevent "too many open files" error
+            close(out_file)
+        }
+    }
+    '
+
+    # Global Stats
+    local TOTAL_EXTRACTED=0
+    local TOTAL_SKIPPED=0
+
+    # 2. Main Processing Loop
+    for dir in "${TARGET_DIRS[@]}"; do
+        dir=$(echo "$dir" | xargs)
+        local current_src="$SOURCE_DIR/$dir"
+        local target_dir="$OUTPUT_DIR/$dir"
+        
+        if [[ ! -d "$current_src" ]]; then
+            [[ $VERBOSE -eq 1 ]] && echo "Skipping $dir/ (Not a directory)"
+            continue
+        fi
+
+        [[ $DRY_RUN -eq 0 ]] && mkdir -p "$target_dir"
+        [[ $VERBOSE -eq 1 ]] && echo -e "\nProcessing directory: $dir/"
+
+        # Track directory specific stats
+        local dir_extracted=0
+
+        while read -r file; do
+            # Run the awk script. It outputs tracking data to stderr, which we capture.
+            # Using stderr allows awk to write to actual files freely without mixing streams.
+            local awk_out
+            awk_out=$(awk -v target_dir="$target_dir" -v dry_run="$DRY_RUN" "$AWK_SCRIPT" "$file" 2>&1 >/dev/null)
+            
+            # Parse awk tracking output
+            while IFS= read -r line; do
+                if [[ "$line" == "SKIP" ]]; then
+                    ((TOTAL_SKIPPED++))
+                elif [[ "$line" == EXTRACT\|* ]]; then
+                    ((dir_extracted++))
+                    ((TOTAL_EXTRACTED++))
+                    if [[ $VERBOSE -eq 1 ]]; then
+                        local extracted_path="${line#EXTRACT|}"
+                        echo "  -> Created: $(basename "$extracted_path")"
+                    fi
+                fi
+            done <<< "$awk_out"
+
+        done < <(find "$current_src" -name "*.txt")
+
+        if [[ $dir_extracted -gt 0 && $VERBOSE -eq 0 ]]; then
+            echo "Extracted: $dir/ ($dir_extracted files)"
+        fi
+    done
+
+    # 3. Final Summary
+    echo -e "\n------------------------------------------"
+    echo "Processing complete!"
+    echo "Extracted $TOTAL_EXTRACTED stanzas with part-of-speech indicators."
+    if [[ $TOTAL_SKIPPED -gt 0 ]]; then
+        echo "Note: Skipped $TOTAL_SKIPPED stanzas that had POS but no extractable word."
+    fi
+}

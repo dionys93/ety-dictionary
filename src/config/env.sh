@@ -7,6 +7,7 @@ export PROJECT_ROOT="$(cd "$CONFIG_DIR/../.." && pwd)"
 
 # Data Directories
 export DICT_DIR="$PROJECT_ROOT/data-text/inglisce/dictionary"
+export HISTORIES_DIR="$PROJECT_ROOT/data-text/histories"
 export ANALYSIS_DIR="$PROJECT_ROOT/analysis"
 
 # Language identity for untagged/reformed entries
