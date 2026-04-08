@@ -173,6 +173,7 @@ etym-summarize() {
     printf "%7s | %-25s\n" "$TOTAL_STANZAS" "TOTAL STANZAS"
 }
 
+
 etym-chain() {
     local WORD=$1
     local FIRST_LETTER=$(echo "${WORD:0:1}" | tr '[:upper:]' '[:lower:]')

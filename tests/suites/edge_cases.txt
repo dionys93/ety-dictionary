@@ -1,0 +1,12 @@
+# --- Multi-word Reference Lines ---
+# Tests: "to animate" vs "animate"
+to animate
+
+# --- Words with multiple Parts of Speech ---
+# Tests: If the parser captures both 'v' and 'n' stanzas
+record
+object
+
+# --- Malformed / Missing Data ---
+# Tests: How the script handles a word that exists but has no URL anchor
+incomplete_word

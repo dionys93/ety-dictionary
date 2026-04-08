@@ -1,0 +1,9 @@
+# --- Standard Plurals ---
+cat
+dog
+
+# --- Vowel Stripping (-ie and -e endings) ---
+# Tests: if 'ie' + 'i' suffix strips correctly
+ability
+battery
+stone

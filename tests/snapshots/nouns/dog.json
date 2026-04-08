@@ -1,0 +1,56 @@
+[
+  {
+    "name": "dog",
+    "etymology": [
+      {
+        "name": "docga",
+        "origin": "Old English"
+      },
+      {
+        "name": "dog",
+        "origin": "Modern English"
+      },
+      {
+        "name": "dogue",
+        "origin": "Inglisce",
+        "part-of-speech": [
+          "masculine noun"
+        ],
+        "declensions": {
+          "plural": "dogs"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/dog",
+      "https://www.oed.com/dictionary/dog_n1?tab=pronunciation#6362755",
+      "https://bosworthtoller.com/7744"
+    ]
+  },
+  {
+    "name": "dog",
+    "etymology": [
+      {
+        "name": "to dog",
+        "origin": "Modern English"
+      },
+      {
+        "name": "to dogue",
+        "origin": "Inglisce",
+        "part-of-speech": [
+          "verb"
+        ],
+        "conjugations": {
+          "present_first_second_singular": "dog",
+          "present_third_singular": "dogs",
+          "past": "dogued",
+          "present_participle": "doguing"
+        }
+      }
+    ],
+    "sources": [
+      "https://www.etymonline.com/word/dog",
+      "https://www.oed.com/dictionary/dog_v1?tab=factsheet#6368598"
+    ]
+  }
+]
