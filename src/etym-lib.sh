@@ -173,7 +173,6 @@ etym-summarize() {
     printf "%7s | %-25s\n" "$TOTAL_STANZAS" "TOTAL STANZAS"
 }
 
-
 etym-chain() {
     local WORD=$1
     local FIRST_LETTER=$(echo "${WORD:0:1}" | tr '[:upper:]' '[:lower:]')
@@ -187,6 +186,13 @@ etym-chain() {
         echo "Error: Word '$WORD' not found."
         return 1
     fi
+
+    # Dynamically extract the reform name from the directory chain (e.g., .../inglisce/dictionary -> Inglisce)
+    local REFORM_DIR=$(basename "$(dirname "$DICT_DIR")")
+    local REFORM_NAME="$(tr '[:lower:]' '[:upper:]' <<< ${REFORM_DIR:0:1})${REFORM_DIR:1}"
+    
+    # Use DICT_PROJECT_NAME if set in env.sh, otherwise fallback to the capitalized directory name
+    local FINAL_REFORM_NAME="${DICT_PROJECT_NAME:-$REFORM_NAME}"
 
     echo "--- Evolutionary Chain for: $WORD ---"
 
@@ -216,7 +222,8 @@ etym-chain() {
             local LANG_FULL=$(get_lang_name "$LANG_TAG")
             local CLEAN_TEXT=$(echo "$line" | sed -E 's/\[[^]]+\]//g' | xargs)
             
-            printf " ↳ %-30s | %s\n" "$CLEAN_TEXT" "${LANG_FULL:-Unknown}"
+            # Swap out 'Unknown' for the dynamically extracted reform name
+            printf " ↳ %-30s | %s\n" "$CLEAN_TEXT" "${LANG_FULL:-$FINAL_REFORM_NAME}"
         done
         echo "------------------------------------------------------------"
     done
