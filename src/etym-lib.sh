@@ -160,13 +160,16 @@ etym-summarize() {
     fi
 
     # 3. Data Extraction Pipeline
-    local POS_STATS=$(grep -rhPo "\(([a-z ]{1,5}(, [a-z ]{1,5})*)\)" "$TARGET_DIR" | \
+    # Added `grep -rhv "http"` to strip out URL lines before extracting tags
+    local POS_STATS=$(grep -rhv "http" "$TARGET_DIR" | \
+        grep -Po "\(([a-z ]{1,5}(, [a-z ]{1,5})*)\)" | \
         tr -d '()' | \
         awk -F',' '{print $1}' | \
         sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | \
         sort | uniq -c | sort -rn)
 
-    local LANG_STATS=$(grep -rhPo "\[[A-Z]+\]" "$TARGET_DIR" | \
+    local LANG_STATS=$(grep -rhv "http" "$TARGET_DIR" | \
+        grep -Po "\[[A-Z]+\]" | \
         tr -d '[]' | \
         sort | uniq -c | sort -rn)
 
@@ -203,7 +206,6 @@ etym-summarize() {
             [[ -z "$count" ]] && continue
             local full_name=$(grep -i "^$tag[[:space:]]" "$CONFIG_DIR/parts-of-speech.tsv" 2>/dev/null | sed "s/^$tag[[:space:]]*//" | xargs)
             
-            # FIX: Format the string first, then manually append the newline literal
             local line=$(printf "%7s | %-25s (%s)" "$count" "${full_name:-Unknown}" "$tag")
             OUTPUT+="$line\n"
             
@@ -222,7 +224,6 @@ etym-summarize() {
             [[ -z "$count" ]] && continue
             local full_name=$(get_lang_name "$tag")
             
-            # FIX: Format the string first, then manually append the newline literal
             local line=$(printf "%7s | %-25s [%s]" "$count" "${full_name:-Unknown}" "$tag")
             OUTPUT+="$line\n"
             
@@ -242,6 +243,7 @@ etym-summarize() {
         echo -e "$OUTPUT"
     fi
 }
+
 
 
 etym-chain() {
