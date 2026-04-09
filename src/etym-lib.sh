@@ -575,13 +575,19 @@ etym-create-histories() {
         pos_map["(pref)"]="pref"; pos_map["(interj)"]="interj"; pos_map["(obs)"]="obs";
     }
 
-    # Helper function to extract modern word based on your TS logic
-    function extract_word(line,    stripped, words) {
+    # Helper function to extract modern word 
+    function extract_word(line,    stripped, comma_parts, n_comma, final_part, words) {
         stripped = line
-        gsub(/\[[A-Z]+\]/, "", stripped)       # Remove tags like [ME], [MI]
-        gsub(/^[ \t]+|[ \t]+$/, "", stripped)  # Trim whitespace
-        sub(/^[tT][oO][ \t]+/, "", stripped)   # Strip "to " for infinitives
-        split(stripped, words, "[ \t]+")       # Take first word
+        gsub(/\[[A-Z]+\]/, "", stripped)       # Remove tags like [ME], [MI], [FR]
+        
+        # Split by comma to handle variants, taking the last one
+        n_comma = split(stripped, comma_parts, ",")
+        final_part = comma_parts[n_comma]
+        
+        gsub(/^[ \t]+|[ \t]+$/, "", final_part)  # Trim whitespace
+        sub(/^[tT][oO][ \t]+/, "", final_part)   # Strip "to " for infinitives
+        
+        split(final_part, words, "[ \t]+")       # Take first word of that final part
         return words[1]
     }
 
