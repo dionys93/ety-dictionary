@@ -2,10 +2,10 @@ Summarizing Data in: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 ==========================================
 PARTS OF SPEECH
 ------------------------------------------
-   2746 | masculine noun            (m n)
+   2747 | masculine noun            (m n)
    2177 | verb                      (v)
    1604 | adjective                 (adj)
-   1334 | feminine noun             (f n)
+   1335 | feminine noun             (f n)
      88 | adverb                    (adv)
      29 | Unknown                   (n)
      12 | pronoun                   (pron)
@@ -13,26 +13,22 @@ PARTS OF SPEECH
       8 | obsolete                  (obs)
       7 | conjunction               (conj)
       5 | transitive verb           (tr v)
-      1 | Unknown                   (wheel)
       1 | suffix                    (suff)
-      1 | Unknown                   (num)
+      1 | number                    (num)
       1 | n masculine noun          (m)
-      1 | Unknown                   (la)
-      1 | n feminine noun           (f)
-      1 | Unknown                   (def v)
-      1 | Unknown                   (caste)
+      1 | defective verb            (def v)
 ------------------------------------------
-   8026 | TOTAL POS TAGS           
+   8024 | TOTAL POS TAGS           
 
 LANGUAGE ORIGINS
 ------------------------------------------
-   7151 | Modern English            [ME]
-   2993 | Latin                     [L]
-   2239 | Old French                [OF]
+   7152 | Modern English            [ME]
+   2994 | Latin                     [L]
+   2240 | Old French                [OF]
    2099 | Middle English            [MI]
    1384 | Old English               [OE]
     649 | French                    [FR]
-    329 | Ancient Greek             [AG]
+    330 | Ancient Greek             [AG]
     322 | Medieval Latin            [ML]
     153 | Vulgar Latin              [VL]
     133 | Old Norse                 [ON]
@@ -112,5 +108,5 @@ LANGUAGE ORIGINS
       1 | Unknown                   [AK]
       1 | Aborigine                 [AB]
 ------------------------------------------
-  17907 | TOTAL LANG TAGS          
+  17911 | TOTAL LANG TAGS          
 
