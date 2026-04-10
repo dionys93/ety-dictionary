@@ -125,6 +125,125 @@ etym-info() {
 }
 
 
+# etym-summarize() {
+#     local FORMAT="text"
+#     local OUT_FILE=""
+#     local TARGET_INPUT=""
+
+#     # 1. Parse Arguments (--json, -o/--out)
+#     while [[ "$#" -gt 0 ]]; do
+#         case $1 in
+#             --json) FORMAT="json"; shift ;;
+#             -o|--out) OUT_FILE="$2"; shift 2 ;;
+#             *) 
+#                 if [[ -z "$TARGET_INPUT" ]]; then
+#                     TARGET_INPUT="$1"
+#                 fi
+#                 shift 
+#                 ;;
+#         esac
+#     done
+
+#     # 2. Resolve Path
+#     local TARGET_DIR=""
+#     if [ -z "$TARGET_INPUT" ]; then
+#         TARGET_DIR="$DICT_DIR"
+#     elif [ -d "$DICT_DIR/$TARGET_INPUT" ]; then
+#         TARGET_DIR="$DICT_DIR/$TARGET_INPUT"
+#     else
+#         TARGET_DIR="$TARGET_INPUT"
+#     fi
+
+#     if [ ! -d "$TARGET_DIR" ]; then
+#         echo "Error: Directory $TARGET_DIR not found."
+#         return 1
+#     fi
+
+#     # 3. Data Extraction Pipeline
+#     # Added `grep -rhv "http"` to strip out URL lines before extracting tags
+#     local POS_STATS=$(grep -rhv "http" "$TARGET_DIR" | \
+#         grep -Po "\(([a-z ]{1,5}(, [a-z ]{1,5})*)\)" | \
+#         tr -d '()' | \
+#         awk -F',' '{print $1}' | \
+#         sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | \
+#         sort | uniq -c | sort -rn)
+
+#     local LANG_STATS=$(grep -rhv "http" "$TARGET_DIR" | \
+#         grep -Po "\[[A-Z]+\]" | \
+#         tr -d '[]' | \
+#         sort | uniq -c | sort -rn)
+
+#     # 4. Format Output
+#     local OUTPUT=""
+
+#     if [[ "$FORMAT" == "json" ]]; then
+#         local POS_JSON=$(echo "$POS_STATS" | while read -r count tag; do
+#             [[ -z "$count" ]] && continue
+#             local full_name=$(grep -i "^$tag[[:space:]]" "$CONFIG_DIR/parts-of-speech.tsv" 2>/dev/null | sed "s/^$tag[[:space:]]*//" | xargs)
+#             printf '{"tag": "%s", "name": "%s", "count": %d}\n' "$tag" "${full_name:-Unknown}" "$count"
+#         done | jq -s '.')
+
+#         local LANG_JSON=$(echo "$LANG_STATS" | while read -r count tag; do
+#             [[ -z "$count" ]] && continue
+#             local full_name=$(get_lang_name "$tag")
+#             printf '{"tag": "%s", "name": "%s", "count": %d}\n' "$tag" "${full_name:-Unknown}" "$count"
+#         done | jq -s '.')
+
+#         OUTPUT=$(jq -n \
+#             --arg dir "$TARGET_DIR" \
+#             --argjson pos "${POS_JSON:-[]}" \
+#             --argjson lang "${LANG_JSON:-[]}" \
+#             '{directory: $dir, parts_of_speech: $pos, languages: $lang}')
+#     else
+#         OUTPUT+="Summarizing Data in: $TARGET_DIR\n"
+#         OUTPUT+="==========================================\n"
+        
+#         # --- Print Parts of Speech ---
+#         OUTPUT+="PARTS OF SPEECH\n"
+#         OUTPUT+="------------------------------------------\n"
+#         local TOTAL_POS=0
+#         while read -r count tag; do
+#             [[ -z "$count" ]] && continue
+#             local full_name=$(grep -i "^$tag[[:space:]]" "$CONFIG_DIR/parts-of-speech.tsv" 2>/dev/null | sed "s/^$tag[[:space:]]*//" | xargs)
+            
+#             local line=$(printf "%7s | %-25s (%s)" "$count" "${full_name:-Unknown}" "$tag")
+#             OUTPUT+="$line\n"
+            
+#             TOTAL_POS=$((TOTAL_POS + count))
+#         done <<< "$POS_STATS"
+#         OUTPUT+="------------------------------------------\n"
+        
+#         local footer_pos=$(printf "%7s | %-25s" "$TOTAL_POS" "TOTAL POS TAGS")
+#         OUTPUT+="$footer_pos\n\n"
+
+#         # --- Print Languages ---
+#         OUTPUT+="LANGUAGE ORIGINS\n"
+#         OUTPUT+="------------------------------------------\n"
+#         local TOTAL_LANG=0
+#         while read -r count tag; do
+#             [[ -z "$count" ]] && continue
+#             local full_name=$(get_lang_name "$tag")
+            
+#             local line=$(printf "%7s | %-25s [%s]" "$count" "${full_name:-Unknown}" "$tag")
+#             OUTPUT+="$line\n"
+            
+#             TOTAL_LANG=$((TOTAL_LANG + count))
+#         done <<< "$LANG_STATS"
+#         OUTPUT+="------------------------------------------\n"
+        
+#         local footer_lang=$(printf "%7s | %-25s" "$TOTAL_LANG" "TOTAL LANG TAGS")
+#         OUTPUT+="$footer_lang\n"
+#     fi
+
+#     # 5. Output Routing
+#     if [[ -n "$OUT_FILE" ]]; then
+#         echo -e "$OUTPUT" > "$OUT_FILE"
+#         echo "✅ Summary successfully written to $OUT_FILE"
+#     else
+#         echo -e "$OUTPUT"
+#     fi
+# }
+
 etym-summarize() {
     local FORMAT="text"
     local OUT_FILE=""
@@ -160,7 +279,6 @@ etym-summarize() {
     fi
 
     # 3. Data Extraction Pipeline
-    # Added `grep -rhv "http"` to strip out URL lines before extracting tags
     local POS_STATS=$(grep -rhv "http" "$TARGET_DIR" | \
         grep -Po "\(([a-z ]{1,5}(, [a-z ]{1,5})*)\)" | \
         tr -d '()' | \
@@ -172,6 +290,28 @@ etym-summarize() {
         grep -Po "\[[A-Z]+\]" | \
         tr -d '[]' | \
         sort | uniq -c | sort -rn)
+
+    # Cross-Tabulation Pipeline: Links POS and LANG on a per-file basis
+    local CROSS_DATA=$(find "$TARGET_DIR" -type f -exec awk '
+        FNR==1 {
+            if (pos != "" && lang != "") print pos "|" lang
+            pos = ""; lang = ""
+        }
+        !/http/ {
+            if (pos == "" && match($0, /\(([a-z ]{1,5}(, [a-z ]{1,5})*)\)/)) {
+                pos = substr($0, RSTART+1, RLENGTH-2)
+                sub(/,.*/, "", pos)
+                sub(/^[ \t]+/, "", pos)
+                sub(/[ \t]+$/, "", pos)
+            }
+            if (lang == "" && match($0, /\[[A-Z]+\]/)) {
+                lang = substr($0, RSTART+1, RLENGTH-2)
+            }
+        }
+        END {
+            if (pos != "" && lang != "") print pos "|" lang
+        }
+    ' {} + 2>/dev/null | sort | uniq -c | sort -rn)
 
     # 4. Format Output
     local OUTPUT=""
@@ -189,18 +329,26 @@ etym-summarize() {
             printf '{"tag": "%s", "name": "%s", "count": %d}\n' "$tag" "${full_name:-Unknown}" "$count"
         done | jq -s '.')
 
+        local CROSS_JSON=$(echo "$CROSS_DATA" | while read -r count pos_lang; do
+            [[ -z "$count" ]] && continue
+            local pos="${pos_lang%|*}"
+            local lang="${pos_lang#*|}"
+            printf '{"pos": "%s", "lang": "%s", "count": %d}\n' "$pos" "$lang" "$count"
+        done | jq -s '.')
+
         OUTPUT=$(jq -n \
             --arg dir "$TARGET_DIR" \
             --argjson pos "${POS_JSON:-[]}" \
             --argjson lang "${LANG_JSON:-[]}" \
-            '{directory: $dir, parts_of_speech: $pos, languages: $lang}')
+            --argjson cross "${CROSS_JSON:-[]}" \
+            '{directory: $dir, parts_of_speech: $pos, languages: $lang, cross_tabulation: $cross}')
     else
         OUTPUT+="Summarizing Data in: $TARGET_DIR\n"
-        OUTPUT+="==========================================\n"
+        OUTPUT+="=================================================================\n"
         
         # --- Print Parts of Speech ---
         OUTPUT+="PARTS OF SPEECH\n"
-        OUTPUT+="------------------------------------------\n"
+        OUTPUT+="-----------------------------------------------------------------\n"
         local TOTAL_POS=0
         while read -r count tag; do
             [[ -z "$count" ]] && continue
@@ -208,17 +356,14 @@ etym-summarize() {
             
             local line=$(printf "%7s | %-25s (%s)" "$count" "${full_name:-Unknown}" "$tag")
             OUTPUT+="$line\n"
-            
             TOTAL_POS=$((TOTAL_POS + count))
         done <<< "$POS_STATS"
-        OUTPUT+="------------------------------------------\n"
-        
-        local footer_pos=$(printf "%7s | %-25s" "$TOTAL_POS" "TOTAL POS TAGS")
-        OUTPUT+="$footer_pos\n\n"
+        OUTPUT+="-----------------------------------------------------------------\n"
+        OUTPUT+=$(printf "%7s | %-25s\n\n" "$TOTAL_POS" "TOTAL POS TAGS")
 
         # --- Print Languages ---
         OUTPUT+="LANGUAGE ORIGINS\n"
-        OUTPUT+="------------------------------------------\n"
+        OUTPUT+="-----------------------------------------------------------------\n"
         local TOTAL_LANG=0
         while read -r count tag; do
             [[ -z "$count" ]] && continue
@@ -226,13 +371,45 @@ etym-summarize() {
             
             local line=$(printf "%7s | %-25s [%s]" "$count" "${full_name:-Unknown}" "$tag")
             OUTPUT+="$line\n"
-            
             TOTAL_LANG=$((TOTAL_LANG + count))
         done <<< "$LANG_STATS"
-        OUTPUT+="------------------------------------------\n"
+        OUTPUT+="-----------------------------------------------------------------\n"
+        OUTPUT+=$(printf "%7s | %-25s\n\n" "$TOTAL_LANG" "TOTAL LANG TAGS")
+
+        # --- Print Cross-Tabulation Matrix ---
+        OUTPUT+="CROSS-TABULATION (Top 5 POS x Top 5 LANG)\n"
+        OUTPUT+="-----------------------------------------------------------------\n"
         
-        local footer_lang=$(printf "%7s | %-25s" "$TOTAL_LANG" "TOTAL LANG TAGS")
-        OUTPUT+="$footer_lang\n"
+        # Extract Top 5 arrays safely
+        local TOP_LANGS=($(echo "$LANG_STATS" | head -n 5 | awk '{print $2}'))
+        local TOP_POS=()
+        while read -r count pos; do
+            [[ -z "$count" ]] && continue
+            TOP_POS+=("$pos")
+            [[ ${#TOP_POS[@]} -ge 5 ]] && break
+        done <<< "$POS_STATS"
+
+        # Build Matrix Header
+        local header=$(printf "%-18s" "POS \ LANG")
+        for lang in "${TOP_LANGS[@]}"; do
+            header+=$(printf "| %-7s " "$lang")
+        done
+        OUTPUT+="$header\n"
+        OUTPUT+="-----------------------------------------------------------------\n"
+
+        # Build Matrix Rows
+        for pos in "${TOP_POS[@]}"; do
+            local row=$(printf "%-18s" "$pos")
+            for lang in "${TOP_LANGS[@]}"; do
+                # Exact string matching against the format " [count] [pos]|[lang]$"
+                local val=$(echo "$CROSS_DATA" | awk -v p="$pos" -v l="$lang" '
+                    $0 ~ ("[[:space:]]" p "\\|" l "$") { print $1 }
+                ')
+                row+=$(printf "| %-7s " "${val:-0}")
+            done
+            OUTPUT+="$row\n"
+        done
+        OUTPUT+="-----------------------------------------------------------------\n"
     fi
 
     # 5. Output Routing
@@ -243,8 +420,6 @@ etym-summarize() {
         echo -e "$OUTPUT"
     fi
 }
-
-
 
 etym-chain() {
     local WORD=$1
