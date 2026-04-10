@@ -904,3 +904,115 @@ etym-create-histories() {
         echo "Note: Skipped $TOTAL_SKIPPED stanzas that had POS but no extractable word."
     fi
 }
+
+
+etym-lint() {
+    local TARGET_INPUT=""
+    local STRICT_MODE=0
+
+    # 1. Parse Arguments
+    while [[ "$#" -gt 0 ]]; do
+        case $1 in
+            --strict) STRICT_MODE=1; shift ;;
+            *) 
+                if [[ -z "$TARGET_INPUT" ]]; then
+                    TARGET_INPUT="$1"
+                fi
+                shift 
+                ;;
+        esac
+    done
+
+    # 2. Resolve Path
+    local TARGET_DIR=""
+    if [ -z "$TARGET_INPUT" ]; then
+        TARGET_DIR="$DICT_DIR"
+    elif [ -e "$DICT_DIR/$TARGET_INPUT" ]; then
+        TARGET_DIR="$DICT_DIR/$TARGET_INPUT"
+    else
+        TARGET_DIR="$TARGET_INPUT"
+    fi
+
+    if [ ! -e "$TARGET_DIR" ]; then
+        echo "Error: Target $TARGET_DIR not found."
+        return 1
+    fi
+
+    echo -e "Linting Data in: $TARGET_DIR"
+    echo -e "=================================================================\n"
+
+    local TOTAL_FILES=0
+    local FATAL_COUNT=0
+    local ERROR_COUNT=0
+    local WARN_COUNT=0
+
+    # 3. Linter Execution
+    # Use process substitution or a temporary file approach to preserve counters
+    while IFS= read -r -d '' file; do
+        TOTAL_FILES=$((TOTAL_FILES + 1))
+        local file_issues=()
+
+        # Rule 1: Empty file check [FATAL]
+        if [ ! -s "$file" ]; then
+            file_issues+=("\e[31m[FATAL]\e[0m File is completely empty.")
+            FATAL_COUNT=$((FATAL_COUNT + 1))
+        else
+            # Strip URLs for tag analysis to prevent false positives
+            local content_no_urls=$(grep -rhv "http" "$file")
+
+            # Rule 2: Missing POS tag [ERROR]
+            if ! echo "$content_no_urls" | grep -Poq "\([a-z ]{1,5}(, [a-z ]{1,5})*\)"; then
+                file_issues+=("\e[31m[ERROR]\e[0m Missing or malformed Part of Speech tag '()'")
+                ERROR_COUNT=$((ERROR_COUNT + 1))
+            fi
+
+            # Rule 3: Missing Language tag [ERROR]
+            if ! echo "$content_no_urls" | grep -Poq "\[[A-Z]+\]"; then
+                file_issues+=("\e[31m[ERROR]\e[0m Missing or malformed Language Origin tag '[]'")
+                ERROR_COUNT=$((ERROR_COUNT + 1))
+            fi
+
+            # Rule 4: Trailing Whitespace [WARN]
+            if grep -q "[[:space:]]$" "$file"; then
+                file_issues+=("\e[33m[WARN]\e[0m  Line(s) contain trailing whitespace.")
+                WARN_COUNT=$((WARN_COUNT + 1))
+            fi
+            
+            # Rule 5: Unclosed Brackets/Parentheses on non-URL lines [WARN]
+            local unclosed_paren=$(echo "$content_no_urls" | grep -E "\([^)]*$|^[^(]*\)")
+            local unclosed_bracket=$(echo "$content_no_urls" | grep -E "\[[^]]*$|^[^[]*\]")
+            
+            if [[ -n "$unclosed_paren" && "$unclosed_paren" != "$content_no_urls" ]]; then
+                 file_issues+=("\e[33m[WARN]\e[0m  Potentially unclosed or orphaned parentheses.")
+                 WARN_COUNT=$((WARN_COUNT + 1))
+            fi
+        fi
+
+        # Output issues if any were found
+        if [ ${#file_issues[@]} -gt 0 ]; then
+            local relative_path="${file#$DICT_DIR/}"
+            echo -e "📝 \e[1m$relative_path\e[0m"
+            for issue in "${file_issues[@]}"; do
+                echo -e "   $issue"
+            done
+            echo ""
+        fi
+
+    done < <(find "$TARGET_DIR" -type f -print0)
+
+    # 4. Summary Output
+    echo "-----------------------------------------------------------------"
+    echo "LINTING COMPLETE"
+    echo "-----------------------------------------------------------------"
+    printf "Files Scanned: %d\n" "$TOTAL_FILES"
+    printf "Fatal Errors:  \e[31m%d\e[0m\n" "$FATAL_COUNT"
+    printf "Standard Errs: \e[31m%d\e[0m\n" "$ERROR_COUNT"
+    printf "Warnings:      \e[33m%d\e[0m\n" "$WARN_COUNT"
+    echo "================================================================="
+
+    # Return error code if failures exist (useful for CI/CD or pre-commit hooks)
+    if [ "$FATAL_COUNT" -gt 0 ] || [ "$ERROR_COUNT" -gt 0 ]; then
+        return 1
+    fi
+    return 0
+}
