@@ -1196,3 +1196,201 @@ etym-flatten() {
     printf "Extracted \e[1m%d\e[0m data rows to \e[32m%s\e[0m\n" "$ROW_COUNT" "$OUT_FILE"
     echo "================================================================="
 }
+
+
+etym-graph() {
+    local OUT_FILE="etym_graph.json"
+    local TARGET_INPUT=""
+
+    # 1. Parse Arguments (-o/--out)
+    while [[ "$#" -gt 0 ]]; do
+        case $1 in
+            -o|--out) OUT_FILE="$2"; shift 2 ;;
+            *) 
+                if [[ -z "$TARGET_INPUT" ]]; then
+                    TARGET_INPUT="$1"
+                fi
+                shift 
+                ;;
+        esac
+    done
+
+    # 2. Resolve Path
+    local TARGET_PATH=""
+    if [ -z "$TARGET_INPUT" ]; then
+        TARGET_PATH="$DICT_DIR"
+    elif [ -e "$DICT_DIR/$TARGET_INPUT" ]; then
+        TARGET_PATH="$DICT_DIR/$TARGET_INPUT"
+    elif [ -e "$TARGET_INPUT" ]; then
+        TARGET_PATH="$TARGET_INPUT"
+    else
+        echo "Error: Target path '$TARGET_INPUT' not found."
+        return 1
+    fi
+
+    if ! command -v jq &> /dev/null; then 
+        echo "Error: 'jq' is required to format the graph JSON."
+        return 1
+    fi
+
+    echo "Building Etymological Graph from $TARGET_PATH..."
+    echo "================================================================="
+
+    local TARGET_LANG="${DICT_PROJECT_NAME:-Inglisce}"
+
+    # 3. Stream data into Awk
+    find "$TARGET_PATH" -type f -name "*.txt" -print0 | xargs -0 cat | awk -v tgt_lang="$TARGET_LANG" '
+        BEGIN { 
+            RS=""       
+            FS="\n"     
+            node_counter = 0  # Initialize safe ID counter
+        }
+        
+        {
+            line_count = 0
+            delete layers
+            
+            for (i=1; i<=NF; i++) {
+                if ($i ~ /^http/) break; 
+                
+                lang = tgt_lang
+                pos = ""
+                
+                if (match($i, /\[[A-Z]+\]/)) {
+                    lang = substr($i, RSTART+1, RLENGTH-2)
+                }
+                
+                if (match($i, /\(([a-z ]+(, [a-z ]+)*)\)/)) {
+                    pos = substr($i, RSTART+1, RLENGTH-2)
+                    sub(/,.*/, "", pos)
+                }
+                
+                temp_line = $i
+                gsub(/\[[A-Z]+\]/, "", temp_line)
+                gsub(/\([^)]+\)/, "", temp_line)
+                
+                n_words = split(temp_line, w_arr, ",")
+                layer_nodes = ""
+                
+                for (j=1; j<=n_words; j++) {
+                    cw = w_arr[j]
+                    gsub(/^[ \t]+|[ \t]+$/, "", cw)    
+                    sub(/^[tT][oO][ \t]+/, "", cw)     
+                    gsub(/ -[a-z]+/, "", cw)           
+                    
+                    split(cw, cw_tokens, "[ \t]+")
+                    final_w = cw_tokens[1]
+                    
+                    if (final_w != "") {
+                        gsub(/"/, "\\\"", final_w)
+                        
+                        # The Safe-ID Generator
+                        raw_id = final_w "_" lang
+                        if (!(raw_id in id_map)) {
+                            node_counter++
+                            id_map[raw_id] = "node_" node_counter
+                        }
+                        safe_id = id_map[raw_id]
+                        
+                        # Register Node using safe_id
+                        if (!(safe_id in nodes)) {
+                            nodes[safe_id] = sprintf("{\"id\": \"%s\", \"label\": \"%s\", \"lang\": \"%s\", \"pos\": \"%s\"}", safe_id, final_w, lang, pos)
+                        } else if (pos != "") {
+                            nodes[safe_id] = sprintf("{\"id\": \"%s\", \"label\": \"%s\", \"lang\": \"%s\", \"pos\": \"%s\"}", safe_id, final_w, lang, pos)
+                        }
+                        
+                        layer_nodes = (layer_nodes == "" ? safe_id : layer_nodes "|" safe_id)
+                    }
+                }
+                
+                if (layer_nodes != "") {
+                    line_count++
+                    layers[line_count] = layer_nodes
+                }
+            }
+            
+            for (l=1; l<line_count; l++) {
+                n_src = split(layers[l], srcs, "|")
+                n_tgt = split(layers[l+1], tgts, "|")
+                
+                for (s=1; s<=n_src; s++) {
+                    for (t=1; t<=n_tgt; t++) {
+                        edge_id = srcs[s] "->" tgts[t]
+                        if (!(edge_id in edges)) {
+                            edges[edge_id] = sprintf("{\"source\": \"%s\", \"target\": \"%s\"}", srcs[s], tgts[t])
+                        }
+                    }
+                }
+            }
+        }
+        
+        END {
+            print "{"
+            print "  \"nodes\": ["
+            first = 1
+            for (n in nodes) {
+                if (!first) print ","
+                printf "    %s", nodes[n]
+                first = 0
+            }
+            print "\n  ],"
+            print "  \"edges\": ["
+            first = 1
+            for (e in edges) {
+                if (!first) print ","
+                printf "    %s", edges[e]
+                first = 0
+            }
+            print "\n  ]"
+            print "}"
+        }
+    ' | jq '.' > "$OUT_FILE"
+
+    if [[ $? -eq 0 ]]; then
+        local NODE_COUNT=$(jq '.nodes | length' "$OUT_FILE")
+        local EDGE_COUNT=$(jq '.edges | length' "$OUT_FILE")
+        echo "✅ Graph generation complete!"
+        printf "Exported \e[1m%d\e[0m Nodes and \e[1m%d\e[0m Edges to \e[32m%s\e[0m\n" "$NODE_COUNT" "$EDGE_COUNT" "$OUT_FILE"
+    else
+        echo "❌ Error generating graph. Check stanza formatting."
+    fi
+    echo "================================================================="
+}
+
+
+etym-visualize() {
+    local GRAPH_FILE="etym_graph.json"
+    local OUT_FILE="etym_graph.md"
+    
+    # Allow user to pass a specific json file, default to etym_graph.json
+    [[ -n "$1" ]] && GRAPH_FILE="$1"
+
+    if [[ ! -f "$GRAPH_FILE" ]]; then
+        echo "Error: Graph file '$GRAPH_FILE' not found."
+        echo "Run 'etym-graph' first to generate the data."
+        return 1
+    fi
+
+    echo "Converting $GRAPH_FILE to Mermaid Markdown..."
+    echo "================================================================="
+
+    # Create the markdown file with the Mermaid code block wrapper
+    echo '```mermaid' > "$OUT_FILE"
+    echo 'graph LR' >> "$OUT_FILE" # LR = Left to Right layout
+
+    # Translate JSON to Mermaid syntax using jq
+    # Nodes: id["Label<br>[Lang]"]
+    # Edges: source --> target
+    jq -r '
+      (.nodes[] | "  \(.id)[\"\(.label)<br><b>[\(.lang)]</b>\"]"),
+      (.edges[] | "  \(.source) --> \(.target)")
+    ' "$GRAPH_FILE" >> "$OUT_FILE"
+
+    echo '```' >> "$OUT_FILE"
+    
+    echo "✅ Successfully generated: $OUT_FILE"
+    echo "💡 HOW TO VIEW:"
+    echo "   1. Open $OUT_FILE in your Codespace editor."
+    echo "   2. Right-click the file tab and select 'Open Preview' (or press Cmd+K V / Ctrl+K V)."
+    echo "================================================================="
+}
