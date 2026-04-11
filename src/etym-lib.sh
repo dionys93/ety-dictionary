@@ -1016,3 +1016,183 @@ etym-lint() {
     fi
     return 0
 }
+
+
+etym-flatten() {
+    local FORMAT="tsv"
+    local OUT_FILE="flattened_dictionary.tsv"
+    local TARGET_INPUT=""
+    local INCLUDE_ORIGIN=0
+
+    # 1. Parse Arguments (--csv, -o/--out, --include-origin)
+    while [[ "$#" -gt 0 ]]; do
+        case $1 in
+            --csv) FORMAT="csv"; OUT_FILE="flattened_dictionary.csv"; shift ;;
+            -o|--out) OUT_FILE="$2"; shift 2 ;;
+            --include-origin) INCLUDE_ORIGIN=1; shift ;;
+            *) 
+                if [[ -z "$TARGET_INPUT" ]]; then
+                    TARGET_INPUT="$1"
+                fi
+                shift 
+                ;;
+        esac
+    done
+
+    # 2. Resolve Path
+    local TARGET_DIR=""
+    if [ -z "$TARGET_INPUT" ]; then
+        TARGET_DIR="$DICT_DIR"
+    elif [ -d "$DICT_DIR/$TARGET_INPUT" ]; then
+        TARGET_DIR="$DICT_DIR/$TARGET_INPUT"
+    else
+        TARGET_DIR="$TARGET_INPUT"
+    fi
+
+    if [ ! -d "$TARGET_DIR" ]; then
+        echo "Error: Directory $TARGET_DIR not found."
+        return 1
+    fi
+
+    echo "Flattening multi-stanza data from $TARGET_DIR..."
+    echo "================================================================="
+
+    # 3. Write Headers
+    if [[ "$FORMAT" == "csv" ]]; then
+        if [[ $INCLUDE_ORIGIN -eq 1 ]]; then
+            echo "File_Name,Modern_English,Reformed_Word,Conjugations,Part_of_Speech,Language_Origin" > "$OUT_FILE"
+        else
+            echo "File_Name,Modern_English,Reformed_Word,Conjugations,Part_of_Speech" > "$OUT_FILE"
+        fi
+    else
+        if [[ $INCLUDE_ORIGIN -eq 1 ]]; then
+            echo -e "File_Name\tModern_English\tReformed_Word\tConjugations\tPart_of_Speech\tLanguage_Origin" > "$OUT_FILE"
+        else
+            echo -e "File_Name\tModern_English\tReformed_Word\tConjugations\tPart_of_Speech" > "$OUT_FILE"
+        fi
+    fi
+
+    # 4. Data Extraction Loop using Awk in Paragraph Mode
+    local FILE_COUNT=0
+    
+    while IFS= read -r -d '' file; do
+        FILE_COUNT=$((FILE_COUNT + 1))
+        local filename=$(basename "$file" .txt)
+        
+        # Pass the INCLUDE_ORIGIN flag into awk as a variable
+        awk -v fname="$filename" -v fmt="$FORMAT" -v inc_org="$INCLUDE_ORIGIN" '
+            BEGIN { 
+                RS=""       # Treat blank lines as record separators
+                FS="\n"     # Treat newlines as field separators
+                
+                # In-memory dictionary for rapid Part of Speech translation
+                pos_map["m n"]="masculine noun"; pos_map["f n"]="feminine noun";
+                pos_map["n"]="noun"; pos_map["v"]="verb";
+                pos_map["intr v"]="intransitive verb"; pos_map["tr v"]="transitive verb";
+                pos_map["conj"]="conjunction"; pos_map["adj"]="adjective";
+                pos_map["prep"]="preposition"; pos_map["pron"]="pronoun";
+                pos_map["adv"]="adverb"; pos_map["suff"]="suffix";
+                pos_map["pref"]="prefix"; pos_map["interj"]="interjection";
+                pos_map["obs"]="obsolete";
+            }
+            
+            # Helper function to extract the core word (stripping tags and commas)
+            function extract_core(line,   stripped, comma_parts, n_comma, final_part, words) {
+                stripped = line
+                gsub(/\[[A-Z]+\]/, "", stripped)       
+                n_comma = split(stripped, comma_parts, ",")
+                final_part = comma_parts[n_comma]
+                gsub(/^[ \t]+|[ \t]+$/, "", final_part)
+                sub(/^[tT][oO][ \t]+/, "", final_part)
+                split(final_part, words, "[ \t]+")
+                return words[1]
+            }
+
+            {
+                pos = ""; verbose_pos = ""; lang = ""; target = ""; conj = ""; 
+                me_word = ""; pos_line_idx = 0;
+
+                # 1. Find the Primary Language tag [LANG] (Used for validation even if hidden)
+                for (i=1; i<=NF; i++) {
+                    if ($i !~ /http/ && match($i, /\[[A-Z]+\]/)) {
+                        lang = substr($i, RSTART+1, RLENGTH-2)
+                        break
+                    }
+                }
+
+                # 2. Find the POS tag (pos), Target Word, and Conjugations
+                for (i=1; i<=NF; i++) {
+                    if ($i !~ /http/ && match($i, /\(([a-z ]+(, [a-z ]+)*)\)/)) {
+                        pos_line_idx = i
+                        
+                        # Clean POS tag and translate to full name
+                        pos = substr($i, RSTART+1, RLENGTH-2)
+                        sub(/,.*/, "", pos) 
+                        
+                        if (pos in pos_map) {
+                            verbose_pos = pos_map[pos]
+                        } else {
+                            verbose_pos = pos 
+                        }
+                        
+                        # Extract target word and conjugations
+                        temp_line = $i
+                        sub(/^[ \t]+/, "", temp_line)  
+                        sub(/^to[ \t]+/, "", temp_line) 
+                        sub(/\(([a-z ]+(, [a-z ]+)*)\)/, "", temp_line) 
+                        
+                        n_words = split(temp_line, words, " ")   
+                        target = words[1]              
+                        
+                        # Anything left over is a conjugation
+                        for(j=2; j<=n_words; j++) {
+                            if (words[j] != "") {
+                                conj = (conj == "" ? words[j] : conj " " words[j])
+                            }
+                        }
+                        break
+                    }
+                }
+
+                # 3. Find Modern English Bridge (Priority System)
+                for(i=1; i<=NF; i++) {
+                    if ($i ~ /\[ME\]/) { me_word = extract_core($i); break; }
+                }
+                if (me_word == "") {
+                    for(i=1; i<=NF; i++) {
+                        if ($i ~ /\[MI\]/) { me_word = extract_core($i); break; }
+                    }
+                }
+                if (me_word == "" && pos_line_idx > 1) {
+                    me_word = extract_core($(pos_line_idx - 1))
+                }
+
+                # 4. Print the row using the expanded POS name and conditional Origin
+                if (verbose_pos != "" && lang != "" && target != "") {
+                    if (fmt == "csv") {
+                        if (inc_org == 1) {
+                            printf "\"%s\",\"%s\",\"%s\",\"%s\",\"%s\",\"%s\"\n", fname, me_word, target, conj, verbose_pos, lang
+                        } else {
+                            printf "\"%s\",\"%s\",\"%s\",\"%s\",\"%s\"\n", fname, me_word, target, conj, verbose_pos
+                        }
+                    } else {
+                        if (inc_org == 1) {
+                            printf "%s\t%s\t%s\t%s\t%s\t%s\n", fname, me_word, target, conj, verbose_pos, lang
+                        } else {
+                            printf "%s\t%s\t%s\t%s\t%s\n", fname, me_word, target, conj, verbose_pos
+                        }
+                    }
+                }
+            }
+        ' "$file" >> "$OUT_FILE"
+
+    done < <(find "$TARGET_DIR" -type f -name "*.txt" -print0)
+
+    # 5. Output Summary
+    local ROW_COUNT=$(($(wc -l < "$OUT_FILE" | xargs) - 1))
+    
+    echo "✅ Flattening complete!"
+    printf "Scanned \e[1m%d\e[0m files.\n" "$FILE_COUNT"
+    printf "Extracted \e[1m%d\e[0m data rows to \e[32m%s\e[0m\n" "$ROW_COUNT" "$OUT_FILE"
+    echo "================================================================="
+}
