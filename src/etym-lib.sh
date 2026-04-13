@@ -433,6 +433,147 @@ etym-cognates() {
 }
 
 
+etym-affix() {
+    local AFFIX_TYPE="suffix"
+    local AFFIX_LEN=3
+    local FILTER_POS=""
+    local FILTER_LANG=""
+    local TARGET_INPUT=""
+
+    # 1. Parse Arguments
+    while [[ "$#" -gt 0 ]]; do
+        case $1 in
+            --prefix) AFFIX_TYPE="prefix"; shift ;;
+            --suffix) AFFIX_TYPE="suffix"; shift ;;
+            -n|--length) AFFIX_LEN="$2"; shift 2 ;;
+            -p|--pos) FILTER_POS=$(echo "$2" | tr '[:upper:]' '[:lower:]'); shift 2 ;;
+            -l|--lang) FILTER_LANG=$(echo "$2" | tr '[:lower:]' '[:upper:]'); shift 2 ;;
+            *) 
+                if [[ -z "$TARGET_INPUT" ]]; then
+                    TARGET_INPUT="$1"
+                fi
+                shift 
+                ;;
+        esac
+    done
+
+    # 2. Resolve Path
+    local TARGET_PATH=""
+    if [ -z "$TARGET_INPUT" ]; then
+        TARGET_PATH="$DICT_DIR"
+    elif [ -e "$DICT_DIR/$TARGET_INPUT" ]; then
+        TARGET_PATH="$DICT_DIR/$TARGET_INPUT"
+    elif [ -e "$TARGET_INPUT" ]; then
+        TARGET_PATH="$TARGET_INPUT"
+    else
+        echo "Error: Target path '$TARGET_INPUT' not found."
+        return 1
+    fi
+
+    echo "Morphological Analysis: $AFFIX_TYPE ($AFFIX_LEN letters)"
+    [[ -n "$FILTER_POS" ]] && echo "Filter POS:  $FILTER_POS"
+    [[ -n "$FILTER_LANG" ]] && echo "Filter LANG: $FILTER_LANG"
+    echo "================================================================="
+
+    # 3. Stream data into Awk for Analysis
+    find "$TARGET_PATH" -type f -name "*.txt" -print0 | xargs -0 cat | awk -v a_type="$AFFIX_TYPE" -v a_len="$AFFIX_LEN" -v f_pos="$FILTER_POS" -v f_lang="$FILTER_LANG" '
+        BEGIN { 
+            RS=""       
+            FS="\n"     
+            
+            # POS Dictionary for accurate filtering
+            pos_map["m n"]="masculine noun"; pos_map["f n"]="feminine noun";
+            pos_map["n"]="noun"; pos_map["v"]="verb";
+            pos_map["intr v"]="intransitive verb"; pos_map["tr v"]="transitive verb";
+            pos_map["conj"]="conjunction"; pos_map["adj"]="adjective";
+            pos_map["prep"]="preposition"; pos_map["pron"]="pronoun";
+            pos_map["adv"]="adverb"; pos_map["suff"]="suffix";
+            pos_map["pref"]="prefix"; pos_map["interj"]="interjection";
+            pos_map["obs"]="obsolete";
+            
+            total_words = 0
+        }
+        
+        {
+            pos = ""; verbose_pos = ""; lang = ""; target = "";
+
+            # Extract Primary Language tag [LANG]
+            for (i=1; i<=NF; i++) {
+                if ($i !~ /http/ && match($i, /\[[A-Z]+\]/)) {
+                    lang = substr($i, RSTART+1, RLENGTH-2)
+                    break
+                }
+            }
+
+            # Extract POS and Target Word
+            for (i=1; i<=NF; i++) {
+                if ($i !~ /http/ && match($i, /\(([a-z ]+(, [a-z ]+)*)\)/)) {
+                    
+                    pos = substr($i, RSTART+1, RLENGTH-2)
+                    sub(/,.*/, "", pos) 
+                    
+                    if (pos in pos_map) {
+                        verbose_pos = pos_map[pos]
+                    } else {
+                        verbose_pos = pos 
+                    }
+                    
+                    temp_line = $i
+                    sub(/^[ \t]+/, "", temp_line)  
+                    sub(/^to[ \t]+/, "", temp_line) 
+                    sub(/\(([a-z ]+(, [a-z ]+)*)\)/, "", temp_line) 
+                    
+                    split(temp_line, words, " ")   
+                    target = words[1]              
+                    gsub(/,$/, "", target)
+                    break
+                }
+            }
+
+            # Filters
+            if (target == "") next;
+            if (f_pos != "" && index(verbose_pos, f_pos) == 0) next;
+            if (f_lang != "" && lang != f_lang) next;
+
+            # Affix Isolation
+            if (length(target) >= a_len) {
+                target_lower = tolower(target)
+                if (a_type == "prefix") {
+                    affix = substr(target_lower, 1, a_len) "-"
+                } else {
+                    affix = "-" substr(target_lower, length(target_lower) - a_len + 1)
+                }
+                
+                freq[affix]++
+                total_words++
+            }
+        }
+        
+        END {
+            if (total_words == 0) {
+                print "No words matched the criteria."
+                exit
+            }
+            
+            printf "%-15s | %-10s | %s\n", "AFFIX", "COUNT", "PERCENTAGE"
+            print "-----------------------------------------------------------------"
+            
+            # Sort array by frequency (requires GNU awk extension or piping to sort)
+            # To ensure macOS/Linux compatibility, we dump to stdout and let Bash sort it
+            for (a in freq) {
+                pct = (freq[a] / total_words) * 100
+                printf "%-15s | %-10d | %0.2f%%\n", a, freq[a], pct
+            }
+        }
+    ' | sed -n '1,2p; 3,$p' | awk 'NR<=2 {print; next} {print | "sort -k3 -nr"}' | head -n 22
+
+    # Output Summary
+    # (Extract total words by summing the count column of the raw awk output, 
+    # but since we already printed the table, we just let the table speak for itself.)
+    echo "================================================================="
+}
+
+
 etym-export() {
     if ! command -v jq &> /dev/null; then echo "Error: 'jq' not installed."; return 1; fi
 
