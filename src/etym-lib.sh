@@ -62,11 +62,8 @@ etym-info() {
     local FIRST_LETTER=$(echo "${WORD:0:1}" | tr '[:upper:]' '[:lower:]')
     
     # 1. SMART FILE LOOKUP
-    # Check if word.txt exists; if not, check if it lives inside the first_letter directory
     local FILE_PATH="$DICT_DIR/$FIRST_LETTER/$WORD.txt"
-    
     if [ ! -f "$FILE_PATH" ]; then
-        # Fallback: Search all files in that letter's folder for the word
         FILE_PATH=$(grep -rlF "$WORD" "$DICT_DIR/$FIRST_LETTER/" | head -n 1)
     fi
 
@@ -76,8 +73,9 @@ etym-info() {
     fi
 
     echo "--- Primary Definitions for: $WORD ---"
-    printf "%-20s | %-15s | %s\n" "INGLISCE" "PART OF SPEECH" "ORIGIN"
-    echo "------------------------------------------------------------"
+    # Widened the POS column to handle long compound tags like 'adjective, masculine noun'
+    printf "%-20s | %-30s | %s\n" "INGLISCE" "PART OF SPEECH" "ORIGIN"
+    echo "---------------------------------------------------------------------------------"
 
     # Split by blank lines (stanzas)
     awk -v RS="" '{print $0 "\n@END@"}' "$FILE_PATH" | while read -r -d '@END@' STANZA; do
@@ -102,9 +100,9 @@ etym-info() {
             REF_LINE="${LINES[$((REFORMED_IDX - 1))]}"
         fi
 
-        # 4. Clean both for matching
-        local CLEAN_REFORMED=$(echo "$REFORMED_LINE" | sed -E 's/^to //; s/\[[^]]+\]//g; s/\([^)]+\)//g; s/ -[a-z]+//g' | xargs)
-        local CLEAN_REF=$(echo "$REF_LINE" | sed -E 's/^to //; s/\[[^]]+\]//g; s/\([^)]+\)//g; s/ -[a-z]+//g' | xargs)
+        # 4. Strict Isolation of the Core Word (Strips 'to ', tags, and takes only the first word)
+        local CLEAN_REFORMED=$(echo "$REFORMED_LINE" | sed -E 's/\[[^]]+\]//g; s/\([^)]+\)//g' | xargs | sed -E 's/^to //' | cut -d' ' -f1 | tr -d ',')
+        local CLEAN_REF=$(echo "$REF_LINE" | sed -E 's/\[[^]]+\]//g; s/\([^)]+\)//g' | xargs | sed -E 's/^to //' | cut -d' ' -f1 | tr -d ',')
 
         # 5. DUAL-CHECK FILTER
         if [[ "$CLEAN_REF" != "$WORD" && "$CLEAN_REFORMED" != "$WORD" ]]; then
@@ -112,137 +110,27 @@ etym-info() {
         fi
 
         # 6. Extraction for Display
-        # Added 's/^to //' here so the table looks uniform
-        local INGLISCE=$(echo "$REFORMED_LINE" | sed -E 's/^to //; s/\([^)]+\)//g; s/ -[a-z].*$//g; s/\[[^]]+\]//g' | xargs)
+        local INGLISCE="$CLEAN_REFORMED"
         local LANG_CODE=$(echo "$STANZA" | grep -oP "\[\K[A-Z]+(?=\])" | head -1)
-        local POS_CODE=$(echo "$REFORMED_LINE" | grep -oP "\(\K[^)]+(?=\))" | tail -1)
         
-        local POS_FULL=$(get_pos_full "$POS_CODE")
+        # Strict POS Regex: Only grabs standard tags, ignores malformed conjugation lists inside parens
+        local POS_CODE=$(echo "$REFORMED_LINE" | grep -oP "\(\K[a-z ]{1,5}(, [a-z ]{1,5})*(?=\))" | tail -1)
+        
+        local POS_FULL=""
+        if [[ -n "$POS_CODE" ]]; then
+            POS_FULL=$(get_pos_full "$POS_CODE")
+            # Add a visual space after commas for readability (e.g., "adjective, masculine noun")
+            POS_FULL=$(echo "$POS_FULL" | sed 's/,/, /g')
+        else
+            POS_FULL="Unknown/Malformed"
+        fi
+        
         local LANG_FULL=$(get_lang_name "$LANG_CODE")
 
-        printf "%-20s | %-15s | %s (%s)\n" "$INGLISCE" "$POS_FULL" "${LANG_FULL:-???}" "${LANG_CODE:-?}"
+        printf "%-20s | %-30s | %s (%s)\n" "$INGLISCE" "$POS_FULL" "${LANG_FULL:-???}" "${LANG_CODE:-?}"
     done
 }
 
-
-# etym-summarize() {
-#     local FORMAT="text"
-#     local OUT_FILE=""
-#     local TARGET_INPUT=""
-
-#     # 1. Parse Arguments (--json, -o/--out)
-#     while [[ "$#" -gt 0 ]]; do
-#         case $1 in
-#             --json) FORMAT="json"; shift ;;
-#             -o|--out) OUT_FILE="$2"; shift 2 ;;
-#             *) 
-#                 if [[ -z "$TARGET_INPUT" ]]; then
-#                     TARGET_INPUT="$1"
-#                 fi
-#                 shift 
-#                 ;;
-#         esac
-#     done
-
-#     # 2. Resolve Path
-#     local TARGET_DIR=""
-#     if [ -z "$TARGET_INPUT" ]; then
-#         TARGET_DIR="$DICT_DIR"
-#     elif [ -d "$DICT_DIR/$TARGET_INPUT" ]; then
-#         TARGET_DIR="$DICT_DIR/$TARGET_INPUT"
-#     else
-#         TARGET_DIR="$TARGET_INPUT"
-#     fi
-
-#     if [ ! -d "$TARGET_DIR" ]; then
-#         echo "Error: Directory $TARGET_DIR not found."
-#         return 1
-#     fi
-
-#     # 3. Data Extraction Pipeline
-#     # Added `grep -rhv "http"` to strip out URL lines before extracting tags
-#     local POS_STATS=$(grep -rhv "http" "$TARGET_DIR" | \
-#         grep -Po "\(([a-z ]{1,5}(, [a-z ]{1,5})*)\)" | \
-#         tr -d '()' | \
-#         awk -F',' '{print $1}' | \
-#         sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | \
-#         sort | uniq -c | sort -rn)
-
-#     local LANG_STATS=$(grep -rhv "http" "$TARGET_DIR" | \
-#         grep -Po "\[[A-Z]+\]" | \
-#         tr -d '[]' | \
-#         sort | uniq -c | sort -rn)
-
-#     # 4. Format Output
-#     local OUTPUT=""
-
-#     if [[ "$FORMAT" == "json" ]]; then
-#         local POS_JSON=$(echo "$POS_STATS" | while read -r count tag; do
-#             [[ -z "$count" ]] && continue
-#             local full_name=$(grep -i "^$tag[[:space:]]" "$CONFIG_DIR/parts-of-speech.tsv" 2>/dev/null | sed "s/^$tag[[:space:]]*//" | xargs)
-#             printf '{"tag": "%s", "name": "%s", "count": %d}\n' "$tag" "${full_name:-Unknown}" "$count"
-#         done | jq -s '.')
-
-#         local LANG_JSON=$(echo "$LANG_STATS" | while read -r count tag; do
-#             [[ -z "$count" ]] && continue
-#             local full_name=$(get_lang_name "$tag")
-#             printf '{"tag": "%s", "name": "%s", "count": %d}\n' "$tag" "${full_name:-Unknown}" "$count"
-#         done | jq -s '.')
-
-#         OUTPUT=$(jq -n \
-#             --arg dir "$TARGET_DIR" \
-#             --argjson pos "${POS_JSON:-[]}" \
-#             --argjson lang "${LANG_JSON:-[]}" \
-#             '{directory: $dir, parts_of_speech: $pos, languages: $lang}')
-#     else
-#         OUTPUT+="Summarizing Data in: $TARGET_DIR\n"
-#         OUTPUT+="==========================================\n"
-        
-#         # --- Print Parts of Speech ---
-#         OUTPUT+="PARTS OF SPEECH\n"
-#         OUTPUT+="------------------------------------------\n"
-#         local TOTAL_POS=0
-#         while read -r count tag; do
-#             [[ -z "$count" ]] && continue
-#             local full_name=$(grep -i "^$tag[[:space:]]" "$CONFIG_DIR/parts-of-speech.tsv" 2>/dev/null | sed "s/^$tag[[:space:]]*//" | xargs)
-            
-#             local line=$(printf "%7s | %-25s (%s)" "$count" "${full_name:-Unknown}" "$tag")
-#             OUTPUT+="$line\n"
-            
-#             TOTAL_POS=$((TOTAL_POS + count))
-#         done <<< "$POS_STATS"
-#         OUTPUT+="------------------------------------------\n"
-        
-#         local footer_pos=$(printf "%7s | %-25s" "$TOTAL_POS" "TOTAL POS TAGS")
-#         OUTPUT+="$footer_pos\n\n"
-
-#         # --- Print Languages ---
-#         OUTPUT+="LANGUAGE ORIGINS\n"
-#         OUTPUT+="------------------------------------------\n"
-#         local TOTAL_LANG=0
-#         while read -r count tag; do
-#             [[ -z "$count" ]] && continue
-#             local full_name=$(get_lang_name "$tag")
-            
-#             local line=$(printf "%7s | %-25s [%s]" "$count" "${full_name:-Unknown}" "$tag")
-#             OUTPUT+="$line\n"
-            
-#             TOTAL_LANG=$((TOTAL_LANG + count))
-#         done <<< "$LANG_STATS"
-#         OUTPUT+="------------------------------------------\n"
-        
-#         local footer_lang=$(printf "%7s | %-25s" "$TOTAL_LANG" "TOTAL LANG TAGS")
-#         OUTPUT+="$footer_lang\n"
-#     fi
-
-#     # 5. Output Routing
-#     if [[ -n "$OUT_FILE" ]]; then
-#         echo -e "$OUTPUT" > "$OUT_FILE"
-#         echo "✅ Summary successfully written to $OUT_FILE"
-#     else
-#         echo -e "$OUTPUT"
-#     fi
-# }
 
 etym-summarize() {
     local FORMAT="text"
