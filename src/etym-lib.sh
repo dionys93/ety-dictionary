@@ -309,6 +309,7 @@ etym-summarize() {
     fi
 }
 
+
 etym-chain() {
     local WORD=$1
     local FIRST_LETTER=$(echo "${WORD:0:1}" | tr '[:upper:]' '[:lower:]')
@@ -363,6 +364,72 @@ etym-chain() {
         done
         echo "------------------------------------------------------------"
     done
+}
+
+
+etym-cognates() {
+    local QUERY=$1
+    if [ -z "$QUERY" ]; then
+        echo "Usage: etym-cognates <root_word_or_phrase>"
+        return 1
+    fi
+
+    echo "--- Modern Cognates for: $QUERY ---"
+
+    # Stream the entire dictionary through awk
+    find "$DICT_DIR" -type f -name "*.txt" -print0 | xargs -0 awk -v query="$QUERY" -v dict_dir="$DICT_DIR/" '
+        BEGIN { 
+            RS=""         # Paragraph mode (stanzas)
+            FS="\n"       # Line separation within stanzas
+            IGNORECASE=1  # Case-insensitive search
+        }
+        
+        # Trigger ONLY if the stanza contains the search query
+        $0 ~ query {
+            reformed_idx = 0
+            
+            # Find the Reformed Line (the line right before the first URL)
+            for (i=1; i<=NF; i++) {
+                if ($i ~ /^http/) { 
+                    reformed_idx = i - 1; 
+                    break; 
+                }
+            }
+            
+            if (reformed_idx > 0) {
+                ref_line = $reformed_idx
+                
+                # Extract POS tag exactly as written (e.g., "(v)" or "(m n)")
+                pos_tag = ""
+                if (match(ref_line, /\(([a-z ]+(, [a-z ]+)*)\)/)) {
+                    pos_tag = substr(ref_line, RSTART, RLENGTH)
+                }
+                
+                # Clean the line to isolate the modern Inglisce word
+                temp_line = ref_line
+                gsub(/\[[^\]]+\]/, "", temp_line)       # Strip language tags [LANG]
+                gsub(/\([^)]+\)/, "", temp_line)        # Strip POS tags (pos)
+                sub(/^[ \t]+|[ \t]+$/, "", temp_line)   # Trim whitespace
+                sub(/^[tT][oO][ \t]+/, "", temp_line)   # Strip infinitive "to "
+                
+                # Grab the first word, stripping out commas and conjugations
+                split(temp_line, words, " ")
+                target = words[1]
+                gsub(/,$/, "", target) 
+                
+                if (target != "") {
+                    # Strip the absolute path to make the output clean (e.g., "a/animate.txt")
+                    rel_file = FILENAME
+                    sub(dict_dir, "", rel_file)
+                    
+                    # Print formatted output
+                    printf "  ↳ %-25s %-12s [from %s]\n", target, pos_tag, rel_file
+                }
+            }
+        }
+    ' | sort -u # Sort alphabetically and remove any duplicate hits
+    
+    echo "------------------------------------------------------------"
 }
 
 
