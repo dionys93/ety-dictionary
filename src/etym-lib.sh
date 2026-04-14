@@ -1490,3 +1490,73 @@ etym-visualize() {
     echo "   2. Right-click the file tab and select 'Open Preview' (or press Cmd+K V / Ctrl+K V)."
     echo "================================================================="
 }
+
+
+etym-publish() {
+    local TARGET_DIR="${1:-$DICT_DIR}"
+    local OUT_DIR="./dist/api" # Where React will look for the data
+    
+    if [ ! -d "$TARGET_DIR" ]; then
+        echo "Error: Directory $TARGET_DIR not found."
+        return 1
+    fi
+
+    echo "Publishing Dictionary API to $OUT_DIR..."
+    echo "================================================================="
+
+    # 1. Clean and prep output directory
+    rm -rf "$OUT_DIR"
+    mkdir -p "$OUT_DIR/letters"
+
+    local NAV_JSON="[]"
+    local TOTAL_WORDS=0
+
+    # 2. Crawl the alphabetical directories (a, b, c...)
+    for letter_dir in "$TARGET_DIR"/*/; do
+        # Skip if not a directory (e.g., if the folder is empty)
+        [ -d "${letter_dir}" ] || continue 
+        
+        local letter=$(basename "$letter_dir" | tr '[:lower:]' '[:upper:]')
+        local letter_lower=$(basename "$letter_dir")
+        
+        local LETTER_WORDS_JSON="[]"
+        local word_count=0
+
+        # 3. Read every word file in that letter directory
+        while IFS= read -r file; do
+            local word=$(basename "$file" .txt)
+            
+            # (Optional) You could call etym-export here to get the FULL JSON for the word
+            # For navigation, we just need the word name and the URL path.
+            
+            local WORD_OBJ=$(jq -n --arg w "$word" --arg url "/dictionary/$letter_lower/$word" \
+                '{word: $w, url: $url}')
+                
+            LETTER_WORDS_JSON=$(echo "$LETTER_WORDS_JSON" | jq --argjson obj "$WORD_OBJ" '. + [$obj]')
+            word_count=$((word_count + 1))
+            TOTAL_WORDS=$((TOTAL_WORDS + 1))
+            
+        done < <(find "$letter_dir" -maxdepth 1 -type f -name "*.txt" | sort)
+
+        # 4. Save the chunked file (e.g., dist/api/letters/a.json)
+        echo "$LETTER_WORDS_JSON" > "$OUT_DIR/letters/$letter_lower.json"
+
+        # 5. Add this letter to the Master Navigation array
+        local NAV_OBJ=$(jq -n \
+            --arg letter "$letter" \
+            --arg url "/dictionary/$letter_lower" \
+            --arg count "$word_count" \
+            '{letter: $letter, url: $url, count: ($count|tonumber)}')
+            
+        NAV_JSON=$(echo "$NAV_JSON" | jq --argjson obj "$NAV_OBJ" '. + [$obj]')
+        
+        echo "✅ Processed [$letter]: $word_count words"
+    done
+
+    # 6. Save the Master Navigation file
+    echo "$NAV_JSON" > "$OUT_DIR/navigation.json"
+
+    echo "================================================================="
+    echo "🎉 Publish Complete! Compiled $TOTAL_WORDS total words."
+    echo "Data ready for React in: $OUT_DIR"
+}
