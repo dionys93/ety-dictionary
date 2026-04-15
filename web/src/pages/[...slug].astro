@@ -1,0 +1,117 @@
+---
+// web/src/pages/[...slug].astro
+import fs from 'node:fs';
+import path from 'node:path';
+
+export async function getStaticPaths() {
+  const dataDir = path.resolve('../data-text/inglisce');
+  const pagesToGenerate = [];
+
+  function scanDirectory(currentPath, routePath) {
+    // 1. IF IT IS A FILE
+    if (fs.statSync(currentPath).isFile()) {
+       if (path.basename(currentPath).startsWith('.')) return;
+       
+       const content = fs.readFileSync(currentPath, 'utf-8');
+       pagesToGenerate.push({
+         params: { slug: routePath },
+         props: { 
+            type: 'file', 
+            title: path.basename(currentPath, path.extname(currentPath)), 
+            content 
+         }
+       });
+       return;
+    }
+
+    // 2. IF IT IS A DIRECTORY
+    const entries = fs.readdirSync(currentPath, { withFileTypes: true });
+    const contents = [];
+    let indexContent = null; // Variable to hold the index file content
+
+    for (const entry of entries) {
+       if (entry.name.startsWith('.')) continue;
+       
+       // INTERCEPT INDEX FILES: Read content and skip adding to links
+       if (entry.isFile() && (entry.name === 'index.md' || entry.name === 'index.txt')) {
+         indexContent = fs.readFileSync(path.join(currentPath, entry.name), 'utf-8');
+         continue; 
+       }
+       
+       const cleanName = entry.name.replace(/\.(md|txt)$/, '');
+       const childRoute = routePath ? `${routePath}/${cleanName}` : cleanName;
+       
+       contents.push({
+         name: cleanName,
+         isDir: entry.isDirectory(),
+         href: `/${childRoute}`
+       });
+
+       // Recursively scan deeper
+       if (entry.isDirectory() || entry.isFile()) {
+         scanDirectory(path.join(currentPath, entry.name), childRoute);
+       }
+    }
+
+    // Generate the index page for THIS directory
+    pagesToGenerate.push({
+      params: { slug: routePath || undefined }, 
+      props: { 
+        type: 'directory', 
+        title: path.basename(currentPath) || 'Inglisce Dictionary',
+        contents,
+        content: indexContent // Pass the index content down to the template
+      }
+    });
+  }
+
+  scanDirectory(dataDir, '');
+  return pagesToGenerate;
+}
+
+const { type, title, contents, content } = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{title}</title>
+  </head>
+  <body>
+    <main style="max-width: 800px; margin: 2rem auto; font-family: sans-serif;">
+      <h1>{title}</h1>
+
+      {type === 'directory' ? (
+        <div>
+          {/* If an index.md/.txt was found, render its content at the top */}
+          {content && (
+            <div style="background: #f4f4f4; padding: 1rem; border-radius: 4px; margin-bottom: 2rem;">
+              <pre style="white-space: pre-wrap;">{content}</pre>
+            </div>
+          )}
+          
+          {/* Only render the list if there are actual items left to show */}
+          {contents.length > 0 && (
+            <ul>
+              {contents.map((item) => (
+                <li style="margin: 0.5rem 0;">
+                  <a href={item.href} style="text-decoration: none; color: #0066cc;">
+                    {item.isDir ? '📁 ' : '📄 '} {item.name}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
+      ) : (
+        <div style="background: #f4f4f4; padding: 1rem; border-radius: 4px;">
+          <pre style="white-space: pre-wrap;">{content}</pre>
+        </div>
+      )}
+      
+      <div style="margin-top: 2rem;">
+        <a href="javascript:history.back()" style="color: #666;">← Go Back</a>
+      </div>
+    </main>
+  </body>
+</html>
