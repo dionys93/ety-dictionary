@@ -2,6 +2,7 @@
 // web/src/pages/[...slug].astro
 import fs from 'node:fs';
 import path from 'node:path';
+import { marked } from 'marked';
 
 export async function getStaticPaths() {
   const dataDir = path.resolve('../data-text/inglisce');
@@ -13,12 +14,16 @@ export async function getStaticPaths() {
        if (path.basename(currentPath).startsWith('.')) return;
        
        const content = fs.readFileSync(currentPath, 'utf-8');
+       const ext = path.extname(currentPath); // Capture .md or .txt
+       
        pagesToGenerate.push({
          params: { slug: routePath },
          props: { 
             type: 'file', 
-            title: path.basename(currentPath, path.extname(currentPath)), 
-            content 
+            title: path.basename(currentPath, ext), 
+            content,
+            ext, // Pass the extension to the template
+            isRoot: false
          }
        });
        return;
@@ -27,14 +32,15 @@ export async function getStaticPaths() {
     // 2. IF IT IS A DIRECTORY
     const entries = fs.readdirSync(currentPath, { withFileTypes: true });
     const contents = [];
-    let indexContent = null; // Variable to hold the index file content
+    let indexContent = null; 
+    let indexExt = null; // Track the index file's extension
 
     for (const entry of entries) {
        if (entry.name.startsWith('.')) continue;
        
-       // INTERCEPT INDEX FILES: Read content and skip adding to links
        if (entry.isFile() && (entry.name === 'index.md' || entry.name === 'index.txt')) {
          indexContent = fs.readFileSync(path.join(currentPath, entry.name), 'utf-8');
+         indexExt = path.extname(entry.name);
          continue; 
        }
        
@@ -47,20 +53,20 @@ export async function getStaticPaths() {
          href: `/${childRoute}`
        });
 
-       // Recursively scan deeper
        if (entry.isDirectory() || entry.isFile()) {
          scanDirectory(path.join(currentPath, entry.name), childRoute);
        }
     }
 
-    // Generate the index page for THIS directory
     pagesToGenerate.push({
       params: { slug: routePath || undefined }, 
       props: { 
         type: 'directory', 
         title: path.basename(currentPath) || 'Inglisce Dictionary',
         contents,
-        content: indexContent // Pass the index content down to the template
+        content: indexContent,
+        ext: indexExt,
+        isRoot: routePath === ''
       }
     });
   }
@@ -69,7 +75,10 @@ export async function getStaticPaths() {
   return pagesToGenerate;
 }
 
-const { type, title, contents, content } = Astro.props;
+const { type, title, contents, content, ext, isRoot } = Astro.props;
+
+// If the file is markdown, parse it to HTML
+const parsedContent = (ext === '.md' && content) ? marked.parse(content) : content;
 ---
 
 <html lang="en">
@@ -79,18 +88,22 @@ const { type, title, contents, content } = Astro.props;
   </head>
   <body>
     <main style="max-width: 800px; margin: 2rem auto; font-family: sans-serif;">
-      <h1>{title}</h1>
+      
+      {!content && <h1>{title}</h1>}
 
       {type === 'directory' ? (
         <div>
-          {/* If an index.md/.txt was found, render its content at the top */}
           {content && (
             <div style="background: #f4f4f4; padding: 1rem; border-radius: 4px; margin-bottom: 2rem;">
-              <pre style="white-space: pre-wrap;">{content}</pre>
+              {/* Conditionally render HTML or raw text */}
+              {ext === '.md' ? (
+                <div set:html={parsedContent} />
+              ) : (
+                <pre style="white-space: pre-wrap; font-family: inherit;">{content}</pre>
+              )}
             </div>
           )}
           
-          {/* Only render the list if there are actual items left to show */}
           {contents.length > 0 && (
             <ul>
               {contents.map((item) => (
@@ -105,13 +118,20 @@ const { type, title, contents, content } = Astro.props;
         </div>
       ) : (
         <div style="background: #f4f4f4; padding: 1rem; border-radius: 4px;">
-          <pre style="white-space: pre-wrap;">{content}</pre>
+          {/* Conditionally render HTML or raw text */}
+          {ext === '.md' ? (
+            <div set:html={parsedContent} />
+          ) : (
+            <pre style="white-space: pre-wrap; font-family: inherit;">{content}</pre>
+          )}
         </div>
       )}
       
-      <div style="margin-top: 2rem;">
-        <a href="javascript:history.back()" style="color: #666;">← Go Back</a>
-      </div>
+      {!isRoot && (
+        <div style="margin-top: 2rem;">
+          <a href="javascript:history.back()" style="color: #666;">← Go Back</a>
+        </div>
+      )}
     </main>
   </body>
 </html>
