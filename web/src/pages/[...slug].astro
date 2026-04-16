@@ -1,84 +1,14 @@
 ---
 // web/src/pages/[...slug].astro
-import fs from 'node:fs';
-import path from 'node:path';
-import { marked } from 'marked';
+import { getDictionaryPaths } from '../utils/dictionary.js';
+import ContentView from '../components/ContentView.astro';
 
+// Delegate the heavy lifting to our utility function
 export async function getStaticPaths() {
-  const dataDir = path.resolve('../data-text/inglisce');
-  const pagesToGenerate = [];
-
-  function scanDirectory(currentPath, routePath) {
-    // 1. IF IT IS A FILE
-    if (fs.statSync(currentPath).isFile()) {
-       if (path.basename(currentPath).startsWith('.')) return;
-       
-       const content = fs.readFileSync(currentPath, 'utf-8');
-       const ext = path.extname(currentPath); // Capture .md or .txt
-       
-       pagesToGenerate.push({
-         params: { slug: routePath },
-         props: { 
-            type: 'file', 
-            title: path.basename(currentPath, ext), 
-            content,
-            ext, // Pass the extension to the template
-            isRoot: false
-         }
-       });
-       return;
-    }
-
-    // 2. IF IT IS A DIRECTORY
-    const entries = fs.readdirSync(currentPath, { withFileTypes: true });
-    const contents = [];
-    let indexContent = null; 
-    let indexExt = null; // Track the index file's extension
-
-    for (const entry of entries) {
-       if (entry.name.startsWith('.')) continue;
-       
-       if (entry.isFile() && (entry.name === 'index.md' || entry.name === 'index.txt')) {
-         indexContent = fs.readFileSync(path.join(currentPath, entry.name), 'utf-8');
-         indexExt = path.extname(entry.name);
-         continue; 
-       }
-       
-       const cleanName = entry.name.replace(/\.(md|txt)$/, '');
-       const childRoute = routePath ? `${routePath}/${cleanName}` : cleanName;
-       
-       contents.push({
-         name: cleanName,
-         isDir: entry.isDirectory(),
-         href: `/${childRoute}`
-       });
-
-       if (entry.isDirectory() || entry.isFile()) {
-         scanDirectory(path.join(currentPath, entry.name), childRoute);
-       }
-    }
-
-    pagesToGenerate.push({
-      params: { slug: routePath || undefined }, 
-      props: { 
-        type: 'directory', 
-        title: path.basename(currentPath) || 'Inglisce Dictionary',
-        contents,
-        content: indexContent,
-        ext: indexExt,
-        isRoot: routePath === ''
-      }
-    });
-  }
-
-  scanDirectory(dataDir, '');
-  return pagesToGenerate;
+  return getDictionaryPaths();
 }
 
 const { type, title, contents, content, ext, isRoot } = Astro.props;
-
-// If the file is markdown, parse it to HTML
-const parsedContent = (ext === '.md' && content) ? marked.parse(content) : content;
 ---
 
 <html lang="en">
@@ -91,47 +21,29 @@ const parsedContent = (ext === '.md' && content) ? marked.parse(content) : conte
       
       {!content && <h1>{title}</h1>}
 
-      {type === 'directory' ? (
-        <div>
-          {content && (
-            <div style="background: #f4f4f4; padding: 1rem; border-radius: 4px; margin-bottom: 2rem;">
-              {/* Conditionally render HTML or raw text */}
-              {ext === '.md' ? (
-                <div set:html={parsedContent} />
-              ) : (
-                <pre style="white-space: pre-wrap; font-family: inherit;">{content}</pre>
-              )}
-            </div>
-          )}
-          
-          {contents.length > 0 && (
-            <ul>
-              {contents.map((item) => (
-                <li style="margin: 0.5rem 0;">
-                  <a href={item.href} style="text-decoration: none; color: #0066cc;">
-                    {item.isDir ? '📁 ' : '📄 '} {item.name}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          )}
-        </div>
-      ) : (
-        <div style="background: #f4f4f4; padding: 1rem; border-radius: 4px;">
-          {/* Conditionally render HTML or raw text */}
-          {ext === '.md' ? (
-            <div set:html={parsedContent} />
-          ) : (
-            <pre style="white-space: pre-wrap; font-family: inherit;">{content}</pre>
-          )}
-        </div>
+      {/* RENDER THE CONTENT (Works for standard files or intercepted index files) */}
+      {content && <ContentView content={content} ext={ext} />}
+
+      {/* RENDER THE DIRECTORY LIST (If applicable) */}
+      {type === 'directory' && contents.length > 0 && (
+        <ul>
+          {contents.map((item) => (
+            <li style="margin: 0.5rem 0;">
+              <a href={item.href} style="text-decoration: none; color: #0066cc;">
+                {item.isDir ? '📁 ' : '📄 '} {item.name}
+              </a>
+            </li>
+          ))}
+        </ul>
       )}
       
+      {/* RENDER THE BACK BUTTON */}
       {!isRoot && (
         <div style="margin-top: 2rem;">
           <a href="javascript:history.back()" style="color: #666;">← Go Back</a>
         </div>
       )}
+      
     </main>
   </body>
 </html>

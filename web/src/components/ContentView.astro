@@ -1,0 +1,17 @@
+---
+// web/src/components/ContentView.astro
+import { marked } from 'marked';
+
+const { content, ext } = Astro.props;
+
+// Only run marked if there is actual markdown to parse
+const parsedContent = (ext === '.md' && content) ? marked.parse(content) : content;
+---
+
+<div style="background: #f4f4f4; padding: 1rem; border-radius: 4px; margin-bottom: 2rem;">
+  {ext === '.md' ? (
+    <div set:html={parsedContent} />
+  ) : (
+    <pre style="white-space: pre-wrap; font-family: inherit;">{content}</pre>
+  )}
+</div>
