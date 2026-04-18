@@ -9,6 +9,8 @@ export async function getStaticPaths() {
 }
 
 const { type, title, contents, content, ext, isRoot } = Astro.props;
+// Grab the current URL path (slug) from Astro
+const { slug } = Astro.params;
 ---
 
 <html lang="en">
@@ -26,6 +28,7 @@ const { type, title, contents, content, ext, isRoot } = Astro.props;
         content={content} 
         ext={ext} 
         isRoot={isRoot} 
+        slug={slug || ''}  {/* Pass it down! (Fallback to empty string for root) */}
       />
     ) : (
       <ContentView 
