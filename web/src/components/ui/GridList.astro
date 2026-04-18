@@ -1,0 +1,77 @@
+---
+// web/src/components/ui/GridList.astro
+const { items } = Astro.props;
+---
+
+<ul class="grid-list">
+  {items.map((item) => (
+    <li class="grid-item">
+      <a href={item.href} class="link">
+        <span class="icon">{item.isDir ? '📁' : '📄'}</span>
+        <span class="name">{item.name}</span>
+      </a>
+    </li>
+  ))}
+</ul>
+
+<style>
+  /* Base Desktop Layout: 3 equal columns */
+  .grid-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem; 
+    width: 100%;
+  }
+  
+  .grid-item {
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+    transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
+  }
+  
+  /* Subtle lift effect on hover */
+  .grid-item:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 1rem;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    height: 100%; /* Ensures the entire box is clickable */
+    box-sizing: border-box;
+  }
+
+  .icon {
+    font-size: 1.25rem;
+    flex-shrink: 0; /* Prevents the icon from squishing on long words */
+  }
+  
+  /* Tablet View: Snap to 2 columns */
+  @media (max-width: 768px) {
+    .grid-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  /* Mobile View: Snap to 1 column */
+  @media (max-width: 480px) {
+    .grid-list {
+      grid-template-columns: 1fr;
+    }
+    .link {
+      padding: 0.875rem; /* Slightly tighter padding on small screens */
+    }
+  }
+</style>

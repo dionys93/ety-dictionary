@@ -4,20 +4,21 @@ import { marked } from 'marked';
 import Container from './ui/Container.astro';
 import Column from './ui/Column.astro';
 import List from './ui/List.astro';
+import GridList from './ui/GridList.astro';
 import BackButton from './ui/BackButton.astro';
 import ScrollBar from './ui/ScrollBar.astro';
 
-const { title, items, isRoot, content, ext } = Astro.props;
+const { title, items, isRoot, content, ext, slug } = Astro.props;
 const parsedContent = (ext === '.md' && content) ? marked.parse(content) : content;
+
+const useGrid = slug && slug.startsWith('dictionary');
 ---
 
 <Container className="listContainer">
-    <Column className="listColumn">
+    <Column className="listColumn" style={{ width: '100%', maxWidth: '900px' }}>
         
-        {/* Only show the title if there is no index content overriding it */}
         {!content && <h1 style="margin-bottom: 2rem;">{title}</h1>}
 
-        {/* If an index.md file was found, render it safely inside a ScrollBar */}
         {content && (
             <div style="width: 100%; margin-bottom: 2rem;">
                 <ScrollBar>
@@ -30,12 +31,13 @@ const parsedContent = (ext === '.md' && content) ? marked.parse(content) : conte
             </div>
         )}
 
-        {/* Render the actual navigation links */}
-        {items && items.length > 0 && <List items={items} />}
+        {/* FIX: Removed the width: 100% wrapper here so the standard List shrinks back to normal */}
+        {items && items.length > 0 && (
+            useGrid ? <GridList items={items} /> : <List items={items} />
+        )}
 
-        {/* The Back Button */}
         {!isRoot && (
-            <div style="margin-top: 2rem;">
+            <div style="margin-top: 2rem; align-self: flex-start;">
                 <BackButton />
             </div>
         )}
