@@ -1,0 +1,48 @@
+---
+// web/src/components/primitives/List.astro
+const { items } = Astro.props;
+---
+
+<ul class="list">
+  {items.map((item) => (
+    <li class="listItem">
+      <a href={item.href} class="link">{item.name}</a>
+    </li>
+  ))}
+</ul>
+
+<style>
+  .list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .listItem {
+    margin-bottom: 8px;
+    padding: 8px 16px;
+    background-color: #f7f7f7;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+  }
+  
+  .listItem:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .link {
+    display: block; /* Makes the entire box clickable */
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+  }
+</style>

@@ -1,0 +1,35 @@
+---
+// web/src/components/ui/Column.astro
+const { className = '', id, role, style } = Astro.props;
+---
+
+<div class={`column ${className}`} id={id} role={role} style={style}>
+  <slot /> {/* This replaces React's {children} */}
+</div>
+
+<style>
+  /* Default (Desktop) */
+  .column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  /* Tablet View */
+  @media (max-width: 768px) {
+    .column {
+      padding: 8px;
+    }
+  }
+
+  /* Mobile View */
+  @media (max-width: 480px) {
+    .column {
+      padding: 5px;
+    }
+  }
+</style>

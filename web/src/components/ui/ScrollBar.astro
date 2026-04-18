@@ -1,0 +1,43 @@
+---
+// web/src/components/primitives/ScrollBar.astro
+const { style } = Astro.props;
+---
+
+<div class="scrollContainer" style={style}>
+  <slot />
+</div>
+
+<style>
+  .scrollContainer {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    ms-overflow-style: none;
+    height: 100%; 
+    width: 100%; 
+    padding: 0; 
+  }
+
+  /* Keep the specific pre-formatting for your markdown/text files */
+  .scrollContainer pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  /* Webkit Scrollbar Styling */
+  .scrollContainer::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .scrollContainer::-webkit-scrollbar-track {
+    background: gray;
+  }
+
+  .scrollContainer::-webkit-scrollbar-thumb {
+    background-color: blue;
+    border-radius: 10px;
+  }
+</style>

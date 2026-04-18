@@ -1,0 +1,44 @@
+---
+// web/src/components/DirectoryView.astro
+import { marked } from 'marked';
+import Container from './ui/Container.astro';
+import Column from './ui/Column.astro';
+import List from './ui/List.astro';
+import BackButton from './ui/BackButton.astro';
+import ScrollBar from './ui/ScrollBar.astro';
+
+const { title, items, isRoot, content, ext } = Astro.props;
+const parsedContent = (ext === '.md' && content) ? marked.parse(content) : content;
+---
+
+<Container className="listContainer">
+    <Column className="listColumn">
+        
+        {/* Only show the title if there is no index content overriding it */}
+        {!content && <h1 style="margin-bottom: 2rem;">{title}</h1>}
+
+        {/* If an index.md file was found, render it safely inside a ScrollBar */}
+        {content && (
+            <div style="width: 100%; margin-bottom: 2rem;">
+                <ScrollBar>
+                    {ext === '.md' ? (
+                        <div class="markdown-body" set:html={parsedContent} />
+                    ) : (
+                        <pre style="white-space: pre-wrap; font-family: inherit;">{content}</pre>
+                    )}
+                </ScrollBar>
+            </div>
+        )}
+
+        {/* Render the actual navigation links */}
+        {items && items.length > 0 && <List items={items} />}
+
+        {/* The Back Button */}
+        {!isRoot && (
+            <div style="margin-top: 2rem;">
+                <BackButton />
+            </div>
+        )}
+
+    </Column>
+</Container>

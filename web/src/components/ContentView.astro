@@ -1,17 +1,31 @@
 ---
 // web/src/components/ContentView.astro
 import { marked } from 'marked';
+import Container from './ui/Container.astro';
+import Column from './ui/Column.astro';
+import ScrollBar from './ui/ScrollBar.astro';
+import BackButton from './ui/BackButton.astro';
 
-const { content, ext } = Astro.props;
-
-// Only run marked if there is actual markdown to parse
+const { content, ext, isRoot } = Astro.props;
 const parsedContent = (ext === '.md' && content) ? marked.parse(content) : content;
 ---
 
-<div style="background: #f4f4f4; padding: 1rem; border-radius: 4px; margin-bottom: 2rem;">
-  {ext === '.md' ? (
-    <div set:html={parsedContent} />
-  ) : (
-    <pre style="white-space: pre-wrap; font-family: inherit;">{content}</pre>
-  )}
-</div>
+<Container>
+    <Column>
+        
+        <ScrollBar>
+            {ext === '.md' ? (
+                <div class="markdown-body" set:html={parsedContent} />
+            ) : (
+                <pre style="white-space: pre-wrap; font-family: inherit;">{content}</pre>
+            )}
+        </ScrollBar>
+        
+        {!isRoot && (
+            <div style="margin-top: 2rem;">
+                <BackButton />
+            </div>
+        )}
+
+    </Column>
+</Container>
