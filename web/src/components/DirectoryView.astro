@@ -1,6 +1,11 @@
 ---
 // web/src/components/DirectoryView.astro
+
+// --- IMPORTS ---
+// Import the Markdown parser for any index.md files that live in a directory
 import { marked } from 'marked';
+
+// Import reusable UI components for layout and navigation
 import Container from './ui/Container.astro';
 import Column from './ui/Column.astro';
 import List from './ui/List.astro';
@@ -8,20 +13,35 @@ import GridList from './ui/GridList.astro';
 import BackButton from './ui/BackButton.astro';
 import ScrollBar from './ui/ScrollBar.astro';
 
+// --- PROPS & STATE ---
+// Destructure the properties passed down from the catch-all route.
+// 'items' represents the files/folders inside this directory.
 const { title, items, isRoot, content, ext, slug } = Astro.props;
+
+// --- DATA PROCESSING ---
+// If this directory has a readable index file (like index.md) attached to it, parse it to HTML
 const parsedContent = (ext === '.md' && content) ? marked.parse(content) : content;
 
+// --- LAYOUT LOGIC ---
+// Dynamically determine which list style to use. 
+// If the user is navigating the actual dictionary entries (path starts with 'dictionary'), 
+// it switches to the GridList component for a better browsing experience.
 const useGrid = slug && slug.startsWith('dictionary');
 ---
 
 <Container className="listContainer">
     <Column className="listColumn" style={{ width: '100%', maxWidth: '900px' }}>
         
+        {/* --- HEADER OVERRIDE --- */}
+        {/* Only display the default <h1> title if the directory doesn't have an index file providing its own headings */}
         {!content && <h1 style="margin-bottom: 2rem;">{title}</h1>}
 
+        {/* --- DIRECTORY CONTEXT / INDEX FILE --- */}
+        {/* If the folder has an index.md/txt, render that content first before listing the folder's contents */}
         {content && (
             <div style="width: 100%; margin-bottom: 2rem;">
                 <ScrollBar>
+                    {/* Inject parsed Markdown or wrap raw text in a <pre> tag to preserve formatting */}
                     {ext === '.md' ? (
                         <div class="markdown-body" set:html={parsedContent} />
                     ) : (
@@ -31,11 +51,16 @@ const useGrid = slug && slug.startsWith('dictionary');
             </div>
         )}
 
+        {/* --- FOLDER CONTENTS VIEW --- */}
         {/* FIX: Removed the width: 100% wrapper here so the standard List shrinks back to normal */}
+        {/* Check if there are actually files or sub-folders to show */}
         {items && items.length > 0 && (
+            // Toggle between the grid view (for dictionary terms) and standard list (for generic folders like /orthography)
             useGrid ? <GridList items={items} /> : <List items={items} />
         )}
 
+        {/* --- NAVIGATION --- */}
+        {/* Provide a back button to go up a directory level, unless the user is already at the absolute root */}
         {!isRoot && (
             <div style="margin-top: 2rem; align-self: flex-start;">
                 <BackButton />

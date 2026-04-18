@@ -28,13 +28,14 @@ const { slug } = Astro.params;
         content={content} 
         ext={ext} 
         isRoot={isRoot} 
-        slug={slug || ''}  {/* Pass it down! (Fallback to empty string for root) */}
+        slug={slug || ''} 
       />
     ) : (
       <ContentView 
         content={content} 
         ext={ext} 
         isRoot={isRoot} 
+        slug={slug || ''}
       />
     )}
 

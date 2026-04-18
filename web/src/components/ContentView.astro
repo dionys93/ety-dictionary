@@ -1,28 +1,65 @@
 ---
 // web/src/components/ContentView.astro
+
+// --- IMPORTS ---
+// Import the Markdown parser to convert raw .md text into HTML
 import { marked } from 'marked';
+
+// Import UI layout components for consistent page structure
 import Container from './ui/Container.astro';
 import Column from './ui/Column.astro';
-import ScrollBar from './ui/ScrollBar.astro';
 import BackButton from './ui/BackButton.astro';
+import ScrollBar from './ui/ScrollBar.astro';
 
-const { content, ext, isRoot } = Astro.props;
+// Import the interactive React component for the Great Vowel Shift page
+import VowelShiftVisualizer from './VowelShiftVisualizer.jsx';
+
+// --- PROPS & STATE ---
+// Destructure properties passed down from the parent route ([...slug].astro).
+// 'slug' is crucial here: it tells us exactly which page the user is currently viewing.
+const { content, ext, isRoot, slug } = Astro.props;
+
+// --- DATA PROCESSING ---
+// If the file has a .md extension and contains content, parse it into HTML.
+// Otherwise, leave it as raw text (useful for fallback .txt files).
 const parsedContent = (ext === '.md' && content) ? marked.parse(content) : content;
 ---
 
-<Container>
-    <Column>
+<Container className="contentContainer">
+    <Column className="contentColumn" style={{ width: '100%', maxWidth: '900px' }}>
         
-        <ScrollBar>
-            {ext === '.md' ? (
-                <div class="markdown-body" set:html={parsedContent} />
-            ) : (
-                <pre style="white-space: pre-wrap; font-family: inherit;">{content}</pre>
-            )}
-        </ScrollBar>
-        
+        {/* --- MAIN CONTENT RENDERING --- */}
+        {/* Only render this block if there is actually content to display */}
+        {content && (
+            <div style="width: 100%; margin-bottom: 2rem;">
+                <ScrollBar>
+                    {/* Conditionally render parsed HTML for Markdown, or a <pre> block for raw text */}
+                    {ext === '.md' ? (
+                        // 'set:html' is Astro's directive to inject the raw HTML string rather than escaping it
+                        <div class="markdown-body" set:html={parsedContent} />
+                    ) : (
+                        <pre style="white-space: pre-wrap; font-family: inherit;">{content}</pre>
+                    )}
+                </ScrollBar>
+            </div>
+        )}
+
+        {/* --- CONDITIONAL FEATURE INJECTION --- */}
+        {/* Check the current URL slug. If the user is on the GVS page, render the interactive React tool. */}
+        {slug === 'orthography/phenomena/great-vowel-shift' && (
+            <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #e5e7eb;">
+                <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem; color: #1f2937;">
+                    Interactive GVS Visualizer
+                </h3>
+                {/* The 'client:load' directive is essential: it tells Astro to ship the JavaScript to the browser so the React component actually works */}
+                <VowelShiftVisualizer client:load />
+            </div>
+        )}
+
+        {/* --- NAVIGATION --- */}
+        {/* Display the Back button on all pages except the absolute root directory */}
         {!isRoot && (
-            <div style="margin-top: 2rem;">
+            <div style="margin-top: 2rem; align-self: flex-start;">
                 <BackButton />
             </div>
         )}
