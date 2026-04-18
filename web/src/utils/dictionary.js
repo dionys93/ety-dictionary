@@ -19,13 +19,17 @@ export function getDictionaryPaths() {
   const dataDir = path.resolve('../data-text/inglisce');
   const pagesToGenerate = [];
 
-  function scanDirectory(currentPath, routePath) {
-    let stat;
+  const getStatSafe = (targetPath) => {
     try {
-      stat = fs.statSync(currentPath);
-    } catch (err) {
-      return; // Skip silently if the file path is broken or inaccessible
+      return fs.statSync(targetPath);
+    } catch {
+      return null;
     }
+  };
+
+  function scanDirectory(currentPath, routePath) {
+    const stat = getStatSafe(currentPath);
+    if (!stat) return;
 
     // 1. Handle Files
     if (stat.isFile()) {
@@ -47,38 +51,43 @@ export function getDictionaryPaths() {
        return;
     }
 
-    // 2. Handle Directories (Strictly guarded to prevent ENOTDIR)
+    // 2. Handle Directories
     if (stat.isDirectory()) {
-      const entries = fs.readdirSync(currentPath, { withFileTypes: true });
-      const contents = [];
-      let indexContent = null, indexExt = null; 
+      const rawEntries = fs.readdirSync(currentPath, { withFileTypes: true });
+      
+      // Filter out hidden files immediately
+      const validEntries = rawEntries.filter(entry => !entry.name.startsWith('.'));
 
-      for (const entry of entries) {
-         if (entry.name.startsWith('.')) continue;
-         
-         if (entry.isFile() && (entry.name === 'index.md' || entry.name === 'index.txt')) {
-           indexContent = fs.readFileSync(path.join(currentPath, entry.name), 'utf-8');
-           indexExt = path.extname(entry.name);
-           continue; 
-         }
-         
-         const cleanName = entry.name.replace(/\.(md|txt)$/, '');
-         const childRoute = routePath ? `${routePath}/${cleanName}` : cleanName;
-         
-         // Apply formatTitle here so links display beautifully
-         contents.push({
-           name: formatTitle(cleanName),
-           isDir: entry.isDirectory(),
-           href: `/${childRoute}`
-         });
+      // Find the index file explicitly instead of catching it in a loop
+      const indexFile = validEntries.find(entry => 
+        entry.isFile() && (entry.name === 'index.md' || entry.name === 'index.txt')
+      );
 
-         if (entry.isDirectory() || entry.isFile()) {
-           scanDirectory(path.join(currentPath, entry.name), childRoute);
-         }
-      }
+      // We only read the file if indexFile was successfully found
+      const indexContent = indexFile ? fs.readFileSync(path.join(currentPath, indexFile.name), 'utf-8') : null;
+      const indexExt = indexFile ? path.extname(indexFile.name) : null;
+
+      // Filter out the index file, then map the rest into your navigation array
+      const contents = validEntries
+        .filter(entry => entry !== indexFile)
+        .map(entry => {
+          const cleanName = entry.name.replace(/\.(md|txt)$/, '');
+          const childRoute = routePath ? `${routePath}/${cleanName}` : cleanName;
+          
+          // Trigger the recursive scan for valid items
+          if (entry.isDirectory() || entry.isFile()) {
+            scanDirectory(path.join(currentPath, entry.name), childRoute);
+          }
+
+          return {
+            name: formatTitle(cleanName),
+            isDir: entry.isDirectory(),
+            href: `/${childRoute}`
+          };
+        });
 
       const isRoot = routePath === '';
-      const pageTitle = isRoot ? 'Inglisce Dictionary' : formatTitle(path.basename(currentPath));
+      const pageTitle = isRoot ? 'Inglisce' : formatTitle(path.basename(currentPath));
 
       pagesToGenerate.push({
         params: { slug: routePath || undefined }, 
