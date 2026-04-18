@@ -1,15 +1,29 @@
 ---
 // web/src/pages/[...slug].astro
+
+// --- IMPORTS ---
+// Import the utility that scans your local file system to build the site's routes
 import { getDictionaryPaths } from '../utils/dictionary.js';
+
+// Import the two main layout components
 import DirectoryView from '../components/DirectoryView.astro';
 import ContentView from '../components/ContentView.astro';
 
+// --- ROUTING LOGIC ---
+// getStaticPaths() is a mandatory Astro function for dynamic routing (like [...slug]).
+// It executes at build time, calling your dictionary utility to figure out exactly 
+// which HTML pages need to be generated based on your local folders and markdown files.
 export async function getStaticPaths() {
   return getDictionaryPaths();
 }
 
+// --- PROPS & PARAMS ---
+// Extract the specific data for the current page being generated.
+// These props are passed down from the array of objects returned by getDictionaryPaths() above.
 const { type, title, contents, content, ext, isRoot } = Astro.props;
-// Grab the current URL path (slug) from Astro
+
+// Grab the current URL path from Astro's params object.
+// This is the literal string that replaces the [...slug] part of the filename.
 const { slug } = Astro.params;
 ---
 
@@ -17,25 +31,32 @@ const { slug } = Astro.params;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    {/* Dynamically set the page title based on the file or folder name */}
     <title>{title}</title>
   </head>
   <body style="margin: 0; padding: 0; font-family: sans-serif;">
     
+    {/* --- DYNAMIC RENDERING --- */}
+    {/* Evaluate the 'type' prop to determine which layout component to mount. */}
     {type === 'directory' ? (
+      // If the current path is a folder, render the DirectoryView.
+      // Pass down the folder's title, contents ('items'), any index file content, and the current slug.
       <DirectoryView 
         title={title} 
         items={contents} 
         content={content} 
         ext={ext} 
         isRoot={isRoot} 
-        slug={slug || ''} 
+        slug={slug || ''} // Fallback to an empty string if we are at the absolute root (/)
       />
     ) : (
+      // If the current path is a standalone file (like a .md or .txt), render the ContentView.
+      // Pass down the raw content and the slug so child components (like your visualizer!) know where they are.
       <ContentView 
         content={content} 
         ext={ext} 
         isRoot={isRoot} 
-        slug={slug || ''}
+        slug={slug || ''} 
       />
     )}
 
