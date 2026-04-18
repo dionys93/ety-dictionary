@@ -1,9 +1,9 @@
 ---
 // web/src/pages/[...slug].astro
 import { getDictionaryPaths } from '../utils/dictionary.js';
+import DirectoryView from '../components/DirectoryView.astro';
 import ContentView from '../components/ContentView.astro';
 
-// Delegate the heavy lifting to our utility function
 export async function getStaticPaths() {
   return getDictionaryPaths();
 }
@@ -14,36 +14,26 @@ const { type, title, contents, content, ext, isRoot } = Astro.props;
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>{title}</title>
   </head>
-  <body>
-    <main style="max-width: 800px; margin: 2rem auto; font-family: sans-serif;">
-      
-      {!content && <h1>{title}</h1>}
+  <body style="margin: 0; padding: 0; font-family: sans-serif;">
+    
+    {type === 'directory' ? (
+      <DirectoryView 
+        title={title} 
+        items={contents} 
+        content={content} 
+        ext={ext} 
+        isRoot={isRoot} 
+      />
+    ) : (
+      <ContentView 
+        content={content} 
+        ext={ext} 
+        isRoot={isRoot} 
+      />
+    )}
 
-      {/* RENDER THE CONTENT (Works for standard files or intercepted index files) */}
-      {content && <ContentView content={content} ext={ext} />}
-
-      {/* RENDER THE DIRECTORY LIST (If applicable) */}
-      {type === 'directory' && contents.length > 0 && (
-        <ul>
-          {contents.map((item) => (
-            <li style="margin: 0.5rem 0;">
-              <a href={item.href} style="text-decoration: none; color: #0066cc;">
-                {item.isDir ? '📁 ' : '📄 '} {item.name}
-              </a>
-            </li>
-          ))}
-        </ul>
-      )}
-      
-      {/* RENDER THE BACK BUTTON */}
-      {!isRoot && (
-        <div style="margin-top: 2rem;">
-          <a href="javascript:history.back()" style="color: #666;">← Go Back</a>
-        </div>
-      )}
-      
-    </main>
   </body>
 </html>
