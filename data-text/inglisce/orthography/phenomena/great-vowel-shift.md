@@ -22,10 +22,12 @@ The "Chart Example" traces the exact reference words from the timeline, while th
 | **round** | /uː/ | /ʊu̯/ | /əu̯/ | /ɑu̯/ | /ɑu̯/ | **/aʊ̯/** | **ô** | round → **rônd** |
 | **moon, soon** | /oː/ | /uː/ | /uː/ | /uː/ | /uː/ | **/uː/** | **ou** | moon → **moune**, soon → **soun** |
 | **book** | /oː/ | /uː/ | /uː/ | /ʊ/ | /ʊ/ | **/ʊ/** | **ô** | book → **bôc** |
+| **blood, flood (irregular)** | /oː/ | /uː/ | /uː/ | /ʊ/ | /ʌ/ | **/ʌ/** | **o-e** | blood → **blode**, flood → **flode** |
 | **stone** | /ɔː/ | /oː/ | /oː/ | /oː/ | /oːu̯/ | **/oʊ̯/** | **o-e** | stone → **stone** |
 | **know** | /ɔu̯/ | /ou̯/ | /oː/ | /oː/ | /oːu̯/ | **/oʊ̯/** | **o-e** | know → **gnoe** |
 | **law** | /au̯/ | /ɑːu̯/ / /ɔːu̯/ | /ɑː/ / /ɔː/ | /ɔː/ | /ɔː/ | **/ɔː/** | **ahe** | law → **lahe** |
 | **dawn** | /au̯/ | /ɑːu̯/ / /ɔːu̯/ | /ɑː/ / /ɔː/ | /ɔː/ | /ɔː/ | **/ɔː/** | **ao** | dawn → **daone** |
+| **voice, boy** | /ɔɪ̯/ | /ɔɪ̯/ | /ɔɪ̯/ | /ɔɪ̯/ | /ɔɪ̯/ | **/ɔɪ̯/** | **oi** | voice → **voice**, boy → **boie** |
 | **new** | /ɪu̯/ | /i̯uː/ | /juː/ | /juː/ | /juː/ | **/uː/** | **ou** | new → **nou** |
 | **dew** | /ɛu̯/ | /eːu̯/ | /juː/ | /juː/ | /juː/ | **/uː/** | **eue** | dew → **deue** |
 | **that** | /a/ | /a/ | /æ/ | /æ/ | /æ/ | **/æ/** | **a** | that → **þat** |
@@ -84,6 +86,25 @@ To handle modern short vowels that shifted or shortened before consonant cluster
 When adding suffixes to restored roots, Inglisce prioritizes phonetic reality over strict root preservation. 
 * **Silent 'E' Dropping:** Suffixes beginning with a vowel will drop the terminal silent 'e' while retaining the root's diacritic (e.g., *sîte* + *ing* = **sîting**).
 * **Trisyllabic Laxing:** In English, long vowels naturally shorten when a suffix pushes them three syllables from the end of a word. Inglisce represents this phonetic shift seamlessly by simply dropping the diacritic from the root vowel (e.g., *nâțure* becomes **națural**).
+
+#### The 'Y' Suffix and Syllabic Stress
+The Great Vowel Shift primarily affected stressed vowels. Consequently, Inglisce treats words ending in the modern 'Y' differently based on their historical syllabic stress and etymology:
+* **Stressed Germanic Roots (îe):** Short, stressed roots shift to the standard long 'I' representation (e.g., *cry* → **crîe**, *try* → **trîe**, *dry* → **drîe**).
+* **Unstressed Terminations (ie):** Words where the final 'Y' remained unstressed do not take a shift marker (e.g., *enemy* → **enemie**).
+* **The Latin Verb Suffix (ae):** Verbs ending in *-ify* derive from the French *-fier*, which ultimately stems from the Latin *facere*. Inglisce marks this specific Latinate strata with the digraph **ae** (e.g., *justify* → **justifae**).
+
+#### Reversing the "Nurse" Merger (R-Controlled Vowels)
+In Modern English, the vowels in words like *bird*, *fern*, and *turn* have all merged into the identical, r-colored `/ɚ/` sound. Inglisce un-merges these sounds, restoring their distinct spellings based on etymological origin:
+* *bird* → **birde** (Retains original Germanic `i`)
+* *fern* → **fêne** (Utilizes circumflex `ê` for shifted OE roots)
+* *hurt* → **hurte** (Retains original `u`)
+* *hurry* → **hêrie**
+* *nurse* → **nourse**
+* *turn* → **tourne** (Restores the French `ou` digraph)
+
+#### Stable Exceptions (Unshifted Vowels and Anomalies)
+* **The Stable Diphthongs (oi):** Diphthongs borrowed from Old French and Anglo-Norman were largely immune to the GVS. Inglisce retains their stable spelling (e.g., *boy* → **boie**, *voice* → **voice**, *choice* → **c̃oice**).
+* **The "Blood" Anomaly:** Words like *blood* and *flood* underwent irregular historical shortenings, eventually crashing into the short `/ʌ/` sound. Rather than spelling them phonetically, Inglisce anchors them strictly to their Old English roots (*blōd*, *flōd*) by using the unshifted **o-e** paradigm (e.g., *blood* → **blode**, *flood* → **flode**).
 
 ---
 
