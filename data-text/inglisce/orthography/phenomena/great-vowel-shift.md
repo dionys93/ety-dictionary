@@ -95,12 +95,12 @@ The Great Vowel Shift primarily affected stressed vowels. Consequently, Inglisce
 * **Unstressed Terminations (ie):** Words where the final 'Y' remained unstressed do not take a shift marker (e.g., *enemy* → **enemie**).
 * **The Latin Verb Suffix (ae):** Verbs ending in *-ify* derive from the French *-fier*, which ultimately stems from the Latin *facere*. Inglisce marks this specific Latinate strata with the digraph **ae** (e.g., *justify* → **justifae**).
 
-#### Reversing the "Nurse" Merger (R-Controlled Vowels)
-In Modern English, the vowels in words like *bird*, *fern*, and *turn* have all merged into the identical, r-colored `/ɚ/` sound. Inglisce un-merges these sounds, restoring their distinct spellings based on etymological origin:
+#### The "Nurse" Merger (R-Controlled Vowels)
+In Modern English, the vowels in words like *bird*, *fern*, and *turn* have all merged into the identical, r-colored `/ɚ/` sound. Inglisce makes some changes based on etymological origin:
 * *bird* → **birde** (Retains original Germanic `i`)
 * *fern* → **fêne** (Utilizes circumflex `ê` for shifted OE roots)
 * *hurt* → **hurte** (Retains original `u`)
-* *hurry* → **hêrie**
+* *hurry* → **hêrie** (Based on OE hergian)
 * *nurse* → **nourse**
 * *turn* → **tourne** (Restores the French `ou` digraph)
 
