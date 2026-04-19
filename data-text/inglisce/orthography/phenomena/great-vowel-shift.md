@@ -44,7 +44,7 @@ The "Chart Example" traces the exact reference words from the timeline, while th
 Because the shift caused several distinct historical sounds to merge into single modern phonemes (and stable vowels to break apart), **Inglisce** utilizes specific graphemes and diacritics to preserve etymology, grammatical function, and lost consonants.
 
 #### The /i/ Merger
-Modern **/i/** (as in *beat*) results from multiple distinct sources. Inglisce pulls them apart:
+Modern **/i/** (as in *beat*) results from multiple distinct sources. Inglisce collapses ee and ea to i-e:
 * **Germanic Long /eː/:** Changed to **ie** (e.g., *fleece* → **fliesse**, *meet* → **miete**).
 * **Germanic /ɛː/ (ea):** Changed to the split digraph **i-e** (e.g., *meat* → **mite**).
 * **Classical /oe/ & /ae/:** Changed to **í** (e.g., *phoenix* → **fínix**).
