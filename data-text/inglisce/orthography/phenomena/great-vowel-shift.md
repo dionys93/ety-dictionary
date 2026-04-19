@@ -6,19 +6,33 @@ The Great Vowel Shift (GVS) was a systemic, centuries-long change in the pronunc
 
 ### Century-by-Century Phonetic Evolution
 
-This table tracks the specific phonetic changes of the primary long vowels from late Middle English (c. 1400) through the stages of the shift, landing on the Modern Midwestern American English pronunciation. **Inglisce** targets the original Middle English phoneme as its primary spelling anchor.
+This table tracks the specific phonetic changes of the primary long vowels, diphthongs, and short vowels exactly as charted in standard historical linguistics, stepping century by century from late Middle English (1400) to Modern English (1900). 
 
-| ME (c. 1400) | Early GVS | Mid GVS | Late GVS | Modern IPA | Inglisce | Example (Modern → Inglisce) |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **/iː/** | /əi/ | /ɛi/ | /aɪ/ | **/aɪ/** | **î** | time → **tîme** |
-| **/eː/** | /iː/ | /iː/ | /iː/ | **/i/** | **ie** | fleece → **fliesse** |
-| **/ɛː/** | /ɛː/ | /eː/ | /iː/ | **/i/** | **i-e** | meat → **mite** |
-| **/aː/** | /æː/ | /ɛː/ | /eː/ | **/eɪ/** | **â** | make → **mâche** |
-| **/uː/** | /əu/ | /ɔu/ | /aʊ/ | **/aʊ/** | **aû** | house → **haûse** |
-| **/oː/** | /uː/ | /uː/ | /uː/ | **/u/** | **ou** | soon → **soun** |
-| **/ɔː/** | /ɔː/ | /oː/ | /oʊ/ | **/oʊ/** | **o-e** | boat → **bote** |
+The "Chart Example" traces the exact reference words from the timeline, while the "Inglisce Example" demonstrates the project's phonetic and etymological restoration.
 
-*(Note: Modern IPA values reflect standard Midwestern American English. Historical transcriptions represent broad phonetic consensus.)*
+| Chart Example | 1400 | 1500 | 1600 | 1700 | 1800 | 1900+ | Inglisce Base | Inglisce Example |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **time, bite** | /iː/ | /ɪi̯/ | /əi̯/ | /ʌi̯/ | /ʌi̯/ | **/aɪ̯/** | **î** | time → **tîme**, bite → **bîte** |
+| **see, fleece, meet**| /eː/ | /iː/ | /iː/ | /iː/ | /iː/ | **/iː/** | **i-e, ie-e** | see → **sihe**, fleece → **fliesse**, meet → **miete** |
+| **east, meat** | /ɛː/ | /eː/ | /eː/ | /iː/ | /iː/ | **/iː/** | **í, i-e** | east → **íst**, meat → **mite** |
+| **name** | /aː/ | /æː/ | /ɛː/ | /eː/ | /eɪ/ | **/eɪ/** | **â** | name → **nâme** |
+| **day** | /æj/ | /æːi/ | /ɛː/ | /eː/ | /eɪ/ | **/eɪ/** | **aie** | day → **daie** |
+| **house** | /uː/ | /ʊu̯/ | /əu̯/ | /ɑu̯/ | /ɑu̯/ | **/aʊ̯/** | **aû** | house → **haûse** |
+| **cow** | /uː/ | /ʊu̯/ | /əu̯/ | /ɑu̯/ | /ɑu̯/ | **/aʊ̯/** | **ô** | cow → **côe** |
+| **round** | /uː/ | /ʊu̯/ | /əu̯/ | /ɑu̯/ | /ɑu̯/ | **/aʊ̯/** | **ô** | round → **rônd** |
+| **moon, soon** | /oː/ | /uː/ | /uː/ | /uː/ | /uː/ | **/uː/** | **ou** | moon → **moune**, soon → **soun** |
+| **book** | /oː/ | /uː/ | /uː/ | /ʊ/ | /ʊ/ | **/ʊ/** | **ô** | book → **bôc** |
+| **stone** | /ɔː/ | /oː/ | /oː/ | /oː/ | /oːu̯/ | **/oʊ̯/** | **o-e** | stone → **stone** |
+| **know** | /ɔu̯/ | /ou̯/ | /oː/ | /oː/ | /oːu̯/ | **/oʊ̯/** | **o-e** | know → **gnoe** |
+| **law** | /au̯/ | /ɑːu̯/ / /ɔːu̯/ | /ɑː/ / /ɔː/ | /ɔː/ | /ɔː/ | **/ɔː/** | **ahe** | law → **lahe** |
+| **dawn** | /au̯/ | /ɑːu̯/ / /ɔːu̯/ | /ɑː/ / /ɔː/ | /ɔː/ | /ɔː/ | **/ɔː/** | **ao** | dawn → **daone** |
+| **new** | /ɪu̯/ | /i̯uː/ | /juː/ | /juː/ | /juː/ | **/uː/** | **ou** | new → **nou** |
+| **dew** | /ɛu̯/ | /eːu̯/ | /juː/ | /juː/ | /juː/ | **/uː/** | **eue** | dew → **deue** |
+| **that** | /a/ | /a/ | /æ/ | /æ/ | /æ/ | **/æ/** | **a** | that → **þat** |
+| **fox** | /o/ | /o/ | /ɔ/ | /ɔ/ | /ɔ/ | **/ɒ/** | **o** | fox → **fox** |
+| **cut** | /ʊ/ | /ʊ/ | /ɤ/ | /ʌ/ | /ʌ/ | **/ʌ/** | **u** | cut → **cutte** |
+
+*(Note: The 1400–1900 timeline and intermediate phonetic values, including non-syllabic glides, directly reflect standard Great Vowel Shift charting. Empty phonetic shifts between centuries indicate the pronunciation remained stable during that period. Forward slashes in 1500 and 1600 indicate dialectal divergences.)*
 
 ---
 
