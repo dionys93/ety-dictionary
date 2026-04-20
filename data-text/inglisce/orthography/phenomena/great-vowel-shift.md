@@ -93,7 +93,7 @@ When adding suffixes to restored roots, Inglisce prioritizes phonetic reality ov
 The Great Vowel Shift primarily affected stressed vowels. Consequently, Inglisce treats words ending in the modern 'Y' differently based on their historical syllabic stress and etymology:
 * **Stressed Germanic Roots (îe):** Short, stressed roots shift to the standard long 'I' representation (e.g., *cry* → **crîe**, *try* → **trîe**, *dry* → **drîe**).
 * **Unstressed Terminations (ie):** Words where the final 'Y' remained unstressed do not take a shift marker (e.g., *enemy* → **enemie**).
-* **The Latin Verb Suffix (ae):** Verbs ending in *-ify* derive from the French *-fier*, which ultimately stems from the Latin *facere*. Inglisce marks this specific Latinate strata with the digraph **ae** (e.g., *justify* → **justifae**).
+* **The Latin Verb Suffix (ae):** Verbs ending in *-ify* derive from the French *-fier*, which ultimately stems from the Latin *facere*. Inglisce marks this specific Latinate strata with the digraph **fae** (e.g., *justify* → **justifae**).
 
 #### The "Nurse" Merger (R-Controlled Vowels)
 In Modern English, the vowels in words like *bird*, *fern*, and *turn* have all merged into the identical, r-colored `/ɚ/` sound. Inglisce makes some changes based on etymological origin:
