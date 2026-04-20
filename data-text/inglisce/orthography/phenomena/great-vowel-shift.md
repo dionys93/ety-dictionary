@@ -79,20 +79,44 @@ To represent the modern **/aʊ/** sound, Inglisce distinguishes these words base
 
 ### Morphological and Grammatical Rules
 
-#### The Short /ɛ/ Adjustment
-To handle modern short vowels that shifted or shortened before consonant clusters, Inglisce employs the digraph **ai**. This draws on established orthography (like the French *lait* or the English *said*) and visually links shifted past-tense verbs to their roots.
-* *meet* → **miete** (Long /i/)
-* *met* → **mait** (Short /ɛ/)
+#### The Short /ɛ/ Mutation (The 'ai' Digraph)
+In English, it is incredibly common for long root vowels to "lax" or shorten to an `/ɛ/` sound when modified by a suffix or a past-tense consonant cluster. To handle this systemic mutation consistently, Inglisce employs the digraph **ai**. 
+
+This draws on established historical orthography (such as the French *lait* or the English *said*) and serves a crucial morphological function: it visually signals that a phonetic shortening has occurred while keeping the word family tightly linked. 
+
+This adjustment applies across three primary grammatical categories:
+
+**1. Past-Tense Shortening (Consonant Clusters)**
+When a past-tense suffix creates a consonant cluster that forces the long root vowel to shorten, the root shifts to **ai**:
+* *meet, met* → **miete, mait**
+* *keep, kept* → **chiepe, caipt**
+* *leave, left* → **lievfe, laift**
+* *mean, meant* → **miene, maint**
+* *read, read* → **riede, raid**
+
+**2. Noun Derivations (The -th Suffix)**
+When a verb or adjective spawns a noun via the *-th* suffix (Inglisce **-þ**), the resulting vowel shortening is captured by the same **ai** mutation:
+* *breathe, breath* → **brieþe, braiþ**
+* *heal, health* → **hiale, hailþ**
+* *die, death* → **daihe, daiþ**
+
+**3. Irregular Verb Conjugations**
+This rule seamlessly incorporates and standardizes existing English irregularities, ensuring that the root is preserved when the vowel is long, and mutated to **ai** when spoken short:
+* *say, says, said, saying* → **saie, sais, said, saying**
 
 #### Root Preservation and Vowel Laxing (Suffixes)
-When adding suffixes to restored roots, Inglisce prioritizes phonetic reality over strict root preservation. 
-* **Silent 'E' Dropping:** Suffixes beginning with a vowel will drop the terminal silent 'e' while retaining the root's diacritic (e.g., *sîte* + *ing* = **sîting**).
+When adding suffixes to restored roots, Inglisce prioritizes phonetic reality and grammatical clarity over strict root preservation. The behavior of the terminal silent 'e' depends entirely on the part of speech being modified:
+
+* **Monosyllabic Nouns (Pluralization):** Nouns drop the terminal silent 'e' when taking the plural **-s** suffix, relying entirely on the diacritic to maintain the long vowel's value (e.g., *sîte* → **sîts**, *nâme* → **nâms**).
+* **Regular Verbs (Conjugation):** Verbs maintain their silent 'e' across most conjugations to preserve the visual integrity of the verb paradigm (e.g., *to sîte* → **sîtes**, **sîted**; *to nâme* → **nâmes**, **nâmed**). The 'e' is only dropped in the gerund/participle form before the **-ing** suffix (e.g., **sîting**, **nâming**).
 * **Trisyllabic Laxing:** In English, long vowels naturally shorten when a suffix pushes them three syllables from the end of a word. Inglisce represents this phonetic shift seamlessly by simply dropping the diacritic from the root vowel (e.g., *nâțure* becomes **națural**).
 
 #### The 'Y' Suffix and Syllabic Stress
-The Great Vowel Shift primarily affected stressed vowels. Consequently, Inglisce treats words ending in the modern 'Y' differently based on their historical syllabic stress and etymology:
+The Great Vowel Shift primarily affected stressed vowels. Consequently, Inglisce treats words ending in the modern 'Y' differently based on their historical syllabic stress, etymology, and grammatical function:
+
 * **Stressed Terminations (îe):** Because the Great Vowel Shift targeted stressed vowels, short or monosyllabic roots ending in a stressed 'y' caught the shift and take the standard long 'I' representation (e.g., *cry* → **crîe**, *try* → **trîe**, *dry* → **drîe**).
-* **Unstressed Terminations (ie):** Words where the final 'Y' remained unstressed do not take a shift marker (e.g., *enemy* → **enemie**).
+* **Unstressed Nouns (ie):** When an unstressed terminal 'Y' functions as a standalone noun, it takes the **ie** digraph (e.g., *enemy* → **enemie**, *fishery* → **fiscerie**, *community* → **comunetie**).
+* **Adjectives, Adverbs, and Modifiers (y):** When the word functions as an adjective, an adverb, or an attributive noun (a noun modifying another noun), it retains the terminal **y** (e.g., *fishery industry* → **fiscery industrie**, *community center* → **comunety centre**).
 * **The Latin Verb Suffix (fae):** Verbs ending in *-ify* derive from the French *-fier*, which ultimately stems from the Latin *facere*. Inglisce marks this specific Latinate strata with the digraph **fae** (e.g., *justify* → **justifae**).
 
 #### The "Nurse" Merger (R-Controlled Vowels)
