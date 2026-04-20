@@ -67,13 +67,13 @@ The modern **/aɪ/** diphthong encompasses simple long vowels and vowels modifie
 * **Grammatical Distinction (ái):** Utilizes an acute accent specifically to separate a verb form from its noun counterpart (e.g., the verb *might* → **máit**, contrasting with the noun *maihte*).
 
 **2. The /aʊ/ (House/Cow) Divergence**
-To represent the modern **/aʊ/** sound, Inglisce chooses the grapheme based on the surrounding phonetic environment:
-* **Before Obstruents (aû):** Used before fricatives and stops, echoing the Germanic shift (e.g., *house* → **haûse**, *mouse* → **maûse**).
-* **In Open Syllables & Before Sonorants (ô):** Used when the vowel ends a syllable, or flows into liquids and nasals (n, l, r). This beautifully honors Latinate origins while maintaining visual consistency (e.g., *brown* → **brôn**, *power* → **pôure**, *owl* → **ôle**, *cow* → **côe**).
+To represent the modern **/aʊ/** sound, Inglisce distinguishes these words based on their comparative etymology and cross-linguistic shifts:
+* **The High German Parallel (aû):** Used for Germanic roots that underwent a similar phonetic shift to *au* in Modern High German. This visually aligns English with its Continental cousins (e.g., *house* [Ger. *das Haus*] → **haûse**, *mouse* [Ger. *die Maus*] → **maûse**).
+* **The English Divergence & French Roots (ô):** Used for Old English roots that shifted to /aʊ/ in English while diverging from the High German *au* pathway (e.g., OE *cū* → *cow* [vs. Ger. *Kuh*] → **côe**, OE *ūle* → *owl* [vs. Ger. *Eule*] → **ôle**). This grapheme is also applied to French-derived words that were caught in the English vowel shift (e.g., *round* → **rônd**, *power* → **pôure**, *vowel* → **vôle**).
 
 **3. The Mid-Vowel Shifts (/eɪ/ and /oʊ/)**
-* **Front Shifted Vowels:** Modern **/eɪ/** uses the diacritic **â** to reflect its origin as a long /aː/ (e.g., *bake* → **bâche**).
-* **Back Shifted Vowels:** Modern **/oʊ/** uses the split digraph **o-e** to reflect its origin as a long /ɔː/ (e.g., *boat* → **bote**).
+* **Front Shifted Vowels:** Modern **/eɪ/** uses the diacritic **â** to explicitly mark the shift from the historical long /aː/ (e.g., *bake* → **bâche**).
+* **Back Shifted Vowels:** Modern **/oʊ/** uses the split digraph **o-e** to explicitly mark the shift from the historical long /ɔː/ (e.g., *boat* → **bote**).
 
 ---
 
@@ -91,9 +91,9 @@ When adding suffixes to restored roots, Inglisce prioritizes phonetic reality ov
 
 #### The 'Y' Suffix and Syllabic Stress
 The Great Vowel Shift primarily affected stressed vowels. Consequently, Inglisce treats words ending in the modern 'Y' differently based on their historical syllabic stress and etymology:
-* **Stressed Germanic Roots (îe):** Short, stressed roots shift to the standard long 'I' representation (e.g., *cry* → **crîe**, *try* → **trîe**, *dry* → **drîe**).
+* **Stressed Terminations (îe):** Because the Great Vowel Shift targeted stressed vowels, short or monosyllabic roots ending in a stressed 'y' caught the shift and take the standard long 'I' representation (e.g., *cry* → **crîe**, *try* → **trîe**, *dry* → **drîe**).
 * **Unstressed Terminations (ie):** Words where the final 'Y' remained unstressed do not take a shift marker (e.g., *enemy* → **enemie**).
-* **The Latin Verb Suffix (ae):** Verbs ending in *-ify* derive from the French *-fier*, which ultimately stems from the Latin *facere*. Inglisce marks this specific Latinate strata with the digraph **fae** (e.g., *justify* → **justifae**).
+* **The Latin Verb Suffix (fae):** Verbs ending in *-ify* derive from the French *-fier*, which ultimately stems from the Latin *facere*. Inglisce marks this specific Latinate strata with the digraph **fae** (e.g., *justify* → **justifae**).
 
 #### The "Nurse" Merger (R-Controlled Vowels)
 In Modern English, the vowels in words like *bird*, *fern*, and *turn* have all merged into the identical, r-colored `/ɚ/` sound. Inglisce makes some changes based on etymological origin:
