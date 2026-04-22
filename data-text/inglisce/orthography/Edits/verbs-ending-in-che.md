@@ -11,14 +11,14 @@ Past: bâched
 Gerund: bâching
 Noun: bâc, baix
 
-    Verb: to brâche, brâc(s, brâched, brâching
-    Noun: brâc, braix
+Verb: to brâche, brâc(s, brâched, brâching
+Noun: brâc, braix
 
-    Verb: to câche, câc(s, câched, câching
-    Noun: câc, caix
+Verb: to câche, câc(s, câched, câching
+Noun: câc, caix
 
-    Verb: to faique, faic(s, faiqued, faiquing
-    Noun: faic, faix
+Verb: to faique, faic(s, faiqued, faiquing
+Noun: faic, faix
 
     Verb: to lâque lâc(s lâqued lâquing
     Noun: lâque, laix
