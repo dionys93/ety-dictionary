@@ -14,6 +14,9 @@ Noun: bâc, baix
 Verb: to brâche, brâc(s, brâched, brâching
 Noun: brâc, braix
 
+Verb: to breiche, breic(s, bróc, brócan, breiching
+Noun: breic, breix
+
 Verb: to câche, câc(s, câched, câching
 Noun: câc, caix
 
