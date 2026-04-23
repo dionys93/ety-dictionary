@@ -6,7 +6,7 @@ In Modern English, many adjectives derived from the Latin suffix **-aris** end i
 
 ---
 
-| Modern English (Adj / Noun) | Latin Root | Inglisce |
+| Modern English | Latin Root | Inglisce |
 | :--- | :--- | :--- | 
 | **regular** <br> **regularity** | *regularis* | **regular** <br> **regularetie** | 
 | **particular** <br> **particularity** | *particularis* | **particular** <br> **particularetie** |
