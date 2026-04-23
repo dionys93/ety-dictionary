@@ -12,9 +12,9 @@ When the historical fricative was lost but forced a preceding vowel to lengthen 
 The preceding vowel is carefully selected to reflect the exact Old English or Germanic root, rather than forcing a uniform modern spelling.
 
 **Words with the modern /aɪ/ sound:**
-| Modern English | IPA | Inglisce Example | Etymological Notes |
+| Modern English | IPA | Inglisce | Etymological Notes |
 | :--- | :--- | :--- | :--- |
-| **sight** | /saɪt/ | **sîhte** | Uses standard shifted `î` |
+| **see, sight** | /saɪt/ | **sihe, sîhte** | Uses standard shifted `î` |
 | **slight** | /saɪt/ | **slîhte** | Uses standard shifted `î` |
 | **sigh** | /saɪ/ | **syhe** | Uses `y` variant |
 | **fright** | /fraɪt/ | **fryhte** | Uses `y` variant |
