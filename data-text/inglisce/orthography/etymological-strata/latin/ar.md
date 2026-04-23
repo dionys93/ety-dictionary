@@ -1,15 +1,13 @@
-Adjectives that end in -ar from Latin and can form nouns by adding the -etie suffix.
+# The Latin Suffix "-ar" and Noun Derivation "-etie"
 
-Examples:
+In Modern English, many adjectives derived from the Latin suffix **-aris** end in **-ar**. These adjectives typically form their corresponding abstract nouns by adding the suffix **-ity**.
 
-    regula, regularis [Latin]
-    regular, regularity [Modern English]
-    regular, regularetie [Inglisce]
-    
-    particula, particularis [Latin]
-    particular, particularity [Modern English]
-    particular, particularetie [Inglisce]
+**Inglisce** retains the base **-ar** adjective ending but standardizes the noun derivation by replacing the English *-ity* with the native Inglisce suffix **-etie**.
 
-    familia, familiaris [Latin]
-    familiar, familiarity [Modern English]
-    familliar, familliaretie [Inglisce]
+---
+
+| Modern English (Adj / Noun) | Latin Root | Inglisce |
+| :--- | :--- | :--- | 
+| **regular** <br> **regularity** | *regularis* | **regular** <br> **regularetie** | 
+| **particular** <br> **particularity** | *particularis* | **particular** <br> **particularetie** |
+| **familiar** <br> **familiarity** | *familiaris* | **familliar** <br> **familliaretie** | 
