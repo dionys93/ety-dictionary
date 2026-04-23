@@ -1,4 +1,4 @@
-# The Greek Chi (χ): Resolving the "ch" /k/ Anomaly
+# The Greek Chi (χ)
 
 In Modern English, the spelling **ch** is frequently used to represent the Greek letter **Chi (χ)** when transliterating Greek roots. This convention stems from the way Greek words were adapted into Latin (which added the 'h' to indicate aspiration) and subsequently absorbed into English. 
 
