@@ -1,4 +1,4 @@
-# Middle English Fricatives: Resolving the "-gh" Digraph
+# Middle English Fricatives
 
 In Middle English, the `-gh` digraph represented a harsh fricative sound (either the palatal `/ç/` as in *night*, or the velar `/x/` as in *rough*). Over centuries, this sound vanished from spoken English—either dropping out entirely, leaving a "ghost" consonant that lengthened the preceding vowel, or shifting forward in the mouth to become an `/f/` sound. 
 
