@@ -1,63 +1,72 @@
-Latin-derived -ion Words
+# Latin Suffix "-ion"
 
-The suffix -ion plays a significant role in noun formation in both Latin and French, carrying over into English and other languages that have borrowed from them. 
-This suffix creates nouns that express the action, result, or condition related to the meaning of the root verb.
+The suffix **-ion** plays a significant role in noun formation in both Latin and French, creating nouns that express the action, result, or condition of a root verb. 
 
-Inglisce systematizes these formations with consistent spelling patterns and accent marks, preserving etymological connections.
+**Inglisce** systematizes these formations, applying consistent spelling patterns based on the verb's terminal consonants or vowels to preserve etymological connections while guaranteeing phonetic predictability.
 
-Verb-to-Noun Transformation Patterns
+---
 
-Pattern 1: -cte → -ccion
-Verbs ending in -cte form nouns with -ccion:
+### 1. The "-cte" Verbs (-ccion)
+Verbs ending in `-cte` form nouns with **-ccion**. 
+* **Pronunciation:** `/kʃən/`
 
-to acte → þi accion
-to compacte → þa compaccion
-to infecte → þi infeccion
+| Modern English | Inglisce Verb | Inglisce |
+| :--- | :--- | :--- |
+| **act / action** | to **acte** | **þi accion** |
+| **compact / compaction** | to **compacte** | **þa compaccion** |
+| **infect / infection** | to **infecte** | **þi infeccion** |
 
-Pattern 2: -ait → -âcion
-Verbs ending in -ait form nouns with -âcion:
+---
 
-to animait → þi animâcion
-to demonstrait → þa demonstrâcion
-to navigait → þa navigâcion
-to donait → þa donâcion
-to dictait → þa dictâcion
-to óperait → þi operâcion
+### 2. The "-ait" and "-âte" Verbs (-âcion)
+Verbs ending in `-ait` or `-âte` form nouns with **-âcion**.
+* **Pronunciation:** `/eɪʃən/`
 
-Pattern 3: -âte → -âcion
-Verbs ending in -âte form nouns with -âcion:
+| Modern English | Inglisce Verb | Inglisce |
+| :--- | :--- | :--- |
+| **animate / animation** | to **animait** | **þi animâcion** |
+| **demonstrate / demonstration** | to **demonstrait** | **þa demonstrâcion** |
+| **navigate / navigation** | to **navigait** | **þa navigâcion** |
+| **donate / donation** | to **donait** | **þa donâcion** |
+| **dictate / dictation** | to **dictait** | **þa dictâcion** |
+| **operate / operation** | to **operait** | **þi operâcion** |
+| **create / creation** | to **criâte** | **þa criâcion** |
+| **relate / relation** | to **relâte** | **þa relâcion** |
+| **negate / negation** | to **negâte** | **þa negâcion** |
+| **conflate / conflation** | to **conflâte** | **þa conflâcion** |
+| **inflate / inflation** | to **inflâte** | **þi inflâcion** |
 
-to criâte → þa criâcion
-to relâte → þa relâcion
-to negâte → þa negâcion
-to conflâte → þa conflâcion
-to inflâte → þi inflâcion
+---
 
-Pattern 4: -mitte → -mission
-Verbs ending in -mitte form nouns with -mission:
+### 3. The "-mitte" Verbs (-mission)
+Verbs ending in `-mitte` form nouns with **-mission**.
+* **Pronunciation:** `/mɪʃən/`
 
-to admitte → þi admission
-to comitte → þa comission
-to emitte → þi emission
+| Modern English | Inglisce Verb | Inglisce |
+| :--- | :--- | :--- |
+| **admit / admission** | to **admitte** | **þi admission** |
+| **commit / commission** | to **comitte** | **þa comission** |
+| **emit / emission** | to **emitte** | **þi emission** |
 
-Pattern 5: -de → -sion
-Verbs ending in -de form nouns with -sion:
+---
 
-to decîde → þa decision
-to explode → þi explósion
-to erode → þi erósion
-to corrode → þa corrósion
+### 4. The "-de" Verbs (-sion)
+Verbs ending in `-de` form nouns with **-sion**.
+* **Pronunciation:** `/ʒən/`
 
-Irregular Formations
-Some words follow unique patterns:
+| Modern English | Inglisce Verb | Inglisce |
+| :--- | :--- | :--- |
+| **decide / decision** | to **decîde** | **þa decision** |
+| **explode / explosion** | to **explode** | **þi explósion** |
+| **erode / erosion** | to **erode** | **þi erósion** |
+| **corrode / corrosion** | to **corrode** | **þa corrósion** |
 
-to equâte → þi equâsion, þi equâteor
-to èdite → þi edicion
+---
 
-Pronunciation Notes
-In Inglisce, these noun-forming suffixes maintain distinctive pronunciations:
+### 5. Irregular Formations
+Some roots require unique patterns to map their phonetic and morphological reality.
 
-- The -ccion ending is pronounced /kʃən/
-- The -âcion ending is pronounced /eɪʃən/
-- The -mission ending is pronounced /mɪʃən/
-- The -sion ending is pronounced /ʒən/
+| Modern English | Inglisce Verb | Inglisce |
+| :--- | :--- | :--- |
+| **equate / equation / equator** | to **equâte** | **þi equâsion**, **þi equâteor** |
+| **edit / edition** | to **èdite** | **þi edicion** |
