@@ -44,9 +44,9 @@ Pattern 5: -de → -sion
 Verbs ending in -de form nouns with -sion:
 
 to decîde → þa decision
-to explode → þi explôsion
-to erode → þi erôsion
-to corode → þa corôsion
+to explode → þi explósion
+to erode → þi erósion
+to corrode → þa corrósion
 
 Irregular Formations
 Some words follow unique patterns:
