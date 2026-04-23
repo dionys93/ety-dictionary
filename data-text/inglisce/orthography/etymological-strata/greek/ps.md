@@ -11,6 +11,6 @@ By reducing the cluster to a standard **s**, Inglisce removes a massive visual s
 
 | Modern English | Greek Root | Inglisce | Orthographic Notes |
 | :--- | :--- | :--- | :--- |
-| **psychology** | ψυχολογία (*psychologia*) | **sycollogie** | Drops the silent `p`. Retains the `y` to mark the Greek upsilon/etymology. |
+| **psychology** | ψυχολογία (*psychologia*) | **sycologie** | Drops the silent `p`. Retains the `y` to mark the Greek upsilon/etymology. |
 | **psalm** | ψαλμός (*psalmos*) | **salme** | Drops the silent `p`. |
 | **pseudonym** | ψευδώνυμον (*pseudonymon*) | **súdonim** | Drops the silent `p`. Uses the acute **ú** to map the stressed vowel shift. |
