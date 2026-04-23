@@ -1,4 +1,4 @@
-# The Greek Phi (φ): Simplifying the "ph" Digraph
+# The Greek Phi (φ)
 
 In Modern English, words derived from Greek often use the **ph** digraph to transliterate the letter **Phi (φ)**. While historically accurate to the Greek spelling, this creates an unnecessary visual complication for a sound that is simply pronounced as `/f/`.
 
