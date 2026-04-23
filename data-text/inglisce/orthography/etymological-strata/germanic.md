@@ -30,10 +30,10 @@ The preceding vowel is carefully selected to reflect the exact Old English or Ge
 
 **Words with the modern /eɪ/ sound:**
 
-| Modern English | IPA | Inglisce | Etymological Notes |
-| :--- | :--- | :--- | :--- |
-| **weight** | /weɪt/ | **ueihte** | Uses standard `w` → `u` shift |
-| **freight** | /freɪt/ | **freihte** | |
+| Modern English | IPA | Inglisce | 
+| :--- | :--- | :--- |
+| **weight** | /weɪt/ | **ueihte** | 
+| **freight** | /freɪt/ | **freihte** | 
 
 ---
 
@@ -119,3 +119,36 @@ The reader relies on the internal diacritics and vowel digraphs to understand th
 | **kneel** | OE *cnēowlian* | **niele** | 
 | **knack** | ME *knak* | **nac** | 
 | **knuckle** | ME *knokel* | **nochle** |
+
+---
+
+## The Silent "b" (Terminal -mb and Internal -bt-)
+
+The silent **b** in Modern English is a notorious spelling trap that stems from two completely different historical phenomena. In words of Old English origin, the `b` was either historically pronounced and later dropped, or artificially added by later scribes. In words of Latin origin, Renaissance scholars deliberately inserted a silent `b` into perfectly phonetic French borrowings to mimic the original Latin roots.
+
+**Inglisce** completely drops the dead `b` across all etymological strata, repairing the spelling to match modern spoken reality while applying standard Inglisce morphology for plurals and vowel lengths.
+
+---
+
+### 1. The Terminal "-mb" Simplification
+Whether derived from Old English or Latin, the terminal `-mb` cluster has universally reduced to a simple `/m/` sound in modern speech. Inglisce drops the `b` and uses standard vowel digraphs or doubled consonants (`mm`) to protect the weight of the preceding vowel.
+
+| Modern English | Etymology | Inglisce (Singular, Plural) | 
+| :--- | :--- | :--- | 
+| **comb** | Old English *camb* | **coame, coams** | 
+| **limb** | Old English *lim* | **limme, lims** | 
+| **bomb** | Latin *bombus* | **bomme, boms** | 
+| **climb** | Old English *climban* | **clîme, clîms** | 
+| **thumb** | Old English *þūma* | **þome, þoms** | 
+---
+
+### 2. Renaissance "Ghost" Letters (-bt-)
+Words like *debt*, *doubt*, and *subtle* were originally borrowed into English from French already stripped of their Latin `b` (*dette*, *doute*, *soutil*). Pedantic scholars later shoved the `b` back into the spelling to honor the Latin roots (*debitum*, *dubitare*, *subtilis*). Inglisce strips out this artificial clutter, effectively returning the words to their cleaner, phonetic forms.
+
+| Modern English | Latin | Old French | Inglisce (Singular, Plural) | 
+| :--- | :--- | :--- | :--- |
+| **debt** | *debitum* | *dette* | **dette, dets** | 
+| **doubt** | *dubitare* | *doute* | **dôute, dôuts** | 
+| **subtle** | *subtilis* | *sotil, soutil* | **sotil** (adj) |
+
+---
