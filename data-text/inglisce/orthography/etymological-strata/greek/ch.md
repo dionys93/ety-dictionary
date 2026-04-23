@@ -17,7 +17,7 @@ For the vast majority of Greek roots, Inglisce simply drops the `h`, mirroring i
 | **character** | χαρακτήρ (*kharaktēr*) | *carácter* | **câractre** | Uses `â` for the stressed vowel; adopts the `-re` suffix. |
 | **chorus** | χορός (*khoros*) | *coro* | **corus** | |
 | **mechanic** | μηχανικός (*mēkhanikos*) | *mecánico* | **mecanic** | The `c` before `a` naturally produces the hard `/k/`. |
-| **technical** | τεχνικός (*tekhnikos*) | *técnico* | **technical** | The 'h' is retained to maintain graphotactic harmony. The <chn> cluster acts as an orthographic buffer, preventing the visual crowding of <cn> and aiding in rapid visual parsing. |
+| **technical** | τεχνικός (*tekhnikos*) | *técnico* | **technical** | The 'h' is retained to maintain graphotactic harmony. The -chn- cluster acts as an orthographic buffer, preventing the visual crowding of -cn- and aiding in rapid visual parsing. |
 
 ---
 
