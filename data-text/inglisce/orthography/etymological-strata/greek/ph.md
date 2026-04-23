@@ -9,12 +9,12 @@ In Modern English, words derived from Greek often use the **ph** digraph to tran
 ### 1. Initial Simplification (f)
 At the beginning of a word, the Greek `ph-` is almost universally collapsed to **f-**. 
 
-| Modern English | Greek Root | Inglisce | Notes |
-| :--- | :--- | :--- | :--- |
-| **physics** | φυσική (*physikē*) | **fisics** | |
-| **pharaoh** | φαραώ (*pharaō*) | **fâroa** | |
-| **photo** | φῶς/φωτο- (*phōto-*) | **fóto** | |
-| **philosophy** | φιλοσοφία (*philosophia*) | **filosophie** | |
+| Modern English | Greek Root | Inglisce | 
+| :--- | :--- | :--- | 
+| **physics** | φυσική (*physikē*) | **fisics** | 
+| **pharaoh** | φαραώ (*pharaō*) | **fâroa** | 
+| **photo** | φῶς/φωτο- (*phōto-*) | **fóto** | 
+| **philosophy** | φιλοσοφία (*philosophia*) | **filosophie** | 
 
 * **The Contrast Exception:** An initial `ph-` is retained *only* if collapsing it to `f` would create a visual collision with an existing Germanic or Latin root. (e.g., *phone* remains **phone** to protect its core root, and *prophet* remains **prophet** to prevent collision with the Latin *profit*).
 
