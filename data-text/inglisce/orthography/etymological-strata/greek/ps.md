@@ -1,4 +1,4 @@
-# The Greek Psi (ψ): Simplifying the Initial "ps-" Cluster
+# The Greek Psi (ψ)
 
 The **ps-** consonant cluster in Modern English is a direct transliteration of the Greek letter **Psi (ψ)**. When these Greek words were adopted into Latin and eventually imported into English, the "ps" spelling was strictly preserved to maintain the visual link to antiquity.
 
