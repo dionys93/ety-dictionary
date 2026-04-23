@@ -1,4 +1,6 @@
-# Middle English Fricatives
+# Germanic and Old English Etymological Stratum
+
+## Middle English Fricatives
 
 In Middle English, the `-gh` digraph represented a harsh fricative sound (either the palatal `/ç/` as in *night*, or the velar `/x/` as in *rough*). Over centuries, this sound vanished from spoken English—either dropping out entirely, leaving a "ghost" consonant that lengthened the preceding vowel, or shifting forward in the mouth to become an `/f/` sound. 
 
@@ -12,6 +14,7 @@ When the historical fricative was lost but forced a preceding vowel to lengthen 
 The preceding vowel is carefully selected to reflect the exact Old English or Germanic root, rather than forcing a uniform modern spelling.
 
 **Words with the modern /aɪ/ sound:**
+
 | Modern English | IPA | Inglisce | Etymological Notes |
 | :--- | :--- | :--- | :--- |
 | **see, sight** | /saɪt/ | **sihe, sîhte** | Uses standard shifted `î` |
@@ -26,7 +29,8 @@ The preceding vowel is carefully selected to reflect the exact Old English or Ge
 | **knight** | /naɪt/ | **nîhte** | The silent 'k' is dropped |
 
 **Words with the modern /eɪ/ sound:**
-| Modern English | IPA | Inglisce Example | Etymological Notes |
+
+| Modern English | IPA | Inglisce | Etymological Notes |
 | :--- | :--- | :--- | :--- |
 | **weight** | /weɪt/ | **ueihte** | Uses standard `w` → `u` shift |
 | **freight** | /freɪt/ | **freihte** | |
@@ -52,7 +56,7 @@ When the historical velar fricative `/x/` physically shifted forward in the mout
 ### 3. The Silent Velar (Open Syllables)
 When the `-gh` dropped entirely without shifting to `/f/` or modifying a trailing consonant, Inglisce completely removes the dead letters. The word is resolved as an open syllable or terminated with a silent 'e' to preserve the vowel value.
 
-| Modern English | Inglisce Example | Notes |
+| Modern English | Inglisce | Notes |
 | :--- | :--- | :--- |
 | **plough / plow** | **plôe** | Uses `ôe` for the shifted /aʊ/ divergence |
 | **slough** *(bog)* | **slôe** | Differentiated from *slofh* (to shed skin) |
@@ -76,7 +80,8 @@ Inglisce simplifies these to *-auht* or *-oht*.
 | **to seek, sought** | to **síche** | **soht** |
 | **to fight, fought** | to **foihte** | **foht** |
 | **to buy, bought** | to **byhe** | **boht** |
-# The Germanic "kn-" Cluster
+
+## The Germanic "kn-" Cluster
 
 In Old and Middle English, words beginning with **cn-** and **kn-** were fully pronounced as a hard consonant cluster (e.g., `/kniht/`). By the 17th century, the `/k/` fell silent, leaving Modern English with an awkward "ghost" letter that serves no phonetic purpose.
 
@@ -89,7 +94,7 @@ The primary function of the **gn-** digraph in Inglisce is to immediately signal
 
 Historically, the Germanic `kn-` shares the exact same Proto-Indo-European root as the Classical `gn-` (e.g., PIE *\*gnō-*). By swapping the `k` for a `g`, Inglisce achieves two massive upgrades: it creates a reliable short-vowel marker, and it visually reunites Germanic English words with their Latin and Greek cousins.
 
-| Modern English | Etymology | Inglisce Example | Notes & Morphology |
+| Modern English | Etymology | Inglisce | Notes & Morphology |
 | :--- | :--- | :--- | :--- |
 | **knot** | OE *cnotta* | **gnote** | The `gn-` marks the short vowel. Differentiates from the negative *not*. |
 | **knock** | ME *knokken* | to **gnoche** <br> a **gnoc** | Marks the short vowel. Follows the standard `-che` (verb) and `-c` (noun) paradigm. |
@@ -113,4 +118,4 @@ The reader relies on the internal diacritics and vowel digraphs to understand th
 | **knight** | OE *cniht* | **nîhte** |
 | **kneel** | OE *cnēowlian* | **niele** | 
 | **knack** | ME *knak* | **nac** | 
-| **knuckle** | ME *knokel* | **nochle** | 
+| **knuckle** | ME *knokel* | **nochle** |
