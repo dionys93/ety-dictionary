@@ -1,4 +1,4 @@
-# The Germanic "kn-" Cluster: Vowel Length and PIE Restoration
+# The Germanic "kn-" Cluster
 
 In Old and Middle English, words beginning with **cn-** and **kn-** were fully pronounced as a hard consonant cluster (e.g., `/kniht/`). By the 17th century, the `/k/` fell silent, leaving Modern English with an awkward "ghost" letter that serves no phonetic purpose.
 
