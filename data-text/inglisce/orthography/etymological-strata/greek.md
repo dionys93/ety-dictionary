@@ -1,4 +1,6 @@
-# The Greek Chi (χ)
+# Greek Etymological Stratum
+
+## The Greek Chi (χ)
 
 In Modern English, the spelling **ch** is frequently used to represent the Greek letter **Chi (χ)** when transliterating Greek roots. This convention stems from the way Greek words were adapted into Latin (which added the 'h' to indicate aspiration) and subsequently absorbed into English. 
 
@@ -11,13 +13,15 @@ As a result, Modern English is littered with words of Greek origin that feature 
 ### 1. The Continental Simplification (c)
 For the vast majority of Greek roots, Inglisce simply drops the `h`, mirroring its Continental cousins. This creates a cleaner, purely phonetic `/k/` representation while remaining clearly anchored to the original Greek root.
 
-| Modern English | Greek Root | Spanish | Inglisce | Phonetic / Orthographic Notes |
-| :--- | :--- | :--- | :--- | :--- |
-| **chaos** | χάος (*khaos*) | *caos* | **câos** | Uses `â` to mark the shifted long English 'A'. |
-| **character** | χαρακτήρ (*kharaktēr*) | *carácter* | **câractre** | Uses `â` for the stressed vowel; adopts the `-re` suffix. |
-| **chorus** | χορός (*khoros*) | *coro* | **corus** | |
-| **mechanic** | μηχανικός (*mēkhanikos*) | *mecánico* | **mecanic** | The `c` before `a` naturally produces the hard `/k/`. |
-| **technical** | τεχνικός (*tekhnikos*) | *técnico* | **technical** | The 'h' is retained to maintain graphotactic harmony. The -chn- cluster acts as an orthographic buffer, preventing the visual crowding of -cn- and aiding in rapid visual parsing. |
+| Modern English | Greek Root | Spanish | Inglisce |
+| :--- | :--- | :--- | :--- |
+| **chaos** | χάος (*khaos*) | *caos* | **câos** |
+| **character** | χαρακτήρ (*kharaktēr*) | *carácter* | **câractre** |
+| **chorus** | χορός (*khoros*) | *coro* | **corus** |
+| **mechanic** | μηχανικός (*mēkhanikos*) | *mecánico* | **mecanic** |
+| **technical** | τεχνικός (*tekhnikos*) | *técnico* | **technical** |
+
+* **Graphotactic Exception:** In words like **technical**, the 'h' is retained to maintain graphotactic harmony. The `chn` cluster acts as an orthographic buffer, preventing the visual crowding of `cn` and aiding in rapid visual parsing.
 
 ---
 
@@ -31,7 +35,8 @@ The word *choir* is one of the most mangled words in English (shifting from Gree
 **Silent Initial Consonants (Chth-)**
 In ancient Greek, words like *chthonic* (χθόνιος) were pronounced with two distinct fricatives side-by-side (`/kʰθ/`). Because Modern English speakers cannot easily pronounce this cluster at the start of a word, the `ch` went completely silent. Inglisce simply drops the dead `ch` and replaces the `th` with the phonetic **þ** (Thorn).
 * *chthonic* (Sp. *ctónico*) → **þonic**
-# The Greek Phi (φ)
+
+## The Greek Phi (φ)
 
 In Modern English, words derived from Greek often use the **ph** digraph to transliterate the letter **Phi (φ)**. While historically accurate to the Greek spelling, this creates an unnecessary visual complication for a sound that is simply pronounced as `/f/`.
 
@@ -53,29 +58,29 @@ At the beginning of a word, the Greek `ph-` is almost universally collapsed to *
 
 ---
 
-
 ### 2. Final Roots and Suffix Immunity
 When a Greek root ends in `ph`, Inglisce generally retains it to preserve the visual integrity of the base word (e.g., **graph**, **glyph**). 
 
 Crucially, **suffixes do not mutate an established `ph`**. Even if adding a suffix shifts the spoken stress of the word, the root spelling remains anchored to its original form.
 
-| Modern English | Root / Derivation | Inglisce | Notes |
-| :--- | :--- | :--- | :--- |
-| **photograph** | *photograph* | **fótograph** | Final `ph` is retained. |
-| **photography** | *photograph* + *y* | **fotographie** | Retains `ph` from the root, despite stress shift. |
-| **photographic** | *photograph* + *ic* | **fotographic** | Retains `ph` from the root, despite stress shift. |
-| **geography** | *geograph* + *y* | **gïographie** | Retains `ph` from the root. |
+| Modern English | Root / Derivation | Inglisce |
+| :--- | :--- | :--- |
+| **photograph** | *photograph* | **fótograph** |
+| **photography** | *photograph* + *y* | **fotographie** |
+| **photographic** | *photograph* + *ic* | **fotographic** |
+| **geography** | *geograph* + *y* | **gïographie** |
 
 ---
 
 ### 3. The "R-Cluster" Simplification
 The consonant cluster `phr` is unnecessarily dense and visually cumbersome. Whenever `ph` appears immediately before an `r`, it is automatically simplified to **fr**, regardless of stress or root preservation.
 
-| Modern English | Inglisce | Notes |
-| :--- | :--- | :--- |
-| **phrase** | **frâse** | `phr` simplifies to `fr`. |
-| **zephyr** | **zefre** | `phyr` simplifies to `fre`. |
-# The Greek Psi (ψ)
+| Modern English | Inglisce |
+| :--- | :--- |
+| **phrase** | **frâse** |
+| **zephyr** | **zefre** |
+
+## The Greek Psi (ψ)
 
 The **ps-** consonant cluster in Modern English is a direct transliteration of the Greek letter **Psi (ψ)**. When these Greek words were adopted into Latin and eventually imported into English, the "ps" spelling was strictly preserved to maintain the visual link to antiquity.
 
@@ -86,12 +91,13 @@ However, because the `/ps/` cluster violates standard English phonotactics at th
 ### The Phonetic Simplification (s)
 By reducing the cluster to a standard **s**, Inglisce removes a massive visual stumbling block for readers. The etymological history is still preserved through the retention of Greek vowels (like the medial `y`) and standard suffixes.
 
-| Modern English | Greek Root | Inglisce | Orthographic Notes |
-| :--- | :--- | :--- | :--- |
-| **psychology** | ψυχολογία (*psychologia*) | **sycologie** | Drops the silent `p`. Retains the `y` to mark the Greek upsilon/etymology. |
-| **psalm** | ψαλμός (*psalmos*) | **salme** | Drops the silent `p`. |
-| **pseudonym** | ψευδώνυμον (*pseudonymon*) | **súdonim** | Drops the silent `p`. Uses the acute **ú** to map the stressed vowel shift. |
-# The Greek Theta (θ)
+| Modern English | Greek Root | Inglisce |
+| :--- | :--- | :--- |
+| **psychology** | ψυχολογία (*psychologia*) | **sycologie** |
+| **psalm** | ψαλμός (*psalmos*) | **salme** |
+| **pseudonym** | ψευδώνυμον (*pseudonymon*) | **súdonim** |
+
+## The Greek Theta (θ)
 
 In Modern English, the digraph **th** is used to represent the fricative sounds (`/θ/` and `/ð/`) in words derived from the Greek letter **Theta (θ)**. This convention was established when these words were adapted into Latin and subsequently absorbed into English.
 
@@ -99,12 +105,13 @@ In Modern English, the digraph **th** is used to represent the fricative sounds 
 
 ---
 
-| Modern English | Greek Root | Inglisce | Orthographic Notes |
-| :--- | :--- | :--- | :--- |
-| **theory** | θεωρία (*theoria*) | **þiorie** | Uses the `ie` noun suffix. |
-| **therapy** | θεραπεία (*therapeia*) | **þeropie** | Uses the `ie` noun suffix. |
-| **thermometer** | θερμός (*thermos*) + μέτρον (*metron*) | **þermometre** | Adopts the `-re` suffix for the terminal *-er*. |
-# The Greek Xi (ξ)
+| Modern English | Greek Root | Inglisce |
+| :--- | :--- | :--- |
+| **theory** | θεωρία (*theoria*) | **þiorie** |
+| **therapy** | θεραπεία (*therapeia*) | **þerapie** |
+| **thermometer** | θερμός (*thermos*) + μέτρον (*metron*) | **þermometre** |
+
+## The Greek Xi (ξ)
 
 In Modern English, the letter **x** is used to represent the consonant cluster `/ks/` in words derived from the Greek letter **Xi (ξ)**. This convention was established when these words were adapted into Latin and subsequently absorbed into English.
 
@@ -112,8 +119,8 @@ In Modern English, the letter **x** is used to represent the consonant cluster `
 
 ---
 
-| Modern English | Greek Root | Inglisce | Orthographic Notes |
-| :--- | :--- | :--- | :--- |
-| **axiom** | ἀξίωμα (*axioma*) | **axiom** | Retains the standard `x`. |
-| **syntax** | σύνταξις (*syntaxis*) | **syntax** | Retains the standard `x`. |
-| **paradox** | παράδοξον (*paradoxon*) | **pâradox** | Retains the `x`; utilizes the `â` diacritic to explicitly map the stressed root vowel. |
+| Modern English | Greek Root | Inglisce |
+| :--- | :--- | :--- |
+| **axiom** | ἀξίωμα (*axioma*) | **axiom** |
+| **syntax** | σύνταξις (*syntaxis*) | **syntax** |
+| **paradox** | παράδοξον (*paradoxon*) | **pâradox** |
