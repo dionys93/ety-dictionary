@@ -8,7 +8,6 @@ The suffix **-ion** plays a significant role in noun formation in both Latin and
 
 ### 1. The "-cte" Verbs (-ccion)
 Verbs ending in `-cte` form nouns with **-ccion**. 
-* **Pronunciation:** `/kʃən/`
 
 | Modern English | Inglisce Verb | Inglisce |
 | :--- | :--- | :--- |
@@ -20,7 +19,6 @@ Verbs ending in `-cte` form nouns with **-ccion**.
 
 ### 2. The "-ait" and "-âte" Verbs (-âcion)
 Verbs ending in `-ait` or `-âte` form nouns with **-âcion**.
-* **Pronunciation:** `/eɪʃən/`
 
 | Modern English | Inglisce Verb | Inglisce |
 | :--- | :--- | :--- |
@@ -40,7 +38,6 @@ Verbs ending in `-ait` or `-âte` form nouns with **-âcion**.
 
 ### 3. The "-mitte" Verbs (-mission)
 Verbs ending in `-mitte` form nouns with **-mission**.
-* **Pronunciation:** `/mɪʃən/`
 
 | Modern English | Inglisce Verb | Inglisce |
 | :--- | :--- | :--- |
@@ -52,7 +49,6 @@ Verbs ending in `-mitte` form nouns with **-mission**.
 
 ### 4. The "-de" Verbs (-sion)
 Verbs ending in `-de` form nouns with **-sion**.
-* **Pronunciation:** `/ʒən/`
 
 | Modern English | Inglisce Verb | Inglisce |
 | :--- | :--- | :--- |
