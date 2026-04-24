@@ -146,3 +146,39 @@ Rather than simplifying this to a standard 'r', **Inglisce** actively retains th
 | **rhetoric, rhetorical** | Greek ῥητορική (*rhētorikē*) | **rhetoric**, **rhetórical** |
 | **rheumatism** | Greek ῥευματισμός (*rheumatismos*) | **rheumatism** |
 | **rhubarb** | Greek ῥᾶ βάρβαρον (*rha barbaron*) | **rhubarb** |
+
+---
+
+## The Greek Upsilon (υ)
+
+In Modern English, words of Greek origin frequently use the letter **y** to represent the ancient Greek upsilon (υ). Because the English 'y' acts as both a consonant and a vowel, this creates a phonetic overlap where the Greek 'y' sounds exactly like the native English 'i' (either as a short `/ɪ/` or a long `/aɪ/`).
+
+Rather than standardizing these sounds to a native 'i', **Inglisce** strictly preserves the Greek **y**. By retaining this letter, Inglisce uses it as a visual anchor—instantly signaling to the reader that the word belongs to the Greek etymological stratum. When vowel shifts do occur, Inglisce modifies the 'y' with standard diacritics rather than changing the base letter.
+
+---
+
+### 1. The Short Vowel (/ɪ/)
+When the Greek root produces a short `/ɪ/` sound, Inglisce retains the standard `y`. Suffixes and consonant shifts (like replacing `th` with `þ`) apply normally around the protected root.
+
+| Modern English | Root / Derivation | Inglisce | 
+| :--- | :--- | :--- |
+| **gym** | Greek γυμνάσιον (*gymnasion*) | **gyme**, **gyms** *(pl.)* | 
+| **cynic** | Greek κυνικός (*kynikos*) | **cynic** |
+| **cynical** | *cynic* + *-al* | **cynical** | 
+| **cynicism** | *cynic* + *-ism* | **cynicism** | 
+| **myth** | Greek μῦθος (*mythos*) | **myþ** | 
+| **mythology** | *myth* + *-ology* | **myþologie** | 
+| **mystery** | Greek μυστήριον (*mysterion*) | **mystirie** | 
+| **mystic** | Greek μυστικός (*mystikos*) | **mystic** | 
+| **mystify** | *myst-* + *-ify* | to **mystifae** |
+
+*Note: In derived forms where spoken stress heavily shifts the internal vowels, Inglisce uses the acute accent to map the stress while keeping the visual root intact (e.g., mysterious → **mystírieus**).*
+
+---
+
+### 2. The Long Vowel Shift (/aɪ/)
+When the Greek upsilon shifted during the Great Vowel Shift to produce a long `/aɪ/` sound in English, Inglisce marks this phonetic reality without abandoning the Greek root. It applies the circumflex directly to the 'y' (**ŷ**) to explicitly indicate the long vowel. 
+
+| Modern English | Root / Derivation | Inglisce | 
+| :--- | :--- | :--- |
+| **cycle** | Greek κύκλος (*kyklos*) | **cŷcle**, **cŷculs** *(pl.)* |
