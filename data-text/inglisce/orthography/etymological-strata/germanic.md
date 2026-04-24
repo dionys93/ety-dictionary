@@ -15,18 +15,18 @@ The preceding vowel is carefully selected to reflect the exact Old English or Ge
 
 **Words with the modern /aɪ/ sound:**
 
-| Modern English | IPA | Inglisce | Etymological Notes |
+| Modern English | Root/Influence | IPA | Inglisce | 
 | :--- | :--- | :--- | :--- |
-| **see, sight** | /saɪt/ | **sihe, sîhte** | Uses standard shifted `î` |
-| **slight** | /saɪt/ | **slîhte** | Uses standard shifted `î` |
-| **sigh** | /saɪ/ | **syhe** | Uses `y` variant |
-| **fright** | /fraɪt/ | **fryhte** | Uses `y` variant |
-| **flight** | /flaɪt/ | **flyhte** | Uses `y` variant |
-| **sleight** | /slaɪt/ | **slyhte** | Uses `y` variant |
-| **fight** | /faɪt/ | **foihte** | Influenced by Old English *feohtan* |
-| **high, height** | /haɪt/ | **hoih, hoihte** | Influenced by High German *hoch* |
-| **night** | /naɪt/ | **naihte** | Influenced by Old English *næht* |
-| **knight** | /naɪt/ | **nîhte** | The silent 'k' is dropped |
+| **see, sight** | Old English *siehst, gesiht* | /saɪt/ | **sihe, sîhte** | 
+| **slight** | Old English *-sliht* | /saɪt/ | **slîhte** | 
+| **sigh** | Old English *sican* | /saɪ/ | **syhe** | 
+| **fright** | Old English *fryhto, fyrhtu* | /fraɪt/ | **fryhte** | 
+| **flight** | Old English *flyht* | /flaɪt/ | **flyhte** | 
+| **sleight** | Modern English *sly*, Old Norse *sloegð* | /slaɪt/ | **slyhte** |
+| **fight** | Old English *feohtan* | /faɪt/ | **foihte** |
+| **high, height** | High German *hoch* | /haɪt/ | **hoih, hoihte** | 
+| **night** | Old English *næht* | /naɪt/ | **naihte** |
+| **knight** | Old English *cniht* | /naɪt/ | **nîhte** |
 
 **Words with the modern /eɪ/ sound:**
 
@@ -150,5 +150,46 @@ Words like *debt*, *doubt*, and *subtle* were originally borrowed into English f
 | **debt** | *debitum* | *dette* | **dette, dets** | 
 | **doubt** | *dubitare* | *doute* | **dôute, dôuts** | 
 | **subtle** | *subtilis* | *sotil, soutil* | **sotil** (adj) |
+
+---
+
+## The Old English "C"
+
+In Old English, the letter **c** was highly versatile, representing both the hard `/k/` sound and the palatal affricate `/tʃ/` depending on the vowels around it. 
+
+After the Norman Conquest, French scribes introduced letters like **k** and **q**, along with the **ch** digraph, to force these sounds into new orthographic boxes. **Inglisce** strips away this French interference, anchoring the spelling back to the Old English `c` while using specific vowels and diacritics to guarantee phonetic predictability.
+
+---
+
+### 1. Reclaiming the Hard 'K' (cy-)
+In Modern English, the letter `k` is typically used before front vowels (`i`, `e`) because a `c` in that position would soften to an `/s/` sound (e.g., *cite*, *cell*). 
+
+To eliminate the unnecessary letter `k` without losing the hard `/k/` pronunciation, Inglisce restores the Old English spelling conventions by pairing the **c** with the letter **y**. This `cy-` digraph acts as a reliable visual marker for the hard `/k/` in native Germanic words.
+
+| Modern English | Old English Root | Inglisce | 
+| :--- | :--- | :--- | 
+| **kind** | *gecynde* | **cŷnd** | 
+| **kid** | *cyden* | **cyde**, **cyds** *(pl.)* | 
+| **kin** | *cynn* | **cyne** | 
+| **king** | *cyning* | **cyngue**, **cyngs** *(pl.)* |
+
+---
+
+### 2. The /kw/ Cluster (cu-)
+Old English originally spelled the `/kw/` sound as **cw-** (e.g., *cwēn*). After 1066, the French replaced this entirely with their native **qu-** digraph. Inglisce bypasses the French `q` and standardizes this cluster as **cu-**, restoring the visual phonetic logic.
+
+| Modern English | Old English Root | Inglisce |
+| :--- | :--- | :--- | 
+| **queen** | *cwēn* | **cuine**, **cuíns** *(pl.)* | 
+
+---
+
+### 3. The Palatal Affricate (/tʃ/)
+When the Old English `c` palatalized into a `/tʃ/` sound, Modern English adopted the **ch** digraph. Inglisce honors this shift but utilizes the specific **c̃** (c-tilde) to explicitly map the affricate sound, especially when a vowel shifts from long to short.
+
+| Modern English | Old English Root | Inglisce | 
+| :--- | :--- | :--- | 
+| **child** | *cild* | **chîld** | 
+| **children** | *cildru* | **c̃ildren** |
 
 ---
