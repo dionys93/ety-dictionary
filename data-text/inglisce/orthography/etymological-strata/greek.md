@@ -124,3 +124,25 @@ In Modern English, the letter **x** is used to represent the consonant cluster `
 | **axiom** | ἀξίωμα (*axioma*) | **axiom** |
 | **syntax** | σύνταξις (*syntaxis*) | **syntax** |
 | **paradox** | παράδοξον (*paradoxon*) | **pâradox** |
+
+---
+
+## The Greek Rho (ῥ)
+
+In Ancient Greek, the "rough breathing mark" indicated a heavily aspirated, puffed `/r/` sound. Because the Roman alphabet lacked this diacritic, Latin scribes transliterated the sound using the **rh** digraph. As English later absorbed these words, scholars and scribes deliberately preserved the archaic Latin spelling to signal the word's educated Greco-Roman pedigree—even though the aspiration itself had long since vanished from everyday speech. 
+
+Rather than simplifying this to a standard 'r', **Inglisce** actively retains the `rh-` digraph in most cases. It utilizes this spelling as a functional tool for **contrast preservation**, maintaining clear visual distinctions between Greek roots, Old English roots (which historically used *hr-*), and standard native words that would otherwise collide or be difficult to parse.
+
+---
+
+| Modern English | Etymological Origin | Inglisce |
+| :--- | :--- | :--- |
+| **reed** | Old English *hreod* | **rhide**, **rhíds** |
+| **read** | Old English *rǣdan* | **riede** |
+| **rhyme** | Middle English *rhyme* | **rhyme**, **rhŷms** |
+| **rime** *(frost)* | Old English *hrim* | **rîme** |
+| **rhythm, rhythmic** | Greek ῥυθμός (*rhythmos*) | **rhyþom**, **rhyþmic** |
+| **rhinoceros / rhino** | Greek ῥινόκερως (*rhinokerōs*) | **rhînocerus**, **rhîno** |
+| **rhetoric, rhetorical** | Greek ῥητορική (*rhētorikē*) | **rhetoric**, **rhetórical** |
+| **rheumatism** | Greek ῥευματισμός (*rheumatismos*) | **rheumatism** |
+| **rhubarb** | Greek ῥᾶ βάρβαρον (*rha barbaron*) | **rhubarb** |
