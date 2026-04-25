@@ -37,16 +37,14 @@ The preceding vowel is carefully selected to reflect the exact Old English or Ge
 ### 2. The Labiodental Shift (/f/)
 When the historical velar fricative `/x/` physically shifted forward in the mouth to become a modern `/f/`, Inglisce discards the historical `gh` entirely and explicitly spells the word with **f**, **ff**, or **fh**. 
 
-*Note the elegant morphological shift for adjectives converting to verbs (e.g., rofh → rofane).*
-
-| Modern English | Inglisce Noun / Adjective | Inglisce Verb |
-| :--- | :--- | :--- |
-| **cough** | **coffe** | to **coffe** |
-| **laugh** | **lafhe** | to **lafhe** |
-| **slough** | **slofh** | to **slofhe** |
-| **rough** | **rofh** *(adj)* | to **rofane** |
-| **tough** | **tofh** *(adj)* | to **tofane** |
-| **enough** | **enofh** | *N/A* |
+| Modern English | Inglisce |
+| :--- | :--- | 
+| **cough** | **coffe** | 
+| **laugh** | **lafhe** | 
+| **slough** | **slofhe** | 
+| **rough** | **rofh** *(adj)* |
+| **tough** | **tofh** *(adj)* | 
+| **enough** | **enofh** |
 
 
 ### 3. The Silent Velar (Open Syllables)
