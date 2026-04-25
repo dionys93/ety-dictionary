@@ -164,16 +164,12 @@ To eliminate the unnecessary letter `k` without losing the hard `/k/` pronunciat
 | **kin** | *cynn* | **cyne** | 
 | **king** | *cyning* | **cyngue**, **cyngs** *(pl.)* |
 
----
-
 ### 2. The /kw/ Cluster (cu-)
 Old English originally spelled the `/kw/` sound as **cw-** (e.g., *cwēn*). After 1066, the French replaced this entirely with their native **qu-** digraph. Inglisce bypasses the French `q` and standardizes this cluster as **cu-**, restoring the visual phonetic logic.
 
 | Modern English | Old English Root | Inglisce |
 | :--- | :--- | :--- | 
 | **queen** | *cwēn* | **cuine**, **cuíns** *(pl.)* | 
-
----
 
 ### 3. The Palatal Affricate (/tʃ/)
 When the Old English `c` palatalized into a `/tʃ/` sound, Modern English adopted the **ch** digraph. Inglisce honors this shift but utilizes the specific **c̃** (c-tilde) to explicitly map the affricate sound, especially when a vowel shifts from long to short.
@@ -185,24 +181,9 @@ When the Old English `c` palatalized into a `/tʃ/` sound, Modern English adopte
 
 ---
 
-## The Old English "wr-" Cluster (r̃)
-
-In Old English, words beginning with the **wr-** cluster were pronounced exactly as written, with a distinct `/w/` followed by an `/r/` (e.g., *wrītan*). Over time, the `/w/` fell completely silent in standard speech. 
-
-While some regional dialects still maintain a faint vocal distinction between a `wr-` and an `r-`, this phonetic difference is largely disappearing. To repair the spelling without losing the etymological history or creating massive homophone collisions (like *rite* vs. *write*, or *ring* vs. *wring*), **Inglisce** replaces the entire `wr-` cluster with the tilde-marked **r̃** (r-tilde). 
-
-This gives the lost cluster a distinct visual identity while matching the modern spoken reality.
-
-| Modern English | Old English Root | Inglisce | 
-| :--- | :--- | :--- | 
-| **write, wrote, written** | *wrītan* | **r̃aite, r̃oat, r̃itan** |
-| **wrong** | *wrang* | **r̃ong** |
-
----
-
 ## The "wh-" Digraph and the Elimination of "w"
 
-The Modern English **wh-** digraph is a reversal of the Old English **hw-** (e.g., *hwæt*, *hwǣr*). Today, the aspiration has largely dropped, leaving the vast majority of speakers pronouncing these words with a standard `/w/` sound.
+The Modern English **wh-** digraph is a reversal of the Old English **hw-**. Today, the aspiration has largely dropped, leaving the vast majority of speakers pronouncing these words with a standard `/w/` sound.
 
 **Inglisce** fully embraces this phonetic reduction to `/w/`, but it takes a radical step regarding the orthography: **it completely abolishes the Germanic letter 'w'.** Instead of using a dedicated consonant for the `/w/` sound, Inglisce relies on its vowel system, behaving much like the Romance languages. The `/w/` glide is formed natively by the vowels **u-**, **ou-**, or **o-** preceding another vowel. 
 
@@ -220,5 +201,20 @@ The Modern English **wh-** digraph is a reversal of the Old English **hw-** (e.g
 | **whether** | *hwæðer* | **uaiþre** | 
 | **which** | *hwilc* | **uic̃** | 
 | **while** | *hwīl* | **uîle** |
+
+---
+
+## The Old English "wr-" Cluster (r̃)
+
+In Old English, words beginning with the **wr-** cluster were pronounced exactly as written, with a distinct `/w/` followed by an `/r/` (e.g., *wrītan*). Over time, the `/w/` fell completely silent in standard speech. 
+
+While some regional dialects still maintain a faint vocal distinction between a `wr-` and an `r-`, this phonetic difference is largely disappearing. To repair the spelling without losing the etymological history or creating massive homophone collisions (like *rite* vs. *write*, or *ring* vs. *wring*), **Inglisce** replaces the entire `wr-` cluster with the tilde-marked **r̃**. 
+
+This gives the lost cluster a distinct visual identity while matching the modern spoken reality.
+
+| Modern English | Old English Root | Inglisce | 
+| :--- | :--- | :--- | 
+| **write, wrote, written** | *wrītan* | **r̃aite, r̃oat, r̃itan** |
+| **wrong** | *wrang* | **r̃ong** |
 
 ---
