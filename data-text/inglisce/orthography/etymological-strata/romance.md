@@ -6,16 +6,16 @@ In Modern English, the **ch** digraph is a visual mess. While native Germanic wo
 
 **Inglisce** resolves this ambiguity by stripping away the French 'h' entirely. To maintain the `/ʃ/` sound without causing visual collisions, Inglisce utilizes native Romance orthographic tools: either the **ç** (c-cedilla) or the **ci-/ce-** vocalic modifiers (similar to Italian spelling conventions).
 
----
+| Modern English | French / Origin | Inglisce | 
+| :--- | :--- | :--- | 
+| **machine** | *machine* | **maçine, maçíns**  | 
+| **chef** | *chef* | **çefe, çefs** | 
+| **parachute** | *parachute* | **paraceut** | 
+| **champagne** | *champagne* | **ciampaigne** |
+| **shock** | *choquer* | **cioc, ciox** | 
+| **chute** | *chute* | **cioute, ciouts** |
 
-| Modern English | Old French / Origin | Inglisce | Orthographic Notes |
-| :--- | :--- | :--- | :--- |
-| **machine** | *machine* | **maçine**, **maçíns** *(pl.)* | Uses the cedilla `ç` to mark the `/ʃ/`. |
-| **chef** | *chef* | **çefe**, **çefs** *(pl.)* | Uses the cedilla `ç`. |
-| **parachute** | *parachute* | **paraceut** | Uses the `ce-` digraph. |
-| **champagne** | *champagne* | **ciampaigne** | Uses the `ci-` digraph. |
-| **shock** | *choquer* | **cioc**, **ciox** *(pl.)* | Uses the `ci-` digraph. Plural uses standard `-x` for `/ks/`. |
-| **chute** | *chute* | **cioute**, **ciouts** *(pl.)* | Uses the `ci-` digraph; pairs with the `ou` vowel. |
+---
 
 ## The French "ou" (/u/)
 
@@ -23,32 +23,52 @@ Following the Norman Conquest, French scribes introduced the **ou** spelling to 
 
 Rather than reverting these to an Old English vowel, **Inglisce** fully embraces this French import. It explicitly formalizes **ou** as a standard, reliable grapheme for the `/u/` sound across the language.
 
+
+| Modern English | Inglisce | 
+| :--- | :--- |
+| **soup** | **soupe, soups** | 
+| **group** | **groupe, groups** | 
+| **route** | **route, routs** |
+
 ---
+
+## Romance Suffix Integration
+
+When native Germanic roots and suffixes evolved alongside imported French vocabulary, they often created messy, competing phonetic endings. For instance, the Germanic *-edge* ended up sounding identical to the French *-age*. 
+
+**Inglisce** streamlines this by allowing the cleaner Romance suffixes to overtake their clunky Germanic counterparts, standardizing the visual ending of the word based on its grammatical function.
+
+### 1. The Overwriting of "-edge"
+The word *knowledge* descends from the Old English *cnāwlǣc*. During the Middle English period, the Germanic suffix *-lǣc* evolved into *-leche*, which eventually morphed to sound exactly like the imported French suffix *-age* found in words like *village* or *courage*. Because the modern pronunciation is identical, Inglisce formalizes this phonetic merger by completely replacing the isolated Germanic *-edge* spelling with the standard Romance **-age**.
+
+| Modern English | Etymological Clash | Inglisce | Orthographic Notes |
+| :--- | :--- | :--- | :--- |
+| **knowledge** | OE *cnāwlǣc* from *cnāwan* + *-lǣc* | **gnollage** | Retains the short-vowel Germanic `gn-` root, but cleanly applies the Romance `-age` suffix. |
+
+### 2. The Overwriting of "-ness" in "witness"
+The Germanic suffix *-ness* is traditionally used to form abstract nouns describing a state or condition, such as *darkness* or *happiness*. Originally, the Old English word *witnes* (from *witan*, meaning "to know") followed this rule perfectly—it simply meant "knowledge" or "testimony" (an abstract concept). 
+
+However, during the Middle English period, the word underwent a massive semantic shift. It morphed from the abstract *concept* of testimony into the concrete, physical *person* giving the testimony. Soon after, it also became an active verb meaning "to see something happen." 
+
+Because *witness* no longer operates as an abstract state, Inglisce visually separates it from the standard *-ness* category. To reflect its modern reality as a concrete entity or action, Inglisce lightens the spelling by mapping it to the Romance suffix **-ace**, which frequently denotes concrete nouns in French and Latin derivations like *menace*, *surface*, and *palace*.
+
+| Modern English | Etymological Clash | Inglisce | Orthographic Notes |
+| :--- | :--- | :--- | :--- |
+| **witness** | OE *witnes* from *witan* + *-nes* | **uitnace** | Converts the `w` to `u` following the Germanic cluster rule and replaces the abstract suffix with the concrete Romance `-nace`. |
+
+### 3. The Overwriting of "-er" to "-ure"
+Historically, the Old English suffix *-ere* was reserved strictly for active agent nouns—someone or something performing an action, such as a *baker* who bakes or a *writer* who writes. 
+
+However, following the Norman Conquest, English absorbed a massive wave of French nouns ending in *-ure*, a suffix used to describe a structural entity, a result, or a process (e.g., Old French *bordure* or *bature*). Over centuries, as the spoken pronunciation of both suffixes deteriorated into the exact same unstressed, lazy vowel sound (the schwa `/ər/`), English scribes stopped distinguishing between them. The generic Germanic `-er` essentially swallowed the French `-ure`. This created a confusing, collapsed system where the word *batter* could mean a person swinging a bat (agent) or a bowl of liquid dough (result).
+
+**Inglisce** reverses this lazy orthographic merger. It visually separates these noun classes by upgrading specific structural or concrete nouns back to the Romance **-ure** suffix. This creates a distinct, elegant visual identity for static nouns while strictly reserving traditional endings for active agents.
 
 | Modern English | Inglisce | Orthographic Notes |
 | :--- | :--- | :--- |
-| **soup** | **soupe** | Standardizes the French `/u/` spelling. |
-| **group** | **groupe** | Standardizes the French `/u/` spelling. |
-| **route** | **route** | Standardizes the French `/u/` spelling. |
-
-## Romance Suffix Integration (-age and -ace)
-
-When native Germanic roots and suffixes evolved alongside imported French vocabulary, they often created messy, competing phonetic endings (e.g., the Germanic *-edge* sounding identical to the French *-age*). 
-
-**Inglisce** streamlines this by allowing the cleaner Romance suffixes to overtake their clunky Germanic counterparts, standardizing the visual ending of the word.
+| **layer** | **layure** | Replaces the generic `-er` with the structural `-ure`. |
+| **batter** | **batture** | The `-ure` suffix visually differentiates the static noun for culinary batter (from Old French *bature*) from a homophonic verb or agent noun, such as to batter or a baseball batter. |
+| **shelter** | **scelture** | Replaces the modern `sh` with the ancestral Old English `sc` for the `/ʃ/` sound and applies the `-ure` suffix. |
+| **border** | **bordure** | Anchors directly back to its original Old French root, *bordure*. |
 
 ---
 
-### 1. The Overwriting of "-edge"
-The Germanic terminal cluster *-edge* is completely replaced by the Romance **-age**.
-
-| Modern English | Etymological Clash | Inglisce | Orthographic Notes |
-| :--- | :--- | :--- | :--- |
-| **knowledge** | *cnāwan* + *-lāc* | **gnollage** | Retains the short-vowel Germanic `gn-` root, but cleanly applies the Romance `-age` suffix. |
-
-### 2. The Overwriting of "-ness"
-In specific phonetic environments, the heavy Germanic *-ness* suffix is lightened and standardized to the Romance-style **-nace**.
-
-| Modern English | Etymological Clash | Inglisce | Orthographic Notes |
-| :--- | :--- | :--- | :--- |
-| **witness** | *wit* + *-ness* | **uitnace** | Converts the `w` to `u` (per the Germanic cluster rule) and replaces the suffix with `-nace`. |
