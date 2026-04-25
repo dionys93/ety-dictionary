@@ -193,3 +193,42 @@ When the Old English `c` palatalized into a `/tʃ/` sound, Modern English adopte
 | **children** | *cildru* | **c̃ildren** |
 
 ---
+
+## The Old English "wr-" Cluster (r̃)
+
+In Old English, words beginning with the **wr-** cluster were pronounced exactly as written, with a distinct `/w/` followed by an `/r/` (e.g., *wrītan*). Over time, the `/w/` fell completely silent in standard speech. 
+
+While some regional dialects still maintain a faint vocal distinction between a `wr-` and an `r-`, this phonetic difference is largely disappearing. To repair the spelling without losing the etymological history or creating massive homophone collisions (like *rite* vs. *write*, or *ring* vs. *wring*), **Inglisce** replaces the entire `wr-` cluster with the tilde-marked **r̃** (r-tilde). 
+
+This gives the lost cluster a distinct visual identity while matching the modern spoken reality.
+
+---
+
+| Modern English | Old English Root | Inglisce | 
+| :--- | :--- | :--- | 
+| **write, wrote, written** | *wrītan* | **r̃aite, r̃oat, r̃itan** |
+| **wrong** | *wrang* | **r̃ong** |
+
+## The "wh-" Digraph and the Elimination of "w"
+
+The Modern English **wh-** digraph is a reversal of the Old English **hw-** (e.g., *hwæt*, *hwǣr*). Today, the aspiration has largely dropped, leaving the vast majority of speakers pronouncing these words with a standard `/w/` sound.
+
+**Inglisce** fully embraces this phonetic reduction to `/w/`, but it takes a radical step regarding the orthography: **it completely abolishes the Germanic letter 'w'.** Instead of using a dedicated consonant for the `/w/` sound, Inglisce relies on its vowel system, behaving much like the Romance languages. The `/w/` glide is formed natively by the vowels **u-**, **ou-**, or **o-** preceding another vowel. 
+
+---
+
+| Modern English | Old English Root | Inglisce | 
+| :--- | :--- | :--- | 
+| **who** | *hwā* | **hu** | 
+| **what** | *hwæt* | **uate** | 
+| **where** | *hwǣr* | **ouere** | 
+| **when** | *hwænne* | **uene** | 
+| **why** | *hwȳ* | **uyhe** | 
+| **whale** | *hwæl* | **uaile** | 
+| **whelk** | *hwylca* | **ouelc** | 
+| **wheeze** | *hwēsan* | to **uiese** |
+| **whether** | *hwæðer* | **uaiþre** | 
+| **which** | *hwilc* | **uic̃** | 
+| **while** | *hwīl* | **uîle** |
+
+---
