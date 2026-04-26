@@ -72,3 +72,34 @@ However, following the Norman Conquest, English absorbed a massive wave of Frenc
 
 ---
 
+## The Romance Verb Suffix (-ish)
+
+In Modern English, the suffix **-ish** presents a massive orthographic collision. English uses the exact same spelling for native Germanic adjectives, like *British* or *childish*, and imported French verbs, like *finish* or *abolish*. 
+
+Etymologically, this verb suffix has absolutely no connection to the Germanic word-builder. It originates from the Latin inchoative infix *-iscere*, which evolved into the Old French *-iss-* marker used to conjugate specific verbs. For example, the French verb *finir* becomes *ils finissent* in the plural. When English absorbed these extended verb stems (*feniss-*, *aboliss-*), the pronunciation shifted to the fricative `/ʃ/`. Lazy English scribes simply mashed it into the exact same orthographic box as the native Germanic `-ish`.
+
+**Inglisce** repairs this collision by visually separating the two etymologies based on their grammatical function. While Germanic adjectives take the ancestral **-isce**, Romance verbs adopt the distinct **-ișe**, utilizing the **ș** (s-comma) to map the `/ʃ/` sound. This perfectly preserves the phonetic reality while isolating the Romance verb class.
+
+
+### 1. The Standard Verb Overhaul (-ișe)
+For the vast majority of imported Romance verbs, the `-ish` is cleanly replaced by the `-ișe` ending.
+
+| Modern English | Old French Extended Stem | Inglisce | 
+| :--- | :--- | :--- | 
+| **abolish** | *aboliss-* | **abolișe** | 
+| **admonish** | *amones-* | **admonișe** | 
+| **banish** | *baniss-* | **banișe** | 
+| **finish** | *feniss-* | **finișe** | 
+| **diminish** | *menuiss-* | **diminișe** | 
+| **publish** | *pupliss-* | **publișe** | 
+
+### 2. The Velar Glide Variation (-oișe)
+For Romance verbs ending in *-guish* and *-quish*, the preceding `/w/` glide is standardized using the native vowel glide rules established in Inglisce. The clunky `gu-` and `qu-` clusters are stripped of their French interference and mapped using **o** to create the glide, resulting in the smooth **-oișe** ending.
+
+| Modern English | Etymological Root | Inglisce | 
+| :--- | :--- | :--- |
+| **extinguish** | Latin *exstinguere* | **extingoișe** |
+| **vanquish** | Old French *venquiss-* | **vencoișe** |
+
+---
+
