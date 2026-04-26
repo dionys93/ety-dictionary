@@ -34,7 +34,7 @@
 
 | Adjetif | Pronôn |
 |--------|--------|
-| my | mîne |
+| my | myne |
 | aur | aurs |
 | your | yours |
 | his, her, its | his, hers, its |
