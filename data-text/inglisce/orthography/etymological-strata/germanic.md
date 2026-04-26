@@ -33,7 +33,6 @@ The preceding vowel is carefully selected to reflect the exact Old English or Ge
 | **weight** | /weɪt/ | **ueihte** | 
 | **freight** | /freɪt/ | **freihte** | 
 
-
 ### 2. The Labiodental Shift (/f/)
 When the historical velar fricative `/x/` physically shifted forward in the mouth to become a modern `/f/`, Inglisce discards the historical `gh` entirely and explicitly spells the word with **f**, **ff**, or **fh**. 
 
@@ -46,7 +45,6 @@ When the historical velar fricative `/x/` physically shifted forward in the mout
 | **tough** | **tofh** *(adj)* | 
 | **enough** | **enofh** |
 
-
 ### 3. The Silent Velar (Open Syllables)
 When the `-gh` dropped entirely without shifting to `/f/` or modifying a trailing consonant, Inglisce completely removes the dead letters. The word is resolved as an open syllable or terminated with a silent 'e' to preserve the vowel value.
 
@@ -58,7 +56,6 @@ When the `-gh` dropped entirely without shifting to `/f/` or modifying a trailin
 | **though** | **þo** | Ends in open `o` |
 | **although** | **alþó** | Uses acute `ó` to mark compound stress |
 | **through** | **þru** | Ends in open `u` |
-
 
 ### 4. Irregular Past Tense Verbs (-aught / -ought)
 Modern English verbs ending in *-aught* and *-ought* are the morphological remnants of Germanic past-tense systems interacting with the velar fricative. 
@@ -82,7 +79,6 @@ In Old and Middle English, words beginning with **cn-** and **kn-** were fully p
 
 **Inglisce** overhauls this cluster by giving the silent letter a functional job: **it acts as a visual indicator of vowel length.** The dead `k` is either replaced with a `g` to mark a short vowel, or dropped entirely to mark a long vowel.
 
-
 ### 1. The Short Vowel Indicator (gn-)
 The primary function of the **gn-** digraph in Inglisce is to immediately signal to the reader that the following root vowel is short. 
 
@@ -95,7 +91,6 @@ Historically, the Germanic `kn-` shares the exact same Proto-Indo-European root 
 | **knob** | ME *knobbe* | **gnobe** <br> **gnobs** *(pl.)* | Marks the short vowel. |
 | **acknowledge** | ME *aknowen* | **acgnollage** | Retains the short-vowel `gn-` root within the prefix compound. |
 | **know** | OE *cnāwan* | **gnoe** | Retains `gn-` despite the long vowel to resolve the homophone clash with *no*, and to anchor directly to Latin *gnoscere*. |
-
 
 ### 2. The Long Vowel Simplification (n-)
 When the root vowel is long, the silent consonant is no longer needed as a phonetic marker. Inglisce drops the cluster entirely, spelling the word cleanly with a standard **n-**. 
@@ -120,7 +115,6 @@ The reader relies on the internal diacritics and vowel digraphs to understand th
 The silent **b** in Modern English is a notorious spelling trap that stems from two completely different historical phenomena. In words of Old English origin, the `b` was either historically pronounced and later dropped, or artificially added by later scribes. In words of Latin origin, Renaissance scholars deliberately inserted a silent `b` into perfectly phonetic French borrowings to mimic the original Latin roots.
 
 **Inglisce** completely drops the dead `b` across all etymological strata, repairing the spelling to match modern spoken reality while applying standard Inglisce morphology for plurals and vowel lengths.
-
 
 ### 1. The Terminal "-mb" Simplification
 Whether derived from Old English or Latin, the terminal `-mb` cluster has universally reduced to a simple `/m/` sound in modern speech. Inglisce drops the `b` and uses standard vowel digraphs or doubled consonants (`mm`) to protect the weight of the preceding vowel.
@@ -149,8 +143,6 @@ Words like *debt*, *doubt*, and *subtle* were originally borrowed into English f
 In Old English, the letter **c** was highly versatile, representing both the hard `/k/` sound and the palatal affricate `/tʃ/` depending on the vowels around it. 
 
 After the Norman Conquest, French scribes introduced letters like **k** and **q**, along with the **ch** digraph, to force these sounds into new orthographic boxes. **Inglisce** strips away this French interference, anchoring the spelling back to the Old English `c` while using specific vowels and diacritics to guarantee phonetic predictability.
-
----
 
 ### 1. Reclaiming the Hard 'K' (cy-)
 In Modern English, the letter `k` is typically used before front vowels (`i`, `e`) because a `c` in that position would soften to an `/s/` sound (e.g., *cite*, *cell*). 
@@ -238,5 +230,29 @@ Because Inglisce uses the same spelling for both the adjective and the language,
 | **Welsh** | **uelsce, Uelsce** |
 
 More simply, it'd be "þi inglisce lânguage" or "þe spanisce lânguage" when used as an adjective. Otherwise: "I spiec Inglisce. I spiec Spanisce"
+
+---
+
+## The Old English Fricative (-sce)
+
+In Old English, the `/ʃ/` sound was consistently represented by the native **sc** digraph (as seen in words like *fisc* and *disc*). Following the Norman Conquest, this ancestral spelling was gradually overwritten by the modern **sh** digraph. 
+
+**Inglisce** repairs this historical erasure by restoring the native orthography, standardizing the terminal `-sh` to **-sce**. 
+
+Crucially, while this rule is firmly rooted in Old English grammar, it is also applied to words of French origin (like *push* and *crush*) that were fully assimilated into the Germanic `-sh` rhyming block during the Middle English period. By unifying this block under the `-sce` ending, Inglisce creates a highly predictable, visually consistent phonological category.
+
+*(Note: Inglisce also utilizes the vowel shift of `u` to `o` to distinguish the short `/ʌ/` vowel in words like 'crush' from the rounded `/ʊ/` vowel in words like 'push' and 'bush').*
+
+
+| Modern English | Etymological Root | Inglisce | 
+| :--- | :--- | :--- | 
+| **bush** | ME *busch* (from Germanic *busk*) | **busce** | 
+| **brush** *(foliage)* | OF *broce* → ME *brusche* | **brosce** | 
+| **crush** | OF *croissir* → ME *crusshen* | **crosce** | 
+| **flush** | ME *fluschen* (onomatopoeic) | **flosce** | 
+| **push** | OF *poulser* → ME *pushen* | **pusce** |
+| **dish** | OE *disc* (from Latin *discus*) | **disce** | 
+| **fish** | OE *fisc* | **fisce** | 
+| **wish** | OE *wȳscan* | **uisce** |
 
 ---
