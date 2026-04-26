@@ -6,6 +6,7 @@ In Middle English, the `-gh` digraph represented a harsh fricative sound (either
 
 Because Modern English froze its spelling before this shift finished, the `-gh` digraph is completely unpredictable today. **Inglisce** resolves this by categorizing these words into four distinct phonetic and etymological pathways.
 
+
 ### 1. The Lost Palatal Fricative (The "Ghost" H)
 When the historical fricative was lost but forced a preceding vowel to lengthen into a modern diphthong (like `/aɪ/` or `/eɪ/`), Inglisce explicitly marks the "ghost" of this lost consonant with an **h**. 
 
@@ -33,6 +34,7 @@ The preceding vowel is carefully selected to reflect the exact Old English or Ge
 | **weight** | /weɪt/ | **ueihte** | 
 | **freight** | /freɪt/ | **freihte** | 
 
+
 ### 2. The Labiodental Shift (/f/)
 When the historical velar fricative `/x/` physically shifted forward in the mouth to become a modern `/f/`, Inglisce discards the historical `gh` entirely and explicitly spells the word with **f**, **ff**, or **fh**. 
 
@@ -45,6 +47,7 @@ When the historical velar fricative `/x/` physically shifted forward in the mout
 | **tough** | **tofh** *(adj)* | 
 | **enough** | **enofh** |
 
+
 ### 3. The Silent Velar (Open Syllables)
 When the `-gh` dropped entirely without shifting to `/f/` or modifying a trailing consonant, Inglisce completely removes the dead letters. The word is resolved as an open syllable or terminated with a silent 'e' to preserve the vowel value.
 
@@ -56,6 +59,7 @@ When the `-gh` dropped entirely without shifting to `/f/` or modifying a trailin
 | **though** | **þo** | Ends in open `o` |
 | **although** | **alþó** | Uses acute `ó` to mark compound stress |
 | **through** | **þru** | Ends in open `u` |
+
 
 ### 4. Irregular Past Tense Verbs (-aught / -ought)
 Modern English verbs ending in *-aught* and *-ought* are the morphological remnants of Germanic past-tense systems interacting with the velar fricative. 
@@ -79,6 +83,7 @@ In Old and Middle English, words beginning with **cn-** and **kn-** were fully p
 
 **Inglisce** overhauls this cluster by giving the silent letter a functional job: **it acts as a visual indicator of vowel length.** The dead `k` is either replaced with a `g` to mark a short vowel, or dropped entirely to mark a long vowel.
 
+
 ### 1. The Short Vowel Indicator (gn-)
 The primary function of the **gn-** digraph in Inglisce is to immediately signal to the reader that the following root vowel is short. 
 
@@ -91,6 +96,7 @@ Historically, the Germanic `kn-` shares the exact same Proto-Indo-European root 
 | **knob** | ME *knobbe* | **gnobe** <br> **gnobs** *(pl.)* | Marks the short vowel. |
 | **acknowledge** | ME *aknowen* | **acgnollage** | Retains the short-vowel `gn-` root within the prefix compound. |
 | **know** | OE *cnāwan* | **gnoe** | Retains `gn-` despite the long vowel to resolve the homophone clash with *no*, and to anchor directly to Latin *gnoscere*. |
+
 
 ### 2. The Long Vowel Simplification (n-)
 When the root vowel is long, the silent consonant is no longer needed as a phonetic marker. Inglisce drops the cluster entirely, spelling the word cleanly with a standard **n-**. 
@@ -116,6 +122,7 @@ The silent **b** in Modern English is a notorious spelling trap that stems from 
 
 **Inglisce** completely drops the dead `b` across all etymological strata, repairing the spelling to match modern spoken reality while applying standard Inglisce morphology for plurals and vowel lengths.
 
+
 ### 1. The Terminal "-mb" Simplification
 Whether derived from Old English or Latin, the terminal `-mb` cluster has universally reduced to a simple `/m/` sound in modern speech. Inglisce drops the `b` and uses standard vowel digraphs or doubled consonants (`mm`) to protect the weight of the preceding vowel.
 
@@ -126,6 +133,7 @@ Whether derived from Old English or Latin, the terminal `-mb` cluster has univer
 | **bomb** | Latin *bombus* | **bomme, boms** | 
 | **climb** | Old English *climban* | **clîme, clîms** | 
 | **thumb** | Old English *þūma* | **þome, þoms** | 
+
 
 ### 2. Renaissance "Ghost" Letters (-bt-)
 Words like *debt*, *doubt*, and *subtle* were originally borrowed into English from French already stripped of their Latin `b` (*dette*, *doute*, *soutil*). Pedantic scholars later shoved the `b` back into the spelling to honor the Latin roots (*debitum*, *dubitare*, *subtilis*). Inglisce strips out this artificial clutter, effectively returning the words to their cleaner, phonetic forms.
@@ -144,6 +152,7 @@ In Old English, the letter **c** was highly versatile, representing both the har
 
 After the Norman Conquest, French scribes introduced letters like **k** and **q**, along with the **ch** digraph, to force these sounds into new orthographic boxes. **Inglisce** strips away this French interference, anchoring the spelling back to the Old English `c` while using specific vowels and diacritics to guarantee phonetic predictability.
 
+
 ### 1. Reclaiming the Hard 'K' (cy-)
 In Modern English, the letter `k` is typically used before front vowels (`i`, `e`) because a `c` in that position would soften to an `/s/` sound (e.g., *cite*, *cell*). 
 
@@ -156,12 +165,14 @@ To eliminate the unnecessary letter `k` without losing the hard `/k/` pronunciat
 | **kin** | *cynn* | **cyne** | 
 | **king** | *cyning* | **cyngue**, **cyngs** *(pl.)* |
 
+
 ### 2. The /kw/ Cluster (cu-)
 Old English originally spelled the `/kw/` sound as **cw-** (e.g., *cwēn*). After 1066, the French replaced this entirely with their native **qu-** digraph. Inglisce bypasses the French `q` and standardizes this cluster as **cu-**, restoring the visual phonetic logic.
 
 | Modern English | Old English Root | Inglisce |
 | :--- | :--- | :--- | 
 | **queen** | *cwēn* | **cuine**, **cuíns** *(pl.)* | 
+
 
 ### 3. The Palatal Affricate (/tʃ/)
 When the Old English `c` palatalized into a `/tʃ/` sound, Modern English adopted the **ch** digraph. Inglisce honors this shift but utilizes the specific **c̃** (c-tilde) to explicitly map the affricate sound, especially when a vowel shifts from long to short.
@@ -242,7 +253,6 @@ In Old English, the `/ʃ/` sound was consistently represented by the native **sc
 Crucially, while this rule is firmly rooted in Old English grammar, it is also applied to words of French origin (like *push* and *crush*) that were fully assimilated into the Germanic `-sh` rhyming block during the Middle English period. By unifying this block under the `-sce` ending, Inglisce creates a highly predictable, visually consistent phonological category.
 
 *(Note: Inglisce also utilizes the vowel shift of `u` to `o` to distinguish the short `/ʌ/` vowel in words like 'crush' from the rounded `/ʊ/` vowel in words like 'push' and 'bush').*
-
 
 | Modern English | Etymological Root | Inglisce | 
 | :--- | :--- | :--- | 
