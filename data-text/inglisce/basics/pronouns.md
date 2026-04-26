@@ -46,6 +46,6 @@
 
 | Singular | Plural |
 |------|-----------|
-| myself | aurselfs |
-| yourself | yourselfs |
-| himself, herself, itself | þemselfs |
+| myselfe | aurselfs |
+| yourselfe | yourselfs |
+| himselfe, herselfe, itselfe | þemselfs |
