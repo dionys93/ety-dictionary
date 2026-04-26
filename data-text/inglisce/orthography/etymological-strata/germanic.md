@@ -197,7 +197,7 @@ The Modern English **wh-** digraph is a reversal of the Old English **hw-**. Tod
 | **what** | *hwæt* | **uate** | 
 | **where** | *hwǣr* | **ouere** | 
 | **when** | *hwænne* | **uene** | 
-| **why** | *hwȳ* | **uyhe** | 
+| **why** | *hwȳ* | **uoie** | 
 | **whale** | *hwæl* | **uaile** | 
 | **whelk** | *hwylca* | **ouelc** | 
 | **wheeze** | *hwēsan* | to **uiese** |
