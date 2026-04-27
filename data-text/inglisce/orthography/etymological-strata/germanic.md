@@ -288,8 +288,8 @@ These verbs undergo an internal vowel shift or remain completely static in their
 
 | Modern English | Inglisce Verb | Inglisce Noun | Definitions |
 | :--- | :--- | :--- | :--- |
-| **to fit** | to **fit** *(past: fit)* | **fitte, fits** | *Verb:* To be the correct size and shape for something; to adapt or suit.<br>*Noun:* A sudden physical or emotional outburst; the tailored shape or contour of a garment. |
-| **to rid** | to **rid** *(past: rid)* | **riddance** | *Verb:* To free a person or place from something unwanted.<br>*Noun:* The act of eliminating or discarding a troublesome entity. |
-| **to pit** | to **pyt** *(past: pyt)* | **pytte, pyts** | *Verb:* To set into direct opposition or combat; to place into a hole.<br>*Noun:* A deep hole or excavation in the ground; an arena for combat. |
-| **to spit** | to **spit** *(past: spat)* | **spitte, spittle** | *Verb:* To forcibly eject saliva from the mouth.<br>*Noun:* The saliva ejected; the physical act of spitting. |
-| **to bid** | to **bid** *(past: bâde)* | **bidde, bids** | *Verb:* To issue a command or greeting; to offer a specific price.<br>*Noun:* An offer of a price (as at an auction); an attempt or effort to achieve something. |
+| **to fit** | **to fit fit(s fit fitting** | **fitte, fits** | *Verb:* To be the correct size and shape for something; to adapt or suit.<br>*Noun:* A sudden physical or emotional outburst; the tailored shape or contour of a garment. |
+| **to rid** | **to rid rid(s rid ridding** | **riddance** | *Verb:* To free a person or place from something unwanted.<br>*Noun:* The act of eliminating or discarding a troublesome entity. |
+| **to pit** | **to pyt pyt(s pyt pytting** | **pytte, pyts** | *Verb:* To set into direct opposition or combat; to place into a hole.<br>*Noun:* A deep hole or excavation in the ground; an arena for combat. |
+| **to spit** | **to spit spit(s spat spitting** | **spitte, spittle** | *Verb:* To forcibly eject saliva from the mouth.<br>*Noun:* The saliva ejected; the physical act of spitting. |
+| **to bid** | **to bid bid(d bâde bidding** | **bidde, bids** | *Verb:* To issue a command or greeting; to offer a specific price.<br>*Noun:* An offer of a price (as at an auction); an attempt or effort to achieve something. |
