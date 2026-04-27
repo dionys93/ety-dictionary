@@ -280,16 +280,16 @@ These verbs take standard suffixation (e.g., *-ed*) in their past tense.
 
 | Modern English | Inglisce Verb | Inglisce Noun | Definitions |
 | :--- | :--- | :--- | :--- |
-| **to pit** | to **pit** *(past: pitted)* | **pitte**, **pits** *(pl.)* | *Verb:* To extract or remove the hard seed from a fruit.<br>*Noun:* The large, hard central seed of a stone fruit. |
-| **to spit** | to **spit** *(past: spitted)* | **spitte**, **spits** *(pl.)* | *Verb:* To pierce or impale meat on a rod for roasting.<br>*Noun:* A slender, pointed rod or skewer used for roasting meat over a fire. |
+| **to pit** | **to pit, pit(s, pitted, pitting** *(past: pitted)* | **pitte**, **pits** *(pl.)* | *Verb:* To extract or remove the hard seed from a fruit.<br>*Noun:* The large, hard central seed of a stone fruit. |
+| **to spit** | **to spit, spit(s, spitted, spitting** | **spitte**, **spits** *(pl.)* | *Verb:* To pierce or impale meat on a rod for roasting.<br>*Noun:* A slender, pointed rod or skewer used for roasting meat over a fire. |
 
 ### 2. Irregular Conjugations
 These verbs undergo an internal vowel shift or remain completely static in their past tense.
 
 | Modern English | Inglisce Verb | Inglisce Noun | Definitions |
 | :--- | :--- | :--- | :--- |
-| **to fit** | **to fit fit(s fit fitting** | **fitte, fits** | *Verb:* To be the correct size and shape for something; to adapt or suit.<br>*Noun:* A sudden physical or emotional outburst; the tailored shape or contour of a garment. |
-| **to rid** | **to rid rid(s rid ridding** | **riddance** | *Verb:* To free a person or place from something unwanted.<br>*Noun:* The act of eliminating or discarding a troublesome entity. |
-| **to pit** | **to pyt pyt(s pyt pytting** | **pytte, pyts** | *Verb:* To set into direct opposition or combat; to place into a hole.<br>*Noun:* A deep hole or excavation in the ground; an arena for combat. |
-| **to spit** | **to spit spit(s spat spitting** | **spitte, spittle** | *Verb:* To forcibly eject saliva from the mouth.<br>*Noun:* The saliva ejected; the physical act of spitting. |
-| **to bid** | **to bid bid(d bâde bidding** | **bidde, bids** | *Verb:* To issue a command or greeting; to offer a specific price.<br>*Noun:* An offer of a price (as at an auction); an attempt or effort to achieve something. |
+| **to fit** | **to fit, fit(s, fit, fitting** | **fitte, fits** | *Verb:* To be the correct size and shape for something; to adapt or suit.<br>*Noun:* A sudden physical or emotional outburst; the tailored shape or contour of a garment. |
+| **to rid** | **to rid, rid(s, rid, ridding** | **riddance** | *Verb:* To free a person or place from something unwanted.<br>*Noun:* The act of eliminating or discarding a troublesome entity. |
+| **to pit** | **to pyt, pyt(s, pyt, pytting** | **pytte, pyts** | *Verb:* To set into direct opposition or combat; to place into a hole.<br>*Noun:* A deep hole or excavation in the ground; an arena for combat. |
+| **to spit** | **to spit, spit(s, spat, spitting** | **spitte, spittle** | *Verb:* To forcibly eject saliva from the mouth.<br>*Noun:* The saliva ejected; the physical act of spitting. |
+| **to bid** | **to bid, bid(s bâde, bidding** | **bidde, bids** | *Verb:* To issue a command or greeting; to offer a specific price.<br>*Noun:* An offer of a price (as at an auction); an attempt or effort to achieve something. |
