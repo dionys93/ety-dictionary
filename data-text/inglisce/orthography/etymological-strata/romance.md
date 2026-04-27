@@ -103,3 +103,32 @@ For Romance verbs ending in *-guish* and *-quish*, the preceding `/w/` glide is 
 
 ---
 
+## Latin Imports Ending in -it
+
+Words imported from Latin ending in `-it` generally fall into two distinct orthographic categories in **Inglisce**: standard regular verbs and the specific `-mitte` root class. Both categories maintain clean, predictable paths to their Romance noun derivations.
+
+### 1. The Regular Imports
+Standard multisyllabic Latin verbs maintain their clean base spellings. When spoken stress ambiguity arises, Inglisce utilizes the grave accent (`è`) to explicitly pin the stress to the correct syllable (e.g., preventing *èdit* from sounding like *e-DIT*). They derive into nouns using standard Romance suffixes like `-cion` or `-âcion`.
+
+| Modern English | Inglisce  | 
+| :--- | :--- | 
+| **edit, edition** | **èdit, edicion** | 
+| **limit, limitation** | **limit, limitâcion** |
+
+### 2. The "-mitte" Root Class
+Modern English verbs ending in `-mit` (such as *admit* or *commit*) derive from the Latin root *mittere*. English lazily chopped off the end of the word, which obscures the etymological connection to their noun forms (which suddenly double the 's', as in *admission*).
+
+Inglisce restores the visual logic by reinstating the Old French / Latin double 't' and terminal 'e'. This explicitly marks them as a specific Romance verb class and makes their transition into `-mission` nouns highly predictable.
+
+| Modern English | Inglisce | 
+| :--- | :--- |
+| **admit** | **admitte, admission** | 
+| **commit** | **comitte, comission** |
+| **emit** | **emitte, emission** | 
+| **submit** | **sobmitte, sobmission** | 
+| **remit** | **remitte, remission** | 
+| **omit** | **omitte, omission** |
+
+---
+
+
