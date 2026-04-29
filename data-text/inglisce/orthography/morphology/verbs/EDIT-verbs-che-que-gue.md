@@ -1,10 +1,4 @@
-to bake
-Infinitive: to bâche
-Present: bâc(s
-Past Tense: bâched
-Present Participle: bâching
-Noun Forms: bâcor, bâcherie
-
+| Infinitive | 1st Person | 3rd Person | Past Tense | Gerund | Nouns |
 | **to brâche** (brake) | I, you, uie brâc | hie brâcs | brâched | brâching | brâche, braix |
 | **to câche** (cake) | I, you, uie câc | hie câcs | câched | câching | câche, caix |
 | **to faiche** (fake) | I, you, uie faic | hie faics | faiched | faiching | faiche, faix |
@@ -25,14 +19,20 @@ Noun Forms: bâcor, bâcherie
 | **to toque** (toke) | I, you, uie toac | hie toacs | toqued | toquing | toque, toax |
 | **to joque** (joke) | I, you, uie joac | hie joacs | joqued | joquing | joque, joax |
 
-
-
 | Infinitive | 1st Person | 3rd Person | Past Tense | Gerund | Noun (Sing.) | Noun (Plur.) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **to barche** (bark) | I, you, uie barc | hie barcs | barched | barching | barche, barx |
 | **to narche** (nark) | I, you, uie narc | hie narcs | narched | narching | narche, narx |
 | **to siarche** (shark) | I, you, uie siarc | hie siarcs | siarched | siarching| siarche, siarx |
 | **to smêche** (smirk) | I, you, uie smêc | hie smêcs | smêched | smêching| smêche, smêx |
+
+
+to bake
+Infinitive: to bâche
+Present: bâc(s
+Past Tense: bâched
+Present Participle: bâching
+Noun Forms: bâcor, bâcherie
 
 to bag
 Infinitive: to bague
@@ -96,6 +96,21 @@ Present: uing(s
 Past Tense: uingued
 Present Participle: uinguing
 Noun Forms: uingue, uingue's, uings
+
+to sing
+Infinitive: to singue
+Present: sing(s
+Past Tense: sâng
+Past Participle: song
+Present Participle: singuing
+Noun Forms: songue, sòngs
+
+to king
+Infinitive: to cyngue
+Present: cyng(s
+Past Tense: cyngued
+Present Participle: cynguing
+Noun Forms: cyngue, cyngs
 
 to cog 
 Infinitive: to cágue
