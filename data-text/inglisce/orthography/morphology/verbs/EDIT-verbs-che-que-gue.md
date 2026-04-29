@@ -1,4 +1,5 @@
 | Infinitive | 1st Person | 3rd Person | Past Tense | Gerund | Nouns |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **to brâche** (brake) | I, you, uie brâc | hie brâcs | brâched | brâching | brâche, braix |
 | **to câche** (cake) | I, you, uie câc | hie câcs | câched | câching | câche, caix |
 | **to faiche** (fake) | I, you, uie faic | hie faics | faiched | faiching | faiche, faix |
