@@ -30,7 +30,7 @@ These verbs undergo an internal vowel shift or remain static in their past tense
 | Inglisce Verb | Conjugations | Derived Nouns | Definitions |
 | :--- | :--- | :--- | :--- |
 | to **pytte** | pyt, pyts, pyt, pytting | **pytte, pyts** | *Verb:* To set into opposition.<br>*Noun:* A deep hole or arena. |
-| to **hytte** | hyt, hyts, hyt, hytting | **hytte, hyts** | *Verb:* To strike with sudden force.<br>*Noun:* A forceful impact or blow. |
+| to **hitte** | hit, hits, hit, hitting | **hytte, hyts** | *Verb:* To strike with sudden force.<br>*Noun:* A forceful impact or blow. |
 | to **spytte** | spyt, spyts, spat, spytting | **spytte**, **spyttle** | *Verb:* To forcibly eject saliva.<br>*Noun:* The saliva itself. |
 | to **sitte** | sit, sits, sat, sitting | **site, síts** | *Verb:* To rest one's weight upon the buttocks.<br>*Noun:* A location or a seat. |
 | to **fitte** | fit, fits, fit, fitting | **fitte, fits** | *Verb:* To be the correct size or shape.<br>*Noun:* A sudden seizure, or emotional outburst; a tailored shape. |
