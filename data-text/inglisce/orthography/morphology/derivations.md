@@ -65,3 +65,36 @@ If the spoken stress falls heavily on the final syllable (e.g., ad-MIT), the ver
 | to **remitte** | remitte(s, remitted, remitting | **remission** | 
 | to **omitte** | omitte(s, omitted, omitting | **omission** | 
 | to **permitte** | permitte(s, permitted, permitting | **permission**, **pêrmit** |
+
+---
+
+## Enclitics and Pronoun Contractions
+
+In Inglisce, weak pronouns and helping verbs frequently contract and attach to the preceding word. Because Inglisce enforces a strict visual split between heavy roots (ending in `-e`) and lean verbs (ending in consonants), the clitic system operates on a highly predictable binary. 
+
+The spelling and attachment of a clitic are dictated entirely by the terminal letter of the word it follows. 
+
+### 1. The Vowel Cushion (Fused Clitics)
+If the preceding word state ends in a silent `-e` (such as an infinitive verb, a heavy noun, or a future tense construction), the clitic fuses directly to the word. The `-e` acts as a phonetic hinge, providing a visual cushion before the apostrophe.
+
+* **Rule:** Drop the initial vowel of the pronoun/helping verb and attach directly with an apostrophe.
+
+| Preceding Word State | Clitic Target | Resulting Fusion | 
+| :--- | :--- | :--- |
+| **I'll rânque** (Future) | him / them | **I'll rânque'm** | 
+| **I'll rânque** (Future) | her | **I'll rânque'r** | 
+| **I sihe** (Heavy Verb) | him / them | **I sihe'm** | 
+| **Ћe cate** (Noun + is) | is / has | **Ћe cate's** | 
+
+### 2. Consonant Contact (Detached Pronouns)
+If the preceding word state ends in a hard consonant (such as a lean, actively conjugated verb), fusing a contracted pronoun would create visual and phonetic clashing (e.g., `rânc'm`). Therefore, the pronoun remains detached. 
+
+* **Rule:** Maintain a physical space. Use the reduced, apostrophe-led form for "them" (`'em`), but preserve the full spelling for "him" and "her" (even though the 'h' is frequently elided in spoken rhythm).
+
+| Preceding Word State | Clitic Target | Resulting Structure |
+| :--- | :--- | :--- |
+| **I rânc** (Lean Verb) | them | **I rânc 'em** | 
+| **I rânc** (Lean Verb) | him | **I rânc him** | 
+| **I rânc** (Lean Verb) | her | **I rânc her** |
+
+---
