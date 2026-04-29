@@ -1,5 +1,5 @@
 | Infinitive | 1st Person | 3rd Person | Past Tense | Gerund | Nouns |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | **to brâche** (brake) | I, you, uie brâc | hie brâcs | brâched | brâching | brâche, braix |
 | **to câche** (cake) | I, you, uie câc | hie câcs | câched | câching | câche, caix |
 | **to faiche** (fake) | I, you, uie faic | hie faics | faiched | faiching | faiche, faix |
@@ -11,7 +11,7 @@
 | **to breiche** (break) | I breic | hie breics | **bróc*** (brócan) | breiching | breiche, breix |
 
 | Infinitive | 1st Person | 3rd Person | Past Tense | Gerund | Nouns |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- | :--- | :--- | :--- |
 | **to lâque** (lake) | I, you, uie lâc | hie lâcs | lâqued | lâquing | lâque, laix |
 | **to bânque** (bank) | I, you, uie bânc | hie bâncs | bânqued | bânquing | bânque, bâncs |
 | **to rânque** (rank) | I, you, uie rânc | hie râncs | rânqued | rânquing | rânque, râncs |
