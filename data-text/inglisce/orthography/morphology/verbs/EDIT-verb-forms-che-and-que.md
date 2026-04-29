@@ -59,7 +59,7 @@ These verbs utilize the **-che** digraph and the **â** diacritic for long /eɪ/
 | **to mâche** (make) | I mâc | hie mâcs | **mâde*** | mâching | mâc | maix |
 | **to cuâche** (quake) | I cuâc | hie cuâcs | cuâched | cuâching | cuâc | cuaix |
 | **to râche** (rake) | I râc | hie râcs | râched | râching | râc | raix |
-| **to stâche** (stake) | I stâc | hie stâcs | stâched | stâching | stâc | staix |
+| **to stâche** (stake) | I, you, uie stâc | hie stâcs | stâched | stâching | stâc | staix |
 | **to forsâche** (forsake)| I forsâc | hie forsâcs | **forsôc*** | forsâching | sâc | saix |
 | **to breiche** (break) | I breic | hie breics | **bróc*** (brócan) | breiching | breic | breix |
 
@@ -87,3 +87,48 @@ These words follow the standard mechanics but do not require vowel mutation befo
 | **to narche** (nark) | I narc | hie narcs | narched | narching | narc | narx |
 | **to siarche** (shark) | I siarc | hie siarcs | siarched | siarching| siarc | siarx |
 | **to smirche** (smirk) | I smirc | hie smircs | smirched | smirching| smirc | smirx |
+
+
+
+to bag, bags, bagued, baguing
+bague, bags
+
+to drag -s dragued draguing
+drague, drags
+
+to flag -s flagued flaguing
+flague, flags
+
+to plague -> to plâgue plâgs plâgued plâguing
+plague -> plâgue, plâgs
+
+to dig: to dighe dig(s dugh, dighing
+dig -> dighe, digs
+
+to pig out: to pig aut, -s, pighed, pighing
+pig: pighe, pigs
+
+to rig: to rig, -s righed, righing
+rig -> righe, rigs
+
+to ding: to ding, dings dingued dinguing
+ding -> dingue, dings
+
+to wing it: to uingue it, -s uingued uinguing
+wing -> uingue, uings
+
+to cog: to cágue cág(s cágued cáguing
+cog: cágue, cágs
+
+to dog: to dog -s dogued doguing
+dog: dogue, dogs
+
+to clog -s clogued cloguing
+clogue, clogs
+
+to rank -> to rânque, rânc(s rânqued rânquing
+rank -> rânque, râncs
+
+to stack -> to stache stac(s stached staching
+stack -> stache, stax
+
