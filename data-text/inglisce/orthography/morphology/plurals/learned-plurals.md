@@ -55,11 +55,11 @@ It is influenced by French and other Romance sources: *pôure* (French *pouvoir
 | Singular | Plural   |
 | -------- | -------- |
 | desîre  | desîars |
-| fuîre   | fuîars  |
+| fŷre   | fŷars  |
 | hîre    | hîars   |
 
 Nouns in **-îre** form plurals with **-îars**, reflecting their **former stem patterns**:  
-*desîre* (Latin *desiderare*), *hîre* (Old English *hyrian*), *fuîre* (Old English *fyrian*).
+*desîre* (Latin *desiderare*), *hîre* (Old English *hyrian*), *fŷre* (Old English *fyrian*).
 
 ---
 
