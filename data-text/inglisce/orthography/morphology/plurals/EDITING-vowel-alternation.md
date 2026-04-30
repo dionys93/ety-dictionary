@@ -47,7 +47,7 @@ Derived or truncated forms pluralize regularly with ⟨-s⟩.
 | Singular | Plural |
 |--------|--------|
 | biec | biex |
-| chiec | chiex |
+| c̃iec | c̃iex |
 | liec | liex |
 | friec | friex
 
