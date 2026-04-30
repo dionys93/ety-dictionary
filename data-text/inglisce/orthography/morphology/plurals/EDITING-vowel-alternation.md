@@ -57,7 +57,7 @@ Derived or truncated forms pluralize regularly with ⟨-s⟩.
 
 | Singular | Plural |
 |--------|--------|
-| chauc | chaux |
+| c̃auc | c̃aux |
 | stauc | staux |
 | tauc | taux |
 | ouac | ouax |
