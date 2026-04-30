@@ -19,24 +19,24 @@ These verbs strip down to a lean root for present tense actions (`pit`, `uip`) b
 
 | Inglisce Verb | Conjugations | Derived Noun | Definitions |
 | :--- | :--- | :--- | :--- |
-| to **pitte** | pit, pits, pitted, pitting | **pitte, pits** | *Verb:* To extract a seed.<br>*Noun:* The hard seed of a fruit. |
-| to **spitte** | spit, spits, spitted, spitting | **spitte, spits** | *Verb:* To pierce meat for roasting.<br>*Noun:* A slender roasting rod. |
-| to **uippe** | uip, uips, uipped, uipping | **uippe, uips** | *Verb:* To strike with a lash.<br>*Noun:* A flexible instrument for striking. |
-| to **flippe** | flip, flips, flipped, flipping | **flippe, flips** | *Verb:* To turn over with a sudden motion.<br>*Noun:* A sudden quick movement or toss. |
+| to **pitte** | pit(s, pitted, pitting | **pitte, pits** | *Verb:* To extract a seed.<br>*Noun:* The hard seed of a fruit. |
+| to **spitte** | spit(s, spitted, spitting | **spitte, spits** | *Verb:* To pierce meat for roasting.<br>*Noun:* A slender roasting rod. |
+| to **uippe** | uip(s, uipped, uipping | **uippe, uips** | *Verb:* To strike with a lash.<br>*Noun:* A flexible instrument for striking. |
+| to **flippe** | flip(s, flipped, flipping | **flippe, flips** | *Verb:* To turn over with a sudden motion.<br>*Noun:* A sudden quick movement or toss. |
 
 #### Irregular Conjugations
 These verbs undergo an internal vowel shift or remain static in their past tense, but follow the same elastic visual dynamic.
 
 | Inglisce Verb | Conjugations | Derived Nouns | Definitions |
 | :--- | :--- | :--- | :--- |
-| to **pytte** | pyt, pyts, pyt, pytting | **pytte, pyts** | *Verb:* To set into opposition.<br>*Noun:* A deep hole or arena. |
-| to **hitte** | hit, hits, hit, hitting | **hytte, hyts** | *Verb:* To strike with sudden force.<br>*Noun:* A forceful impact or blow. |
-| to **spytte** | spyt, spyts, spat, spytting | **spytte**, **spyttle** | *Verb:* To forcibly eject saliva.<br>*Noun:* The saliva itself. |
-| to **sitte** | sit, sits, sat, sitting | **site, síts** | *Verb:* To rest one's weight upon the buttocks.<br>*Noun:* A location or a seat. |
-| to **fitte** | fit, fits, fit, fitting | **fitte, fits** | *Verb:* To be the correct size or shape.<br>*Noun:* A sudden seizure, or emotional outburst; a tailored shape. |
-| to **ridde** | rid, rids, rid, ridding | **riddance** | *Verb:* To eliminate or clear away.<br>*Noun:* The act of discarding. |
-| to **scite** | scite, scites, sciat, sciting | **scite** | *Verb:* To defecate.<br>*Noun:* Feces. |
-| to **bidde** | bid, bids, bâde, bidding | **bidde, bids** | *Verb:* To issue a command or price.<br>*Noun:* An offer of a price. |
+| to **pytte** | pyt(s, pyt, pytting | **pytte, pyts** | *Verb:* To set into opposition.<br>*Noun:* A deep hole or arena. |
+| to **hitte** | hit(s, hit, hitting | **hytte, hyts** | *Verb:* To strike with sudden force.<br>*Noun:* A forceful impact or blow. |
+| to **spytte** | spyt(s, spat, spytting | **spytte**, **spyttle** | *Verb:* To forcibly eject saliva.<br>*Noun:* The saliva itself. |
+| to **sitte** | sit(s, sat, sitting | **site, síts** | *Verb:* To rest one's weight upon the buttocks.<br>*Noun:* A location or a seat. |
+| to **fitte** | fit(s, fit, fitting | **fitte, fits** | *Verb:* To be the correct size or shape.<br>*Noun:* A sudden seizure, or emotional outburst; a tailored shape. |
+| to **ridde** | rid(s, rid, ridding | **riddance** | *Verb:* To eliminate or clear away.<br>*Noun:* The act of discarding. |
+| to **scite** | scite(s, sciat, sciting | **scite** | *Verb:* To defecate.<br>*Noun:* Feces. |
+| to **bidde** | bid(s, bâde, bidding | **bidde, bids** | *Verb:* To issue a command or price.<br>*Noun:* An offer of a price. |
 
 ---
 
@@ -65,6 +65,7 @@ If the spoken stress falls heavily on the final syllable (e.g., ad-MIT), the ver
 | to **remitte** | remitte(s, remitted, remitting | **remission** | 
 | to **omitte** | omitte(s, omitted, omitting | **omission** | 
 | to **permitte** | permitte(s, permitted, permitting | **permission**, **pêrmit** |
+| to **transmitte** | transmitte(s, transmitted, transmitting | **transmission**, **transmissif** |
 
 ---
 
