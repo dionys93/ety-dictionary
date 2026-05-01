@@ -1,4 +1,4 @@
-oi.txt, verbs-aie-eie-eihe.txt, verbs-îe.txt
+verbs-îe.txt
 
 
 -ie verbs follow the pattern -ies -ied and -ying.
