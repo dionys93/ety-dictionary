@@ -73,3 +73,35 @@ Verbs ending in a hard `-cte` simply append the **-if** suffix.
 | **act / active** | to **acte** | **actif** |
 | **infect / infective** | to **infecte** | **infectif** |
 | **protect / protective** | to **protecte** | **protectif** |
+
+---
+
+Modern English -ous from Latin -osus and Greek -οῦς
+
+The suffix "-ous" plays a significant role in adjective formation in English. 
+It has its origins in both Latin and Greek, carrying over through Old French into English. 
+In Latin, the suffix "-osus" denotes "full of" or "abounding in," while in Greek, the suffix -οῦς has a similar meaning. 
+This suffix is used to create adjectives that denote possessing, full of, or having the qualities of the root noun.
+
+Inglisce uses -(e)us wherever English would use -(i/e)ous.
+
+Modern English:
+    gracious
+    ambitious
+    stupendous
+    atrocious
+    facetious
+    pious
+    venomous
+
+Inglisce:
+    grâceus
+    ambiceus
+    stupèndus
+    atroceus
+    facíceus
+    pîeus
+    venomus
+
+Citations:
+https://www.etymonline.com/word/-ous#etymonline_v_32820
