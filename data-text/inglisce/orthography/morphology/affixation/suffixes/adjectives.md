@@ -1,3 +1,5 @@
+ary.txt, ish.txt, ive.txt, ivus.md, ous.txt
+
 -abilis/-bilis [L]
 -able/-ible [FR] (adj)
 https://www.etymonline.com/word/-able#etymonline_v_49
