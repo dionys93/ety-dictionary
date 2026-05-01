@@ -176,4 +176,22 @@ In Modern English, the suffix **-ology** is used to form nouns denoting a field 
 | **biology** | βίος (*bios*) + λογία | **bîologie** | Uses the **î** diacritic to map the `/aɪ/` sound in the prefix. |
 | **geology** | γεω- (*geo-*) + λογία | **gïologie** | Uses the diaeresis (**ï**) to mark the `/i/` sound before the vowel |
 | **psychology** | ψυχή (*psyche*) + λογία | **sycologie** | Drops the silent initial `p` (following the Greek `ps-` rule) and retains `y` to mark the upsilon root. |
-  
+
+---
+
+Modern English -phobia from Greek φόβος
+
+The suffix "-phobia" is used in English to form nouns that denote an irrational fear or aversion to something. 
+This suffix originates from the Greek word "φόβος" (phobos), which means "fear" or "panic."
+
+Inglisce uses -phobia.
+
+Examples:
+    claustrophobia
+    arachnophobia
+    acrophobia
+
+Inglisce:
+    claustrophobia
+    arachnophobia
+    acrophobia
