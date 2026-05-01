@@ -53,12 +53,21 @@ Verbs in this category retain the final ⟨-e⟩ in all finite forms (dropping i
 * **Noun Pluralization:** `nâme` → `nâms` / `tîme` → `tîms` / `core` → `cors`
 
 #### Unstressed Romance Roots (The Lean Paradigm)
-If the spoken stress falls on the beginning of a Romance import, the terminal `/ɪ/` lacks the phonetic emphasis to support a heavy ending. These verbs remain strictly lean across all forms. 
+
+If the primary spoken stress of a multisyllabic Romance import falls *before* the final syllable (e.g., ED-it, AN-i-mait), the end of the word lacks the phonetic emphasis to support a heavy structural ⟨-e⟩. Consequently, these verbs remain strictly lean across all their conjugations. 
+
+This paradigm governs roots ending in short, unstressed syllables (like `-it`) as well as verbs imported via the Latin *-atus* suffix (spelled `-ait` in Inglisce). 
+
+**The Stress-Shift Derivation:** When these lean verbs derive into abstract nouns, they utilize standard Romance suffixation (such as `-cion`). This addition physically pulls the spoken stress toward the end of the word. Inglisce visibly tracks this predictable stress shift by capping the newly stressed vowel with a circumflex (e.g., `limit` → `limitâcion`, `animait` → `animâcion`).
 
 | Inglisce Verb | Conjugations | Derived Noun | 
 | :--- | :--- | :--- | 
 | to **èdit** | èdit, èdits, èdited, èditing | **èdit**, **edicion** |
-| to **limit** | limit, limits, limited, limiting | **limit**, **limitâcion** | 
+| to **limit** | limit, limits, limited, limiting | **limit**, **limitâcion** |
+| to **animait** | animait, animaits, animaited, animaiting | **animâcion** |
+| to **cúrait** | cúrait, cúraits, cúraited, cúraiting | **curâcion** |
+| to **dominait** | dominait, dominaits, dominaited, dominaiting | **dominâcion** |
+| to **navigait** | navigait, navigaits, navigaited, navigaiting | **navigâcion** |
 
 #### Stressed Romance Roots (The Heavy Paradigm)
 If the spoken stress falls heavily on the final syllable (e.g., ad-MIT), the verb structurally requires the heavy **-mitte** root, anchoring it to its etymological origins in the Latin *mittere* and French *mettre*. The heavy anchor is preserved throughout the active conjugations to signal their specific verb class, making their transition into `-mission` or `-mittie` nouns highly predictable.
