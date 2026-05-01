@@ -1,4 +1,4 @@
-ary.txt, ive.txt, ivus.md, ous.txt
+ivus.md, ous.txt
 
 -abilis/-bilis [L]
 -able/-ible [FR] (adj)
@@ -20,3 +20,9 @@ https://www.etymonline.com/word/-ish#etymonline_v_12259
 https://www.oed.com/dictionary/ish_suffix1?tab=factsheet#99221
 https://bosworthtoller.com/20802
 
+---
+
+-ivus [L]
+-if/-ive [FR]
+-if (adj)
+https://www.etymonline.com/word/-ive#etymonline_v_32842
