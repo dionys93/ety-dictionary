@@ -1,5 +1,3 @@
-ck-replacement.md
-
 
 | Infinitive | 1st Person | 3rd Person | Past Tense | Gerund | Nouns |
 | :--- | :--- | :--- | :--- | :--- | :--- |
