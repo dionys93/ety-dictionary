@@ -99,3 +99,14 @@ Some roots require unique patterns to map their phonetic and morphological reali
 | :--- | :--- | :--- |
 | **equate / equation / equator** | to **equâte** | **þi equâsion**, **þi equâteor** |
 | **edit / edition** | to **èdite** | **þi edicion** |
+
+---
+
+-itas [L]
+-ete [OF]
+-ité [FR]
+-ity [ME]
+-etie, -atie -is (f n)
+https://www.etymonline.com/word/-ity#etymonline_v_32843
+
+---
