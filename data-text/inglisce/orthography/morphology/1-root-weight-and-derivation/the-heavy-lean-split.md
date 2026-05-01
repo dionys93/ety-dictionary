@@ -12,12 +12,12 @@ How this ⟨-e⟩ behaves during active conjugation and pluralization depends st
 
 Native Germanic verbs containing short vowels utilize a dynamic weight-shifting system. The infinitive state establishes the concept with a heavy, capped spelling (doubling the terminal consonant and adding `-e`, e.g., `-itte`, `-ppe`). 
 
-When these verbs are actively conjugated in the present tense, they shed this weight to indicate rapid action, becoming mathematically lean. However, when the concept solidifies into a physical, concrete noun, it retains the heavy morphological weight of the infinitive. 
+When actively conjugated in the present tense, these verbs shed this structural weight, reducing to a lean, functional base. Conversely, when the concept solidifies into a concrete noun, it retains the heavy morphological spelling of the infinitive.
 
 #### Regular Conjugations
 These verbs strip down to a lean root for present tense actions (`pit`, `uip`) but take standard suffixation in their past tense.
 
-| Inglisce Verb | Conjugations | Derived Noun | Definitions |
+| Inglisce Verb Infinitive | Conjugations | Derived Noun | Definitions |
 | :--- | :--- | :--- | :--- |
 | to **pitte** | pit(s, pitted, pitting | **pitte, pits** | *Verb:* To extract a seed.<br>*Noun:* The hard seed of a fruit. |
 | to **spitte** | spit(s, spitted, spitting | **spitte, spits** | *Verb:* To pierce meat for roasting.<br>*Noun:* A slender roasting rod. |
@@ -30,13 +30,15 @@ These verbs undergo an internal vowel shift or remain static in their past tense
 | Inglisce Verb | Conjugations | Derived Nouns | Definitions |
 | :--- | :--- | :--- | :--- |
 | to **pytte** | pyt(s, pyt, pytting | **pytte, pyts** | *Verb:* To set into opposition.<br>*Noun:* A deep hole or arena. |
-| to **hitte** | hit(s, hit, hitting | **hytte, hyts** | *Verb:* To strike with sudden force.<br>*Noun:* A forceful impact or blow. |
+| to **hitte** | hit(s, hit, hitting | **hitte, hits** | *Verb:* To strike with sudden force.<br>*Noun:* A forceful impact or blow. |
 | to **spytte** | spyt(s, spat, spytting | **spytte**, **spyttle** | *Verb:* To forcibly eject saliva.<br>*Noun:* The saliva itself. |
-| to **sitte** | sit(s, sat, sitting | **site, síts** | *Verb:* To rest one's weight upon the buttocks.<br>*Noun:* A location or a seat. |
+| to **sitte*** | sit(s, sat, sitting | **site, síts** | *Verb:* To rest one's weight upon the buttocks.<br>*Noun:* A location or a seat. |
 | to **fitte** | fit(s, fit, fitting | **fitte, fits** | *Verb:* To be the correct size or shape.<br>*Noun:* A sudden seizure, or emotional outburst; a tailored shape. |
 | to **ridde** | rid(s, rid, ridding | **riddance** | *Verb:* To eliminate or clear away.<br>*Noun:* The act of discarding. |
 | to **scite** | scite(s, sciat, sciting | **scite** | *Verb:* To defecate.<br>*Noun:* Feces. |
 | to **bidde** | bid(s, bâde, bidding | **bidde, bids** | *Verb:* To issue a command or price.<br>*Noun:* An offer of a price. |
+
+*\*Note on sitte/site: In Modern English, historical vowel shifts split this root into two distinct spellings ("sit" for the verb, "seat" for the noun). Inglisce repairs this through derivational unification, returning them to a single lexemic base: the verb **to sitte** and the heavy noun **site** (utilizing the acute accent in the plural, **síts**, to preserve the long vowel distinction).*
 
 ---
 
@@ -45,7 +47,7 @@ These verbs undergo an internal vowel shift or remain static in their past tense
 When words possess long/diphthongal vowels or derive from multisyllabic Romance imports, the final ⟨-e⟩ acts as a stable anchor. Because dropping the ⟨-e⟩ would obscure the vowel quality or the etymological class, the spelling weight remains visually consistent across verb conjugations. 
 
 #### Long Vowel Monosyllables
-Verbs in this category retain the final ⟨-e⟩ in all finite forms (dropping it only for the present participle `-ing`). Conversely, nouns in this category drop the ⟨-e⟩ when pluralizing. If dropping the ⟨-e⟩ would create ambiguity, an acute accent is introduced (e.g., `site` → `síts`). 
+Verbs in this category retain the final ⟨-e⟩ in all finite forms (dropping it only for the present participle `-ing`). Conversely, nouns in this category drop the ⟨-e⟩ when pluralizing. 
 
 * **Verb Continuity:** `to nâme` → `nâmes` / `nâmed` / `nâming`
 * **Noun Pluralization:** `nâme` → `nâms` / `tîme` → `tîms` / `core` → `cors`
