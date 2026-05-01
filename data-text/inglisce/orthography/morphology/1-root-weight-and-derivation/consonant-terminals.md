@@ -212,16 +212,40 @@ Noun Forms: hôche, hôche's, heox
 
 Conjugation Patterns: -cte
 
-In Inglish, verbs that end in -cte follow consistent patterns in their verb conjugations.
+In Inglish, verbs that end in -cte or -pte follow consistent patterns in their verb conjugations.
 
-Verbs retain the -cte ending for all pronouns in the present tense, except for the third-person singular, which drops -te and adds -s.
+Verbs retain the -cte or -pte ending for all pronouns in the present tense, except for the third-person singular, which drops -te and adds -s.
 
 Examples:
 
 Infinitive and Present Tense: to acte, acte
 Singular Third-Person Present: acs
 Past Tense: acted
-Continuous/Gerund: acting
+Gerund: acting
+Noun Forms: acte, acte's, acs; accion(s)
+
+to connecte, connecs, connected, connecting
+Noun: conneccion
+
+to compacte compacs -d -ing
+compact, compacs
+
+to conflicte, conflics, conflicted, conflicting
+Noun: conflict, conflics
+
+to defecte, defecs, defected, defecting
+Noun: difect, difecs, defeccion
+
+to dejecte, dejecs, dejected, dejecting
+Noun: dejeccion
+
+to infecte, infecs, infected, infecting
+Noun: infeccion
+
+to objecte, objecs, objected, objecting
+Noun: object, objecs, objeccion
+
+Noun: insect, insecs
 
 to accepte, accepte
 acceps
