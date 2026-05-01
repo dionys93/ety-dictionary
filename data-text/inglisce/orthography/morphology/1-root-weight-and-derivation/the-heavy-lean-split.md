@@ -1,18 +1,18 @@
-## The Lean Verb / Heavy Noun Split
+## Final ⟨-e⟩ and The Structural Split
 
-In Modern English, words ending in a short `/ɪ/` sound frequently suffer from zero-derivation, where the exact same spelling is used for both an active verb (to *pit*) and a concrete noun (the *pit*). 
+In Modern English, words frequently suffer from zero-derivation, where the exact same spelling is used for an active verb (to *pit*) and a concrete noun (the *pit*). 
 
-**Inglisce** eliminates this visual ambiguity by treating spelling weight as a grammatical flag. The system categorizes words by their etymological roots (Germanic vs. Romance) and applies specific morphological rules to separate actions from objects.
+**Inglisce** eliminates this visual ambiguity by treating terminal spelling weight as a grammatical flag. The final **⟨-e⟩** is a functional marker of lexemic completeness. It is structural, not phonetic. Though unpronounced, it stabilizes morphology, aligns noun and verb bases, and supports syntactic operations like pronoun contraction.
+
+How this ⟨-e⟩ behaves during active conjugation and pluralization depends strictly on the etymology and phonetic length of the root.
 
 ---
 
-### 1. Monosyllables (The Germanic Base)
+### 1. The Dynamic Root (Short Vowels & Germanic Bases)
 
-Native Germanic verbs utilize a dynamic weight-shifting system. The infinitive state establishes the concept with a heavy, capped spelling (doubling the terminal consonant and adding `-e`, e.g., `-itte`, `-ppe`). 
+Native Germanic verbs containing short vowels utilize a dynamic weight-shifting system. The infinitive state establishes the concept with a heavy, capped spelling (doubling the terminal consonant and adding `-e`, e.g., `-itte`, `-ppe`). 
 
 When these verbs are actively conjugated in the present tense, they shed this weight to indicate rapid action, becoming mathematically lean. However, when the concept solidifies into a physical, concrete noun, it retains the heavy morphological weight of the infinitive. 
-
-To handle homophones and irregulars, Inglisce utilizes the **y** substitution in specific roots to visually isolate them from standard conjugations.
 
 #### Regular Conjugations
 These verbs strip down to a lean root for present tense actions (`pit`, `uip`) but take standard suffixation in their past tense.
@@ -25,7 +25,7 @@ These verbs strip down to a lean root for present tense actions (`pit`, `uip`) b
 | to **flippe** | flip(s, flipped, flipping | **flippe, flips** | *Verb:* To turn over with a sudden motion.<br>*Noun:* A sudden quick movement or toss. |
 
 #### Irregular Conjugations
-These verbs undergo an internal vowel shift or remain static in their past tense, but follow the same elastic visual dynamic.
+These verbs undergo an internal vowel shift or remain static in their past tense, but follow the same elastic visual dynamic. To handle homophones, Inglisce utilizes the **y** substitution in specific roots to visually isolate them.
 
 | Inglisce Verb | Conjugations | Derived Nouns | Definitions |
 | :--- | :--- | :--- | :--- |
@@ -40,21 +40,26 @@ These verbs undergo an internal vowel shift or remain static in their past tense
 
 ---
 
-### 2. Polysyllables (The Romance Base)
+### 2. The Stable Base (Long Vowels & Romance Imports)
 
-When multisyllabic Latin and French imports are integrated into Inglisce, their morphological weight is dictated by phonetic stress rather than the dynamic stripping seen in Germanic roots. The spelling remains consistent across the verb's conjugations.
+When words possess long/diphthongal vowels or derive from multisyllabic Romance imports, the final ⟨-e⟩ acts as a stable anchor. Because dropping the ⟨-e⟩ would obscure the vowel quality or the etymological class, the spelling weight remains visually consistent across verb conjugations. 
 
-#### Unstressed Roots (The Lean Paradigm)
-If the spoken stress falls on the beginning of the word, the terminal `/ɪ/` lacks the phonetic emphasis to support a heavy ending. These verbs remain strictly lean across all forms—infinitive, active conjugation, and direct noun derivations. 
+#### Long Vowel Monosyllables
+Verbs in this category retain the final ⟨-e⟩ in all finite forms (dropping it only for the present participle `-ing`). Conversely, nouns in this category drop the ⟨-e⟩ when pluralizing. If dropping the ⟨-e⟩ would create ambiguity, an acute accent is introduced (e.g., `site` → `síts`). 
+
+* **Verb Continuity:** `to nâme` → `nâmes` / `nâmed` / `nâming`
+* **Noun Pluralization:** `nâme` → `nâms` / `tîme` → `tîms` / `core` → `cors`
+
+#### Unstressed Romance Roots (The Lean Paradigm)
+If the spoken stress falls on the beginning of a Romance import, the terminal `/ɪ/` lacks the phonetic emphasis to support a heavy ending. These verbs remain strictly lean across all forms. 
 
 | Inglisce Verb | Conjugations | Derived Noun | 
 | :--- | :--- | :--- | 
 | to **èdit** | èdit, èdits, èdited, èditing | **èdit**, **edicion** |
 | to **limit** | limit, limits, limited, limiting | **limit**, **limitâcion** | 
 
-#### Stressed Roots (The Heavy Paradigm)
-
-If the spoken stress falls heavily on the final syllable (e.g., ad-MIT), the verb structurally requires the heavy **-mitte** root, anchoring it to its etymological origins in the Latin *mittere* (to send) and French *mettre* (to put). Unlike Germanic verbs, these Romance imports do *not* strip their weight in the present tense. The heavy anchor `-mitte` is preserved throughout the active conjugations to signal their specific verb class. By maintaining this historical foundation, their transition into `-mission` nouns (reflecting the Latin past participle *missus*) or `-mittie` nouns becomes a highly predictable mechanical shift.
+#### Stressed Romance Roots (The Heavy Paradigm)
+If the spoken stress falls heavily on the final syllable (e.g., ad-MIT), the verb structurally requires the heavy **-mitte** root, anchoring it to its etymological origins in the Latin *mittere* and French *mettre*. The heavy anchor is preserved throughout the active conjugations to signal their specific verb class, making their transition into `-mission` or `-mittie` nouns highly predictable.
 
 | Inglisce Verb | Conjugations | Derived Nouns |
 | :--- | :--- | :--- | 
@@ -71,12 +76,10 @@ If the spoken stress falls heavily on the final syllable (e.g., ad-MIT), the ver
 
 ## Enclitics and Pronoun Contractions
 
-In Inglisce, weak pronouns and helping verbs frequently contract and attach to the preceding word. Because Inglisce enforces a strict visual split between heavy roots (ending in `-e`) and lean verbs (ending in consonants), the clitic system operates on a highly predictable binary. 
-
-The spelling and attachment of a clitic are dictated entirely by the terminal letter of the word it follows. 
+In Inglisce, weak pronouns and helping verbs frequently contract and attach to the preceding word. Because Inglisce enforces a strict visual split between heavy roots (ending in ⟨-e⟩) and lean verbs (ending in consonants), the clitic system operates on a highly predictable binary dictated entirely by the terminal letter. 
 
 ### 1. The Vowel Cushion (Fused Clitics)
-If the preceding word state ends in a silent `-e` (such as an infinitive verb, a heavy noun, or a future tense construction), the clitic fuses directly to the word. The `-e` acts as a phonetic hinge, providing a visual cushion before the apostrophe.
+If the preceding word state ends in a silent ⟨-e⟩ (such as an infinitive verb, a heavy noun, or a future tense construction), the clitic fuses directly to the word. The ⟨-e⟩ acts as a phonetic hinge, providing a visual cushion before the apostrophe while preserving the full singular base under contraction.
 
 * **Rule:** Drop the initial vowel of the pronoun/helping verb and attach directly with an apostrophe.
 
@@ -88,7 +91,7 @@ If the preceding word state ends in a silent `-e` (such as an infinitive verb, a
 | **Ћe cate** (Noun + is) | is / has | **Ћe cate's** | 
 
 ### 2. Consonant Contact (Detached Pronouns)
-If the preceding word state ends in a hard consonant (such as a lean, actively conjugated verb), fusing a contracted pronoun would create visual and phonetic clashing (e.g., `rânc'm`). Therefore, the pronoun remains detached. 
+If the preceding word state ends in a hard consonant (such as a lean, actively conjugated Germanic verb), fusing a contracted pronoun would create visual and phonetic clashing (e.g., `rânc'm`). Therefore, the pronoun remains detached. 
 
 * **Rule:** Maintain a physical space. Use the reduced, apostrophe-led form for "them" (`'em`), but preserve the full spelling for "him" and "her" (even though the 'h' is frequently elided in spoken rhythm).
 
@@ -97,152 +100,3 @@ If the preceding word state ends in a hard consonant (such as a lean, actively c
 | **I rânc** (Lean Verb) | them | **I rânc 'em** | 
 | **I rânc** (Lean Verb) | him | **I rânc him** | 
 | **I rânc** (Lean Verb) | her | **I rânc her** |
-
----
-
-## Final ⟨-e⟩ in Inglisce
-
-### Overview
-
-In Inglisce, many **monosyllabic noun–verb bases** end in a **non-pronounced final ⟨-e⟩**.
-
-This ⟨-e⟩ is **structural, not phonetic**.  
-It stabilizes morphology, preserves vowel identity across inflection, and supports syntactic operations such as **noun–verb contraction**.
-
-Final ⟨-e⟩ is therefore **retained by design**, even when silent.
-
----
-
-### Core Functions of Final ⟨-e⟩
-
-Final ⟨-e⟩ serves three closely related purposes:
-
-1. **Base-form stability**  
-   Many lexemes function as both nouns and verbs without orthographic change.
-
-2. **Inflectional contrast**  
-   The presence or absence of ⟨-e⟩ distinguishes singular, plural, and verbal forms in a predictable way.
-
-3. **Contraction support**  
-   Retaining ⟨-e⟩ preserves the full singular base under contraction.
-
-Example:
-
-> *My nâme’s Tim.*
-
-Here, ⟨-e⟩ maintains contrast between:
-- singular noun: **nâme**
-- plural noun: **nâms**
-- verbal forms: **nâmes, nâmed**
-
----
-
-### Distribution
-
-Final ⟨-e⟩ occurs primarily in:
-
-- Monosyllabic noun–verb bases  
-- Forms with long or diphthongal vowels  
-- Lexemes where vowel quality must remain visible under inflection
-
-The ⟨-e⟩ is **not pronounced**, but constrains how the preceding vowel is interpreted.
-
----
-
-## Inflectional Behavior
-
-### Verbs
-
-Verbs **retain final ⟨-e⟩** in all finite forms except the present participle.
-
-**Rules:**
-
-- Infinitive: base form  
-- 3rd person singular present: add **-s**  
-- Past tense: add **-d**  
-- Present participle: drop ⟨-e⟩ + add **-ing**
-
-**Example: nâme**
-
-| Form | Result |
-|-----|--------|
-| Infinitive | to nâme |
-| 3sg present | nâmes |
-| Past | nâmed |
-| Present participle | nâming |
-
----
-
-### Nouns
-
-Nouns **drop final ⟨-e⟩** when forming the plural.
-
-**Rules:**
-
-- Singular: base form  
-- Plural: drop ⟨-e⟩ + add **-s**
-
-If dropping ⟨-e⟩ would obscure vowel quality, an **accent** is introduced.
-
-**Example: site**
-
-| Form | Result |
-|-----|--------|
-| Singular | site |
-| Plural | síts |
-
-(See [Acute Accent](../diacritics/acute.md).)
-
----
-
-## Representative Examples
-
-### Shared Noun–Verb Bases
-
-- nâme → nâms / to nâme  
-- tîme → tîms / to tîme  
-- fême → fêms / to fême  
-- core → cors / to core  
-- store → stors / to store  
-
-### Vowel-Preserving Forms
-
-- site → síts  
-- lîfe → lîfs  
-- uîfe → uîfs  
-
-### Additional Forms
-
-- bâle → bâls  
-- scâle → scâls  
-- mâle → mâls  
-- reute → reuts  
-- baure → baurs  
-- guare → guars  
-
----
-
-## Interaction with Diacritics
-
-Final ⟨-e⟩ interacts with diacritics in systematic ways:
-
-- Accents are added **only when vowel quality would otherwise be ambiguous**
-- Diacritics **supplement** ⟨-e⟩; they do not replace it
-- The presence of ⟨-e⟩ reduces the need for accent marking
-
-This maintains **orthographic economy**.
-
----
-
-### Design Principle
-
-Final ⟨-e⟩ in Inglisce is not a historical remnant.
-
-It is a **functional marker of lexemic completeness** that:
-
-- aligns noun and verb morphology  
-- preserves vowel identity across inflection  
-- maintains clear singular–plural contrast  
-- avoids exceptional spellings  
-
-⟨-e⟩ thus functions as **structural punctuation of the lexeme**, not as a phonetic signal.
