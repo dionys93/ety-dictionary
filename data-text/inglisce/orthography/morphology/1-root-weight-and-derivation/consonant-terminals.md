@@ -256,3 +256,14 @@ to intercepte
 interceps
 intercepted
 intercepting
+
+---
+
+(curve) to corve → þe corve
+(change) to c̃ainge → þe c̃ainge
+to dance → þe dance
+to horse → þe horse
+to force → þe force
+(chance) to c̃ance → þe c̃ance
+(range) to rânge → þe rânge
+to massage → þa massage
