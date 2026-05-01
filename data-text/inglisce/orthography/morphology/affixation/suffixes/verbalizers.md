@@ -1,0 +1,13 @@
+facere, -ficare [L]
+-fier [FR]
+-ify, -fy [ME]
+-ifae, -fae (v)
+https://www.etymonline.com/word/-fy#etymonline_v_38227
+https://www.etymonline.com/word/-ify#etymonline_v_42244
+
+-ficare, -ficatio, -ficationem [L]
+-fication [ME]
+-ficâcion (f n)
+https://www.etymonline.com/word/-fication
+
+---
