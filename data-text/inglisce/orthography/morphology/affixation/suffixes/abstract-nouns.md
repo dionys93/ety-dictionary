@@ -1,4 +1,4 @@
-ity.txt, ment.txt, ology.md, phobia.txt
+ology.md, phobia.txt
 
 
 # The Latin Suffix "-ar" and Noun Derivation "-etie"
