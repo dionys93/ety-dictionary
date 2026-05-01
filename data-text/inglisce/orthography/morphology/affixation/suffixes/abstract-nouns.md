@@ -195,3 +195,24 @@ Inglisce:
     claustrophobia
     arachnophobia
     acrophobia
+
+---
+
+Modern English -graphy from Greek γραφία
+
+The suffix "-graphy" is used in Modern English to form nouns that refer to a field of study, a form of writing or drawing, or a specific type of descriptive work. 
+This suffix originates from the Greek word γραφία (graphia), which means "writing" or "description."
+
+Inglisce simplifies -graphy to -graphie
+
+Examples:
+    biography: The written account of someone's life (from Greek "bios" meaning "life" + "graphia").
+    geography: The study of the Earth's physical features (from Greek "geo" meaning "earth" + "graphia").
+    photography: The art or practice of taking and processing photographs (from Greek "phōs" meaning "light" + "graphia").
+
+Inglisce:
+    bîographie
+    gïographie
+    fotographie
+
+---
