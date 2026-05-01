@@ -14,3 +14,19 @@ In Modern English, many adjectives derived from the Latin suffix **-aris** end i
 | **regular** <br> **regularity** | *regularis* | **regular** <br> **regularetie** | 
 | **particular** <br> **particularity** | *particularis* | **particular** <br> **particularetie** |
 | **familiar** <br> **familiarity** | *familiaris* | **familliar** <br> **familliaretie** | 
+
+-arius, -aria, -arium [L]
+-aire [FR]
+-arie [MI]
+-ary [ME]
+-arie, -aris; airy (m n, adj)
+https://www.etymonline.com/word/-ary#etymonline_v_26569
+
+-arius [L]
+-erie [MI]
+-ery [ME]
+-erie, -eris (m n)
+https://www.etymonline.com/word/-ery#etymonline_v_32818
+https://www.etymonline.com/word/-ary#etymonline_v_26569
+
+---
