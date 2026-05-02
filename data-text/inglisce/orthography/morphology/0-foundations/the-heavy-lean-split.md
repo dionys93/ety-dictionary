@@ -2,9 +2,9 @@
 
 In Modern English, words frequently suffer from zero-derivation, where the exact same spelling is used for an active verb (to *pit*) and a concrete noun (the *pit*). 
 
-**Inglisce** eliminates this visual ambiguity by treating terminal spelling weight as a grammatical flag. The final **⟨-e⟩** is a functional marker of lexemic completeness. It is structural, not phonetic. Though unpronounced, it stabilizes morphology, aligns noun and verb bases, and supports syntactic operations like pronoun contraction.
+**Inglisce** eliminates this visual ambiguity through the use of an unpronounced final **⟨-e⟩**, which serves as a structural grammatical flag rather than a phonetic letter. For verbs, this terminal weight explicitly marks the infinitive state. For singular nouns, it acts as essential scaffolding that allows possessive markers and verbal contractions to attach cleanly. Ultimately, this single functional marker stabilizes morphology, prevents zero-derivation, and supports complex syntactic operations across the language without altering the lexemic root.
 
-How this ⟨-e⟩ behaves during active conjugation and pluralization depends strictly on the etymology and phonetic length of the root.
+How this **⟨-e⟩** behaves during active conjugation and pluralization depends strictly on the etymology and phonetic length of the root.
 
 ---
 
@@ -65,11 +65,12 @@ These verbs undergo an internal vowel shift or remain static in their past tense
 
 ---
 
+### 2. The Stable Base (Romance Imports & Long Vowels)
+
+When words possess long/diphthongal vowels or derive from multisyllabic Romance imports, the final ⟨-e⟩ acts as a stable anchor. Because dropping the ⟨-e⟩ would obscure the vowel quality or the etymological class, the spelling weight remains visually consistent across verb conjugations. 
+
 #### Unstressed Romance Roots (The Lean Paradigm)
-
 If the primary spoken stress of a multisyllabic Romance import falls *before* the final syllable (e.g., ED-it, AN-i-mait), the end of the word lacks the phonetic emphasis to support a heavy structural ⟨-e⟩. Consequently, these verbs remain strictly lean across all their conjugations. 
-
-This paradigm governs roots ending in short, unstressed syllables (like `-it`) as well as verbs imported via the Latin *-atus* suffix (spelled `-ait` in Inglisce). 
 
 **The Stress-Shift Derivation:** When these lean verbs derive into abstract nouns, they utilize standard Romance suffixation (such as `-cion`). This addition physically pulls the spoken stress toward the end of the word. Inglisce visibly tracks this predictable stress shift by capping the newly stressed vowel with a circumflex (e.g., `limit` → `limitâcion`, `animait` → `animâcion`).
 
@@ -83,7 +84,7 @@ This paradigm governs roots ending in short, unstressed syllables (like `-it`) a
 | to **navigait** | navigait, navigaits, navigaited, navigaiting | **navigâcion** |
 
 #### Stressed Romance Roots (The Heavy Paradigm)
-If the spoken stress falls heavily on the final syllable (e.g., ad-MIT), the verb structurally requires the heavy **-mitte** root, anchoring it to its etymological origins in the Latin *mittere* and French *mettre*. The heavy anchor is preserved throughout the active conjugations to signal their specific verb class, making their transition into `-mission` or `-mittie` nouns highly predictable.
+If the spoken stress falls heavily on the final syllable (e.g., ad-MIT), the phonetic power slams into the final syllable. That stress requires a heavy anchor to catch it. The **⟨-e⟩** is bolted onto the end to stabilize that heavy spoken stress and visibly lock the word to its French/Latin origins (e.g., *mettre/mittere*). The heavy anchor is preserved throughout the active conjugations to signal their specific verb class.
 
 | Inglisce Verb | Conjugations | Derived Nouns |
 | :--- | :--- | :--- | 
@@ -96,105 +97,42 @@ If the spoken stress falls heavily on the final syllable (e.g., ad-MIT), the ver
 | to **permitte** | permitte(s, permitted, permitting | **permission**, **pêrmit** |
 | to **transmitte** | transmitte(s, transmitted, transmitting | **transmission**, **transmissif** |
 
----
-
-### 2. The Stable Base (Long Vowels & Romance Imports)
-
-When words possess long/diphthongal vowels or derive from multisyllabic Romance imports, the final ⟨-e⟩ acts as a stable anchor. Because dropping the ⟨-e⟩ would obscure the vowel quality or the etymological class, the spelling weight remains visually consistent across verb conjugations. 
-
-#### Long Vowel Monosyllables
-Verbs in this category retain the final ⟨-e⟩ in all finite forms (dropping it only for the present participle `-ing`). Conversely, nouns in this category drop the ⟨-e⟩ when pluralizing. 
+#### Long Vowel Monosyllables (The Shield)
+In monosyllabic words with long vowels, the final ⟨-e⟩ acts as a shield to protect the long vowel sound from being misread. Because it is protecting the vowel, it is highly stable. Verbs refuse to let it go in finite forms to maintain that stability. 
 
 * **Verb Continuity:** `to nâme` → `nâmes` / `nâmed` / `nâming`
-* **Noun Pluralization:** `nâme` → `nâms` / `tîme` → `tîms` / `core` → `cors`
 
-### Final **-e** Bases
+---
 
-Most nouns surface with a final **-e** in the singular. This **-e is retained** in the singular but **dropped before plural -s**.
+### 3. Default Pluralization (Dropping the ⟨-e⟩)
+
+The default plural marker in Inglisce is **-s**. 
+
+For most nouns, the final structural **⟨-e⟩** is retained in the singular (to handle potential possessive and verbal contractions) but must be **dropped before adding the plural -s**. 
 
 | Singular | Plural |
 | -------- | ------ |
-| nâme    | nâms  |
-| site     | síts  |
+| nâme    | nâms  |
+| site     | *síts  |
 | mape     | maps   |
-| âpe     | âps   |
-| songue   | sòngs |
+| âpe     | âps   |
+| songue   | *sòngs |
 | dogue    | dogs   |
 | nonne    | nons   |
 | starre   | stars  |
 
-**Rationale:**
-
-* Preserves a complete and stable base in isolation
-* Maintains visual contrast with verbal and possessive forms
+*(Note: While dropping the ⟨-e⟩ is the standard mechanism for nouns, singular bases containing certain vowels, like **/ɔ/**, **/oʊ/**, **/u/**, and **/i/**, undergo internal phonetic and structural adjustments for their plurals, rather than simply dropping the ⟨-e⟩ for an -s).*
 
 ---
 
-### Bases Ending in **-ie**
+### Scope of Morphological Rules
 
-Nouns ending in **-ie** form plurals in **-is**.
+This file establishes the foundational logic of the final ⟨-e⟩ and the default trigger for baseline pluralization. 
 
-| Singular    | Plural      |
-| ----------- | ----------- |
-| bâbie      | bâbis      |
-| remedie     | remedis     |
-| recipie     | recipis     |
-| hypêrbolie | hypêrbolis |
+The structural base provides a stable foundation against which more complex suffixation systems operate. The specific mechanics for how certain terminal letters change when interacting with an **-s** suffix are handled in dedicated paradigm files within the **`1-root-paradigms/`** directory, including:
 
----
-
-### Sibilant and Affricate Bases
-
-When the base already ends in a sibilant sound, **-s** or **-es** is added.
-
-| Singular    | Plural      |
-| ----------- | ----------- |
-| câge      | câges      |
-| frise | frises |
-| chise | chises |
-| finișe | finișes |
-| fisce | fisces |
-| busce | busces |
-| church | churches |
-| vâss | vâsses |
-| bâss | bâsses |
-
----
-
-## Regular **-ve → -ves**
-
-Nouns ending in **-ve** retain **-v-** in both singular and plural.
-
-| Singular | Plural |
-| -------- | ------ |
-| câve    | câves |
-| fâve    | fâves |
-
-The written form remains stable; phonetic voicing is automatic.
-
----
-
-## Scope of This Rule
-
-This file covers **default pluralization** only.
-
-The following are handled in dedicated files:
-
-* **-re** plurals (origin-based: -ors, -ars, -irs)
-* **Velar alternations** (-c → -x, -ix, -aix, etc.)
-* **Latinate and learned plurals** (-sis → -sies, etc.)
-* **Consonant-cluster reductions** (-cte → -cs, -pte → -ps)
-
-When multiple rules could apply, **the more specific rule overrides regular -s**.
-
----
-
-## Summary
-
-* **-s** is the default plural marker
-* Final **-e** is dropped before **-s**
-* **-es** is used after sibilants
-* Voicing is phonetic, not orthographic
-
-This regularity provides a stable baseline against which more complex plural systems operate.
-
+* **Bases ending in -ie** (forming *-is*)
+* **Sibilant and Affricate bases** (forming *-es*)
+* **Bases ending in -ve** (retaining *-v-*)
+* **Consonant-cluster reductions** (-cte → -cs)
+* **Velar alternations** (-c → -x, -ix, -aix)
