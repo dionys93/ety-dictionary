@@ -18,8 +18,6 @@ This removes a morphologically irregular plural class while maintaining natural 
 
 Although written ⟨-fs⟩, the cluster is **regularly voiced in speech** as /vz/ where phonotactically expected.
 
-(See **stem-voicing.md**.)
-
 ---
 
 ### Examples
@@ -125,4 +123,3 @@ Lexical exceptions exist, as in Modern English, but require no orthographic dist
 Inglisce preserves **morphological stability** and **base transparency**.
 
 Phonetic voicing associated with plural ⟨-s⟩ follows spoken English and is not encoded in the written form.
-
