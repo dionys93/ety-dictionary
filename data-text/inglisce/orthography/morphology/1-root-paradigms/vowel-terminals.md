@@ -182,3 +182,18 @@ reliable -> relîable
 reliant -> relîant
 tight -> tyht -ar -est
 tried -> trîd
+
+
+bote → boats
+cote → coats
+note → noats 
+tote → toats
+vote → voats
+gote, goats
+mote → moats
+oate → oats
+stone, stoans
+bone, boans
+hoame → hoams
+coame, coams
+foame, foams
