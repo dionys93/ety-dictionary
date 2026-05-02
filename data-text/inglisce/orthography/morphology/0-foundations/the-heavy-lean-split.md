@@ -17,28 +17,51 @@ When actively conjugated in the present tense, these verbs shed this structural 
 #### Regular Conjugations
 These verbs strip down to a lean root for present tense actions (`pit`, `uip`) but take standard suffixation in their past tense.
 
-| Inglisce Verb Infinitive | Conjugations | Derived Noun | Definitions |
-| :--- | :--- | :--- | :--- |
-| to **pitte** | pit(s, pitted, pitting | **pitte, pits** | *Verb:* To extract a seed.<br>*Noun:* The hard seed of a fruit. |
-| to **spitte** | spit(s, spitted, spitting | **spitte, spits** | *Verb:* To pierce meat for roasting.<br>*Noun:* A slender roasting rod. |
-| to **uippe** | uip(s, uipped, uipping | **uippe, uips** | *Verb:* To strike with a lash.<br>*Noun:* A flexible instrument for striking. |
-| to **flippe** | flip(s, flipped, flipping | **flippe, flips** | *Verb:* To turn over with a sudden motion.<br>*Noun:* A sudden quick movement or toss. |
+| Inglisce Verb Infinitive | Conjugations | Definitions |
+| :--- | :--- | :--- |
+| to **pitte** | pit(s, pitted, pitting | To extract a seed. |
+| to **spitte** | spit(s, spitted, spitting | To pierce meat for roasting. |
+| to **uippe** | uip(s, uipped, uipping | To strike with a lash. |
+| to **flippe** | flip(s, flipped, flipping | To turn over with a sudden motion. |
+
+| Derived Nouns (Sing and Pl) | Definitions |
+| :--- | :--- |
+| **pitte, pits** | The hard seed of a fruit. |
+| **spitte, spits** | A slender roasting rod. |
+| **uippe, uips** | A flexible instrument for striking. |
+| **flippe, flips** | A sudden quick movement or toss. |
 
 #### Irregular Conjugations
 These verbs undergo an internal vowel shift or remain static in their past tense, but follow the same elastic visual dynamic. To handle homophones, Inglisce utilizes the **y** substitution in specific roots to visually isolate them.
 
-| Inglisce Verb | Conjugations | Derived Nouns | Definitions |
-| :--- | :--- | :--- | :--- |
-| to **pytte** | pyt(s, pyt, pytting | **pytte, pyts** | *Verb:* To set into opposition.<br>*Noun:* A deep hole or arena. |
-| to **hitte** | hit(s, hit, hitting | **hitte, hits** | *Verb:* To strike with sudden force.<br>*Noun:* A forceful impact or blow. |
-| to **spytte** | spyt(s, spat, spytting | **spytte**, **spyttle** | *Verb:* To forcibly eject saliva.<br>*Noun:* The saliva itself. |
-| to **sitte*** | sit(s, sat, sitting | **site, síts** | *Verb:* To rest one's weight upon the buttocks.<br>*Noun:* A location or a seat. |
-| to **fitte** | fit(s, fit, fitting | **fitte, fits** | *Verb:* To be the correct size or shape.<br>*Noun:* A sudden seizure, or emotional outburst; a tailored shape. |
-| to **ridde** | rid(s, rid, ridding | **riddance** | *Verb:* To eliminate or clear away.<br>*Noun:* The act of discarding. |
-| to **scite** | scite(s, sciat, sciting | **scite** | *Verb:* To defecate.<br>*Noun:* Feces. |
-| to **bidde** | bid(s, bâde, bidding | **bidde, bids** | *Verb:* To issue a command or price.<br>*Noun:* An offer of a price. |
+| Inglisce Verb Infinitive | Conjugations  | Definitions |
+| :--- | :--- | :--- |
+| to **pytte** | pyt(s, pyt, pytting | To set into opposition. |
+| to **hitte** | hit(s, hit, hitting | To strike with sudden force. |
+| to **spytte** | spyt(s, spat, spytting | To forcibly eject saliva. |
+| to **sitte*** | sit(s, sat, sitting | To rest one's weight upon the buttocks. |
+| to **fitte** | fit(s, fit, fitting | To be the correct size or shape. |
+| to **ridde** | rid(s, rid, ridding | To eliminate or clear away. |
+| to **scite** | scite(s, sciat, sciting | *Verb:* To defecate. |
+| to **bidde** | bid(s, bâde, bidding | To issue a command or price. |
 
-*\*Note on sitte/site: In Modern English, historical vowel shifts split this root into two distinct spellings ("sit" for the verb, "seat" for the noun). Inglisce repairs this through derivational unification, returning them to a single lexemic base: the verb **to sitte** and the heavy noun **site** (utilizing the acute accent in the plural, **síts**, to preserve the long vowel distinction).*
+| Derived Nouns (Sing and Pl) | Definitions |
+| :--- | :--- |
+| **pytte, pyts** | A deep hole or arena. |
+| **hitte, hits** | A forceful impact or blow. |
+| **spytte**, **spyttle** | The act or an instance of spitting.<br/>A frothy secretion exuded by spittlebugs |
+| **site, síts** | A seat. |
+| **fitte, fits** | A sudden seizure, or emotional outburst; a tailored shape. |
+| **riddance** | The act of discarding. |
+| **scite** | Feces. |
+| **bidde, bids** | An offer of a price. |
+
+*\*Note on sitte/site: Historically, "sit" and "seat" both derive from the exact same Proto-Indo-European root (**\*sed-**). Through an ancient process of vowel shifting (ablaut), the root produced a short-vowel variant that became the Germanic verb **sittan** and a long-vowel variant (**\*sēd-**) that evolved through Old Norse (**sæti**) into the noun "seat". Modern English preserves this ancient phonetic drift by treating the action and the object as two entirely disconnected spellings.*
+
+*Inglisce repairs this etymological fracture through derivational unification. By recognizing that a "seat" is simply the concrete noun form of the action "to sit," the language collapses the historical split back into a single root family:*
+* *The active verb takes the dynamic short-vowel base: **to sitte** (reducing to the lean root **sit**).*
+* *The concrete noun takes the stable long-vowel base: **site**.*
+* *When the noun pluralizes, it utilizes an acute accent (**síts**) to permanently lock in the long vowel distinction, preventing a visual collision with the active verb (**hie sits**).*
 
 ---
 
