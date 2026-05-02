@@ -38,10 +38,10 @@ These verbs undergo an internal vowel shift or remain static in their past tense
 | :--- | :--- | :--- |
 | to **pytte** | pyt(s, pyt, pytting | To set into opposition. |
 | to **hitte** | hit(s, hit, hitting | To strike with sudden force. |
-| to **spytte** | spyt(s, spat, spytting | To forcibly eject saliva. |
-| to **sitte*** | sit(s, sat, sitting | To rest one's weight upon the buttocks. |
 | to **fitte** | fit(s, fit, fitting | To be the correct size or shape. |
 | to **ridde** | rid(s, rid, ridding | To eliminate or clear away. |
+| to **spytte** | spyt(s, spat, spytting | To forcibly eject saliva. |
+| to **sitte*** | sit(s, sat, sitting | To rest one's weight upon the buttocks. |
 | to **scite** | scite(s, sciat, sciting | *Verb:* To defecate. |
 | to **bidde** | bid(s, bâde, bidding | To issue a command or price. |
 
@@ -49,10 +49,10 @@ These verbs undergo an internal vowel shift or remain static in their past tense
 | :--- | :--- |
 | **pytte, pyts** | A deep hole or arena. |
 | **hitte, hits** | A forceful impact or blow. |
-| **spytte**, **spyttle** | The act or an instance of spitting.<br/>A frothy secretion exuded by spittlebugs |
-| **site, síts** | A seat. |
 | **fitte, fits** | A sudden seizure, or emotional outburst; a tailored shape. |
 | **riddance** | The act of discarding. |
+| **spytte**, **spyttle** | The act or an instance of spitting.<br/>A frothy secretion exuded by spittlebugs |
+| **site, síts** | A seat. |
 | **scite** | Feces. |
 | **bidde, bids** | An offer of a price. |
 
