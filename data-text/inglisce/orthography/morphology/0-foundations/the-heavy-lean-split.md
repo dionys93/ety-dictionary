@@ -42,16 +42,6 @@ These verbs undergo an internal vowel shift or remain static in their past tense
 
 ---
 
-### 2. The Stable Base (Long Vowels & Romance Imports)
-
-When words possess long/diphthongal vowels or derive from multisyllabic Romance imports, the final ⟨-e⟩ acts as a stable anchor. Because dropping the ⟨-e⟩ would obscure the vowel quality or the etymological class, the spelling weight remains visually consistent across verb conjugations. 
-
-#### Long Vowel Monosyllables
-Verbs in this category retain the final ⟨-e⟩ in all finite forms (dropping it only for the present participle `-ing`). Conversely, nouns in this category drop the ⟨-e⟩ when pluralizing. 
-
-* **Verb Continuity:** `to nâme` → `nâmes` / `nâmed` / `nâming`
-* **Noun Pluralization:** `nâme` → `nâms` / `tîme` → `tîms` / `core` → `cors`
-
 #### Unstressed Romance Roots (The Lean Paradigm)
 
 If the primary spoken stress of a multisyllabic Romance import falls *before* the final syllable (e.g., ED-it, AN-i-mait), the end of the word lacks the phonetic emphasis to support a heavy structural ⟨-e⟩. Consequently, these verbs remain strictly lean across all their conjugations. 
@@ -84,3 +74,104 @@ If the spoken stress falls heavily on the final syllable (e.g., ad-MIT), the ver
 | to **transmitte** | transmitte(s, transmitted, transmitting | **transmission**, **transmissif** |
 
 ---
+
+### 2. The Stable Base (Long Vowels & Romance Imports)
+
+When words possess long/diphthongal vowels or derive from multisyllabic Romance imports, the final ⟨-e⟩ acts as a stable anchor. Because dropping the ⟨-e⟩ would obscure the vowel quality or the etymological class, the spelling weight remains visually consistent across verb conjugations. 
+
+#### Long Vowel Monosyllables
+Verbs in this category retain the final ⟨-e⟩ in all finite forms (dropping it only for the present participle `-ing`). Conversely, nouns in this category drop the ⟨-e⟩ when pluralizing. 
+
+* **Verb Continuity:** `to nâme` → `nâmes` / `nâmed` / `nâming`
+* **Noun Pluralization:** `nâme` → `nâms` / `tîme` → `tîms` / `core` → `cors`
+
+### Final **-e** Bases
+
+Most nouns surface with a final **-e** in the singular. This **-e is retained** in the singular but **dropped before plural -s**.
+
+| Singular | Plural |
+| -------- | ------ |
+| nâme    | nâms  |
+| site     | síts  |
+| mape     | maps   |
+| âpe     | âps   |
+| songue   | sòngs |
+| dogue    | dogs   |
+| nonne    | nons   |
+| starre   | stars  |
+
+**Rationale:**
+
+* Preserves a complete and stable base in isolation
+* Maintains visual contrast with verbal and possessive forms
+
+---
+
+### Bases Ending in **-ie**
+
+Nouns ending in **-ie** form plurals in **-is**.
+
+| Singular    | Plural      |
+| ----------- | ----------- |
+| bâbie      | bâbis      |
+| remedie     | remedis     |
+| recipie     | recipis     |
+| hypêrbolie | hypêrbolis |
+
+---
+
+### Sibilant and Affricate Bases
+
+When the base already ends in a sibilant sound, **-s** or **-es** is added.
+
+| Singular    | Plural      |
+| ----------- | ----------- |
+| câge      | câges      |
+| frise | frises |
+| chise | chises |
+| finișe | finișes |
+| fisce | fisces |
+| busce | busces |
+| church | churches |
+| vâss | vâsses |
+| bâss | bâsses |
+
+---
+
+## Regular **-ve → -ves**
+
+Nouns ending in **-ve** retain **-v-** in both singular and plural.
+
+| Singular | Plural |
+| -------- | ------ |
+| câve    | câves |
+| fâve    | fâves |
+
+The written form remains stable; phonetic voicing is automatic.
+
+---
+
+## Scope of This Rule
+
+This file covers **default pluralization** only.
+
+The following are handled in dedicated files:
+
+* **-re** plurals (origin-based: -ors, -ars, -irs)
+* **Velar alternations** (-c → -x, -ix, -aix, etc.)
+* **Latinate and learned plurals** (-sis → -sies, etc.)
+* **Consonant-cluster reductions** (-cte → -cs, -pte → -ps)
+
+When multiple rules could apply, **the more specific rule overrides regular -s**.
+
+---
+
+## Summary
+
+* **-s** is the default plural marker
+* Final **-e** is dropped before **-s**
+* **-es** is used after sibilants
+* Voicing is phonetic, not orthographic
+
+This regularity provides a stable baseline against which more complex plural systems operate.
+
