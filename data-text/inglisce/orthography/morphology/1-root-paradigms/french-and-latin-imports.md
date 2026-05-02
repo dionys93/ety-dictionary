@@ -187,16 +187,6 @@ Many of these stems also serve as the basis for **adjectival forms**, further re
 
 This approach ensures Inglisce maintains a **predictable relationship between nouns, plurals, and adjectives**, strengthening both orthographic clarity and derivational logic.
 
-Plural Formation for Nouns Ending in -ote and 
-bote → boats
-cote → coats
-note → noats 
-tote → toats
-vote → voats
-gote, goats
-mote → moats
-oate → oats
-
 ---
 
 -vre → -irs (Latin/French)
@@ -280,10 +270,3 @@ cassle → cassels (Latin castellum)
 mussle → mussels
 reble → rebels (Latin rebellis)
 tonele → tonels (Old French tonel)
-
-
-stone, stoans
-bone, boans
-hoame → hoams
-coame, coams
-foame, foams
