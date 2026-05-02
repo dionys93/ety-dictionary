@@ -42,7 +42,7 @@ These verbs undergo an internal vowel shift or remain static in their past tense
 | to **ridde** | rid(s, rid, ridding | To eliminate or clear away. |
 | to **spytte** | spyt(s, spat, spytting | To forcibly eject saliva. |
 | to **sitte*** | sit(s, sat, sitting | To rest one's weight upon the buttocks. |
-| to **scite** | scite(s, sciat, sciting | *Verb:* To defecate. |
+| to **scite** | scite(s, sciat, sciting | To defecate. |
 | to **bidde** | bid(s, bâde, bidding | To issue a command or price. |
 
 | Derived Nouns (Sing and Pl) | Definitions |
@@ -67,10 +67,10 @@ These verbs undergo an internal vowel shift or remain static in their past tense
 
 ### 2. The Stable Base (Romance Imports & Long Vowels)
 
-When words possess long/diphthongal vowels or derive from multisyllabic Romance imports, the final ⟨-e⟩ acts as a stable anchor. Because dropping the ⟨-e⟩ would obscure the vowel quality or the etymological class, the spelling weight remains visually consistent across verb conjugations. 
+Unlike native Germanic roots that dynamically shed their weight, words with long vowels or multisyllabic Romance origins prioritize structural stability. Their terminal spelling—and whether they take a final **⟨-e⟩** at all—is permanently locked to either their vowel quality or their spoken stress. 
 
 #### Unstressed Romance Roots (The Lean Paradigm)
-If the primary spoken stress of a multisyllabic Romance import falls *before* the final syllable (e.g., ED-it, AN-i-mait), the end of the word lacks the phonetic emphasis to support a heavy structural ⟨-e⟩. Consequently, these verbs remain strictly lean across all their conjugations. 
+If the primary spoken stress of a multisyllabic Romance import falls *before* the final syllable (e.g., ED-it, AN-i-mait), the end of the word lacks the phonetic emphasis to support a heavy structural ⟨-e⟩. Consequently, these verbs remain strictly lean across all their conjugations.
 
 **The Stress-Shift Derivation:** When these lean verbs derive into abstract nouns, they utilize standard Romance suffixation (such as `-cion`). This addition physically pulls the spoken stress toward the end of the word. Inglisce visibly tracks this predictable stress shift by capping the newly stressed vowel with a circumflex (e.g., `limit` → `limitâcion`, `animait` → `animâcion`).
 
@@ -98,9 +98,10 @@ If the spoken stress falls heavily on the final syllable (e.g., ad-MIT), the pho
 | to **transmitte** | transmitte(s, transmitted, transmitting | **transmission**, **transmissif** |
 
 #### Long Vowel Monosyllables (The Shield)
-In monosyllabic words with long vowels, the final ⟨-e⟩ acts as a shield to protect the long vowel sound from being misread. Because it is protecting the vowel, it is highly stable. Verbs refuse to let it go in finite forms to maintain that stability. 
+In monosyllabic words with long vowels, the final ⟨-e⟩ acts as a shield to protect the long vowel sound from being misread. Because it is protecting the vowel, it is highly stable. Verbs refuse to let it go in finite forms to maintain that stability, whereas nouns will only drop it when absolutely forced to make room for a plural suffix.
 
 * **Verb Continuity:** `to nâme` → `nâmes` / `nâmed` / `nâming`
+* **Noun Pluralization:** `nâme` → `nâms` / `tîme` → `tîms` / `core` → `cors`
 
 ---
 
@@ -129,10 +130,4 @@ For most nouns, the final structural **⟨-e⟩** is retained in the singular (t
 
 This file establishes the foundational logic of the final ⟨-e⟩ and the default trigger for baseline pluralization. 
 
-The structural base provides a stable foundation against which more complex suffixation systems operate. The specific mechanics for how certain terminal letters change when interacting with an **-s** suffix are handled in dedicated paradigm files within the **`1-root-paradigms/`** directory, including:
-
-* **Bases ending in -ie** (forming *-is*)
-* **Sibilant and Affricate bases** (forming *-es*)
-* **Bases ending in -ve** (retaining *-v-*)
-* **Consonant-cluster reductions** (-cte → -cs)
-* **Velar alternations** (-c → -x, -ix, -aix)
+The structural base provides a stable foundation against which more complex suffixation systems operate. The specific mechanics for how certain terminal letters change when interacting with an **-s** suffix are handled in dedicated paradigm files within the **`1-root-paradigms/`** directory.
