@@ -76,12 +76,14 @@ If the primary spoken stress of a multisyllabic Romance import falls *before* th
 
 | Inglisce Verb | Conjugations | Derived Noun | 
 | :--- | :--- | :--- | 
-| to **èdit** | èdit, èdits, èdited, èditing | **èdit**, **edicion** |
-| to **limit** | limit, limits, limited, limiting | **limit**, **limitâcion** |
-| to **animait** | animait, animaits, animaited, animaiting | **animâcion** |
-| to **cúrait** | cúrait, cúraits, cúraited, cúraiting | **curâcion** |
-| to **dominait** | dominait, dominaits, dominaited, dominaiting | **dominâcion** |
-| to **navigait** | navigait, navigaits, navigaited, navigaiting | **navigâcion** |
+| to **èdit** | èdit(s, èdited, èditing | **èdit**, **edicion** |
+| to **limit** | limit(s, limited, limiting | **limit**, **limitâcion** |
+| to **vomit** | vomit(s, vomited, vomiting | **vomit** |
+| to **visit** | visit(s, visited, visiting | **visit**, **visitâcion** |
+| to **animait** | animait(s, animaited, animaiting | **animâcion** |
+| to **cúrait** | cúrait(s, cúraited, cúraiting | **curâcion** |
+| to **dominait** | dominait(s, dominaited, dominaiting | **dominâcion** |
+| to **navigait** | navigait(s, navigaited, navigaiting | **navigâcion** |
 
 #### Stressed Romance Roots (The Heavy Paradigm)
 If the spoken stress falls heavily on the final syllable (e.g., ad-MIT), the phonetic power slams into the final syllable. That stress requires a heavy anchor to catch it. The **⟨-e⟩** is bolted onto the end to stabilize that heavy spoken stress and visibly lock the word to its French/Latin origins (e.g., *mettre/mittere*). The heavy anchor is preserved throughout the active conjugations to signal their specific verb class.
@@ -120,14 +122,17 @@ For most nouns, the final structural **⟨-e⟩** is retained in the singular (t
 
 | Singular | Plural |
 | -------- | ------ |
-| nâme    | nâms  |
-| site     | *síts  |
-| mape     | maps   |
-| âpe     | âps   |
-| songue   | *sòngs |
-| dogue    | dogs   |
-| nonne    | nons   |
-| starre   | stars  |
+| âpe | âps |
+| core | cors |
+| dogue | dogs |
+| mape | maps |
+| nonne | nons |
+| nâme | nâms |
+| site | *síts |
+| songue | *sòngs |
+| starre | stars |
+| steire | steirs |
+| store | stors |
 
 *(Note: While dropping the ⟨-e⟩ is the standard mechanism for nouns, singular bases containing certain vowels, like **/ɔ/**, **/oʊ/**, **/u/**, and **/i/**, undergo internal phonetic and structural adjustments for their plurals, rather than simply dropping the ⟨-e⟩ for an -s).*
 
