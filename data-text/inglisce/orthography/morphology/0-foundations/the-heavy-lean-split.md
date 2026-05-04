@@ -23,7 +23,9 @@ Native Germanic verbs containing short vowels utilize a dynamic weight-shifting 
 When actively conjugated in the present tense, these verbs shed this structural weight, reducing to a lean, functional base. Conversely, when the concept solidifies into a concrete noun, it retains the heavy morphological spelling of the infinitive.
 
 #### Regular Conjugations
-These verbs strip down to a lean root for present tense actions (`pit`, `uip`) but take standard suffixation in their past tense.
+These verbs strip down to a lean root for present tense actions (`pit`, `uip`) but take standard suffixation in their past tense. 
+
+*(Note: While the base words are distinct, adding an **-s** makes the 3rd-person verb and plural noun visually identical: "hie pits" vs. "þe pits").*
 
 | Inglisce Verb Infinitive | Conjugations | Definitions |
 | :--- | :--- | :--- |
@@ -34,10 +36,10 @@ These verbs strip down to a lean root for present tense actions (`pit`, `uip`) b
 
 | Derived Nouns (Sing and Pl) | Definitions |
 | :--- | :--- |
-| **pitte, pits** | The hard seed of a fruit. |
-| **spitte, spits** | A slender roasting rod. |
-| **uippe, uips** | A flexible instrument for striking. |
-| **flippe, flips** | A sudden quick movement or toss. |
+| þe **pitte, pits** | The hard seed of a fruit. |
+| þe **spitte, spits** | A slender roasting rod. |
+| þi **uippe, uips** | A flexible instrument for striking. |
+| þe **flippe, flips** | A sudden quick movement or toss. |
 
 #### Irregular Conjugations
 These verbs undergo an internal vowel shift or remain static in their past tense, but follow the same elastic visual dynamic. To handle homophones, Inglisce utilizes the **y** substitution in specific roots to visually isolate them.
@@ -50,8 +52,9 @@ These verbs undergo an internal vowel shift or remain static in their past tense
 | to **ridde** | rid(s, rid, ridding | To eliminate or clear away. |
 | to **spytte** | spyt(s, spat, spytting | To forcibly eject saliva. |
 | to **sitte*** | sit(s, sat, sitting | To rest one's weight upon the buttocks. |
-| to **scite** | scite(s, sciat, sciting | To defecate. |
+| to **suimme** | suim(s, suam, suom, suidding | To propel oneself through water by movement of the limbs, fins, or tail. |
 | to **bidde** | bid(s, bâde, bidding | To issue a command or price. |
+
 
 | Derived Nouns (Sing and Pl) | Definitions |
 | :--- | :--- |
@@ -61,7 +64,7 @@ These verbs undergo an internal vowel shift or remain static in their past tense
 | **riddance** | The act of discarding. |
 | **spytte**, **spyttle** | The act or an instance of spitting.<br/>A frothy secretion exuded by spittlebugs |
 | **site, síts** | A seat. |
-| **scite** | Feces. |
+| **suimme, suims** | An act or period of swimming |
 | **bidde, bids** | An offer of a price. |
 
 *\*Note on sitte/site: Historically, "sit" and "seat" both derive from the exact same Proto-Indo-European root (**\*sed-**). Through an ancient process of vowel shifting (ablaut), the root produced a short-vowel variant that became the Germanic verb **sittan** and a long-vowel variant (**\*sēd-**) that evolved through Old Norse (**sæti**) into the noun "seat". Modern English preserves this ancient phonetic drift by treating the action and the object as two entirely disconnected spellings.*
@@ -131,6 +134,7 @@ In monosyllabic words with long vowels, the final ⟨-e⟩ acts as a shield to p
 | to **gâme** | gâme(s, gâmed, gâming | **gâme, gâms** | *Verb:* To play for stakes. *Noun:* An amusement. |
 | to **tîme** | tîme(s, tîmed, tîming | **tîme, tîms** | *Verb:* To measure duration. *Noun:* A moment. |
 | *to **bete** | bete(s, bet, betting | **bete, bets** | *Verb:* To wager. *Noun:* A wager. |
+| to **scite** | scite(s, sciat, sciting | **scite** | *Verb:* To defecate. *Noun:* Feces. |
 
 *Irregular past tense
 
