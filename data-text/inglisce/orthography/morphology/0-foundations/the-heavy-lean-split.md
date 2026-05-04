@@ -100,8 +100,15 @@ If the spoken stress falls heavily on the final syllable (e.g., ad-MIT), the pho
 #### Long Vowel Monosyllables (The Shield)
 In monosyllabic words with long vowels, the final ⟨-e⟩ acts as a shield to protect the long vowel sound from being misread. Because it is protecting the vowel, it is highly stable. Verbs refuse to let it go in finite forms to maintain that stability, whereas nouns will only drop it when absolutely forced to make room for a plural suffix.
 
-* **Verb Continuity:** `to nâme` → `nâmes` / `nâmed` / `nâming`
-* **Noun Pluralization:** `nâme` → `nâms` / `tîme` → `tîms` / `core` → `cors`
+| Infinitive Verb | Conjugations | Nouns (Sing and Pl) | Definitions |
+| :--- | :--- | :--- | :--- |
+| to **nâme** | nâme(s, nâmed, nâming | **nâme, nâms** | *Verb:* To give a title. *Noun:* A title. |
+| to **frâme** | frâme(s, frâmed, frâming | **frâme, frâms** | *Verb:* To enclose. *Noun:* A rigid structure. |
+| to **gâme** | gâme(s, gâmed, gâming | **gâme, gâms** | *Verb:* To play for stakes. *Noun:* An amusement. |
+| to **tîme** | tîme(s, tîmed, tîming | **tîme, tîms** | *Verb:* To measure duration. *Noun:* A moment. |
+| *to **bete** | bete(s, bet, betting | **bete, bets** | *Verb:* To wager. *Noun:* A wager. |
+
+*Irregular past tense
 
 ---
 
