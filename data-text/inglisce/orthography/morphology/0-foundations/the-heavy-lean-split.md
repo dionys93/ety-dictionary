@@ -105,6 +105,20 @@ If the spoken stress falls heavily on the final syllable (e.g., ad-MIT), the pho
 | to **permitte** | permitte(s, permitted, permitting | **permission**, **pêrmit** |
 | to **transmitte** | transmitte(s, transmitted, transmitting | **transmission**, **transmissif** |
 
+#### Stressed Romance Roots (The Long Vowel Shield)
+If the spoken stress falls on the final syllable of a Romance import but the vowel is **long** (e.g., the long /i/ in *complite*), the word does not double its terminal consonant. Instead, the final **⟨-e⟩** acts as a shield to protect the long vowel's phonetic value. Like other stable bases, the verb retains the anchor across conjugations, while derivations into nouns or adjectives often trigger internal structural shifts.
+
+| Inglisce Verb | Conjugations | Derived Nouns / Adjectives |
+| :--- | :--- | :--- | 
+| to **complite** | complite(s, complited, compliting | **complícion** |
+| to **defite** | defite(s, defited, defiting | **defite** |
+| to **delite** | delite(s, delited, deliting | **delícion** |
+| to **repite** | repite(s, repited, repiting | **repeticion** |
+| to **pricide** | pricide(s, pricided, priciding | **precession** |
+| to **procide** | procide(s, procided, prociding | **procession** |
+| to **recide** | recide(s, recided, reciding | **recession**, **recessif** |
+| to **concide** | concide(s, concided, conciding | **concession** |
+
 #### Long Vowel Monosyllables (The Shield)
 In monosyllabic words with long vowels, the final ⟨-e⟩ acts as a shield to protect the long vowel sound from being misread. Because it is protecting the vowel, it is highly stable. Verbs refuse to let it go in finite forms to maintain that stability, whereas nouns will only drop it when absolutely forced to make room for a plural suffix.
 
