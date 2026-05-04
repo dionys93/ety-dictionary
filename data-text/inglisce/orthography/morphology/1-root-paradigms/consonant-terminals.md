@@ -1,15 +1,15 @@
 
 | Infinitive | 1st Person | 3rd Person | Past Tense | Gerund | Nouns |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **to brâche** (brake) | I, you, uie brâc | hie brâcs | brâched | brâching | brâche, braix |
+| **to brâche** (brake) | I, you, uie brâc | hie brâcs | brâched | brâching | brâc, braix |
 | **to câche** (cake) | I, you, uie câc | hie câcs | câched | câching | câche, caix |
-| **to faiche** (fake) | I, you, uie faic | hie faics | faiched | faiching | faiche, faix |
-| **to mâche** (make) | I, you, uie mâc | hie mâcs | **mâde*** | mâching | mâche, maix |
-| **to cuâche** (quake) | I, you, uie cuâc | hie cuâcs | cuâched | cuâching | cuâche, cuaix |
-| **to râche** (rake) | I, you, uie râc | hie râcs | râched | râching | râche, raix |
-| **to stâche** (stake) | I, you, uie stâc | hie stâcs | stâched | stâching | stâche, staix |
-| **to forsâche** (forsake)| I, you, uie forsâc | hie forsâcs | **forsôc** (forsâcan) | forsâching | sâche, saix |
-| **to breiche** (break) | I breic | hie breics | **bróc*** (brócan) | breiching | breiche, breix |
+| **to faiche** (fake) | I, you, uie faic | hie faics | faiched | faiching | faic, faix |
+| **to mâche** (make) | I, you, uie mâc | hie mâcs | **mâde*** | mâching | mâc, maix |
+| **to cuâche** (quake) | I, you, uie cuâc | hie cuâcs | cuâched | cuâching | cuâc, cuaix |
+| **to râche** (rake) | I, you, uie râc | hie râcs | râched | râching | râc, raix |
+| **to stâche** (stake) | I, you, uie stâc | hie stâcs | stâched | stâching | stâc, staix |
+| **to forsâche** (forsake)| I, you, uie forsâc | hie forsâcs | **forsôc** (forsâcan) | forsâching | sâc, saix |
+| **to breiche** (break) | I breic | hie breics | **bróc*** (brócan) | breiching | breic, breix |
 
 | Infinitive | 1st Person | 3rd Person | Past Tense | Gerund | Nouns |
 | :--- | :--- | :--- | :--- | :--- | :--- |
@@ -23,10 +23,10 @@
 
 | Infinitive | 1st Person | 3rd Person | Past Tense | Gerund | Noun (Sing.) | Noun (Plur.) |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **to barche** (bark) | I, you, uie barc | hie barcs | barched | barching | barche, barx |
-| **to narche** (nark) | I, you, uie narc | hie narcs | narched | narching | narche, narx |
-| **to siarche** (shark) | I, you, uie siarc | hie siarcs | siarched | siarching| siarche, siarx |
-| **to smêche** (smirk) | I, you, uie smêc | hie smêcs | smêched | smêching| smêche, smêx |
+| **to barche** (bark) | I, you, uie barc | hie barcs | barched | barching | barc, barx |
+| **to narche** (nark) | I, you, uie narc | hie narcs | narched | narching | narc, narx |
+| **to siarche** (shark) | I, you, uie siarc | hie siarcs | siarched | siarching| siarc, siarx |
+| **to smêche** (smirk) | I, you, uie smêc | hie smêcs | smêched | smêching| smêc, smêx |
 
 
 to bake
