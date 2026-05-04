@@ -1,14 +1,16 @@
 ## Final ⟨-e⟩ and The Structural Split
 
-In Modern English, words frequently suffer from zero-derivation, where the exact same spelling is used for an active verb (to *pit*) and a concrete noun (the *pit*). 
+In Modern English, words frequently suffer from visual ambiguity, where the exact same spelling is used for an active, finite verb and a concrete, static noun:
+* **English:** I *pit* the cherry. / Look at the peach *pit*. (Visually identical)
 
-**Inglisce** eliminates this visual ambiguity through the use of an unpronounced final **⟨-e⟩**, which serves as a structural grammatical flag rather than a phonetic letter. It performs three essential functions across the language:
+**Inglisce** eliminates this visual collision between action and object through the use of an unpronounced final **⟨-e⟩**, which serves as a structural grammatical flag rather than a phonetic letter. It performs three essential functions across the language:
 
 1. **Verb State:** It explicitly marks the infinitive state of an action.
 2. **Noun Scaffolding:** On singular nouns, it provides the necessary surface area for possessive markers and verbal contractions to attach cleanly.
 3. **Stress Tracking:** In multisyllabic words, its presence or absence acts as a visual map for spoken stress.
 
-Ultimately, this single functional marker stabilizes morphology, prevents zero-derivation, and supports complex syntactic operations without altering the lexemic root.
+Because the infinitive verb and the singular noun share this heavy structural base, Inglisce prevents zero-derivation by forcing dynamic verbs to *shed* their final ⟨-e⟩ when actively conjugated. Ultimately, this stabilizes morphology and supports complex syntactic operations without altering the lexemic root:
+* **Inglisce:** I *pit* þe c̃errie. / Lôc at þe poic̃e *pitte*. (Visually distinct)
 
 How this **⟨-e⟩** behaves during active conjugation and pluralization depends strictly on the etymology and phonetic length of the root.
 
