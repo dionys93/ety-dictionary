@@ -12,22 +12,17 @@ to desîer desîre(s desîred desîering
 desîre, desîars
 to inquîer inquîre(s inquîred inquîering
 to nomber nombre(s nombred nombering
-nombre, nombirs
-cúcombre, cúcombirs
+
 
 -IR
 matter → to matir matre(s matred matiring
-matre, matirs
 to covir covre(s covred coviring
-covre, covirs
 to hovir hovre(s hovred hoviring
-zefre, zefirs
+
 
 -RE
 shatter → to siatre siatre(s siatred siatering
-siatre, siatars
 scatter → to scatre
-uintre, uintars
 
 -ERE
 to hammer → to hamere -s -d hamering
@@ -38,7 +33,6 @@ ansere, ansars
 somere, somere's, somars
 
 to fŷer fŷre(s fŷred fŷering
-fŷre, fŷars
 to partenare -s -d -ing
 partenar -s
 to húmore -s -d -ing
@@ -92,33 +86,22 @@ Their plurals preserve **older stem vowels**: *ancestre* (Latin *ancestor*), *ma
 
 ---
 
-## **-re → -ars**
+## **-re, -ere → -ars**
 
 | Singular | Plural  |
 | -------- | ------- |
-| oþre     | oþars   |
-| rivre    | rivars  |
-| uátre   | uátars |
+| oþre     | oþars |
+| rivre    | rivars |
+| siatre | siatars |
+| șugre | șugars |
+| uátre | uátars |
+| uintre | uintars |
+| hamere | hamars |
+| somere | somars |
+| ansere | ansars |
 
 This is the **default plural** for many -re nouns.  
 Historical influence is present: *rivre* comes from Latin *riparius*.
-
----
-
-## **-re → -irs** *(rare)*
-
-| Singular | Plural   |
-| -------- | -------- |
-| pôure   | pôuirs  |
-| flôure  | flôuirs |
-| tôure  | tôuirs |
-| covre    | covirs   |
-| martre   | martirs  |
-
-This plural is **rare and irregular**, restricted to a few items.  
-It is influenced by French and other Romance sources: *pôure* (French *pouvoir*), *covre* (French *covrir*), *martre* (Romance *martyr*).
-
----
 
 ## **-îre → -îars**
 
@@ -130,6 +113,27 @@ It is influenced by French and other Romance sources: *pôure* (French *pouvoir
 
 Nouns in **-îre** form plurals with **-îars**, reflecting their **former stem patterns**:  
 *desîre* (Latin *desiderare*), *hîre* (Old English *hyrian*), *fŷre* (Old English *fyrian*).
+
+---
+
+## **-re → -irs** *(rare)*
+
+| Singular | Plural   |
+| -------- | -------- |
+| butre | butirs |
+| covre    | covirs |
+| flôure  | flôuirs |
+| matre | matirs |
+| martre   | martirs |
+| pâpre | pâpirs |
+| pôure   | pôuirs |
+| tôure  | tôuirs |
+| zefre   | zefirs |
+| nombre | nombirs |
+| cúcombre | cúcombirs |
+
+This plural is **rare and irregular**, restricted to a few items.  
+It is influenced by French and other Romance sources: *pôure* (French *pouvoir*), *covre* (French *covrir*), *martre* (Romance *martyr*).
 
 ---
 
@@ -156,7 +160,7 @@ Some endings follow regular derivational pluralization patterns derived from Lat
 
 | Singular Ending | Plural Ending | Examples |
 |-----------------|---------------|---------|
-| -cle / -gle      | -culs / -guls | cîcle, cîculs; ígle, íguls |
+| -cle / -gle      | -culs / -guls | cîcle, cîculs; eigle, eiguls |
 | -âble           | -âbuls        | câble, câbuls; tâble, tâbuls |
 | -able            | -abils         | recîclable, recîclabils |
 
@@ -204,25 +208,24 @@ floure → flours
 store → stors
 core → cors
 ore → ors
+haire → hairs
 staire → stairs
+steire → steirs
 starre → stars
 aure → aurs
 baure → baurs
 oare → oars
 seôure → seôurs
 feire → feirs
-
--are → -ârs
-dare → dârs
-stare → stârs
-fare → fârs
+daire → dairs
+fâre → fârs
+hâre → hârs
 
 -re → ars 
 coîre → coîars
 desîre → desîars 
 fŷre → fŷars
 scîre → scîars
-nombre → nombars
 þondre → þondars
 lettre → lettars 
 mastre → mastars
@@ -236,11 +239,8 @@ fiețure → fiețurs
 batture → batturs
 rapțure → rapțurs
 
-zefre → zefirs
-martre → martirs
-pâpre → pâpirs
 
-câche → caix
+câc → caix
 drâche → draix
 mâche → maix
 stâche → staix
@@ -250,7 +250,7 @@ faiche → faix
 steiche → steix
 stic → stix
 
-spóche → spoax
+
 
 Exception:
 lâc → lâcs 
