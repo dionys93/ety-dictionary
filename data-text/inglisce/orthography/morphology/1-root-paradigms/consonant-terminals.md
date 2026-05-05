@@ -26,7 +26,7 @@
 | **to barche** (bark) | I, you, uie barc | hie barcs | barched | barching | barc, barx |
 | **to narche** (nark) | I, you, uie narc | hie narcs | narched | narching | narc, narx |
 | **to siarche** (shark) | I, you, uie siarc | hie siarcs | siarched | siarching| siarc, siarx |
-| **to smêche** (smirk) | I, you, uie smêc | hie smêcs | smêched | smêching| smêc, smêx |
+| **to smirche** (smirk) | I, you, uie smirc | hie smircs | smirched | smirching| smirc, smêx |
 
 
 to bake
