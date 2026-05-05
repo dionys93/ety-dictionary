@@ -287,7 +287,6 @@ Some nouns do not alternate and retain regular ⟨-s⟩:
 | tax | taxes |
 | uax | uaxes |
 
-TOO MUCH MAYBE ^^^
 
 ---
 
@@ -338,7 +337,8 @@ TOO MUCH MAYBE ^^^
 
 | Singular | Plural |
 |--------|--------|
-| uerc | uêx |
+| uirc | uêx |
+| smirc | smêx |
 
 ---
 
@@ -355,7 +355,7 @@ TOO MUCH MAYBE ^^^
 
 | Singular | Plural |
 |--------|--------|
-| duque | ducs |
+| duque | dúcs |
 
 ---
 
@@ -371,30 +371,4 @@ TOO MUCH MAYBE ^^^
 
 ---
 
-### Lexical Vowel Alternation Without ⟨-s⟩
 
-A small number of high-frequency nouns preserve inherited plural forms with **internal vowel alternation** and non-⟨-s⟩ suffixes.
-
-These are lexical survivals and do not form a productive pattern.
-
-| Singular | Plural |
-|--------|--------|
-| man | men |
-| uôman | uimmen |
-| ox | oxen |
-| chîld | children |
-
----
-
-### Scope and Limits
-
-- Vowel alternation is **not a general plural strategy**
-- It occurs only in **closed lexical sets**
-- No new forms are created by analogy
-- Predictable phonetic variation is not represented
-
----
-
-### Orthographic Principle
-
-Inglisce preserves vowel alternation **only where it is lexically established** and already part of the plural form.
