@@ -1,212 +1,79 @@
+Regular Conjugations
 
-| Infinitive | 1st Person | 3rd Person | Past Tense | Gerund | Nouns |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **to brâche** (brake) | I, you, uie brâc | hie brâcs | brâched | brâching | brâc, braix |
-| **to câche** (cake) | I, you, uie câc | hie câcs | câched | câching | câche, caix |
-| **to faiche** (fake) | I, you, uie faic | hie faics | faiched | faiching | faic, faix |
-| **to mâche** (make) | I, you, uie mâc | hie mâcs | **mâde*** | mâching | mâc, maix |
-| **to cuâche** (quake) | I, you, uie cuâc | hie cuâcs | cuâched | cuâching | cuâc, cuaix |
-| **to râche** (rake) | I, you, uie râc | hie râcs | râched | râching | râc, raix |
-| **to stâche** (stake) | I, you, uie stâc | hie stâcs | stâched | stâching | stâc, staix |
-| **to forsâche** (forsake)| I, you, uie forsâc | hie forsâcs | **forsôc** (forsâcan) | forsâching | sâc, saix |
-| **to breiche** (break) | I breic | hie breics | **bróc*** (brócan) | breiching | breic, breix |
-
-| Infinitive | 1st Person | 3rd Person | Past Tense | Gerund | Nouns |
-| :--- | :--- | :--- | :--- | :--- | :--- |
-| **to lâque** (lake) | I, you, uie lâc | hie lâcs | lâqued | lâquing | lâque, laix |
-| **to bânque** (bank) | I, you, uie bânc | hie bâncs | bânqued | bânquing | bânque, bâncs |
-| **to rânque** (rank) | I, you, uie rânc | hie râncs | rânqued | rânquing | rânque, râncs |
-| **to þânque** (thank) | I, you, uie þânc | hie þâncs | þânqued | þânquing | þâncs |
-| **to stoque** (stoke) | I, you, uie stoac | hie stoacs | stoqued | stoquing | stoque, stoax |
-| **to toque** (toke) | I, you, uie toac | hie toacs | toqued | toquing | toque, toax |
-| **to joque** (joke) | I, you, uie joac | hie joacs | joqued | joquing | joque, joax |
-
-| Infinitive | 1st Person | 3rd Person | Past Tense | Gerund | Noun (Sing.) | Noun (Plur.) |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **to barche** (bark) | I, you, uie barc | hie barcs | barched | barching | barc, barx |
-| **to narche** (nark) | I, you, uie narc | hie narcs | narched | narching | narc, narx |
-| **to siarche** (shark) | I, you, uie siarc | hie siarcs | siarched | siarching| siarc, siarx |
-| **to smirche** (smirk) | I, you, uie smirc | hie smircs | smirched | smirching| smirc, smêx |
+| Infinitive | Present Tense | Past Tense | Gerund | Derived Nouns, etc |
+| :--- | :--- | :--- | :--- | :--- |
+| **to bâche** (bake) | I, you, uie bâc; hie bâcs | bâched | bâching | bâcherie, bâcor  |
+| **to brâche** (brake) | I, you, uie brâc; hie brâcs | brâched | brâching | brâc, braix |
+| **to câche** (cake) | it câcs | câched | câching | câc, caix |
+| **to faiche** (fake) | I, you, uie faic; hie faics | faiched | faiching | faic, faix; faicor |
+| **to cuâche** (quake) | I, you, uie cuâc; hie cuâcs | cuâched | cuâching | cuâc, cuaix; cuâcor |
+| **to râche** (rake) | I, you, uie râc; hie râcs | râched | râching | râc, raix |
+| **to rache** (rack) | I, you, uie rac; hie racs | rached | raching | rac, rax |
+| **to stâche** (stake) | I, you, uie stâc; hie stâcs | stâched | stâching | stâc, staix |
+| **to stache** (stack) | I, you, uie stac; hie stacs | stached | staching | stac, stax |
+| **to lâque** (lake) | I, you, uie lâc; hie lâcs | lâqued | lâquing | lâque, laix |
+| **to stoque** (stoke) | I, you, uie stoac; hie stoacs | stoqued | stoquing | stoque, stoax |
+| **to stoche** (stock) | I, you, uie stoc; hie stocs | stoched | stoching | stoc, stox |
+| **to toque** (toke) | I, you, uie toac; hie toacs | toqued | toquing | toque, toax |
+| **to joque** (joke) | I, you, uie joac; hie joacs | joqued | joquing | joque, joax |
+| **to barche** (bark) | I, you, uie barc; hie barcs | barched | barching | barc, barx |
+| **to narche** (nark) | I, you, uie narc; hie narcs | narched | narching | narc, narx |
+| **to siarche** (shark) | I, you, uie siarc; hie siarcs | siarched | siarching| siarc, siarx |
+| **to smirche** (smirk) | I, you, uie smirc; hie smircs | smirched | smirching| smirc, smêx |
+| **to bôche** (book) | I, you, uie bôc; hie bôcs | bôched | bôching | bôc, beox |
+| **to côche** (cook) | I, you, uie côc; hie côcs | côched | côching | côc, queox |
+| **to lôche** (look) | I, you, uie lôc; hie lôcs | lôched | lôching | lôc, leox |
+| **to hôche** (hook) | I, you, uie hôc; hie hôcs | hôched | hôching | hôc, heox |
+| **to crânche** (crank) | I, you, uie crânc; hie crâncs | crânched | crânching | crânc, crâncs; crânchy |
+| **to cróche** (croak) | I, you, uie croac; hie croacs | cróched | cróching | cróc, croax |
 
 
-to bake
-Infinitive: to bâche
-Present: bâc(s
-Past Tense: bâched
-Present Participle: bâching
-Noun Forms: bâcor, bâcherie
 
-to bag
-Infinitive: to bague
-Present: bag(s
-Past Tense: bagued
-Present Participle: baguing
-Noun Forms: bague, bague's, bags
 
-to drag
-Infinitive: to drague
-Present: drag(s
-Past Tense: dragued
-Present Participle: draguing
-Noun Forms: drague, drague's, drags
+Irregular Conjugations
 
-to flag 
-Infinitive: to flague
-Present: flag(s
-Past Tense: flagued
-Present Participle: flaguing
-Noun Forms: flague, flague's, flags
+| Infinitive | Present Tense | Past Tense, Past Participle | Gerund | Derived Nouns |
+| :--- | :--- | :--- | :--- | :--- |
+| **to breiche** (break) | I, you, uie breic; hie breics | **bróc, brócan** | breiching | breic, breix; breicor |
+| **to mâche** (make) | I, you, uie mâc; hie mâcs | **mâde** | mâching | mâc, maix; mâcor |
+| **to spieche** (speak) | I, you, uie spiec; hie spiecs | **spóc, spócan** | spieching | spiecor; spiec̃e |
+| **to uâche** (wake) | I, you, uie uâc; hie uâcs | **uóc, uócan** | uâching | uâc, uaix; uac̃e |
+| **to forsâche** (forsake)| I, you, uie forsâc; hie forsâcs | **forsôc, forsâcan** | forsâching | sâc, saix |
 
-to plague 
-Infinitive: to plâgue
-Present: plâg(s
-Past Tense: plâgued
-Present Participle: plâguing
-Noun Forms: plâgue, plâgue's, plâgs
+Regular Ending in -que
 
-to dig
-Infinitive: to dighe
-Present: dig(s
-Past Tense: dugh
-Present Participle: dighing
-Noun Forms: dighe, dighe's, digs
+| Infinitive | Present Tense | Past Tense | Gerund | Derived Nouns |
+| :--- | :--- | :--- | :--- | :--- |
+| **to bânque** (bank) | I, you, uie bânc; hie bâncs | bânqued | bânquing | bânque, bâncs |
+| **to rânque** (rank) | I, you, uie rânc; hie râncs | rânqued | rânquing | rânque, râncs |
+| **to þânque** (thank) | I, you, uie þânc; hie þâncs | þânqued | þânquing | þâncs |
+| **to cuaque** (quack) | I, you, uie cuac; hie cuacs | cuached | cuaching | cuac, cuax |
+| **to attaque** (attack) | I, you, uie attac; hie attacs | attaqued | attaquing | attac, attacs |
 
-to pig out
-Infinitive: to pighe aut
-Present: pig(s aut
-Past Tense: pighed aut
-Present Participle: pighing aut
-Noun Forms: pighe, pighe's, pigs
+Regular -gue/-ghe and -ngue Verbs
 
-to rig
-Infinitive: to righe
-Present: rig(s
-Past Tense: righed
-Present Participle: righing
-Noun Forms: righe, righe's, rigs
+| Infinitive | Present Tense | Past Tense | Gerund | Derived Nouns |
+| :--- | :--- | :--- | :--- | :--- |
+| **to bague** (bag) | I, you, uie bag; hie bags | bagued | baguing | bague, bags; bagor |
+| **to drague** (drag) | I, you, uie drag; hie drags | dragued | draguing | drague, drags |
+| **to flague** (flag) | I, you, uie flag; hie flags | flagued | flaguing | flague, flags |
+| **to plâgue** (plague) | I, you, uie plâg; hie plâgs | plâgued | plâguing | plâgue, plâgs |
+| **to pighe aut** (pig) | I, you, uie pig; hie pigs aut | pighed aut | pighing aut | pighe, pigs |
+| **to righe** (rig) | I, you, uie rig; hie rigs | righed | righing | righe, rigs |
+| **to dingue** (ding) | I, you, uie ding; hie dings | dingued | dinguing | dingue, dings |
+| **to uingue** (wing) | I, you, uie uing; hie uings | uingued | uinguing | uingue, uings |
+| **to cyngue** (king) | I, you, uie cyng; hie cyngs | cyngued | cynguing | cyngue, cyngs |
+| **to cágue** (cog) | I, you, uie cág; hie cágs | cágued | cáguing | cágue, cágs |
+| **to dogue** (dog) | I, you, uie dog; hie dogs | dogued | doguing | dogue, dogs |
+| **to clogue** (clog) | I, you, uie clog; hie clogs | clogued | cloguing | clogue, clogs |
 
-to ding
-Infinitive: to dingue
-Present: ding(s
-Past Tense: dingued
-Present Participle: dinguing
-Noun Forms: dingue, dingue's, dings
 
-to wing
-Infinitive: to uingue
-Present: uing(s
-Past Tense: uingued
-Present Participle: uinguing
-Noun Forms: uingue, uingue's, uings
+Irregular Conjugations
 
-to sing
-Infinitive: to singue
-Present: sing(s
-Past Tense: sâng
-Past Participle: song
-Present Participle: singuing
-Noun Forms: songue, sòngs
-
-to king
-Infinitive: to cyngue
-Present: cyng(s
-Past Tense: cyngued
-Present Participle: cynguing
-Noun Forms: cyngue, cyngs
-
-to cog 
-Infinitive: to cágue
-Present: cág(s
-Past Tense: cágued
-Present Participle: cáguing
-Noun Forms: cágue, cágs
-
-to dog 
-Infinitive: to dogue
-Present: dog(s
-Past Tense: dogued
-Present Participle: doguing
-Noun Forms: dogue, dogs
-
-to clog 
-Infinitive: to clogue
-Present: clog(s
-Past Tense: clogued
-Present Participle: cloguing
-Noun Forms: clogue, clogs
-
-to rank 
-Infinitive: to rânque
-Present: rânc(s
-Past Tense: rânqued
-Present Participle: rânquing
-Noun Forms: rânque, rânque's, râncs
-
-to stack
-Infinitive: to stache
-Present: stac(s
-Past Tense: stached
-Present Participle: staching
-Noun Forms: stache, stache's stax
-
-to break
-Infinitive: to breiche
-Present: breic(s
-Past Tense: bróc 
-Past Participle: brócan
-Present Participle: breiching
-Noun Forms: breiche, breix
-
-to speak
-Infinitive: to spieche
-Present: spiec(s
-Past Tense: spóc 
-Past Participle: spócan
-Present Participle: spieching
-Noun Forms: spiec̃e, spiec̃e's, spiec̃es
-
-to wake
-Infinitive: to uâche
-Present: uâc(s
-Past Tense: uóc 
-Past Participle: uócan
-Present Participle: uâching
-Noun Forms: uâche, uâche's, uaix
-
-to attack
-Infinitive: to attaque
-Present: attac(s
-Past Tense: attaqued
-Present Participle: attaquing
-Noun Forms: attaque, attaque's, attacs
-
-to book
-Infinitive: to bôche
-Present: bôc(s
-Past Tense: bôched
-Present Participle: bôching
-Noun Forms: bôche, bôche's, beox
-
-to cook
-Infinitive: to côche
-Present: côc(s
-Past Tense: côched
-Present Participle: côching
-Noun Forms: côche, côche's, queox
-
-to look
-Infinitive: to lôche
-Present: lôc(s
-Past Tense: lôched
-Present Participle: lôching
-Noun Forms: lôche, lôche's, leox
-
-to hook
-Infinitive: to hôche
-Present: hôc(s
-Past Tense: hôched
-Present Participle: hôching
-Noun Forms: hôche, hôche's, heox
+| Infinitive | Present Tense | Past Tense, Past Participle | Gerund | Derived Nouns |
+| :--- | :--- | :--- | :--- | :--- |
+| **to dighe** (dig) | I, you, uie dig; hie digs | dugh | dighing | dighe, digs |
+| **to singue** (sing) | I, you, uie sing; hie sings | sâng, song | singuing | songue, sòngs |
 
 ---
 
