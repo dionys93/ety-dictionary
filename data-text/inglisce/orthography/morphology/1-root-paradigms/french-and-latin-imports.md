@@ -1,15 +1,10 @@
 -ER
-embre, embars
-membre, membars
 to remember remembre(s remembred remembering
 remèmbrance
 to uáter uátre(s uátred uátering
-uátre, uátars
 murder → to mourder mourdre(s mourdred mourdering
-mourdre, mourdars
 to admîer admîre(s admîred admîering
 to desîer desîre(s desîred desîering
-desîre, desîars
 to inquîer inquîre(s inquîred inquîering
 to nomber nombre(s nombred nombering
 
@@ -86,18 +81,48 @@ Their plurals preserve **older stem vowels**: *ancestre* (Latin *ancestor*), *ma
 
 ---
 
+## **-re → -rs**
+
+| Singular | Plural  |
+| -------- | ------- |
+| baure | baurs |
+| carre | cars |
+| core | cors |
+| daire | dairs |
+| doure | dours |
+| feire | feirs |
+| floure | flours |
+| fâre | fârs |
+| haire | hairs |
+| hâre | hârs |
+| oare | oars |
+| ore | ors |
+| seôure | seôurs |
+| staire | stairs |
+| starre | stars |
+| steire | steirs |
+| store | stors |
+
+---
+
 ## **-re, -ere → -ars**
 
 | Singular | Plural  |
 | -------- | ------- |
 | ansere | ansars |
 | embre | embars |
+| gotre | gotars |
 | hamere | hamars |
+| lettre | lettars |
+| mastre | mastars |
 | members | membars |
+| mourdre | mourdars |
 | oþre | oþars |
+| þondre | þondars |
 | rivre | rivars |
 | siatre | siatars |
 | somere | somars |
+| stutre | stutars |
 | șugre | șugars |
 | uátre | uátars |
 | uintre | uintars |
@@ -111,7 +136,9 @@ Historical influence is present: *rivre* comes from Latin *riparius*.
 | -------- | -------- |
 | desîre  | desîars |
 | fŷre   | fŷars  |
-| hîre    | hîars   |
+| hîre    | hîars |
+| coîre | coîars |
+| scîre | scîars |
 
 Nouns in **-îre** form plurals with **-îars**, reflecting their **former stem patterns**:  
 *desîre* (Latin *desiderare*), *hîre* (Old English *hyrian*), *fŷre* (Old English *fyrian*).
@@ -123,16 +150,18 @@ Nouns in **-îre** form plurals with **-îars**, reflecting their **former ste
 | Singular | Plural   |
 | -------- | -------- |
 | butre | butirs |
-| covre    | covirs |
-| flôure  | flôuirs |
+| covre | covirs |
+| flôure | flôuirs |
 | matre | matirs |
-| martre   | martirs |
+| martre | martirs |
 | pâpre | pâpirs |
-| pôure   | pôuirs |
-| tôure  | tôuirs |
-| zefre   | zefirs |
+| pôure | pôuirs |
+| saûre | saûirs |
+| tôure | tôuirs |
+| zefre | zefirs |
 | nombre | nombirs |
 | cúcombre | cúcombirs |
+
 
 This plural is **rare and irregular**, restricted to a few items.  
 It is influenced by French and other Romance sources: *pôure* (French *pouvoir*), *covre* (French *covrir*), *martre* (Romance *martyr*).
@@ -163,8 +192,8 @@ Some endings follow regular derivational pluralization patterns derived from Lat
 | Singular Ending | Plural Ending | Examples |
 |-----------------|---------------|---------|
 | -cle / -gle      | -culs / -guls | cîcle, cîculs; circle, circuls; eigle, eiguls |
-| -âble           | -âbuls        | câble, câbuls; tâble, tâbuls |
-| -able            | -abils         | recîclable, recîclabils |
+| -âble           | -âbuls | câble, câbuls; tâble, tâbuls |
+| -able            | -abils | recîclable, recîclabils |
 
 These patterns **regularize inherited Romance forms** while maintaining the root stem consistently.
 
@@ -196,63 +225,13 @@ This approach ensures Inglisce maintains a **predictable relationship between no
 
 ---
 
--vre → -irs (Latin/French)
-covre → covirs (cover)
 
--ôure → -ôuirs 
-flôure → flôuirs
-pôure → pôuirs
-tôure → tôuirs
-saûre → saûirs
-
--re → -rs
-doure → dours 
-floure → flours
-store → stors
-core → cors
-ore → ors
-haire → hairs
-staire → stairs
-steire → steirs
-starre → stars
-aure → aurs
-baure → baurs
-oare → oars
-seôure → seôurs
-feire → feirs
-daire → dairs
-fâre → fârs
-hâre → hârs
-
--re → ars 
-coîre → coîars
-desîre → desîars 
-fŷre → fŷars
-scîre → scîars
-þondre → þondars
-lettre → lettars 
-mastre → mastars
-gotre → gotars
-stutre → stutars
-mourdre, mourdars
 
 Latin-derived -țure → -țurs
 mixțure → mixțurs
 fiețure → fiețurs
 batture → batturs
 rapțure → rapțurs
-
-
-câc → caix
-drâche → draix
-mâche → maix
-stâche → staix
-seache → seaix
-tâche → taix
-faiche → faix
-steiche → steix
-stic → stix
-
 
 
 Exception:
