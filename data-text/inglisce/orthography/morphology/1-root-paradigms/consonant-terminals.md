@@ -26,7 +26,7 @@ Regular Conjugations
 | **to hôche** (hook) | I, you, uie hôc; hie hôcs | hôched | hôching | hôc, heox |
 | **to crânche** (crank) | I, you, uie crânc; hie crâncs | crânched | crânching | crânc, crâncs; crânchy |
 | **to cróche** (croak) | I, you, uie croac; hie croacs | cróched | cróching | cróc, croax |
-| **to stiche** (stick) | I, you, uie stic; hie stics | stuc | stiching | stic, stix |
+| **to stiche** (stick) | I, you, uie stic; hie stics | steuc | stiching | stic, stix |
 
 
 Irregular Conjugations
