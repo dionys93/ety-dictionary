@@ -1,5 +1,5 @@
 -ER
-embre, emars
+embre, embars
 membre, membars
 to remember remembre(s remembred remembering
 remèmbrance
@@ -90,15 +90,17 @@ Their plurals preserve **older stem vowels**: *ancestre* (Latin *ancestor*), *ma
 
 | Singular | Plural  |
 | -------- | ------- |
-| oþre     | oþars |
-| rivre    | rivars |
+| ansere | ansars |
+| embre | embars |
+| hamere | hamars |
+| members | membars |
+| oþre | oþars |
+| rivre | rivars |
 | siatre | siatars |
+| somere | somars |
 | șugre | șugars |
 | uátre | uátars |
 | uintre | uintars |
-| hamere | hamars |
-| somere | somars |
-| ansere | ansars |
 
 This is the **default plural** for many -re nouns.  
 Historical influence is present: *rivre* comes from Latin *riparius*.
@@ -160,7 +162,7 @@ Some endings follow regular derivational pluralization patterns derived from Lat
 
 | Singular Ending | Plural Ending | Examples |
 |-----------------|---------------|---------|
-| -cle / -gle      | -culs / -guls | cîcle, cîculs; eigle, eiguls |
+| -cle / -gle      | -culs / -guls | cîcle, cîculs; circle, circuls; eigle, eiguls |
 | -âble           | -âbuls        | câble, câbuls; tâble, tâbuls |
 | -able            | -abils         | recîclable, recîclabils |
 
@@ -175,6 +177,7 @@ Many of these stems also serve as the basis for **adjectival forms**, further re
 | Base | Plural | Adjective |
 |------|--------|-----------|
 | ângle | ânguls | ângular |
+| cîcle | cîculs | ciclical |
 | circle | circuls | circular |
 | tâble | tâbuls | tabular |
 | fâble | fâbuls | fabulus |
