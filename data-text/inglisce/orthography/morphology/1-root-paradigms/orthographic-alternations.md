@@ -149,7 +149,7 @@ In these cases, vowel alternation applies only to the monomorphemic lexical stem
 | :--- | :--- | :--- | :--- |
 | **-ic** | **-ix** | stic, tric, lic, pic, uic | stix, trix, lix, pix, uix |
 | **-iec** | **-iex** | biec, c̃iec, liec, friec | biex, c̃iex, liex, friex |
-| **-auc** | **-aux** | c̃auc, stauc, tauc, ouac | c̃aux, staux, taux, ouax |
+| **-auc** | **-aux** | c̃auc, stauc, tauc, uauc | c̃aux, staux, taux, uaux |
 | **-âc** | **-aix** | brâc, câc, râc, stâc, faic | braix, caix, raix, staix, faix |
 | **-ac** | **-ax** | hac, stac, rac | hax, stax, rax |
 | **-eic** | **-eix** | breic, steic | breix, steix |
