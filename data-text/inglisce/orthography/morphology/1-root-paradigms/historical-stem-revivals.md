@@ -1,264 +1,133 @@
--ER
-to remember remembre(s remembred remembering
-remèmbrance
-to uáter uátre(s uátred uátering
-murder → to mourder mourdre(s mourdred mourdering
-to admîer admîre(s admîred admîering
-to desîer desîre(s desîred desîering
-to inquîer inquîre(s inquîred inquîering
-to nomber nombre(s nombred nombering
+# Historical Stem Revivals (The Unpacking Paradigm)
 
--IR
-matter → to matir matre(s matred matiring
-to covir covre(s covred coviring
-to hovir hovre(s hovred hoviring
+In Inglisce, certain heavily compressed Romance and inherited stems maintain their integrity across pluralization, conjugation, and derivation. To prevent awkward phonetics and preserve morphological transparency, these words "unpack" themselves when suffixes are added, revealing their historical vowels (from Latin, Old French, or Old English).
 
--RE
-shatter → to siatre siatre(s siatred siatering
-scatter → to scatre
-
--ERE
-to hammer → to hamere -s -d hamering
-hamere, hamars
-to stammer → to stamere -s -d stamering
-to ansere -s -d ansering
-ansere, ansars
-somere, somere's, somars
-
-to fŷer fŷre(s fŷred fŷering
-to partenare -s -d -ing
-partenar -s
-to húmore -s -d -ing
-húmor, húmorus
+This approach ensures Inglisce maintains a predictable relationship between base words, plurals, and adjectives, strengthening both orthographic clarity and derivational logic.
 
 ---
 
--fae
--faes
--faed
--fyhing
+## 1. Syllabic Liquid Unpacking (The ⟨-re⟩ and ⟨-le⟩ Families)
 
-to jostifae -s -d jostifyhing
-jostifîable
-jostificâcion
+Words ending in **-re** and **-le** often act as heavily compressed stems. While they remain contracted in their base noun forms or finite verb forms, the addition of a suffix forces the liquid consonant to unpack into a full, vowel-bearing syllable.
 
-to satisfae -s -d satisfyhing
-satisfaccion
+### The ⟨-re⟩ Plural Matrix
+A specific class of inherited and learned nouns ending in **-re** retain the final **-e** for structural purposes (e.g., to form contractions like *maþre's*). Their plurals replace **-re** with a vowel-bearing suffix, reflecting their historical stem forms. This pattern is lexically restricted and non-productive.
 
-to amplifae -s -d amplifyhing
-amplificâcion
+| Category | Singular | Plural | Historical Note / Origin |
+| :--- | :--- | :--- | :--- |
+| **-re → -ors** | ancestre, maþre, fáþre, broþre, sistre | ancestors, maþors, fáþors, broþors, sistors | Kinship terms. Preserves older stem vowels (e.g., Latin *ancestor*, OE *modor*). |
+| **-re → -ars** | ansere, embre, gotre, hamere, lettre, mastre, membre, mourdre, oþre, þondre, rivre, siatre, somere, stutre, șugre, uátre, uintre | ansars, embars, gotars, hamars, lettars, mastars, membars, mourdars, oþars, þondars, rivars, siatars, somars, stutars, șugars, uátars, uintars | The default plural for many -re nouns. Strong historical influence (e.g., *rivre* from Latin *riparius*). |
+| **-îre → -îars**| desîre, fŷre, hîre, coîre, scîre | desîars, fŷars, hîars, coîars, scîars | Reflects former stem patterns (Latin *desiderare*, OE *fyrian*). |
+| **-re → -irs** | butre, covre, flôure, matre, martre, pâpre, pôure, saûre, tôure, zefre, nombre, cúcombre | butirs, covirs, flôuirs, matirs, martirs, pâpirs, pôuirs, saûirs, tôuirs, zefirs, nombirs, cúcombirs | Rare and irregular. Influenced by French/Romance sources (French *pouvoir*, *covrir*). |
 
-to signifae -s -d signifyhing
-significance
+### Stable ⟨-re⟩ Bases (No Unpacking)
+Certain simple bases do not unpack. Because they lack a compressible Latin/Romance liquid stem, they drop the **-e** normally to form a standard **-rs** plural.
 
-to mortifae -s -d mortifyhing
-mortificâcion
+| Singular | Plural |
+| :--- | :--- |
+| **baure** | baurs |
+| **carre** | cars |
+| **core** | cors |
+| **daire** | dairs |
+| **doure** | dours |
+| **feire** | feirs |
+| **floure** | flours |
+| **fâre** | fârs |
+| **haire** | hairs |
+| **hâre** | hârs |
+| **oare** | oars |
+| **ore** | ors |
+| **seôure** | seôurs |
+| **staire** | stairs |
+| **starre** | stars |
+| **steire** | steirs |
+| **store** | stors |
 
+### The ⟨-le⟩ Divergence Matrix (Unpacking vs. Compression)
 
-## Plurals of Learned Romance Nouns in **-re**
+Words ending in **-le** demonstrate a strict behavioral split depending on their grammatical function:
 
-A small class of inherited and learned nouns ending in **-re** retain the final **-e** for **structural purposes**, e.g., to form contractions (*maþre + is = maþre's*).  
-Their plurals replace **-re** with a vowel-bearing suffix, reflecting **historical stem forms**.
+1. **Active Verbs (The Compression Rule):** Because active verbs do not need to unpack to catch standard verb suffixes, they prioritize efficiency. They stay permanently compressed across all conjugations, dropping the **-e** normally to attach their gerunds. 
+2. **Nouns & Adjectives (The Unpacking Rule):** When pluralizing or deriving into adjectives, these roots unpack their liquid consonant (typically into *-uls* or *-ils*) to regularize inherited Romance forms and visibly track their historical Latin roots.
 
-This pattern is **lexically restricted** and **non-productive**.
+#### Dual-Function ⟨-le⟩ Roots (Verbs & Nouns)
 
----
+| Root | Infinitive | Conjugations | Nouns (Sing. and Pl.) | Derived Adjectives |
+| :--- | :--- | :--- | :--- | :--- |
+| Latin *circulus* | to **circle** | circles, circled, circling | circle, circuls | circular |
+| Latin *cyclus* | to **cîcle** | cîcles, cîcled, cîcling | cîcle, cîculs | ciclical |
+| Latin *modulus* | to **modle** | modles, modled, modling | modle, moduls | mod̦ular |
+| Latin *musculus* | to **musçle** | musçles, musçled, musçling | musçle, musçuls | muscular |
+| Latin *tabula* | to **tâble** | tâbles, tâbled, tâbling | tâble, tâbuls | tabular |
+| Latin *stabulum* | to **stâble** | stâbles, stâbled, stâbling | stâble, stâbuls | stâbil |
+| Old English *stapol, stapel* | to **stâple** | stâples, stâpled, stâpling | stâple, stâpuls | -- |
+| Latin *rebellare, rebellis* | to **rebèle** | rebèles, rebèled, rebèling | reble, rebels | rebellieus |
+| Old English *sceofol* | to **siovle** | siovles, siovled, siovling | siovle, siovels | -- |
 
-## **-re → -ors**
+#### Static ⟨-le⟩ Bases (Nouns & Adjectives Only)
 
-| Singular | Plural    |
-| -------- | --------- |
-| ancestre | ancestors |
-| maþre    | maþors    |
-| fáþre    | fáþors    |
-| broþre   | broþors   |
-| sistre   | sistors   |
+| Root | Nouns (Sing. and Pl.) |
+| :--- | :--- |
+| Latin *aquilus* | **eigle, eiguls** | 
+| Latin *capulus* | **câble, câbuls** |
+| Modern English *seagull* | **cígle, cíguls** |
+| Old English *gicel* | **îcicle, îciculs** | 
+| Latin *gnoscere, gnobilis* | **nóble, nóbils**, **nobilatie** | 
+| Modern English *recyclable* | **recîclable, recîclabils** |
 
-This group largely consists of **kinship terms**.  
-Their plurals preserve **older stem vowels**: *ancestre* (Latin *ancestor*), *maþre* (Old English *modor*), *fáþre* (Old English *fador*), *sistre* (Old English *sistor*).
+### The ⟨-els⟩ Etymological Variant
+While most **-le** words unpack with a *u* (e.g., `-culs`, `-buls`), a specific subset of words unpacks with an **-els** ending. This visible difference is not random; it tracks specific French and Latin etymologies where the historical vowel was an *e*.
 
----
+| Nouns (Sing. and Pl.) | Origin |
+| :--- | :--- |
+| **cassle, cassels** | Latin *castellum* |
+| **reble, rebels** | Latin *rebellis* |
+| **tonele, tonels** | Old French *tonel* |
+| **mussle, mussels** | |
+| **siovle, siovels** | |
+| **vessle, vessels** | |
 
-## **-re → -rs**
+### Syllabic Verb Unpacking
+When functioning as active finite verbs, these liquid-terminal roots stay compressed to catch standard suffixation. However, when taking an **-ing** gerund or expanding into an infinitive/noun, the stem unpacks.
 
-| Singular | Plural  |
-| -------- | ------- |
-| baure | baurs |
-| carre | cars |
-| core | cors |
-| daire | dairs |
-| doure | dours |
-| feire | feirs |
-| floure | flours |
-| fâre | fârs |
-| haire | hairs |
-| hâre | hârs |
-| oare | oars |
-| ore | ors |
-| seôure | seôurs |
-| staire | stairs |
-| starre | stars |
-| steire | steirs |
-| store | stors |
-
----
-
-## **-re, -ere → -ars**
-
-| Singular | Plural  |
-| -------- | ------- |
-| ansere | ansars |
-| embre | embars |
-| gotre | gotars |
-| hamere | hamars |
-| lettre | lettars |
-| mastre | mastars |
-| members | membars |
-| mourdre | mourdars |
-| oþre | oþars |
-| þondre | þondars |
-| rivre | rivars |
-| siatre | siatars |
-| somere | somars |
-| stutre | stutars |
-| șugre | șugars |
-| uátre | uátars |
-| uintre | uintars |
-
-This is the **default plural** for many -re nouns.  
-Historical influence is present: *rivre* comes from Latin *riparius*.
-
-## **-îre → -îars**
-
-| Singular | Plural   |
-| -------- | -------- |
-| desîre  | desîars |
-| fŷre   | fŷars  |
-| hîre    | hîars |
-| coîre | coîars |
-| scîre | scîars |
-
-Nouns in **-îre** form plurals with **-îars**, reflecting their **former stem patterns**:  
-*desîre* (Latin *desiderare*), *hîre* (Old English *hyrian*), *fŷre* (Old English *fyrian*).
+| Infinitive / Unpacked Base | 3rd Person Verb | Past Tense | Gerund | Derived Nouns |
+| :--- | :--- | :--- | :--- | :--- |
+| **to remember** | remembres | remembred | remembering | remèmbrance |
+| **to uáter** | uátres | uátred | uátering | uátre, uátars |
+| **to mourder** | mourdres | mourdred | mourdering | mourdre, mourdars |
+| **to admîer** | admîres | admîred | admîering | -- |
+| **to desîer** | desîres | desîred | desîering | desîre, desîars |
+| **to inquîer** | inquîres | inquîred | inquîering | -- |
+| **to nomber** | nombres | nombred | nombering | nombre, nombirs |
+| **to matir** | matres | matred | matiring | matre, matirs |
+| **to covir** | covres | covred | coviring | covre, covirs |
+| **to hovir** | hovres | hovred | hoviring | -- |
+| **to hammer** | hameres | hamered | hamering | hamere, hamars |
+| **to stammer** | stameres | stamered | stamering | -- |
 
 ---
 
-## **-re → -irs** *(rare)*
+## 2. Advanced Romance Derivations 
 
-| Singular | Plural   |
-| -------- | -------- |
-| butre | butirs |
-| covre | covirs |
-| flôure | flôuirs |
-| matre | matirs |
-| martre | martirs |
-| pâpre | pâpirs |
-| pôure | pôuirs |
-| saûre | saûirs |
-| tôure | tôuirs |
-| zefre | zefirs |
-| nombre | nombirs |
-| cúcombre | cúcombirs |
+### The ⟨-fae⟩ Shift
+Verbs ending in **-fae** follow a predictable pattern. They conjugate smoothly using the base, but unpack into their heavy Latinate structures (utilizing **-ficâcion** or **-fîable**) when deriving into abstract nouns and adjectives.
 
+* **Conjugation Base:** `to jostifae`, `jostifaes`, `jostifaed`, `jostifyhing`
 
-This plural is **rare and irregular**, restricted to a few items.  
-It is influenced by French and other Romance sources: *pôure* (French *pouvoir*), *covre* (French *covrir*), *martre* (Romance *martyr*).
+| Inglisce Verb | Unpacked Derivation (Noun / Adjective) |
+| :--- | :--- |
+| **to jostifae** | jostificâcion, jostifîable |
+| **to satisfae** | satisfaccion |
+| **to amplifae** | amplificâcion |
+| **to signifae** | significance |
+| **to mortifae** | mortificâcion |
 
----
+### Latinate ⟨-țure⟩ Plurals
+Learned imports ending in the specific phoneme **-țure** maintain their structural integrity and pluralize simply by dropping the ⟨-e⟩ and adding **-s**.
 
-## Notes
-
-* These patterns are **historical and lexical**, not productive rules.  
-* They are restricted to **learned or inherited Romance vocabulary**.  
-* Retention of **-re** is structural, supporting contractions and base integrity.
-
-
-
-## Derivational Patterns in Inglisce
-
-### Overview
-
-In Inglisce, certain **derivational stems** maintain their integrity across both **pluralization** and **adjectival or related forms**.  
-This preserves morphological transparency and reduces orthographic ambiguity.
-
----
-
-### Plural Patterns
-
-Some endings follow regular derivational pluralization patterns derived from Latin/Romance roots:
-
-| Singular Ending | Plural Ending | Examples |
-|-----------------|---------------|---------|
-| -cle / -gle     | -culs / -guls | cîcle, cîculs; circle, circuls; eigle, eiguls |
-| -âble           | -âbuls | câble, câbuls; tâble, tâbuls |
-| -able           | -abils | recîclable, recîclabils |
-
-These patterns **regularize inherited Romance forms** while maintaining the root stem consistently.
-
----
-
-### Derivation Beyond Plurals
-
-Many of these stems also serve as the basis for **adjectival forms**, further reinforcing morphological stability:
-
-| Base | Plural | Adjective |
-|------|--------|-----------|
-| ângle | ânguls | ângular |
-| cîcle | cîculs | ciclical |
-| circle | circuls | circular |
-| tâble | tâbuls | tabular |
-| fâble | fâbuls | fabulus |
-
-Verbs:
-to circle, circles, circled, circling
-to cîcle, cîcles, cîcled, cîcling
-to modle, modles, modled, modling
-to musçle, musçles, musçled, musçling
-to rebèle, rebèles, rebèled, rebèling
-to seovle, seovles, seovled, seovling
-to stâple, stâples, stâpled, stâpling
-to tâble, tâbles, tâbled, tâbling
-
-circle → circuls (Latin circulus)
-câble → câbuls (Latin capulus, capulum)
-cîcle → cîculs (Latin cyclus)
-modle → moduls (Latin modulus)
-musçle → musçuls (Latin musculus)
-tâble → tâbuls (Latin tabula)
-ângle → ânguls (Latin angulus)
-eigle → eiguls (Latin aquilus)
-îcicle → îciculs
-cígle, cíguls
-modle, moduls
-mussle, mussels
-musçle, musçuls
-nóble, nóbils
-reble, rebels (Latin rebellis)
-siovle, siovels
-stâble, stâbuls
-stâple, stâpuls
-tâble, tâbuls
-vessle, vessels
-tonele → tonels (Old French tonel)
-cassle → cassels (Latin castellum)
-mussle → mussels
-
-**Note:** The adjectival form preserves the stem in the same way the plural does, highlighting **reusability of the base across derivational processes**.
-
----
-
-### Design Principles
-
-1. **Stem Visibility** – Both plural and derived forms reflect the underlying root.  
-2. **Morphological Transparency** – Readers can easily infer the base from any derived form.  
-3. **Consistency** – Regularization across -cle, -âble, and -able families avoids ad hoc pluralizations or adjectival changes.
-
-This approach ensures Inglisce maintains a **predictable relationship between nouns, plurals, and adjectives**, strengthening both orthographic clarity and derivational logic.
-
----
-
-Latin-derived -țure → -țurs
-mixțure → mixțurs
-fiețure → fiețurs
-batture → batturs
-rapțure → rapțurs 
+| Singular Base | Plural |
+| :--- | :--- |
+| **mixțure** | mixțurs |
+| **fiețure** | fiețurs |
+| **batture** | batturs |
+| **rapțure** | rapțurs |
