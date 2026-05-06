@@ -15,8 +15,8 @@ A specific class of inherited and learned nouns ending in **-re** retain the fin
 
 | Category | Singular | Plural | Historical Note / Origin |
 | :--- | :--- | :--- | :--- |
-| **-re → -ors** | ancestre, maþre, fáþre, broþre, sistre | ancestors, maþors, fáþors, broþors, sistors | Kinship terms. Preserves older stem vowels (e.g., Latin *ancestor*, OE *modor*). |
-| **-re → -ars** | ansere, embre, gotre, hamere, lettre, mastre, membre, mourdre, oþre, þondre, rivre, siatre, somere, stutre, șugre, uátre, uintre | ansars, embars, gotars, hamars, lettars, mastars, membars, mourdars, oþars, þondars, rivars, siatars, somars, stutars, șugars, uátars, uintars | The default plural for many -re nouns. Strong historical influence (e.g., *rivre* from Latin *riparius*). |
+| **-re → -ors** | ancestre, broþre, fáþre, maþre, sistre | ancestors, broþors, fáþors, maþors, sistors | Kinship terms. Preserves older stem vowels (e.g., Latin *ancestor*, OE *modor*). |
+| **-ere/-re → -ars** | ansere, embre, gotre, hamere, lettre, mastre, membre, mourdre, oþre, þondre, rivre, siatre, somere, stutre, șugre, uátre, uintre | ansars, embars, gotars, hamars, lettars, mastars, membars, mourdars, oþars, þondars, rivars, siatars, somars, stutars, șugars, uátars, uintars | The default plural for many -re nouns. Strong historical influence (e.g., *rivre* from Latin *riparius*). |
 | **-îre → -îars**| desîre, fŷre, hîre, coîre, scîre | desîars, fŷars, hîars, coîars, scîars | Reflects former stem patterns (Latin *desiderare*, OE *fyrian*). |
 | **-re → -irs** | butre, covre, flôure, matre, martre, pâpre, pôure, saûre, tôure, zefre, nombre, cúcombre | butirs, covirs, flôuirs, matirs, martirs, pâpirs, pôuirs, saûirs, tôuirs, zefirs, nombirs, cúcombirs | Rare and irregular. Influenced by French/Romance sources (French *pouvoir*, *covrir*). |
 
