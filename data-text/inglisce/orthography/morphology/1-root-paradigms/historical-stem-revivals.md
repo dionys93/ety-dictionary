@@ -1,4 +1,4 @@
-# Historical Stem Revivals (The Unpacking Paradigm)
+# Historical Stem Revivals
 
 In Inglisce, certain heavily compressed Romance and inherited stems maintain their integrity across pluralization, conjugation, and derivation. To prevent awkward phonetics and preserve morphological transparency, these words "unpack" themselves when suffixes are added, revealing their historical vowels (from Latin, Old French, or Old English).
 
@@ -6,7 +6,7 @@ This approach ensures Inglisce maintains a predictable relationship between base
 
 ---
 
-## 1. Syllabic Liquid Unpacking (The ⟨-re⟩ and ⟨-le⟩ Families)
+## 1. Syllabic Liquid Unpacking
 
 Words ending in **-re** and **-le** often act as heavily compressed stems. While they remain contracted in their base noun forms or finite verb forms, the addition of a suffix forces the liquid consonant to unpack into a full, vowel-bearing syllable.
 
@@ -20,7 +20,7 @@ A specific class of inherited and learned nouns ending in **-re** retain the fin
 | **-îre → -îars**| desîre, fŷre, hîre, coîre, scîre | desîars, fŷars, hîars, coîars, scîars | Reflects former stem patterns (Latin *desiderare*, OE *fyrian*). |
 | **-re → -irs** | butre, covre, flôure, matre, martre, pâpre, pôure, saûre, tôure, zefre, nombre, cúcombre | butirs, covirs, flôuirs, matirs, martirs, pâpirs, pôuirs, saûirs, tôuirs, zefirs, nombirs, cúcombirs | Rare and irregular. Influenced by French/Romance sources (French *pouvoir*, *covrir*). |
 
-### Stable ⟨-re⟩ Bases (No Unpacking)
+### Stable ⟨-re⟩ Bases
 Certain simple bases do not unpack. Because they lack a compressible Latin/Romance liquid stem, they drop the **-e** normally to form a standard **-rs** plural.
 
 | Singular | Plural |
@@ -68,10 +68,10 @@ Words ending in **-le** demonstrate a strict behavioral split depending on their
 
 | Root | Nouns (Sing. and Pl.) |
 | :--- | :--- |
-| Latin *aquilus* | **eigle, eiguls** | 
 | Latin *capulus* | **câble, câbuls** |
 | Modern English *seagull* | **cígle, cíguls** |
-| Old English *gicel* | **îcicle, îciculs** | 
+| Old English *gicel* | **îcicle, îciculs** |
+| Latin *aquilus* | **eigle, eiguls** | 
 | Latin *gnoscere, gnobilis* | **nóble, nóbils**, **nobilatie** | 
 | Modern English *recyclable* | **recîclable, recîclabils** |
 
@@ -81,29 +81,29 @@ While most **-le** words unpack with a *u* (e.g., `-culs`, `-buls`), a specific 
 | Nouns (Sing. and Pl.) | Origin |
 | :--- | :--- |
 | **cassle, cassels** | Latin *castellum* |
+| **mussle, mussels** | Latin *muscula* |
 | **reble, rebels** | Latin *rebellis* |
+| **siovle, siovels** | Old English *sceofol* |
 | **tonele, tonels** | Old French *tonel* |
-| **mussle, mussels** | |
-| **siovle, siovels** | |
-| **vessle, vessels** | |
+| **vessle, vessels** | Old French *vessel* |
 
 ### Syllabic Verb Unpacking
 When functioning as active finite verbs, these liquid-terminal roots stay compressed to catch standard suffixation. However, when taking an **-ing** gerund or expanding into an infinitive/noun, the stem unpacks.
 
-| Infinitive / Unpacked Base | 3rd Person Verb | Past Tense | Gerund | Derived Nouns |
-| :--- | :--- | :--- | :--- | :--- |
-| **to remember** | remembres | remembred | remembering | remèmbrance |
-| **to uáter** | uátres | uátred | uátering | uátre, uátars |
-| **to mourder** | mourdres | mourdred | mourdering | mourdre, mourdars |
-| **to admîer** | admîres | admîred | admîering | -- |
-| **to desîer** | desîres | desîred | desîering | desîre, desîars |
-| **to inquîer** | inquîres | inquîred | inquîering | -- |
-| **to nomber** | nombres | nombred | nombering | nombre, nombirs |
-| **to matir** | matres | matred | matiring | matre, matirs |
-| **to covir** | covres | covred | coviring | covre, covirs |
-| **to hovir** | hovres | hovred | hoviring | -- |
-| **to hammer** | hameres | hamered | hamering | hamere, hamars |
-| **to stammer** | stameres | stamered | stamering | -- |
+| Infinitive | Conjugations | Derived Nouns |
+| :--- | :--- | :--- |
+| **to remember** | remembre(s, remembred, remembering | remèmbrance |
+| **to uáter** | uátre(s, uátred, uátering | uátre, uátars |
+| **to mourder** | mourdre(s, mourdred, mourdering | mourdre, mourdars |
+| **to admîer** | admîre(s, admîred, admîering | admirâcion |
+| **to desîer** | desîre(s, desîred, desîering | desîre, desîars |
+| **to inquîer** | inquîre(s, inquîred, inquîering | inqüisicion |
+| **to nombir** | nombre(s, nombred, nombering | nombre, nombirs |
+| **to matir** | matre(s, matred, matiring | matre, matirs |
+| **to covir** | covre(s, covred, coviring | covre, covirs |
+| **to hovir** | hovre(s, hovred, hoviring | -- |
+| **to hammer** | hamere(s, hamered, hamering | hamere, hamars |
+| **to stammer** | stamere(s, stamered, stamering | stamere, stamars |
 
 ---
 
