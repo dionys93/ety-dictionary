@@ -10,6 +10,19 @@ https://www.etymonline.com/word/-ify#etymonline_v_42244
 -ficâcion (f n)
 https://www.etymonline.com/word/-fication
 
+### The ⟨-fae⟩ Shift
+Verbs ending in **-fae** follow a predictable pattern. They conjugate smoothly using the base, but unpack into their heavy Latinate structures (utilizing **-ficâcion** or **-fîable**) when deriving into abstract nouns and adjectives.
+
+* **Conjugation Base:** `to jostifae`, `jostifaes`, `jostifaed`, `jostifyhing`
+
+| Inglisce Verb | Unpacked Derivation (Noun / Adjective) |
+| :--- | :--- |
+| **to jostifae** | jostificâcion, jostifîable |
+| **to satisfae** | satisfaccion |
+| **to amplifae** | amplificâcion |
+| **to signifae** | significance |
+| **to mortifae** | mortificâcion |
+
 ---
 
 Modern English -ize from Old French -iser, Latin -izare, and Greek -ίζειν
