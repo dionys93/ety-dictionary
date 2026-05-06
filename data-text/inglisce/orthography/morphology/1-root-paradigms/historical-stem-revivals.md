@@ -6,16 +6,141 @@ This approach ensures Inglisce maintains a predictable relationship between base
 
 ---
 
-## 1. Syllabic Liquid Unpacking
+-ER Verbs and Nouns
 
-Words ending in **-re** and **-le** often act as heavily compressed stems. While they remain contracted in their base noun forms or finite verb forms, the addition of a suffix forces the liquid consonant to unpack into a full, vowel-bearing syllable.
+Infinitive: to þonder
+Conjugations: þondre(s, þondred, þondering
+Derived Nouns and Adjectives: þondre, þondars
 
-### The ⟨-re⟩ Plural Matrix
-A specific class of inherited and learned nouns ending in **-re** retain the final **-e** for structural purposes (e.g., to form contractions like *maþre's*). Their plurals replace **-re** with a vowel-bearing suffix, reflecting their historical stem forms. This pattern is lexically restricted and non-productive.
+Infinitive: to master
+Conjugations: mastre(s, mastred, mastering
+Derived Nouns and Adjectives: mastre, mastars
 
-### **-re → -ors**
-This group largely consists of kinship terms, preserving older stem vowels (e.g., Latin *ancestor*, OE *modor*).
+Infinitive: to uáter
+Conjugations: uátre(s, uátred, uátering
+Derived Nouns and Adjectives: uátre, uátars; uátarfalle
 
+Infinitive: to remember
+Conjugations: remembre(s, remembred, remembering
+Derived Nouns and Adjectives: remèmbrance
+
+Infinitive: to mourder
+Conjugations: mourdre(s, mourdred, mourdering
+Derived Nouns and Adjectives: mourdre, mourdars; mourderor
+
+Infinitive: to saûer 
+Conjugations: saûre(s, saûred, saûering
+Derived Nouns and Adjectives: saûre, saûirs (Irregular Plural)
+
+---
+
+-ÎER Verbs and Nouns
+
+Infinitive: to admîer
+Conjugations: admîre(s, admîred, admîering
+Derived Nouns and Adjectives: admirâcion, admîreur, admîrable
+
+Infinitive: to desîer
+Conjugations: desîre(s, desîred, desîering
+Derived Nouns and Adjectives: desîre, desîars; desîrable
+
+Infinitive: to fŷer
+Conjugations: fŷre(s, fŷred, fŷering
+Derived Nouns and Adjectives: fŷre, fŷars
+
+Infinitive: to hîer
+Conjugations: hîre(s, hîred, hîering
+Derived Nouns and Adjectives: hîre, hîars
+
+Infinitive: to inquîer
+Conjugations: inquîre(s, inquîred, inquîering 
+Derived Nouns and Adjectives: inqüisicion, inqüisitif
+
+Pure Nouns: 
+| **coîre** | coîars |
+| **scîre** | scîars |
+
+---
+
+-IR Verbs and Nouns
+
+Infinitive: to covir
+Conjugations: covre(s, covred, coviring
+Derived Nouns and Adjectives: covre, covirs
+
+Infinitive: to hovir
+Conjugations: hovre(s, hovred, hoviring
+
+Infinitive: to martir
+Conjugations: martre(s, martred, martiring 
+Derived Nouns and Adjectives: martre, martirs
+
+Infinitive: to matir
+Conjugations: matre(s, matred, matiring 
+Derived Nouns and Adjectives: matre, matirs; matírial
+
+Infinitive: to nombir
+Conjugations: nombre(s, nombred, nombiring
+Derived Nouns and Adjectives: nombre, nombirs
+
+Infinitive: to butir
+Conjugations: butre(s, butred, butiring
+Derived Nouns and Adjectives: butre, butirs; butiry
+
+Infinitive: to flôuir
+Conjugations: flôure(s, flôured, flôuiring
+Derived Nouns and Adjectives: flôure, flôuirs; flôuiry
+
+Infinitive: to pôuir
+Conjugations: pôure(s, pôured, pôuiring
+Derived Nouns and Adjectives: pôure, pôuirs; pôuirful
+
+Infinitive: to tôuir
+Conjugations: tôure(s, tôured, tôuiring
+Derived Nouns and Adjectives: tôure, tôuirs
+
+Pure Nouns:
+| **cúcombre** | cúcombirs |
+| **pâpre** | pâpirs |
+| **zefre** | zefirs |
+
+
+---
+
+| **to glimare** | glimare(s, glimared, glimaring | **glimare, glimars** |
+| **to hamere** | hamere(s, hamered | hamering | **hamere, hamars** |
+| **to stamere** | stamere(s, stamered | stamering | **stamere, stamars** |
+| **to ansere** | ansere(s, ansered, ansering | ansere, ansars |
+| **to siater** | siatre(s, siatred, siatering | siatre, siatars |
+| **to splater** | splatre(s, splatred, splatering | splatre, splatars |
+| **to scimare** | scimare(s, scimared, scimaring | scimare, scimars; scimary |
+| **to slomber** | slombre(s, slombred, slombering | slombre | 
+| **to flicher** | flicre(s, flicred, flichering | flicre, flicars |
+| **to clamber** | clambre(s, clambred, clambering | clambre |
+| **to clater** | clatre(s, clatred, clatering | clatre, clatars |
+| **to linguer** | lingre(s, lingred, linguering | lingre |
+| **to cuâver** | cuâvre(s, cuâvred, cuâvering | cuâvre |
+| **to uander** | uandre(s, uandred, uandering | uanderor |
+| **to uonder** | uondre(s, uondred, uondering | uondre, uonderus, uonderful |
+| **to uâver** | uâvre(s, uâvred, uâvering | uâvre, uâvars |
+| **to stutter** | stutre(, stutred, stuttering | stutre, stutars |
+| **to glitter** | glitre(s, glitred, glittering | **glitre, glitars** |
+
+| **embre** | embars |
+| **gotre** | gotars |
+| **lettre** | lettars |
+| **membre** | membars |
+| **oþre** | oþars |
+| **rivre** | rivars |
+| **somere** | somars |
+| **șugre** | șugars |
+| **uintre** | uintars |
+| bievre | bievars |
+
+
+
+#### **-re → -ors**
+Consists largely of kinship terms, preserving older stem vowels (e.g., Latin *ancestor*, OE *modor*).
 | Singular | Plural |
 | :--- | :--- |
 | **ancestre** | ancestors |
@@ -24,61 +149,18 @@ This group largely consists of kinship terms, preserving older stem vowels (e.g.
 | **maþre** | maþors |
 | **sistre** | sistors |
 
-### **-ere/-re → -ars**
-This serves as the default plural for many -re nouns, displaying strong historical influence (e.g., *rivre* from Latin *riparius*).
-
-| Singular | Plural |
-| :--- | :--- |
-| **ansere** | ansars |
-| **embre** | embars |
-| **glitre** | glitars |
-| **gotre** | gotars |
-| **hamere** | hamars |
-| **lettre** | lettars |
-| **mastre** | mastars |
-| **membre** | membars |
-| **mourdre** | mourdars |
-| **oþre** | oþars |
-| **rivre** | rivars |
-| **siatre** | siatars |
-| **somere** | somars |
-| **stutre** | stutars |
-| **șugre** | șugars |
-| **uátre** | uátars |
-| **uintre** | uintars |
-| **þondre** | þondars |
-
-### **-îre → -îars**
-Reflects former stem patterns for heavily stressed long-i words (Latin *desiderare*, OE *fyrian*).
-
-| Singular | Plural |
-| :--- | :--- |
-| **coîre** | coîars |
-| **desîre** | desîars |
-| **fŷre** | fŷars |
-| **hîre** | hîars |
-| **scîre** | scîars |
-
-### **-re → -irs**
-A rare and irregular unpacking, primarily influenced by specific French and Romance sources (French *pouvoir*, *covrir*).
-
-| Singular | Plural |
-| :--- | :--- |
-| **butre** | butirs |
-| **covre** | covirs |
-| **cúcombre** | cúcombirs |
-| **flôure** | flôuirs |
-| **martre** | martirs |
-| **matre** | matirs |
-| **nombre** | nombirs |
-| **pâpre** | pâpirs |
-| **pôure** | pôuirs |
-| **saûre** | saûirs |
-| **tôure** | tôuirs |
-| **zefre** | zefirs |
 
 
-### Stable ⟨-re⟩ Bases
+
+
+
+
+
+
+
+
+
+### Stable ⟨-re⟩ Bases (No Unpacking)
 Certain simple bases do not unpack. Because they lack a compressible Latin/Romance liquid stem, they drop the **-e** normally to form a standard **-rs** plural.
 
 | Singular | Plural |
@@ -100,6 +182,7 @@ Certain simple bases do not unpack. Because they lack a compressible Latin/Roman
 | **starre** | stars |
 | **steire** | steirs |
 | **store** | stors |
+
 
 ### The ⟨-le⟩ Divergence Matrix (Unpacking vs. Compression)
 
@@ -145,25 +228,6 @@ While most **-le** words unpack with a *u* (e.g., `-culs`, `-buls`), a specific 
 | **siovle, siovels** | Old English *sceofol* |
 | **tonele, tonels** | Old French *tonel* |
 | **vessle, vessels** | Old French *vessel* |
-
-### Syllabic Verb Unpacking
-When functioning as active finite verbs, these liquid-terminal roots stay compressed to catch standard suffixation. However, when taking an **-ing** gerund or expanding into an infinitive/noun, the stem unpacks.
-
-| Infinitive | Conjugations | Derived Nouns |
-| :--- | :--- | :--- |
-| **to remember** | remembre(s, remembred, remembering | remèmbrance |
-| **to uáter** | uátre(s, uátred, uátering | uátre, uátars |
-| **to mourder** | mourdre(s, mourdred, mourdering | mourdre, mourdars |
-| **to admîer** | admîre(s, admîred, admîering | admirâcion |
-| **to desîer** | desîre(s, desîred, desîering | desîre, desîars |
-| **to inquîer** | inquîre(s, inquîred, inquîering | inqüisicion |
-| **to nombir** | nombre(s, nombred, nombering | nombre, nombirs |
-| **to matir** | matre(s, matred, matiring | matre, matirs |
-| **to covir** | covre(s, covred, coviring | covre, covirs |
-| **to hovir** | hovre(s, hovred, hoviring | -- |
-| **to hammer** | hamere(s, hamered, hamering | hamere, hamars |
-| **to stammer** | stamere(s, stamered, stamering | stamere, stamars |
-| **to glimmer** | glimare(s, glimared, glimaring | glimare, glimars |
 
 ---
 
