@@ -28,7 +28,6 @@ Regular Conjugations
 | **to cróche** (croak) | I, you, uie croac; hie croacs | cróched | cróching | cróc, croax |
 | **to stiche** (stick) | I, you, uie stic; hie stics | steuc | stiching | stic, stix |
 
-
 Irregular Conjugations
 
 | Infinitive | Present Tense | Past Tense, Past Participle | Gerund | Derived Nouns |
@@ -258,7 +257,6 @@ Some nouns do not alternate and retain regular ⟨-s⟩:
 | sax | saxes |
 | tax | taxes |
 | uax | uaxes |
-
 
 ---
 
