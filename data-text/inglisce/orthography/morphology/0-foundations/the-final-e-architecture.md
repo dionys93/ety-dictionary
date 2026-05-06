@@ -138,6 +138,19 @@ In monosyllabic words with long vowels, the final ⟨-e⟩ acts as a shield to p
 
 *Irregular past tense
 
+#### The Consonant Quality Shield (Sibilants & Fricatives)
+Just as the final ⟨-e⟩ can protect a long vowel, it also acts as a permanent shield to protect specific consonant qualities—namely, preventing a soft **c** (/s/), soft **g** (/dʒ/), or voiced **v** (/v/) from hardening at the end of a word. Because dropping the ⟨-e⟩ would corrupt the consonant's sound, these roots remain permanently heavy across all conjugations and derived forms. 
+
+* **to corve** → corve, corves
+* **to c̃ainge** → c̃ainge, c̃ainges
+* **to rânge** → rânge, rânges
+* **to dance** → dance, dances
+* **to c̃ance** → c̃ance, c̃ances
+* **to force** → force, forces
+* **to horse** → horse, horses
+* **to massage** → massage, massages
+
+
 ---
 
 ### 3. Default Pluralization (Dropping the ⟨-e⟩)
