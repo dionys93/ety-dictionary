@@ -8,12 +8,10 @@ to desîer desîre(s desîred desîering
 to inquîer inquîre(s inquîred inquîering
 to nomber nombre(s nombred nombering
 
-
 -IR
 matter → to matir matre(s matred matiring
 to covir covre(s covred coviring
 to hovir hovre(s hovred hoviring
-
 
 -RE
 shatter → to siatre siatre(s siatred siatering
@@ -191,9 +189,9 @@ Some endings follow regular derivational pluralization patterns derived from Lat
 
 | Singular Ending | Plural Ending | Examples |
 |-----------------|---------------|---------|
-| -cle / -gle      | -culs / -guls | cîcle, cîculs; circle, circuls; eigle, eiguls |
+| -cle / -gle     | -culs / -guls | cîcle, cîculs; circle, circuls; eigle, eiguls |
 | -âble           | -âbuls | câble, câbuls; tâble, tâbuls |
-| -able            | -abils | recîclable, recîclabils |
+| -able           | -abils | recîclable, recîclabils |
 
 These patterns **regularize inherited Romance forms** while maintaining the root stem consistently.
 
@@ -211,6 +209,40 @@ Many of these stems also serve as the basis for **adjectival forms**, further re
 | tâble | tâbuls | tabular |
 | fâble | fâbuls | fabulus |
 
+Verbs:
+to circle, circles, circled, circling
+to cîcle, cîcles, cîcled, cîcling
+to modle, modles, modled, modling
+to musçle, musçles, musçled, musçling
+to rebèle, rebèles, rebèled, rebèling
+to seovle, seovles, seovled, seovling
+to stâple, stâples, stâpled, stâpling
+to tâble, tâbles, tâbled, tâbling
+
+circle → circuls (Latin circulus)
+câble → câbuls (Latin capulus, capulum)
+cîcle → cîculs (Latin cyclus)
+modle → moduls (Latin modulus)
+musçle → musçuls (Latin musculus)
+tâble → tâbuls (Latin tabula)
+ângle → ânguls (Latin angulus)
+eigle → eiguls (Latin aquilus)
+îcicle → îciculs
+cígle, cíguls
+modle, moduls
+mussle, mussels
+musçle, musçuls
+nóble, nóbils
+reble, rebels (Latin rebellis)
+siovle, siovels
+stâble, stâbuls
+stâple, stâpuls
+tâble, tâbuls
+vessle, vessels
+tonele → tonels (Old French tonel)
+cassle → cassels (Latin castellum)
+mussle → mussels
+
 **Note:** The adjectival form preserves the stem in the same way the plural does, highlighting **reusability of the base across derivational processes**.
 
 ---
@@ -225,30 +257,8 @@ This approach ensures Inglisce maintains a **predictable relationship between no
 
 ---
 
-
-
 Latin-derived -țure → -țurs
 mixțure → mixțurs
 fiețure → fiețurs
 batture → batturs
-rapțure → rapțurs
-
-
-Exception:
-lâc → lâcs 
-
-
-circle → circuls (Latin circulus)
-câble → câbuls (Latin capulus, capulum)
-cîcle → cîculs (Latin cyclus)
-modle → moduls (Latin modulus)
-musçle → musçuls (Latin musculus)
-tâble → tâbuls (Latin tabula)
-ângle → ânguls (Latin angulus)
-eigle → eiguls (Latin aquilus)
-îcicle → îciculs
-
-cassle → cassels (Latin castellum)
-mussle → mussels
-reble → rebels (Latin rebellis)
-tonele → tonels (Old French tonel)
+rapțure → rapțurs 
