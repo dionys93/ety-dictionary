@@ -32,6 +32,18 @@ Infinitive: to saûer
 Conjugations: saûre(s, saûred, saûering
 Derived Nouns and Adjectives: saûre, saûirs (Irregular Plural)
 
+Pure Nouns:
+| **embre** | embars |
+| **gotre** | gotars |
+| **lettre** | lettars |
+| **membre** | membars |
+| **oþre** | oþars |
+| **rivre** | rivars |
+| **somere** | somars |
+| **șugre** | șugars |
+| **uintre** | uintars |
+| bievre | bievars |
+
 ---
 
 -ÎER Verbs and Nouns
@@ -107,13 +119,10 @@ Pure Nouns:
 
 ---
 
-| **to glimare** | glimare(s, glimared, glimaring | **glimare, glimars** |
-| **to hamere** | hamere(s, hamered | hamering | **hamere, hamars** |
-| **to stamere** | stamere(s, stamered | stamering | **stamere, stamars** |
-| **to ansere** | ansere(s, ansered, ansering | ansere, ansars |
+-ARE, -ERE?
+
 | **to siater** | siatre(s, siatred, siatering | siatre, siatars |
 | **to splater** | splatre(s, splatred, splatering | splatre, splatars |
-| **to scimare** | scimare(s, scimared, scimaring | scimare, scimars; scimary |
 | **to slomber** | slombre(s, slombred, slombering | slombre | 
 | **to flicher** | flicre(s, flicred, flichering | flicre, flicars |
 | **to clamber** | clambre(s, clambred, clambering | clambre |
@@ -125,18 +134,11 @@ Pure Nouns:
 | **to uâver** | uâvre(s, uâvred, uâvering | uâvre, uâvars |
 | **to stutter** | stutre(, stutred, stuttering | stutre, stutars |
 | **to glitter** | glitre(s, glitred, glittering | **glitre, glitars** |
-
-| **embre** | embars |
-| **gotre** | gotars |
-| **lettre** | lettars |
-| **membre** | membars |
-| **oþre** | oþars |
-| **rivre** | rivars |
-| **somere** | somars |
-| **șugre** | șugars |
-| **uintre** | uintars |
-| bievre | bievars |
-
+| **to glimare** | glimare(s, glimared, glimaring | **glimare, glimars** |
+| **to hamere** | hamere(s, hamered | hamering | **hamere, hamars** |
+| **to stamere** | stamere(s, stamered | stamering | **stamere, stamars** |
+| **to ansere** | ansere(s, ansered, ansering | ansere, ansars |
+| **to scimare** | scimare(s, scimared, scimaring | scimare, scimars; scimary |
 
 
 #### **-re → -ors**
