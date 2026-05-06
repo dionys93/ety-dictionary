@@ -1,8 +1,10 @@
 # Historical Stem Revivals
 
-In Inglisce, certain heavily compressed Romance and inherited stems maintain a deep structural integrity across pluralization, conjugation, and derivation. To prevent awkward phonetic pile-ups and preserve morphological transparency, these words "unpack" themselves when specific suffixes are added, resurrecting their historical vowels (from Latin, Old French, or Old English).
+In Inglisce, many words are spelled in a tightly compressed way to keep the base language visually efficient. To visually separate how a word behaves when it acts as a verb versus a noun or an adjective, Inglisce requires these compressed words to change shape depending on the suffix being added. 
 
-This approach ensures that Inglisce maintains a highly predictable, visual relationship between base words, plurals, and adjectives, strengthening both orthographic clarity and derivational logic.
+When taking on an expanded form—like a plural noun, an adjective, or a verbal gerund—the word "unpacks." It opens up and reveals a hidden vowel from its history, reaching back to its Latin, Old French, or Old English roots. 
+
+This system creates a highly predictable visual link across the language. By unpacking the exact same historical vowel every time, Inglisce guarantees that a word's various plural and descriptive forms all clearly look like they belong to the same family, while keeping its core verb mechanics visually distinct.
 
 ---
 
@@ -84,13 +86,15 @@ Words ending in **-re** frequently function as heavily compressed stems. In thei
 | **coîre** | coîars |
 | **scîre** | scîars |
 
-### Cluster Reduction (Consonant Shedding)
-When certain heavy roots compress into their finite **-re** forms, they act with an orthographic "safety valve," shedding specific structural consonants to prevent illegal or visually awkward phonetic clusters. When these roots unpack, the lost letters return.
+### Cluster Reduction (Vowel Weight & Consonant Shedding)
+In Inglisce, heavy structural consonants (like **tt** or **ch**) exist primarily to "close" a syllable and keep the preceding root vowel short. When a word unpacks to take a vowel-heavy suffix (like *glittering* or *flichering*), these letters are absolutely necessary to protect the vowel from lengthening.
+
+However, when these heavy roots compress into their finite **-re** forms, they automatically create a heavy consonant cluster (**-tr-**, **-cr-**, **-ngr-**). Because a cluster naturally closes a syllable all by itself, the original "shield" letters become structurally redundant. The orthography acts with a built-in safety valve, shedding these extra consonants to prevent illegal or awkward visual pile-ups. 
 
 * **Fricative & Velar Shedding:** To avoid ugly phonetic collisions like *chr* or *ngr*, the orthography drops the modifying letter.
-  * **to flicher** → flicre(s *(Regains 'h' when unpacked: flichering)*
+  * **to flicher** → flicre(s *(Regains 'h' to protect the short 'i' when unpacked: flichering)*
   * **to linguer** → lingre(s *(Regains 'u' when unpacked: linguering)*
-* **Double Consonant Reduction:** Geminate (double) consonants simplify to a single consonant when compressed before the **-re**.
+* **Double Consonant Reduction:** Geminate (double) consonants simplify to a single consonant when compressed, as the newly formed **-re** cluster already does the job of keeping the vowel short.
   * **to stutter** → stutre(s *(Regains 'tt' when unpacked: stuttering)*
   * **to glitter** → glitre(s *(Regains 'tt' when unpacked: glittering)*
 
