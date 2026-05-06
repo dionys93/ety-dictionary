@@ -1,10 +1,8 @@
 # Historical Stem Revivals
 
-In Inglisce, many words are spelled in a tightly compressed way to keep the base language visually efficient. To visually separate how a word behaves when it acts as a verb versus a noun or an adjective, Inglisce requires these compressed words to change shape depending on the suffix being added. 
+In Inglisce, many words are tightly compressed for visual efficiency. To distinguish how a word functions as a verb versus a noun or adjective, the language requires these stems to "unpack" when specific suffixes are added. 
 
-When taking on an expanded form—like a plural noun, an adjective, or a verbal gerund—the word "unpacks." It opens up and reveals a hidden vowel from its history, reaching back to its Latin, Old French, or Old English roots. 
-
-This system creates a highly predictable visual link across the language. By unpacking the exact same historical vowel every time, Inglisce guarantees that a word's various plural and descriptive forms all clearly look like they belong to the same family, while keeping its core verb mechanics visually distinct.
+When taking on an expanded form—such as a plural, an adjective, or a gerund—the compressed word reveals a hidden historical vowel from its Latin, Old French, or Old English roots. This creates a predictable visual link: descriptive and plural forms clearly share a family identity, while core verb mechanics remain visually distinct.
 
 ---
 
@@ -86,12 +84,12 @@ Words ending in **-re** frequently function as heavily compressed stems. In thei
 | **coîre** | coîars |
 | **scîre** | scîars |
 
-### Cluster Reduction (Vowel Weight & Consonant Shedding)
-In Inglisce, heavy structural consonants exist primarily to "close" a syllable and keep the preceding root vowel short. When a word unpacks to take a vowel-heavy suffix, these letters are absolutely necessary to protect the vowel from lengthening.
+### Cluster Reduction (Consonant Shedding)
+In Inglisce, specific modifying letters (like the **h** in *ch* or the **u** in *gu*) exist primarily to protect the phonetic quality of the preceding root vowel. When a word unpacks to take a vowel-heavy suffix, these letters are absolutely necessary to lock the pronunciation in place.
 
-However, when these heavy roots compress into their finite **-re** forms, they automatically create a heavy consonant cluster (**-tr-**, **-cr-**, **-ngr-**). Because a cluster naturally closes a syllable all by itself, the original "shield" letters become structurally redundant. The orthography acts with a built-in safety valve, shedding these extra consonants to prevent illegal or awkward visual pile-ups. 
+However, when these roots compress into their finite **-re** forms, they automatically create a dense, syllable-closing consonant cluster (like **-cr-** or **-ngr-**). Because this new cluster naturally handles the phonetic weight all by itself, the original modifying letters become structurally redundant. The orthography acts with a built-in safety valve, shedding these extra consonants to prevent illegal or visually awkward phonetic pile-ups. 
 
-* **Fricative & Velar Shedding:** To avoid ugly phonetic collisions like *chr* or *ngr*, the orthography drops the modifying letter.
+* **Fricative & Velar Shedding:** To avoid ugly collisions like *chr* or *ngr*, the orthography cleanly drops the modifying letter.
   * **to flicher** → flicre(s *(Regains 'h' to protect the short 'i' when unpacked: flichering)*
   * **to linguer** → lingre(s *(Regains 'u' when unpacked: linguering)*
 
@@ -111,15 +109,12 @@ However, when these heavy roots compress into their finite **-re** forms, they a
 | **to âncore** | âncore(s, âncored | âncoring | âncore, âncors |
 | **to húmore** | húmore(s, húmored | húmoring | húmor, húmors |
 
-
 #### Pure Nouns
 | Singular Noun | Plural |
 | :--- | :--- |
 | **manere** | manars |
 | **manore** | manors |
 | **somere** | somars |
-
----
 
 #### **-re → -ors**
 This specific paradigm consists largely of kinship terms, unpacking to preserve the older stem vowels of their ancestral forms (e.g., Latin *ancestor*, Old English *modor*).
@@ -143,8 +138,10 @@ Certain simple bases remain static. Because they lack the deep etymological hist
 | **daire** | dairs |
 | **doure** | dours |
 | **feire** | feirs |
+| **flaire** | flairs |
 | **floure** | flours |
 | **fâre** | fârs |
+| **glaire** | glairs |
 | **haire** | hairs |
 | **hâre** | hârs |
 | **oare** | oars |
@@ -155,14 +152,16 @@ Certain simple bases remain static. Because they lack the deep etymological hist
 | **steire** | steirs |
 | **store** | stors |
 
-### The ⟨-le⟩ Divergence Matrix (Unpacking vs. Compression)
+---
+
+## 2. The ⟨-le⟩ Divergence Matrix (Unpacking vs. Compression)
 
 Words ending in the structural **-le** demonstrate a strict behavioral split, acting differently depending on their immediate grammatical job:
 
 1. **Active Verbs (The Compression Rule):** Verbs prioritize efficiency. Because active verbs do not need to unpack to catch standard verb suffixes, they stay permanently compressed across all conjugations, dropping the **-e** normally to attach their gerunds. 
 2. **Nouns & Adjectives (The Unpacking Rule):** Derivations prioritize history. When pluralizing or deriving into adjectives, these roots unpack their liquid consonant (typically into *-uls* or *-ils*) to regularize inherited Romance forms and visibly display their historical Latin roots.
 
-#### Dual-Function ⟨-le⟩ Roots (Verbs & Nouns)
+### Dual-Function ⟨-le⟩ Roots (Verbs & Nouns)
 
 | Root | Infinitive | Conjugations | Noun Forms | Derived Adjectives |
 | :--- | :--- | :--- | :--- | :--- |
@@ -177,7 +176,7 @@ Words ending in the structural **-le** demonstrate a strict behavioral split, ac
 | Latin *rebellare, rebellis* | to **rebèle** | rebèle(s, rebèled, rebèling | reble, rebels | rebellieus |
 | Old English *sceofol* | to **siovle** | siovle(s, siovled, siovling | siovle, siovels | -- |
 
-#### Static ⟨-le⟩ Bases (Nouns & Adjectives Only)
+### Static ⟨-le⟩ Bases (Nouns & Adjectives Only)
 
 | Root | Nouns (Sing. and Pl.) |
 | :--- | :--- |
@@ -202,7 +201,7 @@ While the vast majority of **-le** words unpack with a *u* (e.g., `-culs`, `-bul
 
 ---
 
-## 2. Other Romance Derivations 
+## 3. Other Romance Derivations 
 
 ### Latinate ⟨-țure⟩ Plurals
 Unlike the fluid, compressible liquid stems detailed above, learned imports ending in the highly specific **-țure** phoneme maintain rigid structural integrity. They pluralize simply by dropping the ⟨-e⟩ and attaching an **-s**.
