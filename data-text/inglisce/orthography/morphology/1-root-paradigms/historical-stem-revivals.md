@@ -16,7 +16,7 @@ A specific class of inherited and learned nouns ending in **-re** retain the fin
 | Category | Singular | Plural | Historical Note / Origin |
 | :--- | :--- | :--- | :--- |
 | **-re → -ors** | ancestre, broþre, fáþre, maþre, sistre | ancestors, broþors, fáþors, maþors, sistors | Kinship terms. Preserves older stem vowels (e.g., Latin *ancestor*, OE *modor*). |
-| **-ere/-re → -ars** | ansere, embre, gotre, hamere, lettre, mastre, membre, mourdre, oþre, þondre, rivre, siatre, somere, stutre, șugre, uátre, uintre | ansars, embars, gotars, hamars, lettars, mastars, membars, mourdars, oþars, þondars, rivars, siatars, somars, stutars, șugars, uátars, uintars | The default plural for many -re nouns. Strong historical influence (e.g., *rivre* from Latin *riparius*). |
+| **-ere/-re → -ars** | ansere, embre, glitre, gotre, hamere, lettre, mastre, membre, mourdre, oþre, þondre, rivre, siatre, somere, stutre, șugre, uátre, uintre | ansars, embars, glitars, gotars, hamars, lettars, mastars, membars, mourdars, oþars, þondars, rivars, siatars, somars, stutars, șugars, uátars, uintars | The default plural for many -re nouns. Strong historical influence (e.g., *rivre* from Latin *riparius*). |
 | **-îre → -îars**| desîre, fŷre, hîre, coîre, scîre | desîars, fŷars, hîars, coîars, scîars | Reflects former stem patterns (Latin *desiderare*, OE *fyrian*). |
 | **-re → -irs** | butre, covre, flôure, matre, martre, pâpre, pôure, saûre, tôure, zefre, nombre, cúcombre | butirs, covirs, flôuirs, matirs, martirs, pâpirs, pôuirs, saûirs, tôuirs, zefirs, nombirs, cúcombirs | Rare and irregular. Influenced by French/Romance sources (French *pouvoir*, *covrir*). |
 
@@ -104,6 +104,7 @@ When functioning as active finite verbs, these liquid-terminal roots stay compre
 | **to hovir** | hovre(s, hovred, hoviring | -- |
 | **to hammer** | hamere(s, hamered, hamering | hamere, hamars |
 | **to stammer** | stamere(s, stamered, stamering | stamere, stamars |
+| **to glimmer** | glimare(s, glimared, glimaring | glimare, glimars |
 
 ---
 
