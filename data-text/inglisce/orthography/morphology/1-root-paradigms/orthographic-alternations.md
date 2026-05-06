@@ -134,33 +134,6 @@ to force → þe force
 (range) to rânge → þe rânge
 to massage → þa massage
 
----
-
-Verbs:
-to circle, circles, circled, circling
-to cîcle, cîcles, cîcled, cîcling
-to modle, modles, modled, modling
-to musçle, musçles, musçled, musçling
-to rebèle, rebèles, rebèled, rebèling
-to seovle, seovles, seovled, seovling
-to stâple, stâples, stâpled, stâpling
-to tâble, tâbles, tâbled, tâbling
-
-Nouns:
-circle, circuls
-cígle, cíguls
-cîcle, cîculs
-eigle, eiguls
-modle, moduls
-mussle, mussels
-musçle, musçuls
-nóble, nóbils
-reble, rebels
-seovle, seovels
-stâble, stâbuls
-stâple, stâpuls
-tâble, tâbuls
-vessle, vessels
 
 ---
 
