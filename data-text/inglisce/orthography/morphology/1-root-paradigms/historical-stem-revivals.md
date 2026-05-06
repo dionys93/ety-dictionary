@@ -87,16 +87,13 @@ Words ending in **-re** frequently function as heavily compressed stems. In thei
 | **scîre** | scîars |
 
 ### Cluster Reduction (Vowel Weight & Consonant Shedding)
-In Inglisce, heavy structural consonants (like **tt** or **ch**) exist primarily to "close" a syllable and keep the preceding root vowel short. When a word unpacks to take a vowel-heavy suffix (like *glittering* or *flichering*), these letters are absolutely necessary to protect the vowel from lengthening.
+In Inglisce, heavy structural consonants exist primarily to "close" a syllable and keep the preceding root vowel short. When a word unpacks to take a vowel-heavy suffix, these letters are absolutely necessary to protect the vowel from lengthening.
 
 However, when these heavy roots compress into their finite **-re** forms, they automatically create a heavy consonant cluster (**-tr-**, **-cr-**, **-ngr-**). Because a cluster naturally closes a syllable all by itself, the original "shield" letters become structurally redundant. The orthography acts with a built-in safety valve, shedding these extra consonants to prevent illegal or awkward visual pile-ups. 
 
 * **Fricative & Velar Shedding:** To avoid ugly phonetic collisions like *chr* or *ngr*, the orthography drops the modifying letter.
   * **to flicher** → flicre(s *(Regains 'h' to protect the short 'i' when unpacked: flichering)*
   * **to linguer** → lingre(s *(Regains 'u' when unpacked: linguering)*
-* **Double Consonant Reduction:** Geminate (double) consonants simplify to a single consonant when compressed, as the newly formed **-re** cluster already does the job of keeping the vowel short.
-  * **to stutter** → stutre(s *(Regains 'tt' when unpacked: stuttering)*
-  * **to glitter** → glitre(s *(Regains 'tt' when unpacked: glittering)*
 
 ### Static Heavy Bases (Non-Compressible)
 *Unlike the roots above, these words—often native Germanic frequentatives or distinct imports—utilize permanently stable **-are**, **-ere**, or **-ore** endings. Because their bases are already fully syllabic, they lack a compressible liquid stem and remain unpacked across all forms.*
@@ -105,12 +102,15 @@ However, when these heavy roots compress into their finite **-re** forms, they a
 | Infinitive Verb | Conjugations | Gerund | Derived Nouns & Adjectives |
 | :--- | :--- | :--- | :--- |
 | **to glimare** | glimare(s, glimared | glimaring | glimare, glimars |
+| **to glitare** | glitare(s, glitared | glitaring | glitare, glitars |
 | **to scimare** | scimare(s, scimared | scimaring | scimare, scimars; scimary |
 | **to hamere** | hamere(s, hamered | hamering | hamere, hamars |
 | **to stamere** | stamere(s, stamered | stamering | stamere, stamars |
+| **to stutare** | stutare(s, stutared | stutaring | stutare, stutars |
 | **to ansere** | ansere(s, ansered | ansering | ansere, ansars |
 | **to âncore** | âncore(s, âncored | âncoring | âncore, âncors |
 | **to húmore** | húmore(s, húmored | húmoring | húmor, húmors |
+
 
 #### Pure Nouns
 | Singular Noun | Plural |
