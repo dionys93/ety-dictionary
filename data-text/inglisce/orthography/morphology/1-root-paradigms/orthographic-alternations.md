@@ -111,22 +111,7 @@ These verbs retain their full cluster for the infinitive, 1st/2nd person present
 
 ---
 
-## 3. Stable Sibilant & Fricative Bases
-
-Certain nouns ending in fricatives or affricates retain their final **⟨-e⟩** permanently as a stable base to protect the voicing or quality of the preceding consonant.
-
-* **to corve** → þe corve -s
-* **to c̃ainge** → þe c̃ainge -s
-* **to rânge** → þe rânge -s
-* **to dance** → þe dance -s
-* **to c̃ance** → þe c̃ance -s
-* **to horse** → þe horse -s
-* **to force** → þe force -s
-* **to massage** → þa massage -s
-
----
-
-## 4. Diphthong Unpacking (The ⟨-oile⟩ Shift)
+## 3. Diphthong Unpacking (The ⟨-oile⟩ Shift)
 
 Verbs ending in **-oile** conjugate regularly (shedding the `-e` for lean present tense forms if desired, or adding standard suffixation). However, their noun forms undergo a distinct orthographic unpacking in the plural.
 
@@ -145,7 +130,7 @@ To prevent an awkward pileup of vowels, the spelling swaps the placement of the 
 
 ---
 
-## 5. Vowel Alternation with ⟨-x⟩ Plurals
+## 4. Vowel Alternation with ⟨-x⟩ Plurals
 
 A small number of Inglisce nouns form plurals with a **visible change to the stem vowel**. These alternations are lexical, historical, and non-productive. They are preserved only where they are already established and contrastive. 
 
