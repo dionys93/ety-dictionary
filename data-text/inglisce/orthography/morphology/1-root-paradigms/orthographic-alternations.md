@@ -16,7 +16,7 @@ These verbs strip down to a lean **-c** base for 1st/2nd person and take **-cs**
 | **to bâche** | I, you, uie bâc; hie bâcs | bâched | bâching | bâcherie, bâcor |
 | **to brâche** | I, you, uie brâc; hie brâcs | brâched | brâching | brâc, braix |
 | **to câche** | it câcs | câched | câching | câc, caix |
-| **to faiche** | I, you, uie faic; hie faics | faiched | faiching | faic, faix; faicor |
+| **to faiche** | I, you, uie faic; hie faics | faiched | faiching | faic, faix |
 | **to cuâche** | I, you, uie cuâc; hie cuâcs | cuâched | cuâching | cuâc, cuaix; cuâcor |
 | **to râche** | I, you, uie râc; hie râcs | râched | râching | râc, raix |
 | **to rache** | I, you, uie rac; hie racs | rached | raching | rac, rax |
