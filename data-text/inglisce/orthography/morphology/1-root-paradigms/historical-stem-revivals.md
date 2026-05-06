@@ -13,12 +13,70 @@ Words ending in **-re** and **-le** often act as heavily compressed stems. While
 ### The ⟨-re⟩ Plural Matrix
 A specific class of inherited and learned nouns ending in **-re** retain the final **-e** for structural purposes (e.g., to form contractions like *maþre's*). Their plurals replace **-re** with a vowel-bearing suffix, reflecting their historical stem forms. This pattern is lexically restricted and non-productive.
 
-| Category | Singular | Plural | Historical Note / Origin |
-| :--- | :--- | :--- | :--- |
-| **-re → -ors** | ancestre, broþre, fáþre, maþre, sistre | ancestors, broþors, fáþors, maþors, sistors | Kinship terms. Preserves older stem vowels (e.g., Latin *ancestor*, OE *modor*). |
-| **-ere/-re → -ars** | ansere, embre, glitre, gotre, hamere, lettre, mastre, membre, mourdre, oþre, þondre, rivre, siatre, somere, stutre, șugre, uátre, uintre | ansars, embars, glitars, gotars, hamars, lettars, mastars, membars, mourdars, oþars, þondars, rivars, siatars, somars, stutars, șugars, uátars, uintars | The default plural for many -re nouns. Strong historical influence (e.g., *rivre* from Latin *riparius*). |
-| **-îre → -îars**| desîre, fŷre, hîre, coîre, scîre | desîars, fŷars, hîars, coîars, scîars | Reflects former stem patterns (Latin *desiderare*, OE *fyrian*). |
-| **-re → -irs** | butre, covre, flôure, matre, martre, pâpre, pôure, saûre, tôure, zefre, nombre, cúcombre | butirs, covirs, flôuirs, matirs, martirs, pâpirs, pôuirs, saûirs, tôuirs, zefirs, nombirs, cúcombirs | Rare and irregular. Influenced by French/Romance sources (French *pouvoir*, *covrir*). |
+### **-re → -ors**
+This group largely consists of kinship terms, preserving older stem vowels (e.g., Latin *ancestor*, OE *modor*).
+
+| Singular | Plural |
+| :--- | :--- |
+| **ancestre** | ancestors |
+| **broþre** | broþors |
+| **fáþre** | fáþors |
+| **maþre** | maþors |
+| **sistre** | sistors |
+
+### **-ere/-re → -ars**
+This serves as the default plural for many -re nouns, displaying strong historical influence (e.g., *rivre* from Latin *riparius*).
+
+| Singular | Plural |
+| :--- | :--- |
+| **ansere** | ansars |
+| **embre** | embars |
+| **glitre** | glitars |
+| **gotre** | gotars |
+| **hamere** | hamars |
+| **lettre** | lettars |
+| **mastre** | mastars |
+| **membre** | membars |
+| **mourdre** | mourdars |
+| **oþre** | oþars |
+| **rivre** | rivars |
+| **siatre** | siatars |
+| **somere** | somars |
+| **stutre** | stutars |
+| **șugre** | șugars |
+| **uátre** | uátars |
+| **uintre** | uintars |
+| **þondre** | þondars |
+
+### **-îre → -îars**
+Reflects former stem patterns for heavily stressed long-i words (Latin *desiderare*, OE *fyrian*).
+
+| Singular | Plural |
+| :--- | :--- |
+| **coîre** | coîars |
+| **desîre** | desîars |
+| **fŷre** | fŷars |
+| **hîre** | hîars |
+| **scîre** | scîars |
+
+### **-re → -irs**
+A rare and irregular unpacking, primarily influenced by specific French and Romance sources (French *pouvoir*, *covrir*).
+
+| Singular | Plural |
+| :--- | :--- |
+| **butre** | butirs |
+| **covre** | covirs |
+| **cúcombre** | cúcombirs |
+| **flôure** | flôuirs |
+| **martre** | martirs |
+| **matre** | matirs |
+| **nombre** | nombirs |
+| **pâpre** | pâpirs |
+| **pôure** | pôuirs |
+| **saûre** | saûirs |
+| **tôure** | tôuirs |
+| **zefre** | zefirs |
+
 
 ### Stable ⟨-re⟩ Bases
 Certain simple bases do not unpack. Because they lack a compressible Latin/Romance liquid stem, they drop the **-e** normally to form a standard **-rs** plural.
@@ -54,15 +112,16 @@ Words ending in **-le** demonstrate a strict behavioral split depending on their
 
 | Root | Infinitive | Conjugations | Nouns (Sing. and Pl.) | Derived Adjectives |
 | :--- | :--- | :--- | :--- | :--- |
-| Latin *circulus* | to **circle** | circles, circled, circling | circle, circuls | circular |
-| Latin *cyclus* | to **cîcle** | cîcles, cîcled, cîcling | cîcle, cîculs | ciclical |
-| Latin *modulus* | to **modle** | modles, modled, modling | modle, moduls | mod̦ular |
-| Latin *musculus* | to **musçle** | musçles, musçled, musçling | musçle, musçuls | muscular |
-| Latin *tabula* | to **tâble** | tâbles, tâbled, tâbling | tâble, tâbuls | tabular |
-| Latin *stabulum* | to **stâble** | stâbles, stâbled, stâbling | stâble, stâbuls | stâbil |
-| Old English *stapol, stapel* | to **stâple** | stâples, stâpled, stâpling | stâple, stâpuls | -- |
-| Latin *rebellare, rebellis* | to **rebèle** | rebèles, rebèled, rebèling | reble, rebels | rebellieus |
-| Old English *sceofol* | to **siovle** | siovles, siovled, siovling | siovle, siovels | -- |
+| Latin *circulus* | to **circle** | circle(s, circled, circling | circle, circuls | circular |
+| Latin *cyclus* | to **cîcle** | cîcle(s, cîcled, cîcling | cîcle, cîculs | ciclical |
+| Old English *cradol* | to **crâdle** | crâdle(s, crâdled, crâdling | crâdle, crâduls | -- |
+| Latin *modulus* | to **modle** | modle(s, modled, modling | modle, moduls | mod̦ular |
+| Latin *musculus* | to **musçle** | musçle(s, musçled, musçling | musçle, musçuls | muscular |
+| Latin *tabula* | to **tâble** | tâble(s, tâbled, tâbling | tâble, tâbuls | tabular |
+| Latin *stabulum* | to **stâble** | stâble(s, stâbled, stâbling | stâble, stâbuls | stâbil |
+| Old English *stapol, stapel* | to **stâple** | stâple(s, stâpled, stâpling | stâple, stâpuls | -- |
+| Latin *rebellare, rebellis* | to **rebèle** | rebèle(s, rebèled, rebèling | reble, rebels | rebellieus |
+| Old English *sceofol* | to **siovle** | siovle(s, siovled, siovling | siovle, siovels | -- |
 
 #### Static ⟨-le⟩ Bases (Nouns & Adjectives Only)
 
