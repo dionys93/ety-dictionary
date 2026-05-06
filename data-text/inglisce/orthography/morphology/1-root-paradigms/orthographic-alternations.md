@@ -1,344 +1,179 @@
-Regular Conjugations
+# Orthographic Alternations & Reductions
 
-| Infinitive | Present Tense | Past Tense | Gerund | Derived Nouns, etc |
+When Inglisce roots interact with suffixes—particularly the default **-s** marker for 3rd-person verbs and plural nouns—certain terminal consonants and vowel clusters undergo predictable mechanical shifts. These alternations exist to compress spelling, prevent awkward consonant pile-ups, and maintain visual consistency.
+
+---
+
+## 1. Velar Terminals (⟨-che⟩, ⟨-que⟩, ⟨-gue⟩)
+
+Verbs ending in velar and palatal-velar structures shed their terminal ⟨-e⟩ (and sometimes the preceding ⟨-h⟩) to form a lean base in the present tense. 
+
+### Regular ⟨-che⟩ Conjugations
+These verbs strip down to a lean **-c** base for 1st/2nd person and take **-cs** for the 3rd person.
+
+| Infinitive | Present Tense | Past Tense | Gerund | Derived Nouns / Plurals |
 | :--- | :--- | :--- | :--- | :--- |
-| **to bâche** (bake) | I, you, uie bâc; hie bâcs | bâched | bâching | bâcherie, bâcor  |
-| **to brâche** (brake) | I, you, uie brâc; hie brâcs | brâched | brâching | brâc, braix |
-| **to câche** (cake) | it câcs | câched | câching | câc, caix |
-| **to faiche** (fake) | I, you, uie faic; hie faics | faiched | faiching | faic, faix; faicor |
-| **to cuâche** (quake) | I, you, uie cuâc; hie cuâcs | cuâched | cuâching | cuâc, cuaix; cuâcor |
-| **to râche** (rake) | I, you, uie râc; hie râcs | râched | râching | râc, raix |
-| **to rache** (rack) | I, you, uie rac; hie racs | rached | raching | rac, rax |
-| **to stâche** (stake) | I, you, uie stâc; hie stâcs | stâched | stâching | stâc, staix |
-| **to stache** (stack) | I, you, uie stac; hie stacs | stached | staching | stac, stax |
-| **to lâque** (lake) | I, you, uie lâc; hie lâcs | lâqued | lâquing | lâque, laix |
-| **to stoque** (stoke) | I, you, uie stoac; hie stoacs | stoqued | stoquing | stoque, stoax |
-| **to stoche** (stock) | I, you, uie stoc; hie stocs | stoched | stoching | stoc, stox |
-| **to toque** (toke) | I, you, uie toac; hie toacs | toqued | toquing | toque, toax |
-| **to joque** (joke) | I, you, uie joac; hie joacs | joqued | joquing | joque, joax |
-| **to barche** (bark) | I, you, uie barc; hie barcs | barched | barching | barc, barx |
-| **to narche** (nark) | I, you, uie narc; hie narcs | narched | narching | narc, narx |
-| **to siarche** (shark) | I, you, uie siarc; hie siarcs | siarched | siarching| siarc, siarx |
-| **to smirche** (smirk) | I, you, uie smirc; hie smircs | smirched | smirching| smirc, smêx |
-| **to bôche** (book) | I, you, uie bôc; hie bôcs | bôched | bôching | bôc, beox |
-| **to côche** (cook) | I, you, uie côc; hie côcs | côched | côching | côc, queox |
-| **to lôche** (look) | I, you, uie lôc; hie lôcs | lôched | lôching | lôc, leox |
-| **to hôche** (hook) | I, you, uie hôc; hie hôcs | hôched | hôching | hôc, heox |
-| **to crânche** (crank) | I, you, uie crânc; hie crâncs | crânched | crânching | crânc, crâncs; crânchy |
-| **to cróche** (croak) | I, you, uie croac; hie croacs | cróched | cróching | cróc, croax |
-| **to stiche** (stick) | I, you, uie stic; hie stics | steuc | stiching | stic, stix |
+| **to bâche** | I, you, uie bâc; hie bâcs | bâched | bâching | bâcherie, bâcor |
+| **to brâche** | I, you, uie brâc; hie brâcs | brâched | brâching | brâc, braix |
+| **to câche** | it câcs | câched | câching | câc, caix |
+| **to faiche** | I, you, uie faic; hie faics | faiched | faiching | faic, faix; faicor |
+| **to cuâche** | I, you, uie cuâc; hie cuâcs | cuâched | cuâching | cuâc, cuaix; cuâcor |
+| **to râche** | I, you, uie râc; hie râcs | râched | râching | râc, raix |
+| **to rache** | I, you, uie rac; hie racs | rached | raching | rac, rax |
+| **to stâche** | I, you, uie stâc; hie stâcs | stâched | stâching | stâc, staix |
+| **to stache** | I, you, uie stac; hie stacs | stached | staching | stac, stax |
+| **to barche** | I, you, uie barc; hie barcs | barched | barching | barc, barx |
+| **to narche** | I, you, uie narc; hie narcs | narched | narching | narc, narx |
+| **to siarche** | I, you, uie siarc; hie siarcs | siarched | siarching| siarc, siarx |
+| **to smirche** | I, you, uie smirc; hie smircs | smirched | smirching| smirc, smêx |
+| **to bôche** | I, you, uie bôc; hie bôcs | bôched | bôching | bôc, beox |
+| **to côche** | I, you, uie côc; hie côcs | côched | côching | côc, queox |
+| **to lôche** | I, you, uie lôc; hie lôcs | lôched | lôching | lôc, leox |
+| **to hôche** | I, you, uie hôc; hie hôcs | hôched | hôching | hôc, heox |
+| **to crânche** | I, you, uie crânc; hie crâncs| crânched | crânching | crânc, crâncs; crânchy |
+| **to cróche** | I, you, uie croac; hie croacs| cróched | cróching | cróc, croax |
 
-Irregular Conjugations
 
-| Infinitive | Present Tense | Past Tense, Past Participle | Gerund | Derived Nouns |
+### Irregular ⟨-che⟩ Conjugations
+These verbs feature an internal vowel shift in the past tense/participle, but follow the standard present-tense velar reduction.
+
+| Infinitive | Present Tense | Past Tense & Participle | Gerund | Derived Nouns |
 | :--- | :--- | :--- | :--- | :--- |
-| **to breiche** (break) | I, you, uie breic; hie breics | **bróc, brócan** | breiching | breic, breix; breicor |
-| **to mâche** (make) | I, you, uie mâc; hie mâcs | **mâde** | mâching | mâc, maix; mâcor |
-| **to spieche** (speak) | I, you, uie spiec; hie spiecs | **spóc, spócan** | spieching | spiecor; spiec̃e |
-| **to uâche** (wake) | I, you, uie uâc; hie uâcs | **uóc, uócan** | uâching | uâc, uaix; uac̃e |
-| **to forsâche** (forsake)| I, you, uie forsâc; hie forsâcs | **forsôc, forsâcan** | forsâching | sâc, saix |
+| **to breiche** | I, you, uie breic; hie breics | **bróc, brócan** | breiching | breic, breix; breicor |
+| **to forsâche**| I, you, uie forsâc; hie forsâcs | **forsôc, forsâcan** | forsâching | sâc, saix |
+| **to mâche** | I, you, uie mâc; hie mâcs | **mâde** | mâching | mâc, maix; mâcor |
+| **to spieche** | I, you, uie spiec; hie spiecs | **spóc, spócan** | spieching | spiecor; spiec̃e |
+| **to stiche** | I, you, uie stic; hie stics | **steuc** | stiching | stic, stix |
+| **to uâche** | I, you, uie uâc; hie uâcs | **uóc, uócan** | uâching | uâc, uaix; uac̃e |
 
-Regular Ending in -que
+### Regular ⟨-que⟩ Terminals
 
 | Infinitive | Present Tense | Past Tense | Gerund | Derived Nouns |
 | :--- | :--- | :--- | :--- | :--- |
-| **to bânque** (bank) | I, you, uie bânc; hie bâncs | bânqued | bânquing | bânque, bâncs |
-| **to rânque** (rank) | I, you, uie rânc; hie râncs | rânqued | rânquing | rânque, râncs |
-| **to þânque** (thank) | I, you, uie þânc; hie þâncs | þânqued | þânquing | þâncs |
-| **to cuaque** (quack) | I, you, uie cuac; hie cuacs | cuached | cuaching | cuac, cuax |
-| **to attaque** (attack) | I, you, uie attac; hie attacs | attaqued | attaquing | attac, attacs |
+| **to attaque** | I, you, uie attac; hie attacs | attaqued | attaquing | attac, attacs |
+| **to bânque** | I, you, uie bânc; hie bâncs | bânqued | bânquing | bânque, bâncs |
+| **to cuaque** | I, you, uie cuac; hie cuacs | cuached | cuaching | cuac, cuax |
+| **to joque** | I, you, uie joac; hie joacs | joqued | joquing | joque, joax |
+| **to lâque** | I, you, uie lâc; hie lâcs | lâqued | lâquing | lâque, laix |
+| **to rânque** | I, you, uie rânc; hie râncs | rânqued | rânquing | rânque, râncs |
+| **to stoque** | I, you, uie stoac; hie stoacs | stoqued | stoquing | stoque, stoax |
+| **to toque** | I, you, uie toac; hie toacs | toqued | toquing | toque, toax |
+| **to þânque** | I, you, uie þânc; hie þâncs | þânqued | þânquing | þâncs |
 
-Regular -gue/-ghe and -ngue Verbs
+### Regular ⟨-gue⟩ / ⟨-ghe⟩ / ⟨-ngue⟩ Terminals
 
 | Infinitive | Present Tense | Past Tense | Gerund | Derived Nouns |
 | :--- | :--- | :--- | :--- | :--- |
-| **to bague** (bag) | I, you, uie bag; hie bags | bagued | baguing | bague, bags; bagor |
-| **to drague** (drag) | I, you, uie drag; hie drags | dragued | draguing | drague, drags |
-| **to flague** (flag) | I, you, uie flag; hie flags | flagued | flaguing | flague, flags |
-| **to plâgue** (plague) | I, you, uie plâg; hie plâgs | plâgued | plâguing | plâgue, plâgs |
-| **to pighe aut** (pig) | I, you, uie pig; hie pigs aut | pighed aut | pighing aut | pighe, pigs |
-| **to righe** (rig) | I, you, uie rig; hie rigs | righed | righing | righe, rigs |
-| **to dingue** (ding) | I, you, uie ding; hie dings | dingued | dinguing | dingue, dings |
-| **to uingue** (wing) | I, you, uie uing; hie uings | uingued | uinguing | uingue, uings |
-| **to cyngue** (king) | I, you, uie cyng; hie cyngs | cyngued | cynguing | cyngue, cyngs |
-| **to cágue** (cog) | I, you, uie cág; hie cágs | cágued | cáguing | cágue, cágs |
-| **to dogue** (dog) | I, you, uie dog; hie dogs | dogued | doguing | dogue, dogs |
-| **to clogue** (clog) | I, you, uie clog; hie clogs | clogued | cloguing | clogue, clogs |
+| **to bague** | I, you, uie bag; hie bags | bagued | baguing | bague, bags; bagor |
+| **to cágue** | I, you, uie cág; hie cágs | cágued | cáguing | cágue, cágs |
+| **to clogue** | I, you, uie clog; hie clogs | clogued | cloguing | clogue, clogs |
+| **to cyngue** | I, you, uie cyng; hie cyngs | cyngued | cynguing | cyngue, cyngs |
+| **to dingue** | I, you, uie ding; hie dings | dingued | dinguing | dingue, dings |
+| **to dogue** | I, you, uie dog; hie dogs | dogued | doguing | dogue, dogs |
+| **to drague** | I, you, uie drag; hie drags | dragued | draguing | drague, drags |
+| **to flague** | I, you, uie flag; hie flags | flagued | flaguing | flague, flags |
+| **to pighe** | I, you, uie pig; hie pigs | pighed | pighing | pighe, pigs |
+| **to plâgue** | I, you, uie plâg; hie plâgs | plâgued | plâguing | plâgue, plâgs |
+| **to righe** | I, you, uie rig; hie rigs | righed | righing | righe, rigs |
+| **to uingue** | I, you, uie uing; hie uings | uingued | uinguing | uingue, uings |
 
+### Irregular ⟨-gue⟩ / ⟨-ghe⟩ / ⟨-ngue⟩ Terminals
 
-Irregular Conjugations
-
-| Infinitive | Present Tense | Past Tense, Past Participle | Gerund | Derived Nouns |
+| Infinitive | Present Tense | Past Tense & Participle | Gerund | Derived Nouns |
 | :--- | :--- | :--- | :--- | :--- |
-| **to dighe** (dig) | I, you, uie dig; hie digs | dugh | dighing | dighe, digs |
-| **to singue** (sing) | I, you, uie sing; hie sings | sâng, song | singuing | songue, sòngs |
+| **to dighe** | I, you, uie dig; hie digs | **dugh** | dighing | dighe, digs |
+| **to singue** | I, you, uie sing; hie sings | **sâng, song** | singuing | songue, sòngs |
+| **to ringue** | I, you, uie ring; hie rings | **râng, rong** | ringuing | ringue, rings |
+| **to r̃ingue** | I, you, uie r̃ing; hie r̃ings | **r̃ong** | r̃inguing | r̃ingor |
 
 ---
 
-Conjugation Patterns: -cte
+## 2. Consonant Cluster Reductions (⟨-cte⟩ and ⟨-pte⟩)
 
-In Inglish, verbs that end in -cte or -pte follow consistent patterns in their verb conjugations.
+Verbs ending in the heavy clusters **-cte** or **-pte** follow a strict reduction pattern to prevent consonant crowding when the 3rd-person **-s** is applied. 
 
-Verbs retain the -cte or -pte ending for all pronouns in the present tense, except for the third-person singular, which drops -te and adds -s.
+These verbs retain their full cluster for the infinitive, 1st/2nd person present, past, and gerund. However, in the 3rd-person singular, they drop the **-te** before adding **-s**. Concrete nouns derived from these verbs follow the exact same structural reduction.
 
-Examples:
+| Infinitive / Base | 3rd Person Verb | Past / Gerund | Derived Nouns (Sg / Pl) |
+| :--- | :--- | :--- | :--- |
+| **to acte** | acs | acted / acting | acte, acs; accion(s) |
+| **to connecte** | connecs | connected / connecting | conneccion |
+| **to compacte** | compacs | compacted / compacting | compact, compacs |
+| **to conflicte** | conflics | conflicted / conflicting | conflict, conflics |
+| **to defecte** | defecs | defected / defecting | difect, difecs; defeccion |
+| **to dejecte** | dejecs | dejected / dejecting | dejeccion |
+| **to infecte** | infecs | infected / infecting | infeccion |
+| **to objecte** | objecs | objected / objecting | object, objecs; objeccion |
+| **to accepte** | acceps | accepted / accepting | *--* |
+| **to intercepte** | interceps | intercepted / intercepting | interception |
 
-Infinitive and Present Tense: to acte, acte
-Singular Third-Person Present: acs
-Past Tense: acted
-Gerund: acting
-Noun Forms: acte, acte's, acs; accion(s)
-
-to connecte, connecs, connected, connecting
-Noun: conneccion
-
-to compacte compacs -d -ing
-compact, compacs
-
-to conflicte, conflics, conflicted, conflicting
-Noun: conflict, conflics
-
-to defecte, defecs, defected, defecting
-Noun: difect, difecs, defeccion
-
-to dejecte, dejecs, dejected, dejecting
-Noun: dejeccion
-
-to infecte, infecs, infected, infecting
-Noun: infeccion
-
-to objecte, objecs, objected, objecting
-Noun: object, objecs, objeccion
-
-Noun: insect, insecs
-
-to accepte, accepte
-acceps
-accepted
-accepting
-
-to intercepte
-interceps
-intercepted
-intercepting
+*(Note: Standalone nouns with these clusters also follow this reduction, e.g., **insect** → **insecs**).*
 
 ---
 
-(curve) to corve → þe corve
-(change) to c̃ainge → þe c̃ainge
-to dance → þe dance
-to horse → þe horse
-to force → þe force
-(chance) to c̃ance → þe c̃ance
-(range) to rânge → þe rânge
-to massage → þa massage
+## 3. Stable Sibilant & Fricative Bases
 
+Certain nouns ending in fricatives or affricates retain their final **⟨-e⟩** permanently as a stable base to protect the voicing or quality of the preceding consonant.
 
----
-
--oile verbs follow a conjugation pattern of their own, but it's similar to any regular verb.
-
-These verbs include the following:
-(to boil) to bouile -s -d -ing
-(to coil) to couile -s -d -ing
-(to oil) to euile -s -d -ing
-(to foil) to fouile -s -d -ing
-(to soil) to souile -s -d -ing
-(to spoil) to spouile -s -d -ing
-(to toil) to touile -s -d -ing
-
-Noun forms swap the placement of the -e in the plural form: 
-bouile, boyels
-couile, coyels
-fouile, foyels
-feuile, feuyels
-souile, soyels
-spouile, spoyels
-touile, toyels
-
-## Vowel Alternation in Plural Formation
-
-### Overview
-
-A small number of Inglisce nouns form plurals with a **visible change to the stem vowel**.
-
-These alternations are **lexical, historical, and non-productive**.  
-They are preserved only where they are already established and contrastive.
-
-No general vowel-change rule is implied.
+* **to corve** → þe corve -s
+* **to c̃ainge** → þe c̃ainge -s
+* **to rânge** → þe rânge -s
+* **to dance** → þe dance -s
+* **to c̃ance** → þe c̃ance -s
+* **to horse** → þe horse -s
+* **to force** → þe force -s
+* **to massage** → þa massage -s
 
 ---
 
-### Vowel Alternation with ⟨-x⟩ Plurals
+## 4. Diphthong Unpacking (The ⟨-oile⟩ Shift)
 
-In several closed lexical sets, nouns ending in ⟨-c⟩ form plurals in ⟨-x⟩.
-In these cases, the plural also reflects a **graphic vowel alternation**.
+Verbs ending in **-oile** conjugate regularly (shedding the `-e` for lean present tense forms if desired, or adding standard suffixation). However, their noun forms undergo a distinct orthographic unpacking in the plural.
 
-#### **-ic → -ix**
+To prevent an awkward pileup of vowels, the spelling swaps the placement of the **-e** and converts the **u** into a **y**, breaking the diphthong into two clean syllables.
 
-| Singular | Plural |
-|--------|--------|
-| stic | stix |
-| tric | trix |
-| lic | lix |
-| pic | pix |
-| uic | uix |
+| Infinitive | Conjugations | Nouns (Sing. and Pl.) |
+| :--- | :--- | :--- |
+| **to bouile** | bouile(s, bouiled, bouiling | **bouile, boyels** |
+| **to couile** | couile(s, couiled, couiling | **couile, coyels** |
+| **to euile** | euile(s, euiled, euiling | **euile, euyels** |
+| **to fouile** | fouile(s, fouiled, fouiling | **fouile, foyels** |
+| **to feuile** | feuile(s, feuiled, feuiling | **feuile, feuyels**; **feuilage** |
+| **to souile** | souile(s, souiled, souiling | **souile, soyels** |
+| **to spouile** | spouile(s, spouiled, spouiling | **spouile, spoyels** |
+| **to touile** | touile(s, touiled, touiling | **touile, toyels** |
 
 ---
+
+## 5. Vowel Alternation with ⟨-x⟩ Plurals
+
+A small number of Inglisce nouns form plurals with a **visible change to the stem vowel**. These alternations are lexical, historical, and non-productive. They are preserved only where they are already established and contrastive. 
+
+In several closed lexical sets, nouns ending in **⟨-c⟩** form plurals in **⟨-x⟩**. In these cases, the plural effectively compresses the *c+s* sound while simultaneously reflecting a graphic vowel alternation.
 
 ### Morphological Contrast
+Some surface-identical singular forms belong to different morphological bases and therefore pluralize differently.
+* **pic** → **pix** (lexical noun, “pickaxe”)
+* **pic**(țure) → **pics** (truncated Inglisce base)
 
-Some surface-identical singular forms belong to **different morphological bases** and therefore pluralize differently.
+In these cases, vowel alternation applies only to the monomorphemic lexical stem. Derived or truncated forms pluralize regularly with ⟨-s⟩.
 
-| Singular | Plural | Notes |
-|--------|--------|------|
-| pic | pix | lexical noun (“pick as in pickaxe”) |
-| pic(țure) | pics | truncated Inglisce base (*picțure*) |
+### The ⟨-x⟩ Matrix
 
-In these cases, vowel alternation applies only to the **monomorphemic lexical stem**.
-Derived or truncated forms pluralize regularly with ⟨-s⟩.
+| Base Ending | Shift | Singular | Plural |
+| :--- | :--- | :--- | :--- |
+| **-ic** | **-ix** | stic, tric, lic, pic, uic | stix, trix, lix, pix, uix |
+| **-iec** | **-iex** | biec, c̃iec, liec, friec | biex, c̃iex, liex, friex |
+| **-auc** | **-aux** | c̃auc, stauc, tauc, ouac | c̃aux, staux, taux, ouax |
+| **-âc** | **-aix** | brâc, câc, râc, stâc, faic | braix, caix, raix, staix, faix |
+| **-ac** | **-ax** | hac, stac, rac | hax, stax, rax |
+| **-eic** | **-eix** | breic, steic | breix, steix |
+| **-ôc** | **-eox** | bôc, côc, hôc, lôc | beox, queox, heox, leox |
+| **-oque** | **-oax** | joque, cloque, stroque, bloac, spoac | joax, cloax, stroax, bloax, spoax |
+| **-oc** | **-ox** | stoc, loc, coc | stox, lox, cox |
+| **-erc** | **-êx** | uirc, smirc | uêx, smêx |
+| **-ique** | **-ícs** | pique, lique | pícs, lícs |
+| **-uque** | **-úcs** | duque | dúcs |
+| **-e(ucue** | **-e(ux** | buc, cleuc, deuc, puc, seuc | bux, cleux, deux, pux, seux |
 
----
-
-#### **-iec → -iex**
-
-| Singular | Plural |
-|--------|--------|
-| biec | biex |
-| c̃iec | c̃iex |
-| liec | liex |
-| friec | friex
-
----
-
-#### **-auc → -aux**
-
-| Singular | Plural |
-|--------|--------|
-| c̃auc | c̃aux |
-| stauc | staux |
-| tauc | taux |
-| ouac | ouax |
-
----
-
-#### **-âc → -aix**
-
-| Singular | Plural |
-|--------|--------|
-| brâc | braix |
-| câc | caix |
-| râc | raix |
-| stâc | staix |
-| faic | faix |
-
-
-TOO MUCH BELOW MAYBE
-
-#### **-ac → -ax**
-
-| Singular | Plural |
-|--------|--------|
-| hac | hax |
-| stac | stax |
-| rac | rax |
-
-
-Some nouns do not alternate and retain regular ⟨-s⟩:
-
-| Singular | Plural |
-|--------|--------|
-| lâc | lâcs |
-| sac | sacs |
-| tac | tacs |
-| pac | pacs |
-| bac | bacs |
-| fax | faxes |
-| sax | saxes |
-| tax | taxes |
-| uax | uaxes |
-
----
-
-#### **-eic → -eix**
-
-| Singular | Plural |
-|--------|--------|
-| breic | breix |
-| steic | steix |
-
----
-
-#### **-ôc → -eox**
-
-| Singular | Plural |
-|--------|--------|
-| bôc | beox |
-| côc | queox |
-| hôc | heox |
-| lôc | leox |
-
----
-
-#### **-oque → -oax**
-
-| Singular | Plural |
-|--------|--------|
-| joque | joax |
-| cloque | cloax |
-| stroque | stroax |
-| bloac | bloax |
-| spoac | spoax |
-
-
----
-
-#### **-oc → -ox**
-
-| Singular | Plural |
-|--------|--------|
-| stoc | stox |
-| loc | lox |
-| coc | cox |
-
----
-
-#### **-erc → -êx**
-
-| Singular | Plural |
-|--------|--------|
-| uirc | uêx |
-| smirc | smêx |
-
----
-
-#### **-ique → -ícs**
-
-| Singular | Plural |
-|--------|--------|
-| pique | pícs |
-| lique | lícs |
-
----
-
-#### **-uque → -ucs/-úcs**
-
-| Singular | Plural |
-|--------|--------|
-| duque | dúcs |
-
----
-
-#### **-e(ucue → -e(ux**
-
-| Singular | Plural |
-|--------|--------|
-| buc | bux |
-| cleuc | cleux |
-| deuc | deux |
-| puc | pux |
-| seuc | seux |
-
----
-
-
+*(Note: Some native nouns ending in ⟨-c⟩ do not alternate and retain a regular plural **⟨-s⟩**, including: lâc/lâcs, sac/sacs, tac/tacs, pac/pacs, bac/bacs. Words already ending in **x** take **-es**: faxes, saxes, taxes, uaxes).*
