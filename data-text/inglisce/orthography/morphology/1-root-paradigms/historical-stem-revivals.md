@@ -107,20 +107,8 @@ When functioning as active finite verbs, these liquid-terminal roots stay compre
 
 ---
 
-## 2. Advanced Romance Derivations 
+## 2. Other Romance Derivations 
 
-### The ⟨-fae⟩ Shift
-Verbs ending in **-fae** follow a predictable pattern. They conjugate smoothly using the base, but unpack into their heavy Latinate structures (utilizing **-ficâcion** or **-fîable**) when deriving into abstract nouns and adjectives.
-
-* **Conjugation Base:** `to jostifae`, `jostifaes`, `jostifaed`, `jostifyhing`
-
-| Inglisce Verb | Unpacked Derivation (Noun / Adjective) |
-| :--- | :--- |
-| **to jostifae** | jostificâcion, jostifîable |
-| **to satisfae** | satisfaccion |
-| **to amplifae** | amplificâcion |
-| **to signifae** | significance |
-| **to mortifae** | mortificâcion |
 
 ### Latinate ⟨-țure⟩ Plurals
 Learned imports ending in the specific phoneme **-țure** maintain their structural integrity and pluralize simply by dropping the ⟨-e⟩ and adding **-s**.
@@ -131,3 +119,5 @@ Learned imports ending in the specific phoneme **-țure** maintain their structu
 | **fiețure** | fiețurs |
 | **batture** | batturs |
 | **rapțure** | rapțurs |
+| **layure** | layurs |
+| **litture** | litturs |
