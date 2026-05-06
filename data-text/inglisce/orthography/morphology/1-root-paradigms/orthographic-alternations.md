@@ -50,11 +50,11 @@ These verbs feature an internal vowel shift in the past tense/participle, but fo
 
 | Infinitive | Present Tense | Past Tense | Gerund | Derived Nouns |
 | :--- | :--- | :--- | :--- | :--- |
-| **to attaque** | I, you, uie attac; hie attacs | attaqued | attaquing | attac, attacs |
+| **to attaque** | I, you, uie attac; hie attacs | attaqued | attaquing | attac, attacs; attaqueur  |
 | **to bânque** | I, you, uie bânc; hie bâncs | bânqued | bânquing | bânque, bâncs |
 | **to cuaque** | I, you, uie cuac; hie cuacs | cuached | cuaching | cuac, cuax |
 | **to joque** | I, you, uie joac; hie joacs | joqued | joquing | joque, joax |
-| **to lâque** | I, you, uie lâc; hie lâcs | lâqued | lâquing | lâque, laix |
+| **to lâque** | I, you, uie lâc; hie lâcs | lâqued | lâquing | lâque, laix; lacre |
 | **to rânque** | I, you, uie rânc; hie râncs | rânqued | rânquing | rânque, râncs |
 | **to stoque** | I, you, uie stoac; hie stoacs | stoqued | stoquing | stoque, stoax |
 | **to toque** | I, you, uie toac; hie toacs | toqued | toquing | toque, toax |
