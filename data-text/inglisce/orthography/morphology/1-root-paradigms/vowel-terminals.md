@@ -8,7 +8,7 @@ In Inglisce, roots ending in vowel structures (such as **-ie**, **-oie**, **-aie
 Verbs ending in an unstressed **-ie** retain their spelling for the 3rd-person singular and past tense. However, to form the active gerund, the **-ie** collapses into a **-y-** before attaching the **-ing** suffix. 
 
 | Infinitive Verb | Conjugations | Derived Nouns |
-| :--- | :--- | :--- | :--- |
+| :--- | :--- | :--- |
 | **to mârie** (marry) | mâries, mâried, mârying | mârage |
 | **to bèrie** (bury) | bèries, bèried, bèrying | bèrial; bèrro |
 | **to uírie** (weary) | uíries, uíried, uírying | -- |
