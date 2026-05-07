@@ -16,6 +16,9 @@ A specific class of adjectives derived from the Latin suffix *-aris* end in **-a
 | **regular / regularity** | *regularis* | **regular** | **regularetie** | 
 | **particular / particularity** | *particularis* | **particular** | **particularetie** |
 | **familiar / familiarity** | *familiaris* | **familliar** | **familliaretie** | 
+| **polar / polarity** | *polaris* | **pólar** | **polaretie** | 
+| **simple / simplicity** | *simplicis* | **simple** | **simpliçatie** |
+| **historic / historicity** | *historicus* | **históric** | **historiçatie** |
 
 ---
 
@@ -24,7 +27,7 @@ A specific class of adjectives derived from the Latin suffix *-aris* end in **-a
 The spelling of nouns ending in the Modern English *-ary* or *-ery* is historically chaotic. Inglisce splits these derivations strictly based on their modern phonetic reality, mapping them to **-arie / -airy** or **-erie**.
 
 ### Group A: The /ɛri/ Sound (-arie, -airy)
-When the suffix maintains a clear, vocalized `/ɛri/` sound (often derived from Latin *-arius* or French *-aire*), Inglisce uses **-arie** or **-airy**.
+When the suffix maintains a clear, vocalized `/ɛri/` sound (often derived from Latin *-arius* or French *-aire*), Inglisce uses **-arie** or **-airy**, and uncommonly **-eirie**.
 
 | Modern English | Inglisce |
 | :--- | :--- |
@@ -172,7 +175,7 @@ Certain verbs undergo specific stem modifications when the suffix is added to pr
 **B. Vowel / Consonant Simplification:**
 | Inglisce Verb | Inglisce Noun | Rule |
 | :--- | :--- | :--- |
-| to **agríe** | **agríment** | The **í** remains, but the unaccented **e** drops. |
+| to **agríe** | **agríment** | The **í** remains, but the **e** drops. |
 | to **defêr** | **defêment** | The terminal **r** drops. |
 
 ---
