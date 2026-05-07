@@ -19,10 +19,35 @@ In Modern English, many adjectives derived from the Latin suffix **-aris** end i
 -arie, -aris; airy (m n, adj)
 https://www.etymonline.com/word/-ary#etymonline_v_26569
 
+-arie, -airy = /ɛri/
+-eirie (uncommon) = /ɛri/
+-erie, -ery = /(ə)ri/
+
+
+
+library -> lîbrarie
+canary -> canârie
+aviary -> âviarie
+momentary -> momentairy
+mercenary -> mercenarie, mercenairy
+secretary -> secretarie, secretairy
+necessary -> necessairy
+
+
+Where -ary has become /(ə)ri/ in pronunciation, Inglisce adapts -erie, -ery
+accessary -> accesserie
 cemetery -> cemeteirie
 bakery -> bâcherie
 fishery -> fiscerie
 industry -> industrie
+archery -> arc̃erie
+mockery -> mocherie
+winery -> uignerie
+trickery -> tricherie
+greenery -> grinerie
+machinery -> maçinerie
+granary -> grânerie
+butchery -> buc̃erie
 
 -arius [L]
 -erie [MI]
