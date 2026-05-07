@@ -32,6 +32,9 @@ momentary -> momentairy
 mercenary -> mercenarie, mercenairy
 secretary -> secretarie, secretairy
 necessary -> necessairy
+legendary -> legendairy, legendarie
+honorary -> onnorairy, onnorarie
+visionary -> visionairy, visionarie
 
 
 Where -ary has become /(ə)ri/ in pronunciation, Inglisce adapts -erie, -ery
