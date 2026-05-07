@@ -19,6 +19,11 @@ In Modern English, many adjectives derived from the Latin suffix **-aris** end i
 -arie, -aris; airy (m n, adj)
 https://www.etymonline.com/word/-ary#etymonline_v_26569
 
+cemetery -> cemeteirie
+bakery -> bâcherie
+fishery -> fiscerie
+industry -> industrie
+
 -arius [L]
 -erie [MI]
 -ery [ME]
