@@ -1,89 +1,84 @@
-# The Latin Suffix "-ar" and Noun Derivation "-etie"
-
-In Modern English, many adjectives derived from the Latin suffix **-aris** end in **-ar**. These adjectives typically form their corresponding abstract nouns by adding the suffix **-ity**.
-
-**Inglisce** retains the base **-ar** adjective ending but standardizes the noun derivation by replacing the English *-ity* with the native Inglisce suffix **-etie**.
+# Noun Suffixes and Derivation
 
 ---
 
-| Modern English | Latin Root | Inglisce |
-| :--- | :--- | :--- | 
-| **regular** <br> **regularity** | *regularis* | **regular** <br> **regularetie** | 
-| **particular** <br> **particularity** | *particularis* | **particular** <br> **particularetie** |
-| **familiar** <br> **familiarity** | *familiaris* | **familliar** <br> **familliaretie** | 
+## 1. Abstract Nouns: The ⟨-etie⟩ Suffix (Modern English *-ity*)
 
--arius, -aria, -arium [L]
--aire [FR]
--arie [MI]
--ary [ME]
--arie, -aris; airy (m n, adj)
-https://www.etymonline.com/word/-ary#etymonline_v_26569
+In Modern English, abstract nouns denoting a state or condition frequently end in **-ity** (derived from Latin *-itas* via Old French *-ité*). 
 
--arie, -airy = /ɛri/
--eirie (uncommon) = /ɛri/
--erie, -ery = /(ə)ri/
+**Inglisce** standardizes this derivation to **-etie** (or **-atie**). These nouns are feminine and pluralize regularly with **-is**.
 
+### The ⟨-ar⟩ to ⟨-aretie⟩ Derivation
+A specific class of adjectives derived from the Latin suffix *-aris* end in **-ar**. While Inglisce retains the base **-ar** adjective ending, it standardizes the corresponding noun derivation by replacing the English *-ity* with **-etie**.
 
-
-library -> lîbrarie
-canary -> canârie
-aviary -> âviarie
-momentary -> momentairy
-mercenary -> mercenarie, mercenairy
-secretary -> secretarie, secretairy
-necessary -> necessairy
-legendary -> legendairy, legendarie
-honorary -> onnorairy, onnorarie
-visionary -> visionairy, visionarie
-
-
-Where -ary has become /(ə)ri/ in pronunciation, Inglisce adapts -erie, -ery
-accessary -> accesserie
-cemetery -> cemeteirie
-bakery -> bâcherie
-fishery -> fiscerie
-industry -> industrie
-archery -> arc̃erie
-mockery -> mocherie
-winery -> uignerie
-trickery -> tricherie
-greenery -> grinerie
-machinery -> maçinerie
-granary -> grânerie
-butchery -> buc̃erie
-
--arius [L]
--erie [MI]
--ery [ME]
--erie, -eris (m n)
-https://www.etymonline.com/word/-ery#etymonline_v_32818
-https://www.etymonline.com/word/-ary#etymonline_v_26569
+| Modern English | Latin Root | Inglisce Adjective | Inglisce Abstract Noun | 
+| :--- | :--- | :--- | :--- | 
+| **regular / regularity** | *regularis* | **regular** | **regularetie** | 
+| **particular / particularity** | *particularis* | **particular** | **particularetie** |
+| **familiar / familiarity** | *familiaris* | **familliar** | **familliaretie** | 
 
 ---
 
-# Latin Suffix "-ion"
+## 2. The ⟨-arie⟩ and ⟨-erie⟩ Suffixes
+
+The spelling of nouns ending in the Modern English *-ary* or *-ery* is historically chaotic. Inglisce splits these derivations strictly based on their modern phonetic reality, mapping them to **-arie / -airy** or **-erie**.
+
+### Group A: The /ɛri/ Sound (-arie, -airy)
+When the suffix maintains a clear, vocalized `/ɛri/` sound (often derived from Latin *-arius* or French *-aire*), Inglisce uses **-arie** or **-airy**.
+
+| Modern English | Inglisce |
+| :--- | :--- |
+| **library** | **lîbrarie** |
+| **canary** | **canârie** |
+| **aviary** | **âviarie** |
+| **momentary** | **momentairy** |
+| **mercenary** | **mercenarie, mercenairy** |
+| **secretary** | **secretarie, secretairy** |
+| **necessary** | **necessairy** |
+| **legendary** | **legendairy, legendarie** |
+| **honorary** | **onnorairy, onnorarie** |
+| **visionary** | **visionairy, visionarie** |
+| **cemetery** | **cemeteirie** |
+
+### Group B: The /(ə)ri/ Sound (-erie)
+Where the suffix has historically reduced to a schwa-based `/(ə)ri/` sound (often from Old French *-erie*), Inglisce standardizes the spelling to **-erie**.
+
+| Modern English | Inglisce |
+| :--- | :--- |
+| **bakery** | **bâcherie** |
+| **fishery** | **fiscerie** |
+| **industry** | **industrie** |
+| **archery** | **arc̃erie** |
+| **mockery** | **mocherie** |
+| **winery** | **uignerie** |
+| **trickery** | **tricherie** |
+| **greenery** | **grinerie** |
+| **machinery** | **maçinerie** |
+| **granary** | **grânerie** |
+| **butchery** | **buc̃erie** |
+| **accessary** | **accesserie** |
+
+---
+
+## 3. The Latin ⟨-ion⟩ Suffixes
 
 The suffix **-ion** plays a significant role in noun formation in both Latin and French, creating nouns that express the action, result, or condition of a root verb. 
 
 **Inglisce** systematizes these formations, applying consistent spelling patterns based on the verb's terminal consonants or vowels to preserve etymological connections while guaranteeing phonetic predictability.
 
----
-
 ### 1. The "-cte" Verbs (-ccion)
 Verbs ending in `-cte` form nouns with **-ccion**. 
 
-| Modern English | Inglisce Verb | Inglisce |
+| Modern English | Inglisce Verb | Inglisce Noun |
 | :--- | :--- | :--- |
 | **act / action** | to **acte** | **þi accion** |
 | **compact / compaction** | to **compacte** | **þa compaccion** |
 | **infect / infection** | to **infecte** | **þi infeccion** |
 
----
-
 ### 2. The "-ait" and "-âte" Verbs (-âcion)
 Verbs ending in `-ait` or `-âte` form nouns with **-âcion**.
 
-| Modern English | Inglisce Verb | Inglisce |
+| Modern English | Inglisce Verb | Inglisce Noun |
 | :--- | :--- | :--- |
 | **animate / animation** | to **animait** | **þi animâcion** |
 | **demonstrate / demonstration** | to **demonstrait** | **þa demonstrâcion** |
@@ -97,152 +92,116 @@ Verbs ending in `-ait` or `-âte` form nouns with **-âcion**.
 | **conflate / conflation** | to **conflâte** | **þa conflâcion** |
 | **inflate / inflation** | to **inflâte** | **þi inflâcion** |
 
----
-
 ### 3. The "-mitte" Verbs (-mission)
 Verbs ending in `-mitte` form nouns with **-mission**.
 
-| Modern English | Inglisce Verb | Inglisce |
+| Modern English | Inglisce Verb | Inglisce Noun |
 | :--- | :--- | :--- |
 | **admit / admission** | to **admitte** | **þi admission** |
 | **commit / commission** | to **comitte** | **þa comission** |
 | **emit / emission** | to **emitte** | **þi emission** |
 
----
-
 ### 4. The "-de" Verbs (-sion)
 Verbs ending in `-de` form nouns with **-sion**.
 
-| Modern English | Inglisce Verb | Inglisce |
+| Modern English | Inglisce Verb | Inglisce Noun |
 | :--- | :--- | :--- |
 | **decide / decision** | to **decîde** | **þa decision** |
 | **explode / explosion** | to **explode** | **þi explósion** |
 | **erode / erosion** | to **erode** | **þi erósion** |
 | **corrode / corrosion** | to **corrode** | **þa corrósion** |
 
----
-
 ### 5. Irregular Formations
 Some roots require unique patterns to map their phonetic and morphological reality.
 
-| Modern English | Inglisce Verb | Inglisce |
+| Modern English | Inglisce Verb | Inglisce Nouns |
 | :--- | :--- | :--- |
 | **equate / equation / equator** | to **equâte** | **þi equâsion**, **þi equâteor** |
-| **edit / edition** | to **èdite** | **þi edicion** |
+| **edit / edition** | to **èdit** | **þi edicion** |
 
 ---
 
--itas [L]
--ete [OF]
--ité [FR]
--ity [ME]
--etie, -atie -is (f n)
-https://www.etymonline.com/word/-ity#etymonline_v_32843
+## 4. The French ⟨-ment⟩ Suffix
+
+The suffix **-ment** (derived from French) forms nouns from verbs, indicating the action, result, or state of the verb.
+
+### 1. Regular Formation (No Change)
+Most verbs simply attach **-ment** directly to the stem without any orthographic changes.
+
+| Inglisce Verb | Inglisce Noun |
+| :--- | :--- |
+| to **ac̃ieve** | **ac̃ievement** |
+| to **adorne** | **adornement** |
+| to **advertyse** | **advertysement** |
+| to **ajoste** | **ajostement** |
+| to **amâse** | **amâsement** |
+| to **amuse** | **amusement** |
+| to **comitte** | **comittement** |
+| to **confîne** | **confînement** |
+| to **disbarre** | **disbarrement** |
+| to **empeire** | **empeirement** |
+| to **encoûrage** | **encoûragement** |
+| to **engâge** | **engâgement** |
+| to **excîte** | **excîtement** |
+| to **improuve** | **improuvement** |
+| to **installe** | **installement** |
+| to **investe** | **investement** |
+| to **manage** | **management** |
+| to **nourișe** | **nourișement** |
+| to **paie** | **paiement** |
+| to **ponișe** | **ponișement** |
+| to **replâce** | **replâcement** |
+| to **enhance** | **þi enhancement** |
+| to **advance** | **þi advancement** |
+| to **enforce** | **þi enforcement** |
+| to **deploie** | **deploiement** |
+| to **emploie** | **emploiement** |
+| to **enjoie** | **enjoiement** |
+
+### 2. Stem Changes Before -ment
+Certain verbs undergo specific stem modifications when the suffix is added to preserve pronunciation or visual rhythm.
+
+**A. Dropping the final silent -e:**
+| Inglisce Verb | Inglisce Noun |
+| :--- | :--- |
+| to **conteine** | **contéinment** |
+| to **entreteine** | **entretéinment** |
+| to **govirne** | **govirnment** |
+| to **devèlope** | **devèlopment** |
+
+**B. Vowel / Consonant Simplification:**
+| Inglisce Verb | Inglisce Noun | Rule |
+| :--- | :--- | :--- |
+| to **agríe** | **agríment** | The **í** remains, but the unaccented **e** drops. |
+| to **defêr** | **defêment** | The terminal **r** drops. |
 
 ---
 
-The Suffix -ment in Inglisce
+## 5. Hellenic (Greek) Suffixes
 
-The suffix -ment (from French) forms nouns from verbs, indicating the action, result, or state of the verb.
-
-1. Regular Formation (No Change)
-
-Most verbs simply add -ment without any changes to the stem:
-to ac̃ieve → ac̃ievement
-to adorne → adornement
-to advertyse → advertysement
-to ajoste → ajostement
-to amâse → amâsement
-to amuse → amusement
-to comitte → comittement
-to confîne → confînement
-to disbarre → disbarrement
-to empeire → empeirement
-to encoûrage → encoûragement
-to engâge → engâgement
-to excîte → excîtement
-to improuve → improuvement
-to installe → installement
-to investe → investement
-to manage → management
-to nourișe → nourișement
-to paie → paiement
-to ponișe → ponișement
-to replâce → replâcement
-to enhance → þi enhancement
-to advance → þi advancement
-to enforce → þi enforcement
-to deploie → deploiement
-to emploie → emploiement
-to enjoie → enjoiement
-
-
-2. Stem Changes Before -ment
-
-Certain verbs undergo stem modifications when adding -ment:
-
-a) Verbs that drop the final -e:
-  conteine → contéinment 
-  entreteine → entretéinment 
-  govirne → govirnment 
-
-b) Some verbs show vowel changes or simplification:
-  agríe → agríment (í remains, e drops)
-  defêr → defêment (r drops)
-  devèlope → devèlopment (final e drops)
-
-  ---
-
-# The Greek Suffix "-ology" (-λογία)
-
-In Modern English, the suffix **-ology** is used to form nouns denoting a field of study or branch of knowledge. This originates from the Greek suffix **-λογία** (*-logia*), meaning "the study of" or "the science of."
-
-**Inglisce** standardizes this suffix to **-ologie**.
-
----
+### The ⟨-ologie⟩ Suffix (Greek *-λογία*)
+In Modern English, the suffix *-ology* forms nouns denoting a field of study or branch of knowledge (from the Greek *-logia*). Inglisce standardizes this suffix to **-ologie**.
 
 | Modern English | Greek Root | Inglisce | Orthographic Notes |
 | :--- | :--- | :--- | :--- |
 | **biology** | βίος (*bios*) + λογία | **bîologie** | Uses the **î** diacritic to map the `/aɪ/` sound in the prefix. |
-| **geology** | γεω- (*geo-*) + λογία | **gïologie** | Uses the diaeresis (**ï**) to mark the `/i/` sound before the vowel |
+| **geology** | γεω- (*geo-*) + λογία | **gïologie** | Uses the diaeresis (**ï**) to mark the `/i/` sound before the vowel. |
 | **psychology** | ψυχή (*psyche*) + λογία | **sycologie** | Drops the silent initial `p` (following the Greek `ps-` rule) and retains `y` to mark the upsilon root. |
 
----
+### The ⟨-graphie⟩ Suffix (Greek *-γραφία*)
+Used to refer to a field of study, a form of writing, or a descriptive work (from the Greek *graphia*, meaning "writing" or "description"). Inglisce simplifies this to **-graphie**.
 
-Modern English -phobia from Greek φόβος
+| Modern English | Inglisce | Meaning / Root |
+| :--- | :--- | :--- |
+| **biography** | **bîographie** | Written account of a life (*bios* + *graphia*). |
+| **geography** | **gïographie** | Study of Earth's features (*geo* + *graphia*). |
+| **photography** | **fotographie** | Taking and processing images (*phōs* + *graphia*). |
 
-The suffix "-phobia" is used in English to form nouns that denote an irrational fear or aversion to something. 
-This suffix originates from the Greek word "φόβος" (phobos), which means "fear" or "panic."
+### The ⟨-phobia⟩ Suffix (Greek *φόβος*)
+Used to denote an irrational fear or aversion. It originates directly from the Greek *phobos* ("fear" or "panic"). Inglisce standardizes this to **-phóbia** while standardizing the root combinations.
 
-Inglisce uses -phobia.
-
-Examples:
-    claustrophobia
-    arachnophobia
-    acrophobia
-
-Inglisce:
-    claustrophobia
-    arachnophobia
-    acrophobia
-
----
-
-Modern English -graphy from Greek γραφία
-
-The suffix "-graphy" is used in Modern English to form nouns that refer to a field of study, a form of writing or drawing, or a specific type of descriptive work. 
-This suffix originates from the Greek word γραφία (graphia), which means "writing" or "description."
-
-Inglisce simplifies -graphy to -graphie
-
-Examples:
-    biography: The written account of someone's life (from Greek "bios" meaning "life" + "graphia").
-    geography: The study of the Earth's physical features (from Greek "geo" meaning "earth" + "graphia").
-    photography: The art or practice of taking and processing photographs (from Greek "phōs" meaning "light" + "graphia").
-
-Inglisce:
-    bîographie
-    gïographie
-    fotographie
-
----
+| Modern English | Inglisce |
+| :--- | :--- |
+| **claustrophobia** | **claustrophóbia** |
+| **arachnophobia** | **arachnophóbia** |
+| **acrophobia** | **acrophóbia** |
