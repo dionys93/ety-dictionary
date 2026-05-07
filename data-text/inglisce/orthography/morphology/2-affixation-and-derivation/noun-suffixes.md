@@ -1,6 +1,3 @@
-ology.md, phobia.txt
-
-
 # The Latin Suffix "-ar" and Noun Derivation "-etie"
 
 In Modern English, many adjectives derived from the Latin suffix **-aris** end in **-ar**. These adjectives typically form their corresponding abstract nouns by adding the suffix **-ity**.
