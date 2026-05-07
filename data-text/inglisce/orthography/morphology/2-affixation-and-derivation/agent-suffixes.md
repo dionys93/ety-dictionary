@@ -1,166 +1,81 @@
-## Agent Nouns in Inglisce
+# Agent Nouns in Inglisce
 
-In Modern English, agent nouns are typically formed with:
+In Modern English, the Germanic suffix **-er** (from Old English *-ere*) has become a chaotic, catch-all ending for almost any noun performing an action, completely swallowing the historical Latin **-or** (e.g., *actor*, *dictator*) and the French **-eur** (e.g., *chanteur*). 
 
-- **-er** (Germanic): teacher, singer
-- **-or** (Latin): actor, creator
-
-Inglisce systematizes this distinction by separating:
-
-• **Human agents**  
-• **Tools, devices, and functional instruments**
-
-The suffix chosen depends on both **semantic role** and **stress pattern**.
+**Inglisce** breaks away from this ambiguous Modern English default. Instead, it synthesizes its historical roots, deploying the French **-eur** and the Latin **-or** to create strict, predictable orthographic rules. These suffixes not only map phonetic reality but also explicitly distinguish between human professions and mechanical instruments.
 
 ---
 
-### 1. Core Agent Suffix System
+## 1. The General Formation Rule
 
-#### A. Human Agents
+The default agent noun for a standard verb in Inglisce takes the French-derived **-eur** suffix. However, when dealing with hard velar consonants, the suffix mechanically shifts to the Latin **-or** to protect the pronunciation.
 
-Human performers of actions use:
+### The Velar Shedding Rule (-cor / -gor)
+When a verb ends in **-che** (hard /k/), **-gue** (hard /g/), or **-que** (hard /k/), the modifying letter (`h` or `u`) is used as a shield to keep the consonant hard before the final `e`. 
 
-- **-eur**
-- **-uer**
-- **-cher** (after certain stems)
+When forming the agent noun, Inglisce drops this bulky shield and attaches **-or**. Because `c` and `g` are naturally hard before the back vowel `o`, the spelling becomes incredibly sleek without losing its phonetic integrity.
 
-These forms derive historically from French/German patterns and are reserved for **people**.
+### Orthographic Pattern
+| Verb Ending | Agent Suffix | Structural Logic | Inglisce Examples |
+| :--- | :--- | :--- | :--- |
+| **-e** | **-eur** | The standard default replacement. | painte → **painteur**, tiec̃e → **tiec̃eur** |
+| **-che** | **-cor** | Sheds the `h`, as `c` is hard before `o`. | bâche → **bâcor**, spieche → **spiecor** |
+| **-gue** | **-gor** | Sheds the `u`, as `g` is hard before `o`. | singue → **singor** |
+| **-que** | **-cor** | Standardizes the `qu` to a hard `c` before `o`. | bânque → **bâncor** |
 
-### Pattern
-
-| Verb Ending | Agent Suffix | Result |
-|-------------|-------------|--------|
-| -e | -eur | painte → painteur |
-| -e | -cher | bâche → bâcher |
-| -gue | -uer | singue → singuer |
-| -c̃e | -eur | tiec̃e → tiec̃eur |
-
-### Examples
-
-| Verb | Human Agent |
-|------|------------|
-| to bâche | bâcher |
-| to acte | acteur |
-| to commande | commandeur |
-| to painte | painteur |
-| to rîte | rîteur |
-| to singue | singuer |
-| to tiec̃e | tiec̃eur |
-
----
-
-#### B. Tools, Devices, Functional Objects
-
-Non-human agents take:
-
-- **-or**
-- **-eor**
-
-These forms derive from Latin patterns and indicate:
-
-- machines
-- software functions
-- instruments
-- products
-
-### Pattern
-
-| Verb Ending | Instrument Suffix | Result |
-|-------------|------------------|--------|
-| -e | -eor | compute → computeor |
-| -e | -eor | infecte → infecteor |
+### Standard Formations
+| Inglisce Verb | Agent Noun |
+| :--- | :--- |
+| to **acte** | **acteur** |
+| to **bâche** | **bâcor** |
+| to **bânque** | **bâncor** |
+| to **commande** | **commandeur** |
+| to **compute** | **computeur** |
+| to **infecte** | **infecteur** |
+| to **painte** | **painteur** |
+| to **r̃aite** | **r̃aiteur** |
+| to **singue** | **singor** |
+| to **spieche** | **spiecor** |
+| to **tiec̃e** | **tiec̃eur** |
 
 ---
 
-### 2. Semantic Contrast Pairs
+## 2. Semantic Contrast Pairs (Human vs. Instrument)
 
-Inglisce distinguishes **person vs instrument** explicitly.
+While Modern English uses *-er* for both people and machines (e.g., a person who cleans is a *cleaner*; a chemical product is a *cleaner*), Inglisce creates a strict semantic split. 
 
-| Human (Profession) | Instrument / Object |
-|--------------------|--------------------|
-| clineur | clínor |
-| dîneur | dînor |
-| ouacher | ouacor |
-| spiecher | spiecor |
-| strimeur | strímor |
-| sêveur | sêvor |
+When a root can refer to both, Inglisce uses **-eur** to denote a human profession or active agent, and **-or** (often accompanied by an accent to lock the pronunciation) to denote a mechanical instrument, tool, or object.
 
-### Functional Difference
-
-| Suffix | Meaning |
-|--------|---------|
-| -eur / -uer / -cher | human performer |
-| -or / -eor | tool, device, or function |
-
-This creates systematic semantic contrast not consistently present in Modern English.
+| Inglisce Verb | Human Agent / Profession | Mechanical Instrument / Object / Location |
+| :--- | :--- | :--- |
+| to **cline** | **clineur** | **clínor** |
+| to **dîne** | **dîneur** | **dînor** |
+| to **strime** | **strimeur** | **strímor** |
+| to **sêve** | **sêveur** | **sêvor** |
 
 ---
 
-### 3. Verbs Ending in -ait
+## 3. Verbs Ending in ⟨-ait⟩ 
 
-Verbs ending in **-ait** form agent nouns with **-or**.
+Verbs ending in the **-ait** suffix typically describe official roles, technical functions, or formal actors. Drawing directly from their Latin origins (*-ator*), these verbs form their agent nouns strictly with the **-or** suffix. 
 
-Primary stress remains on the first syllable.
+*Note: The primary stress remains firmly anchored on the first syllable.*
 
-### Pattern
-
-| Verb | Agent Noun |
-|------|------------|
-| animait | animaitor |
-| demonstrait | demonstraitor |
-| dictait | dictaitor |
-| dónait | dónaitor |
-| navigait | navigaitor |
-
-These forms generally describe:
-
-- official roles
-- technical functions
-- formal actors
+| Inglisce Verb | Agent Noun |
+| :--- | :--- |
+| to **animait** | **animaitor** |
+| to **demonstrait** | **demonstraitor** |
+| to **dictait** | **dictaitor** |
+| to **dónait** | **dónaitor** |
+| to **navigait** | **navigaitor** |
 
 ---
 
-### 4. -graph Derivatives
+## 4. The ⟨-graph⟩ Derivatives
 
-Words ending in **-graph** take **-or** for agent formation.
+Words ending in the Greek root **-graph** (denoting writing, recording, or description) represent highly technical or professional roles. Like the formal `-ait` verbs, these derivatives bypass the standard `-eur` and take the Latinate **-or** for agent formation.
 
-| Base | Agent |
-|------|--------|
-| îconograph | îconographor |
-| fótograph | fotographor |
-
-These typically describe professional or technical roles.
-
----
-
-### 5. Stress Patterns
-
-| Suffix | Typical Stress Pattern |
-|--------|------------------------|
-| -eur / -uer / -cher | stress retained on verb root |
-| -or | stress remains on first syllable |
-| -eor | stress is on penultimate syllable |
-| -aitor | primary stress on first syllable |
-
----
-
-### System Summary
-
-| Category | Suffix | Meaning |
-|----------|--------|----------|
-| Human agent | -eur | person performing action |
-| Human agent | -uer | person (after -gue stems) |
-| Human agent | -cher | person (after certain consonants) |
-| Instrument | -or | device or product |
-| Instrument | -eor | device or product with penultimate stress |
-| -ait verbs | -or | formal/technical agent |
-| -graph bases | -or | professional/technical |
-
----
-
-### Key Principles
-
-• Inglisce distinguishes **human vs non-human agents explicitly**.  
-• The suffix choice is primarily semantic, secondarily phonological.  
-• Instrument nouns are consistently marked with **-or/-eor**.  
-• Human roles use **-eur/-uer/-cher**, preserving Romance/Germanic layering.  
+| Inglisce Base | Professional Agent Noun |
+| :--- | :--- |
+| **fótograph** | **fotographor** |
+| **îconograph** | **îconographor** |
