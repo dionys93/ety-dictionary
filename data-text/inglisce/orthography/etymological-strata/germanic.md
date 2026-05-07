@@ -222,28 +222,6 @@ This gives the lost cluster a distinct visual identity while matching the modern
 
 ---
 
-## The Germanic Adjective Suffix (-ish)
-
-In Modern English, the suffix **-ish** (along with related contractions like the **-sh** in *Welsh*) is used to form adjectives denoting nationality, origin, or general characteristics. This suffix descends directly from the Old English **-isc** (e.g., *Englisc*).
-
-**Inglisce** restores the ancestral orthography of this suffix by replacing the modern `-ish` or `-sh` with **-isce**. 
-
-### The Capitalization Rule
-Because Inglisce uses the same spelling for both the adjective and the language, it relies on strict capitalization to distinguish their grammatical roles:
-* **Adjectives and Demonyms** (describing people, culture, or objects) are **strictly lowercase**.
-* **Proper Nouns for Languages** are **capitalized**.
-
-| Modern English | Inglisce | 
-| :--- | :--- | 
-| **British** | **britisce** | 
-| **Spanish** | **spanisce, Spanisce** |
-| **English** | **inglisce, Inglisce** | 
-| **Welsh** | **uelsce, Uelsce** |
-
-More simply, it'd be "þi inglisce lânguage" or "þe spanisce lânguage" when used as an adjective. Otherwise: "I spiec Inglisce. I spiec Spanisce"
-
----
-
 ## The Old English Fricative (-sce)
 
 In Old English, the `/ʃ/` sound was consistently represented by the native **sc** digraph (as seen in words like *fisc* and *disc*). Following the Norman Conquest, this ancestral spelling was gradually overwritten by the modern **sh** digraph. 
