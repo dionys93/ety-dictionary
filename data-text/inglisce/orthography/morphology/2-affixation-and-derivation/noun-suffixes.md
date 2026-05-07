@@ -22,29 +22,32 @@ A specific class of adjectives derived from the Latin suffix *-aris* end in **-a
 
 ---
 
-## 2. The ⟨-arie⟩ and ⟨-erie⟩ Suffixes
+## 2. The ⟨-arie⟩, ⟨-airy⟩, and ⟨-erie⟩ Suffixes
 
-The spelling of nouns ending in the Modern English *-ary* or *-ery* is historically chaotic. Inglisce splits these derivations strictly based on their modern phonetic reality, mapping them to **-arie / -airy** or **-erie**.
+The spelling of words ending in the Modern English *-ary* or *-ery* is historically chaotic. Inglisce splits these derivations based on their grammatical function and modern phonetic reality, mapping them to **-arie**, **-airy**, or **-erie**.
 
-### Group A: The /ɛri/ Sound (-arie, -airy)
-When the suffix maintains a clear, vocalized `/ɛri/` sound (often derived from Latin *-arius* or French *-aire*), Inglisce uses **-arie** or **-airy**, and uncommonly **-eirie**.
+### Group A: The /ɛri/ Sound (The Grammatical Split)
+When the suffix maintains a clear, vocalized `/ɛri/` sound (often derived from Latin *-arius* or French *-aire*), Inglisce enforces a strict grammatical split to eliminate visual ambiguity:
+* **-airy** is used strictly for **adjectives**.
+* **-arie** is used strictly for **nouns** (denoting people, places, or concepts).
 
-| Modern English | Inglisce |
-| :--- | :--- |
-| **library** | **lîbrarie** |
-| **canary** | **canârie** |
-| **aviary** | **âviarie** |
-| **momentary** | **momentairy** |
-| **mercenary** | **mercenarie, mercenairy** |
-| **secretary** | **secretarie, secretairy** |
-| **necessary** | **necessairy** |
-| **legendary** | **legendairy, legendarie** |
-| **honorary** | **onnorairy, onnorarie** |
-| **visionary** | **visionairy, visionarie** |
-| **cemetery** | **cemeteirie** |
+| Modern English | Inglisce Adjective | Inglisce Noun |
+| :--- | :--- | :--- |
+| **customary** | **customairy** | -- |
+| **momentary** | **momentairy** | -- |
+| **necessary** | **necessairy** | -- |
+| **library** | -- | **lîbrarie** |
+| **canary** | -- | **canârie** |
+| **aviary** | -- | **âviarie** |
+| **secretary** | **secretairy** | **secretarie** |
+| **mercenary** | **mercenairy** | **mercenarie** |
+| **legendary** | **legendairy** | **legendarie** |
+| **honorary** | **onnorairy** | **onnorarie** |
+| **visionary** | **visionairy** | **visionarie** |
+| **stationary / stationery** | **stationairy** *(at rest)* | **stationarie** *(paper goods)* |
 
 ### Group B: The /(ə)ri/ Sound (-erie)
-Where the suffix has historically reduced to a schwa-based `/(ə)ri/` sound (often from Old French *-erie*), Inglisce standardizes the spelling to **-erie**.
+Where the suffix has historically reduced to a schwa-based `/(ə)ri/` sound (often from Old French *-erie*), Inglisce standardizes the spelling to **-erie**. In some cases following heavy stressed vowels, the suffix compresses further to **-rie**.
 
 | Modern English | Inglisce |
 | :--- | :--- |
@@ -59,7 +62,16 @@ Where the suffix has historically reduced to a schwa-based `/(ə)ri/` sound (oft
 | **machinery** | **maçinerie** |
 | **granary** | **grânerie** |
 | **butchery** | **buc̃erie** |
-| **accessary** | **accesserie** |
+| **bravery** | **brâvrie** |
+| **slavery** | **slâvrie** |
+
+### Group C: Structural Exceptions
+Certain words require unique vowel mappings or diacritics to balance historical DNA with unpredictable phonetic stress.
+
+| Modern English | Inglisce | Phonetic / Structural Logic |
+| :--- | :--- | :--- |
+| **cemetery** | **cemeteirie** | Retains the clear `/ɛri/` sound using the uncommon **-eirie** variant. |
+| **accessary** | **accèssarie** | Uses the grave accent (`è`) to lock the unpredictable syllable stress. This allows the word to retain its Latin **-arie** visual DNA despite reducing to a `/(ə)ri/` sound in modern speech. |
 
 ---
 
