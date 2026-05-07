@@ -71,3 +71,8 @@ However, following the Norman Conquest, English absorbed a massive wave of Frenc
 | **border** | **bordure** | Anchors directly back to its original Old French root, *bordure*. |
 
 ---
+
+## Repairing Historical Collisions
+One of Inglisce's primary goals is to untangle the etymological collisions of Modern English. For example, Modern English uses the exact same -ish spelling for native Germanic adjectives (childish) and imported French verbs (finish), despite them having completely different historical roots. Inglisce visually repairs this damage, using -isce for the Germanic adjectives and engineering a distinct -ișe marker for the Romance verbs. (For the complete rules on verb derivation, see Verbalizers).
+
+---
