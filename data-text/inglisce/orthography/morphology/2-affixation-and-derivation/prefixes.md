@@ -1,24 +1,26 @@
+Inglisce Prefixes
+
 Prefix,Meaning,Examples
 un-,not/opposite,unhappy; undo
 in-,not,indirect; impossible
-dis-,not/apart,disconnect; disagree
+dis-/des-,not/apart,disconnect; disagree
 non-,not,non-stop; nonsense
 mis-,wrongly,mistake; misunderstand
 anti-,against,antisocial; antibiotic
 de-,opposite/remove,deactivate; demoralize
-ad-,to/toward,advance; admit
+ad-,to/toward,advance; admitte
 ab-,away from,absent; abnormal
 ex-,out/away,exit; eject
-sub-,under/below,subway; submarine
+sob-,under/below,subway; sobmarine
 trans-,across,transport; translate
-inter-,between,international; intersect
+inter-,between,international; intersecte
 intra-,within,intravenous; intranet
 super-,above/over,superstar; superior
-circum-,around,circumstance; circumnavigate
-pre-,before,prefix; prevent
+circom-,around,circumstance; circomnavigait
+pre-/pri-,before,prefix; prevente
 post-,after,postpone; postscript
-re-,again/back,return; repeat
-fore-,before/front,forecast; forehead
+re-/ri-,again/back,return; repite
+fore-,before/front,forecast; forehede
 arch-,chief/principal,archnemesis; archbishop
 pro-,forward/for,promote; proceed
 mono-,one,monologue; monochrome
