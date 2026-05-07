@@ -33,45 +33,47 @@ When the suffix maintains a clear, vocalized `/ɛri/` sound (often derived from 
 
 | Modern English | Inglisce Adjective | Inglisce Noun |
 | :--- | :--- | :--- |
+| **aviary** | -- | **âviarie** |
+| **canary** | -- | **canârie** |
 | **customary** | **customairy** | -- |
+| **honorary** | **onnorairy** | **onnorarie** |
+| **legendary** | **legendairy** | **legendarie** |
+| **library** | -- | **lîbrarie** |
+| **mercenary** | **mercenairy** | **mercenarie** |
 | **momentary** | **momentairy** | -- |
 | **necessary** | **necessairy** | -- |
-| **library** | -- | **lîbrarie** |
-| **canary** | -- | **canârie** |
-| **aviary** | -- | **âviarie** |
 | **secretary** | **secretairy** | **secretarie** |
-| **mercenary** | **mercenairy** | **mercenarie** |
-| **legendary** | **legendairy** | **legendarie** |
-| **honorary** | **onnorairy** | **onnorarie** |
-| **visionary** | **visionairy** | **visionarie** |
 | **stationary / stationery** | **stationairy** *(at rest)* | **stationarie** *(paper goods)* |
+| **tributary** | **tributairy** | **tributarie** |
+| **visionary** | **visionairy** | **visionarie** |
+| **voluntary** | **volontairy** | -- |
 
 ### Group B: The /(ə)ri/ Sound (-erie)
 Where the suffix has historically reduced to a schwa-based `/(ə)ri/` sound (often from Old French *-erie*), Inglisce standardizes the spelling to **-erie**. In some cases following heavy stressed vowels, the suffix compresses further to **-rie**.
 
 | Modern English | Inglisce |
 | :--- | :--- |
-| **bakery** | **bâcherie** |
-| **fishery** | **fiscerie** |
-| **industry** | **industrie** |
 | **archery** | **arc̃erie** |
-| **mockery** | **mocherie** |
-| **winery** | **uignerie** |
-| **trickery** | **tricherie** |
-| **greenery** | **grinerie** |
-| **machinery** | **maçinerie** |
-| **granary** | **grânerie** |
-| **butchery** | **buc̃erie** |
+| **bakery** | **bâcherie** |
 | **bravery** | **brâvrie** |
+| **butchery** | **buc̃erie** |
+| **fishery** | **fiscerie** |
+| **granary** | **grânerie** |
+| **greenery** | **grinerie** |
+| **industry** | **industrie** |
+| **machinery** | **maçinerie** |
+| **mockery** | **mocherie** |
 | **slavery** | **slâvrie** |
+| **trickery** | **tricherie** |
+| **winery** | **uignerie** |
 
 ### Group C: Structural Exceptions
 Certain words require unique vowel mappings or diacritics to balance historical DNA with unpredictable phonetic stress.
 
 | Modern English | Inglisce | Phonetic / Structural Logic |
 | :--- | :--- | :--- |
-| **cemetery** | **cemeteirie** | Retains the clear `/ɛri/` sound using the uncommon **-eirie** variant. |
 | **accessary** | **accèssarie** | Uses the grave accent (`è`) to lock the unpredictable syllable stress. This allows the word to retain its Latin **-arie** visual DNA despite reducing to a `/(ə)ri/` sound in modern speech. |
+| **cemetery** | **cemeteirie** | Retains the clear `/ɛri/` sound using the uncommon **-eirie** variant. |
 
 ---
 
@@ -147,16 +149,22 @@ Most verbs simply attach **-ment** directly to the stem without any orthographic
 | :--- | :--- |
 | to **ac̃ieve** | **ac̃ievement** |
 | to **adorne** | **adornement** |
+| to **advance** | **advancement** |
 | to **advertyse** | **advertysement** |
 | to **ajoste** | **ajostement** |
-| to **amâse** | **amâsement** |
 | to **amuse** | **amusement** |
+| to **amâse** | **amâsement** |
 | to **comitte** | **comittement** |
 | to **confîne** | **confînement** |
+| to **deploie** | **deploiement** |
 | to **disbarre** | **disbarrement** |
 | to **empeire** | **empeirement** |
+| to **emploie** | **emploiement** |
 | to **encoûrage** | **encoûragement** |
+| to **enforce** | **enforcement** |
 | to **engâge** | **engâgement** |
+| to **enhance** | **enhancement** |
+| to **enjoie** | **enjoiement** |
 | to **excîte** | **excîtement** |
 | to **improuve** | **improuvement** |
 | to **installe** | **installement** |
@@ -166,12 +174,6 @@ Most verbs simply attach **-ment** directly to the stem without any orthographic
 | to **paie** | **paiement** |
 | to **ponișe** | **ponișement** |
 | to **replâce** | **replâcement** |
-| to **enhance** | **þi enhancement** |
-| to **advance** | **þi advancement** |
-| to **enforce** | **þi enforcement** |
-| to **deploie** | **deploiement** |
-| to **emploie** | **emploiement** |
-| to **enjoie** | **enjoiement** |
 
 ### 2. Stem Changes Before -ment
 Certain verbs undergo specific stem modifications when the suffix is added to preserve pronunciation or visual rhythm.
@@ -180,9 +182,9 @@ Certain verbs undergo specific stem modifications when the suffix is added to pr
 | Inglisce Verb | Inglisce Noun |
 | :--- | :--- |
 | to **conteine** | **contéinment** |
+| to **devèlope** | **devèlopment** |
 | to **entreteine** | **entretéinment** |
 | to **govirne** | **govirnment** |
-| to **devèlope** | **devèlopment** |
 
 **B. Vowel / Consonant Simplification:**
 | Inglisce Verb | Inglisce Noun | Rule |
@@ -217,6 +219,6 @@ Used to denote an irrational fear or aversion. It originates directly from the G
 
 | Modern English | Inglisce |
 | :--- | :--- |
-| **claustrophobia** | **claustrophóbia** |
-| **arachnophobia** | **arachnophóbia** |
 | **acrophobia** | **acrophóbia** |
+| **arachnophobia** | **arachnophóbia** |
+| **claustrophobia** | **claustrophóbia** |
