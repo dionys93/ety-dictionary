@@ -19,9 +19,9 @@ The "Chart Example" traces the exact reference words from the timeline, while th
 | **east, meat** | /ɛː/ | /eː/ | /eː/ | /iː/ | /iː/ | **/iː/** | **í, i-e** | east → **íst**, meat → **mite** |
 | **name** | /aː/ | /æː/ | /ɛː/ | /eː/ | /eɪ/ | **/eɪ/** | **â** | name → **nâme** |
 | **day** | /æj/ | /æːi/ | /ɛː/ | /eː/ | /eɪ/ | **/eɪ/** | **aie** | day → **daie** |
-| **house** | /uː/ | /ʊu̯/ | /əu̯/ | /ɑu̯/ | /ɑu̯/ | **/aʊ̯/** | **aû** | house → **haûse** |
-| **cow** | /uː/ | /ʊu̯/ | /əu̯/ | /ɑu̯/ | /ɑu̯/ | **/aʊ̯/** | **ô** | cow → **côe** |
-| **round** | /uː/ | /ʊu̯/ | /əu̯/ | /ɑu̯/ | /ɑu̯/ | **/aʊ̯/** | **ô** | round → **rônd** |
+| **house** | /uː/ | /ʊu̯/ | /əu̯/ | /ɑu̯/ | /ɑu̯/ | **/æʊ̯/** | **aû** | house → **haûse** |
+| **cow** | /uː/ | /ʊu̯/ | /əu̯/ | /ɑu̯/ | /ɑu̯/ | **/æʊ̯/** | **ô** | cow → **côe** |
+| **round** | /uː/ | /ʊu̯/ | /əu̯/ | /ɑu̯/ | /ɑu̯/ | **/æʊ̯/** | **ô** | round → **rônd** |
 | **moon, soon** | /oː/ | /uː/ | /uː/ | /uː/ | /uː/ | **/uː/** | **ou** | moon → **moune**, soon → **soun** |
 | **book** | /oː/ | /uː/ | /uː/ | /ʊ/ | /ʊ/ | **/ʊ/** | **ô** | book → **bôc** |
 | **blood, flood (irregular)** | /oː/ | /uː/ | /uː/ | /ʊ/ | /ʌ/ | **/ʌ/** | **o-e** | blood → **blode**, flood → **flode** |
@@ -35,8 +35,6 @@ The "Chart Example" traces the exact reference words from the timeline, while th
 | **that** | /a/ | /a/ | /æ/ | /æ/ | /æ/ | **/æ/** | **a** | that → **þat** |
 | **fox** | /o/ | /o/ | /ɔ/ | /ɔ/ | /ɔ/ | **/ɒ/** | **o** | fox → **fox** |
 | **cut** | /ʊ/ | /ʊ/ | /ɤ/ | /ʌ/ | /ʌ/ | **/ʌ/** | **u** | cut → **cutte** |
-
-*(Note: The 1400–1900 timeline and intermediate phonetic values, including non-syllabic glides, directly reflect standard Great Vowel Shift charting. Empty phonetic shifts between centuries indicate the pronunciation remained stable during that period. Forward slashes in 1500 and 1600 indicate dialectal divergences.)*
 
 ---
 
