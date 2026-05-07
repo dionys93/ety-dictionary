@@ -1,11 +1,10 @@
 # The Great Vowel Shift and Phonetic Restoration
 
-The Great Vowel Shift was a centuries-long evolution in the pronunciation of English long vowels. While spoken English drifted significantly between the 1400s and 1800s—with the highest vowels breaking into diphthongs—the orthography remained stubbornly frozen in its Middle English state. 
+The Great Vowel Shift was a centuries-long evolution in the pronunciation of English long vowels. While spoken English drifted significantly between the 1400s and 1800s—with the highest vowels breaking into diphthongs—the orthography remained stubbornly frozen in its Middle English state.
 
-Because of this historical mutation, Modern English vowel sounds now completely contradict their original Latin roots, leaving English orthography isolated. While almost every other modern Romance and Germanic language maintains the "Continental" standard (where A is /ɑ/, E is /e/, and I is /i/), English has become an island of phonetic anomalies.
+Because of this historical mutation, many Modern English vowel sounds now completely contradict their original Latin roots, leaving English orthography isolated. While almost every other modern Romance and Germanic language maintains the "Continental" standard (where A is /ɑ/, E is /e/, and I is /i/), English has become an island of phonetic anomalies.
 
-**Inglisce** solves this by acting like a medieval Romance scribe. Just as French and Italian scribes built orthographic rules to adapt classical Latin to their evolving vernaculars, Inglisce accommodates the Great Vowel Shift rather than fighting it. It assumes the historical, Continental root as the baseline, but applies a strict, Romance-inspired spelling system to capture the modern pronunciation.
-The word’s visual DNA is preserved as much as possible, with structural changes made only when the modern spoken sound demands it.
+Inglisce solves this by acting like a medieval Romance scribe. Just as French and Italian scribes built orthographic rules to adapt classical Latin to their evolving vernaculars, Inglisce accommodates the Great Vowel Shift rather than fighting it. It assumes the historical, Continental root as the baseline, but applies a strict, Romance-inspired spelling system to capture the modern pronunciation. The word’s visual DNA is preserved as much as possible, with structural changes made only when the modern spoken sound demands it.
 
 ### Century-by-Century Phonetic Evolution
 
