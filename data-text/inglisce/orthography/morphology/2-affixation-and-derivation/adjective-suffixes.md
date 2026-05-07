@@ -1,40 +1,51 @@
--abilis/-bilis [L]
--able/-ible [FR] (adj)
-https://www.etymonline.com/word/-able#etymonline_v_49
-https://www.etymonline.com/word/-ible#etymonline_v_34527
-
--abilitas [L]
--ability/-ibility [ME]
--abilatie/-ibilatie -is (f n)
-https://www.etymonline.com/word/-ability#etymonline_v_41
-https://www.etymonline.com/word/-ible#etymonline_v_34527
+# Adjective Suffixes and Derivation
 
 ---
 
--isc [OE]
--ish [MI]
--isce (adj, m n)
-https://www.etymonline.com/word/-ish#etymonline_v_12259
-https://www.oed.com/dictionary/ish_suffix1?tab=factsheet#99221
-https://bosworthtoller.com/20802
+## 1. The ⟨-able / -ible⟩ Suffixes
+
+Deriving from Latin *-abilis* and *-bilis* via Old French, these suffixes denote capacity, fitness, or ability. While Inglisce maintains the adjective forms **-able** and **-ible**, it strictly regularizes their abstract noun derivations (Modern English *-ability* and *-ibility*).
+
+In Inglisce, these nouns are formed using the **-abilatie** and **-ibilatie** suffixes, which pluralize regularly with **-is**.
+
+| Modern English | Inglisce Adjective | Inglisce Abstract Nouns |
+| :--- | :--- | :--- |
+| **capable / capability** | **câpable** | **câpabilatie, câpabilatis** |
+| **flexible / flexibility** | **flexible** | **flexibilatie, flexibilatis** |
 
 ---
 
--ivus [L]
--if/-ive [FR]
--if (adj)
-https://www.etymonline.com/word/-ive#etymonline_v_32842
+## 2. The Germanic ⟨-isce⟩ Suffix
 
-# Latin Suffix "-ivus"
+In Modern English, the suffix **-ish** (along with related contractions like the **-sh** in *Welsh*) is used to form adjectives denoting nationality, origin, or general characteristics. This suffix descends directly from the Old English **-isc** (e.g., *Englisc*).
+
+Inglisce restores the ancestral orthography of this suffix by replacing the modern *-ish* or *-sh* with **-isce** or **-sce**. 
+
+### The Capitalization Rule
+Because Inglisce uses the exact same spelling for both a descriptive adjective and the name of a language, it relies on strict capitalization to distinguish their grammatical roles:
+
+* **Adjectives and Demonyms** (describing people, culture, or objects) are **strictly lowercase**. 
+  * *Example:* "þe **spanisce** lânguage" or "þi **inglisce** ueþre"
+* **Proper Nouns for Languages** are **capitalized**.
+  * *Example:* "I spiec **Spanisce**." or "Hie lissanes to **Inglisce**."
+
+| Modern English | Inglisce Adjective (Lowercase) | Inglisce Noun (Capitalized) | 
+| :--- | :--- | :--- | 
+| **British** | **britisce** | -- | 
+| **Spanish** | **spanisce** | **Spanisce** |
+| **English** | **inglisce** | **Inglisce** | 
+| **Welsh** | **uelsce** | **Uelsce** |
+
+---
+
+## 3. The ⟨-if⟩ Suffix (Latin *-ivus*)
 
 Modern English adjectives ending in **-ive** derive from the Latin suffix **-ivus**, which was historically attached to various verb participles (*-atus*, *-sus*, *-tus*).
 
-**Inglisce** standardizes this suffix to **-if** (pronounced /ɪv/). The spelling derivations shift based on the terminal consonant of the root verb.
+Inglisce standardizes this suffix to **-if** (pronounced /ɪv/). The exact spelling derivation shifts mechanically based on the terminal consonant of the root verb.
 
----
-
-### 1. The "-at-" Participles (-atif)
-Verbs derived from Latin *-atus* end in `-âte` or `-ait`. The adjective suffix becomes **-atif** (or **-âtif**).
+### The "-at-" Participles (-atif)
+Verbs derived from Latin *-atus* end in `-âte` or `-ait`. To form the adjective, the suffix becomes **-atif** (or **-âtif**).
 
 | Modern English | Inglisce Verb | Inglisce Adjective |
 | :--- | :--- | :--- |
@@ -46,10 +57,8 @@ Verbs derived from Latin *-atus* end in `-âte` or `-ait`. The adjective suffix 
 | **create / creative** | to **criâte** | **criâtif** |
 | **equate / equative** | to **equâte** | **equâtif** |
 
----
-
-### 2. The "-sus" Participles (-ssif)
-Latin verbs ending in *d* or *t* formed their participles with an *s*. Inglisce converts `-de` and `-mitte` verbs into **-ssif**.
+### The "-sus" Participles (-ssif)
+Latin verbs ending in *d* or *t* formed their participles with an *s*. Inglisce converts `-de` and `-mitte` verbs into the heavy **-ssif** suffix.
 
 | Modern English | Inglisce Verb | Inglisce Adjective |
 | :--- | :--- | :--- |
@@ -61,10 +70,8 @@ Latin verbs ending in *d* or *t* formed their participles with an *s*. Inglisce 
 | **permit / permissive** | to **permitte** | **permissif** |
 | **submit / submissive** | to **sobmitte** | **sobmissif** |
 
----
-
-### 3. The "-tus" Participles (-ctif)
-Verbs ending in a hard `-cte` simply append the **-if** suffix.
+### The "-tus" Participles (-ctif)
+Verbs ending in a hard, compressible `-cte` simply append the **-if** suffix without altering the structural consonants.
 
 | Modern English | Inglisce Verb | Inglisce Adjective |
 | :--- | :--- | :--- |
@@ -74,32 +81,18 @@ Verbs ending in a hard `-cte` simply append the **-if** suffix.
 
 ---
 
-Modern English -ous from Latin -osus and Greek -οῦς
+## 4. The ⟨-(e)us⟩ Suffix (Latin *-osus*)
 
-The suffix "-ous" plays a significant role in adjective formation in English. 
-It has its origins in both Latin and Greek, carrying over through Old French into English. 
-In Latin, the suffix "-osus" denotes "full of" or "abounding in," while in Greek, the suffix -οῦς has a similar meaning. 
-This suffix is used to create adjectives that denote possessing, full of, or having the qualities of the root noun.
+The suffix **-ous** plays a significant role in English adjective formation, originating in both Latin (*-osus*, denoting "full of" or "abounding in") and Greek (*-οῦς*), carrying over through Old French into English. 
 
-Inglisce uses -(e)us wherever English would use -(i/e)ous.
+Instead of the messy Modern English variations (*-ous*, *-ious*, *-eous*), Inglisce standardizes this terminal ending to **-us**, **-eus**, or **-ieus** whenever forming an adjective that denotes possessing or having the qualities of the root noun.
 
-Modern English:
-    gracious
-    ambitious
-    stupendous
-    atrocious
-    facetious
-    pious
-    venomous
-
-Inglisce:
-    grâceus
-    ambiceus
-    stupèndus
-    atroceus
-    facíceus
-    pîeus
-    venomus
-
-Citations:
-https://www.etymonline.com/word/-ous#etymonline_v_32820
+| Modern English | Inglisce Adjective |
+| :--- | :--- |
+| **gracious** | **grâceus** |
+| **ambitious** | **ambiceus** |
+| **stupendous** | **stupèndus** |
+| **atrocious** | **atroceus** |
+| **facetious** | **facíceus** |
+| **pious** | **pîeus** |
+| **venomous** | **venomus** |
