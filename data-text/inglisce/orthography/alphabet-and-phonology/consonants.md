@@ -9,7 +9,7 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | Grapheme | Primary IPA | Secondary IPA & Context | Inglisce Examples | Modern English |
 | :--- | :--- | :--- | :--- | :--- |
 | **B** | /b/ | | **boie**, **biefe**, **bîte** | boy, beef, bite |
-| **C** | /k/ | /s/ before I, E. <br> /ʃ/ before I/E + Vowel. | **câc**, **cyngue**, **cynic**, **citie**, **nâcion** | cake, king, cynic, city, nation |
+| **C** | /k/ | /s/ before I, E. <br> /s/ or /k/ before Y. <br> /ʃ/ before I/E + Vowel. | **câc**, **cyngue**, **cynic**, **citie**, **nâcion** | cake, king, cynic, city, nation |
 | **Ç** | /s/ | /ʃ/ before E, I. | **juçor**, **apríçiait** | juicer, appreciate |
 | **C̃** | /t͡ʃ/ | Always. | **c̃ine**, **c̃oice** | chin, choice |
 | **CH** | /k/ | /t͡ʃ/ only when followed by Î. | **architect**, **chîde** | architect, chide |
