@@ -8,12 +8,17 @@ In Modern English, the Germanic suffix **-er** (from Old English *-ere*) has bec
 
 ## 1. The General Formation Rule
 
-The default agent noun for a standard verb in Inglisce takes the French-derived **-eur** suffix. However, when dealing with hard velar consonants, the suffix mechanically shifts to the Latin **-or** to protect the pronunciation.
+The default agent noun for a standard verb in Inglisce takes the French-derived **-eur** suffix. However, when dealing with specific hard or soft terminal consonants, the suffix mechanically shifts to the Latin **-or** to protect the pronunciation.
 
 ### The Velar Shedding Rule 
-When a verb ends in **-che**, **-gue**, or **-que**, the modifying letter (`h` or `u`) is used as a shield to keep the consonant hard before the final `e`. 
+When a verb ends in **-che**, **-gue**, or **-que**, the modifying letter (`h` or `u`) is used as a shield to keep the consonant hard before the final silent `e`. 
 
 When forming the agent noun, Inglisce drops this bulky shield and attaches **-or**. Because `c` and `g` are naturally hard before the back vowel `o`, the spelling becomes incredibly sleek without losing its phonetic integrity.
+
+### Soft Consonant Preservation
+Conversely, when verbs end in a soft **-ce** (`/s/`) or soft **-ge** (`/dʒ/`), they also shift to the **-or** suffix. To prevent the 'c' and 'g' from accidentally hardening before the 'o', Inglisce uses orthographic markers to lock the soft pronunciation in place:
+* For **-ce**, the 'c' takes a cedilla (**ç**) before adding **-or**.
+* For **-ge**, an **i** is inserted before the **-or** to protect the soft 'g'.
 
 ### Orthographic Pattern
 | Verb Ending | Agent Suffix | Structural Logic | Inglisce Examples |
@@ -22,6 +27,8 @@ When forming the agent noun, Inglisce drops this bulky shield and attaches **-or
 | **-che** | **-cor** | Sheds the `h`, as `c` is hard before `o`. | bâche → **bâcor**, spieche → **spiecor** |
 | **-gue** | **-gor** | Sheds the `u`, as `g` is hard before `o`. | singue → **singor** |
 | **-que** | **-cor** | Standardizes the `qu` to a hard `c` before `o`. | bânque → **bâncor** |
+| **-ce** | **-çor** | Uses a cedilla to preserve the soft `/s/`. | juce → **juçor**, spâce → **spâçor** |
+| **-ge** | **-gior** | Inserts an `i` to preserve the soft `/dʒ/`. | manage → **managior** |
 
 ### Standard Formations
 | Inglisce Verb | Agent Noun |
@@ -32,9 +39,12 @@ When forming the agent noun, Inglisce drops this bulky shield and attaches **-or
 | to **commande** | **commandeur** |
 | to **compute** | **computeur** |
 | to **infecte** | **infecteur** |
+| to **juce** | **juçor** |
+| to **manage** | **managior** |
 | to **painte** | **painteur** |
 | to **r̃aite** | **r̃aiteur** |
 | to **singue** | **singor** |
+| to **spâce** | **spâçor** |
 | to **spieche** | **spiecor** |
 | to **tiec̃e** | **tiec̃eur** |
 
@@ -79,3 +89,5 @@ Words ending in the Greek root **-graph** (denoting writing, recording, or descr
 | :--- | :--- |
 | **fótograph** | **fotographor** |
 | **îconograph** | **îconographor** |
+
+---
