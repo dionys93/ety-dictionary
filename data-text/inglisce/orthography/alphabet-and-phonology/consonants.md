@@ -13,7 +13,7 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **C** | /kʲ/ | Before U-E, Ú, UAI | **cute**, **cue**, **cús**, **evàcuait** | cute, cue, cues, evacuate |
 | **C** | /kw/ | Before UI, OI | **cuine, vencoișe** | queen, vanquish |
 | **C** | /s/ | Before I, E | **citie** | city |
-| **C** | /s/ or /k/ | Before Y | **cynic**, **cyngue** | cynic, king |
+| **C** | /s/ <br> or /k/ | Before Y | **cynic**, **cyngue** | cynic, king |
 | **C** | /ʃ/ | Before I/E + Vowel | **nâcion** | nation |
 | **Ç** | /s/ | Default (before A, O, U) | **juçor** | juicer |
 | **Ç** | /ʃ/ | Before E, I | **apríçiait** | appreciate |
