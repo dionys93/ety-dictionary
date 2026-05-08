@@ -22,9 +22,9 @@ Inglisce Prefixes
 | poast- | after, postpone | poastscript |
 | re-/ri- | again/back, return | repite |
 | fore- | before/front,forecast | forehede |
-| arch- | chief/principal, archnemesis | archbishop |
+| arch- | chief/principal, archnemesis | arc̃ebisciop |
 | pro- | forward/for, promote | procide |
-| mono- | one, monologue | monochrome |
+| mono- | one, monologue | monocrome |
 | poly- | many, polygon | polyglot |
 | multi- | many, multicolor | multiplae |
 | omni- | all, omnivore | omnipotent |
