@@ -19,7 +19,7 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **FF** | /f/ | Always. Protects short vowels. | **coffe**, **off**, **staffe** | cough, off, staff |
 | **FH** | /f/ | Replaces terminal historical *-gh*. | **rofh**, **tofh**, **enofh** | rough, tough, enough |
 | **G** | /g/ | /d͡ʒ/ before I, E, Y. | **gâme**, **gyme**, **Giorgia** | game, gym, Georgia |
-| **H** | /h/ | Initial. Silent buffer elsewhere. | **hope**, **sîht**, **sauhing** | hope, sight, sawing |
+| **H** | /h/ | Initial. Silent buffer elsewhere. | **hope**, **sîhte**, **sahing** | hope, sight, sawing |
 | **J** | /d͡ʒ/ | Always. | **joge**, **joque**, **jostice** | judge, joke, justice |
 | **L** | /l/ | /ɫ/ (dark L) final. /lʲ/ palatalized. | **lôc**, **falle**, **evàluait** | look, fall, evaluate |
 | **M** | /m/ | | **mamme**, **admitte** | mom, admit |
@@ -29,9 +29,10 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **P** | /p/ | | **poppe**, **happy** | pop, happy |
 | **PH** | /f/ | | **graphe**, **filosophie** | graph, philosophy |
 | **Q** | /k/ | /kw/ before U+vowel. | **equâte**, **joque**, **parqued** | equate, joke, parked |
-| **R** | /ɹ/ | | **red**, **starre** | red, star |
+| **R** | /ɹ/ | | **red**, **ringue**, **starre** | red, ring, star |
+| **R̃** | /ɹ/ | Preserves historical *wr-* cluster. | **r̃aite**, **r̃ingue** | write, wring |
 | **S** | /s/ | /z/ between/after vowels. <br> /ʃ/ before I/E + Vowel. <br> /ʒ/ between a vowel and i | **simple**, **friese**, **seoe**, **seade** **nausia**, **vision** | simple, freeze, show, shade, nausea, vision |
-| **Ș** | /ʃ/ | /ʒ/ between vowels. | **finișe**, **vișual** | finish, visual |
+| **Ș** | /ʃ/ | /ʒ/ between root and suffix. | **finișe**, **vișual** | finish, visual |
 | **SC** | /ʃ/ | /sk/ before A, O, U. | **scîne**, **scoupe** | shine, scoop |
 | **T** | /t/ | /ɾ/ (flap) between vowels. | **tâche**, **batture**, **litture** | take, batter, litter |
 | **Ț** | /t͡ʃ/ | Assibilation. | **fiețure**, **națural** | feature, natural |
