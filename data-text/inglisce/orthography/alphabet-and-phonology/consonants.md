@@ -1,6 +1,6 @@
 # Consonants in Inglisce
 
-Inglisce reorganizes the English consonant inventory to achieve absolute phonetic predictability while preserving vital etymological markers. Ambiguous digraphs (like *th*, *sh*, and *ch*) are strictly regulated or replaced, and the system relies on structured diacritics (cedillas, tildes) to indicate predictable shifts like assibilation or palatalization.
+Inglisce reorganizes the English consonant inventory to achieve absolute phonetic predictability while preserving vital etymological markers. Ambiguous digraphs (like *ch*) are strictly regulated or replaced, and the system relies on structured diacritics to indicate predictable shifts like assibilation or palatalization.
 
 ---
 
