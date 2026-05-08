@@ -19,7 +19,7 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **Ç** | /ʃ/ | Before E, I | **apríçiait** | appreciate |
 | **C̃** | /t͡ʃ/ | Always | **c̃ine**, **c̃ouse**, <br> **c̃oice**, **mac̃e** | chin, choose, <br> choice, match |
 | **CH** | /k/ | Default | **architect**, **mâche** | architect, make |
-| **CH** | /t͡ʃ/ | Only when followed by Î | **chîde** | chide |
+| **CH** | /t͡ʃ/ | Only when followed by Î | **chîde**, **chîld** | chide, child |
 | **D** | /d/ | Always | **dogue**, **dade** | dog, dad |
 | **Ḑ / D̦**| /d͡ʒ/ | Assibilation (often from *du*) | **procíḑure**, **eḑucait** | procedure, educate |
 | **F** | /f/ | Default | **fâce**, **caufie** | face, coffee |
