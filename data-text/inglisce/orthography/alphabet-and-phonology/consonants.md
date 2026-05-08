@@ -60,8 +60,8 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **T** | /t/ | Default | **tâche**, **tape** | take, tap |
 | **T** | /ɾ/ | Between vowels (flap) | **batture**, **litture** | batter, litter |
 | **Ț** | /t͡ʃ/ | Assibilation | **fiețure**, **națural** | feature, natural |
-| **Ћ** | /θ/ | Voiceless in content words | **bâþe**, **braiþ** | bathe, breath |
-| **Ћ** | /ð/ | Voiced in function words | **þe** | the |
+| **Ћ** | /θ/ | Voiceless in content words | **braiþ**, **hailþ**, **þru** | breath, health, through |
+| **Ћ** | /ð/ | Voiced in function words and between vowels | **þe**, **þis**, **þat**, <br> **bâþe**, **brieþe**  | the, this, that, bathe, breathe |
 | **V** | /v/ | Always | **voice**, **victorie** | voice, victory |
 | **X** | /ks/ | Default | **tax** | tax |
 | **X** | /gz/ | Between vowels | **example** | example |
