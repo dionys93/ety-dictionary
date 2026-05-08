@@ -64,7 +64,7 @@ The silent 'g' and historical 'k' clusters in English are handled strictly by th
 
 * **Latin & French (Preserved & Sounded):** In words of Romance origin, the 'g' is preserved to anchor the vowel shift and maintain the root for derivations.
   * **-ign** = `/aɪn/` (e.g., *sign* → **signe**, *vine* → **vigne**, *wine* → **uigne**). When a suffix is added, the hard 'g' usually sounds (e.g., **signațure**).
-  * **-aign / -égn** = `/eɪn/` (e.g., *reign* → **reigne**, *campaign* → **campaign**).
+  * **-aign / -eigne** = `/eɪn/` (e.g., *reign* → **reigne**, *campaign* → **campaign**).
   * **The French Palatal Nasal (gn = /nj/):** While the **ñ** diacritic is the standard marker for the palatalized 'n', specific Romance imports preserve the **gn** digraph to represent that exact same `/nj/` sound, maintaining their historical visual identity (e.g., *onion* → **ognon**, *vineyard* → **vignard**).
   * **Aesthetic Re-addition:** Inglisce sometimes restores a Latin 'g' that Modern English lost, completing the visual root family (e.g., *complain* → **complaigne**, matching *complaignant*).
 
