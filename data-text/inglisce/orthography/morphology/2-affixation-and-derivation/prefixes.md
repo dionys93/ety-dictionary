@@ -3,7 +3,7 @@
 | Inglisce Prefix | Meaning | Inglisce Example |
 | :--- | :--- | :--- |
 | **un-** | not / opposite | **undou** |
-| **in-** *(also im-, ir-, il-)* | not / into | **impossible** |
+| **in-** *(also im-, ir-, il-)* | not / into | **impossible**, **irresponsible**, **illígal** |
 | **dis- / des-** | not / apart | **disagríe** |
 | **non-** | not / without | **nonsense** |
 | **mis-** | wrongly / incorrect | **misonderstande** |
