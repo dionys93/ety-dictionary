@@ -34,7 +34,8 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **S** | /s/ | /z/ between/after vowels. <br> /ʃ/ before I/E + Vowel. <br> /ʒ/ between a vowel and i | **simple**, **friese**, **seoe**, **seade** **nausia**, **vision** | simple, freeze, show, shade, nausea, vision |
 | **Ș** | /ʃ/ | /ʒ/ between root and suffix. | **finișe**, **vișual** | finish, visual |
 | **SC** | /ʃ/ | /sk/ before A, O, U. | **scîne**, **scoupe** | shine, scoop |
-| **T** | /t/ | /ɾ/ (flap) between vowels. | **tâche**, **batture**, **litture** | take, batter, litter |
+| **SCH** | /sk/ | /sk/ before E, I. | **schec̃e**, **schine** | sketch, skin |
+| **T** | /t/ | /ɾ/ (flap) between vowels. | **tâche**, **tape**, **batture**, **litture** | take, tap, batter, litter |
 | **Ț** | /t͡ʃ/ | Assibilation. | **fiețure**, **națural** | feature, natural |
 | **Ћ** | /ð/ | Voiceless /θ/ in content words. | **þe**, **bâþe**, **braiþ** | the, breath, bathe |
 | **V** | /v/ | | **voice**, **victorie** | voice, victory |
