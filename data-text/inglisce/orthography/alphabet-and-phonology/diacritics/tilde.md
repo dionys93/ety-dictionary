@@ -23,7 +23,7 @@ In Old English, words beginning with the `wr-` cluster were pronounced exactly a
 
 | Phonetic Value | Inglisce Examples | Modern English Equivalent |
 | :--- | :--- | :--- |
-| /r/ | **r̃aite**, **r̃oat**, **r̃itan**, **r̃ongue** | write, wrote, written, wrong |
+| /r/ | **r̃aite**, **r̃oat**, **r̃itan**, **r̃ingue**, **r̃ong**  | write, wrote, written, wring, wrung |
 
 #### 3. Palatalized Nasals ( M̃ and Ñ )
 The **m̃** and **ñ** represent the consonantal units `/mj/` and `/nj/`, reflecting a development where a nasal consonant is immediately followed by a palatal glide (a *yod*). 
