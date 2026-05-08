@@ -29,7 +29,7 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **G** | /g/ | Default (before A, O, U) | **gâme** | game |
 | **G** | /gʲ/ | Before U-E, Ú, UAI | **argue**, **argument** | argue, argument |
 | **G** | /gw/ | Before UA | **lânguage** | language |
-| **G** | /gw/ | Before OI, ÜI | **pengoin**, **lingüistic** | penguin, linguistic |
+| **G** | /gw/ | Before OI, ÜI | **pengoin**, **distingoișe**, **lingüistic** | penguin, distinguish linguistic |
 | **G** | /d͡ʒ/ | Before I, E, Y | **gyme**, **Giorgia** | gym, Georgia |
 | **H** | /h/ | Initial | **hope** | hope |
 | **H** | Silent | Buffer elsewhere | **sîhte**, **sahing** | sight, sawing |
