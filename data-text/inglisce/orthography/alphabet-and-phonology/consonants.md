@@ -6,43 +6,65 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 
 ## 1. The Master Consonant Matrix
 
-| Grapheme | Primary IPA | Secondary IPA & Context | Inglisce Examples | Modern English |
+| Grapheme | IPA | Environment / Context | Inglisce Examples | Modern English |
 | :--- | :--- | :--- | :--- | :--- |
-| **B** | /b/ | | **boie**, **biefe**, **bîte** | boy, beef, bite |
-| **C** | /k/ | /s/ before I, E. <br> /s/ or /k/ before Y. <br> /ʃ/ before I/E + Vowel. | **câc**, **cyngue**, **cynic**, **citie**, **nâcion** | cake, king, cynic, city, nation |
-| **Ç** | /s/ | /ʃ/ before E, I. | **juçor**, **apríçiait** | juicer, appreciate |
-| **C̃** | /t͡ʃ/ | Always. | **c̃ine**, **c̃oice** | chin, choice |
-| **CH** | /k/ | /t͡ʃ/ only when followed by Î. | **architect**, **chîde** | architect, chide |
-| **D** | /d/ | | **dogue**, **dade** | dog, dad |
-| **Ḑ / D̦**| /d͡ʒ/ | Assibilation (often from *du*). | **procíḑure**, **eḑucait** | procedure, educate |
-| **F** | /f/ | /v/ at word ends, or before plural S. | **fâce**, **caufie**, **nâtif**, **lîfs** | face, coffee, native, lives |
-| **FF** | /f/ | Always. Protects short vowels. | **coffe**, **off**, **staffe** | cough, off, staff |
-| **FH** | /f/ | Replaces terminal historical *-gh*. | **rofh**, **tofh**, **enofh** | rough, tough, enough |
-| **G** | /g/ | /d͡ʒ/ before I, E, Y. | **gâme**, **gyme**, **Giorgia** | game, gym, Georgia |
-| **H** | /h/ | Initial. Silent buffer elsewhere. | **hope**, **sîhte**, **sahing** | hope, sight, sawing |
-| **J** | /d͡ʒ/ | Always. | **joge**, **joque**, **jostice** | judge, joke, justice |
-| **L** | /l/ | /ɫ/ (dark L) final. /lʲ/ palatalized. | **lôc**, **falle**, **evàluait** | look, fall, evaluate |
-| **M** | /m/ | | **mamme**, **admitte** | mom, admit |
-| **M̃** | /mj/ | M + yod glide. | **am̃onicion**, **m̃usíom** | ammunition, museum |
-| **N** | /n/ | | **not**, **net** | not, net |
-| **Ñ** | /nʲ/ | N + yod glide. | **añual**, **Jañuarie** | annual, January |
-| **P** | /p/ | | **poppe**, **happy** | pop, happy |
-| **PH** | /f/ | | **graphe**, **filosophie** | graph, philosophy |
-| **Q** | /k/ | /kw/ before U+vowel. | **equâte**, **joque**, **parqued** | equate, joke, parked |
-| **R** | /ɹ/ | | **red**, **ringue**, **starre** | red, ring, star |
-| **R̃** | /ɹ/ | Preserves historical *wr-* cluster. | **r̃aite**, **r̃ingue** | write, wring |
-| **S** | /s/ | /z/ between/after vowels. <br> /ʃ/ before I/E + Vowel. <br> /ʒ/ between a vowel and i | **simple**, **friese**, **seoe**, **seade** **nausia**, **vision** | simple, freeze, show, shade, nausea, vision |
-| **Ș** | /ʃ/ | /ʒ/ between root and suffix. | **finișe**, **vișual** | finish, visual |
-| **SC** | /ʃ/ | /sk/ before A, O, U. | **scîne**, **scoupe** | shine, scoop |
-| **SCH** | /sk/ | /sk/ before E, I. | **schec̃e**, **schine** | sketch, skin |
-| **T** | /t/ | /ɾ/ (flap) between vowels. | **tâche**, **tape**, **batture**, **litture** | take, tap, batter, litter |
-| **Ț** | /t͡ʃ/ | Assibilation. | **fiețure**, **națural** | feature, natural |
-| **Ћ** | /ð/ | Voiceless /θ/ in content words. | **þe**, **bâþe**, **braiþ** | the, breath, bathe |
-| **V** | /v/ | | **voice**, **victorie** | voice, victory |
-| **X** | /ks/ | /gz/ | **tax**, **example** | tax, example |
-| **X̦** |  /kʃ/ in multisyllables | | **sex̦ual** | sexual |
-| **X̃** | /t͡ʃ/ | | **uix̃e**, **max̃e** | witch, match |
-| **Z** | /z/ | /ʒ/ intervocalic before I/E+vowel. | **zou**, **azeure** | zoo, azure |
+| **B** | /b/ | Always | **boie**, **biefe**, **bîte** | boy, beef, bite |
+| **C** | /k/ | Default (before A, O, U) | **câc** | cake |
+| **C** | /kʲ/ | Before U-E, Ú, UAI | **cute**, **cue**, **cús**, **evàcuait** | cute, cue, cues, evacuate |
+| **C** | /kw/ | Before UI, OI | **cuine, vencoișe** | queen, vanquish |
+| **C** | /s/ | Before I, E | **citie** | city |
+| **C** | /s/ or /k/ | Before Y | **cynic**, **cyngue** | cynic, king |
+| **C** | /ʃ/ | Before I/E + Vowel | **nâcion** | nation |
+| **Ç** | /s/ | Default (before A, O, U) | **juçor** | juicer |
+| **Ç** | /ʃ/ | Before E, I | **apríçiait** | appreciate |
+| **C̃** | /t͡ʃ/ | Always | **c̃ine**, **c̃oice** | chin, choice |
+| **CH** | /k/ | Default | **architect** | architect |
+| **CH** | /t͡ʃ/ | Only when followed by Î | **chîde** | chide |
+| **D** | /d/ | Always | **dogue**, **dade** | dog, dad |
+| **Ḑ / D̦**| /d͡ʒ/ | Assibilation (often from *du*) | **procíḑure**, **eḑucait** | procedure, educate |
+| **F** | /f/ | Default | **fâce**, **caufie** | face, coffee |
+| **F** | /v/ | At word ends, or before plural S | **nâtif**, **lîfs** | native, lives |
+| **FF** | /f/ | Always (protects short vowels) | **coffe**, **off**, **staffe** | cough, off, staff |
+| **FH** | /f/ | Replaces terminal historical *-gh* | **rofh**, **tofh**, **enofh** | rough, tough, enough |
+| **G** | /g/ | Default (before A, O, U) | **gâme** | game |
+| **G** | /d͡ʒ/ | Before I, E, Y | **gyme**, **Giorgia** | gym, Georgia |
+| **H** | /h/ | Initial | **hope** | hope |
+| **H** | Silent | Buffer elsewhere | **sîhte**, **sahing** | sight, sawing |
+| **J** | /d͡ʒ/ | Always | **joge**, **joque**, **jostice** | judge, joke, justice |
+| **L** | /l/ | Default | **lôc** | look |
+| **L** | /ɫ/ | Final position (dark L) | **falle** | fall |
+| **L** | /lʲ/ | Palatalized | **evàluait** | evaluate |
+| **M** | /m/ | Always | **mamme**, **admitte** | mom, admit |
+| **M̃** | /mʲ/ | M + yod glide | **am̃onicion**, **m̃usíom** | ammunition, museum |
+| **N** | /n/ | Always | **not**, **net** | not, net |
+| **Ñ** | /nʲ/ | N + yod glide | **añual**, **Jañuarie** | annual, January |
+| **P** | /p/ | Always | **poppe**, **happy** | pop, happy |
+| **PH** | /f/ | Always | **graphe**, **filosophie** | graph, philosophy |
+| **Q** | /k/ | Default | **joque**, **parqued** | joke, parked |
+| **Q** | /kw/ | Before U + vowel | **equâte**, **joque** | equate, joke |
+| **R** | /ɹ/ | Always | **red**, **ringue**, **starre** | red, ring, star |
+| **R̃** | /ɹ/ | Preserves historical *wr-* cluster | **r̃aite**, **r̃ingue** | write, wring |
+| **S** | /s/ | Default | **simple** | simple |
+| **S** | /z/ | Between / after vowels | **friese** | freeze |
+| **S** | /ʃ/ | Before I/E + Vowel | **seoe**, **seade**, **nausia** | show, shade, nausea |
+| **S** | /ʒ/ | Between a vowel and I | **vision** | vision |
+| **Ș** | /ʃ/ | Default | **finișe** | finish |
+| **Ș** | /ʒ/ | Between root and suffix | **vișual** | visual |
+| **SC** | /ʃ/ | Default | **scîne** | shine |
+| **SC** | /sk/ | Before A, O, U | **scoupe** | scoop |
+| **SCH** | /sk/ | Before E, I | **schec̃e**, **schine** | sketch, skin |
+| **T** | /t/ | Default | **tâche**, **tape** | take, tap |
+| **T** | /ɾ/ | Between vowels (flap) | **batture**, **litture** | batter, litter |
+| **Ț** | /t͡ʃ/ | Assibilation | **fiețure**, **națural** | feature, natural |
+| **Ћ** | /θ/ | Voiceless in content words | **bâþe**, **braiþ** | bathe, breath |
+| **Ћ** | /ð/ | Voiced in function words | **þe** | the |
+| **V** | /v/ | Always | **voice**, **victorie** | voice, victory |
+| **X** | /ks/ | Default | **tax** | tax |
+| **X** | /gz/ | Between vowels | **example** | example |
+| **X̦** | /kʃ/ | Multisyllables | **sex̦ual** | sexual |
+| **X̃** | /t͡ʃ/ | Monosyllables | **uix̃e**, **max̃e** | witch, match |
+| **Z** | /z/ | Default | **zou** | zoo |
+| **Z** | /ʒ/ | Intervocalic before I/E + Vowel | **azeure** | azure |
 
 ---
 
