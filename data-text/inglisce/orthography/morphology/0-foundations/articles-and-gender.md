@@ -30,7 +30,7 @@ This category naturally captures heavy Romance imports and derived nouns where s
 | Noun | Stress Pattern | Definite Article |
 | :--- | :--- | :--- |
 | **comission** | 2nd Syllable (co-MIS-sion) | **þa comission** |
-| **maçine** | 2nd Syllable (ma-CHIENE) | **þa maçine** |
+| **maçine** | 2nd Syllable (ma-CHIENE) | **þa maçine** |
 | **limitâcion**| 3rd Syllable (li-mi-TÂ-cion) | **þa limitâcion** |
 
 #### The Derivational Gender Shift
@@ -55,3 +55,21 @@ This prevents an awkward phonetic hiatus (vowel clash). Instead, all vowel-initi
 | **emission** | Feminine (2nd Syllable) | **þi emission** |
 
 *(Note: The **þi** override applies strictly to pronunciation. If a word begins with a consonant visually but a vowel phonetically—or vice versa—the spoken sound dictates the use of the euphonic article).*
+
+---
+
+## The Indefinite Articles
+
+Unlike the stress-dependent definite articles, the indefinite articles in Inglisce are **ungendered**. They function exactly as they do in Modern English, relying entirely on euphony (the initial sound of the following word) rather than syllable weight.
+
+* **a**: Used before nouns (or modifying adjectives) that begin with a spoken consonant.
+* **an**: Used before nouns (or modifying adjectives) that begin with a spoken vowel.
+
+| Noun | Initial Sound | Indefinite Article |
+| :--- | :--- | :--- |
+| **pitte** | Consonant | **a pitte** |
+| **câve** | Consonant | **a câve** |
+| **maçine** | Consonant | **a maçine** |
+| **âpe** | Vowel | **an âpe** |
+| **èdit** | Vowel | **an èdit** |
+| **emission** | Vowel | **an emission** |
