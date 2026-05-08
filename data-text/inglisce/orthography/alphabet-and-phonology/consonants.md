@@ -63,12 +63,12 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **Ћ** | /θ/ | Voiceless in content words | **braiþ**, **hailþ**, **þru** | breath, health, through |
 | **Ћ** | /ð/ | Voiced in function words and between vowels | **þe**, **þis**, **þat**, <br> **bâþe**, **brieþe**  | the, this, that, bathe, breathe |
 | **V** | /v/ | Always | **voice**, **victorie** | voice, victory |
-| **X** | /ks/ | Default | **tax** | tax |
+| **X** | /ks/ | Default | **taxe** | tax |
 | **X** | /gz/ | Between vowels | **example** | example |
 | **X̦** | /kʃ/ | Multisyllables | **sex̦ual** | sexual |
 | **X̃** | /t͡ʃ/ | Monosyllables | **uix̃e**, **max̃e** | witch, match |
 | **Z** | /z/ | Default | **zou** | zoo |
-| **Z** | /ʒ/ | Intervocalic before I/E + Vowel | **azeure** | azure |
+| **Z̦** | /ʒ/ | Default | **az̦ure** | azure |
 
 ---
 
