@@ -24,7 +24,7 @@
 | **fore-** | before / front | **forehede** |
 | **arc̃e- / arch-** | chief / principal | **arc̃ebisciop** |
 | **pro-** | forward / in favor of | **procide** |
-| **mono-** | one / single | **monocrome** |
+| **mono-** | one / single | **monochrome** |
 | **poly-** | many / multiple | **polyglot** |
 | **multi-** | many / much | **multiplae** |
 | **omni-** | all / everywhere | **omnipotent** |
