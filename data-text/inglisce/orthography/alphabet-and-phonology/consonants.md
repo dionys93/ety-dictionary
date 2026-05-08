@@ -27,6 +27,9 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **FF** | /f/ | Always (protects short vowels) | **coffe**, **off**, **staffe** | cough, off, staff |
 | **FH** | /f/ | Replaces terminal historical *-gh* | **rofh**, **tofh**, **enofh** | rough, tough, enough |
 | **G** | /g/ | Default (before A, O, U) | **gâme** | game |
+| **G** | /gʲ/ | Before U-E, Ú, UAI | **argue**, **argument** | argue, argument |
+| **G** | /gw/ | Before UA | **lânguage** | language |
+| **G** | /gw/ | Before OI, ÜI | **pengoin**, **lingüistic** | penguin, linguistic |
 | **G** | /d͡ʒ/ | Before I, E, Y | **gyme**, **Giorgia** | gym, Georgia |
 | **H** | /h/ | Initial | **hope** | hope |
 | **H** | Silent | Buffer elsewhere | **sîhte**, **sahing** | sight, sawing |
@@ -41,7 +44,8 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **P** | /p/ | Always | **poppe**, **happy** | pop, happy |
 | **PH** | /f/ | Always | **graphe**, **filosophie** | graph, philosophy |
 | **Q** | /k/ | Default | **joque**, **parqued** | joke, parked |
-| **Q** | /kw/ | Before U + vowel | **equâte**, **joque** | equate, joke |
+| **Q** | /kw/ | Before U + A, O | **equâte**, **quote, quaistion** | equate, quote, question |
+| **Q** | /kw/ | Before Ü + I, E | **eqüipe** | equip |
 | **R** | /ɹ/ | Always | **red**, **ringue**, **starre** | red, ring, star |
 | **R̃** | /ɹ/ | Preserves historical *wr-* cluster | **r̃aite**, **r̃ingue** | write, wring |
 | **S** | /s/ | Default | **simple** | simple |
