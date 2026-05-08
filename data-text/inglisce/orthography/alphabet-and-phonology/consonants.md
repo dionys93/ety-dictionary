@@ -17,8 +17,8 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **C** | /ʃ/ | Before I/E + Vowel | **nâcion** | nation |
 | **Ç** | /s/ | Default (before A, O, U) | **juçor** | juicer |
 | **Ç** | /ʃ/ | Before E, I | **apríçiait** | appreciate |
-| **C̃** | /t͡ʃ/ | Always | **c̃ine**, **c̃oice** | chin, choice |
-| **CH** | /k/ | Default | **architect** | architect |
+| **C̃** | /t͡ʃ/ | Always | **c̃ine**, **c̃ouse**, <br> **c̃oice**, **mac̃e** | chin, choose, <br> choice, match |
+| **CH** | /k/ | Default | **architect**, **mâche** | architect, make |
 | **CH** | /t͡ʃ/ | Only when followed by Î | **chîde** | chide |
 | **D** | /d/ | Always | **dogue**, **dade** | dog, dad |
 | **Ḑ / D̦**| /d͡ʒ/ | Assibilation (often from *du*) | **procíḑure**, **eḑucait** | procedure, educate |
@@ -53,11 +53,11 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **R** | /ɹ/ | Always | **red**, **ringue**, **starre** | red, ring, star |
 | **R̃** | /ɹ/ | Preserves historical *wr-* cluster | **r̃aite**, **r̃ingue** | write, wring |
 | **S** | /s/ | Default | **simple** | simple |
-| **S** | /z/ | Between / after vowels | **friese**, **frise**, **mâse** | freeze, frieze, maze |
-| **S** | /ʃ/ | Before I/E + Vowel | **seoe**, **seade**, **nausia** | show, shade, nausea |
-| **S** | /ʒ/ | Between a vowel and I/E and vowel | **vision** | vision |
+| **S** | /z/ | Between / after vowels | **friese**, **frise**, <br> **mâse**, **seos** | freeze, frieze, maze, shows |
+| **S** | /ʃ/ | Before **I/E** + Vowel | **seoe**, **seade**, **nausia** | show, shade, nausea |
+| **S** | /ʒ/ | After a vowel, before **I/E** + Vowel | **vision** | vision |
 | **Ș** | /ʃ/ | Default | **finișe**, **șute** | finish, shut |
-| **Ș** | /ʒ/ | Between root and suffix | **vișual** | visual |
+| **Ș** | /ʒ/ | Between vowels | **vișual** | visual |
 | **SC** | /ʃ/ | Default | **scîne** | shine |
 | **SC** | /sk/ | Before A, O, U | **scoupe** | scoop |
 | **SCH** | /sk/ | Before E, I | **schec̃e**, **schine** | sketch, skin |
