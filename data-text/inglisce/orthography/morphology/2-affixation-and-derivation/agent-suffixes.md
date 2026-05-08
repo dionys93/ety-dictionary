@@ -10,8 +10,8 @@ In Modern English, the Germanic suffix **-er** (from Old English *-ere*) has bec
 
 The default agent noun for a standard verb in Inglisce takes the French-derived **-eur** suffix. However, when dealing with hard velar consonants, the suffix mechanically shifts to the Latin **-or** to protect the pronunciation.
 
-### The Velar Shedding Rule (-cor / -gor)
-When a verb ends in **-che** (hard /k/), **-gue** (hard /g/), or **-que** (hard /k/), the modifying letter (`h` or `u`) is used as a shield to keep the consonant hard before the final `e`. 
+### The Velar Shedding Rule 
+When a verb ends in **-che**, **-gue**, or **-que**, the modifying letter (`h` or `u`) is used as a shield to keep the consonant hard before the final `e`. 
 
 When forming the agent noun, Inglisce drops this bulky shield and attaches **-or**. Because `c` and `g` are naturally hard before the back vowel `o`, the spelling becomes incredibly sleek without losing its phonetic integrity.
 
