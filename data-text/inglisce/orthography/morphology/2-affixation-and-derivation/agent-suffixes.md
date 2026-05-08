@@ -23,7 +23,7 @@ Conversely, when verbs end in a soft **-ce** (`/s/`) or soft **-ge** (`/dʒ/`), 
 ### Orthographic Pattern
 | Verb Ending | Agent Suffix | Structural Logic | Inglisce Examples |
 | :--- | :--- | :--- | :--- |
-| **-e** | **-eur** | The standard default replacement. | painte → **painteur**, tiec̃e → **tiec̃eur** |
+| **-e** | **-eur** | The standard default replacement. | peinte → **peinteur**, tiec̃e → **tiec̃eur** |
 | **-che** | **-cor** | Sheds the `h`, as `c` is hard before `o`. | bâche → **bâcor**, spieche → **spiecor** |
 | **-gue** | **-gor** | Sheds the `u`, as `g` is hard before `o`. | singue → **singor** |
 | **-que** | **-cor** | Standardizes the `qu` to a hard `c` before `o`. | bânque → **bâncor** |
@@ -41,7 +41,7 @@ Conversely, when verbs end in a soft **-ce** (`/s/`) or soft **-ge** (`/dʒ/`), 
 | to **infecte** | **infecteur** |
 | to **juce** | **juçor** |
 | to **manage** | **managior** |
-| to **painte** | **painteur** |
+| to **peinte** | **peinteur** |
 | to **r̃aite** | **r̃aiteur** |
 | to **singue** | **singor** |
 | to **spâce** | **spâçor** |
