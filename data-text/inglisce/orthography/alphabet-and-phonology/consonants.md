@@ -10,10 +10,10 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | :--- | :--- | :--- | :--- | :--- |
 | **B** | /b/ | Always | **boie**, **biefe**, **bîte** | boy, beef, bite |
 | **C** | /k/ | Default (before A, O, U) | **câc** | cake |
-| **C** | /kʲ/ | Before U-E, Ú, UAI | **cute**, **cue**, **cús**, **evàcuait** | cute, cue, cues, evacuate |
+| **C** | /kʲ/ | Before U-E, Ú, UAI | **cute**, **cue**, **cús**, <br> **accurat**, **evàcuait** | cute, cue, cues, <br> accurate, evacuate |
 | **C** | /kw/ | Before UI, OI | **cuine, vencoișe** | queen, vanquish |
 | **C** | /s/ | Before I, E | **citie** | city |
-| **C** | /s/ or <br> /k/ | Before Y | **cynic**, **cyngue** | cynic, king |
+| **C** | /s/ or <br> /k/ | Before Y | **cynic**, **cyngue**, **cŷte** | cynic, king, kite |
 | **C** | /ʃ/ | Before I/E + Vowel | **nâcion** | nation |
 | **Ç** | /s/ | Default (before A, O, U) | **juçor** | juicer |
 | **Ç** | /ʃ/ | Before E, I | **apríçiait** | appreciate |
@@ -26,13 +26,16 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **F** | /v/ | At word ends, or before plural S | **nâtif**, **lîfs** | native, lives |
 | **FF** | /f/ | Always (protects short vowels) | **coffe**, **off**, **staffe** | cough, off, staff |
 | **FH** | /f/ | Replaces terminal historical *-gh* | **rofh**, **tofh**, **enofh** | rough, tough, enough |
+| **F** | /fʲ/ | Before U-E, UI, Ú | **confuse**, **confúsion**, <br> **corfue**, **corfuis**  | confuse, confusion, curfew, curfews |
 | **G** | /g/ | Default (before A, O, U) | **gâme** | game |
-| **G** | /gʲ/ | Before U-E, Ú, UAI | **argue**, **argument** | argue, argument |
+| **G** | /gʲ/ | Before U-E, Ú, UAI | **argue**, **argument**, **disambiguait** | argue, argument, disambiguate |
 | **G** | /gw/ | Before UA | **lânguage** | language |
 | **G** | /gw/ | Before OI, ÜI | **pengoin**, **distingoișe**, **lingüistic** | penguin, distinguish linguistic |
 | **G** | /d͡ʒ/ | Before I, E, Y | **gyme**, **Giorgia** | gym, Georgia |
 | **H** | /h/ | Initial | **hope** | hope |
-| **H** | Silent | Buffer elsewhere | **sîhte**, **sahing** | sight, sawing |
+| **H** | /hʲ/ | Before U-E, Ú, EUE | **húman**, **humanetie**, <br> **hue**, **heue** | human, humanity, hue, hew |
+| **H** | /j/ or <br> `.` | Intervocalic bridge (maps the natural spoken glide) | **sihe**, **sihing**, <br> **ueihing**, **sahing** | see, seeing, <br> weighing, sawing |
+| **H** | Silent | Historical anchor (replaces dead *-gh*) | **sîhte**, **naihte** | sight, night |
 | **J** | /d͡ʒ/ | Always | **joge**, **joque**, **jostice** | judge, joke, justice |
 | **L** | /l/ | Default | **lôc** | look |
 | **L** | /ɫ/ | Final position (dark L) | **falle** | fall |
@@ -42,6 +45,7 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **N** | /n/ | Always | **not**, **net** | not, net |
 | **Ñ** | /nʲ/ | N + yod glide | **añual**, **Jañuarie** | annual, January |
 | **P** | /p/ | Always | **poppe**, **happy** | pop, happy |
+| **P** | /pʲ/ | Before U-E, Ú, UAI | **puque, púc**, **populait**, **populace** | puke, populate, populace |
 | **PH** | /f/ | Always | **graphe**, **filosophie** | graph, philosophy |
 | **Q** | /k/ | Default | **joque**, **parqued** | joke, parked |
 | **Q** | /kw/ | Before U + A, O | **equâte**, **quote, quaistion** | equate, quote, question |
@@ -49,20 +53,22 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **R** | /ɹ/ | Always | **red**, **ringue**, **starre** | red, ring, star |
 | **R̃** | /ɹ/ | Preserves historical *wr-* cluster | **r̃aite**, **r̃ingue** | write, wring |
 | **S** | /s/ | Default | **simple** | simple |
-| **S** | /z/ | Between / after vowels | **friese** | freeze |
+| **S** | /z/ | Between / after vowels | **friese**, **frise**, **mâse** | freeze, frieze, maze |
 | **S** | /ʃ/ | Before I/E + Vowel | **seoe**, **seade**, **nausia** | show, shade, nausea |
-| **S** | /ʒ/ | Between a vowel and I | **vision** | vision |
-| **Ș** | /ʃ/ | Default | **finișe** | finish |
+| **S** | /ʒ/ | Between a vowel and I/E and vowel | **vision** | vision |
+| **Ș** | /ʃ/ | Default | **finișe**, **șute** | finish, shut |
 | **Ș** | /ʒ/ | Between root and suffix | **vișual** | visual |
 | **SC** | /ʃ/ | Default | **scîne** | shine |
 | **SC** | /sk/ | Before A, O, U | **scoupe** | scoop |
 | **SCH** | /sk/ | Before E, I | **schec̃e**, **schine** | sketch, skin |
 | **T** | /t/ | Default | **tâche**, **tape** | take, tap |
 | **T** | /ɾ/ | Between vowels (flap) | **batture**, **litture** | batter, litter |
-| **Ț** | /t͡ʃ/ | Assibilation | **fiețure**, **națural** | feature, natural |
+| **Ț** | /t͡ʃ/ | Between vowels, after n or x | **fiețure**, **nâțure** **națural**, <br> **advențure**, **mixțure** | feature, nature, natural, <br> adventure, mixture |
+| **Ț** | /ʃ/ | After c or p | **picțure**, **capțure**, **flucțuait** | picture, capture, fluctuate |
 | **Ћ** | /θ/ | Voiceless in content words | **braiþ**, **hailþ**, **þru** | breath, health, through |
 | **Ћ** | /ð/ | Voiced in function words and between vowels | **þe**, **þis**, **þat**, <br> **bâþe**, **brieþe**  | the, this, that, bathe, breathe |
 | **V** | /v/ | Always | **voice**, **victorie** | voice, victory |
+| **V** | /vʲ/ | Before U-E, UI, Ú | **vue**, **vuis**, <br> **revue**, **revús** | view, views, <br> review, reviews |
 | **X** | /ks/ | Default | **taxe** | tax |
 | **X** | /gz/ | Between vowels | **example** | example |
 | **X̦** | /kʃ/ | Multisyllables | **sex̦ual** | sexual |
