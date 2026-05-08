@@ -1,65 +1,23 @@
 # The Acute Accent ( ́ )
 
-**Purpose:** Marks stressed close/tense vowels and special pronunciations.
-
-| Grapheme | Phonetic Value | Modern English | Inglisce Example |
-| :--- | :--- | :--- | :--- |
-| **Á** | Stressed /ɑ/ | father | **fáþre** |
-| **ÉI** | Stressed /eɪ/ | conveyance | **convéiance** |
-| **Í** | Stressed /i/ | media | **mídia** |
-| **Ó** | Stressed /oʊ/ | explosion <br> explosive | **explósion** <br> **explóssif** |
-| **Ú** | Stressed /ju/, /u/ | unicorn | **únicorn** |
-
-## The Acute Accent in Inglisce
-
 ### Overview
-
-In Inglisce, the **acute accent** is used on the vowels **á, í, é, ó, ú**.
+In Inglisce, the **acute accent** is used to mark stressed close or tense vowels, specifically appearing on **á, é, í, ó, ú** (and occasionally within digraphs like **éi**). 
 
 The acute accent signals two things simultaneously:
+1. **Vowel Quality:** It explicitly indicates a specific, tense pronunciation for the vowel.
+2. **Stress:** It marks the stressed syllable in a word when that stress is not predictable by default grammatical rules.
 
-1. **Vowel quality** – it indicates a specific pronunciation for the vowel.  
-2. **Stress** – it marks the stressed syllable in a word when stress is not predictable by default rules.
+The acute accent never appears on syllables whose stress and vowel quality are fully predictable by default rules. When an acute accent does appear, that vowel is **always stressed**. 
 
-The acute accent never appears on syllables whose stress and vowel quality are fully predictable by default rules.
+*(Note: Inglisce follows a strict One-Mark Rule. Only one primary accent—acute, grave, or circumflex—may appear per word, except when a diaeresis is also present).*
 
-**Rule:** Only one accent (acute, grave, or circumflex) appears per word, except when a **diaeresis** is also present.
+### Phonetic Values and Examples
+The acute accent is used primarily to preserve vowel quality that would otherwise be reduced or altered in unstressed syllables, especially in borrowed or morphologically complex words.
 
-
-### IPA Pronunciations
-
-| Vowel | IPA |
-|-------|-----|
-| á | /ɑ/ |
-| í | /i/ |
-| é | /e/ |
-| ó | /oʊ/ |
-| ú | /ju/ or /u/ |
-
-### Function and Distribution
-
-The acute accent is used primarily to:
-
-- Mark stress when it deviates from default stress assignment.  
-- Preserve vowel quality that would otherwise be reduced or altered in unstressed syllables.  
-
-Accented vowels occur wherever **stress or vowel quality** is non-predictable, especially in borrowed or morphologically complex words. The accent ensures that both **pronunciation** and **syllable prominence** are clear.
-
-When an acute accent appears, the vowel is **always stressed**.
-See [Stress](stress.md) for default stress patterns and the conditions under which stress must be explicitly marked.
-
-
-### Examples
-
-| English | Inglisce |
-|---------|----------|
-| father, fathers | **fáþre**, **fáþors** |
-| machines | **maçíns** |
-| queens | **cuíns** |
-| containment | **contéinment** |
-| derailment | **deréilment** |
-| although | **alþó** |
-| below | **beló** |
-| unusual | **unúșual** |
-| unusable | **unúsable** |
-| usage | **úsage** |
+| Grapheme | Phonetic Value | Inglisce Examples | Modern English Equivalent |
+| :--- | :--- | :--- | :--- |
+| **Á** | /ɑ/ | **fáþre**, **fáþors** | father, fathers |
+| **ÉI** | /eɪ/ | **convéiance**, **contéinment**, **deréilment** | conveyance, containment, derailment |
+| **Í** | /i/ | **mídia**, **maçíns**, **cuíns** | media, machines, queens |
+| **Ó** | /oʊ/ | **explósion**, **explóssif**, **alþó**, **beló** | explosion, explosive, although, below |
+| **Ú** | /ju/ or /u/ | **únicorn**, **unúșual**, **unúsable**, **úsage** | unicorn, unusual, unusable, usage |
