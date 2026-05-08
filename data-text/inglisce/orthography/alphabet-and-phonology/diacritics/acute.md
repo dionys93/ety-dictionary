@@ -1,7 +1,7 @@
 # The Acute Accent ( ́ )
 
 ### Overview
-In Inglisce, the **acute accent** is used to mark stressed close or tense vowels, specifically appearing on **á, é, í, ó, ú** (and occasionally within digraphs like **éi**). 
+In Inglisce, the **acute accent** is used to mark stressed close or tense vowels, specifically appearing on **á, éi, í, ó, ú**. 
 
 The acute accent signals two things simultaneously:
 1. **Vowel Quality:** It explicitly indicates a specific, tense pronunciation for the vowel.
