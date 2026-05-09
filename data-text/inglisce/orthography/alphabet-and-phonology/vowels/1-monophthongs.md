@@ -17,8 +17,9 @@
 | **E-E** | /ɛ/ | Default stressed | n*e*te, b*e*de, b*e*ds, h*e*de | net, bed, beds, head |
 | **È** | /ɛ/ | Irregular stress | an*è*monie, pr*è*sident | anemone, president |
 | **EI-** | /i/ | Word-initial | *ei*c̃, *ei*gle, *ei*le | each, eagle, eel |
+| **EU-E** | /u/ | Blocking consonants (Non-Yod: t, d, s, n, z, r, l) | *reu*le, c*leue*, c*reue*, c*reu*se, t*reu*, b*leu* | rule, clue, crew, cruise, true, blue |
+| **EU / EU-E** | /ju/ | Palatalizing consonants (Yod: c, g, p, b, f, h, v, m, j) | f*eu*, h*eu*e, *eu*noc, *seue*, *seu*s  | few, hew, eunuch, shoe, shoes |
 | **-EU-** | /ə/ | Before C and X | d*eu*c, d*eu*x, st*eu*c | duck, ducks, stuck |
-| **EU-E** | /u/ | Word-final monosyllables | r*eu*le, r*eu*ls, cl*eu*e, cl*eu*s, <br> cr*eu*e, cr*eu*s, cr*eu*se, <br> tr*eu*, bl*eu*, f*eu*, *eu*noc, s*eue*, s*eu*s | rule, rules, clue, clues, <br> crew, crews, cruise, <br> true, blue, few, eunuch, shoe, shoes |
 | **I** | /ɪ/ | Default stressed (closed syllables, clusters, -ION) | d*i*c̃e, r*i*c̃e, b*i*tte, s*i*c, f*i*n*i*șe, cond*i*cion, f*i*ccion, gn*i*t | ditch, rich, bit, sick, finish, condition, fiction, knit |
 | **I** | /ə/ | Unstressed Latinate | ind*i*viḑual | individual |
 | **I-E** | /i/ | Closed syllables / verb stems | maç*i*n*e*, compl*i*t*e* | machine, complete |
@@ -35,15 +36,14 @@
 | **OU** | /u/  | Medial and final | s*ou*pe, s*ou*ps, r*ou*te, r*ou*ts, m*ou*ne, r*ou*me, cangar*ou*e | soup, soups, route, routes, moon, room, kangaroo |
 | **OÛ** | /ʊ/ or <br> /wʊ/ | Modal verbs | c*oû*d, s*eû*d, *oû*d | could, should, would |
 | **U** | /ə/ | Short stressed monosyllables / function words | c*u*tte, șute, hl*u*c  | cut, shut, luck |
-| **U-E** | /u/ | Non-yod class / Before vowels | r*u*de, n*u*ance | rude, nuance |
-| **U-E** | /ju/ | Yod class | c*u*t*e*, m*u*s*e*, acc*u*s*e*, ac*u*t*e* | cute, muse, accuse, acute |
+| **U-E** | /u/ | Non-Yod class (t, d, s, n, z, r, l) and before vowels | r*u*de, cr*u*de, n*u*ance | rude, crude, nuance |
+| **U-E** | /ju/ | Yod class (c, g, p, b, f, h, v, m, j) | acc*u*s*e*, *u*s*e*, c*u*t*e*, m*u*s*e*, val*u*ait, *vue*, *hue* | accuse, use, cute, muse, valuate, view, hue |
 | **UIS** | /juz/ | Plural morphology (replaces -ues/-ews) | val*uis*, corf*uis*, v*uis* | values, curfews, views |
-| **Ú** | /u/ or /ju/ | Stressed | rev*ú*s, conf*ú*sion, c*ú*e, c*ú*s, m*ú*sic  | reviews, confusion, cue, cues/queues, music |
+| **Ú** | /u/ | Stressed Non-Yod before suffixes or clusters | r*ú*ts, fr*ú*ts | roots, fruits |
+| **Ú** | /ju/ | Stressed Yod before suffixes or clusters | m*ú*sic, conf*ú*sion, h*ú*man, rev*ú*s | music, confusion, human, reviews |
 | **Û** | /ʊ/ | Stressed closed syllables | g*û*d, c*û*cion | good, cushion |
 | **USCE** | /ʊʃ/ | Affricate cluster | b*usce*, p*usce* | bush, push |
 | **Y** | /i/ | Word-final adjectives / adverbs; Some nouns; Before vowels | fonn*y*, cuichl*y*, f*y*te, âþ*y*ist | funny, quickly, feet |
 | **Y** | /ɪ/ | Monosyllable Germanic and Greek words | c*y*ne, c*y*de, g*y*me | kin, kid, gym |
 | **Ÿ** | /i/ | Stressed stem | agr*ÿ*ing, monoþ*ÿ*ism | agreeing, monotheism |
 | **Ÿ** | /ɪ/ | Stress marking | anal*ÿ*tical | analytical |
-
-
