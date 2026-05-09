@@ -33,7 +33,9 @@
 | **OUR** | /ɚ/ | General medial | m*our*der, n*our*se, t*our*ne | murder, nurse, turn |
 | **RE** | /ɚ/ | Noun terminals | fáþ*re*, riv*re*, mat*re*, eu*re*, <br> zef*re*, nev*re*, forev*re*, aft*re* | father, river, matter, ewer, <br> zephyr, never, forever, after |
 | **UAR** | /ɔr/ | Following U | *uar*m, *uar*ne, s*uar*me, g*uar*e | warm, warn, swarm, war |
-| **URE** | /ɚ/ | Latin -ura derivatives | procíḑ*ure*, meș*ure* | procedure, measure |
+| **URE** | /ɚ/ | Unstressed Latin -ura derivatives (often after affricates) | procíḑ*ure*, meș*ure*, litt*ure*, scelt*ure* | procedure, measure, litter, shelter |
+| **URE** | /jʊər/ | Stressed Yod class (word-final open) | c*ure*, p*ure*, sec*ure* | cure, pure, secure |
+| **ÚR** | /jʊər/ | Stressed Yod class (before consonants or suffixes) | c*úr*s, p*úr*ifae | cures, purify |
 | **ÜAR** | /ɔr/ | Following Ü (explicit glide) | a*üar*d, re*üar*d | award, reward |
 | **YRE** | /ɪər/ | Select words | h*yre*, *yre* | hear, ear |
 | **ŶRE** | /aɪər/ | Select words | f*ŷre* | fire |
