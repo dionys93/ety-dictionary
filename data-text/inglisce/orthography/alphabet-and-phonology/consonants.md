@@ -44,6 +44,7 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **M̃** | /mʲ/ | M + yod glide | **am̃onicion**, **m̃usíom** | ammunition, museum |
 | **N** | /n/ | Always | **not**, **net** | not, net |
 | **Ñ** | /nʲ/ | N + yod glide | **añual**, **Jañuarie** | annual, January |
+| **O** | /w/ | Labial glide before vowels | **ouere**, **pengoin** | where, penguin |
 | **P** | /p/ | Always | **poppe**, **happy** | pop, happy |
 | **P** | /pʲ/ | Before U-E, Ú, UAI | **puque, púc**, **populait**, **populace** | puke, populate, populace |
 | **PH** | /f/ | Always | **graphe**, **filosophie** | graph, philosophy |
@@ -67,12 +68,15 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **Ț** | /ʃ/ | After c or p | **picțure**, **capțure**, **flucțuait** | picture, capture, fluctuate |
 | **Ћ** | /θ/ | Voiceless in content words | **braiþ**, **hailþ**, **þru** | breath, health, through |
 | **Ћ** | /ð/ | Voiced in function words and between vowels | **þe**, **þis**, **þat**, <br> **bâþe**, **brieþe**  | the, this, that, bathe, breathe |
+| **U** | /w/ | Replaces the Germanic 'w' | **uátre**, **uigne**, <br> **uix̃e**, **uoie**, **uîle** | water, wine, <br> witch, why, while |
+| **Ü** | /w/ | Explicit glide (prevents vowel fusion) | **aüard**, **reüard** | award, reward |
 | **V** | /v/ | Always | **voice**, **victorie** | voice, victory |
 | **V** | /vʲ/ | Before U-E, UI, Ú | **vue**, **vuis**, <br> **revue**, **revús** | view, views, <br> review, reviews |
 | **X** | /ks/ | Default | **taxe** | tax |
 | **X** | /gz/ | Between vowels | **example** | example |
 | **X̦** | /kʃ/ | Multisyllables | **sex̦ual** | sexual |
 | **X̃** | /t͡ʃ/ | Monosyllables | **uix̃e**, **max̃e** | witch, match |
+| **Y** | /j/ | Word-initial or before a vowel | **yielde**, **yong**, **cârying** | yield, young, carrying |
 | **Z** | /z/ | Default | **zou** | zoo |
 | **Z̦** | /ʒ/ | Default | **az̦ure** | azure |
 
