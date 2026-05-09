@@ -25,7 +25,7 @@
 | **Ï** | /i/ | Before vowel (diaeresis separator) | s*ï*ale, naus*ï*ait, g*ï*ographie | seal, nauseate, geography |
 | **Í** | /i/ | Stress-marked | compl*í*cion, m*í*dia | completion, media |
 | **O** | /ɑ/ | Before C or two consonants | l*o*c, b*o*tte | lock, bot |
-| **O** | /ə/ | Unstressed default | r*o*ne, c*o*ndicion, hn*o*te | run, condition, nut |
+| **O** | /ə/ | Unstressed default | r*o*ne, c*o*ndicion, hn*o*te, cr*o*sce, br*o*sce | run, condition, nut, crush, brush |
 | **O** | /ɔ/ | Before FF and LL | b*o*lle, d*o*lle, c*o*ffe, <br> c*o*ffre, c*o*ffars | ball, doll, cough, <br> coffer, coffers |
 | **Ò** | /ɔ/ | Explicit marker | *Ò*stria, c*ò*ste, fr*ò*ste, s*ò*ft | Austria, cost, frost, soft |
 | **OH** | /ɔ/ | Past participles and nouns | b*oh*t, f*oh*t, þ*oh*te | bought, fought, thought |
