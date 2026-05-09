@@ -7,10 +7,10 @@
 | **À** | /æ/ | Irregular stress | **anàlysis**, **alfàlfa** | analysis, alfalfa |
 | **Á** | /ɑ/ | Stressed basic words | **fáþre**, **uátre** | father, water |
 | **AHE** | /ɔ/ | Word-final monosyllables | **lahe**, **sahe** | law, saw |
-| **AI** | /ɛ/ | Specific high-frequency / past tense | **laitace**, **caic̃e**, <br> **lait**, **maint** | lettuce, catch, <br> let, meant |
-| **ALLE** | /ɔ/ | Word-final | **falle**, **cralle**, **stalle** | fall, crawl, stall |
+| **AI** | /ɛ/ | Specific high-frequency / past tense | **braiþ**, **laitace**, **caic̃e**, <br> **lait**, **maint** | breath, lettuce, catch, <br> let, meant |
+| **ALL** | /ɔɫ/ | Word-final | **falle**, **cralle**, **stalle** | fall, crawl, stall |
 | **AO** | /ɔ/ | Word-medial | **faone**, **daone**, **paone** | fawn, dawn, pawn |
-| **AU** | /ɔ/ | Default | **automn**, **sauce**, **assaulte**, <br> **laus**, **saus** | autumn, sauce, assault, <br> laws, saws |
+| **AU** | /ɔ/ | Default | **automn**, **sauce**, **assaulte**, <br> **laus**, **saus**, **baule** | autumn, sauce, assault, <br> laws, saws, bawl |
 | **AUH** | /ɔ/ | Silent GH clusters | **cauht**, **tauht** | caught, taught |
 | **E / E-E** | /ɛ/ | Default stressed | **nete**, **bede**, **hede** | net, bed, head |
 | **È** | /ɛ/ | Irregular stress | **anèmonie**, **prèsident** | anemone, president |
