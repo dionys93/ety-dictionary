@@ -14,7 +14,7 @@
 | **Â** | /eɪ/ | Stressed default / Stressed Latin verbs | m*â*che, g*â*te, rel*â*te| make, gate, relate |
 | **EA** | /eɪ/ | Replaces Â-E pattern (often after S to trigger /ʃ/) and historical retention | gr*ea*t, s*ea*de, <br> s*ea*che, s*ea*me | great, shade, <br> shake, shame |
 | **EAI** | /aɪ/ | Historical preservation (lexical set) | *eai*e, *eai*s | eye, eyes |
-| **EI-E** | /eɪ/ | Alternative spelling | conv*ei*e, r*ei*gne, r*ei*ns | convey, reign, reins |
+| **EI-E** | /eɪ/ | Alternative spelling | conv*ei*e, r*ei*gne, r*ei*ns, s*ei*le | convey, reign, reins, sail |
 | **ÉI** | /eɪ/ | Stress-marked | *éi*me, cont*éi*nment | aim, containment |
 | **EIH** | /eɪ/ | Replaces historical *-eigh* | u*eih*te, sl*eih*e | weight, sleigh |
 | **EUI-E** | /ɔɪ/ | Historical French '-oil' set | f*eui*le, f*eui*lage, *eui*le | foil, foilage (foliage), oil |
