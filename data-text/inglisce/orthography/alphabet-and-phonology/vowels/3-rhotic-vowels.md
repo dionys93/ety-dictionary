@@ -18,9 +18,10 @@
 | **ÈR** | /ɛr/ | Marked stress | *èr*a, b*èr*ie | era, bury |
 | **IAR-E** | /ɪər/ | Historical 'ear' lexical set | d*iare*, f*iare*, y*iare*, *iar*s | dear, fear, year, ears |
 | **-IAR** | /iɚ/ | Comparatives ending in -y | sill*iar* | sillier |
-| **IER-E** | /ɪər/ | Historical 'eer', 'ere', and 'ier' sets | n*ier*, h*iere*, c̃*iere*, b*iere*, <br> d*iere*, p*iere*, t*iere*, st*iere* | near, here, cheer, beer, <br> deer, pier, tier, steer |
+| **-IER** | /ɪər/ | Verb infinitive, adjectives, & progressive | n*ier*, volont*ier*, volont*ier*ing | near, volunteer, volunteering |
+| **IERE** | /ɪər/ | Historical 'eer', 'ere', and 'ier' sets | h*iere*, c̃*iere*, b*iere*, <br> d*iere*, p*iere*, t*iere*, st*iere* | here, cheer, beer, <br> deer, pier, tier, steer |
 | **-IOR** | /ɪər/ | 'eer' words | st*ior*e | steer (animal) |
-| **-IOR** | /ɚ/ | Latin derivatives | amat*ior*, criet*ior* | amateur, creature |
+| **-IOR** | /jɚ/ | Latin derivatives | amat*ior*, criet*ior* | amateur, creature |
 | **IR** | /ɚ/ | Stressed closed syllables and unstressed suffixes | b*ir*de, u*ir*c, u*ir*se, <br> mat*ir*, cov*ir*, zef*ir*s | bird, work, worse, <br> matter, cover, zephyrs |
 | **-IRE** | /ɪər/ | Noun and verb alternatives | volont*ire*, gu*ire*, n*ire* | volunteer, gear, near (verb) |
 | **-ÎAR / -ŶAR** | /aɪər/ | Noun plurals | co*îar*s, f*ŷar*s, des*îar*s | choirs, fires, desires |
