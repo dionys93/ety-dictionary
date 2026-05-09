@@ -30,7 +30,7 @@
 | **Ò** | /ɔ/ | Explicit marker | *Ò*stria, c*ò*ste, fr*ò*ste, s*ò*ft | Austria, cost, frost, soft |
 | **OH** | /ɔ/ | Past participles and nouns | b*oh*t, f*oh*t, þ*oh*te | bought, fought, thought |
 | **OIC̃E**| /iːtʃ/ | Affricate cluster | b*oic̃e*, p*oic̃e* | beech, peach |
-| **Ô** | /ʊ/ | Stressed | b*ô*c, u*ô*de | book, wood |
+| **Ô** | /ʊ/ | Before C after U | b*ô*c, c*ô*c, h*ô*c, <br> u*ô*de, u*ô*man | book, cook, hook, <br> wood, woman |
 | **OU** | /u/  | Medial and final | s*ou*pe, s*ou*ps, r*ou*te, r*ou*ts, cangar*ou*e | soup, soups, route, routes, kangaroo |
 | **OÛ** | /ʊ/ or <br> /wʊ/ | Modal verbs | c*oû*d, s*eû*d, *oû*d | could, should, would |
 | **U** | /ə/ | Short stressed monosyllables / function words | c*u*tte, șute, hl*u*c  | cut, shut, luck |
