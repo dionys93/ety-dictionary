@@ -16,7 +16,7 @@
 | **È** | /ɛ/ | Irregular stress | **anèmonie**, **prèsident** | anemone, president |
 | **EI** | /i/ | Word-initial | **eic̃**, **eigle**, **eile** | each, eagle, eel |
 | **EU** | /u/ | After R, TR | **reule**, **treu** | rule, true |
-| **I** | /ɪ/ | Default stressed (closed syllables, clusters, -ION) | **dic̃e**, **ric̃e**, **bitte**, **sic**, **finișe**, **condicion**, **ficcion**, **gnite** | ditch, rich, bit, sick, finish, condition, fiction, knit |
+| **I** | /ɪ/ | Default stressed (closed syllables, clusters, -ION) | **dic̃e**, **ric̃e**, **bitte**, **sic**, **finișe**, **condicion**, **ficcion**, **gnitte** | ditch, rich, bit, sick, finish, condition, fiction, knit |
 | **I** | /ə/ | Unstressed Latinate | **indiviḑual** | individual |
 | **I-E** | /i/ | Closed syllables / verb stems | **maçine**, **complite** | machine, complete |
 | **IE** | /i/ | Word-final or within stem | **comittie**, **fiele**, <br> **biec̃e**, **impiec̃e** | committee, feel, <br> beach, impeach |
