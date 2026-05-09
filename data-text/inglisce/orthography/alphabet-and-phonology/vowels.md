@@ -24,21 +24,21 @@
 | **IEC̃E** | /iːtʃ/ | Affricate cluster | **biec̃e**, **impiec̃e** | beach, impeach |
 | **Ï** | /i/ | Before vowel (diaeresis separator) | **sïale**, **nausïait**, **gïographie** | seal, nauseate, geography |
 | **Í** | /i/ | Stress-marked | **complícion**, **mídia** | completion, media |
-| **O** | /ɑ/ | Before two consonants | **loc**, **botte** | lock, bot |
+| **O** | /ɑ/ | Before C or two consonants | **loc**, **botte** | lock, bot |
 | **O** | /ə/ | Unstressed default | **rone**, **condicion** | run, condition |
-| **Ò** | /ɔ/ | Irregular stress | **còste**, **fròste** | cost, frost |
-| **OH** | /ɔ/ | Silent GH clusters | **boht**, **foht** | bought, fought |
+| **O** | /ɔ/ | Before FF and LL | **bolle**, **dolle** **coffe**, <br> **coffre**, **coffars** | ball, doll, cough, <br> coffer, coffers |
+| **Ò** | /ɔ/ | Used in other environments | **còste**, **fròste**, **sòft** | cost, frost, soft |
+| **OH** | /ɔ/ | Past participles and nouns | **boht**, **foht**, **þohte** | bought, fought, thought |
 | **OIC̃E**| /iːtʃ/ | Affricate cluster | **boic̃e**, **poic̃e** | beech, peach |
-| **OLLE** | /ɔ/ | Word-final rounded | **bolle**, **dolle** | ball, doll |
 | **Ô** | /ʊ/ | Stressed | **bôc**, **uôde** | book, wood |
-| **OU** | /u/ | Default for /u/ | **soupe**, **route** | soup, route |
-| **OÛ** | /ʊ/ | Modal verbs | **coûd**, **seûd**, **oûd** | could, should, would |
+| **OU** | /u/  | Medial and final | **soupe**, **route**, **cangaroue** | soup, route, kangaroo |
+| **OÛ** | /ʊ/ or /wʊ/ | Modal verbs | **coûd**, **seûd**, **oûd** | could, should, would |
 | **U** | /ə/ | Short stressed monosyllables / function words | **cutte**, **nutte** | cut, nut |
 | **U-E** | /u/ | Non-yod class / Before vowels | **rude**, **nuance** | rude, nuance |
 | **U-E** | /ju/ | Yod class | **cute**, **muse** | cute, muse |
-| **UE** | /u/ | Word-final | **bleu**, **cleue** | blue, clue |
+| **EU-E** | /u/ | Monosyllables, word-final | **bleu**, **cleue** | blue, clue |
 | **Û** | /ʊ/ | Stressed closed syllables | **gûd**, **cûcion** | good, cushion |
-| **USCE** | /ʊʃ/ | Affricate cluster (-USH) | **busce**, **pusce** | bush, push |
+| **USCE** | /ʊʃ/ | Affricate cluster | **busce**, **pusce** | bush, push |
 | **Y** | /i/ | Word-final adjectives / adverbs | **fonny**, **cuicly** | funny, quickly |
-| **Ÿ** | /i/ | Verb stem before -ING | **agrÿing** | agreeing |
-| **Ÿ** | /ɪ/ | Y-based stress marking | **analÿtical** | analytical |
+| **Ÿ** | /i/ | Stressed stem before -ING | **agrÿing** | agreeing |
+| **Ÿ** | /ɪ/ | Stress marking | **analÿtical** | analytical |
