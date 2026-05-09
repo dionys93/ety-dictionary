@@ -32,7 +32,7 @@
 | **OH** | /ɔ/ | Past participles and nouns | b*oh*t, f*oh*t, þ*oh*te | bought, fought, thought |
 | **OIC̃E**| /iːtʃ/ | Affricate cluster | b*oic̃e*, p*oic̃e* | beech, peach |
 | **Ô** | /ʊ/ | Before C; After U | b*ô*c, c*ô*c, h*ô*c, <br> u*ô*de, u*ô*man | book, cook, hook, <br> wood, woman |
-| **OU** | /u/  | Medial and final | s*ou*pe, s*ou*ps, r*ou*te, r*ou*ts, cangar*ou*e | soup, soups, route, routes, kangaroo |
+| **OU** | /u/  | Medial and final | s*ou*pe, s*ou*ps, r*ou*te, r*ou*ts, m*ou*ne, r*ou*me, cangar*ou*e | soup, soups, route, routes, moon, room, kangaroo |
 | **OÛ** | /ʊ/ or <br> /wʊ/ | Modal verbs | c*oû*d, s*eû*d, *oû*d | could, should, would |
 | **U** | /ə/ | Short stressed monosyllables / function words | c*u*tte, șute, hl*u*c  | cut, shut, luck |
 | **U-E** | /u/ | Non-yod class / Before vowels | r*u*de, n*u*ance | rude, nuance |
