@@ -9,16 +9,15 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | Grapheme | IPA | Environment / Context | Inglisce Examples | Modern English |
 | :--- | :--- | :--- | :--- | :--- |
 | **B** | /b/ | Always | **boie**, **biefe**, **bîte** | boy, beef, bite |
-| **C** | /k/ | Default (before A, O, U) | **câc** | cake |
+| **C** | /k/ | Before A, O, U, Y | **câc**, **caire**, **core**, <br> **cyngue**, **cŷte** | cake, care, core, <br> king, kite |
 | **C** | /kʲ/ | Before U-E, Ú, UAI | **cute**, **cue**, **cús**, <br> **accurat**, **evàcuait** | cute, cue, cues, <br> accurate, evacuate |
 | **C** | /kw/ | Before UI, OI | **cuine, vencoișe** | queen, vanquish |
-| **C** | /s/ | Before I, E | **citie** | city |
-| **C** | /s/ or <br> /k/ | Before Y | **cynic**, **cyngue**, **cŷte** | cynic, king, kite |
-| **C** | /ʃ/ | Before I/E + Vowel | **nâcion** | nation |
-| **Ç** | /s/ | Default (before A, O, U) | **juçor** | juicer |
-| **Ç** | /ʃ/ | Before E, I | **appríçiait** | appreciate |
+| **C** | /s/ | Before I, E, Y | **citie**, **fâce**, **cynic** | city, face, cynic |
+| **C** | /ʃ/ | Before I/E + Vowel | **nâcion**, **criâcion** | nation, creation |
+| **Ç** | /s/ | Before A, O, U | **juçor** | juicer |
+| **Ç** | /ʃ/ | Before I, E | **appríçiait**, **inniçiait** | appreciate, innitiate |
 | **C̃** | /t͡ʃ/ | Always | **c̃ine**, **c̃ouse**, <br> **c̃oice**, **mac̃e** | chin, choose, <br> choice, match |
-| **CH** | /k/ | Default | **architect**, **mâche** | architect, make |
+| **CH** | /k/ | Before I, E | **architect**, **mâche** | architect, make |
 | **CH** | /t͡ʃ/ | Only when followed by Î | **chîde**, **chîld** | chide, child |
 | **D** | /d/ | Always | **dogue**, **dade** | dog, dad |
 | **Ḑ / D̦**| /d͡ʒ/ | Assibilation (often from *du*) | **procíḑure**, **eḑucait** | procedure, educate |
@@ -27,7 +26,7 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **FF** | /f/ | Always (protects short vowels) | **coffe**, **off**, **staffe** | cough, off, staff |
 | **FH** | /f/ | Replaces terminal historical *-gh* | **rofh**, **tofh**, **enofh** | rough, tough, enough |
 | **F** | /fʲ/ | Before U-E, UI, Ú | **confuse**, **confúsion**, <br> **corfue**, **corfuis**  | confuse, confusion, curfew, curfews |
-| **G** | /g/ | Default (before A, O, U) | **gâme** | game |
+| **G** | /g/ | Before A, O, U | **gâme** | game |
 | **G** | /gʲ/ | Before U-E, Ú, UAI | **argue**, **argument**, **disambiguait** | argue, argument, disambiguate |
 | **G** | /gw/ | Before UA | **lânguage** | language |
 | **G** | /gw/ | Before OI, ÜI | **pengoin**, **distingoișe**, **lingüistic** | penguin, distinguish linguistic |
