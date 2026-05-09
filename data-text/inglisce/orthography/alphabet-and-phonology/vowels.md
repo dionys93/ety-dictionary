@@ -14,7 +14,7 @@
 | **AUH** | /ɔ/ | Silent GH clusters | **cauht**, **tauht** | caught, taught |
 | **E / E-E** | /ɛ/ | Default stressed | **nete**, **bede**, **hede** | net, bed, head |
 | **È** | /ɛ/ | Irregular stress | **anèmonie**, **prèsident** | anemone, president |
-| **EI** | /i/ | Word-initial | **eic̃**, **eigle** | each, eagle |
+| **EI** | /i/ | Word-initial | **eic̃**, **eigle**, **eile** | each, eagle, eel |
 | **EU** | /u/ | After R, TR | **reule**, **treu** | rule, true |
 | **I** | /ɪ/ | Stressed monosyllables / before clusters | **bitte**, **sic** | bit, sick |
 | **I** | /ɪ/ | Stressed before -ION | **condicion**, **ficcion** | condition, fiction |
@@ -39,6 +39,7 @@
 | **EU-E** | /u/ | Monosyllables, word-final | **bleu**, **cleue** | blue, clue |
 | **Û** | /ʊ/ | Stressed closed syllables | **gûd**, **cûcion** | good, cushion |
 | **USCE** | /ʊʃ/ | Affricate cluster | **busce**, **pusce** | bush, push |
-| **Y** | /i/ | Word-final adjectives / adverbs | **fonny**, **cuicly** | funny, quickly |
+| **Y** | /i/ | Word-final adjectives / adverbs; Some nouns | **fonny**, **cuichly**, **fyte** | funny, quickly, feet |
+| **Y** | /ɪ/ | Monosyllable Germanic and Greek words | **cyne**, **cyde**, **gyme** | kin, kid, gym |
 | **Ÿ** | /i/ | Stressed stem before -ING | **agrÿing** | agreeing |
 | **Ÿ** | /ɪ/ | Stress marking | **analÿtical** | analytical |
