@@ -19,8 +19,7 @@
 | **I** | /ɪ/ | Default stressed (closed syllables, clusters, -ION) | **bitte**, **sic**, **finișe**, **condicion**, **ficcion** | bit, sick, finish, condition, fiction |
 | **I** | /ə/ | Unstressed Latinate | **indiviḑual** | individual |
 | **I-E** | /i/ | Closed syllables / verb stems | **maçine**, **complite** | machine, complete |
-| **IE** | /i/ | Word-final or within stem | **comittie**, **fiele** | committee, feel |
-| **IEC̃E** | /iːtʃ/ | Affricate cluster | **biec̃e**, **impiec̃e** | beach, impeach |
+| **IE** | /i/ | Word-final or within stem | **comittie**, **fiele**, <br> **biec̃e**, **impiec̃e** | committee, feel, <br> beach, impeach |
 | **Ï** | /i/ | Before vowel (diaeresis separator) | **sïale**, **nausïait**, **gïographie** | seal, nauseate, geography |
 | **Í** | /i/ | Stress-marked | **complícion**, **mídia** | completion, media |
 | **O** | /ɑ/ | Before C or two consonants | **loc**, **botte** | lock, bot |
