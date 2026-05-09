@@ -13,6 +13,7 @@
 | **AU** | /ɔ/ | Default | *Au*strâlia, *au*tomn, s*au*ce, ass*au*lte, <br> l*au*s, s*au*s, b*au*le | Australia, autumn, sauce, assault, <br> laws, saws, bawl |
 | **AUH** | /ɔ/ | Silent GH clusters | c*auh*t, t*auh*t | caught, taught |
 | **E** | /ə/ | Default | d*e*vote, r*e*pite, *e*mitte | devote, repeat, emit |
+| **EA** | /ɛ/ | Historical retention | breade, beare | bread, bear |
 | **E-E** | /ɛ/ | Default stressed | n*e*te, b*e*de, b*e*ds, h*e*de | net, bed, beds, head |
 | **È** | /ɛ/ | Irregular stress | an*è*monie, pr*è*sident | anemone, president |
 | **EI** | /i/ | Word-initial | *ei*c̃, *ei*gle, *ei*le | each, eagle, eel |
