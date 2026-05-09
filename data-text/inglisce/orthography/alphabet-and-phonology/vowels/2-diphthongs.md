@@ -16,14 +16,17 @@
 | **EI-E** | /eɪ/ | Alternative spelling | conv*ei*e, r*ei*gne, r*ei*ns | convey, reign, reins |
 | **ÉI** | /eɪ/ | Stress-marked | *éi*me, cont*éi*nment | aim, containment |
 | **EIH** | /eɪ/ | Replaces historical *-eigh* | u*eih*te, sl*eih*e | weight, sleigh |
+| **EUI-E** | /ɔɪ/ | Historical French '-oil' set | f*eui*le, f*eui*lage, *eui*le | foil, foilage (foliage), oil |
+| **EUY** | /ɔɪ/ | Before suffixes (derived forms of EUI) | f*euy*els, *euy*els | foils, oils |
 | **EY** | /eɪ/ | Word-final pronouns/adjectives, and before suffixes | conv*ey*ing, þ*ey*, ou*ey* | conveying, they, whey |
 | **Î** | /aɪ/ | Default representation | n*î*hte, cr*î*e, f*î*nde, sch*î*s | night, cry, find, skys |
 | **O-E** | /oʊ/ | Closed syllables, word-final open, and multisyllables | b*o*t*e*, b*o*n*e*, st*o*n*e*, c*o*d*e*, uind*o*, se*oe*, bl*oe*, al*o*n*e*, my*o*n*e* | boat, bone, stone, code, window, show, blow, alone, my own |
 | **Ó** | /oʊ/ | Marked stress | hipn*ó*sis, b*ó*ste**, c*ó*ld | hypnosis, boast, cold |
 | **OA** | /oʊ/ | Lexical "oa" set | b*oa*ts, b*oa*ns, st*oa*ns, c*oa*ste, c*oa*me, c*oa*ms, h*oa*me, h*oa*ms | boats, bones, stones, coast, comb, combs, home, homes |
-| **OI-E** | /ɔɪ/ | Medial and word-final | c*oi*ne, c*oi*ns, c̃*oi*ce, enj*oi*e, b*oi*e | coin, coins, choice, enjoy, boy |
+| **OI-E** | /ɔɪ/ | Medial and word-final | c*oi*ne, c*oi*ns, c̃*oi*ce, enj*oi*e, enj*oi*ment, b*oi*e | coin, coins, choice, enjoy, ejoyment, boy |
 | **OIH** | /aɪ/ | Historical *-igh* class & open syllables | fl*oih*e, sc*oih*e, l*oih*te, h*oih*, h*oih*te se*oih*, u*oie* | fly, sky, light, high, height, shy, why |
-| **OY** | /ɔɪ/ | Before suffixes or vowels (plurals, derived forms) | b*oy*s, t*oy*s, sp*oy*els, ann*oy*ing, ann*oy*ance, destr*oy*eur | boys, toys, spoils, annoying, annoyance, destroyer |
+| **OUI-E** | /ɔɪ/ | Historical Anglo-French '-oil' class | sp*oui*le, f*oui*le, t*oui*le, bouie | spoil, foil, toil, buoy |
+| **OY** | /ɔɪ/ | Before suffixes or vowels (plurals, derived forms) | b*oy*s, t*oy*s, sp*oy*els, ann*oy*ing, ann*oy*ance, destr*oy*eur, l*oy*al, r*oy*al | boys, toys, spoils, annoying, annoyance, destroyer, loyal, royal |
 | **Ô** | /aʊ/ | Core default (open final, before vowel, L, or N) | all*ôe*, all*ôu*ing c*ôe*, c*ôu*s, v*ôl*e, v*ôe*ls, *ôl*e, *ôe*ls, s*ôn*de, cr*ôn*e, t*ôu*re, c*ôa*rd, *ôa*re | allow, allowing, cow, cows, vowel, vowels, owl, owls, sound, crown, tower, coward, hour |
 | **YH** | /aɪ/ | Verbal / participial glide | d*yh*e, fl*yh*e cr*yh*ing, fr*yh*ing | dye, fly (bug), crying, frying |
 | **Ŷ** | /aɪ/ | Medial before clusters | c*ŷ*nd, c*ŷ*te | kind, kite |
