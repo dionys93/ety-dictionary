@@ -6,9 +6,9 @@
 | **A** | /ə/ | Unstressed or prefix | *a*baut, anim*a*t, *a*nnoie, *a*nnônce | about, animate, <br> annoy, announce |
 | **À** | /æ/ | Irregular stress | an*à*lysis, alf*à*lfa | analysis, alfalfa |
 | **Á** | /ɑ/ | Stressed basic words | fáþre, uátre | father, water |
-| **AH-E** | /ɔ/ | Word-final monosyllables | l*ahe*, I s*ah* a s*ahe* | law, I saw a saw |
+| **AH-E** | /ɔ/ | Word-final monosyllables | l*ahe*, s*ahe*, s*ah* | law, saw (tool), <br> saw (see) |
 | **AI** | /ɛ/ | Specific high-frequency / past tense | br*ai*þ, l*ai*tace, c*ai*c̃e, l*ai*t, m*ai*nt, s*ai*s, s*ai*d | breath, lettuce, catch, let, meant, says, said |
-| **ALL** | /ɔɫ/ | Word-final | f*all*e, cr*all*e, st*all*e | fall, crawl, stall |
+| **ALL** | /ɔɫ/ | Word-final | *all*, f*all*e, cr*all*e, st*all*e | all, fall, crawl, stall |
 | **AO** | /ɔ/ | Word-medial | f*ao*ne, f*ao*ns, d*ao*ne, p*ao*ne | fawn, fawns, dawn, pawn |
 | **AU** | /ɔ/ | Default | *Au*strâlia, *au*tomn, s*au*ce, ass*au*lte, <br> l*au*s, s*au*s, b*au*le | Australia, autumn, sauce, assault, <br> laws, saws, bawl |
 | **AUH** | /ɔ/ | Silent GH clusters | c*auh*t, t*auh*t | caught, taught |
@@ -30,7 +30,7 @@
 | **Ò** | /ɔ/ | Explicit marker | *Ò*stria, c*ò*ste, fr*ò*ste, s*ò*ft | Austria, cost, frost, soft |
 | **OH** | /ɔ/ | Past participles and nouns | b*oh*t, f*oh*t, þ*oh*te | bought, fought, thought |
 | **OIC̃E**| /iːtʃ/ | Affricate cluster | b*oic̃e*, p*oic̃e* | beech, peach |
-| **Ô** | /ʊ/ | Before C after U | b*ô*c, c*ô*c, h*ô*c, <br> u*ô*de, u*ô*man | book, cook, hook, <br> wood, woman |
+| **Ô** | /ʊ/ | Before C; After U | b*ô*c, c*ô*c, h*ô*c, <br> u*ô*de, u*ô*man | book, cook, hook, <br> wood, woman |
 | **OU** | /u/  | Medial and final | s*ou*pe, s*ou*ps, r*ou*te, r*ou*ts, cangar*ou*e | soup, soups, route, routes, kangaroo |
 | **OÛ** | /ʊ/ or <br> /wʊ/ | Modal verbs | c*oû*d, s*eû*d, *oû*d | could, should, would |
 | **U** | /ə/ | Short stressed monosyllables / function words | c*u*tte, șute, hl*u*c  | cut, shut, luck |
