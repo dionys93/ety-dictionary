@@ -10,7 +10,7 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | :--- | :--- | :--- | :--- | :--- |
 | **B** | /b/ | Always | **boie**, **biefe**, **bîte** | boy, beef, bite |
 | **C** | /k/ | Before A, O, U, Y | **câc**, **caire**, **core**, <br> **cyngue**, **cŷte** | cake, care, core, <br> king, kite |
-| **C** | /kʲ/ | Before U-E, Ú, UAI | **cute**, **cue**, **cús**, <br> **accurat**, **evàcuait** | cute, cue, cues, <br> accurate, evacuate |
+| **C** | /kʲ/ | Before U-E, Ú, UAI | **cute**, **cúe**, **cús**, <br> **accurat**, **evàcuait** | cute, cue, cues, <br> accurate, evacuate |
 | **C** | /kw/ | Before UI, OI | **cuine, vencoișe** | queen, vanquish |
 | **C** | /s/ | Before I, E, Y | **citie**, **fâce**, **cynic** | city, face, cynic |
 | **C** | /ʃ/ | Before I/E + Vowel | **nâcion**, **criâcion** | nation, creation |
