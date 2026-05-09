@@ -16,7 +16,7 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **C** | /s/ or <br> /k/ | Before Y | **cynic**, **cyngue**, **cŷte** | cynic, king, kite |
 | **C** | /ʃ/ | Before I/E + Vowel | **nâcion** | nation |
 | **Ç** | /s/ | Default (before A, O, U) | **juçor** | juicer |
-| **Ç** | /ʃ/ | Before E, I | **apríçiait** | appreciate |
+| **Ç** | /ʃ/ | Before E, I | **appríçiait** | appreciate |
 | **C̃** | /t͡ʃ/ | Always | **c̃ine**, **c̃ouse**, <br> **c̃oice**, **mac̃e** | chin, choose, <br> choice, match |
 | **CH** | /k/ | Default | **architect**, **mâche** | architect, make |
 | **CH** | /t͡ʃ/ | Only when followed by Î | **chîde**, **chîld** | chide, child |
@@ -32,8 +32,8 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **G** | /gw/ | Before UA | **lânguage** | language |
 | **G** | /gw/ | Before OI, ÜI | **pengoin**, **distingoișe**, **lingüistic** | penguin, distinguish linguistic |
 | **G** | /d͡ʒ/ | Before I, E, Y | **gyme**, **Giorgia** | gym, Georgia |
-| **H** | /h/ | Initial | **hope** | hope |
-| **H** | /hʲ/ | Before U-E, Ú, EUE | **húman**, **humanetie**, <br> **hue**, **heue** | human, humanity, hue, hew |
+| **H** | /h/ | Initial | **hope**, **hoame**, **hôe**  | hope, home, how |
+| **H** | /hʲ/ | Before U-E, UI, Ú, EUE | **húman**, **humanetie**, <br> **hue**, **huis** **heue** | human, humanity, hue, hues, hew |
 | **H** | /j/ or <br> `.` | Intervocalic bridge (maps the natural spoken glide) | **sihe**, **sihing**, <br> **ueihing**, **sahing** | see, seeing, <br> weighing, sawing |
 | **H** | Silent | Historical anchor (replaces dead *-gh*) | **sîhte**, **naihte** | sight, night |
 | **J** | /d͡ʒ/ | Always | **joge**, **joque**, **jostice** | judge, joke, justice |
@@ -64,7 +64,7 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **SCH** | /sk/ | Before E, I | **schec̃e**, **schine** | sketch, skin |
 | **T** | /t/ | Default | **tâche**, **tape** | take, tap |
 | **T** | /ɾ/ | Between vowels (flap) | **batture**, **litture** | batter, litter |
-| **Ț** | /t͡ʃ/ | Between vowels, after n or x | **fiețure**, **nâțure** **națural**, <br> **advențure**, **mixțure** | feature, nature, natural, <br> adventure, mixture |
+| **Ț** | /t͡ʃ/ | Between vowels, after n or x | **advențure**, **fiețure**, **mixțure**, **nâțure** **națural**, | adventure, feature, mixture, nature, natural |
 | **Ț** | /ʃ/ | After c or p | **picțure**, **capțure**, **flucțuait** | picture, capture, fluctuate |
 | **Ћ** | /θ/ | Voiceless in content words | **braiþ**, **hailþ**, **þru** | breath, health, through |
 | **Ћ** | /ð/ | Voiced in function words and between vowels | **þe**, **þis**, **þat**, <br> **bâþe**, **brieþe**  | the, this, that, bathe, breathe |
@@ -76,7 +76,7 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **X** | /gz/ | Between vowels | **example** | example |
 | **X̦** | /kʃ/ | Multisyllables | **sex̦ual** | sexual |
 | **X̃** | /t͡ʃ/ | Monosyllables | **uix̃e**, **max̃e** | witch, match |
-| **Y** | /j/ | Word-initial or before a vowel | **yielde**, **yong**, **cârying** | yield, young, carrying |
+| **Y** | /j/ | Word-initial or before a vowel | **you**, **yielde**, **yong**, **cârying** | you, yield, young, carrying |
 | **Z** | /z/ | Default | **zou** | zoo |
 | **Z̦** | /ʒ/ | Default | **az̦ure** | azure |
 
