@@ -2,7 +2,8 @@
 
 | Grapheme | IPA | Environment / Context | Inglisce Examples | Modern English |
 | :--- | :--- | :--- | :--- | :--- |
-| **AE / ÁI** | /aɪ/ | Semantic contrast (distinguishes homophones) | fr*ae*, fr*ái*s, c̃*ae*, <br> l*ái*e, m*ái*t | fry (fish), fries (fish), <br> lie (recline), might (verb) |
+| **AE** | /aɪ/ | Latin '-ify' verbs, loanwords, and semantic contrast | fr*ae*, c̃*ae*, <br> jostif*ae*, amplif*ae* | fry (fish), chai, <br> justify, amplify |
+| **ÁI-E** | /aɪ/ | Semantic contrast (homophones) and inflected forms | fr*ái*s, l*ái*e, m*ái*t | fries (fish),<br> lie (recline),<br> might (verb) |
 | **AI-E** | /eɪ/ | Default for verbs and mid-word nouns | s*aie*, r*ai*gn*e*, d*aie* | say, rain, day |
 | **AIE-E** | /aɪ/ | Historical preservation (lexical set) | *aie*le, *aie*ls | aisle, aisles |
 | **AIH** | /aɪ/ | Limited verbal roots | n*aih*te, d*aih*e, <br> m*aih*te, m*aih*ty | night, die, <br> might, mighty |
@@ -27,7 +28,7 @@
 | **OIH** | /aɪ/ | Historical *-igh* class & open syllables | fl*oih*e, sc*oih*e, l*oih*te, <br> h*oih*, h*oih*te, se*oih*, u*oie* | fly, sky, light, <br> high, height, shy, why |
 | **OUI-E** | /ɔɪ/ | Historical Anglo-French '-oil' class | sp*oui*le, f*oui*le, <br> t*oui*le, b*oui*e | spoil, foil, <br> toil, buoy |
 | **OY** | /ɔɪ/ | Before suffixes or vowels (plurals, derived forms) | b*oy*s, t*oy*s, sp*oy*els, <br> ann*oy*ing, ann*oy*ance, destr*oy*eur, <br> l*oy*al, r*oy*al | boys, toys, spoils, <br> annoying, annoyance, destroyer, <br> loyal, royal |
-| **Ô** | /aʊ/ | Core default (open final, before vowel, L, or N) | all*ôe*, all*ôu*ing, c*ôe*, c*ôu*s, <br> v*ôl*e, v*ôe*ls, *ôl*e, *ôe*ls, <br> s*ôn*de, cr*ôn*e, t*ôu*re, <br> c*ôa*rd, *ôa*re | allow, allowing, cow, cows, <br> vowel, vowels, owl, owls, <br> sound, crown, tower, <br> coward, hour |
+| **Ô** | /aʊ/ | Core default (open final, before vowel, L, or N) | all*ôe*, all*ôu*ing, c*ôe*, c*ôu*s, <br> v*ôl*e, v*ôe*ls, <br> *ôl*e, *ôe*ls, <br> s*ôn*de, cr*ôn*e, t*ôu*re, t*ôu*irs <br> c*ôa*rd, *ôa*re | allow, allowing, cow, cows, <br> vowel, vowels, owl, owls, <br> sound, crown, tower, towers, <br> coward, hour |
 | **YH** | /aɪ/ | Verbal / participial glide | d*yh*e, fl*yh*e, <br> cr*yh*ing, fr*yh*ing | dye, fly (bug), <br> crying, frying |
 | **Ŷ** | /aɪ/ | Medial before clusters | c*ŷ*nd, c*ŷ*te | kind, kite |
 
