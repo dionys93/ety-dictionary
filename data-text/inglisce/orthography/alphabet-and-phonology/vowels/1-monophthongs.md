@@ -16,8 +16,8 @@
 | **EA** | /ɛ/ | Historical retention | breade, beare | bread, bear |
 | **E-E** | /ɛ/ | Default stressed | n*e*te, b*e*de, b*e*ds, h*e*de | net, bed, beds, head |
 | **È** | /ɛ/ | Irregular stress | an*è*monie, pr*è*sident | anemone, president |
-| **EI** | /i/ | Word-initial | *ei*c̃, *ei*gle, *ei*le | each, eagle, eel |
-| **EU** | /ə/ | Before C and X | d*eu*c, d*eu*x, st*eu*c | duck, ducks, stuck |
+| **EI-** | /i/ | Word-initial | *ei*c̃, *ei*gle, *ei*le | each, eagle, eel |
+| **-EU-** | /ə/ | Before C and X | d*eu*c, d*eu*x, st*eu*c | duck, ducks, stuck |
 | **EU-E** | /u/ | Word-final monosyllables | r*eu*le, r*eu*ls, cl*eu*e, cl*eu*s, <br> cr*eu*e, cr*eu*s, cr*eu*se, <br> tr*eu*, bl*eu*, f*eu*, *eu*noc, s*eue*, s*eu*s | rule, rules, clue, clues, <br> crew, crews, cruise, <br> true, blue, few, eunuch, shoe, shoes |
 | **I** | /ɪ/ | Default stressed (closed syllables, clusters, -ION) | d*i*c̃e, r*i*c̃e, b*i*tte, s*i*c, f*i*n*i*șe, cond*i*cion, f*i*ccion, gn*i*t | ditch, rich, bit, sick, finish, condition, fiction, knit |
 | **I** | /ə/ | Unstressed Latinate | ind*i*viḑual | individual |
