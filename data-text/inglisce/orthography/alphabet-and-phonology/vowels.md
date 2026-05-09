@@ -10,9 +10,10 @@
 | **AI** | /ɛ/ | Specific high-frequency / past tense | **braiþ**, **laitace**, **caic̃e**, <br> **lait**, **maint** | breath, lettuce, catch, <br> let, meant |
 | **ALL** | /ɔɫ/ | Word-final | **falle**, **cralle**, **stalle** | fall, crawl, stall |
 | **AO** | /ɔ/ | Word-medial | **faone**, **daone**, **paone** | fawn, dawn, pawn |
-| **AU** | /ɔ/ | Default | **automn**, **sauce**, **assaulte**, <br> **laus**, **saus**, **baule** | autumn, sauce, assault, <br> laws, saws, bawl |
+| **AU** | /ɔ/ | Default | **Austrâlia**, **automn**, **sauce**, **assaulte**, <br> **laus**, **saus**, **baule** | Australia, autumn, sauce, assault, <br> laws, saws, bawl |
 | **AUH** | /ɔ/ | Silent GH clusters | **cauht**, **tauht** | caught, taught |
-| **E / E-E** | /ɛ/ | Default stressed | **nete**, **bede**, **hede** | net, bed, head |
+| **E** | /ə/ | Default | **devote**, **repite**, **emitte** | devote, repeat, emit |
+| **E-E** | /ɛ/ | Default stressed | **nete**, **bede**, **hede** | net, bed, head |
 | **È** | /ɛ/ | Irregular stress | **anèmonie**, **prèsident** | anemone, president |
 | **EI** | /i/ | Word-initial | **eic̃**, **eigle**, **eile** | each, eagle, eel |
 | **EU** | /u/ | After R, TR | **reule**, **treu** | rule, true |
@@ -25,7 +26,7 @@
 | **O** | /ɑ/ | Before C or two consonants | **loc**, **botte** | lock, bot |
 | **O** | /ə/ | Unstressed default | **rone**, **condicion** | run, condition |
 | **O** | /ɔ/ | Before FF and LL | **bolle**, **dolle** **coffe**, <br> **coffre**, **coffars** | ball, doll, cough, <br> coffer, coffers |
-| **Ò** | /ɔ/ | Used in other environments | **còste**, **fròste**, **sòft** | cost, frost, soft |
+| **Ò** | /ɔ/ | Explicit marker | **Òstria**, **còste**, **fròste**, **sòft** | Austria, cost, frost, soft |
 | **OH** | /ɔ/ | Past participles and nouns | **boht**, **foht**, **þohte** | bought, fought, thought |
 | **OIC̃E**| /iːtʃ/ | Affricate cluster | **boic̃e**, **poic̃e** | beech, peach |
 | **Ô** | /ʊ/ | Stressed | **bôc**, **uôde** | book, wood |
@@ -37,7 +38,7 @@
 | **EU-E** | /u/ | Monosyllables, word-final | **bleu**, **cleue** | blue, clue |
 | **Û** | /ʊ/ | Stressed closed syllables | **gûd**, **cûcion** | good, cushion |
 | **USCE** | /ʊʃ/ | Affricate cluster | **busce**, **pusce** | bush, push |
-| **Y** | /i/ | Word-final adjectives / adverbs; Some nouns | **fonny**, **cuichly**, **fyte** | funny, quickly, feet |
+| **Y** | /i/ | Word-final adjectives / adverbs; Some nouns; Before vowels | **fonny**, **cuichly**, **fyte**, **âþyist** | funny, quickly, feet |
 | **Y** | /ɪ/ | Monosyllable Germanic and Greek words | **cyne**, **cyde**, **gyme** | kin, kid, gym |
-| **Ÿ** | /i/ | Stressed stem before -ING | **agrÿing** | agreeing |
+| **Ÿ** | /i/ | Stressed stem | **agrÿing**, **monoþÿism** | agreeing, monotheism |
 | **Ÿ** | /ɪ/ | Stress marking | **analÿtical** | analytical |
