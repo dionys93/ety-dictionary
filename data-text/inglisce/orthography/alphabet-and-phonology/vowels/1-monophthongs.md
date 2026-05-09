@@ -38,7 +38,7 @@
 | **U-E** | /u/ | Non-yod class / Before vowels | r*u*de, n*u*ance | rude, nuance |
 | **U-E** | /ju/ | Yod class | c*u*t*e*, m*u*s*e*, acc*u*s*e*, ac*u*t*e* | cute, muse, accuse, acute |
 | **UIS** | /juz/ | Plural morphology (replaces -ues/-ews) | val*uis*, corf*uis*, v*uis* | values, curfews, views |
-| **Ú** | /u/ or /ju/ | Stressed | rev*ú*s, conf*ú*sion, c*ú*e, c*ú*s  | reviews, confusion, cue, cues/queues |
+| **Ú** | /u/ or /ju/ | Stressed | rev*ú*s, conf*ú*sion, c*ú*e, c*ú*s, m*ú*sic  | reviews, confusion, cue, cues/queues, music |
 | **Û** | /ʊ/ | Stressed closed syllables | g*û*d, c*û*cion | good, cushion |
 | **USCE** | /ʊʃ/ | Affricate cluster | b*usce*, p*usce* | bush, push |
 | **Y** | /i/ | Word-final adjectives / adverbs; Some nouns; Before vowels | fonn*y*, cuichl*y*, f*y*te, âþ*y*ist | funny, quickly, feet |
