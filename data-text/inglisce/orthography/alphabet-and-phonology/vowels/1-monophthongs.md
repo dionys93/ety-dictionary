@@ -18,7 +18,7 @@
 | **È** | /ɛ/ | Irregular stress | an*è*monie, pr*è*sident | anemone, president |
 | **EI** | /i/ | Word-initial | *ei*c̃, *ei*gle, *ei*le | each, eagle, eel |
 | **EU** | /ə/ | Before C and X | d*eu*c, d*eu*x, st*eu*c | duck, ducks, stuck |
-| **EU-E** | /u/ | Word-final monosyllables | r*eu*le, r*eu*ls, cl*eu*e, cl*eu*s, <br> cr*eu*e, cr*eu*s, cr*eu*se, <br> tr*eu*, bl*eu* | rule, rules, clue, clues, <br> crew, crews, cruise, <br> true, blue |
+| **EU-E** | /u/ | Word-final monosyllables | r*eu*le, r*eu*ls, cl*eu*e, cl*eu*s, <br> cr*eu*e, cr*eu*s, cr*eu*se, <br> tr*eu*, bl*eu*, f*eu*, *eu*noc, s*eue*, s*eu*s | rule, rules, clue, clues, <br> crew, crews, cruise, <br> true, blue, few, eunuch, shoe, shoes |
 | **I** | /ɪ/ | Default stressed (closed syllables, clusters, -ION) | d*i*c̃e, r*i*c̃e, b*i*tte, s*i*c, f*i*n*i*șe, cond*i*cion, f*i*ccion, gn*i*t | ditch, rich, bit, sick, finish, condition, fiction, knit |
 | **I** | /ə/ | Unstressed Latinate | ind*i*viḑual | individual |
 | **I-E** | /i/ | Closed syllables / verb stems | maç*i*n*e*, compl*i*t*e* | machine, complete |
@@ -26,7 +26,7 @@
 | **Ï** | /i/ | Before vowel (diaeresis separator) | s*ï*ale, naus*ï*ait, g*ï*ographie | seal, nauseate, geography |
 | **Í** | /i/ | Stress-marked | compl*í*cion, m*í*dia | completion, media |
 | **O** | /ɑ/ | Before C or two consonants | l*o*c, b*o*tte | lock, bot |
-| **O** | /ə/ | Unstressed default | r*o*ne, c*o*ndicion, hn*o*te, cr*o*sce, br*o*sce | run, condition, nut, crush, brush |
+| **O** | /ə/ | Unstressed default / Replaces U after M, N, R | r*o*ne, c*o*ndicion, hn*o*te, cr*o*sce, br*o*sce | run, condition, nut, crush, brush |
 | **O** | /ɔ/ | Before FF and LL | b*o*lle, d*o*lle, c*o*ffe, <br> c*o*ffre, c*o*ffars | ball, doll, cough, <br> coffer, coffers |
 | **Ò** | /ɔ/ | Explicit marker | *Ò*stria, c*ò*ste, fr*ò*ste, s*ò*ft | Austria, cost, frost, soft |
 | **OH** | /ɔ/ | Past participles and nouns | b*oh*t, f*oh*t, þ*oh*te | bought, fought, thought |
@@ -37,6 +37,8 @@
 | **U** | /ə/ | Short stressed monosyllables / function words | c*u*tte, șute, hl*u*c  | cut, shut, luck |
 | **U-E** | /u/ | Non-yod class / Before vowels | r*u*de, n*u*ance | rude, nuance |
 | **U-E** | /ju/ | Yod class | c*u*t*e*, m*u*s*e* | cute, muse |
+| **UIS** | /juz/ | Plural morphology (replaces -ues/-ews) | val*uis*, corf*uis*, v*uis* | values, curfews, views |
+| **Ú** | /u/ or /ju/ | Stressed | rev*ú*s, conf*ú*sion, c*ú*s  | reviews, confusion, cues/queues |
 | **Û** | /ʊ/ | Stressed closed syllables | g*û*d, c*û*cion | good, cushion |
 | **USCE** | /ʊʃ/ | Affricate cluster | b*usce*, p*usce* | bush, push |
 | **Y** | /i/ | Word-final adjectives / adverbs; Some nouns; Before vowels | fonn*y*, cuichl*y*, f*y*te, âþ*y*ist | funny, quickly, feet |
