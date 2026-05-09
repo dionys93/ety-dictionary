@@ -7,7 +7,7 @@
 | **À** | /æ/ | Irregular stress | an*à*lysis, alf*à*lfa | analysis, alfalfa |
 | **Á** | /ɑ/ | Stressed basic words | fáþre, uátre | father, water |
 | **AH-E** | /ɔ/ | Word-final monosyllables | l*ahe*, I s*ah* a s*ahe* | law, I saw a saw |
-| **AI** | /ɛ/ | Specific high-frequency / past tense | br*ai*þ, l*ai*tace, c*ai*c̃e, <br> l*ai*t, m*ai*nt | breath, lettuce, catch, <br> let, meant |
+| **AI** | /ɛ/ | Specific high-frequency / past tense | br*ai*þ, l*ai*tace, c*ai*c̃e, <br> l*ai*t, m*ai*nt s*ai*s, s*ai*d | breath, lettuce, catch, <br> let, meant, says, said |
 | **ALL** | /ɔɫ/ | Word-final | f*all*e, cr*all*e, st*all*e | fall, crawl, stall |
 | **AO** | /ɔ/ | Word-medial | f*ao*ne, f*ao*ns, d*ao*ne, p*ao*ne | fawn, fawns, dawn, pawn |
 | **AU** | /ɔ/ | Default | *Au*strâlia, *au*tomn, s*au*ce, ass*au*lte, <br> l*au*s, s*au*s, b*au*le | Australia, autumn, sauce, assault, <br> laws, saws, bawl |
