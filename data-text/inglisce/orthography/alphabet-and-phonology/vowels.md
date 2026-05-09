@@ -30,7 +30,7 @@
 | **OIC̃E**| /iːtʃ/ | Affricate cluster | **boic̃e**, **poic̃e** | beech, peach |
 | **Ô** | /ʊ/ | Stressed | **bôc**, **uôde** | book, wood |
 | **OU** | /u/  | Medial and final | **soupe**, **route**, **cangaroue** | soup, route, kangaroo |
-| **OÛ** | /ʊ/ or /wʊ/ | Modal verbs | **coûd**, **seûd**, **oûd** | could, should, would |
+| **OÛ** | /ʊ/ or <br> /wʊ/ | Modal verbs | **coûd**, **seûd**, **oûd** | could, should, would |
 | **U** | /ə/ | Short stressed monosyllables / function words | **cutte**, **nutte** | cut, nut |
 | **U-E** | /u/ | Non-yod class / Before vowels | **rude**, **nuance** | rude, nuance |
 | **U-E** | /ju/ | Yod class | **cute**, **muse** | cute, muse |
