@@ -24,7 +24,7 @@
 | **OI-E** | /ɔɪ/ | Medial and word-final | c*oi*ne, c*oi*ns, c̃*oi*ce, enj*oi*e, b*oi*e | coin, coins, choice, enjoy, boy |
 | **OIH** | /aɪ/ | Historical *-igh* class & open syllables | fl*oih*e, sc*oih*e, l*oih*te, h*oih*, h*oih*te se*oih*, u*oie* | fly, sky, light, high, height, shy, why |
 | **OY** | /ɔɪ/ | Before suffixes or vowels (plurals, derived forms) | b*oy*s, t*oy*s, sp*oy*els, ann*oy*ing, ann*oy*ance, destr*oy*eur | boys, toys, spoils, annoying, annoyance, destroyer |
-| **Ô** | /aʊ/ | Core default (open final, before vowel, L, or N) | all*ôe*, all*ôu*ing c*ôe*, c*ôu*s, v*ôl*e, v*ôe*ls, *ôl*e, *ôe*ls, s*ôn*de, t*ôu*re | allow, allowing, cow, cows, vowel, vowels, owl, owls, sound, tower |
+| **Ô** | /aʊ/ | Core default (open final, before vowel, L, or N) | all*ôe*, all*ôu*ing c*ôe*, c*ôu*s, v*ôl*e, v*ôe*ls, *ôl*e, *ôe*ls, s*ôn*de, cr*ôn*e, t*ôu*re, c*ôa*rd, *ôa*re | allow, allowing, cow, cows, vowel, vowels, owl, owls, sound, crown, tower, coward, hour |
 | **YH** | /aɪ/ | Verbal / participial glide | d*yh*e, fl*yh*e cr*yh*ing, fr*yh*ing | dye, fly (bug), crying, frying |
 | **Ŷ** | /aɪ/ | Medial before clusters | c*ŷ*nd, c*ŷ*te | kind, kite |
 
