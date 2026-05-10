@@ -14,30 +14,28 @@ const { items } = Astro.props;
 </ul>
 
 <style>
-  /* Base Desktop Layout: 3 equal columns */
+  /* Fluid Layout: Automatically wraps based on available space */
   .grid-list {
     list-style: none;
     padding: 0;
     margin: 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    /* This tells the grid: make items at least 110px wide. 
+       If the sidebar is 350px, it fits 2 or 3. If it shrinks, it drops to 1. */
+    grid-template-columns: repeat(auto-fill, minmax(108px, 1fr));
     gap: 1rem; 
     width: 100%;
   }
   
-  .grid-item {
+.grid-item {
     background-color: #f7f7f7;
     border: 1px solid #ddd;
     border-radius: 6px;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
     transition: background-color 0.2s ease, transform 0.1s ease, box-shadow 0.2s ease;
-  }
-  
-  /* Subtle lift effect on hover */
-  .grid-item:hover {
-    background-color: #e0e0e0;
-    transform: translateY(-2px);
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    /* ADD THIS: Forces the grid item to strictly obey the grid column width */
+    min-width: 0; 
   }
   
   .link {
@@ -48,29 +46,17 @@ const { items } = Astro.props;
     text-decoration: none;
     color: #333;
     font-weight: 500;
-    height: 100%; /* Ensures the entire box is clickable */
+    height: 100%;
     box-sizing: border-box;
+
+    /* ADD THIS: Keeps the flex container from expanding past the grid item */
+    overflow: hidden; 
   }
 
-  .icon {
-    font-size: 1.25rem;
-    flex-shrink: 0; /* Prevents the icon from squishing on long words */
-  }
-  
-  /* Tablet View: Snap to 2 columns */
-  @media (max-width: 768px) {
-    .grid-list {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  }
-  
-  /* Mobile View: Snap to 1 column */
-  @media (max-width: 480px) {
-    .grid-list {
-      grid-template-columns: 1fr;
-    }
-    .link {
-      padding: 0.875rem; /* Slightly tighter padding on small screens */
-    }
+  /* ADD THIS NEW RULE: Truncates long dictionary terms gracefully with an ellipsis */
+  .name {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
   }
 </style>

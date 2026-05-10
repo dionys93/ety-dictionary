@@ -31,34 +31,69 @@ const { slug } = Astro.params;
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    {/* Dynamically set the page title based on the file or folder name */}
     <title>{title}</title>
-  </head>
-  <body style="margin: 0; padding: 0; font-family: sans-serif;">
     
-    {/* --- DYNAMIC RENDERING --- */}
-    {/* Evaluate the 'type' prop to determine which layout component to mount. */}
-    {type === 'directory' ? (
-      // If the current path is a folder, render the DirectoryView.
-      // Pass down the folder's title, contents ('items'), any index file content, and the current slug.
-      <DirectoryView 
-        title={title} 
-        items={contents} 
-        content={content} 
-        ext={ext} 
-        isRoot={isRoot} 
-        slug={slug || ''} // Fallback to an empty string if we are at the absolute root (/)
-      />
-    ) : (
-      // If the current path is a standalone file (like a .md or .txt), render the ContentView.
-      // Pass down the raw content and the slug so child components (like your visualizer!) know where they are.
-      <ContentView 
-        content={content} 
-        ext={ext} 
-        isRoot={isRoot} 
-        slug={slug || ''} 
-      />
-    )}
+    <style>
+      /* Base resets */
+      body { margin: 0; padding: 0; font-family: sans-serif; }
+      
+      /* The Two-Pane CSS Grid */
+      .split-layout {
+        display: grid;
+        grid-template-columns: 350px 1fr; /* 350px for nav, the rest for content */
+        height: 100vh;
+        width: 100vw;
+        overflow: hidden; /* Lock the main window from scrolling */
+      }
 
+      /* Left Navigation Pane */
+      .left-pane {
+        background-color: #f9fafb;
+        border-right: 1px solid #e5e7eb;
+        overflow-y: scroll; /* Allow independent scrolling */
+      }
+
+      /* Right Content Pane */
+      .right-pane {
+        background-color: #ffffff;
+        overflow-y: auto; /* Allow independent scrolling */
+      }
+    </style>
+  </head>
+  
+  <body>
+    <div class="split-layout">
+      
+      {/* --- LEFT PANE: NAVIGATION --- */}
+      <nav class="left-pane">
+        <DirectoryView 
+          title={title} 
+          items={contents} /* NOTE: This will break temporarily when viewing files until Step 2 */
+          content={type === 'directory' ? content : undefined} 
+          ext={ext} 
+          isRoot={isRoot} 
+          slug={slug || ''}
+        />
+      </nav>
+
+      {/* --- RIGHT PANE: CONTENT --- */}
+      <main class="right-pane">
+        {type === 'file' ? (
+          /* Render the actual file content */
+          <ContentView 
+            content={content} 
+            ext={ext} 
+            isRoot={isRoot} 
+            slug={slug || ''} 
+          />
+        ) : (
+          /* Placeholder when looking at a folder directory */
+          <div style="display: flex; align-items: center; justify-content: center; height: 100%; color: #9ca3af;">
+            Select a document from the left to read.
+          </div>
+        )}
+      </main>
+
+    </div>
   </body>
 </html>

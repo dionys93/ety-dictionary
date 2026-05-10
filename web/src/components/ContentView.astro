@@ -42,13 +42,6 @@ const parsedContent = (ext === '.md' && content) ? marked.parse(content) : conte
             </div>
         )}
 
-        {/* --- NAVIGATION --- */}
-        {!isRoot && (
-            <div style="margin-top: 2rem; align-self: flex-start;">
-                <BackButton />
-            </div>
-        )}
-
     </Column>
 </Container>
 
