@@ -7,7 +7,6 @@ const { items } = Astro.props;
   {items.map((item) => (
     <li class="grid-item">
       <a href={item.href} class="link">
-        <span class="icon">{item.isDir ? '📁' : '📄'}</span>
         <span class="name">{item.name}</span>
       </a>
     </li>
