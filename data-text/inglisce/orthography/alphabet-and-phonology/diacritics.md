@@ -27,7 +27,7 @@ The diacritic system of Inglisce is governed by four core principles:
 | :--- | :--- | :--- |
 | **Acute ( ´ )** | Stress marking | Vowel quality (Close/Tense) |
 | **Grave ( \` )** | Stress marking | Vowel quality (Open/Lax) |
-| **Circumflex ( ˆ )** | Vowel quality | Conditional stress |
+| **Circumflex ( ˆ )** | Vowel quality (GVS) | Conditional stress |
 | **Diaeresis ( ¨ )** | Glide and vowel separation | Prosodic disambiguation |
 | **Tilde ( ˜ )** | Consonantal structure | Prosodic stability & Etymology |
 | **Cedilla / Comma ( ¸ / ̦ )** | Consonant quality | Morphological transparency |
