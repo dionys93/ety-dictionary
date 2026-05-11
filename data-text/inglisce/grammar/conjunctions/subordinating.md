@@ -18,7 +18,7 @@
 | **unless** | Except on the condition that (if not). | Uie'll bie lâte **unless** uie lievfe roiht nôe. |
 | **ontill** | Up to the point or event that fulfills a condition. | Don't starte þe teste **ontill** I guive þe signal. |
 | **provîded þat** | On the condition or understanding that. | You can bòroe þe carre **provîded þat** you retourne it by nîne. |
-| **assuming þat** | Accepting a scenario as true or as a working condition. | **Assuming þat** it dusn't raigne, uie'll have a picnic. |
+| **assouming þat** | Accepting a scenario as true or as a working condition. | **Assouming þat** it dusn't raigne, uie'll have a picnic. |
 | **iven if** | Indicates the result will happen regardless of a specific condition. | I'll goe to þe partie **iven if** you don't. |
 | **in câss (þat)** | As a precaution against a specific condition or event. | Tâc an ombrella **in câss þat** it raignes. |
 | **lest** | With the intention of preventing a condition (for fear that). | Hie spóc quîetly **lest** hie uâc þe bâbie. |
