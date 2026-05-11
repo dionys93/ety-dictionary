@@ -25,7 +25,7 @@
 | | Medial | u-e, ú, ui | m*u*s*e*, m*ú*sic, corf*ui*s |
 | | Final | ue | val*ue*, corf*ue*, arg*ue* |
 | **/ə/** | Initial | a, e, o | *a*baut, *e*mitte, *o*ccûre |
-| | Medial | a, i, e, u, o | anim*a*t, ind*i*viḑual, d*e*vote, c*u*tte, r*o*ne |
+| | Medial | a, i, e, u, o | anim*a*t, ind*i*viḑual, d*e*vote, c*u*tte, r*o*ne, c*o*me, t*o*nele, s*o*mere |
 | | Final | a | mídi*a* |
 | **/eɪ/** | Initial | â, éi, ea | *â*ge, *â*pe, *â*þyist, *éi*me, *ea*le |
 | | Medial | â, aî, ai-e, ei, ea, aig, eig, eih | cr*â*te, f*â*te, g*â*te, st*â*te, m*â*te, tr*aî*tre, r*ai*gn*e*, v*ei*ne, r*ei*ne, str*ei*ne, s*ea*de, s*ea*me, gr*ea*t, st*ai*gn*e*, r*eig*ne, u*eih*te |
@@ -37,7 +37,7 @@
 | | Medial | oi-e, eui-e, oui-e, euy, oy | c*oi*n*e*, *eui*le, (*euy*els), f*eui*le, f*eui*lage sp*oui*le, (sp*oy*els)  |
 | | Final | oy | b*oy*s |
 | **/oʊ/** | Initial | ó, oa | *ó*pal, *ó*val, *oa*ts |
-| | Medial | o-e, ó, oa | b*o*n*e* (b*oa*ns), b*o*t*e* (b*oa*ts), g*o*t*e* (g*oa*ts), c*oa*ste, g*oa*ste, r*ó*ste, b*ó*ste |
+| | Medial | o-e, ó, oa | b*o*n*e* (b*oa*ns), b*o*t*e* (b*oa*ts), g*o*t*e* (g*oa*ts), c*oa*ste, g*oa*ste, h*oa*me, c*oa*me, r*ó*ste, b*ó*ste |
 | | Final (Roots & Suffixes) | o, oe, ou | uind*o*, siad*o*, se*oe* (se*ou*ing), bl*oe* (bl*ou*ing) |
 | **/aʊ/** | Medial | ô-e, aû, ôn, -aund | *ô*l*e*, v*ô*l*e*, h*aû*se, cr*ôn*e, s*ôn*de, f*aund*, gr*aund* |
 | | Final (Roots & Suffixes) | ôe, ôu | h*ôe*, c*ôe* (c*ôu*s), all*ôe* (all*ôu*ing), *ôe*ls, v*ôe*ls |
