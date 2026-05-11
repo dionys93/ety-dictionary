@@ -32,7 +32,7 @@ These verbs strip down to a lean **-c** base for 1st/2nd person and take **-cs**
 | **to hôche** | I, you, uie hôc; hie hôcs | hôched | hôching | hôc, heox |
 | **to crânche** | I, you, uie crânc; hie crâncs| crânched | crânching | crânc, crâncs; crânchy |
 | **to cróche** | I, you, uie croac; hie croacs| cróched | cróching | cróc, croax |
-| **to þânche** | I, you, uie þânc; hie þâncs | þânqued | þânquing | þâncs |
+| **to þainche** | I, you, uie þainc; hie þaincs | þainched | þainching | þaincs |
 
 
 ### Irregular ⟨-che⟩ Conjugations
