@@ -8,6 +8,7 @@
 | **AIE-E** | /aɪ/ | Historical preservation (lexical set) | *aie*le, *aie*ls | aisle, aisles |
 | **AIH** | /aɪ/ | Limited verbal roots | n*aih*te, d*aih*e, <br> m*aih*te, m*aih*ty | night, die, <br> might, mighty |
 | **AIT** | /eɪ/ | Unstressed Latin verbs | demonstr*ait*, navig*ait* | demonstrate, navigate |
+| **AÎ** | /eɪ/ | Stressed French words | tr*aî*tre, tr*aî*tors | traitor, traitors |
 | **AUND** | /aʊ/ | Germanic strong past | f*aund*, gr*aund* | found, ground |
 | **AÛ** | /aʊ/ | Open lexical class | h*aû*se, m*aû*se, l*aû*se, <br> cr*aû*de, s*aû*re, l*aû*d | house, mouse, louse, <br> crowd, sour, loud |
 | **AY** | /eɪ/ | Adjectives, plural nouns, and before suffixes | gr*ay*, d*ay*s, <br> p*ay*ing, s*ay*ing | gray, days, <br> paying, saying |
