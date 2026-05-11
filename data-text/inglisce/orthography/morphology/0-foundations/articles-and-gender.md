@@ -1,8 +1,12 @@
 ## Grammatical Gender and the Definite Article
 
-Unlike many European languages where grammatical gender is an arbitrary memorization task, Inglisce utilizes a strictly phonological gender system. Gender is not tied to biological sex or abstract classification; it is directly determined by the **spoken stress** of the noun.
+In terms of syntax—when to use a definite or indefinite article—Inglisce follows the exact same logical rules as Modern English. You deploy them before specific or general nouns exactly as you always have.
 
-Because Inglisce is a fusion of Germanic (typically front-stressed) and Romance (often later-stressed) vocabularies, this stress-based gender system naturally categorizes nouns by their etymological behavior and dictates which definite article they take.
+However, Inglisce fundamentally overhauls the physical shape of these articles by introducing a strictly *phonological gender system*.
+
+Unlike many European languages where grammatical gender is an exercise in arbitrary memorization, gender in Inglisce is not tied to biological sex or abstract classification. Instead, it is directly determined by the *spoken stress* of the noun. Because Inglisce is a fusion of Germanic (typically front-stressed) and Romance (often later-stressed) vocabularies, this stress-based system naturally categorizes nouns by their etymological behavior.
+
+Consequently, articles in Inglisce change form mechanically—dictated entirely by this stress-derived gender and the initial sound of the word they precede.
 
 ---
 
