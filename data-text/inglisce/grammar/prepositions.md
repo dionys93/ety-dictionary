@@ -75,3 +75,162 @@ While their orthography has been standardized to reflect their phonetic reality,
 | **with** | **uiþ** | Accompanied by; possessing or having. |
 | **within** | **uiþin** | Occurring inside the range, limits, or boundaries of. |
 | **without** | **uiþaut** | In the absence of; not having or doing. |
+
+---
+
+## Prepositions by Categorîe
+
+### Causal Prepositions
+*These explain why something happens:*
+
+| Preposition | Example |
+| :--- | :--- |
+| **for** | for sâfty rísons |
+| **becase of** | becase of þe raigne |
+| **due to** | dûe to illness |
+| **from** | from exaustion |
+| **þru** | þru hard uirc |
+| **on accônte of** | on accônte of bad ueþre |
+
+---
+
+### Compônd Prepositions
+*These consist of two or more words:*
+
+| Preposition | Example |
+| :--- | :--- |
+| **according to** | according to þe reuls |
+| **ahèd of** | ahèd of sched̦ule |
+| **apárt from** | apárt from þat |
+| **as for** | as for mi(e |
+| **as uel as** | as uell as oþars |
+| **becase of** | becase of you |
+| **by miens of** | by miens of technologie |
+| **in accórdance uiþ** | in accórdance uiþ þe lahe |
+| **in addicion to** | in addicion to þe còste |
+| **in câss of** | in câss of emêgencie |
+| **in fâvor of** | in fâvre of þa propôsal |
+| **in spîte of** | in spîte of difficultis |
+| **instaid of** | instaid of caufie |
+| **in lieu of** | in lieu of paiement |
+| **on behafe of** | on behafe of þe companie |
+| **on top of** | on top of evryþing else |
+| **aut of** | aut of respecte |
+| **ouing to** | ouing to þa delaie |
+| **prîor to** | prîor to þe mieting |
+| **uiþ regarde to** | uiþ regarde to your requaiste |
+
+---
+
+### Direccional Prepositions
+*These show motion or direction:*
+
+| Preposition | Example |
+| :--- | :--- |
+| **to** | to þe store |
+| **tords** | tords þi èxit |
+| **into** | into þe roume |
+| **onto** | onto þe roufe |
+| **aut of** | aut of þe bylding |
+| **from** | from Pâris |
+| **þru** | þru þe forest |
+| **acròss** | acròss þe bridge |
+| **alòng** | alòng þe coaste |
+| **arônd** | arônd þe trac |
+| **up** | up þe steirs |
+| **dôn** | dôn þe hille |
+| **ovre** | ovre þe fence |
+| **ondre** | ondre þe bridge |
+| **past** | past þe c̃urc̃e |
+| **by** | by þe lâc |
+
+---
+
+### Instrumental Prepositions
+*These show who or what performs an action:*
+
+| Preposition | Example |
+| :--- | :--- |
+| **by** | peinted by Picásso |
+| **uiþ** | cut uiþ cisors |
+
+---
+
+### Locatif Prepositions
+*These indicate location or position in space:*
+
+| Preposition | Example |
+| :--- | :--- |
+| **at** | at þe doure, at hoame, at uirc |
+| **in** | in þe roume, in London, in þe carre |
+| **on** | on þe tâble, on þe ualle, on þe floure |
+| **above** | above þe clôuds |
+| **beló** | beló cie levle |
+| **benieþ** | benieþ þe sorface |
+| **ondre** | ondre þe bridge |
+| **ovre** | ovre þe raignbo |
+| **betuine** | betuine tue c̃airs |
+| **among** | among frends |
+| **besîde / by** | besîde þe rivre |
+| **niar** | nier þa stâcion |
+| **against** | against þe ualle |
+| **behînd** | behînd þe haûse |
+| **in front of** | in front of þe bylding |
+| **insîde** | insîde þe box |
+| **autsîde** | autsîde þe gâte |
+| **uiþin** | uiþin þe city limits |
+| **arônd** | arônd þe cornor |
+| **acròss** | acròss þe striete |
+| **alòng** | alòng þe paþ |
+| **þru** | þru þe tonele |
+| **þruaut** | þruaut þe contrie |
+| **bionde** | bionde þa horîson |
+| **opposit** | opposit þe bânque |
+
+---
+
+### Modal Prepositions
+*These describe how something is done:*
+
+| Preposition | Example |
+| :--- | :--- |
+| **by** | by carre, by hande |
+| **uiþ** | uiþ caire, uiþ a nîfe |
+| **uiþaut** | uiþaut helpe |
+| **lîc** | lîc a professional |
+| **as** | as a frende |
+| **in** | in sîlence, in a hêrie |
+
+---
+
+### Relacional Prepositions
+*These indicate ownership or relationships:*
+
+| Preposition | Example |
+| :--- | :--- |
+| **of** | þe color of þe scoihe |
+| **uiþ** | a man uiþ a hatte |
+| **to** | mâried to John |
+| **for** | a guifte for you |
+
+---
+
+### Temporal Prepositions
+*These indicate when something happens:*
+
+| Preposition | Example |
+| :--- | :--- |
+| **at** | at 5 o'cloc, at midnaiht |
+| **in** | in Jañuarie, in 2024, in þe morning |
+| **on** | on Monday, on Julîe 4þ |
+| **before** | before noune |
+| **aftre** | aftre dinor |
+| **during** | during þe mieting |
+| **for** | for tue ôars |
+| **since** | since yesterday |
+| **ontill / till** | ontill tomòro |
+| **by** | by next uiec |
+| **from... to** | from 9 to 5 |
+| **uiþin** | uiþin an ôare |
+| **þruaut** | þruaut þe daie |
+| **past** | past midnaiht |
