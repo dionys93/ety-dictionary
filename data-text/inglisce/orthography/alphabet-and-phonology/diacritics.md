@@ -14,7 +14,7 @@ Together, the diacritics form a system in which:
 ### System Design Principles
 The diacritic system of Inglisce is governed by four core principles:
 
-1. **Conservation (Economy):** Diacritics appear *only* when required. Regular, predictable spelling patterns do not require marks.
+1. **Conservation (Economy):** Diacritics appear *only* when required. Regular, predictable spelling patterns do not require marks. Some exceptions do occur and are usually derived from Greek: îdía (idea)
 2. **The One-Mark Rule:** Only **one** primary accent (acute, grave, or circumflex) may appear per word. The only exception is the diaeresis, which may legally co-occur with an accent.
 3. **Morphological Transparency:** Related forms remain visibly connected across derivations (e.g., using cedillas to show consonant softening rather than changing the root letter).
 4. **Phonological Clarity:** Ambiguity is resolved explicitly, not contextually.
