@@ -1,266 +1,341 @@
-Ordnal Nombers
+# Ordenal Nombirs
 
-fyrst [OE]
-first [MI]
-https://www.etymonline.com/word/first#etymonline_v_5972
-https://www.merriam-webster.com/dictionary/first
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16070
-https://bosworthtoller.com/13024
+### first
 
-secundus [L]
-second [OF]
-https://www.etymonline.com/word/second#etymonline_v_23074
-https://www.merriam-webster.com/dictionary/second#dictionary-entry-1
-https://anglo-norman.net/entry/second
-https://latin-dictionary.net/definition/34465/secundus-secunda
+**Etymological Derivation:**
+* **[OE]** fyrst
+* **[MI]** first
 
-þridda [OE]
-thrid [MI]
-third [ME]
-þerd
-https://www.etymonline.com/word/third#etymonline_v_10760
-https://www.merriam-webster.com/dictionary/third
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45496
-https://bosworthtoller.com/32049
+**Sources:** [Etymonline](https://www.etymonline.com/word/first#etymonline_v_5972) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/first) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16070) | Bosworth-Toller: [13024](https://bosworthtoller.com/13024)
 
-feorþa [OE]
-ferthe [MI]
-fourth [ME]
-fourþ
-https://www.etymonline.com/word/fourth#etymonline_v_40767
-https://www.merriam-webster.com/dictionary/fourth
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15762
-https://bosworthtoller.com/10456
+---
 
-fifta [OE]
-fifte [MI]
-fifth [ME]
-fiþ
-https://www.etymonline.com/word/fifth#etymonline_v_5923
-https://www.merriam-webster.com/dictionary/fifth
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15895
-https://bosworthtoller.com/10681
+### second
 
-sixta [OE]
-sixte [MI]
-sixth [ME]
-sixþ
-https://www.etymonline.com/word/sixth#etymonline_v_24137
-https://www.merriam-webster.com/dictionary/sixth
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40596
-https://bosworthtoller.com/27904
+**Etymological Derivation:**
+* **[L]** secundus
+* **[OF]** second
 
-seofoþa, seofunda [OE]
-sevende, seveth [MI]
-seventh [ME]
-sevonþ
-https://www.etymonline.com/word/seventh#etymonline_v_23300
-https://www.merriam-webster.com/dictionary/seventh
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39691
-https://bosworthtoller.com/27467
+**Sources:** [Etymonline](https://www.etymonline.com/word/second#etymonline_v_23074) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/second#dictionary-entry-1) | [Anglo-Norman](https://anglo-norman.net/entry/second) | Latin-Dictionary: [34465](https://latin-dictionary.net/definition/34465/secundus-secunda)
 
-eahtoða [OE]
-eighthe [MI]
-eighth [ME]
-eiþ
-https://www.etymonline.com/word/eighth#etymonline_v_32177
-https://www.merriam-webster.com/dictionary/eighth
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13156
-https://bosworthtoller.com/8377
+---
 
-nigoþa [OE]
-ninthe [MI]
-ninth [ME]
-nînþ
-https://www.etymonline.com/word/ninth#etymonline_v_40498
-https://www.merriam-webster.com/dictionary/ninth
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29552
-https://bosworthtoller.com/23713
+### þerd
 
-teoða [OE]
-tenthe [MI]
-tenth [ME]
-tenþ
-https://www.etymonline.com/word/tenth#etymonline_v_39037
-https://www.merriam-webster.com/dictionary/tenth
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17494
-https://bosworthtoller.com/30377
+**Etymological Derivation:**
+* **[OE]** þridda
+* **[MI]** thrid
+* **[ME]** third
 
-endlyfta [OE]
-eleventhe [MI]
-eleventh [ME]
-elèvonþ
-https://www.etymonline.com/word/eleventh#etymonline_v_38057
-https://www.merriam-webster.com/dictionary/eleventh
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13298
-https://bosworthtoller.com/9412
+**Sources:** [Etymonline](https://www.etymonline.com/word/third#etymonline_v_10760) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/third) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45496) | Bosworth-Toller: [32049](https://bosworthtoller.com/32049)
 
-twelfta [OE]
-twelfte [MI]
-twelfth [ME]
-tuelþ
-https://www.etymonline.com/word/twelfth#etymonline_v_24851
-https://www.merriam-webster.com/dictionary/twelfth
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED47457
-https://bosworthtoller.com/31202
+---
 
-þreoteoða, þriteogeða [OE]
-thritenth [MI]
-thirteenth [ME]
-þertienþ
-https://www.etymonline.com/word/thirteenth#etymonline_v_48737
-https://www.merriam-webster.com/dictionary/thirteenth
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45532
-https://bosworthtoller.com/32038
+### fourþ
 
-feowerteoða [OE]
-fourtenthe [MI]
-fourteenth [ME]
-fourtienþ
-https://www.etymonline.com/word/fourteenth#etymonline_v_40766
-https://www.merriam-webster.com/dictionary/fourteenth
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17494
-https://bosworthtoller.com/10480
+**Etymological Derivation:**
+* **[OE]** feorþa
+* **[MI]** ferthe
+* **[ME]** fourth
 
-fifteoða [OE]
-fiftenthe [MI]
-fifteenth [ME]
-fiftienþ
-https://www.etymonline.com/word/fifteenth#etymonline_v_39701
-https://www.merriam-webster.com/dictionary/fifteenth
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15899
-https://bosworthtoller.com/10686
+**Sources:** [Etymonline](https://www.etymonline.com/word/fourth#etymonline_v_40767) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/fourth) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15762) | Bosworth-Toller: [10456](https://bosworthtoller.com/10456)
 
-sixteoþa [OE]
-sixtenthe [MI]
-sixteenth [ME]
-sixtienþ
-https://www.etymonline.com/word/sixteenth#etymonline_v_48549
-https://www.merriam-webster.com/dictionary/sixteenth
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40598
-https://bosworthtoller.com/27905
+---
 
-seofonteoþa [OE]
-sevententhe [MI]
-seventeenth [ME]
-sevontienþ
-https://www.etymonline.com/word/seventeenth#etymonline_v_48733
-https://www.merriam-webster.com/dictionary/seventeenth
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39690
-https://bosworthtoller.com/27462
+### fiþ
 
-eahtateoða [OE]
-eighte-tenthe [MI]
-eighteenth [ME]
-eihtienþ
-https://www.etymonline.com/word/eighteenth#etymonline_v_38011
-https://www.merriam-webster.com/dictionary/eighteenth
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13155
-https://bosworthtoller.com/8371
+**Etymological Derivation:**
+* **[OE]** fifta
+* **[MI]** fifte
+* **[ME]** fifth
 
-nigonteoþa [OE]
-nintenthe [MI]
-nineteenth [ME]
-nîntienþ
-https://www.etymonline.com/word/nineteenth#etymonline_v_45314
-https://www.merriam-webster.com/dictionary/nineteenth
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29551
-https://bosworthtoller.com/23708
+**Sources:** [Etymonline](https://www.etymonline.com/word/fifth#etymonline_v_5923) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/fifth) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15895) | Bosworth-Toller: [10681](https://bosworthtoller.com/10681)
 
-twentigoða [OE]
-twentithe [MI]
-twentieth [ME]
-tuontieþ, tuonty-first, tuonty-second, etc
-https://www.etymonline.com/word/twentieth#etymonline_v_46774
-https://www.merriam-webster.com/dictionary/twentieth
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED47467
-https://bosworthtoller.com/31208
+---
 
-þritigoða [OE]
-thritithe [MI]
-thirtieth [ME]
-þertieþ
-https://www.etymonline.com/word/thirtieth#etymonline_v_39172
-https://www.merriam-webster.com/dictionary/thirtieth
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45536
-https://bosworthtoller.com/32122
+### sixþ
 
-feowertigoða [OE]
-fortithe [MI]
-fortieth [ME]
-fortieþ
-https://www.etymonline.com/word/fortieth#etymonline_v_40752
-https://www.merriam-webster.com/dictionary/fortieth
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17496
-https://bosworthtoller.com/10485
+**Etymological Derivation:**
+* **[OE]** sixta
+* **[MI]** sixte
+* **[ME]** sixth
 
-fifteogoða [OE]
-fiftithe [MI]
-fiftieth [ME]
-fiftieþ
-https://www.etymonline.com/word/fiftieth#etymonline_v_39702
-https://www.merriam-webster.com/dictionary/fiftieth
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15902
-https://bosworthtoller.com/10685
+**Sources:** [Etymonline](https://www.etymonline.com/word/sixth#etymonline_v_24137) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/sixth) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40596) | Bosworth-Toller: [27904](https://bosworthtoller.com/27904)
 
-sixtigoþa [OE]
-sixtithe [MI]
-sixtieth [ME]
-sixtieþ
-https://www.etymonline.com/word/sixtieth#etymonline_v_48704
-https://www.merriam-webster.com/dictionary/sixtieth
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40602
-https://bosworthtoller.com/27907
+---
 
-seofontigoþa [OE]
-seventithe [MI]
-seventieth [ME]
-sevontieþ
-https://www.etymonline.com/word/seventieth#etymonline_v_48735
-https://www.merriam-webster.com/dictionary/seventieth
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39695
-https://bosworthtoller.com/53369
+### sevonþ
 
-hundeahtatigoþa [OE]
-eightetithe [MI]
-eightieth
-eihtieþ
-https://www.merriam-webster.com/dictionary/eightieth
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13158
-https://bosworthtoller.com/53349
+**Etymological Derivation:**
+* **[OE]** seofoþa, seofunda
+* **[MI]** sevende, seveth
+* **[ME]** seventh
 
-hund-nigontigoþa [OE]
-nyntithe [MI]
-nintieth [ME]
-nîntieþ
-https://www.etymonline.com/word/ninetieth#etymonline_v_45307
-https://www.merriam-webster.com/dictionary/ninetieth
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29555
-https://bosworthtoller.com/53359
+**Sources:** [Etymonline](https://www.etymonline.com/word/seventh#etymonline_v_23300) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/seventh) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39691) | Bosworth-Toller: [27467](https://bosworthtoller.com/27467)
 
-hundredethe [MI]
-one hundredth [ME]
-uan hondraþ
-https://www.etymonline.com/word/hundredth#etymonline_v_42162
-https://www.merriam-webster.com/dictionary/hundredth
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED21489
+---
 
-one thousandth [ME]
-uan þôusanþ
-https://www.etymonline.com/word/thousandth#etymonline_v_48736
-https://www.merriam-webster.com/dictionary/thousandth
+### eiþ
 
-millionth [ME]
-millionþ
-https://www.etymonline.com/word/millionth#etymonline_v_44713
-https://www.merriam-webster.com/dictionary/millionth
+**Etymological Derivation:**
+* **[OE]** eahtoða
+* **[MI]** eighthe
+* **[ME]** eighth
 
-billionth [ME]
-billionþ
-https://www.etymonline.com/word/billionth#etymonline_v_43050
-https://www.merriam-webster.com/dictionary/billionth
+**Sources:** [Etymonline](https://www.etymonline.com/word/eighth#etymonline_v_32177) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/eighth) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13156) | Bosworth-Toller: [8377](https://bosworthtoller.com/8377)
 
-trillionth [ME]
-trillionþ
-https://www.etymonline.com/word/trillionth#etymonline_v_49629
-https://www.merriam-webster.com/dictionary/trillionth
+---
+
+### nînþ
+
+**Etymological Derivation:**
+* **[OE]** nigoþa
+* **[MI]** ninthe
+* **[ME]** ninth
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/ninth#etymonline_v_40498) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/ninth) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29552) | Bosworth-Toller: [23713](https://bosworthtoller.com/23713)
+
+---
+
+### tenþ
+
+**Etymological Derivation:**
+* **[OE]** teoða
+* **[MI]** tenthe
+* **[ME]** tenth
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/tenth#etymonline_v_39037) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/tenth) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17494) | Bosworth-Toller: [30377](https://bosworthtoller.com/30377)
+
+---
+
+### elèvonþ
+
+**Etymological Derivation:**
+* **[OE]** endlyfta
+* **[MI]** eleventhe
+* **[ME]** eleventh
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/eleventh#etymonline_v_38057) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/eleventh) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13298) | Bosworth-Toller: [9412](https://bosworthtoller.com/9412)
+
+---
+
+### tuelþ
+
+**Etymological Derivation:**
+* **[OE]** twelfta
+* **[MI]** twelfte
+* **[ME]** twelfth
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/twelfth#etymonline_v_24851) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/twelfth) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED47457) | Bosworth-Toller: [31202](https://bosworthtoller.com/31202)
+
+---
+
+### þertienþ
+
+**Etymological Derivation:**
+* **[OE]** þreoteoða, þriteogeða
+* **[MI]** thritenth
+* **[ME]** thirteenth
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/thirteenth#etymonline_v_48737) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/thirteenth) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45532) | Bosworth-Toller: [32038](https://bosworthtoller.com/32038)
+
+---
+
+### fourtienþ
+
+**Etymological Derivation:**
+* **[OE]** feowerteoða
+* **[MI]** fourtenthe
+* **[ME]** fourteenth
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/fourteenth#etymonline_v_40766) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/fourteenth) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17494) | Bosworth-Toller: [10480](https://bosworthtoller.com/10480)
+
+---
+
+### fiftienþ
+
+**Etymological Derivation:**
+* **[OE]** fifteoða
+* **[MI]** fiftenthe
+* **[ME]** fifteenth
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/fifteenth#etymonline_v_39701) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/fifteenth) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15899) | Bosworth-Toller: [10686](https://bosworthtoller.com/10686)
+
+---
+
+### sixtienþ
+
+**Etymological Derivation:**
+* **[OE]** sixteoþa
+* **[MI]** sixtenthe
+* **[ME]** sixteenth
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/sixteenth#etymonline_v_48549) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/sixteenth) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40598) | Bosworth-Toller: [27905](https://bosworthtoller.com/27905)
+
+---
+
+### sevontienþ
+
+**Etymological Derivation:**
+* **[OE]** seofonteoþa
+* **[MI]** sevententhe
+* **[ME]** seventeenth
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/seventeenth#etymonline_v_48733) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/seventeenth) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39690) | Bosworth-Toller: [27462](https://bosworthtoller.com/27462)
+
+---
+
+### eihtienþ
+
+**Etymological Derivation:**
+* **[OE]** eahtateoða
+* **[MI]** eighte-tenthe
+* **[ME]** eighteenth
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/eighteenth#etymonline_v_38011) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/eighteenth) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13155) | Bosworth-Toller: [8371](https://bosworthtoller.com/8371)
+
+---
+
+### nîntienþ
+
+**Etymological Derivation:**
+* **[OE]** nigonteoþa
+* **[MI]** nintenthe
+* **[ME]** nineteenth
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/nineteenth#etymonline_v_45314) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/nineteenth) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29551) | Bosworth-Toller: [23708](https://bosworthtoller.com/23708)
+
+---
+
+### tuontieþ
+*(Forms: tuontieþ, tuonty-first, tuonty-second, etc)*
+
+**Etymological Derivation:**
+* **[OE]** twentigoða
+* **[MI]** twentithe
+* **[ME]** twentieth
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/twentieth#etymonline_v_46774) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/twentieth) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED47467) | Bosworth-Toller: [31208](https://bosworthtoller.com/31208)
+
+---
+
+### þertieþ
+
+**Etymological Derivation:**
+* **[OE]** þritigoða
+* **[MI]** thritithe
+* **[ME]** thirtieth
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/thirtieth#etymonline_v_39172) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/thirtieth) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45536) | Bosworth-Toller: [32122](https://bosworthtoller.com/32122)
+
+---
+
+### fortieþ
+
+**Etymological Derivation:**
+* **[OE]** feowertigoða
+* **[MI]** fortithe
+* **[ME]** fortieth
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/fortieth#etymonline_v_40752) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/fortieth) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17496) | Bosworth-Toller: [10485](https://bosworthtoller.com/10485)
+
+---
+
+### fiftieþ
+
+**Etymological Derivation:**
+* **[OE]** fifteogoða
+* **[MI]** fiftithe
+* **[ME]** fiftieth
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/fiftieth#etymonline_v_39702) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/fiftieth) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15902) | Bosworth-Toller: [10685](https://bosworthtoller.com/10685)
+
+---
+
+### sixtieþ
+
+**Etymological Derivation:**
+* **[OE]** sixtigoþa
+* **[MI]** sixtithe
+* **[ME]** sixtieth
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/sixtieth#etymonline_v_48704) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/sixtieth) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40602) | Bosworth-Toller: [27907](https://bosworthtoller.com/27907)
+
+---
+
+### sevontieþ
+
+**Etymological Derivation:**
+* **[OE]** seofontigoþa
+* **[MI]** seventithe
+* **[ME]** seventieth
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/seventieth#etymonline_v_48735) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/seventieth) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39695) | Bosworth-Toller: [53369](https://bosworthtoller.com/53369)
+
+---
+
+### eihtieþ
+
+**Etymological Derivation:**
+* **[OE]** hundeahtatigoþa
+* **[MI]** eightetithe
+* **[ME]** eightieth
+
+**Sources:** [Merriam-Webster](https://www.merriam-webster.com/dictionary/eightieth) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13158) | Bosworth-Toller: [53349](https://bosworthtoller.com/53349)
+
+---
+
+### nîntieþ
+
+**Etymological Derivation:**
+* **[OE]** hund-nigontigoþa
+* **[MI]** nyntithe
+* **[ME]** nintieth
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/ninetieth#etymonline_v_45307) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/ninetieth) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29555) | Bosworth-Toller: [53359](https://bosworthtoller.com/53359)
+
+---
+
+### uan hondraþ
+
+**Etymological Derivation:**
+* **[MI]** hundredethe
+* **[ME]** one hundredth
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/hundredth#etymonline_v_42162) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/hundredth) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED21489)
+
+---
+
+### uan þôusanþ
+
+**Etymological Derivation:**
+* **[ME]** one thousandth
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/thousandth#etymonline_v_48736) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/thousandth)
+
+---
+
+### millionþ
+
+**Etymological Derivation:**
+* **[ME]** millionth
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/millionth#etymonline_v_44713) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/millionth)
+
+---
+
+### billionþ
+
+**Etymological Derivation:**
+* **[ME]** billionth
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/billionth#etymonline_v_43050) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/billionth)
+
+---
+
+### trillionþ
+
+**Etymological Derivation:**
+* **[ME]** trillionth
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/trillionth#etymonline_v_49629) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/trillionth)
