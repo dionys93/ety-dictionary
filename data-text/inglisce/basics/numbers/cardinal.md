@@ -1,282 +1,352 @@
-Cardnal Nombers
+# Cardenal Nombirs
 
-शून्य [SK]
-ﺻِﻔﺮ [AR]
-zephirum [ML]
-zéro [FR]
-zero [ME]
-zíro 
-https://www.etymonline.com/word/zero#etymonline_v_5012
-https://www.merriam-webster.com/dictionary/zero
-https://www.larousse.fr/dictionnaires/francais-anglais/zéro/82100
-https://arabic.fi/words/837
-https://www.learnsanskrit.cc/translate?search=zUnya&dir=se 
+### zíro
 
-an [OE]
-on [MI]
-one [ME]
-uan
-https://www.etymonline.com/word/one#etymonline_v_7018
-https://www.merriam-webster.com/dictionary/one#dictionary-entry-1
-https://www.merriam-webster.com/dictionary/one#dictionary-entry-2
-https://www.merriam-webster.com/dictionary/one#dictionary-entry-3
-https://www.merriam-webster.com/dictionary/one#word-history
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED30546
-https://bosworthtoller.com/1609
+**Etymological Derivation:**
+* **[SK]** शून्य
+* **[AR]** ﺻِﻔﺮ
+* **[ML]** zephirum
+* **[FR]** zéro
+* **[ME]** zero
 
-twa, twegen, tu [OE]
-two [MI]
-tue
-https://www.etymonline.com/word/two#etymonline_v_18883
-https://www.merriam-webster.com/dictionary/two#dictionary-entry-1
-https://www.merriam-webster.com/dictionary/two#dictionary-entry-2
-https://www.merriam-webster.com/dictionary/two#dictionary-entry-3
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED47539
-https://bosworthtoller.com/31110
-https://bosworthtoller.com/031196
+**Sources:** [Etymonline](https://www.etymonline.com/word/zero#etymonline_v_5012) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/zero) | [Larousse](https://www.larousse.fr/dictionnaires/francais-anglais/zéro/82100) | [Arabic.fi](https://arabic.fi/words/837) | [LearnSanskrit](https://www.learnsanskrit.cc/translate?search=zUnya&dir=se)
 
-þreo, þri, þrie [OE]
-three [MI]
-þrie
-https://www.etymonline.com/word/three#etymonline_v_13259
-https://www.merriam-webster.com/dictionary/three#dictionary-entry-1
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45441
-https://bosworthtoller.com/32044
+---
 
-feower [OE]
-four [MI]
-https://www.etymonline.com/word/four#etymonline_v_11847
-https://www.merriam-webster.com/dictionary/four#dictionary-entry-1
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17475
-https://bosworthtoller.com/10472
+### uan
 
-fif [OE]
-five [MI]
-fîve
-https://www.etymonline.com/word/five#etymonline_v_5984
-https://www.merriam-webster.com/dictionary/five
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16121
-https://bosworthtoller.com/10666
+**Etymological Derivation:**
+* **[OE]** an
+* **[MI]** on
+* **[ME]** one
 
-siex, six, seox, sex [OE]
-six [ME]
-https://www.etymonline.com/word/six#etymonline_v_23585
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40593
-https://bosworthtoller.com/27895
+**Sources:** [Etymonline](https://www.etymonline.com/word/one#etymonline_v_7018) | Merriam-Webster: [1](https://www.merriam-webster.com/dictionary/one#dictionary-entry-1), [2](https://www.merriam-webster.com/dictionary/one#dictionary-entry-2), [3](https://www.merriam-webster.com/dictionary/one#dictionary-entry-3), [History](https://www.merriam-webster.com/dictionary/one#word-history) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED30546) | Bosworth-Toller: [1609](https://bosworthtoller.com/1609)
 
-seofon [OE]
-seven [MI]
-sevon
-https://www.etymonline.com/word/seven#etymonline_v_23299
-https://www.merriam-webster.com/dictionary/seven
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39684
-https://bosworthtoller.com/27456
+---
 
-eahta, æhta [OE]
-ehte, eighte [MI]
-eight [ME]
-eiht
-https://www.etymonline.com/word/eight#etymonline_v_1047
-https://www.merriam-webster.com/dictionary/eight
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13148
-https://bosworthtoller.com/8369
+### tue
 
-nigen [OE]
-nin [MI]
-nine [ME]
-nîne
-https://www.etymonline.com/word/nine#etymonline_v_6958
-https://www.merriam-webster.com/dictionary/nine
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29546
-https://bosworthtoller.com/23706
+**Etymological Derivation:**
+* **[OE]** twa, twegen, tu
+* **[MI]** two
 
-ten, tien [OE]
-ten [MI]
-https://www.etymonline.com/word/ten#etymonline_v_7721
-https://www.merriam-webster.com/dictionary/ten
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44763
-https://bosworthtoller.com/30525
+**Sources:** [Etymonline](https://www.etymonline.com/word/two#etymonline_v_18883) | Merriam-Webster: [1](https://www.merriam-webster.com/dictionary/two#dictionary-entry-1), [2](https://www.merriam-webster.com/dictionary/two#dictionary-entry-2), [3](https://www.merriam-webster.com/dictionary/two#dictionary-entry-3) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED47539) | Bosworth-Toller: [31110](https://bosworthtoller.com/31110), [031196](https://bosworthtoller.com/031196)
 
-enleofan, endleofan [OE]
-enleven [MI]
-eleven [ME]
-elèvon
-https://www.etymonline.com/word/eleven#etymonline_v_5729
-https://www.merriam-webster.com/dictionary/eleven#dictionary-entry-1
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13296
-https://bosworthtoller.com/9227
-https://bosworthtoller.com/9411
+---
 
-twelf [OE]
-twelve [MI]
-tuelve
-https://www.etymonline.com/word/twelve#etymonline_v_18864
-https://www.merriam-webster.com/dictionary/twelve
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED47459
-https://bosworthtoller.com/31197
+### þrie
 
-þreotene [OE]
-thrittene [MI]
-thirteen [ME]
-þertien
-https://www.etymonline.com/word/thirteen#etymonline_v_10762
-https://www.merriam-webster.com/dictionary/thirteen
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45531
-https://bosworthtoller.com/32039
+**Etymological Derivation:**
+* **[OE]** þreo, þri, þrie
+* **[MI]** three
 
-feowertyne [OE]
-fourtene [MI]
-fourteen [ME]
-fourtien
-https://www.etymonline.com/word/fourteen#etymonline_v_33373
-https://www.merriam-webster.com/dictionary/fourteen
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17492
-https://bosworthtoller.com/10488
+**Sources:** [Etymonline](https://www.etymonline.com/word/three#etymonline_v_13259) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/three#dictionary-entry-1) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45441) | Bosworth-Toller: [32044](https://bosworthtoller.com/32044)
 
-fiftyne [OE]
-fiftene [MI]
-fifteen [ME]
-fiftien
-https://www.etymonline.com/word/fifteen#etymonline_v_5922
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15898
-https://bosworthtoller.com/10690
+---
 
-sixtyne [OE]
-sixtene [MI]
-sixteen [ME] 
-sixtien
-https://www.etymonline.com/word/sixteen#etymonline_v_24138
-https://www.merriam-webster.com/dictionary/sixteen
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40597
-https://bosworthtoller.com/27910
+### four
 
-seofontyne [OE]
-seventene [MI]
-seventeen [ME]
-sevontien
-https://www.etymonline.com/word/seventeen#etymonline_v_34224
-https://www.merriam-webster.com/dictionary/seventeen
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39689
-https://bosworthtoller.com/27464
+**Etymological Derivation:**
+* **[OE]** feower
+* **[MI]** four
 
-eahtatiene, eahtatyne [OE]
-ahtene, eightene [MI]
-eighteen [ME]
-eihtien
-https://www.etymonline.com/word/eighteen#etymonline_v_32176
-https://www.merriam-webster.com/dictionary/eighteen
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13154
-https://bosworthtoller.com/8373
+**Sources:** [Etymonline](https://www.etymonline.com/word/four#etymonline_v_11847) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/four#dictionary-entry-1) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17475) | Bosworth-Toller: [10472](https://bosworthtoller.com/10472)
 
-nigontene [OE]
-nintene [MI]
-nineteen [ME]
-nîntien
-https://www.etymonline.com/word/nineteen#etymonline_v_6960
-https://www.merriam-webster.com/dictionary/nineteen
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29550
-https://bosworthtoller.com/23710
+---
 
-twentig [OE]
-twenti [MI]
-twenty [ME]
-tuonty, tuonty uan, tuonty tu
-https://www.etymonline.com/word/twenty#etymonline_v_18865
-https://www.merriam-webster.com/dictionary/twenty
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED47465
-https://bosworthtoller.com/31206
+### fîve
 
-þritig [OE]
-thritti [MI]
-thirty [ME]
-þerty
-https://www.etymonline.com/word/thirty#etymonline_v_10763
-https://www.merriam-webster.com/dictionary/thirty
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45535
-https://bosworthtoller.com/32120
+**Etymological Derivation:**
+* **[OE]** fif
+* **[MI]** five
 
-feowertig [OE]
-fourti [MI]
-forty [ME]
-https://www.etymonline.com/word/forty#etymonline_v_11831
-https://www.merriam-webster.com/dictionary/forty
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17495
-https://bosworthtoller.com/10484
+**Sources:** [Etymonline](https://www.etymonline.com/word/five#etymonline_v_5984) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/five) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED16121) | Bosworth-Toller: [10666](https://bosworthtoller.com/10666)
 
-fiftig [OE]
-fifti [MI]
-fifty [ME]
-https://www.etymonline.com/word/fifty#etymonline_v_5924
-https://www.merriam-webster.com/dictionary/fifty
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15900
-https://bosworthtoller.com/10687
+---
 
-sixtig [OE]
-sixti [MI]
-sixty [ME]
-https://www.etymonline.com/word/sixty#etymonline_v_24136
-https://www.merriam-webster.com/dictionary/sixty
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40599
-https://bosworthtoller.com/27906
+### six
 
-seofontig [OE]
-seventi [MI]
-seventy [ME]
-sevonty
-https://www.etymonline.com/word/seventy#etymonline_v_23301
-https://www.merriam-webster.com/dictionary/seventy
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39693
-https://bosworthtoller.com/19945
+**Etymological Derivation:**
+* **[OE]** siex, six, seox, sex
+* **[ME]** six
 
-hundeahtatig [OE]
-eighteti [MI]
-eighty [ME]
-eihty
-https://www.etymonline.com/word/eighty#etymonline_v_32178
-https://www.merriam-webster.com/dictionary/eighty
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13157
-https://bosworthtoller.com/19928
+**Sources:** [Etymonline](https://www.etymonline.com/word/six#etymonline_v_23585) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40593) | Bosworth-Toller: [27895](https://bosworthtoller.com/27895)
 
-nigontig [OE]
-ninti [MI] 
-ninety [ME]
-nînty
-https://www.etymonline.com/word/ninety#etymonline_v_6961
-https://www.merriam-webster.com/dictionary/ninety
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29553
-https://bosworthtoller.com/23709
+---
 
-hundred [OE]
-one hundred [ME]
-uan hondrad
-https://www.etymonline.com/word/hundred#etymonline_v_16062
-https://www.merriam-webster.com/dictionary/hundred
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED21487
-https://bosworthtoller.com/19938
+### sevon
 
-þusend [OE]
-thousand [MI]
-þôusand
-https://www.etymonline.com/word/thousand#etymonline_v_13254
-https://www.merriam-webster.com/dictionary/thousand
-https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45417
-https://bosworthtoller.com/32337
+**Etymological Derivation:**
+* **[OE]** seofon
+* **[MI]** seven
 
-mille [L]
-millione [IT]
-million [OF]
-https://www.etymonline.com/word/million#etymonline_v_16171
-https://www.collinsdictionary.com/us/dictionary/italian-english/milione
-https://anglo-norman.net/entry/milion
-https://latin-dictionary.net/definition/26916/mille-millesimus
+**Sources:** [Etymonline](https://www.etymonline.com/word/seven#etymonline_v_23299) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/seven) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39684) | Bosworth-Toller: [27456](https://bosworthtoller.com/27456)
 
-billion [FR]
-https://www.etymonline.com/word/billion#etymonline_v_11160
-https://www.merriam-webster.com/dictionary/billion
-https://www.larousse.fr/dictionnaires/francais-anglais/billion/9228
+---
 
-trilione [IT]
-trillion [FR]
-https://www.etymonline.com/word/trillion#etymonline_v_17826
-https://www.collinsdictionary.com/us/dictionary/italian-english/trilione
-https://www.larousse.fr/dictionnaires/francais-anglais/trillion/1014785
+### eiht
+
+**Etymological Derivation:**
+* **[OE]** eahta, æhta
+* **[MI]** ehte, eighte
+* **[ME]** eight
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/eight#etymonline_v_1047) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/eight) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13148) | Bosworth-Toller: [8369](https://bosworthtoller.com/8369)
+
+---
+
+### nîne
+
+**Etymological Derivation:**
+* **[OE]** nigen
+* **[MI]** nin
+* **[ME]** nine
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/nine#etymonline_v_6958) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/nine) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29546) | Bosworth-Toller: [23706](https://bosworthtoller.com/23706)
+
+---
+
+### ten
+
+**Etymological Derivation:**
+* **[OE]** ten, tien
+* **[MI]** ten
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/ten#etymonline_v_7721) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/ten) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED44763) | Bosworth-Toller: [30525](https://bosworthtoller.com/30525)
+
+---
+
+#### elèvon
+
+**Etymological Derivation:**
+* **[OE]** enleofan, endleofan
+* **[MI]** enleven
+* **[ME]** eleven
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/eleven#etymonline_v_5729) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/eleven#dictionary-entry-1) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13296) | Bosworth-Toller: [9227](https://bosworthtoller.com/9227), [9411](https://bosworthtoller.com/9411)
+
+---
+
+### tuelve
+
+**Etymological Derivation:**
+* **[OE]** twelf
+* **[MI]** twelve
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/twelve#etymonline_v_18864) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/twelve) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED47459) | Bosworth-Toller: [31197](https://bosworthtoller.com/31197)
+
+---
+
+### þertien
+
+**Etymological Derivation:**
+* **[OE]** þreotene
+* **[MI]** thrittene
+* **[ME]** thirteen
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/thirteen#etymonline_v_10762) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/thirteen) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45531) | Bosworth-Toller: [32039](https://bosworthtoller.com/32039)
+
+---
+
+### fourtien
+
+**Etymological Derivation:**
+* **[OE]** feowertyne
+* **[MI]** fourtene
+* **[ME]** fourteen
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/fourteen#etymonline_v_33373) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/fourteen) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17492) | Bosworth-Toller: [10488](https://bosworthtoller.com/10488)
+
+---
+
+### fiftien
+
+**Etymological Derivation:**
+* **[OE]** fiftyne
+* **[MI]** fiftene
+* **[ME]** fifteen
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/fifteen#etymonline_v_5922) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15898) | Bosworth-Toller: [10690](https://bosworthtoller.com/10690)
+
+---
+
+### sixtien
+
+**Etymological Derivation:**
+* **[OE]** sixtyne
+* **[MI]** sixtene
+* **[ME]** sixteen
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/sixteen#etymonline_v_24138) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/sixteen) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40597) | Bosworth-Toller: [27910](https://bosworthtoller.com/27910)
+
+---
+
+### sevontien
+
+**Etymological Derivation:**
+* **[OE]** seofontyne
+* **[MI]** seventene
+* **[ME]** seventeen
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/seventeen#etymonline_v_34224) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/seventeen) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39689) | Bosworth-Toller: [27464](https://bosworthtoller.com/27464)
+
+---
+
+### eihtien
+
+**Etymological Derivation:**
+* **[OE]** eahtatiene, eahtatyne
+* **[MI]** ahtene, eightene
+* **[ME]** eighteen
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/eighteen#etymonline_v_32176) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/eighteen) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13154) | Bosworth-Toller: [8373](https://bosworthtoller.com/8373)
+
+---
+
+### nîntien
+
+**Etymological Derivation:**
+* **[OE]** nigontene
+* **[MI]** nintene
+* **[ME]** nineteen
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/nineteen#etymonline_v_6960) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/nineteen) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29550) | Bosworth-Toller: [23710](https://bosworthtoller.com/23710)
+
+---
+
+### tuonty
+*(Forms: tuonty, tuonty uan, tuonty tue)*
+
+**Etymological Derivation:**
+* **[OE]** twentig
+* **[MI]** twenti
+* **[ME]** twenty
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/twenty#etymonline_v_18865) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/twenty) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED47465) | Bosworth-Toller: [31206](https://bosworthtoller.com/31206)
+
+---
+
+### þerty
+
+**Etymological Derivation:**
+* **[OE]** þritig
+* **[MI]** thritti
+* **[ME]** thirty
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/thirty#etymonline_v_10763) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/thirty) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45535) | Bosworth-Toller: [32120](https://bosworthtoller.com/32120)
+
+---
+
+### forty
+
+**Etymological Derivation:**
+* **[OE]** feowertig
+* **[MI]** fourti
+* **[ME]** forty
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/forty#etymonline_v_11831) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/forty) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED17495) | Bosworth-Toller: [10484](https://bosworthtoller.com/10484)
+
+---
+
+### fifty
+
+**Etymological Derivation:**
+* **[OE]** fiftig
+* **[MI]** fifti
+* **[ME]** fifty
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/fifty#etymonline_v_5924) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/fifty) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED15900) | Bosworth-Toller: [10687](https://bosworthtoller.com/10687)
+
+---
+
+### sixty
+
+**Etymological Derivation:**
+* **[OE]** sixtig
+* **[MI]** sixti
+* **[ME]** sixty
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/sixty#etymonline_v_24136) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/sixty) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED40599) | Bosworth-Toller: [27906](https://bosworthtoller.com/27906)
+
+---
+
+### sevonty
+
+**Etymological Derivation:**
+* **[OE]** seofontig
+* **[MI]** seventi
+* **[ME]** seventy
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/seventy#etymonline_v_23301) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/seventy) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED39693) | Bosworth-Toller: [19945](https://bosworthtoller.com/19945)
+
+---
+
+### eihty
+
+**Etymological Derivation:**
+* **[OE]** hundeahtatig
+* **[MI]** eighteti
+* **[ME]** eighty
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/eighty#etymonline_v_32178) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/eighty) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED13157) | Bosworth-Toller: [19928](https://bosworthtoller.com/19928)
+
+---
+
+### nînty
+
+**Etymological Derivation:**
+* **[OE]** nigontig
+* **[MI]** ninti
+* **[ME]** ninety
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/ninety#etymonline_v_6961) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/ninety) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED29553) | Bosworth-Toller: [23709](https://bosworthtoller.com/23709)
+
+---
+
+### uan hondrad
+
+**Etymological Derivation:**
+* **[OE]** hundred
+* **[ME]** one hundred
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/hundred#etymonline_v_16062) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/hundred) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED21487) | Bosworth-Toller: [19938](https://bosworthtoller.com/19938)
+
+---
+
+### þôusand
+
+**Etymological Derivation:**
+* **[OE]** þusend
+* **[MI]** thousand
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/thousand#etymonline_v_13254) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/thousand) | [MED](https://quod.lib.umich.edu/m/middle-english-dictionary/dictionary/MED45417) | Bosworth-Toller: [32337](https://bosworthtoller.com/32337)
+
+---
+
+### million
+
+**Etymological Derivation:**
+* **[L]** mille
+* **[IT]** millione
+* **[OF]** million
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/million#etymonline_v_16171) | [Collins Italian-English](https://www.collinsdictionary.com/us/dictionary/italian-english/milione) | [Anglo-Norman](https://anglo-norman.net/entry/milion) | Latin-Dictionary: [26916](https://latin-dictionary.net/definition/26916/mille-millesimus)
+
+---
+
+### billion
+
+**Etymological Derivation:**
+* **[FR]** billion
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/billion#etymonline_v_11160) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/billion) | [Larousse](https://www.larousse.fr/dictionnaires/francais-anglais/billion/9228)
+
+---
+
+### trillion
+
+**Etymological Derivation:**
+* **[IT]** trilione
+* **[FR]** trillion
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/trillion#etymonline_v_17826) | [Collins Italian-English](https://www.collinsdictionary.com/us/dictionary/italian-english/trilione) | [Larousse](https://www.larousse.fr/dictionnaires/francais-anglais/trillion/1014785)
