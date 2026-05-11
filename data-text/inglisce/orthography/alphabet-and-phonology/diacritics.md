@@ -65,7 +65,7 @@ The acute accent is used primarily to preserve vowel quality that would otherwis
 | **ÉI** | /eɪ/ | conv*éi*ance, cont*éi*nment, der*éi*lment | conveyance, containment, derailment |
 | **Í** | /i/ | m*í*dia, maç*í*ns, cu*í*ns | media, machines, queens |
 | **Ó** | /oʊ/ | expl*ó*sion, expl*ó*ssif, alþ*ó*, bel*ó* | explosion, explosive, although, below |
-| **Ú** | /ju/ or /u/ | *ú*nicorn, un*ú*șual, un*ú*sable, *ú*sage | unicorn, unusual, unusable, usage |
+| **Ú** | /ju/ or /u/ | *ú*nicorn, un*ú*șual, un*ú*sable, *ú*sage, r*ú*ins  | unicorn, unusual, unusable, usage, ruins |
 
 ---
 
