@@ -162,3 +162,29 @@ In these cases, vowel alternation applies only to the monomorphemic lexical stem
 | **-e(ucue** | **-e(ux** | buc, cleuc, deuc, puc, seuc | bux, cleux, deux, pux, seux |
 
 *(Note: Some native nouns ending in ⟨-c⟩ do not alternate and retain a regular plural **⟨-s⟩**, including: lâc/lâcs, sac/sacs, tac/tacs, pac/pacs, bac/bacs. Words already ending in **x** take **-es**: faxes, saxes, taxes, uaxes).*
+
+---
+
+---
+
+## 5. The Long-E to Short-E Collapse (⟨-ie-⟩ to ⟨-ai-⟩)
+
+A systemic feature of Inglisce morphology is the predictable shortening of the long **-ie-** vowel when a root word undergoes derivation or structural compression. 
+
+Historically, when a root containing a long vowel takes on a heavy suffix or is forced into a consonant cluster, the phonetic weight of that cluster forces the long vowel to compress into a short vowel (a process known as Pre-Cluster Shortening). 
+
+In Inglisce, whenever a root containing the long **-ie-** is compressed in this manner, the orthography uniformly mutates to the digraph **-ai-**. 
+
+This mutation is not isolated to a single part of speech; it operates universally across the language's morphology.
+
+### Derivational Morphology (Noun & Adjective Formation)
+When base roots ending in or containing **-ie-** are expanded with derivational suffixes, the vowel naturally collapses to accommodate the new phonetic weight.
+* pl*ie*se → pl*ai*sant
+* h*ie*ve → h*ai*vy
+
+### Inflectional Morphology (Weak Verb Conjugation)
+This same shift governs the conjugation of historical "weak verbs" whose roots contain **-ie-**. When the dental suffix (**-t** or **-d**) is added to form the past tense, it creates a terminal consonant cluster that triggers the exact same vowel collapse.
+* to sl*ie*pe → sl*ai*pt
+* to cr*ie*pe → cr*ai*pt
+* to m*ie*te → m*ai*t
+* to l*i*de → l*ai*d *(Orthographically irregular).*
