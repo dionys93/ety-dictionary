@@ -78,8 +78,8 @@ const { slug } = Astro.params;
 
       {/* --- RIGHT PANE: CONTENT --- */}
       <main class="right-pane">
-        {type === 'file' ? (
-          /* Render the actual file content */
+        {content ? (
+          /* Render file content OR directory index.md content */
           <ContentView 
             content={content} 
             ext={ext} 
@@ -87,7 +87,7 @@ const { slug } = Astro.params;
             slug={slug || ''} 
           />
         ) : (
-          /* Placeholder when looking at a folder directory */
+          /* Placeholder when looking at a folder that has no index file */
           <div style="display: flex; align-items: center; justify-content: center; height: 100%; color: #9ca3af;">
             Select a document from the left to read.
           </div>

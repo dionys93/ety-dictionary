@@ -1,17 +1,15 @@
 ---
 // web/src/components/DirectoryView.astro
 
-import { marked } from 'marked';
 import Container from './ui/Container.astro';
 import Column from './ui/Column.astro';
 import List from './ui/List.astro';
 import GridList from './ui/GridList.astro';
 import BackButton from './ui/BackButton.astro';
-import ScrollBar from './ui/ScrollBar.astro';
 
-const { title, items, isRoot, content, ext, slug } = Astro.props;
+// Note: We no longer need the 'marked' import or 'ScrollBar' here!
+const { title, items, isRoot, slug } = Astro.props;
 
-const parsedContent = (ext === '.md' && content) ? marked.parse(content) : content;
 const useGrid = slug && slug.startsWith('dictionary');
 ---
 
@@ -19,29 +17,15 @@ const useGrid = slug && slug.startsWith('dictionary');
     <Column className="listColumn" style={{ width: '100%', maxWidth: '900px' }}>
         
         {/* --- TOP NAVIGATION --- */}
-        {/* The Back Button now sits cleanly at the top of the panel */}
         {!isRoot && (
             <div style="margin-bottom: 1rem; align-self: flex-start;">
                 <BackButton />
             </div>
         )}
 
-        {/* --- HEADER OVERRIDE --- */}
-        {/* I added margin-top: 0 to prevent the default h1 spacing from pushing it too far down below the button */}
-        {!content && <h1 style="margin-top: 0; margin-bottom: 2rem;">{title}</h1>}
-
-        {/* --- DIRECTORY CONTEXT / INDEX FILE --- */}
-        {content && (
-            <div style="width: 100%; margin-bottom: 2rem;">
-                <ScrollBar>
-                    {ext === '.md' ? (
-                        <div class="markdown-body" set:html={parsedContent} />
-                    ) : (
-                        <pre style="white-space: pre-wrap; font-family: inherit;">{content}</pre>
-                    )}
-                </ScrollBar>
-            </div>
-        )}
+        {/* --- HEADER --- */}
+        {/* Always display the title of the current directory */}
+        <h1 style="margin-top: 0; margin-bottom: 2rem;">{title}</h1>
 
         {/* --- FOLDER CONTENTS VIEW --- */}
         {items && items.length > 0 && (
