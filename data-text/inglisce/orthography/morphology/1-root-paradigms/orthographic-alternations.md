@@ -32,6 +32,7 @@ These verbs strip down to a lean **-c** base for 1st/2nd person and take **-cs**
 | **to hôche** | I, you, uie hôc; hie hôcs | hôched | hôching | hôc, heox |
 | **to crânche** | I, you, uie crânc; hie crâncs| crânched | crânching | crânc, crâncs; crânchy |
 | **to cróche** | I, you, uie croac; hie croacs| cróched | cróching | cróc, croax |
+| **to þânche** | I, you, uie þânc; hie þâncs | þânqued | þânquing | þâncs |
 
 
 ### Irregular ⟨-che⟩ Conjugations
@@ -58,7 +59,6 @@ These verbs feature an internal vowel shift in the past tense/participle, but fo
 | **to rânque** | I, you, uie rânc; hie râncs | rânqued | rânquing | rânque, râncs |
 | **to stoque** | I, you, uie stoac; hie stoacs | stoqued | stoquing | stoque, stoax |
 | **to toque** | I, you, uie toac; hie toacs | toqued | toquing | toque, toax |
-| **to þânque** | I, you, uie þânc; hie þâncs | þânqued | þânquing | þâncs |
 
 ### Regular ⟨-gue⟩ / ⟨-ghe⟩ / ⟨-ngue⟩ Terminals
 
