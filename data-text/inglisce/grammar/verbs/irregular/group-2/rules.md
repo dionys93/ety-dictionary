@@ -12,8 +12,6 @@ To form the past tense, they retain their root vowel and simply mutate the voice
 | to bylde | bylt |
 | to sende | sent |
 | to spende | spent |
-| to lende | laint |
-| to lete | lait |
 
 ### 2B. Old English Weak Verbs and Pre-Cluster Shortening (/ɛ/ Mutation)
 While many Germanic verbs changed tense via natural vowel mutation (ablaut), the verbs in this group are historically **weak verbs**. They formed their past tense not by changing their root vowel, but by adding a dental suffix (**-t** or **-d**).
@@ -24,10 +22,12 @@ Inglisce explicitly maps this historical shortening. Whenever a long **-ie-** or
 
 | Infinitive | Past / Participle |
 | :--- | :--- |
+| to clievfe | claift |
 | to miete | mait |
 | to lide | laid |
 | to riede | raid |
 | to lende | laint |
+| to lete | lait |
 | to miene | maint |
 | to lievfe | laift |
 | to criepe | craipt |
@@ -41,7 +41,7 @@ Like the verbs in Group 2B, these are historical **weak verbs** that underwent P
 
 For many of these verbs, the root already ended in a dental consonant (such as the **-d** in the Old English *blēdan* or *fēdan*). When the past-tense **-d** was added, the two identical consonants physically fused together (e.g., Old English *blēdde*). In other cases, the suffix attached to a smooth liquid or sibilant consonant, allowing the new cluster to blend without a harsh phonetic clash.
 
-Because the suffix was "absorbed" or smoothly blended into the root's existing consonant structure rather than violently clashing against it, Inglisce treats this as an **orthographic collapse**. Rather than applying the systemic **-ai-** mutation, the spelling simply strips away the long-vowel markers (dropping the **i** from **ie**, or removing the circumflex from **î**) to leave the bare, short vowel (**e**, **i**, or **ò**) behind.
+Because the suffix was "absorbed" or smoothly blended into the root's existing consonant structure rather than violently clashing against it, Inglisce treats this as an **orthographic collapse**. Rather than applying the systemic **-ai-** mutation, the spelling simply strips away the long-vowel markers (dropping the **i** from **ie**, or removing the circumflex from **î**) or drops a double consonant (like **-ll-** to **-l-**) to leave the bare, short vowel (**e**, **i**, or **ò**) behind.
 
 | Infinitive | Past / Participle |
 | :--- | :--- |
@@ -49,7 +49,10 @@ Because the suffix was "absorbed" or smoothly blended into the root's existing c
 | to fiede | fed |
 | to diele | delt |
 | to fiele | felt |
+| to niele | nelt |
 | to slîde | slid |
+| to smelle | smelt |
+| to spille | spilt |
 | to louse | lòst |
 
 ### 2D. The "-ht" Replacements
@@ -78,7 +81,13 @@ Verbs featuring an **i** before a nasal (n/ng) or a velar/palatal sound (ch/g) s
 | Infinitive | Past / Participle |
 | :--- | :--- |
 | to clingue | clong |
+| to flingue | flong |
+| to hângue | hong |
 | to spinne | spon |
+| to slingue | slong |
+| to stingue | stong |
+| to stringue | strong |
+| to suingue | suong |
 | to uinne | uon |
 | to ringue | rong |
 | to dighe | deug |
@@ -96,9 +105,18 @@ Verbs ending in **-elle** undergo a direct vowel mutation to **-óld** or **-o�
 A small handful of verbs undergo unique historical mutations that do not fit into the broader categories above.
 | Infinitive | Past / Participle | 
 | :--- | :--- |
-| to mâche | mâde |
-| to holde | held | 
-| to stande | stôd |
-| to sitte | sat |
+| to bêne | bênt |
+| to flihe | fled |
 | to hyre | hêd |
+| to holde | held | 
+| to luîte | liht |
+| to mâche | mâde |
+| to onderstande | onderstôd |
+| to scîne | sione |
+| to scite | sçat |
 | to seoute | siot |
+| to sitte | sat |
+| to spit | spat |
+| to stande | stôd |
+| to uiþholde | uiþheld |
+| to uiþstande | uiþstôd |
