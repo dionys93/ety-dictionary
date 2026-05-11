@@ -5,20 +5,20 @@
 ### Monophthongs & Diphthongs
 | Phoneme | Initial | Medial | Final |
 |:---|:---|:---|:---|
-| **/i/** | í, ei- | i, ie, i-e | -y |
+| **/i/** | í, ei- | í, ie, i-e | -y, -ie |
 | **/ɪ/** | i | ig | - |
-| **/ɛ/** | e | è, ai, ea | - |
+| **/ɛ/** | e, è, ai | è, ai, ea | - |
 | **/æ/** | a, à | a, a-e, à | - |
 | **/ɑ/** | o | o, á | - |
-| **/ɔ/** | au, ò, | au, ah, oh, ò | ogue, ongue, ogs, aus, ahe |
-| **/ʊ/** | | û, oû, u)ô | |
+| **/ɔ/** | au, ò, | au, ah-e, oh, ò | o-ue, ogs, aus |
+| **/ʊ/** | | û, oû, u)ô | - |
 | **/u/** | | ou-e, u-e | |
-| **/ju/** | ú- | u-e ú | ue |
-| **/ə/** | a, e, o, u | | |
-| **/eɪ/** | éi, eî | â, ai-e, ei, ei-e, aig, eig, eih-e | ay, ey |
+| **/ju/** | ú-, u- | u-e, ú | ue |
+| **/ə/** | a, e, o | a, i, e, u, o | a |
+| **/eɪ/** | éi, â | â, aî, ai-e, ei, ei-e, aig, eig, eih-e | ay, ey, eih |
 | **/aɪ/** | î, aih | oih, eaie, oî, uî | yh |
-| **/ɔɪ/** | | oie | oy |
-| **/oʊ/** | ó | oe | -oa, -ou |
+| **/ɔɪ/** | eui, euy | oi-e, eui-e, oui-e, euy, oy | oy |
+| **/oʊ/** | ó | o-e, oe, oa | -oe, -ou |
 | **/aʊ/** | | ôe, ôa, ôu, aû, ôn, -aund | |
 
 ### Rhotic & R-Colored Vowels
