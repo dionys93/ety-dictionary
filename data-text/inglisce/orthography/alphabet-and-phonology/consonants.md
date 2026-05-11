@@ -68,7 +68,7 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **Ћ** | /θ/ | Voiceless in content words | **braiþ**, **hailþ**, **þru** | breath, health, through |
 | **Ћ** | /ð/ | Voiced in function words and between vowels | **þe**, **þis**, **þat**, <br> **bâþe**, **brieþe**  | the, this, that, bathe, breathe |
 | **U** | /w/ | Replaces the Germanic 'w' | **uátre**, **uigne**, <br> **uix̃e**, **uoie**, **uîle** | water, wine, <br> witch, why, while |
-| **Ü** | /w/ | Explicit glide (prevents vowel fusion) | **aüard**, **reüard** | award, reward |
+| **Ü** | /w/ | Explicit glide (prevents vowel fusion) | **aüarde**, **reüarde** | award, reward |
 | **V** | /v/ | Always | **voice**, **victorie** | voice, victory |
 | **V** | /vʲ/ | Before U-E, UI, Ú | **vue**, **vuis**, <br> **revue**, **revús** | view, views, <br> review, reviews |
 | **X** | /ks/ | Default | **taxe** | tax |
@@ -76,7 +76,7 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **X̦** | /kʃ/ | Multisyllables | **sex̦ual** | sexual |
 | **X̃** | /t͡ʃ/ | Monosyllables | **uix̃e**, **max̃e** | witch, match |
 | **Y** | /j/ | Word-initial or before a vowel | **you**, **yielde**, **yong**, **cârying** | you, yield, young, carrying |
-| **Z** | /z/ | Default | **zou** | zoo |
+| **Z** | /z/ | Default | **zoue** | zoo |
 | **Z̦** | /ʒ/ | Default | **az̦ure** | azure |
 
 ---
