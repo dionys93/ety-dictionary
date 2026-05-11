@@ -80,7 +80,7 @@ While their orthography has been standardized to reflect their phonetic reality,
 
 ## Prepositions by Categorîe
 
-### Causal Prepositions
+### Causal Preposicions
 *These explain why something happens:*
 
 | Preposition | Example |
@@ -94,7 +94,7 @@ While their orthography has been standardized to reflect their phonetic reality,
 
 ---
 
-### Compônd Prepositions
+### Compônd Preposicions
 *These consist of two or more words:*
 
 | Preposition | Example |
@@ -122,7 +122,7 @@ While their orthography has been standardized to reflect their phonetic reality,
 
 ---
 
-### Direccional Prepositions
+### Direccional Preposicions
 *These show motion or direction:*
 
 | Preposition | Example |
@@ -146,7 +146,7 @@ While their orthography has been standardized to reflect their phonetic reality,
 
 ---
 
-### Instrumental Prepositions
+### Instrumental Preposicions
 *These show who or what performs an action:*
 
 | Preposition | Example |
@@ -156,7 +156,7 @@ While their orthography has been standardized to reflect their phonetic reality,
 
 ---
 
-### Locatif Prepositions
+### Locatif Preposicions
 *These indicate location or position in space:*
 
 | Preposition | Example |
@@ -172,7 +172,7 @@ While their orthography has been standardized to reflect their phonetic reality,
 | **betuine** | betuine tue c̃airs |
 | **among** | among frends |
 | **besîde / by** | besîde þe rivre |
-| **niar** | nier þa stâcion |
+| **nier** | nier þa stâcion |
 | **against** | against þe ualle |
 | **behînd** | behînd þe haûse |
 | **in front of** | in front of þe bylding |
@@ -189,7 +189,7 @@ While their orthography has been standardized to reflect their phonetic reality,
 
 ---
 
-### Modal Prepositions
+### Módal Preposicions
 *These describe how something is done:*
 
 | Preposition | Example |
@@ -203,7 +203,7 @@ While their orthography has been standardized to reflect their phonetic reality,
 
 ---
 
-### Relacional Prepositions
+### Relâcional Preposicions
 *These indicate ownership or relationships:*
 
 | Preposition | Example |
@@ -215,7 +215,7 @@ While their orthography has been standardized to reflect their phonetic reality,
 
 ---
 
-### Temporal Prepositions
+### Temporal Preposicions
 *These indicate when something happens:*
 
 | Preposition | Example |
