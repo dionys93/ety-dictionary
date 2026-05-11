@@ -1,5 +1,3 @@
-Ћþ
-
 # Sobórdinaiting Conjonccions
 
 ### Concession
