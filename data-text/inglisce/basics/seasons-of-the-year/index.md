@@ -1,25 +1,39 @@
-Sísons of þe Yiar
+# Sísons of þe Yiar
 
-Spring [ME]
-Springue (m n)
-https://www.etymonline.com/word/spring#etymonline_v_24372
-https://www.etymonline.com/word/spring#etymonline_v_21895
+## Springue
 
-sumor [OE]
-somer [MI]
-Summer [ME]
-Somar (m n)
-https://www.etymonline.com/word/summer#etymonline_v_22340
-https://www.merriam-webster.com/dictionary/summer
+**Etymological Derivation:**
+* **[ME]** Spring
 
-autumnus [L]
-autumpne, automne [OF]
-Autumn [ME]
-Automn (m n)
-https://www.etymonline.com/word/autumn#etymonline_v_18985
-https://www.merriam-webster.com/dictionary/autumn
+**Sources:** Etymonline: [1](https://www.etymonline.com/word/spring#etymonline_v_24372), [2](https://www.etymonline.com/word/spring#etymonline_v_21895)
 
-winter [OE]
-Uintre (m n)
-https://www.etymonline.com/word/winter#etymonline_v_10785
-https://www.merriam-webster.com/dictionary/winter#dictionary-entry-1
+---
+
+## Somere
+
+**Etymological Derivation:**
+* **[OE]** sumor
+* **[MI]** somer
+* **[ME]** Summer
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/summer#etymonline_v_22340) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/summer)
+
+---
+
+## Automn
+
+**Etymological Derivation:**
+* **[L]** autumnus
+* **[OF]** autumpne, automne
+* **[ME]** Autumn
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/autumn#etymonline_v_18985) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/autumn)
+
+---
+
+## Uintre
+
+**Etymological Derivation:**
+* **[OE]** winter
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/winter#etymonline_v_10785) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/winter#dictionary-entry-1)
