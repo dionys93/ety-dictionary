@@ -47,13 +47,44 @@ This replacement reflects backing and rounding tendencies rather than a distinct
 * **Noun–Verb Alignment:** Verbal derivatives strictly align orthographically with their noun base (e.g., *to bompe → bompes, bomped, bomping*).
 * **Polysyllabic Words:** In longer words, ⟨o⟩ commonly reflects unstressed vowel reduction rather than full vowel contrast.
 
-| Category | Word Pairings (Modern English → Inglisce) |
-| :--- | :--- |
-| **Monosyllabic** | some → som, sum → somme, run → rone, none → non, nun → nonne, son → sone, sun → sonne, young → yong |
-| **Verbs & Bases** | come → come, stun → stonne, stunt → stonte, plunge → plonge, lunge → longe |
-| **Nasal + Stop (-nc)** | chunk → c̃onc, bunk → bonc, funk → fonc, gunk → gonc |
-| **Nasal + Stop (-mp)** | bump → bompe, hump → hompe, lump → lompe, jump → jompe, plump → plompe, assume/assumption → assoume/assomption |
-| **Polysyllabic** | plummet → plomete, summit → somete, summer → somere, Monday → Mondaie |
+### 1. General Word Structures
+
+| Category | Modern English | Inglisce |
+| :--- | :--- | :--- |
+| **Monosyllabic** | some | som |
+| | none | non |
+| | young | yong |
+| | come | come |
+| | stun | stonne |
+| | stunt | stonte |
+| | plunge | plonge |
+| | lunge | longe |
+| | sum, sums | somme, soms |
+| | run, runs | rone, rons |
+| | nun, nuns | nonne, nons |
+| | son, sons | sone, sons |
+| | sun, suns | sonne, sons |
+| **Polysyllabic** | plummet | plomete |
+| | summit | somete |
+| | summer | somere |
+| | Monday | Mondaie |
+
+---
+
+### 2. Nasal + Stop Clusters
+
+| Category | Modern English | Inglisce |
+| :--- | :--- | :--- |
+| **-nc Clusters** | chunk | c̃onc |
+| | bunk | bonc |
+| | funk | fonc |
+| | gunk | gonc |
+| **-mp Clusters** | bump | bompe |
+| | hump | hompe |
+| | lump | lompe |
+| | jump | jompe |
+| | plump | plompe |
+| | assume, assumption | assoume, assomption |
 
 ---
 
