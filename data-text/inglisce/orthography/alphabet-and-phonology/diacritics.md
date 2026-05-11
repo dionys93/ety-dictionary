@@ -98,7 +98,7 @@ While the acute and grave accents are *stress-first* diacritics, the circumflex 
 Whether a circumflex-marked vowel *also* indicates stress depends entirely on the grammatical gender of the word:
 * **Masculine Nouns & Adjectives:** The circumflex marks **vowel quality only** (stress defaults to the first syllable).
 * **Feminine Nouns & Adjectives:** The circumflex marks **both vowel quality and stress**.
-* **Verbs:** Because verbs are ungendered, the circumflex marks **vowel quality only**, unless the stress is independently non-default.
+* **Verbs:** As verbs have no gender, the circumflex marks vowel quality only. Stress remains governed by standard verb rules.
 
 ### Primary Phonetic Values and Examples
 These values reflect historical vowel developments preserved in the orthography, regardless of whether the syllable carries the primary stress.
