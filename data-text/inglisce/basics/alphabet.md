@@ -1,0 +1,29 @@
+## Ћi Inglisce Alphabet
+
+Aa Ââ Áá Àà Ää\
+Bb\
+Cc C̃c̃ ç\
+Dd ḑ\
+Ii Îî Íí Ïï\
+Ff\
+Gg\
+Hh\
+Ee Êê Éé Èè Ëë\
+Jj\
+Qq\
+Ll\
+Mm m̃\
+Nn ñ\
+Oo Ôô Óó Òò Öö\
+Pp\
+Ћþ\
+Rr R̃r̃\
+Ss ş\
+Tt ţ\
+Uu Ûû Úú\
+Vv\
+Üü\
+Xx x̃\
+Yy Ŷŷ Ÿÿ\
+Zz z̦\
+( Alts: c̹ d̹ ș t̹ )
