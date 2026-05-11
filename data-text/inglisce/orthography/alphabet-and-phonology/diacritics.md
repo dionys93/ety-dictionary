@@ -232,11 +232,13 @@ Writing these sequences as *my* or *ny* would falsely suggest a separate vowel s
 ## 6. The Cedilla and Comma Below ( ¸ / ̦ )
 
 ### Overview
-In Inglisce, the **cedilla** (and its typographic equivalent, the **comma below**) is used to represent specific consonant sounds consistently and transparently. It may appear only on the letters **c, d, s, t,** and **x**.
+In Inglisce, the **cedilla** (and its typographic equivalent, the **comma below**) is used to represent specific consonant sounds consistently and transparently. It may appear only on the letters **c, d, s, t, x,** and **z**.
 
 Unlike the acute, grave, or circumflex accents, the cedilla does **not** indicate stress, vowel quality, or syllable structure. Its primary purpose is to preserve **etymological continuity** while clearly marking predictable consonant softening and affrication that arise during English derivation. 
 
 Unmarked consonants retain their default, hard phonetic values. The cedilla is never an optional stylistic marker; it explicitly encodes phonological information.
+
+*(Typographical Note: Due to digital rendering variations and historical font limitations, the cedilla [ ¸ ] and the comma below [ ̦ ] are considered strictly equivalent in Inglisce. Forms such as **ș** and **ş**, or **ț** and **ţ**, may be used interchangeably depending on the user's font support, with zero change to meaning or phonetics).*
 
 ### Assibilation and Morphological Transparency
 Assibilation is a regular phonological process where hard consonants (most commonly **t** and **d**) shift to sibilant or affricate sounds when followed by a high front vowel (like `/i/`) or a suffix like **-ion** or **-ure**.
@@ -254,7 +256,7 @@ The soft C dictates two distinct phonetic shifts depending on the vowel that imm
 | **Before e, i** | /ʃ/ | aprí*ç*iait, asso*ç*iâcion, effi*ç*ent, sofi*ç*ent | appreciate, association, efficient, sufficient |
 
 #### 2. The Soft D ( Ḑ )
-The soft D indicates the affrication of the dental consonant into a heavy palatal sound. *(Note: The forms **d̦** and **ḑ** are orthographically equivalent and may be used interchangeably depending on font support).*
+The soft D indicates the affrication of the dental consonant into a heavy palatal sound. 
 
 | Phonetic Value | Inglisce Examples | Modern English Equivalent |
 | :--- | :--- | :--- |
@@ -265,7 +267,7 @@ The soft S is used primarily to map the `/ʃ/` sound. It most commonly appears i
 
 | Phonetic Value | Inglisce Examples | Modern English Equivalent |
 | :--- | :--- | :--- |
-| /ʃ/ | aboli*ș*e, fini*ș*e, vani*ș*e, *ș*ute, *ș*ugre | abolish, finish, vanish, shut |
+| /ʃ/ | aboli*ș*e, fini*ș*e, vani*ș*e, *ș*ute, *ș*ugre | abolish, finish, vanish, shut, sugar |
 
 #### 4. The Soft T ( Ț )
 The soft T explicitly maps the predictable assibilation of the 't' when followed by specific suffixes (like *-ure* or *-ual*). It carries two distinct values based on the preceding consonant structure.
@@ -281,3 +283,10 @@ The soft X explicitly marks the shift where the standard `/ks/` sound palatalize
 | Phonetic Value | Inglisce Examples | Modern English Equivalent |
 | :--- | :--- | :--- |
 | /kʃ/ | se*x̦*ual | sexual |
+
+#### 6. The Soft Z ( Z̦ )
+The soft Z is a rare but necessary marker used to map the voiced palato-alveolar fricative `/ʒ/`. It explicitly indicates the palatalization of the standard `/z/` sound, most commonly occurring before the letter **u** in words of Romance origin or specific technical vocabulary.
+
+| Phonetic Value | Inglisce Examples | Modern English Equivalent |
+| :--- | :--- | :--- |
+| /ʒ/ | a*z̦*ure | azure |
