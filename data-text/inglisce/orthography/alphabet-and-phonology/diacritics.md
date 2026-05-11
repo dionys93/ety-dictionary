@@ -106,9 +106,7 @@ These values reflect historical vowel developments preserved in the orthography,
 | Grapheme | Phonetic Value | Inglisce Examples | Modern English Equivalent |
 | :--- | :--- | :--- | :--- |
 | **Â** | /eɪ/ | cri*â*te, loc*â*cion | create, location |
-| **AÎ** | /eɪ/ or /ɛr/ | tr*aî*tre, comp*aî*rable, comp*aî*rasson | traitor, comparable, comparison |
 | **Ê** | /ər/ | conc*ê*ne, b*ê*ne | concern, burn |
-| **EÎ** | /ɛr/ | unb*eî*rable | unbearable |
 | **Î** | /aɪ/ | f*î*nde, dec*î*de, *î*arne | find, decide, iron |
 | **Ô** | /æʊ/ | r*ô*nd, h*ô*e, c*ô*e, v*ô*e | round, how, cow, vow |
 | **Û** | /ʊ/ | c*û*cion | cushion |
@@ -127,14 +125,13 @@ The vowel **ê** natively represents the `/ər/` sound. However, when followed b
 
 #### 3. Reduced Diphthongs (AÎ and EÎ) and Stress Retention
 In base verbs, stress is naturally pulled to the final syllable by the terminal silent 'e' (e.g., *compaire*, *beire*). However, adding a suffix threatens to shift that stress away. The circumflex steps in during derivation to act as a structural anchor. It signals to the reader that the primary spoken stress remains firmly locked exactly where it was on the root. 
-* **AÎ Examples:** *compare* → compaire | *comparison* → comp**aî**rasson | *comparable* → comp**aî**rable
-* **EÎ Examples:** *bear* → beire | *unbearable* → unb**eî**rable
+* **AÎ (/eɪ/ or /ɛr/):** *compare* → compaire | *comparison* → comp**aî**rasson | *comparable* → comp**aî**rable
+* **EÎ (/ɛr/):** *bear* → beire | *unbearable* → unb**eî**rable
 
-#### 4. The Modal / Glide Alternations (OÛ / UÔ / AÛ)
-When combined with **o** or **u**, the circumflex helps map historical glides and modal verb anomalies without relying on the dead letter 'w' or 'l'. 
-* **OÛ** (/ʊ/ or /wʊ/): Used heavily in anomalous modal verbs (e.g., *would, could, should* → *oû*d, c*oû*d, s*eû*d).
-* **UÔ** (/wʊ/): Indicates glide formation.
-* **AÛ** (/æʊ/): Maps the open diphthong for specific historical shifts (e.g., *crowd* → cr*aû*de).
+#### 4. The Modal / Glide Alternations (OÛ / AÛ)
+When combined with **o** or **a**, the circumflex helps map historical glides and modal verb anomalies without relying on the dead letter 'w' or 'l'. 
+* **OÛ (/ʊ/ or /wʊ/):** Used heavily in anomalous modal verbs (e.g., *would, could, should* → **oû**d, c**oû**d, s**eû**d).
+* **AÛ (/æʊ/):** Maps the open diphthong for specific historical shifts (e.g., *crowd* → cr**aû**de, *loud* → l**aû**d, *sour* → s**aû**re).
 
 ---
 
