@@ -9,7 +9,7 @@ These verbs possess strong stems ending in doubled consonants (e.g., *splitte*, 
 
 **The Rule:** The base word can structurally stand alone without the **⟨-e⟩**. While the **⟨-e⟩** appears in the infinitive, it is permanently dropped to form a lean, single-consonant stem for the present tense, past tense, and past participle.
 
-| Infinitive | Present (1st / 3rd Person) | Past & Participle |
+| Infinitive | Present Tense | Past & Participle |
 | :--- | :--- | :--- |
 | to splitte | split / splits | split |
 | to cutte | cut / cuts | cut |
@@ -20,7 +20,7 @@ These verbs end in a single consonant followed by **⟨-e⟩** (e.g., *caste*, *
 
 **The Rule:** Because their stems require the **⟨-e⟩** for structural support, they retain the **⟨-e⟩** throughout the present tense. To signify the shift to the past tense and past participle, they physically drop the **⟨-e⟩**.
 
-| Infinitive | Present (1st / 3rd Person) | Past & Participle |
+| Infinitive | Present Tense | Past & Participle |
 | :--- | :--- | :--- |
 | to caste | caste / castes | cast |
 | to sete | sete / setes | set |
