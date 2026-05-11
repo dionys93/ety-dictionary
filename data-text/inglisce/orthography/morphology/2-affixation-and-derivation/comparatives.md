@@ -19,12 +19,14 @@ The comparative suffix (**-ar**) begins with an 'a', which naturally keeps a pre
 
 **Adjectives Ending in -g:**
 * *Long vowels / ng:* Insert **-u-** before the superlative ending.
+  
 | Base | Comparative | Superlative |
 | :--- | :--- | :--- |
 | **stròng** | stròngar | stronguest |
 | **lòng** | lòngar | longuest |
 
 * *Short vowels:* Insert **-h-** before the superlative ending.
+  
 | Base | Comparative | Superlative |
 | :--- | :--- | :--- |
 | **big** | bigar | bighest |
@@ -32,6 +34,7 @@ The comparative suffix (**-ar**) begins with an 'a', which naturally keeps a pre
 
 **Adjectives Ending in -c:**
 * Switch the 'c' to **-qu-** before the superlative ending to preserve the hard /k/ sound.
+  
 | Base | Comparative | Superlative |
 | :--- | :--- | :--- |
 | **pinc** | pincar | pinquest |
