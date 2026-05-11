@@ -13,7 +13,7 @@ This constraint is most prominently seen in the Inglisce treatment of the Latina
 | Modern English | Inglisce |
 | :--- | :--- |
 | pious | pîeus |
-| curious | curieus |
+| curious | cúrieus |
 | envious | envieus |
 | rebellious | rebellieus |
 | laborious | laborieus |
@@ -54,6 +54,21 @@ This replacement reflects backing and rounding tendencies rather than a distinct
 | **Nasal + Stop (-nc)** | chunk → c̃onc, bunk → bonc, funk → fonc, gunk → gonc |
 | **Nasal + Stop (-mp)** | bump → bompe, hump → hompe, lump → lompe, jump → jompe, plump → plompe, assume/assumption → assoume/assomption |
 | **Polysyllabic** | plummet → plomete, summit → somete, summer → somere, Monday → Mondaie |
+
+---
+
+## 3. The Latinate -um / -ium Suffix Intersection
+
+The two constraints detailed above perfectly intersect when handling words of Latin or Greek origin that end in the suffixes **-um** or **-ium**.
+
+Because the letter **⟨u⟩** can never sit directly adjacent to the strict blocking consonant **⟨m⟩**, the suffix is mechanically forced to back to **-om**. 
+
+Furthermore, in words ending in *-ium* (like *Belgium*), retaining the *u* would simultaneously violate the **I + U Hiatus Constraint**. Shifting the suffix to **-iom** elegantly resolves both illegal clusters at once.
+
+| Modern English | Inglisce |
+| :--- | :--- |
+| museum | m̃usíom |
+| Belgium | Belgiom |
 
 ---
 
