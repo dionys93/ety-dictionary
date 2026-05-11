@@ -1,4 +1,4 @@
-# Prepositions
+# Preposicions
 
 As a closed grammatical class, prepositions in Inglisce function syntactically exactly as they do in Modern English. They establish spatial, temporal, and logical relationships within a sentence. 
 
