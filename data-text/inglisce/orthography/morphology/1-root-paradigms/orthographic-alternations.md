@@ -165,8 +165,6 @@ In these cases, vowel alternation applies only to the monomorphemic lexical stem
 
 ---
 
----
-
 ## 5. The Long-E to Short-E Collapse (⟨-ie-⟩ to ⟨-ai-⟩)
 
 A systemic feature of Inglisce morphology is the predictable shortening of the long **-ie-** vowel when a root word undergoes derivation or structural compression. 
