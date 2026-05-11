@@ -33,8 +33,8 @@
 | **/aɪ/** | Initial | î, aie, eai | *î*le, *î*tem, *aie*le, *eai*e |
 | | Medial | î, aih, oih, ŷ | c*î*te, m*î*te, n*î*hte, n*ai*hte, m*aih*te, h*oih*te, f*oih*te, c*ŷ*nd, c*ŷ*te |
 | | Final (Roots & Suffixes)| îe, ae, yh, oih, aih | cr*î*e (cr*î*s), jostif*ae*, d*yh*e (cr*yh*ing), fl*oih*e, d*aih*e |
-| **/ɔɪ/** | Initial | eui, euy | *eui*le |
-| | Medial | oi-e, eui-e, oui-e, euy, oy | c*oi*n*e*, *eui*le, (*euy*els), f*eui*le, f*eui*lage sp*oui*le, (sp*oy*els)  |
+| **/ɔɪ/** | Initial | eui, euy, oi | *eui*le, (*euy*els), *oi*nche |
+| | Medial | oi-e, eui-e, oui-e, oy | c*oi*n*e*, f*eui*le, f*eui*lage, sp*oui*le, (sp*oy*els), f*oui*le, (f*oy*els)  |
 | | Final | oy | b*oy*s |
 | **/oʊ/** | Initial | ó, oa | *ó*pal, *ó*val, *oa*ts |
 | | Medial | o-e, ó, oa | b*o*n*e* (b*oa*ns), b*o*t*e* (b*oa*ts), g*o*t*e* (g*oa*ts), c*oa*ste, g*oa*ste, h*oa*me, c*oa*me, r*ó*ste, b*ó*ste |
