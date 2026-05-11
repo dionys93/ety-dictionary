@@ -78,7 +78,7 @@ While their orthography has been standardized to reflect their phonetic reality,
 
 ---
 
-## Prepositions by Categorîe
+## Preposicions by Categorie
 
 ### Causal Preposicions
 *These explain why something happens:*
