@@ -174,7 +174,7 @@ Words ending in the structural **-le** demonstrate a strict behavioral split, ac
 | Latin *stabulum* | to **stâble** | stâble(s, stâbled, stâbling | stâble, stâbuls | stâbil |
 | Old English *stapol, stapel* | to **stâple** | stâple(s, stâpled, stâpling | stâple, stâpuls | -- |
 | Latin *rebellare, rebellis* | to **rebèle** | rebèle(s, rebèled, rebèling | reble, rebels | rebellieus |
-| Old English *sceofol* | to **siovle** | siovle(s, siovled, siovling | siovle, siovels | -- |
+| Old English *sceofol* | to **siovele** | siovele(s, sioveled, sioveling | siovele, siovels | -- |
 
 ### Static ⟨-le⟩ Bases (Nouns & Adjectives Only)
 
@@ -195,7 +195,7 @@ While the vast majority of **-le** words unpack with a *u* (e.g., `-culs`, `-bul
 | **cassle, cassels** | Latin *castellum* |
 | **mussle, mussels** | Latin *muscula* |
 | **reble, rebels** | Latin *rebellis* |
-| **siovle, siovels** | Old English *sceofol* |
+| **siovele, siovels** | Old English *sceofol* |
 | **tonele, tonels** | Old French *tonel* |
 | **vessle, vessels** | Old French *vessel* |
 
