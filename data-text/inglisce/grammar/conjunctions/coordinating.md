@@ -7,5 +7,5 @@
 | **nor** | Links two negative alternatives, continuing the negative state of the preceding clause. | Ћey don't r̃aite, **nor** do þey calle. |
 | **but** | Connects contrasting ideas, exceptions, or opposing statements. |Ћe paþ uas stiep, **but** uie riec̃ed þe somete. |
 | **or** | Presents alternative possibilities or a choice between two or more items. | You can travle by treine **or** tâche a buss. |
-| **yet** | Introduces a contrasting idea that follows logically, similar to "nevertheless." | Ћe uaie uas cóld, **yet** bryht and sonny. |
-| **so** | Indicates an effect, result, or consequence of the first clause. | Ћe storme was approc̃ing, **so** uie soht scelture. |
+| **yet** | Introduces a contrasting idea that follows logically, similar to "nevertheless." | Ћe ueþre uas cóld, **yet** bryht and sonny. |
+| **so** | Indicates an effect, result, or consequence of the first clause. | Ћe storme uas approc̃ing, **so** uie soht scelture. |
