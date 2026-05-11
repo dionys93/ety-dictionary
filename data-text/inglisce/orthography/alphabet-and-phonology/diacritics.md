@@ -125,10 +125,10 @@ The vowel **ê** natively represents the `/ər/` sound. However, when followed b
 * **Rule:** `êr + {n, m} → ê`
 * **Examples:** *earn* → **êne** (not êrne), *confirm* → **confême** (not confêrme).
 
-#### 3. Reduced Diphthongs (AÎ) and Stress Retention
-In base verbs, stress is naturally pulled to the final syllable by the terminal silent 'e' (e.g., *compaire*). However, adding a suffix threatens to shift that stress away. The circumflex steps in during derivation to act as a structural anchor. It signals to the reader that the primary spoken stress remains firmly locked exactly where it was on the root. 
-* **Examples:** *compare* → compaire | *comparison* → comp*aî*rasson | *comparable* → comp*aî*rable
-* unbearable → unb*eî*rable
+#### 3. Reduced Diphthongs (AÎ and EÎ) and Stress Retention
+In base verbs, stress is naturally pulled to the final syllable by the terminal silent 'e' (e.g., *compaire*, *beire*). However, adding a suffix threatens to shift that stress away. The circumflex steps in during derivation to act as a structural anchor. It signals to the reader that the primary spoken stress remains firmly locked exactly where it was on the root. 
+* **AÎ Examples:** *compare* → compaire | *comparison* → comp**aî**rasson | *comparable* → comp**aî**rable
+* **EÎ Examples:** *bear* → beire | *unbearable* → unb**eî**rable
 
 #### 4. The Modal / Glide Alternations (OÛ / UÔ / AÛ)
 When combined with **o** or **u**, the circumflex helps map historical glides and modal verb anomalies without relying on the dead letter 'w' or 'l'. 
@@ -186,13 +186,30 @@ By using the tilde, Inglisce preserves historical realities—such as yod-coales
 
 ### Grapheme Inventory and Pronunciation Rules
 
-#### 1. The Palatal Affricate ( C̃ )
-In Modern English, the `ch` digraph is ambiguous, representing `/tʃ/`, `/k/`, or `/ʃ/` depending on the word's origin. Inglisce reserves the **c̃** specifically for the native Germanic palatal affricate.
+#### 1. The Palatal Affricate ( C̃ and X̃ )
+In Modern English, the `ch` digraph is ambiguous, representing `/tʃ/`, `/k/`, or `/ʃ/` depending on the word's origin. Inglisce reserves the **c̃** specifically for the palatal affricate.
 
-| Phonetic Value | Inglisce Examples | Modern English Equivalent |
-| :--- | :--- | :--- |
-| /t͡ʃ/ | *c̃*ine, *c̃*ur*c̃*e, *c̃*oice, *c̃*ouse, *c̃*iec, *c̃*erișe, ma*c̃*e, ui*c̃*, mo*c̃*, so*c̃*  | chin, church, choice, choose, cheek, cherish, which, much, such |
-| /t͡ʃ/ | ma*x̃*e, ui*x̃*e | match (lighter), witch |
+**Standard Vocabulary**
+| Modern English | Inglisce |
+| :--- | :--- |
+| chin | c̃ine |
+| church | c̃urc̃e |
+| choice | c̃oice |
+| choose | c̃ouse |
+| cheek | c̃iec |
+| cherish | c̃erișe |
+| much | moc̃ |
+| such | soc̃ |
+
+**Homophone Disambiguation ( X̃ )**
+While **c̃** is the primary marker for the palatal affricate, Inglisce employs **x̃** to map the exact same sound in specific cases to visually differentiate homophones. This provides a distinct spelling for words that sound identical but have separate meanings.
+
+| Modern English | Inglisce |
+| :--- | :--- |
+| which | uic̃ |
+| witch | uix̃e |
+| match (a pair / a game) | mac̃e |
+| match (a lighter / stick) | max̃e |
 
 #### 2. The Historical Rhotic ( R̃ )
 In Old English, words beginning with the `wr-` cluster were pronounced exactly as written (with a distinct `/w/`). In modern speech, the `/w/` has fallen silent. Inglisce replaces the dead `wr-` cluster with the **r̃** to give the lost etymology a distinct visual identity while matching the modern spoken reality.
