@@ -1,93 +1,120 @@
-Monþs of þe Yiar
+# Monþs of þe Yiar
 
-Ianuarius [L]
-Janvier [OF]
-January [ME]
-Jañuarie
-https://www.etymonline.com/word/January#etymonline_v_1662
-https://www.merriam-webster.com/dictionary/January
-https://anglo-norman.net/entry/janvier
-https://latin-dictionary.net/definition/24879/Januarius-Januaria-Januarium
+## Jañuarie
 
-februa, februare, Februarius [L]
-February [ME]
-Febuarie
-https://www.etymonline.com/word/February#etymonline_v_1185
-https://www.merriam-webster.com/dictionary/February
-https://latin-dictionary.net/definition/20393/Februarius-Februaria-Februarium
-https://latin-dictionary.net/definition/20394/februum-februi
+**Etymological Derivation:**
+* **[L]** Ianuarius
+* **[OF]** Janvier
+* **[ME]** January
 
-Martius [L]
-marz, marche [OF]
-March [ME]
-Marț
-https://www.etymonline.com/word/march#etymonline_v_9595
-https://www.merriam-webster.com/dictionary/march#dictionary-entry-5
-https://anglo-norman.net/entry/march_1
-https://latin-dictionary.net/definition/26477/Martius-Martia-Martium
+**Sources:** [Etymonline](https://www.etymonline.com/word/January#etymonline_v_1662) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/January) | [Anglo-Norman](https://anglo-norman.net/entry/janvier) | Latin-Dictionary: [24879](https://latin-dictionary.net/definition/24879/Januarius-Januaria-Januarium)
 
-Aprilis [L]
-avril [OF]
-April [ME]
-Âpril
-https://www.etymonline.com/word/April#etymonline_v_15525
-https://www.merriam-webster.com/dictionary/April
-https://anglo-norman.net/entry/avril
-https://latin-dictionary.net/definition/4203/Aprilis-Aprilis
+---
 
-Maia, Majus, Maius [L]
-mai [OF]
-May [ME]
-https://www.etymonline.com/word/may#etymonline_v_12464
-https://www.merriam-webster.com/dictionary/may#dictionary-entry-3
-https://anglo-norman.net/entry/mai_1
-https://latin-dictionary.net/definition/26213/Maius-Maia-Maium
+## Febuarie
 
-Iunius [L]
-June [ME]
-https://www.etymonline.com/word/June#etymonline_v_6555
-https://www.merriam-webster.com/dictionary/June
-https://latin-dictionary.net/definition/24988/Junius-Junia-Junium
+**Etymological Derivation:**
+* **[L]** februa, februare, Februarius
+* **[ME]** February
 
-Iulius [L]
-Juil, Jule [OF]
-July [ME]
-Julîe
-https://www.etymonline.com/word/July#etymonline_v_6547
-https://www.merriam-webster.com/dictionary/July
-https://anglo-norman.net/entry/juil
-https://latin-dictionary.net/definition/24975/Julius-Julia-Julium
+**Sources:** [Etymonline](https://www.etymonline.com/word/February#etymonline_v_1185) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/February) | Latin-Dictionary: [20393](https://latin-dictionary.net/definition/20393/Februarius-Februaria-Februarium), [20394](https://latin-dictionary.net/definition/20394/februum-februi)
 
-Augustus [L]
-August [ME]
-https://www.etymonline.com/word/august#etymonline_v_18943
-https://www.merriam-webster.com/dictionary/august#dictionary-entry-2
-https://latin-dictionary.net/definition/5587/Augustus-Augusta-Augustum
+---
 
-septem, September [L]
-Septembre
-https://www.etymonline.com/word/September#etymonline_v_23237
-https://www.merriam-webster.com/dictionary/September
-https://latin-dictionary.net/definition/34725/September-Septembris
-https://latin-dictionary.net/definition/34724/septem-septimus
+## Marț
 
-octo, October [L]
-Octóbre
-https://www.etymonline.com/word/October#etymonline_v_2485
-https://www.merriam-webster.com/dictionary/October
-https://latin-dictionary.net/definition/28515/October-Octobris
-https://latin-dictionary.net/definition/28514/octo-octavus
+**Etymological Derivation:**
+* **[L]** Martius
+* **[OF]** marz, marche
+* **[ME]** March
 
-novem, November [L]
-Novembre
-https://www.etymonline.com/word/November#etymonline_v_9841
-https://www.merriam-webster.com/dictionary/November#dictionary-entry-1
-https://latin-dictionary.net/definition/28019/November-Novembris-Novembre
-https://latin-dictionary.net/definition/28017/novem-nonus
+**Sources:** [Etymonline](https://www.etymonline.com/word/march#etymonline_v_9595) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/march#dictionary-entry-5) | [Anglo-Norman](https://anglo-norman.net/entry/march_1) | Latin-Dictionary: [26477](https://latin-dictionary.net/definition/26477/Martius-Martia-Martium)
 
-decem, December [L]
-Decembre
-https://www.etymonline.com/word/December#etymonline_v_848
-https://www.merriam-webster.com/dictionary/December
-https://latin-dictionary.net/definition/15761/December-Decembris-Decembre
-https://latin-dictionary.net/definition/15759/decem-decimus
+---
+
+## Âpril
+
+**Etymological Derivation:**
+* **[L]** Aprilis
+* **[OF]** avril
+* **[ME]** April
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/April#etymonline_v_15525) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/April) | [Anglo-Norman](https://anglo-norman.net/entry/avril) | Latin-Dictionary: [4203](https://latin-dictionary.net/definition/4203/Aprilis-Aprilis)
+
+---
+
+## May
+
+**Etymological Derivation:**
+* **[L]** Maia, Majus, Maius
+* **[OF]** mai
+* **[ME]** May
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/may#etymonline_v_12464) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/may#dictionary-entry-3) | [Anglo-Norman](https://anglo-norman.net/entry/mai_1) | Latin-Dictionary: [26213](https://latin-dictionary.net/definition/26213/Maius-Maia-Maium)
+
+---
+
+## June
+
+**Etymological Derivation:**
+* **[L]** Iunius
+* **[ME]** June
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/June#etymonline_v_6555) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/June) | Latin-Dictionary: [24988](https://latin-dictionary.net/definition/24988/Junius-Junia-Junium)
+
+---
+
+## Julîe
+
+**Etymological Derivation:**
+* **[L]** Iulius
+* **[OF]** Juil, Jule
+* **[ME]** July
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/July#etymonline_v_6547) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/July) | [Anglo-Norman](https://anglo-norman.net/entry/juil) | Latin-Dictionary: [24975](https://latin-dictionary.net/definition/24975/Julius-Julia-Julium)
+
+---
+
+## August
+
+**Etymological Derivation:**
+* **[L]** Augustus
+* **[ME]** August
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/august#etymonline_v_18943) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/august#dictionary-entry-2) | Latin-Dictionary: [5587](https://latin-dictionary.net/definition/5587/Augustus-Augusta-Augustum)
+
+---
+
+## Septembre
+
+**Etymological Derivation:**
+* **[L]** septem, September
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/September#etymonline_v_23237) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/September) | Latin-Dictionary: [34725](https://latin-dictionary.net/definition/34725/September-Septembris), [34724](https://latin-dictionary.net/definition/34724/septem-septimus)
+
+---
+
+## Octóbre
+
+**Etymological Derivation:**
+* **[L]** octo, October
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/October#etymonline_v_2485) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/October) | Latin-Dictionary: [28515](https://latin-dictionary.net/definition/28515/October-Octobris), [28514](https://latin-dictionary.net/definition/28514/octo-octavus)
+
+---
+
+## Novembre
+
+**Etymological Derivation:**
+* **[L]** novem, November
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/November#etymonline_v_9841) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/November#dictionary-entry-1) | Latin-Dictionary: [28019](https://latin-dictionary.net/definition/28019/November-Novembris-Novembre), [28017](https://latin-dictionary.net/definition/28017/novem-nonus)
+
+---
+
+## Decembre
+
+**Etymological Derivation:**
+* **[L]** decem, December
+
+**Sources:** [Etymonline](https://www.etymonline.com/word/December#etymonline_v_848) | [Merriam-Webster](https://www.merriam-webster.com/dictionary/December) | Latin-Dictionary: [15761](https://latin-dictionary.net/definition/15761/December-Decembris-Decembre), [15759](https://latin-dictionary.net/definition/15759/decem-decimus)
