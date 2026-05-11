@@ -4,6 +4,11 @@ Group 2 verbs represent the class of English words where the **past tense and pa
 
 Rather than treating these as isolated exceptions, Inglisce categorizes them into predictable orthographic shifts. When these verbs mutate into the past tense, they follow one of these distinct structural patterns:
 
+### Understanding the Parenthetical Notation
+In the tables below, some infinitives are written with a parenthesis, such as `to bring(ue` or `to spin(ne`. This marks the boundary between the base verb root and its infinitive suffix. 
+
+This distinction is important because the standard present tense is not always identical to the full infinitive. When conjugating into the present tense, the verb often strips away this outer scaffolding. For example, the infinitive `to spinne` drops its doubled consonant and soft ending to form the present base: *I spin*, *sie spins*. The parenthesis visually isolates the true, stable root (`spin-` or `bring-`) that carries through the present tense.
+
 ### 2A. The D-to-T Shift
 To form the past tense, they retain their root vowel and simply mutate the voiced **-d-** into an unvoiced **-t**.
 | Infinitive | Past / Participle |
@@ -53,7 +58,7 @@ Because the suffix was "absorbed" or smoothly blended into the root's existing c
 | to slîde | slid |
 | to smelle | smelt |
 | to spille | spilt |
-| to louse | lòst |
+| to louse | lòst |
 
 ### 2D. The "-ht" Replacements and the Lost Germanic Fricative
 These verbs radically alter their stems, replacing their root consonants with the **-oht** or **-auht** endings (corresponding to Modern English *-ght*). 
@@ -64,10 +69,10 @@ Historically, these were also weak verbs that added a dental suffix (**-t** or *
 
 | Infinitive | Past / Participle |
 | :--- | :--- |
-| to bringue | broht |
+| to bring(ue | broht |
 | to byhe | boht |
-| to síche | soht |
-| to þinche | þoht |
+| to síc(he | soht |
+| to þinc(he | þoht |
 | to caic̃e | cauht |
 | to tiec̃e | tauht |
 | to foihte | fauht |
@@ -80,55 +85,61 @@ Strong verbs never relied on suffixes to change tense. Instead, they relied on *
 Inglisce categorizes these ancient vowel shifts into the following consistent orthographic patterns.
 
 ### 2E. The "-aund" Shift
-Verbs ending in the **-înde** sequence uniformly mutate their internal vowel to form the **-aund** past tense.
+Verbs ending in the **-înde** sequence uniformly mutate their internal vowel to form the **-aund** past tense.
 | Infinitive | Past / Participle |
 | :--- | :--- |
-| to bînde | baund |
-| to fînde | faund |
-| to grînde | graund |
-| to uînde | uaund |
+| to bînde | baund |
+| to fînde | faund |
+| to grînde | graund |
+| to uînde | uaund |
 
 ### 2F. The "O" and "EUC" Ablauts (Nasal & Velar Shifts)
 Verbs featuring an **i** before a nasal (n/ng) or a velar/palatal sound (ch/g) shift to **o** or **euc** to form the past tense.
 | Infinitive | Past / Participle |
 | :--- | :--- |
-| to clingue | clong |
-| to flingue | flong |
-| to hângue | hong |
-| to spinne | spon |
-| to slingue | slong |
-| to stingue | stong |
-| to stringue | strong |
-| to suingue | suong |
-| to uinne | uon |
-| to ringue | rong |
-| to dighe | deug |
-| to stiche | steuc |
-| to strîche | streuc |
+| to cling(ue | clong |
+| to fling(ue | flong |
+| to hâng(ue | hong |
+| to spin(ne | spon |
+| to sling(ue | slong |
+| to sting(ue | stong |
+| to string(ue | strong |
+| to suing(ue | suong |
+| to uin(ne | uon |
+| to ring(ue | rong |
+| to dig(he | deug |
+| to stic(he | steuc |
+| to strîc(he | streuc |
 
 ### 2G. The "-old" Shift
-Verbs ending in **-elle** undergo a direct vowel mutation to **-óld** or **-ôld**.
+Verbs ending in **-elle** undergo a direct vowel mutation to **-óld** or **-ôld**.
 | Infinitive | Past / Participle |
 | :--- | :--- |
-| to selle | sóld |
-| to telle | tóld |
+| to selle | sóld |
+| to telle | tóld |
 
 ### 2H. Highly Irregular Stems
 A small handful of verbs undergo unique historical mutations that do not fit into the broader categories above.
 | Infinitive | Past / Participle | 
 | :--- | :--- |
-| to bêne | bênt |
+| to bêne | bênt |
 | to flihe | fled |
-| to hyre | hêd |
+| to hyre | hêd |
 | to holde | held | 
 | to loihte | liht |
-| to mâche | mâde |
-| to onderstande | onderstôd |
-| to scîne | sione |
+| to mâc(he | mâde |
+| to onderstande | onderstôd |
+| to scîne | sione |
 | to scite | sçat |
 | to seoute | siot |
-| to sitte | sat |
-| to spytte | spat |
-| to stande | stôd |
+| to sit(te | sat |
+| to spyt(te | spat |
+| to stande | stôd |
 | to uiþholde | uiþheld |
-| to uiþstande | uiþstôd |
+| to uiþstande | uiþstôd |
+
+---
+
+### General Conjugation Rules for Group 2 Verbs
+* **3rd Person Singular:** Add **-s** to the infinitive root (e.g., *sie bendes*, *sie slîdes*). For verbs marked with a parenthetical boundary, drop the outer infinitive suffix before adding the **-s** directly to the stable base (e.g., *to mâc(he* → *I mâc*/*sie mâcs*, *to spin(ne* → *uie spin*/*hie spins*, *to bring(ue* → *you bring*/*sie brings*).
+* **Progressive Participle:** Formed by dropping the terminal silent **-e** from the infinitive base and adding **-ing** (e.g., *to bende* → *bending*, *to bringu(e* → *bringuing*).
