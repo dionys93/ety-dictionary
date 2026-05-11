@@ -1,6 +1,6 @@
-# General American IPA Phoneme Inventory for Inglisce
+## General American IPA Phoneme Inventory for Inglisce
 
-## 1. VOWELS (Monophthongs & Diphthongs)
+### 1. VOWELS (Monophthongs & Diphthongs)
 
 | IPA | Position | Graphemes | Inglisce Examples |
 | :--- | :--- | :--- | :--- |
@@ -44,7 +44,7 @@
 
 ---
 
-## 2. Rhotic & R-Colored Vowels
+### 2. Rhotic & R-Colored Vowels
 
 | IPA | Graphemes / Spelling Patterns | Inglisce Examples |
 | :--- | :--- | :--- |
@@ -61,7 +61,7 @@
 
 ---
 
-## 3. CONSONANTS (Stops, Fricatives & Others)
+### 3. CONSONANTS (Stops, Fricatives & Others)
 
 | Category | IPA | Graphemes | Inglisce Examples |
 | :--- | :--- | :--- | :--- |
@@ -94,7 +94,7 @@
 
 ---
 
-## 4. Glide Clusters
+### 4. Glide Clusters
 
 | Type | IPA | Graphemes | Inglisce Examples |
 | :--- | :--- | :--- | :--- |
@@ -106,7 +106,7 @@
 | | **/hj/** | hú, hu-e, huis | *hú*ge, *hu*man |
 | | **/mj/** | mú, mu-e | *mú*sic, *mu*se |
 | | **/nj/** | gn, ñ | onio*n* |
-| | **/lj/** | lue, luis | va*lue* |
+| | **/lj/** | lue, luis | va*lue*, va*lui*s |
 | **Labio-velar (/w/)** | **/tw/** | tu, to | *tu*ite (tweet) |
 | | **/dw/** | du, do | *du*elle (dwell) |
 | | **/kw/** | qu, cu, co | *qu*ic, *cu*ic |
