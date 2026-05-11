@@ -4,33 +4,34 @@
 
 | IPA | Position | Graphemes | Inglisce Examples |
 | :--- | :--- | :--- | :--- |
-| **/i/** | Initial | ei- | *ei*c̃e, *ei*gle |
+| **/i/** | Initial | ei-, í- | *ei*c̃e, *ei*gle, *í*vle |
 | | Medial | í, ie, i-e | m*í*dia, f*ie*le, mac̃*i*n*e*, iven |
-| | Final | -y, -ie | fonn*y*, comitt*ie* |
-| **/ɪ/** | Initial | i | *i*tte, *i*n |
-| | Medial | i, ig | s*i*c, f*i*n*i*șe, s*ig*nal |
-| **/ɛ/** | Initial | e, è, ai | *e*mitte, *è*ra, *ai*r |
+| | Final | -y, -ie, -i | fonn*y*, comitt*ie*, comitt*i*s |
+| **/ɪ/** | Initial | i | *i*t, *i*n |
+| | Medial | i | s*i*c, f*i*n*i*șe, s*i*gnal |
+| **/ɛ/** | Initial | e, è, ai | *e*mpty, *è*ra, *ai*re |
 | | Medial | è, ai, ea | pr*è*sident, s*ai*d, br*ea*de |
-| **/æ/** | Initial | a, à | *a*miral, *à*nalysis |
-| | Medial | a, a-e, à | b*a*te, alf*à*lfa |
-| **/ɑ/** | Initial | o | *o*c |
-| | Medial | o, á | l*o*c, f*á*þre, u*á*tre |
+| **/æ/** | Initial | a | *a*miral, *a*nimal, *a*nimait |
+| | Medial | a, a-e, à | b*a*te, c*a*te, f*a*t, alf*à*lfa, an*à*lysis |
+| **/ɑ/** | Initial | o | *o*ctopus |
+| | Medial | o, á | l*o*c, d*o*c, st*o*c, d*o*ctre, f*á*þre, u*á*tre |
+| | Final | a-e | Ir*a*ne |
 | **/ɔ/** | Initial | au, ò | *Au*strâlia, *Ò*stria |
-| | Medial | au, ah-e, oh, ò | s*au*ce, l*ahe*, b*oh*t, c*ò*ste |
-| | Final | o-ue, ogs, aus | d*ogs*, l*aus* |
+| | Medial | au, all, off, oh, ò | s*au*ce, c*au*fie, l*au*s, c*all*e, c*off*e, b*oh*t, c*ò*ste |
+| | Final | ahe, au | l*ahe*, dr*ahe*, Arcans*au* |
 | **/ʊ/** | Medial | û, oû, u, ô | g*û*d, c*oû*d, p*u*sce, b*ô*c |
-| **/u/** | Medial | ou-e, u-e | r*ou*t*e*, r*u*d*e* |
-| **/ju/** | Initial | ú-, u- | *ú*se, *u*nite |
-| | Medial | u-e, ú | m*u*s*e*, m*ú*sic |
-| | Final | ue / u-e | val*u-e* |
+| **/u/** | Medial | ou-e, u-e, eu-e | r*ou*t*e*, r*u*d*e*, cr*eu*s*e* |
+| **/ju/** | Initial | ú, u, eu | *ú*se, *u*nîte, *eu*noc |
+| | Medial | u-e, ú, ui | m*u*s*e*, m*ú*sic, corf*ui*s |
+| | Final | ue | val*ue*, corf*ue*, arg*ue* |
 | **/ə/** | Initial | a, e, o | *a*baut, *e*mitte, *o*ccour |
 | | Medial | a, i, e, u, o | anim*a*t, ind*i*viḑual, d*e*vote, c*u*tte, r*o*ne |
-| | Final | a | mídí*a* |
-| **/eɪ/** | Initial | éi, â | *éi*me, *â*le |
+| | Final | a | mídi*a* |
+| **/eɪ/** | Initial | éi, ea, â | *éi*me, *ea*le, *â*þyist |
 | | Medial | â, aî, ai-e, ei, ei-e, aig, eig, eih-e | g*â*te, r*ai*gn*e*, v*ei*n, u*eih*t |
 | | Final | ay, ey, eih | gr*ay*, þ*ey*, sl*eih* |
-| **/aɪ/** | Initial | î, aih | *î*sle, *aih*te |
-| | Medial | oih, eaie, oî, uî | fl*oih*e, empl*oî*e |
+| **/aɪ/** | Initial | î | *î*le  |
+| | Medial | oih, eaie, oî, uî | fl*oih*e |
 | | Final | yh | d*yh*e |
 | **/ɔɪ/** | Initial | eui, euy | *eui*le |
 | | Medial | oi-e, eui-e, oui-e, euy, oy | c*oi*n*e*, f*eui*le, sp*oui*le |
@@ -72,7 +73,7 @@
 | **Flap** | **/ɾ/** | t, d | uá*t*re, ma*d*re |
 | **Fricatives**| **/f/** | f, ph, fh | *f*ilme, *ph*otografe |
 | | **/v/** | v | *v*ote |
-| | **/θ/** | þ | *þ*in, au*þ*or |
+| | **/θ/** | þ | *þ*in, au*þ*re |
 | | **/ð/** | þ | *þ*en, fá*þ*re |
 | | **/s/** | s, c, ç | *s*inne, *c*ente, fa*ç*ade |
 | | **/z/** | s, z | i*s*, *z*iploc |
