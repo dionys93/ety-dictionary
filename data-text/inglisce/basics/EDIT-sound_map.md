@@ -19,27 +19,28 @@
 | **/ɔ/** | Initial | au, ò | *Au*strâlia, *Ò*stria |
 | | Medial | au, all, off, oh, ò | s*au*ce, c*au*fie, l*au*s, c*all*e, c*off*e, b*oh*t, c*ò*ste |
 | | Final | ahe, au | l*ahe*, dr*ahe*, Arcans*au* |
-| **/ʊ/** | Medial | û, oû, u, ô | g*û*d, c*oû*d, p*u*sce, b*ô*c |
+| **/ʊ/** | Medial | û, oû, u, ô | g*û*d, c*û*cion, c*oû*d, p*u*sce, b*ô*c |
 | **/u/** | Medial | ou-e, u-e, eu-e | r*ou*t*e*, r*u*d*e*, cr*eu*s*e* |
 | **/ju/** | Initial | ú, u, eu | *ú*se, *u*nîte, *eu*noc |
 | | Medial | u-e, ú, ui | m*u*s*e*, m*ú*sic, corf*ui*s |
 | | Final | ue | val*ue*, corf*ue*, arg*ue* |
-| **/ə/** | Initial | a, e, o | *a*baut, *e*mitte, *o*ccour |
+| **/ə/** | Initial | a, e, o | *a*baut, *e*mitte, *o*ccûre |
 | | Medial | a, i, e, u, o | anim*a*t, ind*i*viḑual, d*e*vote, c*u*tte, r*o*ne |
 | | Final | a | mídi*a* |
-| **/eɪ/** | Initial | éi, ea, â | *éi*me, *ea*le, *â*þyist |
-| | Medial | â, aî, ai-e, ei, ei-e, aig, eig, eih-e | g*â*te, r*ai*gn*e*, v*ei*n, u*eih*t |
-| | Final | ay, ey, eih | gr*ay*, þ*ey*, sl*eih* |
-| **/aɪ/** | Initial | î | *î*le  |
-| | Medial | oih, eaie, oî, uî | fl*oih*e |
-| | Final | yh | d*yh*e |
+| **/eɪ/** | Initial | â, éi, ea | *â*ge, *â*pe, *â*þyist, *éi*me, *ea*le |
+| | Medial | â, aî, ai-e, ei, ea, aig, eig, eih | cr*â*te, f*â*te, g*â*te, st*â*te, m*â*te, tr*aî*tre, r*ai*gn*e*, v*ei*ne, r*ei*ne, str*ei*ne, s*ea*de, s*ea*me, gr*ea*t, st*ai*gn*e*, r*eig*ne, u*eih*te |
+| | Final (Roots & Suffixes) | aie, eie, ay, ey, eih-e | d*aie*, st*aie*, conv*eie*, gr*ay*, þ*ey*, sl*eih*e (sl*eih*s) |
+| **/aɪ/** | Initial | î, aie, eai | *î*le, *î*tem, *aie*le, *eai*e |
+| | Medial | î, aih, oih, ŷ | c*î*te, m*î*te, n*î*hte, n*ai*hte, m*aih*te, h*oih*te, f*oih*te, c*ŷ*nd, c*ŷ*te |
+| | Final (Roots & Suffixes)| îe, ae, yh, oih, aih | cr*î*e (cr*î*s), jostif*ae*, d*yh*e (cr*yh*ing), fl*oih*e, d*aih*e |
 | **/ɔɪ/** | Initial | eui, euy | *eui*le |
-| | Medial | oi-e, eui-e, oui-e, euy, oy | c*oi*n*e*, f*eui*le, sp*oui*le |
-| | Final | oy | b*oy* |
-| **/oʊ/** | Initial | ó | *ó*ste |
-| | Medial | o-e, oe, oa | b*o*n*e*, b*oa*ts |
-| | Final | -oe, -ou | se*oe*, bl*oe* |
-| **/aʊ/** | Medial / Final | ôe, ôa, ôu, aû, ôn, -aund | h*aû*se, all*ôe*, cr*ôn*e, f*aund* |
+| | Medial | oi-e, eui-e, oui-e, euy, oy | c*oi*n*e*, *eui*le, (*euy*els), f*eui*le, f*eui*lage sp*oui*le, (sp*oy*els)  |
+| | Final | oy | b*oy*s |
+| **/oʊ/** | Initial | ó, oa | *ó*pal, *ó*val, *oa*ts |
+| | Medial | o-e, ó, oa | b*o*n*e* (b*oa*ns), b*o*t*e* (b*oa*ts), g*o*t*e* (g*oa*ts), c*oa*ste, g*oa*ste, r*ó*ste, b*ó*ste |
+| | Final (Roots & Suffixes) | o, oe, ou | uind*o*, siad*o*, se*oe* (se*ou*ing), bl*oe* (bl*ou*ing) |
+| **/aʊ/** | Medial | ô-e, aû, ôn, -aund | *ô*l*e*, v*ô*l*e*, h*aû*se, cr*ôn*e, s*ôn*de, f*aund*, gr*aund* |
+| | Final (Roots & Suffixes) | ôe, ôu | h*ôe*, c*ôe* (c*ôu*s), all*ôe* (all*ôu*ing), *ôe*ls, v*ôe*ls |
 
 ---
 
@@ -48,14 +49,14 @@
 | IPA | Graphemes / Spelling Patterns | Inglisce Examples |
 | :--- | :--- | :--- |
 | **/ɝ/** | ê | s*ê*ve, pref*ê*r |
-| **/ɚ/** | -ar(e), -er, -or(e), -ur(e), ir, re | eu*ar*, mast*er*, c*or*ve, meș*ure*, b*ir*de, mat*re* |
+| **/ɚ/** | | eu*re*, eu*ar*s, mast*er*, c*or*ve, meș*ure*, b*ir*de, mat*ir*, mat*re* |
 | **/ɛr/** | eir(e), ere, air(e), ear(e), èr | b*eir*e, h*air*e, b*ear*e, *èr*a |
 | **/ɪr/** | -iar, -ire, -ior, -ier | f*iar*e, n*ir*e, st*ior*e, ch*ier*e |
 | **/ɑr/** | ar | c*ar*re, st*ar*re |
 | **/ɔr/** | ôre, aur(e), oure | n*ôr*þ, r*aur*e, fl*our*e |
 | **/wɔr/** | uar | *uar*m, s*uar*me |
 | **/aɪʲɚ/** | -îar, -îer, -îor, -îre | f*ŷar*s, acqu*îer*, f*îre* |
-| **/aʊʷɚ/** | -oare | c*ôa*rd |
+| **/aʊʷɚ/** | ôar, ôer, aû(e)r | *ôar*e, c*ôar*d, dev*ôer*, c*aûer*, saûre |
 | **/ɔɪʲɚ/** | oyeur | destr*oyeur* |
 
 ---
