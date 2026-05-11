@@ -58,18 +58,36 @@ export function getDictionaryPaths() {
       // Filter out hidden files immediately
       const validEntries = rawEntries.filter(entry => !entry.name.startsWith('.'));
 
-      // Find the index file explicitly instead of catching it in a loop
+      // Find the index file explicitly
       const indexFile = validEntries.find(entry => 
         entry.isFile() && (entry.name === 'index.md' || entry.name === 'index.txt')
       );
 
-      // We only read the file if indexFile was successfully found
+      // --- NEW: Detect and process Book Pages ---
+      // Find all files that are strictly numbers (e.g., "1.txt", "12.txt")
+      const pageFiles = validEntries.filter(entry => 
+        entry.isFile() && /^\d+\.txt$/.test(entry.name)
+      );
+
+      // Replaced 'let' with a 'const' ternary operation
+      const bookPages = pageFiles.length > 0 
+        ? pageFiles
+            // Sort numerically (so "10.txt" comes after "9.txt", not "1.txt")
+            .sort((a, b) => parseInt(a.name) - parseInt(b.name)) 
+            // Read the content of each page directly into the array
+            .map(entry => fs.readFileSync(path.join(currentPath, entry.name), 'utf-8'))
+        : null;
+      // ------------------------------------------
+
       const indexContent = indexFile ? fs.readFileSync(path.join(currentPath, indexFile.name), 'utf-8') : null;
       const indexExt = indexFile ? path.extname(indexFile.name) : null;
 
-      // Filter out the index file, then map the rest into your navigation array
-      const contents = validEntries
-        .filter(entry => entry !== indexFile)
+      // --- UPDATED: Filter out the index file AND the numbered page files ---
+      const navEntries = validEntries.filter(entry => 
+        entry !== indexFile && !pageFiles.includes(entry)
+      );
+
+      const contents = navEntries
         .map(entry => {
           const cleanName = entry.name.replace(/\.(md|txt)$/, '');
           const childRoute = routePath ? `${routePath}/${cleanName}` : cleanName;
@@ -97,6 +115,7 @@ export function getDictionaryPaths() {
           contents, 
           content: indexContent, 
           ext: indexExt, 
+          bookPages, // <-- NEW: Injected straight into Astro.props!
           isRoot
         }
       });

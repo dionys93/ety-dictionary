@@ -8,6 +8,7 @@ import { getDictionaryPaths } from '../utils/dictionary.js';
 // Import the two main layout components
 import DirectoryView from '../components/DirectoryView.astro';
 import ContentView from '../components/ContentView.astro';
+import BookReader from '../components/BookReader.jsx';
 
 // --- ROUTING LOGIC ---
 // getStaticPaths() is a mandatory Astro function for dynamic routing (like [...slug]).
@@ -20,11 +21,20 @@ export async function getStaticPaths() {
 // --- PROPS & PARAMS ---
 // Extract the specific data for the current page being generated.
 // These props are passed down from the array of objects returned by getDictionaryPaths() above.
-const { type, title, contents, content, ext, isRoot } = Astro.props;
+const { 
+  type, 
+  title, 
+  contents, 
+  content, 
+  ext, 
+  isRoot, 
+  bookPages 
+} = Astro.props;
 
-// Grab the current URL path from Astro's params object.
-// This is the literal string that replaces the [...slug] part of the filename.
 const { slug } = Astro.params;
+
+// If the folder has book pages, we render the reader!
+const isBookDir = type === 'directory' && bookPages && bookPages.length > 0;
 ---
 
 <html lang="en">
@@ -78,7 +88,12 @@ const { slug } = Astro.params;
 
       {/* --- RIGHT PANE: CONTENT --- */}
       <main class="right-pane">
-        {content ? (
+        {isBookDir ? (
+          /* Render the Interactive Flipbook! */
+          <div style="padding: 2rem; display: flex; justify-content: center;">
+            <BookReader pages={bookPages} client:load />
+          </div>
+        ) : content ? (
           /* Render file content OR directory index.md content */
           <ContentView 
             content={content} 
@@ -87,7 +102,7 @@ const { slug } = Astro.params;
             slug={slug || ''} 
           />
         ) : (
-          /* Placeholder when looking at a folder that has no index file */
+          /* Placeholder when looking at a standard folder */
           <div style="display: flex; align-items: center; justify-content: center; height: 100%; color: #9ca3af;">
             Select a document from the left to read.
           </div>
