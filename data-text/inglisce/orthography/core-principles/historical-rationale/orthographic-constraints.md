@@ -6,9 +6,20 @@ To maintain visual clarity, preserve etymological history, and avoid ambiguous v
 
 The letter **⟨i⟩** can never directly precede **⟨u⟩** in Inglisce orthography.
 
-When a morphological or historical process would force these two vowels together, a bridging vowel—either **⟨e⟩** or **⟨o⟩**—must be inserted between them. This prevents illegal clusters and yields stable sequences such as:
-* **⟨ieu⟩**
-* **⟨iou⟩**
+When a morphological or historical process would force these two vowels together, a bridging vowel—either **⟨e⟩** or **⟨o⟩**—must be inserted between them. This prevents illegal clusters and yields stable sequences such as **⟨ieu⟩** and **⟨iou⟩**.
+
+This constraint is most prominently seen in the Inglisce treatment of the Latinate *-ious* suffix, which is stabilized into **-ieus**:
+
+| Modern English | Inglisce |
+| :--- | :--- |
+| pious | pîeus |
+| curious | curieus |
+| envious | envieus |
+| rebellious | rebellieus |
+| laborious | laborieus |
+| erroneous | erronieus |
+| ingenious | ingínieus |
+| vicarious | vicârieus |
 
 ## 2. The ⟨u⟩ to ⟨o⟩ Replacement (Vowel Backing)
 
@@ -36,35 +47,13 @@ This replacement reflects backing and rounding tendencies rather than a distinct
 * **Noun–Verb Alignment:** Verbal derivatives strictly align orthographically with their noun base (e.g., *to bompe → bompes, bomped, bomping*).
 * **Polysyllabic Words:** In longer words, ⟨o⟩ commonly reflects unstressed vowel reduction rather than full vowel contrast.
 
-| Category | Modern English | Inglisce |
-| :--- | :--- | :--- |
-| **Monosyllabic** | some | som |
-| | sum, sums | somme, soms |
-| | run, runs | rone, rons |
-| | none | non |
-| | nun, nuns | nonne, nons |
-| | son, sons | sone, sons |
-| | sun, suns | sonne, sons |
-| | young | yong |
-| | come | come |
-| | stun | stonne |
-| | stunt | stonte |
-| | plunge | plonge |
-| | lunge | longe |
-| **Nasal + Stop (-nc)** | chunk | c̃onc |
-| | bunk | bonc |
-| | funk | fonc |
-| | gunk | gonc |
-| **Nasal + Stop (-mp)** | bump | bompe |
-| | hump | hompe |
-| | lump | lompe |
-| | jump | jompe |
-| | plump | plompe |
-| | assume, assumption | assoume, assomption |
-| **Polysyllabic** | plummet | plomete |
-| | summit | somete |
-| | summer | somere |
-| | Monday | Mondaie |
+| Category | Word Pairings (Modern English → Inglisce) |
+| :--- | :--- |
+| **Monosyllabic** | some → som, sum → somme, run → rone, none → non, nun → nonne, son → sone, sun → sonne, young → yong |
+| **Verbs & Bases** | come → come, stun → stonne, stunt → stonte, plunge → plonge, lunge → longe |
+| **Nasal + Stop (-nc)** | chunk → c̃onc, bunk → bonc, funk → fonc, gunk → gonc |
+| **Nasal + Stop (-mp)** | bump → bompe, hump → hompe, lump → lompe, jump → jompe, plump → plompe, assume/assumption → assoume/assomption |
+| **Polysyllabic** | plummet → plomete, summit → somete, summer → somere, Monday → Mondaie |
 
 ---
 
