@@ -55,8 +55,13 @@ Because the suffix was "absorbed" or smoothly blended into the root's existing c
 | to spille | spilt |
 | to louse | lòst |
 
-### 2D. The "-ht" Replacements
-These verbs radically alter their stems, dropping original root consonants and replacing them with the **-oht** or **-auht** endings (which correspond to the Modern English *-ght*).
+### 2D. The "-ht" Replacements and the Lost Germanic Fricative
+These verbs radically alter their stems, replacing their root consonants with the **-oht** or **-auht** endings (corresponding to Modern English *-ght*). 
+
+Historically, these were also weak verbs that added a dental suffix (**-t** or **-d**), but they had root vowels ending in velar consonants (like 'k' or 'g'). When forced against the dental suffix, these velar consonants softened into a voiceless velar fricative—the harsh, throaty /x/ sound found in the Scottish *loch* or German *Bach*. In Old and Middle English, this sound was spelled with an **h** (or *gh*), which Inglisce preserves.
+
+**The French Imposter:** Almost all verbs in this category (like *bringan* and *secan*) are ancient Germanic words. The glaring exception is **to caic̃e** (*catch*). This verb actually comes from Old Northern French (*cachier*) and Latin (*capere*). When it entered Middle English, speakers mistakenly assumed it was related to the native word *latch* (which was conjugated like *teach/taught*), and so they applied the Germanic "-ht" mutation to a French word by pure analogy!
+
 | Infinitive | Past / Participle |
 | :--- | :--- |
 | to bringue | broht |
@@ -66,6 +71,13 @@ These verbs radically alter their stems, dropping original root consonants and r
 | to caic̃e | cauht |
 | to tiec̃e | tauht |
 | to foihte | fauht |
+
+### The Germanic Strong Verbs: The Mechanism of Ablaut
+While the verbs in groups 2B, 2C, and 2D are historically **"weak verbs"** (changing tense by adding a suffix that caused phonetic collisions), the verbs in the following groups are historically **"strong verbs."**
+
+Strong verbs never relied on suffixes to change tense. Instead, they relied on **Ablaut** (vowel gradation)—a system dating back to the ancestral Proto-Indo-European language. Rather than adding sounds to the end of a word, speakers indicated past tense by shifting the phonetic resonance of the root vowel itself (e.g., Old English *bindan* and *spinnan*). 
+
+Inglisce categorizes these ancient vowel shifts into the following consistent orthographic patterns.
 
 ### 2E. The "-aund" Shift
 Verbs ending in the **-înde** sequence uniformly mutate their internal vowel to form the **-aund** past tense.
@@ -99,7 +111,7 @@ Verbs ending in **-elle** undergo a direct vowel mutation to **-óld** or **-o�
 | Infinitive | Past / Participle |
 | :--- | :--- |
 | to selle | sóld |
-| to telle | tôld |
+| to telle | tóld |
 
 ### 2H. Highly Irregular Stems
 A small handful of verbs undergo unique historical mutations that do not fit into the broader categories above.
@@ -109,14 +121,14 @@ A small handful of verbs undergo unique historical mutations that do not fit int
 | to flihe | fled |
 | to hyre | hêd |
 | to holde | held | 
-| to luîte | liht |
+| to loihte | liht |
 | to mâche | mâde |
 | to onderstande | onderstôd |
 | to scîne | sione |
 | to scite | sçat |
 | to seoute | siot |
 | to sitte | sat |
-| to spit | spat |
+| to spytte | spat |
 | to stande | stôd |
 | to uiþholde | uiþheld |
 | to uiþstande | uiþstôd |
