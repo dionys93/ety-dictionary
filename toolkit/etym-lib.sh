@@ -1155,7 +1155,6 @@ etym-flatten() {
     fi
 
     # 4. The Single Source of Truth Extraction Engine
-    # We use xargs for massive performance gains over the old while-read loop
     find "$TARGET_DIR" -type f -name "*.txt" -print0 | xargs -0 awk -v fmt="$FORMAT" -v inc_org="$INCLUDE_ORIGIN" '
         BEGIN { 
             RS=""; FS="\n" 
@@ -1176,6 +1175,18 @@ etym-flatten() {
             return words[1]
         }
 
+        # Translates suffix logic into explicit forms natively in Awk
+        function resolve_form(form, base, ing_base, is_ing,    res) {
+            gsub(/[\(\),]/, "", form)
+            if (substr(form, 1, 1) == "-") {
+                if (is_ing == 1) res = ing_base substr(form, 2)
+                else res = base substr(form, 2)
+            } else {
+                res = form
+            }
+            return res
+        }
+
         {
             pos = ""; verbose_pos = ""; lang = ""; target = ""; conj = ""; me_word = ""; pos_line_idx = 0;
             fname = FILENAME; sub(/^.*\//, "", fname); sub(/\.txt$/, "", fname)
@@ -1189,8 +1200,51 @@ etym-flatten() {
                     verbose_pos = (pos in pos_map) ? pos_map[pos] : pos
                     
                     temp_line = $i; sub(/^[ \t]+/, "", temp_line); sub(/^to[ \t]+/, "", temp_line); sub(/\(([a-z ]+(, [a-z ]+)*)\)/, "", temp_line) 
-                    n_words = split(temp_line, words, " "); target = words[1]              
-                    for(j=2; j<=n_words; j++) { if (words[j] != "") { conj = (conj == "" ? words[j] : conj " " words[j]) } }
+                    gsub(/\[[A-Z]+\]/, "", temp_line)
+                    n_words = split(temp_line, words, " "); target = words[1]; gsub(/,$/, "", target)
+                    
+                    # --- AWK MORPHOLOGY PIPELINE ---
+                    conj_list = ""
+                    
+                    if (index(verbose_pos, "verb") > 0) {
+                        base = target; ing_base = base
+                        if (match(base, /e$/)) ing_base = substr(base, 1, length(base)-1)
+                        
+                        for(j=2; j<=n_words; j++) {
+                            w = words[j]; if (w == "") continue
+                            is_ing = (j == n_words) ? 1 : 0
+                            resolved = resolve_form(w, base, ing_base, is_ing)
+                            conj_list = (conj_list == "") ? resolved : (conj_list " " resolved)
+                        }
+                    } 
+                    else if (index(verbose_pos, "noun") > 0) {
+                        base = target
+                        for(j=2; j<=n_words; j++) {
+                            w = words[j]; if (w == "") continue
+                            temp_base = base
+                            if (substr(w, 1, 1) == "-") {
+                                suffix = substr(w, 2); gsub(/[\(\),]/, "", suffix)
+                                if (match(base, /ie$/) && match(suffix, /^i/)) temp_base = substr(base, 1, length(base)-2)
+                                else if (match(base, /e$/) && match(suffix, /^[aeiou]/)) temp_base = substr(base, 1, length(base)-1)
+                            }
+                            resolved = resolve_form(w, temp_base, temp_base, 0)
+                            conj_list = (conj_list == "") ? resolved : (conj_list " " resolved)
+                        }
+                    } 
+                    else {
+                        for(j=2; j<=n_words; j++) {
+                            w = words[j]; if (w == "") continue
+                            temp_base = target
+                            if (substr(w, 1, 1) == "-") {
+                                suffix = substr(w, 2); gsub(/[\(\),]/, "", suffix)
+                                if (match(target, /le$/) && suffix == "y") temp_base = substr(target, 1, length(target)-1)
+                            }
+                            resolved = resolve_form(w, temp_base, temp_base, 0)
+                            conj_list = (conj_list == "") ? resolved : (conj_list " " resolved)
+                        }
+                    }
+                    
+                    conj = conj_list
                     break
                 }
             }
@@ -1200,16 +1254,11 @@ etym-flatten() {
             if (me_word == "" && pos_line_idx > 1) { me_word = extract_core($(pos_line_idx - 1)) }
 
             if (verbose_pos != "" && lang != "" && target != "") {
-                # ROUTE 1: JSONL Pipeline
                 if (fmt == "jsonl") {
-                    # Print raw tabs so jq can ingest it safely
                     printf "%s\t%s\t%s\t%s\n", me_word, target, verbose_pos, conj
-                } 
-                # ROUTE 2: CSV/TSV Pipeline
-                else {
+                } else {
                     delim = (fmt == "csv") ? "," : "\t"
                     q = (fmt == "csv") ? "\"" : ""
-                    
                     out_str = q fname q delim q me_word q delim q target q delim q conj q delim q verbose_pos q
                     if (inc_org == 1) out_str = out_str delim q lang q
                     print out_str
@@ -1217,7 +1266,6 @@ etym-flatten() {
             }
         }
     ' | (
-        # If JSONL, pipe the awk output through jq. Otherwise, append directly to file.
         if [[ "$FORMAT" == "jsonl" ]]; then
             jq -R -c '
                 split("\t") | {

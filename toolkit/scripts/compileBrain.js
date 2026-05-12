@@ -1,5 +1,5 @@
 import fs from 'node:fs';
-import path from 'path';
+import path from 'node:path';
 import readline from 'node:readline';
 import { fileURLToPath } from 'node:url';
 import nlp from 'compromise';
@@ -12,46 +12,27 @@ const OUTPUT_FILE = path.resolve(__dirname, '../dist/translationBrain.json');
 const brain = {};
 
 const posMap = {
-    'verb': 'Verb', 
-    'transitive verb': 'Verb', 
-    'intransitive verb': 'Verb',
-    'noun': 'Noun', 
-    'masculine noun': 'Noun', 
-    'feminine noun': 'Noun',
-    'adjective': 'Adjective',
-    'adverb': 'Adverb',
-    'preposition': 'Preposition',
-    'pronoun': 'Pronoun',
-    'conjunction': 'Conjunction',
-    'number': 'Value',
-    'num': 'Value'
+    'verb': 'Verb', 'transitive verb': 'Verb', 'intransitive verb': 'Verb',
+    'noun': 'Noun', 'masculine noun': 'Noun', 'feminine noun': 'Noun',
+    'adjective': 'Adjective', 'adverb': 'Adverb', 'preposition': 'Preposition',
+    'pronoun': 'Pronoun', 'conjunction': 'Conjunction', 'number': 'Value', 'num': 'Value',
+    'article': 'Determiner', 'art': 'Determiner', 
+    'definite article': 'Determiner', 'indefinite article': 'Determiner'
 };
 
 // Helper: Safely add a word pair to the brain, stripping dictionary typos (e.g. bleu(e -> bleue)
 function addWord(eng, inglisce, pos) {
     if (!eng || !inglisce) return;
     
-    let cleanEng = eng.toLowerCase().trim();
-    let cleanIng = inglisce.replace(/[.,!?()[\]{}]/g, '').trim();
+    const cleanEng = eng.toLowerCase().trim();
+    const cleanIng = inglisce.replace(/[.,!?()[\]{}]/g, '').trim();
 
     brain[cleanEng] = brain[cleanEng] || {};
-    // Prevent overwriting if a form is already registered
     brain[cleanEng][pos] = brain[cleanEng][pos] || cleanIng;
 }
 
-// Helper: Apply a dictionary suffix array (e.g., "-s" or full word "circuls")
-function applyForm(baseInglisce, modifier) {
-    if (!modifier) return null;
-    if (modifier.startsWith('-')) {
-        // e.g. base: "þrîve", modifier: "-s" -> "þrîves"
-        return baseInglisce + modifier.slice(1);
-    }
-    // If it's not a hyphenated suffix, it's an explicit full spelling
-    return modifier;
-}
-
 async function compile() {
-    console.log('🧠 Compiling Translation Brain with Pre-Computed Morphology...');
+    console.log('🧠 Compiling Translation Brain with Explicit Morphology...');
 
     if (!fs.existsSync(JSONL_FILE)) {
         console.error(`❌ JSONL file not found at ${JSONL_FILE}!`);
@@ -75,27 +56,33 @@ async function compile() {
         // 1. Always map the base word
         addWord(engWord, inglisceWord, posCategory);
 
-        // 2. Pre-compute and map VERBS
+        // 2. Map Verbs
         if (posCategory === 'Verb' && conjugations.length > 0) {
-            let doc = nlp(engWord);
-            let conj = doc.verbs().conjugate()[0]; // Gets English variations
+            const doc = nlp(engWord);
+            const conj = doc.verbs().conjugate()[0]; // Gets English variations
 
             if (conj) {
-                // Assuming standard dictionary metadata: [0] = present/plural, [1] = past, [2] = gerund
-                addWord(conj.PresentTense, applyForm(inglisceWord, conjugations[0]), 'Verb');
-                addWord(conj.PastTense, applyForm(inglisceWord, conjugations[1]), 'Verb');
-                addWord(conj.Gerund, applyForm(inglisceWord, conjugations[2]), 'Verb');
+                // [0] = present 3rd (-s), [1] = past (-ed), [last] = gerund (-ing)
+                addWord(conj.PresentTense, conjugations[0], 'Verb');
+                
+                if (conjugations.length >= 2) {
+                    addWord(conj.PastTense, conjugations[1], 'Verb');
+                }
+                
+                if (conjugations.length >= 3) {
+                    // Always grab the last item in the array for the Gerund
+                    addWord(conj.Gerund, conjugations[conjugations.length - 1], 'Verb');
+                }
             }
         }
 
-        // 3. Pre-compute and map NOUNS
+        // 3. Map Nouns (Plurals)
         if (posCategory === 'Noun' && conjugations.length > 0) {
-            let doc = nlp(engWord);
-            let englishPlural = doc.nouns().toPlural().text('normal');
+            const doc = nlp(engWord);
+            const englishPlural = doc.nouns().toPlural().text('normal');
 
             if (englishPlural) {
-                // Assuming standard dictionary metadata: [0] = plural form
-                addWord(englishPlural, applyForm(inglisceWord, conjugations[0]), 'Noun');
+                addWord(englishPlural, conjugations[0], 'Noun');
             }
         }
     }

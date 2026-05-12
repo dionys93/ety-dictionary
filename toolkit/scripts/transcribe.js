@@ -35,7 +35,6 @@ console.log(`🧠 Loading Translation Brain...`);
 const brain = JSON.parse(fs.readFileSync(brainPath, 'utf8'));
 const text = fs.readFileSync(inputFile, 'utf8');
 
-// Helper function to resolve the correct POS translation
 const getReplacement = (term, brainEntry) => {
     if (term.has('#Noun') && brainEntry.Noun) return brainEntry.Noun;
     if (term.has('#Verb') && brainEntry.Verb) return brainEntry.Verb;
@@ -51,43 +50,15 @@ const getReplacement = (term, brainEntry) => {
 console.log(`🤖 Transcribing: ${inputFile}...`);
 const doc = nlp(text);
 
-// Iterate through every word in the document
 doc.terms().forEach((term) => {
     const normal = term.text('normal');
-    let lookupWord = normal;
-    let isPluralNoun = false;
+    
+    // Exact 1:1 lookup
+    if (brain[normal]) {
+        const replacement = getReplacement(term, brain[normal]);
 
-    // --- MORPHOLOGY LOGIC ---
-    if (!brain[lookupWord] && term.has('#Plural')) {
-        // BUGFIX: Use .clone() to keep the original sentence context!
-        let singular = term.clone().nouns().toSingular().text('normal');
-        
-        // Hard fallback just in case compromise still fails
-        if (!singular && lookupWord.endsWith('s')) {
-            singular = lookupWord.slice(0, -1);
-        }
-
-        if (singular && brain[singular]) {
-            lookupWord = singular;
-            isPluralNoun = true;
-        }
-    }
-
-    // Check if we found a match (either base word or singular root)
-    if (brain[lookupWord]) {
-        let replacement = getReplacement(term, brain[lookupWord]);
-
+        // Replace while preserving surrounding commas/quotes natively
         if (replacement) {
-            // --- SANITIZER ---
-            // Strip rogue dictionary punctuation
-            replacement = replacement.replace(/[.,!?()[\]{}]/g, '');
-
-            // --- RE-APPLY MORPHOLOGY ---
-            if (isPluralNoun) {
-                replacement += 's';
-            }
-
-            // Apply replacement while preserving original casing and sentence punctuation
             term.replaceWith(replacement, { keepTags: true, keepCase: true });
         }
     }
