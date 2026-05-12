@@ -6,8 +6,6 @@ import nlp from 'compromise';
 const args = process.argv.slice(2);
 const inputFile = args[0];
 
-// Default output path if the user only provides an input file
-// Note: import.meta.dirname replaces __dirname in modern Node.js ES modules
 const defaultOut = path.join(import.meta.dirname, '..', 'dist', 'test_transcription.txt');
 const outputFile = args[1] || defaultOut;
 
@@ -42,6 +40,7 @@ const getReplacement = (term, brainEntry) => {
     if (term.has('#Noun') && brainEntry.Noun) return brainEntry.Noun;
     if (term.has('#Verb') && brainEntry.Verb) return brainEntry.Verb;
     if (term.has('#Adjective') && brainEntry.Adjective) return brainEntry.Adjective;
+    if (term.has('#Value') && brainEntry.Value) return brainEntry.Value;
     
     // Fallback: grab the first available translation
     const firstKey = Object.keys(brainEntry)[0];
@@ -54,15 +53,41 @@ const doc = nlp(text);
 
 // Iterate through every word in the document
 doc.terms().forEach((term) => {
-    // Get the normalized version of the word (lowercase, stripped of punctuation)
     const normal = term.text('normal');
-    
-    // Check if the word exists in our compiled dictionary
-    if (brain[normal]) {
-        const replacement = getReplacement(term, brain[normal]);
+    let lookupWord = normal;
+    let isPluralNoun = false;
 
-        // Apply replacement while preserving original casing and whitespace
+    // --- MORPHOLOGY LOGIC ---
+    if (!brain[lookupWord] && term.has('#Plural')) {
+        // BUGFIX: Use .clone() to keep the original sentence context!
+        let singular = term.clone().nouns().toSingular().text('normal');
+        
+        // Hard fallback just in case compromise still fails
+        if (!singular && lookupWord.endsWith('s')) {
+            singular = lookupWord.slice(0, -1);
+        }
+
+        if (singular && brain[singular]) {
+            lookupWord = singular;
+            isPluralNoun = true;
+        }
+    }
+
+    // Check if we found a match (either base word or singular root)
+    if (brain[lookupWord]) {
+        let replacement = getReplacement(term, brain[lookupWord]);
+
         if (replacement) {
+            // --- SANITIZER ---
+            // Strip rogue dictionary punctuation
+            replacement = replacement.replace(/[.,!?()[\]{}]/g, '');
+
+            // --- RE-APPLY MORPHOLOGY ---
+            if (isPluralNoun) {
+                replacement += 's';
+            }
+
+            // Apply replacement while preserving original casing and sentence punctuation
             term.replaceWith(replacement, { keepTags: true, keepCase: true });
         }
     }

@@ -25,7 +25,9 @@ const posMap = {
     'adverb': 'Adverb',
     'preposition': 'Preposition',
     'pronoun': 'Pronoun',
-    'conjunction': 'Conjunction'
+    'conjunction': 'Conjunction',
+    'number': 'Value',
+    'num': 'Value'
 };
 
 async function compile() {
