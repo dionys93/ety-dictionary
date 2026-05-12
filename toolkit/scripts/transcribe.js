@@ -2,36 +2,17 @@ import fs from 'fs';
 import path from 'path';
 import nlp from 'compromise';
 
-// 1. Capture CLI Arguments
 const args = process.argv.slice(2);
 const inputFile = args[0];
-
 const defaultOut = path.join(import.meta.dirname, '..', 'dist', 'test_transcription.txt');
 const outputFile = args[1] || defaultOut;
 
 if (!inputFile) {
     console.error('❌ Error: Missing input file.');
-    console.log('Usage: node scripts/transcribe.js <path/to/input.txt> [path/to/output.txt]');
     process.exit(1);
 }
 
-// 2. Define Paths
 const brainPath = path.join(import.meta.dirname, '..', 'dist', 'translationBrain.json');
-
-// 3. Validation Checks
-if (!fs.existsSync(inputFile)) {
-    console.error(`❌ Error: Cannot find input file at ${inputFile}`);
-    process.exit(1);
-}
-
-if (!fs.existsSync(brainPath)) {
-    console.error('❌ Error: translationBrain.json is missing.');
-    console.log('👉 Tip: Run `node scripts/compileBrain.js` first.');
-    process.exit(1);
-}
-
-// 4. Load Data
-console.log(`🧠 Loading Translation Brain...`);
 const brain = JSON.parse(fs.readFileSync(brainPath, 'utf8'));
 const text = fs.readFileSync(inputFile, 'utf8');
 
@@ -39,37 +20,46 @@ const getReplacement = (term, brainEntry) => {
     if (term.has('#Noun') && brainEntry.Noun) return brainEntry.Noun;
     if (term.has('#Verb') && brainEntry.Verb) return brainEntry.Verb;
     if (term.has('#Adjective') && brainEntry.Adjective) return brainEntry.Adjective;
+    if (term.has('#Determiner') && brainEntry.Determiner) return brainEntry.Determiner;
     if (term.has('#Value') && brainEntry.Value) return brainEntry.Value;
+    if (term.has('#Preposition') && brainEntry.Preposition) return brainEntry.Preposition;
+    if (term.has('#Pronoun') && brainEntry.Pronoun) return brainEntry.Pronoun;
+    if (term.has('#Adverb') && brainEntry.Adverb) return brainEntry.Adverb;
     
-    // Fallback: grab the first available translation
-    const firstKey = Object.keys(brainEntry)[0];
-    return brainEntry[firstKey];
+    // Fallback: If dictionary only has one definition, use it (unless NLP strictly forbids it)
+    const keys = Object.keys(brainEntry);
+    if (keys.length === 1) {
+        const onlyPos = keys[0];
+        if (onlyPos === 'Verb' && term.has('#Noun')) return null;
+        if (onlyPos === 'Noun' && term.has('#Verb')) return null;
+        return brainEntry[onlyPos];
+    }
+    
+    return brainEntry[keys[0]];
 };
 
-// 5. NLP Parsing & Transcription
 console.log(`🤖 Transcribing: ${inputFile}...`);
 const doc = nlp(text);
 
 doc.terms().forEach((term) => {
     const normal = term.text('normal');
     
-    // Exact 1:1 lookup
     if (brain[normal]) {
-        const replacement = getReplacement(term, brain[normal]);
+        // --- 🔍 X-RAY DEBUGGER ---
+        if (normal === 'record' || normal === 'object' || normal === 'the') {
+            console.log(`\n🔍 X-RAY: '${normal}'`);
+            console.log(`   ↳ Context Tags:`, term.json()[0].terms[0].tags);
+            console.log(`   ↳ Dictionary Data:`, brain[normal]);
+        }
 
-        // Replace while preserving surrounding commas/quotes natively
+        const replacement = getReplacement(term, brain[normal]);
         if (replacement) {
             term.replaceWith(replacement, { keepTags: true, keepCase: true });
         }
     }
 });
 
-// 6. Save Output
 const outDir = path.dirname(outputFile);
-if (!fs.existsSync(outDir)) {
-    fs.mkdirSync(outDir, { recursive: true });
-}
-
+if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 fs.writeFileSync(outputFile, doc.text(), 'utf8');
-console.log(`✅ Transcription complete!`);
-console.log(`📄 Saved to: ${outputFile}`);
+console.log(`\n✅ Transcription complete! Saved to: ${outputFile}`);

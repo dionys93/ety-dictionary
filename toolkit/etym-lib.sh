@@ -1163,6 +1163,11 @@ etym-flatten() {
             pos_map["tr v"]="transitive verb"; pos_map["conj"]="conjunction"; 
             pos_map["adj"]="adjective"; pos_map["prep"]="preposition"; 
             pos_map["pron"]="pronoun"; pos_map["adv"]="adverb";
+            
+            # Added your article and number tags!
+            pos_map["defin"]="definite article"; pos_map["indefin"]="indefinite article";
+            pos_map["def art"]="definite article"; pos_map["indef art"]="indefinite article";
+            pos_map["art"]="article"; pos_map["num"]="number";
         }
         
         function extract_core(line, stripped, comma_parts, n_comma, final_part, words) {
@@ -1175,7 +1180,6 @@ etym-flatten() {
             return words[1]
         }
 
-        # Translates suffix logic into explicit forms natively in Awk
         function resolve_form(form, base, ing_base, is_ing,    res) {
             gsub(/[\(\),]/, "", form)
             if (substr(form, 1, 1) == "-") {
@@ -1200,24 +1204,20 @@ etym-flatten() {
                     verbose_pos = (pos in pos_map) ? pos_map[pos] : pos
                     
                     temp_line = $i; sub(/^[ \t]+/, "", temp_line); sub(/^to[ \t]+/, "", temp_line); sub(/\(([a-z ]+(, [a-z ]+)*)\)/, "", temp_line) 
-                    gsub(/\[[A-Z]+\]/, "", temp_line)
+                    gsub(/\[[A-Z]+\]/, "", temp_line) 
                     n_words = split(temp_line, words, " "); target = words[1]; gsub(/,$/, "", target)
                     
-                    # --- AWK MORPHOLOGY PIPELINE ---
                     conj_list = ""
-                    
                     if (index(verbose_pos, "verb") > 0) {
                         base = target; ing_base = base
                         if (match(base, /e$/)) ing_base = substr(base, 1, length(base)-1)
-                        
                         for(j=2; j<=n_words; j++) {
                             w = words[j]; if (w == "") continue
                             is_ing = (j == n_words) ? 1 : 0
                             resolved = resolve_form(w, base, ing_base, is_ing)
                             conj_list = (conj_list == "") ? resolved : (conj_list " " resolved)
                         }
-                    } 
-                    else if (index(verbose_pos, "noun") > 0) {
+                    } else if (index(verbose_pos, "noun") > 0) {
                         base = target
                         for(j=2; j<=n_words; j++) {
                             w = words[j]; if (w == "") continue
@@ -1230,8 +1230,7 @@ etym-flatten() {
                             resolved = resolve_form(w, temp_base, temp_base, 0)
                             conj_list = (conj_list == "") ? resolved : (conj_list " " resolved)
                         }
-                    } 
-                    else {
+                    } else {
                         for(j=2; j<=n_words; j++) {
                             w = words[j]; if (w == "") continue
                             temp_base = target
@@ -1243,14 +1242,19 @@ etym-flatten() {
                             conj_list = (conj_list == "") ? resolved : (conj_list " " resolved)
                         }
                     }
-                    
                     conj = conj_list
                     break
                 }
             }
 
-            for(i=1; i<=NF; i++) { if ($i ~ /\[ME\]/) { me_word = extract_core($i); break; } }
+            # --- THE MISSING PRIORITY LOGIC ---
+            # 1. Inline POS Line 
+            if (match($pos_line_idx, /\[[A-Z]+\]/)) { me_word = extract_core($pos_line_idx) }
+            # 2. [ME] Line
+            if (me_word == "") { for(i=1; i<=NF; i++) { if ($i ~ /\[ME\]/) { me_word = extract_core($i); break; } } }
+            # 3. [MI] Line
             if (me_word == "") { for(i=1; i<=NF; i++) { if ($i ~ /\[MI\]/) { me_word = extract_core($i); break; } } }
+            # 4. Fallback
             if (me_word == "" && pos_line_idx > 1) { me_word = extract_core($(pos_line_idx - 1)) }
 
             if (verbose_pos != "" && lang != "" && target != "") {

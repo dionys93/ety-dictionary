@@ -43,7 +43,7 @@
 {"me_word":"terminator","inglisce_word":"terminaitor","pos":"masculine noun","conjugations":["terminaitors"]}
 {"me_word":"m","inglisce_word":"terminal","pos":"adjective","conjugations":["terminals"]}
 {"me_word":"terminable","inglisce_word":"têrminable","pos":"adjective","conjugations":[]}
-{"me_word":"","inglisce_word":"terminus","pos":"masculine noun","conjugations":[]}
+{"me_word":"terminus","inglisce_word":"terminus","pos":"masculine noun","conjugations":[]}
 {"me_word":"taser","inglisce_word":"tâsor","pos":"masculine noun","conjugations":["tâsors"]}
 {"me_word":"taze","inglisce_word":"tâse","pos":"verb","conjugations":["tâses","tâsed","tâsing"]}
 {"me_word":"together","inglisce_word":"togaiþre","pos":"adjective","conjugations":[]}
@@ -89,7 +89,7 @@
 {"me_word":"timely","inglisce_word":"tîmly","pos":"adjective","conjugations":[]}
 {"me_word":"tomb","inglisce_word":"tume","pos":"masculine noun","conjugations":["túms"]}
 {"me_word":"tombstone","inglisce_word":"túmstone","pos":"masculine noun","conjugations":["túmstoans"]}
-{"me_word":"two","inglisce_word":"tue","pos":"num","conjugations":[]}
+{"me_word":"two","inglisce_word":"tue","pos":"number","conjugations":[]}
 {"me_word":"twice","inglisce_word":"tuîce","pos":"adverb","conjugations":[]}
 {"me_word":"tomato","inglisce_word":"tomâto","pos":"feminine noun","conjugations":["tomâtos"]}
 {"me_word":"tale","inglisce_word":"tâle","pos":"masculine noun","conjugations":["tâls"]}
@@ -129,14 +129,14 @@
 {"me_word":"tearful","inglisce_word":"tiarful","pos":"adjective","conjugations":["tiarfully","tiarfulness"]}
 {"me_word":"teardrop","inglisce_word":"tiardrop","pos":"masculine noun","conjugations":["tiardrops"]}
 {"me_word":"tearjerker","inglisce_word":"tiarjercor","pos":"masculine noun","conjugations":["tiarjercors"]}
-{"me_word":"tukana","inglisce_word":"toucan","pos":"masculine noun","conjugations":["toucans"]}
+{"me_word":"toucan","inglisce_word":"toucan","pos":"masculine noun","conjugations":["toucans"]}
 {"me_word":"Tuesday","inglisce_word":"Túsdaie","pos":"masculine noun","conjugations":["Túsdays"]}
 {"me_word":"though","inglisce_word":"þó","pos":"adverb","conjugations":[]}
 {"me_word":"take","inglisce_word":"tâche","pos":"verb","conjugations":["tâcs","tôc","tâcan","tâching"]}
 {"me_word":"take","inglisce_word":"tâc","pos":"masculine noun","conjugations":["taix"]}
 {"me_word":"takeaway","inglisce_word":"tâcaüaie","pos":"adjective","conjugations":["tâcaüays"]}
 {"me_word":"takeout","inglisce_word":"tâcaut","pos":"adjective","conjugations":["tâcauts"]}
-{"me_word":"the","inglisce_word":"þe","pos":"defin","conjugations":["þa","þi"]}
+{"me_word":"the","inglisce_word":"þe","pos":"definite article","conjugations":["þa","þi"]}
 {"me_word":"torture","inglisce_word":"torțure","pos":"masculine noun","conjugations":[]}
 {"me_word":"torture","inglisce_word":"torțure","pos":"verb","conjugations":["torțures","torțured","torțuring"]}
 {"me_word":"transmit","inglisce_word":"transmitte","pos":"verb","conjugations":["transmits","transmitted","transmitting"]}
@@ -275,7 +275,7 @@
 {"me_word":"traumatize","inglisce_word":"trámatyse","pos":"verb","conjugations":["trámatyses","trámatysed","trámatysing"]}
 {"me_word":"tense","inglisce_word":"tense","pos":"adjective","conjugations":["tensear","tensest"]}
 {"me_word":"tense","inglisce_word":"tense","pos":"verb","conjugations":["tenses","tensed","tensing"]}
-{"me_word":"tensio","inglisce_word":"tension","pos":"masculine noun","conjugations":["tensions"]}
+{"me_word":"tension","inglisce_word":"tension","pos":"masculine noun","conjugations":["tensions"]}
 {"me_word":"tensity","inglisce_word":"tensetie","pos":"masculine noun","conjugations":["tensetis"]}
 {"me_word":"tensile","inglisce_word":"tensil","pos":"adjective","conjugations":[]}
 {"me_word":"tense","inglisce_word":"tense","pos":"masculine noun","conjugations":["tenses"]}
@@ -445,7 +445,7 @@
 {"me_word":"apologia","inglisce_word":"apológia","pos":"feminine noun","conjugations":["apológias"]}
 {"me_word":"amuse","inglisce_word":"amuse","pos":"verb","conjugations":["amuses","amused","amusing"]}
 {"me_word":"amusable","inglisce_word":"amúsable","pos":"adjective","conjugations":[]}
-{"me_word":"","inglisce_word":"amusement","pos":"feminine noun","conjugations":["amusements"]}
+{"me_word":"amusement","inglisce_word":"amusement","pos":"feminine noun","conjugations":["amusements"]}
 {"me_word":"attribute","inglisce_word":"attribute","pos":"verb","conjugations":["attributes","attributed","attributing"]}
 {"me_word":"attribution","inglisce_word":"attribúcion","pos":"feminine noun","conjugations":["attribúcions"]}
 {"me_word":"attributive","inglisce_word":"attributif","pos":"adjective","conjugations":["attributifvly"]}
@@ -650,7 +650,7 @@
 {"me_word":"arrogant","inglisce_word":"ârrogant","pos":"adjective","conjugations":[]}
 {"me_word":"arrogance","inglisce_word":"ârrogance","pos":"masculine noun","conjugations":[]}
 {"me_word":"adroit","inglisce_word":"adroite","pos":"adjective","conjugations":[]}
-{"me_word":"accentus","inglisce_word":"accent","pos":"masculine noun","conjugations":["accents"]}
+{"me_word":"accent","inglisce_word":"accent","pos":"masculine noun","conjugations":["accents"]}
 {"me_word":"accent","inglisce_word":"accente","pos":"verb","conjugations":["accentes","accented","accenting"]}
 {"me_word":"accentual","inglisce_word":"accențual","pos":"adjective","conjugations":[]}
 {"me_word":"accentuate","inglisce_word":"accențuait","pos":"verb","conjugations":["accențuaits","accențuaitd","accențuaiting"]}
@@ -744,7 +744,7 @@
 {"me_word":"anus","inglisce_word":"ânus","pos":"masculine noun","conjugations":["ânuses"]}
 {"me_word":"anal","inglisce_word":"ânal","pos":"adjective","conjugations":["ânally"]}
 {"me_word":"assail","inglisce_word":"assaile","pos":"verb","conjugations":["assailes","assailed","assailing"]}
-{"me_word":"assailir","inglisce_word":"assailant","pos":"feminine noun","conjugations":["assailants"]}
+{"me_word":"assailant","inglisce_word":"assailant","pos":"feminine noun","conjugations":["assailants"]}
 {"me_word":"salient","inglisce_word":"sailient","pos":"adjective","conjugations":["sailients"]}
 {"me_word":"saliency","inglisce_word":"sailiencie","pos":"masculine noun","conjugations":["sailiencis"]}
 {"me_word":"salience","inglisce_word":"sailience","pos":"masculine noun","conjugations":["sailiences"]}
@@ -841,7 +841,7 @@
 {"me_word":"association","inglisce_word":"assoçiâcion","pos":"feminine noun","conjugations":["assoçiâcions"]}
 {"me_word":"associative","inglisce_word":"assoçiatif","pos":"adjective","conjugations":[]}
 {"me_word":"associate","inglisce_word":"assoçiat","pos":"adjective","conjugations":[]}
-{"me_word":"adamantem","inglisce_word":"adamant","pos":"adjective","conjugations":["adamants","adamantly"]}
+{"me_word":"m","inglisce_word":"adamant","pos":"adjective","conjugations":["adamants","adamantly"]}
 {"me_word":"adamantine","inglisce_word":"adamàntine","pos":"adjective","conjugations":["adamàntines"]}
 {"me_word":"alligator","inglisce_word":"aligâtre","pos":"masculine noun","conjugations":["aligâtars"]}
 {"me_word":"appeal","inglisce_word":"appiele","pos":"verb","conjugations":["appieles","appieled","appieling"]}
@@ -850,7 +850,7 @@
 {"me_word":"athlete","inglisce_word":"aþlite","pos":"masculine noun","conjugations":["aþliets"]}
 {"me_word":"athletic","inglisce_word":"aþletic","pos":"adjective","conjugations":["aþletics"]}
 {"me_word":"athleticism","inglisce_word":"aþleticism","pos":"feminine noun","conjugations":[]}
-{"me_word":"ἀντί","inglisce_word":"anti","pos":"preposition","conjugations":[]}
+{"me_word":"anti","inglisce_word":"anti","pos":"preposition","conjugations":[]}
 {"me_word":"ale","inglisce_word":"eale","pos":"masculine noun","conjugations":["eals"]}
 {"me_word":"alehouse","inglisce_word":"eal-hause","pos":"masculine noun","conjugations":["eal-hauses"]}
 {"me_word":"attach","inglisce_word":"attac̃e","pos":"verb","conjugations":["attac̃es","attac̃ed","attac̃ing"]}
@@ -921,7 +921,7 @@
 {"me_word":"instructive","inglisce_word":"instructif","pos":"adjective","conjugations":[]}
 {"me_word":"instructor","inglisce_word":"instructeur","pos":"feminine noun","conjugations":["instructeurs"]}
 {"me_word":"implore","inglisce_word":"implóre","pos":"verb","conjugations":["implóres","implóred","implóring"]}
-{"me_word":"invisibilis","inglisce_word":"invisible","pos":"adjective","conjugations":["invisibly"]}
+{"me_word":"invisible","inglisce_word":"invisible","pos":"adjective","conjugations":["invisibly"]}
 {"me_word":"invisibility","inglisce_word":"invisibilatie","pos":"feminine noun","conjugations":["invisibilatis"]}
 {"me_word":"insectum","inglisce_word":"insect","pos":"masculine noun","conjugations":["insecs"]}
 {"me_word":"insectivore","inglisce_word":"insèctivore","pos":"feminine noun","conjugations":["insèctivoars"]}
@@ -949,7 +949,7 @@
 {"me_word":"inspection","inglisce_word":"inspeccion","pos":"feminine noun","conjugations":[]}
 {"me_word":"inspectable","inglisce_word":"inspectable","pos":"adjective","conjugations":[]}
 {"me_word":"impulse","inglisce_word":"impulse","pos":"masculine noun","conjugations":["impulses"]}
-{"me_word":"impulsio","inglisce_word":"impulsion","pos":"feminine noun","conjugations":["impulsions"]}
+{"me_word":"impulsion","inglisce_word":"impulsion","pos":"feminine noun","conjugations":["impulsions"]}
 {"me_word":"impulsive","inglisce_word":"impulsif","pos":"adjective","conjugations":[]}
 {"me_word":"impel","inglisce_word":"impelle","pos":"verb","conjugations":["impelles","impelled","impelling"]}
 {"me_word":"inquire","inglisce_word":"inquîer","pos":"verb","conjugations":["inquîres","inquîred","inquîering"]}
@@ -959,7 +959,7 @@
 {"me_word":"inquisitive","inglisce_word":"inqüisitif","pos":"adjective","conjugations":["inqüisitifvly"]}
 {"me_word":"inquisitor","inglisce_word":"inqüisitor","pos":"feminine noun","conjugations":["inqüisitors"]}
 {"me_word":"isthmus","inglisce_word":"ïsmus","pos":"masculine noun","conjugations":["ïsmuses"]}
-{"me_word":"intensus","inglisce_word":"intense","pos":"adjective","conjugations":[]}
+{"me_word":"intense","inglisce_word":"intense","pos":"adjective","conjugations":[]}
 {"me_word":"intensive","inglisce_word":"intensif","pos":"adjective","conjugations":["intensifvly","intensifness"]}
 {"me_word":"intensity","inglisce_word":"intensetie","pos":"feminine noun","conjugations":["intensetis"]}
 {"me_word":"intensify","inglisce_word":"intènsifae","pos":"verb","conjugations":["intènsifaes","intènsifaed","intènsifafyhing"]}
@@ -971,7 +971,7 @@
 {"me_word":"invocation","inglisce_word":"invocâcion","pos":"feminine noun","conjugations":["invocâcions"]}
 {"me_word":"impress","inglisce_word":"impresse","pos":"verb","conjugations":["impresses","impressed","impressing"]}
 {"me_word":"impress","inglisce_word":"impress","pos":"masculine noun","conjugations":["impresses"]}
-{"me_word":"impressionem","inglisce_word":"impression","pos":"feminine noun","conjugations":["impressions","impressionable"]}
+{"me_word":"impression","inglisce_word":"impression","pos":"feminine noun","conjugations":["impressions","impressionable"]}
 {"me_word":"impressive","inglisce_word":"impressif","pos":"adjective","conjugations":[]}
 {"me_word":"interfere","inglisce_word":"interfier","pos":"verb","conjugations":["interfires","interfired","interfiering"]}
 {"me_word":"interference","inglisce_word":"interfirence","pos":"feminine noun","conjugations":["interfirences"]}
@@ -1019,7 +1019,7 @@
 {"me_word":"intentionality","inglisce_word":"intencionaletie","pos":"feminine noun","conjugations":["intencionaletis"]}
 {"me_word":"inhibit","inglisce_word":"inhibite","pos":"verb","conjugations":["inhibites","inhibited","inhibiting"]}
 {"me_word":"inhibition","inglisce_word":"inhibicion","pos":"feminine noun","conjugations":["inhibicions"]}
-{"me_word":"","inglisce_word":"inhibitor","pos":"feminine noun","conjugations":["inhibitors"]}
+{"me_word":"inhibitor","inglisce_word":"inhibitor","pos":"feminine noun","conjugations":["inhibitors"]}
 {"me_word":"inhibitory","inglisce_word":"inhibitory","pos":"adjective","conjugations":[]}
 {"me_word":"investigate","inglisce_word":"invèstigait","pos":"verb","conjugations":["invèstigaits","invèstigaited","invèstigaiting"]}
 {"me_word":"investigator","inglisce_word":"invèstigaitor","pos":"feminine noun","conjugations":["invèstigaitors"]}
@@ -1108,8 +1108,8 @@
 {"me_word":"Iran","inglisce_word":"Irane","pos":"feminine noun","conjugations":[]}
 {"me_word":"Iranian","inglisce_word":"irânian","pos":"adjective","conjugations":[]}
 {"me_word":"ivory","inglisce_word":"îvry;","pos":"adjective","conjugations":["îvrie","îvris"]}
-{"me_word":"imponentem","inglisce_word":"impotent","pos":"adjective","conjugations":[]}
-{"me_word":"impotentia","inglisce_word":"impotence","pos":"masculine noun","conjugations":[]}
+{"me_word":"impotent","inglisce_word":"impotent","pos":"adjective","conjugations":[]}
+{"me_word":"impotence","inglisce_word":"impotence","pos":"masculine noun","conjugations":[]}
 {"me_word":"insane","inglisce_word":"insân","pos":"adjective","conjugations":[]}
 {"me_word":"insanity","inglisce_word":"insanetie","pos":"feminine noun","conjugations":["insanetis"]}
 {"me_word":"Iowa","inglisce_word":"Îoua","pos":"masculine noun","conjugations":[]}
@@ -1141,7 +1141,7 @@
 {"me_word":"imaginarily","inglisce_word":"imaginârily","pos":"adverb","conjugations":[]}
 {"me_word":"imaginable","inglisce_word":"imàginable","pos":"adjective","conjugations":["imàginably"]}
 {"me_word":"imagination","inglisce_word":"imaginâcion","pos":"feminine noun","conjugations":["imaginâcions"]}
-{"me_word":"imago","inglisce_word":"image","pos":"masculine noun","conjugations":["images"]}
+{"me_word":"image","inglisce_word":"image","pos":"masculine noun","conjugations":["images"]}
 {"me_word":"image","inglisce_word":"image","pos":"verb","conjugations":["images","imaged","imaging"]}
 {"me_word":"interspace","inglisce_word":"intrespâce","pos":"masculine noun","conjugations":["intrespâces"]}
 {"me_word":"indeclinable","inglisce_word":"indeclînable","pos":"adjective","conjugations":["indeclînableabils"]}
@@ -1158,7 +1158,7 @@
 {"me_word":"impactful","inglisce_word":"impàctful","pos":"adjective","conjugations":[]}
 {"me_word":"inaccurate","inglisce_word":"inaccurat","pos":"adjective","conjugations":[]}
 {"me_word":"inaccuracy","inglisce_word":"inaccuracie","pos":"feminine noun","conjugations":["inaccuracis"]}
-{"me_word":"","inglisce_word":"into","pos":"preposition","conjugations":[]}
+{"me_word":"into","inglisce_word":"into","pos":"preposition","conjugations":[]}
 {"me_word":"imparity","inglisce_word":"impairetie","pos":"feminine noun","conjugations":["impairetis"]}
 {"me_word":"incredible","inglisce_word":"incrèdible","pos":"adjective","conjugations":["incrèdibly"]}
 {"me_word":"isle","inglisce_word":"île","pos":"masculine noun","conjugations":["îals"]}
@@ -1180,12 +1180,12 @@
 {"me_word":"interpretation","inglisce_word":"interpretâcion","pos":"feminine noun","conjugations":["interpretâcions"]}
 {"me_word":"interpretive","inglisce_word":"intêpretif","pos":"adjective","conjugations":[]}
 {"me_word":"ignore","inglisce_word":"ignore","pos":"verb","conjugations":["ignores","ignored","ignoring"]}
-{"me_word":"ignorantia","inglisce_word":"ignorance","pos":"masculine noun","conjugations":[]}
-{"me_word":"ignorantem","inglisce_word":"ignorant","pos":"adjective","conjugations":[]}
+{"me_word":"ignorance","inglisce_word":"ignorance","pos":"masculine noun","conjugations":[]}
+{"me_word":"ignorant","inglisce_word":"ignorant","pos":"adjective","conjugations":[]}
 {"me_word":"implicate","inglisce_word":"implicait","pos":"verb","conjugations":["implicaits","implicaited","implicaiting"]}
 {"me_word":"implication","inglisce_word":"implicâcion","pos":"feminine noun","conjugations":["implicâcions"]}
 {"me_word":"implicative","inglisce_word":"implicaitif","pos":"adjective","conjugations":["implicatif"]}
-{"me_word":"implicitus","inglisce_word":"implicit","pos":"adjective","conjugations":["implicitly"]}
+{"me_word":"implicit","inglisce_word":"implicit","pos":"adjective","conjugations":["implicitly"]}
 {"me_word":"involve","inglisce_word":"invòlve","pos":"verb","conjugations":["invòlves","invòlved","invòlving"]}
 {"me_word":"involvement","inglisce_word":"invòlvement","pos":"feminine noun","conjugations":["invòlvements"]}
 {"me_word":"involution","inglisce_word":"involucion","pos":"feminine noun","conjugations":["involucions","involucional"]}
@@ -1354,7 +1354,7 @@
 {"me_word":"raid","inglisce_word":"râde","pos":"verb","conjugations":["râdes","râded","râding"]}
 {"me_word":"revolt","inglisce_word":"revolte","pos":"verb","conjugations":["revoltes","revolted","revolting"]}
 {"me_word":"revolt","inglisce_word":"revolte","pos":"feminine noun","conjugations":["revólts"]}
-{"me_word":"religio","inglisce_word":"religion","pos":"feminine noun","conjugations":["religions"]}
+{"me_word":"religion","inglisce_word":"religion","pos":"feminine noun","conjugations":["religions"]}
 {"me_word":"religiosity","inglisce_word":"religiossetie","pos":"feminine noun","conjugations":["religiossetis"]}
 {"me_word":"replenish","inglisce_word":"replenișe","pos":"verb","conjugations":["replenișes","replenișed","replenișing"]}
 {"me_word":"reign","inglisce_word":"reigne","pos":"masculine noun","conjugations":["reigns"]}
@@ -1393,7 +1393,7 @@
 {"me_word":"receipt","inglisce_word":"recite","pos":"feminine noun","conjugations":["recípts"]}
 {"me_word":"receivable","inglisce_word":"recívable","pos":"adjective","conjugations":["recívably"]}
 {"me_word":"recipient","inglisce_word":"recïpient","pos":"adjective","conjugations":["recïpients"]}
-{"me_word":"receptionem","inglisce_word":"reception","pos":"feminine noun","conjugations":["receptions"]}
+{"me_word":"reception","inglisce_word":"reception","pos":"feminine noun","conjugations":["receptions"]}
 {"me_word":"receptive","inglisce_word":"receptif","pos":"adjective","conjugations":["receptifvly"]}
 {"me_word":"receptacle","inglisce_word":"recèptacle","pos":"feminine noun","conjugations":["recèptacluls"]}
 {"me_word":"","inglisce_word":"receptre","pos":"feminine noun","conjugations":["receptors"]}
@@ -1418,7 +1418,7 @@
 {"me_word":"ridicule","inglisce_word":"rïdicule","pos":"masculine noun","conjugations":[]}
 {"me_word":"ridicule","inglisce_word":"rïdicule","pos":"verb","conjugations":["rïdicules","rïdiculed","rïdiculing"]}
 {"me_word":"ridiculous","inglisce_word":"ridiculus","pos":"adjective","conjugations":[]}
-{"me_word":"recorda","inglisce_word":"record","pos":"masculine noun","conjugations":["records"]}
+{"me_word":"record","inglisce_word":"record","pos":"masculine noun","conjugations":["records"]}
 {"me_word":"record","inglisce_word":"recorde","pos":"verb","conjugations":["recordes","recorded","recording"]}
 {"me_word":"recordation","inglisce_word":"recordâcion","pos":"feminine noun","conjugations":["recordâcions"]}
 {"me_word":"recordable","inglisce_word":"recórdable","pos":"adjective","conjugations":[]}
@@ -1438,10 +1438,10 @@
 {"me_word":"repudiatory","inglisce_word":"repúdiatory","pos":"adjective","conjugations":[]}
 {"me_word":"rebel","inglisce_word":"reble","pos":"adjective","conjugations":["rebels"]}
 {"me_word":"rebel","inglisce_word":"rebelle","pos":"verb","conjugations":["rebelles","rebelled","rebelling"]}
-{"me_word":"rebellionem","inglisce_word":"rebellion","pos":"feminine noun","conjugations":["rebellions"]}
+{"me_word":"rebellion","inglisce_word":"rebellion","pos":"feminine noun","conjugations":["rebellions"]}
 {"me_word":"rebellious","inglisce_word":"rebellieus","pos":"adjective","conjugations":[]}
 {"me_word":"repulse","inglisce_word":"repulse","pos":"verb","conjugations":["repulses","repulsed","repulsing"]}
-{"me_word":"repulsionem","inglisce_word":"repulsion","pos":"feminine noun","conjugations":["repulsions"]}
+{"me_word":"repulsion","inglisce_word":"repulsion","pos":"feminine noun","conjugations":["repulsions"]}
 {"me_word":"repulsive","inglisce_word":"repulsif","pos":"adjective","conjugations":[]}
 {"me_word":"rice","inglisce_word":"rîce","pos":"masculine noun","conjugations":[]}
 {"me_word":"rapture","inglisce_word":"rapțure","pos":"masculine noun","conjugations":["rapțurs"]}
@@ -1494,7 +1494,7 @@
 {"me_word":"replicate","inglisce_word":"replicat","pos":"adjective","conjugations":["replicats"]}
 {"me_word":"replication","inglisce_word":"replicâcion","pos":"feminine noun","conjugations":["replicâcions"]}
 {"me_word":"replicable","inglisce_word":"replicable","pos":"adjective","conjugations":[]}
-{"me_word":"replicare","inglisce_word":"replica","pos":"masculine noun","conjugations":["replicas"]}
+{"me_word":"replica","inglisce_word":"replica","pos":"masculine noun","conjugations":["replicas"]}
 {"me_word":"rinse","inglisce_word":"rince","pos":"verb","conjugations":["rinces","rinced","rincing"]}
 {"me_word":"rinse","inglisce_word":"rince","pos":"masculine noun","conjugations":["rinces"]}
 {"me_word":"reason","inglisce_word":"ríson","pos":"masculine noun","conjugations":["rísons"]}
@@ -1668,7 +1668,7 @@
 {"me_word":"release","inglisce_word":"reliesse","pos":"verb","conjugations":["reliesses","reliessed","reliessing"]}
 {"me_word":"release","inglisce_word":"reliesse","pos":"feminine noun","conjugations":["reliesses"]}
 {"me_word":"revenge","inglisce_word":"revenge","pos":"verb","conjugations":["revenges","revenged","revenging"]}
-{"me_word":"","inglisce_word":"revenge","pos":"feminine noun","conjugations":[]}
+{"me_word":"revenge","inglisce_word":"revenge","pos":"feminine noun","conjugations":[]}
 {"me_word":"reveue","inglisce_word":"revue","pos":"feminine noun","conjugations":["revús"]}
 {"me_word":"review","inglisce_word":"revue","pos":"verb","conjugations":["revues","revued","revuing"]}
 {"me_word":"real","inglisce_word":"rial","pos":"adjective","conjugations":[]}
@@ -1813,7 +1813,7 @@
 {"me_word":"gear","inglisce_word":"guire","pos":"masculine noun","conjugations":["guiars"]}
 {"me_word":"gear","inglisce_word":"guier","pos":"verb","conjugations":["guires","guired","guiering"]}
 {"me_word":"gorgeous","inglisce_word":"gorgeus","pos":"adjective","conjugations":["gorgeusly","gorgeusness"]}
-{"me_word":"gurges","inglisce_word":"gorge","pos":"masculine noun","conjugations":["gorges"]}
+{"me_word":"gorge","inglisce_word":"gorge","pos":"masculine noun","conjugations":["gorges"]}
 {"me_word":"gorge","inglisce_word":"gorge","pos":"verb","conjugations":["gorges","gorged","gorging"]}
 {"me_word":"ground","inglisce_word":"grônd","pos":"masculine noun","conjugations":["grônds"]}
 {"me_word":"ground","inglisce_word":"grônde","pos":"verb","conjugations":["grôndes","grônded","grônding"]}
@@ -1858,7 +1858,7 @@
 {"me_word":"gyration","inglisce_word":"gyrâcion","pos":"feminine noun","conjugations":["gyrâcions"]}
 {"me_word":"gyre","inglisce_word":"gŷre","pos":"masculine noun","conjugations":["gŷars"]}
 {"me_word":"gyre","inglisce_word":"gŷer","pos":"verb","conjugations":["gŷres","gŷred","gŷering"]}
-{"me_word":"grima","inglisce_word":"grimace","pos":"masculine noun","conjugations":["grimaces"]}
+{"me_word":"grimace","inglisce_word":"grimace","pos":"masculine noun","conjugations":["grimaces"]}
 {"me_word":"grimace","inglisce_word":"grimace","pos":"verb","conjugations":["grimaces","grimaced","grimacing"]}
 {"me_word":"gnu","inglisce_word":"ganoue","pos":"feminine noun","conjugations":["ganous"]}
 {"me_word":"grammar","inglisce_word":"gramere","pos":"masculine noun","conjugations":[]}
@@ -1867,7 +1867,7 @@
 {"me_word":"gram","inglisce_word":"grame","pos":"masculine noun","conjugations":["grams"]}
 {"me_word":"govern","inglisce_word":"governe","pos":"verb","conjugations":["governes","governed","governing"]}
 {"me_word":"governable","inglisce_word":"governable","pos":"adjective","conjugations":[]}
-{"me_word":"","inglisce_word":"governance","pos":"masculine noun","conjugations":[]}
+{"me_word":"governance","inglisce_word":"governance","pos":"masculine noun","conjugations":[]}
 {"me_word":"government","inglisce_word":"goverment","pos":"masculine noun","conjugations":["goverments"]}
 {"me_word":"governor","inglisce_word":"governor","pos":"masculine noun","conjugations":["govenor","governors"]}
 {"me_word":"grade","inglisce_word":"grâde","pos":"masculine noun","conjugations":["grâds"]}
@@ -1952,7 +1952,7 @@
 {"me_word":"foil","inglisce_word":"fouile","pos":"masculine noun","conjugations":["foyels"]}
 {"me_word":"foil","inglisce_word":"feuile","pos":"masculine noun","conjugations":["feuyels"]}
 {"me_word":"foil","inglisce_word":"feuile","pos":"verb","conjugations":["feuiles","feuiled","feuiling"]}
-{"me_word":"","inglisce_word":"for","pos":"preposition","conjugations":[]}
+{"me_word":"for","inglisce_word":"for","pos":"preposition","conjugations":[]}
 {"me_word":"fact","inglisce_word":"facte","pos":"masculine noun","conjugations":["facs"]}
 {"me_word":"factual","inglisce_word":"facțual","pos":"adjective","conjugations":[]}
 {"me_word":"factually","inglisce_word":"facțally","pos":"adverb","conjugations":[]}
@@ -2108,7 +2108,7 @@
 {"me_word":"fierce","inglisce_word":"fierce","pos":"adjective","conjugations":["fierçar","fiercest"]}
 {"me_word":"ferocious","inglisce_word":"feroceus","pos":"adjective","conjugations":["feroceussly"]}
 {"me_word":"ferocity","inglisce_word":"feroçatie","pos":"feminine noun","conjugations":["feroçatis"]}
-{"me_word":"fera","inglisce_word":"feral","pos":"adjective","conjugations":[]}
+{"me_word":"feral","inglisce_word":"feral","pos":"adjective","conjugations":[]}
 {"me_word":"fudge","inglisce_word":"foge","pos":"verb","conjugations":["foges","foged","foging"]}
 {"me_word":"fudge","inglisce_word":"foge","pos":"masculine noun","conjugations":[]}
 {"me_word":"floor","inglisce_word":"floure","pos":"masculine noun","conjugations":["flours"]}
@@ -2134,7 +2134,7 @@
 {"me_word":"floss","inglisce_word":"flòss","pos":"masculine noun","conjugations":["flòsses"]}
 {"me_word":"floss","inglisce_word":"flòsse","pos":"verb","conjugations":["flòsses","flòssed","flòssing"]}
 {"me_word":"fetch","inglisce_word":"faic̃e","pos":"verb","conjugations":["faic̃es","faic̃ed","faic̃ing"]}
-{"me_word":"","inglisce_word":"factor","pos":"masculine noun","conjugations":["factors"]}
+{"me_word":"factor","inglisce_word":"factor","pos":"masculine noun","conjugations":["factors"]}
 {"me_word":"factor","inglisce_word":"factore","pos":"verb","conjugations":["factores","factored","factoring"]}
 {"me_word":"factorial","inglisce_word":"factôrial","pos":"adjective","conjugations":["factôrially"]}
 {"me_word":"fable","inglisce_word":"fâble","pos":"masculine noun","conjugations":["fâbuls"]}
@@ -2148,7 +2148,7 @@
 {"me_word":"infamous","inglisce_word":"infamus","pos":"adjective","conjugations":[]}
 {"me_word":"fade","inglisce_word":"fâde","pos":"verb","conjugations":["fâdes","fâded","fâding"]}
 {"me_word":"fade","inglisce_word":"fâde","pos":"adjective","conjugations":["fâds"]}
-{"me_word":"fortia","inglisce_word":"force","pos":"masculine noun","conjugations":["forces"]}
+{"me_word":"force","inglisce_word":"force","pos":"masculine noun","conjugations":["forces"]}
 {"me_word":"force","inglisce_word":"force","pos":"verb","conjugations":["forces","forced","forcing"]}
 {"me_word":"firm","inglisce_word":"firm","pos":"adjective","conjugations":["firmar","firmest","firmly"]}
 {"me_word":"firm","inglisce_word":"firme","pos":"masculine noun","conjugations":["firms"]}
@@ -2299,7 +2299,7 @@
 {"me_word":"flank","inglisce_word":"flânc","pos":"masculine noun","conjugations":["flâncs"]}
 {"me_word":"feel","inglisce_word":"fiele","pos":"verb","conjugations":["fieles","felt","fieling"]}
 {"me_word":"feel","inglisce_word":"fiele","pos":"masculine noun","conjugations":["fiels"]}
-{"me_word":"","inglisce_word":"fox","pos":"masculine noun","conjugations":["foxes"]}
+{"me_word":"fox","inglisce_word":"fox","pos":"masculine noun","conjugations":["foxes"]}
 {"me_word":"fur","inglisce_word":"furre","pos":"masculine noun","conjugations":["furs"]}
 {"me_word":"fur","inglisce_word":"furre","pos":"verb","conjugations":["furs","furred","furring"]}
 {"me_word":"furry","inglisce_word":"furry","pos":"adjective","conjugations":["furryiar","furryiest","furryiness"]}
@@ -2517,7 +2517,7 @@
 {"me_word":"lore","inglisce_word":"lore","pos":"masculine noun","conjugations":["lors"]}
 {"me_word":"lead","inglisce_word":"lide","pos":"verb","conjugations":["lides","laid","liding"]}
 {"me_word":"lead","inglisce_word":"lide","pos":"masculine noun","conjugations":["líds"]}
-{"me_word":"","inglisce_word":"lead","pos":"adjective","conjugations":[]}
+{"me_word":"m","inglisce_word":"lead","pos":"adjective","conjugations":[]}
 {"me_word":"lead","inglisce_word":"leade","pos":"verb","conjugations":["leades","lead","leading"]}
 {"me_word":"loan","inglisce_word":"loane","pos":"masculine noun","conjugations":["loans"]}
 {"me_word":"loan","inglisce_word":"loane","pos":"verb","conjugations":["loanes","loaned","loaning"]}
@@ -2535,7 +2535,7 @@
 {"me_word":"lotion","inglisce_word":"locion","pos":"masculine noun","conjugations":["locions"]}
 {"me_word":"lotion","inglisce_word":"locione","pos":"verb","conjugations":["lociones","locioned","locioning"]}
 {"me_word":"leek","inglisce_word":"lique","pos":"masculine noun","conjugations":["lícs"]}
-{"me_word":"","inglisce_word":"liege","pos":"adjective","conjugations":["lieges"]}
+{"me_word":"m","inglisce_word":"liege","pos":"adjective","conjugations":["lieges"]}
 {"me_word":"lounge","inglisce_word":"lônge","pos":"masculine noun","conjugations":["lônges"]}
 {"me_word":"lounge","inglisce_word":"lônge","pos":"verb","conjugations":["lônges","lônged","lônging"]}
 {"me_word":"log","inglisce_word":"logue","pos":"masculine noun","conjugations":["logs"]}
@@ -2563,7 +2563,7 @@
 {"me_word":"lovely","inglisce_word":"lovely","pos":"adjective","conjugations":[]}
 {"me_word":"lice","inglisce_word":"lause","pos":"masculine noun","conjugations":["lîce"]}
 {"me_word":"lousy","inglisce_word":"lausy","pos":"adjective","conjugations":[]}
-{"me_word":"localis","inglisce_word":"local","pos":"adjective","conjugations":["locals","locally"]}
+{"me_word":"m","inglisce_word":"local","pos":"adjective","conjugations":["locals","locally"]}
 {"me_word":"locality","inglisce_word":"localetie","pos":"feminine noun","conjugations":["localetis"]}
 {"me_word":"locate","inglisce_word":"locait","pos":"verb","conjugations":["locaits","locaited","locaiting"]}
 {"me_word":"locator","inglisce_word":"locaitor","pos":"masculine noun","conjugations":["locaitors"]}
@@ -2620,7 +2620,7 @@
 {"me_word":"orc","inglisce_word":"orc","pos":"masculine noun","conjugations":["orx"]}
 {"me_word":"out","inglisce_word":"aut","pos":"preposition","conjugations":[]}
 {"me_word":"opine","inglisce_word":"opîne","pos":"verb","conjugations":["opînes","opîned","opîning"]}
-{"me_word":"opinionem","inglisce_word":"opinion","pos":"feminine noun","conjugations":["opinions"]}
+{"me_word":"opinion","inglisce_word":"opinion","pos":"feminine noun","conjugations":["opinions"]}
 {"me_word":"operate","inglisce_word":"opperait","pos":"verb","conjugations":["opperaits","opperaited","opperaiting"]}
 {"me_word":"operation","inglisce_word":"opperâcion","pos":"feminine noun","conjugations":["opperâcions","opperâcional"]}
 {"me_word":"operator","inglisce_word":"opperaitor","pos":"masculine noun","conjugations":["opperaitors"]}
@@ -2647,7 +2647,7 @@
 {"me_word":"observance","inglisce_word":"obsêvance","pos":"feminine noun","conjugations":[]}
 {"me_word":"observable","inglisce_word":"obsêvable","pos":"feminine noun","conjugations":["obsêvablabils"]}
 {"me_word":"observative","inglisce_word":"obsêvatif","pos":"adjective","conjugations":[]}
-{"me_word":"oliva","inglisce_word":"olive","pos":"masculine noun","conjugations":["olives"]}
+{"me_word":"adj)","inglisce_word":"olive","pos":"masculine noun","conjugations":["olives"]}
 {"me_word":"oil","inglisce_word":"euile","pos":"masculine noun","conjugations":["euyels"]}
 {"me_word":"oil","inglisce_word":"euile","pos":"verb","conjugations":["euiles","euiled","euiling"]}
 {"me_word":"ordain","inglisce_word":"ordeine","pos":"verb","conjugations":["ordeines","ordeined","ordeining"]}
@@ -2678,7 +2678,7 @@
 {"me_word":"officiant","inglisce_word":"offiçiant","pos":"feminine noun","conjugations":["offiçiants"]}
 {"me_word":"officiate","inglisce_word":"offiçiait","pos":"verb","conjugations":["offiçiaits","offiçiaited","offiçiaiting"]}
 {"me_word":"officiation","inglisce_word":"offiçiâcion","pos":"feminine noun","conjugations":["offiçiâcions"]}
-{"me_word":"officinalis","inglisce_word":"officinal","pos":"adjective","conjugations":["officinals"]}
+{"me_word":"f","inglisce_word":"officinal","pos":"adjective","conjugations":["officinals"]}
 {"me_word":"officious","inglisce_word":"officeus","pos":"adjective","conjugations":["officeusly"]}
 {"me_word":"Oklahoma","inglisce_word":"Oclahóma","pos":"feminine noun","conjugations":[]}
 {"me_word":"okie","inglisce_word":"oclahóman","pos":"adjective","conjugations":["óchie"]}
@@ -2748,11 +2748,11 @@
 {"me_word":"horrible","inglisce_word":"horrible","pos":"adjective","conjugations":["horribly","horribleness"]}
 {"me_word":"horrid","inglisce_word":"horrid","pos":"adjective","conjugations":["horridly","horridness"]}
 {"me_word":"horrific","inglisce_word":"horrific","pos":"adjective","conjugations":["horrificly"]}
-{"me_word":"","inglisce_word":"horror","pos":"masculine noun","conjugations":["horrors"]}
+{"me_word":"horror","inglisce_word":"horror","pos":"masculine noun","conjugations":["horrors"]}
 {"me_word":"hat","inglisce_word":"hate","pos":"masculine noun","conjugations":["hats"]}
 {"me_word":"host","inglisce_word":"hóste","pos":"verb","conjugations":["hóstes","hósted","hósting"]}
 {"me_word":"host","inglisce_word":"hóste","pos":"masculine noun","conjugations":["hósts"]}
-{"me_word":"","inglisce_word":"hostage","pos":"masculine noun","conjugations":["hostages"]}
+{"me_word":"hostage","inglisce_word":"hostage","pos":"masculine noun","conjugations":["hostages"]}
 {"me_word":"hostel","inglisce_word":"hostele","pos":"masculine noun","conjugations":["hostels"]}
 {"me_word":"hotel","inglisce_word":"hotèle","pos":"feminine noun","conjugations":["hotèls"]}
 {"me_word":"Hawaiian","inglisce_word":"hauáyan","pos":"adjective","conjugations":["hauáyans"]}
@@ -2994,7 +2994,7 @@
 {"me_word":"elation","inglisce_word":"elâcion","pos":"feminine noun","conjugations":["elâcions"]}
 {"me_word":"Eros","inglisce_word":"éroce","pos":"masculine noun","conjugations":[]}
 {"me_word":"expel","inglisce_word":"expelle","pos":"verb","conjugations":["expelles","expelled","expelling"]}
-{"me_word":"expulsionem","inglisce_word":"expulsion","pos":"feminine noun","conjugations":["expulsions"]}
+{"me_word":"expulsion","inglisce_word":"expulsion","pos":"feminine noun","conjugations":["expulsions"]}
 {"me_word":"endowment","inglisce_word":"endôment","pos":"feminine noun","conjugations":["endôments"]}
 {"me_word":"endear","inglisce_word":"endiare","pos":"verb","conjugations":["endiares","endiared","endiaring"]}
 {"me_word":"endearment","inglisce_word":"endiarement","pos":"feminine noun","conjugations":["endiarements"]}
@@ -3049,7 +3049,7 @@
 {"me_word":"eyeful","inglisce_word":"eayful","pos":"adjective","conjugations":["eayfuls"]}
 {"me_word":"eyebrow","inglisce_word":"eaybraue","pos":"masculine noun","conjugations":["eaybraûs"]}
 {"me_word":"expand","inglisce_word":"expande","pos":"verb","conjugations":["expandes","expanded","expanding"]}
-{"me_word":"expansionem","inglisce_word":"expansion","pos":"feminine noun","conjugations":["expansions"]}
+{"me_word":"expansion","inglisce_word":"expansion","pos":"feminine noun","conjugations":["expansions"]}
 {"me_word":"expansive","inglisce_word":"expansif","pos":"adjective","conjugations":[]}
 {"me_word":"east","inglisce_word":"íst(e","pos":"adverb","conjugations":[]}
 {"me_word":"eastern","inglisce_word":"ístern","pos":"adjective","conjugations":[]}
@@ -3132,11 +3132,11 @@
 {"me_word":"adv)","inglisce_word":"else","pos":"adjective","conjugations":[]}
 {"me_word":"envy","inglisce_word":"envie","pos":"masculine noun","conjugations":[]}
 {"me_word":"envy","inglisce_word":"envie","pos":"verb","conjugations":["envies","envied","enviying"]}
-{"me_word":"","inglisce_word":"enviable","pos":"adjective","conjugations":[]}
+{"me_word":"enviable","inglisce_word":"enviable","pos":"adjective","conjugations":[]}
 {"me_word":"envious","inglisce_word":"envieus","pos":"adjective","conjugations":[]}
 {"me_word":"invidious","inglisce_word":"invidieus","pos":"adjective","conjugations":[]}
 {"me_word":"err","inglisce_word":"erre","pos":"verb","conjugations":["erres","erred","erring"]}
-{"me_word":"iterare","inglisce_word":"errant","pos":"adjective","conjugations":[]}
+{"me_word":"errant","inglisce_word":"errant","pos":"adjective","conjugations":[]}
 {"me_word":"errancy","inglisce_word":"errancie","pos":"masculine noun","conjugations":["errancis"]}
 {"me_word":"erratic","inglisce_word":"erratic","pos":"adjective","conjugations":[]}
 {"me_word":"errata","inglisce_word":"erratom","pos":"feminine noun","conjugations":["erratoms","errata"]}
@@ -3193,7 +3193,7 @@
 {"me_word":"estimate","inglisce_word":"estimait","pos":"verb","conjugations":["estimaits","estimaited","estimaiting"]}
 {"me_word":"estimation","inglisce_word":"estimâcion","pos":"feminine noun","conjugations":["estimâcions"]}
 {"me_word":"estimate","inglisce_word":"estimat","pos":"masculine noun","conjugations":["estimats"]}
-{"me_word":"aestimabilis","inglisce_word":"estimable","pos":"adjective","conjugations":["estimably"]}
+{"me_word":"estimable","inglisce_word":"estimable","pos":"adjective","conjugations":["estimably"]}
 {"me_word":"entrance","inglisce_word":"entranse","pos":"verb","conjugations":["entranses","entransed","entransing"]}
 {"me_word":"entertain","inglisce_word":"enterteine","pos":"verb","conjugations":["enterteines","enterteined","enterteining"]}
 {"me_word":"entertainer","inglisce_word":"enterteineur","pos":"feminine noun","conjugations":["enterteineurs"]}
@@ -3217,7 +3217,7 @@
 {"me_word":"exposure","inglisce_word":"expoșure","pos":"feminine noun","conjugations":["expoșurs"]}
 {"me_word":"exposition","inglisce_word":"exposicion","pos":"feminine noun","conjugations":["exposicions"]}
 {"me_word":"expository","inglisce_word":"expository","pos":"adjective","conjugations":[]}
-{"me_word":"","inglisce_word":"error","pos":"masculine noun","conjugations":["errors"]}
+{"me_word":"error","inglisce_word":"error","pos":"masculine noun","conjugations":["errors"]}
 {"me_word":"erroneous","inglisce_word":"erronieus","pos":"adjective","conjugations":["erronieusly"]}
 {"me_word":"err","inglisce_word":"erre","pos":"verb","conjugations":["erres","erred","erring"]}
 {"me_word":"ether","inglisce_word":"íþre","pos":"masculine noun","conjugations":["íþers"]}
@@ -3279,8 +3279,8 @@
 {"me_word":"experience","inglisce_word":"expírience","pos":"verb","conjugations":["expíriences","expírienced","expíriencing"]}
 {"me_word":"experiential","inglisce_word":"expiriencial","pos":"adjective","conjugations":[]}
 {"me_word":"enter","inglisce_word":"enter","pos":"verb","conjugations":["entres","entred","entering"]}
-{"me_word":"","inglisce_word":"entrance","pos":"masculine noun","conjugations":["entrances"]}
-{"me_word":"","inglisce_word":"entrant","pos":"masculine noun","conjugations":["entrants"]}
+{"me_word":"entrance","inglisce_word":"entrance","pos":"masculine noun","conjugations":["entrances"]}
+{"me_word":"entrant","inglisce_word":"entrant","pos":"masculine noun","conjugations":["entrants"]}
 {"me_word":"evoke","inglisce_word":"evoque","pos":"verb","conjugations":["evoacs","evoqued","evoquing"]}
 {"me_word":"evocation","inglisce_word":"evocâcion","pos":"feminine noun","conjugations":["evocâcions"]}
 {"me_word":"evocative","inglisce_word":"evoccatif","pos":"adjective","conjugations":[]}
@@ -3380,14 +3380,14 @@
 {"me_word":"bat","inglisce_word":"bate","pos":"masculine noun","conjugations":["bàts"]}
 {"me_word":"bat","inglisce_word":"batte","pos":"masculine noun","conjugations":["bats"]}
 {"me_word":"bat","inglisce_word":"batte","pos":"verb","conjugations":["bats","bat","batting"]}
-{"me_word":"barca","inglisce_word":"barge","pos":"masculine noun","conjugations":["barges"]}
+{"me_word":"barge","inglisce_word":"barge","pos":"masculine noun","conjugations":["barges"]}
 {"me_word":"barge","inglisce_word":"barge","pos":"verb","conjugations":["barges","barged","barging"]}
 {"me_word":"barrack","inglisce_word":"bârrac","pos":"masculine noun","conjugations":["bârracs"]}
 {"me_word":"boot","inglisce_word":"boute","pos":"masculine noun","conjugations":["bouts"]}
 {"me_word":"boot","inglisce_word":"boute","pos":"verb","conjugations":["boutes","bouted","bouting"]}
 {"me_word":"beast","inglisce_word":"bieste","pos":"masculine noun","conjugations":["biests"]}
 {"me_word":"beastly","inglisce_word":"biestly","pos":"adjective","conjugations":[]}
-{"me_word":"buxis","inglisce_word":"box","pos":"masculine noun","conjugations":["boxes"]}
+{"me_word":"box","inglisce_word":"box","pos":"masculine noun","conjugations":["boxes"]}
 {"me_word":"box","inglisce_word":"boxe","pos":"verb","conjugations":["boxes","boxed","boxing"]}
 {"me_word":"boar","inglisce_word":"baure","pos":"masculine noun","conjugations":["baurs"]}
 {"me_word":"bet","inglisce_word":"bete","pos":"verb","conjugations":["betes","bet","beting"]}
@@ -3775,7 +3775,7 @@
 {"me_word":"berserker","inglisce_word":"besêcor","pos":"feminine noun","conjugations":[]}
 {"me_word":"bare","inglisce_word":"bair","pos":"adjective","conjugations":["bairar","bairest"]}
 {"me_word":"bare","inglisce_word":"baire","pos":"verb","conjugations":["baires","baired","bairing"]}
-{"me_word":"","inglisce_word":"bread","pos":"masculine noun","conjugations":["breads"]}
+{"me_word":"bread","inglisce_word":"bread","pos":"masculine noun","conjugations":["breads"]}
 {"me_word":"bread","inglisce_word":"breade","pos":"verb","conjugations":["breades","breaded","breading"]}
 {"me_word":"build","inglisce_word":"byld","pos":"masculine noun","conjugations":["bylds"]}
 {"me_word":"building","inglisce_word":"bylding","pos":"masculine noun","conjugations":["byldings"]}
@@ -3791,12 +3791,12 @@
 {"me_word":"precipice","inglisce_word":"prècipice","pos":"masculine noun","conjugations":["prècipices"]}
 {"me_word":"Polish","inglisce_word":"polisce","pos":"adjective","conjugations":["Polisce"]}
 {"me_word":"person","inglisce_word":"person","pos":"masculine noun","conjugations":["persons"]}
-{"me_word":"personalis","inglisce_word":"personal","pos":"adjective","conjugations":["personals"]}
+{"me_word":"m","inglisce_word":"personal","pos":"adjective","conjugations":["personals"]}
 {"me_word":"personally","inglisce_word":"personally","pos":"adverb","conjugations":[]}
 {"me_word":"personality","inglisce_word":"personaletie","pos":"feminine noun","conjugations":["personaletis"]}
 {"me_word":"personage","inglisce_word":"pêrsonage","pos":"masculine noun","conjugations":["pêrsonages"]}
-{"me_word":"","inglisce_word":"persona","pos":"feminine noun","conjugations":["personas"]}
-{"me_word":"","inglisce_word":"personable","pos":"adjective","conjugations":["personably"]}
+{"me_word":"persona","inglisce_word":"persona","pos":"feminine noun","conjugations":["personas"]}
+{"me_word":"personable","inglisce_word":"personable","pos":"adjective","conjugations":["personably"]}
 {"me_word":"personhood","inglisce_word":"personhud","pos":"masculine noun","conjugations":["personhuds"]}
 {"me_word":"personalize","inglisce_word":"pêrsonalyse","pos":"verb","conjugations":["pêrsonalyses","pêrsonalysed","pêrsonalysing"]}
 {"me_word":"personalization","inglisce_word":"personalisâcion","pos":"feminine noun","conjugations":["personalisâcions"]}
@@ -3827,9 +3827,9 @@
 {"me_word":"paralyze","inglisce_word":"pâralyse","pos":"verb","conjugations":["pâralyses","pâralysed","pâralysing"]}
 {"me_word":"paralytic","inglisce_word":"paralÿtic","pos":"adjective","conjugations":["paralÿtics","paralÿticly"]}
 {"me_word":"profess","inglisce_word":"professe","pos":"verb","conjugations":["professes","professed","professing"]}
-{"me_word":"professionem","inglisce_word":"profession","pos":"feminine noun","conjugations":["professions"]}
+{"me_word":"profession","inglisce_word":"profession","pos":"feminine noun","conjugations":["professions"]}
 {"me_word":"f","inglisce_word":"professional","pos":"adjective","conjugations":["professionals","professionalism"]}
-{"me_word":"professor","inglisce_word":"professeur","pos":"feminine noun","conjugations":["professeurs"]}
+{"me_word":"professeur","inglisce_word":"professeur","pos":"feminine noun","conjugations":["professeurs"]}
 {"me_word":"plummet","inglisce_word":"plomete","pos":"masculine noun","conjugations":["plomets"]}
 {"me_word":"plummet","inglisce_word":"plomete","pos":"verb","conjugations":["plometes","plometed","plometing"]}
 {"me_word":"proper","inglisce_word":"propre","pos":"adjective","conjugations":["properly","propreness"]}
@@ -3871,7 +3871,7 @@
 {"me_word":"paper","inglisce_word":"pâpre","pos":"masculine noun","conjugations":["pâpirs"]}
 {"me_word":"panic","inglisce_word":"panic","pos":"masculine noun","conjugations":[]}
 {"me_word":"panic","inglisce_word":"paniche","pos":"verb","conjugations":["panics","paniched","paniching"]}
-{"me_word":"panicum","inglisce_word":"panic","pos":"masculine noun","conjugations":[]}
+{"me_word":"panic","inglisce_word":"panic","pos":"masculine noun","conjugations":[]}
 {"me_word":"pale","inglisce_word":"pâll","pos":"adjective","conjugations":["pâllar","pâllest"]}
 {"me_word":"pale","inglisce_word":"pâlle","pos":"verb","conjugations":["pâlles","pâlled","pâlling"]}
 {"me_word":"pale","inglisce_word":"pâle","pos":"masculine noun","conjugations":["pâls"]}
@@ -3922,7 +3922,7 @@
 {"me_word":"pistol","inglisce_word":"pistole","pos":"masculine noun","conjugations":["pistols"]}
 {"me_word":"planet","inglisce_word":"planete","pos":"masculine noun","conjugations":["planets"]}
 {"me_word":"pope","inglisce_word":"pope","pos":"masculine noun","conjugations":["poaps"]}
-{"me_word":"primarius","inglisce_word":"premier","pos":"adjective","conjugations":[]}
+{"me_word":"premier","inglisce_word":"premier","pos":"adjective","conjugations":[]}
 {"me_word":"premier","inglisce_word":"premiere","pos":"feminine noun","conjugations":["premiers"]}
 {"me_word":"premier","inglisce_word":"premiere","pos":"verb","conjugations":["premieres","premiered","premiering"]}
 {"me_word":"prize","inglisce_word":"prîse","pos":"verb","conjugations":["prîses","prîsed","prîsing"]}
@@ -3967,8 +3967,8 @@
 {"me_word":"payout","inglisce_word":"payaut","pos":"masculine noun","conjugations":["payauts"]}
 {"me_word":"plane","inglisce_word":"plâne","pos":"masculine noun","conjugations":["plâns"]}
 {"me_word":"plane","inglisce_word":"plâne","pos":"verb","conjugations":["plânes","plâned","plâning"]}
-{"me_word":"publicus","inglisce_word":"public","pos":"adjective","conjugations":["publicly"]}
-{"me_word":"publicanus","inglisce_word":"publican","pos":"masculine noun","conjugations":["publicans"]}
+{"me_word":"m","inglisce_word":"public","pos":"adjective","conjugations":["publicly"]}
+{"me_word":"publican","inglisce_word":"publican","pos":"masculine noun","conjugations":["publicans"]}
 {"me_word":"publicize","inglisce_word":"publicyse","pos":"verb","conjugations":["publicyses","publicysed","publicysing"]}
 {"me_word":"publicization","inglisce_word":"publicisâcion","pos":"feminine noun","conjugations":["publicisâcions"]}
 {"me_word":"publicist","inglisce_word":"publicist","pos":"masculine noun","conjugations":["publicists"]}
@@ -3990,10 +3990,10 @@
 {"me_word":"praise","inglisce_word":"preise","pos":"masculine noun","conjugations":["preises"]}
 {"me_word":"posh","inglisce_word":"poș","pos":"adjective","conjugations":[]}
 {"me_word":"provide","inglisce_word":"provîde","pos":"verb","conjugations":["provîdes","provîded","provîding"]}
-{"me_word":"providentia","inglisce_word":"providence","pos":"masculine noun","conjugations":[]}
-{"me_word":"providentem","inglisce_word":"provident","pos":"adjective","conjugations":[]}
+{"me_word":"providence","inglisce_word":"providence","pos":"masculine noun","conjugations":[]}
+{"me_word":"provident","inglisce_word":"provident","pos":"adjective","conjugations":[]}
 {"me_word":"providential","inglisce_word":"providencial","pos":"adjective","conjugations":[]}
-{"me_word":"provisionem","inglisce_word":"provision","pos":"feminine noun","conjugations":["provisions"]}
+{"me_word":"provision","inglisce_word":"provision","pos":"feminine noun","conjugations":["provisions"]}
 {"me_word":"provisional","inglisce_word":"provisional","pos":"adjective","conjugations":[]}
 {"me_word":"provoke","inglisce_word":"provoque","pos":"verb","conjugations":["provoacs","provoqued","provoquing"]}
 {"me_word":"provocateur","inglisce_word":"provocator","pos":"feminine noun","conjugations":["provocators"]}
@@ -4010,9 +4010,9 @@
 {"me_word":"possessive","inglisce_word":"posessif","pos":"adjective","conjugations":[]}
 {"me_word":"permit","inglisce_word":"permitte","pos":"verb","conjugations":["permittes","permitted","permitting"]}
 {"me_word":"permit","inglisce_word":"pêmit","pos":"masculine noun","conjugations":["pêmits"]}
-{"me_word":"permissionem","inglisce_word":"permission","pos":"feminine noun","conjugations":["permissions"]}
+{"me_word":"permission","inglisce_word":"permission","pos":"feminine noun","conjugations":["permissions"]}
 {"me_word":"permissive","inglisce_word":"permissif","pos":"adjective","conjugations":["permissifvly"]}
-{"me_word":"permissibilis","inglisce_word":"permissible","pos":"adjective","conjugations":[]}
+{"me_word":"permissible","inglisce_word":"permissible","pos":"adjective","conjugations":[]}
 {"me_word":"picture","inglisce_word":"picțure","pos":"masculine noun","conjugations":["picțurs"]}
 {"me_word":"pic","inglisce_word":"pic","pos":"masculine noun","conjugations":["pics"]}
 {"me_word":"picture","inglisce_word":"picțure","pos":"verb","conjugations":["picțures","picțured","picțuring"]}
@@ -4043,7 +4043,7 @@
 {"me_word":"pudgy","inglisce_word":"pogy","pos":"adjective","conjugations":[]}
 {"me_word":"purpose","inglisce_word":"pourpace","pos":"masculine noun","conjugations":["pourpaces"]}
 {"me_word":"purpose","inglisce_word":"pourpace","pos":"verb","conjugations":["pourpaces","pourpaced","pourpacing"]}
-{"me_word":"quiniela","inglisce_word":"perfecta","pos":"adjective","conjugations":["perfectas"]}
+{"me_word":"f","inglisce_word":"perfecta","pos":"adjective","conjugations":["perfectas"]}
 {"me_word":"perfect","inglisce_word":"perfect","pos":"adjective","conjugations":["perfectly"]}
 {"me_word":"perfect","inglisce_word":"perfecte","pos":"verb","conjugations":["perfectes","perfected","perfecting"]}
 {"me_word":"perfectible","inglisce_word":"perfèctable","pos":"adjective","conjugations":["perfèctably"]}
@@ -4107,7 +4107,7 @@
 {"me_word":"process","inglisce_word":"process","pos":"masculine noun","conjugations":["processes"]}
 {"me_word":"process","inglisce_word":"processe","pos":"verb","conjugations":["processes","processed","processing"]}
 {"me_word":"process","inglisce_word":"procèsse","pos":"verb","conjugations":["procèsses","procèssed","procèssing"]}
-{"me_word":"processionem","inglisce_word":"procession","pos":"feminine noun","conjugations":["processions"]}
+{"me_word":"procession","inglisce_word":"procession","pos":"feminine noun","conjugations":["processions"]}
 {"me_word":"prepuce","inglisce_word":"prípuce","pos":"masculine noun","conjugations":["prípuces"]}
 {"me_word":"place","inglisce_word":"plâce","pos":"masculine noun","conjugations":["plâces"]}
 {"me_word":"place","inglisce_word":"plâce","pos":"verb","conjugations":["plâces","plâced","plâcing"]}
@@ -4116,7 +4116,7 @@
 {"me_word":"placement","inglisce_word":"plâcement","pos":"masculine noun","conjugations":["plâcements"]}
 {"me_word":"palace","inglisce_word":"palace","pos":"masculine noun","conjugations":["palaces"]}
 {"me_word":"palatial","inglisce_word":"palâcial","pos":"adjective","conjugations":[]}
-{"me_word":"paladino","inglisce_word":"paladin","pos":"masculine noun","conjugations":["paladins"]}
+{"me_word":"paladin","inglisce_word":"paladin","pos":"masculine noun","conjugations":["paladins"]}
 {"me_word":"power","inglisce_word":"pôuir","pos":"verb","conjugations":["pôures","pôured","pôuiring"]}
 {"me_word":"power","inglisce_word":"pôure","pos":"masculine noun","conjugations":["pôuirs"]}
 {"me_word":"pit","inglisce_word":"pyt","pos":"verb","conjugations":["pyts","pyt","pytting"]}
@@ -4155,7 +4155,7 @@
 {"me_word":"poison","inglisce_word":"poison","pos":"masculine noun","conjugations":["poisons"]}
 {"me_word":"poison","inglisce_word":"poisone","pos":"verb","conjugations":["poisones","poisoned","poisoning"]}
 {"me_word":"poisonous","inglisce_word":"poisonus","pos":"adjective","conjugations":[]}
-{"me_word":"","inglisce_word":"plus","pos":"preposition","conjugations":[]}
+{"me_word":"plus","inglisce_word":"plus","pos":"preposition","conjugations":[]}
 {"me_word":"plague","inglisce_word":"plâgue","pos":"masculine noun","conjugations":["plâgs"]}
 {"me_word":"plague","inglisce_word":"plâgue","pos":"verb","conjugations":["plâgs","plâgued","plâguing"]}
 {"me_word":"parboil","inglisce_word":"párboile","pos":"verb","conjugations":["párboiles","párboiled","párboiling"]}
@@ -4174,10 +4174,10 @@
 {"me_word":"positivity","inglisce_word":"positivatie","pos":"feminine noun","conjugations":["positivatis"]}
 {"me_word":"positivism","inglisce_word":"positivism","pos":"masculine noun","conjugations":[]}
 {"me_word":"pinnace","inglisce_word":"pinace","pos":"masculine noun","conjugations":["pinaces"]}
-{"me_word":"","inglisce_word":"per","pos":"preposition","conjugations":[]}
+{"me_word":"per","inglisce_word":"per","pos":"preposition","conjugations":[]}
 {"me_word":"pass","inglisce_word":"passe","pos":"verb","conjugations":["passes","passed","passing"]}
 {"me_word":"pass","inglisce_word":"pass","pos":"masculine noun","conjugations":["passes"]}
-{"me_word":"passus","inglisce_word":"passage","pos":"masculine noun","conjugations":["passages"]}
+{"me_word":"passage","inglisce_word":"passage","pos":"masculine noun","conjugations":["passages"]}
 {"me_word":"plain","inglisce_word":"plaine","pos":"masculine noun","conjugations":["plains"]}
 {"me_word":"plain","inglisce_word":"plân","pos":"adjective","conjugations":["plânar","plânest"]}
 {"me_word":"persecute","inglisce_word":"persecute","pos":"verb","conjugations":["persecutes","persecuted","persecuting"]}
@@ -4187,7 +4187,7 @@
 {"me_word":"pie","inglisce_word":"pîhe","pos":"masculine noun","conjugations":["pîhs"]}
 {"me_word":"partial","inglisce_word":"parcial","pos":"adjective","conjugations":["parcially"]}
 {"me_word":"partiality","inglisce_word":"parçialetie","pos":"feminine noun","conjugations":["parçialetis"]}
-{"me_word":"pinsere","inglisce_word":"pizza","pos":"masculine noun","conjugations":["pizzas"]}
+{"me_word":"pizza","inglisce_word":"pizza","pos":"masculine noun","conjugations":["pizzas"]}
 {"me_word":"pizzeria","inglisce_word":"pizzería","pos":"feminine noun","conjugations":["pizzerías"]}
 {"me_word":"pumpkin","inglisce_word":"pompchin","pos":"masculine noun","conjugations":["poncon","pompchins"]}
 {"me_word":"photo","inglisce_word":"fótograph","pos":"masculine noun","conjugations":["foto","fótographs"]}
@@ -4244,7 +4244,7 @@
 {"me_word":"peasantry","inglisce_word":"paisantrie","pos":"masculine noun","conjugations":["paisantris"]}
 {"me_word":"pillage","inglisce_word":"pillage","pos":"masculine noun","conjugations":["pillages"]}
 {"me_word":"pillage","inglisce_word":"pillage","pos":"verb","conjugations":["pillages","pillaged","pillaging"]}
-{"me_word":"pettia","inglisce_word":"piece","pos":"feminine noun","conjugations":["pieces"]}
+{"me_word":"piece","inglisce_word":"piece","pos":"feminine noun","conjugations":["pieces"]}
 {"me_word":"piece","inglisce_word":"piece","pos":"verb","conjugations":["pieces","pieced","piecing"]}
 {"me_word":"previous","inglisce_word":"prívieus","pos":"adjective","conjugations":["prívieusly"]}
 {"me_word":"prior","inglisce_word":"prîor","pos":"adjective","conjugations":["prîors","prîorly"]}
@@ -4279,7 +4279,7 @@
 {"me_word":"precipitation","inglisce_word":"precipitâcion","pos":"feminine noun","conjugations":["precipitâcions"]}
 {"me_word":"precipitant","inglisce_word":"precïpitant","pos":"adjective","conjugations":["precïpitants","precïpitantly"]}
 {"me_word":"precipitancy","inglisce_word":"precïpitancie","pos":"feminine noun","conjugations":["precïpitancis"]}
-{"me_word":"possibilis","inglisce_word":"possible","pos":"adjective","conjugations":[]}
+{"me_word":"m","inglisce_word":"possible","pos":"adjective","conjugations":[]}
 {"me_word":"possibly","inglisce_word":"possibly","pos":"adverb","conjugations":[]}
 {"me_word":"possibility","inglisce_word":"possibilatie","pos":"feminine noun","conjugations":["possibilatis"]}
 {"me_word":"past","inglisce_word":"past","pos":"preposition","conjugations":[]}
@@ -4306,7 +4306,7 @@
 {"me_word":"peak","inglisce_word":"pique","pos":"verb","conjugations":["pícs","piqued","piquing"]}
 {"me_word":"pear","inglisce_word":"peare","pos":"masculine noun","conjugations":["pears"]}
 {"me_word":"parmesan","inglisce_word":"parmeșan","pos":"adjective","conjugations":["parmegian"]}
-{"me_word":"popolaccio","inglisce_word":"populace","pos":"masculine noun","conjugations":["populaces"]}
+{"me_word":"populace","inglisce_word":"populace","pos":"masculine noun","conjugations":["populaces"]}
 {"me_word":"populate","inglisce_word":"populait","pos":"verb","conjugations":["populaits","populaited","populaiting"]}
 {"me_word":"population","inglisce_word":"populâcion","pos":"feminine noun","conjugations":["populâcions"]}
 {"me_word":"popular","inglisce_word":"popular","pos":"adjective","conjugations":[]}
@@ -4330,7 +4330,7 @@
 {"me_word":"pry","inglisce_word":"prîe","pos":"verb","conjugations":["prîes","prîed","pryhing"]}
 {"me_word":"pry","inglisce_word":"prîe","pos":"masculine noun","conjugations":["prîs"]}
 {"me_word":"prier","inglisce_word":"prîeur","pos":"masculine noun","conjugations":["prîeurs"]}
-{"me_word":"principis","inglisce_word":"prince","pos":"masculine noun","conjugations":["princes"]}
+{"me_word":"prince","inglisce_word":"prince","pos":"masculine noun","conjugations":["princes"]}
 {"me_word":"princess","inglisce_word":"princess","pos":"masculine noun","conjugations":["princesses"]}
 {"me_word":"play","inglisce_word":"plaie","pos":"masculine noun","conjugations":["plays"]}
 {"me_word":"cosplay","inglisce_word":"cosplaie","pos":"masculine noun","conjugations":["cosplays"]}
@@ -4348,7 +4348,7 @@
 {"me_word":"pirate","inglisce_word":"pîrat","pos":"masculine noun","conjugations":["pîrats"]}
 {"me_word":"pirate","inglisce_word":"pîrate","pos":"verb","conjugations":["pîrates","pîrated","pîrating"]}
 {"me_word":"piracy","inglisce_word":"pîracie","pos":"masculine noun","conjugations":["pîracis"]}
-{"me_word":"passionem","inglisce_word":"passion","pos":"masculine noun","conjugations":["passions"]}
+{"me_word":"passion","inglisce_word":"passion","pos":"masculine noun","conjugations":["passions"]}
 {"me_word":"passionate","inglisce_word":"passionat","pos":"adjective","conjugations":[]}
 {"me_word":"plan","inglisce_word":"plane","pos":"masculine noun","conjugations":["plans"]}
 {"me_word":"plan","inglisce_word":"plane","pos":"verb","conjugations":["planes","planed","planing"]}
@@ -4382,15 +4382,15 @@
 {"me_word":"prayer","inglisce_word":"prayeur","pos":"masculine noun","conjugations":["prayeurs"]}
 {"me_word":"parley","inglisce_word":"párlie","pos":"masculine noun","conjugations":["párlis"]}
 {"me_word":"parley","inglisce_word":"párlie","pos":"verb","conjugations":["párlies","párlied","párlieying"]}
-{"me_word":"","inglisce_word":"parlance","pos":"masculine noun","conjugations":["parlances"]}
+{"me_word":"parlance","inglisce_word":"parlance","pos":"masculine noun","conjugations":["parlances"]}
 {"me_word":"parliament","inglisce_word":"parlament","pos":"masculine noun","conjugations":["parlaments"]}
 {"me_word":"m","inglisce_word":"parlor","pos":"adjective","conjugations":["parlors"]}
 {"me_word":"prestigious","inglisce_word":"prestigeus","pos":"adjective","conjugations":["prestigeusly"]}
-{"me_word":"praestigium","inglisce_word":"prestige","pos":"feminine noun","conjugations":[]}
+{"me_word":"prestige","inglisce_word":"prestige","pos":"feminine noun","conjugations":[]}
 {"me_word":"protest","inglisce_word":"prótest","pos":"masculine noun","conjugations":["prótests"]}
 {"me_word":"protest","inglisce_word":"próteste","pos":"verb","conjugations":["prótestes","prótested","prótesting"]}
 {"me_word":"protester","inglisce_word":"prótestor","pos":"masculine noun","conjugations":["prótestors"]}
-{"me_word":"protestantem","inglisce_word":"protestant","pos":"adjective","conjugations":["protestants"]}
+{"me_word":"m","inglisce_word":"protestant","pos":"adjective","conjugations":["protestants"]}
 {"me_word":"protestantism","inglisce_word":"protestantism","pos":"masculine noun","conjugations":[]}
 {"me_word":"pheasant","inglisce_word":"faisant","pos":"masculine noun","conjugations":["faisants"]}
 {"me_word":"porch","inglisce_word":"porc̃e","pos":"masculine noun","conjugations":["porc̃es"]}
@@ -4447,7 +4447,7 @@
 {"me_word":"plumb","inglisce_word":"plomme","pos":"masculine noun","conjugations":["ploms"]}
 {"me_word":"plumber","inglisce_word":"plommeur","pos":"masculine noun","conjugations":["plommeurs"]}
 {"me_word":"potent","inglisce_word":"potent","pos":"adjective","conjugations":[]}
-{"me_word":"potentia","inglisce_word":"potence","pos":"masculine noun","conjugations":[]}
+{"me_word":"potence","inglisce_word":"potence","pos":"masculine noun","conjugations":[]}
 {"me_word":"potency","inglisce_word":"potencie","pos":"masculine noun","conjugations":["potencis"]}
 {"me_word":"potential","inglisce_word":"potencial","pos":"adjective","conjugations":["potencially"]}
 {"me_word":"potentiality","inglisce_word":"potençialetie","pos":"feminine noun","conjugations":["potençialetis"]}
@@ -4465,9 +4465,9 @@
 {"me_word":"philosophize","inglisce_word":"filosophyse","pos":"verb","conjugations":["filosophyses","filosophysed","filosophysing"]}
 {"me_word":"precious","inglisce_word":"preceus","pos":"adjective","conjugations":["preceusly","preceusness"]}
 {"me_word":"prescribe","inglisce_word":"prescrîbe","pos":"verb","conjugations":["prescrîbes","prescrîbed","prescrîbing"]}
-{"me_word":"praescriptionem","inglisce_word":"prescription","pos":"feminine noun","conjugations":["prescriptions"]}
+{"me_word":"prescription","inglisce_word":"prescription","pos":"feminine noun","conjugations":["prescriptions"]}
 {"me_word":"prescriptive","inglisce_word":"prescriptif","pos":"adjective","conjugations":[]}
-{"me_word":"principalis","inglisce_word":"principal","pos":"adjective","conjugations":["principals"]}
+{"me_word":"m","inglisce_word":"principal","pos":"adjective","conjugations":["principals"]}
 {"me_word":"principality","inglisce_word":"principaletie","pos":"feminine noun","conjugations":["principaletis"]}
 {"me_word":"phony","inglisce_word":"foany","pos":"adjective","conjugations":[]}
 {"me_word":"people","inglisce_word":"píple","pos":"masculine noun","conjugations":["pípuls"]}
@@ -4670,7 +4670,7 @@
 {"me_word":"spare","inglisce_word":"spaire","pos":"verb","conjugations":["spaires","spaired","spairing"]}
 {"me_word":"spare","inglisce_word":"spaire","pos":"adjective","conjugations":["spairs"]}
 {"me_word":"stand","inglisce_word":"stande","pos":"verb","conjugations":["standes","stôd","standing"]}
-{"me_word":"","inglisce_word":"stand","pos":"masculine noun","conjugations":["stands"]}
+{"me_word":"stand","inglisce_word":"stand","pos":"masculine noun","conjugations":["stands"]}
 {"me_word":"sage","inglisce_word":"sâge","pos":"adjective","conjugations":["sâges","sâgely"]}
 {"me_word":"sage","inglisce_word":"saige","pos":"masculine noun","conjugations":[]}
 {"me_word":"subtle","inglisce_word":"sotil","pos":"adjective","conjugations":[]}
@@ -4741,7 +4741,7 @@
 {"me_word":"sheer","inglisce_word":"çire","pos":"adjective","conjugations":["çírs"]}
 {"me_word":"sheer","inglisce_word":"sciere","pos":"verb","conjugations":["scieres","sciered","sciering"]}
 {"me_word":"sheer","inglisce_word":"sciere","pos":"masculine noun","conjugations":["sciers"]}
-{"me_word":"","inglisce_word":"super","pos":"adjective","conjugations":[]}
+{"me_word":"super","inglisce_word":"super","pos":"adjective","conjugations":[]}
 {"me_word":"sell","inglisce_word":"selle","pos":"masculine noun","conjugations":["sells"]}
 {"me_word":"seller","inglisce_word":"selleur","pos":"masculine noun","conjugations":["sellor","selleurs"]}
 {"me_word":"salmon","inglisce_word":"samon","pos":"masculine noun","conjugations":[]}
@@ -4776,7 +4776,7 @@
 {"me_word":"storm","inglisce_word":"storme","pos":"verb","conjugations":["stormes","stormed","storming"]}
 {"me_word":"shelter","inglisce_word":"scelture","pos":"masculine noun","conjugations":["scelturs"]}
 {"me_word":"shelter","inglisce_word":"scelture","pos":"verb","conjugations":["sceltures","sceltured","scelturing"]}
-{"me_word":"simplus","inglisce_word":"simple","pos":"adjective","conjugations":[]}
+{"me_word":"simple","inglisce_word":"simple","pos":"adjective","conjugations":[]}
 {"me_word":"simply","inglisce_word":"simply","pos":"adverb","conjugations":[]}
 {"me_word":"simplicity","inglisce_word":"simpliçatie","pos":"feminine noun","conjugations":["simpliçatis"]}
 {"me_word":"simplify","inglisce_word":"simplifae","pos":"verb","conjugations":["simplifaes","simplifaed","simplifafyhing"]}
@@ -4884,7 +4884,7 @@
 {"me_word":"stun","inglisce_word":"stonne","pos":"verb","conjugations":["stons","stonned","stonning"]}
 {"me_word":"shake","inglisce_word":"seache","pos":"verb","conjugations":["seacs","seôc","seacan","seaching"]}
 {"me_word":"shake","inglisce_word":"seac","pos":"masculine noun","conjugations":["seaix"]}
-{"me_word":"superficies","inglisce_word":"surface","pos":"adjective","conjugations":["surfaces"]}
+{"me_word":"m","inglisce_word":"surface","pos":"adjective","conjugations":["surfaces"]}
 {"me_word":"surface","inglisce_word":"surface","pos":"verb","conjugations":["surfaces","surfaced","surfacing"]}
 {"me_word":"sow","inglisce_word":"soe","pos":"verb","conjugations":["soes","soed","sone","souing"]}
 {"me_word":"sow","inglisce_word":"sôe","pos":"masculine noun","conjugations":["sôus"]}
@@ -4998,7 +4998,7 @@
 {"me_word":"supreme","inglisce_word":"soprime","pos":"adjective","conjugations":["sopríms"]}
 {"me_word":"supremacy","inglisce_word":"soprèmacie","pos":"feminine noun","conjugations":["soprèmacis"]}
 {"me_word":"supremacist","inglisce_word":"soprèmacist","pos":"feminine noun","conjugations":["soprèmacists"]}
-{"me_word":"specialis","inglisce_word":"especial","pos":"adjective","conjugations":["especially"]}
+{"me_word":"especial","inglisce_word":"especial","pos":"adjective","conjugations":["especially"]}
 {"me_word":"specialism","inglisce_word":"specialism","pos":"masculine noun","conjugations":["specialisms"]}
 {"me_word":"specialist","inglisce_word":"specialist","pos":"masculine noun","conjugations":["specialists"]}
 {"me_word":"m","inglisce_word":"special","pos":"adjective","conjugations":["specials","specially"]}
@@ -5013,7 +5013,7 @@
 {"me_word":"submarine","inglisce_word":"sobmarine","pos":"adjective","conjugations":["sobmaríns"]}
 {"me_word":"sub","inglisce_word":"sub","pos":"masculine noun","conjugations":["subs"]}
 {"me_word":"semen","inglisce_word":"símen","pos":"masculine noun","conjugations":[]}
-{"me_word":"seminalis","inglisce_word":"seminal","pos":"adjective","conjugations":["seminally"]}
+{"me_word":"seminal","inglisce_word":"seminal","pos":"adjective","conjugations":["seminally"]}
 {"me_word":"snake","inglisce_word":"snâc","pos":"masculine noun","conjugations":["snaix"]}
 {"me_word":"snake","inglisce_word":"snâche","pos":"verb","conjugations":["snâcs","snâched","snâching"]}
 {"me_word":"stumble","inglisce_word":"stomble","pos":"verb","conjugations":["stombles","stombled","stombling"]}
@@ -5029,7 +5029,7 @@
 {"me_word":"suite","inglisce_word":"suite","pos":"masculine noun","conjugations":["suíts"]}
 {"me_word":"stagnate","inglisce_word":"stagnait","pos":"verb","conjugations":["stagnaits","stagnaited","stagnaiting"]}
 {"me_word":"stagnation","inglisce_word":"stagnâcion","pos":"feminine noun","conjugations":["stagnâcions"]}
-{"me_word":"stagnans","inglisce_word":"stagnant","pos":"adjective","conjugations":[]}
+{"me_word":"stagnant","inglisce_word":"stagnant","pos":"adjective","conjugations":[]}
 {"me_word":"swirl","inglisce_word":"suirle","pos":"masculine noun","conjugations":["suirls"]}
 {"me_word":"swirl","inglisce_word":"suirle","pos":"verb","conjugations":["suirles","suirled","suirling"]}
 {"me_word":"swirly","inglisce_word":"suirly","pos":"adjective","conjugations":[]}
@@ -5190,7 +5190,7 @@
 {"me_word":"split","inglisce_word":"splitte","pos":"verb","conjugations":["splits","split","splitting"]}
 {"me_word":"split","inglisce_word":"split","pos":"adjective","conjugations":[]}
 {"me_word":"split","inglisce_word":"split","pos":"masculine noun","conjugations":["splits"]}
-{"me_word":"spiritus","inglisce_word":"spirit","pos":"masculine noun","conjugations":["spirits"]}
+{"me_word":"spirit","inglisce_word":"spirit","pos":"masculine noun","conjugations":["spirits"]}
 {"me_word":"spirit","inglisce_word":"spirite","pos":"verb","conjugations":["spirites","spirited","spiriting"]}
 {"me_word":"spiritless","inglisce_word":"spiritless","pos":"adjective","conjugations":["spiritlessly","spiritlessness"]}
 {"me_word":"spiritual","inglisce_word":"spiriţual","pos":"adjective","conjugations":["spiriţually"]}
@@ -5435,9 +5435,9 @@
 {"me_word":"sword","inglisce_word":"sord","pos":"masculine noun","conjugations":["sords"]}
 {"me_word":"sneak","inglisce_word":"snieche","pos":"verb","conjugations":["sniecs","snieched/sneuc","snieching"]}
 {"me_word":"sneak","inglisce_word":"sniec","pos":"adjective","conjugations":["sniex"]}
-{"me_word":"socialis","inglisce_word":"social","pos":"adjective","conjugations":["socially"]}
+{"me_word":"social","inglisce_word":"social","pos":"adjective","conjugations":["socially"]}
 {"me_word":"sociality","inglisce_word":"soçialetie","pos":"feminine noun","conjugations":["soçialetis"]}
-{"me_word":"sociabilis","inglisce_word":"sociable","pos":"adjective","conjugations":["sociably"]}
+{"me_word":"sociable","inglisce_word":"sociable","pos":"adjective","conjugations":["sociably"]}
 {"me_word":"sociability","inglisce_word":"sociabilatie","pos":"feminine noun","conjugations":["sociabilatis"]}
 {"me_word":"socialize","inglisce_word":"socialyse","pos":"verb","conjugations":["socialyses","socialysed","socialysing"]}
 {"me_word":"socialization","inglisce_word":"socialisâcion","pos":"feminine noun","conjugations":["socialisâcions"]}
@@ -5509,7 +5509,7 @@
 {"me_word":"spin","inglisce_word":"spinne","pos":"verb","conjugations":["spins","spon","spinning"]}
 {"me_word":"spin","inglisce_word":"spinne","pos":"masculine noun","conjugations":["spins"]}
 {"me_word":"scorch","inglisce_word":"scorc̃e","pos":"verb","conjugations":["scorc̃es","scorc̃ed","scorc̃ing"]}
-{"me_word":"Σφίγξ","inglisce_word":"Sphinx","pos":"masculine noun","conjugations":["Sphinxes"]}
+{"me_word":"Sphinx","inglisce_word":"Sphinx","pos":"masculine noun","conjugations":["Sphinxes"]}
 {"me_word":"seek","inglisce_word":"síche","pos":"verb","conjugations":["sícs","soht","síching"]}
 {"me_word":"seeker","inglisce_word":"sícor","pos":"masculine noun","conjugations":["sícors"]}
 {"me_word":"strict","inglisce_word":"strict","pos":"adjective","conjugations":[]}
@@ -5594,7 +5594,7 @@
 {"me_word":"nudge","inglisce_word":"noge","pos":"verb","conjugations":["noges","noged","noging"]}
 {"me_word":"nudge","inglisce_word":"noge","pos":"masculine noun","conjugations":["noges"]}
 {"me_word":"never","inglisce_word":"nevre","pos":"adverb","conjugations":[]}
-{"me_word":"neptia","inglisce_word":"niece","pos":"masculine noun","conjugations":["nieces"]}
+{"me_word":"niece","inglisce_word":"niece","pos":"masculine noun","conjugations":["nieces"]}
 {"me_word":"nugget","inglisce_word":"noguet","pos":"masculine noun","conjugations":["noguets"]}
 {"me_word":"nurture","inglisce_word":"nourțure","pos":"masculine noun","conjugations":["nourțurs"]}
 {"me_word":"nurture","inglisce_word":"nourțure","pos":"verb","conjugations":["nourțures","nourțured","nourțuring"]}
@@ -5780,7 +5780,7 @@
 {"me_word":"drudge","inglisce_word":"droge","pos":"masculine noun","conjugations":["droges"]}
 {"me_word":"dash","inglisce_word":"dasce","pos":"verb","conjugations":["dasces","dasced","dascing"]}
 {"me_word":"dash","inglisce_word":"dasce","pos":"masculine noun","conjugations":["dasces"]}
-{"me_word":"divortium","inglisce_word":"divorce","pos":"feminine noun","conjugations":["divorces"]}
+{"me_word":"divorce","inglisce_word":"divorce","pos":"feminine noun","conjugations":["divorces"]}
 {"me_word":"divorce","inglisce_word":"divorce","pos":"verb","conjugations":["divorces","divorced","divorcing"]}
 {"me_word":"divorcé","inglisce_word":"divorcíe","pos":"feminine noun","conjugations":["divorcée","divorcís","divorcés"]}
 {"me_word":"democracy","inglisce_word":"democracie","pos":"feminine noun","conjugations":["democracis"]}
@@ -5796,7 +5796,7 @@
 {"me_word":"disciplinary","inglisce_word":"disceplinairy;","pos":"adjective","conjugations":["disceplinarie","disceplinairy;is"]}
 {"me_word":"disciplinarian","inglisce_word":"disceplinârian","pos":"feminine noun","conjugations":["disceplinârians"]}
 {"me_word":"discuss","inglisce_word":"descusse","pos":"verb","conjugations":["descusses","descussed","descussing"]}
-{"me_word":"discussio","inglisce_word":"descussion","pos":"feminine noun","conjugations":["descussions"]}
+{"me_word":"descussion","inglisce_word":"descussion","pos":"feminine noun","conjugations":["descussions"]}
 {"me_word":"deserve","inglisce_word":"desêve","pos":"verb","conjugations":["desêves","desêved","desêving"]}
 {"me_word":"disappear","inglisce_word":"disappire","pos":"verb","conjugations":["disappires","disappired","disappiring"]}
 {"me_word":"disappearance","inglisce_word":"disappirence","pos":"feminine noun","conjugations":["disappirences"]}
@@ -6052,20 +6052,20 @@
 {"me_word":"disclaim","inglisce_word":"desclâme","pos":"verb","conjugations":["desclâmes","desclâmed","desclâming"]}
 {"me_word":"disclaimer","inglisce_word":"desclâmeor","pos":"feminine noun","conjugations":["desclâmeors"]}
 {"me_word":"desert","inglisce_word":"deserte","pos":"verb","conjugations":["desertes","deserted","deserting"]}
-{"me_word":"desertum","inglisce_word":"desert","pos":"masculine noun","conjugations":["deserts"]}
+{"me_word":"desert","inglisce_word":"desert","pos":"masculine noun","conjugations":["deserts"]}
 {"me_word":"daughter","inglisce_word":"dautre","pos":"masculine noun","conjugations":["dautors"]}
 {"me_word":"dream","inglisce_word":"drieme","pos":"verb","conjugations":["driemes","driemed/draimpt","drieming"]}
 {"me_word":"dream","inglisce_word":"drieme","pos":"masculine noun","conjugations":["driems"]}
 {"me_word":"delicacy","inglisce_word":"delicacie","pos":"masculine noun","conjugations":["delicacis"]}
 {"me_word":"delicious","inglisce_word":"deliceus","pos":"adjective","conjugations":["deliceusly","deliceusness"]}
 {"me_word":"delectation","inglisce_word":"delectâcion","pos":"feminine noun","conjugations":["delectâcions"]}
-{"me_word":"delectabilis","inglisce_word":"delectable","pos":"adjective","conjugations":["delectableabils","delectably"]}
+{"me_word":"delectable","inglisce_word":"delectable","pos":"adjective","conjugations":["delectableabils","delectably"]}
 {"me_word":"delicate","inglisce_word":"delicat","pos":"adjective","conjugations":["delicatly","delicats"]}
 {"me_word":"delight","inglisce_word":"delîte","pos":"feminine noun","conjugations":["delîts","delîteful"]}
 {"me_word":"delight","inglisce_word":"delîte","pos":"verb","conjugations":["delîtes","delîted","delîting"]}
 {"me_word":"damn","inglisce_word":"damne","pos":"verb","conjugations":["damnes","damned","damning"]}
 {"me_word":"damnation","inglisce_word":"damnâcion","pos":"feminine noun","conjugations":["damnâcions"]}
-{"me_word":"damnabilis","inglisce_word":"damnable","pos":"adjective","conjugations":[]}
+{"me_word":"damnable","inglisce_word":"damnable","pos":"adjective","conjugations":[]}
 {"me_word":"dine","inglisce_word":"dîne","pos":"verb","conjugations":["dînes","dîned","dîning"]}
 {"me_word":"diner","inglisce_word":"dîneur;","pos":"masculine noun","conjugations":["dînor","dîneur;s"]}
 {"me_word":"dinner","inglisce_word":"dinor","pos":"masculine noun","conjugations":["dinors"]}
@@ -6101,7 +6101,7 @@
 {"me_word":"distort","inglisce_word":"distorte","pos":"verb","conjugations":["distortes","distorted","distorting"]}
 {"me_word":"distortion","inglisce_word":"distôrcion","pos":"feminine noun","conjugations":["distôrcions"]}
 {"me_word":"domineer","inglisce_word":"dominier","pos":"verb","conjugations":["dominires","dominired","dominiering"]}
-{"me_word":"documentum","inglisce_word":"document","pos":"masculine noun","conjugations":["documents"]}
+{"me_word":"document","inglisce_word":"document","pos":"masculine noun","conjugations":["documents"]}
 {"me_word":"document","inglisce_word":"documente","pos":"verb","conjugations":["documentes","documented","documenting"]}
 {"me_word":"debt","inglisce_word":"dete","pos":"masculine noun","conjugations":["dets"]}
 {"me_word":"deceive","inglisce_word":"decive","pos":"verb","conjugations":["decives","decived","deciving"]}
@@ -6153,7 +6153,7 @@
 {"me_word":"dawn","inglisce_word":"daone","pos":"masculine noun","conjugations":["daons"]}
 {"me_word":"divide","inglisce_word":"divîde","pos":"verb","conjugations":["divîdes","divîded","divîding"]}
 {"me_word":"divide","inglisce_word":"divîde","pos":"feminine noun","conjugations":["divîds"]}
-{"me_word":"divisio","inglisce_word":"division","pos":"feminine noun","conjugations":["divisions"]}
+{"me_word":"division","inglisce_word":"division","pos":"feminine noun","conjugations":["divisions"]}
 {"me_word":"divisional","inglisce_word":"divisional","pos":"adjective","conjugations":[]}
 {"me_word":"dividend","inglisce_word":"dividend","pos":"masculine noun","conjugations":["dividends"]}
 {"me_word":"divider","inglisce_word":"divîdeor","pos":"feminine noun","conjugations":["divîdeur","divîdeors"]}
@@ -6213,9 +6213,9 @@
 {"me_word":"dig","inglisce_word":"dighe","pos":"masculine noun","conjugations":["digs"]}
 {"me_word":"dominate","inglisce_word":"dominait","pos":"verb","conjugations":["dominaits","dominaited","dominaiting"]}
 {"me_word":"domination","inglisce_word":"dominâcion","pos":"feminine noun","conjugations":["dominâcions"]}
-{"me_word":"dominantem","inglisce_word":"dominant","pos":"adjective","conjugations":[]}
+{"me_word":"m","inglisce_word":"dominant","pos":"adjective","conjugations":[]}
 {"me_word":"domain","inglisce_word":"domâne","pos":"feminine noun","conjugations":["domâns"]}
-{"me_word":"","inglisce_word":"dominance","pos":"masculine noun","conjugations":[]}
+{"me_word":"dominance","inglisce_word":"dominance","pos":"masculine noun","conjugations":[]}
 {"me_word":"device","inglisce_word":"devîse","pos":"feminine noun","conjugations":["devîses"]}
 {"me_word":"devise","inglisce_word":"devîse","pos":"verb","conjugations":["devîses","devîsed","devîsing"]}
 {"me_word":"Wyoming","inglisce_word":"Uyóming","pos":"feminine noun","conjugations":[]}
@@ -6235,7 +6235,7 @@
 {"me_word":"awake","inglisce_word":"auâc","pos":"adjective","conjugations":[]}
 {"me_word":"wake","inglisce_word":"uâche","pos":"masculine noun","conjugations":["uaix"]}
 {"me_word":"would","inglisce_word":"uill","pos":"verb","conjugations":["oûd;","uon't","oûdn't"]}
-{"me_word":"will","inglisce_word":"uille","pos":"masculine noun","conjugations":["uils"]}
+{"me_word":"will","inglisce_word":"uille","pos":"masculine noun","conjugations":["uills"]}
 {"me_word":"West","inglisce_word":"Oest","pos":"feminine noun","conjugations":["Virgïnia"]}
 {"me_word":"West","inglisce_word":"oest","pos":"adjective","conjugations":["virgïnian","oests"]}
 {"me_word":"waste","inglisce_word":"uâste","pos":"adjective","conjugations":["uâsts;","uâstful"]}
@@ -6495,7 +6495,7 @@
 {"me_word":"under","inglisce_word":"ondre","pos":"preposition","conjugations":[]}
 {"me_word":"urge","inglisce_word":"urge","pos":"verb","conjugations":["urges","urged","urging"]}
 {"me_word":"urge","inglisce_word":"urge","pos":"masculine noun","conjugations":["urges"]}
-{"me_word":"urgentem","inglisce_word":"urgent","pos":"adjective","conjugations":["urgently"]}
+{"me_word":"urgent","inglisce_word":"urgent","pos":"adjective","conjugations":["urgently"]}
 {"me_word":"urgency","inglisce_word":"urgencie","pos":"masculine noun","conjugations":["urgencis"]}
 {"me_word":"undergo","inglisce_word":"ondregoe","pos":"verb","conjugations":["ondregoes","onderoaint","ondregaon","ondregouing"]}
 {"me_word":"undermine","inglisce_word":"ondremîne","pos":"verb","conjugations":["ondremînes","ondremîned","ondremîning"]}
@@ -6629,7 +6629,7 @@
 {"me_word":"menstruous","inglisce_word":"menstrus","pos":"adjective","conjugations":["menstrusly"]}
 {"me_word":"minus","inglisce_word":"mînus","pos":"preposition","conjugations":[]}
 {"me_word":"misconstrue","inglisce_word":"misconstreue","pos":"verb","conjugations":["misconstreues","misconstreued","misconstreuing"]}
-{"me_word":"minacia","inglisce_word":"menace","pos":"masculine noun","conjugations":["menaces"]}
+{"me_word":"menace","inglisce_word":"menace","pos":"masculine noun","conjugations":["menaces"]}
 {"me_word":"menace","inglisce_word":"menace","pos":"verb","conjugations":["menaces","menaced","menacing"]}
 {"me_word":"mango","inglisce_word":"mângo","pos":"masculine noun","conjugations":["mângos"]}
 {"me_word":"mane","inglisce_word":"mâne","pos":"masculine noun","conjugations":["mâns"]}
@@ -6656,7 +6656,7 @@
 {"me_word":"m","inglisce_word":"magic","pos":"adjective","conjugations":["magical","magicly"]}
 {"me_word":"magician","inglisce_word":"magician","pos":"feminine noun","conjugations":["magicians"]}
 {"me_word":"motive","inglisce_word":"môtif","pos":"adjective","conjugations":["môtifs"]}
-{"me_word":"motivus","inglisce_word":"motif","pos":"feminine noun","conjugations":["motifs"]}
+{"me_word":"motif","inglisce_word":"motif","pos":"feminine noun","conjugations":["motifs"]}
 {"me_word":"motion","inglisce_word":"mocion","pos":"masculine noun","conjugations":["mocions"]}
 {"me_word":"motion","inglisce_word":"mocione","pos":"verb","conjugations":["mociones","mocioned","mocioning"]}
 {"me_word":"main","inglisce_word":"maign","pos":"adjective","conjugations":["maigns"]}
@@ -6690,7 +6690,7 @@
 {"me_word":"malévolo","inglisce_word":"malèvelent","pos":"adjective","conjugations":["malèvelently"]}
 {"me_word":"malevolence","inglisce_word":"malèvelence","pos":"feminine noun","conjugations":[]}
 {"me_word":"mortar","inglisce_word":"mortre","pos":"masculine noun","conjugations":["mortars"]}
-{"me_word":"mulsum","inglisce_word":"mousse","pos":"feminine noun","conjugations":["mousses"]}
+{"me_word":"mousse","inglisce_word":"mousse","pos":"feminine noun","conjugations":["mousses"]}
 {"me_word":"mousse","inglisce_word":"mousse","pos":"verb","conjugations":["mousses","moussed","moussing"]}
 {"me_word":"match","inglisce_word":"max̃e","pos":"masculine noun","conjugations":["max̃es"]}
 {"me_word":"match","inglisce_word":"mac̃e","pos":"masculine noun","conjugations":["mac̃es"]}
@@ -6720,7 +6720,7 @@
 {"me_word":"mush","inglisce_word":"mosce","pos":"masculine noun","conjugations":[]}
 {"me_word":"manner","inglisce_word":"manere","pos":"masculine noun","conjugations":["manars"]}
 {"me_word":"mannerism","inglisce_word":"manerism","pos":"masculine noun","conjugations":["manerisms"]}
-{"me_word":"musca","inglisce_word":"mosquito","pos":"feminine noun","conjugations":["mosquitos"]}
+{"me_word":"mosquito","inglisce_word":"mosquito","pos":"feminine noun","conjugations":["mosquitos"]}
 {"me_word":"monk","inglisce_word":"monque","pos":"masculine noun","conjugations":["moncs"]}
 {"me_word":"monument","inglisce_word":"moñoment","pos":"masculine noun","conjugations":["moñoments"]}
 {"me_word":"monumental","inglisce_word":"moñomental","pos":"adjective","conjugations":[]}
@@ -6761,7 +6761,7 @@
 {"me_word":"might","inglisce_word":"maihte","pos":"masculine noun","conjugations":[]}
 {"me_word":"mighty","inglisce_word":"maihty","pos":"adjective","conjugations":["maihtyis"]}
 {"me_word":"medicine","inglisce_word":"mèdicine","pos":"masculine noun","conjugations":["medicins"]}
-{"me_word":"medicinalis","inglisce_word":"medicinal","pos":"adjective","conjugations":[]}
+{"me_word":"medicinal","inglisce_word":"medicinal","pos":"adjective","conjugations":[]}
 {"me_word":"moan","inglisce_word":"moane","pos":"verb","conjugations":["moanes","moaned","moaning"]}
 {"me_word":"moan","inglisce_word":"moane","pos":"masculine noun","conjugations":["moans"]}
 {"me_word":"bemoan","inglisce_word":"bemoane","pos":"verb","conjugations":["bemoanes","bemoaned","bemoaning"]}
@@ -6781,7 +6781,7 @@
 {"me_word":"militaristic","inglisce_word":"militaristic","pos":"adjective","conjugations":[]}
 {"me_word":"militarize","inglisce_word":"militaryse","pos":"verb","conjugations":["militaryses","militarysed","militarysing"]}
 {"me_word":"militarization","inglisce_word":"militarisâcion","pos":"feminine noun","conjugations":["militarisâcions"]}
-{"me_word":"militantem","inglisce_word":"militant","pos":"adjective","conjugations":["militants"]}
+{"me_word":"m","inglisce_word":"militant","pos":"adjective","conjugations":["militants"]}
 {"me_word":"militancy","inglisce_word":"militancie","pos":"masculine noun","conjugations":["militancis"]}
 {"me_word":"militate","inglisce_word":"militait","pos":"verb","conjugations":["militaits","militaited","militaiting"]}
 {"me_word":"material","inglisce_word":"matírial","pos":"adjective","conjugations":["matírially","matírials"]}
@@ -6827,7 +6827,7 @@
 {"me_word":"mow","inglisce_word":"moue","pos":"verb","conjugations":["moues","moued","mouing"]}
 {"me_word":"manor","inglisce_word":"mànore","pos":"masculine noun","conjugations":["manors"]}
 {"me_word":"manorial","inglisce_word":"manórial","pos":"adjective","conjugations":[]}
-{"me_word":"mansionem","inglisce_word":"mansion","pos":"masculine noun","conjugations":["mansions"]}
+{"me_word":"mansion","inglisce_word":"mansion","pos":"masculine noun","conjugations":["mansions"]}
 {"me_word":"mayonnaise","inglisce_word":"mànaiz","pos":"masculine noun","conjugations":[]}
 {"me_word":"mayo","inglisce_word":"mayo","pos":"masculine noun","conjugations":[]}
 {"me_word":"maim","inglisce_word":"maime","pos":"verb","conjugations":["maimes","maimed","maiming"]}
@@ -6864,7 +6864,7 @@
 {"me_word":"mutualism","inglisce_word":"múțualism","pos":"masculine noun","conjugations":[]}
 {"me_word":"mutualistic","inglisce_word":"muțualistic","pos":"adjective","conjugations":[]}
 {"me_word":"Mainer","inglisce_word":"maineur","pos":"adjective","conjugations":["maineurs"]}
-{"me_word":"melonem","inglisce_word":"melon","pos":"masculine noun","conjugations":["melons"]}
+{"me_word":"melon","inglisce_word":"melon","pos":"masculine noun","conjugations":["melons"]}
 {"me_word":"make","inglisce_word":"mâche","pos":"verb","conjugations":["mâcs","mâde","mâching"]}
 {"me_word":"make","inglisce_word":"mâc","pos":"masculine noun","conjugations":["maix"]}
 {"me_word":"member","inglisce_word":"membre","pos":"masculine noun","conjugations":["membars"]}
@@ -6978,7 +6978,7 @@
 {"me_word":"victorious","inglisce_word":"victórieus","pos":"adjective","conjugations":["victórieusly"]}
 {"me_word":"vase","inglisce_word":"vâss","pos":"masculine noun","conjugations":["vâsses"]}
 {"me_word":"veal","inglisce_word":"viele","pos":"masculine noun","conjugations":[]}
-{"me_word":"voiage","inglisce_word":"voyage","pos":"masculine noun","conjugations":["voyages"]}
+{"me_word":"voyage","inglisce_word":"voyage","pos":"masculine noun","conjugations":["voyages"]}
 {"me_word":"voyagier","inglisce_word":"voyagior","pos":"masculine noun","conjugations":["voyagiors"]}
 {"me_word":"verse","inglisce_word":"verse","pos":"feminine noun","conjugations":["verses"]}
 {"me_word":"versus","inglisce_word":"versus","pos":"preposition","conjugations":[]}
@@ -7045,7 +7045,7 @@
 {"me_word":"vaccinate","inglisce_word":"vaccinait","pos":"verb","conjugations":["vaccinaits","vaccinaited","vaccinaiting"]}
 {"me_word":"vaxx","inglisce_word":"vaxe","pos":"verb","conjugations":["vaxes","vaxed","vaxing"]}
 {"me_word":"vaxx","inglisce_word":"vax","pos":"masculine noun","conjugations":["vaxes"]}
-{"me_word":"","inglisce_word":"via","pos":"preposition","conjugations":[]}
+{"me_word":"via","inglisce_word":"via","pos":"preposition","conjugations":[]}
 {"me_word":"vair","inglisce_word":"vaire","pos":"masculine noun","conjugations":["vairs"]}
 {"me_word":"various","inglisce_word":"vârieus","pos":"adjective","conjugations":["vârieusly"]}
 {"me_word":"variable","inglisce_word":"vâriable","pos":"adjective","conjugations":["vâriableabils"]}
@@ -7060,7 +7060,7 @@
 {"me_word":"variety","inglisce_word":"varîetie","pos":"feminine noun","conjugations":["varîetis"]}
 {"me_word":"vote","inglisce_word":"vote","pos":"masculine noun","conjugations":["voats"]}
 {"me_word":"veer","inglisce_word":"vier","pos":"verb","conjugations":["vires","vired","viering"]}
-{"me_word":"visionem","inglisce_word":"vision","pos":"masculine noun","conjugations":["visions"]}
+{"me_word":"vision","inglisce_word":"vision","pos":"masculine noun","conjugations":["visions"]}
 {"me_word":"visionary","inglisce_word":"visionairy","pos":"adjective","conjugations":["visionarie","visionairyis"]}
 {"me_word":"visual","inglisce_word":"vișual","pos":"adjective","conjugations":["vișuals"]}
 {"me_word":"visually","inglisce_word":"vișally","pos":"adverb","conjugations":[]}
@@ -7088,7 +7088,7 @@
 {"me_word":"vinegary","inglisce_word":"vinagry","pos":"adjective","conjugations":[]}
 {"me_word":"vie","inglisce_word":"vîe","pos":"verb","conjugations":["vîes","vîed","vîhing"]}
 {"me_word":"vicar","inglisce_word":"vicre","pos":"masculine noun","conjugations":["vicars"]}
-{"me_word":"","inglisce_word":"vicarage","pos":"masculine noun","conjugations":["vicarages"]}
+{"me_word":"vicarage","inglisce_word":"vicarage","pos":"masculine noun","conjugations":["vicarages"]}
 {"me_word":"vicarious","inglisce_word":"vicârieus","pos":"adjective","conjugations":["vicârieusly"]}
 {"me_word":"vocal","inglisce_word":"vocal","pos":"adjective","conjugations":["vocals"]}
 {"me_word":"vocalize","inglisce_word":"vocalyse","pos":"verb","conjugations":["vocalyses","vocalysed","vocalysing"]}
@@ -7110,9 +7110,9 @@
 {"me_word":"voluntary","inglisce_word":"volontairy","pos":"adjective","conjugations":[]}
 {"me_word":"voluntarism","inglisce_word":"volontarism","pos":"masculine noun","conjugations":[]}
 {"me_word":"volunteerism","inglisce_word":"volontierism","pos":"feminine noun","conjugations":[]}
-{"me_word":"villaticum","inglisce_word":"village","pos":"masculine noun","conjugations":["villages"]}
+{"me_word":"village","inglisce_word":"village","pos":"masculine noun","conjugations":["villages"]}
 {"me_word":"villager","inglisce_word":"villagior","pos":"masculine noun","conjugations":["villagiors"]}
-{"me_word":"","inglisce_word":"villa","pos":"masculine noun","conjugations":["villas"]}
+{"me_word":"villa","inglisce_word":"villa","pos":"masculine noun","conjugations":["villas"]}
 {"me_word":"violet","inglisce_word":"vîlet","pos":"adjective","conjugations":["vîlets"]}
 {"me_word":"vault","inglisce_word":"vòlte","pos":"masculine noun","conjugations":["vòlts"]}
 {"me_word":"vault","inglisce_word":"vòlte","pos":"verb","conjugations":["vòltes","vòlted","vòlting"]}
@@ -7283,7 +7283,7 @@
 {"me_word":"camp","inglisce_word":"campe","pos":"masculine noun","conjugations":["camps"]}
 {"me_word":"campy","inglisce_word":"camp","pos":"adjective","conjugations":["campy"]}
 {"me_word":"camp","inglisce_word":"campe","pos":"verb","conjugations":["campes","camped","camping"]}
-{"me_word":"","inglisce_word":"campus","pos":"masculine noun","conjugations":["campuses"]}
+{"me_word":"campus","inglisce_word":"campus","pos":"masculine noun","conjugations":["campuses"]}
 {"me_word":"chide","inglisce_word":"chîde","pos":"verb","conjugations":["chîdes","chîded","chîding"]}
 {"me_word":"case","inglisce_word":"câss","pos":"masculine noun","conjugations":["câsses"]}
 {"me_word":"case-work","inglisce_word":"câss-uerc","pos":"masculine noun","conjugations":["câss-uercuêx"]}
@@ -7297,7 +7297,7 @@
 {"me_word":"casement","inglisce_word":"caissement","pos":"masculine noun","conjugations":["caissements"]}
 {"me_word":"encase","inglisce_word":"encaisse","pos":"verb","conjugations":["encaisses","encaissed","encaissing"]}
 {"me_word":"briefcase","inglisce_word":"briefcaiss","pos":"masculine noun","conjugations":["briefcaisses"]}
-{"me_word":"cassone","inglisce_word":"caisson","pos":"masculine noun","conjugations":["caissons"]}
+{"me_word":"caisson","inglisce_word":"caisson","pos":"masculine noun","conjugations":["caissons"]}
 {"me_word":"case-knife","inglisce_word":"caiss-nîfe","pos":"masculine noun","conjugations":["caiss-nîfenîfs"]}
 {"me_word":"chassis","inglisce_word":"chassis","pos":"masculine noun","conjugations":["chassies"]}
 {"me_word":"cassette","inglisce_word":"cassette","pos":"feminine noun","conjugations":["cassèts"]}
@@ -7314,7 +7314,7 @@
 {"me_word":"chock","inglisce_word":"c̃oc","pos":"masculine noun","conjugations":["c̃ox"]}
 {"me_word":"chock-full","inglisce_word":"c̃ocful","pos":"adjective","conjugations":[]}
 {"me_word":"confess","inglisce_word":"confesse","pos":"verb","conjugations":["confesses","confessed","confessing"]}
-{"me_word":"confessionem","inglisce_word":"confession","pos":"feminine noun","conjugations":["confessions"]}
+{"me_word":"confession","inglisce_word":"confession","pos":"feminine noun","conjugations":["confessions"]}
 {"me_word":"confessional","inglisce_word":"confessional","pos":"feminine noun","conjugations":["confessionals"]}
 {"me_word":"chaos","inglisce_word":"câoss","pos":"masculine noun","conjugations":[]}
 {"me_word":"chaotic","inglisce_word":"câotic","pos":"adjective","conjugations":["câoticly"]}
@@ -7455,7 +7455,7 @@
 {"me_word":"cranky","inglisce_word":"crânchy","pos":"adjective","conjugations":["crânchyily","crânchyiar","crânchyiest"]}
 {"me_word":"compensate","inglisce_word":"compensait","pos":"verb","conjugations":["compensaits","compensaited","compensaiting"]}
 {"me_word":"compensation","inglisce_word":"compensâcion","pos":"feminine noun","conjugations":["compensâcions"]}
-{"me_word":"compensare","inglisce_word":"compensable","pos":"adjective","conjugations":[]}
+{"me_word":"compensable","inglisce_word":"compensable","pos":"adjective","conjugations":[]}
 {"me_word":"compensatory","inglisce_word":"compensatory","pos":"adjective","conjugations":[]}
 {"me_word":"counter","inglisce_word":"cônter","pos":"verb","conjugations":["côntres","côntred","côntering"]}
 {"me_word":"counter","inglisce_word":"cônteur","pos":"masculine noun","conjugations":["côntor","cônteurs"]}
@@ -7474,7 +7474,7 @@
 {"me_word":"competitive","inglisce_word":"compètitif","pos":"adjective","conjugations":["compètitifvly"]}
 {"me_word":"competitor","inglisce_word":"compètitor","pos":"feminine noun","conjugations":["compètitors"]}
 {"me_word":"competitory","inglisce_word":"compètitory","pos":"adjective","conjugations":[]}
-{"me_word":"competens","inglisce_word":"competent","pos":"adjective","conjugations":["competently"]}
+{"me_word":"competent","inglisce_word":"competent","pos":"adjective","conjugations":["competently"]}
 {"me_word":"competence","inglisce_word":"competence","pos":"masculine noun","conjugations":["competences"]}
 {"me_word":"competency","inglisce_word":"competencie","pos":"masculine noun","conjugations":["competencis"]}
 {"me_word":"crude","inglisce_word":"crude","pos":"adjective","conjugations":["crudely","crudeness"]}
@@ -7672,9 +7672,9 @@
 {"me_word":"cough","inglisce_word":"coffe","pos":"verb","conjugations":["coffes","coffed","coffing"]}
 {"me_word":"cue","inglisce_word":"cúe","pos":"masculine noun","conjugations":["cús"]}
 {"me_word":"cue","inglisce_word":"cúe","pos":"verb","conjugations":["cúes","cúed","cúing"]}
-{"me_word":"carnalis","inglisce_word":"carnal","pos":"adjective","conjugations":[]}
+{"me_word":"carnal","inglisce_word":"carnal","pos":"adjective","conjugations":[]}
 {"me_word":"carnality","inglisce_word":"carnaletie","pos":"feminine noun","conjugations":["carnaletis"]}
-{"me_word":"carnaggio","inglisce_word":"carnage","pos":"masculine noun","conjugations":[]}
+{"me_word":"carnage","inglisce_word":"carnage","pos":"masculine noun","conjugations":[]}
 {"me_word":"close","inglisce_word":"clóss","pos":"adjective","conjugations":["clóssar","clóssest","clóssly"]}
 {"me_word":"closure","inglisce_word":"cloșure","pos":"masculine noun","conjugations":["cloșururs"]}
 {"me_word":"crush","inglisce_word":"crosce","pos":"verb","conjugations":["crosces","crosced","croscing"]}
@@ -7697,7 +7697,7 @@
 {"me_word":"calm","inglisce_word":"calme","pos":"masculine noun","conjugations":["calms"]}
 {"me_word":"center","inglisce_word":"center","pos":"verb","conjugations":["centres","centred","centering"]}
 {"me_word":"center","inglisce_word":"centre","pos":"masculine noun","conjugations":["centars"]}
-{"me_word":"centralis","inglisce_word":"central","pos":"adjective","conjugations":[]}
+{"me_word":"central","inglisce_word":"central","pos":"adjective","conjugations":[]}
 {"me_word":"centrality","inglisce_word":"centraletie","pos":"feminine noun","conjugations":["centraletis"]}
 {"me_word":"centralize","inglisce_word":"centralyse","pos":"verb","conjugations":["centralyses","centralysed","centralysing"]}
 {"me_word":"centralization","inglisce_word":"centralisâcion","pos":"feminine noun","conjugations":["centralisâcions"]}
@@ -7707,7 +7707,7 @@
 {"me_word":"conscious","inglisce_word":"consçeus","pos":"adjective","conjugations":["consçeusly","consçeusness"]}
 {"me_word":"adj)","inglisce_word":"conscient","pos":"obs","conjugations":[]}
 {"me_word":"cede","inglisce_word":"cide","pos":"verb","conjugations":["cides","cided","ciding"]}
-{"me_word":"cessionem","inglisce_word":"cession","pos":"masculine noun","conjugations":["cessions"]}
+{"me_word":"cession","inglisce_word":"cession","pos":"masculine noun","conjugations":["cessions"]}
 {"me_word":"cone","inglisce_word":"cone","pos":"masculine noun","conjugations":["coans"]}
 {"me_word":"carcass","inglisce_word":"carcass","pos":"masculine noun","conjugations":["carcasses"]}
 {"me_word":"contain","inglisce_word":"conteine","pos":"verb","conjugations":["conteines","conteined","conteining"]}
@@ -7719,7 +7719,7 @@
 {"me_word":"complex","inglisce_word":"complèx","pos":"adjective","conjugations":[]}
 {"me_word":"complex","inglisce_word":"complex","pos":"masculine noun","conjugations":["complexes"]}
 {"me_word":"complexity","inglisce_word":"complexetie","pos":"feminine noun","conjugations":["complexetis"]}
-{"me_word":"complexionem","inglisce_word":"complexion","pos":"feminine noun","conjugations":["complexions"]}
+{"me_word":"complexion","inglisce_word":"complexion","pos":"feminine noun","conjugations":["complexions"]}
 {"me_word":"corps","inglisce_word":"corps","pos":"masculine noun","conjugations":[]}
 {"me_word":"corpse","inglisce_word":"corpse","pos":"masculine noun","conjugations":["corpses"]}
 {"me_word":"corporate","inglisce_word":"corprat","pos":"adjective","conjugations":["corpratly"]}
@@ -7758,7 +7758,7 @@
 {"me_word":"cigarette","inglisce_word":"cigarette","pos":"feminine noun","conjugations":["cigarèts"]}
 {"me_word":"cite","inglisce_word":"cîte","pos":"verb","conjugations":["cîtes","cîted","cîting"]}
 {"me_word":"citation","inglisce_word":"citâcion","pos":"feminine noun","conjugations":["citâcions"]}
-{"me_word":"civilis","inglisce_word":"civil","pos":"adjective","conjugations":[]}
+{"me_word":"civil","inglisce_word":"civil","pos":"adjective","conjugations":[]}
 {"me_word":"civilize","inglisce_word":"civilyse","pos":"verb","conjugations":["civilyses","civilysed","civilysing"]}
 {"me_word":"civilization","inglisce_word":"civilisâcion","pos":"feminine noun","conjugations":["civilisâcions"]}
 {"me_word":"civilian","inglisce_word":"civillian","pos":"feminine noun","conjugations":[]}
@@ -7770,8 +7770,8 @@
 {"me_word":"continual","inglisce_word":"contiñual","pos":"adjective","conjugations":[]}
 {"me_word":"continuance","inglisce_word":"contiñuance","pos":"masculine noun","conjugations":[]}
 {"me_word":"concur","inglisce_word":"concurre","pos":"verb","conjugations":["concurs","concurred","concurring"]}
-{"me_word":"concurrens","inglisce_word":"concurrent","pos":"adjective","conjugations":["concurrently"]}
-{"me_word":"concurrentia","inglisce_word":"concurrence","pos":"feminine noun","conjugations":[]}
+{"me_word":"concurrent","inglisce_word":"concurrent","pos":"adjective","conjugations":["concurrently"]}
+{"me_word":"concurrence","inglisce_word":"concurrence","pos":"feminine noun","conjugations":[]}
 {"me_word":"convene","inglisce_word":"convine","pos":"verb","conjugations":["convines","convined","convining"]}
 {"me_word":"convenience","inglisce_word":"conviñence","pos":"feminine noun","conjugations":["conviñences"]}
 {"me_word":"convenient","inglisce_word":"conviñent","pos":"adjective","conjugations":["conviñently"]}
@@ -7802,9 +7802,9 @@
 {"me_word":"coconut","inglisce_word":"coconhot","pos":"masculine noun","conjugations":["coconhots"]}
 {"me_word":"critter","inglisce_word":"critre","pos":"masculine noun","conjugations":["critars"]}
 {"me_word":"crucify","inglisce_word":"crucifyhe","pos":"verb","conjugations":["crucifyhes","crucifyhed","crucifyhing"]}
-{"me_word":"cruci","inglisce_word":"crucifix","pos":"masculine noun","conjugations":["crucifixes"]}
+{"me_word":"crucifix","inglisce_word":"crucifix","pos":"masculine noun","conjugations":["crucifixes"]}
 {"me_word":"crucifixion","inglisce_word":"crucifix̦on","pos":"feminine noun","conjugations":["crucifix̦ons"]}
-{"me_word":"","inglisce_word":"crux","pos":"masculine noun","conjugations":["cruxes"]}
+{"me_word":"crux","inglisce_word":"crux","pos":"masculine noun","conjugations":["cruxes"]}
 {"me_word":"cruciform","inglisce_word":"cruciform","pos":"adjective","conjugations":[]}
 {"me_word":"cranium","inglisce_word":"crâniom","pos":"masculine noun","conjugations":["crânia"]}
 {"me_word":"cranial","inglisce_word":"crânial","pos":"adjective","conjugations":["crânially"]}
@@ -7822,7 +7822,7 @@
 {"me_word":"cello","inglisce_word":"c̃ello","pos":"masculine noun","conjugations":["c̃ellos"]}
 {"me_word":"commend","inglisce_word":"commende","pos":"verb","conjugations":["commendes","commended","commending"]}
 {"me_word":"commendation","inglisce_word":"commendâcion","pos":"feminine noun","conjugations":["commendâcions"]}
-{"me_word":"commendabilis","inglisce_word":"commendable","pos":"adjective","conjugations":["commendably"]}
+{"me_word":"commendable","inglisce_word":"commendable","pos":"adjective","conjugations":["commendably"]}
 {"me_word":"commendatory","inglisce_word":"commendatory","pos":"adjective","conjugations":[]}
 {"me_word":"claim","inglisce_word":"clâme","pos":"masculine noun","conjugations":["clâms"]}
 {"me_word":"claim","inglisce_word":"clâme","pos":"verb","conjugations":["clâmes","clâmed","clâming"]}
@@ -7946,7 +7946,7 @@
 {"me_word":"circulation","inglisce_word":"circulâcion","pos":"feminine noun","conjugations":["circulâcions"]}
 {"me_word":"circulator","inglisce_word":"circulaitor","pos":"masculine noun","conjugations":["circulaitors"]}
 {"me_word":"circulatory","inglisce_word":"circulatory","pos":"adjective","conjugations":[]}
-{"me_word":"κρίκος","inglisce_word":"circus","pos":"adjective","conjugations":["circuses"]}
+{"me_word":"m","inglisce_word":"circus","pos":"adjective","conjugations":["circuses"]}
 {"me_word":"circlet","inglisce_word":"circlet","pos":"masculine noun","conjugations":["circlets"]}
 {"me_word":"control","inglisce_word":"controle","pos":"verb","conjugations":["controles","controled","controling"]}
 {"me_word":"control","inglisce_word":"controle","pos":"feminine noun","conjugations":["contróls"]}
@@ -7956,7 +7956,7 @@
 {"me_word":"clam","inglisce_word":"clame","pos":"masculine noun","conjugations":["clams"]}
 {"me_word":"clam","inglisce_word":"clame","pos":"verb","conjugations":["clames","clamed","claming"]}
 {"me_word":"crevice","inglisce_word":"crevasse","pos":"masculine noun","conjugations":["crevasses"]}
-{"me_word":"crevace","inglisce_word":"crevasse","pos":"feminine noun","conjugations":["crevasses"]}
+{"me_word":"crevasse","inglisce_word":"crevasse","pos":"feminine noun","conjugations":["crevasses"]}
 {"me_word":"claw","inglisce_word":"claue","pos":"masculine noun","conjugations":["claus"]}
 {"me_word":"credible","inglisce_word":"credible","pos":"adjective","conjugations":[]}
 {"me_word":"cloud","inglisce_word":"clôud","pos":"masculine noun","conjugations":["clôuds"]}
@@ -7968,7 +7968,7 @@
 {"me_word":"cartoon","inglisce_word":"cartoune","pos":"feminine noun","conjugations":["cartouns"]}
 {"me_word":"cartoon","inglisce_word":"cartoune","pos":"verb","conjugations":["cartounes","cartouned","cartouning"]}
 {"me_word":"cartoonist","inglisce_word":"cartounist","pos":"feminine noun","conjugations":["cartounists"]}
-{"me_word":"commercium","inglisce_word":"commerce","pos":"masculine noun","conjugations":[]}
+{"me_word":"commerce","inglisce_word":"commerce","pos":"masculine noun","conjugations":[]}
 {"me_word":"commercial","inglisce_word":"commêrcial","pos":"adjective","conjugations":["commêrcials","commêrcially"]}
 {"me_word":"commercialism","inglisce_word":"commêrcialism","pos":"feminine noun","conjugations":[]}
 {"me_word":"commercialize","inglisce_word":"commêrcialyse","pos":"verb","conjugations":["commêrcialyses","commêrcialysed","commêrcialysing"]}
@@ -7981,7 +7981,7 @@
 {"me_word":"concretion","inglisce_word":"concrícion","pos":"feminine noun","conjugations":["concrícions"]}
 {"me_word":"concretize","inglisce_word":"concrityse","pos":"verb","conjugations":["concrityses","concritysed","concritysing"]}
 {"me_word":"compress","inglisce_word":"compresse","pos":"verb","conjugations":["compresses","compressed","compressing"]}
-{"me_word":"compressionem","inglisce_word":"compression","pos":"feminine noun","conjugations":["compressions"]}
+{"me_word":"compression","inglisce_word":"compression","pos":"feminine noun","conjugations":["compressions"]}
 {"me_word":"compressive","inglisce_word":"compressif","pos":"adjective","conjugations":[]}
 {"me_word":"clump","inglisce_word":"clompe","pos":"masculine noun","conjugations":["clomps"]}
 {"me_word":"clump","inglisce_word":"clompe","pos":"verb","conjugations":["clompes","clomped","clomping"]}
@@ -8058,7 +8058,7 @@
 {"me_word":"crumb","inglisce_word":"crome","pos":"masculine noun","conjugations":["croms"]}
 {"me_word":"concoct","inglisce_word":"concocte","pos":"verb","conjugations":["concocs","concocted","concocting"]}
 {"me_word":"concoction","inglisce_word":"concoccion","pos":"feminine noun","conjugations":["concoccions"]}
-{"me_word":"καμάρα","inglisce_word":"camera","pos":"masculine noun","conjugations":["cameras"]}
+{"me_word":"camera","inglisce_word":"camera","pos":"masculine noun","conjugations":["cameras"]}
 {"me_word":"cemetery","inglisce_word":"cemeteirie","pos":"masculine noun","conjugations":["cemeteiris"]}
 {"me_word":"crater","inglisce_word":"crâtor","pos":"masculine noun","conjugations":["crâtors"]}
 {"me_word":"course","inglisce_word":"corse","pos":"masculine noun","conjugations":["corses"]}
@@ -8218,7 +8218,7 @@
 {"me_word":"conciliation","inglisce_word":"conciliâcion","pos":"feminine noun","conjugations":["conciliâcions"]}
 {"me_word":"conciliatory","inglisce_word":"conciliatory","pos":"adjective","conjugations":[]}
 {"me_word":"concede","inglisce_word":"concide","pos":"verb","conjugations":["concides","concided","conciding"]}
-{"me_word":"concessionem","inglisce_word":"concession","pos":"feminine noun","conjugations":["concessions"]}
+{"me_word":"concession","inglisce_word":"concession","pos":"feminine noun","conjugations":["concessions"]}
 {"me_word":"concessive","inglisce_word":"concessif","pos":"adjective","conjugations":[]}
 {"me_word":"caulk","inglisce_word":"cauche","pos":"verb","conjugations":["caucs","cauched","cauching"]}
 {"me_word":"caulk","inglisce_word":"cauc","pos":"masculine noun","conjugations":["caux"]}
@@ -8268,5 +8268,5 @@
 {"me_word":"coast","inglisce_word":"coaste","pos":"masculine noun","conjugations":["coasts","coastal"]}
 {"me_word":"coast","inglisce_word":"coaste","pos":"verb","conjugations":["coastes","coasted","coasting"]}
 {"me_word":"coaster","inglisce_word":"coastor","pos":"masculine noun","conjugations":["coastors"]}
-{"me_word":"causa","inglisce_word":"cause","pos":"masculine noun","conjugations":["causes"]}
+{"me_word":"cause","inglisce_word":"cause","pos":"masculine noun","conjugations":["causes"]}
 {"me_word":"cause","inglisce_word":"cause","pos":"verb","conjugations":["causes","caused","causing"]}

@@ -17,22 +17,20 @@ const posMap = {
     'adjective': 'Adjective', 'adverb': 'Adverb', 'preposition': 'Preposition',
     'pronoun': 'Pronoun', 'conjunction': 'Conjunction', 'number': 'Value', 'num': 'Value',
     'article': 'Determiner', 'art': 'Determiner', 
-    'definite article': 'Determiner', 'indefinite article': 'Determiner'
+    'definite article': 'Determiner', 'indefinite article': 'Determiner',
+    'defin': 'Determiner', 'indefin': 'Determiner'
 };
 
-// Helper: Safely add a word pair to the brain, stripping dictionary typos (e.g. bleu(e -> bleue)
 function addWord(eng, inglisce, pos) {
     if (!eng || !inglisce) return;
-    
     const cleanEng = eng.toLowerCase().trim();
     const cleanIng = inglisce.replace(/[.,!?()[\]{}]/g, '').trim();
-
     brain[cleanEng] = brain[cleanEng] || {};
     brain[cleanEng][pos] = brain[cleanEng][pos] || cleanIng;
 }
 
 async function compile() {
-    console.log('🧠 Compiling Translation Brain with Explicit Morphology...');
+    console.log('🧠 Compiling Translation Brain with Forced POS Tags...');
 
     if (!fs.existsSync(JSONL_FILE)) {
         console.error(`❌ JSONL file not found at ${JSONL_FILE}!`);
@@ -49,7 +47,8 @@ async function compile() {
         const engWord = data.me_word;
         const inglisceWord = data.inglisce_word;
         const posCategory = posMap[data.pos] || 'Unknown';
-        const conjugations = data.conjugations || [];
+        
+        const conjugations = (data.conjugations || []).filter(w => !w.startsWith('['));
 
         if (!engWord || !inglisceWord || posCategory === 'Unknown') continue;
 
@@ -58,38 +57,34 @@ async function compile() {
 
         // 2. Map Verbs
         if (posCategory === 'Verb' && conjugations.length > 0) {
-            const doc = nlp(engWord);
-            const conj = doc.verbs().conjugate()[0]; // Gets English variations
+            const doc = nlp(engWord).tag('Verb');
+            const conj = doc.verbs().conjugate()[0];
 
             if (conj) {
-                // [0] = present 3rd (-s), [1] = past (-ed), [last] = gerund (-ing)
                 addWord(conj.PresentTense, conjugations[0], 'Verb');
                 
-                if (conjugations.length >= 2) {
+                if (conjugations.length === 3) {
                     addWord(conj.PastTense, conjugations[1], 'Verb');
-                }
-                
-                if (conjugations.length >= 3) {
-                    // Always grab the last item in the array for the Gerund
-                    addWord(conj.Gerund, conjugations[conjugations.length - 1], 'Verb');
+                    addWord(conj.Participle, conjugations[1], 'Verb');
+                    addWord(conj.Gerund, conjugations[2], 'Verb');
+                } else if (conjugations.length >= 4) {
+                    addWord(conj.PastTense, conjugations[1], 'Verb');
+                    addWord(conj.Participle, conjugations[2], 'Verb');
+                    addWord(conj.Gerund, conjugations[3], 'Verb');
                 }
             }
         }
 
-        // 3. Map Nouns (Plurals)
+        // 3. Map Nouns
         if (posCategory === 'Noun' && conjugations.length > 0) {
-            const doc = nlp(engWord);
+            const doc = nlp(engWord).tag('Noun');
             const englishPlural = doc.nouns().toPlural().text('normal');
-
-            if (englishPlural) {
-                addWord(englishPlural, conjugations[0], 'Noun');
-            }
+            if (englishPlural) addWord(englishPlural, conjugations[0], 'Noun');
         }
     }
 
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify(brain, null, 2));
     console.log(`✅ Brain compiled to ${OUTPUT_FILE}`);
-    console.log(`📊 Loaded ${Object.keys(brain).length} total English forms!`);
 }
 
 compile();
