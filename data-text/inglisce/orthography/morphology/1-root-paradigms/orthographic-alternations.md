@@ -34,7 +34,6 @@ These verbs strip down to a lean **-c** base for 1st/2nd person and take **-cs**
 | **to cróche** | I, you, uie croac; hie croacs| cróched | cróching | cróc, croax |
 | **to þainche** | I, you, uie þainc; hie þaincs | þainched | þainching | þaincs |
 
-
 ### Irregular ⟨-che⟩ Conjugations
 These verbs feature an internal vowel shift in the past tense/participle, but follow the standard present-tense velar reduction.
 
@@ -228,10 +227,6 @@ When a polysyllabic word requires the `/ʃ/` sound in a medial position (often w
 
 ---
 
----
-
----
-
 ## 7. The Palatal Nasal Reduction (⟨-gne⟩ and ⟨-einte⟩)
 
 Verbs derived from French and Latin roots containing the palatal nasal cluster (historically *-gn-* or *-eind-*) carry a heavy orthographic weight in their active forms. 
@@ -240,7 +235,7 @@ When these roots transition into static nouns, adjectives, or past participles, 
 
 ### The ⟨-gne⟩ to ⟨-aîn-⟩ Shift
 
-In verbs utilizing the **-gne** ending, the **g** is dropped entirely when deriving the noun or adjective. To mark this lost etymological weight and protect the long `/eɪ/` vowel sound, Inglisce shifts the base vowel to **ai** and deploys the circumflex (**î**) depending on the consonant structure of the derived word.
+In verbs utilizing the **-gne** (or **-gnte**) endings, the **g** is dropped entirely when deriving the noun or adjective. To mark this lost etymological weight and protect the long `/eɪ/` vowel sound, Inglisce shifts the base vowel to **ai** and deploys the circumflex (**î**) depending on the consonant structure of the derived word.
 
 **The Rule of Vowel Protection:**
 A final silent `-e` can only reach across a *single* consonant to elongate a vowel. Therefore, the circumflex is deployed mechanically to cover the gaps where the `-e` fails:
@@ -249,13 +244,13 @@ A final silent `-e` can only reach across a *single* consonant to elongate a vow
 * **Consonant Clusters:** Because the silent `-e` cannot reach across two consonants, derived words ending in a cluster (like `-nte`) must deploy the circumflex immediately, even in their singular forms, to prevent the vowel from shortening (*constraînte*, *complaînte*).
 
 | Infinitive Verb | Derived Nouns / Adjectives |
-| :--- | :--- | 
-| to **traigne** | **traine**, **traîns** | 
-| to **straigne** | **straine**, **straîns** | 
+| :--- | :--- |
+| to **traigne** | **traine**, **traîns** |
+| to **staigne** | **staine**, **staîns** |
 | to **constraigne** | **constraînte**, **constraînts** |
 | to **complaigne** | **complaînte**, **complaînts**; **complaînant** |
 | to **restraigne** | **restraînte**, **restraînts** |
-| to **attaigne** | **attaînable**, **attainement** | 
+| to **attaigne** | **attaînable**, **attainement** |
 | to **taignte** | **taînte**, **taînts** |
 
 ### The Static ⟨-einte⟩ Roots
