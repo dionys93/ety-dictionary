@@ -1,76 +1,79 @@
-import fs from 'node:fs';
-import path from 'node:path';
+import fs from 'fs';
+import path from 'path';
 import nlp from 'compromise';
 
-// Load the compiled brain
-const brainPath = path.resolve('./scripts/translationBrain.json');
-if (!fs.existsSync(brainPath)) {
-    console.error('❌ Brain not found! Run "node scripts/compileBrain.js" first.');
+// 1. Capture CLI Arguments
+const args = process.argv.slice(2);
+const inputFile = args[0];
+
+// Default output path if the user only provides an input file
+// Note: import.meta.dirname replaces __dirname in modern Node.js ES modules
+const defaultOut = path.join(import.meta.dirname, '..', 'dist', 'test_transcription.txt');
+const outputFile = args[1] || defaultOut;
+
+if (!inputFile) {
+    console.error('❌ Error: Missing input file.');
+    console.log('Usage: node scripts/transcribe.js <path/to/input.txt> [path/to/output.txt]');
     process.exit(1);
 }
-const brain = JSON.parse(fs.readFileSync(brainPath, 'utf-8'));
 
-// NEEDS REFACTORED
-// The file you want to translate, and where to save it
-const INPUT_FILE = path.resolve('./books/poems/the-road-not-taken.txt');
-const OUTPUT_FILE = path.resolve('./books/inglisce-poems/the-road-not-taken.txt');
+// 2. Define Paths
+const brainPath = path.join(import.meta.dirname, '..', 'dist', 'translationBrain.json');
 
-function transcribe() {
-    console.log(`📖 Reading: ${INPUT_FILE}`);
-    const rawText = fs.readFileSync(INPUT_FILE, 'utf-8');
-    
-    // Parse the entire document with NLP
-    let doc = nlp(rawText);
-
-    // Loop through every single word token
-    doc.terms().forEach((term) => {
-        // Get the base dictionary form of the word (e.g., "leaves" -> "leaf")
-        const baseWord = term.machineBase() || term.text('normal');
-        const entry = brain[baseWord];
-
-        if (entry) {
-            let replacement = null;
-
-            // Check the NLP tags against our Brain POS categories
-            if (term.has('#Verb') && entry['Verb']) {
-                replacement = entry['Verb'];
-                // NOTE: Morphological rules (adding -s, -ing, -ed) to the replacement would go here.
-            } 
-            else if (term.has('#Noun') && entry['Noun']) {
-                replacement = entry['Noun'];
-                // NOTE: Plural rules (adding -s) would go here.
-            }
-            else if (term.has('#Adjective') && entry['Adjective']) {
-                replacement = entry['Adjective'];
-            }
-            else if (term.has('#Adverb') && entry['Adverb']) {
-                replacement = entry['Adverb'];
-            }
-
-            // If we found a valid replacement for this part of speech, swap it!
-            if (replacement) {
-                // Check if the original word was Capitalized or UPPERCASE and match it
-                if (term.has('#TitleCase')) {
-                    replacement = replacement.charAt(0).toUpperCase() + replacement.slice(1);
-                } else if (term.text() === term.text().toUpperCase()) {
-                    replacement = replacement.toUpperCase();
-                }
-
-                // Replace the word, but keep the surrounding punctuation and whitespace
-                term.replaceWith(replacement, { keepTags: true, keepCase: false });
-            }
-        }
-    });
-
-    // Ensure the output directory exists
-    const outDir = path.dirname(OUTPUT_FILE);
-    if (!fs.existsSync(outDir)) {
-        fs.mkdirSync(outDir, { recursive: true });
-    }
-
-    // Save the translated text
-    fs.writeFileSync(OUTPUT_FILE, doc.text());
-    console.log(`✅ Transcribed successfully to: ${OUTPUT_FILE}`);
+// 3. Validation Checks
+if (!fs.existsSync(inputFile)) {
+    console.error(`❌ Error: Cannot find input file at ${inputFile}`);
+    process.exit(1);
 }
 
-transcribe();
+if (!fs.existsSync(brainPath)) {
+    console.error('❌ Error: translationBrain.json is missing.');
+    console.log('👉 Tip: Run `node scripts/compileBrain.js` first.');
+    process.exit(1);
+}
+
+// 4. Load Data
+console.log(`🧠 Loading Translation Brain...`);
+const brain = JSON.parse(fs.readFileSync(brainPath, 'utf8'));
+const text = fs.readFileSync(inputFile, 'utf8');
+
+// Helper function to resolve the correct POS translation
+const getReplacement = (term, brainEntry) => {
+    if (term.has('#Noun') && brainEntry.Noun) return brainEntry.Noun;
+    if (term.has('#Verb') && brainEntry.Verb) return brainEntry.Verb;
+    if (term.has('#Adjective') && brainEntry.Adjective) return brainEntry.Adjective;
+    
+    // Fallback: grab the first available translation
+    const firstKey = Object.keys(brainEntry)[0];
+    return brainEntry[firstKey];
+};
+
+// 5. NLP Parsing & Transcription
+console.log(`🤖 Transcribing: ${inputFile}...`);
+const doc = nlp(text);
+
+// Iterate through every word in the document
+doc.terms().forEach((term) => {
+    // Get the normalized version of the word (lowercase, stripped of punctuation)
+    const normal = term.text('normal');
+    
+    // Check if the word exists in our compiled dictionary
+    if (brain[normal]) {
+        const replacement = getReplacement(term, brain[normal]);
+
+        // Apply replacement while preserving original casing and whitespace
+        if (replacement) {
+            term.replaceWith(replacement, { keepTags: true, keepCase: true });
+        }
+    }
+});
+
+// 6. Save Output
+const outDir = path.dirname(outputFile);
+if (!fs.existsSync(outDir)) {
+    fs.mkdirSync(outDir, { recursive: true });
+}
+
+fs.writeFileSync(outputFile, doc.text(), 'utf8');
+console.log(`✅ Transcription complete!`);
+console.log(`📄 Saved to: ${outputFile}`);
