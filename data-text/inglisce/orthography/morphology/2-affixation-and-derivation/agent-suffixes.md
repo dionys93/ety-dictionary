@@ -1,73 +1,83 @@
 # Agent Nouns in Inglisce
 
-In Modern English, the Germanic suffix **-er** (from Old English *-ere*) has become a chaotic, catch-all ending for almost any noun performing an action, completely swallowing the historical Latin **-or** (e.g., *actor*, *dictator*) and the French **-eur** (e.g., *chanteur*). 
+In Modern English, the Germanic suffix -er (from Old English -ere) has evolved into a highly productive but chaotic catch-all. While remnants of the Latin -or (e.g., actor, dictator) and French -eur (e.g., amateur, saboteur) certainly survive, their structural boundaries have severely eroded. Modern English frequently overwrites Romance roots with -er and applies it indiscriminately to both human professions and mechanical tools, stripping away historical and semantic clarity.
 
-**Inglisce** breaks away from this ambiguous Modern English default. Instead, it synthesizes its historical roots, deploying the French **-eur** and the Latin **-or** to create strict, predictable orthographic rules. These suffixes not only map phonetic reality but also explicitly distinguish between human professions and mechanical instruments.
-
----
-
-## 1. The General Formation Rule
-
-The default agent noun for a standard verb in Inglisce takes the French-derived **-eur** suffix. However, when dealing with specific hard or soft terminal consonants, the suffix mechanically shifts to the Latin **-or** to protect the pronunciation.
-
-### The Velar Shedding Rule 
-When a verb ends in **-che**, **-gue**, or **-que**, the modifying letter (`h` or `u`) is used as a shield to keep the consonant hard before the final silent `e`. 
-
-When forming the agent noun, Inglisce drops this bulky shield and attaches **-or**. Because `c` and `g` are naturally hard before the back vowel `o`, the spelling becomes incredibly sleek without losing its phonetic integrity.
-
-### Soft Consonant Preservation
-Conversely, when verbs end in a soft **-ce** (`/s/`) or soft **-ge** (`/dʒ/`), they also shift to the **-or** suffix. To prevent the 'c' and 'g' from accidentally hardening before the 'o', Inglisce uses orthographic markers to lock the soft pronunciation in place:
-* For **-ce**, the 'c' takes a cedilla (**ç**) before adding **-or**.
-* For **-ge**, an **i** is inserted before the **-or** to protect the soft 'g'.
+**Inglisce** breaks away from this ambiguous default. Instead, it synthesizes its historical roots, deploying the Germanic **-er**, the French **-eur**, and the Latin **-or** to create strict, predictable orthographic rules. These suffixes not only map phonetic reality and syllable stress but also explicitly distinguish between human professions and mechanical instruments.
 
 ### Orthographic Pattern
 | Verb Ending | Agent Suffix | Structural Logic | Inglisce Examples |
 | :--- | :--- | :--- | :--- |
-| **-e** | **-eur** | The standard default replacement. | peinte → **peinteur**, tiec̃e → **tiec̃eur** |
-| **-che** | **-cor** | Sheds the `h`, as `c` is hard before `o`. | bâche → **bâcor**, spieche → **spiecor** |
-| **-gue** | **-gor** | Sheds the `u`, as `g` is hard before `o`. | singue → **singor** |
-| **-que** | **-cor** | Standardizes the `qu` to a hard `c` before `o`. | bânque → **bâncor** |
-| **-ce** | **-çor** | Uses a cedilla to preserve the soft `/s/`. | juce → **juçor**, spâce → **spâçor** |
-| **-ge** | **-gior** | Inserts an `i` to preserve the soft `/dʒ/`. | manage → **managior** |
+| **-e** | **-er** | Typically animate agents, Monosyllabic | **peinter**, **dancer**, **attaquer** |
+| **-e** | **-or** | Typically inanimate agents/instruments, Monosyllabic | **clínor**, **spâçor**, **spiecor** |
+| **-e** | **-eur / -eor** | Mono/Polysyllabic with stress on the penultimate syllable | **acteur**, **inspecteur**, **compacteor** |
+| **-ait, -it** | **-or** | Formal/technical actors, Always | **dictaitor**, **èditor** |
 
-### Standard Formations
+---
+
+## 1. The ⟨-er⟩ Suffix (Monosyllabic / Animate)
+
+For short, native Germanic roots and fully assimilated monosyllabic verbs, the default suffix for a human agent or active profession is the ancestral **-er**. 
+
+Because this suffix begins with the front vowel `e`, it interacts predictably with Inglisce's consonant-shielding rules. Verbs ending in modifying letters (like the `u` in `-gue` or the `qu` in `-que`) retain their spelling to protect the hard consonant sound before the suffix.
+
+| Inglisce Verb | Agent Noun | Structural Logic |
+| :--- | :--- | :--- |
+| to **peinte** | **peinter** | Standard `-e` drop. |
+| to **tiec̃e** | **tiec̃er** | Standard `-e` drop. |
+| to **singue** | **singuer** | Retains `u` to keep `g` hard before `e`. |
+| to **bânque** | **bânquer** | Retains `qu` to keep the hard `/k/` sound. |
+| to **attaque** | **attaquer** | Retains `qu` to keep the hard `/k/` sound. |
+| to **cline** | **cliner** | Standard `-e` drop. |
+| to **dance** | **dancer** | `c` remains naturally soft before `e`. |
+| to **sêve** | **sêver** | Standard `-e` drop. |
+| to **r̃aite** | **r̃aiter** | Standard `-e` drop. |
+
+---
+
+## 2. The ⟨-eur⟩ and ⟨-eor⟩ Suffixes (Penultimate Stress)
+
+Verbs carrying heavier phonetic weight—specifically those where the spoken stress falls firmly on the penultimate (second-to-last) syllable—reject the light Germanic suffix. Instead, they take the heavier Romance **-eur** (or occasionally **-eor**) suffix. 
+
+This category predominantly catches French and Latin imports (like verbs ending in the heavy `-cte` cluster). The heavier suffix visually balances the phonetic weight of the unstressed final syllable while clearly marking the word's Romance lineage.
+
 | Inglisce Verb | Agent Noun |
 | :--- | :--- |
 | to **acte** | **acteur** |
-| to **bâche** | **bâcor** |
-| to **bânque** | **bâncor** |
 | to **commande** | **commandeur** |
-| to **compute** | **computeur** |
+| to **collecte** | **collecteur** |
+| to **compacte** | **compacteor** |
+| to **electe** | **electeur** |
 | to **infecte** | **infecteur** |
-| to **juce** | **juçor** |
-| to **manage** | **managior** |
-| to **peinte** | **peinteur** |
-| to **r̃aite** | **r̃aiteur** |
-| to **singue** | **singor** |
-| to **spâce** | **spâçor** |
-| to **spieche** | **spiecor** |
-| to **tiec̃e** | **tiec̃eur** |
+| to **inspecte** | **inspecteur** |
 
 ---
 
-## 2. Semantic Contrast Pairs (Human vs. Instrument)
+## 3. Semantic Contrast Pairs (Human vs. Instrument)
 
-While Modern English uses *-er* for both people and machines (e.g., a person who cleans is a *cleaner*; a chemical product is a *cleaner*), Inglisce creates a strict semantic split. 
+One of the greatest flaws in Modern English is the failure to distinguish between a person performing an action and a machine performing that same action (e.g., a person who cleans is a *cleaner*; a chemical product is also a *cleaner*). 
 
-When a root can refer to both, Inglisce uses **-eur** to denote a human profession or active agent, and **-or** (often accompanied by an accent to lock the pronunciation) to denote a mechanical instrument, tool, or object.
+Inglisce repairs this collision by creating a strict semantic split for monosyllabic roots. When a verb can refer to both, Inglisce uses **-er** to denote a human profession or active agent, and the Latinate **-or** to denote a mechanical instrument, tool, or physical object.
+
+**Orthographic Protection:** Because the `-or` suffix begins with a back vowel (`o`), it threatens the pronunciation of soft consonants and long vowels. 
+* To protect a soft `/s/`, Inglisce utilizes the cedilla (**ç**) (e.g., `spâçor`). 
+* To protect a long vowel when the silent `-e` is dropped, an acute accent is deployed to lock the length (e.g., `cline` → `clínor`).
 
 | Inglisce Verb | Human Agent / Profession | Mechanical Instrument / Object / Location |
 | :--- | :--- | :--- |
-| to **cline** | **clineur** | **clínor** |
-| to **dîne** | **dîneur** | **dînor** |
-| to **strime** | **strimeur** | **strímor** |
-| to **sêve** | **sêveur** | **sêvor** |
+| to **cline** | **cliner** | **clínor** |
+| to **dîne** | **dîner** | **dînor** |
+| to **juce** | -- | **juçor** |
+| to **spâce** | -- | **spâçor** | 
+| to **spieche** | **spiecher** | **spiecor** |
+| to **strime** | **strimer** | **strímor** |
+| to **sêve** | **sêver** | **sêvor** |
+| to **manage** | -- | **managior** |
 
 ---
 
-## 3. Verbs Ending in ⟨-ait⟩ 
+## 4. Verbs Ending in ⟨-ait⟩ and ⟨-it⟩ 
 
-Verbs ending in the **-ait** suffix typically describe official roles, technical functions, or formal actors. Drawing directly from their Latin origins (*-ator*), these verbs form their agent nouns strictly with the **-or** suffix. 
+Verbs ending in the **-ait** or **-it** suffixes typically describe official roles, technical functions, or formal actors. Drawing directly from their Latin participial origins (*-ator* and *-itor*), these verbs completely bypass the animate/inanimate split. They form their agent nouns strictly and universally with the **-or** suffix. 
 
 *Note: The primary stress remains firmly anchored on the first syllable.*
 
@@ -77,17 +87,16 @@ Verbs ending in the **-ait** suffix typically describe official roles, technical
 | to **demonstrait** | **demonstraitor** |
 | to **dictait** | **dictaitor** |
 | to **dónait** | **dónaitor** |
+| to **èdit** | **èditor** |
 | to **navigait** | **navigaitor** |
 
 ---
 
-## 4. The ⟨-graph⟩ Derivatives
+## 5. The ⟨-graph⟩ Derivatives
 
-Words ending in the Greek root **-graph** (denoting writing, recording, or description) represent highly technical or professional roles. Like the formal `-ait` verbs, these derivatives bypass the standard `-eur` and take the Latinate **-or** for agent formation.
+Words ending in the Greek root **-graph** (denoting writing, recording, or description) represent highly technical or professional roles. Much like the formal Latinate verbs, these Hellenic derivatives bypass the standard suffixes and take the heavy **-or** for agent formation, aligning them visually with other technical scientific disciplines.
 
 | Inglisce Base | Professional Agent Noun |
 | :--- | :--- |
 | **fótograph** | **fotographor** |
 | **îconograph** | **îconographor** |
-
----
