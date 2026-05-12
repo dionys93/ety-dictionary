@@ -225,3 +225,57 @@ When a polysyllabic word requires the `/ʃ/` sound in a medial position (often w
 | **omnisçent** | omniscient |
 | **consçienteus** | conscientious |
 | **consçeus** | conscious |
+
+---
+
+---
+
+---
+
+## 7. The Palatal Nasal Reduction (⟨-gne⟩ and ⟨-einte⟩)
+
+Verbs derived from French and Latin roots containing the palatal nasal cluster (historically *-gn-* or *-eind-*) carry a heavy orthographic weight in their active forms. 
+
+When these roots transition into static nouns, adjectives, or past participles, they must simplify their consonant clusters. How they do this depends on whether they carry the heavy **g** from the *-gn-* roots, or the dental **t** from the *-eind-* roots.
+
+### The ⟨-gne⟩ to ⟨-aîn-⟩ Shift
+
+In verbs utilizing the **-gne** ending, the **g** is dropped entirely when deriving the noun or adjective. To mark this lost etymological weight and protect the long `/eɪ/` vowel sound, Inglisce shifts the base vowel to **ai** and deploys the circumflex (**î**) depending on the consonant structure of the derived word.
+
+**The Rule of Vowel Protection:**
+A final silent `-e` can only reach across a *single* consonant to elongate a vowel. Therefore, the circumflex is deployed mechanically to cover the gaps where the `-e` fails:
+
+* **Single Consonants:** Singular nouns ending in a single `n` rely on the final `-e` to protect the vowel length (*traine*). However, when that `-e` is dropped to form a plural or attach a suffix, the circumflex steps in to anchor the sound (*traîns*, *attaînable*).
+* **Consonant Clusters:** Because the silent `-e` cannot reach across two consonants, derived words ending in a cluster (like `-nte`) must deploy the circumflex immediately, even in their singular forms, to prevent the vowel from shortening (*constraînte*, *complaînte*).
+
+| Infinitive Verb | Derived Nouns / Adjectives |
+| :--- | :--- | 
+| to **traigne** | **traine**, **traîns** | 
+| to **straigne** | **straine**, **straîns** | 
+| to **constraigne** | **constraînte**, **constraînts** |
+| to **complaigne** | **complaînte**, **complaînts**; **complaînant** |
+| to **restraigne** | **restraînte**, **restraînts** |
+| to **attaigne** | **attaînable**, **attainement** | 
+| to **taignte** | **taînte**, **taînts** |
+
+### The Static ⟨-einte⟩ Roots
+For Romance roots that historically ended in *-eind-* (like *peindre*), the active verb compresses into a stable **-einte** base in Inglisce. Because the consonant cluster is already simplified and lacks the bulky `g`, the base remains completely static when moving from the verb to the noun.
+
+| Infinitive Verb | Derived Nouns | Structural Logic |
+| :--- | :--- | :--- |
+| to **peinte** | **peinte**, **peints** | Base remains static; simple `s` pluralization. |
+
+### Etymological Divergence (Homophone Splits)
+In cases where two completely unrelated etymological roots collided to form identical words in Modern English, Inglisce utilizes the **-ei-** vs **-ai-** distinction to visually separate them into distinct lexical items. 
+
+A prime example is the collision of the verb "refrain" (to hold back) and the noun "refrain" (a song chorus). Because they do not share a root, they are not a derivational pair. Inglisce splits them permanently: the verb takes the **-ei-** spelling, while the noun takes the **-ai-** spelling (deploying the circumflex in the plural to protect the vowel).
+
+Similarly, the word "strain" has two completely disconnected origins: one from Latin (to draw tight) and one from Old English (lineage or breed). Inglisce visually separates the native Old English noun from the imported Romance derivational family.
+
+| Word Type | Etymological Root | Inglisce Spelling | Plural / Conjugation |
+| :--- | :--- | :--- | :--- |
+| **Active Verb** (to hold back) | Latin *refrenare* (to bridle) | to **refreine** | refreine(s, refreined, refreining |
+| **Static Noun** (song chorus) | Latin *refringere* (to break) | **refraine** | refraîns |
+| **Active Verb** (to draw tight) | Latin *stringere* (to bind) | to **straigne** | straigne(s, straigned, straigning |
+| **Derived Noun** (tension/effort)| Derived from *straigne* | **straine** | straîns |
+| **Static Noun** (lineage/breed) | Old English *strēon* (begetting) | **streine** | streins |
