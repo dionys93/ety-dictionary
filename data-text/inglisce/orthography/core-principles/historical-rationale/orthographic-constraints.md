@@ -107,3 +107,22 @@ Furthermore, in words ending in *-ium* (like *Belgium*), retaining the *u* would
 * This replacement does not constitute a general ⟨u → o⟩ rule.
 * It is distinct from ⟨eu⟩, which marks reduced central vowels in closed Germanic roots under different constraints.
 * Forms are lexically restricted and should not be extended analogically.
+
+---
+
+## 4. The ⟨-v-⟩ + ⟨-l-⟩ Spelling Rule
+
+While many liquid stems compress their consonants together natively (e.g., *circle*, *stâple*), the voiced fricative **v** cannot cluster directly with **l** in Inglisce orthography. 
+
+To prevent the illegal **-vle** sequence, roots containing this phonetic combination permanently build an **-e-** into the base spelling between the two consonants. Because this is a stable spelling rule rather than an alternation, these words conjugate and pluralize with absolute regularity—simply dropping their final, structural **-e** to attach suffixes like any other word.
+
+| Modern English | Inglisce Base | Conjugations / Plurals |
+| :--- | :--- | :--- |
+| **travel** | to **travele** | travele(s, traveled, traveling; travels |
+| **gravel** | **gravele** | gravels |
+| **shovel** | to **siovele** | siovele(s, sioveled, sioveling; siovels |
+| **navel** | **nâvele** | nâvels |
+| **level** | to **levele** | levele(s, leveled, leveling; levels |
+| **evil** | **ivel** | ivels |
+
+
