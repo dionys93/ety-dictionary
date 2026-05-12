@@ -1,5 +1,5 @@
 import fs from 'node:fs';
-import path from 'node:path';
+import path from 'path';
 import readline from 'node:readline';
 import { fileURLToPath } from 'node:url';
 
@@ -7,32 +7,35 @@ import { fileURLToPath } from 'node:url';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-// 2. Resolve paths relative to this script's location, guaranteeing it never gets lost
+// 2. Resolve paths relative to this script's location
 const JSONL_FILE = path.resolve(__dirname, '../dist/master_dataset.jsonl');
 const OUTPUT_FILE = path.resolve(__dirname, '../dist/translationBrain.json');
 
 const brain = {};
 
-// Maps your exact Bash POS tags to broad NLP categories
+// Map the VERBOSE tags from the JSONL to the NLP categories
 const posMap = {
-    'v': 'Verb', 'tr v': 'Verb', 'intr v': 'Verb',
-    'n': 'Noun', 'm n': 'Noun', 'f n': 'Noun',
-    'adj': 'Adjective',
-    'adv': 'Adverb',
-    'prep': 'Preposition',
-    'pron': 'Pronoun',
-    'conj': 'Conjunction'
+    'verb': 'Verb', 
+    'transitive verb': 'Verb', 
+    'intransitive verb': 'Verb',
+    'noun': 'Noun', 
+    'masculine noun': 'Noun', 
+    'feminine noun': 'Noun',
+    'adjective': 'Adjective',
+    'adverb': 'Adverb',
+    'preposition': 'Preposition',
+    'pronoun': 'Pronoun',
+    'conjunction': 'Conjunction'
 };
 
 async function compile() {
     console.log('🧠 Compiling Translation Brain from JSONL...');
 
     if (!fs.existsSync(JSONL_FILE)) {
-        console.error(`❌ JSONL file not found at ${JSONL_FILE}! Please run "etym-jsonl" in your terminal first.`);
+        console.error(`❌ JSONL file not found at ${JSONL_FILE}!`);
         process.exit(1);
     }
 
-    // Stream the file so it never maxes out memory
     const fileStream = fs.createReadStream(JSONL_FILE);
     const rl = readline.createInterface({ input: fileStream, crlfDelay: Infinity });
 
@@ -44,10 +47,8 @@ async function compile() {
         const inglisceWord = data.inglisce_word;
         const posCategory = posMap[data.pos] || 'Unknown';
 
-        // Map it to the brain
         if (engWord && inglisceWord && posCategory !== 'Unknown') {
             brain[engWord] = brain[engWord] || {};
-            // Prefer the first found instance of a POS to avoid overwrites
             brain[engWord][posCategory] = brain[engWord][posCategory] || inglisceWord;
         }
     }
