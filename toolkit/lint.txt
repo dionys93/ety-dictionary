@@ -1,43 +1,17 @@
 Linting Data in: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 =================================================================
 
-📝 [1mc/chirp.txt[0m
-   [31m[ERROR][0m Missing or malformed Language Origin tag '[]'
-
-📝 [1mc/chimpanzee.txt[0m
+📝 [1mh/hi.txt[0m
    [31m[ERROR][0m Missing or malformed Part of Speech tag '()'
 
-📝 [1mc/clamber.txt[0m
+📝 [1ms/spin.txt[0m
    [33m[WARN][0m  Potentially unclosed or orphaned parentheses.
-
-📝 [1mc/critique.txt[0m
-   [33m[WARN][0m  Potentially unclosed or orphaned parentheses.
-
-📝 [1mc/cottage.txt[0m
-   [31m[ERROR][0m Missing or malformed Part of Speech tag '()'
-   [31m[ERROR][0m Missing or malformed Language Origin tag '[]'
-
-📝 [1mc/chow.txt[0m
-   [31m[ERROR][0m Missing or malformed Part of Speech tag '()'
-
-📝 [1mc/chat.txt[0m
-   [31m[ERROR][0m Missing or malformed Part of Speech tag '()'
-   [33m[WARN][0m  Potentially unclosed or orphaned parentheses.
-
-📝 [1mc/check.txt[0m
-   [33m[WARN][0m  Potentially unclosed or orphaned parentheses.
-
-📝 [1mc/cloak.txt[0m
-   [33m[WARN][0m  Potentially unclosed or orphaned parentheses.
-
-📝 [1mc/custody.txt[0m
-   [31m[ERROR][0m Missing or malformed Language Origin tag '[]'
 
 -----------------------------------------------------------------
 LINTING COMPLETE
 -----------------------------------------------------------------
 Files Scanned: 3412
 Fatal Errors:  [31m0[0m
-Standard Errs: [31m64[0m
-Warnings:      [33m42[0m
+Standard Errs: [31m1[0m
+Warnings:      [33m1[0m
 =================================================================
