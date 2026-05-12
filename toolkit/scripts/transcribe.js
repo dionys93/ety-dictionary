@@ -10,6 +10,7 @@ if (!fs.existsSync(brainPath)) {
 }
 const brain = JSON.parse(fs.readFileSync(brainPath, 'utf-8'));
 
+// NEEDS REFACTORED
 // The file you want to translate, and where to save it
 const INPUT_FILE = path.resolve('./books/poems/the-road-not-taken.txt');
 const OUTPUT_FILE = path.resolve('./books/inglisce-poems/the-road-not-taken.txt');

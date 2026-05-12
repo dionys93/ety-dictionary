@@ -1560,3 +1560,27 @@ etym-publish() {
     echo "🎉 Publish Complete! Compiled $TOTAL_WORDS total words."
     echo "Data ready for React in: $OUT_DIR"
 }
+
+etym-trim() {
+    local TARGET_DIR="${1:-$DICT_DIR}"
+
+    if [ ! -d "$TARGET_DIR" ]; then
+        echo "Error: Directory $TARGET_DIR not found."
+        return 1
+    fi
+
+    echo "Trimming trailing whitespace in: $TARGET_DIR"
+    echo "================================================================="
+
+    # Find all .txt files and use sed to strip trailing spaces/tabs
+    if [[ "$OSTYPE" == "darwin"* ]]; then
+        # macOS requires an explicit empty string for the backup extension
+        find "$TARGET_DIR" -type f -name "*.txt" -exec sed -i '' -e 's/[[:space:]]*$//' {} +
+    else
+        # Linux (Ubuntu/Codespaces standard)
+        find "$TARGET_DIR" -type f -name "*.txt" -exec sed -i 's/[[:space:]]*$//' {} +
+    fi
+
+    echo "✅ Trailing whitespace successfully removed from all text files!"
+    echo "================================================================="
+}
