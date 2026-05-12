@@ -258,7 +258,7 @@
     "Adjective": "accúsatory"
   },
   "æche": {
-    "Noun": "âche"
+    "Noun": "âc"
   },
   "achy": {
     "Adjective": "âchy"
@@ -283,6 +283,9 @@
   },
   "a-croiz": {
     "Preposition": "acròss"
+  },
+  "acten": {
+    "Verb": "acte"
   },
   "act": {
     "Noun": "acte"
@@ -1722,6 +1725,9 @@
   "beside": {
     "Preposition": "besîde"
   },
+  "smorchen": {
+    "Verb": "besmourc̃e"
+  },
   "abetten": {
     "Verb": "bete"
   },
@@ -2847,6 +2853,9 @@
     "Noun": "c̃aice",
     "Verb": "c̃aisse"
   },
+  "chat": {
+    "Verb": "c̃ate"
+  },
   "chattel": {
     "Noun": "c̃attle"
   },
@@ -2930,6 +2939,13 @@
   "chine": {
     "Noun": "c̃inc"
   },
+  "chirp": {
+    "Verb": "c̃irpe",
+    "Noun": "c̃irpe"
+  },
+  "chirpy": {
+    "Adjective": "c̃irpy"
+  },
   "chisel": {
     "Noun": "c̃isele"
   },
@@ -2957,6 +2973,9 @@
   },
   "chorus": {
     "Verb": "córoce"
+  },
+  "chew": {
+    "Verb": "c̃aue"
   },
   "chowder": {
     "Noun": "c̃audre"
@@ -3665,10 +3684,10 @@
     "Adjective": "conciliatory"
   },
   "concluden": {
-    "Verb": "concloude"
+    "Verb": "conclude"
   },
   "conclusive": {
-    "Adjective": "conclousif"
+    "Adjective": "conclússif"
   },
   "concoct": {
     "Verb": "concocte"
@@ -4170,6 +4189,9 @@
   "cot": {
     "Noun": "cát"
   },
+  "cottage": {
+    "Noun": "cotage"
+  },
   "cotton": {
     "Verb": "cottone"
   },
@@ -4588,6 +4610,15 @@
   },
   "cushion": {
     "Verb": "cûcione"
+  },
+  "custody": {
+    "Noun": "custodie"
+  },
+  "custodian": {
+    "Noun": "custódian"
+  },
+  "custodial": {
+    "Adjective": "custódial"
   },
   "cut": {
     "Noun": "cutte"
@@ -5159,6 +5190,12 @@
   },
   "devaluation": {
     "Noun": "devalluâcion"
+  },
+  "devastate": {
+    "Verb": "devastait"
+  },
+  "devastation": {
+    "Noun": "devastâcion"
   },
   "device": {
     "Noun": "devîse"
@@ -5956,6 +5993,12 @@
   "emeres": {
     "Noun": "embre"
   },
+  "embody": {
+    "Verb": "embodie"
+  },
+  "embodiment  -s (f n)": {
+    "Noun": "embodiment"
+  },
   "emit": {
     "Verb": "emitte"
   },
@@ -5994,6 +6037,9 @@
   },
   "employee": {
     "Noun": "emploîe"
+  },
+  "emu": {
+    "Noun": "ímue"
   },
   "emulation": {
     "Noun": "emulâcion"
@@ -6110,6 +6156,9 @@
   "enrichment": {
     "Noun": "enric̃ement"
   },
+  "ensue  -s -d -ing (v)": {
+    "Verb": "ensue"
+  },
   "entertain": {
     "Verb": "enterteine"
   },
@@ -6213,6 +6262,9 @@
   },
   "erode  -s -d -ing (v)": {
     "Verb": "erode"
+  },
+  "eros": {
+    "Noun": "éroce"
   },
   "err": {
     "Verb": "erre"
@@ -6399,23 +6451,23 @@
   "exclamatory": {
     "Adjective": "exclàmatory"
   },
-  "exclude": {
-    "Verb": "excloude"
+  "exclude  -s -d -ing (v)": {
+    "Verb": "exclude"
   },
   "exclusioun": {
-    "Noun": "exclousion"
+    "Noun": "exclúsion"
   },
   "exclusive": {
-    "Adjective": "exclousif"
+    "Adjective": "exclússif"
   },
   "exclusionary": {
-    "Adjective": "exclousionairy"
+    "Adjective": "exclúsionairy"
   },
   "exclusivity": {
-    "Noun": "exclousivatie"
+    "Noun": "exclusivatie"
   },
-  "excluding": {
-    "Preposition": "exclouding"
+  "excluding  (prep)": {
+    "Preposition": "excluding"
   },
   "excuse": {
     "Verb": "excúse"
@@ -6464,6 +6516,13 @@
   },
   "expel": {
     "Verb": "expelle"
+  },
+  "experience": {
+    "Noun": "expírience",
+    "Verb": "expírience"
+  },
+  "experiential": {
+    "Adjective": "expiriencial"
   },
   "experiment": {
     "Noun": "expèriment",
@@ -6574,6 +6633,9 @@
   },
   "florida": {
     "Noun": "Flórda"
+  },
+  "fridai": {
+    "Noun": "Frigdaie"
   },
   "fabric  -s (m n)": {
     "Noun": "fabric"
@@ -6827,6 +6889,9 @@
   "ferrier": {
     "Noun": "ferrior"
   },
+  "fecchen": {
+    "Verb": "faic̃e"
+  },
   "feud": {
     "Noun": "fude",
     "Verb": "fude"
@@ -6999,7 +7064,7 @@
     "Verb": "flahe"
   },
   "flen": {
-    "Verb": "flihe"
+    "Verb": "flaie"
   },
   "fleer": {
     "Noun": "fliheur"
@@ -7107,7 +7172,7 @@
     "Adjective": "foamy"
   },
   "foggy": {
-    "Adjective": "foguy"
+    "Adjective": "foghy"
   },
   "fog": {
     "Noun": "fogue"
@@ -7397,6 +7462,12 @@
   "gain": {
     "Verb": "gaigne"
   },
+  "game": {
+    "Noun": "gâme"
+  },
+  "gamen": {
+    "Verb": "gâme"
+  },
   "gander": {
     "Noun": "gandre"
   },
@@ -7563,6 +7634,9 @@
   },
   "gnat": {
     "Noun": "gnate"
+  },
+  "gnauen": {
+    "Verb": "gnahe"
   },
   "gnu": {
     "Noun": "ganoue"
@@ -8091,6 +8165,9 @@
     "Verb": "hieve",
     "Noun": "hevon"
   },
+  "hevi": {
+    "Adjective": "haivy"
+  },
   "hele": {
     "Noun": "hiele"
   },
@@ -8191,6 +8268,9 @@
   },
   "heroism": {
     "Noun": "hírouism"
+  },
+  "heuen": {
+    "Verb": "heue"
   },
   "hide": {
     "Verb": "hîde",
@@ -8298,6 +8378,10 @@
   },
   "hold  -s (m n)": {
     "Noun": "hold"
+  },
+  "hole": {
+    "Noun": "hole",
+    "Adjective": "hoal"
   },
   "holi": {
     "Adjective": "holy"
@@ -8468,6 +8552,9 @@
   "hyperbolic  -ly (adj)": {
     "Adjective": "hyperbolic"
   },
+  "hyperspace": {
+    "Noun": "hyprespâce"
+  },
   "hypnosis": {
     "Noun": "hipnósis"
   },
@@ -8577,6 +8664,18 @@
   "illicit  (adj)": {
     "Adjective": "illicit"
   },
+  "illude  -s -d -ing (v)": {
+    "Verb": "illude"
+  },
+  "illusionary": {
+    "Adjective": "illúsionairy"
+  },
+  "illusive": {
+    "Adjective": "illússif"
+  },
+  "illusory": {
+    "Adjective": "illúsory"
+  },
   "imagine": {
     "Verb": "imàgine"
   },
@@ -8668,6 +8767,9 @@
   "implore": {
     "Verb": "implóre"
   },
+  "implien": {
+    "Verb": "implîe"
+  },
   "importen": {
     "Verb": "importe"
   },
@@ -8740,6 +8842,9 @@
   },
   "increase": {
     "Noun": "incrice"
+  },
+  "incredible": {
+    "Adjective": "incrèdible"
   },
   "indicate": {
     "Verb": "indicait"
@@ -9117,6 +9222,9 @@
   "japan": {
     "Noun": "Japane"
   },
+  "jack": {
+    "Noun": "jac"
+  },
   "jade": {
     "Noun": "jâde",
     "Verb": "jâde"
@@ -9178,6 +9286,9 @@
   "journey": {
     "Noun": "journie",
     "Verb": "journie"
+  },
+  "joy": {
+    "Noun": "joie"
   },
   "judge": {
     "Verb": "joge",
@@ -9461,6 +9572,9 @@
   "enlargement -s  (f n)": {
     "Noun": "enlargement"
   },
+  "lash": {
+    "Verb": "lasce"
+  },
   "latch": {
     "Verb": "lac̃e",
     "Noun": "lac̃e"
@@ -9513,6 +9627,9 @@
   },
   "laze": {
     "Verb": "lâse"
+  },
+  "leach": {
+    "Verb": "liec̃e"
   },
   "leden": {
     "Verb": "lide"
@@ -10008,6 +10125,9 @@
   "missouri": {
     "Noun": "Mesoûri"
   },
+  "monedai": {
+    "Noun": "Mondaie"
+  },
   "montana": {
     "Noun": "Montàna"
   },
@@ -10169,6 +10289,9 @@
   },
   "mascara": {
     "Noun": "mascâra"
+  },
+  "mascot  -s (m n)": {
+    "Noun": "mascot"
   },
   "masculine": {
     "Adjective": "masculin"
@@ -10621,6 +10744,9 @@
   "month": {
     "Noun": "monþ"
   },
+  "monumental": {
+    "Adjective": "moñomental"
+  },
   "mood": {
     "Noun": "moude"
   },
@@ -10668,6 +10794,9 @@
   },
   "mossy": {
     "Adjective": "mòssy"
+  },
+  "mote": {
+    "Noun": "mote"
   },
   "moder": {
     "Noun": "maþre"
@@ -11670,6 +11799,18 @@
   "patroclinous": {
     "Adjective": "patroclînus"
   },
+  "patronal": {
+    "Adjective": "patrónal"
+  },
+  "patronage": {
+    "Noun": "pâtronage"
+  },
+  "patronize": {
+    "Verb": "patronyse"
+  },
+  "patronization": {
+    "Noun": "patronisâcion"
+  },
   "paven": {
     "Verb": "paive"
   },
@@ -11806,6 +11947,9 @@
   },
   "permaculture": {
     "Noun": "pêmaculțure"
+  },
+  "permitten": {
+    "Verb": "permitte"
   },
   "permit": {
     "Noun": "pêmit"
@@ -12503,6 +12647,22 @@
   },
   "presidential": {
     "Adjective": "presidencial"
+  },
+  "press  -es (m n)": {
+    "Noun": "press"
+  },
+  "pressen": {
+    "Verb": "presse"
+  },
+  "pressure": {
+    "Noun": "presșure",
+    "Verb": "presșure"
+  },
+  "pressurize": {
+    "Verb": "presșuryse"
+  },
+  "pressurization": {
+    "Noun": "presșurisâcion"
   },
   "prestigious": {
     "Adjective": "prestigeus"
@@ -13379,6 +13539,9 @@
   "recommenden": {
     "Verb": "recomende"
   },
+  "recommit": {
+    "Verb": "ricomitte"
+  },
   "reconcilen": {
     "Verb": "reconcyle"
   },
@@ -13733,6 +13896,15 @@
   },
   "repertory": {
     "Noun": "repetorie"
+  },
+  "replace": {
+    "Verb": "replâce"
+  },
+  "replacement": {
+    "Noun": "replâcement"
+  },
+  "replaceability": {
+    "Noun": "replâçabilatie"
   },
   "replenishen": {
     "Verb": "replenișe"
@@ -14187,6 +14359,9 @@
   "satanic  (adj)": {
     "Adjective": "satanic"
   },
+  "saterdai": {
+    "Noun": "Saturdaie"
+  },
   "south carolina": {
     "Noun": "Sôuþ"
   },
@@ -14195,6 +14370,9 @@
   },
   "spain": {
     "Noun": "Spaine"
+  },
+  "son-dai": {
+    "Noun": "Sonndaie"
   },
   "sack": {
     "Noun": "sac"
@@ -14434,6 +14612,9 @@
   "scooter": {
     "Noun": "schoutor"
   },
+  "scorchen": {
+    "Verb": "scorc̃e"
+  },
   "scottish": {
     "Noun": "scoc̃he"
   },
@@ -14568,13 +14749,13 @@
     "Verb": "site"
   },
   "secluden": {
-    "Verb": "secloude"
+    "Verb": "seclude"
   },
   "seclusion": {
-    "Noun": "seclousion"
+    "Noun": "seclúsion"
   },
   "seclusive": {
-    "Adjective": "secloussif"
+    "Adjective": "seclússif"
   },
   "secrecy": {
     "Noun": "sícrecie"
@@ -14621,6 +14802,12 @@
   "securable": {
     "Adjective": "secúrable"
   },
+  "sedate": {
+    "Verb": "sedâte"
+  },
+  "sedation": {
+    "Noun": "sedâcion"
+  },
   "seduce  -s -d -ing (v)": {
     "Verb": "seduce"
   },
@@ -14653,6 +14840,9 @@
   },
   "silen": {
     "Verb": "cile"
+  },
+  "semen": {
+    "Verb": "sime"
   },
   "seismic": {
     "Adjective": "sîsmic"
@@ -14986,6 +15176,9 @@
   "shrink": {
     "Noun": "șrinc"
   },
+  "shuck": {
+    "Noun": "seuc"
+  },
   "shoven": {
     "Verb": "sioffle"
   },
@@ -15081,6 +15274,9 @@
   },
   "sithen": {
     "Preposition": "since"
+  },
+  "singer": {
+    "Noun": "singuer"
   },
   "song": {
     "Noun": "songue"
@@ -15252,10 +15448,10 @@
     "Noun": "slughe"
   },
   "scluse": {
-    "Noun": "sleuce"
+    "Noun": "sluce"
   },
   "sluice": {
-    "Verb": "sleuce"
+    "Verb": "sluce"
   },
   "slomber": {
     "Noun": "slombre"
@@ -15449,6 +15645,12 @@
   },
   "solicitous": {
     "Adjective": "sollicitus"
+  },
+  "solven": {
+    "Verb": "sòlve"
+  },
+  "solution": {
+    "Noun": "solúcion"
   },
   "sometimes": {
     "Adverb": "sometîms"
@@ -15684,7 +15886,7 @@
     "Noun": "spillage"
   },
   "spinnen": {
-    "Noun": "spin"
+    "Noun": "spinne"
   },
   "spiral": {
     "Verb": "spîrale"
@@ -15705,7 +15907,7 @@
     "Noun": "spytte"
   },
   "spitball": {
-    "Noun": "spytboll"
+    "Noun": "spytbolle"
   },
   "spitfire": {
     "Noun": "spytfyre"
@@ -16129,6 +16331,9 @@
   "strategist  -s (m n)": {
     "Noun": "strategist"
   },
+  "stratum": {
+    "Noun": "stratom"
+  },
   "strau": {
     "Noun": "strahe"
   },
@@ -16164,6 +16369,9 @@
   },
   "stretcher": {
     "Noun": "strec̃or"
+  },
+  "streuen": {
+    "Verb": "streue"
   },
   "strict  (adj)": {
     "Adjective": "strict"
@@ -16402,6 +16610,18 @@
   },
   "superstitious": {
     "Adjective": "supersticeus"
+  },
+  "supervise": {
+    "Verb": "supervîse"
+  },
+  "supervisor": {
+    "Noun": "supervîsor"
+  },
+  "supervision  (f n)": {
+    "Noun": "supervision"
+  },
+  "supervisory": {
+    "Adjective": "supervîsory"
   },
   "supply": {
     "Noun": "soplîe"
@@ -16653,6 +16873,12 @@
   },
   "tennessee": {
     "Noun": "Tennessíe"
+  },
+  "thuresdai": {
+    "Noun": "Ћursdaie"
+  },
+  "tiuesdai": {
+    "Noun": "Túsdaie"
   },
   "turkie": {
     "Noun": "Turchía"
@@ -16920,6 +17146,18 @@
   },
   "theologian": {
     "Noun": "þiológian"
+  },
+  "theory": {
+    "Noun": "þiorie"
+  },
+  "theorize": {
+    "Verb": "þioryse"
+  },
+  "theorist": {
+    "Noun": "þiorist"
+  },
+  "theoretical": {
+    "Adjective": "þioretical"
   },
   "thik": {
     "Adjective": "þic"
@@ -17612,6 +17850,9 @@
   "vanishen": {
     "Verb": "vanișe"
   },
+  "venquishen": {
+    "Verb": "vencoișe"
+  },
   "vapor": {
     "Verb": "vâpore"
   },
@@ -17879,6 +18120,9 @@
   },
   "washington": {
     "Noun": "Uașington"
+  },
+  "wednesdai": {
+    "Noun": "Uensdaie"
   },
   "wales": {
     "Noun": "Ueals"
@@ -18213,9 +18457,6 @@
   },
   "whose": {
     "Pronoun": "huse"
-  },
-  "hole": {
-    "Adjective": "hoal"
   },
   "whore": {
     "Noun": "hore",
