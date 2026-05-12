@@ -186,3 +186,42 @@ This same shift governs the conjugation of historical "weak verbs" whose roots c
 * to cr*ie*pe → cr*ai*pt
 * to m*ie*te → m*ai*t
 * to l*i*de → l*ai*d *(Orthographically irregular).*
+
+---
+
+## 6. The ⟨-sc-⟩ Sibilant Matrix (Reading & Diacritics)
+
+In Inglisce, the orthographic cluster **-sc-** maps to different sibilant phonemes depending on the word's syllable count and the presence of diacritics. This system visually isolates native Germanic roots from imported Romance polysyllables.
+
+### The Monosyllabic ⟨-sc-⟩ (/ʃ/)
+In short, native monosyllables (often derived from Old English words containing *sc*), the **-sc-** cluster produces the fricative `/ʃ/` (the "sh" sound). 
+
+| Inglisce | Modern English |
+| :--- | :--- |
+| **fisce** | fish |
+| **busce** | bush |
+| **pusce** | push |
+| **crosce** | crush |
+| **hosce** | hush |
+| **scite** | shit |
+
+### The Polysyllabic ⟨-sc-⟩ (/s/)
+In heavier, polysyllabic words—which are almost exclusively Latin or French imports—the **-sc-** cluster softens to a standard `/s/` sound.
+
+| Inglisce | Modern English |
+| :--- | :--- |
+| **viscera** | viscera |
+| **descende** | descend |
+| **ascende** | ascend |
+| **condescende**| condescend |
+| **ascension** | ascension |
+| **ascertâne** | ascertain |
+
+### Polysyllabic Medial Override ⟨-sç-⟩ (/ʃ/)
+When a polysyllabic word requires the `/ʃ/` sound in a medial position (often where Modern English uses *-sci-*), Inglisce utilizes the cedilla (**ç**) to explicitly override the polysyllabic `/s/` rule. This diacritic locks in the fricative pronunciation without altering the historical spelling.
+
+| Inglisce | Modern English |
+| :--- | :--- |
+| **omnisçent** | omniscient |
+| **consçienteus** | conscientious |
+| **consçeus** | conscious |
