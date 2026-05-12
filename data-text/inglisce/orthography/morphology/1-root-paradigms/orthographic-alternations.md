@@ -13,11 +13,11 @@ These verbs strip down to a lean **-c** base for 1st/2nd person and take **-cs**
 
 | Infinitive | Present Tense | Past Tense | Gerund | Derived Nouns / Plurals |
 | :--- | :--- | :--- | :--- | :--- |
-| **to bâche** | I, you, uie bâc; hie bâcs | bâched | bâching | bâcherie, bâcor |
+| **to bâche** | I, you, uie bâc; hie bâcs | bâched | bâching | bâcherie, bâcher |
 | **to brâche** | I, you, uie brâc; hie brâcs | brâched | brâching | brâc, braix |
 | **to câche** | it câcs | câched | câching | câc, caix |
 | **to faiche** | I, you, uie faic; hie faics | faiched | faiching | faic, faix |
-| **to cuâche** | I, you, uie cuâc; hie cuâcs | cuâched | cuâching | cuâc, cuaix; cuâcor |
+| **to cuâche** | I, you, uie cuâc; hie cuâcs | cuâched | cuâching | cuâc, cuaix; cuâcher |
 | **to râche** | I, you, uie râc; hie râcs | râched | râching | râc, raix |
 | **to rache** | I, you, uie rac; hie racs | rached | raching | rac, rax |
 | **to stâche** | I, you, uie stâc; hie stâcs | stâched | stâching | stâc, staix |
@@ -42,7 +42,7 @@ These verbs feature an internal vowel shift in the past tense/participle, but fo
 | **to breiche** | I, you, uie breic; hie breics | **bróc, brócan** | breiching | breic, breix; breicor |
 | **to forsâche**| I, you, uie forsâc; hie forsâcs | **forsôc, forsâcan** | forsâching | sâc, saix |
 | **to mâche** | I, you, uie mâc; hie mâcs | **mâde** | mâching | mâc, maix; mâcor |
-| **to spieche** | I, you, uie spiec; hie spiecs | **spóc, spócan** | spieching | spiecor; spiec̃e |
+| **to spieche** | I, you, uie spiec; hie spiecs | **spóc, spócan** | spieching | spiecher, spiecor; spiec̃e |
 | **to stiche** | I, you, uie stic; hie stics | **steuc** | stiching | stic, stix |
 | **to uâche** | I, you, uie uâc; hie uâcs | **uóc, uócan** | uâching | uâc, uaix; uac̃e |
 
@@ -50,7 +50,7 @@ These verbs feature an internal vowel shift in the past tense/participle, but fo
 
 | Infinitive | Present Tense | Past Tense | Gerund | Derived Nouns |
 | :--- | :--- | :--- | :--- | :--- |
-| **to attaque** | I, you, uie attac; hie attacs | attaqued | attaquing | attac, attacs; attaqueur  |
+| **to attaque** | I, you, uie attac; hie attacs | attaqued | attaquing | attac, attacs; attaquer  |
 | **to bânque** | I, you, uie bânc; hie bâncs | bânqued | bânquing | bânque, bâncs |
 | **to cuaque** | I, you, uie cuac; hie cuacs | cuached | cuaching | cuac, cuax |
 | **to joque** | I, you, uie joac; hie joacs | joqued | joquing | joque, joax |
@@ -63,7 +63,7 @@ These verbs feature an internal vowel shift in the past tense/participle, but fo
 
 | Infinitive | Present Tense | Past Tense | Gerund | Derived Nouns |
 | :--- | :--- | :--- | :--- | :--- |
-| **to bague** | I, you, uie bag; hie bags | bagued | baguing | bague, bags; bagor |
+| **to bague** | I, you, uie bag; hie bags | bagued | baguing | bague, bags; baguer |
 | **to cágue** | I, you, uie cág; hie cágs | cágued | cáguing | cágue, cágs |
 | **to clogue** | I, you, uie clog; hie clogs | clogued | cloguing | clogue, clogs |
 | **to cyngue** | I, you, uie cyng; hie cyngs | cyngued | cynguing | cyngue, cyngs |
@@ -81,7 +81,7 @@ These verbs feature an internal vowel shift in the past tense/participle, but fo
 | Infinitive | Present Tense | Past Tense & Participle | Gerund | Derived Nouns |
 | :--- | :--- | :--- | :--- | :--- |
 | **to dighe** | I, you, uie dig; hie digs | **dugh** | dighing | dighe, digs |
-| **to singue** | I, you, uie sing; hie sings | **sâng, song** | singuing | songue, sòngs |
+| **to singue** | I, you, uie sing; hie sings | **sâng, song** | singuing | songue, sòngs; singuer |
 | **to ringue** | I, you, uie ring; hie rings | **râng, rong** | ringuing | ringue, rings |
 | **to r̃ingue** | I, you, uie r̃ing; hie r̃ings | **r̃ong** | r̃inguing | r̃ingor |
 
