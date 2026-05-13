@@ -45,21 +45,14 @@ const text = fs.readFileSync(inputFile, 'utf8');
  * Determines the best Inglisce translation for a specific NLP term.
  * Priority is strictly ordered to prevent generic parts of speech from 
  * hijacking specialized structural words.
- * @param {Object} term - The Compromise.js term object
- * @param {Object} brainEntry - The dictionary of available translations for this word
- * @returns {string|null} The chosen Inglisce word, or null if no safe match is found
  */
 const getReplacement = (term, brainEntry) => {
     // 1. SPECIFIC/STRUCTURAL VERBS 
-    // In compromise.js, Modals/Auxiliaries inherit the general #Verb tag. 
-    // We MUST check for these specialized tags first, otherwise the engine will 
-    // lazily grab the generic Verb translation (e.g., turning "can" into "cane").
     if (term.has('#Copula') && brainEntry.Copula) return brainEntry.Copula;
     if (term.has('#Auxiliary') && brainEntry.Auxiliary) return brainEntry.Auxiliary;
     if (term.has('#Modal') && brainEntry.Modal) return brainEntry.Modal;
     
     // 2. GENERIC PARTS OF SPEECH
-    // Maps standard grammatical tags to the brain's explicit dictionary mappings.
     if (term.has('#Verb') && brainEntry.Verb) return brainEntry.Verb;
     if (term.has('#Noun') && brainEntry.Noun) return brainEntry.Noun;
     if (term.has('#Adjective') && brainEntry.Adjective) return brainEntry.Adjective;
@@ -70,21 +63,43 @@ const getReplacement = (term, brainEntry) => {
     if (term.has('#Adverb') && brainEntry.Adverb) return brainEntry.Adverb;
     
     // 3. FALLBACK & SAFETY CHECKS
-    // If the word only has one translation in our dictionary, use it...
     const keys = Object.keys(brainEntry);
     if (keys.length === 1) {
         const onlyPos = keys[0];
-        
-        // ...UNLESS the NLP explicitly caught a homograph collision. 
-        // (e.g. Do not overwrite a Noun with a Verb translation).
         if (onlyPos === 'Verb' && term.has('#Noun')) return null;
         if (onlyPos === 'Noun' && term.has('#Verb')) return null;
-        
         return brainEntry[onlyPos];
     }
     
-    // Absolute fallback: just grab the first available definition
     return brainEntry[keys[0]];
+};
+
+/**
+ * Custom Unicode-Aware Casing Engine
+ * Forces Inglisce replacements to perfectly match the capitalization of the original 
+ * English word, handling custom constructed-language orthography (like þ -> Ћ).
+ */
+const matchCasing = (originalText, replacementWord) => {
+    // Strip punctuation from the original word so we only analyze alphabetical case
+    const cleanOriginal = originalText.replace(/[^a-zA-Z]/g, '');
+    if (!cleanOriginal) return replacementWord;
+
+    // Custom Inglisce Uppercase Map
+    // JavaScript natively turns 'þ' into 'Þ', but Inglisce explicitly uses 'Ћ'
+    const toInglisceUpper = (char) => char === 'þ' ? 'Ћ' : char.toUpperCase();
+
+    // 1. Check for ALL CAPS (e.g., "THE" -> "ЋE")
+    if (cleanOriginal === cleanOriginal.toUpperCase()) {
+        return replacementWord.split('').map(toInglisceUpper).join('');
+    }
+    
+    // 2. Check for Title Case (e.g., "The" -> "Ћe")
+    if (/^[A-Z]/.test(cleanOriginal)) {
+        return toInglisceUpper(replacementWord.charAt(0)) + replacementWord.slice(1);
+    }
+
+    // Default to lowercase
+    return replacementWord;
 };
 
 
@@ -112,25 +127,24 @@ const transcribedLines = lines.map(line => {
     const doc = nlp(line);
 
     // --- PASS 1: MULTI-WORD INTERCEPTOR ---
-    // Safely translates contractions and phrases as single units.
     multiWords.forEach(key => {
         const entry = brain[key];
-        // Grab the most likely action-oriented translation for the phrase
         const fallback = entry.Verb || entry.Copula || entry.Auxiliary || entry.Modal || Object.values(entry)[0];
         
         if (fallback) {
             doc.match(key).forEach(m => {
-                m.replaceWith(fallback, { keepTags: true, keepCase: true });
-                // Tag it as translated so the standard pass doesn't touch it
+                // Manually calculate case before replacement
+                const casedFallback = matchCasing(m.text(), fallback);
+                
+                // keepCase is FALSE so the engine doesn't overwrite our custom þ -> Ћ math
+                m.replaceWith(casedFallback, { keepTags: true, keepCase: false });
                 m.tag('#Translated'); 
             });
         }
     });
 
     // --- PASS 2: STANDARD WORD PASS ---
-    // Loops through every individual term remaining in the sentence.
     doc.terms().forEach((term) => {
-        // Skip words we already handled in Pass 1
         if (term.has('#Translated')) return;
 
         const normal = term.text('normal');
@@ -140,22 +154,24 @@ const transcribedLines = lines.map(line => {
         if (brain[normal]) {
             const replacement = getReplacement(term, brain[normal]);
             if (replacement) {
-                term.replaceWith(replacement, { keepTags: true, keepCase: true });
+                // Manually calculate case before replacement
+                const casedReplacement = matchCasing(term.text(), replacement);
+                
+                // keepCase is FALSE so the engine doesn't overwrite our custom þ -> Ћ math
+                term.replaceWith(casedReplacement, { keepTags: true, keepCase: false });
                 term.tag('#Translated');
-                return; // Early exit: word successfully translated, skip to the next term
+                return;
             }
         }
 
-        // Auditing: Wrap untranslated words in brackets (Only runs if we didn't return early)
+        // Auditing: Wrap untranslated words in brackets
         const rawText = term.text();
-        // Prevent accidental double-bracketing 
         if (!rawText.includes('[')) {
             term.replaceWith(`[${rawText}]`, { keepTags: true });
         }
         missingWords.add(normal);
     });
 
-    // Return the processed line as a string
     return doc.text();
 });
 
