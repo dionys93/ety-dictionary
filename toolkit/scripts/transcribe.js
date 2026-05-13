@@ -98,18 +98,7 @@ const lines = text.split('\n');
 const transcribedLines = lines.map(line => {
     if (!line.trim()) return line;
 
-    // --- PASS 0: PRONOUN CONTRACTION EXPANDER ---
-    // Safely expands pronoun contractions BEFORE the NLP engine parses them.
-    // This prevents the engine from duplicating implicit token outputs.
-    let cleanLine = line
-        .replace(/\b([Yy]ou|[Ww]e|[Tt]hey)['’]re\b/g, "$1 are")
-        .replace(/\b([Ii])['’]m\b/g, "$1 am")
-        .replace(/\b([Ii]|[Yy]ou|[Hh]e|[Ss]he|[Ii]t|[Ww]e|[Tt]hey)['’]ll\b/g, "$1 will")
-        .replace(/\b([Ii]|[Yy]ou|[Hh]e|[Ss]he|[Ii]t|[Ww]e|[Tt]hey)['’]d\b/g, "$1 would")
-        .replace(/\b([Ii]|[Yy]ou|[Ww]e|[Tt]hey)['’]ve\b/g, "$1 have")
-        .replace(/\b([Hh]e|[Ss]he|[Ii]t|[Tt]hat|[Tt]here|[Ww]ho|[Ww]hat|[Ww]here)['’]s\b/g, "$1 is");
-
-    const doc = nlp(cleanLine);
+    const doc = nlp(line);
 
     // --- PASS 1: MULTI-WORD INTERCEPTOR ---
     multiWords.forEach(key => {
@@ -129,50 +118,50 @@ const transcribedLines = lines.map(line => {
     doc.terms().forEach((term) => {
         if (term.has('#Translated')) return;
 
+        let rawText = term.text();
         let normal = term.text('normal');
         if (!normal) return;
 
-        // --- POSSESSIVE SPLITTER ---
-        let isPossessive = false;
-        let possessiveSuffix = '';
+        // 1. SILENCE GHOST WORDS
+        // Compromise explicitly separates contractions (They're -> They + are).
+        // The second word ("are") is generated as a physically empty string.
+        // We skip it to prevent duplicating the translated verb in the output.
+        if (rawText.trim() === '') {
+            term.tag('#Translated');
+            return;
+        }
+
+        // 2. SUFFIX PRESERVER
+        // Safely detaches suffixes so we can translate the root word, then reattaches them.
+        let suffix = '';
+        const wordWithoutPunctuation = rawText.replace(/[^a-zA-Z'’]/g, '');
+        const suffixMatch = wordWithoutPunctuation.match(/(['’](s|re|ll|d|ve|m))$/i);
         
-        if (term.has('#Possessive')) {
-            isPossessive = true;
-            const raw = term.text();
-            
-            // Isolate the suffix and safely strip it from the lookup word
-            if (raw.endsWith("'s") || raw.endsWith("’s")) {
-                possessiveSuffix = "'s";
-                normal = normal.replace(/['’]s$/, ''); 
-            } else if (raw.endsWith("'") || raw.endsWith("’")) {
-                possessiveSuffix = "'";
-                normal = normal.replace(/['’]$/, ''); 
-            }
+        if (suffixMatch) {
+            suffix = suffixMatch[1]; 
+            // Strip the suffix from the lookup word so "dog's" perfectly matches "dog"
+            normal = normal.replace(new RegExp(suffix + '$', 'i'), '');
         }
 
         // Attempt lookup and replacement
         if (brain[normal]) {
             let replacement = getReplacement(term, brain[normal]);
             if (replacement) {
-                // Reattach the Inglisce possessive marker if needed
-                if (isPossessive) {
-                    replacement += possessiveSuffix; 
-                }
+                // Reattach the contraction or possessive marker
+                replacement += suffix; 
                 
-                const casedReplacement = matchCasing(term.text(), replacement);
+                const casedReplacement = matchCasing(rawText, replacement);
                 term.replaceWith(casedReplacement, { keepTags: true, keepCase: false });
                 term.tag('#Translated');
                 return;
             }
         }
 
-        // Auditing: Wrap untranslated words in brackets
-        const rawText = term.text();
+        // Auditing: Wrap untranslated words in brackets, leaving punctuation untouched
         if (!rawText.includes('[')) {
-            term.replaceWith(`[${rawText}]`, { keepTags: true });
+            const bracketedText = rawText.replace(/([a-zA-Z]+(?:['’][a-zA-Z]+)*)/, '[$1]');
+            term.replaceWith(bracketedText, { keepTags: true });
         }
-        
-        // Add the clean root word to the tracker (e.g. "dog" instead of "dog's")
         missingWords.add(normal);
     });
 
