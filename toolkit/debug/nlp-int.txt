@@ -1,0 +1,533 @@
+🤖 Compromise.js Context Analyzer
+=================================================================
+
+[Sentence 1]
+"I see two blue circles."
+-----------------------------------------------------------------
+  Word   : 'I'
+  Tags   : [ Noun, Pronoun ]
+
+  Word   : 'see'
+  Tags   : [ Verb, PresentTense, Infinitive ]
+
+  Word   : 'two'
+  Tags   : [ Value, TextValue, Cardinal ]
+
+  Word   : 'blue'
+  Tags   : [ Adjective ]
+
+  Word   : 'circles'
+  Tags   : [ Noun, Plural ]
+
+[Sentence 2]
+"She circles the tree on the paper."
+-----------------------------------------------------------------
+  Word   : 'She'
+  Tags   : [ Noun, Pronoun ]
+
+  Word   : 'circles'
+  Tags   : [ Verb, PresentTense ]
+
+  Word   : 'the'
+  Tags   : [ Determiner ]
+
+  Word   : 'tree'
+  Tags   : [ Noun, Singular ]
+
+  Word   : 'on'
+  Tags   : [ Preposition ]
+
+  Word   : 'the'
+  Tags   : [ Determiner ]
+
+  Word   : 'paper'
+  Tags   : [ Noun, Singular ]
+
+[Sentence 3]
+"I need to record a new record for the studio."
+-----------------------------------------------------------------
+  Word   : 'I'
+  Tags   : [ Noun, Pronoun ]
+
+  Word   : 'need'
+  Tags   : [ Verb, PresentTense, Infinitive ]
+
+  Word   : 'to'
+  Tags   : [ Conjunction ]
+
+  Word   : 'record'
+  Tags   : [ Verb, PresentTense, Infinitive ]
+
+  Word   : 'a'
+  Tags   : [ Determiner ]
+
+  Word   : 'new'
+  Tags   : [ Adjective ]
+
+  Word   : 'record'
+  Tags   : [ Noun, Singular ]
+
+  Word   : 'for'
+  Tags   : [ Preposition ]
+
+  Word   : 'the'
+  Tags   : [ Determiner ]
+
+  Word   : 'studio'
+  Tags   : [ Noun, Singular ]
+
+[Sentence 4]
+"The defense will object to that bizarre object being presented."
+-----------------------------------------------------------------
+  Word   : 'The'
+  Tags   : [ Determiner ]
+
+  Word   : 'defense'
+  Tags   : [ Noun, Singular ]
+
+  Word   : 'will'
+  Tags   : [ Verb, Modal, Auxiliary ]
+
+  Word   : 'object'
+  Tags   : [ Verb, PresentTense, Infinitive ]
+
+  Word   : 'to'
+  Tags   : [ Conjunction ]
+
+  Word   : 'that'
+  Tags   : [ Determiner ]
+
+  Word   : 'bizarre'
+  Tags   : [ Adjective ]
+
+  Word   : 'object'
+  Tags   : [ Noun, Singular ]
+
+  Word   : 'being'
+  Tags   : [ Verb, Auxiliary ]
+
+  Word   : 'presented'
+  Tags   : [ Verb, PastTense ]
+
+[Sentence 5]
+"Please book a flight so I can read my book on the plane."
+-----------------------------------------------------------------
+  Word   : 'Please'
+  Tags   : [ Expression ]
+
+  Word   : 'book'
+  Tags   : [ Verb, PresentTense, Infinitive, Imperative ]
+
+  Word   : 'a'
+  Tags   : [ Determiner ]
+
+  Word   : 'flight'
+  Tags   : [ Noun, Singular ]
+
+  Word   : 'so'
+  Tags   : [ Conjunction ]
+
+  Word   : 'I'
+  Tags   : [ Noun, Pronoun ]
+
+  Word   : 'can'
+  Tags   : [ Verb, Modal, Auxiliary ]
+
+  Word   : 'read'
+  Tags   : [ Verb, PresentTense, Infinitive ]
+
+  Word   : 'my'
+  Tags   : [ Noun, Possessive ]
+
+  Word   : 'book'
+  Tags   : [ Noun, Singular ]
+
+  Word   : 'on'
+  Tags   : [ Preposition ]
+
+  Word   : 'the'
+  Tags   : [ Determiner ]
+
+  Word   : 'plane'
+  Tags   : [ Noun, Singular ]
+
+[Sentence 6]
+"The strong bear could barely bear the weight of the snow."
+-----------------------------------------------------------------
+  Word   : 'The'
+  Tags   : [ Determiner ]
+
+  Word   : 'strong'
+  Tags   : [ Adjective ]
+
+  Word   : 'bear'
+  Tags   : [ Noun, Singular ]
+
+  Word   : 'could'
+  Tags   : [ Verb, Modal, Auxiliary ]
+
+  Word   : 'barely'
+  Tags   : [ Adverb ]
+
+  Word   : 'bear'
+  Tags   : [ Verb, PresentTense, Infinitive ]
+
+  Word   : 'the'
+  Tags   : [ Determiner ]
+
+  Word   : 'weight'
+  Tags   : [ Noun, Singular ]
+
+  Word   : 'of'
+  Tags   : [ Preposition ]
+
+  Word   : 'the'
+  Tags   : [ Determiner ]
+
+  Word   : 'snow'
+  Tags   : [ Noun, Singular ]
+
+[Sentence 7]
+"The quick brown foxes are jumping over the lazy dogs."
+-----------------------------------------------------------------
+  Word   : 'The'
+  Tags   : [ Determiner ]
+
+  Word   : 'quick'
+  Tags   : [ Adjective ]
+
+  Word   : 'brown'
+  Tags   : [ Adjective, Comparative ]
+
+  Word   : 'foxes'
+  Tags   : [ Noun, Plural ]
+
+  Word   : 'are'
+  Tags   : [ Verb, Copula, Auxiliary ]
+
+  Word   : 'jumping'
+  Tags   : [ Verb, PresentTense, Gerund ]
+
+  Word   : 'over'
+  Tags   : [ Adjective ]
+
+  Word   : 'the'
+  Tags   : [ Determiner ]
+
+  Word   : 'lazy'
+  Tags   : [ Adjective ]
+
+  Word   : 'dogs'
+  Tags   : [ Noun, Plural ]
+
+[Sentence 8]
+"She spoke to the children and gave them three blind mice."
+-----------------------------------------------------------------
+  Word   : 'She'
+  Tags   : [ Noun, Pronoun ]
+
+  Word   : 'spoke'
+  Tags   : [ Verb, PastTense ]
+
+  Word   : 'to'
+  Tags   : [ Conjunction ]
+
+  Word   : 'the'
+  Tags   : [ Determiner ]
+
+  Word   : 'children'
+  Tags   : [ Noun, Plural, Actor ]
+
+  Word   : 'and'
+  Tags   : [ Conjunction ]
+
+  Word   : 'gave'
+  Tags   : [ Verb, PastTense ]
+
+  Word   : 'them'
+  Tags   : [ Noun, Pronoun ]
+
+  Word   : 'three'
+  Tags   : [ Value, TextValue, Cardinal ]
+
+  Word   : 'blind'
+  Tags   : [ Adjective ]
+
+  Word   : 'mice'
+  Tags   : [ Noun, Plural ]
+
+[Sentence 9]
+"He flies the plane, but there are many flies in the cockpit."
+-----------------------------------------------------------------
+  Word   : 'He'
+  Tags   : [ Noun, Pronoun ]
+
+  Word   : 'flies'
+  Tags   : [ Verb, PresentTense ]
+
+  Word   : 'the'
+  Tags   : [ Determiner ]
+
+  Word   : 'plane'
+  Tags   : [ Noun, Singular ]
+
+  Word   : 'but'
+  Tags   : [ Conjunction ]
+
+  Word   : 'there'
+  Tags   : [ There ]
+
+  Word   : 'are'
+  Tags   : [ Verb, Copula, PresentTense ]
+
+  Word   : 'many'
+  Tags   : [ Adjective ]
+
+  Word   : 'flies'
+  Tags   : [ Noun, Plural ]
+
+  Word   : 'in'
+  Tags   : [ Preposition ]
+
+  Word   : 'the'
+  Tags   : [ Determiner ]
+
+  Word   : 'cockpit'
+  Tags   : [ Noun, Singular ]
+
+[Sentence 10]
+"Wait, did Alice really say, 'Hello world!'?"
+-----------------------------------------------------------------
+  Word   : 'Wait,'
+  Normal : 'wait'
+  Tags   : [ Verb, PresentTense, Infinitive, Imperative ]
+
+  Word   : 'did'
+  Tags   : [ Verb, PastTense ]
+
+  Word   : 'Alice'
+  Tags   : [ Noun, Singular, Person, FirstName, ProperNoun, FemaleName ]
+
+  Word   : 'really'
+  Tags   : [ Adverb ]
+
+  Word   : 'say'
+  Tags   : [ Verb, PresentTense, Infinitive ]
+
+  Word   : 'Hello'
+  Tags   : [ Expression ]
+
+  Word   : 'world!'
+  Normal : 'world'
+  Tags   : [ Noun, Singular ]
+
+[Sentence 11]
+"To be, or not to be: that is the question."
+-----------------------------------------------------------------
+  Word   : 'To'
+  Tags   : [ Conjunction ]
+
+  Word   : 'be'
+  Tags   : [ Verb, PresentTense, Infinitive ]
+
+  Word   : 'or'
+  Tags   : [ Conjunction ]
+
+  Word   : 'not'
+  Tags   : [ Conjunction ]
+
+  Word   : 'to'
+  Tags   : [ Conjunction ]
+
+  Word   : 'be'
+  Tags   : [ Verb, PresentTense, Infinitive ]
+
+  Word   : 'that'
+  Tags   : [ Determiner ]
+
+  Word   : 'is'
+  Tags   : [ Verb, Copula, PresentTense ]
+
+  Word   : 'the'
+  Tags   : [ Determiner ]
+
+  Word   : 'question'
+  Tags   : [ Noun, Singular ]
+
+[Sentence 12]
+"THE LOUD NOISES SCARED THE CAT."
+-----------------------------------------------------------------
+  Word   : 'THE'
+  Tags   : [ Determiner ]
+
+  Word   : 'LOUD'
+  Tags   : [ Adjective ]
+
+  Word   : 'NOISES'
+  Tags   : [ Noun, Plural ]
+
+  Word   : 'SCARED'
+  Tags   : [ Verb, PastTense ]
+
+  Word   : 'THE'
+  Tags   : [ Determiner ]
+
+  Word   : 'CAT'
+  Tags   : [ Acronym, Noun, ProperNoun, Organization ]
+
+[Sentence 13]
+"It's not the dog's bone, it's ours."
+-----------------------------------------------------------------
+  Word   : 'It's'
+  Tags   : [ Noun, Pronoun ]
+
+  Word   : ''
+  Tags   : [ Verb, Copula, PresentTense ]
+
+  Word   : 'not'
+  Tags   : [ Negative ]
+
+  Word   : 'the'
+  Tags   : [ Determiner ]
+
+  Word   : 'dog's'
+  Tags   : [ Noun, Singular, Possessive ]
+
+  Word   : 'bone'
+  Tags   : [ Noun, Singular ]
+
+  Word   : 'it's'
+  Tags   : [ Noun, Pronoun ]
+
+  Word   : ''
+  Tags   : [ Verb, Copula, PresentTense ]
+
+  Word   : 'ours'
+  Tags   : [ Noun, Possessive ]
+
+[Sentence 14]
+"They're going to see their friends over there."
+-----------------------------------------------------------------
+  Word   : 'They're'
+  Tags   : [ Noun, Pronoun ]
+
+  Word   : ''
+  Tags   : [ Verb, Copula, Auxiliary ]
+
+  Word   : 'going'
+  Tags   : [ Verb, Auxiliary ]
+
+  Word   : 'to'
+  Tags   : [ Verb, Auxiliary ]
+
+  Word   : 'see'
+  Tags   : [ Verb, PresentTense, Infinitive ]
+
+  Word   : 'their'
+  Tags   : [ Noun, Possessive, Pronoun ]
+
+  Word   : 'friends'
+  Tags   : [ Noun, Plural, Actor ]
+
+  Word   : 'over'
+  Tags   : [ Adjective ]
+
+  Word   : 'there'
+  Tags   : [ Noun, Uncountable ]
+
+[Sentence 15]
+"Don't let the cat out of the bag."
+-----------------------------------------------------------------
+  Word   : 'Don't'
+  Tags   : [ Verb, Auxiliary ]
+
+  Word   : ''
+  Tags   : [ Negative ]
+
+  Word   : 'let'
+  Tags   : [ Verb, PresentTense, Infinitive, Imperative ]
+
+  Word   : 'the'
+  Tags   : [ Determiner ]
+
+  Word   : 'cat'
+  Tags   : [ Noun, Singular ]
+
+  Word   : 'out'
+  Tags   : [ Preposition ]
+
+  Word   : 'of'
+  Tags   : [ Preposition ]
+
+  Word   : 'the'
+  Tags   : [ Determiner ]
+
+  Word   : 'bag'
+  Tags   : [ Noun, Singular ]
+
+[Sentence 16]
+"Turn on the light to light up the light, green room."
+-----------------------------------------------------------------
+  Word   : 'Turn'
+  Tags   : [ Verb, PhrasalVerb, PresentTense, Infinitive, Imperative ]
+
+  Word   : 'on'
+  Tags   : [ Verb, PhrasalVerb, Particle, Imperative ]
+
+  Word   : 'the'
+  Tags   : [ Determiner ]
+
+  Word   : 'light'
+  Tags   : [ Noun, Singular ]
+
+  Word   : 'to'
+  Tags   : [ Conjunction ]
+
+  Word   : 'light'
+  Tags   : [ Verb, PhrasalVerb, PresentTense, Infinitive ]
+
+  Word   : 'up'
+  Tags   : [ Verb, PhrasalVerb, Particle ]
+
+  Word   : 'the'
+  Tags   : [ Determiner ]
+
+  Word   : 'light'
+  Tags   : [ Adverb ]
+
+  Word   : 'green'
+  Tags   : [ Adjective ]
+
+  Word   : 'room'
+  Tags   : [ Noun, Singular ]
+
+[Sentence 17]
+"The fast runner ran fast during the religious fast."
+-----------------------------------------------------------------
+  Word   : 'The'
+  Tags   : [ Determiner ]
+
+  Word   : 'fast'
+  Tags   : [ Adjective ]
+
+  Word   : 'runner'
+  Tags   : [ Noun, Singular ]
+
+  Word   : 'ran'
+  Tags   : [ Verb, PastTense ]
+
+  Word   : 'fast'
+  Tags   : [ Verb, PresentTense, Infinitive ]
+
+  Word   : 'during'
+  Tags   : [ Preposition ]
+
+  Word   : 'the'
+  Tags   : [ Determiner ]
+
+  Word   : 'religious'
+  Tags   : [ Adjective ]
+
+  Word   : 'fast'
+  Tags   : [ Adjective ]
+

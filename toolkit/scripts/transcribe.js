@@ -13,6 +13,12 @@ if (!inputFile) {
 }
 
 const brainPath = path.join(import.meta.dirname, '..', 'dist', 'translationBrain.json');
+if (!fs.existsSync(inputFile) || !fs.existsSync(brainPath)) {
+    console.error(`❌ Error: Missing input file or translationBrain.json`);
+    process.exit(1);
+}
+
+console.log(`🧠 Loading Translation Brain...`);
 const brain = JSON.parse(fs.readFileSync(brainPath, 'utf8'));
 const text = fs.readFileSync(inputFile, 'utf8');
 
@@ -26,7 +32,6 @@ const getReplacement = (term, brainEntry) => {
     if (term.has('#Pronoun') && brainEntry.Pronoun) return brainEntry.Pronoun;
     if (term.has('#Adverb') && brainEntry.Adverb) return brainEntry.Adverb;
     
-    // Fallback: If dictionary only has one definition, use it (unless NLP strictly forbids it)
     const keys = Object.keys(brainEntry);
     if (keys.length === 1) {
         const onlyPos = keys[0];
@@ -39,27 +44,54 @@ const getReplacement = (term, brainEntry) => {
 };
 
 console.log(`🤖 Transcribing: ${inputFile}...`);
-const doc = nlp(text);
 
-doc.terms().forEach((term) => {
-    const normal = term.text('normal');
-    
-    if (brain[normal]) {
-        // --- 🔍 X-RAY DEBUGGER ---
-        if (normal === 'record' || normal === 'object' || normal === 'the') {
-            console.log(`\n🔍 X-RAY: '${normal}'`);
-            console.log(`   ↳ Context Tags:`, term.json()[0].terms[0].tags);
-            console.log(`   ↳ Dictionary Data:`, brain[normal]);
+const missingWords = new Set();
+
+// Process line-by-line to perfectly preserve paragraphs, double-spaces, and line breaks
+const lines = text.split('\n');
+const transcribedLines = lines.map(line => {
+    // If the line is completely empty, leave it exactly as-is
+    if (!line.trim()) return line;
+
+    const doc = nlp(line);
+
+    doc.terms().forEach((term) => {
+        const normal = term.text('normal');
+        if (!normal) return;
+
+        let replaced = false;
+
+        // Try to replace the word
+        if (brain[normal]) {
+            const replacement = getReplacement(term, brain[normal]);
+            if (replacement) {
+                term.replaceWith(replacement, { keepTags: true, keepCase: true });
+                replaced = true;
+            }
         }
 
-        const replacement = getReplacement(term, brain[normal]);
-        if (replacement) {
-            term.replaceWith(replacement, { keepTags: true, keepCase: true });
+        // Handle missing or skipped words
+        if (!replaced) {
+            // Retrieve the exact text of the word (without surrounding punctuation) to preserve capitalization
+            const originalWord = term.json()[0].terms[0].text;
+            
+            term.replaceWith(`[${originalWord}]`, { keepTags: true });
+            missingWords.add(normal);
         }
-    }
+    });
+
+    return doc.text();
 });
 
 const outDir = path.dirname(outputFile);
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
-fs.writeFileSync(outputFile, doc.text(), 'utf8');
+
+// Stitch the lines back together with exact original line breaks
+fs.writeFileSync(outputFile, transcribedLines.join('\n'), 'utf8');
+
 console.log(`\n✅ Transcription complete! Saved to: ${outputFile}`);
+
+if (missingWords.size > 0) {
+    console.log(`\n⚠️  Missing Words Tracker (${missingWords.size} untranslated words):`);
+    console.log(Array.from(missingWords).sort().join(', '));
+}
