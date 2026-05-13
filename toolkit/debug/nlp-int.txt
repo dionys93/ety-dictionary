@@ -44,6 +44,30 @@
   Tags   : [ Noun, Singular ]
 
 [Sentence 3]
+"Papers were flying everywhere when I arrived."
+-----------------------------------------------------------------
+  Word   : 'Papers'
+  Tags   : [ Plural, Noun ]
+
+  Word   : 'were'
+  Tags   : [ Verb, Copula, Auxiliary ]
+
+  Word   : 'flying'
+  Tags   : [ Verb, PresentTense, Gerund ]
+
+  Word   : 'everywhere'
+  Tags   : [ Adverb ]
+
+  Word   : 'when'
+  Tags   : [ Preposition ]
+
+  Word   : 'I'
+  Tags   : [ Noun, Pronoun ]
+
+  Word   : 'arrived'
+  Tags   : [ Verb, PastTense ]
+
+[Sentence 4]
 "I need to record a new record for the studio."
 -----------------------------------------------------------------
   Word   : 'I'
@@ -76,7 +100,7 @@
   Word   : 'studio'
   Tags   : [ Noun, Singular ]
 
-[Sentence 4]
+[Sentence 5]
 "The defense will object to that bizarre object being presented."
 -----------------------------------------------------------------
   Word   : 'The'
@@ -109,7 +133,7 @@
   Word   : 'presented'
   Tags   : [ Verb, PastTense ]
 
-[Sentence 5]
+[Sentence 6]
 "Please book a flight so I can read my book on the plane."
 -----------------------------------------------------------------
   Word   : 'Please'
@@ -151,7 +175,7 @@
   Word   : 'plane'
   Tags   : [ Noun, Singular ]
 
-[Sentence 6]
+[Sentence 7]
 "The strong bear could barely bear the weight of the snow."
 -----------------------------------------------------------------
   Word   : 'The'
@@ -187,7 +211,7 @@
   Word   : 'snow'
   Tags   : [ Noun, Singular ]
 
-[Sentence 7]
+[Sentence 8]
 "The quick brown foxes are jumping over the lazy dogs."
 -----------------------------------------------------------------
   Word   : 'The'
@@ -220,7 +244,7 @@
   Word   : 'dogs'
   Tags   : [ Noun, Plural ]
 
-[Sentence 8]
+[Sentence 9]
 "She spoke to the children and gave them three blind mice."
 -----------------------------------------------------------------
   Word   : 'She'
@@ -256,7 +280,7 @@
   Word   : 'mice'
   Tags   : [ Noun, Plural ]
 
-[Sentence 9]
+[Sentence 10]
 "He flies the plane, but there are many flies in the cockpit."
 -----------------------------------------------------------------
   Word   : 'He'
@@ -295,7 +319,7 @@
   Word   : 'cockpit'
   Tags   : [ Noun, Singular ]
 
-[Sentence 10]
+[Sentence 11]
 "Wait, did Alice really say, 'Hello world!'?"
 -----------------------------------------------------------------
   Word   : 'Wait,'
@@ -321,7 +345,7 @@
   Normal : 'world'
   Tags   : [ Noun, Singular ]
 
-[Sentence 11]
+[Sentence 12]
 "To be, or not to be: that is the question."
 -----------------------------------------------------------------
   Word   : 'To'
@@ -354,7 +378,7 @@
   Word   : 'question'
   Tags   : [ Noun, Singular ]
 
-[Sentence 12]
+[Sentence 13]
 "THE LOUD NOISES SCARED THE CAT."
 -----------------------------------------------------------------
   Word   : 'THE'
@@ -375,7 +399,7 @@
   Word   : 'CAT'
   Tags   : [ Acronym, Noun, ProperNoun, Organization ]
 
-[Sentence 13]
+[Sentence 14]
 "It's not the dog's bone, it's ours."
 -----------------------------------------------------------------
   Word   : 'It's'
@@ -405,7 +429,7 @@
   Word   : 'ours'
   Tags   : [ Noun, Possessive ]
 
-[Sentence 14]
+[Sentence 15]
 "They're going to see their friends over there."
 -----------------------------------------------------------------
   Word   : 'They're'
@@ -435,7 +459,7 @@
   Word   : 'there'
   Tags   : [ Noun, Uncountable ]
 
-[Sentence 15]
+[Sentence 16]
 "Don't let the cat out of the bag."
 -----------------------------------------------------------------
   Word   : 'Don't'
@@ -465,7 +489,7 @@
   Word   : 'bag'
   Tags   : [ Noun, Singular ]
 
-[Sentence 16]
+[Sentence 17]
 "Turn on the light to light up the light, green room."
 -----------------------------------------------------------------
   Word   : 'Turn'
@@ -501,7 +525,7 @@
   Word   : 'room'
   Tags   : [ Noun, Singular ]
 
-[Sentence 17]
+[Sentence 18]
 "The fast runner ran fast during the religious fast."
 -----------------------------------------------------------------
   Word   : 'The'

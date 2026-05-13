@@ -1120,7 +1120,6 @@ etym-flatten() {
     local TARGET_INPUT=""
     local INCLUDE_ORIGIN=0
 
-    # 1. Parse Arguments
     while [[ "$#" -gt 0 ]]; do
         case $1 in
             --csv) FORMAT="csv"; OUT_FILE="flattened_dictionary.csv"; shift ;;
@@ -1134,17 +1133,11 @@ etym-flatten() {
         esac
     done
 
-    # 2. Resolve Path
     local TARGET_DIR="${TARGET_INPUT:-$DICT_DIR}"
-    if [ ! -d "$TARGET_DIR" ]; then
-        echo "Error: Directory $TARGET_DIR not found."
-        return 1
-    fi
+    if [ ! -d "$TARGET_DIR" ]; then echo "Error: Directory not found."; return 1; fi
 
     echo "Flattening multi-stanza data from $TARGET_DIR into $FORMAT format..."
-    echo "================================================================="
 
-    # 3. Write Headers (Skip if JSONL)
     if [[ "$FORMAT" != "jsonl" ]]; then
         local header="File_Name,Modern_English,Reformed_Word,Conjugations,Part_of_Speech"
         [[ $INCLUDE_ORIGIN -eq 1 ]] && header+=",Language_Origin"
@@ -1152,10 +1145,9 @@ etym-flatten() {
         echo -e "$header" > "$OUT_FILE"
     else
         mkdir -p "$ETYM_LIB_DIR/dist"
-        > "$OUT_FILE" # Clear the file for JSONL
+        > "$OUT_FILE" 
     fi
 
-    # 4. The Single Source of Truth Extraction Engine
     find "$TARGET_DIR" -type f -name "*.txt" -print0 | xargs -0 awk -v fmt="$FORMAT" -v inc_org="$INCLUDE_ORIGIN" '
         BEGIN { 
             RS=""; FS="\n" 
@@ -1170,10 +1162,10 @@ etym-flatten() {
             pos_map["modal"]="modal"; pos_map["aux"]="auxiliary"; 
         }
         
-        function extract_core(line, stripped, comma_parts, n_comma, final_part, words) {
+        function extract_core(line, stripped, comma_parts, final_part, words) {
             stripped = line; gsub(/\[[A-Z]+\]/, "", stripped)       
-            n_comma = split(stripped, comma_parts, ",")
-            final_part = comma_parts[n_comma]
+            split(stripped, comma_parts, ",")
+            final_part = comma_parts[1] # ALWAYS grab the first root word
             gsub(/^[ \t]+|[ \t]+$/, "", final_part)
             sub(/^[tT][oO][ \t]+/, "", final_part)
             split(final_part, words, "[ \t]+")
@@ -1185,9 +1177,7 @@ etym-flatten() {
             if (substr(form, 1, 1) == "-") {
                 if (is_ing == 1) res = ing_base substr(form, 2)
                 else res = base substr(form, 2)
-            } else {
-                res = form
-            }
+            } else { res = form }
             return res
         }
 
@@ -1195,14 +1185,13 @@ etym-flatten() {
             pos = ""; verbose_pos = ""; lang = ""; target = ""; conj = ""; me_word = ""; pos_line_idx = 0;
             fname = FILENAME; sub(/^.*\//, "", fname); sub(/\.txt$/, "", fname)
 
-            # Find [LANG] tag
             for (i=1; i<=NF; i++) { if ($i !~ /http/ && match($i, /\[[A-Z]+\]/)) { lang = substr($i, RSTART+1, RLENGTH-2); break } }
 
-            # Extract POS and Conjugations
             for (i=1; i<=NF; i++) {
                 if ($i !~ /http/ && match($i, /\(([a-z ]+(, [a-z ]+)*)\)/)) {
                     pos_line_idx = i
-                    pos = substr($i, RSTART+1, RLENGTH-2); sub(/,.*/, "", pos) 
+                    # Strict POS Extraction
+                    pos = substr($i, RSTART+1, RLENGTH-2); sub(/,.*/, "", pos); gsub(/^[ \t]+|[ \t]+$/, "", pos);
                     verbose_pos = (pos in pos_map) ? pos_map[pos] : pos
                     
                     temp_line = $i; sub(/^[ \t]+/, "", temp_line); sub(/^to[ \t]+/, "", temp_line); sub(/\(([a-z ]+(, [a-z ]+)*)\)/, "", temp_line) 
@@ -1233,7 +1222,6 @@ etym-flatten() {
                             conj_list = (conj_list == "") ? resolved : (conj_list " " resolved)
                         }
                     } else if (index(verbose_pos, "modal") > 0 || index(verbose_pos, "auxiliary") > 0) {
-                        # Modals/Aux: Bypass suffix logic, just strip punctuation
                         for(j=2; j<=n_words; j++) {
                             w = words[j]; if (w == "") continue
                             gsub(/[\(\),;]/, "", w) 
@@ -1256,19 +1244,15 @@ etym-flatten() {
                 }
             }
 
-            # Extract English Word (Priority Fallbacks)
             if (match($pos_line_idx, /\[[A-Z]+\]/)) { me_word = extract_core($pos_line_idx) }
             if (me_word == "") { for(i=1; i<=NF; i++) { if ($i ~ /\[ME\]/) { me_word = extract_core($i); break; } } }
             if (me_word == "") { for(i=1; i<=NF; i++) { if ($i ~ /\[MI\]/) { me_word = extract_core($i); break; } } }
             if (me_word == "" && pos_line_idx > 1) { me_word = extract_core($(pos_line_idx - 1)) }
 
-            # Format and Output
             if (verbose_pos != "" && lang != "" && target != "") {
-                if (fmt == "jsonl") {
-                    printf "%s\t%s\t%s\t%s\n", me_word, target, verbose_pos, conj
-                } else {
-                    delim = (fmt == "csv") ? "," : "\t"
-                    q = (fmt == "csv") ? "\"" : ""
+                if (fmt == "jsonl") { printf "%s\t%s\t%s\t%s\n", me_word, target, verbose_pos, conj } 
+                else {
+                    delim = (fmt == "csv") ? "," : "\t"; q = (fmt == "csv") ? "\"" : ""
                     out_str = q fname q delim q me_word q delim q target q delim q conj q delim q verbose_pos q
                     if (inc_org == 1) out_str = out_str delim q lang q
                     print out_str
@@ -1277,22 +1261,12 @@ etym-flatten() {
         }
     ' | (
         if [[ "$FORMAT" == "jsonl" ]]; then
-            jq -R -c '
-                split("\t") | {
-                    me_word: .[0],
-                    inglisce_word: .[1],
-                    pos: .[2],
-                    conjugations: (if .[3] == "" then [] else (.[3] | split(" ")) end)
-                }' >> "$OUT_FILE"
-        else
-            cat >> "$OUT_FILE"
-        fi
+            jq -R -c 'split("\t") | { me_word: .[0], inglisce_word: .[1], pos: .[2], conjugations: (if .[3] == "" then [] else (.[3] | split(" ")) end) }' >> "$OUT_FILE"
+        else cat >> "$OUT_FILE"; fi
     )
 
     local ROW_COUNT=$(wc -l < "$OUT_FILE" | xargs)
-    echo "✅ Extraction complete!"
-    printf "Exported \e[1m%d\e[0m data rows to \e[32m%s\e[0m\n" "$ROW_COUNT" "$OUT_FILE"
-    echo "================================================================="
+    echo "✅ Exported $ROW_COUNT rows to $OUT_FILE"
 }
 
 
