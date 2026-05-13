@@ -1111,7 +1111,8 @@ etym-lint() {
         return 1
     fi
     return 0
-}
+} 
+
 
 etym-flatten() {
     local FORMAT="tsv"
@@ -1163,11 +1164,10 @@ etym-flatten() {
             pos_map["tr v"]="transitive verb"; pos_map["conj"]="conjunction"; 
             pos_map["adj"]="adjective"; pos_map["prep"]="preposition"; 
             pos_map["pron"]="pronoun"; pos_map["adv"]="adverb";
-            
-            # Added your article and number tags!
             pos_map["defin"]="definite article"; pos_map["indefin"]="indefinite article";
             pos_map["def art"]="definite article"; pos_map["indef art"]="indefinite article";
             pos_map["art"]="article"; pos_map["num"]="number";
+            pos_map["modal"]="modal"; pos_map["aux"]="auxiliary"; 
         }
         
         function extract_core(line, stripped, comma_parts, n_comma, final_part, words) {
@@ -1195,8 +1195,10 @@ etym-flatten() {
             pos = ""; verbose_pos = ""; lang = ""; target = ""; conj = ""; me_word = ""; pos_line_idx = 0;
             fname = FILENAME; sub(/^.*\//, "", fname); sub(/\.txt$/, "", fname)
 
+            # Find [LANG] tag
             for (i=1; i<=NF; i++) { if ($i !~ /http/ && match($i, /\[[A-Z]+\]/)) { lang = substr($i, RSTART+1, RLENGTH-2); break } }
 
+            # Extract POS and Conjugations
             for (i=1; i<=NF; i++) {
                 if ($i !~ /http/ && match($i, /\(([a-z ]+(, [a-z ]+)*)\)/)) {
                     pos_line_idx = i
@@ -1230,6 +1232,13 @@ etym-flatten() {
                             resolved = resolve_form(w, temp_base, temp_base, 0)
                             conj_list = (conj_list == "") ? resolved : (conj_list " " resolved)
                         }
+                    } else if (index(verbose_pos, "modal") > 0 || index(verbose_pos, "auxiliary") > 0) {
+                        # Modals/Aux: Bypass suffix logic, just strip punctuation
+                        for(j=2; j<=n_words; j++) {
+                            w = words[j]; if (w == "") continue
+                            gsub(/[\(\),;]/, "", w) 
+                            conj_list = (conj_list == "") ? w : (conj_list " " w)
+                        }
                     } else {
                         for(j=2; j<=n_words; j++) {
                             w = words[j]; if (w == "") continue
@@ -1247,16 +1256,13 @@ etym-flatten() {
                 }
             }
 
-            # --- THE MISSING PRIORITY LOGIC ---
-            # 1. Inline POS Line 
+            # Extract English Word (Priority Fallbacks)
             if (match($pos_line_idx, /\[[A-Z]+\]/)) { me_word = extract_core($pos_line_idx) }
-            # 2. [ME] Line
             if (me_word == "") { for(i=1; i<=NF; i++) { if ($i ~ /\[ME\]/) { me_word = extract_core($i); break; } } }
-            # 3. [MI] Line
             if (me_word == "") { for(i=1; i<=NF; i++) { if ($i ~ /\[MI\]/) { me_word = extract_core($i); break; } } }
-            # 4. Fallback
             if (me_word == "" && pos_line_idx > 1) { me_word = extract_core($(pos_line_idx - 1)) }
 
+            # Format and Output
             if (verbose_pos != "" && lang != "" && target != "") {
                 if (fmt == "jsonl") {
                     printf "%s\t%s\t%s\t%s\n", me_word, target, verbose_pos, conj
@@ -1288,6 +1294,7 @@ etym-flatten() {
     printf "Exported \e[1m%d\e[0m data rows to \e[32m%s\e[0m\n" "$ROW_COUNT" "$OUT_FILE"
     echo "================================================================="
 }
+
 
 etym-graph() {
     local OUT_FILE="etym_graph.json"
