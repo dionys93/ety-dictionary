@@ -19,7 +19,6 @@ import nlp from 'compromise';
 
 const args = process.argv.slice(2);
 const inputFile = args[0];
-// Default output path if the user doesn't provide one
 const outputFile = args[1] || path.join(import.meta.dirname, '..', 'dist', 'test_transcription.txt');
 
 if (!inputFile || !fs.existsSync(inputFile)) {
@@ -33,7 +32,6 @@ if (!fs.existsSync(brainPath)) {
     process.exit(1);
 }
 
-// Load data into memory
 const brain = JSON.parse(fs.readFileSync(brainPath, 'utf8'));
 const text = fs.readFileSync(inputFile, 'utf8');
 
@@ -41,11 +39,6 @@ const text = fs.readFileSync(inputFile, 'utf8');
 // 2. HELPER FUNCTIONS
 // ============================================================================
 
-/**
- * Determines the best Inglisce translation for a specific NLP term.
- * Priority is strictly ordered to prevent generic parts of speech from 
- * hijacking specialized structural words.
- */
 const getReplacement = (term, brainEntry) => {
     // 1. SPECIFIC/STRUCTURAL VERBS 
     if (term.has('#Copula') && brainEntry.Copula) return brainEntry.Copula;
@@ -74,34 +67,22 @@ const getReplacement = (term, brainEntry) => {
     return brainEntry[keys[0]];
 };
 
-/**
- * Custom Unicode-Aware Casing Engine
- * Forces Inglisce replacements to perfectly match the capitalization of the original 
- * English word, handling custom constructed-language orthography (like þ -> Ћ).
- */
 const matchCasing = (originalText, replacementWord) => {
-    // Strip punctuation from the original word so we only analyze alphabetical case
     const cleanOriginal = originalText.replace(/[^a-zA-Z]/g, '');
     if (!cleanOriginal) return replacementWord;
 
-    // Custom Inglisce Uppercase Map
-    // JavaScript natively turns 'þ' into 'Þ', but Inglisce explicitly uses 'Ћ'
     const toInglisceUpper = (char) => char === 'þ' ? 'Ћ' : char.toUpperCase();
 
-    // 1. Check for ALL CAPS (e.g., "THE" -> "ЋE")
     if (cleanOriginal === cleanOriginal.toUpperCase()) {
         return replacementWord.split('').map(toInglisceUpper).join('');
     }
     
-    // 2. Check for Title Case (e.g., "The" -> "Ћe")
     if (/^[A-Z]/.test(cleanOriginal)) {
         return toInglisceUpper(replacementWord.charAt(0)) + replacementWord.slice(1);
     }
 
-    // Default to lowercase
     return replacementWord;
 };
-
 
 // ============================================================================
 // 3. TRANSCRIPTION ENGINE
@@ -109,22 +90,26 @@ const matchCasing = (originalText, replacementWord) => {
 
 console.log(`🤖 Transcribing: ${inputFile}...`);
 
-// Tracks words not found in the dictionary for the end-of-script audit report
 const missingWords = new Set();
-
-// Extract all explicitly mapped multi-word phrases (e.g., "do not", "isn't")
-// so we can intercept them before compromise.js tries to split them.
 const multiWords = Object.keys(brain).filter(k => k.includes(' ') || k.includes("'"));
 
-// Split text by explicit newline characters to perfectly preserve paragraph
-// spacing and formatting, which nlp(text) would otherwise strip out.
 const lines = text.split('\n');
 
 const transcribedLines = lines.map(line => {
-    // Skip completely blank lines
     if (!line.trim()) return line;
 
-    const doc = nlp(line);
+    // --- PASS 0: PRONOUN CONTRACTION EXPANDER ---
+    // Safely expands pronoun contractions BEFORE the NLP engine parses them.
+    // This prevents the engine from duplicating implicit token outputs.
+    let cleanLine = line
+        .replace(/\b([Yy]ou|[Ww]e|[Tt]hey)['’]re\b/g, "$1 are")
+        .replace(/\b([Ii])['’]m\b/g, "$1 am")
+        .replace(/\b([Ii]|[Yy]ou|[Hh]e|[Ss]he|[Ii]t|[Ww]e|[Tt]hey)['’]ll\b/g, "$1 will")
+        .replace(/\b([Ii]|[Yy]ou|[Hh]e|[Ss]he|[Ii]t|[Ww]e|[Tt]hey)['’]d\b/g, "$1 would")
+        .replace(/\b([Ii]|[Yy]ou|[Ww]e|[Tt]hey)['’]ve\b/g, "$1 have")
+        .replace(/\b([Hh]e|[Ss]he|[Ii]t|[Tt]hat|[Tt]here|[Ww]ho|[Ww]hat|[Ww]here)['’]s\b/g, "$1 is");
+
+    const doc = nlp(cleanLine);
 
     // --- PASS 1: MULTI-WORD INTERCEPTOR ---
     multiWords.forEach(key => {
@@ -133,10 +118,7 @@ const transcribedLines = lines.map(line => {
         
         if (fallback) {
             doc.match(key).forEach(m => {
-                // Manually calculate case before replacement
                 const casedFallback = matchCasing(m.text(), fallback);
-                
-                // keepCase is FALSE so the engine doesn't overwrite our custom þ -> Ћ math
                 m.replaceWith(casedFallback, { keepTags: true, keepCase: false });
                 m.tag('#Translated'); 
             });
@@ -147,17 +129,37 @@ const transcribedLines = lines.map(line => {
     doc.terms().forEach((term) => {
         if (term.has('#Translated')) return;
 
-        const normal = term.text('normal');
+        let normal = term.text('normal');
         if (!normal) return;
+
+        // --- POSSESSIVE SPLITTER ---
+        let isPossessive = false;
+        let possessiveSuffix = '';
+        
+        if (term.has('#Possessive')) {
+            isPossessive = true;
+            const raw = term.text();
+            
+            // Isolate the suffix and safely strip it from the lookup word
+            if (raw.endsWith("'s") || raw.endsWith("’s")) {
+                possessiveSuffix = "'s";
+                normal = normal.replace(/['’]s$/, ''); 
+            } else if (raw.endsWith("'") || raw.endsWith("’")) {
+                possessiveSuffix = "'";
+                normal = normal.replace(/['’]$/, ''); 
+            }
+        }
 
         // Attempt lookup and replacement
         if (brain[normal]) {
-            const replacement = getReplacement(term, brain[normal]);
+            let replacement = getReplacement(term, brain[normal]);
             if (replacement) {
-                // Manually calculate case before replacement
-                const casedReplacement = matchCasing(term.text(), replacement);
+                // Reattach the Inglisce possessive marker if needed
+                if (isPossessive) {
+                    replacement += possessiveSuffix; 
+                }
                 
-                // keepCase is FALSE so the engine doesn't overwrite our custom þ -> Ћ math
+                const casedReplacement = matchCasing(term.text(), replacement);
                 term.replaceWith(casedReplacement, { keepTags: true, keepCase: false });
                 term.tag('#Translated');
                 return;
@@ -169,6 +171,8 @@ const transcribedLines = lines.map(line => {
         if (!rawText.includes('[')) {
             term.replaceWith(`[${rawText}]`, { keepTags: true });
         }
+        
+        // Add the clean root word to the tracker (e.g. "dog" instead of "dog's")
         missingWords.add(normal);
     });
 
@@ -179,16 +183,12 @@ const transcribedLines = lines.map(line => {
 // 4. OUTPUT & REPORTING
 // ============================================================================
 
-// Ensure destination folder exists
 const outDir = path.dirname(outputFile);
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
-
-// Stitch the document back together with its original linebreaks
 fs.writeFileSync(outputFile, transcribedLines.join('\n'), 'utf8');
 
 console.log(`✅ Transcription complete! Saved to: ${outputFile}`);
 
-// Print the To-Do list of missing words
 if (missingWords.size > 0) {
     console.log(`\n⚠️  Missing Words Tracker (${missingWords.size} untranslated words):`);
     console.log(Array.from(missingWords).sort().join(', '));
