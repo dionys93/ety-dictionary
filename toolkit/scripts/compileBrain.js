@@ -71,7 +71,7 @@ const addWord = (eng, inglisce, pos) => {
     brain[cleanEng][pos] = brain[cleanEng][pos] || cleanIng;
 };
 
-async function compile() {
+export async function compile() {
     console.log('🧠 Compiling Translation Brain...');
     
     if (!fs.existsSync(JSONL_FILE)) {
