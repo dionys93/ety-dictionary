@@ -43,9 +43,13 @@
 /p/ p
 
 /b/ b
+
 /t/ t
+
 /d/ d 
+
 /k/ c, k 
+
 /ɡ/ g  
 /f/ f 
 /v/ bf 
