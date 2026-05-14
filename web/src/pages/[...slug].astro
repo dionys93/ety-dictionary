@@ -1,26 +1,30 @@
 ---
 // web/src/pages/[...slug].astro
 
-// --- IMPORTS ---
-// Import the utility that scans your local file system to build the site's routes
+// ==========================================
+// 1. IMPORTS
+// ==========================================
 import { getDictionaryPaths } from '../utils/dictionary.js';
-
-// Import the two main layout components
 import DirectoryView from '../components/DirectoryView.astro';
 import ContentView from '../components/ContentView.astro';
 import BookReader from '../components/BookReader.jsx';
+import BackButton from '../components/ui/BackButton.astro';
 
-// --- ROUTING LOGIC ---
-// getStaticPaths() is a mandatory Astro function for dynamic routing (like [...slug]).
-// It executes at build time, calling your dictionary utility to figure out exactly 
-// which HTML pages need to be generated based on your local folders and markdown files.
+// ==========================================
+// 2. ROUTING LOGIC (SSG Build)
+// ==========================================
+// getStaticPaths is executed once at build time. It scans your local 
+// data directories and generates a static HTML page for every folder, 
+// file, and book it finds.
 export async function getStaticPaths() {
   return getDictionaryPaths();
 }
 
-// --- PROPS & PARAMS ---
-// Extract the specific data for the current page being generated.
-// These props are passed down from the array of objects returned by getDictionaryPaths() above.
+// ==========================================
+// 3. PAGE DATA (Props & Params)
+// ==========================================
+// Astro injects the specific data for the current URL being generated 
+// into Astro.props (the content) and Astro.params (the URL string).
 const { 
   type, 
   title, 
@@ -33,8 +37,19 @@ const {
 
 const { slug } = Astro.params;
 
-// If the folder has book pages, we render the reader!
+// Helper boolean to determine if the current directory is a special "Book" directory
 const isBookDir = type === 'directory' && bookPages && bookPages.length > 0;
+
+// ==========================================
+// 4. MOBILE STATE DETERMINATION
+// ==========================================
+// Because Astro is a Multi-Page Application (MPA), we don't use React state 
+// to toggle views. Instead, we determine the "View State" at build time based 
+// on the type of page the user navigated to.
+// 
+// - If the user clicked a File or a Book, they want to read it ('mobile-content').
+// - If the user clicked a Folder, they are navigating the menu ('mobile-nav').
+const mobileMode = (type === 'file' || isBookDir) ? 'mobile-content' : 'mobile-nav';
 ---
 
 <html lang="en">
@@ -44,41 +59,96 @@ const isBookDir = type === 'directory' && bookPages && bookPages.length > 0;
     <title>{title}</title>
     
     <style>
-      /* Base resets */
+      /* --- GLOBAL RESETS --- */
       body { margin: 0; padding: 0; font-family: sans-serif; }
       
-      /* The Two-Pane CSS Grid */
+      /* ==========================================
+         DESKTOP LAYOUT (The Two-Pane UI)
+         ========================================== */
       .split-layout {
         display: grid;
-        grid-template-columns: 350px 1fr; /* 350px for nav, the rest for content */
+        grid-template-columns: 350px 1fr; /* Fixed 350px sidebar, flexible content */
         height: 100vh;
         width: 100vw;
-        overflow: hidden; /* Lock the main window from scrolling */
+        overflow: hidden; /* Locks the body, forcing panes to scroll independently */
       }
 
-      /* Left Navigation Pane */
       .left-pane {
         background-color: #f9fafb;
         border-right: 1px solid #e5e7eb;
-        overflow-y: scroll; /* Allow independent scrolling */
+        overflow-y: auto; /* Allows the nav list to scroll */
       }
 
-      /* Right Content Pane */
       .right-pane {
         background-color: #ffffff;
-        overflow-y: auto; /* Allow independent scrolling */
+        overflow-y: auto; /* Allows the document/book to scroll */
+        display: flex;
+        flex-direction: column;
+      }
+
+      /* Hidden by default on desktop, this holds our mobile back button */
+      .mobile-back-nav {
+        display: none; 
+      }
+
+      /* ==========================================
+         MOBILE LAYOUT (The Native Stack View)
+         ========================================== */
+      /* When the screen is narrower than an iPad (768px), we break the grid 
+         and rely on the `mobileMode` class injected into the HTML wrapper */
+      @media (max-width: 768px) {
+        
+        .split-layout {
+          display: block; /* Turns off the side-by-side grid */
+        }
+
+        /* --- STATE A: User is looking at the Menu --- */
+        /* If the URL is a directory, hide the right pane completely. */
+        .split-layout.mobile-nav .right-pane {
+          display: none;
+        }
+        /* Stretch the left pane to take over the whole phone screen */
+        .split-layout.mobile-nav .left-pane {
+          height: 100vh;
+        }
+
+        /* --- STATE B: User is looking at a Document/Book --- */
+        /* If the URL is a file, hide the left pane (menu) completely. */
+        .split-layout.mobile-content .left-pane {
+          display: none;
+        }
+        /* Stretch the right pane to take over the whole phone screen */
+        .split-layout.mobile-content .right-pane {
+          display: flex;
+          height: 100vh;
+        }
+
+        /* Reveal the mobile back button and stick it to the top.
+           Because it uses history.back(), clicking it instantly returns 
+           the user to State A, perfectly preserving their scroll position! */
+        .split-layout.mobile-content .mobile-back-nav {
+          display: block;
+          padding: 1rem;
+          background-color: #f9fafb;
+          border-bottom: 1px solid #e5e7eb;
+          position: sticky; /* Keeps it visible at the top while reading */
+          top: 0;
+          z-index: 10;
+        }
       }
     </style>
   </head>
   
   <body>
-    <div class="split-layout">
+    <div class={`split-layout ${mobileMode}`}>
       
-      {/* --- LEFT PANE: NAVIGATION --- */}
+      {/* ==========================================
+          LEFT PANE: NAVIGATION MENU
+          ========================================== */}
       <nav class="left-pane">
         <DirectoryView 
           title={title} 
-          items={contents} /* NOTE: This will break temporarily when viewing files until Step 2 */
+          items={contents} 
           content={type === 'directory' ? content : undefined} 
           ext={ext} 
           isRoot={isRoot} 
@@ -86,15 +156,24 @@ const isBookDir = type === 'directory' && bookPages && bookPages.length > 0;
         />
       </nav>
 
-      {/* --- RIGHT PANE: CONTENT --- */}
+      {/* ==========================================
+          RIGHT PANE: DOCUMENT VIEWER
+          ========================================== */}
       <main class="right-pane">
+        
+        {/* Mobile Back Button (Handled by CSS Media Queries) */}
+        <div class="mobile-back-nav">
+           <BackButton />
+        </div>
+
+        {/* Conditional Rendering based on the data available for this URL */}
         {isBookDir ? (
-          /* Render the Interactive Flipbook! */
-          <div style="padding: 2rem; display: flex; justify-content: center;">
+          /* Render the 3D Flipbook if book pages exist */
+          <div style="padding: 2rem; display: flex; justify-content: center; flex-grow: 1;">
             <BookReader pages={bookPages} client:load />
           </div>
         ) : content ? (
-          /* Render file content OR directory index.md content */
+          /* Render parsed Markdown or raw text if a document was clicked */
           <ContentView 
             content={content} 
             ext={ext} 
@@ -102,8 +181,8 @@ const isBookDir = type === 'directory' && bookPages && bookPages.length > 0;
             slug={slug || ''} 
           />
         ) : (
-          /* Placeholder when looking at a standard folder */
-          <div style="display: flex; align-items: center; justify-content: center; height: 100%; color: #9ca3af;">
+          /* Fallback empty state for desktop when a user first lands on a folder */
+          <div style="display: flex; align-items: center; justify-content: center; flex-grow: 1; color: #9ca3af;">
             Select a document from the left to read.
           </div>
         )}
