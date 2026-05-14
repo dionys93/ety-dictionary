@@ -7,69 +7,37 @@
 ---
 
 #### 1. Dental / Alveolar (T & D)
-| Base Letter | Voicing | Broad Reaction | Slender Reaction |
-| :--- | :--- | :--- | :--- |
-| **t** | Unvoiced | **/t/** | **/θ/** |
-| **d** | Voiced | **/d/** | **/ð/** |
+| Base Letter | Broad Reaction | Slender Reaction |
+| :--- | :--- | :--- |
+| **t** | **/t/** with a, o, u, y | **/θ/** with e, i |
+| **d** | **/d/** with a, o, u | **/ð/** with e, i, y |
 
 #### 2. Velar / Palatal (C & G)
-| Base Letter | Voicing | Broad Reaction | Slender Reaction |
-| :--- | :--- | :--- | :--- |
-| **c** | Unvoiced | **/k/** *(cat)* | **/tʃ/** |
-| **g** | Voiced | **/ɡ/** *(go)* | **/j/** |
-| **cg / ġ** | Voiced | **/dʒ/** | **/dʒ/** |
+| Base Letter | Broad Reaction | Slender Reaction |
+| :--- | :--- | :--- |
+| **c** | **/k/** with a, o, u, y | **/tʃ/** with e, i |
+| **g** | **/ɡ/** with a, o, u | **/j/** with e, i |
+| **cg / ġ** | N/A | **/dʒ/** with all |
+| **ġ** | **/dʒ/** with e, i (sugġest) | **/j/** with a, o, u (figġur) |
 
 #### 3. Sibilants (S & Z sounds)
-| Base Letter | Voicing | Broad Reaction | Slender Reaction |
-| :--- | :--- | :--- | :--- |
-| **s** | Unvoiced | **/s/** | **/ʃ/** |
-| **ṡ** | Voiced | **/z/** | **/ʒ/** |
+| Base Letter | Broad Reaction | Slender Reaction |
+| :--- | :--- | :--- |
+| **s** | **/s/** with a, o, u | **/ʃ/** e, i |
+| **ṡ** | **/z/** | **/ʒ/** |
 
 #### 4. Labial Fricatives (F, V, W sounds)
-| Base Letter | Voicing | Broad Reaction | Slender Reaction |
-| :--- | :--- | :--- | :--- |
-| **f** | Unvoiced | **/f/** | **/fʲ/**  |
-| **bh / mh** | Voiced | **/w/** | **/v/** |
+| Base Letter | Broad Reaction | Slender Reaction |
+| :--- | :--- | :--- |
+| **f** | **/f/** | **/fʲ/**  |
+| **bh / mh** | **/w/** | **/v/** |
 
 #### 5. Bilabial Stops (P & B)
-| Base Letter | Voicing | Broad Reaction | Slender Reaction |
-| :--- | :--- | :--- | :--- |
-| **p** | Unvoiced | **/p/** | **/pʲ/**  |
-| **b** | Voiced | **/b/** | **/bʲ/** |
+| Base Letter | Broad Reaction | Slender Reaction |
+| :--- | :--- | :--- |
+| **p** | **/p/** | **/pʲ/**  |
+| **b** | **/b/** | **/bʲ/** |
 
-#### PART 1: ESTABLISHED INGLISC MUTATIONS
-*(These are the rules hard-coded into the Inglisc orthography)*
-
-| Consonant / Digraph | Broad Reaction | Slender Reaction | 
-| :--- | :--- | :--- | 
-| **s** | **/s/** (sit) | **/ʃ/** (shoe) |  
-| **c** | **/k/** (cat) | **/tʃ/** (chair) |  
-| **g** | **/g/** (go) | **/j/** (yes/yell) |
-| **t** | **/t/** (top) | **/θ/** (think) | 
-| **d** | **/d/** (dog) | **/ð/** (that) | 
-| **f** | **/f/** (farm) | **/fʲ/** (few) | 
-| **bh / mh** | **/w/** (water) | **/v/** (voice) |
-| **cg / ġ** | N/A | **/dʒ/** (judge) |
-
----
-
-#### PART 2: UNASSIGNED / STANDARD CONSONANTS
-*(These are the remaining letters in the alphabet. In Inglisc, you can either let these default to their standard English sounds regardless of vowels, or adopt the subtle phonetic glides below.)*
-
-| Consonant / Digraph | Broad Reaction| Slender Reaction | 
-| :--- | :--- | :--- | :--- |
-| **b** | **/b/** (bat) | **/bʲ/** (beautiful) |
-| **p** | **/p/** (pot) | **/pʲ/** (pew) | 
-| **m** | **/m/** (map) | **/mʲ/** (music) |
-| **l** | **/ɫ/**  | **/l/** |
-| **n** | **/n/** (no) | **/ɲ/** (canyon) |
-| **r** | **/ɹ/** |  |
-| **ng** | **/ŋ/** (sing) | **/ŋ/** (sing) | 
-| **h** | /h/ | 
-
-Slenderable Consonants: b, c, d, f, g, h, l, m, n, p, s, t, bf
-Always Broad: r, bh
-Always Slender: cc, gġ
 
 ### Consonants
 /p/
