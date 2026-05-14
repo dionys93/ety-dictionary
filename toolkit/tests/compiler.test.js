@@ -1,6 +1,6 @@
 import { describe, it, expect } from 'vitest';
-import { compile } from '../toolkit/scripts/compileBrain.js'; 
-// (You'll need to export your compile function to do this)
+import { compile } from './scripts/compileBrain.js'; 
+
 
 describe('Node Compiler: translationBrain', () => {
     it('correctly maps the irregular verb "be" into all 28 structural forms', () => {

@@ -1,11 +1,12 @@
-// toolkit/scripts/utils.js
-
 /**
  * Calculates the full Inglisce spelling from a dictionary shorthand suffix.
  */
 export const resolveForm = (form, rootWord, isGerund = false) => {
-    if (!form) return null;
+    // Strict type guards prevent fatal TypeErrors
+    if (!form || typeof form !== 'string') return null;
     if (!form.startsWith('-')) return form.replace(/[()]/g, '');
+
+    if (!rootWord || typeof rootWord !== 'string') return form;
 
     const suffix = form.slice(1);
     const startsWithVowel = /^[aeiouy]/.test(suffix);
@@ -22,6 +23,9 @@ export const resolveForm = (form, rootWord, isGerund = false) => {
  * Matches the capitalization of the original English text.
  */
 export const matchCasing = (originalText, replacementWord) => {
+    if (!originalText || typeof originalText !== 'string') return replacementWord;
+    if (!replacementWord || typeof replacementWord !== 'string') return originalWord;
+
     const cleanOriginal = originalText.replace(/[^a-zA-Z]/g, '');
     if (!cleanOriginal) return replacementWord;
 
