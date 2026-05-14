@@ -428,6 +428,9 @@
   "traces": {
     "Noun": "traices"
   },
+  "there": {
+    "Adverb": "þere"
+  },
   "treachery": {
     "Noun": "traic̃erie"
   },
@@ -1815,6 +1818,9 @@
   "tolns": {
     "Noun": "tóls"
   },
+  "three": {
+    "Value": "þrie"
+  },
   "tell": {
     "Verb": "telle"
   },
@@ -1976,6 +1982,15 @@
   "this": {
     "Pronoun": "þis"
   },
+  "that": {
+    "Pronoun": "þat"
+  },
+  "these": {
+    "Pronoun": "þise"
+  },
+  "those": {
+    "Pronoun": "þose"
+  },
   "tea": {
     "Noun": "tie"
   },
@@ -2031,6 +2046,18 @@
   },
   "they": {
     "Pronoun": "þey"
+  },
+  "them": {
+    "Pronoun": "þem"
+  },
+  "their": {
+    "Pronoun": "þeir"
+  },
+  "theirs": {
+    "Pronoun": "þeirs"
+  },
+  "themselves": {
+    "Pronoun": "þemselfs"
   },
   "trapeze": {
     "Noun": "trapize"
@@ -5255,6 +5282,9 @@
   "arizonans": {
     "Noun": "ârizonans"
   },
+  "and": {
+    "Conjunction": "and"
+  },
   "architect": {
     "Noun": "architect",
     "Verb": "architecte"
@@ -6904,6 +6934,23 @@
   "imaging": {
     "Verb": "imaging"
   },
+  "i": {
+    "Pronoun": "I"
+  },
+  "me": {
+    "Pronoun": "mie"
+  },
+  "my": {
+    "Adjective": "my"
+  },
+  "mine": {
+    "Pronoun": "myne",
+    "Noun": "mîne",
+    "Verb": "mîne"
+  },
+  "myself": {
+    "Pronoun": "myselfe"
+  },
   "interspace": {
     "Noun": "intrespâce"
   },
@@ -6982,6 +7029,15 @@
   },
   "inaccuracies": {
     "Noun": "inaccuracis"
+  },
+  "it": {
+    "Pronoun": "it"
+  },
+  "its": {
+    "Pronoun": "its"
+  },
+  "itself": {
+    "Pronoun": "itselfe"
   },
   "into": {
     "Preposition": "into"
@@ -8526,10 +8582,7 @@
     "Adjective": "erâssable"
   },
   "relief": {
-    "Noun": "relief"
-  },
-  "reliefs": {
-    "Noun": "reliefs"
+    "Noun": "reliefe"
   },
   "relieve": {
     "Verb": "relieve"
@@ -12266,10 +12319,26 @@
     "Noun": "foihts"
   },
   "fought": {
-    "Verb": "faht"
+    "Verb": "fauht"
   },
   "fighting": {
     "Verb": "foihting"
+  },
+  "fast": {
+    "Adjective": "fast",
+    "Adverb": "fast",
+    "Verb": "faste",
+    "Noun": "faste"
+  },
+  "fasts": {
+    "Verb": "fastes",
+    "Noun": "fasts"
+  },
+  "fasted": {
+    "Verb": "fasted"
+  },
+  "fasting": {
+    "Verb": "fasting"
   },
   "fascinate": {
     "Verb": "facinait"
@@ -16746,6 +16815,18 @@
   "haffs": {
     "Noun": "haffs"
   },
+  "he": {
+    "Pronoun": "hie"
+  },
+  "him": {
+    "Pronoun": "him"
+  },
+  "his": {
+    "Adjective": "his"
+  },
+  "himself": {
+    "Pronoun": "himselfe"
+  },
   "horse": {
     "Noun": "horse"
   },
@@ -20449,6 +20530,12 @@
   "berating": {
     "Verb": "beraiting"
   },
+  "belief": {
+    "Noun": "beliefe"
+  },
+  "beliefs": {
+    "Noun": "beliefs"
+  },
   "believe": {
     "Verb": "believe"
   },
@@ -21771,6 +21858,19 @@
   "beards": {
     "Noun": "biards"
   },
+  "blind": {
+    "Adjective": "blînd",
+    "Verb": "blînde"
+  },
+  "blindly": {
+    "Adverb": "blîndly"
+  },
+  "blinds": {
+    "Verb": "blîndes"
+  },
+  "blinding": {
+    "Verb": "blînding"
+  },
   "bicycle": {
     "Noun": "bîcycle"
   },
@@ -21850,6 +21950,10 @@
   "blowing": {
     "Verb": "blouing"
   },
+  "bear": {
+    "Verb": "beire",
+    "Noun": "beare"
+  },
   "wheelbarrow": {
     "Noun": "beiro"
   },
@@ -21857,10 +21961,12 @@
     "Noun": "beiros"
   },
   "bearable": {
-    "Adjective": "beirable"
+    "Adjective": "beirable",
+    "Adverb": "beirably"
   },
-  "bear": {
-    "Noun": "beare"
+  "unbearable": {
+    "Adjective": "unbeîrable",
+    "Adverb": "unbeîrably"
   },
   "budge": {
     "Verb": "boge"
@@ -22722,6 +22828,9 @@
   "bare": {
     "Adjective": "bair",
     "Verb": "baire"
+  },
+  "barely": {
+    "Adverb": "bairly"
   },
   "bares": {
     "Verb": "baires"
@@ -32017,6 +32126,15 @@
   "she": {
     "Pronoun": "sie"
   },
+  "her": {
+    "Pronoun": "her"
+  },
+  "hers": {
+    "Pronoun": "hers"
+  },
+  "herself": {
+    "Pronoun": "herselfe"
+  },
   "scribe": {
     "Noun": "scrîbe",
     "Verb": "scrîbe"
@@ -33559,6 +33677,9 @@
   "never": {
     "Adverb": "nevre"
   },
+  "not": {
+    "Adverb": "not"
+  },
   "niece": {
     "Noun": "niece"
   },
@@ -33857,6 +33978,12 @@
   },
   "negotiatory": {
     "Adjective": "negociatory"
+  },
+  "noise": {
+    "Noun": "noise"
+  },
+  "noises": {
+    "Noun": "noises"
   },
   "ans": {
     "Noun": "nouts"
@@ -36698,13 +36825,13 @@
     "Adjective": "deciteful"
   },
   "deception": {
-    "Noun": "decepţon"
+    "Noun": "deception"
   },
   "deceptions": {
-    "Noun": "decepţons"
+    "Noun": "deceptions"
   },
   "deceptive": {
-    "Adjective": "decèptif"
+    "Adjective": "deceptif"
   },
   "deaf": {
     "Adjective": "deff"
@@ -37903,6 +38030,18 @@
   "we": {
     "Pronoun": "uie"
   },
+  "us": {
+    "Pronoun": "os"
+  },
+  "our": {
+    "Adjective": "aur"
+  },
+  "ours": {
+    "Pronoun": "aurs"
+  },
+  "ourselves": {
+    "Pronoun": "aurselfs"
+  },
   "woman": {
     "Noun": "uôman"
   },
@@ -38343,6 +38482,15 @@
   },
   "walking": {
     "Verb": "uauching"
+  },
+  "world": {
+    "Noun": "uorlde"
+  },
+  "worlds": {
+    "Noun": "uorlds"
+  },
+  "worldly": {
+    "Adjective": "uorldly"
   },
   "worry": {
     "Verb": "uêrie",
@@ -39906,10 +40054,6 @@
   },
   "main": {
     "Adjective": "maign"
-  },
-  "mine": {
-    "Noun": "mîne",
-    "Verb": "mîne"
   },
   "mines": {
     "Noun": "mîns",
@@ -42665,6 +42809,21 @@
   "yaks": {
     "Noun": "yax"
   },
+  "you": {
+    "Pronoun": "you"
+  },
+  "your": {
+    "Pronoun": "your"
+  },
+  "yours": {
+    "Pronoun": "yours"
+  },
+  "yourself": {
+    "Pronoun": "yourselfe"
+  },
+  "yourselves": {
+    "Pronoun": "yourselfs"
+  },
   "kid": {
     "Verb": "cyde"
   },
@@ -43000,6 +43159,16 @@
   },
   "kneeling": {
     "Verb": "nieling"
+  },
+  "quick": {
+    "Adjective": "cuic",
+    "Noun": "cuic"
+  },
+  "quickly": {
+    "Adverb": "cuichly"
+  },
+  "quicks": {
+    "Noun": "cuix"
   },
   "quay": {
     "Noun": "quie"
