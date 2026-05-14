@@ -23,9 +23,8 @@ const OUTPUT_FILE = path.resolve(__dirname, '../dist/translationBrain.json');
 
 // Global State
 const brain = {};
-let compiledCount = 0; 
+let compiledCount = 0; // Numerical Collection
 
-// Maps standard text file abbreviations to compromise.js internal tags
 const posMap = {
     'verb': 'Verb', 'transitive verb': 'Verb', 'intransitive verb': 'Verb',
     'noun': 'Noun', 'masculine noun': 'Noun', 'feminine noun': 'Noun',
@@ -37,26 +36,32 @@ const posMap = {
 };
 
 /**
- * Safely adds an English -> Inglisce mapping to the brain.
- * Strips punctuation to ensure clean 1:1 string matching during transcription.
- * @param {string} eng - The calculated English word (e.g., "circles")
- * @param {string} inglisce - The target Inglisce word (e.g., "circuls")
- * @param {string} pos - The Part of Speech tag (e.g., "Noun")
+ * Calculates the full Inglisce spelling from a dictionary shorthand suffix.
+ * Automatically drops the silent '-e' for vowel suffixes and progressive participles.
  */
-function addWord(eng, inglisce, pos) {
+const resolveForm = (form, rootWord, isGerund = false) => {
+    if (!form) return null;
+    if (!form.startsWith('-')) return form.replace(/[()]/g, '');
+
+    const suffix = form.slice(1);
+    const startsWithVowel = /^[aeiouy]/.test(suffix);
+
+    const base = 
+        (rootWord.endsWith('ie') && suffix.startsWith('i')) ? rootWord.slice(0, -2) :
+        (rootWord.endsWith('e') && (isGerund || startsWithVowel)) ? rootWord.slice(0, -1) :
+        rootWord;
+
+    return base + suffix;
+};
+
+const addWord = (eng, inglisce, pos) => {
     if (!eng || !inglisce) return;
-    
-    // Normalize casing for the lookup key
     const cleanEng = eng.toLowerCase().trim();
-    // Strip trailing dictionary punctuation from the value
     const cleanIng = inglisce.replace(/[.,!?()[\]{}]/g, '').trim();
     
-    // Initialize nested objects if they don't exist
     brain[cleanEng] = brain[cleanEng] || {};
-    
-    // Prevent overwriting an existing definition for this specific Part of Speech
     brain[cleanEng][pos] = brain[cleanEng][pos] || cleanIng;
-}
+};
 
 async function compile() {
     console.log('🧠 Compiling Translation Brain...');
@@ -75,140 +80,152 @@ async function compile() {
         const data = JSON.parse(line);
         const engWord = data.me_word;
         const inglisceWord = data.inglisce_word;
-        const posCategory = posMap[data.pos] || 'Unknown';
-        
-        // Strip out any rogue [LANG] tags that accidentally bled into the array
-        const conjugations = (data.conjugations || []).filter(w => !w.startsWith('['));
-
-        if (!engWord || !inglisceWord || posCategory === 'Unknown') continue;
-
-        // Map the base/root word
-        addWord(engWord, inglisceWord, posCategory);
-        compiledCount++;
 
         // ====================================================================
-        // MAPPING ROUTER
-        // Uses an if/else if chain to prevent structural words from falling 
-        // into the dynamic NLP processors.
+        // DATA SANITIZATION (The Bleed Fix)
+        // Strips rogue tags, cleans commas, and drops alternative roots
         // ====================================================================
+        const rawConjs = (data.conjugations || [])
+            .map(w => w.replace(/,/g, ''))
+            .filter(w => !w.startsWith('['));
 
-        // 1. 'Do' (Auxiliary Form)
-        // Blueprint: [do, does, did, don't, doesn't, didn't]
-        if (posCategory === 'Auxiliary' && engWord === 'do' && conjugations.length >= 6) {
-            addWord('do', conjugations[0], 'Auxiliary');
-            addWord('does', conjugations[1], 'Auxiliary');
-            addWord('did', conjugations[2], 'Auxiliary');
-            addWord('do not', conjugations[3], 'Auxiliary');
-            addWord("don't", conjugations[3], 'Auxiliary');
-            addWord('does not', conjugations[4], 'Auxiliary');
-            addWord("doesn't", conjugations[4], 'Auxiliary');
-            addWord('did not', conjugations[5], 'Auxiliary');
-            addWord("didn't", conjugations[5], 'Auxiliary');
-        }
+        // Find where the actual suffixes begin
+        const firstSuffixIdx = rawConjs.findIndex(w => w.startsWith('-'));
 
-        // 2. 'Do' (Verb Form)
-        // Blueprint: [do, does, did, done, doing, don't, doesn't, didn't]
-        else if (posCategory === 'Verb' && engWord === 'do' && conjugations.length >= 8) {
-            addWord('do', conjugations[0], 'Verb');
-            addWord('does', conjugations[1], 'Verb');
-            addWord('did', conjugations[2], 'Verb');
-            addWord('done', conjugations[3], 'Verb');
-            addWord('doing', conjugations[4], 'Verb');
-            addWord('do not', conjugations[5], 'Verb');
-            addWord("don't", conjugations[5], 'Verb');
-            addWord('does not', conjugations[6], 'Verb');
-            addWord("doesn't", conjugations[6], 'Verb');
-            addWord('did not', conjugations[7], 'Verb');
-            addWord("didn't", conjugations[7], 'Verb');
-        }
+        // If suffixes exist, slice away the alternative roots (e.g. "to", "throne")
+        // If no suffixes exist (irregulars), safely remove the word 'to' if it bled.
+        const conjugations = firstSuffixIdx > 0 
+            ? rawConjs.slice(firstSuffixIdx) 
+            : rawConjs.filter((w, i, arr) => w !== 'to' && arr[i - 1] !== 'to');
 
-        // 3. 'Be' (Copula Form)
-        // Blueprint: [am, is, are, was, were, been, being, isn't, aren't, wasn't, weren't]
-        else if (posCategory === 'Auxiliary' && engWord === 'be' && conjugations.length >= 11) {
-            addWord('be', inglisceWord, 'Copula'); // Base word
-            addWord('am', conjugations[0], 'Copula');
-            addWord('is', conjugations[1], 'Copula');
-            addWord('are', conjugations[2], 'Copula');
-            addWord('was', conjugations[3], 'Copula');
-            addWord('were', conjugations[4], 'Copula');
-            addWord('been', conjugations[5], 'Copula');
-            addWord('being', conjugations[6], 'Copula');
-            addWord('is not', conjugations[7], 'Copula');
-            addWord("isn't", conjugations[7], 'Copula');
-            addWord('are not', conjugations[8], 'Copula');
-            addWord("aren't", conjugations[8], 'Copula');
-            addWord('was not', conjugations[9], 'Copula');
-            addWord("wasn't", conjugations[9], 'Copula');
-            addWord('were not', conjugations[10], 'Copula');
-            addWord("weren't", conjugations[10], 'Copula');
-        }
+        if (!engWord || !inglisceWord) continue;
 
-        // 4. Modals (can, will, shall, may)
-        // Blueprint base: inglisceWord
-        // Blueprint array: [past, present_negative, past_negative]
-        else if (posCategory === 'Modal' && conjugations.length >= 3) {
-            addWord(engWord, inglisceWord, 'Modal'); 
-            
-            // Hardcode irregular past tenses for lookup
-            let past = '';
-            if (engWord === 'can') past = 'could';
-            if (engWord === 'will') past = 'would';
-            if (engWord === 'shall') past = 'should';
-            if (engWord === 'may') past = 'might';
+        const validPosCategories = data.pos.split(', ').map(p => posMap[p]).filter(Boolean);
+        if (validPosCategories.length > 0) compiledCount++;
 
-            if (past) addWord(past, conjugations[0], 'Modal');
-            
-            // Map explicitly expanded negatives to prevent compromise.js splitting errors
-            addWord(`${engWord} not`, conjugations[1], 'Modal');
-            addWord(`${engWord}n't`, conjugations[1], 'Modal');
-            if (engWord === 'can') addWord('cannot', conjugations[1], 'Modal');
-            if (engWord === 'will') addWord("won't", conjugations[1], 'Modal');
-            
-            if (past && conjugations[2]) {
-                addWord(`${past} not`, conjugations[2], 'Modal');
-                addWord(`${past}n't`, conjugations[2], 'Modal');
+        validPosCategories.forEach(posCategory => {
+            addWord(engWord, inglisceWord, posCategory);
+
+            // 1. 'Do' (Auxiliary Form)
+            if (posCategory === 'Auxiliary' && engWord === 'do' && conjugations.length >= 6) {
+                addWord('do', resolveForm(conjugations[0], inglisceWord), 'Auxiliary');
+                addWord('does', resolveForm(conjugations[1], inglisceWord), 'Auxiliary');
+                addWord('did', resolveForm(conjugations[2], inglisceWord), 'Auxiliary');
+                addWord('do not', resolveForm(conjugations[3], inglisceWord), 'Auxiliary');
+                addWord("don't", resolveForm(conjugations[3], inglisceWord), 'Auxiliary');
+                addWord('does not', resolveForm(conjugations[4], inglisceWord), 'Auxiliary');
+                addWord("doesn't", resolveForm(conjugations[4], inglisceWord), 'Auxiliary');
+                addWord('did not', resolveForm(conjugations[5], inglisceWord), 'Auxiliary');
+                addWord("didn't", resolveForm(conjugations[5], inglisceWord), 'Auxiliary');
             }
-        }
+            // 2. 'Do' (Verb Form)
+            else if (posCategory === 'Verb' && engWord === 'do' && conjugations.length >= 8) {
+                addWord('do', resolveForm(conjugations[0], inglisceWord), 'Verb');
+                addWord('does', resolveForm(conjugations[1], inglisceWord), 'Verb');
+                addWord('did', resolveForm(conjugations[2], inglisceWord), 'Verb');
+                addWord('done', resolveForm(conjugations[3], inglisceWord), 'Verb');
+                addWord('doing', resolveForm(conjugations[4], inglisceWord, true), 'Verb');
+                addWord('do not', resolveForm(conjugations[5], inglisceWord), 'Verb');
+                addWord("don't", resolveForm(conjugations[5], inglisceWord), 'Verb');
+                addWord('does not', resolveForm(conjugations[6], inglisceWord), 'Verb');
+                addWord("doesn't", resolveForm(conjugations[6], inglisceWord), 'Verb');
+                addWord('did not', resolveForm(conjugations[7], inglisceWord), 'Verb');
+                addWord("didn't", resolveForm(conjugations[7], inglisceWord), 'Verb');
+            }
+            // 3. 'Be' (Copula Form)
+            else if (posCategory === 'Auxiliary' && engWord === 'be' && conjugations.length >= 11) {
+                addWord('be', inglisceWord, 'Copula'); 
+                addWord('am', resolveForm(conjugations[0], inglisceWord), 'Copula');
+                addWord('is', resolveForm(conjugations[1], inglisceWord), 'Copula');
+                addWord('are', resolveForm(conjugations[2], inglisceWord), 'Copula');
+                addWord('was', resolveForm(conjugations[3], inglisceWord), 'Copula');
+                addWord('were', resolveForm(conjugations[4], inglisceWord), 'Copula');
+                addWord('been', resolveForm(conjugations[5], inglisceWord), 'Copula');
+                addWord('being', resolveForm(conjugations[6], inglisceWord, true), 'Copula');
+                addWord('is not', resolveForm(conjugations[7], inglisceWord), 'Copula');
+                addWord("isn't", resolveForm(conjugations[7], inglisceWord), 'Copula');
+                addWord('are not', resolveForm(conjugations[8], inglisceWord), 'Copula');
+                addWord("aren't", resolveForm(conjugations[8], inglisceWord), 'Copula');
+                addWord('was not', resolveForm(conjugations[9], inglisceWord), 'Copula');
+                addWord("wasn't", resolveForm(conjugations[9], inglisceWord), 'Copula');
+                addWord('were not', resolveForm(conjugations[10], inglisceWord), 'Copula');
+                addWord("weren't", resolveForm(conjugations[10], inglisceWord), 'Copula');
+            }
+            // 4. Modals
+            else if (posCategory === 'Modal' && conjugations.length >= 3) {
+                addWord(engWord, inglisceWord, 'Modal'); 
+                const past = engWord === 'can' ? 'could' :
+                             engWord === 'will' ? 'would' :
+                             engWord === 'shall' ? 'should' :
+                             engWord === 'may' ? 'might' : null;
 
-        // 5. Standard Verbs
-        else if (posCategory === 'Verb' && conjugations.length > 0) {
-            // Force compromise.js to treat homographs (like 'record' or 'circle') as a Verb
-            const doc = nlp(engWord).tag('Verb');
-            const conj = doc.verbs().conjugate()[0];
-            
-            if (conj) {
-                // Index 0 is always Present Tense (e.g., -s)
-                addWord(conj.PresentTense, conjugations[0], 'Verb');
+                if (past) addWord(past, resolveForm(conjugations[0], inglisceWord), 'Modal');
                 
-                // Regular Verbs: Past and Participle share the same form (-ed)
-                if (conjugations.length === 3) {
-                    addWord(conj.PastTense, conjugations[1], 'Verb');
-                    addWord(conj.Participle, conjugations[1], 'Verb');
-                    addWord(conj.Gerund, conjugations[2], 'Verb');
-                } 
-                // Irregular/Strong Verbs: Participle has its own explicit form
-                else if (conjugations.length >= 4) {
-                    addWord(conj.PastTense, conjugations[1], 'Verb');
-                    addWord(conj.Participle, conjugations[2], 'Verb');
-                    addWord(conj.Gerund, conjugations[3], 'Verb');
+                addWord(`${engWord} not`, resolveForm(conjugations[1], inglisceWord), 'Modal');
+                addWord(`${engWord}n't`, resolveForm(conjugations[1], inglisceWord), 'Modal');
+                if (engWord === 'can') addWord('cannot', resolveForm(conjugations[1], inglisceWord), 'Modal');
+                if (engWord === 'will') addWord("won't", resolveForm(conjugations[1], inglisceWord), 'Modal');
+                
+                if (past && conjugations[2]) {
+                    addWord(`${past} not`, resolveForm(conjugations[2], inglisceWord), 'Modal');
+                    addWord(`${past}n't`, resolveForm(conjugations[2], inglisceWord), 'Modal');
                 }
             }
-        }
-
-        // 6. Standard Nouns (Plurals)
-        else if (posCategory === 'Noun' && conjugations.length > 0) {
-            // Force compromise.js to treat homographs as Nouns to ensure pluralization triggers
-            const doc = nlp(engWord).tag('Noun');
-            const englishPlural = doc.nouns().toPlural().text('normal');
-            
-            if (englishPlural) addWord(englishPlural, conjugations[0], 'Noun');
-        }
+            // 5. Standard Verbs
+            else if (posCategory === 'Verb' || posCategory === 'Auxiliary') {
+                const doc = nlp(engWord).tag('Verb');
+                const conj = doc.verbs().conjugate()[0];
+                
+                if (conj) {
+                    const present = resolveForm(conjugations[0], inglisceWord);
+                    if (present) addWord(conj.PresentTense, present, posCategory);
+                    
+                    if (conjugations.length === 3) {
+                        const past = resolveForm(conjugations[1], inglisceWord);
+                        const gerund = resolveForm(conjugations[2], inglisceWord, true);
+                        if (past) {
+                            addWord(conj.PastTense, past, posCategory);
+                            addWord(conj.Participle, past, posCategory);
+                        }
+                        if (gerund) addWord(conj.Gerund, gerund, posCategory);
+                    } 
+                    else if (conjugations.length >= 4) {
+                        const past = resolveForm(conjugations[1], inglisceWord);
+                        const participle = resolveForm(conjugations[2], inglisceWord);
+                        const gerund = resolveForm(conjugations[3], inglisceWord, true);
+                        
+                        if (past) addWord(conj.PastTense, past, posCategory);
+                        if (participle) addWord(conj.Participle, participle, posCategory);
+                        if (gerund) addWord(conj.Gerund, gerund, posCategory);
+                    }
+                }
+            }
+            // 6. Standard Nouns (Plurals)
+            else if (posCategory === 'Noun' && conjugations.length > 0) {
+                const doc = nlp(engWord).tag('Noun');
+                const englishPlural = doc.nouns().toPlural().text('normal');
+                const inglPlural = resolveForm(conjugations[0], inglisceWord);
+                if (englishPlural && inglPlural) addWord(englishPlural, inglPlural, 'Noun');
+            }
+            // 7. Adjectives
+            else if (posCategory === 'Adjective' && conjugations.length > 0) {
+                conjugations.forEach(conjStr => {
+                    const resolved = resolveForm(conjStr, inglisceWord);
+                    if (resolved) {
+                        if (conjStr.includes('ly') || conjStr.includes('y')) {
+                            const adv = nlp(engWord).adjectives().adverbs().text('normal');
+                            if (adv) addWord(adv, resolved, 'Adverb');
+                        } else if (conjStr.includes('ness')) {
+                            const nn = nlp(engWord).adjectives().nouns().text('normal');
+                            if (nn) addWord(nn, resolved, 'Noun');
+                        }
+                    }
+                });
+            }
+        });
     }
 
-    // Save the fully compiled brain
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify(brain, null, 2));
-    
-    // Output compilation stats
     console.log(`✅ Brain compiled to ${OUTPUT_FILE}`);
     console.log(`📊 Loaded ${compiledCount} base dictionary files!`);
     console.log(`🧠 Generated ${Object.keys(brain).length} exact English forms!`);

@@ -1,17 +1,26 @@
 Linting Data in: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 =================================================================
 
+📝 [1mi/I.txt[0m
+   [33m[WARN][0m  Line(s) contain trailing whitespace.
+
+📝 [1mr/relieve.txt[0m
+   [33m[WARN][0m  Line(s) contain trailing whitespace.
+
+📝 [1mo/object.txt[0m
+   [33m[WARN][0m  Line(s) contain trailing whitespace.
+
 📝 [1mh/hi.txt[0m
    [31m[ERROR][0m Missing or malformed Part of Speech tag '()'
 
-📝 [1ms/spin.txt[0m
-   [33m[WARN][0m  Potentially unclosed or orphaned parentheses.
+📝 [1mb/believe.txt[0m
+   [33m[WARN][0m  Line(s) contain trailing whitespace.
 
 -----------------------------------------------------------------
 LINTING COMPLETE
 -----------------------------------------------------------------
-Files Scanned: 3412
+Files Scanned: 3432
 Fatal Errors:  [31m0[0m
 Standard Errs: [31m1[0m
-Warnings:      [33m1[0m
+Warnings:      [33m4[0m
 =================================================================

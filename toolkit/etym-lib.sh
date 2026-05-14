@@ -1120,6 +1120,7 @@ etym-flatten() {
     local TARGET_INPUT=""
     local INCLUDE_ORIGIN=0
 
+    # 1. Parse Arguments
     while [[ "$#" -gt 0 ]]; do
         case $1 in
             --csv) FORMAT="csv"; OUT_FILE="flattened_dictionary.csv"; shift ;;
@@ -1133,11 +1134,17 @@ etym-flatten() {
         esac
     done
 
+    # 2. Resolve Path
     local TARGET_DIR="${TARGET_INPUT:-$DICT_DIR}"
-    if [ ! -d "$TARGET_DIR" ]; then echo "Error: Directory not found."; return 1; fi
+    if [ ! -d "$TARGET_DIR" ]; then
+        echo "Error: Directory $TARGET_DIR not found."
+        return 1
+    fi
 
     echo "Flattening multi-stanza data from $TARGET_DIR into $FORMAT format..."
+    echo "================================================================="
 
+    # 3. Write Headers (Skip if JSONL)
     if [[ "$FORMAT" != "jsonl" ]]; then
         local header="File_Name,Modern_English,Reformed_Word,Conjugations,Part_of_Speech"
         [[ $INCLUDE_ORIGIN -eq 1 ]] && header+=",Language_Origin"
@@ -1145,9 +1152,10 @@ etym-flatten() {
         echo -e "$header" > "$OUT_FILE"
     else
         mkdir -p "$ETYM_LIB_DIR/dist"
-        > "$OUT_FILE" 
+        > "$OUT_FILE" # Clear the file for JSONL
     fi
 
+    # 4. The Single Source of Truth Extraction Engine
     find "$TARGET_DIR" -type f -name "*.txt" -print0 | xargs -0 awk -v fmt="$FORMAT" -v inc_org="$INCLUDE_ORIGIN" '
         BEGIN { 
             RS=""; FS="\n" 
@@ -1156,33 +1164,20 @@ etym-flatten() {
             pos_map["tr v"]="transitive verb"; pos_map["conj"]="conjunction"; 
             pos_map["adj"]="adjective"; pos_map["prep"]="preposition"; 
             pos_map["pron"]="pronoun"; pos_map["adv"]="adverb";
-            pos_map["defin"]="definite article"; pos_map["indefin"]="indefinite article";
-            pos_map["def art"]="definite article"; pos_map["indef art"]="indefinite article";
-            pos_map["art"]="article"; pos_map["num"]="number";
-            pos_map["modal"]="modal"; pos_map["aux"]="auxiliary"; 
         }
         
-        function extract_core(line, stripped, comma_parts, final_part, words) {
+        function extract_core(line, stripped, comma_parts, n_comma, final_part, words) {
             stripped = line; gsub(/\[[A-Z]+\]/, "", stripped)       
-            split(stripped, comma_parts, ",")
-            final_part = comma_parts[1] # ALWAYS grab the first root word
+            n_comma = split(stripped, comma_parts, ",")
+            final_part = comma_parts[n_comma]
             gsub(/^[ \t]+|[ \t]+$/, "", final_part)
             sub(/^[tT][oO][ \t]+/, "", final_part)
             split(final_part, words, "[ \t]+")
             return words[1]
         }
 
-        function resolve_form(form, base, ing_base, is_ing,    res) {
-            gsub(/[\(\),]/, "", form)
-            if (substr(form, 1, 1) == "-") {
-                if (is_ing == 1) res = ing_base substr(form, 2)
-                else res = base substr(form, 2)
-            } else { res = form }
-            return res
-        }
-
         {
-            pos = ""; verbose_pos = ""; lang = ""; target = ""; conj = ""; me_word = ""; pos_line_idx = 0;
+            pos_raw = ""; verbose_pos = ""; lang = ""; target = ""; conj = ""; me_word = ""; pos_line_idx = 0;
             fname = FILENAME; sub(/^.*\//, "", fname); sub(/\.txt$/, "", fname)
 
             for (i=1; i<=NF; i++) { if ($i !~ /http/ && match($i, /\[[A-Z]+\]/)) { lang = substr($i, RSTART+1, RLENGTH-2); break } }
@@ -1190,69 +1185,39 @@ etym-flatten() {
             for (i=1; i<=NF; i++) {
                 if ($i !~ /http/ && match($i, /\(([a-z ]+(, [a-z ]+)*)\)/)) {
                     pos_line_idx = i
-                    # Strict POS Extraction
-                    pos = substr($i, RSTART+1, RLENGTH-2); sub(/,.*/, "", pos); gsub(/^[ \t]+|[ \t]+$/, "", pos);
-                    verbose_pos = (pos in pos_map) ? pos_map[pos] : pos
+                    pos_raw = substr($i, RSTART+1, RLENGTH-2) 
                     
-                    temp_line = $i; sub(/^[ \t]+/, "", temp_line); sub(/^to[ \t]+/, "", temp_line); sub(/\(([a-z ]+(, [a-z ]+)*)\)/, "", temp_line) 
-                    gsub(/\[[A-Z]+\]/, "", temp_line) 
-                    n_words = split(temp_line, words, " "); target = words[1]; gsub(/,$/, "", target)
-                    
-                    conj_list = ""
-                    if (index(verbose_pos, "verb") > 0) {
-                        base = target; ing_base = base
-                        if (match(base, /e$/)) ing_base = substr(base, 1, length(base)-1)
-                        for(j=2; j<=n_words; j++) {
-                            w = words[j]; if (w == "") continue
-                            is_ing = (j == n_words) ? 1 : 0
-                            resolved = resolve_form(w, base, ing_base, is_ing)
-                            conj_list = (conj_list == "") ? resolved : (conj_list " " resolved)
-                        }
-                    } else if (index(verbose_pos, "noun") > 0) {
-                        base = target
-                        for(j=2; j<=n_words; j++) {
-                            w = words[j]; if (w == "") continue
-                            temp_base = base
-                            if (substr(w, 1, 1) == "-") {
-                                suffix = substr(w, 2); gsub(/[\(\),]/, "", suffix)
-                                if (match(base, /ie$/) && match(suffix, /^i/)) temp_base = substr(base, 1, length(base)-2)
-                                else if (match(base, /e$/) && match(suffix, /^[aeiou]/)) temp_base = substr(base, 1, length(base)-1)
-                            }
-                            resolved = resolve_form(w, temp_base, temp_base, 0)
-                            conj_list = (conj_list == "") ? resolved : (conj_list " " resolved)
-                        }
-                    } else if (index(verbose_pos, "modal") > 0 || index(verbose_pos, "auxiliary") > 0) {
-                        for(j=2; j<=n_words; j++) {
-                            w = words[j]; if (w == "") continue
-                            gsub(/[\(\),;]/, "", w) 
-                            conj_list = (conj_list == "") ? w : (conj_list " " w)
-                        }
-                    } else {
-                        for(j=2; j<=n_words; j++) {
-                            w = words[j]; if (w == "") continue
-                            temp_base = target
-                            if (substr(w, 1, 1) == "-") {
-                                suffix = substr(w, 2); gsub(/[\(\),]/, "", suffix)
-                                if (match(target, /le$/) && suffix == "y") temp_base = substr(target, 1, length(target)-1)
-                            }
-                            resolved = resolve_form(w, temp_base, temp_base, 0)
-                            conj_list = (conj_list == "") ? resolved : (conj_list " " resolved)
-                        }
+                    # FIX 1: Parse ALL comma-separated POS tags instead of stripping them
+                    n_pos = split(pos_raw, pos_arr, ", ")
+                    for(p=1; p<=n_pos; p++) {
+                        v_val = (pos_arr[p] in pos_map) ? pos_map[pos_arr[p]] : pos_arr[p]
+                        verbose_pos = (verbose_pos == "") ? v_val : verbose_pos ", " v_val
                     }
-                    conj = conj_list
+                    
+                    temp_line = $i 
+                    gsub(/\[[A-Z]+\]/, "", temp_line) # FIX 2: Stop inline language tags from bleeding into conjugations
+                    sub(/^[ \t]+/, "", temp_line) 
+                    sub(/^to[ \t]+/, "", temp_line) 
+                    sub(/\(([a-z ]+(, [a-z ]+)*)\)/, "", temp_line) 
+                    
+                    n_words = split(temp_line, words, " "); target = words[1]              
+                    for(j=2; j<=n_words; j++) { if (words[j] != "") { conj = (conj == "" ? words[j] : conj " " words[j]) } }
                     break
                 }
             }
 
-            if (match($pos_line_idx, /\[[A-Z]+\]/)) { me_word = extract_core($pos_line_idx) }
-            if (me_word == "") { for(i=1; i<=NF; i++) { if ($i ~ /\[ME\]/) { me_word = extract_core($i); break; } } }
+            for(i=1; i<=NF; i++) { if ($i ~ /\[ME\]/) { me_word = extract_core($i); break; } }
             if (me_word == "") { for(i=1; i<=NF; i++) { if ($i ~ /\[MI\]/) { me_word = extract_core($i); break; } } }
             if (me_word == "" && pos_line_idx > 1) { me_word = extract_core($(pos_line_idx - 1)) }
 
             if (verbose_pos != "" && lang != "" && target != "") {
-                if (fmt == "jsonl") { printf "%s\t%s\t%s\t%s\n", me_word, target, verbose_pos, conj } 
+                if (fmt == "jsonl") {
+                    printf "%s\t%s\t%s\t%s\n", me_word, target, verbose_pos, conj
+                } 
                 else {
-                    delim = (fmt == "csv") ? "," : "\t"; q = (fmt == "csv") ? "\"" : ""
+                    delim = (fmt == "csv") ? "," : "\t"
+                    q = (fmt == "csv") ? "\"" : ""
+                    
                     out_str = q fname q delim q me_word q delim q target q delim q conj q delim q verbose_pos q
                     if (inc_org == 1) out_str = out_str delim q lang q
                     print out_str
@@ -1261,12 +1226,22 @@ etym-flatten() {
         }
     ' | (
         if [[ "$FORMAT" == "jsonl" ]]; then
-            jq -R -c 'split("\t") | { me_word: .[0], inglisce_word: .[1], pos: .[2], conjugations: (if .[3] == "" then [] else (.[3] | split(" ")) end) }' >> "$OUT_FILE"
-        else cat >> "$OUT_FILE"; fi
+            jq -R -c '
+                split("\t") | {
+                    me_word: .[0],
+                    inglisce_word: .[1],
+                    pos: .[2],
+                    conjugations: (if .[3] == "" then [] else (.[3] | split(" ")) end)
+                }' >> "$OUT_FILE"
+        else
+            cat >> "$OUT_FILE"
+        fi
     )
 
     local ROW_COUNT=$(wc -l < "$OUT_FILE" | xargs)
-    echo "✅ Exported $ROW_COUNT rows to $OUT_FILE"
+    echo "✅ Extraction complete!"
+    printf "Exported \e[1m%d\e[0m data rows to \e[32m%s\e[0m\n" "$ROW_COUNT" "$OUT_FILE"
+    echo "================================================================="
 }
 
 

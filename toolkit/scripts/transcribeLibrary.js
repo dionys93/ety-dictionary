@@ -12,9 +12,6 @@ import path from 'path';
 import nlp from 'compromise';
 import { fileURLToPath } from 'url';
 
-// ============================================================================
-// 1. PATH CONFIGURATION
-// ============================================================================
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const PROJECT_ROOT = path.resolve(__dirname, '../../');
@@ -36,11 +33,8 @@ if (!fs.existsSync(INPUT_DIR)) {
 const brain = JSON.parse(fs.readFileSync(BRAIN_PATH, 'utf8'));
 const multiWords = Object.keys(brain).filter(k => k.includes(' ') || k.includes("'"));
 const globalMissingWords = new Set();
-let filesProcessed = 0; // The only 'let' (Numerical Collection)
+let filesProcessed = 0; // Numerical Collection
 
-// ============================================================================
-// 2. HELPER FUNCTIONS
-// ============================================================================
 const getReplacement = (term, brainEntry) => {
     if (term.has('#Copula') && brainEntry.Copula) return brainEntry.Copula;
     if (term.has('#Auxiliary') && brainEntry.Auxiliary) return brainEntry.Auxiliary;
@@ -80,9 +74,6 @@ const matchCasing = (originalText, replacementWord) => {
     return replacementWord;
 };
 
-// ============================================================================
-// 3. CORE TRANSCRIBER ENGINE
-// ============================================================================
 function transcribeFile(inputFile, outputFile) {
     const text = fs.readFileSync(inputFile, 'utf8');
     const lines = text.split('\n');
@@ -91,7 +82,6 @@ function transcribeFile(inputFile, outputFile) {
         if (!line.trim()) return line;
         const doc = nlp(line);
 
-        // --- PASS 1: MULTI-WORD INTERCEPTOR ---
         multiWords.forEach(key => {
             const entry = brain[key];
             const fallback = entry.Verb || entry.Copula || entry.Auxiliary || entry.Modal || Object.values(entry)[0];
@@ -105,7 +95,6 @@ function transcribeFile(inputFile, outputFile) {
             }
         });
 
-        // --- PASS 2: STANDARD WORD PASS ---
         doc.terms().forEach((term) => {
             if (term.has('#Translated')) return;
 
@@ -118,7 +107,6 @@ function transcribeFile(inputFile, outputFile) {
             const rawNormal = term.text('normal');
             if (!rawNormal) return;
 
-            // Isolate suffix logic using const and ternaries
             const wordWithoutPunctuation = rawText.replace(/[^a-zA-Z'’]/g, '');
             const suffixMatch = wordWithoutPunctuation.match(/(['’](s|re|ll|d|ve|m))$/i);
             const suffix = suffixMatch ? suffixMatch[1] : '';
@@ -139,8 +127,10 @@ function transcribeFile(inputFile, outputFile) {
             }
 
             if (!rawText.includes('[')) {
-                const bracketedText = rawText.replace(/([a-zA-Z]+(?:['’][a-zA-Z]+)*)/, '[$1]');
-                term.replaceWith(bracketedText, { keepTags: true });
+                // By replacing the normalized string in brackets, Compromise naturally 
+                // reattaches the original trailing punctuation on the outside.
+                const bracketedText = `[${matchCasing(rawText, rawNormal)}]`;
+                term.replaceWith(bracketedText, { keepTags: true, keepCase: false });
             }
             globalMissingWords.add(normal);
         });
@@ -154,9 +144,6 @@ function transcribeFile(inputFile, outputFile) {
     filesProcessed++;
 }
 
-// ============================================================================
-// 4. RECURSIVE DIRECTORY CRAWLER
-// ============================================================================
 function crawlAndTranscribe(currentDir) {
     const files = fs.readdirSync(currentDir, { withFileTypes: true });
 
@@ -174,9 +161,6 @@ function crawlAndTranscribe(currentDir) {
     });
 }
 
-// ============================================================================
-// 5. EXECUTION & REPORTING
-// ============================================================================
 console.log(`📚 Compiling Library from: ${INPUT_DIR}`);
 console.log(`➡️  Outputting to: ${OUTPUT_DIR}\n`);
 
