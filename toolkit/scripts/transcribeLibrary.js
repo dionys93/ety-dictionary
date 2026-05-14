@@ -36,19 +36,25 @@ const globalMissingWords = new Set();
 let filesProcessed = 0; // Numerical Collection
 
 const getReplacement = (term, brainEntry) => {
+    // 1. Core Verbs
     if (term.has('#Copula') && brainEntry.Copula) return brainEntry.Copula;
     if (term.has('#Auxiliary') && brainEntry.Auxiliary) return brainEntry.Auxiliary;
     if (term.has('#Modal') && brainEntry.Modal) return brainEntry.Modal;
     
+    // 2. Strict Homograph Checks
     if (term.has('#Verb') && brainEntry.Verb) return brainEntry.Verb;
     if (term.has('#Noun') && brainEntry.Noun) return brainEntry.Noun;
     if (term.has('#Adjective') && brainEntry.Adjective) return brainEntry.Adjective;
     if (term.has('#Determiner') && brainEntry.Determiner) return brainEntry.Determiner;
     if (term.has('#Value') && brainEntry.Value) return brainEntry.Value;
-    if (term.has('#Preposition') && brainEntry.Preposition) return brainEntry.Preposition;
-    if (term.has('#Pronoun') && brainEntry.Pronoun) return brainEntry.Pronoun;
-    if (term.has('#Adverb') && brainEntry.Adverb) return brainEntry.Adverb;
     
+    // 3. Structural Bypass (Ignores NLP homograph checks)
+    if (brainEntry.Preposition) return brainEntry.Preposition;
+    if (brainEntry.Conjunction) return brainEntry.Conjunction;
+    if (brainEntry.Pronoun) return brainEntry.Pronoun;
+    if (brainEntry.Adverb) return brainEntry.Adverb;
+    
+    // 4. Safe Single-Map Fallback
     const keys = Object.keys(brainEntry);
     if (keys.length === 1) {
         const onlyPos = keys[0];
@@ -82,6 +88,10 @@ function transcribeFile(inputFile, outputFile) {
         if (!line.trim()) return line;
         const doc = nlp(line);
 
+        doc.terms().forEach(t => {
+            if (t.text().trim() === '') t.tag('#GhostWord');
+        });
+
         multiWords.forEach(key => {
             const entry = brain[key];
             const fallback = entry.Verb || entry.Copula || entry.Auxiliary || entry.Modal || Object.values(entry)[0];
@@ -98,12 +108,13 @@ function transcribeFile(inputFile, outputFile) {
         doc.terms().forEach((term) => {
             if (term.has('#Translated')) return;
 
-            const rawText = term.text();
-            if (rawText.trim() === '') {
+            if (term.has('#GhostWord')) {
+                term.replaceWith(''); 
                 term.tag('#Translated');
                 return;
             }
 
+            const rawText = term.text();
             const rawNormal = term.text('normal');
             if (!rawNormal) return;
 
@@ -127,9 +138,8 @@ function transcribeFile(inputFile, outputFile) {
             }
 
             if (!rawText.includes('[')) {
-                // By replacing the normalized string in brackets, Compromise naturally 
-                // reattaches the original trailing punctuation on the outside.
-                const bracketedText = `[${matchCasing(rawText, rawNormal)}]`;
+                // Restored your original highly-accurate Regex!
+                const bracketedText = rawText.replace(/([a-zA-Z]+(?:['’][a-zA-Z]+)*)/, '[$1]');
                 term.replaceWith(bracketedText, { keepTags: true, keepCase: false });
             }
             globalMissingWords.add(normal);
