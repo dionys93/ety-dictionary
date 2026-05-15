@@ -4,7 +4,7 @@
 # This ensures the library knows where the project is
 export ETYM_LIB_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "$ETYM_LIB_DIR/config/env.sh"
-echo "etym-lib has been sourced"
+echo "etym-lib has been sourced" >&2
 
 # --- 2 DEPENDENCY CHECK ---
 if ! command -v jq &> /dev/null; then
@@ -610,8 +610,7 @@ etym-export() {
         local IS_MATCH=0
         for line in "${LINES[@]}"; do
             if [[ "$line" == http* ]]; then break; fi
-            local TEMP_LINE=$(echo "$line" | sed -E 's/\[[^]]+\]//g; s/\([^()]*\)\s*$//g' | xargs)
-            local CORE_WORD=""
+            local TEMP_LINE=$(echo "$line" | sed -E 's/\[[^]]+\]//g; s/\([^()]*\)\s*$//g; s/^[ \t]*//; s/[ \t]*$//')            local CORE_WORD=""
             if [[ "$TEMP_LINE" == to\ * ]]; then
                 CORE_WORD=$(echo "$TEMP_LINE" | cut -d' ' -f2 | sed 's/,.*//')
             else
@@ -636,7 +635,7 @@ etym-export() {
                 local POS_FULL=""
                 [[ -n "$POS_TAG" ]] && POS_FULL=$(get_pos_full "$POS_TAG")
 
-                local CONTENT=$(echo "$line" | sed -E 's/\[[^]]+\]//g; s/\([^()]*\)\s*$//g' | xargs)
+                local CONTENT=$(echo "$line" | sed -E 's/\[[^]]+\]//g; s/\([^()]*\)\s*$//g; s/^[ \t]*//; s/[ \t]*$//')
 
                 local DISPLAY_NAME=""
                 local METADATA=""
@@ -657,46 +656,64 @@ etym-export() {
                     read -a PARTS <<< "$METADATA"
 
                     # --- VERB CONJUGATIONS ---
-                    if [[ "$POS_FULL" == *"verb"* && ${#PARTS[@]} -ge 3 ]]; then
-                        local BASE=$(echo "$DISPLAY_NAME" | sed 's/^to //' | xargs)
-                        local ING_BASE="$BASE"; [[ "$BASE" == *e ]] && ING_BASE="${BASE%e}"
+                    if [[ "$POS_FULL" == *"verb"* && ${#PARTS[@]} -ge 1 ]]; then
                         
-                        local CLEAN_PARTS=()
-                        
-                        # 1. Resolve Present Tense (Index 0)
-                        if [[ "${PARTS[0]}" == *'('* ]]; then
-                            # Safely extract using cut to avoid Bash globbing quirks
-                            local P1=$(echo "${PARTS[0]}" | cut -d'(' -f1)
-                            local P3_SUF=$(echo "${PARTS[0]}" | cut -d'(' -f2 | tr -d ')')
-                            CLEAN_PARTS+=("$P1" "${P1}${P3_SUF}")
-                        else
-                            # Standard -s suffix logic
-                            CLEAN_PARTS+=("$BASE")
-                            CLEAN_PARTS+=($(_resolve_form "${PARTS[0]}" "$BASE" "$ING_BASE" 0))
-                        fi
+                        # 1. Modals and Auxiliaries (Comma-separated irregular lists)
+                        if [[ "$POS_FULL" == *"auxiliary"* || "$POS_FULL" == *"auxillary"* || "$POS_FULL" == *"modal"* ]]; then
+                            local IRREG_ARRAY="[]"
+                            
+                            # 1. First, grab the base word from DISPLAY_NAME (stripping 'to ' if it exists)
+                            local BASE_IRREG=$(echo "$DISPLAY_NAME" | sed -E 's/^to //; s/^[ \t]*//; s/[ \t]*$//' | tr -d '\r')
+                            [[ -n "$BASE_IRREG" ]] && IRREG_ARRAY=$(echo "$IRREG_ARRAY" | jq --arg p "$BASE_IRREG" '. + [$p]')
 
-                        # 2. Resolve Remaining Parts (Past, Participle, Gerund)
-                        for (( i=1; i<${#PARTS[@]}; i++ )); do
-                            local IS_GERUND=0
-                            # If it's the very last part of the metadata, treat as gerund (-ing)
-                            [[ $i -eq $((${#PARTS[@]} - 1)) ]] && IS_GERUND=1
-                            CLEAN_PARTS+=($(_resolve_form "${PARTS[$i]}" "$BASE" "$ING_BASE" "$IS_GERUND"))
-                        done
+                            # 2. Then loop through the rest of the comma-separated parts
+                            for part in "${PARTS[@]}"; do
+                                local CLEAN_PART=$(echo "$part" | tr -d ',\r')
+                                [[ -n "$CLEAN_PART" ]] && IRREG_ARRAY=$(echo "$IRREG_ARRAY" | jq --arg p "$CLEAN_PART" '. + [$p]')
+                            done
+                            
+                            # Export as a flat array
+                            CONJ_OBJ="$IRREG_ARRAY"
 
-                        # 3. Map CLEAN_PARTS to JSON based on count
-                        local P1="${CLEAN_PARTS[0]}"
-                        local P3="${CLEAN_PARTS[1]}"
-                        local DST="${CLEAN_PARTS[2]}"
-                        
-                        if [[ ${#CLEAN_PARTS[@]} -eq 5 ]]; then
-                            local PPT="${CLEAN_PARTS[3]}"
-                            local GER="${CLEAN_PARTS[4]}"
-                            CONJ_OBJ=$(jq -n --arg p1 "$P1" --arg p3 "$P3" --arg d "$DST" --arg pp "$PPT" --arg ing "$GER" \
-                                '{present_first_second_singular: $p1, present_third_singular: $p3, past: $d, past_participle: $pp, present_participle: $ing}')
-                        else
-                            local GER="${CLEAN_PARTS[3]}"
-                            CONJ_OBJ=$(jq -n --arg p1 "$P1" --arg p3 "$P3" --arg d "$DST" --arg ing "$GER" \
-                                '{present_first_second_singular: $p1, present_third_singular: $p3, past: $d, present_participle: $ing}')
+                        # 2. Standard Verbs (Require at least 3 suffixes for the rigid template)
+                        elif [[ ${#PARTS[@]} -ge 3 ]]; then
+                            local BASE=$(echo "$DISPLAY_NAME" | sed -E 's/^to //; s/^[ \t]*//; s/[ \t]*$//')
+                            local ING_BASE="$BASE"; [[ "$BASE" == *e ]] && ING_BASE="${BASE%e}"
+                            
+                            local CLEAN_PARTS=()
+                            
+                            # 1. Resolve Present Tense (Index 0)
+                            if [[ "${PARTS[0]}" == *'('* ]]; then
+                                local P1=$(echo "${PARTS[0]}" | cut -d'(' -f1)
+                                local P3_SUF=$(echo "${PARTS[0]}" | cut -d'(' -f2 | tr -d ')')
+                                CLEAN_PARTS+=("$P1" "${P1}${P3_SUF}")
+                            else
+                                CLEAN_PARTS+=("$BASE")
+                                CLEAN_PARTS+=($(_resolve_form "${PARTS[0]}" "$BASE" "$ING_BASE" 0))
+                            fi
+
+                            # 2. Resolve Remaining Parts (Past, Participle, Gerund)
+                            for (( i=1; i<${#PARTS[@]}; i++ )); do
+                                local IS_GERUND=0
+                                [[ $i -eq $((${#PARTS[@]} - 1)) ]] && IS_GERUND=1
+                                CLEAN_PARTS+=($(_resolve_form "${PARTS[$i]}" "$BASE" "$ING_BASE" "$IS_GERUND"))
+                            done
+
+                            # 3. Map CLEAN_PARTS to JSON based on count
+                            local P1="${CLEAN_PARTS[0]}"
+                            local P3="${CLEAN_PARTS[1]}"
+                            local DST="${CLEAN_PARTS[2]}"
+                            
+                            if [[ ${#CLEAN_PARTS[@]} -eq 5 ]]; then
+                                local PPT="${CLEAN_PARTS[3]}"
+                                local GER="${CLEAN_PARTS[4]}"
+                                CONJ_OBJ=$(jq -n --arg p1 "$P1" --arg p3 "$P3" --arg d "$DST" --arg pp "$PPT" --arg ing "$GER" \
+                                    '{present_first_second_singular: $p1, present_third_singular: $p3, past: $d, past_participle: $pp, present_participle: $ing}')
+                            else
+                                local GER="${CLEAN_PARTS[3]}"
+                                CONJ_OBJ=$(jq -n --arg p1 "$P1" --arg p3 "$P3" --arg d "$DST" --arg ing "$GER" \
+                                    '{present_first_second_singular: $p1, present_third_singular: $p3, past: $d, present_participle: $ing}')
+                            fi
                         fi
                     fi
                     
@@ -769,7 +786,7 @@ etym-export() {
                     --argjson decl "$DECL_OBJ" \
                     --argjson deriv "$DERIV_OBJ" \
                     '{name: $name, origin: $origin} 
-                     | if ($pos != "") then . + {"part-of-speech": ($pos | split(", "))} else . end
+                     | if ($pos != "") then . + {"part-of-speech": ($pos | split(","))} else . end
                      | if ($conj != null) then . + {conjugations: $conj} else . end
                      | if ($decl != null) then . + {declensions: $decl} else . end
                      | if ($deriv != null) then . + {derivations: $deriv} else . end')
