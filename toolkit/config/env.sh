@@ -6,7 +6,14 @@ export CONFIG_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 export PROJECT_ROOT="$(cd "$CONFIG_DIR/../.." && pwd)"
 
 # Data Directories
-export DICT_DIR="$PROJECT_ROOT/data-text/inglisce/dictionary"
+# toolkit/config/env.sh
+
+# If DICT_DIR already exists in the environment (e.g., from Vitest), keep it. 
+# Otherwise, default to the production path.
+export DICT_DIR="${DICT_DIR:-/workspaces/ety-dictionary/data-text/dictionary}"
+
+# Do the same for any other paths that rely on DICT_DIR or the project root
+export ETYM_LIB_DIR="${ETYM_LIB_DIR:-/workspaces/ety-dictionary/toolkit}"
 export HISTORIES_DIR="$PROJECT_ROOT/data-text/histories"
 export ANALYSIS_DIR="$PROJECT_ROOT/analysis"
 
