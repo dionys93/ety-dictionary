@@ -14,14 +14,14 @@ These words were given silent letters by scholars trying to visually link them t
 | **scissors** | **cisors** | Scholars inserted an 'sc' to match Latin *scindere* (to cut). It actually comes from Old French *cisoires*, related to *chisel*. |
 
 ### 2. Reverting Renaissance Pedantry
-Even when a word *did* ultimately come from Latin, if it had already evolved naturally through Old French into a lean, phonetic form, Inglisce rejects the artificial re-insertion of silent Latin letters.
+Even when a word *did* ultimately come from Latin, if it had already evolved naturally through Old French into a lean, phonetic form, Inglisce rejects the artificial re-insertion of silent Latin letters—unless they can be repurposed to solve a modern structural collision.
 
 | Modern English | Inglisce Reversion | Etymological Rationale |
 | :--- | :--- | :--- |
 | **debt** | **dette** | The 'b' was artificially re-inserted to mimic Latin *debitum*. The true English/French historical stem is *dette*. |
 | **doubt** | **dôute** | The 'b' was inserted to mimic Latin *dubitare*. The true English/French historical stem is *doute*. |
-| **receipt** | **recite** | The 'p' was inserted to mimic Latin *recepta*. The true English/French historical stem is *receite*. |
-| **indict** | **endîte** | The 'c' was inserted to mimic Latin *indictare*. The true English/French historical stem is *endite*. |
+| **indict** | **endîte** | The 'c' was inserted to mimic Latin *indictare*. The true English/French historical stem is *endite*. |
+| **receipt, receipts** | **recite, recípts** | The 'p' was originally inserted to mimic Latin *recepta*. While Inglisce restores the lean stem for the singular (*recite*), it functionally retains the Latin 'p' in the plural (*recípts*) to provide visual spacing between the accented **í** and the **t** when the terminal **-e** is dropped. |
 
 ### 3. Scrubbing False Assimilations
 When foreign words entered English, their spellings were sometimes warped to mimic unrelated, native English words or suffixes, creating false homophones or redundant endings. Inglisce strips these away to restore the distinct Romance stems.
