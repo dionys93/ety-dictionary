@@ -10,7 +10,7 @@ These words were given silent letters by scholars trying to visually link them t
 | Modern English | Inglisce Reversion | Etymological Rationale |
 | :--- | :--- | :--- |
 | **admiral** | **amiral** | English scholars inserted a 'd' assuming it came from Latin *admirari* (to admire). It actually comes from Arabic *amīr al-bihār* (commander of the seas) via Old French *amiral*. |
-| **island** | **îlande** | Scholars inserted an 's' to match the Latin-derived *isle*. The word is actually pure Germanic (*īegland*), completely unrelated to *isle*. |
+| **island** | **îland** | Scholars inserted an 's' to match the Latin-derived *isle*. The word is actually pure Germanic (*īegland*), completely unrelated to *isle*. |
 | **scissors** | **cisors** | Scholars inserted an 'sc' to match Latin *scindere* (to cut). It actually comes from Old French *cisoires*, related to *chisel*. |
 
 ### 2. Reverting Renaissance Pedantry
