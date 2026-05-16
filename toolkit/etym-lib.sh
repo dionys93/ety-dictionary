@@ -591,12 +591,30 @@ etym-export() {
         fi
     }
 
-    local WORD=$1
-    local FIRST_LETTER=$(echo "${WORD:0:1}" | tr '[:upper:]' '[:lower:]')
-    local FILE_PATH="$DICT_DIR/$FIRST_LETTER/$WORD.txt"
+    local RAW_INPUT="$1"
+    local LOWER_WORD=$(echo "$RAW_INPUT" | tr '[:upper:]' '[:lower:]')
+    local TITLE_WORD="$(tr '[:lower:]' '[:upper:]' <<< ${LOWER_WORD:0:1})${LOWER_WORD:1}"
+    local FIRST_LETTER="${LOWER_WORD:0:1}"
 
-    if [ ! -f "$FILE_PATH" ]; then
-        FILE_PATH=$(grep -rlF "$WORD" "$DICT_DIR/$FIRST_LETTER/" | head -n 1)
+    local WORD=""
+    local FILE_PATH=""
+
+    # Waterfall File Resolution
+    if [ -f "$DICT_DIR/$FIRST_LETTER/$RAW_INPUT.txt" ]; then
+        WORD="$RAW_INPUT"
+        FILE_PATH="$DICT_DIR/$FIRST_LETTER/$RAW_INPUT.txt"
+    elif [ -f "$DICT_DIR/$FIRST_LETTER/$LOWER_WORD.txt" ]; then
+        WORD="$LOWER_WORD"
+        FILE_PATH="$DICT_DIR/$FIRST_LETTER/$LOWER_WORD.txt"
+    elif [ -f "$DICT_DIR/$FIRST_LETTER/$TITLE_WORD.txt" ]; then
+        WORD="$TITLE_WORD"
+        FILE_PATH="$DICT_DIR/$FIRST_LETTER/$TITLE_WORD.txt"
+    else
+        # Case-insensitive grep fallback
+        FILE_PATH=$(grep -rlFi "$RAW_INPUT" "$DICT_DIR/$FIRST_LETTER/" | head -n 1)
+        if [ -n "$FILE_PATH" ] && [ -f "$FILE_PATH" ]; then
+            WORD=$(basename "$FILE_PATH" .txt)
+        fi
     fi
 
     if [ -z "$FILE_PATH" ] || [ ! -f "$FILE_PATH" ]; then echo "[]"; return 1; fi
@@ -742,33 +760,43 @@ etym-export() {
                     if [[ "$POS_FULL" == *"adjective"* && ${#PARTS[@]} -ge 1 ]]; then
                         local ADV_FORM=""
                         local NOUN_FORM=""
+                        local COMP_FORM=""
+                        local SUP_FORM=""
                         
                         for part in "${PARTS[@]}"; do
-                            local RAW_SUF=$(echo "$part" | tr -d ',')
+                            local RAW_SUF=$(echo "$part" | tr -d ',\r')
                             [[ -z "$RAW_SUF" ]] && continue
                             
                             local ADJ_BASE="$DISPLAY_NAME"
                             
-                            # Smart-strip for adjective to adverb (e.g. horrible + -y -> horribly)
+                            # Smart-strip for adjectives (e.g., horrible + -y -> horribly, happy + -ily -> happily)
                             if [[ "$RAW_SUF" == -* ]]; then
                                 local SUFFIX="${RAW_SUF#-}"
                                 if [[ "$DISPLAY_NAME" == *le && "$SUFFIX" == "y" ]]; then
                                     ADJ_BASE="${DISPLAY_NAME%e}"
+                                elif [[ "$DISPLAY_NAME" == *y && "$SUFFIX" == i* ]]; then
+                                    ADJ_BASE="${DISPLAY_NAME%y}"
                                 fi
                             fi
                             
                             local DERIVED_FORM=$(_resolve_form "$RAW_SUF" "$ADJ_BASE" "$ADJ_BASE" 0)
                             
-                            # Sort into adverb or noun based on the suffix
-                            if [[ "$RAW_SUF" == "-ly" || "$RAW_SUF" == "-y" || "$DERIVED_FORM" == *ly || "$DERIVED_FORM" == *y ]]; then
+                            # Sort into categories based on suffix
+                            if [[ "$RAW_SUF" == "-ly" || "$RAW_SUF" == "-ily" || "$RAW_SUF" == "-y" || "$DERIVED_FORM" == *ly || "$DERIVED_FORM" == *y ]]; then
                                 ADV_FORM="$DERIVED_FORM"
                             elif [[ "$RAW_SUF" == "-ness" || "$DERIVED_FORM" == *ness ]]; then
                                 NOUN_FORM="$DERIVED_FORM"
+                            elif [[ "$RAW_SUF" == "-er" || "$RAW_SUF" == "-iar" || "$DERIVED_FORM" == *er || "$DERIVED_FORM" == *ar ]]; then
+                                COMP_FORM="$DERIVED_FORM"
+                            elif [[ "$RAW_SUF" == "-est" || "$RAW_SUF" == "-iest" || "$DERIVED_FORM" == *est ]]; then
+                                SUP_FORM="$DERIVED_FORM"
                             fi
                         done
                         
-                        if [[ -n "$ADV_FORM" || -n "$NOUN_FORM" ]]; then
+                        if [[ -n "$ADV_FORM" || -n "$NOUN_FORM" || -n "$COMP_FORM" || -n "$SUP_FORM" ]]; then
                             DERIV_OBJ="{}"
+                            [[ -n "$COMP_FORM" ]] && DERIV_OBJ=$(echo "$DERIV_OBJ" | jq --arg c "$COMP_FORM" '. + {comparative: $c}')
+                            [[ -n "$SUP_FORM" ]] && DERIV_OBJ=$(echo "$DERIV_OBJ" | jq --arg s "$SUP_FORM" '. + {superlative: $s}')
                             [[ -n "$ADV_FORM" ]] && DERIV_OBJ=$(echo "$DERIV_OBJ" | jq --arg a "$ADV_FORM" '. + {adverb: $a}')
                             [[ -n "$NOUN_FORM" ]] && DERIV_OBJ=$(echo "$DERIV_OBJ" | jq --arg n "$NOUN_FORM" '. + {noun: $n}')
                             [[ "$DERIV_OBJ" == "{}" ]] && DERIV_OBJ="null"

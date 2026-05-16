@@ -141,4 +141,31 @@ describe('etym-export (Single Word JSON Compiler)', () => {
         expect(inglisceEntry.name).toBe('to enþrone');
     });
 
+    it('correctly processes adjectives and their derivations (-ly, -ness)', () => {
+        // 'happy' or 'fast' were in our sandbox creation script earlier
+        const output = runTool('etym-export happy');
+        const data = JSON.parse(output);
+        
+        const inglisceEntry = data[0].etymology.find(e => e.origin === 'Inglisce');
+        
+        expect(inglisceEntry).toBeDefined();
+        
+        // Assert it correctly identified the adjective tag
+        const isAdj = inglisceEntry['part-of-speech'].some(pos => pos.includes('adj'));
+        expect(isAdj).toBe(true);
+
+        // Assert the derivations object was built correctly instead of conjugations
+        expect(inglisceEntry.derivations).toBeDefined();
+        expect(inglisceEntry.conjugations).toBeUndefined();
+    });
+
+    it('handles case-insensitive inputs gracefully', () => {
+        // Pass 'Animate' with a capital A
+        const output = runTool('etym-export Animate');
+        const data = JSON.parse(output);
+        
+        // Assert it still successfully found and parsed the lowercase 'animate.txt' file
+        expect(data[0].name).toBe('animate');
+    });
+
 });
