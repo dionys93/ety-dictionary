@@ -185,8 +185,7 @@ describe('Compromise NLP - Baseline Categorization Explorer', () => {
         const emphaticDoes = sheDoesDo.match('does').json();
         expect(emphaticDoes[0].terms[0].tags).not.toContain('QuestionWord');
         expect(emphaticDoes[0].terms[0].tags).toContain('Verb');
-        // Let's see if it's smart enough to use the Auxiliary tag here
-        // expect(emphaticDoes[0].terms[0].tags).toContain('Auxiliary'); // You can uncomment this after checking the log!
+        expect(emphaticDoes[0].terms[0].tags).toContain('Auxiliary');
         
         // Match 'do' (the main verb)
         const emphaticMainDo = sheDoesDo.match('do').json();
