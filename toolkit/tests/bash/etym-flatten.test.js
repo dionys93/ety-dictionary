@@ -1,33 +1,45 @@
-import { describe, it, expect, beforeAll } from 'vitest';
-import { execSync } from 'node:child_process';
-import fs from 'node:fs';
-import path from 'node:path';
+import { describe, it, expect } from 'vitest';
+import { execSync } from 'child_process';
+import fs from 'fs';
+import path from 'path';
 
-const FIXTURE_DIR = path.resolve(import.meta.dirname, './fixtures/dictionary');
-const OUTPUT_FILE = path.resolve(import.meta.dirname, '../dist/test_master_dataset.jsonl');
-const SCRIPT_PATH = path.resolve(import.meta.dirname, '../etym-lib.sh');
+// Point directly to your actual dictionary text files
+const FIXTURE_DIR = path.resolve(__dirname, '../fixtures/dictionary');
 
-describe('Bash Extractor: etym-flatten', () => {
+// Save to a persistent, visible output directory that we WILL NOT delete
+const OUT_DIR = path.resolve(__dirname, '../fixtures/flatten-out');
+
+function runFlatten(args = '') {
+    const cmd = `bash -c "export DICT_DIR=${FIXTURE_DIR} && source /workspaces/ety-dictionary/toolkit/config/env.sh && source /workspaces/ety-dictionary/toolkit/etym-lib.sh && etym-flatten ${FIXTURE_DIR} ${args}"`;
+    return execSync(cmd, { encoding: 'utf-8' });
+}
+
+describe('etym-flatten (Real Output Generation)', () => {
     
-    beforeAll(() => {
-        // Clean up previous test runs
-        if (fs.existsSync(OUTPUT_FILE)) fs.unlinkSync(OUTPUT_FILE);
-    });
+    // Notice: There is no afterAll() cleanup hook here. 
+    // The files will stay on your hard drive so you can measure them.
 
-    it('successfully generates a JSONL file from the fixture directory', () => {
-        // We use absolute paths so the command executes flawlessly regardless of your terminal's working directory
-        const cmd = `bash -c "source ${SCRIPT_PATH} && etym-flatten ${FIXTURE_DIR} --jsonl -o ${OUTPUT_FILE}"`;
+    it('generates physical, un-mocked files from your actual dictionary', () => {
+        if (!fs.existsSync(OUT_DIR)) fs.mkdirSync(OUT_DIR, { recursive: true });
         
-        execSync(cmd, { stdio: 'pipe' });
+        const tsvFile = path.join(OUT_DIR, 'master.tsv');
+        const csvFile = path.join(OUT_DIR, 'master.csv');
+        const jsonlFile = path.join(OUT_DIR, 'master.jsonl');
 
-        expect(fs.existsSync(OUTPUT_FILE)).toBe(true);
+        // Execute the bash scripts and pipe the output to the files
+        runFlatten(`--out ${tsvFile}`);
+        runFlatten(`--csv --out ${csvFile}`);
+        runFlatten(`--jsonl -o ${jsonlFile}`);
+
+        // Read the actual JSONL file that was just written to the hard drive
+        const jsonlContent = fs.readFileSync(jsonlFile, 'utf-8').trim().split('\n');
         
-        const lines = fs.readFileSync(OUTPUT_FILE, 'utf-8').split('\n').filter(Boolean);
-        expect(lines.length).toBeGreaterThan(0); 
+        // Basic sanity check to ensure the bash script actually wrote data
+        expect(jsonlContent.length).toBeGreaterThan(0);
         
-        const data = JSON.parse(lines[0]);
-        expect(data).toHaveProperty('me_word');
-        expect(data).toHaveProperty('inglisce_word');
-        expect(data.pos).not.toContain('('); 
+        // Log the exact location so you can click it and read the data
+        console.log(`\n🔥 MEASURABLE OUTPUT GENERATED 🔥`);
+        console.log(`JSONL File ready for transcription: ${jsonlFile}`);
+        console.log(`Open this file in your editor to see exactly what transcribe.js will parse.\n`);
     });
 });

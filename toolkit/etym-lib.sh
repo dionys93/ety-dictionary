@@ -1088,7 +1088,6 @@ etym-lint() {
     local WARN_COUNT=0
 
     # 3. Linter Execution
-    # Use process substitution or a temporary file approach to preserve counters
     while IFS= read -r -d '' file; do
         TOTAL_FILES=$((TOTAL_FILES + 1))
         local file_issues=()
@@ -1127,6 +1126,13 @@ etym-lint() {
                  file_issues+=("\e[33m[WARN]\e[0m  Potentially unclosed or orphaned parentheses.")
                  WARN_COUNT=$((WARN_COUNT + 1))
             fi
+
+            # Rule 6: Tags on the same line collision [ERROR]
+            # This regex checks if a Language Tag [XXX] and a POS Tag (xxx) share the same line
+            if echo "$content_no_urls" | grep -Eq "\[[A-Z]+\].*\(|\(.*\[[A-Z]+\]"; then
+                file_issues+=("\e[31m[ERROR]\e[0m Language tag '[]' and POS tag '()' must be on separate lines.")
+                ERROR_COUNT=$((ERROR_COUNT + 1))
+            fi
         fi
 
         # Output issues if any were found
@@ -1151,12 +1157,12 @@ etym-lint() {
     printf "Warnings:      \e[33m%d\e[0m\n" "$WARN_COUNT"
     echo "================================================================="
 
-    # Return error code if failures exist (useful for CI/CD or pre-commit hooks)
+    # Return error code if failures exist
     if [ "$FATAL_COUNT" -gt 0 ] || [ "$ERROR_COUNT" -gt 0 ]; then
         return 1
     fi
     return 0
-} 
+}
 
 
 etym-flatten() {
