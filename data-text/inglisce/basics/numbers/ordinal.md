@@ -20,7 +20,7 @@
 
 ---
 
-### þerd
+### þird
 
 **Etymological Derivation:**
 * **[OE]** þridda
