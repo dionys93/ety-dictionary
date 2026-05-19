@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { compile } from './scripts/compileBrain.js'; 
+import { compile } from '../../scripts/build-dictionary.js';
 
 
 describe('Node Compiler: translationBrain', () => {

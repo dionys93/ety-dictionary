@@ -2,9 +2,29 @@ import { describe, it, expect, beforeAll } from 'vitest';
 import fs from 'fs';
 import path from 'path';
 // Adjust the import path to wherever your actual translation function lives
-import { transcribe } from '../scripts/transcribe.js'; 
+import { transcribe } from '../../scripts/translator.js';
 
 const JSONL_PATH = path.resolve(__dirname, '../fixtures/flatten-out/master.jsonl');
+
+
+describe('Node Transcriber: NLP Engine', () => {
+    // FIX 3: Marked as .todo so Vitest knows we are building these later
+    it.todo('accurately distinguishes homographs based on sentence context', () => {
+        // Feed the NLP engine: "I want to record a record."
+        // Assert output is: "I [want] to [rechord] a [recard]." (Using your actual translations)
+    });
+
+    it.todo('safely wraps untranslated words in brackets while ignoring punctuation', () => {
+        // Feed the engine: "Hello, world!"
+        // Assert output is: "[Hello], [world]!"
+    });
+
+    it.todo('destroys ghost words created by split contractions', () => {
+        // Feed the engine: "I'm happy."
+        // Assert output does not contain random un-hidden "am" shards.
+    });
+});
+
 
 describe('Inglisce Transcription Engine', () => {
     const liveDictionary = [];
