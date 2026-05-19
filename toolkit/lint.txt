@@ -1,3 +1,12 @@
+Linting Data in: /workspaces/ety-dictionary/data-text/inglisce/dictionary
+=================================================================
+
+📝 [1mt/transmit.txt[0m
+   [31m[ERROR][0m Language tag '[]' and POS tag '()' must be on separate lines.
+
+📝 [1mh/hi.txt[0m
+   [31m[ERROR][0m Missing or malformed Part of Speech tag '()'
+
 📝 [1md/dress.txt[0m
    [31m[ERROR][0m Language tag '[]' and POS tag '()' must be on separate lines.
 
@@ -451,8 +460,8 @@
 -----------------------------------------------------------------
 LINTING COMPLETE
 -----------------------------------------------------------------
-Files Scanned: 3438
+Files Scanned: 3439
 Fatal Errors:  [31m0[0m
-Standard Errs: [31m508[0m
-Warnings:      [33m5[0m
+Standard Errs: [31m152[0m
+Warnings:      [33m0[0m
 =================================================================
