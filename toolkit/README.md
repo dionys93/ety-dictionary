@@ -1,6 +1,6 @@
 # Etym-Toolkit: Inglisce Dictionary CLI
 
-A specialized Bash and Node.js toolkit for managing, auditing, and exporting the **Inglisce Etymological Dictionary**. This library provides high-level functions to parse multi-layered stanzas, resolve grammatical derivatives, trace linguistic evolution, compile presentation APIs, and run Natural Language Processing (NLP) transcriptions.
+A specialized Bash and Node.js toolkit for managing, auditing, and exporting the **Inglisce Etymological Dictionary**. This library provides high-level functions to parse multi-layered stanzas, resolve grammatical derivatives, trace linguistic evolution, compile presentation APIs, and run Natural Language Processing (NLP) translations.
 
 ---
 
@@ -9,7 +9,7 @@ A specialized Bash and Node.js toolkit for managing, auditing, and exporting the
 * **`data-text/inglisce/dictionary/`**: Core data organized by alphabetical subdirectories (e.g., `a/animate.txt`).
 * **`toolkit/etym-lib.sh`**: The core Bash "Toolbelt" for word extraction, display, validation, and JSON/CSV compilation.
 * **`toolkit/config/`**: Central configuration for paths, shared Regex patterns, and lookup tables (`languages.tsv`, `parts-of-speech.tsv`).
-* **`toolkit/scripts/`**: Node.js scripts for compiling the NLP translation brain and running automated book transcriptions.
+* **`toolkit/scripts/`**: Node.js scripts divided into three domains: Data compilation (`build-dictionary.js`), English NLP analysis (`debug-nlp.js`), and Inglisce spelling/translation logic (`translator.js`, `inglisce-orthography.js`).
 * **`toolkit/dist/`**: The automated build directory containing the Master JSONL Dataset, Translation Brain, and the chunked JSON API for the frontend.
 
 ---
@@ -93,24 +93,26 @@ Compiles the raw text dictionary into a lightweight, production-ready JSON API. 
 
 ---
 
-## 🤖 The NLP Translation Pipeline
+## 🤖 The NLP Translation Engine
 
-The toolkit features a two-step Node.js pipeline that utilizes `compromise.js` to contextually translate standard English text files into Inglisce.
+The toolkit features a modular Node.js pipeline that utilizes `compromise.js` to contextually translate standard English text files into Inglisce, applying strict orthographic rules along the way.
 
-### 1. Compile the Brain
+### 1. Build the Dictionary
 After running `etym-flatten --jsonl` to generate the Master Dataset, run the compiler:
 
 ```bash
-node scripts/compileBrain.js
+node scripts/build-dictionary.js
 ```
-This script streams the JSONL file and rapidly compiles it into a highly optimized, POS-mapped JSON dictionary (`dist/translationBrain.json`).
+This script streams the JSONL file and rapidly compiles it into a highly optimized, POS-mapped JSON dictionary (`dist/translationBrain.json`) for the translation engine.
 
-### 2. Transcribe Texts
+### 2. Run the Translator
 
 ```bash
-node scripts/transcribe.js
+node scripts/translator.js
 ```
-This script reads an English text file, uses the NLP engine to determine the part of speech for every word in context (e.g., distinguishing "record" as a noun vs. verb), applies the correct Inglisce translation from the compiled brain, and outputs a new text file while perfectly preserving original casing, punctuation, and whitespace.
+This is the central "glue" script. It reads an English text file, uses the NLP engine to determine the part of speech for every word in context (e.g., distinguishing "record" as a noun vs. verb), and maps it to the compiled dictionary. 
+
+During this process, it delegates to **`scripts/inglisce-orthography.js`**, which strictly enforces the Inglisce spelling rules. The final output perfectly preserves original casing, punctuation, and whitespace.
 
 ---
 
