@@ -21,7 +21,12 @@ describe('resolveForm (Morphological Suffix Resolver)', () => {
 
     it('drops the silent -e for vowel suffixes', () => {
         expect(resolveForm('-ed', 'translate')).toBe('translated');
-        expect(resolveForm('-ingue', 'make')).toBe('makingue');
+        expect(resolveForm('-ing', 'make')).toBe('making');
+    });
+
+    it('drops the silent -ue or -he', () => {
+        expect(resolveForm('-s', 'cyngue')).toBe('cyngs');
+        expect(resolveForm('-s', 'mâche')).toBe('mâcs');
     });
 
     it('keeps the silent -e for consonant suffixes', () => {
@@ -34,7 +39,7 @@ describe('resolveForm (Morphological Suffix Resolver)', () => {
     });
 
     it('forces silent -e drop for all gerunds even if suffix starts with consonant', () => {
-        expect(resolveForm('-ing', 'make', true)).toBe('making');
+        expect(resolveForm('-ing', 'mâche', true)).toBe('mâching');
     });
 });
 

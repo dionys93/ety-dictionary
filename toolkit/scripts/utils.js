@@ -2,10 +2,8 @@
  * Calculates the full Inglisce spelling from a dictionary shorthand suffix.
  */
 export const resolveForm = (form, rootWord, isGerund = false) => {
-    // Strict type guards prevent fatal TypeErrors
     if (!form || typeof form !== 'string') return null;
     if (!form.startsWith('-')) return form.replace(/[()]/g, '');
-
     if (!rootWord || typeof rootWord !== 'string') return form;
 
     const suffix = form.slice(1);
@@ -13,7 +11,14 @@ export const resolveForm = (form, rootWord, isGerund = false) => {
 
     const base = 
         (rootWord.endsWith('ie') && suffix.startsWith('i')) ? rootWord.slice(0, -2) + 'y' :
+        
+        // RULE 1: If verb in ue or che +s, remove ue/he (slice off the last two letters)
+        ((rootWord.endsWith('ue') || rootWord.endsWith('che')) && suffix === 's') ? rootWord.slice(0, -2) :
+        
+        // RULE 2: If +ing (or +ed), remove -e (slice off the last letter)
         (rootWord.endsWith('e') && (isGerund || startsWithVowel)) ? rootWord.slice(0, -1) :
+        
+        // RULE 3: If +d, do nothing to the root (ue+d / he+d)
         rootWord;
 
     return base + suffix;
