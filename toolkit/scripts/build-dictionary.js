@@ -59,7 +59,6 @@ export function buildBrain(dataset) {
     dataset.forEach(data => {
         if (!data || !data.me_word || !data.inglisce_word) return;
 
-        // Force all unicode text into standard composed format (NFC)
         const engWord = data.me_word.toLowerCase().trim().normalize('NFC');
         const inglisceWord = data.inglisce_word.normalize('NFC');
 
@@ -67,12 +66,9 @@ export function buildBrain(dataset) {
             .map(w => w.replace(/,/g, '').normalize('NFC'))
             .filter(w => !w.startsWith('['));
 
-        const firstSuffixIdx = rawConjs.findIndex(w => w.startsWith('-'));
-        const conjugations = firstSuffixIdx > 0
-            ? rawConjs.slice(firstSuffixIdx)
-            : rawConjs.filter((w, i, arr) => w !== 'to' && arr[i - 1] !== 'to');
+        // Simply filter out empty strings and the stray 'to' preposition.
+        const conjugations = rawConjs.filter(w => w !== 'to' && w.trim() !== '');
 
-        // FIXED: Split by comma (with or without space) to handle combined POS tags like "adjective, feminine noun"
         const validPosCategories = (data.pos || '').split(',').map(p => posMap[p.toLowerCase().trim()]).filter(Boolean);
         if (validPosCategories.length > 0) compiledCount++;
 

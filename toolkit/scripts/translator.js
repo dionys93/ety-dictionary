@@ -52,6 +52,10 @@ const getReplacement = (term, brainEntry) => {
 // ============================================================================
 
 export function transcribe(text, brainDictionary) {
+
+    // Armor the entry point: force all incoming text to standard NFC
+    text = text.normalize('NFC'); 
+    
     const missingWords = new Set();
     const multiWords = Object.keys(brainDictionary).filter(k => k.includes(' ') || k.includes("'"));
 
