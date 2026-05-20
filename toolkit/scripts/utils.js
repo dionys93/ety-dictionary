@@ -24,7 +24,7 @@ export const resolveForm = (form, rootWord, isGerund = false) => {
  */
 export const matchCasing = (originalText, replacementWord) => {
     if (!originalText || typeof originalText !== 'string') return replacementWord;
-    if (!replacementWord || typeof replacementWord !== 'string') return originalWord;
+    if (!replacementWord || typeof replacementWord !== 'string') return originalText;
 
     const cleanOriginal = originalText.replace(/[^a-zA-Z]/g, '');
     if (!cleanOriginal) return replacementWord;

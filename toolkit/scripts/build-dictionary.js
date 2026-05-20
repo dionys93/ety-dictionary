@@ -9,22 +9,14 @@
 
 import fs from 'node:fs';
 import path from 'node:path';
-import readline from 'node:readline';
 import { fileURLToPath } from 'node:url';
 import nlp from 'compromise';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-
-const JSONL_FILE = path.resolve(__dirname, '../dist/master_dataset.jsonl');
-const OUTPUT_FILE = path.resolve(__dirname, '../dist/translationBrain.json');
-
-const brain = {};
-let compiledCount = 0; // Numerical Collection
+import { resolveForm } from './utils.js';
 
 const posMap = {
     'verb': 'Verb', 'v': 'Verb', 'tr v': 'Verb', 'intr v': 'Verb',
     'noun': 'Noun', 'n': 'Noun', 'm n': 'Noun', 'f n': 'Noun',
+    'masculine noun': 'Noun', 'feminine noun': 'Noun', 'neuter noun': 'Noun',
     'adjective': 'Adjective', 'adj': 'Adjective',
     'adverb': 'Adverb', 'adv': 'Adverb',
     'preposition': 'Preposition', 'prep': 'Preposition',
@@ -37,56 +29,37 @@ const posMap = {
     'modal': 'Modal', 'aux': 'Auxiliary', 'auxiliary': 'Auxiliary'
 };
 
-const resolveForm = (form, rootWord, isGerund = false) => {
-    if (!form) return null;
-    if (!form.startsWith('-')) return form.replace(/[()]/g, '');
+// ============================================================================
+// COMPILER CORE (Exported for Testing)
+// ============================================================================
 
-    const suffix = form.slice(1);
-    const startsWithVowel = /^[aeiouy]/.test(suffix);
+export function buildBrain(dataset) {
+    const brain = {};
+    let compiledCount = 0;
 
-    const base = 
-        (rootWord.endsWith('ie') && suffix.startsWith('i')) ? rootWord.slice(0, -2) :
-        (rootWord.endsWith('e') && (isGerund || startsWithVowel)) ? rootWord.slice(0, -1) :
-        rootWord;
-
-    return base + suffix;
-};
-
-// This ensures no garbage from Bash ever pollutes the lookup keys
-const addWord = (eng, inglisce, pos) => {
-    if (!eng || !inglisce) return;
-    
-    const cleanEng = eng.replace(/\([^)]+\)/g, '')
-                        .replace(/\[[^\]]+\]/g, '')
-                        .replace(/^to\s+/i, '')
-                        .trim()
-                        .split(/\s+/)[0]
-                        .toLowerCase();
-                        
-    const cleanIng = inglisce.replace(/[.,!?()[\]{}]/g, '').trim();
-    
-    if (!cleanEng) return;
-    
-    brain[cleanEng] = brain[cleanEng] || {};
-    brain[cleanEng][pos] = brain[cleanEng][pos] || cleanIng;
-};
-
-export async function compile() {
-    console.log('🧠 Compiling Translation Brain...');
-    
-    if (!fs.existsSync(JSONL_FILE)) {
-        console.error(`❌ JSONL file not found at ${JSONL_FILE}!`);
-        process.exit(1);
-    }
-
-    const fileStream = fs.createReadStream(JSONL_FILE);
-    const rl = readline.createInterface({ input: fileStream, crlfDelay: Infinity });
-
-    for await (const line of rl) {
-        if (!line.trim()) continue;
+    // Ensures no garbage from Bash ever pollutes the lookup keys
+    const addWord = (eng, inglisce, pos) => {
+        if (!eng || !inglisce) return;
         
-        const data = JSON.parse(line);
-        const engWord = data.me_word;
+        const cleanEng = eng.replace(/\([^)]+\)/g, '')
+                            .replace(/\[[^\]]+\]/g, '')
+                            .replace(/^to\s+/i, '')
+                            .trim()
+                            .split(/\s+/)[0]
+                            .toLowerCase();
+                            
+        const cleanIng = inglisce.replace(/[.,!?()[\]{}]/g, '').trim();
+        
+        if (!cleanEng) return;
+        
+        brain[cleanEng] = brain[cleanEng] || {};
+        brain[cleanEng][pos] = brain[cleanEng][pos] || cleanIng;
+    };
+
+    dataset.forEach(data => {
+        if (!data || !data.me_word || !data.inglisce_word) return;
+
+        const engWord = data.me_word.toLowerCase().trim();
         const inglisceWord = data.inglisce_word;
 
         const rawConjs = (data.conjugations || [])
@@ -98,16 +71,15 @@ export async function compile() {
             ? rawConjs.slice(firstSuffixIdx) 
             : rawConjs.filter((w, i, arr) => w !== 'to' && arr[i - 1] !== 'to');
 
-        if (!engWord || !inglisceWord) continue;
-
-        const validPosCategories = data.pos.split(', ').map(p => posMap[p.toLowerCase().trim()]).filter(Boolean);
+        // FIXED: Split by comma (with or without space) to handle combined POS tags like "adjective, feminine noun"
+        const validPosCategories = (data.pos || '').split(',').map(p => posMap[p.toLowerCase().trim()]).filter(Boolean);
         if (validPosCategories.length > 0) compiledCount++;
 
         validPosCategories.forEach(posCategory => {
             addWord(engWord, inglisceWord, posCategory);
 
-            // 1. 'Be' (Copula & Verb)
-            if (engWord.includes('be')) {
+            // 1. 'Be' (Copula & Verb) - FIXED strict equality to prevent 'bear'/'beat' overriding
+            if (engWord === 'be') {
                 const forms = ['am', 'is', 'are', 'was', 'were', 'been', 'being', "isn't", "aren't", "wasn't", "weren't"];
                 addWord('be', inglisceWord, 'Copula');
                 addWord('be', inglisceWord, 'Verb');
@@ -118,8 +90,8 @@ export async function compile() {
                     if (!form.includes("n't")) addWord(`${form} not`, ingForm, 'Copula');
                 });
             }
-            // 2. 'Do' (Auxiliary & Verb)
-            else if (engWord.includes('do')) {
+            // 2. 'Do' (Auxiliary & Verb) - FIXED strict equality to prevent 'dog'/'door' overriding
+            else if (engWord === 'do') {
                 const forms = ['does', 'did', 'done', 'doing', "don't", "doesn't", "didn't"];
                 addWord('do', inglisceWord, 'Verb');
                 addWord('do', inglisceWord, 'Auxiliary');
@@ -129,8 +101,8 @@ export async function compile() {
                     addWord(form, ingForm, 'Auxiliary');
                 });
             }
-            // 3. 'Have' (Auxiliary & Verb)
-            else if (engWord.includes('have')) {
+            // 3. 'Have' (Auxiliary & Verb) - FIXED strict equality to prevent 'shave' overriding
+            else if (engWord === 'have') {
                 const forms = ['has', 'had', 'having', "haven't", "hasn't", "hadn't"];
                 addWord('have', inglisceWord, 'Verb');
                 addWord('have', inglisceWord, 'Auxiliary');
@@ -140,21 +112,21 @@ export async function compile() {
                     addWord(form, ingForm, 'Auxiliary');
                 });
             }
-            // 4. Modals
+            // 4. Modals - FIXED strict equality
             else if (posCategory === 'Modal') {
                 addWord(engWord, inglisceWord, 'Modal'); 
-                const past = engWord.includes('can') ? 'could' :
-                             engWord.includes('will') ? 'would' :
-                             engWord.includes('shall') ? 'should' :
-                             engWord.includes('may') ? 'might' : null;
+                const past = engWord === 'can' ? 'could' :
+                             engWord === 'will' ? 'would' :
+                             engWord === 'shall' ? 'should' :
+                             engWord === 'may' ? 'might' : null;
 
                 if (past) addWord(past, resolveForm(conjugations[0], inglisceWord) || inglisceWord, 'Modal');
                 
                 const neg1 = resolveForm(conjugations[1], inglisceWord) || inglisceWord;
                 addWord(`${engWord} not`, neg1, 'Modal');
                 addWord(`${engWord}n't`, neg1, 'Modal');
-                if (engWord.includes('can')) addWord('cannot', neg1, 'Modal');
-                if (engWord.includes('will')) addWord("won't", neg1, 'Modal');
+                if (engWord === 'can') addWord('cannot', neg1, 'Modal');
+                if (engWord === 'will') addWord("won't", neg1, 'Modal');
                 
                 if (past) {
                     const neg2 = resolveForm(conjugations[2], inglisceWord) || inglisceWord;
@@ -213,12 +185,35 @@ export async function compile() {
                 });
             }
         });
+    });
+
+    return { brain, compiledCount };
+}
+
+// ============================================================================
+// CLI EXECUTION
+// ============================================================================
+
+const __filename = fileURLToPath(import.meta.url);
+if (process.argv[1] === __filename) {
+    const __dirname = path.dirname(__filename);
+    const JSONL_FILE = path.resolve(__dirname, '../dist/master_dataset.jsonl');
+    const OUTPUT_FILE = path.resolve(__dirname, '../dist/translationBrain.json');
+
+    console.log('🧠 Compiling Translation Brain...');
+    
+    if (!fs.existsSync(JSONL_FILE)) {
+        console.error(`❌ JSONL file not found at ${JSONL_FILE}!`);
+        process.exit(1);
     }
+
+    const fileContent = fs.readFileSync(JSONL_FILE, 'utf8');
+    const dataset = fileContent.split('\n').filter(line => line.trim()).map(line => JSON.parse(line));
+
+    const { brain, compiledCount } = buildBrain(dataset);
 
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify(brain, null, 2));
     console.log(`✅ Brain compiled to ${OUTPUT_FILE}`);
     console.log(`📊 Loaded ${compiledCount} base dictionary files!`);
     console.log(`🧠 Generated ${Object.keys(brain).length} exact English forms!`);
 }
-
-compile();

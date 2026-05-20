@@ -11,6 +11,7 @@ import fs from 'fs';
 import path from 'path';
 import nlp from 'compromise';
 import { fileURLToPath } from 'url';
+import { resolveForm, matchCasing } from './utils.js';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -63,21 +64,6 @@ const getReplacement = (term, brainEntry) => {
         return brainEntry[onlyPos];
     }
     return brainEntry[keys[0]];
-};
-
-const matchCasing = (originalText, replacementWord) => {
-    const cleanOriginal = originalText.replace(/[^a-zA-Z]/g, '');
-    if (!cleanOriginal) return replacementWord;
-
-    const toInglisceUpper = (char) => char === 'þ' ? 'Ћ' : char.toUpperCase();
-
-    if (cleanOriginal === cleanOriginal.toUpperCase()) {
-        return replacementWord.split('').map(toInglisceUpper).join('');
-    }
-    if (/^[A-Z]/.test(cleanOriginal)) {
-        return toInglisceUpper(replacementWord.charAt(0)) + replacementWord.slice(1);
-    }
-    return replacementWord;
 };
 
 function transcribeFile(inputFile, outputFile) {

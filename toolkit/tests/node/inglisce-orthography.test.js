@@ -1,6 +1,5 @@
 import { describe, it, expect } from 'vitest';
-// Pointing to the new spelling logic domain
-import { resolveForm, matchCasing } from '../../scripts/inglisce-orthography.js';
+import { resolveForm, matchCasing } from '../../scripts/utils.js';
 
 describe('resolveForm (Morphological Suffix Resolver)', () => {
     it('returns null for empty forms', () => {
