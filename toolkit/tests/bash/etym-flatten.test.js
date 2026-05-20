@@ -1,45 +1,51 @@
-import { describe, it, expect } from 'vitest';
+import { describe, it, expect, beforeAll } from 'vitest';
 import { execSync } from 'child_process';
 import fs from 'fs';
 import path from 'path';
 
-// Point directly to your actual dictionary text files
-const FIXTURE_DIR = path.resolve(__dirname, '../fixtures/dictionary');
+// Adjust these paths depending on where etym-lib.sh is relative to this test file
+const BASH_LIB_PATH = path.resolve(__dirname, '../../etym-lib.sh');
+const FIXTURES_DIR = path.resolve(__dirname, '../fixtures/dictionary');
+const OUTPUT_FILE = path.resolve(__dirname, '../fixtures/flatten-out/master.jsonl');
 
-// Save to a persistent, visible output directory that we WILL NOT delete
-const OUT_DIR = path.resolve(__dirname, '../fixtures/flatten-out');
-
-function runFlatten(args = '') {
-    const cmd = `bash -c "export DICT_DIR=${FIXTURE_DIR} && source /workspaces/ety-dictionary/toolkit/config/env.sh && source /workspaces/ety-dictionary/toolkit/etym-lib.sh && etym-flatten ${FIXTURE_DIR} ${args}"`;
-    return execSync(cmd, { encoding: 'utf-8' });
-}
-
-describe('etym-flatten (Real Output Generation)', () => {
+describe('Bash Extractor: etym-flatten', () => {
     
-    // Notice: There is no afterAll() cleanup hook here. 
-    // The files will stay on your hard drive so you can measure them.
+    beforeAll(() => {
+        // 1. Wipe the old artifact to ensure we are testing a fresh extraction
+        if (fs.existsSync(OUTPUT_FILE)) {
+            fs.unlinkSync(OUTPUT_FILE);
+        }
 
-    it('generates physical, un-mocked files from your actual dictionary', () => {
-        if (!fs.existsSync(OUT_DIR)) fs.mkdirSync(OUT_DIR, { recursive: true });
-        
-        const tsvFile = path.join(OUT_DIR, 'master.tsv');
-        const csvFile = path.join(OUT_DIR, 'master.csv');
-        const jsonlFile = path.join(OUT_DIR, 'master.jsonl');
+        // 2. Ensure the output directory exists
+        const outDir = path.dirname(OUTPUT_FILE);
+        if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
 
-        // Execute the bash scripts and pipe the output to the files
-        runFlatten(`--out ${tsvFile}`);
-        runFlatten(`--csv --out ${csvFile}`);
-        runFlatten(`--jsonl -o ${jsonlFile}`);
+        // 3. Execute the Bash script synchronously
+        // We source the library, then run etym-flatten targeting the fixtures
+        const cmd = `bash -c "source ${BASH_LIB_PATH} && etym-flatten ${FIXTURES_DIR} --jsonl -o ${OUTPUT_FILE}"`;
+        
+        try {
+            execSync(cmd, { stdio: 'pipe' });
+        } catch (error) {
+            console.error("Bash Execution Failed:\n", error.stderr.toString());
+            throw error;
+        }
+    });
 
-        // Read the actual JSONL file that was just written to the hard drive
-        const jsonlContent = fs.readFileSync(jsonlFile, 'utf-8').trim().split('\n');
+    it('successfully generates master.jsonl on the hard drive', () => {
+        expect(fs.existsSync(OUTPUT_FILE)).toBe(true);
+    });
+
+    it('extracts valid JSON objects with the required data schema', () => {
+        const content = fs.readFileSync(OUTPUT_FILE, 'utf-8').trim().split('\n');
+        expect(content.length).toBeGreaterThan(0);
+
+        // Parse the first row to verify the Bash regex successfully grabbed the metadata
+        const firstRow = JSON.parse(content[0]);
         
-        // Basic sanity check to ensure the bash script actually wrote data
-        expect(jsonlContent.length).toBeGreaterThan(0);
-        
-        // Log the exact location so you can click it and read the data
-        console.log(`\n🔥 MEASURABLE OUTPUT GENERATED 🔥`);
-        console.log(`JSONL File ready for transcription: ${jsonlFile}`);
-        console.log(`Open this file in your editor to see exactly what transcribe.js will parse.\n`);
+        expect(firstRow).toHaveProperty('me_word');
+        expect(firstRow).toHaveProperty('inglisce_word');
+        expect(firstRow).toHaveProperty('pos');
+        expect(Array.isArray(firstRow.conjugations)).toBe(true);
     });
 });

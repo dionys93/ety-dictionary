@@ -1,7 +1,10 @@
 {
   "type": "module",
   "scripts": {
-    "test": "vitest"
+    "test": "npm run test:bash && npm run test:node",
+    "test:bash": "vitest run tests/bash/",
+    "test:node": "vitest run tests/node/ tests/nlp/",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "compromise": "^14.15.0"

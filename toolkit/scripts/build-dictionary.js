@@ -23,7 +23,7 @@ const posMap = {
     'pronoun': 'Pronoun', 'pron': 'Pronoun',
     'conjunction': 'Conjunction', 'conj': 'Conjunction',
     'number': 'Value', 'num': 'Value',
-    'article': 'Determiner', 'art': 'Determiner', 
+    'article': 'Determiner', 'art': 'Determiner',
     'definite article': 'Determiner', 'indefinite article': 'Determiner',
     'defin': 'Determiner', 'indefin': 'Determiner',
     'modal': 'Modal', 'aux': 'Auxiliary', 'auxiliary': 'Auxiliary'
@@ -40,18 +40,18 @@ export function buildBrain(dataset) {
     // Ensures no garbage from Bash ever pollutes the lookup keys
     const addWord = (eng, inglisce, pos) => {
         if (!eng || !inglisce) return;
-        
+
         const cleanEng = eng.replace(/\([^)]+\)/g, '')
-                            .replace(/\[[^\]]+\]/g, '')
-                            .replace(/^to\s+/i, '')
-                            .trim()
-                            .split(/\s+/)[0]
-                            .toLowerCase();
-                            
+            .replace(/\[[^\]]+\]/g, '')
+            .replace(/^to\s+/i, '')
+            .trim()
+            .split(/\s+/)[0]
+            .toLowerCase();
+
         const cleanIng = inglisce.replace(/[.,!?()[\]{}]/g, '').trim();
-        
+
         if (!cleanEng) return;
-        
+
         brain[cleanEng] = brain[cleanEng] || {};
         brain[cleanEng][pos] = brain[cleanEng][pos] || cleanIng;
     };
@@ -59,16 +59,17 @@ export function buildBrain(dataset) {
     dataset.forEach(data => {
         if (!data || !data.me_word || !data.inglisce_word) return;
 
-        const engWord = data.me_word.toLowerCase().trim();
-        const inglisceWord = data.inglisce_word;
+        // Force all unicode text into standard composed format (NFC)
+        const engWord = data.me_word.toLowerCase().trim().normalize('NFC');
+        const inglisceWord = data.inglisce_word.normalize('NFC');
 
         const rawConjs = (data.conjugations || [])
-            .map(w => w.replace(/,/g, ''))
+            .map(w => w.replace(/,/g, '').normalize('NFC'))
             .filter(w => !w.startsWith('['));
 
         const firstSuffixIdx = rawConjs.findIndex(w => w.startsWith('-'));
-        const conjugations = firstSuffixIdx > 0 
-            ? rawConjs.slice(firstSuffixIdx) 
+        const conjugations = firstSuffixIdx > 0
+            ? rawConjs.slice(firstSuffixIdx)
             : rawConjs.filter((w, i, arr) => w !== 'to' && arr[i - 1] !== 'to');
 
         // FIXED: Split by comma (with or without space) to handle combined POS tags like "adjective, feminine noun"
@@ -114,20 +115,20 @@ export function buildBrain(dataset) {
             }
             // 4. Modals - FIXED strict equality
             else if (posCategory === 'Modal') {
-                addWord(engWord, inglisceWord, 'Modal'); 
+                addWord(engWord, inglisceWord, 'Modal');
                 const past = engWord === 'can' ? 'could' :
-                             engWord === 'will' ? 'would' :
-                             engWord === 'shall' ? 'should' :
-                             engWord === 'may' ? 'might' : null;
+                    engWord === 'will' ? 'would' :
+                        engWord === 'shall' ? 'should' :
+                            engWord === 'may' ? 'might' : null;
 
                 if (past) addWord(past, resolveForm(conjugations[0], inglisceWord) || inglisceWord, 'Modal');
-                
+
                 const neg1 = resolveForm(conjugations[1], inglisceWord) || inglisceWord;
                 addWord(`${engWord} not`, neg1, 'Modal');
                 addWord(`${engWord}n't`, neg1, 'Modal');
                 if (engWord === 'can') addWord('cannot', neg1, 'Modal');
                 if (engWord === 'will') addWord("won't", neg1, 'Modal');
-                
+
                 if (past) {
                     const neg2 = resolveForm(conjugations[2], inglisceWord) || inglisceWord;
                     addWord(`${past} not`, neg2, 'Modal');
@@ -138,11 +139,11 @@ export function buildBrain(dataset) {
             else if (posCategory === 'Verb' || posCategory === 'Auxiliary') {
                 const doc = nlp(engWord).tag('Verb');
                 const conj = doc.verbs().conjugate()[0];
-                
+
                 if (conj) {
                     const present = resolveForm(conjugations[0], inglisceWord);
                     if (present) addWord(conj.PresentTense, present, posCategory);
-                    
+
                     if (conjugations.length === 3) {
                         const past = resolveForm(conjugations[1], inglisceWord);
                         const gerund = resolveForm(conjugations[2], inglisceWord, true);
@@ -151,7 +152,7 @@ export function buildBrain(dataset) {
                             addWord(conj.Participle, past, posCategory);
                         }
                         if (gerund) addWord(conj.Gerund, gerund, posCategory);
-                    } 
+                    }
                     else if (conjugations.length >= 4) {
                         const past = resolveForm(conjugations[1], inglisceWord);
                         const participle = resolveForm(conjugations[2], inglisceWord);
@@ -173,11 +174,11 @@ export function buildBrain(dataset) {
             else if (posCategory === 'Adjective' && conjugations.length > 0) {
                 const doc = nlp(engWord).tag('Adjective');
                 const conj = doc.adjectives().conjugate()[0];
-                
+
                 conjugations.forEach(conjStr => {
                     const resolved = resolveForm(conjStr, inglisceWord);
                     if (!resolved) return;
-                    
+
                     if (conjStr.includes('est') && conj?.Superlative) addWord(conj.Superlative, resolved, 'Adjective');
                     else if (conjStr.includes('er') && conj?.Comparative) addWord(conj.Comparative, resolved, 'Adjective');
                     else if ((conjStr.includes('ly') || conjStr.includes('y')) && conj?.Adverb) addWord(conj.Adverb, resolved, 'Adverb');
@@ -201,7 +202,7 @@ if (process.argv[1] === __filename) {
     const OUTPUT_FILE = path.resolve(__dirname, '../dist/translationBrain.json');
 
     console.log('🧠 Compiling Translation Brain...');
-    
+
     if (!fs.existsSync(JSONL_FILE)) {
         console.error(`❌ JSONL file not found at ${JSONL_FILE}!`);
         process.exit(1);

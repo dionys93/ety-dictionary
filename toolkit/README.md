@@ -93,26 +93,29 @@ Compiles the raw text dictionary into a lightweight, production-ready JSON API. 
 
 ---
 
-## 🤖 The NLP Translation Engine
+## 🤖 The NLP Translation Pipeline
 
-The toolkit features a modular Node.js pipeline that utilizes `compromise.js` to contextually translate standard English text files into Inglisce, applying strict orthographic rules along the way.
+The toolkit features a strictly linear pipeline that transforms your raw text dictionary into a contextual Natural Language Processing (NLP) translation engine. It uses `compromise.js` to analyze English grammar and applies strict Inglisce orthographic rules via `scripts/utils.js`.
 
-### 1. Build the Dictionary
-After running `etym-flatten --jsonl` to generate the Master Dataset, run the compiler:
+### Step 1: Extract the Master Dataset
+The pipeline requires a flat, 2D representation of the dictionary. Run the Bash tool to extract the data:
+\`\`\`bash
+etym-flatten --jsonl
+\`\`\`
+*(Outputs: `dist/master_dataset.jsonl`)*
 
-```bash
+### Step 2: Compile the Translation Brain
+The compiler ingests the JSONL dataset, resolves all morphological suffixes, calculates grammatical conjugations, and builds an optimized lookup map.
+\`\`\`bash
 node scripts/build-dictionary.js
-```
-This script streams the JSONL file and rapidly compiles it into a highly optimized, POS-mapped JSON dictionary (`dist/translationBrain.json`) for the translation engine.
+\`\`\`
+*(Outputs: `dist/translationBrain.json`)*
 
-### 2. Run the Translator
-
-```bash
-node scripts/translator.js
-```
-This is the central "glue" script. It reads an English text file, uses the NLP engine to determine the part of speech for every word in context (e.g., distinguishing "record" as a noun vs. verb), and maps it to the compiled dictionary. 
-
-During this process, it delegates to **`scripts/inglisce-orthography.js`**, which strictly enforces the Inglisce spelling rules. The final output perfectly preserves original casing, punctuation, and whitespace.
+### Step 3: Run the Contextual Translator
+The translator is the final consumer. It reads standard English text, analyzes the grammatical context of homographs (e.g., distinguishing the noun vs. verb form of "record"), and maps them to the compiled Brain. Unmapped words are safely wrapped in `[brackets]` for auditing.
+\`\`\`bash
+node scripts/translator.js <input_file.txt> [output_file.txt]
+\`\`\`
 
 ---
 
