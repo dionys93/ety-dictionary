@@ -1166,133 +1166,124 @@ etym-lint() {
 
 
 etym-flatten() {
-    local FORMAT="tsv"
-    local OUT_FILE="flattened_dictionary.tsv"
-    local TARGET_INPUT=""
-    local INCLUDE_ORIGIN=0
+    local TARGET_DIR="${1:-$DICT_DIR}"
+    local FORMAT="csv" # default to csv
+    local OUT_FILE=""
 
-    # 1. Parse Arguments
+    # Parse arguments
     while [[ "$#" -gt 0 ]]; do
         case $1 in
-            --csv) FORMAT="csv"; OUT_FILE="flattened_dictionary.csv"; shift ;;
-            --jsonl) FORMAT="jsonl"; OUT_FILE="$ETYM_LIB_DIR/dist/master_dataset.jsonl"; shift ;;
-            -o|--out) OUT_FILE="$2"; shift 2 ;;
-            --include-origin) INCLUDE_ORIGIN=1; shift ;;
-            *) 
-                if [[ -z "$TARGET_INPUT" ]]; then TARGET_INPUT="$1"; fi
-                shift 
-                ;;
+            --csv) FORMAT="csv"; shift ;;
+            --jsonl) FORMAT="jsonl"; shift ;;
+            -o|--output) OUT_FILE="$2"; shift 2 ;;
+            *) TARGET_DIR="$1"; shift ;;
         esac
     done
 
-    # 2. Resolve Path
-    local TARGET_DIR="${TARGET_INPUT:-$DICT_DIR}"
-    if [ ! -d "$TARGET_DIR" ]; then
-        echo "Error: Directory $TARGET_DIR not found."
-        return 1
-    fi
-
-    echo "Flattening multi-stanza data from $TARGET_DIR into $FORMAT format..."
-    echo "================================================================="
-
-    # 3. Write Headers (Skip if JSONL)
-    if [[ "$FORMAT" != "jsonl" ]]; then
-        local header="File_Name,Modern_English,Reformed_Word,Conjugations,Part_of_Speech"
-        [[ $INCLUDE_ORIGIN -eq 1 ]] && header+=",Language_Origin"
-        [[ "$FORMAT" == "tsv" ]] && header=$(echo "$header" | tr ',' '\t')
-        echo -e "$header" > "$OUT_FILE"
-    else
-        mkdir -p "$ETYM_LIB_DIR/dist"
-        > "$OUT_FILE" # Clear the file for JSONL
-    fi
-
-    # 4. The Single Source of Truth Extraction Engine
-    find "$TARGET_DIR" -type f -name "*.txt" -print0 | xargs -0 awk -v fmt="$FORMAT" -v inc_org="$INCLUDE_ORIGIN" '
-        BEGIN { 
-            RS=""; FS="\n" 
-            pos_map["m n"]="masculine noun"; pos_map["f n"]="feminine noun";
-            pos_map["n"]="noun"; pos_map["v"]="verb"; pos_map["intr v"]="intransitive verb"; 
-            pos_map["tr v"]="transitive verb"; pos_map["conj"]="conjunction"; 
-            pos_map["adj"]="adjective"; pos_map["prep"]="preposition"; 
-            pos_map["pron"]="pronoun"; pos_map["adv"]="adverb";
-        }
-        
-        function extract_core(line, stripped, comma_parts, n_comma, final_part, words) {
-            stripped = line; gsub(/\[[A-Z]+\]/, "", stripped)       
-            n_comma = split(stripped, comma_parts, ",")
-            final_part = comma_parts[n_comma]
-            gsub(/^[ \t]+|[ \t]+$/, "", final_part)
-            sub(/^[tT][oO][ \t]+/, "", final_part)
-            split(final_part, words, "[ \t]+")
-            return words[1]
-        }
-
-        {
-            pos_raw = ""; verbose_pos = ""; lang = ""; target = ""; conj = ""; me_word = ""; pos_line_idx = 0;
-            fname = FILENAME; sub(/^.*\//, "", fname); sub(/\.txt$/, "", fname)
-
-            for (i=1; i<=NF; i++) { if ($i !~ /http/ && match($i, /\[[A-Z]+\]/)) { lang = substr($i, RSTART+1, RLENGTH-2); break } }
-
-            for (i=1; i<=NF; i++) {
-                if ($i !~ /http/ && match($i, /\(([a-z ]+(, [a-z ]+)*)\)/)) {
-                    pos_line_idx = i
-                    pos_raw = substr($i, RSTART+1, RLENGTH-2) 
-                    
-                    # FIX 1: Parse ALL comma-separated POS tags instead of stripping them
-                    n_pos = split(pos_raw, pos_arr, ", ")
-                    for(p=1; p<=n_pos; p++) {
-                        v_val = (pos_arr[p] in pos_map) ? pos_map[pos_arr[p]] : pos_arr[p]
-                        verbose_pos = (verbose_pos == "") ? v_val : verbose_pos ", " v_val
-                    }
-                    
-                    temp_line = $i 
-                    gsub(/\[[A-Z]+\]/, "", temp_line) # FIX 2: Stop inline language tags from bleeding into conjugations
-                    sub(/^[ \t]+/, "", temp_line) 
-                    sub(/^to[ \t]+/, "", temp_line) 
-                    sub(/\(([a-z ]+(, [a-z ]+)*)\)/, "", temp_line) 
-                    
-                    n_words = split(temp_line, words, " "); target = words[1]              
-                    for(j=2; j<=n_words; j++) { if (words[j] != "") { conj = (conj == "" ? words[j] : conj " " words[j]) } }
-                    break
-                }
-            }
-
-            for(i=1; i<=NF; i++) { if ($i ~ /\[ME\]/) { me_word = extract_core($i); break; } }
-            if (me_word == "") { for(i=1; i<=NF; i++) { if ($i ~ /\[MI\]/) { me_word = extract_core($i); break; } } }
-            if (me_word == "" && pos_line_idx > 1) { me_word = extract_core($(pos_line_idx - 1)) }
-
-            if (verbose_pos != "" && lang != "" && target != "") {
-                if (fmt == "jsonl") {
-                    printf "%s\t%s\t%s\t%s\n", me_word, target, verbose_pos, conj
-                } 
-                else {
-                    delim = (fmt == "csv") ? "," : "\t"
-                    q = (fmt == "csv") ? "\"" : ""
-                    
-                    out_str = q fname q delim q me_word q delim q target q delim q conj q delim q verbose_pos q
-                    if (inc_org == 1) out_str = out_str delim q lang q
-                    print out_str
-                }
-            }
-        }
-    ' | (
-        if [[ "$FORMAT" == "jsonl" ]]; then
-            jq -R -c '
-                split("\t") | {
-                    me_word: .[0],
-                    inglisce_word: .[1],
-                    pos: .[2],
-                    conjugations: (if .[3] == "" then [] else (.[3] | split(" ")) end)
-                }' >> "$OUT_FILE"
+    # Default output paths if not specified
+    if [ -z "$OUT_FILE" ]; then
+        if [ "$FORMAT" == "jsonl" ]; then
+            OUT_FILE="$ETYM_LIB_DIR/dist/master_dataset.jsonl"
         else
-            cat >> "$OUT_FILE"
+            OUT_FILE="$ETYM_LIB_DIR/dist/master_dataset.csv"
         fi
-    )
+    fi
 
-    local ROW_COUNT=$(wc -l < "$OUT_FILE" | xargs)
-    echo "✅ Extraction complete!"
-    printf "Exported \e[1m%d\e[0m data rows to \e[32m%s\e[0m\n" "$ROW_COUNT" "$OUT_FILE"
+    # Ensure output directory exists
+    mkdir -p "$(dirname "$OUT_FILE")"
+
+    # Initialize output file with headers if CSV
+    if [ "$FORMAT" == "csv" ]; then
+        echo '"File_Name","Modern_English","Reformed_Word","Conjugations","Part_of_Speech"' > "$OUT_FILE"
+    else
+        > "$OUT_FILE" # clear existing JSONL file
+    fi
+
+    echo "Flattening dictionary to $FORMAT..."
+    echo "Output: $OUT_FILE"
     echo "================================================================="
+
+    find "$TARGET_DIR" -type f -name "*.txt" | while read -r FILE; do
+        awk -v file="$FILE" '
+            BEGIN {
+                me_word = ""
+                inglisce_word = ""
+                pos = ""
+                conjs = ""
+            }
+            
+            # Skip URLs
+            /^https?:/ { next }
+
+            # Skip Etymology history lines (e.g., [OE], [ON], [L]) but KEEP [ME]
+            /\[[A-Z]+\]/ && !/\[ME\]/ { next }
+
+            # 1. Modern English Line
+            # Matches lines explicitly marked with [ME] OR verb lines starting with "to "
+            /\[ME\]/ || /^to / {
+                me_word = $0
+                sub(/ \[ME\].*/, "", me_word)
+                next
+            }
+
+            # 2. Inglisce Line (Root + Conjugations + POS)
+            # Because we stripped ME and etymology metadata, the only remaining line 
+            # with parentheses contains the Inglisce data.
+            /\(/ {
+                ing_raw = $0
+                
+                # Extract POS (the last parenthesis block at the very end of the string)
+                match(ing_raw, /\([^)]+\)[ \t]*$/)
+                if (RSTART > 0) {
+                    pos = substr(ing_raw, RSTART + 1, RLENGTH - 2)
+                    ing_raw = substr(ing_raw, 1, RSTART - 1)
+                }
+
+                # Extract Conjugations (the remaining parenthesis block, if any)
+                match(ing_raw, /\([^)]+\)/)
+                if (RSTART > 0) {
+                    conjs_raw = substr(ing_raw, RSTART + 1, RLENGTH - 2)
+                    gsub(/,/, "", conjs_raw) # Strip internal commas
+                    conjs = conjs_raw
+                    ing_raw = substr(ing_raw, 1, RSTART - 1)
+                }
+
+                # The rest is the Inglisce root word
+                gsub(/^[ \t]+|[ \t,]+$/, "", ing_raw)
+                inglisce_word = ing_raw
+            }
+
+            END {
+                # Strip exact literal "to " from the very beginning of the English word if it exists
+                # This ensures "to have" becomes "have, has, had..."
+                if (me_word ~ /^to /) {
+                    me_word = substr(me_word, 4)
+                }
+
+                # Format conjugations into a JSON array if exporting to JSONL
+                if (conjs != "") {
+                    split(conjs, conj_arr, " ")
+                    conj_str = "["
+                    for (i=1; i<=length(conj_arr); i++) {
+                        conj_str = conj_str "\\\"" conj_arr[i] "\\\"" (i<length(conj_arr) ? ", " : "")
+                    }
+                    conj_str = conj_str "]"
+                } else {
+                    conj_str = "[]"
+                }
+
+                if (me_word != "" && inglisce_word != "") {
+                    if ("'"$FORMAT"'" == "jsonl") {
+                        printf "{\"me_word\": \"%s\", \"inglisce_word\": \"%s\", \"pos\": \"%s\", \"conjugations\": %s}\n", me_word, inglisce_word, pos, conj_str >> "'"$OUT_FILE"'"
+                    } else {
+                        printf "\"%s\",\"%s\",\"%s\",\"%s\",\"%s\"\n", file, me_word, inglisce_word, conjs, pos >> "'"$OUT_FILE"'"
+                    }
+                }
+            }
+        ' "$FILE"
+    done
+
+    echo "✅ Extraction Complete!"
 }
 
 

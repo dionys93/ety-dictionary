@@ -86,5 +86,4 @@ describe('Inglisce Transcription Engine', () => {
         expect(result2).toContain('Sie mâde þe câc'.normalize('NFC'));
         expect(result3).toContain('Sie circles þe circuls'.normalize('NFC'));
     });
-
 });
