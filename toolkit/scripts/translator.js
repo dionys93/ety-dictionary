@@ -1,176 +1,132 @@
 /**
  * ============================================================================
- * INGLISCE TRANSCRIBER (NATIVE ARCHITECTURE)
- * * This script uses a Native Regex Tokenizer to guarantee 100% accurate 
- * preservation of commas, brackets, em-dashes, and exact spacing. 
- * It uses `compromise.js` strictly as a read-only "Oracle" to tag the parts 
- * of speech for homograph disambiguation.
+ * INGLISCE TRANSCRIBER (BRUTE-FORCE / HARDCODED BYPASS)
+ * * All NLP tools have been removed to guarantee punctuation integrity.
+ * * Uses a simple Regex tokenization and direct dictionary lookups.
  * ============================================================================
  */
 
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import nlp from 'compromise';
-import { matchCasing } from './utils.js';
 
 // ============================================================================
-// 1. HELPER FUNCTIONS
+// 1. HARDCODED OVERRIDES (The Escape Hatch)
 // ============================================================================
-
-const getReplacement = (term, brainEntry) => {
-    // 1. SPECIFIC/STRUCTURAL VERBS 
-    if (term.has('#Copula') && brainEntry.Copula) return brainEntry.Copula;
-    if (term.has('#Auxiliary') && brainEntry.Auxiliary) return brainEntry.Auxiliary;
-    if (term.has('#Modal') && brainEntry.Modal) return brainEntry.Modal;
-    
-    // 2. GENERIC PARTS OF SPEECH
-    if (term.has('#Verb') && brainEntry.Verb) return brainEntry.Verb;
-    if (term.has('#Noun') && brainEntry.Noun) return brainEntry.Noun;
-    if (term.has('#Adjective') && brainEntry.Adjective) return brainEntry.Adjective;
-    if (term.has('#Determiner') && brainEntry.Determiner) return brainEntry.Determiner;
-    if (term.has('#Value') && brainEntry.Value) return brainEntry.Value;
-    if (term.has('#Preposition') && brainEntry.Preposition) return brainEntry.Preposition;
-    if (term.has('#Pronoun') && brainEntry.Pronoun) return brainEntry.Pronoun;
-    if (term.has('#Adverb') && brainEntry.Adverb) return brainEntry.Adverb;
-    
-    // 3. FALLBACK & SAFETY CHECKS
-    const keys = Object.keys(brainEntry);
-    if (keys.length === 1) {
-        const onlyPos = keys[0];
-        if (onlyPos === 'Verb' && term.has('#Noun')) return null;
-        if (onlyPos === 'Noun' && term.has('#Verb')) return null;
-        return brainEntry[onlyPos];
-    }
-    
-    if (brainEntry.Pronoun) return brainEntry.Pronoun; 
-
-    return brainEntry[keys[0]];
+// If a word is destroying your pipeline, add it here. 
+// It will bypass the dictionary entirely.
+const HARDCODED_OVERRIDES = {
+    "I'll": "I’ll",
+    "I've": "I've",
+    "I'd": "I'd",
+    "we've": "uie've",
+    "we'd": "uie'd",
+    "We've": "Uie've",
+    "We'd": "Uie'd",
+    "You've": "You've",
+    "You'd": "You'd",
+    "you've": "you've",
+    "you'd": "you'd",
+    "it's": "it's",
+    "It's": "It's",
+    "it'd": "it'd",
+    "It'd": "It'd",
+    "she's": "sie's",
+    "She's": "Sie's",
+    "she'd": "sie'd",
+    "She'd": "Sie'd",
+    "he's": "hie’s",
+    "he’d": "hie’d",
+    "He's": "Hie’s",
+    "He’d": "Hie’d",
+    "They've": "Ћey've",
+    "They'd": "Ћey'd",
+    "they've": "þey've",
+    "they'd": "þey'd"
 };
 
 // ============================================================================
-// 2. TRANSLATION ENGINE
+// 2. HELPER FUNCTIONS
+// ============================================================================
+
+const matchCasing = (original, replacement) => {
+    if (!original || !replacement) return replacement;
+    if (original === original.toUpperCase() && original.length > 1) {
+        return replacement.toUpperCase();
+    }
+    if (original[0] === original[0].toUpperCase()) {
+        return replacement.charAt(0).toUpperCase() + replacement.slice(1);
+    }
+    return replacement.toLowerCase();
+};
+
+// ============================================================================
+// 3. TRANSLATION ENGINE
 // ============================================================================
 
 export function transcribe(text, brainDictionary) {
     text = text.normalize('NFC'); 
-    
     const missingWords = new Set();
-    const multiWords = Object.keys(brainDictionary)
-        .filter(k => k.includes(' ') || k.includes("'"))
-        .sort((a, b) => b.length - a.length);
 
     const lines = text.split('\n');
 
     const transcribedLines = lines.map(line => {
         if (!line.trim()) return line;
 
-        // --- PASS 1: MULTI-WORD INTERCEPTOR ---
-        let nativeLine = line;
-        const translatedPhrases = {};
-        let uuidCounter = 0;
-
-        multiWords.forEach(key => {
-            // Replaces exact phrases, securely handling smart-quotes within contractions
-            const regex = new RegExp(`\\b${key.replace(/'/g, "['’]")}\\b`, 'gi');
-            nativeLine = nativeLine.replace(regex, (match) => {
-                const entry = brainDictionary[key];
-                const fallback = entry.Verb || entry.Copula || entry.Auxiliary || entry.Modal || Object.values(entry)[0];
-                const translated = matchCasing(match, fallback);
-                
-                const token = `___MW${uuidCounter}___`;
-                translatedPhrases[token] = translated;
-                uuidCounter++;
-                return token;
+        // 1. Apply Hardcoded Overrides First
+        let processedLine = line;
+        Object.keys(HARDCODED_OVERRIDES).forEach(key => {
+            // Replace exact matches, preserving surrounding punctuation boundaries
+            const regex = new RegExp(`\\b${key.replace(/['’]/g, "['’]")}\\b`, 'gi');
+            processedLine = processedLine.replace(regex, (match) => {
+                return matchCasing(match, HARDCODED_OVERRIDES[key]);
             });
         });
 
-        // --- PASS 2: THE ORACLE (Tagging) ---
-        // Runs cleanly on the line, extracting exact character offsets for grammar matching
-        const doc = nlp(nativeLine);
-        const termsData = doc.terms().json({ offset: true });
-
-        // --- PASS 3: NATIVE TOKENIZER ---
-        // Split natively by word boundaries to perfectly isolate and protect punctuation
-        const chunks = nativeLine.split(/([a-zA-Z\u00C0-\u024F0-9_]+(?:['’\-\u2013][a-zA-Z\u00C0-\u024F0-9_]+)*)/);
-        
-        let charIndex = 0;
+        // 2. Dumb Tokenizer (Mathematically isolates words from punctuation)
+        const chunks = processedLine.split(/([a-zA-Z\u00C0-\u024F]+(?:['’][a-zA-Z\u00C0-\u024F]+)*)/);
 
         for (let i = 0; i < chunks.length; i++) {
             const chunk = chunks[i];
             if (!chunk) continue;
 
-            // Even indices are non-words (punctuation, spaces, brackets, em-dashes)
-            if (i % 2 === 0) {
-                charIndex += chunk.length;
-                continue;
-            }
+            // Even indices are strictly non-words (commas, em-dashes, spaces, brackets). Skip them.
+            if (i % 2 === 0) continue;
 
             const originalWord = chunk;
-            const wordStart = charIndex;
-            const wordEnd = charIndex + originalWord.length;
+            const lowerWord = originalWord.toLowerCase();
 
-            // 1. Re-inject Multi-words
-            if (translatedPhrases[originalWord]) {
-                chunks[i] = translatedPhrases[originalWord];
-                charIndex += chunk.length;
+            // If it was already hardcoded, skip it
+            if (Object.values(HARDCODED_OVERRIDES).map(v => v.toLowerCase()).includes(lowerWord)) {
                 continue;
             }
 
-            // 2. Skip purely numeric strings
-            if (/^[0-9]+$/.test(originalWord)) {
-                charIndex += chunk.length;
-                continue;
-            }
-
-            // 3. Query the Oracle using overlapping string positions
-            const overlappingTerms = termsData.filter(t => {
-                if (!t.offset) return false;
-                const tStart = t.offset.start;
-                const tEnd = t.offset.start + t.offset.length;
-                return Math.max(wordStart, tStart) < Math.min(wordEnd, tEnd);
-            });
-
-            const tags = new Set();
-            overlappingTerms.forEach(t => {
-                if (t.terms) {
-                    t.terms.forEach(sub => {
-                        if (sub.tags) sub.tags.forEach(tag => tags.add(tag));
-                    });
-                } else if (t.tags) {
-                    t.tags.forEach(tag => tags.add(tag));
-                }
-            });
-
-            const mockTerm = { has: (tag) => tags.has(tag.replace(/^#/, '')) };
-
-            // 4. Suffix Preserver
+            // 3. Brute-Force Suffix Stripper
             let suffix = '';
-            let rootWord = originalWord;
-            const suffixMatch = originalWord.match(/(['’](s|re|ll|d|ve|m))$/i);
+            let rootWord = lowerWord;
+            const suffixMatch = lowerWord.match(/(['’](s|re|ll|d|ve|m))$/);
             
             if (suffixMatch) {
                 suffix = suffixMatch[1]; 
-                rootWord = originalWord.slice(0, -suffix.length);
+                rootWord = lowerWord.slice(0, -suffix.length);
             }
 
-            const normalRoot = rootWord.toLowerCase();
-
-            // 5. Dictionary Lookup
-            if (brainDictionary[normalRoot]) {
-                let replacement = getReplacement(mockTerm, brainDictionary[normalRoot]);
+            // 4. Dictionary Lookup
+            const entry = brainDictionary[rootWord];
+            if (entry) {
+                // Grab the first available part of speech blindly
+                let replacement = entry.Verb || entry.Noun || entry.Pronoun || Object.values(entry)[0];
+                
                 if (replacement) {
                     replacement += suffix; 
                     chunks[i] = matchCasing(originalWord, replacement);
-                    charIndex += chunk.length;
                     continue; 
                 }
             }
 
-            // 6. Missing Words Pipeline (Wraps exact word natively, dropping punctuation outside)
+            // 5. Missing Words Tracker
             chunks[i] = `[${originalWord}]`;
-            missingWords.add(normalRoot);
-            charIndex += chunk.length;
+            missingWords.add(rootWord);
         }
 
         return chunks.join('');
@@ -185,7 +141,7 @@ export function transcribe(text, brainDictionary) {
 }
 
 // ============================================================================
-// 3. CLI EXECUTION & REPORTING
+// 4. CLI EXECUTION & REPORTING
 // ============================================================================
 
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
