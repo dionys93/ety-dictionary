@@ -1204,75 +1204,86 @@ etym-flatten() {
     echo "================================================================="
 
     find "$TARGET_DIR" -type f -name "*.txt" | while read -r FILE; do
-        awk -v file="$FILE" '
-            BEGIN {
+        awk -v file="$FILE" -v RS="" '
+            {
                 me_word = ""
                 inglisce_word = ""
                 pos = ""
                 conjs = ""
-            }
-            
-            # Skip URLs
-            /^https?:/ { next }
 
-            # Skip Etymology history lines (e.g., [OE], [ON], [L]) but KEEP [ME]
-            /\[[A-Z]+\]/ && !/\[ME\]/ { next }
-
-            # 1. Modern English Line
-            # Matches lines explicitly marked with [ME] OR verb lines starting with "to "
-            /\[ME\]/ || /^to / {
-                me_word = $0
-                sub(/ \[ME\].*/, "", me_word)
-                next
-            }
-
-            # 2. Inglisce Line (Root + Conjugations + POS)
-            # Because we stripped ME and etymology metadata, the only remaining line 
-            # with parentheses contains the Inglisce data.
-            /\(/ {
-                ing_raw = $0
+                # Split stanza into lines
+                n = split($0, lines, "\n")
                 
-                # Extract POS (the last parenthesis block at the very end of the string)
-                match(ing_raw, /\([^)]+\)[ \t]*$/)
-                if (RSTART > 0) {
-                    pos = substr(ing_raw, RSTART + 1, RLENGTH - 2)
-                    ing_raw = substr(ing_raw, 1, RSTART - 1)
-                }
+                for (i=1; i<=n; i++) {
+                    line = lines[i]
+                    sub(/\r$/, "", line) # CRITICAL: Strip hidden Windows carriage returns
+                    
+                    # Skip URLs
+                    if (line ~ /^https?:/) continue;
 
-                # Extract Conjugations (the remaining parenthesis block, if any)
-                match(ing_raw, /\([^)]+\)/)
-                if (RSTART > 0) {
-                    conjs_raw = substr(ing_raw, RSTART + 1, RLENGTH - 2)
-                    gsub(/,/, "", conjs_raw) # Strip internal commas
-                    conjs = conjs_raw
-                    ing_raw = substr(ing_raw, 1, RSTART - 1)
-                }
-
-                # The rest is the Inglisce root word
-                gsub(/^[ \t]+|[ \t,]+$/, "", ing_raw)
-                inglisce_word = ing_raw
-            }
-
-            END {
-                # Strip exact literal "to " from the very beginning of the English word if it exists
-                # This ensures "to have" becomes "have, has, had..."
-                if (me_word ~ /^to /) {
-                    me_word = substr(me_word, 4)
-                }
-
-                # Format conjugations into a JSON array if exporting to JSONL
-                if (conjs != "") {
-                    split(conjs, conj_arr, " ")
-                    conj_str = "["
-                    for (i=1; i<=length(conj_arr); i++) {
-                        conj_str = conj_str "\\\"" conj_arr[i] "\\\"" (i<length(conj_arr) ? ", " : "")
+                    # 1. English/Etymology Line 
+                    if (line !~ /\(/ && line != "") {
+                        raw_me = line
+                        sub(/ \[[A-Z]+\]/, "", raw_me)
+                        split(raw_me, me_parts, ",")
+                        me_word = me_parts[1]
+                        
+                        # Strip standard infinitives and whitespace
+                        sub(/^[tT][oO][ \t]+/, "", me_word)
+                        gsub(/^[ \t]+|[ \t]+$/, "", me_word)
+                        continue;
                     }
-                    conj_str = conj_str "]"
-                } else {
-                    conj_str = "[]"
+
+                    # 2. Inglisce Line (Root + Conjugations + POS)
+                    if (line ~ /\(/) {
+                        ing_raw = line
+                        
+                        # Extract POS (STRICTLY capture only the final parentheses without nested ones)
+                        match(ing_raw, /\([^()]+\)[ \t]*$/)
+                        if (RSTART > 0) {
+                            pos = substr(ing_raw, RSTART + 1, RLENGTH - 2)
+                            ing_raw = substr(ing_raw, 1, RSTART - 1)
+                        }
+
+                        gsub(/^[ \t]+|[ \t]+$/, "", ing_raw)
+
+                        num_parts = split(ing_raw, parts, " ")
+                        
+                        # Strip the infinitive "to" from the Inglisce root
+                        if (tolower(parts[1]) == "to") {
+                            inglisce_word = parts[2]
+                            start_idx = 3
+                        } else {
+                            inglisce_word = parts[1]
+                            start_idx = 2
+                        }
+                        
+                        sub(/,$/, "", inglisce_word)
+
+                        conjs = ""
+                        for (j=start_idx; j<=num_parts; j++) {
+                            c = parts[j]
+                            sub(/,$/, "", c)
+                            if (c != "") {
+                                conjs = conjs (conjs=="" ? "" : " ") c
+                            }
+                        }
+                    }
                 }
 
                 if (me_word != "" && inglisce_word != "") {
+                    # Format conjugations into a valid JSON array
+                    if (conjs != "") {
+                        split(conjs, conj_arr, " ")
+                        conj_str = "["
+                        for (j=1; j<=length(conj_arr); j++) {
+                            conj_str = conj_str "\"" conj_arr[j] "\"" (j<length(conj_arr) ? ", " : "")
+                        }
+                        conj_str = conj_str "]"
+                    } else {
+                        conj_str = "[]"
+                    }
+
                     if ("'"$FORMAT"'" == "jsonl") {
                         printf "{\"me_word\": \"%s\", \"inglisce_word\": \"%s\", \"pos\": \"%s\", \"conjugations\": %s}\n", me_word, inglisce_word, pos, conj_str >> "'"$OUT_FILE"'"
                     } else {
