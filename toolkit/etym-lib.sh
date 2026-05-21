@@ -1165,6 +1165,149 @@ etym-lint() {
 }
 
 
+# etym-flatten() {
+#     local TARGET_DIR=""
+#     local FORMAT="csv" # default to csv
+#     local OUT_FILE=""
+
+#     # Parse arguments
+#     while [[ "$#" -gt 0 ]]; do
+#         case $1 in
+#             --csv) FORMAT="csv"; shift ;;
+#             --jsonl) FORMAT="jsonl"; shift ;;
+#             -o|--output) OUT_FILE="$2"; shift 2 ;;
+#             *) 
+#                 # If it's not a flag, assume it's the target directory
+#                 if [[ -z "$TARGET_DIR" ]]; then
+#                     TARGET_DIR="$1"
+#                 fi
+#                 shift 
+#                 ;;
+#         esac
+#     done
+
+#     # Fallback to default dictionary directory if none was provided
+#     if [[ -z "$TARGET_DIR" ]]; then
+#         TARGET_DIR="$DICT_DIR"
+#     fi
+
+#     # Default output paths if not specified
+#     if [ -z "$OUT_FILE" ]; then
+#         if [ "$FORMAT" == "jsonl" ]; then
+#             OUT_FILE="$ETYM_LIB_DIR/dist/master_dataset.jsonl"
+#         else
+#             OUT_FILE="$ETYM_LIB_DIR/dist/master_dataset.csv"
+#         fi
+#     fi
+
+#     # Ensure output directory exists
+#     mkdir -p "$(dirname "$OUT_FILE")"
+
+#     # Initialize output file with headers if CSV
+#     if [ "$FORMAT" == "csv" ]; then
+#         echo '"File_Name","Modern_English","Reformed_Word","Conjugations","Part_of_Speech"' > "$OUT_FILE"
+#     else
+#         > "$OUT_FILE" # clear existing JSONL file
+#     fi
+
+#     echo "Flattening dictionary to $FORMAT..."
+#     echo "Output: $OUT_FILE"
+#     echo "================================================================="
+
+#     find "$TARGET_DIR" -type f -name "*.txt" | while read -r FILE; do
+#         awk -v file="$FILE" -v RS="" '
+#             {
+#                 me_word = ""
+#                 inglisce_word = ""
+#                 pos = ""
+#                 conjs = ""
+
+#                 # Split stanza into lines
+#                 n = split($0, lines, "\n")
+                
+#                 for (i=1; i<=n; i++) {
+#                     line = lines[i]
+#                     sub(/\r$/, "", line) # CRITICAL: Strip hidden Windows carriage returns
+                    
+#                     # Skip URLs
+#                     if (line ~ /^https?:/) continue;
+
+#                     # 1. English/Etymology Line 
+#                     if (line !~ /\(/ && line != "") {
+#                         raw_me = line
+#                         sub(/ \[[A-Z]+\]/, "", raw_me)
+#                         split(raw_me, me_parts, ",")
+#                         me_word = me_parts[1]
+                        
+#                         # Strip standard infinitives and whitespace
+#                         sub(/^[tT][oO][ \t]+/, "", me_word)
+#                         gsub(/^[ \t]+|[ \t]+$/, "", me_word)
+#                         continue;
+#                     }
+
+#                     # 2. Inglisce Line (Root + Conjugations + POS)
+#                     if (line ~ /\(/) {
+#                         ing_raw = line
+                        
+#                         # Extract POS (STRICTLY capture only the final parentheses without nested ones)
+#                         match(ing_raw, /\([^()]+\)[ \t]*$/)
+#                         if (RSTART > 0) {
+#                             pos = substr(ing_raw, RSTART + 1, RLENGTH - 2)
+#                             ing_raw = substr(ing_raw, 1, RSTART - 1)
+#                         }
+
+#                         gsub(/^[ \t]+|[ \t]+$/, "", ing_raw)
+
+#                         num_parts = split(ing_raw, parts, " ")
+                        
+#                         # Strip the infinitive "to" from the Inglisce root ONLY if it acts as a marker for a second word
+#                         if (tolower(parts[1]) == "to" && num_parts > 1) {
+#                             inglisce_word = parts[2]
+#                             start_idx = 3
+#                         } else {
+#                             inglisce_word = parts[1]
+#                             start_idx = 2
+#                         }
+                        
+#                         sub(/,$/, "", inglisce_word)
+
+#                         conjs = ""
+#                         for (j=start_idx; j<=num_parts; j++) {
+#                             c = parts[j]
+#                             sub(/,$/, "", c)
+#                             if (c != "") {
+#                                 conjs = conjs (conjs=="" ? "" : " ") c
+#                             }
+#                         }
+#                     }
+#                 }
+
+#                 if (me_word != "" && inglisce_word != "") {
+#                     # Format conjugations into a valid JSON array
+#                     if (conjs != "") {
+#                         split(conjs, conj_arr, " ")
+#                         conj_str = "["
+#                         for (j=1; j<=length(conj_arr); j++) {
+#                             conj_str = conj_str "\"" conj_arr[j] "\"" (j<length(conj_arr) ? ", " : "")
+#                         }
+#                         conj_str = conj_str "]"
+#                     } else {
+#                         conj_str = "[]"
+#                     }
+
+#                     if ("'"$FORMAT"'" == "jsonl") {
+#                         printf "{\"me_word\": \"%s\", \"inglisce_word\": \"%s\", \"pos\": \"%s\", \"conjugations\": %s}\n", me_word, inglisce_word, pos, conj_str >> "'"$OUT_FILE"'"
+#                     } else {
+#                         printf "\"%s\",\"%s\",\"%s\",\"%s\",\"%s\"\n", file, me_word, inglisce_word, conjs, pos >> "'"$OUT_FILE"'"
+#                     }
+#                 }
+#             }
+#         ' "$FILE"
+#     done
+
+#     echo "✅ Extraction Complete!"
+# }
+
 etym-flatten() {
     local TARGET_DIR=""
     local FORMAT="csv" # default to csv
@@ -1260,8 +1403,8 @@ etym-flatten() {
 
                         num_parts = split(ing_raw, parts, " ")
                         
-                        # Strip the infinitive "to" from the Inglisce root
-                        if (tolower(parts[1]) == "to") {
+                        # Strip the infinitive "to" ONLY if it acts as a marker for a second word
+                        if (tolower(parts[1]) == "to" && num_parts > 1) {
                             inglisce_word = parts[2]
                             start_idx = 3
                         } else {

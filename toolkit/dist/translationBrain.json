@@ -1381,6 +1381,11 @@
   "traders": {
     "Noun": "trâdeurs"
   },
+  "to": {
+    "Preposition": "to",
+    "Conjunction": "to",
+    "Adverb": "to"
+  },
   "tickle": {
     "Verb": "tichle"
   },
@@ -4958,23 +4963,35 @@
   "acting": {
     "Verb": "acting"
   },
-  "agere": {
+  "actor": {
     "Noun": "acteur"
   },
-  "ageres": {
+  "actors": {
     "Noun": "acteurs"
   },
   "actual": {
     "Adjective": "acţual"
   },
   "actually": {
-    "Adverb": "acţally"
+    "Adverb": "accially"
   },
   "actuality": {
     "Noun": "acţualetie"
   },
   "actualities": {
     "Noun": "acţualetyis"
+  },
+  "actualize": {
+    "Verb": "acţualyse"
+  },
+  "actualizes": {
+    "Verb": "acţualyses"
+  },
+  "actualized": {
+    "Verb": "acţualysed"
+  },
+  "actualizing": {
+    "Verb": "acţualysing"
   },
   "actualization": {
     "Noun": "acţualisâcion"
@@ -4983,10 +5000,23 @@
     "Noun": "acţualisâcions"
   },
   "active": {
-    "Adjective": "actif"
+    "Adjective": "actif",
+    "Adverb": "activly"
   },
   "actively": {
     "Adverb": "actifvly"
+  },
+  "activate": {
+    "Verb": "activait"
+  },
+  "activates": {
+    "Verb": "activaits"
+  },
+  "activated": {
+    "Verb": "activaited"
+  },
+  "activating": {
+    "Verb": "activaiting"
   },
   "activation": {
     "Noun": "activâcion"
@@ -4994,10 +5024,10 @@
   "activations": {
     "Noun": "activâcions"
   },
-  "accion": {
+  "action": {
     "Noun": "accion"
   },
-  "accions": {
+  "actions": {
     "Noun": "accions"
   },
   "aught": {
@@ -41308,10 +41338,14 @@
     "Conjunction": "uaiþre"
   },
   "witness": {
-    "Noun": "uitnace"
+    "Noun": "uitnace",
+    "Verb": "uitnace"
   },
   "witnesses": {
     "Noun": "uitnaces"
+  },
+  "witnes": {
+    "Verb": "uitnaced"
   },
   "work": {
     "Noun": "uirc",

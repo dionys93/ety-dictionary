@@ -224,6 +224,7 @@
 {"me_word": "trade", "inglisce_word": "trâde", "pos": "m n", "conjugations": ["trâds"]}
 {"me_word": "trade", "inglisce_word": "trâde", "pos": "v", "conjugations": ["-s", "-d", "-ing"]}
 {"me_word": "trader", "inglisce_word": "trâdeur", "pos": "m n", "conjugations": ["-s"]}
+{"me_word": "to", "inglisce_word": "to", "pos": "prep, conj, adv", "conjugations": []}
 {"me_word": "tickle", "inglisce_word": "tichle", "pos": "v", "conjugations": ["-s", "-d", "-ing"]}
 {"me_word": "ticklish", "inglisce_word": "tichlisce", "pos": "adj", "conjugations": []}
 {"me_word": "touch", "inglisce_word": "touc̃e", "pos": "v", "conjugations": ["-s", "-d", "-ing"]}
@@ -794,14 +795,17 @@
 {"me_word": "ascertainment", "inglisce_word": "ascertânement", "pos": "f n", "conjugations": []}
 {"me_word": "act", "inglisce_word": "acte", "pos": "v", "conjugations": ["acs", "-d", "-ing"]}
 {"me_word": "act", "inglisce_word": "acte", "pos": "m n", "conjugations": ["acs"]}
-{"me_word": "agere", "inglisce_word": "acteur", "pos": "m n", "conjugations": ["-s"]}
+{"me_word": "actor", "inglisce_word": "acteur", "pos": "m n", "conjugations": ["-s"]}
 {"me_word": "actual", "inglisce_word": "acţual", "pos": "adj", "conjugations": []}
-{"me_word": "actually", "inglisce_word": "acţally", "pos": "adv", "conjugations": []}
+{"me_word": "actually", "inglisce_word": "accially", "pos": "adv", "conjugations": []}
 {"me_word": "actuality", "inglisce_word": "acţualetie", "pos": "f n", "conjugations": ["-is"]}
+{"me_word": "actualize", "inglisce_word": "acţualyse", "pos": "v", "conjugations": ["-s", "-d", "-ing"]}
 {"me_word": "actualization", "inglisce_word": "acţualisâcion", "pos": "f n", "conjugations": ["-s"]}
 {"me_word": "active", "inglisce_word": "actif", "pos": "adj", "conjugations": ["-vly"]}
+{"me_word": "active", "inglisce_word": "activly", "pos": "adv", "conjugations": []}
+{"me_word": "activate", "inglisce_word": "activait", "pos": "v", "conjugations": ["-s", "-ed", "-ing"]}
 {"me_word": "activation", "inglisce_word": "activâcion", "pos": "f n", "conjugations": ["-s"]}
-{"me_word": "accion", "inglisce_word": "accion", "pos": "m n", "conjugations": ["-s"]}
+{"me_word": "action", "inglisce_word": "accion", "pos": "m n", "conjugations": ["-s"]}
 {"me_word": "aught", "inglisce_word": "auht", "pos": "pron, adj, adv", "conjugations": []}
 {"me_word": "about", "inglisce_word": "abaut", "pos": "prep", "conjugations": []}
 {"me_word": "Alabama", "inglisce_word": "Alabàma", "pos": "f n", "conjugations": []}
@@ -6493,6 +6497,7 @@
 {"me_word": "whine", "inglisce_word": "oîne", "pos": "m n", "conjugations": ["oîns"]}
 {"me_word": "whether", "inglisce_word": "uaiþre", "pos": "conj", "conjugations": []}
 {"me_word": "witness", "inglisce_word": "uitnace", "pos": "m n", "conjugations": ["-s"]}
+{"me_word": "witness", "inglisce_word": "uitnace", "pos": "v", "conjugations": ["-s", "-d", "-ing"]}
 {"me_word": "work", "inglisce_word": "uirc", "pos": "m n", "conjugations": ["uêx"]}
 {"me_word": "work", "inglisce_word": "uirche", "pos": "v", "conjugations": ["uirc(s", "uirched", "uirching"]}
 {"me_word": "bulwark", "inglisce_word": "boluirc", "pos": "m n", "conjugations": ["-x"]}

@@ -101,7 +101,12 @@ export function transcribe(text, brainDictionary) {
             
             if (suffixMatch) {
                 suffix = suffixMatch[1]; 
-                normal = normal.replace(new RegExp(suffix + '$', 'i'), '');
+                
+                // CRITICAL FIX: Because compromise.js morphs smart quotes to straight quotes, 
+                // regex matching the suffix against `normal` will silently fail.
+                // We securely slice the base word from our raw extracted string instead.
+                const baseWord = wordWithoutPunctuation.slice(0, -suffix.length);
+                normal = baseWord.toLowerCase();
             }
 
             // Attempt lookup and replacement
