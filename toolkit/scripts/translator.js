@@ -1,11 +1,10 @@
 /**
  * ============================================================================
- * INGLISCE TRANSCRIBER
- * * This script takes standard English text and translates it into Inglisce
- * using the compiled `translationBrain.json`. It uses `compromise.js` to 
- * analyze sentence context, ensuring homographs (like the noun vs verb "record") 
- * are translated correctly based on their grammar. Unmapped words are safely 
- * wrapped in [brackets] to serve as a to-do list for future dictionary entries.
+ * INGLISCE TRANSCRIBER (NATIVE ARCHITECTURE)
+ * * This script uses a Native Regex Tokenizer to guarantee 100% accurate 
+ * preservation of commas, brackets, em-dashes, and exact spacing. 
+ * It uses `compromise.js` strictly as a read-only "Oracle" to tag the parts 
+ * of speech for homograph disambiguation.
  * ============================================================================
  */
 
@@ -44,95 +43,139 @@ const getReplacement = (term, brainEntry) => {
         return brainEntry[onlyPos];
     }
     
+    if (brainEntry.Pronoun) return brainEntry.Pronoun; 
+
     return brainEntry[keys[0]];
 };
 
 // ============================================================================
-// 2. TRANSCRIPTION ENGINE (Exported for Testing)
+// 2. TRANSLATION ENGINE
 // ============================================================================
 
 export function transcribe(text, brainDictionary) {
-
-    // Armor the entry point: force all incoming text to standard NFC
     text = text.normalize('NFC'); 
     
     const missingWords = new Set();
-    const multiWords = Object.keys(brainDictionary).filter(k => k.includes(' ') || k.includes("'"));
+    const multiWords = Object.keys(brainDictionary)
+        .filter(k => k.includes(' ') || k.includes("'"))
+        .sort((a, b) => b.length - a.length);
 
     const lines = text.split('\n');
 
     const transcribedLines = lines.map(line => {
         if (!line.trim()) return line;
 
-        const doc = nlp(line);
-
         // --- PASS 1: MULTI-WORD INTERCEPTOR ---
+        let nativeLine = line;
+        const translatedPhrases = {};
+        let uuidCounter = 0;
+
         multiWords.forEach(key => {
-            const entry = brainDictionary[key];
-            const fallback = entry.Verb || entry.Copula || entry.Auxiliary || entry.Modal || Object.values(entry)[0];
-            
-            if (fallback) {
-                doc.match(key).forEach(m => {
-                    const casedFallback = matchCasing(m.text(), fallback);
-                    m.replaceWith(casedFallback, { keepTags: true, keepCase: false });
-                    m.tag('#Translated'); 
-                });
-            }
+            // Replaces exact phrases, securely handling smart-quotes within contractions
+            const regex = new RegExp(`\\b${key.replace(/'/g, "['’]")}\\b`, 'gi');
+            nativeLine = nativeLine.replace(regex, (match) => {
+                const entry = brainDictionary[key];
+                const fallback = entry.Verb || entry.Copula || entry.Auxiliary || entry.Modal || Object.values(entry)[0];
+                const translated = matchCasing(match, fallback);
+                
+                const token = `___MW${uuidCounter}___`;
+                translatedPhrases[token] = translated;
+                uuidCounter++;
+                return token;
+            });
         });
 
-        // --- PASS 2: STANDARD WORD PASS ---
-        doc.terms().forEach((term) => {
-            if (term.has('#Translated')) return;
+        // --- PASS 2: THE ORACLE (Tagging) ---
+        // Runs cleanly on the line, extracting exact character offsets for grammar matching
+        const doc = nlp(nativeLine);
+        const termsData = doc.terms().json({ offset: true });
 
-            let rawText = term.text();
-            let normal = term.text('normal');
-            if (!normal) return;
+        // --- PASS 3: NATIVE TOKENIZER ---
+        // Split natively by word boundaries to perfectly isolate and protect punctuation
+        const chunks = nativeLine.split(/([a-zA-Z\u00C0-\u024F0-9_]+(?:['’\-\u2013][a-zA-Z\u00C0-\u024F0-9_]+)*)/);
+        
+        let charIndex = 0;
 
-            // 1. SILENCE GHOST WORDS
-            if (rawText.trim() === '') {
-                term.tag('#Translated');
-                return;
+        for (let i = 0; i < chunks.length; i++) {
+            const chunk = chunks[i];
+            if (!chunk) continue;
+
+            // Even indices are non-words (punctuation, spaces, brackets, em-dashes)
+            if (i % 2 === 0) {
+                charIndex += chunk.length;
+                continue;
             }
 
-            // 2. SUFFIX PRESERVER
+            const originalWord = chunk;
+            const wordStart = charIndex;
+            const wordEnd = charIndex + originalWord.length;
+
+            // 1. Re-inject Multi-words
+            if (translatedPhrases[originalWord]) {
+                chunks[i] = translatedPhrases[originalWord];
+                charIndex += chunk.length;
+                continue;
+            }
+
+            // 2. Skip purely numeric strings
+            if (/^[0-9]+$/.test(originalWord)) {
+                charIndex += chunk.length;
+                continue;
+            }
+
+            // 3. Query the Oracle using overlapping string positions
+            const overlappingTerms = termsData.filter(t => {
+                if (!t.offset) return false;
+                const tStart = t.offset.start;
+                const tEnd = t.offset.start + t.offset.length;
+                return Math.max(wordStart, tStart) < Math.min(wordEnd, tEnd);
+            });
+
+            const tags = new Set();
+            overlappingTerms.forEach(t => {
+                if (t.terms) {
+                    t.terms.forEach(sub => {
+                        if (sub.tags) sub.tags.forEach(tag => tags.add(tag));
+                    });
+                } else if (t.tags) {
+                    t.tags.forEach(tag => tags.add(tag));
+                }
+            });
+
+            const mockTerm = { has: (tag) => tags.has(tag.replace(/^#/, '')) };
+
+            // 4. Suffix Preserver
             let suffix = '';
-            const wordWithoutPunctuation = rawText.replace(/[^a-zA-Z'’]/g, '');
-            const suffixMatch = wordWithoutPunctuation.match(/(['’](s|re|ll|d|ve|m))$/i);
+            let rootWord = originalWord;
+            const suffixMatch = originalWord.match(/(['’](s|re|ll|d|ve|m))$/i);
             
             if (suffixMatch) {
                 suffix = suffixMatch[1]; 
-                
-                // CRITICAL FIX: Because compromise.js morphs smart quotes to straight quotes, 
-                // regex matching the suffix against `normal` will silently fail.
-                // We securely slice the base word from our raw extracted string instead.
-                const baseWord = wordWithoutPunctuation.slice(0, -suffix.length);
-                normal = baseWord.toLowerCase();
+                rootWord = originalWord.slice(0, -suffix.length);
             }
 
-            // Attempt lookup and replacement
-            if (brainDictionary[normal]) {
-                let replacement = getReplacement(term, brainDictionary[normal]);
+            const normalRoot = rootWord.toLowerCase();
+
+            // 5. Dictionary Lookup
+            if (brainDictionary[normalRoot]) {
+                let replacement = getReplacement(mockTerm, brainDictionary[normalRoot]);
                 if (replacement) {
                     replacement += suffix; 
-                    const casedReplacement = matchCasing(rawText, replacement);
-                    term.replaceWith(casedReplacement, { keepTags: true, keepCase: false });
-                    term.tag('#Translated');
-                    return;
+                    chunks[i] = matchCasing(originalWord, replacement);
+                    charIndex += chunk.length;
+                    continue; 
                 }
             }
 
-            // Auditing: Wrap untranslated words in brackets, leaving punctuation untouched
-            if (!rawText.includes('[')) {
-                const bracketedText = rawText.replace(/([a-zA-Z]+(?:['’][a-zA-Z]+)*)/, '[$1]');
-                term.replaceWith(bracketedText, { keepTags: true });
-            }
-            missingWords.add(normal);
-        });
+            // 6. Missing Words Pipeline (Wraps exact word natively, dropping punctuation outside)
+            chunks[i] = `[${originalWord}]`;
+            missingWords.add(normalRoot);
+            charIndex += chunk.length;
+        }
 
-        return doc.text();
+        return chunks.join('');
     });
 
-    // Mute the missing words tracker during Vitest execution to keep the terminal clean
     if (missingWords.size > 0 && process.env.NODE_ENV !== 'test') {
         console.log(`\n⚠️  Missing Words Tracker (${missingWords.size} untranslated words):`);
         console.log(Array.from(missingWords).sort().join(', '));
@@ -145,7 +188,6 @@ export function transcribe(text, brainDictionary) {
 // 3. CLI EXECUTION & REPORTING
 // ============================================================================
 
-// Only execute the script logic if run directly from the terminal (e.g., node scripts/translator.js)
 if (process.argv[1] === fileURLToPath(import.meta.url)) {
     const args = process.argv.slice(2);
     const inputFile = args[0];
