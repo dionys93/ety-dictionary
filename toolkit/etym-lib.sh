@@ -1166,7 +1166,7 @@ etym-lint() {
 
 
 etym-flatten() {
-    local TARGET_DIR="${1:-$DICT_DIR}"
+    local TARGET_DIR=""
     local FORMAT="csv" # default to csv
     local OUT_FILE=""
 
@@ -1176,9 +1176,20 @@ etym-flatten() {
             --csv) FORMAT="csv"; shift ;;
             --jsonl) FORMAT="jsonl"; shift ;;
             -o|--output) OUT_FILE="$2"; shift 2 ;;
-            *) TARGET_DIR="$1"; shift ;;
+            *) 
+                # If it's not a flag, assume it's the target directory
+                if [[ -z "$TARGET_DIR" ]]; then
+                    TARGET_DIR="$1"
+                fi
+                shift 
+                ;;
         esac
     done
+
+    # Fallback to default dictionary directory if none was provided
+    if [[ -z "$TARGET_DIR" ]]; then
+        TARGET_DIR="$DICT_DIR"
+    fi
 
     # Default output paths if not specified
     if [ -z "$OUT_FILE" ]; then
