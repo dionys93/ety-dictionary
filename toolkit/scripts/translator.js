@@ -65,71 +65,91 @@ const matchCasing = (original, replacement) => {
 // ============================================================================
 
 export function transcribe(text, brainDictionary) {
-    text = text.normalize('NFC'); 
+    text = text.normalize('NFC');
     const missingWords = new Set();
+
+    // Normalize curly apostrophes to straight so brain keys always match
+    text = text.replace(/[\u2018\u2019]/g, "'");
 
     const lines = text.split('\n');
 
     const transcribedLines = lines.map(line => {
         if (!line.trim()) return line;
 
-        // 1. Apply Hardcoded Overrides First
+        // 1. Apply hardcoded overrides using placeholders to prevent double-processing
+        const placeholders = {};
+        let placeholderIndex = 0;
         let processedLine = line;
+
         Object.keys(HARDCODED_OVERRIDES).forEach(key => {
-            // Replace exact matches, preserving surrounding punctuation boundaries
-            const regex = new RegExp(`\\b${key.replace(/['’]/g, "['’]")}\\b`, 'gi');
+            const regex = new RegExp(`(?<![a-zA-Z])${key.replace(/['']/g, "[''']")}(?![a-zA-Z])`, 'g');
             processedLine = processedLine.replace(regex, (match) => {
-                return matchCasing(match, HARDCODED_OVERRIDES[key]);
+                const placeholder = `\x00PLACEHOLDER${placeholderIndex++}\x00`;
+                placeholders[placeholder] = matchCasing(match, HARDCODED_OVERRIDES[key]);
+                return placeholder;
             });
         });
 
-        // 2. Dumb Tokenizer (Mathematically isolates words from punctuation)
-        const chunks = processedLine.split(/([a-zA-Z\u00C0-\u024F]+(?:['’][a-zA-Z\u00C0-\u024F]+)*)/);
+        // 2. Tokenize and translate
+        const chunks = processedLine.split(/([a-zA-Z\u00C0-\u024F]+(?:[''][a-zA-Z\u00C0-\u024F]+)*)/);
 
         for (let i = 0; i < chunks.length; i++) {
             const chunk = chunks[i];
-            if (!chunk) continue;
-
-            // Even indices are strictly non-words (commas, em-dashes, spaces, brackets). Skip them.
-            if (i % 2 === 0) continue;
+            if (!chunk || i % 2 === 0) continue;
 
             const originalWord = chunk;
             const lowerWord = originalWord.toLowerCase();
 
-            // If it was already hardcoded, skip it
-            if (Object.values(HARDCODED_OVERRIDES).map(v => v.toLowerCase()).includes(lowerWord)) {
-                continue;
-            }
-
-            // 3. Brute-Force Suffix Stripper
+            // 3. Suffix stripper — now includes n't
             let suffix = '';
             let rootWord = lowerWord;
-            const suffixMatch = lowerWord.match(/(['’](s|re|ll|d|ve|m))$/);
-            
-            if (suffixMatch) {
-                suffix = suffixMatch[1]; 
-                rootWord = lowerWord.slice(0, -suffix.length);
-            }
 
-            // 4. Dictionary Lookup
-            const entry = brainDictionary[rootWord];
-            if (entry) {
-                // Grab the first available part of speech blindly
-                let replacement = entry.Verb || entry.Noun || entry.Pronoun || Object.values(entry)[0];
-                
-                if (replacement) {
-                    replacement += suffix; 
-                    chunks[i] = matchCasing(originalWord, replacement);
-                    continue; 
+            const negMatch = lowerWord.match(/n['']t$/);
+            if (negMatch) {
+                suffix = negMatch[0];
+                rootWord = lowerWord.slice(0, -suffix.length);
+                // 'won't' -> root is 'wo', map back to 'will'
+                if (rootWord === 'wo') rootWord = 'will';
+                if (rootWord === 'ca') rootWord = 'can';
+            } else {
+                const suffixMatch = lowerWord.match(/(['](s|re|ll|d|ve|m))$/);
+                if (suffixMatch) {
+                    suffix = suffixMatch[1];
+                    rootWord = lowerWord.slice(0, -suffix.length);
                 }
             }
 
-            // 5. Missing Words Tracker
+            // 4. Dictionary lookup
+            const entry = brainDictionary[rootWord];
+            if (entry) {
+                let replacement = entry.Verb || entry.Copula || entry.Modal || 
+                                  entry.Auxiliary || entry.Noun || entry.Pronoun || 
+                                  Object.values(entry)[0];
+                if (replacement) {
+                    // For n't, use the negated form from the brain if it exists
+                    if (negMatch && brainDictionary[rootWord + "n't"]) {
+                        const negEntry = brainDictionary[rootWord + "n't"];
+                        replacement = negEntry.Modal || negEntry.Verb || 
+                                      negEntry.Copula || Object.values(negEntry)[0];
+                        suffix = ''; // negated form already includes the negation
+                    } else {
+                        replacement += suffix;
+                    }
+                    chunks[i] = matchCasing(originalWord, replacement);
+                    continue;
+                }
+            }
+
             chunks[i] = `[${originalWord}]`;
             missingWords.add(rootWord);
         }
 
-        return chunks.join('');
+        // 5. Restore placeholders
+        let result = chunks.join('');
+        Object.keys(placeholders).forEach(placeholder => {
+            result = result.replace(placeholder, placeholders[placeholder]);
+        });
+        return result;
     });
 
     if (missingWords.size > 0 && process.env.NODE_ENV !== 'test') {
