@@ -1,0 +1,803 @@
+Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
+=================================================================
+📝 [1mh/hi.txt[0m
+   [31m[ERROR][0m Missing or malformed POS tag '()'
+
+-----------------------------------------------------------------
+LINTING COMPLETE
+-----------------------------------------------------------------
+Files Scanned:   3441
+Fatal Errors:    [31m0[0m
+Standard Errs:   [31m1[0m
+Warnings:        [33m0[0m
+
+VERB CONJUGATION COVERAGE
+-----------------------------------------------------------------
+Using -s -d -ing:  1502
+Non-standard:      453
+
+  Non-standard verb stanzas:
+    t/tunnel.txt                    tonele                -s -d toneling
+    t/tree.txt                      trie                  -s -d trying
+    t/terminate.txt                 têrminait           -s -ed -ing
+    t/terror.txt                    terrifae              -s -d terrifyhing
+    t/table.txt                     tabulait              -s -ed -ing
+    t/tear.txt                      teire                 -s tór torn teiring
+    t/torpedo.txt                   torpídoe            -s -d -ouing
+    t/throw.txt                     þroe                 -s þreu þreon þrouing
+    t/throw.txt                     ovreþroe             -s ovreþreu ovreþreon ovreþrouing
+    t/toe.txt                       toe                   -s -d touing
+    t/translate.txt                 translait             -s -ed -ing
+    t/try.txt                       trîe                -s -d tryhing
+    t/tell.txt                      telle                 -s tóld -ing
+    t/tie.txt                       tîe                 -s -d tyhing
+    t/tee.txt                       teie                  -s -d teying
+    t/transit.txt                   transit               -s -ed -ing
+    a/audit.txt                     audit                 -s -ed -ing
+    a/antique.txt                   antique               -ícs -d -ing
+    a/antique.txt                   antiquait             -s -ed -ing
+    a/alien.txt                     âlienait            -s -ed -ing
+    a/allocate.txt                  allocait              -s -ed -ing
+    a/arise.txt                     arîse               -s arose arisan -ing
+    a/anger.txt                     ângre               -s -d ângaring
+    a/accompany.txt                 accompanie            -s -d accompanying
+    a/alight.txt                    alîhte              -s alit -ing
+    a/attempt.txt                   attempte              attemps -d -ing
+    a/apply.txt                     applîe              -s -d -yhing
+    a/annoy.txt                     annoie                -s -d annoying
+    a/agree.txt                     agríe               -s -d -ÿing
+    a/accept.txt                    accepte               acceps -d -ing
+    a/animate.txt                   animait               -s -ed -ing
+    a/amalgam.txt                   amàlgamait          -s -ed -ing
+    a/accumulate.txt                accúmulait          -s -ed -ing
+    a/attract.txt                   attracte              attracs -d -ing
+    a/abbreviate.txt                abbrieviait           -s -ed -ing
+    a/amputate.txt                  amputait              -s -ed -ing
+    a/allay.txt                     allaie                -s -d allaying
+    a/apparel.txt                   appârele            -s -d appâreling
+    a/act.txt                       acte                  acs -d -ing
+    a/act.txt                       activait              -s -ed -ing
+    a/alleviate.txt                 allieviait            -s -ed -ing
+    a/article.txt                   artïculait          -s -ed -ing
+    a/ally.txt                      allîe               -s -d -yhing
+    a/associate.txt                 assoçiait            -s -ed -ing
+    a/answer.txt                    ansere                -s -d ansiring
+    a/architect.txt                 architecte            -cs -d -ing
+    a/appreciate.txt                appríçiait         to príçiait -s -d -ing
+    a/amplify.txt                   amplifae              -s -d -fyhing
+    i/instruct.txt                  instructe             instrucs -d -ing
+    i/intense.txt                   intènsifae          -s -d -fyhing
+    i/innervate.txt                 innervait             -s -ed -ing
+    i/indicate.txt                  indicait              -s -ed -ing
+    i/invent.txt                    inventorie            -s -d inventorying
+    i/inhibit.txt                   inhibit               -s -ted -ting
+    i/investigate.txt               invèstigait         -s -ed -ing
+    i/imply.txt                     implîe              -s -d -yhing
+    i/incorporate.txt               incórporait         -s -ed -ing
+    i/ingratiate.txt                ingrâçiait        -s -ed -ing
+    i/innovate.txt                  innovait              -s -ed -ing
+    i/idea.txt                      îdiait              -s -ed -ing
+    i/invite.txt                    vîe                 -s -d vŷing
+    i/infect.txt                    infecte               infecs -d -ing
+    i/initiate.txt                  iniçiait             -s -ed -ing
+    i/impact.txt                    impacte               impacs -d -ing
+    i/implicate.txt                 implicait             -s -ed -ing
+    r/root.txt                      r̃oute               -s -d -ing / to rôte -s -d -ing
+    r/rare.txt                      rairifae              -s -d -fyhing
+    r/resurrect.txt                 resorecte             resorecs -d -ing
+    r/rid.txt                       ruide                 -s ruid -ing
+    r/reciprocate.txt               recïprocait         -s -ed -ing
+    r/refract.txt                   refracte              refracs -d -ing
+    r/reflect.txt                   reflecte              reflecs -d -ing
+    r/regulate.txt                  regulait              -s -ed -ing
+    r/react.txt                     riacte                riacs -d -ing
+    r/renew.txt                     renoue                -s -d -ïng
+    r/ride.txt                      rîde                -s rode ridan -ing
+    r/run.txt                       rone                  -s ran ron -ing
+    r/repudiate.txt                 repúdiait           -s -ed -ing
+    r/restrict.txt                  restricte             restrics -d -ing
+    r/reject.txt                    rejecte               rejecs -d -ing
+    r/replicate.txt                 replicait             -s -ed -ing
+    r/reply.txt                     replîe              -s -d -yhing
+    r/row.txt                       reoe                  -s -d reouing
+    r/read.txt                      riede                 -s raid -ing
+    r/ready.txt                     raidie                -s -d raidying
+    r/renovate.txt                  renovait              -s -ed -ing
+    r/recuperate.txt                recouperait           -s -ed -ing
+    r/radiate.txt                   râdiait             -s -ed -ing
+    r/rehabilitate.txt              riabilitait           -s -ed -ing
+    r/respond.txt                   responde              
+    r/rely.txt                      relîe               -s -d -yhing
+    r/review.txt                    revue                 -s -d revuing
+    r/repatriate.txt                repâtriait          -s -ed -ing
+    g/go.txt                        goe                   goes uaint gaon gouing
+    g/gravitate.txt                 gravitait             -s -ed -ing
+    g/give.txt                      guive                 -s gâve guivan -ing
+    g/gutter.txt                    gotre                 -s -d gotaring
+    g/glimmer.txt                   glimere               -s -d glimaring
+    g/glitter.txt                   glitre                -s -d glitaring
+    g/guarantee.txt                 gairantíe           -s -d -ýing
+    g/gray.txt                      graie                 -s -d graying
+    g/grind.txt                     grînde              -s graund -ing
+    g/grace.txt                     gratifae              -s -d -fyhing
+    g/gyrate.txt                    gŷrait              -s -ed -ing
+    g/grow.txt                      groe                  -s grou grone grouing
+    g/graduate.txt                  grad̦uait            
+    g/glow.txt                      gloe                  -s -d glouing
+    g/get.txt                       gait                  -s gát gátan gaiting
+    f/fluctuate.txt                 flucțuait           -s -ed -ing
+    f/fall.txt                      falle                 -s fell fallen -ing
+    f/fixate.txt                    fixait                -s -ed -ing
+    f/find.txt                      fînde               -s faund -ing
+    f/fight.txt                     foihte                -s fauht -ing
+    f/fascinate.txt                 facinait              -s -ed -ing
+    f/forget.txt                    forgait               -s forgat forgatan -ing
+    f/follow.txt                    folloe                -s -d -uing
+    f/feed.txt                      fiede                 -s fed -ing
+    f/fantasy.txt                   fancie                -s -d fancying
+    f/fry.txt                       frîe                -s -d fryhing
+    f/flutter.txt                   flotre                -s -d flotaring
+    f/flay.txt                      flaie                 -s -d flaying
+    f/file.txt                      fîle                -s -d fîeling
+    f/file.txt                      fîle                -s -d fîaling
+    f/forgive.txt                   forguive              -s forgâve forguivan -ing
+    f/freeze.txt                    friese                -s frose frosen -ing
+    f/frustrate.txt                 frustrait             -s -ed -ing
+    f/fray.txt                      fraie                 -s -d fraying
+    f/fly.txt                       floihe                -s flou flone -ing
+    f/flatter.txt                   flatre                -s -d flatering
+    f/flee.txt                      flihe                 -s fled -ing
+    f/ferry.txt                     ferrie                -s -d ferrying
+    f/feel.txt                      fiele                 -s felt -ing
+    l/lie.txt                       láie                -s lay laine láying
+    l/lie.txt                       lîe                 -s -d lyhing
+    l/lay.txt                       laie                  -s -d laying
+    l/light.txt                     loihte                -s liht -ing
+    l/lace.txt                      laçoe                -s -d -uing
+    l/leave.txt                     lievfe                -s laift -ing
+    l/lend.txt                      lende                 -s laint -ing
+    l/luminate.txt                  luminait              -s -ed -ing
+    l/liquid.txt                    liqüidait           -s -ed -ing
+    l/let.txt                       lete                  -s lait -ing
+    l/lunch.txt                     lonc̃e               -s -ed -ing
+    l/liberate.txt                  liberait              -s -ed -ing
+    l/lead.txt                      lide                  -s laid -ing
+    l/lead.txt                      leade                 -s lead -ing
+    l/limit.txt                     limit                 -s -ed -ing
+    l/lose.txt                      louse                 -s lòst -ing
+    l/low.txt                       hloe                  -s -d hlouing
+    l/locate.txt                    locait                -s -ed -ing
+    o/ordinate.txt                  ordinait              -s -ed -ing
+    o/occupy.txt                    occupae               -s -d -yhing
+    o/overthrow.txt                 overþroe             -s overþrou overþroen overþrouing
+    o/object.txt                    objecte               objecs -d -ing
+    o/object.txt                    objectifae            -s -d objectifyhing
+    o/operate.txt                   opperait              -s -ed -ing
+    o/office.txt                    offiçiait            -s -ed -ing
+    h/horrify.txt                   horrifae              -s -d horrifyhing
+    h/hurt.txt                      hurte                 -s hurt -ing
+    h/hide.txt                      hîde                -s hid hidan -ing
+    h/honey.txt                     honie                 -s -d honying
+    h/hurry.txt                     hêrie               -s -d hêrying
+    h/hear.txt                      hyre                  -s hêd hyring
+    h/hold.txt                      hólde                -s held -ing
+    h/hunger.txt                    hongre                -s -d hongaring
+    h/hammer.txt                    hamere                -s -d hamiring
+    h/hew.txt                       heue                  -s -d heune -ing
+    e/evacuate.txt                  evacuait              -s -ed -ing
+    e/elicit.txt                    ellicit               -s -ed -ing
+    e/erupt.txt                     eropte                -ps -d -ing
+    e/embody.txt                    embodie               -s -d embodying
+    e/elect.txt                     electe                elecs -d -ing
+    e/effect.txt                    effecte               effecs -d -ing
+    e/embargo.txt                   embárgoe            -s -d -uing
+    e/eye.txt                       eaie                  -s -d eaying
+    e/eye.txt                       oîe                 -s -d oŷing
+    e/evaluate.txt                  evàluait            -s -ed -ing
+    e/enjoy.txt                     enjoie                -s -d enjoying
+    e/exit.txt                      exit                  -s -ed -ing
+    e/educate.txt                   eḑucait             -s -ed -ing
+    e/echo.txt                      ecoe                  -s -d -uing
+    e/envy.txt                      envie                 -s -d envying
+    e/evict.txt                     evicte                evics -d -ing
+    e/erect.txt                     erecte                erecs -d -ing
+    e/exemplify.txt                 exèmplifae          -s -d -fyhing
+    e/estimate.txt                  estimait              -s -ed -ing
+    e/ensue.txt                     ensúe               -s -d ensúing
+    e/expatiate.txt                 expâçiait          -s -ed -ing
+    e/edifice.txt                   edifae                -s -d -fyhing
+    e/enervate.txt                  enervait              -s -ed -ing
+    e/emulate.txt                   emulait               -s -ed -ing
+    e/emancipate.txt                emàncipait          -s -ed -ing
+    e/elevate.txt                   elevait               -s -ed -ing
+    b/borrow.txt                    bòroe               -s -d -uing
+    b/bat.txt                       batte                 bats bat -ing
+    b/bet.txt                       bete                  -s bet -ing
+    b/buy.txt                       byhe                  -s boht byhing
+    b/buoy.txt                      bouie                 -s -d bouying
+    b/beat.txt                      biete                 -s biet bietan -ing
+    b/bite.txt                      bîte                -s bit bitan -ing
+    b/bind.txt                      bînde               -s baund -ing
+    b/bend.txt                      bende                 -s bent -ing
+    b/benefit.txt                   bènefit             -s -ed -ing
+    b/baby.txt                      bâbie               -s -d bâbying
+    b/bid.txt                       bïde                -s bid -ing
+    b/begin.txt                     biguin                -s begane begon -ing
+    b/busy.txt                      bisie                 -s -d bisying
+    b/betray.txt                    betraie               -s -d betraying
+    b/battle.txt                    battle                -s -d batteling
+    b/become.txt                    become                -s becâme becom -ing
+    b/bow.txt                       bôe                 -s -d bôuing
+    b/blow.txt                      bloe                  -s blou blone blouing
+    b/bear.txt                      beire                 -s bór born beiring
+    b/burn.txt                      bêne                -s bênt -ing
+    b/bleed.txt                     bliede                -s bled -ing
+    b/bleed.txt                     blodie                -s -d blodying
+    b/bellow.txt                    beloe                 -s -d -uing
+    b/balloon.txt                   baloune               -s -d ing
+    b/burst.txt                     burste                -s burst -ing
+    b/bank.txt                      bâncropte           bâncrops -d -ing
+    b/bury.txt                      berie                 -s -d berying
+    b/bury.txt                      bouroe                -s -d -uing
+    p/prey.txt                      preie                 -s -d preying
+    p/person.txt                    personnifae           -s -d personnifyhing
+    p/pillow.txt                    pilloe                -s -d -ouing
+    p/parlay.txt                    parleie               -s -d parleying
+    p/party.txt                     partie                -s -d partying
+    p/posit.txt                     posit                 -s -ed -ing
+    p/pay.txt                       paie                  -s -d paying
+    p/plow.txt                      plôe                -s -d plôuing
+    p/pure.txt                      púrifae             -s -d -fyhing
+    p/proove.txt                    prouve                -s -d -n -ing
+    p/pole.txt                      pole                  
+    p/parody.txt                    pârodie             -s -d pârodying
+    p/pacify.txt                    pacifae               -s -d pacifyhing
+    p/put.txt                       pûte                -s pût -ing
+    p/prophet.txt                   prophiçae           -s -d prophicyhing
+    p/precipitate.txt               precïpitait         -s -ed -ing
+    p/populate.txt                  populait              -s -ed -ing
+    p/pry.txt                       prîe                -s -d pryhing
+    p/pummel.txt                    pomle                 -s -d pomeling
+    p/promise.txt                   prómesse            -s -d -iꬻ
+    p/pray.txt                      praie                 -s -d praying
+    p/parley.txt                    párlie              -s -d -ying
+    p/purge.txt                     expurgait             -s -ed -ing
+    p/potent.txt                    potençiait           -s -ed -ing
+    p/perish.txt                    perișe              
+    s/saw.txt                       sahe                  -s -d sahing
+    s/shear.txt                     siere                 -s -d/seorn siering
+    s/surge.txt                     sortie                -s -d sortying
+    s/simmer.txt                    simere                -s -d simiring
+    s/spray.txt                     spraie                -s -d -aying
+    s/steal.txt                     stiale                -s stól stolen -ing
+    s/slide.txt                     slîde               -s slid -ing
+    s/spill.txt                     spille                -s spilt -ing
+    s/situate.txt                   sițuait             -s -ed -ing
+    s/shoot.txt                     seoute                -s siot -ing
+    s/swear.txt                     sueire                -s suór suorn sueiring
+    s/save.txt                      saîftie             -s -d saîftying
+    s/spread.txt                    sprede                -s spred -ing
+    s/specular.txt                  speculait             -s -ed -ing
+    s/stand.txt                     stande                -s stôd -ing
+    s/sleep.txt                     sliepe                -s slaipt -ing
+    s/smell.txt                     smelle                -s smelt -ing
+    s/stammer.txt                   stamere               -s -d stamering
+    s/set.txt                       sete                  -s set -ing
+    s/speed.txt                     spiede                -s sped -ing
+    s/satisfy.txt                   satisfae              -s -d -fyhing
+    s/simple.txt                    simplifae             -s -d simplifyhing
+    s/suspect.txt                   sospecte              sospecs -d -ing
+    s/stride.txt                    strîde              -s strode stridan -ing
+    s/swallow.txt                   suolloe               -s -d -uing
+    s/sputter.txt                   sputre                -s -d sputaring
+    s/slay.txt                      slaie                 -s -d slaying
+    s/sow.txt                       soe                   -s -d sone -uing
+    s/specific.txt                  specifae              -s -d specifyhing
+    s/subject.txt                   sobjecte              sobjecs -d -ing
+    s/say.txt                       saie                  sais said saying
+    s/slough.txt                    slôe                -s -d slôuing
+    s/stagnate.txt                  stagnait              -s -ed -ing
+    s/stutter.txt                   stutre                -s -d stutaring
+    s/shine.txt                     scîne               -s sione -ing
+    s/sweep.txt                     suiepe                -s suaipt -ing
+    s/signify.txt                   signifae              -s -d signifyhing
+    s/show.txt                      seoe                  -s -d seone seouing
+    s/separate.txt                  separait              -s -ed -ing
+    s/stead.txt                     staidie               -s -d staidying
+    s/slow.txt                      sloe                  -s -d slouing
+    s/space.txt                     spâce-oauc          -s -ued -uing
+    s/species.txt                   spíçiait           -s -ed -ing
+    s/shimmer.txt                   scimere               -s -d scimiring
+    s/snow.txt                      snoe                  -s -d snouing
+    s/shed.txt                      scede                 -s sced -ing
+    s/swim.txt                      suimme                -s suam suom -ing
+    s/spend.txt                     spende                -s spent -ing
+    s/shuffle.txt                   sioffle               -s -d sioffeling
+    s/see.txt                       sihe                  -s sah sine -ing
+    s/saturate.txt                  sațurait            -s -ed -ing
+    s/sew.txt                       sóue                sóus sóud sóun sóuing
+    s/script.txt                    scripte               scrips -d -ing
+    s/sugar.txt                     șugre               -s -d șugaring
+    s/spy.txt                       spîe                -s -d spyhing
+    s/solicit.txt                   sollicit              -s -ed -ing
+    s/solicit.txt                   sollicitait           -s -ed -ing
+    s/scuffle.txt                   scoffle               -s -d scoffeling
+    s/subjugate.txt                 sobjogait             -s -ed -ing
+    s/stay.txt                      staie                 -s -d staying
+    s/squirrel.txt                  scuirole              -s -d scuiroling
+    s/strangle.txt                  strângulait         -s -ed -ing
+    s/sorrow.txt                    sòroe               -s -d -uing
+    s/stable.txt                    stâbilyse           -s -d -iꬻ
+    n/narrate.txt                   nârait              -s -ed -ing
+    n/nauseate.txt                  nausïait            to naușiait -s -ed -ing
+    n/narrow.txt                    nâroe               -s -d -uing
+    n/neighbor.txt                  neiber                neibres neibred neibering
+    n/negotiate.txt                 negoçiait            -s -ed -ing
+    n/navigate.txt                  navigait              -s -ed -ing
+    d/deteriorate.txt               detíriorait         -s -ed -ing
+    d/denigrate.txt                 denigrait             -s -ed -ing
+    d/district.txt                  dïstricte           dïstrics -d -ing
+    d/deny.txt                      denîe               -s -d denyhing
+    d/distract.txt                  destracte             destracs -d -ing
+    d/deity.txt                     deïfae              -s -d -fyhing
+    d/delay.txt                     delaie                -s -d delaying
+    d/diversify.txt                 devêrsifae          -s -d -fyhing
+    d/disrupt.txt                   disropte              disrops -d -ing
+    d/donate.txt                    donait                -s -ed -ing
+    d/direct.txt                    directe               direcs -d -ing
+    d/draw.txt                      drahe                 -s drou draon drahing
+    d/differ.txt                    diffrençiait         -s -ed -ing
+    d/demonstrate.txt               demonstrait           -s -ed -ing
+    d/devastate.txt                 devastait             -s -ed -ing
+    d/deduct.txt                    deducte               deducs -d -ing
+    d/dictate.txt                   dictait               -s -ed -ing
+    d/do.txt                        dou                   dus did don douing don't dusn't didn't
+    d/dream.txt                     drieme                -s -d/draimpt -ing
+    d/destruct.txt                  destructe             destrucs -d -ing
+    d/deal.txt                      diele                 -s dailt -ing
+    d/destroy.txt                   destroie              -s -d -oying
+    d/display.txt                   desplaie              -s -d desplaying
+    d/divvy.txt                     divie                 -s -d divying
+    d/dive.txt                      dîve                -s doave dîved -ing
+    d/dry.txt                       drîe                -s -d dryhing
+    d/degenerate.txt                degenerait            -s -ed -ing
+    d/dominate.txt                  dominait              -s -ed -ing
+    w/withdraw.txt                  uiþdrahe             -s uiþdrou uiþdraon uiþdrahing
+    w/withstand.txt                 uiþstande            -s uiþstôd -ing
+    w/weary.txt                     uírie               -s -d uírying
+    w/write.txt                     r̃aite               -s r̃oat r̃itan -ing
+    w/weep.txt                      uiepe                 -s uaipt -ing
+    w/while.txt                     uîle                -s -d uîeling
+    w/water.txt                     ouete                 -s ouet -ing
+    w/withhold.txt                  uiþholde             -s uiþheld -ing
+    w/wolf.txt                      uôlfe;              to oulfe -s -d -ing
+    w/wed.txt                       ouede                 -s oued -ing
+    w/worry.txt                     uêrie               -s -d uêrying
+    w/wind.txt                      uînde               -s uaund -ing
+    w/weave.txt                     uieve                 -s uove uoven -ing
+    w/wallow.txt                    uáloe               -s -d -uing
+    u/unite.txt                     únifae              -s -d -fyhing
+    u/umbra.txt                     adombrait             -s -ed -ing
+    u/understand.txt                ondrestande           -s ondrestôd -ing
+    u/undergo.txt                   ondregoe              -s onderoaint ondregaon ondregouing
+    j/journey.txt                   journie               -s -d journying
+    j/jock.txt                      jáchie              -s -d jáchying
+    m/machinate.txt                 macanait              -s -ed -ing
+    m/moderate.txt                  moderait              -s -ed -ing
+    m/mean.txt                      miene                 -s maint -ing
+    m/menstruate.txt                menstrait             -s -ed -ing
+    m/mutiny.txt                    mútinie             -s -d mútinying
+    m/meet.txt                      miete                 -s mait -ing
+    m/miscarry.txt                  miscârie            -s -d miscârying
+    m/militia.txt                   militait              -s -ed -ing
+    m/marry.txt                     mârie               -s -d mârying
+    m/mortify.txt                   mortifae              -s -d mortifyhing
+    m/mow.txt                       moue                  -s -d mouing
+    m/model.txt                     modle                 -s -d modeling
+    m/meditate.txt                  meditait              -s -ed -ing
+    m/motivate.txt                  mótivait            -s -ed -ing
+    m/mystery.txt                   mystifae              -s -d mystifyhing
+    m/manipulate.txt                manïpulait          -s -ed -ing
+    m/modify.txt                    modifae               -s -d -fyhing
+    m/medicate.txt                  medicait              -s -ed -ing
+    m/module.txt                    mod̦ulait            -s -ed -ing
+    v/vile.txt                      vilifae               -s -d -fyhing
+    v/vegetable.txt                 vegetait              -s -ed -ing
+    v/value.txt                     valuait               -s -ed -ing
+    v/view.txt                      vue                   -s -d vuing
+    v/valet.txt                     valeie                -s -d valeying
+    v/vaccine.txt                   vaccinait             -s -ed -ing
+    v/vary.txt                      vâriait             -s -ed -ing
+    v/vary.txt                      vârie               -s -d vârying
+    v/violate.txt                   vîolait             -s -ed -ing
+    v/vie.txt                       vîe                 -s -d -hing
+    v/vow.txt                       vôe                 -s -d vôuing
+    v/vacate.txt                    vâcait              -s -ed -ing
+    y/yellow.txt                    yeloe                 -s -d yelouing
+    k/keep.txt                      chiepe                -s caipt -ing
+    k/know.txt                      gnoe                  -s gnou gnone gnouing
+    k/knee.txt                      nie                   -s -d nying
+    k/kneel.txt                     niele                 -s nailt -ing
+    q/queue.txt                     cúe                 -s -d cúing
+    q/quit.txt                      qüit                qüits qüit qüitting
+    q/quarrel.txt                   quarele               -s -d quareling
+    c/chicken.txt                   c̃icane              aut -s -d -ing
+    c/convey.txt                    conveie               -s -d -eying
+    c/cast.txt                      caste                 -s cast -ing
+    c/congregate.txt                congregait            -s -ed -ing
+    c/commodify.txt                 commodifae            -s -d -yhing
+    c/compensate.txt                compensait            -s -ed -ing
+    c/cooperate.txt                 cuoperait             -s -ed -ing
+    c/compact.txt                   compacte              compacs -d -ing
+    c/curtsy.txt                    courtsie              -s -d courtsying
+    c/certain.txt                   certifae              -s -d certifyhing
+    c/carry.txt                     cârie               -s -d cârying
+    c/curse.txt                     cusse                 
+    c/contract.txt                  contracte             contracs -d -ing
+    c/contract.txt                  contracte             contracs -d -ing
+    c/consolidate.txt               consolidait           -s -ed -ing
+    c/crow.txt                      croe                  -s -d -uing
+    c/cue.txt                       cúe                 -s -d cúing
+    c/congratulate.txt              congraţulait         -s -ed -ing
+    c/construct.txt                 constructe            construcs -d -ing
+    c/complicate.txt                complicait            -s -ed -ing
+    c/cleave.txt                    clieve                -s claift -ing
+    c/crucify.txt                   crucifae              -s -d crucifyhing
+    c/conversate.txt                cónversait          -s -ed -ing
+    c/correct.txt                   correcte              correcs -d -ing
+    c/consolate.txt                 consolait             -s -ed -ing
+    c/chase.txt                     saçeie              -s -d saçeying
+    c/connect.txt                   connecte              connecs -d -ing
+    c/communicate.txt               comúnicait          -s -ed -ing
+    c/collaborate.txt               collaborait           -s -ed -ing
+    c/come.txt                      come                  -s câme com -ing
+    c/chew.txt                      c̃eue                -s -d c̃euing
+    c/circle.txt                    circulait             -s -ed -ing
+    c/corrupt.txt                   corropte              corrops -d -ing
+    c/castigate.txt                 castigait             -s -ed -ing
+    c/cost.txt                      còste               -s còst -ing
+    c/cry.txt                       crîe                -s -d cryhing
+    c/commiserate.txt               comïserait          -s -ed -ing
+    c/concoct.txt                   concocte              concocs -d -ing
+    c/caffeine.txt                  cafinait              -s -ed -ing
+    c/copy.txt                      copie                 -s -d copying
+    c/comply.txt                    complîe             -s -d -yhing
+    c/creep.txt                     criepe                -s craipt -ing
+    c/calculate.txt                 calculait             -s -ed -ing
+    c/choose.txt                    c̃ouse               -s c̃ose c̃osen -ing
+    c/contemplate.txt               contemplait           -s -ed -ing
+    c/convoy.txt                    convoie               -s -d -oying
+    c/conciliate.txt                conciliait            -s -ed -ing
+    c/conjugate.txt                 conjugait             -s -ed -ing
+    c/crochet.txt                   croçeie              -s -d -eying
+
+VERB STANZAS WITH (s  [possible malformed conjugation]
+-----------------------------------------------------------------
+  t/thunder.txt
+  t/thank.txt
+  t/trick.txt
+  t/track.txt
+  t/think.txt
+  t/take.txt
+  t/top.txt
+  t/tower.txt
+  t/timber.txt
+  t/temper.txt
+  t/trek.txt
+  t/tuck.txt
+  t/tank.txt
+  t/truck.txt
+  t/talk.txt
+  a/ask.txt
+  a/anchor.txt
+  a/arc.txt
+  a/ache.txt
+  a/adhere.txt
+  a/attire.txt
+  a/admire.txt
+  a/alter.txt
+  a/attack.txt
+  a/appear.txt
+  a/acquire.txt
+  i/inquire.txt
+  i/invoke.txt
+  i/interfere.txt
+  i/ink.txt
+  i/inspire.txt
+  r/risk.txt
+  r/rock.txt
+  r/rebuke.txt
+  r/refer.txt
+  r/revoke.txt
+  r/rot.txt
+  r/remark.txt
+  r/rake.txt
+  r/ring.txt
+  r/remember.txt
+  r/rack.txt
+  r/rook.txt
+  r/retire.txt
+  r/require.txt
+  r/rank.txt
+  g/gather.txt
+  g/gander.txt
+  g/gawk.txt
+  g/gear.txt
+  g/gyrate.txt
+  g/gag.txt
+  g/gut.txt
+  f/flock.txt
+  f/fake.txt
+  f/forbid.txt
+  f/fog.txt
+  f/frank.txt
+  f/fuck.txt
+  f/flower.txt
+  f/fling.txt
+  f/factor.txt
+  f/forsake.txt
+  f/frontier.txt
+  f/freak.txt
+  f/fit.txt
+  f/flounder.txt
+  f/fire.txt
+  f/flank.txt
+  f/fur.txt
+  l/lack.txt
+  l/long.txt
+  l/like.txt
+  l/lake.txt
+  l/lick.txt
+  l/link.txt
+  l/leak.txt
+  l/lock.txt
+  l/letter.txt
+  l/luck.txt
+  l/log.txt
+  l/look.txt
+  o/offer.txt
+  o/order.txt
+  o/oink.txt
+  h/hit.txt
+  h/hog.txt
+  h/hike.txt
+  h/harbor.txt
+  h/hood.txt
+  h/hover.txt
+  h/hack.txt
+  h/hook.txt
+  h/hum.txt
+  h/hire.txt
+  h/hawk.txt
+  h/hang.txt
+  e/endeavor.txt
+  e/expire.txt
+  e/empower.txt
+  e/embark.txt
+  e/enter.txt
+  e/evoke.txt
+  e/engine.txt
+  b/blur.txt
+  b/bicker.txt
+  b/brake.txt
+  b/blanket.txt
+  b/brook.txt
+  b/balk.txt
+  b/buck.txt
+  b/block.txt
+  b/buffet.txt
+  b/butter.txt
+  b/bring.txt
+  b/bother.txt
+  b/book.txt
+  b/bug.txt
+  b/break.txt
+  b/bag.txt
+  b/bike.txt
+  b/bog.txt
+  b/brick.txt
+  b/bake.txt
+  b/batter.txt
+  b/bar.txt
+  b/beg.txt
+  b/bark.txt
+  b/butcher.txt
+  b/bank.txt
+  b/bawk.txt
+  b/back.txt
+  p/park.txt
+  p/powder.txt
+  p/profit.txt
+  p/panic.txt
+  p/private.txt
+  p/provoke.txt
+  p/pick.txt
+  p/pair.txt
+  p/prosper.txt
+  p/prefer.txt
+  p/power.txt
+  p/pit.txt
+  p/plague.txt
+  p/puck.txt
+  p/putt.txt
+  p/peer.txt
+  p/peek.txt
+  p/puke.txt
+  p/poke.txt
+  p/peak.txt
+  p/pack.txt
+  p/purr.txt
+  s/sting.txt
+  s/slaughter.txt
+  s/syncronize.txt
+  s/shrink.txt
+  s/sink.txt
+  s/shriek.txt
+  s/stick.txt
+  s/shoulder.txt
+  s/sever.txt
+  s/speak.txt
+  s/sack.txt
+  s/sock.txt
+  s/shire.txt
+  s/sour.txt
+  s/sing.txt
+  s/slug.txt
+  s/surrender.txt
+  s/stun.txt
+  s/shake.txt
+  s/slumber.txt
+  s/stalk.txt
+  s/smoke.txt
+  s/shag.txt
+  s/slather.txt
+  s/squire.txt
+  s/spank.txt
+  s/snake.txt
+  s/spire.txt
+  s/shuck.txt
+  s/spook.txt
+  s/shatter.txt
+  s/sober.txt
+  s/slog.txt
+  s/stink.txt
+  s/split.txt
+  s/suffer.txt
+  s/string.txt
+  s/stack.txt
+  s/squeak.txt
+  s/strike.txt
+  s/spike.txt
+  s/scar.txt
+  s/suck.txt
+  s/spring.txt
+  s/swing.txt
+  s/stomach.txt
+  s/smirk.txt
+  s/shock.txt
+  s/stock.txt
+  s/soak.txt
+  s/shack.txt
+  s/smother.txt
+  s/sling.txt
+  s/smear.txt
+  s/stroke.txt
+  s/sneak.txt
+  s/stir.txt
+  s/stake.txt
+  s/shower.txt
+  s/spark.txt
+  s/shiver.txt
+  s/sit.txt
+  s/spin.txt
+  s/seek.txt
+  s/spit.txt
+  s/stoke.txt
+  n/nark.txt
+  n/number.txt
+  n/neuter.txt
+  n/near.txt
+  d/dog.txt
+  d/defer.txt
+  d/drink.txt
+  d/dock.txt
+  d/deter.txt
+  d/desire.txt
+  d/deposit.txt
+  d/danger.txt
+  d/drug.txt
+  d/duck.txt
+  d/differ.txt
+  d/drag.txt
+  d/deck.txt
+  d/doctor.txt
+  d/devour.txt
+  d/domineer.txt
+  d/dodder.txt
+  d/diaper.txt
+  d/dig.txt
+  w/wink.txt
+  w/wake.txt
+  w/whip.txt
+  w/whisper.txt
+  w/wring.txt
+  w/wrong.txt
+  w/wise.txt
+  w/waver.txt
+  w/win.txt
+  w/wire.txt
+  w/water.txt
+  w/wing.txt
+  w/work.txt
+  w/walk.txt
+  w/wonder.txt
+  w/weather.txt
+  w/wander.txt
+  j/joke.txt
+  j/jog.txt
+  j/junk.txt
+  j/jack.txt
+  m/master.txt
+  m/manure.txt
+  m/monger.txt
+  m/murder.txt
+  m/mock.txt
+  m/maneuver.txt
+  m/matter.txt
+  m/make.txt
+  m/member.txt
+  m/muster.txt
+  m/martyr.txt
+  m/milk.txt
+  m/mask.txt
+  v/veer.txt
+  v/volunteer.txt
+  y/yack.txt
+  y/yoke.txt
+  k/kayak.txt
+  k/kick.txt
+  k/king.txt
+  k/knock.txt
+  q/quarter.txt
+  q/quack.txt
+  q/quake.txt
+  q/quaver.txt
+  c/cling.txt
+  c/croak.txt
+  c/crack.txt
+  c/chalk.txt
+  c/career.txt
+  c/cup.txt
+  c/crank.txt
+  c/counter.txt
+  c/cock.txt
+  c/cuck.txt
+  c/cook.txt
+  c/clamber.txt
+  c/cake.txt
+  c/command.txt
+  c/center.txt
+  c/critique.txt
+  c/concur.txt
+  c/cipher.txt
+  c/creak.txt
+  c/chat.txt
+  c/clock.txt
+  c/cover.txt
+  c/cluck.txt
+  c/clog.txt
+  c/check.txt
+  c/cloak.txt
+  c/convoke.txt
+  c/cohere.txt
+  c/choke.txt
+  c/clatter.txt
+  c/conspire.txt
+  c/chamber.txt
+  c/chuck.txt
+  c/cut.txt
+  c/click.txt
+  c/cower.txt
+  c/conquer.txt
+  c/caulk.txt
+=================================================================
