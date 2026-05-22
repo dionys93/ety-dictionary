@@ -13,8 +13,8 @@ Warnings:        [33m0[0m
 
 VERB CONJUGATION COVERAGE
 -----------------------------------------------------------------
-Using -s -d -ing:  1502
-Non-standard:      453
+Using -s -d -ing:  1505
+Non-standard:      450
 
   Non-standard verb stanzas:
     t/tunnel.txt                    tonele                -s -d toneling
@@ -64,9 +64,9 @@ Non-standard:      453
     a/answer.txt                    ansere                -s -d ansiring
     a/architect.txt                 architecte            -cs -d -ing
     a/appreciate.txt                appríçiait         to príçiait -s -d -ing
-    a/amplify.txt                   amplifae              -s -d -fyhing
+    a/amplify.txt                   amplifae              -s -d amplifyhing
     i/instruct.txt                  instructe             instrucs -d -ing
-    i/intense.txt                   intènsifae          -s -d -fyhing
+    i/intense.txt                   intènsifae          -s -d intènsifyhing
     i/innervate.txt                 innervait             -s -ed -ing
     i/indicate.txt                  indicait              -s -ed -ing
     i/invent.txt                    inventorie            -s -d inventorying
@@ -83,7 +83,7 @@ Non-standard:      453
     i/impact.txt                    impacte               impacs -d -ing
     i/implicate.txt                 implicait             -s -ed -ing
     r/root.txt                      r̃oute               -s -d -ing / to rôte -s -d -ing
-    r/rare.txt                      rairifae              -s -d -fyhing
+    r/rare.txt                      rairifae              -s -d rairifyhing
     r/resurrect.txt                 resorecte             resorecs -d -ing
     r/rid.txt                       ruide                 -s ruid -ing
     r/reciprocate.txt               recïprocait         -s -ed -ing
@@ -119,7 +119,7 @@ Non-standard:      453
     g/guarantee.txt                 gairantíe           -s -d -ýing
     g/gray.txt                      graie                 -s -d graying
     g/grind.txt                     grînde              -s graund -ing
-    g/grace.txt                     gratifae              -s -d -fyhing
+    g/grace.txt                     gratifae              -s -d gratifyhing
     g/gyrate.txt                    gŷrait              -s -ed -ing
     g/grow.txt                      groe                  -s grou grone grouing
     g/graduate.txt                  grad̦uait            
@@ -327,7 +327,6 @@ Non-standard:      453
     s/squirrel.txt                  scuirole              -s -d scuiroling
     s/strangle.txt                  strângulait         -s -ed -ing
     s/sorrow.txt                    sòroe               -s -d -uing
-    s/stable.txt                    stâbilyse           -s -d -iꬻ
     n/narrate.txt                   nârait              -s -ed -ing
     n/nauseate.txt                  nausïait            to naușiait -s -ed -ing
     n/narrow.txt                    nâroe               -s -d -uing
@@ -421,7 +420,6 @@ Non-standard:      453
     q/queue.txt                     cúe                 -s -d cúing
     q/quit.txt                      qüit                qüits qüit qüitting
     q/quarrel.txt                   quarele               -s -d quareling
-    c/chicken.txt                   c̃icane              aut -s -d -ing
     c/convey.txt                    conveie               -s -d -eying
     c/cast.txt                      caste                 -s cast -ing
     c/congregate.txt                congregait            -s -ed -ing
@@ -432,7 +430,6 @@ Non-standard:      453
     c/curtsy.txt                    courtsie              -s -d courtsying
     c/certain.txt                   certifae              -s -d certifyhing
     c/carry.txt                     cârie               -s -d cârying
-    c/curse.txt                     cusse                 
     c/contract.txt                  contracte             contracs -d -ing
     c/contract.txt                  contracte             contracs -d -ing
     c/consolidate.txt               consolidait           -s -ed -ing
