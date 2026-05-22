@@ -801,6 +801,7 @@ etym-lint() {
 
     local total=0 fatals=0 errors=0 warns=0
 
+    # ── Format validation (per file) ────────────────────────────────────────
     while IFS= read -r -d '' file; do
         ((total++))
         local issues=()
@@ -812,25 +813,21 @@ etym-lint() {
             local no_urls
             no_urls=$(grep -v "http" "$file")
 
-            # Missing POS tag
             if ! echo "$no_urls" | grep -Poq "\([a-z ]{1,5}(, [a-z ]{1,5})*\)"; then
                 issues+=("\e[31m[ERROR]\e[0m Missing or malformed POS tag '()'")
                 ((errors++))
             fi
 
-            # Missing language tag
             if ! echo "$no_urls" | grep -Poq "\[[A-Z]+\]"; then
                 issues+=("\e[31m[ERROR]\e[0m Missing or malformed language tag '[]'")
                 ((errors++))
             fi
 
-            # [LANG] and (pos) tags on the same line
             if echo "$no_urls" | grep -Eq "\[[A-Z]+\].*\(|\(.*\[[A-Z]+\]"; then
                 issues+=("\e[31m[ERROR]\e[0m Language tag '[]' and POS tag '()' must be on separate lines.")
                 ((errors++))
             fi
 
-            # Trailing whitespace
             if grep -q "[[:space:]]$" "$file"; then
                 issues+=("\e[33m[WARN]\e[0m  Trailing whitespace on one or more lines.")
                 ((warns++))
@@ -845,13 +842,69 @@ etym-lint() {
 
     done < <(find "$target_dir" -type f -print0)
 
+    # ── Verb conjugation analysis (via etym-parse) ───────────────────────────
+    # Stream all stanzas, collect verb stats in a single pass
+    local verb_stats
+    verb_stats=$(
+        find "$target_dir" -type f -name "*.txt" | while IFS= read -r f; do
+            etym-parse "$f" | jq -r --arg file "$f" '
+                select(.pos | test("^(v|tr v|intr v)$"; "i")) |
+                (
+                    if (.conjugations == ["-s", "-d", "-ing"]) then "standard"
+                    else "nonstandard"
+                    end
+                ) + "\t" + $file + "\t" + .inglisce_word + "\t" + (.conjugations | join(" "))
+            '
+        done
+    )
+
+    local verb_standard verb_nonstandard
+    verb_standard=$(echo "$verb_stats"   | grep -c "^standard"   || true)
+    verb_nonstandard=$(echo "$verb_stats" | grep -c "^nonstandard" || true)
+
+    # ── Stanzas with (s in the reformed line (formatting anomaly) ────────────
+    # These are verbs where someone wrote "(s" instead of "-s" — a common typo
+    local paren_s_files
+    paren_s_files=$(
+        find "$target_dir" -type f -name "*.txt" | while IFS= read -r f; do
+            if grep -Eq "^\bto\b.*\(s|\(s" "$f"; then
+                echo "$f"
+            fi
+        done
+    )
+
+    # ── Report ───────────────────────────────────────────────────────────────
     echo "-----------------------------------------------------------------"
     echo "LINTING COMPLETE"
     echo "-----------------------------------------------------------------"
-    printf "Files Scanned: %d\n"          "$total"
-    printf "Fatal Errors:  \e[31m%d\e[0m\n" "$fatals"
-    printf "Standard Errs: \e[31m%d\e[0m\n" "$errors"
-    printf "Warnings:      \e[33m%d\e[0m\n" "$warns"
+    printf "Files Scanned:   %d\n"            "$total"
+    printf "Fatal Errors:    \e[31m%d\e[0m\n" "$fatals"
+    printf "Standard Errs:   \e[31m%d\e[0m\n" "$errors"
+    printf "Warnings:        \e[33m%d\e[0m\n" "$warns"
+
+    echo ""
+    echo "VERB CONJUGATION COVERAGE"
+    echo "-----------------------------------------------------------------"
+    printf "Using -s -d -ing:  %d\n" "$verb_standard"
+    printf "Non-standard:      %d\n" "$verb_nonstandard"
+
+    if [[ "$verb_nonstandard" -gt 0 ]]; then
+        echo ""
+        echo "  Non-standard verb stanzas:"
+        echo "$verb_stats" | grep "^nonstandard" | while IFS=$'\t' read -r _ file word forms; do
+            printf "    %-30s  %-20s  %s\n" "${file#$DICT_DIR/}" "$word" "$forms"
+        done
+    fi
+
+    if [[ -n "$paren_s_files" ]]; then
+        echo ""
+        echo "VERB STANZAS WITH (s  [possible malformed conjugation]"
+        echo "-----------------------------------------------------------------"
+        while IFS= read -r f; do
+            echo "  ${f#$DICT_DIR/}"
+        done <<< "$paren_s_files"
+    fi
+
     echo "================================================================="
 
     [[ $fatals -gt 0 || $errors -gt 0 ]] && return 1
