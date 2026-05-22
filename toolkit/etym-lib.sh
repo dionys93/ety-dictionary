@@ -1,1610 +1,626 @@
 #!/bin/bash
 
-# --- 1. BOOTSTRAP CONFIG etym-lib.sh---
-# This ensures the library knows where the project is
+# --- 1. BOOTSTRAP CONFIG ---
 export ETYM_LIB_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "$ETYM_LIB_DIR/config/env.sh"
 echo "etym-lib has been sourced" >&2
 
-# --- 2 DEPENDENCY CHECK ---
+# --- 2. DEPENDENCY CHECK ---
 if ! command -v jq &> /dev/null; then
-    echo "⚠️  Dependency Missing: 'jq' is required for JSON export functions."
+    echo "⚠️  Dependency Missing: 'jq' is required for most functions."
     read -p "Would you like to install it now? (y/n) " -n 1 -r
     echo
     if [[ $REPLY =~ ^[Yy]$ ]]; then
-        if [[ "$OSTYPE" == "linux-gnu"* ]]; then
-            sudo apt update && sudo apt install -y jq
-        elif [[ "$OSTYPE" == "darwin"* ]]; then
-            brew install jq
-        else
-            echo "Unsupported OS. Please install 'jq' manually."
+        if   [[ "$OSTYPE" == "linux-gnu"* ]]; then sudo apt update && sudo apt install -y jq
+        elif [[ "$OSTYPE" == "darwin"* ]];    then brew install jq
+        else echo "Unsupported OS. Please install 'jq' manually."
         fi
-    else
-        echo "Proceeding without 'jq'. Some functions (etym-export) will be disabled."
     fi
 fi
 
-# --- 3. THE FUNCTIONS (Your Toolbelt) ---
+# =============================================================================
+# CORE ENGINE
+# These two functions are the foundation everything else is built on.
+# =============================================================================
 
+# _etym_resolve_file <word>
+# Single source of truth for .txt file lookup.
+# Prints the resolved path to stdout, or returns 1 with an error on stderr.
+_etym_resolve_file() {
+    local word="$1"
+    local dir="$DICT_DIR/${word:0:1}"
+    local file
+
+    # Direct match (case-insensitive)
+    file=$(find "$dir" -maxdepth 1 -iname "${word}.txt" 2>/dev/null | head -1)
+
+    # Fallback: content search within the letter directory
+    [[ -z "$file" ]] && file=$(grep -rlF "$word" "$dir" 2>/dev/null | head -1)
+
+    if [[ -z "$file" ]]; then
+        echo "Error: '$word' not found in $dir" >&2
+        return 1
+    fi
+    echo "$file"
+}
+
+# _etym_stream [path]
+# Streams all JSONL from every .txt file under a given path.
+# Defaults to $DICT_DIR. The output is suitable for piping into jq.
+_etym_stream() {
+    local path="${1:-$DICT_DIR}"
+    find "$path" -type f -name "*.txt" | while IFS= read -r f; do
+        etym-parse "$f"
+    done
+}
+
+# etym-parse <file.txt>
+# ─────────────────────────────────────────────────────────────────────────────
+# THE CANONICAL STANZA PARSER. Single source of truth for reading .txt entries.
+# Emits one JSONL record per stanza to stdout.
+#
+# Output schema (matches build-dictionary.js expectations):
+#   {
+#     "me_word":       string,   # English lookup key ([ME] > [MI] > last ancestor)
+#     "inglisce_word": string,   # Inglisce reformed form
+#     "pos":           string,   # Raw POS tag, e.g. "v", "m n", "adj"
+#     "conjugations":  string[], # Raw suffix tokens, e.g. ["-s", "-d", "-ing"]
+#     "etymology":     [{form, lang}], # Full ancestry chain, oldest first
+#     "sources":       string[]  # URLs
+#   }
+# ─────────────────────────────────────────────────────────────────────────────
+etym-parse() {
+    local file="$1"
+    [[ ! -f "$file" ]] && { echo "Error: file not found: $file" >&2; return 1; }
+
+    awk '
+    BEGIN { RS = ""; FS = "\n" }
+    {
+        delete ef; delete el; delete src_arr
+        n_etym = 0; n_src = 0
+        reformed = ""
+
+        # ---- Classify each line in the stanza ----
+        for (i = 1; i <= NF; i++) {
+            line = $i
+            gsub(/\r/, "", line)
+            if (line == "") continue
+
+            if (line ~ /^http/) {
+                src_arr[++n_src] = line
+
+            } else if (line ~ /\([a-z]/ && line !~ /\[[A-Z]/) {
+                # Reformed line: has (pos) tag, no [LANG] tag
+                reformed = line
+
+            } else {
+                # Etymology chain line: has [LANG] tag, or is an ancestor without one
+                lang = ""
+                if (match(line, /\[([A-Z]+)\]/, m)) lang = m[1]
+                form = line
+                gsub(/\[[A-Z]+\]/, "", form)
+                gsub(/^[ \t]+|[ \t]+$/, "", form)
+                if (form != "") {
+                    n_etym++
+                    ef[n_etym] = form
+                    el[n_etym] = lang
+                }
+            }
+        }
+
+        if (reformed == "") next
+
+        # ---- Parse the reformed line ----
+        # e.g. "to circle -s -d -ing (v)"
+        # e.g. "circle, circuls (m n)"
+        # e.g. "circular -ly (adj)"
+        pos = ""
+        if (match(reformed, /\(([^)]+)\)[ \t]*$/, pm)) pos = pm[1]
+
+        temp = reformed
+        gsub(/\([^)]+\)[ \t]*$/, "", temp)   # Strip trailing (pos)
+        gsub(/^[ \t]+|[ \t]+$/, "", temp)    # Trim whitespace
+        sub(/^[tT][oO][ \t]+/, "", temp)     # Strip infinitive "to "
+
+        n_tok = split(temp, tokens, /[ \t,]+/)
+        inglisce_word = tokens[1]
+        gsub(/[,.]$/, "", inglisce_word)
+
+        # Remaining tokens are the conjugation/declension forms
+        forms_json = "["
+        first_f = 1
+        for (i = 2; i <= n_tok; i++) {
+            t = tokens[i]
+            if (t == "") continue
+            gsub(/"/, "\\\"", t)
+            if (!first_f) forms_json = forms_json ","
+            forms_json = forms_json "\"" t "\""
+            first_f = 0
+        }
+        forms_json = forms_json "]"
+
+        # ---- Resolve me_word: prefer [ME], then [MI], then last ancestor ----
+        me_word = ""
+        for (i = 1; i <= n_etym; i++) {
+            if (el[i] == "ME") { me_word = ef[i]; break }
+        }
+        if (me_word == "") {
+            for (i = 1; i <= n_etym; i++) {
+                if (el[i] == "MI") { me_word = ef[i]; break }
+            }
+        }
+        if (me_word == "") me_word = ef[n_etym]
+
+        sub(/^[tT][oO][ \t]+/, "", me_word)
+        n_mw = split(me_word, mw, /[ \t,]+/)
+        me_word = mw[1]
+
+        # ---- Build etymology JSON array ----
+        etym_json = "["
+        for (i = 1; i <= n_etym; i++) {
+            f = ef[i]; l = el[i]
+            gsub(/"/, "\\\"", f)
+            if (i > 1) etym_json = etym_json ","
+            etym_json = etym_json "{\"form\":\"" f "\",\"lang\":\"" l "\"}"
+        }
+        etym_json = etym_json "]"
+
+        # ---- Build sources JSON array ----
+        src_json = "["
+        for (i = 1; i <= n_src; i++) {
+            if (i > 1) src_json = src_json ","
+            src_json = src_json "\"" src_arr[i] "\""
+        }
+        src_json = src_json "]"
+
+        # ---- Emit JSONL record ----
+        gsub(/"/, "\\\"", me_word)
+        gsub(/"/, "\\\"", inglisce_word)
+        gsub(/"/, "\\\"", pos)
+        printf "{\"me_word\":\"%s\",\"inglisce_word\":\"%s\",\"pos\":\"%s\",\"conjugations\":%s,\"etymology\":%s,\"sources\":%s}\n",
+            me_word, inglisce_word, pos, forms_json, etym_json, src_json
+    }' "$file"
+}
+
+
+# =============================================================================
+# BROWSING & LOOKUP
+# =============================================================================
+
+# etym-cat <word>
+# Prints the raw stanza content of a word's file, with stanza numbers.
 etym-cat() {
-    local WORD=$1
-    if [ -z "$WORD" ]; then
-        echo "Usage: etym-cat <word>"
-        return 1
-    fi
-
-    local FIRST_LETTER=$(echo "${WORD:0:1}" | tr '[:upper:]' '[:lower:]')
-    local FILE_PATH="$DICT_DIR/$FIRST_LETTER/$WORD.txt"
-
-    if [ -f "$FILE_PATH" ]; then
-        # -v RS="" treats double-newlines as stanza separators
-        awk -v RS="" '{ print "Stanza " NR ":\n" $0 "\n" }' "$FILE_PATH"
-    else
-        echo "Error: '$WORD' not found."
-        return 1
-    fi
+    local word="$1"
+    [[ -z "$word" ]] && { echo "Usage: etym-cat <word>"; return 1; }
+    local file
+    file=$(_etym_resolve_file "$word") || return 1
+    awk -v RS="" '{ print "Stanza " NR ":\n" $0 "\n" }' "$file"
 }
 
 
+# etym-find <query>
+# Recursive grep across the entire dictionary. Accepts words or lang tags like [OE].
 etym-find() {
-    local QUERY=$1
-    if [ -z "$QUERY" ]; then
-        echo "Usage: etym-find <query_or_lang_tag>"
-        return 1
-    fi
-    # Search recursively for the tag (e.g., [OE]) or word
-    grep -r "$QUERY" "$DICT_DIR"
+    local query="$1"
+    [[ -z "$query" ]] && { echo "Usage: etym-find <query_or_lang_tag>"; return 1; }
+    grep -r "$query" "$DICT_DIR"
 }
 
 
+# etym-info <word>
+# Displays a formatted table of all definitions for a word.
 etym-info() {
-    local WORD=$1
-    local FIRST_LETTER=$(echo "${WORD:0:1}" | tr '[:upper:]' '[:lower:]')
-    
-    # 1. SMART FILE LOOKUP
-    local FILE_PATH="$DICT_DIR/$FIRST_LETTER/$WORD.txt"
-    if [ ! -f "$FILE_PATH" ]; then
-        FILE_PATH=$(grep -rlF "$WORD" "$DICT_DIR/$FIRST_LETTER/" | head -n 1)
-    fi
+    local word="$1"
+    [[ -z "$word" ]] && { echo "Usage: etym-info <word>"; return 1; }
+    local file
+    file=$(_etym_resolve_file "$word") || return 1
 
-    if [ -z "$FILE_PATH" ] || [ ! -f "$FILE_PATH" ]; then
-        echo "Error: Word '$WORD' not found in /$FIRST_LETTER/."
-        return 1
-    fi
+    printf "--- Primary Definitions for: %s ---\n" "$word"
+    printf "%-22s | %-28s | %-6s | %s\n" "INGLISCE" "PART OF SPEECH" "ORIGIN" "FORMS"
+    echo "--------------------------------------------------------------------------------"
 
-    echo "--- Primary Definitions for: $WORD ---"
-    # Widened the POS column to handle long compound tags like 'adjective, masculine noun'
-    printf "%-20s | %-30s | %s\n" "INGLISCE" "PART OF SPEECH" "ORIGIN"
-    echo "---------------------------------------------------------------------------------"
-
-    # Split by blank lines (stanzas)
-    awk -v RS="" '{print $0 "\n@END@"}' "$FILE_PATH" | while read -r -d '@END@' STANZA; do
-        [[ -z "${STANZA//[[:space:]]/}" ]] && continue
-
-        mapfile -t LINES <<< "$STANZA"
-
-        # 2. Find the Reformed Line (line before first http)
-        local REFORMED_IDX=-1
-        for i in "${!LINES[@]}"; do
-            if [[ "${LINES[$i]}" == http* ]]; then
-                REFORMED_IDX=$((i - 1))
-                break
-            fi
-        done
-        [[ $REFORMED_IDX -lt 0 ]] && continue
-        local REFORMED_LINE="${LINES[$REFORMED_IDX]}"
-
-        # 3. Find the Reference Line (line before Reformed)
-        local REF_LINE=""
-        if [[ $REFORMED_IDX -gt 0 ]]; then
-            REF_LINE="${LINES[$((REFORMED_IDX - 1))]}"
-        fi
-
-        # 4. Strict Isolation of the Core Word (Strips 'to ', tags, and takes only the first word)
-        local CLEAN_REFORMED=$(echo "$REFORMED_LINE" | sed -E 's/\[[^]]+\]//g; s/\([^)]+\)//g' | xargs | sed -E 's/^to //' | cut -d' ' -f1 | tr -d ',')
-        local CLEAN_REF=$(echo "$REF_LINE" | sed -E 's/\[[^]]+\]//g; s/\([^)]+\)//g' | xargs | sed -E 's/^to //' | cut -d' ' -f1 | tr -d ',')
-
-        # 5. DUAL-CHECK FILTER
-        if [[ "$CLEAN_REF" != "$WORD" && "$CLEAN_REFORMED" != "$WORD" ]]; then
-            continue
-        fi
-
-        # 6. Extraction for Display
-        local INGLISCE="$CLEAN_REFORMED"
-        local LANG_CODE=$(echo "$STANZA" | grep -oP "\[\K[A-Z]+(?=\])" | head -1)
-        
-        # Strict POS Regex: Only grabs standard tags, ignores malformed conjugation lists inside parens
-        local POS_CODE=$(echo "$REFORMED_LINE" | grep -oP "\(\K[a-z ]{1,5}(, [a-z ]{1,5})*(?=\))" | tail -1)
-        
-        local POS_FULL=""
-        if [[ -n "$POS_CODE" ]]; then
-            POS_FULL=$(get_pos_full "$POS_CODE")
-            # Add a visual space after commas for readability (e.g., "adjective, masculine noun")
-            POS_FULL=$(echo "$POS_FULL" | sed 's/,/, /g')
-        else
-            POS_FULL="Unknown/Malformed"
-        fi
-        
-        local LANG_FULL=$(get_lang_name "$LANG_CODE")
-
-        printf "%-20s | %-30s | %s (%s)\n" "$INGLISCE" "$POS_FULL" "${LANG_FULL:-???}" "${LANG_CODE:-?}"
-    done
+    etym-parse "$file" | jq -r '
+        (.etymology | map(select(.lang == "ME" or .lang == "MI")) | last // .[-1]) as $origin |
+        [
+            .inglisce_word,
+            .pos,
+            ($origin.lang // "?"),
+            (.conjugations | join(" "))
+        ] | @tsv
+    ' | awk -F'\t' '{ printf "%-22s | %-28s | %-6s | %s\n", $1, $2, $3, $4 }'
 }
 
 
-etym-summarize() {
-    local FORMAT="text"
-    local OUT_FILE=""
-    local TARGET_INPUT=""
-
-    # 1. Parse Arguments (--json, -o/--out)
-    while [[ "$#" -gt 0 ]]; do
-        case $1 in
-            --json) FORMAT="json"; shift ;;
-            -o|--out) OUT_FILE="$2"; shift 2 ;;
-            *) 
-                if [[ -z "$TARGET_INPUT" ]]; then
-                    TARGET_INPUT="$1"
-                fi
-                shift 
-                ;;
-        esac
-    done
-
-    # 2. Resolve Path
-    local TARGET_DIR=""
-    if [ -z "$TARGET_INPUT" ]; then
-        TARGET_DIR="$DICT_DIR"
-    elif [ -d "$DICT_DIR/$TARGET_INPUT" ]; then
-        TARGET_DIR="$DICT_DIR/$TARGET_INPUT"
-    else
-        TARGET_DIR="$TARGET_INPUT"
-    fi
-
-    if [ ! -d "$TARGET_DIR" ]; then
-        echo "Error: Directory $TARGET_DIR not found."
-        return 1
-    fi
-
-    # 3. Data Extraction Pipeline
-    local POS_STATS=$(grep -rhv "http" "$TARGET_DIR" | \
-        grep -Po "\(([a-z ]{1,5}(, [a-z ]{1,5})*)\)" | \
-        tr -d '()' | \
-        awk -F',' '{print $1}' | \
-        sed 's/^[[:space:]]*//;s/[[:space:]]*$//' | \
-        sort | uniq -c | sort -rn)
-
-    local LANG_STATS=$(grep -rhv "http" "$TARGET_DIR" | \
-        grep -Po "\[[A-Z]+\]" | \
-        tr -d '[]' | \
-        sort | uniq -c | sort -rn)
-
-    # Cross-Tabulation Pipeline: Links POS and LANG on a per-file basis
-    local CROSS_DATA=$(find "$TARGET_DIR" -type f -exec awk '
-        FNR==1 {
-            if (pos != "" && lang != "") print pos "|" lang
-            pos = ""; lang = ""
-        }
-        !/http/ {
-            if (pos == "" && match($0, /\(([a-z ]{1,5}(, [a-z ]{1,5})*)\)/)) {
-                pos = substr($0, RSTART+1, RLENGTH-2)
-                sub(/,.*/, "", pos)
-                sub(/^[ \t]+/, "", pos)
-                sub(/[ \t]+$/, "", pos)
-            }
-            if (lang == "" && match($0, /\[[A-Z]+\]/)) {
-                lang = substr($0, RSTART+1, RLENGTH-2)
-            }
-        }
-        END {
-            if (pos != "" && lang != "") print pos "|" lang
-        }
-    ' {} + 2>/dev/null | sort | uniq -c | sort -rn)
-
-    # 4. Format Output
-    local OUTPUT=""
-
-    if [[ "$FORMAT" == "json" ]]; then
-        local POS_JSON=$(echo "$POS_STATS" | while read -r count tag; do
-            [[ -z "$count" ]] && continue
-            local full_name=$(grep -i "^$tag[[:space:]]" "$CONFIG_DIR/parts-of-speech.tsv" 2>/dev/null | sed "s/^$tag[[:space:]]*//" | xargs)
-            printf '{"tag": "%s", "name": "%s", "count": %d}\n' "$tag" "${full_name:-Unknown}" "$count"
-        done | jq -s '.')
-
-        local LANG_JSON=$(echo "$LANG_STATS" | while read -r count tag; do
-            [[ -z "$count" ]] && continue
-            local full_name=$(get_lang_name "$tag")
-            printf '{"tag": "%s", "name": "%s", "count": %d}\n' "$tag" "${full_name:-Unknown}" "$count"
-        done | jq -s '.')
-
-        local CROSS_JSON=$(echo "$CROSS_DATA" | while read -r count pos_lang; do
-            [[ -z "$count" ]] && continue
-            local pos="${pos_lang%|*}"
-            local lang="${pos_lang#*|}"
-            printf '{"pos": "%s", "lang": "%s", "count": %d}\n' "$pos" "$lang" "$count"
-        done | jq -s '.')
-
-        OUTPUT=$(jq -n \
-            --arg dir "$TARGET_DIR" \
-            --argjson pos "${POS_JSON:-[]}" \
-            --argjson lang "${LANG_JSON:-[]}" \
-            --argjson cross "${CROSS_JSON:-[]}" \
-            '{directory: $dir, parts_of_speech: $pos, languages: $lang, cross_tabulation: $cross}')
-    else
-        OUTPUT+="Summarizing Data in: $TARGET_DIR\n"
-        OUTPUT+="=================================================================\n"
-        
-        # --- Print Parts of Speech ---
-        OUTPUT+="PARTS OF SPEECH\n"
-        OUTPUT+="-----------------------------------------------------------------\n"
-        local TOTAL_POS=0
-        while read -r count tag; do
-            [[ -z "$count" ]] && continue
-            local full_name=$(grep -i "^$tag[[:space:]]" "$CONFIG_DIR/parts-of-speech.tsv" 2>/dev/null | sed "s/^$tag[[:space:]]*//" | xargs)
-            
-            local line=$(printf "%7s | %-25s (%s)" "$count" "${full_name:-Unknown}" "$tag")
-            OUTPUT+="$line\n"
-            TOTAL_POS=$((TOTAL_POS + count))
-        done <<< "$POS_STATS"
-        OUTPUT+="-----------------------------------------------------------------\n"
-        OUTPUT+=$(printf "%7s | %-25s\n\n" "$TOTAL_POS" "TOTAL POS TAGS")
-
-        # --- Print Languages ---
-        OUTPUT+="LANGUAGE ORIGINS\n"
-        OUTPUT+="-----------------------------------------------------------------\n"
-        local TOTAL_LANG=0
-        while read -r count tag; do
-            [[ -z "$count" ]] && continue
-            local full_name=$(get_lang_name "$tag")
-            
-            local line=$(printf "%7s | %-25s [%s]" "$count" "${full_name:-Unknown}" "$tag")
-            OUTPUT+="$line\n"
-            TOTAL_LANG=$((TOTAL_LANG + count))
-        done <<< "$LANG_STATS"
-        OUTPUT+="-----------------------------------------------------------------\n"
-        OUTPUT+=$(printf "%7s | %-25s\n\n" "$TOTAL_LANG" "TOTAL LANG TAGS")
-
-        # --- Print Cross-Tabulation Matrix ---
-        OUTPUT+="CROSS-TABULATION (Top 5 POS x Top 5 LANG)\n"
-        OUTPUT+="-----------------------------------------------------------------\n"
-        
-        # Extract Top 5 arrays safely
-        local TOP_LANGS=($(echo "$LANG_STATS" | head -n 5 | awk '{print $2}'))
-        local TOP_POS=()
-        while read -r count pos; do
-            [[ -z "$count" ]] && continue
-            TOP_POS+=("$pos")
-            [[ ${#TOP_POS[@]} -ge 5 ]] && break
-        done <<< "$POS_STATS"
-
-        # Build Matrix Header
-        local header=$(printf "%-18s" "POS \ LANG")
-        for lang in "${TOP_LANGS[@]}"; do
-            header+=$(printf "| %-7s " "$lang")
-        done
-        OUTPUT+="$header\n"
-        OUTPUT+="-----------------------------------------------------------------\n"
-
-        # Build Matrix Rows
-        for pos in "${TOP_POS[@]}"; do
-            local row=$(printf "%-18s" "$pos")
-            for lang in "${TOP_LANGS[@]}"; do
-                # Exact string matching against the format " [count] [pos]|[lang]$"
-                local val=$(echo "$CROSS_DATA" | awk -v p="$pos" -v l="$lang" '
-                    $0 ~ ("[[:space:]]" p "\\|" l "$") { print $1 }
-                ')
-                row+=$(printf "| %-7s " "${val:-0}")
-            done
-            OUTPUT+="$row\n"
-        done
-        OUTPUT+="-----------------------------------------------------------------\n"
-    fi
-
-    # 5. Output Routing
-    if [[ -n "$OUT_FILE" ]]; then
-        echo -e "$OUTPUT" > "$OUT_FILE"
-        echo "✅ Summary successfully written to $OUT_FILE"
-    else
-        echo -e "$OUTPUT"
-    fi
-}
-
-
+# etym-chain <word>
+# Prints the full evolutionary ancestry chain for every definition of a word.
 etym-chain() {
-    local WORD=$1
-    local FIRST_LETTER=$(echo "${WORD:0:1}" | tr '[:upper:]' '[:lower:]')
-    local FILE_PATH="$DICT_DIR/$FIRST_LETTER/$WORD.txt"
+    local word="$1"
+    [[ -z "$word" ]] && { echo "Usage: etym-chain <word>"; return 1; }
+    local file
+    file=$(_etym_resolve_file "$word") || return 1
 
-    if [ ! -f "$FILE_PATH" ]; then
-        FILE_PATH=$(grep -rlF "$WORD" "$DICT_DIR/$FIRST_LETTER/" | head -n 1)
-    fi
+    local reform_name="${DICT_PROJECT_NAME:-Inglisce}"
+    echo "--- Evolutionary Chain for: $word ---"
 
-    if [ -z "$FILE_PATH" ] || [ ! -f "$FILE_PATH" ]; then
-        echo "Error: Word '$WORD' not found."
-        return 1
-    fi
-
-    # Dynamically extract the reform name from the directory chain (e.g., .../inglisce/dictionary -> Inglisce)
-    local REFORM_DIR=$(basename "$(dirname "$DICT_DIR")")
-    local REFORM_NAME="$(tr '[:lower:]' '[:upper:]' <<< ${REFORM_DIR:0:1})${REFORM_DIR:1}"
-    
-    # Use DICT_PROJECT_NAME if set in env.sh, otherwise fallback to the capitalized directory name
-    local FINAL_REFORM_NAME="${DICT_PROJECT_NAME:-$REFORM_NAME}"
-
-    echo "--- Evolutionary Chain for: $WORD ---"
-
-    awk -v RS="" '{print $0 "\n@END@"}' "$FILE_PATH" | while read -r -d '@END@' STANZA; do
-        [[ -z "${STANZA//[[:space:]]/}" ]] && continue
-
-        mapfile -t LINES <<< "$STANZA"
-
-        # Check if this stanza belongs to the requested word
-        local IS_MATCH=0
-        for line in "${LINES[@]}"; do
-            if [[ "$line" == http* ]]; then break; fi
-            local CLEAN_LINE=$(echo "$line" | sed -E 's/^to //; s/\[[^]]+\]//g; s/\([^)]+\)//g; s/ -[a-z]+//g; s/,.*//g' | xargs)
-            if [[ "$CLEAN_LINE" == "$WORD" ]]; then
-                IS_MATCH=1
-                break
-            fi
-        done
-
-        [[ $IS_MATCH -eq 0 ]] && continue
-
-        # Print the chain
-        for line in "${LINES[@]}"; do
-            if [[ "$line" == http* ]]; then break; fi
-            
-            local LANG_TAG=$(echo "$line" | grep -oP '\[\K[A-Z]+(?=\])')
-            local LANG_FULL=$(get_lang_name "$LANG_TAG")
-            local CLEAN_TEXT=$(echo "$line" | sed -E 's/\[[^]]+\]//g' | xargs)
-            
-            # Swap out 'Unknown' for the dynamically extracted reform name
-            printf " ↳ %-30s | %s\n" "$CLEAN_TEXT" "${LANG_FULL:-$FINAL_REFORM_NAME}"
-        done
-        echo "------------------------------------------------------------"
-    done
+    etym-parse "$file" | jq -r --arg rn "$reform_name" '
+        (.etymology[] | " ↳ \(.form)  [\(.lang)]"),
+        (" ↳ \(.inglisce_word)  [\($rn)]"),
+        "------------------------------------------------------------"
+    '
 }
 
 
+# etym-cognates <query>
+# Finds all Inglisce words whose ancestry contains the given root or phrase.
 etym-cognates() {
-    local QUERY=$1
-    if [ -z "$QUERY" ]; then
-        echo "Usage: etym-cognates <root_word_or_phrase>"
-        return 1
-    fi
+    local query="$1"
+    [[ -z "$query" ]] && { echo "Usage: etym-cognates <root_word_or_phrase>"; return 1; }
 
-    echo "--- Modern Cognates for: $QUERY ---"
+    echo "--- Modern Cognates for: $query ---"
 
-    # Stream the entire dictionary through awk
-    find "$DICT_DIR" -type f -name "*.txt" -print0 | xargs -0 awk -v query="$QUERY" -v dict_dir="$DICT_DIR/" '
-        BEGIN { 
-            RS=""         # Paragraph mode (stanzas)
-            FS="\n"       # Line separation within stanzas
-            IGNORECASE=1  # Case-insensitive search
-        }
-        
-        # Trigger ONLY if the stanza contains the search query
-        $0 ~ query {
-            reformed_idx = 0
-            
-            # Find the Reformed Line (the line right before the first URL)
-            for (i=1; i<=NF; i++) {
-                if ($i ~ /^http/) { 
-                    reformed_idx = i - 1; 
-                    break; 
-                }
-            }
-            
-            if (reformed_idx > 0) {
-                ref_line = $reformed_idx
-                
-                # Extract POS tag exactly as written (e.g., "(v)" or "(m n)")
-                pos_tag = ""
-                if (match(ref_line, /\(([a-z ]+(, [a-z ]+)*)\)/)) {
-                    pos_tag = substr(ref_line, RSTART, RLENGTH)
-                }
-                
-                # Clean the line to isolate the modern Inglisce word
-                temp_line = ref_line
-                gsub(/\[[^\]]+\]/, "", temp_line)       # Strip language tags [LANG]
-                gsub(/\([^)]+\)/, "", temp_line)        # Strip POS tags (pos)
-                sub(/^[ \t]+|[ \t]+$/, "", temp_line)   # Trim whitespace
-                sub(/^[tT][oO][ \t]+/, "", temp_line)   # Strip infinitive "to "
-                
-                # Grab the first word, stripping out commas and conjugations
-                split(temp_line, words, " ")
-                target = words[1]
-                gsub(/,$/, "", target) 
-                
-                if (target != "") {
-                    # Strip the absolute path to make the output clean (e.g., "a/animate.txt")
-                    rel_file = FILENAME
-                    sub(dict_dir, "", rel_file)
-                    
-                    # Print formatted output
-                    printf "  ↳ %-25s %-12s [from %s]\n", target, pos_tag, rel_file
-                }
-            }
-        }
-    ' | sort -u # Sort alphabetically and remove any duplicate hits
-    
+    grep -rlF "$query" "$DICT_DIR" | while IFS= read -r file; do
+        etym-parse "$file"
+    done | jq -r --arg q "$query" '
+        select(
+            (.etymology | any(.form | test($q; "i"))) or
+            (.inglisce_word | test($q; "i"))
+        ) |
+        "  ↳ \(.inglisce_word)  (\(.pos))  [from \(.me_word)]"
+    ' | sort -u
+
     echo "------------------------------------------------------------"
 }
 
 
-etym-affix() {
-    local AFFIX_TYPE="suffix"
-    local AFFIX_LEN=3
-    local FILTER_POS=""
-    local FILTER_LANG=""
-    local TARGET_INPUT=""
-
-    # 1. Parse Arguments
-    while [[ "$#" -gt 0 ]]; do
-        case $1 in
-            --prefix) AFFIX_TYPE="prefix"; shift ;;
-            --suffix) AFFIX_TYPE="suffix"; shift ;;
-            -n|--length) AFFIX_LEN="$2"; shift 2 ;;
-            -p|--pos) FILTER_POS=$(echo "$2" | tr '[:upper:]' '[:lower:]'); shift 2 ;;
-            -l|--lang) FILTER_LANG=$(echo "$2" | tr '[:lower:]' '[:upper:]'); shift 2 ;;
-            *) 
-                if [[ -z "$TARGET_INPUT" ]]; then
-                    TARGET_INPUT="$1"
-                fi
-                shift 
-                ;;
-        esac
-    done
-
-    # 2. Resolve Path
-    local TARGET_PATH=""
-    if [ -z "$TARGET_INPUT" ]; then
-        TARGET_PATH="$DICT_DIR"
-    elif [ -e "$DICT_DIR/$TARGET_INPUT" ]; then
-        TARGET_PATH="$DICT_DIR/$TARGET_INPUT"
-    elif [ -e "$TARGET_INPUT" ]; then
-        TARGET_PATH="$TARGET_INPUT"
-    else
-        echo "Error: Target path '$TARGET_INPUT' not found."
-        return 1
-    fi
-
-    echo "Morphological Analysis: $AFFIX_TYPE ($AFFIX_LEN letters)"
-    [[ -n "$FILTER_POS" ]] && echo "Filter POS:  $FILTER_POS"
-    [[ -n "$FILTER_LANG" ]] && echo "Filter LANG: $FILTER_LANG"
-    echo "================================================================="
-
-    # 3. Stream data into Awk for Analysis
-    find "$TARGET_PATH" -type f -name "*.txt" -print0 | xargs -0 cat | awk -v a_type="$AFFIX_TYPE" -v a_len="$AFFIX_LEN" -v f_pos="$FILTER_POS" -v f_lang="$FILTER_LANG" '
-        BEGIN { 
-            RS=""       
-            FS="\n"     
-            
-            # POS Dictionary for accurate filtering
-            pos_map["m n"]="masculine noun"; pos_map["f n"]="feminine noun";
-            pos_map["n"]="noun"; pos_map["v"]="verb";
-            pos_map["intr v"]="intransitive verb"; pos_map["tr v"]="transitive verb";
-            pos_map["conj"]="conjunction"; pos_map["adj"]="adjective";
-            pos_map["prep"]="preposition"; pos_map["pron"]="pronoun";
-            pos_map["adv"]="adverb"; pos_map["suff"]="suffix";
-            pos_map["pref"]="prefix"; pos_map["interj"]="interjection";
-            pos_map["obs"]="obsolete";
-            
-            total_words = 0
-        }
-        
-        {
-            pos = ""; verbose_pos = ""; lang = ""; target = "";
-
-            # Extract Primary Language tag [LANG]
-            for (i=1; i<=NF; i++) {
-                if ($i !~ /http/ && match($i, /\[[A-Z]+\]/)) {
-                    lang = substr($i, RSTART+1, RLENGTH-2)
-                    break
-                }
-            }
-
-            # Extract POS and Target Word
-            for (i=1; i<=NF; i++) {
-                if ($i !~ /http/ && match($i, /\(([a-z ]+(, [a-z ]+)*)\)/)) {
-                    
-                    pos = substr($i, RSTART+1, RLENGTH-2)
-                    sub(/,.*/, "", pos) 
-                    
-                    if (pos in pos_map) {
-                        verbose_pos = pos_map[pos]
-                    } else {
-                        verbose_pos = pos 
-                    }
-                    
-                    temp_line = $i
-                    sub(/^[ \t]+/, "", temp_line)  
-                    sub(/^to[ \t]+/, "", temp_line) 
-                    sub(/\(([a-z ]+(, [a-z ]+)*)\)/, "", temp_line) 
-                    
-                    split(temp_line, words, " ")   
-                    target = words[1]              
-                    gsub(/,$/, "", target)
-                    break
-                }
-            }
-
-            # Filters
-            if (target == "") next;
-            if (f_pos != "" && index(verbose_pos, f_pos) == 0) next;
-            if (f_lang != "" && lang != f_lang) next;
-
-            # Affix Isolation
-            if (length(target) >= a_len) {
-                target_lower = tolower(target)
-                if (a_type == "prefix") {
-                    affix = substr(target_lower, 1, a_len) "-"
-                } else {
-                    affix = "-" substr(target_lower, length(target_lower) - a_len + 1)
-                }
-                
-                freq[affix]++
-                total_words++
-            }
-        }
-        
-        END {
-            if (total_words == 0) {
-                print "No words matched the criteria."
-                exit
-            }
-            
-            printf "%-15s | %-10s | %s\n", "AFFIX", "COUNT", "PERCENTAGE"
-            print "-----------------------------------------------------------------"
-            
-            # Sort array by frequency (requires GNU awk extension or piping to sort)
-            # To ensure macOS/Linux compatibility, we dump to stdout and let Bash sort it
-            for (a in freq) {
-                pct = (freq[a] / total_words) * 100
-                printf "%-15s | %-10d | %0.2f%%\n", a, freq[a], pct
-            }
-        }
-    ' | sed -n '1,2p; 3,$p' | awk 'NR<=2 {print; next} {print | "sort -k3 -nr"}' | head -n 22
-
-    # Output Summary
-    # (Extract total words by summing the count column of the raw awk output, 
-    # but since we already printed the table, we just let the table speak for itself.)
-    echo "================================================================="
-}
-
-
+# etym-export <word>
+# Emits the full parsed JSON array for a word. Suitable for the React API.
 etym-export() {
-    if ! command -v jq &> /dev/null; then echo "Error: 'jq' not installed."; return 1; fi
-
-    # Helper function to dynamically build words from suffixes or pass full forms
-    _resolve_form() {
-        local form="$1" base="$2" ing_base="$3" is_ing="$4"
-        if [[ "$form" == -* ]]; then
-            if [[ "$is_ing" == "1" ]]; then
-                echo "${ing_base}${form#-}"
-            else
-                echo "${base}${form#-}"
-            fi
-        else
-            echo "$form" | tr -d '('
-        fi
-    }
-
-    local RAW_INPUT="$1"
-    local LOWER_WORD=$(echo "$RAW_INPUT" | tr '[:upper:]' '[:lower:]')
-    local TITLE_WORD="$(tr '[:lower:]' '[:upper:]' <<< ${LOWER_WORD:0:1})${LOWER_WORD:1}"
-    local FIRST_LETTER="${LOWER_WORD:0:1}"
-
-    local WORD=""
-    local FILE_PATH=""
-
-    # Waterfall File Resolution
-    if [ -f "$DICT_DIR/$FIRST_LETTER/$RAW_INPUT.txt" ]; then
-        WORD="$RAW_INPUT"
-        FILE_PATH="$DICT_DIR/$FIRST_LETTER/$RAW_INPUT.txt"
-    elif [ -f "$DICT_DIR/$FIRST_LETTER/$LOWER_WORD.txt" ]; then
-        WORD="$LOWER_WORD"
-        FILE_PATH="$DICT_DIR/$FIRST_LETTER/$LOWER_WORD.txt"
-    elif [ -f "$DICT_DIR/$FIRST_LETTER/$TITLE_WORD.txt" ]; then
-        WORD="$TITLE_WORD"
-        FILE_PATH="$DICT_DIR/$FIRST_LETTER/$TITLE_WORD.txt"
-    else
-        # Case-insensitive grep fallback
-        FILE_PATH=$(grep -rlFi "$RAW_INPUT" "$DICT_DIR/$FIRST_LETTER/" | head -n 1)
-        if [ -n "$FILE_PATH" ] && [ -f "$FILE_PATH" ]; then
-            WORD=$(basename "$FILE_PATH" .txt)
-        fi
-    fi
-
-    if [ -z "$FILE_PATH" ] || [ ! -f "$FILE_PATH" ]; then echo "[]"; return 1; fi
-
-    local FINAL_ARRAY_JSON="[]"
-
-    while read -r -d '@END@' STANZA; do
-        [[ -z "${STANZA//[[:space:]]/}" ]] && continue
-        mapfile -t LINES <<< "$STANZA"
-
-        local IS_MATCH=0
-        for line in "${LINES[@]}"; do
-            if [[ "$line" == http* ]]; then break; fi
-            local TEMP_LINE=$(echo "$line" | sed -E 's/\[[^]]+\]//g; s/\([^()]*\)\s*$//g; s/^[ \t]*//; s/[ \t]*$//')            local CORE_WORD=""
-            if [[ "$TEMP_LINE" == to\ * ]]; then
-                CORE_WORD=$(echo "$TEMP_LINE" | cut -d' ' -f2 | sed 's/,.*//')
-            else
-                CORE_WORD=$(echo "$TEMP_LINE" | cut -d' ' -f1 | sed 's/,.*//')
-            fi
-            if [[ "$CORE_WORD" == "$WORD" ]]; then IS_MATCH=1; break; fi
-        done
-        [[ $IS_MATCH -eq 0 ]] && continue
-
-        local ETYM_JSON="[]"
-        local SOURCES_JSON="[]"
-
-        for line in "${LINES[@]}"; do
-            if [[ "$line" == http* ]]; then
-                SOURCES_JSON=$(echo "$SOURCES_JSON" | jq --arg url "$line" '. + [$url]')
-            else
-                local LANG_TAG=$(echo "$line" | grep -oP '\[\K[^\]]+(?=\])')
-                local POS_TAG=$(echo "$line" | grep -oP '\(\K[^()]+(?=\)\s*$)')
-                
-                local LANG_FULL=$(get_lang_name "$LANG_TAG")
-                local ORIGIN_NAME="${LANG_FULL:-$DICT_PROJECT_NAME}"
-                local POS_FULL=""
-                [[ -n "$POS_TAG" ]] && POS_FULL=$(get_pos_full "$POS_TAG")
-
-                local CONTENT=$(echo "$line" | sed -E 's/\[[^]]+\]//g; s/\([^()]*\)\s*$//g; s/^[ \t]*//; s/[ \t]*$//')
-
-                local DISPLAY_NAME=""
-                local METADATA=""
-                local CONJ_OBJ="null"
-                local DECL_OBJ="null"
-                local DERIV_OBJ="null"
-
-                if [[ -n "$POS_TAG" ]]; then
-                    # Split Name and Metadata, stripping trailing commas from the Name
-                    if [[ "$CONTENT" == to\ * ]]; then
-                        DISPLAY_NAME=$(echo "$CONTENT" | cut -d' ' -f1,2 | tr -d ',')
-                        METADATA=$(echo "$CONTENT" | cut -d' ' -f3-)
-                    else
-                        DISPLAY_NAME=$(echo "$CONTENT" | cut -d' ' -f1 | tr -d ',')
-                        METADATA=$(echo "$CONTENT" | cut -d' ' -f2-)
-                    fi
-
-                    read -a PARTS <<< "$METADATA"
-
-                    # --- VERB CONJUGATIONS ---
-                    if [[ "$POS_FULL" == *"verb"* && ${#PARTS[@]} -ge 1 ]]; then
-                        
-                        # 1. Modals and Auxiliaries (Comma-separated irregular lists)
-                        if [[ "$POS_FULL" == *"auxiliary"* || "$POS_FULL" == *"auxillary"* || "$POS_FULL" == *"modal"* ]]; then
-                            local IRREG_ARRAY="[]"
-                            
-                            # 1. First, grab the base word from DISPLAY_NAME (stripping 'to ' if it exists)
-                            local BASE_IRREG=$(echo "$DISPLAY_NAME" | sed -E 's/^to //; s/^[ \t]*//; s/[ \t]*$//' | tr -d '\r')
-                            [[ -n "$BASE_IRREG" ]] && IRREG_ARRAY=$(echo "$IRREG_ARRAY" | jq --arg p "$BASE_IRREG" '. + [$p]')
-
-                            # 2. Then loop through the rest of the comma-separated parts
-                            for part in "${PARTS[@]}"; do
-                                local CLEAN_PART=$(echo "$part" | tr -d ',\r')
-                                [[ -n "$CLEAN_PART" ]] && IRREG_ARRAY=$(echo "$IRREG_ARRAY" | jq --arg p "$CLEAN_PART" '. + [$p]')
-                            done
-                            
-                            # Export as a flat array
-                            CONJ_OBJ="$IRREG_ARRAY"
-
-                        # 2. Standard Verbs (Require at least 3 suffixes for the rigid template)
-                        elif [[ ${#PARTS[@]} -ge 3 ]]; then
-                            local BASE=$(echo "$DISPLAY_NAME" | sed -E 's/^to //; s/^[ \t]*//; s/[ \t]*$//')
-                            local ING_BASE="$BASE"; [[ "$BASE" == *e ]] && ING_BASE="${BASE%e}"
-                            
-                            local CLEAN_PARTS=()
-                            
-                            # 1. Resolve Present Tense (Index 0)
-                            if [[ "${PARTS[0]}" == *'('* ]]; then
-                                local P1=$(echo "${PARTS[0]}" | cut -d'(' -f1)
-                                local P3_SUF=$(echo "${PARTS[0]}" | cut -d'(' -f2 | tr -d ')')
-                                CLEAN_PARTS+=("$P1" "${P1}${P3_SUF}")
-                            else
-                                CLEAN_PARTS+=("$BASE")
-                                CLEAN_PARTS+=($(_resolve_form "${PARTS[0]}" "$BASE" "$ING_BASE" 0))
-                            fi
-
-                            # 2. Resolve Remaining Parts (Past, Participle, Gerund)
-                            for (( i=1; i<${#PARTS[@]}; i++ )); do
-                                local IS_GERUND=0
-                                [[ $i -eq $((${#PARTS[@]} - 1)) ]] && IS_GERUND=1
-                                CLEAN_PARTS+=($(_resolve_form "${PARTS[$i]}" "$BASE" "$ING_BASE" "$IS_GERUND"))
-                            done
-
-                            # 3. Map CLEAN_PARTS to JSON based on count
-                            local P1="${CLEAN_PARTS[0]}"
-                            local P3="${CLEAN_PARTS[1]}"
-                            local DST="${CLEAN_PARTS[2]}"
-                            
-                            if [[ ${#CLEAN_PARTS[@]} -eq 5 ]]; then
-                                local PPT="${CLEAN_PARTS[3]}"
-                                local GER="${CLEAN_PARTS[4]}"
-                                CONJ_OBJ=$(jq -n --arg p1 "$P1" --arg p3 "$P3" --arg d "$DST" --arg pp "$PPT" --arg ing "$GER" \
-                                    '{present_first_second_singular: $p1, present_third_singular: $p3, past: $d, past_participle: $pp, present_participle: $ing}')
-                            else
-                                local GER="${CLEAN_PARTS[3]}"
-                                CONJ_OBJ=$(jq -n --arg p1 "$P1" --arg p3 "$P3" --arg d "$DST" --arg ing "$GER" \
-                                    '{present_first_second_singular: $p1, present_third_singular: $p3, past: $d, present_participle: $ing}')
-                            fi
-                        fi
-                    fi
-                    
-                    # --- NOUN DECLENSIONS (PLURALS) ---
-                    if [[ "$POS_FULL" == *"noun"* && ${#PARTS[@]} -ge 1 ]]; then
-                        local PLURAL_RAW=$(echo "${PARTS[0]}" | tr -d ',')
-                        if [[ -n "$PLURAL_RAW" ]]; then
-                            local PLURAL_BASE="$DISPLAY_NAME"
-                            
-                            # Smart-strip trailing vowels if suffix starts with a vowel
-                            if [[ "$PLURAL_RAW" == -* ]]; then
-                                local SUFFIX="${PLURAL_RAW#-}"
-                                if [[ "$DISPLAY_NAME" == *ie && "$SUFFIX" == i* ]]; then
-                                    PLURAL_BASE="${DISPLAY_NAME%ie}"
-                                elif [[ "$DISPLAY_NAME" == *e && "$SUFFIX" == [aeiou]* ]]; then
-                                    PLURAL_BASE="${DISPLAY_NAME%e}"
-                                fi
-                            fi
-                            
-                            local PLURAL_FORM=$(_resolve_form "$PLURAL_RAW" "$PLURAL_BASE" "$PLURAL_BASE" 0)
-                            DECL_OBJ=$(jq -n --arg p "$PLURAL_FORM" '{plural: $p}')
-                        fi
-                    fi
-
-                    # --- ADJECTIVE DERIVATIONS ---
-                    if [[ "$POS_FULL" == *"adjective"* && ${#PARTS[@]} -ge 1 ]]; then
-                        local ADV_FORM=""
-                        local NOUN_FORM=""
-                        local COMP_FORM=""
-                        local SUP_FORM=""
-                        
-                        for part in "${PARTS[@]}"; do
-                            local RAW_SUF=$(echo "$part" | tr -d ',\r')
-                            [[ -z "$RAW_SUF" ]] && continue
-                            
-                            local ADJ_BASE="$DISPLAY_NAME"
-                            
-                            # Smart-strip for adjectives (e.g., horrible + -y -> horribly, happy + -ily -> happily)
-                            if [[ "$RAW_SUF" == -* ]]; then
-                                local SUFFIX="${RAW_SUF#-}"
-                                if [[ "$DISPLAY_NAME" == *le && "$SUFFIX" == "y" ]]; then
-                                    ADJ_BASE="${DISPLAY_NAME%e}"
-                                elif [[ "$DISPLAY_NAME" == *y && "$SUFFIX" == i* ]]; then
-                                    ADJ_BASE="${DISPLAY_NAME%y}"
-                                fi
-                            fi
-                            
-                            local DERIVED_FORM=$(_resolve_form "$RAW_SUF" "$ADJ_BASE" "$ADJ_BASE" 0)
-                            
-                            # Sort into categories based on suffix
-                            if [[ "$RAW_SUF" == "-ly" || "$RAW_SUF" == "-ily" || "$RAW_SUF" == "-y" || "$DERIVED_FORM" == *ly || "$DERIVED_FORM" == *y ]]; then
-                                ADV_FORM="$DERIVED_FORM"
-                            elif [[ "$RAW_SUF" == "-ness" || "$DERIVED_FORM" == *ness ]]; then
-                                NOUN_FORM="$DERIVED_FORM"
-                            elif [[ "$RAW_SUF" == "-er" || "$RAW_SUF" == "-iar" || "$DERIVED_FORM" == *er || "$DERIVED_FORM" == *ar ]]; then
-                                COMP_FORM="$DERIVED_FORM"
-                            elif [[ "$RAW_SUF" == "-est" || "$RAW_SUF" == "-iest" || "$DERIVED_FORM" == *est ]]; then
-                                SUP_FORM="$DERIVED_FORM"
-                            fi
-                        done
-                        
-                        if [[ -n "$ADV_FORM" || -n "$NOUN_FORM" || -n "$COMP_FORM" || -n "$SUP_FORM" ]]; then
-                            DERIV_OBJ="{}"
-                            [[ -n "$COMP_FORM" ]] && DERIV_OBJ=$(echo "$DERIV_OBJ" | jq --arg c "$COMP_FORM" '. + {comparative: $c}')
-                            [[ -n "$SUP_FORM" ]] && DERIV_OBJ=$(echo "$DERIV_OBJ" | jq --arg s "$SUP_FORM" '. + {superlative: $s}')
-                            [[ -n "$ADV_FORM" ]] && DERIV_OBJ=$(echo "$DERIV_OBJ" | jq --arg a "$ADV_FORM" '. + {adverb: $a}')
-                            [[ -n "$NOUN_FORM" ]] && DERIV_OBJ=$(echo "$DERIV_OBJ" | jq --arg n "$NOUN_FORM" '. + {noun: $n}')
-                            [[ "$DERIV_OBJ" == "{}" ]] && DERIV_OBJ="null"
-                        fi
-                    fi
-                else
-                    DISPLAY_NAME="$CONTENT"
-                fi
-
-                local LINE_OBJ=$(jq -n \
-                    --arg name "$DISPLAY_NAME" \
-                    --arg origin "$ORIGIN_NAME" \
-                    --arg pos "$POS_FULL" \
-                    --argjson conj "$CONJ_OBJ" \
-                    --argjson decl "$DECL_OBJ" \
-                    --argjson deriv "$DERIV_OBJ" \
-                    '{name: $name, origin: $origin} 
-                     | if ($pos != "") then . + {"part-of-speech": ($pos | split(","))} else . end
-                     | if ($conj != null) then . + {conjugations: $conj} else . end
-                     | if ($decl != null) then . + {declensions: $decl} else . end
-                     | if ($deriv != null) then . + {derivations: $deriv} else . end')
-                    
-                ETYM_JSON=$(echo "$ETYM_JSON" | jq --argjson obj "$LINE_OBJ" '. + [$obj]')
-            fi
-        done
-
-        local ENTRY_OBJ=$(jq -n --arg name "$WORD" --argjson ety "$ETYM_JSON" --argjson src "$SOURCES_JSON" \
-            '{name: $name, etymology: $ety, sources: $src}')
-        FINAL_ARRAY_JSON=$(echo "$FINAL_ARRAY_JSON" | jq --argjson obj "$ENTRY_OBJ" '. + [$obj]')
-    done < <(awk -v RS="" '{print $0 "\n@END@"}' "$FILE_PATH")
-
-    echo "$FINAL_ARRAY_JSON" | jq '.'
+    local word="$1"
+    [[ -z "$word" ]] && { echo "Usage: etym-export <word>"; return 1; }
+    local file
+    file=$(_etym_resolve_file "$word") || return 1
+    etym-parse "$file" | jq -s '.'
 }
 
 
-etym-create-histories() {
-    local DRY_RUN=0
-    local VERBOSE=0
-    local DIRS=""
-    
-    # Assuming these match your environment variables
-    local SOURCE_DIR="$DICT_DIR"  
-    local OUTPUT_DIR="$HISTORIES_DIR"
+# =============================================================================
+# ANALYSIS
+# =============================================================================
 
-    # 1. Parse Arguments
+# etym-summarize [path] [--json] [-o <file>]
+# Prints POS and language-origin statistics across a dictionary directory.
+etym-summarize() {
+    local format="text"
+    local out_file=""
+    local target_input=""
+
     while [[ "$#" -gt 0 ]]; do
         case $1 in
-            -d|--dry-run) DRY_RUN=1; shift ;;
-            -v|--verbose) VERBOSE=1; shift ;;
-            --dirs) 
-                DIRS="$2"
-                shift 2
-                ;;
-            -h|--help)
-                echo "Usage: etym-create-histories [options]"
-                echo "Extract POS-tagged stanzas to create individual history files."
-                echo "Options:"
-                echo "  -d, --dry-run      Preview what would be extracted"
-                echo "  -v, --verbose      Show detailed processing information"
-                echo "  --dirs <a,b,c>     Only process specific directories"
-                return 0
-                ;;
-            *) 
-                echo "Unknown parameter passed: $1"
-                return 1
-                ;;
+            --json)      format="json"; shift ;;
+            -o|--out)    out_file="$2"; shift 2 ;;
+            *)           [[ -z "$target_input" ]] && target_input="$1"; shift ;;
         esac
     done
 
-    # Convert comma-separated dirs into an array, or default to all a-z dirs
-    local TARGET_DIRS=()
-    if [[ -n "$DIRS" ]]; then
-        IFS=',' read -ra TARGET_DIRS <<< "$DIRS"
-    else
-        for d in "$SOURCE_DIR"/?/; do
-            [[ -d "$d" ]] && TARGET_DIRS+=("$(basename "$d")")
-        done
+    local target_path
+    if   [[ -z "$target_input" ]];             then target_path="$DICT_DIR"
+    elif [[ -d "$DICT_DIR/$target_input" ]];   then target_path="$DICT_DIR/$target_input"
+    else target_path="$target_input"; fi
+
+    [[ ! -d "$target_path" ]] && { echo "Error: Directory '$target_path' not found."; return 1; }
+
+    # Buffer the full JSONL stream once so we don't crawl the fs multiple times
+    local data
+    data=$(_etym_stream "$target_path")
+
+    if [[ "$format" == "json" ]]; then
+        local output
+        output=$(echo "$data" | jq -s '{
+            parts_of_speech: (
+                group_by(.pos) | map({tag: .[0].pos, count: length}) | sort_by(-.count)
+            ),
+            languages: (
+                map(.etymology | map(select(.lang == "ME" or .lang == "MI")) | last // .[-1]) |
+                group_by(.lang) | map({tag: .[0].lang, count: length}) | sort_by(-.count)
+            ),
+            cross_tabulation: (
+                map({
+                    pos: .pos,
+                    lang: (.etymology | map(select(.lang == "ME" or .lang == "MI")) | last // .[-1] | .lang)
+                }) |
+                group_by([.pos, .lang]) |
+                map({pos: .[0].pos, lang: .[0].lang, count: length}) |
+                sort_by(-.count)
+            )
+        }')
+        if [[ -n "$out_file" ]]; then
+            echo "$output" > "$out_file" && echo "✅ Summary written to $out_file"
+        else
+            echo "$output"
+        fi
+        return 0
     fi
 
-    echo "Creating histories from $SOURCE_DIR to $OUTPUT_DIR"
-    [[ $DRY_RUN -eq 1 ]] && echo "⚠️ DRY RUN MODE: No files will be written."
+    # ---- Text mode ----
+    local output=""
+    output+="Summarizing Data in: $target_path\n"
+    output+="=================================================================\n\n"
 
-    # Define the core text-processing engine
-    local AWK_SCRIPT='
+    # Parts of Speech
+    output+="PARTS OF SPEECH\n"
+    output+="-----------------------------------------------------------------\n"
+    local total_pos=0
+    while IFS=$'\t' read -r count tag; do
+        [[ -z "$count" ]] && continue
+        local full_name
+        full_name=$(grep -i "^$tag[[:space:]]" "$CONFIG_DIR/parts-of-speech.tsv" 2>/dev/null \
+            | sed "s/^$tag[[:space:]]*//" | xargs)
+        output+=$(printf "%7s | %-25s (%s)\n" "$count" "${full_name:-Unknown}" "$tag")
+        output+="\n"
+        total_pos=$((total_pos + count))
+    done < <(echo "$data" | jq -r '.pos' | sort | uniq -c | sort -rn | awk '{print $1"\t"$2}')
+    output+="-----------------------------------------------------------------\n"
+    output+=$(printf "%7s | TOTAL\n\n" "$total_pos")
+
+    # Language Origins
+    output+="LANGUAGE ORIGINS\n"
+    output+="-----------------------------------------------------------------\n"
+    local total_lang=0
+    while IFS=$'\t' read -r count tag; do
+        [[ -z "$count" ]] && continue
+        local full_name
+        full_name=$(get_lang_name "$tag")
+        output+=$(printf "%7s | %-25s [%s]\n" "$count" "${full_name:-Unknown}" "$tag")
+        output+="\n"
+        total_lang=$((total_lang + count))
+    done < <(echo "$data" | jq -r '
+        .etymology | map(select(.lang == "ME" or .lang == "MI")) | last // .[-1] | .lang // "?"
+    ' | sort | uniq -c | sort -rn | awk '{print $1"\t"$2}')
+    output+="-----------------------------------------------------------------\n"
+    output+=$(printf "%7s | TOTAL\n\n" "$total_lang")
+
+    # Cross-tabulation (Top 5 POS × Top 5 LANG)
+    output+="CROSS-TABULATION (Top 5 POS × Top 5 LANG)\n"
+    output+="-----------------------------------------------------------------\n"
+
+    local top_pos=()
+    local top_langs=()
+    while IFS=$'\t' read -r _ tag; do
+        top_pos+=("$tag")
+        [[ ${#top_pos[@]} -ge 5 ]] && break
+    done < <(echo "$data" | jq -r '.pos' | sort | uniq -c | sort -rn | awk '{print $1"\t"$2}')
+
+    while IFS=$'\t' read -r _ tag; do
+        top_langs+=("$tag")
+        [[ ${#top_langs[@]} -ge 5 ]] && break
+    done < <(echo "$data" | jq -r '
+        .etymology | map(select(.lang == "ME" or .lang == "MI")) | last // .[-1] | .lang // "?"
+    ' | sort | uniq -c | sort -rn | awk '{print $1"\t"$2}')
+
+    local header
+    header=$(printf "%-18s" "POS \\ LANG")
+    for lang in "${top_langs[@]}"; do
+        header+=$(printf "| %-7s " "$lang")
+    done
+    output+="$header\n"
+    output+="-----------------------------------------------------------------\n"
+
+    for pos in "${top_pos[@]}"; do
+        local row
+        row=$(printf "%-18s" "$pos")
+        for lang in "${top_langs[@]}"; do
+            local val
+            val=$(echo "$data" | jq -r \
+                --arg p "$pos" --arg l "$lang" '
+                select(
+                    .pos == $p and
+                    (.etymology | map(select(.lang == "ME" or .lang == "MI")) | last // .[-1] | .lang) == $l
+                )' | wc -l | tr -d ' ')
+            row+=$(printf "| %-7s " "${val:-0}")
+        done
+        output+="$row\n"
+    done
+    output+="-----------------------------------------------------------------\n"
+
+    if [[ -n "$out_file" ]]; then
+        echo -e "$output" > "$out_file" && echo "✅ Summary written to $out_file"
+    else
+        echo -e "$output"
+    fi
+}
+
+
+# etym-affix [path] [--prefix|--suffix] [-n <len>] [-p <pos>] [-l <lang>]
+# Morphological frequency analysis of prefixes or suffixes across the dictionary.
+etym-affix() {
+    local affix_type="suffix"
+    local affix_len=3
+    local filter_pos=""
+    local filter_lang=""
+    local target_input=""
+
+    while [[ "$#" -gt 0 ]]; do
+        case $1 in
+            --prefix)    affix_type="prefix"; shift ;;
+            --suffix)    affix_type="suffix"; shift ;;
+            -n|--length) affix_len="$2"; shift 2 ;;
+            -p|--pos)    filter_pos="${2,,}"; shift 2 ;;
+            -l|--lang)   filter_lang="${2^^}"; shift 2 ;;
+            *)           [[ -z "$target_input" ]] && target_input="$1"; shift ;;
+        esac
+    done
+
+    local target_path
+    if   [[ -z "$target_input" ]];             then target_path="$DICT_DIR"
+    elif [[ -e "$DICT_DIR/$target_input" ]];   then target_path="$DICT_DIR/$target_input"
+    elif [[ -e "$target_input" ]];             then target_path="$target_input"
+    else echo "Error: '$target_input' not found."; return 1; fi
+
+    echo "Morphological Analysis: $affix_type ($affix_len letters)"
+    [[ -n "$filter_pos" ]]  && echo "Filter POS:  $filter_pos"
+    [[ -n "$filter_lang" ]] && echo "Filter LANG: $filter_lang"
+    echo "================================================================="
+
+    _etym_stream "$target_path" | \
+    jq -r \
+        --arg  type  "$affix_type" \
+        --argjson len "$affix_len" \
+        --arg  fpos  "$filter_pos" \
+        --arg  flang "$filter_lang" '
+        select(
+            ($fpos  == "" or (.pos | ascii_downcase | contains($fpos))) and
+            ($flang == "" or (.etymology | any(.lang == $flang)))
+        ) |
+        .inglisce_word |
+        if length >= $len then
+            if $type == "prefix" then .[0:$len] + "-"
+            else "-" + .[-($len):]
+            end
+        else empty end
+    ' | sort | uniq -c | sort -rn | head -20 | \
+    awk '
     BEGIN {
-        RS = "";       # Paragraph mode (stanzas separated by blank lines)
-        FS = "\n";     # Field separator is a newline
-        
-        # POS mapping dictionary
-        pos_map["(m n)"]="n"; pos_map["(f n)"]="n"; pos_map["(n)"]="n";
-        pos_map["(v)"]="v"; pos_map["(intr v)"]="v"; pos_map["(tr v)"]="v";
-        pos_map["(conj)"]="conj"; pos_map["(adj)"]="adj"; pos_map["(prep)"]="prep";
-        pos_map["(pron)"]="pron"; pos_map["(adv)"]="adv"; pos_map["(suff)"]="suff";
-        pos_map["(pref)"]="pref"; pos_map["(interj)"]="interj"; pos_map["(obs)"]="obs";
+        printf "%-15s | %-10s | %s\n", "AFFIX", "COUNT", "PERCENTAGE"
+        print "-----------------------------------------------------------------"
+        total = 0
     }
-
-    # Helper function to extract modern word 
-    function extract_word(line,    stripped, comma_parts, n_comma, final_part, words) {
-        stripped = line
-        gsub(/\[[A-Z]+\]/, "", stripped)       # Remove tags like [ME], [MI], [FR]
-        
-        # Split by comma to handle variants, taking the last one
-        n_comma = split(stripped, comma_parts, ",")
-        final_part = comma_parts[n_comma]
-        
-        gsub(/^[ \t]+|[ \t]+$/, "", final_part)  # Trim whitespace
-        sub(/^[tT][oO][ \t]+/, "", final_part)   # Strip "to " for infinitives
-        
-        split(final_part, words, "[ \t]+")       # Take first word of that final part
-        return words[1]
-    }
-
-    # Process each stanza
-    {
-        pos_tag = ""; pos_val = ""; pos_line_idx = 0; 
-        inline_pos = 0; modern_word = "";
-        
-        # Step 1: Find POS indicator
-        for(i=1; i<=NF; i++) {
-            for (tag in pos_map) {
-                if (index($i, tag) > 0) {
-                    pos_tag = tag;
-                    pos_val = pos_map[tag];
-                    pos_line_idx = i;
-                    break;
-                }
-            }
-            if (pos_tag != "") break;
-        }
-        
-        # Skip if no POS found
-        if (pos_tag == "") next; 
-
-        # Step 2: Find Modern Word (Priority matching)
-        
-        # Priority 0: Inline POS (e.g. word [ME] (v) ...)
-        if (match($pos_line_idx, /\[[A-Z]+\]/)) {
-            inline_pos = 1;
-            modern_word = extract_word($pos_line_idx);
-        }
-        
-        # Priority 1: [ME]
-        if (modern_word == "") {
-            for(i=1; i<=NF; i++) {
-                if (index($i, "[ME]") > 0) { modern_word = extract_word($i); break; }
-            }
-        }
-        
-        # Priority 2: [MI]
-        if (modern_word == "") {
-            for(i=1; i<=NF; i++) {
-                if (index($i, "[MI]") > 0) { modern_word = extract_word($i); break; }
-            }
-        }
-        
-        # Priority 3: Fallback to line before POS
-        if (modern_word == "" && pos_line_idx > 1) {
-            modern_word = extract_word($(pos_line_idx - 1));
-        }
-
-        # Handle tracking output to Bash
-        if (modern_word == "") {
-            print "SKIP" > "/dev/stderr"
-            next;
-        }
-
-        # Step 3: Write Output
-        out_file = target_dir "/" modern_word "_" pos_val ".txt"
-        print "EXTRACT|" out_file > "/dev/stderr"
-        
-        if (dry_run == 0) {
-            for (i=1; i<=NF; i++) {
-                if (i == pos_line_idx) {
-                    if (inline_pos) {
-                        # Remove POS tag but keep the line
-                        cleaned = $i;
-                        sub(pos_tag, "", cleaned);
-                        # Clean up double spaces left behind
-                        gsub(/[ \t]+/, " ", cleaned);
-                        print cleaned > out_file;
-                    }
-                    # If not inline, we skip printing this line entirely
-                } else {
-                    print $i > out_file;
-                }
-            }
-            # Crucial: Close file to prevent "too many open files" error
-            close(out_file)
-        }
-    }
-    '
-
-    # Global Stats
-    local TOTAL_EXTRACTED=0
-    local TOTAL_SKIPPED=0
-
-    # 2. Main Processing Loop
-    for dir in "${TARGET_DIRS[@]}"; do
-        dir=$(echo "$dir" | xargs)
-        local current_src="$SOURCE_DIR/$dir"
-        local target_dir="$OUTPUT_DIR/$dir"
-        
-        if [[ ! -d "$current_src" ]]; then
-            [[ $VERBOSE -eq 1 ]] && echo "Skipping $dir/ (Not a directory)"
-            continue
-        fi
-
-        [[ $DRY_RUN -eq 0 ]] && mkdir -p "$target_dir"
-        [[ $VERBOSE -eq 1 ]] && echo -e "\nProcessing directory: $dir/"
-
-        # Track directory specific stats
-        local dir_extracted=0
-
-        while read -r file; do
-            # Run the awk script. It outputs tracking data to stderr, which we capture.
-            # Using stderr allows awk to write to actual files freely without mixing streams.
-            local awk_out
-            awk_out=$(awk -v target_dir="$target_dir" -v dry_run="$DRY_RUN" "$AWK_SCRIPT" "$file" 2>&1 >/dev/null)
-            
-            # Parse awk tracking output
-            while IFS= read -r line; do
-                if [[ "$line" == "SKIP" ]]; then
-                    ((TOTAL_SKIPPED++))
-                elif [[ "$line" == EXTRACT\|* ]]; then
-                    ((dir_extracted++))
-                    ((TOTAL_EXTRACTED++))
-                    if [[ $VERBOSE -eq 1 ]]; then
-                        local extracted_path="${line#EXTRACT|}"
-                        echo "  -> Created: $(basename "$extracted_path")"
-                    fi
-                fi
-            done <<< "$awk_out"
-
-        done < <(find "$current_src" -name "*.txt")
-
-        if [[ $dir_extracted -gt 0 && $VERBOSE -eq 0 ]]; then
-            echo "Extracted: $dir/ ($dir_extracted files)"
-        fi
-    done
-
-    # 3. Final Summary
-    echo -e "\n------------------------------------------"
-    echo "Processing complete!"
-    echo "Extracted $TOTAL_EXTRACTED stanzas with part-of-speech indicators."
-    if [[ $TOTAL_SKIPPED -gt 0 ]]; then
-        echo "Note: Skipped $TOTAL_SKIPPED stanzas that had POS but no extractable word."
-    fi
+    { count[NR] = $1; affix[NR] = $2; total += $1 }
+    END {
+        for (i = 1; i <= NR; i++)
+            printf "%-15s | %-10d | %.2f%%\n", affix[i], count[i], (count[i] / total) * 100
+        print "================================================================="
+    }'
 }
 
 
-etym-lint() {
-    local TARGET_INPUT=""
-    local STRICT_MODE=0
+# =============================================================================
+# BUILD PIPELINE
+# =============================================================================
 
-    # 1. Parse Arguments
-    while [[ "$#" -gt 0 ]]; do
-        case $1 in
-            --strict) STRICT_MODE=1; shift ;;
-            *) 
-                if [[ -z "$TARGET_INPUT" ]]; then
-                    TARGET_INPUT="$1"
-                fi
-                shift 
-                ;;
-        esac
-    done
+# etym-build-dataset [output_file]
+# Crawls DICT_DIR and writes master_dataset.jsonl — the primary Node input.
+# Replaces the old etym-flatten --jsonl workflow.
+etym-build-dataset() {
+    local out_file="${1:-$ETYM_LIB_DIR/dist/master_dataset.jsonl}"
+    mkdir -p "$(dirname "$out_file")"
 
-    # 2. Resolve Path
-    local TARGET_DIR=""
-    if [ -z "$TARGET_INPUT" ]; then
-        TARGET_DIR="$DICT_DIR"
-    elif [ -e "$DICT_DIR/$TARGET_INPUT" ]; then
-        TARGET_DIR="$DICT_DIR/$TARGET_INPUT"
-    else
-        TARGET_DIR="$TARGET_INPUT"
-    fi
-
-    if [ ! -e "$TARGET_DIR" ]; then
-        echo "Error: Target $TARGET_DIR not found."
-        return 1
-    fi
-
-    echo -e "Linting Data in: $TARGET_DIR"
-    echo -e "=================================================================\n"
-
-    local TOTAL_FILES=0
-    local FATAL_COUNT=0
-    local ERROR_COUNT=0
-    local WARN_COUNT=0
-
-    # 3. Linter Execution
-    while IFS= read -r -d '' file; do
-        TOTAL_FILES=$((TOTAL_FILES + 1))
-        local file_issues=()
-
-        # Rule 1: Empty file check [FATAL]
-        if [ ! -s "$file" ]; then
-            file_issues+=("\e[31m[FATAL]\e[0m File is completely empty.")
-            FATAL_COUNT=$((FATAL_COUNT + 1))
-        else
-            # Strip URLs for tag analysis to prevent false positives
-            local content_no_urls=$(grep -rhv "http" "$file")
-
-            # Rule 2: Missing POS tag [ERROR]
-            if ! echo "$content_no_urls" | grep -Poq "\([a-z ]{1,5}(, [a-z ]{1,5})*\)"; then
-                file_issues+=("\e[31m[ERROR]\e[0m Missing or malformed Part of Speech tag '()'")
-                ERROR_COUNT=$((ERROR_COUNT + 1))
-            fi
-
-            # Rule 3: Missing Language tag [ERROR]
-            if ! echo "$content_no_urls" | grep -Poq "\[[A-Z]+\]"; then
-                file_issues+=("\e[31m[ERROR]\e[0m Missing or malformed Language Origin tag '[]'")
-                ERROR_COUNT=$((ERROR_COUNT + 1))
-            fi
-
-            # Rule 4: Trailing Whitespace [WARN]
-            if grep -q "[[:space:]]$" "$file"; then
-                file_issues+=("\e[33m[WARN]\e[0m  Line(s) contain trailing whitespace.")
-                WARN_COUNT=$((WARN_COUNT + 1))
-            fi
-            
-            # Rule 5: Unclosed Brackets/Parentheses on non-URL lines [WARN]
-            local unclosed_paren=$(echo "$content_no_urls" | grep -E "\([^)]*$|^[^(]*\)")
-            local unclosed_bracket=$(echo "$content_no_urls" | grep -E "\[[^]]*$|^[^[]*\]")
-            
-            if [[ -n "$unclosed_paren" && "$unclosed_paren" != "$content_no_urls" ]]; then
-                 file_issues+=("\e[33m[WARN]\e[0m  Potentially unclosed or orphaned parentheses.")
-                 WARN_COUNT=$((WARN_COUNT + 1))
-            fi
-
-            # Rule 6: Tags on the same line collision [ERROR]
-            # This regex checks if a Language Tag [XXX] and a POS Tag (xxx) share the same line
-            if echo "$content_no_urls" | grep -Eq "\[[A-Z]+\].*\(|\(.*\[[A-Z]+\]"; then
-                file_issues+=("\e[31m[ERROR]\e[0m Language tag '[]' and POS tag '()' must be on separate lines.")
-                ERROR_COUNT=$((ERROR_COUNT + 1))
-            fi
-        fi
-
-        # Output issues if any were found
-        if [ ${#file_issues[@]} -gt 0 ]; then
-            local relative_path="${file#$DICT_DIR/}"
-            echo -e "📝 \e[1m$relative_path\e[0m"
-            for issue in "${file_issues[@]}"; do
-                echo -e "   $issue"
-            done
-            echo ""
-        fi
-
-    done < <(find "$TARGET_DIR" -type f -print0)
-
-    # 4. Summary Output
-    echo "-----------------------------------------------------------------"
-    echo "LINTING COMPLETE"
-    echo "-----------------------------------------------------------------"
-    printf "Files Scanned: %d\n" "$TOTAL_FILES"
-    printf "Fatal Errors:  \e[31m%d\e[0m\n" "$FATAL_COUNT"
-    printf "Standard Errs: \e[31m%d\e[0m\n" "$ERROR_COUNT"
-    printf "Warnings:      \e[33m%d\e[0m\n" "$WARN_COUNT"
+    echo "🔨 Building dataset from $DICT_DIR..."
+    echo "   Output: $out_file"
     echo "================================================================="
 
-    # Return error code if failures exist
-    if [ "$FATAL_COUNT" -gt 0 ] || [ "$ERROR_COUNT" -gt 0 ]; then
-        return 1
-    fi
-    return 0
+    _etym_stream "$DICT_DIR" > "$out_file"
+
+    local count
+    count=$(wc -l < "$out_file")
+    echo "✅ $count stanzas written to $out_file"
 }
 
 
-# etym-flatten() {
-#     local TARGET_DIR=""
-#     local FORMAT="csv" # default to csv
-#     local OUT_FILE=""
-
-#     # Parse arguments
-#     while [[ "$#" -gt 0 ]]; do
-#         case $1 in
-#             --csv) FORMAT="csv"; shift ;;
-#             --jsonl) FORMAT="jsonl"; shift ;;
-#             -o|--output) OUT_FILE="$2"; shift 2 ;;
-#             *) 
-#                 # If it's not a flag, assume it's the target directory
-#                 if [[ -z "$TARGET_DIR" ]]; then
-#                     TARGET_DIR="$1"
-#                 fi
-#                 shift 
-#                 ;;
-#         esac
-#     done
-
-#     # Fallback to default dictionary directory if none was provided
-#     if [[ -z "$TARGET_DIR" ]]; then
-#         TARGET_DIR="$DICT_DIR"
-#     fi
-
-#     # Default output paths if not specified
-#     if [ -z "$OUT_FILE" ]; then
-#         if [ "$FORMAT" == "jsonl" ]; then
-#             OUT_FILE="$ETYM_LIB_DIR/dist/master_dataset.jsonl"
-#         else
-#             OUT_FILE="$ETYM_LIB_DIR/dist/master_dataset.csv"
-#         fi
-#     fi
-
-#     # Ensure output directory exists
-#     mkdir -p "$(dirname "$OUT_FILE")"
-
-#     # Initialize output file with headers if CSV
-#     if [ "$FORMAT" == "csv" ]; then
-#         echo '"File_Name","Modern_English","Reformed_Word","Conjugations","Part_of_Speech"' > "$OUT_FILE"
-#     else
-#         > "$OUT_FILE" # clear existing JSONL file
-#     fi
-
-#     echo "Flattening dictionary to $FORMAT..."
-#     echo "Output: $OUT_FILE"
-#     echo "================================================================="
-
-#     find "$TARGET_DIR" -type f -name "*.txt" | while read -r FILE; do
-#         awk -v file="$FILE" -v RS="" '
-#             {
-#                 me_word = ""
-#                 inglisce_word = ""
-#                 pos = ""
-#                 conjs = ""
-
-#                 # Split stanza into lines
-#                 n = split($0, lines, "\n")
-                
-#                 for (i=1; i<=n; i++) {
-#                     line = lines[i]
-#                     sub(/\r$/, "", line) # CRITICAL: Strip hidden Windows carriage returns
-                    
-#                     # Skip URLs
-#                     if (line ~ /^https?:/) continue;
-
-#                     # 1. English/Etymology Line 
-#                     if (line !~ /\(/ && line != "") {
-#                         raw_me = line
-#                         sub(/ \[[A-Z]+\]/, "", raw_me)
-#                         split(raw_me, me_parts, ",")
-#                         me_word = me_parts[1]
-                        
-#                         # Strip standard infinitives and whitespace
-#                         sub(/^[tT][oO][ \t]+/, "", me_word)
-#                         gsub(/^[ \t]+|[ \t]+$/, "", me_word)
-#                         continue;
-#                     }
-
-#                     # 2. Inglisce Line (Root + Conjugations + POS)
-#                     if (line ~ /\(/) {
-#                         ing_raw = line
-                        
-#                         # Extract POS (STRICTLY capture only the final parentheses without nested ones)
-#                         match(ing_raw, /\([^()]+\)[ \t]*$/)
-#                         if (RSTART > 0) {
-#                             pos = substr(ing_raw, RSTART + 1, RLENGTH - 2)
-#                             ing_raw = substr(ing_raw, 1, RSTART - 1)
-#                         }
-
-#                         gsub(/^[ \t]+|[ \t]+$/, "", ing_raw)
-
-#                         num_parts = split(ing_raw, parts, " ")
-                        
-#                         # Strip the infinitive "to" from the Inglisce root ONLY if it acts as a marker for a second word
-#                         if (tolower(parts[1]) == "to" && num_parts > 1) {
-#                             inglisce_word = parts[2]
-#                             start_idx = 3
-#                         } else {
-#                             inglisce_word = parts[1]
-#                             start_idx = 2
-#                         }
-                        
-#                         sub(/,$/, "", inglisce_word)
-
-#                         conjs = ""
-#                         for (j=start_idx; j<=num_parts; j++) {
-#                             c = parts[j]
-#                             sub(/,$/, "", c)
-#                             if (c != "") {
-#                                 conjs = conjs (conjs=="" ? "" : " ") c
-#                             }
-#                         }
-#                     }
-#                 }
-
-#                 if (me_word != "" && inglisce_word != "") {
-#                     # Format conjugations into a valid JSON array
-#                     if (conjs != "") {
-#                         split(conjs, conj_arr, " ")
-#                         conj_str = "["
-#                         for (j=1; j<=length(conj_arr); j++) {
-#                             conj_str = conj_str "\"" conj_arr[j] "\"" (j<length(conj_arr) ? ", " : "")
-#                         }
-#                         conj_str = conj_str "]"
-#                     } else {
-#                         conj_str = "[]"
-#                     }
-
-#                     if ("'"$FORMAT"'" == "jsonl") {
-#                         printf "{\"me_word\": \"%s\", \"inglisce_word\": \"%s\", \"pos\": \"%s\", \"conjugations\": %s}\n", me_word, inglisce_word, pos, conj_str >> "'"$OUT_FILE"'"
-#                     } else {
-#                         printf "\"%s\",\"%s\",\"%s\",\"%s\",\"%s\"\n", file, me_word, inglisce_word, conjs, pos >> "'"$OUT_FILE"'"
-#                     }
-#                 }
-#             }
-#         ' "$FILE"
-#     done
-
-#     echo "✅ Extraction Complete!"
-# }
-
+# etym-flatten [path] [--jsonl|--csv] [-o <file>]
+# Backward-compatible flattening command. Delegates to etym-build-dataset for JSONL.
 etym-flatten() {
-    local TARGET_DIR=""
-    local FORMAT="csv" # default to csv
-    local OUT_FILE=""
+    local format="jsonl"
+    local out_file=""
+    local target_input=""
 
-    # Parse arguments
     while [[ "$#" -gt 0 ]]; do
         case $1 in
-            --csv) FORMAT="csv"; shift ;;
-            --jsonl) FORMAT="jsonl"; shift ;;
-            -o|--output) OUT_FILE="$2"; shift 2 ;;
-            *) 
-                # If it's not a flag, assume it's the target directory
-                if [[ -z "$TARGET_DIR" ]]; then
-                    TARGET_DIR="$1"
-                fi
-                shift 
-                ;;
+            --csv)       format="csv"; shift ;;
+            --jsonl)     format="jsonl"; shift ;;
+            -o|--output) out_file="$2"; shift 2 ;;
+            *)           [[ -z "$target_input" ]] && target_input="$1"; shift ;;
         esac
     done
 
-    # Fallback to default dictionary directory if none was provided
-    if [[ -z "$TARGET_DIR" ]]; then
-        TARGET_DIR="$DICT_DIR"
+    local target_path="${target_input:-$DICT_DIR}"
+    [[ ! -d "$target_path" ]] && { echo "Error: '$target_path' not found."; return 1; }
+
+    if [[ -z "$out_file" ]]; then
+        out_file="$ETYM_LIB_DIR/dist/master_dataset.$format"
     fi
+    mkdir -p "$(dirname "$out_file")"
 
-    # Default output paths if not specified
-    if [ -z "$OUT_FILE" ]; then
-        if [ "$FORMAT" == "jsonl" ]; then
-            OUT_FILE="$ETYM_LIB_DIR/dist/master_dataset.jsonl"
-        else
-            OUT_FILE="$ETYM_LIB_DIR/dist/master_dataset.csv"
-        fi
-    fi
-
-    # Ensure output directory exists
-    mkdir -p "$(dirname "$OUT_FILE")"
-
-    # Initialize output file with headers if CSV
-    if [ "$FORMAT" == "csv" ]; then
-        echo '"File_Name","Modern_English","Reformed_Word","Conjugations","Part_of_Speech"' > "$OUT_FILE"
-    else
-        > "$OUT_FILE" # clear existing JSONL file
-    fi
-
-    echo "Flattening dictionary to $FORMAT..."
-    echo "Output: $OUT_FILE"
+    echo "Flattening dictionary to $format..."
+    echo "Output: $out_file"
     echo "================================================================="
 
-    find "$TARGET_DIR" -type f -name "*.txt" | while read -r FILE; do
-        awk -v file="$FILE" -v RS="" '
-            {
-                me_word = ""
-                inglisce_word = ""
-                pos = ""
-                conjs = ""
+    if [[ "$format" == "jsonl" ]]; then
+        _etym_stream "$target_path" > "$out_file"
+    else
+        # CSV: header + one row per stanza
+        echo '"me_word","inglisce_word","pos","conjugations"' > "$out_file"
+        _etym_stream "$target_path" | \
+            jq -r '[.me_word, .inglisce_word, .pos, (.conjugations | join(" "))] | @csv' \
+            >> "$out_file"
+    fi
 
-                # Split stanza into lines
-                n = split($0, lines, "\n")
-                
-                for (i=1; i<=n; i++) {
-                    line = lines[i]
-                    sub(/\r$/, "", line) # CRITICAL: Strip hidden Windows carriage returns
-                    
-                    # Skip URLs
-                    if (line ~ /^https?:/) continue;
-
-                    # 1. English/Etymology Line 
-                    if (line !~ /\(/ && line != "") {
-                        raw_me = line
-                        sub(/ \[[A-Z]+\]/, "", raw_me)
-                        split(raw_me, me_parts, ",")
-                        me_word = me_parts[1]
-                        
-                        # Strip standard infinitives and whitespace
-                        sub(/^[tT][oO][ \t]+/, "", me_word)
-                        gsub(/^[ \t]+|[ \t]+$/, "", me_word)
-                        continue;
-                    }
-
-                    # 2. Inglisce Line (Root + Conjugations + POS)
-                    if (line ~ /\(/) {
-                        ing_raw = line
-                        
-                        # Extract POS (STRICTLY capture only the final parentheses without nested ones)
-                        match(ing_raw, /\([^()]+\)[ \t]*$/)
-                        if (RSTART > 0) {
-                            pos = substr(ing_raw, RSTART + 1, RLENGTH - 2)
-                            ing_raw = substr(ing_raw, 1, RSTART - 1)
-                        }
-
-                        gsub(/^[ \t]+|[ \t]+$/, "", ing_raw)
-
-                        num_parts = split(ing_raw, parts, " ")
-                        
-                        # Strip the infinitive "to" ONLY if it acts as a marker for a second word
-                        if (tolower(parts[1]) == "to" && num_parts > 1) {
-                            inglisce_word = parts[2]
-                            start_idx = 3
-                        } else {
-                            inglisce_word = parts[1]
-                            start_idx = 2
-                        }
-                        
-                        sub(/,$/, "", inglisce_word)
-
-                        conjs = ""
-                        for (j=start_idx; j<=num_parts; j++) {
-                            c = parts[j]
-                            sub(/,$/, "", c)
-                            if (c != "") {
-                                conjs = conjs (conjs=="" ? "" : " ") c
-                            }
-                        }
-                    }
-                }
-
-                if (me_word != "" && inglisce_word != "") {
-                    # Format conjugations into a valid JSON array
-                    if (conjs != "") {
-                        split(conjs, conj_arr, " ")
-                        conj_str = "["
-                        for (j=1; j<=length(conj_arr); j++) {
-                            conj_str = conj_str "\"" conj_arr[j] "\"" (j<length(conj_arr) ? ", " : "")
-                        }
-                        conj_str = conj_str "]"
-                    } else {
-                        conj_str = "[]"
-                    }
-
-                    if ("'"$FORMAT"'" == "jsonl") {
-                        printf "{\"me_word\": \"%s\", \"inglisce_word\": \"%s\", \"pos\": \"%s\", \"conjugations\": %s}\n", me_word, inglisce_word, pos, conj_str >> "'"$OUT_FILE"'"
-                    } else {
-                        printf "\"%s\",\"%s\",\"%s\",\"%s\",\"%s\"\n", file, me_word, inglisce_word, conjs, pos >> "'"$OUT_FILE"'"
-                    }
-                }
-            }
-        ' "$FILE"
-    done
-
-    echo "✅ Extraction Complete!"
+    local count
+    count=$(wc -l < "$out_file")
+    echo "✅ Extraction complete! $count records written."
 }
 
 
-etym-graph() {
-    local OUT_FILE="etym_graph.json"
-    local TARGET_INPUT=""
+# =============================================================================
+# GRAPH & VISUALIZATION
+# =============================================================================
 
-    # 1. Parse Arguments (-o/--out)
+# etym-graph [path] [-o <file>]
+# Builds a JSON node/edge graph of all etymological relationships.
+etym-graph() {
+    local out_file="etym_graph.json"
+    local target_input=""
+
     while [[ "$#" -gt 0 ]]; do
         case $1 in
-            -o|--out) OUT_FILE="$2"; shift 2 ;;
-            *) 
-                if [[ -z "$TARGET_INPUT" ]]; then
-                    TARGET_INPUT="$1"
-                fi
-                shift 
-                ;;
+            -o|--out) out_file="$2"; shift 2 ;;
+            *)        [[ -z "$target_input" ]] && target_input="$1"; shift ;;
         esac
     done
 
-    # 2. Resolve Path
-    local TARGET_PATH=""
-    if [ -z "$TARGET_INPUT" ]; then
-        TARGET_PATH="$DICT_DIR"
-    elif [ -e "$DICT_DIR/$TARGET_INPUT" ]; then
-        TARGET_PATH="$DICT_DIR/$TARGET_INPUT"
-    elif [ -e "$TARGET_INPUT" ]; then
-        TARGET_PATH="$TARGET_INPUT"
-    else
-        echo "Error: Target path '$TARGET_INPUT' not found."
-        return 1
-    fi
+    local target_path
+    if   [[ -z "$target_input" ]];             then target_path="$DICT_DIR"
+    elif [[ -e "$DICT_DIR/$target_input" ]];   then target_path="$DICT_DIR/$target_input"
+    elif [[ -e "$target_input" ]];             then target_path="$target_input"
+    else echo "Error: '$target_input' not found."; return 1; fi
 
-    if ! command -v jq &> /dev/null; then 
-        echo "Error: 'jq' is required to format the graph JSON."
-        return 1
-    fi
+    ! command -v jq &>/dev/null && { echo "Error: 'jq' is required."; return 1; }
 
-    echo "Building Etymological Graph from $TARGET_PATH..."
+    local reform_name="${DICT_PROJECT_NAME:-Inglisce}"
+    echo "Building Etymological Graph from $target_path..."
     echo "================================================================="
 
-    local TARGET_LANG="${DICT_PROJECT_NAME:-Inglisce}"
-
-    # 3. Stream data into Awk
-    find "$TARGET_PATH" -type f -name "*.txt" -print0 | xargs -0 cat | awk -v tgt_lang="$TARGET_LANG" '
-        BEGIN { 
-            RS=""       
-            FS="\n"     
-            node_counter = 0  # Initialize safe ID counter
-        }
-        
+    _etym_stream "$target_path" | jq -rs --arg rn "$reform_name" '
+        # Append the Inglisce node to each etymology chain, then flatten
+        map(
+            . as $e |
+            (.etymology + [{form: $e.inglisce_word, lang: $rn, pos: $e.pos}]) as $chain |
+            {
+                nodes: ($chain | map({
+                    id:    (.form + "_" + .lang),
+                    label: .form,
+                    lang:  .lang,
+                    pos:   (.pos // "")
+                })),
+                edges: (
+                    range(1; ($chain | length)) | . as $i | {
+                        source: ($chain[$i-1].form + "_" + $chain[$i-1].lang),
+                        target: ($chain[$i].form   + "_" + $chain[$i].lang)
+                    }
+                )
+            }
+        ) |
         {
-            line_count = 0
-            delete layers
-            
-            for (i=1; i<=NF; i++) {
-                if ($i ~ /^http/) break; 
-                
-                lang = tgt_lang
-                pos = ""
-                
-                if (match($i, /\[[A-Z]+\]/)) {
-                    lang = substr($i, RSTART+1, RLENGTH-2)
-                }
-                
-                if (match($i, /\(([a-z ]+(, [a-z ]+)*)\)/)) {
-                    pos = substr($i, RSTART+1, RLENGTH-2)
-                    sub(/,.*/, "", pos)
-                }
-                
-                temp_line = $i
-                gsub(/\[[A-Z]+\]/, "", temp_line)
-                gsub(/\([^)]+\)/, "", temp_line)
-                
-                n_words = split(temp_line, w_arr, ",")
-                layer_nodes = ""
-                
-                for (j=1; j<=n_words; j++) {
-                    cw = w_arr[j]
-                    gsub(/^[ \t]+|[ \t]+$/, "", cw)    
-                    sub(/^[tT][oO][ \t]+/, "", cw)     
-                    gsub(/ -[a-z]+/, "", cw)           
-                    
-                    split(cw, cw_tokens, "[ \t]+")
-                    final_w = cw_tokens[1]
-                    
-                    if (final_w != "") {
-                        gsub(/"/, "\\\"", final_w)
-                        
-                        # The Safe-ID Generator
-                        raw_id = final_w "_" lang
-                        if (!(raw_id in id_map)) {
-                            node_counter++
-                            id_map[raw_id] = "node_" node_counter
-                        }
-                        safe_id = id_map[raw_id]
-                        
-                        # Register Node using safe_id
-                        if (!(safe_id in nodes)) {
-                            nodes[safe_id] = sprintf("{\"id\": \"%s\", \"label\": \"%s\", \"lang\": \"%s\", \"pos\": \"%s\"}", safe_id, final_w, lang, pos)
-                        } else if (pos != "") {
-                            nodes[safe_id] = sprintf("{\"id\": \"%s\", \"label\": \"%s\", \"lang\": \"%s\", \"pos\": \"%s\"}", safe_id, final_w, lang, pos)
-                        }
-                        
-                        layer_nodes = (layer_nodes == "" ? safe_id : layer_nodes "|" safe_id)
-                    }
-                }
-                
-                if (layer_nodes != "") {
-                    line_count++
-                    layers[line_count] = layer_nodes
-                }
-            }
-            
-            for (l=1; l<line_count; l++) {
-                n_src = split(layers[l], srcs, "|")
-                n_tgt = split(layers[l+1], tgts, "|")
-                
-                for (s=1; s<=n_src; s++) {
-                    for (t=1; t<=n_tgt; t++) {
-                        edge_id = srcs[s] "->" tgts[t]
-                        if (!(edge_id in edges)) {
-                            edges[edge_id] = sprintf("{\"source\": \"%s\", \"target\": \"%s\"}", srcs[s], tgts[t])
-                        }
-                    }
-                }
-            }
+            nodes: (map(.nodes[]) | unique_by(.id)),
+            edges: (map(.edges)   | unique_by([.source, .target]))
         }
-        
-        END {
-            print "{"
-            print "  \"nodes\": ["
-            first = 1
-            for (n in nodes) {
-                if (!first) print ","
-                printf "    %s", nodes[n]
-                first = 0
-            }
-            print "\n  ],"
-            print "  \"edges\": ["
-            first = 1
-            for (e in edges) {
-                if (!first) print ","
-                printf "    %s", edges[e]
-                first = 0
-            }
-            print "\n  ]"
-            print "}"
-        }
-    ' | jq '.' > "$OUT_FILE"
+    ' > "$out_file"
 
     if [[ $? -eq 0 ]]; then
-        local NODE_COUNT=$(jq '.nodes | length' "$OUT_FILE")
-        local EDGE_COUNT=$(jq '.edges | length' "$OUT_FILE")
-        echo "✅ Graph generation complete!"
-        printf "Exported \e[1m%d\e[0m Nodes and \e[1m%d\e[0m Edges to \e[32m%s\e[0m\n" "$NODE_COUNT" "$EDGE_COUNT" "$OUT_FILE"
+        local node_count edge_count
+        node_count=$(jq '.nodes | length' "$out_file")
+        edge_count=$(jq  '.edges | length' "$out_file")
+        printf "✅ Graph complete! \e[1m%d\e[0m nodes, \e[1m%d\e[0m edges → \e[32m%s\e[0m\n" \
+            "$node_count" "$edge_count" "$out_file"
     else
         echo "❌ Error generating graph. Check stanza formatting."
     fi
@@ -1612,133 +628,306 @@ etym-graph() {
 }
 
 
+# etym-visualize [graph_file]
+# Converts etym_graph.json into a Mermaid markdown file for preview.
 etym-visualize() {
-    local GRAPH_FILE="etym_graph.json"
-    local OUT_FILE="etym_graph.md"
-    
-    # Allow user to pass a specific json file, default to etym_graph.json
-    [[ -n "$1" ]] && GRAPH_FILE="$1"
+    local graph_file="${1:-etym_graph.json}"
+    local out_file="etym_graph.md"
 
-    if [[ ! -f "$GRAPH_FILE" ]]; then
-        echo "Error: Graph file '$GRAPH_FILE' not found."
-        echo "Run 'etym-graph' first to generate the data."
+    if [[ ! -f "$graph_file" ]]; then
+        echo "Error: '$graph_file' not found. Run 'etym-graph' first."
         return 1
     fi
 
-    echo "Converting $GRAPH_FILE to Mermaid Markdown..."
+    echo "Converting $graph_file to Mermaid Markdown..."
     echo "================================================================="
 
-    # Create the markdown file with the Mermaid code block wrapper
-    echo '```mermaid' > "$OUT_FILE"
-    echo 'graph LR' >> "$OUT_FILE" # LR = Left to Right layout
+    {
+        echo '```mermaid'
+        echo 'graph LR'
+        jq -r '
+            (.nodes[] | "  \(.id)[\"\(.label)<br><b>[\(.lang)]</b>\"]"),
+            (.edges[] | "  \(.source) --> \(.target)")
+        ' "$graph_file"
+        echo '```'
+    } > "$out_file"
 
-    # Translate JSON to Mermaid syntax using jq
-    # Nodes: id["Label<br>[Lang]"]
-    # Edges: source --> target
-    jq -r '
-      (.nodes[] | "  \(.id)[\"\(.label)<br><b>[\(.lang)]</b>\"]"),
-      (.edges[] | "  \(.source) --> \(.target)")
-    ' "$GRAPH_FILE" >> "$OUT_FILE"
-
-    echo '```' >> "$OUT_FILE"
-    
-    echo "✅ Successfully generated: $OUT_FILE"
-    echo "💡 HOW TO VIEW:"
-    echo "   1. Open $OUT_FILE in your Codespace editor."
-    echo "   2. Right-click the file tab and select 'Open Preview' (or press Cmd+K V / Ctrl+K V)."
+    echo "✅ Generated: $out_file"
+    echo "💡 Open in your editor and use 'Open Preview' (Cmd+K V / Ctrl+K V) to view."
     echo "================================================================="
 }
 
 
-etym-publish() {
-    local TARGET_DIR="${1:-$DICT_DIR}"
-    local OUT_DIR="./dist/api" # Where React will look for the data
-    
-    if [ ! -d "$TARGET_DIR" ]; then
-        echo "Error: Directory $TARGET_DIR not found."
-        return 1
+# =============================================================================
+# FILE MANAGEMENT
+# =============================================================================
+
+# etym-create-histories [-d] [-v] [--dirs <a,b,c>]
+# Splits each multi-stanza .txt file into individual per-definition history files.
+etym-create-histories() {
+    local dry_run=0
+    local verbose=0
+    local dirs=""
+    local source_dir="$DICT_DIR"
+    local output_dir="$HISTORIES_DIR"
+
+    while [[ "$#" -gt 0 ]]; do
+        case $1 in
+            -d|--dry-run) dry_run=1; shift ;;
+            -v|--verbose) verbose=1; shift ;;
+            --dirs)       dirs="$2"; shift 2 ;;
+            -h|--help)
+                echo "Usage: etym-create-histories [-d] [-v] [--dirs <a,b,c>]"
+                echo "  -d, --dry-run      Preview without writing files"
+                echo "  -v, --verbose      Show each extracted file"
+                echo "  --dirs <a,b,c>     Process only specific letter directories"
+                return 0 ;;
+            *) echo "Unknown option: $1"; return 1 ;;
+        esac
+    done
+
+    local target_dirs=()
+    if [[ -n "$dirs" ]]; then
+        IFS=',' read -ra target_dirs <<< "$dirs"
+    else
+        for d in "$source_dir"/?/; do
+            [[ -d "$d" ]] && target_dirs+=("$(basename "$d")")
+        done
     fi
 
-    echo "Publishing Dictionary API to $OUT_DIR..."
+    echo "Creating histories: $source_dir → $output_dir"
+    [[ $dry_run -eq 1 ]] && echo "⚠️  DRY RUN — no files will be written."
     echo "================================================================="
 
-    # 1. Clean and prep output directory
-    rm -rf "$OUT_DIR"
-    mkdir -p "$OUT_DIR/letters"
+    local total_extracted=0
+    local total_skipped=0
 
-    local NAV_JSON="[]"
-    local TOTAL_WORDS=0
+    for dir in "${target_dirs[@]}"; do
+        dir=$(echo "$dir" | xargs)
+        local current_src="$source_dir/$dir"
+        local target_dir="$output_dir/$dir"
 
-    # 2. Crawl the alphabetical directories (a, b, c...)
-    for letter_dir in "$TARGET_DIR"/*/; do
-        # Skip if not a directory (e.g., if the folder is empty)
-        [ -d "${letter_dir}" ] || continue 
-        
-        local letter=$(basename "$letter_dir" | tr '[:lower:]' '[:upper:]')
-        local letter_lower=$(basename "$letter_dir")
-        
-        local LETTER_WORDS_JSON="[]"
-        local word_count=0
+        [[ ! -d "$current_src" ]] && { [[ $verbose -eq 1 ]] && echo "Skipping $dir/ (not found)"; continue; }
+        [[ $dry_run -eq 0 ]] && mkdir -p "$target_dir"
 
-        # 3. Read every word file in that letter directory
+        local dir_count=0
+
         while IFS= read -r file; do
-            local word=$(basename "$file" .txt)
-            
-            # (Optional) You could call etym-export here to get the FULL JSON for the word
-            # For navigation, we just need the word name and the URL path.
-            
-            local WORD_OBJ=$(jq -n --arg w "$word" --arg url "/dictionary/$letter_lower/$word" \
-                '{word: $w, url: $url}')
-                
-            LETTER_WORDS_JSON=$(echo "$LETTER_WORDS_JSON" | jq --argjson obj "$WORD_OBJ" '. + [$obj]')
-            word_count=$((word_count + 1))
-            TOTAL_WORDS=$((TOTAL_WORDS + 1))
-            
+            # Use awk to split the file into stanzas and write named output files.
+            # Tracking data (EXTRACT/SKIP) goes to stderr; file writes go directly.
+            local awk_out
+            awk_out=$(awk \
+                -v target_dir="$target_dir" \
+                -v dry_run="$dry_run" \
+                '
+                BEGIN { RS = ""; FS = "\n" }
+                {
+                    reformed = ""; pos = ""; word = ""
+
+                    for (i = 1; i <= NF; i++) {
+                        line = $i
+                        gsub(/\r/, "", line)
+                        if (line ~ /^http/) break
+                        if (line ~ /\([a-z]/ && line !~ /\[[A-Z]/) reformed = line
+                    }
+
+                    if (reformed == "") { print "SKIP" > "/dev/stderr"; next }
+
+                    if (match(reformed, /\(([^)]+)\)[ \t]*$/, pm)) pos = pm[1]
+                    sub(/[, \t\/].*/, "", pos)   # First POS tag only for filename
+
+                    temp = reformed
+                    gsub(/\([^)]+\)[ \t]*$/, "", temp)
+                    gsub(/^[ \t]+|[ \t]+$/, "", temp)
+                    sub(/^[tT][oO][ \t]+/, "", temp)
+                    split(temp, tokens, /[ \t,]+/)
+                    word = tokens[1]
+
+                    if (word == "" || pos == "") { print "SKIP" > "/dev/stderr"; next }
+
+                    out_file = target_dir "/" word "_" pos ".txt"
+                    print "EXTRACT|" out_file > "/dev/stderr"
+
+                    if (dry_run == "0") {
+                        print $0 > out_file
+                        close(out_file)
+                    }
+                }
+                ' "$file" 2>&1 >/dev/null)
+
+            while IFS= read -r tracking_line; do
+                if [[ "$tracking_line" == "SKIP" ]]; then
+                    ((total_skipped++))
+                elif [[ "$tracking_line" == EXTRACT\|* ]]; then
+                    ((dir_count++))
+                    ((total_extracted++))
+                    [[ $verbose -eq 1 ]] && echo "  → $(basename "${tracking_line#EXTRACT|}")"
+                fi
+            done <<< "$awk_out"
+
+        done < <(find "$current_src" -name "*.txt")
+
+        [[ $dir_count -gt 0 ]] && echo "Extracted: $dir/ ($dir_count files)"
+    done
+
+    echo "------------------------------------------"
+    echo "Complete! Extracted $total_extracted stanzas."
+    [[ $total_skipped -gt 0 ]] && echo "Skipped $total_skipped stanzas (no extractable word or POS)."
+}
+
+
+# etym-lint [path] [--strict]
+# Validates .txt file formatting across the dictionary.
+etym-lint() {
+    local strict=0
+    local target_input=""
+
+    while [[ "$#" -gt 0 ]]; do
+        case $1 in
+            --strict) strict=1; shift ;;
+            *)        [[ -z "$target_input" ]] && target_input="$1"; shift ;;
+        esac
+    done
+
+    local target_dir
+    if   [[ -z "$target_input" ]];             then target_dir="$DICT_DIR"
+    elif [[ -e "$DICT_DIR/$target_input" ]];   then target_dir="$DICT_DIR/$target_input"
+    else target_dir="$target_input"; fi
+
+    [[ ! -e "$target_dir" ]] && { echo "Error: '$target_dir' not found."; return 1; }
+
+    echo "Linting: $target_dir"
+    echo "================================================================="
+
+    local total=0 fatals=0 errors=0 warns=0
+
+    while IFS= read -r -d '' file; do
+        ((total++))
+        local issues=()
+
+        if [[ ! -s "$file" ]]; then
+            issues+=("\e[31m[FATAL]\e[0m File is empty.")
+            ((fatals++))
+        else
+            local no_urls
+            no_urls=$(grep -v "http" "$file")
+
+            # Missing POS tag
+            if ! echo "$no_urls" | grep -Poq "\([a-z ]{1,5}(, [a-z ]{1,5})*\)"; then
+                issues+=("\e[31m[ERROR]\e[0m Missing or malformed POS tag '()'")
+                ((errors++))
+            fi
+
+            # Missing language tag
+            if ! echo "$no_urls" | grep -Poq "\[[A-Z]+\]"; then
+                issues+=("\e[31m[ERROR]\e[0m Missing or malformed language tag '[]'")
+                ((errors++))
+            fi
+
+            # [LANG] and (pos) tags on the same line
+            if echo "$no_urls" | grep -Eq "\[[A-Z]+\].*\(|\(.*\[[A-Z]+\]"; then
+                issues+=("\e[31m[ERROR]\e[0m Language tag '[]' and POS tag '()' must be on separate lines.")
+                ((errors++))
+            fi
+
+            # Trailing whitespace
+            if grep -q "[[:space:]]$" "$file"; then
+                issues+=("\e[33m[WARN]\e[0m  Trailing whitespace on one or more lines.")
+                ((warns++))
+            fi
+        fi
+
+        if [[ ${#issues[@]} -gt 0 ]]; then
+            echo -e "📝 \e[1m${file#$DICT_DIR/}\e[0m"
+            for issue in "${issues[@]}"; do echo -e "   $issue"; done
+            echo ""
+        fi
+
+    done < <(find "$target_dir" -type f -print0)
+
+    echo "-----------------------------------------------------------------"
+    echo "LINTING COMPLETE"
+    echo "-----------------------------------------------------------------"
+    printf "Files Scanned: %d\n"          "$total"
+    printf "Fatal Errors:  \e[31m%d\e[0m\n" "$fatals"
+    printf "Standard Errs: \e[31m%d\e[0m\n" "$errors"
+    printf "Warnings:      \e[33m%d\e[0m\n" "$warns"
+    echo "================================================================="
+
+    [[ $fatals -gt 0 || $errors -gt 0 ]] && return 1
+    return 0
+}
+
+
+# etym-publish [path]
+# Builds the static JSON API files consumed by the React frontend.
+etym-publish() {
+    local target_dir="${1:-$DICT_DIR}"
+    local out_dir="./dist/api"
+
+    [[ ! -d "$target_dir" ]] && { echo "Error: '$target_dir' not found."; return 1; }
+
+    echo "Publishing Dictionary API to $out_dir..."
+    echo "================================================================="
+
+    rm -rf "$out_dir"
+    mkdir -p "$out_dir/letters"
+
+    local nav_json="[]"
+    local total_words=0
+
+    for letter_dir in "$target_dir"/*/; do
+        [[ -d "$letter_dir" ]] || continue
+
+        local letter letter_lower word_count letter_words_json
+        letter=$(basename "$letter_dir" | tr '[:lower:]' '[:upper:]')
+        letter_lower=$(basename "$letter_dir")
+        letter_words_json="[]"
+        word_count=0
+
+        while IFS= read -r file; do
+            local word
+            word=$(basename "$file" .txt)
+            letter_words_json=$(echo "$letter_words_json" | jq \
+                --arg w "$word" \
+                --arg url "/dictionary/$letter_lower/$word" \
+                '. + [{word: $w, url: $url}]')
+            ((word_count++))
+            ((total_words++))
         done < <(find "$letter_dir" -maxdepth 1 -type f -name "*.txt" | sort)
 
-        # 4. Save the chunked file (e.g., dist/api/letters/a.json)
-        echo "$LETTER_WORDS_JSON" > "$OUT_DIR/letters/$letter_lower.json"
+        echo "$letter_words_json" > "$out_dir/letters/$letter_lower.json"
 
-        # 5. Add this letter to the Master Navigation array
-        local NAV_OBJ=$(jq -n \
+        nav_json=$(echo "$nav_json" | jq \
             --arg letter "$letter" \
             --arg url "/dictionary/$letter_lower" \
-            --arg count "$word_count" \
-            '{letter: $letter, url: $url, count: ($count|tonumber)}')
-            
-        NAV_JSON=$(echo "$NAV_JSON" | jq --argjson obj "$NAV_OBJ" '. + [$obj]')
-        
+            --argjson count "$word_count" \
+            '. + [{letter: $letter, url: $url, count: $count}]')
+
         echo "✅ Processed [$letter]: $word_count words"
     done
 
-    # 6. Save the Master Navigation file
-    echo "$NAV_JSON" > "$OUT_DIR/navigation.json"
-
+    echo "$nav_json" > "$out_dir/navigation.json"
     echo "================================================================="
-    echo "🎉 Publish Complete! Compiled $TOTAL_WORDS total words."
-    echo "Data ready for React in: $OUT_DIR"
+    echo "🎉 Publish complete! $total_words words compiled to $out_dir"
 }
 
+
+# etym-trim [path]
+# Strips trailing whitespace from all .txt files in a directory.
 etym-trim() {
-    local TARGET_DIR="${1:-$DICT_DIR}"
+    local target_dir="${1:-$DICT_DIR}"
+    [[ ! -d "$target_dir" ]] && { echo "Error: '$target_dir' not found."; return 1; }
 
-    if [ ! -d "$TARGET_DIR" ]; then
-        echo "Error: Directory $TARGET_DIR not found."
-        return 1
-    fi
-
-    echo "Trimming trailing whitespace in: $TARGET_DIR"
+    echo "Trimming trailing whitespace in: $target_dir"
     echo "================================================================="
 
-    # Find all .txt files and use sed to strip trailing spaces/tabs
     if [[ "$OSTYPE" == "darwin"* ]]; then
-        # macOS requires an explicit empty string for the backup extension
-        find "$TARGET_DIR" -type f -name "*.txt" -exec sed -i '' -e 's/[[:space:]]*$//' {} +
+        find "$target_dir" -type f -name "*.txt" -exec sed -i '' -e 's/[[:space:]]*$//' {} +
     else
-        # Linux (Ubuntu/Codespaces standard)
-        find "$TARGET_DIR" -type f -name "*.txt" -exec sed -i 's/[[:space:]]*$//' {} +
+        find "$target_dir" -type f -name "*.txt" -exec sed -i 's/[[:space:]]*$//' {} +
     fi
 
-    echo "✅ Trailing whitespace successfully removed from all text files!"
+    echo "✅ Trailing whitespace removed."
     echo "================================================================="
 }
