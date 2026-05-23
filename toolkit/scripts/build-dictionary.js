@@ -62,101 +62,169 @@ export function buildBrain(dataset) {
         const engWord = data.me_word.toLowerCase().trim().normalize('NFC');
         const inglisceWord = data.inglisce_word.normalize('NFC');
 
-        const rawConjs = (data.conjugations || [])
-            .map(w => w.replace(/,/g, '').normalize('NFC'))
-            .filter(w => !w.startsWith('['));
+        // conjugations is now either an object (verbs) or an array (everything else).
+        // Normalise here so the blocks below never have to branch on the shape.
+        const c = data.conjugations || {};
+        const isVerbConj = !Array.isArray(c);
 
-        // Simply filter out empty strings and the stray 'to' preposition.
-        const conjugations = rawConjs.filter(w => w !== 'to' && w.trim() !== '');
+        // Helper: resolve a named slot, falling back to inglisceWord if empty.
+        // Bypasses resolveForm entirely for the two-stem class (c.present is set).
+        const resolve = (slot, isGerund = false) => {
+            if (!slot) return inglisceWord;
+            return isVerbConj && c.present
+                ? slot                                     // already fully resolved
+                : resolveForm(slot, inglisceWord, isGerund);
+        };
 
-        const validPosCategories = (data.pos || '').split(',').map(p => posMap[p.toLowerCase().trim()]).filter(Boolean);
+        const validPosCategories = (data.pos || '')
+            .split(',')
+            .map(p => posMap[p.toLowerCase().trim()])
+            .filter(Boolean);
+
         if (validPosCategories.length > 0) compiledCount++;
 
         validPosCategories.forEach(posCategory => {
             addWord(engWord, inglisceWord, posCategory);
 
-            // 1. 'Be' (Copula & Verb) - FIXED strict equality to prevent 'bear'/'beat' overriding
+            // 1. 'Be' (Copula & Verb)
             if (engWord === 'be') {
-                const forms = ['am', 'is', 'are', 'was', 'were', 'been', 'being', "isn't", "aren't", "wasn't", "weren't"];
+                const beSlots = [
+                    c.third_singular,                      // am
+                    c.third_singular,                      // is  (same slot — 3ps covers both)
+                    c.present || c.third_singular,  // are
+                    c.past,                                // was
+                    c.past,                                // were
+                    c.participle || c.past,            // been
+                    c.gerund,                              // being
+                    c.past,                                // isn't
+                    c.present || c.third_singular,  // aren't
+                    c.past,                                // wasn't
+                    c.past,                                // weren't
+                ];
+                const beForms = [
+                    'am', 'is', 'are', 'was', 'were',
+                    'been', 'being',
+                    "isn't", "aren't", "wasn't", "weren't"
+                ];
+
                 addWord('be', inglisceWord, 'Copula');
                 addWord('be', inglisceWord, 'Verb');
-                forms.forEach((form, index) => {
-                    const ingForm = conjugations[index] ? resolveForm(conjugations[index], inglisceWord) : inglisceWord;
+
+                beForms.forEach((form, i) => {
+                    const ingForm = resolve(beSlots[i]);
                     addWord(form, ingForm, 'Copula');
                     addWord(form, ingForm, 'Verb');
                     if (!form.includes("n't")) addWord(`${form} not`, ingForm, 'Copula');
                 });
             }
-            // 2. 'Do' (Auxiliary & Verb) - FIXED strict equality to prevent 'dog'/'door' overriding
+
+            // 2. 'Do' (Auxiliary & Verb)
             else if (engWord === 'do') {
-                const forms = ['does', 'did', 'done', 'doing', "don't", "doesn't", "didn't"];
+                const doSlots = [
+                    c.third_singular,               // does
+                    c.past,                         // did
+                    c.participle || c.past,         // done
+                    c.gerund,                       // doing
+                    c.past,                         // don't   (negated past stem)
+                    c.third_singular,               // doesn't
+                    c.past,                         // didn't
+                ];
+                const doForms = ['does', 'did', 'done', 'doing', "don't", "doesn't", "didn't"];
+
                 addWord('do', inglisceWord, 'Verb');
                 addWord('do', inglisceWord, 'Auxiliary');
-                forms.forEach((form, index) => {
-                    const ingForm = conjugations[index] ? resolveForm(conjugations[index], inglisceWord) : inglisceWord;
+
+                doForms.forEach((form, i) => {
+                    const ingForm = resolve(doSlots[i]);
                     addWord(form, ingForm, 'Verb');
                     addWord(form, ingForm, 'Auxiliary');
                 });
             }
-            // 3. 'Have' (Auxiliary & Verb) - FIXED strict equality to prevent 'shave' overriding
+
+            // 3. 'Have' (Auxiliary & Verb)
             else if (engWord === 'have') {
-                const forms = ['has', 'had', 'having', "haven't", "hasn't", "hadn't"];
+                const haveSlots = [
+                    c.third_singular,               // has
+                    c.past,                         // had
+                    c.gerund,                       // having
+                    c.past,                         // haven't
+                    c.third_singular,               // hasn't
+                    c.past,                         // hadn't
+                ];
+                const haveForms = ['has', 'had', 'having', "haven't", "hasn't", "hadn't"];
+
                 addWord('have', inglisceWord, 'Verb');
                 addWord('have', inglisceWord, 'Auxiliary');
-                forms.forEach((form, index) => {
-                    const ingForm = conjugations[index] ? resolveForm(conjugations[index], inglisceWord) : inglisceWord;
+
+                haveForms.forEach((form, i) => {
+                    const ingForm = resolve(haveSlots[i]);
                     addWord(form, ingForm, 'Verb');
                     addWord(form, ingForm, 'Auxiliary');
                 });
             }
-            // 4. Modals - FIXED strict equality
+
+            // 4. Modals
             else if (posCategory === 'Modal') {
                 addWord(engWord, inglisceWord, 'Modal');
-                const past = engWord === 'can' ? 'could' :
+
+                const pastEng = engWord === 'can' ? 'could' :
                     engWord === 'will' ? 'would' :
                         engWord === 'shall' ? 'should' :
                             engWord === 'may' ? 'might' : null;
 
-                if (past) addWord(past, resolveForm(conjugations[0], inglisceWord) || inglisceWord, 'Modal');
+                const negContraction = engWord === 'can' ? "can't" :
+                    engWord === 'will' ? "won't" :
+                        engWord === 'shall' ? "shan't" :
+                            engWord + "n't";
 
-                const neg1 = resolveForm(conjugations[1], inglisceWord) || inglisceWord;
-                addWord(`${engWord} not`, neg1, 'Modal');
-                addWord(`${engWord}n't`, neg1, 'Modal');
-                if (engWord === 'can') addWord('cannot', neg1, 'Modal');
-                if (engWord === 'will') addWord("won't", neg1, 'Modal');
+                if (pastEng) {
+                    const pastIng = resolve(c.past);
+                    addWord(pastEng, pastIng, 'Modal');
+                }
 
-                if (past) {
-                    const neg2 = resolveForm(conjugations[2], inglisceWord) || inglisceWord;
-                    addWord(`${past} not`, neg2, 'Modal');
-                    addWord(`${past}n't`, neg2, 'Modal');
+                const negPresent = resolve(c.third_singular) || inglisceWord;
+                addWord(`${engWord} not`, negPresent, 'Modal');
+                addWord(negContraction, negPresent, 'Modal');
+                if (engWord === 'can') addWord('cannot', negPresent, 'Modal');
+
+                if (pastEng) {
+                    const negPast = resolve(c.past) || inglisceWord;
+                    addWord(`${pastEng} not`, negPast, 'Modal');
+                    addWord(`${pastEng}n't`, negPast, 'Modal');
                 }
             }
             // 5. Standard Verbs
             else if (posCategory === 'Verb' || posCategory === 'Auxiliary') {
                 const doc = nlp(engWord).tag('Verb');
                 const conj = doc.verbs().conjugate()[0];
+                if (!conj) return;
 
-                if (conj) {
-                    const present = resolveForm(conjugations[0], inglisceWord);
-                    if (present) addWord(conj.PresentTense, present, posCategory);
+                const c = data.conjugations;
 
-                    if (conjugations.length === 3) {
-                        const past = resolveForm(conjugations[1], inglisceWord);
-                        const gerund = resolveForm(conjugations[2], inglisceWord, true);
-                        if (past) {
-                            addWord(conj.PastTense, past, posCategory);
-                            addWord(conj.Participle, past, posCategory);
-                        }
-                        if (gerund) addWord(conj.Gerund, gerund, posCategory);
+                // ── Two-stem -er/-ir class ─────────────────────────────────────────────
+                // present is populated only for this class (e.g. "þondre").
+                // All forms are fully resolved words — bypass resolveForm entirely.
+                if (c.present) {
+                    addWord(conj.PresentTense, c.third_singular, posCategory);
+                    addWord(conj.Gerund, c.gerund, posCategory);
+                    if (c.past) {
+                        addWord(conj.PastTense, c.past, posCategory);
+                        addWord(conj.Participle, c.participle || c.past, posCategory);
                     }
-                    else if (conjugations.length >= 4) {
-                        const past = resolveForm(conjugations[1], inglisceWord);
-                        const participle = resolveForm(conjugations[2], inglisceWord);
-                        const gerund = resolveForm(conjugations[3], inglisceWord, true);
-                        if (past) addWord(conj.PastTense, past, posCategory);
-                        if (participle) addWord(conj.Participle, participle, posCategory);
-                        if (gerund) addWord(conj.Gerund, gerund, posCategory);
-                    }
+
+                    // ── Standard and irregular classes ────────────────────────────────────
+                    // third_singular, past, participle, gerund may be suffix tokens ("-s",
+                    // "-d", "-ing") or fully written irregular forms. resolveForm handles both.
+                } else {
+                    const presentForm = resolveForm(c.third_singular, inglisceWord);
+                    const pastForm = resolveForm(c.past, inglisceWord);
+                    const participleForm = resolveForm(c.participle, inglisceWord);
+                    const gerundForm = resolveForm(c.gerund, inglisceWord, true);
+
+                    if (presentForm) addWord(conj.PresentTense, presentForm, posCategory);
+                    if (pastForm) addWord(conj.PastTense, pastForm, posCategory);
+                    if (participleForm) addWord(conj.Participle, participleForm, posCategory);
+                    if (gerundForm) addWord(conj.Gerund, gerundForm, posCategory);
                 }
             }
             // 6. Standard Nouns (Plurals)

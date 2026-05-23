@@ -961,11 +961,19 @@ etym-lint() {
         find "$target_dir" -type f -name "*.txt" | while IFS= read -r f; do
             etym-parse "$f" | jq -r --arg file "$f" '
                 select(.pos | test("^(v|tr v|intr v)$"; "i")) |
+                .conjugations as $c |
                 (
-                    if (.conjugations == ["-s", "-d", "-ing"]) then "standard"
-                    else "nonstandard"
-                    end
-                ) + "\t" + $file + "\t" + .inglisce_word + "\t" + (.conjugations | join(" "))
+                    if ($c.third_singular == "-s" and ($c.past == "-d" or $c.past == "-ed") and $c.gerund == "-ing")
+                        then "standard"
+                        else "nonstandard"
+                        end
+                ) + "\t" + $file + "\t" + .inglisce_word + "\t" + (
+                    if $c.present != "" then
+                        [$c.present, $c.third_singular, $c.past, $c.participle, $c.gerund]
+                    else
+                        [$c.third_singular, $c.past, $c.gerund]
+                    end | map(select(. != "")) | join(" ")
+                )
             '
         done
     )
