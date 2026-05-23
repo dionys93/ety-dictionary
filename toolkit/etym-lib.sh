@@ -54,20 +54,40 @@ _etym_stream() {
     done
 }
 
+
 # etym-parse <file.txt>
 # ─────────────────────────────────────────────────────────────────────────────
 # THE CANONICAL STANZA PARSER. Single source of truth for reading .txt entries.
 # Emits one JSONL record per stanza to stdout.
 #
-# Output schema (matches build-dictionary.js expectations):
+# Output schema:
 #   {
-#     "me_word":       string,   # English lookup key ([ME] > [MI] > last ancestor)
-#     "inglisce_word": string,   # Inglisce reformed form
-#     "pos":           string,   # Raw POS tag, e.g. "v", "m n", "adj"
-#     "conjugations":  string[], # Raw suffix tokens, e.g. ["-s", "-d", "-ing"]
-#     "etymology":     [{form, lang}], # Full ancestry chain, oldest first
-#     "sources":       string[]  # URLs
+#     "me_word":       string,
+#     "inglisce_word": string,
+#     "pos":           string,
+#
+#     "conjugations":
+#       VERBS — named object:
+#         {
+#           "present":        string,   # present stem (-er/-ir class only, e.g. "þondre")
+#           "third_singular": string,   # e.g. "-s" or "þondres"
+#           "past":           string,   # e.g. "-d", "craipt", "þondred"
+#           "participle":     string,   # same as past unless distinct
+#           "gerund":         string,   # e.g. "-ing", "þondering", "copying"
+#         }
+#       NON-VERBS — raw array:
+#         e.g. ["circuls"] for nouns, ["-ly"] for adjectives
+#
+#     "etymology":  [{form, lang}],
+#     "sources":    string[]
 #   }
+#
+# Conjugation classes handled:
+#   1. Standard suffix:      root -s -d -ing
+#   2. Irregular past:       root -s <past> -ing           (past = participle)
+#   3. Full irregular:       root -s <past> <participle> -ing
+#   4. Two-stem -er/-ir:     root present(s past gerund
+#   5. Two-stem full irreg:  root present(s past participle gerund
 # ─────────────────────────────────────────────────────────────────────────────
 etym-parse() {
     local file="$1"
@@ -75,12 +95,37 @@ etym-parse() {
 
     awk '
     BEGIN { RS = ""; FS = "\n" }
+
+    # ── Helpers ────────────────────────────────────────────────────────────
+
+    function is_verb(pos) {
+        return (pos ~ /^(v|tr v|intr v|aux|auxiliary|modal)$/)
+    }
+
+    # Escapes double-quotes for safe JSON embedding
+    function esc(s) {
+        gsub(/"/, "\\\"", s)
+        return s
+    }
+
+    function verb_conj_json(present, third_sing, past, participle, gerund) {
+        return "{" \
+            "\"present\":"        "\"" esc(present)    "\"," \
+            "\"third_singular\":" "\"" esc(third_sing) "\"," \
+            "\"past\":"           "\"" esc(past)        "\"," \
+            "\"participle\":"     "\"" esc(participle)  "\"," \
+            "\"gerund\":"         "\"" esc(gerund)      "\"" \
+        "}"
+    }
+
+    # ── Main stanza loop ────────────────────────────────────────────────────
+
     {
         delete ef; delete el; delete src_arr
         n_etym = 0; n_src = 0
         reformed = ""
 
-        # ---- Classify each line in the stanza ----
+        # ---- Classify each line ----
         for (i = 1; i <= NF; i++) {
             line = $i
             gsub(/\r/, "", line)
@@ -94,7 +139,7 @@ etym-parse() {
                 reformed = line
 
             } else {
-                # Etymology chain line: has [LANG] tag, or is an ancestor without one
+                # Etymology chain entry
                 lang = ""
                 if (match(line, /\[([A-Z]+)\]/, m)) lang = m[1]
                 form = line
@@ -110,36 +155,106 @@ etym-parse() {
 
         if (reformed == "") next
 
-        # ---- Parse the reformed line ----
-        # e.g. "to circle -s -d -ing (v)"
-        # e.g. "circle, circuls (m n)"
-        # e.g. "circular -ly (adj)"
+        # ---- Parse reformed line ----
+        # Strip trailing (pos) tag and capture it
         pos = ""
-        if (match(reformed, /\(([^)]+)\)[ \t]*$/, pm)) pos = pm[1]
+        if (match(reformed, /\(([a-z][a-z ,]*)\)[ \t]*$/, pm)) pos = pm[1]
 
         temp = reformed
-        gsub(/\([^)]+\)[ \t]*$/, "", temp)   # Strip trailing (pos)
-        gsub(/^[ \t]+|[ \t]+$/, "", temp)    # Trim whitespace
-        sub(/^[tT][oO][ \t]+/, "", temp)     # Strip infinitive "to "
+        gsub(/\([a-z][a-z ,]*\)[ \t]*$/, "", temp)     # Remove trailing (pos)
+        gsub(/^[ \t]+|[ \t]+$/, "", temp)       # Trim
+        sub(/^[tT][oO][ \t]+/, "", temp)        # Strip infinitive "to "
 
-        n_tok = split(temp, tokens, /[ \t,]+/)
+        # Tokenize — split on whitespace and commas
+        n_raw = split(temp, raw_tok, /[ \t,]+/)
+
+        # Compact out any empty tokens left by the split
+        n_tok = 0
+        for (i = 1; i <= n_raw; i++) {
+            if (raw_tok[i] != "") tokens[++n_tok] = raw_tok[i]
+        }
+
+        # tokens[1] is always the Inglisce root word
         inglisce_word = tokens[1]
         gsub(/[,.]$/, "", inglisce_word)
 
-        # Remaining tokens are the conjugation/declension forms
-        forms_json = "["
-        first_f = 1
-        for (i = 2; i <= n_tok; i++) {
-            t = tokens[i]
-            if (t == "") continue
-            gsub(/"/, "\\\"", t)
-            if (!first_f) forms_json = forms_json ","
-            forms_json = forms_json "\"" t "\""
-            first_f = 0
-        }
-        forms_json = forms_json "]"
+        # ---- Build conjugations ----
+        conj_json = ""
 
-        # ---- Resolve me_word: prefer [ME], then [MI], then last ancestor ----
+        if (is_verb(pos)) {
+
+            # ── Class 4 & 5: Two-stem -er/-ir ──────────────────────────────
+            # Signature: tokens[2] ends in "(s"
+            # e.g. "þonder þondre(s þondred þondering"
+            #       [1]     [2]      [3]      [4]
+            # e.g. "treacher treachre(s treachred treachren treachering"
+            #       [1]       [2]         [3]        [4]       [5]
+            if (n_tok >= 2 && tokens[2] ~ /\(s$/) {
+                present_stem = substr(tokens[2], 1, length(tokens[2]) - 2)
+                third_sing   = present_stem "s"
+
+                if (n_tok >= 5) {
+                    # Class 5: distinct participle
+                    # root present(s past participle gerund
+                    past_form = tokens[3]
+                    part_form = tokens[4]
+                    gerund    = tokens[5]
+                } else {
+                    # Class 4: standard -er/-ir
+                    # root present(s past gerund
+                    past_form = (n_tok >= 3) ? tokens[3] : ""
+                    part_form = past_form
+                    gerund    = (n_tok >= 4) ? tokens[4] : ""
+                }
+
+                conj_json = verb_conj_json(present_stem, third_sing, past_form, part_form, gerund)
+
+            # ── Classes 1, 2, 3: Standard and irregular ────────────────────
+            } else {
+                # tokens: [1]=root [2]=3ps [3]=past [4]=gerund
+                #    OR   [1]=root [2]=3ps [3]=past [4]=participle [5]=gerund
+
+                third_sing = (n_tok >= 2) ? tokens[2] : "-s"
+                past_form  = ""
+                part_form  = ""
+                gerund     = ""
+
+                if (n_tok == 3) {
+                    # root -s -ing  (no past recorded)
+                    gerund = tokens[3]
+
+                } else if (n_tok == 4) {
+                    # Class 1: root -s -d -ing
+                    # Class 2: root -s <past> -ing  (past = participle)
+                    past_form = tokens[3]
+                    part_form = tokens[3]
+                    gerund    = tokens[4]
+
+                } else if (n_tok >= 5) {
+                    # Class 3: root -s <past> <participle> -ing
+                    past_form = tokens[3]
+                    part_form = tokens[4]
+                    gerund    = tokens[5]
+                }
+
+                conj_json = verb_conj_json("", third_sing, past_form, part_form, gerund)
+            }
+
+        } else {
+            # ── Non-verb: raw array ─────────────────────────────────────────
+            conj_json = "["
+            first_f = 1
+            for (i = 2; i <= n_tok; i++) {
+                t = tokens[i]
+                if (t == "") continue
+                if (!first_f) conj_json = conj_json ","
+                conj_json = conj_json "\"" esc(t) "\""
+                first_f = 0
+            }
+            conj_json = conj_json "]"
+        }
+
+        # ---- Resolve me_word: [ME] > [MI] > last ancestor ----
         me_word = ""
         for (i = 1; i <= n_etym; i++) {
             if (el[i] == "ME") { me_word = ef[i]; break }
@@ -152,16 +267,15 @@ etym-parse() {
         if (me_word == "") me_word = ef[n_etym]
 
         sub(/^[tT][oO][ \t]+/, "", me_word)
-        n_mw = split(me_word, mw, /[ \t,]+/)
+        split(me_word, mw, /[ \t,]+/)
         me_word = mw[1]
 
         # ---- Build etymology JSON array ----
         etym_json = "["
         for (i = 1; i <= n_etym; i++) {
             f = ef[i]; l = el[i]
-            gsub(/"/, "\\\"", f)
             if (i > 1) etym_json = etym_json ","
-            etym_json = etym_json "{\"form\":\"" f "\",\"lang\":\"" l "\"}"
+            etym_json = etym_json "{\"form\":\"" esc(f) "\",\"lang\":\"" esc(l) "\"}"
         }
         etym_json = etym_json "]"
 
@@ -173,12 +287,10 @@ etym-parse() {
         }
         src_json = src_json "]"
 
-        # ---- Emit JSONL record ----
-        gsub(/"/, "\\\"", me_word)
-        gsub(/"/, "\\\"", inglisce_word)
-        gsub(/"/, "\\\"", pos)
+        # ---- Emit JSONL ----
         printf "{\"me_word\":\"%s\",\"inglisce_word\":\"%s\",\"pos\":\"%s\",\"conjugations\":%s,\"etymology\":%s,\"sources\":%s}\n",
-            me_word, inglisce_word, pos, forms_json, etym_json, src_json
+            esc(me_word), esc(inglisce_word), esc(pos),
+            conj_json, etym_json, src_json
     }' "$file"
 }
 
@@ -862,17 +974,6 @@ etym-lint() {
     verb_standard=$(echo "$verb_stats"   | grep -c "^standard"   || true)
     verb_nonstandard=$(echo "$verb_stats" | grep -c "^nonstandard" || true)
 
-    # ── Stanzas with (s in the reformed line (formatting anomaly) ────────────
-    # These are verbs where someone wrote "(s" instead of "-s" — a common typo
-    local paren_s_files
-    paren_s_files=$(
-        find "$target_dir" -type f -name "*.txt" | while IFS= read -r f; do
-            if grep -Eq "^\bto\b.*\(s|\(s" "$f"; then
-                echo "$f"
-            fi
-        done
-    )
-
     # ── Report ───────────────────────────────────────────────────────────────
     echo "-----------------------------------------------------------------"
     echo "LINTING COMPLETE"
@@ -900,8 +1001,9 @@ etym-lint() {
         echo ""
         echo "VERB STANZAS WITH (s  [possible malformed conjugation]"
         echo "-----------------------------------------------------------------"
-        while IFS= read -r f; do
-            echo "  ${f#$DICT_DIR/}"
+        while IFS=$'\t' read -r f match; do
+            printf "  %s\n" "${f#$DICT_DIR/}"
+            printf "    \e[33m%s\e[0m\n" "$match"
         done <<< "$paren_s_files"
     fi
 
