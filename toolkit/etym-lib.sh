@@ -449,7 +449,10 @@ etym-summarize() {
     # The stream is consumed once and never re-read.
     local stats
     stats=$(_etym_stream "$target_path" | jq -s '
-        def origin: .etymology | map(select(.lang == "ME" or .lang == "MI")) | last // .[-1];
+        def origin:
+            .etymology as $e |
+            ($e | map(select(.lang == "ME" or .lang == "MI")) | last) //
+            ($e | last);
 
         {
             parts_of_speech: (
@@ -485,12 +488,12 @@ etym-summarize() {
         return 0
     fi
 
-    # ── Text mode ────────────────────────────────────────────────────────────
+    # ---- Text mode ----
     local output=""
     output+="Summarizing Data in: $target_path\n"
     output+="=================================================================\n\n"
 
-    # Parts of Speech — resolved against parts-of-speech.tsv
+    # Parts of Speech
     output+="PARTS OF SPEECH\n"
     output+="-----------------------------------------------------------------\n"
     local total_pos=0
@@ -499,29 +502,24 @@ etym-summarize() {
         local full_name
         full_name=$(grep -i "^$tag[[:space:]]" "$CONFIG_DIR/parts-of-speech.tsv" 2>/dev/null \
             | sed "s/^$tag[[:space:]]*//" | xargs)
-        output+=$(printf "%7s | %-25s (%s)\n" "$count" "${full_name:-Unknown}" "$tag")
-        output+="\n"
+        output+="$(printf '%7s | %-25s (%s)' "$count" "${full_name:-Unknown}" "$tag")"$'\n'
         total_pos=$((total_pos + count))
     done < <(echo "$stats" | jq -r '.parts_of_speech[] | [.count, .tag] | @tsv')
     output+="-----------------------------------------------------------------\n"
-    output+=$(printf "%7s | TOTAL\n\n" "$total_pos")
+    output+="$(printf %7s)"
 
-    # Language Origins — resolved against get_lang_name
+    # Language Origins
     output+="LANGUAGE ORIGINS\n"
     output+="-----------------------------------------------------------------\n"
-    local total_lang=0
     while IFS=$'\t' read -r count tag; do
         [[ -z "$count" ]] && continue
         local full_name
         full_name=$(get_lang_name "$tag")
-        output+=$(printf "%7s | %-25s [%s]\n" "$count" "${full_name:-Unknown}" "$tag")
-        output+="\n"
-        total_lang=$((total_lang + count))
+        output+="$(printf '%7s | %-25s [%s]' "$count" "${full_name:-Unknown}" "$tag")"$'\n'
     done < <(echo "$stats" | jq -r '.languages[] | [.count, .tag] | @tsv')
-    output+="-----------------------------------------------------------------\n"
-    output+=$(printf "%7s | TOTAL\n\n" "$total_lang")
+    output+="-----------------------------------------------------------------\n\n"
 
-    # Cross-tabulation — top 5 POS × top 5 LANG, all values already in $stats
+    # Cross-tabulation — top 5 POS × top 5 LANG
     output+="CROSS-TABULATION (Top 5 POS × Top 5 LANG)\n"
     output+="-----------------------------------------------------------------\n"
 
@@ -537,22 +535,19 @@ etym-summarize() {
         [[ ${#top_langs[@]} -ge 5 ]] && break
     done < <(echo "$stats" | jq -r '.languages[].tag')
 
-    # Build a lookup map from the cross_tabulation array: "pos\tlang" -> count
     declare -A xtab
     while IFS=$'\t' read -r pos lang count; do
         xtab["$pos	$lang"]="$count"
     done < <(echo "$stats" | jq -r '.cross_tabulation[] | [.pos, .lang, .count] | @tsv')
 
-    # Header row
     local header
     header=$(printf "%-18s" "POS \\ LANG")
     for lang in "${top_langs[@]}"; do
         header+=$(printf "| %-7s " "$lang")
     done
-    output+="$header\n"
+    output+="$header"$'\n'
     output+="-----------------------------------------------------------------\n"
 
-    # Data rows — all lookups are now O(1) against the associative array
     for pos in "${top_pos[@]}"; do
         local row
         row=$(printf "%-18s" "$pos")
@@ -560,7 +555,7 @@ etym-summarize() {
             local val="${xtab["$pos	$lang"]:-0}"
             row+=$(printf "| %-7s " "$val")
         done
-        output+="$row\n"
+        output+="$row"$'\n'
     done
     output+="-----------------------------------------------------------------\n"
 
@@ -972,6 +967,17 @@ etym-lint() {
 
             if grep -q "[[:space:]]$" "$file"; then
                 issues+=("\e[33m[WARN]\e[0m  Trailing whitespace on one or more lines.")
+                ((warns++))
+            fi
+
+            # Stanzas with no resolvable language origin
+            if etym-parse "$file" | jq -e '
+                .etymology as $e |
+                (($e | map(select(.lang == "ME" or .lang == "MI")) | last) //
+                 ($e | last)) |
+                .lang == "" or . == null
+            ' > /dev/null 2>&1; then
+                issues+=("\e[33m[WARN]\e[0m  One or more stanzas have no resolvable language tag.")
                 ((warns++))
             fi
         fi
