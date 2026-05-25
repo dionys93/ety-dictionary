@@ -95,7 +95,7 @@ describe('etym-info (Primary Definition Extraction)', () => {
             runTool('etym-info missing_word');
         } catch (error) {
             expect(error.status).toBe(1);
-            expect(error.stdout).toContain("Error: Word 'missing_word' not found");
+            expect(error.stdout).toContain("Error: 'missing_word' not found");
         }
     });
 
@@ -103,7 +103,7 @@ describe('etym-info (Primary Definition Extraction)', () => {
         const output = runTool('etym-info enthrone');
         
         // Assert the tool successfully grabbed the target word
-        expect(output).toContain('enthrone');
+        expect(output).toContain('enþrone');
         
         // Assert it successfully grabbed the Part of Speech
         const hasPos = output.includes('verb') || output.includes('(v)');

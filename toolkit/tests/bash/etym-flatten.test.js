@@ -9,7 +9,7 @@ const FIXTURES_DIR = path.resolve(__dirname, '../fixtures/dictionary');
 const OUTPUT_FILE = path.resolve(__dirname, '../fixtures/flatten-out/master.jsonl');
 
 describe('Bash Extractor: etym-flatten', () => {
-    
+
     beforeAll(() => {
         // 1. Wipe the old artifact to ensure we are testing a fresh extraction
         if (fs.existsSync(OUTPUT_FILE)) {
@@ -23,7 +23,7 @@ describe('Bash Extractor: etym-flatten', () => {
         // 3. Execute the Bash script synchronously
         // We source the library, then run etym-flatten targeting the fixtures
         const cmd = `bash -c "source ${BASH_LIB_PATH} && etym-flatten ${FIXTURES_DIR} --jsonl -o ${OUTPUT_FILE}"`;
-        
+
         try {
             execSync(cmd, { stdio: 'pipe' });
         } catch (error) {
@@ -40,12 +40,22 @@ describe('Bash Extractor: etym-flatten', () => {
         const content = fs.readFileSync(OUTPUT_FILE, 'utf-8').trim().split('\n');
         expect(content.length).toBeGreaterThan(0);
 
-        // Parse the first row to verify the Bash regex successfully grabbed the metadata
         const firstRow = JSON.parse(content[0]);
-        
+
         expect(firstRow).toHaveProperty('me_word');
         expect(firstRow).toHaveProperty('inglisce_word');
         expect(firstRow).toHaveProperty('pos');
-        expect(Array.isArray(firstRow.conjugations)).toBe(true);
+
+        // conjugations is an object for verbs, array for everything else
+        const conj = firstRow.conjugations;
+        const isValidShape = Array.isArray(conj) || (typeof conj === 'object' && conj !== null);
+        expect(isValidShape).toBe(true);
+
+        // If it's a verb conjugation object, assert the named slots are present
+        if (!Array.isArray(conj)) {
+            expect(conj).toHaveProperty('third_singular');
+            expect(conj).toHaveProperty('past');
+            expect(conj).toHaveProperty('gerund');
+        }
     });
 });

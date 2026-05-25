@@ -31,11 +31,11 @@ _etym_resolve_file() {
     local dir="$DICT_DIR/${word:0:1}"
     local file
 
-    # Direct match (case-insensitive)
+    # Direct match first
     file=$(find "$dir" -maxdepth 1 -iname "${word}.txt" 2>/dev/null | head -1)
 
-    # Fallback: content search within the letter directory
-    [[ -z "$file" ]] && file=$(grep -rlF "$word" "$dir" 2>/dev/null | head -1)
+    # Fallback: whole-word content search on reformed lines only
+    [[ -z "$file" ]] && file=$(grep -rlP "(?<![a-zA-Z])${word}(?![a-zA-Z])" "$dir" 2>/dev/null | head -1)
 
     if [[ -z "$file" ]]; then
         echo "Error: '$word' not found in $dir" >&2
@@ -327,17 +327,28 @@ etym-info() {
     local file
     file=$(_etym_resolve_file "$word") || return 1
 
-    printf "--- Primary Definitions for: %s ---\n" "$word"
-    printf "%-22s | %-28s | %-6s | %s\n" "INGLISCE" "PART OF SPEECH" "ORIGIN" "FORMS"
+    printf -- "--- Primary Definitions for: %s ---\n" "$word"
+    printf -- "%-22s | %-28s | %-6s | %s\n" "INGLISCE" "PART OF SPEECH" "ORIGIN" "FORMS"
     echo "--------------------------------------------------------------------------------"
 
     etym-parse "$file" | jq -r '
         (.etymology | map(select(.lang == "ME" or .lang == "MI")) | last // .[-1]) as $origin |
+        (
+            if (.conjugations | type) == "object" then
+                if .conjugations.present != "" then
+                    [.conjugations.present, .conjugations.third_singular, .conjugations.past, .conjugations.gerund]
+                else
+                    [.conjugations.third_singular, .conjugations.past, .conjugations.gerund]
+                end | map(select(. and . != "")) | join(" ")
+            else
+                (.conjugations | join(" "))
+            end
+        ) as $forms |
         [
             .inglisce_word,
             .pos,
-            ($origin.lang // "?"),
-            (.conjugations | join(" "))
+            ($origin.lang | if . == "" or . == null then "?" else . end),
+            $forms
         ] | @tsv
     ' | awk -F'\t' '{ printf "%-22s | %-28s | %-6s | %s\n", $1, $2, $3, $4 }'
 }
