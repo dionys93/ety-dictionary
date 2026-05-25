@@ -1,7 +1,100 @@
 Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 =================================================================
+📝 [1ma/America.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1ma/abstain.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1mi/inside.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1mi/indict.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1mr/revolve.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1mr/respect.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1mr/require.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1mr/respond.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1mg/grace.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
 📝 [1mh/hi.txt[0m
    [31m[ERROR][0m Missing or malformed POS tag '()'
+
+📝 [1mh/Hawaii.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1me/electrocute.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1me/experiment.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1mp/pole.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1mp/precise.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1ms/scissors.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1ms/space.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1ms/snicker.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1ms/sketch.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1mn/New-Jersey.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1mn/Nebraska.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1md/deliver.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1md/defer.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1md/debouch.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1mw/weather.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1mm/massage.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1mm/mourn.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1mk/Kansas.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1mc/chemistry.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1mc/compute.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1mc/collect.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
+
+📝 [1mc/cement.txt[0m
+   [33m[WARN][0m  One or more stanzas have no resolvable language tag.
 
 -----------------------------------------------------------------
 LINTING COMPLETE
@@ -9,7 +102,7 @@ LINTING COMPLETE
 Files Scanned:   3443
 Fatal Errors:    [31m0[0m
 Standard Errs:   [31m1[0m
-Warnings:        [33m0[0m
+Warnings:        [33m31[0m
 
 VERB CONJUGATION COVERAGE
 -----------------------------------------------------------------
@@ -127,7 +220,7 @@ Non-standard:      660
     g/gander.txt                    gander                gandre gandres gandred gandred gandering
     g/glimmer.txt                   glimere               -s -d glimaring
     g/glitter.txt                   glitre                -s -d glitaring
-    g/guarantee.txt                 gairantíe           -s -d -ýing
+    g/guarantee.txt                 gairantíe           -s -d gairantýing
     g/gray.txt                      graie                 -s -d graying
     g/gawk.txt                      gauque                gauc gaucs -d -d -ing
     g/gear.txt                      guier                 guire guires guired guired guiering

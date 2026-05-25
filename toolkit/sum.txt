@@ -3,96 +3,69 @@ Summarizing Data in: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 
 PARTS OF SPEECH
 -----------------------------------------------------------------
-   2836 | masculine noun            (m n)
-   2280 | verb                      (v)
-   1365 | feminine noun             (f n)
-   1183 | adjective                 (adj)
-    227 | Unknown                   (adj, m n)
-    164 | Unknown                   (adj, f n)
-     86 | adverb                    (adv)
-     63 | preposition               (prep)
-     42 | Unknown                   (adj, adv)
-     31 | Unknown                   (m n, adj)
-     22 | pronoun                   (pron)
-     13 | Unknown                   (f n, adj)
-     11 | Unknown                   (pron, adj)
-      9 | Unknown                   (adj, adv, m n)
-      6 | Unknown                   (adv, adj)
-      6 | Unknown                   (adv, conj)
-      6 | conjunction               (conj)
-      6 | intransitive verb         (intr v)
-      6 | transitive verb           (tr v)
-      5 | Unknown                   ()
-      5 | Unknown                   (adj, pron)
-      5 | Unknown                   (modal, aux)
-      4 | Unknown                   (adj, m n, adv)
-      4 | Unknown                   (adj, n)
-      4 | Unknown                   (adv, adj, m n)
-      4 | Unknown                   (f n, m n)
-      4 | obsolete                  (obs)
-      3 | Unknown                   (conj, adv)
-      3 | Unknown                   (prep, adv)
-      2 | Unknown                   (adv, f n)
-      2 | auxillary verb            (aux)
-      2 | interjection interjection (interj)
-      2 | Unknown                   (m n, adj, adv)
-      2 | Unknown                   (m n, interj)
-      2 | Unknown                   (pron, adj, adv)
-      2 | Unknown                   (pron, adv)
+   3131 | masculine noun            (m n)
+   2282 | verb                      (v)
+   1722 | adjective                 (adj)
+   1554 | feminine noun             (f n)
+    182 | adverb                    (adv)
+     71 | preposition               (prep)
+     49 | pronoun                   (pron)
+     18 | conjunction               (conj)
+      8 | auxillary verb            (aux)
+      7 | intransitive verb         (intr v)
+      7 | obsolete                  (obs)
+      7 | transitive verb           (tr v)
+      6 | Unknown                   (n)
+      5 | interjection interjection (interj)
+      5 | modal verb                (modal)
+      2 | number                    (num)
+      2 | Unknown                   (prefix)
       2 | Unknown                   (suffix)
-      1 | Unknown                   (adj , f n)
       1 | Unknown                   (adj m n)
-      1 | Unknown                   (adj, adv, m n, pron)
-      1 | Unknown                   (adj, dated)
-      1 | Unknown                   (adj, f n, m n)
-      1 | Unknown                   (adj, m n, adv, prep)
-      1 | Unknown                   (adj, mn)
-      1 | Unknown                   (adj, n, adv)
-      1 | Unknown                   (adj, pron, m n)
-      1 | Unknown                   (adv, f n, adj)
-      1 | Unknown                   (adv, m n)
-      1 | Unknown                   (aux, v)
+      1 | Unknown                   (dated)
       1 | defective verb            (def v)
       1 | definite article          (defin)
       1 | n feminine noun           (f)
       1 | indefinite article        (indef)
-      1 | Unknown                   (interj, m n)
-      1 | Unknown                   (m n, adv)
-      1 | Unknown                   (m n, f n)
-      1 | Unknown                   (m, n)
-      1 | number                    (num)
-      1 | Unknown                   (num, adj)
-      1 | Unknown                   (obs, adj)
-      1 | Unknown                   (obs, f n)
-      1 | Unknown                   (prefix)
-      1 | Unknown                   (prefix, adj)
-      1 | Unknown                   (prep, adj, adv)
-      1 | Unknown                   (prep, adj, adv, f n)
-      1 | Unknown                   (prep, conj)
-      1 | Unknown                   (prep, conj, adv)
-      1 | Unknown                   (pron, adj, adv, m n)
-      1 | Unknown                   (pron, adj, m n)
-      1 | Unknown                   (pron, conj)
-      1 | Unknown                   (pron, m n)
-      1 | Unknown                   (pron, m n, adv)
+      1 | n masculine noun          (m)
+      1 | Unknown                   (mn)
       1 | suffix                    (suff)
-      1 | Unknown                   (tr v, intr v)
-      1 | Unknown                   (v, obs)
 -----------------------------------------------------------------
-   8457 | TOTALLANGUAGE ORIGINS
+       LANGUAGE ORIGINS
 -----------------------------------------------------------------
    7305 | Modern English            [ME]
-    857 | Unknown                   []
+    382 | Old French                [OF]
     295 | Middle English            [MI]
+    194 | French                    [FR]
+    125 | Latin                     [L]
+     63 | Old English               [OE]
+     33 | Unknown                   []
+     15 | Spanish                   [SP]
+     11 | Italian                   [IT]
+      9 | Unknown                   []
+      4 | Medieval Latin            [ML]
+      3 | Middle Dutch              [MD]
+      3 | Old Norse                 [ON]
+      2 | Unknown                   [D]
+      2 | Unknown                   [DU]
+      2 | Modern Slang              [MS]
+      2 | Unknown                   [PR]
+      1 | Unknown                   [AF]
+      1 | Unknown                   [AFR]
+      1 | Unknown                   [AS]
+      1 | Irish                     [IR]
+      1 | Unknown                   [MG]
+      1 | Unknown                   [NL]
 -----------------------------------------------------------------
-   8457 | TOTALCROSS-TABULATION (Top 5 POS × Top 5 LANG)
+
+CROSS-TABULATION (Top 5 POS × Top 5 LANG)
 -----------------------------------------------------------------
-POS \ LANG        | ME      | null    | MI      
+POS \ LANG        | ME      | OF      | MI      | FR      | L       
 -----------------------------------------------------------------
-m n               | 2287    | 0       | 171     
-v                 | 2251    | 0       | 12      
-f n               | 1109    | 0       | 7       
-adj               | 1029    | 0       | 42      
-adj, m n          | 176     | 0       | 6       
+m n               | 2287    | 169     | 171     | 70      | 69      
+v                 | 2251    | 5       | 12      | 1       | 3       
+adj               | 1029    | 63      | 42      | 26      | 2       
+f n               | 1109    | 99      | 7       | 83      | 37      
+adv               | 77      | 2       | 6       | 0       | 0       
 -----------------------------------------------------------------
 
