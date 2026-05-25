@@ -971,11 +971,13 @@ etym-lint() {
             fi
 
             # Stanzas with no resolvable language origin
-            if etym-parse "$file" | jq -e '
-                .etymology as $e |
-                (($e | map(select(.lang == "ME" or .lang == "MI")) | last) //
-                 ($e | last)) |
-                .lang == "" or . == null
+            if etym-parse "$file" | jq -se '
+                any(.[]; 
+                    .etymology as $e |
+                    (($e | map(select(.lang == "ME" or .lang == "MI")) | last) //
+                     ($e | last)) |
+                    .lang == "" or . == null
+                )
             ' > /dev/null 2>&1; then
                 issues+=("\e[33m[WARN]\e[0m  One or more stanzas have no resolvable language tag.")
                 ((warns++))
