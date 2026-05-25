@@ -320,7 +320,6 @@ etym-find() {
 
 
 # etym-info <word>
-# Displays a formatted table of all definitions for a word.
 etym-info() {
     local word="$1"
     [[ -z "$word" ]] && { echo "Usage: etym-info <word>"; return 1; }
@@ -331,7 +330,11 @@ etym-info() {
     printf -- "%-22s | %-28s | %-6s | %s\n" "INGLISCE" "PART OF SPEECH" "ORIGIN" "FORMS"
     echo "--------------------------------------------------------------------------------"
 
-    etym-parse "$file" | jq -r '
+    etym-parse "$file" | jq -r --arg word "$word" '
+        select(
+            (.me_word       | ascii_downcase) == ($word | ascii_downcase) or
+            (.inglisce_word | ascii_downcase) == ($word | ascii_downcase)
+        ) |
         (.etymology | map(select(.lang == "ME" or .lang == "MI")) | last // .[-1]) as $origin |
         (
             if (.conjugations | type) == "object" then
@@ -355,7 +358,6 @@ etym-info() {
 
 
 # etym-chain <word>
-# Prints the full evolutionary ancestry chain for every definition of a word.
 etym-chain() {
     local word="$1"
     [[ -z "$word" ]] && { echo "Usage: etym-chain <word>"; return 1; }
@@ -365,7 +367,11 @@ etym-chain() {
     local reform_name="${DICT_PROJECT_NAME:-Inglisce}"
     echo "--- Evolutionary Chain for: $word ---"
 
-    etym-parse "$file" | jq -r --arg rn "$reform_name" '
+    etym-parse "$file" | jq -r --arg word "$word" --arg rn "$reform_name" '
+        select(
+            (.me_word       | ascii_downcase) == ($word | ascii_downcase) or
+            (.inglisce_word | ascii_downcase) == ($word | ascii_downcase)
+        ) |
         (.etymology[] | " ↳ \(.form)  [\(.lang)]"),
         (" ↳ \(.inglisce_word)  [\($rn)]"),
         "------------------------------------------------------------"
@@ -373,8 +379,26 @@ etym-chain() {
 }
 
 
+# etym-export <word>
+etym-export() {
+    local word="$1"
+    [[ -z "$word" ]] && { echo "Usage: etym-export <word>"; return 1; }
+    local file
+    file=$(_etym_resolve_file "$word") || return 1
+
+    etym-parse "$file" | jq -s --arg word "$word" '
+        map(select(
+            (.me_word       | ascii_downcase) == ($word | ascii_downcase) or
+            (.inglisce_word | ascii_downcase) == ($word | ascii_downcase)
+        ))
+    '
+}
+
+
 # etym-cognates <query>
-# Finds all Inglisce words whose ancestry contains the given root or phrase.
+# Note: cognates intentionally does NOT filter by word — it searches for
+# all words whose ancestry contains the query root, across all files.
+# The select here filters on etymology content, not on me_word equality.
 etym-cognates() {
     local query="$1"
     [[ -z "$query" ]] && { echo "Usage: etym-cognates <root_word_or_phrase>"; return 1; }
@@ -392,17 +416,6 @@ etym-cognates() {
     ' | sort -u
 
     echo "------------------------------------------------------------"
-}
-
-
-# etym-export <word>
-# Emits the full parsed JSON array for a word. Suitable for the React API.
-etym-export() {
-    local word="$1"
-    [[ -z "$word" ]] && { echo "Usage: etym-export <word>"; return 1; }
-    local file
-    file=$(_etym_resolve_file "$word") || return 1
-    etym-parse "$file" | jq -s '.'
 }
 
 
