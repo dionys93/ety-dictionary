@@ -453,8 +453,11 @@ etym-summarize() {
 
         {
             parts_of_speech: (
-                group_by(.pos) |
-                map({tag: .[0].pos, count: length}) |
+                map(.pos | split(",") | map(ltrimstr(" ") | rtrimstr(" "))) |
+                flatten |
+                map(select(. != "")) |
+                group_by(.) |
+                map({tag: .[0], count: length}) |
                 sort_by(-.count)
             ),
             languages: (
