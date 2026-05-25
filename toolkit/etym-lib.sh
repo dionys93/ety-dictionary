@@ -439,50 +439,55 @@ etym-summarize() {
     done
 
     local target_path
-    if   [[ -z "$target_input" ]];             then target_path="$DICT_DIR"
-    elif [[ -d "$DICT_DIR/$target_input" ]];   then target_path="$DICT_DIR/$target_input"
+    if   [[ -z "$target_input" ]];           then target_path="$DICT_DIR"
+    elif [[ -d "$DICT_DIR/$target_input" ]]; then target_path="$DICT_DIR/$target_input"
     else target_path="$target_input"; fi
 
     [[ ! -d "$target_path" ]] && { echo "Error: Directory '$target_path' not found."; return 1; }
 
-    # Buffer the full JSONL stream once so we don't crawl the fs multiple times
-    local data
-    data=$(_etym_stream "$target_path")
+    # Single jq pass computes everything — POS, languages, and cross-tabulation at once.
+    # The stream is consumed once and never re-read.
+    local stats
+    stats=$(_etym_stream "$target_path" | jq -s '
+        def origin: .etymology | map(select(.lang == "ME" or .lang == "MI")) | last // .[-1];
 
-    if [[ "$format" == "json" ]]; then
-        local output
-        output=$(echo "$data" | jq -s '{
+        {
             parts_of_speech: (
-                group_by(.pos) | map({tag: .[0].pos, count: length}) | sort_by(-.count)
+                group_by(.pos) |
+                map({tag: .[0].pos, count: length}) |
+                sort_by(-.count)
             ),
             languages: (
-                map(.etymology | map(select(.lang == "ME" or .lang == "MI")) | last // .[-1]) |
-                group_by(.lang) | map({tag: .[0].lang, count: length}) | sort_by(-.count)
+                map(origin) |
+                group_by(.lang) |
+                map({tag: .[0].lang, count: length}) |
+                sort_by(-.count)
             ),
             cross_tabulation: (
-                map({
-                    pos: .pos,
-                    lang: (.etymology | map(select(.lang == "ME" or .lang == "MI")) | last // .[-1] | .lang)
-                }) |
+                map({pos: .pos, lang: (origin | .lang // "?")}) |
                 group_by([.pos, .lang]) |
                 map({pos: .[0].pos, lang: .[0].lang, count: length}) |
                 sort_by(-.count)
             )
-        }')
+        }
+    ')
+
+    # ── JSON mode ────────────────────────────────────────────────────────────
+    if [[ "$format" == "json" ]]; then
         if [[ -n "$out_file" ]]; then
-            echo "$output" > "$out_file" && echo "✅ Summary written to $out_file"
+            echo "$stats" > "$out_file" && echo "✅ Summary written to $out_file"
         else
-            echo "$output"
+            echo "$stats"
         fi
         return 0
     fi
 
-    # ---- Text mode ----
+    # ── Text mode ────────────────────────────────────────────────────────────
     local output=""
     output+="Summarizing Data in: $target_path\n"
     output+="=================================================================\n\n"
 
-    # Parts of Speech
+    # Parts of Speech — resolved against parts-of-speech.tsv
     output+="PARTS OF SPEECH\n"
     output+="-----------------------------------------------------------------\n"
     local total_pos=0
@@ -494,11 +499,11 @@ etym-summarize() {
         output+=$(printf "%7s | %-25s (%s)\n" "$count" "${full_name:-Unknown}" "$tag")
         output+="\n"
         total_pos=$((total_pos + count))
-    done < <(echo "$data" | jq -r '.pos' | sort | uniq -c | sort -rn | awk '{print $1"\t"$2}')
+    done < <(echo "$stats" | jq -r '.parts_of_speech[] | [.count, .tag] | @tsv')
     output+="-----------------------------------------------------------------\n"
     output+=$(printf "%7s | TOTAL\n\n" "$total_pos")
 
-    # Language Origins
+    # Language Origins — resolved against get_lang_name
     output+="LANGUAGE ORIGINS\n"
     output+="-----------------------------------------------------------------\n"
     local total_lang=0
@@ -509,30 +514,33 @@ etym-summarize() {
         output+=$(printf "%7s | %-25s [%s]\n" "$count" "${full_name:-Unknown}" "$tag")
         output+="\n"
         total_lang=$((total_lang + count))
-    done < <(echo "$data" | jq -r '
-        .etymology | map(select(.lang == "ME" or .lang == "MI")) | last // .[-1] | .lang // "?"
-    ' | sort | uniq -c | sort -rn | awk '{print $1"\t"$2}')
+    done < <(echo "$stats" | jq -r '.languages[] | [.count, .tag] | @tsv')
     output+="-----------------------------------------------------------------\n"
     output+=$(printf "%7s | TOTAL\n\n" "$total_lang")
 
-    # Cross-tabulation (Top 5 POS × Top 5 LANG)
+    # Cross-tabulation — top 5 POS × top 5 LANG, all values already in $stats
     output+="CROSS-TABULATION (Top 5 POS × Top 5 LANG)\n"
     output+="-----------------------------------------------------------------\n"
 
     local top_pos=()
     local top_langs=()
-    while IFS=$'\t' read -r _ tag; do
+    while IFS= read -r tag; do
         top_pos+=("$tag")
         [[ ${#top_pos[@]} -ge 5 ]] && break
-    done < <(echo "$data" | jq -r '.pos' | sort | uniq -c | sort -rn | awk '{print $1"\t"$2}')
+    done < <(echo "$stats" | jq -r '.parts_of_speech[].tag')
 
-    while IFS=$'\t' read -r _ tag; do
+    while IFS= read -r tag; do
         top_langs+=("$tag")
         [[ ${#top_langs[@]} -ge 5 ]] && break
-    done < <(echo "$data" | jq -r '
-        .etymology | map(select(.lang == "ME" or .lang == "MI")) | last // .[-1] | .lang // "?"
-    ' | sort | uniq -c | sort -rn | awk '{print $1"\t"$2}')
+    done < <(echo "$stats" | jq -r '.languages[].tag')
 
+    # Build a lookup map from the cross_tabulation array: "pos\tlang" -> count
+    declare -A xtab
+    while IFS=$'\t' read -r pos lang count; do
+        xtab["$pos	$lang"]="$count"
+    done < <(echo "$stats" | jq -r '.cross_tabulation[] | [.pos, .lang, .count] | @tsv')
+
+    # Header row
     local header
     header=$(printf "%-18s" "POS \\ LANG")
     for lang in "${top_langs[@]}"; do
@@ -541,18 +549,13 @@ etym-summarize() {
     output+="$header\n"
     output+="-----------------------------------------------------------------\n"
 
+    # Data rows — all lookups are now O(1) against the associative array
     for pos in "${top_pos[@]}"; do
         local row
         row=$(printf "%-18s" "$pos")
         for lang in "${top_langs[@]}"; do
-            local val
-            val=$(echo "$data" | jq -r \
-                --arg p "$pos" --arg l "$lang" '
-                select(
-                    .pos == $p and
-                    (.etymology | map(select(.lang == "ME" or .lang == "MI")) | last // .[-1] | .lang) == $l
-                )' | wc -l | tr -d ' ')
-            row+=$(printf "| %-7s " "${val:-0}")
+            local val="${xtab["$pos	$lang"]:-0}"
+            row+=$(printf "| %-7s " "$val")
         done
         output+="$row\n"
     done
