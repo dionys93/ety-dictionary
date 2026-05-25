@@ -1029,16 +1029,6 @@ etym-lint() {
         done
     fi
 
-    if [[ -n "$paren_s_files" ]]; then
-        echo ""
-        echo "VERB STANZAS WITH (s  [possible malformed conjugation]"
-        echo "-----------------------------------------------------------------"
-        while IFS=$'\t' read -r f match; do
-            printf "  %s\n" "${f#$DICT_DIR/}"
-            printf "    \e[33m%s\e[0m\n" "$match"
-        done <<< "$paren_s_files"
-    fi
-
     echo "================================================================="
 
     [[ $fatals -gt 0 || $errors -gt 0 ]] && return 1
