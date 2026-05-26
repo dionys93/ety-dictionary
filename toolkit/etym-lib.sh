@@ -378,23 +378,6 @@ etym-chain() {
     '
 }
 
-
-# etym-export <word>
-etym-export() {
-    local word="$1"
-    [[ -z "$word" ]] && { echo "Usage: etym-export <word>"; return 1; }
-    local file
-    file=$(_etym_resolve_file "$word") || return 1
-
-    etym-parse "$file" | jq -s --arg word "$word" '
-        map(select(
-            (.me_word       | ascii_downcase) == ($word | ascii_downcase) or
-            (.inglisce_word | ascii_downcase) == ($word | ascii_downcase)
-        ))
-    '
-}
-
-
 # etym-cognates <query>
 # Note: cognates intentionally does NOT filter by word — it searches for
 # all words whose ancestry contains the query root, across all files.
