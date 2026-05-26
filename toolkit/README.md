@@ -2,6 +2,8 @@
 
 A specialized Bash and Node.js toolkit for managing, auditing, and exporting the **Inglisce Etymological Dictionary**. The library is built around a single canonical parser (`etym-parse`) that every other function consumes, ensuring consistent data across all lookup, analysis, and build operations.
 
+Presentation is handled entirely by Astro.js, which serves markdown and text files through its own components. The toolkit's job stops at producing clean, structured data — it has no frontend responsibilities.
+
 ---
 
 ## 📁 Repository Structure
@@ -10,7 +12,8 @@ A specialized Bash and Node.js toolkit for managing, auditing, and exporting the
 * **`toolkit/etym-lib.sh`** — The core Bash toolbelt for word lookup, validation, and JSON/CSV compilation.
 * **`toolkit/config/`** — Central configuration for paths and lookup tables (`languages.tsv`, `parts-of-speech.tsv`).
 * **`toolkit/scripts/`** — Node.js scripts in three domains: data compilation (`build-dictionary.js`), English NLP analysis (`debug-nlp.js`), and Inglisce translation logic (`translator.js`, `inglisce-orthography.js`).
-* **`toolkit/dist/`** — Automated build output: master JSONL dataset, translation brain, and chunked JSON API for the frontend.
+* **`toolkit/dist/`** — Automated build output: master JSONL dataset and translation brain.
+* **`toolkit/tests/`** — Vitest test suite covering the Bash pipeline, NLP engine, and translation layer.
 
 ---
 
@@ -32,6 +35,11 @@ Install Node dependencies from within the `toolkit/` folder:
 npm install
 ```
 
+### 3. Running Tests
+```bash
+npm run test
+```
+
 ---
 
 ## ⚙️ Data Architecture: The Stanza
@@ -51,6 +59,8 @@ The reformed line encodes the Inglisce spelling and all morphological data. The 
 | Full irregular | `root -s <past> <participle> -ing` | `c̃ouse -s c̃ose c̃osen -ing` |
 | Two-stem (-er/-ir) | `root present(s past gerund` | `þonder þondre(s þondred þondering` |
 | Two-stem full irreg | `root present(s past participle gerund` | five tokens after split |
+
+The two-stem class encodes verbs whose infinitive and present stems differ (e.g. `þonder` / `þondre`). All forms in this class are fully resolved words — no suffix tokens. The `present` field in the conjugation object is only populated for this class.
 
 ---
 
@@ -83,15 +93,20 @@ For non-verbs, `conjugations` is a raw array: `["-s"]` for nouns, `["-ly"]` for 
 
 For two-stem verbs, `conjugations.present` is populated with the present stem (e.g. `"þondre"`) and all forms are fully resolved words — no suffix tokens.
 
+`me_word` resolution priority: `[ME]` > `[MI]` > last etymology entry. This means Latin-only or Old French-only stanzas will resolve to their oldest known ancestor.
+
 ### `_etym_resolve_file <word>`
-Resolves a word to its `.txt` file path. First attempts a direct filename match, then falls back to a whole-word content search within the letter directory. Prints the path to stdout or returns 1 with an error on stderr.
+Resolves a word to its `.txt` file path. First attempts a direct filename match (`word.txt`), then falls back to a whole-word content search within the letter directory. This means related words stored in the same file (e.g. `anime` inside `animate.txt`) are correctly reachable. Prints the resolved path to stdout or returns 1 with an error on stderr.
+
+### `_etym_stream [path]`
+Streams all JSONL from every `.txt` file under a given path, defaulting to `$DICT_DIR`. Used internally by `etym-summarize`, `etym-affix`, `etym-build-dataset`, and `etym-graph` to avoid redundant filesystem crawls.
 
 ---
 
 ## 🛠 Lookup & Extraction
 
 ### `etym-info <word>`
-Displays a formatted table of all definitions for a word. Filters to stanzas matching the requested word by `me_word` or `inglisce_word`, so words that share a file with etymological relatives (e.g. `anime` inside `animate.txt`) are correctly isolated.
+Displays a formatted table of all definitions for a word. Filters to stanzas matching the requested word by `me_word` or `inglisce_word`, so words that share a file with etymological relatives are correctly isolated.
 
 ```
 --- Primary Definitions for: animate ---
@@ -112,13 +127,10 @@ Prints the full evolutionary ancestry chain for every matching stanza in a word'
 ```
 
 ### `etym-cognates <query>`
-Searches the entire dictionary for all Inglisce words whose ancestry contains the given root or phrase. Unlike other lookup functions, this intentionally searches across all files rather than filtering to an exact word match.
-
-### `etym-export <word>`
-Emits the full parsed JSONL for a word as a JSON array, filtered to matching stanzas. Suitable for API consumption or piping into `jq`.
+Searches the entire dictionary for all Inglisce words whose ancestry contains the given root or phrase. Unlike other lookup functions, this intentionally searches across all files rather than filtering to an exact word match — its purpose is to surface the full cognate family of a historical root.
 
 ### `etym-cat <word>`
-Prints the raw content of a word's `.txt` file broken into numbered stanzas. Useful for manual auditing.
+Prints the raw content of a word's `.txt` file broken into numbered stanzas. Useful for manual auditing and verifying stanza structure before running lint.
 
 ### `etym-find <query>`
 Recursive grep across the entire dictionary. Accepts words, phrases, or language tags like `[OE]`.
@@ -128,7 +140,7 @@ Recursive grep across the entire dictionary. Accepts words, phrases, or language
 ## 📊 Data & Build Pipeline
 
 ### `etym-build-dataset [output_file]`
-Crawls `$DICT_DIR` and writes `dist/master_dataset.jsonl` — the primary input for the Node.js compilation pipeline. One JSONL record per stanza.
+The primary build command. Crawls `$DICT_DIR` and writes `dist/master_dataset.jsonl` — one JSONL record per stanza, consumed directly by `build-dictionary.js`.
 
 ```bash
 etym-build-dataset
@@ -136,16 +148,16 @@ etym-build-dataset
 ```
 
 ### `etym-flatten [path] [options]`
-Exports the dictionary to JSONL or CSV. Delegates to `etym-build-dataset` for JSONL.
+General-purpose export command. Delegates to `etym-build-dataset` for JSONL; also supports CSV for data analysis workflows.
 
 * `--jsonl` — *(default)* JSON Lines output, one record per stanza
 * `--csv` — CSV with columns: `me_word`, `inglisce_word`, `pos`, `conjugations`
 * `-o, --out <file>` — specify output path
 
 ### `etym-summarize [path] [options]`
-Statistical audit of Parts of Speech and Language Origins across a directory. Generates ranked frequency tables and a cross-tabulation matrix.
+Statistical audit of Parts of Speech and Language Origins across a directory. Runs a single `jq` pass over the full stream and generates ranked frequency tables and a cross-tabulation matrix. POS tags are split on commas so compound tags like `(adj, m n)` contribute to both `adj` and `m n` counts independently.
 
-* `--json` — emit results as JSON instead of formatted text
+* `--json` — emit results as structured JSON instead of formatted text
 * `-o, --out <file>` — write output to file
 
 ### `etym-affix [path] [options]`
@@ -160,7 +172,7 @@ Morphological frequency analysis of prefixes or suffixes across the dictionary.
 
 ## 🤖 NLP Translation Pipeline
 
-A linear pipeline that transforms the raw dictionary into a contextual NLP translation engine using `compromise.js`.
+A linear pipeline that transforms the raw dictionary into a contextual NLP translation engine using `compromise.js`. Two transcription modes are available depending on the use case.
 
 ### Step 1: Build the master dataset
 ```bash
@@ -169,17 +181,28 @@ etym-build-dataset
 ```
 
 ### Step 2: Compile the translation brain
-Ingests the JSONL dataset, resolves all morphological forms using named conjugation slots, and builds an optimized lookup map keyed by English surface form.
+Ingests the JSONL dataset, resolves all morphological forms using named conjugation slots, and builds an optimized lookup map keyed by English surface form. Special handling is built in for `be`, `do`, `have`, modals, and the two-stem `-er/-ir` verb class.
+
 ```bash
 node scripts/build-dictionary.js
 # → dist/translationBrain.json
 ```
 
-### Step 3: Run the translator
-Reads standard English text, uses `compromise.js` POS tagging to disambiguate homographs, and maps words to the compiled brain. Unmapped words are wrapped in `[brackets]` for auditing.
+### Step 3a: NLP-backed transcription (recommended for prose)
+Uses `compromise.js` POS tagging to disambiguate homographs before substitution. Handles contraction splitting, placeholder protection, and two-pass multi-word phrase matching. Best used for bulk library transcription where accuracy outweighs speed.
+
+```bash
+node scripts/inglisce-orthography.js
+```
+
+### Step 3b: Brute-force transcription (fast, punctuation-safe)
+Regex tokenization with direct dictionary lookup. No NLP overhead — trades homograph intelligence for guaranteed punctuation integrity. Suitable for targeted transcription or environments where `compromise.js` behaviour is unpredictable.
+
 ```bash
 node scripts/translator.js <input.txt> [output.txt]
 ```
+
+In both modes, unmapped words are wrapped in `[brackets]` and reported to the console for auditing.
 
 ---
 
@@ -190,11 +213,11 @@ Validates `.txt` file formatting. Issues are reported by severity:
 
 * `[FATAL]` — file is empty
 * `[ERROR]` — missing or malformed POS tag `()`, missing language tag `[]`, or both tags on the same line
-* `[WARN]` — trailing whitespace
+* `[WARN]` — trailing whitespace, or one or more stanzas with no resolvable language origin
 
-The lint report also includes a **verb conjugation coverage** summary showing how many verb stanzas use standard `-s -d -ing` vs non-standard forms, with a full listing of non-standard entries for auditing.
+The lint report also includes a **verb conjugation coverage** summary: how many verb stanzas use standard `-s -d/-ed -ing` vs non-standard forms, with a full listing of non-standard entries for auditing.
 
-Returns exit code 1 if any fatal errors or errors are found.
+Returns exit code 1 if any fatal errors or standard errors are found.
 
 ### `etym-trim [path]`
 Strips trailing whitespace from all `.txt` files in a directory. Resolves all trailing whitespace lint warnings in one pass. macOS and Linux compatible.
@@ -213,8 +236,7 @@ Splits each multi-stanza `.txt` file into individual per-definition history file
 ### `etym-graph [path] [-o <file>]`
 Builds a `{nodes, edges}` JSON graph of all etymological relationships across the dictionary, suitable for force-directed graph renderers. Outputs to `etym_graph.json` by default.
 
+> **Note:** requires jq 1.6+.
+
 ### `etym-visualize [graph_file]`
 Converts `etym_graph.json` into a `.md` file containing a Mermaid.js diagram block. Renders natively in VS Code (`Cmd+K V`), GitHub, and Mermaid Live.
-
-### `etym-publish [path]`
-Compiles the dictionary into a static JSON API for the React/Astro frontend. Generates per-letter word index files (e.g. `letters/a.json`) and a `navigation.json` index in `dist/api/`.
