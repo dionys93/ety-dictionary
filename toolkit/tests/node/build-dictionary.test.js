@@ -1,8 +1,4 @@
 import { describe, it, expect } from 'vitest';
-import { compile } from '../../scripts/build-dictionary.js';
-
-
-import { describe, it, expect } from 'vitest';
 import { buildBrain } from '../../scripts/build-dictionary.js';
 
 describe('Dictionary Compiler (buildBrain)', () => {
@@ -15,14 +11,25 @@ describe('Dictionary Compiler (buildBrain)', () => {
                 inglisce_word: "mâche",
                 pos: "verb",
                 // Mixed array: Full words for past/participle, shorthand for present/gerund
-                conjugations: ["-s", "mâde", "-ing"] 
+                conjugations: {
+                    present: "",
+                    third_singular: "-s",
+                    past: "mâde",
+                    participle: "mâde",
+                    gerund: "-ing"
+                }
             },
             {
                 me_word: "speak",
                 inglisce_word: "spieche",
                 pos: "verb",
-                // Full word for present, but shorthand for gerund
-                conjugations: ["spiecs", "spóc", "spócan", "-ing"]
+                conjugations: {
+                    present: "",
+                    third_singular: "-s",
+                    past: "spóc",
+                    participle: "spócan",
+                    gerund: "-ing"
+                }
             }
         ];
 
