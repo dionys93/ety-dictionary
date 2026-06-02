@@ -1,4 +1,4 @@
-/**
+/** build-dictionary.js
  * ============================================================================
  * TRANSLATION BRAIN COMPILER
  * * This script ingests the flattened JSONL dictionary and uses `compromise.js` 
@@ -199,7 +199,6 @@ export function buildBrain(dataset) {
                 const conj = doc.verbs().conjugate()[0];
                 if (!conj) return;
 
-                const c = data.conjugations;
 
                 // ── Two-stem -er/-ir class ─────────────────────────────────────────────
                 // present is populated only for this class (e.g. "þondre").
@@ -228,18 +227,18 @@ export function buildBrain(dataset) {
                 }
             }
             // 6. Standard Nouns (Plurals)
-            else if (posCategory === 'Noun' && conjugations.length > 0) {
+            else if (posCategory === 'Noun' && c.length > 0) {
                 const doc = nlp(engWord).tag('Noun');
                 const englishPlural = doc.nouns().toPlural().text('normal');
-                const inglPlural = resolveForm(conjugations[0], inglisceWord);
+                const inglPlural = resolveForm(c[0], inglisceWord);
                 if (englishPlural && inglPlural) addWord(englishPlural, inglPlural, 'Noun');
             }
             // 7. Adjectives (Comparatives)
-            else if (posCategory === 'Adjective' && conjugations.length > 0) {
+            else if (posCategory === 'Adjective' && c.length > 0) {
                 const doc = nlp(engWord).tag('Adjective');
                 const conj = doc.adjectives().conjugate()[0];
 
-                conjugations.forEach(conjStr => {
+                c.forEach(conjStr => {
                     const resolved = resolveForm(conjStr, inglisceWord);
                     if (!resolved) return;
 

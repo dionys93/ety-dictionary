@@ -45,7 +45,7 @@ describe('Inglisce Transcription Engine', () => {
         const text = "I have the receipts.";
         const result = transcribe(text, liveBrain);
 
-        expect(result).toContain('recípts');
+        expect(result).toContain('recípts'.normalize('NFC'));
     });
 
     // --- RULE 3: NLP CONTEXTUAL DISAMBIGUATION ---
