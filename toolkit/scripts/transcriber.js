@@ -1,9 +1,8 @@
 /**
  * ============================================================================
- * INGLISCE LIBRARY TRANSCRIBER
- * * Recursively crawls `/data-text/books`, replicates the exact folder 
- * structure in `/data-text/inglisce/books`, and transcribes every page.
- * Loads the translation brain into memory ONCE for maximum performance.
+ * INGLISCE LIBRARY TRANSCRIBER & NLP ENGINE
+ * * Recursively crawls `/data-text/books` and transcribes every page.
+ * * Exports `transcribe()` for isolated testing of the compromise.js pipeline.
  * ============================================================================
  */
 
@@ -11,62 +10,29 @@ import fs from 'fs';
 import path from 'path';
 import nlp from 'compromise';
 import { fileURLToPath } from 'url';
-import { resolveForm, matchCasing } from './utils.js';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const PROJECT_ROOT = path.resolve(__dirname, '../../');
-
-const INPUT_DIR = path.join(PROJECT_ROOT, 'data-text', 'books');
-const OUTPUT_DIR = path.join(PROJECT_ROOT, 'data-text', 'inglisce', 'books');
-const BRAIN_PATH = path.join(PROJECT_ROOT, 'toolkit', 'dist', 'translationBrain.json');
+import { matchCasing } from './utils.js';
 
 const HARDCODED_OVERRIDES = {
-    "I'll": "I’ll",
-    "I've": "I've",
-    "I'd": "I'd",
-    "we've": "uie've",
-    "we'd": "uie'd",
-    "We've": "Uie've",
-    "We'd": "Uie'd",
-    "You've": "You've",
-    "You'd": "You'd",
-    "you've": "you've",
-    "you'd": "you'd",
-    "it's": "it's",
-    "It's": "It's",
-    "it'd": "it'd",
-    "It'd": "It'd",
-    "she's": "sie's",
-    "She's": "Sie's",
-    "she'd": "sie'd",
-    "She'd": "Sie'd",
-    "he's": "hie’s",
-    "he’d": "hie’d",
-    "He's": "Hie’s",
-    "He’d": "Hie’d",
-    "They've": "Ћey've",
-    "They'd": "Ћey'd",
-    "they've": "þey've",
-    "they'd": "þey'd"
+    "I'll": "I’ll", "I've": "I've", "I'd": "I'd",
+    "we've": "uie've", "we'd": "uie'd",
+    "We've": "Uie've", "We'd": "Uie'd",
+    "You've": "You've", "You'd": "You'd",
+    "you've": "you've", "you'd": "you'd",
+    "it's": "it's", "It's": "It's",
+    "it'd": "it'd", "It'd": "It'd",
+    "she's": "sie's", "She's": "Sie's",
+    "she'd": "sie'd", "She'd": "Sie'd",
+    "he's": "hie’s", "he’d": "hie’d",
+    "He's": "Hie’s", "He’d": "Hie’d",
+    "They've": "Ћey've", "They'd": "Ћey'd",
+    "they've": "þey've", "they'd": "þey'd"
 };
 
-if (!fs.existsSync(BRAIN_PATH)) {
-    console.error('❌ Error: translationBrain.json is missing. Run `node scripts/compileBrain.js` first.');
-    process.exit(1);
-}
+// ============================================================================
+// CORE ENGINE (Exported for Testing)
+// ============================================================================
 
-if (!fs.existsSync(INPUT_DIR)) {
-    console.error(`❌ Error: Input directory not found at ${INPUT_DIR}`);
-    process.exit(1);
-}
-
-const brain = JSON.parse(fs.readFileSync(BRAIN_PATH, 'utf8'));
-const multiWords = Object.keys(brain).filter(k => k.includes(' ') || k.includes("'"));
-const globalMissingWords = new Set();
-let filesProcessed = 0; // Numerical Collection
-
-const getReplacement = (term, brainEntry) => {
+export const getReplacement = (term, brainEntry) => {
     // 1. Core Verbs
     if (term.has('#Copula') && brainEntry.Copula) return brainEntry.Copula;
     if (term.has('#Auxiliary') && brainEntry.Auxiliary) return brainEntry.Auxiliary;
@@ -96,8 +62,9 @@ const getReplacement = (term, brainEntry) => {
     return brainEntry[keys[0]];
 };
 
-function transcribeFile(inputFile, outputFile) {
-    const text = fs.readFileSync(inputFile, 'utf8');
+export function transcribe(text, brain, missingWordsTracker = new Set()) {
+    
+    const multiWords = Object.keys(brain).filter(k => k.includes(' ') || k.includes("'"));
 
     // Normalize curly apostrophes globally so brain keys always match
     const normalizedText = text.replace(/[\u2018\u2019\u02BC]/g, "'");
@@ -161,15 +128,13 @@ function transcribeFile(inputFile, outputFile) {
                 return;
             }
 
-            // These are compromise-split contraction suffixes ("n't", "'s", "'re" etc.).
-            // Tag them as translated so they pass through untouched and naturally
-            // concatenate with the preceding translated word in doc.text() output.
+            // These are compromise-split contraction suffixes
             if (/^(n['']t|[''][srelldvem])$/i.test(rawNormal)) {
                 term.tag('#Translated');
                 return;
             }
 
-            // Check if the next term is "n't" — if so, look up the negated brain form
+            // Check if the next term is "n't"
             const nextTerm = doc.terms().eq(i + 1);
             const nextIsNegation = nextTerm && /^n['']t$/i.test(nextTerm.text('normal'));
 
@@ -187,8 +152,6 @@ function transcribeFile(inputFile, outputFile) {
                         return;
                     }
                 }
-                // No negated brain form — fall through to normal lookup.
-                // The n't term will be tagged #Translated on its own pass above.
             }
 
             // Normal lookup
@@ -214,7 +177,7 @@ function transcribeFile(inputFile, outputFile) {
                 const bracketedText = rawText.replace(/([a-zA-Z]+(?:[''][a-zA-Z]+)*)/, '[$1]');
                 term.replaceWith(bracketedText, { keepTags: true, keepCase: false });
             }
-            globalMissingWords.add(normal);
+            missingWordsTracker.add(normal);
         });
 
         // --- PASS 4: Restore placeholders ---
@@ -225,38 +188,69 @@ function transcribeFile(inputFile, outputFile) {
         return result;
     });
 
-    const outDir = path.dirname(outputFile);
-    if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
-    fs.writeFileSync(outputFile, transcribedLines.join('\n'), 'utf8');
-    filesProcessed++;
+    // Enforce strict NFC composition on the final output
+    return transcribedLines.join('\n').normalize('NFC');
 }
 
-function crawlAndTranscribe(currentDir) {
-    const files = fs.readdirSync(currentDir, { withFileTypes: true });
+// ============================================================================
+// CLI CRAWLER EXECUTION
+// ============================================================================
 
-    files.forEach(file => {
-        const fullPath = path.join(currentDir, file.name);
+const __filename = fileURLToPath(import.meta.url);
+if (process.argv[1] === __filename) {
+    const __dirname = path.dirname(__filename);
+    const PROJECT_ROOT = path.resolve(__dirname, '../../');
 
-        if (file.isDirectory()) {
-            crawlAndTranscribe(fullPath);
-        } else if (file.name.endsWith('.txt')) {
-            const relativePath = path.relative(INPUT_DIR, fullPath);
-            const outputPath = path.join(OUTPUT_DIR, relativePath);
-            
-            transcribeFile(fullPath, outputPath);
-        }
-    });
-}
+    const INPUT_DIR = path.join(PROJECT_ROOT, 'data-text', 'books');
+    const OUTPUT_DIR = path.join(PROJECT_ROOT, 'data-text', 'inglisce', 'books');
+    const BRAIN_PATH = path.join(PROJECT_ROOT, 'toolkit', 'dist', 'translationBrain.json');
 
-console.log(`📚 Compiling Library from: ${INPUT_DIR}`);
-console.log(`➡️  Outputting to: ${OUTPUT_DIR}\n`);
+    if (!fs.existsSync(BRAIN_PATH)) {
+        console.error('❌ Error: translationBrain.json is missing. Run `node scripts/build-dictionary.js` first.');
+        process.exit(1);
+    }
+    if (!fs.existsSync(INPUT_DIR)) {
+        console.error(`❌ Error: Input directory not found at ${INPUT_DIR}`);
+        process.exit(1);
+    }
 
-crawlAndTranscribe(INPUT_DIR);
+    const brain = JSON.parse(fs.readFileSync(BRAIN_PATH, 'utf8'));
+    const globalMissingWords = new Set();
+    let filesProcessed = 0;
 
-console.log(`✅ Library Transcription Complete!`);
-console.log(`📄 Total Pages Transcribed: ${filesProcessed}`);
+    function crawlAndTranscribe(currentDir) {
+        const files = fs.readdirSync(currentDir, { withFileTypes: true });
 
-if (globalMissingWords.size > 0) {
-    console.log(`\n⚠️  Master Missing Words Tracker (${globalMissingWords.size} unique untranslated words):`);
-    console.log(Array.from(globalMissingWords).sort().join(', '));
+        files.forEach(file => {
+            const fullPath = path.join(currentDir, file.name);
+
+            if (file.isDirectory()) {
+                crawlAndTranscribe(fullPath);
+            } else if (file.name.endsWith('.txt')) {
+                const relativePath = path.relative(INPUT_DIR, fullPath);
+                const outputPath = path.join(OUTPUT_DIR, relativePath);
+                
+                const text = fs.readFileSync(fullPath, 'utf8');
+                const transcribed = transcribe(text, brain, globalMissingWords);
+
+                const outDir = path.dirname(outputPath);
+                if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
+                fs.writeFileSync(outputPath, transcribed, 'utf8');
+                filesProcessed++;
+            }
+        });
+    }
+
+    console.log(`📚 Compiling Library from: ${INPUT_DIR}`);
+    console.log(`➡️  Outputting to: ${OUTPUT_DIR}\n`);
+
+    crawlAndTranscribe(INPUT_DIR);
+
+    console.log(`✅ Library Transcription Complete!`);
+    console.log(`📄 Total Pages Transcribed: ${filesProcessed}`);
+
+    if (globalMissingWords.size > 0) {
+        console.log(`\n⚠️  Master Missing Words Tracker (${globalMissingWords.size} unique untranslated words):`);
+        console.log(Array.from(globalMissingWords).sort().join(', '));
+    }
 }
