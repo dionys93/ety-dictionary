@@ -1,8 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import fs from 'fs';
 import path from 'path';
-// import { transcribe } from '../../scripts/translator.js';
-import { transcribe } from '../../scripts/inglisce-orthography.js';
+import { transcribe } from '../../scripts/transcriber.js';
 import { buildBrain } from '../../scripts/build-dictionary.js';
 
 const JSONL_PATH = path.resolve(__dirname, '../fixtures/flatten-out/master.jsonl');
