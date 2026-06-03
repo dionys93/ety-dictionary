@@ -192,7 +192,7 @@ node scripts/build-dictionary.js
 Uses `compromise.js` POS tagging to disambiguate homographs before substitution. Handles contraction splitting, placeholder protection, and two-pass multi-word phrase matching. Best used for bulk library transcription where accuracy outweighs speed.
 
 ```bash
-node scripts/inglisce-orthography.js
+node scripts/transcriber.js
 ```
 
 ### Step 3b: Brute-force transcription (fast, punctuation-safe)
