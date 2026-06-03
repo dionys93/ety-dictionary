@@ -54,7 +54,6 @@ _etym_stream() {
     done
 }
 
-
 # etym-parse <file.txt>
 # ─────────────────────────────────────────────────────────────────────────────
 # THE CANONICAL STANZA PARSER. Single source of truth for reading .txt entries.
@@ -88,6 +87,7 @@ _etym_stream() {
 #   3. Full irregular:       root -s <past> <participle> -ing
 #   4. Two-stem -er/-ir:     root present(s past gerund
 #   5. Two-stem full irreg:  root present(s past participle gerund
+#   6. Explicit Arrays:      root <am> <is> <are> <was> ... (no slot logic)
 # ─────────────────────────────────────────────────────────────────────────────
 etym-parse() {
     local file="$1"
@@ -184,60 +184,50 @@ etym-parse() {
         if (is_verb(pos)) {
 
             # ── Class 4 & 5: Two-stem -er/-ir ──────────────────────────────
-            # Signature: tokens[2] ends in "(s"
-            # e.g. "þonder þondre(s þondred þondering"
-            #       [1]     [2]      [3]      [4]
-            # e.g. "treacher treachre(s treachred treachren treachering"
-            #       [1]       [2]         [3]        [4]       [5]
             if (n_tok >= 2 && tokens[2] ~ /\(s$/) {
                 present_stem = substr(tokens[2], 1, length(tokens[2]) - 2)
                 third_sing   = present_stem "s"
 
                 if (n_tok >= 5) {
-                    # Class 5: distinct participle
-                    # root present(s past participle gerund
                     past_form = tokens[3]
                     part_form = tokens[4]
                     gerund    = tokens[5]
                 } else {
-                    # Class 4: standard -er/-ir
-                    # root present(s past gerund
                     past_form = (n_tok >= 3) ? tokens[3] : ""
                     part_form = past_form
                     gerund    = (n_tok >= 4) ? tokens[4] : ""
                 }
-
                 conj_json = verb_conj_json(present_stem, third_sing, past_form, part_form, gerund)
 
-            # ── Classes 1, 2, 3: Standard and irregular ────────────────────
+            # ── Classes 1, 2, 3, 6: Standard, irregular, and explicit arrays ─
             } else {
-                # tokens: [1]=root [2]=3ps [3]=past [4]=gerund
-                #    OR   [1]=root [2]=3ps [3]=past [4]=participle [5]=gerund
+                if (n_tok > 5) {
+                    # Class 6: Fully explicit array (e.g., "to be", "to do")
+                    conj_json = "["
+                    for (i = 2; i <= n_tok; i++) {
+                        if (i > 2) conj_json = conj_json ","
+                        conj_json = conj_json "\"" esc(tokens[i]) "\""
+                    }
+                    conj_json = conj_json "]"
+                } else {
+                    third_sing = (n_tok >= 2) ? tokens[2] : "-s"
+                    past_form  = ""
+                    part_form  = ""
+                    gerund     = ""
 
-                third_sing = (n_tok >= 2) ? tokens[2] : "-s"
-                past_form  = ""
-                part_form  = ""
-                gerund     = ""
-
-                if (n_tok == 3) {
-                    # root -s -ing  (no past recorded)
-                    gerund = tokens[3]
-
-                } else if (n_tok == 4) {
-                    # Class 1: root -s -d -ing
-                    # Class 2: root -s <past> -ing  (past = participle)
-                    past_form = tokens[3]
-                    part_form = tokens[3]
-                    gerund    = tokens[4]
-
-                } else if (n_tok >= 5) {
-                    # Class 3: root -s <past> <participle> -ing
-                    past_form = tokens[3]
-                    part_form = tokens[4]
-                    gerund    = tokens[5]
+                    if (n_tok == 3) {
+                        gerund = tokens[3]
+                    } else if (n_tok == 4) {
+                        past_form = tokens[3]
+                        part_form = tokens[3]
+                        gerund    = tokens[4]
+                    } else if (n_tok == 5) {
+                        past_form = tokens[3]
+                        part_form = tokens[4]
+                        gerund    = tokens[5]
+                    }
+                    conj_json = verb_conj_json("", third_sing, past_form, part_form, gerund)
                 }
-
-                conj_json = verb_conj_json("", third_sing, past_form, part_form, gerund)
             }
 
         } else {
@@ -288,12 +278,10 @@ etym-parse() {
         src_json = src_json "]"
 
         # ---- Emit JSONL ----
-        printf "{\"me_word\":\"%s\",\"inglisce_word\":\"%s\",\"pos\":\"%s\",\"conjugations\":%s,\"etymology\":%s,\"sources\":%s}\n",
-            esc(me_word), esc(inglisce_word), esc(pos),
-            conj_json, etym_json, src_json
+        printf "{\"me_word\":\"%s\",\"inglisce_word\":\"%s\",\"pos\":\"%s\",\"conjugations\":%s,\"etymology\":%s,\"sources\":%s}\n", esc(me_word), esc(inglisce_word), esc(pos), conj_json, etym_json, src_json
     }' "$file"
 }
-
+  
 
 # =============================================================================
 # BROWSING & LOOKUP

@@ -5757,15 +5757,6 @@
   "appreciate": {
     "Verb": "appríçiait"
   },
-  "appreciates": {
-    "Verb": "to"
-  },
-  "appreciated": {
-    "Verb": "príçiait"
-  },
-  "appreciating": {
-    "Verb": "appríçiaitd"
-  },
   "appreciation": {
     "Noun": "appriçiâcion"
   },
@@ -7959,7 +7950,7 @@
     "Verb": "r̃outed"
   },
   "rooting": {
-    "Verb": "/"
+    "Verb": "r̃outing"
   },
   "rate": {
     "Noun": "râte",
@@ -23291,48 +23282,48 @@
     "Verb": "bie"
   },
   "am": {
-    "Copula": "am",
-    "Verb": "am"
+    "Copula": "bie",
+    "Verb": "bie"
   },
   "is": {
-    "Copula": "am",
-    "Verb": "am"
+    "Copula": "bie",
+    "Verb": "bie"
   },
   "are": {
-    "Copula": "am",
-    "Verb": "am"
+    "Copula": "bie",
+    "Verb": "bie"
   },
   "was": {
-    "Copula": "is",
-    "Verb": "is"
+    "Copula": "bie",
+    "Verb": "bie"
   },
   "were": {
-    "Copula": "is",
-    "Verb": "is"
+    "Copula": "bie",
+    "Verb": "bie"
   },
   "been": {
-    "Copula": "are",
-    "Verb": "are"
+    "Copula": "bie",
+    "Verb": "bie"
   },
   "being": {
-    "Copula": "uas",
-    "Verb": "uas"
+    "Copula": "bie",
+    "Verb": "bie"
   },
   "isn't": {
-    "Copula": "is",
-    "Verb": "is"
+    "Copula": "bie",
+    "Verb": "bie"
   },
   "aren't": {
-    "Copula": "am",
-    "Verb": "am"
+    "Copula": "bie",
+    "Verb": "bie"
   },
   "wasn't": {
-    "Copula": "is",
-    "Verb": "is"
+    "Copula": "bie",
+    "Verb": "bie"
   },
   "weren't": {
-    "Copula": "is",
-    "Verb": "is"
+    "Copula": "bie",
+    "Verb": "bie"
   },
   "beside": {
     "Preposition": "besîde"
@@ -36887,15 +36878,6 @@
   "nauseate": {
     "Verb": "nausïait"
   },
-  "nauseates": {
-    "Verb": "to"
-  },
-  "nauseated": {
-    "Verb": "naușiait"
-  },
-  "nauseating": {
-    "Verb": "nausïaited"
-  },
   "nauseant": {
     "Adjective": "nausïant",
     "Noun": "nausïant"
@@ -38505,8 +38487,8 @@
   },
   "does": {
     "Noun": "dós",
-    "Verb": "dus",
-    "Auxiliary": "dus"
+    "Verb": "dou",
+    "Auxiliary": "dou"
   },
   "dial": {
     "Noun": "dîale",
@@ -39833,28 +39815,28 @@
     "Auxiliary": "dou"
   },
   "did": {
-    "Verb": "did",
-    "Auxiliary": "did"
+    "Verb": "dou",
+    "Auxiliary": "dou"
   },
   "done": {
-    "Verb": "don",
-    "Auxiliary": "don"
+    "Verb": "dou",
+    "Auxiliary": "dou"
   },
   "doing": {
-    "Verb": "douing",
-    "Auxiliary": "douing"
+    "Verb": "dou",
+    "Auxiliary": "dou"
   },
   "don't": {
-    "Verb": "did",
-    "Auxiliary": "did"
+    "Verb": "dou",
+    "Auxiliary": "dou"
   },
   "doesn't": {
-    "Verb": "dus",
-    "Auxiliary": "dus"
+    "Verb": "dou",
+    "Auxiliary": "dou"
   },
   "didn't": {
-    "Verb": "did",
-    "Auxiliary": "did"
+    "Verb": "dou",
+    "Auxiliary": "dou"
   },
   "deed": {
     "Noun": "dide",
