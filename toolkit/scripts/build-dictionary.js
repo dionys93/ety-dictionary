@@ -13,6 +13,7 @@ import { fileURLToPath } from 'node:url';
 import nlp from 'compromise';
 import { resolveForm } from './utils.js';
 
+// Maps Bash/Dictionary shorthand POS tags to standard compromise.js tags
 const posMap = {
     'verb': 'Verb', 'v': 'Verb', 'tr v': 'Verb', 'intr v': 'Verb',
     'noun': 'Noun', 'n': 'Noun', 'm n': 'Noun', 'f n': 'Noun',
@@ -33,11 +34,20 @@ const posMap = {
 // COMPILER CORE (Exported for Testing)
 // ============================================================================
 
+/**
+ * Builds the comprehensive Translation Brain mapping from a raw dataset.
+ * @param {Array<Object>} dataset - The parsed JSONL dictionary rows.
+ * @returns {Object} An object containing the compiled `brain` map and `compiledCount`.
+ */
 export function buildBrain(dataset) {
     const brain = {};
     let compiledCount = 0;
 
-    // Ensures no garbage from Bash ever pollutes the lookup keys
+    /**
+     * Safely inserts a word into the brain. 
+     * Ensures no garbage from Bash ever pollutes the lookup keys by stripping
+     * parentheses, brackets, and infinitive "to " prefixes.
+     */
     const addWord = (eng, inglisce, pos) => {
         if (!eng || !inglisce) return;
 
@@ -56,17 +66,24 @@ export function buildBrain(dataset) {
         brain[cleanEng][pos] = brain[cleanEng][pos] || cleanIng;
     };
 
+    // Iterate through every stanza extracted by etym-parse
     dataset.forEach(data => {
         if (!data || !data.me_word || !data.inglisce_word) return;
 
+        // Force strict NFC composition early to prevent byte-level mismatches downstream
         const engWord = data.me_word.toLowerCase().trim().normalize('NFC');
         const inglisceWord = data.inglisce_word.normalize('NFC');
         
+        // `c` can be an Object (standard verb slots) OR an Array (explicit irregular lists)
         const c = data.conjugations || {};
         const isVerbConj = !Array.isArray(c);
 
-        // Helper: resolve a named slot, falling back to inglisceWord if empty.
-        // Bypasses resolveForm entirely for the two-stem class or explicit arrays.
+        /**
+         * Helper: resolves a named conjugation slot.
+         * If the dictionary provided a fully explicit array (e.g., 'to be') or 
+         * a two-stem verb class (indicated by c.present), it bypasses suffix 
+         * stripping entirely, as the words are already fully formed.
+         */
         const resolve = (slot, isGerund = false) => {
             if (!slot) return inglisceWord;
             return (isVerbConj && c.present) || Array.isArray(c)
@@ -81,13 +98,14 @@ export function buildBrain(dataset) {
 
         if (validPosCategories.length > 0) compiledCount++;
 
-        // Base context passed to all handlers
+        // Base context passed to all specific POS handlers
         const ctx = { addWord, resolve, engWord, inglisceWord, c };
 
         validPosCategories.forEach(posCategory => {
             ctx.posCategory = posCategory;
             addWord(engWord, inglisceWord, posCategory);
 
+            // Route to the appropriate morphologic generator
             if (engWord === 'be') handleBe(ctx);
             else if (engWord === 'do') handleDo(ctx);
             else if (engWord === 'have') handleHave(ctx);
@@ -105,7 +123,9 @@ export function buildBrain(dataset) {
 // PART-OF-SPEECH HANDLERS
 // ============================================================================
 
-/** * Reusable helper for 'be', 'do', and 'have' to map their arrays without duplicating logic
+/**
+ * Reusable helper for 'be', 'do', and 'have' to map their highly irregular 
+ * arrays to multiple grammatical roles (e.g., Auxiliary and Verb) without code duplication.
  */
 function processExplicitAuxiliary(ctx, slots, forms, primaryPos, secondaryPos, generateNegative) {
     const { addWord, resolve, inglisceWord, engWord } = ctx;
@@ -125,6 +145,8 @@ function processExplicitAuxiliary(ctx, slots, forms, primaryPos, secondaryPos, g
 }
 
 function handleBe(ctx) {
+    // Check if the Bash parser handed us a fully explicit custom array for 'be'
+    // If not, map to standard object slots.
     const slots = Array.isArray(ctx.c) ? ctx.c : [
         ctx.c.third_singular, ctx.c.third_singular, ctx.c.present || ctx.c.third_singular,
         ctx.c.past, ctx.c.past, ctx.c.participle || ctx.c.past, ctx.c.gerund,
@@ -158,6 +180,7 @@ function handleHave(ctx) {
 function handleModal(ctx) {
     const { engWord, inglisceWord, c, resolve, addWord } = ctx;
     
+    // Modals are heavily irregular, define explicit past/negated mappings
     const pastMap = { 'can': 'could', 'will': 'would', 'shall': 'should', 'may': 'might' };
     const negMap  = { 'can': "can't", 'will': "won't", 'shall': "shan't" };
 
@@ -184,10 +207,13 @@ function handleModal(ctx) {
 
 function handleVerb(ctx) {
     const { engWord, inglisceWord, posCategory, c, addWord } = ctx;
+    
+    // Leverage NLP to automatically determine the correct English targets
     const conj = nlp(engWord).tag('Verb').verbs().conjugate()[0];
     if (!conj) return;
 
     if (c.present) {
+        // Two-stem verbs: The forms provided are exact, fully-spelled words
         addWord(conj.PresentTense, c.third_singular, posCategory);
         addWord(conj.Gerund, c.gerund, posCategory);
         if (c.past) {
@@ -195,6 +221,7 @@ function handleVerb(ctx) {
             addWord(conj.Participle, c.participle || c.past, posCategory);
         }
     } else {
+        // Standard/Semi-Irregular verbs: Require suffix resolution
         const presentForm = resolveForm(c.third_singular, inglisceWord);
         const pastForm = resolveForm(c.past, inglisceWord);
         const participleForm = resolveForm(c.participle, inglisceWord);
@@ -209,6 +236,7 @@ function handleVerb(ctx) {
 
 function handleNoun(ctx) {
     const { engWord, inglisceWord, c, addWord } = ctx;
+    // Let NLP generate the correct English plural target
     const englishPlural = nlp(engWord).tag('Noun').nouns().toPlural().text('normal');
     const inglPlural = resolveForm(c[0], inglisceWord);
     
@@ -221,6 +249,7 @@ function handleAdjective(ctx) {
     const { engWord, inglisceWord, c, addWord } = ctx;
     const conj = nlp(engWord).tag('Adjective').adjectives().conjugate()[0];
 
+    // Adjectives frequently spawn Adverbs and Nouns natively
     c.forEach(conjStr => {
         const resolved = resolveForm(conjStr, inglisceWord);
         if (!resolved) return;

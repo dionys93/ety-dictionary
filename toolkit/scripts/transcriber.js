@@ -12,6 +12,12 @@ import nlp from 'compromise';
 import { fileURLToPath } from 'url';
 import { matchCasing } from './utils.js';
 
+/**
+ * HARDCODED_OVERRIDES: 
+ * A safety net for complex, multi-word contractions that traditionally break NLP
+ * tokenizer boundaries. These exact casing matches are swapped with placeholders
+ * *before* the NLP engine reads the text, preventing translation corruption.
+ */
 const HARDCODED_OVERRIDES = {
     "I'll": "I’ll", "I've": "I've", "I'd": "I'd",
     "we've": "uie've", "we'd": "uie'd",
@@ -32,26 +38,33 @@ const HARDCODED_OVERRIDES = {
 // CORE ENGINE (Exported for Testing)
 // ============================================================================
 
+/**
+ * The Disambiguation Heuristic Engine.
+ * Evaluates the POS tags applied by `compromise` against the available dictionary 
+ * mappings to select the correct homograph (e.g., "circles" as Verb vs Noun).
+ */
 export const getReplacement = (term, brainEntry) => {
-    // 1. Core Verbs
+    // 1. Core Verbs: Prioritize highly specific auxiliary/modal tags
     if (term.has('#Copula') && brainEntry.Copula) return brainEntry.Copula;
     if (term.has('#Auxiliary') && brainEntry.Auxiliary) return brainEntry.Auxiliary;
     if (term.has('#Modal') && brainEntry.Modal) return brainEntry.Modal;
     
-    // 2. Strict Homograph Checks
+    // 2. Strict Homograph Checks: Match the NLP tag directly to the brain
     if (term.has('#Verb') && brainEntry.Verb) return brainEntry.Verb;
     if (term.has('#Noun') && brainEntry.Noun) return brainEntry.Noun;
     if (term.has('#Adjective') && brainEntry.Adjective) return brainEntry.Adjective;
     if (term.has('#Determiner') && brainEntry.Determiner) return brainEntry.Determiner;
     if (term.has('#Value') && brainEntry.Value) return brainEntry.Value;
     
-    // 3. Structural Bypass (Ignores NLP homograph checks)
+    // 3. Structural Bypass: These words rarely have conflicting homographs, 
+    // so we can safely bypass the strict NLP checks for performance/reliability.
     if (brainEntry.Preposition) return brainEntry.Preposition;
     if (brainEntry.Conjunction) return brainEntry.Conjunction;
     if (brainEntry.Pronoun) return brainEntry.Pronoun;
     if (brainEntry.Adverb) return brainEntry.Adverb;
     
-    // 4. Safe Single-Map Fallback
+    // 4. Safe Single-Map Fallback: If the dictionary only has ONE part of speech
+    // for this word, just use it—unless it directly contradicts a strict Verb/Noun rule.
     const keys = Object.keys(brainEntry);
     if (keys.length === 1) {
         const onlyPos = keys[0];
@@ -62,11 +75,18 @@ export const getReplacement = (term, brainEntry) => {
     return brainEntry[keys[0]];
 };
 
+/**
+ * The primary transcription function. Runs a 4-pass transformation algorithm 
+ * to ensure context-awareness while strictly preserving original punctuation.
+ */
 export function transcribe(text, brain, missingWordsTracker = new Set()) {
-    
+    // 1. Normalize Unicode immediately to prevent NFC/NFD byte mismatches in Vitest
+    text = text.normalize('NFC');
+
+    // Pre-calculate multi-word terms (e.g., "look out") for Pass 2
     const multiWords = Object.keys(brain).filter(k => k.includes(' ') || k.includes("'"));
 
-    // Normalize curly apostrophes globally so brain keys always match
+    // Normalize curly apostrophes globally so brain keys always match cleanly
     const normalizedText = text.replace(/[\u2018\u2019\u02BC]/g, "'");
     const lines = normalizedText.split('\n');
 
@@ -74,12 +94,14 @@ export function transcribe(text, brain, missingWordsTracker = new Set()) {
         if (!line.trim()) return line;
 
         // --- PASS 1: Protect hardcoded contractions with placeholders ---
+        // Prevents the NLP engine from aggressively tokenizing these complex forms
         const placeholders = {};
         let phIndex = 0;
         let processedLine = line;
 
         Object.keys(HARDCODED_OVERRIDES).forEach(key => {
             const escaped = key.replace(/['']/g, "[''']");
+            // Negative lookbehinds/lookaheads ensure we only match whole words
             const regex = new RegExp(`(?<![a-zA-Z\u00C0-\u024F])${escaped}(?![a-zA-Z\u00C0-\u024F])`, 'g');
             processedLine = processedLine.replace(regex, (match) => {
                 const ph = `XXPH${phIndex++}XX`;
@@ -88,13 +110,16 @@ export function transcribe(text, brain, missingWordsTracker = new Set()) {
             });
         });
 
+        // Initialize NLP Engine
         const doc = nlp(processedLine);
 
+        // Mark completely empty spaces as Ghost Words to drop later
         doc.terms().forEach(t => {
             if (t.text().trim() === '') t.tag('#GhostWord');
         });
 
         // --- PASS 2: Multi-word phrases ---
+        // Swap out compound dictionary entries before single-term looping
         multiWords.forEach(key => {
             const entry = brain[key];
             const fallback = entry.Verb || entry.Copula || entry.Auxiliary || entry.Modal || Object.values(entry)[0];
@@ -103,7 +128,7 @@ export function transcribe(text, brain, missingWordsTracker = new Set()) {
                 doc.match(key).forEach(m => {
                     const casedFallback = matchCasing(m.text(), fallback);
                     m.replaceWith(casedFallback, { keepTags: true, keepCase: false });
-                    m.tag('#Translated');
+                    m.tag('#Translated'); // Lock term to prevent Pass 3 from touching it
                 });
             }
         });
@@ -128,13 +153,14 @@ export function transcribe(text, brain, missingWordsTracker = new Set()) {
                 return;
             }
 
-            // These are compromise-split contraction suffixes
+            // Skip compromise-split contraction suffixes (e.g., 've, 'll). 
+            // They are handled dynamically by the root word processing.
             if (/^(n['']t|[''][srelldvem])$/i.test(rawNormal)) {
                 term.tag('#Translated');
                 return;
             }
 
-            // Check if the next term is "n't"
+            // Check if the next token is an NLP-split "n't"
             const nextTerm = doc.terms().eq(i + 1);
             const nextIsNegation = nextTerm && /^n['']t$/i.test(nextTerm.text('normal'));
 
@@ -142,37 +168,42 @@ export function transcribe(text, brain, missingWordsTracker = new Set()) {
                 const negKey = rawNormal + "n't";
                 if (brain[negKey]) {
                     const negEntry = brain[negKey];
+                    // Negations strictly map to verb/auxiliary roles
                     const replacement = negEntry.Modal || negEntry.Verb ||
                         negEntry.Copula || negEntry.Auxiliary ||
                         Object.values(negEntry)[0];
                     if (replacement) {
                         term.replaceWith(matchCasing(rawText, replacement), { keepTags: true, keepCase: false });
                         term.tag('#Translated');
-                        nextTerm.tag('#Translated');
+                        nextTerm.tag('#Translated'); // Lock the "n't" so we don't process it next loop
                         return;
                     }
                 }
             }
 
-            // Normal lookup
+            // Normal dictionary lookup
             const wordWithoutPunctuation = rawText.replace(/[^a-zA-Z'']/g, '');
+            // Strip structural suffixes from the lookup query so we query the root
             const suffixMatch = wordWithoutPunctuation.match(/([''](s|re|ll|d|ve|m))$/i);
             const suffix = suffixMatch ? suffixMatch[1] : '';
             const normal = suffix
                 ? rawNormal.replace(new RegExp(suffix + '$', 'i'), '')
                 : rawNormal;
 
+            // Consult the Brain
             if (brain[normal]) {
                 const baseReplacement = getReplacement(term, brain[normal]);
                 if (baseReplacement) {
-                    const finalReplacement = baseReplacement + suffix;
+                    const finalReplacement = baseReplacement + suffix; // Re-attach structural suffix
                     const casedReplacement = matchCasing(rawText, finalReplacement);
+                    // keepTags ensures punctuation is perfectly preserved
                     term.replaceWith(casedReplacement, { keepTags: true, keepCase: false });
                     term.tag('#Translated');
                     return;
                 }
             }
 
+            // If word is completely missing from dictionary, wrap it in brackets to highlight it
             if (!rawText.includes('[')) {
                 const bracketedText = rawText.replace(/([a-zA-Z]+(?:[''][a-zA-Z]+)*)/, '[$1]');
                 term.replaceWith(bracketedText, { keepTags: true, keepCase: false });
@@ -188,7 +219,7 @@ export function transcribe(text, brain, missingWordsTracker = new Set()) {
         return result;
     });
 
-    // Enforce strict NFC composition on the final output
+    // Enforce strict NFC composition on the final output to prevent NFD decomposition bugs
     return transcribedLines.join('\n').normalize('NFC');
 }
 
@@ -218,6 +249,7 @@ if (process.argv[1] === __filename) {
     const globalMissingWords = new Set();
     let filesProcessed = 0;
 
+    // Recursively crawls the input directory to batch process all txt files
     function crawlAndTranscribe(currentDir) {
         const files = fs.readdirSync(currentDir, { withFileTypes: true });
 
@@ -231,6 +263,7 @@ if (process.argv[1] === __filename) {
                 const outputPath = path.join(OUTPUT_DIR, relativePath);
                 
                 const text = fs.readFileSync(fullPath, 'utf8');
+                // Pass the shared missingWords Set to aggregate failures across the whole library
                 const transcribed = transcribe(text, brain, globalMissingWords);
 
                 const outDir = path.dirname(outputPath);
