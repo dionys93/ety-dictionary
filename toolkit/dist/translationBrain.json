@@ -18090,28 +18090,28 @@
     "Verb": "have"
   },
   "has": {
-    "Verb": "have",
-    "Auxiliary": "have"
+    "Verb": "has",
+    "Auxiliary": "has"
   },
   "had": {
-    "Verb": "have",
-    "Auxiliary": "have"
+    "Verb": "had",
+    "Auxiliary": "had"
   },
   "having": {
-    "Verb": "have",
-    "Auxiliary": "have"
+    "Verb": "having",
+    "Auxiliary": "having"
   },
   "haven't": {
-    "Verb": "have",
-    "Auxiliary": "have"
+    "Verb": "haven't",
+    "Auxiliary": "haven't"
   },
   "hasn't": {
-    "Verb": "have",
-    "Auxiliary": "have"
+    "Verb": "hasn't",
+    "Auxiliary": "hasn't"
   },
   "hadn't": {
-    "Verb": "have",
-    "Auxiliary": "have"
+    "Verb": "hadn't",
+    "Auxiliary": "hadn't"
   },
   "heaven": {
     "Noun": "hevon"
@@ -23282,48 +23282,48 @@
     "Verb": "bie"
   },
   "am": {
-    "Copula": "bie",
-    "Verb": "bie"
+    "Copula": "am",
+    "Verb": "am"
   },
   "is": {
-    "Copula": "bie",
-    "Verb": "bie"
+    "Copula": "is",
+    "Verb": "is"
   },
   "are": {
-    "Copula": "bie",
-    "Verb": "bie"
+    "Copula": "are",
+    "Verb": "are"
   },
   "was": {
-    "Copula": "bie",
-    "Verb": "bie"
+    "Copula": "uas",
+    "Verb": "uas"
   },
   "were": {
-    "Copula": "bie",
-    "Verb": "bie"
+    "Copula": "uere",
+    "Verb": "uere"
   },
   "been": {
-    "Copula": "bie",
-    "Verb": "bie"
+    "Copula": "bign",
+    "Verb": "bign"
   },
   "being": {
-    "Copula": "bie",
-    "Verb": "bie"
+    "Copula": "bying",
+    "Verb": "bying"
   },
   "isn't": {
-    "Copula": "bie",
-    "Verb": "bie"
+    "Copula": "isn't",
+    "Verb": "isn't"
   },
   "aren't": {
-    "Copula": "bie",
-    "Verb": "bie"
+    "Copula": "aren't",
+    "Verb": "aren't"
   },
   "wasn't": {
-    "Copula": "bie",
-    "Verb": "bie"
+    "Copula": "uasn't",
+    "Verb": "uasn't"
   },
   "weren't": {
-    "Copula": "bie",
-    "Verb": "bie"
+    "Copula": "ueren't",
+    "Verb": "ueren't"
   },
   "beside": {
     "Preposition": "besîde"
@@ -31069,10 +31069,10 @@
   "should": {
     "Modal": "sial"
   },
-  "shan't": {
+  "shouldn't": {
     "Modal": "sial"
   },
-  "shouldn't": {
+  "shan't": {
     "Modal": "sial"
   },
   "speak": {
@@ -38487,8 +38487,8 @@
   },
   "does": {
     "Noun": "dós",
-    "Verb": "dou",
-    "Auxiliary": "dou"
+    "Verb": "dus",
+    "Auxiliary": "dus"
   },
   "dial": {
     "Noun": "dîale",
@@ -39815,28 +39815,28 @@
     "Auxiliary": "dou"
   },
   "did": {
-    "Verb": "dou",
-    "Auxiliary": "dou"
+    "Verb": "did",
+    "Auxiliary": "did"
   },
   "done": {
-    "Verb": "dou",
-    "Auxiliary": "dou"
+    "Verb": "don",
+    "Auxiliary": "don"
   },
   "doing": {
-    "Verb": "dou",
-    "Auxiliary": "dou"
+    "Verb": "douing",
+    "Auxiliary": "douing"
   },
   "don't": {
-    "Verb": "dou",
-    "Auxiliary": "dou"
+    "Verb": "don't",
+    "Auxiliary": "don't"
   },
   "doesn't": {
-    "Verb": "dou",
-    "Auxiliary": "dou"
+    "Verb": "dusn't",
+    "Auxiliary": "dusn't"
   },
   "didn't": {
-    "Verb": "dou",
-    "Auxiliary": "dou"
+    "Verb": "didn't",
+    "Auxiliary": "didn't"
   },
   "deed": {
     "Noun": "dide",
@@ -41200,10 +41200,10 @@
   "would": {
     "Modal": "uill"
   },
-  "won't": {
+  "wouldn't": {
     "Modal": "uill"
   },
-  "wouldn't": {
+  "won't": {
     "Modal": "uill"
   },
   "wills": {
@@ -44630,10 +44630,10 @@
     "Modal": "maie",
     "Noun": "maihte"
   },
-  "mayn't": {
+  "mightn't": {
     "Modal": "maie"
   },
-  "mightn't": {
+  "mayn't": {
     "Modal": "maie"
   },
   "medicine": {
@@ -48785,13 +48785,13 @@
   "could": {
     "Modal": "can"
   },
+  "couldn't": {
+    "Modal": "can"
+  },
   "can't": {
     "Modal": "can"
   },
   "cannot": {
-    "Modal": "can"
-  },
-  "couldn't": {
     "Modal": "can"
   },
   "cans": {
