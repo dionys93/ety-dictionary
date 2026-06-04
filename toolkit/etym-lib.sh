@@ -808,81 +808,107 @@ etym-create-histories() {
     echo "================================================================="
 
     local total_extracted=0
-    local total_skipped=0
 
     for dir in "${target_dirs[@]}"; do
         dir=$(echo "$dir" | xargs)
         local current_src="$source_dir/$dir"
         local target_dir="$output_dir/$dir"
 
-        [[ ! -d "$current_src" ]] && { [[ $verbose -eq 1 ]] && echo "Skipping $dir/ (not found)"; continue; }
+        [[ ! -d "$current_src" ]] && continue
         [[ $dry_run -eq 0 ]] && mkdir -p "$target_dir"
 
-        local dir_count=0
+        # 1. Create a timestamp reference file for accurate find counting
+        local ref_file="$current_src/.extract_ref"
+        touch "$ref_file"
 
-        while IFS= read -r file; do
-            # Use awk to split the file into stanzas and write named output files.
-            # Tracking data (EXTRACT/SKIP) goes to stderr; file writes go directly.
-            local awk_out
-            awk_out=$(awk \
-                -v target_dir="$target_dir" \
-                -v dry_run="$dry_run" \
-                '
-                BEGIN { RS = ""; FS = "\n" }
-                {
-                    reformed = ""; pos = ""; word = ""
+        # 2. Batch execute AWK once per directory.
+        find "$current_src" -maxdepth 1 -type f -name "*.txt" -exec awk \
+            -v target_dir="$target_dir" \
+            -v dry_run="$dry_run" \
+            -v verbose="$verbose" \
+            '
+            BEGIN { RS = ""; FS = "\n" }
+            {
+                reformed = ""; pos = ""; base_word = ""
+                reformed_idx = 0
 
+                # 1. Identify the reformed line and its line index
+                for (i = 1; i <= NF; i++) {
+                    line = $i
+                    gsub(/\r/, "", line)
+                    if (line ~ /^http/) break
+                    if (line ~ /\([a-z]/ && line !~ /\[[A-Z]/) {
+                        reformed = line
+                        reformed_idx = i
+                    }
+                }
+
+                # If no reformed line exists, or it is the very first line (no previous line), skip
+                if (reformed == "" || reformed_idx <= 1) next
+
+                # 2. Extract POS from the reformed line
+                if (match(reformed, /\(([^)]+)\)[ \t]*$/, pm)) pos = pm[1]
+                sub(/[, \t\/].*/, "", pos)   # First POS tag only
+
+                # 3. Base word is ALWAYS the line immediately preceding the reformed line
+                base_word = $(reformed_idx - 1)
+                gsub(/\r/, "", base_word)
+
+                # 4. Clean the base word to use as the filename (strips ANY language tag)
+                temp_base = base_word
+                gsub(/\[[A-Z]+\]/, "", temp_base)
+                gsub(/^[ \t]+|[ \t]+$/, "", temp_base)
+                sub(/^[tT][oO][ \t]+/, "", temp_base)
+                split(temp_base, mw, /[ \t,]+/)
+                word = mw[1]
+
+                if (word == "" || pos == "") next
+
+                out_file = target_dir "/" word "_" pos ".txt"
+
+                # 5. Write the history stanza EXCLUDING the reformed line
+                if (dry_run == "0") {
+                    out_text = ""
+                    first = 1
                     for (i = 1; i <= NF; i++) {
                         line = $i
                         gsub(/\r/, "", line)
-                        if (line ~ /^http/) break
-                        if (line ~ /\([a-z]/ && line !~ /\[[A-Z]/) reformed = line
+                        
+                        # Skip the reformed dictionary line entirely
+                        if (i == reformed_idx) continue
+                        
+                        if (!first) out_text = out_text "\n"
+                        out_text = out_text $i
+                        first = 0
                     }
-
-                    if (reformed == "") { print "SKIP" > "/dev/stderr"; next }
-
-                    if (match(reformed, /\(([^)]+)\)[ \t]*$/, pm)) pos = pm[1]
-                    sub(/[, \t\/].*/, "", pos)   # First POS tag only for filename
-
-                    temp = reformed
-                    gsub(/\([^)]+\)[ \t]*$/, "", temp)
-                    gsub(/^[ \t]+|[ \t]+$/, "", temp)
-                    sub(/^[tT][oO][ \t]+/, "", temp)
-                    split(temp, tokens, /[ \t,]+/)
-                    word = tokens[1]
-
-                    if (word == "" || pos == "") { print "SKIP" > "/dev/stderr"; next }
-
-                    out_file = target_dir "/" word "_" pos ".txt"
-                    print "EXTRACT|" out_file > "/dev/stderr"
-
-                    if (dry_run == "0") {
-                        print $0 > out_file
-                        close(out_file)
-                    }
+                    print out_text > out_file
+                    close(out_file)
                 }
-                ' "$file" 2>&1 >/dev/null)
+                
+                # Stream verbose output directly to the terminal
+                if (verbose == "1" || dry_run == "1") {
+                    print "  → " word "_" pos ".txt"
+                }
+            }
+            ' {} +
 
-            while IFS= read -r tracking_line; do
-                if [[ "$tracking_line" == "SKIP" ]]; then
-                    ((total_skipped++))
-                elif [[ "$tracking_line" == EXTRACT\|* ]]; then
-                    ((dir_count++))
-                    ((total_extracted++))
-                    [[ $verbose -eq 1 ]] && echo "  → $(basename "${tracking_line#EXTRACT|}")"
-                fi
-            done <<< "$awk_out"
+        # 3. Use find to calculate exact disk modifications
+        local dir_count=0
+        if [[ $dry_run -eq 0 ]]; then
+            dir_count=$(find "$target_dir" -maxdepth 1 -type f -name "*.txt" -newer "$ref_file" 2>/dev/null | wc -l)
+            dir_count=$(echo "$dir_count" | xargs) # Trim padding from wc
+            rm -f "$ref_file"
+        fi
 
-        done < <(find "$current_src" -name "*.txt")
-
-        [[ $dir_count -gt 0 ]] && echo "Extracted: $dir/ ($dir_count files)"
+        if [[ $dir_count -gt 0 || $dry_run -eq 1 ]]; then
+            echo "Extracted: $dir/ ($dir_count files updated)"
+            total_extracted=$((total_extracted + dir_count))
+        fi
     done
 
     echo "------------------------------------------"
-    echo "Complete! Extracted $total_extracted stanzas."
-    [[ $total_skipped -gt 0 ]] && echo "Skipped $total_skipped stanzas (no extractable word or POS)."
+    echo "Complete! Extracted/Updated $total_extracted files."
 }
-
 
 # etym-lint [path] [--strict]
 # Validates .txt file formatting across the dictionary.
