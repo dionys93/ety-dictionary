@@ -17,6 +17,7 @@ These verbs possess strong stems ending in doubled consonants.
 | to bidde | bid / bids | bid |
 | to fitte | fit / fits | fit |
 | to pytte | pyt / pyts | pyt |
+| to ridde | rid / rids | rid |
 
 ### Pattern B: E-Dependent Stems (The E-Droppers)
 These verbs end in a single consonant followed by **⟨-e⟩**.
