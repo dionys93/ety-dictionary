@@ -29,6 +29,7 @@ Inglisce explicitly maps this historical shortening. Whenever a long **-ie-** or
 | :--- | :--- |
 | to clieve | claift |
 | to diele | dailt |
+| to drieme | draimpt |
 | to miete | mait |
 | to lide | laid |
 | to riede | raid |
