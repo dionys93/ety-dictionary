@@ -108,13 +108,13 @@ Verbs featuring an **i** before a nasal (n/ng) or a velar/palatal sound (ch/g) s
 | to string(ue | strong |
 | to suing(ue | suong |
 | to uin(ne | uon |
-| to ring(ue | rong |
+| to r̃ing(ue | r̃ong |
 | to dig(he | deug |
 | to stic(he | steuc |
 | to strîc(he | streuc |
 
 ### 2G. The "-old" Shift
-Verbs ending in **-elle** undergo a direct vowel mutation to **-óld** or **-ôld**.
+Verbs ending in **-elle** undergo a direct vowel mutation to **-óld**.
 | Infinitive | Past / Participle |
 | :--- | :--- |
 | to selle | sóld |
