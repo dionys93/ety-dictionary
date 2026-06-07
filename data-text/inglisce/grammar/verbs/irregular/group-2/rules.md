@@ -126,7 +126,7 @@ A small handful of verbs undergo unique historical mutations that do not fit int
 | :--- | :--- |
 | to bêne | bênt |
 | to flihe | fled |
-| to hyre | hêd |
+| to hyre | hird |
 | to holde | held | 
 | to loihte | liht |
 | to mâc(he | mâde |
