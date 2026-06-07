@@ -19,7 +19,7 @@ These verbs possess strong stems ending in doubled consonants (e.g., *splitte*, 
 | to pytte | pyt / pyts | pyt |
 
 ### Pattern B: E-Dependent Stems (The E-Droppers)
-These verbs end in a single consonant followed by **⟨-e⟩** (e.g., *caste*, *còste*, *hurte*, *pûte*, *sprede*, *scede*, *sete*, *ouede*, *uete*).
+These verbs end in a single consonant followed by **⟨-e⟩** (e.g., *caste*, *còste*, *hurte*, *pûte*, *sprede*, *scede*, *sete*, *uede*, *uete*).
 
 **The Rule:** Because their stems require the **⟨-e⟩** for structural support, they retain the **⟨-e⟩** throughout the present tense. To signify the shift to the past tense and past participle, they physically drop the **⟨-e⟩**.
 
@@ -33,6 +33,7 @@ These verbs end in a single consonant followed by **⟨-e⟩** (e.g., *caste*, *
 | to bete | bete / betes | bet |
 | to leade | leade / leades | lead |
 | to pûte | pûte / pûtes | pût |
+| to qüite | qüite / qüites | qüit |
 
 ---
 
