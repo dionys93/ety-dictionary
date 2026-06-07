@@ -1068,61 +1068,6 @@ etym-lint() {
     return 0
 }
 
-
-# etym-publish [path]
-# Builds the static JSON API files consumed by the React frontend.
-etym-publish() {
-    local target_dir="${1:-$DICT_DIR}"
-    local out_dir="./dist/api"
-
-    [[ ! -d "$target_dir" ]] && { echo "Error: '$target_dir' not found."; return 1; }
-
-    echo "Publishing Dictionary API to $out_dir..."
-    echo "================================================================="
-
-    rm -rf "$out_dir"
-    mkdir -p "$out_dir/letters"
-
-    local nav_json="[]"
-    local total_words=0
-
-    for letter_dir in "$target_dir"/*/; do
-        [[ -d "$letter_dir" ]] || continue
-
-        local letter letter_lower word_count letter_words_json
-        letter=$(basename "$letter_dir" | tr '[:lower:]' '[:upper:]')
-        letter_lower=$(basename "$letter_dir")
-        letter_words_json="[]"
-        word_count=0
-
-        while IFS= read -r file; do
-            local word
-            word=$(basename "$file" .txt)
-            letter_words_json=$(echo "$letter_words_json" | jq \
-                --arg w "$word" \
-                --arg url "/dictionary/$letter_lower/$word" \
-                '. + [{word: $w, url: $url}]')
-            ((word_count++))
-            ((total_words++))
-        done < <(find "$letter_dir" -maxdepth 1 -type f -name "*.txt" | sort)
-
-        echo "$letter_words_json" > "$out_dir/letters/$letter_lower.json"
-
-        nav_json=$(echo "$nav_json" | jq \
-            --arg letter "$letter" \
-            --arg url "/dictionary/$letter_lower" \
-            --argjson count "$word_count" \
-            '. + [{letter: $letter, url: $url, count: $count}]')
-
-        echo "✅ Processed [$letter]: $word_count words"
-    done
-
-    echo "$nav_json" > "$out_dir/navigation.json"
-    echo "================================================================="
-    echo "🎉 Publish complete! $total_words words compiled to $out_dir"
-}
-
-
 # etym-trim [path]
 # Strips trailing whitespace from all .txt files in a directory.
 etym-trim() {
