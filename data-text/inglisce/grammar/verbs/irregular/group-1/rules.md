@@ -16,6 +16,7 @@ These verbs possess strong stems ending in doubled consonants (e.g., *splitte*, 
 | to hitte | hit / hits | hit |
 | to bidde | bid / bids | bid |
 | to fitte | fit / fits | fit |
+| to pytte | pyt / pyts | pyt |
 
 ### Pattern B: E-Dependent Stems (The E-Droppers)
 These verbs end in a single consonant followed by **⟨-e⟩** (e.g., *caste*, *còste*, *hurte*, *pûte*, *sprede*, *scede*, *sete*, *ouede*, *uete*).
