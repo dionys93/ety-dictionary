@@ -32,6 +32,7 @@ These verbs end in a single consonant followed by **⟨-e⟩** (e.g., *caste*, *
 | to hurte | hurte / hurtes | hurt |
 | to bete | bete / betes | bet |
 | to leade | leade / leades | lead |
+| to pûte | pûte / pûtes | pût |
 
 ---
 
