@@ -25,6 +25,7 @@ These verbs end in a single consonant followed by **⟨-e⟩** (e.g., *caste*, *
 | to caste | caste / castes | cast |
 | to sete | sete / setes | set |
 | to hurte | hurte / hurtes | hurt |
+| to bete | bete / betes | bet |
 
 ---
 
