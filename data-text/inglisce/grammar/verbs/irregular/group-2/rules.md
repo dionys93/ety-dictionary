@@ -137,7 +137,7 @@ A small handful of verbs undergo unique historical mutations that do not fit int
 | to sit(te | sat |
 | to spyt(te | spat |
 | to stande | stôd |
-| to uiþholde | uiþheld |
+| to uiþhólde | uiþheld |
 | to uiþstande | uiþstôd |
 
 ---
