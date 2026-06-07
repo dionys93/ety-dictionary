@@ -52,6 +52,7 @@ Because the suffix was "absorbed" or smoothly blended into the root's existing c
 | Infinitive | Past / Participle |
 | :--- | :--- |
 | to bliede | bled |
+| to briede | bred |
 | to fiede | fed |
 | to fiele | felt |
 | to niele | nelt |
