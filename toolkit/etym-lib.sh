@@ -815,13 +815,12 @@ etym-create-histories() {
         local target_dir="$output_dir/$dir"
 
         [[ ! -d "$current_src" ]] && continue
-        [[ $dry_run -eq 0 ]] && mkdir -p "$target_dir"
+        
+        if [[ $dry_run -eq 0 ]]; then
+            mkdir -p "$target_dir"
+        fi
 
-        # 1. Create a timestamp reference file for accurate find counting
-        local ref_file="$current_src/.extract_ref"
-        touch "$ref_file"
-
-        # 2. Batch execute AWK once per directory.
+        # 1. AWK parses by paragraph (RS="") so every stanza is processed independently
         find "$current_src" -maxdepth 1 -type f -name "*.txt" -exec awk \
             -v target_dir="$target_dir" \
             -v dry_run="$dry_run" \
@@ -829,26 +828,52 @@ etym-create-histories() {
             '
             BEGIN { RS = ""; FS = "\n" }
             {
-                reformed = ""; pos = ""; base_word = ""
-                reformed_idx = 0
+                reformed = ""; base_word = ""; file_pos = ""; reformed_idx = 0
 
-                # 1. Identify the reformed line and its line index
+                # 1. Identify the reformed dictionary line and its line index
                 for (i = 1; i <= NF; i++) {
                     line = $i
                     gsub(/\r/, "", line)
                     if (line ~ /^http/) break
-                    if (line ~ /\([a-z]/ && line !~ /\[[A-Z]/) {
+                    
+                    # Match the parentheses tag at the very end of the line
+                    if (line ~ /\([^)]+\)[ \t]*$/ && line !~ /\[[A-Z]/) {
                         reformed = line
                         reformed_idx = i
                     }
                 }
 
-                # If no reformed line exists, or it is the very first line (no previous line), skip
                 if (reformed == "" || reformed_idx <= 1) next
 
-                # 2. Extract POS from the reformed line
-                if (match(reformed, /\(([^)]+)\)[ \t]*$/, pm)) pos = pm[1]
-                sub(/[, \t\/].*/, "", pos)   # First POS tag only
+                # 2. Extract POS and safely map it to a verbose string
+                pos_tag = reformed
+                # Greedy match clears out ALL parentheses before the final POS tag
+                sub(/.*\(/, "", pos_tag)
+                sub(/\).*/, "", pos_tag)
+                
+                # Split by comma if there are multiple tags, grab the first
+                split(pos_tag, p_arr, ",")
+                pos_tag = p_arr[1]
+                gsub(/^[ \t]+|[ \t]+$/, "", pos_tag)
+                pos_tag = tolower(pos_tag)
+
+                # Map shorthand to full verbose names using end-of-string anchors ($)
+                if (pos_tag ~ /(^|[ \t])(v|tr v|intr v|verb)$/) file_pos = "verb"
+                else if (pos_tag ~ /(^|[ \t])(n|m n|f n|noun|masculine noun|feminine noun|neuter noun)$/) file_pos = "noun"
+                else if (pos_tag ~ /(^|[ \t])(adj|adjective)$/) file_pos = "adjective"
+                else if (pos_tag ~ /(^|[ \t])(adv|adverb)$/) file_pos = "adverb"
+                else if (pos_tag ~ /(^|[ \t])(prep|preposition)$/) file_pos = "preposition"
+                else if (pos_tag ~ /(^|[ \t])(pron|pronoun)$/) file_pos = "pronoun"
+                else if (pos_tag ~ /(^|[ \t])(conj|conjunction)$/) file_pos = "conjunction"
+                else if (pos_tag ~ /(^|[ \t])(num|number)$/) file_pos = "number"
+                else if (pos_tag ~ /(^|[ \t])(art|article|definite article|indefinite article|defin|indefin)$/) file_pos = "article"
+                else if (pos_tag ~ /(^|[ \t])(modal)$/) file_pos = "modal"
+                else if (pos_tag ~ /(^|[ \t])(aux|auxiliary)$/) file_pos = "auxiliary"
+                else {
+                    # Safety fallback for completely unrecognized tags
+                    file_pos = pos_tag
+                    gsub(/[^a-z0-9]/, "_", file_pos)
+                }
 
                 # 3. Base word is ALWAYS the line immediately preceding the reformed line
                 base_word = $(reformed_idx - 1)
@@ -856,38 +881,36 @@ etym-create-histories() {
 
                 # 4. Clean the base word to use as the filename (strips ANY language tag)
                 temp_base = base_word
-                gsub(/\[[A-Z]+\]/, "", temp_base)
+                gsub(/\[[A-Za-z0-9_ -]+\]/, "", temp_base)
                 gsub(/^[ \t]+|[ \t]+$/, "", temp_base)
                 sub(/^[tT][oO][ \t]+/, "", temp_base)
+                
+                # Grab just the primary English word
                 split(temp_base, mw, /[ \t,]+/)
                 word = mw[1]
 
-                if (word == "" || pos == "") next
+                if (word == "" || file_pos == "") next
 
-                out_file = target_dir "/" word "_" pos ".txt"
+                out_file = target_dir "/" word "_" file_pos ".txt"
 
                 # 5. Write the history stanza EXCLUDING the reformed line
                 if (dry_run == "0") {
                     out_text = ""
                     first = 1
                     for (i = 1; i <= NF; i++) {
+                        if (i == reformed_idx) continue
                         line = $i
                         gsub(/\r/, "", line)
-                        
-                        # Skip the reformed dictionary line entirely
-                        if (i == reformed_idx) continue
-                        
                         if (!first) out_text = out_text "\n"
-                        out_text = out_text $i
+                        out_text = out_text line
                         first = 0
                     }
                     print out_text > out_file
                     close(out_file)
                 }
                 
-                # Stream verbose output directly to the terminal
                 if (verbose == "1" || dry_run == "1") {
-                    print "  → " word "_" pos ".txt"
+                    print "  → " word "_" file_pos ".txt"
                 }
             }
             ' {} +
@@ -895,13 +918,12 @@ etym-create-histories() {
         # 3. Use find to calculate exact disk modifications
         local dir_count=0
         if [[ $dry_run -eq 0 ]]; then
-            dir_count=$(find "$target_dir" -maxdepth 1 -type f -name "*.txt" -newer "$ref_file" 2>/dev/null | wc -l)
+            dir_count=$(find "$target_dir" -maxdepth 1 -type f -name "*.txt" 2>/dev/null | wc -l)
             dir_count=$(echo "$dir_count" | xargs) # Trim padding from wc
-            rm -f "$ref_file"
         fi
 
         if [[ $dir_count -gt 0 || $dry_run -eq 1 ]]; then
-            echo "Extracted: $dir/ ($dir_count files updated)"
+            echo "Extracted: $dir/ ($dir_count files processed)"
             total_extracted=$((total_extracted + dir_count))
         fi
     done
