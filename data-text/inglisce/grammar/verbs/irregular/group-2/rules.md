@@ -27,7 +27,7 @@ Inglisce explicitly maps this historical shortening. Whenever a long **-ie-** or
 
 | Infinitive | Past / Participle |
 | :--- | :--- |
-| to clievfe | claift |
+| to clieve | claift |
 | to diele | dailt |
 | to miete | mait |
 | to lide | laid |
@@ -35,7 +35,7 @@ Inglisce explicitly maps this historical shortening. Whenever a long **-ie-** or
 | to lende | laint |
 | to lete | lait |
 | to miene | maint |
-| to lievfe | laift |
+| to lieve | laift |
 | to criepe | craipt |
 | to chiepe | caipt |
 | to sliepe | slaipt |
