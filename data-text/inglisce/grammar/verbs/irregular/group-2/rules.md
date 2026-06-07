@@ -28,6 +28,7 @@ Inglisce explicitly maps this historical shortening. Whenever a long **-ie-** or
 | Infinitive | Past / Participle |
 | :--- | :--- |
 | to clievfe | claift |
+| to diele | dailt |
 | to miete | mait |
 | to lide | laid |
 | to riede | raid |
@@ -52,7 +53,6 @@ Because the suffix was "absorbed" or smoothly blended into the root's existing c
 | :--- | :--- |
 | to bliede | bled |
 | to fiede | fed |
-| to diele | delt |
 | to fiele | felt |
 | to niele | nelt |
 | to slîde | slid |
