@@ -5,7 +5,7 @@ These verbs represent the class of English words that historically share the sam
 In Inglisce, their conjugations are highly predictable. They are divided into two distinct structural patterns based entirely on how their stems handle the terminal silent **⟨-e⟩**.
 
 ### Pattern A: Strong Stems (Doubled Consonants)
-These verbs possess strong stems ending in doubled consonants (e.g., *splitte*, *hitte*, *bidde*, *fitte*, *cutte*, *pytte*, *ridde*).
+These verbs possess strong stems ending in doubled consonants.
 
 **The Rule:** The base word can structurally stand alone without the **⟨-e⟩**. While the **⟨-e⟩** appears in the infinitive, it is permanently dropped to form a lean, single-consonant stem for the present tense, past tense, and past participle.
 
@@ -19,7 +19,7 @@ These verbs possess strong stems ending in doubled consonants (e.g., *splitte*, 
 | to pytte | pyt / pyts | pyt |
 
 ### Pattern B: E-Dependent Stems (The E-Droppers)
-These verbs end in a single consonant followed by **⟨-e⟩** (e.g., *caste*, *còste*, *hurte*, *pûte*, *sprede*, *scede*, *sete*, *uede*, *uete*).
+These verbs end in a single consonant followed by **⟨-e⟩**.
 
 **The Rule:** Because their stems require the **⟨-e⟩** for structural support, they retain the **⟨-e⟩** throughout the present tense. To signify the shift to the past tense and past participle, they physically drop the **⟨-e⟩**.
 
@@ -34,6 +34,8 @@ These verbs end in a single consonant followed by **⟨-e⟩** (e.g., *caste*, *
 | to leade | leade / leades | lead |
 | to pûte | pûte / pûtes | pût |
 | to qüite | qüite / qüites | qüit |
+| to uede | uede / uedes | ued |
+| to uete | uete / uetes | uet |
 
 ---
 
