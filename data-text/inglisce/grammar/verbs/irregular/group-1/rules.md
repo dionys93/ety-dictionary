@@ -30,6 +30,7 @@ These verbs end in a single consonant followed by **⟨-e⟩**.
 | to còste | còste / còstes | còst |
 | to burste | burste / burstes | burst |
 | to sete | sete / setes | set |
+| to scede | scede / scedes | sced |
 | to hurte | hurte / hurtes | hurt |
 | to bete | bete / betes | bet |
 | to leade | leade / leades | lead |
