@@ -24,6 +24,7 @@ These verbs end in a single consonant followed by **⟨-e⟩** (e.g., *caste*, *
 | Infinitive | Present Tense | Past & Participle |
 | :--- | :--- | :--- |
 | to caste | caste / castes | cast |
+| to burste | burste / burstes | burst |
 | to sete | sete / setes | set |
 | to hurte | hurte / hurtes | hurt |
 | to bete | bete / betes | bet |
