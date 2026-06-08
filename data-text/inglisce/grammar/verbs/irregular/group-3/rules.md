@@ -134,7 +134,7 @@ In Proto-Germanic, these were strong verbs where the present tense died out, and
 | to dou (dus) | did | don |
 | to goe | uaint | gaon |
 | to have (has) | had | had |
-| to ondregoe | onderoaint | ondregaon |
+| to ondergoe | onderoaint | ondergaon |
 | to saie (sais) | said | said |
 | uill (uon't) | uoûd | -- |
 
