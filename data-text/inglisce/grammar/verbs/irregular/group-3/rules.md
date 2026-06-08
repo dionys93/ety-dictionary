@@ -113,7 +113,7 @@ A number of strong verbs feature unique ablaut patterns that defy broader catego
 | to seoe, seouing | seod | seone | Weak past, strong participle |
 | to sihe, sihing | sah | sine | |
 | to soe, souing | soed | sone | Weak past, strong participle |
-| to soüe, soüing  | soüd | soün | Weak past, strong participle |
+| to sóue, sóuing  | sóud | sóun | Weak past, strong participle |
 
 ### 3G. Anomalous, Suppletive, and Modal Verbs
 These fundamental verbs are among the oldest in the language. They appear entirely patternless because they are the survivors of massive historical collisions. Their irregularities generally stem from two phenomena:
