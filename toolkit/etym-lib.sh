@@ -693,6 +693,15 @@ etym-graph() {
 
     ! command -v jq &>/dev/null && { echo "Error: 'jq' is required."; return 1; }
 
+    # --- Explicit jq 1.6+ Version Check ---
+    local jq_version
+    jq_version=$(jq --version 2>&1 | grep -oE '[0-9]+\.[0-9]+' | head -1)
+    if ! awk -v ver="$jq_version" 'BEGIN { exit (ver >= 1.6 ? 0 : 1) }'; then
+        echo "❌ Error: etym-graph requires jq version 1.6 or higher (found: ${jq_version:-unknown})." >&2
+        echo "Please update jq to safely process range() functions in the graph builder." >&2
+        return 1
+    fi
+
     local reform_name="${DICT_PROJECT_NAME:-Inglisce}"
     echo "Building Etymological Graph from $target_path..."
     echo "================================================================="
