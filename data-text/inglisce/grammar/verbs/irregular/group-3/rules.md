@@ -72,16 +72,16 @@ A specific subset of the mid-vowel shift where an **-r** controls the vowel, res
 ### 3C. The Terminal Glide Shift (-oe / -ahe → -ou / -eu / -ao)
 Verbs ending in **-oe** (or the similar **-ahe** / **-oihe**) manage historical "W" glides. They shift their terminal vowel to the tight diphthongs **-ou** or **-eu** in the past tense. Their participles are formed by adding an **-n** or **-ne** to the base vowel.
 
-| Infinitive | Past | Past Participle |
-| :--- | :--- | :--- |
-| to bloe | blou | bleon |
-| to drahe | drou | draon |
-| to floihe | flou | flone |
-| to gnoe | gnou | gnone |
-| to groe | grou | grone |
-| to overþroe | overþreu | overþreon |
-| to þroe | þreu | þreon |
-| to uiþdrahe| uiþdrou| uiþdraon |
+| Infinitive | Past | Past Participle | Gerund |
+| :--- | :--- | :--- | :--- |
+| to bloe | blou | bleon | blouing |
+| to drahe | drou | draon | drahing |
+| to floihe | flou | flone | floihing |
+| to gnoe | gnou | gnone | gnouing |
+| to groe | grou | grone | grouing |
+| to overþroe | overþreu | overþreon | overþrouing |
+| to þroe | þreu | þreon | þrouing |
+| to uiþdrahe| uiþdrou| uiþdraon | uiþdrahing |
 
 ### 3D. The "A-Shift" (i/e → â)
 For certain verbs with front vowels, the past tense opens wide to an **â**, while the participle reverts back to the original vowel.
