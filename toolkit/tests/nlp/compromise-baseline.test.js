@@ -62,11 +62,12 @@ describe('Compromise NLP - Baseline Categorization Explorer', () => {
     });
 
     it('handles ambiguous words based on context', () => {
-        // "Watch" can be a noun or a verb depending on placement
         const text1 = "I bought a gold watch.";
         const text2 = "Watch me do this.";
         const text3 = "She circles the correct answer."
         const text4 = "The circles are different colors."
+        const text5 = "I like you like a friend."
+        const text6 = "That's not like you."
 
         console.log('\n--- 4. CONTEXTUAL DISAMBIGUATION ---');
         console.log('Sentence 1 (Noun):', nlp(text1).match('watch').out('tags'));
@@ -74,8 +75,31 @@ describe('Compromise NLP - Baseline Categorization Explorer', () => {
         console.log('Sentence 3 (Verb):', nlp(text3).match('circles').out('tags'));
         console.log('Sentence 4 (Noun):', nlp(text4).match('circles').out('tags'));
 
+        console.log('\n--- SENTENCE 5: "LIKE" DISAMBIGUATION ---');
+        const sentence5Data = nlp(text5).json()[0]; // Grab the first sentence object
+        
+        sentence5Data.terms.forEach(term => {
+            // term.text is the raw word, term.tags is the array of POS tags
+            console.log(`Word: "${term.text.padEnd(8)}" | Tags:`, term.tags);
+        });
+
+        console.log('\n--- SENTENCE 6: "LIKE" DISAMBIGUATION ---');
+        const sentence6Data = nlp(text6).json()[0];
+        
+        sentence6Data.terms.forEach(term => {
+            console.log(`Word: "${term.text.padEnd(8)}" | Tags:`, term.tags);
+        });
+
+        // Standard Assertions
         expect(nlp(text1).match('watch').has('#Noun')).toBe(true);
         expect(nlp(text2).match('watch').has('#Verb')).toBe(true);
+        
+        // Assertions for Sentence 5
+        const likeMatches = nlp(text5).match('like').json();
+        // The first "like" should be a verb
+        expect(likeMatches[0].terms[0].tags).toContain('Verb');
+        // The second "like" should NOT be a verb (usually Preposition or Conjunction)
+        expect(likeMatches[1].terms[0].tags).not.toContain('Verb');
     });
 
     it('explores modals and auxiliary verbs (including "do" in questions/statements)', () => {
@@ -163,35 +187,35 @@ describe('Compromise NLP - Baseline Categorization Explorer', () => {
         // The second 'do' should be a standard Verb/Infinitive, completely devoid of question properties
         expect(doWords[1].terms[0].tags).toContain('Verb');
         expect(doWords[1].terms[0].tags).not.toContain('QuestionWord');
-    
+
         // --- Test: "Does she do yoga?" ---
         const doesSheDo = nlp("Does she do yoga?");
-        
+
         // Match 'does' (the helper)
         const doesWord = doesSheDo.match('does').json();
         expect(doesWord[0].terms[0].tags).toContain('QuestionWord');
         expect(doesWord[0].terms[0].tags).toContain('Verb');
-        
+
         // Match 'do' (the main verb)
         const doMainWord = doesSheDo.match('do').json();
         expect(doMainWord[0].terms[0].tags).toContain('Verb');
         expect(doMainWord[0].terms[0].tags).not.toContain('QuestionWord');
-    
+
 
         // --- Test: "She does do yoga." (Emphatic) ---
         const sheDoesDo = nlp("She does do yoga.");
-        
+
         // Match 'does' (the emphatic helper)
         const emphaticDoes = sheDoesDo.match('does').json();
         expect(emphaticDoes[0].terms[0].tags).not.toContain('QuestionWord');
         expect(emphaticDoes[0].terms[0].tags).toContain('Verb');
         expect(emphaticDoes[0].terms[0].tags).toContain('Auxiliary');
-        
+
         // Match 'do' (the main verb)
         const emphaticMainDo = sheDoesDo.match('do').json();
         expect(emphaticMainDo[0].terms[0].tags).toContain('Verb');
         expect(emphaticMainDo[0].terms[0].tags).toContain('Infinitive');
-        
+
     });
 
     it('handles implicit expansion and categorization of contractions', () => {
