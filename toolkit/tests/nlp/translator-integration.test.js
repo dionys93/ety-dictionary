@@ -52,7 +52,6 @@ describe('Inglisce Transcription Engine', () => {
     it('correctly maps the Emphatic "Do" vs Main Verb "Do"', () => {
         const text = "She does do yoga.";
         const result = transcribe(text, liveBrain);
-        console.log({ result })
 
         // Auxiliary 'does' -> 'dus', Main Verb 'do' -> 'dou'
         expect(result).toContain('dus');

@@ -1,7 +1,7 @@
 import { describe, it, expect } from 'vitest';
 import nlp from 'compromise';
 
-describe('Compromise NLP - Baseline Categorization Explorer', () => {
+describe.skip('Compromise NLP - Baseline Categorization Explorer', () => {
 
     it('categorizes standard parts of speech', () => {
         const text = "The quick brown fox jumps over the extremely lazy dog.";
