@@ -329,12 +329,14 @@ const applyMorphology = (word, tag) => {
     switch (tag) {
         case 'NNS': // Plural Noun
         case 'VBZ': // 3rd Person Singular Verb
-            return resolveForm(word, '-s', false);
+            // FIXED: Suffix first, Base word second
+            return resolveForm('-s', word, false); 
         case 'VBD': // Past Tense Verb
         case 'VBN': // Past Participle
-            return resolveForm(word, '-d', false);
+            return resolveForm('-d', word, false);
         case 'VBG': // Gerund / Present Participle
-            return resolveForm(word, '-ing', false);
+            // FIXED: isGerund boolean set to true
+            return resolveForm('-ing', word, true); 
         default:
             return word; // Base form
     }
@@ -350,24 +352,32 @@ export const transcribeFromAST = (astTokens, brain, missingWordsTracker = new Se
             return token.text + token.whitespace;
         }
 
-        // 2. Find brain entry via pure fallback evaluation
         const searchWord = token.lemma.toLowerCase();
         const rawWord = token.text.toLowerCase();
-        const brainEntry = brain[searchWord] || brain[rawWord];
+        
+        // 2. FIXED: PRIORITY SWAP
+        // Always check the exact word on the page first to catch irregulars (me, are, was).
+        // Only fall back to the lemma (root) if the exact word isn't in the dictionary.
+        const brainEntry = brain[rawWord] || brain[searchWord];
 
         // 3. Translation and Conjugation logic
         if (brainEntry) {
             const baseReplacement = getReplacement(token.pos, brainEntry);
             if (baseReplacement) {
-                const conjugated = applyMorphology(baseReplacement, token.tag);
-                return matchCasing(token.text, conjugated) + token.whitespace;
+                // Only conjugate if we fell back to the lemma.
+                // If we found the raw word (e.g. "are"), it is ALREADY conjugated!
+                const finalWord = brain[rawWord] 
+                    ? baseReplacement 
+                    : applyMorphology(baseReplacement, token.tag);
+
+                return matchCasing(token.text, finalWord) + token.whitespace;
             }
         }
 
         // 4. Missing word handling
         missingWordsTracker.add(searchWord);
         return `[${token.text}]` + token.whitespace;
-
+        
     }).join('');
 };
 
