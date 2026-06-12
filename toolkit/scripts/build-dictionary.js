@@ -1,19 +1,17 @@
 /** build-dictionary.js
  * ============================================================================
  * TRANSLATION BRAIN COMPILER
- * * This script ingests the flattened JSONL dictionary and uses `compromise.js` 
- * to calculate all valid English variations, dynamically sanitizing any 
- * polluted Bash extraction data before it reaches the brain.
+ * * This script ingests the flattened JSONL dictionary and indexes it into a 
+ * clean JSON map. It delegates morphological transformations to the JIT 
+ * Transcriber by passing explicit conjugation data alongside the roots.
  * ============================================================================
  */
 
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
-import nlp from 'compromise';
-import { resolveForm } from './utils.js';
 
-// Maps Bash/Dictionary shorthand POS tags to standard compromise.js tags
+// Maps Bash/Dictionary shorthand POS tags to standard spaCy tags
 const posMap = {
     'verb': 'Verb', 'v': 'Verb', 'tr v': 'Verb', 'intr v': 'Verb',
     'noun': 'Noun', 'n': 'Noun', 'm n': 'Noun', 'f n': 'Noun',
@@ -48,7 +46,7 @@ export function buildBrain(dataset) {
      * Ensures no garbage from Bash ever pollutes the lookup keys by stripping
      * parentheses, brackets, and infinitive "to " prefixes.
      */
-    const addWord = (eng, inglisce, pos) => {
+    const addWord = (eng, inglisce, pos, conjugations = null) => {
         if (!eng || !inglisce) return;
 
         const cleanEng = eng.replace(/\([^)]+\)/g, '')
@@ -58,38 +56,29 @@ export function buildBrain(dataset) {
             .split(/\s+/)[0]
             .toLowerCase();
 
-        const cleanIng = inglisce.replace(/[.,!?()[\]{}]/g, '').trim();
+        const cleanIng = typeof inglisce === 'string'
+            ? inglisce.replace(/[.,!?()[\]{}]/g, '').trim()
+            : inglisce;
 
         if (!cleanEng) return;
 
         brain[cleanEng] = brain[cleanEng] || {};
-        brain[cleanEng][pos] = brain[cleanEng][pos] || cleanIng;
+        brain[cleanEng][pos] = cleanIng;
+
+        // Attach conjugations to the lemma entry so transcriber.js can apply JIT morphology
+        if (conjugations && !Array.isArray(conjugations) && Object.keys(conjugations).length > 0) {
+            brain[cleanEng].conjugations = brain[cleanEng].conjugations || {};
+            Object.assign(brain[cleanEng].conjugations, conjugations);
+        }
     };
 
-    // Iterate through every stanza extracted by etym-parse
     dataset.forEach(data => {
         if (!data || !data.me_word || !data.inglisce_word) return;
 
         // Force strict NFC composition early to prevent byte-level mismatches downstream
         const engWord = data.me_word.toLowerCase().trim().normalize('NFC');
         const inglisceWord = data.inglisce_word.normalize('NFC');
-        
-        // `c` can be an Object (standard verb slots) OR an Array (explicit irregular lists)
         const c = data.conjugations || {};
-        const isVerbConj = !Array.isArray(c);
-
-        /**
-         * Helper: resolves a named conjugation slot.
-         * If the dictionary provided a fully explicit array (e.g., 'to be') or 
-         * a two-stem verb class (indicated by c.present), it bypasses suffix 
-         * stripping entirely, as the words are already fully formed.
-         */
-        const resolve = (slot, isGerund = false) => {
-            if (!slot) return inglisceWord;
-            return (isVerbConj && c.present) || Array.isArray(c)
-                ? slot                                     
-                : resolveForm(slot, inglisceWord, isGerund);
-        };
 
         const validPosCategories = (data.pos || '')
             .split(',')
@@ -98,167 +87,65 @@ export function buildBrain(dataset) {
 
         if (validPosCategories.length > 0) compiledCount++;
 
-        // Base context passed to all specific POS handlers
-        const ctx = { addWord, resolve, engWord, inglisceWord, c };
-
         validPosCategories.forEach(posCategory => {
-            ctx.posCategory = posCategory;
-            addWord(engWord, inglisceWord, posCategory);
+            // Always add the base lemma to the dictionary
+            addWord(engWord, inglisceWord, posCategory, c);
 
-            // Route to the appropriate morphologic generator
-            if (engWord === 'be') handleBe(ctx);
-            else if (engWord === 'do') handleDo(ctx);
-            else if (engWord === 'have') handleHave(ctx);
-            else if (posCategory === 'Modal') handleModal(ctx);
-            else if (posCategory === 'Verb' || posCategory === 'Auxiliary') handleVerb(ctx);
-            else if (posCategory === 'Noun' && c.length > 0) handleNoun(ctx);
-            else if (posCategory === 'Adjective' && c.length > 0) handleAdjective(ctx);
+            // ----------------------------------------------------------------
+            // IRREGULAR OVERRIDES
+            // The following blocks only run if a word is so irregular that 
+            // spaCy might fail to lemmatize it, requiring direct `rawWord` lookup.
+            // ----------------------------------------------------------------
+            
+            // Handle Class 6 Explicit Arrays 
+            if (Array.isArray(c)) {
+                if (engWord === 'be') {
+                    const forms = ['am', 'is', 'are', 'was', 'were', 'been', 'being'];
+                    forms.forEach((form, i) => {
+                        if (c[i]) {
+                            addWord(form, c[i], 'Copula');
+                            addWord(form, c[i], 'Verb');
+                        }
+                    });
+                } else if (engWord === 'do') {
+                    const forms = ['does', 'did', 'done', 'doing'];
+                    forms.forEach((form, i) => {
+                        if (c[i]) {
+                            addWord(form, c[i], 'Verb');
+                            addWord(form, c[i], 'Auxiliary');
+                        }
+                    });
+                } else if (engWord === 'have') {
+                    const forms = ['has', 'had', 'having'];
+                    forms.forEach((form, i) => {
+                        if (c[i]) {
+                            addWord(form, c[i], 'Verb');
+                            addWord(form, c[i], 'Auxiliary');
+                        }
+                    });
+                }
+            } 
+            
+            // Handle Modals
+            else if (posCategory === 'Modal') {
+                const pastMap = { 'can': 'could', 'will': 'would', 'shall': 'should', 'may': 'might' };
+                const pastEng = pastMap[engWord];
+
+                // Modals do not take standard suffixes, they use explicitly defined distinct words
+                if (pastEng && c.past && !c.past.startsWith('-')) {
+                    addWord(pastEng, c.past, 'Modal');
+                }
+                
+                const negPresent = (c.third_singular && !c.third_singular.startsWith('-')) 
+                    ? c.third_singular 
+                    : inglisceWord;
+                    
+                if (engWord === 'can') addWord('cannot', negPresent, 'Modal');
+            }
         });
     });
 
     return { brain, compiledCount };
-}
-
-// ============================================================================
-// PART-OF-SPEECH HANDLERS
-// ============================================================================
-
-/**
- * Reusable helper for 'be', 'do', and 'have' to map their highly irregular 
- * arrays to multiple grammatical roles (e.g., Auxiliary and Verb) without code duplication.
- */
-function processExplicitAuxiliary(ctx, slots, forms, primaryPos, secondaryPos, generateNegative) {
-    const { addWord, resolve, inglisceWord, engWord } = ctx;
-    
-    addWord(engWord, inglisceWord, primaryPos);
-    addWord(engWord, inglisceWord, secondaryPos);
-
-    forms.forEach((form, i) => {
-        const ingForm = resolve(slots[i]);
-        addWord(form, ingForm, primaryPos);
-        addWord(form, ingForm, secondaryPos);
-        
-        if (generateNegative && !form.includes("n't")) {
-            addWord(`${form} not`, ingForm, primaryPos);
-        }
-    });
-}
-
-function handleBe(ctx) {
-    // Check if the Bash parser handed us a fully explicit custom array for 'be'
-    // If not, map to standard object slots.
-    const slots = Array.isArray(ctx.c) ? ctx.c : [
-        ctx.c.third_singular, ctx.c.third_singular, ctx.c.present || ctx.c.third_singular,
-        ctx.c.past, ctx.c.past, ctx.c.participle || ctx.c.past, ctx.c.gerund,
-        ctx.c.past, ctx.c.present || ctx.c.third_singular, ctx.c.past, ctx.c.past
-    ];
-    const forms = [
-        'am', 'is', 'are', 'was', 'were', 'been', 'being',
-        "isn't", "aren't", "wasn't", "weren't"
-    ];
-    processExplicitAuxiliary(ctx, slots, forms, 'Copula', 'Verb', true);
-}
-
-function handleDo(ctx) {
-    const slots = Array.isArray(ctx.c) ? ctx.c : [
-        ctx.c.third_singular, ctx.c.past, ctx.c.participle || ctx.c.past,
-        ctx.c.gerund, ctx.c.past, ctx.c.third_singular, ctx.c.past
-    ];
-    const forms = ['does', 'did', 'done', 'doing', "don't", "doesn't", "didn't"];
-    processExplicitAuxiliary(ctx, slots, forms, 'Verb', 'Auxiliary', false);
-}
-
-function handleHave(ctx) {
-    const slots = Array.isArray(ctx.c) ? ctx.c : [
-        ctx.c.third_singular, ctx.c.past, ctx.c.gerund,
-        ctx.c.past, ctx.c.third_singular, ctx.c.past
-    ];
-    const forms = ['has', 'had', 'having', "haven't", "hasn't", "hadn't"];
-    processExplicitAuxiliary(ctx, slots, forms, 'Verb', 'Auxiliary', false);
-}
-
-function handleModal(ctx) {
-    const { engWord, inglisceWord, c, resolve, addWord } = ctx;
-    
-    // Modals are heavily irregular, define explicit past/negated mappings
-    const pastMap = { 'can': 'could', 'will': 'would', 'shall': 'should', 'may': 'might' };
-    const negMap  = { 'can': "can't", 'will': "won't", 'shall': "shan't" };
-
-    const pastEng = pastMap[engWord] || null;
-    const negContraction = negMap[engWord] || `${engWord}n't`;
-
-    if (pastEng) {
-        const pastIng = resolve(c.past);
-        addWord(pastEng, pastIng, 'Modal');
-        
-        const negPast = pastIng || inglisceWord;
-        addWord(`${pastEng} not`, negPast, 'Modal');
-        addWord(`${pastEng}n't`, negPast, 'Modal');
-    }
-
-    const negPresent = resolve(c.third_singular) || inglisceWord;
-    addWord(`${engWord} not`, negPresent, 'Modal');
-    addWord(negContraction, negPresent, 'Modal');
-    
-    if (engWord === 'can') {
-        addWord('cannot', negPresent, 'Modal');
-    }
-}
-
-function handleVerb(ctx) {
-    const { engWord, inglisceWord, posCategory, c, addWord } = ctx;
-    
-    // Leverage NLP to automatically determine the correct English targets
-    const conj = nlp(engWord).tag('Verb').verbs().conjugate()[0];
-    if (!conj) return;
-
-    if (c.present) {
-        // Two-stem verbs: The forms provided are exact, fully-spelled words
-        addWord(conj.PresentTense, c.third_singular, posCategory);
-        addWord(conj.Gerund, c.gerund, posCategory);
-        if (c.past) {
-            addWord(conj.PastTense, c.past, posCategory);
-            addWord(conj.Participle, c.participle || c.past, posCategory);
-        }
-    } else {
-        // Standard/Semi-Irregular verbs: Require suffix resolution
-        const presentForm = resolveForm(c.third_singular, inglisceWord);
-        const pastForm = resolveForm(c.past, inglisceWord);
-        const participleForm = resolveForm(c.participle, inglisceWord);
-        const gerundForm = resolveForm(c.gerund, inglisceWord, true);
-
-        if (presentForm) addWord(conj.PresentTense, presentForm, posCategory);
-        if (pastForm) addWord(conj.PastTense, pastForm, posCategory);
-        if (participleForm) addWord(conj.Participle, participleForm, posCategory);
-        if (gerundForm) addWord(conj.Gerund, gerundForm, posCategory);
-    }
-}
-
-function handleNoun(ctx) {
-    const { engWord, inglisceWord, c, addWord } = ctx;
-    // Let NLP generate the correct English plural target
-    const englishPlural = nlp(engWord).tag('Noun').nouns().toPlural().text('normal');
-    const inglPlural = resolveForm(c[0], inglisceWord);
-    
-    if (englishPlural && inglPlural) {
-        addWord(englishPlural, inglPlural, 'Noun');
-    }
-}
-
-function handleAdjective(ctx) {
-    const { engWord, inglisceWord, c, addWord } = ctx;
-    const conj = nlp(engWord).tag('Adjective').adjectives().conjugate()[0];
-
-    // Adjectives frequently spawn Adverbs and Nouns natively
-    c.forEach(conjStr => {
-        const resolved = resolveForm(conjStr, inglisceWord);
-        if (!resolved) return;
-
-        if (conjStr.includes('est') && conj?.Superlative) addWord(conj.Superlative, resolved, 'Adjective');
-        else if (conjStr.includes('er') && conj?.Comparative) addWord(conj.Comparative, resolved, 'Adjective');
-        else if ((conjStr.includes('ly') || conjStr.includes('y')) && conj?.Adverb) addWord(conj.Adverb, resolved, 'Adverb');
-        else if (conjStr.includes('ness') && conj?.Noun) addWord(conj.Noun, resolved, 'Noun');
-    });
 }
 
 // ============================================================================
@@ -271,7 +158,7 @@ if (process.argv[1] === __filename) {
     const JSONL_FILE = path.resolve(__dirname, '../dist/master_dataset.jsonl');
     const OUTPUT_FILE = path.resolve(__dirname, '../dist/translationBrain.json');
 
-    console.log('🧠 Compiling Translation Brain...');
+    console.log('🧠 Compiling JIT Translation Brain...');
 
     if (!fs.existsSync(JSONL_FILE)) {
         console.error(`❌ JSONL file not found at ${JSONL_FILE}!`);
@@ -286,5 +173,5 @@ if (process.argv[1] === __filename) {
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify(brain, null, 2));
     console.log(`✅ Brain compiled to ${OUTPUT_FILE}`);
     console.log(`📊 Loaded ${compiledCount} base dictionary files!`);
-    console.log(`🧠 Generated ${Object.keys(brain).length} exact English forms!`);
+    console.log(`🧠 Generated ${Object.keys(brain).length} pure lemma mappings!`);
 }

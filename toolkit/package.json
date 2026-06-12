@@ -6,11 +6,6 @@
     "test:node": "vitest run tests/node/ tests/nlp/",
     "test:watch": "vitest"
   },
-  "dependencies": {
-    "compromise": "^14.15.0",
-    "wink-eng-lite-web-model": "^1.8.1",
-    "wink-nlp": "^2.4.0"
-  },
   "devDependencies": {
     "vitest": "^4.1.6"
   }
