@@ -65,10 +65,15 @@ export function buildBrain(dataset) {
         brain[cleanEng] = brain[cleanEng] || {};
         brain[cleanEng][pos] = cleanIng;
 
-        // Attach conjugations to the lemma entry so transcriber.js can apply JIT morphology
-        if (conjugations && !Array.isArray(conjugations) && Object.keys(conjugations).length > 0) {
-            brain[cleanEng].conjugations = brain[cleanEng].conjugations || {};
-            Object.assign(brain[cleanEng].conjugations, conjugations);
+        // Attach conjugations to the lemma entry so transcriber.js can apply JIT morphology.
+        // Array protection removed so Noun and Adjective arrays safely pass through.
+        if (conjugations && Object.keys(conjugations).length > 0) {
+            if (Array.isArray(conjugations)) {
+                brain[cleanEng].conjugations = conjugations;
+            } else {
+                brain[cleanEng].conjugations = brain[cleanEng].conjugations || {};
+                Object.assign(brain[cleanEng].conjugations, conjugations);
+            }
         }
     };
 
@@ -97,7 +102,7 @@ export function buildBrain(dataset) {
             // spaCy might fail to lemmatize it, requiring direct `rawWord` lookup.
             // ----------------------------------------------------------------
             
-            // Handle Class 6 Explicit Arrays 
+            // Handle Class 6 Explicit Arrays (with fully restored array lengths)
             if (Array.isArray(c)) {
                 if (engWord === 'be') {
                     const forms = ['am', 'is', 'are', 'was', 'were', 'been', 'being', "isn't", "aren't", "wasn't", "weren't"];
@@ -124,7 +129,7 @@ export function buildBrain(dataset) {
                         }
                     });
                 }
-            }
+            } 
             
             // Handle Modals
             else if (posCategory === 'Modal') {
