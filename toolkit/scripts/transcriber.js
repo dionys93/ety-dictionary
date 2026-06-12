@@ -56,6 +56,12 @@ export const getReplacement = (pos, brainEntry) => {
  * @param {string} tag - The fine-grained POS tag (e.g., 'VBG' for Gerund)
  * @returns {string} The conjugated word (e.g., 'sitte')
  */
+
+/**
+ * Conjugates the base Inglisce word based on spaCy's fine-grained Penn Treebank tags.
+ * Evaluates custom conjugations from the dictionary before falling back to standard suffix math.
+ */
+
 const applyMorphology = (brainEntry, word, tag) => {
     const c = brainEntry.conjugations || {};
     
@@ -64,14 +70,13 @@ const applyMorphology = (brainEntry, word, tag) => {
             const pluralSuffix = Array.isArray(c) && c.length > 0 ? c[0] : '-s';
             return resolveForm(pluralSuffix, word, false); 
         case 'VBZ': // 3rd Person Singular Verb (e.g., "he makes")
-            return c.third_singular || resolveForm('-s', word, false); 
+            return resolveForm(c.third_singular || '-s', word, false); 
         case 'VBD': // Past Tense Verb
-            return c.past || resolveForm('-d', word, false);
+            return resolveForm(c.past || '-d', word, false);
         case 'VBN': // Past Participle
-            return c.participle || c.past || resolveForm('-d', word, false);
+            return resolveForm(c.participle || c.past || '-d', word, false);
         case 'VBG': // Gerund / Present Participle
-            // The boolean `true` flags this specifically as a gerund for utils.js logic
-            return c.gerund || resolveForm('-ing', word, true); 
+            return resolveForm(c.gerund || '-ing', word, true); 
         default:
             return word; // Base form (No conjugation needed)
     }

@@ -100,7 +100,7 @@ export function buildBrain(dataset) {
             // Handle Class 6 Explicit Arrays 
             if (Array.isArray(c)) {
                 if (engWord === 'be') {
-                    const forms = ['am', 'is', 'are', 'was', 'were', 'been', 'being'];
+                    const forms = ['am', 'is', 'are', 'was', 'were', 'been', 'being', "isn't", "aren't", "wasn't", "weren't"];
                     forms.forEach((form, i) => {
                         if (c[i]) {
                             addWord(form, c[i], 'Copula');
@@ -108,7 +108,7 @@ export function buildBrain(dataset) {
                         }
                     });
                 } else if (engWord === 'do') {
-                    const forms = ['does', 'did', 'done', 'doing'];
+                    const forms = ['does', 'did', 'done', 'doing', "don't", "doesn't", "didn't"];
                     forms.forEach((form, i) => {
                         if (c[i]) {
                             addWord(form, c[i], 'Verb');
@@ -116,7 +116,7 @@ export function buildBrain(dataset) {
                         }
                     });
                 } else if (engWord === 'have') {
-                    const forms = ['has', 'had', 'having'];
+                    const forms = ['has', 'had', 'having', "haven't", "hasn't", "hadn't"];
                     forms.forEach((form, i) => {
                         if (c[i]) {
                             addWord(form, c[i], 'Verb');
@@ -124,7 +124,7 @@ export function buildBrain(dataset) {
                         }
                     });
                 }
-            } 
+            }
             
             // Handle Modals
             else if (posCategory === 'Modal') {
