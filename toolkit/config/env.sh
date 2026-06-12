@@ -8,14 +8,17 @@ export PROJECT_ROOT="$(cd "$CONFIG_DIR/../.." && pwd)"
 # Data Directories
 # toolkit/config/env.sh
 
-# If DICT_DIR already exists in the environment (e.g., from Vitest), keep it. 
-# Otherwise, default to the production path.
-export DICT_DIR="${DICT_DIR:-/workspaces/ety-dictionary/data-text/inglisce/dictionary}"
 
-# Do the same for any other paths that rely on DICT_DIR or the project root
+# --- DATA DIRECTORIES ---
+export DICT_DIR="${DICT_DIR:-/workspaces/ety-dictionary/data-text/inglisce/dictionary}"
 export ETYM_LIB_DIR="${ETYM_LIB_DIR:-/workspaces/ety-dictionary/toolkit}"
 export HISTORIES_DIR="$PROJECT_ROOT/data-text/histories"
 export ANALYSIS_DIR="$PROJECT_ROOT/analysis"
+
+# >>> NEW PIPELINE PATHS <<<
+export BOOKS_RAW_DIR="$PROJECT_ROOT/data-text/books"
+export BOOKS_AST_DIR="$PROJECT_ROOT/debug/ast-books"        # Intermediate JSON storage
+export BOOKS_TRANS_DIR="$PROJECT_ROOT/data-text/inglisce/books"
 
 # Language identity for untagged/reformed entries
 export DICT_PROJECT_NAME="Inglisce"
