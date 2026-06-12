@@ -1,0 +1,1666 @@
+[
+  {
+    "text": "OEDIPUS",
+    "lemma": "OEDIPUS",
+    "pos": "PROPN",
+    "tag": "NNP",
+    "is_ent": true,
+    "whitespace": ""
+  },
+  {
+    "text": "\n\n",
+    "lemma": "\n\n",
+    "pos": "SPACE",
+    "tag": "_SP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "Be",
+    "lemma": "be",
+    "pos": "AUX",
+    "tag": "VB",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "brave",
+    "lemma": "brave",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": ".",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "Even",
+    "lemma": "even",
+    "pos": "ADV",
+    "tag": "RB",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "if",
+    "lemma": "if",
+    "pos": "SCONJ",
+    "tag": "IN",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "I",
+    "lemma": "I",
+    "pos": "PRON",
+    "tag": "PRP",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "should",
+    "lemma": "should",
+    "pos": "AUX",
+    "tag": "MD",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "turn",
+    "lemma": "turn",
+    "pos": "VERB",
+    "tag": "VB",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "out",
+    "lemma": "out",
+    "pos": "ADP",
+    "tag": "RP",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "to",
+    "lemma": "to",
+    "pos": "PART",
+    "tag": "TO",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "be",
+    "lemma": "be",
+    "pos": "AUX",
+    "tag": "VB",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "\n",
+    "lemma": "\n",
+    "pos": "SPACE",
+    "tag": "_SP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "born",
+    "lemma": "bear",
+    "pos": "VERB",
+    "tag": "VBN",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "from",
+    "lemma": "from",
+    "pos": "ADP",
+    "tag": "IN",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "a",
+    "lemma": "a",
+    "pos": "DET",
+    "tag": "DT",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "shameful",
+    "lemma": "shameful",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "mother",
+    "lemma": "mother",
+    "pos": "NOUN",
+    "tag": "NN",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": ",",
+    "lemma": ",",
+    "pos": "PUNCT",
+    "tag": ",",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "whose",
+    "lemma": "whose",
+    "pos": "DET",
+    "tag": "WP$",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "family",
+    "lemma": "family",
+    "pos": "NOUN",
+    "tag": "NN",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "\n",
+    "lemma": "\n",
+    "pos": "SPACE",
+    "tag": "_SP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "for",
+    "lemma": "for",
+    "pos": "ADP",
+    "tag": "IN",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "three",
+    "lemma": "three",
+    "pos": "NUM",
+    "tag": "CD",
+    "is_ent": true,
+    "whitespace": " "
+  },
+  {
+    "text": "generations",
+    "lemma": "generation",
+    "pos": "NOUN",
+    "tag": "NNS",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "have",
+    "lemma": "have",
+    "pos": "AUX",
+    "tag": "VBP",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "been",
+    "lemma": "be",
+    "pos": "AUX",
+    "tag": "VBN",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "slaves",
+    "lemma": "slave",
+    "pos": "NOUN",
+    "tag": "NNS",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": ",",
+    "lemma": ",",
+    "pos": "PUNCT",
+    "tag": ",",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "\n",
+    "lemma": "\n",
+    "pos": "SPACE",
+    "tag": "_SP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "you",
+    "lemma": "you",
+    "pos": "PRON",
+    "tag": "PRP",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "will",
+    "lemma": "will",
+    "pos": "AUX",
+    "tag": "MD",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "still",
+    "lemma": "still",
+    "pos": "ADV",
+    "tag": "RB",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "have",
+    "lemma": "have",
+    "pos": "VERB",
+    "tag": "VB",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "your",
+    "lemma": "your",
+    "pos": "PRON",
+    "tag": "PRP$",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "noble",
+    "lemma": "noble",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "lineage",
+    "lemma": "lineage",
+    "pos": "NOUN",
+    "tag": "NN",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": ".",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "\n\n\n",
+    "lemma": "\n\n\n",
+    "pos": "SPACE",
+    "tag": "_SP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "JOCASTA",
+    "lemma": "JOCASTA",
+    "pos": "PROPN",
+    "tag": "NNP",
+    "is_ent": true,
+    "whitespace": ""
+  },
+  {
+    "text": "\n\n",
+    "lemma": "\n\n",
+    "pos": "SPACE",
+    "tag": "_SP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "Listen",
+    "lemma": "listen",
+    "pos": "VERB",
+    "tag": "VB",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "to",
+    "lemma": "to",
+    "pos": "ADP",
+    "tag": "IN",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "me",
+    "lemma": "I",
+    "pos": "PRON",
+    "tag": "PRP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": ",",
+    "lemma": ",",
+    "pos": "PUNCT",
+    "tag": ",",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "I",
+    "lemma": "I",
+    "pos": "PRON",
+    "tag": "PRP",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "beg",
+    "lemma": "beg",
+    "pos": "VERB",
+    "tag": "VBP",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "you",
+    "lemma": "you",
+    "pos": "PRON",
+    "tag": "PRP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": ".",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "Do",
+    "lemma": "do",
+    "pos": "AUX",
+    "tag": "VB",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "not",
+    "lemma": "not",
+    "pos": "PART",
+    "tag": "RB",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "do",
+    "lemma": "do",
+    "pos": "VERB",
+    "tag": "VB",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "this",
+    "lemma": "this",
+    "pos": "PRON",
+    "tag": "DT",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": ".",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "\n\n\n",
+    "lemma": "\n\n\n",
+    "pos": "SPACE",
+    "tag": "_SP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "OEDIPUS",
+    "lemma": "OEDIPUS",
+    "pos": "PROPN",
+    "tag": "NNP",
+    "is_ent": true,
+    "whitespace": ""
+  },
+  {
+    "text": "\n\n",
+    "lemma": "\n\n",
+    "pos": "SPACE",
+    "tag": "_SP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "I",
+    "lemma": "I",
+    "pos": "PRON",
+    "tag": "PRP",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "will",
+    "lemma": "will",
+    "pos": "AUX",
+    "tag": "MD",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "not",
+    "lemma": "not",
+    "pos": "PART",
+    "tag": "RB",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "be",
+    "lemma": "be",
+    "pos": "AUX",
+    "tag": "VB",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "convinced",
+    "lemma": "convince",
+    "pos": "VERB",
+    "tag": "VBN",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "I",
+    "lemma": "I",
+    "pos": "PRON",
+    "tag": "PRP",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "should",
+    "lemma": "should",
+    "pos": "AUX",
+    "tag": "MD",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "not",
+    "lemma": "not",
+    "pos": "PART",
+    "tag": "RB",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "learn",
+    "lemma": "learn",
+    "pos": "VERB",
+    "tag": "VB",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "\n",
+    "lemma": "\n",
+    "pos": "SPACE",
+    "tag": "_SP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "the",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "whole",
+    "lemma": "whole",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "truth",
+    "lemma": "truth",
+    "pos": "NOUN",
+    "tag": "NN",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "of",
+    "lemma": "of",
+    "pos": "ADP",
+    "tag": "IN",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "what",
+    "lemma": "what",
+    "pos": "PRON",
+    "tag": "WP",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "these",
+    "lemma": "these",
+    "pos": "DET",
+    "tag": "DT",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "facts",
+    "lemma": "fact",
+    "pos": "NOUN",
+    "tag": "NNS",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "amount",
+    "lemma": "amount",
+    "pos": "VERB",
+    "tag": "VBP",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "to",
+    "lemma": "to",
+    "pos": "ADP",
+    "tag": "IN",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": ".",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "\n\n\n",
+    "lemma": "\n\n\n",
+    "pos": "SPACE",
+    "tag": "_SP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "JOCASTA",
+    "lemma": "JOCASTA",
+    "pos": "PROPN",
+    "tag": "NNP",
+    "is_ent": true,
+    "whitespace": ""
+  },
+  {
+    "text": "\n\n",
+    "lemma": "\n\n",
+    "pos": "SPACE",
+    "tag": "_SP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "But",
+    "lemma": "but",
+    "pos": "CCONJ",
+    "tag": "CC",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "I",
+    "lemma": "I",
+    "pos": "PRON",
+    "tag": "PRP",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "care",
+    "lemma": "care",
+    "pos": "VERB",
+    "tag": "VBP",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "about",
+    "lemma": "about",
+    "pos": "ADP",
+    "tag": "IN",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "your",
+    "lemma": "your",
+    "pos": "PRON",
+    "tag": "PRP$",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "own",
+    "lemma": "own",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "well",
+    "lemma": "well",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "being",
+    "lemma": "being",
+    "pos": "NOUN",
+    "tag": "NN",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "\u2014",
+    "lemma": "\u2014",
+    "pos": "PUNCT",
+    "tag": ":",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "\n",
+    "lemma": "\n",
+    "pos": "SPACE",
+    "tag": "_SP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "what",
+    "lemma": "what",
+    "pos": "PRON",
+    "tag": "WP",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "I",
+    "lemma": "I",
+    "pos": "PRON",
+    "tag": "PRP",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "tell",
+    "lemma": "tell",
+    "pos": "VERB",
+    "tag": "VBP",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "you",
+    "lemma": "you",
+    "pos": "PRON",
+    "tag": "PRP",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "is",
+    "lemma": "be",
+    "pos": "AUX",
+    "tag": "VBZ",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "for",
+    "lemma": "for",
+    "pos": "ADP",
+    "tag": "IN",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "your",
+    "lemma": "your",
+    "pos": "PRON",
+    "tag": "PRP$",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "benefit",
+    "lemma": "benefit",
+    "pos": "NOUN",
+    "tag": "NN",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": ".",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "\n\n\n",
+    "lemma": "\n\n\n",
+    "pos": "SPACE",
+    "tag": "_SP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "OEDIPUS",
+    "lemma": "OEDIPUS",
+    "pos": "PROPN",
+    "tag": "NNP",
+    "is_ent": true,
+    "whitespace": ""
+  },
+  {
+    "text": "\n\n",
+    "lemma": "\n\n",
+    "pos": "SPACE",
+    "tag": "_SP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "What",
+    "lemma": "what",
+    "pos": "PRON",
+    "tag": "WP",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "you",
+    "lemma": "you",
+    "pos": "PRON",
+    "tag": "PRP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "\u2019re",
+    "lemma": "\u2019re",
+    "pos": "AUX",
+    "tag": "VBP",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "telling",
+    "lemma": "tell",
+    "pos": "VERB",
+    "tag": "VBG",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "me",
+    "lemma": "I",
+    "pos": "PRON",
+    "tag": "PRP",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "for",
+    "lemma": "for",
+    "pos": "ADP",
+    "tag": "IN",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "my",
+    "lemma": "my",
+    "pos": "PRON",
+    "tag": "PRP$",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "own",
+    "lemma": "own",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "good",
+    "lemma": "good",
+    "pos": "NOUN",
+    "tag": "NN",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "\n",
+    "lemma": "\n",
+    "pos": "SPACE",
+    "tag": "_SP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "just",
+    "lemma": "just",
+    "pos": "ADV",
+    "tag": "RB",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "brings",
+    "lemma": "bring",
+    "pos": "VERB",
+    "tag": "VBZ",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "me",
+    "lemma": "I",
+    "pos": "PRON",
+    "tag": "PRP",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "more",
+    "lemma": "more",
+    "pos": "ADJ",
+    "tag": "JJR",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "distress",
+    "lemma": "distress",
+    "pos": "NOUN",
+    "tag": "NN",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": ".",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "\n\n\n",
+    "lemma": "\n\n\n",
+    "pos": "SPACE",
+    "tag": "_SP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "JOCASTA",
+    "lemma": "JOCASTA",
+    "pos": "PROPN",
+    "tag": "NNP",
+    "is_ent": true,
+    "whitespace": ""
+  },
+  {
+    "text": "\n\n",
+    "lemma": "\n\n",
+    "pos": "SPACE",
+    "tag": "_SP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "O",
+    "lemma": "O",
+    "pos": "PROPN",
+    "tag": "NNP",
+    "is_ent": true,
+    "whitespace": " "
+  },
+  {
+    "text": "you",
+    "lemma": "you",
+    "pos": "PRON",
+    "tag": "PRP",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "unhappy",
+    "lemma": "unhappy",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "man",
+    "lemma": "man",
+    "pos": "NOUN",
+    "tag": "NN",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "!",
+    "lemma": "!",
+    "pos": "PUNCT",
+    "tag": ".",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "\n",
+    "lemma": "\n",
+    "pos": "SPACE",
+    "tag": "_SP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "May",
+    "lemma": "may",
+    "pos": "AUX",
+    "tag": "MD",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "you",
+    "lemma": "you",
+    "pos": "PRON",
+    "tag": "PRP",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "never",
+    "lemma": "never",
+    "pos": "ADV",
+    "tag": "RB",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "find",
+    "lemma": "find",
+    "pos": "VERB",
+    "tag": "VB",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "out",
+    "lemma": "out",
+    "pos": "ADP",
+    "tag": "RP",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "who",
+    "lemma": "who",
+    "pos": "PRON",
+    "tag": "WP",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "you",
+    "lemma": "you",
+    "pos": "PRON",
+    "tag": "PRP",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "really",
+    "lemma": "really",
+    "pos": "ADV",
+    "tag": "RB",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "are",
+    "lemma": "be",
+    "pos": "AUX",
+    "tag": "VBP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "!",
+    "lemma": "!",
+    "pos": "PUNCT",
+    "tag": ".",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "\n\n\n",
+    "lemma": "\n\n\n",
+    "pos": "SPACE",
+    "tag": "_SP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "OEDIPUS",
+    "lemma": "OEDIPUS",
+    "pos": "PROPN",
+    "tag": "NNP",
+    "is_ent": true,
+    "whitespace": " "
+  },
+  {
+    "text": "[",
+    "lemma": "[",
+    "pos": "PUNCT",
+    "tag": "-LRB-",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "to",
+    "lemma": "to",
+    "pos": "ADP",
+    "tag": "IN",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "Chorus",
+    "lemma": "Chorus",
+    "pos": "PROPN",
+    "tag": "NNP",
+    "is_ent": true,
+    "whitespace": ""
+  },
+  {
+    "text": "]",
+    "lemma": "]",
+    "pos": "X",
+    "tag": "XX",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "\n\n",
+    "lemma": "\n\n",
+    "pos": "SPACE",
+    "tag": "_SP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "Go",
+    "lemma": "go",
+    "pos": "VERB",
+    "tag": "VB",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": ",",
+    "lemma": ",",
+    "pos": "PUNCT",
+    "tag": ",",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "one",
+    "lemma": "one",
+    "pos": "NUM",
+    "tag": "CD",
+    "is_ent": true,
+    "whitespace": " "
+  },
+  {
+    "text": "of",
+    "lemma": "of",
+    "pos": "ADP",
+    "tag": "IN",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "you",
+    "lemma": "you",
+    "pos": "PRON",
+    "tag": "PRP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": ",",
+    "lemma": ",",
+    "pos": "PUNCT",
+    "tag": ",",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "and",
+    "lemma": "and",
+    "pos": "CCONJ",
+    "tag": "CC",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "bring",
+    "lemma": "bring",
+    "pos": "VERB",
+    "tag": "VB",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "that",
+    "lemma": "that",
+    "pos": "DET",
+    "tag": "DT",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "shepherd",
+    "lemma": "shepherd",
+    "pos": "NOUN",
+    "tag": "NN",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "here",
+    "lemma": "here",
+    "pos": "ADV",
+    "tag": "RB",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": ".",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "\n",
+    "lemma": "\n",
+    "pos": "SPACE",
+    "tag": "_SP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "Leave",
+    "lemma": "leave",
+    "pos": "VERB",
+    "tag": "VB",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "the",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "lady",
+    "lemma": "lady",
+    "pos": "NOUN",
+    "tag": "NN",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "to",
+    "lemma": "to",
+    "pos": "PART",
+    "tag": "TO",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "enjoy",
+    "lemma": "enjoy",
+    "pos": "VERB",
+    "tag": "VB",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "her",
+    "lemma": "her",
+    "pos": "PRON",
+    "tag": "PRP$",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "noble",
+    "lemma": "noble",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "line",
+    "lemma": "line",
+    "pos": "NOUN",
+    "tag": "NN",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": ".",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "\n\n\n",
+    "lemma": "\n\n\n",
+    "pos": "SPACE",
+    "tag": "_SP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "JOCASTA",
+    "lemma": "JOCASTA",
+    "pos": "PROPN",
+    "tag": "NNP",
+    "is_ent": true,
+    "whitespace": ""
+  },
+  {
+    "text": "\n\n",
+    "lemma": "\n\n",
+    "pos": "SPACE",
+    "tag": "_SP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "Alas",
+    "lemma": "alas",
+    "pos": "INTJ",
+    "tag": "UH",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": ",",
+    "lemma": ",",
+    "pos": "PUNCT",
+    "tag": ",",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "you",
+    "lemma": "you",
+    "pos": "PRON",
+    "tag": "PRP",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "poor",
+    "lemma": "poor",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "miserable",
+    "lemma": "miserable",
+    "pos": "ADJ",
+    "tag": "JJ",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "man",
+    "lemma": "man",
+    "pos": "NOUN",
+    "tag": "NN",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "!",
+    "lemma": "!",
+    "pos": "PUNCT",
+    "tag": ".",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "\n",
+    "lemma": "\n",
+    "pos": "SPACE",
+    "tag": "_SP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "There",
+    "lemma": "there",
+    "pos": "PRON",
+    "tag": "EX",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "\u2019s",
+    "lemma": "\u2019",
+    "pos": "VERB",
+    "tag": "VBZ",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "nothing",
+    "lemma": "nothing",
+    "pos": "PRON",
+    "tag": "NN",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "more",
+    "lemma": "more",
+    "pos": "ADJ",
+    "tag": "JJR",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "that",
+    "lemma": "that",
+    "pos": "PRON",
+    "tag": "WDT",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "I",
+    "lemma": "I",
+    "pos": "PRON",
+    "tag": "PRP",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "can",
+    "lemma": "can",
+    "pos": "AUX",
+    "tag": "MD",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "say",
+    "lemma": "say",
+    "pos": "VERB",
+    "tag": "VB",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "to",
+    "lemma": "to",
+    "pos": "ADP",
+    "tag": "IN",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "you",
+    "lemma": "you",
+    "pos": "PRON",
+    "tag": "PRP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": ".",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "\n",
+    "lemma": "\n",
+    "pos": "SPACE",
+    "tag": "_SP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "I",
+    "lemma": "I",
+    "pos": "PRON",
+    "tag": "PRP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "\u2019ll",
+    "lemma": "\u2019ll",
+    "pos": "AUX",
+    "tag": "MD",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "never",
+    "lemma": "never",
+    "pos": "ADV",
+    "tag": "RB",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "speak",
+    "lemma": "speak",
+    "pos": "VERB",
+    "tag": "VB",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "another",
+    "lemma": "another",
+    "pos": "DET",
+    "tag": "DT",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "word",
+    "lemma": "word",
+    "pos": "NOUN",
+    "tag": "NN",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "again",
+    "lemma": "again",
+    "pos": "ADV",
+    "tag": "RB",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": ".",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "\n\n\n",
+    "lemma": "\n\n\n",
+    "pos": "SPACE",
+    "tag": "_SP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "[",
+    "lemma": "[",
+    "pos": "PUNCT",
+    "tag": "-LRB-",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "JOCASTA",
+    "lemma": "JOCASTA",
+    "pos": "PROPN",
+    "tag": "NNP",
+    "is_ent": true,
+    "whitespace": " "
+  },
+  {
+    "text": "runs",
+    "lemma": "run",
+    "pos": "VERB",
+    "tag": "VBZ",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "into",
+    "lemma": "into",
+    "pos": "ADP",
+    "tag": "IN",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "the",
+    "lemma": "the",
+    "pos": "DET",
+    "tag": "DT",
+    "is_ent": false,
+    "whitespace": " "
+  },
+  {
+    "text": "palace",
+    "lemma": "palace",
+    "pos": "NOUN",
+    "tag": "NN",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": ".",
+    "lemma": ".",
+    "pos": "PUNCT",
+    "tag": ".",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "]",
+    "lemma": "]",
+    "pos": "PUNCT",
+    "tag": "NFP",
+    "is_ent": false,
+    "whitespace": ""
+  },
+  {
+    "text": "\n",
+    "lemma": "\n",
+    "pos": "SPACE",
+    "tag": "_SP",
+    "is_ent": false,
+    "whitespace": ""
+  }
+]
