@@ -17,7 +17,7 @@ export ANALYSIS_DIR="$PROJECT_ROOT/analysis"
 
 # >>> NEW PIPELINE PATHS <<<
 export BOOKS_RAW_DIR="$PROJECT_ROOT/data-text/books"
-export BOOKS_AST_DIR="$PROJECT_ROOT/debug/ast-books"        # Intermediate JSON storage
+export BOOKS_AST_DIR="$PROJECT_ROOT/toolkit/.cache/ast-books"        # Intermediate JSON storage
 export BOOKS_TRANS_DIR="$PROJECT_ROOT/data-text/inglisce/books"
 
 # Language identity for untagged/reformed entries
