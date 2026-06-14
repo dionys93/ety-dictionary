@@ -5,141 +5,197 @@ import { matchCasing, resolveForm } from './utils.js';
 
 /**
  * ============================================================================
- * PART 1: PURE TRANSLATION UTILITIES
+ * TYPE DEFINITIONS (Type-Driven Design)
  * ============================================================================
  */
 
 /**
- * Evaluates the spaCy UPOS (Universal Part of Speech) tag to extract the correct 
- * translation from a specific dictionary entry.
- * @param {string} pos - The coarse POS tag from spaCy (e.g., 'VERB', 'NOUN')
- * @param {object} brainEntry - The specific dictionary definition object for the target word.
- * @returns {string|null} The raw, unconjugated Inglisce replacement word.
- */
-export const getReplacement = (pos, brainEntry) => {
-    // Verbs and Auxiliaries share verb roots in the dictionary.
-    if ((pos === 'VERB' || pos === 'AUX') && brainEntry.Verb) return brainEntry.Verb;
-
-    // Fallbacks for Auxiliaries: If spaCy flags a word as a helper (like 'have' or 'be'),
-    // we explicitly check if the dictionary provides a unique Copula or Modal translation.
-    if (pos === 'AUX') {
-        if (brainEntry.Copula) return brainEntry.Copula;
-        if (brainEntry.Auxiliary) return brainEntry.Auxiliary;
-        if (brainEntry.Modal) return brainEntry.Modal;
-    }
-
-    // Standard part-of-speech routing
-    if ((pos === 'NOUN' || pos === 'PROPN') && brainEntry.Noun) return brainEntry.Noun;
-    if (pos === 'ADJ' && brainEntry.Adjective) return brainEntry.Adjective;
-    if (pos === 'ADV' && brainEntry.Adverb) return brainEntry.Adverb;
-    if (pos === 'PRON' && brainEntry.Pronoun) return brainEntry.Pronoun;
-    if (pos === 'DET' && brainEntry.Determiner) return brainEntry.Determiner;
-
-    // Prepositions and Conjunctions often share functional space
-    if ((pos === 'ADP' || pos === 'SCONJ' || pos === 'CCONJ')) {
-        if (brainEntry.Preposition) return brainEntry.Preposition;
-        if (brainEntry.Conjunction) return brainEntry.Conjunction;
-    }
-
-    // Absolute Fallback (The Option Pattern context): 
-    // If the word exists in the dictionary, but spaCy's POS tag doesn't perfectly match 
-    // our strict keys above, we just safely grab whatever the first available translation is.
-    const keys = Object.keys(brainEntry).filter(k => k !== 'conjugations');
-    return keys.length > 0 ? brainEntry[keys[0]] : null;
-};
-
-/**
- * Conjugates the base Inglisce word based on spaCy's fine-grained Penn Treebank tags.
- * Evaluates custom conjugations from the dictionary before falling back to standard suffix math.
- * @param {object} brainEntry - The full dictionary entry, containing potential irregular conjugations.
- * @param {string} word - The base translation (e.g., 'sitt')
- * @param {string} tag - The fine-grained POS tag (e.g., 'VBG' for Gerund)
- * @returns {string} The conjugated word (e.g., 'sitte')
+ * @typedef {Object} ASTToken
+ * @property {string} text - The raw text from spaCy
+ * @property {string} lemma - The lemmatized root word
+ * @property {string} pos - The coarse UPOS tag (e.g., 'VERB', 'NOUN')
+ * @property {string} tag - The fine-grained Penn Treebank tag
+ * @property {boolean} is_ent - Protected Named Entity flag
+ * @property {string} whitespace - Trailing whitespace string
  */
 
 /**
- * Conjugates the base Inglisce word based on spaCy's fine-grained Penn Treebank tags.
- * Evaluates custom conjugations from the dictionary before falling back to standard suffix math.
+ * @typedef {Object} Conjugations
+ * @property {string} [third_singular]
+ * @property {string} [past]
+ * @property {string} [participle]
+ * @property {string} [gerund]
  */
 
-const applyMorphology = (brainEntry, word, tag) => {
-    const c = brainEntry.conjugations || {};
+/**
+ * @typedef {Object} BrainEntry
+ * @property {string} [Verb]
+ * @property {string} [Noun]
+ * @property {string} [Adjective]
+ * @property {string} [Adverb]
+ * @property {string} [Pronoun]
+ * @property {string} [Determiner]
+ * @property {string} [Preposition]
+ * @property {string} [Conjunction]
+ * @property {string} [Copula]
+ * @property {string} [Auxiliary]
+ * @property {string} [Modal]
+ * @property {Conjugations|string[]} [conjugations] - Explicit dictionary overrides
+ */
+
+/**
+ * ============================================================================
+ * RAILWAY PRIMITIVES (The Either Monad)
+ * ============================================================================
+ */
+
+const Success = (value) => ({ status: 'success', value });
+const Failure = (error) => ({ status: 'missing', error });
+
+/**
+ * Native functional pipe: Passes a value through a sequence of pure functions.
+ */
+const pipe = (...fns) => (x) => fns.reduce((v, f) => f(v), x);
+
+/**
+ * ============================================================================
+ * THE PIPELINE STEPS (Pure Composable Functions)
+ * ============================================================================
+ */
+
+/**
+ * STEP 1: Look up the token in the dictionary.
+ * @param {ASTToken} token 
+ * @param {Object} brain 
+ */
+const matchDictionary = (token, brain) => {
+    // Structural Bypass: Move straight to formatting if not a translatable word
+    if (token.pos === 'SPACE' || token.pos === 'PUNCT' || token.pos === 'X' || token.is_ent) {
+        return Success({ word: token.text, brainEntry: null, token, isBypass: true });
+    }
+
+    // Strict NFC normalization applied just-in-time to catch byte-level mismatches from spaCy
+    const searchWord = token.lemma.toLowerCase().normalize('NFC');
+    const rawWord = token.text.toLowerCase().normalize('NFC');
     
-    switch (tag) {
-        case 'NNS': // Plural Noun
-            const pluralSuffix = Array.isArray(c) && c.length > 0 ? c[0] : '-s';
-            return resolveForm(pluralSuffix, word, false); 
-        case 'VBZ': // 3rd Person Singular Verb (e.g., "he makes")
-            return resolveForm(c.third_singular || '-s', word, false); 
-        case 'VBD': // Past Tense Verb
-            return resolveForm(c.past || '-d', word, false);
-        case 'VBN': // Past Participle
-            return resolveForm(c.participle || c.past || '-d', word, false);
-        case 'VBG': // Gerund / Present Participle
-            return resolveForm(c.gerund || '-ing', word, true); 
-        default:
-            return word; // Base form (No conjugation needed)
+    // Priority: Explicit raw word (e.g. 'are') -> Lemmatized root (e.g. 'be')
+    const brainEntry = brain[rawWord] || brain[searchWord];
+    if (!brainEntry) return Failure(searchWord); // Switch to the Error Track
+
+    let baseReplacement = null;
+    const pos = token.pos;
+
+    // Verb / Aux routing
+    if ((pos === 'VERB' || pos === 'AUX') && brainEntry.Verb) baseReplacement = brainEntry.Verb;
+    if (pos === 'AUX') {
+        if (brainEntry.Copula) baseReplacement = brainEntry.Copula;
+        else if (brainEntry.Auxiliary) baseReplacement = brainEntry.Auxiliary;
+        else if (brainEntry.Modal) baseReplacement = brainEntry.Modal;
     }
+    
+    // Standard routing
+    if (!baseReplacement) {
+        if ((pos === 'NOUN' || pos === 'PROPN') && brainEntry.Noun) baseReplacement = brainEntry.Noun;
+        else if (pos === 'ADJ' && brainEntry.Adjective) baseReplacement = brainEntry.Adjective;
+        else if (pos === 'ADV' && brainEntry.Adverb) baseReplacement = brainEntry.Adverb;
+        else if (pos === 'PRON' && brainEntry.Pronoun) baseReplacement = brainEntry.Pronoun;
+        else if (pos === 'DET' && brainEntry.Determiner) baseReplacement = brainEntry.Determiner;
+        else if ((pos === 'ADP' || pos === 'SCONJ' || pos === 'CCONJ')) {
+            if (brainEntry.Preposition) baseReplacement = brainEntry.Preposition;
+            else if (brainEntry.Conjunction) baseReplacement = brainEntry.Conjunction;
+        }
+    }
+
+    // Absolute Option Fallback
+    if (!baseReplacement) {
+        const keys = Object.keys(brainEntry).filter(k => k !== 'conjugations');
+        baseReplacement = keys.length > 0 ? brainEntry[keys[0]] : null;
+    }
+
+    // If we resolved the exact raw word (e.g., "are"), assume it is pre-conjugated
+    const isPreConjugated = !!brain[rawWord];
+
+    return baseReplacement 
+        ? Success({ word: baseReplacement, brainEntry, token, isPreConjugated, isBypass: false })
+        : Failure(searchWord);
 };
 
 /**
- * ============================================================================
- * PART 2: THE CORE ENGINE (PURE FUNCTION)
- * ============================================================================
+ * STEP 2: Apply suffix math or irregular dictionary overrides.
  */
+const applyMorphology = (result) => {
+    // Skip if on the error track, or if it's punctuation, or already conjugated
+    if (result.status === 'missing' || result.value.isBypass || result.value.isPreConjugated) return result;
+
+    const { word, brainEntry, token } = result.value;
+    const c = brainEntry.conjugations || {};
+    let finalWord = word;
+
+    // resolveForm naturally drops the terminal -e for gerunds based on your linguistic rules
+    switch (token.tag) {
+        case 'NNS': 
+            const pluralSuffix = Array.isArray(c) && c.length > 0 ? c[0] : '-s';
+            finalWord = resolveForm(pluralSuffix, word, false); 
+            break;
+        case 'VBZ': 
+            finalWord = resolveForm(c.third_singular || '-s', word, false); 
+            break;
+        case 'VBD': 
+            finalWord = resolveForm(c.past || '-d', word, false);
+            break;
+        case 'VBN': 
+            finalWord = resolveForm(c.participle || c.past || '-d', word, false);
+            break;
+        case 'VBG': 
+            finalWord = resolveForm(c.gerund || '-ing', word, true); 
+            break;
+    }
+
+    return Success({ ...result.value, word: finalWord });
+};
 
 /**
- * Core Transcriber: Pure Reducer function implementing a Writer Monad pattern.
- * Instead of mutating a global string or array, this function passes an immutable
- * 'State Tuple' (the accumulator) down the chain. It returns both the final calculated
- * string AND a safe log of missing words, guaranteeing 100% mathematical purity.
- * @param {Array} astTokens - The JSON array generated by the Python spaCy server.
- * @param {object} brain - The parsed translationBrain.json dictionary.
- * @returns {object} { text: string, missingWords: Set }
+ * STEP 3: Match the original casing structure.
  */
+const formatCasing = (result) => {
+    if (result.status === 'missing' || result.value.isBypass) return result;
+
+    const formattedWord = matchCasing(result.value.token.text, result.value.word);
+    return Success({ ...result.value, word: formattedWord });
+};
+
+
+/**
+ * ============================================================================
+ * CORE ENGINE (The Transcriber Pipeline)
+ * ============================================================================
+ */
+
 export const transcribeFromAST = (astTokens, brain) => {
-    // Initial State Tuple: Empty text string, empty Set for missing words
-    return astTokens.reduce((acc, token) => {
-        
-        // 1. Structural Bypass: Instantly pass through whitespace, punctuation marks,
-        // unrecognized symbols (X), and Protected Entities (is_ent: true, like "Oedipus").
-        if (token.pos === 'SPACE' || token.pos === 'PUNCT' || token.pos === 'X' || token.is_ent) {
-            acc.text += token.text + token.whitespace;
+    
+    // Create the pure execution pipeline
+    const processToken = pipe(
+        (token) => matchDictionary(token, brain),
+        applyMorphology,
+        formatCasing
+    );
+
+    // Map -> Reduce execution
+    return astTokens
+        .map(processToken)
+        .reduce((acc, result, index) => {
+            const token = astTokens[index]; // We need the original whitespace regardless of success/fail
+
+            if (result.status === 'missing') {
+                acc.missingWords.add(result.error);
+                acc.text += `[${token.text}]` + token.whitespace;
+            } else {
+                acc.text += result.value.word + token.whitespace;
+            }
+
             return acc;
-        }
-
-        const searchWord = token.lemma.toLowerCase();
-        const rawWord = token.text.toLowerCase();
-        
-        // 2. Lookup Priority: Check the exact raw word FIRST to catch irregulars (e.g., "me", "are").
-        // Only if it fails do we fall back to searching for the lemmatized root (e.g., "I", "be").
-        const brainEntry = brain[rawWord] || brain[searchWord];
-
-        // 3. Option Pattern: `brainEntry && ...` acts as a native JS Maybe Monad.
-        // If brainEntry is undefined, this cleanly short-circuits to `null` without throwing an error.
-        const baseReplacement = brainEntry && getReplacement(token.pos, brainEntry);
-        
-        if (baseReplacement) {
-            // Conjugation Check: If we found the exact raw word in the dictionary (like "are"),
-            // we assume it is already properly conjugated. We ONLY apply morphology if we 
-            // had to fall back to the raw root/lemma.
-            const finalWord = brain[rawWord] 
-                ? baseReplacement 
-                : applyMorphology(brainEntry, baseReplacement, token.tag);
-
-            acc.text += matchCasing(token.text, finalWord) + token.whitespace;
-            return acc;
-        }
-
-        // 4. Missing Word Handling (The Writer Log):
-        // If translation fails, we append the untranslated word in brackets to the text,
-        // and safely log the missing lemma to the monad's Set tracker to bubble up to the caller.
-        acc.missingWords.add(searchWord);
-        acc.text += `[${token.text}]` + token.whitespace;
-        return acc;
-        
-    }, { text: '', missingWords: new Set() }); 
-}
+        }, { text: '', missingWords: new Set() }); 
+};
 
 /**
  * ============================================================================
@@ -147,10 +203,8 @@ export const transcribeFromAST = (astTokens, brain) => {
  * ============================================================================
  */
 
-// Establish standard __filename and __dirname for ES modules
 const __filename = fileURLToPath(import.meta.url);
 
-// Only execute the CLI script if this file is run directly (e.g., `node transcriber.js`)
 if (process.argv[1] === __filename) {
     const inputPath = process.argv[2];
     const outputPath = process.argv[3];
@@ -167,25 +221,15 @@ if (process.argv[1] === __filename) {
         process.exit(1);
     }
 
-    // Load the dictionary into memory once
     const brain = JSON.parse(fs.readFileSync(BRAIN_PATH, 'utf8'));
-    
-    // This is the IMPURE global tracker. It lives here at the script's outer boundary
-    // so the core engine can remain pure.
     const globalMissingWords = new Set();
     let filesProcessed = 0;
 
-    /**
-     * Recursively walks a directory tree, finds .json ASTs, translates them, 
-     * and exports .txt files in an identical mirrored folder structure.
-     */
     function crawlAndTranscribe(currentInputDir, currentOutputDir) {
-        // Optimization: Ensure output folder exists once per directory, NOT once per file.
         if (!fs.existsSync(currentOutputDir)) {
             fs.mkdirSync(currentOutputDir, { recursive: true });
         }
 
-        // withFileTypes allows us to cleanly check .isDirectory() without extra fs.stat() calls
         const entries = fs.readdirSync(currentInputDir, { withFileTypes: true });
 
         for (const entry of entries) {
@@ -193,18 +237,14 @@ if (process.argv[1] === __filename) {
 
             if (entry.isDirectory()) {
                 const fullOutputPath = path.join(currentOutputDir, entry.name);
-                crawlAndTranscribe(fullInputPath, fullOutputPath); // Recursive dive
+                crawlAndTranscribe(fullInputPath, fullOutputPath); 
             } else if (entry.name.endsWith('.json')) {
-                // Change extension from .json AST back to readable .txt
                 const outFileName = entry.name.replace(/\.json$/, '.txt');
                 const fullOutputPath = path.join(currentOutputDir, outFileName);
 
                 const astTokens = JSON.parse(fs.readFileSync(fullInputPath, 'utf8'));
                 
-                // Destructure the Monadic Response from our pure core engine
                 const { text, missingWords } = transcribeFromAST(astTokens, brain);
-                
-                // Extract the missing words from the pure local Set and merge them into our impure global tracker
                 missingWords.forEach(word => globalMissingWords.add(word));
                 
                 fs.writeFileSync(fullOutputPath, text, 'utf8');
@@ -213,14 +253,12 @@ if (process.argv[1] === __filename) {
         }
     }
 
-    // Check if the user passed a directory or a single file to the CLI
     const stat = fs.statSync(inputPath);
 
     if (stat.isDirectory()) {
         console.log(`📂 Crawling AST directory: ${inputPath}`);
         crawlAndTranscribe(inputPath, outputPath);
     } else {
-        // Fallback: Process a single file
         console.log(`📝 Transcribing single AST: ${inputPath}`);
         const astTokens = JSON.parse(fs.readFileSync(inputPath, 'utf8'));
         
@@ -235,7 +273,6 @@ if (process.argv[1] === __filename) {
     console.log(`\n✅ Transcription Complete! Processed ${filesProcessed} files.`);
     console.log(`➡️  Saved to: ${outputPath}`);
 
-    // Print the global missing words sorted alphabetically for easy dictionary updates
     if (globalMissingWords.size > 0) {
         console.log(`\n⚠️  Master Missing Words Tracker (${globalMissingWords.size} unique untranslated words):`);
         console.log(Array.from(globalMissingWords).sort().join(', '));

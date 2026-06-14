@@ -1,15 +1,45 @@
 /** build-dictionary.js
  * ============================================================================
  * TRANSLATION BRAIN COMPILER
- * * This script ingests the flattened JSONL dictionary and indexes it into a 
- * clean JSON map. It delegates morphological transformations to the JIT 
- * Transcriber by passing explicit conjugation data alongside the roots.
+ * * This script operates as a pure functional pipeline. It maps raw Bash 
+ * JSONL rows into explicit "Mapping Instructions", and then reduces those 
+ * instructions into the final JIT Translation Brain.
  * ============================================================================
  */
 
 import fs from 'node:fs';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+
+/**
+ * ============================================================================
+ * TYPE DEFINITIONS (Type-Driven Design)
+ * ============================================================================
+ */
+
+/**
+ * @typedef {Object} RawRow
+ * @property {string} me_word
+ * @property {string} inglisce_word
+ * @property {string} [pos]
+ * @property {Object|Array} [conjugations]
+ */
+
+/**
+ * @typedef {Object} MappingInstruction
+ * @property {string} eng - The target English lookup key
+ * @property {string} ing - The resulting Inglisce translation
+ * @property {string} pos - The specific grammatical role
+ */
+
+/**
+ * @typedef {Object} CleanedData
+ * @property {string} baseEng
+ * @property {string} baseIng
+ * @property {string[]} posCategories
+ * @property {Object|Array} conjugations
+ * @property {MappingInstruction[]} mappings
+ */
 
 // Maps Bash/Dictionary shorthand POS tags to standard spaCy tags
 const posMap = {
@@ -28,134 +58,172 @@ const posMap = {
     'modal': 'Modal', 'aux': 'Auxiliary', 'auxiliary': 'Auxiliary'
 };
 
-// ============================================================================
-// COMPILER CORE (Exported for Testing)
-// ============================================================================
+/**
+ * ============================================================================
+ * RAILWAY PRIMITIVES (The Either Monad)
+ * ============================================================================
+ */
+
+const Success = (value) => ({ status: 'success', value });
+const Failure = (error) => ({ status: 'skipped', error });
+const pipe = (...fns) => (x) => fns.reduce((v, f) => f(v), x);
 
 /**
- * Builds the comprehensive Translation Brain mapping from a raw dataset.
- * @param {Array<Object>} dataset - The parsed JSONL dictionary rows.
- * @returns {Object} An object containing the compiled `brain` map and `compiledCount`.
+ * ============================================================================
+ * THE PIPELINE STEPS (Pure Composable Functions)
+ * ============================================================================
  */
+
+/**
+ * STEP 1: Validates and sanitizes the raw Bash row.
+ * @param {RawRow} row 
+ */
+const validateAndClean = (row) => {
+    if (!row || !row.me_word || !row.inglisce_word) return Failure('Missing core words');
+
+    // Strict NFC composition to prevent downstream byte-level mismatches
+    const baseEng = row.me_word.replace(/\([^)]+\)/g, '')
+        .replace(/\[[^\]]+\]/g, '')
+        .replace(/^to\s+/i, '')
+        .trim()
+        .split(/\s+/)[0]
+        .toLowerCase()
+        .normalize('NFC');
+
+    const baseIng = (typeof row.inglisce_word === 'string' 
+        ? row.inglisce_word.replace(/[.,!?()[\]{}]/g, '').trim() 
+        : row.inglisce_word).normalize('NFC');
+
+    if (!baseEng) return Failure('English word sanitized to empty string');
+
+    const posCategories = (row.pos || '')
+        .split(',')
+        .map(p => posMap[p.toLowerCase().trim()])
+        .filter(Boolean);
+
+    if (posCategories.length === 0) return Failure('No valid POS categories found');
+
+    return Success({ 
+        baseEng, 
+        baseIng, 
+        posCategories, 
+        conjugations: row.conjugations || {}, 
+        mappings: [] 
+    });
+};
+
+/**
+ * STEP 2: Generates the flat array of mappings for the dictionary entry.
+ * Calculates explicit irregulars (like 'am' -> 'be') without mutating external state.
+ */
+const generateMappings = (result) => {
+    if (result.status === 'skipped') return result;
+
+    const { baseEng, baseIng, posCategories, conjugations } = result.value;
+    const mappings = [];
+
+    posCategories.forEach(posCategory => {
+        // 1. Always map the base lemma
+        mappings.push({ eng: baseEng, ing: baseIng, pos: posCategory });
+
+        // 2. Map Class 6 Explicit Arrays (be, do, have)
+        if (Array.isArray(conjugations)) {
+            if (baseEng === 'be') {
+                const forms = ['am', 'is', 'are', 'was', 'were', 'been', 'being', "isn't", "aren't", "wasn't", "weren't"];
+                forms.forEach((form, i) => {
+                    if (conjugations[i]) {
+                        mappings.push({ eng: form, ing: conjugations[i], pos: 'Copula' });
+                        mappings.push({ eng: form, ing: conjugations[i], pos: 'Verb' });
+                    }
+                });
+            } else if (baseEng === 'do') {
+                const forms = ['does', 'did', 'done', 'doing', "don't", "doesn't", "didn't"];
+                forms.forEach((form, i) => {
+                    if (conjugations[i]) {
+                        mappings.push({ eng: form, ing: conjugations[i], pos: 'Verb' });
+                        mappings.push({ eng: form, ing: conjugations[i], pos: 'Auxiliary' });
+                    }
+                });
+            } else if (baseEng === 'have') {
+                const forms = ['has', 'had', 'having', "haven't", "hasn't", "hadn't"];
+                forms.forEach((form, i) => {
+                    if (conjugations[i]) {
+                        mappings.push({ eng: form, ing: conjugations[i], pos: 'Verb' });
+                        mappings.push({ eng: form, ing: conjugations[i], pos: 'Auxiliary' });
+                    }
+                });
+            }
+        } 
+        
+        // 3. Map Modals
+        else if (posCategory === 'Modal') {
+            const pastMap = { 'can': 'could', 'will': 'would', 'shall': 'should', 'may': 'might' };
+            const pastEng = pastMap[baseEng];
+            const c = conjugations;
+
+            if (pastEng && c.past && !c.past.startsWith('-')) {
+                mappings.push({ eng: pastEng, ing: c.past, pos: 'Modal' });
+            }
+            
+            const negPresent = (c.third_singular && !c.third_singular.startsWith('-')) ? c.third_singular : baseIng;
+            if (baseEng === 'can') mappings.push({ eng: 'cannot', ing: negPresent, pos: 'Modal' });
+        }
+    });
+
+    return Success({ ...result.value, mappings });
+};
+
+
+/**
+ * ============================================================================
+ * THE CORE REDUCER
+ * ============================================================================
+ */
+
 export function buildBrain(dataset) {
-    const brain = {};
-    let compiledCount = 0;
+    const processRow = pipe(validateAndClean, generateMappings);
+    
+    // Process all rows into a pure array of instructions
+    const processedRows = dataset.map(processRow);
 
-    /**
-     * Safely inserts a word into the brain. 
-     * Ensures no garbage from Bash ever pollutes the lookup keys by stripping
-     * parentheses, brackets, and infinitive "to " prefixes.
-     */
-    const addWord = (eng, inglisce, pos, conjugations = null) => {
-        if (!eng || !inglisce) return;
+    // Fold the instructions into the final Brain object
+    // Note: We use a local mutating accumulator here strictly for performance.
+    // Deep-copying an object with 10,000+ keys on every reduce iteration would freeze the build.
+    // Because the mutation is isolated inside this pure function boundary, it remains functionally safe.
+    const brain = processedRows.reduce((acc, result) => {
+        if (result.status === 'skipped') return acc;
 
-        const cleanEng = eng.replace(/\([^)]+\)/g, '')
-            .replace(/\[[^\]]+\]/g, '')
-            .replace(/^to\s+/i, '')
-            .trim()
-            .split(/\s+/)[0]
-            .toLowerCase();
+        const { baseEng, conjugations, mappings } = result.value;
 
-        const cleanIng = typeof inglisce === 'string'
-            ? inglisce.replace(/[.,!?()[\]{}]/g, '').trim()
-            : inglisce;
+        // Apply all generated mappings
+        mappings.forEach(({ eng, ing, pos }) => {
+            acc[eng] = acc[eng] || {};
+            acc[eng][pos] = ing;
+        });
 
-        if (!cleanEng) return;
-
-        brain[cleanEng] = brain[cleanEng] || {};
-        brain[cleanEng][pos] = cleanIng;
-
-        // Attach conjugations to the lemma entry so transcriber.js can apply JIT morphology.
-        // Array protection removed so Noun and Adjective arrays safely pass through.
+        // Attach conjugations to the lemma root for downstream JIT morphology
         if (conjugations && Object.keys(conjugations).length > 0) {
             if (Array.isArray(conjugations)) {
-                brain[cleanEng].conjugations = conjugations;
+                acc[baseEng].conjugations = conjugations;
             } else {
-                brain[cleanEng].conjugations = brain[cleanEng].conjugations || {};
-                Object.assign(brain[cleanEng].conjugations, conjugations);
+                acc[baseEng].conjugations = acc[baseEng].conjugations || {};
+                Object.assign(acc[baseEng].conjugations, conjugations);
             }
         }
-    };
 
-    dataset.forEach(data => {
-        if (!data || !data.me_word || !data.inglisce_word) return;
+        return acc;
+    }, {});
 
-        // Force strict NFC composition early to prevent byte-level mismatches downstream
-        const engWord = data.me_word.toLowerCase().trim().normalize('NFC');
-        const inglisceWord = data.inglisce_word.normalize('NFC');
-        const c = data.conjugations || {};
-
-        const validPosCategories = (data.pos || '')
-            .split(',')
-            .map(p => posMap[p.toLowerCase().trim()])
-            .filter(Boolean);
-
-        if (validPosCategories.length > 0) compiledCount++;
-
-        validPosCategories.forEach(posCategory => {
-            // Always add the base lemma to the dictionary
-            addWord(engWord, inglisceWord, posCategory, c);
-
-            // ----------------------------------------------------------------
-            // IRREGULAR OVERRIDES
-            // The following blocks only run if a word is so irregular that 
-            // spaCy might fail to lemmatize it, requiring direct `rawWord` lookup.
-            // ----------------------------------------------------------------
-            
-            // Handle Class 6 Explicit Arrays (with fully restored array lengths)
-            if (Array.isArray(c)) {
-                if (engWord === 'be') {
-                    const forms = ['am', 'is', 'are', 'was', 'were', 'been', 'being', "isn't", "aren't", "wasn't", "weren't"];
-                    forms.forEach((form, i) => {
-                        if (c[i]) {
-                            addWord(form, c[i], 'Copula');
-                            addWord(form, c[i], 'Verb');
-                        }
-                    });
-                } else if (engWord === 'do') {
-                    const forms = ['does', 'did', 'done', 'doing', "don't", "doesn't", "didn't"];
-                    forms.forEach((form, i) => {
-                        if (c[i]) {
-                            addWord(form, c[i], 'Verb');
-                            addWord(form, c[i], 'Auxiliary');
-                        }
-                    });
-                } else if (engWord === 'have') {
-                    const forms = ['has', 'had', 'having', "haven't", "hasn't", "hadn't"];
-                    forms.forEach((form, i) => {
-                        if (c[i]) {
-                            addWord(form, c[i], 'Verb');
-                            addWord(form, c[i], 'Auxiliary');
-                        }
-                    });
-                }
-            } 
-            
-            // Handle Modals
-            else if (posCategory === 'Modal') {
-                const pastMap = { 'can': 'could', 'will': 'would', 'shall': 'should', 'may': 'might' };
-                const pastEng = pastMap[engWord];
-
-                // Modals do not take standard suffixes, they use explicitly defined distinct words
-                if (pastEng && c.past && !c.past.startsWith('-')) {
-                    addWord(pastEng, c.past, 'Modal');
-                }
-                
-                const negPresent = (c.third_singular && !c.third_singular.startsWith('-')) 
-                    ? c.third_singular 
-                    : inglisceWord;
-                    
-                if (engWord === 'can') addWord('cannot', negPresent, 'Modal');
-            }
-        });
-    });
+    const compiledCount = processedRows.filter(r => r.status === 'success').length;
 
     return { brain, compiledCount };
 }
 
-// ============================================================================
-// CLI EXECUTION
-// ============================================================================
+/**
+ * ============================================================================
+ * CLI EXECUTION
+ * ============================================================================
+ */
 
 const __filename = fileURLToPath(import.meta.url);
 if (process.argv[1] === __filename) {
@@ -163,7 +231,7 @@ if (process.argv[1] === __filename) {
     const JSONL_FILE = path.resolve(__dirname, '../dist/master_dataset.jsonl');
     const OUTPUT_FILE = path.resolve(__dirname, '../dist/translationBrain.json');
 
-    console.log('🧠 Compiling JIT Translation Brain...');
+    console.log('🧠 Compiling Typed JIT Brain...');
 
     if (!fs.existsSync(JSONL_FILE)) {
         console.error(`❌ JSONL file not found at ${JSONL_FILE}!`);
