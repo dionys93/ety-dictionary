@@ -8,5 +8,8 @@
   },
   "devDependencies": {
     "vitest": "^4.1.6"
+  },
+  "dependencies": {
+    "jsdoc": "^4.0.5"
   }
 }
