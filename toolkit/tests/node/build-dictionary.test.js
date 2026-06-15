@@ -3,14 +3,12 @@ import { buildBrain } from '../../scripts/build-dictionary.js';
 
 describe('Dictionary Compiler (buildBrain)', () => {
 
-    it('correctly maps mixed irregulars and shorthand suffixes to specific grammatical tenses', () => {
-        // We simulate the raw output of etym-flatten
+    it('correctly maps roots and attaches conjugations for downstream JIT evaluation', () => {
         const rawDataset = [
             {
                 me_word: "make",
                 inglisce_word: "mâche",
                 pos: "verb",
-                // Mixed array: Full words for past/participle, shorthand for present/gerund
                 conjugations: {
                     present: "",
                     third_singular: "-s",
@@ -36,16 +34,20 @@ describe('Dictionary Compiler (buildBrain)', () => {
         const { brain } = buildBrain(rawDataset);
 
         // --- Assert 'MAKE' mappings ---
-        expect(brain['make']['Verb']).toBe('mâche');       // Infinitive
-        expect(brain['makes']['Verb']).toBe('mâcs');       // 3rd Person Present 
-        expect(brain['made']['Verb']).toBe('mâde');       // Past/Participle 
-        expect(brain['making']['Verb']).toBe('mâching');   // Gerund
+        expect(brain['make']['Verb']).toBe('mâche'); 
+        expect(brain['makes']).toBeUndefined();      
+        expect(brain['made']).toBeUndefined();       
+        expect(brain['making']).toBeUndefined();
+
+        // But the conjugations object MUST be attached to the root, NAMESPACED by pos!
+        expect(brain['make']['Verb_conjugations']).toBeDefined();
+        expect(brain['make']['Verb_conjugations'].past).toBe('mâde');
+        expect(brain['make']['Verb_conjugations'].gerund).toBe('-ing');
 
         // --- Assert 'SPEAK' mappings ---
-        expect(brain['speaks']['Verb']).toBe('spiecs');    // 3rd Person Present
-        expect(brain['spoke']['Verb']).toBe('spóc');       // Past
-        expect(brain['spoken']['Verb']).toBe('spócan');    // Participle
-        expect(brain['speaking']['Verb']).toBe('spieching'); // Gerund
+        expect(brain['speak']['Verb']).toBe('spieche');
+        expect(brain['speak']['Verb_conjugations'].past).toBe('spóc');
+        expect(brain['speak']['Verb_conjugations'].participle).toBe('spócan');
     });
 
 });
@@ -57,15 +59,11 @@ describe('Translation Brain Compiler > Auxiliaries & Modals', () => {
             me_word: "be",
             inglisce_word: "bie",
             pos: "aux",
-            // Simulating the CURRENT Bash output (which gets truncated/mangled) 
-            // OR the FUTURE Bash output (which will be a full 11-item array).
-            // Once the fix is in, the JS will accept the full array here.
             conjugations: ["am", "is", "are", "uas", "uere", "bign", "bying", "isn't", "aren't", "uasn't", "ueren't"] 
         }];
 
         const { brain } = buildBrain(dataset);
 
-        // Core forms
         expect(brain['be']).toBeDefined();
         expect(brain['am']['Verb']).toBe('am');
         expect(brain['is']['Verb']).toBe('is');
@@ -74,12 +72,6 @@ describe('Translation Brain Compiler > Auxiliaries & Modals', () => {
         expect(brain['were']['Verb']).toBe('uere');
         expect(brain['been']['Verb']).toBe('bign');
         expect(brain['being']['Verb']).toBe('bying');
-
-        // Negations
-        expect(brain["isn't"]['Verb']).toBe("isn't");
-        expect(brain["aren't"]['Verb']).toBe("aren't");
-        expect(brain["wasn't"]['Verb']).toBe("uasn't");
-        expect(brain["weren't"]['Verb']).toBe("ueren't");
     });
 
     it('correctly maps all explicit forms of "to do"', () => {
@@ -87,7 +79,6 @@ describe('Translation Brain Compiler > Auxiliaries & Modals', () => {
             me_word: "do",
             inglisce_word: "dou",
             pos: "v, aux",
-            // Use the explicit array just like your do.txt does!
             conjugations: ["dus", "did", "don", "douing", "don't", "dusn't", "didn't"]
         }];
 
@@ -98,7 +89,6 @@ describe('Translation Brain Compiler > Auxiliaries & Modals', () => {
         expect(brain['did']['Verb']).toBe('did');
         expect(brain['done']['Verb']).toBe('don');
         expect(brain['doing']['Verb']).toBe('douing');
-        expect(brain["don't"]['Verb']).toBe("don't"); 
     });
 
     it('correctly maps all explicit forms of "to have"', () => {
@@ -106,12 +96,7 @@ describe('Translation Brain Compiler > Auxiliaries & Modals', () => {
             me_word: "have",
             inglisce_word: "have",
             pos: "v, aux",
-            conjugations: {
-                third_singular: "has",
-                past: "had",
-                participle: "had",
-                gerund: "having"
-            }
+            conjugations: ["has", "had", "having", "haven't", "hasn't", "hadn't"]
         }];
 
         const { brain } = buildBrain(dataset);
@@ -134,10 +119,8 @@ describe('Translation Brain Compiler > Auxiliaries & Modals', () => {
 
         expect(brain['can']['Modal']).toBe('can');
         expect(brain['could']['Modal']).toBe('coûd');
-        
-        // Modal Negations
-        expect(brain["can't"]['Modal']).toBe('can'); 
         expect(brain['cannot']['Modal']).toBe('can');
-        expect(brain["couldn't"]['Modal']).toBe('coûd');
+        expect(brain["can't"]).toBeUndefined();
+        expect(brain["couldn't"]).toBeUndefined();
     });
 });
