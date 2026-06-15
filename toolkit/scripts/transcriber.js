@@ -47,7 +47,7 @@ const matchDictionary = (token, brain) => {
     if (!brainEntry) return Failure(searchWord); 
 
     let baseReplacement = null;
-    let matchedCategory = null; // Track exactly which role we selected!
+    let matchedCategory = null; 
     const pos = token.pos;
 
     // Verb / Aux routing
@@ -82,7 +82,8 @@ const matchDictionary = (token, brain) => {
         }
     }
 
-    const isPreConjugated = !!brain[rawWord];
+    // THE FIX: Only skip morphology if it's a distinct irregular form (like "are"), NOT the base lemma (like "work").
+    const isPreConjugated = !!brain[rawWord] && rawWord !== searchWord;
 
     return baseReplacement 
         ? Success({ word: baseReplacement, brainEntry, matchedCategory, token, isPreConjugated, isBypass: false })
@@ -90,24 +91,21 @@ const matchDictionary = (token, brain) => {
 };
 
 
+// ... existing matchDictionary function ...
+
 const applyMorphology = (result) => {
     if (result.status === 'missing' || result.value.isBypass || result.value.isPreConjugated) return result;
 
     const { word, brainEntry, matchedCategory, token } = result.value;
-    
-    // Safely retrieve the namespaced conjugations based on the matched category
     const c = brainEntry[`${matchedCategory}_conjugations`] || {};
     let finalWord = word;
 
     switch (token.tag) {
         case 'NNS': 
-            const pluralSuffix = Array.isArray(c) && c.length > 0 ? c[0] : '-s';
-            finalWord = resolveForm(pluralSuffix, word, false); 
+            // THE TWEAK: Safely use our new explicit plural key
+            finalWord = resolveForm(c.plural || '-s', word, false); 
             break;
-        case 'VBP': // <--- THE NEW RULE
-            // Non-3rd Person Singular Present (e.g., "I work", "They work")
-            // If the dictionary explicitly defines a distinct present stem (like "uirc" vs "uirche"), use it.
-            // Otherwise, it mathematically defaults to the base infinitive.
+        case 'VBP': 
             finalWord = c.present || word;
             break;
         case 'VBZ': 

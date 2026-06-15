@@ -17,22 +17,6 @@ import { fileURLToPath } from 'node:url';
  * ============================================================================
  */
 
-/**
- * @typedef {Object} RawRow
- * @property {string} me_word
- * @property {string} inglisce_word
- * @property {string} [pos]
- * @property {Object|Array} [conjugations]
- */
-
-/**
- * @typedef {Object} MappingInstruction
- * @property {string} eng - The target English lookup key
- * @property {string} ing - The resulting Inglisce translation
- * @property {string} pos - The specific grammatical role
- * @property {Object|Array|null} conj - The conjugations attached to this specific POS
- */
-
 const posMap = {
     'verb': 'Verb', 'v': 'Verb', 'tr v': 'Verb', 'intr v': 'Verb',
     'noun': 'Noun', 'n': 'Noun', 'm n': 'Noun', 'f n': 'Noun',
@@ -59,10 +43,6 @@ const Success = (value) => ({ status: 'success', value });
 const Failure = (error) => ({ status: 'skipped', error });
 const pipe = (...fns) => (x) => fns.reduce((v, f) => f(v), x);
 
-/**
- * Recursively applies NFC composition to arrays and objects.
- * This guarantees macOS NFD bytes from etym-parse don't infect the transcription.
- */
 const deepNormalize = (obj) => {
     if (typeof obj === 'string') return obj.normalize('NFC');
     if (Array.isArray(obj)) return obj.map(deepNormalize);
@@ -74,6 +54,66 @@ const deepNormalize = (obj) => {
         return normalized;
     }
     return obj;
+};
+
+/**
+ * THE ADAPTER: Quarantines positional bash arrays and translates them into 
+ * strict key-value pairs before they enter the JavaScript pipeline.
+ */
+const normalizeConjugations = (baseEng, rawConj, posCategories) => {
+    if (!Array.isArray(rawConj)) return rawConj; // Already a clean object
+
+    if (baseEng === 'be') {
+        return {
+            explicit: {
+                am: rawConj[0], is: rawConj[1], are: rawConj[2], was: rawConj[3],
+                were: rawConj[4], been: rawConj[5], being: rawConj[6], "isn't": rawConj[7],
+                "aren't": rawConj[8], "wasn't": rawConj[9], "weren't": rawConj[10]
+            }
+        };
+    }
+    if (baseEng === 'do') {
+        // THE FIX: Check if we are processing the shorter Auxiliary array or the full Verb array
+        if (posCategories.includes('Auxiliary')) {
+            return {
+                explicit: {
+                    does: rawConj[0],
+                    did: rawConj[1],
+                    "don't": rawConj[2],
+                    "doesn't": rawConj[3],
+                    "didn't": rawConj[4]
+                }
+            };
+        } else {
+            return {
+                explicit: {
+                    does: rawConj[0],
+                    did: rawConj[1],
+                    done: rawConj[2],
+                    doing: rawConj[3],
+                    "don't": rawConj[4],
+                    "doesn't": rawConj[5],
+                    "didn't": rawConj[6]
+                }
+            };
+        }
+    }
+    if (baseEng === 'have') {
+        return {
+            explicit: {
+                has: rawConj[0], had: rawConj[1], having: rawConj[2],
+                "haven't": rawConj[3], "hasn't": rawConj[4], "hadn't": rawConj[5]
+            }
+        };
+    }
+    if (posCategories.includes('Modal')) {
+        return { negated_present: rawConj[0], past: rawConj[1], negated_past: rawConj[2] };
+    }
+    if (posCategories.includes('Noun')) {
+        return { plural: rawConj[0] };
+    }
+
+    return { forms: rawConj }; // Generic fallback for adjectives/adverbs
 };
 
 /**
@@ -93,8 +133,8 @@ const validateAndClean = (row) => {
         .toLowerCase()
         .normalize('NFC');
 
-    const baseIng = (typeof row.inglisce_word === 'string' 
-        ? row.inglisce_word.replace(/[.,!?()[\]{}]/g, '').trim() 
+    const baseIng = (typeof row.inglisce_word === 'string'
+        ? row.inglisce_word.replace(/[.,!?()[\]{}]/g, '').trim()
         : row.inglisce_word).normalize('NFC');
 
     if (!baseEng) return Failure('English word sanitized to empty string');
@@ -106,13 +146,16 @@ const validateAndClean = (row) => {
 
     if (posCategories.length === 0) return Failure('No valid POS categories found');
 
-    return Success({ 
-        baseEng, 
-        baseIng, 
-        posCategories, 
-        // We must deeply normalize the raw Bash arrays/objects!
-        conjugations: deepNormalize(row.conjugations || {}), 
-        mappings: [] 
+    // NORMALIZE THE ARRAY TO AN OBJECT IMMEDIATELY
+    const rawConjugations = deepNormalize(row.conjugations || {});
+    const cleanConjugations = normalizeConjugations(baseEng, rawConjugations, posCategories);
+
+    return Success({
+        baseEng,
+        baseIng,
+        posCategories,
+        conjugations: cleanConjugations,
+        mappings: []
     });
 };
 
@@ -123,45 +166,37 @@ const generateMappings = (result) => {
     const mappings = [];
 
     posCategories.forEach(posCategory => {
+        // 1. Always map the base lemma
         mappings.push({ eng: baseEng, ing: baseIng, pos: posCategory, conj: conjugations });
 
-        if (Array.isArray(conjugations)) {
-            if (baseEng === 'be') {
-                const forms = ['am', 'is', 'are', 'was', 'were', 'been', 'being', "isn't", "aren't", "wasn't", "weren't"];
-                forms.forEach((form, i) => {
-                    if (conjugations[i]) {
-                        mappings.push({ eng: form, ing: conjugations[i], pos: 'Copula', conj: null });
-                        mappings.push({ eng: form, ing: conjugations[i], pos: 'Verb', conj: null });
+        // 2. Map explicit irregular overrides (be, do, have)
+        if (conjugations.explicit) {
+            Object.entries(conjugations.explicit).forEach(([engForm, ingForm]) => {
+                if (ingForm) {
+                    if (baseEng === 'be') {
+                        mappings.push({ eng: engForm, ing: ingForm, pos: 'Copula', conj: null });
+                        mappings.push({ eng: engForm, ing: ingForm, pos: 'Verb', conj: null });
+                    } else {
+                        mappings.push({ eng: engForm, ing: ingForm, pos: 'Verb', conj: null });
+                        mappings.push({ eng: engForm, ing: ingForm, pos: 'Auxiliary', conj: null });
                     }
-                });
-            } else if (baseEng === 'do') {
-                const forms = ['does', 'did', 'done', 'doing', "don't", "doesn't", "didn't"];
-                forms.forEach((form, i) => {
-                    if (conjugations[i]) {
-                        mappings.push({ eng: form, ing: conjugations[i], pos: 'Verb', conj: null });
-                        mappings.push({ eng: form, ing: conjugations[i], pos: 'Auxiliary', conj: null });
-                    }
-                });
-            } else if (baseEng === 'have') {
-                const forms = ['has', 'had', 'having', "haven't", "hasn't", "hadn't"];
-                forms.forEach((form, i) => {
-                    if (conjugations[i]) {
-                        mappings.push({ eng: form, ing: conjugations[i], pos: 'Verb', conj: null });
-                        mappings.push({ eng: form, ing: conjugations[i], pos: 'Auxiliary', conj: null });
-                    }
-                });
-            }
-        } 
-        else if (posCategory === 'Modal') {
+                }
+            });
+        }
+
+        // 3. Map Modals
+        if (posCategory === 'Modal') {
             const pastMap = { 'can': 'could', 'will': 'would', 'shall': 'should', 'may': 'might' };
             const pastEng = pastMap[baseEng];
-            const c = conjugations;
 
-            if (pastEng && c.past && !c.past.startsWith('-')) {
-                mappings.push({ eng: pastEng, ing: c.past, pos: 'Modal', conj: null });
+            const pastIng = conjugations.past && !conjugations.past.startsWith('-') ? conjugations.past : null;
+            const negPresent = conjugations.negated_present || (conjugations.third_singular && !conjugations.third_singular.startsWith('-') ? conjugations.third_singular : baseIng);
+
+            if (pastEng && pastIng) {
+                mappings.push({ eng: pastEng, ing: pastIng, pos: 'Modal', conj: null });
+                mappings.push({ eng: pastEng, ing: pastIng, pos: 'Auxiliary', conj: null });
             }
-            
-            const negPresent = (c.third_singular && !c.third_singular.startsWith('-')) ? c.third_singular : baseIng;
+
             if (baseEng === 'can') mappings.push({ eng: 'cannot', ing: negPresent, pos: 'Modal', conj: null });
         }
     });
