@@ -30,18 +30,9 @@ import { fileURLToPath } from 'node:url';
  * @property {string} eng - The target English lookup key
  * @property {string} ing - The resulting Inglisce translation
  * @property {string} pos - The specific grammatical role
+ * @property {Object|Array|null} conj - The conjugations attached to this specific POS
  */
 
-/**
- * @typedef {Object} CleanedData
- * @property {string} baseEng
- * @property {string} baseIng
- * @property {string[]} posCategories
- * @property {Object|Array} conjugations
- * @property {MappingInstruction[]} mappings
- */
-
-// Maps Bash/Dictionary shorthand POS tags to standard spaCy tags
 const posMap = {
     'verb': 'Verb', 'v': 'Verb', 'tr v': 'Verb', 'intr v': 'Verb',
     'noun': 'Noun', 'n': 'Noun', 'm n': 'Noun', 'f n': 'Noun',
@@ -60,7 +51,7 @@ const posMap = {
 
 /**
  * ============================================================================
- * RAILWAY PRIMITIVES (The Either Monad)
+ * RAILWAY PRIMITIVES & HELPERS
  * ============================================================================
  */
 
@@ -69,19 +60,31 @@ const Failure = (error) => ({ status: 'skipped', error });
 const pipe = (...fns) => (x) => fns.reduce((v, f) => f(v), x);
 
 /**
+ * Recursively applies NFC composition to arrays and objects.
+ * This guarantees macOS NFD bytes from etym-parse don't infect the transcription.
+ */
+const deepNormalize = (obj) => {
+    if (typeof obj === 'string') return obj.normalize('NFC');
+    if (Array.isArray(obj)) return obj.map(deepNormalize);
+    if (obj !== null && typeof obj === 'object') {
+        const normalized = {};
+        for (const key in obj) {
+            normalized[key] = deepNormalize(obj[key]);
+        }
+        return normalized;
+    }
+    return obj;
+};
+
+/**
  * ============================================================================
- * THE PIPELINE STEPS (Pure Composable Functions)
+ * THE PIPELINE STEPS
  * ============================================================================
  */
 
-/**
- * STEP 1: Validates and sanitizes the raw Bash row.
- * @param {RawRow} row 
- */
 const validateAndClean = (row) => {
     if (!row || !row.me_word || !row.inglisce_word) return Failure('Missing core words');
 
-    // Strict NFC composition to prevent downstream byte-level mismatches
     const baseEng = row.me_word.replace(/\([^)]+\)/g, '')
         .replace(/\[[^\]]+\]/g, '')
         .replace(/^to\s+/i, '')
@@ -107,15 +110,12 @@ const validateAndClean = (row) => {
         baseEng, 
         baseIng, 
         posCategories, 
-        conjugations: row.conjugations || {}, 
+        // We must deeply normalize the raw Bash arrays/objects!
+        conjugations: deepNormalize(row.conjugations || {}), 
         mappings: [] 
     });
 };
 
-/**
- * STEP 2: Generates the flat array of mappings for the dictionary entry.
- * Calculates explicit irregulars (like 'am' -> 'be') without mutating external state.
- */
 const generateMappings = (result) => {
     if (result.status === 'skipped') return result;
 
@@ -123,56 +123,51 @@ const generateMappings = (result) => {
     const mappings = [];
 
     posCategories.forEach(posCategory => {
-        // 1. Always map the base lemma
-        mappings.push({ eng: baseEng, ing: baseIng, pos: posCategory });
+        mappings.push({ eng: baseEng, ing: baseIng, pos: posCategory, conj: conjugations });
 
-        // 2. Map Class 6 Explicit Arrays (be, do, have)
         if (Array.isArray(conjugations)) {
             if (baseEng === 'be') {
                 const forms = ['am', 'is', 'are', 'was', 'were', 'been', 'being', "isn't", "aren't", "wasn't", "weren't"];
                 forms.forEach((form, i) => {
                     if (conjugations[i]) {
-                        mappings.push({ eng: form, ing: conjugations[i], pos: 'Copula' });
-                        mappings.push({ eng: form, ing: conjugations[i], pos: 'Verb' });
+                        mappings.push({ eng: form, ing: conjugations[i], pos: 'Copula', conj: null });
+                        mappings.push({ eng: form, ing: conjugations[i], pos: 'Verb', conj: null });
                     }
                 });
             } else if (baseEng === 'do') {
                 const forms = ['does', 'did', 'done', 'doing', "don't", "doesn't", "didn't"];
                 forms.forEach((form, i) => {
                     if (conjugations[i]) {
-                        mappings.push({ eng: form, ing: conjugations[i], pos: 'Verb' });
-                        mappings.push({ eng: form, ing: conjugations[i], pos: 'Auxiliary' });
+                        mappings.push({ eng: form, ing: conjugations[i], pos: 'Verb', conj: null });
+                        mappings.push({ eng: form, ing: conjugations[i], pos: 'Auxiliary', conj: null });
                     }
                 });
             } else if (baseEng === 'have') {
                 const forms = ['has', 'had', 'having', "haven't", "hasn't", "hadn't"];
                 forms.forEach((form, i) => {
                     if (conjugations[i]) {
-                        mappings.push({ eng: form, ing: conjugations[i], pos: 'Verb' });
-                        mappings.push({ eng: form, ing: conjugations[i], pos: 'Auxiliary' });
+                        mappings.push({ eng: form, ing: conjugations[i], pos: 'Verb', conj: null });
+                        mappings.push({ eng: form, ing: conjugations[i], pos: 'Auxiliary', conj: null });
                     }
                 });
             }
         } 
-        
-        // 3. Map Modals
         else if (posCategory === 'Modal') {
             const pastMap = { 'can': 'could', 'will': 'would', 'shall': 'should', 'may': 'might' };
             const pastEng = pastMap[baseEng];
             const c = conjugations;
 
             if (pastEng && c.past && !c.past.startsWith('-')) {
-                mappings.push({ eng: pastEng, ing: c.past, pos: 'Modal' });
+                mappings.push({ eng: pastEng, ing: c.past, pos: 'Modal', conj: null });
             }
             
             const negPresent = (c.third_singular && !c.third_singular.startsWith('-')) ? c.third_singular : baseIng;
-            if (baseEng === 'can') mappings.push({ eng: 'cannot', ing: negPresent, pos: 'Modal' });
+            if (baseEng === 'can') mappings.push({ eng: 'cannot', ing: negPresent, pos: 'Modal', conj: null });
         }
     });
 
     return Success({ ...result.value, mappings });
 };
-
 
 /**
  * ============================================================================
@@ -182,34 +177,21 @@ const generateMappings = (result) => {
 
 export function buildBrain(dataset) {
     const processRow = pipe(validateAndClean, generateMappings);
-    
-    // Process all rows into a pure array of instructions
     const processedRows = dataset.map(processRow);
 
-    // Fold the instructions into the final Brain object
-    // Note: We use a local mutating accumulator here strictly for performance.
-    // Deep-copying an object with 10,000+ keys on every reduce iteration would freeze the build.
-    // Because the mutation is isolated inside this pure function boundary, it remains functionally safe.
     const brain = processedRows.reduce((acc, result) => {
         if (result.status === 'skipped') return acc;
+        const { mappings } = result.value;
 
-        const { baseEng, conjugations, mappings } = result.value;
-
-        // Apply all generated mappings
-        mappings.forEach(({ eng, ing, pos }) => {
+        mappings.forEach(({ eng, ing, pos, conj }) => {
             acc[eng] = acc[eng] || {};
             acc[eng][pos] = ing;
-        });
 
-        // Attach conjugations to the lemma root for downstream JIT morphology
-        if (conjugations && Object.keys(conjugations).length > 0) {
-            if (Array.isArray(conjugations)) {
-                acc[baseEng].conjugations = conjugations;
-            } else {
-                acc[baseEng].conjugations = acc[baseEng].conjugations || {};
-                Object.assign(acc[baseEng].conjugations, conjugations);
+            // Namespaced Conjugation Assignment!
+            if (conj && Object.keys(conj).length > 0) {
+                acc[eng][`${pos}_conjugations`] = conj;
             }
-        }
+        });
 
         return acc;
     }, {});
