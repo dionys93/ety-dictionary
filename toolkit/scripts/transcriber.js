@@ -82,7 +82,7 @@ const matchDictionary = (token, brain) => {
         }
     }
 
-    // THE FIX: Only skip morphology if it's a distinct irregular form (like "are"), NOT the base lemma (like "work").
+    // Only skip morphology if it's a distinct irregular form (like "are"), NOT the base lemma (like "work").
     const isPreConjugated = !!brain[rawWord] && rawWord !== searchWord;
 
     return baseReplacement 
@@ -90,8 +90,6 @@ const matchDictionary = (token, brain) => {
         : Failure(searchWord);
 };
 
-
-// ... existing matchDictionary function ...
 
 const applyMorphology = (result) => {
     if (result.status === 'missing' || result.value.isBypass || result.value.isPreConjugated) return result;
