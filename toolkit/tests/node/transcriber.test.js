@@ -34,8 +34,8 @@ describe('resolveForm (Morphological Suffix Resolver)', () => {
         expect(resolveForm('-ment', 'state')).toBe('statement');
     });
 
-    it('handles the -ie to -y gerund swap (e.g. tie -> tying)', () => {
-        expect(resolveForm('-ing', 'tie')).toBe('tying');
+    it('handles the -ie to -y gerund swap (e.g. bie -> bying)', () => {
+        expect(resolveForm('-ing', 'bie', true)).toBe('bying');
     });
 
     it('forces silent -e drop for all gerunds even if suffix starts with consonant', () => {
