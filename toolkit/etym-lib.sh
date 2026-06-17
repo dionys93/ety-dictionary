@@ -96,13 +96,14 @@ etym-parse() {
     awk '
     BEGIN { RS = ""; FS = "\n" }
 
-    # ── Helpers ────────────────────────────────────────────────────────────
+    # =========================================================================
+    # 1. UTILITY FUNCTIONS
+    # =========================================================================
 
     function is_verb(pos) {
         return (pos ~ /^(v|tr v|intr v|aux|auxiliary|modal)$/)
     }
 
-    # Escapes double-quotes for safe JSON embedding
     function esc(s) {
         gsub(/"/, "\\\"", s)
         return s
@@ -110,36 +111,33 @@ etym-parse() {
 
     function verb_conj_json(present, third_sing, past, participle, gerund) {
         return "{" \
-            "\"present\":"        "\"" esc(present)    "\"," \
-            "\"third_singular\":" "\"" esc(third_sing) "\"," \
+            "\"present\":"        "\"" esc(present)     "\"," \
+            "\"third_singular\":" "\"" esc(third_sing)  "\"," \
             "\"past\":"           "\"" esc(past)        "\"," \
             "\"participle\":"     "\"" esc(participle)  "\"," \
             "\"gerund\":"         "\"" esc(gerund)      "\"" \
         "}"
     }
 
-    # ── Main stanza loop ────────────────────────────────────────────────────
+    # =========================================================================
+    # 2. EXTRACTION & CLEANING FUNCTIONS
+    # =========================================================================
 
-    {
+    # Reads all lines in the stanza and populates global arrays (etymology, sources)
+    function parse_stanza_lines(num_fields,    i, line, lang, form) {
         delete ef; delete el; delete src_arr
-        n_etym = 0; n_src = 0
-        reformed = ""
+        n_etym = 0; n_src = 0; reformed = ""
 
-        # ---- Classify each line ----
-        for (i = 1; i <= NF; i++) {
+        for (i = 1; i <= num_fields; i++) {
             line = $i
             gsub(/\r/, "", line)
             if (line == "") continue
 
             if (line ~ /^http/) {
                 src_arr[++n_src] = line
-
             } else if (line ~ /\([a-z]/ && line !~ /\[[A-Z]/) {
-                # Reformed line: has (pos) tag, no [LANG] tag
                 reformed = line
-
             } else {
-                # Etymology chain entry
                 lang = ""
                 if (match(line, /\[([A-Z]+)\]/, m)) lang = m[1]
                 form = line
@@ -152,136 +150,149 @@ etym-parse() {
                 }
             }
         }
+    }
 
-        if (reformed == "") next
-
-        # ---- Parse reformed line ----
-        # Strip trailing (pos) tag and capture it
+    function extract_pos(line,    pm, pos) {
         pos = ""
-        if (match(reformed, /\(([a-z][a-z ,]*)\)[ \t]*$/, pm)) pos = pm[1]
+        if (match(line, /\(([a-z][a-z ,]*)\)[ \t]*$/, pm)) pos = pm[1]
+        return pos
+    }
 
-        temp = reformed
-        gsub(/\([a-z][a-z ,]*\)[ \t]*$/, "", temp)     # Remove trailing (pos)
-        gsub(/^[ \t]+|[ \t]+$/, "", temp)       # Trim
-        sub(/^[tT][oO][ \t]+/, "", temp)        # Strip infinitive "to "
+    function clean_reformed_line(line) {
+        gsub(/\([a-z][a-z ,]*\)[ \t]*$/, "", line) # Remove trailing (pos)
+        gsub(/^[ \t]+|[ \t]+$/, "", line)          # Trim
+        sub(/^[tT][oO][ \t]+/, "", line)           # Strip infinitive "to "
+        return line
+    }
 
-        # Tokenize — split on whitespace and commas
-        n_raw = split(temp, raw_tok, /[ \t,]+/)
-
-        # Compact out any empty tokens left by the split
+    function tokenize_line(clean_line,    n_raw, raw_tok, i) {
+        delete tokens
+        n_raw = split(clean_line, raw_tok, /[ \t,]+/)
         n_tok = 0
         for (i = 1; i <= n_raw; i++) {
             if (raw_tok[i] != "") tokens[++n_tok] = raw_tok[i]
         }
+        return n_tok
+    }
 
-        # tokens[1] is always the Inglisce root word
-        inglisce_word = tokens[1]
-        gsub(/[,.]$/, "", inglisce_word)
-
-        # ---- Build conjugations ----
-        conj_json = ""
-
-        if (is_verb(pos)) {
-
-            # ── Class 4 & 5: Two-stem -er/-ir ──────────────────────────────
-            if (n_tok >= 2 && tokens[2] ~ /\(s$/) {
-                present_stem = substr(tokens[2], 1, length(tokens[2]) - 2)
-                third_sing   = present_stem "s"
-
-                if (n_tok >= 5) {
-                    past_form = tokens[3]
-                    part_form = tokens[4]
-                    gerund    = tokens[5]
-                } else {
-                    past_form = (n_tok >= 3) ? tokens[3] : ""
-                    part_form = past_form
-                    gerund    = (n_tok >= 4) ? tokens[4] : ""
-                }
-                conj_json = verb_conj_json(present_stem, third_sing, past_form, part_form, gerund)
-
-            # ── Classes 1, 2, 3, 6: Standard, irregular, and explicit arrays ─
-            } else {
-                if (n_tok > 5) {
-                    # Class 6: Fully explicit array (e.g., "to be", "to do")
-                    conj_json = "["
-                    for (i = 2; i <= n_tok; i++) {
-                        if (i > 2) conj_json = conj_json ","
-                        conj_json = conj_json "\"" esc(tokens[i]) "\""
-                    }
-                    conj_json = conj_json "]"
-                } else {
-                    third_sing = (n_tok >= 2) ? tokens[2] : "-s"
-                    past_form  = ""
-                    part_form  = ""
-                    gerund     = ""
-
-                    if (n_tok == 3) {
-                        gerund = tokens[3]
-                    } else if (n_tok == 4) {
-                        past_form = tokens[3]
-                        part_form = tokens[3]
-                        gerund    = tokens[4]
-                    } else if (n_tok == 5) {
-                        past_form = tokens[3]
-                        part_form = tokens[4]
-                        gerund    = tokens[5]
-                    }
-                    conj_json = verb_conj_json("", third_sing, past_form, part_form, gerund)
-                }
-            }
-
-        } else {
-            # ── Non-verb: raw array ─────────────────────────────────────────
-            conj_json = "["
-            first_f = 1
-            for (i = 2; i <= n_tok; i++) {
-                t = tokens[i]
-                if (t == "") continue
-                if (!first_f) conj_json = conj_json ","
-                conj_json = conj_json "\"" esc(t) "\""
-                first_f = 0
-            }
-            conj_json = conj_json "]"
-        }
-
-        # ---- Resolve me_word: [ME] > [MI] > last ancestor ----
+    function resolve_me_word(num_etym,    i, me_word, mw) {
         me_word = ""
-        for (i = 1; i <= n_etym; i++) {
-            if (el[i] == "ME") { me_word = ef[i]; break }
-        }
+        for (i = 1; i <= num_etym; i++) { if (el[i] == "ME") { me_word = ef[i]; break } }
         if (me_word == "") {
-            for (i = 1; i <= n_etym; i++) {
-                if (el[i] == "MI") { me_word = ef[i]; break }
-            }
+            for (i = 1; i <= num_etym; i++) { if (el[i] == "MI") { me_word = ef[i]; break } }
         }
-        if (me_word == "") me_word = ef[n_etym]
+        if (me_word == "") me_word = ef[num_etym]
 
         sub(/^[tT][oO][ \t]+/, "", me_word)
         split(me_word, mw, /[ \t,]+/)
-        me_word = mw[1]
+        return mw[1]
+    }
 
-        # ---- Build etymology JSON array ----
-        etym_json = "["
-        for (i = 1; i <= n_etym; i++) {
-            f = ef[i]; l = el[i]
-            if (i > 1) etym_json = etym_json ","
-            etym_json = etym_json "{\"form\":\"" esc(f) "\",\"lang\":\"" esc(l) "\"}"
+    # =========================================================================
+    # 3. JSON BUILDER FUNCTIONS
+    # =========================================================================
+
+    function build_verb_conjugations(num_tokens,    pres, ts, past, part, ger, json, i) {
+        # Class 4 & 5: Two-stem -er/-ir
+        if (num_tokens >= 2 && tokens[2] ~ /\(s$/) {
+            pres = substr(tokens[2], 1, length(tokens[2]) - 2)
+            ts   = pres "s"
+            if (num_tokens >= 5) {
+                past = tokens[3]; part = tokens[4]; ger = tokens[5]
+            } else {
+                past = (num_tokens >= 3) ? tokens[3] : ""
+                part = past
+                ger  = (num_tokens >= 4) ? tokens[4] : ""
+            }
+            return verb_conj_json(pres, ts, past, part, ger)
+        } 
+        
+        # Class 6: Fully explicit array (e.g., "to be", "to do")
+        if (num_tokens > 5) {
+            json = "["
+            for (i = 2; i <= num_tokens; i++) {
+                if (i > 2) json = json ","
+                json = json "\"" esc(tokens[i]) "\""
+            }
+            return json "]"
+        } 
+        
+        # Classes 1, 2, 3: Standard and irregular
+        ts   = (num_tokens >= 2) ? tokens[2] : "-s"
+        past = ""; part = ""; ger = ""
+
+        if (num_tokens == 3) {
+            ger = tokens[3]
+        } else if (num_tokens == 4) {
+            past = tokens[3]; part = tokens[3]; ger = tokens[4]
+        } else if (num_tokens == 5) {
+            past = tokens[3]; part = tokens[4]; ger = tokens[5]
         }
-        etym_json = etym_json "]"
+        return verb_conj_json("", ts, past, part, ger)
+    }
 
-        # ---- Build sources JSON array ----
-        src_json = "["
-        for (i = 1; i <= n_src; i++) {
-            if (i > 1) src_json = src_json ","
-            src_json = src_json "\"" src_arr[i] "\""
+    function build_nonverb_conjugations(num_tokens,    json, first_f, i) {
+        json = "["
+        first_f = 1
+        for (i = 2; i <= num_tokens; i++) {
+            if (tokens[i] == "") continue
+            if (!first_f) json = json ","
+            json = json "\"" esc(tokens[i]) "\""
+            first_f = 0
         }
-        src_json = src_json "]"
+        return json "]"
+    }
 
-        # ---- Emit JSONL ----
-        printf "{\"me_word\":\"%s\",\"inglisce_word\":\"%s\",\"pos\":\"%s\",\"conjugations\":%s,\"etymology\":%s,\"sources\":%s}\n", esc(me_word), esc(inglisce_word), esc(pos), conj_json, etym_json, src_json
+    function build_conjugations_json(num_tokens, pos) {
+        if (is_verb(pos)) return build_verb_conjugations(num_tokens)
+        return build_nonverb_conjugations(num_tokens)
+    }
+
+    function build_etymology_json(num_etym,    json, i) {
+        json = "["
+        for (i = 1; i <= num_etym; i++) {
+            if (i > 1) json = json ","
+            json = json "{\"form\":\"" esc(ef[i]) "\",\"lang\":\"" esc(el[i]) "\"}"
+        }
+        return json "]"
+    }
+
+    function build_sources_json(num_src,    json, i) {
+        json = "["
+        for (i = 1; i <= num_src; i++) {
+            if (i > 1) json = json ","
+            json = json "\"" src_arr[i] "\""
+        }
+        return json "]"
+    }
+
+    # =========================================================================
+    # 4. THE MAIN PIPELINE (A -> B -> C)
+    # =========================================================================
+
+    {
+        # --- Step A: Parse raw lines ---
+        parse_stanza_lines(NF)
+        if (reformed == "") next
+
+        # --- Step B: Clean & Extract ---
+        pos_tag    = extract_pos(reformed)
+        clean_line = clean_reformed_line(reformed)
+        num_tokens = tokenize_line(clean_line)
+        
+        inglisce_word = tokens[1]
+        gsub(/[,.]$/, "", inglisce_word)
+        me_word = resolve_me_word(n_etym)
+
+        # --- Step C: Build JSON payload ---
+        conj_json = build_conjugations_json(num_tokens, pos_tag)
+        etym_json = build_etymology_json(n_etym)
+        src_json  = build_sources_json(n_src)
+
+        # --- Step D: Emit ---
+        printf "{\"me_word\":\"%s\",\"inglisce_word\":\"%s\",\"pos\":\"%s\",\"conjugations\":%s,\"etymology\":%s,\"sources\":%s}\n", esc(me_word), esc(inglisce_word), esc(pos_tag), conj_json, etym_json, src_json
     }' "$file"
 }
-  
 
 # =============================================================================
 # BROWSING & LOOKUP
