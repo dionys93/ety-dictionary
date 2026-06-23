@@ -14,6 +14,35 @@ const { content, ext, isRoot, slug } = Astro.props;
 
 // --- DATA PROCESSING ---
 const parsedContent = (ext === '.md' && content) ? marked.parse(content) : content;
+
+// --- NEW: CUSTOM DICTIONARY PARSER ---
+// Strictly functional: No mutable state, uses a ternary to check the extension
+const parsedStanzas = (ext === '.txt' && content) 
+    ? content
+        // 1. Split into stanzas
+        .split(/\n\s*\n/)
+        .filter(s => s.trim().length > 0)
+        // 2. Map each stanza into a structured object
+        .map(stanza => {
+            const lines = stanza.trim().split('\n').map(l => l.trim()).filter(l => l.length > 0);
+            
+            // Separate URLs from text
+            const urls = lines.filter(line => line.startsWith('http'));
+            const textLines = lines.filter(line => !line.startsWith('http'));
+
+            // Reverse-index targeting
+            const inglisceLine = textLines[textLines.length - 1] || '';
+            const englishLine = textLines[textLines.length - 2] || '';
+            const etymology = textLines.slice(0, textLines.length - 2);
+
+            // Extract POS tag using regex and ternary operators
+            const posMatch = inglisceLine.match(/(.*)\s+\((.*)\)$/);
+            const inglisce = posMatch ? posMatch[1] : inglisceLine;
+            const pos = posMatch ? posMatch[2] : '';
+
+            return { englishLine, inglisce, pos, etymology, urls };
+        })
+    : []; // Fallback to empty array if it's not a .txt file
 ---
 
 <Container className="contentContainer">
@@ -26,7 +55,51 @@ const parsedContent = (ext === '.md' && content) ? marked.parse(content) : conte
                     {ext === '.md' ? (
                         <div class="markdown-body" set:html={parsedContent} />
                     ) : (
-                        <pre style="white-space: pre-wrap; font-family: inherit;">{content}</pre>
+                        
+                        /* --- NEW DICTIONARY UI INSTEAD OF <pre> --- */
+                        <div class="dictionary-feed">
+                            {parsedStanzas.map((entry) => (
+                                <div class="dict-card">
+                                    
+                                    {/* Header: Inglisce Word + POS */}
+                                    <div class="dict-header">
+                                        <h2 class="dict-word">{entry.inglisce}</h2>
+                                        {entry.pos && <span class="dict-pos">{entry.pos}</span>}
+                                    </div>
+                                    
+                                    {/* English Translation */}
+                                    <div class="dict-english">
+                                        <span class="dict-label">Translation:</span> {entry.englishLine}
+                                    </div>
+
+                                    {/* Etymology (Only renders if it exists) */}
+                                    {entry.etymology.length > 0 && (
+                                        <div class="dict-etymology">
+                                            <span class="dict-label">Evolution:</span>
+                                            <ul>
+                                                {entry.etymology.map((ety) => <li>{ety}</li>)}
+                                            </ul>
+                                        </div>
+                                    )}
+
+                                    {/* Sources (Auto-cleans the URL for display) */}
+                                    {entry.urls.length > 0 && (
+                                        <div class="dict-sources">
+                                            <span class="dict-label">Sources:</span>
+                                            <div class="dict-url-list">
+                                                {entry.urls.map((url) => (
+                                                    <a href={url} target="_blank" rel="noopener noreferrer">
+                                                        {url.replace('https://www.', '').replace('https://', '').split('/')[0]}
+                                                    </a>
+                                                ))}
+                                            </div>
+                                        </div>
+                                    )}
+
+                                </div>
+                            ))}
+                        </div>
+
                     )}
                 </ScrollBar>
             </div>
@@ -45,8 +118,9 @@ const parsedContent = (ext === '.md' && content) ? marked.parse(content) : conte
     </Column>
 </Container>
 
-{/* --- GLOBAL STYLES FOR MARKDOWN RENDERER --- */}
+{/* --- GLOBAL STYLES --- */}
 <style is:global>
+  /* --- MARKDOWN RENDERER STYLES --- */
   .markdown-body table {
     border-collapse: collapse;
     width: 100%;
@@ -67,5 +141,89 @@ const parsedContent = (ext === '.md' && content) ? marked.parse(content) : conte
   /* Optional: Striping for easier reading on wide tables */
   .markdown-body tr:nth-child(even) {
     background-color: #f9fafb;
+  }
+
+  /* --- DICTIONARY UI STYLES --- */
+  .dictionary-feed {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .dict-card {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+
+  .dict-header {
+    display: flex;
+    align-items: baseline;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #f3f4f6;
+    padding-bottom: 0.75rem;
+  }
+
+  .dict-word {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #111827;
+    margin: 0;
+  }
+
+  .dict-pos {
+    font-size: 0.875rem;
+    font-style: italic;
+    color: #4b5563;
+    background-color: #f3f4f6;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+  }
+
+  .dict-label {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    color: #9ca3af;
+    margin-right: 0.5rem;
+  }
+
+  .dict-english {
+    font-size: 1.125rem;
+    color: #1f2937;
+    margin-bottom: 1rem;
+  }
+
+  .dict-etymology ul {
+    margin: 0.25rem 0 1rem 1.5rem;
+    padding: 0;
+    color: #4b5563;
+    font-size: 0.95rem;
+  }
+
+  .dict-url-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 0.5rem;
+  }
+
+  .dict-url-list a {
+    font-size: 0.85rem;
+    color: #2563eb;
+    text-decoration: none;
+    background-color: #eff6ff;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #bfdbfe;
+    transition: background-color 0.2s ease;
+  }
+
+  .dict-url-list a:hover {
+    background-color: #dbeafe;
   }
 </style>
