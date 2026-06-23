@@ -2388,6 +2388,42 @@
       "gerund": "-ing"
     }
   },
+  "temporary": {
+    "Adjective": "temporairy",
+    "Adjective_conjugations": {
+      "forms": []
+    }
+  },
+  "temporal": {
+    "Adjective": "tempóral",
+    "Adjective_conjugations": {
+      "forms": []
+    }
+  },
+  "temporality": {
+    "Noun": "temporaletie",
+    "Noun_conjugations": {
+      "plural": "-is"
+    }
+  },
+  "temporaneous": {
+    "Adjective": "temporânieus",
+    "Adjective_conjugations": {
+      "forms": [
+        "-ly"
+      ]
+    }
+  },
+  "temporize": {
+    "Verb": "temporyse",
+    "Verb_conjugations": {
+      "present": "",
+      "third_singular": "-s",
+      "past": "-d",
+      "participle": "-d",
+      "gerund": "-ing"
+    }
+  },
   "tromba": {
     "Noun": "trombone",
     "Noun_conjugations": {
@@ -3103,13 +3139,17 @@
     }
   },
   "appalachian": {
-    "Adjective": "Apalâcian",
+    "Adjective": "Apalac̃an",
     "Adjective_conjugations": {
       "forms": []
     }
   },
   "appalachia": {
     "Noun": "Apalac̃a",
+    "Noun_conjugations": {}
+  },
+  "apalachee": {
+    "Noun": "apalac̃ie",
     "Noun_conjugations": {}
   },
   "australia": {
@@ -5325,6 +5365,18 @@
     "Noun": "ante",
     "Noun_conjugations": {
       "plural": "ànts"
+    }
+  },
+  "adversary": {
+    "Noun": "adversarie",
+    "Noun_conjugations": {
+      "plural": "-is"
+    }
+  },
+  "adversarial": {
+    "Adjective": "adversârial",
+    "Adjective_conjugations": {
+      "forms": []
     }
   },
   "atrocious": {
@@ -21172,6 +21224,20 @@
       "gerund": "-ing"
     }
   },
+  "heed": {
+    "Verb": "hiede",
+    "Verb_conjugations": {
+      "present": "",
+      "third_singular": "-s",
+      "past": "-d",
+      "participle": "-d",
+      "gerund": "-ing"
+    },
+    "Noun": "hiede",
+    "Noun_conjugations": {
+      "plural": "hieds"
+    }
+  },
   "heft": {
     "Verb": "hefte",
     "Verb_conjugations": {
@@ -34269,20 +34335,20 @@
   "shall": {
     "Modal": "sial",
     "Modal_conjugations": {
-      "negated_present": "seûd",
-      "past": "sian't",
+      "past": "seûd",
+      "negated_present": "sian't",
       "negated_past": "seûdn't"
     },
     "Auxiliary": "sial",
     "Auxiliary_conjugations": {
-      "negated_present": "seûd",
-      "past": "sian't",
+      "past": "seûd",
+      "negated_present": "sian't",
       "negated_past": "seûdn't"
     }
   },
   "should": {
-    "Modal": "sian't",
-    "Auxiliary": "sian't"
+    "Modal": "seûd",
+    "Auxiliary": "seûd"
   },
   "speak": {
     "Verb": "spieche",
@@ -45238,14 +45304,14 @@
   "will": {
     "Modal": "uill",
     "Modal_conjugations": {
-      "negated_present": "uon't",
-      "past": "oûd",
+      "past": "uon't",
+      "negated_present": "oûd",
       "negated_past": "oûdn't"
     },
     "Auxiliary": "uill",
     "Auxiliary_conjugations": {
-      "negated_present": "uon't",
-      "past": "oûd",
+      "past": "uon't",
+      "negated_present": "oûd",
       "negated_past": "oûdn't"
     },
     "Noun": "uille",
@@ -45254,8 +45320,8 @@
     }
   },
   "would": {
-    "Modal": "oûd",
-    "Auxiliary": "oûd"
+    "Modal": "uon't",
+    "Auxiliary": "uon't"
   },
   "west": {
     "Noun": "oeste",
@@ -53326,11 +53392,17 @@
   "contrary": {
     "Adjective": "contrairy",
     "Adjective_conjugations": {
-      "plural": "contrarie"
+      "forms": []
     },
-    "Noun": "contrairy",
+    "Noun": "contrarie",
     "Noun_conjugations": {
-      "plural": "contrarie"
+      "plural": "-is"
+    }
+  },
+  "contrarily": {
+    "Adverb": "contrârily",
+    "Adverb_conjugations": {
+      "forms": []
     }
   },
   "cable": {
@@ -53856,14 +53928,14 @@
   "can": {
     "Modal": "can",
     "Modal_conjugations": {
-      "negated_present": "coûd",
-      "past": "can't",
+      "past": "coûd",
+      "negated_present": "can't",
       "negated_past": "coûdn't"
     },
     "Auxiliary": "can",
     "Auxiliary_conjugations": {
-      "negated_present": "coûd",
-      "past": "can't",
+      "past": "coûd",
+      "negated_present": "can't",
       "negated_past": "coûdn't"
     },
     "Noun": "cane",
@@ -53880,11 +53952,11 @@
     }
   },
   "could": {
-    "Modal": "can't",
-    "Auxiliary": "can't"
+    "Modal": "coûd",
+    "Auxiliary": "coûd"
   },
   "cannot": {
-    "Modal": "coûd"
+    "Modal": "can't"
   },
   "callous": {
     "Adjective": "caleus",
