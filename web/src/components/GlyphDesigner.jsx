@@ -4,14 +4,11 @@ const CATEGORIES = [
   { id: 'Korean', glyph: '한' },
   { id: 'Katakana', glyph: 'ア' },
   { id: 'Kanji', glyph: '漢' },
-  { id: 'Custom', glyph: '✎' } 
+  { id: 'Custom', glyph: '✎' }
 ];
 
-// --- NEW: BUILT-IN REFERENCE LIBRARY ---
-// These are hardcoded starter vectors that will always be available to drag and drop!
 const REFERENCE_GLYPHS = {
   'Korean': [
-    // --- CONSONANTS ---
     { name: 'giyeok (ㄱ)', isRef: true, paths: ["M 150 150 L 350 150 L 350 350"] },
     { name: 'nieun (ㄴ)', isRef: true, paths: ["M 150 150 L 150 350 L 350 350"] },
     { name: 'digeut (ㄷ)', isRef: true, paths: ["M 150 150 L 350 150 M 150 150 L 150 350 L 350 350"] },
@@ -26,8 +23,6 @@ const REFERENCE_GLYPHS = {
     { name: 'tieut (ㅌ)', isRef: true, paths: ["M 150 150 L 350 150 M 150 250 L 350 250 M 150 150 L 150 350 L 350 350"] },
     { name: 'pieup (ㅍ)', isRef: true, paths: ["M 150 150 L 350 150 M 150 350 L 350 350 M 200 150 L 200 350 M 300 150 L 300 350"] },
     { name: 'hieut (ㅎ)', isRef: true, paths: ["M 225 100 L 275 100 M 175 150 L 325 150 M 250 200 A 75 75 0 1 0 250 350 A 75 75 0 1 0 250 200"] },
-
-    // --- VOWELS ---
     { name: 'a (ㅏ)', isRef: true, paths: ["M 250 100 L 250 400 M 250 250 L 350 250"] },
     { name: 'ya (ㅑ)', isRef: true, paths: ["M 250 100 L 250 400 M 250 200 L 350 200 M 250 300 L 350 300"] },
     { name: 'eo (ㅓ)', isRef: true, paths: ["M 250 100 L 250 400 M 150 250 L 250 250"] },
@@ -50,15 +45,72 @@ const REFERENCE_GLYPHS = {
   ]
 };
 
+// --- PURE FUNCTIONAL VECTOR MATH UTILITIES ---
+
+// 1. Extracts all X/Y coordinate pairs from a single SVG path string immutably
+const extractCoordinates = (pathString) =>
+  (pathString.match(/([MLQCZmlqczA])([^MLQCZmlqczA]*)/g) || [])
+    .filter(cmd => cmd[0].toUpperCase() !== 'Z')
+    .flatMap(cmd => {
+      const letter = cmd[0].toUpperCase();
+      const nums = cmd.slice(1).trim().split(/\s+|,/).filter(n => n !== '').map(Number);
+
+      // Reduce numbers into {x, y} coordinate objects based on SVG command rules
+      return letter === 'A'
+        ? nums.reduce((acc, _, i) =>
+          (i % 7 === 5 && nums[i + 1] !== undefined) ? [...acc, { x: nums[i], y: nums[i + 1] }] : acc
+          , [])
+        : nums.reduce((acc, _, i) =>
+          (i % 2 === 0 && nums[i + 1] !== undefined) ? [...acc, { x: nums[i], y: nums[i + 1] }] : acc
+          , []);
+    });
+
+// 2. Finds the exact mathematical center using pure array mapping
+const getBoundingBoxCenter = (paths) => {
+  const coords = paths.flatMap(extractCoordinates);
+
+  // Fallback to center canvas if empty
+  if (coords.length === 0) return { cx: 250, cy: 250 };
+
+  const xs = coords.map(c => c.x);
+  const ys = coords.map(c => c.y);
+
+  return {
+    cx: (Math.min(...xs) + Math.max(...xs)) / 2,
+    cy: (Math.min(...ys) + Math.max(...ys)) / 2
+  };
+};
+
+// 3. Rewrites the SVG path string immutably without loops
+const translatePath = (pathString, dx, dy) =>
+  pathString.replace(/([MLQCZmlqczA])([^MLQCZmlqczA]*)/g, (_, command, args) => {
+    if (command.toUpperCase() === 'Z') return command;
+
+    const nums = args.trim().split(/\s+|,/).filter(n => n !== '').map(Number);
+    if (nums.length === 0) return command;
+
+    const isArc = command.toUpperCase() === 'A';
+
+    // Map over the numbers and apply shifts conditionally based on index modulus
+    const shifted = nums.map((num, i) =>
+      isArc
+        ? (i % 7 === 5 ? num + dx : (i % 7 === 6 ? num + dy : num))
+        : (i % 2 === 0 ? num + dx : num + dy)
+    );
+
+    return `${command} ${shifted.join(' ')} `;
+  }).trim();
+
+
 export default function GlyphDesigner() {
   const [paths, setPaths] = useState([]);
   const [currentPath, setCurrentPath] = useState('');
   const [glyphName, setGlyphName] = useState('');
-  
+
   const [glyphCategory, setGlyphCategory] = useState(CATEGORIES[0].id);
-  const [activeTab, setActiveTab] = useState(CATEGORIES[0].id); 
-  
-  const [library, setLibrary] = useState([]); 
+  const [activeTab, setActiveTab] = useState(CATEGORIES[0].id);
+
+  const [library, setLibrary] = useState([]);
   const isDrawing = useRef(false);
 
   const fetchLibrary = async () => {
@@ -115,12 +167,12 @@ export default function GlyphDesigner() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(glyphData),
       });
-      
+
       const rawText = await response.text();
       if (response.ok) {
         setGlyphName('');
         setActiveTab(glyphCategory);
-        fetchLibrary(); 
+        fetchLibrary();
       } else {
         alert(`Error saving: ${JSON.parse(rawText).error}`);
       }
@@ -128,7 +180,7 @@ export default function GlyphDesigner() {
       alert("Failed to reach the local server.");
     }
   };
-  
+
   const handleDragStart = (e, glyphPaths) => {
     e.dataTransfer.setData("application/json", JSON.stringify(glyphPaths));
     e.dataTransfer.effectAllowed = "copy";
@@ -139,40 +191,58 @@ export default function GlyphDesigner() {
     e.dataTransfer.dropEffect = "copy";
   };
 
+  // --- UPGRADED DROP HANDLER ---
   const handleDrop = (e) => {
     e.preventDefault();
     const data = e.dataTransfer.getData("application/json");
     if (data) {
       const droppedPaths = JSON.parse(data);
-      setPaths((prev) => [...prev, ...droppedPaths]);
+
+      // 1. Get the viewport bounds of the SVG canvas
+      const svgRect = e.currentTarget.getBoundingClientRect();
+
+      // 2. Calculate exactly where the mouse dropped the item relative to the SVG
+      const dropX = e.clientX - svgRect.left;
+      const dropY = e.clientY - svgRect.top;
+
+      // 3. Find the mathematical center of the glyph being dragged
+      const { cx, cy } = getBoundingBoxCenter(droppedPaths);
+
+      // 4. Calculate the distance (delta) to shift the paths
+      const dx = dropX - cx;
+      const dy = dropY - cy;
+
+      // 5. Rewrite the paths with the new offset
+      const shiftedPaths = droppedPaths.map(p => translatePath(p, dx, dy));
+
+      setPaths((prev) => [...prev, ...shiftedPaths]);
     }
   };
 
-  // --- NEW: Merge references with local saved files for the active tab ---
   const activeReferences = REFERENCE_GLYPHS[activeTab] || [];
   const activeLocalFiles = library.filter(glyph => (glyph.category === activeTab) || (!glyph.category && activeTab === 'Custom'));
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', width: '100%' }}>
-      
+
       {/* TOOLBAR */}
       <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', backgroundColor: '#f9fafb', padding: '1rem', borderRadius: '8px', border: '1px solid #e5e7eb' }}>
-        <select 
-          value={glyphCategory} 
+        <select
+          value={glyphCategory}
           onChange={(e) => setGlyphCategory(e.target.value)}
           style={{ padding: '0.5rem', borderRadius: '4px', border: '1px solid #d1d5db', backgroundColor: '#fff', fontSize: '1rem' }}
         >
           {CATEGORIES.map(cat => <option key={cat.id} value={cat.id}>{cat.glyph} {cat.id}</option>)}
         </select>
 
-        <input 
-          type="text" 
-          placeholder="Enter glyph name..." 
+        <input
+          type="text"
+          placeholder="Enter glyph name..."
           value={glyphName}
           onChange={(e) => setGlyphName(e.target.value)}
           style={{ padding: '0.5rem', borderRadius: '4px', border: '1px solid #d1d5db', flexGrow: 1, maxWidth: '300px' }}
         />
-        
+
         <button onClick={handleExport} style={{ padding: '0.5rem 1.5rem', cursor: 'pointer', backgroundColor: '#2563eb', color: 'white', border: 'none', borderRadius: '4px', fontWeight: 'bold' }}>
           Save to Library
         </button>
@@ -182,12 +252,12 @@ export default function GlyphDesigner() {
       </div>
 
       <div style={{ display: 'flex', gap: '2rem', alignItems: 'flex-start' }}>
-        
+
         {/* SIDEBAR: LIBRARY & TABS */}
         <div style={{ width: '220px', display: 'flex', flexDirection: 'column', gap: '1rem', backgroundColor: '#f9fafb', padding: '1rem', borderRadius: '8px', border: '1px solid #e5e7eb' }}>
-          
+
           <h3 style={{ margin: 0, fontSize: '1.1rem', color: '#374151' }}>Library</h3>
-          
+
           <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', justifyContent: 'space-between' }}>
             {CATEGORIES.map(cat => (
               <button
@@ -212,15 +282,14 @@ export default function GlyphDesigner() {
 
           {/* RENDER LIBRARY (References + User Saved) */}
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '0.5rem', maxHeight: '500px', overflowY: 'auto' }}>
-            
-            {/* 1. Map through standard Base References */}
+
             {activeReferences.map((glyph, index) => (
-              <div 
+              <div
                 key={`ref-${index}`}
-                draggable 
+                draggable
                 onDragStart={(e) => handleDragStart(e, glyph.paths)}
-                style={{ 
-                  border: '1px solid #d1d5db', borderRadius: '6px', padding: '0.5rem', 
+                style={{
+                  border: '1px solid #d1d5db', borderRadius: '6px', padding: '0.5rem',
                   backgroundColor: '#f3f4f6', cursor: 'grab', display: 'flex', flexDirection: 'column', alignItems: 'center',
                   boxShadow: '0 1px 2px rgba(0,0,0,0.05)'
                 }}
@@ -237,30 +306,29 @@ export default function GlyphDesigner() {
               </div>
             ))}
 
-            {/* 2. Map through User Saved Glyphs */}
             {activeLocalFiles.map((glyph, index) => (
-                <div 
-                  key={`user-${index}`}
-                  draggable 
-                  onDragStart={(e) => handleDragStart(e, glyph.paths)}
-                  style={{ 
-                    border: '1px solid #bfdbfe', borderRadius: '6px', padding: '0.5rem', 
-                    backgroundColor: '#eff6ff', cursor: 'grab', display: 'flex', flexDirection: 'column', alignItems: 'center',
-                    boxShadow: '0 1px 2px rgba(0,0,0,0.05)'
-                  }}
-                  title={`${glyph.name} (Your Library)`}
-                >
-                  <svg width="100%" height="50" viewBox="0 0 500 500" style={{ pointerEvents: 'none' }}>
-                    {glyph.paths.map((p, i) => (
-                      <path key={i} d={p} stroke="#1d4ed8" strokeWidth="20" fill="none" strokeLinecap="round" strokeLinejoin="round" />
-                    ))}
-                  </svg>
-                  <span style={{ fontSize: '0.65rem', color: '#1e40af', marginTop: '0.25rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', width: '100%', textAlign: 'center' }}>
-                    {glyph.name}
-                  </span>
-                </div>
+              <div
+                key={`user-${index}`}
+                draggable
+                onDragStart={(e) => handleDragStart(e, glyph.paths)}
+                style={{
+                  border: '1px solid #bfdbfe', borderRadius: '6px', padding: '0.5rem',
+                  backgroundColor: '#eff6ff', cursor: 'grab', display: 'flex', flexDirection: 'column', alignItems: 'center',
+                  boxShadow: '0 1px 2px rgba(0,0,0,0.05)'
+                }}
+                title={`${glyph.name} (Your Library)`}
+              >
+                <svg width="100%" height="50" viewBox="0 0 500 500" style={{ pointerEvents: 'none' }}>
+                  {glyph.paths.map((p, i) => (
+                    <path key={i} d={p} stroke="#1d4ed8" strokeWidth="20" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+                  ))}
+                </svg>
+                <span style={{ fontSize: '0.65rem', color: '#1e40af', marginTop: '0.25rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', width: '100%', textAlign: 'center' }}>
+                  {glyph.name}
+                </span>
+              </div>
             ))}
-            
+
             {activeReferences.length === 0 && activeLocalFiles.length === 0 && (
               <div style={{ gridColumn: 'span 2', fontSize: '0.8rem', color: '#9ca3af', textAlign: 'center', padding: '1rem 0' }}>
                 No items in this category.
@@ -274,15 +342,15 @@ export default function GlyphDesigner() {
           <svg
             width="500"
             height="500"
-            style={{ 
+            style={{
               border: '2px solid #e5e7eb', borderRadius: '8px', cursor: 'crosshair', backgroundColor: '#ffffff', boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1)'
             }}
             onPointerDown={startDrawing}
             onPointerMove={draw}
             onPointerUp={stopDrawing}
             onPointerLeave={stopDrawing}
-            onDragOver={handleDragOver} 
-            onDrop={handleDrop}         
+            onDragOver={handleDragOver}
+            onDrop={handleDrop}
           >
             <g stroke="#f3f4f6" strokeWidth="2">
               <line x1="250" y1="0" x2="250" y2="500" />
