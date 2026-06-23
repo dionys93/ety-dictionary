@@ -1,0 +1,7 @@
+npm i --global surge (if needed)
+
+npm run build
+
+surge dist
+
+etc
