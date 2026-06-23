@@ -85,7 +85,7 @@ const normalizeConjugations = (baseEng, rawConj, posCategories) => {
     if (baseEng === 'do') return { explicit: zip(rawConj.length < 7 ? CLASS_6_SCHEMAS.do_aux : CLASS_6_SCHEMAS.do_verb) };
     if (baseEng === 'have') return { explicit: zip(CLASS_6_SCHEMAS.have) };
 
-    if (posCategories.includes('Modal')) return { negated_present: rawConj[0], past: rawConj[1], negated_past: rawConj[2] };
+    if (posCategories.includes('Modal')) return { past: rawConj[0], negated_present: rawConj[1], negated_past: rawConj[2] };
     if (posCategories.includes('Noun')) return { plural: rawConj[0] };
 
     return { forms: rawConj }; 

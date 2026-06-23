@@ -104,18 +104,35 @@ const evaluateMorphology = (tag, word, c) => {
  * @returns {function(ASTToken): Either<string, TranslationState>}
  */
 const matchDictionary = (brain) => (token) => {
-    if (token.pos === 'SPACE' || token.pos === 'PUNCT' || token.pos === 'X' || token.is_ent) {
-        return Success({ word: token.text, brainEntry: null, matchedCategory: null, token, isPreConjugated: true, isBypass: true });
+    const rawText = token.text.toLowerCase().normalize('NFC');
+
+    // 1. Structural & Clitic Bypass
+    // Skips punctuation, spaces, proper nouns, and English clitics ('s, 'd, 've, 'll, 're, 'm, n't)
+    if (
+        token.pos === 'SPACE' || 
+        token.pos === 'PUNCT' || 
+        token.pos === 'X' || 
+        token.is_ent ||
+        /^('[a-z]+|n't|’[a-z]+|n’t)$/.test(rawText)
+    ) {
+        return Success({ 
+            word: token.text, 
+            brainEntry: null, 
+            matchedCategory: null, 
+            token, 
+            isPreConjugated: true, 
+            isBypass: true 
+        });
     }
 
     const searchWord = token.lemma.toLowerCase().normalize('NFC');
-    const rawWord = token.text.toLowerCase().normalize('NFC');
     
-    const brainEntry = brain[rawWord] || brain[searchWord];
+    // 2. Dictionary Search (Raw Word takes priority over Lemma)
+    const brainEntry = brain[rawText] || brain[searchWord];
     if (!brainEntry) return Failure(searchWord); 
 
     const { baseReplacement, matchedCategory } = resolveCategory(token.pos, brainEntry);
-    const isPreConjugated = !!brain[rawWord] && rawWord !== searchWord;
+    const isPreConjugated = !!brain[rawText] && rawText !== searchWord;
 
     return baseReplacement 
         ? Success({ word: baseReplacement, brainEntry, matchedCategory, token, isPreConjugated, isBypass: false })
