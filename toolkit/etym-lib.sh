@@ -1106,3 +1106,154 @@ etym-trim() {
     echo "✅ Trailing whitespace removed."
     echo "================================================================="
 }
+
+# # etym-levenshtein [word]
+# # Calculates the linguistic mutation score (Levenshtein distance) by dynamically
+# # using the first language tag found in the word's comparison file as the baseline root.
+# etym-levenshtein() {
+#     local target_word="$1"
+
+#     if [[ -z "$target_word" ]]; then
+#         echo "Usage: etym-levenshtein <word>"
+#         echo "Example: etym-levenshtein create"
+#         return 1
+#     fi
+
+#     # 1. Locate the file dynamically using the environment path
+#     local first_letter="$(echo "${target_word:0:1}" | tr '[:upper:]' '[:lower:]')"
+#     local target_word_lower="$(echo "$target_word" | tr '[:upper:]' '[:lower:]')"
+#     local file_path="$COMPARISONS_DIR/$first_letter/$target_word_lower.txt"
+
+#     if [[ ! -f "$file_path" ]]; then
+#         echo "❌ Error: Could not find comparison file for '$target_word'."
+#         echo "   Searched at: $file_path"
+#         return 1
+#     fi
+
+#     local lang_tsv="$CONFIG_DIR/languages.tsv"
+#     if [[ ! -f "$lang_tsv" ]]; then
+#         echo "❌ Error: languages.tsv not found at $lang_tsv"
+#         return 1
+#     fi
+
+#     # 2. Execute the targeted state-machine
+#     awk -v lang_tsv="$lang_tsv" -v target_word="$target_word_lower" '
+#     # ---------------------------------------------------------
+#     # INITIALIZATION: Load languages.tsv into memory
+#     # ---------------------------------------------------------
+#     BEGIN {
+#         baseline_lang = ""
+#         while ((getline < lang_tsv) > 0) {
+#             sub(/^\[[^]]+\][ \t]*/, "", $0)
+#             if ($1 ~ /^[A-Z]+$/) {
+#                 code = $1
+#                 name = $0
+#                 sub("^" code "[ \t]+", "", name)
+#                 lang_names[code] = name
+#             }
+#         }
+#         close(lang_tsv)
+#     }
+
+#     # ---------------------------------------------------------
+#     # PURE MATH: Levenshtein Distance Matrix
+#     # ---------------------------------------------------------
+#     function levenshtein(s1, s2,    l1, l2, i, j, cost, d, min1, min2, min3) {
+#         l1 = length(s1); l2 = length(s2)
+#         if (l1 == 0) return l2
+#         if (l2 == 0) return l1
+
+#         for (i = 0; i <= l1; i++) d[i, 0] = i
+#         for (j = 0; j <= l2; j++) d[0, j] = j
+
+#         for (i = 1; i <= l1; i++) {
+#             for (j = 1; j <= l2; j++) {
+#                 cost = (substr(s1, i, 1) == substr(s2, j, 1)) ? 0 : 1
+#                 min1 = d[i-1, j] + 1
+#                 min2 = d[i, j-1] + 1
+#                 min3 = d[i-1, j-1] + cost
+#                 d[i, j] = (min1 < min2 ? min1 : min2)
+#                 d[i, j] = (d[i, j] < min3 ? d[i, j] : min3)
+#             }
+#         }
+#         return d[l1, l2]
+#     }
+
+#     # ---------------------------------------------------------
+#     # STATE MACHINE: Parser
+#     # ---------------------------------------------------------
+
+#     /^[[:space:]]*$/ { next }
+
+#     /\[[A-Z]+\]/ {
+#         match($0, /\[[A-Z]+\]/)
+#         current_lang = substr($0, RSTART+1, RLENGTH-2)
+#         line_idx = 0
+        
+#         # DYNAMIC BASELINE
+#         if (baseline_lang == "") {
+#             baseline_lang = current_lang
+#         }
+#         next
+#     }
+
+#     current_lang != "" {
+#         line_idx++
+        
+#         # >>> THE COMMA BYPASS <<<
+#         # Strip everything from the first comma to the end of the line.
+#         # This isolates the primary definition/infinitive so $NF works perfectly.
+#         sub(/,.*/, "", $0)
+
+#         root = tolower($NF)
+#         gsub(/[.,;:!?()]/, "", root)
+
+#         if (current_lang == baseline_lang) {
+#             base_words[line_idx] = root
+#             if (line_idx > max_lines) max_lines = line_idx
+#         } else {
+#             targets[current_lang, line_idx] = root
+#         }
+        
+#         langs[current_lang] = 1
+#     }
+
+#     # ---------------------------------------------------------
+#     # EXECUTION: Print targeted results
+#     # ---------------------------------------------------------
+#     END {
+#         if (baseline_lang == "") {
+#             print "❌ Error: No language baseline found in " target_word ".txt"
+#             exit 1
+#         }
+
+#         print "=========================================================="
+#         print " 🧬 LINGUISTIC MUTATION ANALYZER"
+#         print " 🏛️  FAMILY: " target_word
+#         print "=========================================================="
+
+#         for (i = 1; i <= max_lines; i++) {
+#             l_base = base_words[i]
+#             if (l_base == "") continue
+
+#             # Dynamically resolve the baseline name
+#             base_name = (lang_names[baseline_lang] != "") ? lang_names[baseline_lang] : baseline_lang
+#             printf " 🔵 %s ROOT : %s\n", toupper(base_name), l_base
+#             printf "----------------------------------------------------------\n"
+
+#             for (lang in langs) {
+#                 if (lang == baseline_lang) continue
+                
+#                 t_word = targets[lang, i]
+#                 if (t_word != "") {
+#                     score = levenshtein(l_base, t_word)
+#                     lname = (lang_names[lang] != "") ? lang_names[lang] : lang
+                    
+#                     printf "  [%-3s] %-16s %-15s (Drift: %d)\n", lang, lname, t_word, score
+#                 }
+#             }
+#             print ""
+#         }
+#     }
+#     ' "$file_path"
+# }

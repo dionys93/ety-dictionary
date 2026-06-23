@@ -8,12 +8,12 @@ export PROJECT_ROOT="$(cd "$CONFIG_DIR/../.." && pwd)"
 # Data Directories
 # toolkit/config/env.sh
 
-
 # --- DATA DIRECTORIES ---
 export DICT_DIR="${DICT_DIR:-/workspaces/ety-dictionary/data-text/inglisce/dictionary}"
 export ETYM_LIB_DIR="${ETYM_LIB_DIR:-/workspaces/ety-dictionary/toolkit}"
 export HISTORIES_DIR="$PROJECT_ROOT/data-text/histories"
 export ANALYSIS_DIR="$PROJECT_ROOT/analysis"
+# export COMPARISONS_DIR="$PROJECT_ROOT/data-text/inglisce/etymology/comparisons"
 
 # >>> NEW PIPELINE PATHS <<<
 export BOOKS_RAW_DIR="$PROJECT_ROOT/data-text/books"
