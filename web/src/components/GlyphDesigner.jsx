@@ -2,10 +2,13 @@ import { useState, useRef, useEffect } from 'react';
 import { REFERENCE_GLYPHS } from '../../glyphs/reference.js';
 
 const CATEGORIES = [
-  { id: 'Korean', glyph: '한' },
-  { id: 'Katakana', glyph: 'ア' },
-  { id: 'Kanji', glyph: '漢' },
-  { id: 'Custom', glyph: '✎' } 
+  { id: 'Korean',         glyph: '한',  label: 'Korean (isolated)' },
+  { id: 'Korean_initial', glyph: '초',  label: 'Korean initial (choseong)' },
+  { id: 'Korean_medial',  glyph: '중',  label: 'Korean medial (jungseong)' },
+  { id: 'Korean_final',   glyph: '종',  label: 'Korean final (jongseong)' },
+  { id: 'Katakana',       glyph: 'ア',  label: 'Katakana' },
+  { id: 'Kanji',          glyph: '漢',  label: 'Kanji' },
+  { id: 'Custom',         glyph: '✎',  label: 'Custom' },
 ];
 
 // --- PURE FUNCTIONAL VECTOR MATH UTILITIES ---
@@ -41,6 +44,7 @@ const translatePath = (pathString, dx, dy) =>
   }).trim();
 
 export default function GlyphDesigner() {
+  // Each entry: { type: 'stroke', d: string } | { type: 'glyph', paths: string[] }
   const [paths, setPaths] = useState([]);
   const [currentPath, setCurrentPath] = useState('');
   const [glyphName, setGlyphName] = useState('');
@@ -84,7 +88,7 @@ export default function GlyphDesigner() {
     if (!isDrawing.current) return;
     isDrawing.current = false;
     if (currentPath) {
-      setPaths([...paths, currentPath]);
+      setPaths((prev) => [...prev, { type: 'stroke', d: currentPath }]);
       setCurrentPath('');
     }
   };
@@ -104,7 +108,11 @@ export default function GlyphDesigner() {
     if (paths.length === 0) return alert("Canvas is empty! Draw something first.");
     if (!glyphName.trim()) return alert("Please give your glyph a name before saving.");
 
-    const glyphData = { name: glyphName.trim(), category: glyphCategory, paths };
+    // Flatten all entries into a plain array of path strings for storage
+    const flatPaths = paths.flatMap(entry =>
+      entry.type === 'stroke' ? [entry.d] : entry.paths
+    );
+    const glyphData = { name: glyphName.trim(), category: glyphCategory, paths: flatPaths };
 
     try {
       const response = await fetch('/api/save-glyph.json', {
@@ -148,12 +156,14 @@ export default function GlyphDesigner() {
       const dx = dropX - cx;
       const dy = dropY - cy;
       const shiftedPaths = droppedPaths.map(p => translatePath(p, dx, dy));
-      setPaths((prev) => [...prev, ...shiftedPaths]);
+      setPaths((prev) => [...prev, { type: 'glyph', paths: shiftedPaths }]);
     }
   };
 
   const activeReferences = REFERENCE_GLYPHS[activeTab] || [];
-  const activeLocalFiles = library.filter(glyph => (glyph.category === activeTab) || (!glyph.category && activeTab === 'Custom'));
+  const activeLocalFiles = library.filter(glyph =>
+    glyph.category === activeTab || (!glyph.category && activeTab === 'Custom')
+  );
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', width: '100%' }}>
@@ -165,7 +175,7 @@ export default function GlyphDesigner() {
           onChange={(e) => setGlyphCategory(e.target.value)}
           style={{ padding: '0.5rem', borderRadius: '4px', border: '1px solid #d1d5db', backgroundColor: '#fff', fontSize: '1rem' }}
         >
-          {CATEGORIES.map(cat => <option key={cat.id} value={cat.id}>{cat.glyph} {cat.id}</option>)}
+          {CATEGORIES.map(cat => <option key={cat.id} value={cat.id}>{cat.glyph} {cat.label}</option>)}
         </select>
 
         <input 
@@ -202,22 +212,25 @@ export default function GlyphDesigner() {
           
           <h3 style={{ margin: 0, fontSize: '1.1rem', color: '#374151' }}>Library</h3>
           
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem', justifyContent: 'space-between' }}>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.375rem' }}>
             {CATEGORIES.map(cat => (
               <button
                 key={cat.id}
                 onClick={() => setActiveTab(cat.id)}
-                title={cat.id}
+                title={cat.label}
                 style={{
-                  width: '42px', height: '42px', display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  width: '100%', display: 'flex', alignItems: 'center', gap: '0.5rem',
+                  padding: '0.375rem 0.625rem',
                   backgroundColor: activeTab === cat.id ? '#374151' : '#ffffff',
                   color: activeTab === cat.id ? '#ffffff' : '#4b5563',
                   border: activeTab === cat.id ? '1px solid #374151' : '1px solid #d1d5db',
-                  borderRadius: '8px', fontSize: '1.25rem', fontWeight: 'bold', cursor: 'pointer',
+                  borderRadius: '6px', fontSize: '0.8rem', fontWeight: activeTab === cat.id ? 'bold' : 'normal',
+                  cursor: 'pointer', textAlign: 'left',
                   boxShadow: activeTab === cat.id ? 'inset 0 2px 4px rgba(0,0,0,0.2)' : '0 1px 2px rgba(0,0,0,0.05)'
                 }}
               >
-                {cat.glyph}
+                <span style={{ fontSize: '1rem', lineHeight: 1 }}>{cat.glyph}</span>
+                <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{cat.label}</span>
               </button>
             ))}
           </div>
@@ -241,7 +254,7 @@ export default function GlyphDesigner() {
               >
                 <svg width="100%" height="50" viewBox="0 0 500 500" style={{ pointerEvents: 'none' }}>
                   {glyph.paths.map((p, i) => (
-                    <path key={i} d={p} stroke="#374151" strokeWidth="25" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+                    <path key={i} d={p} fill="#374151" fillRule="evenodd" stroke="none" />
                   ))}
                 </svg>
                 <span style={{ fontSize: '0.65rem', color: '#4b5563', marginTop: '0.25rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', width: '100%', textAlign: 'center' }}>
@@ -264,7 +277,7 @@ export default function GlyphDesigner() {
                 >
                   <svg width="100%" height="50" viewBox="0 0 500 500" style={{ pointerEvents: 'none' }}>
                     {glyph.paths.map((p, i) => (
-                      <path key={i} d={p} stroke="#1d4ed8" strokeWidth="25" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+                      <path key={i} d={p} fill="#1d4ed8" fillRule="evenodd" stroke="none" />
                     ))}
                   </svg>
                   <span style={{ fontSize: '0.65rem', color: '#1e40af', marginTop: '0.25rem', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis', width: '100%', textAlign: 'center' }}>
@@ -301,9 +314,17 @@ export default function GlyphDesigner() {
               <line x1="0" y1="250" x2="500" y2="250" />
             </g>
 
-            {paths.map((path, index) => (
-              <path key={index} d={path} stroke="#111827" strokeWidth="12" fill="none" strokeLinecap="round" strokeLinejoin="round" />
-            ))}
+            {paths.map((entry, index) =>
+              entry.type === 'stroke' ? (
+                <path key={index} d={entry.d} stroke="#111827" strokeWidth="12" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+              ) : (
+                <g key={index}>
+                  {entry.paths.map((p, i) => (
+                    <path key={i} d={p} fill="#111827" fillRule="evenodd" stroke="none" />
+                  ))}
+                </g>
+              )
+            )}
             {currentPath && (
               <path d={currentPath} stroke="#111827" strokeWidth="12" fill="none" strokeLinecap="round" strokeLinejoin="round" />
             )}
