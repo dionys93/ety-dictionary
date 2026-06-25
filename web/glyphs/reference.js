@@ -1,8 +1,5 @@
 // web/src/glyphs/reference.js
 // Korean paths extracted from Noto Sans CJK KR (NotoSansCJK-Regular.ttc)
-// via fonttools. All paths are filled outlines — render with fill='currentColor'
-// fillRule='evenodd', stroke='none'.
-//
 // Three positional variants per consonant:
 //   isolated  — standalone / compatibility jamo (U+3131–U+3163)
 //   initial   — choseong, consonant at TOP of syllable block (U+1100–U+1112)
