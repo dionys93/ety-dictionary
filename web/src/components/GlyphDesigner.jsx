@@ -8,6 +8,7 @@ const CATEGORIES = [
   { id: 'Korean_final',   glyph: '종', label: 'Korean final (jongseong)' },
   { id: 'Katakana',       glyph: 'ア', label: 'Katakana' },
   { id: 'Kanji',          glyph: '漢', label: 'Kanji' },
+  { id: 'Radicals', glyph: '部', label: 'Radicals (部首)' },
   { id: 'Custom',         glyph: '✎', label: 'Custom' },
 ];
 
