@@ -21,13 +21,20 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
+      # FEATURE A: Dependency Caching (Makes subsequent builds significantly faster)
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: '22'
+          cache: 'npm'
+          cache-dependency-path: 'web/package-lock.json'
 
       - name: Install Dependencies
         run: npm install
+
+      # FEATURE B: Safety Check (Runs Astro's strict type and syntax checker to prevent broken deployments)
+      - name: Run Astro Check
+        run: npm run astro check
 
       - name: Build Project
         run: npm run build
