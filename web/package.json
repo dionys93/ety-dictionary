@@ -9,7 +9,8 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "postbuild": "pagefind --site dist --glob \"dictionary/**/*.html\" --exclude-selectors \"nav\""
   },
   "dependencies": {
     "@astrojs/react": "^5.0.3",
@@ -20,5 +21,8 @@
     "react": "^19.2.5",
     "react-dom": "^19.2.5",
     "react-pageflip": "^2.0.3"
+  },
+  "devDependencies": {
+    "pagefind": "^1.5.2"
   }
 }

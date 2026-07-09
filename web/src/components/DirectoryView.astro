@@ -1,13 +1,11 @@
 ---
-// web/src/components/DirectoryView.astro
-
 import Container from './ui/Container.astro';
 import Column from './ui/Column.astro';
 import List from './ui/List.astro';
 import GridList from './ui/GridList.astro';
 import BackButton from './ui/BackButton.astro';
+import SearchBar from './SearchBar.jsx';
 
-// Note: We no longer need the 'marked' import or 'ScrollBar' here!
 const { title, items, isRoot, slug } = Astro.props;
 
 const useGrid = slug && slug.startsWith('dictionary');
@@ -15,19 +13,21 @@ const useGrid = slug && slug.startsWith('dictionary');
 
 <Container className="listContainer">
     <Column className="listColumn" style={{ width: '100%', maxWidth: '900px' }}>
-        
-        {/* --- TOP NAVIGATION --- */}
+
         {!isRoot && (
             <div style="margin-bottom: 1rem; align-self: flex-start;">
                 <BackButton />
             </div>
         )}
 
-        {/* --- HEADER --- */}
-        {/* Always display the title of the current directory */}
+        {useGrid && (
+            <div style="width: 100%; max-width: 600px; margin-bottom: 1.5rem;">
+                <SearchBar client:load />
+            </div>
+        )}
+
         <h1 style="margin-top: 0; margin-bottom: 2rem;">{title}</h1>
 
-        {/* --- FOLDER CONTENTS VIEW --- */}
         {items && items.length > 0 && (
             useGrid ? <GridList items={items} /> : <List items={items} />
         )}
