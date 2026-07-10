@@ -10,7 +10,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "postbuild": "pagefind --site dist --glob \"dictionary/**/*.html\" --exclude-selectors \"nav\""
+    "postbuild": "pagefind --site dist --exclude-selectors \"nav\""
   },
   "dependencies": {
     "@astrojs/react": "^5.0.3",
