@@ -86,7 +86,7 @@ While their orthography has been standardized to reflect their phonetic reality,
 | Preposition | Example |
 | :--- | :--- |
 | **for** | for sâfty rísons |
-| **becase of** | becase of þe raigne |
+| **becase of** | becase of þe raine |
 | **due to** | dûe to illness |
 | **from** | from exaustion |
 | **þru** | þru hard uirc |
@@ -100,7 +100,7 @@ While their orthography has been standardized to reflect their phonetic reality,
 | Preposition | Example |
 | :--- | :--- |
 | **according to** | according to þe reuls |
-| **ahèd of** | ahèd of sched̦ule |
+| **ahède of** | ahède of sched̦ule |
 | **apárt from** | apárt from þat |
 | **as for** | as for mi(e |
 | **as uel as** | as uell as oþars |
