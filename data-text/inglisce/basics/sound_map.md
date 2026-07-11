@@ -51,7 +51,7 @@
 | **/ɝ/** | ê | s*ê*ve, pref*ê*r |
 | **/ɚ/** | | eu*re*, eu*ar*s, mast*er*, c*or*ve, meș*ure*, b*ir*de, mat*ir*, mat*re* |
 | **/ɛr/** | eir(e), ere, air(e), ear(e), èr | b*eir*e, h*air*e, b*ear*e, *èr*a |
-| **/ɪr/** | -iar, -ier, -ire, -ior | f*iar*e, n*ier*, st*ior*e, p*ier*e, volont*ire* |
+| **/ɪr/** | -iar, -ier, -ire, -ior | f*iar*e, t*iar*s, n*ier*, st*ior*e, p*ier*e, volont*ire* |
 | **/ɑr/** | ar | c*ar*re, st*ar*re |
 | **/ɔr/** | aur(e), oure | n*or*þ, r*aur*e, fl*our*e |
 | **/wɔr/** | uar | *uar*m, s*uar*me |
