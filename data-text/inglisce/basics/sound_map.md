@@ -51,11 +51,11 @@
 | **/ɝ/** | ê | s*ê*ve, pref*ê*r |
 | **/ɚ/** | | eu*re*, eu*ar*s, mast*er*, c*or*ve, meș*ure*, b*ir*de, mat*ir*, mat*re* |
 | **/ɛr/** | eir(e), ere, air(e), ear(e), èr | b*eir*e, h*air*e, b*ear*e, *èr*a |
-| **/ɪr/** | -iar, -ire, -ior, -ier | f*iar*e, n*ir*e, st*ior*e, ch*ier*e |
+| **/ɪr/** | -iar, -ier, -ire, -ior | f*iar*e, n*ier*, st*ior*e, p*ier*e, volont*ire* |
 | **/ɑr/** | ar | c*ar*re, st*ar*re |
 | **/ɔr/** | aur(e), oure | n*or*þ, r*aur*e, fl*our*e |
 | **/wɔr/** | uar | *uar*m, s*uar*me |
-| **/aɪʲɚ/** | -îar, -îer, -îor, -îre | f*ŷar*s, acqu*îer*, f*îre* |
+| **/aɪʲɚ/** | -îar, -îer, -îor, -îre | f*ŷre*, sp*îre* acqu*îer*, t*îor*e|
 | **/aʊʷɚ/** | ôar, ôer, aû(e)r | *ôar*e, c*ôar*d, dev*ôer*, c*aûer*, saûre |
 | **/ɔɪʲɚ/** | oyeur | destr*oyeur* |
 
