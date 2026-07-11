@@ -1,64 +1,81 @@
 The International Phonetic Alphabet is used throughout this work to show how words are pronounced.
-Those symbols are follow, with examples in Modern Midwestern American English:
 
-Vowels:
+## Vowels
 
-   /i/: beat /bit/, see /si/
-   /ɪ/: bit /bɪt/, sit /sɪt/
-   /e/: bait /beɪt/, say /seɪ/
-   /ɛ/: bet /bɛt/, send /sɛnd/
-   /æ/: bat /bæt/, cat /kæt/
-   /ʌ/: but /bʌt/, sun /sʌn/
-   /ə/: sofa /ˈsoʊfə/, about /əˈbaʊt/
-   /ɑ/: father /ˈfɑðɚ/, hot /hɑt/
-   /ɔ/: bought /bɔt/, caught /kɔt/
-   /o/: boat /boʊt/, go /goʊ/
-   /ʊ/: book /bʊk/, good /gʊd/
-   /u/: boot /but/, soon /sun/
-   /ɝ/: bird /bɝd/, hurt /hɝt/  
-   /ɚ/: butter /ˈbʌɾɚ/, brother /ˈbrʌðɚ/
+| Symbol | Example 1 | Example 2 |
+|--------|-----------|-----------|
+| /i/ | beat /bit/ | see /si/ |
+| /ɪ/ | bit /bɪt/ | sit /sɪt/ |
+| /e/ | bait /beɪt/ | say /seɪ/ |
+| /ɛ/ | bet /bɛt/ | send /sɛnd/ |
+| /æ/ | bat /bæt/ | cat /kæt/ |
+| /ə/ | sun, son /sən/, but /bət/ | sofa /ˈsoʊfə/, about /əˈbaʊt/ |
+| /ɑ/ | father /ˈfɑðɚ/ | hot /hɑt/ |
+| /ɔ/ | bought /bɔt/ | caught /kɔt/ |
+| /o/ | boat /boʊt/ | go /goʊ/ |
+| /ʊ/ | book /bʊk/ | good /gʊd/ |
+| /u/ | boot /but/ | soon /sun/ |
+| /ɝ/ | bird /bɝd/ | hurt /hɝt/ |
+| /ɚ/ | butter /ˈbʌɾɚ/ | brother /ˈbrʌðɚ/ |
 
-Diphthongs:
+## Diphthongs
 
-   /aɪ/: buy /baɪ/, tie /taɪ/
-   /aʊ/: about /əˈbaʊt/, cow /kaʊ/
-   /ɔɪ/: boy /bɔɪ/, toy /tɔɪ/
-   /oʊ/: boat /boʊt/, go /goʊ/
-   /eɪ/: bait /beɪt/, say /seɪ/
+| Symbol | Example 1 | Example 2 |
+|--------|-----------|-----------|
+| /aɪ/ | buy /baɪ/ | tie /taɪ/ |
+| /aʊ/ | about /əˈbaʊt/ | cow /kaʊ/ |
+| /ɔɪ/ | boy /bɔɪ/ | toy /tɔɪ/ |
+| /oʊ/ | boat /boʊt/ | go /goʊ/ |
+| /eɪ/ | bait /beɪt/ | say /seɪ/ |
 
-Consonants:
+## Consonants
 
-Stops:
-   /p/: pat /pæt/, spin /spɪn/
-   /b/: bat /bæt/, bit /bɪt/
-   /t/: tap /tæp/, stop /stɑp/
-   /d/: dog /dɔg/, bed /bɛd/
-   /ɾ/: better /ˈbɛɾɚ/, ladder /ˈlæɾɚ/
-   /k/: cat /kæt/, back /bæk/
-   /g/: go /goʊ/, get /gɛt/
+### Stops
 
-Affricates:
-   /tʃ/: chop /tʃɑp/, match /mætʃ/
-   /dʒ/: judge /dʒʌdʒ/, jump /dʒʌmp/
+| Symbol | Example 1 | Example 2 |
+|--------|-----------|-----------|
+| /p/ | pat /pæt/ | spin /spɪn/ |
+| /b/ | bat /bæt/ | bit /bɪt/ |
+| /t/ | tap /tæp/ | stop /stɑp/ |
+| /d/ | dog /dɔg/ | bed /bɛd/ |
+| /ɾ/ | better /ˈbɛɾɚ/ | ladder /ˈlæɾɚ/ |
+| /k/ | cat /kæt/ | back /bæk/ |
+| /g/ | go /goʊ/ | get /gɛt/ |
 
-Fricatives:
-   /f/: fun /fʌn/, laugh /læf/
-   /v/: van /væn/, save /seɪv/
-   /θ/: think /θɪngk/, both /boʊθ/
-   /ð/: this /ðɪs/, father /ˈfɑðɚ/
-   /s/: see /si/, sit /sɪt/
-   /z/: zoo /zu/, buzz /bʌz/
-   /ʃ/: shoe /ʃu/, shy /ʃaɪ/
-   /ʒ/: measure /ˈmɛʒɚ/, vision /ˈvɪʒən/
-   /h/: hat /hæt/, hope /hoʊp/
+### Affricates
 
-Nasals:
-   /m/: man /mæn/, some /sʌm/
-   /n/: name /neɪm/, now /naʊ/
-   /ng/: sing /sɪng/, long /lɔng/
+| Symbol | Example 1 | Example 2 |
+|--------|-----------|-----------|
+| /tʃ/ | chop /tʃɑp/ | match /mætʃ/ |
+| /dʒ/ | judge /dʒʌdʒ/ | jump /dʒʌmp/ |
 
-Liquids and Glides:
-   /l/: lot /lɑt/, full /fʊl/
-   /r/: red /rɛd/, car /kɑr/
-   /w/: win /wɪn/, water /ˈwɑtɚ/
-   /j/: yes /jɛs/, young /jʌng/
+### Fricatives
+
+| Symbol | Example 1 | Example 2 |
+|--------|-----------|-----------|
+| /f/ | fun /fʌn/ | laugh /læf/ |
+| /v/ | van /væn/ | save /seɪv/ |
+| /θ/ | think /θɪngk/ | both /boʊθ/ |
+| /ð/ | this /ðɪs/ | father /ˈfɑðɚ/ |
+| /s/ | see /si/ | sit /sɪt/ |
+| /z/ | zoo /zu/ | buzz /bʌz/ |
+| /ʃ/ | shoe /ʃu/ | shy /ʃaɪ/ |
+| /ʒ/ | measure /ˈmɛʒɚ/ | vision /ˈvɪʒən/ |
+| /h/ | hat /hæt/ | hope /hoʊp/ |
+
+### Nasals
+
+| Symbol | Example 1 | Example 2 |
+|--------|-----------|-----------|
+| /m/ | man /mæn/ | some /sʌm/ |
+| /n/ | name /neɪm/ | now /naʊ/ |
+| /ng/ | sing /sɪng/ | long /lɔng/ |
+
+### Liquids and Glides
+
+| Symbol | Example 1 | Example 2 |
+|--------|-----------|-----------|
+| /l/ | lot /lɑt/ | full /fʊl/ |
+| /r/ | red /rɛd/ | car /kɑr/ |
+| /w/ | win /wɪn/ | water /ˈwɑtɚ/ |
+| /j/ | yes /jɛs/ | young /jʌng/ |
