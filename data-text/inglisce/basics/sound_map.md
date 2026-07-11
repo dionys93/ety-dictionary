@@ -5,14 +5,14 @@
 | IPA | Position | Graphemes | Inglisce Examples |
 | :--- | :--- | :--- | :--- |
 | **/i/** | Initial | ei-, í- | *ei*c̃, *ei*gle, *í*vle |
-| | Medial | í, ie, i-e | m*í*dia, f*ie*le, maç*i*n*e*, iven |
-| | Final | -y, -ie, -i | fonn*y*, comitt*ie*, comitt*i*s |
+| | Medial | í, ie, i-e, -ei-e | m*í*dia, f*ie*le, maç*i*n*e*, iven, s*ei*de |
+| | Final | -y, -ie, -i, -aeie | fonn*y*, comitt*ie*, comitt*i*s, s*aeie*/s*aei*s |
 | **/ɪ/** | Initial | i | *i*t, *i*n |
 | | Medial | i | s*i*c, f*i*n*i*șe, s*i*gnal |
 | **/ɛ/** | Initial | e, è, ai | *e*mpty, *è*ra, *ai*re |
 | | Medial | è, ai, ea | pr*è*sident, s*ai*d, br*ea*de |
 | **/æ/** | Initial | a | *a*miral, *a*nimal, *a*nimait |
-| | Medial | a, a-e, à | b*a*te, c*a*te, f*a*t, alf*à*lfa, an*à*lysis |
+| | Medial | a, a-e, à | b*a*te, c*a*te, f*a*t, alf*a*lfa, an*à*lysis |
 | **/ɑ/** | Initial | o | *o*ctopus |
 | | Medial | o, á | l*o*c, d*o*c, st*o*c, d*o*ctre, f*a*þre, u*a*tre, c*á*te |
 | | Final | a-e | Ir*a*ne |
