@@ -9,14 +9,13 @@ The International Phonetic Alphabet is used throughout this work to show how wor
 | /e/ | bait /beɪt/ | say /seɪ/ |
 | /ɛ/ | bet /bɛt/ | send /sɛnd/ |
 | /æ/ | bat /bæt/ | cat /kæt/ |
-| /ə/ | sun, son /sən/, but /bət/ | sofa /ˈsoʊfə/, about /əˈbaʊt/ |
+| /ə/ | sun, son /sən/, but /bət/ | sofa /ˈsoʊfə/ |
 | /ɑ/ | father /ˈfɑðɚ/ | hot /hɑt/ |
 | /ɔ/ | bought /bɔt/ | caught /kɔt/ |
 | /o/ | boat /boʊt/ | go /goʊ/ |
 | /ʊ/ | book /bʊk/ | good /gʊd/ |
 | /u/ | boot /but/ | soon /sun/ |
-| /ɝ/ | bird /bɝd/ | hurt /hɝt/ |
-| /ɚ/ | butter /ˈbʌɾɚ/ | brother /ˈbrʌðɚ/ |
+| /ɚ/ | bird /bɚd/, hurt /hɚt/ | butter /ˈbəɾɚ/, brother /ˈbrəðɚ/ |
 
 ## Diphthongs
 
