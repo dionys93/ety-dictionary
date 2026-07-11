@@ -4,8 +4,8 @@
 
 | IPA | Position | Graphemes | Inglisce Examples |
 | :--- | :--- | :--- | :--- |
-| **/i/** | Initial | ei-, í- | *ei*c̃, *ei*gle, *í*vle |
-| | Medial | í, ie, i-e, -ei-e | m*í*dia, f*ie*le, maç*i*n*e*, iven, s*ei*de |
+| **/i/** | Initial | ei-, i-e | *ei*c̃, *ei*gle, *i*vel, *i*ven, *ei*sy, *ei*gre |
+| | Medial | í, ie, i-e, -ei-e | m*í*dia, f*ie*le, maç*i*n*e*, s*ei*de |
 | | Final | -y, -ie, -i, -aeie | fonn*y*, comitt*ie*, comitt*i*s, s*aeie*/s*aei*s |
 | **/ɪ/** | Initial | i | *i*t, *i*n |
 | | Medial | i | s*i*c, f*i*n*i*șe, s*i*gnal |
