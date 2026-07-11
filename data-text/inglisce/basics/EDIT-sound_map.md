@@ -14,7 +14,7 @@
 | **/æ/** | Initial | a | *a*miral, *a*nimal, *a*nimait |
 | | Medial | a, a-e, à | b*a*te, c*a*te, f*a*t, alf*à*lfa, an*à*lysis |
 | **/ɑ/** | Initial | o | *o*ctopus |
-| | Medial | o, á | l*o*c, d*o*c, st*o*c, d*o*ctre, f*á*þre, u*á*tre |
+| | Medial | o, á | l*o*c, d*o*c, st*o*c, d*o*ctre, f*a*þre, u*a*tre, c*á*te |
 | | Final | a-e | Ir*a*ne |
 | **/ɔ/** | Initial | au, ò | *Au*strâlia, *Ò*stria |
 | | Medial | au, all, off, oh, ò | s*au*ce, c*au*fie, l*au*s, c*all*e, c*off*e, b*oh*t, c*ò*ste |
