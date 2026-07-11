@@ -39,7 +39,7 @@
 | **/oʊ/** | Initial | ó, oa | *ó*pal, *ó*val, *oa*ts |
 | | Medial | o-e, ó, oa | b*o*n*e* (b*oa*ns), b*o*t*e* (b*oa*ts), g*o*t*e* (g*oa*ts), c*oa*ste, g*oa*ste, h*oa*me, c*oa*me, r*ó*ste, b*ó*ste |
 | | Final (Roots & Suffixes) | o, oe, ou | uind*o*, siad*o*, se*oe* (se*ou*ing), bl*oe* (bl*ou*ing) |
-| **/aʊ/** | Medial | ô-e, aû, ôn, -aund | *ô*l*e*, v*ô*l*e*, h*aû*se, cr*ôn*e, s*ôn*de, f*aund*, gr*aund* |
+| **/aʊ/** | Medial | ô-e, au-e, ôn, -aund | *ô*l*e*, v*ô*l*e*, h*au*se, cr*ôn*e, s*ôn*de, f*aund*, gr*aund* |
 | | Final (Roots & Suffixes) | ôe, ôu | h*ôe*, c*ôe* (c*ôu*s), all*ôe* (all*ôu*ing), *ôe*ls, v*ôe*ls |
 
 ---
