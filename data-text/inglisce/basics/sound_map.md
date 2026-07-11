@@ -5,7 +5,7 @@
 | IPA | Position | Graphemes | Inglisce Examples |
 | :--- | :--- | :--- | :--- |
 | **/i/** | Initial | ei-, i-e | *ei*c̃, *ei*gle, *i*vel, *i*ven, *ei*sy, *ei*gre |
-| | Medial | í, ie, i-e, -ei-e | m*í*dia, f*ie*le, maç*i*n*e*, s*ei*de |
+| | Medial | í, ie, i-e, -ei-e | m*í*dia, f*ie*le, maç*i*n*e*, s*ei*de, *í*st, *í*stern |
 | | Final | -y, -ie, -i, -aeie | fonn*y*, comitt*ie*, comitt*i*s, s*aeie*/s*aei*s |
 | **/ɪ/** | Initial | i | *i*t, *i*n |
 | | Medial | i | s*i*c, f*i*n*i*șe, s*i*gnal |
@@ -28,7 +28,7 @@
 | | Medial | a, i, e, u, o | anim*a*t, ind*i*viḑual, d*e*vote, c*u*tte, r*o*ne, c*o*me, t*o*nele, s*o*mere |
 | | Final | a | mídi*a* |
 | **/eɪ/** | Initial | â, éi, ea | *â*ge, *â*pe, *â*þyist, *éi*me, *ea*le |
-| | Medial | â, aî, ai-e, ei, ea, aig, eig, eih | cr*â*te, f*â*te, g*â*te, st*â*te, m*â*te, tr*aî*tre, r*ai*gn*e*, v*ei*ne, r*ei*ne, str*ei*ne, s*ea*de, s*ea*me, gr*ea*t, st*ai*gn*e*, r*eig*ne, u*eih*te |
+| | Medial | â, aî, ai-e, ei, éi, ea, eig, eih | cr*â*te, f*â*te, g*â*te, st*â*te, m*â*te, tr*aî*tre, r*ai*n*e*, v*ei*ne, r*ei*ne, str*ei*ne, s*éi*le, s*ea*de, s*ea*me, gr*ea*t, st*ai*n*e*, r*eig*ne, u*eih*te |
 | | Final (Roots & Suffixes) | aie, eie, ay, ey, eih-e | d*aie*, st*aie*, conv*eie*, gr*ay*, þ*ey*, sl*eih*e (sl*eih*s) |
 | **/aɪ/** | Initial | î, aie, eai | *î*le, *î*tem, *aie*le, *eai*e |
 | | Medial | î, aih, oih, ŷ | c*î*te, m*î*te, n*î*hte, n*ai*hte, m*aih*te, h*oih*te, f*oih*te, c*ŷ*nd, c*ŷ*te |
