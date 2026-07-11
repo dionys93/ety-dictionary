@@ -67,7 +67,7 @@
 | :--- | :--- | :--- | :--- |
 | **Stops** | **/p/** | p | *p*en |
 | | **/b/** | b | *b*atte |
-| | **/t/** | t | *t*op |
+| | **/t/** | t | *t*oppe |
 | | **/d/** | d | *d*ogue |
 | | **/k/** | c, ch, q | *c*ate, *c*uic, s*c*oule, anti*q*ue |
 | | **/g/** | g, gu, gh | *g*âte, *gu*ive |
@@ -75,13 +75,13 @@
 | **Fricatives**| **/f/** | f, ph, fh | *f*ilme, *ph*otografe |
 | | **/v/** | v | *v*ote |
 | | **/θ/** | þ | *þ*in, au*þ*re |
-| | **/ð/** | þ | *þ*en, fá*þ*re |
+| | **/ð/** | þ | *þ*en, fa*þ*re |
 | | **/s/** | s, c, ç | *s*inne, *c*ente, fa*ç*ade |
 | | **/z/** | s, z | i*s*, *z*iploc |
-| | **/ʃ/** | s, z, se{v}, si{v}, ci{v}, ce{v}, ç, ș, pţ/pti, cţ/cti | *ș*ute, na*ci*on, me*ș*ure |
+| | **/ʃ/** | | *ș*ute, na*ci*on, me*ș*ure |
 | | **/ʒ/** | si, ș | vi*si*on, u*ș*ual |
 | | **/h/** | h | *h*ate |
-| **Affricates**| **/tʃ/** | ch, ţ, ti, c̃ | *c̃*aire, tie*c̃*eur, ques*ţ*ion |
+| **Affricates**| **/tʃ/** | ch, ţ, ti, c̃ | *c̃*aire, tie*c̃*eur, mix*ţ*ure, ques*ti*on |
 | | **/dʒ/** | j, g, ḑ | *j*oge, *g*íante, procí*ḑ*ure |
 | **Nasals** | **/m/** | m | *m*anne |
 | | **/n/** | n | *n*ette |
@@ -89,7 +89,7 @@
 | **Liquids** | **/l/** | l | *l*ipe |
 | | **/ɫ/** | ll, l | fa*ll*e |
 | | **/r/** | r, rh | *r*one, *rh*yþm |
-| **Glides** | **/w/** | o, u, ü | *ou*et, c*u*ic, a*ü*ard |
+| **Glides** | **/w/** | o, u, ü | *u*et, c*u*ic, a*ü*ard |
 | | **/j/** | e, y | *y*es |
 
 ---
