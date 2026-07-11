@@ -6,9 +6,9 @@ import GridList from './ui/GridList.astro';
 import BackButton from './ui/BackButton.astro';
 import SearchBar from './SearchBar.jsx';
 
-const { title, items, isRoot, slug } = Astro.props;
+const { title, items, isRoot, view } = Astro.props;
 
-const useGrid = slug && slug.startsWith('dictionary');
+const useGrid = view === 'grid';
 ---
 
 <Container className="listContainer">

@@ -10,7 +10,7 @@ import ScrollBar from './ui/ScrollBar.astro';
 import VowelShiftVisualizer from './VowelShiftVisualizer.jsx';
 
 // --- PROPS & STATE ---
-const { content, ext, isRoot, slug } = Astro.props;
+const { content, ext, isRoot, widget } = Astro.props;
 
 // --- DATA PROCESSING ---
 const parsedContent = (ext === '.md' && content) ? marked.parse(content) : content;
@@ -106,7 +106,7 @@ const parsedStanzas = (ext === '.txt' && content)
         )}
 
         {/* --- CONDITIONAL FEATURE INJECTION --- */}
-        {slug === 'orthography/phenomena/great-vowel-shift' && (
+        {widget === 'vowel-shift' && (
             <div style="margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #e5e7eb;">
                 <h3 style="font-size: 1.5rem; font-weight: bold; margin-bottom: 1rem; color: #1f2937;">
                     Interactive GVS Visualizer
@@ -128,7 +128,7 @@ const parsedStanzas = (ext === '.txt' && content)
   }
   
   .markdown-body th, .markdown-body td {
-    border: 1px solid #d1d5db; /* Clean, subtle gray border */
+    border: 1px solid #d1d5db;
     padding: 10px 16px;
     text-align: left;
   }
@@ -138,7 +138,6 @@ const parsedStanzas = (ext === '.txt' && content)
     font-weight: 600;
   }
 
-  /* Optional: Striping for easier reading on wide tables */
   .markdown-body tr:nth-child(even) {
     background-color: #f9fafb;
   }

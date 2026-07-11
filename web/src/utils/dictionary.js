@@ -1,6 +1,7 @@
 // web/src/utils/dictionary.js
 import fs from 'node:fs';
 import path from 'node:path';
+import { getRouteFeatures } from '../config/routeFeatures.js';
 
 function capitalizeFirst(str) {
   if (!str) return str;
@@ -45,7 +46,8 @@ export function getDictionaryPaths() {
             title: formatTitle(path.basename(currentPath, ext)), 
             content, 
             ext, 
-            isRoot: false
+            isRoot: false,
+            ...getRouteFeatures(routePath),
          }
        });
        return;
@@ -115,8 +117,9 @@ export function getDictionaryPaths() {
           contents, 
           content: indexContent, 
           ext: indexExt, 
-          bookPages, // <-- NEW: Injected straight into Astro.props!
-          isRoot
+          bookPages,
+          isRoot,
+          ...getRouteFeatures(routePath),
         }
       });
     }

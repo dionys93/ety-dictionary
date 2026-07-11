@@ -19,10 +19,10 @@ const {
   content,
   ext,
   isRoot,
-  bookPages
+  bookPages,
+  view,
+  widget,
 } = Astro.props;
-
-const { slug } = Astro.params;
 
 const isBookDir = type === 'directory' && bookPages && bookPages.length > 0;
 const mobileMode = (type === 'file' || isBookDir) ? 'mobile-content' : 'mobile-nav';
@@ -30,9 +30,6 @@ const mobileMode = (type === 'file' || isBookDir) ? 'mobile-content' : 'mobile-n
 
 <Layout title={title}>
   <style>
-    /* ==========================================
-       DESKTOP LAYOUT (The Two-Pane UI)
-       ========================================== */
     .split-layout {
       display: grid;
       grid-template-columns: 350px 1fr;
@@ -58,9 +55,6 @@ const mobileMode = (type === 'file' || isBookDir) ? 'mobile-content' : 'mobile-n
       display: none;
     }
 
-    /* ==========================================
-       MOBILE LAYOUT (The Native Stack View)
-       ========================================== */
     @media (max-width: 768px) {
       .split-layout {
         display: block;
@@ -101,7 +95,7 @@ const mobileMode = (type === 'file' || isBookDir) ? 'mobile-content' : 'mobile-n
         content={type === 'directory' ? content : undefined}
         ext={ext}
         isRoot={isRoot}
-        slug={slug || ''}
+        view={view}
       />
     </nav>
 
@@ -119,7 +113,7 @@ const mobileMode = (type === 'file' || isBookDir) ? 'mobile-content' : 'mobile-n
           content={content}
           ext={ext}
           isRoot={isRoot}
-          slug={slug || ''}
+          widget={widget}
         />
       ) : (
         <div style="display: flex; align-items: center; justify-content: center; flex-grow: 1; color: #9ca3af;">
