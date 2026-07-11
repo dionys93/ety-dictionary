@@ -14,7 +14,7 @@
 | **/æ/** | Initial | a | *a*miral, *a*nimal, *a*nimait |
 | | Medial | a, a-e, à | b*a*te, c*a*te, f*a*t, alf*a*lfa, an*à*lysis |
 | **/ɑ/** | Initial | o | *o*ctopus |
-| | Medial | o, á | l*o*c, d*o*c, st*o*c, d*o*ctre, f*a*þre, u*a*tre, c*á*te |
+| | Medial | o, a, á | l*o*c, d*o*c, st*o*c, d*o*ctre, f*a*þre, u*a*tre, c*á*te |
 | | Final | a-e | Ir*a*ne |
 | **/ɔ/** | Initial | au, ò | *Au*strâlia, *Ò*stria |
 | | Medial | au, all, off, oh, ò | s*au*ce, c*au*fie, l*au*s, c*all*e, c*off*e, b*oh*t, c*ò*ste |
@@ -28,7 +28,7 @@
 | | Medial | a, i, e, u, o | anim*a*t, ind*i*viḑual, d*e*vote, c*u*tte, r*o*ne, c*o*me, t*o*nele, s*o*mere |
 | | Final | a | mídi*a* |
 | **/eɪ/** | Initial | â, éi, ea | *â*ge, *â*pe, *â*þyist, *éi*me, *ea*le |
-| | Medial | â, aî, ai-e, ei, éi, ea, eig, eih | cr*â*te, f*â*te, g*â*te, st*â*te, m*â*te, tr*aî*tre, r*ai*n*e*, v*ei*ne, r*ei*ne, str*ei*ne, s*éi*le, s*ea*de, s*ea*me, gr*ea*t, st*ai*n*e*, r*eig*ne, u*eih*te |
+| | Medial | â, aî, ai-e, ei, éi, ea, eig, eih | cr*â*te, f*â*te, g*â*te, st*â*te, m*â*te, tr*aî*tre, r*ai*n*e*, v*ei*ne, r*ei*ns, str*ei*ne, s*éi*le, s*ea*de, s*ea*me, gr*ea*t, st*ai*n*e*, r*eig*ne, u*eih*te |
 | | Final (Roots & Suffixes) | aie, eie, ay, ey, eih-e | d*aie*, st*aie*, conv*eie*, gr*ay*, þ*ey*, sl*eih*e (sl*eih*s) |
 | **/aɪ/** | Initial | î, aie, eai | *î*le, *î*tem, *aie*le, *eai*e |
 | | Medial | î, aih, oih, ŷ | c*î*te, m*î*te, n*î*hte, n*ai*hte, m*aih*te, h*oih*te, f*oih*te, c*ŷ*nd, c*ŷ*te |
@@ -53,7 +53,7 @@
 | **/ɛr/** | eir(e), ere, air(e), ear(e), èr | b*eir*e, h*air*e, b*ear*e, *èr*a |
 | **/ɪr/** | -iar, -ire, -ior, -ier | f*iar*e, n*ir*e, st*ior*e, ch*ier*e |
 | **/ɑr/** | ar | c*ar*re, st*ar*re |
-| **/ɔr/** | ôre, aur(e), oure | n*ôr*þ, r*aur*e, fl*our*e |
+| **/ɔr/** | aur(e), oure | n*or*þ, r*aur*e, fl*our*e |
 | **/wɔr/** | uar | *uar*m, s*uar*me |
 | **/aɪʲɚ/** | -îar, -îer, -îor, -îre | f*ŷar*s, acqu*îer*, f*îre* |
 | **/aʊʷɚ/** | ôar, ôer, aû(e)r | *ôar*e, c*ôar*d, dev*ôer*, c*aûer*, saûre |
@@ -68,10 +68,10 @@
 | **Stops** | **/p/** | p | *p*en |
 | | **/b/** | b | *b*atte |
 | | **/t/** | t | *t*op |
-| | **/d/** | d | *d*ogge |
-| | **/k/** | c, ch, q | *c*ate, s*ch*oule, *q*uic |
-| | **/g/** | g, gu, gh | *g*âte, *gu*ive, *gh*oste |
-| **Flap** | **/ɾ/** | t, d | uá*t*re, ma*d*re |
+| | **/d/** | d | *d*ogue |
+| | **/k/** | c, ch, q | *c*ate, *c*uic, s*c*oule, anti*q*ue |
+| | **/g/** | g, gu, gh | *g*âte, *gu*ive |
+| **Flap** | **/ɾ/** | t, d | ua*t*re |
 | **Fricatives**| **/f/** | f, ph, fh | *f*ilme, *ph*otografe |
 | | **/v/** | v | *v*ote |
 | | **/θ/** | þ | *þ*in, au*þ*re |
