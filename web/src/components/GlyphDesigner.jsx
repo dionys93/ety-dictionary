@@ -1,5 +1,15 @@
 import { useState, useRef, useEffect, useCallback } from 'react';
 import { REFERENCE_GLYPHS } from '../../glyphs/reference.js';
+import {
+  CANVAS_SIZE,
+  getBoundingBox,
+  translatePath,
+  bakeTransform,
+  clientToSVG,
+  svgTransformAttr,
+  transformedBBox,
+} from '../utils/svgPath.js';
+import { usePointerDrag } from '../hooks/usePointerDrag.js';
 
 const CATEGORIES = [
   { id: 'Korean',         glyph: '한', label: 'Korean (isolated)' },
@@ -11,88 +21,6 @@ const CATEGORIES = [
   { id: 'Radicals', glyph: '部', label: 'Radicals (部首)' },
   { id: 'Custom',         glyph: '✎', label: 'Custom' },
 ];
-
-// ── Vector math ──────────────────────────────────────────────────────────────
-
-const extractCoordinates = (pathString) =>
-  (pathString.match(/([MLQCZmlqczA])([^MLQCZmlqczA]*)/g) || [])
-    .filter(cmd => cmd[0].toUpperCase() !== 'Z')
-    .flatMap(cmd => {
-      const letter = cmd[0].toUpperCase();
-      const nums = cmd.slice(1).trim().split(/\s+|,/).filter(n => n !== '').map(Number);
-      return letter === 'A'
-        ? nums.reduce((acc, _, i) => (i % 7 === 5 && nums[i + 1] !== undefined) ? [...acc, { x: nums[i], y: nums[i + 1] }] : acc, [])
-        : nums.reduce((acc, _, i) => (i % 2 === 0 && nums[i + 1] !== undefined) ? [...acc, { x: nums[i], y: nums[i + 1] }] : acc, []);
-    });
-
-const getBoundingBox = (paths) => {
-  const coords = paths.flatMap(extractCoordinates);
-  if (coords.length === 0) return { minX: 0, minY: 0, maxX: 0, maxY: 0, cx: 250, cy: 250, w: 0, h: 0 };
-  const xs = coords.map(c => c.x);
-  const ys = coords.map(c => c.y);
-  const minX = Math.min(...xs), maxX = Math.max(...xs);
-  const minY = Math.min(...ys), maxY = Math.max(...ys);
-  return { minX, minY, maxX, maxY, cx: (minX + maxX) / 2, cy: (minY + maxY) / 2, w: maxX - minX, h: maxY - minY };
-};
-
-const translatePath = (pathString, dx, dy) =>
-  pathString.replace(/([MLQCZmlqczA])([^MLQCZmlqczA]*)/g, (_, command, args) => {
-    if (command.toUpperCase() === 'Z') return command;
-    const nums = args.trim().split(/\s+|,/).filter(n => n !== '').map(Number);
-    if (nums.length === 0) return command;
-    const isArc = command.toUpperCase() === 'A';
-    const shifted = nums.map((num, i) =>
-      isArc ? (i % 7 === 5 ? num + dx : (i % 7 === 6 ? num + dy : num)) : (i % 2 === 0 ? num + dx : num + dy)
-    );
-    return `${command} ${shifted.join(' ')} `;
-  }).trim();
-
-// Bake a transform { tx, ty, scaleX, scaleY, cx, cy } into path coordinates.
-// Scale is applied around (cx, cy), then translate is applied.
-const bakeTransform = (pathString, { tx, ty, scaleX, scaleY, cx, cy }) =>
-  pathString.replace(/([MLQCZmlqczA])([^MLQCZmlqczA]*)/g, (_, command, args) => {
-    if (command.toUpperCase() === 'Z') return command;
-    const nums = args.trim().split(/\s+|,/).filter(n => n !== '').map(Number);
-    if (nums.length === 0) return command;
-    const isArc = command.toUpperCase() === 'A';
-    const out = nums.map((num, i) => {
-      if (isArc) {
-        if (i % 7 === 5) return (num - cx) * scaleX + cx + tx;
-        if (i % 7 === 6) return (num - cy) * scaleY + cy + ty;
-        return num;
-      }
-      if (i % 2 === 0) return (num - cx) * scaleX + cx + tx;
-      return (num - cy) * scaleY + cy + ty;
-    });
-    return `${command} ${out.join(' ')} `;
-  }).trim();
-
-const clientToSVG = (svgEl, clientX, clientY) => {
-  const rect = svgEl.getBoundingClientRect();
-  return {
-    x: ((clientX - rect.left) / rect.width)  * 500,
-    y: ((clientY - rect.top)  / rect.height) * 500,
-  };
-};
-
-// Build the SVG transform string from an entry's transform object
-const svgTransformAttr = ({ tx, ty, scaleX, scaleY, cx, cy }) =>
-  `translate(${cx + tx}, ${cy + ty}) scale(${scaleX}, ${scaleY}) translate(${-cx}, ${-cy})`;
-
-// Compute the on-screen bounding box of a glyph entry after its transform
-const transformedBBox = (entry) => {
-  const { minX, minY, maxX, maxY } = getBoundingBox(entry.paths);
-  const { tx, ty, scaleX, scaleY, cx, cy } = entry.transform;
-  const pts = [
-    { x: minX, y: minY }, { x: maxX, y: minY },
-    { x: maxX, y: maxY }, { x: minX, y: maxY },
-  ].map(p => ({
-    x: (p.x - cx) * scaleX + cx + tx,
-    y: (p.y - cy) * scaleY + cy + ty,
-  }));
-  const xs = pts.map(p => p.x), ys = pts.map(p => p.y);
-  return { minX: Math.min(...xs), minY: Math.min(...ys), maxX: Math.max(...xs), maxY: Math.max(...ys) };
-};
 
 // The 8 handle definitions: id, position on bbox as [u, v] in [0,1], cursor
 const HANDLES = [
@@ -108,24 +36,25 @@ const HANDLES = [
 
 const HANDLE_R = 5; // handle dot radius in SVG units
 
-// ── Component ─────────────────────────────────────────────────────────────────
-
 export default function GlyphDesigner() {
   // Entry shape:
   //   { type: 'stroke', d: string }
   //   { type: 'glyph',  paths: string[], transform: { tx, ty, scaleX, scaleY, cx, cy } }
-  const [entries,     setEntries]     = useState([]);
-  const [currentPath, setCurrentPath] = useState('');
-  const [glyphName,   setGlyphName]   = useState('');
-  const [activeTab,   setActiveTab]   = useState(CATEGORIES[0].id);
-  const [library,     setLibrary]     = useState([]);
-  const [ghost,       setGhost]       = useState(null);
-  const [selectedIdx, setSelectedIdx] = useState(null); // index into entries
+  const [entries,       setEntries]       = useState([]);
+  const [currentPath,   setCurrentPath]   = useState('');
+  const [glyphName,     setGlyphName]     = useState('');
+  const [activeTab,     setActiveTab]     = useState(CATEGORIES[0].id);
+  const [library,       setLibrary]       = useState([]);
+  const [ghost,         setGhost]         = useState(null);
+  const [selectedIdx,   setSelectedIdx]   = useState(null); // index into entries
+  const [statusMessage, setStatusMessage] = useState(null); // { type: 'error'|'success', text }
 
   const isDrawing  = useRef(false);
   const isDragging = useRef(false);
   const svgRef     = useRef(null);
   const ghostRef   = useRef(null);
+
+  const startPointerDrag = usePointerDrag();
 
   const fetchLibrary = async () => {
     try {
@@ -162,8 +91,6 @@ export default function GlyphDesigner() {
 
   // ── Sidebar card drag → ghost → place ────────────────────────────────────────
   const handleCardPointerDown = useCallback((e, glyphPaths) => {
-    e.preventDefault();
-    isDragging.current = true;
     setSelectedIdx(null);
 
     const { cx, cy } = getBoundingBox(glyphPaths);
@@ -172,86 +99,70 @@ export default function GlyphDesigner() {
     ghostRef.current = ghostState;
     setGhost(ghostState);
 
-    const onMove = (ev) => {
-      if (!svgRef.current) return;
-      const pt = clientToSVG(svgRef.current, ev.clientX, ev.clientY);
-      const next = { ...ghostRef.current, x: pt.x, y: pt.y };
-      ghostRef.current = next;
-      setGhost(next);
-    };
+    startPointerDrag(e, {
+      isDraggingRef: isDragging,
+      onMove: (ev) => {
+        if (!svgRef.current) return;
+        const pt = clientToSVG(svgRef.current, ev.clientX, ev.clientY);
+        const next = { ...ghostRef.current, x: pt.x, y: pt.y };
+        ghostRef.current = next;
+        setGhost(next);
+      },
+      onEnd: (ev) => {
+        if (!svgRef.current) { setGhost(null); ghostRef.current = null; return; }
 
-    const onUp = (ev) => {
-      window.removeEventListener('pointermove', onMove);
-      window.removeEventListener('pointerup',   onUp);
-      isDragging.current = false;
+        const rect = svgRef.current.getBoundingClientRect();
+        const inside = ev.clientX >= rect.left && ev.clientX <= rect.right &&
+                       ev.clientY >= rect.top  && ev.clientY <= rect.bottom;
 
-      if (!svgRef.current) { setGhost(null); ghostRef.current = null; return; }
+        if (inside) {
+          const drop = clientToSVG(svgRef.current, ev.clientX, ev.clientY);
+          const { cx, cy, paths } = ghostRef.current;
+          const tx = drop.x - cx;
+          const ty = drop.y - cy;
+          setEntries(prev => {
+            const next = [...prev, {
+              type: 'glyph',
+              paths,
+              transform: { tx, ty, scaleX: 1, scaleY: 1, cx, cy },
+            }];
+            // Auto-select the newly placed glyph
+            setSelectedIdx(next.length - 1);
+            return next;
+          });
+        }
 
-      const rect = svgRef.current.getBoundingClientRect();
-      const inside = ev.clientX >= rect.left && ev.clientX <= rect.right &&
-                     ev.clientY >= rect.top  && ev.clientY <= rect.bottom;
-
-      if (inside) {
-        const drop = clientToSVG(svgRef.current, ev.clientX, ev.clientY);
-        const { cx, cy, paths } = ghostRef.current;
-        const tx = drop.x - cx;
-        const ty = drop.y - cy;
-        setEntries(prev => {
-          const next = [...prev, {
-            type: 'glyph',
-            paths,
-            transform: { tx, ty, scaleX: 1, scaleY: 1, cx, cy },
-          }];
-          // Auto-select the newly placed glyph
-          setSelectedIdx(next.length - 1);
-          return next;
-        });
-      }
-
-      setGhost(null);
-      ghostRef.current = null;
-    };
-
-    window.addEventListener('pointermove', onMove);
-    window.addEventListener('pointerup',   onUp);
-  }, []);
+        setGhost(null);
+        ghostRef.current = null;
+      },
+    });
+  }, [startPointerDrag]);
 
   // ── Glyph body drag (move) ───────────────────────────────────────────────────
   const handleGlyphPointerDown = useCallback((e, entryIdx) => {
     e.stopPropagation();
-    e.preventDefault();
-    isDragging.current = true;
     setSelectedIdx(entryIdx);
 
-    const startPt = clientToSVG(svgRef.current, e.clientX, e.clientY);
-    let lastPt = startPt;
+    let lastPt = clientToSVG(svgRef.current, e.clientX, e.clientY);
 
-    const onMove = (ev) => {
-      const pt = clientToSVG(svgRef.current, ev.clientX, ev.clientY);
-      const ddx = pt.x - lastPt.x;
-      const ddy = pt.y - lastPt.y;
-      lastPt = pt;
-      setEntries(prev => prev.map((entry, i) => {
-        if (i !== entryIdx || entry.type !== 'glyph') return entry;
-        return { ...entry, transform: { ...entry.transform, tx: entry.transform.tx + ddx, ty: entry.transform.ty + ddy } };
-      }));
-    };
-
-    const onUp = () => {
-      window.removeEventListener('pointermove', onMove);
-      window.removeEventListener('pointerup',   onUp);
-      isDragging.current = false;
-    };
-
-    window.addEventListener('pointermove', onMove);
-    window.addEventListener('pointerup',   onUp);
-  }, []);
+    startPointerDrag(e, {
+      isDraggingRef: isDragging,
+      onMove: (ev) => {
+        const pt = clientToSVG(svgRef.current, ev.clientX, ev.clientY);
+        const ddx = pt.x - lastPt.x;
+        const ddy = pt.y - lastPt.y;
+        lastPt = pt;
+        setEntries(prev => prev.map((entry, i) => {
+          if (i !== entryIdx || entry.type !== 'glyph') return entry;
+          return { ...entry, transform: { ...entry.transform, tx: entry.transform.tx + ddx, ty: entry.transform.ty + ddy } };
+        }));
+      },
+    });
+  }, [startPointerDrag]);
 
   // ── Scale handle drag ────────────────────────────────────────────────────────
   const handleScalePointerDown = useCallback((e, entryIdx, handle) => {
     e.stopPropagation();
-    e.preventDefault();
-    isDragging.current = true;
 
     // Snapshot the bbox at drag start so anchor point is stable
     const entry = entries[entryIdx]; // closure over current entries
@@ -271,43 +182,36 @@ export default function GlyphDesigner() {
     const startDX = startHandleX - anchorX || 1; // avoid div/0
     const startDY = startHandleY - anchorY || 1;
 
-    const onMove = (ev) => {
-      const pt = clientToSVG(svgRef.current, ev.clientX, ev.clientY);
-      const dx = pt.x - startPt.x;
-      const dy = pt.y - startPt.y;
+    startPointerDrag(e, {
+      isDraggingRef: isDragging,
+      onMove: (ev) => {
+        const pt = clientToSVG(svgRef.current, ev.clientX, ev.clientY);
+        const dx = pt.x - startPt.x;
+        const dy = pt.y - startPt.y;
 
-      const newHandleX = startHandleX + dx;
-      const newHandleY = startHandleY + dy;
+        const newHandleX = startHandleX + dx;
+        const newHandleY = startHandleY + dy;
 
-      const rawScaleX = handle.scaleX ? (newHandleX - anchorX) / startDX : 1;
-      const rawScaleY = handle.scaleY ? (newHandleY - anchorY) / startDY : 1;
+        const rawScaleX = handle.scaleX ? (newHandleX - anchorX) / startDX : 1;
+        const rawScaleY = handle.scaleY ? (newHandleY - anchorY) / startDY : 1;
 
-      // Clamp to avoid flip / near-zero
-      const clampedSX = handle.scaleX ? Math.max(0.05, rawScaleX) : 1;
-      const clampedSY = handle.scaleY ? Math.max(0.05, rawScaleY) : 1;
+        // Clamp to avoid flip / near-zero
+        const clampedSX = handle.scaleX ? Math.max(0.05, rawScaleX) : 1;
+        const clampedSY = handle.scaleY ? Math.max(0.05, rawScaleY) : 1;
 
-      setEntries(prev => prev.map((en, i) => {
-        if (i !== entryIdx || en.type !== 'glyph') return en;
-        const orig = getBoundingBox(en.paths);
-        // New tx/ty so that the anchor world point doesn't move
-        // anchor in original-path space:
-        const origAnchorX = orig.minX + handle.anchorU * orig.w;
-        const origAnchorY = orig.minY + handle.anchorV * orig.h;
-        const newTX = anchorX - (origAnchorX - orig.cx) * clampedSX - orig.cx;
-        const newTY = anchorY - (origAnchorY - orig.cy) * clampedSY - orig.cy;
-        return { ...en, transform: { ...en.transform, scaleX: clampedSX, scaleY: clampedSY, tx: newTX, ty: newTY } };
-      }));
-    };
-
-    const onUp = () => {
-      window.removeEventListener('pointermove', onMove);
-      window.removeEventListener('pointerup',   onUp);
-      isDragging.current = false;
-    };
-
-    window.addEventListener('pointermove', onMove);
-    window.addEventListener('pointerup',   onUp);
-  }, [entries]);
+        setEntries(prev => prev.map((en, i) => {
+          if (i !== entryIdx || en.type !== 'glyph') return en;
+          const orig = getBoundingBox(en.paths);
+          // New tx/ty so that the anchor world point doesn't move
+          const origAnchorX = orig.minX + handle.anchorU * orig.w;
+          const origAnchorY = orig.minY + handle.anchorV * orig.h;
+          const newTX = anchorX - (origAnchorX - orig.cx) * clampedSX - orig.cx;
+          const newTY = anchorY - (origAnchorY - orig.cy) * clampedSY - orig.cy;
+          return { ...en, transform: { ...en.transform, scaleX: clampedSX, scaleY: clampedSY, tx: newTX, ty: newTY } };
+        }));
+      },
+    });
+  }, [entries, startPointerDrag]);
 
   // ── Edit actions ─────────────────────────────────────────────────────────────
   const handleUndo = () => {
@@ -318,11 +222,22 @@ export default function GlyphDesigner() {
     });
   };
 
-  const clearCanvas = () => { setEntries([]); setCurrentPath(''); setSelectedIdx(null); };
+  const clearCanvas = () => {
+    setEntries([]);
+    setCurrentPath('');
+    setSelectedIdx(null);
+    setStatusMessage(null);
+  };
 
   const handleExport = async () => {
-    if (entries.length === 0) return alert('Canvas is empty! Draw something first.');
-    if (!glyphName.trim())    return alert('Please give your glyph a name before saving.');
+    if (entries.length === 0) {
+      setStatusMessage({ type: 'error', text: 'Canvas is empty! Draw something first.' });
+      return;
+    }
+    if (!glyphName.trim()) {
+      setStatusMessage({ type: 'error', text: 'Please give your glyph a name before saving.' });
+      return;
+    }
 
     // Bake transforms into path coords before saving
     const flatPaths = entries.flatMap(entry => {
@@ -338,10 +253,15 @@ export default function GlyphDesigner() {
         body: JSON.stringify(glyphData),
       });
       const rawText = await response.text();
-      if (response.ok) { setGlyphName(''); fetchLibrary(); }
-      else alert(`Error saving: ${JSON.parse(rawText).error}`);
+      if (response.ok) {
+        setGlyphName('');
+        setStatusMessage({ type: 'success', text: `Saved "${glyphData.name}" to the library.` });
+        fetchLibrary();
+      } else {
+        setStatusMessage({ type: 'error', text: `Error saving: ${JSON.parse(rawText).error}` });
+      }
     } catch {
-      alert('Failed to reach the local server.');
+      setStatusMessage({ type: 'error', text: 'Failed to reach the local server.' });
     }
   };
 
@@ -371,7 +291,7 @@ export default function GlyphDesigner() {
       }}
       title={glyph.name}
     >
-      <svg width="100%" height="50" viewBox="0 0 500 500" style={{ pointerEvents: 'none' }}>
+      <svg width="100%" height="50" viewBox={`0 0 ${CANVAS_SIZE} ${CANVAS_SIZE}`} style={{ pointerEvents: 'none' }}>
         {glyph.paths.map((p, i) => (
           <path key={i} d={p} fill={pathColor} fillRule="evenodd" stroke="none" />
         ))}
@@ -411,6 +331,20 @@ export default function GlyphDesigner() {
           Clear
         </button>
       </div>
+
+      {/* Save feedback — replaces the old alert() calls */}
+      {statusMessage && (
+        <div style={{
+          fontSize: '0.8rem',
+          padding: '0.5rem 0.75rem',
+          borderRadius: '6px',
+          backgroundColor: statusMessage.type === 'error' ? '#fef2f2' : '#f0fdf4',
+          border: statusMessage.type === 'error' ? '1px solid #fca5a5' : '1px solid #86efac',
+          color: statusMessage.type === 'error' ? '#991b1b' : '#166534',
+        }}>
+          {statusMessage.text}
+        </div>
+      )}
 
       {/* Transform readout when a glyph is selected */}
       {selEntry && selEntry.type === 'glyph' && (
@@ -464,7 +398,7 @@ export default function GlyphDesigner() {
         <div style={{ position: 'relative' }}>
           <svg
             ref={svgRef}
-            width="500" height="500" viewBox="0 0 500 500"
+            width={CANVAS_SIZE} height={CANVAS_SIZE} viewBox={`0 0 ${CANVAS_SIZE} ${CANVAS_SIZE}`}
             style={{
               border: '2px solid #e5e7eb', borderRadius: '8px',
               cursor: ghost ? 'none' : 'crosshair',
