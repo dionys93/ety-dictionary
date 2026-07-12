@@ -9,6 +9,12 @@ import {
   svgTransformAttr,
   transformedBBox,
 } from '../utils/svgPath.js';
+import {
+  eraseRectFromGlyphPaths,
+  eraseRectFromStroke,
+  rectsOverlap,
+  normalizeRect,
+} from '../utils/pathClip.js';
 import { usePointerDrag } from '../hooks/usePointerDrag.js';
 
 const CATEGORIES = [
@@ -35,6 +41,7 @@ const HANDLES = [
 ];
 
 const HANDLE_R = 5; // handle dot radius in SVG units
+const MIN_ERASE_SIZE = 2; // ignore accidental no-drag clicks while in erase mode
 
 export default function GlyphDesigner() {
   // Entry shape:
@@ -48,11 +55,14 @@ export default function GlyphDesigner() {
   const [ghost,         setGhost]         = useState(null);
   const [selectedIdx,   setSelectedIdx]   = useState(null); // index into entries
   const [statusMessage, setStatusMessage] = useState(null); // { type: 'error'|'success', text }
+  const [mode,          setMode]          = useState('draw'); // 'draw' | 'erase'
+  const [eraseBox,      setEraseBox]      = useState(null); // { x0, y0, x1, y1 } in SVG coords, live while dragging
 
   const isDrawing  = useRef(false);
   const isDragging = useRef(false);
   const svgRef     = useRef(null);
   const ghostRef   = useRef(null);
+  const eraseBoxRef = useRef(null);
 
   const startPointerDrag = usePointerDrag();
 
@@ -87,6 +97,89 @@ export default function GlyphDesigner() {
       setEntries(prev => [...prev, { type: 'stroke', d: currentPath }]);
       setCurrentPath('');
     }
+  };
+
+  // ── Erase-area marquee ───────────────────────────────────────────────────────
+  const applyErase = (eraseRect) => {
+    if (eraseRect.maxX - eraseRect.minX < MIN_ERASE_SIZE || eraseRect.maxY - eraseRect.minY < MIN_ERASE_SIZE) return;
+
+    let changed = false;
+    const next = [];
+
+    for (const entry of entries) {
+      if (entry.type === 'stroke') {
+        const bbox = getBoundingBox([entry.d]);
+        if (!rectsOverlap(bbox, eraseRect)) { next.push(entry); continue; }
+
+        changed = true;
+        eraseRectFromStroke(entry.d, eraseRect).forEach(d => next.push({ type: 'stroke', d }));
+        continue;
+      }
+
+      // Glyph entry: bake its current transform into absolute coordinates
+      // before erasing, then reset to an identity transform centered on
+      // whatever remains — so it's still fully draggable/resizable after.
+      const bbox = transformedBBox(entry);
+      if (!rectsOverlap(bbox, eraseRect)) { next.push(entry); continue; }
+
+      const bakedPaths = entry.paths.map(p => bakeTransform(p, entry.transform));
+      const survivingPaths = eraseRectFromGlyphPaths(bakedPaths, eraseRect);
+      changed = true;
+
+      if (survivingPaths.length === 0) continue; // fully erased — dropped
+
+      const newBBox = getBoundingBox(survivingPaths);
+      next.push({
+        type: 'glyph',
+        paths: survivingPaths,
+        transform: { tx: 0, ty: 0, scaleX: 1, scaleY: 1, cx: newBBox.cx, cy: newBBox.cy },
+      });
+    }
+
+    if (changed) {
+      setEntries(next);
+      setSelectedIdx(null);
+    }
+  };
+
+  const startErase = (e) => {
+    setSelectedIdx(null);
+    const pt = clientToSVG(svgRef.current, e.clientX, e.clientY);
+    const box = { x0: pt.x, y0: pt.y, x1: pt.x, y1: pt.y };
+    eraseBoxRef.current = box;
+    setEraseBox(box);
+
+    startPointerDrag(e, {
+      isDraggingRef: isDragging,
+      onMove: (ev) => {
+        const p = clientToSVG(svgRef.current, ev.clientX, ev.clientY);
+        const next = { ...eraseBoxRef.current, x1: p.x, y1: p.y };
+        eraseBoxRef.current = next;
+        setEraseBox(next);
+      },
+      onEnd: () => {
+        const finishedBox = eraseBoxRef.current;
+        eraseBoxRef.current = null;
+        setEraseBox(null);
+        if (finishedBox) applyErase(normalizeRect(finishedBox));
+      },
+    });
+  };
+
+  // Canvas-level dispatch: pen-drawing and the erase marquee share the same
+  // pointer events on the <svg>, so route based on the active tool.
+  const handleCanvasPointerDown = (e) => {
+    if (mode === 'erase') startErase(e);
+    else startDrawing(e);
+  };
+  const handleCanvasPointerMove = (e) => {
+    if (mode === 'draw') draw(e);
+  };
+  const handleCanvasPointerUp = () => {
+    if (mode === 'draw') stopDrawing();
+  };
+  const handleCanvasPointerLeave = () => {
+    if (mode === 'draw') stopDrawing();
   };
 
   // ── Sidebar card drag → ghost → place ────────────────────────────────────────
@@ -140,6 +233,7 @@ export default function GlyphDesigner() {
 
   // ── Glyph body drag (move) ───────────────────────────────────────────────────
   const handleGlyphPointerDown = useCallback((e, entryIdx) => {
+    if (mode !== 'draw') return; // let it bubble up to the canvas-level erase marquee
     e.stopPropagation();
     setSelectedIdx(entryIdx);
 
@@ -158,10 +252,11 @@ export default function GlyphDesigner() {
         }));
       },
     });
-  }, [startPointerDrag]);
+  }, [startPointerDrag, mode]);
 
   // ── Scale handle drag ────────────────────────────────────────────────────────
   const handleScalePointerDown = useCallback((e, entryIdx, handle) => {
+    if (mode !== 'draw') return;
     e.stopPropagation();
 
     // Snapshot the bbox at drag start so anchor point is stable
@@ -211,7 +306,7 @@ export default function GlyphDesigner() {
         }));
       },
     });
-  }, [entries, startPointerDrag]);
+  }, [entries, startPointerDrag, mode]);
 
   // ── Edit actions ─────────────────────────────────────────────────────────────
   const handleUndo = () => {
@@ -307,6 +402,28 @@ export default function GlyphDesigner() {
 
       {/* TOOLBAR */}
       <div style={{ display: 'flex', gap: '1rem', alignItems: 'center', backgroundColor: '#f9fafb', padding: '1rem', borderRadius: '8px', border: '1px solid #e5e7eb', flexWrap: 'wrap' }}>
+        <div style={{ display: 'flex', gap: '0.25rem', backgroundColor: '#ffffff', padding: '0.25rem', borderRadius: '6px', border: '1px solid #d1d5db' }}>
+          <button
+            onClick={() => setMode('draw')}
+            style={{
+              padding: '0.4rem 0.75rem', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold', fontSize: '0.8rem',
+              backgroundColor: mode === 'draw' ? '#374151' : 'transparent',
+              color: mode === 'draw' ? '#ffffff' : '#4b5563',
+            }}
+          >
+            ✏️ Draw
+          </button>
+          <button
+            onClick={() => { setMode('erase'); setSelectedIdx(null); }}
+            style={{
+              padding: '0.4rem 0.75rem', border: 'none', borderRadius: '4px', cursor: 'pointer', fontWeight: 'bold', fontSize: '0.8rem',
+              backgroundColor: mode === 'erase' ? '#991b1b' : 'transparent',
+              color: mode === 'erase' ? '#ffffff' : '#4b5563',
+            }}
+          >
+            ⬚ Erase Area
+          </button>
+        </div>
         <input
           type="text"
           placeholder="Enter glyph name..."
@@ -346,12 +463,17 @@ export default function GlyphDesigner() {
         </div>
       )}
 
-      {/* Transform readout when a glyph is selected */}
-      {selEntry && selEntry.type === 'glyph' && (
+      {/* Transform readout when a glyph is selected (draw mode) or an erase-mode hint */}
+      {mode === 'draw' && selEntry && selEntry.type === 'glyph' && (
         <div style={{ fontSize: '0.75rem', color: '#6b7280', padding: '0.4rem 0.75rem', backgroundColor: '#f0f9ff', border: '1px solid #bae6fd', borderRadius: '6px', display: 'flex', gap: '1.5rem' }}>
           <span>scale X: <strong style={{ color: '#0369a1' }}>{selEntry.transform.scaleX.toFixed(2)}</strong></span>
           <span>scale Y: <strong style={{ color: '#0369a1' }}>{selEntry.transform.scaleY.toFixed(2)}</strong></span>
           <span style={{ marginLeft: 'auto', color: '#94a3b8' }}>drag handles to resize · drag body to move · click canvas to deselect</span>
+        </div>
+      )}
+      {mode === 'erase' && (
+        <div style={{ fontSize: '0.75rem', color: '#991b1b', padding: '0.4rem 0.75rem', backgroundColor: '#fef2f2', border: '1px solid #fca5a5', borderRadius: '6px' }}>
+          Drag a box over the canvas to erase everything inside it — strokes get cut, glyphs stay draggable and resizable afterward.
         </div>
       )}
 
@@ -406,10 +528,10 @@ export default function GlyphDesigner() {
               boxShadow: '0 4px 6px -1px rgba(0,0,0,0.1)',
               userSelect: 'none',
             }}
-            onPointerDown={startDrawing}
-            onPointerMove={draw}
-            onPointerUp={stopDrawing}
-            onPointerLeave={stopDrawing}
+            onPointerDown={handleCanvasPointerDown}
+            onPointerMove={handleCanvasPointerMove}
+            onPointerUp={handleCanvasPointerUp}
+            onPointerLeave={handleCanvasPointerLeave}
           >
             {/* Grid guides */}
             <g stroke="#f3f4f6" strokeWidth="1">
@@ -452,8 +574,8 @@ export default function GlyphDesigner() {
               <path d={currentPath} stroke="#111827" strokeWidth="12" fill="none" strokeLinecap="round" strokeLinejoin="round" />
             )}
 
-            {/* Selection box + handles */}
-            {selBBox && (
+            {/* Selection box + handles (draw mode only) */}
+            {mode === 'draw' && selBBox && (
               <g style={{ pointerEvents: 'none' }}>
                 {/* Dashed bounding rect */}
                 <rect
@@ -477,6 +599,21 @@ export default function GlyphDesigner() {
                   );
                 })}
               </g>
+            )}
+
+            {/* Erase marquee (erase mode only, while dragging) */}
+            {mode === 'erase' && eraseBox && (
+              <rect
+                x={Math.min(eraseBox.x0, eraseBox.x1)}
+                y={Math.min(eraseBox.y0, eraseBox.y1)}
+                width={Math.abs(eraseBox.x1 - eraseBox.x0)}
+                height={Math.abs(eraseBox.y1 - eraseBox.y0)}
+                fill="rgba(239, 68, 68, 0.15)"
+                stroke="#ef4444"
+                strokeWidth="1"
+                strokeDasharray="4 3"
+                style={{ pointerEvents: 'none' }}
+              />
             )}
 
             {/* Ghost preview while dragging from sidebar */}
