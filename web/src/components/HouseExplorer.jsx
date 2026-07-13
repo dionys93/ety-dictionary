@@ -3,10 +3,11 @@ import { useRef, useState } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { WALL_ANIMATIONS } from '../utils/wallAnimations.js';
+import { COLOR_SCHEMES } from '../utils/houseColors.js';
 
 const LERP_SPEED = 0.08;
 
-function WallPanel({ size, pivot = [0, 0, 0], closed, open, isOpen, onToggle }) {
+function WallPanel({ size, pivot = [0, 0, 0], closed, open, isOpen, onToggle, colors }) {
   const ref = useRef();
   const [hovered, setHovered] = useState(false);
 
@@ -50,13 +51,13 @@ function WallPanel({ size, pivot = [0, 0, 0], closed, open, isOpen, onToggle }) 
         }}
       >
         <boxGeometry args={size} />
-        <meshStandardMaterial color={hovered ? '#f2b880' : '#e0d3b8'} />
+        <meshStandardMaterial color={hovered ? colors.wallHover : colors.wall} />
       </mesh>
     </group>
   );
 }
 
-function Wall({ animation = 'swingDoorsOut', width = 2, height = 1, thickness = 0.05, position = [0, 0, 0.75], onToggle }) {
+function Wall({ animation = 'swingDoorsOut', width = 2, height = 1, thickness = 0.05, position = [0, 0, 0.75], onToggle, colors }) {
   const [open, setOpen] = useState(false);
   const panels = WALL_ANIMATIONS[animation](width, height, thickness);
 
@@ -71,67 +72,69 @@ function Wall({ animation = 'swingDoorsOut', width = 2, height = 1, thickness = 
   return (
     <group position={position}>
       {panels.map((panel, i) => (
-        <WallPanel key={i} {...panel} isOpen={open} onToggle={handleToggle} />
+        <WallPanel key={i} {...panel} isOpen={open} onToggle={handleToggle} colors={colors} />
       ))}
     </group>
   );
 }
 
-function Room() {
+function Room({ colors }) {
   return (
     <group>
       {/* Floor */}
       <mesh position={[0, 0.025, 0]}>
         <boxGeometry args={[2, 0.05, 1.5]} />
-        <meshStandardMaterial color="#c9b896" />
+        <meshStandardMaterial color={colors.floor} />
       </mesh>
 
       {/* Back wall */}
       <mesh position={[0, 0.5, -0.75]}>
         <boxGeometry args={[2, 1, 0.05]} />
-        <meshStandardMaterial color="#f5efe3" />
+        <meshStandardMaterial color={colors.wall} />
       </mesh>
 
       {/* Left wall */}
       <mesh position={[-1, 0.5, 0]}>
         <boxGeometry args={[0.05, 1, 1.5]} />
-        <meshStandardMaterial color="#f5efe3" />
+        <meshStandardMaterial color={colors.wall} />
       </mesh>
 
       {/* Right wall */}
       <mesh position={[1, 0.5, 0]}>
         <boxGeometry args={[0.05, 1, 1.5]} />
-        <meshStandardMaterial color="#f5efe3" />
+        <meshStandardMaterial color={colors.wall} />
       </mesh>
 
       {/* One placeholder item so the room isn't just an empty box */}
       <mesh position={[0, 0.2, -0.4]}>
         <boxGeometry args={[0.4, 0.35, 0.3]} />
-        <meshStandardMaterial color="#8b4a3c" />
+        <meshStandardMaterial color={colors.item} />
       </mesh>
     </group>
   );
 }
 
-function Roof() {
+function Roof({ colors }) {
   return (
     <mesh position={[0, 1.35, 0]} rotation={[0, Math.PI / 4, 0]}>
       <coneGeometry args={[1.6, 0.8, 4]} />
-      <meshStandardMaterial color="#8b4a3c" />
+      <meshStandardMaterial color={colors.roof} />
     </mesh>
   );
 }
 
-export default function HouseExplorer() {
+export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
+  const colors = COLOR_SCHEMES[colorScheme];
+
   return (
     <div style={{ width: '100%', height: '600px', borderRadius: '8px', overflow: 'hidden', border: '1px solid #e5e7eb' }}>
       <Canvas camera={{ position: [4, 3, 5], fov: 50 }}>
         <ambientLight intensity={0.6} />
         <directionalLight position={[5, 8, 5]} intensity={1} />
 
-        <Room />
-        <Roof />
-        <Wall />
+        <Room colors={colors} />
+        <Roof colors={colors} />
+        <Wall colors={colors} />
 
         <OrbitControls enablePan={false} minDistance={3} maxDistance={12} />
       </Canvas>
