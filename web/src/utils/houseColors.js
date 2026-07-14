@@ -11,6 +11,8 @@ export const COLOR_SCHEMES = {
     floor: '#c9b896',
     roof: '#4a4a4a',
     item: '#8b4a3c',
+    door: '#8b5a2b',
+    doorHover: '#a06b3a',
   },
 
   sunset: {
@@ -19,6 +21,8 @@ export const COLOR_SCHEMES = {
     floor: '#e9c46a',
     roof: '#264653',
     item: '#e76f51',
+    door: '#5c3a21',
+    doorHover: '#6f4a2c',
   },
 
   monochrome: {
@@ -27,5 +31,7 @@ export const COLOR_SCHEMES = {
     floor: '#a3a3a3',
     roof: '#404040',
     item: '#737373',
+    door: '#595959',
+    doorHover: '#6b6b6b',
   },
 };

@@ -1,4 +1,4 @@
-// web/src/utils/wallAnimations.js
+// web/src/utils/animations.js
 //
 // Each entry describes how a wall splits into panels for a given "open"
 // animation, and where each panel sits when closed vs. fully open. Adding a
@@ -32,7 +32,25 @@ function makeSwingDoors(sign) {
   };
 }
 
-export const WALL_ANIMATIONS = {
+// A single full-width door, hinged on its left edge only — for a normal
+// house front, rather than the two-leaf French-door look above (which is
+// kept around as-is for later use, e.g. a grander entrance).
+function makeSwingDoorSingle(sign) {
+  return (w, h, t) => {
+    const hingeX = -w / 2;
+    const swingAngle = Math.PI / 2;
+    return [
+      {
+        size: [w, h, t],
+        pivot: [w / 2, 0, 0],
+        closed: { position: [hingeX, h / 2, 0], rotation: 0 },
+        open: { position: [hingeX, h / 2, 0], rotation: sign * swingAngle },
+      },
+    ];
+  };
+}
+
+export const ANIMATIONS = {
   // Whole wall sinks straight down into the ground, out of view.
   slideDown: (w, h, t) => [
     {
@@ -75,4 +93,8 @@ export const WALL_ANIMATIONS = {
   // +z (outward, toward the viewer).
   swingDoorsIn: makeSwingDoors(1),
   swingDoorsOut: makeSwingDoors(-1),
+
+  // Single-leaf versions — a normal front door, hinged on one edge only.
+  swingDoorIn: makeSwingDoorSingle(1),
+  swingDoorOut: makeSwingDoorSingle(-1),
 };

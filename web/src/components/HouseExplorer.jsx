@@ -2,12 +2,13 @@
 import { useRef, useState, useMemo, useEffect } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
-import { WALL_ANIMATIONS } from '../utils/wallAnimations.js';
+import { ANIMATIONS } from '../utils/animations.js';
 import { COLOR_SCHEMES } from '../utils/houseColors.js';
 import { createShingleTexture } from '../utils/proceduralTextures.js';
 
 const LERP_SPEED = 0.08;
-const DOOR_WIDTH = 0.7;
+const DOOR_WIDTH = 0.4;
+const DOOR_HEIGHT = 0.75; // shorter than the house so there's wall (a header) above it
 const HOUSE_WIDTH = 2;
 const HOUSE_HEIGHT = 1;
 const HOUSE_DEPTH = 1.5;
@@ -39,47 +40,109 @@ function Siding({ width, height, color, axis = 'z', sign = 1, boards = 6 }) {
   );
 }
 
-// A simple frame + glass pane, proud of whatever wall it's placed on.
+// Just the glass — it sits in an actual hole in the wall (see
+// WallWithWindow below), so whatever's genuinely behind it shows through
+// the tint, rather than a painted-on illusion.
 function Window({ width = 0.32, height = 0.32 }) {
   return (
-    <group>
-      <mesh position={[0, 0, 0.02]}>
-        <boxGeometry args={[width + 0.06, height + 0.06, 0.02]} />
-        <meshStandardMaterial color="#5b4636" />
+    <mesh position={[0, 0, 0.04]}>
+      <boxGeometry args={[width, height, 0.01]} />
+      <meshStandardMaterial color="#bfe3f0" transparent opacity={0.3} roughness={0.1} />
+    </mesh>
+  );
+}
+
+// A flat wall with a genuine rectangular hole cut into it — built from 4
+// surrounding wall segments (top/bottom/left/right of the opening) instead
+// of one solid box, the same trick used for the doorway. The glass sits in
+// the actual gap, so there's real depth behind it, and a plain white trim
+// frames the opening from outside — extending onto the wall, not over the
+// glass, so it never fights with the transparent pane.
+function WallWithWindow({ x, width, height, colors, windowWidth = 0.32, windowHeight = 0.32, windowCenterY = height * 0.62 }) {
+  const holeTop = windowCenterY + windowHeight / 2;
+  const holeBottom = windowCenterY - windowHeight / 2;
+  const sideWidth = (width - windowWidth) / 2;
+  const trimWidth = 0.015;
+  const trimColor = '#ffffff';
+
+  return (
+    <group position={[x, 0, 0.75]}>
+      {/* top segment, above the opening */}
+      <mesh position={[0, (holeTop + height) / 2, 0]}>
+        <boxGeometry args={[width, height - holeTop, 0.05]} />
+        <meshStandardMaterial color={colors.wall} />
       </mesh>
-      <mesh position={[0, 0, 0.035]}>
-        <boxGeometry args={[width, height, 0.01]} />
-        <meshStandardMaterial color="#bfe3f0" transparent opacity={0.75} />
+      <group position={[0, (holeTop + height) / 2, 0]}>
+        <Siding width={width} height={height - holeTop} color={colors.wall} axis="z" sign={1} boards={2} />
+      </group>
+
+      {/* bottom segment, below the opening */}
+      <mesh position={[0, holeBottom / 2, 0]}>
+        <boxGeometry args={[width, holeBottom, 0.05]} />
+        <meshStandardMaterial color={colors.wall} />
       </mesh>
+      <group position={[0, holeBottom / 2, 0]}>
+        <Siding width={width} height={holeBottom} color={colors.wall} axis="z" sign={1} boards={3} />
+      </group>
+
+      {/* left segment, beside the opening */}
+      <mesh position={[-(windowWidth / 2 + sideWidth / 2), windowCenterY, 0]}>
+        <boxGeometry args={[sideWidth, windowHeight, 0.05]} />
+        <meshStandardMaterial color={colors.wall} />
+      </mesh>
+      <group position={[-(windowWidth / 2 + sideWidth / 2), windowCenterY, 0]}>
+        <Siding width={sideWidth} height={windowHeight} color={colors.wall} axis="z" sign={1} boards={2} />
+      </group>
+
+      {/* right segment, beside the opening */}
+      <mesh position={[windowWidth / 2 + sideWidth / 2, windowCenterY, 0]}>
+        <boxGeometry args={[sideWidth, windowHeight, 0.05]} />
+        <meshStandardMaterial color={colors.wall} />
+      </mesh>
+      <group position={[windowWidth / 2 + sideWidth / 2, windowCenterY, 0]}>
+        <Siding width={sideWidth} height={windowHeight} color={colors.wall} axis="z" sign={1} boards={2} />
+      </group>
+
+      {/* White trim/casing around the opening — a plain border, no muntin
+          bars across the glass. Extends outward from the opening's edge
+          onto the wall (not inward over the glass), so it never overlaps
+          the transparent pane. */}
+      <mesh position={[0, windowCenterY + windowHeight / 2 + trimWidth / 2, 0.03]}>
+        <boxGeometry args={[windowWidth + trimWidth * 2, trimWidth, 0.02]} />
+        <meshStandardMaterial color={trimColor} />
+      </mesh>
+      <mesh position={[0, windowCenterY - windowHeight / 2 - trimWidth / 2, 0.03]}>
+        <boxGeometry args={[windowWidth + trimWidth * 2, trimWidth, 0.02]} />
+        <meshStandardMaterial color={trimColor} />
+      </mesh>
+      <mesh position={[-(windowWidth / 2 + trimWidth / 2), windowCenterY, 0.03]}>
+        <boxGeometry args={[trimWidth, windowHeight, 0.02]} />
+        <meshStandardMaterial color={trimColor} />
+      </mesh>
+      <mesh position={[windowWidth / 2 + trimWidth / 2, windowCenterY, 0.03]}>
+        <boxGeometry args={[trimWidth, windowHeight, 0.02]} />
+        <meshStandardMaterial color={trimColor} />
+      </mesh>
+
+      {/* the glass sits in the actual opening — nothing opaque behind it */}
+      <group position={[0, windowCenterY, 0]}>
+        <Window width={windowWidth} height={windowHeight} />
+      </group>
     </group>
   );
 }
 
 // The two fixed wall segments flanking the (narrower) front door, each with
-// its own siding and a window. Static — these never move, unlike the door.
+// an actual window opening in it. Static — these never move, unlike the door.
 function FrontFacade({ colors, doorWidth }) {
   const flankWidth = (HOUSE_WIDTH - doorWidth) / 2;
   const flankCenterX = doorWidth / 2 + flankWidth / 2;
 
   return (
     <>
-      {[-1, 1].map((side) => {
-        const x = side * flankCenterX;
-        return (
-          <group key={side}>
-            <mesh position={[x, HOUSE_HEIGHT / 2, 0.75]}>
-              <boxGeometry args={[flankWidth, HOUSE_HEIGHT, 0.05]} />
-              <meshStandardMaterial color={colors.wall} />
-            </mesh>
-            <group position={[x, HOUSE_HEIGHT / 2, 0.75]}>
-              <Siding width={flankWidth} height={HOUSE_HEIGHT} color={colors.wall} axis="z" sign={1} />
-            </group>
-            <group position={[x, HOUSE_HEIGHT * 0.62, 0.75]}>
-              <Window />
-            </group>
-          </group>
-        );
-      })}
+      {[-1, 1].map((side) => (
+        <WallWithWindow key={side} x={side * flankCenterX} width={flankWidth} height={HOUSE_HEIGHT} colors={colors} />
+      ))}
     </>
   );
 }
@@ -88,11 +151,6 @@ function WallPanel({ size, pivot = [0, 0, 0], closed, open, isOpen, onToggle, co
   const ref = useRef();
   const [hovered, setHovered] = useState(false);
 
-  // The lerp target just depends on which state we're currently in — this
-  // is what makes "reverse" free: flip isOpen back to false and every
-  // animation eases back toward its own `closed` transform, whatever that
-  // happens to mean for that animation (rise up, slide back together,
-  // swing shut).
   useFrame(() => {
     if (!ref.current) return;
     const target = isOpen ? open : closed;
@@ -103,10 +161,6 @@ function WallPanel({ size, pivot = [0, 0, 0], closed, open, isOpen, onToggle, co
     ref.current.rotation.y += (target.rotation - ref.current.rotation.y) * LERP_SPEED;
   });
 
-  // Doorknob sits near whichever edge of this panel meets the other door
-  // (or right-of-center for a single full-width panel), inferred from which
-  // side of center this panel's closed position sits on — works for any
-  // animation without needing to know which one is active.
   const knobSign = closed.position[0] < 0 ? 1 : closed.position[0] > 0 ? -1 : 1;
   const knobX = pivot[0] + knobSign * (size[0] / 2 - 0.08);
   const knobZ = pivot[2] + size[2] / 2 + 0.02;
@@ -130,7 +184,7 @@ function WallPanel({ size, pivot = [0, 0, 0], closed, open, isOpen, onToggle, co
         }}
       >
         <boxGeometry args={size} />
-        <meshStandardMaterial color={hovered ? colors.wallHover : colors.wall} />
+        <meshStandardMaterial color={hovered ? colors.doorHover : colors.door} />
       </mesh>
 
       <mesh position={[knobX, -size[1] * 0.12, knobZ]}>
@@ -141,9 +195,9 @@ function WallPanel({ size, pivot = [0, 0, 0], closed, open, isOpen, onToggle, co
   );
 }
 
-function Wall({ animation = 'doubleDoors', width = HOUSE_WIDTH, height = HOUSE_HEIGHT, thickness = 0.05, position = [0, 0, 0.75], onToggle, colors }) {
+function Wall({ animation = 'swingDoorOut', width = HOUSE_WIDTH, height = HOUSE_HEIGHT, thickness = 0.05, position = [0, 0, 0.75], onToggle, colors }) {
   const [open, setOpen] = useState(false);
-  const panels = WALL_ANIMATIONS[animation](width, height, thickness);
+  const panels = ANIMATIONS[animation](width, height, thickness);
 
   const handleToggle = () => {
     setOpen((prev) => {
@@ -158,6 +212,28 @@ function Wall({ animation = 'doubleDoors', width = HOUSE_WIDTH, height = HOUSE_H
       {panels.map((panel, i) => (
         <WallPanel key={i} {...panel} isOpen={open} onToggle={handleToggle} colors={colors} />
       ))}
+    </group>
+  );
+}
+
+// The front door as its own concept: a fixed header strip (still wall, same
+// color/siding as everything else) sitting above shorter swinging leaves,
+// rather than one panel spanning the full house height.
+function Door({ colors, width = DOOR_WIDTH, height = DOOR_HEIGHT, animation = 'swingDoorOut' }) {
+  const headerHeight = HOUSE_HEIGHT - height;
+  const headerY = height + headerHeight / 2;
+
+  return (
+    <group>
+      <mesh position={[0, headerY, 0.75]}>
+        <boxGeometry args={[width, headerHeight, 0.05]} />
+        <meshStandardMaterial color={colors.wall} />
+      </mesh>
+      <group position={[0, headerY, 0.75]}>
+        <Siding width={width} height={headerHeight} color={colors.wall} axis="z" sign={1} boards={2} />
+      </group>
+
+      <Wall animation={animation} width={width} height={height} position={[0, 0, 0.75]} colors={colors} />
     </group>
   );
 }
@@ -231,7 +307,7 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
         <Room colors={colors} />
         <Roof colors={colors} />
         <FrontFacade colors={colors} doorWidth={DOOR_WIDTH} />
-        <Wall animation="swingDoorsOut" width={DOOR_WIDTH} colors={colors} />
+        <Door colors={colors} />
 
         <OrbitControls enablePan={false} minDistance={3} maxDistance={12} />
       </Canvas>
