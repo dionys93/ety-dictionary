@@ -4,7 +4,7 @@ import { Canvas, useFrame } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { ANIMATIONS } from '../utils/animations.js';
 import { COLOR_SCHEMES } from '../utils/houseColors.js';
-import { createShingleTexture } from '../utils/proceduralTextures.js';
+import { createShingleTexture, createGrassTexture } from '../utils/proceduralTextures.js';
 
 const LERP_SPEED = 0.08;
 const DOOR_WIDTH = 0.4;
@@ -12,6 +12,8 @@ const DOOR_HEIGHT = 0.75; // shorter than the house so there's wall (a header) a
 const HOUSE_WIDTH = 2;
 const HOUSE_HEIGHT = 1;
 const HOUSE_DEPTH = 1.5;
+const GROUND_SIZE = 30;
+const GROUND_THICKNESS = 0.3;
 
 // Renders a stack of thin horizontal "board" strips proud of a flat wall —
 // real geometry, not a texture, so it actually catches light and casts
@@ -283,6 +285,23 @@ function Room({ colors }) {
   );
 }
 
+// A large solid slab of ground, textured with a procedural grass pattern.
+// Its top surface sits exactly at y=0 — the same level as the bottom of
+// every wall and the floor — so the house appears to grow straight out of
+// it with no gap or seam, and there's real geometry (not empty space)
+// blocking any view of the house's underside.
+function Ground({ colors }) {
+  const texture = useMemo(() => createGrassTexture(colors.ground), [colors.ground]);
+  useEffect(() => () => texture.dispose(), [texture]);
+
+  return (
+    <mesh position={[0, -GROUND_THICKNESS / 2, 0]}>
+      <boxGeometry args={[GROUND_SIZE, GROUND_THICKNESS, GROUND_SIZE]} />
+      <meshStandardMaterial map={texture} />
+    </mesh>
+  );
+}
+
 function Roof({ colors }) {
   const texture = useMemo(() => createShingleTexture(colors.roof), [colors.roof]);
   useEffect(() => () => texture.dispose(), [texture]);
@@ -304,12 +323,13 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
         <ambientLight intensity={0.6} />
         <directionalLight position={[5, 8, 5]} intensity={1} />
 
+        <Ground colors={colors} />
         <Room colors={colors} />
         <Roof colors={colors} />
         <FrontFacade colors={colors} doorWidth={DOOR_WIDTH} />
         <Door colors={colors} />
 
-        <OrbitControls enablePan={false} minDistance={3} maxDistance={12} />
+        <OrbitControls enablePan={false} minDistance={3} maxDistance={12} maxPolarAngle={Math.PI / 2 - 0.05} />
       </Canvas>
     </div>
   );

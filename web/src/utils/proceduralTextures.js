@@ -51,3 +51,40 @@ export function createShingleTexture(baseColor, { rows = 6, cols = 8, size = 256
   texture.repeat.set(4, 2);
   return texture;
 }
+
+// A mottled grass texture: a base green fill with many short randomly
+// angled "blade" strokes in slightly darker/lighter shades scattered across
+// it, so it reads as textured ground rather than a flat color once tiled.
+export function createGrassTexture(baseColor, { size = 256, blades = 2200, repeat = 20 } = {}) {
+  const canvas = document.createElement('canvas');
+  canvas.width = size;
+  canvas.height = size;
+  const ctx = canvas.getContext('2d');
+
+  ctx.fillStyle = baseColor;
+  ctx.fillRect(0, 0, size, size);
+
+  const darker = shadeColor(baseColor, -18);
+  const lighter = shadeColor(baseColor, 14);
+
+  for (let i = 0; i < blades; i++) {
+    const x = Math.random() * size;
+    const y = Math.random() * size;
+    const len = 2 + Math.random() * 4;
+    // mostly-vertical blades with a little sideways lean, not perfectly uniform
+    const angle = -Math.PI / 2 + (Math.random() - 0.5) * 0.9;
+
+    ctx.strokeStyle = Math.random() > 0.5 ? darker : lighter;
+    ctx.lineWidth = 0.6 + Math.random() * 0.7;
+    ctx.beginPath();
+    ctx.moveTo(x, y);
+    ctx.lineTo(x + Math.cos(angle) * len, y + Math.sin(angle) * len);
+    ctx.stroke();
+  }
+
+  const texture = new THREE.CanvasTexture(canvas);
+  texture.wrapS = THREE.RepeatWrapping;
+  texture.wrapT = THREE.RepeatWrapping;
+  texture.repeat.set(repeat, repeat);
+  return texture;
+}
