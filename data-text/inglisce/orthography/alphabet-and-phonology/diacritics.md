@@ -120,7 +120,7 @@ The grapheme **ô** explicitly splits based on its structural environment to pre
 
 #### 2. R-Coloring Absorption (Ê + Nasal)
 The vowel **ê** natively represents the `/ər/` sound. However, when followed by a nasal consonant (**n** or **m**), the historical 'r' is completely absorbed by the vowel marker to prevent visual clutter. 
-* **Rule:** `êr + {n, m} → ê`
+* **Rule:** êr + {n, m} → ên, êm
 * **Examples:** *earn* → **êne** (not êrne), *confirm* → **confême** (not confêrme).
 
 #### 3. Reduced Diphthongs (AÎ and EÎ) and Stress Retention
