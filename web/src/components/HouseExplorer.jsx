@@ -11,31 +11,26 @@ import { InteriorDoorway } from './house/InteriorDoorway.jsx';
 import { GableEnd } from './house/GableEnd.jsx';
 import { CameraRig } from './house/CameraRig.jsx';
 import { RoomBounds } from './house/RoomBounds.jsx';
+import { ROOMS } from './house/rooms.js';
 import {
-  ROOM_STACK,
   ROOM_WIDTH,
   roomSlotZ,
-  ROOM_DEPTH,
+  roomFrontZ,
   HOUSE_WIDTH,
   HOUSE_DEPTH,
+  HOUSE_CENTER_Z,
+  FRONT_WALL_Z,
+  HOUSE_BACK_Z,
   EAVE_HEIGHT,
-  INTERIOR_DOOR_X,
-  KITCHEN_WALL_COLOR,
   EXTERIOR,
   EXTERIOR_CAMERA,
   EXTERIOR_MIN_DISTANCE,
   EXTERIOR_MAX_DISTANCE,
   INTERIOR_MIN_DISTANCE,
   INTERIOR_MAX_DISTANCE,
+  depthOf,
+  parentOf,
 } from './house/constants.js';
-
-// Depth of a location in the navigation chain: EXTERIOR = -1, ROOM_STACK[i]
-// = i. Lets every door's open-state be computed the same way regardless of
-// how deep it sits in the chain (see isDoorOpen below).
-function depthOf(locationId) {
-  if (locationId === EXTERIOR) return -1;
-  return ROOM_STACK.indexOf(locationId);
-}
 
 export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
   const colors = COLOR_SCHEMES[colorScheme];
@@ -50,13 +45,12 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
   const isTransitioning = transitionTarget !== null;
   const isInterior = (isTransitioning ? transitionTarget : settledLocation) !== EXTERIOR;
 
-  // The door leading into ROOM_STACK[doorIndex] should be open whenever
-  // we're settled at, or transitioning to/from, that room OR anything
-  // further into the house than it. Just checking "is this room involved
-  // in the current transition" would false-positive on an outer door (like
-  // the front door) during a move between two rooms further down the
-  // chain (e.g. kitchen <-> a future room behind it) — this depth check
-  // avoids that regardless of how deep the chain gets.
+  // The doorway leading into ROOMS[doorIndex] is open whenever we're settled
+  // at, or transitioning to/from, that room OR anything deeper than it. Just
+  // checking "is this room involved in the current transition" would
+  // false-positive on an outer door (like the front door) during a move
+  // between two rooms further down the chain — this depth check avoids that
+  // however deep the chain gets.
   const isDoorOpen = (doorIndex) => {
     const settledDepth = depthOf(settledLocation);
     const targetDepth = isTransitioning ? depthOf(transitionTarget) : -Infinity;
@@ -73,19 +67,10 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
     setTransitionTarget(null);
   };
 
-  // One step back toward the exterior from wherever we're currently
-  // settled — not always the exterior directly, since a room can be
-  // several hops in (kitchen -> livingRoom -> exterior).
-  const parentOf = (locationId) => {
-    const index = ROOM_STACK.indexOf(locationId);
-    if (index <= 0) return EXTERIOR;
-    return ROOM_STACK[index - 1];
-  };
-
-  // The room stack's own Z-midpoint, for centering the roof over it —
-  // simplifies to half the last room's slot, since the frontmost room's
-  // front edge never moves.
-  const roofCenterZ = roomSlotZ(ROOM_STACK.length - 1) / 2;
+  // Clicking a room's own doorway toggles between that room and whatever
+  // sits in front of it — so it works as both "go in" and "come back out".
+  const toggleRoom = (roomId) => () =>
+    goTo(settledLocation === roomId ? parentOf(roomId) : roomId);
 
   return (
     <div style={{ width: '100%', height: '600px', borderRadius: '8px', overflow: 'hidden', border: '1px solid #e5e7eb', position: 'relative' }}>
@@ -94,51 +79,67 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
         <directionalLight position={[5, 8, 5]} intensity={1} />
 
         <Ground colors={colors} />
-        <Roof colors={colors} houseWidth={HOUSE_WIDTH} houseDepth={HOUSE_DEPTH} centerZ={roofCenterZ} />
+        <Roof colors={colors} houseWidth={HOUSE_WIDTH} houseDepth={HOUSE_DEPTH} centerZ={HOUSE_CENTER_Z} />
 
-        {/* Gable-end triangles closing the roof at the very front and back
-            of the stack — without these, the triangular space under the
-            ridge is completely open at both ends. */}
-        <GableEnd colors={colors} roomWidth={ROOM_WIDTH} houseWidth={HOUSE_WIDTH} eaveHeight={EAVE_HEIGHT} z={ROOM_DEPTH / 2} />
-        <GableEnd colors={colors} roomWidth={ROOM_WIDTH} houseWidth={HOUSE_WIDTH} eaveHeight={EAVE_HEIGHT} z={roomSlotZ(ROOM_STACK.length - 1) - ROOM_DEPTH / 2} />
+        {/* Gable-end triangles closing the roof at the front and back of the
+            stack — without these, the space under the ridge is open at both
+            ends. Both planes are derived (constants.js), not re-computed
+            from ROOM_DEPTH here. */}
+        <GableEnd colors={colors} roomWidth={ROOM_WIDTH} houseWidth={HOUSE_WIDTH} eaveHeight={EAVE_HEIGHT} z={FRONT_WALL_Z} />
+        <GableEnd colors={colors} roomWidth={ROOM_WIDTH} houseWidth={HOUSE_WIDTH} eaveHeight={EAVE_HEIGHT} z={HOUSE_BACK_Z} />
 
-        {/* Living room: the one exterior-facing room. Its back wall is
-            replaced by the interior doorway to the kitchen below it. */}
-        <GroundFloorRoom
-          colors={colors}
-          hasBackWall={false}
-          open={isDoorOpen(0)}
-          onToggle={() => goTo(settledLocation === 'livingRoom' ? EXTERIOR : 'livingRoom')}
-        />
+        {/* One entry per room in ROOMS. The frontmost gets the exterior
+            facade and front door; every other gets an interior doorway at
+            its own front plane, plus its interior. `hasBackWall` is
+            structural (is anything behind me?) rather than something a
+            caller has to remember to flip — forgetting that gave two
+            coincident z-fighting walls. */}
+        {ROOMS.map((room, index) => {
+          const isLast = index === ROOMS.length - 1;
 
-        {/* The interior doorway between living room and kitchen, at their
-            shared boundary — the door itself plus solid wall filling the
-            rest of the boundary's width. swingDoorIn swings it toward -Z —
-            away from the living room, into the kitchen — the same "swings
-            away from its own room" convention as the front door. */}
-        <InteriorDoorway
-          colors={colors}
-          z={roomSlotZ(0) - ROOM_DEPTH / 2}
-          centerX={INTERIOR_DOOR_X}
-          animation="swingDoorIn"
-          open={isDoorOpen(1)}
-          onToggle={() => goTo(settledLocation === 'kitchen' ? 'livingRoom' : 'kitchen')}
-          interiorWallColor={KITCHEN_WALL_COLOR}
-        />
+          if (index === 0) {
+            return (
+              <GroundFloorRoom
+                key={room.id}
+                colors={colors}
+                hasBackWall={isLast}
+                interiorWallColor={room.interiorWallColor}
+                doorway={room.doorway}
+                open={isDoorOpen(index)}
+                onToggle={toggleRoom(room.id)}
+              />
+            );
+          }
 
-        {/* Kitchen: no exterior presence, no windows — reached only
-            through the interior doorway above. Light gray on the inside;
-            its exterior-facing siding still matches the rest of the house. */}
-        <Room colors={colors} centerZ={roomSlotZ(1)} hasBackWall={true} interiorWallColor={KITCHEN_WALL_COLOR} />
+          return (
+            <group key={room.id}>
+              <InteriorDoorway
+                colors={colors}
+                z={roomFrontZ(index)}
+                centerX={room.doorway.centerX}
+                animation={room.doorway.animation}
+                open={isDoorOpen(index)}
+                onToggle={toggleRoom(room.id)}
+                interiorWallColor={room.interiorWallColor}
+              />
+              <Room
+                colors={colors}
+                centerZ={roomSlotZ(index)}
+                hasBackWall={isLast}
+                interiorWallColor={room.interiorWallColor}
+              />
+            </group>
+          );
+        })}
 
         <CameraRig fromLocation={settledLocation} transitionTarget={transitionTarget} controlsRef={controlsRef} onArrived={handleArrived} />
 
         {/* OrbitControls clamps distance/polar-angle every frame in update(),
             regardless of `enabled` — enabled only gates new pointer input.
-            So while CameraRig is actively flying the camera (isTransitioning),
-            these constraints must already be wide open, or the fly-to gets
-            clamped partway and never actually arrives. Once settled, the
-            real interior/exterior ranges take over for user-driven orbiting. */}
+            So while CameraRig is actively flying the camera, these
+            constraints must already be wide open, or the fly-to gets clamped
+            partway and never actually arrives. Once settled, the real
+            interior/exterior ranges take over for user-driven orbiting. */}
         <OrbitControls
           ref={controlsRef}
           enabled={!isTransitioning}
@@ -148,13 +149,11 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
           maxPolarAngle={isTransitioning ? Math.PI : Math.PI / 2 - 0.05}
         />
 
-        {/* Keeps the camera inside the current room's own walls once
-            settled — OrbitControls' distance/angle constraints alone don't
-            know about the room's actual box shape, so plenty of valid
-            orbit angles would otherwise place the camera through a wall or
-            into whichever room sits next in the stack. Placed after
-            OrbitControls so its clamp is the last word each frame, not
-            something OrbitControls' own update immediately overwrites. */}
+        {/* Keeps the camera inside the current room's own walls once settled
+            — OrbitControls' distance/angle constraints don't know about the
+            room's box shape, so plenty of valid orbit angles would place the
+            camera through a wall or into the next room. Placed after
+            OrbitControls so its clamp is the last word each frame. */}
         <RoomBounds controlsRef={controlsRef} settledLocation={settledLocation} active={!isTransitioning} />
       </Canvas>
 

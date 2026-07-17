@@ -1,5 +1,6 @@
 // web/src/components/house/Window.jsx
 import { WallSegment } from './Siding.jsx';
+import { FRONT_WALL_Z } from './constants.js';
 
 // Just the glass — it sits in an actual hole in the wall (see
 // WallWithWindow below), so whatever's genuinely behind it shows through
@@ -27,7 +28,7 @@ export function WallWithWindow({ x, width, height, colors, windowWidth = 0.32, w
   const trimColor = '#ffffff';
 
   return (
-    <group position={[x, 0, 0.75]}>
+    <group position={[x, 0, FRONT_WALL_Z]}>
       {/* top segment, above the opening */}
       <WallSegment
         position={[0, (holeTop + height) / 2, 0]}

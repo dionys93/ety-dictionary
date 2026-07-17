@@ -1,28 +1,33 @@
 // web/src/components/house/transitionWaypoints.js
 //
-// Some transitions can't just fly in a straight line between the two
-// rooms' resting camera poses — if the poses are both centered but the
-// actual doorway between them isn't (like the living room <-> kitchen
-// doorway, which sits off to one side), a straight line cuts through solid
-// wall instead of passing through the opening. This defines, for a given
-// pair of locations, an intermediate point the camera should pass through
-// first — null if the direct path is fine (most transitions).
+// A camera transition between two locations can't just fly the straight
+// line between their resting poses — that line cuts through whatever solid
+// wall happens to be in the way, since a doorway is a narrow opening and
+// the poses know nothing about it. So every transition routes through the
+// doorway it's actually passing through.
+//
+// This used to be a hand-maintained registry of "which edges need a
+// waypoint," which meant remembering to add one whenever a doorway wasn't
+// centered — and forgetting meant flying through a wall. It's all derived
+// from ROOMS now: a doorway's position is already in the descriptor, and
+// generating a waypoint unconditionally costs nothing for a centered door
+// (its waypoint lies on the direct path anyway) while removing the entire
+// class of "forgot to register one" bugs.
 
-import { INTERIOR_DOOR_X, roomSlotZ, ROOM_DEPTH } from './constants.js';
+import { ROOMS } from './rooms.js';
+import { roomFrontZ, depthOf, CAMERA_EYE_HEIGHT } from './constants.js';
 
-const INTERIOR_DOOR_Z = roomSlotZ(0) - ROOM_DEPTH / 2; // the living room/kitchen shared boundary
-const WAYPOINT_Y = 0.75; // matches the rooms' own camera pose height
-
-// Undirected — the same waypoint applies going either direction across a
-// given boundary, so order doesn't matter.
-function edgeKey(a, b) {
-  return [a, b].sort().join('|');
-}
-
-const WAYPOINTS = {
-  [edgeKey('livingRoom', 'kitchen')]: { position: [INTERIOR_DOOR_X, WAYPOINT_Y, INTERIOR_DOOR_Z] },
-};
-
+// The transition between `from` and `to` crosses exactly one boundary: the
+// front of whichever location is deeper into the house. Going in or coming
+// back out crosses the same doorway, so direction doesn't matter.
 export function transitionWaypoint(fromLocation, toLocation) {
-  return WAYPOINTS[edgeKey(fromLocation, toLocation)] ?? null;
+  const deeperIndex = Math.max(depthOf(fromLocation), depthOf(toLocation));
+  if (deeperIndex < 0) return null; // exterior to exterior — no boundary crossed
+
+  const room = ROOMS[deeperIndex];
+  if (!room) return null;
+
+  return {
+    position: [room.doorway.centerX, CAMERA_EYE_HEIGHT, roomFrontZ(deeperIndex)],
+  };
 }
