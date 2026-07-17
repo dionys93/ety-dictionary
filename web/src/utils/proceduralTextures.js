@@ -10,56 +10,63 @@ import * as THREE from 'three';
 function shadeColor(hex, percent) {
   const num = parseInt(hex.replace('#', ''), 16);
   const amt = Math.round(2.55 * percent);
-  let r = (num >> 16) + amt;
-  let g = ((num >> 8) & 0x00ff) + amt;
-  let b = (num & 0x0000ff) + amt;
-  r = Math.min(255, Math.max(0, r));
-  g = Math.min(255, Math.max(0, g));
-  b = Math.min(255, Math.max(0, b));
+  const clamp = (v) => Math.min(255, Math.max(0, v));
+
+  const r = clamp((num >> 16) + amt);
+  const g = clamp(((num >> 8) & 0x00ff) + amt);
+  const b = clamp((num & 0x0000ff) + amt);
+
   return `#${((1 << 24) + (r << 16) + (g << 8) + b).toString(16).slice(1)}`;
+}
+
+// The setup and teardown every texture function here shares: a blank
+// square canvas to draw on, and wrapping the result into a tiling
+// THREE.CanvasTexture once drawing is done.
+function createCanvas(size) {
+  const canvas = document.createElement('canvas');
+  canvas.width = size;
+  canvas.height = size;
+  return { canvas, ctx: canvas.getContext('2d') };
+}
+
+function finalizeTexture(canvas, repeatX, repeatY) {
+  const texture = new THREE.CanvasTexture(canvas);
+  texture.wrapS = THREE.RepeatWrapping;
+  texture.wrapT = THREE.RepeatWrapping;
+  texture.repeat.set(repeatX, repeatY);
+  return texture;
 }
 
 // A staggered shingle/shake pattern in the given base color, with alternating
 // rows shaded slightly darker for tonal variation, like a real roof.
-export function createShingleTexture(baseColor, { rows = 6, cols = 8, size = 256 } = {}) {
-  const canvas = document.createElement('canvas');
-  canvas.width = size;
-  canvas.height = size;
-  const ctx = canvas.getContext('2d');
+export function createShingleTexture(baseColor, { rows = 6, cols = 8, size = 256, repeatX = 4, repeatY = 2 } = {}) {
+  const { canvas, ctx } = createCanvas(size);
 
   const cellW = size / cols;
   const cellH = size / rows;
   const darker = shadeColor(baseColor, -10);
 
+  ctx.strokeStyle = 'rgba(0, 0, 0, 0.35)';
+  ctx.lineWidth = 2;
+
   for (let row = 0; row < rows; row++) {
     ctx.fillStyle = row % 2 === 0 ? baseColor : darker;
     ctx.fillRect(0, row * cellH, size, cellH);
-  }
 
-  ctx.strokeStyle = 'rgba(0, 0, 0, 0.35)';
-  ctx.lineWidth = 2;
-  for (let row = 0; row < rows; row++) {
     const offset = (row % 2) * (cellW / 2); // stagger alternate rows like real shingles
     for (let col = -1; col <= cols; col++) {
       ctx.strokeRect(col * cellW + offset, row * cellH, cellW, cellH);
     }
   }
 
-  const texture = new THREE.CanvasTexture(canvas);
-  texture.wrapS = THREE.RepeatWrapping;
-  texture.wrapT = THREE.RepeatWrapping;
-  texture.repeat.set(4, 2);
-  return texture;
+  return finalizeTexture(canvas, repeatX, repeatY);
 }
 
 // A mottled grass texture: a base green fill with many short randomly
 // angled "blade" strokes in slightly darker/lighter shades scattered across
 // it, so it reads as textured ground rather than a flat color once tiled.
 export function createGrassTexture(baseColor, { size = 256, blades = 2200, repeat = 20 } = {}) {
-  const canvas = document.createElement('canvas');
-  canvas.width = size;
-  canvas.height = size;
-  const ctx = canvas.getContext('2d');
+  const { canvas, ctx } = createCanvas(size);
 
   ctx.fillStyle = baseColor;
   ctx.fillRect(0, 0, size, size);
@@ -82,9 +89,5 @@ export function createGrassTexture(baseColor, { size = 256, blades = 2200, repea
     ctx.stroke();
   }
 
-  const texture = new THREE.CanvasTexture(canvas);
-  texture.wrapS = THREE.RepeatWrapping;
-  texture.wrapT = THREE.RepeatWrapping;
-  texture.repeat.set(repeat, repeat);
-  return texture;
+  return finalizeTexture(canvas, repeat, repeat);
 }

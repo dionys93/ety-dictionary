@@ -3,36 +3,86 @@ import { useRef, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { COLOR_SCHEMES } from '../utils/houseColors.js';
-import { Room } from './house/Room.jsx';
 import { Roof } from './house/Roof.jsx';
 import { Ground } from './house/Ground.jsx';
-import { FrontFacade } from './house/FrontFacade.jsx';
-import { Door } from './house/Door.jsx';
+import { GroundFloorRoom } from './house/GroundFloorRoom.jsx';
+import { Room } from './house/Room.jsx';
+import { InteriorDoorway } from './house/InteriorDoorway.jsx';
+import { GableEnd } from './house/GableEnd.jsx';
 import { CameraRig } from './house/CameraRig.jsx';
-import { DOOR_WIDTH, EXTERIOR_CAMERA, VIEW_MODE } from './house/constants.js';
+import {
+  ROOM_STACK,
+  ROOM_WIDTH,
+  roomSlotZ,
+  ROOM_DEPTH,
+  HOUSE_WIDTH,
+  HOUSE_DEPTH,
+  EAVE_HEIGHT,
+  EXTERIOR,
+  EXTERIOR_CAMERA,
+  EXTERIOR_MIN_DISTANCE,
+  EXTERIOR_MAX_DISTANCE,
+  INTERIOR_MIN_DISTANCE,
+  INTERIOR_MAX_DISTANCE,
+} from './house/constants.js';
+
+// Depth of a location in the navigation chain: EXTERIOR = -1, ROOM_STACK[i]
+// = i. Lets every door's open-state be computed the same way regardless of
+// how deep it sits in the chain (see isDoorOpen below).
+function depthOf(locationId) {
+  if (locationId === EXTERIOR) return -1;
+  return ROOM_STACK.indexOf(locationId);
+}
 
 export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
   const colors = COLOR_SCHEMES[colorScheme];
   const controlsRef = useRef();
 
-  const [doorOpen, setDoorOpen] = useState(false);
-  // One of the VIEW_MODE values.
-  const [viewMode, setViewMode] = useState(VIEW_MODE.EXTERIOR);
+  // Where we're actually settled (not mid-flight): EXTERIOR or a room id.
+  const [settledLocation, setSettledLocation] = useState(EXTERIOR);
+  // Where we're flying toward, or null if not transitioning.
+  const [transitionTarget, setTransitionTarget] = useState(null);
   const [showExitArrow, setShowExitArrow] = useState(false);
 
-  // The single toggle both the door panels and the exit arrow call. Whichever
-  // triggers it, the door swings and the camera starts flying in the matching
-  // direction together.
-  const toggleDoor = () => {
-    setDoorOpen((prev) => {
-      const next = !prev;
-      setViewMode(next ? VIEW_MODE.ENTERING : VIEW_MODE.EXITING);
-      return next;
-    });
+  const isTransitioning = transitionTarget !== null;
+  const isInterior = (isTransitioning ? transitionTarget : settledLocation) !== EXTERIOR;
+
+  // The door leading into ROOM_STACK[doorIndex] should be open whenever
+  // we're settled at, or transitioning to/from, that room OR anything
+  // further into the house than it. Just checking "is this room involved
+  // in the current transition" would false-positive on an outer door (like
+  // the front door) during a move between two rooms further down the
+  // chain (e.g. kitchen <-> a future room behind it) — this depth check
+  // avoids that regardless of how deep the chain gets.
+  const isDoorOpen = (doorIndex) => {
+    const settledDepth = depthOf(settledLocation);
+    const targetDepth = isTransitioning ? depthOf(transitionTarget) : -Infinity;
+    return settledDepth >= doorIndex || targetDepth >= doorIndex;
   };
 
-  const isInterior = viewMode === VIEW_MODE.INTERIOR;
-  const isTransitioning = viewMode === VIEW_MODE.ENTERING || viewMode === VIEW_MODE.EXITING;
+  const goTo = (locationId) => {
+    if (isTransitioning) return; // ignore clicks mid-flight
+    setTransitionTarget(locationId);
+  };
+
+  const handleArrived = (locationId) => {
+    setSettledLocation(locationId);
+    setTransitionTarget(null);
+  };
+
+  // One step back toward the exterior from wherever we're currently
+  // settled — not always the exterior directly, since a room can be
+  // several hops in (kitchen -> livingRoom -> exterior).
+  const parentOf = (locationId) => {
+    const index = ROOM_STACK.indexOf(locationId);
+    if (index <= 0) return EXTERIOR;
+    return ROOM_STACK[index - 1];
+  };
+
+  // The room stack's own Z-midpoint, for centering the roof over it —
+  // simplifies to half the last room's slot, since the frontmost room's
+  // front edge never moves.
+  const roofCenterZ = roomSlotZ(ROOM_STACK.length - 1) / 2;
 
   return (
     <div style={{ width: '100%', height: '600px', borderRadius: '8px', overflow: 'hidden', border: '1px solid #e5e7eb', position: 'relative' }}>
@@ -41,12 +91,41 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
         <directionalLight position={[5, 8, 5]} intensity={1} />
 
         <Ground colors={colors} />
-        <Room colors={colors} />
-        <Roof colors={colors} />
-        <FrontFacade colors={colors} doorWidth={DOOR_WIDTH} />
-        <Door colors={colors} open={doorOpen} onToggle={toggleDoor} />
+        <Roof colors={colors} houseWidth={HOUSE_WIDTH} houseDepth={HOUSE_DEPTH} centerZ={roofCenterZ} />
 
-        <CameraRig mode={viewMode} controlsRef={controlsRef} onArrived={setViewMode} />
+        {/* Gable-end triangles closing the roof at the very front and back
+            of the stack — without these, the triangular space under the
+            ridge is completely open at both ends. */}
+        <GableEnd colors={colors} roomWidth={ROOM_WIDTH} houseWidth={HOUSE_WIDTH} eaveHeight={EAVE_HEIGHT} z={ROOM_DEPTH / 2} />
+        <GableEnd colors={colors} roomWidth={ROOM_WIDTH} houseWidth={HOUSE_WIDTH} eaveHeight={EAVE_HEIGHT} z={roomSlotZ(ROOM_STACK.length - 1) - ROOM_DEPTH / 2} />
+
+        {/* Living room: the one exterior-facing room. Its back wall is
+            replaced by the interior doorway to the kitchen below it. */}
+        <GroundFloorRoom
+          colors={colors}
+          hasBackWall={false}
+          open={isDoorOpen(0)}
+          onToggle={() => goTo(settledLocation === 'livingRoom' ? EXTERIOR : 'livingRoom')}
+        />
+
+        {/* The interior doorway between living room and kitchen, at their
+            shared boundary — the door itself plus solid wall filling the
+            rest of the boundary's width. swingDoorIn swings it toward -Z —
+            away from the living room, into the kitchen — the same "swings
+            away from its own room" convention as the front door. */}
+        <InteriorDoorway
+          colors={colors}
+          z={roomSlotZ(0) - ROOM_DEPTH / 2}
+          animation="swingDoorIn"
+          open={isDoorOpen(1)}
+          onToggle={() => goTo(settledLocation === 'kitchen' ? 'livingRoom' : 'kitchen')}
+        />
+
+        {/* Kitchen: no exterior presence, no windows — reached only
+            through the interior doorway above. */}
+        <Room colors={colors} centerZ={roomSlotZ(1)} hasBackWall={true} />
+
+        <CameraRig transitionTarget={transitionTarget} controlsRef={controlsRef} onArrived={handleArrived} />
 
         {/* OrbitControls clamps distance/polar-angle every frame in update(),
             regardless of `enabled` — enabled only gates new pointer input.
@@ -58,14 +137,15 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
           ref={controlsRef}
           enabled={!isTransitioning}
           enablePan={false}
-          minDistance={isTransitioning ? 0 : isInterior ? 0.3 : 3}
-          maxDistance={isTransitioning ? 50 : isInterior ? 1.4 : 12}
+          minDistance={isTransitioning ? 0 : isInterior ? INTERIOR_MIN_DISTANCE : EXTERIOR_MIN_DISTANCE}
+          maxDistance={isTransitioning ? 50 : isInterior ? INTERIOR_MAX_DISTANCE : EXTERIOR_MAX_DISTANCE}
           maxPolarAngle={isTransitioning ? Math.PI : Math.PI / 2 - 0.05}
         />
       </Canvas>
 
-      {/* Exit affordance: hovering the bottom strip while inside reveals an
-          arrow; clicking it closes the door and flies the camera back out. */}
+      {/* "Go back" affordance: hovering the bottom strip while inside any
+          room reveals an arrow; clicking it steps back one room toward the
+          exterior (kitchen -> living room -> exterior, not straight out). */}
       {isInterior && (
         <div
           onMouseEnter={() => setShowExitArrow(true)}
@@ -77,8 +157,8 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
           }}
         >
           <button
-            onClick={toggleDoor}
-            aria-label="Exit the house"
+            onClick={() => goTo(parentOf(settledLocation))}
+            aria-label="Go back"
             style={{
               width: '48px', height: '48px', borderRadius: '50%', border: 'none',
               backgroundColor: 'rgba(17, 24, 39, 0.6)', color: '#ffffff', fontSize: '1.3rem',
