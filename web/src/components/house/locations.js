@@ -14,8 +14,8 @@ import { roomSlotZ } from './constants.js';
 // center along Z — so a new room's pose is just picking which slot it's in.
 function roomCamera(centerZ) {
   return {
-    position: [0, 0.65, centerZ + 0.5],
-    target: [0, 0.15, centerZ - 0.3],
+    position: [0, 0.75, centerZ + 0.8],
+    target: [0, 0.2, centerZ - 0.6],
   };
 }
 

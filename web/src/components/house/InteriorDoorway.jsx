@@ -9,21 +9,23 @@ import { ROOM_WIDTH, DOOR_WIDTH, WALL_HEIGHT } from './constants.js';
 // room it's supposedly closing off. This is the interior equivalent of
 // FrontFacade (which does the same job for the exterior door), just
 // without windows, since nothing needs a window looking into another room.
-export function InteriorDoorway({ colors, z, animation, open, onToggle }) {
-  const flankWidth = (ROOM_WIDTH - DOOR_WIDTH) / 2;
-  const flankOffset = DOOR_WIDTH / 2 + flankWidth / 2;
+//
+// `centerX` doesn't have to be 0 — the two flanking segments are computed
+// independently (not as two equal halves), so the door can sit anywhere
+// along the wall's width and the flanks still tile the full width exactly.
+export function InteriorDoorway({ colors, z, centerX = 0, animation, open, onToggle }) {
+  const leftFlankSpan = [-ROOM_WIDTH / 2, centerX - DOOR_WIDTH / 2];
+  const rightFlankSpan = [centerX + DOOR_WIDTH / 2, ROOM_WIDTH / 2];
+  const leftFlankWidth = leftFlankSpan[1] - leftFlankSpan[0];
+  const rightFlankWidth = rightFlankSpan[1] - rightFlankSpan[0];
+  const leftFlankCenterX = (leftFlankSpan[0] + leftFlankSpan[1]) / 2;
+  const rightFlankCenterX = (rightFlankSpan[0] + rightFlankSpan[1]) / 2;
 
   return (
     <>
-      {[-1, 1].map((side) => (
-        <WallSegment
-          key={side}
-          position={[side * flankOffset, WALL_HEIGHT / 2, z]}
-          size={[flankWidth, WALL_HEIGHT, 0.05]}
-          color={colors.wall}
-        />
-      ))}
-      <Door colors={colors} z={z} animation={animation} open={open} onToggle={onToggle} />
+      <WallSegment position={[leftFlankCenterX, WALL_HEIGHT / 2, z]} size={[leftFlankWidth, WALL_HEIGHT, 0.05]} color={colors.wall} />
+      <WallSegment position={[rightFlankCenterX, WALL_HEIGHT / 2, z]} size={[rightFlankWidth, WALL_HEIGHT, 0.05]} color={colors.wall} />
+      <Door colors={colors} z={z} centerX={centerX} animation={animation} open={open} onToggle={onToggle} />
     </>
   );
 }

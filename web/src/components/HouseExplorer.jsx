@@ -10,6 +10,7 @@ import { Room } from './house/Room.jsx';
 import { InteriorDoorway } from './house/InteriorDoorway.jsx';
 import { GableEnd } from './house/GableEnd.jsx';
 import { CameraRig } from './house/CameraRig.jsx';
+import { RoomBounds } from './house/RoomBounds.jsx';
 import {
   ROOM_STACK,
   ROOM_WIDTH,
@@ -18,6 +19,8 @@ import {
   HOUSE_WIDTH,
   HOUSE_DEPTH,
   EAVE_HEIGHT,
+  INTERIOR_DOOR_X,
+  KITCHEN_WALL_COLOR,
   EXTERIOR,
   EXTERIOR_CAMERA,
   EXTERIOR_MIN_DISTANCE,
@@ -116,14 +119,16 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
         <InteriorDoorway
           colors={colors}
           z={roomSlotZ(0) - ROOM_DEPTH / 2}
+          centerX={INTERIOR_DOOR_X}
           animation="swingDoorIn"
           open={isDoorOpen(1)}
           onToggle={() => goTo(settledLocation === 'kitchen' ? 'livingRoom' : 'kitchen')}
         />
 
         {/* Kitchen: no exterior presence, no windows — reached only
-            through the interior doorway above. */}
-        <Room colors={colors} centerZ={roomSlotZ(1)} hasBackWall={true} />
+            through the interior doorway above. Its own light gray walls,
+            regardless of the active color scheme. */}
+        <Room colors={{ ...colors, wall: KITCHEN_WALL_COLOR }} centerZ={roomSlotZ(1)} hasBackWall={true} />
 
         <CameraRig transitionTarget={transitionTarget} controlsRef={controlsRef} onArrived={handleArrived} />
 
@@ -141,6 +146,15 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
           maxDistance={isTransitioning ? 50 : isInterior ? INTERIOR_MAX_DISTANCE : EXTERIOR_MAX_DISTANCE}
           maxPolarAngle={isTransitioning ? Math.PI : Math.PI / 2 - 0.05}
         />
+
+        {/* Keeps the camera inside the current room's own walls once
+            settled — OrbitControls' distance/angle constraints alone don't
+            know about the room's actual box shape, so plenty of valid
+            orbit angles would otherwise place the camera through a wall or
+            into whichever room sits next in the stack. Placed after
+            OrbitControls so its clamp is the last word each frame, not
+            something OrbitControls' own update immediately overwrites. */}
+        <RoomBounds controlsRef={controlsRef} settledLocation={settledLocation} active={!isTransitioning} />
       </Canvas>
 
       {/* "Go back" affordance: hovering the bottom strip while inside any

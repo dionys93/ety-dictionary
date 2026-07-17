@@ -3,8 +3,8 @@ import { WallSegment } from './Siding.jsx';
 import { ROOM_WIDTH, WALL_HEIGHT, ROOM_DEPTH } from './constants.js';
 
 // One room's interior: floor + left/right walls (always) + back wall
-// (unless something sits behind this room) + a placeholder item. `centerZ`
-// places it in its own slot in the front-to-back stack of rooms.
+// (unless something sits behind this room). `centerZ` places it in its own
+// slot in the front-to-back stack of rooms.
 //
 // `hasBackWall` defaults to true (a normal closed room) and should be set
 // false only for a room that has another room directly behind it — in that
@@ -31,12 +31,6 @@ export function Room({ colors, centerZ = 0, hasBackWall = true }) {
 
       {/* Right wall */}
       <WallSegment position={[ROOM_WIDTH / 2, WALL_HEIGHT / 2, 0]} size={[0.05, WALL_HEIGHT, ROOM_DEPTH]} color={colors.wall} sidingAxis="x" sidingSign={1} />
-
-      {/* One placeholder item so the room isn't just an empty box */}
-      <mesh position={[0, 0.2, -0.4]}>
-        <boxGeometry args={[0.4, 0.35, 0.3]} />
-        <meshStandardMaterial color={colors.item} />
-      </mesh>
     </group>
   );
 }

@@ -5,8 +5,8 @@
 
 import { wallHeight } from './roofGeometry.js';
 
-export const ROOM_WIDTH = 2;
-export const ROOM_DEPTH = 1.5;
+export const ROOM_WIDTH = 3;
+export const ROOM_DEPTH = 2.5;
 
 // Rooms stacked front-to-back behind the single exterior door. Index 0 is
 // the frontmost room (the one with the exterior door, at the house's
@@ -42,6 +42,15 @@ export const WALL_HEIGHT = wallHeight(ROOM_WIDTH, HOUSE_WIDTH, EAVE_HEIGHT);
 export const DOOR_WIDTH = 0.4;
 export const DOOR_HEIGHT = 0.75; // shorter than the wall so there's a header strip above it
 
+// Where the interior doorway (living room <-> kitchen) sits along the
+// shared wall's own width — off to the left rather than centered.
+export const INTERIOR_DOOR_X = -1.0;
+
+// The kitchen's walls specifically, regardless of which overall color
+// scheme is active — a one-off per-room override, not a new named scheme,
+// since it's about this specific room rather than the whole house's palette.
+export const KITCHEN_WALL_COLOR = '#d4d4d4';
+
 export const GROUND_SIZE = 30;
 export const GROUND_THICKNESS = 0.3;
 
@@ -54,13 +63,24 @@ export const EXTERIOR = 'exterior';
 // Close to the original single-room camera — the house is back to being
 // only ROOM_WIDTH wide, just deeper now that a room sits behind the front
 // one. Worth adjusting further by eye once there's more depth to see.
-export const EXTERIOR_CAMERA = { position: [4, 3, 6], target: [0, 0, -0.5] };
-export const EXTERIOR_MIN_DISTANCE = 3.5;
-export const EXTERIOR_MAX_DISTANCE = 14;
+export const EXTERIOR_CAMERA = { position: [5, 3.5, 7.5], target: [0, 0, -0.5] };
+export const EXTERIOR_MIN_DISTANCE = 4;
+export const EXTERIOR_MAX_DISTANCE = 16;
 
-// Range used once settled inside any room.
+// Range used once settled inside any room. Deliberately generous — the
+// real thing keeping the camera from bleeding through walls or into
+// another room is RoomBounds.jsx's position clamp, not this distance
+// range. If this were kept tight (like the single-room house's original
+// 0.3-1.4), it would fight that clamp: OrbitControls re-derives its own
+// distance/angle state from wherever the camera actually ends up each
+// frame, so a tight sphere constraint and a box constraint that disagree
+// would just oscillate between correcting each other.
 export const INTERIOR_MIN_DISTANCE = 0.3;
-export const INTERIOR_MAX_DISTANCE = 1.4;
+export const INTERIOR_MAX_DISTANCE = 3.5;
+
+// How far inside its own walls the camera is kept once settled — see
+// RoomBounds.jsx.
+export const ROOM_BOUNDS_MARGIN = 0.15;
 
 export const CAMERA_LERP_SPEED = 0.045;
 export const CAMERA_ARRIVE_EPSILON = 0.01;
