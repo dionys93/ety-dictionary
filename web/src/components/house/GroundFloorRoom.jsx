@@ -8,10 +8,12 @@ import { DOOR_WIDTH } from './constants.js';
 // segments with windows, and the house's front door. `hasBackWall` should
 // be false if another room sits directly behind this one (an interior
 // doorway takes its place instead of a solid wall) — see Room.jsx.
-export function GroundFloorRoom({ colors, open, onToggle, hasBackWall = true }) {
+// `interiorWallColor` passes through to Room.jsx, unused (no override) for
+// now since only the kitchen currently needs one.
+export function GroundFloorRoom({ colors, open, onToggle, hasBackWall = true, interiorWallColor }) {
   return (
     <>
-      <Room colors={colors} centerZ={0} hasBackWall={hasBackWall} />
+      <Room colors={colors} centerZ={0} hasBackWall={hasBackWall} interiorWallColor={interiorWallColor} />
       <FrontFacade colors={colors} doorWidth={DOOR_WIDTH} />
       <Door colors={colors} open={open} onToggle={onToggle} />
     </>

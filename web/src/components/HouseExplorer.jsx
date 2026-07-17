@@ -123,14 +123,15 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
           animation="swingDoorIn"
           open={isDoorOpen(1)}
           onToggle={() => goTo(settledLocation === 'kitchen' ? 'livingRoom' : 'kitchen')}
+          interiorWallColor={KITCHEN_WALL_COLOR}
         />
 
         {/* Kitchen: no exterior presence, no windows — reached only
-            through the interior doorway above. Its own light gray walls,
-            regardless of the active color scheme. */}
-        <Room colors={{ ...colors, wall: KITCHEN_WALL_COLOR }} centerZ={roomSlotZ(1)} hasBackWall={true} />
+            through the interior doorway above. Light gray on the inside;
+            its exterior-facing siding still matches the rest of the house. */}
+        <Room colors={colors} centerZ={roomSlotZ(1)} hasBackWall={true} interiorWallColor={KITCHEN_WALL_COLOR} />
 
-        <CameraRig transitionTarget={transitionTarget} controlsRef={controlsRef} onArrived={handleArrived} />
+        <CameraRig fromLocation={settledLocation} transitionTarget={transitionTarget} controlsRef={controlsRef} onArrived={handleArrived} />
 
         {/* OrbitControls clamps distance/polar-angle every frame in update(),
             regardless of `enabled` — enabled only gates new pointer input.
