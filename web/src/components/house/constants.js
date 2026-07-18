@@ -84,10 +84,17 @@ export const LERP_SPEED = 0.08;
 // location and the root of the navigation chain.
 export const EXTERIOR = 'exterior';
 
-// Eye height used both for a room's resting camera pose and for the
-// doorway waypoints the camera routes through, so a transition doesn't
-// bob vertically for no reason.
+// Eye height for a room's resting camera pose.
 export const CAMERA_EYE_HEIGHT = 0.75;
+
+// How far below a door's top edge the camera passes when going through it.
+// The camera is not a point for clipping purposes: at fov 50 / near 0.1 its
+// near plane reaches ~0.047 above the eye, so passing at exactly DOOR_HEIGHT
+// puts part of the frustum inside the header and you see straight through
+// it. This clearance keeps the whole frustum within the opening, with room
+// to spare for the slight downward pitch during a pass.
+export const DOORWAY_CLEARANCE = 0.15;
+export const DOORWAY_WAYPOINT_Y = DOOR_HEIGHT - DOORWAY_CLEARANCE;
 
 export const EXTERIOR_CAMERA = { position: [5, 3.5, 7.5], target: [0, 0, -0.5] };
 export const EXTERIOR_MIN_DISTANCE = 4;
@@ -107,5 +114,17 @@ export const INTERIOR_MAX_DISTANCE = 3.5;
 // RoomBounds.jsx.
 export const ROOM_BOUNDS_MARGIN = 0.15;
 
-export const CAMERA_LERP_SPEED = 0.045;
-export const CAMERA_ARRIVE_EPSILON = 0.01;
+// Camera transitions run on a fixed, eased timeline rather than an
+// exponential chase toward a moving goal. The chase approach eased OUT
+// only, so every leg jolted from a standstill and then crept asymptotically
+// into its destination — and with a doorway waypoint in the middle, that
+// meant the camera nearly halted mid-flight before jolting off again.
+// A single normalized progress value over the whole path, eased in AND out,
+// accelerates and decelerates once and crosses the doorway at full speed.
+//
+// Duration scales with the path's actual length so a short hop between
+// rooms doesn't take as long as a flight in from outside, clamped at both
+// ends so it never feels either frantic or sluggish.
+export const TRANSITION_SPEED = 4.5;        // world units per second
+export const TRANSITION_MIN_DURATION = 1.8; // seconds
+export const TRANSITION_MAX_DURATION = 2.2; // seconds

@@ -15,7 +15,7 @@
 // class of "forgot to register one" bugs.
 
 import { ROOMS } from './rooms.js';
-import { roomFrontZ, depthOf, CAMERA_EYE_HEIGHT } from './constants.js';
+import { roomFrontZ, depthOf, DOORWAY_WAYPOINT_Y } from './constants.js';
 
 // The transition between `from` and `to` crosses exactly one boundary: the
 // front of whichever location is deeper into the house. Going in or coming
@@ -28,6 +28,6 @@ export function transitionWaypoint(fromLocation, toLocation) {
   if (!room) return null;
 
   return {
-    position: [room.doorway.centerX, CAMERA_EYE_HEIGHT, roomFrontZ(deeperIndex)],
+    position: [room.doorway.centerX, DOORWAY_WAYPOINT_Y, roomFrontZ(deeperIndex)],
   };
 }
