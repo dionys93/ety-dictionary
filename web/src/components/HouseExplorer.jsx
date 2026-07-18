@@ -5,60 +5,50 @@ import { OrbitControls } from '@react-three/drei';
 import { COLOR_SCHEMES } from '../utils/houseColors.js';
 import { Roof } from './house/Roof.jsx';
 import { Ground } from './house/Ground.jsx';
-import { GroundFloorRoom } from './house/GroundFloorRoom.jsx';
 import { Room } from './house/Room.jsx';
+import { FrontFacade } from './house/FrontFacade.jsx';
+import { Door } from './house/Door.jsx';
 import { InteriorDoorway } from './house/InteriorDoorway.jsx';
 import { GableEnd } from './house/GableEnd.jsx';
+import { BathroomFixtures } from './house/BathroomFixtures.jsx';
 import { CameraRig } from './house/CameraRig.jsx';
 import { RoomBounds } from './house/RoomBounds.jsx';
 import { ROOMS } from './house/rooms.js';
+import { ridgeHeight, WALL_HEIGHT, ROOF_GABLE_OVERHANG } from './house/roofGeometry.js';
 import {
-  ROOM_WIDTH,
-  roomSlotZ,
-  roomFrontZ,
-  HOUSE_WIDTH,
-  HOUSE_DEPTH,
-  HOUSE_CENTER_Z,
-  FRONT_WALL_Z,
-  HOUSE_BACK_Z,
-  EAVE_HEIGHT,
-  EXTERIOR,
-  EXTERIOR_CAMERA,
-  EXTERIOR_MIN_DISTANCE,
-  EXTERIOR_MAX_DISTANCE,
-  INTERIOR_MIN_DISTANCE,
-  INTERIOR_MAX_DISTANCE,
-  depthOf,
-  parentOf,
+  roomById, roomRect, roomDoorway, doorwayWallSpan, entryFaceOf,
+  parentOf, pathTo, areAdjacent,
+  MAIN_COLUMN, MAIN_COLUMN_WIDTH, WINGS,
+  FRONT_WALL_Z, HOUSE_BACK_Z, HOUSE_CENTER_Z,
+  EXTERIOR, EXTERIOR_CAMERA,
+  EXTERIOR_MIN_DISTANCE, EXTERIOR_MAX_DISTANCE,
+  INTERIOR_MIN_DISTANCE, INTERIOR_MAX_DISTANCE,
 } from './house/constants.js';
 
 export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
   const colors = COLOR_SCHEMES[colorScheme];
   const controlsRef = useRef();
 
-  // Where we're actually settled (not mid-flight): EXTERIOR or a room id.
   const [settledLocation, setSettledLocation] = useState(EXTERIOR);
-  // Where we're flying toward, or null if not transitioning.
   const [transitionTarget, setTransitionTarget] = useState(null);
   const [showExitArrow, setShowExitArrow] = useState(false);
 
   const isTransitioning = transitionTarget !== null;
-  const isInterior = (isTransitioning ? transitionTarget : settledLocation) !== EXTERIOR;
+  const activeLocation = isTransitioning ? transitionTarget : settledLocation;
+  const isInterior = activeLocation !== EXTERIOR;
 
-  // The doorway leading into ROOMS[doorIndex] is open whenever we're settled
-  // at, or transitioning to/from, that room OR anything deeper than it. Just
-  // checking "is this room involved in the current transition" would
-  // false-positive on an outer door (like the front door) during a move
-  // between two rooms further down the chain — this depth check avoids that
-  // however deep the chain gets.
-  const isDoorOpen = (doorIndex) => {
-    const settledDepth = depthOf(settledLocation);
-    const targetDepth = isTransitioning ? depthOf(transitionTarget) : -Infinity;
-    return settledDepth >= doorIndex || targetDepth >= doorIndex;
+  // A room's doorway is open when the room we're settled at or heading to is
+  // that room or lies beyond it — i.e. the room is on the path to the active
+  // location. Path-based rather than depth-based, so it's correct for a tree
+  // (the bathroom being open must NOT open the kitchen, and vice versa).
+  const isDoorOpen = (roomId) => {
+    const onSettledPath = pathTo(settledLocation).includes(roomId);
+    const onTargetPath = isTransitioning && pathTo(transitionTarget).includes(roomId);
+    return onSettledPath || onTargetPath;
   };
 
   const goTo = (locationId) => {
-    if (isTransitioning) return; // ignore clicks mid-flight
+    if (isTransitioning) return;
     setTransitionTarget(locationId);
   };
 
@@ -67,10 +57,13 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
     setTransitionTarget(null);
   };
 
-  // Clicking a room's own doorway toggles between that room and whatever
-  // sits in front of it — so it works as both "go in" and "come back out".
+  // Clicking a room's doorway toggles between that room and its parent, so
+  // the same door works to enter and to leave.
   const toggleRoom = (roomId) => () =>
     goTo(settledLocation === roomId ? parentOf(roomId) : roomId);
+
+  const rootId = ROOMS[0].id;
+  const rootDoorway = roomDoorway(rootId);
 
   return (
     <div style={{ width: '100%', height: '600px', borderRadius: '8px', overflow: 'hidden', border: '1px solid #e5e7eb', position: 'relative' }}>
@@ -79,83 +72,67 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
         <directionalLight position={[5, 8, 5]} intensity={1} />
 
         <Ground colors={colors} />
-        <Roof colors={colors} houseWidth={HOUSE_WIDTH} houseDepth={HOUSE_DEPTH} centerZ={HOUSE_CENTER_Z} />
+        <Roof colors={colors} />
 
-        {/* Gable-end triangles closing the roof at the front and back of the
-            stack — without these, the space under the ridge is open at both
-            ends. Both planes are derived (constants.js), not re-computed
-            from ROOM_DEPTH here. */}
-        <GableEnd
-          colors={colors}
-          roomWidth={ROOM_WIDTH}
-          houseWidth={HOUSE_WIDTH}
-          eaveHeight={EAVE_HEIGHT}
-          z={FRONT_WALL_Z}
-          outwardSign={1}
-          interiorColor={ROOMS[0].interiorWallColor}
-        />
-        <GableEnd
-          colors={colors}
-          roomWidth={ROOM_WIDTH}
-          houseWidth={HOUSE_WIDTH}
-          eaveHeight={EAVE_HEIGHT}
-          z={HOUSE_BACK_Z}
-          outwardSign={-1}
-          interiorColor={ROOMS[ROOMS.length - 1].interiorWallColor}
-        />
-
-        {/* One entry per room in ROOMS. The frontmost gets the exterior
-            facade and front door; every other gets an interior doorway at
-            its own front plane, plus its interior. `hasBackWall` is
-            structural (is anything behind me?) rather than something a
-            caller has to remember to flip — forgetting that gave two
-            coincident z-fighting walls. */}
-        {ROOMS.map((room, index) => {
-          const isLast = index === ROOMS.length - 1;
-
-          if (index === 0) {
-            return (
-              <GroundFloorRoom
-                key={room.id}
-                colors={colors}
-                hasBackWall={isLast}
-                interiorWallColor={room.interiorWallColor}
-                doorway={room.doorway}
-                open={isDoorOpen(index)}
-                onToggle={toggleRoom(room.id)}
-              />
-            );
-          }
-
+        {/* Gable ends. Main gable caps the front and back of the main column;
+            each wing gets its own gable on its outer end. */}
+        <group position={[0, 0, FRONT_WALL_Z]}>
+          <GableEnd colors={colors} halfSpan={MAIN_COLUMN_WIDTH / 2} baseY={WALL_HEIGHT} ridgeY={ridgeHeight(MAIN_COLUMN_WIDTH)} outwardSign={1} interiorColor={roomById(rootId).interiorWallColor} />
+        </group>
+        <group position={[0, 0, HOUSE_BACK_Z]}>
+          <GableEnd colors={colors} halfSpan={MAIN_COLUMN_WIDTH / 2} baseY={WALL_HEIGHT} ridgeY={ridgeHeight(MAIN_COLUMN_WIDTH)} outwardSign={-1} interiorColor={roomById(MAIN_COLUMN[MAIN_COLUMN.length - 1]).interiorWallColor} />
+        </group>
+        {WINGS.map((id) => {
+          const r = roomRect(id);
+          const outerX = r.centerX + r.width / 2;
+          // wing gable faces +X, sits at the wing's outer wall, ridge along the room depth
           return (
-            <group key={room.id}>
+            <group key={`gable-${id}`} position={[outerX, 0, r.centerZ]} rotation={[0, Math.PI / 2, 0]}>
+              <GableEnd colors={colors} halfSpan={r.depth / 2} baseY={WALL_HEIGHT} ridgeY={ridgeHeight(r.depth)} outwardSign={1} interiorColor={roomById(id).interiorWallColor} />
+            </group>
+          );
+        })}
+
+        {/* The root room's exterior front door + window facade. */}
+        <group position={[rootDoorway.wallCenter[0], 0, rootDoorway.wallCenter[2]]}>
+          <FrontFacade colors={colors} span={roomRect(rootId).width} offset={rootDoorway.offset} />
+          <Door
+            colors={colors}
+            centerX={rootDoorway.offset}
+            animation={roomById(rootId).doorway.animation}
+            open={isDoorOpen(rootId)}
+            onToggle={toggleRoom(rootId)}
+          />
+        </group>
+
+        {/* Every room's interior. */}
+        {ROOMS.map((room) => (
+          <Room key={room.id} roomId={room.id} colors={colors} />
+        ))}
+
+        {/* Every non-root room's doorway, rotated into its parent-facing wall. */}
+        {ROOMS.filter((room) => room.parent).map((room) => {
+          const d = roomDoorway(room.id);
+          return (
+            <group key={`door-${room.id}`} position={[d.wallCenter[0], 0, d.wallCenter[2]]} rotation={[0, d.rotationY, 0]}>
               <InteriorDoorway
                 colors={colors}
-                z={roomFrontZ(index)}
-                centerX={room.doorway.centerX}
+                span={doorwayWallSpan(room.id)}
+                offset={d.offset}
                 animation={room.doorway.animation}
-                open={isDoorOpen(index)}
+                open={isDoorOpen(room.id)}
                 onToggle={toggleRoom(room.id)}
-                interiorWallColor={room.interiorWallColor}
-              />
-              <Room
-                colors={colors}
-                centerZ={roomSlotZ(index)}
-                hasBackWall={isLast}
-                interiorWallColor={room.interiorWallColor}
+                interiorColor={room.interiorWallColor}
               />
             </group>
           );
         })}
 
+        {/* Bathroom fixtures. */}
+        <BathroomFixtures wallHeight={WALL_HEIGHT} />
+
         <CameraRig fromLocation={settledLocation} transitionTarget={transitionTarget} controlsRef={controlsRef} onArrived={handleArrived} />
 
-        {/* OrbitControls clamps distance/polar-angle every frame in update(),
-            regardless of `enabled` — enabled only gates new pointer input.
-            So while CameraRig is actively flying the camera, these
-            constraints must already be wide open, or the fly-to gets clamped
-            partway and never actually arrives. Once settled, the real
-            interior/exterior ranges take over for user-driven orbiting. */}
         <OrbitControls
           ref={controlsRef}
           enabled={!isTransitioning}
@@ -165,37 +142,19 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
           maxPolarAngle={isTransitioning ? Math.PI : Math.PI / 2 - 0.05}
         />
 
-        {/* Keeps the camera inside the current room's own walls once settled
-            — OrbitControls' distance/angle constraints don't know about the
-            room's box shape, so plenty of valid orbit angles would place the
-            camera through a wall or into the next room. Placed after
-            OrbitControls so its clamp is the last word each frame. */}
         <RoomBounds controlsRef={controlsRef} settledLocation={settledLocation} active={!isTransitioning} />
       </Canvas>
 
-      {/* "Go back" affordance: hovering the bottom strip while inside any
-          room reveals an arrow; clicking it steps back one room toward the
-          exterior (kitchen -> living room -> exterior, not straight out). */}
       {isInterior && (
         <div
           onMouseEnter={() => setShowExitArrow(true)}
           onMouseLeave={() => setShowExitArrow(false)}
-          style={{
-            position: 'absolute', left: 0, right: 0, bottom: 0, height: '22%',
-            display: 'flex', alignItems: 'flex-end', justifyContent: 'center',
-            paddingBottom: '18px',
-          }}
+          style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: '22%', display: 'flex', alignItems: 'flex-end', justifyContent: 'center', paddingBottom: '18px' }}
         >
           <button
             onClick={() => goTo(parentOf(settledLocation))}
             aria-label="Go back"
-            style={{
-              width: '48px', height: '48px', borderRadius: '50%', border: 'none',
-              backgroundColor: 'rgba(17, 24, 39, 0.6)', color: '#ffffff', fontSize: '1.3rem',
-              cursor: 'pointer', opacity: showExitArrow ? 1 : 0,
-              transition: 'opacity 0.25s ease',
-              pointerEvents: showExitArrow ? 'auto' : 'none',
-            }}
+            style={{ width: '48px', height: '48px', borderRadius: '50%', border: 'none', backgroundColor: 'rgba(17, 24, 39, 0.6)', color: '#ffffff', fontSize: '1.3rem', cursor: 'pointer', opacity: showExitArrow ? 1 : 0, transition: 'opacity 0.25s ease', pointerEvents: showExitArrow ? 'auto' : 'none' }}
           >
             ←
           </button>

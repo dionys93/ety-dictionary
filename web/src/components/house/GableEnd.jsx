@@ -1,55 +1,45 @@
 // web/src/components/house/GableEnd.jsx
 import { useMemo } from 'react';
 import * as THREE from 'three';
-import { ROOF_THICKNESS, roofHeightAtX } from './roofGeometry.js';
+import { ROOF_THICKNESS } from './roofGeometry.js';
 
 const LINER_THICKNESS = 0.02;
 
-// The triangular wall infill at one end of the ridge — apex at the ridge
-// peak, base corners at the height the side walls actually reach (matching
-// WALL_HEIGHT). Without this, the space under the roof's peak at the front
-// and back of the house is completely open. Both the apex and base heights
-// come from roofHeightAtX (the same function the roof panels and the walls
-// are built from), evaluated at x=0 (ridge) and x=halfWidth (base) using
-// the same eaveHeight/houseWidth reference — not re-derived from an
-// already-derived value, which is exactly the mistake that would silently
-// produce a slightly-too-tall triangle that doesn't match the roof.
+// The triangular wall closing one end of a gable — base corners at the wall
+// tops, apex at the ridge. Without it the space under the roof's peak is
+// open at that end.
 //
-// `outwardSign` says which way faces out of the house (+1 = +Z, the front
-// end; -1 = -Z, the back end). `interiorColor`, if given and different from
-// the wall color, adds a thin liner triangle on the INWARD face in that
-// color — the same interior/exterior split WallSegment does for ordinary
-// walls. This matters because the rooms have no ceilings, so whichever room
-// a gable backs onto can see its inward face from inside.
+// Built in LOCAL space: the triangle lies in the local XY plane and extrudes
+// along local +Z, so the caller positions and rotates it. That's what lets
+// the same component cap the main roof (facing ±Z) and the bathroom wing's
+// roof (facing +X) with no special casing. `outwardSign` is in LOCAL terms:
+// +1 means local +Z faces out of the house.
 //
-// This is the one shape in the house that isn't a box or a cone, so it's
-// built from THREE.Shape + extrudeGeometry. Note extrudeGeometry always
-// extrudes toward local +Z regardless of orientation, which is why the
-// liner's offset is asymmetric between the two ends rather than a simple
-// mirror. DoubleSide avoids having to reason about the triangle's winding
-// order for the two different-facing ends.
-export function GableEnd({ colors, roomWidth, houseWidth, eaveHeight, z, outwardSign = 1, interiorColor }) {
-  const halfWidth = roomWidth / 2;
-  const baseY = roofHeightAtX(halfWidth, eaveHeight, houseWidth);
-  const ridgeY = roofHeightAtX(0, eaveHeight, houseWidth);
+// `halfSpan`, `baseY` and `ridgeY` are passed in rather than derived here,
+// because the house now has more than one roof block and they don't share a
+// span. The caller computes them from roofGeometry so they still can't drift
+// from the roof panels they meet.
+//
+// extrudeGeometry always extrudes toward local +Z regardless of orientation,
+// which is why the liner's offset is asymmetric between the two ends rather
+// than a mirror. DoubleSide avoids reasoning about the triangle's winding.
+export function GableEnd({ colors, halfSpan, baseY, ridgeY, outwardSign = 1, interiorColor }) {
   const hasLiner = interiorColor && interiorColor !== colors.wall;
 
   const shape = useMemo(() => {
     const s = new THREE.Shape();
-    s.moveTo(-halfWidth, baseY);
-    s.lineTo(halfWidth, baseY);
+    s.moveTo(-halfSpan, baseY);
+    s.lineTo(halfSpan, baseY);
     s.lineTo(0, ridgeY);
     s.closePath();
     return s;
-  }, [halfWidth, baseY, ridgeY]);
+  }, [halfSpan, baseY, ridgeY]);
 
-  // extrudeGeometry spans local z in [0, depth], so a mesh positioned at P
-  // occupies [P, P + depth]. The core is centered on `z`; the liner sits
-  // flush against whichever of its faces points into the house.
-  const coreZ = z - ROOF_THICKNESS / 2;
-  const linerZ = outwardSign > 0
-    ? z - ROOF_THICKNESS / 2 - LINER_THICKNESS
-    : z + ROOF_THICKNESS / 2;
+  // extrudeGeometry spans local z in [0, depth], so a mesh at P occupies
+  // [P, P + depth]. Centre the core on local z=0; sit the liner flush
+  // against whichever face points into the house.
+  const coreZ = -ROOF_THICKNESS / 2;
+  const linerZ = outwardSign > 0 ? -ROOF_THICKNESS / 2 - LINER_THICKNESS : ROOF_THICKNESS / 2;
 
   return (
     <group>

@@ -1,36 +1,40 @@
 // web/src/components/house/InteriorDoorway.jsx
 import { WallSegment } from './Siding.jsx';
 import { Door } from './Door.jsx';
-import { ROOM_WIDTH, DOOR_WIDTH, WALL_HEIGHT } from './constants.js';
+import { DOOR_WIDTH, WALL_HEIGHT, WALL_THICKNESS } from './constants.js';
 
-// A doorway between two stacked rooms: the swinging door itself, plus solid
-// wall segments filling the rest of the shared boundary's width. The door
-// alone is only DOOR_WIDTH wide — far narrower than the ROOM_WIDTH-wide
-// room it's supposedly closing off. This is the interior equivalent of
-// FrontFacade (which does the same job for the exterior door), just
-// without windows, since nothing needs a window looking into another room.
+// A doorway between two rooms: the swinging door plus solid wall filling the
+// rest of the shared wall's width. The door alone is only DOOR_WIDTH wide —
+// far narrower than the wall it's closing off. This is the interior
+// equivalent of FrontFacade, minus the windows.
 //
-// `centerX` doesn't have to be 0 — the two flanking segments are computed
-// independently (not as two equal halves), so the door can sit anywhere
-// along the wall's width and the flanks still tile the full width exactly.
+// Built in LOCAL space: lying in the local z=0 plane, spanning local x, with
+// local +Z toward the parent room. The caller rotates it into place, so the
+// same component works for a doorway to the room behind and one to a room
+// off the side. Because local +Z is always the parent's side, the siding /
+// interior-liner convention needs no special casing either.
 //
-// `interiorWallColor`, if given, colors the side facing whichever room is
-// on the far side of `z` from `colors.wall`'s own siding — for the living
-// room/kitchen boundary specifically, siding defaults to facing the living
-// room, so this lands on the kitchen-facing side (see WallSegment).
-export function InteriorDoorway({ colors, z, centerX = 0, animation, open, onToggle, interiorWallColor }) {
-  const leftFlankSpan = [-ROOM_WIDTH / 2, centerX - DOOR_WIDTH / 2];
-  const rightFlankSpan = [centerX + DOOR_WIDTH / 2, ROOM_WIDTH / 2];
-  const leftFlankWidth = leftFlankSpan[1] - leftFlankSpan[0];
-  const rightFlankWidth = rightFlankSpan[1] - rightFlankSpan[0];
-  const leftFlankCenterX = (leftFlankSpan[0] + leftFlankSpan[1]) / 2;
-  const rightFlankCenterX = (rightFlankSpan[0] + rightFlankSpan[1]) / 2;
+// `offset` need not be 0 — the two flanking segments are computed
+// independently rather than as equal halves, so the door can sit anywhere
+// along the wall and the flanks still tile it exactly.
+export function InteriorDoorway({ colors, span, offset = 0, animation, open, onToggle, interiorColor }) {
+  const flanks = [
+    [-span / 2, offset - DOOR_WIDTH / 2],
+    [offset + DOOR_WIDTH / 2, span / 2],
+  ];
 
   return (
     <>
-      <WallSegment position={[leftFlankCenterX, WALL_HEIGHT / 2, z]} size={[leftFlankWidth, WALL_HEIGHT, 0.05]} color={colors.wall} interiorColor={interiorWallColor} />
-      <WallSegment position={[rightFlankCenterX, WALL_HEIGHT / 2, z]} size={[rightFlankWidth, WALL_HEIGHT, 0.05]} color={colors.wall} interiorColor={interiorWallColor} />
-      <Door colors={colors} z={z} centerX={centerX} animation={animation} open={open} onToggle={onToggle} interiorColor={interiorWallColor} />
+      {flanks.map(([from, to], i) => (
+        <WallSegment
+          key={i}
+          position={[(from + to) / 2, WALL_HEIGHT / 2, 0]}
+          size={[to - from, WALL_HEIGHT, WALL_THICKNESS]}
+          color={colors.wall}
+          interiorColor={interiorColor}
+        />
+      ))}
+      <Door colors={colors} centerX={offset} animation={animation} open={open} onToggle={onToggle} interiorColor={interiorColor} />
     </>
   );
 }

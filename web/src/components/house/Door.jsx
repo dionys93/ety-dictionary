@@ -1,37 +1,32 @@
 // web/src/components/house/Door.jsx
 import { WallSegment } from './Siding.jsx';
 import { Wall } from './Wall.jsx';
-import { DOOR_WIDTH, DOOR_HEIGHT, WALL_HEIGHT, FRONT_WALL_Z } from './constants.js';
+import { DOOR_WIDTH, DOOR_HEIGHT, WALL_HEIGHT, WALL_THICKNESS } from './constants.js';
 
-// A door: a fixed header strip (still wall, same color/siding as everything
-// else) sitting above shorter swinging leaves, rather than one panel
-// spanning the full wall height. `z` is the wall plane it sits in —
-// defaults to the house's front exterior wall; an interior doorway between
-// two stacked rooms passes its own boundary's z. `centerX` places it along
-// that wall's width (0 = centered). `open`/`onToggle` are controlled from
-// HouseExplorer so the same state can also drive the camera fly-in/fly-out.
+// A door: a fixed header strip above shorter swinging leaves. Built in LOCAL
+// space — lying in the local z=0 plane, with local +Z pointing back toward
+// whatever you entered from. The caller positions and rotates it, which is
+// how the same component serves the exterior front door and a doorway into a
+// room off to the side without any axis special-casing.
 //
-// `interiorColor` gets the header the same inward-facing liner the wall
-// segments beside it get. Without it, the header stays one color on both
-// faces — which reads as a chunk of the *other* room's wall color floating
-// directly above the doorway, since it's the only piece of that boundary
-// not linered. The swinging leaves aren't linered: a door is the same door
-// from either side.
-export function Door({ colors, width = DOOR_WIDTH, height = DOOR_HEIGHT, animation = 'swingDoorOut', open, onToggle, z = FRONT_WALL_Z, centerX = 0, interiorColor }) {
+// `centerX` offsets it along the wall it sits in. `interiorColor` gives the
+// header the same inward liner the wall segments beside it get; without it
+// the header reads as a chunk of the other room's colour above the doorway.
+// The leaves aren't linered — a door is the same door from either side.
+export function Door({ colors, width = DOOR_WIDTH, height = DOOR_HEIGHT, animation = 'swingDoorOut', open, onToggle, centerX = 0, interiorColor }) {
   const headerHeight = WALL_HEIGHT - height;
   const headerY = height + headerHeight / 2;
 
   return (
     <group>
       <WallSegment
-        position={[centerX, headerY, z]}
-        size={[width, headerHeight, 0.05]}
+        position={[centerX, headerY, 0]}
+        size={[width, headerHeight, WALL_THICKNESS]}
         color={colors.wall}
         sidingBoards={2}
         interiorColor={interiorColor}
       />
-
-      <Wall animation={animation} width={width} height={height} position={[centerX, 0, z]} open={open} onToggle={onToggle} colors={colors} />
+      <Wall animation={animation} width={width} height={height} position={[centerX, 0, 0]} open={open} onToggle={onToggle} colors={colors} />
     </group>
   );
 }

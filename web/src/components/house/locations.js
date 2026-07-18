@@ -1,29 +1,49 @@
 // web/src/components/house/locations.js
 //
-// Every enterable room's resting camera pose, keyed by id. Derived entirely
-// from ROOMS — adding a room to rooms.js gets it an entry here for free.
-// 'exterior' isn't listed: it's the implicit root of the navigation chain
-// and uses EXTERIOR_CAMERA from constants.js instead, since it isn't
-// "entered" through a doorway the way a room is.
+// Every room's resting camera pose, derived from the ROOMS tree — a room
+// added to rooms.js gets an entry here for free. 'exterior' isn't listed:
+// it's the implicit root and uses EXTERIOR_CAMERA instead, since it isn't
+// entered through a doorway.
 
 import { ROOMS } from './rooms.js';
-import { roomSlotZ, CAMERA_EYE_HEIGHT } from './constants.js';
+import { roomRect, entryFaceOf, CAMERA_EYE_HEIGHT } from './constants.js';
 
-// Where the camera rests inside a room, relative to that room's own center
-// along Z — stand back from center, look toward the far end.
-const EYE_BACK_FROM_CENTER = 0.8;
-const LOOK_FORWARD_OF_CENTER = -0.6;
+// Where the camera stands and looks, as fractions of the room's own extent
+// along the axis it's entered from: stand back toward the doorway, look
+// past the centre to the far side. Expressed as fractions rather than fixed
+// distances so a small room (the bathroom) doesn't put the camera through
+// its own wall — the values are exactly what the 2.5-deep rooms used before
+// (0.8 and 0.6 of 2.5).
+const EYE_BACK = 0.32;
+const LOOK_AHEAD = 0.24;
 
-function roomCamera(centerZ) {
+// Unit vector pointing from a room's centre out through its own doorway.
+const OUTWARD = {
+  front: [0, 1],
+  back: [0, -1],
+  left: [-1, 0],
+  right: [1, 0],
+};
+
+function roomCamera(id) {
+  const rect = roomRect(id);
+  const [ox, oz] = OUTWARD[entryFaceOf(id)];
+  const extent = ox !== 0 ? rect.width : rect.depth;
+
   return {
-    position: [0, CAMERA_EYE_HEIGHT, centerZ + EYE_BACK_FROM_CENTER],
-    target: [0, 0.2, centerZ + LOOK_FORWARD_OF_CENTER],
+    position: [
+      rect.centerX + ox * EYE_BACK * extent,
+      CAMERA_EYE_HEIGHT,
+      rect.centerZ + oz * EYE_BACK * extent,
+    ],
+    target: [
+      rect.centerX - ox * LOOK_AHEAD * extent,
+      0.2,
+      rect.centerZ - oz * LOOK_AHEAD * extent,
+    ],
   };
 }
 
 export const LOCATIONS = Object.fromEntries(
-  ROOMS.map((room, index) => [
-    room.id,
-    { label: room.label, camera: roomCamera(roomSlotZ(index)) },
-  ])
+  ROOMS.map((room) => [room.id, { label: room.label, camera: roomCamera(room.id) }])
 );

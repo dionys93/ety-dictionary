@@ -1,19 +1,24 @@
 // web/src/components/house/FrontFacade.jsx
 import { WallWithWindow } from './Window.jsx';
-import { ROOM_WIDTH, WALL_HEIGHT } from './constants.js';
+import { DOOR_WIDTH, WALL_HEIGHT } from './constants.js';
 
-// The two fixed wall segments flanking one room's own door, each with an
-// actual window opening in it. `centerX`/`roomWidth` place and size this
-// for whichever room slot it belongs to — static, these never move, unlike
-// the door between them.
-export function FrontFacade({ colors, doorWidth, roomWidth = ROOM_WIDTH, centerX = 0 }) {
-  const flankWidth = (roomWidth - doorWidth) / 2;
-  const flankOffset = doorWidth / 2 + flankWidth / 2;
+// The wall segments flanking the house's exterior front door, each with a
+// real window opening. Built in LOCAL space alongside the front Door, in the
+// same z=0 plane; the caller places both together.
+//
+// Like InteriorDoorway, the two flanks are computed independently rather
+// than as equal halves, so an off-centre front door would still tile the
+// wall exactly.
+export function FrontFacade({ colors, span, offset = 0, doorWidth = DOOR_WIDTH }) {
+  const flanks = [
+    [-span / 2, offset - doorWidth / 2],
+    [offset + doorWidth / 2, span / 2],
+  ];
 
   return (
     <>
-      {[-1, 1].map((side) => (
-        <WallWithWindow key={side} x={centerX + side * flankOffset} width={flankWidth} height={WALL_HEIGHT} colors={colors} />
+      {flanks.map(([from, to], i) => (
+        <WallWithWindow key={i} x={(from + to) / 2} width={to - from} height={WALL_HEIGHT} colors={colors} />
       ))}
     </>
   );
