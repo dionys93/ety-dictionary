@@ -85,8 +85,24 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
             stack — without these, the space under the ridge is open at both
             ends. Both planes are derived (constants.js), not re-computed
             from ROOM_DEPTH here. */}
-        <GableEnd colors={colors} roomWidth={ROOM_WIDTH} houseWidth={HOUSE_WIDTH} eaveHeight={EAVE_HEIGHT} z={FRONT_WALL_Z} />
-        <GableEnd colors={colors} roomWidth={ROOM_WIDTH} houseWidth={HOUSE_WIDTH} eaveHeight={EAVE_HEIGHT} z={HOUSE_BACK_Z} />
+        <GableEnd
+          colors={colors}
+          roomWidth={ROOM_WIDTH}
+          houseWidth={HOUSE_WIDTH}
+          eaveHeight={EAVE_HEIGHT}
+          z={FRONT_WALL_Z}
+          outwardSign={1}
+          interiorColor={ROOMS[0].interiorWallColor}
+        />
+        <GableEnd
+          colors={colors}
+          roomWidth={ROOM_WIDTH}
+          houseWidth={HOUSE_WIDTH}
+          eaveHeight={EAVE_HEIGHT}
+          z={HOUSE_BACK_Z}
+          outwardSign={-1}
+          interiorColor={ROOMS[ROOMS.length - 1].interiorWallColor}
+        />
 
         {/* One entry per room in ROOMS. The frontmost gets the exterior
             facade and front door; every other gets an interior doorway at

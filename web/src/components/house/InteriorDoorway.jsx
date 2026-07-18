@@ -30,7 +30,7 @@ export function InteriorDoorway({ colors, z, centerX = 0, animation, open, onTog
     <>
       <WallSegment position={[leftFlankCenterX, WALL_HEIGHT / 2, z]} size={[leftFlankWidth, WALL_HEIGHT, 0.05]} color={colors.wall} interiorColor={interiorWallColor} />
       <WallSegment position={[rightFlankCenterX, WALL_HEIGHT / 2, z]} size={[rightFlankWidth, WALL_HEIGHT, 0.05]} color={colors.wall} interiorColor={interiorWallColor} />
-      <Door colors={colors} z={z} centerX={centerX} animation={animation} open={open} onToggle={onToggle} />
+      <Door colors={colors} z={z} centerX={centerX} animation={animation} open={open} onToggle={onToggle} interiorColor={interiorWallColor} />
     </>
   );
 }

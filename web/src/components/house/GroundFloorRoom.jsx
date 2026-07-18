@@ -17,7 +17,7 @@ export function GroundFloorRoom({ colors, open, onToggle, hasBackWall, interiorW
     <>
       <Room colors={colors} centerZ={0} hasBackWall={hasBackWall} interiorWallColor={interiorWallColor} />
       <FrontFacade colors={colors} doorWidth={DOOR_WIDTH} />
-      <Door colors={colors} centerX={doorway.centerX} animation={doorway.animation} open={open} onToggle={onToggle} />
+      <Door colors={colors} centerX={doorway.centerX} animation={doorway.animation} open={open} onToggle={onToggle} interiorColor={interiorWallColor} />
     </>
   );
 }

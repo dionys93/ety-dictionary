@@ -10,13 +10,26 @@ import { DOOR_WIDTH, DOOR_HEIGHT, WALL_HEIGHT, FRONT_WALL_Z } from './constants.
 // two stacked rooms passes its own boundary's z. `centerX` places it along
 // that wall's width (0 = centered). `open`/`onToggle` are controlled from
 // HouseExplorer so the same state can also drive the camera fly-in/fly-out.
-export function Door({ colors, width = DOOR_WIDTH, height = DOOR_HEIGHT, animation = 'swingDoorOut', open, onToggle, z = FRONT_WALL_Z, centerX = 0 }) {
+//
+// `interiorColor` gets the header the same inward-facing liner the wall
+// segments beside it get. Without it, the header stays one color on both
+// faces — which reads as a chunk of the *other* room's wall color floating
+// directly above the doorway, since it's the only piece of that boundary
+// not linered. The swinging leaves aren't linered: a door is the same door
+// from either side.
+export function Door({ colors, width = DOOR_WIDTH, height = DOOR_HEIGHT, animation = 'swingDoorOut', open, onToggle, z = FRONT_WALL_Z, centerX = 0, interiorColor }) {
   const headerHeight = WALL_HEIGHT - height;
   const headerY = height + headerHeight / 2;
 
   return (
     <group>
-      <WallSegment position={[centerX, headerY, z]} size={[width, headerHeight, 0.05]} color={colors.wall} sidingBoards={2} />
+      <WallSegment
+        position={[centerX, headerY, z]}
+        size={[width, headerHeight, 0.05]}
+        color={colors.wall}
+        sidingBoards={2}
+        interiorColor={interiorColor}
+      />
 
       <Wall animation={animation} width={width} height={height} position={[centerX, 0, z]} open={open} onToggle={onToggle} colors={colors} />
     </group>
