@@ -39,7 +39,7 @@ const rooms = readRooms(grid);
 const footprints = findFootprints(grid);
 const walls = findWalls(grid, coords);
 const nav = buildNavigation(DOORS, rooms);
-const doorways = placeDoorways(DOORS, walls, nav, CELL);
+const doorways = placeDoorways(DOORS, walls, nav, CELL, DOOR_WIDTH);
 
 // ── Rooms ─────────────────────────────────────────────────────────────────
 export const ROOMS = rooms;

@@ -206,11 +206,32 @@ export function buildNavigation(doors, rooms) {
 }
 
 // ── placeDoorways: match each door to its shared wall and position it ──────
-export function placeDoorways(doors, walls, nav, cell) {
+export function placeDoorways(doors, walls, nav, cell, doorWidth) {
   return doors.map((door) => {
     const [a, b] = door.between.map((s) => (s === 'outside' ? EXTERIOR : s));
     const child = nav.depthOf(a) > nav.depthOf(b) ? a : b;
     const run = matchDoorToWall(door, a, b, child, walls);
+
+    // The door opening (its full width) plus a minimum jamb on each side must
+    // fit within the wall it sits in — otherwise the door, or its swing,
+    // clips out through the corner. Check before placing so an offset that's
+    // too large for its wall is a loud, specific error rather than a door
+    // silently poking through an exterior wall.
+    const wallSpan = run.hi - run.lo;
+    const offsetWorld = (door.offset ?? 0) * cell;
+    // Leave a full door-width of wall beside the opening: enough of a jamb
+    // that the leaf's swing arc doesn't sweep past the corner (a half-width
+    // reveal looks fine at rest but the door still clips out when opened).
+    const minJamb = doorWidth;
+    const maxOffset = wallSpan / 2 - doorWidth / 2 - minJamb;
+    if (Math.abs(offsetWorld) > maxOffset + 1e-9) {
+      const maxCells = maxOffset / cell;
+      throw new Error(
+        `rooms.js: door ${a}<->${b} has offset ${door.offset ?? 0}, which pushes it past its wall ` +
+        `(the ${a}/${b} wall is ${wallSpan / cell} cells wide; max offset here is ` +
+        `${maxCells >= 0 ? '±' + maxCells.toFixed(1) : '0 (wall too narrow for an offset)'} cells)`
+      );
+    }
 
     // Build the doorway in local space (spanning local X, local +Z toward the
     // shallower/parent side), then hand back where to place and rotate it.
@@ -220,7 +241,6 @@ export function placeDoorways(doors, walls, nav, cell) {
       ? [run.at, 0, midpoint(run.lo, run.hi)]
       : [midpoint(run.lo, run.hi), 0, run.at];
 
-    const offsetWorld = (door.offset ?? 0) * cell;
     const along = [Math.cos(rotationY), 0, -Math.sin(rotationY)];
     const doorPosition = [
       wallCenter[0] + offsetWorld * along[0],
