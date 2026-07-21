@@ -26,7 +26,7 @@ While their orthography has been standardized to reflect their phonetic reality,
 | **beneath** | **benieþ** | Extending or directly underneath, often carrying a formal tone. |
 | **beside** | **besîde** | At the side of; next to. |
 | **between** | **betuine** | At, into, or across the space separating two distinct things. |
-| **beyond** | **bionde** | At or to the further side of; outside the physical limits of. |
+| **beyond** | **byonde** | At or to the further side of; outside the physical limits of. |
 | **but** | **but** | Except; apart from; other than. |
 | **by** | **by** | Identifying the agent of an action; indicating proximity (near to). |
 | **concerning** | **concêning** | On the subject of or in connection with. |
@@ -52,7 +52,7 @@ While their orthography has been standardized to reflect their phonetic reality,
 | **opposite** | **opposit** | In a position facing someone or something but on the other side. |
 | **out** | **aut** | Moving or appearing to move away from a particular place. |
 | **outside** | **autsîde** | Situated or moving beyond the boundaries or confines of. |
-| **over** | **ovre** | Extending directly upward from; expressing passage across. |
+| **over** | **over** | Extending directly upward from; expressing passage across. |
 | **past** | **past** | To or on the further side of; beyond in time or space. |
 | **per** | **per** | For each; by means of. |
 | **plus** | **plus** | With the addition of. |
