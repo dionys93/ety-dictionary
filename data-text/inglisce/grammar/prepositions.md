@@ -64,7 +64,7 @@ While their orthography has been standardized to reflect their phonetic reality,
 | **through** | **þru** | Moving in one side and out the other side of an opening, channel, or location. |
 | **to** | **to** | Expressing motion in the direction of a particular location; identifying a target. |
 | **towards** | **tords** | In the direction of. |
-| **under** | **ondre** | Extending or directly below something; controlled or governed by. |
+| **under** | **onder** | Extending or directly below something; controlled or governed by. |
 | **underneath** | **ondrenieþ** | Situated directly below; beneath. |
 | **unlike** | **unlîc** | Different from; not similar to. |
 | **until** | **ontill** | Up to the point in time or the event mentioned. |
@@ -109,7 +109,7 @@ While their orthography has been standardized to reflect their phonetic reality,
 | **in accórdance uiþ** | in accórdance uiþ þe lahe |
 | **in addicion to** | in addicion to þe còste |
 | **in câss of** | in câss of emêgencie |
-| **in fâvor of** | in fâvre of þa propôsal |
+| **in fâvre of** | in fâvre of þa propósal |
 | **in spîte of** | in spîte of difficultis |
 | **instaid of** | instaid of caufie |
 | **in lieu of** | in lieu of paiement |
@@ -139,8 +139,8 @@ While their orthography has been standardized to reflect their phonetic reality,
 | **arônd** | arônd þe trac |
 | **up** | up þe steirs |
 | **dôn** | dôn þe hille |
-| **ovre** | ovre þe fence |
-| **ondre** | ondre þe bridge |
+| **over** | over þe fence |
+| **onder** | onder þe bridge |
 | **past** | past þe c̃urc̃e |
 | **by** | by þe lâc |
 
@@ -165,10 +165,10 @@ While their orthography has been standardized to reflect their phonetic reality,
 | **in** | in þe roume, in London, in þe carre |
 | **on** | on þe tâble, on þe ualle, on þe floure |
 | **above** | above þe clôuds |
-| **beló** | beló cie levle |
+| **beló** | beló saeie levele |
 | **benieþ** | benieþ þe sorface |
-| **ondre** | ondre þe bridge |
-| **ovre** | ovre þe raignbo |
+| **onder** | onder þe bridge |
+| **over** | over þe raînbo |
 | **betuine** | betuine tue c̃airs |
 | **among** | among frends |
 | **besîde / by** | besîde þe rivre |
