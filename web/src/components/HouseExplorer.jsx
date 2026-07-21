@@ -16,10 +16,12 @@ import { CameraRig } from './house/CameraRig.jsx';
 import { RoomBounds } from './house/RoomBounds.jsx';
 import { ridgeHeight, WALL_HEIGHT } from './house/roofGeometry.js';
 import {
-  ROOMS, DOORWAYS, ROOT_ID,
-  roomById, roomRect,
+  ROOMS, DOORWAYS,
+  roomById,
   parentOf, pathTo,
-  MAIN_COLUMN, MAIN_COLUMN_WIDTH, WINGS,
+  RIDGE_AXIS, GABLE_SPAN,
+  HOUSE_CENTER_X, HOUSE_CENTER_Z,
+  HOUSE_LEFT_X, HOUSE_RIGHT_X,
   FRONT_WALL_Z, HOUSE_BACK_Z,
   EXTERIOR, EXTERIOR_CAMERA,
   EXTERIOR_MIN_DISTANCE, EXTERIOR_MAX_DISTANCE,
@@ -67,28 +69,28 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
         <Ground colors={colors} />
         <Roof colors={colors} />
 
-        {/* Gable ends: main gable front and back, one per wing outer end. */}
-        <group position={[0, 0, FRONT_WALL_Z]}>
-          <GableEnd colors={colors} halfSpan={MAIN_COLUMN_WIDTH / 2} baseY={WALL_HEIGHT} ridgeY={ridgeHeight(MAIN_COLUMN_WIDTH)} outwardSign={1} interiorColor={roomById(ROOT_ID).interiorWallColor} />
-        </group>
-        <group position={[0, 0, HOUSE_BACK_Z]}>
-          <GableEnd colors={colors} halfSpan={MAIN_COLUMN_WIDTH / 2} baseY={WALL_HEIGHT} ridgeY={ridgeHeight(MAIN_COLUMN_WIDTH)} outwardSign={-1} interiorColor={roomById(MAIN_COLUMN[MAIN_COLUMN.length - 1]).interiorWallColor} />
-        </group>
-        {WINGS.filter((id) => {
-          const r = roomRect(id);
-          return r.centerX + r.width / 2 > MAIN_COLUMN_WIDTH / 2 + 1e-9;
-        }).map((id) => {
-          // Only a wing that protrudes past the main body gets a gable end.
-          // A wing carved into a corner of the main rectangle sits under the
-          // main gable, so it has no outward-facing triangular wall — same
-          // rule the roof uses to decide which wings get their own roof.
-          const r = roomRect(id);
-          return (
-            <group key={`gable-${id}`} position={[r.centerX + r.width / 2, 0, r.centerZ]} rotation={[0, Math.PI / 2, 0]}>
-              <GableEnd colors={colors} halfSpan={r.depth / 2} baseY={WALL_HEIGHT} ridgeY={ridgeHeight(r.depth)} outwardSign={1} interiorColor={roomById(id).interiorWallColor} />
+        {/* The two gable ends, at the short ends of the footprint the ridge
+            runs between. No wing gables — one roof over the whole footprint,
+            so there are exactly two triangular ends, wherever the rooms sit. */}
+        {RIDGE_AXIS === 'z' ? (
+          <>
+            <group position={[HOUSE_CENTER_X, 0, FRONT_WALL_Z]}>
+              <GableEnd colors={colors} halfSpan={GABLE_SPAN / 2} baseY={WALL_HEIGHT} ridgeY={ridgeHeight(GABLE_SPAN)} outwardSign={1} interiorColor={colors.wall} />
             </group>
-          );
-        })}
+            <group position={[HOUSE_CENTER_X, 0, HOUSE_BACK_Z]}>
+              <GableEnd colors={colors} halfSpan={GABLE_SPAN / 2} baseY={WALL_HEIGHT} ridgeY={ridgeHeight(GABLE_SPAN)} outwardSign={-1} interiorColor={colors.wall} />
+            </group>
+          </>
+        ) : (
+          <>
+            <group position={[HOUSE_RIGHT_X, 0, HOUSE_CENTER_Z]} rotation={[0, Math.PI / 2, 0]}>
+              <GableEnd colors={colors} halfSpan={GABLE_SPAN / 2} baseY={WALL_HEIGHT} ridgeY={ridgeHeight(GABLE_SPAN)} outwardSign={1} interiorColor={colors.wall} />
+            </group>
+            <group position={[HOUSE_LEFT_X, 0, HOUSE_CENTER_Z]} rotation={[0, Math.PI / 2, 0]}>
+              <GableEnd colors={colors} halfSpan={GABLE_SPAN / 2} baseY={WALL_HEIGHT} ridgeY={ridgeHeight(GABLE_SPAN)} outwardSign={-1} interiorColor={colors.wall} />
+            </group>
+          </>
+        )}
 
         {/* Every solid wall in the house, derived from the grid. */}
         <Walls colors={colors} />

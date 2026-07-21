@@ -74,24 +74,48 @@ export const areAdjacent = nav.areAdjacent;
 export const depthOf = nav.depthOf;
 
 // ── Roof extents ──────────────────────────────────────────────────────────
-// The root is the room the front door opens into. The "main column" is every
-// room sharing the root's exact left/right edges (the body under the main
-// gable); anything else is a wing with its own cross-gable.
+// The roof is one gable over the WHOLE filled footprint — no "main body" or
+// "wings". We take the bounding box of every room's cells and put a single
+// ridge down its longer axis; the roof covers everything inside that box.
+// This means where a room sits (a bathroom in any corner, a bump-out, an
+// L-shape) never reshapes the roof: it always just covers the footprint.
+// The old main-column/wing detection tried to infer the house's "shape" and
+// broke when a room didn't leave an obvious rectangular core — a whole class
+// of bug that simply can't happen here.
 export const ROOT_ID = doorways.find((d) => d.isExterior).child;
 
-const rootBox = footprints.get(ROOT_ID);
-const sharesRootColumns = (id) => {
-  const box = footprints.get(id);
-  return box.colLo === rootBox.colLo && box.colHi === rootBox.colHi;
-};
-export const MAIN_COLUMN = rooms.map((r) => r.id).filter(sharesRootColumns);
-export const WINGS = rooms.map((r) => r.id).filter((id) => !MAIN_COLUMN.includes(id));
+const footprintBox = [...footprints.values()].reduce(
+  (box, b) => ({
+    colLo: Math.min(box.colLo, b.colLo),
+    colHi: Math.max(box.colHi, b.colHi),
+    rowLo: Math.min(box.rowLo, b.rowLo),
+    rowHi: Math.max(box.rowHi, b.rowHi),
+  }),
+  { colLo: Infinity, colHi: -Infinity, rowLo: Infinity, rowHi: -Infinity }
+);
 
-const columnBox = (id) => footprints.get(id);
-export const MAIN_COLUMN_WIDTH = (rootBox.colHi - rootBox.colLo) * CELL;
-export const FRONT_WALL_Z = coords.zEdge(Math.max(...MAIN_COLUMN.map((id) => columnBox(id).rowHi)));
-export const HOUSE_BACK_Z = coords.zEdge(Math.min(...MAIN_COLUMN.map((id) => columnBox(id).rowLo)));
+// The footprint's outer edges in world space, and its two spans.
+export const HOUSE_LEFT_X = coords.xEdge(footprintBox.colLo);
+export const HOUSE_RIGHT_X = coords.xEdge(footprintBox.colHi);
+export const FRONT_WALL_Z = coords.zEdge(footprintBox.rowHi);
+export const HOUSE_BACK_Z = coords.zEdge(footprintBox.rowLo);
+export const HOUSE_CENTER_X = (HOUSE_LEFT_X + HOUSE_RIGHT_X) / 2;
 export const HOUSE_CENTER_Z = (FRONT_WALL_Z + HOUSE_BACK_Z) / 2;
+
+const houseWidth = HOUSE_RIGHT_X - HOUSE_LEFT_X;   // extent across X
+const houseDepth = FRONT_WALL_Z - HOUSE_BACK_Z;    // extent across Z
+
+// Ridge runs along the LONGER axis, so the slopes fall across the shorter
+// one (a normal gable). 'z' = ridge front-to-back, slopes fall in X.
+export const RIDGE_AXIS = houseDepth >= houseWidth ? 'z' : 'x';
+// The width the gable spans (the short axis the slopes cover) and the ridge
+// length (the long axis it runs along).
+export const GABLE_SPAN = Math.min(houseWidth, houseDepth);
+export const RIDGE_LENGTH = Math.max(houseWidth, houseDepth);
+
+// Kept for anything still importing it (camera framing): the main body width
+// is now just the footprint's X extent.
+export const MAIN_COLUMN_WIDTH = houseWidth;
 
 // ── Fixtures ──────────────────────────────────────────────────────────────
 export const PLACED_FIXTURES = placeFixtures(FIXTURES, roomRect);

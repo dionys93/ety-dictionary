@@ -49,7 +49,7 @@ export const GROUND_FLOOR = [
 // ── 3. Doors. Each names the two rooms it joins ('outside' is a place). ──
 export const DOORS = [
   { between: ['outside', 'livingRoom'], side: 'front', swing: 'out' },
-  { between: ['livingRoom', 'kitchen'], offset: -2, swing: 'in' },
+  { between: ['livingRoom', 'kitchen'], swing: 'in' },
   { between: ['livingRoom', 'bathroom'], side: 'left', swing: 'in' },
 ];
 
