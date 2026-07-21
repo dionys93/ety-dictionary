@@ -55,6 +55,6 @@ export const DOORS = [
 
 // ── 4. Items. Each names its room and a spot inside it. ──
 export const ITEMS = [
-  { type: 'toilet', room: 'bathroom', spot: 'back-left' },
-  { type: 'bathShower', room: 'bathroom', spot: 'right-wall' },
+  // { type: 'toilet', room: 'bathroom', spot: 'back-left' },
+  // { type: 'bathShower', room: 'bathroom', spot: 'right-wall' },
 ];

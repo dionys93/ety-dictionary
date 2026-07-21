@@ -4,10 +4,9 @@
 import { Toilet } from './toilet/Toilet.jsx';
 import { Bath } from './bath/Bath.jsx';
 import { Bookcase } from './bookcase/Bookcase.jsx';
-import { Tv } from './tv/Tv.jsx';
 import { Staircase } from './staircase/Staircase.jsx';
 
 export const ITEM_COMPONENTS = {
   toilet: Toilet, bath: Bath,
-  bookcase: Bookcase, tv: Tv, staircase: Staircase,
+  bookcase: Bookcase, staircase: Staircase,
 };

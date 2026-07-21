@@ -1,5 +1,5 @@
 // web/src/components/HouseExplorer.jsx
-import { useRef, useState, Suspense } from 'react';   // + Suspense
+import { useRef, useState } from 'react';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { COLOR_SCHEMES } from '../utils/houseColors.js';
@@ -15,7 +15,7 @@ import { CameraRig } from './house/CameraRig.jsx';
 import { RoomBounds } from './house/RoomBounds.jsx';
 import { ridgeHeight, WALL_HEIGHT } from './house/roofGeometry.js';
 import {
-  ROOMS, DOORWAYS,
+  ROOMS, DOORWAYS, PLACED_ITEMS,
   roomById,
   parentOf, pathTo,
   RIDGE_AXIS, GABLE_SPAN,
@@ -134,21 +134,19 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
           <Room key={room.id} roomId={room.id} colors={colors} />
         ))}
 
-        {/* Items, from the PLACEMENTS list — same shape as the DOORWAYS map above:
-    each entry arrives already resolved to a world position + rotationY, so
-    this map just drops the generic item in. The tv suspends while its model
-    loads; the primitive items (toilet, bath, bookcase) don't suspend at all,
-    which is why the boundary can wrap them all without ever blanking them. */}
-        <Suspense fallback={null}>
-          {PLACEMENTS.map((p) => {
-            const Item = ITEM_COMPONENTS[p.item];
-            return (
-              <group key={p.id} position={p.position} rotation={[0, p.rotationY, 0]}>
-                <Item />
-              </group>
-            );
-          })}
-        </Suspense>
+        {/* Items, engine-resolved by placeItems — same shape as the DOORWAYS
+            map above: each entry already carries type + world x/z + rotationY,
+            so this map just looks the component up and drops it in. Everything
+            in the catalog is now primitive geometry, so nothing suspends. */}
+        {PLACED_ITEMS.map((item, i) => {
+          const Item = ITEM_COMPONENTS[item.type];
+          if (!Item) return null;
+          return (
+            <group key={i} position={[item.x, 0, item.z]} rotation={[0, item.rotationY ?? 0, 0]}>
+              <Item length={item.length} />
+            </group>
+          );
+        })}
 
         <CameraRig fromLocation={settledLocation} transitionTarget={transitionTarget} controlsRef={controlsRef} onArrived={handleArrived} />
 
