@@ -6,20 +6,21 @@ import { COLOR_SCHEMES } from '../utils/houseColors.js';
 import { Roof } from './house/Roof.jsx';
 import { Ground } from './house/Ground.jsx';
 import { Room } from './house/Room.jsx';
+import { Walls } from './house/Walls.jsx';
 import { FrontFacade } from './house/FrontFacade.jsx';
 import { Door } from './house/Door.jsx';
 import { InteriorDoorway } from './house/InteriorDoorway.jsx';
 import { GableEnd } from './house/GableEnd.jsx';
-import { BathroomFixtures } from './house/BathroomFixtures.jsx';
+import { Fixtures } from './house/Fixtures.jsx';
 import { CameraRig } from './house/CameraRig.jsx';
 import { RoomBounds } from './house/RoomBounds.jsx';
-import { ROOMS } from './house/rooms.js';
-import { ridgeHeight, WALL_HEIGHT, ROOF_GABLE_OVERHANG } from './house/roofGeometry.js';
+import { ridgeHeight, WALL_HEIGHT } from './house/roofGeometry.js';
 import {
-  roomById, roomRect, roomDoorway, doorwayWallSpan, entryFaceOf,
-  parentOf, pathTo, areAdjacent,
+  ROOMS, DOORWAYS, ROOT_ID,
+  roomById, roomRect,
+  parentOf, pathTo,
   MAIN_COLUMN, MAIN_COLUMN_WIDTH, WINGS,
-  FRONT_WALL_Z, HOUSE_BACK_Z, HOUSE_CENTER_Z,
+  FRONT_WALL_Z, HOUSE_BACK_Z,
   EXTERIOR, EXTERIOR_CAMERA,
   EXTERIOR_MIN_DISTANCE, EXTERIOR_MAX_DISTANCE,
   INTERIOR_MIN_DISTANCE, INTERIOR_MAX_DISTANCE,
@@ -34,13 +35,10 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
   const [showExitArrow, setShowExitArrow] = useState(false);
 
   const isTransitioning = transitionTarget !== null;
-  const activeLocation = isTransitioning ? transitionTarget : settledLocation;
-  const isInterior = activeLocation !== EXTERIOR;
+  const isInterior = (isTransitioning ? transitionTarget : settledLocation) !== EXTERIOR;
 
-  // A room's doorway is open when the room we're settled at or heading to is
-  // that room or lies beyond it — i.e. the room is on the path to the active
-  // location. Path-based rather than depth-based, so it's correct for a tree
-  // (the bathroom being open must NOT open the kitchen, and vice versa).
+  // A doorway is open when the room it leads into is on the path to wherever
+  // we are or are heading — path-based, so sibling rooms stay independent.
   const isDoorOpen = (roomId) => {
     const onSettledPath = pathTo(settledLocation).includes(roomId);
     const onTargetPath = isTransitioning && pathTo(transitionTarget).includes(roomId);
@@ -57,13 +55,8 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
     setTransitionTarget(null);
   };
 
-  // Clicking a room's doorway toggles between that room and its parent, so
-  // the same door works to enter and to leave.
   const toggleRoom = (roomId) => () =>
     goTo(settledLocation === roomId ? parentOf(roomId) : roomId);
-
-  const rootId = ROOMS[0].id;
-  const rootDoorway = roomDoorway(rootId);
 
   return (
     <div style={{ width: '100%', height: '600px', borderRadius: '8px', overflow: 'hidden', border: '1px solid #e5e7eb', position: 'relative' }}>
@@ -74,62 +67,65 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
         <Ground colors={colors} />
         <Roof colors={colors} />
 
-        {/* Gable ends. Main gable caps the front and back of the main column;
-            each wing gets its own gable on its outer end. */}
+        {/* Gable ends: main gable front and back, one per wing outer end. */}
         <group position={[0, 0, FRONT_WALL_Z]}>
-          <GableEnd colors={colors} halfSpan={MAIN_COLUMN_WIDTH / 2} baseY={WALL_HEIGHT} ridgeY={ridgeHeight(MAIN_COLUMN_WIDTH)} outwardSign={1} interiorColor={roomById(rootId).interiorWallColor} />
+          <GableEnd colors={colors} halfSpan={MAIN_COLUMN_WIDTH / 2} baseY={WALL_HEIGHT} ridgeY={ridgeHeight(MAIN_COLUMN_WIDTH)} outwardSign={1} interiorColor={roomById(ROOT_ID).interiorWallColor} />
         </group>
         <group position={[0, 0, HOUSE_BACK_Z]}>
           <GableEnd colors={colors} halfSpan={MAIN_COLUMN_WIDTH / 2} baseY={WALL_HEIGHT} ridgeY={ridgeHeight(MAIN_COLUMN_WIDTH)} outwardSign={-1} interiorColor={roomById(MAIN_COLUMN[MAIN_COLUMN.length - 1]).interiorWallColor} />
         </group>
         {WINGS.map((id) => {
           const r = roomRect(id);
-          const outerX = r.centerX + r.width / 2;
-          // wing gable faces +X, sits at the wing's outer wall, ridge along the room depth
           return (
-            <group key={`gable-${id}`} position={[outerX, 0, r.centerZ]} rotation={[0, Math.PI / 2, 0]}>
+            <group key={`gable-${id}`} position={[r.centerX + r.width / 2, 0, r.centerZ]} rotation={[0, Math.PI / 2, 0]}>
               <GableEnd colors={colors} halfSpan={r.depth / 2} baseY={WALL_HEIGHT} ridgeY={ridgeHeight(r.depth)} outwardSign={1} interiorColor={roomById(id).interiorWallColor} />
             </group>
           );
         })}
 
-        {/* The root room's exterior front door + window facade. */}
-        <group position={[rootDoorway.wallCenter[0], 0, rootDoorway.wallCenter[2]]}>
-          <FrontFacade colors={colors} span={roomRect(rootId).width} offset={rootDoorway.offset} />
-          <Door
-            colors={colors}
-            centerX={rootDoorway.offset}
-            animation={roomById(rootId).doorway.animation}
-            open={isDoorOpen(rootId)}
-            onToggle={toggleRoom(rootId)}
-          />
-        </group>
+        {/* Every solid wall in the house, derived from the grid. */}
+        <Walls colors={colors} />
 
-        {/* Every room's interior. */}
+        {/* Every doorway, from the DOORS list: the exterior one gets the
+            window facade + front door; interior ones get door + flanks.
+            Each fills its entire wall run, positioned by the run itself. */}
+        {DOORWAYS.map((doorway) => (
+          <group
+            key={`door-${doorway.child}`}
+            position={[doorway.wallCenter[0], 0, doorway.wallCenter[2]]}
+            rotation={[0, doorway.rotationY, 0]}
+          >
+            {doorway.isExterior ? (
+              <>
+                <FrontFacade colors={colors} span={doorway.span} offset={doorway.offset} />
+                <Door
+                  colors={colors}
+                  centerX={doorway.offset}
+                  animation={doorway.animation}
+                  open={isDoorOpen(doorway.child)}
+                  onToggle={toggleRoom(doorway.child)}
+                />
+              </>
+            ) : (
+              <InteriorDoorway
+                colors={colors}
+                span={doorway.span}
+                offset={doorway.offset}
+                animation={doorway.animation}
+                open={isDoorOpen(doorway.child)}
+                onToggle={toggleRoom(doorway.child)}
+                interiorColor={roomById(doorway.child).interiorWallColor}
+              />
+            )}
+          </group>
+        ))}
+
+        {/* Floors and ceilings, one pair per room. */}
         {ROOMS.map((room) => (
           <Room key={room.id} roomId={room.id} colors={colors} />
         ))}
 
-        {/* Every non-root room's doorway, rotated into its parent-facing wall. */}
-        {ROOMS.filter((room) => room.parent).map((room) => {
-          const d = roomDoorway(room.id);
-          return (
-            <group key={`door-${room.id}`} position={[d.wallCenter[0], 0, d.wallCenter[2]]} rotation={[0, d.rotationY, 0]}>
-              <InteriorDoorway
-                colors={colors}
-                span={doorwayWallSpan(room.id)}
-                offset={d.offset}
-                animation={room.doorway.animation}
-                open={isDoorOpen(room.id)}
-                onToggle={toggleRoom(room.id)}
-                interiorColor={room.interiorWallColor}
-              />
-            </group>
-          );
-        })}
-
-        {/* Bathroom fixtures. */}
-        <BathroomFixtures wallHeight={WALL_HEIGHT} />
+        <Fixtures />
 
         <CameraRig fromLocation={settledLocation} transitionTarget={transitionTarget} controlsRef={controlsRef} onArrived={handleArrived} />
 

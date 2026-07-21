@@ -1,58 +1,60 @@
 // web/src/components/house/rooms.js
 //
-// THE file you edit to add, remove, or rearrange a room. Everything else —
-// where each room sits, which walls it has, where its doorway is, the
-// camera poses, the navigation graph, the roof's shape — is derived from
-// this list. Nothing here imports anything; it's pure data, deliberately,
-// so every derivation can depend on it without cycles.
+// ┌──────────────────────────────────────────────────────────────────────┐
+// │  THIS IS THE FILE YOU EDIT TO CHANGE THE HOUSE.                        │
+// └──────────────────────────────────────────────────────────────────────┘
 //
-// The rooms form a TREE, not a line: each room names its `parent` and which
-// side of that parent it attaches to. The first entry has no parent — it's
-// the one reached through the house's exterior front door.
+// The house is a grid of square cells. You draw the floor plan directly:
+// each entry in the grid is a room's block (or `_` for empty space). Where
+// two of the SAME room's blocks touch, they merge into one open room; where
+// two DIFFERENT rooms touch, a wall appears between them; and any block on
+// the outer edge gets an exterior wall. You never place a wall yourself —
+// walls are entirely a consequence of the grid.
 //
-// Per room:
-//   id                - unique key, also its location id in navigation
-//   label             - display name
-//   width / depth     - its own footprint; rooms need not match each other
-//   parent            - id of the room you pass through to reach it
-//   attach            - which face of the parent it sits against:
-//                       'back' (behind it) | 'right' | 'left'
-//   doorway.offset    - where its doorway sits along the shared wall,
-//                       measured from the room's own centre (0 = centred)
-//   doorway.animation - which ANIMATIONS entry that doorway opens with
-//   interiorWallColor - optional; walls and ceiling read this colour from
-//                       inside, while the exterior siding still matches the
-//                       rest of the house. Omit to just use the scheme.
+// Reading the grid: the FIRST row is the BACK of the house, the LAST row is
+// the FRONT (nearest the camera). Left-to-right in a row is left-to-right as
+// you face the house. Rows can be different lengths; a short row just means
+// empty space in the missing columns.
 //
-// 'right' means right as seen FACING the house from the front, which is +X:
-// the default camera sits at +Z looking toward -Z, so +X falls on its right.
+// Doors and fixtures aren't blocks — a door is a gap in the wall BETWEEN two
+// rooms, and a fixture is an object sitting INSIDE a room — so they're small
+// separate lists below the grid.
 
-export const ROOMS = [
-  {
-    id: 'livingRoom',
-    label: 'Living Room',
-    width: 3,
-    depth: 2.5,
-    doorway: { offset: 0, animation: 'swingDoorOut' }, // the exterior front door
-  },
-  {
-    id: 'kitchen',
-    label: 'Kitchen',
-    width: 3,
-    depth: 2.5,
-    parent: 'livingRoom',
-    attach: 'back',
-    interiorWallColor: '#d4d4d4',
-    doorway: { offset: -1.0, animation: 'swingDoorIn' },
-  },
-  {
-    id: 'bathroom',
-    label: 'Bathroom',
-    width: 1.6,
-    depth: 1.8,
-    parent: 'livingRoom',
-    attach: 'right',
-    interiorWallColor: '#c8d5c8',
-    doorway: { offset: 0, animation: 'swingDoorIn' },
-  },
+import { defineRoom, EMPTY } from './blocks.js';
+
+// One cell = this many world units on a side. Rooms are whole numbers of
+// cells, so their real sizes are multiples of this.
+export const CELL = 0.5;
+
+// ── 1. The rooms: a letter, a name, and the colour seen from inside. ──
+const K = defineRoom({ key: 'kitchen', name: 'Kitchen', color: '#d4d4d4' });
+const L = defineRoom({ key: 'livingRoom', name: 'Living Room' }); // no color = house default
+const B = defineRoom({ key: 'bathroom', name: 'Bathroom', color: '#c8d5c8' });
+const _ = EMPTY;
+
+// ── 2. The floor plan. Back row first, front row last. ──
+export const GROUND_FLOOR = [
+  [K, K, K, K, K, K],
+  [K, K, K, K, K, K],
+  [K, K, K, K, K, K],
+  [K, K, K, K, K, K],
+  [K, K, K, K, K, K],
+  [L, L, L, L, L, L],
+  [L, L, L, L, L, L, B, B, B],
+  [L, L, L, L, L, L, B, B, B],
+  [L, L, L, L, L, L, B, B, B],
+  [L, L, L, L, L, L, B, B, B],
+];
+
+// ── 3. Doors. Each names the two rooms it joins ('outside' is a place). ──
+export const DOORS = [
+  { between: ['outside', 'livingRoom'], side: 'front', swing: 'out' },
+  { between: ['livingRoom', 'kitchen'], offset: -2, swing: 'in' },
+  { between: ['livingRoom', 'bathroom'], swing: 'in' },
+];
+
+// ── 4. Fixtures. Each names its room and a spot inside it. ──
+export const FIXTURES = [
+  { type: 'toilet', room: 'bathroom', spot: 'back-left' },
+  { type: 'bathShower', room: 'bathroom', spot: 'right-wall' },
 ];
