@@ -1,5 +1,5 @@
 // web/src/components/HouseExplorer.jsx
-import { useRef, useState } from 'react';
+import { useRef, useState, Suspense } from 'react';   // + Suspense
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 import { COLOR_SCHEMES } from '../utils/houseColors.js';
@@ -11,7 +11,6 @@ import { FrontFacade } from './house/FrontFacade.jsx';
 import { Door } from './house/Door.jsx';
 import { InteriorDoorway } from './house/InteriorDoorway.jsx';
 import { GableEnd } from './house/GableEnd.jsx';
-import { Fixtures } from './house/Fixtures.jsx';
 import { CameraRig } from './house/CameraRig.jsx';
 import { RoomBounds } from './house/RoomBounds.jsx';
 import { ridgeHeight, WALL_HEIGHT } from './house/roofGeometry.js';
@@ -27,6 +26,7 @@ import {
   EXTERIOR_MIN_DISTANCE, EXTERIOR_MAX_DISTANCE,
   INTERIOR_MIN_DISTANCE, INTERIOR_MAX_DISTANCE,
 } from './house/constants.js';
+import { ITEM_COMPONENTS } from './house/items';
 
 export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
   const colors = COLOR_SCHEMES[colorScheme];
@@ -134,7 +134,21 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
           <Room key={room.id} roomId={room.id} colors={colors} />
         ))}
 
-        <Fixtures />
+        {/* Items, from the PLACEMENTS list — same shape as the DOORWAYS map above:
+    each entry arrives already resolved to a world position + rotationY, so
+    this map just drops the generic item in. The tv suspends while its model
+    loads; the primitive items (toilet, bath, bookcase) don't suspend at all,
+    which is why the boundary can wrap them all without ever blanking them. */}
+        <Suspense fallback={null}>
+          {PLACEMENTS.map((p) => {
+            const Item = ITEM_COMPONENTS[p.item];
+            return (
+              <group key={p.id} position={p.position} rotation={[0, p.rotationY, 0]}>
+                <Item />
+              </group>
+            );
+          })}
+        </Suspense>
 
         <CameraRig fromLocation={settledLocation} transitionTarget={transitionTarget} controlsRef={controlsRef} onArrived={handleArrived} />
 

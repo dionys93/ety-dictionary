@@ -8,16 +8,16 @@
 //
 // You edit rooms.js. You never need to edit this file or the engine.
 
-import { GROUND_FLOOR, DOORS, FIXTURES, CELL } from './rooms.js';
+import { GROUND_FLOOR, DOORS, ITEMS, CELL } from './rooms.js';
 import { isRoom } from './blocks.js';
 import { WALL_HEIGHT } from './roofGeometry.js';
 import { EXTERIOR } from './grid-shared.js';
 import {
   makeGrid, readRooms, measureGrid, makeCoords,
-  findFootprints, findWalls, buildNavigation, placeDoorways, placeFixtures,
+  findFootprints, findWalls, buildNavigation, placeDoorways, placeItems,
 } from './grid-engine.js';
 
-export { CELL, DOORS, FIXTURES, WALL_HEIGHT, EXTERIOR };
+export { CELL, DOORS, ITEMS, WALL_HEIGHT, EXTERIOR };
 
 // ── House-wide dimensions (not derived from the grid) ─────────────────────
 export const DOOR_WIDTH = 0.4;
@@ -117,8 +117,8 @@ export const RIDGE_LENGTH = Math.max(houseWidth, houseDepth);
 // is now just the footprint's X extent.
 export const MAIN_COLUMN_WIDTH = houseWidth;
 
-// ── Fixtures ──────────────────────────────────────────────────────────────
-export const PLACED_FIXTURES = placeFixtures(FIXTURES, roomRect);
+// ── Items ─────────────────────────────────────────────────────────────────
+export const PLACED_ITEMS = placeItems(ITEMS, roomRect);
 
 // ── Camera ────────────────────────────────────────────────────────────────
 export const CAMERA_EYE_HEIGHT = 0.75;

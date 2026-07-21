@@ -16,8 +16,8 @@
 // you face the house. Rows can be different lengths; a short row just means
 // empty space in the missing columns.
 //
-// Doors and fixtures aren't blocks — a door is a gap in the wall BETWEEN two
-// rooms, and a fixture is an object sitting INSIDE a room — so they're small
+// Doors and items aren't blocks — a door is a gap in the wall BETWEEN two
+// rooms, and an item is an object sitting INSIDE a room — so they're small
 // separate lists below the grid.
 
 import { defineRoom, EMPTY } from './blocks.js';
@@ -53,8 +53,8 @@ export const DOORS = [
   { between: ['livingRoom', 'bathroom'], side: 'left', swing: 'in' },
 ];
 
-// ── 4. Fixtures. Each names its room and a spot inside it. ──
-export const FIXTURES = [
+// ── 4. Items. Each names its room and a spot inside it. ──
+export const ITEMS = [
   { type: 'toilet', room: 'bathroom', spot: 'back-left' },
   { type: 'bathShower', room: 'bathroom', spot: 'right-wall' },
 ];

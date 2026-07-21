@@ -2,7 +2,7 @@
 //
 // ╔══════════════════════════════════════════════════════════════════════╗
 // ║  THIS IS THE MACHINE. You don't need to read or edit this file.        ║
-// ║  To change the house, edit rooms.js — the grid and the door/fixture    ║
+// ║  To change the house, edit rooms.js — the grid and the door/item       ║
 // ║  lists. This file turns that grid into walls, doorways, room           ║
 // ║  footprints, and the navigation graph.                                 ║
 // ╚══════════════════════════════════════════════════════════════════════╝
@@ -15,7 +15,7 @@
 //   findWalls      — every wall, derived from cells that differ
 //   buildNavigation— the parent / path / adjacency graph, from the doors
 //   placeDoorways  — match each door to its wall and position it
-//   placeFixtures  — resolve a friendly spot ('back-left') to a position
+//   placeItems     — resolve a friendly spot ('back-left') to a position
 //
 // The one genuinely fiddly bit — scanning the grid for walls — is isolated
 // in `scanLineForRuns`, written once and used for both directions.
@@ -303,7 +303,7 @@ function doorFacing(axis, parentIsPositiveSide) {
   return parentIsPositiveSide ? Math.PI / 2 : -Math.PI / 2;
 }
 
-// ── placeFixtures: friendly spot -> world position inside the room ────────
+// ── placeItems: friendly spot -> world position inside the room ───────────
 const SPOTS = {
   'center': (r) => ({ x: r.centerX, z: r.centerZ, rotationY: 0 }),
   'back-left': (r) => ({ x: r.centerX - r.width / 2 + 0.3, z: r.centerZ - r.depth / 2 + 0.3, rotationY: 0 }),
@@ -312,12 +312,12 @@ const SPOTS = {
   'left-wall': (r) => ({ x: r.centerX - r.width / 2 + 0.35, z: r.centerZ, rotationY: Math.PI }),
 };
 
-export function placeFixtures(fixtures, rectOf) {
-  return fixtures.map((fixture) => {
-    const rect = rectOf(fixture.room);
-    if (!rect) throw new Error(`rooms.js: fixture "${fixture.type}" names room "${fixture.room}", which isn't in the grid`);
-    const place = SPOTS[fixture.spot] ?? SPOTS['center'];
-    return { type: fixture.type, ...place(rect), length: fixture.length, room: fixture.room };
+export function placeItems(items, rectOf) {
+  return items.map((item) => {
+    const rect = rectOf(item.room);
+    if (!rect) throw new Error(`rooms.js: item "${item.type}" names room "${item.room}", which isn't in the grid`);
+    const place = SPOTS[item.spot] ?? SPOTS['center'];
+    return { type: item.type, ...place(rect), length: item.length, room: item.room };
   });
 }
 
