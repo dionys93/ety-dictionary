@@ -64,9 +64,15 @@ export function Roof({ colors }) {
   const mainLength = mainFront - mainBack;
   const mainMidZ = (mainFront + mainBack) / 2;
 
-  // Wings on the +X side that force the main +X slope to be trimmed. (Only
-  // right-side wings interrupt the +X slope; a left wing would interrupt -X.)
-  const rightWings = WINGS.map(roomRect).filter((r) => r.centerX > 0);
+// A wing only needs its own roof if it PROTRUDES past the main body — its
+  // outer edge reaches beyond the main half-width. A wing carved into a
+  // corner of the main rectangle (a bathroom in the front-right, say) sits
+  // entirely under the main gable already, so it gets no separate roof and
+  // no trim: the main slope simply spans it. Only protruding wings on the +X
+  // side interrupt the +X slope.
+  const protrudingRightWings = WINGS
+    .map(roomRect)
+    .filter((r) => r.centerX > 0 && r.centerX + r.width / 2 > mainHalf + 1e-9);
 
   return (
     <group>
@@ -78,7 +84,7 @@ export function Roof({ colors }) {
       {(() => {
         const cuts = [];
         let z = mainBack;
-        const trims = rightWings
+        const trims = protrudingRightWings
           .map((r) => ({ from: r.centerZ - r.depth / 2, to: r.centerZ + r.depth / 2 }))
           .sort((a, b) => a.from - b.from);
         for (const trim of trims) {
@@ -95,7 +101,7 @@ export function Roof({ colors }) {
       })()}
 
       {/* One cross-gable per wing. */}
-      {rightWings.map((r, i) => {
+      {protrudingRightWings.map((r, i) => {
         const wingRidgeY = ridgeHeight(r.depth);
         // ridge runs along X, from just inside the valley out past the wall.
         const valleyX = r.centerX - r.width / 2;              // meets main roof here

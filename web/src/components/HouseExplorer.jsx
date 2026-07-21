@@ -74,7 +74,14 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
         <group position={[0, 0, HOUSE_BACK_Z]}>
           <GableEnd colors={colors} halfSpan={MAIN_COLUMN_WIDTH / 2} baseY={WALL_HEIGHT} ridgeY={ridgeHeight(MAIN_COLUMN_WIDTH)} outwardSign={-1} interiorColor={roomById(MAIN_COLUMN[MAIN_COLUMN.length - 1]).interiorWallColor} />
         </group>
-        {WINGS.map((id) => {
+        {WINGS.filter((id) => {
+          const r = roomRect(id);
+          return r.centerX + r.width / 2 > MAIN_COLUMN_WIDTH / 2 + 1e-9;
+        }).map((id) => {
+          // Only a wing that protrudes past the main body gets a gable end.
+          // A wing carved into a corner of the main rectangle sits under the
+          // main gable, so it has no outward-facing triangular wall — same
+          // rule the roof uses to decide which wings get their own roof.
           const r = roomRect(id);
           return (
             <group key={`gable-${id}`} position={[r.centerX + r.width / 2, 0, r.centerZ]} rotation={[0, Math.PI / 2, 0]}>

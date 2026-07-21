@@ -38,6 +38,13 @@ function lerpArray(a, b, t) {
   return [a[0] + (b[0] - a[0]) * t, a[1] + (b[1] - a[1]) * t, a[2] + (b[2] - a[2]) * t];
 }
 
+const range = (n) => Array.from({ length: n }, (_, i) => i);
+
+// [a, b, c, d] -> [[a,b], [b,c], [c,d]] — each consecutive pair, for turning
+// a polyline's points into its segments.
+const adjacentPairs = (items) =>
+  range(Math.max(0, items.length - 1)).map((i) => [items[i], items[i + 1]]);
+
 // One span of a centripetal Catmull-Rom spline. Unlike a Bezier, this
 // passes exactly THROUGH p1 and p2 rather than merely being pulled toward
 // them — which is the whole requirement here, since the middle point is the
@@ -76,14 +83,20 @@ function sampleCurve(points) {
   const tail = points[points.length - 1].map((v, i) => 2 * v - points[points.length - 2][i]);
   const padded = [head, ...points, tail];
 
-  const sampled = [];
-  for (let s = 0; s < padded.length - 3; s++) {
-    for (let i = 0; i < CURVE_SAMPLES_PER_SPAN; i++) {
-      sampled.push(catmullRomPoint(padded[s], padded[s + 1], padded[s + 2], padded[s + 3], i / CURVE_SAMPLES_PER_SPAN));
-    }
-  }
-  sampled.push(points[points.length - 1]);
-  return sampled;
+  // Each span (a window of 4 control points) is sampled at a fixed set of
+  // fractions; every sample is independent, so this is a flat map over
+  // (span x fraction). The true final point is appended exactly rather than
+  // sampled, so the curve ends where it should.
+  const spans = range(padded.length - 3);
+  const fractions = range(CURVE_SAMPLES_PER_SPAN).map((i) => i / CURVE_SAMPLES_PER_SPAN);
+  return [
+    ...spans.flatMap((s) =>
+      fractions.map((f) =>
+        catmullRomPoint(padded[s], padded[s + 1], padded[s + 2], padded[s + 3], f)
+      )
+    ),
+    points[points.length - 1],
+  ];
 }
 
 // Walk the path by ARC LENGTH rather than per-segment progress, so speed
@@ -139,19 +152,19 @@ export function CameraRig({ fromLocation, transitionTarget, controlsRef, onArriv
       ];
       const curve = sampleCurve(corners);
 
-      const segments = [];
-      let totalLength = 0;
-      for (let i = 0; i < curve.length - 1; i++) {
-        const length = distance(curve[i], curve[i + 1]);
-        if (length === 0) continue; // skip duplicates so pointAtDistance stays simple
-        segments.push({ from: curve[i], to: curve[i + 1], length });
-        totalLength += length;
-      }
-      // Degenerate case: already exactly at the destination.
-      if (segments.length === 0) {
-        segments.push({ from: destination.position, to: destination.position, length: Number.EPSILON });
-        totalLength = Number.EPSILON;
-      }
+      // Each adjacent pair of curve points is one straight segment. Drop
+      // zero-length ones (duplicate samples) so pointAtDistance stays simple;
+      // the total is just the sum of what's left.
+      const built = adjacentPairs(curve)
+        .map(([from, to]) => ({ from, to, length: distance(from, to) }))
+        .filter((segment) => segment.length > 0);
+
+      // Degenerate case: already exactly at the destination — one tiny
+      // segment so the walk has something to stand on.
+      const segments = built.length > 0
+        ? built
+        : [{ from: destination.position, to: destination.position, length: Number.EPSILON }];
+      const totalLength = segments.reduce((sum, s) => sum + s.length, 0);
 
       flight.current = {
         destination: transitionTarget,

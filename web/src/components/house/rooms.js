@@ -39,18 +39,18 @@ export const GROUND_FLOOR = [
   [K, K, K, K, K, K],
   [K, K, K, K, K, K],
   [K, K, K, K, K, K],
-  [L, L, L, L, L, L],
-  [L, L, L, L, L, L, B, B, B],
-  [L, L, L, L, L, L, B, B, B],
-  [L, L, L, L, L, L, B, B, B],
-  [L, L, L, L, L, L, B, B, B],
+  [L, L, L, L, B, B],
+  [L, L, L, L, B, B],
+  [L, L, L, L, B, B],
+  [L, L, L, L, B, B],
+  [L, L, L, L, B, B],
 ];
 
 // ── 3. Doors. Each names the two rooms it joins ('outside' is a place). ──
 export const DOORS = [
   { between: ['outside', 'livingRoom'], side: 'front', swing: 'out' },
   { between: ['livingRoom', 'kitchen'], offset: -2, swing: 'in' },
-  { between: ['livingRoom', 'bathroom'], swing: 'in' },
+  { between: ['livingRoom', 'bathroom'], side: 'left', swing: 'in' },
 ];
 
 // ── 4. Fixtures. Each names its room and a spot inside it. ──
