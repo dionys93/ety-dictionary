@@ -30,20 +30,38 @@ export const CELL = 0.5;
 const K = defineRoom({ key: 'kitchen', name: 'Kitchen', color: '#d4d4d4' });
 const L = defineRoom({ key: 'livingRoom', name: 'Living Room' }); // no color = house default
 const B = defineRoom({ key: 'bathroom', name: 'Bathroom', color: '#c8d5c8' });
+const D = defineRoom({ key: 'bedroom', name: 'Bedroom', color: '#d8cfc0' });
 const _ = EMPTY;
 
-// ── 2. The floor plan. Back row first, front row last. ──
+
 export const GROUND_FLOOR = [
+  [_, _, _, _, _, _],   // rows 0–1: empty — the storey's back balcony hangs here
+  [_, _, _, _, _, _],
+  [K, K, K, K, K, K],   // rows 2–6: kitchen (was 0–4)
   [K, K, K, K, K, K],
   [K, K, K, K, K, K],
   [K, K, K, K, K, K],
   [K, K, K, K, K, K],
-  [K, K, K, K, K, K],
+  [L, L, L, L, B, B],   // rows 7–11: living room + bathroom (was 5–9)
   [L, L, L, L, B, B],
   [L, L, L, L, B, B],
   [L, L, L, L, B, B],
   [L, L, L, L, B, B],
-  [L, L, L, L, B, B],
+];
+
+export const SECOND_STOREY = [
+  [_, D, D, D, D, _],   // rows 0–1: balcony — behind the ground floor's back wall
+  [_, D, D, D, D, _],
+  [D, D, D, D, D, D],   // rows 2–11: bedroom, directly over the ground floor
+  [D, D, D, D, D, D],
+  [D, D, D, D, D, D],
+  [D, D, D, D, D, D],
+  [D, D, D, D, D, D],
+  [D, D, D, D, D, D],
+  [D, D, D, D, D, D],
+  [D, D, D, D, D, D],
+  [_, _, _, _, _, _],
+  [_, _, _, _, _, _],
 ];
 
 // ── 3. Doors. Each names the two rooms it joins ('outside' is a place). ──

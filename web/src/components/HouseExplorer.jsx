@@ -14,8 +14,11 @@ import { GableEnd } from './house/GableEnd.jsx';
 import { CameraRig } from './house/CameraRig.jsx';
 import { RoomBounds } from './house/RoomBounds.jsx';
 import { ridgeHeight, WALL_HEIGHT } from './house/roofGeometry.js';
+import { Railings } from './house/Railings.jsx';
+import { Columns } from './house/Columns.jsx';
 import {
   ROOMS, DOORWAYS, PLACED_ITEMS,
+  UPSTAIRS, UPSTAIRS_COLUMNS,
   roomById,
   parentOf, pathTo,
   RIDGE_AXIS, GABLE_SPAN,
@@ -133,6 +136,22 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
         {ROOMS.map((room) => (
           <Room key={room.id} roomId={room.id} colors={colors} />
         ))}
+
+        {/* Second storey — geometry only for now (not navigable yet). Everything
+    inside the group is deck-relative; columns bridge floors so they render
+    at absolute Y, outside it. */}
+        <group position={[0, UPSTAIRS.baseY, 0]}>
+          {UPSTAIRS.roomRect && (
+            <Room roomId="bedroom" colors={colors}
+              rect={UPSTAIRS.roomRect} ceilingColor={UPSTAIRS.ceilingColor} />
+          )}
+          {UPSTAIRS.balconyRect && (
+            <Room roomId="balcony" colors={colors} rect={UPSTAIRS.balconyRect} ceiling={false} />
+          )}
+          <Walls colors={colors} runs={UPSTAIRS.walls} />
+          <Railings runs={UPSTAIRS.railings} colors={colors} />
+        </group>
+        <Columns columns={UPSTAIRS_COLUMNS} colors={colors} />
 
         {/* Items, engine-resolved by placeItems — same shape as the DOORWAYS
             map above: each entry already carries type + world x/z + rotationY,

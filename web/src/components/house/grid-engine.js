@@ -362,3 +362,113 @@ function firstByKey(items, keyOf) {
     return true;
   });
 }
+
+// ── Balcony geometry: overhangs → railings + support columns ──────────────
+
+// An upper-floor cell with nothing beneath it on the floor below is
+// cantilevered. Returns a Set of "row,col" keys. No floor below → empty set.
+export function findOverhangs(grid, gridBelow) {
+  const over = new Set();
+  if (!gridBelow) return over;
+  for (const { row, col } of occupiedCells(grid)) {
+    if (gridBelow.keyAt(row, col) === null) over.add(`${row},${col}`);
+  }
+  return over;
+}
+
+// The outer edges of the overhang — cantilevered on one side, open air on the
+// other — become railings. Edges where the balcony meets the enclosed part of
+// its own floor are neither over-vs-air, so they stay open (a threshold onto
+// the deck). Runs match wall-run shape, so trimWallsByRailings can subtract them.
+export function findRailings(grid, overhang, coords) {
+  const over = (r, c) => overhang.has(`${r},${c}`);
+  const air = (r, c) => grid.keyAt(r, c) === null;
+  const rail = (ar, ac, br, bc) =>
+    (over(ar, ac) && air(br, bc)) || (over(br, bc) && air(ar, ac));
+
+  const runs = [];
+  for (let col = 0; col <= grid.cols; col++)
+    mergeRuns(grid.rows, (r) => rail(r, col - 1, r, col), (lo, hi) =>
+      runs.push({ axis: 'x', at: coords.xEdge(col), lo: coords.zEdge(lo), hi: coords.zEdge(hi) }));
+  for (let row = 0; row <= grid.rows; row++)
+    mergeRuns(grid.cols, (c) => rail(row - 1, c, row, c), (lo, hi) =>
+      runs.push({ axis: 'z', at: coords.zEdge(row), lo: coords.xEdge(lo), hi: coords.xEdge(hi) }));
+  return runs;
+}
+
+function mergeRuns(steps, present, emit) {
+  let open = null;
+  for (let s = 0; s < steps; s++) {
+    if (present(s)) open = open ? { lo: open.lo, hi: s + 1 } : { lo: s, hi: s + 1 };
+    else if (open) { emit(open.lo, open.hi); open = null; }
+  }
+  if (open) emit(open.lo, open.hi);
+}
+
+// A wall run that coincides with a railing (same line, overlapping span) is an
+// open balcony edge, not a wall — subtract the railing's interval, splitting
+// the wall into 0, 1, or 2 shorter runs. This is what stops an overhang from
+// getting both a wall AND a railing, wherever the overhang happens to be.
+export function trimWallsByRailings(walls, railings) {
+  const EPS = 1e-6;
+  let result = walls;
+  for (const r of railings) {
+    result = result.flatMap((w) => {
+      if (w.axis !== r.axis || Math.abs(w.at - r.at) > EPS) return [w];
+      const lo = Math.max(w.lo, r.lo), hi = Math.min(w.hi, r.hi);
+      if (hi - lo <= EPS) return [w];
+      const pieces = [];
+      if (w.lo < lo - EPS) pieces.push({ ...w, hi: lo });
+      if (hi < w.hi - EPS) pieces.push({ ...w, lo: hi });
+      return pieces;
+    });
+  }
+  return result;
+}
+
+// A post at every corner of the balcony edge, plus evenly-spaced intermediates
+// so no bay exceeds maxSpan. Corners are shared between adjacent runs, so the
+// dedupe collapses them to one. Each post drops from the ground to the deck.
+export function placeColumns(railings, deckBaseY, maxSpan) {
+  const seen = new Set(), columns = [];
+  const add = (x, z) => {
+    const key = `${x.toFixed(3)},${z.toFixed(3)}`;
+    if (seen.has(key)) return;
+    seen.add(key);
+    columns.push({ x, z, height: deckBaseY });
+  };
+  for (const run of railings) {
+    const L = run.hi - run.lo;
+    const n = Math.max(1, Math.ceil(L / maxSpan));
+    for (let k = 0; k <= n; k++) {
+      const t = run.lo + (L * k) / n;
+      run.axis === 'x' ? add(run.at, t) : add(t, run.at);
+    }
+  }
+  return columns;
+}
+
+// Split an upper floor's cells into its grounded box and its overhang box
+// (either may be null), so callers can floor the whole deck but ceiling only
+// the enclosed part — an overhang is open to the sky.
+export function floorFootprints(grid, gridBelow) {
+  const overhang = findOverhangs(grid, gridBelow);
+  const cells = occupiedCells(grid);
+  const grounded = cells.filter((c) => !overhang.has(`${c.row},${c.col}`));
+  const over = cells.filter((c) => overhang.has(`${c.row},${c.col}`));
+  return {
+    overhang,
+    groundedBox: grounded.length ? boundingBox(grounded) : null,
+    overhangBox: over.length ? boundingBox(over) : null,
+  };
+}
+
+// A cell bounding box -> a world-space rect (matches roomRect's shape).
+export function boxToRect(box, coords, cell) {
+  return {
+    centerX: (coords.xEdge(box.colLo) + coords.xEdge(box.colHi)) / 2,
+    centerZ: (coords.zEdge(box.rowLo) + coords.zEdge(box.rowHi)) / 2,
+    width: (box.colHi - box.colLo) * cell,
+    depth: (box.rowHi - box.rowLo) * cell,
+  };
+}

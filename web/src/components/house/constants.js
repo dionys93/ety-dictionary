@@ -8,13 +8,14 @@
 //
 // You edit rooms.js. You never need to edit this file or the engine.
 
-import { GROUND_FLOOR, DOORS, ITEMS, CELL } from './rooms.js';
+import { GROUND_FLOOR, SECOND_STOREY, DOORS, ITEMS, CELL } from './rooms.js';
 import { isRoom } from './blocks.js';
 import { WALL_HEIGHT } from './roofGeometry.js';
 import { EXTERIOR } from './grid-shared.js';
 import {
   makeGrid, readRooms, measureGrid, makeCoords,
   findFootprints, findWalls, buildNavigation, placeDoorways, placeItems,
+  findRailings, trimWallsByRailings, placeColumns, floorFootprints, boxToRect,
 } from './grid-engine.js';
 
 export { CELL, DOORS, ITEMS, WALL_HEIGHT, EXTERIOR };
@@ -31,7 +32,7 @@ export const LERP_SPEED = 0.08;
 // whole grid so this stays put no matter how many rows you add at the back.
 const FRONT_WALL_Z_TARGET = 1.25;
 
-// ── Run the engine once ───────────────────────────────────────────────────
+// ── Run the engine once (ground floor) ────────────────────────────────────
 const grid = makeGrid(GROUND_FLOOR, isRoom);
 const coords = makeCoords(CELL, measureGrid(grid, CELL, FRONT_WALL_Z_TARGET));
 
@@ -40,6 +41,26 @@ const footprints = findFootprints(grid);
 const walls = findWalls(grid, coords);
 const nav = buildNavigation(DOORS, rooms);
 const doorways = placeDoorways(DOORS, walls, nav, CELL, DOOR_WIDTH);
+
+// ── Second storey (geometry only; not yet navigable) ──────────────────────
+// Measured on the GROUND floor's coords, so (row,col) means the same world
+// spot on both floors — that shared frame is what lets overhang detection line
+// an upper cell up with what's (not) under it. Sits after grid/coords above.
+const upperGrid = makeGrid(SECOND_STOREY, isRoom);
+const upperRooms = readRooms(upperGrid);
+const upstairsFP = floorFootprints(upperGrid, grid);
+const upperRailings = findRailings(upperGrid, upstairsFP.overhang, coords);
+const upperWalls = trimWallsByRailings(findWalls(upperGrid, coords), upperRailings);
+
+export const UPSTAIRS = {
+  baseY: WALL_HEIGHT,                                  // deck sits on the ground walls
+  ceilingColor: upperRooms[0]?.interiorWallColor,
+  roomRect: upstairsFP.groundedBox && boxToRect(upstairsFP.groundedBox, coords, CELL),
+  balconyRect: upstairsFP.overhangBox && boxToRect(upstairsFP.overhangBox, coords, CELL),
+  walls: upperWalls,
+  railings: upperRailings,
+};
+export const UPSTAIRS_COLUMNS = placeColumns(upperRailings, WALL_HEIGHT, 2 * CELL);
 
 // ── Rooms ─────────────────────────────────────────────────────────────────
 export const ROOMS = rooms;

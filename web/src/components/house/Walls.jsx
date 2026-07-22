@@ -14,10 +14,11 @@ import {
 // WallSegment renders a core + siding on one side + an optional liner on the
 // other. Siding faces the "outer" side: the exterior if one side is outside,
 // otherwise whichever room is shallower in the navigation tree.
-export function Walls({ colors }) {
+
+export function Walls({ colors, runs = SOLID_WALL_RUNS }) {
   return (
     <>
-      {SOLID_WALL_RUNS.map((run, i) => {
+      {runs.map((run, i) => {
         const mid = (run.lo + run.hi) / 2;
         const length = run.hi - run.lo;
         const position = run.axis === 'x'
