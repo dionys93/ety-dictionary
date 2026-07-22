@@ -114,11 +114,11 @@ Verbs featuring an **i** before a nasal (n/ng) or a velar/palatal sound (ch/g) s
 | to strîc(he | streuc |
 
 ### 2G. The "-old" Shift
-Verbs ending in **-elle** undergo a direct vowel mutation to **-óld**.
+Verbs ending in **-elle** undergo a direct vowel mutation to **-oald**.
 | Infinitive | Past / Participle |
 | :--- | :--- |
-| to selle | sóld |
-| to telle | tóld |
+| to selle | soald |
+| to telle | toald |
 
 ### 2H. Highly Irregular Stems
 A small handful of verbs undergo unique historical mutations that do not fit into the broader categories above.
