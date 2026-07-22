@@ -472,3 +472,60 @@ export function boxToRect(box, coords, cell) {
     depth: (box.rowHi - box.rowLo) * cell,
   };
 }
+
+// ── Roof regions: cap each column at its topmost floor, group by height ────
+
+export function roofHeightMap(floors, overhangsByFloor) {
+  const cap = new Map(); // "row,col" -> { row, col, y }
+  floors.forEach((floor, fi) => {
+    const overhang = overhangsByFloor[fi] ?? new Set();
+    for (const { row, col } of occupiedCells(floor.grid)) {
+      const key = `${row},${col}`;
+      if (overhang.has(key)) { cap.delete(key); continue; } // balcony: roofless
+      cap.set(key, { row, col, y: floor.topY });            // higher floor overwrites
+    }
+  });
+  return cap;
+}
+
+export function roofRegions(cap, coords, cell) {
+  const claimed = new Set();
+  const at = (r, c) => cap.get(`${r},${c}`);
+  const regions = [];
+
+  const keys = [...cap.values()].sort((a, b) => a.row - b.row || a.col - b.col);
+  for (const start of keys) {
+    if (claimed.has(`${start.row},${start.col}`)) continue;
+    const y = start.y;
+
+    let width = 1;
+    while (at(start.row, start.col + width)?.y === y &&
+           !claimed.has(`${start.row},${start.col + width}`)) width++;
+
+    const rowMatches = (r) => {
+      for (let c = start.col; c < start.col + width; c++)
+        if (at(r, c)?.y !== y || claimed.has(`${r},${c}`)) return false;
+      return true;
+    };
+    let height = 1;
+    while (rowMatches(start.row + height)) height++;
+
+    for (let r = start.row; r < start.row + height; r++)
+      for (let c = start.col; c < start.col + width; c++)
+        claimed.add(`${r},${c}`);
+
+    const box = {
+      colLo: start.col, colHi: start.col + width,
+      rowLo: start.row, rowHi: start.row + height,
+    };
+    const w = width * cell, d = height * cell;
+    regions.push({
+      baseY: y,
+      rect: boxToRect(box, coords, cell),
+      ridgeAxis: d >= w ? 'z' : 'x',
+      gableSpan: Math.min(w, d),
+      ridgeLength: Math.max(w, d),
+    });
+  }
+  return regions;
+}

@@ -16,6 +16,7 @@ import {
   makeGrid, readRooms, measureGrid, makeCoords,
   findFootprints, findWalls, buildNavigation, placeDoorways, placeItems,
   findRailings, trimWallsByRailings, placeColumns, floorFootprints, boxToRect,
+  roofHeightMap, roofRegions,
 } from './grid-engine.js';
 
 export { CELL, DOORS, ITEMS, WALL_HEIGHT, EXTERIOR };
@@ -157,3 +158,12 @@ export const ROOM_BOUNDS_MARGIN = 0.15;
 export const TRANSITION_SPEED = 4.5;
 export const TRANSITION_MIN_DURATION = 1.8;
 export const TRANSITION_MAX_DURATION = 2.2;
+
+// ── Roof regions (per-column cap height; see grid-engine) ─────────────────
+const floorsForRoof = [
+  { grid, topY: 0 },                    // ground floor walls rise from y=0
+  { grid: upperGrid, topY: UPSTAIRS.baseY },  // upstairs walls rise from the deck (= WALL_HEIGHT)
+];
+const overhangsForRoof = [new Set(), upstairsFP.overhang];  // ground overhangs nothing
+const roofCap = roofHeightMap(floorsForRoof, overhangsForRoof);
+export const ROOF_REGIONS = roofRegions(roofCap, coords, CELL);

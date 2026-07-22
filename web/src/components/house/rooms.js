@@ -31,6 +31,7 @@ const K = defineRoom({ key: 'kitchen', name: 'Kitchen', color: '#d4d4d4' });
 const L = defineRoom({ key: 'livingRoom', name: 'Living Room' }); // no color = house default
 const B = defineRoom({ key: 'bathroom', name: 'Bathroom', color: '#c8d5c8' });
 const D = defineRoom({ key: 'bedroom', name: 'Bedroom', color: '#d8cfc0' });
+const Y = defineRoom({ key: 'balcony', name: 'Balcony', color: '#c9c2b4' });
 const _ = EMPTY;
 
 
@@ -50,8 +51,8 @@ export const GROUND_FLOOR = [
 ];
 
 export const SECOND_STOREY = [
-  [_, D, D, D, D, _],   // rows 0–1: balcony — behind the ground floor's back wall
-  [_, D, D, D, D, _],
+  [_, Y, Y, Y, Y, _],   // balcony — its own room now, so a wall forms vs the bedroom
+  [_, Y, Y, Y, Y, _],
   [D, D, D, D, D, D],   // rows 2–11: bedroom, directly over the ground floor
   [D, D, D, D, D, D],
   [D, D, D, D, D, D],
@@ -69,6 +70,7 @@ export const DOORS = [
   { between: ['outside', 'livingRoom'], side: 'front', swing: 'out' },
   { between: ['livingRoom', 'kitchen'], swing: 'in' },
   { between: ['livingRoom', 'bathroom'], side: 'left', swing: 'in' },
+  { between: ['bedroom', 'balcony'], side: 'back', swing: 'out' },
 ];
 
 // ── 4. Items. Each names its room and a spot inside it. ──

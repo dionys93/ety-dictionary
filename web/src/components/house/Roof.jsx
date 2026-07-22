@@ -5,24 +5,20 @@ import {
   ROOF_PITCH, ROOF_EAVE_OVERHANG, ROOF_GABLE_OVERHANG, ROOF_THICKNESS,
   ridgeHeight,
 } from './roofGeometry.js';
-import {
-  RIDGE_AXIS, GABLE_SPAN, RIDGE_LENGTH,
-  HOUSE_CENTER_X, HOUSE_CENTER_Z,
-} from './constants.js';
+import { ROOF_REGIONS } from './constants.js';
 
 // A single sloped roof panel: a thin box tilted to the pitch. `spanReach` is
 // the horizontal distance the slope covers (half the gable span plus the
-// eave overhang), `length` is its extent along the ridge, placed so its high
-// edge sits on the ridge line and its low edge at the eave.
-function slopePanel({ ridgeAxis, center, ridgeHeightY, sign, spanReach, length, texture }) {
+// eave overhang), `length` is its extent along the ridge. `baseY` lifts the
+// whole panel to its region's floor-top, so a region capped at the second
+// storey rides above one capped at the ground floor.
+function slopePanel({ ridgeAxis, center, baseY, ridgeHeightY, sign, spanReach, length, texture }) {
   const pitchAngle = Math.atan(ROOF_PITCH);
   const panelWidth = Math.hypot(spanReach, spanReach * ROOF_PITCH); // slope length
   const midOut = sign * spanReach / 2;
-  const midY = ridgeHeightY - (spanReach / 2) * ROOF_PITCH;
+  const midY = baseY + ridgeHeightY - (spanReach / 2) * ROOF_PITCH;
 
   if (ridgeAxis === 'z') {
-    // ridge runs along Z; slopes fall in X. The rotation sign is negated so
-    // the outer edge drops to the eave (a peak, not an inverted V).
     return (
       <mesh position={[center[0] + midOut, midY, center[2]]} rotation={[0, 0, -sign * pitchAngle]}>
         <boxGeometry args={[panelWidth, ROOF_THICKNESS, length]} />
@@ -30,7 +26,6 @@ function slopePanel({ ridgeAxis, center, ridgeHeightY, sign, spanReach, length, 
       </mesh>
     );
   }
-  // ridge runs along X; slopes fall in Z.
   return (
     <mesh position={[center[0], midY, center[2] + midOut]} rotation={[sign * pitchAngle, 0, 0]}>
       <boxGeometry args={[length, ROOF_THICKNESS, panelWidth]} />
@@ -39,10 +34,11 @@ function slopePanel({ ridgeAxis, center, ridgeHeightY, sign, spanReach, length, 
   );
 }
 
-// One gable over the whole house footprint. The ridge runs down the footprint's
-// longer axis (RIDGE_AXIS); two slopes fall across the shorter axis (GABLE_SPAN)
-// to the eaves. There are no wings and no per-room roofs: the roof simply covers
-// the footprint's bounding box, so moving a room never changes the roofline.
+// One gable per roof region. Each region is a maximal rectangle of columns that
+// share a cap height (see roofRegions in grid-engine): where the storey covers
+// the ground floor the region rides at storey height, where the ground floor is
+// exposed it rides lower, and balcony columns are excluded (open to sky). So the
+// roof "always moves upward" and can exist at several heights over one house.
 export function Roof({ colors }) {
   const texture = useMemo(
     () => createShingleTexture(colors.roof, { repeatX: 2, repeatY: 3 }),
@@ -50,15 +46,20 @@ export function Roof({ colors }) {
   );
   useEffect(() => () => texture.dispose(), [texture]);
 
-  const ridgeY = ridgeHeight(GABLE_SPAN);
-  const reach = GABLE_SPAN / 2 + ROOF_EAVE_OVERHANG;      // slope reach past the ridge
-  const length = RIDGE_LENGTH + 2 * ROOF_GABLE_OVERHANG;  // ridge run + gable overhangs
-  const center = [HOUSE_CENTER_X, 0, HOUSE_CENTER_Z];
-
   return (
     <group>
-      {slopePanel({ ridgeAxis: RIDGE_AXIS, center, ridgeHeightY: ridgeY, sign: -1, spanReach: reach, length, texture })}
-      {slopePanel({ ridgeAxis: RIDGE_AXIS, center, ridgeHeightY: ridgeY, sign: 1, spanReach: reach, length, texture })}
+      {ROOF_REGIONS.map((region, i) => {
+        const ridgeY = ridgeHeight(region.gableSpan);
+        const reach = region.gableSpan / 2 + ROOF_EAVE_OVERHANG;
+        const length = region.ridgeLength + 2 * ROOF_GABLE_OVERHANG;
+        const center = [region.rect.centerX, 0, region.rect.centerZ];
+        return (
+          <group key={i}>
+            {slopePanel({ ridgeAxis: region.ridgeAxis, center, baseY: region.baseY, ridgeHeightY: ridgeY, sign: -1, spanReach: reach, length, texture })}
+            {slopePanel({ ridgeAxis: region.ridgeAxis, center, baseY: region.baseY, ridgeHeightY: ridgeY, sign: 1, spanReach: reach, length, texture })}
+          </group>
+        );
+      })}
     </group>
   );
 }
