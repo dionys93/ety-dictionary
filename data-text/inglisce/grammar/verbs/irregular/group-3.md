@@ -46,7 +46,7 @@ For verbs starting with high vowels, the past tense drops to an **o**, and the p
 | to strîde | strode | stridan |
 
 **2. The Mid-Vowel Shift (â / ei / ie → ô / ó / o)**
-For verbs starting with mid-vowels, the past tense shifts heavily to **ô** or **ó**. The participle retains the **o** or reverts to the original base vowel. *(Note: Verbs ending in the soft **-che** explicitly drop the **h** to form a hard **-c** in their past and participle forms).*
+For verbs starting with mid-vowels, the past tense shifts heavily to **ô**, **ó**, or **oa**. The participle retains the **o** or reverts to the original base vowel.
 | Infinitive | Past | Past Participle |
 | :--- | :--- | :--- |
 | to breic(he | bróc | brócan |
@@ -55,7 +55,7 @@ For verbs starting with mid-vowels, the past tense shifts heavily to **ô** or *
 | to friese | frose | frosen |
 | to seac(he | seôc | seacan |
 | to spiec(he | spóc | spócan |
-| to stiale | stól | stolen |
+| to stiale | stoal | stolen |
 | to tâc(he | tôc | tâcan |
 | to uâc(he | uóc | uócan |
 | to uieve | uoave | uoaven |
@@ -136,7 +136,7 @@ In Proto-Germanic, these were strong verbs where the present tense died out, and
 | to have (has) | had | had |
 | to ondergoe | onderoaint | ondergaon |
 | to saie (sais) | said | said |
-| uill (uon't) | uoûd | -- |
+| uill (uon't) | oûd | -- |
 
 ---
 
