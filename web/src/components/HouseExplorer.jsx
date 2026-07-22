@@ -16,10 +16,11 @@ import { RoomBounds } from './house/RoomBounds.jsx';
 import { ridgeHeight, WALL_HEIGHT } from './house/roofGeometry.js';
 import { Railings } from './house/Railings.jsx';
 import { Columns } from './house/Columns.jsx';
+import { Stairs } from './house/Stairs.jsx';
 import {
   ROOMS, DOORWAYS, PLACED_ITEMS,
-  UPSTAIRS, UPSTAIRS_COLUMNS,
-  roomById,
+  UPSTAIRS, UPSTAIRS_COLUMNS, STAIRWAYS,
+  roomById, roomFloorLevel,
   parentOf, pathTo,
   RIDGE_AXIS, GABLE_SPAN,
   HOUSE_CENTER_X, HOUSE_CENTER_Z,
@@ -42,8 +43,6 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
   const isTransitioning = transitionTarget !== null;
   const isInterior = (isTransitioning ? transitionTarget : settledLocation) !== EXTERIOR;
 
-  // A doorway is open when the room it leads into is on the path to wherever
-  // we are or are heading — path-based, so sibling rooms stay independent.
   const isDoorOpen = (roomId) => {
     const onSettledPath = pathTo(settledLocation).includes(roomId);
     const onTargetPath = isTransitioning && pathTo(transitionTarget).includes(roomId);
@@ -54,14 +53,35 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
     if (isTransitioning) return;
     setTransitionTarget(locationId);
   };
-
   const handleArrived = (locationId) => {
     setSettledLocation(locationId);
     setTransitionTarget(null);
   };
-
   const toggleRoom = (roomId) => () =>
     goTo(settledLocation === roomId ? parentOf(roomId) : roomId);
+
+  // One doorway renderer, used for both floors. Inside a baseY group the y=0
+  // in wallCenter becomes the floor height; at ground level it's just y=0.
+  const renderDoorway = (doorway) => (
+    <group
+      key={`door-${doorway.child}`}
+      position={[doorway.wallCenter[0], 0, doorway.wallCenter[2]]}
+      rotation={[0, doorway.rotationY, 0]}
+    >
+      {doorway.isExterior ? (
+        <>
+          <FrontFacade colors={colors} span={doorway.span} offset={doorway.offset} />
+          <Door colors={colors} centerX={doorway.offset} animation={doorway.animation}
+                open={isDoorOpen(doorway.child)} onToggle={toggleRoom(doorway.child)} />
+        </>
+      ) : (
+        <InteriorDoorway colors={colors} span={doorway.span} offset={doorway.offset}
+          animation={doorway.animation} open={isDoorOpen(doorway.child)}
+          onToggle={toggleRoom(doorway.child)}
+          interiorColor={roomById(doorway.child).interiorWallColor} />
+      )}
+    </group>
+  );
 
   return (
     <div style={{ width: '100%', height: '600px', borderRadius: '8px', overflow: 'hidden', border: '1px solid #e5e7eb', position: 'relative' }}>
@@ -72,9 +92,8 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
         <Ground colors={colors} />
         <Roof colors={colors} />
 
-        {/* The two gable ends, at the short ends of the footprint the ridge
-            runs between. No wing gables — one roof over the whole footprint,
-            so there are exactly two triangular ends, wherever the rooms sit. */}
+        {/* Gable ends still use the single-roof globals — pre-existing seam,
+            unchanged this pass. */}
         {RIDGE_AXIS === 'z' ? (
           <>
             <group position={[HOUSE_CENTER_X, 0, FRONT_WALL_Z]}>
@@ -95,68 +114,32 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
           </>
         )}
 
-        {/* Every solid wall in the house, derived from the grid. */}
+        {/* Ground floor: walls, doorways, rooms — all at y=0. */}
         <Walls colors={colors} />
-
-        {/* Every doorway, from the DOORS list: the exterior one gets the
-            window facade + front door; interior ones get door + flanks.
-            Each fills its entire wall run, positioned by the run itself. */}
-        {DOORWAYS.map((doorway) => (
-          <group
-            key={`door-${doorway.child}`}
-            position={[doorway.wallCenter[0], 0, doorway.wallCenter[2]]}
-            rotation={[0, doorway.rotationY, 0]}
-          >
-            {doorway.isExterior ? (
-              <>
-                <FrontFacade colors={colors} span={doorway.span} offset={doorway.offset} />
-                <Door
-                  colors={colors}
-                  centerX={doorway.offset}
-                  animation={doorway.animation}
-                  open={isDoorOpen(doorway.child)}
-                  onToggle={toggleRoom(doorway.child)}
-                />
-              </>
-            ) : (
-              <InteriorDoorway
-                colors={colors}
-                span={doorway.span}
-                offset={doorway.offset}
-                animation={doorway.animation}
-                open={isDoorOpen(doorway.child)}
-                onToggle={toggleRoom(doorway.child)}
-                interiorColor={roomById(doorway.child).interiorWallColor}
-              />
-            )}
-          </group>
-        ))}
-
-        {/* Floors and ceilings, one pair per room. */}
-        {ROOMS.map((room) => (
+        {DOORWAYS.filter((d) => d.level === 0).map(renderDoorway)}
+        {ROOMS.filter((r) => roomFloorLevel(r.id) === 0).map((room) => (
           <Room key={room.id} roomId={room.id} colors={colors} />
         ))}
 
-        {/* Second storey — geometry only for now (not navigable yet). Everything
-    inside the group is deck-relative; columns bridge floors so they render
-    at absolute Y, outside it. */}
+        {/* Second storey: everything deck-relative, inside one baseY group. */}
         <group position={[0, UPSTAIRS.baseY, 0]}>
           {UPSTAIRS.roomRect && (
-            <Room roomId="bedroom" colors={colors}
-              rect={UPSTAIRS.roomRect} ceilingColor={UPSTAIRS.ceilingColor} />
+            <Room roomId="bedroom" colors={colors} rect={UPSTAIRS.roomRect} ceilingColor={UPSTAIRS.ceilingColor} />
           )}
           {UPSTAIRS.balconyRect && (
             <Room roomId="balcony" colors={colors} rect={UPSTAIRS.balconyRect} ceiling={false} />
           )}
           <Walls colors={colors} runs={UPSTAIRS.walls} />
+          {DOORWAYS.filter((d) => d.level > 0).map(renderDoorway)}
           <Railings runs={UPSTAIRS.railings} colors={colors} />
         </group>
-        <Columns columns={UPSTAIRS_COLUMNS} colors={colors} />
 
-        {/* Items, engine-resolved by placeItems — same shape as the DOORWAYS
-            map above: each entry already carries type + world x/z + rotationY,
-            so this map just looks the component up and drops it in. Everything
-            in the catalog is now primitive geometry, so nothing suspends. */}
+        {/* Columns bridge floors → absolute Y. Stairs too. */}
+        <Columns columns={UPSTAIRS_COLUMNS} colors={colors} />
+        {STAIRWAYS.map((stair) => (
+          <Stairs key={`stair-${stair.child}`} stair={stair} colors={colors} onNavigate={toggleRoom(stair.child)} />
+        ))}
+
         {PLACED_ITEMS.map((item, i) => {
           const Item = ITEM_COMPONENTS[item.type];
           if (!Item) return null;
@@ -168,7 +151,6 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
         })}
 
         <CameraRig fromLocation={settledLocation} transitionTarget={transitionTarget} controlsRef={controlsRef} onArrived={handleArrived} />
-
         <OrbitControls
           ref={controlsRef}
           enabled={!isTransitioning}
@@ -177,7 +159,6 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
           maxDistance={isTransitioning ? 50 : isInterior ? INTERIOR_MAX_DISTANCE : EXTERIOR_MAX_DISTANCE}
           maxPolarAngle={isTransitioning ? Math.PI : Math.PI / 2 - 0.05}
         />
-
         <RoomBounds controlsRef={controlsRef} settledLocation={settledLocation} active={!isTransitioning} />
       </Canvas>
 
@@ -187,11 +168,8 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
           onMouseLeave={() => setShowExitArrow(false)}
           style={{ position: 'absolute', left: 0, right: 0, bottom: 0, height: '22%', display: 'flex', alignItems: 'flex-end', justifyContent: 'center', paddingBottom: '18px' }}
         >
-          <button
-            onClick={() => goTo(parentOf(settledLocation))}
-            aria-label="Go back"
-            style={{ width: '48px', height: '48px', borderRadius: '50%', border: 'none', backgroundColor: 'rgba(17, 24, 39, 0.6)', color: '#ffffff', fontSize: '1.3rem', cursor: 'pointer', opacity: showExitArrow ? 1 : 0, transition: 'opacity 0.25s ease', pointerEvents: showExitArrow ? 'auto' : 'none' }}
-          >
+          <button onClick={() => goTo(parentOf(settledLocation))} aria-label="Go back"
+            style={{ width: '48px', height: '48px', borderRadius: '50%', border: 'none', backgroundColor: 'rgba(17, 24, 39, 0.6)', color: '#ffffff', fontSize: '1.3rem', cursor: 'pointer', opacity: showExitArrow ? 1 : 0, transition: 'opacity 0.25s ease', pointerEvents: showExitArrow ? 'auto' : 'none' }}>
             ←
           </button>
         </div>

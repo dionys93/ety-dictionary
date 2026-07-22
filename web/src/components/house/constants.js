@@ -1,27 +1,18 @@
 // web/src/components/house/constants.js
-//
-// The public shelf. Everything the rest of the app reads about the house is
-// exported here. The actual work — turning the rooms.js grid into walls,
-// doorways, footprints, and navigation — is done once by the engine in
-// grid-engine.js; this file just calls it and lays the results out as a flat
-// list of named exports, so it reads like a table of contents.
-//
-// You edit rooms.js. You never need to edit this file or the engine.
-
-import { GROUND_FLOOR, SECOND_STOREY, DOORS, ITEMS, CELL } from './rooms.js';
+import { GROUND_FLOOR, SECOND_STOREY, DOORS, STAIRS, ITEMS, CELL } from './rooms.js';
 import { isRoom } from './blocks.js';
 import { WALL_HEIGHT } from './roofGeometry.js';
 import { EXTERIOR } from './grid-shared.js';
 import {
   makeGrid, readRooms, measureGrid, makeCoords,
-  findFootprints, findWalls, buildNavigation, placeDoorways, placeItems,
+  findFootprints, findWalls, buildNavigation, placeDoorways, placeItems, placeStairs,
   findRailings, trimWallsByRailings, placeColumns, floorFootprints, boxToRect,
   roofHeightMap, roofRegions,
 } from './grid-engine.js';
 
 export { CELL, DOORS, ITEMS, WALL_HEIGHT, EXTERIOR };
 
-// ── House-wide dimensions (not derived from the grid) ─────────────────────
+// ── House-wide dimensions ─────────────────────────────────────────────────
 export const DOOR_WIDTH = 0.4;
 export const DOOR_HEIGHT = 0.75;
 export const WALL_THICKNESS = 0.05;
@@ -29,44 +20,49 @@ export const GROUND_SIZE = 30;
 export const GROUND_THICKNESS = 0.3;
 export const LERP_SPEED = 0.08;
 
-// The front wall of the main body sits here in world Z; the engine shifts the
-// whole grid so this stays put no matter how many rows you add at the back.
 const FRONT_WALL_Z_TARGET = 1.25;
 
-// ── Run the engine once (ground floor) ────────────────────────────────────
+// ── Floors: run the engine per floor on ONE shared coordinate frame ────────
 const grid = makeGrid(GROUND_FLOOR, isRoom);
 const coords = makeCoords(CELL, measureGrid(grid, CELL, FRONT_WALL_Z_TARGET));
-
-const rooms = readRooms(grid);
-const footprints = findFootprints(grid);
-const walls = findWalls(grid, coords);
-const nav = buildNavigation(DOORS, rooms);
-const doorways = placeDoorways(DOORS, walls, nav, CELL, DOOR_WIDTH);
-
-// ── Second storey (geometry only; not yet navigable) ──────────────────────
-// Measured on the GROUND floor's coords, so (row,col) means the same world
-// spot on both floors — that shared frame is what lets overhang detection line
-// an upper cell up with what's (not) under it. Sits after grid/coords above.
 const upperGrid = makeGrid(SECOND_STOREY, isRoom);
-const upperRooms = readRooms(upperGrid);
+
+const FLOOR_HEIGHT = WALL_HEIGHT;                        // one storey, deck to deck
+const FLOORS = [
+  { level: 0, grid,            baseY: 0 },
+  { level: 1, grid: upperGrid, baseY: WALL_HEIGHT },
+];
+const floorBaseY = (level) => (level <= 0 ? 0 : level * FLOOR_HEIGHT);
+
+// Which floor level each room id lives on (ids are globally unique).
+const roomLevel = new Map();
+FLOORS.forEach((f) => readRooms(f.grid).forEach((r) => roomLevel.set(r.id, f.level)));
+const roomFloor = (id) => roomLevel.get(id) ?? 0;
+
+// Rooms & footprints merged across floors; ground footprints kept separate
+// for roof/extent math so upstairs rooms don't shift the house bounds.
+const rooms = FLOORS.flatMap((f) => readRooms(f.grid));
+const groundFootprints = findFootprints(grid);
+const footprints = new Map([...groundFootprints, ...findFootprints(upperGrid)]);
+
+// Walls: per-floor for rendering, combined for door-matching (pure topology).
+const groundWalls = findWalls(grid, coords);
 const upstairsFP = floorFootprints(upperGrid, grid);
 const upperRailings = findRailings(upperGrid, upstairsFP.overhang, coords);
 const upperWalls = trimWallsByRailings(findWalls(upperGrid, coords), upperRailings);
+const allWalls = [...groundWalls, ...upperWalls];
 
-export const UPSTAIRS = {
-  baseY: WALL_HEIGHT,                                  // deck sits on the ground walls
-  ceilingColor: upperRooms[0]?.interiorWallColor,
-  roomRect: upstairsFP.groundedBox && boxToRect(upstairsFP.groundedBox, coords, CELL),
-  balconyRect: upstairsFP.overhangBox && boxToRect(upstairsFP.overhangBox, coords, CELL),
-  walls: upperWalls,
-  railings: upperRailings,
-};
-export const UPSTAIRS_COLUMNS = placeColumns(upperRailings, WALL_HEIGHT, 2 * CELL);
+// One graph over doors + stairs, across all floors.
+const nav = buildNavigation(DOORS, STAIRS, rooms);
+const doorways = placeDoorways(DOORS, allWalls, nav, CELL, DOOR_WIDTH);
+const stairs = placeStairs(STAIRS, footprints, roomFloor, coords, CELL, FLOOR_HEIGHT);
+const doorwayRuns = new Set(doorways.map((d) => d.run));
 
 // ── Rooms ─────────────────────────────────────────────────────────────────
 export const ROOMS = rooms;
 const roomsById = new Map(rooms.map((r) => [r.id, r]));
 export const roomById = (id) => roomsById.get(id);
+export const roomFloorLevel = roomFloor;
 
 export function roomRect(id) {
   const box = footprints.get(id);
@@ -76,47 +72,53 @@ export function roomRect(id) {
     centerZ: (coords.zEdge(box.rowLo) + coords.zEdge(box.rowHi)) / 2,
     width: (box.colHi - box.colLo) * CELL,
     depth: (box.rowHi - box.rowLo) * CELL,
+    baseY: floorBaseY(roomFloor(id)),
   };
 }
 
-// ── Walls & doorways ──────────────────────────────────────────────────────
-export const DOORWAYS = doorways;
+// ── Walls, doorways, stairs ───────────────────────────────────────────────
+export const DOORWAYS = doorways.map((d) => ({
+  ...d, level: roomFloor(d.child), baseY: floorBaseY(roomFloor(d.child)),
+}));
+export const STAIRWAYS = stairs;
 export const roomDoorway = (id) => doorways.find((d) => d.child === id);
-export const SOLID_WALL_RUNS = walls.filter((run) => !doorways.some((d) => d.run === run));
+export const roomStair = (id) => stairs.find((s) => s.child === id);
+export const SOLID_WALL_RUNS = groundWalls.filter((run) => !doorwayRuns.has(run));
+const upperSolidWalls = upperWalls.filter((run) => !doorwayRuns.has(run));
 
 export function sideColor(spaceId, colors) {
   if (spaceId === EXTERIOR) return colors.wall;
   return roomsById.get(spaceId)?.interiorWallColor ?? colors.wall;
 }
 
-// ── Navigation (thin re-exports of the engine's graph) ────────────────────
+// ── Second storey bundle (walls/railings/rooms render inside a baseY group) ─
+export const UPSTAIRS = {
+  baseY: WALL_HEIGHT,
+  ceilingColor: roomById('bedroom')?.interiorWallColor,
+  roomRect: upstairsFP.groundedBox && boxToRect(upstairsFP.groundedBox, coords, CELL),
+  balconyRect: upstairsFP.overhangBox && boxToRect(upstairsFP.overhangBox, coords, CELL),
+  walls: upperSolidWalls,
+  railings: upperRailings,
+};
+export const UPSTAIRS_COLUMNS = placeColumns(upperRailings, WALL_HEIGHT, 2 * CELL);
+
+// ── Navigation re-exports ─────────────────────────────────────────────────
 export const parentOf = nav.parentOf;
 export const pathTo = nav.pathTo;
 export const areAdjacent = nav.areAdjacent;
 export const depthOf = nav.depthOf;
 
-// ── Roof extents ──────────────────────────────────────────────────────────
-// The roof is one gable over the WHOLE filled footprint — no "main body" or
-// "wings". We take the bounding box of every room's cells and put a single
-// ridge down its longer axis; the roof covers everything inside that box.
-// This means where a room sits (a bathroom in any corner, a bump-out, an
-// L-shape) never reshapes the roof: it always just covers the footprint.
-// The old main-column/wing detection tried to infer the house's "shape" and
-// broke when a room didn't leave an obvious rectangular core — a whole class
-// of bug that simply can't happen here.
+// ── Roof extents (GROUND footprints only, so upstairs doesn't move bounds) ─
 export const ROOT_ID = doorways.find((d) => d.isExterior).child;
 
-const footprintBox = [...footprints.values()].reduce(
+const footprintBox = [...groundFootprints.values()].reduce(
   (box, b) => ({
-    colLo: Math.min(box.colLo, b.colLo),
-    colHi: Math.max(box.colHi, b.colHi),
-    rowLo: Math.min(box.rowLo, b.rowLo),
-    rowHi: Math.max(box.rowHi, b.rowHi),
+    colLo: Math.min(box.colLo, b.colLo), colHi: Math.max(box.colHi, b.colHi),
+    rowLo: Math.min(box.rowLo, b.rowLo), rowHi: Math.max(box.rowHi, b.rowHi),
   }),
   { colLo: Infinity, colHi: -Infinity, rowLo: Infinity, rowHi: -Infinity }
 );
 
-// The footprint's outer edges in world space, and its two spans.
 export const HOUSE_LEFT_X = coords.xEdge(footprintBox.colLo);
 export const HOUSE_RIGHT_X = coords.xEdge(footprintBox.colHi);
 export const FRONT_WALL_Z = coords.zEdge(footprintBox.rowHi);
@@ -124,19 +126,11 @@ export const HOUSE_BACK_Z = coords.zEdge(footprintBox.rowLo);
 export const HOUSE_CENTER_X = (HOUSE_LEFT_X + HOUSE_RIGHT_X) / 2;
 export const HOUSE_CENTER_Z = (FRONT_WALL_Z + HOUSE_BACK_Z) / 2;
 
-const houseWidth = HOUSE_RIGHT_X - HOUSE_LEFT_X;   // extent across X
-const houseDepth = FRONT_WALL_Z - HOUSE_BACK_Z;    // extent across Z
-
-// Ridge runs along the LONGER axis, so the slopes fall across the shorter
-// one (a normal gable). 'z' = ridge front-to-back, slopes fall in X.
+const houseWidth = HOUSE_RIGHT_X - HOUSE_LEFT_X;
+const houseDepth = FRONT_WALL_Z - HOUSE_BACK_Z;
 export const RIDGE_AXIS = houseDepth >= houseWidth ? 'z' : 'x';
-// The width the gable spans (the short axis the slopes cover) and the ridge
-// length (the long axis it runs along).
 export const GABLE_SPAN = Math.min(houseWidth, houseDepth);
 export const RIDGE_LENGTH = Math.max(houseWidth, houseDepth);
-
-// Kept for anything still importing it (camera framing): the main body width
-// is now just the footprint's X extent.
 export const MAIN_COLUMN_WIDTH = houseWidth;
 
 // ── Items ─────────────────────────────────────────────────────────────────
@@ -150,7 +144,6 @@ export const DOORWAY_WAYPOINT_Y = DOOR_HEIGHT - DOORWAY_CLEARANCE;
 export const EXTERIOR_CAMERA = { position: [5.5, 3.5, 8], target: [0.5, 0, -0.5] };
 export const EXTERIOR_MIN_DISTANCE = 4;
 export const EXTERIOR_MAX_DISTANCE = 16;
-
 export const INTERIOR_MIN_DISTANCE = 0.3;
 export const INTERIOR_MAX_DISTANCE = 3.5;
 export const ROOM_BOUNDS_MARGIN = 0.15;
@@ -159,11 +152,11 @@ export const TRANSITION_SPEED = 4.5;
 export const TRANSITION_MIN_DURATION = 1.8;
 export const TRANSITION_MAX_DURATION = 2.2;
 
-// ── Roof regions (per-column cap height; see grid-engine) ─────────────────
+// ── Roof regions ──────────────────────────────────────────────────────────
 const floorsForRoof = [
-  { grid, topY: 0 },                    // ground floor walls rise from y=0
-  { grid: upperGrid, topY: UPSTAIRS.baseY },  // upstairs walls rise from the deck (= WALL_HEIGHT)
+  { grid, topY: 0 },
+  { grid: upperGrid, topY: UPSTAIRS.baseY },
 ];
-const overhangsForRoof = [new Set(), upstairsFP.overhang];  // ground overhangs nothing
+const overhangsForRoof = [new Set(), upstairsFP.overhang];
 const roofCap = roofHeightMap(floorsForRoof, overhangsForRoof);
 export const ROOF_REGIONS = roofRegions(roofCap, coords, CELL);

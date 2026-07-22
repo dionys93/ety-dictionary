@@ -65,12 +65,17 @@ export const SECOND_STOREY = [
   [_, _, _, _, _, _],
 ];
 
-// ── 3. Doors. Each names the two rooms it joins ('outside' is a place). ──
+// ── 3. Doors. ──
 export const DOORS = [
   { between: ['outside', 'livingRoom'], side: 'front', swing: 'out' },
   { between: ['livingRoom', 'kitchen'], swing: 'in' },
   { between: ['livingRoom', 'bathroom'], side: 'left', swing: 'in' },
-  { between: ['bedroom', 'balcony'], side: 'back', swing: 'out' },
+  { between: ['bedroom', 'balcony'], swing: 'out' },   
+];
+
+// ── 3b. Stairs. Vertical links between rooms on adjacent floors. ──
+export const STAIRS = [
+  { between: ['livingRoom', 'bedroom'] },
 ];
 
 // ── 4. Items. Each names its room and a spot inside it. ──

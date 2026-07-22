@@ -161,8 +161,10 @@ function scanLines({ lines, steps, sideBefore, sideAfter, toRun }) {
 }
 
 // ── buildNavigation: parent / path / adjacency, by walking out from EXTERIOR
-export function buildNavigation(doors, rooms) {
-  const links = doors.map((d) => d.between.map((s) => (s === 'outside' ? EXTERIOR : s)));
+export function buildNavigation(doors, stairs, rooms) {
+  const links = [...doors, ...stairs].map((d) =>
+    d.between.map((s) => (s === 'outside' ? EXTERIOR : s))
+  );
 
   // Breadth-first from the exterior; depth = how many doors deep a room is.
   const depth = new Map([[EXTERIOR, 0]]);
@@ -258,6 +260,35 @@ export function placeDoorways(doors, walls, nav, cell, doorWidth) {
       rotationY,
       doorPosition,
       run,
+    };
+  });
+}
+
+// ── placeStairs: connect two rooms on adjacent floors by plan overlap ──────
+// A stair has no shared WALL (different floors), so it's placed where the two
+// rooms overlap in plan. Agnostic: name any two overlapping rooms.
+export function placeStairs(stairs, footprints, roomFloor, coords, cell, floorHeight) {
+  return stairs.map((stair) => {
+    const [x, y] = stair.between;
+    const [lower, upper] = roomFloor(x) < roomFloor(y) ? [x, y] : [y, x];
+    const a = footprints.get(lower), b = footprints.get(upper);
+    if (!a || !b) throw new Error(`rooms.js: stair ${x}<->${y} names a room not in the grid`);
+
+    const colLo = Math.max(a.colLo, b.colLo), colHi = Math.min(a.colHi, b.colHi);
+    const rowLo = Math.max(a.rowLo, b.rowLo), rowHi = Math.min(a.rowHi, b.rowHi);
+    if (colHi <= colLo || rowHi <= rowLo) {
+      throw new Error(`rooms.js: stair ${lower}<->${upper} — those rooms don't overlap in plan, so a stair can't connect them`);
+    }
+
+    const overlapRect = boxToRect({ colLo, colHi, rowLo, rowHi }, coords, cell);
+    const lowerY = roomFloor(lower) * floorHeight;
+    const upperY = roomFloor(upper) * floorHeight;
+    return {
+      lower, upper, child: upper,
+      position: [overlapRect.centerX, lowerY, overlapRect.centerZ],
+      rise: upperY - lowerY,
+      overlapRect,
+      waypoint: [overlapRect.centerX, upperY + 0.2, overlapRect.centerZ],
     };
   });
 }
