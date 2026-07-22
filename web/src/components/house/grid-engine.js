@@ -264,9 +264,12 @@ export function placeDoorways(doors, walls, nav, cell, doorWidth) {
   });
 }
 
-// ── placeStairs: connect two rooms on adjacent floors by plan overlap ──────
-// A stair has no shared WALL (different floors), so it's placed where the two
-// rooms overlap in plan. Agnostic: name any two overlapping rooms.
+// ── placeStairs: authored footprint (dir + width + spot) in the plan overlap
+const STAIR_DIRS = {
+  north: { axis: 'z', sign: -1 }, south: { axis: 'z', sign: 1 },
+  east:  { axis: 'x', sign: 1 },  west:  { axis: 'x', sign: -1 },
+};
+
 export function placeStairs(stairs, footprints, roomFloor, coords, cell, floorHeight) {
   return stairs.map((stair) => {
     const [x, y] = stair.between;
@@ -274,21 +277,43 @@ export function placeStairs(stairs, footprints, roomFloor, coords, cell, floorHe
     const a = footprints.get(lower), b = footprints.get(upper);
     if (!a || !b) throw new Error(`rooms.js: stair ${x}<->${y} names a room not in the grid`);
 
-    const colLo = Math.max(a.colLo, b.colLo), colHi = Math.min(a.colHi, b.colHi);
-    const rowLo = Math.max(a.rowLo, b.rowLo), rowHi = Math.min(a.rowHi, b.rowHi);
-    if (colHi <= colLo || rowHi <= rowLo) {
-      throw new Error(`rooms.js: stair ${lower}<->${upper} — those rooms don't overlap in plan, so a stair can't connect them`);
+    const oColLo = Math.max(a.colLo, b.colLo), oColHi = Math.min(a.colHi, b.colHi);
+    const oRowLo = Math.max(a.rowLo, b.rowLo), oRowHi = Math.min(a.rowHi, b.rowHi);
+    if (oColHi <= oColLo || oRowHi <= oRowLo)
+      throw new Error(`rooms.js: stair ${lower}<->${upper} — those rooms don't overlap in plan`);
+
+    const dir = STAIR_DIRS[stair.dir ?? 'north'];
+    const widthCells = Math.max(1, stair.width ?? 1);
+    // The run occupies the overlap's full length along the climb axis; width is
+    // the authored cell count across it. Then anchor the box by spot.
+    const runIsZ = dir.axis === 'z';
+    const overlapW = oColHi - oColLo, overlapD = oRowHi - oRowLo;   // in cells
+    const wCells = Math.min(widthCells, runIsZ ? overlapW : overlapD);
+    const runCells = runIsZ ? overlapD : overlapW;
+
+    // spot picks which corner the width-band hugs; run fills the overlap length.
+    const back = /back|left/.test(stair.spot ?? 'back-left');
+    let colLo, colHi, rowLo, rowHi;
+    if (runIsZ) {
+      rowLo = oRowLo; rowHi = oRowHi;
+      colLo = back ? oColLo : oColHi - wCells; colHi = colLo + wCells;
+    } else {
+      colLo = oColLo; colHi = oColHi;
+      rowLo = back ? oRowLo : oRowHi - wCells; rowHi = rowLo + wCells;
     }
 
-    const overlapRect = boxToRect({ colLo, colHi, rowLo, rowHi }, coords, cell);
-    const lowerY = roomFloor(lower) * floorHeight;
-    const upperY = roomFloor(upper) * floorHeight;
+    const rect = boxToRect({ colLo, colHi, rowLo, rowHi }, coords, cell);
+    const lowerY = roomFloor(lower) * floorHeight, upperY = roomFloor(upper) * floorHeight;
     return {
       lower, upper, child: upper,
-      position: [overlapRect.centerX, lowerY, overlapRect.centerZ],
+      dir: stair.dir ?? 'north', climbAxis: dir.axis, climbSign: dir.sign,
+      footprintBox: { colLo, colHi, rowLo, rowHi },   // for the floor hole
+      position: [rect.centerX, lowerY, rect.centerZ],
       rise: upperY - lowerY,
-      overlapRect,
-      waypoint: [overlapRect.centerX, upperY + 0.2, overlapRect.centerZ],
+      rect,
+      // Two waypoints so the camera walks the flight: bottom of stairs, then top.
+      waypointBottom: [rect.centerX, lowerY + 0.15, rect.centerZ + (runIsZ ? -dir.sign : 0) * rect.depth * 0.4],
+      waypointTop: [rect.centerX, upperY + 0.2, rect.centerZ + (runIsZ ? dir.sign : 0) * rect.depth * 0.4],
     };
   });
 }

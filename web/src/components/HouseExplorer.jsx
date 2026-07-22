@@ -19,7 +19,7 @@ import { Columns } from './house/Columns.jsx';
 import { Stairs } from './house/Stairs.jsx';
 import {
   ROOMS, DOORWAYS, PLACED_ITEMS,
-  UPSTAIRS, UPSTAIRS_COLUMNS, STAIRWAYS,
+  UPSTAIRS, UPSTAIRS_COLUMNS, STAIRWAYS, stairHolesFor,
   roomById, roomFloorLevel,
   parentOf, pathTo,
   RIDGE_AXIS, GABLE_SPAN,
@@ -60,8 +60,6 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
   const toggleRoom = (roomId) => () =>
     goTo(settledLocation === roomId ? parentOf(roomId) : roomId);
 
-  // One doorway renderer, used for both floors. Inside a baseY group the y=0
-  // in wallCenter becomes the floor height; at ground level it's just y=0.
   const renderDoorway = (doorway) => (
     <group
       key={`door-${doorway.child}`}
@@ -93,7 +91,7 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
         <Roof colors={colors} />
 
         {/* Gable ends still use the single-roof globals — pre-existing seam,
-            unchanged this pass. */}
+            being replaced in the roof/gable pass. */}
         {RIDGE_AXIS === 'z' ? (
           <>
             <group position={[HOUSE_CENTER_X, 0, FRONT_WALL_Z]}>
@@ -114,17 +112,19 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
           </>
         )}
 
-        {/* Ground floor: walls, doorways, rooms — all at y=0. */}
+        {/* Ground floor — everything at y=0. */}
         <Walls colors={colors} />
         {DOORWAYS.filter((d) => d.level === 0).map(renderDoorway)}
         {ROOMS.filter((r) => roomFloorLevel(r.id) === 0).map((room) => (
           <Room key={room.id} roomId={room.id} colors={colors} />
         ))}
 
-        {/* Second storey: everything deck-relative, inside one baseY group. */}
+        {/* Second storey — deck-relative, inside one baseY group. The bedroom
+            floor gets a hole cut where the stair lands. */}
         <group position={[0, UPSTAIRS.baseY, 0]}>
           {UPSTAIRS.roomRect && (
-            <Room roomId="bedroom" colors={colors} rect={UPSTAIRS.roomRect} ceilingColor={UPSTAIRS.ceilingColor} />
+            <Room roomId="bedroom" colors={colors} rect={UPSTAIRS.roomRect}
+                  ceilingColor={UPSTAIRS.ceilingColor} holes={stairHolesFor('bedroom')} />
           )}
           {UPSTAIRS.balconyRect && (
             <Room roomId="balcony" colors={colors} rect={UPSTAIRS.balconyRect} ceiling={false} />
@@ -134,7 +134,7 @@ export default function HouseExplorer({ colorScheme = 'robinsEgg' }) {
           <Railings runs={UPSTAIRS.railings} colors={colors} />
         </group>
 
-        {/* Columns bridge floors → absolute Y. Stairs too. */}
+        {/* Bridge-floor elements render at absolute Y. */}
         <Columns columns={UPSTAIRS_COLUMNS} colors={colors} />
         {STAIRWAYS.map((stair) => (
           <Stairs key={`stair-${stair.child}`} stair={stair} colors={colors} onNavigate={toggleRoom(stair.child)} />

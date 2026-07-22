@@ -5,12 +5,12 @@ const TREAD = '#b8a888';
 
 export function Stairs({ stair, onNavigate, colors }) {
   const [hovered, setHovered] = useState(false);
-  const { overlapRect, rise } = stair;
+  const { rect, rise } = stair;                    // was: overlapRect
 
-  const runAlongZ = overlapRect.depth >= overlapRect.width;
+  const runAlongZ = rect.depth >= rect.width;       // was: overlapRect.depth/.width
   const steps = Math.max(4, Math.round(rise / 0.18));
-  const availLong = runAlongZ ? overlapRect.depth : overlapRect.width;
-  const availShort = runAlongZ ? overlapRect.width : overlapRect.depth;
+  const availLong = runAlongZ ? rect.depth : rect.width;
+  const availShort = runAlongZ ? rect.width : rect.depth;
   const runLen = Math.min(steps * 0.26, availLong * 0.9);
   const width = Math.min(0.9, availShort * 0.8);
   const stepD = runLen / steps;
@@ -18,7 +18,7 @@ export function Stairs({ stair, onNavigate, colors }) {
 
   return (
     <group
-      position={[overlapRect.centerX, stair.position[1], overlapRect.centerZ]}
+      position={[rect.centerX, stair.position[1], rect.centerZ]}   // was: overlapRect.centerX/.centerZ
       onClick={(e) => { e.stopPropagation(); onNavigate(); }}
       onPointerOver={(e) => { e.stopPropagation(); setHovered(true); document.body.style.cursor = 'pointer'; }}
       onPointerOut={() => { setHovered(false); document.body.style.cursor = 'auto'; }}

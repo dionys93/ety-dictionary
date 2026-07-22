@@ -31,7 +31,7 @@ const K = defineRoom({ key: 'kitchen', name: 'Kitchen', color: '#d4d4d4' });
 const L = defineRoom({ key: 'livingRoom', name: 'Living Room' }); // no color = house default
 const B = defineRoom({ key: 'bathroom', name: 'Bathroom', color: '#c8d5c8' });
 const D = defineRoom({ key: 'bedroom', name: 'Bedroom', color: '#d8cfc0' });
-const Y = defineRoom({ key: 'balcony', name: 'Balcony', color: '#c9c2b4' });
+const Y = defineRoom({ key: 'balcony', name: 'Balcony', color: '#a8dadc' });
 const _ = EMPTY;
 
 
@@ -73,9 +73,10 @@ export const DOORS = [
   { between: ['bedroom', 'balcony'], swing: 'out' },   
 ];
 
-// ── 3b. Stairs. Vertical links between rooms on adjacent floors. ──
+// ── 3b. Stairs. dir = climb direction (which way you walk UP);
+//        width = cells across; spot = where the footprint anchors. ──
 export const STAIRS = [
-  { between: ['livingRoom', 'bedroom'] },
+  { between: ['livingRoom', 'bedroom'], dir: 'north', width: 2, spot: 'back-left' },
 ];
 
 // ── 4. Items. Each names its room and a spot inside it. ──

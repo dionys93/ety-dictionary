@@ -27,32 +27,27 @@ const grid = makeGrid(GROUND_FLOOR, isRoom);
 const coords = makeCoords(CELL, measureGrid(grid, CELL, FRONT_WALL_Z_TARGET));
 const upperGrid = makeGrid(SECOND_STOREY, isRoom);
 
-const FLOOR_HEIGHT = WALL_HEIGHT;                        // one storey, deck to deck
+const FLOOR_HEIGHT = WALL_HEIGHT;
 const FLOORS = [
   { level: 0, grid,            baseY: 0 },
   { level: 1, grid: upperGrid, baseY: WALL_HEIGHT },
 ];
 const floorBaseY = (level) => (level <= 0 ? 0 : level * FLOOR_HEIGHT);
 
-// Which floor level each room id lives on (ids are globally unique).
 const roomLevel = new Map();
 FLOORS.forEach((f) => readRooms(f.grid).forEach((r) => roomLevel.set(r.id, f.level)));
 const roomFloor = (id) => roomLevel.get(id) ?? 0;
 
-// Rooms & footprints merged across floors; ground footprints kept separate
-// for roof/extent math so upstairs rooms don't shift the house bounds.
 const rooms = FLOORS.flatMap((f) => readRooms(f.grid));
 const groundFootprints = findFootprints(grid);
 const footprints = new Map([...groundFootprints, ...findFootprints(upperGrid)]);
 
-// Walls: per-floor for rendering, combined for door-matching (pure topology).
 const groundWalls = findWalls(grid, coords);
 const upstairsFP = floorFootprints(upperGrid, grid);
 const upperRailings = findRailings(upperGrid, upstairsFP.overhang, coords);
 const upperWalls = trimWallsByRailings(findWalls(upperGrid, coords), upperRailings);
 const allWalls = [...groundWalls, ...upperWalls];
 
-// One graph over doors + stairs, across all floors.
 const nav = buildNavigation(DOORS, STAIRS, rooms);
 const doorways = placeDoorways(DOORS, allWalls, nav, CELL, DOOR_WIDTH);
 const stairs = placeStairs(STAIRS, footprints, roomFloor, coords, CELL, FLOOR_HEIGHT);
@@ -86,12 +81,18 @@ export const roomStair = (id) => stairs.find((s) => s.child === id);
 export const SOLID_WALL_RUNS = groundWalls.filter((run) => !doorwayRuns.has(run));
 const upperSolidWalls = upperWalls.filter((run) => !doorwayRuns.has(run));
 
+// Stair holes in an upper room's floor slab (world rects), for cutting the floor.
+export const stairHolesFor = (roomId) =>
+  stairs.filter((s) => s.upper === roomId).map((s) => boxToRect(s.footprintBox, coords, CELL));
+
 export function sideColor(spaceId, colors) {
-  if (spaceId === EXTERIOR) return colors.wall;
+  // The balcony is really outdoors, so walls facing it wear house siding, not
+  // an interior liner — matching the exterior.
+  if (spaceId === EXTERIOR || spaceId === 'balcony') return colors.wall;
   return roomsById.get(spaceId)?.interiorWallColor ?? colors.wall;
 }
 
-// ── Second storey bundle (walls/railings/rooms render inside a baseY group) ─
+// ── Second storey bundle ──────────────────────────────────────────────────
 export const UPSTAIRS = {
   baseY: WALL_HEIGHT,
   ceilingColor: roomById('bedroom')?.interiorWallColor,
@@ -108,7 +109,7 @@ export const pathTo = nav.pathTo;
 export const areAdjacent = nav.areAdjacent;
 export const depthOf = nav.depthOf;
 
-// ── Roof extents (GROUND footprints only, so upstairs doesn't move bounds) ─
+// ── Roof extents (GROUND footprints only) ─────────────────────────────────
 export const ROOT_ID = doorways.find((d) => d.isExterior).child;
 
 const footprintBox = [...groundFootprints.values()].reduce(
