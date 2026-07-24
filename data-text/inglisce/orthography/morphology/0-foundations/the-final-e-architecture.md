@@ -134,7 +134,7 @@ In monosyllabic words with long vowels, the final ⟨-e⟩ acts as a shield to p
 | to **gâme** | gâme(s, gâmed, gâming | **gâme, gâms** | *Verb:* To play for stakes. *Noun:* An amusement. |
 | to **tîme** | tîme(s, tîmed, tîming | **tîme, tîms** | *Verb:* To measure duration. *Noun:* A moment. |
 | *to **bete** | bete(s, bet, betting | **bete, bets** | *Verb:* To wager. *Noun:* A wager. |
-| to **scite** | scite(s, sciat, sciting | **scite** | *Verb:* To defecate. *Noun:* Feces. |
+| to **scite** | scite(s, sçat, sciting | **scite** | *Verb:* To defecate. *Noun:* Feces. |
 
 *Irregular past tense
 
