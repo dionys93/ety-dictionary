@@ -52,7 +52,7 @@ These verbs undergo an internal vowel shift or remain static in their past tense
 | to **ridde** | rid(s, rid, ridding | To eliminate or clear away. |
 | to **spytte** | spyt(s, spat, spytting | To forcibly eject saliva. |
 | to **sitte*** | sit(s, sat, sitting | To rest one's weight upon the buttocks. |
-| to **suimme** | suim(s, suam, suom, suidding | To propel oneself through water by movement of the limbs, fins, or tail. |
+| to **suimme** | suim(s, suam, suom, suimming | To propel oneself through water by movement of the limbs, fins, or tail. |
 | to **bidde** | bid(s, bâde, bidding | To issue a command or price. |
 
 
