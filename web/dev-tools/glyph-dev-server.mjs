@@ -16,7 +16,7 @@ export function glyphDevApi() {
     name: 'glyph-dev-api',
     hooks: {
       'astro:server:setup': ({ server }) => {
-        const dirPath = path.resolve(process.cwd(), 'glyphs');
+        const dirPath = path.resolve(process.cwd(), 'glyphs', 'custom');
 
         server.middlewares.use('/api/get-glyphs.json', (req, res) => {
           if (req.method !== 'GET') return res.end();
