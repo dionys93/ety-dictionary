@@ -35,7 +35,7 @@ While their orthography has been standardized to reflect their phonetic reality,
 | **down** | **dôn** | Toward or in a lower place or position. |
 | **during** | **during** | Throughout the course or duration of a period of time. |
 | **except, excepting** | **excepte, excepting** | Not including; other than. |
-| **excluding** | **exclouding** | Not taking someone or something into account; leaving out. |
+| **excluding** | **excluding** | Not taking someone or something into account; leaving out. |
 | **following** | **follouing** | Coming after or as a result of an event. |
 | **for** | **for** | In support of; intended to belong to or benefit someone/something. |
 | **from** | **from** | Indicating the point in space or time where a journey or process begins. |
