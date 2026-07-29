@@ -11,7 +11,7 @@ While their orthography has been standardized to reflect their phonetic reality,
 | **about** | **abaut** | Concerning a subject; located around or nearby. |
 | **above** | **above** | In extended space over and not touching; at a higher level. |
 | **across** | **acròss** | From one side to the other of a space, area, or line. |
-| **after** | **aftre** | In the time following an event; behind in order or sequence. |
+| **after** | **after** | In the time following an event; behind in order or sequence. |
 | **against** | **against** | In opposition to; in physical contact or collision with. |
 | **along** | **alòng** | Moving in a constant direction on a path or line. |
 | **amid** | **amid** | Surrounded by; in the middle of a context or situation. |
