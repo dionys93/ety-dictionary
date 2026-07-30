@@ -44,6 +44,18 @@ describe('etym-lint (Data Integrity Gatekeeper)', () => {
 
         fs.writeFileSync(path.join(WARN_DIR, 'trailing.txt'),
             'trailing [ME] \ntrailing (v)\nhttp://example.com\n');
+
+        // New stanza-level rules:
+        // A conjugation-shaped line with no (pos) tag → stanza silently
+        // dropped by etym-parse; must be an ERROR even though a sibling
+        // stanza keeps the per-file checks happy.
+        fs.writeFileSync(path.join(BAD_DIR, 'dropped-stanza.txt'),
+            'clawu [OE]\nclaw [ME]\nclaue, claus (m n)\n\n' +
+            'clawian [OE]\nto claw [ME]\nto claue -s -d -ing\nhttp://example.com\n');
+        // POS tags absent from parts-of-speech.tsv → buildBrain skips the
+        // record; must be a WARN naming the offending tag.
+        fs.writeFileSync(path.join(WARN_DIR, 'unknown-pos.txt'),
+            'foo [ME]\nfou, fous (mn)\nhttp://example.com\n');
     });
 
     afterAll(() => {
@@ -81,4 +93,16 @@ describe('etym-lint (Data Integrity Gatekeeper)', () => {
         expect(output).toContain("[WARN]\x1b[0m  Trailing whitespace on one or more lines.");
     });
 
+    it('flags a conjugation stanza whose (pos) tag is missing (silent-drop class)', () => {
+        const { passed, output } = runLint(BAD_DIR);
+        expect(passed).toBe(false);
+        expect(output).toContain('dropped-stanza.txt');
+        expect(output).toContain('missing its (pos) tag');
+    });
+
+    it('warns on POS tags that are not in parts-of-speech.tsv', () => {
+        const { output } = runLint(WARN_DIR);
+        expect(output).toContain('unknown-pos.txt');
+        expect(output).toContain("Unknown POS tag(s): 'mn'");
+    });
 });
