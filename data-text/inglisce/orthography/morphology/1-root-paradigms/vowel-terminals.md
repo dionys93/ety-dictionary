@@ -27,11 +27,11 @@ Much like the unstressed roots, words ending in the **-oie** diphthong utilize a
 | Infinitive Verb | Conjugations | Derived Nouns |
 | :--- | :--- | :--- |
 | **to annoie** | annoie(s, annoied, annoying | annoyance |
-| **to emploie** | emploie(s, emploied, employing | emploiment, employeur |
+| **to emploie** | emploie(s, emploied, employing | emploiment, employer |
 | **to enjoie** | enjoie(s, enjoied, enjoying | enjoiment |
 | **to convoie** | convoie(s, convoied, convoying | convoie |
 | **to deploie** | deploie(s, deploied, deploying | deploiment |
-| **to destroie** | destroie(s, destroied, destroying | destroyeur |
+| **to destroie** | destroie(s, destroied, destroying | destroyer |
 
 ### Static Nouns (Plural Shift)
 | Singular Noun | Unpacked Plural |
@@ -54,8 +54,8 @@ This broad class of verbs and nouns follows a shared mechanical rule: the base r
 | **to desmaie** | desmaie(s, desmaied, desmaying | -- |
 | **to laie** | laie(s, laied, laying | layure, layurs; laire, lairs |
 | **to obeie** | obeie(s, obeied, obeying | obeyance |
-| **to paie** | paie(s, paied, paying | paie; payeur |
-| **to plaie** | plaie(s, plaied, playing | plaie, plays; playeur |
+| **to paie** | paie(s, paied, paying | paie; payer |
+| **to plaie** | plaie(s, plaied, playing | plaie, plays; player |
 | **to praie** | praie(s, praied, praying | praire, prairs |
 | **to preie** | preie(s, preied, preying | preie |
 | **to porveie** | porveie(s, porveied, porveying | porveyance |
