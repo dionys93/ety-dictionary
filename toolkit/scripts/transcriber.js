@@ -71,8 +71,11 @@ const resolveCategory = (pos, entry) => {
         if (entry.Conjunction) return { baseReplacement: entry.Conjunction, matchedCategory: 'Conjunction' };
     }
 
+    // Last resort: no category matched the spaCy POS — grab the first
+    // available one, but FLAG it so the run summary can surface every
+    // cross-POS guess for auditing (e.g. an ADJ token served by a Noun entry).
     const keys = Object.keys(entry).filter(k => !k.includes('_conjugations'));
-    if (keys.length > 0) return { baseReplacement: entry[keys[0]], matchedCategory: keys[0] };
+    if (keys.length > 0) return { baseReplacement: entry[keys[0]], matchedCategory: keys[0], isFallback: true };
 
     return { baseReplacement: null, matchedCategory: null };
 };
@@ -131,11 +134,11 @@ const matchDictionary = (brain) => (token) => {
     const brainEntry = brain[rawText] || brain[searchWord];
     if (!brainEntry) return Failure(searchWord); 
 
-    const { baseReplacement, matchedCategory } = resolveCategory(token.pos, brainEntry);
+    const { baseReplacement, matchedCategory, isFallback } = resolveCategory(token.pos, brainEntry);
     const isPreConjugated = !!brain[rawText] && rawText !== searchWord;
 
     return baseReplacement 
-        ? Success({ word: baseReplacement, brainEntry, matchedCategory, token, isPreConjugated, isBypass: false })
+        ? Success({ word: baseReplacement, brainEntry, matchedCategory, token, isPreConjugated, isBypass: false, isFallback: !!isFallback })
         : Failure(searchWord);
 };
 
@@ -185,11 +188,14 @@ export const transcribeFromAST = (astTokens, brain) => {
                 acc.missingWords.add(result.error);
                 acc.text += `[${token.text}]` + token.whitespace;
             } else {
+                if (result.value.isFallback) {
+                    acc.fallbacks.add(`${token.lemma.toLowerCase()} (${token.pos} → ${result.value.matchedCategory})`);
+                }
                 acc.text += result.value.word + token.whitespace;
             }
 
             return acc;
-        }, { text: '', missingWords: new Set() }); 
+        }, { text: '', missingWords: new Set(), fallbacks: new Set() }); 
 };
 
 /**
@@ -219,12 +225,14 @@ if (process.argv[1] === __filename) {
     const brain = JSON.parse(fs.readFileSync(BRAIN_PATH, 'utf8'));
     const stat = fs.statSync(inputPath);
     const globalMissingWords = new Set();
+    const globalFallbacks = new Set();
 
     const processSingleFile = (input, output) => {
         const astTokens = JSON.parse(fs.readFileSync(input, 'utf8'));
-        const { text, missingWords } = transcribeFromAST(astTokens, brain);
+        const { text, missingWords, fallbacks } = transcribeFromAST(astTokens, brain);
         
         missingWords.forEach(word => globalMissingWords.add(word));
+        fallbacks.forEach(f => globalFallbacks.add(f));
         fs.mkdirSync(path.dirname(output), { recursive: true });
         fs.writeFileSync(output, text, 'utf8');
         
@@ -266,8 +274,27 @@ if (process.argv[1] === __filename) {
     console.log(`\n✅ Transcription Complete! Processed ${filesProcessed} files.`);
     console.log(`➡️  Saved to: ${outputPath}`);
 
+    const DIST_DIR = path.dirname(BRAIN_PATH);
+    const MISSING_FILE = path.join(DIST_DIR, 'missing_words.txt');
+    const FALLBACK_FILE = path.join(DIST_DIR, 'fallback_words.txt');
+
     if (globalMissingWords.size > 0) {
+        const sorted = Array.from(globalMissingWords).sort();
         console.log(`\n⚠️  Master Missing Words Tracker (${globalMissingWords.size} unique untranslated words):`);
-        console.log(Array.from(globalMissingWords).sort().join(', '));
+        console.log(sorted.join(', '));
+        fs.writeFileSync(MISSING_FILE, sorted.join('\n') + '\n', 'utf8');
+        console.log(`📄 Written to: ${MISSING_FILE}`);
+    } else if (fs.existsSync(MISSING_FILE)) {
+        fs.unlinkSync(MISSING_FILE); // full coverage — clear the stale tracker
+    }
+
+    if (globalFallbacks.size > 0) {
+        const sorted = Array.from(globalFallbacks).sort();
+        console.log(`\n🔀 Cross-POS Fallback Tracker (${globalFallbacks.size} words served by a different POS category — audit for odd translations):`);
+        console.log(sorted.join(', '));
+        fs.writeFileSync(FALLBACK_FILE, sorted.join('\n') + '\n', 'utf8');
+        console.log(`📄 Written to: ${FALLBACK_FILE}`);
+    } else if (fs.existsSync(FALLBACK_FILE)) {
+        fs.unlinkSync(FALLBACK_FILE);
     }
 }
