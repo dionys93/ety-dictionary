@@ -13,7 +13,7 @@
 | **ERE** | /ɚ/ | Infinitive verb/noun ending | ham*ere*, ans*ere*, <br> stam*ere*, man*ere* | hammer, answer, <br> stammer, manner |
 | **EAR-E** | /ɛr/ | Word-final specific | b*eare*, p*eare*, s*eare* | bear, pear, share |
 | **EIRE** | /ɛr/ | Specific verbs/words | b*eire*, u*eire*, t*eire* | bear, wear, tear |
-| **-EUR** | /ɚ/ | Default agent nouns | tiec̃*eur*, peint*eur* | teacher, painter |
+| **-ER** | /ɚ/ | Default agent nouns | tiec̃*er*, peint*er* | teacher, painter |
 | **Ê** | /ɚ/ | Stressed marked | s*ê*ve, *ê*ne, u*ê*me, pref*ê*r | serve, earn, worm, prefer |
 | **ÈR** | /ɛr/ | Marked stress | *èr*a, b*èr*ie | era, bury |
 | **IAR-E** | /ɪər/ | Historical 'ear' lexical set | d*iare*, f*iare*, y*iare*, *iar*s | dear, fear, year, ears |
