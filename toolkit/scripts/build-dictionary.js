@@ -203,7 +203,13 @@ if (process.argv[1] === __filename) {
 
     const { brain, compiledCount } = buildBrain(dataset);
 
-    fs.writeFileSync(OUTPUT_FILE, JSON.stringify(brain, null, 2));
+    // Sort top-level lemma keys so translationBrain.json diffs cleanly in git.
+    // Inner key order is left as-is: resolveCategory's fallback reads the
+    // first category, so reordering inside entries would change behavior.
+    const sortedBrain = Object.fromEntries(
+        Object.keys(brain).sort().map(k => [k, brain[k]])
+    );
+    fs.writeFileSync(OUTPUT_FILE, JSON.stringify(sortedBrain, null, 2));
     console.log(`✅ Brain compiled to ${OUTPUT_FILE}`);
     console.log(`📊 Loaded ${compiledCount} base dictionary files!`);
     console.log(`🧠 Generated ${Object.keys(brain).length} pure lemma mappings!`);
