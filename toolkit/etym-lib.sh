@@ -3,20 +3,75 @@
 # --- 1. BOOTSTRAP CONFIG ---
 export ETYM_LIB_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "$ETYM_LIB_DIR/config/env.sh"
-echo "etym-lib has been sourced" >&2
+[[ -z "${ETYM_QUIET:-}" ]] && echo "etym-lib has been sourced" >&2
 
-# --- 2. DEPENDENCY CHECK ---
-if ! command -v jq &> /dev/null; then
-    echo "⚠️  Dependency Missing: 'jq' is required for most functions."
-    read -p "Would you like to install it now? (y/n) " -n 1 -r
-    echo
-    if [[ $REPLY =~ ^[Yy]$ ]]; then
-        if   [[ "$OSTYPE" == "linux-gnu"* ]]; then sudo apt update && sudo apt install -y jq
-        elif [[ "$OSTYPE" == "darwin"* ]];    then brew install jq
-        else echo "Unsupported OS. Please install 'jq' manually."
-        fi
+# --- 2. DEPENDENCY CHECK (passive) ---
+# Contract: sourcing this library NEVER prompts, blocks on stdin, or runs
+# sudo. It only detects, warns on stderr, and records what's missing in
+# $ETYM_MISSING_DEPS. Installation is a deliberate act: `etym-install-deps`.
+
+ETYM_MISSING_DEPS=()
+
+# _etym_check_deps
+# Populates ETYM_MISSING_DEPS and prints a warning if anything is absent.
+# Always returns 0 so it can never abort a `set -e` caller at source time.
+_etym_check_deps() {
+    ETYM_MISSING_DEPS=()
+
+    command -v jq >/dev/null 2>&1 || ETYM_MISSING_DEPS+=("jq")
+
+    # etym-parse relies on GNU awk's 3-arg match(); macOS ships BSD awk and
+    # some Linuxes symlink awk -> mawk, both of which lack it.
+    if ! awk 'BEGIN { if (match("x", /(x)/, m)) exit 0; exit 1 }' </dev/null 2>/dev/null; then
+        command -v gawk >/dev/null 2>&1 || ETYM_MISSING_DEPS+=("gawk")
     fi
-fi
+
+    if (( ${#ETYM_MISSING_DEPS[@]} > 0 )); then
+        {
+            echo "⚠️  etym-lib: missing dependencies: ${ETYM_MISSING_DEPS[*]}"
+            echo "   Most functions will not work until they are installed."
+            echo "   Run 'etym-install-deps', or install manually:"
+            echo "     macOS:         brew install ${ETYM_MISSING_DEPS[*]}"
+            echo "     Debian/Ubuntu: sudo apt install ${ETYM_MISSING_DEPS[*]}"
+        } >&2
+    fi
+    return 0
+}
+
+# etym-install-deps
+# The ONLY place interaction and privilege escalation are allowed, because
+# the user invoked it on purpose. Refuses politely in non-interactive shells.
+etym-install-deps() {
+    _etym_check_deps
+    if (( ${#ETYM_MISSING_DEPS[@]} == 0 )); then
+        echo "✅ All dependencies present."
+        return 0
+    fi
+
+    if [[ ! -t 0 ]]; then
+        echo "❌ Non-interactive shell — refusing to install automatically." >&2
+        echo "   Install manually: ${ETYM_MISSING_DEPS[*]}" >&2
+        return 1
+    fi
+
+    local reply
+    read -r -p "Install ${ETYM_MISSING_DEPS[*]} now? (y/n) " reply
+    [[ "$reply" =~ ^[Yy]$ ]] || { echo "Aborted. No changes made."; return 1; }
+
+    if [[ "$OSTYPE" == "darwin"* ]] && command -v brew >/dev/null 2>&1; then
+        brew install "${ETYM_MISSING_DEPS[@]}"
+    elif [[ "$OSTYPE" == "linux-gnu"* ]] && command -v apt-get >/dev/null 2>&1; then
+        sudo apt-get update && sudo apt-get install -y "${ETYM_MISSING_DEPS[@]}"
+    else
+        echo "❌ No supported package manager found. Please install manually." >&2
+        return 1
+    fi
+
+    _etym_check_deps
+    (( ${#ETYM_MISSING_DEPS[@]} == 0 )) && echo "✅ All dependencies installed."
+}
+
+_etym_check_deps
 
 # =============================================================================
 # CORE ENGINE
