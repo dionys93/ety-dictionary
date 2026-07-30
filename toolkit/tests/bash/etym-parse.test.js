@@ -36,10 +36,19 @@ const parse = (files) => execSync(
 // Stanzas the parser is EXPECTED to skip (no recognizable reformed line).
 // Every other fixture must convert 100% of stanzas to records. If you add a
 // fixture with an intentionally unparseable stanza, register it here.
+// (tie.txt was originally mis-registered here from reading a truncated view
+// of the file — its final stanza IS complete and parses. 0 drops.)
 const DOCUMENTED_DROPS = {
     'c/claw.txt': 1, // verb stanza's reformed line lacks its '(v)' POS tag
-    't/tie.txt': 1,  // trailing incomplete stanza (etymology only, no reformed line yet)
 };
+
+// Count stanzas exactly the way the parser segments them (awk paragraph
+// mode, RS=""). A JS regex like /\n\s*\n/ is NOT equivalent: it treats
+// whitespace-only lines as stanza breaks, awk does not — and the dictionary
+// contains trailing-whitespace lines (see etym-lint's WARN class).
+const countStanzas = (file) => parseInt(execSync(
+    `${AWK} 'BEGIN { RS = "" ; n = 0 } { n++ } END { print n }' "${file}"`,
+    { encoding: 'utf-8' }), 10);
 
 describe('etym-parse.awk (Canonical Stanza Parser)', () => {
 
@@ -81,8 +90,7 @@ describe('etym-parse.awk (Canonical Stanza Parser)', () => {
     it('drops exactly the documented unparseable stanzas — no silent losses', () => {
         for (const fixture of fixtures) {
             const rel = path.relative(FIXTURES, fixture).replace(/\\/g, '/');
-            const stanzas = fs.readFileSync(fixture, 'utf-8')
-                .split(/\n\s*\n/).filter(s => s.trim()).length;
+            const stanzas = countStanzas(fixture);
             const records = parse([fixture]).split('\n').filter(l => l.trim()).length;
             const expectedDrops = DOCUMENTED_DROPS[rel] ?? 0;
             expect(stanzas - records,
