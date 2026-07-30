@@ -102,8 +102,14 @@ _etym_resolve_file() {
     # Direct match first
     file=$(find "$dir" -maxdepth 1 -iname "${word}.txt" 2>/dev/null | head -1)
 
-    # Fallback: whole-word content search on reformed lines only
-    [[ -z "$file" ]] && file=$(grep -rlP "(?<![a-zA-Z])${word}(?![a-zA-Z])" "$dir" 2>/dev/null | head -1)
+    # Fallback: whole-word content search. POSIX ERE boundaries replace the
+    # old PCRE lookarounds (-P is GNU-only and unavailable on macOS grep),
+    # and the word is regex-escaped so punctuation can't inject patterns.
+    if [[ -z "$file" ]]; then
+        local esc_word
+        esc_word=$(printf '%s' "$word" | sed 's/[][\.*^$(){}?+|/]/\\&/g')
+        file=$(grep -rlE "(^|[^a-zA-Z])${esc_word}([^a-zA-Z]|$)" "$dir" 2>/dev/null | head -1)
+    fi
 
     if [[ -z "$file" ]]; then
         echo "Error: '$word' not found in $dir" >&2
@@ -158,11 +164,13 @@ etym-cat() {
 
 
 # etym-find <query>
-# Recursive grep across the entire dictionary. Accepts words or lang tags like [OE].
+# Recursive LITERAL search across the entire dictionary. Accepts words or lang
+# tags like [OE]. Literal matching (-F) both prevents regex injection and fixes
+# tag search: as a regex, "[OE]" was a character class matching any O or E.
 etym-find() {
     local query="$1"
     [[ -z "$query" ]] && { echo "Usage: etym-find <query_or_lang_tag>"; return 1; }
-    grep -r "$query" "$DICT_DIR"
+    grep -rF "$query" "$DICT_DIR"
 }
 
 
@@ -829,12 +837,12 @@ etym-lint() {
             local no_urls
             no_urls=$(grep -v "http" "$file")
 
-            if ! echo "$no_urls" | grep -Poq "\([a-z ]{1,5}(, [a-z ]{1,5})*\)"; then
+            if ! echo "$no_urls" | grep -Eq "\([a-z ]{1,5}(, [a-z ]{1,5})*\)"; then
                 issues+=("\e[31m[ERROR]\e[0m Missing or malformed POS tag '()'")
                 ((errors++))
             fi
 
-            if ! echo "$no_urls" | grep -Poq "\[[A-Z]+\]"; then
+            if ! echo "$no_urls" | grep -Eq "\[[A-Z]+\]"; then
                 issues+=("\e[31m[ERROR]\e[0m Missing or malformed language tag '[]'")
                 ((errors++))
             fi
@@ -846,6 +854,58 @@ etym-lint() {
 
             if grep -q "[[:space:]]$" "$file"; then
                 issues+=("\e[33m[WARN]\e[0m  Trailing whitespace on one or more lines.")
+                ((warns++))
+            fi
+
+            # Stanza-level: a conjugation-shaped line (suffix "-x" or two-stem
+            # "xxx(s" tokens) with NO trailing (pos) tag means the stanza is
+            # silently DROPPED by etym-parse (e.g. "to claue -s -d -ing").
+            # Per-file checks can't see this when a sibling stanza is valid.
+            local dropped_stanzas
+            dropped_stanzas=$("$_ETYM_AWK" '
+                BEGIN { RS = ""; FS = "\n" }
+                {
+                    has_reformed = 0; has_conj_shape = 0
+                    for (i = 1; i <= NF; i++) {
+                        line = $i; gsub(/\r/, "", line)
+                        if (line ~ /^http/) continue
+                        if (line ~ /\([a-z]/ && line !~ /\[[A-Z]/) has_reformed = 1
+                        if (line !~ /\[[A-Z]+\]/ && line !~ /\([a-z]/ && \
+                            (line ~ /(^| )-[a-z]+/ || line ~ /\(s( |$)/)) has_conj_shape = 1
+                    }
+                    if (!has_reformed && has_conj_shape) printf "%d ", NR
+                }' "$file")
+            if [[ -n "$dropped_stanzas" ]]; then
+                issues+=("\e[31m[ERROR]\e[0m Stanza(s) ${dropped_stanzas% }: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.")
+                ((errors++))
+            fi
+
+            # Stanza-level: every comma-separated POS tag must exist in
+            # config/parts-of-speech.tsv, or the record is skipped downstream
+            # by buildBrain (catches typos like "mn" or "adj m n").
+            local unknown_tags
+            unknown_tags=$("$_ETYM_AWK" '
+                BEGIN { RS = ""; FS = "\n" }
+                {
+                    for (i = 1; i <= NF; i++) {
+                        line = $i; gsub(/\r/, "", line)
+                        if (line ~ /^http/ || line ~ /\[[A-Z]/) continue
+                        if (match(line, /\([a-z][a-z ,]*\)[ \t]*$/)) {
+                            tag_str = substr(line, RSTART + 1)
+                            sub(/\).*$/, "", tag_str)
+                            n = split(tag_str, tag_arr, /,/)
+                            for (t = 1; t <= n; t++) {
+                                tag = tag_arr[t]
+                                gsub(/^[ \t]+|[ \t]+$/, "", tag)
+                                if (tag != "") print tag
+                            }
+                        }
+                    }
+                }' "$file" | sort -u | while IFS= read -r tag; do
+                    grep -iq "^${tag}[[:space:]]" "$CONFIG_DIR/parts-of-speech.tsv" || printf "'%s' " "$tag"
+                done)
+            if [[ -n "$unknown_tags" ]]; then
+                issues+=("\e[33m[WARN]\e[0m  Unknown POS tag(s): ${unknown_tags% } — not in parts-of-speech.tsv; buildBrain will skip these records.")
                 ((warns++))
             fi
 
