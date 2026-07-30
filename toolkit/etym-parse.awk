@@ -18,17 +18,20 @@
 #     "inglisce_word": string,
 #     "pos":           string,
 #
-#     "conjugations":
-#       VERBS — named object:
-#         {
-#           "present":        string,   # present stem (-er/-ir class only)
-#           "third_singular": string,   # e.g. "-s" or "þondres"
-#           "past":           string,   # e.g. "-d", "craipt", "þondred"
-#           "participle":     string,   # same as past unless distinct
-#           "gerund":         string,   # e.g. "-ing", "þondering"
-#         }
-#       NON-VERBS — raw array:
-#         e.g. ["circuls"] for nouns, ["-ly"] for adjectives
+#     "conjugations" — ALWAYS a named JSON object (never a raw array):
+#       SLOT VERBS (classes 1–5):
+#         { "present", "third_singular", "past", "participle", "gerund" }
+#       EXPLICIT VERBS / MODALS (class 6):
+#         { "explicit": { "<english form>": "<inglisce form>", ... } }
+#         Keys are ZIPPED from the stanza's own [ME] line, which must list the
+#         SAME NUMBER of comma-separated forms as the reformed line, in the
+#         same order (e.g. "will, would, won't, wouldn't [ME]" over
+#         "uill, oûd, uon't, oûdn't (modal, aux)"). No hardcoded English
+#         schemas anywhere — the pairing is visible in the .txt file itself.
+#       NOUNS:
+#         { "plural": "<last token>" [, "variants": [middle tokens]] }
+#       EVERYTHING ELSE:
+#         { "forms": [tokens] }   or   {} when there are none
 #
 #     "etymology":  [{form, lang}],
 #     "sources":    string[]
@@ -40,7 +43,9 @@
 #   3. Full irregular:       root -s <past> <participle> -ing
 #   4. Two-stem -er/-ir:     root present(s past gerund
 #   5. Two-stem full irreg:  root present(s past participle gerund
-#   6. Explicit Arrays:      root <am> <is> <are> <was> ... (no slot logic)
+#   6. Explicit ME-zip:      requires parallel [ME] forms (see above); a class
+#                            6 candidate WITHOUT parallel ME forms emits {} and
+#                            a stderr warning — never a silent positional guess
 # ═════════════════════════════════════════════════════════════════════════════
 
 BEGIN {
@@ -54,9 +59,23 @@ BEGIN {
 # 1. UTILITY FUNCTIONS
 # =============================================================================
 
-function is_verb(pos) {
-    return (pos ~ /^(v|tr v|intr v|aux|auxiliary|modal)$/)
+# Multi-tag aware POS tests: "(aux, v)" and "(modal, aux)" now count as
+# verbish. (The old anchored single-tag test treated them as non-verbs, which
+# the JS layer silently depended on to receive raw arrays for its positional
+# zip — that whole mechanism is gone.)
+function has_tag(pos, re,    n, parts, i, t) {
+    n = split(pos, parts, /,/)
+    for (i = 1; i <= n; i++) {
+        t = parts[i]
+        gsub(/^[ \t]+|[ \t]+$/, "", t)
+        if (t ~ re) return 1
+    }
+    return 0
 }
+
+function is_verbish(pos)  { return has_tag(pos, "^(v|tr v|intr v|aux|auxiliary|modal)$") }
+function can_slot(pos)    { return has_tag(pos, "^(v|tr v|intr v)$") }
+function is_nounish(pos)  { return has_tag(pos, "^(n|noun|m n|f n|masculine noun|feminine noun|neuter noun)$") }
 
 # JSON string escaping, RFC 8259 compliant:
 #   * backslash and double quote are escaped (backslash FIRST — order matters)
@@ -98,6 +117,7 @@ function verb_conj_json(present, third_sing, past, participle, gerund) {
 function parse_stanza_lines(num_fields,    i, line, lang, form) {
     delete ef; delete el; delete src_arr
     n_etym = 0; n_src = 0; reformed = ""
+    me_src = ""; mi_src = ""
 
     for (i = 1; i <= num_fields; i++) {
         line = $i
@@ -122,6 +142,8 @@ function parse_stanza_lines(num_fields,    i, line, lang, form) {
                 n_etym++
                 ef[n_etym] = form
                 el[n_etym] = lang
+                if (lang == "ME" && me_src == "") me_src = form
+                if (lang == "MI" && mi_src == "") mi_src = form
             }
         }
     }
@@ -157,6 +179,20 @@ function tokenize_line(clean_line,    n_raw, raw_tok, i) {
     return n_tok
 }
 
+# Tokenizes the explicit-zip source line (ME, falling back to MI, then the
+# last etymology form — same precedence as resolve_me_word) into me_toks[].
+function tokenize_me_line(num_etym,    src, n_raw, raw_tok, i) {
+    delete me_toks
+    src = (me_src != "") ? me_src : ((mi_src != "") ? mi_src : ef[num_etym])
+    sub(/^[tT][oO][ \t]+/, "", src)
+    n_raw = split(src, raw_tok, /[ \t,]+/)
+    n_me_tok = 0
+    for (i = 1; i <= n_raw; i++) {
+        if (raw_tok[i] != "") me_toks[++n_me_tok] = raw_tok[i]
+    }
+    return n_me_tok
+}
+
 function resolve_me_word(num_etym,    i, me_word, mw) {
     me_word = ""
     for (i = 1; i <= num_etym; i++) { if (el[i] == "ME") { me_word = ef[i]; break } }
@@ -189,14 +225,12 @@ function build_verb_conjugations(num_tokens,    pres, ts, past, part, ger, json,
         return verb_conj_json(pres, ts, past, part, ger)
     }
 
-    # Class 6: Fully explicit array (e.g., "to be", "to do")
+    # Class 6 candidates (>5 tokens) that reach here lack parallel ME forms —
+    # explicit zipping happens in build_conjugations_json BEFORE slotting. A
+    # positional guess would be silent data corruption, so: warn and emit {}.
     if (num_tokens > 5) {
-        json = "["
-        for (i = 2; i <= num_tokens; i++) {
-            if (i > 2) json = json ","
-            json = json "\"" esc(tokens[i]) "\""
-        }
-        return json "]"
+        printf "⚠️  %s: explicit verb stanza (%d forms) has no parallel [ME] forms — conjugations dropped\n", FILENAME, num_tokens - 1 > "/dev/stderr"
+        return "{}"
     }
 
     # Classes 1, 2, 3: Standard and irregular
@@ -213,8 +247,74 @@ function build_verb_conjugations(num_tokens,    pres, ts, past, part, ger, json,
     return verb_conj_json("", ts, past, part, ger)
 }
 
-function build_nonverb_conjugations(num_tokens,    json, first_f, i) {
-    json = "["
+# {"explicit":{"<eng>":"<ing>", ...}} — pairs reformed tokens with the ME
+# line's tokens by position WITHIN the same stanza. Only called when the
+# counts match, so every pair is verifiable by reading two adjacent lines.
+function has_slot_markers(num_tokens,    i) {
+    for (i = 2; i <= num_tokens; i++) {
+        if (tokens[i] ~ /^-/ || tokens[i] ~ /\(s$/) return 1
+    }
+    return 0
+}
+
+function build_explicit_json(num_tokens,    json, i) {
+    json = "{\"explicit\":{"
+    for (i = 2; i <= num_tokens; i++) {
+        if (i > 2) json = json ","
+        json = json "\"" esc(me_toks[i]) "\":\"" esc(tokens[i]) "\""
+    }
+    return json "}}"
+}
+
+# Nouns — TYPE-AWARE (validated against all 4,862 noun stanzas of the real
+# dictionary, which mixes two incompatible positional conventions):
+#   * first trailing token is a SUFFIX ("-s -ly", "-es addie -is"):
+#       it is the plural; everything after it goes to "forms" (derivational
+#       suffixes like -ly/-ness, or secondary variant+plural runs)
+#   * first trailing token is a FULL WORD ("sihor -s", "tributarie -is"):
+#       leading full words are variant singulars; the plural is the first
+#       suffix after them, else the last token
+# Neither "first token is the plural" (old JS) nor "last token is the plural"
+# survives the data alone; this rule satisfies every observed pattern.
+function build_noun_conjugations(num_tokens,    json, i, plural_idx, sep) {
+    if (num_tokens < 2) return "{}"
+
+    if (tokens[2] ~ /^-/) {
+        # Suffix-first: plural, then derivational/secondary forms
+        json = "{\"plural\":\"" esc(tokens[2]) "\""
+        if (num_tokens > 2) {
+            json = json ",\"forms\":["
+            for (i = 3; i <= num_tokens; i++) {
+                if (i > 3) json = json ","
+                json = json "\"" esc(tokens[i]) "\""
+            }
+            json = json "]"
+        }
+        return json "}"
+    }
+
+    # Word-first: variants, then plural
+    plural_idx = num_tokens
+    for (i = 3; i <= num_tokens; i++) {
+        if (tokens[i] ~ /^-/) { plural_idx = i; break }
+    }
+    json = "{\"plural\":\"" esc(tokens[plural_idx]) "\""
+    if (plural_idx > 2) {
+        json = json ",\"variants\":["
+        sep = 0
+        for (i = 2; i < plural_idx; i++) {
+            if (sep) json = json ","
+            json = json "\"" esc(tokens[i]) "\""
+            sep = 1
+        }
+        json = json "]"
+    }
+    return json "}"
+}
+
+function build_forms_json(num_tokens,    json, first_f, i) {
+    if (num_tokens < 2) return "{}"
+    json = "{\"forms\":["
     first_f = 1
     for (i = 2; i <= num_tokens; i++) {
         if (tokens[i] == "") continue
@@ -222,12 +322,25 @@ function build_nonverb_conjugations(num_tokens,    json, first_f, i) {
         json = json "\"" esc(tokens[i]) "\""
         first_f = 0
     }
-    return json "]"
+    return json "]}"
 }
 
 function build_conjugations_json(num_tokens, pos) {
-    if (is_verb(pos)) return build_verb_conjugations(num_tokens)
-    return build_nonverb_conjugations(num_tokens)
+    if (is_verbish(pos)) {
+        # Explicit ME-zip whenever the stanza provides parallel forms.
+        # Guards: (a) a GENUINE [ME] line must exist — never zip against MI or
+        # older ancestors, whose forms are not what the transcriber looks up;
+        # (b) suffix ("-d") or two-stem ("xxx(s") tokens mean this is a slot
+        # stanza that merely coincides in count — never zip those.
+        if (me_src != "" && n_me_tok == num_tokens && num_tokens > 1 && !has_slot_markers(num_tokens)) return build_explicit_json(num_tokens)
+        # Plain verbs without parallel forms use positional slot classes 1-5
+        if (can_slot(pos)) return build_verb_conjugations(num_tokens)
+        # Modal/aux-only stanzas cannot be slotted; without parallel ME forms
+        # there is nothing safe to emit
+        return "{}"
+    }
+    if (is_nounish(pos)) return build_noun_conjugations(num_tokens)
+    return build_forms_json(num_tokens)
 }
 
 function build_etymology_json(num_etym,    json, i) {
@@ -265,6 +378,7 @@ function build_sources_json(num_src,    json, i) {
     inglisce_word = tokens[1]
     gsub(/[,.]$/, "", inglisce_word)
     me_word = resolve_me_word(n_etym)
+    n_me_tok = tokenize_me_line(n_etym)
 
     # --- Step C: Build JSON payload ---
     conj_json = build_conjugations_json(num_tokens, pos_tag)
