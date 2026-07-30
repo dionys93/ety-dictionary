@@ -183,17 +183,9 @@ etym-info() {
             (.inglisce_word | ascii_downcase) == ($word | ascii_downcase)
         ) |
         (.etymology | map(select(.lang == "ME" or .lang == "MI")) | last // .[-1]) as $origin |
-        (
-            if (.conjugations | type) == "object" then
-                if .conjugations.present != "" then
-                    [.conjugations.present, .conjugations.third_singular, .conjugations.past, .conjugations.gerund]
-                else
-                    [.conjugations.third_singular, .conjugations.past, .conjugations.gerund]
-                end | map(select(. and . != "")) | join(" ")
-            else
-                (.conjugations | join(" "))
-            end
-        ) as $forms |
+        # conjugations is always a named object now (slot verbs, {explicit},
+        # {plural[,variants]}, {forms}); flatten every string leaf for display
+        (.conjugations | [.. | strings] | map(select(. != "")) | join(" ")) as $forms |
         [
             .inglisce_word,
             .pos,
@@ -517,7 +509,7 @@ etym-flatten() {
         # CSV: header + one row per stanza
         echo '"me_word","inglisce_word","pos","conjugations"' > "$out_file"
         _etym_stream "$target_path" | \
-            jq -r '[.me_word, .inglisce_word, .pos, (.conjugations | join(" "))] | @csv' \
+            jq -r '[.me_word, .inglisce_word, .pos, (.conjugations | [.. | strings] | join(" "))] | @csv' \
             >> "$out_file"
     fi
 
@@ -893,11 +885,11 @@ etym-lint() {
                         else "nonstandard"
                         end
                 ) + "\t" + $file + "\t" + .inglisce_word + "\t" + (
-                    if $c.present != "" then
+                    if ($c.present // "") != "" then
                         [$c.present, $c.third_singular, $c.past, $c.participle, $c.gerund]
                     else
                         [$c.third_singular, $c.past, $c.gerund]
-                    end | map(select(. != "")) | join(" ")
+                    end | map(select(. != null and . != "")) | join(" ")
                 )
             '
         done
