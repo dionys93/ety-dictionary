@@ -5,6 +5,14 @@ export ETYM_LIB_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 source "$ETYM_LIB_DIR/config/env.sh"
 [[ -z "${ETYM_QUIET:-}" ]] && echo "etym-lib has been sourced" >&2
 
+# The canonical stanza parser lives in its own file so it can be tested,
+# edited, and linted directly. etym-parse.awk is strictly POSIX awk.
+export ETYM_PARSE_AWK="$ETYM_LIB_DIR/etym-parse.awk"
+
+# Which awk to run the parser with. Overridable via $ETYM_AWK; the dependency
+# check below may upgrade this to gawk if the system awk is too limited.
+_ETYM_AWK="${ETYM_AWK:-awk}"
+
 # --- 2. DEPENDENCY CHECK (passive) ---
 # Contract: sourcing this library NEVER prompts, blocks on stdin, or runs
 # sudo. It only detects, warns on stderr, and records what's missing in
@@ -20,10 +28,15 @@ _etym_check_deps() {
 
     command -v jq >/dev/null 2>&1 || ETYM_MISSING_DEPS+=("jq")
 
-    # etym-parse relies on GNU awk's 3-arg match(); macOS ships BSD awk and
-    # some Linuxes symlink awk -> mawk, both of which lack it.
-    if ! awk 'BEGIN { if (match("x", /(x)/, m)) exit 0; exit 1 }' </dev/null 2>/dev/null; then
-        command -v gawk >/dev/null 2>&1 || ETYM_MISSING_DEPS+=("gawk")
+    # etym-parse.awk is POSIX awk, so gawk is no longer required — but the
+    # parser does use POSIX character classes ([[:cntrl:]]), which very old
+    # awks lack. Probe the selected binary; prefer gawk as a fallback.
+    if ! "$_ETYM_AWK" 'BEGIN { if ("x" ~ /[[:alpha:]]/) exit 0; exit 1 }' </dev/null 2>/dev/null; then
+        if command -v gawk >/dev/null 2>&1; then
+            _ETYM_AWK="gawk"
+        else
+            ETYM_MISSING_DEPS+=("gawk")
+        fi
     fi
 
     if (( ${#ETYM_MISSING_DEPS[@]} > 0 )); then
@@ -102,11 +115,13 @@ _etym_resolve_file() {
 # _etym_stream [path]
 # Streams all JSONL from every .txt file under a given path.
 # Defaults to $DICT_DIR. The output is suitable for piping into jq.
+# Runs the parser as a SINGLE awk process over all files (paragraph mode
+# never merges records across file boundaries), instead of forking one
+# process per file.
 _etym_stream() {
     local path="${1:-$DICT_DIR}"
-    find "$path" -type f -name "*.txt" | while IFS= read -r f; do
-        etym-parse "$f"
-    done
+    [[ ! -f "$ETYM_PARSE_AWK" ]] && { echo "Error: parser not found: $ETYM_PARSE_AWK" >&2; return 1; }
+    find "$path" -type f -name "*.txt" -exec "$_ETYM_AWK" -f "$ETYM_PARSE_AWK" {} +
 }
 
 # etym-parse <file.txt>
@@ -114,239 +129,17 @@ _etym_stream() {
 # THE CANONICAL STANZA PARSER. Single source of truth for reading .txt entries.
 # Emits one JSONL record per stanza to stdout.
 #
-# Output schema:
-#   {
-#     "me_word":       string,
-#     "inglisce_word": string,
-#     "pos":           string,
-#
-#     "conjugations":
-#       VERBS — named object:
-#         {
-#           "present":        string,   # present stem (-er/-ir class only, e.g. "þondre")
-#           "third_singular": string,   # e.g. "-s" or "þondres"
-#           "past":           string,   # e.g. "-d", "craipt", "þondred"
-#           "participle":     string,   # same as past unless distinct
-#           "gerund":         string,   # e.g. "-ing", "þondering", "copying"
-#         }
-#       NON-VERBS — raw array:
-#         e.g. ["circuls"] for nouns, ["-ly"] for adjectives
-#
-#     "etymology":  [{form, lang}],
-#     "sources":    string[]
-#   }
-#
-# Conjugation classes handled:
-#   1. Standard suffix:      root -s -d -ing
-#   2. Irregular past:       root -s <past> -ing           (past = participle)
-#   3. Full irregular:       root -s <past> <participle> -ing
-#   4. Two-stem -er/-ir:     root present(s past gerund
-#   5. Two-stem full irreg:  root present(s past participle gerund
-#   6. Explicit Arrays:      root <am> <is> <are> <was> ... (no slot logic)
+# The implementation lives in etym-parse.awk (same directory as this library)
+# so it can be edited with syntax highlighting, linted, and golden-tested
+# directly: see tests/test-etym-parse.sh. The output schema and the six
+# conjugation classes are documented in that file's header.
 # ─────────────────────────────────────────────────────────────────────────────
 etym-parse() {
     local file="$1"
     [[ ! -f "$file" ]] && { echo "Error: file not found: $file" >&2; return 1; }
+    [[ ! -f "$ETYM_PARSE_AWK" ]] && { echo "Error: parser not found: $ETYM_PARSE_AWK" >&2; return 1; }
 
-    awk '
-    BEGIN { RS = ""; FS = "\n" }
-
-    # =========================================================================
-    # 1. UTILITY FUNCTIONS
-    # =========================================================================
-
-    function is_verb(pos) {
-        return (pos ~ /^(v|tr v|intr v|aux|auxiliary|modal)$/)
-    }
-
-    function esc(s) {
-        gsub(/"/, "\\\"", s)
-        return s
-    }
-
-    function verb_conj_json(present, third_sing, past, participle, gerund) {
-        return "{" \
-            "\"present\":"        "\"" esc(present)     "\"," \
-            "\"third_singular\":" "\"" esc(third_sing)  "\"," \
-            "\"past\":"           "\"" esc(past)        "\"," \
-            "\"participle\":"     "\"" esc(participle)  "\"," \
-            "\"gerund\":"         "\"" esc(gerund)      "\"" \
-        "}"
-    }
-
-    # =========================================================================
-    # 2. EXTRACTION & CLEANING FUNCTIONS
-    # =========================================================================
-
-    # Reads all lines in the stanza and populates global arrays (etymology, sources)
-    function parse_stanza_lines(num_fields,    i, line, lang, form) {
-        delete ef; delete el; delete src_arr
-        n_etym = 0; n_src = 0; reformed = ""
-
-        for (i = 1; i <= num_fields; i++) {
-            line = $i
-            gsub(/\r/, "", line)
-            if (line == "") continue
-
-            if (line ~ /^http/) {
-                src_arr[++n_src] = line
-            } else if (line ~ /\([a-z]/ && line !~ /\[[A-Z]/) {
-                reformed = line
-            } else {
-                lang = ""
-                if (match(line, /\[([A-Z]+)\]/, m)) lang = m[1]
-                form = line
-                gsub(/\[[A-Z]+\]/, "", form)
-                gsub(/^[ \t]+|[ \t]+$/, "", form)
-                if (form != "") {
-                    n_etym++
-                    ef[n_etym] = form
-                    el[n_etym] = lang
-                }
-            }
-        }
-    }
-
-    function extract_pos(line,    pm, pos) {
-        pos = ""
-        if (match(line, /\(([a-z][a-z ,]*)\)[ \t]*$/, pm)) pos = pm[1]
-        return pos
-    }
-
-    function clean_reformed_line(line) {
-        gsub(/\([a-z][a-z ,]*\)[ \t]*$/, "", line) # Remove trailing (pos)
-        gsub(/^[ \t]+|[ \t]+$/, "", line)          # Trim
-        sub(/^[tT][oO][ \t]+/, "", line)           # Strip infinitive "to "
-        return line
-    }
-
-    function tokenize_line(clean_line,    n_raw, raw_tok, i) {
-        delete tokens
-        n_raw = split(clean_line, raw_tok, /[ \t,]+/)
-        n_tok = 0
-        for (i = 1; i <= n_raw; i++) {
-            if (raw_tok[i] != "") tokens[++n_tok] = raw_tok[i]
-        }
-        return n_tok
-    }
-
-    function resolve_me_word(num_etym,    i, me_word, mw) {
-        me_word = ""
-        for (i = 1; i <= num_etym; i++) { if (el[i] == "ME") { me_word = ef[i]; break } }
-        if (me_word == "") {
-            for (i = 1; i <= num_etym; i++) { if (el[i] == "MI") { me_word = ef[i]; break } }
-        }
-        if (me_word == "") me_word = ef[num_etym]
-
-        sub(/^[tT][oO][ \t]+/, "", me_word)
-        split(me_word, mw, /[ \t,]+/)
-        return mw[1]
-    }
-
-    # =========================================================================
-    # 3. JSON BUILDER FUNCTIONS
-    # =========================================================================
-
-    function build_verb_conjugations(num_tokens,    pres, ts, past, part, ger, json, i) {
-        # Class 4 & 5: Two-stem -er/-ir
-        if (num_tokens >= 2 && tokens[2] ~ /\(s$/) {
-            pres = substr(tokens[2], 1, length(tokens[2]) - 2)
-            ts   = pres "s"
-            if (num_tokens >= 5) {
-                past = tokens[3]; part = tokens[4]; ger = tokens[5]
-            } else {
-                past = (num_tokens >= 3) ? tokens[3] : ""
-                part = past
-                ger  = (num_tokens >= 4) ? tokens[4] : ""
-            }
-            return verb_conj_json(pres, ts, past, part, ger)
-        } 
-        
-        # Class 6: Fully explicit array (e.g., "to be", "to do")
-        if (num_tokens > 5) {
-            json = "["
-            for (i = 2; i <= num_tokens; i++) {
-                if (i > 2) json = json ","
-                json = json "\"" esc(tokens[i]) "\""
-            }
-            return json "]"
-        } 
-        
-        # Classes 1, 2, 3: Standard and irregular
-        ts   = (num_tokens >= 2) ? tokens[2] : "-s"
-        past = ""; part = ""; ger = ""
-
-        if (num_tokens == 3) {
-            ger = tokens[3]
-        } else if (num_tokens == 4) {
-            past = tokens[3]; part = tokens[3]; ger = tokens[4]
-        } else if (num_tokens == 5) {
-            past = tokens[3]; part = tokens[4]; ger = tokens[5]
-        }
-        return verb_conj_json("", ts, past, part, ger)
-    }
-
-    function build_nonverb_conjugations(num_tokens,    json, first_f, i) {
-        json = "["
-        first_f = 1
-        for (i = 2; i <= num_tokens; i++) {
-            if (tokens[i] == "") continue
-            if (!first_f) json = json ","
-            json = json "\"" esc(tokens[i]) "\""
-            first_f = 0
-        }
-        return json "]"
-    }
-
-    function build_conjugations_json(num_tokens, pos) {
-        if (is_verb(pos)) return build_verb_conjugations(num_tokens)
-        return build_nonverb_conjugations(num_tokens)
-    }
-
-    function build_etymology_json(num_etym,    json, i) {
-        json = "["
-        for (i = 1; i <= num_etym; i++) {
-            if (i > 1) json = json ","
-            json = json "{\"form\":\"" esc(ef[i]) "\",\"lang\":\"" esc(el[i]) "\"}"
-        }
-        return json "]"
-    }
-
-    function build_sources_json(num_src,    json, i) {
-        json = "["
-        for (i = 1; i <= num_src; i++) {
-            if (i > 1) json = json ","
-            json = json "\"" src_arr[i] "\""
-        }
-        return json "]"
-    }
-
-    # =========================================================================
-    # 4. THE MAIN PIPELINE (A -> B -> C)
-    # =========================================================================
-
-    {
-        # --- Step A: Parse raw lines ---
-        parse_stanza_lines(NF)
-        if (reformed == "") next
-
-        # --- Step B: Clean & Extract ---
-        pos_tag    = extract_pos(reformed)
-        clean_line = clean_reformed_line(reformed)
-        num_tokens = tokenize_line(clean_line)
-        
-        inglisce_word = tokens[1]
-        gsub(/[,.]$/, "", inglisce_word)
-        me_word = resolve_me_word(n_etym)
-
-        # --- Step C: Build JSON payload ---
-        conj_json = build_conjugations_json(num_tokens, pos_tag)
-        etym_json = build_etymology_json(n_etym)
-        src_json  = build_sources_json(n_src)
-
-        # --- Step D: Emit ---
-        printf "{\"me_word\":\"%s\",\"inglisce_word\":\"%s\",\"pos\":\"%s\",\"conjugations\":%s,\"etymology\":%s,\"sources\":%s}\n", esc(me_word), esc(inglisce_word), esc(pos_tag), conj_json, etym_json, src_json
-    }' "$file"
+    "$_ETYM_AWK" -f "$ETYM_PARSE_AWK" "$file"
 }
 
 # =============================================================================
@@ -1161,154 +954,3 @@ etym-trim() {
     echo "✅ Trailing whitespace removed."
     echo "================================================================="
 }
-
-# # etym-levenshtein [word]
-# # Calculates the linguistic mutation score (Levenshtein distance) by dynamically
-# # using the first language tag found in the word's comparison file as the baseline root.
-# etym-levenshtein() {
-#     local target_word="$1"
-
-#     if [[ -z "$target_word" ]]; then
-#         echo "Usage: etym-levenshtein <word>"
-#         echo "Example: etym-levenshtein create"
-#         return 1
-#     fi
-
-#     # 1. Locate the file dynamically using the environment path
-#     local first_letter="$(echo "${target_word:0:1}" | tr '[:upper:]' '[:lower:]')"
-#     local target_word_lower="$(echo "$target_word" | tr '[:upper:]' '[:lower:]')"
-#     local file_path="$COMPARISONS_DIR/$first_letter/$target_word_lower.txt"
-
-#     if [[ ! -f "$file_path" ]]; then
-#         echo "❌ Error: Could not find comparison file for '$target_word'."
-#         echo "   Searched at: $file_path"
-#         return 1
-#     fi
-
-#     local lang_tsv="$CONFIG_DIR/languages.tsv"
-#     if [[ ! -f "$lang_tsv" ]]; then
-#         echo "❌ Error: languages.tsv not found at $lang_tsv"
-#         return 1
-#     fi
-
-#     # 2. Execute the targeted state-machine
-#     awk -v lang_tsv="$lang_tsv" -v target_word="$target_word_lower" '
-#     # ---------------------------------------------------------
-#     # INITIALIZATION: Load languages.tsv into memory
-#     # ---------------------------------------------------------
-#     BEGIN {
-#         baseline_lang = ""
-#         while ((getline < lang_tsv) > 0) {
-#             sub(/^\[[^]]+\][ \t]*/, "", $0)
-#             if ($1 ~ /^[A-Z]+$/) {
-#                 code = $1
-#                 name = $0
-#                 sub("^" code "[ \t]+", "", name)
-#                 lang_names[code] = name
-#             }
-#         }
-#         close(lang_tsv)
-#     }
-
-#     # ---------------------------------------------------------
-#     # PURE MATH: Levenshtein Distance Matrix
-#     # ---------------------------------------------------------
-#     function levenshtein(s1, s2,    l1, l2, i, j, cost, d, min1, min2, min3) {
-#         l1 = length(s1); l2 = length(s2)
-#         if (l1 == 0) return l2
-#         if (l2 == 0) return l1
-
-#         for (i = 0; i <= l1; i++) d[i, 0] = i
-#         for (j = 0; j <= l2; j++) d[0, j] = j
-
-#         for (i = 1; i <= l1; i++) {
-#             for (j = 1; j <= l2; j++) {
-#                 cost = (substr(s1, i, 1) == substr(s2, j, 1)) ? 0 : 1
-#                 min1 = d[i-1, j] + 1
-#                 min2 = d[i, j-1] + 1
-#                 min3 = d[i-1, j-1] + cost
-#                 d[i, j] = (min1 < min2 ? min1 : min2)
-#                 d[i, j] = (d[i, j] < min3 ? d[i, j] : min3)
-#             }
-#         }
-#         return d[l1, l2]
-#     }
-
-#     # ---------------------------------------------------------
-#     # STATE MACHINE: Parser
-#     # ---------------------------------------------------------
-
-#     /^[[:space:]]*$/ { next }
-
-#     /\[[A-Z]+\]/ {
-#         match($0, /\[[A-Z]+\]/)
-#         current_lang = substr($0, RSTART+1, RLENGTH-2)
-#         line_idx = 0
-        
-#         # DYNAMIC BASELINE
-#         if (baseline_lang == "") {
-#             baseline_lang = current_lang
-#         }
-#         next
-#     }
-
-#     current_lang != "" {
-#         line_idx++
-        
-#         # >>> THE COMMA BYPASS <<<
-#         # Strip everything from the first comma to the end of the line.
-#         # This isolates the primary definition/infinitive so $NF works perfectly.
-#         sub(/,.*/, "", $0)
-
-#         root = tolower($NF)
-#         gsub(/[.,;:!?()]/, "", root)
-
-#         if (current_lang == baseline_lang) {
-#             base_words[line_idx] = root
-#             if (line_idx > max_lines) max_lines = line_idx
-#         } else {
-#             targets[current_lang, line_idx] = root
-#         }
-        
-#         langs[current_lang] = 1
-#     }
-
-#     # ---------------------------------------------------------
-#     # EXECUTION: Print targeted results
-#     # ---------------------------------------------------------
-#     END {
-#         if (baseline_lang == "") {
-#             print "❌ Error: No language baseline found in " target_word ".txt"
-#             exit 1
-#         }
-
-#         print "=========================================================="
-#         print " 🧬 LINGUISTIC MUTATION ANALYZER"
-#         print " 🏛️  FAMILY: " target_word
-#         print "=========================================================="
-
-#         for (i = 1; i <= max_lines; i++) {
-#             l_base = base_words[i]
-#             if (l_base == "") continue
-
-#             # Dynamically resolve the baseline name
-#             base_name = (lang_names[baseline_lang] != "") ? lang_names[baseline_lang] : baseline_lang
-#             printf " 🔵 %s ROOT : %s\n", toupper(base_name), l_base
-#             printf "----------------------------------------------------------\n"
-
-#             for (lang in langs) {
-#                 if (lang == baseline_lang) continue
-                
-#                 t_word = targets[lang, i]
-#                 if (t_word != "") {
-#                     score = levenshtein(l_base, t_word)
-#                     lname = (lang_names[lang] != "") ? lang_names[lang] : lang
-                    
-#                     printf "  [%-3s] %-16s %-15s (Drift: %d)\n", lang, lname, t_word, score
-#                 }
-#             }
-#             print ""
-#         }
-#     }
-#     ' "$file_path"
-# }
