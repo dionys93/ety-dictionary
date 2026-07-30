@@ -10,20 +10,19 @@ import { fileURLToPath } from 'node:url';
 
 /**
  * ============================================================================
- * IRREGULAR VERB REGISTRY (The "No Hoops" Schema)
+ * SCHEMA CONTRACT (see etym-parse.awk header)
  * ============================================================================
+ * The parser is the single schema authority. `conjugations` is ALWAYS a
+ * named object:
+ *   slot verbs:      { present, third_singular, past, participle, gerund }
+ *   explicit verbs:  { explicit: { "<english form>": "<inglisce form>" } }
+ *                    — keys zipped from the stanza's own [ME] line, so no
+ *                    English form lists live in this file anymore
+ *   nouns:           { plural [, variants] }
+ *   everything else: { forms: [...] }  or  {}
+ * A raw ARRAY reaching this compiler means a stale master_dataset.jsonl —
+ * it is rejected loudly, never positionally guessed at.
  */
-
-const CLASS_6_SCHEMAS = {
-    'be': ['am', 'is', 'are', 'was', 'were', 'been', 'being', "isn't", "aren't", "wasn't", "weren't"],
-    'do_aux': ['does', 'did', "don't", "doesn't", "didn't"],
-    'do_verb': ['does', 'did', 'done', 'doing', "don't", "doesn't", "didn't"],
-    'have': ['has', 'had', 'having', "haven't", "hasn't", "hadn't"]
-};
-
-const MODAL_PAST_MAP = { 
-    'can': 'could', 'will': 'would', 'shall': 'should', 'may': 'might' 
-};
 
 /**
  * ============================================================================
@@ -74,54 +73,35 @@ const deepNormalize = (obj) => {
 };
 
 /**
- * THE ADAPTER: Dynamically zips the Bash array to the defined schema.
+ * EXPLICIT EXPANSION: every {explicit} pair becomes its own brain entry.
+ * Each English form maps under 'Verb' (so the transcriber's AUX/VERB routing
+ * always hits) plus the row's own POS category. There is nothing to zip,
+ * order, or guess: the parser already paired English↔Inglisce from the
+ * stanza's own lines.
+ *
+ * Note: the 'Copula' category is retired — it was only ever produced for
+ * 'be', and the transcriber's AUX routing checks entry.Verb first anyway, so
+ * it never actually resolved. resolveCategory keeps its Copula branch for
+ * backward tolerance of old brains.
  */
-const normalizeConjugations = (baseEng, rawConj, posCategories) => {
-    if (!Array.isArray(rawConj)) return rawConj;
-
-    const zip = (schema) => schema.reduce((acc, key, i) => ({ ...acc, [key]: rawConj[i] }), {});
-
-    if (baseEng === 'be') return { explicit: zip(CLASS_6_SCHEMAS.be) };
-    if (baseEng === 'do') return { explicit: zip(rawConj.length < 7 ? CLASS_6_SCHEMAS.do_aux : CLASS_6_SCHEMAS.do_verb) };
-    if (baseEng === 'have') return { explicit: zip(CLASS_6_SCHEMAS.have) };
-
-    if (posCategories.includes('Modal')) return { past: rawConj[0], negated_present: rawConj[1], negated_past: rawConj[2] };
-    if (posCategories.includes('Noun')) return { plural: rawConj[0] };
-
-    return { forms: rawConj }; 
-};
-
-/**
- * THE IRREGULAR PIPELINE: Handles all Modals and Explicit Overrides in one place.
- */
-const applyIrregularRules = (baseEng, baseIng, pos, conj) => {
+const applyExplicitRules = (baseEng, baseIng, pos, conj) => {
     const rules = [];
 
-    // 1. Process Class 6 Overrides (be, do, have)
     if (conj.explicit) {
         Object.entries(conj.explicit).forEach(([engForm, ingForm]) => {
-            if (!ingForm) return; // Skip if the Bash array didn't have this item
-            
-            const primaryPos = baseEng === 'be' ? 'Copula' : 'Verb';
-            const secondaryPos = baseEng === 'be' ? 'Verb' : 'Auxiliary';
+            if (!engForm || !ingForm) return;
 
-            rules.push({ eng: engForm, ing: ingForm, pos: primaryPos, conj: null });
-            rules.push({ eng: engForm, ing: ingForm, pos: secondaryPos, conj: null });
+            rules.push({ eng: engForm, ing: ingForm, pos: 'Verb', conj: null });
+            if (pos !== 'Verb') rules.push({ eng: engForm, ing: ingForm, pos, conj: null });
         });
     }
 
-    // 2. Process Modals
-    if (pos === 'Modal') {
-        const pastEng = MODAL_PAST_MAP[baseEng];
-        const pastIng = conj.past && !conj.past.startsWith('-') ? conj.past : null;
-        const negPresent = conj.negated_present || (conj.third_singular && !conj.third_singular.startsWith('-') ? conj.third_singular : baseIng);
-
-        if (pastEng && pastIng) {
-            rules.push({ eng: pastEng, ing: pastIng, pos: 'Modal', conj: null });
-            rules.push({ eng: pastEng, ing: pastIng, pos: 'Auxiliary', conj: null });
-        }
-
-        if (baseEng === 'can') rules.push({ eng: 'cannot', ing: negPresent, pos: 'Modal', conj: null });
+    // 'cannot' is the one fused negation English writes as a single word; it
+    // maps to the negated present ("can't" pair) when the data provides one.
+    if (pos === 'Modal' && baseEng === 'can') {
+        const ing = (conj.explicit && conj.explicit["can't"]) || baseIng;
+        rules.push({ eng: 'cannot', ing, pos: 'Modal', conj: null });
+        rules.push({ eng: 'cannot', ing, pos: 'Verb', conj: null });
     }
 
     return rules;
@@ -144,10 +124,13 @@ const validateAndClean = (row) => {
     const posCategories = (row.pos || '').split(',').map(p => posMap[p.toLowerCase().trim()]).filter(Boolean);
     if (posCategories.length === 0) return Failure('No valid POS categories found');
 
-    const rawConjugations = deepNormalize(row.conjugations || {});
-    const cleanConjugations = normalizeConjugations(baseEng, rawConjugations, posCategories);
+    const rawConjugations = row.conjugations || {};
+    if (Array.isArray(rawConjugations)) {
+        return Failure('legacy array conjugations — stale master_dataset.jsonl; re-run etym-build-dataset with the current parser');
+    }
+    const conjugations = deepNormalize(rawConjugations);
 
-    return Success({ baseEng, baseIng, posCategories, conjugations: cleanConjugations, mappings: [] });
+    return Success({ baseEng, baseIng, posCategories, conjugations, mappings: [] });
 };
 
 const generateMappings = (result) => {
@@ -160,8 +143,8 @@ const generateMappings = (result) => {
         // Map the root
         mappings.push({ eng: baseEng, ing: baseIng, pos: posCategory, conj: conjugations });
         
-        // Pass it through the unified irregular handler
-        mappings.push(...applyIrregularRules(baseEng, baseIng, posCategory, conjugations));
+        // Expand every explicit English↔Inglisce pair into its own entry
+        mappings.push(...applyExplicitRules(baseEng, baseIng, posCategory, conjugations));
     });
 
     return Success({ ...result.value, mappings });
