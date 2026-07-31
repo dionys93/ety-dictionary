@@ -16,7 +16,9 @@ The two senses are aspects of a single act. To *censere* is to declare what a th
 
 ## 2. The Roman magistracy
 
-The "censorship" was established, by tradition, in 443 BC. Two censors were elected at approximately five-year intervals and held office for eighteen months, a limit imposed by the *lex Aemilia* of 434. Their competence was threefold: the census proper, comprising the registration of citizens, the valuation of property, and the assignment of men to tribes and centuries; the *lectio senatus*, the periodic revision of the senatorial roll; and the *regimen morum*, the supervision of conduct.
+The office of censor was established, by tradition, in 443 BC. Two censors were elected at approximately five-year intervals and held office for eighteen months, a limit imposed by the *lex Aemilia* of 434. Their competence was threefold: the census proper, comprising the registration of citizens, the valuation of property, and the assignment of men to tribes and centuries; the *lectio senatus*, the periodic revision of the senatorial roll; and the *regimen morum*, the supervision of conduct.
+
+The magistracy is conventionally called *the censorship* in English, and the term is correct: the suffix denotes tenure of office, as in *consulship*, *praetorship*, and *kingship*, and one holds the censorship as one holds the consulship. That this collides with the modern sense of suppressing publications is an accident of the history traced below, in which the same word came to name both an office and a practice. The two senses should be kept apart, and the office is meant throughout this section.
 
 The instrument of the third was the *nota censoria*, a mark entered beside a citizen's name in the register and accompanied by a brief *subscriptio* stating its cause. The recorded grounds are various — cowardice, perjury, cruelty toward slaves, extravagance, neglect of one's land, mismanagement of a household, celibacy. The sanction was not pecuniary but positional: removal from the Senate, forfeiture of the public horse, transfer to a lower tribe. The severity of Cato the Elder's censorship of 184 BC was such that *Censorius* attached permanently to his name.
 
@@ -161,7 +163,7 @@ Latin possessed a single adjective, *cēnsōrius*, and Spanish, Italian, and Por
 
 In assigning `censorieus` to the *cēnsor* stem, the system subordinates semantics to etymology. The word denotes a disposition to blame and belongs semantically with `cenşure`, but its ancestry lies with *cēnsor*, and received English makes the same compromise. Nothing is forfeited that English had not already forfeited, and the visible stem yields greater return in a lexicon that records descent.
 
-The two adjectives bear identical stress, but since `ieu` is stress-attracting in Inglisce, only `censórial` requires the acute; the two forms are marked by different mechanisms to the same effect.
+The two adjectives bear identical stress, yet only `censórial` carries an accent. The acute marks stress and vowel quality together, and it is the substitute for a device the system uses wherever a word ends in a silent `-e`, which fixes the quality of the preceding vowel and draws the accent onto it. `Censórial` has no final `-e` to do that work, so the accent takes it over. `Censorieus` needs neither, since `ieu` is itself stress-attracting. Three mechanisms, one office: the silent `-e`, the acute, and the stress-attracting digraph all place the accent and settle the vowel, and a word calls on whichever of them its shape makes available.
 
 ---
 
