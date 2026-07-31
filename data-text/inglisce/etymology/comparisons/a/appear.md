@@ -70,23 +70,23 @@ The English row is the only one whose three forms do not share a stem vowel.
 
 ## 4. One Latin vowel, two English ones
 
-English *appear* is /əˈpɪə/. English *apparent* is /əˈpærənt/. The vowel in question is the same Latin vowel — the long *ā* of *appār-* — in both words. What separated them is where the stress fell in the particular Latin form that was borrowed.
+English *appear* is /əˈpɪr/. English *apparent* is /əˈpɛrənt/. The vowel in question is the same Latin vowel — the long *ā* of *appār-* — in both words. What separated them is where the stress fell in the particular Latin form that was borrowed.
 
-In *appāret* the accent lands on that syllable: *ap-**pā**-ret*. A stressed long *ā* in an open syllable became /e/ in Old French, /ɛː/ in Middle English, and then /iː/ through the Great Vowel Shift, breaking to /ɪə/ before *r*. That is the vowel of *appear*.
+In *appāret* the accent lands on that syllable: *ap-**pā**-ret*. A stressed long *ā* in an open syllable became /e/ in Old French, /ɛː/ in Middle English, and then /i/ through the Great Vowel Shift, laxing to /ɪ/ before the *r*. That is the vowel of *appear*.
 
 In *appārentem* the accent moves forward to the following syllable: *ap-pa-**ren**-tem*. Pretonic, the vowel never lengthened in the vernacular and never entered the shift. That is the vowel of *apparent*.
 
 So the two English words differ in their stressed vowel for no reason internal to English at all. They differ because one was borrowed from a form in which the syllable was accented and the other from a form in which it was not.
 
-*Appearance* complicates the picture in a way that repays attention. Its Latin source *appārentia* has the accent on *-ren-*, exactly as *appārentem* does, and it ought therefore to rhyme with *apparent*. It does not: it is /əˈpɪərəns/, with the vowel of the verb. The noun was rebuilt on English *appear* at some point after its arrival, and its vowel is the evidence. In Latin and throughout Romance, *appārentia* and *appārēns* are the same stem; in English they have come apart.
+*Appearance* complicates the picture in a way that repays attention. Its Latin source *appārentia* has the accent on *-ren-*, exactly as *appārentem* does, and it ought therefore to rhyme with *apparent*. It does not: it is /əˈpɪrəns/, with the vowel of the verb. The noun was rebuilt on English *appear* at some point after its arrival, and its vowel is the evidence. In Latin and throughout Romance, *appārentia* and *appārēns* are the same stem; in English they have come apart.
 
-English marks the split, but with graphemes that cannot be relied upon. The `ea` of *appear* spells /iː/ in *meat*, /ɛ/ in *head*, /eɪ/ in *great*, and /ɪə/ here; the `a` of *apparent* spells /æ/ for some speakers and /ɛə/ for others. A reader who did not already know the words could not derive either.
+English marks the split, but with graphemes that cannot be relied upon. The `ea` of *appear* spells /i/ in *meat*, /ɛ/ in *head*, /eɪ/ in *great*, and /ɪ/ here; the `a` of *apparent* spells /ɛ/, which is not among the values `a` carries anywhere else. A reader who did not already know the words could not derive either.
 
 ---
 
 ## 5. The Inglisce forms
 
-`Appirence` and `apperent` record the split with letters that do not equivocate. `I` is the system's letter for /iː/ and `e` for /ɛ/, so the two words announce their vowels rather than presupposing them, and the stem `appir-` runs consistently through the verb, the progressive, and the noun.
+`Appirence` and `apperent` record the split with letters that do not equivocate. `I` is the system's letter for /i/ and `e` for /ɛ/, so the two words announce their vowels rather than presupposing them, and the stem `appir-` runs consistently through the verb, the progressive, and the noun.
 
 The choice has a cost that should be named. Every Romance form in the table shares a stem — *apparence* and *apparent*, *apariencia* and *aparente*, *apparenza* and *apparente* — because in Romance the noun and the adjective genuinely are the same stem. `Appirence` beside `apperent` breaks that, and it breaks it in a place where Latin had no break at all. What the system is recording is not the Latin unity but the English fracture: it writes what English says, and English says two different things.
 
