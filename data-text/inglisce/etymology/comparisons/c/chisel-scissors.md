@@ -1,4 +1,4 @@
-# *Cisellum*: the cut made small
+# *Caedere*: one is a chisel, two are scissors
 
 A study of a Latin verb of striking that became a diminutive, then a tool, then two different tools depending on how many of it you had.
 
