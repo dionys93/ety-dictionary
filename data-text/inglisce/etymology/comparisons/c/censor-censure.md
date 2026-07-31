@@ -1,4 +1,4 @@
-# Latin *censēre*
+# Censēre: the mark as an office
 
 A study of why English carries three reflexes of a single Latin verb where the Romance languages carry two, and of how Inglisce orthography resolves the resulting collision.
 
