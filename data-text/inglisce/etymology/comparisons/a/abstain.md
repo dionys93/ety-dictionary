@@ -113,7 +113,11 @@ The accent moves twice within a four-word family, and the prefix changes quality
 
 ## 7. The Inglisce forms
 
-`Absteine` restores a Middle English spelling rather than inventing one. The attested forms include *absteine* alongside *abstene* and *absteynen*, so the `ei` records the Anglo-French stressed stem the word actually came from. The silent `-e` marks the verb.
+`Absteine` keeps the stem vowel that English threw away. Latin has *abstinēre* and every Romance verb in the set has `e` — *s'abstenir*, *abstenerse*, *abster-se*, *astenersi*, *abstenir-se*. English alone writes `a`, having taken the Anglo-French stressed stem and spelled its diphthong with the digraph `ai`. Inglisce writes `ei`, so the `e` survives the diphthong and the word stays visibly the same word as its cognates. The silent `-e` marks the verb.
+
+The choice governs a whole class, since English makes `-tain` out of `-ten-` throughout. Against French *contenir*, *détenir*, *maintenir*, *obtenir*, *retenir*, and *soutenir*, and Spanish *contener*, *detener*, *mantener*, *obtener*, *retener*, and *sostener*, English writes *contain*, *detain*, *maintain*, *obtain*, *retain*, and *sustain*. The `ai` severs every one of them from its cognate at a glance; `ei` severs none, and `conteine`, `mainteine`, and `susteine` follow from the same rule that gives `absteine`.
+
+That the spelling is also attested is a convenience rather than the argument. Middle English wrote *absteine* beside *abstene* and *absteynen*, and *conteine*, *mainteine*, and *susteine* were current well into the early modern period. The `a` of the received forms is the later intruder.
 
 The grave accent does the work English leaves undone. `Àbstinent` and `àbstinence` carry it because the stress falls on the first syllable; `absteine` and `abstencion` go unmarked because theirs falls on the second. A reader can therefore take the vowel quality of the prefix off the page — `à` is /æ/ and unmarked `a` is /ə/ — where English requires the word to be known in advance.
 
