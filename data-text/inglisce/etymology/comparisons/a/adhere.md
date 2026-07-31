@@ -18,16 +18,29 @@ The root has one further descendant worth naming. *Haesitāre*, the frequentativ
 
 Prefixed with *ad-*, the verb yields:
 
-| Stem | Latin forms | English |
-|---|---|---|
-| *adhaer-* | *adhaereō*, *adhaerēns*, *adhaerentia* | *adhere*, *adherent*, *adherence* |
-| *adhaes-* | *adhaesum*, *adhaesiō* | *adhesion*, *adhesive* |
+| Stem | Latin forms | English | Inglisce |
+|---|---|---|---|
+| *adhaer-* | *adhaereō*, *adhaerēns*, *adhaerentia* | *adhere*, *adherent*, *adherence* | `adhier`, `adhirent`, `adhirence` |
+| *adhaes-* | *adhaesum*, *adhaesiō* | *adhesion*, *adhesive* | `adhísion`, `adhíssif` |
 
 English took both, and then divided them. *Adherence* became the figurative term — adherence to a rule, a doctrine, a regimen — while *adhesion* stayed physical, the province of glue and of surgical scarring. A speaker uses one for principles and the other for surfaces.
 
 The division is not universal. French assigns the physical sense to *adhérence*, which is what a tyre has on wet tarmac, and the abstract sense to *adhésion*, which is what one gives to a party or a treaty. The two languages have made the same two words carry opposite loads. Neither distribution follows from the Latin, where the stems were interchangeable.
 
 Portuguese goes further and abandons the *r*-stem in this slot altogether, filling it with *adesão* from *adhaesiōnem*. It is the only language in the set to do so.
+
+The *s*-stem is otherwise stable across the comparison:
+
+| | The noun | The adjective |
+|---|---|---|
+| **Latin** | *adhaesiō* | — |
+| **French** | *l'adhésion* | *adhésif* |
+| **Spanish** | *la adhesión* | *adhesivo* |
+| **Portuguese** | *a adesão* | *adesivo* |
+| **Italian** | *l'adesione* | *adesivo* |
+| **Catalan** | *l'adhesió* | *adhesiu* |
+| **English** | *adhesion* | *adhesive* |
+| **Inglisce** | `adhísion` | `adhíssif` |
 
 ---
 
@@ -90,6 +103,18 @@ This is a different sort of concealment from a false etymology. The `e` of *adhe
 Two things soften the cost. The `h` is retained, so the word remains recognisable as *adh-* against *adhérence* and *adherencia*. And the verb ends in `-ir`, aligning it with Spanish, Portuguese, Italian, and Catalan, where English `-ere` aligns it with nothing.
 
 `Adhirent` and `adhirence` follow the verb rather than the Latin, which is the choice English declines to make: English writes *adhere* and *adherent* with the same letters but has no principle requiring it, as the parallel case of *abstain* beside *abstinent* shows. Here the stem is constant across all three forms.
+
+### The *s*-stem
+
+`Adhísion` and `adhíssif` continue the other Latin stem, and between them they settle two things English leaves unsettled.
+
+The first is the sibilant. English *adhesive* is /ædˈhisɪv/ and *adhesion* is /ædˈhiʒən/ — one voiceless, one not — and the spelling writes a single `s` for both. Inglisce doubles it in `adhíssif`, on the Romance convention by which an intervocalic `s` is voiced and `ss` is not; French keeps the pair apart in *poisson* against *poison* on exactly this principle.
+
+The second is the suffix. English spells /ʃən/ and /ʒən/ with the same letters and distributes them by a rule the spelling does not contain: `-sion` is /ʃən/ after a consonant, as in *tension* and *mission*, and /ʒən/ after a vowel, as in *vision* and *adhesion*. Inglisce assigns each its own letter, writing `-cion` for /ʃən/ and `-sion` for /ʒən/, so that `adhísion` states its own suffix.
+
+The acute marks stress and vowel quality at once, and it is doing the work the silent `-e` does elsewhere. In `adhire` the final `-e` fixes the `i` as /i/ and draws the accent onto it; `adhísion` and `adhíssif` have no final `-e` available, so the accent takes both jobs over. The two devices are one device in two positions. The rules governing the accents are treated elsewhere.
+
+The ending `-if` is the French masculine, *adhésif*, against the *-ivo* of Spanish, Portuguese, and Italian and the *-iu* of Catalan.
 
 ---
 
