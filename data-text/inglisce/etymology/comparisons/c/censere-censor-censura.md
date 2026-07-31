@@ -151,7 +151,7 @@ A verb `to censore` is excluded not merely by stress but by verb class. *Explore
 
 The exclusion of `censore` removes the agent noun from the set of possible bases, leaving *cēnsūra* as the only remaining derivational foundation within the family. This is precisely the base upon which Romance built its verb: *censurer*, *censurare*, and *censurar* are medieval denominals formed on the abstract noun, not on the agent.
 
-The Inglisce form is a re-derivation. English produced its verb in the nineteenth century by converting whichever noun lay nearest to hand, which happened to be the agent; Romance had produced its own five centuries earlier by suffixing the abstract noun, which is the morphologically orthodox route. The constraints of the Inglisce system render the English expedient unavailable and issue in the orthodox derivation instead.
+The Inglisce form is thereby a re-derivation. English produced its verb in the nineteenth century by converting whichever noun lay nearest to hand, which happened to be the agent; Romance had produced its own five centuries earlier by suffixing the abstract noun, which is the morphologically orthodox route. The constraints of the Inglisce system render the English expedient unavailable and issue in the orthodox derivation instead.
 
 It follows that `to censure` is more regularly formed than the *to censor* it replaces. The irregularity requiring repair belonged to English rather than to the system.
 
