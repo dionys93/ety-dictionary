@@ -1,6 +1,6 @@
 # *Adhaerēre*: sticking, and getting stuck
 
-A study of a Latin verb whose two stems differ by a consonant, and of an English spelling convention that writes /ɪə/ with the letter `e` and offers no warning that it has done so.
+A study of a Latin verb whose two stems differ by a consonant, and of an English spelling convention that writes /ɪr/ with the letter `e` and offers no warning that it has done so.
 
 ---
 
@@ -75,9 +75,9 @@ The stem vowel is `e` throughout Romance and throughout English's spelling. Ingl
 
 ## 4. What English hides
 
-English *adhere* is /ədˈhɪə/, and *adherent* and *adherence* keep that vowel. The spelling gives no indication of it.
+English *adhere* is /ədˈhɪr/, and *adherent* and *adherence* keep that vowel. The spelling gives no indication of it.
 
-The letter `e` before `r` and a silent `e` spells /ɪə/ in *adhere*, *here*, *mere*, *sphere*, *severe*, *sincere*, *austere*, and *interfere*. In almost every other environment the same letter spells /ɛ/ or /iː/. The convention is a Middle English long *e* carried through the Great Vowel Shift and then spelled as though nothing had happened: the sound moved from /eː/ to /iː/ and the orthography stayed where it was.
+The letter `e` before `r` and a silent `e` spells /ɪr/ in *adhere*, *here*, *mere*, *sphere*, *severe*, *sincere*, *austere*, and *interfere*. In almost every other environment the same letter spells /ɛ/ or /i/. The convention is a Middle English long *e* carried through the Great Vowel Shift and then spelled as though nothing had happened: the sound moved from /eː/ to /i/ and laxed to /ɪ/ before the *r*, while the orthography stayed where it was.
 
 This is a different sort of concealment from a false etymology. The `e` of *adhere* is historically correct — it descends from the *ae* of *adhaerēre* by way of Old French — and it is precisely its correctness that makes it useless. It records the vowel the word had in 1400 and says nothing about the vowel it has now.
 
@@ -85,7 +85,7 @@ This is a different sort of concealment from a false etymology. The `e` of *adhe
 
 ## 5. The Inglisce forms
 
-`Adhire` writes the vowel with `i`, the letter that carries /iː/ in the system, and so states in the spelling what English leaves to be learned word by word. The cost is real and worth naming: the stem vowel no longer matches the `e` of *adhérer*, *adherir*, and *aderire*. The system has chosen the modern sound over the visible cognate, which is the reverse of what it does where the Romance vowel and the English one still agree.
+`Adhire` writes the vowel with `i`, the letter that carries /i/ in the system, and so states in the spelling what English leaves to be learned word by word. The cost is real and worth naming: the stem vowel no longer matches the `e` of *adhérer*, *adherir*, and *aderire*. The system has chosen the modern sound over the visible cognate, which is the reverse of what it does where the Romance vowel and the English one still agree.
 
 Two things soften the cost. The `h` is retained, so the word remains recognisable as *adh-* against *adhérence* and *adherencia*. And the verb ends in `-ir`, aligning it with Spanish, Portuguese, Italian, and Catalan, where English `-ere` aligns it with nothing.
 
