@@ -1,6 +1,6 @@
-# The `cens-` family: from Latin *censēre* to Inglisce
+# Latin *censēre*
 
-A study of why English carries three reflexes of a single Latin verb where the Romance languages carry two, and of how the Inglisce orthography resolves the resulting collision.
+A study of why English carries three reflexes of a single Latin verb where the Romance languages carry two, and of how Inglisce orthography resolves the resulting collision.
 
 ---
 
@@ -16,7 +16,7 @@ The two senses are aspects of a single act. To *censere* is to declare what a th
 
 ## 2. The Roman magistracy
 
-The censorship was established, by tradition, in 443 BC. Two censors were elected at approximately five-year intervals and held office for eighteen months, a limit imposed by the *lex Aemilia* of 434. Their competence was threefold: the census proper, comprising the registration of citizens, the valuation of property, and the assignment of men to tribes and centuries; the *lectio senatus*, the periodic revision of the senatorial roll; and the *regimen morum*, the supervision of conduct.
+The "censorship" was established, by tradition, in 443 BC. Two censors were elected at approximately five-year intervals and held office for eighteen months, a limit imposed by the *lex Aemilia* of 434. Their competence was threefold: the census proper, comprising the registration of citizens, the valuation of property, and the assignment of men to tribes and centuries; the *lectio senatus*, the periodic revision of the senatorial roll; and the *regimen morum*, the supervision of conduct.
 
 The instrument of the third was the *nota censoria*, a mark entered beside a citizen's name in the register and accompanied by a brief *subscriptio* stating its cause. The recorded grounds are various — cowardice, perjury, cruelty toward slaves, extravagance, neglect of one's land, mismanagement of a household, celibacy. The sanction was not pecuniary but positional: removal from the Senate, forfeiture of the public horse, transfer to a lower tribe. The severity of Cato the Elder's censorship of 184 BC was such that *Censorius* attached permanently to his name.
 
@@ -28,7 +28,7 @@ Sulla allowed the magistracy to lapse; Augustus absorbed its powers into the pri
 
 ## 3. The loss of the verb and the survival of the nouns
 
-The decisive fact for the subsequent history of the family is that Latin *censēre* left no inherited descendant in any Romance language. In spoken Latin the "think" sense was displaced by *pēnsāre*, *putāre*, *crēdere*, and *cōgitāre*, and the "assess" sense by *taxāre* and *appretiāre*.
+Latin *censēre* left no inherited descendant in any Romance language. In spoken Latin the "think" sense was displaced by *pēnsāre*, *putāre*, *crēdere*, and *cōgitāre*, and the "assess" sense by *taxāre* and *appretiāre*.
 
 What survived by regular sound change was the noun *census* alone, and in a markedly narrowed sense: a tax or rent charged upon land. The remainder of the family — *censor*, *censūra*, and the whole of the modern verbal paradigm — represents learned re-borrowing undertaken by clerks, canonists, and humanists working from written Latin.
 
@@ -105,7 +105,7 @@ English borrowed from this family on three separate occasions and never subseque
 
 *Censure* initially preserved the neutral Latin sense, as in Polonius's *take each man's censure, but reserve thy judgement*; the narrowing to adverse judgment is gradual.
 
-*To censor* is more properly described as a conversion of the noun than as a back-formation, since no affix is removed, as it is in *edit* from *editor* or *burgle* from *burglar*. A back-formation proper would have deleted the agentive suffix and yielded *cense*; that slot, however, was already occupied by *cense* "to swing a thurible," an aphetic form of Old French *encenser* from *incensum*, a word unrelated to the present family notwithstanding its appearance. English was thus left with conversion of the agent noun as its only available route, and the resulting verb is denominal upon an agent rather than upon an abstract. Its currency owes much to the First World War, when the censorship of correspondence and of the press brought it into general use.
+"To censor" is a conversion of the agent noun, the verb taking the noun's form unaltered. Suffix deletion would have produced cense, a form long since occupied by cense "to swing a thurible," an aphetic development of Old French encenser from incensum and unrelated to the present family; conversion was thus the route available. The verb is accordingly denominal upon an agent rather than upon an abstract, and its currency owes much to the First World War, when the censorship of correspondence and of the press brought it into general use.
 
 ### The absence of a Romance parallel
 
@@ -121,12 +121,12 @@ The family does yield two verbs in Romance, but the division falls elsewhere. Ro
 
 | English | Inglisce | Latin ancestor |
 |---|---|---|
-| þe censor | **þe censor** | *cēnsor* |
+| the censor | **þe censor** | *cēnsor* |
 | to censor | **to censure** | *cēnsūra* (denominal) |
 | censorial | **censórial** | *cēnsōrius* |
 | censorious | **censorieus** | *cēnsōrius* |
 | censorship | **censorscip** | *cēnsor* + native suffix |
-| þe censure | **þe cenşure** | *cēnsūra* |
+| the censure | **þe cenşure** | *cēnsūra* |
 | to censure | **to cenşure** | *cēnsūra* |
 | censurable | **cenşurable** | *cēnsūra* |
 | census | **census** | *census* |
@@ -151,7 +151,7 @@ A verb `to censore` is excluded not merely by stress but by verb class. *Explore
 
 The exclusion of `censore` removes the agent noun from the set of possible bases, leaving *cēnsūra* as the only remaining derivational foundation within the family. This is precisely the base upon which Romance built its verb: *censurer*, *censurare*, and *censurar* are medieval denominals formed on the abstract noun, not on the agent.
 
-The Inglisce form is accordingly to be described not as a second back-formation upon an English one, but as a re-derivation. English produced its verb in the nineteenth century by converting whichever noun lay nearest to hand, which happened to be the agent; Romance had produced its own five centuries earlier by suffixing the abstract noun, which is the morphologically orthodox route. The constraints of the Inglisce system render the English expedient unavailable and issue in the orthodox derivation instead.
+The Inglisce form is a re-derivation. English produced its verb in the nineteenth century by converting whichever noun lay nearest to hand, which happened to be the agent; Romance had produced its own five centuries earlier by suffixing the abstract noun, which is the morphologically orthodox route. The constraints of the Inglisce system render the English expedient unavailable and issue in the orthodox derivation instead.
 
 It follows that `to censure` is more regularly formed than the *to censor* it replaces. The irregularity requiring repair belonged to English rather than to the system.
 
@@ -169,4 +169,4 @@ The two adjectives bear identical stress, but since `ieu` is stress-attracting i
 
 **The paradigm exhibits stem alternation.** `Þe censor` and `to censure` share no common surface form, the agent retaining `-or` while the verb takes `-ure`, so that the relation between them must be learned rather than read off. The cost is slight and not peculiar to Inglisce: French *censeur* : *censurer* and Italian *censore* : *censurare* alternate identically, the alternation following in each case from the derivation of agent and verb upon different Latin nouns.
 
-**The remaining minimal pair is the most heavily trafficked one.** Loss of the cedilla in transmission — through ASCII normalisation, indexing, or handwriting — yields not a malformed string but the opposing lexeme, so that *þe board censured him* remains well formed under the wrong reading. Diacritics commonly carry heavy functional load without difficulty, because the forms they distinguish differ in part of speech or semantic domain and context resolves them. Here both verbs are transitive, govern a human object, and denote disapproval issuing from authority, so either construal satisfies the same sentence — the condition that sustains the confusion of *affect* with *effect*. This is where the orthography carries the least redundancy.
+**The remaining minimal pair is the most heavily trafficked one.** Loss of the cedilla in transmission — through ASCII normalisation, indexing, or handwriting — yields not a malformed string but the opposing lexeme, so that *þe borde censured him* remains well formed under the wrong reading. Diacritics commonly carry heavy functional load without difficulty, because the forms they distinguish differ in part of speech or semantic domain and context resolves them. Here both verbs are transitive, govern a human object, and denote disapproval issuing from authority, so either construal satisfies the same sentence — the condition that sustains the confusion of *affect* with *effect*. This is where the orthography carries the least redundancy.
