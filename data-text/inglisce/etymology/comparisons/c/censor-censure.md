@@ -128,9 +128,9 @@ The family does yield two verbs in Romance, but the division falls elsewhere. Ro
 | censorial | **censórial** | *cēnsōrius* |
 | censorious | **censorieus** | *cēnsōrius* |
 | censorship | **censorscip** | *cēnsor* + native suffix |
-| the censure | **þe cenşure** | *cēnsūra* |
-| to censure | **to cenşure** | *cēnsūra* |
-| censurable | **cenşurable** | *cēnsūra* |
+| the censure | **þe cenșure** | *cēnsūra* |
+| to censure | **to cenșure** | *cēnsūra* |
+| censurable | **cenșurable** | *cēnsūra* |
 | census | **census** | *census* |
 
 ### Principle of the division
