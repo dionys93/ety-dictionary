@@ -65,7 +65,7 @@ English has no descendant of it at all in that slot. The ordinary noun is *end*,
 
 So the relation between noun and verb is inverted. In Romance the noun is primary and the verb built on it — *fīnis* gives *fīnīre*, and *fin* stands beside *finir*. In English the verb was borrowed first, the native noun was already occupied, and *the finish* had to be back-built from the borrowed verb long afterwards.
 
-Italian makes a distinction the others do not, and your data records it: *la fine* is the end, while *il finale* is the closing movement or final section — feminine for the abstraction, masculine for the concrete part.
+Italian makes a distinction the others do not: *la fine* is the end, while *il finale* is the closing movement or final section — feminine for the abstraction, masculine for the concrete part.
 
 ---
 
