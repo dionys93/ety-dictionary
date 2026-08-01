@@ -107,10 +107,10 @@ English has no such distinction. *To prosper* and *I prosper* are one form, and 
 
 *The vowel before it.* Latin *prosperitātem* has *i*, and so do French *prospérité*, Spanish *prosperidad*, Portuguese *prosperidade*, and Italian *prosperità*. Inglisce writes `e`. The syllable is /ə/ in English and carries no information of its own, so the letter is free to be chosen for what it does in the word rather than for what it was in Latin.
 
-The two decisions answer to one fact about English. The suffix is fully pronounced in Romance — *prosperidad* is /pɾospeɾiˈðað/, with the *i* a real vowel bearing its own syllable, and Italian *prosperità* takes the accent onto the final *a*. English does neither. Merriam-Webster gives *prosperity* as /präˈsper-ə-tē/: the vowel of the suffix is a schwa, and the accent has moved back onto the stem, two syllables from where Romance puts it.
+The two decisions answer to one fact about English. The suffix is fully pronounced in Romance — Spanish *prosperidad* is /pɾospeɾiˈðað/, with the *i* a real vowel bearing its own syllable, and Italian *prosperità* is /prosperiˈta/, the accent carried onto the final vowel. English does neither: *prosperity* is /prɑˈspɛrəti/, the suffix vowel reduced to schwa and the accent retracted onto the stem, two syllables from where Romance puts it.
 
-That retraction is the suffix's most conspicuous property in English. Pr*o*sper and prosp*e*rity differ in accent as well as ending, and the same displacement runs through the class — *a*ble becomes ab*i*lity, v*a*rious becomes var*i*ety, c*u*rious becomes curi*o*sity. A suffix that moves the stress and then reduces its own vowel is doing two things at once, and English marks neither.
+That retraction is the suffix's most conspicuous property in English. ***Pros**perous* and *pros**per**ity* differ in accent as well as ending, and the same displacement runs through the class — ***a**ble* becomes *a**bil**ity*, ***va**rious* becomes *va**ri**ety*, ***cu**rious* becomes *curi**os**ity*. A suffix that moves the stress and then reduces its own vowel is doing two things at once, and English marks neither.
 
 Writing `-etie` rather than `-ity` is therefore not a cosmetic respelling. It records what English actually does with the ending: the vowel that Romance pronounces is written with a letter that reduces.
 
-For this reason, the article is feminine, `þa`, because the stress falls away from the first syllable.
+The article is feminine, `þa`, the stress falling away from the first syllable.
