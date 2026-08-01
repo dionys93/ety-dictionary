@@ -98,7 +98,7 @@ And no Romance language uses this word for clothing. That sense is English alone
 
 The `-cion` writes /ʃən/, and here the spelling is etymologically exact rather than merely convenient. The /ʃ/ of *fashion* comes from the Latin cluster of *-ctiōnem* by the regular Picard development — it is genuinely the *-tiōn-* suffix, palatalised, and not a sibilant from some other source. `Facion` therefore joins the class it belongs to, alongside every other Inglisce word ending in `-cion`, and does so on historical grounds and not by analogy.
 
-Restoring the word to its class has a further effect. In English, *fashion* and *faction* look like near-homographs that happen to differ in one consonant, and the shared suffix is obscured by the `sh`. Written `facion`, the word is transparently `fac-` plus `-cion`, which is what it is, and its relation to the rest of the *facere* vocabulary — `fact`, `factorie`, `manufacture` — becomes readable off the page.
+Restoring the word to its class has a further effect. In English, *fashion* and *faction* look like near-homographs that happen to differ in one consonant, and the shared suffix is obscured by the `sh`. Written `facion`, the word is transparently `fac-` plus `-cion`, which is what it is, and its relation to the rest of the *facere* vocabulary — `facte`, `factorie`, `manufacțure` — becomes readable off the page.
 
 
 ---
