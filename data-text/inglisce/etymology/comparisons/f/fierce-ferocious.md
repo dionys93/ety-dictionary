@@ -34,9 +34,13 @@ Almost every French word English borrowed came from the oblique. That is why Eng
 
 *Fierce* is the exception. English took **the nominative** *fiers*, and the reason is recorded: while the word still meant "proud, noble, bold," it was widely used as an epithet and thence as a surname — and an epithet attaches to a subject, which is the nominative slot. The case ending rode across the Channel because the word's usual job put it there.
 
-Modern French kept the oblique, and *fier* means "proud" to this day. English kept the nominative and, having taken the word for its "proud, bold" sense in the mid-thirteenth century, watched that sense die out in the sixteenth and be replaced entirely by "savage, violent."
+Modern French kept the oblique, and *fier* means "proud" to this day.
 
-Both languages therefore have half the original word. France has the case English discarded and the meaning English abandoned; England has the case France discarded and a meaning France never assigned it.
+English took the nominative, and took it for the sense of "proud, noble, bold" in the mid-thirteenth century. That sense receded in the sixteenth, giving way to "savage, violent" — but it did not vanish, and the current dictionary entry shows why the loss should not be overstated. Alongside the senses of violent hostility and pugnacity, Merriam-Webster records *fierce* as informally meaning bold confidence or style, the use current in fashion and ballroom vocabulary. The thirteenth-century sense has come back into a language that had largely set it aside, and the two now sit in the same entry.
+
+The oscillation is not new. Latin *ferōx* itself carried both loads — bold, courageous, warlike on the one side, savage, headstrong, cruel on the other — and no line divided them. Which pole a given period emphasises seems to depend on whether the speaker admires the quality or fears it, and English has moved between the two at least three times.
+
+One further sense in the entry is worth noting for its exactness: *fierce* also means wild or menacing **in appearance**. That is *ferōx* rendered morpheme for morpheme — *ferus* plus the suffix of looking — and it has survived eight hundred years of transmission in a language that has no idea the suffix is there.
 
 ---
 
