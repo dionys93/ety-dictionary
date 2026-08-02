@@ -1,6 +1,6 @@
 # *Distinguere*: to prick apart
 
-A study of a verb that once meant puncturing a page, of the two other verbs built on the same stem that no one connects to it, and of an English suffix that arrived by mistaken company.
+A study of a verb that once meant pricking a page, and of the English suffix it picked up from the wrong company.
 
 ---
 
