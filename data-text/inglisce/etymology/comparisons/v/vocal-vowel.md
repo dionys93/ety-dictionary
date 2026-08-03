@@ -103,20 +103,24 @@ Only French and English lost the consonant of *vōcālis*, and only they therefo
 
 ### The advocate
 
-| | The advocate | The verb | Its sense |
+*Advocāre* means to call someone to your side. That single sense splits in two depending on whose side is meant — another's, which is pleading, or your own, which is confessing. English is alone in taking both from this root.
+
+| | The noun | To plead for another | To declare for oneself |
 |---|---|---|---|
-| **Latin** | *advocātus* | *advocāre* | to call to one's side |
-| **French** | *l'avocat* | *avouer* | to confess, to admit |
-| **Spanish** | *el abogado* | *abogar* | to plead for |
-| **Portuguese** | *o advogado* | *advogar* | to plead for |
-| **Italian** | *l'avvocato* | *avvocare* | to plead for (rare) |
-| **Catalan** | *l'advocat* | *advocar* | to plead for |
-| **English** | *the advocate* | *to avow* | to declare openly |
-| **Inglisce** | *þe advocat* | *to avôe* | to declare openly |
+| **Latin** | *advocātus* | *advocāre* | *advocāre* |
+| **French** | *l'avocat* | *plaider* | *avouer* |
+| **Spanish** | *el abogado* | *abogar* | *confesar* |
+| **Portuguese** | *o advogado* | *advogar* | *confessar* |
+| **Catalan** | *l'advocat* | *advocar* | *confessar* |
+| **Italian** | *l'avvocato* | *patrocinare* | *confessare* |
+| **English** | *the advocate* | *to advocate* | *to avow* |
+| **Inglisce** | *þi advocat* | *to advocait* | *to avôe* |
 
-Spanish *abogado* and *abogar* are the word worn down by ordinary speech — *ad-* to *ab-*, and the *c* voiced to *g*. Portuguese and Catalan restored the *d* from the Latin.
+Every other language in the table keeps one of the two senses on this root and reaches elsewhere for the other. Iberian Romance kept the pleading — *abogar* and *advogar* are what a lawyer does — and uses *confesar* for the rest. French did the reverse, keeping *avouer* for confession and using *plaider* in court, so that French *avocat* and *avouer* now sit at some distance from one another.
 
-The verb's sense is where the languages part. Iberian Romance kept it close to the Latin: to *abogar* is to plead on someone's behalf, which is what an advocate does. French and English took the reflexive turn instead — to call something to one's own side is to own it, and so *avouer* means to confess and *avow* means to declare openly. The advocate pleads for another; the avower pleads for himself.
+English took both. **To advocate** is the learned verb, borrowed from the Latin infinitive in the seventeenth century, and it means what *abogar* means. **To avow** is the popular verb, through Old French *avouer*, and it means what *avouer* means. One Latin verb, two English verbs, and no visible relation between them or with the noun they share.
+
+The forms of the noun differ too. Spanish *abogado* is the word worn down by ordinary speech — *ad-* reduced to *ab-*, and the *c* voiced to *g*. Portuguese and Catalan restored the *d* from the written Latin. French and English lost it, French to *avocat* and English to a spelling that keeps the *d* only because it was reborrowed with it.
 
 ### The prefixed verbs
 
