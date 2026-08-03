@@ -14,8 +14,9 @@ The *n* is present in the first two forms and absent from the last two, and that
 |---|---|---|
 | *vincō* | *vīcī* | *victum* |
 | *rumpō* | *rūpī* | *ruptum* |
-| *findō* | *fīdī* | *fissum* |
-| *iungō* | *iūnxī* | *iugum* (noun) |
+| *findō* | *fidī* | *fissum* |
+| *frangō* | *frēgī* | *frāctum* |
+| *tangō* | *tetigī* | *tāctum* |
 
 So *vincere* and *victum* are one verb, and the *n* marks which half of it a given form belongs to.
 
@@ -99,7 +100,7 @@ flowchart TD
 | **English** | *to vanquish* | *I vanquish* | *vanquish-* |
 | **Inglisce** | *to vencoișe* | *I vencoișe* | *vencoiș-* |
 
-Latin *vincere* is second conjugation in form but third in behaviour; Italian kept it unchanged, Iberian Romance moved it to the *-er* class and lowered the vowel to *e*, and Romanian prefixed it with *în-*. Only French rebuilt the paradigm around a stem in *-qu-*, and only English then borrowed that stem.
+Latin *vincere* is third conjugation. Italian kept it there unchanged. Iberian Romance moved it to the *-er* class and lowered the short *i* to *e*, which is the regular outcome. Romanian prefixed it with *în-*. Only French rebuilt the paradigm around a stem in *-qu-*, and only English then borrowed that stem.
 
 ### The victory
 
@@ -112,8 +113,11 @@ Latin *vincere* is second conjugation in form but third in behaviour; Italian ke
 | **Portuguese** | *a vitória* | *invencível* |
 | **Catalan** | *la victòria* | *invencible* |
 | **English** | *the victory* | *invincible* |
+| **Inglisce** | *þa victorie* | *invinçable* |
 
 The second column divides the languages. French, Italian, and English take *invincible* straight from the Latin, keeping the Latin *i*. Spanish, Portuguese, and Catalan rebuilt the adjective on their own verb — *vencer* gives *invencible* and *invencível* — so that in Iberian Romance the adjective and the verb still visibly belong together, and in the other three they do not.
+
+Inglisce takes the Iberian side, `invinçable` standing beside `vencoișe` as *invencible* stands beside *vencer*.
 
 ---
 
@@ -130,7 +134,7 @@ The second column divides the languages. French, Italian, and English take *invi
 | unconvincing | `unconvincing` |
 | evince | `evince` |
 
-**`Vencoișe` restores the vowel.** The Middle English forms are *venquisshen* and *vencuschen*, with *e*; Spanish, Portuguese, and Catalan have *vencer*, with *e*; Latin has *i*. The *a* of modern English *vanquish* answers to nothing in the word's history and is shared by none of its relatives.
+**`Vencoișe` restores the vowel** discussed above, putting the verb back beside *vencer* and beside its own Middle English forms.
 
 **`Coi` writes /kwɪ/.** The `c` has its hard value before a back vowel, the `o` writes the labial glide, and the `i` the vowel that follows. English uses `qu`, a digraph whose *u* is silent across most of the Latinate vocabulary — *conquer*, *quay*, *mosquito* — and sounded elsewhere, with nothing to say which.
 
@@ -152,7 +156,7 @@ The second column divides the languages. French, Italian, and English take *invi
 
 **The cedilla follows from that choice.** With `a` after the `c`, the letter would take its hard value and give /k/, so the cedilla is required to keep it soft: `invinçable`. Where English's `i` did the conditioning invisibly, the diacritic does it in the open.
 
-### The *vict-* nouns
+### The *vict-* words
 
 | English | Inglisce | Plural |
 |---|---|---|
@@ -162,7 +166,7 @@ The second column divides the languages. French, Italian, and English take *invi
 
 **`Victre` and `victors` transpose the letters** around the syllabic *r*, writing `-re` where the word ends and `-or-` where a suffix follows. The vowel is the same in both, and the Latin *victor* is visible in the second.
 
-**`Victorieus` writes `-ieus` for /iəs/**, the ending English spells `-ious` and also `-eous`, `-uous`, and plain `-ous`, all for sounds that differ.
+**`Victorieus` writes `-ieus` for /iəs/.** English spells that one sound two ways — `-ious` in *various* and *curious*, `-eous` in *hideous* and *courteous* — and uses the similar-looking `-ous` for something else entirely, the /əs/ of *famous* and *nervous*.
 
 ### Noun against verb
 
@@ -172,7 +176,7 @@ This is the set's most consequential distinction.
 |---|---|---|
 | **English** | *convict* /ˈkɑnvɪkt/ | *convict* /kənˈvɪkt/ |
 | **Inglisce** | `convict` | `convicte` |
-| **English** | *evict* | *to evict* |
+| **English** | — | *to evict* |
 | **Inglisce** | — | `evicte` |
 
 English writes one spelling for two words and distinguishes them only by stress, which it does not mark. *A convict* and *to convict* differ in where the accent falls and in nothing else on the page.
@@ -181,7 +185,7 @@ The pattern runs through the language — *a rebel* and *to rebel*, *a record* a
 
 The paradigms are `convicte`, `convics`, `convicted`, `convicting`, and `evicte`, `evics`, `evicted`, `evicting`.
 
-**`Convics` writes a cluster English spells and does not say.** The sequence /kts/ is regularly reduced to /ks/ in ordinary speech, so *convicts* and *evicts* are /ˈkɑnvɪks/ and /ɪˈvɪks/. The spelling follows the mouth rather than the morphology.
+**`Convics` writes a cluster English spells and commonly does not say.** The sequence /kts/ simplifies to /ks/ in ordinary speech, so *convicts* and *evicts* are usually /ˈkɑnvɪks/ and /ɪˈvɪks/. The spelling follows the mouth rather than the morphology.
 
 ### The doubled *c*
 
