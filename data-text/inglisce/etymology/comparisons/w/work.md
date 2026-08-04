@@ -66,6 +66,36 @@ So *work*, *wright*, and *wrought* are one verb in three shapes, and a *playwrig
 
 ## 4. Across Germanic
 
+```mermaid
+flowchart TD
+    PIE["PIE *werǵ-<br/>to do, to make"]
+    GK["Greek ϝέργον → ἔργον<br/>energy, organ, surgery"]
+    NOUN["Proto-Germanic *werką<br/>the noun, vowel e"]
+    VERB["Proto-Germanic *wurkijaną<br/>the verb, vowel u"]
+    OEN["Old English weorc"]
+    OEV["Old English wyrcan"]
+    SEC["Old English wircan<br/>a second verb, built on the noun"]
+    FUSE["Middle English fusion<br/>→ work"]
+    META["metathesis<br/>wyhrta → wright<br/>geworht → wrought"]
+    KEPT["kept the verb<br/>English, Dutch"]
+    REPL["replaced the verb<br/>German arbeiten, Swedish arbeta<br/>Danish arbejde, Icelandic vinna"]
+    NORSE["Old Norse split<br/>yrkja, orka"]
+
+    PIE --> GK
+    PIE --> NOUN
+    PIE --> VERB
+    NOUN --> OEN
+    VERB --> OEV
+    OEN --> SEC
+    OEV --> FUSE
+    SEC --> FUSE
+    OEV --> META
+    VERB --> KEPT
+    VERB --> REPL
+    VERB --> NORSE
+```
+
+
 ### The noun
 
 | Language | Form |
