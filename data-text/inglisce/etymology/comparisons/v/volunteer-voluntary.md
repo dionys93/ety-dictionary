@@ -41,6 +41,35 @@ English also disagrees with French about the stem vowel. Latin has *u* in *volun
 
 ## 4. The verb almost nobody has
 
+```mermaid
+flowchart TD
+    PIE["PIE *welh₁-<br/>to wish, to choose"]
+    GERM["Proto-Germanic *wiljaną<br/>→ English will, German wollen"]
+    VOLO["Latin volō, velle<br/>vel 'or' = the imperative"]
+    VOL["voluntās<br/>will, wish, choice"]
+    ADJ["voluntārius<br/>of one's own will"]
+    MIL["voluntāriī<br/>troops who offered themselves"]
+    ARY["learned -ary<br/>→ voluntary"]
+    EER["French -ier<br/>→ volunteer, 1500s"]
+    ADV["voluntāriē + -s<br/>→ French volontiers"]
+    VERB["English to volunteer, 1700s<br/>conversion of the noun"]
+    PERI["periphrastic elsewhere<br/>se porter volontaire<br/>ofrecerse, offrirsi"]
+    PT["Portuguese voluntariar-se<br/>the one simple verb"]
+
+    PIE --> GERM
+    PIE --> VOLO
+    VOLO --> VOL
+    VOL --> ADJ
+    ADJ --> MIL
+    ADJ --> ARY
+    ADJ --> EER
+    ADJ --> ADV
+    EER --> VERB
+    ADJ --> PERI
+    ADJ --> PT
+```
+
+
 English converts the noun to a verb without ceremony: *to volunteer*, attested from the mid eighteenth century. This is unremarkable in English and nearly unique in the neighbourhood.
 
 | | The noun | The adjective | The verb |
