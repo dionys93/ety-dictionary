@@ -110,7 +110,7 @@ Italian is the extreme case: *regolare* is the adjective and the verb, so *una r
 | **Portuguese** | *o regime* | *o regimento* | *a região* | *o reitor* | *o regente* |
 | **Italian** | *il regime* | *il reggimento* | *la regione* | *il rettore* | *il reggente* |
 | **English** | *the regime* | *the regiment* | *the region* | *the rector* | *the regent* |
-| **Inglisce** | *þe regime* | *þe règiment* | *þa rígion* | *þe rectre* | *þe rigent* |
+| **Inglisce** | *þe regime* | *þe règiment* | *þe rígion* | *þe rectre* | *þe rigent* |
 
 ### The king
 
@@ -136,7 +136,7 @@ Italian is the extreme case: *regolare* is the adjective and the verb, so *una r
 
 The noun and verb share the form, as they do in English, and the `-e` marks the pair. The plural is `reuls` and the agent noun `reuler`.
 
-**`Regulait` and `regulâcion`** take the verb's `-ait` and the noun's circumflex, keeping `regula-` visible across the whole learned branch — `regular`, `regulait`, `regulâcion`, `regulatory` — where English breaks the stem at *regulate* / *regulatory* only by the vowel it does not write.
+**`Regulait` and `regulâcion`** take the verb's `-ait` and the noun's circumflex, keeping `regula-` visible across the whole learned branch — `regular`, `regulait`, `regulâcion`, `regulatory`.
 
 ### The accents sort three pronunciations
 
