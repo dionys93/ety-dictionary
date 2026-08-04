@@ -60,6 +60,14 @@ The same metathesis affected a small set of English words, and the list is worth
 
 So *work*, *wright*, and *wrought* are one verb in three shapes, and a *playwright* is not a writer of plays but a *worker* of them — which is why the word is not spelled *playwrite*.
 
+### The *w* that stopped being said
+
+Both metathesised forms begin with a cluster English no longer pronounces. Old English *wr-* was /wr/ — the *w* was fully sounded — and it fell silent between about 1600 and 1700, leaving a letter that does nothing.
+
+The class is large and mostly coherent: *write*, *wrong*, *wrap*, *wreck*, *wrist*, *wring*, *wreath*, *wrath*, *wren*, *wrench*, *wrestle*, *wriggle*, *wrinkle*, *wry*, *wrought*, *wright*. Many of them carry a sense of twisting or bending, and those go back to a different root, \**wer-* "to turn"; *wrought* and *wright* belong to \**werǵ-* instead and merely share the cluster.
+
+English kept the *w* in the spelling of all of them.
+
 **Bulwark** belongs here too: *bole* "tree trunk" plus *werk*, a rampart of logs. Through Dutch *bolwerk* and French *boulevard* it also gives English **boulevard**, so a tree-lined avenue and a defensive wall are the same compound.
 
 ---
@@ -172,3 +180,22 @@ The noun takes the same plain `c` as the bare verb, giving `þe uirc` — the pa
 **`Uêx` restores the vowel English lost.** The Germanic noun had *e* — *weorc*, *werk*, *Werk*, *verk*, *værk* — and English alone replaced it with the vowel of the verb. The plural writes it back, and `x` gives /ks/ in one letter.
 
 So the two forms of the noun carry the two histories: `uirc` shows what the verb did to it, and `uêx` shows what it was before.
+
+### The metathesised forms
+
+| English | Inglisce | Part of speech |
+|---|---|---|
+| wrought | `r̃oht` | adjective only |
+| playwright | `playrîhte` | noun |
+
+**`R̃` marks the *r* of a lost *wr-*.** English writes a `w` that has not been pronounced for three centuries; the tilde records that the consonant was there and states that it is not said. The letter that survives is the one still heard.
+
+**`R̃oht` is an adjective and nothing else.** English *wrought* is formally the old past participle, but it long ago stopped serving as one — the past of *work* is *worked*, and *wrought* survives only in *wrought iron*, *wrought silver*, and a few fixed phrases. Inglisce completes the split that English left half-made: `uirched` is the past and `r̃oht` is the adjective, with no overlap.
+
+**`Playrîhte` keeps the *ht* of *wyrhta*.** English writes `gh` here, a digraph that once spelled a velar fricative and now spells nothing at all; `h` states the same silence with one letter instead of two, and it is the letter Old English actually used.
+
+**And it carries no tilde**, though its *r* has the same lost *w* behind it. A word takes one diacritic, and the vowel outranks the consonant: `playrîhte` needs the circumflex to fix its `î` as /aɪ/, and having spent the mark there it does not also spell the silent *w*. `R̃oht` has a plain `o` that needs nothing, so the tilde is free to appear.
+
+The priority is the right way round. A reader who misses the tilde loses a fact about the eleventh century; a reader who misses the circumflex cannot pronounce the word.
+
+The distinction matters more than it looks. English has four words pronounced /raɪt/ — *right* from *riht*, *rite* from *rītus*, *write* from *wrītan*, and *wright* from *wyrhta* — and spells them four ways for four different reasons, only some of which record anything. The `ht` of `playrîhte` records the cluster the word had in Old English.
