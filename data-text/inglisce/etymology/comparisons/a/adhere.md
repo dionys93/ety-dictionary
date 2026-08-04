@@ -20,8 +20,8 @@ Prefixed with *ad-*, the verb yields:
 
 | Stem | Latin forms | English | Inglisce |
 |---|---|---|---|
-| *adhaer-* | *adhaereō*, *adhaerēns*, *adhaerentia* | *adhere*, *adherent*, *adherence* | `adhier`, `adhirent`, `adhirence` |
-| *adhaes-* | *adhaesum*, *adhaesiō* | *adhesion*, *adhesive* | `adhísion`, `adhíssif` |
+| *adhaer-* | *adhaereō*, *adhaerēns*, *adhaerentia* | *adhere*, *adherent*, *adherence* | adhier, adhirent, adhirence |
+| *adhaes-* | *adhaesum*, *adhaesiō* | *adhesion*, *adhesive* | adhísion, adhíssif |
 
 English took both, and then divided them. *Adherence* became the figurative term — adherence to a rule, a doctrine, a regimen — while *adhesion* stayed physical, the province of glue and of surgical scarring. A speaker uses one for principles and the other for surfaces.
 
@@ -40,7 +40,7 @@ The *s*-stem is otherwise stable across the comparison:
 | **Italian** | *l'adesione* | *adesivo* |
 | **Catalan** | *l'adhesió* | *adhesiu* |
 | **English** | *adhesion* | *adhesive* |
-| **Inglisce** | `adhísion` | `adhíssif` |
+| **Inglisce** | adhísion | adhíssif |
 
 ---
 
