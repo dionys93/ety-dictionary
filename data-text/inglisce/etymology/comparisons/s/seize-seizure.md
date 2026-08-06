@@ -103,7 +103,7 @@ flowchart TD
 | **Medieval Latin** | *sacīre* | — | *sacīmentum* |
 | **French** | *saisir* | *la saisie* | *la saisine* |
 | **English** | *to seize*, *to seise* | *the seizure* | *the seisin* |
-| **Inglisce** | *to seise* | *þa seișure* | *þa seisine* |
+| **Inglisce** | *to seise* | *þe seișure* | *þe seisin* |
 
 French *saisir* is a second-group verb — *je saisis*, *nous saisissons* — and carries the extended stem through much of its paradigm. English took the bare stem and conjugates it regularly, so the *-iss-* that shows in *finish* and *punish* never attached here.
 
