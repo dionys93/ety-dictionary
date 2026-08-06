@@ -4,7 +4,7 @@ When Inglisce roots interact with suffixes—particularly the default **-s** mar
 
 ---
 
-## 1. Velar Terminals (⟨-che⟩, ⟨-que⟩, ⟨-gue⟩)
+## 1. Velar Terminals (⟨-c⟩, ⟨-que⟩, ⟨-gue⟩)
 
 Verbs ending in velar and palatal-velar structures shed their terminal ⟨-e⟩ (and sometimes the preceding ⟨-h⟩) to form a lean base in the present tense. 
 
@@ -13,38 +13,39 @@ These verbs strip down to a lean **-c** base for 1st/2nd person and take **-cs**
 
 | Infinitive | Present Tense | Past Tense | Gerund | Derived Nouns / Plurals |
 | :--- | :--- | :--- | :--- | :--- |
-| **to bâche** | I, you, uie bâc; hie bâcs | bâched | bâching | bâcherie, bâcher |
-| **to brâche** | I, you, uie brâc; hie brâcs | brâched | brâching | brâc, braix |
-| **to câche** | it câcs | câched | câching | câc, caix |
-| **to faiche** | I, you, uie faic; hie faics | faiched | faiching | faic, faix |
-| **to cuâche** | I, you, uie cuâc; hie cuâcs | cuâched | cuâching | cuâc, cuaix; cuâcher |
-| **to râche** | I, you, uie râc; hie râcs | râched | râching | râc, raix |
-| **to rache** | I, you, uie rac; hie racs | rached | raching | rac, rax |
-| **to stâche** | I, you, uie stâc; hie stâcs | stâched | stâching | stâc, staix |
-| **to stache** | I, you, uie stac; hie stacs | stached | staching | stac, stax |
-| **to barche** | I, you, uie barc; hie barcs | barched | barching | barc, barx |
-| **to narche** | I, you, uie narc; hie narcs | narched | narching | narc, narx |
-| **to siarche** | I, you, uie siarc; hie siarcs | siarched | siarching| siarc, siarx |
-| **to smirche** | I, you, uie smirc; hie smircs | smirched | smirching| smirc, smêx |
-| **to bôche** | I, you, uie bôc; hie bôcs | bôched | bôching | bôc, beox |
-| **to côche** | I, you, uie côc; hie côcs | côched | côching | côc, queox |
-| **to lôche** | I, you, uie lôc; hie lôcs | lôched | lôching | lôc, leox |
-| **to hôche** | I, you, uie hôc; hie hôcs | hôched | hôching | hôc, heox |
-| **to crânche** | I, you, uie crânc; hie crâncs| crânched | crânching | crânc, crâncs; crânchy |
-| **to cróche** | I, you, uie croac; hie croacs| cróched | cróching | cróc, croax |
-| **to þainche** | I, you, uie þainc; hie þaincs | þainched | þainching | þaincs |
+| **to bâc** | I, you, uie bâc; hie bâcs | bâched | bâching | bâcherie, bâcher |
+| **to brâc** | I, you, uie brâc; hie brâcs | brâched | brâching | brâc, braix |
+| **to câc** | it câcs | câched | câching | câc, caix |
+| **to faic** | I, you, uie faic; hie faics | faiched | faiching | faic, faix |
+| **to cuâc** | I, you, uie cuâc; hie cuâcs | cuâched | cuâching | cuâc, cuaix; cuâcor |
+| **to râc** | I, you, uie râc; hie râcs | râched | râching | râc, raix |
+| **to rac** | I, you, uie rac; hie racs | rached | raching | rac, rax |
+| **to stâc** | I, you, uie stâc; hie stâcs | stâched | stâching | stâc, staix |
+| **to stac** | I, you, uie stac; hie stacs | stached | staching | stac, stax |
+| **to barc** | I, you, uie barc; hie barcs | barched | barching | barc, barx |
+| **to narc** | I, you, uie narc; hie narcs | narched | narching | narc, narx |
+| **to siarc** | I, you, uie siarc; hie siarcs | siarched | siarching| siarc, siarx |
+| **to smirc** | I, you, uie smirc; hie smircs | smirched | smirching| smirc, smêx |
+| **to uirc** | I, you, uie uirc; hie uircs | uirched | uirching| uirc, uêx |
+| **to bôc** | I, you, uie bôc; hie bôcs | bôched | bôching | bôc, beox |
+| **to côc** | I, you, uie côc; hie côcs | côched | côching | côc, queox |
+| **to lôc** | I, you, uie lôc; hie lôcs | lôched | lôching | lôc, leox |
+| **to hôc** | I, you, uie hôc; hie hôcs | hôched | hôching | hôc, heox |
+| **to crânc** | I, you, uie crânc; hie crâncs| crânched | crânching | crânc, crâncs; crânchy |
+| **to croac** | I, you, uie croac; hie croacs| croached | croaching | croac, croax |
+| **to þânc** | I, you, uie þânc; hie þâncs | þânched | þânching | þâncs |
 
-### Irregular ⟨-che⟩ Conjugations
+### Irregular ⟨-c⟩ Conjugations
 These verbs feature an internal vowel shift in the past tense/participle, but follow the standard present-tense velar reduction.
 
 | Infinitive | Present Tense | Past Tense & Participle | Gerund | Derived Nouns |
 | :--- | :--- | :--- | :--- | :--- |
-| **to breiche** | I, you, uie breic; hie breics | **bróc, brócan** | breiching | breic, breix; breicor |
-| **to forsâche**| I, you, uie forsâc; hie forsâcs | **forsôc, forsâcan** | forsâching | sâc, saix |
-| **to mâche** | I, you, uie mâc; hie mâcs | **mâde** | mâching | mâc, maix; mâcor |
-| **to spieche** | I, you, uie spiec; hie spiecs | **spóc, spócan** | spieching | spiecher, spiecor; spiec̃e |
-| **to stiche** | I, you, uie stic; hie stics | **steuc** | stiching | stic, stix |
-| **to uâche** | I, you, uie uâc; hie uâcs | **uóc, uócan** | uâching | uâc, uaix; uac̃e |
+| **to bréic** | I, you, uie breic; hie breics | **bróc, brócan** | breiching | breic, breix; breicor |
+| **to forsâc**| I, you, uie forsâc; hie forsâcs | **forsôc, forsâcan** | forsâching | sâc, saix |
+| **to mâc** | I, you, uie mâc; hie mâcs | **mâde** | mâching | mâc, maix; mâcor |
+| **to speic** | I, you, uie speic; hie speics | **spóc, spócan** | speiching | speicor; speic̃e |
+| **to stic** | I, you, uie stic; hie stics | **steuc** | stiching | stic, stix |
+| **to uâc** | I, you, uie uâc; hie uâcs | **uóc, uócan** | uâching | uâc, uaix; uac̃e |
 
 ### Regular ⟨-que⟩ Terminals
 
