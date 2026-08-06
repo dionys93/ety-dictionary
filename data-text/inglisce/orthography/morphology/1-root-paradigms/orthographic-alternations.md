@@ -82,7 +82,7 @@ These verbs feature an internal vowel shift in the past tense/participle, but fo
 | Infinitive | Present Tense | Past Tense & Participle | Gerund | Derived Nouns |
 | :--- | :--- | :--- | :--- | :--- |
 | **to dighe** | I, you, uie dig; hie digs | **dugh** | dighing | dighe, digs |
-| **to singue** | I, you, uie sing; hie sings | **sâng, song** | singuing | songue, sòngs; singuer |
+| **to singue** | I, you, uie sing; hie sings | **sâng, song** | singuing | songue, sòngs; singor |
 | **to ringue** | I, you, uie ring; hie rings | **râng, rong** | ringuing | ringue, rings |
 | **to r̃ingue** | I, you, uie r̃ing; hie r̃ings | **r̃ong** | r̃inguing | r̃ingor |
 
@@ -96,7 +96,7 @@ These verbs retain their full cluster for the infinitive, 1st/2nd person present
 
 | Infinitive / Base | 3rd Person Verb | Past / Gerund | Derived Nouns (Sg / Pl) |
 | :--- | :--- | :--- | :--- |
-| **to acte** | acs | acted / acting | acte, acs; accion(s) |
+| **to acte** | acs | acted / acting | acte, acs; accion |
 | **to connecte** | connecs | connected / connecting | conneccion |
 | **to compacte** | compacs | compacted / compacting | compact, compacs |
 | **to conflicte** | conflics | conflicted / conflicting | conflict, conflics |
