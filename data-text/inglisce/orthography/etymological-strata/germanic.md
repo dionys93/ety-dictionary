@@ -70,8 +70,8 @@ Inglisce simplifies these to *-auht* or *-oht*.
 | :--- | :--- | :--- |
 | **to catch, caught** | to **caic̃e** | **cauht** |
 | **to teach, taught** | to **tiec̃e** | **tauht** |
-| **to think, thought** | to **þinche** | **þoht** |
-| **to seek, sought** | to **síche** | **soht** |
+| **to think, thought** | to **þinc** | **þoht** |
+| **to seek, sought** | to **seic** | **soht** |
 | **to fight, fought** | to **foihte** | **foht** |
 | **to buy, bought** | to **byhe** | **boht** |
 
