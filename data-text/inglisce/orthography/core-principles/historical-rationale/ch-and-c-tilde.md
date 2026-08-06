@@ -48,13 +48,13 @@ Modern German preserves this variability: ⟨ch⟩ represents a velar or post-ve
 
 | Modern English | Inglisce | Modern German | Modern Dutch | Icelandic | Swedish | Frisian |
 |----------------|----------|---------------|--------------|-----------|---------|---------|
-| to make | to mâche | machen | maken | - | - | meitsje(n |
-| to bake | to bâche | backen | bakken | baka | baka | bakke(n |
-| to break | to breiche | brechen | breken | brjóta | bryta | brekke(n |
-| to cook | to côche | kochen | koken | kokka | - | koke(n |
-| cake | câc / to câche | Kuchen | koeken | kaka | kaka | koeke |
-| to leak | to lieche | lecken | lekken | leka | läcka | lekke(n |
-| to lick | to liche | lecken | likken | sleikja | slicka | slikje(n |
+| to make | to mâc | machen | maken | - | - | meitsje(n |
+| to bake | to bâc | backen | bakken | baka | baka | bakke(n |
+| to break | to bréic | brechen | breken | brjóta | bryta | brekke(n |
+| to cook | to côc | kochen | koken | kokka | - | koke(n |
+| cake | câc / to câc | Kuchen | koeken | kaka | kaka | koeke |
+| to leak | to liec | lecken | lekken | leka | läcka | lekke(n |
+| to lick | to lic | lecken | likken | sleikja | slicka | slikje(n |
 
 
 ### Summary
