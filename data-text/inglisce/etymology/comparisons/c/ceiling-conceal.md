@@ -8,15 +8,25 @@ A study of a verb meaning *to hide*, of the room-covering that is literally a co
 
 Proto-Indo-European **\*ḱel-** means "to cover, to conceal, to save." It is one of the most productive roots in the European vocabulary, and its descendants reached English by three separate routes.
 
-**Through Latin:**
+**Through Latin.** Two groups here, and they should be kept apart. Some English words descend from the verb *cēlāre* itself; others descend from separate Latin formations on the same root, and are cousins of *conceal* rather than children of it.
+
+*From the verb:*
 
 | Latin | English |
 |---|---|
-| *cēlāre* "to hide" | **conceal**, **ceiling** |
+| *cēlāre* "to hide" | **ceiling** |
+| *con-* + *cēlāre* | **conceal**, **concealment** |
+| *ob-* + *cēlāre* → *occultus* | **occult**, **occultation** |
+
+*From the root, but not from the verb:*
+
+| Latin | English |
+|---|---|
 | *cella* "small room, storeroom" | **cell**, **cellar**, **cellular** |
-| *clam* "secretly" | **clandestine** |
-| *occulere* | **occult** |
-| *supercilium* | **supercilious** |
+| *clam* "secretly" → *clandestīnus* | **clandestine** |
+| *cilium* "eyelid," the coverer | **cilia**, **supercilious** |
+
+A *cella* is a covered space and a *cilium* is what covers the eye, so the sense of the root is present in all of them; but neither is built on *cēlāre*, and *cell* is no more a derivative of *conceal* than *hole* is.
 
 **Through Greek:**
 
@@ -128,6 +138,25 @@ flowchart TD
 
 **English uses Norse for the everyday word.** *Hide* is Old English *hȳdan*, and *sky* is Old Norse *ský* "cloud" — so English says *hide* and *sky* where Romance says *cacher* and *ciel*, and reserves the Latin words for the formal register.
 
+### The prefixed verbs
+
+| | Concealment | To occult | Occultation |
+|---|---|---|---|
+| **Latin** | *concēlātiō* | *occulere*, *occultāre* | *occultātiō* |
+| **French** | *le recel*, *la dissimulation* | *occulter* | *l'occultation* |
+| **Spanish** | *el ocultamiento* | *ocultar* | *la ocultación* |
+| **Portuguese** | *a ocultação* | *ocultar* | *a ocultação* |
+| **Italian** | *l'occultamento* | *occultare* | *l'occultazione* |
+| **Catalan** | *l'ocultació* | *ocultar* | *l'ocultació* |
+| **English** | *the concealment* | *to occult* | *the occultation* |
+| **Inglisce** | *þa conceilement* | *to occulte* | *þi occultâcion* |
+
+**The two prefixes divided the labour differently in each language.** Latin had *concēlāre* and *occulere* side by side, both intensives of *cēlāre*. English took *con-* for the ordinary sense and left *ob-* to the astronomers and the esotericists; Iberian Romance did the reverse, making *ocultar* the everyday verb for hiding and having no descendant of *concēlāre* at all.
+
+French kept both and narrowed the first sharply: *recel* and *receler* are the legal terms for receiving stolen goods — concealment in the criminal sense only.
+
+**Only English writes the doubled consonant in one and not the other.** *Occult* has `cc` from Latin *occultus*, where the *b* of *ob-* assimilated to the following *c*; Spanish, Portuguese, and Catalan simplified it to a single letter, and Italian and English kept it.
+
 ---
 
 ## 6. The Inglisce forms
@@ -135,7 +164,10 @@ flowchart TD
 | English | Inglisce |
 |---|---|
 | conceal | `conceile` |
+| concealment | `conceilement` |
 | ceiling | `ceiling` |
+| occult | `occulte` |
+| occultation | `occultâcion` |
 
 **One word, one spelling.** English writes `ea` in *conceal* and `ei` in *ceiling*, two digraphs for the same vowel in two forms of the same verb. Nothing distinguishes them but the accident of which French spelling each word carried across.
 
@@ -144,3 +176,9 @@ flowchart TD
 **The `ei` is the one English already uses after `c`.** *Receive*, *deceive*, *perceive*, *conceive*, *ceiling*, and *seize* all write `ei` for /i/, and the schoolroom rule about *i* before *e* is a description of exactly this. `Conceile` joins the class it belongs to; English *conceal* is the member that wandered out of it.
 
 **The silent `-e` marks the verb**, and `ceiling` needs none, the `-ing` already supplying a vowel after the `l`.
+
+**`Conceilement` takes the French `-ement`** where English clips it to `-ment`, and keeps `conceile` whole inside it — so the noun shows the verb it is built on, and the `ei` runs through all three forms of the family.
+
+**`Occulte` and `occultâcion` keep the doubled consonant**, which is not decoration: the first `c` is the assimilated `b` of *ob-*, so `occ-` records a prefix that would otherwise disappear. The silent `-e` marks the verb, and `occultâcion` takes the circumflex for /eɪ/ and `-cion` for /ʃən/.
+
+The stem `occult-` therefore stands apart from `conceil-` on the page, which is correct: they are two prefixes on one Latin verb, and English's own spelling of them shares nothing either.
