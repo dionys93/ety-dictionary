@@ -95,8 +95,8 @@ Tracking document. Blanks are undecided.
 | **nook** | **`nôc`, `neox`** | |
 | **rook** (n., bird) | **`rhoc`, `rheox`** (m n) | OE *hrōc* |
 | **rook** (n., chess) | **`rôc`, `reox`** (m n) | Persian *rukh* → ML *rocus* → OF *roc* |
-| **rook** (v.) | **`rôc`, `rôcs`, `rôched`, `rôching`** | |
-| **rookie** | **`rôchie`, `rôchis`** (m n) | |
+| **rook** (v.) | **`rhoc`, `rhocs`, `rhoched`, `rhoching`** | |
+| **rookie** | **`rhochie`, `rhochis`** (m n) | |
 | **shook** | **`seôc`** | |
 | **snook** | **`snôc`, `sneox`** | |
 | **took** | **`tôc`** | |
