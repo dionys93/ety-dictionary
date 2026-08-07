@@ -204,8 +204,8 @@ Tracking document. Blanks are undecided.
 | **peek** | **`piec`** |
 | **reek** | **`riec`** |
 | **seek** | **`seic`, `seics`, `soht`, `seiching`** |
-| sheik | |
-| **shriek** | **`șreic`** |
+| sheik | șéic, șéix |
+| **shriek** | to șreic -s -hed -hing; șreic, șreix |
 | sleek | |
 | sneak | |
 | **speak** | **`speic`, `spóc`, `spócan`, `speiching`**; `speicor` |
