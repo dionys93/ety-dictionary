@@ -221,21 +221,21 @@ Tracking document. Blanks are undecided.
 ### /oʊk/
 | English | Inglisce |
 |---|---|
-| bloke | |
-| broke | |
-| choke | |
+| bloke | bloac, bloax |
+| broke | bróc |
+| choke | c̃eoc -s -hed -hing |
 | cloak | |
-| coke | |
-| croak | |
+| coke | coac |
+| croak | croac, croax |
 | folk | foac, foax |
 | joke | |
 | moke | |
 | oak | |
-| poke | |
+| poke | poac, póc? |
 | roque | |
 | smoke | |
 | soak | |
-| spoke | |
+| spoke | spoac, spoax |
 | stoke | |
 | stroke | |
 | toque | |
@@ -262,15 +262,15 @@ Tracking document. Blanks are undecided.
 ### /ɔk/ — merges with /ɑk/ for most Midwestern speakers
 | English | Inglisce |
 |---|---|
-| balk | |
-| caulk | |
-| chalk | |
-| gawk | |
-| hawk | |
-| squawk | |
-| stalk | |
-| talk | |
-| walk | |
+| balk | bauc -s -hed -hing |
+| caulk | cauc -s -hed -hing |
+| chalk | c̃auc -s -hed -hing; c̃auc, c̃aux |
+| gawk | gauc -s -hed -hing |
+| hawk | hauc, haux; to hòc -s -hed -hing |
+| squawk | scouac -s -hed -hing; scouac, scouax |
+| stalk | stauc -s -hed -hing; stauc, staux |
+| talk | tauc -s -hed -hing; tauc, taux |
+| walk | uauc -s -hed -hing; uauc, uaux |
 
 ---
 
