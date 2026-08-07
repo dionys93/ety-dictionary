@@ -40,14 +40,14 @@ Tracking document. Blanks are undecided.
 ### /ɪk/
 | English | Inglisce |
 |---|---|
-| brick | |
-| chick | |
-| click | |
-| crick | |
-| flick | |
-| hick | |
-| kick | |
-| lick | |
+| brick | to bric -s -hed -hing; bric, brix |
+| chick | c̃ic, c̃ix |
+| click | to clic -s -hed -hing |
+| crick | cric, crics |
+| flick | to flic -s -hed -hing; flic, flix |
+| hick | hic, hix |
+| kick | to chic -s -hed -hing; chic, chix |
+| lick | to lic -s -hed -hing; lic, lix |
 | nick | |
 | pick | pic |
 | prick | pric |
@@ -190,13 +190,13 @@ Tracking document. Blanks are undecided.
 | beak | beic, beix |
 | bleak | bleic |
 | cheek | c̃eic, c̃eix |
-| chic | |
+| chic | çique, çiec(s ? |
 | clique | |
-| creak | |
-| creek | |
+| creak | to creic -s -hed -hing; creic, creix |
+| creek | crique, criecs/crícs ? |
 | eke | |
-| freak | |
-| geek | |
+| freak | to freic -s -hed -hing; freic, freix |
+| geek | to gueic -s -hed -hing; gueic, gueix|
 | Greek | Greic |
 | leak | leic |
 | leek | lique |
