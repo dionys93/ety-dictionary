@@ -191,12 +191,12 @@ Tracking document. Blanks are undecided.
 | cheek | c̃eic, c̃eix |
 | chic | |
 | clique | |
-| creak | |
-| creek | |
+| creak | creic -s -hed -hing; creic, creix |
+| creek | crique, criecs/crícs |
 | eke | |
-| freak | |
-| geek | |
-| Greek | |
+| freak | freic -s -hed -hing; freic, freix |
+| geek | gueic -s -hed -hing; gueic, gueix |
+| Greek | Greic |
 | leak | leic |
 | leek | lique |
 | meek | mique, miqueness |
@@ -206,8 +206,8 @@ Tracking document. Blanks are undecided.
 | seek | seic, seics, soht, seiching |
 | sheik | șéic, șéix |
 | shriek | to șreic -s -hed -hing; șreic, șreix |
-| sleek | |
-| sneak | |
+| sleek | to slique slícs -d -ing |
+| sneak | sneic -s sneuc sneiching |
 | speak | speic, spóc, spócan, speiching; speicor |
 | squeak | |
 | streak | |
