@@ -11,16 +11,16 @@ Tracking document. Blanks are undecided.
 |---|---|
 | back | to bac -s -hed -hing; bac -s |
 | black | blac, blacar, blachest |
-| brack | |
-| clack | |
-| crack | |
-| flak | |
-| hack | |
-| jack | |
-| knack | |
+| brack | to brac -s -hed -hing; brac, brax |
+| clack | to clac -s -hed -hing; clac, clax |
+| crack | crac -s -hed -hing; crac, crax |
+| flak | flac |
+| hack | to hac -s -hed -hing; hac, hax; hachy |
+| jack | to jac -s -hed -hing; jac, jax |
+| knack | nac -s -hed -hing; nac, nax |
 | lack | to lac -s -hed -hing; laquie |
 | pack | to pac -s -hed -hing; pac -s |
-| plaque | |
+| plaque | plac, placs |
 | quack | to cuac -s -hed -hing; cuac, cuax |
 | rack | to rac -s -hed -hing; rac, rax |
 | sack | to sac -s -hed -hing; sac, sacs |
@@ -29,12 +29,13 @@ Tracking document. Blanks are undecided.
 | smack | to smac -s -hed -hing; smac, smax |
 | snack | to snac -s -hed -hing; snac, snax |
 | stack | to stac -s -hed -hing; stac, stax |
-| tack | |
-| thwack | |
-| track | |
-| whack | |
-| wrack | |
+| tack | to tac -s -hed -hing; tac, tacs; tachy |
+| thwack | to þuac -s -hed -hing; þuac, þuax |
+| track | to trac -s -hed -hing; trac, trax |
+| whack | to uac -s -hed -hing |
+| wrack | to r̃ac -s -hed -hing; r̃ac, r̃ax |
 | yak | yac, yax |
+| yack | to yac -s -hed -hing |
 
 ### /ɪk/
 | English | Inglisce |
@@ -248,8 +249,8 @@ Tracking document. Blanks are undecided.
 |---|---|
 | bike, bicycle | to bîc -s -hed -hing; bîc -s; bîcycle |
 | dike | dîc, dîx |
-| hike | |
-| like | |
+| hike | to hîc -s -hed -hing; hîc, hîx |
+| like | to lîc -s -hed -hing; lîc, lîcs |
 | Mike | |
 | pike | pîque, pîx |
 | psych | |
