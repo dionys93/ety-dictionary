@@ -213,8 +213,8 @@ Tracking document. Blanks are undecided.
 | streak | |
 | teak | |
 | tweak | |
-| weak | |
-| week | |
+| weak | ueic |
+| week | uiec |
 | wreak | |
 
 ### /oʊk/
