@@ -48,19 +48,19 @@ Tracking document. Blanks are undecided.
 | hick | hic, hix |
 | kick | to chic -s -hed -hing; chic, chix |
 | lick | to lic -s -hed -hing; lic, lix |
-| nick | |
+| nick | to nic -s -hed -hing |
 | pick | pic |
 | prick | pric |
-| quick | |
-| rick | |
-| sick | |
-| slick | |
-| snick | |
-| stick | |
-| thick | |
-| tick | |
-| trick | |
-| wick | |
+| quick | cuic -ar -hest -hly |
+| rick | ric |
+| sick | sic -ar -hest -hly; to sicane |
+| slick | slic -ar -hest |
+| snick | to snic -s -hed -hing |
+| stick | to stic -s steuc stiching; stic, stix |
+| thick | þic -ar -hest |
+| tick | to tic -s -hed -hing; tic, tix |
+| trick | to tric -s -hed -hing; tric, trix |
+| wick | to uic -s -hed -hing; uic, uix |
 
 ### /ɛk/ (ec or eque?)
 | English | Inglisce |
@@ -77,7 +77,7 @@ Tracking document. Blanks are undecided.
 | speck | |
 | tech | |
 | trek | |
-| wreck | |
+| wreck | to r̃ec -s -hed -hing; r̃ec, r̃ex |
 
 ### /ʊk/
 | English | Inglisce | |
@@ -109,17 +109,17 @@ Tracking document. Blanks are undecided.
 | block | |
 | clock | |
 | crock | |
-| dock | |
-| flock | |
+| dock | to doc -s -hed -hing; doc, dox |
+| flock | to floc -s -hed -hing; floc, flox |
 | frock | |
 | hock | |
 | jock | |
-| knock | |
-| lock | |
-| mock | |
+| knock | to gnoc -s -hed -hing; gnoc, gnox |
+| lock | to loc -s -hed -hing, loc, locs |
+| mock | to moc -s -hed -hing; moc-, mocherie |
 | pock | |
-| rock | |
-| shock | |
+| rock | to roc -s -hed -hing; roc, rox |
+| shock | to cioc -s -hed -hing; cioc, ciox |
 | smock | |
 | sock | |
 | stock | to stoc -s -hed -hing; stoc, stox |
