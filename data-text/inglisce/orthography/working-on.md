@@ -48,8 +48,8 @@ Tracking document. Blanks are undecided.
 | kick | |
 | lick | |
 | nick | |
-| pick | |
-| prick | |
+| pick | pic |
+| prick | pric |
 | quick | |
 | rick | |
 | sick | |
@@ -70,7 +70,7 @@ Tracking document. Blanks are undecided.
 | fleck | |
 | heck | |
 | neck | |
-| peck | |
+| peck | pec |
 | sec | |
 | spec | |
 | speck | |
@@ -191,30 +191,31 @@ Tracking document. Blanks are undecided.
 | cheek | c̃eic, c̃eix |
 | chic | |
 | clique | |
-| creak | creic -s -hed -hing; creic, creix |
-| creek | crique, criecs/crícs |
+| creak | |
+| creek | |
 | eke | |
-| freak | freic -s -hed -hing; freic, freix |
-| geek | gueic -s -hed -hing; gueic, gueix |
-| Greek | Greic |
+| freak | |
+| geek | |
+| Greek | |
 | leak | leic |
 | leek | lique |
 | meek | mique, miqueness |
-| peak, pique | pique |
+| peak | peic |
 | peek | piec |
+| pique | pique, pícs |
 | reek | riec |
 | seek | seic, seics, soht, seiching |
 | sheik | șéic, șéix |
 | shriek | to șreic -s -hed -hing; șreic, șreix |
-| sleek | to slique slícs -d -ing |
-| sneak | sneic -s sneuc sneiching |
+| sleek | |
+| sneak | |
 | speak | speic, spóc, spócan, speiching; speicor |
 | squeak | |
 | streak | |
 | teak | |
 | tweak | |
-| weak | ueic |
-| week | uiec |
+| weak | |
+| week | |
 | wreak | |
 
 ### /oʊk/
@@ -245,12 +246,12 @@ Tracking document. Blanks are undecided.
 ### /aɪk/
 | English | Inglisce |
 |---|---|
-| bike | to bîc -s -hed -hing; bîc -s |
+| bike, bicycle | to bîc -s -hed -hing; bîc -s; bîcycle |
 | dike | |
 | hike | |
 | like | |
 | Mike | |
-| pike | |
+| pike | pîque, pîx |
 | psych | |
 | shrike | |
 | spike | |
@@ -290,22 +291,22 @@ Tracking document. Blanks are undecided.
 ### /ɪtʃ/
 | English | Inglisce |
 |---|---|
-| bitch | |
-| ditch | |
-| fitch | |
-| flitch | |
-| glitch | |
-| hitch | |
-| itch | |
-| kitsch | |
-| niche | |
-| pitch | |
-| quitch | |
-| rich | |
-| snitch | |
-| stitch | |
-| switch | |
-| twitch | |
+| bitch | bic̃e |
+| ditch | dic̃e |
+| fitch | fic̃e |
+| flitch | flic̃e |
+| glitch | glic̃e |
+| hitch | hic̃e |
+| itch | ic̃e |
+| kitsch | chic̃e |
+| niche | niçe |
+| pitch | to pic̃e -s -d -ing |
+| quitch | coic̃e |
+| rich | ric̃ (adj), ric̃e (noun) |
+| snitch | snic̃e |
+| stitch | stic̃e |
+| switch | suic̃e |
+| twitch | tuic̃e |
 | which | uic̃ |
 | witch | uix̃e |
 
@@ -347,12 +348,13 @@ Tracking document. Blanks are undecided.
 |---|---|
 | clutch | |
 | crutch | |
-| Dutch | |
+| Dutch | duț |
+| duchess | duc̃ess |
 | hutch | |
-| much | |
+| much | moc̃ |
 | smutch | |
-| such | |
-| touch | |
+| such | soc̃ |
+| touch | touc̃e |
 
 ### /eɪtʃ/
 | English | Inglisce |
@@ -378,6 +380,7 @@ Tracking document. Blanks are undecided.
 | breech | broic̃e |
 | each | eic̃ |
 | impeach | impeic̃e |
+| keech | (British) |
 | leach | leic̃e |
 | leech | loic̃e |
 | peach | poic̃e |
@@ -390,6 +393,7 @@ Tracking document. Blanks are undecided.
 ### /oʊtʃ/
 | English | Inglisce |
 |---|---|
+| approach | approc̃e |
 | broach, brooch | broc̃e |
 | cloche | cloçe |
 | coach | coc̃e |
@@ -399,13 +403,13 @@ Tracking document. Blanks are undecided.
 ### /aʊtʃ/
 | English | Inglisce |
 |---|---|
-| couch | |
-| crouch | |
-| grouch | |
-| ouch | |
-| pouch | |
-| slouch | |
-| vouch | |
+| couch | coac̃e |
+| crouch | croac̃e |
+| grouch | groac̃e |
+| ouch | oac̃e |
+| pouch | poac̃e |
+| slouch | sloac̃e |
+| vouch | voac̃e |
 
 ### /ɔtʃ/
 | English | Inglisce |
@@ -565,6 +569,36 @@ Rhoc records the consonant that was there. *Rook* the chess piece is Persian *ru
 
 The verb *to rook* and *rookie* both descend from the bird — the bird's reputation gave the sense "swindler" — and so take rh- with it.
 
+## Note K — the \*pikk- family
+
+Two Proto-Germanic bases, and English merged them.
+
+| | Base A — \**pikkōną* | Base B — \**pīk* |
+|---|---|---|
+| sense | to knock, peck, prick | a pointed object |
+| Old English | \**pician*, \**piccean* | *pīc* |
+| through Francia | Frankish \**pikkōn* → VL \**pīccare* → OF *pic*, *piquer* | — |
+| English words | pick, peck, pitch, pique, pike (the weapon) | pike (spike, fish), peak |
+
+Base B is the collateral long-vowel form of base A, so the two are ablaut variants of one root — related, but a step apart. *Pick*, *peck*, *pitch*, and *pique* are doublets in the strict sense: one Germanic verb, four English words, three inherited and one that went to Francia and came back through French.
+
+**Pike is both.** The native *pīc* gave the spike and the fish; the infantry weapon of the 1510s is French *pique* borrowed outright. The two lines had already merged by then, both meaning a sharp point and both sounding alike.
+
+| English | Inglisce | Why |
+|---|---|---|
+| pick | pic | base A, native |
+| peck | pec | base A, native |
+| pitch | pic̃e | base A, native |
+| pique | pique | base A, through France |
+| pike | pîque | base A weapon sense, merged with the native |
+| peak | peic | base B, native only — no French route to record |
+| prick | pric | WGmc \**prikojan* — the `r` was never in \**pikkōną* |
+| peek | piec | ME *piken*, origin obscure; separated from peic |
+
+`Qu` marks the words that went through France. `Peak` cannot take it, being a 1520s variant of the native *pike* that never left England, and so falls back on the default `ei`.
+
+**Neither the vowel nor the consonant frame sorts this family.** Four base-A words carry four different vowels, and `p_c` covers *pick*, *peck*, and *peek* alike — one outsider inside the frame. The family is a root scattered across vowels, and no spelling can unify it without misreporting the sound. What the spelling can do is record the route, which is what `qu` does.
+
 ## Note J — the `-x` plural
 
 Where the singular ends in a velar, the plural writes `-x` for /ks/ rather than `-cs`:
@@ -580,7 +614,26 @@ Where the singular ends in a velar, the plural writes `-x` for /ks/ rather than 
 
 The `-eox` plurals of note G are the same device with the older vowel.
 
-Not every noun takes it: sac has sacs, lâc has lâcs, bîc has bîcs. Whether that tracks the word's history or is still being settled is a question for the class as a whole.
+The conditioning appears to be the **plural's own vowel**, not the singular's:
+
+| Plural vowel | Ending | Examples |
+|---|---|---|
+| digraph | `-x` | raix, caix, bréix, șreix, foax, cuax, beox |
+| single letter | `-cs` | sacs, lâcs, bîcs, pícs |
+
+`Câc` : `caix` fits — single `â` in the singular, digraph `ai` in the plural, and the plural governs. `Bîc` : `bîcs` fits, single `î` throughout.
+
+**`Pîx` is the exception.** By the rule it should be `pîcs`. The likely reason is that `pícs` and `pîcs` would then differ by one accent on a pair the system is deliberately keeping apart, and `pícs` : `pîx` separates them properly — but it means `-x` is doing a second job.
+
+## Note L — two stress tests
+
+**Bike is `bîc`.** The word is a clipping of *bicycle*, so its vowel is Greek *bi-* through Latin rather than a native diphthong, and `bîc` : `bîcycle` keeps the relation. The `c` softens before `y` in the full form, which is wanted there — unlike `blachest`, where the softening had to be blocked.
+
+`Bîc` and `pîque` are now separated by the consonant alone, both being /aɪk/ with a circumflex. That is correct, the words being unrelated, and it puts weight on the `c` : `qu` distinction. Most of the /aɪk/ slot will take `c` — *dike* is OE *dīc*, *strike* is OE *strīcan* — so `qu` stays rare and meaningful.
+
+**Peace is `peice` and piece is unchanged.** The two are unrelated: *peace* is Latin *pācem*, from \**peh₂ǵ-* "to fasten," the family of *pact*, *pagan*, and *propagate*; *piece* is Gaulish \**pettia* "a bit," through Medieval Latin *pecia*.
+
+`Peice` takes the default and `piece` keeps its English spelling as the separator. `Ie` is not reserved for alternating pairs — note C applies it where the etymology supports it, not mechanically — so a word using `ie` without an /ɛ/ partner is within the rule.
 
 ## Still open
 
