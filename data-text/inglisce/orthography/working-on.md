@@ -9,8 +9,8 @@ Tracking document. Blanks are undecided.
 ### /æk/
 | English | Inglisce |
 |---|---|
-| back | |
-| **black** | **`blac`, `blacar`, `blachest`** |
+| back | to bac -s -hed -hing; bac -s |
+| black | blac, blacar, blachest |
 | brack | |
 | clack | |
 | crack | |
@@ -18,23 +18,23 @@ Tracking document. Blanks are undecided.
 | hack | |
 | jack | |
 | knack | |
-| lack | |
-| pack | |
+| lack | to lac -s -hed -hing; laquie |
+| pack | to pac -s -hed -hing; pac -s |
 | plaque | |
-| quack | *no vowel mark needed — see note A* |
-| rack | |
-| sack | |
-| shack | |
-| slack | |
-| smack | |
-| snack | |
-| stack | |
+| quack | to cuac -s -hed -hing; cuac, cuax |
+| rack | to rac -s -hed -hing; rac, rax |
+| sack | to sac -s -hed -hing; sac, sacs |
+| shack | to siac -s -hed -hing; siac, siax |
+| slack | to slac -s -hed -hing; slac, slax |
+| smack | to smac -s -hed -hing; smac, smax |
+| snack | to snac -s -hed -hing; snac, snax |
+| stack | to stac -s -hed -hing; stac, stax |
 | tack | |
 | thwack | |
 | track | |
-| whack | *no vowel mark needed — see note A* |
+| whack | |
 | wrack | |
-| yak | |
+| yak | yac, yax |
 
 ### /ɪk/
 | English | Inglisce |
@@ -278,14 +278,14 @@ Tracking document. Blanks are undecided.
 ### /ætʃ/
 | English | Inglisce |
 |---|---|
-| batch | |
-| hatch | |
-| latch | |
-| match | |
-| ratch | |
-| scratch | |
-| snatch | |
-| thatch | |
+| batch | to bac̃e -s -d -ing |
+| hatch | to hac̃e -s -d -ing |
+| latch | to lac̃e -s -d -ing |
+| match | to mac̃e -s -d -ing |
+| ratch | to rac̃e -s -d -ing |
+| scratch | to scrac̃e -s -d -ing |
+| snatch | to snac̃e -s -d -ing |
+| thatch | to þac̃e -s -d -ing |
 
 ### /ɪtʃ/
 | English | Inglisce |
@@ -306,8 +306,8 @@ Tracking document. Blanks are undecided.
 | stitch | |
 | switch | |
 | twitch | |
-| which | |
-| witch | |
+| which | uic̃ |
+| witch | uix̃e |
 
 ### /ɛtʃ/
 | English | Inglisce |
