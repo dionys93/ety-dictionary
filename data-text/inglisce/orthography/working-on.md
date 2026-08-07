@@ -196,7 +196,7 @@ Tracking document. Blanks are undecided.
 | eke | |
 | freak | |
 | geek | |
-| Greek | |
+| Greek | Greic |
 | leak | leic |
 | leek | lique |
 | meek | mique, miqueness |
@@ -207,16 +207,16 @@ Tracking document. Blanks are undecided.
 | seek | seic, seics, soht, seiching |
 | sheik | șéic, șéix |
 | shriek | to șreic -s -hed -hing; șreic, șreix |
-| sleek | |
-| sneak | |
+| sleek | slique |
+| sneak | sneic -s sneuc sneiching |
 | speak | speic, spóc, spócan, speiching; speicor |
-| squeak | |
-| streak | |
-| teak | |
-| tweak | |
-| weak | |
-| week | |
-| wreak | |
+| squeak | scouic -s -hed -hing |
+| streak | streic -s -hed -hing; streic, streix |
+| teak | teic, teix |
+| tweak | tuiec |
+| weak | ueic |
+| week | uiec |
+| wreak | r̃eic |
 
 ### /oʊk/
 | English | Inglisce |
@@ -247,15 +247,15 @@ Tracking document. Blanks are undecided.
 | English | Inglisce |
 |---|---|
 | bike, bicycle | to bîc -s -hed -hing; bîc -s; bîcycle |
-| dike | |
+| dike | dîc, dîx |
 | hike | |
 | like | |
 | Mike | |
 | pike | pîque, pîx |
 | psych | |
 | shrike | |
-| spike | |
-| strike | |
+| spike | to spîc -hed -hing; spîc, spîx |
+| strike | to strîc -s streuc/-hed -hing; strîc, strîx |
 | trike | |
 | tyke | |
 
