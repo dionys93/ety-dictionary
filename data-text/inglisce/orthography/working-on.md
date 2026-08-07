@@ -62,16 +62,16 @@ Tracking document. Blanks are undecided.
 | trick | |
 | wick | |
 
-### /ɛk/
+### /ɛk/ (ec or eque?)
 | English | Inglisce |
 |---|---|
 | beck | |
-| check | |
-| deck | |
+| check | to c̃ec -s -hed -hing / to c̃eque c̃ec(s c̃equed c̃equing |
+| deck | to dec -s -hed -hing; dec, dex |
 | fleck | |
-| heck | |
-| neck | |
-| peck | pec |
+| heck | hec |
+| neck | nec, nex |
+| peck | to pec -s -hed -hing; pec, pex |
 | sec | |
 | spec | |
 | speck | |
@@ -122,25 +122,25 @@ Tracking document. Blanks are undecided.
 | shock | |
 | smock | |
 | sock | |
-| stock | |
+| stock | to stoc -s -hed -hing; stoc, stox |
 | wok | |
 
 ### /ʌk/
 | English | Inglisce |
 |---|---|
-| buck | |
+| buck | to beuc -s -hed -hing; beuc, beux |
 | chuck | |
 | cluck | |
 | duck | |
-| luck | |
-| muck | |
-| pluck | |
-| shuck | |
-| struck | |
-| stuck | |
-| suck | |
-| truck | |
-| tuck | |
+| luck | to hluc aut; hluc; hluchy |
+| muck | to meuc -s -hed -hing |
+| pluck | to pluc -s -hed -hing |
+| shuck | to seuc -s -hed -hing; seux |
+| struck | streuc |
+| stuck | steuc |
+| suck | to suc -s -hed -hing |
+| truck | to treuc -s -hed -hing; treuc, treux |
+| tuck | to tuc -s -hed -hing |
 
 ### /eɪk/
 | English | Inglisce |
@@ -225,11 +225,11 @@ Tracking document. Blanks are undecided.
 | bloke | bloac, bloax |
 | broke | bróc |
 | choke | c̃eoc -s -hed -hing |
-| cloak | |
+| cloak | to cloac -s -hed -hing / to cloque cloac(s cloqued cloquing; cloac/cloque, cloax |
 | coke | coac |
 | croak | croac, croax |
 | folk | foac, foax |
-| joke | |
+| joke | joque/joac |
 | moke | |
 | oak | |
 | poke | poac, póc? |
