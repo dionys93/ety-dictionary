@@ -9,6 +9,7 @@ Tracking document. Blanks are undecided.
 ### /æk/
 | English | Inglisce |
 |---|---|
+| attack | to attaque attac(s attaqued attaquing |
 | back | to bac -s -hed -hing; bac -s |
 | black | to blac -s -hed -hing; blac, blacar, blachest |
 | brack | to brac -s -hed -hing; brac, brax |
@@ -252,10 +253,11 @@ Tracking document. Blanks are undecided.
 | dike | dîc, dîx |
 | hike | to hîc -s -hed -hing; hîc, hîx |
 | like | to lîc -s -hed -hing; lîc, lîcs |
-| Mike | |
+| Mike | Mîch|
+| microphone | mîcrophone; mîc, mîcs |
 | pike | pîque, pîx |
-| psych | |
-| shrike | |
+| psyche, psychology | sîchie, sycologie |
+| shrike | șrîc, șrîx |
 | spike | to spîc -hed -hing; spîc, spîx |
 | strike | to strîc -s streuc/-hed -hing; strîc, strîx |
 | trike | |
@@ -269,7 +271,7 @@ Tracking document. Blanks are undecided.
 | chalk | c̃auc -s -hed -hing; c̃auc, c̃aux |
 | gawk | gauc -s -hed -hing |
 | hawk | hauc, haux; to hòc -s -hed -hing |
-| squawk | scouac -s -hed -hing; scouac, scouax |
+| squawk | to squauc -s -hed -hing; squauc, squaux |
 | stalk | stauc -s -hed -hing; stauc, staux |
 | talk | tauc -s -hed -hing; tauc, taux |
 | walk | uauc -s -hed -hing; uauc, uaux |
@@ -281,6 +283,7 @@ Tracking document. Blanks are undecided.
 ### /ætʃ/
 | English | Inglisce |
 |---|---|
+| attach | to attac̃e -s -d -ing; attac̃ement |
 | batch | to bac̃e -s -d -ing |
 | hatch | to hac̃e -s -d -ing |
 | latch | to lac̃e -s -d -ing |
@@ -336,13 +339,13 @@ Tracking document. Blanks are undecided.
 ### /ɑtʃ/
 | English | Inglisce |
 |---|---|
-| blotch | |
-| botch | |
-| crotch | |
-| notch | |
-| scotch | |
-| splotch | |
-| swatch | |
+| blotch | bloț, bloțy  |
+| botch | bocc̃e |
+| crotch | crocc̃e |
+| notch | nocc̃e |
+| scotch | scoț |
+| splotch | sploț |
+| swatch | to suac̃e |
 | watch | uac̃e, uac̃es, uac̃ed, uac̃ing |
 
 ### /ʌtʃ/
@@ -476,22 +479,6 @@ These hold across the whole data set with no exceptions found.
 ---
 
 ## Needs establishing
-
-### 1. How /ʃ/ is written before a vowel
-
-Four spellings appear for one sound, and the conditioning is not stated:
-
-| Form | English | Spelling of /ʃ/ |
-|---|---|---|
-| siac | shack | `si` |
-| cioc | shock | `ci` |
-| seac | shake | `se` |
-| seuc | shuck | `se` |
-| seôc | shook | `se` |
-| șreic | shriek | `ș` |
-| șéic | sheik | `ș` |
-
-`Ș` appears before a consonant and the others before a vowel, which may be the rule — but `si`, `se`, and `ci` are then three spellings for the same position. Old English *sceacan*, *sceoc*, and *sceacca* all have `sc`.
 
 ### 2. `eu` against `u` in /ʌk/
 
