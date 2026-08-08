@@ -225,22 +225,23 @@ Tracking document. Blanks are undecided.
 | bloke | bloac, bloax |
 | broke | bróc |
 | choke | c̃eoc -s -hed -hing |
-| cloak | to cloque cloac(s cloqued cloquing; cloac/cloque, cloax |
+| cloak | to cloque cloac(s cloqued cloquing; cloque, cloax |
 | coke | coac |
-| croak | creoc, croax |
+| croak | to creoc -s -hed -hing; creoc, croax |
 | folk | foac, foax |
 | joke | to joque joac(s joqued joquing |
-| moke | |
+| moke (donkey) | moac, moax |
 | oak | oac |
 | poke | to poque poac(s poqued poquing |
-| roque | |
-| smoke | |
-| soak | |
+| roque | roque |
+| smoke | to smoque smoac(s smoqued smoquing |
+| soak | to soque soac(s soqued soquing |
 | spoke | spoac, spoax |
-| stoke | |
+| stoke | to stoque stoac(s stoqued stoquing |
 | stroke | stroque stroac(s stroqued stroquing |
-| toque | |
-| woke | |
+| toque | toque, toax |
+| toke | to toque toac(s toqued toquing |
+| woke | uóc |
 | yoke | yoque, yoax |
 | yolk | eoc, eóx |
 
