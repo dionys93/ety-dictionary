@@ -191,10 +191,10 @@ Tracking document. Blanks are undecided.
 | bleak | bleic |
 | cheek | c̃eic, c̃eix |
 | chic | çique, çiec(s ? |
-| clique | |
+| clique | clique, clícs |
 | creak | to creic -s -hed -hing; creic, creix |
 | creek | crique, criecs/crícs ? |
-| eke | |
+| eke | to eic -s -hed -hing |
 | freak | to freic -s -hed -hing; freic, freix |
 | geek | to gueic -s -hed -hing; gueic, gueix|
 | Greek | Greic |
