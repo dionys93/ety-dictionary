@@ -10,7 +10,7 @@ Tracking document. Blanks are undecided.
 | English | Inglisce |
 |---|---|
 | back | to bac -s -hed -hing; bac -s |
-| black | blac, blacar, blachest |
+| black | to blac -s -hed -hing; blac, blacar, blachest |
 | brack | to brac -s -hed -hing; brac, brax |
 | clack | to clac -s -hed -hing; clac, clax |
 | crack | crac -s -hed -hing; crac, crax |
@@ -129,9 +129,9 @@ Tracking document. Blanks are undecided.
 | English | Inglisce |
 |---|---|
 | buck | to beuc -s -hed -hing; beuc, beux |
-| chuck | |
-| cluck | |
-| duck | |
+| chuck | to c̃euc -s -hed -hing; c̃euc, c̃eux |
+| cluck | to cleuc -s -hed -hing; cleuc, cleux |
+| duck | to deuc -s -hed -hing; deuc, deux |
 | luck | to hluc aut; hluc; hluchy |
 | muck | to meuc -s -hed -hing |
 | pluck | to pluc -s -hed -hing |
