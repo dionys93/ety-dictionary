@@ -227,7 +227,7 @@ Tracking document. Blanks are undecided.
 | choke | c̃eoc -s -hed -hing |
 | cloak | to cloac -s -hed -hing / to cloque cloac(s cloqued cloquing; cloac/cloque, cloax |
 | coke | cóc |
-| croak | croac, croax |
+| croak | creoc, croax |
 | folk | foac, foax |
 | joke | to joque joac(s joqued joquing |
 | moke | |
