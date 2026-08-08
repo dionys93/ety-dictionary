@@ -67,12 +67,13 @@ Tracking document. Blanks are undecided.
 | English | Inglisce |
 |---|---|
 | beck | to bec -s -hed -hing |
-| check | to c̃ec -s -hed -hing / to c̃eque c̃ec(s c̃equed c̃equing |
+| check | to c̃eque c̃eac(s c̃equed c̃equing; c̃eque, c̃eacs |
 | deck | to dec -s -hed -hing; dec, dex |
 | fleck | to flec -s -hed -hing |
 | heck | hec |
 | neck | nec, nex |
 | peck | to pec -s -hed -hing; pec, pex |
+| pectoral | pectóral, pecs |
 | sec | sec, secs |
 | spec | spec, specs |
 | speck | speac, speax |
