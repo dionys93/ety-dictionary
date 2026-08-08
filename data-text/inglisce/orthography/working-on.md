@@ -12,7 +12,7 @@ Tracking document. Blanks are undecided.
 | attack | to attaque attac(s attaqued attaquing |
 | back | to bac -s -hed -hing; bac -s |
 | black | to blac -s -hed -hing; blac, blacar, blachest |
-| brack | to brac -s -hed -hing; brac, brax |
+| brack | brac, brachisce |
 | clack | to clac -s -hed -hing; clac, clax |
 | crack | crac -s -hed -hing; crac, crax |
 | flak | flac |
