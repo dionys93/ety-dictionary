@@ -190,10 +190,10 @@ Tracking document. Blanks are undecided.
 | beak | beic, beix |
 | bleak | bleic |
 | cheek | c̃eic, c̃eix |
-| chic | çique, çiec(s ? |
+| chic | çique |
 | clique | clique, clícs |
 | creak | to creic -s -hed -hing; creic, creix |
-| creek | crique, criecs/crícs ? |
+| creek | crique, crícs |
 | eke | to eic -s -hed -hing |
 | freak | to freic -s -hed -hing; freic, freix |
 | geek | to gueic -s -hed -hing; gueic, gueix|
@@ -217,7 +217,7 @@ Tracking document. Blanks are undecided.
 | tweak | tuiec |
 | weak | ueic |
 | week | uiec |
-| wreak | r̃eic |
+| wreak | to r̃eic -s -hed -hing |
 
 ### /oʊk/
 | English | Inglisce |
@@ -231,7 +231,7 @@ Tracking document. Blanks are undecided.
 | folk | foac, foax |
 | joke | joque/joac |
 | moke | |
-| oak | |
+| oak | oac |
 | poke | poac, póc? |
 | roque | |
 | smoke | |
