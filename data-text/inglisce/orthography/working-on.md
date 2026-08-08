@@ -74,8 +74,8 @@ Tracking document. Blanks are undecided.
 | peck | to pec -s -hed -hing; pec, pex |
 | sec | sec, secs |
 | spec | spec, specs |
-| speck | spec, spex |
-| tech | |
+| speck | speac, speax |
+| tech | tech, technologie, technical, technicaletie |
 | trek | to trec -s -hed -hing |
 | wreck | to r̃ec -s -hed -hing; r̃ec, r̃ex |
 
@@ -190,13 +190,13 @@ Tracking document. Blanks are undecided.
 | beak | beic, beix |
 | bleak | bleic |
 | cheek | c̃eic, c̃eix |
-| chic | çique |
-| clique | clique, clícs |
+| chic | çique |
+| clique | clique, clícs |
 | creak | to creic -s -hed -hing; creic, creix |
-| creek | crique, crícs |
+| creek | crique, crícs |
 | eke | to eic -s -hed -hing |
 | freak | to freic -s -hed -hing; freic, freix |
-| geek | to gueic -s -hed -hing; gueic, gueix|
+| geek | to gueic -s -hed -hing; gueic, gueix |
 | Greek | Greic |
 | leak | leic |
 | leek | liec |
@@ -223,40 +223,40 @@ Tracking document. Blanks are undecided.
 | English | Inglisce |
 |---|---|
 | bloke | bloac, bloax |
-| broke | bróc |
+| broke | bróc |
 | choke | c̃eoc -s -hed -hing |
 | cloak | to cloac -s -hed -hing / to cloque cloac(s cloqued cloquing; cloac/cloque, cloax |
-| coke | coac |
+| coke | cóc |
 | croak | croac, croax |
 | folk | foac, foax |
-| joke | joque/joac |
+| joke | to joque joac(s joqued joquing |
 | moke | |
 | oak | oac |
-| poke | poac, póc? |
+| poke | to poque poac(s poqued poquing |
 | roque | |
 | smoke | |
 | soak | |
 | spoke | spoac, spoax |
 | stoke | |
-| stroke | |
+| stroke | stroque stroac(s stroqued stroquing |
 | toque | |
 | woke | |
-| yoke | |
-| yolk | |
+| yoke | yoque, yoax |
+| yolk | eoc, eóx |
 
 ### /aɪk/
 | English | Inglisce |
 |---|---|
 | bike, bicycle | to bîc -s -hed -hing; bîc -s; bîcycle |
-| dike | dîc, dîx |
-| hike | to hîc -s -hed -hing; hîc, hîx |
-| like | to lîc -s -hed -hing; lîc, lîcs |
+| dike | dîc, dîx |
+| hike | to hîc -s -hed -hing; hîc, hîx |
+| like | to lîc -s -hed -hing; lîc, lîcs |
 | Mike | |
 | pike | pîque, pîx |
 | psych | |
 | shrike | |
-| spike | to spîc -hed -hing; spîc, spîx |
-| strike | to strîc -s streuc/-hed -hing; strîc, strîx |
+| spike | to spîc -hed -hing; spîc, spîx |
+| strike | to strîc -s streuc/-hed -hing; strîc, strîx |
 | trike | |
 | tyke | |
 
@@ -267,7 +267,7 @@ Tracking document. Blanks are undecided.
 | caulk | cauc -s -hed -hing |
 | chalk | c̃auc -s -hed -hing; c̃auc, c̃aux |
 | gawk | gauc -s -hed -hing |
-| hawk | hauc, haux; to hòc -s -hed -hing |
+| hawk | hauc, haux; to hòc -s -hed -hing |
 | squawk | scouac -s -hed -hing; scouac, scouax |
 | stalk | stauc -s -hed -hing; stauc, staux |
 | talk | tauc -s -hed -hing; tauc, taux |
@@ -300,7 +300,7 @@ Tracking document. Blanks are undecided.
 | hitch | hic̃e |
 | itch | ic̃e |
 | kitsch | chic̃e |
-| niche | niçe |
+| niche | niçe |
 | pitch | to pic̃e -s -d -ing |
 | quitch | coic̃e |
 | rich | ric̃ (adj), ric̃e (noun) |
@@ -349,7 +349,7 @@ Tracking document. Blanks are undecided.
 |---|---|
 | clutch | |
 | crutch | |
-| Dutch | duț |
+| Dutch | duț |
 | duchess | duc̃ess |
 | hutch | |
 | much | moc̃ |
@@ -422,21 +422,205 @@ No English words.
 
 ---
 
+# State of the system
+
+## Established
+
+These hold across the whole data set with no exceptions found.
+
+### Consonants
+
+| Grapheme | Value | Records | Examples |
+|---|---|---|---|
+| c | /k/ before back vowel or finally | — | bac, doc, seic |
+| ch | /k/ before front vowel | blocks the softening | blachest, bôching |
+| ch | /k/ | a Germanic dorsal | chic (kick), chic̃e (kitsch) |
+| qu | /k/, `u` silent | a French route, or a front vowel following | pique, queox, lâque |
+| c̃ | /tʃ/ | a historical *c* or *k* | caic̃e, ric̃e, coc̃e |
+| ț | /tʃ/ | a historical *t* | duț |
+| ș | /ʃ/ | a historical *s* | șreic, șéic |
+| ç | /ʃ/ before front vowel, /s/ before back | one stage past what the position gives | niçe, cloçe |
+| r̃ | /r/ | a lost *w* in *wr-* | r̃ac, r̃ec, r̃eic |
+| rh | /r/ | a lost *h* in *hr-* | rhoc, rheox |
+| þ | /θ/ | — | þic, þuac, þac̃e |
+| u | /w/ | — | uic, uac̃e, uâc |
+| x | /ks/ | the plural after a digraph | raix, beox, þuax |
+
+### Vowels
+
+| Grapheme | Value | Examples |
+|---|---|---|
+| ei | /i/ — the default | beic, seic, teic, streic |
+| oi | /i/ — a separator | boic̃e, loic̃e, poic̃e |
+| ie | /i/ — the tense partner of `ai`, or a separator | piec, riec, piece |
+| ai | /ɛ/ from a historical *a*, or the lax partner | caic̃e, aic̃e, braicfast |
+| au | /ɔ/ | bauc, tauc, tauht |
+| oa | /oʊ/, but `oac̃` always /aʊ/ | croac, coac̃e |
+| â | /eɪ/ | bâc, câc, uâc |
+| î | /aɪ/ | bîc, hîc, strîc |
+| ô | /ʊ/ from OE *ō* | bôc, lôc |
+| û | /ʊ/ from OE *ū* | brûc |
+| ó | /oʊ/ | bróc, spóc, uóc |
+
+### Morphology
+
+| | Rule | Examples |
+|---|---|---|
+| plural | `-x` after a digraph, `-cs` after a single letter | raix, caix : sacs, bîcs |
+| plural of `ô` nouns | `-eox` | bôc : beox |
+| adjective | `-ar`, `-hest`, `-hly` | blacar, blachest, sichly |
+| noun against adjective | the noun takes silent `-e` | ric̃ : ric̃e |
+| infinitive | bare `c`, with `ch` before a vowel ending | seic, seiching |
+
+---
+
+## Needs establishing
+
+### 1. How /ʃ/ is written before a vowel
+
+Four spellings appear for one sound, and the conditioning is not stated:
+
+| Form | English | Spelling of /ʃ/ |
+|---|---|---|
+| siac | shack | `si` |
+| cioc | shock | `ci` |
+| seac | shake | `se` |
+| seuc | shuck | `se` |
+| seôc | shook | `se` |
+| șreic | shriek | `ș` |
+| șéic | sheik | `ș` |
+
+`Ș` appears before a consonant and the others before a vowel, which may be the rule — but `si`, `se`, and `ci` are then three spellings for the same position. Old English *sceacan*, *sceoc*, and *sceacca* all have `sc`.
+
+### 2. `eu` against `u` in /ʌk/
+
+| `eu` | plain `u` |
+|---|---|
+| beuc, meuc, seuc, treuc | pluc, suc, tuc |
+| steuc, streuc, sneuc | |
+
+The last three are ablaut pasts, where `eu` is clearly the past-tense vowel. The first four are not pasts, and what puts *buck*, *muck*, *shuck*, and *truck* in that group rather than with *pluck*, *suck*, and *tuck* is not yet said.
+
+### 3. `ec` or `eque` in /ɛk/
+
+The section header asks the question. `Dec`, `nec`, `pec`, `hec`, and `r̃ec` take `c`; *check* is given both ways.
+
+### 4. Three graphemes appearing once each
+
+| | Form | English | Question |
+|---|---|---|---|
+| x̃ | uix̃e | witch | separator only, or does it record OE *wicce*'s geminate? |
+| gn | gnoc | knock | OE *cnucian* has `cn`, not `gn` |
+| hl | hluc | luck | Middle Dutch *luc* has no `hl` |
+
+### 5. The accent inventory
+
+`Â î ô û ó í é ò è` are all in use. What each marks is clear word by word but has not been set out as a table, and `ô` currently covers both /ʊ/ and, in `hòc`, something else.
+
+### 6. Where `qu` is licensed
+
+Note K uses it to mark a French route. But `lâque`, `puque`, `lique`, `mique`, `slique`, `crique`, `duque`, and `joque` also carry it, and not all of those went through France.
+
+---
+
+# Etymological clusters
+
+Words placed together because they descend from one root, with the spelling showing it.
+
+## Kept together
+
+| Cluster | Forms | Root |
+|---|---|---|
+| break, breach, breakfast | bréic, breic̃e, braicfast | OE *brecan* |
+| bleak, bleach | bleic, bleic̃e | PG \**blaikaz* |
+| wake, watch | uâc, uac̃e | OE *wacan*, *wæccan* |
+| speak, speech, speaker | speic, speic̃e, speicor | OE *specan* |
+| seek, sought | seic, soht | OE *sēcan*, *sōhte* |
+| teach, taught, teacher | teic̃e, tauht, teic̃or | OE *tǣcan*, *tāhte* |
+| stick, stuck | stic, steuc | OE *stician* |
+| strike, struck | strîc, streuc | OE *strīcan* |
+| sneak, snuck | sneic, sneuc | OE *snīcan* |
+| take, took, taken | tâc, tôc, tâcan | OE *tacan* |
+| forsake, forsook | forsâc, forsôc | OE *forsacan* |
+| bike, bicycle | bîc, bîcycle | Greek *bi-* + *kyklos* |
+| book, booking | bôc, bôching | OE *bōc* |
+| cook, cookery | côc, côcherie | Latin *cocus* |
+| bake, baker, bakery | bâc, bâcor, bâcherie | OE *bacan* |
+| mock, mockery | moc, mocherie | OF *mocquer* |
+| lack, lackey | lac, laquie | MDu *lac* |
+| sick, sicken | sic, sicane | OE *sēoc* |
+| black, blacker, blackest | blac, blacar, blachest | OE *blæc* |
+| quick, quicker, quickly | cuic, cuicar, cuichly | OE *cwic* |
+| thick, thicker, thickest | þic, þicar, þichest | OE *þicce* |
+| ache, achy | âc, âchy | OE *acan* |
+| flake, flaky | flâc, flâchy | ON *flak* |
+| hack, hacky | hac, hachy | OE *haccian* |
+| tack, tacky | tac, tachy | OF *tache* |
+| luck, lucky | hluc, hluchy | MDu *luc* |
+| rich, riches | ric̃, ric̃e | OE *rīce* |
+| rook, rookie | rhoc, rhochie | OE *hrōc* |
+| Dutch, Deutsch | duț | PG \**þiudiskaz* |
+| pitch, pick, peck | pic̃e, pic, pec | PG \**pikkōną* — see note K |
+| pique, pike | pique, pîque | the same base, both through France |
+| stack, stake | stac, stâc | PG \**stakon-*, PIE \**steg-* "pole, stick" |
+| stock, stoke | stoc, — | PG \**stok-* — Dutch *stoken* "to poke" is *stoc* "stick" |
+| rack, rake | rac, râc | PIE \**h₃reǵ-* "to move in a straight line" |
+| stick, stitch | stic, stic̃e | PG \**stik-*, PIE \**steig-* "to prick" |
+| dike, ditch | dîc, dic̃e | OE *dīc* — one word, two English descendants |
+| which, such, each | uic̃, soc̃, eic̃ | OE *-līc* — see below |
+| cloak, clock | cloac, — | ML *clocca* "bell" — the garment named for its shape |
+
+**Rack and rake are the *rectus* root.** PIE \**h₃reǵ-* "to move in a straight line" gives *rack* through Middle Dutch *rec* "a framework, something stretched out," and *rake* through OE *raca*, the tool that draws a straight line through soil. The same root gives *right*, *rule*, *regal*, *reign*, *realm*, *direct*, *correct*, and — through Celtic \**rīx* — **rich**. So `rac`, `râc`, and `ric` are one family with `roiht` and `reule`.
+
+**Stack and stake are one Germanic word**, PG \**stakon-* "pointed stick." Romance borrowed it as Spanish *estaca* and Old French *estache*, and English took it back as **attach**; Italian *attaccare* gave **attack**. So `stac`, `stâc`, *attach*, and *attack* are four English words from one stick.
+
+**Stock and stoke.** OE *stocc* "stump, post" and Dutch *stoken* "to poke, thrust" are the same Proto-Germanic base — a stoker pokes the fire with a stick. `Stoc` is filled and *stoke* is not; whatever it takes should show the relation.
+
+**Stick and stitch are the *distinguish* root.** PIE \**steig-* "to prick" also gives *stigma*, *instigate*, *stimulus*, *etiquette*, and *ticket*. `Stic` : `stic̃e` shows it, as `distingoișe` shows the Latin side.
+
+**Which, such, and each all end in OE *-līc*.** *Hwilc* is *hwā* + *līc*, "who-like"; *swylc* is *swā* + *līc*, "so-like"; *ǣlc* is *ā* + *ge-līc*, "ever-alike." The second element is the word that became **like**, so `uic̃`, `soc̃`, `eic̃`, and `lîc` share a morpheme that no English speaker can see. The forms do not currently show it, and probably should not — the compounds were opaque by 1200.
+
+## Related, but not shown as related
+
+| Cluster | Forms | Why |
+|---|---|---|
+| book, beech | bôc, boic̃e | OE *bōc* and *bēce* — beech bark was the writing surface, and the two are one root. The spellings do not show it. |
+| pick, peck, pitch, pique, pike | pic, pec, pic̃e, pique, pîque | note K — the family is scattered across four vowels and cannot be unified without misreporting the sound |
+| black, bleak, bleach | blac, bleic, bleic̃e | note D — the relation is too old to do a reader any work |
+
+---
+
 # Notes
 
-## The principle
+## Note O — when `ei` is /i/ and when it is /eɪ/
 
-The vowel digraph records **whether two words belong together**. Words sharing a root are spelled alike; words that merely rhyme are kept apart.
+`Ei` is /i/ in three environments and /eɪ/ everywhere else.
 
-| | | Related? | Spellings |
-|---|---|---|---|
-| break | breach | yes — OE *brecan* | bréic : breic̃e |
-| bleak | bleach | yes — PG \**blaikaz* | bleic : bleic̃e |
-| wake | watch | yes — OE *wacan*, *wæccan* | uâc : uac̃e |
-| reek | reach | no — OE *rēocan* : *rǣcan* | riec : reic̃e |
-| peach | impeach | no — OF *pesche* : *impedicāre* | poic̃e : impeic̃e |
+| Environment | Value | Examples |
+|---|---|---|
+| word-initial | /i/ | eigle, eisy, eite, eic̃ |
+| after `s`, `c`, `c̃` | /i/ | seise, seie, seide, ceiling, conceile, c̃eise |
+| before `c`, `c̃` | /i/ | beic, seic, teic, ueic, reic̃e, speic̃e |
+| **elsewhere** | **/eɪ/** | **veine, obteine, conveie** |
 
-*Impeach* is Late Latin *impedicāre*, "to catch by the foot," from *pēs*. Its relatives are *impede*, *pedal*, and *pedestrian*.
+The first two environments are the schoolroom rule about *i* before *e* stated as a condition rather than a superstition, and the third extends it to the velar and the affricate.
+
+**The acute is an override, not a decoration.** `Bréic` and `stéic` are /eɪ/ words sitting in a /i/ environment — `ei` before `c` — so they need the mark. `Éime` is /eɪ/ word-initially and needs it for the same reason. Everywhere else the environment does the work and no accent appears, so `veine` and `obteine` are unmarked.
+
+That keeps `bréic` : `breic̃e` intact, which is the pair the whole *break* family hangs on.
+
+### The four spellings of /i/
+
+| Grapheme | When | Examples |
+|---|---|---|
+| `ei` | in the three environments above | beic, seise, eigle |
+| `i…e` | where `ei` is not licensed | uide, dide, recive |
+| `ie` | with a lax partner, or as a separator | diep : daipþ; piec, uiec |
+| `í` | where no silent `-e` is available | díds, cantíns, pícs |
+
+Each has a stated trigger. Only `ie` requires a judgement.
+
+**One asymmetry to watch.** `Éime` takes the acute word-initially and `eiht` does not, though both are /eɪ/ and both begin the word. Either `ht` licenses /eɪ/ on its own or *eight* is an exception.
 
 ## Note A — `a` after `u`
 
@@ -570,6 +754,35 @@ Rhoc records the consonant that was there. *Rook* the chess piece is Persian *ru
 
 The verb *to rook* and *rookie* both descend from the bird — the bird's reputation gave the sense "swindler" — and so take rh- with it.
 
+## Note M — which letter carries /tʃ/
+
+Three graphemes give the affricate, and each records the consonant it descends from — the same principle that governs `ș` from *s* and `d̦` from *d*.
+
+| Grapheme | From | Examples |
+|---|---|---|
+| c̃ | a historical *c* or *k* | caic̃e, ric̃e, coc̃e, uic̃ |
+| ț | a historical *t* | duț, fournițure |
+| ch | a Germanic dorsal, read /k/ | chic̃e |
+
+**Duț is *Deutsch*.** The word is Middle Dutch *duutsch*, German *Deutsch*, and the affricate there descends from a *t*, not a *c*. Writing `ț` records that, and puts *Dutch* with *nature* and *furniture* rather than with *catch* and *rich*.
+
+**This is why ketch is `caic̃e` and not `caiț`.** Middle English *cacchen* has a geminate *c*; no *t* was ever in it.
+
+**Kitsch is `chic̃e`.** German *Kitsch* begins with a dorsal /k/, so the initial takes `ch`; the affricate at the end takes `c̃`.
+
+## Note N — `oa` before the affricate
+
+The digraph `oa` is /oʊ/ generally, but **`oac̃` is always /aʊ/**. That resolves what would otherwise be six collisions:
+
+| /oʊtʃ/ | /aʊtʃ/ |
+|---|---|
+| coc̃e — coach | coac̃e — couch |
+| poc̃e — poach | poac̃e — pouch |
+| broc̃e — broach | croac̃e — crouch |
+| roc̃e — roach | groac̃e — grouch |
+
+The `a` is the only difference, and it is enough because the environment is fixed.
+
 ## Note K — the \*pikk- family
 
 Two Proto-Germanic bases, and English merged them.
@@ -636,12 +849,41 @@ The conditioning appears to be the **plural's own vowel**, not the singular's:
 
 `Peice` takes the default and `piece` keeps its English spelling as the separator. `Ie` is not reserved for alternating pairs — note C applies it where the etymology supports it, not mechanically — so a word using `ie` without an /ɛ/ partner is within the rule.
 
+## Note P — the three tiers of /ik/
+
+| Tier | Form | When |
+|---|---|---|
+| default | `-eic` | nothing forces otherwise |
+| separator | `-iec` | a homophone in the same slot |
+| class marker | `-ique` | a Romance-shaped adjective, or a noun with a French route |
+
+**The separator tier is exact.** Every `-iec` word has an `-eic` twin:
+
+| | | |
+|---|---|---|
+| uiec | ueic | week : weak |
+| liec | leic | leek : leak |
+| riec | reic̃e | reek : reach |
+| piec | peic | peek : peak |
+
+**And so is `-oic̃e` in the affricate slot**, which does the same job:
+
+| | | |
+|---|---|---|
+| boic̃e | beic̃e | beech : beach |
+| broic̃e | breic̃e | breech : breach |
+| loic̃e | leic̃e | leech : leach |
+| poic̃e | impeic̃e | peach : impeach |
+| besoic̃e | seic | beseech : seek |
+
+**`-ique` is a word class, not a third separator.** *Antique*, *unique*, *boutique*, *oblique*, *pique* are English's Romance adjective ending, and `mique` and `slique` join it by shape. A noun takes it only with a French route to show — `crique` from Old French *crique*, `clique` and `pique` from French outright.
+
+That is why *creek* is `crique` and not `criec` even though `creic` exists to be separated from: the French route outranks the separator.
+
+**Sleek and slick are one word.** Middle English *slike*, treated by the OED as variants of a single adjective. `Slique` takes the Romance shape and `slic` the plain one; no third form is needed.
+
 ## Still open
 
-**The `-que` forms.** Lique, mique, pique are the three /ik/ words with no relative in the set — nothing to match and nothing to avoid. If that is the logic, `-que` marks the words the network does not reach. *Lâque* and *puque* now show the same ending in other slots.
-
-**Pairs still to decide.** *week* : *weak*, *creek* : *creak*, *meet* : *meat*, *see* : *sea*, *heel* : *heal*, *steel* : *steal*, *beat* : *beet*, *peel* : *peal* — all unrelated, all needing separation.
-
-**Shake and shook.** The forms are seac and seôc, where the /ʃ/ is written `se` rather than the `sc` or `ș` used elsewhere. Old English *sceacan* and *scēoc* have the `sc`.
+**Pairs still to decide.** *meet* : *meat*, *see* : *sea*, *heel* : *heal*, *steel* : *steal*, *beat* : *beet*, *peel* : *peal* — all unrelated, all needing separation.
 
 **The `-c` / `-ch` proposal.** With `-c` as the infinitive, a noun-verb pair loses the silent `-e` that distinguishes them elsewhere. *Cook*, *hook*, *look*, *check*, *track*, *back*, *pack*, *crack*, and *smoke* are all both.
