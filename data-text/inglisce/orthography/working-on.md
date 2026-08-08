@@ -65,18 +65,18 @@ Tracking document. Blanks are undecided.
 ### /ɛk/ (ec or eque?)
 | English | Inglisce |
 |---|---|
-| beck | |
+| beck | to bec -s -hed -hing |
 | check | to c̃ec -s -hed -hing / to c̃eque c̃ec(s c̃equed c̃equing |
 | deck | to dec -s -hed -hing; dec, dex |
-| fleck | |
+| fleck | to flec -s -hed -hing |
 | heck | hec |
 | neck | nec, nex |
 | peck | to pec -s -hed -hing; pec, pex |
-| sec | |
-| spec | |
-| speck | |
+| sec | sec, secs |
+| spec | spec, specs |
+| speck | spec, spex |
 | tech | |
-| trek | |
+| trek | to trec -s -hed -hing |
 | wreck | to r̃ec -s -hed -hing; r̃ec, r̃ex |
 
 ### /ʊk/
@@ -199,7 +199,7 @@ Tracking document. Blanks are undecided.
 | geek | to gueic -s -hed -hing; gueic, gueix|
 | Greek | Greic |
 | leak | leic |
-| leek | lique |
+| leek | liec |
 | meek | mique, miqueness |
 | peak | peic |
 | peek | piec |
