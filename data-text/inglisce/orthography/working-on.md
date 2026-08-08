@@ -63,7 +63,7 @@ Tracking document. Blanks are undecided.
 | trick | to tric -s -hed -hing; tric, trix |
 | wick | to uic -s -hed -hing; uic, uix |
 
-### /ɛk/ (ec or eque?)
+### /ɛk/
 | English | Inglisce |
 |---|---|
 | beck | to bec -s -hed -hing |
