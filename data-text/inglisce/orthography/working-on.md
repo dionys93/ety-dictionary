@@ -230,7 +230,7 @@ Tracking document. Blanks are undecided.
 | coke | coac |
 | croak | to creoc -s -hed -hing; creoc, croax |
 | folk | foac, foax |
-| joke | to joque joac(s joqued joquing |
+| joke | to joque joac(s joqued joquing; joque, joax |
 | moke (donkey) | moac, moax |
 | oak | oac |
 | poke | to poque poac(s poqued poquing |
