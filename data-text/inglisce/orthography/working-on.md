@@ -225,8 +225,8 @@ Tracking document. Blanks are undecided.
 | bloke | bloac, bloax |
 | broke | bróc |
 | choke | c̃eoc -s -hed -hing |
-| cloak | to cloac -s -hed -hing / to cloque cloac(s cloqued cloquing; cloac/cloque, cloax |
-| coke | cóc |
+| cloak | to cloque cloac(s cloqued cloquing; cloac/cloque, cloax |
+| coke | coac |
 | croak | creoc, croax |
 | folk | foac, foax |
 | joke | to joque joac(s joqued joquing |
