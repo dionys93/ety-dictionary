@@ -107,25 +107,25 @@ Tracking document. Blanks are undecided.
 ### /ɑk/
 | English | Inglisce |
 |---|---|
-| bloc | |
-| block | |
-| clock | |
-| crock | |
+| bloc | bloc, blocs |
+| block | to bloc -s -hed -hing; bloc, blox |
+| clock | to cloc -s -hed -ing; cloc, clox |
+| crock, crockery | croc, crox; crocherie |
 | dock | to doc -s -hed -hing; doc, dox |
 | flock | to floc -s -hed -hing; floc, flox |
-| frock | |
-| hock | |
-| jock | |
+| frock, defrock | froc, frox; to difroc -s -hed -hing |
+| hock | hoc, hox; to hoc -s -hed -hing |
+| jock | jáque, jács; to jáquie -s -d -ying |
 | knock | to gnoc -s -hed -hing; gnoc, gnox |
 | lock | to loc -s -hed -hing, loc, locs |
 | mock | to moc -s -hed -hing; moc-, mocherie |
-| pock | |
+| pock | poc, pox; to poc -s -hed -hing |
 | rock | to roc -s -hed -hing; roc, rox |
 | shock | to cioc -s -hed -hing; cioc, ciox |
-| smock | |
+| smock | smoc, smox |
 | sock | to soc -s -hed -hing; soc, sox |
 | stock | to stoc -s -hed -hing; stoc, stox |
-| wok | |
+| wok | uác, uáx |
 
 ### /ʌk/
 | English | Inglisce |
