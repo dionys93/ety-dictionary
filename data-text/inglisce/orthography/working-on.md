@@ -261,8 +261,8 @@ Tracking document. Blanks are undecided.
 | shrike | șrîc, șrîx |
 | spike | to spîc -hed -hing; spîc, spîx |
 | strike | to strîc -s streuc/-hed -hing; strîc, strîx |
-| trike | |
-| tyke | |
+| trike, tricycle | trîc -s, trîcycle |
+| tyke |tîque, tîx | 
 
 ### /ɔk/ — merges with /ɑk/ for most Midwestern speakers
 | English | Inglisce |
@@ -370,10 +370,10 @@ Tracking document. Blanks are undecided.
 ### /utʃ/
 | English | Inglisce |
 |---|---|
-| hooch | |
-| mooch | |
-| pooch | |
-| smooch | |
+| hooch | houc̃e |
+| mooch | mouc̃e |
+| pooch | pouc̃e |
+| smooch | smouc̃e |
 
 ### /itʃ/
 | English | Inglisce |
@@ -420,7 +420,7 @@ Tracking document. Blanks are undecided.
 ### /ɔtʃ/
 | English | Inglisce |
 |---|---|
-| nautch | |
+| nautch | nauc̃e |
 
 ### /aɪtʃ/ and /jutʃ/
 No English words.
