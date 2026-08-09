@@ -123,7 +123,7 @@ Tracking document. Blanks are undecided.
 | rock | to roc -s -hed -hing; roc, rox |
 | shock | to cioc -s -hed -hing; cioc, ciox |
 | smock | |
-| sock | |
+| sock | to soc -s -hed -hing; soc, sox |
 | stock | to stoc -s -hed -hing; stoc, stox |
 | wok | |
 
@@ -229,6 +229,7 @@ Tracking document. Blanks are undecided.
 | choke | c̃eoc -s -hed -hing |
 | cloak | to cloque cloac(s cloqued cloquing; cloque, cloax |
 | coke | coac |
+| convoke | to convoque convoac(s convoqued convoquing |
 | croak | to creoc -s -hed -hing; creoc, croax |
 | folk | foac, foax |
 | joke | to joque joac(s joqued joquing; joque, joax |
