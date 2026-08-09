@@ -289,7 +289,7 @@ Tracking document. Blanks are undecided.
 | batch | to bac̃e -s -d -ing |
 | hatch | to hac̃e -s -d -ing |
 | latch | to lac̃e -s -d -ing |
-| match | to mac̃e -s -d -ing |
+| match | to mac̃e -s -d -ing; max̃e |
 | ratch | to rac̃e -s -d -ing |
 | scratch | to scrac̃e -s -d -ing |
 | snatch | to snac̃e -s -d -ing |
@@ -353,13 +353,13 @@ Tracking document. Blanks are undecided.
 ### /ʌtʃ/
 | English | Inglisce |
 |---|---|
-| clutch | |
-| crutch | |
+| clutch | cleuc̃e |
+| crutch | creuc̃e |
 | Dutch | duț |
 | duchess | duc̃ess |
-| hutch | |
+| hutch | heuc̃e |
 | much | moc̃ |
-| smutch | |
+| smutch | smeuc̃e |
 | such | soc̃ |
 | touch | touc̃e |
 
