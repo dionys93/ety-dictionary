@@ -290,6 +290,7 @@ Tracking document. Blanks are undecided.
 | hatch | to hac̃e -s -d -ing |
 | latch | to lac̃e -s -d -ing |
 | match | to mac̃e -s -d -ing; max̃e |
+| patch | to pac̃e -s -d -ing |
 | ratch | to rac̃e -s -d -ing |
 | scratch | to scrac̃e -s -d -ing |
 | snatch | to snac̃e -s -d -ing |
