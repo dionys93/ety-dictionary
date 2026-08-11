@@ -51,7 +51,7 @@ Modern **/i/** (as in *beat*) results from multiple distinct sources. Inglisce c
 Modern English uses "oo" for both long and short back vowels (e.g., *boot* vs. *book*). Inglisce splits these strictly by length and origin:
 * **The Long /u/:** Anchored to the French/Continental standard **ou** (e.g., *boot* → **boute**, *soon* → **soun**).
 * **The Short /ʊ/:** Marked with diacritics to indicate historical shortening. The default is **û** (e.g., *foot* → **fûte**, *cushion* → **cûcion**).
-* **The Velar/Labiovelar Shift:** To prevent visual clustering, short **û** shifts to **ô** when preceding a **-c** (e.g., *book* → **bôc**, *cook* → **côche**) or following a **u-** (representing Modern English *w-*, e.g., *wool* → **uôle**, *wood* → **uôde**).
+* **The Velar/Labiovelar Shift:** To prevent visual clustering, short **û** shifts to **ô** when preceding a **-c** (e.g., *book* → **bôc**, *cook* → **côc**) or following a **u-** (representing Modern English *w-*, e.g., *wool* → **uôle**, *wood* → **uôde**).
 * **Modal Verbs:** *could* → **coûd**, *would* → **oûd**, *should* → **seûd**
 
 #### The Diphthong Divergences
