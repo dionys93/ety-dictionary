@@ -129,13 +129,7 @@ flowchart TD
 | to pitch | `pic̃e` | A, native, palatalised |
 | to peek | `piec` | outside the family |
 
-### What the spellings can and cannot do
-
-**The family cannot be unified, and the reason is arithmetic.** Four base-A words carry four different vowels — /ɪ/, /ɛ/, /ɪ/, and /i/ — and no spelling can join them without misreporting at least three. A system that writes what is said has to let this family scatter.
-
-**Nor does the consonant frame help.** `P_c` covers `pic`, `pec`, and `piec` alike — two insiders and an outsider. The frame is not a family marker; it is just what a short word with a velar coda looks like.
-
-### What the spellings do record
+### What the spellings record
 
 **`Qu` marks the passage through France.** `Pique` and `pîque` carry it; `peic` cannot, being a 1520s variant of a word that never left England. That is the one etymological fact this family's spelling can carry, and it carries it cleanly.
 
