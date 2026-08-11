@@ -69,7 +69,7 @@ Inglisce simplifies these to *-auht* or *-oht*.
 | Modern English | Inglisce Infinitive | Inglisce Past Tense |
 | :--- | :--- | :--- |
 | **to catch, caught** | to **caic̃e** | **cauht** |
-| **to teach, taught** | to **tiec̃e** | **tauht** |
+| **to teach, taught** | to **teic̃e** | **tauht** |
 | **to think, thought** | to **þinc** | **þoht** |
 | **to seek, sought** | to **seic** | **soht** |
 | **to fight, fought** | to **foihte** | **foht** |
@@ -92,7 +92,7 @@ Historically, the Germanic `kn-` shares the exact same Proto-Indo-European root 
 | Modern English | Etymology | Inglisce | Notes & Morphology |
 | :--- | :--- | :--- | :--- |
 | **knot** | OE *cnotta* | **gnote** | The `gn-` marks the short vowel. Differentiates from the negative *not*. |
-| **knock** | ME *knokken* | to **gnoche** <br> a **gnoc** | Marks the short vowel. Follows the standard `-che` (verb) and `-c` (noun) paradigm. |
+| **knock** | ME *knokken* | to **gnoc** <br> a **gnoc** | Marks the short vowel. The infinitive is the bare `-c`; `ch` appears only before a vowel ending (**gnoching**). |
 | **knob** | ME *knobbe* | **gnobe** <br> **gnobs** *(pl.)* | Marks the short vowel. |
 | **acknowledge** | ME *aknowen* | **acgnollage** | Retains the short-vowel `gn-` root within the prefix compound. |
 | **know** | OE *cnāwan* | **gnoe** | Retains `gn-` despite the long vowel to resolve the homophone clash with *no*, and to anchor directly to Latin *gnoscere*. |
