@@ -16,14 +16,14 @@
 | **EA** | /ɛ/ | Historical retention | breade, beare | bread, bear |
 | **E-E** | /ɛ/ | Default stressed | n*e*te, b*e*de, b*e*ds, h*e*de | net, bed, beds, head |
 | **È** | /ɛ/ | Irregular stress | an*è*monie, pr*è*sident | anemone, president |
-| **EI-** | /i/ | Word-initial | *ei*c̃, *ei*gle, *ei*le | each, eagle, eel |
+| **EI** | /i/ | Word-initial, or before / after C, C̃, S | *ei*c̃, *ei*gle, *ei*le, <br> b*ei*c, s*ei*c, sp*ei*c, <br> b*ei*c̃e, imp*ei*c̃e, s*ei*se | each, eagle, eel, <br> beak, seek, speak, <br> beach, impeach, seize |
 | **EU-E** | /u/ | Blocking consonants (Non-Yod: t, d, s, n, z, r, l) | *reu*le, c*leue*, c*reue*, c*reu*se, t*reu*, b*leu* | rule, clue, crew, cruise, true, blue |
 | **EU / EU-E** | /ju/ | Palatalizing consonants (Yod: c, g, p, b, f, h, v, m, j) | f*eu*, h*eu*e, *eu*noc, *seue*, *seu*s  | few, hew, eunuch, shoe, shoes |
 | **-EU-** | /ə/ | Before C and X | d*eu*c, d*eu*x, st*eu*c | duck, ducks, stuck |
 | **I** | /ɪ/ | Default stressed (closed syllables, clusters, -ION) | d*i*c̃e, r*i*c̃e, b*i*tte, s*i*c, f*i*n*i*șe, cond*i*cion, f*i*ccion, gn*i*t | ditch, rich, bit, sick, finish, condition, fiction, knit |
 | **I** | /ə/ | Unstressed Latinate | ind*i*viḑual | individual |
 | **I-E** | /i/ | Closed syllables / verb stems | maç*i*n*e*, compl*i*t*e* | machine, complete |
-| **IE** | /i/ | Word-final or within stem | comitt*ie*, f*ie*le, <br> b*ie*c̃e, imp*ie*c̃e | committee, feel, <br> beach, impeach |
+| **IE** | /i/ | Word-final; or as a separator, where a homophone holds the EI slot | comitt*ie*, f*ie*le, <br> p*ie*c, u*ie*c, l*ie*c, r*ie*c | committee, feel, <br> peek, week, leek, reek |
 | **Ï** | /i/ | Before vowel (diaeresis separator) | s*ï*ale, naus*ï*ait, g*ï*ographie | seal, nauseate, geography |
 | **Í** | /i/ | Stress-marked | compl*í*cion, m*í*dia | completion, media |
 | **O** | /ɑ/ | Before C or two consonants | l*o*c, b*o*tte | lock, bot |
@@ -31,7 +31,7 @@
 | **O** | /ɔ/ | Before FF and LL | b*o*lle, d*o*lle, c*o*ffe, <br> c*o*ffre, c*o*ffars | ball, doll, cough, <br> coffer, coffers |
 | **Ò** | /ɔ/ | Explicit marker | *Ò*stria, c*ò*ste, fr*ò*ste, s*ò*ft | Austria, cost, frost, soft |
 | **OH** | /ɔ/ | Past participles and nouns | b*oh*t, f*oh*t, þ*oh*te | bought, fought, thought |
-| **OIC̃E**| /iːtʃ/ | Affricate cluster | b*oic̃e*, p*oic̃e* | beech, peach |
+| **OIC̃E**| /i/ | Affricate separator, where a homophone holds the EIC̃E slot | b*oic̃e*, p*oic̃e*, l*oic̃e*, br*oic̃e* | beech, peach, leech, breech |
 | **Ô** | /ʊ/ | Before C; After U | b*ô*c, c*ô*c, h*ô*c, <br> u*ô*de, u*ô*man | book, cook, hook, <br> wood, woman |
 | **OU** | /u/  | Medial and final | s*ou*pe, s*ou*ps, r*ou*te, r*ou*ts, m*ou*ne, r*ou*me, cangar*ou*e | soup, soups, route, routes, moon, room, kangaroo |
 | **OÛ** | /ʊ/ or <br> /wʊ/ | Modal verbs | c*oû*d, s*eû*d, *oû*d | could, should, would |
