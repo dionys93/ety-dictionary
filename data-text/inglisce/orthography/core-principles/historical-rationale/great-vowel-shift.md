@@ -19,7 +19,7 @@ The "Chart Example" traces the exact reference words from the timeline, while th
 | **east, meat** | /ɛː/ | /eː/ | /eː/ | /iː/ | /iː/ | **/iː/** | **í, i-e** | east → **íst**, meat → **mite** |
 | **name** | /aː/ | /æː/ | /ɛː/ | /eː/ | /eɪ/ | **/eɪ/** | **â** | name → **nâme** |
 | **day** | /æj/ | /æːi/ | /ɛː/ | /eː/ | /eɪ/ | **/eɪ/** | **aie** | day → **daie** |
-| **house** | /uː/ | /ʊu̯/ | /əu̯/ | /ɑu̯/ | /ɑu̯/ | **/æʊ̯/** | **aû** | house → **haûse** |
+| **house** | /uː/ | /ʊu̯/ | /əu̯/ | /ɑu̯/ | /ɑu̯/ | **/æʊ̯/** | **aû** | house → **hause** |
 | **cow** | /uː/ | /ʊu̯/ | /əu̯/ | /ɑu̯/ | /ɑu̯/ | **/æʊ̯/** | **ô** | cow → **côe** |
 | **round** | /uː/ | /ʊu̯/ | /əu̯/ | /ɑu̯/ | /ɑu̯/ | **/æʊ̯/** | **ô** | round → **rônd** |
 | **moon, soon** | /oː/ | /uː/ | /uː/ | /uː/ | /uː/ | **/uː/** | **ou** | moon → **moune**, soon → **soun** |
@@ -66,7 +66,7 @@ The modern **/aɪ/** diphthong encompasses simple long vowels and vowels modifie
 
 **2. The /aʊ/ (House/Cow) Divergence**
 To represent the modern **/aʊ/** sound, Inglisce distinguishes these words based on their comparative etymology and cross-linguistic shifts:
-* **The High German Parallel (aû):** Used for Germanic roots that underwent a similar phonetic shift to *au* in Modern High German. This visually aligns English with its Continental cousins (e.g., *house* [Ger. *das Haus*] → **haûse**, *mouse* [Ger. *die Maus*] → **maûse**).
+* **The High German Parallel (au):** Used for Germanic roots that underwent a similar phonetic shift to *au* in Modern High German. This visually aligns English with its Continental cousins (e.g., *house* [Ger. *das Haus*] → **hause**, *mouse* [Ger. *die Maus*] → **mause**).
 * **The English Divergence & French Roots (ô):** Used for Old English roots that shifted to /aʊ/ in English while diverging from the High German *au* pathway (e.g., OE *cū* → *cow* [vs. Ger. *Kuh*] → **côe**, OE *ūle* → *owl* [vs. Ger. *Eule*] → **ôle**). This grapheme is also applied to French-derived words that were caught in the English vowel shift (e.g., *round* → **rônd**, *power* → **pôure**, *vowel* → **vôale**).
 
 **3. The Mid-Vowel Shifts (/eɪ/ and /oʊ/)**
