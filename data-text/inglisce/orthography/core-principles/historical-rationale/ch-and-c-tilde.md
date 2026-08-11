@@ -28,7 +28,7 @@ The grapheme C̃ is therefore justified as a marked continuation of palatalized 
 | --- | --- | --- |
 | ceosan | choose | c̃ouse |
 | ceowan | chew | c̃eue |
-| cyse, cese | cheese | c̃iese |
+| cyse, cese | cheese | c̃eise |
 | circe | church | c̃urc̃e |
 | cicen | chicken | c̃ican |
 
@@ -53,7 +53,7 @@ Modern German preserves this variability: ⟨ch⟩ represents a velar or post-ve
 | to break | to bréic | brechen | breken | brjóta | bryta | brekke(n |
 | to cook | to côc | kochen | koken | kokka | - | koke(n |
 | cake | câc / to câc | Kuchen | koeken | kaka | kaka | koeke |
-| to leak | to liec | lecken | lekken | leka | läcka | lekke(n |
+| to leak | to leic | lecken | lekken | leka | läcka | lekke(n |
 | to lick | to lic | lecken | likken | sleikja | slicka | slikje(n |
 
 
