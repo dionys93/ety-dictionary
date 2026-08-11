@@ -17,7 +17,7 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **Ç** | /s/ | Before A, O, U | **juçor** | juicer |
 | **Ç** | /ʃ/ | Before I, E | **appríçiait**, **inniçiait** | appreciate, innitiate |
 | **C̃** | /t͡ʃ/ | Always | **c̃ine**, **c̃ouse**, <br> **c̃oice**, **mac̃e** | chin, choose, <br> choice, match |
-| **CH** | /k/ | Before I, E | **architect**, **mâche** | architect, make |
+| **CH** | /k/ | Before I, E | **architect**, **mâching** | architect, making |
 | **CH** | /t͡ʃ/ | Only when followed by Î | **chîde**, **chîld** | chide, child |
 | **D** | /d/ | Always | **dogue**, **dade** | dog, dad |
 | **Ḑ / D̦**| /d͡ʒ/ | Assibilation (often from *du*) | **procíḑure**, **eḑucait** | procedure, educate |
@@ -61,7 +61,7 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **SC** | /ʃ/ | Default | **scîne** | shine |
 | **SC** | /sk/ | Before A, O, U | **scoupe** | scoop |
 | **SCH** | /sk/ | Before E, I | **schec̃e**, **schine** | sketch, skin |
-| **T** | /t/ | Default | **tâche**, **tape** | take, tap |
+| **T** | /t/ | Default | **teac**, **tape** | take, tap |
 | **T** | /ɾ/ | Between vowels (flap) | **batture**, **litture** | batter, litter |
 | **Ț** | /t͡ʃ/ | Between vowels, after n or x | **advențure**, **fiețure**, **mixțure**, **nâțure** **națural**, | adventure, feature, mixture, nature, natural |
 | **Ț** | /ʃ/ | After c or p | **picțure**, **capțure**, **flucțuait** | picture, capture, fluctuate |
