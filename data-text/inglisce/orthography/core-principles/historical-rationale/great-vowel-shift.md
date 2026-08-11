@@ -67,10 +67,10 @@ The modern **/aɪ/** diphthong encompasses simple long vowels and vowels modifie
 **2. The /aʊ/ (House/Cow) Divergence**
 To represent the modern **/aʊ/** sound, Inglisce distinguishes these words based on their comparative etymology and cross-linguistic shifts:
 * **The High German Parallel (aû):** Used for Germanic roots that underwent a similar phonetic shift to *au* in Modern High German. This visually aligns English with its Continental cousins (e.g., *house* [Ger. *das Haus*] → **haûse**, *mouse* [Ger. *die Maus*] → **maûse**).
-* **The English Divergence & French Roots (ô):** Used for Old English roots that shifted to /aʊ/ in English while diverging from the High German *au* pathway (e.g., OE *cū* → *cow* [vs. Ger. *Kuh*] → **côe**, OE *ūle* → *owl* [vs. Ger. *Eule*] → **ôle**). This grapheme is also applied to French-derived words that were caught in the English vowel shift (e.g., *round* → **rônd**, *power* → **pôure**, *vowel* → **vôle**).
+* **The English Divergence & French Roots (ô):** Used for Old English roots that shifted to /aʊ/ in English while diverging from the High German *au* pathway (e.g., OE *cū* → *cow* [vs. Ger. *Kuh*] → **côe**, OE *ūle* → *owl* [vs. Ger. *Eule*] → **ôle**). This grapheme is also applied to French-derived words that were caught in the English vowel shift (e.g., *round* → **rônd**, *power* → **pôure**, *vowel* → **vôale**).
 
 **3. The Mid-Vowel Shifts (/eɪ/ and /oʊ/)**
-* **Front Shifted Vowels:** Modern **/eɪ/** uses the diacritic **â** to explicitly mark the shift from the historical long /aː/ (e.g., *bake* → **bâche**).
+* **Front Shifted Vowels:** Modern **/eɪ/** uses the diacritic **â** to explicitly mark the shift from the historical long /aː/ (e.g., *bake* → **baic**).
 * **Back Shifted Vowels:** Modern **/oʊ/** uses the split digraph **o-e** to explicitly mark the shift from the historical long /ɔː/ (e.g., *boat* → **bote**).
 
 ---
