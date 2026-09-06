@@ -65,7 +65,7 @@ Two things follow from being coined this way.
 | **Portuguese** | *o escritório* | *a burocracia* | *o burocrata* | *burocrático* | *burocratizar* |
 | **Italian** | *l'ufficio* | *la burocrazia* | *il burocrate* | *burocratico* | *burocratizzare* |
 | **Catalan** | *l'oficina* | *la burocràcia* | *el buròcrata* | *burocràtica* | *burocratitzar* |
-| **Inglisce** | `þe bureo` | `þa bureocracie` | `þe bureocrat` | `bureocratic` | `to bureocratyse` |
+| **Inglisce** | þe bureo | þa bureocracie | þe bureocrat | bureocratic | to bureocratyse |
 
 **The first column is where the interest lies.** Spanish, Portuguese, Italian and Catalan have the whole derived family and no base word. *Burocracia* exists; *buro* does not. The root of the word is not a word in the language.
 
@@ -137,11 +137,11 @@ flowchart TD
 
 | English | Inglisce |
 |---|---|
-| the bureau, the bureaus | `þe bureo`, `þe bureos` |
-| the bureaucracy | `þa bureocracie` |
-| the bureaucrat | `þe bureocrat` |
-| bureaucratic | `bureocratic` |
-| to bureaucratise | `to bureocratyse` |
+| the bureau, the bureaus | þe bureo, þe bureos |
+| the bureaucracy | þa bureocracie |
+| the bureaucrat | þe bureocrat |
+| bureaucratic | bureocratic |
+| to bureaucratise | to bureocratyse |
 
 **`-eau` becomes `-o` because `au` is already spoken for.** In the system `au` is /ɔ/ — `automn`, `automatic`, `caufie` — so a written *bureau* would be read /bjʊrɔ/. Final `-o` gives /oʊ/, and `bureo` therefore reads the way English says the word. The French spelling is dropped because the system already uses those letters for something else, not because the French shape is unwelcome.
 
