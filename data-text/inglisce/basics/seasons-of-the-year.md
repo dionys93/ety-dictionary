@@ -1,4 +1,4 @@
-# Sísons of þe Yiare
+# Sísons of þe Yiere
 
 ## Springue
 
