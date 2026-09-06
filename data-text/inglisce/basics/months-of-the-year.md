@@ -1,4 +1,4 @@
-# Monþs of þe Yiare
+# Monþs of þe Yiere
 
 ## Jañuarie
 
