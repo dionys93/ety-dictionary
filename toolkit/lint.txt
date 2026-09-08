@@ -1,0 +1,1177 @@
+Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
+=================================================================
+📝 [1mt/trace.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mt/terror.txt[0m
+   [31m[ERROR][0m Stanza(s) 5: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mt/threat.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mt/tread.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mt/tail.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mt/toll.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mt/temporary.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mt/triumph.txt[0m
+   [31m[ERROR][0m Stanza(s) 3: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1ma/allot.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1ma/accuse.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1ma/apprehend.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1ma/Austria.txt[0m
+   [33m[WARN][0m  Unknown POS tag(s): 'prefix' — not in parts-of-speech.tsv; buildBrain will skip these records.
+
+📝 [1ma/allow.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1ma/alter.txt[0m
+   [33m[WARN][0m  Unknown POS tag(s): 'n' — not in parts-of-speech.tsv; buildBrain will skip these records.
+
+📝 [1ma/audio.txt[0m
+   [31m[ERROR][0m Missing or malformed POS tag '()'
+   [31m[ERROR][0m Missing or malformed language tag '[]'
+
+📝 [1ma/analyze.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1ma/avouch.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mi/itch.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mi/indignant.txt[0m
+   [31m[ERROR][0m Language tag '[]' and POS tag '()' must be on separate lines.
+
+📝 [1mr/regress.txt[0m
+   [31m[ERROR][0m Stanza(s) 4: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mg/ghost.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mg/Greece.txt[0m
+   [33m[WARN][0m  Unknown POS tag(s): 'prefix' — not in parts-of-speech.tsv; buildBrain will skip these records.
+
+📝 [1mg/gravitate.txt[0m
+   [31m[ERROR][0m Stanza(s) 3: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mg/genre.txt[0m
+   [31m[ERROR][0m Language tag '[]' and POS tag '()' must be on separate lines.
+
+📝 [1mg/great.txt[0m
+   [33m[WARN][0m  Unknown POS tag(s): 'prefix' — not in parts-of-speech.tsv; buildBrain will skip these records.
+
+📝 [1mf/fossil.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mf/France.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mf/floor.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mf/feisty.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mf/flame.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mf/fawn.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mf/foul.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mf/faith.txt[0m
+   [33m[WARN][0m  Unknown POS tag(s): 'n' — not in parts-of-speech.tsv; buildBrain will skip these records.
+
+📝 [1mf/fill.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mf/flow.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mf/forfeit.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1ml/level.txt[0m
+   [31m[ERROR][0m Language tag '[]' and POS tag '()' must be on separate lines.
+
+📝 [1ml/league.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1ml/live.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1ml/Lithuania.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1ml/liquify.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mo/obey.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mo/operate.txt[0m
+   [31m[ERROR][0m Stanza(s) 4: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mh/hi.txt[0m
+   [31m[ERROR][0m Missing or malformed POS tag '()'
+
+📝 [1mh/heat.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mh/hood.txt[0m
+   [33m[WARN][0m  Unknown POS tag(s): 'n' — not in parts-of-speech.tsv; buildBrain will skip these records.
+
+📝 [1mh/hypnosis.txt[0m
+   [31m[ERROR][0m Stanza(s) 3: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mh/half.txt[0m
+   [31m[ERROR][0m Stanza(s) 6: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mh/hierarch.txt[0m
+   [31m[ERROR][0m Stanza(s) 3: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1me/endow.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1me/effect.txt[0m
+   [31m[ERROR][0m Stanza(s) 5: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1me/evident.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1me/egg.txt[0m
+   [31m[ERROR][0m Stanza(s) 2 3: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1me/even.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1me/encapsulate.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1me/exaggerate.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1me/endure.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1me/eke.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1me/exploit.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mb/bough.txt[0m
+   [31m[ERROR][0m Missing or malformed POS tag '()'
+
+📝 [1mb/bottle.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mb/Britain.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mb/bell.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mb/bike.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mb/brew.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mb/breeze.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mb/bye.txt[0m
+   [31m[ERROR][0m Missing or malformed POS tag '()'
+
+📝 [1mb/bunch.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mp/paw.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mp/pursue.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mp/pane.txt[0m
+   [31m[ERROR][0m Stanza(s) 3: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mp/project.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mp/play.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mp/punish.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mp/peal.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mp/persevere.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mp/preview.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1ms/solid.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1ms/stupefy.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1ms/sulfur.txt[0m
+   [33m[WARN][0m  Unknown POS tag(s): 'dated' — not in parts-of-speech.tsv; buildBrain will skip these records.
+
+📝 [1ms/shire.txt[0m
+   [33m[WARN][0m  Unknown POS tag(s): 'suffix' — not in parts-of-speech.tsv; buildBrain will skip these records.
+
+📝 [1ms/shut.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1ms/strut.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1ms/star.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1ms/sweet.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1ms/shadow.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1ms/stature.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1ms/supply.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mn/note.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mn/necessitate.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mn/nail.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1md/decay.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1md/defend.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1md/dignify.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1md/dispense.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1md/die.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+   [33m[WARN][0m  Unknown POS tag(s): 'n' — not in parts-of-speech.tsv; buildBrain will skip these records.
+
+📝 [1md/double.txt[0m
+   [33m[WARN][0m  Unknown POS tag(s): 'mn' — not in parts-of-speech.tsv; buildBrain will skip these records.
+
+📝 [1md/defy.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1md/dense.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1md/decease.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1md/divert.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mw/well.txt[0m
+   [31m[ERROR][0m Stanza(s) 3: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mw/waste.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mw/wry.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mw/wise.txt[0m
+   [33m[WARN][0m  Unknown POS tag(s): 'suffix' — not in parts-of-speech.tsv; buildBrain will skip these records.
+
+📝 [1mw/wretch.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mw/wrest.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mj/judicial.txt[0m
+   [31m[ERROR][0m Stanza(s) 4: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mj/justice.txt[0m
+   [31m[ERROR][0m Stanza(s) 6: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mj/jock.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mj/join.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mm/mania.txt[0m
+   [33m[WARN][0m  Unknown POS tag(s): 'adj m n' — not in parts-of-speech.tsv; buildBrain will skip these records.
+
+📝 [1mm/mature.txt[0m
+   [31m[ERROR][0m Stanza(s) 3: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mm/maintain.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mm/memory.txt[0m
+   [31m[ERROR][0m Stanza(s) 5: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mv/voyage.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mv/vote.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1my/yack.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mk/key.txt[0m
+   [31m[ERROR][0m Stanza(s) 4: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mq/queen.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mq/query.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mc/cross.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mc/clip.txt[0m
+   [33m[WARN][0m  Unknown POS tag(s): 'n' — not in parts-of-speech.tsv; buildBrain will skip these records.
+
+📝 [1mc/crawl.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mc/cooperate.txt[0m
+   [31m[ERROR][0m Stanza(s) 3: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mc/cow.txt[0m
+   [31m[ERROR][0m Stanza(s) 4: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mc/command.txt[0m
+   [33m[WARN][0m  Unknown POS tag(s): 'n' — not in parts-of-speech.tsv; buildBrain will skip these records.
+
+📝 [1mc/conjure.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mc/close.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mc/coerce.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mc/concentrate.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mc/comment.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mc/copper.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mc/Christ.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mc/crumb.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mc/coil.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mc/chisel.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mc/cruise.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+📝 [1mc/complete.txt[0m
+   [31m[ERROR][0m Stanza(s) 4: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
+
+-----------------------------------------------------------------
+LINTING COMPLETE
+-----------------------------------------------------------------
+Files Scanned:   4114
+Fatal Errors:    [31m0[0m
+Standard Errs:   [31m94[0m
+Warnings:        [33m47[0m
+
+VERB CONJUGATION COVERAGE
+-----------------------------------------------------------------
+Using -s -d -ing:  1855
+Non-standard:      741
+
+  Non-standard verb stanzas:
+    t/thunder.txt                   þonder               þondre þondres þondred þondred þondering
+    t/thank.txt                     þânc               -s þânched þânching
+    t/tunnel.txt                    tonele                -s -d toneling
+    t/trick.txt                     tric                  -s triched triching
+    t/tree.txt                      trie                  -s -d trying
+    t/teach.txt                     teic̃e               -s tauht -ing
+    t/testify.txt                   testifae              -s -d testifyhing
+    t/track.txt                     trac                  -s trached traching
+    t/terror.txt                    terrifae              -s -d terrifyhing
+    t/think.txt                     þinc                 -s þoht þinching
+    t/tear.txt                      teire                 -s tór teiring
+    t/take.txt                      teac                  -s tôc teaching
+    t/top.txt                       toppe                 top tops -d -d -ing
+    t/tower.txt                     tôuir               tôure tôures tôured tôured tôuiring
+    t/torpedo.txt                   torpídoe            -s -d -ouing
+    t/throw.txt                     þroe                 -s þreu þrouing
+    t/timber.txt                    timber                timbre timbres timbred timbred timbering
+    t/temper.txt                    temper                tempre tempres tempred tempred tempering
+    t/trek.txt                      treche                trec trecs -d -d -ing
+    t/tuck.txt                      tuc                   -s tuched tuching
+    t/tank.txt                      tânque              tânc tâncs -d -d -ing
+    t/toe.txt                       toe                   -s -d touing
+    t/truck.txt                     treuc                 -s treuched treuching
+    t/try.txt                       trîe                -s -d tryhing
+    t/tell.txt                      telle                 -s toald -ing
+    t/tie.txt                       tîe                 -s -d tyhing
+    t/talk.txt                      tauche                tauc taucs -d -d -ing
+    t/tee.txt                       teie                  -s -d teying
+    t/toke.txt                      toque                 toac toacs toqued toqued toquing
+    t/transact.txt                  transacte             transacs -d -ing
+    t/tack.txt                      tac                   -s -hed -hing
+    a/ask.txt                       asche                 asc ascs asched asched asching
+    a/anchor.txt                    âncher              âncre âncres âncred âncred ânchering
+    a/acid.txt                      acidifae              -s -d acidifyhing
+    a/antique.txt                   antique               -ícs -d -ing
+    a/addict.txt                    addicte               addics -d -ing
+    a/allot.txt                     allotte               allot allots -d -d -ing
+    a/arc.txt                       arque                 arc arcs arqued arqued arquing
+    a/affect.txt                    affecte               affecs -d -ing
+    a/arise.txt                     arîse               -s arose -ing
+    a/anger.txt                     ângre               -s -d ângaring
+    a/accompany.txt                 accompanie            -s -d accompanying
+    a/alight.txt                    alîhte              -s alit -ing
+    a/attempt.txt                   attempte              attemps -d -ing
+    a/apply.txt                     applîe              -s -d applyhing
+    a/ache.txt                      âc                  -s âched âching
+    a/annoy.txt                     annoie                -s -d annoying
+    a/agree.txt                     agríe               -s -d agrýing
+    a/accept.txt                    accepte               acceps -d -ing
+    a/augur.txt                     auguer                augre augres augred augred auguering
+    a/adhere.txt                    adhier                adhire adhires adhired adhired adhiering
+    a/attire.txt                    attîer              attîre attîres attîred attîred attîering
+    a/author.txt                    auþer                auþre auþres auþred auþred auþering
+    a/admire.txt                    admîer              admîre admîres admîred admîred admîering
+    a/administer.txt                admïnister          admïnistre admïnistres admïnistred admïnistred admïnistering
+    a/alter.txt                     alter                 altre altres altred altred altering
+    a/attract.txt                   attracte              attracs -d -ing
+    a/allay.txt                     allaie                -s -d allaying
+    a/attack.txt                    attaque               attac attacs -d -d -ing
+    a/apparel.txt                   appârele            -s -d appâreling
+    a/act.txt                       acte                  acs -d -ing
+    a/appear.txt                    appier                appire appires appired appired appiering
+    a/ally.txt                      allîe               -s -d allyhing
+    a/acquire.txt                   acquîer             acquîre acquîres acquîred acquîred acquîering
+    a/answer.txt                    ansere                -s -d ansering
+    a/architect.txt                 architecte            -cs -d -ing
+    a/amplify.txt                   amplifae              -s -d amplifyhing
+    i/instruct.txt                  instructe             instrucs -d -ing
+    i/interact.txt                  interacte             interacs -d -ing
+    i/inquire.txt                   inquîer             inquîre inquîres inquîred inquîred inquîering
+    i/intense.txt                   intènsifae          -s -d intènsifyhing
+    i/invoke.txt                    invoque               invoac invoacs -d -d -ing
+    i/interfere.txt                 interfier             interfire interfires interfired interfired interfiering
+    i/invent.txt                    inventorie            -s -d inventorying
+    i/inhibit.txt                   inhibit               -s -ted -ting
+    i/imply.txt                     implîe              -s -d implyhing
+    i/ink.txt                       inque                 inc incs -d -d -ing
+    i/infect.txt                    infecte               infecs -d -ing
+    i/inspire.txt                   inspîer             inspîre inspîres inspîred inspîred inspîering
+    i/impact.txt                    impacte               impacs -d -ing
+    i/identify.txt                  îdentifae           -s -d îdentifyhing
+    r/ratify.txt                    ratifae               -s -d ratifyhing
+    r/rare.txt                      rairifae              -s -d rairifyhing
+    r/risk.txt                      risque                risc riscs -d -d -ing
+    r/resurrect.txt                 resorecte             resorecs -d -ing
+    r/rid.txt                       ridde                 rid rids rid rid ridding
+    r/ratio.txt                     râçioe             -s -d râçiouing
+    r/rock.txt                      roche                 roc rocs -d -d -ing
+    r/refract.txt                   refracte              refracs -d -ing
+    r/reflect.txt                   reflecte              reflecs -d -ing
+    r/rebuke.txt                    rebuque               rebúc rebúcs -d -d -ing
+    r/refer.txt                     refêr               refê refês refêd refêd refêring
+    r/react.txt                     riacte                riacs -d -ing
+    r/revoke.txt                    revoque               revoac revoacs -d -d -ing
+    r/rot.txt                       rotte                 rot rots -d -d -ing
+    r/remark.txt                    remarque              remarc remarcs -ed -ed -ing
+    r/renew.txt                     renoue                -s -d -ïng
+    r/ride.txt                      rîde                -s rode -ing
+    r/run.txt                       rone                  -s ran -ing
+    r/rise.txt                      rîse                -s rose -ing
+    r/rake.txt                      râc                 -s râched râching
+    r/restrict.txt                  restricte             restrics -d -ing
+    r/reject.txt                    rejecte               rejecs -d -ing
+    r/ring.txt                      ringue                ring rings râng rong ringuing
+    r/ring.txt                      ringue                ring rings -d -d -ing
+    r/reply.txt                     replîe              -s -d -yhing
+    r/remember.txt                  remember              remembre remembres remembred remembred -ering
+    r/rack.txt                      rac                   -s rached raching
+    r/rook.txt                      rhoc                  -s rhoched rhoching
+    r/retire.txt                    retîer              retîre retîres retîred retîred retîering
+    r/require.txt                   requîer             requîre requîres requîred requîred requîering
+    r/row.txt                       reoe                  -s -d reouing
+    r/read.txt                      riede                 -s raid -ing
+    r/ready.txt                     raidie                -s -d raidying
+    r/reek.txt                      riec                  -s rieched rieching
+    r/rank.txt                      rânque              rânc râncs -d -d -ing
+    r/rely.txt                      relîe               -s -d relyhing
+    r/review.txt                    revue                 -s -d revuing
+    g/go.txt                        goe                   -s uaint gouing
+    g/gather.txt                    gaþer                gaþre gaþres gaþred gaþred gaþering
+    g/give.txt                      guive                 -s gâve -ing
+    g/gutter.txt                    gotre                 -s -d gotaring
+    g/gander.txt                    gander                gandre gandres gandred gandred gandering
+    g/glimmer.txt                   glimere               -s -d glimaring
+    g/glitter.txt                   glitre                -s -d glitaring
+    g/guarantee.txt                 gairantíe           -s -d gairantýing
+    g/gray.txt                      graie                 -s -d graying
+    g/gawk.txt                      gauque                gauc gaucs -d -d -ing
+    g/gear.txt                      guier                 guire guires guired guired guiering
+    g/grind.txt                     grînde              -s graund -ing
+    g/grace.txt                     gratifae              -s -d gratifyhing
+    g/gyrate.txt                    gŷer                gŷre gŷres gŷred gŷred gŷering
+    g/grow.txt                      groe                  -s grou grouing
+    g/gag.txt                       gague                 gag gags -d -d -ing
+    g/graduate.txt                  grad̦uait            -s
+    g/glow.txt                      gloe                  -s -d glouing
+    g/gut.txt                       gutte                 gut guts -d -d -ing
+    f/fall.txt                      falle                 -s fell -ing
+    f/find.txt                      fînde               -s faund -ing
+    f/flock.txt                     floc                  -s floched floching
+    f/fake.txt                      fâc                 -s fâched fâching
+    f/fight.txt                     foihte                -s fauht -ing
+    f/forbid.txt                    forbidde              forbid forbids forbâde forbidan -ing
+    f/forget.txt                    forgait               -s forgot -ing
+    f/follow.txt                    folloe                -s -d follouing
+    f/feed.txt                      fiede                 -s fed -ing
+    f/frank.txt                     frânque             frânc frâncs -d -d -ing
+    f/fuck.txt                      fuc                   -s fuched fuching
+    f/flower.txt                    flôuir              flôure flôures flôured flôured flôuiring
+    f/fling.txt                     flingue               fling flings flong flong -ing
+    f/fry.txt                       frîe                -s -d fryhing
+    f/factor.txt                    facter                factre factres factred factred factering
+    f/flutter.txt                   flotir                flotre flotres flotred flotred flotiring
+    f/flay.txt                      flaie                 -s -d flaying
+    f/forsake.txt                   forsaic               -s forsôc forsaiching
+    f/file.txt                      fîle                -s -d fîeling
+    f/file.txt                      fîle                -s -d fîaling
+    f/fancy.txt                     fancie                -s -d fancying
+    f/frontier.txt                  frontier              frontire frontires frontired frontired frontiering
+    f/freak.txt                     frieche               friec friecs -d -d -ing
+    f/fit.txt                       fitte                 fit fits fit fit -ing
+    f/fit.txt                       fitte                 fit fits -d -d -ing
+    f/flake.txt                     flaic                 -s -hed -hing
+    f/forgive.txt                   forguive              -s forgâve -ing
+    f/freeze.txt                    friese                -s frose -ing
+    f/flounder.txt                  flônder             flôndre flôndres flôndred flôndred flôndering
+    f/fray.txt                      fraie                 -s -d fraying
+    f/fire.txt                      fŷer                fŷre fŷres fŷred fŷred fŷering
+    f/fly.txt                       floihe                -s flou -ing
+    f/flatter.txt                   flatre                -s -d flatering
+    f/flee.txt                      flihe                 -s fled -ing
+    f/ferry.txt                     ferrie                -s -d ferrying
+    f/flank.txt                     flânque             flânc flâncs -d -d -ing
+    f/feel.txt                      fiele                 -s felt -ing
+    f/fur.txt                       furre                 fur furs -d -d -ing
+    l/lie.txt                       láie                -s lay láying
+    l/lie.txt                       lîe                 -s -d lyhing
+    l/lay.txt                       laie                  -s -d laying
+    l/light.txt                     loihte                -s liht -ing
+    l/lack.txt                      lac                   -s lached laching
+    l/lace.txt                      laçoe                -s -d -uing
+    l/long.txt                      longue                lòng lòngs -d -d -ing
+    l/long.txt                      belongue              belòng belòngs -d -d -ing
+    l/like.txt                      lîc                 -s lîched lîching
+    l/like.txt                      dislîc              -s dislîched dislîching
+    l/like.txt                      mislîc              -s mislîched mislîching
+    l/lake.txt                      laquer                lacre lacres lacred lacred laquering
+    l/lake.txt                      lâque               lâc lâcs lâqued lâqued lâquing
+    l/lick.txt                      lic                   -s liched liching
+    l/leave.txt                     lievfe                -s laift -ing
+    l/link.txt                      linque                linc lincs -d -d -ing
+    l/leak.txt                      leic                  -s leiched leiching
+    l/lock.txt                      loc                   -s loched loching
+    l/lend.txt                      lende                 -s laint -ing
+    l/let.txt                       lete                  -s lait -ing
+    l/letter.txt                    letter                lettre lettres lettred lettred lettering
+    l/luck.txt                      hluc                  -s hluched hluching
+    l/lead.txt                      lide                  -s laid -ing
+    l/lead.txt                      leade                 -s lead -ing
+    l/log.txt                       logue                 log logs -d -d -ing
+    l/look.txt                      lôc                 -s lôched lôching
+    l/lose.txt                      louse                 -s lòst -ing
+    l/low.txt                       hloe                  -s -d hlouing
+    o/occupy.txt                    occupae               -s -d -yhing
+    o/overthrow.txt                 overþroe             -s overþreu overþrouing
+    o/object.txt                    objecte               objecs -d -ing
+    o/object.txt                    objectifae            -s -d objectifyhing
+    o/offer.txt                     offir                 offre offres offred offred offiring
+    o/order.txt                     ordir                 ordre ordres ordred ordred ordiring
+    o/owe.txt                       oe                    -s -d ouing
+    h/horrify.txt                   horrifae              -s -d horrifyhing
+    h/hit.txt                       hitte                 hit hits hit hit -ing
+    h/hurt.txt                      hurte                 -s hurt -ing
+    h/hog.txt                       hogue                 hog hogs -d -d -ing
+    h/hike.txt                      hîc                 -s hîched hîching
+    h/hide.txt                      hîde                -s hid -ing
+    h/honey.txt                     honie                 -s -d honying
+    h/hurry.txt                     hêrie               -s -d hêrying
+    h/harbor.txt                    harber                harbre harbres harbred harbred harbering
+    h/hear.txt                      hyre                  -s hird hyring
+    h/hover.txt                     hovir                 hovre hovres hovred hovred hoviring
+    h/hack.txt                      hac                   -s hached haching
+    h/hold.txt                      hoalde                -s haild -ing
+    h/hook.txt                      hôc                 -s hôched hôching
+    h/hunger.txt                    hongre                -s -d hongaring
+    h/hum.txt                       homme                 hom homs -d -d -ing
+    h/hammer.txt                    hamere                -s -d hamering
+    h/hire.txt                      hîer                hîre hîres hîred hîred hîering
+    h/hawk.txt                      hauc                  -s hauched hauching
+    h/hawk.txt                      hòc                 -s hòched hòching
+    h/hawk.txt                      hocster               hocstre hocstres hocstred hocstred hocstering
+    h/hang.txt                      hângue              hâng hângs hong hong -ing
+    h/hang.txt                      hângue              hâng hângs -d -d -ing
+    e/endeavor.txt                  endever               endevre endevres endevred endevred endevering
+    e/eat.txt                       eite                  -s éit -ing
+    e/erupt.txt                     eropte                -ps -d -ing
+    e/embody.txt                    embodie               -s -d embodying
+    e/expire.txt                    expîer              expîre expîres expîred expîred expîering
+    e/elect.txt                     electe                elecs -d -ing
+    e/effect.txt                    effecte               effecs -d -ing
+    e/embargo.txt                   embárgoe            -s -d -uing
+    e/eye.txt                       eaie                  -s -d eaying
+    e/enjoy.txt                     enjoie                -s -d enjoying
+    e/employ.txt                    emploie               -s -d employing
+    e/echo.txt                      ecoe                  -s -d -uing
+    e/envy.txt                      envie                 -s -d envying
+    e/empower.txt                   empôuir             empôure empôures empôured empôured empôuiring
+    e/evict.txt                     evicte                evics -d -ing
+    e/erect.txt                     erecte                erecs -d -ing
+    e/embark.txt                    embarque              embarc embarcs -d -d -ing
+    e/exemplify.txt                 exèmplifae          -s -d exèmplifyhing
+    e/eke.txt                       eic                   -s -hed -hing
+    e/ensue.txt                     ensúe               -s -d ensúing
+    e/exempt.txt                    exempte               exemps -d -ing
+    e/edifice.txt                   edifae                -s -d edifyhing
+    e/enter.txt                     enter                 entre entres entred entred entering
+    e/evoke.txt                     evoque                evoac evoacs -d -d -ing
+    e/engine.txt                    enginier              enginire enginires enginired enginired enginiering
+    b/blur.txt                      blurre                blur blurs -d -d -ing
+    b/bicker.txt                    bichir                bicre bicres bicred bicred bichiring
+    b/brake.txt                     brâc                -s brâched brâching
+    b/borrow.txt                    bòroe               -s -d -uing
+    b/blanket.txt                   blânque             blânc blâncs -d -d -ing
+    b/bat.txt                       batte                 bats bat -ing
+    b/beauty.txt                    bieutifae             -s -d bieutifyhing
+    b/blister.txt                   blister               blistre(d blistred blistering
+    b/bet.txt                       bete                  -s bet -ing
+    b/brook.txt                     brûc                -s brûched brûching
+    b/buy.txt                       byhe                  -s boht byhing
+    b/balk.txt                      bauche                bauc baucs -d -d -ing
+    b/buoy.txt                      bouie                 -s -d bouying
+    b/buck.txt                      buc                   buc bucs buched buched buching
+    b/block.txt                     bloc                  -s bloched bloching
+    b/beat.txt                      biete                 -s biet -ing
+    b/bite.txt                      bîte                -s bit -ing
+    b/buffet.txt                    buffer                buffre buffres buffred buffred buffering
+    b/bind.txt                      bînde               -s baund -ing
+    b/bend.txt                      bende                 -s bent -ing
+    b/bivouac.txt                   bivouac               -s -hed -hing
+    b/butter.txt                    butir                 butre butres butred butred butiring
+    b/baby.txt                      bâbie               -s -d bâbying
+    b/bid.txt                       bidde                 bid bids bid bid bidding
+    b/begin.txt                     biguin                -s begane -ing
+    b/busy.txt                      bisie                 -s -d bisying
+    b/betray.txt                    betraie               -s -d betraying
+    b/bull.txt                      bûlie               -s -d bûlying
+    b/battle.txt                    battle                -s -d batteling
+    b/bring.txt                     bringue               bring brings broht broht bringuing
+    b/bother.txt                    boþer                boþre boþres boþred boþred boþering
+    b/book.txt                      bôc                 -s bôched bôching
+    b/bug.txt                       bughe                 bug bugs -d -d -ing
+    b/become.txt                    become                -s becâme -ing
+    b/break.txt                     bréic               -s bróc bréiching
+    b/bow.txt                       bôe                 -s -d bôuing
+    b/blot.txt                      blotte                blot blots blotted blotted blotting
+    b/bag.txt                       bague                 bag bags -d -d -ing
+    b/bob.txt                       bobbe                 bob bobs bobbed bobbed bobbing
+    b/bike.txt                      bîc                 -s bîched bîching
+    b/blow.txt                      bloe                  -s blou blouing
+    b/bear.txt                      beire                 -s bór beiring
+    b/bog.txt                       bogue                 bog bogs bogued bogued boguing
+    b/brick.txt                     bric                  -s briched briching
+    b/burn.txt                      bêne                -s bênt -ing
+    b/bake.txt                      baic                  -s baiched baiching
+    b/brim.txt                      brimme                brim brims brimmed brimmed brimming
+    b/batter.txt                    batter                battre battres battred battred battering
+    b/batter.txt                    batte                 bat bats -d -d -ing
+    b/bar.txt                       barre                 bar bars -d -d -ing
+    b/bleed.txt                     bliede                -s bled -ing
+    b/bleed.txt                     blodie                -s -d blodying
+    b/bellow.txt                    beloe                 -s -d -uing
+    b/beg.txt                       begue                 beg begs -d -d -ing
+    b/beg.txt                       beguer                begre begres begred begred beguering
+    b/bluster.txt                   bluster               blustre blustres blustred blustred blustering
+    b/breed.txt                     briede                -s bred -ing
+    b/balloon.txt                   baloune               -s -d ing
+    b/bark.txt                      bárche              bárc bárcs -d -d -ing
+    b/bark.txt                      barche                barc barcs -d -d -ing
+    b/burst.txt                     burste                -s burst -ing
+    b/butcher.txt                   buc̃er               buc̃re buc̃res buc̃red buc̃red buc̃ering
+    b/bank.txt                      bânque              bânc bâncs -d -d -ing
+    b/bank.txt                      bâncropte           bâncrops -d -ing
+    b/bury.txt                      berie                 -s -d berying
+    b/bury.txt                      bouroe                -s -d -uing
+    b/bawk.txt                      bòc                 -s bòched bòching
+    b/billow.txt                    byloe                 -s -d bylouing
+    b/bulk.txt                      bulc                  -s -hed -hing
+    b/back.txt                      bac                   -s bached baching
+    b/build.txt                     bylde                 -s bylt -ing
+    p/prey.txt                      preie                 -s -d preying
+    p/person.txt                    personnifae           -s -d personnifyhing
+    p/park.txt                      parque                parc parcs -d -d -ing
+    p/powder.txt                    pôuder              pôudre pôudres pôudred pôudred pôudering
+    p/profit.txt                    profit                -s -ted -ting
+    p/panic.txt                     paniche               panic panics -d -d -ing
+    p/pillow.txt                    pilloe                -s -d -ouing
+    p/private.txt                   prîvatier           prîvatire prîvatires prîvatired prîvatired prîvatiering
+    p/parlay.txt                    parleie               -s -d parleying
+    p/party.txt                     partie                -s -d partying
+    p/pay.txt                       paie                  -s -d paying
+    p/provoke.txt                   provoque              provoac provoacs provoqued provoqued provoquing
+    p/pick.txt                      pic                   -s piched piching
+    p/plow.txt                      plôe                -s -d plôuing
+    p/pair.txt                      parre                 par pars -d -d -ing
+    p/prosper.txt                   prosper               prospre prospres prospred prospred prospering
+    p/pure.txt                      púrifae             -s -d púrifyhing
+    p/prefer.txt                    prefêr              prefê prefês prefêd prefêd prefêring
+    p/power.txt                     pôuir               pôure pôures pôured pôured pôuiring
+    p/pit.txt                       pytte                 pyt pyts pyt pyt pytting
+    p/pit.txt                       pitte                 pit pits pitted pitted pitting
+    p/plague.txt                    plâgue              plâg plâgs -d -d -ing
+    p/pork.txt                      porque                porc porcs -d -d -ing
+    p/puck.txt                      puc                   -s puched puching
+    p/putt.txt                      putte                 put puts -d -d -ing
+    p/parody.txt                    pârodie             -s -d pârodying
+    p/pacify.txt                    pacifae               -s -d pacifyhing
+    p/peer.txt                      pier                  pire pires pired pired piring
+    p/put.txt                       pûte                pûte pûtes pût pût pûting
+    p/prophet.txt                   prophiçae           -s -d prophicyhing
+    p/peek.txt                      piec                  -s pieched pieching
+    p/puke.txt                      puque                 púc púcs -d -d -ing
+    p/poke.txt                      poque                 poac poacs -d -d -ing
+    p/peak.txt                      pique                 píc pícs -d -d -ing
+    p/pry.txt                       prîe                -s -d pryhing
+    p/pummel.txt                    pomle                 -s -d pomeling
+    p/pack.txt                      pac                   -s pached paching
+    p/pray.txt                      praie                 -s -d praying
+    p/parley.txt                    párlie              -s -d -ying
+    p/purr.txt                      purre                 pur purs -d -d -ing
+    p/pin.txt                       pinne                 pin pins -d -d -ing
+    p/perish.txt                    perișe              -s
+    s/saw.txt                       sahe                  -s -d sahing
+    s/shear.txt                     siere                 -s -d/seorn siering
+    s/surge.txt                     sortie                -s -d sortying
+    s/sting.txt                     stingue               sting stings stong stong -ing
+    s/simmer.txt                    simere                -s -d simaring
+    s/slaughter.txt                 slauter               slautre slautres slautred slautred slautering
+    s/spray.txt                     spraie                -s -d -aying
+    s/steal.txt                     stiale                -s stoal -ing
+    s/slide.txt                     slîde               -s slid -ing
+    s/syncronize.txt                synque                sync syncs -d -d -ing
+    s/solid.txt                     solïdifae           -s -d solïdifyhing
+    s/spill.txt                     spille                -s spilt -ing
+    s/shrink.txt                    șrinche             șrinc șrincs șrânc șronc șrinching
+    s/shoot.txt                     seoute                -s siot -ing
+    s/stupefy.txt                   stupefae              -s -d stupefyhing
+    s/swear.txt                     sueire                -s suór sueiring
+    s/sink.txt                      sinche                sinc sincs sânc sonc -ing
+    s/shriek.txt                    șreic               -s șreiched șreiching
+    s/spread.txt                    sprede                -s spred -ing
+    s/stick.txt                     stiche                stic stics steuc steuc -ing
+    s/shoulder.txt                  seolder               seoldre seoldres -d -d -ering
+    s/sever.txt                     sever                 sevre sevres sevred sevred severing
+    s/stand.txt                     stande                -s stôd -ing
+    s/speak.txt                     speic                 -s spóc speiching
+    s/sleep.txt                     sliepe                -s slaipt -ing
+    s/smell.txt                     smelle                -s smelt -ing
+    s/sack.txt                      sac                   -s sached saching
+    s/stammer.txt                   stamere               -s -d stamering
+    s/set.txt                       sete                  -s set -ing
+    s/shudder.txt                   șodir               șodre șodres șodred șodred șodiring
+    s/sell.txt                      selle                 -s soald -ing
+    s/speed.txt                     spiede                -s sped -ing
+    s/sock.txt                      soche                 soc socs -d -d -ing
+    s/survey.txt                    sorveie               -s -d sorveying
+    s/satisfy.txt                   satisfae              -s -d satisfyhing
+    s/simple.txt                    simplifae             -s -d simplifyhing
+    s/splatter.txt                  splatir               splatre splatres splatred splatred splatiring
+    s/snack.txt                     snac                  -s -hed -hing
+    s/sour.txt                      saûer               saûre saûres saûred saûred saûering
+    s/suspect.txt                   sospecte              sospecs -d -ing
+    s/stride.txt                    strîde              -s strode -ing
+    s/sing.txt                      singue                sing sings sâng song singuing
+    s/swallow.txt                   suolloe               -s -d -uing
+    s/sputter.txt                   sputir                sputre sputres sputred sputred sputiring
+    s/slay.txt                      slaie                 -s -d slaying
+    s/slug.txt                      slughe                slug slugs -d -d -ing
+    s/slake.txt                     slâc                 -s -hed -hing
+    s/surrender.txt                 sorrender             sorrendre sorrendres -d -d -ering
+    s/stun.txt                      stonne                ston stons -d -d -ing
+    s/shake.txt                     seac                  -s seôc seaching
+    s/sow.txt                       soe                   -s -d souing
+    s/slumber.txt                   slomber               slombre slombres slombred slombred slombering
+    s/stalk.txt                     stauche               stauc staucs -d -d -ing
+    s/stalk.txt                     stauche               stauc staucs -d -d -ing
+    s/smoke.txt                     smoque                smoac smoacs -d -d -ing
+    s/shag.txt                      siague                siag siags -d -d -ing
+    s/specific.txt                  specifae              -s -d specifyhing
+    s/slather.txt                   slaþer               slaþre slaþres slaþred slaþred slaþering
+    s/squire.txt                    squîer              squîre squîres squîred squîred squîering
+    s/subject.txt                   sobjecte              sobjecs -d -ing
+    s/spank.txt                     spânque             spânc spâncs -d -d -ing
+    s/snake.txt                     snaic                 -s snaiched snaiching
+    s/say.txt                       saie                  sais said saying
+    s/slough.txt                    slôe                -s -d slôuing
+    s/study.txt                     studie                -s -d studying
+    s/stutter.txt                   stutir                stutre stutres stutred stutred stutiring
+    s/shine.txt                     scîne               -s sione -ing
+    s/sweep.txt                     suiepe                -s suaipt -ing
+    s/spire.txt                     spîer               spîre spîres spîred spîred spîering
+    s/shuck.txt                     seuc                  -s seuched seuching
+    s/spook.txt                     spouche               spouc spoucs -d -d -ing
+    s/signify.txt                   signifae              -s -d signifyhing
+    s/show.txt                      seoe                  -s -d seouing
+    s/shatter.txt                   siater                siatre siatres siatred siatred siatering
+    s/sober.txt                     sober                 sóbre sóbres sóbred sóbred sobering
+    s/send.txt                      sende                 -s sent -ing
+    s/slog.txt                      slogue                slog slogs -d -d -ing
+    s/stead.txt                     staidie               -s -d staidying
+    s/stink.txt                     stinche               stinc stincs stânc stonc -ing
+    s/slow.txt                      sloe                  -s -d slouing
+    s/space.txt                     spâce-oauc          -s -ued -uing
+    s/split.txt                     splitte               split splits split split splitting
+    s/suffer.txt                    sofir                 sofre sofres sofred sofred sofiring
+    s/string.txt                    stringue              string strings strong strong stringuing
+    s/stack.txt                     stac                  -s stached staching
+    s/squeak.txt                    squieche              squiec squiecs -d -d -ing
+    s/shimmer.txt                   scimere               -s -d scimiring
+    s/strike.txt                    strîc               -s streuc strîcing
+    s/strike.txt                    strîc               -s strîched strîching
+    s/spike.txt                     spîc                -s spîched spîching
+    s/snow.txt                      snoe                  -s -d snouing
+    s/shed.txt                      scede                 -s sced -ing
+    s/scar.txt                      scarre                scar scars -d -d -ing
+    s/suck.txt                      suc                   -s suched suching
+    s/spring.txt                    springue              spring springs sprâng sprong springuing
+    s/swim.txt                      suimme                suim suims suam suom -ing
+    s/spend.txt                     spende                -s spent -ing
+    s/swing.txt                     suingue               suing suings suong suong -ing
+    s/stomach.txt                   stomac                -s stomached stomaching
+    s/smirk.txt                     smirche               smirc smircs -d -d -ing
+    s/shuffle.txt                   sioffle               -s -d sioffeling
+    s/see.txt                       sihe                  -s sah -ing
+    s/sew.txt                       sóue                sóus sóud sóuing
+    s/script.txt                    scripte               scrips -d -ing
+    s/shock.txt                     cioc                  -s cioched cioching
+    s/slack.txt                     slac                  -s -hed -hing
+    s/stock.txt                     stoc                  -s stoched stoching
+    s/sugar.txt                     șugre               -s -d șugaring
+    s/soak.txt                      soque                 soac soacs -d -d -ing
+    s/shack.txt                     siac                  -s siached siaching
+    s/shark.txt                     siarche               siarc siarcs -d -d -ing
+    s/spy.txt                       spîe                -s -d spyhing
+    s/smother.txt                   smoþer               smoþre smoþres smoþred smoþred smoþering
+    s/scuffle.txt                   scoffle               -s -d scoffeling
+    s/sling.txt                     slingue               sling slings slong slong -ing
+    s/safe.txt                      sâfetie             -s -d sâfetying
+    s/smear.txt                     smiere                -s -d smiering
+    s/stroke.txt                    stroque               stroac stroacs stroqued stroqued stroquing
+    s/snicker.txt                   snicher               snicre snicres snicred snicred snichering
+    s/stay.txt                      staie                 -s -d staying
+    s/squirrel.txt                  scuirole              -s -d scuiroling
+    s/sneak.txt                     snieche               sniec sniecs -d/sneuc -d/sneuc -ing
+    s/stir.txt                      sturre                stur sturs -d -d -ing
+    s/stake.txt                     stâc                -s stâched stâching
+    s/shit.txt                      scite                 -s sçat sciting
+    s/shower.txt                    seôuir              seôure seôures seôured seôured seôuiring
+    s/spark.txt                     sparque               sparc sparcs -d -d -ing
+    s/shiver.txt                    scivir                scivre scivres scivred scivred sciviring
+    s/sit.txt                       sitte                 sit sits sat sat sitting
+    s/sorrow.txt                    sòroe               -s -d -uing
+    s/spin.txt                      spinne                spin spins spon spon spinning
+    s/seek.txt                      seic                  -s soht seiching
+    s/smack.txt                     smac                  -s smached smaching
+    s/spit.txt                      spytte                spyt spyts spat spat spytting
+    s/spit.txt                      spitte                spit spits -d -d -ing
+    s/stoke.txt                     stoque                stoac stoacs -d -d -ing
+    s/streak.txt                    strieche              striec striecs -d -d -ing
+    n/narrow.txt                    nâroe               -s -d -uing
+    n/nark.txt                      narque                narc narcs -d -d -ing
+    n/neighbor.txt                  neiber                neibres neibred neibering
+    n/number.txt                    nomber                nombre nombres -d -d nombering
+    n/neuter.txt                    neuter                neutre neutres neutred neutred neutering
+    n/near.txt                      nier                  nire nires nired nired niering
+    d/district.txt                  dïstricte           dïstrics -d -ing
+    d/dog.txt                       dogue                 dog dogs -d -d -ing
+    d/defer.txt                     defêr               defê defês defêd defêd defêring
+    d/drink.txt                     drinche               drinc drincs drânc dronc -ing
+    d/deny.txt                      denîe               -s -d denyhing
+    d/distract.txt                  destracte             destracs -d -ing
+    d/dock.txt                      doc                   -s doched doching
+    d/deconstruct.txt               diconstructe          diconstrucs -d -ing
+    d/deter.txt                     detêr               detê detês detêd detêd detêring
+    d/deity.txt                     deïfae              -s -d deïfyhing
+    d/desire.txt                    desîer              desîre desîres desîred desîred desîering
+    d/delay.txt                     delaie                -s -d delaying
+    d/dismay.txt                    dismaie               -s -d dismaying
+    d/deposit.txt                   depositte             deposit deposits -d -d -ing
+    d/diversify.txt                 devêrsifae          -s -d devêrsifyhing
+    d/drive.txt                     drîve               -s droave -ing
+    d/danger.txt                    endângere           endângere endângeres endângered endângered endângering
+    d/disrupt.txt                   disropte              disrops -d -ing
+    d/drug.txt                      drugue                drug drugs -d -d -ing
+    d/duck.txt                      duc                   -s duched duching
+    d/direct.txt                    directe               direcs -d -ing
+    d/draw.txt                      drahe                 -s drou drahing
+    d/differ.txt                    diffêr              diffê diffês -d -d -êring
+    d/drag.txt                      drague                drag drags -d -d -ing
+    d/dignify.txt                   dignifae              -s -d dignifyhing
+    d/deck.txt                      dec                   -s deched deching
+    d/deduct.txt                    deducte               deducs -d -ing
+    d/defect.txt                    defecte               defecs -d -ing
+    d/do.txt                        dou                   
+    d/doctor.txt                    docter                doctre doctres doctred doctred doctering
+    d/dream.txt                     drieme                -s draimpt -ing
+    d/destruct.txt                  destructe             destrucs -d -ing
+    d/deal.txt                      diele                 -s dailt -ing
+    d/devour.txt                    devôer              devôre devôres devôred devôred devôering
+    d/discover.txt                  discovir              discovre discovres discovred discovred discoviring
+    d/domineer.txt                  dominier              dominire dominires dominired dominired dominiering
+    d/destroy.txt                   destroie              -s -d destroying
+    d/display.txt                   desplaie              -s -d desplaying
+    d/divvy.txt                     divie                 -s -d divying
+    d/dodder.txt                    dáder               dádre dádres dádred dádred dádering
+    d/dive.txt                      dîve                -s doave -ing
+    d/diaper.txt                    dîper               dîpre dîpres dîpred dîpred dîpering
+    d/dry.txt                       drîe                -s -d dryhing
+    d/dig.txt                       dighe                 dig digs deug deug dighing
+    w/wink.txt                      uinque                uinc uincs -d -d -ing
+    w/wake.txt                      uaic                  -s uóc uaiching
+    w/whip.txt                      uippe                 uip uips -d -d -ing
+    w/whisper.txt                   uisper                uispre uispres uispred uispred uispering
+    w/wring.txt                     r̃ingue              r̃ing r̃ings r̃ong r̃ong r̃inguing
+    w/withdraw.txt                  uiþdrahe             -s uiþdrou uiþdrahing
+    w/wrong.txt                     rongue                ròng ròngs -d -d -ing
+    w/withstand.txt                 uiþstande            -s uiþstôd -ing
+    w/weary.txt                     uírie               -s -d uírying
+    w/write.txt                     r̃aite               -s r̃oat -ing
+    w/wreak.txt                     r̃eic                -s -hed -hing
+    w/weep.txt                      uiepe                 -s uaipt -ing
+    w/waver.txt                     uâver               uâvre uâvres uâvred uâvred uâvering
+    w/win.txt                       uinne                 uin uins uon uon -ing
+    w/wear.txt                      ueire                 -s uór ueiring
+    w/wire.txt                      uîer                uîre uîres uîred uîred uîering
+    w/while.txt                     uîle                -s -d uîeling
+    w/water.txt                     uatir                 uatre uatres uatred uatred uatiring
+    w/water.txt                     uete                  -s uet -ing
+    w/withhold.txt                  uiþhólde            -s uiþheld -ing
+    w/wreck.txt                     r̃ec                 -s -hed -hing
+    w/wing.txt                      uingue                uing uings -d -d -ing
+    w/wed.txt                       uede                  -s ued -ing
+    w/work.txt                      uirc                  uirc uircs uirched uirched uirching
+    w/work.txt                      boluirc               boluirc boluircs boluirched boluirched boluirching
+    w/walk.txt                      uauc                  -s uauched uauching
+    w/wrack.txt                     r̃ac                 -s -hed -hing
+    w/worry.txt                     uêrie               -s -d uêrying
+    w/wind.txt                      uînde               -s uaund -ing
+    w/weave.txt                     uieve                 -s uoave -ing
+    w/wonder.txt                    uonder                uondre uondres uondred uondred uondering
+    w/whack.txt                     uac                   -s -hed -hing
+    w/wallow.txt                    uáloe               -s -d -uing
+    w/weather.txt                   ueþer                ueþre ueþres ueþred ueþred ueþering
+    w/wander.txt                    uánder              uándre uándres uándred uándred uándering
+    u/unite.txt                     únifae              -s -d únifyhing
+    u/understand.txt                onderstande           -s onderstôd -ing
+    u/undergo.txt                   ondergoe              -s onderoaint ondergouing
+    j/joke.txt                      joque                 joac joacs joqued joqued joquing
+    j/jog.txt                       jogue                 jog jogs -d -d -ing
+    j/junk.txt                      jonque                jonc joncs -d -d -ing
+    j/jerk.txt                      gerc                  -s gerched gerching
+    j/jerk.txt                      jerc                  -s jerched jerching
+    j/journey.txt                   journie               -s -d journying
+    j/jock.txt                      jáchie              -s -d jáchying
+    j/jack.txt                      jaque                 jac jacs jaqued jaqued jaquing
+    m/mean.txt                      miene                 -s maint -ing
+    m/master.txt                    master                mastre mastres mastred mastred mastering
+    m/manure.txt                    manouer               manoure manoures manoured manoured manouering
+    m/monger.txt                    mánguer             mángre mángres mángred mángred mánguering
+    m/mutiny.txt                    mútinie             -s -d mútinying
+    m/magnify.txt                   magnifae              -s -d magnifyhing
+    m/meet.txt                      miete                 -s mait -ing
+    m/miscarry.txt                  miscârie            -s -d miscârying
+    m/murder.txt                    mourder               mourdre mourdres mourdred mourdred mourdering
+    m/mime.txt                      mimiche               mimic mimics -d -d -ing
+    m/marry.txt                     mârie               -s -d mârying
+    m/mock.txt                      moc                   -s moched moching
+    m/mortify.txt                   mortifae              -s -d mortifyhing
+    m/mow.txt                       moue                  -s -d mouing
+    m/maneuver.txt                  manouver              manouvre manouvres manouvred manouvred manouvering
+    m/matter.txt                    matir                 matre matres matred matred matiring
+    m/model.txt                     modle                 -s -d modeling
+    m/make.txt                      mâc                 -s mâde mâching
+    m/member.txt                    dismember             dismembre dismembres dismembred dismembred dismembering
+    m/mystery.txt                   mystifae              -s -d mystifyhing
+    m/modify.txt                    modifae               -s -d modifyhing
+    m/muster.txt                    moster                mostre mostres mostred mostred mostering
+    m/martyr.txt                    martir                martre martres martred martred martiring
+    m/milk.txt                      milche                milc milcs -d -d -ing
+    m/mask.txt                      masque                màsc màscs -d -d -ing
+    m/mutter.txt                    motir                 motre motres motred motred motiring
+    v/verify.txt                    verifae               -s -d verifyhing
+    v/vile.txt                      vilifae               -s -d vilifyhing
+    v/view.txt                      vue                   -s -d vuing
+    v/valet.txt                     valeie                -s -d valeying
+    v/vary.txt                      vârie               -s -d vârying
+    v/veer.txt                      vier                  vire vires vired vired viering
+    v/vie.txt                       vîe                 -s -d vîhing
+    v/vow.txt                       vôe                 -s -d vôuing
+    v/volunteer.txt                 volontier             volontire volontires volontired volontired volontiering
+    y/yellow.txt                    yeloe                 -s -d yelouing
+    y/yack.txt                      yac                   -s yached yaching
+    y/yoke.txt                      yoque                 yoac yoacs -d -d -ing
+    k/kayak.txt                     cayac                 -s cayached cayaching
+    k/kick.txt                      chiche                chic chics -d -d -ing
+    k/keep.txt                      chiepe                -s caipt -ing
+    k/know.txt                      gnoe                  -s gnou gnouing
+    k/king.txt                      cyngue                cyng cyngs -d -d -ing
+    k/knock.txt                     gnoc                  -s gnoched gnoching
+    k/knee.txt                      nie                   -s -d gnying
+    k/kneel.txt                     niele                 -s nelt -ing
+    q/quality.txt                   qualifae              -s -d qualifyhing
+    q/quantity.txt                  quantifae             -s -d quantifyhing
+    q/queue.txt                     cúe                 -s -d cúing
+    q/quit.txt                      qüite               -s qüit -ing
+    q/quarter.txt                   caurter               caurtre caurtres caurtred caurtred caurtering
+    q/quack.txt                     cuaque                cuacs -d -ing
+    q/quake.txt                     cuâc                -s cuâched cuâching
+    q/quarrel.txt                   quarele               -s -d quareling
+    q/quaver.txt                    cuâver              cuâvre cuâvres cuâvred cuâvred cuâvering
+    c/cling.txt                     clingue               cling clings clong clong clinguing
+    c/clip.txt                      clippe                clip clips clipped clipped clipping
+    c/clip.txt                      clyppe                clyp clyps clypped clypped clypping
+    c/croak.txt                     croac                 -s croached croaching
+    c/catalogue.txt                 catalogue             catalog catalogs catalogued catalogued cataloguing
+    c/convey.txt                    conveie               -s -d -eying
+    c/crack.txt                     crac                  -s crached craching
+    c/cast.txt                      caste                 -s cast -ing
+    c/chauffeur.txt                 ceauffêr            ceauffê ceauffês ceauffêd ceauffêd ceauffêring
+    c/chalk.txt                     c̃auche              c̃auc c̃aucs -d -d -ing
+    c/clutter.txt                   clotir                clotre clotres clotred clotred clotiring
+    c/career.txt                    carier                carire carires carired carired cariering
+    c/cup.txt                       cuppe                 cup cups -d -d -ing
+    c/chip.txt                      c̃ippe               c̃ip c̃ips c̃ipped c̃ipped c̃ipping
+    c/commodify.txt                 commodifae            -s -d -yhing
+    c/clerk.txt                     clerc                 -s clerched clerching
+    c/crank.txt                     crânche             crânc crâncs -d -d -ing
+    c/counter.txt                   cônter              côntre côntres côntred côntred côntering
+    c/cock.txt                      coc                   -s coched coching
+    c/cuck.txt                      cuc                   -s cuched cuching
+    c/compact.txt                   compacte              compacs -d -ing
+    c/curtsy.txt                    courtsie              -s -d courtsying
+    c/club.txt                      clubbe                club clubs clubbed clubbed clubbing
+    c/cook.txt                      côc                 -s côched côching
+    c/carry.txt                     cârie               -s -d cârying
+    c/clamber.txt                   clamber               clambre clambres clambred clambred clambering
+    c/cake.txt                      câc                 -s câched câching
+    c/contract.txt                  contracte             contracs -d -ing
+    c/contract.txt                  contracte             contracs -d -ing
+    c/cannot.txt                    cannot                -s
+    c/command.txt                   comandier             comandire comandires comandired comandired comandiering
+    c/crow.txt                      croe                  -s -d -uing
+    c/cue.txt                       cúe                 -s -d cúing
+    c/center.txt                    center                centre centres centred centred centering
+    c/critique.txt                  critique              critíc critícs -d -d -ing
+    c/construct.txt                 constructe            construcs -d -ing
+    c/concur.txt                    concurre              concur concurs -d -d -ing
+    c/cleave.txt                    clieve                -s claift -ing
+    c/crucify.txt                   crucifae              -s -d crucifyhing
+    c/cipher.txt                    cîfer               cîfre cîfres cîfred cîfred cîfering
+    c/cipher.txt                    decîfer             decîfre decîfres decîfred decîfred decîfering
+    c/correct.txt                   correcte              correcs -d -ing
+    c/chase.txt                     saçeie              -s -d saçeying
+    c/connect.txt                   connecte              connecs -d -ing
+    c/creak.txt                     creic                 creic creics creiched creiched creiching
+    c/chat.txt                      c̃atir               c̃atre c̃atres c̃atred c̃atred c̃atiring
+    c/clock.txt                     cloc                  -s cloched cloching
+    c/cover.txt                     covir                 covre covres covred covred coviring
+    c/cluck.txt                     cluc                  -s cluched cluching
+    c/come.txt                      come                  -s câme -ing
+    c/chew.txt                      c̃eue                -s -d c̃euing
+    c/corrupt.txt                   corropte              corrops -d -ing
+    c/chop.txt                      c̃oppe               c̃op c̃ops c̃opped c̃opped c̃opping
+    c/clog.txt                      clogue                clog clogs -d -d -ing
+    c/check.txt                     c̃ec                 -s c̃eched c̃eching
+    c/confer.txt                    confêr              confê confês confêd confêd confêring
+    c/cloak.txt                     cloque                cloac cloacs -d -d -ing
+    c/coffer.txt                    coffir                coffre coffres coffred coffred coffiring
+    c/cost.txt                      còste               -s còst -ing
+    c/cry.txt                       crîe                -s -d cryhing
+    c/convoke.txt                   convoque              convoac convoacs -d -d -ing
+    c/cohere.txt                    cohier                cohire cohires cohired cohired cohiering
+    c/concoct.txt                   concocte              concocs -d -ing
+    c/choke.txt                     c̃eoc                -s c̃eoched c̃eoching
+    c/copy.txt                      copie                 -s -d copying
+    c/comply.txt                    complîe             -s -d complyhing
+    c/clatter.txt                   clatir                clatre clatres clatred clatred clatiring
+    c/creep.txt                     criepe                -s craipt -ing
+    c/conspire.txt                  conspîer            conspîre conspîres conspîred conspîred conspîering
+    c/chamber.txt                   c̃aimber             c̃aimbre c̃aimbres -d -d -ering
+    c/certify.txt                   certifae              -s -d certifyhing
+    c/choose.txt                    c̃ouse               -s c̃ose -ing
+    c/chuck.txt                     c̃uc                 -s c̃uched c̃uching
+    c/classify.txt                  classifae             -s -d classifyhing
+    c/catch.txt                     caic̃e               -s cauht -ing
+    c/convoy.txt                    convoie               -s -d convoying
+    c/cut.txt                       cutte                 cut cuts cut cut cutting
+    c/click.txt                     clic                  -s cliched cliching
+    c/cower.txt                     caûer               caûre caûres caûred caûred caûering
+    c/conquer.txt                   conquere              -s -d conquering
+    c/caulk.txt                     cauche                cauc caucs -d -d -ing
+    c/crochet.txt                   croçeie              -s -d croçeying
+=================================================================
