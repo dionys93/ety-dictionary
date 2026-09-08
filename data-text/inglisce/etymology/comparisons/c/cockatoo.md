@@ -125,7 +125,7 @@ flowchart TD
 | **Italian** | *il cacatua* | *i cacatua* | The unaltered form, invariable. Masculine. |
 | **Dutch** | *de kaketoe* | *de kaketoes* | The second vowel altered; the form English inherited. |
 | **English** | *the cockatoo* | *the cockatoos* | Reanalysed as *cock* + too. |
-| **Inglisce** | *þe cacatue* | *þe cacatuis* | Four syllables restored; no *cock*; the plural in *-uis*. |
+| **Inglisce** | *þe cacatue* | *þe cacatuis* | Three syllables; no *cock*; the plural in *-uis*. |
 
 ---
 
@@ -133,7 +133,7 @@ flowchart TD
 
 `Cacatue` follows the Romance reading of the word rather than the Germanic one.
 
-The two lines are set out in section 2 and they disagree about everything. Portuguese *cacatua*, Spanish *cacatúa*, Italian *cacatua* and Vieillot's *Cacatua* take the Malay word whole and write its stops as `c`. Dutch *kaketoe* alters the second vowel, and English then reads a *cock* into the first syllable and a *too* into the last. `Cacatue` sides with the first group: `c` for the stops, and the vowels of *cacatua*.
+Portuguese *cacatua*, Spanish *cacatúa*, Italian *cacatua* and Vieillot's *Cacatua* take the Malay word whole and write its stops as `c`. Dutch *kaketoe* alters the second vowel, and English then reads a *cock* into the first syllable and a *too* into the last. `Cacatue` sides with the first group: `c` for the stops, and the vowels of *cacatua*.
 
 The ending is `-ue`, spelling unstressed /u/, and its plural is `-uis`: `þe cacatue`, `þe cacatuis`.
 
