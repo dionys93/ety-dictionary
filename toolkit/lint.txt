@@ -1,19 +1,6 @@
 Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 =================================================================
 
-📝 [1ma/alter.txt[0m
-   [33m[WARN][0m  Unknown POS tag(s): 'n' — not in parts-of-speech.tsv; buildBrain will skip these records.
-
-📝 [1ma/audio.txt[0m
-   [31m[ERROR][0m Missing or malformed POS tag '()'
-   [31m[ERROR][0m Missing or malformed language tag '[]'
-
-📝 [1ma/analyze.txt[0m
-   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
-
-📝 [1ma/avouch.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
 📝 [1mi/itch.txt[0m
    [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
 
@@ -26,9 +13,6 @@ Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 📝 [1mg/ghost.txt[0m
    [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
 
-📝 [1mg/Greece.txt[0m
-   [33m[WARN][0m  Unknown POS tag(s): 'prefix' — not in parts-of-speech.tsv; buildBrain will skip these records.
-
 📝 [1mg/gravitate.txt[0m
    [31m[ERROR][0m Stanza(s) 3: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
 
@@ -38,17 +22,9 @@ Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 📝 [1mg/great.txt[0m
    [33m[WARN][0m  Unknown POS tag(s): 'prefix' — not in parts-of-speech.tsv; buildBrain will skip these records.
 
-📝 [1mf/fossil.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1mf/France.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
 
 📝 [1mf/floor.txt[0m
    [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
-
-📝 [1mf/feisty.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
 
 📝 [1mf/flame.txt[0m
    [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
@@ -74,14 +50,8 @@ Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 📝 [1ml/level.txt[0m
    [31m[ERROR][0m Language tag '[]' and POS tag '()' must be on separate lines.
 
-📝 [1ml/league.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
 📝 [1ml/live.txt[0m
    [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
-
-📝 [1ml/Lithuania.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
 
 📝 [1ml/liquify.txt[0m
    [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
@@ -116,9 +86,6 @@ Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 📝 [1me/effect.txt[0m
    [31m[ERROR][0m Stanza(s) 5: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
 
-📝 [1me/evident.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
 📝 [1me/egg.txt[0m
    [31m[ERROR][0m Stanza(s) 2 3: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
 
@@ -128,26 +95,14 @@ Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 📝 [1me/encapsulate.txt[0m
    [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
 
-📝 [1me/exaggerate.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
 📝 [1me/endure.txt[0m
    [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
-
-📝 [1me/eke.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1me/exploit.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
 
 📝 [1mb/bough.txt[0m
    [31m[ERROR][0m Missing or malformed POS tag '()'
 
 📝 [1mb/bottle.txt[0m
    [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
-
-📝 [1mb/Britain.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
 
 📝 [1mb/bell.txt[0m
    [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
@@ -185,20 +140,11 @@ Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 📝 [1mp/punish.txt[0m
    [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
 
-📝 [1mp/peal.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
 📝 [1mp/persevere.txt[0m
    [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
 
 📝 [1mp/preview.txt[0m
    [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
-
-📝 [1ms/solid.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1ms/stupefy.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
 
 📝 [1ms/sulfur.txt[0m
    [33m[WARN][0m  Unknown POS tag(s): 'dated' — not in parts-of-speech.tsv; buildBrain will skip these records.
@@ -221,9 +167,6 @@ Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 📝 [1ms/shadow.txt[0m
    [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
 
-📝 [1ms/stature.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
 📝 [1ms/supply.txt[0m
    [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
 
@@ -239,15 +182,6 @@ Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 📝 [1md/decay.txt[0m
    [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
 
-📝 [1md/defend.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1md/dignify.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1md/dispense.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
 📝 [1md/die.txt[0m
    [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
    [33m[WARN][0m  Unknown POS tag(s): 'n' — not in parts-of-speech.tsv; buildBrain will skip these records.
@@ -257,12 +191,6 @@ Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 
 📝 [1md/defy.txt[0m
    [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
-
-📝 [1md/dense.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1md/decease.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
 
 📝 [1md/divert.txt[0m
    [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
@@ -279,12 +207,6 @@ Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 📝 [1mw/wise.txt[0m
    [33m[WARN][0m  Unknown POS tag(s): 'suffix' — not in parts-of-speech.tsv; buildBrain will skip these records.
 
-📝 [1mw/wretch.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1mw/wrest.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
 📝 [1mj/judicial.txt[0m
    [31m[ERROR][0m Stanza(s) 4: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
 
@@ -294,17 +216,11 @@ Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 📝 [1mj/jock.txt[0m
    [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
 
-📝 [1mj/join.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
 📝 [1mm/mania.txt[0m
    [33m[WARN][0m  Unknown POS tag(s): 'adj m n' — not in parts-of-speech.tsv; buildBrain will skip these records.
 
 📝 [1mm/mature.txt[0m
    [31m[ERROR][0m Stanza(s) 3: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
-
-📝 [1mm/maintain.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
 
 📝 [1mm/memory.txt[0m
    [31m[ERROR][0m Stanza(s) 5: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
@@ -314,9 +230,6 @@ Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 
 📝 [1mv/vote.txt[0m
    [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
-
-📝 [1my/yack.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
 
 📝 [1mk/key.txt[0m
    [31m[ERROR][0m Stanza(s) 4: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
@@ -345,26 +258,11 @@ Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 📝 [1mc/command.txt[0m
    [33m[WARN][0m  Unknown POS tag(s): 'n' — not in parts-of-speech.tsv; buildBrain will skip these records.
 
-📝 [1mc/conjure.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1mc/close.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
 📝 [1mc/coerce.txt[0m
    [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
 
 📝 [1mc/concentrate.txt[0m
    [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
-
-📝 [1mc/comment.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1mc/copper.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1mc/Christ.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
 
 📝 [1mc/crumb.txt[0m
    [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
