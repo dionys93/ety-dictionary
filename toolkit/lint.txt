@@ -7,15 +7,6 @@ Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 📝 [1mb/bye.txt[0m
    [31m[ERROR][0m Missing or malformed POS tag '()'
 
-📝 [1mk/key.txt[0m
-   [31m[ERROR][0m Stanza(s) 4: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
-
-📝 [1mq/queen.txt[0m
-   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
-
-📝 [1mq/query.txt[0m
-   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
-
 📝 [1mc/cross.txt[0m
    [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
 
