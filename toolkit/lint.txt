@@ -1,9 +1,6 @@
 Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 =================================================================
 
-📝 [1mf/forfeit.txt[0m
-   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
-
 📝 [1ml/level.txt[0m
    [31m[ERROR][0m Language tag '[]' and POS tag '()' must be on separate lines.
 
