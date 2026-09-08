@@ -1,21 +1,6 @@
 Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 =================================================================
 
-📝 [1mg/gravitate.txt[0m
-   [31m[ERROR][0m Stanza(s) 3: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
-
-📝 [1mg/genre.txt[0m
-   [31m[ERROR][0m Language tag '[]' and POS tag '()' must be on separate lines.
-
-📝 [1mg/great.txt[0m
-   [33m[WARN][0m  Unknown POS tag(s): 'prefix' — not in parts-of-speech.tsv; buildBrain will skip these records.
-
-📝 [1mf/floor.txt[0m
-   [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
-
-📝 [1mf/flame.txt[0m
-   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
-
 📝 [1mf/fawn.txt[0m
    [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
 
