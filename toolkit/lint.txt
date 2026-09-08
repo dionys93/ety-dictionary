@@ -7,18 +7,6 @@ Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 📝 [1mb/bye.txt[0m
    [31m[ERROR][0m Missing or malformed POS tag '()'
 
-📝 [1ms/sulfur.txt[0m
-   [33m[WARN][0m  Unknown POS tag(s): 'dated' — not in parts-of-speech.tsv; buildBrain will skip these records.
-
-📝 [1ms/shire.txt[0m
-   [33m[WARN][0m  Unknown POS tag(s): 'suffix' — not in parts-of-speech.tsv; buildBrain will skip these records.
-
-📝 [1ms/shut.txt[0m
-   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
-
-📝 [1ms/strut.txt[0m
-   [31m[ERROR][0m Stanza(s) 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
-
 📝 [1ms/star.txt[0m
    [31m[ERROR][0m Stanza(s) 2: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
 
