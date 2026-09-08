@@ -62,7 +62,9 @@ The same French word, by then spelled *reconnaissance*, entered English again in
 
 The spellings record the gap. *Recognizance* was re-Latinised at some point after its arrival — the *g* is not in the Old French and not in the pronunciation of the French — while *reconnaissance* came in late enough to keep the French *-nn-* and the French shape entire. So English holds one word in two spellings, one dressed as Latin and one as French, and treats them as unrelated.
 
-**Reconnoitre** (1707) is the same French verb caught a century before the noun, which makes three helpings from the French side alone.
+**Reconnoitre** (1707) is the same French verb caught a century before the noun, which makes three helpings from the French side alone. It is also a fossil of French spelling. French wrote this verb *reconnoître*, and its noun *reconnoissance*, with *oi* well into the nineteenth century. The printers Pierre and Firmin Didot were the first to put *ai* in its place, Voltaire had been demanding the change for decades, and the Académie ratified it only in 1835, in the sixth edition of its dictionary. English took the verb in 1707, while *oi* was still standard, and the noun in 1810, by which time the new spelling was in use though not yet official.
+
+So *reconnoitre* and *reconnaissance* differ in that vowel not because the words differ — they are the same word — but because English collected them on either side of a change in French orthography. The English spellings preserve a French argument about spelling that the French themselves settled two centuries ago.
 
 ---
 
@@ -94,7 +96,7 @@ flowchart TD
     EN4["English reconnoitre<br/>1707"]
     EN5["English reconnaissance<br/>1810"]
 
-    ING["Inglisce recognyse, recognisance<br/>recognicion, reconnessance"]
+    ING["Inglisce recognyse, recognisance<br/>recognicion, reconnessance, reconnoiter"]
 
     PIE --> GNO
     GNO --> COG
@@ -119,6 +121,7 @@ flowchart TD
     EN1 --> ING
     EN2 --> ING
     EN3 --> ING
+    EN4 --> ING
     EN5 --> ING
 ```
 
@@ -135,7 +138,7 @@ flowchart TD
 | **Romanian** | *recunoaște* | *recunoaștere* | *Cunoaște* inherited from *cognoscere*; the prefix added within Romanian. |
 | **English** | *to recognize* | *recognition* | Nothing inherited. The verb from the French stem, the noun from the Latin. |
 | **English** | *to reconnoitre* | *recognizance*, *reconnaissance* | The same French word twice, 1300 and 1810, plus the verb in 1707. |
-| **Inglisce** | *to recognyse* | *recognicion*, *recognisance*, *reconnessance* | Each word spelled to its own route; the doublet kept visibly apart. |
+| **Inglisce** | *to recognyse*, *to reconnoiter* | *recognicion*, *recognisance*, *reconnessance* | Each word spelled to its own route; the doublet kept visibly apart. |
 
 Read down the noun column and the point makes itself. Every Romance language has one word where English has three, and every Romance language's noun is transparently its own verb. English is the only member of the set in which a speaker who knows *recognize* has no way to see that *reconnaissance* is the same word.
 
@@ -151,4 +154,10 @@ The **`s`** in `recognyse`, `recognîsable` and `recognisance` is the older lett
 
 **`Recognicion`** takes the Romance spelling of the suffix — Spanish *-ción*, Catalan *-ció*, Portuguese *-ção*, Italian *-zione*, and Old French *recognition*, which is the form etymonline gives as the English word's immediate parent alongside the Latin.
 
-The verb is marked by the silent **`-e`** of `recognyse`, and the /aɪ/ is written `y` in the verb and `î` in the adjective `recognîsable`.
+**`Reconnoiter`** belongs with `reconnessance` and not with `recognyse`. It keeps the `-nn-`, and it keeps the `oi` that French wrote until the nineteenth century, so the Inglisce family divides along exactly the line the borrowings did: `recognyse`, `recognîsable`, `recognisance` and `recognicion` on the Latin side, `reconnessance` and `reconnoiter` on the French. Two spellings for one Latin verb, each honest about the road it took.
+
+The paradigm divides on grammar rather than on sound. `To reconnoiter` is the infinitive and `reconnoitering` the participle, both in `-er`; `reconnoitre`, `reconnoitres` and `reconnoitred` are the finite forms, all in `-re`. Nothing phonological separates the two groups — `-ing` and `-ed` both add a syllable — so the stem shape is itself carrying the distinction, and this verb needs no silent `-e` to be identified as one. `Recognyse` marks verbhood with a letter; `reconnoiter` marks it by which of two stems is in play.
+
+English already owns both spellings and does nothing with them. *Reconnoitre* and *reconnoiter* are one word in English, distinguished only by which side of the Atlantic set the type. Inglisce keeps the pair and puts it to work.
+
+In `recognyse` the verb is marked instead by the silent **`-e`**, and the /aɪ/ is written `y` there and `î` in the adjective `recognîsable`.
