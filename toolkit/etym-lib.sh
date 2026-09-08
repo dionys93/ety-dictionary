@@ -175,55 +175,125 @@ etym-find() {
 
 
 # etym-info <word>
+# etym-info <word> [--brief|--chain|--json] [--no-sources]
+#
+# Merged replacement for the old etym-info + etym-chain pair. Both resolved the
+# same file, ran the same parse and the same stanza selection, and differed only
+# in projection — so a word with several stanzas produced a table from one and a
+# stack of chains from the other, with no way to tell which chain belonged to
+# which row. This prints one numbered block per stanza so the correspondence is
+# structural rather than something the reader reconstructs.
+#
+# Modes:
+#   (default)   summary table, then a detail block per stanza
+#   --brief     summary table only (the old etym-info output)
+#   --chain     descent chains only (the old etym-chain output)
+#   --json      the selected records as a JSON array, for piping into jq
+#
+#   --no-sources  omit source URLs from the detail blocks
+#
+# ORIGIN is the oldest attested language in the chain — etymology[0] — not the
+# newest. The previous implementation filtered the chain down to [ME]/[MI] lines
+# and took the last, which could only ever return ME, since every stanza carries
+# an [ME] line and the chain runs oldest to newest. Its `// .[-1]` fallback was
+# unreachable for the same reason.
 etym-info() {
-    local word="$1"
-    [[ -z "$word" ]] && { echo "Usage: etym-info <word>"; return 1; }
-    local file
-    file=$(_etym_resolve_file "$word") || return 1
+    local word="" mode="full" show_sources=1
+    local usage="Usage: etym-info <word> [--brief|--chain|--json] [--no-sources]"
 
-    printf -- "--- Primary Definitions for: %s ---\n" "$word"
-    printf -- "%-22s | %-28s | %-6s | %s\n" "INGLISCE" "PART OF SPEECH" "ORIGIN" "FORMS"
-    echo "--------------------------------------------------------------------------------"
+    while [[ $# -gt 0 ]]; do
+        case "$1" in
+            --brief)      mode="brief" ;;
+            --chain)      mode="chain" ;;
+            --json)       mode="json" ;;
+            --sources)    show_sources=1 ;;
+            --no-sources) show_sources=0 ;;
+            -*)           echo "$usage"; return 1 ;;
+            *)            [[ -z "$word" ]] && word="$1" ;;
+        esac
+        shift
+    done
 
-    etym-parse "$file" | jq -r --arg word "$word" '
-        select(
-            (.me_word       | ascii_downcase) == ($word | ascii_downcase) or
-            (.inglisce_word | ascii_downcase) == ($word | ascii_downcase)
-        ) |
-        (.etymology | map(select(.lang == "ME" or .lang == "MI")) | last // .[-1]) as $origin |
-        # conjugations is always a named object now (slot verbs, {explicit},
-        # {plural[,variants]}, {forms}); flatten every string leaf for display
-        (.conjugations | [.. | strings] | map(select(. != "")) | join(" ")) as $forms |
-        [
-            .inglisce_word,
-            .pos,
-            ($origin.lang | if . == "" or . == null then "?" else . end),
-            $forms
-        ] | @tsv
-    ' | awk -F'\t' '{ printf "%-22s | %-28s | %-6s | %s\n", $1, $2, $3, $4 }'
-}
+    [[ -z "$word" ]] && { echo "$usage"; return 1; }
 
-
-# etym-chain <word>
-etym-chain() {
-    local word="$1"
-    [[ -z "$word" ]] && { echo "Usage: etym-chain <word>"; return 1; }
     local file
     file=$(_etym_resolve_file "$word") || return 1
 
     local reform_name="${DICT_PROJECT_NAME:-Inglisce}"
-    echo "--- Evolutionary Chain for: $word ---"
 
-    etym-parse "$file" | jq -r --arg word "$word" --arg rn "$reform_name" '
+    # Parse once. Every mode below reads this, rather than re-spawning the
+    # parser per view.
+    local records
+    records=$(etym-parse "$file" | jq -c --arg word "$word" '
         select(
             (.me_word       | ascii_downcase) == ($word | ascii_downcase) or
             (.inglisce_word | ascii_downcase) == ($word | ascii_downcase)
-        ) |
-        (.etymology[] | " ↳ \(.form)  [\(.lang)]"),
-        (" ↳ \(.inglisce_word)  [\($rn)]"),
-        "------------------------------------------------------------"
+        )
+    ')
+
+    if [[ -z "$records" ]]; then
+        echo "Error: '$word' resolved to ${file##*/}, but no stanza in it matches." >&2
+        return 1
+    fi
+
+    if [[ "$mode" == "json" ]]; then
+        printf '%s\n' "$records" | jq -s '.'
+        return 0
+    fi
+
+    # ── Summary table ────────────────────────────────────────────────────────
+    if [[ "$mode" == "full" || "$mode" == "brief" ]]; then
+        printf -- "--- Primary Definitions for: %s ---\n" "$word"
+        printf -- "%-3s %-22s | %-28s | %-6s | %s\n" \
+            "#" "INGLISCE" "PART OF SPEECH" "ORIGIN" "FORMS"
+        echo "--------------------------------------------------------------------------------"
+
+        printf '%s\n' "$records" | jq -s -r '
+            to_entries[] |
+            .key as $i | .value |
+            # conjugations is always a named object (slot verbs, {explicit},
+            # {plural[,variants]}, {forms}); flatten every string leaf.
+            (.conjugations | [.. | strings] | map(select(. != "")) | join(" ")) as $forms |
+            ((.etymology[0].lang // "") | if . == "" then "?" else . end) as $origin |
+            [ ($i + 1 | tostring), .inglisce_word, .pos, $origin, $forms ] | @tsv
+        ' | awk -F'\t' '{ printf "%-3s %-22s | %-28s | %-6s | %s\n", $1, $2, $3, $4, $5 }'
+    fi
+
+    [[ "$mode" == "brief" ]] && return 0
+
+    # ── Detail blocks ────────────────────────────────────────────────────────
+    if [[ "$mode" == "full" ]]; then
+        echo ""
+    else
+        printf -- "--- Evolutionary Chain for: %s ---\n" "$word"
+    fi
+
+    printf '%s\n' "$records" | jq -s -r \
+        --arg rn "$reform_name" \
+        --arg mode "$mode" \
+        --argjson src "$show_sources" '
+        def chain:
+            [ (.etymology[] | "\(.form) [\(.lang)]") ]
+            + [ "\(.inglisce_word) [\($rn)]" ]
+            | join("  →  ");
+
+        to_entries[] |
+        .key as $i | .value as $r |
+        ($r.conjugations | [.. | strings] | map(select(. != ""))) as $forms |
+        (
+            [ "[\($i + 1)] \($r.inglisce_word)  (\($r.pos))",
+              "    " + ($r | chain) ]
+            + (if $mode != "chain" and ($forms | length) > 0
+               then [ "    forms: " + ($forms | join(" ")) ]
+               else [] end)
+            + (if $mode != "chain" and $src == 1
+               then ($r.sources | map("    " + .))
+               else [] end)
+            + [ "" ]
+        ) | .[]
     '
 }
+
 
 # etym-cognates <query>
 # Note: cognates intentionally does NOT filter by word — it searches for
