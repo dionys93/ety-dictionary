@@ -69,27 +69,27 @@ And a smaller thing that runs the other way. **Every language in this set writes
 
 ```mermaid
 flowchart TD
-    GK["Ancient Greek Εὐρώπη<br/>geographic by 522 BC"]
-    GKA["Ancient Greek Εὐρωπαῖος"]
-    L["Latin Europa"]
-    LA["Latin Europaeus<br/>the -ae- diphthong"]
+    GK["Ancient Greek<br/>Εὐρώπη<br/>geographic by 522 BC"]
+    GKA["Ancient Greek<br/>Εὐρωπαῖος"]
+    L["Latin<br/>Europa"]
+    LA["Latin<br/>Europaeus<br/>the -ae- diphthong"]
 
-    FR["French Europe / européen"]
-    ENG["English Europe / European"]
+    FR["French<br/>Europe / européen"]
+    ENG["English<br/>Europe / European"]
 
-    SP["Spanish Europa / europeo"]
-    PT["Portuguese Europa / europeu"]
-    IT["Italian Europa / europeo"]
-    CAT["Catalan Europa / europeu"]
-    RO["Romanian Europa / european"]
+    SP["Spanish<br/>Europa / europeo"]
+    PT["Portuguese<br/>Europa / europeu"]
+    IT["Italian<br/>Europa / europeo"]
+    CAT["Catalan<br/>Europa / europeu"]
+    RO["Romanian<br/>Europa / european"]
 
-    DE["German Europa / europäisch<br/>ae written ä"]
-    NL["Dutch Europa / Europees"]
-    DA["Danish Europa / europæisk<br/>the ligature kept"]
-    SV["Swedish Europa / europeisk"]
-    IS["Icelandic Evrópa / evrópskur<br/>stem respelled, suffix native"]
+    DE["German<br/>Europa / europäisch<br/>ae written ä"]
+    NL["Dutch<br/>Europa / Europees"]
+    DA["Danish<br/>Europa / europæisk<br/>the ligature kept"]
+    SV["Swedish<br/>Europa / europeisk"]
+    IS["Icelandic<br/>Evrópa / evrópskur<br/>stem respelled, suffix native"]
 
-    ING["Inglisce Europe / europían"]
+    ING["Inglisce<br/>Europe / europían"]
 
     GK --> GKA
     GK --> L
