@@ -1,0 +1,1 @@
+-offe / -oste / -ofre, the terminal sets
