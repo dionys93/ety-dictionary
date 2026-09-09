@@ -44,9 +44,11 @@ Every Romance language then took the term back from the New Latin — but not al
 
 Spanish **crustáceo**, Portuguese **crustáceo**, French **crustacé**, Catalan **crustaci** all keep the Latin *u*. Their everyday words for a crust — *costra*, *crosta*, *croûte*, *crosta* — have an *o*, so in these four languages the scientific term and the kitchen term look like strangers. A Spanish speaker has *costra* and *crustáceo* and no visible reason to connect them.
 
-Italian is the exception. Its word is **crostaceo**, with the *o* of inherited *crosta*, not the *u* of Latin *crusta*. The learned borrowing was pulled onto the shape of the native word as it came in.
+Italian is the exception among the Romance languages. Its word is **crostaceo**, with the *o* of inherited *crosta*, not the *u* of Latin *crusta*. The learned borrowing was pulled onto the shape of the native word as it came in, so *crosta* and *crostaceo* sit beside each other, obviously related, and the name of the class announces that these are the animals with crusts.
 
-The consequence is that Italian alone can see what a crustacean is. *Crosta* and *crostaceo* sit beside each other, obviously related, and the name of the class announces that these are the animals with crusts. Everywhere else — including English — the connection has to be taught.
+English arrives at the same transparency from the opposite direction. *Crust* and *crustacean* also share a visible stem — but here it is the everyday word that carries the Latin *u*, not the learned word that gave it up. English took *crust* from Old French *crouste* **and directly from Latin *crusta***, and it is that second route which put the *u* there, where the four languages above have an *o*.
+
+So there are two ways to end up with a pair that looks like a pair. Italian brought the new word down to the old one. English never let the old word drift far enough to need it.
 
 ---
 
@@ -66,30 +68,30 @@ The same pattern turns up wherever a derivative is borrowed before its parent. W
 
 ```mermaid
 flowchart TD
-    PIE["PIE *kreus-<br/>begin to freeze, form a crust"]
-    L["Latin crusta<br/>rind, crust, shell, bark"]
-    LADJ["Latin crustaceus<br/>having a crust"]
+    PIE["PIE<br/>*kreus-<br/>begin to freeze, form a crust"]
+    L["Latin<br/>crusta<br/>rind, crust, shell, bark"]
+    LADJ["Latin<br/>crustaceus<br/>having a crust"]
 
-    ITC["Italian crosta"]
-    CATC["Catalan crosta"]
-    PTC["Portuguese crosta"]
-    SPC["Spanish costra<br/>consonants rearranged"]
-    OFC["Old French crouste"]
-    FRC["French croûte<br/>circumflex marks the lost s"]
-    ENC["English crust<br/>early 14c."]
-    CUS["English custard<br/>via Old Provençal croustado"]
+    ITC["Italian<br/>crosta"]
+    CATC["Catalan<br/>crosta"]
+    PTC["Portuguese<br/>crosta"]
+    SPC["Spanish<br/>costra<br/>consonants rearranged"]
+    OFC["Old French<br/>crouste"]
+    FRC["French<br/>croûte<br/>circumflex marks the lost s"]
+    ENC["English<br/>crust<br/>early 14c."]
+    CUS["English<br/>custard<br/>via Old Provençal croustado"]
 
-    ENAJ["English crustaceous<br/>1640s"]
-    NL["New Latin Crustacea<br/>Lamarck 1801"]
-    ITL["Italian crostaceo<br/>pulled onto the inherited stem"]
-    SPL["Spanish crustáceo"]
-    PTL["Portuguese crustáceo"]
-    FRL["French crustacé"]
-    CATL["Catalan crustaci"]
-    ENL["English Crustacea 1814<br/>crustacean 1835"]
+    ENAJ["English<br/>crustaceous<br/>1640s"]
+    NL["New Latin<br/>Crustacea<br/>Lamarck 1801"]
+    ITL["Italian<br/>crostaceo<br/>pulled onto the inherited stem"]
+    SPL["Spanish<br/>crustáceo"]
+    PTL["Portuguese<br/>crustáceo"]
+    FRL["French<br/>crustacé"]
+    CATL["Catalan<br/>crustaci"]
+    ENL["English<br/>Crustacea 1814<br/>crustacean 1835"]
 
-    INGC["Inglisce croste<br/>the o of the inherited branch"]
-    INGL["Inglisce crustâcia<br/>the u of the learned branch"]
+    INGC["Inglisce<br/>cruste, crusts"]
+    INGL["Inglisce<br/>crustâcia, crustâcian, crustâceus"]
 
     PIE --> L
     L --> LADJ
@@ -98,6 +100,7 @@ flowchart TD
     L --> PTC
     L --> SPC
     L --> OFC
+    L --> ENC
     OFC --> FRC
     OFC --> ENC
     OFC --> CUS
@@ -118,31 +121,29 @@ flowchart TD
 | | The inherited word | The learned word | What the pair records |
 |---|---|---|---|
 | **Latin** | *crusta* | *crustaceus* | One word for rind, crust, shell and bark alike. |
-| **Italian** | *la crosta* | *il crostaceo* | The only language where the two share a stem. |
+| **Italian** | *la crosta* | *il crostaceo* | Unified on the inherited *o*: the learned word was pulled down to the old one. |
 | **Spanish** | *la costra* | *el crustáceo* | Consonants rearranged in the inherited word; the learned one untouched. |
 | **Portuguese** | *a crosta* | *o crustáceo* | Inherited *o* against learned *u*, as in Spanish. |
 | **Catalan** | *la crosta* | *el crustaci* | The *ɔ* of *crosta* is irregular; the learned form keeps the Latin *u*. |
 | **French** | *la croûte* | *le crustacé* | The circumflex stands in for the *s*; the learned word keeps it. |
-| **English** | *the crust* | *the crustacean* | One vowel for both, and the *s* written out. *Crustaceous* predates the class by 174 years. |
-| **Inglisce** | *þe croste*, *þe crosts* | *crustâcia*, *crustâcian*, *crustâceus* | The two branches given two vowels, as in Romance. |
+| **English** | *the crust* | *the crustacean* | Unified on the Latin *u*, because *crust* came from *crusta* as well as from *crouste*. |
+| **Inglisce** | *þe cruste*, *þe crusts* | *crustâcia*, *crustâcian*, *crustâceus* | One stem, `crust-`, across both branches. |
 
-Read the two columns against each other and the shape is clear. Five of the six languages have a pair that no longer looks like a pair — *costra* and *crustáceo*, *croûte* and *crustacé*, *crust* and *crustacean* — because the everyday word kept moving while the scientific one was fetched fresh from the Latin two thousand years later. Only Italian pulled the new word into line with the old.
+Four of the languages have a pair that no longer looks like a pair — *costra* and *crustáceo*, *crosta* and *crustáceo*, *crosta* and *crustaci*, *croûte* and *crustacé* — because the everyday word kept moving while the scientific one was fetched fresh from the Latin two thousand years later. Italian and English are the two that still show the join, and they show it from opposite ends: Italian by bringing the new word into line with the old, English by having an old word that never left the Latin.
 
 ---
 
 ## 7. The Inglisce forms
 
-The set divides where the Latin divided, and the vowel is what divides it.
+`Cruste` and `crustâcia` share one stem. That is the decision, and it puts this orthography with Italian and English against the four Romance languages that let the two branches drift apart.
 
-**`Croste` is the inherited word.** It carries the *o* of Italian *crosta*, Catalan *crosta*, Portuguese *crosta* and Old French *crouste* — and that last is the form English actually took the word from, in the early fourteenth century. **`Crustâcia`, `crustâcian` and `crustâceus` are the learned words**, and they carry the *u* of Latin *crusta*, which is what Lamarck quarried in 1801. Two branches, two roads, two vowels.
+The stem is `crust-`, with the *u* of Latin *crusta*, and it is worth being clear that this is not a borrowing of the English spelling but an agreement with it. English *crust* is from Old French *crouste* **and directly from Latin *crusta***, and it is the Latin route that put the *u* there — which is why English has *crust* where French has *croûte* and Italian *crosta*. Writing `cruste` takes the Latin form for a word that genuinely has a Latin form to take.
 
-English cannot make this distinction because it lost the vowel that would carry it. *Crust* and *crustacean* both have *u*, which asserts a directness the first word does not have: English *crust* is from *crouste*, not from *crusta*. Writing `croste` restores what the French route put there and what four Romance languages still have.
+Italian reaches the same result from the other end. It unified on the inherited vowel, dragging the learned *crostaceo* down to native *crosta*; Inglisce unifies on the Latin vowel, holding the everyday word at *crust-* where the learned words already are. Two systems, two directions, one outcome — the class named legibly after the thing.
 
-Note where that leaves Italian. Italian marks the same distinction and resolves it the other way — pulling the learned *crostaceo* onto the inherited *crosta*, so that both words show the *o*. Inglisce and Italian give opposite answers to the same question. English gives none, because it does not ask.
+What changes from English is the ending, not the vowel: **`cruste`**, with the silent `-e`, and the plural **`crusts`**, where the `-e` drops and `-s` attaches directly.
 
-The plural is **`crosts`**: the silent `-e` drops and `-s` attaches directly.
-
-Among the learned three, the stem `crustâc-` is constant, and only what follows it changes: `-ia` for the class, `-ian` for its member, `-eus` for the quality. Where English hangs three differently-shaped endings on a stem whose stress moves, the Inglisce set holds the stem still and lets the endings carry the grammar.
+Among the learned three, the stem is constant and only what follows it changes: `-ia` for the class, `-ian` for its member, `-eus` for the quality. Where English hangs three differently-shaped endings on a stem whose stress moves, the Inglisce set holds the stem still and lets the endings carry the grammar.
 
 The **circumflex** sits on the stressed vowel, and it is doing what the neighbouring languages do with their own marks in this same family: Spanish spends an acute on *crustáceo* and Portuguese on *crustáceo*, both to fix stress; French spends a circumflex on *croûte* to record a lost consonant. Three languages, three jobs for a mark over a vowel, all on one Latin word.
 
