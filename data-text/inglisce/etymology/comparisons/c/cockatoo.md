@@ -84,20 +84,20 @@ Vieillot, incidentally, held the echoic view. His 1817 entry states that the nam
 
 ```mermaid
 flowchart TD
-    MAL["Malay kakatua<br/>bird; elder sibling; vice, gripe"]
-    POR["Portuguese cacatua<br/>1632"]
-    DUT["Dutch kaketoe"]
+    MAL["Malay<br/>kakatua<br/>bird; elder sibling; vice, gripe"]
+    POR["Portuguese<br/>cacatua<br/>1632"]
+    DUT["Dutch<br/>kaketoe"]
 
-    FRO["French cacatois<br/>the faithful form"]
-    FRB["French cacatoès<br/>-s sounded, invariable"]
-    FRS["French cacatois<br/>the royal sail"]
-    PT2["Portuguese catatua<br/>metathesis"]
-    SPA["Spanish cacatúa<br/>acute breaks the hiatus"]
+    FRO["French<br/>cacatois<br/>the faithful form"]
+    FRB["French<br/>cacatoès<br/>-s sounded, invariable"]
+    FRS["French<br/>cacatois<br/>the royal sail"]
+    PT2["Portuguese<br/>catatua<br/>metathesis"]
+    SPA["Spanish<br/>cacatúa<br/>acute breaks the hiatus"]
 
-    ENG["English cockatoo<br/>spelling copies cock"]
+    ENG["English<br/>cockatoo<br/>spelling copies cock"]
     TIEL["Dutch kaketielje<br/>English cockatiel"]
-    NL["New Latin Cacatua<br/>Vieillot 1817"]
-    ING["Inglisce cacatue"]
+    NL["New Latin<br/>Cacatua<br/>Vieillot 1817"]
+    ING["Inglisce<br/>cacatue"]
 
     MAL --> POR
     MAL --> DUT
