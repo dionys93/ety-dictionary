@@ -87,7 +87,9 @@ flowchart TD
     OBE["English<br/>oblation, oblate"]
     OFT["Late Latin<br/>offertus<br/>built to replace oblatus"]
     MLO["Medieval Latin<br/>offertorium"]
-    INT["Inglisce<br/>offirtorie, offirtoris"]
+    INT["Inglisce<br/>offertorie, offertoris"]
+    ROMT["French offertoire · Italian offertorio<br/>Spanish, Galician ofertorio<br/>Catalan ofertori · Portuguese ofertório"]
+    GERT["German, Dutch, Swedish<br/>Offertorium, offertorium"]
 
     OEN["Old English<br/>offrian, offrung"]
     OFI["Old Frisian<br/>offria"]
@@ -122,6 +124,8 @@ flowchart TD
     OFF --> OFT
     OFT --> MLO
     MLO --> INT
+    MLO --> ROMT
+    MLO --> GERT
     OFF --> LLA
     LLA --> OEN
     LLA --> OFI
@@ -150,6 +154,8 @@ flowchart TD
     MIN --> ING
 ```
 
+### The verb
+
 | Language | Form | How the Latin verb was handled |
 | :--- | :--- | :--- |
 | **Inglisce** | to offir, offre | Old English *offrian*, reinforced by Old French |
@@ -167,19 +173,41 @@ flowchart TD
 
 Read the last column down and there are four fates, not one. The verb was refitted to the fourth conjugation, or refitted as an inchoative, or left alone, or lifted out of Latin entirely by missionaries before Romance had finished deciding. English is the only language on the list with two of these at once, and that is not a tidy fact about English — it is what happens to a language that is converted early and conquered late.
 
+### The noun from *offertorium*
+
+| Language | Form | The Latin ending |
+| :--- | :--- | :--- |
+| **Inglisce** | offertorie, offertoris | naturalised |
+| English | offertory, offertories | naturalised |
+| French | offertoire | naturalised |
+| Italian | offertorio | naturalised |
+| Catalan | ofertori | naturalised |
+| Spanish | ofertorio | naturalised |
+| Galician | ofertorio | naturalised |
+| Portuguese | ofertório | naturalised |
+| Aragonese | ofertorio, ofiertorio | naturalised |
+| German | Offertorium | left standing |
+| Dutch | offertorium | left standing |
+| Swedish | offertorium | left standing |
+| Polish | ofertorium | left standing |
+
+The line falls in the same place it fell for the verb, and for the same reason. Romance took the word as its own and gave it a native ending. Germanic took it as a piece of church furniture and left it in the Latin nominative singular, undeclined, still visibly a foreign object on the page. English is the only Germanic language on the Romance side of that line, because it received this word not from missionaries in the ninth century but through the fourteenth-century Latin-and-French channel that supplied the rest of its ecclesiastical vocabulary.
+
+The consonant tells a second story across the same set. Ibero-Romance simplifies the geminate — *ofertorio*, *ofertori*, *ofertório* — while French, Italian and every Germanic borrowing keep both letters.
+
 ---
 
 ## 8. The Inglisce forms
 
-**to offir** · offre, offres, offred, offiring · **offre**, offirs · **offirtorie**, offirtoris
+**to offir** · offre, offres, offred, offiring · **offre**, offirs · **offertorie**, offertoris
 
-The doubled *f* is history rather than phonology. *Ob-* assimilates to *of-* before *f*, which is the whole reason Latin has *offerre* and not *obferre*, and the letter records that assimilation. Not every doubled *f* in the orthography is doing this; this one is.
+The doubled *f* is history rather than phonology. *Ob-* assimilates to *of-* before *f*, which is the whole reason Latin has *offerre* and not *obferre*, and the letter records that assimilation. Not every doubled *f* in the orthography is doing this; this one is. It also places the word with French and Italian rather than with Iberia, where the geminate was given up.
 
 The noun and the verb are held apart on the page. *To offir* is the infinitive and *offiring* the progressive; the present tense and the noun compress to *offre*, and the noun's plural restores the vowel as *offirs*. English cannot make this distinction — *offer* is one string for the verb and the noun both, and only the syntax around it says which is meant. Here the citation forms differ before any sentence is built around them.
 
-**Offirtorie** shows the same restoration for the same reason. A suffix follows, so the vowel comes back and the word is built on *offir-* rather than *offr-*, exactly as the plural is. And its own plural, *offirtoris*, follows the ordinary treatment of a final *-ie*.
+**Offertorie** stands outside that alternation, and the *e* is what says so. *Offirs* takes its vowel from the Inglisce stem because it was assembled here, out of parts the language already had. *Offertorie* was not assembled here at all: it arrived whole from Medieval Latin *offertorium*, and it keeps the vowel that word brought with it. One letter therefore separates what the language made from what the language received, which is the same distinction that lets a learned Latin borrowing keep its own shape anywhere else in the orthography.
 
-The *t* in *offirtorie* is worth a moment, because by classical rules it has no business existing. The participle of *offerre* was *oblātus*, with no *t* and no *f*. The *t* is the seam left by Late Latin's repair — a manufactured participle, built on the present stem so that the verb would behave. Inglisce inherits the repair along with the word, and the letter marks the place where Latin gave up on its own irregularity.
+The *t* is worth a moment too, because by classical rules it has no business existing. The participle of *offerre* was *oblātus*, with no *t* and no *f*. The *t* is the seam left by Late Latin's repair — a manufactured participle, built on the present stem so that the verb would behave. Inglisce inherits the repair along with the word, and the letter marks the place where Latin gave up on its own irregularity.
 
 Both nouns begin with a spoken vowel, so both take the euphonic article regardless of where their stress falls.
 
