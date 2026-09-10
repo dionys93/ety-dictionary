@@ -46,15 +46,13 @@ The abstract noun went furthest of all. **Trānslātiō** named a carrying-acros
 
 Then a third verb took the job, and it took it by mistake.
 
-Latin **trādūcere** is *trāns* plus *dūcere*: to lead across. It also meant to lead someone across in a parade, to display them, and from there to disgrace and dishonour them. In classical use it never meant to translate.
+Latin **trādūcere** is *trāns* plus *dūcere*: to lead across. In classical use it never meant to translate.
 
 On the fifth of September 1400, Leonardo Bruni wrote a letter turning on a phrase in Aulus Gellius: *vocabulum Graecum vetus traductum in linguam Romanam* — an old Greek word *brought over* into Latin. Bruni read *traductum* as though it meant *translated*, and began using *tradurre* in that sense deliberately and often in his prefaces. From Florence the usage spread across the peninsula and then out of it.
 
 It swept the field. French **traduire**, Italian **tradurre**, Spanish **traducir**, Portuguese **traduzir**, Catalan **traduir**, Romanian **a traduce** — all of them, and Spanish *traducir* is a calque on the Florentine word rather than an independent development. Medieval Latin's *translatare*, which had served the whole of Europe for centuries, was left behind everywhere except in English, where it survives as the ordinary word for the thing.
 
 French shows the changeover in progress, having carried both for a while: *translater* holding the physical senses of moving something, *traduire* arriving in the fifteenth century and confined at first to the law, where a man is still *traduit en justice*, brought before a court.
-
-And English kept *trādūcere* as well — in the Roman sense Bruni had walked past. To **traduce** somebody is to lead them out in public and shame them. The verb that means *translate* in Madrid means *slander* in London, and the two are one word.
 
 ---
 
@@ -70,14 +68,13 @@ flowchart TD
     TRL["Latin<br/>trānslātus, trānslātiō"]
     MLT["Medieval Latin<br/>trānslātāre"]
     DUC["Latin<br/>dūcere<br/>to lead"]
-    TDC["Latin<br/>trādūcere<br/>to lead across, to parade, to disgrace"]
+    TDC["Latin<br/>trādūcere<br/>to lead across"]
     BRU["Leonardo Bruni, 1400<br/>tradurre = to translate"]
     OFT["Old French<br/>translater"]
     OFV["Old French<br/>transferer"]
     ENT["English<br/>translate, early 14c."]
     ENV["English<br/>transfer, late 14c."]
     ENC["English<br/>transference, 1680s"]
-    END["English<br/>traduce, to slander"]
     ING["Inglisce<br/>to transfir · to translait<br/>translâcion, translaitor"]
     FRA["French<br/>transférer · traduire"]
     ITA["Italian<br/>trasferire · tradurre"]
@@ -104,7 +101,6 @@ flowchart TD
     TRL --> SPL
     TRL --> CAL
     DUC --> TDC
-    TDC --> END
     TDC --> BRU
     BRU --> FRA
     BRU --> ITA
