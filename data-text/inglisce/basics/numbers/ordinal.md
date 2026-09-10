@@ -31,7 +31,7 @@
 
 ---
 
-### fourþ
+### feorþ
 
 **Etymological Derivation:**
 * **[OE]** feorþa
