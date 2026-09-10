@@ -67,21 +67,18 @@ flowchart TD
     TRF["Latin<br/>trānsferre<br/>to bear across"]
     TRL["Latin<br/>trānslātus, trānslātiō"]
     MLT["Medieval Latin<br/>trānslātāre"]
-    DUC["Latin<br/>dūcere<br/>to lead"]
-    TDC["Latin<br/>trādūcere<br/>to lead across"]
-    BRU["Leonardo Bruni, 1400<br/>tradurre = to translate"]
     OFT["Old French<br/>translater"]
     OFV["Old French<br/>transferer"]
     ENT["English<br/>translate, early 14c."]
     ENV["English<br/>transfer, late 14c."]
     ENC["English<br/>transference, 1680s"]
     ING["Inglisce<br/>to transfir · to translait<br/>translâcion, translaitor"]
-    FRA["French<br/>transférer · traduire"]
-    ITA["Italian<br/>trasferire · tradurre"]
-    SPA["Spanish<br/>transferir · traducir"]
-    POR["Portuguese<br/>transferir · traduzir"]
-    CAT["Catalan<br/>transferir · traduir"]
-    ROM["Romanian<br/>a transfera · a traduce"]
+    FRA["French<br/>transférer"]
+    ITA["Italian<br/>trasferire"]
+    SPA["Spanish<br/>transferir"]
+    POR["Portuguese<br/>transferir"]
+    CAT["Catalan<br/>transferir"]
+    ROM["Romanian<br/>a transfera"]
     SPL["Spanish, Portuguese, Galician<br/>trasladar"]
     CAL["Catalan<br/>traslladar"]
 
@@ -100,14 +97,6 @@ flowchart TD
     ENV --> ING
     TRL --> SPL
     TRL --> CAL
-    DUC --> TDC
-    TDC --> BRU
-    BRU --> FRA
-    BRU --> ITA
-    BRU --> SPA
-    BRU --> POR
-    BRU --> CAT
-    BRU --> ROM
     TRF --> FRA
     TRF --> ITA
     TRF --> SPA
