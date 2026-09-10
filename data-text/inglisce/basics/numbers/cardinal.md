@@ -44,7 +44,7 @@
 
 ---
 
-### four
+### feor
 
 **Etymological Derivation:**
 * **[OE]** feower
