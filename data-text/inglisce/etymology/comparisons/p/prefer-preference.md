@@ -30,6 +30,12 @@ What is not in doubt is the practical consequence. Any word built on *praeferre*
 
 Medieval Latin took it as *prelatus*, a clergyman of high rank, and English had **prelate** by about 1200 — a bishop, a pope, the superior of a religious house. A prelate is, in the word's own terms, a man set over others.
 
+From it Medieval Latin built *praelatia*, which reached English through Anglo-Norman *prelacie* as **prelacy**: the office of a prelate, and then the whole body of them, and then church government by prelates as a system.
+
+That third sense turned the word into a weapon. In the sixteenth and seventeenth centuries *prelacy* is what the episcopal order is called by people who want it abolished — the Marprelate tracts of 1588 announce the tone in their title, and Milton's five antiprelatical pamphlets of 1641 and 1642 carry it through, one of them titled *The Reason of Church-Government Urged against Prelaty*. Milton's spelling was *prelaty*, straight off the Medieval Latin, and Webster's dictionary of 1828 still lists it with a single citation and the note that it is not in use. In Scotland the word stayed hot longer than the institution did.
+
+The quarrel is inside the word. Milton's case was that scripture shows no difference between a bishop and a presbyter — that nobody in the church should stand above anybody else. Which is to say the argument against prelacy was an argument against anyone being *praelatus*: carried in front.
+
 So English holds *prefer* and *prelate*, the two stems of one Latin verb, and no English speaker connects them. One is a verb of taste and the other is a bishop. The image behind both is the same procession: someone walks in front.
 
 ---
@@ -104,7 +110,7 @@ flowchart TD
 
 | Language | The verb | The noun | The adjective | From the supine |
 | :--- | :--- | :--- | :--- | :--- |
-| **Inglisce** | to prefêr | prèference | preferencial | — |
+| **Inglisce** | to prefêr | prèference | preferencial | prèlat |
 | English | to prefer | preference | preferential | prelate |
 | French | préférer | préférence | préférentiel | prélat |
 | Italian | preferire | preferenza | preferenziale | prelato |
@@ -127,6 +133,7 @@ One English word has no column at all. **Preferment** is not a borrowing but a d
 
 **to prefêr** · prefê, prefês, prefêd, prefêring
 **prèference** · **preferencial** · **prefêment**
+**prèlat** · **prelacie**, prelacis
 
 Three marks and three values, on a letter English writes the same way every time.
 
@@ -139,3 +146,5 @@ The **r** appears only where it is a consonant standing before a vowel. That is 
 And here is what the marks are really replacing. Look at where English doubles the consonant in this family: *preferred*, *preferring*, *preferment* — all with two, all stressed on *-fer-*. Then look at *preference* and *preferential*, both with one, both stressed elsewhere. English is already using consonant doubling as a stress diacritic. It is simply doing it with a letter instead of a mark, and doing it unreliably — the OED observes that *preferrable* would be the better spelling and has not prevailed, which is a dictionary admitting the system has failed in a particular case.
 
 Put the stress mark on the vowel where it belongs, and the consonant is released. One *r* throughout, doing consonant work only, while the vowel carries its own information. Nothing wavers, because there is nothing left for the doubling to decide.
+
+The two words off the participle behave the same way and show the mark's economy from the other side. **Prèlat** takes the grave for the same reason *prèference* does: the syllable is stressed and its vowel is plain, and without the mark an initial *pre-* would be read the way it is read in *prefêr*. **Prelacie** takes nothing, and does not need to. Its ending settles the question — English *-acy* words put the weight three syllables from the end without exception, so *prelacie* can only be stressed where it is, and a mark would state what the shape of the word already states. The *-ence* words are marked precisely because their ending settles nothing: English says PREference and deTERrence and transFERence, three stresses on one suffix, and every one of them has to be spelled out.
