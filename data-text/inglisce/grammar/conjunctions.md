@@ -19,7 +19,7 @@
 | :--- | :--- | :--- |
 | **þo** | Introduces a contrasting statement or concession. | Hie uent autsîde, **þo** it uas raigning. |
 | **alþó** | Similar to "þo," introducing a contrasting but true statement. | **Alþó** sie uas tîored, sie caipt uirching. |
-| **iven þo** | A stronger form emphasizing the contrast between two clauses. | Ћey lòst þe gâme, **iven þo** þey plaied uell. |
+| **iven þo** | A stronger form emphasizing the contrast between two clauses. | Ћey lost þe gâme, **iven þo** þey plaied uell. |
 | **uîle** | Indicates a contrast or concession, often meaning "whereas." | **Uîle** I ondrestande your pointe, I disagríe. |
 
 ---
