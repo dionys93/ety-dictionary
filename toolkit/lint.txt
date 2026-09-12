@@ -1,115 +1,5 @@
 Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 =================================================================
-📝 [1mt/target.txt[0m
-   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
-
-📝 [1mt/Texas.txt[0m
-   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
-
-📝 [1mt/temporary.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1ma/allot.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1ma/algebra.txt[0m
-   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
-
-📝 [1ma/attempt.txt[0m
-   [33m[WARN][0m  Stanza(s) 2: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
-
-📝 [1ma/apprehend.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1ma/absorb.txt[0m
-   [33m[WARN][0m  Stanza(s) 3: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
-
-📝 [1ma/avouch.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1mi/inform.txt[0m
-   [31m[ERROR][0m Stanza(s) 7: (pos) tag is not at the end of the reformed line — etym-parse records an empty pos.
-
-📝 [1mi/indignant.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1mr/rupture.txt[0m
-   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
-
-📝 [1mg/genre.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1mg/gut.txt[0m
-   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
-
-📝 [1mg/get.txt[0m
-   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
-
-📝 [1mf/fossil.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1mf/fog.txt[0m
-   [33m[WARN][0m  Unknown POS tag(s): 'f' — not in parts-of-speech.tsv.
-
-📝 [1mf/France.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1mf/feisty.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1mf/flake.txt[0m
-   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
-
-📝 [1mf/fir.txt[0m
-   [33m[WARN][0m  Stanza(s) 2: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
-
-📝 [1ml/luminate.txt[0m
-   [33m[WARN][0m  Stanza(s) 4: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
-
-📝 [1ml/level.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1ml/league.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1ml/luxury.txt[0m
-   [31m[ERROR][0m Stanza(s) 1: (pos) tag is not at the end of the reformed line — etym-parse records an empty pos.
-
-📝 [1ml/Lithuania.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1mh/harmony.txt[0m
-   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
-
-📝 [1mh/hum.txt[0m
-   [33m[WARN][0m  Stanza(s) 2: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
-
-📝 [1me/eros.txt[0m
-   [33m[WARN][0m  Stanza(s) 2: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
-
-📝 [1me/evident.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1me/exaggerate.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1me/eke.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1me/exploit.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1mb/Britain.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1mb/bee.txt[0m
-   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
-
-📝 [1mb/bogey.txt[0m
-   [33m[WARN][0m  Stanza(s) 3: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
-
-📝 [1mb/billow.txt[0m
-   [33m[WARN][0m  Unknown POS tag(s): 'm' — not in parts-of-speech.tsv.
 
 📝 [1mp/promote.txt[0m
    [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
@@ -123,15 +13,6 @@ Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 📝 [1mp/pose.txt[0m
    [33m[WARN][0m  Stanza(s) 2: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
 
-📝 [1mp/peal.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1ms/solid.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1ms/stupefy.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
 📝 [1ms/scheme.txt[0m
    [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
 
@@ -141,56 +22,20 @@ Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 📝 [1ms/soap.txt[0m
    [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
 
-📝 [1ms/stature.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
 📝 [1mn/noodle.txt[0m
    [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
-
-📝 [1md/defend.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1md/dignify.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
 
 📝 [1md/deep.txt[0m
    [33m[WARN][0m  Stanza(s) 2: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
 
-📝 [1md/dispense.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1md/dense.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1md/decease.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1md/defibrillation.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1mw/wretch.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1mw/wrest.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
 📝 [1mj/jury.txt[0m
    [33m[WARN][0m  Stanza(s) 3: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
-
-📝 [1mj/join.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
 
 📝 [1mm/Maine.txt[0m
    [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
 
-📝 [1mm/maintain.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
 📝 [1mv/verb.txt[0m
    [33m[WARN][0m  Stanza(s) 2: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
-
-📝 [1my/yack.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
 
 📝 [1mk/kid.txt[0m
    [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
@@ -207,9 +52,6 @@ Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 📝 [1mc/cynic.txt[0m
    [33m[WARN][0m  Stanza(s) 2 3: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
 
-📝 [1mc/conjure.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
 📝 [1mc/close.txt[0m
    [33m[WARN][0m  Trailing whitespace on one or more lines.
    [33m[WARN][0m  Stanza(s) 6: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
@@ -217,23 +59,11 @@ Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 📝 [1mc/coconut.txt[0m
    [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
 
-📝 [1mc/comment.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
 📝 [1mc/Czech.txt[0m
    [33m[WARN][0m  Stanza(s) 2: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
 
-📝 [1mc/copper.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
 📝 [1mc/chief.txt[0m
    [33m[WARN][0m  Stanza(s) 5: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
-
-📝 [1mc/Christ.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
-📝 [1mc/correlate.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
 
 📝 [1mc/crop.txt[0m
    [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
