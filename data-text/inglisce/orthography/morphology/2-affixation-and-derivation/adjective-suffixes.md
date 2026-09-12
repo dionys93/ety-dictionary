@@ -6,12 +6,12 @@
 
 Deriving from Latin *-abilis* and *-bilis* via Old French, these suffixes denote capacity, fitness, or ability. While Inglisce maintains the adjective forms **-able** and **-ible**, it strictly regularizes their abstract noun derivations (Modern English *-ability* and *-ibility*).
 
-In Inglisce, these nouns are formed using the **-abilatie** and **-ibilatie** suffixes, which pluralize regularly with **-is**.
+In Inglisce, these nouns are formed using the **-abilitie** and **-ibilitie** suffixes, which pluralize regularly with **-is**.
 
 | Modern English | Inglisce Adjective | Inglisce Abstract Nouns |
 | :--- | :--- | :--- |
-| **capable / capability** | **câpable** | **câpabilatie, câpabilatis** |
-| **flexible / flexibility** | **flexible** | **flexibilatie, flexibilatis** |
+| **capable / capability** | **câpable** | **câpabilitie, câpabilitis** |
+| **flexible / flexibility** | **flexible** | **flexibilitie, flexibilitis** |
 
 ---
 
@@ -53,7 +53,7 @@ Verbs derived from Latin *-atus* end in `-âte` or `-ait`. To form the adjective
 | **negate / negative** | to **negâte** | **negatif** |
 | **demonstrate / demonstrative** | to **demonstrait** | **demonstratif** |
 | **operate / operative** | to **operait** | **opratif** |
-| **cooperate / cooperative** | to **coöperait** | **coöpratif** |
+| **cooperate / cooperative** | to **cuoperait** | **cuopratif** |
 | **create / creative** | to **criâte** | **criâtif** |
 | **equate / equative** | to **equâte** | **equâtif** |
 
