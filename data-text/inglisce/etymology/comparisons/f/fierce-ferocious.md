@@ -116,4 +116,4 @@ Two things stand out.
 
 **`Fierce` is left alone**, and it should be. The `ie` already spells the vowel correctly, the `ce` already spells /s/ before a front vowel by the ordinary Romance convention, and the word is one of the few in English whose spelling records something true and unusual — the Old French nominative *s*, still standing where the case system put it eight hundred years ago. Nothing needs repair.
 
-**`Feroceus`** writes /ʃəs/ as `ceus`, on the same principle by which /ʃən/ is written `cion`: a *c* before a front vowel, palatalised in the suffix. English *ferocious* uses `ci` for the same sound, which is not wrong so much as inconsistent, since English also writes that sound `ti` in *nation*, `si` in *mission*, `sci` in *conscious*, `ce` in *ocean*, and `xi` in *anxious*. One sound, six spellings, distributed by no rule a reader could state.
+**`Feroceus`** writes /ʃəs/ as `ceus`, on the same principle by which /ʃən/ is written `cion`: a *c* before a front vowel, palatalised in the suffix.
