@@ -109,7 +109,15 @@ Three observations.
 
 ## 5. The Inglisce forms
 
-NEEDS EDIT
+**The market recovers its own spelling.** *Feire* is not a new form. It is the spelling the word had for the whole of its documented life before modern English: Old French *feire*, Anglo-French *feyre*, and Middle English *feire*, which is the headword the Middle English Dictionary files it under. Modern *fair* is the innovation, and a late one. Restoring *feire* puts the word back beside *foire*, *feria*, *feira*, *fiera* and *fira*, where the *-ai-* of *fair* had cut it off from all five.
+
+**It also separates a homograph.** Modern English *fair* is two words. One is the market, from *fēriae* through French. The other is the adjective meaning beautiful, then light-complexioned, then just, which is Old English *fæger* and shares nothing with it at any point. Middle English still kept them apart most of the time, writing *feire* for the market against *fair* and *fayr* for the adjective, though the two were already bleeding into one another. Modern English finished the collision. *Feire* undoes it, and does so without inventing anything: it takes the older of the two spellings for the older of the two senses.
+
+**The feast keeps the consonant and changes the vowel.** *Fieste* holds the *s* that French vocalised away, so it stands with English against *fête* — but it writes *ie* where English writes *ea*, which puts the vowel with Spanish *fiesta* and the diphthongising branch rather than with the French. The form therefore records both halves of the word's history at once: the consonant it kept from Old French *feste*, and the vowel that marks it as the inherited member of the pair rather than the learned one.
+
+**The learned words stay visibly learned.** *Festival* is untouched, and *festivitie* and *festif* keep the *festiv-* stem intact, exactly as Spanish *festivo*, Portuguese *festivo*, Italian *festivo* and Romanian *festiv* do. *Festif* follows French in dropping the silent *-e* that English carries in *festive*. None of the three shows a diphthong, and that is the point: the *e* of *festiv-* is the mark of a word taken from the page, and it is what tells *fieste* and *festif* apart on sight.
+
+**The plurals drop the final *e*.** *Feire* gives *feirs* and *fieste* gives *fiests*, the same rule that gives *dignetis* from *dignetie*. In English the *t* and *s* of *feasts* meet across a silent letter that does nothing; in Inglisce the letter simply goes.
 
 ---
 
