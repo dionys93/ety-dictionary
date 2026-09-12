@@ -48,26 +48,61 @@ The semantic shift is complete in every language. French *foire*, Spanish *feria
 ```mermaid
 flowchart TD
     PIE["PIE *dʰeh₁s-<br/>sacred, of the gods"]
-    OL["Old Latin *fēsiae"]
-    RHOT["rhotacism<br/>intervocalic s becomes r"]
-    FER["fēriae<br/>days of no public business"]
-    FEST["fēstus, fēstum<br/>s protected by following t"]
+    STEM["Old Latin stem *fēs-"]
     FAN["fānum, fās<br/>profane, fanatic, nefarious"]
 
-    MARKET["foire, feria, feira<br/>fiera, fira — the market"]
-    WEEK["Portuguese weekdays<br/>segunda-feira"]
-    FESTA["fête, fiesta, festa<br/>English feast"]
-    LEARN["festival, festivo<br/>festivitas — learned"]
+    FER["fēriae<br/>days of no public business"]
+    FEST["fēstus, fēsta<br/>festal, of a holiday"]
 
-    PIE --> OL
-    OL --> RHOT
-    RHOT --> FER
-    PIE --> FEST
+    VLR["Vulgar Latin *fēria"]
+    ROM1["foire · feria · feira<br/>fiera · fira"]
+    WEEK["Portuguese weekdays<br/>segunda-feira"]
+    OFR["Old French feire, faire"]
+    AFR["Anglo-French feyre"]
+    MIR["Middle English feire"]
+    ENR["English fair"]
+    INR["Inglisce feire, feirs"]
+
+    VLS["Vulgar Latin *fēsta"]
+    ROM2["festa · fiesta · festa"]
+    OFS["Old French feste"]
+    FRS["French fête"]
+    MIS["Middle English feste"]
+    ENS["English feast"]
+    INS["Inglisce fieste, fiests"]
+
+    LIV["fēstīvus, fēstīvitās"]
+    MLA["Medieval Latin festivalis"]
+    ENL["English festive · festivity"]
+    ENA["English festival"]
+    INL["Inglisce festif · festivitie"]
+    INA["Inglisce festival"]
+
+    PIE --> STEM
     PIE --> FAN
-    FER --> MARKET
-    FER --> WEEK
-    FEST --> FESTA
-    FEST --> LEARN
+    STEM -->|"s between vowels<br/>rhotacism"| FER
+    STEM -->|"s before t<br/>change blocked"| FEST
+
+    FER --> VLR
+    VLR --> ROM1
+    ROM1 -->|"Portuguese only"| WEEK
+    VLR --> OFR --> AFR --> MIR --> ENR --> INR
+
+    FEST --> VLS
+    VLS --> ROM2
+    VLS --> OFS
+    OFS -->|"s vocalised"| FRS
+    OFS --> MIS --> ENS --> INS
+
+    FEST --> LIV
+    FEST --> MLA
+    LIV -->|"learned"| ENL --> INL
+    MLA -->|"learned"| ENA --> INA
+
+    classDef source fill:#f4f0e6,stroke:#8a7f66,color:#2b2b2b
+    classDef ing fill:#e6eef4,stroke:#5b7f96,color:#2b2b2b
+    class PIE,STEM,FER,FEST,FAN source
+    class INR,INS,INL,INA ing
 ```
 
 ### The *fēria* set
