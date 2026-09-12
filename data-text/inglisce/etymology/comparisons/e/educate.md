@@ -94,7 +94,7 @@ flowchart TD
 | **Portuguese** | *educável* | *a educabilidade* | *educacional* |
 | **Italian** | *educabile* | *l'educabilità* | — |
 | **English** | *educable* | *educability* | *educational* |
-| **Inglisce** | *ed̦ucable* | *þi ed̦ucabilatie* | *ed̦ucâcional* |
+| **Inglisce** | *ed̦ucable* | *þi ed̦ucabilitie* | *ed̦ucâcional* |
 
 **Only English and Portuguese have the last column.** French, Spanish, and Italian make do with *éducatif*, *educativo*, and *educativo* for both "having the effect of educating" and "pertaining to education." English distinguishes *educative* from *educational* and uses the second far more often; Portuguese followed, most likely under English influence.
 
@@ -104,26 +104,4 @@ flowchart TD
 
 ## 5. The Inglisce forms
 
-### The comma below
-
-**`D̦` writes /dʒ/**, and it completes a set.
-
-English *education* is /ˌɛdʒəˈkeɪʃən/. The `d` is not /d/; it has coalesced with a following yod, the same process that turns /t/ into /tʃ/ and /s/ into /ʃ/. The three outcomes are one sound change operating on three consonants, and the system marks them with one diacritic:
-
-| Letter | Marked | Value | English example |
-|---|---|---|---|
-| s | `ș` | /ʃ/ | *sure*, *pressure* |
-| t | `ț` | /tʃ/ | *nature*, *furniture* |
-| d | `d̦` | /dʒ/ | *educate*, *graduate*, *soldier* |
-
-English writes plain `d` in all of them and marks nothing, so *educate* and *dedicate* begin alike on the page and differ in the mouth. The mark records the letter the word descends from — Latin *ēducāre* has a `d` — and states what became of it.
-
-### The rest
-
-**`-ait` for the verb, `-at` for what is not.** `Ed̦ucait` is the verb; where English writes *educate* for the verb and *educated* for the participle used adjectivally, the `ait` keeps the verb's vowel visible. `Ed̦ucaitif` and `ed̦ucaitor` are built on it, so the verb stem runs unbroken through the adjective and the agent noun.
-
-**`-able` and not `-ible`.** The two are both /əbəl/ and differ only in which Latin conjugation the verb belonged to; `ed̦ucable` and `ed̦ucabilatie` take the single form.
-
-**`-âcion` for /eɪʃən/.** The circumflex gives the vowel, no final `-e` being available, and `-cion` gives /ʃən/.
-
-**The article is `þi` throughout**, every noun in the family beginning with a vowel.
+NEEDS EDIT
