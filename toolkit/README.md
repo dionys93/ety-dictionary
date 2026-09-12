@@ -66,6 +66,18 @@ Sourcing never prompts or installs anything. If a dependency is missing (`jq` is
 export DICT_DIR="$PWD/data-text/inglisce/dictionary"
 source toolkit/etym-lib.sh
 ```
+**The part-of-speech register.** `toolkit/config/parts-of-speech.tsv` decides which `(pos)` tags are legal; `etym-lint` warns on any tag in the dictionary that is missing from it. It is hand-edited, so the format is deliberately loose — one tag per line, `<tag> - <description>`, with `#` comments and blank lines ignored and alignment free:
+
+```
+m n     - masculine noun
+v - verb
+intr v  - intransitive verb
+```
+
+A tag may contain spaces (`m n`, `def v`) but never a hyphen, which is what makes the dash an unambiguous boundary; the previous whitespace-separated form could not distinguish `def v defective verb` from `defin definite article` without already knowing the answer. Legacy tab-separated rows still parse. Every consumer reads the file through `_pos_rows` / `get_pos_desc` in `env.sh` — nothing greps it directly, because three places once held their own copy of the parsing rule and one of them disagreed.
+
+Note that passing lint does not guarantee a record survives the build: `scripts/build-dictionary.js` keeps its own `posMap`, and `suffix`, `prefix`, `interj`, `obs`, `def v` and `indef` are registered in the TSV but absent from it, so `buildBrain` drops those records regardless.
+
 `ETYM_AWK` overrides which awk runs the parser; `ETYM_LIB_DIR` is recomputed from `BASH_SOURCE` at source time, so its default in `env.sh` is never used.
 
 ---
@@ -153,11 +165,18 @@ If either phase fails, the pipeline aborts immediately, names the phase that die
 * **`etym-lint [path] [--strict]`**
   Scans the dictionary for formatting errors and returns exit code 1 if any `[FATAL]` or `[ERROR]` is found. Checks:
   * `[FATAL]` empty files
-  * `[ERROR]` missing or malformed language tag `[]`, missing or malformed POS tag `()`, and a language tag sharing a line with a POS tag
-  * `[ERROR]` conjugation lines missing their `(pos)` tag — these stanzas are otherwise silently dropped by the parser
+  * `[ERROR]` missing or malformed language tag `[]`, and a language tag sharing a line with a POS tag
+  * `[ERROR]` a stanza whose conjugation line has no `(pos)` tag — silently dropped by `etym-parse`
+  * `[ERROR]` a stanza with no reformed line and no etymology either — malformed rather than unfinished
+  * `[ERROR]` a `(pos)` tag that is not at the end of its reformed line — `etym-parse` records an empty `pos`
+  * `[ERROR]` source URLs separated from their stanza by a blank line — `etym-parse` reads paragraphs, so those sources are dropped
   * `[WARN]` trailing whitespace, stanzas with no resolvable language tag, and POS tags absent from `parts-of-speech.tsv` (these records are otherwise silently skipped by `buildBrain`)
+  * `[WARN]` a stanza carrying etymology but no reformed line — a word not yet reformed. It warns rather than errors, because it is ordinary work in progress, but it warns at all because `etym-parse` drops the stanza and it reaches no dataset.
 
   Also generates a verb conjugation coverage report highlighting non-standard stanzas. **`--strict` is currently accepted but has no effect** — it is parsed into a variable the function never reads.
+
+  **POS tag validation uses `etym-parse`'s own regexes**, so lint and parser cannot disagree about what a valid tag looks like. The check this replaced kept a second dialect of them — `\([a-z ]{1,5}(, [a-z ]{1,5})*\)` — which capped every tag at five characters and so rejected `(interj)`, `(suffix)`, `(prefix)` and `(intr v)`, all of which the parser accepts and all of which are registered. Being file-level rather than per-stanza, it also passed a file whenever any one stanza carried a valid tag, so it only ever surfaced on single-stanza files. Shape is settled by the parser's regex; membership is settled by `parts-of-speech.tsv`. Those are the only two authorities and neither restates the other — which is what keeps a bug like that from recurring.
+
 * **`etym-trim [path]`**
   Strips trailing whitespace from all `.txt` files in a directory. Resolves all trailing whitespace lint warnings in one pass.
 * **`etym-create-histories [-d] [-v] [--dirs <a,b,c>]`**
