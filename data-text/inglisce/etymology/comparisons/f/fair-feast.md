@@ -47,36 +47,43 @@ The semantic shift is complete in every language. French *foire*, Spanish *feria
 
 ```mermaid
 flowchart TD
-    PIE["PIE *dʰeh₁s-<br/>sacred, of the gods"]
-    STEM["Old Latin stem *fēs-"]
-    FAN["fānum, fās<br/>profane, fanatic, nefarious"]
+    PIE["Proto-Indo-European<br/>*dʰeh₁s-<br/>sacred, of the gods"]
+    STEM["Old Latin<br/>*fēs-"]
+    FAN["Latin<br/>fānum, fās<br/>sanctuary; divine law"]
 
-    FER["fēriae<br/>days of no public business"]
-    FEST["fēstus, fēsta<br/>festal, of a holiday"]
+    FER["Latin<br/>fēriae<br/>days of no public business"]
+    FEST["Latin<br/>fēstus, fēsta<br/>festal, of a holiday"]
 
-    VLR["Vulgar Latin *fēria"]
-    ROM1["foire · feria · feira<br/>fiera · fira"]
-    WEEK["Portuguese weekdays<br/>segunda-feira"]
-    OFR["Old French feire, faire"]
-    AFR["Anglo-French feyre"]
-    MIR["Middle English feire"]
-    ENR["English fair"]
-    INR["Inglisce feire, feirs"]
+    VLR["Vulgar Latin<br/>*fēria"]
+    OFR["Old French<br/>feire, faire"]
+    FRR["French<br/>foire"]
+    SPR["Spanish<br/>feria"]
+    PTR["Portuguese<br/>feira"]
+    ITR["Italian<br/>fiera"]
+    CAR["Catalan<br/>fira"]
+    WEEK["Portuguese<br/>segunda-feira<br/>the weekdays"]
+    AFR["Anglo-French<br/>feyre"]
+    MIR["Middle English<br/>feire"]
+    ENR["English<br/>fair"]
+    INR["Inglisce<br/>feire, feirs"]
 
-    VLS["Vulgar Latin *fēsta"]
-    ROM2["festa · fiesta · festa"]
-    OFS["Old French feste"]
-    FRS["French fête"]
-    MIS["Middle English feste"]
-    ENS["English feast"]
-    INS["Inglisce fieste, fiests"]
+    VLS["Vulgar Latin<br/>*fēsta"]
+    OFS["Old French<br/>feste"]
+    FRS["French<br/>fête"]
+    SPS["Spanish<br/>fiesta"]
+    PTS["Portuguese<br/>festa"]
+    ITS["Italian<br/>festa"]
+    CAS["Catalan<br/>festa"]
+    MIS["Middle English<br/>feste"]
+    ENS["English<br/>feast"]
+    INS["Inglisce<br/>fieste, fiests"]
 
-    LIV["fēstīvus, fēstīvitās"]
-    MLA["Medieval Latin festivalis"]
-    ENL["English festive · festivity"]
-    ENA["English festival"]
-    INL["Inglisce festif · festivitie"]
-    INA["Inglisce festival"]
+    LIV["Latin<br/>fēstīvus, fēstīvitās"]
+    MLA["Medieval Latin<br/>festivalis"]
+    ENL["English<br/>festive, festivity"]
+    ENA["English<br/>festival"]
+    INL["Inglisce<br/>festif, festivitie"]
+    INA["Inglisce<br/>festival"]
 
     PIE --> STEM
     PIE --> FAN
@@ -84,12 +91,20 @@ flowchart TD
     STEM -->|"s before t<br/>change blocked"| FEST
 
     FER --> VLR
-    VLR --> ROM1
-    ROM1 -->|"Portuguese only"| WEEK
-    VLR --> OFR --> AFR --> MIR --> ENR --> INR
+    VLR --> SPR
+    VLR --> PTR
+    VLR --> ITR
+    VLR --> CAR
+    PTR --> WEEK
+    VLR --> OFR
+    OFR --> FRR
+    OFR --> AFR --> MIR --> ENR --> INR
 
     FEST --> VLS
-    VLS --> ROM2
+    VLS --> SPS
+    VLS --> PTS
+    VLS --> ITS
+    VLS --> CAS
     VLS --> OFS
     OFS -->|"s vocalised"| FRS
     OFS --> MIS --> ENS --> INS
