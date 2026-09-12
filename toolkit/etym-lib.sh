@@ -530,6 +530,307 @@ etym-affix() {
 }
 
 
+# etym-select [pattern] [--starts|--ends|--exact] [--fold] [--length <n|n-m|n+>]
+#             [-d <path>] [--me|--inglisce] [--pos] [--bare|--count|--json]
+#
+# Selects entries by their HEADWORDS ONLY — the [ME] line and the reformed
+# line — and prints both sides of the reform for each. This is the narrow
+# counterpart to etym-find, which greps whole files and so answers a search
+# for "cion" with etymology forms, Middle English spellings and source URLs
+# mixed in among the reformed forms you wanted.
+#
+#   etym-select cion --inglisce          # reformed forms containing "cion"
+#   etym-select cion --inglisce --ends   # ...ending in it
+#   etym-select tion --me                # English headwords containing "tion"
+#   etym-select c̃ --inglisce             # every form carrying c-with-tilde
+#   etym-select ough --me --length 6     # two criteria at once
+#   etym-select --length 4-6             # length alone, as before
+#   etym-select cion --inglisce --bare   # pipeable list of matches
+#
+# --me / --inglisce picks the side that is searched, measured and sorted;
+# both columns print either way.
+#
+# MATCHING IS LITERAL, NOT REGEX, for the same reason etym-find uses grep -F:
+# punctuation in a query can never turn into a pattern. Case is folded for
+# ASCII only, so the two entries beginning with Cyrillic Ћ are reachable by
+# `Ћ` but not by a lowercase form of it.
+#
+# BOTH QUERY AND FORM ARE CANONICALLY DECOMPOSED FIRST, because the data
+# writes the same letter two ways: `â` appears as U+00E2 six times and as
+# a+U+0302 a thousand times. Without that step a search for `â` returns six
+# of a thousand hits and looks like a wrong answer rather than an encoding
+# mismatch. The lookup table in jq_defs covers the base+mark combinations
+# the orthography currently uses and needs extending alongside it.
+#
+# BY DEFAULT THE PATTERN IS THEN MATCHED AGAINST THE FORM AS WRITTEN, marks
+# included, so `c̃` finds c-with-tilde rather than every c. The cost is that
+# a query spanning a marked letter can miss: `ac` will not match `âc`,
+# because a combining circumflex sits between the two letters. Pass --fold
+# to strip marks from both the query and the form before comparing, which
+# makes `ac` match `âc` — and makes `c̃` match every c, so use it knowingly.
+#
+# SELECTION IS THE DURABLE PART OF THIS FUNCTION. Further criteria (POS,
+# language origin) belong here as siblings to --length, and anything that
+# ACTS on a selection — bulk respelling above all — belongs downstream of
+# the projection, never woven into it.
+#
+# The path is -d/--dir rather than a positional, unlike etym-affix and
+# etym-summarize: a pattern and a path are both arbitrary strings, so
+# `etym-select cion s` could not be told apart from a two-word query.
+etym-select() {
+    local pattern="" pmode="any" fold=0 spec=""
+    local target_input="" side="me" mode="table" show_pos=0
+    local usage="Usage: etym-select [pattern] [--starts|--ends|--exact] [--fold] [--length <n|n-m|n+>] [-d <path>] [--me|--inglisce] [--pos] [--bare|--count|--json]"
+
+    while [[ "$#" -gt 0 ]]; do
+        case $1 in
+            --me|--english|--modern)      side="me";  shift ;;
+            --ing|--inglisce|--reformed)  side="ing"; shift ;;
+            --starts|--prefix)            pmode="starts"; shift ;;
+            --ends|--suffix)              pmode="ends";   shift ;;
+            --exact)                      pmode="exact";  shift ;;
+            --fold)                       fold=1; shift ;;
+            -n|--length|--len)            spec="$2"; shift 2 ;;
+            -d|--dir|--path)              target_input="$2"; shift 2 ;;
+            --pos)                        show_pos=1; shift ;;
+            --bare)                       mode="bare";  shift ;;
+            -c|--count)                   mode="count"; shift ;;
+            --json)                       mode="json";  shift ;;
+            -h|--help)                    echo "$usage"; return 0 ;;
+            -*)                           echo "$usage" >&2; return 1 ;;
+            *)                            [[ -z "$pattern" ]] && pattern="$1"; shift ;;
+        esac
+    done
+
+    if [[ -z "$pattern" && -z "$spec" ]]; then
+        echo "$usage" >&2
+        echo "Give a pattern, a --length, or both." >&2
+        return 1
+    fi
+
+    # ── Length spec: "6" | "4-6" | "12+", or unbounded when absent ───────────
+    local min=1 max=1000
+    if [[ -n "$spec" ]]; then
+        if [[ ! "$spec" =~ ^[0-9]+(\+|-[0-9]+)?$ ]]; then
+            echo "Error: '$spec' is not a length spec (expected n, n-m, or n+)." >&2
+            return 1
+        fi
+        if   [[ "$spec" =~ ^([0-9]+)-([0-9]+)$ ]]; then
+            min="${BASH_REMATCH[1]}"; max="${BASH_REMATCH[2]}"
+        elif [[ "$spec" =~ ^([0-9]+)\+$ ]]; then
+            min="${BASH_REMATCH[1]}"
+        else
+            min="$spec"; max="$spec"
+        fi
+        if (( max < 1 )); then
+            echo "Error: '$spec' selects nothing — no word has fewer than 1 letter." >&2; return 1
+        fi
+        if (( min > max )); then
+            echo "Error: '$spec' is an empty range ($min > $max)." >&2; return 1
+        fi
+        if (( min < 1 )); then min=1; fi
+    fi
+
+    # ── Path resolution (same precedence as etym-affix / etym-summarize) ─────
+    local target_path
+    if   [[ -z "$target_input" ]];           then target_path="$DICT_DIR"
+    elif [[ -e "$DICT_DIR/$target_input" ]]; then target_path="$DICT_DIR/$target_input"
+    elif [[ -e "$target_input" ]];           then target_path="$target_input"
+    else echo "Error: '$target_input' not found." >&2; return 1; fi
+
+    local reform_name="${DICT_PROJECT_NAME:-Inglisce}"
+    local side_name="$reform_name"; [[ "$side" == "me" ]] && side_name="Modern English"
+
+    # Criteria line, assembled so the header states exactly what ran.
+    local crit=""
+    if [[ -n "$pattern" ]]; then
+        case "$pmode" in
+            starts) crit="starting with '$pattern'" ;;
+            ends)   crit="ending with '$pattern'" ;;
+            exact)  crit="exactly '$pattern'" ;;
+            *)      crit="containing '$pattern'" ;;
+        esac
+        (( fold )) && crit="$crit (marks folded)"
+    fi
+    if [[ -n "$spec" ]]; then
+        if [[ -n "$crit" ]]; then crit="$crit, $spec letters"; else crit="$spec letters"; fi
+    fi
+
+    # letters: ASCII A–Z/a–z plus anything above ASCII that is not a combining
+    #          diacritic — keeps þ ç ţ ḑ and precomposed vowels, drops the
+    #          marks, hyphens, and the stray ';' '(' a few entries carry.
+    # nomarks: the form with combining marks removed but everything else kept;
+    #          the haystack under --fold.
+    # width:   codepoints minus combining marks, i.e. columns on screen.
+    local jq_defs='
+        # Canonical decomposition for the precomposed letters this dictionary
+        # actually uses. The same letter is written both ways in the data —
+        # `a` is U+00E2 six times and a+U+0302 a thousand times — so without
+        # this a mark-sensitive query silently misses one encoding. Extend the
+        # table if a new base+mark combination enters the orthography.
+        def nfd:
+            { "194":[65,770], "205":[73,769], "206":[73,770], "210":[79,768], "218":[85,769],
+              "224":[97,768], "225":[97,769], "226":[97,770], "231":[99,807], "232":[101,768],
+              "233":[101,769], "234":[101,770], "237":[105,769], "238":[105,770], "239":[105,776],
+              "241":[110,771], "242":[111,768], "243":[111,769], "244":[111,770], "250":[117,769],
+              "251":[117,770], "252":[117,776], "253":[121,769], "255":[121,776], "351":[115,807],
+              "355":[116,807], "375":[121,770], "537":[115,806], "539":[116,806], "7697":[100,807],
+              "7923":[121,768]
+            } as $d
+            | explode | map(. as $c | $d[$c|tostring] // [$c]) | flatten | implode;
+        def letters:
+            explode
+            | map(select(
+                ((. >= 65 and . <= 90) or (. >= 97 and . <= 122))
+                or (. >= 128 and (. < 768 or . > 879))
+              ));
+        def nomarks:
+            explode | map(select(. < 768 or . > 879)) | implode;
+        def width:
+            explode | map(select(. < 768 or . > 879)) | length;
+        def hit($pat; $pmode):
+            if   $pat   == ""       then true
+            elif $pmode == "starts" then startswith($pat)
+            elif $pmode == "ends"   then endswith($pat)
+            elif $pmode == "exact"  then . == $pat
+            else contains($pat) end;
+    '
+
+    # ── JSON mode ────────────────────────────────────────────────────────────
+    if [[ "$mode" == "json" ]]; then
+        _etym_stream "$target_path" | jq -s \
+            --arg     side  "$side" \
+            --arg     pat   "$pattern" \
+            --arg     pmode "$pmode" \
+            --argjson fold  "$fold" \
+            --argjson min   "$min" \
+            --argjson max   "$max" \
+            "$jq_defs"'
+            map(
+                (.me_word       // "") as $mw
+              | (.inglisce_word // "") as $iw
+              | (if $side == "me" then $mw else $iw end | nfd) as $subject
+              | ($subject | letters | length) as $len
+              | (if $fold == 1 then ($subject | nomarks) else $subject end
+                 | ascii_downcase) as $hay
+              | ($pat | nfd) as $p
+              | (if $fold == 1 then ($p | nomarks) else $p end
+                 | ascii_downcase) as $needle
+              | select($len >= $min and $len <= $max)
+              | select($hay | hit($needle; $pmode))
+              | { me_word, inglisce_word, pos: (.pos // ""),
+                  me_length:  ($mw | letters | length),
+                  ing_length: ($iw | letters | length) }
+            )
+            | unique_by([.me_word, .inglisce_word, .pos])
+            | sort_by((if $side == "me" then .me_length else .ing_length end),
+                      (.me_word | ascii_downcase))
+        '
+        return
+    fi
+
+    # ── Shared projection ────────────────────────────────────────────────────
+    # len \t sortkey \t me \t inglisce \t me_width \t ing_width \t pos
+    #
+    # Dedupe runs on whichever columns survive the cut. The two width fields
+    # are functions of the words themselves, so they never split a duplicate;
+    # dropping pos collapses the ~1,540 headwords that carry more than one
+    # stanza into a single row instead of repeating them.
+    local trim=(cat); (( show_pos )) || trim=(cut -f1-6)
+
+    local rows
+    rows=$(
+        _etym_stream "$target_path" | jq -r \
+            --arg     side  "$side" \
+            --arg     pat   "$pattern" \
+            --arg     pmode "$pmode" \
+            --argjson fold  "$fold" \
+            --argjson min   "$min" \
+            --argjson max   "$max" \
+            "$jq_defs"'
+            (.me_word       // "") as $mw
+          | (.inglisce_word // "") as $iw
+          | (if $side == "me" then $mw else $iw end | nfd) as $subject
+          | ($subject | letters) as $key
+          | ($key | length) as $len
+          | (if $fold == 1 then ($subject | nomarks) else $subject end
+             | ascii_downcase) as $hay
+          | ($pat | nfd) as $p
+          | (if $fold == 1 then ($p | nomarks) else $p end
+             | ascii_downcase) as $needle
+          | select($len >= $min and $len <= $max)
+          | select($hay | hit($needle; $pmode))
+          | [ ($len | tostring),
+              ($key | implode | ascii_downcase),
+              $mw,
+              $iw,
+              ($mw | width | tostring),
+              ($iw | width | tostring),
+              (.pos // "") ]
+          | @tsv
+        ' | "${trim[@]}" | LC_ALL=C sort -u -t$'\t' -k1,1n -k2
+    )
+
+    # ── Output ───────────────────────────────────────────────────────────────
+    case "$mode" in
+        bare)
+            local col=3; [[ "$side" == "ing" ]] && col=4
+            # Dedupe order-preservingly: $rows is already ordered by length
+            # then by the accent-stripped key, and re-sorting here on raw bytes
+            # would throw every accented form to the end of the list.
+            [[ -n "$rows" ]] && printf '%s\n' "$rows" | cut -f"$col" | awk '!seen[$0]++'
+            ;;
+
+        count)
+            printf 'Selected: %s %s — tally\n' "$side_name" "$crit"
+            echo "================================================================="
+            if [[ -z "$rows" ]]; then
+                echo "(no entries)"
+            else
+                printf '%s\n' "$rows" | cut -f1 | LC_ALL=C sort -n | uniq -c | \
+                awk '{ printf "%4d %-7s | %d\n", $2, ($2 == 1 ? "letter" : "letters"), $1
+                       total += $1 }
+                     END { print "-----------------------------------------------------------------"
+                           printf "%4s %-7s | %d\n", "all", "", total }'
+            fi
+            echo "================================================================="
+            ;;
+
+        *)
+            printf 'Selected: %s %s\n' "$side_name" "$crit"
+            echo "================================================================="
+            printf '%-4s %-26s | %-26s' "LEN" "MODERN ENGLISH" "${reform_name^^}"
+            (( show_pos )) && printf ' | %s' "PART OF SPEECH"
+            printf '\n'
+            echo "-----------------------------------------------------------------"
+            if [[ -z "$rows" ]]; then
+                echo "(no entries)"
+            else
+                printf '%s\n' "$rows" | awk -F'\t' -v pos="$show_pos" '
+                    # Pad by display width, not byte length: combining marks
+                    # make accented words longer in bytes than on screen.
+                    function pad(s, w, target,   n) {
+                        n = target - w
+                        if (n < 1) n = 1
+                        return s sprintf("%*s", n, "")
+                    }
+                    {
+                        printf "%-4d %s| %s", $1, pad($3, $5, 27), pad($4, $6, 27)
+                        if (pos) printf "| %s", ($7 == "" ? "?" : $7)
+                        printf "\n"
+                        total++
+                    }
+                    END {
+                        print "-----------------------------------------------------------------"
+                        printf "%d %s\n", total, (total == 1 ? "entry" : "entries")
+                    }'
+            fi
+            echo "================================================================="
+            ;;
+    esac
+}
+
+
 # =============================================================================
 # BUILD PIPELINE
 # =============================================================================
