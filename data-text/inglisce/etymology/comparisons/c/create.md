@@ -97,7 +97,7 @@ flowchart TD
 | **Portuguese** | *criar* | *a criação* | *criativo* | *a criatividade* |
 | **Italian** | *creare* | *la creazione* | *creativo* | *la creatività* |
 | **English** | *to create* | *the creation* | *creative* | *the creativity* |
-| **Inglisce** | *to criâte* | *þa criâcion* | *criâtif* | *þa criâtivatie* |
+| **Inglisce** | *to criâte* | *þa criâcion* | *criâtif* | *þa criâtivitie* |
 
 Italian alone keeps the infinitive unchanged from Latin. Portuguese alone raises the stem vowel to *i* throughout, giving *criar*, *criação*, *criativo*, *criatividade* — and Inglisce, arriving from a different direction, does the same.
 
@@ -105,14 +105,4 @@ Italian alone keeps the infinitive unchanged from Latin. Portuguese alone raises
 
 ## 8. The Inglisce forms
 
-`Criâte` writes what English says. *Create* is /kriˈeɪt/, with a full /i/ in the first syllable and no trace of the /e/ that the spelling promises, and `cri-` records that directly where English `cre-` records an ancestor.
-
-The result coincides with Portuguese. *Criar*, *criação*, *criativo*, and *criatividade* show the same *i*, arrived at by the regular Portuguese raising of *e* in hiatus — a sound change with no counterpart in English. Two languages have reached the same stem by unrelated routes, and the Inglisce forms sit closer to the Portuguese column than to any other.
-
-The circumflex carries /eɪ/, so `criâte` is /kriˈeɪt/ and the vowel is stated rather than inferred. English writes `a` and relies on the final silent `e` to signal a value that letter does not otherwise have in this position.
-
-`Criâcion` writes `-cion` for /ʃən/ and `criâtif` takes the French masculine ending, as in *créatif*.
-
-`Criâtivatie` ends in `-tie`, the system's regular spelling for final /i/. The `a` before it is positional rather than etymological: where a stressed /ɪ/ is written `i`, a following reduced vowel is written `a`, and the stress in *creativity* falls on `-tiv-`. The ending is therefore not a choice about Latin at all — it falls out of a rule about what may follow a stressed `i`.
-
-The stem `criât-` runs unbroken through all four forms, as it does in English and as it does not in French or Spanish. Whatever else the respelling changes, it does not disturb that.
+NEEDS EDIT
