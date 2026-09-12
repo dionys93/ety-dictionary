@@ -100,7 +100,7 @@ flowchart TD
 | **Italian** | *feroce* | *la ferocia* |
 | **Catalan** | *ferotge* | *la ferocitat* |
 | **English** | *ferocious*, *fierce* | *the ferocity* |
-| **Inglisce** | *feroceus*, *fierce* | *þa feroçatie* |
+| **Inglisce** | *feroceus*, *fierce* | *þa ferocitie* |
 
 Two things stand out.
 
@@ -117,8 +117,6 @@ Two things stand out.
 **`Fierce` is left alone**, and it should be. The `ie` already spells the vowel correctly, the `ce` already spells /s/ before a front vowel by the ordinary Romance convention, and the word is one of the few in English whose spelling records something true and unusual — the Old French nominative *s*, still standing where the case system put it eight hundred years ago. Nothing needs repair.
 
 **`Feroceus`** writes /ʃəs/ as `ceus`, on the same principle by which /ʃən/ is written `cion`: a *c* before a front vowel, palatalised in the suffix. English *ferocious* uses `ci` for the same sound, which is not wrong so much as inconsistent, since English also writes that sound `ti` in *nation*, `si` in *mission*, `sci` in *conscious*, `ce` in *ocean*, and `xi` in *anxious*. One sound, six spellings, distributed by no rule a reader could state.
-
-**`Feroçatie`** carries the cedilla for a strictly positional reason, and it is the same reason French and Portuguese use it. A *c* before `a`, `o`, or `u` has its hard value; before `e` or `i` it is soft. `Ferocatie` would therefore be read with /k/. The cedilla marks the soft value in a position where the following vowel would otherwise force the hard one — precisely the job it does in *façon*, *garçon*, *criação*, and *almoço*.
 
 Note that the diacritic is doing something quite different from the others in the system. `Ș` and `ț` record a historical change, a consonant that palatalised; `ç` records only a position. It is not saying *this letter became something* but *this letter has not changed despite what follows it*.
 
