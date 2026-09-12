@@ -400,8 +400,7 @@ etym-summarize() {
     while IFS=$'\t' read -r count tag; do
         [[ -z "$count" ]] && continue
         local full_name
-        full_name=$(grep -i "^$tag[[:space:]]" "$CONFIG_DIR/parts-of-speech.tsv" 2>/dev/null \
-            | sed "s/^$tag[[:space:]]*//" | xargs)
+        full_name=$(get_pos_desc "$tag" 2>/dev/null)
         output+="$(printf '%7s | %-25s (%s)' "$count" "${full_name:-Unknown}" "$tag")"$'\n'
         total_pos=$((total_pos + count))
     done < <(echo "$stats" | jq -r '.parts_of_speech[] | [.count, .tag] | @tsv')
@@ -1208,11 +1207,6 @@ etym-lint() {
             local no_urls
             no_urls=$(grep -v "http" "$file")
 
-            if ! echo "$no_urls" | grep -Eq "\([a-z ]{1,5}(, [a-z ]{1,5})*\)"; then
-                issues+=("\e[31m[ERROR]\e[0m Missing or malformed POS tag '()'")
-                ((errors++))
-            fi
-
             if ! echo "$no_urls" | grep -Eq "\[[A-Z]+\]"; then
                 issues+=("\e[31m[ERROR]\e[0m Missing or malformed language tag '[]'")
                 ((errors++))
@@ -1228,32 +1222,93 @@ etym-lint() {
                 ((warns++))
             fi
 
-            # Stanza-level: a conjugation-shaped line (suffix "-x" or two-stem
-            # "xxx(s" tokens) with NO trailing (pos) tag means the stanza is
-            # silently DROPPED by etym-parse (e.g. "to claue -s -d -ing").
-            # Per-file checks can't see this when a sibling stanza is valid.
-            local dropped_stanzas
-            dropped_stanzas=$("$_ETYM_AWK" '
+            # ── POS tag validation, stanza by stanza ────────────────────
+            # This uses ETYM-PARSE'S OWN REGEXES rather than a second dialect
+            # of them. The check it replaces was file-level and matched
+            # \([a-z ]{1,5}(, [a-z ]{1,5})*\), which capped every tag at five
+            # characters and so rejected (interj), (suffix), (prefix) and
+            # (intr v) — all of which the parser accepts and all of which are
+            # registered in parts-of-speech.tsv. Being file-level it also
+            # passed a file whenever any one stanza carried a valid tag, so it
+            # only ever surfaced on single-stanza files such as h/hi.txt.
+            #
+            # Shape is settled here; membership is settled by the register
+            # below. Those are the only two authorities, and neither restates
+            # the other.
+            local bad_stanzas
+            bad_stanzas=$("$_ETYM_AWK" '
                 BEGIN { RS = ""; FS = "\n" }
                 {
-                    has_reformed = 0; has_conj_shape = 0
+                    reformed = ""; conj_shape = 0; body = 0; urls = 0; langs = 0
                     for (i = 1; i <= NF; i++) {
                         line = $i; gsub(/\r/, "", line)
-                        if (line ~ /^http/) continue
-                        if (line ~ /\([a-z]/ && line !~ /\[[A-Z]/) has_reformed = 1
-                        if (line !~ /\[[A-Z]+\]/ && line !~ /\([a-z]/ && \
-                            (line ~ /(^| )-[a-z]+/ || line ~ /\(s( |$)/)) has_conj_shape = 1
+                        if (line == "") continue
+                        if (line ~ /^http/) { urls++; continue }
+                        body++
+                        if (line ~ /\[[A-Z]+\]/) langs++
+                        # Same reformed-line test as parse_stanza_lines().
+                        if (line ~ /\([a-z]/ && line !~ /\[[A-Z]/) { reformed = line; continue }
+                        if (line !~ /\[[A-Z]+\]/ && \
+                            (line ~ /(^| )-[a-z]+/ || line ~ /\(s( |$)/)) conj_shape = 1
                     }
-                    if (!has_reformed && has_conj_shape) printf "%d ", NR
+                    # A paragraph of nothing but URLs means a blank line was
+                    # left between a stanza and its sources; etym-parse reads
+                    # paragraphs, so those sources never reach the record.
+                    if (body == 0 && urls > 0)
+                        printf "%d:orphansrc ", NR
+                    # No reformed line. Three different situations, and only
+                    # two of them are mistakes: a stanza carrying etymology but
+                    # no reformed spelling is simply a word not yet reformed
+                    # (see tests/fixtures/parser/u/unreformed.txt), so it warns
+                    # rather than errors — but it still warns, because the
+                    # parser drops it and it reaches no dataset.
+                    else if (reformed == "")
+                        printf "%d:%s ", NR, \
+                            (conj_shape ? "dropped" : (langs > 0 ? "unreformed" : "nopos"))
+                    # Same POS test as extract_pos(): anchored at end of line.
+                    else if (reformed !~ /\([a-z][a-z ,]*\)[ \t]*$/)
+                        printf "%d:malformed ", NR
                 }' "$file")
-            if [[ -n "$dropped_stanzas" ]]; then
-                issues+=("\e[31m[ERROR]\e[0m Stanza(s) ${dropped_stanzas% }: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.")
-                ((errors++))
+
+            if [[ -n "$bad_stanzas" ]]; then
+                local s_dropped="" s_nopos="" s_malformed="" s_orphan="" s_unref="" item
+                for item in $bad_stanzas; do
+                    case "${item#*:}" in
+                        dropped)   s_dropped+="${item%%:*} " ;;
+                        nopos)     s_nopos+="${item%%:*} " ;;
+                        malformed) s_malformed+="${item%%:*} " ;;
+                        orphansrc)  s_orphan+="${item%%:*} " ;;
+                        unreformed) s_unref+="${item%%:*} " ;;
+                    esac
+                done
+                if [[ -n "$s_dropped" ]]; then
+                    issues+=("\e[31m[ERROR]\e[0m Stanza(s) ${s_dropped% }: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.")
+                    ((errors++))
+                fi
+                if [[ -n "$s_nopos" ]]; then
+                    issues+=("\e[31m[ERROR]\e[0m Stanza(s) ${s_nopos% }: no reformed line carrying a (pos) tag — stanza is silently dropped by etym-parse.")
+                    ((errors++))
+                fi
+                if [[ -n "$s_malformed" ]]; then
+                    issues+=("\e[31m[ERROR]\e[0m Stanza(s) ${s_malformed% }: (pos) tag is not at the end of the reformed line — etym-parse records an empty pos.")
+                    ((errors++))
+                fi
+                if [[ -n "$s_unref" ]]; then
+                    issues+=("\e[33m[WARN]\e[0m  Stanza(s) ${s_unref% }: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.")
+                    ((warns++))
+                fi
+                if [[ -n "$s_orphan" ]]; then
+                    issues+=("\e[31m[ERROR]\e[0m Block(s) ${s_orphan% }: source URLs separated from their stanza by a blank line — etym-parse reads paragraphs, so these sources are dropped.")
+                    ((errors++))
+                fi
             fi
 
             # Stanza-level: every comma-separated POS tag must exist in
-            # config/parts-of-speech.tsv, or the record is skipped downstream
-            # by buildBrain (catches typos like "mn" or "adj m n").
+            # config/parts-of-speech.tsv (catches typos like "mn" or
+            # "adj m n"). NOTE: passing this does not guarantee the record
+            # survives the build — build-dictionary.js keeps its own posMap,
+            # and suffix/prefix/interj/obs/def v/indef are registered here but
+            # absent there, so buildBrain drops them regardless.
             local unknown_tags
             unknown_tags=$("$_ETYM_AWK" '
                 BEGIN { RS = ""; FS = "\n" }
@@ -1273,10 +1328,10 @@ etym-lint() {
                         }
                     }
                 }' "$file" | sort -u | while IFS= read -r tag; do
-                    grep -iq "^${tag}[[:space:]]" "$CONFIG_DIR/parts-of-speech.tsv" || printf "'%s' " "$tag"
+                    pos_is_registered "$tag" || printf "'%s' " "$tag"
                 done)
             if [[ -n "$unknown_tags" ]]; then
-                issues+=("\e[33m[WARN]\e[0m  Unknown POS tag(s): ${unknown_tags% } — not in parts-of-speech.tsv; buildBrain will skip these records.")
+                issues+=("\e[33m[WARN]\e[0m  Unknown POS tag(s): ${unknown_tags% } — not in parts-of-speech.tsv.")
                 ((warns++))
             fi
 
