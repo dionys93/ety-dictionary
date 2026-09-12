@@ -6,7 +6,7 @@
 
 In Modern English, abstract nouns denoting a state or condition frequently end in **-ity** (derived from Latin *-itas* via Old French *-ité*). 
 
-**Inglisce** standardizes this derivation to **-etie** (or **-atie**). These nouns are feminine and pluralize regularly with **-is**.
+**Inglisce** standardizes this derivation to **-etie** or **-itie**. These nouns are feminine and pluralize regularly with **-is**.
 
 ### The ⟨-ar⟩ to ⟨-aretie⟩ Derivation
 A specific class of adjectives derived from the Latin suffix *-aris* end in **-ar**. While Inglisce retains the base **-ar** adjective ending, it standardizes the corresponding noun derivation by replacing the English *-ity* with **-etie**.
@@ -17,8 +17,8 @@ A specific class of adjectives derived from the Latin suffix *-aris* end in **-a
 | **particular / particularity** | *particularis* | **particular** | **particularetie** |
 | **familiar / familiarity** | *familiaris* | **familliar** | **familliaretie** | 
 | **polar / polarity** | *polaris* | **pólar** | **polaretie** | 
-| **simple / simplicity** | *simplicis* | **simple** | **simpliçatie** |
-| **historic / historicity** | *historicus* | **históric** | **historiçatie** |
+| **simple / simplicity** | *simplicis* | **simple** | **simplicitie** |
+| **historic / historicity** | *historicus* | **históric** | **historicitie** |
 
 ---
 
