@@ -184,7 +184,7 @@ Words ending in the structural **-le** demonstrate a strict behavioral split, ac
 | Modern English *seagull* | **cígle, cíguls** |
 | Old English *gicel* | **îcicle, îciculs** |
 | Latin *aquilus* | **eigle, eiguls** | 
-| Latin *gnoscere, gnobilis* | **nóble, nóbils**, **nobilatie** | 
+| Latin *gnoscere, gnobilis* | **nóble, nóbils**, **nobilitie** | 
 | Modern English *recyclable* | **recîclable, recîclabils** |
 
 ### The ⟨-els⟩ Etymological Variant
