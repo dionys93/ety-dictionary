@@ -84,7 +84,7 @@ It typically occurs in borrowed words or morphologically complex words where ort
 | :--- | :--- | :--- | :--- |
 | **À** | /æ/ | an*à*lysis | analysis |
 | **È** | /ɛ/ | an*è*monie, regr*è*ts | anemone, regrets |
-| **Ò** | /ɔ/ | c*ò*ste, l*ò*st, l*ò*ss, *Ò*stria | cost,  lost, loss, Austria |
+| **Ò** | /ɔ/ | *Ò*stria | Austria |
 
 ---
 
