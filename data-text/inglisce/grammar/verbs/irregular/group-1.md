@@ -27,7 +27,7 @@ These verbs end in a single consonant followed by **⟨-e⟩**.
 | Infinitive | Present Tense | Past & Participle |
 | :--- | :--- | :--- |
 | to caste | caste / castes | cast |
-| to còste | còste / còstes | còst |
+| to coste | coste / costes | cost |
 | to burste | burste / burstes | burst |
 | to sete | sete / setes | set |
 | to scede | scede / scedes | sced |
