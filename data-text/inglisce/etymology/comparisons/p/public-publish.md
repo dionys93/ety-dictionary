@@ -82,7 +82,7 @@ flowchart TD
 | **Italian** | *pubblicare* | *pubblico* | *la pubblicità* | *la pubblicazione* | *pubblicabile* |
 | **French** | *publier* | *public*, *publique* | *la publicité* | *la publication* | *publiable* |
 | **English** | *to publish* | *public* | *the publicity* | *the publication* | *publishable* |
-| **Inglisce** | *to publiçe* | *public* | *þa publiçatie* | *þa publicâcion* | *publiciable* |
+| **Inglisce** | *to publiçe* | *public* | *þa publicitie* | *þa publicâcion* | *publiciable* |
 
 Three things in the columns.
 
@@ -96,27 +96,4 @@ Three things in the columns.
 
 ## 6. The Inglisce forms
 
-The pair `publiçatie` and `publicâcion` is where this word earns its page.
-
-English builds both on the same seven letters, *public*, and pronounces the final consonant of that string two different ways: /s/ in *publicity* and /k/ in *publication*. The rule behind it is Latin — *c* softened before a front vowel and stayed hard before a back one — and it is entirely invisible in English spelling, because English writes the vowel that conditions it as *i* in one word and *a* in the other without marking what that does to the consonant.
-
-Inglisce marks it on the consonant itself:
-
-| | Inglisce | Consonant | Why |
-|---|---|---|---|
-| *publicity* | `publiçatie` | /s/ | `ç` before `a` gives the soft value |
-| *publication* | `publicâcion` | /k/ | plain `c` before `â` keeps the hard value |
-
-The two words become a minimal pair for the cedilla. In `publicâcion` the following vowel is a back one and plain `c` is /k/, which is what the word needs. In `publiçatie` the following vowel is also a back one, so plain `c` would again give /k/ — and the cedilla is required to override it. One letter apart, and the difference on the page is exactly the difference in the mouth.
-
-`Publicâcion` also carries the circumflex for /eɪ/ and writes the suffix `-cion` for /ʃən/, so that both of its *c*s are accounted for: the first hard, the second hushed, neither left to inference.
-
-**`Publiçe` and `publiciable` decline the false suffix.** The `-ish` of English *publish* is not a morpheme the word inherited; it was added by analogy with *finish*, *punish*, and *nourish* — verbs it happened to resemble. Spelling it with an `s` would restore the very resemblance that produced the error, and would file a word of the *public* family among verbs it is not related to.
-
-Since the /ʃ/ descends from no historical sibilant, no letter has a prior claim on it, and the family can keep its stem. `Publiçe`, `publiçatie`, `publicâcion`, `publiciable`, and `public` all show `public-` or `publiç-`, which is what the words are. French made the same repair in the other direction, dropping the `c` of *pūblicāre* on the way to *publier*; Inglisce keeps it and marks what English does with it.
-
-The two forms use the two available spellings of /ʃ/ in this position. `Publiçe` has `ç` before a front vowel; `publiciable` has `c` followed by yod before a back one, the same sequence that gives `-cion` and `-cian` their value. `Publiçable` would be wrong, the cedilla before `a` yielding /s/.
-
-**`Public`** is unchanged, English having got it right.
-
-Both nouns are feminine, `þa`, the stress falling away from the first syllable in each.
+NEEDS EDIT
