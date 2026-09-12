@@ -95,7 +95,7 @@ flowchart TD
 | **Catalan** | *la festa* | *el festival* | *festiva* | *la festivitat* |
 | **Romanian** | — | *festivalul* | *festiv* | *festivitatea* |
 | **English** | *the feast* | *the festival* | *festive* | *the festivity* |
-| **Inglisce** | *þe fieste*, *fiests* | *þe festival* | *festif* | *þa festivatie* |
+| **Inglisce** | *þe fieste*, *fiests* | *þe festival* | *festif* | *þa festivitie* |
 
 Three observations.
 
@@ -109,17 +109,7 @@ Three observations.
 
 ## 5. The Inglisce forms
 
-`Feire` and `fieste` sit at the two ends of the split, and their spellings mark it.
-
-**`Feire`** takes `ei` for the /ɛ/ of *fair*. English writes `ai` here, a digraph it also uses for /eɪ/ in *pain*, *rain*, *maid*, and *plain* — so that *fair* and *fail* share a spelling and not a vowel. The `ei` also aligns the word with Portuguese *feira*, which is the closest Romance form, and keeps the `e` that Latin *fēria* has and the received English spelling does not.
-
-**`Fieste`** takes `ie` and thereby joins the Romance diphthong. Spanish *fiesta*, Italian *fiera*, and Catalan *fira* show the regular breaking of Latin short *e* under stress; English *feast* went a different way, through Old French *feste* to /i/. Writing `ie` puts the word beside *fiesta* rather than beside French *fête*, and records the vowel English actually says.
-
-Both nouns carry the silent `-e` and drop it before the plural, giving `feirs` and `fiests`.
-
-**`Festival`, `festif`, and `festivatie`** are the learned stratum, and their `e` is correct precisely because they never underwent the diphthongisation. The stem `festiv-` runs unbroken through the adjective and the abstract noun, and the contrast with `fieste` on the page is the contrast between an inherited word and a borrowed one — visible where English, spelling *feast* and *festive*, obscures it by a different route.
-
-`Festif` takes the French masculine ending. `Festivatie` writes `-atie` for final /i/, with the `a` following a stressed `i` by the ordinary rule.
+NEEDS EDIT
 
 ---
 
