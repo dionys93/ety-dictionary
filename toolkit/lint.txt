@@ -1,36 +1,271 @@
 Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 =================================================================
+📝 [1mt/target.txt[0m
+   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
 
-📝 [1mh/hi.txt[0m
-   [31m[ERROR][0m Missing or malformed POS tag '()' wtf
+📝 [1mt/Texas.txt[0m
+   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
 
-📝 [1mb/bye.txt[0m
-   [31m[ERROR][0m Missing or malformed POS tag '()'
+📝 [1mt/temporary.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1ma/allot.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1ma/algebra.txt[0m
+   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1ma/attempt.txt[0m
+   [33m[WARN][0m  Stanza(s) 2: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1ma/apprehend.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1ma/absorb.txt[0m
+   [33m[WARN][0m  Stanza(s) 3: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1ma/avouch.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mi/inform.txt[0m
+   [31m[ERROR][0m Stanza(s) 7: (pos) tag is not at the end of the reformed line — etym-parse records an empty pos.
+
+📝 [1mi/indignant.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mr/rupture.txt[0m
+   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1mg/genre.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mg/gut.txt[0m
+   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1mg/get.txt[0m
+   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1mf/fossil.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mf/fog.txt[0m
+   [33m[WARN][0m  Unknown POS tag(s): 'f' — not in parts-of-speech.tsv.
+
+📝 [1mf/France.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mf/feisty.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mf/flake.txt[0m
+   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1mf/fir.txt[0m
+   [33m[WARN][0m  Stanza(s) 2: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1ml/luminate.txt[0m
+   [33m[WARN][0m  Stanza(s) 4: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1ml/level.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1ml/league.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1ml/luxury.txt[0m
+   [31m[ERROR][0m Stanza(s) 1: (pos) tag is not at the end of the reformed line — etym-parse records an empty pos.
+
+📝 [1ml/Lithuania.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mh/harmony.txt[0m
+   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1mh/hum.txt[0m
+   [33m[WARN][0m  Stanza(s) 2: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1me/eros.txt[0m
+   [33m[WARN][0m  Stanza(s) 2: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1me/evident.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1me/exaggerate.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1me/eke.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1me/exploit.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mb/Britain.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mb/bee.txt[0m
+   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1mb/bogey.txt[0m
+   [33m[WARN][0m  Stanza(s) 3: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1mb/billow.txt[0m
+   [33m[WARN][0m  Unknown POS tag(s): 'm' — not in parts-of-speech.tsv.
+
+📝 [1mp/promote.txt[0m
+   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1mp/prime.txt[0m
+   [31m[ERROR][0m Stanza(s) 2: (pos) tag is not at the end of the reformed line — etym-parse records an empty pos.
+
+📝 [1mp/provoke.txt[0m
+   [33m[WARN][0m  Stanza(s) 2: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1mp/pose.txt[0m
+   [33m[WARN][0m  Stanza(s) 2: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1mp/peal.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1ms/solid.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1ms/stupefy.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1ms/scheme.txt[0m
+   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1ms/sphere.txt[0m
+   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1ms/soap.txt[0m
+   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1ms/stature.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mn/noodle.txt[0m
+   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1md/defend.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1md/dignify.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1md/deep.txt[0m
+   [33m[WARN][0m  Stanza(s) 2: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1md/dispense.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1md/dense.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1md/decease.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1md/defibrillation.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mw/wretch.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mw/wrest.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mj/jury.txt[0m
+   [33m[WARN][0m  Stanza(s) 3: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1mj/join.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mm/Maine.txt[0m
+   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1mm/maintain.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mv/verb.txt[0m
+   [33m[WARN][0m  Stanza(s) 2: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1my/yack.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mk/kid.txt[0m
+   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1mq/quote.txt[0m
+   [33m[WARN][0m  Stanza(s) 1 2: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1mc/cymbal.txt[0m
+   [33m[WARN][0m  Unknown POS tag(s): 'm  n' — not in parts-of-speech.tsv.
+
+📝 [1mc/context.txt[0m
+   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1mc/cynic.txt[0m
+   [33m[WARN][0m  Stanza(s) 2 3: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1mc/conjure.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mc/close.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+   [33m[WARN][0m  Stanza(s) 6: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1mc/coconut.txt[0m
+   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1mc/comment.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mc/Czech.txt[0m
+   [33m[WARN][0m  Stanza(s) 2: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1mc/copper.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mc/chief.txt[0m
+   [33m[WARN][0m  Stanza(s) 5: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1mc/Christ.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mc/correlate.txt[0m
+   [33m[WARN][0m  Trailing whitespace on one or more lines.
+
+📝 [1mc/crop.txt[0m
+   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1mc/chair.txt[0m
+   [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
 
 -----------------------------------------------------------------
 LINTING COMPLETE
 -----------------------------------------------------------------
-Files Scanned:   4114
+Files Scanned:   4255
 Fatal Errors:    [31m0[0m
-Standard Errs:   [31m94[0m
-Warnings:        [33m47[0m
+Standard Errs:   [31m3[0m
+Warnings:        [33m78[0m
 
 VERB CONJUGATION COVERAGE
 -----------------------------------------------------------------
-Using -s -d -ing:  1855
-Non-standard:      741
+Using -s -d -ing:  1971
+Non-standard:      776
 
   Non-standard verb stanzas:
     t/thunder.txt                   þonder               þondre þondres þondred þondred þondering
     t/thank.txt                     þânc               -s þânched þânching
     t/tunnel.txt                    tonele                -s -d toneling
     t/trick.txt                     tric                  -s triched triching
-    t/tree.txt                      trie                  -s -d trying
+    t/tree.txt                      truie                 -s -d truying
     t/teach.txt                     teic̃e               -s tauht -ing
     t/testify.txt                   testifae              -s -d testifyhing
     t/track.txt                     trac                  -s trached traching
     t/terror.txt                    terrifae              -s -d terrifyhing
     t/think.txt                     þinc                 -s þoht þinching
+    t/tread.txt                     trede                 -s trod -ing
     t/tear.txt                      teire                 -s tór teiring
     t/take.txt                      teac                  -s tôc teaching
     t/top.txt                       toppe                 top tops -d -d -ing
@@ -52,7 +287,7 @@ Non-standard:      741
     t/toke.txt                      toque                 toac toacs toqued toqued toquing
     t/transact.txt                  transacte             transacs -d -ing
     t/tack.txt                      tac                   -s -hed -hing
-    a/ask.txt                       asche                 asc ascs asched asched asching
+    a/ask.txt                       asc                   asc ascs asched asched asching
     a/anchor.txt                    âncher              âncre âncres âncred âncred ânchering
     a/acid.txt                      acidifae              -s -d acidifyhing
     a/antique.txt                   antique               -ícs -d -ing
@@ -74,9 +309,11 @@ Non-standard:      741
     a/adhere.txt                    adhier                adhire adhires adhired adhired adhiering
     a/attire.txt                    attîer              attîre attîres attîred attîred attîering
     a/author.txt                    auþer                auþre auþres auþred auþred auþering
+    a/allow.txt                     allôe               -s -d allôuing
     a/admire.txt                    admîer              admîre admîres admîred admîred admîering
     a/administer.txt                admïnister          admïnistre admïnistres admïnistred admïnistred admïnistering
     a/alter.txt                     alter                 altre altres altred altred altering
+    a/alter.txt                     alternait             (v) -s -ing
     a/attract.txt                   attracte              attracs -d -ing
     a/allay.txt                     allaie                -s -d allaying
     a/attack.txt                    attaque               attac attacs -d -d -ing
@@ -142,7 +379,7 @@ Non-standard:      741
     g/go.txt                        goe                   -s uaint gouing
     g/gather.txt                    gaþer                gaþre gaþres gaþred gaþred gaþering
     g/give.txt                      guive                 -s gâve -ing
-    g/gutter.txt                    gotre                 -s -d gotaring
+    g/gutter.txt                    guttere               -s -d guttering
     g/gander.txt                    gander                gandre gandres gandred gandred gandering
     g/glimmer.txt                   glimere               -s -d glimaring
     g/glitter.txt                   glitre                -s -d glitaring
@@ -161,7 +398,7 @@ Non-standard:      741
     f/fall.txt                      falle                 -s fell -ing
     f/find.txt                      fînde               -s faund -ing
     f/flock.txt                     floc                  -s floched floching
-    f/fake.txt                      fâc                 -s fâched fâching
+    f/fake.txt                      feac                  -s feached feaching
     f/fight.txt                     foihte                -s fauht -ing
     f/forbid.txt                    forbidde              forbid forbids forbâde forbidan -ing
     f/forget.txt                    forgait               -s forgot -ing
@@ -195,7 +432,7 @@ Non-standard:      741
     f/ferry.txt                     ferrie                -s -d ferrying
     f/flank.txt                     flânque             flânc flâncs -d -d -ing
     f/feel.txt                      fiele                 -s felt -ing
-    f/fur.txt                       furre                 fur furs -d -d -ing
+    f/flow.txt                      floe                  -s -d flouing
     l/lie.txt                       láie                -s lay láying
     l/lie.txt                       lîe                 -s -d lyhing
     l/lay.txt                       laie                  -s -d laying
@@ -221,16 +458,18 @@ Non-standard:      741
     l/lead.txt                      lide                  -s laid -ing
     l/lead.txt                      leade                 -s lead -ing
     l/log.txt                       logue                 log logs -d -d -ing
+    l/liquify.txt                   liqüefae            -s -d -yhing
     l/look.txt                      lôc                 -s lôched lôching
-    l/lose.txt                      louse                 -s lòst -ing
+    l/lose.txt                      louse                 -s lost -ing
     l/low.txt                       hloe                  -s -d hlouing
+    o/obey.txt                      obeie                 -s -d -eying
     o/occupy.txt                    occupae               -s -d -yhing
     o/overthrow.txt                 overþroe             -s overþreu overþrouing
     o/object.txt                    objecte               objecs -d -ing
     o/object.txt                    objectifae            -s -d objectifyhing
     o/offer.txt                     offir                 offre offres offred offred offiring
     o/order.txt                     ordir                 ordre ordres ordred ordred ordiring
-    o/owe.txt                       oe                    -s -d ouing
+    o/owe.txt                       oaue                  -s -d oauing
     h/horrify.txt                   horrifae              -s -d horrifyhing
     h/hit.txt                       hitte                 hit hits hit hit -ing
     h/hurt.txt                      hurte                 -s hurt -ing
@@ -255,14 +494,17 @@ Non-standard:      741
     h/hang.txt                      hângue              hâng hângs hong hong -ing
     h/hang.txt                      hângue              hâng hângs -d -d -ing
     e/endeavor.txt                  endever               endevre endevres endevred endevred endevering
-    e/eat.txt                       eite                  -s éit -ing
+    e/eat.txt                       eite                  -s eat -ing
     e/erupt.txt                     eropte                -ps -d -ing
+    e/endow.txt                     endôe               -s -d endôuing
     e/embody.txt                    embodie               -s -d embodying
     e/expire.txt                    expîer              expîre expîres expîred expîred expîering
     e/elect.txt                     electe                elecs -d -ing
     e/effect.txt                    effecte               effecs -d -ing
     e/embargo.txt                   embárgoe            -s -d -uing
     e/eye.txt                       eaie                  -s -d eaying
+    e/egg.txt                       aigue                 aig aigs -d -d -ing
+    e/egg.txt                       egue                  eg egs -d -d -ing
     e/enjoy.txt                     enjoie                -s -d enjoying
     e/employ.txt                    emploie               -s -d employing
     e/echo.txt                      ecoe                  -s -d -uing
@@ -281,6 +523,7 @@ Non-standard:      741
     e/engine.txt                    enginier              enginire enginires enginired enginired enginiering
     b/blur.txt                      blurre                blur blurs -d -d -ing
     b/bicker.txt                    bichir                bicre bicres bicred bicred bichiring
+    b/bottle.txt                    bottle                -s -d botteling
     b/brake.txt                     brâc                -s brâched brâching
     b/borrow.txt                    bòroe               -s -d -uing
     b/blanket.txt                   blânque             blânc blâncs -d -d -ing
@@ -352,6 +595,7 @@ Non-standard:      741
     b/build.txt                     bylde                 -s bylt -ing
     p/prey.txt                      preie                 -s -d preying
     p/person.txt                    personnifae           -s -d personnifyhing
+    p/paw.txt                       paue                  -s -d pauing
     p/park.txt                      parque                parc parcs -d -d -ing
     p/powder.txt                    pôuder              pôudre pôudres pôudred pôudred pôudering
     p/profit.txt                    profit                -s -ted -ting
@@ -359,6 +603,7 @@ Non-standard:      741
     p/pillow.txt                    pilloe                -s -d -ouing
     p/private.txt                   prîvatier           prîvatire prîvatires prîvatired prîvatired prîvatiering
     p/parlay.txt                    parleie               -s -d parleying
+    p/panel.txt                     panele                -s -d paneling
     p/party.txt                     partie                -s -d partying
     p/pay.txt                       paie                  -s -d paying
     p/provoke.txt                   provoque              provoac provoacs provoqued provoqued provoquing
@@ -372,6 +617,7 @@ Non-standard:      741
     p/pit.txt                       pytte                 pyt pyts pyt pyt pytting
     p/pit.txt                       pitte                 pit pits pitted pitted pitting
     p/plague.txt                    plâgue              plâg plâgs -d -d -ing
+    p/project.txt                   projecte              projecs -d -ing
     p/pork.txt                      porque                porc porcs -d -d -ing
     p/puck.txt                      puc                   -s puched puching
     p/putt.txt                      putte                 put puts -d -d -ing
@@ -385,6 +631,7 @@ Non-standard:      741
     p/poke.txt                      poque                 poac poacs -d -d -ing
     p/peak.txt                      pique                 píc pícs -d -d -ing
     p/pry.txt                       prîe                -s -d pryhing
+    p/play.txt                      plaie                 -s -d playing
     p/pummel.txt                    pomle                 -s -d pomeling
     p/pack.txt                      pac                   -s pached paching
     p/pray.txt                      praie                 -s -d praying
@@ -392,6 +639,7 @@ Non-standard:      741
     p/purr.txt                      purre                 pur purs -d -d -ing
     p/pin.txt                       pinne                 pin pins -d -d -ing
     p/perish.txt                    perișe              -s
+    p/persevere.txt                 persevier             persevire persevires persevired persevired perseviering
     s/saw.txt                       sahe                  -s -d sahing
     s/shear.txt                     siere                 -s -d/seorn siering
     s/surge.txt                     sortie                -s -d sortying
@@ -402,7 +650,7 @@ Non-standard:      741
     s/steal.txt                     stiale                -s stoal -ing
     s/slide.txt                     slîde               -s slid -ing
     s/syncronize.txt                synque                sync syncs -d -d -ing
-    s/solid.txt                     solïdifae           -s -d solïdifyhing
+    s/solid.txt                     solidifae             -s -d solidifyhing
     s/spill.txt                     spille                -s spilt -ing
     s/shrink.txt                    șrinche             șrinc șrincs șrânc șronc șrinching
     s/shoot.txt                     seoute                -s siot -ing
@@ -440,7 +688,7 @@ Non-standard:      741
     s/slug.txt                      slughe                slug slugs -d -d -ing
     s/slake.txt                     slâc                 -s -hed -hing
     s/surrender.txt                 sorrender             sorrendre sorrendres -d -d -ering
-    s/stun.txt                      stonne                ston stons -d -d -ing
+    s/stun.txt                      stonne                ston stons stonned stonned stonning
     s/shake.txt                     seac                  -s seôc seaching
     s/sow.txt                       soe                   -s -d souing
     s/slumber.txt                   slomber               slombre slombres slombred slombred slombering
@@ -459,10 +707,12 @@ Non-standard:      741
     s/study.txt                     studie                -s -d studying
     s/stutter.txt                   stutir                stutre stutres stutred stutred stutiring
     s/shine.txt                     scîne               -s sione -ing
+    s/shut.txt                      șute                -s șut șuting
     s/sweep.txt                     suiepe                -s suaipt -ing
     s/spire.txt                     spîer               spîre spîres spîred spîred spîering
     s/shuck.txt                     seuc                  -s seuched seuching
     s/spook.txt                     spouche               spouc spoucs -d -d -ing
+    s/star.txt                      starre                star stars starred starred starring
     s/signify.txt                   signifae              -s -d signifyhing
     s/show.txt                      seoe                  -s -d seouing
     s/shatter.txt                   siater                siatre siatres siatred siatred siatering
@@ -474,7 +724,7 @@ Non-standard:      741
     s/slow.txt                      sloe                  -s -d slouing
     s/space.txt                     spâce-oauc          -s -ued -uing
     s/split.txt                     splitte               split splits split split splitting
-    s/suffer.txt                    sofir                 sofre sofres sofred sofred sofiring
+    s/suffer.txt                    suffir                suffre suffres suffred suffred suffiring
     s/string.txt                    stringue              string strings strong strong stringuing
     s/stack.txt                     stac                  -s stached staching
     s/squeak.txt                    squieche              squiec squiecs -d -d -ing
@@ -491,6 +741,7 @@ Non-standard:      741
     s/spend.txt                     spende                -s spent -ing
     s/swing.txt                     suingue               suing suings suong suong -ing
     s/stomach.txt                   stomac                -s stomached stomaching
+    s/slander.txt                   slander               slandre slandres slandred slandred slandering
     s/smirk.txt                     smirche               smirc smircs -d -d -ing
     s/shuffle.txt                   sioffle               -s -d sioffeling
     s/see.txt                       sihe                  -s sah -ing
@@ -516,10 +767,12 @@ Non-standard:      741
     s/sneak.txt                     snieche               sniec sniecs -d/sneuc -d/sneuc -ing
     s/stir.txt                      sturre                stur sturs -d -d -ing
     s/stake.txt                     stâc                -s stâched stâching
+    s/shadow.txt                    siadoe                -s -d siadouing
     s/shit.txt                      scite                 -s sçat sciting
     s/shower.txt                    seôuir              seôure seôures seôured seôured seôuiring
     s/spark.txt                     sparque               sparc sparcs -d -d -ing
     s/shiver.txt                    scivir                scivre scivres scivred scivred sciviring
+    s/supply.txt                    soplîe              -s -d -yhing
     s/sit.txt                       sitte                 sit sits sat sat sitting
     s/sorrow.txt                    sòroe               -s -d -uing
     s/spin.txt                      spinne                spin spins spon spon spinning
@@ -535,13 +788,16 @@ Non-standard:      741
     n/number.txt                    nomber                nombre nombres -d -d nombering
     n/neuter.txt                    neuter                neutre neutres neutred neutred neutering
     n/near.txt                      nier                  nire nires nired nired niering
+    d/decay.txt                     decaie                -s -d decaying
+    d/dim.txt                       dimme                 dim dims dimmed dimmed dimming
     d/district.txt                  dïstricte           dïstrics -d -ing
     d/dog.txt                       dogue                 dog dogs -d -d -ing
     d/defer.txt                     defêr               defê defês defêd defêd defêring
-    d/drink.txt                     drinche               drinc drincs drânc dronc -ing
+    d/drink.txt                     drinc                 drinc drincs drânc dronc drinching
     d/deny.txt                      denîe               -s -d denyhing
     d/distract.txt                  destracte             destracs -d -ing
     d/dock.txt                      doc                   -s doched doching
+    d/dialogue.txt                  dîalogue            dîalog dîalogs -d -d -ing
     d/deconstruct.txt               diconstructe          diconstrucs -d -ing
     d/deter.txt                     detêr               detê detês detêd detêd detêring
     d/deity.txt                     deïfae              -s -d deïfyhing
@@ -549,7 +805,7 @@ Non-standard:      741
     d/delay.txt                     delaie                -s -d delaying
     d/dismay.txt                    dismaie               -s -d dismaying
     d/deposit.txt                   depositte             deposit deposits -d -d -ing
-    d/diversify.txt                 devêrsifae          -s -d devêrsifyhing
+    d/diversify.txt                 divêrsifae          -s -d divêrsifyhing
     d/drive.txt                     drîve               -s droave -ing
     d/danger.txt                    endângere           endângere endângeres endângered endângered endângering
     d/disrupt.txt                   disropte              disrops -d -ing
@@ -566,7 +822,10 @@ Non-standard:      741
     d/do.txt                        dou                   
     d/doctor.txt                    docter                doctre doctres doctred doctred doctering
     d/dream.txt                     drieme                -s draimpt -ing
+    d/detect.txt                    detecte               detecs -d -ing
+    d/dip.txt                       dippe                 dip dips -d -d -ing
     d/destruct.txt                  destructe             destrucs -d -ing
+    d/dab.txt                       dabe                  -s -d dabing
     d/deal.txt                      diele                 -s dailt -ing
     d/devour.txt                    devôer              devôre devôres devôred devôred devôering
     d/discover.txt                  discovir              discovre discovres discovred discovred discoviring
@@ -574,15 +833,17 @@ Non-standard:      741
     d/destroy.txt                   destroie              -s -d destroying
     d/display.txt                   desplaie              -s -d desplaying
     d/divvy.txt                     divie                 -s -d divying
+    d/defy.txt                      defîe               -s -d defyhing
     d/dodder.txt                    dáder               dádre dádres dádred dádred dádering
     d/dive.txt                      dîve                -s doave -ing
     d/diaper.txt                    dîper               dîpre dîpres dîpred dîpred dîpering
     d/dry.txt                       drîe                -s -d dryhing
+    d/dizzy.txt                     dysie                 -s -d dysying
     d/dig.txt                       dighe                 dig digs deug deug dighing
     w/wink.txt                      uinque                uinc uincs -d -d -ing
     w/wake.txt                      uaic                  -s uóc uaiching
     w/whip.txt                      uippe                 uip uips -d -d -ing
-    w/whisper.txt                   uisper                uispre uispres uispred uispred uispering
+    w/whisper.txt                   uispir                uispre uispres uispred uispred uispiring
     w/wring.txt                     r̃ingue              r̃ing r̃ings r̃ong r̃ong r̃inguing
     w/withdraw.txt                  uiþdrahe             -s uiþdrou uiþdrahing
     w/wrong.txt                     rongue                ròng ròngs -d -d -ing
@@ -622,6 +883,7 @@ Non-standard:      741
     j/junk.txt                      jonque                jonc joncs -d -d -ing
     j/jerk.txt                      gerc                  -s gerched gerching
     j/jerk.txt                      jerc                  -s jerched jerching
+    j/justice.txt                   justifae              -s -d -fyhing
     j/journey.txt                   journie               -s -d journying
     j/jock.txt                      jáchie              -s -d jáchying
     j/jack.txt                      jaque                 jac jacs jaqued jaqued jaquing
@@ -670,11 +932,13 @@ Non-standard:      741
     k/king.txt                      cyngue                cyng cyngs -d -d -ing
     k/knock.txt                     gnoc                  -s gnoched gnoching
     k/knee.txt                      nie                   -s -d gnying
+    k/key.txt                       chie                  -s -d chying
     k/kneel.txt                     niele                 -s nelt -ing
     q/quality.txt                   qualifae              -s -d qualifyhing
     q/quantity.txt                  quantifae             -s -d quantifyhing
     q/queue.txt                     cúe                 -s -d cúing
     q/quit.txt                      qüite               -s qüit -ing
+    q/query.txt                     qüerie              -s -d qüerying
     q/quarter.txt                   caurter               caurtre caurtres caurtred caurtred caurtering
     q/quack.txt                     cuaque                cuacs -d -ing
     q/quake.txt                     cuâc                -s cuâched cuâching
@@ -682,11 +946,12 @@ Non-standard:      741
     q/quaver.txt                    cuâver              cuâvre cuâvres cuâvred cuâvred cuâvering
     c/cling.txt                     clingue               cling clings clong clong clinguing
     c/clip.txt                      clippe                clip clips clipped clipped clipping
-    c/clip.txt                      clyppe                clyp clyps clypped clypped clypping
+    c/clip.txt                      clippe                clip clips clipped clipped clipping
     c/croak.txt                     croac                 -s croached croaching
     c/catalogue.txt                 catalogue             catalog catalogs catalogued catalogued cataloguing
-    c/convey.txt                    conveie               -s -d -eying
+    c/convey.txt                    conveie               -s -d conveying
     c/crack.txt                     crac                  -s crached craching
+    c/curry.txt                     corrie                -s -d corrying
     c/cast.txt                      caste                 -s cast -ing
     c/chauffeur.txt                 ceauffêr            ceauffê ceauffês ceauffêd ceauffêd ceauffêring
     c/chalk.txt                     c̃auche              c̃auc c̃aucs -d -d -ing
@@ -699,7 +964,9 @@ Non-standard:      741
     c/crank.txt                     crânche             crânc crâncs -d -d -ing
     c/counter.txt                   cônter              côntre côntres côntred côntred côntering
     c/cock.txt                      coc                   -s coched coching
-    c/cuck.txt                      cuc                   -s cuched cuching
+    c/conduct.txt                   conducte              conducs -d -ing
+    c/courier.txt                   cûriere             -s -d cûriering
+    c/confect.txt                   confecte              confecs -d ing
     c/compact.txt                   compacte              compacs -d -ing
     c/curtsy.txt                    courtsie              -s -d courtsying
     c/club.txt                      clubbe                club clubs clubbed clubbed clubbing
@@ -738,7 +1005,7 @@ Non-standard:      741
     c/confer.txt                    confêr              confê confês confêd confêd confêring
     c/cloak.txt                     cloque                cloac cloacs -d -d -ing
     c/coffer.txt                    coffir                coffre coffres coffred coffred coffiring
-    c/cost.txt                      còste               -s còst -ing
+    c/cost.txt                      coste                 -s cost -ing
     c/cry.txt                       crîe                -s -d cryhing
     c/convoke.txt                   convoque              convoac convoacs -d -d -ing
     c/cohere.txt                    cohier                cohire cohires cohired cohired cohiering
@@ -751,8 +1018,10 @@ Non-standard:      741
     c/conspire.txt                  conspîer            conspîre conspîres conspîred conspîred conspîering
     c/chamber.txt                   c̃aimber             c̃aimbre c̃aimbres -d -d -ering
     c/certify.txt                   certifae              -s -d certifyhing
+    c/cuckoo.txt                    cuc                   -s cuched cuching
     c/choose.txt                    c̃ouse               -s c̃ose -ing
     c/chuck.txt                     c̃uc                 -s c̃uched c̃uching
+    c/crop.txt                      croppe                crop crops cropped cropped cropping
     c/classify.txt                  classifae             -s -d classifyhing
     c/catch.txt                     caic̃e               -s cauht -ing
     c/convoy.txt                    convoie               -s -d convoying
