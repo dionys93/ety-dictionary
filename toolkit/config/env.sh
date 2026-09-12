@@ -49,31 +49,89 @@ get_lang_name() {
     grep -i "^$1[[:space:]]" "$CONFIG_DIR/languages.tsv" | sed "s/^$1[[:space:]]*//"
 }
 
+# --- PART-OF-SPEECH REGISTER ---
+# config/parts-of-speech.tsv is hand-edited, so its format is forgiving:
+#
+#     m n     - masculine noun
+#     v - verb
+#     # comments and blank lines are ignored
+#
+# Delimiter precedence: a tab if the line has one, otherwise the first "-";
+# a leading "-" is then stripped from the description, so "m n<TAB>- noun"
+# and "m n - noun" and "m n<TAB>noun" all parse alike. Tags may contain
+# spaces ("m n", "def v") but never a hyphen, which is what makes the dash
+# an unambiguous boundary.
+#
+# EVERY consumer reads the file through _pos_rows / get_pos_desc. Nothing
+# greps it directly. Three places used to hold their own copy of the parsing
+# rule and one of them disagreed with the others, which is exactly how the
+# five-character POS lint bug survived.
+
+_pos_rows() {
+    [[ -f "$CONFIG_DIR/parts-of-speech.tsv" ]] || return 0
+    sed -e 's/\r$//' "$CONFIG_DIR/parts-of-speech.tsv" \
+        | grep -v '^[[:space:]]*#' \
+        | grep -v '^[[:space:]]*$'
+}
+
+# get_pos_desc <tag>
+# Prints the description (possibly empty) and returns 0 if the tag is in the
+# register; returns 1 if it is absent. Membership and description are kept
+# apart deliberately: a tag written with no description after the dash is
+# still a declared tag, and reporting it as unknown would contradict the
+# file the user is looking at.
+get_pos_desc() {
+    local out status
+    out=$(_pos_rows | awk -v want="$1" '
+        function trim(x) { gsub(/^[ \t]+|[ \t]+$/, "", x); return x }
+        BEGIN { found = 0 }
+        {
+            t = index($0, "\t")
+            if (t > 0)      { tag = substr($0, 1, t - 1); desc = substr($0, t + 1) }
+            else if (index($0, "-") > 0) {
+                d = index($0, "-")
+                tag = substr($0, 1, d - 1); desc = substr($0, d + 1)
+            }
+            else            { tag = $0; desc = "" }
+            desc = trim(desc)
+            sub(/^-[ \t]*/, "", desc)
+            if (tolower(trim(tag)) == tolower(want)) { print trim(desc); found = 1; exit }
+        }
+        END { if (!found) exit 1 }')
+    status=$?
+    [[ -n "$out" ]] && printf '%s\n' "$out"
+    return $status
+}
+
+# pos_is_registered <tag> -> status only.
+pos_is_registered() {
+    get_pos_desc "$1" >/dev/null 2>&1
+}
+
 get_pos_full() {
     local INPUT=$1
     # Strip parentheses and normalize: "(adj, m n)" -> "adj, m n"
-    local CLEAN_INPUT=$(echo "$INPUT" | tr -d '()')
-    
-    # Split by comma into an array
+    local CLEAN_INPUT
+    CLEAN_INPUT=$(echo "$INPUT" | tr -d '()')
+
+    local RESULTS=() tag trimmed match
     IFS=',' read -ra TAGS <<< "$CLEAN_INPUT"
-    
-    local RESULTS=()
     for tag in "${TAGS[@]}"; do
-        # Trim whitespace (the 'xargs' trick)
-        local trimmed=$(echo "$tag" | xargs)
-        
-        # Search for the exact code at the start of the line in parts-of-speech.tsv
-        # We use [[:space:]] to ensure 'v' doesn't match 'verb' or 'adv'
-        local match=$(grep -i "^$trimmed[[:space:]]" "$CONFIG_DIR/parts-of-speech.tsv" | sed "s/^$trimmed[[:space:]]*//")
-        
-        if [ -n "$match" ]; then
-            RESULTS+=("$match")
-        else
-            # Fallback to the original tag if not found in TSV
-            RESULTS+=("$trimmed")
-        fi
+        trimmed=$(echo "$tag" | xargs)
+        [[ -z "$trimmed" ]] && continue
+        # Fall back to the tag itself when it is unregistered OR registered
+        # without a description.
+        match=$(get_pos_desc "$trimmed")
+        [[ -z "$match" ]] && match="$trimmed"
+        RESULTS+=("$match")
     done
 
-    # Join results with ", "
-    (IFS=", "; echo "${RESULTS[*]}")
+    # Join with ", ". ${RESULTS[*]} uses only the FIRST character of IFS, so
+    # IFS=", " joined with a bare comma; build the string explicitly instead.
+    local out="" r
+    for r in "${RESULTS[@]}"; do
+        [[ -n "$out" ]] && out+=", "
+        out+="$r"
+    done
+    printf '%s\n' "$out"
 }

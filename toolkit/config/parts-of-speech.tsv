@@ -1,21 +1,34 @@
-m n	masculine noun
-f n	feminine noun
-v	verb
-intr v	intransitive verb
-tr v	transitive verb
-conj	conjunction
-adj	adjective
-prep	preposition
-pron	pronoun
-adv	adverb
-suffix	suffix
-prefix	prefix
-interj	interjection
-obs	obsolete
-num number
-def v defective verb
-interj interjection
-defin definite article
-indef indefinite article
-modal modal verb
-aux auxillary verb
+# Part-of-speech register for the Inglisce dictionary.
+#
+# One tag per line:   <tag> - <description>
+# Blank lines and lines beginning with # are ignored. Alignment is free —
+# tabs or spaces, before or after the dash, make no difference.
+#
+# A tag may contain spaces ("m n", "def v") but never a hyphen; that is what
+# makes the dash an unambiguous boundary. The old whitespace-separated form
+# could not tell "def v defective verb" from "defin definite article"
+# without already knowing the answer.
+#
+# This file decides which tags are LEGAL. etym-lint warns on any (pos) tag
+# in the dictionary that is missing here.
+
+m n     - masculine noun
+f n     - feminine noun
+v       - verb
+intr v  - intransitive verb
+tr v    - transitive verb
+conj    - conjunction
+adj     - adjective
+prep    - preposition
+pron    - pronoun
+adv     - adverb
+suffix  - suffix
+prefix  - prefix
+interj  - interjection
+obs     - obsolete
+num     - number
+def v   - defective verb
+defin   - definite article
+indef   - indefinite article
+modal   - modal verb
+aux     - auxiliary verb
