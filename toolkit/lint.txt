@@ -1,18 +1,23 @@
 Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 =================================================================
+📝 [1md/deep.txt[0m
+   [33m[WARN][0m  Stanza(s) 3: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
+
+📝 [1mc/chief.txt[0m
+   [33m[WARN][0m  Stanza(s) 6: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
 
 -----------------------------------------------------------------
 LINTING COMPLETE
 -----------------------------------------------------------------
-Files Scanned:   4255
+Files Scanned:   4256
 Fatal Errors:    [31m0[0m
-Standard Errs:   [31m3[0m
-Warnings:        [33m78[0m
+Standard Errs:   [31m0[0m
+Warnings:        [33m2[0m
 
 VERB CONJUGATION COVERAGE
 -----------------------------------------------------------------
-Using -s -d -ing:  1971
-Non-standard:      776
+Using -s -d -ing:  1977
+Non-standard:      778
 
   Non-standard verb stanzas:
     t/thunder.txt                   þonder               þondre þondres þondred þondred þondering
@@ -155,6 +160,7 @@ Non-standard:      776
     g/graduate.txt                  grad̦uait            -s
     g/glow.txt                      gloe                  -s -d glouing
     g/gut.txt                       gutte                 gut guts -d -d -ing
+    g/get.txt                       gait                  gaits got gaiting
     f/fall.txt                      falle                 -s fell -ing
     f/find.txt                      fînde               -s faund -ing
     f/flock.txt                     floc                  -s floched floching
@@ -162,6 +168,7 @@ Non-standard:      776
     f/fight.txt                     foihte                -s fauht -ing
     f/forbid.txt                    forbidde              forbid forbids forbâde forbidan -ing
     f/forget.txt                    forgait               -s forgot -ing
+    f/fog.txt                       fogue                 fog fogs -d -d -ing
     f/follow.txt                    folloe                -s -d follouing
     f/feed.txt                      fiede                 -s fed -ing
     f/frank.txt                     frânque             frânc frâncs -d -d -ing
@@ -698,7 +705,7 @@ Non-standard:      776
     q/quantity.txt                  quantifae             -s -d quantifyhing
     q/queue.txt                     cúe                 -s -d cúing
     q/quit.txt                      qüite               -s qüit -ing
-    q/query.txt                     qüerie              -s -d qüerying
+    q/query.txt                     quèrie              -s -d quèrying
     q/quarter.txt                   caurter               caurtre caurtres caurtred caurtred caurtering
     q/quack.txt                     cuaque                cuacs -d -ing
     q/quake.txt                     cuâc                -s cuâched cuâching
