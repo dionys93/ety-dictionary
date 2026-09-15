@@ -3,9 +3,6 @@ Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 📝 [1mg/garret.txt[0m
    [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
 
-📝 [1mf/flat.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
 📝 [1mf/furrow.txt[0m
    [33m[WARN][0m  Stanza(s) 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
 
@@ -20,9 +17,6 @@ Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 
 📝 [1me/exhaust.txt[0m
    [33m[WARN][0m  Stanza(s) 4: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
-
-📝 [1md/Delaware.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
 
 -----------------------------------------------------------------
 LINTING COMPLETE
