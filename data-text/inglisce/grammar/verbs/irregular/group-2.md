@@ -1,29 +1,30 @@
 # Group 2 Irregular Verbs: The Merged Past & Participle
 
-Group 2 verbs represent the class of English words where the **past tense and past participle are identical**, but differ from the present tense base. 
+Group 2 verbs represent the class of English words where the **past tense and past participle are identical**, but differ from the present tense base.
 
-Rather than treating these as isolated exceptions, Inglisce categorizes them into predictable orthographic shifts. When these verbs mutate into the past tense, they follow one of these distinct structural patterns:
+Rather than treating these as isolated exceptions, Inglisce categorizes them into predictable orthographic shifts. When these verbs mutate into the past tense, they follow one of these distinct structural patterns.
 
-### Understanding the Parenthetical Notation
-In the tables below, some infinitives are written with a parenthesis, such as `to bringue` or `to spinne`. This marks the boundary between the base verb root and its infinitive suffix. 
-
-This distinction is important because the standard present tense is not always identical to the full infinitive. When conjugating into the present tense, the verb often strips away this outer scaffolding. For example, the infinitive `to spinne` drops its doubled consonant and soft ending to form the present base: *I spin*, *sie spins*. The parenthesis visually isolates the true, stable root (`spin-` or `bring-`) that carries through the present tense.
+### Infinitive Endings and the Present Base
+The present tense is not always identical to the full infinitive. Some infinitives carry an ending that the present base does not keep. The infinitive `to spinne` drops its doubled consonant and final **-e** to give the present base *I spin*, *sie spins*; `to bringue` drops its **-ue** to give *you bring*, *sie brings*. What remains (`spin-`, `bring-`) is the stable root that carries through the present tense.
 
 ### 2A. The D-to-T Shift
-To form the past tense, they retain their root vowel and simply mutate the voiced **-d-** into an unvoiced **-t**.
+These verbs keep their root vowel and change the voiced **-d-** to an unvoiced **-t**.
+
 | Infinitive | Past / Participle |
 | :--- | :--- |
-| to bende | bent | 
+| to bende | bent |
 | to bylde | bylt |
 | to sende | sent |
 | to spende | spent |
 
-### 2B. Old English Weak Verbs and Pre-Cluster Shortening (/ɛ/ Mutation)
-While many Germanic verbs changed tense via natural vowel mutation (ablaut), the verbs in this group are historically **weak verbs**. They formed their past tense not by changing their root vowel, but by adding a dental suffix (**-t** or **-d**).
+### 2B. Pre-Cluster Shortening (/ɛ/ Mutation)
+These verbs form their past with a dental suffix (**-t** or **-d**) rather than by changing the root vowel. Most were weak verbs in Old English. Several were strong verbs that took weak past forms in Middle English: *lǣtan* (let), *slǣpan* (sleep), *wēpan* (weep), *swāpan* (sweep), *crēopan* (creep) and *clēofan* (cleave, "split").
 
-However, when this suffix was attached to a root with a long vowel, it created a heavy consonant cluster (e.g., the Old English *cēpan* becoming *cēpte*). This triggered a historical phonological shift known as **Pre-Cluster Shortening**, where the heavy consonant stack forced the trapped long vowel to collapse into a short vowel (/ɛ/).
+When the suffix met a root with a long vowel, it made a heavy consonant cluster (Old English *cēpan*, past *cēpte*), and the long vowel shortened before it. This is **Pre-Cluster Shortening**, and it leaves the /ɛ/ of *kept*, *slept* and *meant*.
 
-Inglisce explicitly maps this historical shortening. Whenever a long **-ie-** or **-i-** root is forced to shorten due to this past-tense consonant clustering, the orthography uniformly shifts to the digraph **-ai-**.
+Inglisce maps this shortening directly. Whether the infinitive spells its vowel **-ie-**, **-i-** or **-e-**, the past shifts it to the digraph **-ai-**. Before **-ai-**, an infinitive's **ch** is written **c** (`to chiepe` → `caipt`).
+
+What separates this group from 2C is the spelling outcome, not the consonants: several verbs here (`lide`, `riede`, `miete`) have roots ending in a dental, just as 2C's do.
 
 | Infinitive | Past / Participle |
 | :--- | :--- |
@@ -43,12 +44,12 @@ Inglisce explicitly maps this historical shortening. Whenever a long **-ie-** or
 | to suiepe | suaipt |
 | to uiepe | uaipt |
 
-### 2C. Stem Absorption and Orthographic Collapse
-Like the verbs in Group 2B, these are historical **weak verbs** that underwent Pre-Cluster Shortening when a dental suffix (**-t** or **-d**) was added to the root. However, they differ entirely in how their consonants interacted with that suffix in Middle English.
+### 2C. Orthographic Collapse
+Like 2B, these verbs take a dental suffix and shorten the vowel before it. Most are Old English weak verbs. The exception is `to slîde`: Old English *slīdan* is a strong verb, and *slid* takes its short vowel from the strong plural and participle stem (*slidon*, *sliden*) rather than from a suffix.
 
-For many of these verbs, the root already ended in a dental consonant (such as the **-d** in the Old English *blēdan* or *fēdan*). When the past-tense **-d** was added, the two identical consonants physically fused together (e.g., Old English *blēdde*). In other cases, the suffix attached to a smooth liquid or sibilant consonant, allowing the new cluster to blend without a harsh phonetic clash.
+Where the root already ended in a dental (Old English *blēdan*, *fēdan*), the suffix fused with it (*blēdde*). Where it ended in a liquid or sibilant, the suffix **-t** attached without a clash (*felt*, *spilt*, *lost*).
 
-Because the suffix was "absorbed" or smoothly blended into the root's existing consonant structure rather than violently clashing against it, Inglisce treats this as an **orthographic collapse**. Rather than applying the systemic **-ai-** mutation, the spelling simply strips away the long-vowel markers (dropping the **i** from **ie**, or removing the circumflex from **î**) or drops a double consonant (like **-ll-** to **-l-**) to leave the bare, short vowel (**e**, **i**, or **ò**) behind.
+Inglisce treats these as an **orthographic collapse**. Rather than applying the **-ai-** mutation, the spelling strips the long-vowel marker (the **i** of **ie**, the circumflex of **î**, the **u** of **ou**) or reduces **-ll-** to **-l-**, leaving a bare short **e**, **i** or **o**. The final **-e** falls away, and roots ending in a liquid or sibilant add **-t**.
 
 | Infinitive | Past / Participle |
 | :--- | :--- |
@@ -62,12 +63,14 @@ Because the suffix was "absorbed" or smoothly blended into the root's existing c
 | to spille | spilt |
 | to louse | lost |
 
-### 2D. The "-ht" Replacements and the Lost Germanic Fricative
-These verbs radically alter their stems, replacing their root consonants with the **-oht** or **-auht** endings (corresponding to Modern English *-ght*). 
+### 2D. The "-ht" Pasts and the Germanic Fricative
+These verbs replace the end of the stem with **-oht** or **-auht** (Modern English *-ght*).
 
-Historically, these were also weak verbs that added a dental suffix (**-t** or **-d**), but they had root vowels ending in velar consonants (like 'k' or 'g'). When forced against the dental suffix, these velar consonants softened into a voiceless velar fricative—the harsh, throaty /x/ sound found in the Scottish *loch* or German *Bach*. In Old and Middle English, this sound was spelled with an **h** (or *gh*), which Inglisce preserves.
+In most of them, the **-ht** began as a velar root consonant (*k* or *g*) meeting the dental suffix. The velar became a voiceless velar fricative, /x/, the sound of Scottish *loch* or German *Bach*. This happened before English is recorded: Old English already has *brōhte*, *sōhte*, *þōhte*, *bohte* and *tǣhte*. Old and Middle English spelled the fricative **h** (later *gh*), and Inglisce keeps the **h**.
 
-**The French Imposter:** Almost all verbs in this category (like *bringan* and *secan*) are ancient Germanic words. The glaring exception is **to caic̃e** (*catch*). This verb actually comes from Old Northern French (*cachier*) and Latin (*capere*). When it entered Middle English, speakers mistakenly assumed it was related to the native word *latch* (which was conjugated like *teach/taught*), and so they applied the Germanic "-ht" mutation to a French word by pure analogy!
+`to foihte` came by a different road. Old English *feohtan* is a strong verb whose **-ht** belongs to the root, and *fought* descends from its strong participle *fohten*.
+
+**The French Imposter:** Almost all verbs in this group (like *bringan* and *sēcan*) are native Germanic words. The exception is **to caic̃e** (*catch*), which comes from Old North French *cachier*, from Vulgar Latin *captiare*, from Latin *captare*, the frequentative of *capere*. Its **-ht** past was formed by analogy with the native verb *latch*, whose Middle English past was *lahte* / *laught*.
 
 | Infinitive | Past / Participle |
 | :--- | :--- |
@@ -79,15 +82,14 @@ Historically, these were also weak verbs that added a dental suffix (**-t** or *
 | to tiec̃e | tauht |
 | to foihte | fauht |
 
-### The Germanic Strong Verbs: The Mechanism of Ablaut
-While the verbs in groups 2B, 2C, and 2D are historically **"weak verbs"** (changing tense by adding a suffix that caused phonetic collisions), the verbs in the following groups are historically **"strong verbs."**
+### The Strong Verbs: Ablaut
+The groups above mostly form their past with a suffix. Most verbs in the groups below instead use **ablaut** (vowel gradation), a system far older than English: the past is marked by changing the root vowel rather than adding to the end of the word (Old English *bindan*, *spinnan*).
 
-Strong verbs never relied on suffixes to change tense. Instead, they relied on **Ablaut** (vowel gradation)—a system dating back to the ancestral Proto-Indo-European language. Rather than adding sounds to the end of a word, speakers indicated past tense by shifting the phonetic resonance of the root vowel itself (e.g., Old English *bindan* and *spinnan*). 
-
-Inglisce categorizes these ancient vowel shifts into the following consistent orthographic patterns.
+Not every verb below is strong by descent. Some were weak verbs or later formations that took a strong-looking past by analogy (*dug*, *stuck*, *strung*); 2G is weak; and 2H is mixed. Inglisce groups them by the vowel shift their spelling shows.
 
 ### 2E. The "-aund" Shift
-Verbs ending in the **-înde** sequence uniformly mutate their internal vowel to form the **-aund** past tense.
+Verbs ending in **-înde** shift their vowel to form the **-aund** past.
+
 | Infinitive | Past / Participle |
 | :--- | :--- |
 | to bînde | baund |
@@ -95,8 +97,9 @@ Verbs ending in the **-înde** sequence uniformly mutate their internal vowel to
 | to grînde | graund |
 | to uînde | uaund |
 
-### 2F. The "O" and "EUC" Ablauts (Nasal & Velar Shifts)
-Verbs featuring an **i** before a nasal (n/ng) or a velar/palatal sound (ch/g) shift to **o** or **euc** to form the past tense.
+### 2F. The "O" and "EU" Ablauts (Nasal & Velar Shifts)
+Verbs with **i** or **â** before a nasal (**n** or **ng**), or with **i** or **î** before a velar (**c** or **gh**), shift that vowel to **o** or **eu**.
+
 | Infinitive | Past / Participle |
 | :--- | :--- |
 | to clingue | clong |
@@ -113,21 +116,23 @@ Verbs featuring an **i** before a nasal (n/ng) or a velar/palatal sound (ch/g) s
 | to stic | steuc |
 | to strîc | streuc |
 
-### 2G. The "-old" Shift
-Verbs ending in **-elle** undergo a direct vowel mutation to **-oald**.
+### 2G. The "-oald" Shift
+These two verbs shift **-elle** to **-oald**. They are weak verbs, not strong: Old English *sellan* and *tellan* had the pasts *sealde* and *tealde*, where the vowel change came with the suffix. (`to smelle`, which also ends in **-elle**, follows 2C.)
+
 | Infinitive | Past / Participle |
 | :--- | :--- |
 | to selle | soald |
 | to telle | toald |
 
 ### 2H. Highly Irregular Stems
-A small handful of verbs undergo unique historical mutations that do not fit into the broader categories above.
-| Infinitive | Past / Participle | 
+A small handful of verbs whose changes fit none of the patterns above. The group is mixed: some are strong verbs (`stande`, `sitte`, `scîne`, `seoute`, `hoalde`), others weak (`hyre`, `maic`, `loihte`).
+
+| Infinitive | Past / Participle |
 | :--- | :--- |
 | to bêne | bênt |
 | to flihe | fled |
 | to hyre | hird |
-| to hoalde | haild | 
+| to hoalde | haild |
 | to loihte | liht |
 | to maic | mâde |
 | to onderstande | onderstôd |
@@ -143,5 +148,5 @@ A small handful of verbs undergo unique historical mutations that do not fit int
 ---
 
 ### General Conjugation Rules for Group 2 Verbs
-* **3rd Person Singular:** Add **-s** to the infinitive root (e.g., *sie bendes*, *sie slîdes*). For verbs marked with a parenthetical boundary, drop the outer infinitive suffix before adding the **-s** directly to the stable base (e.g., *to maic* → *I maic*/*sie maics*, *to spinne* → *uie spin*/*hie spins*, *to bringue* → *you bring*/*sie brings*).
-* **Progressive Participle:** Formed by dropping the terminal silent **-e** from the infinitive base and adding **-ing** (e.g., *to bende* → *bending*, *to bringu(e* → *bringuing*).
+* **3rd Person Singular:** Add **-s** to the present base. For most verbs the base is the infinitive (*sie bendes*, *sie slîdes*; *to maic* → *I maic* / *sie maics*). Where the infinitive has an ending the present drops, drop it before adding **-s** (*to spinne* → *uie spin* / *hie spins*; *to bringue* → *you bring* / *sie brings*).
+* **Progressive Participle:** Drop the final silent **-e**, if there is one, and add **-ing** (*to bende* → *bending*, *to bringue* → *bringuing*).
