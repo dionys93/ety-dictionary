@@ -1,20 +1,18 @@
 # Group 3 Irregular Verbs: The Strong Verbs (Ablaut)
 
-Group 3 verbs represent the historical core of the Germanic strong verb system. Unlike weak verbs (which add a `-t` or `-d` to form the past tense), strong verbs change tense purely through **Ablaut**—a systematic, predictable mutation of the internal root vowel.
+Group 3 verbs represent the historical core of the Germanic strong verb system. Unlike weak verbs, which add a `-t` or `-d` to form the past tense, strong verbs change tense through **ablaut**: a systematic mutation of the internal root vowel. A few verbs here mix the two systems, and the final section gathers verbs that follow neither.
 
-By observing their conjugations in Inglisce, these verbs are characterized by two major features:
-1. They maintain three distinct principal parts (Present / Past / Participle).
-2. Their past participles are heavily marked by an **-n** or **-an** terminal suffix.
+In Inglisce, these verbs are characterized by two features:
+1. Most keep three distinct principal parts (Present / Past / Participle).
+2. Their past participles end in **-n**, most often as **-on** or **-en**.
 
-### Understanding the Parenthetical Notation
-In the tables below, some infinitives are written with a parenthesis, such as `to drinc(he` or `to suim(me`. This marks the boundary between the base verb root and its infinitive suffix. 
+### Infinitive Endings and the Present Base
+The present tense is not always identical to the full infinitive. Some infinitives carry an ending that the present base does not keep: `to singue` drops its **-ue** to give *sie sings*, and `to suimme` drops its doubled consonant and final **-e** to give *sie suims*. What remains is the stable root that carries through the present tense and undergoes the ablaut shifts.
 
-This distinction is important because the standard present tense is not always identical to the full infinitive. When conjugating into the present tense, the verb often strips away this outer scaffolding. For example, the infinitive `to drinche` drops its soft ending to form the present base: *I drinc*, *sie drincs*. The parenthesis visually isolates the true, stable root (`drinc-` or `suim-`) that carries through the present tense and undergoes the ablaut shifts.
-
-These vowel mutations fall into distinct, highly predictable structural patterns:
+These vowel mutations fall into distinct structural patterns.
 
 ### 3A. The "A/O" Nasal Shift
-Verbs that feature an **m**, **n**, or **ng** (or the palatalized **nc/nch**) in their root undergo a very consistent mutation where the past tense shifts to an **a** or **â**, and the participle rounds to an **o**.
+Verbs with an **m**, **n**, **ng** or **nc** in the root take **a** or **â** in the past, and the participle rounds to **o**.
 
 | Infinitive | Past | Past Participle |
 | :--- | :--- | :--- |
@@ -31,11 +29,12 @@ Verbs that feature an **m**, **n**, or **ng** (or the palatalized **nc/nch**) in
 | to stinc | stânc | stonc |
 | to suimme | suam | suom |
 
-### 3B. The "O" Shift with "-an" Participles
-This large category shifts the internal vowel to an **o** variant in the past tense. Their past participles explicitly attach an **-an** or **-en** suffix. This group breaks down into distinct sub-patterns:
+### 3B. The "O" Shift
+This large category shifts the root vowel to an **o**-type vowel (**o**, **oa**, **ô** or **ó**) in the past. The participle ends in **-on** or **-en**, or in a bare **-n** after **r**. It breaks down into distinct sub-patterns.
 
-**1. The High-Vowel Shift (î / ai → o / oa / ose)**
-For verbs starting with high vowels, the past tense drops to an **o**, and the participle reverts back to the short **i** sound, locked in by the suffix.
+**1. The High-Vowel Shift (î / ai → o / oa)**
+Verbs with **î** or **ai** in the root take **o** or **oa** in the past, and the participle returns to a short **i** before the suffix. All six are Old English strong verbs of the same class (*arīsan*, *drīfan*, *rīdan*, *rīsan*, *wrītan*, *strīdan*).
+
 | Infinitive | Past | Past Participle |
 | :--- | :--- | :--- |
 | to arîse | arose | arison |
@@ -45,23 +44,32 @@ For verbs starting with high vowels, the past tense drops to an **o**, and the p
 | to r̃aite | r̃oat | r̃iton |
 | to strîde | strode | stridon |
 
-**2. The Mid-Vowel Shift (â / ei / ie → ô / ó / o)**
-For verbs starting with mid-vowels, the past tense shifts heavily to **ô**, **ó**, or **oa**. The participle retains the **o** or reverts to the original base vowel.
+**2. The Mid-Vowel Shift (→ ô / ó / o / oa)**
+Verbs with other vowels in the root take **ó**, **ô**, **o** or **oa** in the past. They split by what the participle does.
+
+In the first set, the participle keeps the vowel of the past:
+
 | Infinitive | Past | Past Participle |
 | :--- | :--- | :--- |
 | to breic | bróc | brócon |
+| to speic | spóc | spócon |
+| to uaic | uóc | uócon |
 | to c̃ouse | c̃ose | c̃osen |
-| to forsâc | forsôc | forsâcon |
 | to friese | frose | frosen |
-| to seaic | seôc | seâcon |
-| to spiec(he | spóc | spócon |
 | to stiale | stoal | stolen |
-| to tâc(he | tôc | tâcon |
-| to uâc(he | uóc | uócon |
 | to uieve | uoave | uoaven |
 
+In the second set, the participle takes **â**, whether the infinitive has **â** or **ai**:
+
+| Infinitive | Past | Past Participle |
+| :--- | :--- | :--- |
+| to forsâc | forsôc | forsâcon |
+| to seaic | seôc | seâcon |
+| to taic | tôc | tâcon |
+
 **3. The R-Controlled Shift (eire → ór)**
-A specific subset of the mid-vowel shift where an **-r** controls the vowel, resulting in a condensed **-n** participle instead of a full **-an**.
+A subset where **r** follows the vowel. The past takes **ór**, and the participle shortens to **-rn**. *Bear*, *swear* and *tear* are Old English strong verbs; *wear* was weak (*werian*) and took *wore* and *worn* by analogy with them.
+
 | Infinitive | Past | Past Participle |
 | :--- | :--- | :--- |
 | to beire | bór | born |
@@ -69,8 +77,8 @@ A specific subset of the mid-vowel shift where an **-r** controls the vowel, res
 | to teire | tór | torn |
 | to ueire | uór | uorn |
 
-### 3C. The Terminal Glide Shift (-oe / -ahe → -ou / -eu / -ao)
-Verbs ending in **-oe** (or the similar **-ahe** / **-oihe**) manage historical "W" glides. They shift their terminal vowel to the tight diphthongs **-ou** or **-eu** in the past tense. Their participles are formed by adding an **-n** or **-ne** to the base vowel.
+### 3C. The Terminal Glide Shift (-oe / -ahe / -oihe → -ou / -eu)
+These verbs end in a glide. Some roots ended in **w** in Old English (*blāwan*, *grōwan*, *þrāwan*); in others, a **g** became a glide in Middle English (*dragan*, *flēogan*, *gnagan*). The past takes **-ou** or **-eu**, and the participle ends in **-n** or **-ne**. Verbs in **-oe** form their gerund in **-ouing**.
 
 | Infinitive | Past | Past Participle | Gerund |
 | :--- | :--- | :--- | :--- |
@@ -81,18 +89,20 @@ Verbs ending in **-oe** (or the similar **-ahe** / **-oihe**) manage historical 
 | to groe | greu | grone | grouing |
 | to overþroe | overþreu | overþreon | overþrouing |
 | to þroe | þreu | þreon | þrouing |
-| to uiþdrahe| uiþdrou| uiþdraon | uiþdrahing |
+| to uiþdrahe | uiþdrou | uiþdraon | uiþdrahing |
 
-### 3D. The "A-Shift" (i/e → â)
-For certain verbs with front vowels, the past tense opens wide to an **â**, while the participle reverts back to the original vowel.
+### 3D. The "A-Shift" (i → â)
+The past opens to **â**, while the participle returns to the vowel of the infinitive and takes **-on**.
+
 | Infinitive | Past | Past Participle |
 | :--- | :--- | :--- |
-| to forbidde | forbâde | forbidden |
-| to forguive | forgâve | forguiven |
+| to forbidde | forbâde | forbidon |
+| to forguive | forgâve | forguivon |
 | to guive | gâve | guivon |
 
-### 3E. The Shortening Collapse (î/ai → i/o)
-These verbs do not lengthen or shift their vowel horizontally; instead, the long vowel of the infinitive simply collapses into a short, hard vowel for both the past and participle forms.
+### 3E. The Shortening Collapse (î / ai → i / o)
+The long vowel of the infinitive collapses into a short vowel shared by both the past and the participle. `to hîde` is not strong by descent: Old English *hȳdan* was a weak verb, and *hid* and *hidden* are later analogical forms.
+
 | Infinitive | Past | Past Participle |
 | :--- | :--- | :--- |
 | to bîte | bit | biton |
@@ -101,35 +111,36 @@ These verbs do not lengthen or shift their vowel horizontally; instead, the long
 | to hîde | hid | hidon |
 
 ### 3F. Distinct Irregulars & Hybrids
-A number of strong verbs feature unique ablaut patterns that defy broader categorization, or they exhibit "hybrid" behavior (mixing weak past-tense dental suffixes with strong **-en** participles).
+Some strong verbs follow patterns of their own; others are hybrids that mix the two systems, in both directions. `to dîve` pairs a strong-looking past with a weak participle; its past is a later formation by analogy. `to seoe`, `to soe` and `to soaue` pair a weak past with a strong participle. *Sow* was strong in Old English (*sāwan*) and later took a weak past; *sew* and *show* were weak and took their **-n** participles by analogy.
 
 | Infinitive, Gerund | Past | Past Participle | Notes |
 | :--- | :--- | :--- | :--- |
-| to biete, bieting | biet | bieten | Identical past tense |
-| to dîve, dîving | doave | dîved | Strong past, weak participle |
+| to biete, bieting | biet | bieten | Past identical to the present |
 | to eite, eiting | éit | eiten | |
 | to falle, falling | fell | fallen | |
-| to láie, láying | lay | laîn | |
-| to seoe, seouing | seoed | seon | Weak past, strong participle |
+| to láie, láying | lay | laîn | |
 | to sihe, sihing | sah | sine | |
-| to soe, souing | soed | són | Weak past, strong participle |
-| to soaue, soauing  | soaued | soan | Weak past, strong participle |
+| to dîve, dîving | doave | dîved | Strong past, weak participle |
+| to seoe, seouing | seoed | seon | Weak past, strong participle |
+| to soe, souing | soed | són | Weak past, strong participle |
+| to soaue, soauing | soaued | soan | Weak past, strong participle |
 
 ### 3G. Anomalous, Suppletive, and Modal Verbs
-These fundamental verbs are among the oldest in the language. They appear entirely patternless because they are the survivors of massive historical collisions. Their irregularities generally stem from two phenomena:
+These are among the oldest and most-used verbs in the language, and their irregularities come from two sources.
 
 **1. The "Franken-Verbs" (Suppletion)**
-Some verbs in this category are heavily *suppletive*—meaning they are actually entirely different words stitched together into a single conjugation paradigm.
-* **To Goe / Uaint:** Historically, the Old English verb for "to go" (*gān*) lacked its own distinct past tense. For centuries, English speakers used the past tense of a completely different verb—*wendan* (to turn or wend, as in "wend one's way"). The past tense of *wend* was *went*, which Inglisce preserves as **uaint**.
-* **To Bie:** The verb "to be" is famously a linguistic car crash of three completely unrelated Proto-Indo-European roots that mashed together over millennia: *es-* (yielding am, is, are), *bheue-* (yielding bie, bign), and *wes-* (yielding uas, uere). 
+Some verbs are *suppletive*: their paradigm is stitched together from forms of originally separate verbs.
+* **To Goe / Uaint:** Old English *gān* had a past of its own, *ēode*. In late Middle English it was displaced by *went*, the past of *wenden* ("to turn, to wend one's way"), which Inglisce preserves as **uaint**.
+* **To Bie:** The verb "to be" combines three originally separate verbs. One gave *am*, *is* and *are*; one gave **bie** and **bign** (Old English *bēon*); one gave **uas** and **uere** (Old English *wesan*).
 
 **2. The Time-Travelers (Preterite-Present Modals)**
-You might notice that modal verbs like **can** and **uill** do not take an `-s` in the third-person singular (we say *sie can*, not *sie cans*). Why? Because historically, **can** *was* a past tense. 
-In Proto-Germanic, these were strong verbs where the present tense died out, and their past tense forms shifted to mean present action. Because they were technically past-tense forms, they didn't take standard present-tense `-s` endings. But now that they meant something in the present, they had to invent completely new, weak past-tense forms by adding a dental suffix—resulting in the hybrid forms **coûd** and **uoûd**.
+Modal verbs like **can** and **uill** do not take an `-s` in the third-person singular (*sie can*, not *sie cans*). For **can**, the reason is that its present was once a past tense. Before English is recorded, it was a strong verb whose old past forms came to carry present meaning. Being past-tense in form, they never took the present-tense `-s`, and a new weak past was built with a dental suffix, giving **coûd**.
+
+**Uill** reaches the same result by a different route. Old English *willan* was not a preterite-present but an irregular verb of its own, whose present also lacked the ordinary endings. Its past, *wolde*, also carries a dental suffix, giving **oûd**.
 
 | Infinitive / Base | Past | Participle |
 | :--- | :--- | :--- |
-| to bie (am, is, are)| uas, uere | bign |
+| to bie (am, is, are) | uas, uere | bign |
 | can (can't) | coûd | -- |
 | to dou (dus) | did | don |
 | to goe | uaint | gaon |
@@ -141,5 +152,5 @@ In Proto-Germanic, these were strong verbs where the present tense died out, and
 ---
 
 ### General Conjugation Rules for Strong Verbs
-* **3rd Person Singular:** Add **-s** to the infinitive root (e.g., *sie drîves*, *sie þroes*). For verbs marked with a parenthetical boundary, drop the outer infinitive suffix before adding the **-s** directly to the stable base (e.g., *to tâc(he* → *sie tâcs*, *to sing(ue* → *sie sings*, *to suim(me* → *sie suims*).
-* **Progressive Participle:** Formed by dropping the terminal silent **-e** from the infinitive base and adding **-ing** (e.g., *to drîve* → *drîving*, *to sing(ue* → *singuing*).
+* **3rd Person Singular:** Add **-s** to the present base. For most verbs the base is the infinitive (*sie drîves*, *sie þroes*). Where the infinitive has an ending the present drops, drop it before adding **-s** (*to singue* → *sie sings*; *to suimme* → *sie suims*).
+* **Progressive Participle:** Drop the final silent **-e**, if there is one, and add **-ing** (*to drîve* → *drîving*, *to singue* → *singuing*). Verbs in **-oe** take **-ouing** instead (*to bloe* → *blouing*, *to soe* → *souing*); `to láie` gives *láying*.
