@@ -51,9 +51,9 @@ For verbs starting with mid-vowels, the past tense shifts heavily to **ô**, **�
 | :--- | :--- | :--- |
 | to breic | bróc | brócon |
 | to c̃ouse | c̃ose | c̃osen |
-| to forsâc(he | forsôc | forsâcon |
+| to forsâc | forsôc | forsâcon |
 | to friese | frose | frosen |
-| to seac(he | seôc | seacon |
+| to seaic | seôc | seâcon |
 | to spiec(he | spóc | spócon |
 | to stiale | stoal | stolen |
 | to tâc(he | tôc | tâcon |
@@ -87,8 +87,8 @@ Verbs ending in **-oe** (or the similar **-ahe** / **-oihe**) manage historical 
 For certain verbs with front vowels, the past tense opens wide to an **â**, while the participle reverts back to the original vowel.
 | Infinitive | Past | Past Participle |
 | :--- | :--- | :--- |
-| to forbid(de | forbâde | forbidon |
-| to forguive | forgâve | forguivon |
+| to forbidde | forbâde | forbidden |
+| to forguive | forgâve | forguiven |
 | to guive | gâve | guivon |
 
 ### 3E. The Shortening Collapse (î/ai → i/o)
