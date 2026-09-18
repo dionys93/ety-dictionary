@@ -61,11 +61,11 @@ In the first set, the participle keeps the vowel of the past:
 
 In the second set, the participle takes **â**, whether the infinitive has **â** or **ai**:
 
-| Infinitive | Past | Past Participle |
-| :--- | :--- | :--- |
-| to forsâc | forsôc | forsâcon |
-| to seaic | seôc | seâcon |
-| to taic | tôc | tâcon |
+| Infinitive | Past | Past Participle | Present Participle |
+| :--- | :--- | :--- | :--- |
+| to forsâc | forsôc | forsâcon | forsâching |
+| to seaic | seôc | seacon | seaching |
+| to taic | tôc | tâcon | tâching |
 
 **3. The R-Controlled Shift (eire → ór)**
 A subset where **r** follows the vowel. The past takes **ór**, and the participle shortens to **-rn**. *Bear*, *swear* and *tear* are Old English strong verbs; *wear* was weak (*werian*) and took *wore* and *worn* by analogy with them.
@@ -82,11 +82,11 @@ These verbs end in a glide. Some roots ended in **w** in Old English (*blāwan*,
 
 | Infinitive | Past | Past Participle | Gerund |
 | :--- | :--- | :--- | :--- |
-| to bloe | blou | bleon | blouing |
+| to bloe | blou | bloan | blouing |
 | to drahe | drou | draon | drahing |
-| to floihe | fleu | flone | floihing |
-| to gnoe | gneu | gnone | gnouing |
-| to groe | greu | grone | grouing |
+| to floihe | fleu | fleon | floihing |
+| to gnoe | gneu | gnoan | gnouing |
+| to groe | greu | greon | grouing |
 | to overþroe | overþreu | overþreon | overþrouing |
 | to þroe | þreu | þreon | þrouing |
 | to uiþdrahe | uiþdrou | uiþdraon | uiþdrahing |
