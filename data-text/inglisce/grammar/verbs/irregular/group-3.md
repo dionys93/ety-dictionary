@@ -51,7 +51,7 @@ In the first set, the participle keeps the vowel of the past:
 
 | Infinitive | Past | Past Participle |
 | :--- | :--- | :--- |
-| to breic | bróc | brócon |
+| to bréic | bróc | brócon |
 | to speic | spóc | spócon |
 | to uaic | uóc | uócon |
 | to c̃ouse | c̃ose | c̃osen |
