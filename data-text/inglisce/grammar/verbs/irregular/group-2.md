@@ -60,7 +60,7 @@ Because the suffix was "absorbed" or smoothly blended into the root's existing c
 | to slîde | slid |
 | to smelle | smelt |
 | to spille | spilt |
-| to louse | lòst |
+| to louse | lost |
 
 ### 2D. The "-ht" Replacements and the Lost Germanic Fricative
 These verbs radically alter their stems, replacing their root consonants with the **-oht** or **-auht** endings (corresponding to Modern English *-ght*). 
@@ -73,8 +73,8 @@ Historically, these were also weak verbs that added a dental suffix (**-t** or *
 | :--- | :--- |
 | to bring(ue | broht |
 | to byhe | boht |
-| to síc(he | soht |
-| to þinc(he | þoht |
+| to seic | soht |
+| to þinc | þoht |
 | to caic̃e | cauht |
 | to tiec̃e | tauht |
 | to foihte | fauht |
@@ -99,19 +99,19 @@ Verbs ending in the **-înde** sequence uniformly mutate their internal vowel to
 Verbs featuring an **i** before a nasal (n/ng) or a velar/palatal sound (ch/g) shift to **o** or **euc** to form the past tense.
 | Infinitive | Past / Participle |
 | :--- | :--- |
-| to cling(ue | clong |
-| to fling(ue | flong |
-| to hâng(ue | hong |
-| to spin(ne | spon |
-| to sling(ue | slong |
-| to sting(ue | stong |
-| to string(ue | strong |
-| to suing(ue | suong |
-| to uin(ne | uon |
-| to r̃ing(ue | r̃ong |
-| to dig(he | deug |
-| to stic(he | steuc |
-| to strîc(he | streuc |
+| to clingue | clong |
+| to flingue | flong |
+| to hângue | hong |
+| to spinne | spon |
+| to slingue | slong |
+| to stingue | stong |
+| to stringue | strong |
+| to suingue | suong |
+| to uinne | uon |
+| to r̃ingue | r̃ong |
+| to dighe | deug |
+| to stic | steuc |
+| to strîc | streuc |
 
 ### 2G. The "-old" Shift
 Verbs ending in **-elle** undergo a direct vowel mutation to **-oald**.
@@ -129,19 +129,19 @@ A small handful of verbs undergo unique historical mutations that do not fit int
 | to hyre | hird |
 | to hoalde | haild | 
 | to loihte | liht |
-| to mâc(he | mâde |
+| to maic | mâde |
 | to onderstande | onderstôd |
 | to scîne | sione |
 | to scite | sçat |
 | to seoute | siot |
-| to sit(te | sat |
-| to spyt(te | spat |
+| to sitte | sat |
+| to spytte | spat |
 | to stande | stôd |
-| to uiþhólde | uiþheld |
+| to uiþhoalde | uiþhaild |
 | to uiþstande | uiþstôd |
 
 ---
 
 ### General Conjugation Rules for Group 2 Verbs
-* **3rd Person Singular:** Add **-s** to the infinitive root (e.g., *sie bendes*, *sie slîdes*). For verbs marked with a parenthetical boundary, drop the outer infinitive suffix before adding the **-s** directly to the stable base (e.g., *to mâc(he* → *I mâc*/*sie mâcs*, *to spin(ne* → *uie spin*/*hie spins*, *to bring(ue* → *you bring*/*sie brings*).
+* **3rd Person Singular:** Add **-s** to the infinitive root (e.g., *sie bendes*, *sie slîdes*). For verbs marked with a parenthetical boundary, drop the outer infinitive suffix before adding the **-s** directly to the stable base (e.g., *to mâc(he* → *I mâc*/*sie maics*, *to spin(ne* → *uie spin*/*hie spins*, *to bring(ue* → *you bring*/*sie brings*).
 * **Progressive Participle:** Formed by dropping the terminal silent **-e** from the infinitive base and adding **-ing** (e.g., *to bende* → *bending*, *to bringu(e* → *bringuing*).
