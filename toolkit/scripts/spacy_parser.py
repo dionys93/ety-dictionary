@@ -2,10 +2,43 @@ import spacy
 import json
 import sys
 from pathlib import Path
+from typing import Optional
 
 # ==========================================
 # 1. PURE FUNCTIONS (Data Transformation)
 # ==========================================
+
+# Dependency labels that mark a verb as taking an object IN THIS CLAUSE.
+# Transitivity in English is a property of the clause, not of the lemma —
+# "burn" is genuinely both verbs — so it is read off the parse per occurrence
+# rather than looked up. Nothing in pos_ or tag_ carries it: the Penn tags
+# encode inflection only, and English morph has no transitivity feature.
+#
+# spaCy's English models use the ClearNLP scheme, so the direct object is
+# `dobj`, not Universal Dependencies' `obj`. Check with
+# `spacy.explain("dobj")` if a model ever changes under you.
+OBJECT_DEPS = frozenset({"dobj", "dative", "ccomp", "xcomp", "attr", "oprd"})
+
+# A passive clause has no dobj — the object has moved into subject position —
+# but it is still a transitive use and wants the transitive entry.
+PASSIVE_DEPS = frozenset({"auxpass", "nsubjpass"})
+
+VERBAL_POS = frozenset({"VERB", "AUX"})
+
+
+def transitivity(token) -> Optional[str]:
+    """Pure function: 'tr' or 'intr' for a verb, None for anything else.
+
+    Known misses, all of them clause-shape rather than model error:
+    prepositional objects ("burned through the fuel") attach as pobj and read
+    intransitive; object-drop ("I already ate") reads intransitive though the
+    sense is transitive; ellipsis in dialogue likewise.
+    """
+    if token.pos_ not in VERBAL_POS:
+        return None
+    deps = {child.dep_ for child in token.children}
+    return "tr" if (deps & OBJECT_DEPS or deps & PASSIVE_DEPS) else "intr"
+
 
 def extract_token_data(token) -> dict:
     """Pure function: maps a single spaCy token to a dictionary."""
@@ -14,6 +47,7 @@ def extract_token_data(token) -> dict:
         "lemma": token.lemma_,
         "pos": token.pos_,
         "tag": token.tag_,
+        "transitivity": transitivity(token),
         "is_ent": token.ent_type_ != "",
         "whitespace": token.whitespace_
     }

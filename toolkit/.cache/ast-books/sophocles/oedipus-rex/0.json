@@ -4,6 +4,7 @@
     "lemma": "OEDIPUS",
     "pos": "PROPN",
     "tag": "NNP",
+    "transitivity": null,
     "is_ent": true,
     "whitespace": " "
   },
@@ -12,6 +13,7 @@
     "lemma": "the",
     "pos": "DET",
     "tag": "DT",
+    "transitivity": null,
     "is_ent": true,
     "whitespace": " "
   },
@@ -20,6 +22,7 @@
     "lemma": "KING",
     "pos": "PROPN",
     "tag": "NNP",
+    "transitivity": null,
     "is_ent": true,
     "whitespace": ""
   },
@@ -28,6 +31,7 @@
     "lemma": "\n",
     "pos": "SPACE",
     "tag": "_SP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   }

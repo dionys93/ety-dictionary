@@ -36,7 +36,18 @@ import { fileURLToPath } from 'node:url';
  */
 
 const posMap = {
-    'verb': 'Verb', 'v': 'Verb', 'tr v': 'Verb', 'intr v': 'Verb',
+    // A transitive and an intransitive stanza of one headword are two verbs
+    // with two conjugations — burn/bênt against burn/-d — so they cannot
+    // share a key. Both used to map to 'Verb', and since the reducer writes
+    // acc[eng][pos] = ing, whichever stanza was read second silently erased
+    // the first. Splitting the category is the whole of the fix; the reducer
+    // needs no change.
+    //
+    // irv / tr irv / intr irv are v / tr v / intr v that happen to be
+    // irregular, and route exactly as their regular counterparts do.
+    'verb': 'Verb', 'v': 'Verb', 'irv': 'Verb',
+    'tr v': 'VerbTr', 'tr irv': 'VerbTr',
+    'intr v': 'VerbIntr', 'intr irv': 'VerbIntr',
     'noun': 'Noun', 'n': 'Noun', 'm n': 'Noun', 'f n': 'Noun',
     'masculine noun': 'Noun', 'feminine noun': 'Noun', 'neuter noun': 'Noun',
     'adjective': 'Adjective', 'adj': 'Adjective',

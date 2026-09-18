@@ -4,6 +4,7 @@
     "lemma": "JOCASTA",
     "pos": "PROPN",
     "tag": "NNP",
+    "transitivity": null,
     "is_ent": true,
     "whitespace": ""
   },
@@ -12,6 +13,7 @@
     "lemma": "\n\n",
     "pos": "SPACE",
     "tag": "_SP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -20,6 +22,7 @@
     "lemma": "he",
     "pos": "PRON",
     "tag": "PRP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -28,6 +31,7 @@
     "lemma": "come",
     "pos": "VERB",
     "tag": "VBZ",
+    "transitivity": "intr",
     "is_ent": false,
     "whitespace": " "
   },
@@ -36,6 +40,7 @@
     "lemma": "from",
     "pos": "ADP",
     "tag": "IN",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -44,6 +49,7 @@
     "lemma": "Corinth",
     "pos": "PROPN",
     "tag": "NNP",
+    "transitivity": null,
     "is_ent": true,
     "whitespace": ""
   },
@@ -52,6 +58,7 @@
     "lemma": ",",
     "pos": "PUNCT",
     "tag": ",",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -60,6 +67,7 @@
     "lemma": "\n",
     "pos": "SPACE",
     "tag": "_SP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -68,6 +76,7 @@
     "lemma": "bring",
     "pos": "VERB",
     "tag": "VBG",
+    "transitivity": "tr",
     "is_ent": false,
     "whitespace": " "
   },
@@ -76,6 +85,7 @@
     "lemma": "news",
     "pos": "NOUN",
     "tag": "NN",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -84,6 +94,7 @@
     "lemma": "that",
     "pos": "SCONJ",
     "tag": "IN",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -92,6 +103,7 @@
     "lemma": "Polybus",
     "pos": "PROPN",
     "tag": "NNP",
+    "transitivity": null,
     "is_ent": true,
     "whitespace": ""
   },
@@ -100,6 +112,7 @@
     "lemma": ",",
     "pos": "PUNCT",
     "tag": ",",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -108,6 +121,7 @@
     "lemma": "your",
     "pos": "PRON",
     "tag": "PRP$",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -116,6 +130,7 @@
     "lemma": "father",
     "pos": "NOUN",
     "tag": "NN",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -124,6 +139,7 @@
     "lemma": ",",
     "pos": "PUNCT",
     "tag": ",",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -132,6 +148,7 @@
     "lemma": "\n",
     "pos": "SPACE",
     "tag": "_SP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -140,6 +157,7 @@
     "lemma": "no",
     "pos": "ADV",
     "tag": "RB",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -148,6 +166,7 @@
     "lemma": "long",
     "pos": "ADV",
     "tag": "RBR",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -156,6 +175,7 @@
     "lemma": "be",
     "pos": "AUX",
     "tag": "VBZ",
+    "transitivity": "intr",
     "is_ent": false,
     "whitespace": " "
   },
@@ -164,6 +184,7 @@
     "lemma": "alive",
     "pos": "ADJ",
     "tag": "JJ",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -172,6 +193,7 @@
     "lemma": ".",
     "pos": "PUNCT",
     "tag": ".",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -180,6 +202,7 @@
     "lemma": "he",
     "pos": "PRON",
     "tag": "PRP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -188,6 +211,7 @@
     "lemma": "\u2019",
     "pos": "VERB",
     "tag": "VBZ",
+    "transitivity": "intr",
     "is_ent": false,
     "whitespace": " "
   },
@@ -196,6 +220,7 @@
     "lemma": "dead",
     "pos": "ADJ",
     "tag": "JJ",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -204,6 +229,7 @@
     "lemma": ".",
     "pos": "PUNCT",
     "tag": ".",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -212,6 +238,7 @@
     "lemma": "\n\n\n",
     "pos": "SPACE",
     "tag": "_SP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -220,6 +247,7 @@
     "lemma": "OEDIPUS",
     "pos": "PROPN",
     "tag": "NNP",
+    "transitivity": null,
     "is_ent": true,
     "whitespace": ""
   },
@@ -228,6 +256,7 @@
     "lemma": "\n\n",
     "pos": "SPACE",
     "tag": "_SP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -236,6 +265,7 @@
     "lemma": "what",
     "pos": "PRON",
     "tag": "WP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -244,6 +274,7 @@
     "lemma": "?",
     "pos": "PUNCT",
     "tag": ".",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -252,6 +283,7 @@
     "lemma": "\n",
     "pos": "SPACE",
     "tag": "_SP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -260,6 +292,7 @@
     "lemma": "stranger",
     "pos": "NOUN",
     "tag": "NN",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -268,6 +301,7 @@
     "lemma": ",",
     "pos": "PUNCT",
     "tag": ",",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -276,6 +310,7 @@
     "lemma": "let",
     "pos": "VERB",
     "tag": "VB",
+    "transitivity": "tr",
     "is_ent": false,
     "whitespace": " "
   },
@@ -284,6 +319,7 @@
     "lemma": "I",
     "pos": "PRON",
     "tag": "PRP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -292,6 +328,7 @@
     "lemma": "hear",
     "pos": "VERB",
     "tag": "VB",
+    "transitivity": "intr",
     "is_ent": false,
     "whitespace": " "
   },
@@ -300,6 +337,7 @@
     "lemma": "from",
     "pos": "ADP",
     "tag": "IN",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -308,6 +346,7 @@
     "lemma": "you",
     "pos": "PRON",
     "tag": "PRP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -316,6 +355,7 @@
     "lemma": "in",
     "pos": "ADP",
     "tag": "IN",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -324,6 +364,7 @@
     "lemma": "person",
     "pos": "NOUN",
     "tag": "NN",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -332,6 +373,7 @@
     "lemma": ".",
     "pos": "PUNCT",
     "tag": ".",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -340,6 +382,7 @@
     "lemma": "\n\n\n",
     "pos": "SPACE",
     "tag": "_SP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -348,6 +391,7 @@
     "lemma": "MESSENGER",
     "pos": "PROPN",
     "tag": "NNP",
+    "transitivity": null,
     "is_ent": true,
     "whitespace": ""
   },
@@ -356,6 +400,7 @@
     "lemma": "\n\n",
     "pos": "SPACE",
     "tag": "_SP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -364,6 +409,7 @@
     "lemma": "if",
     "pos": "SCONJ",
     "tag": "IN",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -372,6 +418,7 @@
     "lemma": "I",
     "pos": "PRON",
     "tag": "PRP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -380,6 +427,7 @@
     "lemma": "must",
     "pos": "AUX",
     "tag": "MD",
+    "transitivity": "intr",
     "is_ent": false,
     "whitespace": " "
   },
@@ -388,6 +436,7 @@
     "lemma": "first",
     "pos": "ADV",
     "tag": "RB",
+    "transitivity": null,
     "is_ent": true,
     "whitespace": " "
   },
@@ -396,6 +445,7 @@
     "lemma": "report",
     "pos": "VERB",
     "tag": "VB",
+    "transitivity": "tr",
     "is_ent": false,
     "whitespace": " "
   },
@@ -404,6 +454,7 @@
     "lemma": "my",
     "pos": "PRON",
     "tag": "PRP$",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -412,6 +463,7 @@
     "lemma": "news",
     "pos": "NOUN",
     "tag": "NN",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -420,6 +472,7 @@
     "lemma": "quite",
     "pos": "ADV",
     "tag": "RB",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -428,6 +481,7 @@
     "lemma": "plainly",
     "pos": "ADV",
     "tag": "RB",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -436,6 +490,7 @@
     "lemma": ",",
     "pos": "PUNCT",
     "tag": ",",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -444,6 +499,7 @@
     "lemma": "\n",
     "pos": "SPACE",
     "tag": "_SP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -452,6 +508,7 @@
     "lemma": "then",
     "pos": "ADV",
     "tag": "RB",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -460,6 +517,7 @@
     "lemma": "I",
     "pos": "PRON",
     "tag": "PRP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -468,6 +526,7 @@
     "lemma": "should",
     "pos": "AUX",
     "tag": "MD",
+    "transitivity": "intr",
     "is_ent": false,
     "whitespace": " "
   },
@@ -476,6 +535,7 @@
     "lemma": "let",
     "pos": "VERB",
     "tag": "VB",
+    "transitivity": "tr",
     "is_ent": false,
     "whitespace": " "
   },
@@ -484,6 +544,7 @@
     "lemma": "you",
     "pos": "PRON",
     "tag": "PRP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -492,6 +553,7 @@
     "lemma": "know",
     "pos": "VERB",
     "tag": "VB",
+    "transitivity": "intr",
     "is_ent": false,
     "whitespace": " "
   },
@@ -500,6 +562,7 @@
     "lemma": "that",
     "pos": "SCONJ",
     "tag": "IN",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -508,6 +571,7 @@
     "lemma": "Polybus",
     "pos": "PROPN",
     "tag": "NNP",
+    "transitivity": null,
     "is_ent": true,
     "whitespace": ""
   },
@@ -516,6 +580,7 @@
     "lemma": "\n",
     "pos": "SPACE",
     "tag": "_SP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -524,6 +589,7 @@
     "lemma": "have",
     "pos": "AUX",
     "tag": "VBZ",
+    "transitivity": "intr",
     "is_ent": false,
     "whitespace": " "
   },
@@ -532,6 +598,7 @@
     "lemma": "pass",
     "pos": "VERB",
     "tag": "VBN",
+    "transitivity": "intr",
     "is_ent": false,
     "whitespace": " "
   },
@@ -540,6 +607,7 @@
     "lemma": "away",
     "pos": "ADP",
     "tag": "RP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -548,6 +616,7 @@
     "lemma": ".",
     "pos": "PUNCT",
     "tag": ".",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -556,6 +625,7 @@
     "lemma": "he",
     "pos": "PRON",
     "tag": "PRP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -564,6 +634,7 @@
     "lemma": "\u2019s",
     "pos": "AUX",
     "tag": "VBZ",
+    "transitivity": "intr",
     "is_ent": false,
     "whitespace": " "
   },
@@ -572,6 +643,7 @@
     "lemma": "go",
     "pos": "VERB",
     "tag": "VBN",
+    "transitivity": "tr",
     "is_ent": false,
     "whitespace": ""
   },
@@ -580,6 +652,7 @@
     "lemma": ".",
     "pos": "PUNCT",
     "tag": ".",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -588,6 +661,7 @@
     "lemma": "\n \n\n",
     "pos": "SPACE",
     "tag": "_SP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -596,6 +670,7 @@
     "lemma": "OEDIPUS",
     "pos": "PROPN",
     "tag": "NNP",
+    "transitivity": null,
     "is_ent": true,
     "whitespace": ""
   },
@@ -604,6 +679,7 @@
     "lemma": "\n\n",
     "pos": "SPACE",
     "tag": "_SP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -612,6 +688,7 @@
     "lemma": "by",
     "pos": "ADP",
     "tag": "IN",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -620,6 +697,7 @@
     "lemma": "treachery",
     "pos": "NOUN",
     "tag": "NN",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -628,6 +706,7 @@
     "lemma": ",",
     "pos": "PUNCT",
     "tag": ",",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -636,6 +715,7 @@
     "lemma": "\n",
     "pos": "SPACE",
     "tag": "_SP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -644,6 +724,7 @@
     "lemma": "or",
     "pos": "CCONJ",
     "tag": "CC",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -652,6 +733,7 @@
     "lemma": "be",
     "pos": "AUX",
     "tag": "VBD",
+    "transitivity": "tr",
     "is_ent": false,
     "whitespace": " "
   },
@@ -660,6 +742,7 @@
     "lemma": "it",
     "pos": "PRON",
     "tag": "PRP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -668,6 +751,7 @@
     "lemma": "the",
     "pos": "DET",
     "tag": "DT",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -676,6 +760,7 @@
     "lemma": "result",
     "pos": "NOUN",
     "tag": "NN",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -684,6 +769,7 @@
     "lemma": "of",
     "pos": "ADP",
     "tag": "IN",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -692,6 +778,7 @@
     "lemma": "some",
     "pos": "DET",
     "tag": "DT",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -700,6 +787,7 @@
     "lemma": "disease",
     "pos": "NOUN",
     "tag": "NN",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -708,6 +796,7 @@
     "lemma": "?",
     "pos": "PUNCT",
     "tag": ".",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -716,6 +805,7 @@
     "lemma": "\n\n\n",
     "pos": "SPACE",
     "tag": "_SP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -724,6 +814,7 @@
     "lemma": "MESSENGER",
     "pos": "PROPN",
     "tag": "NNP",
+    "transitivity": null,
     "is_ent": true,
     "whitespace": ""
   },
@@ -732,6 +823,7 @@
     "lemma": "\n\n",
     "pos": "SPACE",
     "tag": "_SP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -740,6 +832,7 @@
     "lemma": "with",
     "pos": "ADP",
     "tag": "IN",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -748,6 +841,7 @@
     "lemma": "old",
     "pos": "ADJ",
     "tag": "JJ",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -756,6 +850,7 @@
     "lemma": "body",
     "pos": "NOUN",
     "tag": "NNS",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -764,6 +859,7 @@
     "lemma": "a",
     "pos": "DET",
     "tag": "DT",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -772,6 +868,7 @@
     "lemma": "slight",
     "pos": "ADJ",
     "tag": "JJ",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -780,6 +877,7 @@
     "lemma": "weight",
     "pos": "NOUN",
     "tag": "NN",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -788,6 +886,7 @@
     "lemma": "on",
     "pos": "ADP",
     "tag": "IN",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -796,6 +895,7 @@
     "lemma": "the",
     "pos": "DET",
     "tag": "DT",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -804,6 +904,7 @@
     "lemma": "scale",
     "pos": "NOUN",
     "tag": "NNS",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -812,6 +913,7 @@
     "lemma": "\n",
     "pos": "SPACE",
     "tag": "_SP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -820,6 +922,7 @@
     "lemma": "bring",
     "pos": "VERB",
     "tag": "VBZ",
+    "transitivity": "tr",
     "is_ent": false,
     "whitespace": " "
   },
@@ -828,6 +931,7 @@
     "lemma": "final",
     "pos": "ADJ",
     "tag": "JJ",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -836,6 +940,7 @@
     "lemma": "peace",
     "pos": "NOUN",
     "tag": "NN",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -844,6 +949,7 @@
     "lemma": ".",
     "pos": "PUNCT",
     "tag": ".",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -852,6 +958,7 @@
     "lemma": "\n\n\n",
     "pos": "SPACE",
     "tag": "_SP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -860,6 +967,7 @@
     "lemma": "OEDIPUS",
     "pos": "PROPN",
     "tag": "NNP",
+    "transitivity": null,
     "is_ent": true,
     "whitespace": ""
   },
@@ -868,6 +976,7 @@
     "lemma": "\n\n",
     "pos": "SPACE",
     "tag": "_SP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -876,6 +985,7 @@
     "lemma": "apparently",
     "pos": "ADV",
     "tag": "RB",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -884,6 +994,7 @@
     "lemma": "his",
     "pos": "PRON",
     "tag": "PRP$",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -892,6 +1003,7 @@
     "lemma": "death",
     "pos": "NOUN",
     "tag": "NN",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -900,6 +1012,7 @@
     "lemma": "\n",
     "pos": "SPACE",
     "tag": "_SP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -908,6 +1021,7 @@
     "lemma": "be",
     "pos": "AUX",
     "tag": "VBD",
+    "transitivity": "intr",
     "is_ent": false,
     "whitespace": " "
   },
@@ -916,6 +1030,7 @@
     "lemma": "from",
     "pos": "ADP",
     "tag": "IN",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -924,6 +1039,7 @@
     "lemma": "an",
     "pos": "DET",
     "tag": "DT",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -932,6 +1048,7 @@
     "lemma": "illness",
     "pos": "NOUN",
     "tag": "NN",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -940,6 +1057,7 @@
     "lemma": "?",
     "pos": "PUNCT",
     "tag": ".",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -948,6 +1066,7 @@
     "lemma": "\n\n\n",
     "pos": "SPACE",
     "tag": "_SP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -956,6 +1075,7 @@
     "lemma": "MESSENGER",
     "pos": "PROPN",
     "tag": "NNP",
+    "transitivity": null,
     "is_ent": true,
     "whitespace": ""
   },
@@ -964,6 +1084,7 @@
     "lemma": "\n\n",
     "pos": "SPACE",
     "tag": "_SP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -972,6 +1093,7 @@
     "lemma": "yes",
     "pos": "INTJ",
     "tag": "UH",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -980,6 +1102,7 @@
     "lemma": ",",
     "pos": "PUNCT",
     "tag": ",",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -988,6 +1111,7 @@
     "lemma": "and",
     "pos": "CCONJ",
     "tag": "CC",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -996,6 +1120,7 @@
     "lemma": "from",
     "pos": "ADP",
     "tag": "IN",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -1004,6 +1129,7 @@
     "lemma": "old",
     "pos": "ADJ",
     "tag": "JJ",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": " "
   },
@@ -1012,6 +1138,7 @@
     "lemma": "age",
     "pos": "NOUN",
     "tag": "NN",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -1020,6 +1147,7 @@
     "lemma": ".",
     "pos": "PUNCT",
     "tag": ".",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   },
@@ -1028,6 +1156,7 @@
     "lemma": "\n",
     "pos": "SPACE",
     "tag": "_SP",
+    "transitivity": null,
     "is_ent": false,
     "whitespace": ""
   }

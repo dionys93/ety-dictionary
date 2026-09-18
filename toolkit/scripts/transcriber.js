@@ -20,6 +20,7 @@ import { matchCasing, resolveForm } from './utils.js';
  * @property {string} lemma
  * @property {string} pos
  * @property {string} tag
+ * @property {string|null} transitivity  'tr' | 'intr' for verbs, null otherwise
  * @property {boolean} is_ent
  * @property {string} whitespace
  */
@@ -49,11 +50,32 @@ const Failure = (error) => ({ status: 'missing', error });
 const pipe = (...fns) => (x) => fns.reduce((v, f) => f(v), x);
 
 /**
+ * Verb entries are split by transitivity wherever the dictionary holds both
+ * stanzas (VerbTr / VerbIntr), so the parse decides which conjugation a token
+ * gets. Preference order: the transitivity spaCy found, then the unsplit
+ * entry, then the other half. A wrong guess should cost the right past tense,
+ * never the whole word — and since both stanzas of a pair carry the same
+ * reformed spelling, the fallback is invisible except in the conjugation.
+ *
+ * A token with no transitivity (an older AST, or a non-verb reaching this by
+ * fallback) takes the unsplit entry first and is otherwise served by whichever
+ * half exists.
+ */
+const VERB_ORDER = {
+    tr:   ['VerbTr', 'Verb', 'VerbIntr'],
+    intr: ['VerbIntr', 'Verb', 'VerbTr']
+};
+const VERB_ORDER_DEFAULT = ['Verb', 'VerbTr', 'VerbIntr'];
+
+/**
  * Pure evaluator replacing imperative if/else routing
  */
-const resolveCategory = (pos, entry) => {
-    if ((pos === 'VERB' || pos === 'AUX') && entry.Verb) return { baseReplacement: entry.Verb, matchedCategory: 'Verb' };
-    
+const resolveCategory = (pos, entry, transitivity = null) => {
+    if (pos === 'VERB' || pos === 'AUX') {
+        const order = VERB_ORDER[transitivity] || VERB_ORDER_DEFAULT;
+        const matched = order.find(category => entry[category]);
+        if (matched) return { baseReplacement: entry[matched], matchedCategory: matched };
+    }
     if (pos === 'AUX') {
         if (entry.Copula) return { baseReplacement: entry.Copula, matchedCategory: 'Copula' };
         if (entry.Auxiliary) return { baseReplacement: entry.Auxiliary, matchedCategory: 'Auxiliary' };
@@ -134,7 +156,7 @@ const matchDictionary = (brain) => (token) => {
     const brainEntry = brain[rawText] || brain[searchWord];
     if (!brainEntry) return Failure(searchWord); 
 
-    const { baseReplacement, matchedCategory, isFallback } = resolveCategory(token.pos, brainEntry);
+    const { baseReplacement, matchedCategory, isFallback } = resolveCategory(token.pos, brainEntry, token.transitivity);
     const isPreConjugated = !!brain[rawText] && rawText !== searchWord;
 
     return baseReplacement 

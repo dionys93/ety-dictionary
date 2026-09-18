@@ -20,7 +20,7 @@ The library is built around a single canonical parser (`etym-parse`, implemented
   * `translate-books.sh` — The master orchestrator for the translation pipeline (fails fast per phase; never transcribes a stale AST cache).
   * `spacy_parser.py` — Python deep-learning NLP parser (spaCy).
   * `transcriber.js` & `utils.js` — Node.js functional transcription and morphological mapping.
-  * `build-dictionary.js` — Compiles `dist/master_dataset.jsonl` into `dist/translationBrain.json`.
+  * `build-dictionary.js` — Compiler for the translation brain (Phase 2 below).
 * **`toolkit/dist/`** — Automated build output: the master JSONL dataset, `translationBrain.json` (lemma keys sorted for clean git diffs), and the `missing_words.txt` / `fallback_words.txt` trackers written by the transcriber.
   * `dist/api/` — `navigation.json` and `letters/*.json`, per-letter entry data for the frontend. No script in this toolkit writes them, so they come from outside it; treat them as read-only here.
 * **`toolkit/tests/`** — Vitest test suite covering the Bash pipeline and translation layer (see **Testing** below).
@@ -84,20 +84,94 @@ Note that passing lint does not guarantee a record survives the build: `scripts/
 
 ## 📖 The Translation Pipeline
 
-To translate an entire folder of English books into Inglisce, we use a highly optimized, decoupled 2-step pipeline.
+Two sides feed one transcriber, and neither knows the other exists until they
+meet. The **dictionary side** reduces stanzas to a lookup table: English lemma
+in, Inglisce form and conjugations out. The **book side** turns English prose
+into tagged tokens: what each word is, and what it is doing in its sentence.
+Phase 4 is the only place both are in the room.
 
-**To run the pipeline:**
+```
+DICTIONARY SIDE — what a word becomes
+  data-text/inglisce/dictionary/*/*.txt
+        │  ① etym-build-dataset  (etym-parse.awk)
+        ▼
+  dist/master_dataset.jsonl          one record per stanza; etymology + sources
+        │  ② build-dictionary.js  (buildBrain)
+        ▼
+  dist/translationBrain.json         lemma → { Verb: "bêne", Verb_conjugations: … }
+
+BOOK SIDE — what this sentence is doing
+  data-text/books/*.txt
+        │  ③ spacy_parser.py  (en_core_web_trf)
+        ▼
+  toolkit/.cache/ast-books/**.json   one record per token: lemma, pos, tag, transitivity
+        │
+        └────────────┬───────────  ④ transcriber.js  ←── translationBrain.json
+                     ▼
+  data-text/inglisce/books/*.txt
+```
+
+**Phase 1 — Dataset (awk).** `etym-build-dataset` crawls the dictionary and
+writes `dist/master_dataset.jsonl`, one record per stanza, carrying everything
+the `.txt` files hold.
+
+**Phase 2 — Brain (Node).** `node toolkit/scripts/build-dictionary.js` reduces
+that dataset to `dist/translationBrain.json`. This is a **lookup table, not an
+archive**: etymology and sources are dropped, and any stanza whose `(pos)` tag
+is absent from the script's own `posMap` is dropped with them. The brain is the
+only part of the dictionary the transcriber can see.
+
+**Phase 3 — AST (Python/spaCy).** `spacy_parser.py` reads English and nothing
+else — it has never heard of Inglisce. Its job is to say which word is present
+and what it is doing: `lemma` so the brain can be searched by dictionary form,
+`tag` so the transcriber knows past from gerund, `transitivity` so a verb with
+separate transitive and intransitive stanzas gets the right one, `is_ent` so
+proper nouns are left alone.
+
+**Phase 4 — Transcription (Node).** `transcriber.js` walks the cached AST,
+looks each lemma up in the brain, applies the morphology `utils.js` describes,
+and writes `data-text/inglisce/books/`.
+
+`translate-books.sh` runs **only phases 3 and 4**. Phases 1 and 2 are the
+dictionary's own build and are run separately, by hand or by whatever changed
+the dictionary. If either of its phases fails the pipeline aborts immediately,
+names the phase that died, and propagates the exit code, so Phase 4 can never
+run against a partial AST cache.
+
 ```bash
 ./toolkit/scripts/translate-books.sh
 ```
 
-### How it works:
-1. **Phase 1: Deep Learning (Python):** `spacy_parser.py` reads the English text and uses the `en_core_web_trf` neural network to generate a highly accurate Abstract Syntax Tree (AST). It perfectly identifies Verb phrases, Plural Nouns, and Named Entities, saving them to `toolkit/.cache/ast-books/`.
-2. **Phase 2: Transcription (Node.js):** `transcriber.js` consumes the cached AST JSON. It acts as a pure, functional mapper—looking up root words in `translationBrain.json` and applying the correct morphological suffixes (via `utils.js`) without freezing the main thread. It outputs the final `.txt` files to `data-text/inglisce/books/`.
-3. **Missing Words Tracker:** untranslated words are aggregated into a globally sorted list in your terminal output **and** written to `toolkit/dist/missing_words.txt`, so downstream tooling knows exactly what words to add to your dictionary next.
-4. **Cross-POS Fallback Tracker:** when a word is served by a different part-of-speech category than spaCy detected (e.g. an adjective token answered by a noun entry), the pipeline records it to `toolkit/dist/fallback_words.txt` — the first place to look when a translation reads strangely.
+### What to re-run when
 
-If either phase fails, the pipeline aborts immediately, names the phase that died, and propagates the exit code — Phase 2 can never run against a partial AST cache.
+| You changed | Re-run |
+|---|---|
+| a dictionary `.txt` file | 1 → 2 → 4 |
+| `etym-parse.awk` | 1 → 2 → 4 |
+| `build-dictionary.js` (`posMap`, the reducer) | 2 → 4 |
+| `spacy_parser.py` (the AST schema) | 3 → 4 |
+| a book under `data-text/books/` | 3 → 4 |
+| `transcriber.js` or `utils.js` | 4 |
+
+Phase 4 alone is `node toolkit/scripts/transcriber.js <ast_dir> <out_dir>`, which
+is worth knowing because Phase 3 is the slow one: `en_core_web_trf` is a
+transformer, and **`.cache/` is not incremental** — `spacy_parser.py` rglobs
+every `.txt` under the books directory and rewrites every AST on every run.
+There is nothing to invalidate, and nothing to delete. To try a change against
+one book, point Phase 3 at a directory holding a single file.
+
+### Trackers
+
+Two files land in `dist/` after every transcription run, and both are printed to
+the terminal as well:
+
+* **`missing_words.txt`** — every English word no brain entry answered, sorted
+  and deduplicated. This is the queue of words to add to the dictionary next.
+* **`fallback_words.txt`** — every word served by a different part-of-speech
+  category than spaCy detected (an adjective token answered by a noun entry, say).
+  The first place to look when a translation reads strangely.
+
+Both are deleted rather than left stale when a run produces none.
 
 ---
 
