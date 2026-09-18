@@ -5,7 +5,7 @@ Group 2 verbs represent the class of English words where the **past tense and pa
 Rather than treating these as isolated exceptions, Inglisce categorizes them into predictable orthographic shifts. When these verbs mutate into the past tense, they follow one of these distinct structural patterns:
 
 ### Understanding the Parenthetical Notation
-In the tables below, some infinitives are written with a parenthesis, such as `to bring(ue` or `to spin(ne`. This marks the boundary between the base verb root and its infinitive suffix. 
+In the tables below, some infinitives are written with a parenthesis, such as `to bringue` or `to spinne`. This marks the boundary between the base verb root and its infinitive suffix. 
 
 This distinction is important because the standard present tense is not always identical to the full infinitive. When conjugating into the present tense, the verb often strips away this outer scaffolding. For example, the infinitive `to spinne` drops its doubled consonant and soft ending to form the present base: *I spin*, *sie spins*. The parenthesis visually isolates the true, stable root (`spin-` or `bring-`) that carries through the present tense.
 
@@ -71,7 +71,7 @@ Historically, these were also weak verbs that added a dental suffix (**-t** or *
 
 | Infinitive | Past / Participle |
 | :--- | :--- |
-| to bring(ue | broht |
+| to bringue | broht |
 | to byhe | boht |
 | to seic | soht |
 | to þinc | þoht |
@@ -143,5 +143,5 @@ A small handful of verbs undergo unique historical mutations that do not fit int
 ---
 
 ### General Conjugation Rules for Group 2 Verbs
-* **3rd Person Singular:** Add **-s** to the infinitive root (e.g., *sie bendes*, *sie slîdes*). For verbs marked with a parenthetical boundary, drop the outer infinitive suffix before adding the **-s** directly to the stable base (e.g., *to mâc(he* → *I mâc*/*sie maics*, *to spin(ne* → *uie spin*/*hie spins*, *to bring(ue* → *you bring*/*sie brings*).
+* **3rd Person Singular:** Add **-s** to the infinitive root (e.g., *sie bendes*, *sie slîdes*). For verbs marked with a parenthetical boundary, drop the outer infinitive suffix before adding the **-s** directly to the stable base (e.g., *to maic* → *I maic*/*sie maics*, *to spinne* → *uie spin*/*hie spins*, *to bringue* → *you bring*/*sie brings*).
 * **Progressive Participle:** Formed by dropping the terminal silent **-e** from the infinitive base and adding **-ing** (e.g., *to bende* → *bending*, *to bringu(e* → *bringuing*).
