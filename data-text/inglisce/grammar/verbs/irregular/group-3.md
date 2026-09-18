@@ -19,17 +19,17 @@ Verbs that feature an **m**, **n**, or **ng** (or the palatalized **nc/nch**) in
 | Infinitive | Past | Past Participle |
 | :--- | :--- | :--- |
 | to beguin | begane | begon |
-| to become | becâme | becom |
-| to come | câme | com |
-| to drinc(he | drânc | dronc |
+| to become | becâm | becom |
+| to come | câm | com |
+| to drinc | drânc | dronc |
 | to rone | ran | ron |
-| to ring(ue | râng | rong |
-| to sing(ue | sâng | song |
-| to sinc(he | sânc | sonc |
-| to șrinc(he | șrânc | șronc |
-| to spring(ue | sprâng | sprong |
-| to stinc(he | stânc | stonc |
-| to suim(me | suam | suom |
+| to ringue | râng | rong |
+| to singue | sâng | song |
+| to sinc | sânc | sonc |
+| to șrinc | șrânc | șronc |
+| to springue | sprâng | sprong |
+| to stinc | stânc | stonc |
+| to suimme | suam | suom |
 
 ### 3B. The "O" Shift with "-an" Participles
 This large category shifts the internal vowel to an **o** variant in the past tense. Their past participles explicitly attach an **-an** or **-en** suffix. This group breaks down into distinct sub-patterns:
@@ -38,26 +38,26 @@ This large category shifts the internal vowel to an **o** variant in the past te
 For verbs starting with high vowels, the past tense drops to an **o**, and the participle reverts back to the short **i** sound, locked in by the suffix.
 | Infinitive | Past | Past Participle |
 | :--- | :--- | :--- |
-| to arîse | arose | arisan |
-| to drîve | droave | drivan |
-| to rîde | rode | ridan |
-| to rîse | rose | risan |
-| to r̃aite | r̃oat | r̃itan |
-| to strîde | strode | stridan |
+| to arîse | arose | arison |
+| to drîve | droave | drivon |
+| to rîde | rode | ridon |
+| to rîse | rose | rison |
+| to r̃aite | r̃oat | r̃iton |
+| to strîde | strode | stridon |
 
 **2. The Mid-Vowel Shift (â / ei / ie → ô / ó / o)**
 For verbs starting with mid-vowels, the past tense shifts heavily to **ô**, **ó**, or **oa**. The participle retains the **o** or reverts to the original base vowel.
 | Infinitive | Past | Past Participle |
 | :--- | :--- | :--- |
-| to breic(he | bróc | brócan |
+| to breic | bróc | brócon |
 | to c̃ouse | c̃ose | c̃osen |
-| to forsâc(he | forsôc | forsâcan |
+| to forsâc(he | forsôc | forsâcon |
 | to friese | frose | frosen |
-| to seac(he | seôc | seacan |
-| to spiec(he | spóc | spócan |
+| to seac(he | seôc | seacon |
+| to spiec(he | spóc | spócon |
 | to stiale | stoal | stolen |
-| to tâc(he | tôc | tâcan |
-| to uâc(he | uóc | uócan |
+| to tâc(he | tôc | tâcon |
+| to uâc(he | uóc | uócon |
 | to uieve | uoave | uoaven |
 
 **3. The R-Controlled Shift (eire → ór)**
@@ -76,9 +76,9 @@ Verbs ending in **-oe** (or the similar **-ahe** / **-oihe**) manage historical 
 | :--- | :--- | :--- | :--- |
 | to bloe | blou | bleon | blouing |
 | to drahe | drou | draon | drahing |
-| to floihe | flou | flone | floihing |
-| to gnoe | gnou | gnone | gnouing |
-| to groe | grou | grone | grouing |
+| to floihe | fleu | flone | floihing |
+| to gnoe | gneu | gnone | gnouing |
+| to groe | greu | grone | grouing |
 | to overþroe | overþreu | overþreon | overþrouing |
 | to þroe | þreu | þreon | þrouing |
 | to uiþdrahe| uiþdrou| uiþdraon | uiþdrahing |
@@ -87,33 +87,33 @@ Verbs ending in **-oe** (or the similar **-ahe** / **-oihe**) manage historical 
 For certain verbs with front vowels, the past tense opens wide to an **â**, while the participle reverts back to the original vowel.
 | Infinitive | Past | Past Participle |
 | :--- | :--- | :--- |
-| to forbid(de | forbâde | forbidan |
-| to forguive | forgâve | forguivan |
-| to guive | gâve | guivan |
+| to forbid(de | forbâde | forbidon |
+| to forguive | forgâve | forguivon |
+| to guive | gâve | guivon |
 
 ### 3E. The Shortening Collapse (î/ai → i/o)
 These verbs do not lengthen or shift their vowel horizontally; instead, the long vowel of the infinitive simply collapses into a short, hard vowel for both the past and participle forms.
 | Infinitive | Past | Past Participle |
 | :--- | :--- | :--- |
-| to bîte | bit | bitan |
-| to forgait | forgot | forgottan |
-| to gait | got | gottan |
-| to hîde | hid | hidan |
+| to bîte | bit | biton |
+| to forgait | forgot | forgotten |
+| to gait | got | gotten |
+| to hîde | hid | hidon |
 
 ### 3F. Distinct Irregulars & Hybrids
 A number of strong verbs feature unique ablaut patterns that defy broader categorization, or they exhibit "hybrid" behavior (mixing weak past-tense dental suffixes with strong **-en** participles).
 
 | Infinitive, Gerund | Past | Past Participle | Notes |
 | :--- | :--- | :--- | :--- |
-| to biete, bieting | biet | bietan | Identical past tense |
+| to biete, bieting | biet | bieten | Identical past tense |
 | to dîve, dîving | doave | dîved | Strong past, weak participle |
 | to eite, eiting | éit | eiten | |
 | to falle, falling | fell | fallen | |
-| to laihe, laihing | lay | laine | |
-| to seoe, seouing | seod | seone | Weak past, strong participle |
+| to láie, láying | lay | laîn | |
+| to seoe, seouing | seoed | seon | Weak past, strong participle |
 | to sihe, sihing | sah | sine | |
-| to soe, souing | soed | sone | Weak past, strong participle |
-| to sóue, sóuing  | sóud | sóun | Weak past, strong participle |
+| to soe, souing | soed | són | Weak past, strong participle |
+| to soaue, soauing  | soaued | soan | Weak past, strong participle |
 
 ### 3G. Anomalous, Suppletive, and Modal Verbs
 These fundamental verbs are among the oldest in the language. They appear entirely patternless because they are the survivors of massive historical collisions. Their irregularities generally stem from two phenomena:
