@@ -545,9 +545,24 @@ etym-affix() {
 #   etym-select ough --me --length 6     # two criteria at once
 #   etym-select --length 4-6             # length alone, as before
 #   etym-select cion --inglisce --bare   # pipeable list of matches
+#   etym-select -p irv                   # every irregular-verb stanza
+#   etym-select -p 'irv,tr irv,intr irv' # all three irregular tags at once
+#   etym-select ough --me -p 'intr v'    # pattern and tag together
 #
 # --me / --inglisce picks the side that is searched, measured and sorted;
 # both columns print either way.
+#
+# -p/--pos-is SELECTS ON THE POS TAG; --pos only PRINTS the column. Selecting
+# turns the column on by itself, because hiding the field the filter ran on
+# would also re-collapse the multi-stanza headwords the filter just told apart.
+#
+# MATCHING IS PER TAG, NOT SUBSTRING. A stanza's pos is a comma-separated list
+# ("aux, v"), so the test is membership: `-p v` finds it, and does NOT find
+# every adverb the way a contains() test would. Repeat the flag or pass a
+# comma-separated list to accept several tags. Every tag is checked against
+# config/parts-of-speech.tsv and an unregistered one is an error rather than an
+# empty table, because a silent zero reads as "the dictionary has none of
+# those" when it means "no such tag".
 #
 # MATCHING IS LITERAL, NOT REGEX, for the same reason etym-find uses grep -F:
 # punctuation in a query can never turn into a pattern. Case is folded for
@@ -568,8 +583,8 @@ etym-affix() {
 # to strip marks from both the query and the form before comparing, which
 # makes `ac` match `âc` — and makes `c̃` match every c, so use it knowingly.
 #
-# SELECTION IS THE DURABLE PART OF THIS FUNCTION. Further criteria (POS,
-# language origin) belong here as siblings to --length, and anything that
+# SELECTION IS THE DURABLE PART OF THIS FUNCTION. POS is now here as a sibling
+# to --length; language origin belongs here too when it lands, and anything that
 # ACTS on a selection — bulk respelling above all — belongs downstream of
 # the projection, never woven into it.
 #
@@ -579,7 +594,8 @@ etym-affix() {
 etym-select() {
     local pattern="" pmode="any" fold=0 spec=""
     local target_input="" side="me" mode="table" show_pos=0
-    local usage="Usage: etym-select [pattern] [--starts|--ends|--exact] [--fold] [--length <n|n-m|n+>] [-d <path>] [--me|--inglisce] [--pos] [--bare|--count|--json]"
+    local pos_queries=()
+    local usage="Usage: etym-select [pattern] [--starts|--ends|--exact] [--fold] [--length <n|n-m|n+>] [-p <pos>] [-d <path>] [--me|--inglisce] [--pos] [--bare|--count|--json]"
 
     while [[ "$#" -gt 0 ]]; do
         case $1 in
@@ -591,6 +607,7 @@ etym-select() {
             --fold)                       fold=1; shift ;;
             -n|--length|--len)            spec="$2"; shift 2 ;;
             -d|--dir|--path)              target_input="$2"; shift 2 ;;
+            -p|--pos-is)                  pos_queries+=("$2"); shift 2 ;;
             --pos)                        show_pos=1; shift ;;
             --bare)                       mode="bare";  shift ;;
             -c|--count)                   mode="count"; shift ;;
@@ -601,10 +618,46 @@ etym-select() {
         esac
     done
 
-    if [[ -z "$pattern" && -z "$spec" ]]; then
+    if [[ -z "$pattern" && -z "$spec" && ${#pos_queries[@]} -eq 0 ]]; then
         echo "$usage" >&2
-        echo "Give a pattern, a --length, or both." >&2
+        echo "Give a pattern, a --length, a -p/--pos-is, or any combination." >&2
         return 1
+    fi
+
+    # ── POS spec: registered tags, repeatable and/or comma-separated ─────────
+    # Membership is settled by config/parts-of-speech.tsv through
+    # pos_is_registered, the same authority etym-lint uses. Nothing here parses
+    # the register itself.
+    local pos_tags=() pos_json="[]"
+    if (( ${#pos_queries[@]} > 0 )); then
+        local q tag unknown=""
+        for q in "${pos_queries[@]}"; do
+            local parts=()
+            IFS=',' read -ra parts <<< "$q"
+            for tag in "${parts[@]}"; do
+                tag="$(echo "$tag" | xargs)"
+                tag="${tag,,}"
+                [[ -z "$tag" ]] && continue
+                if pos_is_registered "$tag"; then
+                    pos_tags+=("$tag")
+                else
+                    unknown+="'$tag' "
+                fi
+            done
+        done
+        if [[ -n "$unknown" ]]; then
+            echo "Error: unregistered POS tag(s): ${unknown% }" >&2
+            echo "       See config/parts-of-speech.tsv for the register." >&2
+            return 1
+        fi
+        if (( ${#pos_tags[@]} == 0 )); then
+            echo "Error: -p/--pos-is was given no tag." >&2
+            return 1
+        fi
+        # Tags are lowercase words and spaces, so they need no JSON escaping.
+        pos_json=$(printf '%s\n' "${pos_tags[@]}" | awk 'NF { printf "%s\"%s\"", (n++ ? "," : ""), $0 }')
+        pos_json="[$pos_json]"
+        show_pos=1
     fi
 
     # ── Length spec: "6" | "4-6" | "12+", or unbounded when absent ───────────
@@ -654,6 +707,11 @@ etym-select() {
     if [[ -n "$spec" ]]; then
         if [[ -n "$crit" ]]; then crit="$crit, $spec letters"; else crit="$spec letters"; fi
     fi
+    if (( ${#pos_tags[@]} > 0 )); then
+        local pos_crit
+        pos_crit="tagged $(printf '%s\n' "${pos_tags[@]}" | paste -sd'/' -)"
+        if [[ -n "$crit" ]]; then crit="$crit, $pos_crit"; else crit="$pos_crit"; fi
+    fi
 
     # letters: ASCII A–Z/a–z plus anything above ASCII that is not a combining
     #          diacritic — keeps þ ç ţ ḑ and precomposed vowels, drops the
@@ -693,6 +751,16 @@ etym-select() {
             elif $pmode == "ends"   then endswith($pat)
             elif $pmode == "exact"  then . == $pat
             else contains($pat) end;
+        # A stanza pos is a list ("aux, v"), so the POS test is membership
+        # tag by tag. Substring matching would answer a search for "v" with
+        # every adverb; the array difference below is an intersection.
+        def postags:
+            (. // "") | ascii_downcase | split(",")
+            | map(sub("^ +"; "") | sub(" +$"; ""));
+        def pos_hit($want):
+            if ($want | length) == 0 then true
+            else (postags as $t | (($want - ($want - $t)) | length) > 0)
+            end;
     '
 
     # ── JSON mode ────────────────────────────────────────────────────────────
@@ -704,6 +772,7 @@ etym-select() {
             --argjson fold  "$fold" \
             --argjson min   "$min" \
             --argjson max   "$max" \
+            --argjson ptags "$pos_json" \
             "$jq_defs"'
             map(
                 (.me_word       // "") as $mw
@@ -717,6 +786,7 @@ etym-select() {
                  | ascii_downcase) as $needle
               | select($len >= $min and $len <= $max)
               | select($hay | hit($needle; $pmode))
+              | select(.pos | pos_hit($ptags))
               | { me_word, inglisce_word, pos: (.pos // ""),
                   me_length:  ($mw | letters | length),
                   ing_length: ($iw | letters | length) }
@@ -746,6 +816,7 @@ etym-select() {
             --argjson fold  "$fold" \
             --argjson min   "$min" \
             --argjson max   "$max" \
+            --argjson ptags "$pos_json" \
             "$jq_defs"'
             (.me_word       // "") as $mw
           | (.inglisce_word // "") as $iw
@@ -759,6 +830,7 @@ etym-select() {
              | ascii_downcase) as $needle
           | select($len >= $min and $len <= $max)
           | select($hay | hit($needle; $pmode))
+          | select(.pos | pos_hit($ptags))
           | [ ($len | tostring),
               ($key | implode | ascii_downcase),
               $mw,
