@@ -32,13 +32,19 @@ The library is built around a single canonical parser (`etym-parse`, implemented
 
 Because this project utilizes a polyglot architecture (Bash, Node, and Python), you must set up environments for both the frontend API build and the heavy NLP translation engine.
 
-### 1. The Python NLP Environment (spaCy)
+**Steps 1 and 2 are per machine. Steps 3 and 4 are per shell.** Installing is
+what you do once; activating is what every new terminal, tab or SSH session
+needs again. On Codespaces the installed side lives under `/workspaces`, which
+survives stopping, restarting and rebuilding the container — only deleting the
+codespace takes it with you. Nothing in steps 1 and 2 needs repeating at login.
+
+### 1. The Python NLP Environment (spaCy) — *per machine*
 The translation engine relies on a Python deep-learning Dependency Parser.
 ```bash
 # Navigate to project root
 cd /path/to/project
 
-# Create and activate a virtual environment
+# Create the virtual environment
 python3 -m venv venv
 source venv/bin/activate  # (On Windows: venv\Scripts\activate)
 
@@ -46,21 +52,31 @@ source venv/bin/activate  # (On Windows: venv\Scripts\activate)
 pip install spacy
 python -m spacy download en_core_web_trf
 ```
+`en_core_web_trf` is a transformer and the download is large, so this is the
+step worth not repeating. The `source` line above is here only because `pip`
+needs the environment active to install into it — as an activation it is step 3's
+job, not this one's.
 
-### 2. The Node.js Environment
+### 2. The Node.js Environment — *per machine*
 Required for dictionary compilation and applying Inglisce suffixes.
 ```bash
 npm install
 ```
 
-### 3. The Bash Toolbelt
-Source the library from within the `toolkit/` directory to activate all CLI tools in your session:
+### 3. The Shell Session — *per shell*
+Nothing is installed here; these lines put an already-built environment in front
+of the current terminal, and every new terminal starts without them:
 ```bash
-source toolkit/etym-lib.sh
+source venv/bin/activate        # the Python env from step 1
+source toolkit/etym-lib.sh      # the CLI toolbelt
 ```
-Sourcing never prompts or installs anything. If a dependency is missing (`jq` is required for most functions; any POSIX awk suffices for the parser), a warning lists what's absent — run **`etym-install-deps`** to install interactively, or install manually. Set `ETYM_QUIET=1` to suppress the sourcing banner (useful in scripts and CI).
+Sourcing the toolbelt never prompts or installs anything. If a dependency is missing (`jq` is required for most functions; any POSIX awk suffices for the parser), a warning lists what's absent — run **`etym-install-deps`** to install interactively, or install manually. Set `ETYM_QUIET=1` to suppress the sourcing banner (useful in scripts and CI).
 
-### 4. Configuration
+Phase 3 of the translation pipeline is the only thing that needs the Python
+environment; the dictionary CLI and the Node build steps do not, so a shell that
+only runs `etym-*` commands can skip the first line.
+
+### 4. Configuration — *per shell*
 `toolkit/config/env.sh` derives most paths from its own location, but **`DICT_DIR` defaults to an absolute Codespaces path** (`/workspaces/ety-dictionary/data-text/inglisce/dictionary`). Working anywhere else, export it before sourcing the library, or every lookup will silently find nothing:
 ```bash
 export DICT_DIR="$PWD/data-text/inglisce/dictionary"
