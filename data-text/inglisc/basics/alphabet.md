@@ -15,8 +15,8 @@
 
 - think: tíonc
 - drink: drync
-sink: sync
-sync: suync
-drench: drainc
-thatch: teæc
-annual: ænual
+- sink: sync
+- sync: suync
+- drench: drainc
+- thatch: teæc
+- annual: ænual
