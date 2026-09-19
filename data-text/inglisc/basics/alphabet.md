@@ -2,7 +2,7 @@
 |---|---|---|---|---|
 | /æ/ (Irish /a/) | a | ea | ai | eai |
 | /ɑ/ (Irish /aː/) | á | eá (*Seán*) | ái | eái |
-| /eɪ/ (Irish /eː/) | x | éa | aei | é, éi |
+| /eɪ/ (Irish /eː/) | oea, oej | éia | aei | éi |
 | /ɛ/ | ae | éa | oi | e, ei |
 | /i/ | ao, y, ý | ío | aoi, aí, uí | í |
 | /ɪ/ | y | io | ui | i |
