@@ -19,4 +19,4 @@
 - sync: suync
 - drench: drainc
 - thatch: teæc
-- annual: ænual
+- annual: ænjual, maybe æneual
