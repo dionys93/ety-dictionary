@@ -13,8 +13,8 @@
 | /aʊ/ (Irish /əu/) | abh, amh (*Samhain*) | eabh, eamh | | |
 | /ʌ/, /ɔɪ/, /ɔ/ | **no Irish equivalent** | | | |
 
-think: tíonc
-drink: drync
+- think: tíonc
+- drink: drync
 sink: sync
 sync: suync
 drench: drainc
