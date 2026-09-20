@@ -1,3 +1,134 @@
+### Graphemes
+
+| Grapheme | Old English | Irish | Old Norse | Overlap |
+|---|---|---|---|---|
+| a | /ɑ/ | /a/ (str.), /ə/ (unstr.) | /a/ | all three: low vowel |
+| á | — (OE uses ā) | /aː/ | /aː/ | Irish = ON exactly |
+| ā | /ɑː/ | — | — | same value as Irish/ON ⟨á⟩ |
+| æ | /æ/ | — | /ɛː/ | OE + ON share the letter, not the value |
+| ǣ / æ (long) | /æː/ | — | /ɛː/ | near-match; OE lower |
+| b | /b/ | /bˠ/ ~ /bʲ/ | /b/ | all three |
+| bh | — | /w/ ~ /vʲ/ | — | Irish only |
+| c | /k/ | /k/ ~ /c/ | /k/ | all three; OE + Irish both have a palatal partner |
+| ċ | /tʃ/ | — | — | OE only |
+| ch | — | /x/ ~ /ç/ | — | Irish only, but = OE ⟨h⟩ medially |
+| cg | [ɡɡ], [ɡ] | — | — | OE only |
+| ċġ | [ddʒ], [dʒ] | — | — | OE only |
+| d | /d/ | /d̪ˠ/ ~ /dʲ/ | /d/ | all three |
+| ð | /θ/ incl. [ð] | — | /ð/ | OE + ON; ON restricts it to voiced |
+| dh | — | /ɣ/, /j/, /∅/ | — | Irish only, but = OE ⟨g⟩ / ⟨ġ⟩ set |
+| e | /e/ | /ɛ/ | /e/ | all three: mid front |
+| é | — (OE uses ē) | /eː/ | /eː/ | Irish = ON exactly |
+| ē | /eː/ | — | — | same value as Irish/ON ⟨é⟩ |
+| ea | /æɑ̯/ | /a/ (⟨e⟩ marks slenderness) | — | same digraph, unrelated function |
+| ei | — | /ɛ/ | /ei/ | conflicting |
+| eo | /eo̯/ | /oː/ | — | same digraph, different value |
+| ey | — | — | /ey/ | ON only |
+| f | /f/ incl. [v] | /fˠ/ ~ /fʲ/ | /f/ init., /v/ medial | OE + ON share the voicing alternation |
+| fh | — | /∅/ | — | Irish only |
+| g | /ɣ/ incl. [ɡ] | /ɡ/ ~ /ɟ/ | /ɡ/ init., /ɣ/ medial, /x/ before ⟨s, t⟩ | OE + ON both use ⟨g⟩ for /ɣ/ |
+| ġ | /j/ | — | — | = Irish slender ⟨gh⟩ |
+| gh | — | /ɣ/, /j/, /∅/ | — | Irish only; maps onto OE ⟨g⟩/⟨ġ⟩ |
+| h | /x/ incl. [h, ç] | /h/ | /h/ | all three; OE range widest |
+| i | /i/ | /ɪ/ | /i/ | all three |
+| í | — (OE uses ī) | /iː/ | /iː/ | Irish = ON exactly |
+| ī | /iː/ | — | — | same value as Irish/ON ⟨í⟩ |
+| j | — | /dʒ/ (loan) | /j/ | conflicting |
+| k | /k/ (rare) | /k/ (loan) | /k/, /x/ before ⟨s, t⟩ | all three |
+| l | /l/ | /l̪ˠ/ ~ /l̠ʲ/ | /l/, /l̥/ | all three |
+| ll | geminate /lː/ | /l̪ˠ/ ~ /l̠ʲ/ | — | OE geminate vs Irish "fortis" |
+| m | /m/ | /mˠ/ ~ /mʲ/ | /m/ | all three |
+| mh | — | /w/ ~ /vʲ/ | — | Irish only |
+| n | /n/ incl. [ŋ] | /n̪ˠ/ ~ /n̠ʲ/ | /n/ | all three |
+| ng | [ŋ] (as ⟨n⟩ + velar) | /ŋ/ ~ /ɲ/ | — | OE + Irish |
+| nn | geminate /nː/ | /n̪ˠ/ ~ /n̠ʲ/ | — | OE + Irish |
+| o | /o/ | /ɔ/ | /o/ | all three |
+| ó | — (OE uses ō) | /oː/ | /oː/ | Irish = ON exactly |
+| ō | /oː/ | — | — | same value as Irish/ON ⟨ó⟩ |
+| oe | /ø/ | — | — | = ON ⟨ø⟩ |
+| ø | — | — | /ø/ | = OE ⟨oe⟩ |
+| œ | /øː/ (as ⟨œ̄⟩) | — | /øː/ | OE + ON, near-identical |
+| p | /p/ | /pˠ/ ~ /pʲ/ | /p/, /f/ before ⟨s, t⟩ | all three |
+| ph | — | /fˠ/ ~ /fʲ/ | — | Irish only |
+| qu | /kw/ (rare) | /k/ (loan) | /k/ (in ⟨qu⟩) | all three, value differs |
+| r | /r/ | /ɾˠ/ ~ /ɾʲ/ | /r/ (trilled) | all three |
+| rr | geminate | /ɾˠ/ | — | OE + Irish |
+| s | /s/ incl. [z] | /sˠ/ ~ /ʃ/ | /s/ | all three; only ON lacks an alternant |
+| sc | /sk/ (rare) | — | — | OE only |
+| sċ | /ʃː/, /ʃ/ | — | — | = Irish slender ⟨s⟩ |
+| sh | — | /h/ | — | conflicts with OE ⟨sċ⟩ |
+| t | /t/ | /t̪ˠ/ ~ /tʲ/ | /t/ | all three |
+| th | /θ/ (earliest texts) | /h/, /∅/ | — | same digraph, unrelated values |
+| þ | /θ/ incl. [ð] | — | /θ/ | OE + ON; ON restricts it to voiceless |
+| u | /u/ | /ʊ/ | /u/ | all three |
+| ú | — (OE uses ū) | /uː/ | /uː/ | Irish = ON exactly |
+| ū | /uː/ | — | — | same value as Irish/ON ⟨ú⟩ |
+| v | — | /w/ ~ /vʲ/ (loan) | /v/ | Irish + ON |
+| w / ƿ | /w/ | — | /w/ | OE + ON |
+| x | /ks/ | /ks/ (loan) | /xs/ | all three, near-identical |
+| y | /y/ | /j/ (loan) | /y/ | OE + ON identical; Irish conflicts |
+| ȳ / ý | /yː/ | — | /yː/ | same value, different diacritic |
+| z | /ts/ (rare) | /zˠ/ ~ /ʒ/ (loan) | /ts/ | OE + ON identical; Irish conflicts |
+| ǫ | — | — | /ɔ/ | ON only; = Irish ⟨o⟩ |
+| ǫ́ | — | — | /ɔː/ | ON only |
+
+### Phonemes
+
+| Phoneme | Old English | Irish | Old Norse | Shared by |
+|---|---|---|---|---|
+| /p/ | p | p | p | all three |
+| /b/ | b | b, bp, mb | b | all three |
+| /t/ | t | t, dt | t | all three |
+| /d/ | d | d, nd | d | all three |
+| /k/ | c, k | c, k, gc | k, c, q | all three |
+| /ɡ/ | g, cg | g, gc | g | all three |
+| /tʃ/ | ċ | — | — | OE |
+| /dʒ/ | ċġ, ġ (after ⟨n⟩) | j | — | OE, Irish |
+| /f/ | f | f, ph | f | all three |
+| /v/ | f (allophone) | bh, mh, v | f (medial), v | all three |
+| /θ/ | þ, ð, th | — | þ | OE, ON |
+| /ð/ | ð (allophone) | — | ð | OE, ON |
+| /s/ | s | s | s | all three |
+| /z/ | s (allophone) | z (loan) | — | OE, Irish |
+| /ʃ/ | sċ | s (slender) | — | OE, Irish |
+| /x/ | h | ch | g, k (before ⟨s, t⟩), x | all three |
+| /ç/ | h (allophone) | ch (slender) | — | OE, Irish |
+| /ɣ/ | g | dh, gh (broad) | g (medial) | all three |
+| /h/ | h (allophone) | h, sh, th | h | all three |
+| /m/ | m | m, mb | m | all three |
+| /n/ | n | n, nd | n | all three |
+| /ŋ/ | n (allophone) | ng | — | OE, Irish |
+| /l/ | l | l, ll | l | all three |
+| /r/ | r | r, rr | r | all three |
+| /j/ | ġ, i | dh, gh (slender) | j | all three |
+| /w/ | ƿ, uu | bh, mh (broad), v | v, w | all three |
+| /ks/ | x | x | x | all three |
+| /ts/ | z | — | z | OE, ON |
+| /a ~ ɑ/ | a | a, ea | a | all three |
+| /aː ~ ɑː/ | ā | á, ái | á | all three |
+| /æ/ | æ | — | — | OE |
+| /æː ~ ɛː/ | ǣ | — | æ | OE, ON |
+| /e/ | e | — | e | OE, ON |
+| /ɛ/ | — | e, ei | — | Irish |
+| /eː/ | ē | é, éa, éi, ae | é | all three |
+| /i/ | i | — | i | OE, ON |
+| /ɪ/ | — | i, ui | — | Irish |
+| /iː/ | ī | í, ío, aí, aoi | í | all three |
+| /o/ | o | — | o | OE, ON |
+| /ɔ/ | — | o | ǫ | Irish, ON |
+| /oː/ | ō | ó, ói, eo | ó | all three |
+| /ɔː/ | — | — | ǫ́ | ON |
+| /u/ | u | — | u | OE, ON |
+| /ʊ/ | — | u, io, iu | — | Irish |
+| /uː/ | ū | ú, úi | ú | all three |
+| /y/ | y | — | y | OE, ON |
+| /yː/ | ȳ | — | ý | OE, ON |
+| /ø/ | oe | — | ø | OE, ON |
+| /øː/ | ōe, œ̄ | — | œ | OE, ON |
+
+---
+
+
 ## Old English letter combinations
 
 | OE | Variant in modern editions | IPA |
