@@ -178,6 +178,74 @@
 
 ---
 
+## Old Norse
+
+### Consonants
+
+| ON | Context | IPA |
+|---|---|---|
+| b | — | /b/ |
+| c | — | /k/ |
+| d | — | /d/ |
+| ð | — | /ð/ |
+| f | initial | /f/ |
+| f | medial or final | /v/ |
+| g | initial, after ⟨n⟩ | /ɡ/ |
+| g | before ⟨s⟩ or ⟨t⟩ | /x/ |
+| g | elsewhere (voiced) | /ɣ/ |
+| h | — | /h/ |
+| j | — | /j/ |
+| k | — | /k/ |
+| k | immediately before ⟨s⟩ or ⟨t⟩ | /x/ |
+| l | — | /l/ |
+| l | after word-initial ⟨h⟩; word-finally after a voiceless consonant; between voiceless consonants | /l̥/ |
+| m | — | /m/ |
+| n | — | /n/ |
+| p | — | /p/ |
+| p | before ⟨s⟩ or ⟨t⟩ | /f/ |
+| q | only in ⟨qu⟩ | /k/ |
+| r | — | /r/ (trilled) |
+| s | — | /s/ |
+| t | — | /t/ |
+| v | — | /v/ |
+| w | — | /w/ |
+| x | — | /xs/ |
+| z | — | /ts/ |
+| þ | — | /θ/ |
+
+### Vowels
+
+| ON | Length | IPA |
+|---|---|---|
+| a | short | /a/ |
+| á | long | /aː/ |
+| e | short | /e/ |
+| é | long | /eː/ |
+| i | short | /i/ |
+| í | long | /iː/ |
+| o | short | /o/ |
+| ó | long | /oː/ |
+| u | short | /u/ |
+| ú | long | /uː/ |
+| y | short | /y/ |
+| ý | long | /yː/ |
+| æ | long | /ɛː/ |
+| ǫ | short | /ɔ/ |
+| ǫ́ | long | /ɔː/ |
+| ø | short | /ø/ |
+| œ | long | /øː/ |
+
+### Diphthongs
+
+| ON | IPA |
+|---|---|
+| au | /au/ |
+| ei | /ei/ |
+| ey | /ey/ |
+
+
+---
+
 ## Irish
 
 ### Consonants
