@@ -20,6 +20,10 @@
 - drench: drainc
 - thatch: teæc
 - annual: ænjual, maybe æneual
+- night: naight
+- light: laight
+- high: haigh
+- thigh: teigh
 
 - ## Old English vowels and what they became
 
