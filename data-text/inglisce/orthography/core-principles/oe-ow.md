@@ -37,7 +37,6 @@ Stressed by definition. No acute. Sorted by vowel, then by pattern.
 | know | to have knowledge of | v | — | OE *cnāwan* | to gnoe -s gnou gneon gnouing |
 | low (not high) | not high; a low point | adj, n | ON *lágr* | — | loe lóar lóest, loas |
 | lower (not high) | to bring down | v | — | ON *lágr* | to lóare -s -d -ing |
-| mow (haystack) | a stack of hay or grain | n | OE *mūga* | — | moe, moas |
 | roe² | a small deer | n | OE *rā*, *rāha* | — | roe, roas |
 | slow | not fast | adj | OE *slāw* | — | sloe slóar slóest |
 | slow | to reduce speed | v | — | OE *slāwian* | to sloe -s -d slouing |
@@ -62,6 +61,7 @@ The `h` follows the vowel (`-ohe`) or stands before the onset (`hfoe`, `hloe`, `
 | floe | a sheet of floating ice | n | 1817, Arctic explorers; probably Norw *flo* "layer, slab" ← ON *fló* | — | flohe, flohs |
 | foe | an enemy | n | OE *fāh* "hostile," *gefā* "enemy" | — | hfoe, hfoas |
 | low (of cattle) | to moo | v | — | OE *hlōwan* | hloe -s -d hlouing |
+| mow (haystack) | a stack of hay or grain | n | OE *mūga* | — | mohe, mohs |
 | mow (cut) | to cut grass or grain | v | — | OE *māwan*, Deutsch mähen | to mohe -s -d mohing |
 | roe¹ | fish eggs | n | ME *roughe*, probably OE *hrogn* (unattested), or MDU *roge* | — | rhoe |
 | sloe | fruit of the blackthorn | n | OE *slāh*, *slā* | — | slohe, slohs |
