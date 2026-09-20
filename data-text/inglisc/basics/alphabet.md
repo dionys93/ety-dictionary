@@ -1,31 +1,4 @@
-| GA sound (Irish value) | broad…broad | slender…broad | broad…slender | slender…slender |
-|---|---|---|---|---|
-| /æ/ (Irish /a/) | a | ea | æ | eæ |
-| /ɑ/ (Irish /aː/) | á | eá (*Seán*) | ái | eái |
-| /eɪ/ (Irish /eː/) | oea, oej | éia | aei | éi |
-| /ɛ/ | ae | éa | oi | e, ei |
-| /i/ | ao, y, ý, uy | ío | aoi, aí, uí | í |
-| /ɪ/ | y | io | ui | i |
-| /oʊ/ (Irish /oː/) | ó | eo | ói | eoi |
-| /u/ | ú | eú, ju | úi | eúi, júi |
-| /ʊ/ | u | iu | | |
-| /aɪ/ (Irish /əi/) | aigh, adh | eidh, eigh | | |
-| /aʊ/ (Irish /əu/) | abh, amh (*Samhain*) | eabh, eamh | | |
-| /ʌ/, /ɔɪ/, /ɔ/ | **no Irish equivalent** | | | |
-
-- think: tíonc
-- drink: drync
-- sink: sync
-- sync: suync
-- drench: drainc
-- thatch: teæc
-- annual: annjual
-- night: naight
-- light: laight
-- high: haigh
-- thigh: teigh
-
-- ## Old English vowels and what they became
+## Old English vowels and what they became
 
 Old English had seven short vowels, seven long vowels, and several diphthongs. Most modern outcomes come from a handful of later changes: lengthening in open syllables and before clusters like ld and nd (13th century and earlier), shortening before other clusters, the Great Vowel Shift (1400–1700), and the split of short u into /ʌ/ and /ʊ/ (17th century).
 
@@ -91,4 +64,53 @@ Old English had seven short vowels, seven long vowels, and several diphthongs. M
 
 ---
 
+| Consonant | broad sound | slender sound | with j |
+|---|---|---|---|
+| Bb | /b/ | /bʲ/ | /bʲ/ |
+| Cc | /c/ | /tʃ/ | /kʲ/ |
+| Dd | /d/ | /dʒ/ | /dʒ/ |
+| Ff | /f/ | /fʲ/ | /fʲ/ |
+| Gg | /g/ | /j/ | /gʲ/ |
+| Hh | /h/ | /hʲ/ | /hʲ/ |
+| Jj | /j/ | /j/ | /j/ |
+| Kk | /k/ | /k/ | /kʲ/ |
+| Ll | /l/ | /lʲ/ | /lʲ/ |
+| Mm | /m/ | /mʲ/ | /mʲ/ |
+| Nn | /n/ | /nʲ/ | /nʲ/ |
+| Pp | /p/ | /pʲ/ | /pʲ/ |
+| Rr | /r/ | /r/ | - |
+| Ss | /s/ | /ʃ/ | /ʃ/ or /ʒ/ |
+| Tt | /t/ | /tʃ/ | /tʃ/ |
+| Bh | /v/ | /vʲ/ | /vʲ/ |
+| Mh | /w/ | /w/ | - |
+| Ɋɋ | /ks/ | /kʃ/ | /kʃ/ |
 
+---
+
+| Vowel Sound | broad-broad | broad-slender | slender-broad | slender-slender |
+|---|---|---|---|---|
+| /æ/ | a | æ | ea, ia, ja | eæ, iæ |
+| /eɪ/ | /c/ | /tʃ/ | /kʲ/ | |
+| /oʊ/ | oa | oe | eo | eoe |
+| /ɔ/ | ą,ǫ | ąi, ǫi  | eą, eǫ, ią, iǫ  | eąi, eǫi, iąi, iǫi |
+| /eɪ/ | æj | æi | ej, éj | |
+| Hh | /h/ | /hʲ/ | /hʲ/ | |
+| Jj | /j/ | /j/ | /j/ | |
+| Kk | /k/ | /k/ | /kʲ/ | |
+| Ll | /l/ | /lʲ/ | /lʲ/ | |
+| Mm | /m/ | /mʲ/ | /mʲ/ | |
+| Nn | /n/ | /nʲ/ | /nʲ/ | |
+| Pp | /p/ | /pʲ/ | /pʲ/ | |
+| Rr | /r/ | /r/ | - | |
+| Ss | /s/ | /ʃ/ | /ʃ/ or /ʒ/ | |
+| Tt | /t/ | /tʃ/ | /tʃ/ | |
+| Bh | /v/ | /vʲ/ | /vʲ/ | |
+| Mh | /w/ | /w/ | - | |
+| Ɋɋ | /ks/ | /kʃ/ | /kʃ/ | |
+
+| a | closed syllable | /æ/ | *mann* → man, *catt* → cat, *bacc* → back |
+| a | open syllable | /eɪ/ | *nama* → name, *bacan* → bake, *macian* → make |
+| a | before ld | /oʊ/ | *ald* → old, *cald* → cold, *haldan* → hold |
+| a | before ng | /ɔ/ | *lang* → long, *strang* → strong, *sang* → song |
+| æ | closed syllable | /æ/ | *æt* → at, *glæd* → glad, *þæt* → that |
+| æ | open syllable | /eɪ/ | *æcer* → acre, *hwæl* → whale |
