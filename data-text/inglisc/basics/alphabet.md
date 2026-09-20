@@ -98,7 +98,7 @@ Old English had seven short vowels, seven long vowels, and several diphthongs. M
 | OE source | GA | broad-broad | slender-broad | broad-slender | slender-slender | Examples |
 |---|---|---|---|---|---|---|
 | a (closed), æ, ea | /æ/ | a | ea, ia, ja | æ | eæ, iæ | man **man**, chat **ceat**, catch **cæc**,  **-** |
-| a/æ (open) | /eɪ/ | æg? | éia | æi | éi | name **nægm**, bake **bæik**, chase **céas**, day **dæg** |
+| a/æ (open) | /eɪ/ | æg?, aig? | éia | æi | éi | name **nægm**, bake **bæik**, chase **céas**, day **dæg** |
 | o (closed) | /ɑ/ | á | eá | ái | eái | god **god**, top **top**, shop **siop** |
 | a + ng, ea + l, aw/ag | /ɔ/ | o | eo | oi* | eoi | long **láng**, all **áll**, law **lá**, talk **talhc**, caught **cát** |
 | e (closed), eo | /ɛ/ | ae | éa | oi* | e, ei | bed **bed**, get **gaet**, yes **géas**, chest **céast** |
