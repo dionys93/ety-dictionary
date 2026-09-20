@@ -74,7 +74,7 @@ A subset where **r** follows the vowel. The past takes **-ore**, and the partici
 
 | Infinitive | Past | Past Participle |
 | :--- | :--- | :--- |
-| to beire | hbore | born |
+| to beire | bhore | born |
 | to sueire | suore | suorn |
 | to teire | tore | torn |
 | to ueire | uore | uorn |
