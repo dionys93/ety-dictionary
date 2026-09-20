@@ -56,7 +56,7 @@ In the first set, the participle keeps the vowel of the past. The **c** of `bró
 | to uaic | uóc | uócan |
 | to c̃ouse | c̃ose | c̃osen |
 | to friese | frose | frosen |
-| to stiale | stoal | stolen |
+| to stiale | stole | stolen |
 | to uieve | uoave | uoaven |
 
 In the second set, the participle takes **-an** and returns to an **a**-vowel, and the gerund is built on the participle's stem rather than the infinitive's (`to taic` → `tâching`). *Forsake* and *shake* are Old English strong verbs (*forsacan*, *sceacan*); *take* is a late Old English borrowing of Old Norse *taka*, which displaced the native *niman*.
