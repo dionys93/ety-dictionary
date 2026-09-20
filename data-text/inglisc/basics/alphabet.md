@@ -1,111 +1,222 @@
-## Old English vowels and what they became
-
-Old English had seven short vowels, seven long vowels, and several diphthongs. Most modern outcomes come from a handful of later changes: lengthening in open syllables and before clusters like ld and nd (13th century and earlier), shortening before other clusters, the Great Vowel Shift (1400–1700), and the split of short u into /ʌ/ and /ʊ/ (17th century).
-
-| Old English | Condition | GA result | Examples |
-|---|---|---|---|
-| a | closed syllable | /æ/ | *mann* → man, *catt* → cat, *bacc* → back |
-| a | open syllable | /eɪ/ | *nama* → name, *bacan* → bake, *macian* → make |
-| a | before ld | /oʊ/ | *ald* → old, *cald* → cold, *haldan* → hold |
-| a | before ng | /ɔ/ | *lang* → long, *strang* → strong, *sang* → song |
-| æ | closed syllable | /æ/ | *æt* → at, *glæd* → glad, *þæt* → that |
-| æ | open syllable | /eɪ/ | *æcer* → acre, *hwæl* → whale |
-| e | closed syllable | /ɛ/ | *bedd* → bed, *helpan* → help, *tellan* → tell |
-| e | open syllable | /i/ | *etan* → eat, *sprecan* → speak, *mete* → meat |
-| i | usual | /ɪ/ | *fisc* → fish, *sittan* → sit, *him* → him |
-| i | before ld, nd, mb | /aɪ/ | *cild* → child, *findan* → find, *climban* → climb |
-| o | closed syllable | /ɑ/ | *god* → god, *top* → top, *oxa* → ox |
-| o | open syllable | /oʊ/ | *hopa* → hope, *nosu* → nose, *brocen* → broken |
-| u | usual | /ʌ/ | *sunu* → son, *cuman* → come, *dust* → dust |
-| u | next to a labial | /ʊ/ | *full* → full, *putian* → put, *wulf* → wolf |
-| y | usual (western, unrounded to i) | /ɪ/ | *fyllan* → fill, *cyssan* → kiss, *cyning* → king |
-| y | Kentish (unrounded to e) | /ɛ/, /ɛr/ | *myrig* → merry, *byrgan* → bury |
-| ā | usual | /oʊ/ | *stān* → stone, *hām* → home, *bān* → bone, *rād* → road |
-| ā | Northern | /eɪ/ | Scots *stane*; the doublet that gave *raid* |
-| ǣ | usual | /i/ | *dǣl* → deal, *clǣne* → clean, *rǣdan* → read, *hǣlan* → heal |
-| ǣ | shortened | /ɛ/ | *brǣþ* → breath, *slǣpte* → slept |
-| ē | usual | /i/ | *fēt* → feet, *grēne* → green, *cēpan* → keep, *hē* → he |
-| ē | shortened | /ɛ/ | *cēpte* → kept, *mētte* → met |
-| ī | usual | /aɪ/ | *rīdan* → ride, *tīma* → time, *wīf* → wife, *mīn* → mine |
-| ī | shortened | /ɪ/ | *wīsdōm* → wisdom, *fīftiġ* → fifty |
-| ō | usual | /u/ | *gōs* → goose, *mōna* → moon, *dōn* → do, *tōþ* → tooth |
-| ō | shortened | /ʊ/ | *gōd* → good, *fōt* → foot, *bōc* → book |
-| ō | shortened early | /ʌ/ | *blōd* → blood, *flōd* → flood |
-| ū | usual | /aʊ/ | *hūs* → house, *mūs* → mouse, *nū* → now, *ūt* → out |
-| ū | before a labial | /u/ | *rūm* → room |
-| ū | shortened | /ʌ/ | *ūs* → us, *dūst* → dust |
-| ȳ | usual | /aɪ/ | *fȳr* → fire, *mȳs* → mice, *brȳd* → bride, *hȳdan* → hide |
-| ȳ | shortened | /ɪ/ | *cȳþþu* → kith |
-| ea | usual | /æ/ | *weaxan* → wax, *healf* → half |
-| ea | before r + consonant | /ɑr/ | *earm* → arm, *heard* → hard |
-| ea | before l + consonant | /ɔ/ | *eall* → all, *wealcan* → walk |
-| eo | usual | /ɛ/ | *heofon* → heaven, *seofon* → seven |
-| eo | before r | /ɝ/ | *eorþe* → earth, *weorc* → work |
-| eo | before r (irregular) | /ɑr/ | *heorte* → heart |
-| ēa | usual | /i/ | *ēast* → east, *lēaf* → leaf, *bēam* → beam, *strēam* → stream |
-| ēa | shortened | /ɛ/ | *brēad* → bread, *dēad* → dead, *hēafod* → head, *rēad* → red |
-| ēa | irregular | /eɪ/ | *grēat* → great |
-| ēa | before r | /ɪr/ | *ēare* → ear |
-| ēo | usual | /i/ | *dēop* → deep, *þēof* → thief, *trēow* → tree, *hrēod* → reed |
-| ēo | irregular | /u/ | *ċēosan* → choose |
-| ēo | before r | /ɪr/ | *dēore* → dear, *bēor* → beer |
-| īe, ȳ (West Saxon) | | /i/ | *ġieldan* → yield, *hīeran* → hear, *līehtan* → light |
-| æġ, eġ | | /eɪ/ | *dæġ* → day, *weġ* → way, *reġn* → rain, *næġl* → nail, *seġl* → sail |
-| ēaġ, ēah | | /aɪ/ | *ēage* → eye, *hēah* → high, *nēah* → nigh |
-| ȳġ, īġ | | /aɪ/ | *drȳġe* → dry, *tīgel* → tile, *stīġan* → sty |
-| iht, eoht | | /aɪ/ | *niht* → night, *riht* → right, *lēoht* → light, *feohtan* → fight |
-| āw, āg | | /oʊ/ | *snāw* → snow, *cnāwan* → know, *āgan* → owe, *lāgu* → low |
-| ow, og | | /oʊ/ | *boga* → bow, *grōwan* → grow, *blāwan* → blow |
-| aw, ag | | /ɔ/ | *clawu* → claw, *lagu* → law, *dragan* → draw, *sagu* → saw |
-| ug, ūg | | /aʊ/ | *fugol* → fowl, *būgan* → bow (verb), *drugoþ* → drought |
-| ēow, īw, ēaw | | /u/ | *trēowe* → true, *nīwe* → new, *ēow* → you, *cnēow* → knee |
-| āw + consonant, ōw | | /aʊ/, /oʊ/ | *sāwol* → soul, *ōwer* → our |
-| unstressed a, e, o, u | | /ə/ or lost | *nama* → name, *stānas* → stones, *hūsum* → houses |
+| OE | Variant in modern editions | IPA |
+|---|---|---|
+| a | a | /ɑ/ |
+| ā | a | /ɑː/ |
+| æ | æ | /æ/ |
+| ǣ | æ | /æː/ |
+| ę | æ | /æ/, /æː/ |
+| b | — | /b/; also [v] (allophone of /f/) in early texts |
+| c | c | /k/ |
+| ċ | c | /tʃ/ |
+| cg | cg | [ɡɡ] (between vowels; rare), [ɡ] (after /n/) |
+| ċġ | cg | [ddʒ] (between vowels), [dʒ] (after /n/) |
+| d | — | /d/ |
+| ð | ð, þ | /θ/, including allophone [ð] |
+| e | e | /e/ |
+| ē | e | /eː/ |
+| ea | ea | /æɑ̯/ |
+| ēa | ea | /æːɑ̯/ |
+| eo | eo | /eo̯/ |
+| ēo | eo | /eːo̯/ |
+| f | — | /f/, including allophone [v] |
+| g | g | /ɣ/, including allophone [ɡ] |
+| ġ | g | /j/, including allophone [dʒ] |
+| h | — | /x/, including allophones [h, ç] |
+| i | i | /i/, rarely [j] |
+| ī | i | /iː/ |
+| ie | ie | /iy̯/ |
+| īe | ie | /iːy̯/ |
+| io | io | /io̯/ |
+| īo | io | /iːo̯/ |
+| k | — | /k/ |
+| l | — | /l/ |
+| m | — | /m/ |
+| n | — | /n/, including allophone [ŋ] |
+| o | o | /o/ |
+| ō | o | /oː/ |
+| oe | oe, œ | /ø/ |
+| ōe | œ̄ | /øː/ |
+| p | — | /p/ |
+| qu | — | /kw/ |
+| r | — | /r/ |
+| s | — | /s/, including allophone [z] |
+| sc | sc | /sk/ (rare) |
+| sċ | sc | /ʃː/ (between vowels), /ʃ/ (elsewhere) |
+| t | — | /t/ |
+| th | — | /θ/ |
+| þ | — | /θ/, including allophone [ð] |
+| u | u | /u/, sometimes /w/ |
+| ū | u | /uː/ |
+| uu, ƿ | w | /w/ |
+| x | — | /ks/ |
+| y | y | /y/ |
+| ȳ | y | /yː/ |
+| z | — | /ts/ |
 
 ---
 
-| Consonant | broad sound | slender sound | with j |
-|---|---|---|---|
-| Bb | /b/ | /bʲ/ | /bʲ/ |
-| Cc | /c/ | /tʃ/ | /kʲ/ |
-| Dd | /d/ | /dʒ/ | /dʒ/ |
-| Ff | /f/ | /fʲ/ | /fʲ/ |
-| Gg | /g/ | /j/ | /gʲ/ |
-| Hh | /h/ | /hʲ/ | /hʲ/ |
-| Jj | /j/ | /j/ | /j/ |
-| Kk | /k/ | /k/ | /kʲ/ |
-| Ll | /l/ | /lʲ/ | /lʲ/ |
-| Mm | /m/ | /mʲ/ | /mʲ/ |
-| Nn | /n/ | /n/ | /nʲ/ |
-| Pp | /p/ | /p/ | /pʲ/ |
-| Rr | /r/ | /r/ | - |
-| Ss | /s/ | /ʃ/ | /ʃ/ or /ʒ/ |
-| Tt | /t/ | /tʃ/ | /tʃ/ |
-| Bh | /v/ | /v/ | /vʲ/ |
-| Ṁṁ | /w/ | /w/ | - |
-| Ɋɋ | /ks/ | /kʃ/ | /kʃ/ |
+## Irish
 
----
+### Consonants
 
+| Letter(s) | Environment | Phoneme(s) |
+|---|---|---|
+| b | broad | /bˠ/ |
+| b | slender | /bʲ/ |
+| bh | broad | /w/ |
+| bh | slender | /vʲ/ |
+| bhf (eclipsis of ⟨f⟩) | broad | /w/ |
+| bhf (eclipsis of ⟨f⟩) | slender | /vʲ/ |
+| bp (eclipsis of ⟨p⟩) | broad | /bˠ/ |
+| bp (eclipsis of ⟨p⟩) | slender | /bʲ/ |
+| c | broad | /k/ |
+| c | slender | /c/ |
+| ch | broad | /x/ |
+| ch | slender, before ⟨t⟩ | /x/ |
+| ch | slender, usually | /ç/ |
+| d | broad | /d̪ˠ/ |
+| d | slender | /dʲ/ |
+| dh | broad, initially | /ɣ/ |
+| dh | broad, elsewhere | /∅/ |
+| dh | slender, usually | /j/ |
+| dh | slender, finally | U /j/; C /∅/; M /ɟ/ |
+| dt | broad, eclipsis of ⟨t⟩ | /d̪ˠ/ |
+| dt | broad, elsewhere | /t̪ˠ/ |
+| dt | slender, eclipsis of ⟨t⟩ | /dʲ/ |
+| dt | slender, elsewhere | /tʲ/ |
+| f | broad | /fˠ/ |
+| f | slender | /fʲ/ |
+| fh | — | /∅/ |
+| g | broad | /ɡ/ |
+| g | slender | /ɟ/ |
+| gc (eclipsis of ⟨c⟩) | broad | /ɡ/ |
+| gc (eclipsis of ⟨c⟩) | slender | /ɟ/ |
+| gh | broad, initially | /ɣ/ |
+| gh | broad, elsewhere | /∅/ |
+| gh | slender, usually | /j/ |
+| gh | slender, finally | U /j/; C /∅/; M /ɟ/ |
+| h | — | /h/ |
+| j (loan consonant) | — | /dʒ/ |
+| l | broad, initially, usually | /l̪ˠ/ |
+| l | broad, initially, lenited | /lˠ/ |
+| l | broad, elsewhere | /lˠ/ or /l̪ˠ/ |
+| l | slender, initially, usually | /l̠ʲ/ |
+| l | slender, initially, lenited | /lʲ/ |
+| l | slender, elsewhere | /lʲ/ or /l̠ʲ/ |
+| ll | broad | /l̪ˠ/ |
+| ll | slender | /l̠ʲ/ |
+| m | broad | /mˠ/ |
+| m | slender | /mʲ/ |
+| mb (eclipsis of ⟨b⟩) | broad | /mˠ/ |
+| mb (eclipsis of ⟨b⟩) | slender | /mʲ/ |
+| mh | broad | /w/ |
+| mh | slender | /vʲ/ |
+| n | broad, initially, usually | /n̪ˠ/ |
+| n | broad, initially, lenited | /nˠ/ |
+| n | broad, after non-⟨s(h)⟩ initial consonant | U·C /ɾˠ/; M /nˠ/ |
+| n | broad, usually | /nˠ/ or /n̪ˠ/ |
+| n | slender, initially, usually | /n̠ʲ/ |
+| n | slender, initially, lenited | /nʲ/ |
+| n | slender, after non-⟨s(h)⟩ initial consonant | U·C /ɾʲ/; M /nʲ/ |
+| n | slender, usually | /nʲ/ or /n̠ʲ/ |
+| nc | broad | /ŋk/ |
+| nc | slender | /ɲc/ |
+| nd (eclipsis of ⟨d⟩) | broad | /n̪ˠ/ |
+| nd (eclipsis of ⟨d⟩) | slender | /n̠ʲ/ |
+| ng | broad, eclipsis of ⟨g⟩ | /ŋ/ |
+| ng | broad, elsewhere | /ŋ(ɡ)/ |
+| ng | slender, eclipsis of ⟨g⟩ | /ɲ/ |
+| ng | slender, elsewhere | /ɲ(ɟ)/ |
+| nn | broad | /n̪ˠ/ |
+| nn | slender | /n̠ʲ/ |
+| p | broad | /pˠ/ |
+| p | slender | /pʲ/ |
+| ph | broad | /fˠ/ |
+| ph | slender | /fʲ/ |
+| r | broad | /ɾˠ/ |
+| r | slender, initially | /ɾˠ/ |
+| r | slender, before /d/, /h/, /l/, /n/, /ɾ/, /s/, /ʃ/, /t/ | /ɾˠ/ |
+| r | slender, after ⟨s⟩ | /ɾˠ/ |
+| r | slender, usually | /ɾʲ/ |
+| rr | — | /ɾˠ/ |
+| s | broad | /sˠ/ |
+| s | slender, initially before /f/, /m/, /p/, /ɾ/ | /sˠ/ |
+| s | slender, usually | /ʃ/ |
+| sh | — | /h/ |
+| t | broad | /t̪ˠ/ |
+| t | slender | /tʲ/ |
+| th | usually | /h/ |
+| th | finally after a long vowel or diphthong | /∅/ |
+| ts (mutation of ⟨s⟩- after *an* "the") | broad | /t̪ˠ/ |
+| ts (mutation of ⟨s⟩- after *an* "the") | slender | /tʲ/ |
+| v (loan consonant) | broad | /w/ |
+| v (loan consonant) | slender | /vʲ/ |
+| x (loan consonant) | — | /ks/ |
+| z (loan consonant) | broad | /zˠ/ |
+| z (loan consonant) | slender | /ʒ/ |
 
+### Vowels
 
-| OE source | GA | broad-broad | slender-broad | broad-slender | slender-slender | Examples |
-|---|---|---|---|---|---|---|
-| a (closed), æ, ea | /æ/ | a | ea, ia, ja | æ | eæ, iæ | man **man**, chat **ceat**, catch **cæc**,  **-** |
-| a/æ (open) | /eɪ/ | æg?, aig? | éia | æi | éi | name **nægm**, bake **bæik**, chase **céas**, day **dæg** |
-| o (closed) | /ɑ/ | á | eá | ái | eái | god **god**, top **top**, shop **siop** |
-| a + ng, ea + l, aw/ag | /ɔ/ | o | eo | oi* | eoi | long **láng**, all **áll**, law **lá**, talk **talhc**, caught **cát** |
-| e (closed), eo | /ɛ/ | ae | éa | oi* | e, ei | bed **bed**, get **gaet**, yes **géas**, chest **céast** |
-| e (open), ē, ǣ, ēa, ēo | /i/ | ý, ao, ía | ío, ie | aí, aoi | í, ie | feet **fít**, reed **hríod**, read **raíd**, leaf **lieff** |
-| i, y | /ɪ/ | y | io | ui | i | fish **fisc**, kin **cyn**, kiss **cyss** |
-| o (open), ā, āw/āg, a+ld | /oʊ/ | ó | eó* | ói | eói | stone **stón**, snow **snó**, choke **ceóc**, old **óld** |
-| u (labial), shortened ō | /ʊ/ | u | iu | — | — | full **full**, put **put**, good **gud**, book **buc** |
-| u, shortened ō/ū | /ʌ/ | **gap** | **gap** | **gap** | **gap** | son, come, cut, much, love, blood |
-| ō, ēow, īw | /u/ | ú | eú | úi | eúi | goose **gús**, choose **ceús**, you **geú**, new **neú** |
-| ī, ȳ, i+ld/nd | /aɪ/ | adh | eidh | aigh | eigh | ride **radhd**, time **tadhm**, child **ceidhld**, night **naight** |
-| ū, ug | /aʊ/ | abh, amh | eabh, eamh | — | — | house **habhs**, now **nabh**, fowl **fabhl** |
-| (French) | /ɔɪ/ | **gap** | **gap** | — | — | boy, coin, joy |
-| ea + r | /ɑr/ | ár | eár | áir | eáir | arm **árm**, hard **hárd**, heart **heárt** |
-| eo + r | /ɝ/ | ur | eur | ir | ir | earth **urth**, work **wurc**, church **cirċ** |
-| ēa/ēo + r | /ɪr/ | íor | íor | ír | ír | ear **íor**, dear **díor**, beer **bíor** |
-| unstressed | /ə/ | y | y | i | i | reedy **hríody** |
+| Letter(s) | Environment | Phoneme(s) |
+|---|---|---|
+| a, ea | stressed, usually | /a/ |
+| a, ea | stressed, before ⟨rd, rl, rn, rr⟩ | /aː/ |
+| a, ea | stressed, before syllable-final ⟨ll, nn⟩ and -⟨m⟩ | U /a/; C /aː/; M /əu/ |
+| a, ea | unstressed, usually | /ə/ |
+| a, ea | unstressed, before /x/ | U /a/; C·M /ə/ |
+| á, ái | — | /aː/ |
+| ae, aei | — | /eː/ |
+| ai, eai | stressed, usually | /a/ |
+| ai, eai | stressed, before ⟨rd, rl, rn, rr⟩ | /aː/ |
+| ai, eai | stressed, before syllable-final ⟨ll, nn⟩ | U /a/; C /aː/; M /əi/ |
+| ai, eai | unstressed | /ə/ |
+| aí, aío | — | /iː/ |
+| ao | — | U·C /iː/; M /eː/ |
+| aoi | — | /iː/ |
+| e, ei | stressed, usually | /ɛ/ |
+| e, ei | stressed, before ⟨rd, rl, rn, rr⟩ | /eː/ |
+| e, ei | stressed, before ⟨m, mh, n⟩ | /ɪ/ |
+| e, ei | stressed, before syllable-final ⟨nn⟩ and -⟨m⟩ | U /ɪ/; C /iː/; M /əi/ |
+| e, ei | unstressed | /ə/ |
+| é, éa, éi | — | /eː/ |
+| eá, eái | — | /aː/ |
+| eo, eoi | usually | /oː/ |
+| eo, eoi | in four words (*anseo, deoch, eochair, seo*) | /ɔ/ |
+| i | stressed, usually | /ɪ/ |
+| i | stressed, before syllable-final ⟨ll, nn⟩ and -⟨m⟩ | U /ɪ/; C·M /iː/ |
+| i | unstressed | /ə/ |
+| í, ío | — | /iː/ |
+| ia, iai | — | /iə/ |
+| iá, iái | — | /iː.aː/ |
+| io | usually | U /ɪ/; C·M /ʊ/ |
+| io | before /d/, /h/, /l/, /n/, /ɾ/, /s/, /ʃ/, /t/ | /ɪ/ |
+| io | before syllable-final ⟨nn⟩ | U /ɪ/; C /ʊ/; M /uː/ |
+| ió, iói | — | /iː.oː/ |
+| iu | — | /ʊ/ |
+| iú, iúi | — | /uː/ |
+| o | stressed, usually | /ɔ/ |
+| o | stressed, before ⟨rd, rl, rn, rr⟩ | /oː/ |
+| o | stressed, before ⟨n, m⟩ | U /ɔ/; C·M /ʊ/ |
+| o | stressed, before syllable-final ⟨nn⟩ and -⟨m, ng⟩ | U·C /uː/; M /əw/ |
+| o | unstressed | /ə/ |
+| ó, ói | — | /oː/ |
+| oi | stressed, usually | /ɛ/ |
+| oi | stressed, before /ɾh/, /ɾʃ/, /ɾtʲ/, /ʃ/, /xtʲ/ | /ɔ/ |
+| oi | stressed, before ⟨rd, rl, rn, rr⟩ | /oː/ |
+| oi | stressed, next to ⟨m, n⟩ | /ɪ/ |
+| oi | stressed, before syllable-final ⟨nn⟩ and -⟨m⟩ | U /ɪ/; C·M /iː/ |
+| oi | stressed, before syllable-final ⟨ll⟩ | U·C /əi/; M /iː/ |
+| oi | unstressed | /ə/ |
+| oí, oío | — | /iː/ |
+| u | stressed, usually | /ʊ/ |
+| u | stressed, before ⟨rd, rl, rn⟩ | /uː/ |
+| u | unstressed | /ə/ |
+| ú, úi | — | /uː/ |
+| ua, uai | — | /uə/ |
+| uá, uái | — | /uː.aː/ |
+| ui | stressed, usually | /ɪ/ |
+| ui | stressed, before ⟨rd, rl, rn, rr⟩ | U /ɪ/; C·M /uː/ |
+| ui | stressed, before syllable-final ⟨ll, nn⟩ and -⟨m⟩ | /iː/ |
+| ui | unstressed | /ə/ |
+| uí, uío | — | /iː/ |
+| uó, uói | — | /uː.oː/ |
