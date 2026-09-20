@@ -76,23 +76,17 @@ Old English had seven short vowels, seven long vowels, and several diphthongs. M
 | Kk | /k/ | /k/ | /kʲ/ |
 | Ll | /l/ | /lʲ/ | /lʲ/ |
 | Mm | /m/ | /mʲ/ | /mʲ/ |
-| Nn | /n/ | /nʲ/ | /nʲ/ |
-| Pp | /p/ | /pʲ/ | /pʲ/ |
+| Nn | /n/ | /n/ | /nʲ/ |
+| Pp | /p/ | /p/ | /pʲ/ |
 | Rr | /r/ | /r/ | - |
 | Ss | /s/ | /ʃ/ | /ʃ/ or /ʒ/ |
 | Tt | /t/ | /tʃ/ | /tʃ/ |
-| Bh | /v/ | /vʲ/ | /vʲ/ |
+| Bh | /v/ | /v/ | /vʲ/ |
 | Ṁṁ | /w/ | /w/ | - |
 | Ɋɋ | /ks/ | /kʃ/ | /kʃ/ |
 
 ---
 
-| Vowel Sound | broad-broad | broad-slender | slender-broad | slender-slender |
-|---|---|---|---|---|
-
-| /oʊ/ | oa | oe | eo | eoe |
-| /ɔ/ | ą,ǫ | ąi, ǫi  | eą, eǫ, ią, iǫ  | eąi, eǫi, iąi, iǫi |
-| /eɪ/ | æj | æi | ej, éj | |
 
 
 | OE source | GA | broad-broad | slender-broad | broad-slender | slender-slender | Examples |
