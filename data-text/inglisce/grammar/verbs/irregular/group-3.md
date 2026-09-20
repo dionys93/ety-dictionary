@@ -54,10 +54,12 @@ In the first set, the participle keeps the vowel of the past. The **c** of `bró
 | to bréic | bróc | brócan |
 | to speic | spóc | spócan |
 | to uaic | uóc | uócan |
+| to auaic | auóc | auócon |
 | to c̃ouse | c̃ose | c̃osen |
 | to friese | frose | frosen |
-| to stiale | stole | stolen |
+| to stiale | stoal | stolen |
 | to uieve | uoave | uoaven |
+| to trede | trod | trodan |
 
 In the second set, the participle takes **-an** and returns to an **a**-vowel, and the gerund is built on the participle's stem rather than the infinitive's (`to taic` → `tâching`). *Forsake* and *shake* are Old English strong verbs (*forsacan*, *sceacan*); *take* is a late Old English borrowing of Old Norse *taka*, which displaced the native *niman*.
 
@@ -67,15 +69,15 @@ In the second set, the participle takes **-an** and returns to an **a**-vowel, a
 | to seaic | seôc | seacan | seaching |
 | to taic | tôc | tâcan | tâching |
 
-**3. The R-Controlled Shift (eire → ór)**
-A subset where **r** follows the vowel. The past takes **ór**, and the participle shortens to **-rn**. *Bear*, *swear* and *tear* are Old English strong verbs; *wear* was weak (*werian*) and took *wore* and *worn* by analogy with them.
+**3. The R-Controlled Shift (eire → ore)**
+A subset where **r** follows the vowel. The past takes **-ore**, and the participle shortens to **-rn**. *Bear*, *swear* and *tear* are Old English strong verbs; *wear* was weak (*werian*) and took *wore* and *worn* by analogy with them.
 
 | Infinitive | Past | Past Participle |
 | :--- | :--- | :--- |
-| to beire | bór | born |
-| to sueire | suór | suorn |
-| to teire | tór | torn |
-| to ueire | uór | uorn |
+| to beire | hbore | born |
+| to sueire | suore | suorn |
+| to teire | tore | torn |
+| to ueire | uore | uorn |
 
 ### 3C. The Terminal Glide Shift (-oe / -ahe / -oihe → -ou / -eu)
 These verbs end in a glide. Some roots ended in **w** in Old English (*blāwan*, *grōwan*, *þrāwan*); in others, a **g** became a glide in Middle English (*dragan*, *flēogan*, *gnagan*). The past takes **-ou** or **-eu**, and the participle ends in **-n**. Verbs in **-oe** form their gerund in **-ouing**. *Overthrow* and *withdraw* are Middle English compounds on *throw* and *draw*.
@@ -111,7 +113,7 @@ The long vowel of the infinitive collapses into a short vowel shared by both the
 | to hîde | hid | hidan |
 
 ### 3F. Distinct Irregulars & Hybrids
-Some strong verbs follow patterns of their own; others are hybrids that mix the two systems, in both directions. `to dîve` pairs a strong-looking past with a weak participle; its past is a later formation by analogy, on a verb that merges Old English strong *dūfan* and weak *dȳfan*. `to seoe`, `to soe` and `to soaue` pair a weak past with a strong participle. *Sow* was strong in Old English (*sāwan*) and later took a weak past; *sew* and *show* were weak and took their **-n** participles by analogy.
+Some strong verbs follow patterns of their own; others are hybrids that mix the two systems, in both directions. `to dîve` pairs a strong-looking past with a weak participle; its past is a later formation by analogy, on a verb that merges Old English strong *dūfan* and weak *dȳfan*. `to seoe`, `to soe` and `to soaue` pair a weak past with a strong participle. *Sow* was strong in Old English (*sāwan*) and later took a weak past; *sew* and *show* were weak and took their **-n** participles by analogy. *Hew* and *shear* were strong in Old English (*hēawan*, *sceran*) and kept their inherited participles while their pasts went weak. *Prove* and *saw* were weak and took **-n** participles by analogy, and `sneuc` follows the modern analogical *snuck*.
 
 | Infinitive, Gerund | Past | Past Participle | Notes |
 | :--- | :--- | :--- | :--- |
@@ -124,6 +126,11 @@ Some strong verbs follow patterns of their own; others are hybrids that mix the 
 | to seoe, seouing | seoed | seon | Weak past, strong participle |
 | to soe, souing | soed | són | Weak past, strong participle |
 | to soaue, soauing | soaued | soan | Weak past, strong participle |
+| to heue | heued | heune | Weak past, strong participle |
+| to prouve | prouved | prouven | Weak past, strong participle |
+| to sahe, sahing | sahed | saon | Weak past, strong participle |
+| to siere, siering | siered | seorn | Weak past, strong participle |
+| to sniec | -d | sneuc | Weak past, strong participle |
 
 ### 3G. Anomalous, Suppletive, and Modal Verbs
 These are among the oldest and most-used verbs in the language, and their irregularities come from two sources.
