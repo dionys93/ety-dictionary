@@ -18,6 +18,8 @@ These verbs possess strong stems ending in doubled consonants.
 | to fitte | fit / fits | fit |
 | to pytte | pyt / pyts | pyt |
 | to ridde | rid / rids | rid |
+| to flitte | flit / flits | flit |
+| to batte | bat / bats | bat |
 
 ### Pattern B: E-Dependent Stems (The E-Droppers)
 These verbs end in a single consonant followed by **⟨-e⟩**.
