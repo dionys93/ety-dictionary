@@ -95,7 +95,7 @@ Inglisce employs a layered system for the `/f/` sound to preserve morphology and
 The silent 'g' and historical 'k' clusters in English are handled strictly by their etymological origins, consolidating spelling and preserving root families:
 
 * **The Germanic ⟨gn-⟩ Consolidation:** In native Germanic words, the silent initial cluster is standardized to **gn-** (pronounced `/n/`). 
-  * It preserves original Germanic `gn-` roots (e.g., *gnaw* → **gnahe**, *gnat* → **gnate**, *gnash* → **gnașe**).
+  * It preserves original Germanic `gn-` roots (e.g., *gnaw* → **gnahe**, *gnat* → **gnate**, *gnash* → **gnasce**).
   * It actively replaces the Modern English `kn-` cluster, pulling those words into the same consistent orthographic rule (e.g., *knit* → **gnite**, *knowledge* → **gnollage**, *acknowledge* → **acgnollage**).
   * *Exception:* The word *knight* drops the silent onset entirely, simplifying to **nîhte**.
 
