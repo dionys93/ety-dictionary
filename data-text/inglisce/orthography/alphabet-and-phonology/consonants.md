@@ -14,7 +14,7 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **C** | /kw/ | Before UI, OI | **cuine, vencoișe** | queen, vanquish |
 | **C** | /s/ | Before I, E, Y | **citie**, **fâce**, **cynic** | city, face, cynic |
 | **C** | /ʃ/ | Before I/E + Vowel | **nâcion**, **criâcion** | nation, creation |
-| **Ç** | /s/ | Before A, O, U | **juçor** | juicer |
+| **Ç** | /s/ | Before A, O, U | **pronônçable**, **replâçable** | pronounceable, replaceable |
 | **Ç** | /ʃ/ | Before I, E | **appríçiait**, **inniçiait** | appreciate, innitiate |
 | **C̃** | /t͡ʃ/ | Always | **c̃ine**, **c̃ouse**, <br> **c̃oice**, **mac̃e** | chin, choose, <br> choice, match |
 | **CH** | /k/ | Before I, E | **architect**, **mâching** | architect, making |
@@ -26,7 +26,7 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **FF** | /f/ | Always (protects short vowels) | **coffe**, **off**, **staffe** | cough, off, staff |
 | **FH** | /f/ | Replaces terminal historical *-gh* | **rofh**, **tofh**, **enofh** | rough, tough, enough |
 | **F** | /fʲ/ | Before U-E, UI, Ú | **confuse**, **confúsion**, <br> **corfue**, **corfuis**  | confuse, confusion, curfew, curfews |
-| **G** | /g/ | Before A, O, U | **gâme** | game |
+| **G** | /g/ | Before A, O, U | **gaime** | game |
 | **G** | /gʲ/ | Before U-E, Ú, UAI | **argue**, **argument**, **disambiguait** | argue, argument, disambiguate |
 | **G** | /gw/ | Before UA | **lânguage** | language |
 | **G** | /gw/ | Before OI, ÜI | **pengoin**, **distingoișe**, **lingüistic** | penguin, distinguish linguistic |
@@ -41,9 +41,9 @@ Inglisce reorganizes the English consonant inventory to achieve absolute phoneti
 | **L** | /lʲ/ | Palatalized | **evàluait** | evaluate |
 | **M** | /m/ | Always | **mamme**, **admitte** | mom, admit |
 | **M̃** | /mʲ/ | M + yod glide | **am̃onicion**, **m̃usíom** | ammunition, museum |
-| **N** | /n/ | Always | **not**, **net** | not, net |
+| **N** | /n/ | Always | **not**, **nete** | not, net |
 | **Ñ** | /nʲ/ | N + yod glide | **añual**, **Jañuarie** | annual, January |
-| **O** | /w/ | Labial glide before vowels | **ouere**, **pengoin** | where, penguin |
+| **O** | /w/ | Labial glide before vowels | **ouere**, **pengoine** | where, penguin |
 | **P** | /p/ | Always | **poppe**, **happy** | pop, happy |
 | **P** | /pʲ/ | Before U-E, Ú, UAI | **puque, púc**, **populait**, **populace** | puke, populate, populace |
 | **PH** | /f/ | Always | **graphe**, **filosophie** | graph, philosophy |
