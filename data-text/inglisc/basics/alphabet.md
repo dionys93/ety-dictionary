@@ -14,10 +14,10 @@
 | /v/ | f(final), bh |
 | /θ/ | th |
 | /ð/ | dd | 
-| /s/ | s- -ss- -ss | 
+| /s/ | s-, -ss-, -ss, ç | 
 | /z/ | sh -s-, -s |
 | /ʒ/ | -s- (slender), shj |
-| /ʃ/ | sc/sċ, s (slender), sj | 
+| /ʃ/ | sc/sċ, s (slender), sj, ċ | 
 | /h/ | h |
 | /l/ | l |
 | /m/ | m |
@@ -31,9 +31,92 @@
 | palatalized | bj, fj, gj, hj, kj, lj, mj, nj, pj, bhj |
 | No sound or changes vowels | dh, gh, nh, ph |
 
-catch: cait, capht, captir
+catch: cait, capht
+capture: captir
+cache: cæċ
+cash: cæs
 fetch: fait
 sketch: scait
+proceed: proçíd
+procedure: proçídir
+stammer: stamr
+success: sucçess
+fish: fois
+
+| OE | Modern editions | OE IPA | Context | ModE spelling | ModE IPA | Evolution to Inglisċ |
+|---|---|---|---|---|---|---|
+| a | a | /ɑ/ | general | a | /æ/ | catt > cat > cat |
+| a | a | /ɑ/ | open-syllable lengthening | a…e | /eɪ/ | nama > name > naim |
+| a | a | /ɑ/ | before a nasal (rounded allophone [ɒ]) | o | /ɒ/ | lang > long > lǫng |
+| a | a | /ɑ/ | before ⟨l⟩ + consonant | al | /ɔː/ | eall > all > all |
+| a | a | /ɑ/ | after ⟨w⟩, before ⟨r⟩ | ar | /ɔː(r)/ | wearm > warm > warm |
+| ā | a | /ɑː/ | general | o…e, oa | /əʊ/ | stān > stone > stoan |
+| ā | a | /ɑː/ | before a nasal | o…e | /əʊ/ | hām > home > hoam |
+| ā | a | /ɑː/ | shortened before a cluster | o | /ɒ/ | hāliġdæġ > holiday > hálydaig |
+| æ | æ | /æ/ | general | a | /æ/ | þæt > that > ddat |
+| æ | æ | /æ/ | open-syllable lengthening | a…e | /eɪ/ | æcer > acre > æikr |
+| æ | æ | /æ/ | before ⟨r⟩ + consonant | ar | /ɑː(r)/ | bere-ærn > barn > barn |
+| ǣ | æ | /æː/ | general | ea, ee | /iː/ | sǣ > sea(s > saí(os |
+| ǣ | æ | /æː/ | shortened | ea, e | /ɛ/ | slǣpte > slept > slaipt |
+| ǣ | æ | /æː/ | before ⟨r⟩ | ere, ear | /ɛə(r)/ | ǣr > ere > eer |
+| e | e | /e/ | general | e | /ɛ/ | bedd > bed > beod|
+| e | e | /e/ | open-syllable lengthening | ea | /iː/ | etan > eat > íat |
+| ē | e | /eː/ | general | ee, e…e | /iː/ | fēdan > feed > fíad |
+| ē | e | /eː/ | shortened | e | /ɛ/ | cēpte > kept > caipt |
+| ē | e | /eː/ | before ⟨r⟩ | ere | /ɪə(r)/ | hēr > here > hier |
+| ea | ea | /æɑ̯/ | before ⟨r⟩ + consonant | ar | /ɑː(r)/ | heard > hard > hard |
+| ea | ea | /æɑ̯/ | before ⟨l⟩ + consonant | al | /ɔː/, /ɑː/ | sealt > salt > salt, healf > half > halhf |
+| ea | ea | /æɑ̯/ | before ⟨h⟩ + ⟨t⟩ | eigh | /eɪ/ | eahta > eight > eight |
+| ēa | ea | /æːɑ̯/ | general | ea | /iː/ | bēam > beam > bíam |
+| ēa | ea | /æːɑ̯/ | shortened | ea | /ɛ/ | brēad > bread > bread |
+| ēa | ea | /æːɑ̯/ | before ⟨r⟩ | ear | /ɪə(r)/ | ēare > ear > aír |
+| ēa | ea | /æːɑ̯/ | before ⟨h⟩ | igh | /aɪ/ | nēah > nigh > nægh |
+| eo | eo | /eo̯/ | general | e, ea | /ɛ/ | seofon > seven > soefen |
+| eo | eo | /eo̯/ | before ⟨r⟩ + consonant | ear, er | /ɜː(r)/ | eorþe > earth > erth |
+| eo | eo | /eo̯/ | before ⟨r⟩ + consonant (some words) | ar, ear | /ɑː(r)/ | steorra > star > stár, heorte > heart > hárt |
+| ēo | eo | /eːo̯/ | general | ee | /iː/ | dēop > deep > doíp |
+| ēo | eo | /eːo̯/ | shortened | ie | /ɛ/ | frēond > friend > frend |
+| ēo | eo | /eːo̯/ | before ⟨r⟩ | ear, eer | /ɪə(r)/ | dēore > dear > daír |
+| i | i | /i/ | general | i | /ɪ/ | fisc > fish > fois |
+| i | i | /i/ | open-syllable lengthening | ee | /iː/ | wicu > week > woík |
+| i | i | /i/ | before ⟨ld, nd, mb⟩ | i | /aɪ/ | cild > child, findan > find |
+| i | i | /i/ | before ⟨r⟩ | ir | /ɜː(r)/ | bridd > bird > bird |
+| ī | i | /iː/ | general | i…e, y | /aɪ/ | rīdan > ride |
+| ī | i | /iː/ | shortened | i | /ɪ/ | wīsdōm > wisdom |
+| ī | i | /iː/ | before ⟨r⟩ | ire | /aɪə(r)/ | scīr > shire |
+| ie | ie | /iy̯/ | Early West Saxon only | — | — | falls with y (or i); yldra > elder /ˈɛldə/ |
+| īe | ie | /iːy̯/ | Early West Saxon only | — | — | falls with ȳ (or ī); hȳran > hear /hɪə/ |
+| io | io | /io̯/ | Northumbrian only | — | — | elsewhere merged with eo; same reflexes |
+| īo | io | /iːo̯/ | Northumbrian only | — | — | elsewhere merged with ēo; same reflexes |
+| o | o | /o/ | general | o | /ɒ/ | god > god |
+| o | o | /o/ | open-syllable lengthening | o…e | /əʊ/ | hopa > hope |
+| o | o | /o/ | before ⟨ld⟩ | o | /əʊ/ | gold > gold |
+| o | o | /o/ | before ⟨r⟩ | or | /ɔː(r)/ | corn > corn |
+| ō | o | /oː/ | general | oo | /uː/ | mōna > moon |
+| ō | o | /oː/ | shortened | oo | /ʊ/ | bōc > book |
+| ō | o | /oː/ | shortened and unrounded | oo | /ʌ/ | blōd > blood |
+| ō | o | /oː/ | before ⟨r⟩ | oor | /ɔː(r)/ | flōr > floor |
+| oe | oe, œ | /ø/ | Anglian only | — | — | merged with e before the first prose; same reflexes |
+| ōe | œ̄ | /øː/ | Anglian only | — | — | merged with ē before the first prose; same reflexes |
+| u | u | /u/ | general | u, o | /ʌ/ | sunu > son |
+| u | u | /u/ | after a labial or before ⟨l⟩ (unshifted) | u | /ʊ/ | full > full |
+| u | u | /u/ | before ⟨nd⟩ | ou | /aʊ/ | hund > hound |
+| u | u | /u/ | before ⟨r⟩ | ur | /ɜː(r)/ | turf > turf |
+| ū | u | /uː/ | general | ou, ow | /aʊ/ | hūs > house |
+| ū | u | /uː/ | shortened | u, ou | /ʌ/ | dūst > dust |
+| ū | u | /uː/ | before ⟨r⟩ | our | /aʊə(r)/ | ūre > our |
+| y | y | /y/ | Anglian / East Midland unrounding | i, y | /ɪ/ | synn > sin > synn |
+| y | y | /y/ | Kentish unrounding | e | /ɛ/ | myriġ > merry |
+| y | y | /y/ | Western / South-Western retention | u | /ʌ/ | myċel > much > my |
+| y | y | /y/ | before ⟨r⟩ | ur, ir | /ɜː(r)/ | cyriċe > church >  |
+| y | y | /y/ | before ⟨nd⟩ | i | /aɪ/ | ġemynd > mind |
+| ȳ | y | /yː/ | general | i…e, y | /aɪ/ | mȳs > mice |
+| ȳ | y | /yː/ | shortened | i | /ɪ/ | fȳst > fist |
+| ȳ | y | /yː/ | before ⟨r⟩ | ire | /aɪə(r)/ | fȳr > fire |
+
+/ɑ/ : á, oa, o
+/æ/ : a, æ
+
 
 ### Phonemes of the Vowels
 
