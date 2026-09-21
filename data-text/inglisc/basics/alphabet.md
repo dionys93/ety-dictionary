@@ -42,6 +42,8 @@ procedure: proçídir
 stammer: stamr
 success: sucçess
 fish: fois
+keep, kept: ty caíp, cêpt
+sleep, slept: slaíp, slept
 
 | OE | Modern editions | OE IPA | Context | ModE spelling | ModE IPA | Evolution to Inglisċ |
 |---|---|---|---|---|---|---|
@@ -116,33 +118,33 @@ fish: fois
 
 | ON | ON IPA | Context | ModE spelling | ModE IPA | Evolution to Inglisċ |
 |---|---|---|---|---|---|
-| a | /a/ | general | a | /æ/ | kasta > cast > |
-| a | /a/ | open-syllable lengthening | a…e | /eɪ/ | taka > take > |
-| a | /a/ | before ⟨ll⟩ | al | /ɔ/ | kalla > call > |
-| a | /a/ | before ⟨r⟩ | ar | /ɑr/ | karpa > carp > |
-| á | /aː/ | general | oa, ow | /oʊ/ | lán > loan >, lágr > low > |
-| e | /e/ | general | e | /ɛ/ | egg > egg >, leggr > leg > |
+| a | /a/ | general | a | /æ/ | kasta > cast > cast |
+| a | /a/ | open-syllable lengthening | a…e | /eɪ/ | taka > take > taik |
+| a | /a/ | before ⟨ll⟩ | al | /ɔ/ | kalla > call > call |
+| a | /a/ | before ⟨r⟩ | ar | /ɑr/ | karpa > carp > carp |
+| á | /aː/ | general | oa, ow | /oʊ/ | lán > loan > loan, lágr > low > lagh |
+| e | /e/ | general | e | /ɛ/ | egg > egg > êg, leggr > leg > lêg |
 | é | /eː/ | rare in loans | — | — | — |
-| i | /i/ | general | i | /ɪ/ | skinn > skin >, kið > kid > |
+| i | /i/ | general | i | /ɪ/ | skinn > skin > skin, kið > kid > cyd |
 | í | /iː/ | general | i…e | /aɪ/ | þrífa > thrive > |
-| o | /o/ | general | o | /ɑ/ | oddi > odd > |
-| o | /o/ | before a voiceless fricative | o | /ɔ/ | lopt > loft > |
-| ó | /oː/ | general | oo | /u/ | rót > root > |
-| u | /u/ | general | u | /ʌ/ | uggligr > ugly > |
+| o | /o/ | general | o | /ɑ/ | oddi > odd > oad |
+| o | /o/ | before a voiceless fricative | o | /ɔ/ | lopt > loft > lopht |
+| ó | /oː/ | general | oo | /u/ | rót > root > rout/rút |
+| u | /u/ | general | u | /ʌ/ | uggligr > ugly > ugly |
 | ú | /uː/ | general | ow, ou | /aʊ/ | dúnn > down > |
-| ú | /uː/ | shortened | u | /ʌ/ | húsbóndi > husband > |
-| y | /y/ | general | i | /ɪ/ | systir > sister > |
-| y | /y/ | before ⟨r⟩ | ir | /ɚ/ | skyrta > skirt > |
+| ú | /uː/ | shortened | u | /ʌ/ | húsbóndi > husband > husband |
+| y | /y/ | general | i | /ɪ/ | systir > sister > soîstr |
+| y | /y/ | before ⟨r⟩ | ir | /ɚ/ | skyrta > skirt > skyrt |
 | ý | /yː/ | general | y | /aɪ/ | ský > sky > |
 | ý | /yː/ | before ⟨r⟩ | ire | /aɪɚ/ | mýrr > mire > |
-| æ | /ɛː/ | before ⟨ll⟩ | all | /ɔ/ | þræll > thrall > |
+| æ | /ɛː/ | before ⟨ll⟩ | all | /ɔ/ | þræll > thrall > thrall |
 | æ | /ɛː/ | before ⟨ng⟩ | i | /ɪ/ | vængr > wing > |
 | ǫ | /ɔ/ | general | a | /ɑ/ | vǫndr > wand > |
 | ǫ | /ɔ/ | before ⟨r⟩ | ar | /ɑr/ | bǫrkr > bark > |
 | ǫ́ | /ɔː/ | rare in loans | — | — | — |
 | ø | /ø/ | rare in loans | — | — | — |
-| œ | /øː/ | general | ee | /i/ | sœma > seem > |
-| œ | /øː/ | before ⟨g⟩ | y | /aɪ/ | slœgr > sly > |
+| œ | /øː/ | general | ee | /i/ | sœma > seem > soím |
+| œ | /øː/ | before ⟨g⟩ | y | /aɪ/ | slœgr > sly > sloigh |
 | au | /au/ | general | o…e | /oʊ/ | hlaupa > lope > |
 | au | /au/ | before ⟨s⟩ | oo | /u/ | lauss > loose > |
 | ei | /ei/ | general | ey, ai | /eɪ/ | þeir > they >, beita > bait >, reisa > raise > |
