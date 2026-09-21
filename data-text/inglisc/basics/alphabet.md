@@ -3,42 +3,33 @@
 | Phoneme | Inglisċ |
 |---|---|
 | /p/ | p |
-| /pʲ/ | pj |
-| /b/ | b | 
-| /bʲ/ | bj |
+| /b/ | b |
 | /t/ | t | 
 | /d/ | d | 
 | /k/ | c, k |
-| /kʲ/ | kj |
-| /ɡ/ | g | 
-| /gʲ/ | gj |
-| /tʃ/ | c, ċ, t (slender) | 
-| /dʒ/ | ġ-, -cg, d (slender) | 
+| /ɡ/ | g |
+| /tʃ/ | c, ċ, t (slender), tj | 
+| /dʒ/ | ġ-, -cg, d (slender), dj | 
 | /f/ | f(init), ff(final), ph(medial), ph(final) |
-| /fʲ/ | fj |
 | /v/ | f(final), bh |
-| /vʲ/ | bhj | 
 | /θ/ | th |
 | /ð/ | dd | 
 | /s/ | s- -ss- -ss | 
 | /z/ | sh -s-, -s |
-| /ʒ/ | -s- (slender) |
+| /ʒ/ | -s- (slender), shj |
 | /ʃ/ | sc/sċ, s (slender), sj | 
 | /h/ | h |
-| /hʲ/ | hj |
 | /l/ | l |
-| /lʲ/ | lj |
 | /m/ | m |
-| /mʲ/ | mj |
 | /n/ | n |
-| /nʲ/ | nj |
 | /ŋ/ | ng |
 | /r/ | r |
 | /j/ | ġ, j, dh, gh (slender) |
-| /w/ | mh, gh |
+| /w/ | ƿ, gh |
 | /ks/ | ks |
+| /kʃ/ | ksj |
+| palatalized | bj, fj, gj, hj, kj, lj, mj, nj, pj, bhj |
 | No sound or changes vowels | dh, gh, nh, ph |
-
 
 catch: cait
 fetch: fait
