@@ -10,8 +10,8 @@
 | /ɡ/ | g | 
 | /tʃ/ | c, ċ, t (slender) | 
 | /dʒ/ | cg, d (slender) | 
-| /f/ | f, ff, ph | 
-| /v/ | f, ḃ, bh | 
+| /f/ | f(init), ff(final), ṗ(medial), ph(final) | 
+| /v/ | f(final), ḃ(init and medial), bh(final) | 
 | /θ/ | th |
 | /ð/ | dd | 
 | /s/ | s | 
@@ -177,6 +177,8 @@ sketch: scait
 ## Old English to Modern Evolution
 
 ### Vowels
+
+/ɑ/ : 
 
 | OE | Modern editions | OE IPA | Context | ModE spelling | ModE IPA | Example |
 |---|---|---|---|---|---|---|
