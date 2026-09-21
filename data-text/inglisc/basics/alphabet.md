@@ -25,13 +25,13 @@
 | /ŋ/ | ng |
 | /r/ | r |
 | /j/ | ġ, j, dh, gh (slender) |
-| /w/ | ƿ, gh |
+| /w/ | w, gh |
 | /ks/ | ks |
 | /kʃ/ | ksj |
 | palatalized | bj, fj, gj, hj, kj, lj, mj, nj, pj, bhj |
 | No sound or changes vowels | dh, gh, nh, ph |
 
-catch: cait
+catch: cait, capht, captir
 fetch: fait
 sketch: scait
 
