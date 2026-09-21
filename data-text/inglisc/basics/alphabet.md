@@ -1,32 +1,42 @@
 ### Phonemes of the Consonants
 
-| Phoneme | Inglisc |
+| Phoneme | Inglisċ |
 |---|---|
-| /p/ | p | 
+| /p/ | p |
+| /pʲ/ | pj |
 | /b/ | b | 
+| /bʲ/ | bj |
 | /t/ | t | 
 | /d/ | d | 
-| /k/ | c, k | 
+| /k/ | c, k |
+| /kʲ/ | kj |
 | /ɡ/ | g | 
+| /gʲ/ | gj |
 | /tʃ/ | c, ċ, t (slender) | 
-| /dʒ/ | cg, d (slender) | 
-| /f/ | f(init), ff(final), ṗ(medial), ph(final) | 
-| /v/ | f(final), ḃ(init and medial), bh(final) | 
+| /dʒ/ | cg, ġ, d (slender) | 
+| /f/ | f(init), ff(final), ṗ(medial), ph(final) |
+| /fʲ/ | fj |
+| /v/ | f(final), ḃ(init and medial), bh(final) |
+| /vʲ/ | ḃj | 
 | /θ/ | th |
 | /ð/ | dd | 
 | /s/ | s | 
 | /z/ | s |
-| /ʃ/ | sċ, s (slender) | 
-| /ɣ/ | g, dh, gh |
+| /ʃ/ | sc/sċ, s (slender), sj | 
 | /h/ | h |
-| /m/ | m |
-| /n/ | n |
-| /ŋ/ | ng |
+| /hʲ/ | hj |
 | /l/ | l, ll |
+| /lʲ/ | lj |
+| /m/ | m |
+| /mʲ/ | mj |
+| /n/ | n |
+| /nʲ/ | nj |
+| /ŋ/ | ng |
 | /r/ | hr, rh, r, rr |
 | /j/ | ġ, j, dh, gh (slender) |
 | /w/ | ṁ, gh |
 | /ks/ | x |
+| No sound or changes vowels | dh, gh, nh, ṗ |
 
 catch: cait
 fetch: fait
