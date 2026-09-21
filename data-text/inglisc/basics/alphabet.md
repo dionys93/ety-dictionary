@@ -47,7 +47,7 @@ fish: fois
 |---|---|---|---|---|---|---|
 | a | a | /ɑ/ | general | a | /æ/ | catt > cat > cat |
 | a | a | /ɑ/ | open-syllable lengthening | a…e | /eɪ/ | nama > name > naim |
-| a | a | /ɑ/ | before a nasal (rounded allophone [ɒ]) | o | /ɒ/ | lang > long > lǫng |
+| a | a | /ɑ/ | before a nasal (rounded allophone [ɒ]) | o | /ɒ/ | lang > long > lang |
 | a | a | /ɑ/ | before ⟨l⟩ + consonant | al | /ɔː/ | eall > all > all |
 | a | a | /ɑ/ | after ⟨w⟩, before ⟨r⟩ | ar | /ɔː(r)/ | wearm > warm > warm |
 | ā | a | /ɑː/ | general | o…e, oa | /əʊ/ | stān > stone > stoan |
@@ -58,7 +58,7 @@ fish: fois
 | æ | æ | /æ/ | before ⟨r⟩ + consonant | ar | /ɑː(r)/ | bere-ærn > barn > barn |
 | ǣ | æ | /æː/ | general | ea, ee | /iː/ | sǣ > sea(s > saí(os |
 | ǣ | æ | /æː/ | shortened | ea, e | /ɛ/ | slǣpte > slept > slaipt |
-| ǣ | æ | /æː/ | before ⟨r⟩ | ere, ear | /ɛə(r)/ | ǣr > ere > eer |
+| ǣ | æ | /æː/ | before ⟨r⟩ | ere, ear | /ɛə(r)/ | ǣr > ere > er |
 | e | e | /e/ | general | e | /ɛ/ | bedd > bed > beod|
 | e | e | /e/ | open-syllable lengthening | ea | /iː/ | etan > eat > íat |
 | ē | e | /eː/ | general | ee, e…e | /iː/ | fēdan > feed > fíad |
@@ -78,11 +78,11 @@ fish: fois
 | ēo | eo | /eːo̯/ | shortened | ie | /ɛ/ | frēond > friend > frend |
 | ēo | eo | /eːo̯/ | before ⟨r⟩ | ear, eer | /ɪə(r)/ | dēore > dear > daír |
 | i | i | /i/ | general | i | /ɪ/ | fisc > fish > fois |
-| i | i | /i/ | open-syllable lengthening | ee | /iː/ | wicu > week > woík |
+| i | i | /i/ | open-syllable lengthening | ee | /iː/ | wicu > week > wuîc |
 | i | i | /i/ | before ⟨ld, nd, mb⟩ | i | /aɪ/ | cild > child, findan > find |
 | i | i | /i/ | before ⟨r⟩ | ir | /ɜː(r)/ | bridd > bird > bird |
-| ī | i | /iː/ | general | i…e, y | /aɪ/ | rīdan > ride |
-| ī | i | /iː/ | shortened | i | /ɪ/ | wīsdōm > wisdom |
+| ī | i | /iː/ | general | i…e, y | /aɪ/ | rīdan > ride > |
+| ī | i | /iː/ | shortened | i | /ɪ/ | wīsdōm > wisdom > wîsdom |
 | ī | i | /iː/ | before ⟨r⟩ | ire | /aɪə(r)/ | scīr > shire |
 | ie | ie | /iy̯/ | Early West Saxon only | — | — | falls with y (or i); yldra > elder /ˈɛldə/ |
 | īe | ie | /iːy̯/ | Early West Saxon only | — | — | falls with ȳ (or ī); hȳran > hear /hɪə/ |
@@ -98,17 +98,17 @@ fish: fois
 | ō | o | /oː/ | before ⟨r⟩ | oor | /ɔː(r)/ | flōr > floor |
 | oe | oe, œ | /ø/ | Anglian only | — | — | merged with e before the first prose; same reflexes |
 | ōe | œ̄ | /øː/ | Anglian only | — | — | merged with ē before the first prose; same reflexes |
-| u | u | /u/ | general | u, o | /ʌ/ | sunu > son |
+| u | u | /u/ | general | u, o | /ʌ/ | sunu > son > sun |
 | u | u | /u/ | after a labial or before ⟨l⟩ (unshifted) | u | /ʊ/ | full > full |
 | u | u | /u/ | before ⟨nd⟩ | ou | /aʊ/ | hund > hound |
-| u | u | /u/ | before ⟨r⟩ | ur | /ɜː(r)/ | turf > turf |
+| u | u | /u/ | before ⟨r⟩ | ur | /ɜː(r)/ | turf > turf > turff |
 | ū | u | /uː/ | general | ou, ow | /aʊ/ | hūs > house |
-| ū | u | /uː/ | shortened | u, ou | /ʌ/ | dūst > dust |
+| ū | u | /uː/ | shortened | u, ou | /ʌ/ | dūst > dust > dust |
 | ū | u | /uː/ | before ⟨r⟩ | our | /aʊə(r)/ | ūre > our |
-| y | y | /y/ | Anglian / East Midland unrounding | i, y | /ɪ/ | synn > sin > synn |
-| y | y | /y/ | Kentish unrounding | e | /ɛ/ | myriġ > merry |
-| y | y | /y/ | Western / South-Western retention | u | /ʌ/ | myċel > much > my |
-| y | y | /y/ | before ⟨r⟩ | ur, ir | /ɜː(r)/ | cyriċe > church >  |
+| y | y | /y/ | Anglian / East Midland unrounding | i, y | /ɪ/ | synn > sin > sîn |
+| y | y | /y/ | Kentish unrounding | e | /ɛ/ | myriġ > merry > meyry (maybe) |
+| y | y | /y/ | Western / South-Western retention | u | /ʌ/ | myċel > much > myċ |
+| y | y | /y/ | before ⟨r⟩ | ur, ir | /ɜː(r)/ | cyriċe > church > cirċ |
 | y | y | /y/ | before ⟨nd⟩ | i | /aɪ/ | ġemynd > mind |
 | ȳ | y | /yː/ | general | i…e, y | /aɪ/ | mȳs > mice |
 | ȳ | y | /yː/ | shortened | i | /ɪ/ | fȳst > fist |
