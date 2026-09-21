@@ -1,6 +1,6 @@
 **Monosyllables against polysyllables.** A monosyllable is stressed by definition — there is
-no other syllable to take the stress — so a stress mark on one is vacuous. `go`, `so`, `bro`,
-`blo` go bare. §1 holds every monosyllable in the survey regardless of how it is spelled or
+no other syllable to take the stress — so a stress mark on one is vacuous.
+§1 holds every monosyllable in the survey regardless of how it is spelled or
 what vowel it has, because the syllable count is what the rule turns on.
 
 **Within polysyllables, stressed against unstressed.** Here the final either carries the
