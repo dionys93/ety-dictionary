@@ -13,30 +13,32 @@
 | /ɡ/ | g | 
 | /gʲ/ | gj |
 | /tʃ/ | c, ċ, t (slender) | 
-| /dʒ/ | cg, ġ, d (slender) | 
-| /f/ | f(init), ff(final), ṗ(medial), ph(final) |
+| /dʒ/ | ġ-, -cg, d (slender) | 
+| /f/ | f(init), ff(final), ph(medial), ph(final) |
 | /fʲ/ | fj |
-| /v/ | f(final), ḃ(init and medial), bh(final) |
-| /vʲ/ | ḃj | 
+| /v/ | f(final), bh |
+| /vʲ/ | bhj | 
 | /θ/ | th |
 | /ð/ | dd | 
-| /s/ | s | 
-| /z/ | s |
+| /s/ | s- -ss- -ss | 
+| /z/ | sh -s-, -s |
+| /ʒ/ | -s- (slender) |
 | /ʃ/ | sc/sċ, s (slender), sj | 
 | /h/ | h |
 | /hʲ/ | hj |
-| /l/ | l, ll |
+| /l/ | l |
 | /lʲ/ | lj |
 | /m/ | m |
 | /mʲ/ | mj |
 | /n/ | n |
 | /nʲ/ | nj |
 | /ŋ/ | ng |
-| /r/ | hr, rh, r, rr |
+| /r/ | r |
 | /j/ | ġ, j, dh, gh (slender) |
-| /w/ | ṁ, gh |
-| /ks/ | x |
-| No sound or changes vowels | dh, gh, nh, ṗ |
+| /w/ | mh, gh |
+| /ks/ | ks |
+| No sound or changes vowels | dh, gh, nh, ph |
+
 
 catch: cait
 fetch: fait
@@ -187,8 +189,6 @@ sketch: scait
 ## Old English to Modern Evolution
 
 ### Vowels
-
-/ɑ/ : 
 
 | OE | Modern editions | OE IPA | Context | ModE spelling | ModE IPA | Example |
 |---|---|---|---|---|---|---|
