@@ -114,9 +114,60 @@ fish: fois
 | ȳ | y | /yː/ | shortened | i | /ɪ/ | fȳst > fist |
 | ȳ | y | /yː/ | before ⟨r⟩ | ire | /aɪə(r)/ | fȳr > fire |
 
-/ɑ/ : á, oa, o
-/æ/ : a, æ
+| ON | ON IPA | Context | ModE spelling | ModE IPA | Evolution to Inglisċ |
+|---|---|---|---|---|---|
+| a | /a/ | general | a | /æ/ | kasta > cast > |
+| a | /a/ | open-syllable lengthening | a…e | /eɪ/ | taka > take > |
+| a | /a/ | before ⟨ll⟩ | al | /ɔ/ | kalla > call > |
+| a | /a/ | before ⟨r⟩ | ar | /ɑr/ | karpa > carp > |
+| á | /aː/ | general | oa, ow | /oʊ/ | lán > loan >, lágr > low > |
+| e | /e/ | general | e | /ɛ/ | egg > egg >, leggr > leg > |
+| é | /eː/ | rare in loans | — | — | — |
+| i | /i/ | general | i | /ɪ/ | skinn > skin >, kið > kid > |
+| í | /iː/ | general | i…e | /aɪ/ | þrífa > thrive > |
+| o | /o/ | general | o | /ɑ/ | oddi > odd > |
+| o | /o/ | before a voiceless fricative | o | /ɔ/ | lopt > loft > |
+| ó | /oː/ | general | oo | /u/ | rót > root > |
+| u | /u/ | general | u | /ʌ/ | uggligr > ugly > |
+| ú | /uː/ | general | ow, ou | /aʊ/ | dúnn > down > |
+| ú | /uː/ | shortened | u | /ʌ/ | húsbóndi > husband > |
+| y | /y/ | general | i | /ɪ/ | systir > sister > |
+| y | /y/ | before ⟨r⟩ | ir | /ɚ/ | skyrta > skirt > |
+| ý | /yː/ | general | y | /aɪ/ | ský > sky > |
+| ý | /yː/ | before ⟨r⟩ | ire | /aɪɚ/ | mýrr > mire > |
+| æ | /ɛː/ | before ⟨ll⟩ | all | /ɔ/ | þræll > thrall > |
+| æ | /ɛː/ | before ⟨ng⟩ | i | /ɪ/ | vængr > wing > |
+| ǫ | /ɔ/ | general | a | /ɑ/ | vǫndr > wand > |
+| ǫ | /ɔ/ | before ⟨r⟩ | ar | /ɑr/ | bǫrkr > bark > |
+| ǫ́ | /ɔː/ | rare in loans | — | — | — |
+| ø | /ø/ | rare in loans | — | — | — |
+| œ | /øː/ | general | ee | /i/ | sœma > seem > |
+| œ | /øː/ | before ⟨g⟩ | y | /aɪ/ | slœgr > sly > |
+| au | /au/ | general | o…e | /oʊ/ | hlaupa > lope > |
+| au | /au/ | before ⟨s⟩ | oo | /u/ | lauss > loose > |
+| ei | /ei/ | general | ey, ai | /eɪ/ | þeir > they >, beita > bait >, reisa > raise > |
+| ey | /ey/ | rare in loans | — | — | — |
 
+| GA | OE sources | ON sources |
+|---|---|---|
+| /i/ | ē (fēdan), ēo (dēop), ǣ (sǣ), ēa (bēam), e lengthened (etan), i lengthened (wicu) | œ (sœma) |
+| /ɪ/ | i (fisc), y Anglian (synn), ī shortened (wīsdōm), ȳ shortened (fȳst) | i (skinn), y (systir), æ before ng (vængr) |
+| /eɪ/ | a lengthened (nama), æ lengthened (æcer), æġ (dæġ), ea before ht (eahta) | ei (þeir, beita), a lengthened (taka) |
+| /ɛ/ | e (bedd), eo (seofon), ǣ shortened (slǣpte), ē shortened (cēpte), ēa shortened (brēad), ēo shortened (frēond), y Kentish (myriġ) | e (egg, leggr) |
+| /æ/ | a (catt), æ (þæt) | a (kasta) |
+| /ɑ/ | o (god), ā shortened (hāliġdæġ) | o (oddi), ǫ (vǫndr) |
+| /ɔ/ | a before l + C (eall), a before nasal (lang), a after w before r (wearm) | a before ll (kalla), æ before ll (þræll), o before voiceless fricative (lopt) |
+| /oʊ/ | ā (stān), o lengthened (hopa), o before ld (gold) | á (lán, lágr), au (hlaupa) |
+| /ʊ/ | ō shortened, middle wave (bōc), u after labial (full) | — |
+| /u/ | ō (mōna) | ó (rót), au before s (lauss) |
+| /ʌ/ | u (sunu), ū shortened (dūst), ō shortened, early wave (blōd), y Western (myċel) | u (uggligr), ú shortened (húsbóndi) |
+| /aɪ/ | ī (rīdan), ȳ (mȳs), i before ld/nd (cild), y before nd (ġemynd), ēa before h (nēah) | í (þrífa), ý (ský), œ before g (slœgr) |
+| /aʊ/ | ū (hūs), u before nd (hund) | ú (dúnn) |
+| /ɔɪ/ | — | — |
+| /ɚ/ | eo + r (eorþe), i + r (bridd), u + r (turf), y + r (cyriċe) | y + r (skyrta) |
+| /ɑr/ | ea + r (heard), æ + r (bere-ærn), eo + r (steorra) | a + r (karpa), ǫ + r (bǫrkr) |
+| /ɪr/ | ē + r (hēr), ēa + r (ēare), ēo + r (dēore) | — |
+| /aɪɚ/ | ī + r (scīr), ȳ + r (fȳr) | ý + r (mýrr) |
 
 ### Phonemes of the Vowels
 
