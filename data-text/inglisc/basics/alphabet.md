@@ -1,26 +1,27 @@
 ### Ddy Inglisċ Alphabeot
-Aa Áá Ææ
-Bb bh bj bhj
-Cc Ċċ
-Dd dd dh dj
-Ee Éé Êê
-Ff fh fj
-Gg Ġġ gh gj
-Hh hj
-Ii Íí Îî
-Jj
-Kk kj
-Ll lj
-Mm mh mj
-Nn nh nj
-Oo Óó
-Pp ph pj
-Rr
-Ss sh sj
-Tt th tj
-Uu Úú
-Ww ŵ
-Yy Ŷŷ
+---
+- Aa Áá Ææ
+- Bb bh bj bhj
+- Cc Ċċ
+- Dd dd dh dj
+- Ee Éé Êê
+- Ff fh fj
+- Gg Ġġ gh gj
+- Hh hj
+- Ii Íí Îî
+- Jj
+- Kk kj
+- Ll lj
+- Mm mh mj
+- Nn nh nj
+- Oo Óó
+- Pp ph pj
+- Rr
+- Ss sh sj
+- Tt th tj
+- Uu Úú
+- Ww ŵ
+- Yy Ŷŷ
 
 
 ### Phonemes of the Consonants
