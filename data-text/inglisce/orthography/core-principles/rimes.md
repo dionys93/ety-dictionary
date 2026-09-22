@@ -1,15 +1,11 @@
 -offe / -oste / -ofre, the terminal sets
 
 
-i before e except after c-, unless it's -iere
+i before e except after c-, unless it's
 
-exception: c̃iere
-
-ch -> qhe
--ghe
-
-to ploqhe pleuc(s ploqhed ploqhing
-
+eic, oic
+cei
+sei
 
 # Monosyllables in /k/ and /tʃ/
 
