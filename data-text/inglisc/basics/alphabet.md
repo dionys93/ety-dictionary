@@ -20,9 +20,12 @@
 - Ss sh sj
 - Tt th tj
 - Uu Úú
-- Ww ŵ
-- Yy Ŷŷ
+- Ww
+- Yy
 
+
+Caol le caol affects c, t = /tʃ/; d, g = /dʒ/ s = /ʃ/ or /ʒ/
+Circumflex cancels this
 
 ### Phonemes of the Consonants
 
@@ -63,6 +66,8 @@ cache: cæċ
 cash: cæs
 fetch: fait
 sketch: scait
+speak: spaîc -s spóc spócan spaîcyng
+speech: spaic
 proceed: proçîd
 procedure: proçídur
 stammer: stamr
