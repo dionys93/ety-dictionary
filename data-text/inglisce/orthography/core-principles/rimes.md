@@ -5,6 +5,11 @@ i before e except after c-, unless it's -iere
 
 exception: c̃iere
 
+ch -> qhe
+-ghe
+
+to ploqhe pleuc(s ploqhed ploqhing
+
 
 # Monosyllables in /k/ and /tʃ/
 
@@ -112,7 +117,7 @@ Tracking document. Blanks are undecided.
 | snook | snôc, sneox | |
 | took | tôc | |
 
-### /ɑk/
+### /ɑk/ -qhe
 | English | Inglisce |
 |---|---|
 | bloc | bloc, blocs |
@@ -135,7 +140,7 @@ Tracking document. Blanks are undecided.
 | stock | to stoc -s -hed -hing; stoc, stox |
 | wok | uác, uáx |
 
-### /ʌk/
+### /ʌk/ -qhe
 | English | Inglisce |
 |---|---|
 | buck | to beuc -s -hed -hing; beuc, beux |
@@ -148,8 +153,8 @@ Tracking document. Blanks are undecided.
 | shuck | to seuc -s -hed -hing; seux |
 | struck | streuc |
 | stuck | steuc |
-| suck | to suc -s -hed -hing |
-| truck | to treuc -s -hed -hing; treuc, treux |
+| suck | to suqhe suc(s -hed -hing |
+| truck | to truqhe treuc(s -hed -hing; treuc, treux |
 | tuck | to tuc -s -hed -hing |
 
 ### /eɪk/
