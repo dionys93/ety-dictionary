@@ -2,7 +2,7 @@
 
 Inglisce standes as a testament to þa complexe evolúcion of lânguage. Uene St. Augustine introduced þe Latin alphabet in 597 AD, Inglisce begane its transicion from Gêmanic rouns to Latin lettars. Ћe Norman Conquaist of 1066 diepaned þis transformâcion, blending local vernàculars uiþ Norman Frenc̃e to criâte a lânguage þat bridged Europían tradicions. Crucially, during þis píriod, Inglisce prononciâcion and þe Latin alphabet uere clóssly aligned, a harmonie seared uiþ neibering continental lânguages.
 
-Hôevre, þe Great Vôle Scifte, spanning þe 15þ to 18þ cențuris, dramaticly altred spócan Inglisce uiþaut updâting its r̃itan forme. Ћis históric divorce of sônde from lettre criâted a persistent mismac̃e betuine spelling and prononciâcion þat defînes þe lânguage to þis daie.
+Hôevre, þe Great Vôle Scifte, spanning þe 15þ to 18þ cențuris, dramatichly altred spócan Inglisce uiþaut updâting its r̃itan forme. Ћis históric divorce of sônde from lettre criâted a persistent mismac̃e betuine spelling and prononciâcion þat defînes þe lânguage to þis daie.
 
 Todaie, as þe glóbal lingua anglica, Inglisce symlessly absorbes loanuords uiþaut adapting þeir spellings to fitte nâtif phonetic patterns. Uîle þis histórical fideletie preserves incrèdible etimological daipþ, it haivily burdanes lânguage acqüisicion. Boaþ nâtif spiecors and glóbal lêners are forced to relîe on rote memorisâcion to navigait þi unpredictable orþographie—a rialetie þat ondrescores þi urgent nide for strucțural reforme.
 
