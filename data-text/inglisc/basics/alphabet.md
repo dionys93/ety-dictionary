@@ -1,3 +1,28 @@
+### Ddy Inglisċ Alphabeot
+Aa Áá Ææ
+Bb bh bj bhj
+Cc Ċċ
+Dd dd dh dj
+Ee Éé Êê
+Ff fh fj
+Gg Ġġ gh gj
+Hh hj
+Ii Íí Îî
+Jj
+Kk kj
+Ll lj
+Mm mh mj
+Nn nh nj
+Oo Óó
+Pp ph pj
+Rr
+Ss sh sj
+Tt th tj
+Uu Úú
+Ww ŵ
+Yy Ŷŷ
+
+
 ### Phonemes of the Consonants
 
 | Phoneme | Inglisċ |
@@ -37,18 +62,19 @@ cache: cæċ
 cash: cæs
 fetch: fait
 sketch: scait
-proceed: proçíd
-procedure: proçídir
+proceed: proçîd
+procedure: proçídur
 stammer: stamr
 success: sucçess
 fish: fois
 keep, kept: ty caíp, cêpt
 sleep, slept: slaíp, slept
+listen: lysnhan
 
 | OE | Modern editions | OE IPA | Context | ModE spelling | ModE IPA | Evolution to Inglisċ |
 |---|---|---|---|---|---|---|
 | a | a | /ɑ/ | general | a | /æ/ | catt > cat > cat |
-| a | a | /ɑ/ | open-syllable lengthening | a…e | /eɪ/ | nama > name > naim |
+| a | a | /ɑ/ | open-syllable lengthening | a…e | /eɪ/ | nama > name > nagm |
 | a | a | /ɑ/ | before a nasal (rounded allophone [ɒ]) | o | /ɒ/ | lang > long > lang |
 | a | a | /ɑ/ | before ⟨l⟩ + consonant | al | /ɔː/ | eall > all > all |
 | a | a | /ɑ/ | after ⟨w⟩, before ⟨r⟩ | ar | /ɔː(r)/ | wearm > warm > warm |
@@ -58,27 +84,27 @@ sleep, slept: slaíp, slept
 | æ | æ | /æ/ | general | a | /æ/ | þæt > that > ddat |
 | æ | æ | /æ/ | open-syllable lengthening | a…e | /eɪ/ | æcer > acre > æikr |
 | æ | æ | /æ/ | before ⟨r⟩ + consonant | ar | /ɑː(r)/ | bere-ærn > barn > barn |
-| ǣ | æ | /æː/ | general | ea, ee | /iː/ | sǣ > sea(s > saí(os |
-| ǣ | æ | /æː/ | shortened | ea, e | /ɛ/ | slǣpte > slept > slaipt |
+| ǣ | æ | /æː/ | general | ea, ee | /iː/ | sǣ > sea(s > sai(os |
+| ǣ | æ | /æː/ | shortened | ea, e | /ɛ/ | slǣpte > slept > slept |
 | ǣ | æ | /æː/ | before ⟨r⟩ | ere, ear | /ɛə(r)/ | ǣr > ere > er |
 | e | e | /e/ | general | e | /ɛ/ | bedd > bed > beod|
 | e | e | /e/ | open-syllable lengthening | ea | /iː/ | etan > eat > íat |
-| ē | e | /eː/ | general | ee, e…e | /iː/ | fēdan > feed > fíad |
-| ē | e | /eː/ | shortened | e | /ɛ/ | cēpte > kept > caipt |
+| ē | e | /eː/ | general | ee, e…e | /iː/ | fēdan > feed > faid |
+| ē | e | /eː/ | shortened | e | /ɛ/ | cēpte > kept > cêpt |
 | ē | e | /eː/ | before ⟨r⟩ | ere | /ɪə(r)/ | hēr > here > hier |
 | ea | ea | /æɑ̯/ | before ⟨r⟩ + consonant | ar | /ɑː(r)/ | heard > hard > hard |
 | ea | ea | /æɑ̯/ | before ⟨l⟩ + consonant | al | /ɔː/, /ɑː/ | sealt > salt > salt, healf > half > halhf |
 | ea | ea | /æɑ̯/ | before ⟨h⟩ + ⟨t⟩ | eigh | /eɪ/ | eahta > eight > eight |
-| ēa | ea | /æːɑ̯/ | general | ea | /iː/ | bēam > beam > bíam |
+| ēa | ea | /æːɑ̯/ | general | ea | /iː/ | bēam > beam > baim |
 | ēa | ea | /æːɑ̯/ | shortened | ea | /ɛ/ | brēad > bread > bread |
-| ēa | ea | /æːɑ̯/ | before ⟨r⟩ | ear | /ɪə(r)/ | ēare > ear > aír |
+| ēa | ea | /æːɑ̯/ | before ⟨r⟩ | ear | /ɪə(r)/ | ēare > ear > air |
 | ēa | ea | /æːɑ̯/ | before ⟨h⟩ | igh | /aɪ/ | nēah > nigh > nægh |
 | eo | eo | /eo̯/ | general | e, ea | /ɛ/ | seofon > seven > soefen |
 | eo | eo | /eo̯/ | before ⟨r⟩ + consonant | ear, er | /ɜː(r)/ | eorþe > earth > erth |
 | eo | eo | /eo̯/ | before ⟨r⟩ + consonant (some words) | ar, ear | /ɑː(r)/ | steorra > star > stár, heorte > heart > hárt |
-| ēo | eo | /eːo̯/ | general | ee | /iː/ | dēop > deep > doíp |
+| ēo | eo | /eːo̯/ | general | ee | /iː/ | dēop > deep > doip |
 | ēo | eo | /eːo̯/ | shortened | ie | /ɛ/ | frēond > friend > frend |
-| ēo | eo | /eːo̯/ | before ⟨r⟩ | ear, eer | /ɪə(r)/ | dēore > dear > daír |
+| ēo | eo | /eːo̯/ | before ⟨r⟩ | ear, eer | /ɪə(r)/ | dēore > dear > doir |
 | i | i | /i/ | general | i | /ɪ/ | fisc > fish > fois |
 | i | i | /i/ | open-syllable lengthening | ee | /iː/ | wicu > week > wuîc |
 | i | i | /i/ | before ⟨ld, nd, mb⟩ | i | /aɪ/ | cild > child, findan > find |
@@ -86,12 +112,10 @@ sleep, slept: slaíp, slept
 | ī | i | /iː/ | general | i…e, y | /aɪ/ | rīdan > ride > |
 | ī | i | /iː/ | shortened | i | /ɪ/ | wīsdōm > wisdom > wîsdom |
 | ī | i | /iː/ | before ⟨r⟩ | ire | /aɪə(r)/ | scīr > shire |
-| ie | ie | /iy̯/ | Early West Saxon only | — | — | falls with y (or i); yldra > elder /ˈɛldə/ |
-| īe | ie | /iːy̯/ | Early West Saxon only | — | — | falls with ȳ (or ī); hȳran > hear /hɪə/ |
-| io | io | /io̯/ | Northumbrian only | — | — | elsewhere merged with eo; same reflexes |
-| īo | io | /iːo̯/ | Northumbrian only | — | — | elsewhere merged with ēo; same reflexes |
+| ie | ie | /iy̯/ | Early West Saxon only | — | — | falls with y (or i); yldra > elder > eldyr |
+| īe | ie | /iːy̯/ | Early West Saxon only | — | — | falls with ȳ (or ī); hȳran > hear > hyr |
 | o | o | /o/ | general | o | /ɒ/ | god > god |
-| o | o | /o/ | open-syllable lengthening | o…e | /əʊ/ | hopa > hope |
+| o | o | /o/ | open-syllable lengthening | o…e | /əʊ/ | hopa > hope > hoap |
 | o | o | /o/ | before ⟨ld⟩ | o | /əʊ/ | gold > gold |
 | o | o | /o/ | before ⟨r⟩ | or | /ɔː(r)/ | corn > corn |
 | ō | o | /oː/ | general | oo | /uː/ | mōna > moon |
@@ -119,12 +143,11 @@ sleep, slept: slaíp, slept
 | ON | ON IPA | Context | ModE spelling | ModE IPA | Evolution to Inglisċ |
 |---|---|---|---|---|---|
 | a | /a/ | general | a | /æ/ | kasta > cast > cast |
-| a | /a/ | open-syllable lengthening | a…e | /eɪ/ | taka > take > taik |
+| a | /a/ | open-syllable lengthening | a…e | /eɪ/ | taka > take > tagk |
 | a | /a/ | before ⟨ll⟩ | al | /ɔ/ | kalla > call > call |
 | a | /a/ | before ⟨r⟩ | ar | /ɑr/ | karpa > carp > carp |
 | á | /aː/ | general | oa, ow | /oʊ/ | lán > loan > loan, lágr > low > lagh |
 | e | /e/ | general | e | /ɛ/ | egg > egg > êg, leggr > leg > lêg |
-| é | /eː/ | rare in loans | — | — | — |
 | i | /i/ | general | i | /ɪ/ | skinn > skin > skin, kið > kid > cyd |
 | í | /iː/ | general | i…e | /aɪ/ | þrífa > thrive > |
 | o | /o/ | general | o | /ɑ/ | oddi > odd > oad |
@@ -143,11 +166,11 @@ sleep, slept: slaíp, slept
 | ǫ | /ɔ/ | before ⟨r⟩ | ar | /ɑr/ | bǫrkr > bark > |
 | ǫ́ | /ɔː/ | rare in loans | — | — | — |
 | ø | /ø/ | rare in loans | — | — | — |
-| œ | /øː/ | general | ee | /i/ | sœma > seem > soím |
+| œ | /øː/ | general | ee | /i/ | sœma > seem > soim |
 | œ | /øː/ | before ⟨g⟩ | y | /aɪ/ | slœgr > sly > sloigh |
 | au | /au/ | general | o…e | /oʊ/ | hlaupa > lope > |
 | au | /au/ | before ⟨s⟩ | oo | /u/ | lauss > loose > |
-| ei | /ei/ | general | ey, ai | /eɪ/ | þeir > they >, beita > bait >, reisa > raise > |
+| ei | /ei/ | general | ey, ai | /eɪ/ | þeir > they > ddej, beita > bait > beit, reisa > raise > reîs |
 | ey | /ey/ | rare in loans | — | — | — |
 
 | GA | OE sources | ON sources |
