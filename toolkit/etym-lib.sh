@@ -319,6 +319,128 @@ etym-cognates() {
 }
 
 
+# etym-pron <word> [--ipa|--both]
+# Prints the General American pronunciation (CMUdict ARPAbet, stress digits
+# kept) of every word on the [ME] line of each stanza that matches <word>.
+# --ipa converts it to IPA-like notation; --both prints IPA beside ARPAbet.
+# The conversion and its limits are documented at to_ipa in cmu_pron.py.
+#
+# Why this does not go through etym-parse: the parser's me_word keeps only the
+# first token of the [ME] line, so "can, could, can't, couldn't" and
+# "New York" would arrive truncated, and its me_src keeps the suffixes written
+# after the tag ("to close [ME] -s -d -ing"). The extraction below therefore
+# reads the files itself, using etym-parse.awk's own tests for what counts as
+# a reformed line, an [ME] line and a POS tag. If those change there, change
+# them here too.
+#
+# Stanza selection matches etym-info: a stanza is shown when <word> equals any
+# comma-separated form on its [ME] line or the first token of its reformed
+# line. Stanza numbers are positions in the file, as in etym-cat.
+#
+# Only [ME] is read — never [MI] or an older form, since CMUdict describes
+# Modern English. The lookup itself is scripts/cmu_pron.py; it needs the
+# `cmudict` package in the active Python (pip install cmudict), or
+# ETYM_CMUDICT pointing at a cmudict.dict file.
+#
+# Interpreter: $ETYM_PYTHON if set, else the project venv
+# ($PROJECT_ROOT/venv/bin/python) if it exists, else python3. The venv is
+# preferred without needing to be activated, so a shell that sourced only this
+# library still finds a package installed there.
+etym-pron() {
+    local word="" mode="arpa"
+    local usage="Usage: etym-pron <word> [--ipa|--both]"
+
+    while [[ $# -gt 0 ]]; do
+        case "$1" in
+            --ipa)      mode="ipa" ;;
+            --both)     mode="both" ;;
+            --arpa)     mode="arpa" ;;
+            -h|--help)  echo "$usage"; return 0 ;;
+            -*)         echo "$usage" >&2; return 1 ;;
+            *)          [[ -z "$word" ]] && word="$1" ;;
+        esac
+        shift
+    done
+    [[ -z "$word" ]] && { echo "$usage"; return 1; }
+
+    local script="$ETYM_LIB_DIR/scripts/cmu_pron.py"
+    [[ ! -f "$script" ]] && { echo "Error: lookup script not found: $script" >&2; return 1; }
+
+    local file
+    file=$(_etym_resolve_file "$word") || return 1
+
+    local rows
+    rows=$("$_ETYM_AWK" -v want="$word" '
+        function trim(x) { gsub(/^[ \t]+|[ \t]+$/, "", x); return x }
+        function strip_to(x) { sub(/^[tT][oO][ \t]+/, "", x); return x }
+        BEGIN { RS = ""; FS = "\n"; want = tolower(want) }
+        {
+            me = ""; reformed = ""; pos = ""
+            for (i = 1; i <= NF; i++) {
+                line = $i
+                gsub(/\r/, "", line)
+                if (line == "" || line ~ /^http/) continue
+                if (line ~ /\([a-z]/ && line !~ /\[[A-Z]/) { reformed = line; continue }
+                # First [ME] line only, cut at the tag (as the parser does).
+                if (me == "" && match(line, /\[ME\]/))
+                    me = trim(substr(line, 1, RSTART - 1))
+            }
+
+            if (match(reformed, /\([a-z][a-z ,]*\)[ \t]*$/)) {
+                pos = substr(reformed, RSTART + 1)
+                sub(/\).*$/, "", pos)
+            }
+
+            hit = 0
+            n = split(me, forms, ",")
+            for (j = 1; j <= n; j++)
+                if (tolower(strip_to(trim(forms[j]))) == want) hit = 1
+            head = strip_to(trim(reformed))
+            split(head, ht, /[ \t,]+/)
+            sub(/[,.]$/, "", ht[1])
+            if (ht[1] != "" && tolower(ht[1]) == want) hit = 1
+
+            if (hit) printf "%d\t%s\t%s\n", NR, pos, me
+        }
+    ' "$file")
+
+    if [[ -z "$rows" ]]; then
+        echo "Error: '$word' resolved to ${file##*/}, but no stanza in it matches." >&2
+        return 1
+    fi
+
+    local py="${ETYM_PYTHON:-}"
+    if [[ -z "$py" ]]; then
+        if [[ -x "$PROJECT_ROOT/venv/bin/python" ]]; then
+            py="$PROJECT_ROOT/venv/bin/python"
+        else
+            py="python3"
+        fi
+    fi
+
+    # Check the data source before printing anything, so a missing package
+    # reports once, cleanly, and names the interpreter it was missing from.
+    if [[ -n "${ETYM_CMUDICT:-}" ]]; then
+        [[ -f "$ETYM_CMUDICT" ]] || {
+            echo "Error: ETYM_CMUDICT is set but no file is there: $ETYM_CMUDICT" >&2
+            return 1
+        }
+    elif ! "$py" -c 'import cmudict' >/dev/null 2>&1; then
+        {
+            echo "Error: the cmudict package is not installed for $(command -v "$py" || echo "$py")."
+            echo "  Install it into that interpreter:"
+            echo "    \"$py\" -m pip install cmudict"
+            echo "  or point ETYM_PYTHON at an interpreter that has it,"
+            echo "  or set ETYM_CMUDICT to a cmudict.dict file."
+        } >&2
+        return 1
+    fi
+
+    printf -- "--- Pronunciation (CMUdict, General American) for: %s ---\n" "$word"
+    printf '%s\n' "$rows" | "$py" "$script" "$mode"
+}
+
+
 # =============================================================================
 # ANALYSIS
 # =============================================================================
