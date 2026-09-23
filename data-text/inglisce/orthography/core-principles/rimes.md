@@ -1,3 +1,39 @@
+## ⟨c⟩, ⟨ch⟩ and ⟨q⟩ across Romance
+
+| Language | `c` before *a, o, u* | `c` before *e, i* | `ch` | `qu` before *e, i* | `qu` before *a, o* | /kw/ before *e, i* | Final `-c` |
+|---|---|---|---|---|---|---|---|
+| French | /k/ | /s/ | /ʃ/; /k/ in Greek words (*archéologie*) | /k/, `u` silent | /k/ or /kw/ (*quatre* /k/, *quadrupède* /kw/) | rare; `qu` in learned words (*équateur*) | /k/ (*sac*), silent in some (*tabac*, *blanc*) |
+| Spanish | /k/ | /θ/ or /s/ | /tʃ/ | /k/, `u` silent | — (`cu`: *cuando*) | `cu` (*frecuente*, *cuestión*) | rare, loans only |
+| Portuguese | /k/ | /s/ | /ʃ/ | /k/ or /kw/, ambiguous since 1990 (*tranquilo*) | /kw/ (*quatro*, *quota*) | `qu`, unmarked (*frequente*) | rare |
+| Galician | /k/ | /θ/ or /s/ | /tʃ/ | /k/, `u` silent | — (`cu`: *cuarto*) | `cu` (*cincuenta*) | rare |
+| Catalan | /k/ | /s/ | /k/, in surnames only (*March*, *Bosch*) | /k/, `u` silent | /kw/ (*quatre*, *quota*) | `qü` (*qüestió*, *freqüent*) | /k/ (*amic*) |
+| Occitan | /k/ | /s/ | /tʃ/, dialectally /ts/ | /k/, `u` silent | /kw/ (*quan*) | `qü` | /k/ (*amic*) |
+| Italian | /k/ | /tʃ/ | /k/ (*che*, *chi*) | — | /kw/ (*quando*, *quota*) | `qu` (*questo* /kwesto/) | very rare |
+| Romanian | /k/ | /tʃ/ | /k/ (*chema*) | — | loans only | loans only | /k/ (*sac*) |
+| Corsican | /k/ | /tʃ/ | /k/ before *e, i*; `chj` = /c/ | — | /kw/ | /kw/ | rare |
+| Friulian | /k/ | /tʃ/ or /s/; `ç` = /tʃ/ before *a, o, u* | /k/ before *e, i*; `cj` = /c/ | /k/ | — | `cu` (*cuatri*, *cuadrade*) | /k/ |
+| Sardinian (Logudorese) | /k/ | — (`ch`: *chentu*) | /k/ before *e, i* | — | Latin /kʷ/ lost: *cale* < *qualem*, *limba* < *lingua* | — | /k/ |
+
+### Three patterns
+
+1. **`Ch` splits the family.** /k/ in Italian, Romanian, Corsican, Friulian and
+   Sardinian; /tʃ/ in Spanish, Galician, Occitan; /ʃ/ in French and Portuguese.
+   Catalan keeps /k/ only in surnames.
+2. **/kw/ before a front vowel is the sore spot everywhere.** Four solutions
+   exist: `cu` (Spanish, Galician, Friulian), `qü` (Catalan, Occitan), plain
+   `qu` (Italian, Portuguese), and losing the sound (Sardinian).
+3. **Final `-c` for /k/ is normal** in Catalan, Occitan, Romanian, Friulian,
+   Sardinian and French.
+
+
+
+
+
+
+
+
+
+
 -offe / -oste / -ofre, the terminal sets
 
 
