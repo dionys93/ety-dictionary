@@ -15,104 +15,64 @@
 | Sardinian (Logudorese) | /k/ | — | /k/ (*chentu*) | `ch` | Latin /kʷ/ lost (*cale* < *qualem*) | /g/ | — | `gh` (*ghéneru*) | Latin /gʷ/ lost (*limba* < *lingua*) | — | /k/ |
 | Gallo (ABCD) | /k/ | /s/ | /ʃ/ (*Chapèl* [ʃapɛl]) | `q` alone (*qhi*'s partner; *Qenpenia*) | rare | /g/ | — | `gu` (*guernouille*) | rare | `qh` = /c/, [kj], [tʃ]; `gh` = /ɟ/, [gj], [dʒ] | /k/ |
 
-### Patterns
-
-1. **`Ch` splits the family.** /k/ in Italian, Romanian, Corsican, Friulian and
-   Sardinian; /tʃ/ in Spanish, Galician, Occitan; /ʃ/ in French, Portuguese and
-   Gallo. Catalan keeps /k/ only in surnames.
-2. **/k/ before a front vowel has three solutions:** `qu` (French, Spanish,
-   Portuguese, Galician, Catalan, Occitan), `ch` (Italian, Romanian, Corsican,
-   Friulian, Sardinian), and bare `q` (Gallo alone).
-3. **/kw/ before a front vowel is the sore spot everywhere.** Four solutions:
-   `cu` (Spanish, Galician, Friulian), `qü` (Catalan, Occitan), plain `qu`
-   (Italian, Portuguese), and losing the sound (Sardinian).
-4. **The `gu` / `gh` split mirrors the `qu` / `ch` split.** Where `gu` is
-   silent-*u* /g/, `gü` is needed for /gw/; where `gu` is /gw/, `gh` is needed
-   for /g/. No language gets both jobs out of one digraph.
-5. **`Gü` is far more widespread than `qü`.** Four languages use `gü`; only
-   Catalan and Occitan use `qü`.
-6. **Three devices exist in Romance for /kj/ and /gj/:** Italian and Romanian
-   `chi` / `ghi` before a vowel; Corsican `chj` / `ghj` and Friulian `cj` / `gj`;
-   and Gallo `qh` / `gh`. All write a palatal stop. Iberian marks the `u` with a
-   diacritic; Italic and Gallo add a letter.
-7. **Gallo is the only system that pairs the palatals with a bare velar letter.**
-   `Q` : `qh` and `g` : `gh` is one mechanism for both, where Italian needs
-   `ch`/`chi` against `gh`/`ghi`.
-
 ---
 
-## B. Iberian + Gallo palatals
+# Velars
 
-As A, but /kj/ and /gj/ take the Gallo palatals.
+## Key
 
-| Sound | Before a, o, u | Before e, i, y | Final |
+| Sound | Device | Grounding | Competing for it |
 |---|---|---|---|
-| /k/ | `c` | `qu` | `c`, `-que` |
-| /kw/ | `cu` | `cu` | — |
-| /kj/ | `qh` | `qh` | `qh` |
-| /g/ | `g` | `gu` | — |
-| /gw/ | `gu` | `gü` | — |
-| /gj/ | `gh` | `gh` | `gh` |
+| /tʃ/ | `ch` | Old French, Spanish, English | settled |
+| /k/ before *e, i* | `qu`; `-que` word-final | French, Spanish, Catalan, Galician | `c̃h` if Greek words keep a `ch`; bare `q` (Gallo) |
+| /kw/ | `cu` | Old English *cw-*, Spanish, Galician, Friulian | `qu` if /k/ moves |
+| /kj/ | `cu`, or `qh` | Gallo `qh`, Friulian `cj`, Italian `chi` | unmarked; `c̃` |
+| /g/ before *e, i* | `gu` | five Romance standards | settled |
+| /gw/ before *e, i* | `gü` | four Romance standards | settled |
+| /gj/ | `gu`, or `gh` | Gallo `gh`, Friulian `gj`, Italian `ghi` | `g̃` |
 
-bâqued · monquie · frícuent · solilocuie · pengüine · qh-forms for evacuate,
-rescue, cue · gh-forms for argue, ambiguous
+## Worksheet
 
-Every sound has its own spelling. No stem-dependence, no hiatus marks.
-`Gh` is free because /g/ before front vowels is `gu`.
+| Sound | Position | Environment | English | Inglisce |
+|---|---|---|---|---|
+| /k/ | initial | before a, o, u, cons. | cat, cot, cut, cold, claw, crab, quay | | 
+| /k/ | initial | before e, i, y | keep, kin, kill, kettle, key, kite, chemist, kilo | | 
+| /k/ | medial | before a, o, u, cons. | second, bacon, vacant, acorn, focus, doctor, picture | | 
+| /k/ | medial | before e, i, y | market, basket, pocket, bucket, jockey, donkey, monkey, architect, archive, anarchy, bakery, taking, baked | | 
+| /k/ | final | after any vowel | attic, basic, music, panic, talk, walk, milk, ask | | 
+| /k/ | final | `-ck`, `-ke`, `-que` | back, lake, antique, unique, plaque, conch, oblique, opaque, torque | | 
+| /kw/ | initial | before a, o | quack, quad, quantity, qualify, quarry, quota, quorum, quote | | 
+| /kw/ | initial | before e | queen, quell, question, quest, quench, query | | 
+| /kw/ | initial | before i | quick, quit, quiz, quill, quiet, quite, quire | | 
+| /kw/ | medial | before a, o | equate, equator, adequate, aquatic, aquarium, squad, squash, quadrant | | 
+| /kw/ | medial | before e | frequent, sequence, consequent, eloquent, delinquent, subsequent, conquer, banquet, sequel, request | | 
+| /kw/ | medial | before i | liquid, squid, ubiquitous, colloquial, obliquity, acquire, require, inquire, bequeath, antiquity, soliloquy, colloquy, obloquy, ventriloquy | | 
+| /kj/ | initial | before cons. or final | cute, cue, cure, curious, cumulative, queue | | 
+| /kj/ | medial | before cons. | accurate, secure, document, particular, vacuum, circular, calculate, occupy, articulate | | 
+| /kj/ | medial | before a vowel | evacuate, vacuous, innocuous, conspicuous, promiscuous, arcuate, vacuity, promiscuity, circuit, evacuee | |
+| /kj/ | final | — | rescue, barbecue, curlicue, miscue | |
+| /g/ | initial | before a, o, u, cons. | gap, got, gut, glad, grab, ghost | |
+| /g/ | initial | before e, i, y | get, give, gift, girl, geese, guess, guilt, gear, geld | |
+| /g/ | medial | before a, o, u, cons. | again, agog, legal, regard, cargo, ago | |
+| /g/ | medial | before e, i, y | forget, target, bigger, baggy, dagger, logger, begin, finger, anger, hunger, linger, eager, tiger, bagged, bagging | |
+| /g/ | final | after any vowel | bag, dog, rug, drag, big, leg, egg | |
+| /g/ | final | `-gue` | league, vague, rogue, plague, tongue, fatigue, intrigue, colleague | |
+| /gw/ | initial | before a, o | guava, guano, guacamole, Gwen | |
+| /gw/ | medial | before a, o | jaguar, iguana, Nicaragua, language, languor, anguish | |
+| /gw/ | medial | before e, i | penguin, distinguish, extinguish, languish, linguist, lingual, sanguine, unguent, segue, linguine | |
+| /gj/ | medial | before cons. | regular, figure, angular, singular, jugular, legume, ligature | |
+| /gj/ | medial | before a vowel | ambiguous, contiguous, exiguous, ambiguity, contiguity, arguing, argued | |
+| /gj/ | final | — | argue, ague, fugue | |
 
----
+## Empty cells
 
-# English velar inventory
+No final /kw/ or /gw/. No initial /kj/ or /gj/ before a vowel. No initial /gj/
+at all (*gules*, *gewgaw* are marginal). No /k/ or /g/ before a front vowel
+word-finally — English uses `-ck`, `-ke`, `-que`, `-gue` there.
 
-Conventional English spellings only. Stress-bearing examples first in each cell.
 
-## /k/
 
-| Position | Before a, o, u, or a consonant | Before e, i, y |
-|---|---|---|
-| Initial | cat, cot, cut, cold, claw, crab, quay | keep, kin, kill, kettle, key, kite, chemist, kilo |
-| Medial | second, bacon, vacant, acorn, focus, doctor, picture | market, basket, pocket, bucket, jockey, donkey, monkey, architect, archive, anarchy, bakery, taking, baked |
-| Final | attic, basic, music, panic, talk, walk, milk, ask | — (English has no final /ke/ or /ki/; the sound is spelled `-ck`, `-ke`, `-que`: back, lake, antique, unique, plaque, conch, oblique, opaque, torque) |
 
-## /kw/
-
-| Position | Before a, o | Before e | Before i |
-|---|---|---|---|
-| Initial | quack, quad, quantity, qualify, quarry, quota, quorum, quote | queen, quell, question, quest, quench, query | quick, quit, quiz, quill, quiet, quite, quire |
-| Medial | equate, equator, adequate, aquatic, aquarium, squad, squash, quadrant | frequent, sequence, consequent, eloquent, delinquent, subsequent, conquer, banquet, sequel, request, acquest | liquid, squid, ubiquitous, colloquial, obliquity, acquire, require, inquire, bequeath, antiquity, soliloquy, colloquy, obloquy, ventriloquy |
-| Final | — (English has no final /kw/) | | |
-
-## /kj/
-
-| Position | Before a consonant or word-final | Before a vowel |
-|---|---|---|
-| Initial | cute, cue, cure, curious, cumulative, queue | — |
-| Medial | accurate, secure, document, particular, vacuum, circular, calculate, occupy, articulate | evacuate, vacuous, innocuous, conspicuous, promiscuous, arcuate, vacuity, promiscuity, circuit, evacuee |
-| Final | rescue, barbecue, curlicue, miscue, imbue's pattern | — |
-
-## /g/
-
-| Position | Before a, o, u, or a consonant | Before e, i, y |
-|---|---|---|
-| Initial | gap, got, gut, glad, grab, ghost | get, give, gift, girl, geese, guess, guilt, gear, geld |
-| Medial | again, agog, legal, regard, cargo, argue's *g*, ago | forget, target, bigger, baggy, dagger, logger, begin, finger, anger, hunger, linger, eager, tiger, bagged, bagging |
-| Final | bag, dog, rug, drag, big, leg, egg | — (final `-gue`: league, vague, rogue, plague, tongue, fatigue, intrigue, colleague) |
-
-## /gw/
-
-| Position | Before a, o | Before e, i |
-|---|---|---|
-| Initial | guava, guano, guacamole, Gwen | — |
-| Medial | jaguar, iguana, Nicaragua, language, languor, anguish | penguin, distinguish, extinguish, languish, linguist, lingual, sanguine, unguent, segue, ambiguity's *gu*, linguine |
-| Final | — | — |
-
-## /gj/
-
-| Position | Before a consonant | Before a vowel |
-|---|---|---|
-| Initial | — (*gules*, *gewgaw* are marginal) | — |
-| Medial | regular, figure, angular, singular, jugular, legume, ligature | ambiguous, contiguous, exiguous, ambiguity, contiguity, arguing, argued |
-| Final | argue, ague, fugue's pattern, intrigue's is /g/ | — |
 
 ---
 
@@ -1317,12 +1277,4 @@ to taic -s tâquing
 
 ---
 
-| Sound | Device | Grounding | Competing for it |
-|---|---|---|---|
-| /tʃ/ | `ch` | Old French, Spanish, English | settled |
-| /k/ before *e, i* | `qu` | French, Spanish, Catalan, Galician | `c̃h` if Greek words keep a `ch`; bare `q` (Gallo) |
-| /kw/ | `cu` | Spanish, Galician, Friulian | `qu` if /k/ moves |
-| /g/ before *e, i* | `gu` | five Romance standards | settled |
-| /gw/ before *e, i* | `gü` | four Romance standards | settled |
-| /kj/ | `cu`, or `qh` | Gallo `qh`, Friulian `cj`, Italian `chi` | unmarked, per the earlier finding; `c̃` |
-| /gj/ | `gu`, or `gh` | Gallo `gh`, Friulian `gj`, Italian `ghi` | `g̃` |
+
