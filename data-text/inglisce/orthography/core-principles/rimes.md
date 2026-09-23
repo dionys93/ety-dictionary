@@ -42,8 +42,47 @@
 ---
 
 
+## A. Iberian — Spanish, Galician
+
+| Sound | Before a, o, u | Before e, i, y | Final |
+|---|---|---|---|
+| /k/ | `c` | `qu` | `c`, `-que` |
+| /kw/ | `cu` | `cu` | — |
+| /kj/ | `cu` | `cu` | `cú` |
+| /g/ | `g` | `gu` | — |
+| /gw/ | `gu` | `gü` | — |
+| /gj/ | `gu` | `gu` | `gú` |
+
+bâqued · monquie · arqui- · cuaic · cuine · frícuent · solilocuie · evacuait ·
+pengüine · argue
+
+One letter, `u`, carries glide, silence and vowel. /kj/ and /gj/ have no
+device of their own, so collisions fall back on stress marks or the stem.
+Q never appears without u. Fewest letters, most ambiguity.
+
+---
+
+## B. Iberian + Gallo palatals
+
+As A, but /kj/ and /gj/ take the Gallo palatals.
+
+| Sound | Before a, o, u | Before e, i, y | Final |
+|---|---|---|---|
+| /k/ | `c` | `qu` | `c`, `-que` |
+| /kw/ | `cu` | `cu` | — |
+| /kj/ | `qh` | `qh` | `qh` |
+| /g/ | `g` | `gu` | — |
+| /gw/ | `gu` | `gü` | — |
+| /gj/ | `gh` | `gh` | `gh` |
+
+bâqued · monquie · frícuent · solilocuie · pengüine · qh-forms for evacuate,
+rescue, cue · gh-forms for argue, ambiguous
+
+Every sound has its own spelling. No stem-dependence, no hiatus marks.
+`Gh` is free because /g/ before front vowels is `gu`.
 
 
+---
 
 -offe / -oste / -ofre, the terminal sets
 
@@ -1247,3 +1286,5 @@ to taic -s tâquing
 | fracture | fracțure |
 | capture | capțure |
 | picture | picțure |
+
+## 
