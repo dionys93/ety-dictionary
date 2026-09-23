@@ -96,7 +96,7 @@
 | Sound | Position | Environment | English | Inglisce |
 |---|---|---|---|---|
 | /k/ | initial | before a, o, u, cons. | cat, cot, cut, cold, claw, crab, quay | cate, cáte, cutte, coald, clahe, crabe, qaíe | 
-| /k/ | initial | before e, i, y | keep, kin, kill, kettle, key, kite, chemist, kilo | caípe, cyne, caitle, caíe, cŷte, c̃hemist, c̃hilo | 
+| /k/ | initial | before e, i, y | keep, kin, kill, kettle, key, kite, chemist, kilo | cuiepe, cyne, caitle, cuae, cŷte, c̃hemist, c̃hilo | 
 | /k/ | medial | before a, o, u, cons. | second, bacon, vacant, acorn, focus, doctor, picture | second, bâcon, vâcant, eacorn | 
 | /k/ | medial | before e, i, y | market, basket, pocket, bucket, jockey, donkey, monkey, architect, archive, anarchy, bakery, taking, baked | | 
 | /k/ | final | after any vowel | attic, basic, music, panic, talk, walk, milk, ask | | 
