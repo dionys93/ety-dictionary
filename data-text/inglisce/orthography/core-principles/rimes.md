@@ -12,8 +12,6 @@
 | /gw/ before *e, i* | `gü` | four Romance standards | settled |
 | /gj/ | `g̃` | Gallo `gh`, Friulian `gj`, Italian `ghi` | `g̃` |
 
-## Worksheet
-
 # Velars by syllable count, position and environment
 
 English spellings. — means the cell is empty in English.
