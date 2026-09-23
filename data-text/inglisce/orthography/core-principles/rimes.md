@@ -1144,4 +1144,31 @@ names one.
 | `c` for /kw/ before *ui*, *oi* | coic̃e, vencoișe |
 
 
+pinkish: pinquiș
 
+China, chinese: Choina/Qhoina, choinise/qhoinise
+chide: chîde
+child, children: choilde, children
+chai: chae, chais; 
+chase: chaice
+catch: caiche
+fetch: faiche
+cheat: cheite 
+cheer: chiare, 
+beech : boich 
+beach: beich, to beiche
+
+Always /tʃ/: ch
+/tʃ/ between vowels, after n, x: litterațure, advențure, mixțure
+/ʃ/ after c, p: fracțure, capțure, picțure
+Always hard /k/: -que, -quie, -quiș: pinquiș, -c, ca-, co-: coichene, coichins (kitchen), caíe (key from caeg), caípe (keep from cepan)
+Sometimes hard, sometimes soft: cy-
+Always soft: c+{i, e, -y}, ç + {a, o, u}=/s/; ç + {e, i, y}=/ʃ/
+/kw/ qu-: quote, quânt, quantom, quarie; -qu-: squide, liquide, bequíþe, requîer; cu+vowel-:cuaic, cuac, cuine; -coie/kwi/: solilocoie, -coișe /kwɪ/; cuiere (queer), coîre (choir)
+/gw/ guapo, -goișe
+/kj/ -cu-: evacuíe; -cu/monosyl: rescue, cue
+
+likewise lîquoise
+
+to baic baqued baquing bâque'm (what strat would this be?)
+to taic -s tâquing
