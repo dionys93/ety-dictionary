@@ -14,6 +14,7 @@
 | Friulian | /k/ | /tʃ/ or /s/; `ç` = /tʃ/ before *a, o, u* | /k/ before *e, i*; `cj` = /c/ | /k/ | — | `cu` (*cuatri*, *cuadrade*) | /k/ |
 | Sardinian (Logudorese) | /k/ | — (`ch`: *chentu*) | /k/ before *e, i* | — | Latin /kʷ/ lost: *cale* < *qualem*, *limba* < *lingua* | — | /k/ |
 
+
 ### Three patterns
 
 1. **`Ch` splits the family.** /k/ in Italian, Romanian, Corsican, Friulian and
@@ -25,7 +26,36 @@
 3. **Final `-c` for /k/ is normal** in Catalan, Occitan, Romanian, Friulian,
    Sardinian and French.
 
+## ⟨g⟩, /gw/, /kj/ and /gj/ across Romance
 
+| Language | `g` before *a, o, u* | `g` before *e, i* | /g/ before *e, i* | /gw/ before *a, o* | /gw/ before *e, i* | /kj/ | /gj/ |
+|---|---|---|---|---|---|---|---|
+| French | /g/ | /ʒ/ | `gu` (*guerre*) | `gou` (*gouache*) | rare; `gu` + tréma on the *u* (*aigüe*) | — (has /kɥ/: *cuisine*) | — |
+| Spanish | /g/ | /x/ | `gu` (*guerra*) | `gu` (*guante*) | `gü` (*pingüino*) | — | — |
+| Portuguese | /g/ | /ʒ/ | `gu` | `gu` (*guarda*) | `gu`, ambiguous since 1990 (*linguiça*) | — | — |
+| Galician | /g/ | /ʃ/ or /x/ | `gu` | `gu` | `gü` (*pingüín*) | — | — |
+| Catalan | /g/ | /ʒ/ | `gu` (*guerra*) | `gu` (*guant*) | `gü` (*pingüí*, *aigües*) | — | — |
+| Occitan | /g/ | /dʒ/ | `gu` | `gu` | `gü` | — | — |
+| Italian | /g/ | /dʒ/ | `gh` (*ghetto*) | `gu` (*guardare*) | `gu` (*guerra* /gwɛrra/) | `chi` + vowel (*chiave*) | `ghi` + vowel (*ghiaccio*) |
+| Romanian | /g/ | /dʒ/ | `gh` (*ghetou*) | rare | rare | `chi` + vowel (*chiar*) | `ghi` + vowel (*ghiață*) |
+| Corsican | /g/ | /dʒ/ | `gh` | `gu` | `gu` | `chj` = /c/ | `ghj` = /ɟ/ |
+| Friulian | /g/ | /dʒ/ | `gh` | `gu` | `gu` | `cj` = /c/ | `gj` = /ɟ/ |
+| Sardinian (Logudorese) | /g/ | — | `gh` (*ghéneru*) | Latin /gʷ/ lost (*limba* < *lingua*) | — | — | — |
+
+### Patterns
+
+1. **The `gu` / `gh` split is the mirror of the `qu` / `ch` split.** Languages
+   where `gu` is silent-*u* /g/ (Spanish, Portuguese, Galician, Catalan,
+   Occitan, French) need `gü` for /gw/. Languages where `gu` is /gw/ (Italian)
+   need `gh` for /g/. No language gets both jobs out of one digraph.
+2. **Only two devices exist in Romance for /kj/ and /gj/:** the Italian and
+   Romanian `chi` / `ghi` before a vowel, and the Corsican `chj` / `ghj` and
+   Friulian `cj` / `gj`, which write palatal stops.
+3. **Diacritic on the `u` is the Iberian solution; digraph is the Italic one.**
+   Spanish, Galician, Catalan and Occitan mark the letter; Italian, Romanian,
+   Corsican and Friulian add a letter instead.
+4. **`Gü` is far more widespread than `qü`.** Only Catalan and Occitan use
+   `qü`; four languages use `gü`.
 
 
 ---
