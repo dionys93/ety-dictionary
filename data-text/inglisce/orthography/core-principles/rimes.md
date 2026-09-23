@@ -405,7 +405,7 @@ Tracking document. Blanks are undecided.
 | reach | reic̃e |
 | screech | screic̃e |
 | speech | speic̃e |
-| teach | teic̃e, teic̃es, tauht, teic̃ing; teic̃or |
+| teach | teic̃e, teic̃es, tauht, teic̃ing; teic̃er |
 
 ### /oʊtʃ/
 | English | Inglisce |
