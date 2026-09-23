@@ -57,8 +57,8 @@
 | /kj/ | medial | before cons. | accurate, secure, document, particular, vacuum, circular, calculate, occupy, articulate | accurat, secure, document, particular, vacume, circular, calculait, occupae, articulat, articulait | 
 | /kj/ | medial | before a vowel | evacuate, vacuous, innocuous, conspicuous, promiscuous, arcuate, vacuity, promiscuity, circuit, evacuee | |
 | /kj/ | final | — | rescue, barbecue, curlicue, miscue | |
-| /g/ | initial | before a, o, u, cons. | gap, got, gut, glad, grab, ghost | |
-| /g/ | initial | before e, i, y | get, give, gift, girl, geese, guess, guilt, gear, geld | |
+| /g/ | initial | before a, o, u, cons. | gap, got, gut, glad, grab, ghost | gape, got, gutte, glad, grabe, goaste |
+| /g/ | initial | before e, i, y | get, give, gift, girl, geese, guess, guilt, gear, geld | gait, ghive, ghifte, gurle, ghiess, gaisse, ghiere, ghelde |
 | /g/ | medial | before a, o, u, cons. | again, agog, legal, regard, cargo, ago | |
 | /g/ | medial | before e, i, y | forget, target, bigger, baggy, dagger, logger, begin, finger, anger, hunger, linger, eager, tiger, bagged, bagging | |
 | /g/ | final | after any vowel | bag, dog, rug, drag, big, leg, egg | |
