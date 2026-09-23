@@ -65,6 +65,625 @@ English spellings. — means the cell is empty in English.
 
 ---
 
+# Velar worksheet
+
+Fill the right column. Blank cells are English's empty slots.
+
+## /k/
+
+### Before *a, o, u* — mono, initial
+| English | Inglisce |
+|---|---|
+| cat | |
+| cot | |
+| cut | |
+| calm | |
+| cusp | |
+
+### Before *a, o, u* — mono, medial
+| English | Inglisce |
+|---|---|
+| scab | |
+| scar | |
+| scoff | |
+| scum | |
+
+### Before *a, o, u* — poly, initial
+| English | Inglisce |
+|---|---|
+| cabin | |
+| collar | |
+| cousin | |
+| camera | |
+
+### Before *a, o, u* — poly, medial
+| English | Inglisce |
+|---|---|
+| bacon | |
+| vacant | |
+| acorn | |
+| focus | |
+| second | |
+
+### Before *e, i, y* — mono, initial
+| English | Inglisce |
+|---|---|
+| keep | |
+| key | |
+| kid | |
+| kin | |
+| king | |
+| kit | |
+| kill | |
+| kiss | |
+| kick | |
+| keg | |
+| kept | |
+
+### Before *e, i, y* — mono, medial
+| English | Inglisce |
+|---|---|
+| skid | |
+| skit | |
+| ski | |
+| skin | |
+| skill | |
+| skip | |
+| sketch | |
+| skew | |
+
+### Before *e, i, y* — poly, initial
+| English | Inglisce |
+|---|---|
+| kettle | |
+| kindle | |
+| kilo | |
+| chemist | |
+| kayak | |
+
+### Before *e, i, y* — poly, medial
+| English | Inglisce |
+|---|---|
+| market | |
+| basket | |
+| pocket | |
+| bucket | |
+| jockey | |
+| donkey | |
+| monkey | |
+| architect | |
+| archive | |
+| bakery | |
+| taking | |
+| baked | |
+
+### Before a consonant — mono, initial
+| English | Inglisce |
+|---|---|
+| claw | |
+| crab | |
+| clip | |
+| cream | |
+
+### Before a consonant — mono, medial
+| English | Inglisce |
+|---|---|
+| act | |
+| fact | |
+| duct | |
+| risk | |
+| ask | |
+| milk | |
+
+### Before a consonant — poly, initial
+| English | Inglisce |
+|---|---|
+| clever | |
+| credit | |
+| cluster | |
+
+### Before a consonant — poly, medial
+| English | Inglisce |
+|---|---|
+| doctor | |
+| picture | |
+| actor | |
+| tactic | |
+
+### `ck` + unstressed syllable — before *l*
+| English | Inglisce |
+|---|---|
+| tackle | |
+| buckle | |
+| pickle | |
+| knuckle | |
+| tickle | |
+| freckle | |
+| speckle | |
+| chuckle | |
+| cackle | |
+| heckle | |
+
+### `ck` + unstressed syllable — before *e*
+| English | Inglisce |
+|---|---|
+| chicken | |
+| thicken | |
+| quicken | |
+| blacken | |
+| bucket | |
+| pocket | |
+| racket | |
+| ticket | |
+| socket | |
+| wicked | |
+
+### `ck` + *y*
+| English | Inglisce |
+|---|---|
+| lucky | |
+| rocky | |
+| sticky | |
+| tricky | |
+| picky | |
+| cocky | |
+| hockey | |
+| jockey | |
+| lackey | |
+
+### Word-final — mono
+| English | Inglisce |
+|---|---|
+| back | |
+| lake | |
+| pick | |
+| luck | |
+| talk | |
+| walk | |
+| ache | |
+
+### Word-final — poly
+| English | Inglisce |
+|---|---|
+| attic | |
+| basic | |
+| music | |
+| panic | |
+| antique | |
+| unique | |
+| plaque | |
+| oblique | |
+| opaque | |
+| torque | |
+| mosque | |
+
+## /kw/
+
+### Before *a, o* — mono, initial
+| English | Inglisce |
+|---|---|
+| quack | |
+| quad | |
+| quart | |
+| quash | |
+| quote | |
+
+### Before *a, o* — mono, medial
+| English | Inglisce |
+|---|---|
+| squad | |
+| squash | |
+| squat | |
+
+### Before *a, o* — poly, initial
+| English | Inglisce |
+|---|---|
+| quantity | |
+| qualify | |
+| quarry | |
+| quota | |
+| quorum | |
+
+### Before *a, o* — poly, medial
+| English | Inglisce |
+|---|---|
+| equate | |
+| equator | |
+| adequate | |
+| aquatic | |
+| aquarium | |
+| quadrant | |
+
+### Before *e* — mono, initial
+| English | Inglisce |
+|---|---|
+| queen | |
+| quell | |
+| quench | |
+| quest | |
+
+### Before *e* — mono, medial
+| English | Inglisce |
+|---|---|
+| squelch | |
+
+### Before *e* — poly, initial
+| English | Inglisce |
+|---|---|
+| question | |
+| query | |
+| queasy | |
+| querulous | |
+
+### Before *e* — poly, medial
+| English | Inglisce |
+|---|---|
+| frequent | |
+| sequence | |
+| sequel | |
+| consequent | |
+| eloquent | |
+| delinquent | |
+| banquet | |
+| request | |
+| bequeath | |
+
+### Before *i* — mono, initial
+| English | Inglisce |
+|---|---|
+| quick | |
+| quit | |
+| quiz | |
+| quill | |
+| quilt | |
+| quire | |
+
+### Before *i* — mono, medial
+| English | Inglisce |
+|---|---|
+| squid | |
+| squint | |
+| squirm | |
+
+### Before *i* — poly, initial
+| English | Inglisce |
+|---|---|
+| quiet | |
+| quiver | |
+| quinine | |
+
+### Before *i* — poly, medial
+| English | Inglisce |
+|---|---|
+| liquid | |
+| ubiquitous | |
+| colloquial | |
+| acquire | |
+| require | |
+| inquire | |
+| antiquity | |
+| soliloquy | |
+| colloquy | |
+| obloquy | |
+
+## /kj/
+
+### Before a consonant — mono, initial
+| English | Inglisce |
+|---|---|
+| cute | |
+| cure | |
+| curd | |
+| cued | |
+
+### Before a consonant — poly, initial
+| English | Inglisce |
+|---|---|
+| curious | |
+| cumulative | |
+| cupid | |
+| cubicle | |
+
+### Before a consonant — poly, medial
+| English | Inglisce |
+|---|---|
+| accurate | |
+| secure | |
+| document | |
+| particular | |
+| circular | |
+| calculate | |
+| occupy | |
+| vacuum | |
+
+### Before a vowel — poly, medial
+| English | Inglisce |
+|---|---|
+| evacuate | |
+| vacuous | |
+| innocuous | |
+| conspicuous | |
+| promiscuous | |
+| arcuate | |
+| vacuity | |
+| promiscuity | |
+| circuit | |
+| evacuee | |
+
+### Word-final — mono
+| English | Inglisce |
+|---|---|
+| cue | |
+| queue | |
+
+### Word-final — poly
+| English | Inglisce |
+|---|---|
+| rescue | |
+| barbecue | |
+| curlicue | |
+| miscue | |
+
+## /g/
+
+### Before *a, o, u* — mono, initial
+| English | Inglisce |
+|---|---|
+| gap | |
+| got | |
+| gut | |
+| gas | |
+| gob | |
+
+### Before *a, o, u* — poly, initial
+| English | Inglisce |
+|---|---|
+| gallon | |
+| gossip | |
+| gutter | |
+| gather | |
+
+### Before *a, o, u* — poly, medial
+| English | Inglisce |
+|---|---|
+| again | |
+| agog | |
+| cargo | |
+| ago | |
+| legal | |
+
+### Before *e, i, y* — mono, initial
+| English | Inglisce |
+|---|---|
+| get | |
+| give | |
+| gift | |
+| girl | |
+| guess | |
+| guilt | |
+| geese | |
+| gear | |
+| geld | |
+
+### Before *e, i, y* — poly, initial
+| English | Inglisce |
+|---|---|
+| getaway | |
+| giddy | |
+| guitar | |
+| gizzard | |
+
+### Before *e, i, y* — poly, medial
+| English | Inglisce |
+|---|---|
+| forget | |
+| target | |
+| bigger | |
+| baggy | |
+| dagger | |
+| begin | |
+| finger | |
+| anger | |
+| hunger | |
+| linger | |
+| eager | |
+| tiger | |
+| bagged | |
+| bagging | |
+
+### Before a consonant — mono, initial
+| English | Inglisce |
+|---|---|
+| glad | |
+| grab | |
+| glow | |
+| grim | |
+
+### Before a consonant — poly, initial
+| English | Inglisce |
+|---|---|
+| glisten | |
+| gravel | |
+| grocer | |
+
+### Before a consonant — poly, medial
+| English | Inglisce |
+|---|---|
+| regard | |
+| degrade | |
+| aggregate | |
+
+### Word-final — mono
+| English | Inglisce |
+|---|---|
+| bag | |
+| dog | |
+| rug | |
+| big | |
+| leg | |
+| egg | |
+| league | |
+| vague | |
+| rogue | |
+| plague | |
+| tongue | |
+
+### Word-final — poly
+| English | Inglisce |
+|---|---|
+| fatigue | |
+| intrigue | |
+| colleague | |
+| catalogue | |
+
+## /gw/
+
+### Before *a, o* — mono, initial
+| English | Inglisce |
+|---|---|
+| Gwen | |
+
+### Before *a, o* — poly, initial
+| English | Inglisce |
+|---|---|
+| guava | |
+| guano | |
+| guacamole | |
+
+### Before *a, o* — poly, medial
+| English | Inglisce |
+|---|---|
+| jaguar | jaguoire |
+| iguana | same |
+| Nicaragua | same |
+| language | same |
+| languor | langre |
+| anguish | angoișe |
+
+### Before *e, i* — poly, medial
+| English | Inglisce |
+|---|---|
+| penguin | pengüine |
+| distinguish | distingoișe |
+| extinguish | extingoișe |
+| languish | langoișe  |
+| linguist | lingüist |
+| lingual | lingüal |
+| sanguine | sangüin |
+| unguent | ungüent |
+| segue | següe |
+| linguine | lingüini |
+
+## /gj/
+
+### Before a consonant — poly, medial
+| English | Inglisce |
+|---|---|
+| regular | same |
+| figure | same |
+| angular | same |
+| singular | same |
+| jugular | jogular |
+| legume | same |
+| ligature | ligațure (not sure why you placed this in here) |
+
+### Before a vowel — poly, medial
+| English | Inglisce |
+|---|---|
+| ambiguous | ambig̃ueus |
+| contiguous | contig̃ueus |
+| exiguous | exig̃ueus |
+| ambiguity | ambigúetie, ambigúetis |
+| contiguity | contigúetie |
+| arguing | arg̃uing |
+| argued | arg̃ued |
+
+### Word-final — poly
+| English | Inglisce |
+|---|---|
+| argue | arg̃ue |
+| ague | aig̃ue |
+
+## /tʃ/
+
+### Mono, initial
+| English | Inglisce |
+|---|---|
+| chin | chine |
+| chew | cheue |
+| cheese | cheise |
+| church | church |
+| chase | chaice |
+| chance | chance |
+| chair | chaire, chairs |
+| choose | chouse |
+| choice | choice |
+| chief | chiefe |
+
+### Mono, final
+| English | Inglisce |
+|---|---|
+| catch | caiche |
+| fetch | faiche |
+| much | moch |
+| rich | rich |
+| such | soch |
+| march | marche |
+| bench | benche |
+| beach | beiche |
+| beech | boich |
+| teach | teiche |
+| couch | coache |
+
+### Poly, initial
+| English | Inglisce |
+|---|---|
+| chicken | chican |
+| cherry | cherrie, cherris |
+| chapel | chapele, chapels |
+| champion | champion |
+| chocolate | chaoqhlat |
+
+### Poly, medial
+| English | Inglisce |
+|---|---|
+| kitchen | cuichene, cuichins |
+| butcher | bûchere, bûchors |
+| teacher | teicher |
+| richer | richer |
+| archer | archer |
+| orchard | orchard |
+| merchant | merchant |
+| bachelor | bachelor |
+| anchovy | anchovie, anchovis |
+
+### Poly, final
+| English | Inglisce |
+|---|---|
+| attach | attache |
+| detach | detache |
+| approach | appróche |
+
+### From *t* — poly, medial
+| English | Inglisce |
+|---|---|
+| nature | nâțure, nâțurs |
+| picture | picțure, picțurs |
+| future | fuțure, fuțurs |
+| adventure | advențure, advențurs |
+| literature | litterțure, litterțurs |
+| mixture | mixțure, mixțurs |
+| culture | culțure, culțurs  |
+| virtue | virțue, virțuis |
+| statue | stațue, stațuis |
+| fortune | forțene, forțins  |
+| actual | acțual |
+| question | quaistion |
+| Christian | |
+
+
+---
+
 -offe / -oste / -ofre, the terminal sets
 
 i before e except after c-, unless it's
