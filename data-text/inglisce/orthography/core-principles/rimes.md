@@ -84,12 +84,12 @@
 | Sound | Device | Grounding | Competing for it |
 |---|---|---|---|
 | /tʃ/ | `ch` | Old French, Spanish, English | settled |
-| /k/ before *e, i* | `qu`; `-que` word-final | French, Spanish, Catalan, Galician | `c̃h` if Greek words keep a `ch`, revert Greek -ch to -que |
-| /kw/ | `cu` | Old English *cw-*, Spanish, Galician, Friulian | `qu` if /k/ moves |
-| /kj/ | `cu`, or `qh` | Gallo `qh`, Friulian `cj`, Italian `chi` | unmarked; `c̃` |
+| /k/ before *e, i* | `qu`; `-que` word-final | French, Spanish, Catalan, Galician | `cu`, `c̃h` if Greek, revert Greek -ch to -que if at end |
+| /kw/ | `qu` | Old English *cw-*, Spanish, Galician, Friulian | `qu` |
+| /kj/ | `cu`, or `qh` | Gallo `qh`, Friulian `cj`, Italian `chi` | `cu` |
 | /g/ before *e, i* | `gu` | five Romance standards | settled |
 | /gw/ before *e, i* | `gü` | four Romance standards | settled |
-| /gj/ | `gu`, or `gh` | Gallo `gh`, Friulian `gj`, Italian `ghi` | `g̃` |
+| /gj/ | `g̃` | Gallo `gh`, Friulian `gj`, Italian `ghi` | `g̃` |
 
 ## Worksheet
 
