@@ -35,20 +35,26 @@
 
 | Sound | Position | Environment | English | Inglisce |
 |---|---|---|---|---|
-| /k/ | initial | before a, o, u, cons. | cat, cot, cut, cold, claw, crab, quay | | 
-| /k/ | initial | before e, i, y | keep, kin, kill, kettle, key, kite, chemist, kilo | | 
-| /k/ | medial | before a, o, u, cons. | second, bacon, vacant, acorn, focus, doctor, picture | | 
-| /k/ | medial | before e, i, y | market, basket, pocket, bucket, jockey, donkey, monkey, architect, archive, anarchy, bakery, taking, baked | | 
+| /k/ | initial | before a, o, u, cons. | cat, cot, cut, cold, claw, crab, quay | cate, cáte, cutte, coald, clahe, crabe, qaíe | 
+| /k/ | initial | before e, i, y | keep, kin, kill, kettle, key, kite, chemist, kilo | caípe, cyne, caitle, caíe, cŷte, c̃hemist, c̃hilo | 
+| /k/ | medial | before a, o, u, cons. | second, bacon, vacant, acorn, focus, doctor, picture | seconde, bâcon, vâcant, eacorne | 
+| /k/ | medial | before e, i, y | market, basket, pocket, bucket, jockey, donkey, monkey, architect, archive, anarchy, bakery, taking, baked | marcate, bascate, pocate, bocate | 
 | /k/ | final | after any vowel | attic, basic, music, panic, talk, walk, milk, ask | | 
 | /k/ | final | `-ck`, `-ke`, `-que` | back, lake, antique, unique, plaque, conch, oblique, opaque, torque | | 
+| /k/ from Greek χ | initial | before e, i, y | chemist, chemical, chimera, chiropractor, cheiro- forms | | 
+| /k/ from Greek χ | initial | before a, o, r, l | chaos, character, charisma, chorus, chord, cholera, chrome, chronic, chloride, christen | |
+| /k/ from Greek χ | medial | before e, i, y | architect, archive, anarchy, monarchy, hierarchy, psychiatry, bronchitis, trachea, lichen | |
+| /k/ from Greek χ | medial | before a, o, u, cons. | echo, anchor, psychology, technical, mechanic, orchestra, archaic, scheme, school, epoch, saccharine | |
+| /k/ from Greek χ | final | after a vowel | stomach, eunuch, epoch's pattern, patriarch, monarch, oligarch | | 
+| /k/, other `ch` sources | any | — | ache, anchor, yacht, loch | | 
 | /kw/ | initial | before a, o | quack, quad, quantity, qualify, quarry, quota, quorum, quote | | 
 | /kw/ | initial | before e | queen, quell, question, quest, quench, query | | 
 | /kw/ | initial | before i | quick, quit, quiz, quill, quiet, quite, quire | | 
 | /kw/ | medial | before a, o | equate, equator, adequate, aquatic, aquarium, squad, squash, quadrant | | 
 | /kw/ | medial | before e | frequent, sequence, consequent, eloquent, delinquent, subsequent, conquer, banquet, sequel, request | | 
 | /kw/ | medial | before i | liquid, squid, ubiquitous, colloquial, obliquity, acquire, require, inquire, bequeath, antiquity, soliloquy, colloquy, obloquy, ventriloquy | | 
-| /kj/ | initial | before cons. or final | cute, cue, cure, curious, cumulative, queue | | 
-| /kj/ | medial | before cons. | accurate, secure, document, particular, vacuum, circular, calculate, occupy, articulate | | 
+| /kj/ | initial | before cons. or final | cute, cue, cure, curious, cumulative, queue | cute, cue (also queue), cure, curieus, cúmulatif | 
+| /kj/ | medial | before cons. | accurate, secure, document, particular, vacuum, circular, calculate, occupy, articulate | accurat, secure, document, particular, vacume, circular, calculait, occupae, articulat, articulait | 
 | /kj/ | medial | before a vowel | evacuate, vacuous, innocuous, conspicuous, promiscuous, arcuate, vacuity, promiscuity, circuit, evacuee | |
 | /kj/ | final | — | rescue, barbecue, curlicue, miscue | |
 | /g/ | initial | before a, o, u, cons. | gap, got, gut, glad, grab, ghost | |
@@ -60,9 +66,21 @@
 | /gw/ | initial | before a, o | guava, guano, guacamole, Gwen | |
 | /gw/ | medial | before a, o | jaguar, iguana, Nicaragua, language, languor, anguish | |
 | /gw/ | medial | before e, i | penguin, distinguish, extinguish, languish, linguist, lingual, sanguine, unguent, segue, linguine | |
-| /gj/ | medial | before cons. | regular, figure, angular, singular, jugular, legume, ligature | |
-| /gj/ | medial | before a vowel | ambiguous, contiguous, exiguous, ambiguity, contiguity, arguing, argued | |
-| /gj/ | final | — | argue, ague, fugue | |
+| /gj/ | medial | before cons. | regular, figure, angular, singular, jugular, legume | |
+| /gj/ | medial | before a vowel | ambiguous, contiguous, exiguous, ambiguity, contiguity, arguing, argued | ambig̃ueus, contig̃ueus, exig̃ueus, ambigúetie, contigúetie, arg̃uing, arg̃ued |
+| /gj/ | final | — | argue, ague | arg̃ue, aig̃ue |
+| /tʃ/ | initial | Old English *ċ-* | child, chin, chew, cheese, church, chicken, chaff, cheap, choose, churn | |
+| /tʃ/ | initial | Old French | chase, chance, change, chair, charge, chief, chamber, champion, chapel, cherry | |
+| /tʃ/ | initial | Spanish, Italian, other loans | chorizo, nacho, poncho, ciao, cello, chai, chimichanga | |
+| /tʃ/ | medial | between vowels | kitchen, butcher, teacher, richer, archer, orchard, merchant, bachelor, purchase, satchel | |
+| /tʃ/ | medial | after *n*, *r*, *l* | anchovy, benching, orchard, filched, belching, ranching | |
+| /tʃ/ | medial | from *t* + yod | nature, picture, future, adventure, literature, ligature, mixture, culture, virtue, statue, fortune, actual | |
+| /tʃ/ | medial | after *s*, from *t* + yod | question, suggestion, digestion, combustion, Christian | | 
+| /tʃ/ | final | after a short vowel, `-tch` | catch, fetch, match, pitch, ditch, watch, hutch, botch | | 
+| /tʃ/ | final | after a long vowel or diphthong | beach, beech, teach, speech, reach, couch, pouch, poach | |
+| /tʃ/ | final | after a consonant | much, rich, such, which, march, branch, lunch, French, bench, porch, church | |
+| /tʃ/ | final | after a vowel, `-ch` | attach, detach, approach, broach | | 
+
 
 ## Empty cells
 
