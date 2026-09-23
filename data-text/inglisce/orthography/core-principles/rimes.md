@@ -1133,8 +1133,6 @@ names one.
 
 pinkish: pinquiș
 
-
-/ʃ/ after c, p: fracțure, capțure, picțure
 Always hard /k/: sche-, schi-, -que, -quie, -quiș: pinquiș, -c, ca-, co-: coichene, coichins (kitchen), caíe (key from caeg), qaíe (quay from caium), caípe (keep from cepan)
 Sometimes hard, sometimes soft: cy-
 Always soft: c+{i, e, -y}, ç + {a, o, u}=/s/; ç + {e, i, y}=/ʃ/
@@ -1151,30 +1149,50 @@ to taic -s tâquing
 
 ---
 
-## Established
+# Established
 
 ## /tʃ/
 
-| Spelling | Notes | English | Inglisce |
-|---|---|---|---|
-| `ch` | Default for /tʃ/ | catch | caiche |
-| | | fetch | faiche |
-| | | chase | chaice |
-| | | cheat | cheite |
-| | | cheer | chiare |
-| | | march | marche |
-| | | rich | rich |
-| | | beach | beich, to beiche |
-| | | beech | boich |
-| | | kitchen | coichene, coichins |
-| | | chai | chae, chais |
-| | | chide | chîde |
-| | | child, children | choilde, children |
-| | | China, chinese | Choina, choinise |
-| `cz` | One-off | Czech, Czechia | Czec, Czequia |
-| `ț` | a historical *t*, between vowels or after *n*, *x* | March | Marț (Latin Martius) |
-| | | literature | litterațure |
-| | | adventure | advențure |
-| | | mixture | mixțure |
+### `ch` — the default
 
+| English | Inglisce |
+|---|---|
+| catch | caiche |
+| fetch | faiche |
+| chase | chaice |
+| cheat | cheite |
+| cheer | chiare |
+| march | marche |
+| rich | rich |
+| beach | beich, to beiche |
+| beech | boich |
+| kitchen | coichene, coichins |
+| chai | chae, chais |
+| chide | chîde |
+| child, children | choilde, children |
+| China | Choina |
+| Chinese | choinise |
 
+### `cz` — a Czech route
+
+| English | Inglisce |
+|---|---|
+| Czech | Czec |
+| Czechia | Czequia |
+
+### `ț` — a historical *t*, between vowels or after *n*, *x*
+
+| English | Inglisce |
+|---|---|
+| March | Marț (Latin *Martius*) |
+| literature | litterațure |
+| adventure | advențure |
+| mixture | mixțure |
+
+### `ț` — /ʃ/, after c, p
+
+| English | Inglisce |
+|---|---|
+| fracture | fracțure |
+| capture | capțure |
+| picture | picțure |
