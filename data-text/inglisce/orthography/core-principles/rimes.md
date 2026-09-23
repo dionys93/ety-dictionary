@@ -41,27 +41,6 @@
 
 ---
 
-
-## A. Iberian — Spanish, Galician
-
-| Sound | Before a, o, u | Before e, i, y | Final |
-|---|---|---|---|
-| /k/ | `c` | `qu` | `c`, `-que` |
-| /kw/ | `cu` | `cu` | — |
-| /kj/ | `cu` | `cu` | `cú` |
-| /g/ | `g` | `gu` | — |
-| /gw/ | `gu` | `gü` | — |
-| /gj/ | `gu` | `gu` | `gú` |
-
-bâqued · monquie · arqui- · cuaic · cuine · frícuent · solilocuie · evacuait ·
-pengüine · argue
-
-One letter, `u`, carries glide, silence and vowel. /kj/ and /gj/ have no
-device of their own, so collisions fall back on stress marks or the stem.
-Q never appears without u. Fewest letters, most ambiguity.
-
----
-
 ## B. Iberian + Gallo palatals
 
 As A, but /kj/ and /gj/ take the Gallo palatals.
@@ -81,6 +60,59 @@ rescue, cue · gh-forms for argue, ambiguous
 Every sound has its own spelling. No stem-dependence, no hiatus marks.
 `Gh` is free because /g/ before front vowels is `gu`.
 
+---
+
+# English velar inventory
+
+Conventional English spellings only. Stress-bearing examples first in each cell.
+
+## /k/
+
+| Position | Before a, o, u, or a consonant | Before e, i, y |
+|---|---|---|
+| Initial | cat, cot, cut, cold, claw, crab, quay | keep, kin, kill, kettle, key, kite, chemist, kilo |
+| Medial | second, bacon, vacant, acorn, focus, doctor, picture | market, basket, pocket, bucket, jockey, donkey, monkey, architect, archive, anarchy, bakery, taking, baked |
+| Final | attic, basic, music, panic, talk, walk, milk, ask | — (English has no final /ke/ or /ki/; the sound is spelled `-ck`, `-ke`, `-que`: back, lake, antique, unique, plaque, conch, oblique, opaque, torque) |
+
+## /kw/
+
+| Position | Before a, o | Before e | Before i |
+|---|---|---|---|
+| Initial | quack, quad, quantity, qualify, quarry, quota, quorum, quote | queen, quell, question, quest, quench, query | quick, quit, quiz, quill, quiet, quite, quire |
+| Medial | equate, equator, adequate, aquatic, aquarium, squad, squash, quadrant | frequent, sequence, consequent, eloquent, delinquent, subsequent, conquer, banquet, sequel, request, acquest | liquid, squid, ubiquitous, colloquial, obliquity, acquire, require, inquire, bequeath, antiquity, soliloquy, colloquy, obloquy, ventriloquy |
+| Final | — (English has no final /kw/) | | |
+
+## /kj/
+
+| Position | Before a consonant or word-final | Before a vowel |
+|---|---|---|
+| Initial | cute, cue, cure, curious, cumulative, queue | — |
+| Medial | accurate, secure, document, particular, vacuum, circular, calculate, occupy, articulate | evacuate, vacuous, innocuous, conspicuous, promiscuous, arcuate, vacuity, promiscuity, circuit, evacuee |
+| Final | rescue, barbecue, curlicue, miscue, imbue's pattern | — |
+
+## /g/
+
+| Position | Before a, o, u, or a consonant | Before e, i, y |
+|---|---|---|
+| Initial | gap, got, gut, glad, grab, ghost | get, give, gift, girl, geese, guess, guilt, gear, geld |
+| Medial | again, agog, legal, regard, cargo, argue's *g*, ago | forget, target, bigger, baggy, dagger, logger, begin, finger, anger, hunger, linger, eager, tiger, bagged, bagging |
+| Final | bag, dog, rug, drag, big, leg, egg | — (final `-gue`: league, vague, rogue, plague, tongue, fatigue, intrigue, colleague) |
+
+## /gw/
+
+| Position | Before a, o | Before e, i |
+|---|---|---|
+| Initial | guava, guano, guacamole, Gwen | — |
+| Medial | jaguar, iguana, Nicaragua, language, languor, anguish | penguin, distinguish, extinguish, languish, linguist, lingual, sanguine, unguent, segue, ambiguity's *gu*, linguine |
+| Final | — | — |
+
+## /gj/
+
+| Position | Before a consonant | Before a vowel |
+|---|---|---|
+| Initial | — (*gules*, *gewgaw* are marginal) | — |
+| Medial | regular, figure, angular, singular, jugular, legume, ligature | ambiguous, contiguous, exiguous, ambiguity, contiguity, arguing, argued |
+| Final | argue, ague, fugue's pattern, intrigue's is /g/ | — |
 
 ---
 
@@ -92,10 +124,6 @@ i before e except after c-, unless it's
 eic, oic
 cei
 sei
-
-# Monosyllables in /k/ and /tʃ/
-
-Tracking document. Blanks are undecided.
 
 ---
 
@@ -1287,4 +1315,14 @@ to taic -s tâquing
 | capture | capțure |
 | picture | picțure |
 
-## 
+---
+
+| Sound | Device | Grounding | Competing for it |
+|---|---|---|---|
+| /tʃ/ | `ch` | Old French, Spanish, English | settled |
+| /k/ before *e, i* | `qu` | French, Spanish, Catalan, Galician | `c̃h` if Greek words keep a `ch`; bare `q` (Gallo) |
+| /kw/ | `cu` | Spanish, Galician, Friulian | `qu` if /k/ moves |
+| /g/ before *e, i* | `gu` | five Romance standards | settled |
+| /gw/ before *e, i* | `gü` | four Romance standards | settled |
+| /kj/ | `cu`, or `qh` | Gallo `qh`, Friulian `cj`, Italian `chi` | unmarked, per the earlier finding; `c̃` |
+| /gj/ | `gu`, or `gh` | Gallo `gh`, Friulian `gj`, Italian `ghi` | `g̃` |
