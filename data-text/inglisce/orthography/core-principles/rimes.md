@@ -24,7 +24,7 @@
 | Sound | Device | Grounding | Competing for it |
 |---|---|---|---|
 | /tʃ/ | `ch` | Old French, Spanish, English | settled |
-| /k/ before *e, i* | `qu`; `-que` word-final | French, Spanish, Catalan, Galician | `c̃h` if Greek words keep a `ch`; bare `q` (Gallo) |
+| /k/ before *e, i* | `qu`; `-que` word-final | French, Spanish, Catalan, Galician | `c̃h` if Greek words keep a `ch`, revert Greek -ch to -que |
 | /kw/ | `cu` | Old English *cw-*, Spanish, Galician, Friulian | `qu` if /k/ moves |
 | /kj/ | `cu`, or `qh` | Gallo `qh`, Friulian `cj`, Italian `chi` | unmarked; `c̃` |
 | /g/ before *e, i* | `gu` | five Romance standards | settled |
