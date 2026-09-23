@@ -1,62 +1,43 @@
-## ⟨c⟩, ⟨ch⟩ and ⟨q⟩ across Romance
+## Velars across Romance
 
-| Language | `c` before *a, o, u* | `c` before *e, i* | `ch` | `qu` before *e, i* | `qu` before *a, o* | /kw/ before *e, i* | Final `-c` |
-|---|---|---|---|---|---|---|---|
-| French | /k/ | /s/ | /ʃ/; /k/ in Greek words (*archéologie*) | /k/, `u` silent | /k/ or /kw/ (*quatre* /k/, *quadrupède* /kw/) | rare; `qu` in learned words (*équateur*) | /k/ (*sac*), silent in some (*tabac*, *blanc*) |
-| Spanish | /k/ | /θ/ or /s/ | /tʃ/ | /k/, `u` silent | — (`cu`: *cuando*) | `cu` (*frecuente*, *cuestión*) | rare, loans only |
-| Portuguese | /k/ | /s/ | /ʃ/ | /k/ or /kw/, ambiguous since 1990 (*tranquilo*) | /kw/ (*quatro*, *quota*) | `qu`, unmarked (*frequente*) | rare |
-| Galician | /k/ | /θ/ or /s/ | /tʃ/ | /k/, `u` silent | — (`cu`: *cuarto*) | `cu` (*cincuenta*) | rare |
-| Catalan | /k/ | /s/ | /k/, in surnames only (*March*, *Bosch*) | /k/, `u` silent | /kw/ (*quatre*, *quota*) | `qü` (*qüestió*, *freqüent*) | /k/ (*amic*) |
-| Occitan | /k/ | /s/ | /tʃ/, dialectally /ts/ | /k/, `u` silent | /kw/ (*quan*) | `qü` | /k/ (*amic*) |
-| Italian | /k/ | /tʃ/ | /k/ (*che*, *chi*) | — | /kw/ (*quando*, *quota*) | `qu` (*questo* /kwesto/) | very rare |
-| Romanian | /k/ | /tʃ/ | /k/ (*chema*) | — | loans only | loans only | /k/ (*sac*) |
-| Corsican | /k/ | /tʃ/ | /k/ before *e, i*; `chj` = /c/ | — | /kw/ | /kw/ | rare |
-| Friulian | /k/ | /tʃ/ or /s/; `ç` = /tʃ/ before *a, o, u* | /k/ before *e, i*; `cj` = /c/ | /k/ | — | `cu` (*cuatri*, *cuadrade*) | /k/ |
-| Sardinian (Logudorese) | /k/ | — (`ch`: *chentu*) | /k/ before *e, i* | — | Latin /kʷ/ lost: *cale* < *qualem*, *limba* < *lingua* | — | /k/ |
-
-
-### Three patterns
-
-1. **`Ch` splits the family.** /k/ in Italian, Romanian, Corsican, Friulian and
-   Sardinian; /tʃ/ in Spanish, Galician, Occitan; /ʃ/ in French and Portuguese.
-   Catalan keeps /k/ only in surnames.
-2. **/kw/ before a front vowel is the sore spot everywhere.** Four solutions
-   exist: `cu` (Spanish, Galician, Friulian), `qü` (Catalan, Occitan), plain
-   `qu` (Italian, Portuguese), and losing the sound (Sardinian).
-3. **Final `-c` for /k/ is normal** in Catalan, Occitan, Romanian, Friulian,
-   Sardinian and French.
-
-## ⟨g⟩, /gw/, /kj/ and /gj/ across Romance
-
-| Language | `g` before *a, o, u* | `g` before *e, i* | /g/ before *e, i* | /gw/ before *a, o* | /gw/ before *e, i* | /kj/ | /gj/ |
-|---|---|---|---|---|---|---|---|
-| French | /g/ | /ʒ/ | `gu` (*guerre*) | `gou` (*gouache*) | rare; `gu` + tréma on the *u* (*aigüe*) | — (has /kɥ/: *cuisine*) | — |
-| Spanish | /g/ | /x/ | `gu` (*guerra*) | `gu` (*guante*) | `gü` (*pingüino*) | — | — |
-| Portuguese | /g/ | /ʒ/ | `gu` | `gu` (*guarda*) | `gu`, ambiguous since 1990 (*linguiça*) | — | — |
-| Galician | /g/ | /ʃ/ or /x/ | `gu` | `gu` | `gü` (*pingüín*) | — | — |
-| Catalan | /g/ | /ʒ/ | `gu` (*guerra*) | `gu` (*guant*) | `gü` (*pingüí*, *aigües*) | — | — |
-| Occitan | /g/ | /dʒ/ | `gu` | `gu` | `gü` | — | — |
-| Italian | /g/ | /dʒ/ | `gh` (*ghetto*) | `gu` (*guardare*) | `gu` (*guerra* /gwɛrra/) | `chi` + vowel (*chiave*) | `ghi` + vowel (*ghiaccio*) |
-| Romanian | /g/ | /dʒ/ | `gh` (*ghetou*) | rare | rare | `chi` + vowel (*chiar*) | `ghi` + vowel (*ghiață*) |
-| Corsican | /g/ | /dʒ/ | `gh` | `gu` | `gu` | `chj` = /c/ | `ghj` = /ɟ/ |
-| Friulian | /g/ | /dʒ/ | `gh` | `gu` | `gu` | `cj` = /c/ | `gj` = /ɟ/ |
-| Sardinian (Logudorese) | /g/ | — | `gh` (*ghéneru*) | Latin /gʷ/ lost (*limba* < *lingua*) | — | — | — |
+| Language | `c` before *a, o, u* | `c` before *e, i* | `ch` | /k/ before *e, i* | /kw/ before *e, i* | `g` before *a, o, u* | `g` before *e, i* | /g/ before *e, i* | /gw/ before *e, i* | /kj/, /gj/ | Final `-c` |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| French | /k/ | /s/ | /ʃ/; /k/ in Greek words (*archéologie*) | `qu`, `u` silent | rare; `qu` in learned words (*équateur*) | /g/ | /ʒ/ | `gu` (*guerre*) | rare; tréma on the *u* (*aiguë*) | — | /k/ (*sac*), silent in some (*tabac*) |
+| Spanish | /k/ | /θ/ or /s/ | /tʃ/ | `qu`, `u` silent | `cu` (*frecuente*) | /g/ | /x/ | `gu` (*guerra*) | `gü` (*pingüino*) | — | rare, loans only |
+| Portuguese | /k/ | /s/ | /ʃ/ | `qu` | `qu`, ambiguous since 1990 (*frequente*) | /g/ | /ʒ/ | `gu` | `gu`, ambiguous (*linguiça*) | — | rare |
+| Galician | /k/ | /θ/ or /s/ | /tʃ/ | `qu`, `u` silent | `cu` (*cincuenta*) | /g/ | /ʃ/ or /x/ | `gu` | `gü` (*pingüín*) | — | rare |
+| Catalan | /k/ | /s/ | /k/, in surnames only (*March*, *Bosch*) | `qu`, `u` silent | `qü` (*freqüent*) | /g/ | /ʒ/ | `gu` | `gü` (*pingüí*) | — | /k/ (*amic*) |
+| Occitan | /k/ | /s/ | /tʃ/, dialectally /ts/ | `qu`, `u` silent | `qü` | /g/ | /dʒ/ | `gu` | `gü` | — | /k/ (*amic*) |
+| Italian | /k/ | /tʃ/ | /k/ (*che*, *chi*) | `ch` | `qu` (*questo*) | /g/ | /dʒ/ | `gh` (*ghetto*) | `gu` (*guerra*) | `chi`, `ghi` + vowel | very rare |
+| Romanian | /k/ | /tʃ/ | /k/ (*chema*) | `ch` | loans only | /g/ | /dʒ/ | `gh` (*ghetou*) | rare | `chi`, `ghi` + vowel | /k/ (*sac*) |
+| Corsican | /k/ | /tʃ/ | /k/ before *e, i* | `ch` | `qu` | /g/ | /dʒ/ | `gh` | `gu` | `chj` = /c/, `ghj` = /ɟ/ | rare |
+| Friulian | /k/ | /tʃ/ or /s/; `ç` = /tʃ/ before *a, o, u* | /k/ before *e, i* | `ch` | `cu` (*cuatri*, *cuadrade*) | /g/ | /dʒ/ | `gh` | `gu` | `cj` = /c/, `gj` = /ɟ/ | /k/ |
+| Sardinian (Logudorese) | /k/ | — | /k/ (*chentu*) | `ch` | Latin /kʷ/ lost (*cale* < *qualem*) | /g/ | — | `gh` (*ghéneru*) | Latin /gʷ/ lost (*limba* < *lingua*) | — | /k/ |
+| Gallo (ABCD) | /k/ | /s/ | /ʃ/ (*Chapèl* [ʃapɛl]) | `q` alone (*qhi*'s partner; *Qenpenia*) | rare | /g/ | — | `gu` (*guernouille*) | rare | `qh` = /c/, [kj], [tʃ]; `gh` = /ɟ/, [gj], [dʒ] | /k/ |
 
 ### Patterns
 
-1. **The `gu` / `gh` split is the mirror of the `qu` / `ch` split.** Languages
-   where `gu` is silent-*u* /g/ (Spanish, Portuguese, Galician, Catalan,
-   Occitan, French) need `gü` for /gw/. Languages where `gu` is /gw/ (Italian)
-   need `gh` for /g/. No language gets both jobs out of one digraph.
-2. **Only two devices exist in Romance for /kj/ and /gj/:** the Italian and
-   Romanian `chi` / `ghi` before a vowel, and the Corsican `chj` / `ghj` and
-   Friulian `cj` / `gj`, which write palatal stops.
-3. **Diacritic on the `u` is the Iberian solution; digraph is the Italic one.**
-   Spanish, Galician, Catalan and Occitan mark the letter; Italian, Romanian,
-   Corsican and Friulian add a letter instead.
-4. **`Gü` is far more widespread than `qü`.** Only Catalan and Occitan use
-   `qü`; four languages use `gü`.
-
+1. **`Ch` splits the family.** /k/ in Italian, Romanian, Corsican, Friulian and
+   Sardinian; /tʃ/ in Spanish, Galician, Occitan; /ʃ/ in French, Portuguese and
+   Gallo. Catalan keeps /k/ only in surnames.
+2. **/k/ before a front vowel has three solutions:** `qu` (French, Spanish,
+   Portuguese, Galician, Catalan, Occitan), `ch` (Italian, Romanian, Corsican,
+   Friulian, Sardinian), and bare `q` (Gallo alone).
+3. **/kw/ before a front vowel is the sore spot everywhere.** Four solutions:
+   `cu` (Spanish, Galician, Friulian), `qü` (Catalan, Occitan), plain `qu`
+   (Italian, Portuguese), and losing the sound (Sardinian).
+4. **The `gu` / `gh` split mirrors the `qu` / `ch` split.** Where `gu` is
+   silent-*u* /g/, `gü` is needed for /gw/; where `gu` is /gw/, `gh` is needed
+   for /g/. No language gets both jobs out of one digraph.
+5. **`Gü` is far more widespread than `qü`.** Four languages use `gü`; only
+   Catalan and Occitan use `qü`.
+6. **Three devices exist in Romance for /kj/ and /gj/:** Italian and Romanian
+   `chi` / `ghi` before a vowel; Corsican `chj` / `ghj` and Friulian `cj` / `gj`;
+   and Gallo `qh` / `gh`. All write a palatal stop. Iberian marks the `u` with a
+   diacritic; Italic and Gallo add a letter.
+7. **Gallo is the only system that pairs the palatals with a bare velar letter.**
+   `Q` : `qh` and `g` : `gh` is one mechanism for both, where Italian needs
+   `ch`/`chi` against `gh`/`ghi`.
 
 ---
 
