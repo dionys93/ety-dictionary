@@ -1081,19 +1081,6 @@ Grounding: Spanish `ñ`, historically *n* + palatal.
 
 The two velars are not symmetric here, for a structural reason.
 
-## /tʃ/
-
-| Spelling | Environment | Examples |
-|---|---|---|
-| `c̃` | default | caic̃e, boic̃e, coic̃ene, ric̃e |
-| `ch` | before *î* | chîld, chîde |
-| `ț` | a historical *t* | duț |
-
-Keeping the corpus division preserves the vowel + silent `-e` transparency and
-leaves the `ei`/`oi` separator rule stated as it already is.
-Cost: `c̃` needs its own justification now that Italian `ch` is retired, and
-French-routed words like *archer* sit oddly under it.
-
 ## Marks
 
 | Mark | Job |
@@ -1146,20 +1133,7 @@ names one.
 
 pinkish: pinquiș
 
-China, chinese: Choina/Qhoina, choinise/qhoinise
-chide: chîde
-child, children: choilde, children
-chai: chae, chais; 
-chase: chaice
-catch: caiche
-fetch: faiche
-cheat: cheite 
-cheer: chiare, 
-beech : boich 
-beach: beich, to beiche
 
-Always /tʃ/: ch
-/tʃ/ between vowels, after n, x: litterațure, advențure, mixțure
 /ʃ/ after c, p: fracțure, capțure, picțure
 Always hard /k/: sche-, schi-, -que, -quie, -quiș: pinquiș, -c, ca-, co-: coichene, coichins (kitchen), caíe (key from caeg), qaíe (quay from caium), caípe (keep from cepan)
 Sometimes hard, sometimes soft: cy-
@@ -1174,3 +1148,33 @@ likewise lîquoise
 
 to baic baqued baquing bâque'm (what strat would this be?)
 to taic -s tâquing
+
+---
+
+## Established
+
+## /tʃ/
+
+| Spelling | Notes | English | Inglisce |
+|---|---|---|---|
+| `ch` | Default for /tʃ/ | catch | caiche |
+| | | fetch | faiche |
+| | | chase | chaice |
+| | | cheat | cheite |
+| | | cheer | chiare |
+| | | march | marche |
+| | | rich | rich |
+| | | beach | beich, to beiche |
+| | | beech | boich |
+| | | kitchen | coichene, coichins |
+| | | chai | chae, chais |
+| | | chide | chîde |
+| | | child, children | choilde, children |
+| | | China, chinese | Choina, choinise |
+| `cz` | One-off | Czech, Czechia | Czec, Czequia |
+| `ț` | a historical *t*, between vowels or after *n*, *x* | March | Marț (Latin Martius) |
+| | | literature | litterațure |
+| | | adventure | advențure |
+| | | mixture | mixțure |
+
+
