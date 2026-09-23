@@ -1164,6 +1164,8 @@ to taic -s tâquing
 | cheer | chiare |
 | march | marche |
 | rich | rich |
+| butcher | bûchere, bûchars |
+| butchery | bûcherie |
 | beach | beich, to beiche |
 | beech | boich |
 | kitchen | coichene, coichins |
@@ -1172,6 +1174,8 @@ to taic -s tâquing
 | child, children | choilde, children |
 | China | Choina |
 | Chinese | choinise |
+| change | chânge |
+| chain | chaine, chaîns |
 
 ### `cz` — a Czech route
 
