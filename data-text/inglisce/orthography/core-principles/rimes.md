@@ -1161,12 +1161,14 @@ beach: beich, to beiche
 Always /tʃ/: ch
 /tʃ/ between vowels, after n, x: litterațure, advențure, mixțure
 /ʃ/ after c, p: fracțure, capțure, picțure
-Always hard /k/: -que, -quie, -quiș: pinquiș, -c, ca-, co-: coichene, coichins (kitchen), caíe (key from caeg), caípe (keep from cepan)
+Always hard /k/: sche-, schi-, -que, -quie, -quiș: pinquiș, -c, ca-, co-: coichene, coichins (kitchen), caíe (key from caeg), qaíe (quay from caium), caípe (keep from cepan)
 Sometimes hard, sometimes soft: cy-
 Always soft: c+{i, e, -y}, ç + {a, o, u}=/s/; ç + {e, i, y}=/ʃ/
-/kw/ qu-: quote, quânt, quantom, quarie; -qu-: squide, liquide, bequíþe, requîer; cu+vowel-:cuaic, cuac, cuine; -coie/kwi/: solilocoie, -coișe /kwɪ/; cuiere (queer), coîre (choir)
+/kw/ qu-: quote, quânt, quantom, quarie; -qu-: fríquent, síquence, squide, liquide, bequíþe, requîer; cu+vowel-:cuaic, cuac, cuine; -coie/kwi/: solilocoie, -coișe /kwɪ/; cuiere (queer), coîre (choir)
 /gw/ guapo, -goișe
 /kj/ -cu-: evacuíe; -cu/monosyl: rescue, cue
+
+architect
 
 likewise lîquoise
 
