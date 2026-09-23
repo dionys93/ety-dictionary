@@ -25,10 +25,11 @@ English spellings. — means the cell is empty in English.
 | /k/ | before *a, o, u* | cat, cot, cut, calm, cusp | scab, scar, scoff, scum | — | cabin, collar, cousin, camera | bacon, vacant, acorn, focus, second | — |
 | /k/ | before *e, i, y* | keep, key, kid, kin, king, kit, kill, kiss, kick, keg, kept | skid, skit, ski, skin, skill, skip, sketch, skew | — | kettle, kindle, kilo, chemist, kayak | market, basket, pocket, bucket, jockey, donkey, monkey, architect, archive, bakery, taking, baked | — |
 | /k/ | before a consonant | claw, crab, clip, cream | act, fact, duct, risk, ask, milk | — | clever, credit, cluster | doctor, picture, actor, tactic | — |
+| /k/ | `ck` + unstressed syllable | — | — | — | — | **before *l*:** tackle, buckle, pickle, knuckle, tickle, freckle, speckle, chuckle, cackle, heckle · **before *e*:** chicken, thicken, quicken, blacken, bucket, pocket, racket, ticket, socket, wicked | — |
 | /k/ | word-final | — | — | back, lake, pick, talk, walk, ache | — | — | attic, basic, music, panic, antique, unique, plaque, oblique, opaque, torque, mosque |
 | /kw/ | before *a, o* | quack, quad, quart, quash, quote | squad, squash, squat | — | quantity, qualify, quarry, quota, quorum | equate, equator, adequate, aquatic, aquarium, quadrant | — |
-| /kw/ | before *e* | queen, quell, quench, quest, quell | squelch | — | question, query, queasy, querulous | frequent, sequence, sequel, consequent, eloquent, delinquent, banquet, request, bequeath | — |
-| /kw/ | before *i* | quick, quit, quiz, quill, quilt, quire | squid, squint, squirm | — | quiet, quiver, quinine | liquid, ubiquitous, colloquial, acquire, require, inquire, antiquity, soliloquy, colloquy, obloquy |
+| /kw/ | before *e* | queen, quell, quench, quest | squelch | — | question, query, queasy, querulous | frequent, sequence, sequel, consequent, eloquent, delinquent, banquet, request, bequeath | — |
+| /kw/ | before *i* | quick, quit, quiz, quill, quilt, quire | squid, squint, squirm | — | quiet, quiver, quinine | liquid, ubiquitous, colloquial, acquire, require, inquire, antiquity, soliloquy, colloquy, obloquy | — |
 | /kw/ | word-final | — | — | — | — | — | — |
 | /kj/ | before a consonant | cute, cure, curd, cued | — | — | curious, cumulative, cupid, cubicle | accurate, secure, document, particular, circular, calculate, occupy, vacuum | — |
 | /kj/ | before a vowel | — | — | — | — | evacuate, vacuous, innocuous, conspicuous, promiscuous, arcuate, vacuity, promiscuity, circuit, evacuee | — |
@@ -64,17 +65,9 @@ English spellings. — means the cell is empty in English.
   occur in a monosyllable at all.
 - **Initial /gw/ is three loanwords and a name.** Initial /gj/ doesn't exist.
 
-
-
-
-
-
-
-
 ---
 
 -offe / -oste / -ofre, the terminal sets
-
 
 i before e except after c-, unless it's
 
