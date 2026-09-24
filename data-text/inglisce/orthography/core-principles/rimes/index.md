@@ -1,21 +1,3 @@
-
-
-## What the empty cells say
-
-- **Monosyllables never have a medial velar except in a cluster.** Every
-  mono-medial cell is `sk-`, `squ-` or a coda cluster. A monosyllable's velar
-  is initial or final, full stop.
-- **The whole problem lives in one column: polysyllabic medial.** Every
-  contested sound — /k/ vs /kw/ before *e, i*, /kj/ vs /kw/, /gw/ vs /gj/ —
-  is decided there and nowhere else.
-- **Word-final is only /k/, /g/, /tʃ/ and /kj/.** No final /kw/, /gw/ or /gj/
-  before a vowel, and no /k/ or /g/ before a front vowel.
-- **/kj/ and /gj/ before a vowel are polysyllabic-medial only.** They never
-  occur in a monosyllable at all.
-- **Initial /gw/ is three loanwords and a name.** Initial /gj/ doesn't exist.
-
----
-
 # Velar worksheet
 
 Fill the right column. Blank cells are English's empty slots.
@@ -25,9 +7,7 @@ Fill the right column. Blank cells are English's empty slots.
 ### Before *a, o, u* — mono, initial
 | English | Inglisce |
 |---|---|
-| cat | cate, cats |
 | cot | catte, cáts |
-| cut | cutte, cuts |
 | calm | calm |
 | cusp | cuspe, cusps |
 
