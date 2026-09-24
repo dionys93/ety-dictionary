@@ -4,13 +4,13 @@
 
 | Sound | Device | Grounding | Competing for it |
 |---|---|---|---|
-| /tʃ/ | `ch` | Old French, Spanish, English | settled |
-| /k/ before *e, i* | `qu`; `-que` word-final | French, Spanish, Catalan, Galician | `cu`, `c̃h` if Greek, revert Greek -ch to -que if at end |
-| /kw/ | `qu` | Old English *cw-*, Spanish, Galician, Friulian | `qu` |
+| /tʃ/ | `c̃` | Old English, Old French, Spanish, English | settled |
+| /k/ before *e, i* | `cu` or `ch`; `-que` word-final | French, Spanish, Catalan, Galician | settled |
+| /kw/ | `qu` | Italian, Corsican, Portuguese | `qu` |
 | /kj/ | `cu`, or `qh` | Gallo `qh`, Friulian `cj`, Italian `chi` | `cu` |
-| /g/ before *e, i* | `gu` | five Romance standards | settled |
+| /g/ before *e, i* | `gu` or `gh` | five Romance standards | settled |
 | /gw/ before *e, i* | `gü` | four Romance standards | settled |
-| /gj/ | `g̃` | Gallo `gh`, Friulian `gj`, Italian `ghi` | `g̃` |
+| /gj/ | `g̃` | Gallo `gh`, Friulian `gj`, Italian `ghi` | settled |
 
 # Velars by syllable count, position and environment
 
