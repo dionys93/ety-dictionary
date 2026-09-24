@@ -9,8 +9,392 @@
 # Nothing here writes to the dictionary.
 #
 # Requires curl and jq for the live fetch; --file needs neither.
+#
+# ETYM_WIKT_DIR, if set, makes every fetch read <dir>/<page>.wiki instead of
+# the network ("/" in a page title becomes "__"), for testing offline.
+
+# ── Language codes ───────────────────────────────────────────────────────────
+# Wiktionary language code -> dictionary tag -> Wiktionary section name.
+# Fields are  code:TAG:Section_Name  (underscores stand for spaces). A TAG of
+# "-" means the language has a name but no dictionary tag: that is every
+# proto-language, which is never filed, and nothing else. A code missing
+# entirely prints as [??] and is listed at the end rather than guessed at.
+#
+# Tags follow the project's table; languages outside it carry coined tags.
+# Codes are case-sensitive, and the trailing periods on VL. LL. ML. NL. are
+# not typos — those are Wiktionary's etymology-only Latin varieties, and their
+# entries live in the Latin section (reconstructed ones under
+# Reconstruction:Latin/).
+#
+# Proto-languages are dropped from chains by the suffix rule "ends with -pro"
+# (a bare "pro" is Old Occitan). They are listed here only so that --related
+# and --descendants can reach their Reconstruction: pages, which is where the
+# cousins of a native Germanic word are recorded.
+_WIKT_CODE_MAP="
+    en:ME:English             enm:MI:Middle_English     ang:OE:Old_English
+    sco:SCO:Scots             yol:YOL:Yola
+    la:L:Latin                VL.:VL:Latin              LL.:LL:Latin
+    ML.:ML:Latin              NL.:NL:Latin
+    grc:GK:Ancient_Greek      el:GR:Greek
+    fro:OF:Old_French         fro-nor:ONF:Old_French    xno:AF:Anglo-Norman
+    frm:FR:Middle_French      fr:FR:French              nrf:NRM:Norman
+    pro:OCC:Old_Occitan       oc:OC:Occitan             oc-gas:GAS:Gascon
+    ca:CAT:Catalan            it:IT:Italian             es:SP:Spanish
+    pt:POR:Portuguese         ro:ROM:Romanian           gl:GAL:Galician
+    an:ARG:Aragonese          scn:SCN:Sicilian          sc:SRD:Sardinian
+    rup:ARO:Aromanian         osp:OSP:Old_Spanish
+    roa-opt:OPT:Old_Galician-Portuguese
+    ast:AST:Asturian          mwl:MWL:Mirandese         ext:EXT:Extremaduran
+    lad:LAD:Ladino            co:COS:Corsican           nap:NAP:Neapolitan
+    vec:VEC:Venetian          lij:LIJ:Ligurian          lmo:LMO:Lombard
+    pms:PMS:Piedmontese       egl:EGL:Emilian           fur:FUR:Friulian
+    lld:LLD:Ladin             rm:ROH:Romansch           frp:FRP:Franco-Provençal
+    wa:WLN:Walloon            pcd:PCD:Picard            dlm:DLM:Dalmatian
+    ruo:IRO:Istro-Romanian    ruq:MRO:Megleno-Romanian
+    non:ON:Old_Norse          got:GOT:Gothic
+    osx:OSX:Old_Saxon         ofs:OFR:Old_Frisian       odt:ODU:Old_Dutch
+    dum:MDU:Middle_Dutch      nl:DU:Dutch               vls:FLE:West_Flemish
+    af:AFR:Afrikaans          fy:FRY:West_Frisian       stq:STQ:Saterland_Frisian
+    frr:NFR:North_Frisian     gml:MLG:Middle_Low_German nds:NDS:Low_German
+    nds-de:NDS:German_Low_German   nds-nl:DLS:Dutch_Low_Saxon
+    pdt:PDT:Plautdietsch      goh:OHG:Old_High_German   gmh:MHG:Middle_High_German
+    de:GER:German             gsw:GSW:Alemannic_German  bar:BAR:Bavarian
+    lb:LUX:Luxembourgish      yi:YID:Yiddish
+    gmq-oda:ODA:Old_Danish    gmq-osw:OSW:Old_Swedish
+    is:ICE:Icelandic          fo:FAR:Faroese            ovd:ELF:Elfdalian
+    sv:SWE:Swedish            da:DAN:Danish             no:NOR:Norwegian
+    nb:NOB:Norwegian_Bokmål   nn:NNO:Norwegian_Nynorsk
+    sga:OIR:Old_Irish         ga:IRI:Irish              gd:GAE:Scottish_Gaelic
+    cy:WEL:Welsh              xtg:GAU:Gaulish
+    ar:AR:Arabic              he:HEB:Hebrew             syc:SYR:Classical_Syriac
+    akk:AKK:Akkadian          phn:PHO:Phoenician        egy:EGY:Egyptian
+    hit:HIT:Hittite           ett:ETR:Etruscan          kab:KAB:Kabyle
+    sa:SAN:Sanskrit           pra:PRK:Prakrit           pal:MP:Middle_Persian
+    fa:PER:Persian            hi:HIN:Hindi              gu:GUJ:Gujarati
+    ms:MAL:Malay              zh:CHI:Chinese            ja:JAP:Japanese
+    ta:TA:Tamil               nci:AZ:Classical_Nahuatl  kmb:KMB:Kimbundu
+    mh:MAH:Marshallese
+    ine-pro:-:Proto-Indo-European  gem-pro:-:Proto-Germanic
+    gmw-pro:-:Proto-West_Germanic  gmq-pro:-:Proto-Norse
+    itc-pro:-:Proto-Italic         cel-pro:-:Proto-Celtic
+    sem-pro:-:Proto-Semitic        sla-pro:-:Proto-Slavic
+    urj-fin-pro:-:Proto-Finnic     smi-pro:-:Proto-Samic
+"
+
+# Wiktionary languages that exist only by reconstruction but whose codes do
+# not end in -pro. Dropped from chains like proto-languages.
+_WIKT_RECONSTRUCTED_ONLY="frk"
+
+# U+0304 combining macron, built in the shell rather than written as an awk
+# escape: \xNN is ambiguous in gawk and a byte range like [\200-\277] is
+# rejected outright in a UTF-8 locale.
+_WIKT_CMAC=$(printf '\xcc\x84')
+
+# _wikt_name <code> — the Wiktionary section name for a code, or fail.
+_wikt_name() {
+    local code="$1" entry rest
+    for entry in $_WIKT_CODE_MAP; do
+        [[ "${entry%%:*}" == "$code" ]] || continue
+        rest="${entry#*:}"
+        [[ "$rest" == *:* ]] || return 1
+        rest="${rest#*:}"
+        printf '%s\n' "${rest//_/ }"
+        return 0
+    done
+    return 1
+}
+
+# _wikt_page_title <code> <term>
+# Where a term's entry lives. A reconstruction (starred, or in a
+# proto-language) is on Reconstruction:<Language>/<term>, macrons kept; an
+# attested term is on a page titled without macrons, which is how Wiktionary
+# files Latin, Old English and the rest.
+_wikt_page_title() {
+    local code="$1" term="$2" name
+    if [[ "$term" == \** || "$code" == *-pro ]]; then
+        name=$(_wikt_name "$code") || return 1
+        printf 'Reconstruction:%s/%s\n' "$name" "${term#\*}"
+    else
+        printf '%s\n' "$term" | sed -e "s/$_WIKT_CMAC//g" \
+            -e 's/ā/a/g; s/ē/e/g; s/ī/i/g; s/ō/o/g; s/ū/u/g; s/ȳ/y/g' \
+            -e 's/Ā/A/g; s/Ē/E/g; s/Ī/I/g; s/Ō/O/g; s/Ū/U/g; s/Ȳ/Y/g'
+    fi
+}
+
+# _wikt_fetch <page> — print a page's wikitext, or fail with a message.
+_wikt_fetch() {
+    local page="$1"
+    if [[ -n "${ETYM_WIKT_DIR:-}" ]]; then
+        local f="$ETYM_WIKT_DIR/${page//\//__}.wiki"
+        [[ -f "$f" ]] || { echo "Error: no offline copy of '$page' ($f)." >&2; return 1; }
+        cat "$f"
+        return 0
+    fi
+    command -v curl >/dev/null 2>&1 || { echo "Error: curl is required." >&2; return 1; }
+    command -v jq >/dev/null 2>&1   || { echo "Error: jq is required." >&2; return 1; }
+    local api="https://en.wiktionary.org/w/api.php"
+    local ua="${ETYM_USER_AGENT:-etym-toolkit/1.0 (dictionary research; contact via repo)}"
+    local response wikitext
+    # A descriptive User-Agent is required by Wikimedia's policy; requests
+    # with a generic one are refused. --get + --data-urlencode keeps the
+    # title correctly escaped whatever is in it.
+    response=$(curl -sS --fail --max-time 20 --compressed \
+        -A "$ua" --get "$api" \
+        --data-urlencode "action=parse" \
+        --data-urlencode "page=$page" \
+        --data-urlencode "prop=wikitext" \
+        --data-urlencode "format=json" \
+        --data-urlencode "formatversion=2" 2>&1) || {
+            echo "Error: request failed: $response" >&2; return 1; }
+    if printf '%s' "$response" | jq -e 'has("error")' >/dev/null 2>&1; then
+        echo "Error: Wiktionary ($page): $(printf '%s' "$response" | jq -r '.error.info')" >&2
+        return 1
+    fi
+    wikitext=$(printf '%s' "$response" | jq -r '.parse.wikitext // empty')
+    [[ -n "$wikitext" ]] || { echo "Error: no wikitext returned for '$page'." >&2; return 1; }
+    printf '%s\n' "$wikitext"
+}
+
+# _wikt_desc_lines <section> — stdin: a page's wikitext. Prints the list lines
+# of every Descendants subsection inside that language section.
+_wikt_desc_lines() {
+    "${ETYM_AWK:-awk}" -v want="$1" '
+        /^==[^=]/ { h = $0; gsub(/^==[ \t]*|[ \t]*==$/, "", h); in_s = (h == want); in_d = 0; next }
+        !in_s { next }
+        /^===+[ \t]*Descendants/ { in_d = 1; next }
+        /^===+/ { in_d = 0; next }
+        in_d && /^[*]/ { print }
+    '
+}
+
+# _wikt_expand — stdin: Descendants list lines. Prints them with every
+# {{desctree}} followed: the subtree's own Descendants list is fetched from
+# its page and spliced in under it, one level deeper, recursively. Large
+# ancestor pages (Proto-Germanic above all) hand whole branches off this way,
+# so without it Old Norse and Proto-West Germanic arrive as bare stubs.
+#
+# Bounded by _WIKT_BUDGET pages, and each page is fetched at most once. A
+# subtree that cannot be fetched is left as it was, still marked as a subtree.
+_wikt_expand() {
+    local line lead name code term page section sub prefixed
+    while IFS= read -r line; do
+        if [[ "$line" =~ \{\{(desctree|descendants\ tree)\|([^|}]+)\|([^|}]+) ]]; then
+            name="${BASH_REMATCH[1]}"
+            code="${BASH_REMATCH[2]// /}"
+            term="${BASH_REMATCH[3]%%[#<]*}"
+            term="${term#"${term%%[! ]*}"}"; term="${term%"${term##*[! ]}"}"
+            lead="${line%%[!*:]*}"
+            page=$(_wikt_page_title "$code" "$term") || page=""
+            section=$(_wikt_name "$code") || section=""
+            if [[ -n "$page" && -n "$section" ]] && (( _WIKT_BUDGET > 0 )) \
+               && [[ "$_WIKT_SEEN" != *$'\n'"$page"$'\n'* ]]; then
+                _WIKT_SEEN+="$page"$'\n'
+                (( _WIKT_BUDGET-- ))
+                sub=$(_wikt_fetch "$page" 2>/dev/null | _wikt_desc_lines "$section")
+                if [[ -n "$sub" ]]; then
+                    printf '%s\n' "${line/"{{$name|"/"{{desc|"}"
+                    prefixed=""
+                    while IFS= read -r l2; do prefixed+="$lead$l2"$'\n'; done <<< "$sub"
+                    _wikt_expand <<< "${prefixed%$'\n'}"
+                    continue
+                fi
+            fi
+        fi
+        printf '%s\n' "$line"
+    done
+}
+
+# _wikt_desc_report <section> <headword> <keep_macrons> <shallow>
+# stdin: a page's wikitext. Prints the Descendants tree of that language
+# section, subtrees followed unless <shallow> is 1. When there is no tree it
+# says why: no such section, a non-lemma form page (with the command for the
+# lemma), or no Descendants list — and where one does exist on the page.
+_wikt_desc_report() {
+    local section="$1" headword="$2" keep_macrons="$3" shallow="$4"
+    local wikitext lines expanded
+    wikitext=$(cat)
+    lines=$(printf '%s\n' "$wikitext" | _wikt_desc_lines "$section")
+    if [[ -n "$lines" ]]; then
+        if [[ "$shallow" != 1 ]]; then
+            _WIKT_BUDGET="${ETYM_WIKT_MAX_PAGES:-25}"
+            _WIKT_SEEN=$'\n'
+            lines=$(_wikt_expand <<< "$lines")
+        fi
+        # Rebuild a minimal page around the (expanded) list so the report
+        # below reads it exactly as it reads a fetched page.
+        wikitext=$(printf '==%s==\n====Descendants====\n%s\n' "$section" "$lines")
+    fi
+
+    printf '%s\n' "$wikitext" | "${ETYM_AWK:-awk}" \
+        -v want_section="$section" \
+        -v codemap="$_WIKT_CODE_MAP" \
+        -v keep_macrons="$keep_macrons" \
+        -v cmac="$_WIKT_CMAC" \
+        -v headword="$headword" '
+    function trim(s) { gsub(/^[ \t]+|[ \t]+$/, "", s); return s }
+    function destar(s) { sub(/^\*/, "", s); return s }
+    function cleanterm(s) { sub(/#.*$/, "", s); gsub(/<[^>]*>/, "", s); return trim(s) }
+    function demacron(s) {
+        if (keep_macrons == 1) return s
+        gsub(cmac, "", s)
+        gsub(/ā/, "a", s); gsub(/ē/, "e", s); gsub(/ī/, "i", s)
+        gsub(/ō/, "o", s); gsub(/ū/, "u", s); gsub(/ȳ/, "y", s)
+        return s
+    }
+    BEGIN {
+        np_ = split(codemap, pairs, /[ \t\n]+/)
+        for (i = 1; i <= np_; i++) {
+            if (pairs[i] == "") continue
+            nf_ = split(pairs[i], f_, ":")
+            if (nf_ < 2) continue
+            tag[f_[1]] = f_[2]
+            if (nf_ >= 3) { langname[f_[1]] = f_[3]; gsub(/_/, " ", langname[f_[1]]) }
+        }
+        in_section = 0; in_desc = 0; n = 0
+        nsec = 0; seen_want = 0; lemma = ""; nelse = 0
+    }
+    /^==[^=]/ {
+        hdr = $0; gsub(/^==[ \t]*|[ \t]*==$/, "", hdr)
+        cur_section = hdr
+        sections[++nsec] = hdr
+        in_section = (hdr == want_section)
+        if (in_section) seen_want = 1
+        in_desc = 0; next
+    }
+    # Note Descendants sections in OTHER languages too, so a miss can say
+    # where the data actually is instead of just reporting absence.
+    /^===+[ \t]*Descendants/ && !in_section { elsewhere[++nelse] = cur_section; next }
+    !in_section { next }
+    /^===+[ \t]*Descendants/ { in_desc = 1; next }
+    /^===+/ { in_desc = 0; next }
+
+    # Form-of pages. Wiktionary lemmatises Latin verbs at the first-person
+    # singular, so "animare" is a non-lemma form whose entry is nothing but
+    # {{inflection of|la|animo||...}} — no Descendants, because they live
+    # on the lemma. Every form-of template is named "... of", with |1| the
+    # language and |2| the lemma, so one rule catches the whole family.
+    in_section && lemma == "" {
+        l2 = $0
+        while ((st2 = index(l2, "{{")) > 0) {
+            r2 = substr(l2, st2 + 2)
+            e2 = index(r2, "}}")
+            if (e2 == 0) break
+            b2 = substr(r2, 1, e2 - 1)
+            l2 = substr(r2, e2 + 2)
+            if (index(b2, "{{") > 0) continue
+            na2 = split(b2, p2, "|")
+            nm2 = trim(p2[1])
+            if (nm2 !~ / of$/) continue
+            np2 = 0
+            for (i = 2; i <= na2; i++)
+                if (p2[i] !~ /^[A-Za-z0-9_]+=/) a2[++np2] = trim(p2[i])
+            if (np2 >= 2 && a2[2] != "" && a2[2] != "-")
+                lemma = cleanterm(demacron(destar(a2[2])))
+            for (i = 1; i <= np2; i++) delete a2[i]
+        }
+    }
+    !in_desc { next }
+    /^[ \t]*\*/ {
+        line = $0
+        # list depth carries the tree shape
+        depth = 0
+        while (substr(trim(line), depth + 1, 1) == "*") depth++
+        while ((st = index(line, "{{")) > 0) {
+            rest = substr(line, st + 2)
+            e = index(rest, "}}")
+            if (e == 0) break
+            body = substr(rest, 1, e - 1)
+            line = substr(rest, e + 2)
+            if (index(body, "{{") > 0) continue
+            na = split(body, parts, "|")
+            name = trim(parts[1])
+            if (name !~ /^(desc|descendant|desctree|descendants tree)$/) continue
+            np = 0; via = ""
+            for (i = 2; i <= na; i++) {
+                if (parts[i] ~ /^[A-Za-z0-9_]+=/) {
+                    k = substr(parts[i], 1, index(parts[i], "=") - 1)
+                    v = substr(parts[i], index(parts[i], "=") + 1)
+                    if (trim(v) == "1") {
+                        if (k ~ /^bor[0-9]*$/)  via = "borrowed"
+                        if (k ~ /^lbor[0-9]*$/) via = "learned borrowing"
+                        if (k ~ /^slb[0-9]*$/)  via = "semi-learned borrowing"
+                        if (k ~ /^unc[0-9]*$/)  via = via (via == "" ? "" : ", ") "uncertain"
+                    }
+                } else arg[++np] = trim(parts[i])
+            }
+            code = arg[1]
+            for (j = 2; j <= np; j++) {
+                nt_ = split(arg[j], tt_, ",")
+                for (k2 = 1; k2 <= nt_; k2++) {
+                    t_ = cleanterm(demacron(destar(tt_[k2])))
+                    if (t_ == "" || t_ == "-") continue
+                    n++
+                    d_code[n] = code; d_term[n] = t_
+                    d_depth[n] = depth; d_via[n] = via
+                    d_tree[n] = (name ~ /tree/)
+                }
+            }
+            for (i = 1; i <= np; i++) delete arg[i]
+        }
+    }
+    END {
+        print "Descendants of: " headword " (" want_section ")"
+        print "================================================================="
+        if (n == 0) {
+            if (!seen_want) {
+                print "There is no " want_section " section on this page."
+                if (nsec > 0) {
+                    line_ = ""
+                    for (i = 1; i <= nsec; i++) line_ = line_ (line_ == "" ? "" : ", ") sections[i]
+                    print "Sections present: " line_
+                }
+            } else if (lemma != "") {
+                print "This is a NON-LEMMA FORM page: the " want_section " entry only says"
+                print "it is an inflection of " lemma ". Descendants are listed on the lemma."
+                print ""
+                printf "  etym-wiktionary %s --lang \"%s\" --descendants\n", lemma, want_section
+            } else {
+                print "The " want_section " entry has no Descendants section."
+                print "Descendants are listed on the ancestor, so if this word was itself"
+                print "borrowed or inherited, try the page it came from."
+            }
+            if (nelse > 0) {
+                line_ = ""
+                for (i = 1; i <= nelse; i++) line_ = line_ (line_ == "" ? "" : ", ") elsewhere[i]
+                print ""
+                print "A Descendants section does exist under: " line_
+            }
+            print "================================================================="
+            exit
+        }
+        for (i = 1; i <= n; i++) {
+            indent = ""
+            for (j = 2; j <= d_depth[i]; j++) indent = indent "  "
+            lname = (d_code[i] in langname) ? langname[d_code[i]] : d_code[i]
+            if (!(d_code[i] in tag)) t = "[??]"
+            else if (tag[d_code[i]] == "-") t = ""
+            else t = "[" tag[d_code[i]] "]"
+            # ONLY ASCII FIELDS ARE PADDED. Language names come from the map
+            # and tags are ASCII, so %-Ns is safe for them; the term may be
+            # Greek or accented, and awks disagree about whether length()
+            # counts bytes or characters, so the term goes last-but-one with
+            # the ragged marker after it. The pad shrinks with the indent so
+            # nested rows keep the same tag column as their parent.
+            w = 22 - length(indent)
+            if (w < 1) w = 1
+            printf "%s%-*s %-6s %s%s%s\n", indent, w, lname, t, d_term[i], \
+                (d_via[i] == "" ? "" : "  <- " d_via[i]), \
+                (d_tree[i] ? "  (subtree on its own page, not followed)" : "")
+        }
+        print "================================================================="
+        print "Unmarked descendants are inherited. A borrowing has not undergone"
+        print "the sound changes an inherited reflex has — say so in the prose."
+    }'
+}
+
 
 # etym-wiktionary <word> [--file <path>] [--raw] [--lang <section>] [--all]
+#                        [--macrons] [--descendants|--related] [--shallow]
 #
 # Fetches an entry's wikitext from the Wiktionary Action API and proposes a
 # candidate etymology chain in stanza format, for you to check by eye. It
@@ -21,6 +405,8 @@
 #   etym-wiktionary exhort --raw        # dump the wikitext instead
 #   etym-wiktionary exhort --raw > x.wiki && etym-wiktionary -f x.wiki
 #   etym-wiktionary exhort --all        # every Etymology section, not just the first
+#   etym-wiktionary animal --related    # the word's relatives in other languages
+#   etym-wiktionary animal --lang Latin --descendants   # one page's descendants
 #
 # WHY WIKTIONARY AND NOT A TRANSLATION API: the etymology is written in
 # templates that name the relationship, so the distinction the dictionary
@@ -28,10 +414,23 @@
 # read. {{inh}} {{der}} {{bor}} and the specialised borrowings are descent
 # and go in the chain; {{cog}} and {{ncog}} are cognates and are dropped,
 # which is the "akin to / compare" rule enforced mechanically instead of by
-# eye. Proto-languages are dropped by the same pass.
+# eye. Proto-languages, and Frankish, are dropped by the same pass.
 #
 # Both drops are REPORTED rather than silent, because the prose that follows
 # a stanza is supposed to say what came out and why.
+#
+# RELATIVES (--related). A word's relatives are not on its own page: they are
+# the other descendants of its ancestor, listed on the ANCESTOR's page. So
+# --related reads the chain, picks the ancestor to branch from, and prints
+# that page's Descendants tree:
+#   - a Latin form, if the chain has one (the oldest): Latin and Romance
+#   - else Proto-Germanic, else Proto-West Germanic: Germanic and Norse
+#   - else the oldest ancestor that is not Proto-Indo-European
+# A reconstruction is used here only to reach the relatives. It is never
+# proposed as a chain line. The relatives are cousins, not ancestors, so none
+# of them go in the chain either. Subtrees that the ancestor page hands off to
+# other pages are fetched and spliced in (--shallow skips that; at most
+# ETYM_WIKT_MAX_PAGES, default 25, extra pages are fetched).
 #
 # WHAT IT CANNOT DO. Wiktionary writes newest-first ("From Middle English X,
 # from Old French Y"); the output is reversed into oldest-first, but a page
@@ -39,73 +438,29 @@
 # result will be wrong in a way only reading can catch. Affixal etymologies
 # ({{af}}, {{suffix}}, {{compound}}) are morphology, not descent, and are
 # listed separately rather than chained. The newer {{etymon}} tree template
-# has a different argument shape and is flagged, not parsed. Treat every
-# line as a proposal.
+# has a different argument shape and is flagged, not parsed. --related reads
+# only the first Etymology section. Treat every line as a proposal.
 etym-wiktionary() {
-    local word="" src_file="" raw=0 section="English" all=0 keep_macrons=0 mode="chain"
-    local usage="Usage: etym-wiktionary <word> [--file <path>] [--raw] [--lang <section>] [--all] [--macrons] [--descendants]"
+    local word="" src_file="" raw=0 section="English" all=0 keep_macrons=0 mode="chain" shallow=0
+    local usage="Usage: etym-wiktionary <word> [--file <path>] [--raw] [--lang <section>] [--all] [--macrons] [--descendants|--related] [--shallow]"
 
     while [[ "$#" -gt 0 ]]; do
         case $1 in
-            -f|--file)      src_file="$2"; shift 2 ;;
-            --raw)          raw=1; shift ;;
-            -l|--lang)      section="$2"; shift 2 ;;
-            -a|--all)       all=1; shift ;;
-            --macrons)      keep_macrons=1; shift ;;
+            -f|--file)        src_file="$2"; shift 2 ;;
+            --raw)            raw=1; shift ;;
+            -l|--lang)        section="$2"; shift 2 ;;
+            -a|--all)         all=1; shift ;;
+            --macrons)        keep_macrons=1; shift ;;
             -D|--descendants) mode="desc"; shift ;;
-            -h|--help)      echo "$usage"; return 0 ;;
-            -*)             echo "$usage" >&2; return 1 ;;
-            *)              [[ -z "$word" ]] && word="$1"; shift ;;
+            -r|--related|--cousins) mode="related"; shift ;;
+            --shallow)        shallow=1; shift ;;
+            -h|--help)        echo "$usage"; return 0 ;;
+            -*)               echo "$usage" >&2; return 1 ;;
+            *)                [[ -z "$word" ]] && word="$1"; shift ;;
         esac
     done
 
     if [[ -z "$word" && -z "$src_file" ]]; then echo "$usage" >&2; return 1; fi
-
-    # U+0304 combining macron, built in the shell rather than written as an
-    # awk escape: \xNN is ambiguous in gawk and a byte range like [\200-\277]
-    # is rejected outright in a UTF-8 locale. A plain string handed to gsub is
-    # portable across gawk, mawk and BSD awk.
-    local cmac
-    cmac=$(printf '\xcc\x84')
-
-    # Wiktionary language code -> dictionary tag. Inline so this script has
-    # no dependencies beyond curl, jq and awk. An unmapped code prints as
-    # [??] and is listed at the end rather than guessed at.
-    #
-    # Codes are case-sensitive, and the trailing periods on VL. LL. ML. NL.
-    # are not typos — those are Wiktionary's etymology-only Latin varieties.
-    #
-    # Proto-languages are NOT handled here; they are dropped by the suffix
-    # rule "ends with -pro". Matching a bare "pro" would wrongly drop Old
-    # Occitan, whose code is exactly that.
-    # Fields are  code:TAG:WiktionarySectionName  — the third is optional and
-    # only used to tell you which --lang to pass when chasing descendants.
-    local code_map="
-        enm:MI:Middle_English    ang:OE:Old_English      non:ON:Old_Norse
-        la:L:Latin               VL.:VL:Latin            LL.:LL:Latin
-        ML.:ML:Latin             NL.:NL:Latin
-        grc:AG:Ancient_Greek     el:GR:Greek
-        fro:OF:Old_French        xno:AF:Anglo-Norman     nrf:ONF:Norman
-        fr:FR:French             frm:FR:Middle_French    pro:OP:Old_Occitan
-        ca:CAT:Catalan           oc:OC:Occitan           gl:GAL:Galician
-        an:ARG:Aragonese         scn:SCN:Sicilian        sc:SRD:Sardinian
-        rup:ARO:Aromanian        osp:OSP:Old_Spanish     roa-opt:OPT:Old_Portuguese
-        en:ME:English
-        it:IT:Italian            es:SP:Spanish           pt:POR:Portuguese
-        ro:ROM:Romanian
-        dum:MD:Middle_Dutch      nl:DU:Dutch             gml:MLG:Middle_Low_German
-        goh:OHG:Old_High_German  gmh:MHG:Middle_High_German
-        de:GER:German            got:GOT:Gothic
-        sga:OIR:Old_Irish        ga:IR:Irish             gd:GA:Scottish_Gaelic
-        cy:WEL:Welsh             xtg:GAU:Gaulish
-        ar:AR:Arabic             he:HE:Hebrew            syc:SYR:Classical_Syriac
-        akk:AKK:Akkadian         phn:PHO:Phoenician      egy:EGY:Egyptian
-        hit:HIT:Hittite          ett:ETR:Etruscan
-        sa:SK:Sanskrit           pal:MP:Middle_Persian   fa:PER:Persian
-        hi:HI:Hindi
-        ms:MAL:Malay            zh:CH:Chinese            ja:JP:Japanese
-        ta:TA:Tamil             nci:AZ:Classical_Nahuatl
-    "
 
     # ── Source: a local file, or the Action API ─────────────────────────────
     local wikitext
@@ -113,38 +468,16 @@ etym-wiktionary() {
         [[ -f "$src_file" ]] || { echo "Error: '$src_file' not found." >&2; return 1; }
         wikitext=$(cat "$src_file")
     else
-        command -v curl >/dev/null 2>&1 || { echo "Error: curl is required." >&2; return 1; }
-        local api="https://en.wiktionary.org/w/api.php"
-        local ua="${ETYM_USER_AGENT:-etym-toolkit/1.0 (dictionary research; contact via repo)}"
-        local response
-        # A descriptive User-Agent is required by Wikimedia's policy; requests
-        # with a generic one are refused. --get + --data-urlencode keeps the
-        # word correctly escaped whatever is in it.
-        response=$(curl -sS --fail --max-time 20 --compressed \
-            -A "$ua" --get "$api" \
-            --data-urlencode "action=parse" \
-            --data-urlencode "page=$word" \
-            --data-urlencode "prop=wikitext" \
-            --data-urlencode "format=json" \
-            --data-urlencode "formatversion=2" 2>&1) || {
-                echo "Error: request failed: $response" >&2; return 1; }
-
-        if printf '%s' "$response" | jq -e 'has("error")' >/dev/null 2>&1; then
-            echo "Error: Wiktionary: $(printf '%s' "$response" | jq -r '.error.info')" >&2
-            return 1
-        fi
-        wikitext=$(printf '%s' "$response" | jq -r '.parse.wikitext // empty')
-        [[ -n "$wikitext" ]] || { echo "Error: no wikitext returned for '$word'." >&2; return 1; }
+        wikitext=$(_wikt_fetch "$word") || return 1
     fi
 
     if (( raw )); then printf '%s\n' "$wikitext"; return 0; fi
-
 
     # ── Descendants mode ────────────────────────────────────────────────────
     # The siblings of an English word are not on the English page. They are on
     # the ANCESTOR's page, under ====Descendants====, because that is where a
     # word's children are listed. So Spanish animal is reached from Latin
-    # animalis, not from English animal.
+    # animal, not from English animal.
     #
     # {{desc}} marks how each descendant arrived: bor=1 borrowed, lbor=1
     # learned borrowing, slb=1 semi-learned. For a reformed-spelling project
@@ -152,184 +485,24 @@ etym-wiktionary() {
     # undergone the sound changes an inherited reflex has, so it is not the
     # same kind of evidence.
     if [[ "$mode" == "desc" ]]; then
-        printf '%s\n' "$wikitext" | "${ETYM_AWK:-awk}" \
-            -v want_section="$section" \
-            -v codemap="$code_map" \
-            -v keep_macrons="$keep_macrons" \
-            -v cmac="$cmac" \
-            -v headword="${word:-$src_file}" '
-        function trim(s) { gsub(/^[ \t]+|[ \t]+$/, "", s); return s }
-        function destar(s) { sub(/^\*/, "", s); return s }
-        function cleanterm(s) { sub(/#.*$/, "", s); gsub(/<[^>]*>/, "", s); return trim(s) }
-        function demacron(s) {
-            if (keep_macrons == 1) return s
-            gsub(cmac, "", s)
-            gsub(/ā/, "a", s); gsub(/ē/, "e", s); gsub(/ī/, "i", s)
-            gsub(/ō/, "o", s); gsub(/ū/, "u", s); gsub(/ȳ/, "y", s)
-            return s
-        }
-        BEGIN {
-            np_ = split(codemap, pairs, /[ \t\n]+/)
-            for (i = 1; i <= np_; i++) {
-                if (pairs[i] == "") continue
-                nf_ = split(pairs[i], f_, ":")
-                if (nf_ < 2) continue
-                tag[f_[1]] = f_[2]
-                if (nf_ >= 3) { langname[f_[1]] = f_[3]; gsub(/_/, " ", langname[f_[1]]) }
-            }
-            in_section = 0; in_desc = 0; n = 0
-            nsec = 0; seen_want = 0; lemma = ""; nelse = 0
-        }
-        /^==[^=]/ {
-            hdr = $0; gsub(/^==[ \t]*|[ \t]*==$/, "", hdr)
-            cur_section = hdr
-            sections[++nsec] = hdr
-            in_section = (hdr == want_section)
-            if (in_section) seen_want = 1
-            in_desc = 0; next
-        }
-        # Note Descendants sections in OTHER languages too, so a miss can say
-        # where the data actually is instead of just reporting absence.
-        /^===+[ \t]*Descendants/ && !in_section { elsewhere[++nelse] = cur_section; next }
-        !in_section { next }
-        /^===+[ \t]*Descendants/ { in_desc = 1; next }
-        /^===+/ { in_desc = 0; next }
-
-        # Form-of pages. Wiktionary lemmatises Latin verbs at the first-person
-        # singular, so "animare" is a non-lemma form whose entry is nothing but
-        # {{inflection of|la|animo||...}} — no Descendants, because they live
-        # on the lemma. Every form-of template is named "... of", with |1| the
-        # language and |2| the lemma, so one rule catches the whole family.
-        in_section && lemma == "" {
-            l2 = $0
-            while ((st2 = index(l2, "{{")) > 0) {
-                r2 = substr(l2, st2 + 2)
-                e2 = index(r2, "}}")
-                if (e2 == 0) break
-                b2 = substr(r2, 1, e2 - 1)
-                l2 = substr(r2, e2 + 2)
-                if (index(b2, "{{") > 0) continue
-                na2 = split(b2, p2, "|")
-                nm2 = trim(p2[1])
-                if (nm2 !~ / of$/) continue
-                np2 = 0
-                for (i = 2; i <= na2; i++)
-                    if (p2[i] !~ /^[A-Za-z0-9_]+=/) a2[++np2] = trim(p2[i])
-                if (np2 >= 2 && a2[2] != "" && a2[2] != "-")
-                    lemma = cleanterm(demacron(destar(a2[2])))
-                for (i = 1; i <= np2; i++) delete a2[i]
-            }
-        }
-        !in_desc { next }
-        /^[ \t]*\*/ {
-            line = $0
-            # list depth carries the tree shape
-            depth = 0
-            while (substr(trim(line), depth + 1, 1) == "*") depth++
-            while ((st = index(line, "{{")) > 0) {
-                rest = substr(line, st + 2)
-                e = index(rest, "}}")
-                if (e == 0) break
-                body = substr(rest, 1, e - 1)
-                line = substr(rest, e + 2)
-                if (index(body, "{{") > 0) continue
-                na = split(body, parts, "|")
-                name = trim(parts[1])
-                if (name !~ /^(desc|descendant|desctree|descendants tree)$/) continue
-                np = 0; via = ""
-                for (i = 2; i <= na; i++) {
-                    if (parts[i] ~ /^[A-Za-z0-9_]+=/) {
-                        k = substr(parts[i], 1, index(parts[i], "=") - 1)
-                        v = substr(parts[i], index(parts[i], "=") + 1)
-                        if (trim(v) == "1") {
-                            if (k ~ /^bor[0-9]*$/)  via = "borrowed"
-                            if (k ~ /^lbor[0-9]*$/) via = "learned borrowing"
-                            if (k ~ /^slb[0-9]*$/)  via = "semi-learned borrowing"
-                            if (k ~ /^unc[0-9]*$/)  via = via (via == "" ? "" : ", ") "uncertain"
-                        }
-                    } else arg[++np] = trim(parts[i])
-                }
-                code = arg[1]
-                for (j = 2; j <= np; j++) {
-                    nt_ = split(arg[j], tt_, ",")
-                    for (k2 = 1; k2 <= nt_; k2++) {
-                        t_ = cleanterm(demacron(destar(tt_[k2])))
-                        if (t_ == "" || t_ == "-") continue
-                        n++
-                        d_code[n] = code; d_term[n] = t_
-                        d_depth[n] = depth; d_via[n] = via
-                        d_tree[n] = (name ~ /tree/)
-                    }
-                }
-                for (i = 1; i <= np; i++) delete arg[i]
-            }
-        }
-        END {
-            print "Descendants of: " headword " (" want_section ")"
-            print "================================================================="
-            if (n == 0) {
-                if (!seen_want) {
-                    print "There is no " want_section " section on this page."
-                    if (nsec > 0) {
-                        line_ = ""
-                        for (i = 1; i <= nsec; i++) line_ = line_ (line_ == "" ? "" : ", ") sections[i]
-                        print "Sections present: " line_
-                    }
-                } else if (lemma != "") {
-                    print "This is a NON-LEMMA FORM page: the " want_section " entry only says"
-                    print "it is an inflection of " lemma ". Descendants are listed on the lemma."
-                    print ""
-                    printf "  etym-wiktionary %s --lang \"%s\" --descendants\n", lemma, want_section
-                } else {
-                    print "The " want_section " entry has no Descendants section."
-                    print "Descendants are listed on the ancestor, so if this word was itself"
-                    print "borrowed or inherited, try the page it came from."
-                }
-                if (nelse > 0) {
-                    line_ = ""
-                    for (i = 1; i <= nelse; i++) line_ = line_ (line_ == "" ? "" : ", ") elsewhere[i]
-                    print ""
-                    print "A Descendants section does exist under: " line_
-                }
-                print "================================================================="
-                exit
-            }
-            for (i = 1; i <= n; i++) {
-                indent = ""
-                for (j = 2; j <= d_depth[i]; j++) indent = indent "  "
-                lname = (d_code[i] in langname) ? langname[d_code[i]] : d_code[i]
-                t = (d_code[i] in tag) ? "[" tag[d_code[i]] "]" : "[??]"
-                # ONLY ASCII FIELDS ARE PADDED. Language names come from the
-                # map and tags are ASCII, so %-Ns is safe for them; the term
-                # may be Greek or accented, and awks disagree about whether
-                # length() counts bytes or characters. Measuring it needed a
-                # byte-range regex that gawk rejects outright, so the term is
-                # simply printed last-but-one with the ragged marker after it.
-                # Shrink the pad by the indent so nested rows keep the same
-                # tag column as their parent.
-                w = 20 - length(indent)
-                if (w < 1) w = 1
-                printf "%s%-*s %-6s %s%s%s\n", indent, w, lname, t, d_term[i], \
-                    (d_via[i] == "" ? "" : "  <- " d_via[i]), \
-                    (d_tree[i] ? "  (subtree on its own page)" : "")
-            }
-            print "================================================================="
-            print "Unmarked descendants are inherited. A borrowing has not undergone"
-            print "the sound changes an inherited reflex has — say so in the prose."
-        }'
+        printf '%s\n' "$wikitext" \
+            | _wikt_desc_report "$section" "${word:-$src_file}" "$keep_macrons" "$shallow"
         return
     fi
 
     # ── Parse ───────────────────────────────────────────────────────────────
-    # Everything below is plain POSIX awk over the wikitext, so the only jq in
-    # this function is the one expression that lifts a string out of the API
-    # envelope. Nothing here touches the network or the dictionary.
-    printf '%s\n' "$wikitext" | "${ETYM_AWK:-awk}" \
+    # Plain POSIX awk over the wikitext. With emit_anchor=1 (--related) it
+    # prints only the ancestor to branch from, as  code TAB term TAB reason,
+    # instead of the report.
+    local parsed
+    parsed=$(printf '%s\n' "$wikitext" | "${ETYM_AWK:-awk}" \
         -v want_section="$section" \
         -v all_etym="$all" \
-        -v codemap="$code_map" \
+        -v codemap="$_WIKT_CODE_MAP" \
+        -v reconly="$_WIKT_RECONSTRUCTED_ONLY" \
         -v keep_macrons="$keep_macrons" \
-        -v cmac="$cmac" \
+        -v cmac="$_WIKT_CMAC" \
+        -v emit_anchor="$([[ $mode == related ]] && echo 1 || echo 0)" \
         -v headword="${word:-$src_file}" '
     function trim(s) { gsub(/^[ \t]+|[ \t]+$/, "", s); return s }
 
@@ -348,7 +521,6 @@ etym-wiktionary() {
         return trim(s)
     }
 
-
     # Wiktionary always writes Latin with macrons; this dictionary does not
     # (2 of 3,780 Latin-family forms carry one, and both look like slips).
     # Stripping them here means a proposed line can be pasted as it stands.
@@ -365,10 +537,15 @@ etym-wiktionary() {
         return s
     }
 
-    function is_proto(code) {
-        # ENDS WITH "-pro". Not "contains": Old Occitan is exactly "pro".
-        return (length(code) > 4 && substr(code, length(code) - 3) == "-pro")
+    # Languages that exist only by reconstruction: every code ending "-pro"
+    # (ENDS WITH, not contains: Old Occitan is exactly "pro"), plus the few
+    # listed in reconly, such as Frankish.
+    function is_reconstructed(code) {
+        if (length(code) > 4 && substr(code, length(code) - 3) == "-pro") return 1
+        return (code in recon)
     }
+
+    function has_tag(code) { return (code in tag) && tag[code] != "-" }
 
     BEGIN {
         np_ = split(codemap, pairs, /[ \t\n]+/)
@@ -379,7 +556,9 @@ etym-wiktionary() {
             tag[f_[1]] = f_[2]
             if (nf_ >= 3) { langname[f_[1]] = f_[3]; gsub(/_/, " ", langname[f_[1]]) }
         }
-        in_section = 0; in_etym = 0; n = 0; nd = 0; nm = 0; nu = 0; etym_seen = 0
+        nr_ = split(reconly, r_, /[ \t\n]+/)
+        for (i = 1; i <= nr_; i++) if (r_[i] != "") recon[r_[i]] = 1
+        in_section = 0; in_etym = 0; n = 0; nd = 0; nm = 0; nu = 0; etym_seen = 0; na_ = 0
     }
 
     # --- section tracking ---
@@ -423,16 +602,22 @@ etym-wiktionary() {
 
             # descent: |1|=this lang, |2|=source lang, |3|=term
             if (name ~ /^(inh|inherited|der|derived|bor|borrowed|uder|lbor|slbor|ubor|psm|learned borrowing|semi-learned borrowing|unadapted borrowing)\+?$/) {
-                code = arg[2]; term = destar(arg[3])
+                code = arg[2]; term = cleanterm(arg[3])
                 if (code == "") { for (i = 1; i <= np; i++) delete arg[i]; continue }
-                if (is_proto(code)) {
+                # Every ancestor of the first Etymology, reconstructions
+                # included and star kept, is a candidate for --related.
+                if (etym_seen == 1 && term != "" && term != "-") {
+                    na_++; a_code[na_] = code; a_term[na_] = term
+                }
+                term = destar(term)
+                if (is_reconstructed(code)) {
                     nd++; dropped[nd] = code " " (term == "" || term == "-" ? "(no form)" : term) " [reconstructed]"; drop_sec[nd] = etym_seen
                 } else if (term == "" || term == "-") {
                     nd++; dropped[nd] = code " (template gives no form) [" name "]"; drop_sec[nd] = etym_seen
                 } else {
                     n++; ch_code[n] = code; ch_term[n] = demacron(term); ch_kind[n] = name
                     ch_sec[n] = etym_seen
-                    if (!(code in tag)) unmapped[++nu] = code
+                    if (!has_tag(code)) unmapped[++nu] = code
                 }
             }
             # cognates: |1|=lang, |2|=term. Siblings, never ancestors.
@@ -469,7 +654,28 @@ etym-wiktionary() {
 
     function secmark(n_) { return (etym_seen > 1 ? sprintf("[Ety %d] ", n_) : "") }
 
+    # The ancestor --related branches from; see the function header. Candidates
+    # run newest-first in the text, so scanning from na_ down is oldest-first.
+    function pick_anchor(   i) {
+        for (i = na_; i >= 1; i--)
+            if (a_code[i] ~ /^(la|LL\.|ML\.|VL\.)$/) { why = "the oldest Latin form in its etymology"; return i }
+        for (i = na_; i >= 1; i--)
+            if (a_code[i] == "gem-pro") { why = "its Proto-Germanic ancestor"; return i }
+        for (i = na_; i >= 1; i--)
+            if (a_code[i] == "gmw-pro") { why = "its Proto-West Germanic ancestor"; return i }
+        for (i = na_; i >= 1; i--)
+            if (a_code[i] != "ine-pro") { why = "the oldest ancestor in its etymology"; return i }
+        return 0
+    }
+
     END {
+        if (emit_anchor == 1) {
+            p = pick_anchor()
+            if (p) printf "%s\t%s\t%s\n", a_code[p], a_term[p], why
+            else if (flagged_etymon) print "\t\tetymon"
+            exit
+        }
+
         print "Proposed chain for: " headword
         print "================================================================="
         if (n == 0) {
@@ -495,7 +701,7 @@ etym-wiktionary() {
                 }
                 for (i = n; i >= 1; i--) {
                     if (ch_sec[i] != sec) continue
-                    t = (ch_code[i] in tag) ? tag[ch_code[i]] : "??"
+                    t = has_tag(ch_code[i]) ? tag[ch_code[i]] : "??"
                     printf "%s [%s]\n", ch_term[i], t
                     if (ch_kind[i] ~ /^(bor|borrowed|lbor|slbor|ubor|psm)/)
                         borrowed[++nb] = ch_term[i] " [" t "]"
@@ -535,22 +741,14 @@ etym-wiktionary() {
         }
         if (nu > 0) {
             print ""
-            print "UNMAPPED CODES (add to code_map near the top of this script):"
+            print "UNMAPPED CODES (give them a tag in _WIKT_CODE_MAP near the top of this script):"
             for (i = 1; i <= nu; i++) print "  - " unmapped[i]
         }
-        if (n > 0) {
+        if (n > 0 || na_ > 0) {
             print ""
-            print "COUSINS: descendants live on the ANCESTOR page, not this one."
-            # One suggestion per Etymology section — they are different words,
-            # so they have different ancestors and different cousins.
-            for (sec = 1; sec <= etym_seen; sec++) {
-                oi = 0
-                for (i = 1; i <= n; i++) if (ch_sec[i] == sec) oi = i
-                if (oi == 0) continue
-                oc = ch_code[oi]
-                printf "  %setym-wiktionary %s%s --descendants\n", secmark(sec), \
-                    ch_term[oi], (oc in langname ? " --lang \"" langname[oc] "\"" : "")
-            }
+            print "RELATIVES in other languages:"
+            printf "  etym-wiktionary %s%s --related\n", headword, \
+                (want_section != "English" ? " --lang \"" want_section "\"" : "")
         }
         if (flagged_etymon) {
             print ""
@@ -562,7 +760,36 @@ etym-wiktionary() {
             printf "NOTE: %d Etymology sections on this page; only the first was read.\n", etym_seen
             print "      Re-run with --all to see them all."
         }
-    }'
+    }') || return 1
+
+    if [[ "$mode" != "related" ]]; then
+        printf '%s\n' "$parsed"
+        return 0
+    fi
+
+    # ── Related mode ────────────────────────────────────────────────────────
+    local acode aterm why aname apage atext
+    IFS=$'\t' read -r acode aterm why <<< "$parsed"
+    if [[ -z "$acode" ]]; then
+        echo "No ancestor to branch from in the first $section Etymology section." >&2
+        [[ "$why" == etymon ]] && echo "The entry uses {{etymon}}, which this function does not parse." >&2
+        echo "Run  etym-wiktionary ${word:-$src_file}  to see what the page contains." >&2
+        return 1
+    fi
+    aname=$(_wikt_name "$acode") || {
+        echo "Error: the ancestor is in '$acode', which has no section name in _WIKT_CODE_MAP." >&2
+        return 1
+    }
+    apage=$(_wikt_page_title "$acode" "$aterm") || return 1
+
+    echo "Relatives of: ${word:-$src_file}"
+    echo "Found through $aname ${aterm#\*}, $why."
+    if [[ "$aterm" == \** || "$acode" == *-pro ]]; then
+        echo "(A reconstruction, used only to reach the relatives. It is not a chain line.)"
+    fi
+    echo
+    atext=$(_wikt_fetch "$apage") || return 1
+    printf '%s\n' "$atext" | _wikt_desc_report "$aname" "$apage" "$keep_macrons" "$shallow"
 }
 
 # Run directly as well as being sourced.
