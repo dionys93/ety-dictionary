@@ -6,7 +6,7 @@
 |---|---|---|---|
 | /tʃ/ | `c̃` | Old English, Old French, Spanish, English | settled |
 | /k/ before *e, i* | `cu` or `ch`; `-que` word-final | French, Spanish, Catalan, Galician | settled |
-| /kw/ | `qu` | Italian, Corsican, Portuguese | `qu` |
+| /kw/ | `qu` | Italian, Corsican, Portuguese | settled |
 | /kj/ | `cu`, or `qh` | Gallo `qh`, Friulian `cj`, Italian `chi` | `cu` |
 | /g/ before *e, i* | `gu` or `gh` | five Romance standards | settled |
 | /gw/ before *e, i* | `gü` | four Romance standards | settled |
