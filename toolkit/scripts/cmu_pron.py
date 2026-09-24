@@ -216,4 +216,9 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    try:
+        sys.exit(main())
+    except BrokenPipeError:
+        # Output piped into head, less, etc. that stopped reading early.
+        sys.stderr.close()
+        sys.exit(0)
