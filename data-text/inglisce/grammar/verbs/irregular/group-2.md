@@ -22,7 +22,7 @@ These verbs form their past with a dental suffix (**-t** or **-d**) rather than 
 
 When the suffix met a root with a long vowel, it made a heavy consonant cluster (Old English *cēpan*, past *cēpte*), and the long vowel shortened before it. This is **Pre-Cluster Shortening**, and it leaves the /ɛ/ of *kept*, *slept* and *meant*.
 
-Inglisce maps this shortening directly. Whether the infinitive spells its vowel **-ie-**, **-i-** or **-e-**, the past shifts it to the digraph **-ai-**. Before **-ai-**, an infinitive's **ch** is written **c** (`to chiepe` → `caipt`).
+Inglisce maps this shortening directly. Whether the infinitive spells its vowel **-ie-**, **-i-** or **-e-**, the past shifts it to the digraph **-ai-** (`to cuípe` → `caipt`).
 
 What separates this group from 2C is the spelling outcome, not the consonants: several verbs here (`lide`, `riede`, `miete`) have roots ending in a dental, just as 2C's do. `to pliede` is not Germanic at all: *plead* is from Old French *plaidier*, and its short past *pled* is probably by analogy with *lead* / *led*.
 
@@ -39,7 +39,7 @@ What separates this group from 2C is the spelling outcome, not the consonants: s
 | to miene | maint |
 | to lievfe | laift |
 | to criepe | craipt |
-| to chiepe | caipt |
+| to cuípe | caipt |
 | to sliepe | slaipt |
 | to suiepe | suaipt |
 | to uiepe | uaipt |
