@@ -324,7 +324,10 @@ etym-cognates() {
 # -----------------------------------------------------------------------------
 
 # _etym_me_rows <word> [<file>...]
-# Emits one tab-separated row per stanza: file, stanza number, POS, [ME] text.
+# Emits one tab-separated row per stanza: file, stanza number, POS, [ME] text,
+# reformed line (POS removed), and the language tags of the stanza's lines,
+# top to bottom, space-separated. Consumers that want only the first four
+# columns can ignore the rest.
 # With no files named, reads a NUL-separated file list on stdin (find -print0),
 # for runs over the whole dictionary that would overflow a command line.
 # With <word> empty, every stanza that has an [ME] line; otherwise only those
@@ -347,15 +350,20 @@ _etym_me_rows() {
         function strip_to(x) { sub(/^[tT][oO][ \t]+/, "", x); return x }
         BEGIN { RS = ""; FS = "\n"; want = tolower(want) }
         {
-            me = ""; reformed = ""; pos = ""
+            me = ""; reformed = ""; pos = ""; langs = ""
             for (i = 1; i <= NF; i++) {
                 line = $i
                 gsub(/\r/, "", line)
                 if (line == "" || line ~ /^http/) continue
                 if (line ~ /\([a-z]/ && line !~ /\[[A-Z]/) { reformed = line; continue }
+                if (match(line, /\[[A-Z]+\]/))
+                    langs = langs (langs == "" ? "" : " ") substr(line, RSTART + 1, RLENGTH - 2)
                 if (me == "" && match(line, /\[ME\]/))
                     me = trim(substr(line, 1, RSTART - 1))
             }
+            rf = reformed
+            sub(/[ \t]*\([a-z][a-z ,]*\)[ \t]*$/, "", rf)
+            rf = trim(rf)
 
             if (match(reformed, /\([a-z][a-z ,]*\)[ \t]*$/)) {
                 pos = substr(reformed, RSTART + 1)
@@ -375,7 +383,7 @@ _etym_me_rows() {
                 if (ht[1] != "" && tolower(ht[1]) == want) hit = 1
             }
 
-            if (hit) printf "%s\t%d\t%s\t%s\n", FILENAME, FNR, pos, me
+            if (hit) printf "%s\t%d\t%s\t%s\t%s\t%s\n", FILENAME, FNR, pos, me, rf, langs
         }
     '
     if [[ $# -gt 0 ]]; then
@@ -562,6 +570,79 @@ etym-morph() {
     fi
     printf -- "--- Morphology (MorphoLex-en) for: %s ---\n" "$word"
     printf '%s\n' "$rows" | "$py" "$script" word "$cache" $raw
+}
+
+
+# etym-sound [options]
+# Finds [ME] words by how they sound, from a pronunciation index of the whole
+# dictionary (CMUdict, General American). Sounds may be IPA or ARPAbet, and
+# "schwa" stands for either unstressed schwa (ə or r-coloured ɚ).
+#
+#   etym-sound --schwa-final -p verb      # verbs whose last syllable is a schwa
+#                                         #   (widen, bottle, butter)
+#   etym-sound --schwa-end -p verb        # verbs whose last sound is a schwa
+#   etym-sound --has aɪ -p noun           # nouns with "long i" anywhere
+#   etym-sound --stressed aɪ -p noun      # ...where it carries the stress
+#   etym-sound --ends ən                  # ending in /ən/ (same as --ends "AH0 N")
+#   etym-sound --starts sk --syll 1       # one-syllable words starting /sk/
+#   etym-sound --has aɪ --json            # records for jq; --bare, --count too
+#   etym-sound --missing                  # forms CMUdict does not know
+#   etym-sound --rebuild                  # rebuild the index now
+#
+# -p takes POS tags as etym-select does (comma-separated or repeated) and also
+# the groups noun, verb, adj, adv, which gather every tag of that kind (noun is
+# m n, f n, ...; verb is v, tr v, intr v, irv, ...). --arpa adds an ARPAbet
+# column. The full option list is at the top of scripts/sounds.py.
+#
+# THE INDEX is $ETYM_SOUND_INDEX, default toolkit/dist/pronunciations.tsv: one
+# row per pronunciation of every [ME] form, with its file, stanza, POS and your
+# reformed line. It is plain TSV, fine to grep or open. It is rebuilt
+# automatically whenever a dictionary file (or the lookup code) is newer than
+# it, so a search never runs on stale data; building needs the cmudict package,
+# like etym-pron. Forms CMUdict does not know are kept as rows with no
+# pronunciation, so the gaps are countable rather than invisible.
+etym-sound() {
+    local script="$ETYM_LIB_DIR/scripts/sounds.py"
+    local cmu_script="$ETYM_LIB_DIR/scripts/cmu_pron.py"
+    local index="${ETYM_SOUND_INDEX:-$ETYM_LIB_DIR/dist/pronunciations.tsv}"
+    [[ -f "$script" ]] || { echo "Error: script not found: $script" >&2; return 1; }
+
+    if [[ $# -eq 0 || "$1" == -h || "$1" == --help ]]; then
+        echo "Usage: etym-sound [--ends S] [--starts S] [--has S] [--stressed V]"
+        echo "                  [--schwa-end] [--schwa-final] [--syll N|N-M] [-p POS]"
+        echo "                  [--missing] [--arpa] [--bare|--count|--json] | --rebuild"
+        [[ $# -gt 0 ]]; return $?
+    fi
+
+    local rebuild=0 args=() a
+    for a in "$@"; do
+        if [[ "$a" == "--rebuild" ]]; then rebuild=1; else args+=("$a"); fi
+    done
+
+    if (( ! rebuild )); then
+        if [[ ! -f "$index" ]]; then
+            rebuild=1
+        elif [[ -n "$(find "$DICT_DIR" "$script" "$cmu_script" -newer "$index" -print -quit 2>/dev/null)" ]]; then
+            rebuild=1
+        fi
+    fi
+
+    local py
+    py=$(_etym_python)
+    if (( rebuild )); then
+        if [[ -n "${ETYM_CMUDICT:-}" ]]; then
+            [[ -f "$ETYM_CMUDICT" ]] || { echo "Error: ETYM_CMUDICT is set but no file is there: $ETYM_CMUDICT" >&2; return 1; }
+        else
+            _etym_need_module "$py" cmudict "or set ETYM_CMUDICT to a cmudict.dict file." || return 1
+        fi
+        echo "Building the pronunciation index ($index)..." >&2
+        find "$DICT_DIR" -type f -name '*.txt' -print0 \
+            | _etym_me_rows "" \
+            | DICT_DIR="$DICT_DIR" "$py" "$script" build "$index" || return 1
+    fi
+
+    [[ ${#args[@]} -eq 0 ]] && return 0
+    "$py" "$script" query "$index" "${args[@]}"
 }
 
 
@@ -1488,8 +1569,216 @@ etym-create-histories() {
     echo "Complete! Extracted/Updated $total_extracted files."
 }
 
+# -----------------------------------------------------------------------------
+# Language tags: the register, retired tags, and a census of what is in use
+# -----------------------------------------------------------------------------
+# config/languages.tsv is the register: a tag is official if it is listed
+# there, one per line as "TAG  Name". config/language-aliases.tsv (optional)
+# lists retired tags, one per line as "OLD  NEW" for a tag with a
+# replacement, or "OLD  (reason)" for one that should not be used at all:
+#
+#     AG    GK
+#     FRK   (Frankish is reconstructed: stop the chain at the oldest attested form)
+#
+# etym-lint checks every tagged line against both; etym-langs shows what the
+# data actually uses, which is the evidence for deciding what goes in them.
+#
+# Three things the parser cannot read as a language, and so records as an
+# empty lang, are reported by both:
+#   - a name in brackets instead of a tag:   tomatl [Nahuatl]
+#   - a chain line with no bracket at all:   τριάς
+#   - (for completeness) an unregistered tag, which parses but is unofficial
+# A reformed conjugation line ("to eite -s éit eiten -ing") is not a chain
+# line and is never flagged; the test for it is the one etym-lint already
+# uses to recognise conjugation lines.
+
+# Registered tags, one per line.
+_etym_lang_register() {
+    [[ -f "$CONFIG_DIR/languages.tsv" ]] || return 0
+    sed -e 's/\r$//' "$CONFIG_DIR/languages.tsv" \
+        | awk '!/^[ \t]*#/ && NF { print $1 }'
+}
+
+# Retired tags, one per line as "OLD<TAB>replacement-or-(reason)".
+_etym_lang_aliases() {
+    [[ -f "$CONFIG_DIR/language-aliases.tsv" ]] || return 0
+    sed -e 's/\r$//' "$CONFIG_DIR/language-aliases.tsv" \
+        | awk '!/^[ \t]*#/ && NF {
+              old = $1; rest = $0
+              sub(/^[ \t]*[^ \t]+[ \t]+/, "", rest); sub(/[ \t]+$/, "", rest)
+              if (rest != "" && rest != old) print old "\t" rest
+          }'
+}
+
+# The per-line classification both etym-langs and etym-lint use. Reads the
+# register and aliases from the environment (LANG_REG, LANG_ALIASES) so that
+# nothing in them is mangled by awk -v escape processing.
+#
+# Emits one TAB-separated row per finding:
+#   tag      <TAG> <file> <stanza> <line>     every tag, registered or not
+#   named    <[Name]> <file> <stanza> <line>
+#   untagged -     <file> <stanza> <line>
+_ETYM_LANG_SCAN='
+    BEGIN {
+        RS = ""; FS = "\n"
+        n = split(ENVIRON["LANG_REG"], r_, "\n")
+        for (i = 1; i <= n; i++) if (r_[i] != "") reg[r_[i]] = 1
+    }
+    {
+        for (i = 1; i <= NF; i++) {
+            line = $i; gsub(/\r/, "", line)
+            if (line == "" || line ~ /^http/) continue
+            # Reformed line: same test as the parser.
+            if (line ~ /\([a-z]/ && line !~ /\[[A-Z]/) continue
+
+            found = 0
+            rest = line
+            while (match(rest, /\[[A-Z]+\]/)) {
+                t = substr(rest, RSTART + 1, RLENGTH - 2)
+                printf "tag\t%s\t%s\t%d\t%s\n", t, FILENAME, FNR, line
+                rest = substr(rest, RSTART + RLENGTH); found = 1
+            }
+            rest = line
+            while (match(rest, /\[[A-Z][^]\[]*[a-z][^]\[]*\]/)) {
+                printf "named\t%s\t%s\t%d\t%s\n", substr(rest, RSTART, RLENGTH), FILENAME, FNR, line
+                rest = substr(rest, RSTART + RLENGTH); found = 1
+            }
+            if (found) continue
+            # A reformed conjugation line, recognised as etym-lint does.
+            if (line ~ /(^| )-[a-z]+/ || line ~ /\(s( |$)/) continue
+            printf "untagged\t-\t%s\t%d\t%s\n", FILENAME, FNR, line
+        }
+    }'
+
+# etym-langs [path] [--json]
+# A census of the language tags in use: each tag with its count, whether it is
+# registered, retired (and to what), or neither, its registered name, and
+# example lines to show what it is actually being used for. Then the lines the
+# parser cannot read a language from at all: names in brackets, and chain
+# lines with no tag.
+#
+# This is the evidence for deciding the official set. The same tag is used
+# for different languages in places (look at the examples), and the same
+# language under different tags, so the decision is yours; the census only
+# makes it quick.
+etym-langs() {
+    local target="" json=0
+    while [[ $# -gt 0 ]]; do
+        case "$1" in
+            --json) json=1 ;;
+            -h|--help) echo "Usage: etym-langs [path] [--json]"; return 0 ;;
+            *) target="$1" ;;
+        esac
+        shift
+    done
+    local path="${target:-$DICT_DIR}"
+    [[ -e "$DICT_DIR/$path" ]] && path="$DICT_DIR/$path"
+    [[ -e "$path" ]] || { echo "Error: '$path' not found." >&2; return 1; }
+
+    local reg aliases
+    reg=$(_etym_lang_register)
+    aliases=$(_etym_lang_aliases)
+
+    find "$path" -type f -name '*.txt' -print0 \
+        | LANG_REG="$reg" xargs -0 -r "$_ETYM_AWK" "$_ETYM_LANG_SCAN" \
+        | LANG_REG="$reg" LANG_ALIASES="$aliases" LANG_FILE="$CONFIG_DIR/languages.tsv" \
+          DICT_DIR="$DICT_DIR" JSON="$json" "$_ETYM_AWK" -F'\t' '
+        function short(f) { return (index(f, root "/") == 1) ? substr(f, length(root) + 2) : f }
+        function jstr(s) { gsub(/\\/, "\\\\", s); gsub(/"/, "\\\"", s); gsub(/\t/, " ", s); return "\"" s "\"" }
+        BEGIN {
+            root = ENVIRON["DICT_DIR"]; sub(/\/$/, "", root)
+            n = split(ENVIRON["LANG_REG"], r_, "\n")
+            for (i = 1; i <= n; i++) if (r_[i] != "") reg[r_[i]] = 1
+            n = split(ENVIRON["LANG_ALIASES"], a_, "\n")
+            for (i = 1; i <= n; i++) if (split(a_[i], p_, "\t") == 2) alias[p_[1]] = p_[2]
+            while ((getline l < ENVIRON["LANG_FILE"]) > 0) {
+                if (l ~ /^[ \t]*#/ || l !~ /[^ \t]/) continue
+                t = l; sub(/[ \t].*$/, "", t); nm = l; sub(/^[^ \t]+[ \t]+/, "", nm)
+                name[t] = nm
+            }
+        }
+        {
+            kind = $1; key = $2; where = short($3) ":" $4
+            if (kind == "untagged") key = "(no tag)"
+            count[kind SUBSEP key]++
+            if (!((kind SUBSEP key) in first)) { order[++no] = kind SUBSEP key; first[kind SUBSEP key] = 1 }
+            if (ex_n[kind SUBSEP key] < 3) {
+                ex_n[kind SUBSEP key]++
+                ex[kind SUBSEP key, ex_n[kind SUBSEP key]] = $5 "  (" where ")"
+            }
+        }
+        function status(t) {
+            if (t in alias) return (alias[t] ~ /^\(/) ? "retired " alias[t] : "retired, use [" alias[t] "]"
+            return (t in reg) ? "registered" : "UNREGISTERED"
+        }
+        END {
+            # sort each kind by count, descending (simple selection; sets are small)
+            for (i = 1; i <= no; i++) { split(order[i], k_, SUBSEP); list[k_[1], ++ln[k_[1]]] = k_[2] }
+            for (kd = 1; kd <= 3; kd++) {
+                kind = (kd == 1 ? "tag" : kd == 2 ? "named" : "untagged")
+                m = ln[kind]
+                for (a = 1; a <= m; a++) for (b = a + 1; b <= m; b++)
+                    if (count[kind SUBSEP list[kind, b]] > count[kind SUBSEP list[kind, a]]) {
+                        tmp = list[kind, a]; list[kind, a] = list[kind, b]; list[kind, b] = tmp
+                    }
+            }
+            if (ENVIRON["JSON"] == 1) {
+                printf "{\n \"tags\": ["
+                for (a = 1; a <= ln["tag"]; a++) {
+                    t = list["tag", a]; k = "tag" SUBSEP t
+                    printf "%s\n  {\"tag\": %s, \"count\": %d, \"status\": %s, \"name\": %s, \"examples\": [", \
+                        (a > 1 ? "," : ""), jstr(t), count[k], jstr(status(t)), jstr(name[t])
+                    for (e = 1; e <= ex_n[k]; e++) printf "%s%s", (e > 1 ? ", " : ""), jstr(ex[k, e])
+                    printf "]}"
+                }
+                printf "\n ],\n \"named\": ["
+                for (a = 1; a <= ln["named"]; a++) {
+                    t = list["named", a]; k = "named" SUBSEP t
+                    printf "%s\n  {\"written\": %s, \"count\": %d, \"examples\": [", (a > 1 ? "," : ""), jstr(t), count[k]
+                    for (e = 1; e <= ex_n[k]; e++) printf "%s%s", (e > 1 ? ", " : ""), jstr(ex[k, e])
+                    printf "]}"
+                }
+                k = "untagged" SUBSEP "(no tag)"
+                printf "\n ],\n \"untagged\": {\"count\": %d, \"examples\": [", count[k] + 0
+                for (e = 1; e <= ex_n[k]; e++) printf "%s%s", (e > 1 ? ", " : ""), jstr(ex[k, e])
+                printf "]}\n}\n"
+                exit
+            }
+
+            total = 0; unreg = 0
+            for (a = 1; a <= ln["tag"]; a++) {
+                t = list["tag", a]; total += count["tag" SUBSEP t]
+                if (!(t in reg) || (t in alias)) unreg++
+            }
+            printf "--- Language tags in use: %d tags on %d lines; %d not official ---\n\n", ln["tag"], total, unreg
+            for (a = 1; a <= ln["tag"]; a++) {
+                t = list["tag", a]; k = "tag" SUBSEP t
+                printf "%7d  %-6s %-22s %s\n", count[k], "[" t "]", status(t), name[t]
+                if (status(t) != "registered")
+                    for (e = 1; e <= ex_n[k]; e++) printf "                 e.g. %s\n", ex[k, e]
+            }
+            if (ln["named"] > 0) {
+                printf "\nNames in brackets, which the parser does not read as a language:\n"
+                for (a = 1; a <= ln["named"]; a++) {
+                    t = list["named", a]; k = "named" SUBSEP t
+                    printf "%7d  %s   e.g. %s\n", count[k], t, ex[k, 1]
+                }
+            }
+            k = "untagged" SUBSEP "(no tag)"
+            if (count[k] > 0) {
+                printf "\n%d chain line(s) with no language tag at all, e.g.:\n", count[k]
+                for (e = 1; e <= ex_n[k]; e++) printf "         %s\n", ex[k, e]
+                print "         (etym-lint lists every one, file by file)"
+            }
+        }'
+}
+
+
 # etym-lint [path] [--strict]
 # Validates .txt file formatting across the dictionary.
+# Language tags are checked line by line against config/languages.tsv and
+# config/language-aliases.tsv (see etym-langs). Those findings are warnings;
+# --strict makes them errors.
 etym-lint() {
     local strict=0
     local target_input=""
@@ -1512,6 +1801,11 @@ etym-lint() {
     echo "================================================================="
 
     local total=0 fatals=0 errors=0 warns=0
+
+    # Language register and retired tags, read once. See etym-langs.
+    local lang_reg lang_aliases
+    lang_reg=$(_etym_lang_register)
+    lang_aliases=$(_etym_lang_aliases)
 
     # ── Format validation (per file) ────────────────────────────────────────
     while IFS= read -r -d '' file; do
@@ -1651,6 +1945,48 @@ etym-lint() {
             if [[ -n "$unknown_tags" ]]; then
                 issues+=("\e[33m[WARN]\e[0m  Unknown POS tag(s): ${unknown_tags% } — not in parts-of-speech.tsv.")
                 ((warns++))
+            fi
+
+            # ── Language tags, line by line ─────────────────────────────
+            # Every tagged line is checked against config/languages.tsv and
+            # config/language-aliases.tsv, and every chain line must carry a
+            # tag the parser can read. Findings are warnings, since the
+            # register is still being settled; --strict makes them errors.
+            local lang_findings
+            lang_findings=$(LANG_REG="$lang_reg" "$_ETYM_AWK" "$_ETYM_LANG_SCAN" "$file" \
+                | LANG_REG="$lang_reg" LANG_ALIASES="$lang_aliases" "$_ETYM_AWK" -F'\t' '
+                    BEGIN {
+                        n = split(ENVIRON["LANG_REG"], r_, "\n")
+                        for (i = 1; i <= n; i++) if (r_[i] != "") reg[r_[i]] = 1
+                        n = split(ENVIRON["LANG_ALIASES"], a_, "\n")
+                        for (i = 1; i <= n; i++) if (split(a_[i], p_, "\t") == 2) alias[p_[1]] = p_[2]
+                    }
+                    $1 == "tag" && ($2 in alias) && !seen_r[$2]++ {
+                        retired = retired (retired == "" ? "" : "; ") "[" $2 "] " \
+                            (alias[$2] ~ /^\(/ ? alias[$2] : "-> [" alias[$2] "]")
+                    }
+                    $1 == "tag" && !($2 in alias) && !($2 in reg) && !seen_u[$2]++ {
+                        unreg = unreg (unreg == "" ? "" : " ") "[" $2 "]"
+                    }
+                    $1 == "named"    { printf "NAMED\t%s\t%s\n", $4, $5 }
+                    $1 == "untagged" { printf "UNTAGGED\t%s\t%s\n", $4, $5 }
+                    END {
+                        if (unreg != "")   printf "UNREG\t%s\n", unreg
+                        if (retired != "") printf "RETIRED\t%s\n", retired
+                    }')
+            if [[ -n "$lang_findings" ]]; then
+                local sev="\e[33m[WARN]\e[0m " kind a b
+                (( strict )) && sev="\e[31m[ERROR]\e[0m"
+                while IFS=$'\t' read -r kind a b; do
+                    case "$kind" in
+                        UNREG)    issues+=("$sev Unregistered language tag(s): $a — not in languages.tsv.") ;;
+                        RETIRED)  issues+=("$sev Retired language tag(s): $a") ;;
+                        NAMED)    issues+=("$sev Stanza $a: '$b' — a language written as a name, not a tag; etym-parse records no language for it.") ;;
+                        UNTAGGED) issues+=("$sev Stanza $a: '$b' — chain line with no language tag; etym-parse records no language for it.") ;;
+                        *)        continue ;;
+                    esac
+                    if (( strict )); then ((errors++)); else ((warns++)); fi
+                done <<< "$lang_findings"
             fi
 
             # Stanzas with no resolvable language origin
