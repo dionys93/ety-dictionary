@@ -137,8 +137,8 @@ Fill the right column. Blank cells are English's empty slots.
 |---|---|
 | kettle | caitle, caitils |
 | kindle | cuindle |
-| kilo | c̃hilo |
-| chemist | c̃hemist|
+| kilo | chilo |
+| chemist | chemist|
 | kayak | cáyac, cáyax |
 
 ### Before *e, i, y* — poly, medial
@@ -193,54 +193,55 @@ Fill the right column. Blank cells are English's empty slots.
 ### `ck` + unstressed syllable — before *l*
 | English | Inglisce |
 |---|---|
-| tackle | tacqle...no, taccle...no, tachle (taculs), or taqhle (taculs) |
-| buckle | bochle (boculs), or boqhle (boculs) |
-| pickle | pichle (piculs), or piqhle (piculs) |
-| knuckle | nochle (buculs), or noqhle (noculs) |
-| tickle | tichle (ticuls), or tiqhle (ticuls) |
-| freckle | frechle (freculs), or freqhle (freculs) |
-| speckle | spechle (speculs), or speqhle (speculs) |
-| chuckle | chochle (choculs), or choqhle (choculs) |
-| cackle | cachle (caculs), or caqhle (caculs) |
-| heckle | hechle (heculs), or heqhle (heculs) |
+| tackle | tachle, tachels |
+| buckle | bochle, bochels |
+| pickle | pichle, pichels |
+| knuckle | nochle, nochels |
+| tickle | tichle, tichels |
+| freckle | frechle, frechels |
+| speckle | spechle, spechels |
+| chuckle | c̃ochle, c̃ochels |
+| cackle | cachle, cachels|
+| heckle | hechle, hechels |
 
 ### `ck` + unstressed syllable — before *e*
 | English | Inglisce |
 |---|---|
-| chicken | chican |
-| thicken | |
-| quicken | |
-| blacken | |
-| bucket | |
-| pocket | |
-| racket | |
-| ticket | |
-| socket | |
-| wicked | |
+| chicken | c̃ican |
+| thicken | þichene |
+| quicken | quichene |
+| blacken | blachene |
+| bucket | bocate |
+| market | marcate |
+| pocket | pochete |
+| racket | rachete |
+| ticket | tichete |
+| socket | sochete |
+| wicked | uichid |
 
 ### `ck` + *y*
 | English | Inglisce |
 |---|---|
-| lucky | |
-| rocky | |
-| sticky | |
-| tricky | |
-| picky | |
-| cocky | |
-| hockey | |
-| jockey | |
-| lackey | |
+| lucky | hluchy |
+| rocky | rochy |
+| sticky | stichy |
+| tricky | trichy |
+| picky | pichy |
+| cocky | cochy |
+| hockey | hochie |
+| jockey | jáchie |
+| lackey | lachie |
 
 ### Word-final — mono
 | English | Inglisce |
 |---|---|
-| back | |
-| lake | |
-| pick | |
-| luck | |
-| talk | |
-| walk | |
-| ache | |
+| back | bac |
+| lake | lâc |
+| pick | pic |
+| luck | hluc |
+| talk | tauc |
+| walk | ouac |
+| ache | âc |
 
 ### Word-final — poly
 | English | Inglisce |
@@ -248,64 +249,64 @@ Fill the right column. Blank cells are English's empty slots.
 | attic | |
 | basic | |
 | music | |
-| panic | |
-| antique | |
-| unique | |
-| plaque | |
-| oblique | |
-| opaque | |
-| torque | |
-| mosque | |
+| panic | pànic |
+| antique | antique, antícs |
+| unique | unique |
+| plaque | plaque, placs |
+| oblique | oblique |
+| opaque | opâque |
+| torque | torque, torcs |
+| mosque | mosque, moscs |
 
 ## /kw/
 
 ### Before *a, o* — mono, initial
 | English | Inglisce |
 |---|---|
-| quack | |
-| quad | |
-| quart | |
-| quash | |
-| quote | |
+| quack | quac |
+| quad | quade |
+| quart | caurte |
+| quash | quasce |
+| quote | quote, quóts |
 
 ### Before *a, o* — mono, medial
 | English | Inglisce |
 |---|---|
-| squad | |
-| squash | |
-| squat | |
+| squad | squade, squads |
+| squash | squasce |
+| squat | squatte, squáts |
 
 ### Before *a, o* — poly, initial
 | English | Inglisce |
 |---|---|
-| quantity | |
-| qualify | |
-| quarry | |
-| quota | |
-| quorum | |
+| quantity | quantetie |
+| qualify | qualifae |
+| quarry | quarie |
+| quota | quota |
+| quorum | quorom |
 
 ### Before *a, o* — poly, medial
 | English | Inglisce |
 |---|---|
-| equate | |
-| equator | |
-| adequate | |
-| aquatic | |
-| aquarium | |
-| quadrant | |
+| equate | equâte |
+| equator | equâtre, equâtors |
+| adequate | adequate |
+| aquatic | aquatic |
+| aquarium |aquâriom |
+| quadrant | quadrant |
 
 ### Before *e* — mono, initial
 | English | Inglisce |
 |---|---|
-| queen | |
-| quell | |
-| quench | |
-| quest | |
+| queen | quine, quíns |
+| quell | quelle |
+| quench | quenc̃e |
+| quest | quaiste, quaists |
 
 ### Before *e* — mono, medial
 | English | Inglisce |
 |---|---|
-| squelch | |
+| squelch | squelc̃e |
 
 ### Before *e* — poly, initial
 | English | Inglisce |
