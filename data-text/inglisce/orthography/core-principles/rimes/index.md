@@ -83,7 +83,7 @@ Fill the right column. Blank cells are English's empty slots.
 ### Before *a, o, u* — mono, medial
 | English | Inglisce |
 |---|---|
-| scab | scabe |
+| scab | scabe, scabs |
 | scar | scarre, scars |
 | scoff | scafhe |
 | scum | scome |
@@ -232,7 +232,6 @@ Fill the right column. Blank cells are English's empty slots.
 | English | Inglisce |
 |---|---|
 | attic | |
-| basic | |
 | music | |
 | panic | pànic |
 | antique | antique, antícs |
