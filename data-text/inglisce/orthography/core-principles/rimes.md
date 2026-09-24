@@ -7,7 +7,7 @@
 | /tʃ/ | `c̃` | Old English, Old French, Spanish, English | settled |
 | /k/ before *e, i* | `cu` or `ch`; `-que` word-final | French, Spanish, Catalan, Galician | settled |
 | /kw/ | `qu` | Italian, Corsican, Portuguese | settled |
-| /kj/ | `cu`, or `qh` | Gallo `qh`, Friulian `cj`, Italian `chi` | `cu` |
+| /kj/ | `cu`, or `q̃` | Gallo `qh`, Friulian `cj`, Italian `chi` | `cu` or `q̃` |
 | /g/ before *e, i* | `gu` or `gh` | five Romance standards | settled |
 | /gw/ before *e, i* | `gü` | four Romance standards | settled |
 | /gj/ | `g̃` | Gallo `gh`, Friulian `gj`, Italian `ghi` | settled |
@@ -609,60 +609,60 @@ Fill the right column. Blank cells are English's empty slots.
 ### Mono, initial
 | English | Inglisce |
 |---|---|
-| chin | chine |
-| chew | cheue |
-| cheese | cheise |
-| church | church |
-| chase | chaice |
-| chance | chance |
-| chair | chaire, chairs |
-| choose | chouse |
-| choice | choice |
-| chief | chiefe |
+| chin | c̃ine |
+| chew | c̃eue |
+| cheese | c̃eise |
+| church | c̃urc̃e |
+| chase | c̃aice |
+| chance | c̃ance |
+| chair | c̃aire, c̃airs |
+| choose | c̃ouse |
+| choice | c̃oice |
+| chief | c̃iefe |
 
 ### Mono, final
 | English | Inglisce |
 |---|---|
-| catch | caiche |
-| fetch | faiche |
-| much | moch |
-| rich | rich |
-| such | soch |
-| march | marche |
-| bench | benche |
-| beach | beiche |
-| beech | boich |
-| teach | teiche |
-| couch | coache |
+| catch | caic̃e |
+| fetch | faic̃e |
+| much | moc̃ |
+| rich | ric̃ |
+| such | soc̃ |
+| march | marc̃e |
+| bench | benc̃e |
+| beach | beic̃e |
+| beech | boic̃e |
+| teach | teic̃e |
+| couch | coac̃e |
 
 ### Poly, initial
 | English | Inglisce |
 |---|---|
-| chicken | chican |
-| cherry | cherrie, cherris |
-| chapel | chapele, chapels |
-| champion | champion |
-| chocolate | chaoqhlat |
+| chicken | c̃ican |
+| cherry | c̃errie, c̃erris |
+| chapel | c̃apele, c̃apels |
+| champion | c̃ampion |
+| chocolate | c̃aochlat |
 
 ### Poly, medial
 | English | Inglisce |
 |---|---|
-| kitchen | cuichene, cuichins |
-| butcher | bûchere, bûchors |
+| kitchen | cuic̃ene, cuic̃ins |
+| butcher | buc̃ere, buc̃ors |
 | teacher | teicher |
-| richer | richer |
-| archer | archer |
-| orchard | orchard |
-| merchant | merchant |
-| bachelor | bachelor |
-| anchovy | anchovie, anchovis |
+| richer | ric̃ar |
+| archer | arc̃er |
+| orchard | orc̃ard |
+| merchant | merc̃ant |
+| bachelor | bac̃elor |
+| anchovy | anc̃ovie, anc̃ovis |
 
 ### Poly, final
 | English | Inglisce |
 |---|---|
-| attach | attache |
-| detach | detache |
-| approach | appróche |
+| attach | attac̃e |
+| detach | detac̃e |
+| approach | approc̃e |
 
 ### From *t* — poly, medial
 | English | Inglisce |
