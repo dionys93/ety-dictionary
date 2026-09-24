@@ -1,43 +1,22 @@
 # Velar worksheet
 
-Fill the right column. Blank cells are English's empty slots.
-
-## /k/
-
-### Before *a, o, u* — mono, initial
 | English | Inglisce |
 |---|---|
 | calm | calm |
 | cusp | cuspe, cusps |
-
-### Before *a, o, u* — mono, medial
-| English | Inglisce |
-|---|---|
 | scab | scabe, scabs |
 | scar | scarre, scars |
 | scoff | scafhe |
 | scum | scome |
-
-### Before *a, o, u* — poly, initial
-| English | Inglisce |
-|---|---|
 | cabin | cabene, cabins |
 | collar | collere, collars |
 | cousin | cosene, cosins |
 | camera | camera |
-
-### Before *a, o, u* — poly, medial
-| English | Inglisce |
-|---|---|
 | bacon | bâcon |
 | vacant | vâcant |
 | acorn | eacorn |
 | focus | fócus |
 | second | same |
-
-### Before *e, i, y* — mono, medial
-| English | Inglisce |
-|---|---|
 | skid | scuide |
 | skit | scuite |
 | ski | schie |
@@ -46,19 +25,11 @@ Fill the right column. Blank cells are English's empty slots.
 | skip | scuipe |
 | sketch | scaiche |
 | skew | sq̃ue |
-
-### Before *e, i, y* — poly, initial
-| English | Inglisce |
-|---|---|
 | kettle | caitle, caitils |
 | kindle | cuindle |
 | kilo | chilo |
 | chemist | chemist|
 | kayak | cáyac, cáyax |
-
-### Before *e, i, y* — poly, medial
-| English | Inglisce |
-|---|---|
 | market | marcate |
 | basket | bascate |
 | pocket | poquete |
@@ -66,48 +37,24 @@ Fill the right column. Blank cells are English's empty slots.
 | jockey | jaquie |
 | donkey | dònquie |
 | monkey | monquie |
-| architect | arc̃hitect |
 | archive | arcoive (arcoîval) |
-| bakery | bâquerie |
-| taking | tâquing |
-| baked | bâqued |
-
-### Before a consonant — mono, initial
-| English | Inglisce |
-|---|---|
 | claw | claue, claus |
 | crab | crabe |
 | clip | clippe |
 | cream | crieme |
-
-### Before a consonant — mono, medial
-| English | Inglisce |
-|---|---|
 | act | acte |
 | fact | facte |
 | duct | ducte |
 | risk | risque, riscs |
 | ask | asc |
 | milk | milc |
-
-### Before a consonant — poly, initial
-| English | Inglisce |
-|---|---|
 | clever | clever |
 | credit | crèdit |
 | cluster | clustre, clustirs |
-
-### Before a consonant — poly, medial
-| English | Inglisce |
-|---|---|
 | doctor | doctre |
 | picture | picțure |
 | actor | actor |
 | tactic | same |
-
-### `ck` + unstressed syllable — before *l*
-| English | Inglisce |
-|---|---|
 | tackle | tachle, tachels |
 | buckle | bochle, bochels |
 | pickle | pichle, pichels |
@@ -118,10 +65,6 @@ Fill the right column. Blank cells are English's empty slots.
 | chuckle | c̃ochle, c̃ochels |
 | cackle | cachle, cachels|
 | heckle | hechle, hechels |
-
-### `ck` + unstressed syllable — before *e*
-| English | Inglisce |
-|---|---|
 | chicken | c̃ican |
 | thicken | þichene |
 | quicken | quichene |
@@ -133,10 +76,6 @@ Fill the right column. Blank cells are English's empty slots.
 | ticket | tichete |
 | socket | sochete |
 | wicked | uichid |
-
-### `ck` + *y*
-| English | Inglisce |
-|---|---|
 | lucky | hluchy |
 | rocky | rochy |
 | sticky | stichy |
@@ -146,21 +85,12 @@ Fill the right column. Blank cells are English's empty slots.
 | hockey | hochie |
 | jockey | jáchie |
 | lackey | lachie |
-
-### Word-final — mono
-| English | Inglisce |
-|---|---|
 | back | bac |
-| lake | lâc |
 | pick | pic |
 | luck | hluc |
 | talk | tauc |
 | walk | ouac |
 | ache | âc |
-
-### Word-final — poly
-| English | Inglisce |
-|---|---|
 | attic | |
 | music | |
 | panic | pànic |
@@ -171,68 +101,25 @@ Fill the right column. Blank cells are English's empty slots.
 | opaque | opâque |
 | torque | torque, torcs |
 | mosque | mosque, moscs |
-
-## /kw/
-
-### Before *a, o* — mono, initial
-| English | Inglisce |
-|---|---|
-| quack | quac |
 | quad | quade |
 | quart | caurte |
 | quash | quasce |
-| quote | quote, quóts |
-
-### Before *a, o* — mono, medial
-| English | Inglisce |
-|---|---|
 | squad | squade, squads |
 | squash | squasce |
 | squat | squatte, squáts |
-
-### Before *a, o* — poly, initial
-| English | Inglisce |
-|---|---|
-| quantity | quantetie |
-| qualify | qualifae |
 | quarry | quarie |
 | quota | quota |
 | quorum | quorom |
-
-### Before *a, o* — poly, medial
-| English | Inglisce |
-|---|---|
 | equate | equâte |
 | equator | equâtre, equâtors |
 | adequate | adequate |
 | aquatic | aquatic |
 | aquarium |aquâriom |
 | quadrant | quadrant |
-
-### Before *e* — mono, initial
-| English | Inglisce |
-|---|---|
-| queen | quine, quíns |
-| quell | quelle |
 | quench | quenc̃e |
-| quest | quaiste, quaists |
-
-### Before *e* — mono, medial
-| English | Inglisce |
-|---|---|
 | squelch | squelc̃e |
-
-### Before *e* — poly, initial
-| English | Inglisce |
-|---|---|
-| question | |
-| query | |
 | queasy | |
 | querulous | |
-
-### Before *e* — poly, medial
-| English | Inglisce |
-|---|---|
 | frequent | |
 | sequence | |
 | sequel | |
@@ -242,66 +129,29 @@ Fill the right column. Blank cells are English's empty slots.
 | banquet | |
 | request | |
 | bequeath | |
-
-### Before *i* — mono, initial
-| English | Inglisce |
-|---|---|
-| quick | |
-| quit | |
 | quiz | |
 | quill | |
 | quilt | |
 | quire | |
-
-### Before *i* — mono, medial
-| English | Inglisce |
-|---|---|
 | squid | |
 | squint | |
 | squirm | |
-
-### Before *i* — poly, initial
-| English | Inglisce |
-|---|---|
-| quiet | |
-| quiver | |
 | quinine | |
-
-### Before *i* — poly, medial
-| English | Inglisce |
-|---|---|
 | liquid | |
 | ubiquitous | |
 | colloquial | |
-| acquire | |
-| require | |
-| inquire | |
 | antiquity | |
 | soliloquy | |
 | colloquy | |
 | obloquy | |
-
-## /kj/
-
-### Before a consonant — mono, initial
-| English | Inglisce |
-|---|---|
 | cute | |
 | cure | |
 | curd | |
 | cued | |
-
-### Before a consonant — poly, initial
-| English | Inglisce |
-|---|---|
 | curious | |
 | cumulative | |
 | cupid | |
 | cubicle | |
-
-### Before a consonant — poly, medial
-| English | Inglisce |
-|---|---|
 | accurate | |
 | secure | |
 | document | |
@@ -310,10 +160,6 @@ Fill the right column. Blank cells are English's empty slots.
 | calculate | |
 | occupy | |
 | vacuum | |
-
-### Before a vowel — poly, medial
-| English | Inglisce |
-|---|---|
 | evacuate | |
 | vacuous | |
 | innocuous | |
@@ -324,16 +170,7 @@ Fill the right column. Blank cells are English's empty slots.
 | promiscuity | |
 | circuit | |
 | evacuee | |
-
-### Word-final — mono
-| English | Inglisce |
-|---|---|
 | cue | |
-| queue | |
-
-### Word-final — poly
-| English | Inglisce |
-|---|---|
 | rescue | |
 | barbecue | |
 | curlicue | |
