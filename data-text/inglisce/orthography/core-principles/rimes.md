@@ -5,9 +5,9 @@
 | Sound | Device | Grounding | Competing for it |
 |---|---|---|---|
 | /tʃ/ | `c̃` | Old English, Old French, Spanish, English | settled |
-| /k/ before *e, i* | `cu` or `ch`; `-que` word-final | French, Spanish, Catalan, Galician | settled |
+| /k/ before *e, i* | `cu`, `cy` or `ch`; `-que` word-final | French, Spanish, Catalan, Galician | settled |
 | /kw/ | `qu` | Italian, Corsican, Portuguese | settled |
-| /kj/ | `cu`, or `q̃` | Gallo `qh`, Friulian `cj`, Italian `chi` | `cu` or `q̃` |
+| /kj/ | `cu`, or `q̃` | Gallo `qh`, Friulian `cj`, Italian `chi` | settled |
 | /g/ before *e, i* | `gu` or `gh` | five Romance standards | settled |
 | /gw/ before *e, i* | `gü` | four Romance standards | settled |
 | /gj/ | `g̃` | Gallo `gh`, Friulian `gj`, Italian `ghi` | settled |
@@ -104,21 +104,6 @@ Fill the right column. Blank cells are English's empty slots.
 | acorn | eacorn |
 | focus | fócus |
 | second | same |
-
-### Before *e, i, y* — mono, initial
-| English | Inglisce |
-|---|---|
-| keep | cuipe |
-| key | cuie |
-| kid | cyde |
-| kin | cyne |
-| king | cyngue |
-| kit | cuite |
-| kill | cuille |
-| kiss | cuisse |
-| kick | cuic |
-| keg | cuegue |
-| kept | caipt |
 
 ### Before *e, i, y* — mono, medial
 | English | Inglisce |
