@@ -74,18 +74,18 @@ Fill the right column. Blank cells are English's empty slots.
 ### Before *a, o, u* — mono, initial
 | English | Inglisce |
 |---|---|
-| cat | |
-| cot | |
-| cut | |
-| calm | |
-| cusp | |
+| cat | cate, cats |
+| cot | catte, cáts |
+| cut | cutte, cuts |
+| calm | calm |
+| cusp | cuspe, cusps |
 
 ### Before *a, o, u* — mono, medial
 | English | Inglisce |
 |---|---|
-| scab | |
-| scar | |
-| scoff | |
+| scab | scabe |
+| scar | scarre, scars |
+| scoff | scofhe |
 | scum | |
 
 ### Before *a, o, u* — poly, initial
