@@ -85,129 +85,129 @@ Fill the right column. Blank cells are English's empty slots.
 |---|---|
 | scab | scabe |
 | scar | scarre, scars |
-| scoff | scofhe |
-| scum | |
+| scoff | scafhe |
+| scum | scome |
 
 ### Before *a, o, u* — poly, initial
 | English | Inglisce |
 |---|---|
-| cabin | |
-| collar | |
-| cousin | |
-| camera | |
+| cabin | cabene, cabins |
+| collar | collere, collars |
+| cousin | cosene, cosins |
+| camera | camera |
 
 ### Before *a, o, u* — poly, medial
 | English | Inglisce |
 |---|---|
-| bacon | |
-| vacant | |
-| acorn | |
-| focus | |
-| second | |
+| bacon | bâcon |
+| vacant | vâcant |
+| acorn | eacorn |
+| focus | fócus |
+| second | same |
 
 ### Before *e, i, y* — mono, initial
 | English | Inglisce |
 |---|---|
-| keep | |
-| key | |
-| kid | |
-| kin | |
-| king | |
-| kit | |
-| kill | |
-| kiss | |
-| kick | |
-| keg | |
-| kept | |
+| keep | cuipe |
+| key | cuie |
+| kid | cyde |
+| kin | cyne |
+| king | cyngue |
+| kit | cuite |
+| kill | cuille |
+| kiss | cuisse |
+| kick | cuic |
+| keg | cuegue |
+| kept | caipt |
 
 ### Before *e, i, y* — mono, medial
 | English | Inglisce |
 |---|---|
-| skid | |
-| skit | |
-| ski | |
-| skin | |
-| skill | |
-| skip | |
-| sketch | |
-| skew | |
+| skid | scuide |
+| skit | scuite |
+| ski | schie |
+| skin | scuine |
+| skill | scuille |
+| skip | scuipe |
+| sketch | scaiche |
+| skew | sq̃ue |
 
 ### Before *e, i, y* — poly, initial
 | English | Inglisce |
 |---|---|
-| kettle | |
-| kindle | |
-| kilo | |
-| chemist | |
-| kayak | |
+| kettle | caitle, caitils |
+| kindle | cuindle |
+| kilo | c̃hilo |
+| chemist | c̃hemist|
+| kayak | cáyac, cáyax |
 
 ### Before *e, i, y* — poly, medial
 | English | Inglisce |
 |---|---|
-| market | |
-| basket | |
-| pocket | |
-| bucket | |
-| jockey | |
-| donkey | |
-| monkey | |
-| architect | |
-| archive | |
-| bakery | |
-| taking | |
-| baked | |
+| market | marcate |
+| basket | bascate |
+| pocket | poquete |
+| bucket | buquete |
+| jockey | jaquie |
+| donkey | dònquie |
+| monkey | monquie |
+| architect | arc̃hitect |
+| archive | arcoive (arcoîval) |
+| bakery | bâquerie |
+| taking | tâquing |
+| baked | bâqued |
 
 ### Before a consonant — mono, initial
 | English | Inglisce |
 |---|---|
-| claw | |
-| crab | |
-| clip | |
-| cream | |
+| claw | claue, claus |
+| crab | crabe |
+| clip | clippe |
+| cream | crieme |
 
 ### Before a consonant — mono, medial
 | English | Inglisce |
 |---|---|
-| act | |
-| fact | |
-| duct | |
-| risk | |
-| ask | |
-| milk | |
+| act | acte |
+| fact | facte |
+| duct | ducte |
+| risk | risque, riscs |
+| ask | asc |
+| milk | milc |
 
 ### Before a consonant — poly, initial
 | English | Inglisce |
 |---|---|
-| clever | |
-| credit | |
-| cluster | |
+| clever | clever |
+| credit | crèdit |
+| cluster | clustre, clustirs |
 
 ### Before a consonant — poly, medial
 | English | Inglisce |
 |---|---|
-| doctor | |
-| picture | |
-| actor | |
-| tactic | |
+| doctor | doctre |
+| picture | picțure |
+| actor | actor |
+| tactic | same |
 
 ### `ck` + unstressed syllable — before *l*
 | English | Inglisce |
 |---|---|
-| tackle | |
-| buckle | |
-| pickle | |
-| knuckle | |
-| tickle | |
-| freckle | |
-| speckle | |
-| chuckle | |
-| cackle | |
-| heckle | |
+| tackle | tacqle...no, taccle...no, tachle (taculs), or taqhle (taculs) |
+| buckle | bochle (boculs), or boqhle (boculs) |
+| pickle | pichle (piculs), or piqhle (piculs) |
+| knuckle | nochle (buculs), or noqhle (noculs) |
+| tickle | tichle (ticuls), or tiqhle (ticuls) |
+| freckle | frechle (freculs), or freqhle (freculs) |
+| speckle | spechle (speculs), or speqhle (speculs) |
+| chuckle | chochle (choculs), or choqhle (choculs) |
+| cackle | cachle (caculs), or caqhle (caculs) |
+| heckle | hechle (heculs), or heqhle (heculs) |
 
 ### `ck` + unstressed syllable — before *e*
 | English | Inglisce |
 |---|---|
-| chicken | |
+| chicken | chican |
 | thicken | |
 | quicken | |
 | blacken | |
