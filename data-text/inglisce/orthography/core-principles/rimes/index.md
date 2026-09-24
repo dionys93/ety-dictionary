@@ -7,7 +7,6 @@ Fill the right column. Blank cells are English's empty slots.
 ### Before *a, o, u* — mono, initial
 | English | Inglisce |
 |---|---|
-| cot | catte, cáts |
 | calm | calm |
 | cusp | cuspe, cusps |
 
