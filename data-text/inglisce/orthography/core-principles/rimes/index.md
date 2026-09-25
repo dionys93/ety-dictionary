@@ -1,21 +1,61 @@
 # Velar worksheet
 
+aggregate
+ago
+ague - aig̃ue
+anchovy - anc̃ovie
+baggy
+cargo
+chance - c̃ance
+chin - c̃ine
+contiguity - contigúetie
+contiguous - contig̃ueus
+dagger
+degrade
 delinquent
 duct
+eagerly, eagerness
 eloquent
+exiguous - exig̃ueus
+extinguish - extingoișe
+figure
 freckle
+gap
+geld
+getaway
+gizzard
+gob
+guacamole
+guano
+guava
+Gwen
 heckle
 hockey
+iguana
 innocuous
+intrigue
+jugular - jogular
 kilo
 kindle
 knuckle
 lackey
+languish - langoișe
+languor - langre
+legume
+ligature - ligațure
+linger
+lingual - lingüal
+linguine - lingüini
+linguist - lingüist
 market
+merchant - merc̃ant
 miscue
+mold - móld
+Nicaragua
 oblique
 obloquy
 opaque
+orchard - orc̃ard
 picky
 plaque
 promiscuity
@@ -24,11 +64,11 @@ quad
 quadrant
 quarry
 quart
-quicken
 quash
 queasy
 quench
 querulous
+quicken
 quilt
 quinine
 quiz
@@ -36,17 +76,23 @@ quorum
 racket
 request
 rocky
+rogue
+rug
+sanguine - sangüin
 scab
 scoff
 scum
 second
 sequel
 sequence
+single
+singular
+singularity
 ski
 skid
 skill
-skip
 skin
+skip
 skit
 socket
 soliloquy
@@ -58,109 +104,13 @@ squint
 sticky
 tactic
 ticket
+tiger
 torque
 ubiquitous
-unique
-wicked
-gob
-gap
-aggregate
-ago
-ague - aig̃ue
-baggy
-cargo
-contiguity - contigúetie
-contiguous - contig̃ueus
-dagger
-degrade
-eagerly, eagerness
-exiguous - exig̃ueus
-extinguish - extingoișe
-figure
-geld
-getaway
-gizzard
-mold - móld
-guacamole
-guano
-guava
-Gwen
-iguana
-intrigue
-jugular - jogular
-languish - langoișe
-languor - langre
-legume
-ligature - ligațure
-linger
-lingual - lingüal
-linguine - lingüini
-linguist - lingüist
-Nicaragua
-rogue
-rug
-sanguine - sangüin
-single
-singular
-singularity
-tiger
 unguent - ungüent
+unique
 vague
-
-
-## /tʃ/
-
-### Mono, initial
-| English | Inglisce |
-|---|---|
-| chin | c̃ine |
-| chew | c̃eue |
-| cheese | c̃eise |
-| church | c̃urc̃e |
-| chase | c̃aice |
-| chance | c̃ance |
-| chair | c̃aire, c̃airs |
-| choose | c̃ouse |
-| choice | c̃oice |
-| chief | c̃iefe |
-| catch | caic̃e |
-| fetch | faic̃e |
-| much | moc̃ |
-| rich | ric̃ |
-| such | soc̃ |
-| march | marc̃e |
-| bench | benc̃e |
-| beach | beic̃e |
-| beech | boic̃e |
-| teach | teic̃e |
-| couch | coac̃e |
-| chicken | c̃ican |
-| cherry | c̃errie, c̃erris |
-| chapel | c̃apele, c̃apels |
-| champion | c̃ampion |
-| chocolate | c̃aochlat |
-| butcher | buc̃ere, buc̃ors |
-| teacher | teicher |
-| richer | ric̃ar |
-| archer | arc̃er |
-| orchard | orc̃ard |
-| merchant | merc̃ant |
-| bachelor | bac̃elor |
-| anchovy | anc̃ovie, anc̃ovis |
-| attach | attac̃e |
-| detach | detac̃e |
-| approach | approc̃e |
-| nature | nâțure, nâțurs |
-| picture | picțure, picțurs |
-| future | fuțure, fuțurs |
-| adventure | advențure, advențurs |
-| literature | litterțure, litterțurs |
-| mixture | mixțure, mixțurs |
-| culture | culțure, culțurs  |
-| virtue | virțue, virțuis |
-| statue | stațue, stațuis |
-| fortune | forțene, forțins  |
-| Christian | |
+wicked
 
 ---
 
