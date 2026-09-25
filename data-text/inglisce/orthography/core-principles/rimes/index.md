@@ -6,9 +6,6 @@ eloquent
 
 | English | Inglisce |
 |---|---|
-| equate | equâte |
-| equator | equâtre, equâtors |
-| fact | facte |
 | focus | fócus |
 | freckle | frechle, frechels |
 | frequent | |
