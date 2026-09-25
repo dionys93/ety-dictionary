@@ -4,18 +4,13 @@
 | aquarium |aquâriom |
 | archive | arcoive (arcoîval) |
 | arcuate | |
+| blacken | blachene |
 
 
 | English | Inglisce |
 |---|---|
-| barbecue | |
-| basket | bascate |
 | bequeath | |
-| blacken | blachene |
-| bucket | bocate |
-| bucket | buquete |
 | buckle | bochle, bochels |
-| cabin | cabene, cabins |
 | cackle | cachle, cachels|
 | calculate | |
 | camera | camera |
