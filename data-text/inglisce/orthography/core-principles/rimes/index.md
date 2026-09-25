@@ -32,14 +32,12 @@ querulous
 quilt
 quinine
 quiz
+quorum
 
 | English | Inglisce |
 |---|---|
-| quorum | quorom |
-| quota | quota |
 | racket | rachete |
 | request | |
-| rescue | |
 | risk | risque, riscs |
 | rocky | rochy |
 | scab | scabe, scabs |
@@ -98,8 +96,6 @@ quiz
 | cargo | |
 | ago | |
 | legal | |
-| get | |
-| give | |
 | gift | |
 | girl | |
 | guess | |
@@ -154,7 +150,6 @@ quiz
 | guava | |
 | guano | |
 | guacamole | |
-| jaguar | jaguoire |
 | iguana | same |
 | Nicaragua | same |
 | language | same |
