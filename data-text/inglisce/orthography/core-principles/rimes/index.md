@@ -1,14 +1,12 @@
 # Velar worksheet
 
-| English | Inglisce |
-|---|---|
 | antiquity | |
 | aquarium |aquâriom |
-| aquatic | aquatic |
+
+| English | Inglisce |
+|---|---|
 | archive | arcoive (arcoîval) |
 | arcuate | |
-| ask | asc |
-| attic | |
 | back | bac |
 | bacon | bâcon |
 | banquet | |
