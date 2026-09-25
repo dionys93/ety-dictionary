@@ -62,109 +62,51 @@ torque
 ubiquitous
 unique
 wicked
+gob
+gap
+aggregate
+ago
+ague - aig̃ue
+baggy
+cargo
+contiguity - contigúetie
+contiguous - contig̃ueus
+dagger
+degrade
+eagerly, eagerness
+exiguous - exig̃ueus
+extinguish - extingoișe
+figure
+geld
+getaway
+gizzard
+mold - móld
+guacamole
+guano
+guava
+Gwen
+iguana
+intrigue
+jugular - jogular
+languish - langoișe
+languor - langre
+legume
+ligature - ligațure
+linger
+lingual - lingüal
+linguine - lingüini
+linguist - lingüist
+Nicaragua
+rogue
+rug
+sanguine - sangüin
+single
+singular
+singularity
+tiger
+unguent - ungüent
+vague
 
-## /g/
-
-| English | Inglisce |
-|---|---|
-| gap | |
-| got | |
-| gut | |
-| gas | |
-| gob | |
-| gallon | |
-| gossip | |
-| gutter | |
-| gather | |
-| again | |
-| agog | |
-| cargo | |
-| ago | |
-| legal | |
-| gift | |
-| girl | |
-| guess | |
-| guilt | |
-| geese | |
-| gear | |
-| geld | |
-| getaway | |
-| giddy | |
-| guitar | |
-| gizzard | |
-| forget | |
-| target | |
-| bigger | |
-| baggy | |
-| dagger | |
-| begin | |
-| finger | |
-| anger | |
-| hunger | |
-| linger | |
-| eager | |
-| tiger | |
-| bagged | |
-| bagging | |
-| glad | |
-| grab | |
-| glow | |
-| grim | |
-| glisten | |
-| gravel | |
-| grocer | |
-| regard | |
-| degrade | |
-| aggregate | |
-| bag | |
-| dog | |
-| rug | |
-| big | |
-| leg | |
-| egg | |
-| league | |
-| vague | |
-| rogue | |
-| plague | |
-| tongue | |
-| fatigue | |
-| intrigue | |
-| colleague | |
-| catalogue | |
-| Gwen | |
-| guava | |
-| guano | |
-| guacamole | |
-| iguana | same |
-| Nicaragua | same |
-| language | same |
-| languor | langre |
-| anguish | angoișe |
-| penguin | pengüine |
-| distinguish | distingoișe |
-| extinguish | extingoișe |
-| languish | langoișe  |
-| linguist | lingüist |
-| lingual | lingüal |
-| sanguine | sangüin |
-| unguent | ungüent |
-| linguine | lingüini |
-| regular | same |
-| figure | same |
-| angular | same |
-| singular | same |
-| jugular | jogular |
-| legume | same |
-| ligature | ligațure |
-| ambiguous | ambig̃ueus |
-| contiguous | contig̃ueus |
-| exiguous | exig̃ueus |
-| ambiguity | ambigúetie, ambigúetis |
-| contiguity | contigúetie |
-| arguing | arg̃uing |
-| argued | arg̃ued |
-| argue | arg̃ue |
-| ague | aig̃ue |
 
 ## /tʃ/
 
