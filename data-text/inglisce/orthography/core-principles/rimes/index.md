@@ -1,19 +1,6 @@
 # Velar worksheet
 
-aggregate
-ago
-ague - aig̃ue
-anchovy - anc̃ovie
-baggy
-cargo
-chance - c̃ance
-chin - c̃ine
-contiguity - contigúetie
-contiguous - contig̃ueus
-dagger
-degrade
-delinquent
-duct
+
 eagerly, eagerness
 eloquent
 exiguous - exig̃ueus
