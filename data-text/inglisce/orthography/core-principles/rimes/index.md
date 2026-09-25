@@ -1,8 +1,5 @@
 # Velar worksheet
 
-| antiquity | |
-| aquarium |aquâriom |
-| archive | arcoive (arcoîval) |
 | arcuate | |
 | blacken | blachene |
 | bequeath | |
