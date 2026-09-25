@@ -109,7 +109,6 @@
 
 ## /g/
 
-### Before *a, o, u* — mono, initial
 | English | Inglisce |
 |---|---|
 | gap | |
@@ -117,27 +116,15 @@
 | gut | |
 | gas | |
 | gob | |
-
-### Before *a, o, u* — poly, initial
-| English | Inglisce |
-|---|---|
 | gallon | |
 | gossip | |
 | gutter | |
 | gather | |
-
-### Before *a, o, u* — poly, medial
-| English | Inglisce |
-|---|---|
 | again | |
 | agog | |
 | cargo | |
 | ago | |
 | legal | |
-
-### Before *e, i, y* — mono, initial
-| English | Inglisce |
-|---|---|
 | get | |
 | give | |
 | gift | |
@@ -147,18 +134,10 @@
 | geese | |
 | gear | |
 | geld | |
-
-### Before *e, i, y* — poly, initial
-| English | Inglisce |
-|---|---|
 | getaway | |
 | giddy | |
 | guitar | |
 | gizzard | |
-
-### Before *e, i, y* — poly, medial
-| English | Inglisce |
-|---|---|
 | forget | |
 | target | |
 | bigger | |
@@ -173,32 +152,16 @@
 | tiger | |
 | bagged | |
 | bagging | |
-
-### Before a consonant — mono, initial
-| English | Inglisce |
-|---|---|
 | glad | |
 | grab | |
 | glow | |
 | grim | |
-
-### Before a consonant — poly, initial
-| English | Inglisce |
-|---|---|
 | glisten | |
 | gravel | |
 | grocer | |
-
-### Before a consonant — poly, medial
-| English | Inglisce |
-|---|---|
 | regard | |
 | degrade | |
 | aggregate | |
-
-### Word-final — mono
-| English | Inglisce |
-|---|---|
 | bag | |
 | dog | |
 | rug | |
@@ -210,42 +173,20 @@
 | rogue | |
 | plague | |
 | tongue | |
-
-### Word-final — poly
-| English | Inglisce |
-|---|---|
 | fatigue | |
 | intrigue | |
 | colleague | |
 | catalogue | |
-
-## /gw/
-
-### Before *a, o* — mono, initial
-| English | Inglisce |
-|---|---|
 | Gwen | |
-
-### Before *a, o* — poly, initial
-| English | Inglisce |
-|---|---|
 | guava | |
 | guano | |
 | guacamole | |
-
-### Before *a, o* — poly, medial
-| English | Inglisce |
-|---|---|
 | jaguar | jaguoire |
 | iguana | same |
 | Nicaragua | same |
 | language | same |
 | languor | langre |
 | anguish | angoișe |
-
-### Before *e, i* — poly, medial
-| English | Inglisce |
-|---|---|
 | penguin | pengüine |
 | distinguish | distingoișe |
 | extinguish | extingoișe |
@@ -254,7 +195,6 @@
 | lingual | lingüal |
 | sanguine | sangüin |
 | unguent | ungüent |
-| segue | següe |
 | linguine | lingüini |
 
 ## /gj/
