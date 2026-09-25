@@ -9,7 +9,6 @@
 
 | English | Inglisce |
 |---|---|
-| chemist | chemist|
 | chicken | c̃ican |
 | chuckle | c̃ochle, c̃ochels |
 | circuit | |
