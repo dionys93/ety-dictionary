@@ -6,18 +6,14 @@ eloquent
 freckle
 heckle
 hockey
+innocuous
+kilo
+kindle
+knuckle
 
 | English | Inglisce |
 |---|---|
-| innocuous | |
-| kettle | caitle, caitils |
-| kilo | chilo |
-| kindle | cuindle |
-| knuckle | nochle, nochels |
 | lackey | lachie |
-| liquid | |
-| luck | hluc |
-| lucky | hluchy |
 | market | marcate |
 | market | marcate |
 | milk | milc |
