@@ -1,21 +1,8 @@
 # Velar worksheet
 
-bequeath
-cluster
-cocky
-conspicuous
-crabby
-cumulative
-
 | English | Inglisce |
 |---|---|
-| cupid | |
-| curd | |
-| curlicue | |
-| cusp | cuspe, cusps |
 | delinquent | |
-| doctor | doctre |
-| document | |
 | duct | ducte |
 | eloquent | |
 | equate | equâte |
