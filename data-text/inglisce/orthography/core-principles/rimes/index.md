@@ -39,41 +39,29 @@ rocky
 scab
 scoff
 scum
-
-| English | Inglisce |
-|---|---|
-| second | same |
-| sequel | |
-| sequence | |
-| sketch | scaiche |
-| skew | sq̃ue |
-| ski | schie |
-| skid | scuide |
-| skill | scuille |
-| skin | scuine |
-| skip | scuipe |
-| skit | scuite |
-| socket | sochete |
-| soliloquy | |
-| speckle | spechle, spechels |
-| squad | squade, squads |
-| squash | squasce |
-| squat | squatte, squáts |
-| squelch | squelc̃e |
-| squid | |
-| squint | |
-| squirm | |
-| sticky | stichy |
-| tackle | tachle, tachels |
-| tactic | same |
-| thicken | þichene |
-| ticket | tichete |
-| tickle | tichle, tichels |
-| torque | torque, torcs |
-| tricky | trichy |
-| ubiquitous | |
-| unique | unique |
-| wicked | uichid |
+second
+sequel
+sequence
+ski
+skid
+skill
+skip
+skin
+skit
+socket
+soliloquy
+speckle
+squad
+squash
+squelch
+squint
+sticky
+tactic
+ticket
+torque
+ubiquitous
+unique
+wicked
 
 ## /g/
 
@@ -161,23 +149,13 @@ scum
 | sanguine | sangüin |
 | unguent | ungüent |
 | linguine | lingüini |
-
-## /gj/
-
-### Before a consonant — poly, medial
-| English | Inglisce |
-|---|---|
 | regular | same |
 | figure | same |
 | angular | same |
 | singular | same |
 | jugular | jogular |
 | legume | same |
-| ligature | ligațure (not sure why you placed this in here) |
-
-### Before a vowel — poly, medial
-| English | Inglisce |
-|---|---|
+| ligature | ligațure |
 | ambiguous | ambig̃ueus |
 | contiguous | contig̃ueus |
 | exiguous | exig̃ueus |
@@ -185,10 +163,6 @@ scum
 | contiguity | contigúetie |
 | arguing | arg̃uing |
 | argued | arg̃ued |
-
-### Word-final — poly
-| English | Inglisce |
-|---|---|
 | argue | arg̃ue |
 | ague | aig̃ue |
 
@@ -207,10 +181,6 @@ scum
 | choose | c̃ouse |
 | choice | c̃oice |
 | chief | c̃iefe |
-
-### Mono, final
-| English | Inglisce |
-|---|---|
 | catch | caic̃e |
 | fetch | faic̃e |
 | much | moc̃ |
@@ -222,20 +192,11 @@ scum
 | beech | boic̃e |
 | teach | teic̃e |
 | couch | coac̃e |
-
-### Poly, initial
-| English | Inglisce |
-|---|---|
 | chicken | c̃ican |
 | cherry | c̃errie, c̃erris |
 | chapel | c̃apele, c̃apels |
 | champion | c̃ampion |
 | chocolate | c̃aochlat |
-
-### Poly, medial
-| English | Inglisce |
-|---|---|
-| kitchen | cuic̃ene, cuic̃ins |
 | butcher | buc̃ere, buc̃ors |
 | teacher | teicher |
 | richer | ric̃ar |
@@ -244,17 +205,9 @@ scum
 | merchant | merc̃ant |
 | bachelor | bac̃elor |
 | anchovy | anc̃ovie, anc̃ovis |
-
-### Poly, final
-| English | Inglisce |
-|---|---|
 | attach | attac̃e |
 | detach | detac̃e |
 | approach | approc̃e |
-
-### From *t* — poly, medial
-| English | Inglisce |
-|---|---|
 | nature | nâțure, nâțurs |
 | picture | picțure, picțurs |
 | future | fuțure, fuțurs |
