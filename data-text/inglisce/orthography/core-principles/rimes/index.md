@@ -2,6 +2,7 @@
 
 bequeath
 cluster
+cocky
 
 | English | Inglisce |
 |---|---|
@@ -9,7 +10,6 @@ cluster
 | colloquy | |
 | consequent | |
 | conspicuous | |
-| cousin | cosene, cosins |
 | crab | crabe |
 | cream | crieme |
 | credit | crèdit |
