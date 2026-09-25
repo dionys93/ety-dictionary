@@ -10,8 +10,6 @@
 | English | Inglisce |
 |---|---|
 | bequeath | |
-| buckle | bochle, bochels |
-| cackle | cachle, cachels|
 | calculate | |
 | camera | camera |
 | chemist | chemist|
