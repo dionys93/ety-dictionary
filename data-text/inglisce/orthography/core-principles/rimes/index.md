@@ -2,178 +2,174 @@
 
 | English | Inglisce |
 |---|---|
+| accurate | |
+| adequate | adequate |
+| antique | antique, antícs |
+| antiquity | |
+| aquarium |aquâriom |
+| aquatic | aquatic |
+| archive | arcoive (arcoîval) |
+| arcuate | |
+| ask | asc |
+| attic | |
+| back | bac |
+| bacon | bâcon |
+| banquet | |
+| barbecue | |
+| basket | bascate |
+| bequeath | |
+| blacken | blachene |
+| bucket | bocate |
+| bucket | buquete |
+| buckle | bochle, bochels |
+| cabin | cabene, cabins |
+| cackle | cachle, cachels|
+| calculate | |
+| camera | camera |
+| chemist | chemist|
+| chicken | c̃ican |
+| chuckle | c̃ochle, c̃ochels |
+| circuit | |
+| circular | |
+| claw | claue, claus |
+| clever | clever |
+| clip | clippe |
+| cluster | clustre, clustirs |
+| cocky | cochy |
+| collar | collere, collars |
+| colloquial | |
+| colloquy | |
+| consequent | |
+| conspicuous | |
+| cousin | cosene, cosins |
+| crab | crabe |
+| cream | crieme |
+| credit | crèdit |
+| cubicle | |
+| cue | |
+| cued | |
+| cumulative | |
+| cupid | |
+| curd | |
+| cure | |
+| curious | |
+| curlicue | |
 | cusp | cuspe, cusps |
+| cute | |
+| delinquent | |
+| doctor | doctre |
+| document | |
+| donkey | dònquie |
+| duct | ducte |
+| eloquent | |
+| equate | equâte |
+| equator | equâtre, equâtors |
+| evacuate | |
+| evacuee | |
+| fact | facte |
+| focus | fócus |
+| freckle | frechle, frechels |
+| frequent | |
+| heckle | hechle, hechels |
+| hockey | hochie |
+| innocuous | |
+| jockey | jaquie |
+| jockey | jáchie |
+| kayak | cáyac, cáyax |
+| kettle | caitle, caitils |
+| kilo | chilo |
+| kindle | cuindle |
+| knuckle | nochle, nochels |
+| lackey | lachie |
+| liquid | |
+| luck | hluc |
+| lucky | hluchy |
+| market | marcate |
+| market | marcate |
+| milk | milc |
+| miscue | |
+| monkey | monquie |
+| mosque | mosque, moscs |
+| music | |
+| oblique | oblique |
+| obloquy | |
+| occupy | |
+| opaque | opâque |
+| panic | pànic |
+| particular | |
+| pick | pic |
+| pickle | pichle, pichels |
+| picky | pichy |
+| picture | picțure |
+| plaque | plaque, placs |
+| pocket | pochete |
+| pocket | poquete |
+| promiscuity | |
+| promiscuous | |
+| quad | quade |
+| quadrant | quadrant |
+| quarry | quarie |
+| quart | caurte |
+| quash | quasce |
+| queasy | |
+| quench | quenc̃e |
+| querulous | |
+| quicken | quichene |
+| quill | |
+| quilt | |
+| quinine | |
+| quire | |
+| quiz | |
+| quorum | quorom |
+| quota | quota |
+| racket | rachete |
+| request | |
+| rescue | |
+| risk | risque, riscs |
+| rocky | rochy |
 | scab | scabe, scabs |
 | scar | scarre, scars |
 | scoff | scafhe |
 | scum | scome |
-| cabin | cabene, cabins |
-| collar | collere, collars |
-| cousin | cosene, cosins |
-| camera | camera |
-| bacon | bâcon |
-| vacant | vâcant |
-| acorn | eacorn |
-| focus | fócus |
 | second | same |
-| skid | scuide |
-| skit | scuite |
-| ski | schie |
-| skin | scuine |
-| skill | scuille |
-| skip | scuipe |
+| secure | |
+| sequel | |
+| sequence | |
 | sketch | scaiche |
 | skew | sq̃ue |
-| kettle | caitle, caitils |
-| kindle | cuindle |
-| kilo | chilo |
-| chemist | chemist|
-| kayak | cáyac, cáyax |
-| market | marcate |
-| basket | bascate |
-| pocket | poquete |
-| bucket | buquete |
-| jockey | jaquie |
-| donkey | dònquie |
-| monkey | monquie |
-| archive | arcoive (arcoîval) |
-| claw | claue, claus |
-| crab | crabe |
-| clip | clippe |
-| cream | crieme |
-| act | acte |
-| fact | facte |
-| duct | ducte |
-| risk | risque, riscs |
-| ask | asc |
-| milk | milc |
-| clever | clever |
-| credit | crèdit |
-| cluster | clustre, clustirs |
-| doctor | doctre |
-| picture | picțure |
-| actor | actor |
-| tactic | same |
-| tackle | tachle, tachels |
-| buckle | bochle, bochels |
-| pickle | pichle, pichels |
-| knuckle | nochle, nochels |
-| tickle | tichle, tichels |
-| freckle | frechle, frechels |
-| speckle | spechle, spechels |
-| chuckle | c̃ochle, c̃ochels |
-| cackle | cachle, cachels|
-| heckle | hechle, hechels |
-| chicken | c̃ican |
-| thicken | þichene |
-| quicken | quichene |
-| blacken | blachene |
-| bucket | bocate |
-| market | marcate |
-| pocket | pochete |
-| racket | rachete |
-| ticket | tichete |
+| ski | schie |
+| skid | scuide |
+| skill | scuille |
+| skin | scuine |
+| skip | scuipe |
+| skit | scuite |
 | socket | sochete |
-| wicked | uichid |
-| lucky | hluchy |
-| rocky | rochy |
-| sticky | stichy |
-| tricky | trichy |
-| picky | pichy |
-| cocky | cochy |
-| hockey | hochie |
-| jockey | jáchie |
-| lackey | lachie |
-| back | bac |
-| pick | pic |
-| luck | hluc |
-| talk | tauc |
-| walk | ouac |
-| ache | âc |
-| attic | |
-| music | |
-| panic | pànic |
-| antique | antique, antícs |
-| unique | unique |
-| plaque | plaque, placs |
-| oblique | oblique |
-| opaque | opâque |
-| torque | torque, torcs |
-| mosque | mosque, moscs |
-| quad | quade |
-| quart | caurte |
-| quash | quasce |
+| soliloquy | |
+| speckle | spechle, spechels |
 | squad | squade, squads |
 | squash | squasce |
 | squat | squatte, squáts |
-| quarry | quarie |
-| quota | quota |
-| quorum | quorom |
-| equate | equâte |
-| equator | equâtre, equâtors |
-| adequate | adequate |
-| aquatic | aquatic |
-| aquarium |aquâriom |
-| quadrant | quadrant |
-| quench | quenc̃e |
 | squelch | squelc̃e |
-| queasy | |
-| querulous | |
-| frequent | |
-| sequence | |
-| sequel | |
-| consequent | |
-| eloquent | |
-| delinquent | |
-| banquet | |
-| request | |
-| bequeath | |
-| quiz | |
-| quill | |
-| quilt | |
-| quire | |
 | squid | |
 | squint | |
 | squirm | |
-| quinine | |
-| liquid | |
+| sticky | stichy |
+| tackle | tachle, tachels |
+| tactic | same |
+| talk | tauc |
+| thicken | þichene |
+| ticket | tichete |
+| tickle | tichle, tichels |
+| torque | torque, torcs |
+| tricky | trichy |
 | ubiquitous | |
-| colloquial | |
-| antiquity | |
-| soliloquy | |
-| colloquy | |
-| obloquy | |
-| cute | |
-| cure | |
-| curd | |
-| cued | |
-| curious | |
-| cumulative | |
-| cupid | |
-| cubicle | |
-| accurate | |
-| secure | |
-| document | |
-| particular | |
-| circular | |
-| calculate | |
-| occupy | |
-| vacuum | |
-| evacuate | |
-| vacuous | |
-| innocuous | |
-| conspicuous | |
-| promiscuous | |
-| arcuate | |
+| unique | unique |
+| vacant | vâcant |
 | vacuity | |
-| promiscuity | |
-| circuit | |
-| evacuee | |
-| cue | |
-| rescue | |
-| barbecue | |
-| curlicue | |
-| miscue | |
+| vacuous | |
+| vacuum | |
+| walk | ouac |
+| wicked | uichid |
 
 ## /g/
 
