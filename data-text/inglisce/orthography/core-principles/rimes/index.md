@@ -54,7 +54,6 @@
 | delinquent | |
 | doctor | doctre |
 | document | |
-| donkey | dònquie |
 | duct | ducte |
 | eloquent | |
 | equate | equâte |
@@ -83,7 +82,6 @@
 | market | marcate |
 | milk | milc |
 | miscue | |
-| monkey | monquie |
 | mosque | mosque, moscs |
 | music | |
 | oblique | oblique |
