@@ -1,23 +1,5 @@
 # Velar worksheet
 
-
-eagerly, eagerness
-eloquent
-exiguous - exig̃ueus
-extinguish - extingoișe
-figure
-freckle
-gap
-geld
-getaway
-gizzard
-gob
-guacamole
-guano
-guava
-Gwen
-heckle
-hockey
 iguana
 innocuous
 intrigue
