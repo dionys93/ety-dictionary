@@ -10,7 +10,6 @@ hockey
 | English | Inglisce |
 |---|---|
 | innocuous | |
-| kayak | cáyac, cáyax |
 | kettle | caitle, caitils |
 | kilo | chilo |
 | kindle | cuindle |
