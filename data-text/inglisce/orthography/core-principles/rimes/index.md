@@ -12,32 +12,21 @@ kindle
 knuckle
 lackey
 market
+miscue
+oblique
+obloquy
+opaque
+picky
+plaque
+promiscuity
+promiscuous
+quad
+quadrant
+quarry
+quart
 
 | English | Inglisce |
 |---|---|
-| milk | milc |
-| miscue | |
-| mosque | mosque, moscs |
-| music | |
-| oblique | oblique |
-| obloquy | |
-| occupy | |
-| opaque | opâque |
-| panic | pànic |
-| particular | |
-| pick | pic |
-| pickle | pichle, pichels |
-| picky | pichy |
-| picture | picțure |
-| plaque | plaque, placs |
-| pocket | pochete |
-| pocket | poquete |
-| promiscuity | |
-| promiscuous | |
-| quad | quade |
-| quadrant | quadrant |
-| quarry | quarie |
-| quart | caurte |
 | quash | quasce |
 | queasy | |
 | quench | quenc̃e |
