@@ -3,17 +3,13 @@
 delinquent
 duct
 eloquent
+freckle
+heckle
+hockey
 
 | English | Inglisce |
 |---|---|
-| focus | fócus |
-| freckle | frechle, frechels |
-| frequent | |
-| heckle | hechle, hechels |
-| hockey | hochie |
 | innocuous | |
-| jockey | jaquie |
-| jockey | jáchie |
 | kayak | cáyac, cáyax |
 | kettle | caitle, caitils |
 | kilo | chilo |
