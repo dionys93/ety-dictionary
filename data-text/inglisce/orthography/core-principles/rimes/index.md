@@ -1,25 +1,6 @@
 # Velar worksheet
 
-iguana
-innocuous
-intrigue
-jugular - jogular
-kilo
-kindle
-knuckle
-lackey
-languish - langoișe
-languor - langre
-legume
-ligature - ligațure
-linger
-lingual - lingüal
-linguine - lingüini
-linguist - lingüist
-market
-merchant - merc̃ant
-miscue
-mold - móld
+
 Nicaragua
 oblique
 obloquy
