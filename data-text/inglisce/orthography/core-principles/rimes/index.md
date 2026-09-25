@@ -105,8 +105,6 @@
 | tricky | trichy |
 | ubiquitous | |
 | unique | unique |
-| vacant | vâcant |
-| walk | ouac |
 | wicked | uichid |
 
 ## /g/
