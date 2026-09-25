@@ -3,14 +3,10 @@
 bequeath
 cluster
 cocky
+conspicuous
 
 | English | Inglisce |
 |---|---|
-| colloquial | |
-| colloquy | |
-| consequent | |
-| conspicuous | |
-| crab | crabe |
 | cream | crieme |
 | credit | crèdit |
 | cubicle | |
