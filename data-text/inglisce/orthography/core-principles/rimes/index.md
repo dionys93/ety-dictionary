@@ -4,10 +4,6 @@
 
 | English | Inglisce |
 |---|---|
-| chicken | c̃ican |
-| chuckle | c̃ochle, c̃ochels |
-| circuit | |
-| circular | |
 | claw | claue, claus |
 | clever | clever |
 | clip | clippe |
