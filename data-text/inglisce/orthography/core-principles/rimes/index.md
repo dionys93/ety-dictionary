@@ -300,10 +300,7 @@
 | virtue | virțue, virțuis |
 | statue | stațue, stațuis |
 | fortune | forțene, forțins  |
-| actual | acțual |
-| question | quaistion |
 | Christian | |
-
 
 ---
 
