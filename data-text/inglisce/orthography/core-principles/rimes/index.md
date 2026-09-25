@@ -98,7 +98,6 @@
 | sticky | stichy |
 | tackle | tachle, tachels |
 | tactic | same |
-| talk | tauc |
 | thicken | þichene |
 | ticket | tichete |
 | tickle | tichle, tichels |
@@ -107,9 +106,6 @@
 | ubiquitous | |
 | unique | unique |
 | vacant | vâcant |
-| vacuity | |
-| vacuous | |
-| vacuum | |
 | walk | ouac |
 | wicked | uichid |
 
