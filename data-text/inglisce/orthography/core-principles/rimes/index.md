@@ -1,15 +1,10 @@
 # Velar worksheet
 
-| bequeath | |
+bequeath
+cluster
 
 | English | Inglisce |
 |---|---|
-| claw | claue, claus |
-| clever | clever |
-| clip | clippe |
-| cluster | clustre, clustirs |
-| cocky | cochy |
-| collar | collere, collars |
 | colloquial | |
 | colloquy | |
 | consequent | |
