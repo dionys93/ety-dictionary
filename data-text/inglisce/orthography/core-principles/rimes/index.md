@@ -1,7 +1,5 @@
 # Velar worksheet
 
-| arcuate | |
-| blacken | blachene |
 | bequeath | |
 
 | English | Inglisce |
