@@ -1,10 +1,11 @@
 # Velar worksheet
 
+delinquent
+duct
+eloquent
+
 | English | Inglisce |
 |---|---|
-| delinquent | |
-| duct | ducte |
-| eloquent | |
 | equate | equâte |
 | equator | equâtre, equâtors |
 | evacuate | |
