@@ -3,12 +3,11 @@
 | antiquity | |
 | aquarium |aquâriom |
 | archive | arcoive (arcoîval) |
+| arcuate | |
 
 
 | English | Inglisce |
 |---|---|
-| arcuate | |
-| banquet | |
 | barbecue | |
 | basket | bascate |
 | bequeath | |
