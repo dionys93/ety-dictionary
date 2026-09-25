@@ -2,7 +2,6 @@
 
 | English | Inglisce |
 |---|---|
-| calm | calm |
 | cusp | cuspe, cusps |
 | scab | scabe, scabs |
 | scar | scarre, scars |
