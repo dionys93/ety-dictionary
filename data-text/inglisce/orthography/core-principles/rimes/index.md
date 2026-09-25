@@ -5,13 +5,10 @@ cluster
 cocky
 conspicuous
 crabby
-| cream | crieme |
 
 | English | Inglisce |
 |---|---|
 | cubicle | |
-| cue | |
-| cued | |
 | cumulative | |
 | cupid | |
 | curd | |
