@@ -8,8 +8,6 @@ eloquent
 |---|---|
 | equate | equâte |
 | equator | equâtre, equâtors |
-| evacuate | |
-| evacuee | |
 | fact | facte |
 | focus | fócus |
 | freckle | frechle, frechels |
