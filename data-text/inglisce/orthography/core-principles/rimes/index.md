@@ -5,16 +5,14 @@ cluster
 cocky
 conspicuous
 crabby
+cumulative
 
 | English | Inglisce |
 |---|---|
 | cupid | |
 | curd | |
-| cure | |
-| curious | |
 | curlicue | |
 | cusp | cuspe, cusps |
-| cute | |
 | delinquent | |
 | doctor | doctre |
 | document | |
