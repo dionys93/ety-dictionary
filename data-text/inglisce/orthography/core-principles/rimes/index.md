@@ -10,12 +10,11 @@ innocuous
 kilo
 kindle
 knuckle
+lackey
+market
 
 | English | Inglisce |
 |---|---|
-| lackey | lachie |
-| market | marcate |
-| market | marcate |
 | milk | milc |
 | miscue | |
 | mosque | mosque, moscs |
