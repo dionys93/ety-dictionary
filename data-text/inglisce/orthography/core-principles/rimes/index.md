@@ -2,7 +2,6 @@
 
 | English | Inglisce |
 |---|---|
-| accurate | |
 | adequate | adequate |
 | antique | antique, antícs |
 | antiquity | |
