@@ -4,11 +4,11 @@ bequeath
 cluster
 cocky
 conspicuous
+crabby
+| cream | crieme |
 
 | English | Inglisce |
 |---|---|
-| cream | crieme |
-| credit | crèdit |
 | cubicle | |
 | cue | |
 | cued | |
