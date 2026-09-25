@@ -33,19 +33,16 @@ quilt
 quinine
 quiz
 quorum
+racket
+request
+rocky
+scab
+scoff
+scum
 
 | English | Inglisce |
 |---|---|
-| racket | rachete |
-| request | |
-| risk | risque, riscs |
-| rocky | rochy |
-| scab | scabe, scabs |
-| scar | scarre, scars |
-| scoff | scafhe |
-| scum | scome |
 | second | same |
-| secure | |
 | sequel | |
 | sequence | |
 | sketch | scaiche |
