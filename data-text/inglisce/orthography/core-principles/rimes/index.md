@@ -2,8 +2,6 @@
 
 | English | Inglisce |
 |---|---|
-| adequate | adequate |
-| antique | antique, antícs |
 | antiquity | |
 | aquarium |aquâriom |
 | aquatic | aquatic |
