@@ -2,13 +2,12 @@
 
 | antiquity | |
 | aquarium |aquâriom |
+| archive | arcoive (arcoîval) |
+
 
 | English | Inglisce |
 |---|---|
-| archive | arcoive (arcoîval) |
 | arcuate | |
-| back | bac |
-| bacon | bâcon |
 | banquet | |
 | barbecue | |
 | basket | bascate |
