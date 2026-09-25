@@ -5,13 +5,10 @@
 | archive | arcoive (arcoîval) |
 | arcuate | |
 | blacken | blachene |
-
+| bequeath | |
 
 | English | Inglisce |
 |---|---|
-| bequeath | |
-| calculate | |
-| camera | camera |
 | chemist | chemist|
 | chicken | c̃ican |
 | chuckle | c̃ochle, c̃ochels |
