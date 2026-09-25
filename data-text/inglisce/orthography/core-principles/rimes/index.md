@@ -8,8 +8,6 @@ crabby
 
 | English | Inglisce |
 |---|---|
-| cubicle | |
-| cumulative | |
 | cupid | |
 | curd | |
 | cure | |
