@@ -24,19 +24,17 @@ quad
 quadrant
 quarry
 quart
+quicken
+quash
+queasy
+quench
+querulous
+quilt
+quinine
+quiz
 
 | English | Inglisce |
 |---|---|
-| quash | quasce |
-| queasy | |
-| quench | quenc̃e |
-| querulous | |
-| quicken | quichene |
-| quill | |
-| quilt | |
-| quinine | |
-| quire | |
-| quiz | |
 | quorum | quorom |
 | quota | quota |
 | racket | rachete |
