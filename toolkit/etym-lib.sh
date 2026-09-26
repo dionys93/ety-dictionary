@@ -2068,6 +2068,124 @@ etym-lint() {
     return 0
 }
 
+# etym-prune-list <file> [--dry-run] [--no-backup] [--quiet]
+# Removes from a word list every word the dictionary already has, so the list
+# is left holding only what still needs an entry. The list is one word or
+# phrase per line, like dist/missing_words.txt; blank lines and lines starting
+# with # are kept untouched.
+#
+#   etym-prune-list todo.txt --dry-run    # show what would go, change nothing
+#   etym-prune-list todo.txt              # remove them (todo.txt.bak keeps the original)
+#
+# "Already in the dictionary" means the line equals a form on some stanza's
+# [ME] line. The whole [ME] line is read, not the parser's first token, so
+# "could" is found on the can stanza and "New York" as one form; a leading
+# "to " is ignored on both sides. Stanzas not yet reformed count, since the
+# word already has a file.
+#
+# Case: an exact match always counts, and a list word also matches a form that
+# is all lowercase in the dictionary, so "Walk" matches walk. The reverse does
+# not hold: "polish" in the list is not removed by Polish alone.
+#
+# Only exact forms are matched. An inflected form in the list ("abhorred",
+# "absolutely") stays unless the dictionary lists that form itself.
+#
+# Each removed word is printed with the entry that already holds it
+# (entry:stanza), so a removal can be checked against the dictionary.
+#
+# The original is kept as <file>.bak (overwriting any earlier backup) unless
+# --no-backup. The new content is written into the existing file rather than
+# swapped in, so its permissions and any links to it survive. Line endings and
+# every kept line are preserved byte for byte.
+etym-prune-list() {
+    local file="" dry=0 backup=1 quiet=0
+    local usage="Usage: etym-prune-list <file> [--dry-run] [--no-backup] [--quiet]"
+    while [[ $# -gt 0 ]]; do
+        case "$1" in
+            -n|--dry-run) dry=1 ;;
+            --no-backup)  backup=0 ;;
+            -q|--quiet)   quiet=1 ;;
+            -h|--help)    echo "$usage"; return 0 ;;
+            -*)           echo "$usage" >&2; return 1 ;;
+            *)            [[ -z "$file" ]] && file="$1" ;;
+        esac
+        shift
+    done
+    [[ -z "$file" ]] && { echo "$usage" >&2; return 1; }
+    [[ -f "$file" ]] || { echo "Error: '$file' not found." >&2; return 1; }
+    [[ -w "$file" || $dry -eq 1 ]] || { echo "Error: '$file' is not writable." >&2; return 1; }
+    [[ -d "$DICT_DIR" ]] || { echo "Error: DICT_DIR '$DICT_DIR' not found." >&2; return 1; }
+
+    # Every [ME] form in the dictionary, one per line, with where it lives:
+    #   form TAB entry:stanza
+    local forms
+    forms=$(find "$DICT_DIR" -type f -name '*.txt' -print0 \
+        | _etym_me_rows "" \
+        | "$_ETYM_AWK" -F'\t' -v root="$DICT_DIR/" '{
+              where = $1; if (index(where, root) == 1) where = substr(where, length(root) + 1)
+              n = split($4, f, ",")
+              for (i = 1; i <= n; i++) {
+                  w = f[i]; gsub(/^[ \t]+|[ \t]+$/, "", w); sub(/^[tT][oO][ \t]+/, "", w)
+                  if (w != "") print w "\t" where ":" $2
+              }
+          }')
+    [[ -n "$forms" ]] || { echo "Error: found no [ME] forms under $DICT_DIR." >&2; return 1; }
+
+    # Split the list: kept lines to one file, removed words to another.
+    local tmp removed
+    tmp=$(mktemp "${TMPDIR:-/tmp}/etym-prune-list.XXXXXX") || return 1
+    removed=$(mktemp "${TMPDIR:-/tmp}/etym-prune-list.XXXXXX") || { rm -f "$tmp"; return 1; }
+    FORMS="$forms" "$_ETYM_AWK" -v removed="$removed" '
+        function trim(x) { gsub(/^[ \t]+|[ \t]+$/, "", x); return x }
+        BEGIN {
+            n = split(ENVIRON["FORMS"], f, "\n")
+            for (i = 1; i <= n; i++) {
+                if (split(f[i], p, "\t") < 2) continue
+                if (!(p[1] in exact)) exact[p[1]] = p[2]
+                if (p[1] == tolower(p[1]) && !(p[1] in lower)) lower[p[1]] = p[2]
+            }
+        }
+        {
+            w = $0; sub(/\r$/, "", w); w = trim(w)
+            if (w == "" || w ~ /^#/) { print; next }
+            k = w; sub(/^[tT][oO][ \t]+/, "", k)
+            if (k in exact)          { print w "\t" exact[k] > removed; next }
+            if (tolower(k) in lower) { print w "\t" lower[tolower(k)] > removed; next }
+            print
+        }' "$file" > "$tmp" || { rm -f "$tmp" "$removed"; return 1; }
+
+    local total gone
+    total=$(grep -cv '^[[:space:]]*\(#.*\)\{0,1\}$' "$file")
+    gone=$(wc -l < "$removed" | tr -d ' ')
+
+    if (( ! quiet )) && (( gone > 0 )); then
+        echo "Already in the dictionary:"
+        "$_ETYM_AWK" -F'\t' '{ printf "  %-28s %s\n", $1, $2 }' "$removed"
+        echo
+    fi
+
+    if (( dry )); then
+        echo "Dry run: $gone of $total word(s) would be removed from ${file##*/}; nothing was changed."
+        rm -f "$tmp" "$removed"
+        return 0
+    fi
+
+    if (( gone == 0 )); then
+        echo "Nothing to remove: none of the $total word(s) in ${file##*/} is in the dictionary."
+        rm -f "$tmp" "$removed"
+        return 0
+    fi
+
+    (( backup )) && cp -p "$file" "$file.bak"
+    # Write through the existing file, so its permissions and links survive.
+    cat "$tmp" > "$file" || { rm -f "$tmp" "$removed"; return 1; }
+    rm -f "$tmp" "$removed"
+    echo "Removed $gone of $total word(s) from ${file##*/}; $((total - gone)) remain."
+    (( backup )) && echo "The original is in ${file##*/}.bak."
+    return 0
+}
+
+
 # etym-trim [path]
 # Strips trailing whitespace from all .txt files in a directory.
 etym-trim() {
