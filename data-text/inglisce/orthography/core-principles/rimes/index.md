@@ -1,8 +1,6 @@
 # State of the system
 
-## Established
 
-These hold across the whole data set with no exceptions found.
 
 ### Consonants
 
@@ -139,19 +137,7 @@ So `c̃` is doing two jobs — the native palatalisation and the French one — 
 
 ---
 
-## What the divide assumes about spelling
-
-### 1. The affricate slot has no `qu`
-
 `Qu` is /k/ by definition, so it cannot appear before a mark that makes the consonant an affricate. Every device the velar slot uses to record a French route — `pique`, `crique`, `attaque`, `joque` — is **unavailable in /tʃ/**.
-
-The consequence: *catch* went through France and *chase* is its Central French twin, but nothing in `caic̃e` says so. In the velar slot that fact would be spelled.
-
-### 2. The affricate slot has no `x`
-
-`X` writes /ks/, which the affricate cannot produce. So `-x` plurals are a velar-only device, and every /tʃ/ noun pluralises the long way.
-
-That also means note J's rule — digraph takes `-x`, single letter takes `-cs` — has no application in half the system.
 
 ### 3. The silent `-e` is near-obligatory after `c̃` and near-absent after `c`
 
