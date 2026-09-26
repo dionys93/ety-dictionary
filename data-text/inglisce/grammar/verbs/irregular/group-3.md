@@ -41,7 +41,7 @@ Verbs with **î** or **ai** in the root take **o** or **oa** in the past, and th
 | to drîve | droave | drivan |
 | to rîde | rode | ridan |
 | to rîse | rose | risan |
-| to r̃aite | r̃oat | r̃itan |
+| to r̃oite | r̃oat | r̃itan |
 | to strîde | strode | stridan |
 
 **2. The Mid-Vowel Shift (→ ô / ó / o / oa)**
@@ -54,7 +54,7 @@ In the first set, the participle keeps the vowel of the past. The **c** of `bró
 | to bréic | bróc | brócan |
 | to speic | spóc | spócan |
 | to uaic | uóc | uócan |
-| to auaic | auóc | auócon |
+| to auaic | auóc | auócan |
 | to c̃ouse | c̃ose | c̃osen |
 | to friese | frose | frosen |
 | to stiale | stoal | stolen |
