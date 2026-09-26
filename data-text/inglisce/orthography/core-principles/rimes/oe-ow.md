@@ -302,7 +302,7 @@ element.
 | overflow | an excess, a flowing over | n | OE *oferflōwan* — initial-stressed against the §2.1 verb | — | overflo |
 | overthrow | a removal from power | n | ME *overthrowen*, *over* + *throw* (OE *þrāwan*) — initial-stressed against the §2.1 verb | — | overþro -s |
 | oxbow | a U-shaped bend; the yoke collar | n | ME, *ox* (OE *oxa*) + *bow* | — | oxbo -s |
-| rainbow | arc of spectral colours | n | OE *regnboga* — *regn* + *boga* | — | raignbo -s |
+| rainbow | arc of spectral colours | n | OE *regnboga* — *regn* + *boga* | — | raînbo -s |
 | scarecrow | figure set up to scare birds | n | 1550s, *scare* (ON *skirra*) + *crow* (OE *crāwe*) | — | scairecro -s |
 | sideshow | a minor attraction | n | 1850s, *side* (OE *sīde*) + *show* (OE *scēawian*) | — | sîdseo -s |
 | somehow, anyhow, nohow | in some way; in any way; in no way | adv | English compounds on *how* | — | somhoau, enihoau, nohoau |
