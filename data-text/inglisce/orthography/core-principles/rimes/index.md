@@ -1,5 +1,3 @@
----
-
 # State of the system
 
 ## Established
