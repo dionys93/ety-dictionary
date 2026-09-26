@@ -191,7 +191,7 @@ Not yet on the pattern: the nouns `merho`, `myno`, `mòro`, `tomòro`, `uinho`, 
 | burrow | animal's hole | n | OE *beorgan* "to shelter" — the *bury* root | — | bêroa, bêraus |
 | burrow | to dig one | v | — | OE *beorgan* | to bêroa -s bêreod bêrauing |
 | callow | unfledged, inexperienced | adj | OE *calu* "bald" | — | calo |
-| fallow¹ | pale yellowish-brown; the colour itself | adj, n | OE *fealu* | OE *fealwian* "grow yellow, fade" — no modern verb | falo |
+| fallow¹ | pale yellowish-brown; the colour itself | adj, n | OE *fealu* | OE *fealwian* "grow yellow, fade" — no modern verb | falhoa |
 | fallow² | ploughed but left unseeded; land so ploughed; the act or condition of lying unseeded | n and adj ultimately from adj root | OE *fealh*, *felg* | — | falhoa, falhaus |
 | fallow² | to plough without seeding | v | — | OE *fealgian*, claimed outside our two sources | to falhoa -s falheod falhauing |
 | farrow | litter of pigs | n | OE *fearh* "young pig" | — | fairhoa, fairhaus |
