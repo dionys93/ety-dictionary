@@ -1,20 +1,20 @@
 ## Ћi Inglisce Alphabet
 
-Aa Ââ Áá Àà Ää\
+Aa Ââ Áá Àà\
 Bb\
 Cc C̃c̃ ç\
 Dd ḑ\
 Ii Îî Íí Ïï\
 Ff\
-Gg\
+Gg g̃\
 Hh\
-Ee Êê Éé Èè Ëë\
+Ee Êê Éé Èè\
 Jj\
-Qq\
+Qq Q̃q̃\
 Ll\
 Mm m̃\
 Nn ñ\
-Oo Ôô Óó Òò Öö\
+Oo Ôô Óó Òò\
 Pp\
 Ћþ\
 Rr R̃r̃\
