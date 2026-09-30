@@ -33,12 +33,12 @@ The comparative suffix (**-ar**) begins with an 'a', which naturally keeps a pre
 | **yong** | yongar | yonghest |
 
 **Adjectives Ending in -c:**
-* Switch the 'c' to **-qu-** before the superlative ending to preserve the hard /k/ sound.
+* Switch the 'c' to **-ch-** before the superlative ending to preserve the hard /k/ sound.
   
 | Base | Comparative | Superlative |
 | :--- | :--- | :--- |
-| **pinc** | pincar | pinquest |
-| **blac** | blacar | blaquest |
+| **pinc** | pincar | pinchest |
+| **blac** | blacar | blachest |
 
 ---
 
