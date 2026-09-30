@@ -396,7 +396,7 @@ Open and productive. The `-o` arrived already unstressed, or was added in Englis
 | judo | a Japanese martial art | n | JAP *柔道* | — | judo |
 | jumbo | very large; a large thing | n, adj | 1820s, perhaps from *Mumbo Jumbo*; fixed by the elephant's name | — | jombo |
 | kilo | a kilogram | n | clipping of *kilogram* | — | chílo -s |
-| kimono | a Japanese robe | n | JAP *着物* | — | cuimono (f n) |
+| kimono | a Japanese robe | n | JAP *着物* | — | chimono (f n) |
 | lasso | a noosed rope | n | Sp *lazo* ← L *laqueus* | — | laço |
 | lasso | to catch with a lasso | v | — | Sp *lazo* | to laçoe |
 | libretto | the text of an opera | n | It, dim. of *libro* ← L *liber* | — | libretto |
