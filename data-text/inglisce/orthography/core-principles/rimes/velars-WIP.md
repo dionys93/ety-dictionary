@@ -2,15 +2,15 @@
 
 ## Key
 
-| Sound | Device | Grounding | Competing for it |
-|---|---|---|---|
-| /tʃ/ | `c̃` | Old English, Old French, Spanish, English | settled |
-| /k/ before *e, i* | `cu`, `cy` or `ch`; `-que` word-final | French, Spanish, Catalan, Galician | settled |
-| /kw/ | `qu` | Italian, Corsican, Portuguese | settled |
-| /kj/ | `cu`, or `q̃` | Gallo `qh`, Friulian `cj`, Italian `chi` | settled |
-| /g/ before *e, i* | `gu` or `gh` | five Romance standards | settled |
-| /gw/ before *e, i* | `gü` | four Romance standards | settled |
-| /gj/ | `g̃` | Gallo `gh`, Friulian `gj`, Italian `ghi` | settled |
+| Sound | Device | Grounding |
+|---|---|---|
+| /tʃ/ | `c̃` | Old English, Old French, Spanish, English |
+| /k/ before *e, i* | `cu`, `cy` or `ch`; `-que` word-final | French, Spanish, Catalan, Galician |
+| /kw/ | `qu` | Italian, Corsican, Portuguese |
+| /kj/ | `cu`, or `q̃` | Gallo `qh`, Friulian `cj`, Italian `chi` |
+| /g/ before *e, i* | `gu` or `gh` | five Romance standards |
+| /gw/ before *e, i* | `gü` | four Romance standards |
+| /gj/ | `g̃` | Gallo `gh`, Friulian `gj`, Italian `ghi` |
 
 # Velars by syllable count, position and environment
 
