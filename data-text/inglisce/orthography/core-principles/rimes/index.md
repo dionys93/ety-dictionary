@@ -1,3 +1,59 @@
+```
+rimes/
+  alveolar-fricative/
+    bus-buzz.md  choice-noise.md  dose-rose.md  dress-fez.md
+    face-gaze.md  farce.md  glass-jazz.md  goose-lose.md  horse.md
+    house-rouse.md  lease-freeze.md  miss-fizz.md  nurse.md
+    price-size.md  puss.md  sauce-cause.md
+  alveolar-lateral-approximant/
+    ball.md  bell.md  coal.md  doll.md  dull.md  feel.md  fill.md
+    full.md  girl.md  mile.md  oil.md  owl.md  pal.md  pool.md
+    sail.md  snarl.md
+  alveolar-nasal/
+    barn.md  coin.md  dawn.md  green.md  horn.md  line.md  man.md
+    moon.md  rain.md  stone.md  sun.md  swan.md  ten.md  town.md
+    turn.md  win.md
+  alveolar-stop/
+    bet-bed.md  bite-ride.md  boot-food.md  cat-bad.md
+    caught-broad.md  coat-road.md  cut-mud.md  feet-seed.md
+    gate-made.md  hit-lid.md  hot-rod.md  hurt-word.md  part-hard.md
+    put-good.md  short-cord.md  shout-loud.md  void.md
+  bilabial-nasal/
+    arm.md  bomb.md  doom.md  drum.md  game.md  ham.md  hem.md
+    him.md  home.md  storm.md  team.md  term.md  time.md
+  bilabial-stop/
+    burp-curb.md  cap-cab.md  cup-tub.md  deep.md  hope-robe.md
+    pipe-tribe.md  sharp-barb.md  ship-rib.md  soup-tube.md
+    step-web.md  tape-babe.md  top-job.md  warp-orb.md
+  dental-fricative/
+    birth.md  both-loathe.md  cloth.md  death.md  faith-bathe.md
+    goth.md  hearth.md  math.md  mouth.md  myth.md  north.md
+    teeth-breathe.md  tooth-soothe.md  writhe.md
+  labiodental-fricative/
+    chef.md  cliff-give.md  cough.md  cuff-love.md  dwarf.md
+    leaf-sleeve.md  life-five.md  loaf-stove.md  proof-move.md
+    safe-cave.md  scarf-carve.md  staff-have.md  turf-curve.md
+  postalveolar-affricate/
+    butch.md  catch-badge.md  church-urge.md  coach.md
+    couch-gouge.md  march-large.md  much-judge.md  page.md
+    pooch-stooge.md  rich-bridge.md  stretch-edge.md
+    teach-siege.md  torch-gorge.md  watch-lodge.md
+  postalveolar-fricative/
+    beige.md  cash.md  fish.md  fresh.md  harsh.md  leash.md
+    push.md  rouge.md  rush.md  slosh.md
+  velar-nasal/
+    hang.md  long.md  sing.md  tongue.md
+  velar-stop/
+    back-bag.md  book.md  fork-morgue.md  kick-big.md
+    lake-vague.md  lock-jog.md  luck-rug.md  park.md
+    peak-league.md  spook.md  strike.md  talk-dog.md  work-burg.md
+```
+
+
+
+
+
+
 # State of the system
 
 
