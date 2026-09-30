@@ -45,7 +45,7 @@ rimes/
     hang.md  long.md  sing.md  tongue.md
   velar-stop/
     back-bag.md  book.md  fork-morgue.md  kick-big.md
-    lake-vague.md  lock-jog.md  luck-rug.md  park.md
+    lake-vague.md  lock-cog.md  luck-rug.md  park.md
     peak-league.md  spook.md  strike.md  talk-dog.md  work-burg.md
 ```
 
