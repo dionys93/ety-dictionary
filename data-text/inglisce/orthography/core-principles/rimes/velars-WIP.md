@@ -133,7 +133,7 @@ English spellings. — means the cell is empty in English.
 | brook (n., stream) | brôc, breox | OE *brōc* |
 | brook (v., tolerate) | brûc, brûcs, brûched, brûching | OE *brūcan* — a different word |
 | cook (v.) | côc, côcs, côched, côching | |
-| cook (n.) | côc, queox | |
+| cook (n.) | côc, cueox | |
 | crook | crôc, creox | |
 | hook (v.) | hôc, hôcs, hôched, hôching | |
 | hook (n.) | hôc, heox | |
