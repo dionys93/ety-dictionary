@@ -1,15 +1,5 @@
 Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 =================================================================
-📝 [1ma/assign.txt[0m
-   [31m[ERROR][0m Stanza 3: 'signum, assignare, assignatio, assignationem' — no language tag; every line before the reformed line needs one.
-
-📝 [1mb/Britain.txt[0m
-   [31m[ERROR][0m Stanza 1: 'Brittani, Brittania, Britania' — no language tag; every line before the reformed line needs one.
-   [31m[ERROR][0m Stanza 1: 'Britain' — no language tag; every line before the reformed line needs one.
-
-📝 [1mb/bequeath.txt[0m
-   [31m[ERROR][0m Stanza 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
-
 📝 [1mc/Canada.txt[0m
    [31m[ERROR][0m Stanza 1: 'kanata [St. Lawrence Iroquoian]' — [St. Lawrence Iroquoian] is not a language tag; a tag is words of letters or digits in brackets, joined by single spaces or hyphens, like [OE], [Greenland Eskimo] or [Anglo-Irish].
 
