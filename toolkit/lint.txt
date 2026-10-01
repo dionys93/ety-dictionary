@@ -1,18 +1,3 @@
-📝 [1mj/jest.txt[0m
-   [31m[ERROR][0m Stanza 1: 'gerere, gestus, gesta' — no language tag; every line before the reformed line needs one.
-
-📝 [1mk/kangaroo.txt[0m
-   [31m[ERROR][0m Stanza 1: 'kangaroo [ME], canguro [SP]' — 2 language tags ([ME] [SP]); a line takes one. Give each language its own line.
-
-📝 [1ml/lap.txt[0m
-   [31m[ERROR][0m Stanza 1: 'lape, laps' — no language tag; every line before the reformed line needs one.
-   [33m[WARN][0m  Stanza 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
-
-📝 [1ml/limit.txt[0m
-   [31m[ERROR][0m Stanza 3: 'limes, limitare,limitatio, limitationem' — no language tag; every line before the reformed line needs one.
-
-📝 [1mm/magnify.txt[0m
-   [31m[ERROR][0m Stanza 1: 'magnus + facere, magnificus, magnificare' — no language tag; every line before the reformed line needs one.
 
 📝 [1mm/membrane.txt[0m
    [31m[ERROR][0m Stanza 1: 'membrane [FR], [ME]' — 2 language tags ([FR] [ME]); a line takes one. Give each language its own line.
