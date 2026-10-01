@@ -1,11 +1,5 @@
 Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 =================================================================
-📝 [1mc/Canada.txt[0m
-   [31m[ERROR][0m Stanza 1: 'kanata [St. Lawrence Iroquoian]' — [St. Lawrence Iroquoian] is not a language tag; a tag is words of letters or digits in brackets, joined by single spaces or hyphens, like [OE], [Greenland Eskimo] or [Anglo-Irish].
-
-📝 [1mc/cipher.txt[0m
-   [31m[ERROR][0m Stanza 1: 'cifra [PR], [SP], [IT]' — 3 language tags ([PR] [SP] [IT]); a line takes one. Give each language its own line.
-
 📝 [1mc/cluster.txt[0m
    [31m[ERROR][0m Stanza 1: 'clostre, clostirs' — no language tag; every line before the reformed line needs one.
    [33m[WARN][0m  Stanza 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
