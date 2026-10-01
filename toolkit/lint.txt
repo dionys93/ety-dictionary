@@ -1,28 +1,3 @@
-Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
-=================================================================
-📝 [1mc/crumb.txt[0m
-   [31m[ERROR][0m Stanza 1: 'crome, crumme' — no language tag; every line before the reformed line needs one.
-
-📝 [1md/duchess.txt[0m
-   [31m[ERROR][0m Stanza 1: 'dux, ducissa' — no language tag; every line before the reformed line needs one.
-
-📝 [1me/elicit.txt[0m
-   [31m[ERROR][0m Stanza 1: 'ex + lacere, elicere, elicitus' — no language tag; every line before the reformed line needs one.
-
-📝 [1me/emulate.txt[0m
-   [31m[ERROR][0m Stanza 4: 'aemulari, aemulator' — no language tag; every line before the reformed line needs one.
-
-📝 [1me/ewe.txt[0m
-   [31m[ERROR][0m Stanza 1: 'eow, eowu' — no language tag; every line before the reformed line needs one.
-
-📝 [1mf/fool.txt[0m
-   [31m[ERROR][0m Stanza 1: 'fol [OF], fou [FR]' — 2 language tags ([OF] [FR]); a line takes one. Give each language its own line.
-
-📝 [1mf/foyer.txt[0m
-   [31m[ERROR][0m Stanza 1: 'focus, focarius, focarium' — no language tag; every line before the reformed line needs one.
-
-📝 [1mh/hearse.txt[0m
-   [31m[ERROR][0m Stanza 1: 'hirpex, hirpicem' — no language tag; every line before the reformed line needs one.
 
 📝 [1mi/interspace.txt[0m
    [31m[ERROR][0m Stanza 1: 'interspatium' — no language tag; every line before the reformed line needs one.
