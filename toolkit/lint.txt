@@ -1,15 +1,5 @@
 Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 =================================================================
-📝 [1mc/cluster.txt[0m
-   [31m[ERROR][0m Stanza 1: 'clostre, clostirs' — no language tag; every line before the reformed line needs one.
-   [33m[WARN][0m  Stanza 1: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
-
-📝 [1mc/concrete.txt[0m
-   [31m[ERROR][0m Stanza 2: 'concretus, concretio, concretionem' — no language tag; every line before the reformed line needs one.
-
-📝 [1mc/covet.txt[0m
-   [31m[ERROR][0m Stanza 1: 'cupere, cupidus, cupiditas' — no language tag; every line before the reformed line needs one.
-
 📝 [1mc/crosscut.txt[0m
    [31m[ERROR][0m Stanza 3: 'crosscutte, crosscuts' — no language tag; every line before the reformed line needs one.
    [33m[WARN][0m  Stanza 3: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.
