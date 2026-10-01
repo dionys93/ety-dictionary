@@ -3,9 +3,6 @@ Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 📝 [1mc/crumb.txt[0m
    [31m[ERROR][0m Stanza 1: 'crome, crumme' — no language tag; every line before the reformed line needs one.
 
-📝 [1md/Delaware.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
-
 📝 [1md/duchess.txt[0m
    [31m[ERROR][0m Stanza 1: 'dux, ducissa' — no language tag; every line before the reformed line needs one.
 
@@ -17,9 +14,6 @@ Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
 
 📝 [1me/ewe.txt[0m
    [31m[ERROR][0m Stanza 1: 'eow, eowu' — no language tag; every line before the reformed line needs one.
-
-📝 [1mf/flat.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
 
 📝 [1mf/fool.txt[0m
    [31m[ERROR][0m Stanza 1: 'fol [OF], fou [FR]' — 2 language tags ([OF] [FR]); a line takes one. Give each language its own line.
@@ -34,7 +28,6 @@ Linting: /workspaces/ety-dictionary/data-text/inglisce/dictionary
    [31m[ERROR][0m Stanza 1: 'interspatium' — no language tag; every line before the reformed line needs one.
 
 📝 [1mj/jam.txt[0m
-   [33m[WARN][0m  Trailing whitespace on one or more lines.
    [31m[ERROR][0m Stanza 1: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.
 
 📝 [1mj/jealous.txt[0m
