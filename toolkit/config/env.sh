@@ -25,7 +25,7 @@ export DICT_PROJECT_NAME="Inglisce"
 
 # --- REGEX PATTERNS ---
 export RE_WORD='^([\w\x80-\xff]+)'        # Matches letters and extended Latin
-export RE_LANG_TAG='\[[A-Z]+\]'           # Matches [OE], [ME], etc.
+export RE_LANG_TAG='\[[^[:punct:][:space:][:cntrl:]]+([ -][^[:punct:][:space:][:cntrl:]]+)*\]'   # [OE], [Old High German], [Anglo-Irish]
 export RE_POS='\(([^)]+)\)\s*$'           # Matches POS at end of line like (v)
 export RE_INFINITIVE='^to\s+'             # Matches leading "to "
 
@@ -74,6 +74,22 @@ _pos_rows() {
         | grep -v '^[[:space:]]*$'
 }
 
+# The one rule for splitting a register row into tag and description, shared
+# by get_pos_desc and _pos_tags so they cannot disagree. Sets POS_TAG and
+# POS_DESC, both trimmed.
+_POS_ROW_AWK='
+    function pos_trim(x) { gsub(/^[ \t]+|[ \t]+$/, "", x); return x }
+    function pos_row(line,    t, d) {
+        t = index(line, "\t")
+        if (t > 0)                      { POS_TAG = substr(line, 1, t - 1); POS_DESC = substr(line, t + 1) }
+        else if ((d = index(line, "-")) > 0) { POS_TAG = substr(line, 1, d - 1); POS_DESC = substr(line, d + 1) }
+        else                            { POS_TAG = line; POS_DESC = "" }
+        POS_TAG = pos_trim(POS_TAG)
+        POS_DESC = pos_trim(POS_DESC)
+        sub(/^-[ \t]*/, "", POS_DESC)
+        POS_DESC = pos_trim(POS_DESC)
+    }'
+
 # get_pos_desc <tag>
 # Prints the description (possibly empty) and returns 0 if the tag is in the
 # register; returns 1 if it is absent. Membership and description are kept
@@ -82,25 +98,23 @@ _pos_rows() {
 # file the user is looking at.
 get_pos_desc() {
     local out status
-    out=$(_pos_rows | awk -v want="$1" '
-        function trim(x) { gsub(/^[ \t]+|[ \t]+$/, "", x); return x }
+    out=$(_pos_rows | awk -v want="$1" "$_POS_ROW_AWK"'
         BEGIN { found = 0 }
         {
-            t = index($0, "\t")
-            if (t > 0)      { tag = substr($0, 1, t - 1); desc = substr($0, t + 1) }
-            else if (index($0, "-") > 0) {
-                d = index($0, "-")
-                tag = substr($0, 1, d - 1); desc = substr($0, d + 1)
-            }
-            else            { tag = $0; desc = "" }
-            desc = trim(desc)
-            sub(/^-[ \t]*/, "", desc)
-            if (tolower(trim(tag)) == tolower(want)) { print trim(desc); found = 1; exit }
+            pos_row($0)
+            if (tolower(POS_TAG) == tolower(want)) { print POS_DESC; found = 1; exit }
         }
         END { if (!found) exit 1 }')
     status=$?
     [[ -n "$out" ]] && printf '%s\n' "$out"
     return $status
+}
+
+# _pos_tags -> every registered tag, lowercased, one per line. For callers
+# that check many tags at once (etym-lint loads it into an awk array once per
+# run) rather than spawning get_pos_desc per tag.
+_pos_tags() {
+    _pos_rows | awk "$_POS_ROW_AWK"'{ pos_row($0); if (POS_TAG != "") print tolower(POS_TAG) }'
 }
 
 # pos_is_registered <tag> -> status only.

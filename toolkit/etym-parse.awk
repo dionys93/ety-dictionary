@@ -33,8 +33,10 @@
 #       EVERYTHING ELSE:
 #         { "forms": [tokens] }   or   {} when there are none
 #
-#     "etymology":  [{form, lang}],
-#     "sources":    string[]
+#     "etymology":   [{form, lang}],
+#     "sources":     string[],
+#     "source_file": string    the stanza's file, relative to $DICT_DIR when
+#                              it lies under it (a/animate.txt), else as given
 #   }
 #
 # Conjugation classes handled:
@@ -50,6 +52,13 @@
 
 BEGIN {
     RS = ""; FS = "\n"
+
+    # A language tag: words of letters or digits in brackets, joined by single
+    # spaces or hyphens — [OE], [Apalachee], [Taíno], [Greenland Eskimo],
+    # [Anglo-Irish]. No other punctuation, so [a.b] and [Old, English] are
+    # not tags. etym-lib.sh's _ETYM_LINE_AWK holds the same definition, which
+    # etym-lint and etym-langs use; change both together.
+    TAG = "\\[[^[:punct:][:space:][:cntrl:]]+([ -][^[:punct:][:space:][:cntrl:]]+)*\\]"
 
     # Ordinal lookup for JSON control-character escaping (see esc()).
     for (i = 1; i < 32; i++) ORD[sprintf("%c", i)] = i
@@ -130,13 +139,13 @@ function parse_stanza_lines(num_fields,    i, line, lang, form) {
             reformed = line
         } else {
             lang = ""
-            # POSIX equivalent of gawk's match(line, /\[([A-Z]+)\]/, m):
-            # locate the bracketed tag, then peel the brackets off by position.
-            if (match(line, /\[[A-Z]+\]/)) {
+            # POSIX equivalent of gawk's match(line, TAG, m): locate the
+            # first tag, then peel the brackets off by position.
+            if (match(line, TAG)) {
                 lang = substr(line, RSTART + 1, RLENGTH - 2)
             }
             form = line
-            gsub(/\[[A-Z]+\]/, "", form)
+            gsub(TAG, "", form)
             gsub(/^[ \t]+|[ \t]+$/, "", form)
             if (form != "") {
                 n_etym++
@@ -204,6 +213,20 @@ function resolve_me_word(num_etym,    i, me_word, mw) {
     sub(/^[tT][oO][ \t]+/, "", me_word)
     split(me_word, mw, /[ \t,]+/)
     return mw[1]
+}
+
+# source_file: FILENAME relative to $DICT_DIR, so the dataset does not embed
+# whichever machine built it. ENVIRON rather than -v, which would mangle
+# backslashes. etym-lint reads paths through an identical rel_path(), so its
+# findings and the parser's records name a file the same way.
+function rel_path(f,    root) {
+    root = ENVIRON["DICT_DIR"]
+    sub(/\/+$/, "", root)
+    if (root != "" && index(f, root "/") == 1) {
+        f = substr(f, length(root) + 2)
+        sub(/^\/+/, "", f)
+    }
+    return f
 }
 
 # =============================================================================
@@ -367,6 +390,7 @@ function build_sources_json(num_src,    json, i) {
 
 {
     # --- Step A: Parse raw lines ---
+    if (FILENAME != src_name) { src_name = FILENAME; src_rel = esc(rel_path(FILENAME)) }
     parse_stanza_lines(NF)
     if (reformed == "") next
 
@@ -386,5 +410,5 @@ function build_sources_json(num_src,    json, i) {
     src_json  = build_sources_json(n_src)
 
     # --- Step D: Emit ---
-    printf "{\"me_word\":\"%s\",\"inglisce_word\":\"%s\",\"pos\":\"%s\",\"conjugations\":%s,\"etymology\":%s,\"sources\":%s}\n", esc(me_word), esc(inglisce_word), esc(pos_tag), conj_json, etym_json, src_json
+    printf "{\"me_word\":\"%s\",\"inglisce_word\":\"%s\",\"pos\":\"%s\",\"conjugations\":%s,\"etymology\":%s,\"sources\":%s,\"source_file\":\"%s\"}\n", esc(me_word), esc(inglisce_word), esc(pos_tag), conj_json, etym_json, src_json, src_rel
 }

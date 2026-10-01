@@ -110,7 +110,7 @@ v - verb
 intr v  - intransitive verb
 ```
 
-A tag may contain spaces (`m n`, `def v`) but never a hyphen, which is what makes the dash an unambiguous boundary; the previous whitespace-separated form could not distinguish `def v defective verb` from `defin definite article` without already knowing the answer. Legacy tab-separated rows still parse. Every consumer reads the file through `_pos_rows` / `get_pos_desc` in `env.sh` — nothing greps it directly, because three places once held their own copy of the parsing rule and one of them disagreed.
+A tag may contain spaces (`m n`, `def v`) but never a hyphen, which is what makes the dash an unambiguous boundary; the previous whitespace-separated form could not distinguish `def v defective verb` from `defin definite article` without already knowing the answer. Legacy tab-separated rows still parse. Every consumer reads the file through `_pos_rows` in `env.sh`, and splits a row with the one rule in `_POS_ROW_AWK`, which `get_pos_desc` (one tag) and `_pos_tags` (the whole list, which `etym-lint` loads once per run) share. Nothing greps it directly, because three places once held their own copy of the parsing rule and one of them disagreed.
 
 Note that passing lint does not guarantee a record survives the build: `scripts/build-dictionary.js` keeps its own `posMap`, and `suffix`, `prefix`, `interj`, `obs`, `def v` and `indef` are registered in the TSV but absent from it, so `buildBrain` drops those records regardless.
 
@@ -121,7 +121,7 @@ MD    MDU
 FRK   (Frankish is reconstructed: stop the chain at the oldest attested form)
 ```
 
-A retired tag should not also be registered. `etym-lint` checks every tagged line against both files, and `etym-langs` shows which tags the data actually uses — the evidence for deciding what goes in them.
+A retired tag should not also be registered. Both files are read by `etym-langs` alone, which is the linter for languages: it shows which tags the data actually uses against the official ones, the evidence for deciding what goes in them. `etym-lint` never reads either file.
 
 `ETYM_AWK` overrides which awk runs the parser; `ETYM_LIB_DIR` is recomputed from `BASH_SOURCE` at source time, so its default in `env.sh` is never used.
 
@@ -233,7 +233,7 @@ Both are deleted rather than left stale when a run produces none.
 
 ### Core Engine & Parsing
 * **`etym-parse <file.txt>`**
-  The canonical stanza parser. This is the single source of truth for reading `.txt` entries. It emits one JSONL record per stanza to standard output, handling complex verb conjugations, irregular plurals, and nested etymologies. `conjugations` is always a named JSON object (never a raw array). Stanzas it cannot classify safely produce a stderr warning rather than a silent guess.
+  The canonical stanza parser. This is the single source of truth for reading `.txt` entries. It emits one JSONL record per stanza to standard output, handling complex verb conjugations, irregular plurals, and nested etymologies. `conjugations` is always a named JSON object (never a raw array). `source_file` names the stanza's file relative to `$DICT_DIR` (`a/animate.txt`), so the dataset never embeds the path of the machine that built it. Stanzas it cannot classify safely produce a stderr warning rather than a silent guess.
 
 ### Browsing & Lookup
 * **`etym-cat <word>`**
@@ -332,28 +332,28 @@ These three read the **whole `[ME]` line**, not the parser's `me_word`, so they 
 
 ### File Management & Auditing
 * **`etym-langs [path] [--json]`**
-  A census of the language tags in use: each tag with its count, whether it is registered, retired (and to what), or neither, its registered name, and example lines for every unofficial one. Then the lines the parser cannot read a language from at all: names in brackets (`tomatl [Nahuatl]`) and chain lines with no tag (`τριάς`). The examples matter: the same tag is sometimes used for different languages, and the same language under different tags, so deciding the official set is a judgement the census only makes quick.
-* **`etym-lint [path] [--strict]`**
-  Scans the dictionary for formatting errors and returns exit code 1 if any `[FATAL]` or `[ERROR]` is found. Checks:
-  * `[FATAL]` empty files
-  * `[ERROR]` missing or malformed language tag `[]`, and a language tag sharing a line with a POS tag
+  The linter for languages, and a collector rather than a gate. A census of the language tags in use: each tag with its count, whether it is registered, retired (and to what), or neither, its registered name, and example lines for every unofficial one. Then the lines the parser cannot read a language from at all: bracketed text that is not a tag (`duitisc [Old High German]`) and chain lines with no tag (`τριάς`). The examples matter: the same tag is sometimes used for different languages, and the same language under different tags, so deciding the official set is a judgement the census only makes quick. A chain line here means exactly what it means to `etym-lint`.
+* **`etym-lint [path] [--since <ref>] [--report[=json|tsv]]`**
+  Checks the dictionary's format. Exits 1 if any `[FATAL]` or `[ERROR]` is found, 2 on bad usage. Checks:
+  * `[FATAL]` a file with no stanzas: zero bytes, or blank lines only
+  * `[ERROR]` `lang-tag`: every stanza needs at least one line before its reformed line, and every such line needs a language tag. A tag is letters or digits in brackets — `[OE]`, `[Apalachee]`, `[Taíno]` — with no spaces or punctuation, so `[M L]` and `[Old High German]` are not tags. A line takes one tag, wherever it sits: `etym-parse` reads only the first, so a second language would vanish. Without a tag `etym-parse` records an empty `lang`; without any line before the reformed line it has nothing to take `me_word` from, writes it empty, and `buildBrain` drops the record silently. Lines after the reformed line, and URLs, need no tag. When a stanza has lost its `(pos)` tag, its conjugation line stands in as the reformed line.
+  * `[ERROR]` a language tag sharing a line with a `(pos)` tag
   * `[ERROR]` a stanza whose conjugation line has no `(pos)` tag — silently dropped by `etym-parse`
   * `[ERROR]` a stanza with no reformed line and no etymology either — malformed rather than unfinished
   * `[ERROR]` a `(pos)` tag that is not at the end of its reformed line — `etym-parse` records an empty `pos`
   * `[ERROR]` source URLs separated from their stanza by a blank line — `etym-parse` reads paragraphs, so those sources are dropped
-  * `[WARN]` trailing whitespace, stanzas with no resolvable language tag, and POS tags absent from `parts-of-speech.tsv` (these records are otherwise silently skipped by `buildBrain`)
+  * `[WARN]` trailing whitespace, and POS tags absent from `parts-of-speech.tsv`
   * `[WARN]` a stanza carrying etymology but no reformed line — a word not yet reformed. It warns rather than errors, because it is ordinary work in progress, but it warns at all because `etym-parse` drops the stanza and it reaches no dataset.
-  * `[WARN]` language tags, checked line by line:
-    * a tag missing from `languages.tsv`
-    * a retired tag from `language-aliases.tsv`, with its replacement or the reason it is retired
-    * a language written as a name in brackets (`[Nahuatl]`)
-    * a chain line with no tag at all
 
-    For the last two, `etym-parse` records an empty `lang`. A reformed conjugation line (`to eite -s éit eiten -ing`) is not a chain line and is never flagged.
+  `lang-tag` is the whole of what `etym-lint` says about languages. Whether a tag is official, retired, or a name that should have been a tag is reported by `etym-langs`. (`--strict`, which once turned language warnings into errors, is retired: `lang-tag` is always an error.)
 
-  Also generates a verb conjugation coverage report highlighting non-standard stanzas. **`--strict` turns the language-tag warnings into errors**, so the run exits 1 while any remain. They are warnings by default because the register is still being settled.
+  **`--since <ref>`** lints only files that differ from `<ref>` in the working tree, plus untracked files, so new writing is held to the full standard while the backlog is worked separately. A range (`A..B`) compares two commits and ignores untracked files. Cross-file rules still read the whole corpus; only what is reported is scoped. As a pre-commit hook: `etym-lint --since HEAD`. It lints the working tree, not the staged copy.
 
-  **The language check reads every line.** The older "no resolvable language tag" check looks only at the last `[ME]`/`[MI]` line of a stanza, so an untagged or name-tagged line further up a chain passes it; the built dataset held 71 such lines when this was added. Both checks remain; the new one says which line and why.
+  **`--report`** prints machine-readable output instead of the report, and is the way to answer "how bad is X right now". `--report` (or `--report=json`) gives totals, then each rule with its severity, finding count and files, then verb coverage. `--report=tsv` gives one row per finding: `file  stanza  severity  rule  message`. Stanza `0` means the whole file. Counts are findings, one per stanza or line, not one per file.
+
+  Also generates a verb conjugation coverage report listing non-standard stanzas. Every verb tag counts, alone or in a list: `v`, `tr v`, `intr v`, `irv`, `tr irv`, `intr irv`, `def v`, `modal`, `aux`.
+
+  **How it runs.** Three stages, each one process however many files there are. The format pass is one awk over the raw text. The corpus pass is one `etym-parse` stream, flattened by `jq` and read by one awk that holds an index of every stanza by headword, which is where cross-file rules live. Each record's `source_file` says where its findings belong. A formatter merges both passes, sorted by file and stanza. If the corpus pass cannot run (no `jq`, or a failing parser) that is reported as a `[FATAL]`, never as a clean result.
 
   **POS tag validation uses `etym-parse`'s own regexes**, so lint and parser cannot disagree about what a valid tag looks like. The check this replaced kept a second dialect of them — `\([a-z ]{1,5}(, [a-z ]{1,5})*\)` — which capped every tag at five characters and so rejected `(interj)`, `(suffix)`, `(prefix)` and `(intr v)`, all of which the parser accepts and all of which are registered. Being file-level rather than per-stanza, it also passed a file whenever any one stanza carried a valid tag, so it only ever surfaced on single-stanza files. Shape is settled by the parser's regex; membership is settled by `parts-of-speech.tsv`. Those are the only two authorities and neither restates the other — which is what keeps a bug like that from recurring.
 
@@ -381,11 +381,13 @@ bash toolkit/tests/test-etym-parse.sh   # parser suite with ZERO npm dependencie
 
 * **Golden files** — every fixture in `tests/fixtures/parser/` (real dictionary entries covering all conjugation classes, hostile escaping cases, and multi-stanza files) is byte-compared against its frozen output in `tests/snapshots/parser/`. To refreeze after an intentional parser or fixture change:
   ```bash
-  find tests/fixtures/parser -name '*.txt' | sort | while read f; do
-    rel="${f#tests/fixtures/parser/}"
+  export DICT_DIR="$PWD/tests/fixtures/parser"   # source_file is relative to it
+  find "$DICT_DIR" -name '*.txt' | sort | while read f; do
+    rel="${f#$DICT_DIR/}"
     awk -f etym-parse.awk "$f" > "tests/snapshots/parser/$(echo "${rel%.txt}" | tr '/' '_').jsonl"
   done
   ```
+  Both golden suites pin `DICT_DIR` to the fixture root themselves, so the goldens hold `c/claw.txt` rather than a machine's absolute path.
 * **Schema contract** — `tests/node/brain-contract.assertions.mjs` pipes the frozen goldens through the real `buildBrain()` and asserts on the compiled brain, catching any drift between the awk parser and its Node consumers. It runs both under Vitest and standalone (`node tests/node/brain-contract.assertions.mjs`).
 * **Property & fuzz** — `resolveForm`'s silent-ending rules are exercised across hundreds of seeded generated roots, and random hostile strings are round-tripped through the parser's JSON escaping. Seeds are fixed, so failures always reproduce.
 * **Drop accounting** — the parser test asserts that *only* explicitly registered stanzas are ever skipped, so silent data loss in fixtures is impossible.

@@ -356,7 +356,7 @@ _etym_me_rows() {
                 gsub(/\r/, "", line)
                 if (line == "" || line ~ /^http/) continue
                 if (line ~ /\([a-z]/ && line !~ /\[[A-Z]/) { reformed = line; continue }
-                if (match(line, /\[[A-Z]+\]/))
+                if (match(line, /\[[^[:punct:][:space:][:cntrl:]]+([ -][^[:punct:][:space:][:cntrl:]]+)*\]/))
                     langs = langs (langs == "" ? "" : " ") substr(line, RSTART + 1, RLENGTH - 2)
                 if (me == "" && match(line, /\[ME\]/))
                     me = trim(substr(line, 1, RSTART - 1))
@@ -1580,17 +1580,15 @@ etym-create-histories() {
 #     AG    GK
 #     FRK   (Frankish is reconstructed: stop the chain at the oldest attested form)
 #
-# etym-lint checks every tagged line against both; etym-langs shows what the
-# data actually uses, which is the evidence for deciding what goes in them.
+# etym-langs checks every tag against both and shows what the data actually
+# uses, which is the evidence for deciding what goes in them.
 #
-# Three things the parser cannot read as a language, and so records as an
-# empty lang, are reported by both:
-#   - a name in brackets instead of a tag:   tomatl [Nahuatl]
+# Two things the parser cannot read as a language, and so records as an
+# empty lang, are reported by etym-langs and gated by etym-lint:
+#   - bracketed text that is not a tag:      foo [Old, English]
 #   - a chain line with no bracket at all:   τριάς
-#   - (for completeness) an unregistered tag, which parses but is unofficial
 # A reformed conjugation line ("to eite -s éit eiten -ing") is not a chain
-# line and is never flagged; the test for it is the one etym-lint already
-# uses to recognise conjugation lines.
+# line and is never flagged; both use is_conj_line() from _ETYM_LINE_AWK.
 
 # Registered tags, one per line.
 _etym_lang_register() {
@@ -1610,43 +1608,90 @@ _etym_lang_aliases() {
           }'
 }
 
-# The per-line classification both etym-langs and etym-lint use. Reads the
-# register and aliases from the environment (LANG_REG, LANG_ALIASES) so that
-# nothing in them is mangled by awk -v escape processing.
+# Line tests shared by etym-langs and etym-lint, prepended to their awk
+# programs. One copy, so the census and the gate cannot disagree about what a
+# chain line is. The reformed-line test is etym-parse.awk's own (see
+# parse_stanza_lines); the parser keeps its copy because it must stay a
+# standalone file.
 #
-# Emits one TAB-separated row per finding:
+#   is_reformed(line)   the line the parser takes as the reformed spelling
+#   is_conj_line(line)  a reformed conjugation line ("to eite -s éit eiten
+#                       -ing")
+#   reform_index()      field number of the current stanza's reformed line:
+#                       its last (pos) line; failing that its last untagged
+#                       conjugation line, which is a reformed line that lost
+#                       its tag; failing both, 0 (a stanza not yet reformed)
+#   is_chain(i)         field i is a line BEFORE the reformed line (every
+#                       non-URL line when there is none). Every chain line
+#                       needs a language tag. Call reform_index() first;
+#                       it sets RFX
+#   TAG                 a language tag: words of letters or digits in
+#                       brackets, joined by single spaces or hyphens — [OE],
+#                       [Apalachee], [Greenland Eskimo], [Anglo-Irish]. No
+#                       other punctuation. etym-parse.awk holds the same
+#                       definition; change both together
+#   lang_line(line)     fills LT[1..LT_n] with the tags on a line, brackets
+#                       stripped, and LN[1..LN_n] with bracketed text that is
+#                       not a tag ([a.b])
+#   rel_path(f)         f relative to $DICT_DIR, exactly as etym-parse.awk
+#                       writes source_file
+_ETYM_LINE_AWK='
+    BEGIN { TAG = "\\[[^[:punct:][:space:][:cntrl:]]+([ -][^[:punct:][:space:][:cntrl:]]+)*\\]"; TAG_ONLY = "^" TAG "$" }
+    function is_reformed(line)  { return (line ~ /\([a-z]/ && line !~ /\[[A-Z]/) }
+    function is_conj_line(line) { return (line ~ /(^| )-[a-z]+/ || line ~ /\(s( |$)/) }
+    function reform_index(    i, line, r, c) {
+        r = 0; c = 0
+        for (i = 1; i <= NF; i++) {
+            line = $i; gsub(/\r/, "", line)
+            if (line == "" || line ~ /^http/) continue
+            if (is_reformed(line)) r = i
+            else if (line !~ TAG && is_conj_line(line)) c = i
+        }
+        RFX = r ? r : c
+        return RFX
+    }
+    function is_chain(i,    line) {
+        line = $i; gsub(/\r/, "", line)
+        if (line == "" || line ~ /^http/ || is_reformed(line)) return 0
+        return (RFX == 0 || i < RFX)
+    }
+    function lang_line(line,    rest, b) {
+        LT_n = 0; LN_n = 0
+        rest = line
+        while (match(rest, /\[[^]\[]*\]/)) {
+            b = substr(rest, RSTART, RLENGTH)
+            if (b ~ TAG_ONLY) LT[++LT_n] = substr(b, 2, length(b) - 2)
+            else              LN[++LN_n] = b
+            rest = substr(rest, RSTART + RLENGTH)
+        }
+        return LT_n + LN_n
+    }
+    function rel_path(f,    root) {
+        root = ENVIRON["DICT_DIR"]
+        sub(/\/+$/, "", root)
+        if (root != "" && index(f, root "/") == 1) {
+            f = substr(f, length(root) + 2)
+            sub(/^\/+/, "", f)
+        }
+        return f
+    }
+'
+
+# The census etym-langs runs. Emits one TAB-separated row per finding:
 #   tag      <TAG> <file> <stanza> <line>     every tag, registered or not
 #   named    <[Name]> <file> <stanza> <line>
 #   untagged -     <file> <stanza> <line>
 _ETYM_LANG_SCAN='
-    BEGIN {
-        RS = ""; FS = "\n"
-        n = split(ENVIRON["LANG_REG"], r_, "\n")
-        for (i = 1; i <= n; i++) if (r_[i] != "") reg[r_[i]] = 1
-    }
+    BEGIN { RS = ""; FS = "\n" }
     {
+        reform_index()
         for (i = 1; i <= NF; i++) {
             line = $i; gsub(/\r/, "", line)
-            if (line == "" || line ~ /^http/) continue
-            # Reformed line: same test as the parser.
-            if (line ~ /\([a-z]/ && line !~ /\[[A-Z]/) continue
-
-            found = 0
-            rest = line
-            while (match(rest, /\[[A-Z]+\]/)) {
-                t = substr(rest, RSTART + 1, RLENGTH - 2)
-                printf "tag\t%s\t%s\t%d\t%s\n", t, FILENAME, FNR, line
-                rest = substr(rest, RSTART + RLENGTH); found = 1
-            }
-            rest = line
-            while (match(rest, /\[[A-Z][^]\[]*[a-z][^]\[]*\]/)) {
-                printf "named\t%s\t%s\t%d\t%s\n", substr(rest, RSTART, RLENGTH), FILENAME, FNR, line
-                rest = substr(rest, RSTART + RLENGTH); found = 1
-            }
-            if (found) continue
-            # A reformed conjugation line, recognised as etym-lint does.
-            if (line ~ /(^| )-[a-z]+/ || line ~ /\(s( |$)/) continue
-            printf "untagged\t-\t%s\t%d\t%s\n", FILENAME, FNR, line
+            if (line == "" || line ~ /^http/ || is_reformed(line)) continue
+            lang_line(line)
+            for (k = 1; k <= LT_n; k++) printf "tag\t%s\t%s\t%d\t%s\n", LT[k], FILENAME, FNR, line
+            for (k = 1; k <= LN_n; k++) printf "named\t%s\t%s\t%d\t%s\n", LN[k], FILENAME, FNR, line
+            if (LT_n + LN_n == 0 && is_chain(i)) printf "untagged\t-\t%s\t%d\t%s\n", FILENAME, FNR, line
         }
     }'
 
@@ -1654,13 +1699,19 @@ _ETYM_LANG_SCAN='
 # A census of the language tags in use: each tag with its count, whether it is
 # registered, retired (and to what), or neither, its registered name, and
 # example lines to show what it is actually being used for. Then the lines the
-# parser cannot read a language from at all: names in brackets, and chain
+# parser cannot read a language from at all: bracketed text that is not a
+# tag ([a.b]), and chain
 # lines with no tag.
 #
 # This is the evidence for deciding the official set. The same tag is used
 # for different languages in places (look at the examples), and the same
 # language under different tags, so the decision is yours; the census only
 # makes it quick.
+#
+# etym-langs is the language linter: register membership, retired tags and
+# bracketed text that is not a tag are reported here and nowhere else.
+# etym-lint checks only that each stanza has at least one line before its
+# reformed line, and that every such line carries a tag.
 etym-langs() {
     local target="" json=0
     while [[ $# -gt 0 ]]; do
@@ -1680,7 +1731,7 @@ etym-langs() {
     aliases=$(_etym_lang_aliases)
 
     find "$path" -type f -name '*.txt' -print0 \
-        | LANG_REG="$reg" xargs -0 -r "$_ETYM_AWK" "$_ETYM_LANG_SCAN" \
+        | xargs -0 -r "$_ETYM_AWK" "$_ETYM_LINE_AWK$_ETYM_LANG_SCAN" \
         | LANG_REG="$reg" LANG_ALIASES="$aliases" LANG_FILE="$CONFIG_DIR/languages.tsv" \
           DICT_DIR="$DICT_DIR" JSON="$json" "$_ETYM_AWK" -F'\t' '
         function short(f) { return (index(f, root "/") == 1) ? substr(f, length(root) + 2) : f }
@@ -1758,7 +1809,7 @@ etym-langs() {
                     for (e = 1; e <= ex_n[k]; e++) printf "                 e.g. %s\n", ex[k, e]
             }
             if (ln["named"] > 0) {
-                printf "\nNames in brackets, which the parser does not read as a language:\n"
+                printf "\nBracketed text the parser does not read as a tag (punctuation inside):\n"
                 for (a = 1; a <= ln["named"]; a++) {
                     t = list["named", a]; k = "named" SUBSEP t
                     printf "%7d  %s   e.g. %s\n", count[k], t, ex[k, 1]
@@ -1774,298 +1825,479 @@ etym-langs() {
 }
 
 
-# etym-lint [path] [--strict]
-# Validates .txt file formatting across the dictionary.
-# Language tags are checked line by line against config/languages.tsv and
-# config/language-aliases.tsv (see etym-langs). Those findings are warnings;
-# --strict makes them errors.
+# =============================================================================
+# etym-lint
+# =============================================================================
+# Three stages, each ONE process however many files there are:
+#
+#   1. Format pass  — one awk over the raw .txt files (_ETYM_LINT_AWK).
+#                     Everything that needs the text as written: empty files,
+#                     tags, whitespace, stanza shape, POS registration, and
+#                     a language tag on every line before the reformed line.
+#                     Which tags are official is etym-langs' business.
+#   2. Corpus pass  — one etym-parse stream, projected by jq, read by one awk
+#                     (_ETYM_LINT_CORPUS_AWK). Everything that needs parsed
+#                     records or the whole corpus at once: the headword index
+#                     cross-file rules use, and verb conjugation coverage.
+#   3. Report       — the two passes' findings are merged, sorted by file and
+#                     stanza, and rendered by one awk (_ETYM_LINT_REPORT_AWK)
+#                     as the human report, JSON or TSV.
+#
+# A finding is one TAB-separated row:
+#     <file>  <stanza>  <FATAL|ERROR|WARN>  <rule>  <message>
+# <file> is relative to $DICT_DIR (as source_file is), <stanza> is the
+# paragraph number, and 0 means the finding belongs to the whole file. Both
+# passes emit this shape, which is what lets cross-file findings interleave
+# with per-file ones.
+
+# Stage 1. Reads POS_TAGS (newline list, lowercased) from ENVIRON.
+_ETYM_LINT_AWK='
+    BEGIN {
+        RS = ""; FS = "\n"
+        n = split(ENVIRON["POS_TAGS"], p_, "\n")
+        for (i = 1; i <= n; i++) if (p_[i] != "") pos_reg[p_[i]] = 1
+    }
+    function emit(stanza, sev, rule, msg) {
+        gsub(/\t/, " ", msg)
+        printf "%s\t%d\t%s\t%s\t%s\n", cur_rel, stanza, sev, rule, msg
+    }
+    function begin_file() {
+        cur = FILENAME; cur_rel = rel_path(cur); seen[cur] = 1
+        ws = 0; n_unk = 0
+        for (k in unk) delete unk[k]
+    }
+    function end_file(    i, j, t, list) {
+        if (ws)
+            emit(0, "WARN", "trailing-ws", "Trailing whitespace on one or more lines.")
+        if (n_unk > 0) {
+            for (i = 2; i <= n_unk; i++)            # insertion sort; tiny sets
+                for (j = i; j > 1 && unk_o[j - 1] > unk_o[j]; j--) {
+                    t = unk_o[j]; unk_o[j] = unk_o[j - 1]; unk_o[j - 1] = t
+                }
+            list = ""
+            for (i = 1; i <= n_unk; i++) list = list (i > 1 ? " " : "") "\047" unk_o[i] "\047"
+            emit(0, "WARN", "unknown-pos", "Unknown POS tag(s): " list " — not in parts-of-speech.tsv.")
+        }
+    }
+    # Every comma-separated tag must be in config/parts-of-speech.tsv.
+    # Passing this does not guarantee the record survives the build:
+    # build-dictionary.js keeps its own posMap and drops suffix, prefix,
+    # interj, obs, def v and indef regardless.
+    function check_pos(tag_str,    n, parts, i, t) {
+        n = split(tag_str, parts, /,/)
+        for (i = 1; i <= n; i++) {
+            t = parts[i]; gsub(/^[ \t]+|[ \t]+$/, "", t)
+            if (t == "" || (tolower(t) in pos_reg) || (t in unk)) continue
+            unk[t] = 1; unk_o[++n_unk] = t
+        }
+    }
+    {
+        if (FILENAME != cur) { if (cur != "") end_file(); begin_file() }
+
+        reformed = ""; conj_shape = 0; body = 0; urls = 0; langs = 0; same_line = 0
+        n_chain = 0
+        reform_index()
+
+        for (i = 1; i <= NF; i++) {
+            line = $i
+            if (line ~ /[[:space:]]$/) ws = 1
+            gsub(/\r/, "", line)
+            if (line == "") continue
+
+            if (line !~ /http/) {
+                if (line ~ (TAG ".*\\(") || line ~ ("\\(.*" TAG)) same_line = 1
+            }
+            if (line ~ /^http/) { urls++; continue }
+            body++
+
+            # One language tag per line. The parser reads only the first and
+            # strips the rest, so a second language would vanish silently.
+            if (lang_line(line) > 0 && LT_n > 1) {
+                tags = ""
+                for (k = 1; k <= LT_n; k++) tags = tags (k > 1 ? " " : "") "[" LT[k] "]"
+                emit(FNR, "ERROR", "lang-tag", "\047" line "\047 — " LT_n " language tags (" tags "); a line takes one. Give each language its own line.")
+            }
+            if (line ~ TAG) langs++
+
+            # POS shape is etym-parse extract_pos() regex; membership is
+            # the register. Neither restates the other.
+            if (line !~ /\[[A-Z]/ && match(line, /\([a-z][a-z ,]*\)[ \t]*$/)) {
+                tag_str = substr(line, RSTART + 1); sub(/\).*$/, "", tag_str)
+                check_pos(tag_str)
+            }
+
+            if (is_reformed(line)) { reformed = line; continue }
+            if (line !~ TAG && is_conj_line(line)) conj_shape = 1
+
+            # Every line before the reformed line needs a language tag:
+            # words in brackets, and there must be at least one
+            # such line (checked below). Whether the tag is official is for
+            # etym-langs.
+            if (is_chain(i)) n_chain++
+            if (is_chain(i) && line !~ TAG) {
+                if (match(line, /\[[^]\[]*\]/))
+                    emit(FNR, "ERROR", "lang-tag", "\047" line "\047 — " substr(line, RSTART, RLENGTH) " is not a language tag; a tag is words of letters or digits in brackets, joined by single spaces or hyphens, like [OE], [Greenland Eskimo] or [Anglo-Irish].")
+                else
+                    emit(FNR, "ERROR", "lang-tag", "\047" line "\047 — no language tag; every line before the reformed line needs one.")
+            }
+        }
+
+        # At least one tagged line before the reformed line. Without one the
+        # parser has nothing to take me_word from, writes it empty, and
+        # buildBrain drops the record with no message.
+        if (RFX > 0 && n_chain == 0)
+            emit(FNR, "ERROR", "lang-tag", "nothing before the reformed line; every stanza needs at least one line with a language tag.")
+
+        if (same_line)
+            emit(FNR, "ERROR", "lang-pos-line", "language tag \047[]\047 and POS tag \047()\047 share a line; they must be on separate lines.")
+
+        # A paragraph of nothing but URLs: a blank line was left between a
+        # stanza and its sources, and etym-parse reads paragraphs.
+        if (body == 0 && urls > 0)
+            emit(FNR, "ERROR", "orphan-sources", "source URLs separated from their stanza by a blank line — etym-parse reads paragraphs, so these sources are dropped.")
+        # No reformed line: only two of the three cases are mistakes. A stanza
+        # with etymology and no reformed spelling is a word not yet reformed
+        # (tests/fixtures/parser/u/unreformed.txt), so it warns, not errors;
+        # but it warns, because the parser drops it.
+        else if (reformed == "") {
+            if (conj_shape)
+                emit(FNR, "ERROR", "conj-no-pos", "conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.")
+            else if (langs > 0)
+                emit(FNR, "WARN", "unreformed", "no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.")
+            else
+                emit(FNR, "ERROR", "no-reformed", "no reformed line carrying a (pos) tag — stanza is silently dropped by etym-parse.")
+        } else {
+            # Same POS test as extract_pos(): anchored at end of line.
+            if (reformed !~ /\([a-z][a-z ,]*\)[ \t]*$/)
+                emit(FNR, "ERROR", "pos-not-final", "(pos) tag is not at the end of the reformed line — etym-parse records an empty pos.")
+        }
+    }
+    END {
+        if (cur != "") end_file()
+        # A file yielding no paragraphs at all (zero bytes, or blank lines
+        # only) never reaches the main block.
+        for (i = 1; i < ARGC; i++) {
+            if (ARGV[i] == "" || (ARGV[i] in seen)) continue
+            cur_rel = rel_path(ARGV[i])
+            emit(0, "FATAL", "empty", "File is empty.")
+        }
+    }'
+
+# Stage 2a. Projects each parsed record to one TSV row for the corpus awk.
+# jq does no reasoning here, only flattening; the rules live in awk.
+#   1 source_file  2 me_word  3 inglisce_word  4 pos  5 conjugation kind
+#   6 present  7 third_singular  8 past  9 participle  10 gerund
+#   11 explicit or listed forms, space-joined
+_ETYM_LINT_PROJECT_JQ='
+    .conjugations as $c
+    | [ .source_file, .me_word, .inglisce_word, .pos,
+        ( if   ($c | has("explicit"))       then "explicit"
+          elif ($c | has("third_singular")) then "slot"
+          elif ($c | has("forms"))          then "forms"
+          elif ($c | has("plural"))         then "noun"
+          else "none" end ),
+        ($c.present // ""), ($c.third_singular // ""), ($c.past // ""),
+        ($c.participle // ""), ($c.gerund // ""),
+        ( if   ($c | has("explicit")) then ($c.explicit | [.[]] | join(" "))
+          elif ($c | has("forms"))    then ($c.forms | join(" "))
+          else "" end )
+      ] | @tsv'
+
+# Stage 2b. Reads the projection. SCOPE_FILE (optional, newline list of
+# paths) limits what is REPORTED; the index always covers the whole corpus,
+# so a changed file is still checked against files that did not change.
+# VERB_OUT receives one row per verb stanza in scope:
+#     <standard|nonstandard>  <file>  <inglisce word>  <forms>
+_ETYM_LINT_CORPUS_AWK='
+    BEGIN {
+        FS = "\t"
+        sf = ENVIRON["SCOPE_FILE"]
+        if (sf != "") {
+            scoped = 1
+            while ((getline f < sf) > 0) in_scope[rel_path(f)] = 1
+            close(sf)
+        }
+        vo = ENVIRON["VERB_OUT"]
+        # Every verb tag in the register, alone or in a list like "aux, irv".
+        n = split("v|tr v|intr v|irv|tr irv|intr irv|def v|modal|aux", v_, "|")
+        for (i = 1; i <= n; i++) verb_tag[v_[i]] = 1
+    }
+    function in_report(file) { return !scoped || (file in in_scope) }
+    # Cross-file rules call this rather than printf, so --since scoping holds.
+    function finding(file, stanza, sev, rule, msg) {
+        if (!in_report(file)) return
+        gsub(/\t/, " ", msg)
+        printf "%s\t%d\t%s\t%s\t%s\n", file, stanza, sev, rule, msg
+    }
+    function is_verb(pos,    n, parts, i, t) {
+        n = split(pos, parts, /,/)
+        for (i = 1; i <= n; i++) {
+            t = parts[i]; gsub(/^[ \t]+|[ \t]+$/, "", t)
+            if (tolower(t) in verb_tag) return 1
+        }
+        return 0
+    }
+    function joined(a, b, c, d, e,    s) {
+        s = ""
+        if (a != "") s = a
+        if (b != "") s = s (s != "" ? " " : "") b
+        if (c != "") s = s (s != "" ? " " : "") c
+        if (d != "") s = s (s != "" ? " " : "") d
+        if (e != "") s = s (s != "" ? " " : "") e
+        return s
+    }
+    {
+        file = $1
+
+        # The headword index: every stanza in the corpus, keyed on me_word.
+        hw = $2
+        k = ++hw_n[hw]
+        hw_file[hw, k] = file; hw_pos[hw, k] = $4; hw_ing[hw, k] = $3
+
+        if (in_report(file) && is_verb($4)) {
+            if ($5 == "slot") {
+                std = ($7 == "-s" && ($8 == "-d" || $8 == "-ed") && $10 == "-ing")
+                forms = ($6 != "") ? joined($6, $7, $8, $9, $10) \
+                                   : joined($7, $8, ($9 != $8 ? $9 : ""), $10, "")
+            } else {
+                std = 0
+                forms = ($11 != "") ? $11 : "(no conjugations)"
+            }
+            printf "%s\t%s\t%s\t%s\n", (std ? "standard" : "nonstandard"), file, $3, forms > vo
+        }
+    }
+    # Cross-file rules go here. They see the whole corpus through hw_n[],
+    # hw_file[hw, i], hw_pos[hw, i] and hw_ing[hw, i], and report through
+    # finding(), with stanza 0 since parsed records carry no stanza number.
+    function cross_file_rules() { }
+    END { cross_file_rules() }'
+
+# Stage 3. Reads the sorted findings. MODE is human, json or tsv. Exits 1
+# when any FATAL or ERROR was found, which is etym-lint's exit status.
+_ETYM_LINT_REPORT_AWK='
+    function jstr(s) { gsub(/\\/, "\\\\", s); gsub(/"/, "\\\"", s); gsub(/\t/, " ", s); return "\"" s "\"" }
+    function color(sev) { return sev == "WARN" ? "\033[33m" : "\033[31m" }
+    function badge(sev) { return color(sev) "[" sev "]\033[0m" (sev == "WARN" ? " " : "") }
+    function flush_file(    g, label, list, n) {
+        if (cur == "") return
+        printf "📝 \033[1m%s\033[0m\n", cur
+        for (g = 1; g <= ng; g++) {
+            n = gn[g]
+            if (gs[g, 1] == 0) { printf "   %s %s\n", badge(gsev[g]), gmsg[g]; continue }
+            label = (grule[g] == "orphan-sources") ? "Block" : "Stanza"
+            list = gs[g, 1]
+            for (i = 2; i <= n; i++) list = list " " gs[g, i]
+            printf "   %s %s%s %s: %s\n", badge(gsev[g]), label, (n > 1 ? "s" : ""), list, gmsg[g]
+        }
+        print ""
+    }
+    BEGIN {
+        FS = "\t"; mode = ENVIRON["MODE"]
+        if (mode == "tsv") print "file\tstanza\tseverity\trule\tmessage"
+        if (mode == "human") {
+            printf "Linting: %s", ENVIRON["TARGET"]
+            if (ENVIRON["SINCE"] != "") printf " (files changed since %s)", ENVIRON["SINCE"]
+            printf "\n=================================================================\n"
+        }
+    }
+    {
+        file = $1; stanza = $2; sev = $3; rule = $4; msg = $5
+        if (sev == "FATAL") fatals++; else if (sev == "ERROR") errors++; else warns++
+
+        if (!(rule in r_count)) { r_order[++nr] = rule; r_sev[rule] = sev }
+        r_count[rule]++
+        if (!((rule, file) in r_seen)) { r_seen[rule, file] = 1; r_files[rule, ++r_nf[rule]] = file }
+
+        if (mode == "tsv") { print; next }
+        if (mode != "human") next
+
+        if (file != cur) { flush_file(); cur = file; ng = 0; for (k in gi) delete gi[k] }
+        key = rule SUBSEP msg SUBSEP (stanza == 0 ? "file" : "stanza")
+        if (!(key in gi)) { gi[key] = ++ng; gn[ng] = 0; gsev[ng] = sev; grule[ng] = rule; gmsg[ng] = msg }
+        g = gi[key]; gs[g, ++gn[g]] = stanza
+    }
+    END {
+        # Verb coverage rows, already sorted by file.
+        vf = ENVIRON["VERBS"]
+        while ((getline vl < vf) > 0) {
+            split(vl, v_, "\t")
+            if (v_[1] == "standard") v_std++
+            else { v_non++; vn_file[v_non] = v_[2]; vn_word[v_non] = v_[3]; vn_forms[v_non] = v_[4] }
+        }
+        close(vf)
+        status = (fatals + errors > 0) ? 1 : 0
+
+        if (mode == "tsv") exit status
+
+        if (mode == "json") {
+            # rules, most findings first
+            for (a = 1; a <= nr; a++) for (b = a + 1; b <= nr; b++)
+                if (r_count[r_order[b]] > r_count[r_order[a]]) { t = r_order[a]; r_order[a] = r_order[b]; r_order[b] = t }
+            printf "{\n  \"target\": %s,\n  \"since\": %s,\n", jstr(ENVIRON["TARGET"]), \
+                (ENVIRON["SINCE"] == "" ? "null" : jstr(ENVIRON["SINCE"]))
+            printf "  \"files_scanned\": %d,\n", ENVIRON["TOTAL"]
+            printf "  \"totals\": {\"fatal\": %d, \"error\": %d, \"warn\": %d},\n", fatals, errors, warns
+            printf "  \"rules\": ["
+            for (a = 1; a <= nr; a++) {
+                r = r_order[a]
+                printf "%s\n    {\"rule\": %s, \"severity\": %s, \"findings\": %d, \"file_count\": %d, \"files\": [", \
+                    (a > 1 ? "," : ""), jstr(r), jstr(r_sev[r]), r_count[r], r_nf[r]
+                for (f = 1; f <= r_nf[r]; f++) printf "%s%s", (f > 1 ? ", " : ""), jstr(r_files[r, f])
+                printf "]}"
+            }
+            printf "%s],\n", (nr > 0 ? "\n  " : "")
+            printf "  \"verbs\": {\"standard\": %d, \"nonstandard\": %d, \"nonstandard_stanzas\": [", v_std, v_non
+            for (a = 1; a <= v_non; a++)
+                printf "%s\n    {\"file\": %s, \"word\": %s, \"forms\": %s}", (a > 1 ? "," : ""), \
+                    jstr(vn_file[a]), jstr(vn_word[a]), jstr(vn_forms[a])
+            printf "%s]}\n}\n", (v_non > 0 ? "\n  " : "")
+            exit status
+        }
+
+        flush_file()
+        print "-----------------------------------------------------------------"
+        print "LINTING COMPLETE"
+        print "-----------------------------------------------------------------"
+        printf "Files Scanned:   %d\n", ENVIRON["TOTAL"]
+        printf "Fatal Errors:    \033[31m%d\033[0m\n", fatals
+        printf "Standard Errs:   \033[31m%d\033[0m\n", errors
+        printf "Warnings:        \033[33m%d\033[0m\n", warns
+        print ""
+        print "VERB CONJUGATION COVERAGE"
+        print "-----------------------------------------------------------------"
+        printf "Using -s -d -ing:  %d\n", v_std
+        printf "Non-standard:      %d\n", v_non
+        if (v_non > 0) {
+            print ""
+            print "  Non-standard verb stanzas:"
+            for (a = 1; a <= v_non; a++) printf "    %-30s  %-20s  %s\n", vn_file[a], vn_word[a], vn_forms[a]
+        }
+        print "================================================================="
+        exit status
+    }'
+
+# _etym_lint_changed <target> <ref> <out>
+# Writes a NUL-separated list of the files under <target> that differ from
+# <ref> in the working tree (added, copied, modified, renamed, retyped), plus
+# untracked files, which are new writing too. A range (A..B) compares the two
+# commits and ignores untracked files. Paths are written as <target>/<path>,
+# the same prefix find would give, so both lint passes name them alike.
+_etym_lint_changed() {
+    local target="$1" ref="$2" out="$3" dir spec p
+    if [[ -d "$target" ]]; then dir="$target"; spec="."
+    else dir="$(dirname "$target")"; spec="$(basename "$target")"; fi
+
+    command -v git >/dev/null 2>&1 || { echo "Error: --since needs git." >&2; return 1; }
+    git -C "$dir" rev-parse --is-inside-work-tree >/dev/null 2>&1 \
+        || { echo "Error: '$dir' is not inside a git work tree." >&2; return 1; }
+    if [[ "$ref" != *..* ]] && ! git -C "$dir" rev-parse --verify --quiet "${ref}^{commit}" >/dev/null; then
+        echo "Error: '$ref' is not a commit." >&2; return 1
+    fi
+
+    local raw="$out.raw"
+    git -C "$dir" diff --name-only --relative -z --diff-filter=ACMRT "$ref" -- "$spec" > "$raw" || return 1
+    if [[ "$ref" != *..* ]]; then
+        git -C "$dir" ls-files -z --others --exclude-standard -- "$spec" >> "$raw" || return 1
+    fi
+    : > "$out"
+    while IFS= read -r -d '' p; do
+        if [[ "$spec" == "." ]]; then p="$dir/$p"; else p="$dir/$spec"; fi
+        [[ -f "$p" ]] && printf '%s\0' "$p" >> "$out"
+    done < "$raw"
+    rm -f "$raw"
+}
+
+# _etym_lint_corpus <target> <scope_file|""> <verb_out>
+# Stage 2: one parser stream over the corpus. Prints finding rows. If it
+# cannot run, it says so as a FATAL finding rather than reporting nothing:
+# a gate that skips a pass silently looks exactly like a clean one.
+_etym_lint_corpus() {
+    local target="$1" scope="$2" verb_out="$3"
+    if ! command -v jq >/dev/null 2>&1; then
+        printf '(corpus)\t0\tFATAL\tcorpus-pass\t%s\n' \
+            "jq is not installed, so the corpus pass did not run: no cross-file rules, no verb coverage."
+        return 0
+    fi
+    local proj st
+    proj=$(mktemp) || return 1
+    _etym_stream "$target" | jq -r "$_ETYM_LINT_PROJECT_JQ" > "$proj"
+    st=("${PIPESTATUS[@]}")
+    if (( st[0] != 0 || st[1] != 0 )); then
+        printf '(corpus)\t0\tFATAL\tcorpus-pass\tthe corpus pass failed (parser exit %s, jq exit %s); its rules did not run.\n' \
+            "${st[0]}" "${st[1]}"
+    else
+        SCOPE_FILE="$scope" VERB_OUT="$verb_out" \
+            "$_ETYM_AWK" "$_ETYM_LINE_AWK$_ETYM_LINT_CORPUS_AWK" "$proj"
+    fi
+    rm -f "$proj"
+}
+
+# etym-lint [path] [--since <ref>] [--report[=json|tsv]]
+# Validates the dictionary. Exit 1 on any FATAL or ERROR, 2 on bad usage.
+#
+#   --since <ref>  gate only files changed since <ref> (and untracked ones);
+#                  cross-file rules still see the whole corpus. A pre-commit
+#                  hook is `etym-lint --since HEAD`
+#   --report       machine-readable output instead of the report: JSON
+#                  (default) with counts and files per rule, or TSV with one
+#                  row per finding
 etym-lint() {
-    local strict=0
-    local target_input=""
+    local since="" report="" target_input=""
 
     while [[ "$#" -gt 0 ]]; do
         case $1 in
-            --strict) strict=1; shift ;;
-            *)        [[ -z "$target_input" ]] && target_input="$1"; shift ;;
+            --since)     [[ -n "${2:-}" ]] || { echo "Error: --since needs a git ref." >&2; return 2; }
+                         since="$2"; shift ;;
+            --since=*)   since="${1#--since=}" ;;
+            --report)    report="json" ;;
+            --report=json|--report=tsv) report="${1#--report=}" ;;
+            --report=*)  echo "Error: --report takes json or tsv." >&2; return 2 ;;
+            -h|--help)   echo "Usage: etym-lint [path] [--since <ref>] [--report[=json|tsv]]"; return 0 ;;
+            -*)          echo "Error: unknown option '$1'." >&2; return 2 ;;
+            *)           [[ -z "$target_input" ]] && target_input="$1" ;;
         esac
+        shift
     done
 
     local target_dir
     if   [[ -z "$target_input" ]];             then target_dir="$DICT_DIR"
     elif [[ -e "$DICT_DIR/$target_input" ]];   then target_dir="$DICT_DIR/$target_input"
     else target_dir="$target_input"; fi
+    [[ ! -e "$target_dir" ]] && { echo "Error: '$target_dir' not found." >&2; return 2; }
 
-    [[ ! -e "$target_dir" ]] && { echo "Error: '$target_dir' not found."; return 1; }
+    local tmp
+    tmp=$(mktemp -d) || return 2
+    local list="$tmp/files" scope="" verbs="$tmp/verbs" rows="$tmp/rows" tab=$'\t'
+    : > "$verbs"
 
-    echo "Linting: $target_dir"
-    echo "================================================================="
+    if [[ -n "$since" ]]; then
+        _etym_lint_changed "$target_dir" "$since" "$list" || { rm -rf "$tmp"; return 2; }
+        scope="$tmp/scope"
+        tr '\0' '\n' < "$list" > "$scope"
+    else
+        find "$target_dir" -type f -print0 > "$list"
+    fi
+    local total
+    total=$(tr -cd '\0' < "$list" | wc -c | tr -d ' ')
 
-    local total=0 fatals=0 errors=0 warns=0
-
-    # Language register and retired tags, read once. See etym-langs.
-    local lang_reg lang_aliases
-    lang_reg=$(_etym_lang_register)
-    lang_aliases=$(_etym_lang_aliases)
-
-    # ── Format validation (per file) ────────────────────────────────────────
-    while IFS= read -r -d '' file; do
-        ((total++))
-        local issues=()
-
-        if [[ ! -s "$file" ]]; then
-            issues+=("\e[31m[FATAL]\e[0m File is empty.")
-            ((fatals++))
-        else
-            local no_urls
-            no_urls=$(grep -v "http" "$file")
-
-            if ! echo "$no_urls" | grep -Eq "\[[A-Z]+\]"; then
-                issues+=("\e[31m[ERROR]\e[0m Missing or malformed language tag '[]'")
-                ((errors++))
-            fi
-
-            if echo "$no_urls" | grep -Eq "\[[A-Z]+\].*\(|\(.*\[[A-Z]+\]"; then
-                issues+=("\e[31m[ERROR]\e[0m Language tag '[]' and POS tag '()' must be on separate lines.")
-                ((errors++))
-            fi
-
-            if grep -q "[[:space:]]$" "$file"; then
-                issues+=("\e[33m[WARN]\e[0m  Trailing whitespace on one or more lines.")
-                ((warns++))
-            fi
-
-            # ── POS tag validation, stanza by stanza ────────────────────
-            # This uses ETYM-PARSE'S OWN REGEXES rather than a second dialect
-            # of them. The check it replaces was file-level and matched
-            # \([a-z ]{1,5}(, [a-z ]{1,5})*\), which capped every tag at five
-            # characters and so rejected (interj), (suffix), (prefix) and
-            # (intr v) — all of which the parser accepts and all of which are
-            # registered in parts-of-speech.tsv. Being file-level it also
-            # passed a file whenever any one stanza carried a valid tag, so it
-            # only ever surfaced on single-stanza files such as h/hi.txt.
-            #
-            # Shape is settled here; membership is settled by the register
-            # below. Those are the only two authorities, and neither restates
-            # the other.
-            local bad_stanzas
-            bad_stanzas=$("$_ETYM_AWK" '
-                BEGIN { RS = ""; FS = "\n" }
-                {
-                    reformed = ""; conj_shape = 0; body = 0; urls = 0; langs = 0
-                    for (i = 1; i <= NF; i++) {
-                        line = $i; gsub(/\r/, "", line)
-                        if (line == "") continue
-                        if (line ~ /^http/) { urls++; continue }
-                        body++
-                        if (line ~ /\[[A-Z]+\]/) langs++
-                        # Same reformed-line test as parse_stanza_lines().
-                        if (line ~ /\([a-z]/ && line !~ /\[[A-Z]/) { reformed = line; continue }
-                        if (line !~ /\[[A-Z]+\]/ && \
-                            (line ~ /(^| )-[a-z]+/ || line ~ /\(s( |$)/)) conj_shape = 1
-                    }
-                    # A paragraph of nothing but URLs means a blank line was
-                    # left between a stanza and its sources; etym-parse reads
-                    # paragraphs, so those sources never reach the record.
-                    if (body == 0 && urls > 0)
-                        printf "%d:orphansrc ", NR
-                    # No reformed line. Three different situations, and only
-                    # two of them are mistakes: a stanza carrying etymology but
-                    # no reformed spelling is simply a word not yet reformed
-                    # (see tests/fixtures/parser/u/unreformed.txt), so it warns
-                    # rather than errors — but it still warns, because the
-                    # parser drops it and it reaches no dataset.
-                    else if (reformed == "")
-                        printf "%d:%s ", NR, \
-                            (conj_shape ? "dropped" : (langs > 0 ? "unreformed" : "nopos"))
-                    # Same POS test as extract_pos(): anchored at end of line.
-                    else if (reformed !~ /\([a-z][a-z ,]*\)[ \t]*$/)
-                        printf "%d:malformed ", NR
-                }' "$file")
-
-            if [[ -n "$bad_stanzas" ]]; then
-                local s_dropped="" s_nopos="" s_malformed="" s_orphan="" s_unref="" item
-                for item in $bad_stanzas; do
-                    case "${item#*:}" in
-                        dropped)   s_dropped+="${item%%:*} " ;;
-                        nopos)     s_nopos+="${item%%:*} " ;;
-                        malformed) s_malformed+="${item%%:*} " ;;
-                        orphansrc)  s_orphan+="${item%%:*} " ;;
-                        unreformed) s_unref+="${item%%:*} " ;;
-                    esac
-                done
-                if [[ -n "$s_dropped" ]]; then
-                    issues+=("\e[31m[ERROR]\e[0m Stanza(s) ${s_dropped% }: conjugation line missing its (pos) tag — stanza is silently dropped by etym-parse.")
-                    ((errors++))
-                fi
-                if [[ -n "$s_nopos" ]]; then
-                    issues+=("\e[31m[ERROR]\e[0m Stanza(s) ${s_nopos% }: no reformed line carrying a (pos) tag — stanza is silently dropped by etym-parse.")
-                    ((errors++))
-                fi
-                if [[ -n "$s_malformed" ]]; then
-                    issues+=("\e[31m[ERROR]\e[0m Stanza(s) ${s_malformed% }: (pos) tag is not at the end of the reformed line — etym-parse records an empty pos.")
-                    ((errors++))
-                fi
-                if [[ -n "$s_unref" ]]; then
-                    issues+=("\e[33m[WARN]\e[0m  Stanza(s) ${s_unref% }: no reformed line yet — etym-parse drops the stanza, so it reaches no dataset.")
-                    ((warns++))
-                fi
-                if [[ -n "$s_orphan" ]]; then
-                    issues+=("\e[31m[ERROR]\e[0m Block(s) ${s_orphan% }: source URLs separated from their stanza by a blank line — etym-parse reads paragraphs, so these sources are dropped.")
-                    ((errors++))
-                fi
-            fi
-
-            # Stanza-level: every comma-separated POS tag must exist in
-            # config/parts-of-speech.tsv (catches typos like "mn" or
-            # "adj m n"). NOTE: passing this does not guarantee the record
-            # survives the build — build-dictionary.js keeps its own posMap,
-            # and suffix/prefix/interj/obs/def v/indef are registered here but
-            # absent there, so buildBrain drops them regardless.
-            local unknown_tags
-            unknown_tags=$("$_ETYM_AWK" '
-                BEGIN { RS = ""; FS = "\n" }
-                {
-                    for (i = 1; i <= NF; i++) {
-                        line = $i; gsub(/\r/, "", line)
-                        if (line ~ /^http/ || line ~ /\[[A-Z]/) continue
-                        if (match(line, /\([a-z][a-z ,]*\)[ \t]*$/)) {
-                            tag_str = substr(line, RSTART + 1)
-                            sub(/\).*$/, "", tag_str)
-                            n = split(tag_str, tag_arr, /,/)
-                            for (t = 1; t <= n; t++) {
-                                tag = tag_arr[t]
-                                gsub(/^[ \t]+|[ \t]+$/, "", tag)
-                                if (tag != "") print tag
-                            }
-                        }
-                    }
-                }' "$file" | sort -u | while IFS= read -r tag; do
-                    pos_is_registered "$tag" || printf "'%s' " "$tag"
-                done)
-            if [[ -n "$unknown_tags" ]]; then
-                issues+=("\e[33m[WARN]\e[0m  Unknown POS tag(s): ${unknown_tags% } — not in parts-of-speech.tsv.")
-                ((warns++))
-            fi
-
-            # ── Language tags, line by line ─────────────────────────────
-            # Every tagged line is checked against config/languages.tsv and
-            # config/language-aliases.tsv, and every chain line must carry a
-            # tag the parser can read. Findings are warnings, since the
-            # register is still being settled; --strict makes them errors.
-            local lang_findings
-            lang_findings=$(LANG_REG="$lang_reg" "$_ETYM_AWK" "$_ETYM_LANG_SCAN" "$file" \
-                | LANG_REG="$lang_reg" LANG_ALIASES="$lang_aliases" "$_ETYM_AWK" -F'\t' '
-                    BEGIN {
-                        n = split(ENVIRON["LANG_REG"], r_, "\n")
-                        for (i = 1; i <= n; i++) if (r_[i] != "") reg[r_[i]] = 1
-                        n = split(ENVIRON["LANG_ALIASES"], a_, "\n")
-                        for (i = 1; i <= n; i++) if (split(a_[i], p_, "\t") == 2) alias[p_[1]] = p_[2]
-                    }
-                    $1 == "tag" && ($2 in alias) && !seen_r[$2]++ {
-                        retired = retired (retired == "" ? "" : "; ") "[" $2 "] " \
-                            (alias[$2] ~ /^\(/ ? alias[$2] : "-> [" alias[$2] "]")
-                    }
-                    $1 == "tag" && !($2 in alias) && !($2 in reg) && !seen_u[$2]++ {
-                        unreg = unreg (unreg == "" ? "" : " ") "[" $2 "]"
-                    }
-                    $1 == "named"    { printf "NAMED\t%s\t%s\n", $4, $5 }
-                    $1 == "untagged" { printf "UNTAGGED\t%s\t%s\n", $4, $5 }
-                    END {
-                        if (unreg != "")   printf "UNREG\t%s\n", unreg
-                        if (retired != "") printf "RETIRED\t%s\n", retired
-                    }')
-            if [[ -n "$lang_findings" ]]; then
-                local sev="\e[33m[WARN]\e[0m " kind a b
-                (( strict )) && sev="\e[31m[ERROR]\e[0m"
-                while IFS=$'\t' read -r kind a b; do
-                    case "$kind" in
-                        UNREG)    issues+=("$sev Unregistered language tag(s): $a — not in languages.tsv.") ;;
-                        RETIRED)  issues+=("$sev Retired language tag(s): $a") ;;
-                        NAMED)    issues+=("$sev Stanza $a: '$b' — a language written as a name, not a tag; etym-parse records no language for it.") ;;
-                        UNTAGGED) issues+=("$sev Stanza $a: '$b' — chain line with no language tag; etym-parse records no language for it.") ;;
-                        *)        continue ;;
-                    esac
-                    if (( strict )); then ((errors++)); else ((warns++)); fi
-                done <<< "$lang_findings"
-            fi
-
-            # Stanzas with no resolvable language origin
-            if etym-parse "$file" | jq -se '
-                any(.[]; 
-                    .etymology as $e |
-                    (($e | map(select(.lang == "ME" or .lang == "MI")) | last) //
-                     ($e | last)) |
-                    .lang == "" or . == null
-                )
-            ' > /dev/null 2>&1; then
-                issues+=("\e[33m[WARN]\e[0m  One or more stanzas have no resolvable language tag.")
-                ((warns++))
-            fi
+    if (( total > 0 )); then
+        if ! POS_TAGS="$(_pos_tags)" \
+                xargs -0 -r "$_ETYM_AWK" "$_ETYM_LINE_AWK$_ETYM_LINT_AWK" < "$list" > "$tmp/format"; then
+            printf '(format)\t0\tFATAL\tformat-pass\t%s\n' \
+                "the format pass failed; its findings are incomplete." >> "$tmp/format"
         fi
-
-        if [[ ${#issues[@]} -gt 0 ]]; then
-            echo -e "📝 \e[1m${file#$DICT_DIR/}\e[0m"
-            for issue in "${issues[@]}"; do echo -e "   $issue"; done
-            echo ""
-        fi
-
-    done < <(find "$target_dir" -type f -print0)
-
-    # ── Verb conjugation analysis (via etym-parse) ───────────────────────────
-    # Stream all stanzas, collect verb stats in a single pass
-    local verb_stats
-    verb_stats=$(
-        find "$target_dir" -type f -name "*.txt" | while IFS= read -r f; do
-            etym-parse "$f" | jq -r --arg file "$f" '
-                select(.pos | test("^(v|tr v|intr v)$"; "i")) |
-                .conjugations as $c |
-                (
-                    if ($c.third_singular == "-s" and ($c.past == "-d" or $c.past == "-ed") and $c.gerund == "-ing")
-                        then "standard"
-                        else "nonstandard"
-                        end
-                ) + "\t" + $file + "\t" + .inglisce_word + "\t" + (
-                    if ($c.present // "") != "" then
-                        [$c.present, $c.third_singular, $c.past, $c.participle, $c.gerund]
-                    else
-                        [$c.third_singular, $c.past, $c.gerund]
-                    end | map(select(. != null and . != "")) | join(" ")
-                )
-            '
-        done
-    )
-
-    local verb_standard verb_nonstandard
-    verb_standard=$(echo "$verb_stats"   | grep -c "^standard"   || true)
-    verb_nonstandard=$(echo "$verb_stats" | grep -c "^nonstandard" || true)
-
-    # ── Report ───────────────────────────────────────────────────────────────
-    echo "-----------------------------------------------------------------"
-    echo "LINTING COMPLETE"
-    echo "-----------------------------------------------------------------"
-    printf "Files Scanned:   %d\n"            "$total"
-    printf "Fatal Errors:    \e[31m%d\e[0m\n" "$fatals"
-    printf "Standard Errs:   \e[31m%d\e[0m\n" "$errors"
-    printf "Warnings:        \e[33m%d\e[0m\n" "$warns"
-
-    echo ""
-    echo "VERB CONJUGATION COVERAGE"
-    echo "-----------------------------------------------------------------"
-    printf "Using -s -d -ing:  %d\n" "$verb_standard"
-    printf "Non-standard:      %d\n" "$verb_nonstandard"
-
-    if [[ "$verb_nonstandard" -gt 0 ]]; then
-        echo ""
-        echo "  Non-standard verb stanzas:"
-        echo "$verb_stats" | grep "^nonstandard" | while IFS=$'\t' read -r _ file word forms; do
-            printf "    %-30s  %-20s  %s\n" "${file#$DICT_DIR/}" "$word" "$forms"
-        done
+        _etym_lint_corpus "$target_dir" "$scope" "$verbs" > "$tmp/corpus"
+        LC_ALL=C sort -s -t "$tab" -k1,1 -k2,2n "$tmp/format" "$tmp/corpus" > "$rows"
+        LC_ALL=C sort -s -t "$tab" -k2,2 "$verbs" -o "$verbs"
+    else
+        : > "$rows"
     fi
 
-    echo "================================================================="
-
-    [[ $fatals -gt 0 || $errors -gt 0 ]] && return 1
-    return 0
+    MODE="${report:-human}" TARGET="$target_dir" SINCE="$since" TOTAL="$total" VERBS="$verbs" \
+        "$_ETYM_AWK" -F'\t' "$_ETYM_LINT_REPORT_AWK" "$rows"
+    local status=$?
+    rm -rf "$tmp"
+    return $status
 }
 
 # etym-prune-list <file> [--dry-run] [--no-backup] [--quiet]
