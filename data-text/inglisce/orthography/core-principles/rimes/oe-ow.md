@@ -232,8 +232,8 @@ Not yet on the pattern: the nouns `merho`, `myno`, `mòro`, `tomòro`, `uinho`, 
 | sallow¹ | sickly yellowish, of skin; the colour itself | n | OE *salo*, *salu* | — | saloa |
 | sallow¹ | to make sallow | v | — | English, from the adj | to saloa -s saleod salauing |
 | sallow² | broad-leaved willow, *Salix caprea*; a twig or the wood of it | n | OE *sealh*, Anglian *salh* | — | salhoa, salhaus |
-| shadow | shade cast by a body | n | OE *sceadu* | — | siadoa, siadaus |
-| shadow | to shadow | v | — | OE *sceadwian* | to siadoa  -s siadeod siadauing |
+| shadow | shade cast by a body | n | OE *sceadu* | — | siadaue, siadaus |
+| shadow | to shadow | v | — | OE *sceadwian* | to siadaue -s -d siadauing |
 | shallow | of little depth; a shallow place | adj | ME *schalowe*, related to *shoal* | — | sialo sialoar sialoest |
 | shallow | of little depth; a shallow place | n | ME *schalowe*, related to *shoal* | — | sialoa, sialaus |
 | sorrow | grief | n | OE *sorg* | — | sòroa, sòraus |
