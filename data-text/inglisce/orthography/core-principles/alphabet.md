@@ -23,7 +23,7 @@ Tt ţ\
 Uu Ûû Úú\
 Vv\
 Üü\
-Xx x̃\
+Xx x̃ x̧\
 Yy Ŷŷ Ýý Ÿÿ\
 Zz z̦\
-( Alts: c̹ d̹ ș t̹ )
+( Alts: c̹ d̹ ș t̹ x̦)
