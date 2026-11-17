@@ -21,15 +21,15 @@
 | O | [Egyptian: eye](https://en.wikipedia.org/wiki/O) | 目, 眼 |
 | P | [Egyptian: mouth](https://en.wikipedia.org/wiki/P) | 口, 嘴 |
 | Q | [Egyptian: eye of a needle, knot](https://en.wikipedia.org/wiki/Q) | 针鼻儿, 針の穴 |
-| R |
-| S |
-| T |
-| U |
-| V |
-| W |
-| X |
-| Y |
-| Z |
+| R | [Egyptian: head](https://en.wikipedia.org/wiki/R) | 头, 頭 |
+| S | [Proto-Sinaitic: tooth](https://en.wikipedia.org/wiki/S) | 牙齿, 歯|
+| T | [Egyptian: tally mark](https://en.wikipedia.org/wiki/Taw) | 计数符号, 正の字 |
+| U | [Proto-Sinaitic: hook, club](https://en.wikipedia.org/wiki/U) | 钩, 棍棒 |
+| V | [Proto-Sinaitic: hook, club](https://en.wikipedia.org/wiki/V) | 钩, 棍棒 |
+| W | [Proto-Sinaitic: hook, club](https://en.wikipedia.org/wiki/W) | 钩, 棍棒 |
+| X | [Western Greek](https://en.wikipedia.org/wiki/X) | 希腊语 |
+| Y | [Proto-Sinaitic: hook, club](https://en.wikipedia.org/wiki/Y) | 钩, 棍棒 |
+| Z | [Proto-Sinaitic: weapon, sword](https://en.wikipedia.org/wiki/Z) | 剑 |
 
 | IPA | Chars |
 | --- | --- |
