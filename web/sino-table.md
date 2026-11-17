@@ -13,7 +13,7 @@
 | G | [Egyptian: camel](https://en.wikipedia.org/wiki/G) | 驼 |
 | H | [Egyptian: fence](https://en.wikipedia.org/wiki/H) | 栅 |
 | I | [Egyptian: arm](https://en.wikipedia.org/wiki/I) | 手臂 |
-| J | [Egyptian: arm]([https://en.wikipedia.org/wiki/I](https://en.wikipedia.org/wiki/J) | 手臂 |
+| J | [Egyptian: arm](https://en.wikipedia.org/wiki/J) | 手臂 |
 | K | [Egyptian: hand](https://en.wikipedia.org/wiki/K) | 手 |
 | L | [Egyptian: shepherd's staff](https://en.wikipedia.org/wiki/L) | 杖 |
 | M | [Egyptian: water](https://en.wikipedia.org/wiki/M) | 水 |
@@ -30,6 +30,29 @@
 | X | [Western Greek](https://en.wikipedia.org/wiki/X) | 希腊语 |
 | Y | [Proto-Sinaitic: hook, club](https://en.wikipedia.org/wiki/Y) | 钩, 棍棒 |
 | Z | [Proto-Sinaitic: weapon, sword](https://en.wikipedia.org/wiki/Z) | 剑 |
+
+## Japanese Katakana
+
+| | a | i | u | e | o |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| — | ア | イ | ウ | エ | オ |
+| K | カ | キ | ク | ケ | コ |
+| G | ガ | ギ | グ | ゲ | ゴ |
+| S | サ | シ | ス | セ | ソ |
+| Z | ザ | ジ | ズ | ゼ | ゾ |
+| T | タ | チ | ツ | テ | ト |
+| D | ダ | ヂ | ヅ | デ | ド |
+| N | ナ | ニ | ヌ | ネ | ノ |
+| H | ハ | ヒ | フ | ヘ | ホ |
+| B | バ | ビ | ブ | ベ | ボ |
+| P | パ | ピ | プ | ペ | ポ |
+| V | — | — | ヴ | — | — |
+| M | マ | ミ | ム | メ | モ |
+| Y | ヤ | — | ユ | — | ヨ |
+| R | ラ | リ | ル | レ | ロ |
+| W | ワ | ヰ | — | ヱ | ヲ |
+| Y | ャ | — | ュ | — | ョ |
+
 
 | IPA | Chars |
 | --- | --- |
