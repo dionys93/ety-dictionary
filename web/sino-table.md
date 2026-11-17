@@ -20,6 +20,16 @@
 | N | [Egyptian: snake](https://en.wikipedia.org/wiki/N) | 蛇, 巳 |
 | O | [Egyptian: eye](https://en.wikipedia.org/wiki/O) | 目, 眼 |
 | P | [Egyptian: mouth](https://en.wikipedia.org/wiki/P) | 口, 嘴 |
+| Q | [Egyptian: eye of a needle, knot](https://en.wikipedia.org/wiki/Q) | 针鼻儿, 針の穴 |
+| R |
+| S |
+| T |
+| U |
+| V |
+| W |
+| X |
+| Y |
+| Z |
 
 | IPA | Chars |
 | --- | --- |
