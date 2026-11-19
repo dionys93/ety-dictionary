@@ -155,5 +155,5 @@
 | /oʊ/ | |
 | /ɔɪ/ | |
 | /æʊ/ | |
-| /b/ | [万](https://en.wiktionary.org/wiki/%E4%B8%87) [宀](https://en.wiktionary.org/wiki/%E5%AE%80#Translingual) |
+| /b/ | [万](https://en.wiktionary.org/wiki/%E4%B8%87), [宀](https://en.wiktionary.org/wiki/%E5%AE%80#Translingual) |
 | /p/ | |
