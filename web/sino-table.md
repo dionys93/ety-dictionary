@@ -156,4 +156,4 @@
 | /b/ | [万](https://en.wiktionary.org/wiki/%E4%B8%87), [宀](https://en.wiktionary.org/wiki/%E5%AE%80#Translingual) |
 | /p/ | |
 | /g/ | [ㄢ](https://en.wiktionary.org/wiki/%E3%84%A2) |
-| /k/ | [ㄱ]() |
+| /k/ | [ㄱ](https://en.wiktionary.org/wiki/%E3%84%B1) |
