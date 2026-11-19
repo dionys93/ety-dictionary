@@ -4,7 +4,7 @@
 
 | Letter | Source | Sino |
 | --- | --- | --- |
-| A | [Proto-Sinaitic: ox, ox-head](https://en.wikipedia.org/wiki/A) | 牛，牛头 |
+| A | [Proto-Sinaitic: ox, ox-head](https://en.wikipedia.org/wiki/A) | [牛](https://en.wikipedia.org/wiki/Radical_93)，牛头 |
 | B | [Proto-Sinaitic: house](https://en.wikipedia.org/wiki/B) | 房子 |
 | C | [Egyptian: camel](https://en.wikipedia.org/wiki/C) | 驼 |
 | D | [Egyptian: door, fish](https://en.wikipedia.org/wiki/D) | 门, 鱼 |
