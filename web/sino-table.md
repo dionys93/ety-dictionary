@@ -157,3 +157,4 @@
 | /p/ | |
 | /g/ | [ㄢ](https://en.wiktionary.org/wiki/%E3%84%A2) |
 | /k/ | [ㄱ](https://en.wiktionary.org/wiki/%E3%84%B1) |
+| /h/ | [冊](https://en.wiktionary.org/wiki/%E5%86%8A), [册](https://en.wiktionary.org/wiki/%E5%86%8C), [日](https://en.wiktionary.org/wiki/%E6%97%A5#Translingual), [ホ](https://en.wiktionary.org/wiki/%E3%83%9B) |
