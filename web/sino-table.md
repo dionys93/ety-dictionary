@@ -5,7 +5,7 @@
 | A | [Proto-Sinaitic: ox, ox-head](https://en.wikipedia.org/wiki/A) | [牛](https://en.wikipedia.org/wiki/Radical_93)，牛头 |
 | B | [Proto-Sinaitic: house](https://en.wikipedia.org/wiki/B) | 房子 |
 | C | [Egyptian: camel](https://en.wikipedia.org/wiki/C) | [驼](https://en.wiktionary.org/wiki/%E9%A9%BC) |
-| D | [Egyptian: door, fish](https://en.wikipedia.org/wiki/D) | [魚](https://en.wiktionary.org/wiki/魚), [門](https://en.wikipedia.org/wiki/Radical_169), [⺈](https://en.wiktionary.org/wiki/%E2%BA%88#Translingual), [刀](https://en.wiktionary.org/wiki/%E5%88%80#Translingual), [田](https://en.wiktionary.org/wiki/%E7%94%B0#Translingual), [𠂉](https://en.wiktionary.org/wiki/%F0%A0%82%89#Translingual) |
+| D | [Egyptian: door, fish](https://en.wikipedia.org/wiki/D) | [魚](https://en.wiktionary.org/wiki/魚), [門](https://en.wikipedia.org/wiki/Radical_169) |
 | E | [Egyptian: jubilation](https://en.wikipedia.org/wiki/E) | 欢呼 |
 | F | [Proto-Sinaitic: hook, club](https://en.wikipedia.org/wiki/F) | 钩, 棍棒 |
 | G | [Egyptian: camel](https://en.wikipedia.org/wiki/G) | 驼 |
@@ -158,3 +158,5 @@
 | /g/ | [ㄢ](https://en.wiktionary.org/wiki/%E3%84%A2) |
 | /k/ | [ㄱ](https://en.wiktionary.org/wiki/%E3%84%B1) |
 | /h/ | [冊](https://en.wiktionary.org/wiki/%E5%86%8A), [册](https://en.wiktionary.org/wiki/%E5%86%8C), [日](https://en.wiktionary.org/wiki/%E6%97%A5#Translingual), [ホ](https://en.wiktionary.org/wiki/%E3%83%9B) |
+| /d/ | [⺈](https://en.wiktionary.org/wiki/%E2%BA%88#Translingual), [刀](https://en.wiktionary.org/wiki/%E5%88%80#Translingual), [田](https://en.wiktionary.org/wiki/%E7%94%B0#Translingual), [𠂉](https://en.wiktionary.org/wiki/%F0%A0%82%89#Translingual) |
+| /t/ | |
