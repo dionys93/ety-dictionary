@@ -1,12 +1,10 @@
-
-
 ## Orthological Base
 
 | Letter | Source | Sino |
 | --- | --- | --- |
 | A | [Proto-Sinaitic: ox, ox-head](https://en.wikipedia.org/wiki/A) | [牛](https://en.wikipedia.org/wiki/Radical_93)，牛头 |
 | B | [Proto-Sinaitic: house](https://en.wikipedia.org/wiki/B) | 房子 |
-| C | [Egyptian: camel](https://en.wikipedia.org/wiki/C) | 驼 |
+| C | [Egyptian: camel](https://en.wikipedia.org/wiki/C) | [驼](https://en.wiktionary.org/wiki/%E9%A9%BC) |
 | D | [Egyptian: door, fish](https://en.wikipedia.org/wiki/D) | 门, 鱼 |
 | E | [Egyptian: jubilation](https://en.wikipedia.org/wiki/E) | 欢呼 |
 | F | [Proto-Sinaitic: hook, club](https://en.wikipedia.org/wiki/F) | 钩, 棍棒 |
@@ -157,3 +155,5 @@
 | /æʊ/ | |
 | /b/ | [万](https://en.wiktionary.org/wiki/%E4%B8%87), [宀](https://en.wiktionary.org/wiki/%E5%AE%80#Translingual) |
 | /p/ | |
+| /g/ | [ㄢ](https://en.wiktionary.org/wiki/%E3%84%A2) |
+| /k/ | |
