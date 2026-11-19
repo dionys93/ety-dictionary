@@ -155,3 +155,4 @@
 | /oʊ/ | |
 | /ɔɪ/ | |
 | /æʊ/ | |
+| /b/ | [宀](https://en.wiktionary.org/wiki/%E5%AE%80#Translingual) |
