@@ -141,7 +141,7 @@
 | IPA | Chars |
 | --- | --- |
 | /æ/ | 牛 牜 十 匕 亅|
-| /ɛ/ | エ | 
+| /ɛ/ | [エ](https://en.wikipedia.org/wiki/E_(kana)), [大](https://en.wiktionary.org/wiki/%E5%A4%A7#Translingual) | 
 | /ɪ/ | |
 | /ə/ | |
 | /ɑ/ | |
