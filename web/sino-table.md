@@ -10,7 +10,7 @@
 | F | [Proto-Sinaitic: hook, club](https://en.wikipedia.org/wiki/F) | 钩, 棍棒 |
 | G | [Egyptian: camel](https://en.wikipedia.org/wiki/G) | 驼 |
 | H | [Egyptian: fence](https://en.wikipedia.org/wiki/H) | 栅 |
-| I | [Egyptian: arm](https://en.wikipedia.org/wiki/I) | 手臂 |
+| I | [Egyptian: arm](https://en.wikipedia.org/wiki/I) | [手](https://en.wiktionary.org/wiki/%E6%89%8B)臂 |
 | J | [Egyptian: arm](https://en.wikipedia.org/wiki/J) | 手臂 |
 | K | [Egyptian: hand](https://en.wikipedia.org/wiki/K) | 手 |
 | L | [Egyptian: shepherd's staff](https://en.wikipedia.org/wiki/L) | 杖 |
