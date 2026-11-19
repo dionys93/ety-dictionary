@@ -142,7 +142,8 @@
 | --- | --- |
 | /æ/ | 牛 牜 十 匕 亅|
 | /ɛ/ | [エ](https://en.wikipedia.org/wiki/E_(kana)), [大](https://en.wiktionary.org/wiki/%E5%A4%A7#Translingual) | 
-| /ɪ/ | |
+| /ɪ/ | [イ](https://en.wiktionary.org/wiki/%E3%82%A4), [扌](https://en.wiktionary.org/wiki/%E6%89%8C#Translingual), [于](https://en.wiktionary.org/wiki/%F0%A0%82%8C#Translingual) |
+| /i/ | [イ](https://en.wiktionary.org/wiki/%E3%82%A4), [扌](https://en.wiktionary.org/wiki/%E6%89%8C#Translingual), [于](https://en.wiktionary.org/wiki/%F0%A0%82%8C#Translingual) |
 | /ə/ | |
 | /ɑ/ | |
 | /ɔ/ | |
@@ -160,3 +161,5 @@
 | /h/ | [冊](https://en.wiktionary.org/wiki/%E5%86%8A), [册](https://en.wiktionary.org/wiki/%E5%86%8C), [日](https://en.wiktionary.org/wiki/%E6%97%A5#Translingual), [ホ](https://en.wiktionary.org/wiki/%E3%83%9B) |
 | /d/ | [⺈](https://en.wiktionary.org/wiki/%E2%BA%88#Translingual), [刀](https://en.wiktionary.org/wiki/%E5%88%80#Translingual), [田](https://en.wiktionary.org/wiki/%E7%94%B0#Translingual), [𠂉](https://en.wiktionary.org/wiki/%F0%A0%82%89#Translingual) |
 | /t/ | |
+| /dʒ/ | [イ](https://en.wiktionary.org/wiki/%E3%82%A4), [扌](https://en.wiktionary.org/wiki/%E6%89%8C#Translingual), [于](https://en.wiktionary.org/wiki/%F0%A0%82%8C#Translingual) |
+| /tʃ/ | |
